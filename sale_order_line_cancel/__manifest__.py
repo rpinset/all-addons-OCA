@@ -6,12 +6,13 @@
 
 {
     "name": "Sale Order Line Cancel",
-    "version": "16.0.1.3.1",
-    "author": "Okia, BCIM, Camptocamp, ACSONE SA/NV, Odoo Community Association (OCA)",
+    "version": "16.0.2.0.0",
+    "author": "Okia, BCIM, Camptocamp, ACSONE SA/NV, "
+    "MT Software, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Sales",
     "summary": """Sale cancel remaining""",
-    "depends": ["sale_stock"],
+    "depends": ["sale"],
     "data": [
         "security/sale_order_line_cancel.xml",
         "wizards/sale_order_line_cancel.xml",

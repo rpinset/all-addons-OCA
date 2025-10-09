@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-17 21:08+0000\n"
-"PO-Revision-Date: 2019-08-26 16:01+0000\n"
-"Last-Translator: Rodrigo Macedo <rmsolucoeseminformatic4@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
-"teams/23907/pt_BR/)\n"
+"PO-Revision-Date: 2025-10-06 20:02+0000\n"
+"Last-Translator: Luis Felipe Miléo <mileo@kmee.com.br>\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
+"23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_server_action_form
@@ -27,19 +27,22 @@ msgid ""
 "including the fields of such domain in this operation definition, will lead "
 "to an error when trying to perform it. Make sure you include them."
 msgstr ""
+"<b>WARNING</b>: Leve em conta que adicionando um campo com um domínio, e não "
+"incluindo os campos deste domínio nesta operação irá ocasionar um erro. "
+"Garanta a inclusão de todos estes."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server__state
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_cron__state
 msgid "Action To Do"
-msgstr ""
+msgstr "Ação a Fazer"
 
 #. module: server_action_mass_edit
 #. odoo-python
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server_mass_edit_line__widget_option
@@ -51,28 +54,28 @@ msgstr ""
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_mass_editing_wizard_form
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__apply_domain
 msgid "Apply Domain"
-msgstr ""
+msgstr "Aplicar Domínio"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server_mass_edit_line__apply_domain
 msgid "Apply default domain related to field"
-msgstr ""
+msgstr "Aplicar domínio padrão relacionado ao campo"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server__mass_edit_apply_domain_in_lines
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_cron__mass_edit_apply_domain_in_lines
 msgid "Apply domain in lines"
-msgstr ""
+msgstr "Aplicar domínio nas linhas"
 
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_mass_editing_wizard_form
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__create_uid
@@ -97,7 +100,7 @@ msgstr "Nome para Mostrar"
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "Don't touch"
-msgstr ""
+msgstr "Não clique"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -108,6 +111,9 @@ msgid ""
 "\n"
 "%(ue)s"
 msgstr ""
+"Falha para processar  %(model_name)s  \"%(name)s\" [id: %(id)s]:\n"
+"\n"
+"%(ue)s"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__field_id
@@ -118,7 +124,7 @@ msgstr "Campos"
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_server_action_form
 msgid "Fields"
-msgstr ""
+msgstr "Campos"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__id
@@ -130,7 +136,7 @@ msgstr "Identificação"
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server__mass_edit_message
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_cron__mass_edit_message
 msgid "If set, this message will be displayed in the wizard."
-msgstr ""
+msgstr "Se definida, esta mensagem será exibida no assistente."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line____last_update
@@ -155,18 +161,18 @@ msgstr "Última atualização em"
 #: model:ir.actions.server,name:server_action_mass_edit.mass_editing_partner_title
 #: model:ir.actions.server,name:server_action_mass_edit.mass_editing_user
 msgid "Mass Edit"
-msgstr ""
+msgstr "Edição em Massa"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server__mass_edit_line_ids
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_cron__mass_edit_line_ids
 msgid "Mass Edit Line"
-msgstr ""
+msgstr "Linhas de Edição em Massa"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields.selection,name:server_action_mass_edit.selection__ir_actions_server__state__mass_edit
 msgid "Mass Edit Records"
-msgstr ""
+msgstr "Registros de Edição em Massa"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -174,6 +180,7 @@ msgstr ""
 #, python-format
 msgid "Mass edit fields should belong to the server action model."
 msgstr ""
+"Campos de edição em massa deveriam pertencer ao modelo de Ação no Servidor."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server__mass_edit_message
@@ -181,7 +188,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__message
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_server_action_form
 msgid "Message"
-msgstr ""
+msgstr "Mensagem"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__model_id
@@ -191,7 +198,7 @@ msgstr "Modelo"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server_mass_edit_line__model_id
 msgid "Model on which the server action runs."
-msgstr ""
+msgstr "Modelo no qual a Ação no Servidor opera."
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -199,6 +206,7 @@ msgstr ""
 #, python-format
 msgid "None of the %(amount)d record(s) you have selected can be processed."
 msgstr ""
+"Nenhum dos %(amount)d registro(s) que você selecionou pode ser processado."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__operation_description_danger
@@ -218,30 +226,30 @@ msgstr ""
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__remaining_item_qty
 msgid "Remaining Item Qty"
-msgstr ""
+msgstr "Quantidade Restante de Itens"
 
 #. module: server_action_mass_edit
 #. odoo-python
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__selected_item_qty
 msgid "Selected Item Qty"
-msgstr ""
+msgstr "Quantidade de Itens Selecionados"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sequência"
 
 #. module: server_action_mass_edit
 #: model:ir.model,name:server_action_mass_edit.model_ir_actions_server
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__server_action_id
 msgid "Server Action"
-msgstr ""
+msgstr "Ação no Servidor"
 
 #. module: server_action_mass_edit
 #: model:ir.model,name:server_action_mass_edit.model_ir_actions_server_mass_edit_line
@@ -253,14 +261,14 @@ msgstr ""
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "Set"
-msgstr ""
+msgstr "Definir"
 
 #. module: server_action_mass_edit
 #. odoo-python
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "The treatment will be processed on the %(amount)d selected record(s)."
-msgstr ""
+msgstr "O tratamento será processado no %(amount)d registro selecionado(s)."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
@@ -271,6 +279,11 @@ msgid ""
 "  With this option, the error message will be more specific to facillitate "
 "the undertanding of the error."
 msgstr ""
+"Essa opção gravará os registros um por um, em vez de todos de uma vez.\n"
+"Isso é útil quando você está editando muitos registros e um deles gera um "
+"erro.\n"
+"Com essa opção, a mensagem de erro será mais específica para facilitar a "
+"compreensão do problema."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server__state
@@ -301,7 +314,7 @@ msgstr "Assistente para edição em massa"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
 msgid "Write Record By Record"
-msgstr ""
+msgstr "Escrever Registro por Registro"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -311,6 +324,9 @@ msgid ""
 "You have selected %(origin_amount)d record(s) that can not be processed.\n"
 "Only %(amount)d record(s) will be processed."
 msgstr ""
+"Você selecionou %(origin_amount)d registro(s) que não podem ser processados."
+"\n"
+"Apenas %(amount)d registro(s) serão processados."
 
 #~ msgid "Mass Editing"
 #~ msgstr "Edição em massa"

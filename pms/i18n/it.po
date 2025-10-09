@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-25 09:25+0000\n"
+"PO-Revision-Date: 2025-10-09 09:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -3091,17 +3091,17 @@ msgstr "Blacklist"
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__block_create_past_reservations
 msgid "Block Create Past Reservations"
-msgstr ""
+msgstr "Blocco creazione prenotazioni nel passato"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__block_create_past_reservations
 msgid "Block the creation of reservations in the past"
-msgstr ""
+msgstr "Blocca la creazione di prenotazioni nel passato"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__blocked
 msgid "Blocked"
-msgstr ""
+msgstr "Bloccata"
 
 #. module: pms
 #. odoo-python
@@ -3109,7 +3109,7 @@ msgstr ""
 #: code:addons/pms/models/pms_reservation_line.py:0
 #, python-format
 msgid "Blocked reservations can't be modified"
-msgstr ""
+msgstr "Le prenotazioni bloccate non possono essere modificate"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.action_pms_board_service_room_type_view
@@ -3124,79 +3124,80 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_report_view_tree
 msgid "Board Service"
-msgstr ""
+msgstr "Servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__default_code
 msgid "Board Service Code"
-msgstr ""
+msgstr "Codice servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_service__board_service_line_id
 #: model_terms:ir.ui.view,arch_db:pms.pms_board_service_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_board_service_room_type_form
 msgid "Board Service Line"
-msgstr ""
+msgstr "Riga servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service__board_service_line_id
 msgid "Board Service Line in which this service is included"
-msgstr ""
+msgstr "Riga servizio pensione con servizio incluso"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__board_service_line_ids
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type__board_service_line_ids
 msgid "Board Service Lines"
-msgstr ""
+msgstr "Righe servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__name
 #: model:ir.model.fields,help:pms.field_pms_board_service__name
 msgid "Board Service Name"
-msgstr ""
+msgstr "Nome servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__board_price
 #: model:ir.model.fields,field_description:pms.field_product_product__board_price
 msgid "Board Service Price"
-msgstr ""
+msgstr "Prezzo servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type_line__pms_board_service_room_type_id
 msgid "Board Service Room"
-msgstr ""
+msgstr "Camera servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type_line__pms_board_service_room_type_id
 msgid "Board Service Room Type in which this line is included"
-msgstr ""
+msgstr "Tipo camera servizio pensione nella quale è inclusa questa riga"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type__pms_board_service_id
 msgid "Board Service corresponding to this Board Service Room Type"
 msgstr ""
+"Servizio pensione che corrisponde a questo tipo camera servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_line__pms_board_service_id
 msgid "Board Service in which this line is included"
-msgstr ""
+msgstr "Servizio pensione nella quale è inclusa questa riga"
 
 #. module: pms
 #: model:ir.model,name:pms.model_pms_board_service_room_type
 msgid "Board Service included in Room"
-msgstr ""
+msgstr "Servizio pensione inclusa nella camera"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__board_service_room_type_ids
 msgid "Board Service included in room type"
-msgstr ""
+msgstr "Servizio pensione inclusa nel tipo camera"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio_availability_wizard__board_service_room_id
 #: model:ir.model.fields,help:pms.field_pms_reservation__board_service_room_id
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__board_service_room_id
 msgid "Board Service included in the room"
-msgstr ""
+msgstr "Servizio pensione incluso nella camera"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.open_pms_board_service_form_tree
@@ -3207,12 +3208,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_type_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_view_search
 msgid "Board Services"
-msgstr ""
+msgstr "Servizi pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__pms_board_service_room_type_ids
 msgid "Board Services Room Type"
-msgstr ""
+msgstr "Tipi camera servizi pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service__pms_board_service_room_type_ids
@@ -3220,76 +3221,78 @@ msgid ""
 "Board Services Room Type corresponding to this Board Service,One board "
 "service for several room types"
 msgstr ""
+"Tipo camera servizi pensione corrispondente a questo servizio pensione, una "
+"pensione per diversi tipi di camera"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.menu_pms_booking_engine
 msgid "Booking Engine"
-msgstr ""
+msgstr "Motore di prenotazione"
 
 #. module: pms
 #: model:ir.model,name:pms.model_pms_booking_engine
 msgid "Booking engine"
-msgstr ""
+msgstr "Motore di prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__message_bounce
 msgid "Bounce"
-msgstr ""
+msgstr "Respingi"
 
 #. module: pms
 #: model:pms.board.service,name:pms.pms_board_service_breakfast
 msgid "BreakFast"
-msgstr ""
+msgstr "Colazione"
 
 #. module: pms
 #: model:product.template,name:pms.pms_service_breakfast_buffet_product_template
 msgid "Breakfast Buffet"
-msgstr ""
+msgstr "Buffet colazione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_view_search
 msgid "By Day"
-msgstr ""
+msgstr "Per giorno"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_view_search
 msgid "By Month"
-msgstr ""
+msgstr "Per mese"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_view_search
 msgid "By Week"
-msgstr ""
+msgstr "Per settimana"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.traveller_report
 msgid "CIF:"
-msgstr ""
+msgstr "CIF:"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_booking_engine__can_create_folio
 msgid "Can Create Folio"
-msgstr ""
+msgstr "Può creare foglio"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__can_image_1024_be_zoomed
 msgid "Can Image 1024 be zoomed"
-msgstr ""
+msgstr "L'immagine 1024 può essere zoommata"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__can_image_variant_1024_be_zoomed
 msgid "Can Variant Image 1024 be zoomed"
-msgstr ""
+msgstr "L'immagine variante 1024 può essere ingrandita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__purchase_ok
 msgid "Can be Purchased"
-msgstr ""
+msgstr "Può essere acquistato"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__sale_ok
 msgid "Can be Sold"
-msgstr ""
+msgstr "Può essere venduto"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.advanced_filters_wizard
@@ -3302,59 +3305,59 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.wizard_folio_changes_view_form
 #: model_terms:ir.ui.view,arch_db:pms.wizard_payment_folio_view_form
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__cancel_datetime
 msgid "Cancel Date"
-msgstr ""
+msgstr "Annulla data"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 msgid "Cancel Folio"
-msgstr ""
+msgstr "Annulla foglio"
 
 #. module: pms
 #. odoo-python
 #: code:addons/pms/models/pms_reservation.py:0
 #, python-format
 msgid "Cancel Penalty"
-msgstr ""
+msgstr "Annulla penalità"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Cancel Reservation"
-msgstr ""
+msgstr "Annulla prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_company__cancel_penalty_product_id
 msgid "Cancel penalty product"
-msgstr ""
+msgstr "Annulla prodotto penalità"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_service_line__cancel_discount
 msgid "Cancelation Discount"
-msgstr ""
+msgstr "Sconto annullamento"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_line__cancel_discount
 msgid "Cancelation Discount (%)"
-msgstr ""
+msgstr "Sconto annullamento (%)"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_product_pricelist__cancelation_rule_id
 msgid "Cancelation Policy"
-msgstr ""
+msgstr "Politica annullamento"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_product_pricelist__cancelation_rule_id
 msgid "Cancelation Policy included in the room"
-msgstr ""
+msgstr "Politica annullamento inclusa nella camera"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_cancelation_rule__name
 msgid "Cancelation Rule"
-msgstr ""
+msgstr "Regola annullamento"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.action_pms_cancelation_rule
@@ -3362,18 +3365,18 @@ msgstr ""
 #: model:ir.ui.menu,name:pms.menu_pms_cancelation_rule
 #: model_terms:ir.ui.view,arch_db:pms.pms_cancelation_rule_form
 msgid "Cancelation Rules"
-msgstr ""
+msgstr "Regole annullamento"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__property_canceled_template
 #: model_terms:ir.ui.view,arch_db:pms.pms_property_views_form
 msgid "Cancellation Email"
-msgstr ""
+msgstr "E-mail annullamento"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__property_canceled_template
 msgid "Cancellation email template"
-msgstr ""
+msgstr "Modello e-mail annullamento"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_checkin_partner__state__cancel
@@ -3382,146 +3385,148 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_kanban_view
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 msgid "Cancelled"
-msgstr ""
+msgstr "Annullata"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.report_invoice_document
 msgid "Cancelled Invoice"
-msgstr ""
+msgstr "Fattura annullata"
 
 #. module: pms
 #: model:mail.template,name:pms.cancelled_reservation_email
 msgid "Cancelled Reservation"
-msgstr ""
+msgstr "Prenotazione annullata"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 msgid "Cancelled Rooms"
-msgstr ""
+msgstr "Camere annullate"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.report_invoice_document
 msgid "Cancelled Simplified Invoice"
-msgstr ""
+msgstr "Fattura semplificata annullata"
 
 #. module: pms
 #. odoo-python
 #: code:addons/pms/models/ir_config_parameter.py:0
 #, python-format
 msgid "Cannot delete this parameter"
-msgstr ""
+msgstr "Non si può cancellare questo parametro"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room__capacity
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_view_kanban
 msgid "Capacity"
-msgstr ""
+msgstr "Capienza"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.company_view_form
 msgid "Cardex Settings"
-msgstr ""
+msgstr "Impostazioni cardex"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__statement_line_ids
 msgid "Cash Payments"
-msgstr ""
+msgstr "Pagamenti in contanti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_partner_id_number__category_id
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__route_from_categ_ids
 msgid "Category Routes"
-msgstr ""
+msgstr "Percorsi categoria"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__pos_categ_id
 msgid "Category used in the Point of Sale."
-msgstr ""
+msgstr "Categoria utilizzata nel punto vendita."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__cancelled_reason
 msgid "Cause of cancelled"
-msgstr ""
+msgstr "Causale annullamento"
 
 #. module: pms
 #: model:ir.model,name:pms.model_room_closure_reason
 #: model:ir.model.fields,field_description:pms.field_pms_folio__out_service_description
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__out_service_description
 msgid "Cause of out of service"
-msgstr ""
+msgstr "Causale fuori servizio"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.wizard_folio_changes_view_form
 msgid "Change"
-msgstr ""
+msgstr "Modifica"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_day_qty
 msgid "Change cuantity service per day"
-msgstr ""
+msgstr "Modifica quantità servizio per giorno"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__channel_ids
 msgid "Channels"
-msgstr ""
+msgstr "Canali"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__check_adults
 msgid "Check Adults"
-msgstr ""
+msgstr "Controllo adulti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__checkin
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_split_join_swap_wizard__checkin
 msgid "Check In"
-msgstr ""
+msgstr "Check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__checkout
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_split_join_swap_wizard__checkout
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Check Out"
-msgstr ""
+msgstr "Check-out"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__is_origin_channel_check_visible
 msgid "Check force update origin visible"
-msgstr ""
+msgstr "Origine controllo aggiornamento forzato visibile"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__is_company
 msgid "Check if the contact is a company, otherwise it is a person"
-msgstr ""
+msgstr "Controlla se il contatto è un'azienda, altrimenti è una persona"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__to_weight
 msgid ""
 "Check if the product should be weighted using the hardware scale integration."
 msgstr ""
+"Selezionare se il prodotto deve essere pesato utilizzando l'integrazione con "
+"la bilancia."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__occupied_room
 msgid "Check if the room is occupied"
-msgstr ""
+msgstr "Controlla se la camera è occupata"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__available_in_pos
 msgid "Check if you want this product to appear in the Point of Sale."
-msgstr ""
+msgstr "Selezionare per visualizzare il prodotto nel punto vendita."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__checkin
 msgid "Check in"
-msgstr ""
+msgstr "Check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_company__check_min_partner_data_invoice
 msgid "Check minimum partner data for invoices"
-msgstr ""
+msgstr "Controlla data partner minima per fatture"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_res_company__check_min_partner_data_invoice
@@ -3529,26 +3534,30 @@ msgid ""
 "Check minimum partner data for invoices:\n"
 "            - VAT, name, street, city, country"
 msgstr ""
+"Controlla i dati minimi del partner per le fatture:\n"
+"            - P. IVA, nome, via, città, paese"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__checkout
 msgid "Check out"
-msgstr ""
+msgstr "Check-out"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__employee
 msgid "Check this box if this contact is an Employee."
-msgstr ""
+msgstr "Seleziona questa casella se questo contatto è un dipendente."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__aeat_anonymous_cash_customer
 msgid "Check this for anonymous cash customer. AEAT communication"
 msgstr ""
+"Selezionare questa opzione per i clienti anonimi che pagano in contanti. "
+"Comunicazione AEAT"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_property_views_form
 msgid "Check-in hours"
-msgstr ""
+msgstr "Ora check-in"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_folio_view_tree
@@ -3556,7 +3565,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_tree
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation
 msgid "Checkin"
-msgstr ""
+msgstr "Check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__pending_checkin_data
@@ -3564,48 +3573,49 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Checkin Data"
-msgstr ""
+msgstr "Dati check-in"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 msgid "Checkin Date"
-msgstr ""
+msgstr "Data check-in"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkin Detail"
-msgstr ""
+msgstr "Dettaglio check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_several_partners_wizard__checkin_partner_id
 msgid "Checkin Partner"
-msgstr ""
+msgstr "Partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__email
 msgid "Checkin Partner Email"
-msgstr ""
+msgstr "E-mail partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__identifier
 msgid "Checkin Partner Id"
-msgstr ""
+msgstr "ID partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__image_128
 msgid "Checkin Partner Image, it corresponds with Partner Image associated"
 msgstr ""
+"Immagine partner check-in, corrisponde all'immagine associata al partner"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__mobile
 msgid "Checkin Partner Mobile"
-msgstr ""
+msgstr "Cellulare partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__phone
 msgid "Checkin Partner Phone"
-msgstr ""
+msgstr "Telefono partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__checkin_partner_ids
@@ -3614,67 +3624,67 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_res_partner__pms_checkin_partner_ids
 #: model:ir.model.fields,field_description:pms.field_res_users__pms_checkin_partner_ids
 msgid "Checkin Partners"
-msgstr ""
+msgstr "Partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__checkin_partner_pending_count
 msgid "Checkin Pending Num"
-msgstr ""
+msgstr "Numero partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__checkin_sequence_id
 msgid "Checkin Sequence"
-msgstr ""
+msgstr "Sequenza check-in"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkin by"
-msgstr ""
+msgstr "Check-in da"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkin by Day"
-msgstr ""
+msgstr "Check-in per giorno"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkin by Month"
-msgstr ""
+msgstr "Check-in per mese"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkin by Week"
-msgstr ""
+msgstr "Check-in per settimana"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__checkin_partner_count
 msgid "Checkin counter"
-msgstr ""
+msgstr "Contatore check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__checkin
 msgid "Checkin date"
-msgstr ""
+msgstr "Data check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation_split_join_swap_wizard__checkin
 msgid "Checkin in reservation"
-msgstr ""
+msgstr "Check-in in prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__arrival
 msgid "Checkin partner arrival date and time"
-msgstr ""
+msgstr "Data e ora arrivo partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__departure
 msgid "Checkin partner departure date and time"
-msgstr ""
+msgstr "Data e ora partenza partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__name
 msgid "Checkin partner name"
-msgstr ""
+msgstr "Nome partner check-in"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__aeat_simplified_invoice
@@ -3682,6 +3692,8 @@ msgid ""
 "Checking this mark, invoices done to this partner will be sent to AEAT as "
 "simplified invoices."
 msgstr ""
+"Selezionando questa opzione, le fatture di questo partner verranno inviate a "
+"AEAT come fatture semplificate."
 
 #. module: pms
 #. odoo-python
@@ -3690,102 +3702,102 @@ msgstr ""
 #: model:ir.ui.menu,name:pms.menu_pms_checkin_partner
 #, python-format
 msgid "Checkins"
-msgstr ""
+msgstr "Check-in"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkins Today"
-msgstr ""
+msgstr "Check-in di oggi"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkins Tomorrow"
-msgstr ""
+msgstr "Check-in di domani"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkins to 7 days"
-msgstr ""
+msgstr "Check-in in sette giorni"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_property__default_invoicing_policy__checkout
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation
 msgid "Checkout"
-msgstr ""
+msgstr "Check-out"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Checkout by"
-msgstr ""
+msgstr "Check-out per"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkout by Day"
-msgstr ""
+msgstr "Check-out per giorno"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkout by Month"
-msgstr ""
+msgstr "Check-out per mese"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Checkout by Week"
-msgstr ""
+msgstr "Check-out per settimana"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__checkout
 msgid "Checkout date"
-msgstr ""
+msgstr "Data check-out"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__res_company__pms_invoice_downpayment_policy__checkout_past_month
 msgid "Checkout past month"
-msgstr ""
+msgstr "Check-out mese scorso"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability__child_avail_ids
 msgid "Child Avails"
-msgstr ""
+msgstr "Figli disponibili"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__child_ids
 msgid "Child Properties"
-msgstr ""
+msgstr "Proprietà figli"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room__child_ids
 msgid "Child Rooms"
-msgstr ""
+msgstr "Camere figli"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_availability__child_avail_ids
 msgid "Child availabilities for this availability"
-msgstr ""
+msgstr "Disponibilità figli per questa disponibilità"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room__child_ids
 msgid "Child rooms of the room"
-msgstr ""
+msgstr "Camere figlie della camera"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_line__children
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type_line__children
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__children
 msgid "Children"
-msgstr ""
+msgstr "Figli"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__children_occupying
 msgid "Children Occupying"
-msgstr ""
+msgstr "Occupazione figli"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.several_partners_wizard
 msgid "Choose a customer if you want to add it to the reservation"
-msgstr ""
+msgstr "Selezionare un cliente se lo si vuole aggiungere alla prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__residence_city
@@ -3798,7 +3810,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_view_form
 #: model_terms:ir.ui.view,arch_db:pms.res_partner_view_form
 msgid "City"
-msgstr ""
+msgstr "Città"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__residence_city
@@ -3806,87 +3818,87 @@ msgstr ""
 #: model:ir.model.fields,help:pms.field_res_partner__residence_city
 #: model:ir.model.fields,help:pms.field_res_users__residence_city
 msgid "City of the guest's residence"
-msgstr ""
+msgstr "Città della residenza dell'ospite"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type_class__name
 msgid "Class Name"
-msgstr ""
+msgstr "Nome classe"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__class_id
 msgid "Class to which the room type belongs"
-msgstr ""
+msgstr "Classe a cui appartiene il tipo di camera"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan_rule__closed
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__closed
 msgid "Closed"
-msgstr ""
+msgstr "Chiusa"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan_rule__closed_arrival
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__closed_arrival
 msgid "Closed Arrival"
-msgstr ""
+msgstr "Arrivo chiuso"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan_rule__closed_departure
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__closed_departure
 msgid "Closed Departure"
-msgstr ""
+msgstr "Partenza chiusa"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__closure_reason_id
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__closure_reason_id
 msgid "Closure Reason"
-msgstr ""
+msgstr "Motivo chiusura"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.menu_pms_room_closure_reason_form_tree
 msgid "Closure Reasons"
-msgstr ""
+msgstr "Motivi chiusura"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Closure reason"
-msgstr ""
+msgstr "Motivo chiusura"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__default_code
 #: model:ir.model.fields,field_description:pms.field_pms_room_type_class__default_code
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__color
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__color
 msgid "Color Index"
-msgstr ""
+msgstr "Indice colore"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__combination_indices
 msgid "Combination Indices"
-msgstr ""
+msgstr "Indici assortimento"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__comment
 #: model:ir.model.fields,field_description:pms.field_res_partner__comment
 #: model:ir.model.fields,field_description:pms.field_res_users__comment
 msgid "Comment"
-msgstr ""
+msgstr "Commento"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Comments about the customer"
-msgstr ""
+msgstr "Commenti sul cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__commercial_partner_id
 msgid "Commercial Entity"
-msgstr ""
+msgstr "Entità commerciale"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__commission
@@ -3896,50 +3908,50 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_tree
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_tree
 msgid "Commission"
-msgstr ""
+msgstr "Provvigione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Commission Amount"
-msgstr ""
+msgstr "Importo provvigione"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__res_partner__commission_type__included
 msgid "Commission Included in Price"
-msgstr ""
+msgstr "Provvigione inclusa nel prezzo"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__res_partner__commission_type__subtract
 msgid "Commission Subtracts from Price"
-msgstr ""
+msgstr "Provvigione detratta dal prezzo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__commission_type
 #: model:ir.model.fields,field_description:pms.field_res_partner__commission_type
 #: model:ir.model.fields,field_description:pms.field_res_users__commission_type
 msgid "Commission Type"
-msgstr ""
+msgstr "Tipo di provvigione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__commission_amount
 msgid "Commission amount"
-msgstr ""
+msgstr "Importo provvigione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__commission_percent
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Commission percent (%)"
-msgstr ""
+msgstr "Percentuale provvigione (%)"
 
 #. module: pms
 #: model:ir.model,name:pms.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Aziende"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__ref_company_ids
 msgid "Companies that refers to partner"
-msgstr ""
+msgstr "Aziende che si riferiscono al fornitore"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_sale_line__company_id
@@ -3951,182 +3963,182 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_product_pricelist__company_id
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__company_registry
 msgid "Company ID"
-msgstr ""
+msgstr "ID azienda"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__company_name
 msgid "Company Name"
-msgstr ""
+msgstr "Nome azienda"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__commercial_company_name
 msgid "Company Name Entity"
-msgstr ""
+msgstr "Entità nome azienda"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__company_type
 msgid "Company Type"
-msgstr ""
+msgstr "Tipo azienda"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_product_pricelist__company_id
 msgid "Company to which the pricelist belongs"
-msgstr ""
+msgstr "Azienda a cui appartiene il listino"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__company_id
 msgid "Company to which the reservation belongs"
-msgstr ""
+msgstr "Azienda a cui appartiene la prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service__company_id
 msgid "Company to which the service belongs"
-msgstr ""
+msgstr "Azienda a cui appartiene il servizio"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__contact_address
 msgid "Complete Address"
-msgstr ""
+msgstr "Indirizzo completo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__ratio_checkin_data
 msgid "Complete cardex"
-msgstr ""
+msgstr "Cardex completo"
 
 #. module: pms
 #: model:pms.room.type.class,name:pms.pms_room_type_class_conference_room
 msgid "Conference"
-msgstr ""
+msgstr "Conferenza"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.pms_configuration_menu
 msgid "Configuration"
-msgstr ""
+msgstr "Configurazione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Confirm"
-msgstr ""
+msgstr "Conferma"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Confirm Assigned Room"
-msgstr ""
+msgstr "Conferma camera assegnata"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Confirm Reservation"
-msgstr ""
+msgstr "Conferma prenotazione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 msgid "Confirm Sale"
-msgstr ""
+msgstr "Conferma vendita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__confirmation_date
 msgid "Confirmation Date"
-msgstr ""
+msgstr "Data conferma"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__property_confirmed_template
 #: model_terms:ir.ui.view,arch_db:pms.pms_property_views_form
 msgid "Confirmation Email"
-msgstr ""
+msgstr "E-mail conferma"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__property_confirmed_template
 msgid "Confirmation email template"
-msgstr ""
+msgstr "Modello e-mail conferma"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_folio__state__confirm
 msgid "Confirmed"
-msgstr ""
+msgstr "Confermata"
 
 #. module: pms
 #: model:mail.template,name:pms.confirmed_reservation_email
 msgid "Confirmed Reservation"
-msgstr ""
+msgstr "Prenotazione confermata"
 
 #. module: pms
 #: model:pms.amenity.type,name:pms.pms_amenity_type_connectivity
 msgid "Connectivity"
-msgstr ""
+msgstr "Connettività"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__consumed_on
 #: model:ir.model.fields,field_description:pms.field_product_product__consumed_on
 #: model:ir.model.fields,field_description:pms.field_product_template__consumed_on
 msgid "Consumed"
-msgstr ""
+msgstr "Consumato"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.product_pricelist_item_view_form
 msgid "Consumption"
-msgstr ""
+msgstr "Consumo"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_massive_changes_wizard__date_types__consumption_dates
 msgid "Consumption Dates"
-msgstr ""
+msgstr "Date consumo"
 
 #. module: pms
 #: model:ir.model,name:pms.model_res_partner
 #: model_terms:ir.ui.view,arch_db:pms.folio_portal_template
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 msgid "Contact Invoiced"
-msgstr ""
+msgstr "Contatto fatturato"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_kanban_view
 msgid "Contact image"
-msgstr ""
+msgstr "Immagine contatto"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.pms_contacts_menu
 msgid "Contacts"
-msgstr ""
+msgstr "Contatti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__standard_price
 msgid "Cost"
-msgstr ""
+msgstr "Costo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__cost_currency_id
 msgid "Cost Currency"
-msgstr ""
+msgstr "Valuta costo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__cost_method
 msgid "Costing Method"
-msgstr ""
+msgstr "Metodo valorizzazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__count_alternative_free_rooms
 msgid "Count Alternative Free Rooms"
-msgstr ""
+msgstr "Conteggio camere libere alternative"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__message_bounce
 msgid "Counter of the number of bounced emails for this contact"
-msgstr ""
+msgstr "Contatore del numero di e-mail respinte per questo contatto"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_partner_id_category__country_ids
 msgid "Countries"
-msgstr ""
+msgstr "Nazioni"
 
 #. module: pms
 #: model:ir.model,name:pms.model_res_country
@@ -4141,19 +4153,19 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_view_form
 #: model_terms:ir.ui.view,arch_db:pms.res_partner_view_form
 msgid "Country"
-msgstr ""
+msgstr "Nazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__country_code
 msgid "Country Code"
-msgstr ""
+msgstr "Codice nazione"
 
 #. module: pms
 #. odoo-python
 #: code:addons/pms/models/res_partner_id_number.py:0
 #, python-format
 msgid "Country is not allowed for this document type"
-msgstr ""
+msgstr "La nazione non è consentita per questo tipo documento"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__residence_country_id
@@ -4161,80 +4173,80 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_res_partner__residence_country_id
 #: model:ir.model.fields,field_description:pms.field_res_users__residence_country_id
 msgid "Country of residence"
-msgstr ""
+msgstr "Nazione di residenza"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__document_country_id
 #: model:ir.model.fields,help:pms.field_res_partner_id_number__country_id
 msgid "Country of the document"
-msgstr ""
+msgstr "Nazione del documento"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__residence_country_id
 msgid "Country of the guest's residence"
-msgstr ""
+msgstr "Nazione della residenza dell'ospite"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
 msgid "Create Date"
-msgstr ""
+msgstr "Data creazione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.booking_engine
 msgid "Create Folio"
-msgstr ""
+msgstr "Crea foglio"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__advance_payment_method
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_form
 #: model_terms:ir.ui.view,arch_db:pms.view_folio_advance_payment_inv
 msgid "Create Invoice"
-msgstr ""
+msgstr "Crea fattura"
 
 #. module: pms
 #: model_terms:ir.actions.act_window,help:pms.action_pms_move_out_invoice_type
 msgid "Create a customer invoice"
-msgstr ""
+msgstr "Crea una fattura cliente"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.booking_duplicate
 msgid "Create and Close"
-msgstr ""
+msgstr "Crea a chiudi"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.booking_duplicate
 msgid "Create and Continue"
-msgstr ""
+msgstr "Crea e continua"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.view_folio_advance_payment_inv
 msgid "Create and View Invoice"
-msgstr ""
+msgstr "Crea e visualizza fattura"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 msgid "Create by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Create by Day"
-msgstr ""
+msgstr "Create per giorno"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Create by Month"
-msgstr ""
+msgstr "Create per mese"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Create by Week"
-msgstr ""
+msgstr "Create per settimana"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.action_view_folio_advance_payment_inv
 msgid "Create invoices"
-msgstr ""
+msgstr "Crea fatture"
 
 #. module: pms
 #: model_terms:ir.actions.act_window,help:pms.action_pms_move_out_invoice_type
@@ -4242,12 +4254,14 @@ msgid ""
 "Create invoices, register payments and keep track of the discussions with "
 "your customers."
 msgstr ""
+"Crea fatture, registra pagamenti e tieni traccia della messaggistica con i "
+"tuoi clienti."
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 msgid "Created By"
-msgstr ""
+msgstr "Creato da"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__create_uid
@@ -4289,7 +4303,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__create_uid
 #: model:ir.model.fields,field_description:pms.field_wizard_payment_folio__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__create_date
@@ -4331,35 +4345,35 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__create_date
 #: model:ir.model.fields,field_description:pms.field_wizard_payment_folio__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 msgid "Creation Date"
-msgstr ""
+msgstr "Data creazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__credit_card_details
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__credit_card_details
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Credit Card Details"
-msgstr ""
+msgstr "Dettagli carta di credito"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__credit_limit
 msgid "Credit Limit"
-msgstr ""
+msgstr "Fido"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.report_invoice_document
 msgid "Credit Note"
-msgstr ""
+msgstr "Nota di credito"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__credit_limit
 msgid "Credit limit specific to this partner."
-msgstr ""
+msgstr "Fido specifico di questo partner."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__currency_id
@@ -4372,12 +4386,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_service__currency_id
 #: model:ir.model.fields,field_description:pms.field_pms_service_line__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_advance_payment_inv__currency_id
 msgid "Currency used in invoices"
-msgstr ""
+msgstr "Valuta utilizzata nelle fatture"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
@@ -4385,17 +4399,17 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_service_line_view_search
 msgid "Current Booking"
-msgstr ""
+msgstr "Prenotazione attuale"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.res_users_view_form
 msgid "Current Property"
-msgstr ""
+msgstr "Proprietà attuale"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__partner_id
 msgid "Current property"
-msgstr ""
+msgstr "Proprietà attuale"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__qty_available
@@ -4410,82 +4424,89 @@ msgid ""
 "Otherwise, this includes goods stored in any Stock Location with 'internal' "
 "type."
 msgstr ""
+"Quantità attuale di prodotti.\n"
+"In un contesto con una sola ubicazione di magazzino, include beni stoccati "
+"in questa ubicazione o qualsiasi delle sue figlie.\n"
+"In un contesto con un solo magazzino, include beni stoccati nell'ubicazione "
+"di questo magazzino o una qualsiasi delle figlie.\n"
+"Stoccate nell'ubicazione di questo negozio, o qualsiasi delle sue figlie.\n"
+"Altrimenti, include beni stoccati in qualsiasi ubicazione di tipo 'interno'."
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
 msgid "Current state of this reservation"
-msgstr ""
+msgstr "Stato attuale della prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__partner_id
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__new_partner_id
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
 msgid "Customer"
-msgstr ""
+msgstr "Cliente"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__email
 #: model:ir.model.fields,help:pms.field_pms_reservation__email
 msgid "Customer E-mail"
-msgstr ""
+msgstr "E-mail cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__sale_delay
 msgid "Customer Lead Time"
-msgstr ""
+msgstr "Tempo attesa cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__property_stock_customer
 msgid "Customer Location"
-msgstr ""
+msgstr "Località cliente"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__mobile
 #: model:ir.model.fields,help:pms.field_pms_reservation__mobile
 msgid "Customer Mobile"
-msgstr ""
+msgstr "Cellulare cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__partner_name
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__partner_name
 msgid "Customer Name"
-msgstr ""
+msgstr "Nome cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__property_payment_term_id
 msgid "Customer Payment Terms"
-msgstr ""
+msgstr "Termini pagamento cliente"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__access_url
 #: model:ir.model.fields,help:pms.field_pms_folio__access_url
 #: model:ir.model.fields,help:pms.field_pms_reservation__access_url
 msgid "Customer Portal URL"
-msgstr ""
+msgstr "URL portale cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__customer_rank
 msgid "Customer Rank"
-msgstr ""
+msgstr "Classe cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__partner_ref
 msgid "Customer Ref"
-msgstr ""
+msgstr "Rif. cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__deposit_taxes_id
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__taxes_id
 #: model_terms:ir.ui.view,arch_db:pms.pms_amenity_view_form
 msgid "Customer Taxes"
-msgstr ""
+msgstr "Imposte cliente"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.pms_customer_action
 #: model:ir.model.fields,field_description:pms.field_pms_several_partners_wizard__possible_existing_customer_ids
 #: model:ir.ui.menu,name:pms.pms_customer_meu
 msgid "Customers"
-msgstr ""
+msgstr "Clienti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__daily_limit
@@ -4493,24 +4514,24 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_product_template__daily_limit
 #: model_terms:ir.ui.view,arch_db:pms.product_template_view_form
 msgid "Daily Limit"
-msgstr ""
+msgstr "Limite giornaliero"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__property_daily_limits
 #: model:ir.model.fields,field_description:pms.field_product_product__property_daily_limits
 #: model:ir.model.fields,field_description:pms.field_product_template__property_daily_limits
 msgid "Daily Limits per Property"
-msgstr ""
+msgstr "Limiti giornalieri per proprietà"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__product_pricelist__pricelist_type__daily
 msgid "Daily Plan"
-msgstr ""
+msgstr "Piano giornaliero"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__pending_checkin_data
 msgid "Data missing at checkin"
-msgstr ""
+msgstr "Data mancante al check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_sale_line__date_order
@@ -4522,108 +4543,110 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_wizard_reservation_lines_split__date
 #: model:ir.model.fields,field_description:pms.field_wizard_payment_folio__date
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__date_order
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__date_order
 msgid "Date Order"
-msgstr ""
+msgstr "Data ordine"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio_availability_wizard__checkout
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__checkout
 msgid "Date Reservation ends"
-msgstr ""
+msgstr "Data fine prenotazione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio_availability_wizard__checkin
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__checkin
 msgid "Date Reservation starts "
-msgstr ""
+msgstr "Data inizio prenotazione "
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__sign_on
 msgid "Date and time of the signature"
-msgstr ""
+msgstr "Data e ora della firma"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_availability__date
 msgid "Date for which availability applies"
-msgstr ""
+msgstr "Data per la quale si applica la disponibilità"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_availability_plan_rule__date
 msgid "Date for which availability rule applies"
-msgstr ""
+msgstr "Data per la quale si applica la regola"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_booking_duplicate__start_date
 msgid "Date from first copy Checkin (reference min checkin folio reservation)"
 msgstr ""
+"Data della prima copia del check-in (riferimento foglio primo check-in "
+"prenotazione)"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__document_expedition_date
 msgid "Date on which document_type was issued"
-msgstr ""
+msgstr "Data nella quale è stato segnalato il document_type"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__date_order
 msgid "Date on which folio is sold"
-msgstr ""
+msgstr "Data di vendita del foglio"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__confirmation_date
 msgid "Date on which the folio is confirmed."
-msgstr ""
+msgstr "Data di conferma del foglio."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__date_types
 msgid "Date types"
-msgstr ""
+msgstr "Tipi date"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__cancel_datetime
 msgid "Date when the reservation was cancelled"
-msgstr ""
+msgstr "Data annullamento della prenotazione"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__wizard_folio_changes__modification_type__dates
 msgid "Dates"
-msgstr ""
+msgstr "Date"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__dates_incongruence
 msgid "Dates Incongruence"
-msgstr ""
+msgstr "Incongruenza date"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_cancelation_rule__days_intime
 msgid "Days Late"
-msgstr ""
+msgstr "Giorni ritardo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__days_to_checkin
 msgid "Days To Checkin"
-msgstr ""
+msgstr "Giorni al check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__days_to_checkout
 msgid "Days To Checkout"
-msgstr ""
+msgstr "Giorni al check-out"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_partner__margin_days_autoinvoice
 #: model:ir.model.fields,field_description:pms.field_res_users__margin_days_autoinvoice
 msgid "Days from Checkout"
-msgstr ""
+msgstr "Giorni dal check-out"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__margin_days_autoinvoice
 #: model:ir.model.fields,help:pms.field_res_partner__margin_days_autoinvoice
 #: model:ir.model.fields,help:pms.field_res_users__margin_days_autoinvoice
 msgid "Days from Checkout to generate the invoice"
-msgstr ""
+msgstr "Giorni dal check-out per generare la fattura"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_cancelation_rule__apply_on_late
@@ -4631,6 +4654,9 @@ msgid ""
 "Days on which the cancelation rule applies when the reason is late arrival. "
 "Can be first, all days or specify the days."
 msgstr ""
+"Giorni dopo i quali si applica la regola di annullamento della prenotazione "
+"in caso di arrivo in ritardo. Può essere il primo giorno, tutti i giorni o "
+"un giorno specifico."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_cancelation_rule__apply_on_noshow
@@ -4638,58 +4664,61 @@ msgid ""
 "Days on which the cancelation rule applies when the reason is no show. Can "
 "be first, all days or specify the days."
 msgstr ""
+"Giorni dopo i quali si applica la regola di annullamento quando il motivo è "
+"mancato arrivo. Può essere il primo giorno, tutti i giorni o un giorno "
+"specifico."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_advance_payment_inv__deduct_down_payments
 msgid "Deduct Down Payments"
-msgstr ""
+msgstr "Dedurre acconti"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_advance_payment_inv__deduct_down_payments
 msgid "Deduct down payments"
-msgstr ""
+msgstr "Dedurre acconti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__default_invoicing_policy
 msgid "Default Invoicing Policy"
-msgstr ""
+msgstr "Politica fatturazione predefinita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__default_max_avail
 msgid "Default Max. Availability"
-msgstr ""
+msgstr "Disponibilità massima predefinita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_res_users__pms_property_id
 msgid "Default Property"
-msgstr ""
+msgstr "Proprietà predefinita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__default_quota
 msgid "Default Quota"
-msgstr ""
+msgstr "Quota predefinita"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__default_commission
 #: model:ir.model.fields,help:pms.field_res_partner__default_commission
 #: model:ir.model.fields,help:pms.field_res_users__default_commission
 msgid "Default commission"
-msgstr ""
+msgstr "Provvigione predefinita"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__supplier_taxes_id
 msgid "Default taxes used when buying the product."
-msgstr ""
+msgstr "Imposte predefinite nell'acquisto del prodotto."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__taxes_id
 msgid "Default taxes used when selling the product."
-msgstr ""
+msgstr "Imposte predefinite nella vendita del prodotto."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__uom_id
 msgid "Default unit of measure used for all stock operations."
-msgstr ""
+msgstr "Unità di misura predefinita per tutte le operazioni di magazzino."
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__uom_po_id
@@ -4697,11 +4726,13 @@ msgid ""
 "Default unit of measure used for purchase orders. It must be in the same "
 "category as the default unit of measure."
 msgstr ""
+"Unità di misura predefinita utilizzata per ordini di acquisto. Deve essere "
+"della stessa categoria dell'unità di misura predefinita."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__trust
 msgid "Degree of trust you have in this debtor"
-msgstr ""
+msgstr "Grado di affidabilità che ha questo debitore"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__sale_delay
@@ -4709,30 +4740,32 @@ msgid ""
 "Delivery lead time, in days. It's the number of days, promised to the "
 "customer, between the confirmation of the sales order and the delivery."
 msgstr ""
+"Tempo di consegna, in giorni. È il numero di giorni promesso al cliente, tra "
+"la conferma dell'ordine di vendita e la consegna."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__default_departure_hour
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__departure_hour
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Departure Hour"
-msgstr ""
+msgstr "Ora di partenza"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__departure_hour
 msgid "Departure Hour (HH:MM)"
-msgstr ""
+msgstr "Ora di partenza (HH:MM)"
 
 #. module: pms
 #. odoo-python
 #: code:addons/pms/models/pms_checkin_partner.py:0
 #, python-format
 msgid "Departure date (%(departure)s) is prior to arrival on %(arrival)s"
-msgstr ""
+msgstr "Data partenza (%(departure)s) è antecedente all'arrivo in %(arrival)s"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_reservation__state__departure_delayed
 msgid "Departure delayed"
-msgstr ""
+msgstr "Partenza ritardata"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__route_ids
@@ -4741,6 +4774,8 @@ msgid ""
 "of the product: whether it will be bought, manufactured, replenished on "
 "order, etc."
 msgstr ""
+"In funzione dei moduli installati, consentirà di definire il percorso del "
+"prodotto: se verrà comprato, lavorato, rifornito su ordine, ecc."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_sale_line__name
@@ -4748,12 +4783,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_room_closure_reason__description
 #: model_terms:ir.ui.view,arch_db:pms.report_folio_document
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_sale_line__name
 msgid "Description of folio sale line"
-msgstr ""
+msgstr "Descrizione della riga foglio vendita"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__description_pickingout
@@ -5841,7 +5876,7 @@ msgstr ""
 #: model:ir.model.fields,help:pms.field_pms_room_type__board_price
 #: model:ir.model.fields,help:pms.field_product_product__board_price
 msgid "Get price on board service"
-msgstr ""
+msgstr "Ottieni prezzo nel servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation_line__price_day_total
@@ -6383,6 +6418,8 @@ msgid ""
 "Indicates if the service included in folio sale line is part of a board "
 "service"
 msgstr ""
+"Indica se il servizio incluso nella riga vendita foglio è parte di un "
+"servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service__is_cancel_penalty
@@ -6392,17 +6429,19 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service__is_board_service
 msgid "Indicates if the service is part of a board service"
-msgstr ""
+msgstr "Indica se il servizio è parte di un servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service_line__is_board_service
 msgid "Indicates if the service line is part of a board service"
-msgstr ""
+msgstr "Indica se la riga servizio è parte di un servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type__by_default
 msgid "Indicates if this board service is applied by default in the room type"
 msgstr ""
+"Indica se questo servizio pensione è applicato in modo predefinito al tipo "
+"di camera"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room__address_is_independent
@@ -6492,6 +6531,8 @@ msgid ""
 "Integrity error: There's multiple board services with the same code %s and "
 "properties"
 msgstr ""
+"Errore integrità: ci sono diversi servizi pensione con lo stesso codice %s e "
+"proprietà"
 
 #. module: pms
 #. odoo-python
@@ -6782,7 +6823,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_service__is_board_service
 #: model:ir.model.fields,field_description:pms.field_pms_service_line__is_board_service
 msgid "Is Board Service"
-msgstr ""
+msgstr "È servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_service__is_cancel_penalty
@@ -7784,7 +7825,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__new_board_service_id
 msgid "New Board Service"
-msgstr ""
+msgstr "Nuovo servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__new_checkin
@@ -8221,7 +8262,7 @@ msgstr ""
 #: code:addons/pms/models/pms_board_service_room_type.py:0
 #, python-format
 msgid "Only can set one default board service"
-msgstr ""
+msgstr "Si può definire solo un servizio pensione predefinito"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__product_template__consumed_on__checkin
@@ -9004,12 +9045,12 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_line__amount
 msgid "Price for this Board Service Line/Product"
-msgstr ""
+msgstr "Prezzo per questa riga servizio pensione/prodotto"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type_line__amount
 msgid "Price for this Board Service Room Type Line/Product"
-msgstr ""
+msgstr "Prezzo per questa riga tipo camera servizio pensione/prodotto"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service__amount
@@ -9018,6 +9059,8 @@ msgid ""
 "Price for this Board Service. It corresponds to the sum of his board service "
 "lines"
 msgstr ""
+"Prezzo per questo servizio pensione. Corrisponde alla somma di queste righe "
+"servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio_availability_wizard__price_per_room
@@ -9173,7 +9216,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type__pricelist_ids
 msgid "Pricelists where this Board Service is available"
-msgstr ""
+msgstr "Listini in cui è disponibile questo servizio pensione"
 
 #. module: pms
 #. odoo-python
@@ -9306,12 +9349,12 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_line__product_id
 msgid "Product associated with this board service line"
-msgstr ""
+msgstr "Prodotto associato con questa riga prodotto pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type_line__product_id
 msgid "Product associated with this board service room type line"
-msgstr ""
+msgstr "Prodotto associato con questa riga tipo camera servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service__product_id
@@ -10241,7 +10284,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type__pms_room_type_id
 msgid "Room Type for which this Board Service is available"
-msgstr ""
+msgstr "Tipo camera per il quale è disponibile questo servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio_availability_wizard__room_type_id
@@ -10345,7 +10388,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__board_service_room_type_ids
 msgid "Room type's board services"
-msgstr ""
+msgstr "Tipo camera dei servizi pensione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__room_type_filter_ids
@@ -10963,17 +11006,17 @@ msgstr ""
 #: model:ir.model.fields,help:pms.field_pms_board_service__board_service_line_ids
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type__board_service_line_ids
 msgid "Services included in this Board Service"
-msgstr ""
+msgstr "Servizi inclusi in questo servizio pensione"
 
 #. module: pms
 #: model:ir.model,name:pms.model_pms_board_service_line
 msgid "Services on Board Service included"
-msgstr ""
+msgstr "Servizi inclusi nel servizio pensione"
 
 #. module: pms
 #: model:ir.model,name:pms.model_pms_board_service_room_type_line
 msgid "Services on Board Service included in Room"
-msgstr ""
+msgstr "Servizi in camera inclusi nel servizio pensione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__overnight_room
@@ -11175,7 +11218,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_product_pricelist_item__board_service_room_type_id
 msgid "Specify a Board services on Room Types."
-msgstr ""
+msgstr "Indicare un servizio pensione in un tipo camera."
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_cancelation_rule__apply_on_late__days
@@ -12747,6 +12790,8 @@ msgstr ""
 #: model:ir.model.fields,help:pms.field_pms_board_service__show_detail_report
 msgid "True if you want that board service detail to be shown on the report"
 msgstr ""
+"Vero se si vuole che il dettaglio del servizio pensione sia visualizzato nel "
+"resoconto"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.massive_changes_wizard
@@ -12816,7 +12861,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service__default_code
 msgid "Unique Board Service identification code per property"
-msgstr ""
+msgstr "Codice identificazione univoco servizio pensione per proprietà"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room__room_type_id
@@ -13086,7 +13131,7 @@ msgstr ""
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_type_view_form
 msgid "View Board Services"
-msgstr ""
+msgstr "Visualizza servizi pensione"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
