@@ -540,7 +540,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_operating_unit](account_operating_unit/) | 18.0.1.0.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 18.0.1.0.1 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [analytic_operating_unit](analytic_operating_unit/) | 18.0.1.0.0 |  | Analytic Operating Unit
 [mrp_operating_unit](mrp_operating_unit/) | 18.0.1.0.0 |  | Operating Unit in MRP
 [operating_unit](operating_unit/) | 18.0.1.0.1 |  | An operating unit (OU) is an organizational entity part of a company
@@ -940,7 +940,7 @@ addon | version | maintainers | summary
 [account_move_base_import](account_move_base_import/) | 18.0.1.0.0 |  | Journal Entry base import
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.0.2 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.15 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.16 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 18.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 18.0.1.0.0 |  | Base transaction ID for financial institutes
 
@@ -998,6 +998,7 @@ addon | version | maintainers | summary
 [account_statement_import_online](account_statement_import_online/) | 18.0.1.1.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 18.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 18.0.1.0.0 |  | Online Bank Statements: MyPonto.com
+[account_statement_import_online_stripe](account_statement_import_online_stripe/) | 18.0.1.0.0 | <a href='https://github.com/juancarlosonate-tecnativa'><img src='https://github.com/juancarlosonate-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juancarlosonate-tecnativa'/></a> | Online bank statements for Stripe
 
 [//]: # (end addons)
 
@@ -1749,6 +1750,7 @@ addon | version | maintainers | summary
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 18.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
 [sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.0 |  | General discount per sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 18.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
+[sale_order_line_chained_move](sale_order_line_chained_move/) | 18.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module adds a field on sale order line to get all related move lines
 [sale_order_line_date](sale_order_line_date/) | 18.0.1.0.2 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 18.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_input](sale_order_line_input/) | 18.0.1.0.0 |  | Search, create or modify directly sale order lines
@@ -2129,7 +2131,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_sold_by_delivery_week](product_sold_by_delivery_week/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds a field that graphically hints the weekly product sales
 [sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 18.0.1.0.0 |  | Hide details for sections in sale orders and invoices for reports and customer portal
-[sale_order_line_position](sale_order_line_position/) | 18.0.1.0.0 |  | Adds position number on sale order line.
+[sale_order_line_position](sale_order_line_position/) | 18.0.1.0.1 |  | Adds position number on sale order line.
 [sale_order_product_recommendation_product_sold_by_delivery_week](sale_order_product_recommendation_product_sold_by_delivery_week/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds the weekly sales field to the recommendation wizard
 [sale_order_report_product_image](sale_order_report_product_image/) | 18.0.1.0.2 |  | Show product images on Sale documents
 [sale_report_delivered](sale_report_delivered/) | 18.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered
@@ -2350,6 +2352,7 @@ addon | version | maintainers | summary
 [document_page_partner](document_page_partner/) | 18.0.1.0.0 |  | Allows to link doucment pages to a partner
 [document_page_project](document_page_project/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | This module links document pages to projects
 [document_page_reference](document_page_reference/) | 18.0.2.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Include references on document pages
+[document_page_tag](document_page_tag/) | 18.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 [document_url](document_url/) | 18.0.1.0.0 |  | URL attachment
 
 [//]: # (end addons)
@@ -2520,7 +2523,7 @@ addon | version | maintainers | summary
 [account_invoice_export](account_invoice_export/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
 [account_invoice_export_server_env](account_invoice_export_server_env/) | 18.0.1.0.0 |  | Server environment for Account Invoice Export
-[account_invoice_facturx](account_invoice_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx](account_invoice_facturx/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [base_business_document_import](base_business_document_import/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 18.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
@@ -3928,6 +3931,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_balance_ebp_csv_export](account_balance_ebp_csv_export/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Export the trial balance in EBP format (CSV or XLSX)
 [account_payment_fr_lcr](account_payment_fr_lcr/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Create French LCR CFONB files
 [account_statement_import_fr_cfonb](account_statement_import_fr_cfonb/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import CFONB bank statements files in Odoo
 [country_fr](country_fr/) | 18.0.1.0.0 |  | Set FR country on `base.main_company` record to set up French localisation.
@@ -4936,9 +4940,9 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.0.0 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_cnae](l10n_es_cnae/) | 18.0.1.0.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
-[l10n_es_facturae](l10n_es_facturae/) | 18.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 18.0.1.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 18.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
-[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 18.0.1.0.0 |  | Spanish Intrastat Product Declaration
+[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 18.0.1.1.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 18.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 18.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 18.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
@@ -5428,6 +5432,7 @@ addon | version | maintainers | summary
 [delivery_postlogistics_server_env](delivery_postlogistics_server_env/) | 18.0.1.0.0 |  | Server Environment layer for Delivery Postlogistics
 [delivery_price_method](delivery_price_method/) | 18.0.1.0.0 |  | Force a fixed or rule price calculation on Delivery Methods, for example to override a webservice provided prices.
 [delivery_roulier](delivery_roulier/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Integration of multiple carriers
+[delivery_schenker](delivery_schenker/) | 18.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_state](delivery_state/) | 18.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
@@ -5738,7 +5743,7 @@ addon | version | maintainers | summary
 [stock_location_tray](stock_location_tray/) | 18.0.1.0.0 |  | Organize a location as a matrix of cells
 [stock_location_zone](stock_location_zone/) | 18.0.1.0.0 |  | Classify locations with zones.
 [stock_move_common_dest](stock_move_common_dest/) | 18.0.1.0.1 |  | Adds field for common destination moves
-[stock_move_location](stock_move_location/) | 18.0.1.0.0 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_location](stock_move_location/) | 18.0.1.0.1 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_location_purchase_uom](stock_move_location_purchase_uom/) | 18.0.1.0.0 |  | This module 'glues' the modules stock_move_location and stock_move_purchase_uom.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 18.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Add packaging fields in the stock moves
 [stock_move_purchase_uom](stock_move_purchase_uom/) | 18.0.1.1.0 |  | Allow to use the purchase UoM in a stock move
@@ -6073,7 +6078,7 @@ addon | version | maintainers | summary
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 18.0.1.1.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
 [mrp_lot_production_date](mrp_lot_production_date/) | 18.0.1.0.0 |  | MRP Lot Production Date
 [mrp_mass_production_order](mrp_mass_production_order/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create multiple manufacturing orders in one step
-[mrp_multi_level](mrp_multi_level/) | 18.0.1.2.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 18.0.1.3.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_package_propagation](mrp_package_propagation/) | 18.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a package from a component to a finished product
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 18.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Manufacturing Order Auto-Validation when components are picked
@@ -6918,6 +6923,7 @@ addon | version | maintainers | summary
 [contract_payment_mode](contract_payment_mode/) | 18.0.1.0.0 |  | Payment mode in contracts and their invoices
 [contract_price_revision](contract_price_revision/) | 18.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Easy revision of contract prices
 [contract_queue_job](contract_queue_job/) | 18.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/BurkhalterY'><img src='https://github.com/BurkhalterY.png' width='32' height='32' style='border-radius:50%;' alt='BurkhalterY'/></a> | This addon make contract invoicing cron plan each contract in a job instead of creating all invoices in one transaction
+[contract_refund_on_stop](contract_refund_on_stop/) | 18.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Contract Refund On Stop
 [contract_sale](contract_sale/) | 18.0.1.0.0 |  | Contract from Sale
 [contract_sale_invoicing](contract_sale_invoicing/) | 18.0.1.0.1 |  | Include sales to invoice in contract invoice creation
 [contract_sale_mandate](contract_sale_mandate/) | 18.0.1.0.0 |  | This module manages the banking mandate from the sale order to the contract.
@@ -7574,6 +7580,7 @@ addon | version | maintainers | summary
 [base_user_show_email](base_user_show_email/) | 18.0.1.0.0 |  | Untangle user login and email
 [impersonate_login](impersonate_login/) | 18.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | tools
 [password_security](password_security/) | 18.0.1.0.0 |  | Allow admin to set password security requirements.
+[user_log_view](user_log_view/) | 18.0.1.0.0 | <a href='https://github.com/trojikman'><img src='https://github.com/trojikman.png' width='32' height='32' style='border-radius:50%;' alt='trojikman'/></a> | Allow to see user's actions log
 [users_ldap_mail](users_ldap_mail/) | 18.0.1.0.0 | <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | LDAP mapping for user name and e-mail
 
 [//]: # (end addons)

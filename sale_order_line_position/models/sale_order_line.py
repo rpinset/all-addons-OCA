@@ -37,7 +37,7 @@ class SaleOrderLine(models.Model):
             ids = tuple(set(sale_ids))
             self.flush_model()
             query = """
-            SELECT order_id, max(position) FROM sale_order_line
+            SELECT order_id, coalesce(max(position), 0) FROM sale_order_line
             WHERE order_id in %s GROUP BY order_id;
             """
             self.env.cr.execute(query, (ids,))
