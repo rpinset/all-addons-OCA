@@ -1,14 +1,23 @@
 # Copyright (C) 2017-Today: Odoo Community Association (OCA)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo import fields, models, tools
+from odoo import fields, models
 
 
 class HrEmployeeLanguage(models.Model):
     _name = "hr.employee.language"
     _description = "HR Employee Language"
 
-    name = fields.Selection(tools.scan_languages(), string="Language", required=True)
+    def _get_selection(self):
+        """
+        generate language selection from available on db
+        """
+        selection = []
+        for lang in self.env["res.lang"].search([("active", "in", (True, False))]):
+            selection += [("%s" % lang.code, "%s" % lang.name)]
+        return selection
+
+    name = fields.Selection(_get_selection, string="Language", required=True)
     description = fields.Char()
     employee_id = fields.Many2one("hr.employee", string="Employee", required=True)
     can_read = fields.Boolean(string="Read", default=True)

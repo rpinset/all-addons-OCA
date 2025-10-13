@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_buffer_sales_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-11 11:14+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_buffer_sales_analysis
+#: model_terms:ir.ui.view,arch_db:stock_buffer_sales_analysis.stock_buffer_view_form
+msgid "<span class=\"o_stat_text\">Sold</span>"
+msgstr "<span class=\"o_stat_text\">Satıldı</span>"
+
+#. module: stock_buffer_sales_analysis
+#: model:ir.model.fields,field_description:stock_buffer_sales_analysis.field_stock_buffer__product_id_sale_ok
+msgid "Can be Sold"
+msgstr "Satılabilir"
+
+#. module: stock_buffer_sales_analysis
+#: model:ir.model.fields,field_description:stock_buffer_sales_analysis.field_stock_buffer__product_id_sales_count
+msgid "Sold"
+msgstr "Satıldı"
+
+#. module: stock_buffer_sales_analysis
+#: model_terms:ir.ui.view,arch_db:stock_buffer_sales_analysis.stock_buffer_view_form
+msgid "Sold in the last 365 days"
+msgstr "Son 365 gün içinde satıldı"
+
+#. module: stock_buffer_sales_analysis
+#: model:ir.model,name:stock_buffer_sales_analysis.model_stock_buffer
+msgid "Stock Buffer"
+msgstr "Stok Tamponu"
+
+#. module: stock_buffer_sales_analysis
+#: model:ir.model.fields,field_description:stock_buffer_sales_analysis.field_stock_buffer__product_uom_name
+msgid "Unit of Measure Name"
+msgstr "Ölçü Birimi Ismi"

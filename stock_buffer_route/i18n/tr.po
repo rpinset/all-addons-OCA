@@ -1,0 +1,62 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_buffer_route
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-11 10:57+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_buffer_route
+#: model:ir.model.fields,field_description:stock_buffer_route.field_make_procurement_buffer_item__route_ids
+#: model:ir.model.fields,field_description:stock_buffer_route.field_stock_buffer__route_ids
+msgid "Allowed routes"
+msgstr "Izin verilen rotalar"
+
+#. module: stock_buffer_route
+#: model:ir.model.fields,help:stock_buffer_route.field_make_procurement_buffer__partner_id
+msgid "If set, will be used as preferred vendor for purchase routes."
+msgstr ""
+"Işaretlenirse, satınalma rotaları için varsayılan tedarikçi olarak "
+"kullanılır."
+
+#. module: stock_buffer_route
+#: model:ir.model.fields,field_description:stock_buffer_route.field_make_procurement_buffer__item_ids
+msgid "Items"
+msgstr "Öğeler"
+
+#. module: stock_buffer_route
+#: model:ir.model,name:stock_buffer_route.model_make_procurement_buffer_item
+msgid "Make Procurements from Stock Buffer Item"
+msgstr "Stok Tamponu Öğesinden Tedarik Yap"
+
+#. module: stock_buffer_route
+#: model:ir.model,name:stock_buffer_route.model_make_procurement_buffer
+msgid "Make Procurements from Stock Buffers"
+msgstr "Stok Tamponlarından Tedarik Yap"
+
+#. module: stock_buffer_route
+#: model:ir.model.fields,field_description:stock_buffer_route.field_make_procurement_buffer_item__route_id
+#: model:ir.model.fields,field_description:stock_buffer_route.field_stock_buffer__route_id
+#: model_terms:ir.ui.view,arch_db:stock_buffer_route.stock_buffer_search
+msgid "Route"
+msgstr "Rota"
+
+#. module: stock_buffer_route
+#: model:ir.model,name:stock_buffer_route.model_stock_buffer
+msgid "Stock Buffer"
+msgstr "Stok Tamponu"
+
+#. module: stock_buffer_route
+#: model:ir.model.fields,field_description:stock_buffer_route.field_make_procurement_buffer__partner_id
+msgid "Vendor"
+msgstr "Tedarikçi"

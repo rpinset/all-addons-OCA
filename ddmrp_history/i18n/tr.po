@@ -1,0 +1,171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ddmrp_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-11 10:48+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__adu
+msgid "ADU"
+msgstr "ADU"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__adu
+msgid "Average Daily Usage"
+msgstr "Ortalama Günlük Tüketim"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__buffer_id
+msgid "Buffer"
+msgstr "Tampon"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: ddmrp_history
+#: model:ir.actions.act_window,name:ddmrp_history.action_ddmrp_history
+#: model:ir.ui.menu,name:ddmrp_history.menu_ddmrp_history
+msgid "DDMRP Buffer History"
+msgstr "DDMRP Tampon Geçmişi"
+
+#. module: ddmrp_history
+#: model:ir.model,name:ddmrp_history.model_ddmrp_history
+msgid "DDMRP History"
+msgstr "DDMRP Geçmişi"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__date
+msgid "Date"
+msgstr "Tarih"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: ddmrp_history
+#: model_terms:ir.ui.view,arch_db:ddmrp_history.stock_buffer_view_form
+msgid "Execution Chart"
+msgstr "Çalıştırılma Grafiği"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_stock_buffer__execution_history_chart
+msgid "Execution Historical Chart"
+msgstr "Çalıştırılma Tarihi Grafiği"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_stock_buffer__planning_history_chart
+msgid "Historical Chart"
+msgstr "Tarihi Grafik"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history____last_update
+msgid "Last Modified on"
+msgstr "Son Değiştirilme"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__write_date
+msgid "Last Updated on"
+msgstr "Son Güncellenme"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__net_flow_position
+msgid "NFP"
+msgstr "NFP"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__net_flow_position
+msgid "Net flow position"
+msgstr "Net akış pozisyonu"
+
+#. module: ddmrp_history
+#. odoo-python
+#: code:addons/ddmrp_history/models/stock_buffer.py:0
+#: code:addons/ddmrp_history/models/stock_buffer.py:0
+#, python-format
+msgid "Not enough data available."
+msgstr "Yeterli veri mevcut değil."
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__on_hand_position
+msgid "OHP"
+msgstr "OHP"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__on_hand_position
+msgid "On-Hand Position"
+msgstr "Eldeki Pozisyon"
+
+#. module: ddmrp_history
+#: model_terms:ir.ui.view,arch_db:ddmrp_history.stock_buffer_view_form
+msgid "Planning Chart"
+msgstr "Planlama Grafiği"
+
+#. module: ddmrp_history
+#: model:ir.model,name:ddmrp_history.model_stock_buffer
+msgid "Stock Buffer"
+msgstr "Stok Tamponu"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__top_of_green
+msgid "TOG"
+msgstr "TOG"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__top_of_red
+msgid "TOR"
+msgstr "TOR"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,field_description:ddmrp_history.field_ddmrp_history__top_of_yellow
+msgid "TOY"
+msgstr "TOY"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__top_of_green
+msgid "Top of Green"
+msgstr "Üst Yeşil Alan"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__top_of_red
+msgid "Top of Red"
+msgstr "Üst Kırmızı Alan"
+
+#. module: ddmrp_history
+#: model:ir.model.fields,help:ddmrp_history.field_ddmrp_history__top_of_yellow
+msgid "Top of Yellow"
+msgstr "Üst Sarı Alan"

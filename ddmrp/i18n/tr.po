@@ -1,0 +1,2174 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ddmrp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-11 08:48+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__used_in_bom_count
+msgid "# BoM Where Used"
+msgstr "# Ürün Ağacı Kullanım Yeri"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_move_line__state
+msgid ""
+"* New: When the stock move is created and not yet confirmed.\n"
+"* Waiting Another Move: This state can be seen when a move is waiting for another one, for example in a chained flow.\n"
+"* Waiting Availability: This state is reached when the procurement resolution is not straight forward. It may need the scheduler to run, a component to be manufactured...\n"
+"* Available: When products are reserved, it is set to 'Available'.\n"
+"* Done: When the shipment is processed, the state is 'Done'."
+msgstr ""
+"Yeni: Stok hareketi oluşturulmuş ancak henüz onaylanmamış.\n"
+"Başka Hareketi Bekliyor: Zincirli bir akışta bir hareketin diğerini "
+"beklediği durum.\n"
+"Uygunluk Bekliyor: Tedarik çözümü doğrudan yapılamadığında, planlayıcının "
+"çalışması veya bir bileşenin üretilmesi gerektiğinde görülen durum.\n"
+"Uygun: Ürünler rezerve edildiğinde bu durum kullanılır.\n"
+"Tamamlandı: Sevkiyat işlendiğinde bu durum kullanılır."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" role=\"img\" aria-label=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title="
+"\"Burada belirtilen değerler şirkete özeldir\" role=\"img\" aria-label="
+"\"Values set here are company-specific.\" groups=\"base.group_multi_company\""
+"/>"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu
+msgid "ADU"
+msgstr "Ortalama Günlük Tüketim (ADU)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method
+msgid "ADU calculation method"
+msgstr "ADU hesaplama yöntemi"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.product_adu_calculation_method_form_action
+#: model:ir.ui.menu,name:ddmrp.menu_product_adu_calculation_method
+msgid "ADU calculation methods"
+msgstr "ADU hesaplama yöntemleri"
+
+#. module: ddmrp
+#: model:product.template,name:ddmrp.product_product_as01_product_template
+msgid "AS-01"
+msgstr "AS-01"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Adds chatter and activities to stock buffers."
+msgstr "Stok tamponlarına sohbet (chatter) ve aktiviteler ekler."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid ""
+"Apply adjustments to dynamically alter stock buffers to respond to planned "
+"or anticipated events."
+msgstr ""
+"Planlanan veya öngörülen olaylara yanıt verebilmek için stok tamponlarını "
+"dinamik olarak ayarlamak üzere düzeltmeler uygular."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Archived"
+msgstr "Arşivlendi"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_template.py:0
+#, python-format
+msgid ""
+"At least one stock buffer for this product has a different Procurement unit "
+"of measure category."
+msgstr ""
+"Bu ürün için tanımlı en az bir stok tamponu farklı bir tedarik ölçü birimi "
+"kategorisi kullanıyor."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__auto_procure
+msgid "Auto Procure"
+msgstr "Oto Tedarik"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__auto_procure_option
+msgid "Auto Procure Option"
+msgstr "Oto Tedarik Seçeneği"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Auto update Net Flow Position"
+msgstr "Net Akış Pozisyonunu Otomatik Güncelle"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__adu
+msgid "Average Daily Usage"
+msgstr "Ortalama Günlük Tüketim"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__on_hand_target_position
+msgid "Avg On Hand Target Position"
+msgstr "Ortalama Elde Bulunan Hedef Pozisyonu"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_report_mrp_report_bom_structure
+msgid "BOM Overview Report"
+msgstr "Ürün Ağacı Genel Bakış Raporu"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Ürün Ağacı"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Ürün Ağacı Satırları"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Bill of Materials"
+msgstr "Ürün Ağaçları"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Blended"
+msgstr "Karma / Birleşik"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Buffer"
+msgstr "Stok Tamponu"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_product__buffer_count
+#: model:ir.model.fields,field_description:ddmrp.field_product_template__buffer_count
+msgid "Buffer Count"
+msgstr "Stok Tamponu Sayısı"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Buffer Information"
+msgstr "Stok Tamponu Bilgisi"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_production__execution_priority_level
+msgid "Buffer On-Hand Alert Level"
+msgstr "Eldeki Stok Tamponu Alarm Seviyesi"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_purchase_order_line__execution_priority_level
+msgid "Buffer On-Hand Status Level"
+msgstr "Eldeki Stok Tamponu Durum Seviyesi"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__buffer_profile_id
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_form
+msgid "Buffer Profile"
+msgstr "Stok Tamponu Profili"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.stock_buffer_profile_lead_time_form_action
+#: model:ir.ui.menu,name:ddmrp.menu_stock_buffer_profile_lead_time
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_lead_time_form
+msgid "Buffer Profile Lead Time Factor"
+msgstr "Tampon Profili Tedarik Süresi Faktörü"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.stock_buffer_profile_variability_form_action
+#: model:ir.ui.menu,name:ddmrp.menu_stock_buffer_profile_variability
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_variability_form
+msgid "Buffer Profile Variability Factor"
+msgstr "Tampon Profili Değişkenlik Faktörü"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.stock_buffer_profile_form_action
+#: model:ir.ui.menu,name:ddmrp.menu_stock_buffer_profile_mgt
+msgid "Buffer Profiles"
+msgstr "Stok Tamponu Profilleri"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Buffer summary"
+msgstr "Stok Tamponu özeti"
+
+#. module: ddmrp
+#. odoo-javascript
+#: code:addons/ddmrp/static/src/components/bom_overview_display_filter/mrp_bom_overview_display_filter.esm.js:0
+#: code:addons/ddmrp/static/src/components/bom_overview_table/mrp_bom_overview_table.xml:0
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.report_mrp_bom_inherit_ddmrp
+#, python-format
+msgid "Buffered"
+msgstr "Stok Tamponlanmış"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__is_buffered
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__is_buffered
+msgid "Buffered?"
+msgstr "Stok Tamponlandı Mı?"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_execution_tree
+msgid "Buffers"
+msgstr "Tamponlar"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_make_procurement_buffer_wizard
+msgid ""
+"By default, the qty is equal to the recommended quantity.\n"
+"                    For distributed buffers, when the option on the profile is active,\n"
+"                    the quantity is limited to the free quantity."
+msgstr ""
+"Varsayılan olarak miktar, önerilen miktara eşittir.\n"
+"                                              Dağıtılmış tamponlarda, "
+"profildeki seçenek etkinse,\n"
+"                                             miktar serbest miktarla "
+"sınırlandırılır."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__method
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method_type
+msgid "Calculation method"
+msgstr "Hesaplama yöntemi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_make_procurement_buffer_wizard
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
+msgid "Cancel"
+msgstr "Iptal Et"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_change_location_wizard
+msgid "Change"
+msgstr "Değiştir"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_change_location_wizard
+msgid "Change Bom Location"
+msgstr "Ürün Ağacı Konumunu Değiştir"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__location
+#: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_form_view
+msgid "Change Location"
+msgstr "Konumu Değiştir"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/mrp_bom.py:0
+#, python-format
+msgid "Change MRP BoM Location"
+msgstr "Ürün Ağacı Konumunu Değiştir"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__product
+msgid "Change Product"
+msgstr "Ürün Değiştir"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__both
+msgid "Change both values"
+msgstr "Iki değeri de değiştir"
+
+#. module: ddmrp
+#: model:res.groups,name:ddmrp.group_change_buffer_procure_qty
+msgid "Change quantity in manual procurements from Stock Buffers"
+msgstr "Stok Tamponlarından yapılan manuel tedariklerde miktarı değiştir"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_change_location_wizard
+msgid ""
+"Change the inventory location that it is considered to compute when a product is buffered or not.\n"
+"                    This can potentially change the Decoupled Lead Time (DLT) value.\n"
+"                    This change is only informative and won't affect any process or buffer size or recommendations."
+msgstr ""
+"Bir ürünün tamponlanıp tamponlanmadığını hesaplarken dikkate alınan stok "
+"konumunu değiştirir.\n"
+"                                              Bu, Bağımsız Tedarik Süresi "
+"(DLT) değerini potansiyel olarak değiştirebilir.\n"
+"                                              Bu değişiklik yalnızca "
+"bilgilendirme amaçlıdır; hiçbir süreci, tampon boyutunu veya önerileri "
+"etkilemez."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_chatter
+msgid "Chatter in Stock Buffers"
+msgstr "Stok Tamponu içinde Sohbet"
+
+#. module: ddmrp
+#: model_terms:ir.actions.act_window,help:ddmrp.stock_buffer_profile_form_action
+msgid "Click to start a new buffer profile"
+msgstr "Yeni bir tampon profili başlatmak için tıklayın"
+
+#. module: ddmrp
+#: model_terms:ir.actions.act_window,help:ddmrp.stock_buffer_profile_lead_time_form_action
+msgid "Click to start a new buffer profile lead time factor"
+msgstr "Yeni bir tampon profili tedarik süresi faktörü başlatmak için tıklayın"
+
+#. module: ddmrp
+#: model_terms:ir.actions.act_window,help:ddmrp.stock_buffer_profile_variability_form_action
+msgid "Click to start a new buffer profile variability factor"
+msgstr "Yeni bir tampon profili değişkenlik faktörü başlatmak için tıklayın"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_res_company
+msgid "Companies"
+msgstr "Şirketler"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__company_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__company_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__company_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__company_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Company Settings"
+msgstr "Şirket Ayarları"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_res_config_settings
+msgid "Config Settings"
+msgstr "Yapılandırma Ayarları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_warning
+msgid "Configuration Warnings in Stock Buffers"
+msgstr "Stok Tamponlarındaki Yapılandırma Uyarıları"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Consumption"
+msgstr "Tüketim"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.ddmrp_duplicate_buffer_wizard
+msgid "Copy Ddmrp Stock Buffer"
+msgstr "Stok Tamponunu Kopyala"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Create Procurement"
+msgstr "Tedarik Oluştur"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_move__created_purchase_line_id
+msgid "Created Purchase Order Line"
+msgstr "Satınalma Siparişi Satırı Oluşturuldu"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__create_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__create_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: ddmrp
+#: model:ir.module.category,name:ddmrp.module_category_ddmrp
+#: model:ir.ui.menu,name:ddmrp.menu_ddmrp_config
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_warehouse
+msgid "DDMRP"
+msgstr "DDMRP"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "DDMRP Adjustments"
+msgstr "DDMRP Düzeltmeleri"
+
+#. module: ddmrp
+#: model:ir.actions.server,name:ddmrp.ir_cron_ddmrp_adu_calculation_scheduler_action_ir_actions_server
+#: model:ir.cron,cron_name:ddmrp.ir_cron_ddmrp_adu_calculation_scheduler_action
+msgid "DDMRP Buffer ADU calculation"
+msgstr "DDMRP Tamponu ADU hesaplama"
+
+#. module: ddmrp
+#: model:ir.actions.server,name:ddmrp.ir_cron_ddmrp_calculation_scheduler_action_ir_actions_server
+#: model:ir.cron,cron_name:ddmrp.ir_cron_ddmrp_calculation_scheduler_action
+msgid "DDMRP Buffer calculation"
+msgstr "DDMRP Tampon hesaplama"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__ddmrp_chart
+msgid "DDMRP Chart"
+msgstr "DDMRP Grafiği"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__ddmrp_demand_chart
+msgid "DDMRP Demand Chart"
+msgstr "DDMRP Talep Grafiği"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_ddmrp_duplicate_buffer
+msgid "DDMRP Duplicate Buffer"
+msgstr "DDMRP Tampon Çoğaltma"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__ddmrp_chart_execution
+msgid "DDMRP Execution Chart"
+msgstr "DDMRP Yürütme Grafiği"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "DDMRP History"
+msgstr "DDMRP Geçmişi"
+
+#. module: ddmrp
+#: model:res.groups,name:ddmrp.group_ddmrp_manager
+msgid "DDMRP Manager"
+msgstr "DDMRP Yöneticisi"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_ddmrp_run
+msgid "DDMRP Manual Run Wizard"
+msgstr "DDMRP Manuel Başlatma Sihirbazı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__ddmrp_supply_chart
+msgid "DDMRP Supply Chart"
+msgstr "DDMRP Arz Grafiği"
+
+#. module: ddmrp
+#. odoo-javascript
+#: code:addons/ddmrp/static/src/components/bom_overview_table/mrp_bom_overview_table.xml:0
+#, python-format
+msgid "DLT"
+msgstr "DLT"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__dlt
+msgid "DLT (days)"
+msgstr "DLT (gün)"
+
+#. module: ddmrp
+#. odoo-javascript
+#: code:addons/ddmrp/static/src/components/bom_overview_line/mrp_bom_overview_line.xml:0
+#, python-format
+msgid "Days"
+msgstr "Gün"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__dlt
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__dlt
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__dlt
+msgid "Decoupled Lead Time (days)"
+msgstr "Bağımsız Tedarik Süresi (gün)"
+
+#. module: ddmrp
+#. odoo-javascript
+#: code:addons/ddmrp/static/src/components/bom_overview_table/mrp_bom_overview_table.xml:0
+#, python-format
+msgid "Decoupled Lead Time of the BoM."
+msgstr "Ürün Ağacının Bağımsız Tedarik Süresi."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__product_uom
+msgid "Default unit of measure used for all stock operations."
+msgstr "Tüm stok operasyonlarında kullanılan varsayılan ölçü birimi."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Demand"
+msgstr "Talep"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__display_name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__item_type__distributed
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Distributed"
+msgstr "Dağıtılmış"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.ddmrp_duplicate_buffer_wizard
+msgid "Duplicate"
+msgstr "Çoğalt"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.action_server_ddmrp_duplicate_buffer
+msgid "Duplicate Buffer"
+msgstr "Tampon Çoğalt"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Duplicated Buffers"
+msgstr "Çoğaltılmış Tamponlar"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__type
+msgid "Duplication Type"
+msgstr "Çoğaltma Türü"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid ""
+"Error: The product default Unit of Measure and the procurement Unit of "
+"Measure must be in the same category."
+msgstr ""
+"Hata: Ürünün varsayılan Ölçü Birimi ile tedarik Ölçü Birimi aynı kategoride "
+"olmalıdır."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Estimates"
+msgstr "Tahminler"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_make_procurement_buffer_wizard
+msgid "Execute"
+msgstr "Çalıştır"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Execution"
+msgstr "Çalıştırma"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Extensions"
+msgstr "Uzantılar"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__extra_lead_time
+msgid "Extra lead time (for Sizing)"
+msgstr "Ek tedarik süresi (Boyutlandırma için)"
+
+#. module: ddmrp
+#: model:product.template,name:ddmrp.product_product_fp01_product_template
+msgid "FP-01"
+msgstr "FP-01"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_warehouse__nfp_incoming_safety_factor
+msgid ""
+"Factor used to compute the number of days to look into the future for "
+"incoming shipments for the purposes of the Net Flow position calculation."
+msgstr ""
+"Net Akış pozisyonu hesaplamasında, gelecek sevkiyatları dikkate almak için "
+"ileriye dönük bakılacak gün sayısını hesaplamada kullanılan faktör."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_fixed
+#, python-format
+msgid "Fixed ADU"
+msgstr "Sabit ADU"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_purchase_order__ddmrp_comment
+#: model:ir.model.fields,field_description:ddmrp.field_purchase_order_line__ddmrp_comment
+msgid "Follow-up Notes"
+msgstr "Takip Notları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__factor_future
+msgid "Future Factor"
+msgstr "Gelecek Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__horizon_future
+msgid "Future Horizon"
+msgstr "Gelecek Ufku"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_future
+msgid "Future Source"
+msgstr "Gelecek Kaynak"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Future-looking"
+msgstr "Ileriye dönük"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Get configuration warnings for stock buffers."
+msgstr "Stok tamponları için yapılandırma uyarılarını al."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_move_tree
+msgid "Go to Source"
+msgstr "Kaynağa Git"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__mrp_production__execution_priority_level__3_green
+#: model:ir.model.fields.selection,name:ddmrp.selection__purchase_order_line__execution_priority_level__3_green
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__execution_priority_level__3_green
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__planning_priority_level__3_green
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_mrp_production_filter
+msgid "Green"
+msgstr "Yeşil"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__green_override
+msgid "Green Zone (Override)"
+msgstr "Yeşil Alan (Geçersiz Kılma)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__green_zone_lt_factor
+msgid "Green Zone Lead Time Factor"
+msgstr "Yeşil Alan Tedarik Süresi Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__green_zone_moq
+msgid "Green Zone Minimum Order Quantity"
+msgstr "Yeşil Alan Asgari Sipariş Miktarı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__green_zone_oc
+msgid "Green Zone Order Cycle"
+msgstr "Yeşil Alan Sipariş Deviri"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__green_zone_qty
+msgid "Green Zone Qty"
+msgstr "Yeşil Alan Miktar"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Green zone"
+msgstr "Yeşil alan"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__green_zone_lt_factor
+msgid "Green zone Lead Time Factor"
+msgstr "Yeşil alan Tedarik Süresi Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__green_zone_oc
+msgid "Green zone qty option considering desired Order Cycle"
+msgstr "İstenilen Sipariş Döngüsünü dikkate alan Yeşil Bölge miktar seçeneği"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__green_zone_moq
+msgid "Green zone qty option considering minimum order quantity"
+msgstr "Asgari sipariş miktarını dikkate alan Yeşil Bölge miktar seçeneği"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Has Long Term Supply"
+msgstr "Uzun Vadeli Tedariğe Sahip"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Has Stock In Source Location"
+msgstr "Kaynak Konumda Stoğu Var"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_purchase_hide_onhand_status
+msgid "Hide Purchase On-Hand Status"
+msgstr "Satınalma Elde Bulunan Durumunu Gizle"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Hides on-hand status from purchase order line."
+msgstr "Satınalma sipariş satırlarından elde bulunan durumunu gizler."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__id
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__id
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__id
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__id
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_make_procurement_buffer__partner_id
+msgid "If set, will be used as preferred vendor for purchase routes."
+msgstr ""
+"Ayarlanırsa, satınalma rotaları için tercih edilen satıcı olarak kullanılır."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid ""
+"In blended method, past and future factors must be positive and sum exactly "
+"1,0."
+msgstr ""
+"Karma yöntemde, geçmiş ve gelecek faktörleri pozitif olmalı ve toplamları "
+"tam olarak 1,0 olmalıdır."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_company__ddmrp_adu_calc_include_scrap
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__ddmrp_adu_calc_include_scrap
+msgid "Include scrap locations in ADU calculation"
+msgstr "ADU hesaplamasında hurda konumlarını da kullan"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__incoming_outside_dlt_qty
+msgid "Incoming (Outside DLT)"
+msgstr "Gelen (Dış DLT)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__incoming_dlt_qty
+msgid "Incoming (Within DLT)"
+msgstr "Gelen (Iç DLT)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Incoming Outside DLT"
+msgstr "Gelen Dış DLT"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Incoming Within DLT"
+msgstr "Gelen Iç DLT"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_future
+msgid "Information source used for future calculation."
+msgstr "Sonraki hesaplamalarda kullanılacak bilgi kaynağı."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_past
+msgid "Information source used for past calculation."
+msgstr "Geçmiş hesaplarda kullanılan bilgi kaynağı."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__on_hand_target_max
+msgid "It denotes how far you are on average from the target"
+msgstr "Hedeften ortalama olarak ne kadar uzak olduğunuzu gösterir"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__on_hand_target_position
+msgid ""
+"It denotes what the target stock on hand is. The computation is: OH Target ="
+" TOR + Green Zone / 2 "
+msgstr ""
+"Eldeki hedef stoğu gösterir. Hesaplama: OH Hedef = TOR + Yeşil Alan /2. "
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__on_hand_target_min
+msgid "It denotes what the target stock on hand range is."
+msgstr "Elde bulundurulması hedeflenen stok aralığını belirtir."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__item_type
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__item_type
+msgid "Item Type"
+msgstr "Öğe Türü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__item_ids
+msgid "Items"
+msgstr "Öğeler"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time____last_update
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability____last_update
+msgid "Last Modified on"
+msgstr "Son Güncellenme"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__write_uid
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__write_date
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__lead_days
+msgid "Lead Time (Distributed)"
+msgstr "Tedarik Süresi (Dağıtılmış)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__lead_time_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__factor
+msgid "Lead Time Factor"
+msgstr "Tedarik Süresi Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__lead_days
+msgid "Lead time for distributed products."
+msgstr "Dağıtılmış ürünlerin tedarik süresi."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__horizon_future
+msgid "Length-of-period horizon in days looking forward."
+msgstr "İleriye dönük dönem uzunluğu (gün)."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__horizon_past
+msgid "Length-of-period horizon in days looking past."
+msgstr "Geçmişe dönük dönem uzunluğu (gün)."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__replenish_distributed_limit_to_free_qty
+msgid "Limit replenishment to free quantity"
+msgstr "Yeniden ikmali serbest miktarla sınırla"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_move__buffer_ids
+msgid "Linked Stock Buffers"
+msgstr "Bağlantılı Stok Tamponları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__location_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location__location_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__location_id
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Location"
+msgstr "Konum"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_mrp_bom_change_location
+msgid "MRP Bom Change Location"
+msgstr "Ürün Ağacı Konumu Değiştir"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Main Buffer size factors"
+msgstr "Ana tampon boyutu faktörleri"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__main_supplier_id
+msgid "Main Supplier"
+msgstr "Ana Tedarikçi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Main supplier"
+msgstr "Ana tedarikçi"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_make_procurement_buffer_item
+msgid "Make Procurements from Stock Buffer Item"
+msgstr "Stok Tamponu Öğesinden Tedarik Aç"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_make_procurement_buffer
+msgid "Make Procurements from Stock Buffers"
+msgstr "Stok Tamponlarından Tedarik Aç"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__item_type__manufactured
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Manufactured"
+msgstr "Üretilen"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__mrp_production_ids
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Manufacturing Orders"
+msgstr "Üretim Emirleri"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__procure_max_qty
+msgid "Maximum Procure Batch"
+msgstr "Azami Toplu Tedarik"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__procure_max_qty
+msgid "Maximum qty for a single procurement"
+msgstr "Tek tedarik için azami miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__replenish_method__min_max
+msgid "Min-max"
+msgstr "Asgari-azami"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_warehouse_orderpoint
+msgid "Minimum Inventory Rule"
+msgstr "Asgari Stok Kuralı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__order_cycle
+msgid "Minimum Order Cycle (days)"
+msgstr "Asgari Emir Döngüsü (gün)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__minimum_order_quantity
+msgid "Minimum Order Quantity"
+msgstr "Asgari Emir Miktarı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__procure_min_qty
+msgid "Minimum Procure Batch"
+msgstr "Asgari Toplu Tedarik"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__procure_min_qty
+msgid "Minimum qty for a single procurement"
+msgstr "Tek tedarik için asgari miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__group_id
+msgid ""
+"Moves created through this buffer will be put in this procurement group. If "
+"none is given, the moves generated by stock rules will be grouped into one "
+"big picking."
+msgstr ""
+"Bu tampon aracılığıyla oluşturulan hareketler bu tedarik grubuna atanır. "
+"Eğer belirtilmezse, stok kuralları tarafından oluşturulan hareketler tek bir "
+"büyük toplama işlemi altında gruplanır."
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_mrp_multi_level
+msgid "Multi Level MRP"
+msgstr "Çoklu Seviye MRP"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time__name
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__name
+msgid "Name"
+msgstr "Isim"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__net_flow_position
+msgid "Net Flow Position"
+msgstr "Net Akış Pozisyonu"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_warehouse__nfp_incoming_safety_factor
+msgid "Net Flow Position Incoming Safety Factor"
+msgstr "Net Akış Pozisyonu Giriş Güvenlik Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__net_flow_position_percent
+msgid "Net flow position (% of TOG)"
+msgstr "Net akış pozisyonu (TOG yüzdesi)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__location_id
+msgid "New Location"
+msgstr "Yeni Konum"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__product_id
+msgid "New Product"
+msgstr "Yeni Ürün"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid "No demand detected."
+msgstr "Talep tespit edilemedi."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "No stock available in source location for distributed buffer"
+msgstr "Dağıtılmış tampon için kaynak konumda stok mevcut değil"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/wizards/make_procurement_buffer.py:0
+#, python-format
+msgid "No stock buffer found."
+msgstr "Stok tamponu bulunamadı."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid "No supply detected."
+msgstr "Tedarik tespit edilemedi."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid "Non-completed Moves"
+msgstr "Bitmeyen Stok Hareketleri"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_mrp_production_filter
+msgid "On Hand Alert Zones"
+msgstr "Eldeki Alarm Bölgeleri"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "On Hand Target"
+msgstr "Eldeki Hedef"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__on_hand_target_min
+msgid "On Hand Target Range"
+msgstr "Eldeki Hedef Aralığı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_production__on_hand_percent
+#: model:ir.model.fields,field_description:ddmrp.field_purchase_order_line__on_hand_percent
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__on_hand_percent
+msgid "On Hand/TOR (%)"
+msgstr "Eldeki/TOR (%)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "On-Hand"
+msgstr "Eldeki"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__execution_priority_level
+msgid "On-Hand Alert Level"
+msgstr "Eldeki Alarm Seviyesi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_purchase_order_filter
+msgid "On-Hand Alert: Red"
+msgstr "Eldeki Alarm: Kırmızı"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_purchase_order_filter
+msgid "On-Hand Alert: Yellow"
+msgstr "Eldeki Alarm: Sarı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__order_spike_horizon
+msgid "Order Spike Horizon"
+msgstr "Emir Artış Ufku"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__order_spike_threshold
+msgid "Order Spike Threshold"
+msgstr "Emir Artış Eşiği"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.po_line_execution_action
+#: model:ir.ui.menu,name:ddmrp.menu_pol_execution
+msgid "PO lines On-Hand Status"
+msgstr "Eldeki Satınalma Siparişi satırları Durumu"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__factor_past
+msgid "Past Factor"
+msgstr "Geçmiş Faktör"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__horizon_past
+msgid "Past Horizon"
+msgstr "Geçmiş Ufku"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_past
+msgid "Past Source"
+msgstr "Geçmiş Kaynak"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Past-looking"
+msgstr "Geçmişe-dönük"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__date_planned
+msgid "Planned Date"
+msgstr "Planlanmış Tarih"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Planning"
+msgstr "Planlama"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__planning_priority_level
+msgid "Planning Priority Level"
+msgstr "Planlama Öncelik Seviyesi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Planning Priority Zones"
+msgstr "Planlama Öncelik Bölgeleri"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Please indicate a Future Horizon."
+msgstr "Lütfen bir Gelecek Ufku belirtin."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Please indicate a Future Source."
+msgstr "Lütfen bir Gelecek Kaynağı belirtin."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Please indicate a Past Horizon."
+msgstr "Lütfen bir Geçmiş Ufku belirtin."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/product_adu_calculation_method.py:0
+#, python-format
+msgid "Please indicate a Past Source."
+msgstr "Lütfen bir Geçmiş Kaynağı belirtin."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Please select a New Location."
+msgstr "Yeni bir Konum seçin."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Please select a New Product."
+msgstr "Yeni bir Ürün seçin."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Procure"
+msgstr "Tedarik"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__procure_recommended_qty
+msgid "Procure Recommendation"
+msgstr "Tedarik Önerisi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Procurement"
+msgstr "Tedarik"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_procurement_group
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__group_id
+msgid "Procurement Group"
+msgstr "Tedarik Grubu"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_make_procurement_buffer_wizard
+msgid "Procurement Request"
+msgstr "Tedarik Isteği"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Procurement Settings"
+msgstr "Tedarik Ayarları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__procure_uom_id
+msgid "Procurement UoM"
+msgstr "Tedarik Ölçü Birimi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Procurement recommended"
+msgstr "Tedarik önerildi"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_product_template
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__product_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_id
+msgid "Product"
+msgstr "Ürün"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_product_adu_calculation_method
+msgid "Product Average Daily Usage calculation method"
+msgstr "Ürün Ortalama Günlük Tüketim (ADU) hesaplama yöntemi"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_picking_form
+msgid "Product Buffers"
+msgstr "Ürün Tamponları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_categ_id
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Product Category"
+msgstr "Ürün Kategorisi"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Ürün Hareketleri (Stok Hareket Satırları)"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_product_product
+msgid "Product Variant"
+msgstr "Ürün Varyantı"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_mrp_production
+msgid "Production Order"
+msgstr "Üretim Emri"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_purchase_order
+msgid "Purchase Order"
+msgstr "Satınalma Siparişleri"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Satınalma Siparişi Satırları"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__purchase_line_ids
+msgid "Purchase Order Lines"
+msgstr "Satınalma Siparişi Satırları"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Purchase Orders"
+msgstr "Satınalma Siparişleri"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__item_type__purchased
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Purchased"
+msgstr "Satın alındı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__qty
+msgid "Qty"
+msgstr "Miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qty_multiple
+msgid "Qty Multiple"
+msgstr "Çoklu Miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_company__ddmrp_qty_multiple_tolerance
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__ddmrp_qty_multiple_tolerance
+msgid "Qty Multiple Tolerance"
+msgstr "Çoklu Miktar Toleransı"
+
+#. module: ddmrp
+#: model:ir.model.constraint,message:ddmrp.constraint_stock_buffer_qty_multiple_check
+msgid "Qty Multiple must be greater than or equal to zero."
+msgstr "Çoklu Miktar negatif olamaz."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qualified_demand
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Qualified Demand"
+msgstr "Nitelikli Talep"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qualified_demand_mrp_move_ids
+msgid "Qualified Demand Mrp Move"
+msgstr "Üretim Emri Nitelikli Talep"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qualified_demand_stock_move_ids
+msgid "Qualified Demand Stock Move"
+msgstr "Stok Hareketi Nitelikli Talep"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_location_qty_available_not_res
+msgid "Quantity On Hand (Unreserved)"
+msgstr "Eldeki Miktar (Mevcut)"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__product_location_qty_available_not_res
+msgid ""
+"Quantity available in this stock buffer, this is the total quantity on hand "
+"minus the outgoing reservations."
+msgstr ""
+"Bu stok tamponunda mevcut miktar; eldeki toplam miktardan çıkış "
+"rezervasyonlarının düşülmesiyle elde edilir."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__distributed_source_location_qty
+msgid ""
+"Quantity free for distributed buffer in the source location. When a "
+"procurement is requested, if the option is active on the profile, it will be"
+" limited to this quantity."
+msgstr ""
+"Kaynak konumdaki dağıtılmış tampon için serbest miktar. Bir tedarik talebi "
+"oluşturulduğunda, profildeki seçenek etkinse, miktar bu değerle "
+"sınırlandırılır."
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/wizards/make_procurement_buffer.py:0
+#, python-format
+msgid "Quantity must be positive."
+msgstr "Miktar pozitif olmalı."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__rfq_inside_dlt_qty
+msgid "RFQ Qty (Inside DLT)"
+msgstr "RFQ Miktarı (Iç DLT)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__rfq_outside_dlt_qty
+msgid "RFQ Qty (Outside DLT)"
+msgstr "RFQ Miktarı (Dış DLT)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__rfq_total_qty
+msgid "RFQ Total Qty"
+msgstr "RPQ Toplam Miktar"
+
+#. module: ddmrp
+#: model:product.template,name:ddmrp.product_product_rm01_product_template
+msgid "RM-01"
+msgstr "RM-01"
+
+#. module: ddmrp
+#: model:product.template,name:ddmrp.product_product_rm02_product_template
+msgid "RM-02"
+msgstr "RM-02"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__distributed_reschedule_max_proc_time
+msgid "Re-Schedule Procurement Max Proc. Time (minutes)"
+msgstr "Tedarik Yeniden Zamanlama Azami İşleme Süresi (dakika)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__recommended_qty
+msgid "Recommended Qty"
+msgstr "Tavsiye Edilen Miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__mrp_production__execution_priority_level__1_red
+#: model:ir.model.fields.selection,name:ddmrp.selection__purchase_order_line__execution_priority_level__1_red
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__execution_priority_level__1_red
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__planning_priority_level__1_red
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_mrp_production_filter
+msgid "Red"
+msgstr "Kırmızı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__red_base_qty
+msgid "Red Base Qty"
+msgstr "Kırmızı Baz Miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__red_safety_qty
+msgid "Red Safety Qty"
+msgstr "Kırmızı Güvenlik Miktarı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__red_override
+msgid "Red Zone (Override)"
+msgstr "Kırmızı Alan (Geçersiz)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__red_zone_qty
+msgid "Red Zone Qty"
+msgstr "Kırmızı Alan Miktarı"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Red zone"
+msgstr "Kırmızı alan"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Refresh Buffer"
+msgstr "Tamponu Yenile"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__replenish_method__replenish
+msgid "Replenished"
+msgstr "Ikmal Edilen"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer_profile__replenish_method__replenish_override
+msgid "Replenished Override"
+msgstr "Ikmal Edilen Geçersiz"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__distributed_source_location_id
+msgid "Replenishment Location"
+msgstr "Ikmal Konumu"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__replenish_method
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__replenish_method
+msgid "Replenishment method"
+msgstr "Ikmal yöntemi"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.act_make_procurement_from_buffer
+msgid "Request Procurement"
+msgstr "Tedarik isteği"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__rfq_total_qty
+msgid "Request for Quotation total quantity that is planned"
+msgstr "Teklif Talebi için planlanan toplam miktar"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__rfq_inside_dlt_qty
+msgid ""
+"Request for Quotation total quantity that is planned inside of the DLT "
+"horizon."
+msgstr "DLT ufku içinde planlanan Teklif Talebi toplam miktarı."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__rfq_outside_dlt_qty
+msgid ""
+"Request for Quotation total quantity that is planned outside of the DLT "
+"horizon."
+msgstr "DLT ufku içinde planlanan Teklif Talebi toplam miktarı."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
+msgid "Run ADU calculation"
+msgstr "ADU hesaplamasını başlat"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.action_ddmrp_run
+#: model:ir.ui.menu,name:ddmrp.ddmrp_run_menu
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
+msgid "Run DDMRP"
+msgstr "DDMRP Başlat"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
+msgid "Run DDMRP Buffer calculation"
+msgstr "DDMRP Tampon hesaplamasını başlat"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_product_adu_calculation_method_search
+msgid "Search ADU Calculatiion methods"
+msgstr "ADU Hesaplama yöntemlerini ara"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_lead_time_search
+msgid "Search Buffer Profile Lead Time"
+msgstr "Tampon Profili Tedarik Süresi Ara"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_variability_search
+msgid "Search Buffer Profile Variability"
+msgstr "Tampon Profili Değişkenliği Ara"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_stock_buffer_profile_search
+msgid "Search Buffer Profiles"
+msgstr "Tampon Profilleri Ara"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Secondary Buffer size factors"
+msgstr "Ikincil Tampon boyut faktörleri"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid ""
+"Set a tolerance value to apply to quantity multiple in stock buffers.\n"
+"                                    If the quantity needed is below this tolerance threshold, the recommended\n"
+"                                    quantity will be reduced a bit instead of adding another bucket.\n"
+"                                    The value is a percentage of the quantity multiple."
+msgstr ""
+"Stok tamponlarında miktar katına uygulanacak bir tolerans değeri belirleyin."
+"\n"
+"                                                                                  "
+"Gerekli miktar bu tolerans eşiğinin altındaysa\n"
+"                                                                                  "
+"önerilen miktar yeni bir kova eklenmek yerine biraz azaltılır.\n"
+"                                                                                  "
+"Bu değer, miktar katının yüzdesi olarak ifade edilir."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Set an storage capacity limit on stock buffers."
+msgstr "Stok tamponlarına depolama kapasitesi limiti koy."
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.action_ddmrp_config
+msgid "Settings"
+msgstr "Ayarlar"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Show Coverage Days in Stock Buffers"
+msgstr "Stok Tamponlarında Karşılama Günlerini Göster"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__show_execution_chart
+msgid "Show Execution Chart"
+msgstr "Ilerleme Grafiğini Göster"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_coverage_days
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid ""
+"Shows the current on-hand for stock buffers expressed as coverage days."
+msgstr ""
+"Stok tamponları için mevcut eldeki miktarı, karşılama günleri olarak "
+"gösterir."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid ""
+"Some RFQ quantities are outside of the DLT Horizon and may require "
+"rescheduling.                     Press this button to display the involved "
+"RFQs"
+msgstr ""
+"Bazı Teklif Talebi (RFQ) miktarları DLT Ufkunun dışındadır ve yeniden "
+"zamanlama gerektirebilir.                     İlgili Teklif Taleplerini "
+"görüntülemek için bu düğmeye basın"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"Some RFQs are inside of the DLT Horizon and waiting validation to be "
+"accounted into the NFP.                                         Press this "
+"button to display them."
+msgstr ""
+"Bazı Teklif Talepleri (RFQ) DLT Ufku içindedir ve Net Akış Pozisyonuna (NFP) "
+"dahil edilebilmek için onay "
+"beklemektedir.                                         Bunları görüntülemek "
+"için bu düğmeye tıklayın."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid ""
+"Some RFQs are inside of the DLT Horizon and waiting validation to be "
+"accounted into the NFP.                     Press this button to display "
+"them."
+msgstr ""
+"Bazı Teklif Talepleri (RFQ) DLT Ufku içindedir ve Net Akış Pozisyonuna (NFP) "
+"dahil edilebilmek için onay "
+"beklemektedir.                                         Bunları görüntülemek "
+"için bu düğmeye tıklayın."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"Some incoming RFQs are outside of the DLT Horizon and may require "
+"rescheduling.                                          Press this button to "
+"display the involved supply orders"
+msgstr ""
+"Bazı gelen Teklif Talepleri (RFQ) DLT Ufkunun dışındadır ve yeniden "
+"zamanlama gerektirebilir.                                          İlgili "
+"tedarik siparişlerini görüntülemek için bu düğmeye basın"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"Some incoming qty is outside of the DLT Horizon and may require "
+"rescheduling.                                          Press this button to "
+"display the involved supply orders"
+msgstr ""
+"Bazı gelen miktarlar DLT Ufkunun dışındadır ve yeniden zamanlama "
+"gerektirebilir.                                          İlgili tedarik "
+"siparişlerini görüntülemek için bu düğmeye basın"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid ""
+"Some incoming quantities are outside of the DLT Horizon and may require "
+"rescheduling. Press this button to display the involved supply orders"
+msgstr ""
+"Bazı gelen miktarlar DLT Ufkunun dışındadır ve yeniden zamanlama "
+"gerektirebilir. Bu düğmeye tıklayarak ilgili tedarik siparişlerini "
+"görüntüleyin"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__distributed_source_location_qty
+msgid "Source Location Free Quantity (distributed)"
+msgstr "Kaynak Konum Mevcut Miktar (dağıtılmış)"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__distributed_source_location_id
+msgid ""
+"Source location from where goods will be replenished. Computed when buffer "
+"is refreshed from following the Stock Rules."
+msgstr ""
+"Ürünlerin yeniden ikmal edileceği kaynak konum. Stok Kuralları izlenerek "
+"tampon yenilendiğinde hesaplanır."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_move_line__state
+msgid "Status"
+msgstr "Durumu"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_buffer
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__buffer_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__buffer_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__buffer_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_production__buffer_id
+msgid "Stock Buffer"
+msgstr "Stok Tamponu"
+
+#. module: ddmrp
+#: model:res.groups,name:ddmrp.group_stock_buffer_maintainer
+msgid "Stock Buffer Maintainer"
+msgstr "Stok Tamponu Yöneticisi"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_buffer_profile
+msgid "Stock Buffer Profile"
+msgstr "Stok Tamponu Profili"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_buffer_profile_lead_time
+msgid "Stock Buffer Profile Lead Time Factor"
+msgstr "Stok Tamponu Profili Tedarik Süresi Faktörü"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_buffer_profile_variability
+msgid "Stock Buffer Profile Variability Factor"
+msgstr "Stok Tamponu Profili Değişkenlik Faktörü"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.action_stock_buffer
+#: model:ir.model.fields,field_description:ddmrp.field_product_product__buffer_ids
+#: model:ir.model.fields,field_description:ddmrp.field_purchase_order_line__buffer_ids
+#: model:ir.ui.menu,name:ddmrp.menu_stock_buffer
+#: model_terms:ir.ui.view,arch_db:ddmrp.product_normal_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:ddmrp.product_template_only_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_form
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_form2
+msgid "Stock Buffers"
+msgstr "Stok Tamponları"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Stock Buffers & Packagings"
+msgstr "Stok Tamponları & Paketlemeler"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__context_location_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__location_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__context_location_id
+#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__location_id
+msgid "Stock Location"
+msgstr "Stok Konumu"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_move
+msgid "Stock Move"
+msgstr "Stok Hareketi"
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.stock_move_year_consumption_action
+msgid "Stock Move Last Year Consumption"
+msgstr "Stok Hareketi Geçmiş Yıl Tüketimi"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_move.py:0
+#, python-format
+msgid "Stock Move Source"
+msgstr "Stok Hareketi Kaynak"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_move_consumption_pivot
+msgid "Stock Moves Yearly Consumption"
+msgstr "Stok Hareketi Yıllık Tüketim"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_rule
+msgid "Stock Rule"
+msgstr "Stok Kuralı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_stock_buffer_capacity_limit
+msgid "Storage Capacity Limits"
+msgstr "Depolama Kapasite Limitleri"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_history
+msgid "Store historical data from stock buffers"
+msgstr "Stok tamponlarından gelen geçmiş veriyi tut"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Store historical data from stock buffers."
+msgstr "Stok tamponlarından gelen geçmiş veriyi tut."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Supply"
+msgstr "Arz"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Supply & Demand"
+msgstr "Arz & Talep"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__on_hand_target_max
+msgid "Target On Hand (Max)"
+msgstr "Eldeki Hedef (Maks)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"The green zone determines the average order frequency and the order size. It"
+" is determined as the maximum of the following three factors: Minimum Order "
+"Cycle, Lead Time Factor and Minimum Order Quantity."
+msgstr ""
+"Yeşil bölge, ortalama sipariş sıklığını ve sipariş miktarını belirler. "
+"Aşağıdaki üç faktörün en yükseği olarak hesaplanır: Minimum Sipariş Döngüsü, "
+"Tedarik Süresi Faktörü ve Minimum Sipariş Miktarı."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__main_supplier_id
+msgid ""
+"The main supplier is the first listed supplier defined on the product that "
+"is valid for this product variant. Any date restrictions are not taken into "
+"account."
+msgstr ""
+"Ana tedarikçi, bu ürün varyantı için geçerli olan ve ürün üzerinde ilk "
+"sırada tanımlanmış tedarikçidir. Herhangi bir tarih kısıtlaması dikkate "
+"alınmaz."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__qty_multiple
+msgid ""
+"The procurement quantity will be rounded up to this multiple. If it is 0, "
+"the exact quantity will be used."
+msgstr ""
+"Tedarik miktarı bu katın en yakın üst değerine yuvarlanır. Eğer 0 ise, tam "
+"miktar kullanılır."
+
+#. module: ddmrp
+#: model:ir.model.constraint,message:ddmrp.constraint_stock_buffer_stock_buffer_uniq
+msgid ""
+"The product/location combination must be unique.Remember that the buffer "
+"could be archived."
+msgstr ""
+"Ürün/konum kombinasyonu benzersiz olmalıdır. Tamponun arşivlenmiş "
+"olabileceğini unutmayın."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"The red zone is the embedded safety in the buffer. The larger the "
+"variability associated with the product, the larger the red zone will be. It"
+" is composed of two sub-zones: Red base and red safety."
+msgstr ""
+"Kırmızı bölge, tampon içerisindeki yerleşik güvenlik payını temsil eder. "
+"Ürünle ilişkili değişkenlik arttıkça kırmızı bölge de büyür. Bu bölge iki "
+"alt bölümden oluşur: Kırmızı taban ve kırmızı güvenlik."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"The yellow zone represents the stock required to cover a full lead time."
+msgstr ""
+"Sarı bölge, tam bir tedarik süresini karşılamak için gereken stoku temsil "
+"eder."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__top_of_green
+msgid "Top Of Green"
+msgstr "Üst Yeşil Bölge"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__top_of_red
+msgid "Top Of Red"
+msgstr "Üst Kırmızı Bölge"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__top_of_yellow
+msgid "Top Of Yellow"
+msgstr "Üst Sarı Bölge"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__incoming_total_qty
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "Total Incoming"
+msgstr "Gelen Toplam"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_res_company__ddmrp_auto_update_nfp
+#: model:ir.model.fields,help:ddmrp.field_res_config_settings__ddmrp_auto_update_nfp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid ""
+"Transfer status changes can trigger the update of relevant buffer's NFP."
+msgstr ""
+"Transfer durumu değişiklikleri, ilgili tamponun Net Akış Pozisyonunun (NFP) "
+"güncellenmesini tetikleyebilir."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_mrp_bom__is_buffered
+#: model:ir.model.fields,help:ddmrp.field_mrp_bom_line__is_buffered
+msgid "True when the product has an DDMRP buffer associated."
+msgstr "Ürün bir DDMRP tamponuyla ilişkilendirildiğinde Doğru değerini alır."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_type
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Type"
+msgstr "Türü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__uom_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_uom
+msgid "Unit of Measure"
+msgstr "Ölçü Birimi"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid "Unsupported operator %s"
+msgstr "Desteklenmeyen operatör %s"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid "UoM"
+msgstr "Ölçü Birimi"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_company__ddmrp_auto_update_nfp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__ddmrp_auto_update_nfp
+msgid "Update NFP on Stock Buffers on relevant events."
+msgstr ""
+"İlgili olaylar gerçekleştiğinde Stok Tamponlarındaki Net Akış Pozisyonunu "
+"(NFP) güncelle."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_packaging
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Use packagings on stock buffers."
+msgstr "Stok tamponlarında paketlemeleri kullan."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_make_procurement_buffer_wizard
+msgid ""
+"Use this assistant to generate a procurement request for this\n"
+"                    stock buffer. According to the product configuration,\n"
+"                    this may trigger a draft purchase order, a manufacturing\n"
+"                    order or a transfer picking."
+msgstr ""
+"Bu yardımcıyı kullanarak bu stok tamponu için bir tedarik talebi oluşturun\n"
+"                    Ürün yapılandırmasına bağlı olarak bu işlem,\n"
+"                    taslak bir satınalma emri, bir üretim emri veya bir\n"
+"                    transfer toplama işlemi başlatabilir."
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Used In"
+msgstr "Kullanıldı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__variability_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__factor
+msgid "Variability Factor"
+msgstr "Değişkenlik Faktörü"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__partner_id
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_execution_tree
+msgid "Vendor"
+msgstr "Tedarikçi"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_vendor_code
+msgid "Vendor Code"
+msgstr "Tedarikçi Kodu"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View ADU (Future - Direct Demand)"
+msgstr "ADU Görüntüle (Gelecek - Anlık Talep)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View ADU (Future - Indirect Demand)"
+msgstr "ADU Görüntüle (Gelecek - Anlık Olmayan Talep)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View ADU (Past - Direct Demand)"
+msgstr "ADU Görüntüle (Geçmiş - Anlık Talep)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View ADU (Past - Indirect Demand)"
+msgstr "ADU Görüntüle (Geçmiş - Anlık Olmayan Talep)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View Incoming Moves (Within DLT)"
+msgstr "Gelen Hareketleri Görüntüle (DLT Içinde)"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View Qualified Demand from MRP"
+msgstr "MRP'den gelen Nitelikli Talebi Görüntüle"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "View Qualified Demand from Pickings"
+msgstr "Sevkiyatlardan gelen Nitelikli Talebi Görüntüle"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_stock_warehouse
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__warehouse_id
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__warehouse_id
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+msgid "Warehouse"
+msgstr "Depo"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer_profile__replenish_distributed_limit_to_free_qty
+msgid ""
+"When activated, the recommended quantity will be maxed at the quantity "
+"available in the replenishment source location."
+msgstr ""
+"Etkinleştirildiğinde, önerilen miktar ikmalin yapılacağı kaynak konumdaki "
+"mevcut miktarla sınırlandırılır."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__extra_lead_time
+msgid ""
+"When defined, this lead time will be added to the decoupled lead time for the computation of the zones size (it won't affect planned date for procurements).\n"
+"This is particularly useful in situations of infrequent but periodic demand. E.g. We receive a large order every 30 days, whereas the supplier takes 10 days to supply. \n"
+"In this case the yellow zone must cover for the entire cycle of 30 days of demand.\n"
+"In situations with infrequent demand the ADU tends to be very small, and every new order would be treated as a spike, when \n"
+"in reality this is not an exceptional situation."
+msgstr ""
+"Tanımlandığında, bu tedarik süresi (lead time) bölgelerin boyutlarının "
+"hesaplanmasında Bağımsız Tedarik Süresine (DLT) eklenir (tedariklerin "
+"planlanan tarihini etkilemez).\n"
+"Bu özellikle seyrek fakat periyodik talep durumlarında kullanışlıdır. "
+"Örneğin, her 30 günde bir büyük bir sipariş alıyoruz ancak tedarikçi "
+"teslimatı 10 günde yapıyor.\n"
+"Bu durumda sarı bölge, 30 günlük talep döngüsünün tamamını karşılayacak "
+"şekilde ayarlanmalıdır.\n"
+"Seyrek talep durumlarında Ortalama Günlük Tüketim (ADU) çok küçük olma "
+"eğilimindedir.\n"
+"ve her yeni sipariş, aslında olağan bir durum olmasına rağmen “ani artış” "
+"(spike) olarak. değerlendirilebilir."
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__auto_procure_option__stockout
+msgid "When in stockout"
+msgstr "Stok tükendiğinde"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__auto_procure_option__standard
+msgid "When recommended (NFP below TOY)"
+msgstr "Önerildiğinde (NFP, Üst Yeşil Bölgenin (TOY) altında olduğunda)"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__factor_future
+msgid ""
+"When using a blended method, this is the relative weight assigned to the "
+"future part of the combination."
+msgstr ""
+"Karma bir yöntem kullanıldığında, bu değer kombinasyondaki geleceğe ait "
+"kısmın göreceli ağırlığını belirtir."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__factor_past
+msgid ""
+"When using a blended method, this is the relative weight assigned to the "
+"past part of the combination."
+msgstr ""
+"Karma bir yöntem kullanıldığında, bu değer kombinasyondaki geçmişe ait "
+"kısmın göreceli ağırlığını belirtir."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer_profile__distributed_reschedule_max_proc_time
+msgid ""
+"When you request procurement from a buffer, their scheduled date is "
+"rescheduled to now + this procurement time (in minutes). Their scheduled "
+"date represents the latest the transfers should be done, and therefore, past"
+" this timestamp, considered late."
+msgstr ""
+"Bir tampondan tedarik talebi oluşturduğunuzda, planlanan tarih şu andan "
+"itibaren bu tedarik süresi (dakika cinsinden) kadar ileriye ayarlanır. "
+"Planlanan tarih, transferlerin en geç tamamlanması gereken zamanı temsil "
+"eder ve bu zaman damgası geçildiyse işlem gecikmiş sayılır."
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__auto_procure
+msgid ""
+"Whenever the buffer is recomputed, if this option is set, it will procure "
+"automatically if needed."
+msgstr ""
+"Tampon her yeniden hesaplandığında, bu seçenek etkinse, gerekmesi durumunda "
+"otomatik olarak tedarik işlemi başlatılır."
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__wiz_id
+msgid "Wizard"
+msgstr "Sihirbazı"
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__mrp_production__execution_priority_level__2_yellow
+#: model:ir.model.fields.selection,name:ddmrp.selection__purchase_order_line__execution_priority_level__2_yellow
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__execution_priority_level__2_yellow
+#: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__planning_priority_level__2_yellow
+#: model_terms:ir.ui.view,arch_db:ddmrp.purchase_order_line_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_mrp_production_filter
+msgid "Yellow"
+msgstr "Sarı"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__yellow_override
+msgid "Yellow Zone (Override)"
+msgstr "Sarı Bölge (Geçersiz)"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__yellow_zone_qty
+msgid "Yellow Zone Qty"
+msgstr "Sarı Bölge Miktarı"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Yellow zone"
+msgstr "Sarı bölge"
+
+#. module: ddmrp
+#. odoo-python
+#: code:addons/ddmrp/models/stock_buffer.py:0
+#, python-format
+msgid ""
+"You have to select a product unit of measure that is inthe same category "
+"than the default unit ofmeasure of the product"
+msgstr ""
+"Ürün için, varsayılan ölçü birimiyle aynı kategoride olan bir ürün ölçü "
+"birimi seçmelisiniz"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid "Zones Information"
+msgstr "Bölge Bilgileri"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_adjustment
+msgid "apply adjustments to dynamically alter buffers"
+msgstr "tamponları dinamik olarak değiştirmek için düzeltmeleri uygula"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_product_adu_calculation_method_form
+msgid "days"
+msgstr "gün"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
+msgid "or"
+msgstr "veya"

@@ -6,7 +6,7 @@
 
 {
     "name": "Base Search Mail Content",
-    "version": "16.0.1.0.4",
+    "version": "16.0.1.0.5",
     "author": "ForgeFlow, SerpentCS, Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/social",
     "category": "Social",

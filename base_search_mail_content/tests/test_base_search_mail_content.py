@@ -28,7 +28,7 @@ class TestBaseSearchMailContent(TransactionCase):
         Partner = self.env["res.partner"]
         partner = Partner.create({"name": "Test Partner"})
         partner.message_post(
-            body="Hello World",
+            subject="Hello World",
         )
         partner_find = Partner.search([("message_content", "ilike", "world hell")])
         self.assertFalse(partner_find)

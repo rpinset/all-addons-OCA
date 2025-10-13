@@ -492,6 +492,7 @@ addon | version | maintainers | summary
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 16.0.1.0.0 |  | Purchase Self Invoice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
 [account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 16.0.2.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
+[account_invoice_supplierinfo_update_qty_multiplier](account_invoice_supplierinfo_update_qty_multiplier/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the invoice Supplierinfo wizard, allow to change the Quantity Multiplier field
 [account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
 [account_invoice_tax_note](account_invoice_tax_note/) | 16.0.1.0.1 |  | Print tax notes on customer invoices
 [account_invoice_tax_required](account_invoice_tax_required/) | 16.0.1.1.0 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
@@ -646,7 +647,7 @@ addon | version | maintainers | summary
 [analytic_operating_unit](analytic_operating_unit/) | 16.0.1.0.0 |  | Analytic Operating Unit
 [contract_operating_unit](contract_operating_unit/) | 16.0.1.0.0 |  | Contract Operating Unit
 [hr_operating_unit](hr_operating_unit/) | 16.0.1.0.0 |  | HR Operating Unit
-[operating_unit](operating_unit/) | 16.0.1.1.1 |  | An operating unit (OU) is an organizational entity part of a company
+[operating_unit](operating_unit/) | 16.0.1.1.2 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [product_operating_unit](product_operating_unit/) | 16.0.1.0.1 |  | Adds the concept of operating unit (OU) in products
 [project_operating_unit](project_operating_unit/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
@@ -2799,7 +2800,7 @@ addon | version | maintainers | summary
 [account_invoice_edifact](account_invoice_edifact/) | 16.0.1.0.0 |  | Generate customer invoices with EDIFACT/D96A format
 [account_invoice_export](account_invoice_export/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
-[account_invoice_facturx](account_invoice_facturx/) | 16.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx](account_invoice_facturx/) | 16.0.2.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X invoices with Py3o reporting engine
 [account_invoice_ubl](account_invoice_ubl/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Generate UBL XML file for customer invoices/refunds
 [base_business_document_import](base_business_document_import/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
@@ -3244,7 +3245,7 @@ addon | version | maintainers | summary
 [hr_employee_firstname_partner_firstname](hr_employee_firstname_partner_firstname/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Glue module between partner_firstname and hr_employee_firstname
 [hr_employee_group_overview_readonly](hr_employee_group_overview_readonly/) | 16.0.1.0.0 |  | HR Employee Group Overview Readonly
 [hr_employee_id](hr_employee_id/) | 16.0.1.0.1 |  | Employee ID
-[hr_employee_language](hr_employee_language/) | 16.0.1.0.0 |  | HR Employee Language
+[hr_employee_language](hr_employee_language/) | 16.0.1.0.1 |  | HR Employee Language
 [hr_employee_lastnames](hr_employee_lastnames/) | 16.0.1.0.2 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 16.0.1.1.0 |  | Adds information about employee's medical examinations
 [hr_employee_partner_external](hr_employee_partner_external/) | 16.0.1.0.0 |  | Associate an external Partner to Employee
@@ -5419,7 +5420,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.1 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.6 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.7 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 16.0.1.0.3 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -6570,7 +6571,7 @@ addon | version | maintainers | summary
 [stock_available_to_promise_release_block](stock_available_to_promise_release_block/) | 16.0.1.1.1 |  | Block Release of Operations
 [stock_available_to_promise_release_dynamic_routing](stock_available_to_promise_release_dynamic_routing/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Glue between moves release and dynamic routing
 [stock_available_to_promise_release_exclude_location](stock_available_to_promise_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from available stock
-[stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.2 |  | Dynamic routing of stock moves
+[stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.3 |  | Dynamic routing of stock moves
 [stock_full_location_reservation](stock_full_location_reservation/) | 16.0.1.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Extend reservation to full content of location
 [stock_picking_batch_creation](stock_picking_batch_creation/) | 16.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Create a batch of pickings to be processed all together
 [stock_picking_completion_info](stock_picking_completion_info/) | 16.0.1.0.1 |  | Display on current document completion information according to next operations
@@ -6671,7 +6672,7 @@ addon | version | maintainers | summary
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 16.0.1.0.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
 [mrp_lot_production_date](mrp_lot_production_date/) | 16.0.1.0.0 |  | MRP Lot Production Date
 [mrp_mto_owner](mrp_mto_owner/) | 16.0.1.0.0 |  | Mrp MTO Owner
-[mrp_multi_level](mrp_multi_level/) | 16.0.1.6.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 16.0.1.7.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 16.0.1.1.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_packaging_default](mrp_packaging_default/) | 16.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Include packaging info in MRP by default
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 16.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
@@ -7152,7 +7153,7 @@ addon | version | maintainers | summary
 [product_catalog](product_catalog/) | 16.0.1.0.0 |  | Backport of Odoos v17 product catalog
 [product_catalog_sale](product_catalog_sale/) | 16.0.1.0.0 |  | Backport of Odoos v17 product catalog for sale orders
 [product_catalog_stock](product_catalog_stock/) | 16.0.1.0.0 |  | Use the product catalog on stock pickings
-[product_category_active](product_category_active/) | 16.0.2.0.0 |  | Add option to archive product categories
+[product_category_active](product_category_active/) | 16.0.2.0.1 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a code on product categories
 [product_category_code_unique](product_category_code_unique/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to set product category code field as unique
 [product_category_description](product_category_description/) | 16.0.1.0.0 | <a href='https://github.com/MarcBForgeFlow'><img src='https://github.com/MarcBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MarcBForgeFlow'/></a> | Allows to add a detailed description for a product category.
@@ -7165,6 +7166,7 @@ addon | version | maintainers | summary
 [product_code_regex_validation](product_code_regex_validation/) | 16.0.1.0.0 |  | Configure regEx validation for product codes.
 [product_code_unique](product_code_unique/) | 16.0.1.0.1 |  | Set Product Internal Reference as Unique
 [product_company_default](product_company_default/) | 16.0.1.0.0 |  | Product Company Default
+[product_compute_template_field_from_variant_helper](product_compute_template_field_from_variant_helper/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add technical helper to compute easily template fields from product variant fields
 [product_cost_security](product_cost_security/) | 16.0.2.3.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Product cost security restriction view
 [product_country_restriction](product_country_restriction/) | 16.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define product restrictions country based
 [product_dimension](product_dimension/) | 16.0.1.2.0 |  | Product Dimension
@@ -7856,7 +7858,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_search_mail_content](base_search_mail_content/) | 16.0.1.0.4 |  | Base Search Mail Content
+[base_search_mail_content](base_search_mail_content/) | 16.0.1.0.5 |  | Base Search Mail Content
 [base_user_signature](base_user_signature/) | 16.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Base User Signature
 [email_template_qweb](email_template_qweb/) | 16.0.1.0.0 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.1.0 |  | Post unkonwn messages to an existing thread

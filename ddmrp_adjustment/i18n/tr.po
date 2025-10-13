@@ -1,0 +1,391 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ddmrp_adjustment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-11 09:12+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__adjustment_type
+msgid "Adjustment Type"
+msgstr "Düzeltme Türü"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__line_ids
+msgid "Adjustments"
+msgstr "Düzeltmeler"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_search
+msgid "Affecting Currently"
+msgstr "Şu Anda Etkileyen"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__buffer_id
+msgid "Apply to"
+msgstr "Uygulanır"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__buffer_id
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_search
+msgid "Buffer"
+msgstr "Tampon"
+
+#. module: ddmrp_adjustment
+#: model:ir.model,name:ddmrp_adjustment.model_ddmrp_adjustment_sheet
+msgid "Buffer Adjustment Sheet"
+msgstr "Tampon Düzeltme Formu"
+
+#. module: ddmrp_adjustment
+#: model:ir.model,name:ddmrp_adjustment.model_ddmrp_adjustment_sheet_line
+msgid "Buffer Adjustment Sheet Line"
+msgstr "Tampon Düzeltme Formu Satırı"
+
+#. module: ddmrp_adjustment
+#: model:ir.actions.act_window,name:ddmrp_adjustment.ddmrp_adjustment_action
+#: model:ir.ui.menu,name:ddmrp_adjustment.menu_ddmrp_adjustment
+msgid "Buffer Adjustments"
+msgstr "Tampon Düzeltmeleri"
+
+#. module: ddmrp_adjustment
+#: model:ir.actions.act_window,name:ddmrp_adjustment.ddmrp_adjustment_demand_action
+msgid "Buffer Adjustments Demand"
+msgstr "Tampon Düzeltmeleri Talep"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Buffer Adjustments Wizard"
+msgstr "Tampon Düzeltmeleri Sihirbazı"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Buffers"
+msgstr "Tamponlar"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Cancel"
+msgstr "Iptal Et"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__company_id
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__count_ddmrp_adjustment_demand
+msgid "Count Ddmrp Adjustment Demand"
+msgstr "DDMRP Düzeltme Talepleri Sayısı"
+
+#. module: ddmrp_adjustment
+#: model:ir.actions.act_window,name:ddmrp_adjustment.action_ddmrp_adjustment_sheet_wizard
+#: model:ir.ui.menu,name:ddmrp_adjustment.menu_ddmrp_adjustment_sheet_wizard
+msgid "Create Buffer Adjustments"
+msgstr "Tampon Düzeltmeleri Oluştur"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__create_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__create_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__create_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__create_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__create_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__create_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.stock_buffer_view_form
+msgid "DAF Demand Allocation"
+msgstr "DAF Talep Tahsisi"
+
+#. module: ddmrp_adjustment
+#: model:ir.model,name:ddmrp_adjustment.model_ddmrp_adjustment
+msgid "DDMRP Adjustment"
+msgstr "DDMRP Düzeltmesi"
+
+#. module: ddmrp_adjustment
+#: model:ir.model,name:ddmrp_adjustment.model_ddmrp_adjustment_demand
+msgid "DDMRP Adjustment Demand"
+msgstr "DDMRP Düzeltme Talep"
+
+#. module: ddmrp_adjustment
+#. odoo-python
+#: code:addons/ddmrp_adjustment/wizards/ddmrp_adjustment_sheet.py:0
+#, python-format
+msgid "DDMRP Buffer Adjustment"
+msgstr "DDMRP Tampon Düzeltme"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__buffer_ids
+msgid "DDMRP Buffers"
+msgstr "DDMRP Tamponlar"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__daf_applied
+msgid "Daf Applied"
+msgstr "DAF Uygulandı"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__daf_text
+msgid "Daf Text"
+msgstr "DAF Metni"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__date_start
+msgid "Date From"
+msgstr "Tarihinden"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__date_range_id
+msgid "Date Range"
+msgstr "Tarih Aralığı"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__date_range_type_id
+msgid "Date Range Type"
+msgstr "Tarih Aralığı Türü"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__date_end
+msgid "Date To"
+msgstr "Tarihine"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,help:ddmrp_adjustment.field_ddmrp_adjustment_demand__product_uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Tüm stok operasyonlarında kullanılan varsayılan ölçü birimi."
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__apply_daf
+#: model:ir.model.fields.selection,name:ddmrp_adjustment.selection__ddmrp_adjustment__adjustment_type__daf
+msgid "Demand Adjustment Factor"
+msgstr "Talep Düzeltme Faktörü"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,help:ddmrp_adjustment.field_stock_buffer__extra_demand_ids
+msgid ""
+"Demand associated to Demand Adjustment Factors applied to parent buffers."
+msgstr ""
+"Üst tamponlara uygulanan Talep Düzeltme Faktörleriyle ilişkilendirilmiş "
+"talep."
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__display_name
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__display_name
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__display_name
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__date_end
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__date_end
+msgid "End date"
+msgstr "Bitiş tarihi"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__extra_demand
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__extra_demand_ids
+msgid "Extra Demand"
+msgstr "Ek Talep"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__factor
+msgid "Factors"
+msgstr "Faktörler"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Factors to Apply"
+msgstr "Uygulanacak Faktörler"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid ""
+"Fill the factors to apply in each period for all the\n"
+"                       selected Buffers."
+msgstr ""
+"Seçili tüm Tamponlar için her dönem uygulanacak\n"
+"                       faktörleri doldurun."
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_search
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__id
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__id
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__id
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment____last_update
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand____last_update
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet____last_update
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line____last_update
+msgid "Last Modified on"
+msgstr "Son Değiştirilme"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__write_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__write_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__write_uid
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__write_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__write_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__write_date
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet__apply_ltaf
+#: model:ir.model.fields.selection,name:ddmrp_adjustment.selection__ddmrp_adjustment__adjustment_type__ltaf
+msgid "Lead Time Adjustment Factor"
+msgstr "Tedarik Süresi Düzeltme Faktörü"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__location_id
+msgid "Location"
+msgstr "Konum"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_search
+msgid "Not Expired"
+msgstr "Süresi Geçmemiş"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__product_origin_id
+msgid "Origin Product"
+msgstr "Kaynak Ürün"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__buffer_origin_id
+msgid "Originated from"
+msgstr "Türetilen"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__parent_daf_applied
+msgid "Parent Daf Applied"
+msgstr "Uygulanan Üst DAF"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__parent_daf_text
+msgid "Parent Daf Text"
+msgstr "Üst DAF Metni"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__date_range_id
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Period"
+msgstr "Dönem"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Periods"
+msgstr "Dönemler"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_stock_buffer__pre_daf_adu
+msgid "Pre Daf Adu"
+msgstr "DAF ADU Öncesi"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__product_id
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__product_id
+msgid "Product"
+msgstr "Ürün"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__sheet_id
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Sheet"
+msgstr "Form"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__date_start
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__date_start
+msgid "Start date"
+msgstr "Başlangıç tarihi"
+
+#. module: ddmrp_adjustment
+#: model:ir.model,name:ddmrp_adjustment.model_stock_buffer
+msgid "Stock Buffer"
+msgstr "Stok Tamponu"
+
+#. module: ddmrp_adjustment
+#. odoo-python
+#: code:addons/ddmrp_adjustment/wizards/ddmrp_adjustment_sheet.py:0
+#, python-format
+msgid "The start date cannot be later than the end date."
+msgstr "Başlangıç tarihi bitiş tarihinden sonra olamaz."
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_demand__product_uom_id
+msgid "Unit of Measure"
+msgstr "Ölçü Birimi"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "Validate"
+msgstr "Doğrula"
+
+#. module: ddmrp_adjustment
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment__value
+#: model:ir.model.fields,field_description:ddmrp_adjustment.field_ddmrp_adjustment_sheet_line__value
+msgid "Value"
+msgstr "Değeri"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.stock_buffer_view_form
+msgid "View DAFs Affecting Actual ADU"
+msgstr "Ana ADU'yu etkileyen DAF'ları görüntüle"
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.stock_buffer_view_form
+msgid "View Demand from parent DAFs Affecting Actual ADU"
+msgstr "Gerçek ADU’yu etkileyen üst DAF’lardan gelen talebi görüntüle"
+
+#. module: ddmrp_adjustment
+#. odoo-python
+#: code:addons/ddmrp_adjustment/wizards/ddmrp_adjustment_sheet.py:0
+#, python-format
+msgid "You must apply at least one factor"
+msgstr "En az bir faktörü uygulamanız gerekiyor"
+
+#. module: ddmrp_adjustment
+#. odoo-python
+#: code:addons/ddmrp_adjustment/wizards/ddmrp_adjustment_sheet.py:0
+#, python-format
+msgid "You must select at least one buffer."
+msgstr "En az bir tampon seçmelisiniz."
+
+#. module: ddmrp_adjustment
+#: model_terms:ir.ui.view,arch_db:ddmrp_adjustment.view_ddmrp_adjustment_sheet_wizard_form
+msgid "to"
+msgstr "a"
