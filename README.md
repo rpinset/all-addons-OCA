@@ -464,11 +464,11 @@ Date:   Tue Sep 16 14:54:32 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit aa58377906a330a67f6a93db3e2266348468d702
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 26 08:51:27 2025 +0000
+commit 8259a1a07e891ecec902e96edcbed7d160e2ae90
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 08:55:58 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## survey
@@ -533,16 +533,16 @@ Date:   Thu Oct 2 12:24:05 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 0a37f73fbedd60ae26b1f23802cea8f0ad7624c0
+commit c9571459886a9e8cdaee92a40f50e0c8a27a0ce4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 15:04:20 2025 +0000
+Date:   Mon Oct 13 08:40:16 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (578 of 578 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice_equipment_type
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_equipment_type/it/
 
 
 ## margin-analysis
@@ -1128,16 +1128,16 @@ Date:   Tue Sep 9 10:05:37 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit d9c123db57cf2c32a57e740623e952ea1dcaabea
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Aug 13 09:42:46 2025 +0000
+commit 457075f4aa9b9274403e197b47e5d43ba63fadbf
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 07:23:18 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-delivery_procurement_group_carrier
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-delivery_procurement_group_carrier/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-sale_planned_consumed_date
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-sale_planned_consumed_date/it/
 
 
 ## stock-logistics-tracking
@@ -1165,11 +1165,11 @@ Date:   Thu Oct 2 16:37:07 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 784c3d8ae9e7bce7f091e555006514dc3084ab88
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 25 15:47:09 2025 +0000
+commit 8d24fd48f4e8857b290d23333a63ee875f45bd45
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 07:31:07 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## rma
@@ -1202,20 +1202,25 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit d0f8c544f303cd1dfb43e4f76408741762a465e7
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Oct 5 12:57:32 2025 +0000
+commit e0759969730a3761827061d6cfcb57ef807baa14
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 07:20:52 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (14 of 14 strings)
+    
+    Translation: wms-14.0/wms-14.0-stock_full_location_reservation
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_full_location_reservation/it/
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit b8f2c02442df3b2ccb97492975d302bd52247a59
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 1 12:47:47 2025 +0000
+commit 1a5ecd9f93aea6710a6c6fcd1efd93cf038b440b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 08:38:00 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## manufacture-reporting
@@ -1559,13 +1564,13 @@ Date:   Sun Feb 9 19:19:58 2025 +0000
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit f6550b774324849d71ea78aedc88fb2ff4a8feaf
+commit d5c9816976c56b513ff736403fa9f04833b7527f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:10:36 2025 +0000
+Date:   Mon Oct 13 08:38:20 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 11.1% (1 of 9 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
     Translation: interface-github-14.0/interface-github-14.0-github_connector_oca
     Translate-URL: https://translation.odoo-community.org/projects/interface-github-14-0/interface-github-14-0-github_connector_oca/it/
@@ -1596,25 +1601,25 @@ Date:   Wed Jun 4 03:34:53 2025 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit 8fd5e7dd8aac88942a7ae768423fe318bc198c62
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 16 09:56:39 2025 +0000
+commit 43ecb0d748470852894dcb2c9a13fa8c21c3571a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 13 07:22:43 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 541077863f7d3ac3cac6fe25a7ff68b9f12f01e5
+commit 9e61dba3c372662d8d4591f31aff276686d79d81
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 9 07:34:56 2025 +0000
+Date:   Mon Oct 13 06:53:04 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (376 of 376 strings)
+    Currently translated at 100.0% (509 of 509 strings)
     
-    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel_restaurant
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel_restaurant/it/
+    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel/it/
 
 
 ## vertical-isp
