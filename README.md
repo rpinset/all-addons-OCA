@@ -158,11 +158,16 @@ Date:   Thu May 29 13:58:33 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 6b805035697f3888e9065b00c85cf992d04d6c32
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:17:48 2025 +0000
+commit f2725c21d263150636d25983e35f1b5866fe1975
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 15 07:55:51 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 57.3% (160 of 279 strings)
+    
+    Translation: mis-builder-12.0/mis-builder-12.0-mis_builder
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-12-0/mis-builder-12-0-mis_builder/it/
 
 
 ## currency
@@ -583,16 +588,11 @@ Date:   Sat Jun 21 10:41:05 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 9af6b22836b5ff626021f5294a26c826a823ee42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:46:57 2025 +0000
+commit 6f9a0312f928dc446ff7ddc2e92ed5c28ef739c1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Oct 14 16:15:29 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (172 of 172 strings)
-    
-    Translation: hr-12.0/hr-12.0-hr_attendance_sheet
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_attendance_sheet/it/
+    [UPD] README.rst
 
 
 ## connector-odoo2odoo
