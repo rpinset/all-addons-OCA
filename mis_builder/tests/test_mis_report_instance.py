@@ -637,3 +637,7 @@ class TestMisReportInstance(common.HttpCase):
             self.env, "mis_you", groups="base.group_user,account.group_account_readonly"
         )
         self.report_instance.with_user(test_user).compute()
+
+    def test_copy_mis_report_instance(self):
+        new_instance = self.report_instance.copy()
+        self.assertEqual(new_instance.name, f"{self.report_instance.name} (copy)")

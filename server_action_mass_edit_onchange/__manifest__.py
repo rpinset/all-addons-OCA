@@ -4,7 +4,7 @@
 {
     "name": "Server Action Mass Edit Onchange",
     "summary": """Extension of server_action_mass_edit""",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "license": "AGPL-3",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-ux",
