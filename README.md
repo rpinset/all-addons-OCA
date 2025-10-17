@@ -120,9 +120,9 @@ Date:   Wed Aug 13 15:27:10 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 16045a4ff6909e76920141bd2cc97e02e5feeeb3
+commit 0e22e8c7a902b6c9481119b4e93aba8743cee39e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 4 08:57:10 2025 +0000
+Date:   Tue Oct 14 15:46:26 2025 +0000
 
     [BOT] post-merge updates
 
@@ -138,9 +138,9 @@ Date:   Wed Jun 4 02:58:42 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit e758ac017f5641c6008082ffc77ac5381b3b72aa
+commit 1d962d6071ca002de1efec74d3c1350010120fa6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 07:28:07 2025 +0000
+Date:   Wed Oct 15 07:55:54 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -923,16 +923,11 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit cfaa589d034bd8493e28f524e6b1642889d7667d
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Thu Sep 25 19:08:26 2025 +0000
+commit c289fc1b400abc6b204bdec6c8bf3630b28cf5c4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Oct 16 16:22:31 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 96.3% (263 of 273 strings)
-    
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat/ca/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -955,11 +950,16 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 26fe09e4fcbafee37a13e6045f13b3ee4597c22c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 1 07:59:47 2025 +0000
+commit 61382c657816a947c57b3300ed7aac57c45d86f1
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Oct 15 07:36:33 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-thailand-15.0/l10n-thailand-15.0-currency_rate_update_TH_BOT
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-thailand-15-0/l10n-thailand-15-0-currency_rate_update_TH_BOT/
 
 
 ## l10n-turkey

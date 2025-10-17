@@ -5159,7 +5159,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.9.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.2 |  | AEAT modelo 390 - OSS
-[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.2.0.1 |  | AEAT modelo 592
+[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.2.0.2 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.2.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.22.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
@@ -5177,7 +5177,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 15.0.1.1.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 15.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 15.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 15.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 15.0.1.1.2 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 15.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 15.0.2.0.3 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 15.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | Punto de venta adaptado a la legislación española por dispositivo
@@ -5189,7 +5189,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 15.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 15.0.1.0.7 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 15.0.1.0.1 |  | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.11.1 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.11.2 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 15.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 15.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 15.0.1.1.0 |  | Prorrata de IVA para la localización española
@@ -5328,7 +5328,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Currency Rate Update - BOT
+[currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.2.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Assets Management
 [l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.3.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - Expense Tax
