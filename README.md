@@ -117,16 +117,11 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 89b73ac8bc5a752a3680f9b9498da833a747b56c
+commit 1ef7471a7072c3a7f1f7f7b52661c9be47839fac
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 1 19:07:19 2025 +0000
+Date:   Tue Oct 14 10:10:32 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: account-invoicing-14.0/account-invoicing-14.0-account_receipt_base
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_receipt_base/it/
+    Added translation using Weblate (Italian)
 
 
 ## account-fiscal-rule
@@ -158,16 +153,16 @@ Date:   Wed Jun 4 02:58:38 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit e4bc076e20dee59f7e23d2ac79624e76bb85665d
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Sep 16 16:04:12 2025 +0000
+commit 6d6e61a85edfaa24f22abee9f023a97b59a8e6a8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 15 07:55:49 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 96.8% (274 of 283 strings)
+    Currently translated at 73.4% (208 of 283 strings)
     
     Translation: mis-builder-14.0/mis-builder-14.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder/tr/
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder/it/
 
 
 ## currency
@@ -519,16 +514,11 @@ Date:   Fri Aug 8 09:59:36 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 66b7cd55858992c34aa1955b3ac191d4ef2aef35
-Author: Marwan Behillil <marwan.behillil@gmail.com>
-Date:   Thu Oct 2 12:24:05 2025 +0000
+commit d72ce70d34fdd9bd3a0e483032630475d21c0030
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Oct 14 07:58:31 2025 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (145 of 145 strings)
-    
-    Translation: edi-14.0/edi-14.0-account_invoice_import
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-account_invoice_import/fr/
+    Added translation using Weblate (Italian)
 
 
 ## field-service
@@ -1114,16 +1104,16 @@ Date:   Thu Sep 25 15:30:42 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 78de9bc4e0b5596ada0485c6587a5a7f350bfdda
+commit 8584b9706489a10a65a808f2b7fb74d83670dce5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 9 10:05:37 2025 +0000
+Date:   Wed Oct 15 09:12:26 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (278 of 278 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: stock-logistics-barcode-14.0/stock-logistics-barcode-14.0-stock_barcodes
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-14-0/stock-logistics-barcode-14-0-stock_barcodes/it/
+    Translation: stock-logistics-barcode-14.0/stock-logistics-barcode-14.0-stock_barcodes_gs1_expiry
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-14-0/stock-logistics-barcode-14-0-stock_barcodes_gs1_expiry/it/
 
 
 ## stock-logistics-workflow
@@ -1151,25 +1141,30 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 93afe441b0eef8e33e64cd6eb3bba0eb54963644
+commit 533b2d1b856de0a41a992a0f2176205192d6f2ef
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 2 16:37:07 2025 +0000
+Date:   Wed Oct 15 09:09:29 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_measuring_device_zippcube
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_measuring_device_zippcube/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_removal_location_by_priority
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_removal_location_by_priority/it/
 
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 8d24fd48f4e8857b290d23333a63ee875f45bd45
+commit ca8a787d6ba519584a44f985c9740877d33c6a6e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 07:31:07 2025 +0000
+Date:   Wed Oct 15 09:10:25 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: stock-logistics-reporting-14.0/stock-logistics-reporting-14.0-stock_picking_comment_template
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-14-0/stock-logistics-reporting-14-0-stock_picking_comment_template/it/
 
 
 ## rma
@@ -1267,9 +1262,9 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit bb361d02b73a8b10437416be5904fa93f9096ca6
+commit 6cd6f2a783ddb77eaa661edb173a7e857a3a1352
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 29 22:08:58 2025 +0000
+Date:   Wed Oct 15 12:32:31 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1408,16 +1403,16 @@ Date:   Sun Feb 2 18:18:12 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 868166c5e54da9a0438d4fa801a9568d3689f473
-Author: K <luca@pretto.eu>
-Date:   Mon Oct 6 15:50:49 2025 +0000
+commit 4de56ec9be1122fe8075b452edcaa7078da6c6e7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 15 09:20:49 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: social-14.0/social-14.0-mail_notification_with_history
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_notification_with_history/it/
+    Translation: social-14.0/social-14.0-fetchmail_thread_default
+    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-fetchmail_thread_default/it/
 
 
 ## storage
@@ -1610,9 +1605,9 @@ Date:   Mon Oct 13 07:22:43 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 9e61dba3c372662d8d4591f31aff276686d79d81
+commit 92478afe4fb4b34c8d665fc7f85c8a638adc5426
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 06:53:04 2025 +0000
+Date:   Tue Oct 14 07:05:18 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1687,16 +1682,16 @@ Date:   Sun Feb 9 19:13:41 2025 +0000
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 390784377df93726839957f40e8e99b68075fe85
+commit 4bbbb971bdb43a307cca596e411de309afea58d9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:09:02 2025 +0000
+Date:   Wed Oct 15 09:05:42 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 7.1% (1 of 14 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: vertical-rental-14.0/vertical-rental-14.0-rental_check_availability
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-14-0/vertical-rental-14-0-rental_check_availability/it/
+    Translation: vertical-rental-14.0/vertical-rental-14.0-rental_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-14-0/vertical-rental-14-0-rental_product_pack/it/
 
 
 ## vertical-travel
