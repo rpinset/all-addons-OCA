@@ -17,6 +17,7 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_multi_company
+#: model:ir.model,name:partner_multi_company.model_res_company
 #: model:ir.model.fields,field_description:partner_multi_company.field_res_partner__company_ids
 msgid "Companies"
 msgstr "Aziende"

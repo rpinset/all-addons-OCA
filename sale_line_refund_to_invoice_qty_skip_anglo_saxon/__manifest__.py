@@ -5,7 +5,7 @@
     "version": "16.0.1.0.0",
     "summary": "Sale Line Refund To Invoice Qty skip anglo saxon.",
     "category": "Accounting",
-    "author": "ForgeFlow S.L, " "Odoo Community Association (OCA)",
+    "author": "ForgeFlow S.L., " "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-invoicing",
     "data": [
         "wizard/account_move_reversal_view.xml",

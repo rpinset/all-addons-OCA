@@ -5,7 +5,7 @@
     "version": "16.0.1.0.0",
     "summary": "Account Invoice Refund Reason.",
     "category": "Accounting",
-    "author": "ForgeFlow S.L, " "Odoo Community Association (OCA)",
+    "author": "ForgeFlow S.L., " "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-invoicing",
     "data": [
         "views/account_invoice_refund_reason_view.xml",

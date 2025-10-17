@@ -56,9 +56,15 @@ patch(Dialog.prototype, "web_dialog_size.Dialog", {
         this._super(...arguments);
         this.setSize = this.setSize.bind(this);
         this.getSize = this.getSize.bind(this);
+        onWillRender(() => {
+            if (this._forcedSize && this.props.size !== this._forcedSize) {
+                this.props.size = this._forcedSize;
+            }
+        });
     },
 
     setSize(size) {
+        this._forcedSize = size;
         this.props.size = size;
         this.render();
     },

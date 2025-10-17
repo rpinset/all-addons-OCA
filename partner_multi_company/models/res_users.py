@@ -9,13 +9,15 @@ class ResUsers(models.Model):
 
     @api.model_create_multi
     def create(self, vals):
-        res = super(ResUsers, self).create(vals)
-        if "company_ids" in vals:
-            res.partner_id.company_ids = vals["company_ids"]
-        return res
+        users = super(ResUsers, self).create(vals)
+        for user in users:
+            # The new user might have a company even if it was not in `vals`
+            # because of defaults for example.
+            if user.company_ids:
+                user.partner_id.company_ids += user.company_ids
+        return users
 
     def write(self, vals):
-        res = super(ResUsers, self.with_context(from_res_users=True)).write(vals)
         if "company_ids" in vals:
             for user in self.sudo():
                 new_company_ids = []
@@ -38,4 +40,4 @@ class ResUsers(models.Model):
             for user in self.sudo():
                 if user.partner_id.company_ids:
                     user.partner_id.company_ids = [(4, vals["company_id"])]
-        return res
+        return super(ResUsers, self.with_context(from_res_users=True)).write(vals)

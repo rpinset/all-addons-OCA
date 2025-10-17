@@ -1,0 +1,37 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_invoice_supplierinfo_update_qty_multiplier
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-16 08:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: account_invoice_supplierinfo_update_qty_multiplier
+#: model:ir.model.fields,field_description:account_invoice_supplierinfo_update_qty_multiplier.field_wizard_update_invoice_supplierinfo_line__current_multiplier_qty
+msgid "Current Multiplier Qty"
+msgstr "Q.tà moltiplicatore attuale"
+
+#. module: account_invoice_supplierinfo_update_qty_multiplier
+#: model:ir.model,name:account_invoice_supplierinfo_update_qty_multiplier.model_account_move_line
+msgid "Journal Item"
+msgstr "Movimento contabile"
+
+#. module: account_invoice_supplierinfo_update_qty_multiplier
+#: model:ir.model.fields,field_description:account_invoice_supplierinfo_update_qty_multiplier.field_wizard_update_invoice_supplierinfo_line__new_multiplier_qty
+msgid "New Multiplier Qty"
+msgstr "Nuova q.tà moltiplicatore"
+
+#. module: account_invoice_supplierinfo_update_qty_multiplier
+#: model:ir.model,name:account_invoice_supplierinfo_update_qty_multiplier.model_wizard_update_invoice_supplierinfo_line
+msgid "Wizard Line to update supplierinfo"
+msgstr "Riga procedura guidata per aggiornare le informazioni fornitore"

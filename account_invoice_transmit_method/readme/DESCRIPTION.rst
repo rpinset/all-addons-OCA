@@ -9,3 +9,8 @@ You can manually create additionnal transmission methods or other modules can cr
 additionnal transmission methods (for example, the module *l10n_fr_chorus_account*
 creates a specific transmission method *Chorus Pro*, which is the e-invoicing plateform
 of the French administration).
+
+When we select “Post” or “Customer Portal,” the button to send and print disappears.
+To reactivate the send and print button, you will need to change the transmission 
+method to “E-Mail,” and from there you can choose whether you want to send and print, 
+or just one of the two options.

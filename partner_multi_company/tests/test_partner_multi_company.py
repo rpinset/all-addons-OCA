@@ -3,7 +3,7 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
 from odoo.exceptions import AccessError
-from odoo.tests import common, tagged
+from odoo.tests import common, new_test_user, tagged
 
 
 @tagged("post_install", "-at_install")
@@ -166,3 +166,37 @@ class TestPartnerMultiCompany(common.TransactionCase):
             self.partner_company_none.with_user(self.user_company_1).read(["name"]),
             [{"id": self.partner_company_none.id, "name": "partner without company"}],
         )
+
+    def test_company_creation_with_users(self):
+        """When creating a new company with users,
+        the users and their partners are linked to the new company."""
+        admin_user = self.env.ref("base.user_admin")
+        company = self.env["res.company"].create(
+            {
+                "name": "Test company creation with users",
+                "user_ids": [
+                    (4, admin_user.id),
+                ],
+            }
+        )
+        self.assertIn(company, admin_user.company_ids)
+        self.assertIn(company, admin_user.partner_id.company_ids)
+
+    def test_new_user_partner_company(self):
+        """When creating a new user, its partner has all the user's companies."""
+        new_user = new_test_user(self.env, login="test_new_user_partner_company")
+        companies = new_user.company_ids
+        self.assertTrue(companies)
+        self.assertIn(companies, new_user.partner_id.company_ids)
+
+    def test_assign_user_multi_companies(self):
+        """Multiple companies are assigned to the user,
+        check that partner companies are aligned."""
+        new_user = new_test_user(self.env, login="test_assign_user_multi_companies")
+        new_user.write(
+            {
+                "company_id": self.company_1.id,
+                "company_ids": [(4, self.company_1.id), (4, self.company_2.id)],
+            }
+        )
+        self.assertEqual(new_user.company_ids, new_user.partner_id.company_ids)
