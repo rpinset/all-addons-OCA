@@ -458,9 +458,9 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 6ea07db61eff307fb910ca7a0e987bb7d8f3ef36
+commit 33e7be2fb97836a510144177a4abf27d19b89e12
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 18 06:24:55 2025 +0000
+Date:   Mon Oct 20 15:41:18 2025 +0000
 
     [BOT] post-merge updates
 
@@ -540,11 +540,16 @@ Date:   Wed Oct 1 19:03:29 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 67d1def30e89ee0a0e25e4077665f1917d564631
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:56:30 2025 +0000
+commit 253de1a2819d45f3d6eb981a1cc6c0cf4314ae6f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Oct 21 07:03:56 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (90 of 90 strings)
+    
+    Translation: hr-15.0/hr-15.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-15-0/hr-15-0-hr_course/it/
 
 
 ## hr-attendance
@@ -923,9 +928,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit c289fc1b400abc6b204bdec6c8bf3630b28cf5c4
+commit 85cb422d76cc574a4def70504882a08f9724fc93
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 16 16:22:31 2025 +0000
+Date:   Tue Oct 21 18:00:51 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1099,16 +1104,16 @@ Date:   Fri Sep 26 18:27:10 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 3705b689ad73ced27c1c54e22acd595e37c5e88d
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Sep 5 06:48:33 2025 +0000
+commit 63197452cb3b07a46b3b78fa2f7894bb0d6ffe15
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Oct 21 07:04:32 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 93.3% (324 of 347 strings)
     
     Translation: ddmrp-15.0/ddmrp-15.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp/
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp/it/
 
 
 ## wms
@@ -1505,9 +1510,9 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 6914e71e8e11afc35631e60b68d4c169518c71ed
+commit 739466395d2e1e99810c26444bef0a5a27716917
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 06:53:11 2025 +0000
+Date:   Tue Oct 21 11:33:58 2025 +0000
 
     Translated using Weblate (Italian)
     
