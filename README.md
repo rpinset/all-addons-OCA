@@ -614,11 +614,16 @@ Date:   Sat Jun 21 10:41:06 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 017a15f2086e90e57c420fbaaf62633850290402
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:56:09 2025 +0000
+commit 2ba5a9ff742c0e554241de6885dc05e6d8138f5a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Oct 21 07:03:55 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (89 of 89 strings)
+    
+    Translation: hr-13.0/hr-13.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_course/it/
 
 
 ## hr-attendance
@@ -1217,16 +1222,16 @@ Date:   Wed Jun 4 03:35:24 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit a3db24612cc70e8ad2f2a84ff3f0e80e3d9303a0
+commit 2dbd923253c8df41431da9020b197e72debf711b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 06:46:44 2025 +0000
+Date:   Tue Oct 21 07:04:23 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 98.2% (332 of 338 strings)
     
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_exclude_moves_adu_calc
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_exclude_moves_adu_calc/it/
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
 
 
 ## wms
