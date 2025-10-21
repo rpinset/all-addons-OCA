@@ -126,8 +126,10 @@ class FSStorage(models.Model):
             """,
     )
 
+    # When accessing this field, use the method get_directory_path instead so that
+    # parameter expansion is done.
     directory_path = fields.Char(
-        help="Relative path to the directory to store the file"
+        help="Relative path to the directory to store the file",
     )
 
     model_xmlids = fields.Char(
@@ -187,6 +189,16 @@ class FSStorage(models.Model):
         " the cache.\n"
         "* Create Marker file : Create a file on remote and check it exists\n"
         "* List File : List all files from root directory",
+    )
+
+    is_cacheable = fields.Boolean(
+        help="If True, once instantiated, the filesystem will be cached and reused.\n"
+        "By default, the filesystem is cacheable but in some cases, like "
+        "when using OAuth2 authentication, the filesystem cannot be cached "
+        "because it depends on the user and the token can change.\n"
+        "In this case, you can set this field to False to avoid caching the "
+        "filesystem.",
+        default=True,
     )
 
     _sql_constraints = [
@@ -281,6 +293,14 @@ class FSStorage(models.Model):
         self.env.registry.clear_cache()
         return super().write(vals)
 
+    def get_directory_path(self):
+        """Returns directory path with substitution done."""
+        return (
+            self.directory_path.format(db_name=self.env.cr.dbname)
+            if isinstance(self.directory_path, str)
+            else self.directory_path
+        )
+
     @api.model
     @tools.ormcache()
     def get_id_by_code_map(self):
@@ -302,6 +322,23 @@ class FSStorage(models.Model):
         return res
 
     @api.model
+    @tools.ormcache("code")
+    def get_protocol_by_code(self, code):
+        record = self.get_by_code(code)
+        return record.protocol if record else None
+
+    @api.model
+    @tools.ormcache("code")
+    def _is_fs_cacheable(self, code):
+        """Return True if the filesystem is cacheable."""
+        # This method is used to check if the filesystem is cacheable.
+        # It is used to avoid caching filesystems that are not cacheable.
+        # For example, the msgd protocol is not cacheable because it uses
+        # OAuth2 authentication and the token can change.
+        fs_storage = self.get_by_code(code)
+        return fs_storage and fs_storage.is_cacheable
+
+    @api.model
     @tools.ormcache()
     def get_storage_codes(self):
         """Return the list of codes of the existing filesystems."""
@@ -309,15 +346,24 @@ class FSStorage(models.Model):
 
     @api.model
     @tools.ormcache("code")
-    def get_fs_by_code(self, code):
+    def _get_fs_by_code_from_cache(self, code):
+        return self.get_fs_by_code(code, force_no_cache=True)
+
+    @api.model
+    def get_fs_by_code(self, code, force_no_cache=False):
         """Return the filesystem associated to the given code.
 
         :param code: the code of the filesystem
         """
+
+        use_cache = not force_no_cache and self._is_fs_cacheable(code)
         fs = None
-        fs_storage = self.get_by_code(code)
-        if fs_storage:
-            fs = fs_storage.fs
+        if use_cache:
+            fs = self._get_fs_by_code_from_cache(code)
+        else:
+            fs_storage = self.get_by_code(code)
+            if fs_storage:
+                fs = fs_storage.fs
         return fs
 
     @api.model
@@ -617,7 +663,7 @@ class FSStorage(models.Model):
             options["auth"] = tuple(options["auth"])
         options = self._recursive_add_odoo_storage_path(options)
         fs = fsspec.filesystem(self.protocol, **options)
-        directory_path = self.directory_path
+        directory_path = self.get_directory_path()
         if directory_path:
             fs = fsspec.filesystem("rooted_dir", path=directory_path, fs=fs)
         return fs

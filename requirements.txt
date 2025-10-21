@@ -232,6 +232,7 @@ msgraphfs
 paramiko
 pyftpdlib
 python_slugify
+webdav4[fsspec]
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies

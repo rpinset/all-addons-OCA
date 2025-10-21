@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-24 16:25+0000\n"
+"PO-Revision-Date: 2025-10-21 08:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -165,6 +165,25 @@ msgid "ID"
 msgstr "ID"
 
 #. module: fs_storage
+#: model:ir.model.fields,help:fs_storage.field_fs_storage__is_cacheable
+msgid ""
+"If True, once instantiated, the filesystem will be cached and reused.\n"
+"By default, the filesystem is cacheable but in some cases, like when using "
+"OAuth2 authentication, the filesystem cannot be cached because it depends on "
+"the user and the token can change.\n"
+"In this case, you can set this field to False to avoid caching the "
+"filesystem."
+msgstr ""
+"Se impostato su True, una volta instanziato, il file system verrà "
+"memorizzato nella cache e riutilizzato.\n"
+"Per impostazione predefinita, il file system è memorizzabile nella cache, ma "
+"in alcuni casi, come quando si utilizza l'autenticazione OAuth2, il file "
+"system non può essere memorizzato nella cache perché dipende dall'utente e "
+"il token può cambiare.\n"
+"In questo caso, è possibile impostare questo campo su False per evitare di "
+"memorizzare il file system nella cache."
+
+#. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_ir_model_fields__storage_id
 msgid ""
 "If specified, all attachments linked to this field will be stored in the "
@@ -181,6 +200,11 @@ msgid ""
 msgstr ""
 "Se specificato, tutti gli allegati collegati a questo modello verranno "
 "archiviati nel deposito indicato."
+
+#. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__is_cacheable
+msgid "Is Cacheable"
+msgstr "È memorizzabile"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__json_options

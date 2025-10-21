@@ -427,6 +427,11 @@ msgid "Partner"
 msgstr ""
 
 #. module: account_banking_mandate
+#: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__partner_bank_domain
+msgid "Partner Bank Domain"
+msgstr ""
+
+#. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__payment_line_ids_count
 msgid "Payment Line Ids Count"
 msgstr ""
