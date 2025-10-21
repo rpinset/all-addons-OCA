@@ -597,16 +597,16 @@ Date:   Wed Jul 23 07:55:18 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit e9586c96dc618a695898ff0738a3aa9a3ad59192
+commit 31fa63205949c5d3cff1f1c78c0835fb05c0d426
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:24:28 2025 +0000
+Date:   Tue Oct 21 07:03:59 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (49 of 49 strings)
+    Currently translated at 100.0% (115 of 115 strings)
     
-    Translation: hr-14.0/hr-14.0-hr_maintenance_workspace
-    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_maintenance_workspace/it/
+    Translation: hr-14.0/hr-14.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_course/it/
 
 
 ## hr-attendance
@@ -1183,16 +1183,16 @@ Date:   Mon Sep 8 07:53:46 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 18afc2c714c6eb1eb9bc484c3d8918575a620474
+commit d70466e38b12a0e2f45c607cd809d33f38481ac3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 06:48:38 2025 +0000
+Date:   Tue Oct 21 07:04:36 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (344 of 344 strings)
     
-    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp_exclude_moves_adu_calc
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp_exclude_moves_adu_calc/it/
+    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp/it/
 
 
 ## wms
@@ -1348,9 +1348,9 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 6e40e0600a36f4efd519b604e964de68aa2369ba
+commit f1247242ed95ec56673729053bb6450f8f9e0831
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 16 08:50:05 2025 +0000
+Date:   Tue Oct 21 06:56:46 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1417,11 +1417,11 @@ Date:   Wed Oct 15 09:20:49 2025 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit ebcd5c84d7754c107d4d6c84bbfb583724d48a62
+commit c0e1f39b0f80da2791514dfa034fb8f74cfec72b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:55:36 2025 +0000
+Date:   Mon Oct 20 11:52:04 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## search-engine
