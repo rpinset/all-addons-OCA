@@ -430,6 +430,7 @@ addon | version | maintainers | summary
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 17.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Configure invoice transmit method (email, post, portal, ...)
+[account_invoice_triple_discount](account_invoice_triple_discount/) | 17.0.1.0.0 |  | Manage triple discount on invoice lines
 [account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_manual_currency](account_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Accounting
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Account Move Cancel Confirm
@@ -615,7 +616,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.2.2 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.2.3 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
@@ -2298,7 +2299,7 @@ addon | version | maintainers | summary
 [survey_resource_booking](survey_resource_booking/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Access survey answers from resource booking
 [survey_result_mail](survey_result_mail/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Send survey answers to the survey user
 [survey_sale_generation](survey_sale_generation/) | 17.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Generate sale orders from surveys
-[survey_skip_start](survey_skip_start/) | 17.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Skip the surveys start screen and go directly to fill the form
+[survey_skip_start](survey_skip_start/) | 17.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Skip the surveys start screen and go directly to fill the form
 
 [//]: # (end addons)
 
@@ -4906,7 +4907,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.3 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.4.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.4.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
@@ -5945,6 +5946,7 @@ addon | version | maintainers | summary
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 17.0.1.0.1 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.1 |  | Logs any change to a BoM in the chatter
+[mrp_bom_widget_section_and_note_one2many](mrp_bom_widget_section_and_note_one2many/) | 17.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Add section and note in Bills of Materials
 [mrp_component_operation](mrp_component_operation/) | 17.0.1.0.0 |  | Allows to operate the components from a MO
 [mrp_component_operation_scrap_reason](mrp_component_operation_scrap_reason/) | 17.0.1.0.1 |  | Allows to pass a reason to scrap with MRP component operation
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 17.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
@@ -6377,7 +6379,7 @@ addon | version | maintainers | summary
 [product_packaging_level_salable](product_packaging_level_salable/) | 17.0.1.0.0 |  | Product Packaging level salable
 [product_pricelist_assortment](product_pricelist_assortment/) | 17.0.1.0.0 |  | Product assortment and pricelist
 [product_pricelist_by_contact](product_pricelist_by_contact/) | 17.0.1.0.0 |  | Product Pricelist Per Contact
-[product_pricelist_direct_print](product_pricelist_direct_print/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Print price list from menu option, product templates, products variants or price lists
+[product_pricelist_direct_print](product_pricelist_direct_print/) | 17.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/kobros-tech'><img src='https://github.com/kobros-tech.png' width='32' height='32' style='border-radius:50%;' alt='kobros-tech'/></a> | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 17.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 17.0.1.0.0 |  | Product Pricelist Revision
@@ -7003,8 +7005,8 @@ addon | version | maintainers | summary
 [mail_debrand](mail_debrand/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_forward](mail_forward/) | 17.0.2.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
-[mail_gateway](mail_gateway/) | 17.0.1.0.4 |  | Base module for gateway communications
-[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.0.0 |  | Set a gateway for whatsapp
+[mail_gateway](mail_gateway/) | 17.0.1.0.5 |  | Base module for gateway communications
+[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.0.1 |  | Set a gateway for whatsapp
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
 [mail_no_user_assign_notification](mail_no_user_assign_notification/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail No user Assign Notification
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Apply a custom subject to mail notifications
@@ -7905,6 +7907,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [fastapi](fastapi/) | 17.0.3.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi_auth_api_key](fastapi_auth_api_key/) | 17.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Fastapi Auth API Key
 [graphql_base](graphql_base/) | 17.0.1.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Base GraphQL/GraphiQL controller
 [graphql_demo](graphql_demo/) | 17.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | GraphQL Demo
 [pydantic](pydantic/) | 17.0.1.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Utility addon to ease mapping between Pydantic and Odoo models
@@ -8534,6 +8537,7 @@ addon | version | maintainers | summary
 [web_widget_numeric_step](web_widget_numeric_step/) | 17.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Web Widget Numeric Step
 [web_widget_open_tab](web_widget_open_tab/) | 17.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | <a href='https://github.com/robyf70'><img src='https://github.com/robyf70.png' width='32' height='32' style='border-radius:50%;' alt='robyf70'/></a> | Allow to draw plotly charts.
+[web_widget_popover](web_widget_popover/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Render an icon that displays the field content in a popover
 [web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.1.0.1 |  | unify the product and name into a single column
 [web_widget_section_and_note_text_scrollable](web_widget_section_and_note_text_scrollable/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Make the text field of Section and Note widget scrollable
 [web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.

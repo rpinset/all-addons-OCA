@@ -4,7 +4,7 @@
 {
     "name": "Mail Gateway",
     "summary": "Base module for gateway communications",
-    "version": "17.0.1.0.4",
+    "version": "17.0.1.0.5",
     "license": "AGPL-3",
     "author": "Creu Blanca,Dixmit,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/social",
@@ -15,11 +15,13 @@
         "wizards/mail_message_gateway_link.xml",
         "wizards/mail_message_gateway_send.xml",
         "wizards/mail_guest_manage.xml",
+        "wizards/mail_resend_message_views.xml",
         "security/security.xml",
         "security/ir.model.access.csv",
         "views/mail_gateway.xml",
         "views/res_partner_gateway_channel.xml",
         "views/mail_guest_views.xml",
+        "views/mail_notification_views.xml",
     ],
     "assets": {
         "web.assets_backend": [
