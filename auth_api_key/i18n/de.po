@@ -6,79 +6,81 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-10-22 10:42+0000\n"
+"Last-Translator: Bastian Günther <mail@bastian-guenther.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: auth_api_key
 #: model:ir.model,name:auth_api_key.model_auth_api_key
 msgid "API Key"
-msgstr ""
+msgstr "API-Schlüssel"
 
 #. module: auth_api_key
 #: model:ir.model.constraint,message:auth_api_key.constraint_auth_api_key_name_uniq
 msgid "Api Key name must be unique."
-msgstr ""
+msgstr "Der Name des API-Schlüssels muss eindeutig sein."
 
 #. module: auth_api_key
 #: model:ir.actions.act_window,name:auth_api_key.auth_api_key_act_window
 #: model:ir.ui.menu,name:auth_api_key.auth_api_key_menu
 msgid "Auth Api Key"
-msgstr ""
+msgstr "Authentifizierungs-API-Schlüssel"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Erstellt von"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Erstellt am"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigename"
 
 #. module: auth_api_key
 #: model:ir.model,name:auth_api_key.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "HTTP-Routing"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__key
 msgid "Key"
-msgstr ""
+msgstr "Schlüssel"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Zuletzt geändert am"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zuletzt aktualisiert von"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zuletzt aktualisiert am"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__name
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #. module: auth_api_key
 #: model:ir.model.fields,help:auth_api_key.field_auth_api_key__key
@@ -86,13 +88,15 @@ msgid ""
 "The API key. Enter a dummy value in this field if it is\n"
 "        obtained from the server environment configuration."
 msgstr ""
+"Der API-Schlüssel. Tragen Sie einen Platzhalterwert in dieses Feld ein, wenn "
+"der Schlüssel über die Server-Umgebungskonfiguration bereitgestellt wird."
 
 #. module: auth_api_key
 #. odoo-python
 #: code:addons/auth_api_key/models/auth_api_key.py:0
 #, python-format
 msgid "The key %s is not allowed"
-msgstr ""
+msgstr "Der Schlüssel %s ist nicht erlaubt"
 
 #. module: auth_api_key
 #: model:ir.model.fields,help:auth_api_key.field_auth_api_key__user_id
@@ -100,15 +104,17 @@ msgid ""
 "The user used to process the requests authenticated by\n"
 "        the api key"
 msgstr ""
+"Der Benutzer, der zur Verarbeitung der durch den API-Schlüssel "
+"authentifizierten Anfragen verwendet wird"
 
 #. module: auth_api_key
 #: model:ir.model.fields,field_description:auth_api_key.field_auth_api_key__user_id
 msgid "User"
-msgstr ""
+msgstr "Benutzer"
 
 #. module: auth_api_key
 #. odoo-python
 #: code:addons/auth_api_key/models/auth_api_key.py:0
 #, python-format
 msgid "User is not allowed"
-msgstr ""
+msgstr "Benutzer ist nicht erlaubt"

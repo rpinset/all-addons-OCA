@@ -1188,7 +1188,7 @@ addon | version | maintainers | summary
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 16.0.1.1.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Account Payment Terms Discount
 [account_payment_term_extension](account_payment_term_extension/) | 16.0.1.0.4 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
-[account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Term Partner Holiday
+[account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Term Partner Holiday
 [account_payment_term_restriction](account_payment_term_restriction/) | 16.0.1.0.0 |  | Restricts the usage of Payment Terms Journal Entries
 [account_payment_term_restriction_purchase](account_payment_term_restriction_purchase/) | 16.0.1.0.0 |  | Restricts the usage of Payment Terms on POs
 [account_payment_term_restriction_sale](account_payment_term_restriction_sale/) | 16.0.1.0.0 |  | Restricts the usage of Payment Terms on SOs
@@ -5363,7 +5363,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 16.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 16.0.2.2.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 16.0.1.0.2 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.4.0 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.4.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
@@ -6081,6 +6081,7 @@ addon | version | maintainers | summary
 [stock_owner_restriction](stock_owner_restriction/) | 16.0.1.1.2 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 16.0.1.1.0 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 16.0.3.2.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Auto create lots for incoming pickings
+[stock_picking_auto_create_lot_qty](stock_picking_auto_create_lot_qty/) | 16.0.1.0.0 |  | Auto batch generation by quantity
 [stock_picking_auto_create_lot_sequence](stock_picking_auto_create_lot_sequence/) | 16.0.1.0.0 |  | Stock Picking Auto Create Lot Sequence
 [stock_picking_availability_filter](stock_picking_availability_filter/) | 16.0.1.0.0 |  | Adds availability filters to the transfers tree view
 [stock_picking_back2draft](stock_picking_back2draft/) | 16.0.1.0.0 |  | Reopen cancelled pickings
@@ -7144,7 +7145,7 @@ addon | version | maintainers | summary
 [pos_product_cost_security](pos_product_cost_security/) | 16.0.1.0.0 |  | Compatibility between Point of Sale and Product Cost Security
 [product_abc_classification](product_abc_classification/) | 16.0.2.0.0 |  | ABC classification for sales and warehouse management
 [product_abc_classification_sale_stock](product_abc_classification_sale_stock/) | 16.0.1.0.2 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> <a href='https://github.com/lmarion-source'><img src='https://github.com/lmarion-source.png' width='32' height='32' style='border-radius:50%;' alt='lmarion-source'/></a> | Compute ABC classification from the number of delivered sale order line by product
-[product_assortment](product_assortment/) | 16.0.2.0.1 |  | Adds the ability to manage products assortment
+[product_assortment](product_assortment/) | 16.0.2.0.2 |  | Adds the ability to manage products assortment
 [product_attachment_link](product_attachment_link/) | 16.0.1.0.0 |  | Product Attachment Link
 [product_attachment_zipped_download](product_attachment_zipped_download/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Product Attachment Zipped Download
 [product_attribute_archive](product_attribute_archive/) | 16.0.1.0.0 |  | Add an active field on product attributes
@@ -7505,9 +7506,9 @@ addon | version | maintainers | summary
 [project_stock](project_stock/) | 16.0.1.3.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
 [project_stock_analytic_tag](project_stock_analytic_tag/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Analytic Tag
 [project_stock_product_set](project_stock_product_set/) | 16.0.2.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Product Set
-[project_tag_hierarchy](project_tag_hierarchy/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
-[project_tag_multicompany](project_tag_multicompany/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Multicompany
-[project_tag_security](project_tag_security/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Security
+[project_tag_hierarchy](project_tag_hierarchy/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
+[project_tag_multicompany](project_tag_multicompany/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Multicompany
+[project_tag_security](project_tag_security/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Security
 [project_task_add_very_high](project_task_add_very_high/) | 16.0.1.1.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Adds extra options 'High' and 'Very High' on tasks
 [project_task_code](project_task_code/) | 16.0.1.1.0 |  | Sequential Code for Tasks
 [project_task_code_portal](project_task_code_portal/) | 16.0.1.1.0 |  | Use custom task code in customer portal
@@ -8091,6 +8092,7 @@ addon | version | maintainers | summary
 [report_context](report_context/) | 16.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 16.0.2.1.1 |  | Base module to create csv report
 [report_display_name_in_footer](report_display_name_in_footer/) | 16.0.1.1.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Show document name in report footer
+[report_footer_html](report_footer_html/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Show HTML content in desired Footer Reports
 [report_generate_helper](report_generate_helper/) | 16.0.1.0.0 |  | Helper to easily generate report
 [report_label](report_label/) | 16.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Print configurable self-adhesive labels reports
 [report_paperformat_company_dependent](report_paperformat_company_dependent/) | 16.0.1.0.0 |  | Report Paperformat Company Dependent
@@ -8261,7 +8263,7 @@ addon | version | maintainers | summary
 [attachment_queue](attachment_queue/) | 16.0.1.2.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
 [attachment_synchronize](attachment_synchronize/) | 16.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Attachment Synchronize
 [attachment_unindex_content](attachment_unindex_content/) | 16.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
-[auditlog](auditlog/) | 16.0.3.0.3 |  | Audit Log
+[auditlog](auditlog/) | 16.0.3.0.4 |  | Audit Log
 [auto_backup](auto_backup/) | 16.0.1.0.3 |  | Backups database
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 16.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Automatically delete old mail messages and attachments
 [base_changeset](base_changeset/) | 16.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Track record changesets
@@ -8297,6 +8299,7 @@ addon | version | maintainers | summary
 [fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.1.6.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 16.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 16.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
+[field_vector](field_vector/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
 [html_image_url_extractor](html_image_url_extractor/) | 16.0.1.0.0 |  | Extract images found in any HTML field
 [html_text](html_text/) | 16.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 16.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
@@ -8638,6 +8641,7 @@ addon | version | maintainers | summary
 [mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked
 [misc_settings](misc_settings/) | 16.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Miscellaneous settings to be an anchor for your custom settings
 [multi_step_wizard](multi_step_wizard/) | 16.0.1.0.0 |  | Multi-Steps Wizards
+[multisearch_field](multisearch_field/) | 16.0.1.0.0 |  | add modification on search to search multi_value with separator
 [sequence_check_digit](sequence_check_digit/) | 16.0.1.0.1 |  | Adds a check digit on sequences
 [sequence_reset_period](sequence_reset_period/) | 16.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
 [server_action_mass_edit](server_action_mass_edit/) | 16.0.2.1.1 |  | Mass Editing
@@ -9491,6 +9495,7 @@ addon | version | maintainers | summary
 [web_advanced_search](web_advanced_search/) | 16.0.1.0.6 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Easier and more powerful searching tools
 [web_apply_field_style](web_apply_field_style/) | 16.0.1.0.1 |  | Apply css class style to fields from a dict parameters
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 16.0.1.1.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
+[web_chatter_camera](web_chatter_camera/) | 16.0.1.0.0 |  | Allow to use the camera on mobile views for adding attachments
 [web_chatter_position](web_chatter_position/) | 16.0.1.0.5 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | Add an option to change the chatter position
 [web_company_color](web_company_color/) | 16.0.1.2.3 |  | Web Company Color
 [web_copy_confirm](web_copy_confirm/) | 16.0.1.0.0 |  | Show confirmation dialogue before copying records

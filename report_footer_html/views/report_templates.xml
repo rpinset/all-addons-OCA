@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Moduon Team
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <template id="footer_html_template">
+        <div t-if="not is_html_empty(footer_html)" t-out="footer_html" class="mt-1" />
+    </template>
+
+    <template
+        id="external_layout_striped_footer_html"
+        inherit_id="web.external_layout_striped"
+        priority="999"
+    >
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <t t-call="report_footer_html.footer_html_template" />
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_boxed_footer_html"
+        inherit_id="web.external_layout_boxed"
+        priority="999"
+    >
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <t t-call="report_footer_html.footer_html_template" />
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_bold_footer_html"
+        inherit_id="web.external_layout_bold"
+        priority="999"
+    >
+        <xpath expr="//span[@t-field='company.report_footer']/../.." position="before">
+            <t t-call="report_footer_html.footer_html_template" />
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_standard_footer_html"
+        inherit_id="web.external_layout_standard"
+        priority="999"
+    >
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <t t-call="report_footer_html.footer_html_template" />
+        </xpath>
+    </template>
+</odoo>

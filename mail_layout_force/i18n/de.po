@@ -6,115 +6,117 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-10-22 10:42+0000\n"
+"Last-Translator: Bastian Günther <mail@bastian-guenther.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Erstellt von"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Erstellt am"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigename"
 
 #. module: mail_layout_force
 #: model:ir.model,name:mail_layout_force.model_email_layout_mapping
 msgid "Email Layout Mapping"
-msgstr ""
+msgstr "E-Mail-Layout-Zuordnung"
 
 #. module: mail_layout_force
 #: model:ir.model,name:mail_layout_force.model_mail_template
 msgid "Email Templates"
-msgstr ""
+msgstr "E-Mail-Vorlagen"
 
 #. module: mail_layout_force
 #: model:ir.model,name:mail_layout_force.model_mail_thread
 msgid "Email Thread"
-msgstr ""
+msgstr "E-Mail-Thread"
 
 #. module: mail_layout_force
 #: model:ir.model,name:mail_layout_force.model_mail_compose_message
 msgid "Email composition wizard"
-msgstr ""
+msgstr "Assistent zur E-Mail-Erstellung"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_mail_template__force_email_layout_id
 msgid "Force Layout"
-msgstr ""
+msgstr "Layout erzwingen"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,help:mail_layout_force.field_mail_template__force_email_layout_id
 msgid "Force a mail layout for this template."
-msgstr ""
+msgstr "Ein E-Mail-Layout für diese Vorlage erzwingen."
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Zuletzt geändert am"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zuletzt aktualisiert von"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zuletzt aktualisiert am"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__layout_id
 msgid "Layout"
-msgstr ""
+msgstr "Layout"
 
 #. module: mail_layout_force
 #: model_terms:ir.ui.view,arch_db:mail_layout_force.view_ir_ui_view_form_inherit
 msgid "Layout Mapping"
-msgstr ""
+msgstr "Layout-Zuordnung"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_ir_ui_view__layout_mapping_line_ids
 msgid "Layout Mapping Line"
-msgstr ""
+msgstr "Layout-Zuordnungszeile"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__model_ids
 msgid "Models"
-msgstr ""
+msgstr "Modelle"
 
 #. module: mail_layout_force
 #: model:ir.model.fields,help:mail_layout_force.field_email_layout_mapping__substitute_layout_id
 msgid "Select a target layout."
-msgstr ""
+msgstr "Wählen Sie ein Ziellayout aus."
 
 #. module: mail_layout_force
 #: model:ir.model.fields,help:mail_layout_force.field_email_layout_mapping__model_ids
 msgid "Select models that the swapping applies to."
-msgstr ""
+msgstr "Wählen Sie Modelle aus, auf die der Austausch angewendet werden soll."
 
 #. module: mail_layout_force
 #: model:ir.model.fields,field_description:mail_layout_force.field_email_layout_mapping__substitute_layout_id
 msgid "Substitute Layout"
-msgstr ""
+msgstr "Ersatzlayout"
 
 #. module: mail_layout_force
 #: model:ir.model,name:mail_layout_force.model_ir_ui_view
 msgid "View"
-msgstr ""
+msgstr "Ansicht"

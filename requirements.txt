@@ -322,6 +322,7 @@ dataclasses
 dnspython
 josepy
 mako
+numpy
 odoo_test_helper
 odoorpc
 openpyxl
