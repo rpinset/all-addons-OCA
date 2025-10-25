@@ -1005,9 +1005,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 42ab894548fc3e99231fd83cc1c7404c4c6b5c8e
+commit c2fcd1132a80343f82779eef1e4716dacc08561f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 3 13:11:27 2025 +0000
+Date:   Thu Oct 23 16:50:21 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1710,11 +1710,16 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 184df0a4a077c549ecbeff3d38d5e2639ee56995
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 17 14:36:14 2025 +0000
+commit 68b9db799a6a6b7c4cabf68ddfe4a7af08b51723
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 23 06:53:24 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (24 of 24 strings)
+    
+    Translation: web-14.0/web-14.0-web_responsive
+    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_responsive/it/
 
 
 ## website
