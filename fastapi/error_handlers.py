@@ -29,7 +29,7 @@ def convert_exception_to_status_body(exc: Exception) -> tuple[int, dict]:
         status_code = exc.status_code
         details = exc.detail
     elif isinstance(exc, RequestValidationError):
-        status_code = status.HTTP_422_UNPROCESSABLE_ENTITY
+        status_code = status.HTTP_422_UNPROCESSABLE_CONTENT
         details = jsonable_encoder(exc.errors())
     elif isinstance(exc, WebSocketRequestValidationError):
         status_code = status.WS_1008_POLICY_VIOLATION

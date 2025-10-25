@@ -3,12 +3,12 @@
 {
     "name": "Stock Move Line Qty Picked",
     "summary": "Separate quantity picked from the reserved quantity",
-    "version": "18.0.1.2.0",
+    "version": "18.0.1.2.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-workflow",
-    "author": "Camptocamp, Odoo Community Association (OCA)",
-    "maintainers": ["grindtildeath"],
+    "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
+    "maintainers": ["grindtildeath", "jbaudoux"],
     "license": "AGPL-3",
     "depends": [
         "stock",

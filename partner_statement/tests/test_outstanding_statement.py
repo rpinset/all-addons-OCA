@@ -136,6 +136,7 @@ class TestOutstandingStatement(TransactionCase):
             [
                 ("id", "!=", copy_account.id),
                 ("account_type", "=", wizard.account_type),
+                ("company_ids", "in", self.env.company.ids),
             ],
         )
         wizard.excluded_accounts_selector = ", ".join(

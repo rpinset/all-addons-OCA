@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: account_receipt_journal
+#: model:ir.model,name:account_receipt_journal.model_account_chart_template
+msgid "Account Chart Template"
+msgstr ""
+
+#. module: account_receipt_journal
 #: model:ir.model.fields,field_description:account_receipt_journal.field_account_journal__receipts
 msgid "Exclusive to Receipts"
 msgstr ""
@@ -37,6 +42,12 @@ msgstr ""
 
 #. module: account_receipt_journal
 #. odoo-python
+#: code:addons/account_receipt_journal/models/account_chart_template.py:0
+msgid "P-REC"
+msgstr ""
+
+#. module: account_receipt_journal
+#. odoo-python
 #: code:addons/account_receipt_journal/models/account_move.py:0
 msgid ""
 "Purchase Receipt must use a Receipt Journal because there is already a "
@@ -44,7 +55,8 @@ msgid ""
 msgstr ""
 
 #. module: account_receipt_journal
-#: model:account.journal,name:account_receipt_journal.purchase_receipts_journal
+#. odoo-python
+#: code:addons/account_receipt_journal/models/account_chart_template.py:0
 msgid "Purchase Receipts Journal"
 msgstr ""
 
@@ -61,6 +73,12 @@ msgstr ""
 
 #. module: account_receipt_journal
 #. odoo-python
+#: code:addons/account_receipt_journal/models/account_chart_template.py:0
+msgid "S-REC"
+msgstr ""
+
+#. module: account_receipt_journal
+#. odoo-python
 #: code:addons/account_receipt_journal/models/account_move.py:0
 msgid ""
 "Sale Receipt must use a Receipt Journal because there is already a Receipt "
@@ -68,7 +86,8 @@ msgid ""
 msgstr ""
 
 #. module: account_receipt_journal
-#: model:account.journal,name:account_receipt_journal.sale_receipts_journal
+#. odoo-python
+#: code:addons/account_receipt_journal/models/account_chart_template.py:0
 msgid "Sale Receipts Journal"
 msgstr ""
 

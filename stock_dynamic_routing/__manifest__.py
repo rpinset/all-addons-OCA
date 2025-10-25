@@ -6,13 +6,11 @@
     "maintainers": ["jbaudoux"],
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "category": "Warehouse Management",
-    "version": "18.0.1.0.2",
+    "version": "18.0.1.1.0",
     "license": "AGPL-3",
     "depends": [
         # core
         "stock",
-        # OCA/stock-logistics-warehouse
-        "stock_location_is_sublocation",
     ],
     "demo": [
         "demo/stock_location_demo.xml",

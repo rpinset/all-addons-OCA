@@ -1,66 +1,14 @@
 # Copyright 2020 Camptocamp
 # Copyright 2025 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+import datetime
+
 from freezegun import freeze_time
 
-from odoo.addons.base.tests.common import BaseCommon
+from .common import PartnerDeliveryWindowCommon
 
 
-class TestPartnerDeliveryWindow(BaseCommon):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.customer_anytime = cls.env["res.partner"].create(
-            {"name": "Anytime", "delivery_time_preference": "anytime"}
-        )
-        cls.customer_working_days = cls.env["res.partner"].create(
-            {"name": "Working Days", "delivery_time_preference": "workdays"}
-        )
-        cls.customer_time_window = cls.env["res.partner"].create(
-            {
-                "name": "Time Window",
-                "delivery_time_preference": "time_windows",
-                "delivery_time_window_ids": [
-                    (
-                        0,
-                        0,
-                        {
-                            "time_window_start": 0.00,
-                            "time_window_end": 23.99,
-                            "time_window_weekday_ids": [
-                                (
-                                    6,
-                                    0,
-                                    [
-                                        cls.env.ref(
-                                            "base_time_window.time_weekday_thursday"
-                                        ).id,
-                                        cls.env.ref(
-                                            "base_time_window.time_weekday_saturday"
-                                        ).id,
-                                    ],
-                                )
-                            ],
-                        },
-                    )
-                ],
-            }
-        )
-        cls.product = cls.env.ref("product.product_product_9")
-        cls.picking_type_delivery = cls.env.ref("stock.picking_type_out")
-        cls.location_stock = cls.env.ref("stock.stock_location_stock")
-        cls.location_customers = cls.env.ref("stock.stock_location_customers")
-
-    def _create_delivery_picking(self, partner):
-        return self.env["stock.picking"].create(
-            {
-                "partner_id": partner.id,
-                "location_id": self.location_stock.id,
-                "location_dest_id": self.location_customers.id,
-                "picking_type_id": self.picking_type_delivery.id,
-            }
-        )
-
+class TestPartnerDeliveryWindow(PartnerDeliveryWindowCommon):
     @freeze_time("2020-04-02")  # Thursday
     def test_delivery_window_warning(self):
         # No warning with anytime
@@ -89,6 +37,13 @@ class TestPartnerDeliveryWindow(BaseCommon):
         time_window_picking._compute_partner_delivery_window_warning()
         self.assertIn(
             "the partner is set to prefer deliveries on following time windows",
+            time_window_picking.partner_delivery_window_warning,
+        )
+        # Warning when no scheduled date
+        time_window_picking.scheduled_date = False
+        time_window_picking._compute_partner_delivery_window_warning()
+        self.assertIn(
+            "No scheduled date is set on the picking, cannot check",
             time_window_picking.partner_delivery_window_warning,
         )
 
@@ -197,3 +152,23 @@ class TestPartnerDeliveryWindow(BaseCommon):
 
     def test_weekdays_time_window(self):
         self.assertEqual(self.customer_time_window.delivery_time_weekdays, {3, 5})
+
+    def test_is_in_delivery_window(self):
+        # window for Thu and Sat
+        self.customer_time_window.delivery_time_window_ids.write(
+            {"time_window_start": 10.0, "time_window_end": 16.0}
+        )
+        # Friday
+        date = datetime.date.fromisoformat("2020-04-03")
+        self.assertFalse(self.customer_time_window.is_in_delivery_window(date))
+        # Saturday
+        date = datetime.date.fromisoformat("2020-04-04")
+        self.assertTrue(self.customer_time_window.is_in_delivery_window(date))
+        date = datetime.datetime.fromisoformat("2020-04-04 09:00:00")
+        self.assertFalse(self.customer_time_window.is_in_delivery_window(date))
+        date = datetime.datetime.fromisoformat("2020-04-04 10:00:00")
+        self.assertTrue(self.customer_time_window.is_in_delivery_window(date))
+        date = datetime.datetime.fromisoformat("2020-04-04 16:00:00")
+        self.assertTrue(self.customer_time_window.is_in_delivery_window(date))
+        date = datetime.datetime.fromisoformat("2020-04-04 17:00:00")
+        self.assertFalse(self.customer_time_window.is_in_delivery_window(date))
