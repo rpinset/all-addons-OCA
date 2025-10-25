@@ -1738,7 +1738,7 @@ addon | version | maintainers | summary
 [sale_attached_product](sale_attached_product/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.2.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.2.0.0 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 17.0.2.1.0 |  | Blanket Orders
 [sale_block_no_stock](sale_block_no_stock/) | 17.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Block Sales if products has not enough Quantity based on a chosen field
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
@@ -1765,6 +1765,7 @@ addon | version | maintainers | summary
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 17.0.1.0.0 |  | Improves Sales Order invoiced/to invoice amount calculation based on product quantities when the company setting is enabled.
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 17.0.2.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_date](sale_order_line_date/) | 17.0.1.0.2 |  | Adds a commitment date to each sale order line.
+[sale_order_line_description](sale_order_line_description/) | 17.0.1.0.0 |  | Sale order line description
 [sale_order_line_input](sale_order_line_input/) | 17.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_price_history](sale_order_line_price_history/) | 17.0.1.1.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
@@ -1859,6 +1860,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_claim](crm_claim/) | 17.0.1.0.1 |  | Track your customers/vendors claims and grievances.
+[crm_exception](crm_exception/) | 17.0.1.0.0 |  | CRM Exception
 [crm_industry](crm_industry/) | 17.0.1.0.1 |  | Link leads/opportunities to industries
 [crm_lead_code](crm_lead_code/) | 17.0.1.1.1 |  | Sequential Code for Leads / Opportunities
 [crm_lead_currency](crm_lead_currency/) | 17.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | On leads/opportunities, add the amount in the customer's currency.
@@ -3236,7 +3238,7 @@ addon | version | maintainers | summary
 [crm_tag_multi_company](crm_tag_multi_company/) | 17.0.1.0.0 |  | This module add multi-company management to crm tag
 [mail_multicompany](mail_multicompany/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 17.0.1.0.0 | <a href='https://github.com/Olivier-LAURENT'><img src='https://github.com/Olivier-LAURENT.png' width='32' height='32' style='border-radius:50%;' alt='Olivier-LAURENT'/></a> | Mail Template Multi Company
-[partner_multi_company](partner_multi_company/) | 17.0.1.0.1 |  | Select individually the partner visibility on each company
+[partner_multi_company](partner_multi_company/) | 17.0.1.0.2 |  | Select individually the partner visibility on each company
 [product_multi_company](product_multi_company/) | 17.0.2.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 17.0.1.0.0 |  | Intercompany PO/SO rules
@@ -4893,7 +4895,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.2 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 17.0.1.0.3 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.2.1 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.2.2 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 17.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 17.0.1.0.1 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.10.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
@@ -4912,7 +4914,7 @@ addon | version | maintainers | summary
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
 [l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
-[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
+[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.1 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
 [l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.3.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
@@ -5664,6 +5666,7 @@ addon | version | maintainers | summary
 [stock_change_qty_reason](stock_change_qty_reason/) | 17.0.1.0.0 |  | Stock Quantity Change Reason
 [stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.1 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 17.0.1.0.0 |  | Allows to create demand estimates.
+[stock_exception](stock_exception/) | 17.0.1.0.0 |  | Custom exceptions on stock picking
 [stock_helper](stock_helper/) | 17.0.1.1.1 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 17.0.1.3.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
@@ -6996,7 +6999,7 @@ addon | version | maintainers | summary
 [mail_activity_done](mail_activity_done/) | 17.0.1.0.0 |  | Mail Activity Done
 [mail_activity_reminder](mail_activity_reminder/) | 17.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.2 |  | Add Teams to Activities
-[mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.0 |  | Adding attachment on the object by sending this one
+[mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.1 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 17.0.1.0.0 |  | Module to use attach existing attachment for account module
 [mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.1.0 |  | Add headers to Odoo's mails indicating they are autogenerated
 [mail_autosubscribe](mail_autosubscribe/) | 17.0.1.0.0 |  | Automatically subscribe partners to its company's business documents
@@ -7024,7 +7027,7 @@ addon | version | maintainers | summary
 [mail_tracking](mail_tracking/) | 17.0.1.0.4 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 17.0.1.0.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 17.0.1.0.0 |  | Improve mass mailing email tracking
-[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 17.0.1.0.0 |  | Track metadata for GDPR compliance
+[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 17.0.1.0.1 |  | Track metadata for GDPR compliance
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 17.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 17.0.1.0.1 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
@@ -7075,8 +7078,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 17.0.1.5.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
-[fs_attachment_s3](fs_attachment_s3/) | 17.0.1.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
+[fs_attachment](fs_attachment/) | 17.0.1.6.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
+[fs_attachment_s3](fs_attachment_s3/) | 17.0.1.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
 [fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
@@ -7086,7 +7089,7 @@ addon | version | maintainers | summary
 [fs_product_brand_multi_image](fs_product_brand_multi_image/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link images to product brands
 [fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
-[fs_storage](fs_storage/) | 17.0.2.0.4 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_storage](fs_storage/) | 17.0.2.1.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model
 [storage_backend](storage_backend/) | 17.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 
@@ -7340,6 +7343,7 @@ addon | version | maintainers | summary
 [base_cron_exclusion](base_cron_exclusion/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_exception](base_exception/) | 17.0.1.1.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 17.0.1.1.0 |  | Up to date Fontawesome resources.
+[base_fontawesome_web_editor](base_fontawesome_web_editor/) | 17.0.1.0.1 |  | Integration between base_fontawesome and web_editor for FontAwesome >= 6.7.2 support.
 [base_force_record_noupdate](base_force_record_noupdate/) | 17.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 17.0.1.0.0 |  | Customizations of Many2many
 [base_model_restrict_update](base_model_restrict_update/) | 17.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Update Restrict Model
