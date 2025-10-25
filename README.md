@@ -349,9 +349,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4477104c4d1269da47d506afc0e0e00c46b24bc3
+commit 5d8188fe0898de09fa1da890ecd6b2af6e1f4c5f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 9 07:10:01 2025 +0000
+Date:   Thu Oct 23 10:27:16 2025 +0000
 
     [BOT] post-merge updates
 
@@ -467,16 +467,11 @@ Date:   Mon Oct 20 15:41:18 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit b6344c001db95944518266721c99dfe0fac2830d
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Thu Sep 25 18:53:53 2025 +0000
+commit cef263139277f4f4dde0e649773d0749f68b98ac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 22 06:19:25 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 3.1% (1 of 32 strings)
-    
-    Translation: edi-15.0/edi-15.0-edi_voxel_account_invoice_oca
-    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-edi_voxel_account_invoice_oca/ca/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1246,9 +1241,9 @@ Date:   Sun Feb 2 20:17:28 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit e2472f970c28d424918049505d83f3d9f1f1de2d
+commit aa7e6c3e9873a25da62344b45889772d16dc078d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 5 16:57:08 2025 +0000
+Date:   Thu Oct 23 07:52:17 2025 +0000
 
     [BOT] post-merge updates
 

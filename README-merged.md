@@ -1921,6 +1921,7 @@ addon | version | maintainers | summary
 [sale_stock_picking_note](sale_stock_picking_note/) | 15.0.1.0.1 |  | Add picking note in sale and purchase order
 [sale_stock_return_request](sale_stock_return_request/) | 15.0.1.1.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Sale Stock Return Request
 [sale_stock_secondary_unit](sale_stock_secondary_unit/) | 15.0.1.0.5 |  | Get product quantities in a secondary unit
+[sale_stock_warehouse_partner](sale_stock_warehouse_partner/) | 15.0.1.0.0 |  | Allows to set a warehouse to a partner
 [sale_substate](sale_substate/) | 15.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 15.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_triple_discount](sale_triple_discount/) | 15.0.1.0.1 |  | Manage triple discount on sale order lines
@@ -2729,7 +2730,7 @@ addon | version | maintainers | summary
 [account_invoice_facturx](account_invoice_facturx/) | 15.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [base_edi](base_edi/) | 15.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 15.0.1.2.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 15.0.1.2.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
 [base_ubl](base_ubl/) | 15.0.1.0.1 |  | Base module for Universal Business Language (UBL)
 [edi_account_oca](edi_account_oca/) | 15.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define EDI Configuration for Account Moves
 [edi_backend_partner_oca](edi_backend_partner_oca/) | 15.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Add the a partner field to EDI backend
@@ -7048,7 +7049,7 @@ addon | version | maintainers | summary
 [project_task_stage_state](project_task_stage_state/) | 15.0.1.0.1 |  | Restore State attribute removed from Project Stages in 8.0
 [project_template](project_template/) | 15.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Templates
 [project_template_milestone](project_template_milestone/) | 15.0.1.0.1 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds function to copy of milestones when creating a project from template
-[project_timeline](project_timeline/) | 15.0.2.0.1 |  | Timeline view for projects
+[project_timeline](project_timeline/) | 15.0.2.0.2 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 15.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 15.0.1.1.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Project timesheet time control
 [project_type](project_type/) | 15.0.1.0.1 |  | Project Types
