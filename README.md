@@ -811,16 +811,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 2550cd8e8813e00b57f698a4526aabdbd99ae61f
+commit eb0594e9bbadc6645f5b3630e0e3d32a648fef76
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 9 10:19:48 2025 +0000
+Date:   Thu Oct 23 06:55:12 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (291 of 291 strings)
+    Currently translated at 100.0% (173 of 173 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
 
 
 ## l10n-japan
