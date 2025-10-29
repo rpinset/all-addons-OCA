@@ -69,8 +69,8 @@ msgstr "Konto"
 #: model:ir.model.fields,help:mis_builder_cash_flow.field_mis_cash_flow__account_type
 msgid ""
 "Account Type is used for information purpose, to generate country-specific "
-"legal reports, and set the rules to close a fiscal year and generate opening"
-" entries."
+"legal reports, and set the rules to close a fiscal year and generate opening "
+"entries."
 msgstr ""
 "Kontotyp används i informationssyfte, för att generera landsspecifika "
 "juridiska rapporter och ställa in reglerna för att avsluta ett räkenskapsår "
@@ -264,6 +264,11 @@ msgid "PERIOD BALANCE"
 msgstr "BALANS PERIOD"
 
 #. module: mis_builder_cash_flow
+#: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__parent_state
+msgid "Parent State"
+msgstr ""
+
+#. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__partner_id
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__partner_id
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_forecast_line_view_search
@@ -274,11 +279,6 @@ msgstr "Kontakt"
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__reconciled
 msgid "Reconciled"
 msgstr "Avstämd"
-
-#. module: mis_builder_cash_flow
-#: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__state
-msgid "State"
-msgstr "Stat"
 
 #. module: mis_builder_cash_flow
 #. odoo-python
@@ -317,3 +317,6 @@ msgstr "fjärde månaden"
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_plus_third_month
 msgid "third month"
 msgstr "tredje månaden"
+
+#~ msgid "State"
+#~ msgstr "Stat"

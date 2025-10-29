@@ -45,10 +45,6 @@ class KpiMatrixRow:
         else:
             return self._matrix.get_account_name(self.account_id)
 
-    @property
-    def row_id(self):
-        self._matrix._make_row_id(self.kpi.id, self.account_id)
-
     def iter_cell_tuples(self, cols=None):
         if cols is None:
             cols = self._matrix.iter_cols()
@@ -507,8 +503,6 @@ class KpiMatrix:
             ) or row.style_props.hide_always:
                 continue
             row_data = {
-                "row_id": row.row_id,
-                "parent_row_id": (row.parent_row and row.parent_row.row_id or None),
                 "label": row.label,
                 "description": row.description,
                 "style": self._style_model.to_css_style(row.style_props),
@@ -546,10 +540,6 @@ class KpiMatrix:
     # about semantic concepts such as periods and kpis. Having these well identified
     # methods allow us to easily spot where the conversion between the rendering and
     # semantic domain occur.
-
-    @classmethod
-    def _make_row_id(cls, kpi_id: int, account_id: int | None) -> str:
-        return f"{kpi_id}:{account_id or ''}"
 
     @classmethod
     def _make_cell_id(

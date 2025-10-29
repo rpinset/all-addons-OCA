@@ -44,6 +44,11 @@ msgid "Code Verifier"
 msgstr ""
 
 #. module: auth_oidc
+#: model:ir.model.fields,field_description:auth_oidc.field_auth_oauth_provider__end_session_endpoint
+msgid "End Session URL"
+msgstr ""
+
+#. module: auth_oidc
 #: model:ir.model.fields,field_description:auth_oidc.field_auth_oauth_provider__jwks_uri
 msgid "JWKS URL"
 msgstr ""
@@ -87,9 +92,9 @@ msgstr ""
 #. module: auth_oidc
 #: model:ir.model.fields,help:auth_oidc.field_auth_oauth_provider__token_map
 msgid ""
-"Some Oauth providers don't map keys in their responses exactly as required."
-"  It is important to ensure user_id and email at least are mapped. For "
-"OpenID Connect user_id is the sub key in the standard."
+"Some Oauth providers don't map keys in their responses exactly as required.  "
+"It is important to ensure user_id and email at least are mapped. For OpenID "
+"Connect user_id is the sub key in the standard."
 msgstr ""
 
 #. module: auth_oidc

@@ -5,7 +5,7 @@ import datetime
 import time
 
 import odoo.tests.common as common
-from odoo import fields
+from odoo import Command, fields
 from odoo.exceptions import UserError
 from odoo.tools.safe_eval import safe_eval
 
@@ -29,6 +29,17 @@ class TestAEP(common.TransactionCase):
         self.prev_year = self.curr_year - 1
         # create company
         self.company = self.res_company.create({"name": "AEP Company"})
+        self.company.currency_id = self.env["res.currency"].create(
+            [
+                {
+                    "name": "Currency AEP Test",
+                    "symbol": "CAT",
+                    "rate_ids": [
+                        Command.create({"name": "2010-10-10", "rate": 1}),
+                    ],
+                }
+            ]
+        )
         # create receivable bs account
         self.account_ar = self.account_model.create(
             {
@@ -465,3 +476,26 @@ class TestAEP(common.TransactionCase):
                 datetime.date(self.prev_year, 12, 1),
             )
         assert "Error while querying move line source" in str(cm.exception)
+
+    def test_company_rates(self):
+        currency_test = self.env["res.currency"].create(
+            [
+                {
+                    "name": "BBB",
+                    "symbol": "BBB",
+                    "rate_ids": [
+                        Command.create({"name": "2010-10-10", "rate": 1}),
+                        Command.create({"name": "2011-11-11", "rate": 2}),
+                    ],
+                }
+            ]
+        )
+
+        self.aep.currency = currency_test
+        self.aep.companies = self.company
+
+        rate = self.aep._get_company_rates(datetime.date(2010, 12, 12))
+        rate2 = self.aep._get_company_rates(datetime.date(2011, 12, 12))
+
+        self.assertEqual(rate[self.company.id][0], 1.0)
+        self.assertEqual(rate2[self.company.id][0], 2.0)

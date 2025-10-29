@@ -5,11 +5,11 @@
     "name": "Rma Lot",
     "summary": """
         Manage lot in RMA""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,BCIM,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rma",
     "depends": ["rma", "stock_picking_return_lot"],
-    "data": ["views/rma.xml"],
+    "data": ["views/rma_operation.xml", "views/rma.xml"],
     "demo": [],
 }

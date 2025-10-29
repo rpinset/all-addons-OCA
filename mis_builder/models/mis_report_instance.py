@@ -407,7 +407,12 @@ class MisReportInstancePeriod(models.Model):
         Returns an Odoo domain expression (a python list)
         compatible with the model of the query."""
         self.ensure_one()
-        return []
+        domain = []
+        if company_field := query.sudo().company_field_id:
+            query_company_ids = self.report_instance_id.query_company_ids.ids
+            assert query_company_ids
+            domain = [(company_field.name, "in", query_company_ids)]
+        return domain
 
     @api.constrains("mode", "source")
     def _check_mode_source(self):

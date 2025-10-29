@@ -972,3 +972,16 @@ class TestRmaCase(TestRma):
         self.assertEqual(
             len(set(all_rmas.mapped("delivery_move_ids.picking_id.id"))), 4
         )
+
+    def test_group_reception(self):
+        rma1 = self._create_rma(self.partner, self.product, 10, self.rma_loc)
+        rma2 = self._create_rma(self.partner, self.product, 10, self.rma_loc)
+        partner = self.res_partner.create({"name": "Partner 2 test"})
+        rma3 = self._create_rma(partner, self.product, 10, self.rma_loc)
+        (rma1 | rma2 | rma3).action_confirm()
+        self.assertTrue(rma1.procurement_group_id)
+        self.assertTrue(rma3.procurement_group_id)
+        self.assertEqual(rma1.procurement_group_id, rma1.procurement_group_id)
+        self.assertNotEqual(rma1.procurement_group_id, rma3.procurement_group_id)
+        self.assertEqual(len((rma1 | rma2).reception_move_id.picking_id), 1)
+        self.assertEqual(len((rma1 | rma2 | rma3).reception_move_id.picking_id), 2)

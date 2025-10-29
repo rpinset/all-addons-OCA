@@ -6,45 +6,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-10-27 09:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: payment_partner
 #: model:ir.model.fields.selection,name:payment_partner.selection__payment_provider__filter_mode__exclude
 msgid "Exclude"
-msgstr ""
+msgstr "Escludere"
 
 #. module: payment_partner
 #: model:ir.model.fields,field_description:payment_partner.field_payment_provider__filter_mode
 msgid "Filter Mode"
-msgstr ""
+msgstr "Modalità filtro"
 
 #. module: payment_partner
 #: model:ir.model.fields.selection,name:payment_partner.selection__payment_provider__filter_mode__global
 msgid "Global"
-msgstr ""
+msgstr "Globale"
 
 #. module: payment_partner
 #: model:ir.model.fields.selection,name:payment_partner.selection__payment_provider__filter_mode__include
 msgid "Include"
-msgstr ""
+msgstr "Includere"
 
 #. module: payment_partner
 #: model:ir.model.fields,field_description:payment_partner.field_payment_provider__partner_ids
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: payment_partner
 #: model_terms:ir.ui.view,arch_db:payment_partner.payment_provider_form_view
 msgid "Partners"
-msgstr ""
+msgstr "Partner"
 
 #. module: payment_partner
 #: model:ir.model,name:payment_partner.model_payment_provider
 msgid "Payment Provider"
-msgstr ""
+msgstr "Fornitore pagamento"
