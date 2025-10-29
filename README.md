@@ -135,11 +135,16 @@ Date:   Thu Jun 5 02:33:56 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 1ce35e97a251dc7fe368c8ad214d450976a43322
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 28 15:58:01 2025 +0000
+commit 14e0f2ed413786d22d1544e80cffc9ad498cfefd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 27 14:13:07 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: operating-unit-14.0/operating-unit-14.0-mrp_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-mrp_operating_unit/it/
 
 
 ## intrastat
@@ -153,16 +158,11 @@ Date:   Wed Jun 4 02:58:38 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 6d6e61a85edfaa24f22abee9f023a97b59a8e6a8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 15 07:55:49 2025 +0000
+commit 063d2be69049d91e02f4e441c02d71ce0e2591bc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Oct 27 18:00:31 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 73.4% (208 of 283 strings)
-    
-    Translation: mis-builder-14.0/mis-builder-14.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder/it/
+    [BOT] post-merge updates
 
 
 ## currency
@@ -273,16 +273,11 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 0c5f515da46a38ad40a8df57e47d4c573709993d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Aug 4 11:28:23 2025 +0000
+commit 33bcad90198577ef8bb7e0324a1b011ac54b1930
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 29 19:06:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 56.9% (94 of 165 strings)
-    
-    Translation: queue-14.0/queue-14.0-queue_job
-    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-queue_job/it/
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -514,11 +509,11 @@ Date:   Fri Aug 8 09:59:36 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit d72ce70d34fdd9bd3a0e483032630475d21c0030
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 14 07:58:31 2025 +0000
+commit 6370702a35e66477f5edb082f4ec1d531e40a2cd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Oct 26 18:09:53 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1005,9 +1000,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit c2fcd1132a80343f82779eef1e4716dacc08561f
+commit 4acdb6537f6da22ef036ded1bb18a27254935487
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 23 16:50:21 2025 +0000
+Date:   Tue Oct 28 18:04:49 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1724,11 +1719,11 @@ Date:   Thu Oct 23 06:53:24 2025 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 7802f0c1a2d9f935f4775b9fed3a3b2713ee6f26
+commit 42ab79581bd61575dbea0e482bd1d07de01423cc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 04:01:37 2025 +0000
+Date:   Tue Oct 28 10:00:13 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## website-cms

@@ -806,7 +806,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 14.0.4.2.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 14.0.4.3.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 14.0.4.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 14.0.3.1.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -1382,7 +1382,7 @@ addon | version | maintainers | summary
 [base_export_async](base_export_async/) | 14.0.1.1.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 14.0.1.0.2 |  | Import CSV files in the background
 [export_async_schedule](export_async_schedule/) | 14.0.1.0.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Generate and send exports by emails on a schedule
-[queue_job](queue_job/) | 14.0.3.15.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
+[queue_job](queue_job/) | 14.0.3.15.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 14.0.1.0.2 |  | Job Queue Batch
 [queue_job_context](queue_job_context/) | 14.0.1.0.1 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> | Queue Job, prepare context before enqueue keys
 [queue_job_cron](queue_job_cron/) | 14.0.2.0.0 |  | Scheduled Actions as Queue Jobs
@@ -2840,7 +2840,7 @@ addon | version | maintainers | summary
 [edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.2 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 14.0.1.6.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allows definition of exchanges via templates.
 [edi_exchange_template_party_data](edi_exchange_template_party_data/) | 14.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Glue module betweeb edi_exchange_template and edi_party_data
-[edi_oca](edi_oca/) | 14.0.1.27.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 14.0.1.27.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_party_data_oca](edi_party_data_oca/) | 14.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to configure and retrieve party information for EDI exchanges.
 [edi_pdf2data_oca](edi_pdf2data_oca/) | 14.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Module that allows to import data from a pdf
 [edi_purchase_oca](edi_purchase_oca/) | 14.0.1.1.0 |  | Define EDI Configuration for Purchase Orders
@@ -5515,7 +5515,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 14.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 14.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 14.0.2.1.0 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 14.0.1.0.2 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 14.0.1.0.3 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 14.0.2.0.4 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -9708,6 +9708,7 @@ addon | version | maintainers | summary
 [website_plausible](website_plausible/) | 14.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Track website users using plausible
 [website_require_login](website_require_login/) | 14.0.1.0.1 |  | Website Login Required
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 14.0.1.0.0 |  | Allow to select country in a dropdown
+[website_user_login_redirect_custom](website_user_login_redirect_custom/) | 14.0.1.0.0 |  | Redirect website/portal user to custom URL after login or signup
 
 [//]: # (end addons)
 
