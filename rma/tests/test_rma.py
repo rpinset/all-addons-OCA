@@ -31,6 +31,9 @@ class TestRma(BaseCommon):
         cls.product = cls.product_product.create(
             {"name": "Product test 1", "type": "consu", "is_storable": True}
         )
+        cls.product_2 = cls.product_product.create(
+            {"name": "Product test 2", "type": "consu", "is_storable": True}
+        )
         cls.account_receiv = cls.env["account.account"].create(
             {
                 "name": "Receivable",
@@ -73,6 +76,12 @@ class TestRma(BaseCommon):
         # Ensure grouping
         cls.env.company.rma_return_grouping = True
         cls.operation = cls.env.ref("rma.rma_operation_replace")
+        cls.operation_no_group = cls.operation.copy(
+            {
+                "name": f"{cls.operation.name} (no group)",
+                "prevent_delivery_grouping": True,
+            }
+        )
 
     def _create_rma(
         self, partner=None, product=None, qty=None, location=None, operation=None
@@ -870,3 +879,65 @@ class TestRmaCase(TestRma):
         )
         self.assertTrue(rma.name in mail_receipt.subject)
         self.assertTrue("products received" in mail_receipt.subject)
+
+        def test_grouping_reception_enabled(self):
+            rma_1 = self._create_rma(self.partner, self.product, 10, self.rma_loc)
+            rma_2 = self._create_rma(self.partner, self.product_2, 10, self.rma_loc)
+            (rma_1 | rma_2).action_confirm()
+            self.assertEqual(
+                rma_1.reception_move_id.picking_id, rma_2.reception_move_id.picking_id
+            )
+
+    def test_mass_return_to_customer_grouping_exception_by_operation(self):
+        """Company groups deliveries, but the operation forbids grouping
+        -> 1 picking per RMA."""
+        self.operation.prevent_delivery_grouping = True
+        # Create, confirm and receive 4 RMAs all using the "no group" operation
+        rma_1 = self._create_confirm_receive(
+            self.partner, self.product, 10, self.rma_loc, self.operation_no_group
+        )
+        rma_2 = self._create_confirm_receive(
+            self.partner, self.product, 15, self.rma_loc, self.operation_no_group
+        )
+        product2 = self.product_product.create(
+            {"name": "Product 2 test", "type": "consu", "is_storable": True}
+        )
+        rma_3 = self._create_confirm_receive(
+            self.partner, product2, 20, self.rma_loc, self.operation_no_group
+        )
+        partner = self.res_partner.create({"name": "Partner 2 test"})
+        rma_4 = self._create_confirm_receive(
+            partner, product2, 25, self.rma_loc, self.operation_no_group
+        )
+
+        all_rmas = rma_1 | rma_2 | rma_3 | rma_4
+        self.assertEqual(all_rmas.mapped("state"), ["received"] * 4)
+
+        # Mass return: despite company grouping=True, each RMA must create its own
+        # picking
+        delivery_wizard = (
+            self.env["rma.delivery.wizard"]
+            .with_context(active_ids=all_rmas.ids, rma_delivery_type="return")
+            .create({})
+        )
+        delivery_wizard.action_deliver()
+
+        pickings = all_rmas.mapped("delivery_move_ids.picking_id")
+        self.assertEqual(len(pickings), 4)
+        # Ensure each RMA is tied to a different picking
+        self.assertEqual(
+            len(set(all_rmas.mapped("delivery_move_ids.picking_id.id"))), 4
+        )
+
+    def test_group_reception(self):
+        rma1 = self._create_rma(self.partner, self.product, 10, self.rma_loc)
+        rma2 = self._create_rma(self.partner, self.product, 10, self.rma_loc)
+        partner = self.res_partner.create({"name": "Partner 2 test"})
+        rma3 = self._create_rma(partner, self.product, 10, self.rma_loc)
+        (rma1 | rma2 | rma3).action_confirm()
+        self.assertTrue(rma1.procurement_group_id)
+        self.assertTrue(rma3.procurement_group_id)
+        self.assertEqual(rma1.procurement_group_id, rma1.procurement_group_id)
+        self.assertNotEqual(rma1.procurement_group_id, rma3.procurement_group_id)
+        self.assertEqual(len((rma1 | rma2).reception_move_id.picking_id), 1)
+        self.assertEqual(len((rma1 | rma2 | rma3).reception_move_id.picking_id), 2)

@@ -71,6 +71,11 @@ msgid "Product Uom Category"
 msgstr ""
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: mrp_bom_attribute_match
 #. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
 msgid ""

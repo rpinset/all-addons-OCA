@@ -72,6 +72,11 @@ msgid "Product Uom Category"
 msgstr ""
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: mrp_bom_attribute_match
 #. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
 msgid ""
@@ -96,7 +101,9 @@ msgstr ""
 #. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/product.py:0
 msgid ""
-"The attributes you're trying to remove are used in the BoM as a match with Component (Product Template). To remove these attributes, first remove the BOM line with the matching component.\n"
+"The attributes you're trying to remove are used in the BoM as a match with "
+"Component (Product Template). To remove these attributes, first remove the "
+"BOM line with the matching component.\n"
 "Attributes: %(attributes)s\n"
 "BoM: %(bom)s"
 msgstr ""

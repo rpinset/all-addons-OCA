@@ -42,13 +42,6 @@ class KpiMatrixRow:
         else:
             return self._matrix.get_account_name(self.account_id)
 
-    @property
-    def row_id(self):
-        if not self.account_id:
-            return self.kpi.name
-        else:
-            return f"{self.kpi.name}:{self.account_id}"
-
     def iter_cell_tuples(self, cols=None):
         if cols is None:
             cols = self._matrix.iter_cols()
@@ -142,6 +135,7 @@ class KpiMatrixCell:  # noqa: B903 (immutable data class)
         self.style_props = style_props
         self.drilldown_arg = drilldown_arg
         self.val_type = val_type
+        self.cell_id = KpiMatrix._pack_cell_id(self)
 
 
 class KpiMatrix:
@@ -509,8 +503,6 @@ class KpiMatrix:
             ) or row.style_props.hide_always:
                 continue
             row_data = {
-                "row_id": row.row_id,
-                "parent_row_id": (row.parent_row and row.parent_row.row_id or None),
                 "label": row.label,
                 "description": row.description,
                 "style": self._style_model.to_css_style(row.style_props),
@@ -526,12 +518,15 @@ class KpiMatrix:
                     else:
                         val = cell.val
                     col_data = {
+                        "cell_id": cell.cell_id,
                         "val": val,
                         "val_r": cell.val_rendered,
                         "val_c": cell.val_comment,
                         "style": self._style_model.to_css_style(
                             cell.style_props, no_indent=True
                         ),
+                        # notes can not be added on 'details by account' lines
+                        "can_be_annotated": not cell.row.account_id,
                     }
                     if cell.drilldown_arg:
                         col_data["drilldown_arg"] = cell.drilldown_arg
@@ -539,3 +534,33 @@ class KpiMatrix:
             body.append(row_data)
 
         return {"header": header, "body": body}
+
+    # Logic to convert semantic coordinates (period, kpi, subkpi)
+    # to visual coordinates (cell id) and back. The rendering logic musn't know
+    # about semantic concepts such as periods and kpis. Having these well identified
+    # methods allow us to easily spot where the conversion between the rendering and
+    # semantic domain occur.
+
+    @classmethod
+    def _make_cell_id(
+        cls, kpi_id: int, account_id: int | None, period_id: int, subkpi_id: int | None
+    ) -> str:
+        return f"{kpi_id}#{account_id or ''}#{period_id}#{subkpi_id or ''}"
+
+    @classmethod
+    def _pack_cell_id(cls, cell: KpiMatrixCell) -> str:
+        return cls._make_cell_id(
+            cell.row.kpi.id,
+            cell.row.account_id,
+            cell.subcol.col.key,
+            cell.subcol.subkpi and cell.subcol.subkpi.id,
+        )
+
+    @classmethod
+    def _unpack_cell_id(cls, cell_id: str) -> tuple[int, int | None, int, int | None]:
+        kpi_id, account_id, col_key, subkpi_id = cell_id.split("#")
+        kpi_id = int(kpi_id)
+        account_id = int(account_id) if account_id else None
+        period_id = int(col_key)
+        subkpi_id = int(subkpi_id) if subkpi_id else None
+        return kpi_id, account_id, period_id, subkpi_id

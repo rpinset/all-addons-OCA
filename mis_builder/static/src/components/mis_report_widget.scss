@@ -75,3 +75,30 @@
         flex-direction: row;
     }
 }
+
+.oe_mis_builder_dropdown {
+    overflow: visible !important;
+}
+
+.oe_mis_builder_footnote {
+    font-size: 70%;
+    color: red;
+    position: relative;
+    bottom: 1ex;
+    width: 1em;
+    display: inline-block;
+    padding-right: 1px;
+}
+.oe_mis_builder_footnote_div {
+    padding-top: 1em;
+}
+
+.oe_mis_builder_footnote_table {
+    list-style: none;
+    white-space: pre-wrap;
+    display: inline-block;
+
+    td {
+        vertical-align: top;
+    }
+}

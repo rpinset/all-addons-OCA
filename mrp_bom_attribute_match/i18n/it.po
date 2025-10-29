@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 17:50+0000\n"
-"PO-Revision-Date: 2023-10-09 07:55+0000\n"
+"PO-Revision-Date: 2025-10-29 20:48+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian <http://weblate.ops404.it/projects/ooops-mrp-14-0/"
 "mrp_bom_attribute_match/it/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model,name:mrp_bom_attribute_match.model_report_mrp_report_bom_structure
-msgid "BOM Structure Report"
-msgstr "Resoconto struttura DiBa"
+msgid "BOM Overview Report"
+msgstr "Resoconto vista d'insieme DiBa"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model,name:mrp_bom_attribute_match.model_mrp_bom
@@ -45,13 +45,18 @@ msgid "Component (product template)"
 msgstr "Componente (modello prodotto)"
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Ordine di produzione"
+
+#. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__match_on_attribute_ids
 msgid "Match on Attributes"
 msgstr "Corrispondenza su attributi"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "No match on attribute has been detected for Component (Product Template) %s"
 msgstr ""
@@ -59,14 +64,14 @@ msgstr ""
 "prodotto) %s"
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__product_backup_id
 msgid "Product Backup"
 msgstr "Backup componente"
-
-#. module: mrp_bom_attribute_match
-#: model:ir.model,name:mrp_bom_attribute_match.model_product_template
-msgid "Product Template"
-msgstr "Modello prodotto"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__product_uom_category_id
@@ -74,13 +79,13 @@ msgid "Product Uom Category"
 msgstr "Categoria UdM prodotto"
 
 #. module: mrp_bom_attribute_match
-#: model:ir.model,name:mrp_bom_attribute_match.model_mrp_production
-msgid "Production Order"
-msgstr "Ordine di produzione"
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_product
+msgid "Product Variant"
+msgstr "Variante prodotto"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "Recursion error!  A product with a Bill of Material should not have itself "
 "in its BoM or child BoMs!"
@@ -89,8 +94,8 @@ msgstr ""
 "nella sua DiBa o nelle DiBa figlie!"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "Some attributes of the dynamic component are not included into production "
 "product attributes."
@@ -104,8 +109,8 @@ msgid "Technical field to store previous value of product_id"
 msgstr "Campo tecnico per preservare i valori di product_id"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/product.py:0
-#, python-format
 msgid ""
 "The attributes you're trying to remove are used in the BoM as a match with "
 "Component (Product Template). To remove these attributes, first remove the "
@@ -121,8 +126,8 @@ msgstr ""
 "DiBa: %(bom)s"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/product.py:0
-#, python-format
 msgid ""
 "This product template is used as a component in the BOMs for %(bom)s and "
 "attribute(s) %(attributes)s is not present in all such product(s), and this "
@@ -133,8 +138,8 @@ msgstr ""
 "ciò può corrompere il funzionamento della DiBa."
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "You cannot use an attribute value for attribute(s) %(attributes)s in the "
 "field “Apply on Variants” as it's the same attribute used in the field "
@@ -143,6 +148,15 @@ msgstr ""
 "Non puoi utilizzare un valore attributo degli attributi %(attributes)s nel "
 "campo “Applica alle varianti” dato che è lo stesso attributo utilizzato nel "
 "campo “Corrispondenza su attributo” relativo ai componenti %(component)s."
+
+#~ msgid "BOM Structure Report"
+#~ msgstr "Resoconto struttura DiBa"
+
+#~ msgid "Product Template"
+#~ msgstr "Modello prodotto"
+
+#~ msgid "Production Order"
+#~ msgstr "Ordine di produzione"
 
 #~ msgid "Display Name"
 #~ msgstr "Nome visualizzato"

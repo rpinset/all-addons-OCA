@@ -196,3 +196,71 @@ class TestMrpBomAttributeMatch(TestMrpBomAttributeMatchBase):
             res["lines"]["components"][0]["parent_id"],
             self.bom_id.id,
         )
+
+    def test_compute_bom_price_with_component_template_matching(self):
+        sword_cyan = self.product_sword.product_variant_ids.filtered(
+            lambda v: "Cyan" in v.display_name
+        )
+        self.assertTrue(sword_cyan, "Cyan sword variant should exist")
+
+        # Set standard prices for components to make calculation predictable
+        plastic_cyan = self.product_plastic.product_variant_ids.filtered(
+            lambda v: "Cyan" in v.display_name
+        )
+        self.assertTrue(plastic_cyan, "Cyan plastic variant should exist")
+        plastic_cyan.standard_price = 10.0
+        self.product_9.standard_price = 5.0
+
+        # Calculate BOM price for cyan sword
+        bom_price = sword_cyan._compute_bom_price(self.bom_id)
+
+        # Expected price should be:
+        # - 1 * 10.0 (plastic component with matching attribute)
+        # - 1 * 5.0 (regular component without template)
+        expected_price = 15.0
+        self.assertEqual(
+            bom_price,
+            expected_price,
+            f"BOM price should be {expected_price}, got {bom_price}",
+        )
+
+    def test_compute_bom_price_line_product_none(self):
+        # Create component with same attribute as sword but different values
+        # This will pass the attribute check but fail the combination check
+        component = self.env["product.template"].create(
+            {
+                "name": "Test Component",
+                "is_storable": True,
+            }
+        )
+
+        # Create a new attribute value that doesn't exist in sword
+        red_value = self.env["product.attribute.value"].create(
+            {"name": "Red", "attribute_id": self.product_attribute.id}
+        )
+
+        # Add the same attribute (Colour) to component but with Red value only
+        self.env["product.template.attribute.line"].create(
+            {
+                "attribute_id": self.product_attribute.id,
+                "product_tmpl_id": component.id,
+                "value_ids": [Command.set([red_value.id])],
+            }
+        )
+
+        # Create BOM with this component
+        test_bom = self._create_bom(
+            self.product_sword,
+            [dict(component_template_id=component.id, product_qty=1)],
+        )
+
+        # Use cyan sword variant - this has Cyan attribute value
+        sword_variant = self.product_sword.product_variant_ids.filtered(
+            lambda v: "Cyan" in v.display_name
+        )[0]
+
+        # This should trigger len(combination) == 0 and return False
+        bom_price = sword_variant._compute_bom_price(test_bom)
+
+        # BOM price should be 0 since the component line is ignored
+        self.assertEqual(bom_price, 0.0)

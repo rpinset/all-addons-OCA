@@ -1,3 +1,17 @@
+## 18.0.1.7.2 (2025-10-29)
+
+### Bugfixes
+
+- Fix computation of currency conversion rates ([#737](https://github.com/OCA/mis-builder/issues/737))
+
+
+## 18.0.1.5.0 (2025-10-27)
+
+### Features
+
+- Introduction of annotations on report cells. Added notes will be pinted when exporting to PDF and Excel. ([#678](https://github.com/OCA/mis-builder/issues/678))
+
+
 ## 17.0.1.0.2 (2024-11-11)
 
 ### Features

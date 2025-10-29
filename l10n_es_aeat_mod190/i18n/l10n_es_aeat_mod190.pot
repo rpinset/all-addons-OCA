@@ -189,6 +189,11 @@ msgid "AEAT 190 reports"
 msgstr ""
 
 #. module: l10n_es_aeat_mod190
+#: model:res.groups,name:l10n_es_aeat_mod190.group_aeat_mod190
+msgid "AEAT Model 190 (with access to sensitive data)"
+msgstr ""
+
+#. module: l10n_es_aeat_mod190
 #: model:ir.actions.act_window,name:l10n_es_aeat_mod190.action_l10n_es_aeat_mod190_report
 msgid "AEAT model 190"
 msgstr ""

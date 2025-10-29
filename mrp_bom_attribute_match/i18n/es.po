@@ -18,8 +18,8 @@ msgstr ""
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model,name:mrp_bom_attribute_match.model_report_mrp_report_bom_structure
-msgid "BOM Structure Report"
-msgstr "Informe sobre la estructura de la lista de materiales"
+msgid "BOM Overview Report"
+msgstr ""
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model,name:mrp_bom_attribute_match.model_mrp_bom
@@ -42,13 +42,18 @@ msgid "Component (product template)"
 msgstr "Componente (plantilla de producto)"
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_mrp_production
+msgid "Manufacturing Order"
+msgstr ""
+
+#. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__match_on_attribute_ids
 msgid "Match on Attributes"
 msgstr "Coincidencia en atributos"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "No match on attribute has been detected for Component (Product Template) %s"
 msgstr ""
@@ -56,14 +61,14 @@ msgstr ""
 "(Plantilla de producto) %s"
 
 #. module: mrp_bom_attribute_match
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__product_backup_id
 msgid "Product Backup"
 msgstr "Copia de seguridad del producto"
-
-#. module: mrp_bom_attribute_match
-#: model:ir.model,name:mrp_bom_attribute_match.model_product_template
-msgid "Product Template"
-msgstr "Plantilla de Producto"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__product_uom_category_id
@@ -71,13 +76,13 @@ msgid "Product Uom Category"
 msgstr "Categorías de UdM de productos"
 
 #. module: mrp_bom_attribute_match
-#: model:ir.model,name:mrp_bom_attribute_match.model_mrp_production
-msgid "Production Order"
-msgstr "Orden de Producción"
+#: model:ir.model,name:mrp_bom_attribute_match.model_product_product
+msgid "Product Variant"
+msgstr ""
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "Recursion error!  A product with a Bill of Material should not have itself "
 "in its BoM or child BoMs!"
@@ -87,8 +92,8 @@ msgstr ""
 "materiales secundarias!"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "Some attributes of the dynamic component are not included into production "
 "product attributes."
@@ -102,8 +107,8 @@ msgid "Technical field to store previous value of product_id"
 msgstr "Campo técnico para almacenar el valor anterior de id_producto"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/product.py:0
-#, python-format
 msgid ""
 "The attributes you're trying to remove are used in the BoM as a match with "
 "Component (Product Template). To remove these attributes, first remove the "
@@ -119,8 +124,8 @@ msgstr ""
 "Lista de materiales: %(bom)s"
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/product.py:0
-#, python-format
 msgid ""
 "This product template is used as a component in the BOMs for %(bom)s and "
 "attribute(s) %(attributes)s is not present in all such product(s), and this "
@@ -131,8 +136,8 @@ msgstr ""
 "esos productos, y esto rompería el comportamiento de la lista de materiales."
 
 #. module: mrp_bom_attribute_match
+#. odoo-python
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
-#, python-format
 msgid ""
 "You cannot use an attribute value for attribute(s) %(attributes)s in the "
 "field “Apply on Variants” as it's the same attribute used in the field "
@@ -142,3 +147,12 @@ msgstr ""
 "el campo \"Aplicar sobre variantes\" ya que es el mismo atributo utilizado "
 "en el campo \"Coincidir sobre atributo\" relacionado con el componente "
 "%(component)s."
+
+#~ msgid "BOM Structure Report"
+#~ msgstr "Informe sobre la estructura de la lista de materiales"
+
+#~ msgid "Product Template"
+#~ msgstr "Plantilla de Producto"
+
+#~ msgid "Production Order"
+#~ msgstr "Orden de Producción"
