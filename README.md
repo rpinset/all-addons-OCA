@@ -558,11 +558,11 @@ Date:   Fri Mar 14 16:55:29 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 0770f157eb8f3ea984940a896786d10841a7fb6f
+commit 7143d789ea365f636ff85b7bef99b18d491a05b1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:57:36 2025 +0000
+Date:   Wed Oct 29 12:54:12 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## hr-holidays
@@ -923,9 +923,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 85cb422d76cc574a4def70504882a08f9724fc93
+commit 04e0344aa7a751f768778e588707fd2ac6ee1994
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 21 18:00:51 2025 +0000
+Date:   Tue Oct 28 18:14:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1505,9 +1505,9 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 739466395d2e1e99810c26444bef0a5a27716917
+commit 323cb1b92ba97b657b328dc607ddc0d81b04956c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 21 11:33:58 2025 +0000
+Date:   Tue Oct 28 11:17:27 2025 +0000
 
     Translated using Weblate (Italian)
     
