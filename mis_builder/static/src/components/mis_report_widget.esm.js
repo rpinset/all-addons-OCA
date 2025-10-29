@@ -2,9 +2,13 @@
 
 import {Component, onWillStart, useState, useSubEnv} from "@odoo/owl";
 import {useBus, useService} from "@web/core/utils/hooks";
+
+import {AnnotationDialog} from "../annotation_dialog/annotation_dialog.esm";
+
 import {DateTimeInput} from "@web/core/datetime/datetime_input";
 import {SearchBar} from "@web/search/search_bar/search_bar";
 import {SearchModel} from "@web/search/search_model";
+import {_t} from "@web/core/l10n/translation";
 import {parseDate} from "@web/core/l10n/dates";
 import {registry} from "@web/core/registry";
 
@@ -15,10 +19,13 @@ export class MisReportWidget extends Component {
         this.user = useService("user");
         this.action = useService("action");
         this.view = useService("view");
+        this.dialogService = useService("dialog");
         this.JSON = JSON;
         this.state = useState({
-            mis_report_data: {header: [], body: []},
+            mis_report_data: {header: [], body: [], notes: {}},
             pivot_date: null,
+            can_edit_annotation: false,
+            can_read_annotation: false,
         });
         this.searchModel = new SearchModel(this.env, {
             user: this.user,
@@ -45,6 +52,8 @@ export class MisReportWidget extends Component {
                 "widget_search_view_id",
                 "pivot_date",
                 "widget_show_pivot_date",
+                "user_can_read_annotation",
+                "user_can_edit_annotation",
             ],
             {context: this.context}
         );
@@ -65,6 +74,8 @@ export class MisReportWidget extends Component {
 
         // Compute the report
         this.refresh();
+        this.state.can_edit_annotation = result.user_can_edit_annotation;
+        this.state.can_read_annotation = result.user_can_read_annotation;
     }
 
     get showSearchBar() {
@@ -139,6 +150,15 @@ export class MisReportWidget extends Component {
         );
     }
 
+    async refresh_annotation() {
+        this.state.mis_report_data.notes = await this.orm.call(
+            "mis.report.instance",
+            "get_notes_by_cell_id",
+            [this._instanceId()],
+            {context: this.context}
+        );
+    }
+
     async printPdf() {
         const action = await this.orm.call(
             "mis.report.instance",
@@ -167,6 +187,48 @@ export class MisReportWidget extends Component {
             {context: this.context}
         );
         this.action.doAction(action);
+    }
+
+    async _remove_annotation(cell_id) {
+        await this.orm.call(
+            "mis.report.instance.annotation",
+            "remove_annotation",
+            [cell_id, this._instanceId()],
+            {context: this.context}
+        );
+        await this.refresh_annotation();
+    }
+
+    async _save_annotation(cell_id, text) {
+        await this.orm.call(
+            "mis.report.instance.annotation",
+            "set_annotation",
+            [cell_id, this._instanceId(), text],
+            {context: this.context}
+        );
+        await this.refresh_annotation();
+    }
+
+    async annotate(event) {
+        const cell_id = event.target.dataset.cellId;
+        const note = this.state.mis_report_data.notes[cell_id];
+        const note_text = (note && note.text) || "";
+        this.dialogService.add(AnnotationDialog, {
+            title: _t("Annotate"),
+            annotationText: note_text,
+            confirm: async (text) => {
+                await this._save_annotation(cell_id, text);
+            },
+            canRemove: typeof note !== "undefined",
+            remove: async () => {
+                await this._remove_annotation(cell_id);
+            },
+        });
+    }
+
+    async remove_annotation(event) {
+        const cell_id = event.target.dataset.cellId;
+        this._remove_annotation(cell_id);
     }
 
     onDateTimeChanged(ev) {

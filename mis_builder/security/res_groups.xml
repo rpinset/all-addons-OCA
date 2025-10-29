@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="res.groups" id="group_read_annotation">
+        <field name="name">MIS Report: view annotations</field>
+    </record>
+    <record model="res.groups" id="group_edit_annotation">
+        <field name="name">MIS Report: add annotations</field>
+        <field
+            name="implied_ids"
+            eval="[Command.link(ref('mis_builder.group_read_annotation'))]"
+        />
+        <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+    </record>
+</odoo>

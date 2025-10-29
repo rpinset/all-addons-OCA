@@ -221,8 +221,8 @@ msgstr ""
 "  Achten Sie darauf, Feldnamen mit dem Präfix 'x_' zu verwenden. Eine "
 "globale 'ir.rule' wird erzeugt. Eine typische Multi-Company-Regel lautet "
 "beispielsweise \n"
-" ['|', ('x_company_id','child_of', [user.company_id.id]"
-"),('x_company_id','=',False)]."
+" ['|', ('x_company_id','child_of', [user.company_id.id]),('x_company_id','=',"
+"False)]."
 
 #. module: bi_sql_editor
 #: model_terms:ir.ui.view,arch_db:bi_sql_editor.view_bi_sql_view_form
@@ -297,9 +297,9 @@ msgid ""
 "label) pairs. For example: [('blue','Blue'), ('yellow','Yellow')]"
 msgstr ""
 "Für 'Selection' Feld.\n"
-" Liste der Optionen, angegeben als Python-Ausdruck, der eine Liste von ("
-"Schlüssel, Bezeichnung)-Paaren definiert. Beispiel: "
-"[('blue','Blue'), ('yellow','Yellow')]"
+" Liste der Optionen, angegeben als Python-Ausdruck, der eine Liste von "
+"(Schlüssel, Bezeichnung)-Paaren definiert. Beispiel: [('blue','Blue'), "
+"('yellow','Yellow')]"
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view__model_name
@@ -353,6 +353,13 @@ msgstr ""
 "Zustellungsfehler auf."
 
 #. module: bi_sql_editor
+#: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view_field__is_many2one_clickable
+msgid ""
+"If the field is of type Many2one and the option is enabled, the field will "
+"be clickable on the list view."
+msgstr ""
+
+#. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view_field.py:0
 #, python-format
@@ -360,8 +367,8 @@ msgid ""
 "Impossible to delete fields if the view is in the state 'Model Valid' or 'UI "
 "Valid'."
 msgstr ""
-"Es ist nicht möglich, Felder zu löschen, wenn sich die Ansicht im Status „"
-"Modell gültig“ oder „UI gültig“ befindet."
+"Es ist nicht möglich, Felder zu löschen, wenn sich die Ansicht im Status "
+"„Modell gültig“ oder „UI gültig“ befindet."
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view_field__index_name
@@ -387,6 +394,11 @@ msgstr "Ist Group by"
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view_field__is_index
 msgid "Is Index"
 msgstr "Ist Index"
+
+#. module: bi_sql_editor
+#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view_field__is_many2one_clickable
+msgid "Is Many2One Clickable"
+msgstr ""
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__is_materialized

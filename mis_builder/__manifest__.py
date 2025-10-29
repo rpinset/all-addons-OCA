@@ -3,7 +3,7 @@
 
 {
     "name": "MIS Builder",
-    "version": "17.0.1.3.0",
+    "version": "17.0.1.4.2",
     "category": "Reporting",
     "summary": """
         Build 'Management Information System' Reports and Dashboards
@@ -17,6 +17,7 @@
         "date_range",  # OCA/server-ux
     ],
     "data": [
+        "security/res_groups.xml",
         "wizard/mis_builder_dashboard.xml",
         "views/mis_report.xml",
         "views/mis_report_instance.xml",
@@ -32,6 +33,8 @@
             "mis_builder/static/src/components/mis_report_widget.esm.js",
             "mis_builder/static/src/components/mis_report_widget.xml",
             "mis_builder/static/src/components/mis_report_widget.scss",
+            "mis_builder/static/src/annotation_dialog/annotation_dialog.xml",
+            "mis_builder/static/src/annotation_dialog/annotation_dialog.esm.js",
         ],
         "web.report_assets_common": [
             "mis_builder/static/src/scss/report.scss",

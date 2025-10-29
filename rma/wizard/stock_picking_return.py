@@ -18,6 +18,14 @@ class ReturnPickingLine(models.TransientModel):
         store=True,
         readonly=False,
     )
+    return_product_id = fields.Many2one(
+        "product.product",
+        help="Product to be returned if it's different from the originally delivered "
+        "item.",
+    )
+    different_return_product = fields.Boolean(
+        related="rma_operation_id.different_return_product"
+    )
 
     @api.depends("wizard_id.rma_operation_id")
     def _compute_rma_operation_id(self):
@@ -34,6 +42,7 @@ class ReturnPickingLine(models.TransientModel):
             "product_uom": self.product_id.uom_id.id,
             "location_id": self.wizard_id.location_id.id or self.move_id.location_id.id,
             "operation_id": self.rma_operation_id.id,
+            "return_product_id": self.return_product_id.id,
         }
 
 
@@ -99,10 +108,6 @@ class ReturnPicking(models.TransientModel):
     def _prepare_rma_vals(self):
         partner, partner_invoice, partner_shipping = self._prepare_rma_partner_values()
         origin = self.picking_id.name
-        vals = self.env["rma"]._prepare_procurement_group_vals()
-        vals["partner_id"] = partner_shipping.id
-        vals["name"] = origin
-        group = self.env["procurement.group"].create(vals)
         return {
             "user_id": self.env.user.id,
             "partner_id": partner.id,
@@ -111,7 +116,6 @@ class ReturnPicking(models.TransientModel):
             "origin": origin,
             "picking_id": self.picking_id.id,
             "company_id": self.company_id.id,
-            "procurement_group_id": group.id,
         }
 
     def _prepare_rma_vals_list(self):

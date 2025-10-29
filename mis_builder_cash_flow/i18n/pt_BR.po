@@ -258,6 +258,11 @@ msgid "PERIOD BALANCE"
 msgstr "SALDO DO PERÍODO"
 
 #. module: mis_builder_cash_flow
+#: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__parent_state
+msgid "Parent State"
+msgstr ""
+
+#. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__partner_id
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__partner_id
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_forecast_line_view_search
@@ -268,11 +273,6 @@ msgstr "Parceiro"
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__reconciled
 msgid "Reconciled"
 msgstr "Reconciliado"
-
-#. module: mis_builder_cash_flow
-#: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__state
-msgid "State"
-msgstr "Estado"
 
 #. module: mis_builder_cash_flow
 #. odoo-python
@@ -311,6 +311,9 @@ msgstr "quarto mês"
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_plus_third_month
 msgid "third month"
 msgstr "terceiro mês"
+
+#~ msgid "State"
+#~ msgstr "Estado"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Última Modificação em"
