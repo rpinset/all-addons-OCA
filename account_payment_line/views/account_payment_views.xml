@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- explicit list view definition -->
+    <record id="view_account_payment_line_tree" model="ir.ui.view">
+        <field name="name">view.account.payment.line.list</field>
+        <field name="model">account.payment.counterpart.line</field>
+        <field name="arch" type="xml">
+            <list editable="top">
+                <field name="currency_id" column_invisible="1" />
+                <field name="name" />
+                <field
+                    name="partner_id"
+                    optional="show"
+                    options="{'no_create': True}"
+                />
+                <field name="account_id" options="{'no_create': True}" />
+                <field
+                    name="analytic_account_id"
+                    options="{'no_create': True}"
+                    groups="analytic.group_analytic_accounting"
+                />
+                <field
+                    name="move_id"
+                    options="{'no_create': True}"
+                    domain="[('commercial_partner_id', '=', commercial_partner_id), ('payment_state', '!=', 'paid'),
+                         ('state', '=', 'posted')]"
+                />
+                <field
+                    name="aml_id"
+                    options="{'no_create': True}"
+                    domain="[('partner_id', '=', partner_id),
+                        ('move_id.state', '=', 'posted'),
+                        ('move_id.payment_state', '!=', 'paid'),
+                        ('amount_residual', '!=', 0.0),
+                        ('account_id.account_type', 'in', ('asset_receivable', 'liability_payable'))]"
+                />
+                <field name="fully_paid" optional="hide" />
+                <field
+                    name="writeoff_account_id"
+                    options="{'no_create': True}"
+                    optional="hide"
+                />
+                <field name="aml_date_maturity" optional="hide" />
+                <field name="amount" sum="Total Amount" />
+                <field
+                    name="amount_currency"
+                    groups="base.group_multi_currency"
+                    sum="Total Amount Company Currency"
+                />
+                <field
+                    name="aml_amount_residual"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Total Due"
+                />
+                <field
+                    name="residual_after_payment"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Residual"
+                />
+                <field
+                    name="writeoff_amount"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Write-Off amount"
+                    optional="hide"
+                />
+                <field
+                    name="aml_amount_residual_currency"
+                    groups="base.group_multi_currency"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Total Due Currency"
+                />
+                <field
+                    name="residual_after_payment_currency"
+                    groups="base.group_multi_currency"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Residual Currency"
+                />
+                <field
+                    name="writeoff_amount_currency"
+                    groups="base.group_multi_currency"
+                    column_invisible="parent.state != 'draft'"
+                    sum="Write-Off amount currency"
+                    optional="hide"
+                />
+            </list>
+        </field>
+    </record>
+    <!-- Inherit Form View to Modify it -->
+    <record id="view_inherit_account_payment_form" model="ir.ui.view">
+        <field name="name">view.inherit.account.payment.form</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_draft']" position="after">
+                <button
+                    name="action_propose_payment_distribution"
+                    class="btn"
+                    invisible="state != 'draft'"
+                    string="Propose Payment Distribution"
+                    type="object"
+                />
+                <button
+                    name="action_delete_counterpart_lines"
+                    class="btn"
+                    invisible="state != 'draft'"
+                    string="Delete Counterpart Lines"
+                    type="object"
+                />
+            </xpath>
+            <xpath expr="//button[@name='action_post']" position="attributes">
+                <attribute
+                    name="context"
+                >{'account_payment_lines': 'payment'}</attribute>
+            </xpath>
+            <xpath expr="//sheet/group" position="after">
+                <notebook>
+                    <page string="Counterpart Lines">
+                        <field
+                            name="line_payment_counterpart_ids"
+                            nolabel="1"
+                            context="{'default_partner_id': partner_id}"
+                            readonly="state != 'draft'"
+                            colspan="2"
+                        />
+                    </page>
+                </notebook>
+            </xpath>
+            <xpath expr="//group[@name='group2']" position="inside">
+                <field
+                    name="writeoff_account_id"
+                    options="{'no_create': True}"
+                    readonly="state != 'draft'"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

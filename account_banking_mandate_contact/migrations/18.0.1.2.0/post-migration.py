@@ -1,0 +1,9 @@
+# Copyright 2025 Tecnativa - Pedro M. Baeza
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0)
+
+from openupgradelib import openupgrade, openupgrade_180
+
+
+@openupgrade.migrate()
+def migrate(env, version):
+    openupgrade_180.convert_company_dependent(env, "res.partner", "contact_mandate_id")

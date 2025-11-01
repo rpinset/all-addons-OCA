@@ -283,6 +283,28 @@ class Rma(models.Model):
     different_return_product = fields.Boolean(
         related="operation_id.different_return_product"
     )
+    manual_finish_allowed = fields.Boolean(
+        compute="_compute_manual_finish_allowed",
+        help="Indicates whether this RMA can be manually finished, "
+        "without requiring further processing such as a receipt, "
+        "delivery, or refund.",
+    )
+
+    @api.depends("operation_id", "reception_move_id.state")
+    def _compute_manual_finish_allowed(self):
+        """
+        compute whether the RMA requires any follow-up action based on the
+        operation configuration
+        """
+        for rma in self:
+            rma.manual_finish_allowed = (
+                (
+                    rma.operation_id.action_create_receipt
+                    and rma.reception_move_id.state != "done"
+                )
+                or rma.operation_id.action_create_delivery
+                or rma.operation_id.action_create_refund
+            )
 
     @api.depends("operation_id.action_create_receipt", "state", "reception_move_id")
     def _compute_show_create_receipt(self):
@@ -437,13 +459,17 @@ class Rma(models.Model):
                 and r.state == "confirmed"
             )
 
-    @api.depends("state", "remaining_qty")
+    @api.depends("state", "remaining_qty", "manual_finish_allowed")
     def _compute_can_be_finished(self):
+        # The RMA can be finished if:
+        # - It's in a transitional state AND there is still quantity to process
+        # OR
+        # - It's not already finished AND no further action is required
         for rma in self:
             rma.can_be_finished = (
                 rma.state in {"received", "waiting_replacement", "waiting_return"}
                 and rma.remaining_qty > 0
-            )
+            ) or (rma.state != "finished" and not rma.manual_finish_allowed)
 
     @api.depends("product_uom_qty", "state", "remaining_qty")
     def _compute_can_be_split(self):
@@ -889,6 +915,16 @@ class Rma(models.Model):
     def action_finish(self):
         """Invoked when a user wants to manually finalize the RMA"""
         self.ensure_one()
+        if not self.manual_finish_allowed:
+            self.state = "finished"
+            return {}
+        if (
+            self.operation_id.action_create_receipt
+            and self.reception_move_id.state != "done"
+        ):
+            raise ValidationError(
+                _("The reception must be done before finishing this rma")
+            )
         self._ensure_can_be_returned()
         # Force active_id to avoid issues when coming from smart buttons
         # in other models
@@ -1286,10 +1322,11 @@ class Rma(models.Model):
         rmas_to_return.write({"state": "waiting_return"})
 
     def _prepare_replace_procurement_vals(self, warehouse=None, scheduled_date=None):
-        """This method is used only for Replace (not Delivery). We do not use any
-        specific route here."""
+        """This method is used only for Replace (not Delivery)."""
         vals = self._prepare_common_procurement_vals(warehouse, scheduled_date)
         vals["rma_id"] = self.id
+        if self.warehouse_id.rma_out_replace_route_id:
+            vals["route_ids"] = self.warehouse_id.rma_out_replace_route_id
         return vals
 
     def _prepare_replace_procurements(

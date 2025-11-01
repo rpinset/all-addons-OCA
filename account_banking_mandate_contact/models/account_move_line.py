@@ -13,6 +13,7 @@ class AccountMoveLine(models.Model):
         vals = super()._prepare_payment_line_vals(payment_order)
         if payment_order.payment_type != "inbound" or self.move_id.mandate_id:
             return vals
+        self = self.with_company(self.company_id)
         mandate = (
             self.move_id.partner_shipping_id.valid_mandate_id
             or self.move_id.partner_id.valid_mandate_id

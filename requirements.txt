@@ -237,13 +237,10 @@ webdav4[fsspec]
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
-lxml
 mock
 openpyxl
 py3o.formats
 py3o.template
-xlrd
-xlsxwriter
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
 # generated from manifests external_dependencies
 pycups

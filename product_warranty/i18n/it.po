@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-08 10:43+0000\n"
+"PO-Revision-Date: 2025-10-29 22:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -212,7 +212,7 @@ msgstr ""
 #. module: product_warranty
 #: model_terms:ir.ui.view,arch_db:product_warranty.product_supplierinfo_warranty_form_view
 msgid "Warranty informations"
-msgstr "Informazioni Garanzia"
+msgstr "Informazioni garanzia"
 
 #. module: product_warranty
 #: model:ir.model.fields.selection,name:product_warranty.selection__product_template__warranty_type__week

@@ -337,3 +337,40 @@ class TestRmaOperation(TestRma):
         rma.action_confirm()
         self.assertEqual(rma.reception_move_id.state, "done")
         self.assertEqual(rma.reception_move_id.picking_id.state, "done")
+
+    def test_manual_finish_if_no_required_action_flag(self):
+        self.operation.action_create_receipt = False
+        self.operation.action_create_delivery = False
+        self.operation.action_create_refund = False
+        rma = self._create_rma(self.partner, self.product, 1, self.rma_loc)
+        rma.action_confirm()
+        self.assertFalse(rma.manual_finish_allowed)
+        self.assertEqual(rma.state, "confirmed")
+        rma.action_finish()
+        self.assertEqual(rma.state, "finished")
+        self.operation.action_create_receipt = "manual_on_confirm"
+        rma2 = self._create_rma(self.partner, self.product, 1, self.rma_loc)
+        rma2.action_confirm()
+        self.assertTrue(rma2.manual_finish_allowed)
+        self.assertEqual(rma2.state, "confirmed")
+        with self.assertRaises(ValidationError):
+            rma2.action_finish()
+
+    def test_manual_finish_if_required_actions_are_done(self):
+        self.operation.action_create_receipt = "automatic_on_confirm"
+        self.operation.action_create_delivery = False
+        self.operation.action_create_refund = False
+        rma = self._create_rma(self.partner, self.product, 1, self.rma_loc)
+        rma.action_confirm()
+        self.assertTrue(rma.manual_finish_allowed)
+        self.assertEqual(rma.state, "confirmed")
+        with self.assertRaisesRegex(
+            ValidationError, "The reception must be done before finishing this rma"
+        ):
+            rma.action_finish()
+        rma.reception_move_id.quantity = rma.product_uom_qty
+        rma.reception_move_id.picking_id.button_validate()
+        self.assertFalse(rma.manual_finish_allowed)
+        self.assertEqual(rma.reception_move_id.state, "done")
+        rma.action_finish()
+        self.assertEqual(rma.state, "finished")
