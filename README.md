@@ -1752,10 +1752,15 @@ Date:   Sat Feb 1 21:32:34 2025 +0000
 
 ## website-cms
 From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
-commit 5cf4157e85f371eb4b5bb22f29d35c175ca269c8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:32:43 2025 +0000
+commit 649c58877a0159f1b9757cd5bfaedc4a56b32bb4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 30 08:51:54 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (43 of 43 strings)
+    
+    Translation: website-cms-13.0/website-cms-13.0-cms_form
+    Translate-URL: https://translation.odoo-community.org/projects/website-cms-13-0/website-cms-13-0-cms_form/it/
 
 
