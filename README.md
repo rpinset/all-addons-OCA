@@ -1074,9 +1074,9 @@ Date:   Wed Jun 4 03:49:32 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 8f79df582d700824529bf5efe441c504485c2b5c
+commit 0e277eeb3c453cab6531c6eda2dba8700a73be79
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:44:12 2025 +0000
+Date:   Wed Oct 29 20:52:40 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1337,11 +1337,11 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 175b8233dffc7160fca03706430678be6446f148
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:33:40 2025 +0000
+commit 9c8a4a3c9a7ad4179c1077882175bc6065f7b794
+Author: Hector Vior <hector.villarreal@forgeflow.com>
+Date:   Wed Oct 29 17:36:07 2025 +0100
 
-    [UPD] addons table in README.md
+    [FIX] report_pdf_zip_download: py35 compatible code
 
 
 ## report-print-send
