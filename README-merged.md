@@ -992,7 +992,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.3 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.1.6 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.5 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.6 |  | Create SEPA files for Direct Debit
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.3 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
 [account_payment_mode](account_payment_mode/) | 16.0.2.0.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 16.0.1.13.2 |  | Account Payment Order
@@ -1058,7 +1058,7 @@ addon | version | maintainers | summary
 [account_move_reconcile_helper](account_move_reconcile_helper/) | 16.0.1.0.0 |  | Provides tools to facilitate reconciliation
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
-[account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
+[account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
 [account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.9 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.15.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [bank_statement_check_number](bank_statement_check_number/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Add the check number in the bank statements
@@ -3163,6 +3163,7 @@ addon | version | maintainers | summary
 [hr_timesheet_name_customer](hr_timesheet_name_customer/) | 16.0.1.1.0 |  | Add 'Description Customer' field for timesheets
 [hr_timesheet_portal](hr_timesheet_portal/) | 16.0.1.0.0 |  | Fill in timesheets via the portal
 [hr_timesheet_predefined_description](hr_timesheet_predefined_description/) | 16.0.1.0.0 | <a href='https://github.com/juanjosesegui-tecnativa'><img src='https://github.com/juanjosesegui-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juanjosesegui-tecnativa'/></a> | Predefined descriptions for timesheet entries
+[hr_timesheet_predefined_description_rules](hr_timesheet_predefined_description_rules/) | 16.0.1.0.0 |  | Manage predefined descriptions for timesheet entries
 [hr_timesheet_report](hr_timesheet_report/) | 16.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
 [hr_timesheet_report_rounded](hr_timesheet_report_rounded/) | 16.0.1.0.0 |  | Show rounded time in the Timesheet Reports
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 16.0.1.2.0 |  | Timesheet Sheets, Activities
@@ -4676,7 +4677,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 16.0.1.0.0 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 16.0.1.3.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip_in_rc](l10n_it_fatturapa_import_zip_in_rc/) | 16.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Importare fatture elettroniche con inversione contabile da un file ZIP.
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.5 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.6 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.1 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.6.0 |  | Emissione fatture elettroniche
@@ -5389,10 +5390,11 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.12.4 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.13.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.3.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
+[l10n_es_igic_verifactu_oca](l10n_es_igic_verifactu_oca/) | 16.0.1.0.0 |  | Comunicación Veri*FACTU para IGIC
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.3.6 |  | Spanish Intrastat Product Declaration
 [l10n_es_irnr](l10n_es_irnr/) | 16.0.1.2.1 |  | Retenciones IRNR (No residentes)
 [l10n_es_irnr_sii](l10n_es_irnr_sii/) | 16.0.1.1.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Suministro Inmediato de Información de importaciones con IRNR
@@ -5421,7 +5423,8 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.1 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.7 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.8 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca_oss](l10n_es_verifactu_oca_oss/) | 16.0.1.0.1 |  | Comunicación VERI*FACTU: OSS
 [payment_redsys](payment_redsys/) | 16.0.1.0.4 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -6438,6 +6441,7 @@ addon | version | maintainers | summary
 [rma](rma/) | 16.0.5.3.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_delivery](rma_delivery/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allow to choose a default delivery carrier for returns
 [rma_lot](rma_lot/) | 16.0.1.0.1 |  | Manage lot in RMA
+[rma_lot_autocreate](rma_lot_autocreate/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Auto-generate stock lot at RMA confirm using per-operation sequence
 [rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
 [rma_reason](rma_reason/) | 16.0.1.0.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Rma Reason
 [rma_repair](rma_repair/) | 16.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create a repair order from rma
@@ -7507,7 +7511,7 @@ addon | version | maintainers | summary
 [project_stage_extra_info](project_stage_extra_info/) | 16.0.1.0.0 |  | Project Stage Extra Info
 [project_stage_last_update_date](project_stage_last_update_date/) | 16.0.1.0.0 |  | Project Stage Last Update Date
 [project_status](project_status/) | 16.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Status
-[project_stock](project_stock/) | 16.0.1.3.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
+[project_stock](project_stock/) | 16.0.2.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
 [project_stock_analytic_tag](project_stock_analytic_tag/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Analytic Tag
 [project_stock_product_set](project_stock_product_set/) | 16.0.2.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Product Set
 [project_tag_hierarchy](project_tag_hierarchy/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
@@ -7889,7 +7893,7 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 16.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_discuss_security](mail_discuss_security/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a group to display 'Discuss' Application menu entry
 [mail_drop_target](mail_drop_target/) | 16.0.1.1.0 |  | Attach emails to Odoo by dragging them from your desktop
-[mail_gateway](mail_gateway/) | 16.0.1.3.1 |  | Set a gateway
+[mail_gateway](mail_gateway/) | 16.0.1.3.2 |  | Set a gateway
 [mail_gateway_telegram](mail_gateway_telegram/) | 16.0.1.1.0 |  | Set a gateway for telegram
 [mail_gateway_whatsapp](mail_gateway_whatsapp/) | 16.0.1.1.0 |  | Set a gateway for whatsapp
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 16.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.

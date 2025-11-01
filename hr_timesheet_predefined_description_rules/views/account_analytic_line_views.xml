@@ -1,0 +1,89 @@
+<odoo>
+    <record
+        id="view_hr_timesheet_sheet_form_predefined_description_inherit"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >hr_timesheet.sheet.form.inherit.predefined.description</field>
+        <field name="model">hr_timesheet.sheet</field>
+        <field name="inherit_id" ref="hr_timesheet_sheet.hr_timesheet_sheet_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//notebook/page[2]/field[@name='timesheet_ids']/tree/field[@name='task_id']"
+                position="after"
+            >
+                <field name="predefined_description_id" />
+                <field name="allow_free_text_related" invisible="1" />
+                <field
+                    name="free_text"
+                    attrs="{'readonly': [('allow_free_text_related','=',False)]}"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_account_analytic_line_tree_with_user_inherit" model="ir.ui.view">
+        <field name="name">account.analytic.line.tree.with.user.inherit</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="hr_timesheet.timesheet_view_form_user" />
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="predefined_description_id" />
+            </field>
+        </field>
+    </record>
+    <record id="view_analytic_line_form_inherit_tree" model="ir.ui.view">
+        <field name="name">view.analytic.line.form.inherit.tree</field>
+        <field name="model">account.analytic.line</field>
+        <field
+            name="inherit_id"
+            ref="hr_timesheet_predefined_description.view_analytic_line_form_inherit"
+        />
+        <field name="arch" type="xml">
+            <field name="predefined_description_id" position="after">
+                <field name="allow_free_text_related" invisible="1" />
+                <field
+                    name="free_text"
+                    optional="hide"
+                    attrs="{'readonly': [('allow_free_text_related','=',False)]}"
+                />
+            </field>
+        </field>
+    </record>
+    <record id="view_account_analytic_line_form_inherit" model="ir.ui.view">
+        <field name="name">view.account.analytic.line.form.inherit</field>
+        <field name="model">account.analytic.line</field>
+        <field
+            name="inherit_id"
+            ref="hr_timesheet_predefined_description.view_account_analytic_line_form"
+        />
+        <field name="arch" type="xml">
+            <field name="predefined_description_id" position="after">
+                <field name="allow_free_text_related" invisible="1" />
+                <field
+                    name="free_text"
+                    optional="hide"
+                    attrs="{'readonly': [('allow_free_text_related','=',False)]}"
+                />
+            </field>
+        </field>
+    </record>
+    <record id="view_project_task_form_inherit_tree" model="ir.ui.view">
+        <field name="name">view.project.task.form.inherit.tree</field>
+        <field name="model">project.task</field>
+        <field
+            name="inherit_id"
+            ref="hr_timesheet_predefined_description.view_project_task_form_inherit"
+        />
+        <field name="arch" type="xml">
+            <field name="predefined_description_id" position="after">
+                <field name="allow_free_text_related" invisible="1" />
+                <field
+                    name="free_text"
+                    optional="hide"
+                    attrs="{'readonly': [('allow_free_text_related','=',False)]}"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

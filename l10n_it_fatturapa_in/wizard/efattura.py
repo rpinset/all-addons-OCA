@@ -62,7 +62,7 @@ def collect_elements_by_type(target, element_type):
 
 def collect_types():
     # simpleType, we look at the base of restriction
-    for element_type in _root.findall("//{*}simpleType"):
+    for element_type in _root.findall(".//{*}simpleType"):
         base = element_type.find("{*}restriction").attrib["base"]
 
         if base == "xs:date":

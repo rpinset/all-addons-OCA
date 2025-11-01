@@ -124,6 +124,20 @@ msgstr "<em>Type de paiement :</em>"
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Business-To-Business "
+"Direct debit Mandate)</span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Direct Debit Mandate)</"
+"span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid "<strong>Sepa Business-To-Business Direct debit Mandate</strong>"
 msgstr "<strong>Mandat de prélèvement automatique SEPA B2B</strong>"
 
@@ -597,12 +611,12 @@ msgstr ""
 #, python-format
 #~ msgid ""
 #~ "Automatically switched from <b>First</b> to <b>Recurring</b> when the "
-#~ "debit order <a href=# data-oe-model=account.payment.order data-oe-id=%d>"
-#~ "%s</a> has been marked as uploaded."
+#~ "debit order <a href=# data-oe-model=account.payment.order data-oe-"
+#~ "id=%d>%s</a> has been marked as uploaded."
 #~ msgstr ""
 #~ "Remplacé automatiquement de <b>First</b> par <b>Récurrent</b> quand "
-#~ "l'ordre de débit <a href=# data-oe-model=account.payment.order data-oe-id="
-#~ "%d>%s</a> a été marqué comme téléchargé."
+#~ "l'ordre de débit <a href=# data-oe-model=account.payment.order data-oe-"
+#~ "id=%d>%s</a> a été marqué comme téléchargé."
 
 #~ msgid "Bank Payment Lines"
 #~ msgstr "Lignes de paiement bancaire"

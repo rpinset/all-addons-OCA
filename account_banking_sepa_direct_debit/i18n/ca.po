@@ -32,7 +32,9 @@ msgid ""
 "    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "        Hello,\n"
 "        <br><br>\n"
-"        Your SEPA Mandate for <t t-out=\"object.company_id.name or ''\" contenteditable=\"false\" data-oe-t-inline=\"true\">YourCompany</t> is pending to sign.\n"
+"        Your SEPA Mandate for <t t-out=\"object.company_id.name or ''\" "
+"contenteditable=\"false\" data-oe-t-inline=\"true\">YourCompany</t> is "
+"pending to sign.\n"
 "        <br><br>\n"
 "        Do not hesitate to contact us if you have any questions.\n"
 "        <br>\n"
@@ -141,6 +143,20 @@ msgstr "<em>Tipus de pagament:</em>"
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Business-To-Business "
+"Direct debit Mandate)</span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Direct Debit Mandate)</"
+"span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid "<strong>Sepa Business-To-Business Direct debit Mandate</strong>"
 msgstr "<strong>Mandat SEPA Business-To-Business</strong>"
 
@@ -166,9 +182,12 @@ msgstr ""
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid ""
-"ALL GAPS ARE MANDATORY. ONCE THIS MANDATE HAS BEEN SIGNED MUST BE SENT TO CREDITOR FOR STORAGE.\n"
-"                        NEVERTHELESS, THE BANK OF DEBTOR REQUIRES DEBTOR’S AUTHORIZATION BEFORE DEBITING B2B DIRECT DEBITS IN THE ACCOUNT.\n"
-"                        THE DEBTOR WILL BE ABLE TO MANAGE THE MENTIONED AUTHORIZATION THROUGH THE MEANS PROVIDED BY HIS BANK."
+"ALL GAPS ARE MANDATORY. ONCE THIS MANDATE HAS BEEN SIGNED MUST BE SENT TO "
+"CREDITOR FOR STORAGE.\n"
+"                        NEVERTHELESS, THE BANK OF DEBTOR REQUIRES DEBTOR’S "
+"AUTHORIZATION BEFORE DEBITING B2B DIRECT DEBITS IN THE ACCOUNT.\n"
+"                        THE DEBTOR WILL BE ABLE TO MANAGE THE MENTIONED "
+"AUTHORIZATION THROUGH THE MEANS PROVIDED BY HIS BANK."
 msgstr ""
 "TOTS ELS CAMPS SÓN OBLIGATORIS. UN COP SIGNAT, CAL QUE S'ENVIÏ AL CREDITOR "
 "PEL SEU ARXIU.\n"
@@ -181,13 +200,15 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid ""
 "As part of your rights, you are entitled to a refund from\n"
-"                        your bank under the terms and conditions of your agreement\n"
+"                        your bank under the terms and conditions of your "
+"agreement\n"
 "                        with your bank.\n"
-"                        A refund must be claimed within 8 weeks starting from the date on which your account was debited."
+"                        A refund must be claimed within 8 weeks starting "
+"from the date on which your account was debited."
 msgstr ""
 "Com a part dels vostres drets, teniu dret a una devolució del\n"
-"                             vostre banc en els termes i condicions de l'"
-"acord\n"
+"                             vostre banc en els termes i condicions de "
+"l'acord\n"
 "                             que tingueu amb aquest.\n"
 "                             S'ha de reclamar un reemborsament en 8 setmanes "
 "a partir de la data en la qual s'ha fet el càrrec al vostre compte."
@@ -209,8 +230,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Automatically switched from <b>First</b> to <b>Recurring</b> when the debit "
-"order <a href=# data-oe-model=account.payment.order data-oe-id=%d>{}</a> has"
-" been marked as uploaded."
+"order <a href=# data-oe-model=account.payment.order data-oe-id=%d>{}</a> has "
+"been marked as uploaded."
 msgstr ""
 "Es canvia automàticament de <b>First</b> a <b>Recurring</b> quan l'ordre de "
 "càrrec <a href=# data-oe-model=account.payment.order data-oe-id=%d>{}</a> es "
@@ -249,7 +270,9 @@ msgstr "Assistent de redacció d'emails"
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model.fields,help:account_banking_sepa_direct_debit.field_account_payment_mode__sepa_creditor_identifier
 msgid ""
-"Enter the Creditor Identifier that has been attributed to your company to make SEPA Direct Debits. If not defined, SEPA Creditor Identifier from company will be used.\n"
+"Enter the Creditor Identifier that has been attributed to your company to "
+"make SEPA Direct Debits. If not defined, SEPA Creditor Identifier from "
+"company will be used.\n"
 "This identifier is composed of :\n"
 "- your country ISO code (2 letters)\n"
 "- a 2-digits checkum\n"
@@ -269,7 +292,8 @@ msgstr ""
 #: model:ir.model.fields,help:account_banking_sepa_direct_debit.field_res_company__sepa_creditor_identifier
 #: model:ir.model.fields,help:account_banking_sepa_direct_debit.field_res_config_settings__sepa_creditor_identifier
 msgid ""
-"Enter the Creditor Identifier that has been attributed to your company to make SEPA Direct Debits. This identifier is composed of :\n"
+"Enter the Creditor Identifier that has been attributed to your company to "
+"make SEPA Direct Debits. This identifier is composed of :\n"
 "- your country ISO code (2 letters)\n"
 "- a 2-digits checkum\n"
 "- a 3-letters business code\n"
@@ -302,7 +326,8 @@ msgstr "Primer"
 #: code:addons/account_banking_sepa_direct_debit/models/account_payment_order.py:0
 #, python-format
 msgid "Invalid mandate type in '%s'. Valid ones are 'Recurrent' or 'One-Off'"
-msgstr "Tipus de mandat no vàlid a '%s'. Els vàlids són 'Recurrent' o 'One-Off'"
+msgstr ""
+"Tipus de mandat no vàlid a '%s'. Els vàlids són 'Recurrent' o 'One-Off'"
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_banking_sepa_direct_debit.field_account_banking_mandate__is_sent
@@ -379,8 +404,8 @@ msgstr "Ordre de pagament"
 #, python-format
 msgid ""
 "Payment Type Code '%s' is not supported. The only Payment Type Code "
-"supported for SEPA Direct Debit are 'pain.008.001.02', 'pain.008.001.03' and"
-" 'pain.008.001.04'."
+"supported for SEPA Direct Debit are 'pain.008.001.02', 'pain.008.001.03' and "
+"'pain.008.001.04'."
 msgstr ""
 "El codi de tipus de pagament '%s' no està suportat. Els únics codis de tipus "
 "de pagament suportats per SEPA són 'pain.008.001.02', 'pain.008.001.03' i "
@@ -428,11 +453,11 @@ msgstr "Mandat SEPA"
 #. module: account_banking_sepa_direct_debit
 #: model:mail.template,subject:account_banking_sepa_direct_debit.email_template_sepa_mandate
 msgid ""
-"SEPA Mandate {{ object.unique_mandate_reference or 'n/a' }} for {{ "
-"object.company_id.name }} is pending to sign"
+"SEPA Mandate {{ object.unique_mandate_reference or 'n/a' }} for {{ object."
+"company_id.name }} is pending to sign"
 msgstr ""
-"El Mandat SEPA {{ object.unique_mandate_reference or 'n/a' }} for {{ "
-"object.company_id.name }} està pendent de signar"
+"El Mandat SEPA {{ object.unique_mandate_reference or 'n/a' }} for {{ object."
+"company_id.name }} està pendent de signar"
 
 #. module: account_banking_sepa_direct_debit
 #: model:mail.template,name:account_banking_sepa_direct_debit.email_template_sepa_mandate
@@ -516,9 +541,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid ""
 "This mandate is only intended for business-to-business transactions.\n"
-"                        You are not entitled to a refund from your bank after your account has\n"
-"                        been debited, but you are entitled to request your bank\n"
-"                        not to debit your account up until the day on which the payment is due."
+"                        You are not entitled to a refund from your bank "
+"after your account has\n"
+"                        been debited, but you are entitled to request your "
+"bank\n"
+"                        not to debit your account up until the day on which "
+"the payment is due."
 msgstr ""
 
 #. module: account_banking_sepa_direct_debit
@@ -574,8 +602,10 @@ msgstr ""
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid ""
-"to send instructions to your bank to debit your account and (B) your bank to\n"
-"                       debit your account in accordance with the instructions from"
+"to send instructions to your bank to debit your account and (B) your bank "
+"to\n"
+"                       debit your account in accordance with the "
+"instructions from"
 msgstr ""
 
 #. module: account_banking_sepa_direct_debit

@@ -138,6 +138,20 @@ msgstr "<em>Tipo di pagamento:</em>"
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Business-To-Business "
+"Direct debit Mandate)</span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
+msgid ""
+"<span class=\"native_lang native_lang_small\">(Sepa Direct Debit Mandate)</"
+"span>"
+msgstr ""
+
+#. module: account_banking_sepa_direct_debit
+#: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
 msgid "<strong>Sepa Business-To-Business Direct debit Mandate</strong>"
 msgstr "<strong>Mandato Sepa Business-To-Business Direct debit</strong>"
 
@@ -172,9 +186,9 @@ msgid ""
 msgstr ""
 "TUTTI I CAMPI SONO OBBLIGATORI. UNA VOLTA CHE IL MANDATO è STATO FIRMATO "
 "DEVE ESSERE SPEDITO AL CREDITORE PER ARCHIVIAZIONE.\n"
-"                        TUTTAVIA, LA BANCA DEL DEBITORE RICHIEDE L’"
-"AUTORIZZAZIONE DEL DEBITORE PRIMA DI ADDEBITARE GLI ADDEBITI DIRETTI B2B SUL "
-"CONTO.\n"
+"                        TUTTAVIA, LA BANCA DEL DEBITORE RICHIEDE "
+"L’AUTORIZZAZIONE DEL DEBITORE PRIMA DI ADDEBITARE GLI ADDEBITI DIRETTI B2B "
+"SUL CONTO.\n"
 "                         IL DEBITORE POTRÀ GESTIRE LA MENZIONATA "
 "AUTORIZZAZIONE ATTRAVERSO I MEZZI FORNITI DALLA SUA BANCA."
 
@@ -436,8 +450,8 @@ msgid ""
 "SEPA Mandate {{ object.unique_mandate_reference or 'n/a' }} for {{ object."
 "company_id.name }} is pending to sign"
 msgstr ""
-"Il mandato SEPA {{ object.unique_mandate_reference or 'n/a' }} per {{ "
-"object.company_id.name }} è in attesa di firma"
+"Il mandato SEPA {{ object.unique_mandate_reference or 'n/a' }} per {{ object."
+"company_id.name }} è in attesa di firma"
 
 #. module: account_banking_sepa_direct_debit
 #: model:mail.template,name:account_banking_sepa_direct_debit.email_template_sepa_mandate

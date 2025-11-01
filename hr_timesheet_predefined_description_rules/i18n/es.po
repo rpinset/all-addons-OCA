@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_timesheet_predefined_description_rules
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-27 13:25+0000\n"
+"PO-Revision-Date: 2025-08-27 15:26+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_account_analytic_line__free_text
+msgid "Additional Description"
+msgstr "Descripción adicional"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_account_analytic_line__allow_free_text_related
+#: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__allow_free_text
+msgid "Allow Free Text"
+msgstr "Permitir texto libre"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model,name:hr_timesheet_predefined_description_rules.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__append_free_text_to_name
+#, fuzzy
+msgid "Append Free Text To Name"
+msgstr "Agregar texto libre a la descripción"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_account_analytic_line__allow_free_text_related
+#: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__allow_free_text
+#, fuzzy
+msgid ""
+"Enable this to allow users to enter additional text when using this "
+"predefined description."
+msgstr ""
+"Habilitar para permitir a los usuarios ingresar texto adicional al usar esta "
+"descripción predefinida."
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__free_text_required
+msgid "Free Text Required"
+msgstr "Texto libre obligatorio"
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_account_analytic_line__free_text
+msgid ""
+"Free text. If the predefined description has 'append_free_text_to_name' "
+"enabled, it will be auto-completed with the predefined description."
+msgstr ""
+"Texto libre. Si la descripción predefinida tiene activada la opción "
+"\"Agregar texto libre a la descripción\", se completará automáticamente con "
+"la descripción predefinida."
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__free_text_required
+msgid ""
+"If checked, the user must provide additional text when using this predefined "
+"description."
+msgstr ""
+"Si está marcado, el usuario debe proporcionar texto adicional al usar esta "
+"descripción predefinida."
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__append_free_text_to_name
+msgid ""
+"If enabled, any additional text entered by the user will be appended to the "
+"predefined description name."
+msgstr ""
+"Si está habilitado, cualquier texto adicional ingresado por el usuario se "
+"añadirá al nombre de la descripción predefinida."
+
+#. module: hr_timesheet_predefined_description_rules
+#: model:ir.model,name:hr_timesheet_predefined_description_rules.model_timesheet_predefined_description
+msgid "Predefined Description for Timesheets"
+msgstr "Descripción predefinida para partes de horas"
+
+#. module: hr_timesheet_predefined_description_rules
+#. odoo-python
+#: code:addons/hr_timesheet_predefined_description_rules/models/account_analytic_line.py:0
+#, python-format
+msgid "You must add additional information for this predefined description."
+msgstr "Debes añadir información adicional para esta descripción predefinida."

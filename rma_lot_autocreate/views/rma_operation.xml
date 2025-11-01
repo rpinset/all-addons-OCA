@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="rma_operation_form_view" model="ir.ui.view">
+        <field name="model">rma.operation</field>
+        <field name="inherit_id" ref="rma.rma_operation_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='settings']" position="inside">
+                <group name="rma_lot_autocreate">
+                    <field name="auto_create_lot" />
+                </group>
+                <group>
+                    <field
+                        name="lot_sequence_id"
+                        attrs="{'required': [('auto_create_lot', '=', True)], 'invisible': [('auto_create_lot', '=', False)]}"
+                    />
+                    <field
+                        name="lot_expiration_days"
+                        attrs="{'invisible':[('auto_create_lot','=',False)]}"
+                    />
+                    <field
+                        name="lot_removal_days_before_expiration"
+                        attrs="{'invisible':['|', ('auto_create_lot','=',False), ('lot_expiration_days', '=', 0)],}"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+
+
+</odoo>

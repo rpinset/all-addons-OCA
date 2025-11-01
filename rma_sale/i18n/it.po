@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-03 14:25+0000\n"
+"PO-Revision-Date: 2025-10-29 22:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -260,7 +260,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
 msgid "If no requested operation is set, the RMA won't be correctly fulfilled"
 msgstr ""
-"Se nessuna operazione richiesta è impostata, l'RMA non sarà completato "
+"Se nessuna operazione richiesta è impostata, l'RMA non sarà completata "
 "correttamente"
 
 #. module: rma_sale

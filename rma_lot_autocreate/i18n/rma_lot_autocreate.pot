@@ -1,0 +1,102 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rma_lot_autocreate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,field_description:rma_lot_autocreate.field_rma_operation__auto_create_lot
+msgid "Auto-create Lot/Serial on Confirm"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#. odoo-python
+#: code:addons/rma_lot_autocreate/models/rma_operation.py:0
+#, python-format
+msgid "Expiration days must be greater than or equal to 0."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,help:rma_lot_autocreate.field_rma_operation__auto_create_lot
+msgid ""
+"If enabled, and the product is tracked and no lot/serial is set on the RMA, "
+"a new lot/serial will be created at confirmation."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,help:rma_lot_autocreate.field_rma_operation__lot_expiration_days
+msgid ""
+"If set, the lot expiration date will be set to Confirm Date + this many "
+"days."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,help:rma_lot_autocreate.field_rma_operation__lot_removal_days_before_expiration
+msgid ""
+"If set, the lot removal date will be expiration date minus this many days. "
+"Requires an expiration to be configured."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,field_description:rma_lot_autocreate.field_rma_operation__lot_expiration_days
+msgid "Lot Expiration (days)"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,field_description:rma_lot_autocreate.field_rma_operation__lot_sequence_id
+msgid "Lot/Serial Name Sequence"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model,name:rma_lot_autocreate.model_rma
+msgid "RMA"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model,name:rma_lot_autocreate.model_rma_operation
+msgid "RMA requested operation"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,field_description:rma_lot_autocreate.field_rma_operation__lot_removal_days_before_expiration
+msgid "Removal Days Before Expiration"
+msgstr ""
+
+#. module: rma_lot_autocreate
+#. odoo-python
+#: code:addons/rma_lot_autocreate/models/rma_operation.py:0
+#, python-format
+msgid "Removal days before expiration must be greater than or equal to 0."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#: model:ir.model.fields,help:rma_lot_autocreate.field_rma_operation__lot_sequence_id
+msgid "Sequence used to generate names for auto-created lots/serials."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#. odoo-python
+#: code:addons/rma_lot_autocreate/models/rma_operation.py:0
+#, python-format
+msgid ""
+"To set a removal date before expiration, you must configure a positive "
+"expiration (days)."
+msgstr ""
+
+#. module: rma_lot_autocreate
+#. odoo-python
+#: code:addons/rma_lot_autocreate/models/rma_operation.py:0
+#, python-format
+msgid ""
+"You must set a Lot/Serial Name Sequence when Auto-create Lot/Serial is "
+"enabled."
+msgstr ""

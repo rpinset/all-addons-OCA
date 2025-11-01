@@ -1,0 +1,23 @@
+<odoo>
+    <record id="timesheet_predefined_description_inherit_tree" model="ir.ui.view">
+        <field name="name">timesheet.predefined.description.inherit.tree</field>
+        <field name="model">timesheet.predefined.description</field>
+        <field
+            name="inherit_id"
+            ref="hr_timesheet_predefined_description.view_timesheet_predefined_description_tree"
+        />
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="allow_free_text" />
+                <field
+                    name="free_text_required"
+                    attrs="{'invisible': [('allow_free_text','=', False)]}"
+                />
+                <field
+                    name="append_free_text_to_name"
+                    attrs="{'invisible': [('allow_free_text','=', False)]}"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

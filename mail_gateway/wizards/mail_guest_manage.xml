@@ -9,7 +9,7 @@
             <form>
                 <group>
                     <field name="guest_id" force_save="1" readonly="1" />
-                    <field name="partner_id" />
+                    <field name="partner_id" options="{'no_create': 1}" />
                 </group>
                 <footer>
                     <button
