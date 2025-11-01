@@ -349,9 +349,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 5d8188fe0898de09fa1da890ecd6b2af6e1f4c5f
+commit c23f01de667113744593245bb31df8aa7a32ff4b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 23 10:27:16 2025 +0000
+Date:   Thu Oct 30 21:10:33 2025 +0000
 
     [BOT] post-merge updates
 
@@ -923,9 +923,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 04e0344aa7a751f768778e588707fd2ac6ee1994
+commit c842c5e418dd25cf1c29e303dd98b9cb25166940
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 28 18:14:11 2025 +0000
+Date:   Fri Oct 31 19:24:38 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1090,11 +1090,16 @@ Date:   Tue Jul 8 09:38:10 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit c06e100496ddcbae72269fb02013b1025babdc90
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 26 18:27:10 2025 +0000
+commit fd889f32fc1e43c6bb3e507015d39427a44d1790
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 29 20:35:12 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 97.5% (40 of 41 strings)
+    
+    Translation: rma-15.0/rma-15.0-product_warranty
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-product_warranty/it/
 
 
 ## ddmrp
