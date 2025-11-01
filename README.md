@@ -873,16 +873,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit fe3ab48bb12976dc4cc59496059f0442b789de62
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Oct 6 07:37:14 2025 +0000
+commit 1e3151b447dccbac8a8627416271724fdd597da2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 29 20:46:51 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (115 of 115 strings)
+    Currently translated at 100.0% (66 of 66 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_withholding_tax
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_withholding_tax/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_rma
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_rma/it/
 
 
 ## l10n-japan
@@ -1000,9 +1000,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 4acdb6537f6da22ef036ded1bb18a27254935487
+commit 58bc692be2991b19b11c16f625626080f558c498
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 28 18:04:49 2025 +0000
+Date:   Fri Oct 31 19:24:26 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1164,9 +1164,9 @@ Date:   Wed Oct 15 09:10:25 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 46421f6fb734cf95f92bf8737d700b84470772ab
+commit 494e2e1a80740131a9345407357e763ac8496096
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 8 07:53:46 2025 +0000
+Date:   Wed Oct 29 20:35:07 2025 +0000
 
     Translated using Weblate (Italian)
     

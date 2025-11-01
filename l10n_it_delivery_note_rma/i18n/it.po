@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-31 18:38+0000\n"
+"PO-Revision-Date: 2025-10-29 23:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_delivery_note_rma
 #: code:addons/l10n_it_delivery_note_rma/controllers/delivery_note_portal.py:0
@@ -195,7 +195,7 @@ msgstr "ID"
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note_rma.delivery_note_rma_request_form
 msgid "If no requested operation is set, the RMA won't be correctly fulfilled"
 msgstr ""
-"Se nessuna operazione richiesta è impostata, l'RMA non sarà completato "
+"Se nessuna operazione richiesta è impostata, l'RMA non sarà completata "
 "correttamente"
 
 #. module: l10n_it_delivery_note_rma

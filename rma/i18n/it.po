@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-21 13:27+0000\n"
+"PO-Revision-Date: 2025-10-29 22:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -463,7 +463,7 @@ msgstr "Permetti chiusura manuale RMA"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_res_config_settings__group_rma_manual_finalization
 msgid "Allow to finish an RMA without returning back a product or refunding"
-msgstr "Permetti di chiudere un RMA senza restituire un prodotto o rimborso"
+msgstr "Permetti di chiudere una RMA senza restituire un prodotto o rimborso"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_finalization_view_search
@@ -625,7 +625,7 @@ msgstr "Crea una nuova chiusura RMA"
 #. module: rma
 #: model_terms:ir.actions.act_window,help:rma.action_rma_tag
 msgid "Create a new RMA tag"
-msgstr "Crea una nuova Etichetta RMA"
+msgstr "Crea una nuova etichetta RMA"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__create_uid
@@ -802,7 +802,7 @@ msgstr "Modello di email di conferma della ricezione per RMA"
 #: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_confirmation_template_id
 msgid "Email sent to the customer once the RMA is confirmed."
 msgstr ""
-"l' Email sarà inviata al cliente una volta che l'RMA è stato confermato."
+"l' Email sarà inviata al cliente una volta che l'RMA è stata confermato."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_res_company__rma_mail_receipt_confirmation_template_id
@@ -814,7 +814,7 @@ msgstr "l'Email sarà inviata al cliente una volta ricevuti i prodotti RMA."
 #: model:ir.model.fields,help:rma.field_res_company__rma_mail_draft_confirmation_template_id
 #: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_draft_confirmation_template_id
 msgid "Email sent to the customer when they place an RMA from the portal"
-msgstr "l'Email sarà inviata al cliente quando si inserisce un RMA dal portale"
+msgstr "l'Email sarà inviata al cliente quando si inserisce una RMA dal portale"
 
 #. module: rma
 #: code:addons/rma/wizard/rma_split.py:0
@@ -1097,7 +1097,7 @@ msgid ""
 "Manage RMA finalization reasons to better classify them for tracking and "
 "analysis purposes."
 msgstr ""
-"Gestisci le motivazioni per la chiusura degli RMA per classificarle ai fini "
+"Gestisci le motivazioni per la chiusura delle RMA per classificarle ai fini "
 "di tracciamento e analisi."
 
 #. module: rma
@@ -1169,13 +1169,13 @@ msgstr "Tipo prossima attività"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "None of the selected RMAs can perform a replacement."
-msgstr "Nessun RMA selezionato è adatto per una sostituzione."
+msgstr "Nessuna RMA selezionata è adatta per una sostituzione."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "None of the selected RMAs can perform a return."
-msgstr "Nessun RMA selezionato è adatto per un reso."
+msgstr "Nessuna RMA selezionata è adatta per un reso."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__priority__0
@@ -1386,7 +1386,7 @@ msgstr "Codice RMA"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "RMA Confirmation Email"
-msgstr "Email di Conferma RMA"
+msgstr "Email di conferma RMA"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
@@ -2031,19 +2031,19 @@ msgstr ""
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "This RMA cannot be split."
-msgstr "Questo RMA non può essere diviso."
+msgstr "Questa RMA non può essere divisa."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "This RMA cannot perform a replacement."
-msgstr "Questo RMA non può eseguire una sostituzione."
+msgstr "Questa RMA non può eseguire una sostituzione."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "This RMA cannot perform a return."
-msgstr "Questo RMA non può eseguire un reso."
+msgstr "Questa RMA non può eseguire un reso."
 
 #. module: rma
 #: model:ir.actions.server,name:rma.rma_refund_action_server
@@ -2170,13 +2170,13 @@ msgid ""
 "When customers themselves place an RMA from the portal, send an automatic "
 "notification acknowleging it."
 msgstr ""
-"Quando i clienti stessi inseriscono un RMA dal portale, invia una notifica "
+"Quando i clienti stessi inseriscono una RMA dal portale, invia una notifica "
 "automatica di conferma."
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "When the RMA is confirmed, send an automatic information email."
-msgstr "Quando l'RMA è confermato, inviare un'e-mail informativa automatica."
+msgstr "Quando l'RMA è confermata, inviare un'e-mail informativa automatica."
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
