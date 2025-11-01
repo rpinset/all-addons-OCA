@@ -893,13 +893,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 17.0.1.0.3 |  | Banking mandates
-[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.0.2 |  | Assign specific banking mandates in contact level
+[account_banking_mandate](account_banking_mandate/) | 17.0.1.0.4 |  | Banking mandates
+[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.1.1 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
-[account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 17.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
+[account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 17.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.4 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.3.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.3.1 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 17.0.1.1.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 17.0.1.7.3 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 17.0.1.0.0 |  | Account Payment Order - Generate grouped moves
@@ -4917,7 +4917,7 @@ addon | version | maintainers | summary
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.1 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
 [l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
-[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.3.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.4.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_special_payment](l10n_es_facturae_special_payment/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Special Payment
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.1.2 |  | IGIC (Impuesto General Indirecto Canario)
@@ -5790,10 +5790,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 17.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Product Warranty
-[rma](rma/) | 17.0.3.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
+[rma](rma/) | 17.0.3.2.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 17.0.1.1.0 |  | Manage lot in RMA
 [rma_repair](rma_repair/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create a repair order from rma
-[rma_sale](rma_sale/) | 17.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sale Order - Return Merchandise Authorization (RMA)
+[rma_sale](rma_sale/) | 17.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sale Order - Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
 
@@ -6198,7 +6198,7 @@ addon | version | maintainers | summary
 [purchase_advance_payment](purchase_advance_payment/) | 17.0.1.5.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
-[purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.0 |  | Purchase Blanket Orders
+[purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.1 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 17.0.1.0.0 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Supplier' on POs
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 17.0.1.0.0 |  | This module allows purchase default terms & conditions
@@ -6231,7 +6231,7 @@ addon | version | maintainers | summary
 [purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 17.0.1.0.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 17.0.1.0.2 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | <a href='https://github.com/dalonsod'><img src='https://github.com/dalonsod.png' width='32' height='32' style='border-radius:50%;' alt='dalonsod'/></a> | Purchase Order Type Dashboard
-[purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 17.0.1.0.0 |  | Purchase Order Univoiced Amount
+[purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 17.0.1.0.1 |  | Purchase Order Univoiced Amount
 [purchase_order_uninvoiced_amount_line](purchase_order_uninvoiced_amount_line/) | 17.0.1.0.0 |  | Purchase Order Line Uninvoiced Amount
 [purchase_order_weight_volume](purchase_order_weight_volume/) | 17.0.1.0.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Display purchase order weight and volume
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Add a an incoterm field for supplier and use it on purchase order
@@ -6253,7 +6253,7 @@ addon | version | maintainers | summary
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 17.0.1.0.0 |  | Update cost price in stock moves already done
 [purchase_stock_reception_status](purchase_stock_reception_status/) | 17.0.1.0.0 |  | Glue module to integrate OCA reception status with purchase_stock
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 17.0.1.0.0 |  | Get product quantities in a secondary unit
-[purchase_tag](purchase_tag/) | 17.0.1.1.2 |  | Allows to add multiple tags to purchase orders
+[purchase_tag](purchase_tag/) | 17.0.1.2.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_v12_control_menu](purchase_v12_control_menu/) | 17.0.1.0.0 |  | Purchase Control Menu from v12
 [purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
@@ -7439,7 +7439,7 @@ addon | version | maintainers | summary
 [auth_ldaps](auth_ldaps/) | 17.0.1.0.0 |  | Allows to use LDAP over SSL authentication
 [auth_oauth_autologin](auth_oauth_autologin/) | 17.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Automatically redirect to the OAuth provider for login
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 17.0.1.1.1 |  | Allow multiple connection with the same OAuth account
-[auth_oidc](auth_oidc/) | 17.0.1.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
+[auth_oidc](auth_oidc/) | 17.0.1.2.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
 [auth_saml](auth_saml/) | 17.0.1.0.3 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 17.0.1.0.1 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 17.0.1.0.0 |  | Force uninvited users to use a good email for signup

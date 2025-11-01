@@ -23,6 +23,7 @@ class SaleOrder(models.Model):
                     or order.company_id.sale_default_mandate_contact
                 )
                 if partner_mandate_config:
+                    order = order.with_company(order.company_id)
                     mandate = False
                     if partner_mandate_config == "partner_id":
                         mandate = order.partner_id.contact_mandate_id

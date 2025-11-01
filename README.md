@@ -55,16 +55,16 @@ Date:   Sun Sep 28 14:12:32 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit f0ae796b63621142722bb62ee5b4c3f9fa7cd2a6
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 29 11:31:54 2025 +0000
+commit be11b96ec08dc1f2d31e465c43bbcbec54a7daf9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 30 08:34:01 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (53 of 53 strings)
     
     Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-mis_builder_cash_flow
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-mis_builder_cash_flow/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-mis_builder_cash_flow/it/
 
 
 ## account-invoice-reporting
@@ -155,16 +155,16 @@ Date:   Wed Aug 6 11:40:56 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 773545ea1ff9f51dfa9e2e98a915af6bd54f4989
-Author: Peter Schubert <psc@saco.info>
-Date:   Wed Oct 8 18:00:19 2025 +0000
+commit 4bcf5bbc9aeb50119001ff4fa2266e055276a3d5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Oct 31 08:41:51 2025 +0000
 
-    Translated using Weblate (German)
+    Translated using Weblate (Italian)
     
-    Currently translated at 80.0% (4 of 5 strings)
+    Currently translated at 100.0% (102 of 102 strings)
     
-    Translation: bank-payment-17.0/bank-payment-17.0-account_banking_mandate_sale
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_banking_mandate_sale/de/
+    Translation: bank-payment-17.0/bank-payment-17.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -936,11 +936,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 46024fca2359e01b060d3f32a6c8cdcc986cdf39
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 28 18:34:42 2025 +0000
+commit bfc7727fab62caeaa5429e58ed6aa6eed7168eaa
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Oct 31 12:13:52 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_facturae
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_facturae/
 
 
 ## l10n-switzerland
@@ -1090,16 +1095,16 @@ Date:   Mon Aug 25 06:49:51 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit e00bbff263465e01730d79f30570ea657a7cc16b
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 29 18:33:07 2025 +0000
+commit 18854fcc884e7d6b4926256f732b6469afdf97a5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Oct 31 08:36:37 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (86 of 86 strings)
     
     Translation: rma-17.0/rma-17.0-rma_sale
-    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma_sale/
+    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma_sale/it/
 
 
 ## ddmrp
@@ -1168,16 +1173,11 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit da5ff00d8401e6bff042f55b6357196282ebcee3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 07:30:33 2025 +0000
+commit f04452bf11db93881e8de88dea850197da0a3e4e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Oct 31 16:41:22 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_stock_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_stock_secondary_unit/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1397,16 +1397,16 @@ Date:   Mon Oct 27 09:48:42 2025 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit c115c998ed3ff7fd85f217e20834e395eecb7a5d
-Author: Andrzej Gerasimuk <a.gerasimuk@archimedes.pl>
-Date:   Wed Oct 8 07:53:11 2025 +0000
+commit ad2fcebbde226a66bd9f3ebf718ffb908d0a950f
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Oct 31 09:32:09 2025 +0000
 
-    Translated using Weblate (Polish)
+    Update translation files
     
-    Currently translated at 100.0% (25 of 25 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-auth-17.0/server-auth-17.0-impersonate_login
-    Translate-URL: https://translation.odoo-community.org/projects/server-auth-17-0/server-auth-17-0-impersonate_login/pl/
+    Translation: server-auth-17.0/server-auth-17.0-auth_oidc
+    Translate-URL: https://translation.odoo-community.org/projects/server-auth-17-0/server-auth-17-0-auth_oidc/
 
 
 ## server-env

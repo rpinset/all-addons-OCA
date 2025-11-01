@@ -20,12 +20,6 @@ class AccountBankingMandate(models.Model):
     _order = "signature_date desc"
     _check_company_auto = True
 
-    def _get_default_partner_bank_id_domain(self):
-        if "default_partner_id" in self.env.context:
-            return [("partner_id", "=", self.env.context.get("default_partner_id"))]
-        else:
-            return []
-
     format = fields.Selection(
         [("basic", "Basic Mandate")],
         default="basic",
@@ -42,11 +36,11 @@ class AccountBankingMandate(models.Model):
         comodel_name="res.partner.bank",
         string="Bank Account",
         tracking=40,
-        domain=lambda self: self._get_default_partner_bank_id_domain(),
         ondelete="restrict",
         index="btree",
         check_company=True,
     )
+    partner_bank_domain = fields.Binary(compute="_compute_partner_bank_domain")
     partner_id = fields.Many2one(
         comodel_name="res.partner",
         related="partner_bank_id.partner_id",
@@ -94,6 +88,15 @@ class AccountBankingMandate(models.Model):
             "A Mandate with the same reference already exists for this company!",
         )
     ]
+
+    @api.depends("format")  # A field with default for triggering the compute
+    @api.depends_context("default_partner_id")
+    def _compute_partner_bank_domain(self):
+        self.partner_bank_domain = []
+        if "default_partner_id" in self.env.context:
+            self.partner_bank_domain = [
+                ("partner_id", "=", self.env.context["default_partner_id"])
+            ]
 
     @api.depends("unique_mandate_reference", "partner_bank_id.acc_number")
     def _compute_display_name(self):
