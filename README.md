@@ -515,16 +515,14 @@ Date:   Sat Jun 21 10:42:44 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit b0f88c194e2d3afb5938eb3819ff739178b9a988
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:43:40 2025 +0000
+commit df36aa1872db40307d9e20cd6b92c8d70e91a7df
+Merge: b0f88c1 88a0bfc
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Nov 3 10:45:53 2025 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #450 from Tecnativa/13.0-ou-imp-dms-issue-394
     
-    Currently translated at 100.0% (333 of 333 strings)
-    
-    Translation: dms-13.0/dms-13.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
+    [13.0][OU-IMP] dms: Improve rename tables
 
 
 ## e-commerce
