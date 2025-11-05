@@ -8,8 +8,8 @@ class ResUsers(models.Model):
     _inherit = "res.users"
 
     @api.model_create_multi
-    def create(self, vals):
-        users = super(ResUsers, self).create(vals)
+    def create(self, vals_list):
+        users = super(ResUsers, self).create(vals_list)
         for user in users:
             # The new user might have a company even if it was not in `vals`
             # because of defaults for example.
