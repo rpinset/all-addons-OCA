@@ -60,25 +60,30 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 62e0ccc11d9833146753dff2f0b9efc124378f14
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 10 08:25:20 2025 +0000
+commit ef14a91c6380b7658f3deb8162bc400fe4bbcb5a
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 3 07:36:05 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 0d3b300e2ffc2e6da244ee30b95b07c2061c0634
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Thu Sep 25 19:02:51 2025 +0000
+commit e48d8c293be8898abdc8fe2e6b081278dc3a4448
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 3 08:08:19 2025 +0000
 
-    Translated using Weblate (Catalan)
+    Update translation files
     
-    Currently translated at 48.0% (25 of 52 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_tax_balance/ca/
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/
 
 
 ## account-invoice-reporting
@@ -923,9 +928,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit c842c5e418dd25cf1c29e303dd98b9cb25166940
+commit 6589675a61bea9e1c2aea4dda9d7be4361308701
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 31 19:24:38 2025 +0000
+Date:   Mon Nov 3 10:58:35 2025 +0000
 
     [BOT] post-merge updates
 
