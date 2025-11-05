@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="stock_return_picking_form_view">
+        <field name="model">stock.return.picking</field>
+        <field name="inherit_id" ref="stock.view_stock_return_picking_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='product_return_moves']//list//field[@name='rma_operation_id']"
+                position="before"
+            >
+                <field
+                    name="rma_reason_id"
+                    column_invisible="not parent.create_rma"
+                    required="is_rma_reason_required and parent.create_rma and quantity>0"
+                />
+                <field name="is_rma_reason_required" invisible="1" />
+                <field name="rma_operation_domain" invisible="1" />
+            </xpath>
+            <xpath
+                expr="//field[@name='product_return_moves']//list//field[@name='rma_operation_id']"
+                position="attributes"
+            >
+                <attribute name="domain">rma_operation_domain</attribute>
+            </xpath>
+            <xpath
+                expr="//group[@name='group_rma']//field[@name='rma_operation_id']"
+                position="before"
+            >
+                <field name="rma_reason_id" invisible="not create_rma" />
+                <field name="rma_operation_domain" invisible="1" />
+            </xpath>
+            <xpath
+                expr="//group[@name='group_rma']//field[@name='rma_operation_id']"
+                position="attributes"
+            >
+                <attribute name="domain">rma_operation_domain</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

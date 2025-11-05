@@ -29,7 +29,10 @@ def convert_exception_to_status_body(exc: Exception) -> tuple[int, dict]:
         status_code = exc.status_code
         details = exc.detail
     elif isinstance(exc, RequestValidationError):
-        status_code = status.HTTP_422_UNPROCESSABLE_CONTENT
+        # Use integer status code to supress starlette >= 0.48 deprecation warning
+        # See: https://github.com/fastapi/fastapi/pull/14077
+        # status_code = status.HTTP_422_UNPROCESSABLE_CONTENT
+        status_code = 422
         details = jsonable_encoder(exc.errors())
     elif isinstance(exc, WebSocketRequestValidationError):
         status_code = status.WS_1008_POLICY_VIOLATION

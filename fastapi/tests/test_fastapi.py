@@ -156,9 +156,7 @@ class FastAPIHttpCase(HttpCase):
             route = "/fastapi_demo/demo/exception?exception_type=BAD&error_message="
             response = self.url_open(route, timeout=200)
             mocked_commit.assert_not_called()
-            self.assertEqual(
-                response.status_code, status.HTTP_422_UNPROCESSABLE_CONTENT
-            )
+            self.assertEqual(response.status_code, 422)
 
     def test_no_commit_on_exception(self) -> None:
         # this test check that the way we mock the cursor is working as expected

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright 2025 Camptocamp SA (https://www.camptocamp.com).
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <menuitem
+        id="menu_sale_mrp_bom_form_action"
+        action="mrp.mrp_bom_form_action"
+        parent="sale.product_menu_catalog"
+        sequence="25"
+    />
+</odoo>

@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-11-03 10:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: report_pdf_zip_download
 #: model:ir.model.fields,help:report_pdf_zip_download.field_ir_actions_report__zip_download
@@ -20,13 +22,14 @@ msgid ""
 "If enabled, the report will be downloaded as a zip file for multiple "
 "records."
 msgstr ""
+"Se abilitata, il resoconto verrà scaricato come file ZIP per record multipli."
 
 #. module: report_pdf_zip_download
 #: model:ir.model,name:report_pdf_zip_download.model_ir_actions_report
 msgid "Report Action"
-msgstr ""
+msgstr "Azione resoconto"
 
 #. module: report_pdf_zip_download
 #: model:ir.model.fields,field_description:report_pdf_zip_download.field_ir_actions_report__zip_download
 msgid "Zip Download"
-msgstr ""
+msgstr "Scarica ZIP"
