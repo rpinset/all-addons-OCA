@@ -13,7 +13,7 @@
                     name="terms_template_id"
                     placeholder="Terms and conditions template"
                     nolabel="1"
-                    colspan="4"
+                    colspan="2"
                 />
             </xpath>
         </field>

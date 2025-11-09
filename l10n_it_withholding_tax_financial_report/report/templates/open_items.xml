@@ -10,7 +10,7 @@
         <xpath expr="//div[@style='width: 24.5%;']" position="attributes">
             <attribute name="style">width:14.5%</attribute>
         </xpath>
-        <xpath expr="//t[@t-if='foreign_currency']" position="after">
+        <xpath expr="//t[contains(@t-if,'foreign_currency')]" position="after">
             <div class="act_as_cell" style="width: 6.57%;">Net to pay</div>
             <div class="act_as_cell" style="width: 6.57%;">Residual net to pay</div>
         </xpath>
@@ -19,7 +19,7 @@
         id="report_open_items_lines_wt"
         inherit_id="account_financial_report.report_open_items_lines"
     >
-        <xpath expr="//t[@t-if='foreign_currency']" position="after">
+        <xpath expr="//t[contains(@t-if,'foreign_currency')]" position="after">
             <div class="act_as_cell amount">
                 <span
                     t-if="line.get('amount_net_pay', False)"
@@ -46,7 +46,7 @@
         <xpath expr="//div[hasclass('act_as_row')]/t[2]/div[1]" position="attributes">
             <attribute name="style">width:23.2%</attribute>
         </xpath>
-        <xpath expr="//t[@t-if='foreign_currency']" position="after">
+        <xpath expr="//t[contains(@t-if,'foreign_currency')]" position="after">
             <div class="act_as_cell amount" style="width: 6.57%;" />
             <div class="act_as_cell amount" style="width: 6.57%;">
                 <t t-if='type == "account_type"'>

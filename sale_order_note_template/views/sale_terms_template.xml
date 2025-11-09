@@ -17,11 +17,12 @@
         <field name="arch" type="xml">
             <form string="Terms and conditions Templates">
                 <sheet>
+                    <field name="active" invisible="1" />
                     <widget
                         name="web_ribbon"
                         text="Archived"
                         bg_color="bg-danger"
-                        invisible="active"
+                        attrs="{'invisible': [('active','=',True)]}"
                     />
                     <div class="oe_title">
                         <h1>

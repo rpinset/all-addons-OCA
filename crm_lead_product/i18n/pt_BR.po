@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-04 16:43+0000\n"
-"Last-Translator: Ananias Filho <ananias@kmee.com.br>\n"
+"PO-Revision-Date: 2025-11-07 00:43+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -109,7 +109,7 @@ msgstr "Descrição"
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__display_name
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__display_name
 msgid "Display Name"
-msgstr "Nome de exibição"
+msgstr "Nome Exibido"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
@@ -147,17 +147,17 @@ msgstr "ID"
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line____last_update
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report____last_update
 msgid "Last Modified on"
-msgstr "Última modificação em"
+msgstr "Última Modificação em"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__write_uid
 msgid "Last Updated by"
-msgstr "Última atualização por"
+msgstr "Última Atualização por"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__write_date
 msgid "Last Updated on"
-msgstr "Última atualização em"
+msgstr "Última Atualização em"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__lead_id
@@ -344,7 +344,7 @@ msgstr "Mostrar apenas oportunidades"
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__stage_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Stage"
-msgstr "Etapa"
+msgstr "Estágio"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__type

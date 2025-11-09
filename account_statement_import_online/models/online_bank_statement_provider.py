@@ -122,7 +122,10 @@ class OnlineBankStatementProvider(models.Model):
     def write(self, vals):
         """Set provider_id on journal after creation."""
         result = super().write(vals)
-        self._update_journals()
+
+        if "journal_id" in vals or "service" in vals:
+            self._update_journals()
+
         return result
 
     def _update_journals(self):
@@ -520,9 +523,14 @@ class OnlineBankStatementProvider(models.Model):
         delta = self._get_next_run_period()
         now = datetime.now()
         next_run = self.next_run + delta
-        while next_run < now:
-            self.next_run = next_run
-            next_run = self.next_run + delta
+
+        if next_run < now:
+            current = next_run
+            while next_run < now:
+                current = next_run
+                next_run += delta
+
+            self.next_run = current
 
     def _obtain_statement_data(self, date_since, date_until):
         """Hook for extension"""

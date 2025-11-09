@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-05 18:42+0000\n"
-"Last-Translator: Luis Felipe Miléo <mileo@kmee.com.br>\n"
+"PO-Revision-Date: 2025-11-07 00:43+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -41,22 +41,22 @@ msgstr "Criado em"
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__display_name
 msgid "Display Name"
-msgstr "Nome de Exibição"
+msgstr "Nome Exibido"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__id
 msgid "ID"
-msgstr "Última Modificação em"
+msgstr "ID"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project____last_update
 msgid "Last Modified on"
-msgstr "Última modificação em"
+msgstr "Última Modificação em"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__write_uid
 msgid "Last Updated by"
-msgstr "Última atualização em"
+msgstr "Última Atualização por"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__write_date

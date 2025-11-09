@@ -101,6 +101,9 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
         self._getExpectedStatements(0)
         self.provider.with_context(step={"hours": 8})._scheduled_pull()
         self._getExpectedStatements(1)
+        self.assertEqual(
+            self.provider.next_run, self.now + self.provider._get_next_run_period()
+        )
 
     def test_pull_skip_duplicates_by_unique_import_id(self):
         self.provider.statement_creation_mode = "weekly"

@@ -223,8 +223,11 @@ class AccountStatementImport(models.TransientModel):
                         sanitized_account_number,
                     ),
                 ],
-                limit=1,
             )
+            if len(journal) > 1:
+                journal = journal.filtered(
+                    lambda j: (j.currency_id or company.currency_id) == currency
+                )[:1]
             ctx_journal_id = self.env.context.get("journal_id")
             if journal and ctx_journal_id and journal.id != ctx_journal_id:
                 ctx_journal = journal_obj.browse(ctx_journal_id)
