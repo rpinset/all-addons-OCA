@@ -179,6 +179,7 @@ python-stdnum
 # generated from manifests external_dependencies
 roulier
 unidecode
+zeep
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 # generated from manifests external_dependencies
 python-barcode
@@ -249,7 +250,7 @@ odoo_test_helper
 odoorpc
 openupgradelib
 paramiko<4.0.0
-pygount==1.4.0
+pygount
 pysftp
 sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)

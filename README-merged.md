@@ -245,7 +245,7 @@ addon | version | maintainers | summary
 [account_fiscal_year](account_fiscal_year/) | 17.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_journal_lock_date](account_journal_lock_date/) | 17.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 17.0.1.0.0 |  | Lock All Posted Entries of Journals.
-[account_loan](account_loan/) | 17.0.2.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
+[account_loan](account_loan/) | 17.0.2.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 17.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_lock_to_date](account_lock_to_date/) | 17.0.1.0.1 |  | Allows to set an account lock date in the future.
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
@@ -263,7 +263,7 @@ addon | version | maintainers | summary
 [account_tax_repartition_line_tax_group_account](account_tax_repartition_line_tax_group_account/) | 17.0.1.0.0 |  | Set a default account from tax group to tax repartition lines
 [account_usability](account_usability/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [mail_template_substitute_account_move](mail_template_substitute_account_move/) | 17.0.1.0.0 | <a href='https://github.com/SodexisTeam'><img src='https://github.com/SodexisTeam.png' width='32' height='32' style='border-radius:50%;' alt='SodexisTeam'/></a> | Module to support Mail Template Substitution for Account Move
-[purchase_unreconciled](purchase_unreconciled/) | 17.0.2.0.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
+[purchase_unreconciled](purchase_unreconciled/) | 17.0.2.1.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
 
 [//]: # (end addons)
 
@@ -309,7 +309,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.8.0 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.8.1 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 17.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Sale Stock Report Non Billed
@@ -617,7 +617,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.2.3 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.3.0 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
@@ -1015,7 +1015,7 @@ addon | version | maintainers | summary
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_move_line](account_statement_import_move_line/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
-[account_statement_import_online](account_statement_import_online/) | 17.0.1.1.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 17.0.1.1.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.5 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_stripe](account_statement_import_online_stripe/) | 17.0.1.0.2 | <a href='https://github.com/juancarlosonate-tecnativa'><img src='https://github.com/juancarlosonate-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juancarlosonate-tecnativa'/></a> | Online bank statements for Stripe
@@ -2609,6 +2609,7 @@ addon | version | maintainers | summary
 [fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.2.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service workflow for Internet Service Providers
 [fieldservice_kanban_info](fieldservice_kanban_info/) | 17.0.1.0.0 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Display key service information on Field Service Kanban cards.
+[fieldservice_maintenance](fieldservice_maintenance/) | 17.0.1.0.0 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Integrate Field Service orders with maintenance requests
 [fieldservice_portal](fieldservice_portal/) | 17.0.1.1.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 17.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_recurring](fieldservice_recurring/) | 17.0.2.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage recurring Field Service orders
@@ -2940,6 +2941,7 @@ addon | version | maintainers | summary
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_document](hr_employee_document/) | 17.0.1.0.1 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.2 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
+[hr_employee_id](hr_employee_id/) | 17.0.1.0.0 |  | Employee ID
 [hr_employee_language](hr_employee_language/) | 17.0.1.0.0 |  | HR Employee Language
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 17.0.1.1.0 |  | Adds information about employee's medical examinations
 [hr_employee_partner_external](hr_employee_partner_external/) | 17.0.1.0.0 |  | Associate an external Partner to Employee
@@ -4893,7 +4895,7 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.1 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 17.0.2.5.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 17.0.2.5.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.2 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.2 |  | AEAT modelo 123
@@ -4906,6 +4908,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.5.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.8.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 17.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 17.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
@@ -4935,12 +4938,12 @@ addon | version | maintainers | summary
 [l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.0.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_reav](l10n_es_reav/) | 17.0.1.0.0 | <a href='https://github.com/Bilbonet'><img src='https://github.com/Bilbonet.png' width='32' height='32' style='border-radius:50%;' alt='Bilbonet'/></a> | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.1.3.4 |  | Libro de IVA
-[l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 17.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
+[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.0.1 |  | Libro de IVA
+[l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 17.0.1.0.1 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
-[l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.1 |  | Libro de IVA OSS
+[l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.2 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.2 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.4 |  | Prorrata de IVA para la localización española
 [l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.0.3 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 17.0.1.0.2 |  | Payment Acquirer: Redsys Implementation
 
@@ -5413,6 +5416,7 @@ addon | version | maintainers | summary
 [delivery_purchase_multi_destination](delivery_purchase_multi_destination/) | 17.0.1.0.0 |  | Multiple origins for delivery costs in purchases
 [delivery_roulier](delivery_roulier/) | 17.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Integration of multiple carriers
 [delivery_roulier_option](delivery_roulier_option/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Add options to roulier modules
+[delivery_schenker](delivery_schenker/) | 17.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_sendcloud_oca](delivery_sendcloud_oca/) | 17.0.1.0.0 |  | Compute shipping costs and ship with Sendcloud
 [delivery_state](delivery_state/) | 17.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_ups_oca](delivery_ups_oca/) | 17.0.1.0.0 |  | Integrate UPS webservice
@@ -7343,7 +7347,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_queue](attachment_queue/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
-[auditlog](auditlog/) | 17.0.1.0.7 |  | Audit Log
+[auditlog](auditlog/) | 17.0.1.1.0 |  | Audit Log
 [auto_backup](auto_backup/) | 17.0.1.1.0 |  | Backups database
 [base_cron_exclusion](base_cron_exclusion/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_exception](base_exception/) | 17.0.1.1.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
@@ -7367,7 +7371,7 @@ addon | version | maintainers | summary
 [html_text](html_text/) | 17.0.1.0.0 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 17.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
 [jsonifier](jsonifier/) | 17.0.1.0.0 |  | JSON-ify data for all models
-[module_analysis](module_analysis/) | 17.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
+[module_analysis](module_analysis/) | 17.0.1.0.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 17.0.1.0.0 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 17.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
 [onchange_helper](onchange_helper/) | 17.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
