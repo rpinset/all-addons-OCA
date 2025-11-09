@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-11-06 13:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: sequence_range_end
 #: model:ir.model.fields,field_description:sequence_range_end.field_ir_sequence__display_name
@@ -26,29 +26,29 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:sequence_range_end.field_ir_sequence__id
 #: model:ir.model.fields,field_description:sequence_range_end.field_ir_sequence_date_range__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sequence_range_end
 #: code:addons/sequence_range_end/models/ir_sequence.py:0
 #, python-format
 msgid "Invalid prefix or suffix for sequence '%s'"
-msgstr ""
+msgstr "Prefisso o suffisso non valido per la sequenza '%s'"
 
 #. module: sequence_range_end
 #: model:ir.model.fields,field_description:sequence_range_end.field_ir_sequence____last_update
 #: model:ir.model.fields,field_description:sequence_range_end.field_ir_sequence_date_range____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: sequence_range_end
 #: model:ir.model,name:sequence_range_end.model_ir_sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sequenza"
 
 #. module: sequence_range_end
 #: model:ir.model,name:sequence_range_end.model_ir_sequence_date_range
 msgid "Sequence Date Range"
-msgstr ""
+msgstr "Intervallo di date della sequenza"
 
 #. module: sequence_range_end
 #: model_terms:ir.ui.view,arch_db:sequence_range_end.sequence_view
@@ -56,3 +56,5 @@ msgid ""
 "You can also use 'range_end_' to use the end date of the range, e.g. "
 "%(range_end_year)s."
 msgstr ""
+"È anche possibile impiegare 'range_end_' per utilizzare la data di fine "
+"dell'intervallo, ad esempio %(range_end_year)s."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-27 14:26+0000\n"
+"PO-Revision-Date: 2025-11-06 13:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: sequence_reset_period
 #: model:ir.model.fields.selection,name:sequence_reset_period.selection__ir_sequence__range_reset__daily
 msgid "Daily"
-msgstr ""
+msgstr "Giornaliero"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields,field_description:sequence_reset_period.field_ir_sequence__display_name
@@ -29,34 +29,34 @@ msgstr "Nome visualizzato"
 #. module: sequence_reset_period
 #: model:ir.model.fields,field_description:sequence_reset_period.field_ir_sequence__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields,field_description:sequence_reset_period.field_ir_sequence____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields.selection,name:sequence_reset_period.selection__ir_sequence__range_reset__monthly
 msgid "Monthly"
-msgstr ""
+msgstr "Mensile"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields,field_description:sequence_reset_period.field_ir_sequence__range_reset
 msgid "Range Reset"
-msgstr ""
+msgstr "Resetta intervallo"
 
 #. module: sequence_reset_period
 #: model:ir.model,name:sequence_reset_period.model_ir_sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sequenza"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields.selection,name:sequence_reset_period.selection__ir_sequence__range_reset__weekly
 msgid "Weekly"
-msgstr ""
+msgstr "Settimanale"
 
 #. module: sequence_reset_period
 #: model:ir.model.fields.selection,name:sequence_reset_period.selection__ir_sequence__range_reset__yearly
 msgid "Yearly"
-msgstr ""
+msgstr "Annuale"

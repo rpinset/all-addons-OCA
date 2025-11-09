@@ -1522,16 +1522,16 @@ Date:   Fri Jun 13 09:05:16 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 6b6ac5e36ce6115a63816c750328c9b226016433
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Wed Sep 17 06:42:12 2025 +0000
+commit bc790c058f9a9eb0aa2d9e07f503b248e3acb670
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Nov 6 11:27:02 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 97.2% (71 of 73 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: server-ux-14.0/server-ux-14.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-date_range/tr/
+    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation_waiting
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation_waiting/it/
 
 
 ## community-data-files
@@ -1719,11 +1719,11 @@ Date:   Thu Oct 23 06:53:24 2025 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 42ab79581bd61575dbea0e482bd1d07de01423cc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 28 10:00:13 2025 +0000
+commit 783c6e60b35840e263dae553b6ad7d7e9f12e982
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Nov 6 11:16:48 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## website-cms
