@@ -4,15 +4,7 @@
 from odoo import api, models
 from odoo.exceptions import ValidationError
 
-DONE_PICKING_STATE = "done"
-
-PICKING_TYPES = [
-    ("incoming", "Incoming"),
-    ("outgoing", "Outgoing"),
-    ("internal", "Internal"),
-    ("mrp_operation", "Manufacturing Operation"),
-]
-DOMAIN_PICKING_TYPES = [t[0] for t in PICKING_TYPES]
+ALLOWED_PICKING_STATES = ["done"]
 
 
 class StockPickingCheckerMixin(models.AbstractModel):
@@ -31,7 +23,7 @@ class StockPickingCheckerMixin(models.AbstractModel):
 
     @api.model
     def _check_pickings_state(self, pickings):
-        if pickings.filtered(lambda p: p.state != DONE_PICKING_STATE):
+        if pickings.filtered(lambda p: p.state not in ALLOWED_PICKING_STATES):
             raise ValidationError(
                 self.env._(
                     "At least one picking you've selected doesn't "

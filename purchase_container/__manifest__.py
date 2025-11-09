@@ -1,7 +1,7 @@
 {
     "name": "Purchase Container",
     "summary": """Add containers to purchase orders and stock pickings.""",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "license": "AGPL-3",
     "maintainers": ["nayatec"],
     "author": "Akretion, Odoo Community Association (OCA)",
@@ -11,6 +11,7 @@
     ],
     "data": [
         "data/container.type.csv",
+        "data/cron_data.xml",
         "views/container_type.xml",
         "views/purchase.xml",
         "views/purchase_container.xml",

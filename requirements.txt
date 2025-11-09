@@ -128,6 +128,7 @@ chardet
 # generated from manifests external_dependencies
 codicefiscale
 openupgradelib
+unidecode
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
 # generated from manifests external_dependencies
 jaconv
@@ -252,6 +253,7 @@ cryptography
 dataclasses
 odoo_test_helper
 odoorpc
+openpyxl
 openupgradelib
 paramiko<4.0.0
 pysftp
