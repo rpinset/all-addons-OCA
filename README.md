@@ -1383,16 +1383,11 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit ca725694024c12216121dcd9930a53411cda6cd0
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Oct 3 08:02:57 2025 +0000
+commit 08b0c6a81d051b4d7a7261e46962abe7731aff8c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 7 09:33:55 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-tools-15.0/server-tools-15.0-auditlog
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-auditlog/
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1433,11 +1428,16 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 244c8f58b3cfc64cb5fdb08a8a69305794bea76a
-Author: JHernandezConinpe <jhernandez@coninpe.es>
-Date:   Thu Aug 14 12:18:35 2025 +0000
+commit 13689f27ae262fb7a24ece7613acbbde542ca9e6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Nov 6 11:28:10 2025 +0000
 
-    Added translation using Weblate (Spanish)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 65.8% (83 of 126 strings)
+    
+    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
 
 
 ## community-data-files

@@ -9,7 +9,7 @@
     " custom modules",
     "author": "GRAP, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-tools",
-    "version": "15.0.1.2.0",
+    "version": "15.0.1.2.1",
     "license": "AGPL-3",
     "depends": ["base"],
     "data": [
@@ -26,7 +26,7 @@
         "data/ir_module_type_rule.xml",
     ],
     "external_dependencies": {
-        "python": ["pygount==1.4.0"],
+        "python": ["pygount"],
     },
     "post_init_hook": "analyse_installed_modules",
     "installable": True,
