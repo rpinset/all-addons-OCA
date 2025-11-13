@@ -546,16 +546,16 @@ Date:   Tue Jun 17 07:19:18 2025 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 84b5d6f9904ba3b3ff6b7ec0f384aec688b9105b
+commit 76d71165729aa66d4431c6e0e05b375a385015da
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:27:14 2025 +0000
+Date:   Mon Nov 10 09:32:47 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (27 of 27 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: fleet-14.0/fleet-14.0-fleet_vehicle_capacity
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-14-0/fleet-14-0-fleet_vehicle_capacity/it/
+    Translation: fleet-14.0/fleet-14.0-fleet_vehicle_inspection
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-14-0/fleet-14-0-fleet_vehicle_inspection/it/
 
 
 ## infrastructure-dns
@@ -810,9 +810,9 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit b97d7a0bba1971a781a04d235835966c82a12c9e
+commit b8f25d30f04040d4154ced23ef0ce26ff41bc5b0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 17 22:05:23 2025 +0000
+Date:   Mon Nov 10 10:44:01 2025 +0000
 
     [BOT] post-merge updates
 
@@ -873,16 +873,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 1e3151b447dccbac8a8627416271724fdd597da2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 29 20:46:51 2025 +0000
+commit 353d349f0a2ea2f541555fd3a87cc6bd3b660e0e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 13 18:10:34 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (66 of 66 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_rma
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_rma/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1000,9 +995,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 58bc692be2991b19b11c16f625626080f558c498
+commit 9b36a6849d6e56d1b30eb0bb8b2816fa8ede7cf6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 31 19:24:26 2025 +0000
+Date:   Tue Nov 11 16:07:13 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1136,16 +1131,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 533b2d1b856de0a41a992a0f2176205192d6f2ef
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 15 09:09:29 2025 +0000
+commit 6540fe6b9f053ef86b30f17cae28c12d7ef4f4aa
+Author: gslabit <giovanni@gslab.it>
+Date:   Mon Nov 10 14:09:30 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (52 of 52 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_removal_location_by_priority
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_removal_location_by_priority/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_pull_list
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_pull_list/it/
 
 
 ## stock-logistics-reporting
@@ -1705,16 +1700,11 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 68b9db799a6a6b7c4cabf68ddfe4a7af08b51723
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 23 06:53:24 2025 +0000
+commit 8d17efca4d0f5ae3d174699e77574aabcec08cd1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Nov 11 09:50:08 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (24 of 24 strings)
-    
-    Translation: web-14.0/web-14.0-web_responsive
-    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_responsive/it/
+    [BOT] post-merge updates
 
 
 ## website
