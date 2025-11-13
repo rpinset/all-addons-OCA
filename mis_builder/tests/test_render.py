@@ -91,6 +91,13 @@ class TestRendering(common.TransactionCase):
         self.style.dp = 0
         self.assertEqual("1,000,000", self._render(1))
 
+    def test_render_ieee754(self):
+        self.style.dp_inherit = False
+        self.style.dp = 1
+        self.assertEqual("9.5", self._render(9.45))
+        self.assertEqual("9.6", self._render(9.55))
+        self.assertEqual("10.0", self._render(9.95))
+
     def test_render_pct(self):
         self.assertEqual("100\xa0%", self._render(1, TYPE_PCT))
         self.assertEqual("50\xa0%", self._render(0.5, TYPE_PCT))

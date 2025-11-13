@@ -6,6 +6,8 @@
 # From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
 # generated from manifests external_dependencies
 freezegun
+numpy-financial<=1.0.0
+numpy>=1.15
 python-dateutil
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
@@ -270,6 +272,9 @@ python-jose
 # generated from manifests external_dependencies
 cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
+# generated from manifests external_dependencies
+mysqlclient
+sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # generated from manifests external_dependencies

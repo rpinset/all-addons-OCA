@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-01 10:39+0000\n"
-"PO-Revision-Date: 2024-06-12 11:35+0000\n"
+"PO-Revision-Date: 2025-11-13 10:21+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: Swedish (https://www.transifex.com/oca/teams/23907/sv/)\n"
 "Language: sv\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
 msgid "Config"
-msgstr "Konfig"
+msgstr "Konfigurering"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__create_uid
@@ -89,7 +89,7 @@ msgstr "Tekniskt namn"
 #. module: server_environment
 #: model:ir.model.fields,help:server_environment.field_server_env_techname_mixin__tech_name
 msgid "Unique name for technical purposes. Eg: server env keys."
-msgstr "Unikt namn för tekniska ändamål. T.ex.: serverns env-nycklar."
+msgstr "Unikt namn för tekniska ändamål. T.ex. serverns env-nycklar."
 
 #. module: server_environment
 #: model:res.groups,name:server_environment.has_server_configuration_access
@@ -159,12 +159,12 @@ msgstr "odoo | db_port"
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_replica_host
 msgid "odoo | db_replica_host"
-msgstr ""
+msgstr "odoo | db_replica_host"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_replica_port
 msgid "odoo | db_replica_port"
-msgstr ""
+msgstr "odoo | db_replica_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_sslmode
@@ -259,7 +259,7 @@ msgstr "odoo | limit_memory_hard"
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_hard_gevent
 msgid "odoo | limit_memory_hard_gevent"
-msgstr ""
+msgstr "odoo | limit_memory_hard_gevent"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_soft
@@ -269,7 +269,7 @@ msgstr "odoo | limit_memory_soft"
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_soft_gevent
 msgid "odoo | limit_memory_soft_gevent"
-msgstr ""
+msgstr "odoo | limit_memory_soft_gevent"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_request
@@ -294,7 +294,7 @@ msgstr "odoo | limit_time_real_cron"
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_worker_cron
 msgid "odoo | limit_time_worker_cron"
-msgstr ""
+msgstr "odoo | limit_time_worker_cron"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_list_db
@@ -354,7 +354,7 @@ msgstr "odoo | pidfile"
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pre_upgrade_scripts
 msgid "odoo | pre_upgrade_scripts"
-msgstr ""
+msgstr "odoo | pre_upgrade_scripts"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode

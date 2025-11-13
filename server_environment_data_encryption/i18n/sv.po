@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* server_environment_data_encryption
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-13 12:42+0000\n"
+"Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: server_environment_data_encryption
+#. odoo-python
+#: code:addons/server_environment_data_encryption/models/server_env_mixin.py:0
+msgid "Define values for "
+msgstr "Definiera värden för "
+
+#. module: server_environment_data_encryption
+#: model:ir.model,name:server_environment_data_encryption.model_server_env_mixin
+msgid "Mixin to add server environment in existing models"
+msgstr "Mixin för att lägga till servermiljö i befintliga modeller"
+
+#. module: server_environment_data_encryption
+#. odoo-python
+#: code:addons/server_environment_data_encryption/models/server_env_mixin.py:0
+msgid "Modify values for {} environment"
+msgstr "Modifiera värden för {} miljön"
+
+#. module: server_environment_data_encryption
+#. odoo-python
+#: code:addons/server_environment_data_encryption/models/server_env_mixin.py:0
+msgid "The encryption key for current environement is not defined"
+msgstr "Krypteringsnyckeln för den nuvarande miljön är inte definierad"
+
+#. module: server_environment_data_encryption
+#. odoo-python
+#: code:addons/server_environment_data_encryption/models/server_env_mixin.py:0
+msgid ""
+"you need to define the running_env entry in your odoo configuration file"
+msgstr "Du måste definiera running_env-posten i din odoo-konfigurationsfil"
