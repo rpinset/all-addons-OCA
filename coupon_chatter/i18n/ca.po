@@ -93,12 +93,7 @@ msgstr ""
 
 #. module: coupon_chatter
 #: model:ir.model,name:coupon_chatter.model_loyalty_program
-msgid "Loyalty display on a website"
-msgstr ""
-
-#. module: coupon_chatter
-#: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_main_attachment_id
-msgid "Main Attachment"
+msgid "Loyalty Program"
 msgstr ""
 
 #. module: coupon_chatter

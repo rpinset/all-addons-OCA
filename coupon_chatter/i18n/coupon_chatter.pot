@@ -161,3 +161,13 @@ msgstr ""
 #: model:ir.model.fields,help:coupon_chatter.field_loyalty_program__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr ""
+
+#. module: coupon_chatter
+#: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: coupon_chatter
+#: model:ir.model.fields,help:coupon_chatter.field_loyalty_program__website_message_ids
+msgid "Website communication history"
+msgstr ""

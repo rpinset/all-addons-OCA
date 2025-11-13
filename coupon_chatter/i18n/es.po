@@ -93,13 +93,8 @@ msgstr "Es Seguidor/a"
 
 #. module: coupon_chatter
 #: model:ir.model,name:coupon_chatter.model_loyalty_program
-msgid "Loyalty display on a website"
-msgstr "Visualización de la fidelidad en un sitio web"
-
-#. module: coupon_chatter
-#: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Archivo Adjunto Principal"
+msgid "Loyalty Program"
+msgstr ""
 
 #. module: coupon_chatter
 #: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_has_error
@@ -183,6 +178,12 @@ msgstr "Mensajes de la página web"
 #: model:ir.model.fields,help:coupon_chatter.field_loyalty_program__website_message_ids
 msgid "Website communication history"
 msgstr "Historial de la comunicación en la página web"
+
+#~ msgid "Loyalty display on a website"
+#~ msgstr "Visualización de la fidelidad en un sitio web"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Archivo Adjunto Principal"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Error en la entrega de sms"

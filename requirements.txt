@@ -199,6 +199,8 @@ pandas>=0.25.3
 # From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
 # From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 # generated from manifests external_dependencies
@@ -267,6 +269,7 @@ python-ldap
 cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 # generated from manifests external_dependencies
+mysqlclient
 sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)

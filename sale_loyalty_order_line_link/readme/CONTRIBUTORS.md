@@ -1,0 +1,5 @@
+- [Tecnativa](https://www.tecnativa.com):
+  - David Vidal
+  - Pilar Vargas
+- [Ooops404](https://www.ooops404.com):
+  - Ilyas

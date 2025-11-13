@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-04 10:26+0000\n"
+"PO-Revision-Date: 2025-11-11 12:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -30,6 +30,11 @@ msgstr "(lasciare vuoto per fatturare tutte le liquidazioni pendenti)"
 #: model_terms:ir.ui.view,arch_db:account_commission.report_settlement_document
 msgid "<strong>Settlement invoice:</strong>"
 msgstr "<strong>Fattura provvigione:</strong>"
+
+#. module: account_commission
+#: model_terms:ir.ui.view,arch_db:account_commission.grouped_report_settlement_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totale</strong>"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent__agent_id
@@ -240,6 +245,7 @@ msgstr "ID"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent__invoice_id
+#: model_terms:ir.ui.view,arch_db:account_commission.grouped_report_settlement_document
 msgid "Invoice"
 msgstr "Fattura"
 
@@ -375,6 +381,7 @@ msgstr "Padre"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__partner_id
+#: model_terms:ir.ui.view,arch_db:account_commission.grouped_report_settlement_document
 msgid "Partner"
 msgstr "Partner"
 
@@ -504,6 +511,7 @@ msgstr "Stato"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__price_subtotal
+#: model_terms:ir.ui.view,arch_db:account_commission.grouped_report_settlement_document
 msgid "Subtotal"
 msgstr "Subtotale"
 

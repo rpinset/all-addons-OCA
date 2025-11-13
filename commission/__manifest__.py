@@ -3,7 +3,7 @@
 # Copyright 2014-2022 Tecnativa - Pedro M. Baeza
 {
     "name": "Commissions",
-    "version": "17.0.1.1.1",
+    "version": "17.0.1.1.2",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "category": "Invoicing",
     "license": "AGPL-3",
@@ -21,6 +21,7 @@
         "views/res_partner_views.xml",
         "reports/commission_settlement_report.xml",
         "reports/report_settlement_templates.xml",
+        "reports/gruoped_report_settlement_templates.xml",
         "wizards/commission_make_settle_views.xml",
     ],
     "demo": ["demo/commission_and_agent_demo.xml"],

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-22 10:44+0000\n"
+"PO-Revision-Date: 2025-11-11 09:49+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: coupon_chatter
 #: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_needaction
@@ -93,13 +93,8 @@ msgstr "Segue"
 
 #. module: coupon_chatter
 #: model:ir.model,name:coupon_chatter.model_loyalty_program
-msgid "Loyalty display on a website"
-msgstr "Programma fedeltà visualizzato su sito web"
-
-#. module: coupon_chatter
-#: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Allegato principale"
+msgid "Loyalty Program"
+msgstr "Programma fedeltà"
 
 #. module: coupon_chatter
 #: model:ir.model.fields,field_description:coupon_chatter.field_loyalty_program__message_has_error
@@ -183,3 +178,9 @@ msgstr "Messaggi sito web"
 #: model:ir.model.fields,help:coupon_chatter.field_loyalty_program__website_message_ids
 msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
+
+#~ msgid "Loyalty display on a website"
+#~ msgstr "Programma fedeltà visualizzato su sito web"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Allegato principale"

@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-01 13:21+0000\n"
-"PO-Revision-Date: 2025-07-01 15:23+0200\n"
+"POT-Creation-Date: 2025-10-27 15:03+0000\n"
+"PO-Revision-Date: 2025-10-27 16:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. module: delivery_cbl
 #: model_terms:ir.ui.view,arch_db:delivery_cbl.report_cbl_manifest
@@ -158,13 +158,11 @@ msgstr ""
 
 #. module: delivery_cbl
 #: model_terms:ir.ui.view,arch_db:delivery_cbl.wizard_confirm_cbl_pickings
-#, fuzzy
 msgid "Confirm Shipments"
 msgstr "CBL: Confirmar envíos"
 
 #. module: delivery_cbl
 #: model:ir.actions.act_window,name:delivery_cbl.action_wizard_confirm_cbl_pickings
-#, fuzzy
 msgid "Confirm pickings"
 msgstr "Confirmar"
 
@@ -198,6 +196,21 @@ msgstr ""
 "Formato para generar etiquetas de envío.\n"
 "Si se selecciona PDF, las etiquetas se generarán utilizando un servicio "
 "externo (labelary.com)."
+
+#. module: delivery_cbl
+#: model:ir.model.fields.selection,name:delivery_cbl.selection__delivery_carrier__cbl_freight_type__d
+msgid "Freight Collect"
+msgstr "Portes debidos"
+
+#. module: delivery_cbl
+#: model:ir.model.fields.selection,name:delivery_cbl.selection__delivery_carrier__cbl_freight_type__p
+msgid "Freight Prepaid"
+msgstr "Portes pagados"
+
+#. module: delivery_cbl
+#: model:ir.model.fields,field_description:delivery_cbl.field_delivery_carrier__cbl_freight_type
+msgid "Freight Type"
+msgstr "Tipo de portes"
 
 #. module: delivery_cbl
 #: model:ir.model.fields,field_description:delivery_cbl.field_wizard_confirm_cbl_pickings__id
@@ -286,7 +299,7 @@ msgstr "No hay albaranes para procesar"
 #. module: delivery_cbl
 #: model:ir.model,name:delivery_cbl.model_stock_picking
 msgid "Transfer"
-msgstr "Traslado"
+msgstr "Transferencia"
 
 #. module: delivery_cbl
 #. odoo-python
