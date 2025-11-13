@@ -708,6 +708,11 @@ msgid "Product Category"
 msgstr "Ürün Kategorisi"
 
 #. module: quality_control_oca
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection__product_image
+msgid "Product Image"
+msgstr ""
+
+#. module: quality_control_oca
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_template_line__product_template
 msgid "Product Template"
 msgstr "Ürün"

@@ -66,6 +66,9 @@ class QcInspection(models.Model):
         store=True,
         help="Product associated with the inspection",
     )
+    product_image = fields.Image(
+        related="product_id.image_1920", string="Product Image"
+    )
     qty = fields.Float(string="Quantity", default=1.0)
     test = fields.Many2one(comodel_name="qc.test", readonly=True)
     inspection_lines = fields.One2many(

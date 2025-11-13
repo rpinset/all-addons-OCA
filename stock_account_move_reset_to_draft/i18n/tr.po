@@ -6,29 +6,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-11-12 19:42+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: none\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_account_move_reset_to_draft
 #. odoo-python
 #: code:addons/stock_account_move_reset_to_draft/models/account_move.py:0
 #, python-format
 msgid "Inventory valuation records are intertwined for %(line_name)s."
-msgstr ""
+msgstr "Stok değerleme kayıtları %(line_name)s için iç içe geçmiştir."
 
 #. module: stock_account_move_reset_to_draft
 #: model:ir.model,name:stock_account_move_reset_to_draft.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Yevmiye Kaydı"
 
 #. module: stock_account_move_reset_to_draft
 #. odoo-python
 #: code:addons/stock_account_move_reset_to_draft/models/account_move.py:0
 #, python-format
 msgid "The inventory has already been (partially) consumed for %(line_name)s."
-msgstr ""
+msgstr "Stok %(line_name)s için zaten (kısmen) tüketildi."

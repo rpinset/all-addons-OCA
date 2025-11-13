@@ -20,6 +20,13 @@ msgstr ""
 "X-Generator: Weblate 5.10.4\n"
 
 #. module: quality_control_stock_oca
+#. odoo-python
+#: code:addons/quality_control_stock_oca/models/stock_picking.py:0
+#, python-format
+msgid "Control quality is required to validate this Transfert."
+msgstr ""
+
+#. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_lot__created_inspections
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_picking__created_inspections
 msgid "Created inspections"
@@ -28,8 +35,19 @@ msgstr "Oluşturulan denetimler"
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_lot__done_inspections
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_picking__done_inspections
+#: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_picking_qc_view
 msgid "Done inspections"
 msgstr "Denetimleri tamamla"
+
+#. module: quality_control_stock_oca
+#: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_picking_qc_view
+msgid "Failed inspections"
+msgstr ""
+
+#. module: quality_control_stock_oca
+#: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_picking__inspection_required_message
+msgid "Inspection Required Message"
+msgstr ""
 
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_lot__qc_inspections_ids
@@ -60,6 +78,12 @@ msgid "Inspections related to this picking."
 msgstr "Bu emirle ilişkili denetimler."
 
 #. module: quality_control_stock_oca
+#: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_inspection__is_mandatory_to_validate
+#: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_trigger__is_mandatory_to_validate
+msgid "Is Mandatory To Validate"
+msgstr ""
+
+#. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_inspection__lot_id
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_inspection_line__lot_id
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.qc_inspection_line_search_stock_view
@@ -71,6 +95,11 @@ msgstr "Lot"
 #: model:ir.model,name:quality_control_stock_oca.model_stock_lot
 msgid "Lot/Serial"
 msgstr "Lot/Seri"
+
+#. module: quality_control_stock_oca
+#: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_picking_qc_view
+msgid "Passed inspections"
+msgstr ""
 
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_inspection__picking_id
@@ -150,6 +179,14 @@ msgstr "Stok Hareketi"
 #: model:ir.model,name:quality_control_stock_oca.model_stock_picking
 msgid "Transfer"
 msgstr "Transfer"
+
+#. module: quality_control_stock_oca
+#. odoo-python
+#: code:addons/quality_control_stock_oca/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You must validate the following inspections before validating the picking:\n"
+msgstr ""
 
 #. module: quality_control_stock_oca
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_lot_qc_view

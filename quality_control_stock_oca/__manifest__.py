@@ -5,7 +5,7 @@
 
 {
     "name": "Quality control - Stock (OCA)",
-    "version": "16.0.1.2.2",
+    "version": "16.0.1.3.0",
     "category": "Quality control",
     "license": "AGPL-3",
     "author": "OdooMRP team, AvanzOSC, Serv. Tecnol. Avanzados - Pedro M. Baeza, "
