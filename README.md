@@ -408,11 +408,16 @@ Date:   Wed Jun 4 03:37:02 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit c348e705a0fa4957933499cee98d420e1395645c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:41:22 2025 +0000
+commit 38f555a68d9d9bfba61dae2ee75c9102867afb0b
+Author: Sergio Teruel <sergio.teruel@tecnativa.com>
+Date:   Tue Nov 11 09:21:18 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (143 of 143 strings)
+    
+    Translation: commission-15.0/commission-15.0-commission
+    Translate-URL: https://translation.odoo-community.org/projects/commission-15-0/commission-15-0-commission/es/
 
 
 ## event
@@ -463,9 +468,9 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 33e7be2fb97836a510144177a4abf27d19b89e12
+commit 1a9d24a58bf2040466c5cb3dd0efa5b57a759412
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 20 15:41:18 2025 +0000
+Date:   Wed Nov 12 09:10:13 2025 +0000
 
     [BOT] post-merge updates
 
@@ -499,11 +504,16 @@ Date:   Wed Jun 4 03:17:34 2025 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 2e18a9c0177512e2bc6a1cc6fd3afac1eb75e833
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:54:32 2025 +0000
+commit 9dff79578372c949fc32b3dfbc630b8fd55a9beb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 10 09:32:48 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (128 of 128 strings)
+    
+    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_inspection
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_inspection/it/
 
 
 ## infrastructure-dns
@@ -928,9 +938,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 6589675a61bea9e1c2aea4dda9d7be4361308701
+commit 06757f5a5eda1a37ffed89504a1b1ef98296d766
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 3 10:58:35 2025 +0000
+Date:   Tue Nov 11 16:41:01 2025 +0000
 
     [BOT] post-merge updates
 
@@ -955,16 +965,11 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 61382c657816a947c57b3300ed7aac57c45d86f1
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 15 07:36:33 2025 +0000
+commit bde0188cb4a7b88707d4221d81740304c32153e3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 12 11:09:07 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-thailand-15.0/l10n-thailand-15.0-currency_rate_update_TH_BOT
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-thailand-15-0/l10n-thailand-15-0-currency_rate_update_TH_BOT/
+    [BOT] post-merge updates
 
 
 ## l10n-turkey
