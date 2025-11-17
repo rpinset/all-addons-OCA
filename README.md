@@ -344,9 +344,9 @@ Date:   Tue Nov 4 07:40:33 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit dfdb362f58bd66518816c970b63e293b67540c01
+commit b29fd41d9a4713baef0b3e4f30644e95775c3314
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 10 15:01:03 2025 +0000
+Date:   Fri Nov 14 09:00:20 2025 +0000
 
     [BOT] post-merge updates
 
@@ -723,11 +723,11 @@ Date:   Sun Feb 2 19:15:17 2025 +0000
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 1f9dbcec01c4484ee1619976b978badf13648878
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:16:15 2025 +0000
+commit 81f883c4296b69ec5dfaaf8a9f82d2e1f2284b60
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Nov 15 15:42:47 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-estonia
@@ -944,16 +944,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e17b1460e3c556a8fefe8019504960d61ae08505
+commit 33602567180e10245e20b1cf51b0b23bcf0ea5e6
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Nov 12 07:44:36 2025 +0000
+Date:   Sat Nov 15 21:52:08 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_account_asset
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_account_asset/
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_verifactu_oca
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_verifactu_oca/
 
 
 ## l10n-switzerland
@@ -1012,16 +1012,11 @@ Date:   Sun Feb 2 19:50:06 2025 +0000
 
 ## l10n-usa
 From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
-commit e5d06fba703e6d1b4f2ddfb99f14f2a0084cd20f
-Author: Leonardo J. Caballero G. <leonardocaballero@gmail.com>
-Date:   Tue Aug 19 16:52:20 2025 +0000
+commit 6bd3bde7708f3db4410e058add6acb2c0810de13
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Nov 16 21:17:31 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (22 of 22 strings)
-    
-    Translation: l10n-usa-17.0/l10n-usa-17.0-l10n_us_form_1099
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-usa-17-0/l10n-usa-17-0-l10n_us_form_1099/es/
+    [BOT] post-merge updates
 
 
 ## l10n-venezuela
@@ -1287,16 +1282,16 @@ Date:   Sun Feb 2 20:17:01 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 327d55fc84633f0e52d88a9d19ffe3efae08c04d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 16 06:23:11 2025 +0000
+commit ff8b9f2e881a6eedd81bcf9d275d56d270d17fa6
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 17 11:42:24 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: contract-17.0/contract-17.0-contract_sale_invoicing
-    Translate-URL: https://translation.odoo-community.org/projects/contract-17-0/contract-17-0-contract_sale_invoicing/it/
+    Translate-URL: https://translation.odoo-community.org/projects/contract-17-0/contract-17-0-contract_sale_invoicing/
 
 
 ## program
