@@ -14,7 +14,7 @@
                 <filter
                     name="unsent"
                     string="Not Sent"
-                    domain="[('is_move_sent', '=', False)]"
+                    domain="[('is_move_sent', '=', False), ('state', '!=', 'cancel')]"
                 />
                 <filter
                     name="sent"

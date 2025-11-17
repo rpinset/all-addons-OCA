@@ -6,7 +6,7 @@
     "name": "Account Move Sent Usability",
     "summary": """
         Allows to filter moves on 'is_move_sent' and to see the value of the field in form""",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "license": "AGPL-3",
     "author": "BCIM,ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-invoicing",

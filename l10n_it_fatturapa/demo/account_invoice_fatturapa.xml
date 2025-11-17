@@ -6,6 +6,10 @@
         <field name="amount">22</field>
         <field name="type_tax_use">sale</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             model="account.tax.repartition.line"
             eval="[(5, 0, 0),
@@ -43,6 +47,10 @@
         <field name="amount">10</field>
         <field name="type_tax_use">sale</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             model="account.tax.repartition.line"
             eval="[(5, 0, 0),
@@ -79,6 +87,10 @@
         <field name="description">22 pur</field>
         <field name="amount">22</field>
         <field name="type_tax_use">purchase</field>
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
         <field
             name="invoice_repartition_line_ids"
             model="account.tax.repartition.line"
@@ -118,6 +130,10 @@
         <field name="payability">S</field>
         <field name="type_tax_use">sale</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             model="account.tax.repartition.line"
             eval="[(5, 0, 0),
@@ -154,6 +170,10 @@
         <field name="description">00</field>
         <field name="amount">0.00</field>
         <field name="kind_id" ref="l10n_it_account_tax_kind.n4" />
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
         <field
             name="law_reference"
         >Minimum contributors regime art.27 c.1-2 DL.98/11</field>
@@ -196,6 +216,10 @@
         >Minimum contributors regime art.27 c.1-2 DL.98/11</field>
         <field name="type_tax_use">purchase</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
             (0,0, {
@@ -229,6 +253,10 @@
         <field name="amount">0.00</field>
         <field name="kind_id" ref="l10n_it_account_tax_kind.n1" />
         <field name="law_reference">Excluding ex Article 15</field>
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
         <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
@@ -264,6 +292,10 @@
         <field name="kind_id" ref="l10n_it_account_tax_kind.n2_1" />
         <field name="law_reference">Not subject to VAT law</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
             (0,0, {
@@ -297,6 +329,10 @@
         <field name="amount">0.00</field>
         <field name="kind_id" ref="l10n_it_account_tax_kind.n3_1" />
         <field name="law_reference">Not subject to VAT law</field>
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
         <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
@@ -332,6 +368,10 @@
         <field name="kind_id" ref="l10n_it_account_tax_kind.n6_1" />
         <field name="law_reference">Reverse Charge</field>
         <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
+        <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
             (0,0, {
@@ -365,6 +405,10 @@
         <field name="amount">0.00</field>
         <field name="kind_id" ref="l10n_it_account_tax_kind.n2_2" />
         <field name="law_reference">Escluso Art. 13 5C DPR 633/72</field>
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
         <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
@@ -406,6 +450,13 @@
     </record>
     <record id="base.main_partner" model="res.partner">
         <field name="ipa_code">UFPQ1O</field>
+    </record>
+
+    <record id="base.user_admin" model="res.users">
+        <field
+            name="company_id"
+            eval="ref('l10n_it.demo_company_it', raise_if_not_found=False) or ref('base.main_company')"
+        />
     </record>
 
     <record id="account.account_payment_term_immediate" model="account.payment.term">

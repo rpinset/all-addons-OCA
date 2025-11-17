@@ -1162,6 +1162,11 @@ msgid "Services Sale - Section 3"
 msgstr ""
 
 #. module: l10n_it_intrastat_statement
+#: model:ir.model.fields,field_description:l10n_it_intrastat_statement.field_account_intrastat_statement__intrastat_site_number
+msgid "Site number"
+msgstr ""
+
+#. module: l10n_it_intrastat_statement
 #: model:ir.model.fields,field_description:l10n_it_intrastat_statement.field_account_intrastat_statement__special_cases
 msgid "Special Cases"
 msgstr ""
