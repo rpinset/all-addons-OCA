@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-17 02:07+0000\n"
-"PO-Revision-Date: 2024-06-12 11:45+0000\n"
+"PO-Revision-Date: 2025-11-17 10:46+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: Swedish (https://www.transifex.com/oca/teams/23907/sv/)\n"
 "Language: sv\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_groups__role_count
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__role_count
 msgid "# User Roles"
-msgstr ""
+msgstr "# Användarroller"
 
 #. module: base_user_role
 #. odoo-python
@@ -35,16 +35,19 @@ msgstr "%s (kopia)"
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_form_inherit
 msgid "<em>Any configuration changes made here will not be persistent.</em>"
 msgstr ""
+"<em>Eventuella konfigurationsändringar som görs här kommer inte att vara "
+"beständiga.</em>"
 
 #. module: base_user_role
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_form_inherit
 msgid "<strong>The access rights of this user are managed by roles.</strong>"
 msgstr ""
+"<strong>Denna användares åtkomsträttigheter hanteras av roller.</strong>"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__api_key_duration
 msgid "API Keys maximum duration days"
-msgstr ""
+msgstr "API-nycklars maximala varaktighet dagar"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__model_access
@@ -161,6 +164,8 @@ msgid ""
 "Determines the maximum duration of an api key created by a user belonging to "
 "this group."
 msgstr ""
+"Bestämmer den maximala varaktigheten för en API-nyckel som skapats av en "
+"användare som tillhör den här gruppen."
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__display_name
@@ -324,7 +329,7 @@ msgstr "Aktiegrupp"
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users__show_alert
 msgid "Show Alert"
-msgstr ""
+msgstr "Visa avisering"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__date_to
@@ -350,7 +355,7 @@ msgstr "Användare"
 #. module: base_user_role
 #: model:ir.model,name:base_user_role.model_res_users_role
 msgid "User Role"
-msgstr ""
+msgstr "Användarroll"
 
 #. module: base_user_role
 #: model:ir.actions.act_window,name:base_user_role.action_res_users_role_tree
@@ -361,7 +366,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_user_role.res_groups_view_form
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_form_inherit
 msgid "User Roles"
-msgstr ""
+msgstr "Användarroller"
 
 #. module: base_user_role
 #: model:ir.module.category,name:base_user_role.ir_module_category_role
@@ -371,7 +376,7 @@ msgstr "Användarroller"
 #. module: base_user_role
 #: model:ir.model.constraint,message:base_user_role.constraint_res_users_role_line_user_role_uniq
 msgid "User roles can be assigned to a user only once at a time"
-msgstr ""
+msgstr "Användarroller kan endast tilldelas en användare en gång i taget"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__users

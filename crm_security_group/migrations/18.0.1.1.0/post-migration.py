@@ -6,5 +6,5 @@ from openupgradelib import openupgrade
 @openupgrade.migrate()
 def migrate(env, version):
     openupgrade.load_data(
-        env.cr, "crm_security_group", "migrations/18.0.1.1.0/noupdate_changes.xml"
+        env, "crm_security_group", "migrations/18.0.1.1.0/noupdate_changes.xml"
     )

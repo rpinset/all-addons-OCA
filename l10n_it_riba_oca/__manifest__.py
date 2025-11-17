@@ -10,7 +10,7 @@
 
 {
     "name": "ITA - Ricevute bancarie",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "development_status": "Beta",
     "author": "Odoo Community Association (OCA)",
     "category": "Localization/Italy",
@@ -23,7 +23,7 @@
         "account_due_list",
         "base_iban",
         "l10n_it_abicab",
-        "l10n_it_edi",
+        "l10n_it_edi_related_document",
         "account_payment_term_extension",
     ],
     "data": [

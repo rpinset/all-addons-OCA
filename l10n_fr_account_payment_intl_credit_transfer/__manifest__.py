@@ -4,7 +4,7 @@
 
 {
     "name": "International Credit Transfer for France",
-    "version": "18.0.1.0.0",
+    "version": "18.0.2.0.0",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Regulatory reporting codes for ISO 20022 credit transfer files",
@@ -14,6 +14,7 @@
     "depends": ["l10n_fr", "account_payment_sepa_base"],
     "data": [
         "data/account_pain_regulatory_reporting.xml",
+        "views/res_partner.xml",
     ],
     "installable": True,
     "auto_install": True,
