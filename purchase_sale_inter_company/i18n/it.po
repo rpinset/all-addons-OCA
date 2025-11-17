@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-14 10:23+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-11-14 17:43+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Conferma ordine residuo"
 #. module: purchase_sale_inter_company
 #: model_terms:ir.ui.view,arch_db:purchase_sale_inter_company.res_config_settings_view_form
 msgid "Block PO manual picking validation"
-msgstr "Blocca validazione manuale dei picking in acquisto"
+msgstr "Blocca validazione manuale dei prelievi in acquisto"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields.selection,name:purchase_sale_inter_company.selection__res_company__sync_picking_failure_action__raise
@@ -35,7 +35,7 @@ msgstr "Blocca e solleva errore"
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__block_po_manual_picking_validation
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__block_po_manual_picking_validation
 msgid "Block manual validation of picking in the destination company"
-msgstr "Blocca validazione manuale dei picking nell'azienda di destinazione"
+msgstr "Blocca validazione manuale dei prelievi nell'azienda di destinazione"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_res_company
@@ -185,7 +185,7 @@ msgstr "Ultima modifica il"
 msgid ""
 "Manual validation of the picking is not allowed in the destination company."
 msgstr ""
-"La validazione manuale del picking non è permessa nell'azienda di "
+"La validazione manuale del prelievo non è permessa nell'azienda di "
 "destinazione."
 
 #. module: purchase_sale_inter_company

@@ -52,16 +52,11 @@ Date:   Fri Jun 13 15:25:21 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit bc9eacedf94c30b6fcd034a0bdba2596fa5a2d6d
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Sep 16 14:35:50 2025 +0000
+commit 48781354446de4c9cdae9d9cf6b0239edaa3e90a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 17 14:39:33 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 99.0% (110 of 111 strings)
-    
-    Translation: account-closing-14.0/account-closing-14.0-account_fiscal_year_closing
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_fiscal_year_closing/tr/
+    [BOT] post-merge updates
 
 
 ## account-consolidation
@@ -500,11 +495,16 @@ Date:   Tue Jul 29 21:45:55 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 15d096596c363e4e2671fa240a6860adef92e9d5
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Aug 8 09:59:36 2025 +0000
+commit b563f803126742608e2205bc1573ede982bcbd66
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 14 14:35:48 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_reference_displayed
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_reference_displayed/
 
 
 ## edi
@@ -666,11 +666,16 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit bdfea0f16d16aa3653cfe9c6e3dfd048f9cf12f5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 31 12:18:49 2025 +0000
+commit 3d8417a550eeff28ec7f9092d482ad5b1d89992f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 14 15:37:44 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (55 of 55 strings)
+    
+    Translation: multi-company-14.0/multi-company-14.0-purchase_sale_inter_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-purchase_sale_inter_company/it/
 
 
 ## l10n-argentina
