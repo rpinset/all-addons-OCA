@@ -408,16 +408,11 @@ Date:   Wed Jun 4 03:37:02 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 38f555a68d9d9bfba61dae2ee75c9102867afb0b
-Author: Sergio Teruel <sergio.teruel@tecnativa.com>
-Date:   Tue Nov 11 09:21:18 2025 +0000
+commit a00f24634a91a30fcde4223dd5d5ef2ea41cecb2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 17 17:47:42 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (143 of 143 strings)
-    
-    Translation: commission-15.0/commission-15.0-commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-15-0/commission-15-0-commission/es/
+    [BOT] post-merge updates
 
 
 ## event
