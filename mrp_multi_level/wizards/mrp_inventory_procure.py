@@ -75,7 +75,7 @@ class MrpInventoryProcure(models.TransientModel):
         errors = []
         pg = self.env["procurement.group"]
         procurements = []
-        for item in self.item_ids:
+        for item in self.item_ids.sudo():
             if not item.qty:
                 raise ValidationError(_("Quantity must be positive."))
             values = item._prepare_procurement_values()
@@ -94,7 +94,7 @@ class MrpInventoryProcure(models.TransientModel):
         # Run procurements
         try:
             pg.run(procurements)
-            for item in self.item_ids:
+            for item in self.item_ids.sudo():
                 item.planned_order_id.qty_released += item.qty
         except UserError as error:
             errors.append(str(error))
