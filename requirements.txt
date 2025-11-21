@@ -83,11 +83,14 @@ odoo-test-helper
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 # generated from manifests external_dependencies
+dateparser
 dotty-dict
 factur-x
 phonenumbers
 pydifact
+pypdf>=3.1.0
 pytz
+regex
 xmltodict
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
@@ -213,6 +216,7 @@ promptpay
 # From [https://github.com/OCA/l10n-uruguay.git](https://github.com/OCA/l10n-uruguay.git)
 # From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
 # generated from manifests external_dependencies
+ach
 python-stdnum
 requests
 xmltodict

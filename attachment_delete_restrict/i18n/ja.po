@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-29 14:47+0000\n"
-"PO-Revision-Date: 2021-08-29 14:47+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2025-11-20 03:42+0000\n"
+"Last-Translator: Ryoko Tsuda <ryoko@quartile.co>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: attachment_delete_restrict
 #: model:ir.model,name:attachment_delete_restrict.model_res_groups
@@ -49,12 +50,12 @@ msgstr "添付削除ユーザ"
 #. module: attachment_delete_restrict
 #: model_terms:ir.ui.view,arch_db:attachment_delete_restrict.res_config_settings_view_form
 msgid "Authorized Groups:"
-msgstr ""
+msgstr "許可グループ:"
 
 #. module: attachment_delete_restrict
 #: model_terms:ir.ui.view,arch_db:attachment_delete_restrict.res_config_settings_view_form
 msgid "Authorized Users:"
-msgstr ""
+msgstr "許可ユーザ:"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__changeset_change_ids
@@ -77,7 +78,7 @@ msgstr ""
 #. module: attachment_delete_restrict
 #: model:ir.model,name:attachment_delete_restrict.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "構成設定"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__count_pending_changeset_changes
@@ -101,13 +102,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__ir_model__restrict_delete_attachment__custom
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__res_config_settings__global_restrict_delete_attachment__custom
 msgid "Custom: For each model, selected groups and users can delete them"
-msgstr ""
+msgstr "カスタム: 各モデルについて選択されたグループとユーザが削除できる"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,help:attachment_delete_restrict.field_res_config_settings__global_restrict_delete_attachment
-#, fuzzy
 msgid "Define a default value for Attachments Deletion"
-msgstr "添付削除を制限"
+msgstr "添付削除のデフォルト値を設定"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__display_name
@@ -116,7 +116,7 @@ msgstr "添付削除を制限"
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_groups__display_name
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_users__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "表示名"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__id
@@ -134,7 +134,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_groups____last_update
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_users____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "最終更新日"
 
 #. module: attachment_delete_restrict
 #: model:ir.model,name:attachment_delete_restrict.model_ir_model
@@ -145,7 +145,7 @@ msgstr "モデル"
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__ir_model__restrict_delete_attachment__none
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__res_config_settings__global_restrict_delete_attachment__none
 msgid "No restriction: All users / groups can delete them"
-msgstr ""
+msgstr "制限無: 全てのユーザ/グループが削除できる"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__ir_model__restrict_delete_attachment__owner_custom
@@ -153,13 +153,14 @@ msgstr ""
 msgid ""
 "Owner + Custom: Creator and admin can delete them + for each model, selected "
 "groups and users can delete them"
-msgstr ""
+msgstr "オーナー + カスタム: 作成者と管理者が削除できる + "
+"各モデルについて選択されたグループとユーザが削除できる"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__ir_model__restrict_delete_attachment__owner
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__res_config_settings__global_restrict_delete_attachment__owner
 msgid "Owner: Only creator and admin can delete them"
-msgstr ""
+msgstr "オーナー: 作成者と管理者が削除できる"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_model__restrict_delete_attachment
@@ -181,7 +182,7 @@ msgstr "添付削除を制限"
 #. module: attachment_delete_restrict
 #: model_terms:ir.ui.view,arch_db:attachment_delete_restrict.res_config_settings_view_form
 msgid "Select default level of delete restriction on attachments"
-msgstr ""
+msgstr "添付ファイルに対する削除制限のデフォルトレベルを選択"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__smart_search
@@ -190,7 +191,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_groups__smart_search
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_res_users__smart_search
 msgid "Smart Search"
-msgstr ""
+msgstr "スマート検索"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,help:attachment_delete_restrict.field_res_users__delete_attachment_model_ids
@@ -199,6 +200,9 @@ msgid ""
 "general settings, 'Restrict Delete Attachment' must be set as 'custom' to "
 "activate this setting."
 msgstr ""
+"ユーザは、ここに割り当てられたモデルに関連する添付ファイルを削除できます。こ"
+"の設定を有効にするには、一般設定で「添付削除を制限」を「カスタム」に設定する"
+"必要があります。"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,help:attachment_delete_restrict.field_res_config_settings__global_delete_attachment_group_ids
@@ -244,7 +248,7 @@ msgstr ""
 #. module: attachment_delete_restrict
 #: model:ir.model.fields.selection,name:attachment_delete_restrict.selection__ir_model__restrict_delete_attachment__default
 msgid "Use global configuration"
-msgstr ""
+msgstr "グローバル設定を利用"
 
 #. module: attachment_delete_restrict
 #: model:ir.model.fields,field_description:attachment_delete_restrict.field_ir_attachment__user_can_see_changeset

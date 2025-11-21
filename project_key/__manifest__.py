@@ -5,11 +5,11 @@
     "name": "Project Key",
     "summary": "Module decorates projects and tasks with Project Key",
     "category": "Project",
-    "version": "16.0.1.0.3",
+    "version": "16.0.2.0.0",
     "license": "LGPL-3",
     "author": "Modoolar, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/project",
-    "depends": ["project"],
+    "depends": ["portal", "project"],
     "data": ["views/project_key_views.xml"],
     "post_init_hook": "post_init_hook",
 }

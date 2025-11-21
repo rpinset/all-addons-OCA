@@ -14,3 +14,7 @@
 * `ForgeFlow <https://www.forgeflow.com>`_:
 
   * Laura Cazorla
+
+* `Quartile <https://www.quartile.co>`_:
+
+  * Aung Ko Ko Lin

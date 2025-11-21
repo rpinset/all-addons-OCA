@@ -6,7 +6,6 @@ from dateutil.relativedelta import relativedelta
 
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
-from odoo.osv import expression
 from odoo.tools import date_utils
 from odoo.tools.misc import format_amount, format_date
 
@@ -163,13 +162,13 @@ class AccountDashboardBannerCell(models.Model):
             ]
         )
         accounts = journals.default_account_id
-        return (accounts, 1, False, False)
+        return (accounts, 1, False, False, False)
 
     def _prepare_cell_data_supplier_debt(self, company, speedy):
         accounts = self.env["ir.property"]._get(
             "property_account_payable_id", "res.partner"
         )
-        return (accounts, -1, False, False)
+        return (accounts, -1, False, False, False)
 
     def _prepare_cell_data_income(self, company, speedy):
         cell_type = self.cell_type
@@ -195,38 +194,37 @@ class AccountDashboardBannerCell(models.Model):
                 day=1, month=month_start_quarter
             )
         specific_domain = [("date", ">=", start_date)]
-        specific_tooltip = _("from %s") % format_date(self.env, start_date)
-        return (accounts, -1, specific_domain, specific_tooltip)
+        specific_tooltip = _(
+            "Balance of account(s) {account_codes} since %s.",
+            format_date(self.env, start_date),
+        )
+        return (accounts, -1, specific_domain, False, specific_tooltip)
 
     def _prepare_cell_data_customer_debt(self, company, speedy):
         accounts = self.env["ir.property"]._get(
             "property_account_receivable_id", "res.partner"
         )
-        if hasattr(company, "account_default_pos_receivable_account_id"):
+        if (
+            hasattr(company, "account_default_pos_receivable_account_id")
+            and company.account_default_pos_receivable_account_id
+        ):
             accounts |= company.account_default_pos_receivable_account_id
-        return (accounts, 1, False, False)
+        return (accounts, 1, False, False, False)
 
     def _prepare_cell_data_customer_overdue(self, company, speedy):
         (
             accounts,
             sign,
             specific_domain,
+            specific_aggregate,
             specific_tooltip,
         ) = self._prepare_cell_data_customer_debt(company, speedy)
-        specific_domain = expression.OR(
-            [
-                [("date_maturity", "=", False)],
-                [("date_maturity", "<", speedy["today"])],
-                [
-                    ("date_maturity", "=", speedy["today"]),
-                    ("journal_id.type", "!=", "sale"),
-                ],
-            ]
+        specific_domain = [("date_maturity", "<", speedy["today"])]
+        specific_aggregate = "amount_residual:sum"
+        specific_tooltip = _(
+            "Residual amount of account(s) {account_codes} with due date in the past."
         )
-        specific_tooltip = _("with due date before %s") % format_date(
-            self.env, speedy["today"]
-        )
-        return (accounts, sign, specific_domain, specific_tooltip)
+        return (accounts, sign, specific_domain, specific_aggregate, specific_tooltip)
 
     def _prepare_cell_data(self, company, speedy):
         """Inherit this method to change the computation of a cell type"""
@@ -248,14 +246,19 @@ class AccountDashboardBannerCell(models.Model):
             accounts = False
             if hasattr(self, f"_prepare_cell_data_{cell_type}"):
                 specific_method = getattr(self, f"_prepare_cell_data_{cell_type}")
-                accounts, sign, specific_domain, specific_tooltip = specific_method(
-                    company, speedy
-                )
+                (
+                    accounts,
+                    sign,
+                    specific_domain,
+                    specific_aggregate,
+                    specific_tooltip,
+                ) = specific_method(company, speedy)
             elif cell_type.startswith("income_"):
                 (
                     accounts,
                     sign,
                     specific_domain,
+                    specific_aggregate,
                     specific_tooltip,
                 ) = self._prepare_cell_data_income(company, speedy)
             if accounts:
@@ -265,16 +268,20 @@ class AccountDashboardBannerCell(models.Model):
                     ("date", "<=", speedy["today"]),
                     ("parent_state", "=", "posted"),
                 ]
+                aggregate = specific_aggregate or "balance:sum"
                 rg_res = self.env["account.move.line"]._read_group(
-                    domain, ["balance:sum"], []
+                    domain, [aggregate], []
                 )
                 assert sign in (1, -1)
-                raw_value = (rg_res and rg_res[0].get("balance") or 0) * sign
+                raw_value = (
+                    rg_res and rg_res[0].get(aggregate.split(":")[0]) or 0
+                ) * sign
                 value = format_amount(self.env, raw_value, company.currency_id)
-                tooltip = _(
-                    "Balance of account(s) %(account_codes)s%(specific)s.",
-                    account_codes=", ".join(accounts.mapped("code")),
-                    specific=specific_tooltip and f" {specific_tooltip}" or "",
+                tooltip_src = specific_tooltip or _(
+                    "Balance of account(s) {account_codes}."
+                )
+                tooltip = tooltip_src.format(
+                    account_codes=", ".join(accounts.mapped("code"))
                 )
         res = {
             "cell_type": cell_type,

@@ -33,6 +33,20 @@ msgid "All Users Lock Date"
 msgstr "Date de verrouillage pour tous"
 
 #. module: account_dashboard_banner
+#. odoo-python
+#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
+#, python-format
+msgid "Balance of account(s) {account_codes} since %s."
+msgstr ""
+
+#. module: account_dashboard_banner
+#. odoo-python
+#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
+#, python-format
+msgid "Balance of account(s) {account_codes}."
+msgstr ""
+
+#. module: account_dashboard_banner
 #: model:ir.model.fields.selection,name:account_dashboard_banner.selection__account_dashboard_banner_cell__warn_type__inside
 msgid "Between Minimum and Maximum"
 msgstr "entre le minimum et le maximum"
@@ -153,6 +167,13 @@ msgstr "Revenus depuis le début du mois"
 #. odoo-python
 #: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
 #, python-format
+msgid "None"
+msgstr "Aucun"
+
+#. module: account_dashboard_banner
+#. odoo-python
+#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
+#, python-format
 msgid ""
 "On cell '%(cell_type)s' with warning enabled, the minimum (%(warn_min)s) "
 "must be under the maximum (%(warn_max)s)."
@@ -164,6 +185,14 @@ msgstr ""
 #: model:ir.model.fields.selection,name:account_dashboard_banner.selection__account_dashboard_banner_cell__cell_type__income_quarter
 msgid "Quarter-to-date Income"
 msgstr "Revenus depuis le début du trimestre"
+
+#. module: account_dashboard_banner
+#. odoo-python
+#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
+#, python-format
+msgid ""
+"Residual amount of account(s) {account_codes} with due date in the past."
+msgstr ""
 
 #. module: account_dashboard_banner
 #: model:ir.model.fields,field_description:account_dashboard_banner.field_account_dashboard_banner_cell__sequence
@@ -237,28 +266,19 @@ msgstr "Revenus depuis le début de l'année"
 msgid "days"
 msgstr "jours"
 
-#. module: account_dashboard_banner
-#. odoo-python
-#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
 #, python-format
-msgid "from %s"
-msgstr "depuis le %s"
+#~ msgid "from %s"
+#~ msgstr "depuis le %s"
 
-#. module: account_dashboard_banner
-#. odoo-python
-#: code:addons/account_dashboard_banner/models/account_dashboard_banner_cell.py:0
 #, python-format
-msgid "with due date before %s"
-msgstr "avec date d'échéance antérieure au %s"
+#~ msgid "with due date before %s"
+#~ msgstr "avec date d'échéance antérieure au %s"
 
 #~ msgid "Balance of account(s) %(account_codes)s%(specific)s."
 #~ msgstr "Solde du/des compte(s) %(account_codes)s%(specific)s."
 
 #~ msgid "Global Lock Date"
 #~ msgstr "Date de verrouillage globale"
-
-#~ msgid "None"
-#~ msgstr "Aucun"
 
 #~ msgid "Purchase Lock Date"
 #~ msgstr "Date de verrouillage des achats"

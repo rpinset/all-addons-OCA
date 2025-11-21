@@ -260,7 +260,7 @@ addon | version | maintainers | summary
 [account_chart_update](account_chart_update/) | 16.0.2.0.8 |  | Wizard to update a company's account chart from a template
 [account_chart_update_l10n_eu_oss_oca](account_chart_update_l10n_eu_oss_oca/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Account Chart update OSS OCA
 [account_chart_update_multilang](account_chart_update_multilang/) | 16.0.1.0.3 | <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Update tax and fiscal position templates with multilang
-[account_dashboard_banner](account_dashboard_banner/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add a configurable banner on the accounting dashboard
+[account_dashboard_banner](account_dashboard_banner/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add a configurable banner on the accounting dashboard
 [account_fiscal_month](account_fiscal_month/) | 16.0.1.1.0 |  | Provide a fiscal month date range type
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 16.0.1.1.0 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 16.0.1.3.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
@@ -1872,6 +1872,7 @@ addon | version | maintainers | summary
 [portal_sale_order_search](portal_sale_order_search/) | 16.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow customers to set and search their own order reference in portal
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 16.0.1.0.0 |  | Portal Sale Personal Data Only
 [pricelist_cache](pricelist_cache/) | 16.0.1.0.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
+[pricelist_price_base_custom](pricelist_price_base_custom/) | 16.0.1.0.0 |  | Use custom value as a base for pricelist calculation.
 [product_form_sale_link](product_form_sale_link/) | 16.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_price_category](product_price_category/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Add Price Category field on product and allow to apply a pricelist on this field.
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 16.0.1.0.2 |  | Loads in every sale order line the customer code defined in the product
@@ -1896,7 +1897,7 @@ addon | version | maintainers | summary
 [sale_force_invoiced](sale_force_invoiced/) | 16.0.2.1.2 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_force_invoiced_quantity](sale_force_invoiced_quantity/) | 16.0.1.0.0 |  | Add manual invoice quantity in sales order lines
 [sale_fully_invoiced](sale_fully_invoiced/) | 16.0.1.0.0 |  | Useful filters in Sales to know the actual status of invoices.
-[sale_global_discount](sale_global_discount/) | 16.0.1.0.0 |  | Sale Global Discount
+[sale_global_discount](sale_global_discount/) | 16.0.2.0.0 |  | Sale Global Discount
 [sale_invoice_blocking](sale_invoice_blocking/) | 16.0.1.0.1 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 16.0.1.2.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
 [sale_invoice_plan](sale_invoice_plan/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
@@ -2149,7 +2150,7 @@ addon | version | maintainers | summary
 [partner_company_group](partner_company_group/) | 16.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 16.0.2.0.0 |  | Adds a company type to partner that are companies
 [partner_contact_access_link](partner_contact_access_link/) | 16.0.1.1.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Allow to visit the full contact form from a company
-[partner_contact_address_default](partner_contact_address_default/) | 16.0.1.2.0 |  | Set a default delivery address, invoice address and contact for contacts
+[partner_contact_address_default](partner_contact_address_default/) | 16.0.2.0.0 |  | Set a default delivery address, invoice address and contact for contacts
 [partner_contact_age_range](partner_contact_age_range/) | 16.0.1.0.1 |  | Age Range for Contact's
 [partner_contact_birthdate](partner_contact_birthdate/) | 16.0.1.0.0 |  | Contact's birthdate
 [partner_contact_birthplace](partner_contact_birthplace/) | 16.0.1.0.0 |  | This module allows to define a birthplace for partners.
@@ -2800,13 +2801,16 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_einvoice_generate](account_einvoice_generate/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Technical module to generate PDF invoices with embedded XML file
+[account_invoice_download](account_invoice_download/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Auto-download supplier invoices and import them
 [account_invoice_edifact](account_invoice_edifact/) | 16.0.1.0.0 |  | Generate customer invoices with EDIFACT/D96A format
 [account_invoice_export](account_invoice_export/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
 [account_invoice_facturx](account_invoice_facturx/) | 16.0.2.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X invoices with Py3o reporting engine
+[account_invoice_import](account_invoice_import/) | 16.0.2.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import supplier invoices/refunds as PDF or XML files
+[account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import simple PDF vendor bills
 [account_invoice_ubl](account_invoice_ubl/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Generate UBL XML file for customer invoices/refunds
-[base_business_document_import](base_business_document_import/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
+[base_business_document_import](base_business_document_import/) | 16.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Use phone numbers to match partners upon import of business documents
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 16.0.1.0.2 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
@@ -4776,7 +4780,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_payment_term_cutoff_day](account_payment_term_cutoff_day/) | 16.0.1.0.1 |  | Account Payment Term Cutoff Day
+[account_payment_term_cutoff_day](account_payment_term_cutoff_day/) | 16.0.1.1.0 |  | Account Payment Term Cutoff Day
 [account_tax_rounding_method](account_tax_rounding_method/) | 16.0.1.0.0 |  | Account Tax Rounding Method
 [l10n_jp_account_report_registration_number](l10n_jp_account_report_registration_number/) | 16.0.1.0.0 |  | Japan Account Report Registration Number
 [l10n_jp_address_layout](l10n_jp_address_layout/) | 16.0.1.0.0 |  | Japan Address Layout
@@ -5757,6 +5761,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_banking_ach_base](account_banking_ach_base/) | 16.0.1.0.0 |  | Add fields required for North American Banking & Financials
 [l10n_us_account_routing](l10n_us_account_routing/) | 16.0.1.0.0 |  | Add the routing numbers to the banks
 [l10n_us_form_1099](l10n_us_form_1099/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage 1099 Types and Suppliers
 [l10n_us_gaap](l10n_us_gaap/) | 16.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | United States Sample GAAP Chart of Accounts
@@ -6703,12 +6708,14 @@ addon | version | maintainers | summary
 [mrp_production_unique_lot](mrp_production_unique_lot/) | 16.0.1.0.0 |  | MRP Production Unique Lot
 [mrp_restrict_lot](mrp_restrict_lot/) | 16.0.1.0.3 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | MRP Restrict Lot
 [mrp_sale_info](mrp_sale_info/) | 16.0.1.1.0 |  | Adds sale information to Manufacturing models
+[mrp_stock_move_actual_date](mrp_stock_move_actual_date/) | 16.0.1.0.0 |  | MRP Stock Move Actual Date
 [mrp_stock_owner_restriction](mrp_stock_owner_restriction/) | 16.0.1.0.1 |  | MRP Stock Owner Restriction
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp subcontracting bom dual use
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
 [mrp_subcontracting_partner_management](mrp_subcontracting_partner_management/) | 16.0.1.1.0 |  | Subcontracting Partner Management
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 16.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 16.0.1.0.3 |  | MRP Subcontracting Skip No Negative
+[mrp_subcontracting_stock_owner_restriction](mrp_subcontracting_stock_owner_restriction/) | 16.0.1.0.0 |  | MRP Subcontracting Stock Owner Restriction
 [mrp_tag](mrp_tag/) | 16.0.1.1.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 16.0.1.0.1 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
 [mrp_unbuild_restore_origin](mrp_unbuild_restore_origin/) | 16.0.1.1.0 |  | Mrp Unbuild Restore Origin
@@ -6716,6 +6723,7 @@ addon | version | maintainers | summary
 [mrp_unbuild_valuation_layer_link](mrp_unbuild_valuation_layer_link/) | 16.0.1.0.1 |  | Unbuild orders display the connected valuation layers
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 16.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_cost](mrp_workcenter_cost/) | 16.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Controls how to compute the workcenter cost (effective vs theoretical)
+[mrp_workcenter_dashboard](mrp_workcenter_dashboard/) | 16.0.1.0.0 |  | Enables workcenter dashboard, disabled by default in Odoo
 [mrp_workcenter_hierarchical](mrp_workcenter_hierarchical/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Organise Workcenters by section
 [mrp_workcenter_workorder_link](mrp_workcenter_workorder_link/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Switch easily between Work Centers and Work Orders
 [mrp_workorder_last_worker](mrp_workorder_last_worker/) | 16.0.1.1.0 |  | See the last user who worked on a workorder
@@ -6980,7 +6988,7 @@ addon | version | maintainers | summary
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 16.0.1.0.3 |  | This module allows purchase default terms & conditions
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 16.0.1.0.5 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 16.0.1.1.0 |  | Option to create deposit from purchase order
-[purchase_discount](purchase_discount/) | 16.0.2.0.3 |  | Purchase order lines with discounts
+[purchase_discount](purchase_discount/) | 16.0.2.0.4 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 16.0.1.0.1 |  | Custom exceptions on purchase order
 [purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.1 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
@@ -6990,6 +6998,7 @@ addon | version | maintainers | summary
 [purchase_invoice_method](purchase_invoice_method/) | 16.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_invoice_new_picking_line](purchase_invoice_new_picking_line/) | 16.0.1.0.0 |  | When creating an invoice from a purchase order, this module also adds invoice lines for products that were in the order's pickings but not in the order itself.
 [purchase_invoice_plan](purchase_invoice_plan/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to purchases order, ability to manage future invoice plan
+[purchase_invoice_status_line](purchase_invoice_status_line/) | 16.0.1.0.0 | <a href='https://github.com/JoanSForgeFlow'><img src='https://github.com/JoanSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JoanSForgeFlow'/></a> | Add invoice status on purchase order lines
 [purchase_landed_cost](purchase_landed_cost/) | 16.0.1.0.2 |  | Purchase cost distribution
 [purchase_last_price_info](purchase_last_price_info/) | 16.0.1.0.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Purchase Product Last Price Info
 [purchase_line_procurement_group](purchase_line_procurement_group/) | 16.0.1.0.0 |  | Group purchase order line according to procurement group
@@ -7049,11 +7058,13 @@ addon | version | maintainers | summary
 [purchase_sign](purchase_sign/) | 16.0.1.0.0 |  | Purchase Sign
 [purchase_split_by_route](purchase_split_by_route/) | 16.0.1.0.0 | <a href='https://github.com/mathieudelva'><img src='https://github.com/mathieudelva.png' width='32' height='32' style='border-radius:50%;' alt='mathieudelva'/></a> | Purchase Split Route
 [purchase_stock_packaging](purchase_stock_packaging/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
+[purchase_stock_picking_show_currency_rate](purchase_stock_picking_show_currency_rate/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Show currency rate in purchase stock picking.
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 16.0.1.0.1 |  | Update cost price in stock moves already done
 [purchase_tag](purchase_tag/) | 16.0.1.1.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_transport_mode](purchase_transport_mode/) | 16.0.1.1.0 |  | Purchase expection based on constraints
 [purchase_triple_discount](purchase_triple_discount/) | 16.0.3.0.3 |  | Manage triple discount on purchase order lines
+[purchase_uninvoiced_amount_force_invoiced_line](purchase_uninvoiced_amount_force_invoiced_line/) | 16.0.1.0.0 | <a href='https://github.com/JoanSForgeFlow'><img src='https://github.com/JoanSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JoanSForgeFlow'/></a> | Glue module between uninvoiced amount line and force invoiced line
 [purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.1.0.1 |  | Purchase Vendor Promotion
 [purchase_warn_message](purchase_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [purchase_work_acceptance](purchase_work_acceptance/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Purchase Work Acceptance
@@ -7501,7 +7512,7 @@ addon | version | maintainers | summary
 [project_duplicate_subtask](project_duplicate_subtask/) | 16.0.1.0.0 |  | The module adds an action to duplicate tasks with the child subtasks
 [project_hr](project_hr/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_internal_access_from_portal](project_internal_access_from_portal/) | 16.0.1.0.1 |  | Show internal projects in portal
-[project_key](project_key/) | 16.0.1.0.3 |  | Module decorates projects and tasks with Project Key
+[project_key](project_key/) | 16.0.2.0.0 |  | Module decorates projects and tasks with Project Key
 [project_list](project_list/) | 16.0.1.0.1 |  | Projects list view
 [project_merge](project_merge/) | 16.0.1.0.0 |  | Wizard to merge project tasks
 [project_milestone_status](project_milestone_status/) | 16.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Milestone Status
@@ -7517,7 +7528,7 @@ addon | version | maintainers | summary
 [project_stage_extra_info](project_stage_extra_info/) | 16.0.1.0.0 |  | Project Stage Extra Info
 [project_stage_last_update_date](project_stage_last_update_date/) | 16.0.1.0.0 |  | Project Stage Last Update Date
 [project_status](project_status/) | 16.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Status
-[project_stock](project_stock/) | 16.0.2.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
+[project_stock](project_stock/) | 16.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
 [project_stock_analytic_tag](project_stock_analytic_tag/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Analytic Tag
 [project_stock_product_set](project_stock_product_set/) | 16.0.2.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock Product Set
 [project_tag_hierarchy](project_tag_hierarchy/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
@@ -8651,7 +8662,7 @@ addon | version | maintainers | summary
 [date_range_account](date_range_account/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
 [developer_menu](developer_menu/) | 16.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Menu Shortcut for developer usage
 [document_quick_access](document_quick_access/) | 16.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Document quick access
-[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 16.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Auto classification of Documents after reading a QR
+[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 16.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Auto classification of Documents after reading a QR
 [filter_multi_user](filter_multi_user/) | 16.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined filters filters among several users.
 [mail_message_destiny_link_template](mail_message_destiny_link_template/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Mail template to show destiny records in chatter.
 [mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked

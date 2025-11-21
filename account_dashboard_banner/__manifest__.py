@@ -4,7 +4,7 @@
 
 {
     "name": "Account Dashboard Banner",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Add a configurable banner on the accounting dashboard",

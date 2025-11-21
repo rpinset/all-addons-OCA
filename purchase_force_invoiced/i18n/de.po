@@ -22,6 +22,13 @@ msgid "Force Invoiced"
 msgstr "Fakturierung erzwingen"
 
 #. module: purchase_force_invoiced
+#: model:ir.model.fields,help:purchase_force_invoiced.field_purchase_order__force_invoiced
+msgid ""
+"If true, the order is marked forced only when all lines are fully invoiced "
+"and at least one line was manually forced."
+msgstr ""
+
+#. module: purchase_force_invoiced
 #: model:ir.model,name:purchase_force_invoiced.model_purchase_order
 msgid "Purchase Order"
 msgstr "Bestellung"
@@ -31,14 +38,12 @@ msgstr "Bestellung"
 msgid "Purchase Report"
 msgstr "Einkaufsbericht"
 
-#. module: purchase_force_invoiced
-#: model:ir.model.fields,help:purchase_force_invoiced.field_purchase_order__force_invoiced
-msgid ""
-"When you set this field, the purchase order will be considered as fully "
-"billed, even when there may be ordered or delivered quantities pending to "
-"bill. To use this field, the order must be in 'Locked' state"
-msgstr ""
-"Wenn Sie dieses Feld setzen, wird die Bestellung als vollständig fakturiert "
-"betrachtet, auch wenn noch bestellte oder gelieferte Mengen zur Fakturierung "
-"anstehen. Um dieses Feld zu verwenden, muss sich die Bestellung im Status "
-"\"Gesperrt\" befinden"
+#~ msgid ""
+#~ "When you set this field, the purchase order will be considered as fully "
+#~ "billed, even when there may be ordered or delivered quantities pending to "
+#~ "bill. To use this field, the order must be in 'Locked' state"
+#~ msgstr ""
+#~ "Wenn Sie dieses Feld setzen, wird die Bestellung als vollständig "
+#~ "fakturiert betrachtet, auch wenn noch bestellte oder gelieferte Mengen "
+#~ "zur Fakturierung anstehen. Um dieses Feld zu verwenden, muss sich die "
+#~ "Bestellung im Status \"Gesperrt\" befinden"
