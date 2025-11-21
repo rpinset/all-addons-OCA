@@ -185,7 +185,7 @@ Date:   Sun Feb 2 18:34:04 2025 +0000
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
 commit 96da08a6725869a85f3fb09b91c6310915153beb
-Merge: 74b02e41 aa9b0638
+Merge: 74b02e412 aa9b0638f
 Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
 Date:   Fri Jun 27 21:12:37 2025 +0200
 
@@ -372,9 +372,9 @@ Date:   Wed Jun 4 02:46:05 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 6be1c2019e40ba4b40f03856722f5c8e8d4700e1
+commit 70f71f821423d8218e07dcb66de30f693d77441a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 1 14:12:53 2025 +0000
+Date:   Thu Nov 20 09:35:30 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1132,16 +1132,11 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 37edb63f7700755967b16e9f24f127fa38a1652a
-Author: TomTietze <tietze.development@web.de>
-Date:   Wed Sep 10 08:16:28 2025 +0000
+commit 1932e9a18dede3cc3d8a3af9b4a618d1466662fc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 19 11:42:22 2025 +0000
 
-    Translated using Weblate (German)
-    
-    Currently translated at 100.0% (37 of 37 strings)
-    
-    Translation: manufacture-15.0/manufacture-15.0-mrp_production_split
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_split/de/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
@@ -1442,11 +1437,11 @@ Date:   Thu Nov 6 11:28:10 2025 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 154ef890380232bcb732111641aa4d0efe8a12ad
+commit ec332767b2fc4ed84eb24f857ea6366bde89381a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:41:53 2025 +0000
+Date:   Tue Nov 18 18:35:09 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## webhook

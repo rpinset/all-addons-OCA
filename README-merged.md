@@ -2046,10 +2046,10 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_partner_company_group](account_partner_company_group/) | 15.0.1.0.0 |  | Adds the possibility to add a company group to a company
 [animal](animal/) | 15.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage animals information
-[base_country_state_translatable](base_country_state_translatable/) | 15.0.1.0.0 |  | Translate Country States
+[base_country_state_translatable](base_country_state_translatable/) | 15.0.1.0.1 |  | Translate Country States
 [base_location](base_location/) | 15.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 15.0.1.0.3 |  | Import zip entries from Geonames
-[base_location_nuts](base_location_nuts/) | 15.0.1.0.1 |  | NUTS Regions
+[base_location_nuts](base_location_nuts/) | 15.0.1.0.2 |  | NUTS Regions
 [base_partner_company_group](base_partner_company_group/) | 15.0.1.1.1 |  | Adds the possibility to add a company group to a company
 [base_partner_sequence](base_partner_sequence/) | 15.0.1.1.0 |  | Sets customer's code from a sequence
 [crm_partner_company_group](crm_partner_company_group/) | 15.0.1.0.0 |  | Adds the possibility to add a company group to a company
@@ -6318,6 +6318,7 @@ addon | version | maintainers | summary
 [mrp_tag](mrp_tag/) | 15.0.1.1.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 15.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_category](mrp_workcenter_category/) | 15.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Adds a category to workcenters
+[mrp_workcenter_dashboard](mrp_workcenter_dashboard/) | 15.0.1.0.0 |  | Enables workcenter dashboard, disabled by default in Odoo
 [mrp_workorder_blocking_time](mrp_workorder_blocking_time/) | 15.0.0.1.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Allow to block time on work orders
 [mrp_workorder_lock_planning](mrp_workorder_lock_planning/) | 15.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Lock the planning of a MRP workorder to avoid rescheduling
 [mrp_workorder_lot_display](mrp_workorder_lot_display/) | 15.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Display lot number on workorders kanban
@@ -8140,7 +8141,7 @@ addon | version | maintainers | summary
 [base_currency_iso_4217](base_currency_iso_4217/) | 15.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
 [base_iso3166](base_iso3166/) | 15.0.1.0.4 |  | ISO 3166
 [base_unece](base_unece/) | 15.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for UNECE code lists
-[company_sanitary_registry](company_sanitary_registry/) | 15.0.1.0.1 |  | Sanitary Registry
+[company_sanitary_registry](company_sanitary_registry/) | 15.0.2.0.0 |  | Sanitary Registry
 [product_fao_fishing](product_fao_fishing/) | 15.0.1.0.2 |  | Set fishing areas and capture technology
 [uom_unece](uom_unece/) | 15.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 
