@@ -8,11 +8,12 @@
         <field name="inherit_id" ref="rma.rma_view_form" />
         <field name="arch" type="xml">
             <xpath expr="//button[@name='action_confirm']" position="before">
+                <field name="can_be_repaired" invisible="1" />
                 <button
                     type="object"
                     string="Create Repair Order"
                     name="action_create_repair_order"
-                    invisible="state != 'received' or repair_id"
+                    invisible="not can_be_repaired"
                     class="oe_highlight"
                     data-hotkey="q"
                 />

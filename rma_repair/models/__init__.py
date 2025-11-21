@@ -2,3 +2,4 @@
 
 from . import rma
 from . import repair
+from . import rma_operation

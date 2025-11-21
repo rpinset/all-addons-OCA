@@ -27,6 +27,21 @@ msgid "<span class=\"o_stat_text\">Repair order</span>"
 msgstr "<span class=\"o_stat_text\">Orden de Reparación</span>"
 
 #. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__automatic_after_receipt
+msgid "Automatically After Receipt"
+msgstr ""
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__automatic_on_confirm
+msgid "Automatically on Confirm"
+msgstr ""
+
+#. module: rma_repair
+#: model:ir.model.fields,field_description:rma_repair.field_rma__can_be_repaired
+msgid "Can Be Repaired"
+msgstr ""
+
+#. module: rma_repair
 #. odoo-python
 #: code:addons/rma_repair/models/rma.py:0
 #: model_terms:ir.ui.view,arch_db:rma_repair.rma_view_form
@@ -35,8 +50,28 @@ msgid "Create Repair Order"
 msgstr "Crear Orden de Reparación"
 
 #. module: rma_repair
+#: model:ir.model.fields,help:rma_repair.field_rma_operation__action_create_repair
+msgid "Define how the repair action should be handled."
+msgstr ""
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__manual_after_receipt
+msgid "Manually After Receipt"
+msgstr ""
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__manual_on_confirm
+msgid "Manually on Confirm"
+msgstr ""
+
+#. module: rma_repair
 #: model:ir.model,name:rma_repair.model_rma
 msgid "RMA"
+msgstr ""
+
+#. module: rma_repair
+#: model:ir.model,name:rma_repair.model_rma_operation
+msgid "RMA requested operation"
 msgstr ""
 
 #. module: rma_repair
@@ -48,6 +83,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:rma_repair.field_rma__repair_id
 msgid "Repair"
 msgstr "Reparación"
+
+#. module: rma_repair
+#: model:ir.model.fields,field_description:rma_repair.field_rma_operation__action_create_repair
+msgid "Repair Action"
+msgstr ""
 
 #. module: rma_repair
 #: model:ir.model,name:rma_repair.model_repair_order

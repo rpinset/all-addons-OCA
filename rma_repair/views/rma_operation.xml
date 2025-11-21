@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="rma_operation_form_view" model="ir.ui.view">
+        <field name="model">rma.operation</field>
+        <field name="inherit_id" ref="rma.rma_operation_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='settings']" position="inside">
+                <group>
+                    <field name="action_create_repair" />
+
+                </group>
+                <group />
+            </xpath>
+        </field>
+    </record>
+
+
+
+</odoo>

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-03 09:27+0000\n"
+"PO-Revision-Date: 2025-11-21 12:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -27,6 +27,21 @@ msgid "<span class=\"o_stat_text\">Repair order</span>"
 msgstr "<span class=\"o_stat_text\">Ordine di riparazione</span>"
 
 #. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__automatic_after_receipt
+msgid "Automatically After Receipt"
+msgstr "Automaticamente alla ricezione"
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__automatic_on_confirm
+msgid "Automatically on Confirm"
+msgstr "Automaticamente alla conferma"
+
+#. module: rma_repair
+#: model:ir.model.fields,field_description:rma_repair.field_rma__can_be_repaired
+msgid "Can Be Repaired"
+msgstr "Può essere riparato"
+
+#. module: rma_repair
 #. odoo-python
 #: code:addons/rma_repair/models/rma.py:0
 #: model_terms:ir.ui.view,arch_db:rma_repair.rma_view_form
@@ -35,9 +50,29 @@ msgid "Create Repair Order"
 msgstr "Crea ordine riparazione"
 
 #. module: rma_repair
+#: model:ir.model.fields,help:rma_repair.field_rma_operation__action_create_repair
+msgid "Define how the repair action should be handled."
+msgstr "Definire come l'azione di riparazione deve essere gestita."
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__manual_after_receipt
+msgid "Manually After Receipt"
+msgstr "Manuale dopo la ricevuta"
+
+#. module: rma_repair
+#: model:ir.model.fields.selection,name:rma_repair.selection__rma_operation__action_create_repair__manual_on_confirm
+msgid "Manually on Confirm"
+msgstr "Manualmente alla conferma"
+
+#. module: rma_repair
 #: model:ir.model,name:rma_repair.model_rma
 msgid "RMA"
 msgstr "RMA"
+
+#. module: rma_repair
+#: model:ir.model,name:rma_repair.model_rma_operation
+msgid "RMA requested operation"
+msgstr "Operazione richiesta RMA"
 
 #. module: rma_repair
 #: model:ir.model.fields,field_description:rma_repair.field_repair_order__rma_ids
@@ -48,6 +83,11 @@ msgstr "RMA"
 #: model:ir.model.fields,field_description:rma_repair.field_rma__repair_id
 msgid "Repair"
 msgstr "Riparazione"
+
+#. module: rma_repair
+#: model:ir.model.fields,field_description:rma_repair.field_rma_operation__action_create_repair
+msgid "Repair Action"
+msgstr "Azione riparazione"
 
 #. module: rma_repair
 #: model:ir.model,name:rma_repair.model_repair_order
