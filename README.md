@@ -381,9 +381,9 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 9924affbb6838695d6b46da1c36dabbbeb9770af
+commit df64f776b47b5170e3bc23ab2091e994616856b7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 29 13:32:22 2025 +0000
+Date:   Thu Nov 20 14:21:37 2025 +0000
 
     [BOT] post-merge updates
 
@@ -495,16 +495,16 @@ Date:   Tue Jul 29 21:45:55 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit b563f803126742608e2205bc1573ede982bcbd66
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Nov 14 14:35:48 2025 +0000
+commit 09db93d80deb23a427ad4faf61e57019e813591d
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Nov 19 14:59:23 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (1 of 1 strings)
     
     Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_reference_displayed
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_reference_displayed/
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_reference_displayed/it/
 
 
 ## edi
@@ -1275,11 +1275,16 @@ Date:   Mon Aug 4 06:41:58 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit ac94bfcd8c91fa36134fb11a70ab89297ba1d790
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 7 10:30:00 2025 +0000
+commit 90823dd361a27eed9e5b9a1db477dde8e0784751
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Nov 20 17:19:25 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: product-attribute-14.0/product-attribute-14.0-product_code_unique
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_code_unique/it/
 
 
 ## product-kitting
