@@ -372,11 +372,16 @@ Date:   Wed Jun 4 02:46:05 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 70f71f821423d8218e07dcb66de30f693d77441a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 20 09:35:30 2025 +0000
+commit 3a126189b02fec5275dfded79c5fd550f9b67ca9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 24 10:42:09 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 18.7% (3 of 16 strings)
+    
+    Translation: partner-contact-15.0/partner-contact-15.0-partner_industry_secondary
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_industry_secondary/it/
 
 
 ## sale-financial
@@ -435,9 +440,9 @@ Date:   Mon Aug 11 06:58:34 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit baa5e3bed4a0aea868cd8fc7841ecd687714abfb
+commit 20853646cb08245abc3e67bba190211bdca6b796
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:44:47 2025 +0000
+Date:   Mon Nov 24 10:41:47 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1067,16 +1072,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 926b251a32e39fdbb457cc02f5eb8a79ddd479be
+commit 7933fcc7e449de5422eefc01455d288c3d231deb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 2 16:08:45 2025 +0000
+Date:   Mon Nov 24 11:59:30 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_change_qty_reason
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_change_qty_reason/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_location_lockdown
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_location_lockdown/it/
 
 
 ## stock-logistics-reporting
@@ -1095,16 +1100,16 @@ Date:   Tue Jul 8 09:38:10 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit fd889f32fc1e43c6bb3e507015d39427a44d1790
+commit 29b30a0e118f6c05d0b753eaa40b01cfd011912f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 29 20:35:12 2025 +0000
+Date:   Tue Nov 25 09:15:54 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 97.5% (40 of 41 strings)
+    Currently translated at 92.0% (325 of 353 strings)
     
-    Translation: rma-15.0/rma-15.0-product_warranty
-    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-product_warranty/it/
+    Translation: rma-15.0/rma-15.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
 
 
 ## ddmrp
@@ -1173,9 +1178,9 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 39b94d7a0dfdebc2ccd6efc9e87d47cf01045236
+commit e5206c779e75521ba1bfe0d361af80917e7ecfd1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 3 21:02:15 2025 +0000
+Date:   Mon Nov 24 18:54:14 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1191,16 +1196,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 0fc68292fec62b11a41358fd46f0bd6c1f070df1
-Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
-Date:   Tue Sep 30 10:20:00 2025 +0000
+commit 164ddf4dceda789f710c81a519e2aad2ca44ebfe
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 24 11:55:36 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (28 of 28 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: product-attribute-15.0/product-attribute-15.0-product_ingredient
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_ingredient/es/
+    Translation: product-attribute-15.0/product-attribute-15.0-product_category_active
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_category_active/it/
 
 
 ## product-kitting
@@ -1510,16 +1515,16 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 323cb1b92ba97b657b328dc607ddc0d81b04956c
+commit 569b9a2e5e7e5f1d6c3008b3ba307007c30b1b74
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 28 11:17:27 2025 +0000
+Date:   Mon Nov 24 10:40:41 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (520 of 520 strings)
+    Currently translated at 100.0% (167 of 167 strings)
     
-    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel/it/
+    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel_reservation
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel_reservation/it/
 
 
 ## vertical-isp
