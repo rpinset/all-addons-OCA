@@ -430,11 +430,16 @@ Date:   Mon Sep 15 11:35:45 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 3fa23108269f687e5c119e352feba05f07beb0b1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:20:47 2025 +0000
+commit 56320a82d556a5018f9cdfcde98fa86628096cfa
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 24 10:41:43 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 17.6% (3 of 17 strings)
+    
+    Translation: partner-contact-13.0/partner-contact-13.0-partner_industry_secondary
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-13-0/partner-contact-13-0-partner_industry_secondary/it/
 
 
 ## sale-financial
@@ -501,9 +506,9 @@ Date:   Wed Jun 4 03:56:09 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 3cc9546b519ef2e392c6e84feec11216bba349f2
+commit ca68d3f6f52f1d9507f7cb0d1607f38de2e259b3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:44 2025 +0000
+Date:   Mon Nov 24 10:41:42 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -515,14 +520,16 @@ Date:   Sat Jun 21 10:42:44 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit df36aa1872db40307d9e20cd6b92c8d70e91a7df
-Merge: b0f88c1 88a0bfc
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Mon Nov 3 10:45:53 2025 +0100
+commit 3cf2f339367ed87f0e6448b29efe4336047dd202
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Nov 25 09:17:09 2025 +0000
 
-    Merge pull request #450 from Tecnativa/13.0-ou-imp-dms-issue-394
+    Translated using Weblate (Italian)
     
-    [13.0][OU-IMP] dms: Improve rename tables
+    Currently translated at 100.0% (75 of 75 strings)
+    
+    Translation: dms-13.0/dms-13.0-dms_field
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms_field/it/
 
 
 ## e-commerce
@@ -1308,16 +1315,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 367cf6131bce5c253bdceb88b44ee82f0cd4dd72
+commit e0c6f2fcfd07c91748165ad3617b5431c7b05905
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 25 08:30:41 2025 +0000
+Date:   Mon Nov 24 11:55:46 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (31 of 31 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_assortment
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_assortment/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_category_active
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_category_active/it/
 
 
 ## product-kitting
