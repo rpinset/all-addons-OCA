@@ -5,3 +5,6 @@
 * `Ooops <https://www.ooops404.com>`_:
 
   * Giovanni Serra <giovanni@gslab.it>
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>
