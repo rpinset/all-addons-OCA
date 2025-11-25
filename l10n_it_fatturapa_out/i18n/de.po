@@ -132,6 +132,11 @@ msgid "Config Settings"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
+msgid "Configuration"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model,name:l10n_it_fatturapa_out.model_res_partner
 msgid "Contact"
 msgstr ""
@@ -245,11 +250,6 @@ msgid "Electronic Invoice"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
-msgid "Electronic Invoice Attachments"
-msgstr ""
-
-#. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_invoice_fatturapa_out_filter
 msgid "Electronic Invoice Error"
 msgstr ""
@@ -324,6 +324,38 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__file_size
 msgid "File Size"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_bank_statement_line__fatturapa_payment_method_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_move__fatturapa_payment_method_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_payment__fatturapa_payment_method_id
+msgid "Fiscal Payment Method"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_bank_statement_line__fatturapa_payment_method_id
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_move__fatturapa_payment_method_id
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_payment__fatturapa_payment_method_id
+msgid ""
+"Fiscal Payment Method used in the e-invoice, defaults to the Payment Term's "
+"Fiscal Payment Method."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_bank_statement_line__fatturapa_payment_term_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_move__fatturapa_payment_term_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_payment__fatturapa_payment_term_id
+msgid "Fiscal Payment Term"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_bank_statement_line__fatturapa_payment_term_id
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_move__fatturapa_payment_term_id
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_payment__fatturapa_payment_term_id
+msgid ""
+"Fiscal Payment Term used in the e-invoice, defaults to the Payment Term's "
+"Fiscal Payment Term."
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
@@ -417,18 +449,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_fatturapa_out/models/account.py:0
 #, python-format
-msgid ""
-"Invoice %(name)s fiscal payment method must be set for the selected payment "
-"term %(term)s"
+msgid "Invoice %(name)s: Fiscal Payment Method must be set."
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #. odoo-python
 #: code:addons/l10n_it_fatturapa_out/models/account.py:0
 #, python-format
-msgid ""
-"Invoice %(name)s fiscal payment term must be set for the selected payment "
-"term %(term)s"
+msgid "Invoice %(name)s: Fiscal Payment Term must be set."
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
@@ -643,11 +671,6 @@ msgid "Rejected (PA)"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
-msgid "Related Documents"
-msgstr ""
-
-#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_wizard_export_fatturapa__report_print_menu
 msgid "Report Print Menu"
 msgstr ""
@@ -674,7 +697,7 @@ msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
-msgid "Results"
+msgid "Result"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out

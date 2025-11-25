@@ -2,6 +2,7 @@
 # Copyright 2015-2016 Lorenzo Battistini - Agile Business Group
 # Copyright 2018-2019 Alex Comba - Agile Business Group
 # Copyright 2023 Simone Rubino - Aion Tech
+# Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import base64
@@ -679,6 +680,7 @@ class TestFatturaPAXMLValidation(FatturaPACommon):
         invoice.date = fields.Date.from_string("2021-10-29")
         invoice.name = "INV/2021/10/0001"
         invoice.action_post()
+        self._exclude_DatiPagamento(invoice)
 
         res = self.run_wizard(invoice.id)
         attachment = self.attach_model.browse(res["res_id"])
@@ -686,6 +688,59 @@ class TestFatturaPAXMLValidation(FatturaPACommon):
 
         xml_content = base64.decodebytes(attachment.datas)
         self.check_content(xml_content, "IT06363391001_00014.xml")
+
+    def test_no_payment_term_creates_DatiPagamento(self):
+        """When payment_term is not set in the invoice and due date is set,
+        DatiPagamento node is created in the e-invoce."""
+        # Arrange
+        partner = self.res_partner_fatturapa_0
+        partner.electronic_invoice_subjected = True
+        invoice = self.init_invoice(
+            "out_invoice",
+            partner=partner,
+            invoice_date=fields.Date.from_string("2019-12-31"),
+            amounts=[100],
+            taxes=self.tax_22,
+        )
+        with Form(invoice) as invoice_form:
+            invoice_form.name = "INV/2019/00100"
+            invoice_form.invoice_date_due = fields.Date.from_string("2020-01-01")
+            invoice_form.invoice_payment_term_id = self.env[
+                "account.payment.term"
+            ].browse()
+            invoice_form.fatturapa_payment_method_id = self.env[
+                "fatturapa.payment_method"
+            ].browse()
+            invoice_form.fatturapa_payment_term_id = self.env[
+                "fatturapa.payment_term"
+            ].browse()
+        invoice.action_post()
+        # pre-condition
+        self.assertFalse(invoice.fatturapa_payment_method_id)
+        self.assertFalse(invoice.fatturapa_payment_term_id)
+
+        # Act
+        # Since payment data fields are not set, an exception is raised
+        with self.assertRaises(UserError) as ue:
+            self.run_wizard(invoice.id)
+        exc_message = ue.exception.args[0]
+        self.assertIn("Fiscal Payment Method must be set", exc_message)
+        # When fields are set, we can export the e-invoice
+        with Form(invoice) as invoice_form:
+            invoice_form.fatturapa_payment_method_id = self.env.ref(
+                "l10n_it_fiscal_payment_term.fatturapa_mp05"
+            )
+            invoice_form.fatturapa_payment_term_id = self.env.ref(
+                "l10n_it_fiscal_payment_term.fatturapa_tp02"
+            )
+        res = self.run_wizard(invoice.id)
+
+        # Assert
+        attachment = self.attach_model.browse(res["res_id"])
+        file_name = "IT06363391001_00019.xml"
+        self.set_e_invoice_file_id(attachment, file_name)
+        xml_content = base64.decodebytes(attachment.datas)
+        self.check_content(xml_content, file_name)
 
     def test_15_xml_export(self):
         """

@@ -1,5 +1,7 @@
 # Copyright 2014 Davide Corio
 # Copyright 2016 Lorenzo Battistini - Agile Business Group
+# Copyright 2025 Simone Rubino - PyTech
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
@@ -39,12 +41,43 @@ class AccountInvoice(models.Model):
         compute="_compute_fatturapa_state",
         store="true",
     )
+    fatturapa_payment_method_id = fields.Many2one(
+        comodel_name="fatturapa.payment_method",
+        string="Fiscal Payment Method",
+        help="Fiscal Payment Method used in the e-invoice, "
+        "defaults to the Payment Term's Fiscal Payment Method.",
+        compute="_compute_fatturapa_payment_term_data",
+        store=True,
+        readonly=False,
+    )
+    fatturapa_payment_term_id = fields.Many2one(
+        comodel_name="fatturapa.payment_term",
+        string="Fiscal Payment Term",
+        help="Fiscal Payment Term used in the e-invoice, "
+        "defaults to the Payment Term's Fiscal Payment Term.",
+        compute="_compute_fatturapa_payment_term_data",
+        store=True,
+        readonly=False,
+    )
 
     @api.depends("fatturapa_attachment_out_id.state")
     def _compute_fatturapa_state(self):
         for record in self:
             record.fatturapa_state = fatturapa_attachment_state_mapping.get(
                 record.fatturapa_attachment_out_id.state
+            )
+
+    @api.depends(
+        "invoice_payment_term_id",
+    )
+    def _compute_fatturapa_payment_term_data(self):
+        for invoice in self:
+            payment_term = invoice.invoice_payment_term_id
+            invoice.fatturapa_payment_method_id = (
+                payment_term.fatturapa_pm_id or invoice.fatturapa_payment_method_id
+            )
+            invoice.fatturapa_payment_term_id = (
+                payment_term.fatturapa_pt_id or invoice.fatturapa_payment_term_id
             )
 
     def preventive_checks(self):
@@ -55,35 +88,26 @@ class AccountInvoice(models.Model):
                     % invoice.name
                 )
 
-            if (
-                invoice.invoice_payment_term_id
-                and invoice.invoice_payment_term_id.fatturapa_pt_id.code is False
-            ):
-                raise UserError(
-                    _(
-                        "Invoice %(name)s fiscal payment term must be"
-                        " set for the selected payment term %(term)s"
+            if invoice.invoice_payment_term_id or invoice.invoice_date_due:
+                # The user wants to create the DatiPagamento node:
+                # they must fill these fields
+                # in order to populate the mandatory nodes
+                if not invoice.fatturapa_payment_method_id:
+                    # For node ModalitaPagamento
+                    raise UserError(
+                        _(
+                            "Invoice %(name)s: Fiscal Payment Method must be set.",
+                            name=invoice.name,
+                        )
                     )
-                    % {
-                        "name": invoice.name,
-                        "term": invoice.invoice_payment_term_id.name,
-                    },
-                )
-
-            if (
-                invoice.invoice_payment_term_id
-                and invoice.invoice_payment_term_id.fatturapa_pm_id.code is False
-            ):
-                raise UserError(
-                    _(
-                        "Invoice %(name)s fiscal payment method must be"
-                        " set for the selected payment term %(term)s"
+                if not invoice.fatturapa_payment_term_id:
+                    # For node CondizioniPagamento
+                    raise UserError(
+                        _(
+                            "Invoice %(name)s: Fiscal Payment Term must be set.",
+                            name=invoice.name,
+                        )
                     )
-                    % {
-                        "name": invoice.name,
-                        "term": invoice.invoice_payment_term_id.name,
-                    },
-                )
 
             if not all(
                 aml.tax_ids for aml in invoice.invoice_line_ids if aml.product_id

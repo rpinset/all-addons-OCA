@@ -73,7 +73,8 @@
 
             <xpath expr="//notebook" position="inside">
                 <page
-                    string="Related Documents"
+                    name="e_invoice"
+                    string="Electronic Invoice"
                     attrs="{
                         'invisible': [
                             '|',
@@ -82,74 +83,76 @@
                         ],
                     }"
                 >
-                    <field name="related_documents" nolabel="1">
-                        <tree editable="bottom">
-                            <field name="type" />
-                            <field name="name" />
-                            <field name="lineRef" readonly="1" />
-                            <field name="date" />
-                            <field name="numitem" />
-                            <field name="code" />
-                            <field name="cig" />
-                            <field name="cup" />
-                            <field name="invoice_id" invisible="1" />
-                        </tree>
-                    </field>
-                </page>
-                <page
-                    string="Electronic Invoice"
-                    attrs="{
-                        'invisible': [
-                            '|',
-                                ('move_type', 'not in', ('out_invoice', 'out_refund')),
-                                '&amp;',
-                                    ('electronic_invoice_subjected', '=', False),
-                                    ('fatturapa_attachment_out_id', '=', False),
-                        ],
-                    }"
-                >
                     <group>
-                        <group string="Results">
-                            <field name="fatturapa_attachment_out_id" />
+                        <group
+                            name="e_invoice_config"
+                            string="Configuration"
+                            colspan="2"
+                        >
                             <field
-                                name="has_pdf_invoice_print"
-                                attrs="{'invisible': [('fatturapa_attachment_out_id', '=', False)]}"
+                                name="fatturapa_payment_method_id"
+                                attrs="{
+                                    'readonly': [
+                                        ('fatturapa_attachment_out_id' ,'!=', False),
+                                    ],
+                                }"
                             />
+                            <field
+                                name="fatturapa_payment_term_id"
+                                attrs="{
+                                    'readonly': [
+                                        ('fatturapa_attachment_out_id' ,'!=', False),
+                                    ],
+                                }"
+                            />
+                            <field name="related_documents">
+                                <tree editable="bottom">
+                                    <field name="type" />
+                                    <field name="name" />
+                                    <field name="lineRef" readonly="1" />
+                                    <field name="date" />
+                                    <field name="numitem" />
+                                    <field name="code" />
+                                    <field name="cig" />
+                                    <field name="cup" />
+                                    <field name="invoice_id" invisible="1" />
+                                </tree>
+                            </field>
                         </group>
-                    </group>
-                </page>
-                <page
-                    string="Electronic Invoice Attachments"
-                    attrs="{
-                        'invisible': [
-                            '|',
-                                ('move_type', 'not in', ('out_invoice', 'out_refund')),
-                                '&amp;',
-                                    ('electronic_invoice_subjected', '=', False),
+                        <group
+                            name="e_invoice_result"
+                            string="Result"
+                            attrs="{
+                                'invisible': [
                                     ('fatturapa_attachment_out_id', '=', False),
-                        ],
-                    }"
-                >
-                    <field name="fatturapa_doc_attachments" nolabel="1">
-                        <tree>
-                            <field name="ir_attachment_id" />
-                            <field name="name" />
-                            <field name="description" />
-                            <field name="is_pdf_invoice_print" />
-                        </tree>
-                        <form string="Attachments">
-                            <group>
-                                <group>
+                                ],
+                            }"
+                            colspan="2"
+                        >
+                            <field name="fatturapa_attachment_out_id" />
+                            <field name="has_pdf_invoice_print" />
+                            <field name="fatturapa_doc_attachments">
+                                <tree>
+                                    <field name="ir_attachment_id" />
+                                    <field name="name" />
                                     <field name="description" />
                                     <field name="is_pdf_invoice_print" />
-                                </group>
-                                <group>
-                                    <field name="datas" filename="name" />
-                                    <field name="name" />
-                                </group>
-                            </group>
-                        </form>
-                    </field>
+                                </tree>
+                                <form string="Attachments">
+                                    <group>
+                                        <group>
+                                            <field name="description" />
+                                            <field name="is_pdf_invoice_print" />
+                                        </group>
+                                        <group>
+                                            <field name="datas" filename="name" />
+                                            <field name="name" />
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </group>
                 </page>
             </xpath>
         </field>

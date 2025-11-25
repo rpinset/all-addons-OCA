@@ -626,11 +626,19 @@ e 'line' per riga di fattura (a seconda del livello in cui sono chiamati)
                 <!--                    <TotalePercorso t-out=""/>-->
                 <!--                </DatiVeicoli>-->
                 <t t-set="payments" t-value="get_payments(record)" />
-                <DatiPagamento t-if="record.invoice_payment_term_id and payments">
+                <t
+                    t-set="fiscal_payment_method"
+                    t-value="record.fatturapa_payment_method_id"
+                />
+                <t
+                    t-set="fiscal_payment_term"
+                    t-value="record.fatturapa_payment_term_id"
+                />
+                <DatiPagamento
+                    t-if="payments and fiscal_payment_method and fiscal_payment_term"
+                >
                     <!--                    <CondizioniPagamento><t t-if="len(payments) == 1">TP02</t><t t-else="">TP01</t></CondizioniPagamento>-->
-                    <CondizioniPagamento
-                        t-out="record.invoice_payment_term_id.fatturapa_pt_id.code"
-                    />
+                    <CondizioniPagamento t-out="fiscal_payment_term.code" />
                     <t t-foreach="payments" t-as="payment">
                         <DettaglioPagamento>
                             <t
@@ -638,9 +646,7 @@ e 'line' per riga di fattura (a seconda del livello in cui sono chiamati)
                                 t-value="record.partner_bank_id"
                             />
                             <!--                            <Beneficiario t-out=""/>-->
-                            <ModalitaPagamento
-                                t-out="record.invoice_payment_term_id.fatturapa_pm_id.code"
-                            />
+                            <ModalitaPagamento t-out="fiscal_payment_method.code" />
                             <!--                            <DataRiferimentoTerminiPagamento t-out=""/>-->
                             <!--                            <GiorniTerminiPagamento t-out=""/>-->
                             <DataScadenzaPagamento

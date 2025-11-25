@@ -86,6 +86,7 @@ odoo-test-helper
 dateparser
 dotty-dict
 factur-x
+ovh
 phonenumbers
 pydifact
 pypdf>=3.1.0

@@ -7,6 +7,7 @@ import tempfile
 from lxml import etree
 
 from odoo.modules.module import get_module_resource
+from odoo.tests import Form
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.addons.mail.tests.common import mail_new_test_user
@@ -56,6 +57,29 @@ class FatturaPACommon(AccountTestInvoicingCommon):
             }
         )
         return tax_values
+
+    @classmethod
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
+        cls.env["ir.default"].sudo().set(
+            "account.move",
+            "invoice_payment_term_id",
+            cls.env.ref("account.account_payment_term_immediate").id,
+        )
+
+    def _exclude_DatiPagamento(self, invoice):
+        """Configure `invoice` so that DatiPagamento is not in the e-invoice."""
+        invoice.partner_id.electronic_invoice_subjected = True
+        with Form(invoice) as invoice_form:
+            invoice_form.invoice_date_due = False
+
+            invoice_form.fatturapa_payment_method_id = self.env[
+                "fatturapa.payment_method"
+            ].browse()
+            invoice_form.fatturapa_payment_term_id = self.env[
+                "fatturapa.payment_term"
+            ].browse()
+        return invoice
 
     def setUp(self):
         super().setUp()

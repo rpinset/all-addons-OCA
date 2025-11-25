@@ -32,6 +32,7 @@ class AccountMove(models.Model):
                     },
                 )
             ]
+            self.rc_self_invoice_id.invoice_date_due = False
         return res
 
     def button_draft(self):

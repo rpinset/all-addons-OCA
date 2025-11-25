@@ -95,7 +95,9 @@ class TestFatturaPAXMLValidation(FatturaPACommon):
             self.env["account.move"].with_context(default_move_type="out_invoice")
         )
         move_form.invoice_date = fields.Date.from_string("2016-06-15")
-        move_form.invoice_date_due = fields.Date.today()
+        # Due date is not always visible
+        if not move_form._get_modifier("invoice_date_due", "invisible"):
+            move_form.invoice_date_due = fields.Date.today()
         move_form.partner_id = self.res_partner_fatturapa_0
         move_form.invoice_payment_term_id = self.payment_term
         move_form.fiscal_position_id = self.fiscal_position
