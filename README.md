@@ -409,11 +409,16 @@ Date:   Wed Jun 4 02:45:40 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 783a5a61e5c6fc74210c140bf6100ff04c73f5cb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 15 14:31:11 2025 +0000
+commit 1fcce07d8c763d34ca65ba885fd1820f6e1a71bd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 24 10:41:36 2025 +0000
 
-    [ADD] setup.py
+    Translated using Weblate (Italian)
+    
+    Currently translated at 85.0% (34 of 40 strings)
+    
+    Translation: partner-contact-12.0/partner-contact-12.0-base_location_nuts
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_location_nuts/it/
 
 
 ## sale-financial
@@ -473,9 +478,9 @@ Date:   Sun Oct 29 09:56:21 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 2bcdfb098bfb25f2b4bf034e77e0de0ac36c3c5e
+commit e72a5ad407832d15c625f52412c9f4349d5ded57
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:34 2025 +0000
+Date:   Mon Nov 24 10:41:39 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -487,16 +492,16 @@ Date:   Sat Jun 21 10:42:34 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 988ddf69838fbb8a7f2dd30e7c53c264eb1c4d7c
+commit df8a90cfddca70e9802027834d7e0b1464fe4f7f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:40:41 2025 +0000
+Date:   Tue Nov 25 09:17:08 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (334 of 334 strings)
+    Currently translated at 100.0% (84 of 84 strings)
     
-    Translation: dms-12.0/dms-12.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-12-0/dms-12-0-dms/it/
+    Translation: dms-12.0/dms-12.0-dms_field
+    Translate-URL: https://translation.odoo-community.org/projects/dms-12-0/dms-12-0-dms_field/it/
 
 
 ## e-commerce
@@ -816,16 +821,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit eb0594e9bbadc6645f5b3630e0e3d32a648fef76
+commit 81ff30754a2b80748b5109858dc4bdd99e5d567c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 23 06:55:12 2025 +0000
+Date:   Tue Nov 25 09:07:24 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (173 of 173 strings)
+    Currently translated at 39.8% (4380 of 10995 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
 
 
 ## l10n-japan
@@ -1033,16 +1038,16 @@ Date:   Tue Sep 9 10:05:35 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 775917780ccef492dc7e4925b634962cd9cff129
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 14 06:44:20 2025 +0000
+commit 6646c77c78f53195b35a0d1a2fc9ee365a72397c
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Mon Nov 24 08:09:24 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
     Currently translated at 100.0% (14 of 14 strings)
     
     Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_invoice_link
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_invoice_link/it/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_invoice_link/sl/
 
 
 ## stock-logistics-tracking
@@ -1079,9 +1084,9 @@ Date:   Wed Jun 4 03:49:32 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 0e277eeb3c453cab6531c6eda2dba8700a73be79
+commit 24401b97ec9045d0dde000600065b5b8d666651d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 29 20:52:40 2025 +0000
+Date:   Tue Nov 25 09:15:46 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1116,16 +1121,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 99e04023b178456a4421e214673137841bf73b6f
-Author: Douglas Custódio <douglascstd@yahoo.com>
-Date:   Wed Sep 3 16:18:32 2025 +0000
+commit dfb1ab75145e00db99c6b31cc237db684c5ddd9c
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Mon Nov 24 08:33:44 2025 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 21.7% (10 of 46 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/pt_BR/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_subcontracting
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_subcontracting/sl/
 
 
 ## manufacture-reporting
@@ -1181,16 +1186,16 @@ Date:   Wed Jun 4 03:29:42 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit fc21232b0f8a8aca1b51e323ecf4f741e2f02902
+commit f3c9f136dcbb7fd08ed92a06e80cde6bc23095d3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 2 06:26:49 2025 +0000
+Date:   Mon Nov 24 11:55:52 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (16 of 16 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: product-attribute-12.0/product-attribute-12.0-product_template_tags
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_template_tags/it/
+    Translation: product-attribute-12.0/product-attribute-12.0-product_category_active
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_category_active/it/
 
 
 ## product-kitting
@@ -1342,11 +1347,16 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 9c8a4a3c9a7ad4179c1077882175bc6065f7b794
-Author: Hector Vior <hector.villarreal@forgeflow.com>
-Date:   Wed Oct 29 17:36:07 2025 +0100
+commit b18ab361fb307e5424c4461dbbf04a0eaa0249ba
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Nov 25 09:19:28 2025 +0000
 
-    [FIX] report_pdf_zip_download: py35 compatible code
+    Translated using Weblate (Italian)
+    
+    Currently translated at 89.4% (51 of 57 strings)
+    
+    Translation: reporting-engine-12.0/reporting-engine-12.0-report_async
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-report_async/it/
 
 
 ## report-print-send
