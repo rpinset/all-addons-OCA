@@ -697,7 +697,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 17.0.1.4.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 17.0.1.5.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 17.0.1.4.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 17.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -2465,6 +2465,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.0 |  | Skip payment for logged users in checkout process
+[website_sale_empty_cart](website_sale_empty_cart/) | 17.0.1.0.0 |  | Adds a button in the website cart to empty all
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 17.0.1.2.1 |  | Hide product prices on the shop
 [website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Displays the user's regular products in the e-commerce.
@@ -4952,7 +4953,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.2 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.4 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.1.0 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.1.1 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 17.0.1.0.2 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5758,7 +5759,7 @@ addon | version | maintainers | summary
 [stock_picking_comment_template](stock_picking_comment_template/) | 17.0.1.0.0 |  | Comments texts templates on Picking documents
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 17.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
-[stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.1.1 |  | Adding Valued Picking on Delivery Slip report
+[stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.1.2 |  | Adding Valued Picking on Delivery Slip report
 [stock_quant_history](stock_quant_history/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/rolandojduartem'><img src='https://github.com/rolandojduartem.png' width='32' height='32' style='border-radius:50%;' alt='rolandojduartem'/></a> | Provides stock quantity by location on past date
@@ -6382,6 +6383,7 @@ addon | version | maintainers | summary
 [product_category_active](product_category_active/) | 17.0.1.0.0 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 17.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a code on product categories
 [product_category_code_unique](product_category_code_unique/) | 17.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to set product category code field as unique
+[product_category_description](product_category_description/) | 17.0.1.0.0 | <a href='https://github.com/MarcBForgeFlow'><img src='https://github.com/MarcBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MarcBForgeFlow'/></a> | Allows to add a detailed description for a product category.
 [product_category_product_link](product_category_product_link/) | 17.0.1.0.0 |  | Allows to get products from a category
 [product_code_mandatory](product_code_mandatory/) | 17.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_unique](product_code_unique/) | 17.0.1.0.0 |  | Set Product Internal Reference as Unique
@@ -6786,7 +6788,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[contract](contract/) | 17.0.1.4.6 |  | Recurring - Contracts Management
+[contract](contract/) | 17.0.1.5.0 |  | Recurring - Contracts Management
 [contract_analytic_tag](contract_analytic_tag/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Contract Analytic Tag
 [contract_invoice_auto_validate](contract_invoice_auto_validate/) | 17.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon auto-validate invoices after its creation from a contract
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Contract Invoice Start End Dates
@@ -7220,7 +7222,7 @@ addon | version | maintainers | summary
 [report_xlsx](report_xlsx/) | 17.0.1.0.2 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 17.0.1.0.1 |  | Report xlsx helpers
 [report_xml](report_xml/) | 17.0.1.0.0 |  | Allow to generate XML reports
-[sql_export](sql_export/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Export data in csv file with SQL requests
+[sql_export](sql_export/) | 17.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Export data in csv file with SQL requests
 [sql_export_excel](sql_export_excel/) | 17.0.1.0.0 |  | Allow to export a sql query to an excel file.
 [sql_export_mail](sql_export_mail/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Send csv file generated by sql query by mail.
 [sql_request_abstract](sql_request_abstract/) | 17.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Abstract Model to manage SQL Requests

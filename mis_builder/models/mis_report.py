@@ -391,12 +391,19 @@ class MisReportQuery(models.Model):
     date_field = fields.Many2one(
         comodel_name="ir.model.fields",
         required=True,
-        domain=[("ttype", "in", ("date", "datetime"))],
+        domain="[('ttype', 'in', ('date', 'datetime')),('model_id', '=', model_id)]",
         ondelete="cascade",
     )
     domain = fields.Char()
     report_id = fields.Many2one(
         comodel_name="mis.report", required=True, ondelete="cascade"
+    )
+    company_field_id = fields.Many2one(
+        comodel_name="ir.model.fields",
+        ondelete="set null",
+        domain="[('model_id', '=', model_id)]",
+        help="Field that defines company on related model."
+        "When set, it will be automatically be added in search domain of query.",
     )
 
     _order = "name"
