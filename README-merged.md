@@ -691,7 +691,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 18.0.1.7.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 18.0.1.8.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 18.0.2.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 18.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -959,6 +959,7 @@ addon | version | maintainers | summary
 [account_in_payment](account_in_payment/) | 18.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_move_base_import](account_move_base_import/) | 18.0.1.0.0 |  | Journal Entry base import
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 18.0.1.0.0 |  | Account Move Reconcile Forbid Cancel
+[account_partner_reconcile](account_partner_reconcile/) | 18.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 18.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.1.0 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
 [account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.17 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
@@ -2515,7 +2516,7 @@ addon | version | maintainers | summary
 [website_sale_hide_price](website_sale_hide_price/) | 18.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_order_type](website_sale_order_type/) | 18.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
 [website_sale_product_attribute_filter_category](website_sale_product_attribute_filter_category/) | 18.0.1.0.1 |  | Allow group attributes in shop by categories
-[website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 18.0.1.1.0 |  | Allow hide attributes values not used in variants
+[website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 18.0.1.1.1 |  | Allow hide attributes values not used in variants
 [website_sale_product_brand](website_sale_product_brand/) | 18.0.1.0.0 |  | Product Brand Filtering in Website
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 18.0.1.0.0 |  | Display attributes images in shop product detail
 [website_sale_product_item_cart_custom_qty](website_sale_product_item_cart_custom_qty/) | 18.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Allows to add to cart from product items a custom quantity.
@@ -2580,7 +2581,7 @@ addon | version | maintainers | summary
 [account_invoice_export](account_invoice_export/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
 [account_invoice_export_server_env](account_invoice_export_server_env/) | 18.0.1.0.0 |  | Server environment for Account Invoice Export
-[account_invoice_facturx](account_invoice_facturx/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx](account_invoice_facturx/) | 18.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [base_business_document_import](base_business_document_import/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 18.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
@@ -4023,7 +4024,7 @@ addon | version | maintainers | summary
 [l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add checks on sale orders for Chorus Pro
 [l10n_fr_cog](l10n_fr_cog/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Code Officiel Géographique (COG) on countries
-[l10n_fr_das2](l10n_fr_das2/) | 18.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DAS2 (France)
+[l10n_fr_das2](l10n_fr_das2/) | 18.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 18.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Check validity of Social Security Numbers in French companies
@@ -4078,6 +4079,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[datev_export](datev_export/) | 18.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [datev_import_csv_dtvf](datev_import_csv_dtvf/) | 18.0.1.1.0 |  | Import account moves generated by external software
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 18.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | NUTS specific options for German
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 18.0.2.0.0 |  | German VAT Statement
@@ -5051,7 +5053,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 18.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 18.0.1.0.3 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.1.0 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.1.2 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 18.0.1.0.0 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5520,6 +5522,7 @@ addon | version | maintainers | summary
 [delivery_carrier_picking_valid_dangerous_goods](delivery_carrier_picking_valid_dangerous_goods/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Checks if a transfer matches carrier dangerous goods restrictions
 [delivery_carrier_pricelist](delivery_carrier_pricelist/) | 18.0.1.0.0 |  | Compute delivery method price based on the product's pricelist.
 [delivery_carrier_shipping_label](delivery_carrier_shipping_label/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Delivery Carrier Shipping Label
+[delivery_carrier_shipping_policy](delivery_carrier_shipping_policy/) | 18.0.1.0.0 |  | Delivery Carrier Shipping Policy
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
 [delivery_correos_express](delivery_correos_express/) | 18.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_driver](delivery_driver/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow choose driver in delivery methods
@@ -5671,7 +5674,7 @@ addon | version | maintainers | summary
 [stock_landed_costs_purchase_auto](stock_landed_costs_purchase_auto/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock landed costs purchase auto
 [stock_lock_lot](stock_lock_lot/) | 18.0.1.0.0 |  | Stock Lock Lot
 [stock_move_actual_date](stock_move_actual_date/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Stock Move Actual Date
-[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 18.0.1.0.1 |  | Auto release moves after auto assign
+[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 18.0.1.1.0 |  | Auto release moves after auto assign
 [stock_move_line_change_lot](stock_move_line_change_lot/) | 18.0.1.0.1 |  | Stock Move Line Change Lot
 [stock_move_line_qty_picked](stock_move_line_qty_picked/) | 18.0.1.2.1 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Separate quantity picked from the reserved quantity
 [stock_move_original_date](stock_move_original_date/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds the Original Date Scheduled to stock moves.
@@ -5780,7 +5783,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [internal_stock_quant_package](internal_stock_quant_package/) | 18.0.1.0.0 |  | This module allows to declare internal stock quant package
 [stock_quant_package_dimension](stock_quant_package_dimension/) | 18.0.1.0.1 |  | Use dimensions on packages
-[stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 18.0.1.1.0 |  | Use product packagings on packages
+[stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 18.0.1.2.0 |  | Use product packagings on packages
 
 [//]: # (end addons)
 
@@ -5950,11 +5953,12 @@ addon | version | maintainers | summary
 [stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Delivery Driver info in Stock Picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
 [stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 18.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Stock Picking Report Header Repeater
+[stock_picking_report_incoming_delivery_address](stock_picking_report_incoming_delivery_address/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow show delivery address in report when picking type is incoming
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 18.0.1.0.0 |  | Show delivery address when picking type is internal
 [stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Stock Picking Report - Product Sticker
 [stock_picking_report_salesperson](stock_picking_report_salesperson/) | 18.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Salesperson info in Stock Picking reports
 [stock_picking_report_summary](stock_picking_report_summary/) | 18.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Stock Picking Report Summary
-[stock_picking_report_valued](stock_picking_report_valued/) | 18.0.1.0.1 |  | Adding Valued Picking on Delivery Slip report
+[stock_picking_report_valued](stock_picking_report_valued/) | 18.0.1.0.2 |  | Adding Valued Picking on Delivery Slip report
 [stock_portal_lot_list_download](stock_portal_lot_list_download/) | 18.0.1.0.0 |  | Allows portal users to download lot list of delivery pickings in Excel format.
 [stock_quantity_history_location](stock_quantity_history_location/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/rolandojduartem'><img src='https://github.com/rolandojduartem.png' width='32' height='32' style='border-radius:50%;' alt='rolandojduartem'/></a> | Provides stock quantity by location on past date
 
@@ -6669,6 +6673,7 @@ addon | version | maintainers | summary
 [product_secondary_unit](product_secondary_unit/) | 18.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Set a secondary unit per product
 [product_sequence](product_sequence/) | 18.0.1.0.1 |  | Product Sequence
 [product_set](product_set/) | 18.0.1.2.1 |  | Product set
+[product_simple_seasonality](product_simple_seasonality/) | 18.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Product seasonality
 [product_state](product_state/) | 18.0.1.0.0 | <a href='https://github.com/emagdalenaC2i'><img src='https://github.com/emagdalenaC2i.png' width='32' height='32' style='border-radius:50%;' alt='emagdalenaC2i'/></a> | Module introducing a state field on product template
 [product_state_sale](product_state_sale/) | 18.0.1.0.0 |  | This module add the use of Product State in Sale
 [product_state_stock_base](product_state_stock_base/) | 18.0.1.0.0 |  | This module add the use of Product State in Stock
@@ -7049,7 +7054,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 18.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 18.0.2.0.9 |  | Recurring - Contracts Management
+[contract](contract/) | 18.0.2.1.0 |  | Recurring - Contracts Management
 [contract_analytic_tag](contract_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Contract Analytic Tag
 [contract_forecast](contract_forecast/) | 18.0.1.0.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Contract Forecast
 [contract_forecast_variable_quantity](contract_forecast_variable_quantity/) | 18.0.1.0.0 |  | Contract Forecast Variable Quantity
@@ -7360,7 +7365,7 @@ addon | version | maintainers | summary
 [storage_image](storage_image/) | 18.0.1.0.0 |  | Store image and resized image in a storage backend
 [storage_image_product](storage_image_product/) | 18.0.1.0.1 |  | Link images to products and categories
 [storage_media](storage_media/) | 18.0.1.1.0 |  | Give the posibility to store media data in Odoo
-[storage_media_product](storage_media_product/) | 18.0.1.0.0 |  | Link media to products and categories
+[storage_media_product](storage_media_product/) | 18.0.1.0.1 |  | Link media to products and categories
 [storage_thumbnail](storage_thumbnail/) | 18.0.1.0.0 |  | Abstract module that add the possibility to have thumbnail
 
 [//]: # (end addons)
@@ -7476,7 +7481,7 @@ addon | version | maintainers | summary
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 18.0.1.0.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Add watermarks to your QWEB PDF reports
 [report_substitute](report_substitute/) | 18.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module allows to create substitution rules for report actions.
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 18.0.1.0.1 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
-[report_xlsx](report_xlsx/) | 18.0.1.1.1 |  | Base module to create xlsx report
+[report_xlsx](report_xlsx/) | 18.0.1.1.2 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 18.0.1.0.0 |  | Report xlsx helpers
 [report_xml](report_xml/) | 18.0.1.1.0 |  | Allow to generate XML reports
 [sql_export](sql_export/) | 18.0.1.1.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Export data in csv file with SQL requests
@@ -7836,6 +7841,7 @@ addon | version | maintainers | summary
 [base_user_role](base_user_role/) | 18.0.1.0.5 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jcdrubay'><img src='https://github.com/jcdrubay.png' width='32' height='32' style='border-radius:50%;' alt='jcdrubay'/></a> <a href='https://github.com/novawish'><img src='https://github.com/novawish.png' width='32' height='32' style='border-radius:50%;' alt='novawish'/></a> | User roles
 [base_user_role_company](base_user_role_company/) | 18.0.1.0.2 |  | User roles by company
 [base_user_role_history](base_user_role_history/) | 18.0.1.0.0 | <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | This module allows to track the changes on users roles.
+[server_action_navigate](server_action_navigate/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/ashishhirpara'><img src='https://github.com/ashishhirpara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirpara'/></a> | Navigate between any items of any Odoo Models
 [server_action_sort](server_action_sort/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Sort any lines of any models by any criterias
 
 [//]: # (end addons)

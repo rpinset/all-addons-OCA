@@ -1,0 +1,239 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rma_reason
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-24 07:46+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: rma_reason
+#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title="
+"\"Los valores establecidos aquí son específicos de la compañía.\" groups="
+"\"base.group_multi_company\"/>"
+
+#. module: rma_reason
+#: model_terms:ir.ui.view,arch_db:rma_reason.portal_rma_page
+msgid "<strong>Reason</strong>"
+msgstr "<strong>Razón</strong>"
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: rma_reason
+#: model:rma.reason,name:rma_reason.rma_reason_damaged_in_transit
+msgid "Damaged in Transit"
+msgstr "Dañado durante el transporte"
+
+#. module: rma_reason
+#: model:rma.reason,name:rma_reason.rma_reason_defective_product
+msgid "Defective Product"
+msgstr "Producto defectuoso"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__id
+msgid "ID"
+msgstr "ID"
+
+#. module: rma_reason
+#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
+msgid ""
+"Indicates whether specifying an RMA reason is\n"
+"                            mandatory when creating an RMA order.\n"
+"                            Enabling this ensures that all return requests\n"
+"                            have a documented reason, aiding in inventory\n"
+"                            management, quality control, and customer service."
+msgstr ""
+"Indica si es obligatorio especificar un motivo de RMA\n"
+"                            al crear un pedido de RMA.\n"
+"                            Al habilitar esta opción, se garantiza que todas "
+"las solicitudes de devolución\n"
+"                            tengan un motivo documentado, lo que facilita la "
+"gestión del inventario\n"
+"                            , el control de calidad y el servicio al cliente."
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_res_company__is_rma_reason_required
+#: model:ir.model.fields,field_description:rma_reason.field_res_config_settings__is_rma_reason_required
+#: model:ir.model.fields,field_description:rma_reason.field_rma__is_rma_reason_required
+#: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking_line__is_rma_reason_required
+msgid ""
+"Indicates whether specifying an RMA reason is mandatory when creating an RMA"
+" order."
+msgstr ""
+"Indica si es obligatorio especificar un motivo de RMA al crear un pedido de "
+"RMA."
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: rma_reason
+#: model:ir.model.fields,help:rma_reason.field_rma_reason__allowed_operation_ids
+msgid "List of RMA operations that are allowed when this reason is selected."
+msgstr "Lista de operaciones RMA permitidas cuando se selecciona este motivo."
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma__operation_domain
+msgid "Operation Domain"
+msgstr "Dominio de operación"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_reason__allowed_operation_ids
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: rma_reason
+#: model:rma.reason,name:rma_reason.rma_reason_not_as_described
+msgid "Product Not as Described"
+msgstr "El producto no se ajusta a la descripción"
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_rma
+msgid "RMA"
+msgstr "RMA"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking__rma_reason_id
+#: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking_line__rma_reason_id
+#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
+msgid "RMA Reason"
+msgstr "Motivo de RMA"
+
+#. module: rma_reason
+#: model:ir.actions.act_window,name:rma_reason.rma_reason_act_window
+#: model:ir.ui.menu,name:rma_reason.rma_reason_menu
+msgid "RMA Reasons"
+msgstr "Motivos de RMA"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_stock_return_picking
+msgid "Return Picking"
+msgstr ""
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_stock_return_picking_line
+msgid "Return Picking Line"
+msgstr ""
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking__rma_operation_domain
+#: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking_line__rma_operation_domain
+msgid "Rma Operation Domain"
+msgstr ""
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_rma_reason
+msgid "Rma Reason"
+msgstr "Motivo Rma"
+
+#. module: rma_reason
+#: model:rma.reason,description:rma_reason.rma_reason_unwanted_changed_mind
+msgid ""
+"The customer no longer wants the item or changed their mind after purchasing"
+" it."
+msgstr ""
+"El cliente ya no quiere el artículo o ha cambiado de opinión después de "
+"comprarlo."
+
+#. module: rma_reason
+#: model:rma.reason,description:rma_reason.rma_reason_wrong_item_shipped
+msgid "The customer received a different product than what they ordered."
+msgstr "El cliente recibió un producto diferente al que había pedido."
+
+#. module: rma_reason
+#: model:rma.reason,description:rma_reason.rma_reason_not_as_described
+msgid ""
+"The item does not match the description or specifications provided by the "
+"seller, leading to customer dissatisfaction."
+msgstr ""
+"El artículo no coincide con la descripción o las especificaciones "
+"proporcionadas por el vendedor, lo que provoca la insatisfacción del cliente."
+
+#. module: rma_reason
+#: model:rma.reason,description:rma_reason.rma_reason_defective_product
+msgid ""
+"The item is malfunctioning or has a defect that affects its intended use."
+msgstr ""
+"El artículo funciona mal o tiene un defecto que afecta a su uso previsto."
+
+#. module: rma_reason
+#: model:rma.reason,description:rma_reason.rma_reason_damaged_in_transit
+msgid ""
+"The product was damaged during shipping and is not in usable condition upon "
+"arrival."
+msgstr ""
+"El producto se dañó durante el envío y no se encuentra en condiciones de uso "
+"al llegar."
+
+#. module: rma_reason
+#: model:rma.reason,name:rma_reason.rma_reason_unwanted_changed_mind
+msgid "Unwanted/Changed Mind"
+msgstr "No deseado/Cambio de opinión"
+
+#. module: rma_reason
+#: model:rma.reason,name:rma_reason.rma_reason_wrong_item_shipped
+msgid "Wrong Item Shipped"
+msgstr "Se ha enviado un artículo incorrecto"

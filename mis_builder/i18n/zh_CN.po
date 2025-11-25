@@ -477,6 +477,11 @@ msgid "Companies for which data will be searched."
 msgstr "将搜索数据的公司。"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__company_field_id
+msgid "Company Field"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_cmpcol_to_id
 msgid "Compare"
 msgstr "比较"
@@ -768,6 +773,13 @@ msgstr "用于归一化周期的因素（用于比较"
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_names
 msgid "Fetched fields name"
 msgstr "获取字段名称"
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_query__company_field_id
+msgid ""
+"Field that defines company on related model.When set, it will be "
+"automatically be added in search domain of query."
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_ids

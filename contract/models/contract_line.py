@@ -30,6 +30,8 @@ class ContractLine(models.Model):
         auto_join=True,
         ondelete="cascade",
     )
+    # replace from abstract to add the store=True
+    partner_id = fields.Many2one(store=True)
     currency_id = fields.Many2one(related="contract_id.currency_id")
     create_invoice_visibility = fields.Boolean(
         compute="_compute_create_invoice_visibility"
@@ -260,6 +262,15 @@ class ContractLine(models.Model):
                     "last_date_invoiced": last_date_invoiced,
                 }
             )
+
+    def _can_be_invoiced(self, date_ref):
+        self.ensure_one()
+        return (
+            not self.is_canceled
+            and self.recurring_next_date
+            and self.recurring_next_date <= date_ref
+            and self.next_period_date_start
+        )
 
     @api.model
     def get_view(self, view_id=None, view_type="form", **options):

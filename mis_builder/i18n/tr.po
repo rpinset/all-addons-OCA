@@ -50,8 +50,8 @@ msgstr ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            "
-"data_account_type_receivable').id)][]\n"
+"                                            data_account_type_receivable')."
+"id)][]\n"
 "                                        </code>\n"
 "                                        :Dönem boyunca tüm alacak "
 "hesaplarının bakiyesinin\n"
@@ -68,8 +68,8 @@ msgid ""
 "tax grid 56."
 msgstr ""
 "<code>\n"
-"                                            balp[]"
-"[('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]\n"
+"                                            balp[][('tax_line_id.tag_ids', "
+"'=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
 "                                        : Vergi Tablosuna ilişkin hareket "
 "satırı bakiyesi 56."
@@ -296,8 +296,8 @@ msgid ""
 "Compare to column: compare to other column.\n"
 msgstr ""
 "Gerçek Değerler: muhasebe ve diğer sorgulardan gelen güncel veriler.\n"
-"Gerçek Değerler (alternatif): alternatif bir kaynaktan gelen güncel veriler ("
-"örneğin, benzer hesap hareket satırları sağlayan bir veritabanı görünümü).\n"
+"Gerçek Değerler (alternatif): alternatif bir kaynaktan gelen güncel veriler "
+"(örneğin, benzer hesap hareket satırları sağlayan bir veritabanı görünümü).\n"
 "Toplam sütunlar: diğer sütunların toplamı (+/-).\n"
 "Sütunla karşılaştır: diğer sütunla karşılaştır.\n"
 
@@ -494,6 +494,11 @@ msgstr "Toplanacak sütunlar"
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__query_company_ids
 msgid "Companies for which data will be searched."
 msgstr "Verinin aranacağı şirketler."
+
+#. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__company_field_id
+msgid "Company Field"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__source_cmpcol_to_id
@@ -772,10 +777,10 @@ msgid ""
 "field1</code>)."
 msgstr ""
 "İfadeler diğer KPI'ları, alt KPI'ları ve\n"
-"                                    sorgu sonuçlarını isme göre içerebilir ("
-"eg <code>kpi1 + kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, "
-"<code>query1.field1</code>)."
+"                                    sorgu sonuçlarını isme göre içerebilir "
+"(eg <code>kpi1 + kpi2</code>,\n"
+"                                    <code>kpi2.subkpi1</code>, <code>query1."
+"field1</code>)."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__normalize_factor
@@ -798,6 +803,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_names
 msgid "Fetched fields name"
 msgstr "Getirilen alanların adı"
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_query__company_field_id
+msgid ""
+"Field that defines company on related model.When set, it will be "
+"automatically be added in search domain of query."
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__field_ids

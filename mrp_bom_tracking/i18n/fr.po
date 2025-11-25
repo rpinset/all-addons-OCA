@@ -1,0 +1,213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_tracking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-24 19:42+0000\n"
+"Last-Translator: Julien Hémono <julien@hemono.fr>\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+msgid "-&gt;"
+msgstr "-&gt;"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid ""
+":\n"
+"                New component<br/>"
+msgstr ""
+":\n"
+"                Nouveau composant<br/>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid ""
+":\n"
+"                Removed component<br/>"
+msgstr ""
+":\n"
+"                Composant supprimé<br/>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid ""
+"<br/>\n"
+"                    Product Unit of Measure:"
+msgstr ""
+"<br/>\n"
+"                    Unité de mesure du produit :"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+msgid "<strong>The component quantities or UoMs have been updated.</strong>"
+msgstr ""
+"<strong>La quantité ou l'unité du composant ont été mises à jour.</strong>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid "<strong>The components have changed.</strong>"
+msgstr "<strong>Les composants ont changé.</strong>"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__produce_delay
+msgid ""
+"Average lead time in days to manufacture this product. In the case of multi-"
+"level BOM, the manufacturing lead times of the components will be added. In "
+"case the product is subcontracted, this can be used to determine the date at"
+" which components should be sent to the subcontractor."
+msgstr ""
+"Délai moyen en jours pour fabriquer ce produit. Dans le cas d'une "
+"nomenclature à plusieurs niveaux, les délais de fabrication des composants "
+"seront ajoutés. Dans le cas où le produit est sous-traité, cela peut être "
+"utilisé pour déterminer la date à laquelle les composants doivent être "
+"envoyés au sous-traitant."
+
+#. module: mrp_bom_tracking
+#: model:ir.model,name:mrp_bom_tracking.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Nomenclature"
+
+#. module: mrp_bom_tracking
+#: model:ir.model,name:mrp_bom_tracking.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Ligne de nomenclature"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__type
+msgid "BoM Type"
+msgstr "Type de nomenclature"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__days_to_prepare_mo
+msgid ""
+"Create and confirm Manufacturing Orders this many days in advance, to have enough time to replenish components or manufacture semi-finished products.\n"
+"Note that security lead times will also be considered when appropriate."
+msgstr ""
+"Créez et confirmez les ordres de fabrication autant de jours à l'avance, "
+"afin d'avoir assez de temps pour réapprovisionner les composants ou "
+"fabriquer les produits semi-finis.\n"
+"Notez que les délais de sécurité seront également pris en considération le "
+"cas échéant."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__days_to_prepare_mo
+msgid "Days to prepare Manufacturing Order"
+msgstr "Jours pour préparer l'ordre de fabrication"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__consumption
+msgid ""
+"Defines if you can consume more or less components than the quantity defined on the BoM:\n"
+"  * Allowed: allowed for all manufacturing users.\n"
+"  * Allowed with warning: allowed for all manufacturing users with summary of consumption differences when closing the manufacturing order.\n"
+"  Note that in the case of component Highlight Consumption, where consumption is registered manually exclusively, consumption warnings will still be issued when appropriate also.\n"
+"  * Blocked: only a manager can close a manufacturing order when the BoM consumption is not respected."
+msgstr ""
+"Définit si vous pouvez consommer plus ou moins de composants que la quantité "
+"définie sur la nomenclature :\n"
+"* Autorisé : autorisé pour tous les utilisateurs de Fabrication.\n"
+"* Autorisé avec avertissement : autorisé pour tous les utilisateurs de "
+"fabrication avec récapitulatif des écarts de consommation lors de la clôture "
+"de l'ordre de fabrication.\n"
+"Notez que dans le cas du composant Consommation mise en évidence, où la "
+"consommation est enregistrée manuellement exclusivement, des avertissements "
+"de consommation seront également émis le cas échéant.\n"
+"* Bloqué : seul un responsable peut clôturer un ordre de fabrication lorsque "
+"la consommation de la nomenclature n'est pas respectée."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__consumption
+msgid "Flexible Consumption"
+msgstr "Consommation flexible"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__product_id
+msgid ""
+"If a product variant is defined the BOM is available only for this product."
+msgstr ""
+"Si une variante de produit est définie, la nomenclature n'est disponible que "
+"pour ce produit."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__produce_delay
+msgid "Manufacturing Lead Time"
+msgstr "Délai de fabrication"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__ready_to_produce
+msgid "Manufacturing Readiness"
+msgstr "Statut de préparation de la fabrication"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__picking_type_id
+msgid "Operation Type"
+msgstr "Type d'opération"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_tmpl_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid "Product Quantity:"
+msgstr "Quantité de produits :"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_id
+msgid "Product Variant"
+msgstr "Variante de produit"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_qty
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__code
+msgid "Reference"
+msgstr "Référence"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__product_qty
+msgid ""
+"This should be the smallest quantity that this product can be produced in. "
+"If the BOM contains operations, make sure the work center capacity is "
+"accurate."
+msgstr ""
+"Il doit s'agir de la plus petite quantité dans laquelle ce produit peut être "
+"produit. Si la nomenclature contient des opérations, assurez-vous que la "
+"capacité du poste de travail est exacte."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__picking_type_id
+msgid ""
+"When a procurement has a ‘produce’ route with a operation type set, it will "
+"try to create a Manufacturing Order for that product using a BoM of the same"
+" operation type. That allows to define stock rules which trigger different "
+"manufacturing orders with different BoMs."
+msgstr ""
+"Quand un approvisionnement a une route 'fabriquer' avec un type d'opération "
+"défini, le système essayera de créer un ordre de fabrication pour ce produit "
+"en utilisant une nomenclature qui a le même type d'opération. Cela permet de "
+"définir des règles de stock qui génèrent des ordres de fabrication avec "
+"différentes nomenclatures."
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid "component<br/>"
+msgstr "composant<br/>"
