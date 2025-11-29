@@ -630,30 +630,30 @@ Date:   Sat Jun 21 10:46:58 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 053b5d01d32e13b8714da70f959d48fcf0b25f58
+commit 28044232c21015fa28ae47e22481ad2f19a6bd08
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 12:11:45 2025 +0000
+Date:   Fri Nov 28 08:44:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_due_date
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_due_date/it/
+    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_substate
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_substate/it/
 
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 1ec03e170c5986f5f1390212091c54ca688e518f
+commit 5ce858e9099119b0bd514a5faae2d3f2aca2ef8a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:08:26 2025 +0000
+Date:   Fri Nov 28 08:45:00 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (29 of 29 strings)
     
-    Translation: hr-holidays-14.0/hr-holidays-14.0-hr_holidays_security
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-14-0/hr-holidays-14-0-hr_holidays_security/it/
+    Translation: hr-holidays-14.0/hr-holidays-14.0-hr_holidays_summary_email
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-14-0/hr-holidays-14-0-hr_holidays_summary_email/it/
 
 
 ## department
@@ -825,9 +825,9 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit b8f25d30f04040d4154ced23ef0ce26ff41bc5b0
+commit 0f1d0b3d3995178269dd9672361eabf6491996a5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 10 10:44:01 2025 +0000
+Date:   Tue Nov 25 21:39:40 2025 +0000
 
     [BOT] post-merge updates
 
@@ -888,16 +888,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit b33c37ed5fb6f3f8aff8cac9b13c1305bb4d10d2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:07:38 2025 +0000
+commit 9b5f3c0d879fc3b9da99e2dbf5febbcced5f4c56
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 27 09:14:04 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (11008 of 11008 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1244,16 +1239,16 @@ Date:   Fri Jun 13 15:06:10 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 1a35078e693e3abbd1f4aab188e99139577129d3
+commit 4c2293db7f93affd3437bba458d1c64200e78092
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:43:44 2025 +0000
+Date:   Fri Nov 28 08:46:24 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (88 of 88 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: management-system-14.0/management-system-14.0-mgmtsystem
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem/it/
+    Translation: management-system-14.0/management-system-14.0-mgmtsystem_nonconformity_type
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_nonconformity_type/it/
 
 
 ## pms
@@ -1272,11 +1267,16 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 6cd6f2a783ddb77eaa661edb173a7e857a3a1352
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 15 12:32:31 2025 +0000
+commit cb1ad159aca82ccc2da2c8f30a361262f4d302ed
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Nov 28 14:09:36 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (65 of 65 strings)
+    
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_manual_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_manual_delivery/it/
 
 
 ## purchase-reporting
@@ -1487,11 +1487,16 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit bc20ac3b9f0f7ab60ac2e90cd375c821deecba71
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 8 15:41:43 2025 +0000
+commit 98c1d3e33ea515423737dd2a4f4c5680720e228c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 28 08:09:58 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (85 of 85 strings)
+    
+    Translation: server-tools-14.0/server-tools-14.0-auditlog
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-auditlog/it/
 
 
 ## server-auth
