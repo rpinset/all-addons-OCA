@@ -45,6 +45,7 @@ msgstr "+Inattivo"
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_all__active
+#: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__active
 msgid "Active"
 msgstr "Attivo"
 
@@ -78,7 +79,8 @@ msgstr ""
 #: code:addons/partner_multi_relation/models/res_partner.py:0
 #, python-format
 msgid "Cannot change type of partner due to incompatible connections."
-msgstr "Non si può modificare il tipo di partner per connessioni incompatibili."
+msgstr ""
+"Non si può modificare il tipo di partner per connessioni incompatibili."
 
 #. module: partner_multi_relation
 #: model:ir.model,name:partner_multi_relation.model_res_partner

@@ -2,7 +2,7 @@
     "name": "Field MultiSearch with separator",
     "license": "AGPL-3",
     "summary": "add modification on search to search multi_value  with separator",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Akretion, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-ux",
     "depends": [

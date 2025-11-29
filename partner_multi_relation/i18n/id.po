@@ -41,6 +41,7 @@ msgstr ""
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_all__active
+#: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__active
 msgid "Active"
 msgstr "Aktif"
 
