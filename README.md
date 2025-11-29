@@ -468,9 +468,9 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 1a9d24a58bf2040466c5cb3dd0efa5b57a759412
+commit c8e9ec4ed3e96a01967627e594bcf1a2acae05a7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 12 09:10:13 2025 +0000
+Date:   Wed Nov 26 17:16:44 2025 +0000
 
     [BOT] post-merge updates
 
@@ -573,11 +573,16 @@ Date:   Fri Mar 14 16:55:29 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 7143d789ea365f636ff85b7bef99b18d491a05b1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 29 12:54:12 2025 +0000
+commit 00abdda668574125c2fce253b39fe760f649bc4a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 28 08:45:32 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (101 of 101 strings)
+    
+    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_advance_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_advance_overdue_reminder/it/
 
 
 ## hr-holidays
@@ -1137,11 +1142,11 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 1932e9a18dede3cc3d8a3af9b4a618d1466662fc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 19 11:42:22 2025 +0000
+commit 3b9131a5224599fb1ac0a409c0b1eb00a665cf81
+Author: Ryoko Tsuda <ryoko@quartile.co>
+Date:   Wed Nov 26 02:51:01 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Japanese)
 
 
 ## manufacture-reporting
@@ -1155,16 +1160,16 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 0bc16f45ac6957c062538a5076b8da358bceb499
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Sep 24 13:40:27 2025 +0000
+commit 45067b227ff386f6c951fbf4413264de0e7dfa11
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 28 08:46:28 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity_type
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity_type/it/
 
 
 ## pms
@@ -1383,20 +1388,25 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 08b0c6a81d051b4d7a7261e46962abe7731aff8c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 7 09:33:55 2025 +0000
+commit a0ee8c7cd31f1478ff5f8f45bc0d7f8645a22828
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 28 08:10:25 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 84.1% (117 of 139 strings)
+    
+    Translation: server-tools-15.0/server-tools-15.0-base_custom_info
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-base_custom_info/it/
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit ff83b0b5c2b91a8100ccf93b6728fd02a301107e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:41:44 2025 +0000
+commit 00854bf76067035265eaf21f92c71c14e14672a6
+Author: Ryoko Tsuda <ryoko@quartile.co>
+Date:   Wed Nov 26 01:02:38 2025 +0000
 
-    [UPD] addons table in README.md
+    Added translation using Weblate (Japanese)
 
 
 ## server-env
@@ -1610,11 +1620,11 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 92e172b3bd82dd26d6e548a22c601a76ec984c9c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 15 18:52:36 2025 +0000
+commit f69cc80f519dce70d05c2318786bd89449f845ff
+Author: Ryoko Tsuda <ryoko@quartile.co>
+Date:   Wed Nov 26 01:31:31 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Japanese)
 
 
 ## website
