@@ -285,3 +285,57 @@ class TestAccountPaymentTerm(TransactionCase):
             self.account_payment_term_holiday.create(
                 {"holiday": "2015-06-07", "date_postponed": "2015-06-08"}
             )
+
+    def test_regression_multicurrency(self):
+        usd = self.env.ref("base.USD")
+        self.env["res.currency.rate"].create(
+            {
+                "name": "2025-01-01",
+                "rate": 2.0,
+                "currency_id": usd.id,
+                "company_id": self.company.id,
+            }
+        )
+        pay_term_50 = self.account_payment_term.create(
+            {
+                "name": "Test 50/50",
+                "line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "value": "percent",
+                            "value_amount": 50.0,
+                            "nb_days": 0,
+                            "delay_type": "days_after",
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "value": "percent",
+                            "value_amount": 50.0,
+                            "nb_days": 30,
+                            "delay_type": "days_after",
+                        },
+                    ),
+                ],
+            }
+        )
+        res = pay_term_50._compute_terms(
+            currency=usd,
+            company=self.company,
+            date_ref="2025-01-01",
+            tax_amount=0,
+            tax_amount_currency=0,
+            sign=1,
+            untaxed_amount=50.0,
+            untaxed_amount_currency=100.0,
+        )
+        linea_resultado = res["line_ids"][0]
+        self.assertEqual(
+            linea_resultado["company_amount"],
+            25.0,
+            "Error: The amount in Eur did not respect the exchange rate.",
+        )
