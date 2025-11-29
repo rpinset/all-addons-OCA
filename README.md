@@ -1149,16 +1149,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 7189680886073ec745658c348d5e0c10854bb454
+commit ec795eca125c2cf8fc732809541202a9d548afd4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:37 2025 +0000
+Date:   Fri Nov 28 08:46:18 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (83 of 83 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem/it/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity_type
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity_type/it/
 
 
 ## purchase-workflow
@@ -1384,11 +1384,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 6f8bb4c7e12ceda13d41c44c275b13ebd81fa83c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:43:29 2025 +0000
+commit 308ded4ef0e17d81175e08622b46db73b9e65344
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 28 08:11:46 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 44.4% (32 of 72 strings)
+    
+    Translation: server-tools-12.0/server-tools-12.0-auditlog
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auditlog/it/
 
 
 ## server-auth
