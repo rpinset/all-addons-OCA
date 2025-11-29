@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="external_layout_striped_display_name_on_footer"
+        inherit_id="web.external_layout_striped"
+        priority="999"
+    >
+        <xpath
+            expr="//div[@t-field='company.report_footer']/..//span[hasclass('topage')]/.."
+            position="attributes"
+        >
+            <attribute name="class" add="float-start" separator=" " />
+        </xpath>
+        <xpath
+            expr="//div[@t-field='company.report_footer']/..//div[@t-out='o.name']"
+            position="attributes"
+        >
+            <attribute name="class" add="float-end" separator=" " />
+        </xpath>
+        <xpath expr="//div[@t-field='company.report_footer']" position="after">
+            <div>
+                <xpath
+                    expr="//div[@t-field='company.report_footer']/..//span[hasclass('topage')]/.."
+                    position="move"
+                />
+                <xpath
+                    expr="//div[@t-field='company.report_footer']/..//div[@t-out='o.name']"
+                    position="move"
+                />
+            </div>
+        </xpath>
+
+        <!-- Remove the comma "," -->
+        <xpath expr="//div[@t-out='o.name']" position="attributes">
+            <attribute name="t-out">o.name</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_boxed_display_name_on_footer"
+        inherit_id="web.external_layout_boxed"
+        priority="999"
+    >
+        <xpath expr="//span[@t-field='company.report_footer']/.." position="inside">
+            <xpath
+                expr="//span[@t-if=&quot;report_type == 'pdf'&quot;][contains(@t-attf-class, 'text-muted')]"
+                position="move"
+            />
+        </xpath>
+
+        <!-- Remove the comma "," -->
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf' and display_name_in_footer&quot;]"
+            position="attributes"
+        >
+            <attribute name="t-out">str(o.name)</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_standard_display_name_on_footer"
+        inherit_id="web.external_layout_standard"
+        priority="999"
+    >
+        <!-- Delete the original Page div -->
+        <xpath
+            expr="//div[@t-if=&quot;report_type == 'pdf'&quot;][hasclass('text-nowrap')]"
+            position="replace"
+        />
+        <!-- Replace the report_footer div to create a div and add pages manually -->
+        <xpath
+            expr="//div[hasclass('flex-grow-1') and hasclass('text-start') and hasclass('me-2')]"
+            position="replace"
+        >
+            <div class="flex-grow-1 text-start me-2">
+                <div t-field="company.report_footer" />
+                <div
+                    t-if="report_type == 'pdf'"
+                    class="text-nowrap text-muted"
+                >Page <span class="page" /> / <span class="topage" /></div>
+            </div>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_bold_display_name_on_footer"
+        inherit_id="web.external_layout_bold"
+        priority="999"
+    >
+        <xpath expr="//span[@t-field='company.report_footer']/.." position="inside">
+            <xpath
+                expr="//span[@t-if=&quot;report_type == 'pdf'&quot;][contains(@t-attf-class, 'text-muted')]"
+                position="move"
+            />
+        </xpath>
+
+        <!-- Remove the comma "," -->
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf' and display_name_in_footer&quot;]"
+            position="attributes"
+        >
+            <attribute name="t-out">str(o.name)</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_bubble_display_name_on_footer"
+        inherit_id="web.external_layout_bubble"
+        priority="999"
+    >
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf'&quot;][hasclass('text-muted')][not(@t-out)]"
+            position="attributes"
+        >
+            <attribute name="class" add="float-start" separator=" " />
+        </xpath>
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf' and display_name_in_footer&quot;]"
+            position="attributes"
+        >
+            <attribute name="class" add="float-end" separator=" " />
+            <!-- Remove the comma "," -->
+            <attribute name="t-out">str(o.name)</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_wave_display_name_on_footer"
+        inherit_id="web.external_layout_wave"
+        priority="999"
+    >
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf'&quot;][hasclass('text-muted')][not(@t-out)]"
+            position="attributes"
+        >
+            <attribute name="class" add="float-start" separator=" " />
+        </xpath>
+
+        <xpath
+            expr="//span[@t-if=&quot;report_type == 'pdf' and display_name_in_footer&quot;]"
+            position="attributes"
+        >
+            <attribute name="class" add="float-end" separator=" " />
+            <!-- Remove the comma "," -->
+            <attribute name="t-out">str(o.name)</attribute>
+        </xpath>
+    </template>
+
+    <template
+        id="external_layout_folder_display_name_on_footer"
+        inherit_id="web.external_layout_folder"
+        priority="999"
+    >
+        <!-- Delete the original Page div -->
+        <xpath
+            expr="//div[@t-if=&quot;report_type == 'pdf'&quot;][hasclass('text-nowrap')]"
+            position="replace"
+        />
+        <!-- Replace the report_footer div to create a div and add pages manually -->
+        <xpath
+            expr="//div[hasclass('flex-grow-1') and hasclass('text-start') and hasclass('me-2')]"
+            position="replace"
+        >
+            <div class="flex-grow-1 text-start me-2">
+                <div t-field="company.report_footer" />
+                <div
+                    t-if="report_type == 'pdf'"
+                    class="text-nowrap text-muted"
+                >Page <span class="page" /> / <span class="topage" /></div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

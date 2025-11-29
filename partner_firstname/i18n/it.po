@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-03 20:26+0000\n"
-"PO-Revision-Date: 2025-05-22 09:26+0000\n"
+"PO-Revision-Date: 2025-11-28 10:27+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -59,6 +59,11 @@ msgid "Contacts require a name."
 msgstr "I contatti richiedono un nome."
 
 #. module: partner_firstname
+#: model:ir.model.fields,help:partner_firstname.field_res_config_settings__partner_names_required_fields
+msgid "Define which fields are required or not"
+msgstr "Definire quali campo sono richiesti o meno"
+
+#. module: partner_firstname
 #. odoo-python
 #: code:addons/partner_firstname/exceptions.py:0
 msgid "Error(s) with partner %d's name."
@@ -71,6 +76,14 @@ msgid "First name"
 msgstr "Nome"
 
 #. module: partner_firstname
+#: model:ir.model.fields,field_description:partner_firstname.field_firstname_mixin__firstname_required
+#: model:ir.model.fields,field_description:partner_firstname.field_res_partner__firstname_required
+#: model:ir.model.fields,field_description:partner_firstname.field_res_users__firstname_required
+msgid "Firstname Required"
+msgstr "Nome di battesimo richiesto"
+
+#. module: partner_firstname
+#: model:ir.model.fields,field_description:partner_firstname.field_firstname_mixin__form_has_lastname_first
 #: model:ir.model.fields,field_description:partner_firstname.field_res_partner__form_has_lastname_first
 #: model:ir.model.fields,field_description:partner_firstname.field_res_users__form_has_lastname_first
 msgid "Form Has Lastname First"
@@ -81,6 +94,21 @@ msgstr "Il modulo ha prima il cognome"
 #: model:ir.model.fields,field_description:partner_firstname.field_res_users__lastname
 msgid "Last name"
 msgstr "Cognome"
+
+#. module: partner_firstname
+#: model:ir.model.fields,field_description:partner_firstname.field_firstname_mixin__lastname_required
+#: model:ir.model.fields,field_description:partner_firstname.field_res_partner__lastname_required
+#: model:ir.model.fields,field_description:partner_firstname.field_res_users__lastname_required
+msgid "Lastname Required"
+msgstr "Cognome richiesto"
+
+#. module: partner_firstname
+#: model:ir.model,name:partner_firstname.model_firstname_mixin
+msgid ""
+"Manage common things needed for models that have firstname / lastname fields."
+msgstr ""
+"Gestione aspetti comuni richiesti per modelli che hanno campi nome di "
+"battesimo / cognome."
 
 #. module: partner_firstname
 #: model:ir.model.fields,field_description:partner_firstname.field_res_partner__name
@@ -100,8 +128,12 @@ msgid "Order to compose partner fullname"
 msgstr "Ordinamento per comporre il nome completo del partner"
 
 #. module: partner_firstname
-#: model:ir.model.fields,field_description:partner_firstname.field_res_config_settings__partner_names_order
 #: model_terms:ir.ui.view,arch_db:partner_firstname.res_config_settings_view_form
+msgid "Partner Names"
+msgstr "Nomi partner"
+
+#. module: partner_firstname
+#: model:ir.model.fields,field_description:partner_firstname.field_res_config_settings__partner_names_order
 msgid "Partner Names Order"
 msgstr "Ordinamento nome partner"
 
@@ -109,6 +141,11 @@ msgstr "Ordinamento nome partner"
 #: model:ir.model.fields,field_description:partner_firstname.field_res_config_settings__partner_names_order_changed
 msgid "Partner Names Order Changed"
 msgstr "Ordinamento nome partner modificato"
+
+#. module: partner_firstname
+#: model:ir.model.fields,field_description:partner_firstname.field_res_config_settings__partner_names_required_fields
+msgid "Partner Names Required Fields"
+msgstr "Campi richiesti nomi partner"
 
 #. module: partner_firstname
 #: model_terms:ir.ui.view,arch_db:partner_firstname.res_config_settings_view_form

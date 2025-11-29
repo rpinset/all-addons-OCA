@@ -73,6 +73,7 @@ email-validator
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 # generated from manifests external_dependencies
 factur-x
+phonenumbers
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
@@ -274,6 +275,7 @@ cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 # generated from manifests external_dependencies
 mysqlclient
+pymssql<=2.2.5
 sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)

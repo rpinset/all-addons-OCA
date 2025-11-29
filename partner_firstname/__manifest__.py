@@ -6,14 +6,16 @@
 {
     "name": "Partner first name and last name",
     "summary": "Split first name and last name for non company partners",
-    "version": "18.0.2.0.0",
+    "version": "18.0.3.0.0",
     "author": "Camptocamp, "
     "Grupo ESOC Ingeniería de Servicios, "
     "Tecnativa, "
     "LasLabs, "
     "ACSONE SA/NV, "
     "DynApps NV, "
+    "GRAP, "
     "Odoo Community Association (OCA)",
+    "maintainers": ["legalsylvain"],
     "license": "AGPL-3",
     "maintainer": "Camptocamp, Acsone",
     "category": "Extra Tools",
@@ -21,6 +23,7 @@
     "depends": ["base_setup"],
     "post_init_hook": "post_init_hook",
     "data": [
+        "data/ir_config_parameter.xml",
         "views/base_config_view.xml",
         "views/res_partner.xml",
         "views/res_user.xml",
