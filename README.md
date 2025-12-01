@@ -359,20 +359,25 @@ Date:   Wed Nov 26 07:00:18 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit b29fd41d9a4713baef0b3e4f30644e95775c3314
+commit 7b59937c32b01eb4bf1f58dba8376cfb5d13d39d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 14 09:00:20 2025 +0000
+Date:   Sun Nov 30 16:02:57 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit d4203fbd3bb60aaf37a2333abccafdb843b8d546
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 27 09:11:03 2025 +0000
+commit dc6ef510b16bd0afddf007c2861aa5580802682c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 1 09:08:23 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (13 of 13 strings)
+    
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_socialmedia
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_socialmedia/it/
 
 
 ## sale-financial
@@ -937,9 +942,9 @@ Date:   Sun Feb 2 19:35:19 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit da686b4f3905c10c6337b450af72a8a82bbd8825
+commit 3359443a5b976555e67740fe2ce2ff38898c1870
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 26 10:39:15 2025 +0000
+Date:   Sun Nov 30 09:03:51 2025 +0000
 
     [BOT] post-merge updates
 
