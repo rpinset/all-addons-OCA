@@ -381,16 +381,11 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c6ae604e8ad8760095602101c273727d209fd77c
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 26 07:01:31 2025 +0000
+commit 4f3ad797e4b55b18cd56bc7775761156ae4ae230
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Nov 30 15:59:05 2025 +0000
 
-    Translated using Weblate (Japanese)
-    
-    Currently translated at 0.0% (0 of 28 strings)
-    
-    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_tier_validation/ja/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -409,16 +404,11 @@ Date:   Tue Nov 11 09:41:04 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit e10a312977ccf5145ccaf71bcfe189147e89ad1e
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Nov 26 08:40:23 2025 +0000
+commit c878fb3637f553a0b6493ee79a400ec33297b6ea
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 1 09:40:23 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: partner-contact-16.0/partner-contact-16.0-partner_multi_relation
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-16-0/partner-contact-16-0-partner_multi_relation/
+    Added translation using Weblate (Italian)
 
 
 ## sale-financial
@@ -441,11 +431,11 @@ Date:   Wed Sep 24 13:48:05 2025 +0000
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit 4114f6ebc9155de7492de268c9119360be8e88c0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 28 20:27:07 2025 +0000
+commit e378f2f29dd5119e6b585c017a7be67f8897716b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 1 09:31:15 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## commission
@@ -1265,16 +1255,16 @@ Date:   Tue Nov 25 09:13:07 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 0cbbd16378783d649ae8008715d2b6528c834680
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Nov 28 14:12:08 2025 +0000
+commit dcfb1e4b39c922d47cbaefcf22f33d491e4d79a9
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Mon Dec 1 10:21:20 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (68 of 68 strings)
+    Currently translated at 96.1% (25 of 26 strings)
     
-    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_manual_delivery/it/
+    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_order_type/tr/
 
 
 ## purchase-reporting
@@ -1348,11 +1338,16 @@ Date:   Sun Feb 2 20:17:38 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 0036f26f5787d5ef1ecc13fa81dbfe2c8c7ab120
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 26 00:54:34 2025 +0000
+commit 7a5d2cb5506bb75a012ab40bf1234c9e4ec4c98b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 1 09:05:00 2025 +0000
 
-    Added translation using Weblate (Japanese)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: project-16.0/project-16.0-project_task_code_portal
+    Translate-URL: https://translation.odoo-community.org/projects/project-16-0/project-16-0-project_task_code_portal/it/
 
 
 ## project-agile
@@ -1717,11 +1712,16 @@ Date:   Sun Feb 9 19:15:31 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 93c0e2805d9ebc7d1e4f0626ff7a88b3a6ae2997
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 26 12:56:37 2025 +0000
+commit cfaf9e6e2796f995eb4b5da06e0b918050f103a5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 1 09:30:48 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: web-16.0/web-16.0-web_phone_field_whatsapp
+    Translate-URL: https://translation.odoo-community.org/projects/web-16-0/web-16-0-web_phone_field_whatsapp/it/
 
 
 ## website

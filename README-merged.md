@@ -1869,6 +1869,7 @@ addon | version | maintainers | summary
 [account_invoice_pricelist_technical](account_invoice_pricelist_technical/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent technical pricelists from being selected on invoice forms
 [partner_contact_sale_info_propagation](partner_contact_sale_info_propagation/) | 16.0.1.0.1 |  | Propagate Salesperson and Sales Channel from Company to Contacts
 [partner_sale_pivot](partner_sale_pivot/) | 16.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
+[portal_sale_accept_terms](portal_sale_accept_terms/) | 16.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Portal Sale accept Terms
 [portal_sale_order_search](portal_sale_order_search/) | 16.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow customers to set and search their own order reference in portal
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 16.0.1.0.0 |  | Portal Sale Personal Data Only
 [pricelist_cache](pricelist_cache/) | 16.0.1.0.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
@@ -2135,6 +2136,7 @@ addon | version | maintainers | summary
 [company_default_partner_pricelist](company_default_partner_pricelist/) | 16.0.1.0.0 |  | Define default partner pricelist per company.
 [crm_partner_company_group](crm_partner_company_group/) | 16.0.1.0.0 |  | Adds the possibility to add a company group to a company
 [partner_accreditation](partner_accreditation/) | 16.0.1.0.0 | <a href='https://github.com/victor-champonnois'><img src='https://github.com/victor-champonnois.png' width='32' height='32' style='border-radius:50%;' alt='victor-champonnois'/></a> | Add Accreditation to Partners
+[partner_address_format_domestic](partner_address_format_domestic/) | 16.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Partner Address Format Domestic
 [partner_address_split](partner_address_split/) | 16.0.1.0.0 |  | Add specific helper methods
 [partner_address_street3](partner_address_street3/) | 16.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 16.0.1.0.0 |  | Partner Affiliates
@@ -7068,6 +7070,7 @@ addon | version | maintainers | summary
 [purchase_stock_packaging](purchase_stock_packaging/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
 [purchase_stock_picking_show_currency_rate](purchase_stock_picking_show_currency_rate/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Show currency rate in purchase stock picking.
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 16.0.1.0.1 |  | Update cost price in stock moves already done
+[purchase_supplierinfo_editable_tree](purchase_supplierinfo_editable_tree/) | 16.0.1.0.1 |  | Set the supplierinfo tree view as editablee
 [purchase_tag](purchase_tag/) | 16.0.1.1.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_transport_mode](purchase_transport_mode/) | 16.0.1.1.0 |  | Purchase expection based on constraints
@@ -7543,8 +7546,8 @@ addon | version | maintainers | summary
 [project_tag_multicompany](project_tag_multicompany/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Multicompany
 [project_tag_security](project_tag_security/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Security
 [project_task_add_very_high](project_task_add_very_high/) | 16.0.1.1.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Adds extra options 'High' and 'Very High' on tasks
-[project_task_code](project_task_code/) | 16.0.1.1.0 |  | Sequential Code for Tasks
-[project_task_code_portal](project_task_code_portal/) | 16.0.1.1.0 |  | Use custom task code in customer portal
+[project_task_code](project_task_code/) | 16.0.1.1.1 |  | Sequential Code for Tasks
+[project_task_code_portal](project_task_code_portal/) | 16.0.1.2.0 |  | Use custom task code in customer portal
 [project_task_creation_description_notification](project_task_creation_description_notification/) | 16.0.1.0.0 |  | Project task description in notifications
 [project_task_default_stage](project_task_default_stage/) | 16.0.1.0.2 |  | Recovery default task stages for projects from v8
 [project_task_description_portal](project_task_description_portal/) | 16.0.1.0.0 |  | Dedicated task description for portal users
@@ -9561,6 +9564,7 @@ addon | version | maintainers | summary
 [web_notify](web_notify/) | 16.0.3.2.0 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 16.0.1.0.1 |  | Send an instant notification to channel users when a new message is posted
 [web_notify_upgrade](web_notify_upgrade/) | 16.0.1.0.0 |  | Notify active users when a module is installed or updated
+[web_phone_field_whatsapp](web_phone_field_whatsapp/) | 16.0.1.0.0 | <a href='https://github.com/adasatorres'><img src='https://github.com/adasatorres.png' width='32' height='32' style='border-radius:50%;' alt='adasatorres'/></a> | This module adds a shortcut functionality to WhatsApp Web or the WhatsApp application in the phone widget.
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 16.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Web Pivot Computed Measure
 [web_pwa_oca](web_pwa_oca/) | 16.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA
 [web_quick_start_screen](web_quick_start_screen/) | 16.0.1.0.0 |  | Configurable start screen for quick actions
