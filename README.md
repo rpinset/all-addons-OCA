@@ -888,11 +888,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 9b5f3c0d879fc3b9da99e2dbf5febbcced5f4c56
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 27 09:14:04 2025 +0000
+commit 70d1df5849c0b22d9f8e6113025ffe34e3fc0fb6
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Dec 4 18:07:14 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_central_journal_reportlab
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_central_journal_reportlab/
 
 
 ## l10n-japan
@@ -1487,16 +1492,11 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 98c1d3e33ea515423737dd2a4f4c5680720e228c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:09:58 2025 +0000
+commit 2a6451e8a3830c7cc96198d03d9c00f6560a7dc4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 5 14:50:52 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (85 of 85 strings)
-    
-    Translation: server-tools-14.0/server-tools-14.0-auditlog
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-auditlog/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1739,11 +1739,11 @@ Date:   Tue Nov 11 09:50:08 2025 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 783c6e60b35840e263dae553b6ad7d7e9f12e982
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 6 11:16:48 2025 +0000
+commit c12e35819c98859de374fcf552efdf381946e639
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 4 13:09:51 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## website-cms

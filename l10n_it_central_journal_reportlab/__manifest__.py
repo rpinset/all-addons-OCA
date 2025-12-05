@@ -3,7 +3,7 @@
 
 {
     "name": "ITA - Libro giornale - Reportlab",
-    "version": "14.0.1.2.1",
+    "version": "14.0.1.3.0",
     "development_status": "Beta",
     "category": "Localization/Italy",
     "author": "Gianmarco Conte - Dinamiche Aziendali srl, "

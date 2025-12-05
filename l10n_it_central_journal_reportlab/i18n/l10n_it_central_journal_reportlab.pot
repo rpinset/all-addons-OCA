@@ -237,6 +237,11 @@ msgid "Number"
 msgstr ""
 
 #. module: l10n_it_central_journal_reportlab
+#: model:ir.model.fields,field_description:l10n_it_central_journal_reportlab.field_wizard_giornale_reportlab__only_show_purchase_sale_ref
+msgid "Only show description for purchase and sale move lines"
+msgstr ""
+
+#. module: l10n_it_central_journal_reportlab
 #: model_terms:ir.ui.view,arch_db:l10n_it_central_journal_reportlab.wizard_giornale_reportlab
 msgid "PDF"
 msgstr ""
@@ -324,6 +329,13 @@ msgstr ""
 #. module: l10n_it_central_journal_reportlab
 #: model:ir.model.fields,field_description:l10n_it_central_journal_reportlab.field_wizard_giornale_reportlab__target_move
 msgid "Target Move"
+msgstr ""
+
+#. module: l10n_it_central_journal_reportlab
+#: model:ir.model.fields,help:l10n_it_central_journal_reportlab.field_wizard_giornale_reportlab__only_show_purchase_sale_ref
+msgid ""
+"The description of the move line is shown only for move lines in purchase and sale journals.\n"
+"This can help to reduce the size of the report."
 msgstr ""
 
 #. module: l10n_it_central_journal_reportlab

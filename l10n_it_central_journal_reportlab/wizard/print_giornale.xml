@@ -13,6 +13,7 @@
                     <field name="daterange_id" domain="[('company_id', '!=', False)]" />
                     <field name="company_id" />
                     <field name="group_by_account" />
+                    <field name="only_show_purchase_sale_ref" />
                     <field name="last_def_date_print" readonly="1" />
                     <field name="date_move_line_from" invisible="1" />
                     <field name="date_move_line_from_view" readonly="1" />

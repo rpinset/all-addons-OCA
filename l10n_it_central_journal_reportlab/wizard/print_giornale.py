@@ -83,6 +83,12 @@ class WizardGiornaleReportlab(models.TransientModel):
         compute="_compute_report_giornale_name",
     )
     group_by_account = fields.Boolean(string="Group by account", default=False)
+    only_show_purchase_sale_ref = fields.Boolean(
+        string="Only show description for purchase and sale move lines",
+        help="The description of the move line is shown "
+        "only for move lines in purchase and sale journals.\n"
+        "This can help to reduce the size of the report.",
+    )
 
     @api.depends("report_giornale", "daterange_id")
     def _compute_report_giornale_name(self):
@@ -148,6 +154,7 @@ class WizardGiornaleReportlab(models.TransientModel):
                 aa.code AS account_code,
                 aa.internal_type AS account_type,
                 aa.name AS account_name,
+                aj.type AS journal_type,
                 COALESCE(am.ref, '') AS name,
                 ARRAY_AGG(rp.name) AS partner_names,
                 SUM(aml.debit) AS debit,
@@ -157,6 +164,7 @@ class WizardGiornaleReportlab(models.TransientModel):
                 LEFT JOIN account_move am ON (am.id = aml.move_id)
                 LEFT JOIN account_account aa ON (aa.id = aml.account_id)
                 LEFT JOIN res_partner rp ON (rp.id = am.partner_id)
+                LEFT JOIN account_journal aj ON (aj.id = am.journal_id)
             WHERE
                 aa.code IS NOT NULL
                 AND aa.name IS NOT NULL
@@ -169,6 +177,7 @@ class WizardGiornaleReportlab(models.TransientModel):
                 am.name,
                 aa.code,
                 aa.internal_type,
+                aj.type,
                 aa.name,
                 am.ref
             ORDER BY
@@ -352,6 +361,7 @@ class WizardGiornaleReportlab(models.TransientModel):
             (0, 0),
             (self.progressive_debit2, self.progressive_credit),
         ]
+        only_show_purchase_sale_ref = self.only_show_purchase_sale_ref
         for line in list_grupped_line:
             start_row += 1
             row = Paragraph(escape(str(start_row)), style_name)
@@ -363,15 +373,29 @@ class WizardGiornaleReportlab(models.TransientModel):
                 else line["account_name"]
             )
             account = Paragraph(escape(account_name), style_name)
+            if only_show_purchase_sale_ref:
+                show_ref = line["journal_type"] in (
+                    "purchase",
+                    "sale",
+                )
+            else:
+                show_ref = True
             if line["account_type"] in ["receivable", "payable"]:
                 partner_names = self._clean_aggregated_field_values(
                     line["partner_names"]
                 )
                 name = Paragraph(escape(partner_names), style_name)
             else:
-                name = Paragraph(escape(line["name"]), style_name)
-            refs = self._clean_aggregated_field_values(line["aml_refs"])
-            ref = Paragraph(escape(refs), style_name)
+                if show_ref:
+                    name = Paragraph(escape(line["name"]), style_name)
+                else:
+                    name = Paragraph("", style_name)
+            if show_ref:
+                # Move line's Reference is the same as the move
+                refs = self._clean_aggregated_field_values(line["aml_refs"])
+                ref = Paragraph(escape(refs), style_name)
+            else:
+                ref = Paragraph("", style_name)
             # dato che nel SQL ho la somma dei crediti e debiti potrei avere
             # che un conto ha sia debito che credito
             lines_data = []
@@ -423,12 +447,23 @@ class WizardGiornaleReportlab(models.TransientModel):
             (0, 0),
             (self.progressive_debit2, self.progressive_credit),
         ]
-
+        only_show_purchase_sale_ref = self.only_show_purchase_sale_ref
         for line in self.env["account.move.line"].browse(move_line_ids):
             start_row += 1
             row = Paragraph(escape(str(start_row)), style_name)
             date = Paragraph(escape(format_date(self.env, line.date)), style_name)
-            ref = Paragraph(escape(str(line.ref or "")), style_name)
+            if only_show_purchase_sale_ref:
+                show_ref = line.journal_id.type in (
+                    "purchase",
+                    "sale",
+                )
+            else:
+                show_ref = True
+            if show_ref:
+                # Move line's Reference is the same as the move
+                ref = Paragraph(escape(str(line.ref or "")), style_name)
+            else:
+                ref = Paragraph("", style_name)
             move_name = line.move_id.name or ""
             move = Paragraph(escape(move_name), style_name)
             account_name = self._get_account_name_reportlab(line)
@@ -436,7 +471,10 @@ class WizardGiornaleReportlab(models.TransientModel):
             if line.account_id.user_type_id.type in ["receivable", "payable"]:
                 name = Paragraph(escape(str(line.partner_id.name or "")), style_name)
             else:
-                name = Paragraph(escape(str(line.name or "")), style_name)
+                if show_ref:
+                    name = Paragraph(escape(str(line.name or "")), style_name)
+                else:
+                    name = Paragraph("", style_name)
             debit = Paragraph(escape(formatLang(self.env, line.debit)), style_number)
             credit = Paragraph(escape(formatLang(self.env, line.credit)), style_number)
             list_balance.append((line.debit, line.credit))
