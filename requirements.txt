@@ -29,6 +29,7 @@ unidecode
 # generated from manifests external_dependencies
 chardet
 ofxparse
+plaid-python
 xlrd
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)

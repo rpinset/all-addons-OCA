@@ -145,16 +145,11 @@ Date:   Wed Nov 26 06:25:47 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 9f2688966d66146b87a77875469f5028762307fd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:46:44 2025 +0000
+commit d7c5e2fb2ffadec5036331e9a11d7974c091e6c2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 4 09:06:35 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (281 of 281 strings)
-    
-    Translation: credit-control-17.0/credit-control-17.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-17-0/credit-control-17-0-account_credit_control/it/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -196,9 +191,9 @@ Date:   Mon Nov 10 09:30:15 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit abb9d6c2cd9997a54d7f1849f85208fc2f294b53
+commit c004c940bc585b76559c6d407eaed2a0e1313a51
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 6 21:03:38 2025 +0000
+Date:   Fri Dec 5 07:25:00 2025 +0000
 
     [BOT] post-merge updates
 
@@ -433,16 +428,11 @@ Date:   Tue Nov 11 09:48:10 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 3e4339e6fb356064dd57854f8c745c46a6b79d60
-Author: Timo Talvitie <timo.j.talvitie@gmail.com>
-Date:   Wed Sep 17 12:37:00 2025 +0000
+commit a3da5b604acfe601029605217443408579e7c189
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 4 11:13:21 2025 +0000
 
-    Translated using Weblate (Finnish)
-    
-    Currently translated at 100.0% (24 of 24 strings)
-    
-    Translation: event-17.0/event-17.0-partner_event
-    Translate-URL: https://translation.odoo-community.org/projects/event-17-0/event-17-0-partner_event/fi/
+    [BOT] post-merge updates
 
 
 ## survey
@@ -512,11 +502,16 @@ Date:   Fri Oct 10 09:38:59 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit d8100178450a70afcc14fdfead41af550ba892c9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Nov 29 08:54:30 2025 +0000
+commit 668fb550bd1435e1b3110f9745531188c83789ec
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 3 09:39:14 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: field-service-17.0/field-service-17.0-fieldservice_base_location
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_base_location/it/
 
 
 ## margin-analysis
@@ -856,16 +851,16 @@ Date:   Sun Feb 2 19:27:27 2025 +0000
 
 ## l10n-japan
 From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
-commit 134e7071dc3d3ea027b3b044e1af16eaf2881f70
+commit 27b970c1654c55f2a0bdbe0719fcb6bf90d6469d
 Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Sep 3 03:07:47 2025 +0000
+Date:   Thu Dec 4 01:30:43 2025 +0000
 
     Translated using Weblate (Japanese)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: l10n-japan-17.0/l10n-japan-17.0-account_tax_rounding_method
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-japan-17-0/l10n-japan-17-0-account_tax_rounding_method/ja/
+    Translation: l10n-japan-17.0/l10n-japan-17.0-l10n_jp_address_layout
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-japan-17-0/l10n-japan-17-0-l10n_jp_address_layout/ja/
 
 
 ## l10n-luxemburg
@@ -942,9 +937,9 @@ Date:   Sun Feb 2 19:35:19 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 3359443a5b976555e67740fe2ce2ff38898c1870
+commit b4d59920cd9e3cbe8dbc2ecfcb15de56c4b11946
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 30 09:03:51 2025 +0000
+Date:   Wed Dec 3 12:58:43 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1133,16 +1128,11 @@ Date:   Mon Nov 24 08:43:01 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit c54c39f21c6c36c6107350fe1b58a81bdd3b1e80
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:15:01 2025 +0000
+commit ccf243f3e0721949217737e22363ce915a9cac17
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 3 11:50:23 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (401 of 401 strings)
-    
-    Translation: rma-17.0/rma-17.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma/it/
+    [BOT] post-merge updates
 
 
 ## ddmrp
@@ -1239,16 +1229,11 @@ Date:   Thu Jun 5 10:31:14 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 1b38eed5ff07f3aec63eb84b56d5e7cea180814d
-Author: Timo Talvitie <timo.j.talvitie@gmail.com>
-Date:   Wed Nov 26 06:16:43 2025 +0000
+commit f60c1ae38c220d7e7c0e4f967895507bae1e8b5a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 5 07:25:18 2025 +0000
 
-    Translated using Weblate (Finnish)
-    
-    Currently translated at 100.0% (12 of 12 strings)
-    
-    Translation: product-attribute-17.0/product-attribute-17.0-product_dimension
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_dimension/fi/
+    [BOT] post-merge updates
 
 
 ## product-kitting
