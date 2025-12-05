@@ -4,6 +4,8 @@
 import warnings
 from datetime import datetime, timedelta
 
+from markupsafe import Markup
+
 from odoo import Command, _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 
@@ -136,6 +138,12 @@ class FSMOrder(models.Model):
         help="Company related to this order",
     )
 
+    # Signature
+    signed_by = fields.Char(copy=False, readonly=True)
+    signed_on = fields.Datetime(copy=False, readonly=True)
+    signature = fields.Image(copy=False, max_width=1024, max_height=1024, readonly=True)
+    require_signature = fields.Boolean(related="stage_id.require_signature")
+
     def _calc_request_late(self, vals):
         if vals.get("request_early", False):
             early = fields.Datetime.from_string(vals.get("request_early"))
@@ -161,7 +169,7 @@ class FSMOrder(models.Model):
         return vals
 
     request_late = fields.Datetime(string="Latest Request Date")
-    description = fields.Text(
+    description = fields.Html(
         compute="_compute_description",
         precompute=True,
         store=True,
@@ -186,7 +194,7 @@ class FSMOrder(models.Model):
     )
 
     # Execution
-    resolution = fields.Text()
+    resolution = fields.Html()
     date_start = fields.Datetime(string="Actual Start")
     date_end = fields.Datetime(string="Actual End")
     duration = fields.Float(
@@ -282,7 +290,7 @@ class FSMOrder(models.Model):
         for rec in self:
             if rec.description:
                 continue
-            rec.description = "\n".join(
+            rec.description = Markup("<separator />").join(
                 equipment.notes for equipment in rec.equipment_ids if equipment.notes
             )
 
@@ -308,15 +316,13 @@ class FSMOrder(models.Model):
                 vals = self._calc_request_late(vals)
         return super().create(vals_list)
 
-    is_button = fields.Boolean(default=False)
-
     def write(self, vals):
-        if vals.get("stage_id", False) and vals.get("is_button", False):
-            vals["is_button"] = False
-        else:
-            stage_id = self.env["fsm.stage"].browse(vals.get("stage_id"))
-            if stage_id == self.env.ref("fieldservice.fsm_stage_completed"):
-                raise UserError(_("Cannot move to completed from Kanban"))
+        if (
+            not self.env.context.get("bypass_order_completed_stage")
+            and (stage_id := vals.get("stage_id"))
+            and stage_id == self.env.ref("fieldservice.fsm_stage_completed").id
+        ):
+            raise UserError(_("Cannot move to completed from Kanban"))
         self._calc_scheduled_dates(vals)
         res = super().write(vals)
         return res
@@ -380,10 +386,9 @@ class FSMOrder(models.Model):
             vals["scheduled_date_end"] = False
 
     def action_complete(self):
-        return self.write(
+        return self.with_context(bypass_order_completed_stage=True).write(
             {
                 "stage_id": self.env.ref("fieldservice.fsm_stage_completed").id,
-                "is_button": True,
             }
         )
 

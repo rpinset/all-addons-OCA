@@ -3,7 +3,7 @@
 
 {
     "name": "Account Payment Term Cutoff Day",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "depends": ["account"],
     "author": "Quartile, Odoo Community Association (OCA)",
     "license": "AGPL-3",
@@ -11,6 +11,7 @@
     "category": "Accounting",
     "data": [
         "views/account_payment_term_views.xml",
+        "views/account_move_views.xml",
     ],
     "installable": True,
 }

@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-13 23:25+0000\n"
-"PO-Revision-Date: 2025-09-19 07:18+0000\n"
+"PO-Revision-Date: 2025-12-05 11:42+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/oca/"
 "OCA-account-financial-tools-8-0/language/sv/)\n"
@@ -954,7 +954,7 @@ msgstr "Verifikat"
 #. module: account_asset_management
 #: model:ir.model,name:account_asset_management.model_account_move_line
 msgid "Journal Item"
-msgstr "Tidskriftsartikel"
+msgstr "Transaktion"
 
 #. module: account_asset_management
 #: model:ir.actions.act_window,name:account_asset_management.act_entries_open
@@ -1214,7 +1214,7 @@ msgstr "Profil"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__prorata
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__prorata
 msgid "Prorata Temporis"
-msgstr "Prorata Temporis"
+msgstr "Prorata temporis"
 
 #. module: account_asset_management
 #. odoo-python

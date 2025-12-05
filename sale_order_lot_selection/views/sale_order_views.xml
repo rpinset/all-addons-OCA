@@ -10,7 +10,6 @@
             >
                 <field
                     name="lot_id"
-                    domain="[('product_id','=', product_id)]"
                     invisible="not product_id or product_tracking=='none'"
                     context="{'default_product_id': product_id}"
                     groups="stock.group_production_lot"
@@ -18,16 +17,32 @@
                 />
             </xpath>
             <xpath
-                expr="//field[@name='order_line']/form/group/group/div/field[@name='product_id']"
+                expr="//field[@name='order_line']/form/group/group/field[@name='product_uom_readonly']"
                 position="after"
             >
                 <field
                     name="lot_id"
-                    domain="[('product_id','=', product_id)]"
                     invisible="not product_id or product_tracking=='none'"
                     context="{'default_product_id': product_id}"
                     groups="stock.group_production_lot"
                 />
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']/kanban//div[hasclass('row')]"
+                position="after"
+            >
+                <div
+                    class="text-muted"
+                    t-if="record.lot_id.value"
+                    groups="stock.group_production_lot"
+                >
+                    Lot:
+                    <field
+                    name="lot_id"
+                    invisible="not product_id or product_tracking=='none'"
+                    context="{'default_product_id': product_id}"
+                />
+                </div>
             </xpath>
         </field>
     </record>

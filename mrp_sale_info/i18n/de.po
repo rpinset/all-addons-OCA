@@ -40,7 +40,12 @@ msgstr ""
 
 #. module: mrp_sale_info
 #: model:ir.model,name:mrp_sale_info.model_mrp_production
-msgid "Production Order"
+msgid "Manufacturing Order"
+msgstr "Fertigungsauftrag"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_sale_order_line__mrp_production_ids
+msgid "Manufacturing orders"
 msgstr ""
 
 #. module: mrp_sale_info
@@ -55,13 +60,13 @@ msgid "Sale order"
 msgstr "Verkaufsauftrag"
 
 #. module: mrp_sale_info
-#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__source_procurement_group_id
-msgid "Source Procurement Group"
+#: model:ir.model,name:mrp_sale_info.model_sale_order_line
+msgid "Sales Order Line"
 msgstr ""
 
 #. module: mrp_sale_info
-#: model:ir.model,name:mrp_sale_info.model_stock_rule
-msgid "Stock Rule"
+#: model:ir.model,name:mrp_sale_info.model_stock_move
+msgid "Stock Move"
 msgstr ""
 
 #. module: mrp_sale_info
@@ -83,9 +88,6 @@ msgstr "Arbeitsauftrag"
 #~ msgstr ""
 #~ "Datum, zu dem die Produkte sicher geliefert werden können. Dieses Datum "
 #~ "können Sie einem Kunden, basierend auf Vorlauf- und Lieferzeiten, zusagen."
-
-#~ msgid "Manufacturing Order"
-#~ msgstr "Fertigungsauftrag"
 
 #~ msgid "Sale Information"
 #~ msgstr "Verkaufsinformation"

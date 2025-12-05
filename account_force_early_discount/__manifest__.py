@@ -1,0 +1,19 @@
+# Copyright 2019 Camptocamp SA
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+{
+    "name": "Account force early payment discount",
+    "summary": "Allow forcing financial discounts for early payments",
+    "version": "18.0.1.0.0",
+    "development_status": "Production/Stable",
+    "category": "Account",
+    "website": "https://github.com/OCA/account-payment",
+    "author": "Camptocamp, Odoo Community Association (OCA)",
+    "maintainers": ["grindtildeath"],
+    "license": "AGPL-3",
+    "installable": True,
+    "depends": ["account"],
+    "data": [
+        "views/account_move.xml",
+        "wizard/account_payment_register.xml",
+    ],
+}

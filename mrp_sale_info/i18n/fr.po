@@ -39,8 +39,13 @@ msgstr "Référence client"
 
 #. module: mrp_sale_info
 #: model:ir.model,name:mrp_sale_info.model_mrp_production
-msgid "Production Order"
-msgstr "Ordre de fabrication"
+msgid "Manufacturing Order"
+msgstr ""
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_sale_order_line__mrp_production_ids
+msgid "Manufacturing orders"
+msgstr ""
 
 #. module: mrp_sale_info
 #: model_terms:ir.ui.view,arch_db:mrp_sale_info.mrp_production_workorder_form_view_inherit
@@ -54,14 +59,14 @@ msgid "Sale order"
 msgstr "Commande client"
 
 #. module: mrp_sale_info
-#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__source_procurement_group_id
-msgid "Source Procurement Group"
-msgstr "Groupe d'approvisionnement source"
+#: model:ir.model,name:mrp_sale_info.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
 
 #. module: mrp_sale_info
-#: model:ir.model,name:mrp_sale_info.model_stock_rule
-msgid "Stock Rule"
-msgstr "Règle de stock"
+#: model:ir.model,name:mrp_sale_info.model_stock_move
+msgid "Stock Move"
+msgstr ""
 
 #. module: mrp_sale_info
 #: model:ir.model.fields,help:mrp_sale_info.field_mrp_production__commitment_date
@@ -78,3 +83,12 @@ msgstr ""
 #: model:ir.model,name:mrp_sale_info.model_mrp_workorder
 msgid "Work Order"
 msgstr "Ordre de travail"
+
+#~ msgid "Production Order"
+#~ msgstr "Ordre de fabrication"
+
+#~ msgid "Source Procurement Group"
+#~ msgstr "Groupe d'approvisionnement source"
+
+#~ msgid "Stock Rule"
+#~ msgstr "Règle de stock"
