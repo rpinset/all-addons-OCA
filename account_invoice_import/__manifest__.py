@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import",
-    "version": "16.0.2.1.0",
+    "version": "16.0.2.2.0",
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "summary": "Import supplier invoices/refunds as PDF or XML files",
@@ -22,7 +22,6 @@
         "wizard/account_invoice_import_view.xml",
         "wizard/account_invoice_import_partner_create_view.xml",
         "views/account_move.xml",
-        "views/account_journal_dashboard.xml",
         "views/res_partner.xml",
     ],
     "images": ["images/sshot-wizard1.png"],

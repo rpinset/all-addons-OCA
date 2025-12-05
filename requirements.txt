@@ -39,6 +39,7 @@ xlrd
 chardet
 ofxparse
 ofxtools
+plaid-python
 xlrd
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 # generated from manifests external_dependencies

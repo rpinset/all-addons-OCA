@@ -130,16 +130,11 @@ Date:   Thu Oct 9 18:35:11 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 569422ca4532951c488ed280465a7a9b4bb17b15
-Author: Bastian Günther <mail@bastian-guenther.de>
-Date:   Fri Oct 24 08:42:16 2025 +0000
+commit c6cd13ed225f81b2f85decf5f3b733e4c5c2b951
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 5 06:53:49 2025 +0000
 
-    Translated using Weblate (German)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: operating-unit-16.0/operating-unit-16.0-sale_stock_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-16-0/operating-unit-16-0-sale_stock_operating_unit/de/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -222,9 +217,9 @@ Date:   Wed Nov 12 07:43:09 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 5beb937730d0aefa2e57c52a2c7531d627a7ee12
+commit c242abcb4d5f63682c955a7876d1b5b1d742a1d4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 9 10:26:02 2025 +0000
+Date:   Thu Dec 4 19:51:30 2025 +0000
 
     [BOT] post-merge updates
 
@@ -381,11 +376,16 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4f3ad797e4b55b18cd56bc7775761156ae4ae230
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 30 15:59:05 2025 +0000
+commit 1c2a3f5355ed73c42d5e4df6469a5fd56c385b27
+Author: pere-aquarian <pere@aquarian.tech>
+Date:   Thu Dec 4 16:50:31 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 93.5% (72 of 77 strings)
+    
+    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_invoice_plan
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_invoice_plan/ca/
 
 
 ## crm
@@ -509,16 +509,16 @@ Date:   Fri Nov 28 08:30:15 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 1fd7a7ab8ee41a399810449ad595a7a6a461a0d3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 26 08:22:05 2025 +0000
+commit d2b9ba6ffaa8f0c88dd9a0fbffa7763284c09eb8
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Dec 5 16:35:13 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (100 of 100 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: edi-16.0/edi-16.0-account_invoice_import
-    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-account_invoice_import/it/
+    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-account_invoice_import/
 
 
 ## field-service
@@ -795,9 +795,9 @@ Date:   Sun Feb 2 19:18:26 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit d4ac57ae0febb735a32b23196c38dbe47d5fb2c1
+commit f7a4232bdbb0d2032514fba0d52a399ab9dbfec8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 24 11:08:48 2025 +0000
+Date:   Fri Dec 5 16:47:23 2025 +0000
 
     [BOT] post-merge updates
 
@@ -872,16 +872,16 @@ Date:   Tue Nov 25 13:23:33 2025 +0000
 
 ## l10n-japan
 From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
-commit 2707c50fc2472d0eaf9fcc5df4a3924af6ad806e
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Nov 20 04:35:36 2025 +0000
+commit f0606456a51661fcef48f9c3ed6c4b84b9185950
+Author: Ryoko Tsuda <ryoko@quartile.co>
+Date:   Thu Dec 4 01:03:35 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Japanese)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (5 of 5 strings)
     
     Translation: l10n-japan-16.0/l10n-japan-16.0-account_payment_term_cutoff_day
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-japan-16-0/l10n-japan-16-0-account_payment_term_cutoff_day/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-japan-16-0/l10n-japan-16-0-account_payment_term_cutoff_day/ja/
 
 
 ## l10n-luxemburg
@@ -1255,16 +1255,11 @@ Date:   Tue Nov 25 09:13:07 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit dcfb1e4b39c922d47cbaefcf22f33d491e4d79a9
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Mon Dec 1 10:21:20 2025 +0000
+commit 6bf903f1fc58830a8b2f798b9d64d5a6c8d56595
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 4 10:47:13 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 96.1% (25 of 26 strings)
-    
-    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_order_type
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_order_type/tr/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1712,16 +1707,11 @@ Date:   Sun Feb 9 19:15:31 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit cfaf9e6e2796f995eb4b5da06e0b918050f103a5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 1 09:30:48 2025 +0000
+commit 2c765770bab046d3aa238260b7f5dd80b300e591
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 2 12:41:53 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: web-16.0/web-16.0-web_phone_field_whatsapp
-    Translate-URL: https://translation.odoo-community.org/projects/web-16-0/web-16-0-web_phone_field_whatsapp/it/
+    [BOT] post-merge updates
 
 
 ## website
