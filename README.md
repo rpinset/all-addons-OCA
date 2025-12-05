@@ -74,16 +74,16 @@ Date:   Mon Nov 3 07:36:05 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit e48d8c293be8898abdc8fe2e6b081278dc3a4448
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 3 08:08:19 2025 +0000
+commit cf255e1bcf3f45da48acd4076e492937b53c29bd
+Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
+Date:   Tue Dec 2 08:36:15 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Danish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 92.3% (266 of 288 strings)
     
     Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/da/
 
 
 ## account-invoice-reporting
@@ -1160,16 +1160,11 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 45067b227ff386f6c951fbf4413264de0e7dfa11
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:46:28 2025 +0000
+commit b0498888f06fe98583460a4696cd3b8b611eced4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 4 07:32:00 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity_type
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity_type/it/
+    [BOT] post-merge updates
 
 
 ## pms
