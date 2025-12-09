@@ -1,7 +1,7 @@
 # Copyright 2022 ACSONE SA/NV
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/LGPL).
 
-from typing import TYPE_CHECKING, Annotated
+from typing import Annotated
 
 from odoo.api import Environment
 from odoo.exceptions import AccessDenied
@@ -13,10 +13,8 @@ from fastapi import Depends, Header, HTTPException, Query, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
 from .context import odoo_env_ctx
+from .models.fastapi_endpoint import FastapiEndpoint
 from .schemas import Paging
-
-if TYPE_CHECKING:
-    from .models.fastapi_endpoint import FastapiEndpoint
 
 
 def company_id() -> int | None:

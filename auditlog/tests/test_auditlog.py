@@ -321,6 +321,30 @@ class TestAuditlogFull(AuditLogRuleCommon, AuditlogCommon):
         self.groups_rule.unlink()
         super(TestAuditlogFull, self).tearDown()
 
+    def test_update_logs_have_lines_with_changes(self):
+        self.groups_rule.subscribe()
+        initial_value = "test-group-1"
+        new_value = "test-group-2"
+        group = self.env["res.groups"].create({"name": initial_value})
+        group.write(
+            {
+                "name": new_value,
+            }
+        )
+        log = self.env["auditlog.log"].search(
+            [
+                ("model_id", "=", self.groups_model_id),
+                ("method", "=", "write"),
+                ("res_id", "=", group.id),
+            ]
+        )
+        self.assertEqual(len(log), 1)
+        self.assertEqual(len(log.line_ids), 1)
+        log_line = log.line_ids[0]
+        self.assertEqual(log_line.field_name, "name")
+        self.assertEqual(log_line.old_value, initial_value)
+        self.assertEqual(log_line.new_value, new_value)
+
 
 class TestAuditlogFast(AuditLogRuleCommon, AuditlogCommon):
     def setUp(self):

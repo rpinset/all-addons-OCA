@@ -498,6 +498,8 @@ class AuditlogRule(models.Model):
             if self.env.user in users_to_exclude:
                 return result
 
+            self.flush_recordset([field_name for field_name in vals.keys()])
+
             with ThrowAwayCache(self.env):
                 new_values = {d["id"]: d for d in records_write.read(fields_list)}
 
