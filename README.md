@@ -102,16 +102,16 @@ Date:   Mon Jul 21 06:11:19 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 1caf6f846e9a53918a506d7fed7e19f21fbf1489
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Thu Sep 25 19:12:08 2025 +0000
+commit 851581c0c483ba186a94d7fde5ce1f07fafccf73
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:48 2025 +0000
 
-    Translated using Weblate (Catalan)
+    Translated using Weblate (Italian)
     
-    Currently translated at 26.6% (8 of 30 strings)
+    Currently translated at 33.3% (1 of 3 strings)
     
-    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_transmit_method
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_transmit_method/ca/
+    Translation: account-invoicing-15.0/account-invoicing-15.0-product_supplierinfo_for_customer_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-product_supplierinfo_for_customer_invoice/it/
 
 
 ## account-fiscal-rule
@@ -354,11 +354,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c23f01de667113744593245bb31df8aa7a32ff4b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 30 21:10:33 2025 +0000
+commit cba7ccba1c8ea0b08ee86377d5ee1e6d093d5be8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:56 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 14.2% (2 of 14 strings)
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-product_supplierinfo_for_customer_sale
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-product_supplierinfo_for_customer_sale/it/
 
 
 ## crm
@@ -1056,14 +1061,16 @@ Date:   Tue Sep 9 10:05:39 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 181401ea5fa461e97a30cba9bdf18cc8b61cada0
-Merge: 9d0c97d34 377cd40b2
-Author: Enric Tobella <etobella@creublanca.es>
-Date:   Wed Oct 1 16:33:27 2025 +0200
+commit 42e0d3621e3218756a91698dcc714a9a686458c8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:50:00 2025 +0000
 
-    Merge pull request #2119 from sygel-technology/15.0-fix-ci
+    Translated using Weblate (Italian)
     
-    [15.0] [FIX] CI: delete test-constraints.txt file
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-product_supplierinfo_for_customer_picking
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-product_supplierinfo_for_customer_picking/it/
 
 
 ## stock-logistics-tracking
