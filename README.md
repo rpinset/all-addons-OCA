@@ -117,11 +117,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 1ef7471a7072c3a7f1f7f7b52661c9be47839fac
+commit 637c7203e79a4b4a135d9fd078444e7a2f31dfef
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 14 10:10:32 2025 +0000
+Date:   Tue Dec 9 10:49:51 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: account-invoicing-14.0/account-invoicing-14.0-product_supplierinfo_for_customer_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-product_supplierinfo_for_customer_invoice/it/
 
 
 ## account-fiscal-rule
@@ -888,16 +893,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 70d1df5849c0b22d9f8e6113025ffe34e3fc0fb6
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Dec 4 18:07:14 2025 +0000
+commit 0607cf91f552a50502dba97ebd66c03b4ec93b2e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:45 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_central_journal_reportlab
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_central_journal_reportlab/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_customer_code
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_customer_code/it/
 
 
 ## l10n-japan
@@ -1128,16 +1133,16 @@ Date:   Wed Oct 15 09:12:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 7d93677614e97a3de5eb708dcd2f8b85d8c91030
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Mon Nov 24 08:23:32 2025 +0000
+commit 50be0701dbbf89c196bd3ec877605a50072c64d5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:43 2025 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-product_expiry_simple
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-product_expiry_simple/sl/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-product_supplierinfo_for_customer_picking
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-product_supplierinfo_for_customer_picking/it/
 
 
 ## stock-logistics-tracking
