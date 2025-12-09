@@ -112,16 +112,16 @@ Date:   Wed Jun 4 02:34:35 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 6dc29a327c6b638385a71f91e7b878c43adbfefb
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Mon Sep 8 07:27:31 2025 +0000
+commit 84a5a9dc1229974fada2c25a375d55d10aefb6e5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:40 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 50.0% (2 of 4 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_tax_required
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_tax_required/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-product_supplierinfo_for_customer_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-product_supplierinfo_for_customer_invoice/it/
 
 
 ## account-fiscal-rule
@@ -391,11 +391,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ff50eafb8d0d0deaa2d0e099fb6f5d4d3d640fd8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 7 17:24:41 2025 +0000
+commit c3cff445f47c29de774746ea760b630905bfd9b1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:58 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 33.3% (2 of 6 strings)
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-product_supplierinfo_for_customer_sale
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-product_supplierinfo_for_customer_sale/it/
 
 
 ## crm
@@ -1038,16 +1043,16 @@ Date:   Tue Sep 9 10:05:35 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 6646c77c78f53195b35a0d1a2fc9ee365a72397c
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Mon Nov 24 08:09:24 2025 +0000
+commit 2076c49580cb41d25402750fe5ff896f317454cf
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 9 10:49:36 2025 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (2 of 2 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_invoice_link
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_invoice_link/sl/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-product_supplierinfo_for_customer_picking
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-product_supplierinfo_for_customer_picking/it/
 
 
 ## stock-logistics-tracking
