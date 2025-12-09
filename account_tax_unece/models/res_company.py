@@ -14,7 +14,9 @@ class ResCompany(models.Model):
         res = {}
         tax_obj = self.env["account.tax"]
         all_taxes = tax_obj.with_context(active_test=False).search_read(
-            [("company_id", "=", self.id)],
+            # Branch (res.company) use parent company taxes
+            # 'parent_of' allows this case to be served
+            [("company_id", "parent_of", self.id)],
             [
                 "unece_type_code",
                 "unece_categ_code",
@@ -46,7 +48,9 @@ class ResCompany(models.Model):
         res = {}
         fp_obj = self.env["account.fiscal.position"]
         fpositions = fp_obj.with_context(lang=lang, active_test=False).search_read(
-            [("company_id", "=", self.id)], ["name", "display_name", "note"]
+            # Branch (res.company) use parent company fiscal positions
+            [("company_id", "parent_of", self.id)],
+            ["name", "display_name", "note"],
         )
         for fp in fpositions:
             note = False

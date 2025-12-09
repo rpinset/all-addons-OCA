@@ -1,0 +1,4 @@
+This module adds a **Scaleway** backend to the
+**account_invoice_download** module. It allows you to auto-download
+[Scaleway](https://www.scaleway.com/) invoices via the [Scaleway Billing
+API](https://www.scaleway.com/en/developers/api/billing/).
