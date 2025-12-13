@@ -65,16 +65,16 @@ Date:   Sun Feb 2 17:51:41 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d9ed6fa7c65a25aa8ffa36fc677111691267f5f8
+commit d88822553e1a65816996ab5622373e0dddae0fa6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 20 14:12:06 2025 +0000
+Date:   Thu Dec 11 08:03:35 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (46 of 46 strings)
+    Currently translated at 100.0% (262 of 262 strings)
     
-    Translation: account-financial-tools-16.0/account-financial-tools-16.0-account_dashboard_banner
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-16-0/account-financial-tools-16-0-account_dashboard_banner/it/
+    Translation: account-financial-tools-16.0/account-financial-tools-16.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-16-0/account-financial-tools-16-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -509,16 +509,11 @@ Date:   Fri Nov 28 08:30:15 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 6a791b27b7e6f4c43707b56e9771a698b4ebc90a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:25:27 2025 +0000
+commit 7e903817a8513255578cb01af1d5ebb199d4966e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 9 23:05:21 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (63 of 63 strings)
-    
-    Translation: edi-16.0/edi-16.0-account_invoice_download_ovh
-    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-account_invoice_download_ovh/it/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -532,16 +527,16 @@ Date:   Tue Nov 4 16:41:37 2025 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 4a17a5842b5cbaa462989fa175cbf19780c37680
-Author: Simon Hick <sim@coopiteasy.be>
-Date:   Sat Dec 6 18:55:58 2025 +0000
+commit 07996bc25cd0e3e2569712f8649a1097f7ca4767
+Author: Sylvain LE GAL <sylvain.legal@grap.coop>
+Date:   Tue Dec 9 22:24:19 2025 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 93.2% (55 of 59 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: margin-analysis-16.0/margin-analysis-16.0-product_margin_classification
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-16-0/margin-analysis-16-0-product_margin_classification/fr/
+    Translation: margin-analysis-16.0/margin-analysis-16.0-product_standard_margin
+    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-16-0/margin-analysis-16-0-product_standard_margin/fr/
 
 
 ## fleet
@@ -995,16 +990,11 @@ Date:   Sun Feb 2 19:41:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit d83d9fa4e13ffe619ed2d4cfaf72dad12ff7f845
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Nov 29 10:15:56 2025 +0000
+commit cb464963d188c069c266c54ba6a85309e54870c2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 11 21:06:21 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-16.0/l10n-spain-16.0-l10n_es_ticketbai_pos
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_ticketbai_pos/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1139,9 +1129,9 @@ Date:   Sun Feb 9 18:52:53 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit aab56b0785630c65031849d04cc1a0ed9bada487
+commit 58111e48f2584830d001d38ac2d33d62f0982837
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:01:09 2025 +0000
+Date:   Thu Dec 11 08:03:42 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1167,16 +1157,16 @@ Date:   Tue Oct 21 12:11:44 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 39a748cd168e9f9a7d02e993aa8a529f370a37f4
-Author: SupportSNDC <support@sndc.fr>
-Date:   Tue Dec 9 09:36:30 2025 +0000
+commit 0e694b4f05ec0dc1539b832c03f35cbf721a9c43
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 11 08:03:31 2025 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 96.7% (389 of 402 strings)
+    Currently translated at 100.0% (402 of 402 strings)
     
     Translation: rma-16.0/rma-16.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-16-0/rma-16-0-rma/fr/
+    Translate-URL: https://translation.odoo-community.org/projects/rma-16-0/rma-16-0-rma/it/
 
 
 ## ddmrp
@@ -1269,25 +1259,25 @@ Date:   Tue Dec 9 10:39:35 2025 +0000
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit 516319152f63597ad0ca27e945700f8da59d0763
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 9 11:52:30 2025 +0000
+commit 001558d4a10b110462ebe7032d33448405dfae8c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 10 09:35:26 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: purchase-reporting-16.0/purchase-reporting-16.0-purchase_order_report_hide_tax
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-reporting-16-0/purchase-reporting-16-0-purchase_order_report_hide_tax/it/
 
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 63bb352de3b7c5a7dc2953abb646f2da6d6af410
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:55:19 2025 +0000
+commit fd01f792289674efaad047d748470abe5899514a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 11 09:56:19 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: product-attribute-16.0/product-attribute-16.0-product_category_active
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-16-0/product-attribute-16-0-product_category_active/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1333,11 +1323,16 @@ Date:   Sun Feb 2 20:17:38 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 72deb472421d37cb91f4e085f5b6165910d505aa
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 9 14:44:15 2025 +0000
+commit 09dc39bf57ae66550954ecc257e18f4bfc3870a7
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Thu Dec 11 08:55:28 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 36.1% (26 of 72 strings)
+    
+    Translation: project-16.0/project-16.0-project_role
+    Translate-URL: https://translation.odoo-community.org/projects/project-16-0/project-16-0-project_role/tr/
 
 
 ## project-agile
@@ -1570,11 +1565,16 @@ Date:   Sat Jun 21 10:46:55 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit d1cebaa7a02bbecce920138d2715b514a276e551
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 8 08:14:43 2025 +0000
+commit 1390f0dc55a9840bb1aed79e76acfa6c372b5f0f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 10 09:37:03 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (45 of 45 strings)
+    
+    Translation: rest-framework-16.0/rest-framework-16.0-fastapi_auth_partner
+    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-16-0/rest-framework-16-0-fastapi_auth_partner/it/
 
 
 ## role-policy
