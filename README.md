@@ -496,16 +496,16 @@ Date:   Mon Nov 24 10:41:45 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 2669a461528888e2dd53fef7e250e938ed5befb4
+commit 4bf0065e972ffa488b72751498c8d402ec5a28d6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:16:56 2025 +0000
+Date:   Thu Dec 11 08:03:12 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (75 of 75 strings)
+    Currently translated at 100.0% (337 of 337 strings)
     
-    Translation: dms-14.0/dms-14.0-dms_field
-    Translate-URL: https://translation.odoo-community.org/projects/dms-14-0/dms-14-0-dms_field/it/
+    Translation: dms-14.0/dms-14.0-dms
+    Translate-URL: https://translation.odoo-community.org/projects/dms-14-0/dms-14-0-dms/it/
 
 
 ## e-commerce
@@ -1373,9 +1373,9 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit f1247242ed95ec56673729053bb6450f8f9e0831
+commit 4e5db61bd9a2cae2571732c039446c92cb474045
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 21 06:56:46 2025 +0000
+Date:   Thu Dec 11 08:03:19 2025 +0000
 
     Translated using Weblate (Italian)
     
