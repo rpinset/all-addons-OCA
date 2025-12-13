@@ -2,7 +2,9 @@
 # Copyright 2025 Tecnativa - Víctor Martínez
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0
 
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, time, timedelta
+
+from freezegun import freeze_time
 
 from odoo import exceptions
 from odoo.tests import Form, new_test_user
@@ -91,6 +93,18 @@ class TestProjectTimesheetTimeControl(TestProjectTimesheetTimeControlBase):
         line = self._create_analytic_line(datetime.now())
         line.with_context(tz="EST").date_time = "2016-03-24 03:00:00"
         self.assertEqual(line.date, date(2016, 3, 23))
+
+    def test_write_analytic_line_date(self):
+        line = self._create_analytic_line(datetime(2016, 3, 24, 12, 0))
+        line2 = self._create_analytic_line(datetime(2016, 3, 23, 13, 0))
+
+        lines = self.env["account.analytic.line"]
+        lines += line
+        lines += line2
+
+        lines.write({"date": datetime(2016, 1, 1)})
+        self.assertEqual(line.date_time, datetime(2016, 1, 1, 12, 0))
+        self.assertEqual(line2.date_time, datetime(2016, 1, 1, 13, 0))
 
     def test_write_analytic_line_with_string_datetime(self):
         line = self._create_analytic_line(datetime.now())
@@ -290,3 +304,88 @@ class TestProjectTimesheetTimeControl(TestProjectTimesheetTimeControlBase):
         )
         line.unit_amount = 500.0
         self.assertFalse(line.date_time_end)
+
+    def test_onchange_date_time_with_hour_uom_and_dates(self):
+        hour_uom = self.env.ref("uom.product_uom_hour")
+        form = Form(
+            self.env["account.analytic.line"]
+            .with_user(self.user)
+            .with_context(default_product_uom_id=hour_uom.id),
+            view=self.env.ref("project_timesheet_time_control.hr_timesheet_line_form"),
+        )
+        form.date_time = datetime(2023, 1, 1, 8, 0, 0)
+        form.date_time_end = datetime(2023, 1, 1, 10, 0, 0)
+        self.assertEqual(form.unit_amount, 2.0)
+
+        form.date_time_end = datetime(2023, 1, 1, 12, 0, 0)
+        self.assertEqual(form.unit_amount, 4.0)
+        self.assertEqual(form.date, date(2023, 1, 1))
+
+    def test_onchange_date_time_with_hour_uom_no_end_date(self):
+        hour_uom = self.env.ref("uom.product_uom_hour")
+        form = Form(
+            self.env["account.analytic.line"]
+            .with_user(self.user)
+            .with_context(default_product_uom_id=hour_uom.id),
+            view=self.env.ref("project_timesheet_time_control.hr_timesheet_line_form"),
+        )
+        form.date_time = datetime(2023, 1, 1, 8, 0, 0)
+        form.date_time_end = False
+
+        self.assertEqual(form.unit_amount, 0)
+        self.assertEqual(form.date, date(2023, 1, 1))
+
+    @freeze_time("2023-01-10 09:05:10")
+    def test_create_with_date(self):
+        line = (
+            self.env["account.analytic.line"]
+            .with_user(self.user)
+            .create(
+                {
+                    "date": date(2023, 1, 1),
+                    "project_id": self.project.id,
+                    "name": "Test line",
+                }
+            )
+        )
+        self.assertEqual(line.date_time.date(), date(2023, 1, 1))
+
+        line.date = date(2023, 1, 3)
+        self.assertEqual(line.date, date(2023, 1, 3))
+        self.assertEqual(line.date_time.date(), date(2023, 1, 3))
+        self.assertEqual(line.date_time.time(), time(9, 5, 10))
+
+    def test_create_with_date_and_date_time(self):
+        line = (
+            self.env["account.analytic.line"]
+            .with_user(self.user)
+            .create(
+                {
+                    "date": date(2023, 1, 1),
+                    "date_time": datetime(2023, 1, 1, 8, 0, 0),
+                    "project_id": self.project.id,
+                    "name": "Test line",
+                }
+            )
+        )
+        self.assertEqual(line.date_time, datetime(2023, 1, 1, 8, 0, 0))
+
+        line.date = date(2023, 1, 3)
+        self.assertEqual(line.date, date(2023, 1, 3))
+        self.assertEqual(line.date_time, datetime(2023, 1, 3, 8, 0, 0))
+
+    def test_create_with_date_and_different_date_time(self):
+        line = (
+            self.env["account.analytic.line"]
+            .with_user(self.user)
+            .create(
+                {
+                    "date": date(2023, 1, 1),
+                    "date_time": datetime(2023, 1, 3, 8, 0, 0),
+                    "project_id": self.project.id,
+                    "name": "Test line",
+                }
+            )
+        )
+        self.assertEqual(line.date, date(2023, 1, 3))
+        self.assertEqual(line.date_time, datetime(2023, 1, 3, 8, 0, 0))

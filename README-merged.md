@@ -307,7 +307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 18.0.1.4.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.4.2 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 18.0.1.0.0 |  | OCA Financial Reports Sale
 [account_tax_balance](account_tax_balance/) | 18.0.1.0.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 18.0.1.0.1 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
@@ -418,6 +418,7 @@ addon | version | maintainers | summary
 [account_billing](account_billing/) | 18.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 18.0.1.0.0 |  | Account Global Discount
 [account_invoice_auto_send_by_email](account_invoice_auto_send_by_email/) | 18.0.1.0.0 |  | Invoice with the email transmit method are send automatically.
+[account_invoice_check_total](account_invoice_check_total/) | 18.0.1.0.0 |  | Check if the verification total is equal to the bill's total
 [account_invoice_date_due](account_invoice_date_due/) | 18.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Update Invoice's Due Date
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 18.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 18.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
@@ -969,8 +970,8 @@ addon | version | maintainers | summary
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 18.0.1.0.0 |  | Account Move Reconcile Forbid Cancel
 [account_partner_reconcile](account_partner_reconcile/) | 18.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 18.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.1.0 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.1.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.1.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_reconcile_oca_queue](account_reconcile_oca_queue/) | 18.0.1.1.0 |  | Auto-reconcile in queue jobs
 [account_statement_base](account_statement_base/) | 18.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 18.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -1750,6 +1751,7 @@ addon | version | maintainers | summary
 [portal_sale_order_search](portal_sale_order_search/) | 18.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow customers to set and search their own order reference in portal
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 18.0.1.0.0 |  | Portal Sale Personal Data Only
 [pricelist_cache](pricelist_cache/) | 18.0.1.0.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
+[pricelist_cache_rest](pricelist_cache_rest/) | 18.0.1.0.0 |  | Provides an endpoint to get product prices for a given customer
 [product_customerinfo_elaboration](product_customerinfo_elaboration/) | 18.0.1.0.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
 [product_customerinfo_sale](product_customerinfo_sale/) | 18.0.1.0.1 |  | Loads in every sale order line the customer code defined in the product
 [product_form_sale_link](product_form_sale_link/) | 18.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
@@ -1764,6 +1766,7 @@ addon | version | maintainers | summary
 [sale_cancel_reason](sale_cancel_reason/) | 18.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_company_currency](sale_company_currency/) | 18.0.1.0.0 |  | Company Currency in Sale Orders
+[sale_confirm_group](sale_confirm_group/) | 18.0.1.0.0 |  | Allows configuring a list of groups per-company who are granted permission to confirm sale orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 18.0.1.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 18.0.1.2.1 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 18.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
@@ -1816,7 +1819,7 @@ addon | version | maintainers | summary
 [sale_order_split_strategy](sale_order_split_strategy/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_tag](sale_order_tag/) | 18.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds Tags to Sales Orders.
 [sale_order_transmit_method](sale_order_transmit_method/) | 18.0.1.0.0 |  | Set transmit method (email, post, portal, ...) in sale order and propagate it to invoices
-[sale_order_type](sale_order_type/) | 18.0.1.1.0 |  | Sale Order Type
+[sale_order_type](sale_order_type/) | 18.0.1.1.1 |  | Sale Order Type
 [sale_order_warn_message](sale_order_warn_message/) | 18.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
 [sale_packaging_default](sale_packaging_default/) | 18.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Simplify using products default packaging for sales
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 18.0.1.0.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
@@ -2024,7 +2027,7 @@ addon | version | maintainers | summary
 [partner_priority](partner_priority/) | 18.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds priority to partners.
 [partner_property](partner_property/) | 18.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner Property
 [partner_purchase_manager](partner_purchase_manager/) | 18.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add purchase manager field in partner
-[partner_rank_single](partner_rank_single/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> <a href='https://github.com/yankinmax'><img src='https://github.com/yankinmax.png' width='32' height='32' style='border-radius:50%;' alt='yankinmax'/></a> | Introduce single rank for partners.
+[partner_rank_single](partner_rank_single/) | 18.0.2.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> <a href='https://github.com/yankinmax'><img src='https://github.com/yankinmax.png' width='32' height='32' style='border-radius:50%;' alt='yankinmax'/></a> | Introduce single rank for partners.
 [partner_readonly_security](partner_readonly_security/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner Readonly Security
 [partner_ref_unique](partner_ref_unique/) | 18.0.1.0.0 |  | Add an unique constraint to partner ref field
 [partner_search_alias](partner_search_alias/) | 18.0.1.0.0 |  | Partner Search Alias
@@ -2531,6 +2534,7 @@ addon | version | maintainers | summary
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 18.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 18.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 18.0.1.0.0 |  | Hide product prices on the shop
+[website_sale_order_shipping_modification](website_sale_order_shipping_modification/) | 18.0.1.0.0 |  | Change the delivery address in quotes from the portal
 [website_sale_order_type](website_sale_order_type/) | 18.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
 [website_sale_product_attribute_filter_category](website_sale_product_attribute_filter_category/) | 18.0.1.0.1 |  | Allow group attributes in shop by categories
 [website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 18.0.1.1.1 |  | Allow hide attributes values not used in variants
@@ -2596,12 +2600,15 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_einvoice_generate](account_einvoice_generate/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Technical module to generate PDF invoices with embedded XML file
 [account_invoice_download](account_invoice_download/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Auto-download supplier invoices and import them
+[account_invoice_download_ovh](account_invoice_download_ovh/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Get OVH Invoice via the API
 [account_invoice_download_scaleway](account_invoice_download_scaleway/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Get Scaleway Invoices via the API
 [account_invoice_export](account_invoice_export/) | 18.0.1.0.1 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
 [account_invoice_export_server_env](account_invoice_export_server_env/) | 18.0.1.0.0 |  | Server environment for Account Invoice Export
 [account_invoice_facturx](account_invoice_facturx/) | 18.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_import](account_invoice_import/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import supplier invoices/refunds as PDF or XML files
+[account_invoice_import_facturx](account_invoice_import_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Factur-X/ZUGFeRD Vendor Bills
+[account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import simple PDF vendor bills
 [account_invoice_import_ubl](account_invoice_import_ubl/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import UBL XML supplier invoices/refunds
 [base_business_document_import](base_business_document_import/) | 18.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Use phone numbers to match partners upon import of business documents
@@ -4043,8 +4050,11 @@ addon | version | maintainers | summary
 [account_statement_import_fr_cfonb](account_statement_import_fr_cfonb/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import CFONB bank statements files in Odoo
 [country_fr](country_fr/) | 18.0.1.0.0 |  | Set FR country on `base.main_company` record to set up French localisation.
 [l10n_fr_account_invoice_facturx](l10n_fr_account_invoice_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | France-specific module to generate Factur-X invoices
+[l10n_fr_account_invoice_import_facturx](l10n_fr_account_invoice_import_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | France-specific module to import Factur-X invoices
+[l10n_fr_account_invoice_import_simple_pdf](l10n_fr_account_invoice_import_simple_pdf/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Invoice import simple PDF: match partners using SIREN
 [l10n_fr_account_payment_intl_credit_transfer](l10n_fr_account_payment_intl_credit_transfer/) | 18.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Regulatory reporting codes for ISO 20022 credit transfer files
 [l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Auto-configure UNECE params on French taxes
+[l10n_fr_business_document_import](l10n_fr_business_document_import/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adapt the module base_business_document_import for France
 [l10n_fr_chorus_account](l10n_fr_chorus_account/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
 [l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add checks on sale orders for Chorus Pro
@@ -5045,7 +5055,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat](l10n_es_aeat/) | 18.0.1.3.6 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 18.0.1.0.2 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
-[l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 18.0.1.0.1 |  | AEAT modelo 123
+[l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 18.0.1.0.2 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 18.0.1.0.1 |  | AEAT modelo 130
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 18.0.1.1.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 18.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
@@ -5060,7 +5070,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 18.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 18.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 18.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.1.3.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.1.3.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.1.0 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 18.0.1.0.3 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
@@ -5080,7 +5090,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 18.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 18.0.1.0.3 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.2.0 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.2.1 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 18.0.1.0.0 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5873,9 +5883,9 @@ addon | version | maintainers | summary
 [stock_archive_constraint](stock_archive_constraint/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock archive constraint
 [stock_change_qty_reason](stock_change_qty_reason/) | 18.0.1.0.0 |  | Stock Quantity Change Reason
 [stock_cycle_count](stock_cycle_count/) | 18.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
-[stock_demand_estimate](stock_demand_estimate/) | 18.0.1.0.0 |  | Allows to create demand estimates.
+[stock_demand_estimate](stock_demand_estimate/) | 18.0.1.1.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 18.0.1.0.0 |  | Allows to create demand estimates.
-[stock_inventory](stock_inventory/) | 18.0.1.1.1 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 18.0.1.1.2 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 18.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 18.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 18.0.1.0.0 |  | Lock down stock locations during inventories.
@@ -6255,7 +6265,7 @@ addon | version | maintainers | summary
 [mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 18.0.1.0.0 |  | Updates the operation type creating MO based on the product
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 18.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_repair_order](mrp_repair_order/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
-[mrp_restrict_lot](mrp_restrict_lot/) | 18.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | MRP Restrict Lot
+[mrp_restrict_lot](mrp_restrict_lot/) | 18.0.1.0.2 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | MRP Restrict Lot
 [mrp_sale_info](mrp_sale_info/) | 18.0.1.1.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 18.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
@@ -6378,7 +6388,7 @@ addon | version | maintainers | summary
 [mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 18.0.1.2.0 |  | Hazard Risk
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 18.0.1.0.0 |  | Information Security Management System Manual
 [mgmtsystem_manual](mgmtsystem_manual/) | 18.0.1.0.1 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 18.0.1.2.2 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 18.0.1.3.0 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 18.0.1.0.0 |  | Management System - Nonconformity Hazard
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 18.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 18.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
@@ -6516,6 +6526,7 @@ addon | version | maintainers | summary
 [purchase_manual_delivery](purchase_manual_delivery/) | 18.0.1.0.0 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_no_rfq](purchase_no_rfq/) | 18.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Purchase Order - No Request For Quotation
 [purchase_open_qty](purchase_open_qty/) | 18.0.1.0.1 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
+[purchase_order_approval_block](purchase_order_approval_block/) | 18.0.1.0.0 |  | Purchase Order Approval Block
 [purchase_order_archive](purchase_order_archive/) | 18.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_general_discount](purchase_order_general_discount/) | 18.0.1.0.0 |  | General discount per purchase order
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.2 |  | Adds Purchase Order Lines Menu
@@ -6690,7 +6701,7 @@ addon | version | maintainers | summary
 [product_manufacturer](product_manufacturer/) | 18.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
 [product_medical](product_medical/) | 18.0.1.0.0 |  | Base structure to handle medical products
 [product_multi_category](product_multi_category/) | 18.0.1.0.0 |  | Product - Many Categories
-[product_multi_price](product_multi_price/) | 18.0.1.0.0 |  | Product Multi Price
+[product_multi_price](product_multi_price/) | 18.0.1.0.1 |  | Product Multi Price
 [product_net_weight](product_net_weight/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
 [product_origin](product_origin/) | 18.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds the origin of the product
 [product_packaging_archive](product_packaging_archive/) | 18.0.1.0.0 |  | Add an active field on product packaging
@@ -7009,7 +7020,7 @@ addon | version | maintainers | summary
 [project_template](project_template/) | 18.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Templates
 [project_timeline](project_timeline/) | 18.0.1.0.0 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 18.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
-[project_timesheet_time_control](project_timesheet_time_control/) | 18.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project timesheet time control
+[project_timesheet_time_control](project_timesheet_time_control/) | 18.0.1.0.5 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project timesheet time control
 [project_type](project_type/) | 18.0.1.0.0 |  | Project Types
 [project_version](project_version/) | 18.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Version
 [sale_project_copy_tasks](sale_project_copy_tasks/) | 18.0.1.0.0 | <a href='https://github.com/shide'><img src='https://github.com/shide.png' width='32' height='32' style='border-radius:50%;' alt='shide'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Copy tasks into sale order's project
@@ -7397,15 +7408,15 @@ addon | version | maintainers | summary
 [fs_attachment](fs_attachment/) | 18.0.2.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
 [fs_attachment_s3](fs_attachment_s3/) | 18.0.1.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
 [fs_file](fs_file/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
-[fs_folder](fs_folder/) | 18.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | A module to link to Odoo records and manage from record forms forlders from external file systems
+[fs_folder](fs_folder/) | 18.0.2.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | A module to link to Odoo records and manage from record forms forlders from external file systems
 [fs_folder_demo](fs_folder_demo/) | 18.0.1.0.0 |  | Demo for fs_folder addon
-[fs_folder_ms_drive](fs_folder_ms_drive/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Display and manage your files from Microsoft drives from within Odoo
+[fs_folder_ms_drive](fs_folder_ms_drive/) | 18.0.2.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Display and manage your files from Microsoft drives from within Odoo
 [fs_folder_webdav](fs_folder_webdav/) | 18.0.1.0.0 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> | UI improvement when managing WebDAV folder
 [fs_image](fs_image/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store images into filesystem storages
 [fs_storage](fs_storage/) | 18.0.2.1.0 |  | Implement the concept of Storage with amazon S3, sftp...
-[fs_storage_ms_drive](fs_storage_ms_drive/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Add the microsoft drives (OneDrive, Sharepoint) as a storage backend
+[fs_storage_ms_drive](fs_storage_ms_drive/) | 18.0.2.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Add the microsoft drives (OneDrive, Sharepoint) as a storage backend
 [image_tag](image_tag/) | 18.0.1.0.0 |  | Image tag model
-[microsoft_drive_account](microsoft_drive_account/) | 18.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link user with Microsoft
+[microsoft_drive_account](microsoft_drive_account/) | 18.0.2.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link user with Microsoft
 [storage_backend](storage_backend/) | 18.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend_ftp](storage_backend_ftp/) | 18.0.1.0.0 |  | Implement FTP Storage
 [storage_backend_s3](storage_backend_s3/) | 18.0.1.1.0 |  | Implement amazon S3 Storage
@@ -7699,7 +7710,7 @@ addon | version | maintainers | summary
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
 [base_temporary_action](base_temporary_action/) | 18.0.1.0.0 |  | This addon allows to create temporary actions
 [base_time_window](base_time_window/) | 18.0.1.1.0 |  | Base model to handle time windows
-[base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.1 |  | Adds more operators for view inheritance
+[base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.2 |  | Adds more operators for view inheritance
 [bus_alt_connection](bus_alt_connection/) | 18.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [database_cleanup](database_cleanup/) | 18.0.1.0.2 |  | Database cleanup
 [database_size](database_size/) | 18.0.1.0.2 |  | Database Size
@@ -8854,7 +8865,7 @@ addon | version | maintainers | summary
 [web_refresher](web_refresher/) | 18.0.1.0.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 18.0.1.0.2 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/cuongnmtm'><img src='https://github.com/cuongnmtm.png' width='32' height='32' style='border-radius:50%;' alt='cuongnmtm'/></a> | Remember the tree columns' widths across sessions.
 [web_responsive](web_responsive/) | 18.0.1.0.3 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
-[web_save_discard_button](web_save_discard_button/) | 18.0.1.0.0 | <a href='https://github.com/synconics'><img src='https://github.com/synconics.png' width='32' height='32' style='border-radius:50%;' alt='synconics'/></a> | Save & Discard Buttons
+[web_save_discard_button](web_save_discard_button/) | 18.0.1.0.1 | <a href='https://github.com/synconics'><img src='https://github.com/synconics.png' width='32' height='32' style='border-radius:50%;' alt='synconics'/></a> | Save & Discard Buttons
 [web_search_with_and](web_search_with_and/) | 18.0.1.0.1 |  | Use AND conditions on omnibar search
 [web_send_message_popup](web_send_message_popup/) | 18.0.1.0.0 |  | Web Send Message as Popup
 [web_session_auto_close](web_session_auto_close/) | 18.0.1.0.1 |  | Automatically logs out inactive users based on a configurable timeout.

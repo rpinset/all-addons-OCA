@@ -7,7 +7,7 @@ from datetime import datetime
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.exceptions import UserError
 
 
@@ -54,6 +54,13 @@ class AccountAnalyticLine(models.Model):
 
     @api.model
     def _eval_date(self, vals):
+        if vals.get("date") and not vals.get("date_time"):
+            return dict(
+                vals,
+                date_time=datetime.combine(
+                    fields.Date.to_date(vals["date"]), fields.Datetime.now().time()
+                ),
+            )
         if vals.get("date_time"):
             return dict(vals, date=self._convert_datetime_to_date(vals["date_time"]))
         return vals
@@ -92,17 +99,51 @@ class AccountAnalyticLine(models.Model):
             else:
                 one.show_time_control = "stop"
 
+    @api.onchange("date")
+    def _onchange_date(self):
+        hour_uom = self.env.ref("uom.product_uom_hour")
+        if self.product_uom_id == hour_uom and self.date_time:
+            self.date_time = datetime.combine(self.date, self.date_time.time())
+
+    @api.onchange("date_time", "date_time_end")
+    def _onchange_date_time(self):
+        hour_uom = self.env.ref("uom.product_uom_hour")
+        self.date = self.date_time.date()
+        if self.product_uom_id == hour_uom:
+            if self.date_time and self.date_time_end:
+                self.unit_amount = self._duration(self.date_time, self.date_time_end)
+            else:
+                self.unit_amount = 0
+
     @api.model_create_multi
     def create(self, vals_list):
         return super().create(list(map(self._eval_date, vals_list)))
 
     def write(self, vals):
-        return super().write(self._eval_date(vals))
+        self_individual = self.env["account.analytic.line"]
+        res_individual = True
+        if "date" in vals and "date_time" not in vals:
+            self_individual = self.filtered(lambda r: r.date_time)
+            # overwrite the date part of date_time for each record
+            for record in self_individual:
+                vals["date_time"] = fields.Datetime.to_string(
+                    datetime.combine(
+                        fields.Date.to_date(vals["date"]),
+                        record.date_time.time(),
+                    )
+                )
+                res_individual |= super(AccountAnalyticLine, record).write(vals)
+        return (
+            super(AccountAnalyticLine, self - self_individual).write(
+                self._eval_date(vals)
+            )
+            and res_individual
+        )
 
     def button_resume_work(self):
         """Create a new record starting now, with a running timer."""
         return {
-            "name": _("Resume work"),
+            "name": self.env._("Resume work"),
             "res_model": "hr.timesheet.switch",
             "target": "new",
             "type": "ir.actions.act_window",
@@ -117,11 +158,11 @@ class AccountAnalyticLine(models.Model):
         for line in self:
             if line.unit_amount:
                 raise UserError(
-                    _(
+                    self.env._(
                         "Cannot stop timer %d because it is not running. "
-                        "Refresh the page and check again."
+                        "Refresh the page and check again.",
+                        line.id,
                     )
-                    % line.id
                 )
             line.unit_amount = line._duration(line.date_time, end)
         return True

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-16 08:14+0000\n"
-"PO-Revision-Date: 2025-12-09 16:25+0000\n"
+"PO-Revision-Date: 2025-12-10 15:43+0000\n"
 "Last-Translator: Ricard <ricard.calvo@forgeflow.com>\n"
 "Language-Team: Catalan (https://www.transifex.com/oca/teams/23907/ca/)\n"
 "Language: ca\n"
@@ -53,7 +53,7 @@ msgstr "91 - 120 d."
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "<b>Taxes summary</b>"
-msgstr "<B>Resum d'impostos</b>"
+msgstr "<b>Resum d'impostos</b>"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
@@ -339,7 +339,7 @@ msgstr "Moneda de l'import"
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
 msgid "Amount cur."
-msgstr "Import actual"
+msgstr "Import actual."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_move_line__analytic_account_ids
