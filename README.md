@@ -60,16 +60,16 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ef14a91c6380b7658f3deb8162bc400fe4bbcb5a
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 3 07:36:05 2025 +0000
+commit 5b761daff8d2b5dfed2706bbddcf3268cfa4376e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 11 08:03:15 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 92.8% (156 of 168 strings)
     
     Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -1084,16 +1084,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7933fcc7e449de5422eefc01455d288c3d231deb
+commit e7f92b54dfc520f37d1d519876455f1a0f070a27
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:59:30 2025 +0000
+Date:   Thu Dec 11 08:03:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 80.3% (123 of 153 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_location_lockdown
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_location_lockdown/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
 
 
 ## stock-logistics-reporting
@@ -1527,16 +1527,14 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 569b9a2e5e7e5f1d6c3008b3ba307007c30b1b74
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:40:41 2025 +0000
+commit 40d8d26f90d8e1620fc096bc6b2bc4b05ac2927e
+Merge: 569b9a2 0d75fbf
+Author: Serpent Consulting Services Pvt. Ltd. <jay.vora@serpentcs.com>
+Date:   Fri Dec 12 10:47:47 2025 +0530
 
-    Translated using Weblate (Italian)
+    Merge pull request #223 from cetmix/15.0-t4808-vertical-hotel-add-web_icon
     
-    Currently translated at 100.0% (167 of 167 strings)
-    
-    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel_reservation
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel_reservation/it/
+    [15.0][IMP] hotel: add web_icon to the Hotel Management menu
 
 
 ## vertical-isp
