@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data noupdate="1">
+    <record id="rma.rma_operation_return" model="rma.operation">
+        <field name="action_create_repair">automatic_on_confirm</field>
+    </record>
+</data>

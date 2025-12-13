@@ -3,7 +3,7 @@
 {
     "name": "RMA Repair",
     "summary": "Create a repair order from rma",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.0.2",
     "category": "RMA",
     "website": "https://github.com/OCA/rma",
     "author": "Antoni Marroig, Odoo Community Association (OCA)",
@@ -13,6 +13,7 @@
     "installable": True,
     "depends": ["rma_lot", "repair"],
     "data": [
+        "data/rma_operation_data.xml",
         "views/rma_operation.xml",
         "views/rma_views.xml",
         "views/repair_views.xml",

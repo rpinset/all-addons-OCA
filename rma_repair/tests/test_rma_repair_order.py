@@ -1,10 +1,12 @@
 # Copyright 2024 Antoni Marroig(APSL-Nagarro)<amarroig@apsl.net>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests import Form
+
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class RMARepairOrderTest(TransactionCase):
+class RMARepairOrderTest(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -14,6 +16,7 @@ class RMARepairOrderTest(TransactionCase):
         cls.rma_loc = cls.warehouse_company.rma_loc_id
         cls.res_partner = cls.env["res.partner"].create({"name": "Test"})
         cls.operation = cls.env.ref("rma.rma_operation_return")
+        cls.operation.action_create_repair = False
         cls.action_create_repair = "manual_after_receipt"
         cls.rma = cls.env["rma"].create(
             {

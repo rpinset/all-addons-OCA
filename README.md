@@ -177,16 +177,11 @@ Date:   Fri Oct 31 08:41:51 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit ae4d43ec36e293dec228565d94dd5e47a9c23f8e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 10 09:30:15 2025 +0000
+commit ed37609986557e9833995fac3ff41c200cdb25b1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 12 12:22:44 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: account-reconcile-17.0/account-reconcile-17.0-account_reconcile_model_oca
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-17-0/account-reconcile-17-0-account_reconcile_model_oca/it/
+    [BOT] post-merge updates
 
 
 ## bank-statement-import
@@ -493,11 +488,16 @@ Date:   Fri Nov 28 08:31:39 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit eb93c082310d1e5dac6530b34b881aa1cb830893
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 10 09:38:59 2025 +0000
+commit c9567a4deb15055618c2bb5516fa0d4df6fee320
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 11 07:40:14 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (135 of 135 strings)
+    
+    Translation: edi-17.0/edi-17.0-base_import_pdf_by_template
+    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_import_pdf_by_template/it/
 
 
 ## field-service
@@ -964,16 +964,11 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 79427a7f9d61d984c1698e560091fb040302618c
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Dec 8 16:57:30 2025 +0000
+commit 465965a147f26dc23bc164f14ac11e0e45b5679e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 12 16:20:26 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_verifactu_oca
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_verifactu_oca/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1128,9 +1123,9 @@ Date:   Mon Nov 24 08:43:01 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit ccf243f3e0721949217737e22363ce915a9cac17
+commit 932385769ae40fcd86b3b730a0a6a0e36742890c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 3 11:50:23 2025 +0000
+Date:   Fri Dec 12 12:43:02 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1279,16 +1274,16 @@ Date:   Sun Feb 2 20:17:46 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 3ee32fb009b3f94709427f8cb40c0d6520e3c7c0
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Dec 9 14:59:00 2025 +0000
+commit 632605a977048c31fa0712b1f7cea0d35a610bd1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 10 09:38:11 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (4 of 4 strings)
     
     Translation: project-17.0/project-17.0-project_task_note
-    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_task_note/
+    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_task_note/it/
 
 
 ## project-agile
@@ -1347,16 +1342,11 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit a0f6d7930a6d9b2e3326213f03813fef7ce54b4e
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 26 00:51:47 2025 +0000
+commit a31362fbd9cb933382c46eacb3c44e11ae89e2e4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 13 13:50:57 2025 +0000
 
-    Translated using Weblate (Japanese)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: social-17.0/social-17.0-mail_send_confirmation
-    Translate-URL: https://translation.odoo-community.org/projects/social-17-0/social-17-0-mail_send_confirmation/ja/
+    [BOT] post-merge updates
 
 
 ## storage
@@ -1531,11 +1521,16 @@ Date:   Mon Oct 27 08:45:02 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 6aa9e9a103cf386db9d287115939467bc485692a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 9 12:16:39 2025 +0000
+commit 09b1def040468b4eb706fdcb0a416756038a5e1e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 10 09:36:59 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: rest-framework-17.0/rest-framework-17.0-fastapi_auth_api_key
+    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-17-0/rest-framework-17-0-fastapi_auth_api_key/it/
 
 
 ## role-policy
