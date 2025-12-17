@@ -39,16 +39,16 @@ Date:   Sun Feb 2 17:51:50 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 5b43c196c8c1db760f4c32cbcfba3c16dc09565d
+commit 0d7ce055feef972a55d545479f3d0639854586f8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:00:57 2025 +0000
+Date:   Mon Dec 15 14:45:24 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (84 of 84 strings)
+    Currently translated at 100.0% (180 of 180 strings)
     
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_check_deposit
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_check_deposit/it/
+    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -488,13 +488,13 @@ Date:   Fri Nov 28 08:31:39 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit c9567a4deb15055618c2bb5516fa0d4df6fee320
+commit bf87b17163e6cba5b2af332042f99fa6c3b6dc4a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 11 07:40:14 2025 +0000
+Date:   Tue Dec 16 09:40:58 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (135 of 135 strings)
+    Currently translated at 100.0% (136 of 136 strings)
     
     Translation: edi-17.0/edi-17.0-base_import_pdf_by_template
     Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_import_pdf_by_template/it/
@@ -502,16 +502,16 @@ Date:   Thu Dec 11 07:40:14 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 668fb550bd1435e1b3110f9745531188c83789ec
+commit 32cbc662d5916610f07d26537d9b173a82bd5f2e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 3 09:39:14 2025 +0000
+Date:   Tue Dec 16 09:39:53 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (621 of 621 strings)
     
-    Translation: field-service-17.0/field-service-17.0-fieldservice_base_location
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_base_location/it/
+    Translation: field-service-17.0/field-service-17.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -964,9 +964,9 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 465965a147f26dc23bc164f14ac11e0e45b5679e
+commit 393a220daebf4090131f7b4464a393111a51eded
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 12 16:20:26 2025 +0000
+Date:   Wed Dec 17 18:52:43 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1054,16 +1054,11 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 171b0777c1613d7508b1077bcb599f5404f229da
-Author: DantePereyra <dante.pereyra@ciclosmontecastelo.com>
-Date:   Wed Nov 12 12:27:29 2025 +0000
+commit 9afa9f72c151ed35900ea282bdcb36442a88c615
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 15 13:27:01 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (14 of 14 strings)
-    
-    Translation: delivery-carrier-17.0/delivery-carrier-17.0-delivery_auto_refresh
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-17-0/delivery-carrier-17-0-delivery_auto_refresh/es/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1342,11 +1337,11 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit a31362fbd9cb933382c46eacb3c44e11ae89e2e4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 13 13:50:57 2025 +0000
+commit 46129e8fa7dd26ab7969992c58a15e05c6419e24
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 14 18:53:37 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## storage

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-11 09:42+0000\n"
+"PO-Revision-Date: 2025-12-16 11:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -416,6 +416,11 @@ msgstr ""
 "        nei documenti solo per questo modello."
 
 #. module: base_import_pdf_by_template
+#: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template_line_mapped__json_value
+msgid "Json Value"
+msgstr "Valore JSON"
+
+#. module: base_import_pdf_by_template
 #: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template__write_uid
 #: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template_line__write_uid
 #: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template_line_mapped__write_uid
@@ -703,6 +708,7 @@ msgstr "Carica file"
 
 #. module: base_import_pdf_by_template
 #: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template_line_mapped__value
+#: model_terms:ir.ui.view,arch_db:base_import_pdf_by_template.base_import_pdf_template_line_view_form
 msgid "Value"
 msgstr "Valore"
 
