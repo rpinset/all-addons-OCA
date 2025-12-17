@@ -32,6 +32,24 @@ msgstr ""
 #. module: crm_phonecall
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
 msgid ""
+"<span class=\"o_form_label o_td_label o_address_type\" "
+"name=\"address_name\">\n"
+"                                <span>Address</span>\n"
+"                            </span>"
+msgstr ""
+
+#. module: crm_phonecall
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.phonecall_to_phonecall_view
+msgid ""
+"<span class=\"o_form_label o_td_label o_address_type\" "
+"name=\"address_name\">\n"
+"                            <span>Address</span>\n"
+"                        </span>"
+msgstr ""
+
+#. module: crm_phonecall
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
+msgid ""
 "<span>\n"
 "                                Convert\n"
 "                                <br/>\n"
@@ -148,6 +166,14 @@ msgstr "Geannuleerd"
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
 msgstr "Categorieën"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "City"
+msgstr ""
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -789,6 +815,9 @@ msgid "Source"
 msgstr ""
 
 #. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_state
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 #, fuzzy
 msgid "State"
@@ -885,6 +914,14 @@ msgstr ""
 msgid ""
 "You can use the import feature to massively import a new list of\n"
 "            prospects to qualify."
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_zip
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "ZIP"
 msgstr ""
 
 #~ msgid "Last Modified on"

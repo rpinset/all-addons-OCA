@@ -18,9 +18,9 @@ msgstr ""
 
 #. module: report_pdf_zip_download
 #: model:ir.model.fields,help:report_pdf_zip_download.field_ir_actions_report__zip_download
+#: model:ir.model.fields,help:report_pdf_zip_download.field_report_pdf_form__zip_download
 msgid ""
-"If enabled, the report will be downloaded as a zip file for multiple "
-"records."
+"If enabled, the report will be downloaded as a zip file for multiple records."
 msgstr ""
 "Se abilitata, il resoconto verrà scaricato come file ZIP per record multipli."
 
@@ -31,5 +31,6 @@ msgstr "Azione resoconto"
 
 #. module: report_pdf_zip_download
 #: model:ir.model.fields,field_description:report_pdf_zip_download.field_ir_actions_report__zip_download
+#: model:ir.model.fields,field_description:report_pdf_zip_download.field_report_pdf_form__zip_download
 msgid "Zip Download"
 msgstr "Scarica ZIP"

@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2016-09-18 04:34+0000\n"
 "PO-Revision-Date: 2024-06-12 08:56+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
-"Language-Team: Swedish (http://www.transifex.com/oca/"
-"OCA-reporting-engine-8-0/language/sv/)\n"
+"Language-Team: Swedish (http://www.transifex.com/oca/OCA-reporting-"
+"engine-8-0/language/sv/)\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,6 +26,7 @@ msgstr "Sammanfattning XML-rapport"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_declaration
 msgid ""
 "Add `<?xml encoding=\"...\" version=\"...\"?>` at the start of final report "
 "file."
@@ -40,17 +41,20 @@ msgstr "Demo xml-rapport"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_encoding
 msgid ""
 "Encoding for XML reports. If nothing is selected, then UTF-8 will be applied."
 msgstr "Kodning för XML-rapporter. Om inget väljs kommer UTF-8 att användas."
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_extension
 msgid "Extension for XML Reports, by default is `xml`"
 msgstr "Tillägg för XML-rapporter, standard är `xml`"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xsd_schema
 msgid ""
 "File with XSD Schema for checking content of result report. Can be empty if "
 "validation is not required."
@@ -65,11 +69,13 @@ msgstr "Rapportera åtgärd"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__report_type
 msgid "Report Type"
 msgstr "Rapporttyp"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__report_type
 msgid ""
 "The type of the report that will be rendered, each one having its own "
 "rendering method. HTML means the report will be opened directly in your "
@@ -93,11 +99,13 @@ msgstr "XML"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_declaration
 msgid "XML Declaration"
 msgstr "XML-deklaration"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_encoding
 msgid "XML Encoding"
 msgstr "XML-kodning"
 
@@ -108,11 +116,13 @@ msgstr "Inställningar för XML-rapport"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xsd_schema
 msgid "XSD Validation Schema"
 msgstr "Schema för XSD-validering"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_extension
 msgid "Xml Extension"
 msgstr "Xml-tillägg"
 

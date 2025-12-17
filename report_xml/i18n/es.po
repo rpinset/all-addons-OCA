@@ -27,6 +27,7 @@ msgstr "Informe XML Abstracto"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_declaration
 msgid ""
 "Add `<?xml encoding=\"...\" version=\"...\"?>` at the start of final report "
 "file."
@@ -41,6 +42,7 @@ msgstr "Informe XML de demostración"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_encoding
 msgid ""
 "Encoding for XML reports. If nothing is selected, then UTF-8 will be applied."
 msgstr ""
@@ -49,11 +51,13 @@ msgstr ""
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_extension
 msgid "Extension for XML Reports, by default is `xml`"
 msgstr "Extensión para informes XML, por defecto es `xml`"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xsd_schema
 msgid ""
 "File with XSD Schema for checking content of result report. Can be empty if "
 "validation is not required."
@@ -68,11 +72,13 @@ msgstr "Informar Acción"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__report_type
 msgid "Report Type"
 msgstr "Tipo de Informe"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__report_type
 msgid ""
 "The type of the report that will be rendered, each one having its own "
 "rendering method. HTML means the report will be opened directly in your "
@@ -96,11 +102,13 @@ msgstr "XML"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_declaration
 msgid "XML Declaration"
 msgstr "Declaración XML"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_encoding
 msgid "XML Encoding"
 msgstr "Codificación XML"
 
@@ -111,11 +119,13 @@ msgstr "Configuración de Informes XML"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xsd_schema
 msgid "XSD Validation Schema"
 msgstr "Esquema de Validación XSD"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_extension
 msgid "Xml Extension"
 msgstr "Extensión Xml"
 

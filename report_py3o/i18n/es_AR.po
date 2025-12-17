@@ -23,7 +23,6 @@ msgstr ""
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/ir_actions_report.py:0
-#, python-format
 msgid "(Native)"
 msgstr "(Nativo)"
 
@@ -47,13 +46,13 @@ msgstr "Mostrar Nombre"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_template_fallback
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_template_fallback
 msgid "Fallback"
 msgstr "Retroceder"
 
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/ir_actions_report.py:0
-#, python-format
 msgid "Field 'Output Format' is required for Py3O report"
 msgstr "El Campo 'Formato de Salida' es obligatorio para el reporte Py3O"
 
@@ -75,6 +74,7 @@ msgstr "ID"
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__py3o_template_fallback
+#: model:ir.model.fields,help:report_py3o.field_report_pdf_form__py3o_template_fallback
 msgid ""
 "If the user does not provide a template this will be used it should be a "
 "relative path to root of YOUR module or an absolute path on your server."
@@ -84,6 +84,7 @@ msgstr ""
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__py3o_multi_in_one
+#: model:ir.model.fields,help:report_py3o.field_report_pdf_form__py3o_multi_in_one
 msgid ""
 "If you execute a report on several records, by default Odoo will generate a "
 "ZIP file that contains as many files as selected records. If you enable this "
@@ -91,8 +92,8 @@ msgid ""
 msgstr ""
 "Si ejecuta un reporte sobre varios registros, de forma predeterminada Odoo "
 "generar?? un archivo ZIP que contiene tantos archivos como registros "
-"seleccionados. Si habilita esta opci??n, Odoo generar?? en su lugar un reporte "
-"??nico para los registros seleccionados."
+"seleccionados. Si habilita esta opci??n, Odoo generar?? en su lugar un "
+"reporte ??nico para los registros seleccionados."
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__ir_actions_report_id
@@ -101,19 +102,15 @@ msgstr "Acciones de Reporte IR"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__is_py3o_native_format
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__is_py3o_native_format
 msgid "Is Py3O Native Format"
 msgstr "Es Formato Py3O Nativo"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__is_py3o_report_not_available
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__is_py3o_report_not_available
 msgid "Is Py3O Report Not Available"
 msgstr "El Reporte Py3O no est?? Habilitado"
-
-#. module: report_py3o
-#: model:ir.model.fields,field_description:report_py3o.field_py3o_report____last_update
-#: model:ir.model.fields,field_description:report_py3o.field_py3o_template____last_update
-msgid "Last Modified on"
-msgstr "??ltima modificaci??n en"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__write_uid
@@ -141,23 +138,26 @@ msgstr "Tipo de Archivo de la Plantilla de LibreOffice"
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/py3o_report.py:0
-#, python-format
 msgid "Libreoffice runtime not available. Please contact your administrator."
 msgstr ""
-"El ejecutable de LibreOffice no est?? disponible. Contacte a su administrador."
+"El ejecutable de LibreOffice no est?? disponible. Contacte a su "
+"administrador."
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__module
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__module
 msgid "Module"
 msgstr "M??dulo"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__msg_py3o_report_not_available
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__msg_py3o_report_not_available
 msgid "Msg Py3O Report Not Available"
 msgstr "Mensaje del Reporte Py3O no est?? Disponible"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_multi_in_one
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_multi_in_one
 msgid "Multiple Records in a Single Report"
 msgstr "M??ltiples Registros en un Reporte Simple"
 
@@ -169,7 +169,6 @@ msgstr "Nombre"
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/py3o_report.py:0
-#, python-format
 msgid "No template found. Aborting."
 msgstr "No se encontr?? plantilla. Abortando."
 
@@ -205,11 +204,13 @@ msgstr "Documento de Texto ODF (Plano)"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_filetype
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_filetype
 msgid "Output Format"
 msgstr "Formato de Salida"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__lo_bin_path
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__lo_bin_path
 msgid "Path to the libreoffice runtime"
 msgstr "Ruta al ejecutable de libreoffice"
 
@@ -246,23 +247,25 @@ msgstr "Reporte Py30"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__report_type
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__report_type
 msgid "Report Type"
 msgstr "Tipo de Reporte"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_template_id
+#: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_template_id
 msgid "Template"
 msgstr "Plantilla"
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__module
+#: model:ir.model.fields,help:report_py3o.field_report_pdf_form__module
 msgid "The implementer module that provides this report"
 msgstr "El m??dulo implementador que proporciona este reporte"
 
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/ir_actions_report.py:0
-#, python-format
 msgid ""
 "The libreoffice runtime is required to genereate the py3o report '%s' but is "
 "not found into the bin path. You must install the libreoffice runtime on the "
@@ -279,6 +282,7 @@ msgstr ""
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__report_type
+#: model:ir.model.fields,help:report_py3o.field_report_pdf_form__report_type
 msgid ""
 "The type of the report that will be rendered, each one having its own "
 "rendering method. HTML means the report will be opened directly in your "
@@ -287,8 +291,8 @@ msgid ""
 msgstr ""
 "El tipo de reporte que se generar??, cada uno con su propio m??todo de "
 "presentaci??n. HTML significa que el informe se abrir?? directamente en su "
-"navegador. PDF significa que el informe se generar?? utilizando Wkhtmltopdf y "
-"el usuario lo descargar??."
+"navegador. PDF significa que el informe se generar?? utilizando Wkhtmltopdf "
+"y el usuario lo descargar??."
 
 #. module: report_py3o
 #: model:ir.actions.report,print_report_name:report_py3o.res_users_report_py3o
@@ -299,3 +303,6 @@ msgstr "object.name.replace(' ', '_') + '-demo.odt'"
 #: model:ir.model.fields.selection,name:report_py3o.selection__ir_actions_report__report_type__py3o
 msgid "py3o"
 msgstr "py3o"
+
+#~ msgid "Last Modified on"
+#~ msgstr "??ltima modificaci??n en"

@@ -26,6 +26,7 @@ msgstr "Soyut XML Raporu"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_declaration
 msgid ""
 "Add `<?xml encoding=\"...\" version=\"...\"?>` at the start of final report "
 "file."
@@ -40,17 +41,21 @@ msgstr "Demo xml raporu"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_encoding
 msgid ""
 "Encoding for XML reports. If nothing is selected, then UTF-8 will be applied."
-msgstr "XML raporları için kodlama. Hiçbir şey seçilmezse UTF-8 uygulanacaktır."
+msgstr ""
+"XML raporları için kodlama. Hiçbir şey seçilmezse UTF-8 uygulanacaktır."
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xml_extension
 msgid "Extension for XML Reports, by default is `xml`"
 msgstr "XML Raporları için varsayılan uzantı 'xml' şeklindedir"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__xsd_schema
 msgid ""
 "File with XSD Schema for checking content of result report. Can be empty if "
 "validation is not required."
@@ -65,11 +70,13 @@ msgstr "Rapor Eylemi"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__report_type
 msgid "Report Type"
 msgstr "Rapor Tipi"
 
 #. module: report_xml
 #: model:ir.model.fields,help:report_xml.field_ir_actions_report__report_type
+#: model:ir.model.fields,help:report_xml.field_report_pdf_form__report_type
 msgid ""
 "The type of the report that will be rendered, each one having its own "
 "rendering method. HTML means the report will be opened directly in your "
@@ -93,11 +100,13 @@ msgstr "XML"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_declaration
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_declaration
 msgid "XML Declaration"
 msgstr "XML Bildirimi"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_encoding
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_encoding
 msgid "XML Encoding"
 msgstr "XML Kodlama"
 
@@ -108,11 +117,13 @@ msgstr "XML Rapor Ayarları"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xsd_schema
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xsd_schema
 msgid "XSD Validation Schema"
 msgstr "XSD Doğrulama Şeması"
 
 #. module: report_xml
 #: model:ir.model.fields,field_description:report_xml.field_ir_actions_report__xml_extension
+#: model:ir.model.fields,field_description:report_xml.field_report_pdf_form__xml_extension
 msgid "Xml Extension"
 msgstr "XML Uzantısı"
 

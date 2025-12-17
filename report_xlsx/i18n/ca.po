@@ -38,11 +38,13 @@ msgstr "Informe d'acció"
 
 #. module: report_xlsx
 #: model:ir.model.fields,field_description:report_xlsx.field_ir_actions_report__report_type
+#: model:ir.model.fields,field_description:report_xlsx.field_report_pdf_form__report_type
 msgid "Report Type"
 msgstr "Tipus d'informe"
 
 #. module: report_xlsx
 #: model:ir.model.fields,help:report_xlsx.field_ir_actions_report__report_type
+#: model:ir.model.fields,help:report_xlsx.field_report_pdf_form__report_type
 msgid ""
 "The type of the report that will be rendered, each one having its own "
 "rendering method. HTML means the report will be opened directly in your "
