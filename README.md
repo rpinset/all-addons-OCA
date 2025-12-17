@@ -80,16 +80,16 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 9f74f7dbdbd3470f35df8d32379a6996639bb951
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Oct 6 14:14:47 2025 +0000
+commit a678604ace95978885e3b40e413a39b72a103f9d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 15 14:45:15 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 100.0% (171 of 171 strings)
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_journal_lock_date
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_journal_lock_date/it/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_loan/it/
 
 
 ## account-financial-reporting
