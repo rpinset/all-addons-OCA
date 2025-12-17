@@ -40,11 +40,7 @@ class MrpProduction(models.Model):
             qc_trigger = self.env.ref("quality_control_mrp_oca.qc_trigger_mrp")
         for move in new_done_moves:
             trigger_lines = set()
-            for model in [
-                "qc.trigger.product_category_line",
-                "qc.trigger.product_template_line",
-                "qc.trigger.product_line",
-            ]:
+            for model in self.env["qc.trigger.line"].get_trigger_line_models():
                 trigger_lines = trigger_lines.union(
                     self.env[model].get_trigger_line_for_product(
                         qc_trigger, ["after"], move.product_id

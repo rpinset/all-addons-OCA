@@ -65,3 +65,14 @@ class QcTriggerLine(models.AbstractModel):
         trigger.
         """
         return set()
+
+    def get_trigger_line_models(self):
+        """Overridable method for getting trigger_line models.
+        Each inherited model will complete this module to add the model to
+        the list returned so that it can be parsed each time a trigger is run.
+        """
+        return [
+            "qc.trigger.product_category_line",
+            "qc.trigger.product_template_line",
+            "qc.trigger.product_line",
+        ]

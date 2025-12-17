@@ -43,11 +43,7 @@ class StockMove(models.Model):
                 partner = partner or self._get_partner_for_trigger_line()
             else:
                 partner = False
-            for model in [
-                "qc.trigger.product_category_line",
-                "qc.trigger.product_template_line",
-                "qc.trigger.product_line",
-            ]:
+            for model in self.env["qc.trigger.line"].get_trigger_line_models():
                 trigger_lines = trigger_lines.union(
                     self.env[model]
                     .sudo()
