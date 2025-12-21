@@ -1,21 +1,23 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* crm_phonecall
+# * crm_phonecall
 #
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-29 14:40+0000\n"
-"PO-Revision-Date: 2025-07-29 16:42+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2017-12-04 15:47+0000\n"
+"PO-Revision-Date: 2025-09-15 16:42+0000\n"
+"Last-Translator: Javier Iza Ca <javier.izaguirre@sygel.es>\n"
+"Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__nbr_cases
@@ -26,32 +28,6 @@ msgstr "# de casos"
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
 msgid "<b>min(s)</b>"
 msgstr "<b> minuto(s)</b>"
-
-#. module: crm_phonecall
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
-msgid ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\n"
-"                                <span>Address</span>\n"
-"                            </span>"
-msgstr ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\r\n"
-"                                <span>Dirección</span>\r\n"
-"                            </span>"
-
-#. module: crm_phonecall
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.phonecall_to_phonecall_view
-msgid ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\n"
-"                            <span>Address</span>\n"
-"                        </span>"
-msgstr ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\r\n"
-"                            <span>Dirección</span>\r\n"
-"                        </span>"
 
 #. module: crm_phonecall
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
@@ -190,14 +166,6 @@ msgstr "Cancelada"
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
 msgstr "Categorias"
-
-#. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_city
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
-msgid "City"
-msgstr "Ciudad"
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -842,12 +810,9 @@ msgid "Source"
 msgstr "Origen"
 
 #. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_state
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
-msgstr "Provincia"
+msgstr "Estado"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__state
@@ -953,10 +918,65 @@ msgstr ""
 "Puede usar la característica de importación para importar\n"
 "            masivamente una nueva lista de prospectos a calificar."
 
-#. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_zip
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
-msgid "ZIP"
-msgstr "C.P."
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de entrega de SMS"
+
+#~ msgid ""
+#~ "By default form view is disabled for calls, with this\n"
+#~ "                                setting it is enabled for all users."
+#~ msgstr ""
+#~ "Por defecto la vista de formulario está deshabilitada para llamadas, con "
+#~ "esto\n"
+#~ "                                configurarlo está habilitado para todos "
+#~ "los usuarios."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última modificación el"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Adjunto principal"
+
+#~ msgid "<b> min(s)</b>"
+#~ msgstr "<b> minuto(s)</b>"
+
+#~ msgid "<span>Convert<br/>To Opportunity</span>"
+#~ msgstr "<span>Convertir<br/>en oportunidad</span>"
+
+#~ msgid "<span>Schedule<br/>A Meeting</span>"
+#~ msgstr "<span>Planificar<br/>una reunión</span>"
+
+#~ msgid "<span>Schedule<br/>Other Call</span>"
+#~ msgstr "<span>Planificar<br/>otra llamada</span>"
+
+#~ msgid "By Sales Team"
+#~ msgstr "Por equipo de ventas"
+
+#~ msgid "Delay To Close"
+#~ msgstr "Tiempo restante para el cierre"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Seguidores (Canales)"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Número de mensajes que requieren una acción"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Número de mensajes sin leer"
+
+#~ msgid "Phone Calls To Do"
+#~ msgstr "Llamadas por hacer"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Mensajes sin leer"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Contador de mensajes sin leer"
+
+#~ msgid "New Mail"
+#~ msgstr "Nuevo correo"
+
+#~ msgid "Event"
+#~ msgstr "Evento"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "Si está marcado, nuevos mensajes requieren su atención."

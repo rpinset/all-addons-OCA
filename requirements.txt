@@ -84,6 +84,8 @@ regex
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
+# generated from manifests external_dependencies
+validator-collection
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 # generated from manifests external_dependencies
 geojson

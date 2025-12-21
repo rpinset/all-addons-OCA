@@ -1,21 +1,23 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* crm_phonecall
+# * crm_phonecall
 #
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-29 14:44+0000\n"
-"PO-Revision-Date: 2025-07-29 16:46+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ca_ES\n"
+"POT-Creation-Date: 2017-06-01 02:38+0000\n"
+"PO-Revision-Date: 2022-10-01 00:07+0000\n"
+"Last-Translator: pere-aquarian <pere@aquarian.tech>\n"
+"Language-Team: Catalan (https://www.transifex.com/oca/teams/23907/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__nbr_cases
@@ -26,32 +28,6 @@ msgstr "# de casos"
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
 msgid "<b>min(s)</b>"
 msgstr ""
-
-#. module: crm_phonecall
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
-msgid ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\n"
-"                                <span>Address</span>\n"
-"                            </span>"
-msgstr ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\r\n"
-"                                <span>Direcció</span>\r\n"
-"                            </span>"
-
-#. module: crm_phonecall
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.phonecall_to_phonecall_view
-msgid ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\n"
-"                            <span>Address</span>\n"
-"                        </span>"
-msgstr ""
-"<span class=\"o_form_label o_td_label o_address_type\" "
-"name=\"address_name\">\r\n"
-"                            <span>Direcció</span>\r\n"
-"                        </span>"
 
 #. module: crm_phonecall
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
@@ -174,15 +150,7 @@ msgstr "Cencel·lada"
 #. module: crm_phonecall
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
-msgstr ""
-
-#. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_city
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
-msgid "City"
-msgstr "Ciutat"
+msgstr "Categories"
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -457,7 +425,7 @@ msgstr "Darrera Actualització el"
 #: model:ir.model,name:crm_phonecall.model_crm_lead
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__opportunity_id
 msgid "Lead/Opportunity"
-msgstr "Iniciativa/Oportunitat"
+msgstr "Iniciativa/oportunitat"
 
 #. module: crm_phonecall
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.phonecall_to_phonecall_view
@@ -831,12 +799,9 @@ msgid "Source"
 msgstr "Origen"
 
 #. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_state
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
-msgstr "Província"
+msgstr "Estat"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__state
@@ -941,10 +906,47 @@ msgstr ""
 "nova de\n"
 "             prospectes per qualificar."
 
-#. module: crm_phonecall
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__partner_zip
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
-#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
-#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
-msgid "ZIP"
-msgstr "C.P."
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error d'entrega SMS"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Darrera modificació el"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Annexe principal"
+
+#~ msgid "<b> min(s)</b>"
+#~ msgstr "<b> min(s)</b>"
+
+#~ msgid "<span>Convert<br/>To Opportunity</span>"
+#~ msgstr "<span>Convertir<br/>a oportunitat</span>"
+
+#~ msgid "<span>Schedule<br/>A Meeting</span>"
+#~ msgstr "<span>Planificar<br/>una reunió</span>"
+
+#~ msgid "<span>Schedule<br/>Other Call</span>"
+#~ msgstr "<span>Planificar<br/>una altra trucada</span>"
+
+#~ msgid "By Sales Team"
+#~ msgstr "Per equip de treball"
+
+#~ msgid "Delay To Close"
+#~ msgstr "Retard per tancar"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Seguidors/res (Canals)"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Nombre de missatges que requereixen una acció"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Nombre de missatges no llegits"
+
+#~ msgid "Phone Calls To Do"
+#~ msgstr "Trucades per a fer"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Missatges no llegits"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Comptador de missatges no llegits"
