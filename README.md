@@ -177,9 +177,9 @@ Date:   Fri Oct 31 08:41:51 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit ed37609986557e9833995fac3ff41c200cdb25b1
+commit 3315f46fc579622bbf8fb6fe1a1bc6d7c79281a9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 12 12:22:44 2025 +0000
+Date:   Sun Dec 21 18:10:04 2025 +0000
 
     [BOT] post-merge updates
 
@@ -335,16 +335,11 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 54febe75974db178dc1e4b839cbc76fd632311bb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:55 2025 +0000
+commit 04d5c843cccf3aee57e0f2c1f40d73baeb09a4e4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Dec 21 18:19:19 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: sale-workflow-17.0/sale-workflow-17.0-product_supplierinfo_for_customer_sale
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-product_supplierinfo_for_customer_sale/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -446,16 +441,16 @@ Date:   Tue Nov 11 09:44:31 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 6a0d0ed668895b6b5ad97ceb22dce6d3508d7ce6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:42:16 2025 +0000
+commit 0480bc895a7c8eb2fc8f17b8a67db82638c2abd2
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Dec 19 08:57:35 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (97 of 97 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: knowledge-17.0/knowledge-17.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-17-0/knowledge-17-0-document_page/it/
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-17-0/knowledge-17-0-document_page/
 
 
 ## dms
@@ -779,11 +774,14 @@ Date:   Fri Aug 22 22:37:45 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 672de5db09b543e746224d40464ffe20bb3a6755
+commit 7961041b98497328df40048526bb29b320acb477
+Merge: 672de5db e59d235f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 10 10:42:11 2025 +0000
+Date:   Fri Dec 19 13:08:50 2025 +0000
 
-    [BOT] post-merge updates
+    Merge PR #713 into 17.0
+    
+    Signed-off-by alexis-via
 
 
 ## l10n-germany
@@ -937,9 +935,9 @@ Date:   Sun Feb 2 19:35:19 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit b4d59920cd9e3cbe8dbc2ecfcb15de56c4b11946
+commit 6d5d0ce099f94273dd6efbe1932429376a010e8f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 3 12:58:43 2025 +0000
+Date:   Thu Dec 18 18:38:22 2025 +0000
 
     [BOT] post-merge updates
 
@@ -964,9 +962,9 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 393a220daebf4090131f7b4464a393111a51eded
+commit bbfe643b70dbea7c0678cdd530eedf0bc97e355f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 17 18:52:43 2025 +0000
+Date:   Fri Dec 19 08:35:12 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1196,16 +1194,11 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 4973c3ef417c9cd9ff7938d998383ece088302a5
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Nov 28 14:12:06 2025 +0000
+commit 30e778371f46f299283369cf5dd9ee9f7cfa0fc7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 19 11:30:57 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (69 of 69 strings)
-    
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_manual_delivery/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1269,16 +1262,16 @@ Date:   Sun Feb 2 20:17:46 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 632605a977048c31fa0712b1f7cea0d35a610bd1
+commit 184eba7d367cf774e65c9ef7eebcceb186b7aed7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 10 09:38:11 2025 +0000
+Date:   Sat Dec 20 07:41:04 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: project-17.0/project-17.0-project_task_note
-    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_task_note/it/
+    Translation: project-17.0/project-17.0-project_analytic_code
+    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_analytic_code/it/
 
 
 ## project-agile
@@ -1337,11 +1330,16 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 46129e8fa7dd26ab7969992c58a15e05c6419e24
+commit 1adc2ac233a38bd3b429f981e75609f3558e7cfa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 14 18:53:37 2025 +0000
+Date:   Thu Dec 18 07:20:52 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: social-17.0/social-17.0-mail_history_mark_unread
+    Translate-URL: https://translation.odoo-community.org/projects/social-17-0/social-17-0-mail_history_mark_unread/it/
 
 
 ## storage
