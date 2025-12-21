@@ -578,16 +578,11 @@ Date:   Fri Mar 14 16:55:29 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 00abdda668574125c2fce253b39fe760f649bc4a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:45:32 2025 +0000
+commit 02b359aa603e58534776502888b8f5c388f68891
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 20 08:54:34 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (101 of 101 strings)
-    
-    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_advance_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_advance_overdue_reminder/it/
+    [BOT] post-merge updates
 
 
 ## hr-holidays
@@ -763,11 +758,14 @@ Date:   Sun Feb 2 19:18:17 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 2aacedc85746e458d16fcf72de6838db8921d349
+commit a54747e4c0bb0a4821fc5e8d03ea930209b10bcb
+Merge: 2aacedc8 95f104ac
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:03:07 2025 +0000
+Date:   Fri Dec 19 17:54:04 2025 +0000
 
-    [UPD] addons table in README.md
+    Merge PR #715 into 15.0
+    
+    Signed-off-by alexis-via
 
 
 ## l10n-germany
@@ -1084,16 +1082,11 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit e7f92b54dfc520f37d1d519876455f1a0f070a27
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 11 08:03:39 2025 +0000
+commit d8e1ad9df199055e451a41fb57af51ed4bab267d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 20 09:08:39 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 80.3% (123 of 153 strings)
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
