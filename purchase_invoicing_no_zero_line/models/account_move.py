@@ -17,10 +17,14 @@ class AccountMove(models.Model):
         purchase = self.purchase_vendor_bill_id.purchase_order_id
         res = super()._onchange_purchase_auto_complete()
         if purchase and self.journal_id and self.journal_id.avoid_zero_lines:
+            precision_digits = self.env["decimal.precision"].precision_get(
+                "Product Unit of Measure"
+            )
+            rounding = 10 ** (-precision_digits)
             zero_lines = self.invoice_line_ids.filtered(
                 lambda x: float_is_zero(
                     x.quantity,
-                    precision_rounding=x.product_uom_id.rounding,
+                    precision_rounding=x.product_uom_id.rounding or rounding,
                 )
                 and x.purchase_line_id.order_id == purchase
             )

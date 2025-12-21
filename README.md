@@ -79,16 +79,16 @@ Date:   Mon Dec 15 14:45:18 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 9017311c2dbbc252c5e2218fb968ab7fb03d99b5
-Author: Peter Romão <peterromao@yahoo.co.uk>
-Date:   Thu Nov 13 13:40:28 2025 +0000
+commit 296633d1f9f567b0febe738fda63eed49eb6c5bd
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Dec 19 14:17:48 2025 +0000
 
-    Translated using Weblate (Portuguese)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (110 of 110 strings)
+    Currently translated at 83.3% (45 of 54 strings)
     
-    Translation: account-financial-reporting-16.0/account-financial-reporting-16.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-16-0/account-financial-reporting-16-0-partner_statement/pt/
+    Translation: account-financial-reporting-16.0/account-financial-reporting-16.0-mis_builder_cash_flow
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-16-0/account-financial-reporting-16-0-mis_builder_cash_flow/tr/
 
 
 ## account-invoice-reporting
@@ -107,9 +107,9 @@ Date:   Mon Nov 17 07:28:27 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 8996e8d507d4c8f795795e6beefb14b2ef77a562
+commit b960b62cb38c11a7e25b2c24fa36f2a95ff79bf2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 17 12:37:10 2025 +0000
+Date:   Fri Dec 19 14:38:21 2025 +0000
 
     [BOT] post-merge updates
 
@@ -125,9 +125,9 @@ Date:   Thu Oct 9 18:35:11 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit c6cd13ed225f81b2f85decf5f3b733e4c5c2b951
+commit dd59492d9e04ec4e642f47fbd50171ee0ffb7cf1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 5 06:53:49 2025 +0000
+Date:   Fri Dec 19 13:55:14 2025 +0000
 
     [BOT] post-merge updates
 
@@ -467,16 +467,16 @@ Date:   Mon Dec 8 13:08:22 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 0357c3f50c0270b1f79d33bf7fcdc851f6c91e58
+commit 00e47df5332f557e126d3985815d3a83991fdf9c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:41:49 2025 +0000
+Date:   Sat Dec 20 07:28:58 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (98 of 98 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: knowledge-16.0/knowledge-16.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-16-0/knowledge-16-0-document_page/it/
+    Translation: knowledge-16.0/knowledge-16.0-document_page_tag_print_control
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-16-0/knowledge-16-0-document_page_tag_print_control/it/
 
 
 ## dms
@@ -790,11 +790,14 @@ Date:   Sun Feb 2 19:18:26 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit f7a4232bdbb0d2032514fba0d52a399ab9dbfec8
+commit 97af87cde40f069421aed21bf892f4ee0ce3b942
+Merge: f7a4232b 54ca49d5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 5 16:47:23 2025 +0000
+Date:   Thu Dec 18 23:58:18 2025 +0000
 
-    [BOT] post-merge updates
+    Merge PR #712 into 16.0
+    
+    Signed-off-by alexis-via
 
 
 ## l10n-germany
@@ -1235,9 +1238,9 @@ Date:   Tue Nov 25 09:13:07 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 232f7ddae500e7e75e0efdf2b9cf313c2bdc0b31
+commit 26a41fa43d828ec44cf8b8067451bf2d0f738546
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 16 16:52:08 2025 +0000
+Date:   Thu Dec 18 19:12:11 2025 +0000
 
     [BOT] post-merge updates
 
