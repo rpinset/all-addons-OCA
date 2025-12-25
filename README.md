@@ -973,9 +973,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit bde0188cb4a7b88707d4221d81740304c32153e3
+commit f6518c4a4f23b466c3290729dfb4c5b8908423f1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 12 11:09:07 2025 +0000
+Date:   Wed Dec 24 04:29:56 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1613,11 +1613,11 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit f69cc80f519dce70d05c2318786bd89449f845ff
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 26 01:31:31 2025 +0000
+commit 8a6efe3899f3ecc417fe58c133362337f5b7ddae
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 22 13:26:12 2025 +0000
 
-    Added translation using Weblate (Japanese)
+    [BOT] post-merge updates
 
 
 ## website
