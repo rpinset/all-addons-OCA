@@ -140,16 +140,11 @@ Date:   Thu Jun 5 02:33:56 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 14e0f2ed413786d22d1544e80cffc9ad498cfefd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 27 14:13:07 2025 +0000
+commit f328a80a555705f0177a774e838cce14458d70ac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 23 07:50:58 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: operating-unit-14.0/operating-unit-14.0-mrp_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-mrp_operating_unit/it/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -432,11 +427,11 @@ Date:   Sun Feb 9 18:27:50 2025 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit 477ede153d6ff791326916339e2729191bc2fcbf
+commit a146666b564ef93aff172f99d3118a5d3db306ad
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:36:12 2025 +0000
+Date:   Wed Dec 24 07:17:21 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## sale-reporting
