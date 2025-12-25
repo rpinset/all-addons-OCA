@@ -371,9 +371,9 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 1ca1f228a659d0d2c5c27047beff02ab99956385
+commit 3ae3688ca4130676c3c3b1b58cf13cb5409009ee
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 16 17:33:54 2025 +0000
+Date:   Mon Dec 22 19:09:56 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1090,16 +1090,11 @@ Date:   Fri Nov 28 07:28:23 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 4abaf5d1666a62e99484b213024d1e363a2d7e77
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:26:05 2025 +0000
+commit 50f05ef68e53c421aa1c6058e11eb5ba373c3dcc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 23 16:30:00 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: stock-logistics-barcode-16.0/stock-logistics-barcode-16.0-stock_picking_product_barcode_report_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-16-0/stock-logistics-barcode-16-0-stock_picking_product_barcode_report_secondary_unit/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
@@ -1210,16 +1205,11 @@ Date:   Tue Jun 24 06:42:02 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit b4d54c5257ea64f8dd071fbaf2d1fe85cb4467f7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:46:32 2025 +0000
+commit 6f0b08854df2896ff01f7580e8829ff62ddffa02
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 22 14:25:34 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: management-system-16.0/management-system-16.0-mgmtsystem_nonconformity_type
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-16-0/management-system-16-0-mgmtsystem_nonconformity_type/it/
+    [BOT] post-merge updates
 
 
 ## pms
@@ -1261,9 +1251,9 @@ Date:   Wed Dec 10 09:35:26 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit fd01f792289674efaad047d748470abe5899514a
+commit 8a2d6d707b0a8418d1f3739ddac20e327a73eeb7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 11 09:56:19 2025 +0000
+Date:   Mon Dec 22 10:14:45 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1311,16 +1301,11 @@ Date:   Sun Feb 2 20:17:38 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 09dc39bf57ae66550954ecc257e18f4bfc3870a7
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Thu Dec 11 08:55:28 2025 +0000
+commit c85689e16f1d9899970c9283a805040dab165ad7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 22 17:20:29 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 36.1% (26 of 72 strings)
-    
-    Translation: project-16.0/project-16.0-project_role
-    Translate-URL: https://translation.odoo-community.org/projects/project-16-0/project-16-0-project_role/tr/
+    [BOT] post-merge updates
 
 
 ## project-agile
@@ -1421,11 +1406,11 @@ Date:   Tue Sep 16 11:49:19 2025 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 5ec728e6f5507c3e01e850fe89c8cfa12e08c6ab
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 27 07:36:34 2025 +0000
+commit fbef93c0ff472768927c64e60dc2a119f72a5551
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 22 20:39:44 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## report-print-send
@@ -1667,11 +1652,11 @@ Date:   Sun Feb 9 19:13:59 2025 +0000
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 3f1e090d90d5fb20f25031d1edb5c532a662667f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:59:14 2025 +0000
+commit 3f1374869fc03e4d4543fd678803fd752b894037
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 25 08:44:39 2025 +0000
 
-    [UPD] addons table in README.md
+    Added translation using Weblate (Italian)
 
 
 ## vertical-travel
@@ -1685,9 +1670,9 @@ Date:   Sun Feb 9 19:15:31 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 2c765770bab046d3aa238260b7f5dd80b300e591
+commit 7640f2a5dd1e5ee76349c44e154c985a3e438100
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 2 12:41:53 2025 +0000
+Date:   Mon Dec 22 13:52:33 2025 +0000
 
     [BOT] post-merge updates
 

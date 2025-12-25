@@ -45,6 +45,7 @@ class ProductPrintCategoryMixin(models.AbstractModel):
             ]
         elif self._name == "product.product":
             domain = [
+                ("id", "in", self.ids),
                 ("print_category_id", "!=", False),
             ]
         else:

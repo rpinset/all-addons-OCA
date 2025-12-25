@@ -114,7 +114,7 @@ class TestProductPrintCategory(TransactionCase):
             "Print all products should propose 3 products",
         )
 
-    def test_21_onchange(self):
+    def test_20_onchange(self):
         product = self.ProductProduct.create(
             {
                 "name": "Demo Product Product Name",
@@ -136,3 +136,64 @@ class TestProductPrintCategory(TransactionCase):
         product.categ_id = self.env.ref("product.product_category_all")
         product._onchange_categ_id_company_id()
         self.assertEqual(product.print_category_id.id, False)
+
+    def test_30_test_field_ids_products_template(self):
+        # Add a new product template
+        template = self.ProductTemplate.create(
+            {
+                "name": "Demo Product Template Name",
+                "print_category_id": self.print_category_1.id,
+            }
+        )
+
+        # Set all products as printed
+        self.print_category_1.mapped("product_to_print_ids").write({"to_print": False})
+        self.assertEqual(template.to_print, False)
+
+        # Change name of one product template only
+        template.name = "Demo Product Template New Name"
+        products = self.ProductProduct.search(
+            [
+                ("print_category_id", "=", self.print_category_1.id),
+                ("to_print", "=", True),
+            ]
+        )
+        self.assertEqual(len(products), 1)
+        self.assertTrue(template.to_print)
+
+    def test_31_test_field_ids_products_products(self):
+        # Add a two products
+        product = self.ProductProduct.create(
+            {
+                "name": "Demo Product Name",
+                "print_category_id": self.print_category_1.id,
+            }
+        )
+        second_product = self.ProductProduct.create(
+            {
+                "name": "Demo Second Product Name",
+                "print_category_id": self.print_category_1.id,
+                "product_tmpl_id": product.product_tmpl_id.id,
+            }
+        )
+
+        # Set all products as printed
+        self.print_category_1.mapped("product_to_print_ids").write({"to_print": False})
+        self.assertEqual(product.to_print, False)
+        self.assertEqual(second_product.to_print, False)
+
+        # Change barcode of product, not shared with second_product
+        barcode_field = self.env["ir.model.fields"].search(
+            [("model", "=", "product.product"), ("name", "=", "barcode")]
+        )
+        self.print_category_1.write({"field_ids": [(4, barcode_field.id, 0)]})
+        product.barcode = "1234567890128"
+        products = self.ProductProduct.search(
+            [
+                ("to_print", "=", True),
+                ("print_category_id", "=", self.print_category_1.id),
+            ]
+        )
+        self.assertEqual(len(products), 1)
+        self.assertTrue(product.to_print)
+        self.assertTrue(not second_product.to_print)
