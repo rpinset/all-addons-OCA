@@ -107,9 +107,9 @@ Date:   Tue Dec 9 10:51:27 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit adcaf9f2ee7a481bc578f832f6f3a28695cb82c1
+commit 5f5206832e3087819f75053d27d5584909f1ebf3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 18 11:23:02 2025 +0000
+Date:   Sun Dec 28 21:18:00 2025 +0000
 
     [BOT] post-merge updates
 
@@ -394,11 +394,16 @@ Date:   Sat Dec 20 09:58:58 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 0a9a6144bb310a694fd967a840b0cf06ac84b0ec
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Dec 21 18:17:53 2025 +0000
+commit e32b835e885bdb3b6b69cfc25dbad1b080767d10
+Author: pere-aquarian <pere@aquarian.tech>
+Date:   Mon Dec 29 17:15:11 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: partner-contact-18.0/partner-contact-18.0-partner_manual_rank
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-18-0/partner-contact-18-0-partner_manual_rank/ca/
 
 
 ## sale-financial
@@ -636,16 +641,11 @@ Date:   Sun Feb 2 18:22:10 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 62aeebe85a04389bd758d39e5a138288d5e42e73
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 1 09:19:02 2025 +0000
+commit 5cf2596ad5b38315158c9231024f0e88a8168cfc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 29 10:12:57 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (28 of 28 strings)
-    
-    Translation: multi-company-18.0/multi-company-18.0-purchase_sale_stock_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-18-0/multi-company-18-0-purchase_sale_stock_inter_company/it/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -785,9 +785,9 @@ Date:   Fri Aug 22 22:51:59 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 7b904a75333961a1bf3e16a33ac8f61d97856b43
+commit c412081717bc69ab1412f61f8a77387b22617640
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 20 04:41:30 2025 +0000
+Date:   Mon Dec 29 09:11:56 2025 +0000
 
     [BOT] post-merge updates
 
@@ -968,9 +968,9 @@ Date:   Sun Feb 2 19:41:56 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 9734cce395dbe79ab0b8ce4dc42955c1ee0320a3
+commit 046cdd85ee6296f5e4002c7e9e3261923f6b1f45
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Dec 21 18:15:22 2025 +0000
+Date:   Mon Dec 29 14:30:47 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1217,11 +1217,16 @@ Date:   Wed Nov 26 02:15:00 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit d204ab3a8930c00f1847f891355172aebc57c149
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 23 14:48:31 2025 +0000
+commit c86378f1a18bdb2fdb9cca69afe6eacc9d5de1d0
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Mon Dec 29 08:13:36 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 98.1% (54 of 55 strings)
+    
+    Translation: product-attribute-18.0/product-attribute-18.0-product_customerinfo
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-18-0/product-attribute-18-0-product_customerinfo/tr/
 
 
 ## product-kitting
@@ -1262,11 +1267,11 @@ Date:   Sun Feb 2 20:17:55 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 1e39cd0b3661667d37c9259920809e117bc6c735
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Dec 20 07:41:52 2025 +0000
+commit 556ab1f802c012597d026e5f6905fda1070a6314
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 29 10:22:15 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## project-agile
@@ -1280,11 +1285,16 @@ Date:   Sun Feb 2 20:17:09 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 7d1c362fa921b120664e2ad8aee29362199318d2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 9 07:19:40 2025 +0000
+commit 818228471b4dde09d70ebaf97b466a8cf30846ae
+Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
+Date:   Mon Dec 29 17:51:39 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Dutch)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: contract-18.0/contract-18.0-contract_queue_job
+    Translate-URL: https://translation.odoo-community.org/projects/contract-18-0/contract-18-0-contract_queue_job/nl/
 
 
 ## program
@@ -1392,23 +1402,23 @@ Date:   Sun Feb 9 19:21:18 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 25fc6169f9c1f5e333805a97f93436929fb7c793
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 18 07:28:46 2025 +0000
+commit f1e92afb93150506b85116aa0864df14ff7cfb22
+Author: Nils Coenen <nils.coenen@nico-solutions.de>
+Date:   Fri Dec 26 12:06:31 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (German)
     
-    Currently translated at 100.0% (81 of 81 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: server-tools-18.0/server-tools-18.0-database_cleanup
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-18-0/server-tools-18-0-database_cleanup/it/
+    Translation: server-tools-18.0/server-tools-18.0-fetchmail_notify_error_to_sender
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-18-0/server-tools-18-0-fetchmail_notify_error_to_sender/de/
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 3563ff88ce4500c7487568035073109f66ee4160
+commit a37492dd796687f32609f529437bc5da5ecb3c73
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 17 07:23:29 2025 +0000
+Date:   Sun Dec 28 11:51:03 2025 +0000
 
     [BOT] post-merge updates
 
