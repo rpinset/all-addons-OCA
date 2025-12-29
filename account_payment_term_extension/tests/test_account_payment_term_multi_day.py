@@ -1,10 +1,13 @@
-import odoo.tests.common as common
+from datetime import date
+
 from odoo import fields
 from odoo.exceptions import ValidationError
 from odoo.tests.common import Form
 
+from odoo.addons.base.tests.common import BaseCommon
 
-class TestAccountPaymentTermMultiDay(common.TransactionCase):
+
+class TestAccountPaymentTermMultiDay(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -340,3 +343,21 @@ class TestAccountPaymentTermMultiDay(common.TransactionCase):
         self.assertEqual(expected_days, model._decode_payment_days("5, 10"))
         self.assertEqual(expected_days, model._decode_payment_days("5 - 10"))
         self.assertEqual(expected_days, model._decode_payment_days("5    10"))
+
+    def test_get_payment_days_due_date(self):
+        payment_term = self.payment_term_0_days_5_10
+
+        result = payment_term._get_payment_days_due_date(date(2020, 1, 1), [5, 10])
+        self.assertEqual(result, date(2020, 1, 5))
+
+        result = payment_term._get_payment_days_due_date(date(2020, 1, 6), [5, 10])
+        self.assertEqual(result, date(2020, 1, 10))
+
+        result = payment_term._get_payment_days_due_date(date(2020, 1, 15), [5, 10])
+        self.assertEqual(result, date(2020, 2, 5))
+
+        result = payment_term._get_payment_days_due_date(date(2020, 2, 1), [30])
+        self.assertEqual(result, date(2020, 2, 29))
+
+        result = payment_term._get_payment_days_due_date(date(2020, 1, 1), [])
+        self.assertEqual(result, date(2020, 1, 1))

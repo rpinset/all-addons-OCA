@@ -24,11 +24,11 @@ class MisReportInstance(models.Model):
         if not self.horizontal:
             return super().compute()
 
+        result = super().compute()
         full_matrix = self._compute_matrix()
 
         matrices = self._split_matrix(full_matrix)
 
-        result = full_matrix.as_dict()
         result["split_matrices"] = [extra_matrix.as_dict() for extra_matrix in matrices]
 
         return result

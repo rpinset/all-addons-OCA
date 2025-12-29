@@ -116,7 +116,7 @@ zeep
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
-pyfrdas2>=0.4
+pyfrdas2>=0.10
 python-stdnum
 python-stdnum>=1.18
 requests_oauthlib

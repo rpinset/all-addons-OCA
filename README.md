@@ -53,16 +53,16 @@ Date:   Mon Dec 15 14:45:24 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 89df9218ea463c0b47533f4148f3400eaffc443e
-Author: Sergio Ariel Ameghino <ariel.ameghino@gmail.com>
-Date:   Sat Nov 8 15:02:55 2025 +0000
+commit 7246aa2d4177cd3467707d895b04afda5738bd51
+Author: jabelchi <jabelchi@gmail.com>
+Date:   Mon Dec 29 13:09:16 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Catalan)
     
-    Currently translated at 100.0% (51 of 51 strings)
+    Currently translated at 92.4% (49 of 53 strings)
     
-    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-account_tax_balance/es/
+    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-mis_builder_cash_flow
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-mis_builder_cash_flow/ca/
 
 
 ## account-invoice-reporting
@@ -190,9 +190,9 @@ Date:   Tue Dec 9 08:16:06 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit deaace5ecddfe198ff0355eafdc6032aab91a561
+commit 4069a825c09971f9e7849bf445af4d98ac8c2f8a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 26 10:31:45 2025 +0000
+Date:   Sat Dec 27 15:27:24 2025 +0000
 
     [BOT] post-merge updates
 
@@ -348,16 +348,16 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 655b90204ff0388a05881af26fd7c6d7bac714b1
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Tue Dec 9 00:52:14 2025 +0000
+commit d18479da9a8354a1278219c4c6d4ff7696a00326
+Author: Reinier Reisy Quevedo Batista <reisyreinier@gmail.com>
+Date:   Mon Dec 29 16:04:58 2025 +0000
 
-    Translated using Weblate (Japanese)
+    Translated using Weblate (Catalan)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_contact_address_default
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_contact_address_default/ja/
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_email_duplicate_warn
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_email_duplicate_warn/ca/
 
 
 ## sale-financial
@@ -769,14 +769,16 @@ Date:   Fri Aug 22 22:37:45 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 7961041b98497328df40048526bb29b320acb477
-Merge: 672de5db e59d235f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 19 13:08:50 2025 +0000
+commit 7e5719a5b5b3e9886fd6127fc0e7acb1107a2b5b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 29 09:00:27 2025 +0000
 
-    Merge PR #713 into 17.0
+    Update translation files
     
-    Signed-off-by alexis-via
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-france-17.0/l10n-france-17.0-l10n_fr_das2
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_das2/
 
 
 ## l10n-germany
@@ -957,11 +959,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 174522360a73a6f8b1007ea5e2703401626f0456
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 23 17:26:58 2025 +0000
+commit b5a6ba5f0201c59ae29cce6d4e5b5b8d10e5f045
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 29 10:38:17 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat/
 
 
 ## l10n-switzerland
