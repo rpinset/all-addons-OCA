@@ -825,11 +825,16 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 0f1d0b3d3995178269dd9672361eabf6491996a5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 25 21:39:40 2025 +0000
+commit 35f33a9eacfa3754073915210621b6b141a39220
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 29 09:02:58 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-france-14.0/l10n-france-14.0-l10n_fr_das2
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-l10n_fr_das2/
 
 
 ## l10n-germany
