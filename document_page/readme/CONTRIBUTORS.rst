@@ -16,3 +16,7 @@ Trobz
 * `Sygel <https://www.sygel.es>`_:
 
   * Ángel García de la Chica Herrera
+
+* `Dixmit <https://www.dixmit.com>`__:
+
+  * Enric Tobella

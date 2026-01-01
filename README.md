@@ -394,11 +394,16 @@ Date:   Tue Nov 11 09:41:04 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 76f0321ce57e1f96db204a655245f67174389a03
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 29 09:11:09 2025 +0000
+commit dc94fe8514391d643bef038ac39c7719ea8d55c6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 1 11:29:21 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: partner-contact-16.0/partner-contact-16.0-base_partner_merge_user_consolidation
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-16-0/partner-contact-16-0-base_partner_merge_user_consolidation/it/
 
 
 ## sale-financial
@@ -462,16 +467,11 @@ Date:   Mon Dec 8 13:08:22 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 00e47df5332f557e126d3985815d3a83991fdf9c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Dec 20 07:28:58 2025 +0000
+commit 7b8f1458ff61aedf883c6f0204778bf270af29e9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 31 17:38:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (10 of 10 strings)
-    
-    Translation: knowledge-16.0/knowledge-16.0-document_page_tag_print_control
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-16-0/knowledge-16-0-document_page_tag_print_control/it/
+    [BOT] post-merge updates
 
 
 ## dms
@@ -499,11 +499,11 @@ Date:   Fri Nov 28 08:30:15 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit da3b7590142c493fc5626617ddda84b1703fb0dc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 27 18:03:06 2025 +0000
+commit ca50e5868c96ebaaaf2d16000b96d724d8891fac
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 1 16:16:05 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## field-service
@@ -958,11 +958,14 @@ Date:   Sun Feb 2 19:35:08 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 7099ba86a0e52849b8e6799b5d32d5f464ddd9c6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 2 12:43:34 2025 +0000
+commit fa59fdc923ddc6fb31312ca1f17683a8a9016f38
+Merge: 7099ba86 b7e3e9d4
+Author: Fekete Mihai <feketemihai@nexterp.ro>
+Date:   Tue Dec 30 10:48:41 2025 +0200
 
-    [BOT] post-merge updates
+    Merge pull request #1407 from NextERP-Romania/16.0-imp-comments
+    
+    16.0 imp comments
 
 
 ## l10n-russia
@@ -985,11 +988,16 @@ Date:   Sun Feb 2 19:41:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit cb464963d188c069c266c54ba6a85309e54870c2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 11 21:06:21 2025 +0000
+commit 62a10350321927aae358dd27beeaa525a34e329f
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 30 18:53:58 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-16.0/l10n-spain-16.0-l10n_es_sigaus_stock_picking_report_valued
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_sigaus_stock_picking_report_valued/
 
 
 ## l10n-switzerland
@@ -1114,16 +1122,16 @@ Date:   Sun Feb 9 18:52:53 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 58111e48f2584830d001d38ac2d33d62f0982837
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 11 08:03:42 2025 +0000
+commit 4a60fe94197af9f7df457d48ee744c27c7720c9b
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Tue Dec 30 08:38:43 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (150 of 150 strings)
+    Currently translated at 93.7% (15 of 16 strings)
     
-    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_cycle_count/it/
+    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_inventory_justification
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_inventory_justification/tr/
 
 
 ## stock-logistics-reporting

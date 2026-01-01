@@ -28,34 +28,23 @@ Additional ressources
         <field name="draft_name">1.0</field>
         <field name="draft_summary">Init</field>
         <field name="parent_id" ref="demo_category1" />
-        <field name="content">
-<![CDATA[
-<br>
-<br>
-The news is out, Odoo's latest version 15.0 is here.  It's more<br>
-user-friendly, even more business oriented and efficient to manage your company<br>
-<br>
-How to discover the latest version 15.0?<br>
-<br>
-Demo : <a target="https://demo.odoo.com" href="https://demo.odoo.com" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a><br>
-Online: <a target="https://www.odoo.com/trial" href="https://www.odoo.com/trial" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a><br>
-Download: <a target="https://www.odoo.com/page/download" href="https://www.odoo.com/page/download" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a><br>
-<br>
-We have also put together a functional demo that presents 15.0. Watch this video<br>
-to learn directly from us what Odoo 15.0 can do for you. Share it in your<br>
-company, with your clients and implement it now for your business.<br>
-<br>
-<h3>Watch on Youtube!</h3><br>
-<br>
-<div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/zLSgpQM_tms">
+        <field
+            name="content"
+        ><![CDATA[<p data-last-history-steps="">The news is out, Odoo's latest version 15.0 is here.  It's more
+user-friendly, even more business oriented and efficient to manage your company
+How to discover the latest version 15.0?</p>
+<p>Demo : <a target="https://demo.odoo.com" href="https://demo.odoo.com" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a></p>
+<p>Online: <a target="https://www.odoo.com/trial" href="https://www.odoo.com/trial" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a></p>
+<p>Download: <a target="https://www.odoo.com/page/download" href="https://www.odoo.com/page/download" style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC&quot;) no-repeat scroll right center transparent;padding-right: 13px;"></a></p>
+<p>We have also put together a functional demo that presents 15.0. Watch this video
+to learn directly from us what Odoo 15.0 can do for you. Share it in your
+company, with your clients and implement it now for your business.</p>
+<p><h3>Watch on Youtube!</h3></p>
+<div class="media_iframe_video" data-oe-expression="https://www.youtube.com/embed/zLSgpQM_tms">
     <div class="css_editable_mode_display" />
     <div class="media_iframe_video_size" />
-    <iframe src="//www.youtube.com/embed/zLSgpQM_tms" allowfullscreen="allowfullscreen" frameborder="0" />
-</div>
-<br>
-<br>
-]]>
-        </field>
+    <iframe src="https://www.youtube.com/embed/zLSgpQM_tms" allowfullscreen="allowfullscreen" frameborder="0" />
+</div>]]></field>
     </record>
 
     <record id="demo_page2" model="document.page">
@@ -63,41 +52,26 @@ company, with your clients and implement it now for your business.<br>
         <field name="parent_id" ref="demo_category1" />
         <field name="draft_name">1.0</field>
         <field name="draft_summary">Init</field>
-        <field name="content">
-<![CDATA[
-<br>
-You like Odoo, but feel like you want to personalise it more? You can customize your
-dashboard by adding new boards of any<br>
-search view.<br>
-<br>
-<h3>How is it done?</h3><br>
-<br>
-Step 1: access one search view <br>
-<br>
-Step 2: apply the filter you want to see at each connection to the application<br>
-(eg. on sales, manufacturing, etc)<br>
-<br>
-Step 3: add it into the dashboard in the same space where you can save the filter<br>
-<br>
-Step 4: choose the application you want it visible on and the name of the array<br>
-<br>
-Look at this simple example below from Purchase, where I want to put on the<br>
-application's dashboard "Purchases to Approve". After I access the search view<br>
-and apply the filter for "Purchases to Approve", I can add it immediately to my<br>
-Purchase dashboard.<br>
-<br>
-<img src="/document_page/static/src/img/add_to_dashboard.png" alt="Add to dashboard" width="500"><br>
-<br>
-In less than a minute, the search view is visible on the dashboard<br>
-<br>
-<img src="/document_page/static/src/img/dashboard.png" alt="Dashboard" width="500"><br>
-<br>
-Of course, you are free to delete what you don't need or like, but just in case<br>
-you change your mind there is a reset button to return to the default view.<br>
-<br>
-<br>
-]]>
-        </field>
+        <field
+            name="content"
+        ><![CDATA[<p data-last-history-steps="">You like Odoo, but feel like you want to personalise it more? You can customize your
+dashboard by adding new boards of any search view.</p>
+<p><h3>How is it done?</h3></p>
+<p>Step 1: access one search view</p>
+<p>Step 2: apply the filter you want to see at each connection to the application
+(eg. on sales, manufacturing, etc)</p>
+<p>Step 3: add it into the dashboard in the same space where you can save the filter</p>
+<p>Step 4: choose the application you want it visible on and the name of the array</p>
+<p>Look at this simple example below from Purchase, where I want to put on the
+application's dashboard "Purchases to Approve". After I access the search view
+and apply the filter for "Purchases to Approve", I can add it immediately to my
+Purchase dashboard.</p>
+<p><img src="/document_page/static/src/img/add_to_dashboard.png" alt="Add to dashboard" width="500"></p>
+<p>In less than a minute, the search view is visible on the dashboard</p>
+<p><img src="/document_page/static/src/img/dashboard.png" alt="Dashboard" width="500"></p>
+<p>Of course, you are free to delete what you don't need or like, but just in case
+you change your mind there is a reset button to return to the default view.</p>
+<p>]]></field>
     </record>
 
     <record id="demo_page3" model="document.page">
@@ -105,38 +79,30 @@ you change your mind there is a reset button to return to the default view.<br>
         <field name="parent_id" ref="demo_category1" />
         <field name="draft_name">1.0</field>
         <field name="draft_summary">Init</field>
-        <field name="content">
-<![CDATA[
-<br>
-The Odoo touchscreen point of sale available with 15.0 allows you<br>
-to manage your shop sales very easily.  It's fully web based so that you don't<br>
-have to install or deploy any software and all the sales shops can be easily<br>
-consolidated.  It works in connected and disconnected modes so that you can<br>
-continue to sell if you lose your internet connection.<br>
-<br>
-<img src="/document_page/static/src/img/POS.png" alt="Point of Sale" width="500"><br>
-<br>
-<h3>Here's a summary of its main features and benefits:</h3><br>
-<br>
-100% WEB based<br>
-<br>
-<ul><li>available for any touchscreen device (ipod, ipad, any tablet)mobile (with portable devices)</li><li>no installation required</li><li>no synchronization needed, completely integrated</li><li>continue working even when your connection is down if you close your browser, data won't be lost</li><li>fully web based with a clean interface smart interface</li></ul><br>
-<br>
-You have different options to select your products. You can do it through the<br>
-barcode reader, just browse through the categories you have put in place (ie.<br>
-drinks, snacks, meals, etc.), or text search in case neither of the other<br>
-options work for you.  If you need to use the POS for your restaurant, for<br>
-example, your employees can record at the same time multiple tickets without<br>
-having to wait to do one transaction at a time. Along, to facilitate payment,<br>
-the application allows multiple payment methods.<br>
-<br>
-The POS application is so simple and accessible to use that your shop or<br>
-restaurant will never need any other tool to manage orders. Due to its smart<br>
-and user-friendly interface you don't need any training to learn how to use it.<br>
-Think of it as an out-of-the-box solution to boost your business' productivity.<br>
-<br>
-]]>
-        </field>
+        <field
+            name="content"
+        ><![CDATA[<p data-last-history-steps="">The Odoo touchscreen point of sale available with 15.0 allows you
+to manage your shop sales very easily.  It's fully web based so that you don't
+have to install or deploy any software and all the sales shops can be easily
+consolidated.  It works in connected and disconnected modes so that you can
+continue to sell if you lose your internet connection.</p>
+<p><img src="/document_page/static/src/img/POS.png" alt="Point of Sale" width="500"></p>
+<p><h3>Here's a summary of its main features and benefits:</h3></p>
+<p>100% WEB based</p>
+<p><ul><li>available for any touchscreen device (ipod, ipad, any tablet)mobile (with portable devices)</li><li>no installation required</li><li>no synchronization needed, completely integrated</li><li>continue working even when your connection is down if you close your browser, data won't be lost</li><li>fully web based with a clean interface smart interface</li></ul></p>
+<p>You have different options to select your products. You can do it through the
+barcode reader, just browse through the categories you have put in place (ie.
+drinks, snacks, meals, etc.), or text search in case neither of the other
+options work for you.  If you need to use the POS for your restaurant, for
+example, your employees can record at the same time multiple tickets without
+having to wait to do one transaction at a time. Along, to facilitate payment,
+the application allows multiple payment methods.
+<p>The POS application is so simple and accessible to use that your shop or
+restaurant will never need any other tool to manage orders. Due to its smart
+and user-friendly interface you don't need any training to learn how to use it.
+Think of it as an out-of-the-box solution to boost your business' productivity.
+</p>
+]]></field>
     </record>
 
 </odoo>
