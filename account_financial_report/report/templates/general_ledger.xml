@@ -498,6 +498,7 @@
                                                 t-att-res-id="analytic_id"
                                                 res-model="account.analytic.account"
                                                 view-type="form"
+                                                style="display: inline-flex; justify-content: space-between; width: 100%;"
                                             >
                                                 <t
                                                     t-set="analytic_id"
@@ -507,14 +508,27 @@
                                                     t-set="account_name"
                                                     t-value="o._get_atr_from_dict(int(analytic_id), analytic_data, 'name')"
                                                 />
-                                                <t t-if="percentage &lt; 100">
-                                                    <t
-                                                        t-out="account_name + ' (' + str(percentage) + '%)'"
-                                                    />
-                                                </t>
-                                                <t t-else="">
+                                                <span>
                                                     <t t-out="account_name" />
-                                                </t>
+                                                    <t t-if="percentage &lt; 100">
+                                                        <span style="color: #888;"> (<t
+                                                                t-out="percentage"
+                                                            />%)</span>
+                                                    </t>
+                                                </span>
+                                                <span
+                                                    style="font-size: 90%; color: #444;"
+                                                >
+                                                    <t
+                                                        t-set="amount"
+                                                        t-value="line['debit'] if line['debit'] else line['credit']"
+                                                    />
+                                                    <t
+                                                        t-if="percentage &lt; 100"
+                                                        t-out="amount * (percentage / 100.0)"
+                                                        t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"
+                                                    />
+                                                </span>
                                             </span>
                                         </li>
                                     </t>

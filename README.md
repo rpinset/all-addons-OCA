@@ -53,16 +53,11 @@ Date:   Mon Dec 15 14:45:24 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 7246aa2d4177cd3467707d895b04afda5738bd51
-Author: jabelchi <jabelchi@gmail.com>
-Date:   Mon Dec 29 13:09:16 2025 +0000
+commit 73d05bf1da833b9db0564921e198d6f8b90041ec
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 31 09:23:30 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 92.4% (49 of 53 strings)
-    
-    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-mis_builder_cash_flow
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-mis_builder_cash_flow/ca/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -450,16 +445,11 @@ Date:   Fri Dec 19 08:57:35 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 6e36321817ca86dc7b00953fe640345b0ce8c787
+commit 82f3b8510827fabb2c65f4080908a6373516b04a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:39:57 2025 +0000
+Date:   Thu Jan 1 15:02:08 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (354 of 354 strings)
-    
-    Translation: dms-17.0/dms-17.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-17-0/dms-17-0-dms/it/
+    Added translation using Weblate (Italian)
 
 
 ## e-commerce
@@ -959,16 +949,11 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit b5a6ba5f0201c59ae29cce6d4e5b5b8d10e5f045
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Dec 29 10:38:17 2025 +0000
+commit 516c0d00c7141e38648441f27faf8b5b9ebd3da3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 30 16:27:45 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
