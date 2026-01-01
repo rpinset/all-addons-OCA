@@ -13,7 +13,7 @@ class VATReport(models.AbstractModel):
     _description = "Vat Report Report"
 
     def _get_tax_data(self, tax_ids):
-        taxes = self.env["account.tax"].browse(tax_ids)
+        taxes = self.env["account.tax"].with_context(active_test=False).browse(tax_ids)
         tax_data = {}
         for tax in taxes:
             tax_data.update(

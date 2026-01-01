@@ -310,7 +310,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 18.0.1.4.2 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.4.3 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 18.0.1.0.0 |  | OCA Financial Reports Sale
 [account_tax_balance](account_tax_balance/) | 18.0.1.0.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 18.0.1.0.1 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
@@ -461,7 +461,7 @@ addon | version | maintainers | summary
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 18.0.1.0.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales order invoicing by percentage of the quantity
-[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 18.0.1.0.1 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
+[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 18.0.1.0.2 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
 [stock_picking_invoicing](stock_picking_invoicing/) | 18.0.1.0.1 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 18.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
@@ -574,6 +574,7 @@ addon | version | maintainers | summary
 [purchase_operating_unit](purchase_operating_unit/) | 18.0.1.0.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
 [report_qweb_operating_unit](report_qweb_operating_unit/) | 18.0.1.0.0 |  | Qweb Report With Operating Unit
 [sale_operating_unit](sale_operating_unit/) | 18.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
+[sale_stock_operating_unit](sale_stock_operating_unit/) | 18.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 18.0.1.0.0 |  | Sales Team Operating Unit
 [stock_operating_unit](stock_operating_unit/) | 18.0.1.0.0 |  | Adds the concept of operating unit (OU) in stock management
 [stock_operating_unit_access_all](stock_operating_unit_access_all/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Stock
@@ -1794,6 +1795,7 @@ addon | version | maintainers | summary
 [sale_mrp_bom](sale_mrp_bom/) | 18.0.1.0.0 |  | Allows define a BOM in the sales lines.
 [sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 18.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
 [sale_order_archive](sale_order_archive/) | 18.0.1.0.0 |  | Archive Sale Orders
+[sale_order_cancel_optional_email](sale_order_cancel_optional_email/) | 18.0.1.0.0 |  | Cancel sales orders directly without proposing to send email to customer
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 18.0.1.0.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 18.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
 [sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.0 |  | General discount per sale order
@@ -1987,7 +1989,7 @@ addon | version | maintainers | summary
 [base_location_geonames_import](base_location_geonames_import/) | 18.0.1.0.0 |  | Import zip entries from Geonames
 [base_location_nuts](base_location_nuts/) | 18.0.1.2.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> | NUTS Regions
 [base_partner_company_group](base_partner_company_group/) | 18.0.1.1.0 |  | Adds the possibility to add a company group to a company
-[base_partner_sequence](base_partner_sequence/) | 18.0.1.0.0 |  | Sets customer's code from a sequence
+[base_partner_sequence](base_partner_sequence/) | 18.0.1.1.0 |  | Sets customer's code from a sequence
 [crm_partner_company_group](crm_partner_company_group/) | 18.0.1.1.0 |  | Adds the possibility to add a company group to a company
 [partner_address_street3](partner_address_street3/) | 18.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 18.0.1.0.0 |  | Partner Affiliates
@@ -2423,6 +2425,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[attachment_preview](attachment_preview/) | 18.0.1.0.0 |  | Preview attachments supported by Viewer.js
 [attachment_zipped_download](attachment_zipped_download/) | 18.0.1.0.0 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 18.0.1.0.2 |  | Documents Knowledge
 [document_page](document_page/) | 18.0.2.1.0 |  | Document Page
@@ -5064,7 +5067,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 18.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 18.0.1.0.0 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 18.0.1.0.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 18.0.1.0.4 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur_atlas](delivery_seur_atlas/) | 18.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 18.0.1.0.1 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 18.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
@@ -5250,7 +5253,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_th_account_tax](l10n_th_account_tax/) | 18.0.1.5.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 18.0.1.5.2 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_report](l10n_th_account_tax_report/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 18.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 18.0.2.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Convert Amount Text to Thai
@@ -5587,6 +5590,7 @@ addon | version | maintainers | summary
 [delivery_driver](delivery_driver/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow choose driver in delivery methods
 [delivery_driver_stock_picking_batch](delivery_driver_stock_picking_batch/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add drivers from delivery in stock picking batch
 [delivery_dropoff_site](delivery_dropoff_site/) | 18.0.1.0.0 |  | Send goods to sites in which customers come pick up package
+[delivery_estimated_package_quantity_by_weight](delivery_estimated_package_quantity_by_weight/) | 18.0.1.0.0 |  | Compute the amount of packages a picking out should have depending on the weight of the products and the limit fixed by the carrier
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 18.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_package_fee](delivery_package_fee/) | 18.0.1.0.0 |  | Add fees on sales order for delivered packages
 [delivery_package_number](delivery_package_number/) | 18.0.1.0.0 |  | Set or compute number of packages for a picking
@@ -6745,6 +6749,7 @@ addon | version | maintainers | summary
 [product_pricelist_direct_print_xlsx](product_pricelist_direct_print_xlsx/) | 18.0.1.0.2 |  | Print price list in XLSX format
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/kobros-tech'><img src='https://github.com/kobros-tech.png' width='32' height='32' style='border-radius:50%;' alt='kobros-tech'/></a> | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
+[product_pricelist_margin](product_pricelist_margin/) | 18.0.1.0.0 |  | This module shows the product's cost and margin from the pricelists.
 [product_pricelist_revision](product_pricelist_revision/) | 18.0.1.0.0 |  | Product Pricelist Revision
 [product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 18.0.1.1.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to create priceslists based on supplier info
 [product_print_category](product_print_category/) | 18.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Define print categories for products and automate products print, when data has changed
@@ -7380,7 +7385,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_activity_unlink_log](mail_activity_unlink_log/) | 18.0.1.0.0 |  | Leave a message when an activity is unlinked
-[mail_gateway](mail_gateway/) | 18.0.1.0.3 |  | Base module for gateway communications
+[mail_gateway](mail_gateway/) | 18.0.1.0.5 |  | Base module for gateway communications
 [mail_gateway_telegram](mail_gateway_telegram/) | 18.0.1.0.0 |  | Set a gateway for telegram
 [mail_gateway_whatsapp](mail_gateway_whatsapp/) | 18.0.1.0.0 |  | Set a gateway for whatsapp
 [mail_notification_with_history](mail_notification_with_history/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Add the previous chatter discussion into new email notifications.
@@ -8039,7 +8044,7 @@ addon | version | maintainers | summary
 [base_optional_quick_create](base_optional_quick_create/) | 18.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
 [base_revision](base_revision/) | 18.0.1.0.0 |  | Keep track of revised document
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
-[base_substate](base_substate/) | 18.0.1.0.0 |  | Base Sub State
+[base_substate](base_substate/) | 18.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 18.0.1.0.2 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 18.0.3.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 18.0.1.0.0 |  | Formulas for Base tier validation
@@ -8870,6 +8875,7 @@ addon | version | maintainers | summary
 [web_chatter_position](web_chatter_position/) | 18.0.1.0.1 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | Add an option to change the chatter position
 [web_company_color](web_company_color/) | 18.0.1.0.4 |  | Web Company Color
 [web_copy_confirm](web_copy_confirm/) | 18.0.1.0.0 |  | Show confirmation dialogue before copying records
+[web_dark_mode](web_dark_mode/) | 18.0.1.0.0 |  | Enabled Dark Mode for the Odoo Backend
 [web_datetime_picker_default_time](web_datetime_picker_default_time/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to define a default time on datetime picker
 [web_dialog_size](web_dialog_size/) | 18.0.1.0.1 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 18.0.1.0.0 |  | Web Disable Export Group
@@ -8899,6 +8905,7 @@ addon | version | maintainers | summary
 [web_search_with_and](web_search_with_and/) | 18.0.1.0.1 |  | Use AND conditions on omnibar search
 [web_send_message_popup](web_send_message_popup/) | 18.0.1.0.0 |  | Web Send Message as Popup
 [web_session_auto_close](web_session_auto_close/) | 18.0.1.0.1 |  | Automatically logs out inactive users based on a configurable timeout.
+[web_sort_menu](web_sort_menu/) | 18.0.1.0.0 |  | Sort Apps in DropDown/NavBar Menu alphabetically
 [web_systray_button_init_action](web_systray_button_init_action/) | 18.0.1.0.2 |  | Add a button to go to the user init action.
 [web_theme_classic](web_theme_classic/) | 18.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Contrasted style on fields to improve the UI.
 [web_timeline](web_timeline/) | 18.0.1.0.1 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time

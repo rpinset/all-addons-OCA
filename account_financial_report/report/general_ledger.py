@@ -27,8 +27,12 @@ class GeneralLedgerReport(models.AbstractModel):
         return analytic_data
 
     def _get_taxes_data(self, taxes_ids):
-        taxes = self.env["account.tax"].search_fetch(
-            [("id", "in", taxes_ids)], ["amount", "amount_type", "display_name"]
+        taxes = (
+            self.env["account.tax"]
+            .with_context(active_test=False)
+            .search_fetch(
+                [("id", "in", taxes_ids)], ["amount", "amount_type", "display_name"]
+            )
         )
         taxes_data = {}
         for tax in taxes:
@@ -131,7 +135,11 @@ class GeneralLedgerReport(models.AbstractModel):
         domain = []
         domain += base_domain
         domain += [("date", "<", fy_start_date)]
-        accounts = self.env["account.account"].search(accounts_domain)
+        accounts = (
+            self.env["account.account"]
+            .with_context(active_test=False)
+            .search(accounts_domain)
+        )
         domain += [("account_id", "in", accounts.ids)]
         return domain
 
@@ -432,8 +440,10 @@ class GeneralLedgerReport(models.AbstractModel):
                 res.append({"id": item_id, "name": item_name})
             elif move_line["tax_ids"]:
                 for tax_id in move_line["tax_ids"]:
-                    tax_item = self.env["account.tax"].search_fetch(
-                        [("id", "=", tax_id)], ["name"]
+                    tax_item = (
+                        self.env["account.tax"]
+                        .with_context(active_test=False)
+                        .search_fetch([("id", "=", tax_id)], ["name"])
                     )
                     res.append({"id": tax_item.id, "name": tax_item.name})
             else:
