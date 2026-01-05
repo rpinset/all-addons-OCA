@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-09 10:26+0000\n"
+"PO-Revision-Date: 2026-01-05 20:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -668,6 +668,7 @@ msgstr "In attesa"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__priority
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Priority"
 msgstr "Priorità"
 
@@ -909,6 +910,11 @@ msgstr "Ora (e)"
 msgid "Time required to execute this job in seconds. Average when grouped."
 msgstr ""
 "Tempo in secondi richiesto per eseguire il lavoro. Medio quando raggruppati."
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Tried many times"
+msgstr "Provato molte volte"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__activity_exception_decoration

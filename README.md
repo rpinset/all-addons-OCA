@@ -217,11 +217,16 @@ Date:   Sun Feb 2 18:15:43 2025 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit c9e92aafec5adf9b26cfea4efc73089cd5e19c55
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 18 13:00:16 2025 +0000
+commit 3dbb0c58d2638ade08c8b863f22e19382c4acfea
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 5 17:52:22 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (158 of 158 strings)
+    
+    Translation: queue-17.0/queue-17.0-queue_job
+    Translate-URL: https://translation.odoo-community.org/projects/queue-17-0/queue-17-0-queue_job/it/
 
 
 ## connector-accountedge
@@ -343,16 +348,11 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit d18479da9a8354a1278219c4c6d4ff7696a00326
-Author: Reinier Reisy Quevedo Batista <reisyreinier@gmail.com>
-Date:   Mon Dec 29 16:04:58 2025 +0000
+commit 72db1f840e1c0b3c3f0dc239c7bd53d85c568af6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 2 05:24:10 2026 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_email_duplicate_warn
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_email_duplicate_warn/ca/
+    [BOT] post-merge updates
 
 
 ## sale-financial
