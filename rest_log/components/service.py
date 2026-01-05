@@ -3,6 +3,7 @@
 # @author Simone Orsi <simahawk@gmail.com>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
+import inspect
 import json
 import logging
 import traceback
@@ -93,9 +94,37 @@ class BaseRESTService(AbstractComponent):
         except Exception as e:
             _logger.exception("Rest Log Error Creation: %s", e)
 
+    def _is_request_will_be_retried(self):
+        # we need to analyze the current call stack to determine if
+        # a 'tryleft' local variable is set, which indicates that
+        # the current request is being retried.
+        # This is a workaround for the fact that we cannot access
+        # the 'tryleft' variable from the request context, as it is
+        # not part of the request object.
+        # This is a hack, but it is the only way to determine if
+        # the current request is being retried.
+        stack = inspect.stack()
+        for frame in stack:
+            if "tryleft" in frame.frame.f_locals:
+                return frame.frame.f_locals["tryleft"]
+        return False
+
     def _dispatch_exception(
         self, method_name, exception_klass, orig_exception, *args, params=None
     ):
+        must_return_original_exception = False
+        if (
+            isinstance(orig_exception, OperationalError)
+            and orig_exception.pgcode in PG_CONCURRENCY_ERRORS_TO_RETRY
+        ):
+            must_return_original_exception = True
+            if self._is_request_will_be_retried():
+                # If we are in a retry, we don't log the error in the database,
+                # as it will be retried and logged again. And we let the
+                # OperationalError bubble up to the retrying mechanism where
+                # it will be handled by the default handler at the end of the chain.
+                raise orig_exception
+
         exc_msg, log_entry_url = None, None  # in case it fails below
         try:
             exc_msg = self._get_exception_message(orig_exception)
@@ -113,14 +142,7 @@ class BaseRESTService(AbstractComponent):
                 log_entry_url = self._get_log_entry_url(log_entry)
         except Exception as e:
             _logger.exception("Rest Log Error Creation: %s", e)
-        # let the OperationalError bubble up to the retrying mechanism
-        # We can't wrap the OperationalError because we want to let it
-        # bubble up to the retrying mechanism, it will be handled by
-        # the default handler at the end of the chain.
-        if (
-            isinstance(orig_exception, OperationalError)
-            and orig_exception.pgcode in PG_CONCURRENCY_ERRORS_TO_RETRY
-        ):
+        if must_return_original_exception:
             raise orig_exception
         raise exception_klass(exc_msg, log_entry_url) from orig_exception
 

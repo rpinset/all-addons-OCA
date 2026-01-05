@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Partner Relation Functions",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "author": "Therp BV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/partner-contact",
     "maintainers": ["NL66278"],
@@ -16,6 +16,7 @@
         "demo/res_partner_relation_demo.xml",  # Must be after type and partner
     ],
     "data": [
+        "views/res_partner_views.xml",
         "views/res_partner_relation_all_views.xml",
         "views/res_partner_relation_type_views.xml",
     ],

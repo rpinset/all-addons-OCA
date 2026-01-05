@@ -390,7 +390,9 @@ class TestDBLoggingRetryableError(
         cls._teardown_registry(cls)
         super().tearDownClass()
 
-    def _test_exception(self, test_type, wrapping_exc, exc_name, severity):
+    def _test_exception(
+        self, test_type, wrapping_exc, exc_name, severity, will_be_retried=True
+    ):
         log_model = self.env["rest.log"].sudo()
         initial_entries = log_model.search([])
         # Context: we are running in a transaction case which uses savepoints.
@@ -400,7 +402,9 @@ class TestDBLoggingRetryableError(
             # Init fake collection w/ new env
             collection = _PseudoCollection(self._collection_name, new_env)
             service = self._get_service(self, collection=collection)
-            with self._get_mocked_request(env=new_env):
+            with self._get_mocked_request(env=new_env), mock.patch.object(
+                service, "_is_request_will_be_retried", return_value=will_be_retried
+            ):
                 try:
                     service.dispatch("fail", test_type)
                 except Exception as err:
@@ -413,15 +417,20 @@ class TestDBLoggingRetryableError(
         with new_rollbacked_env() as new_env:
             log_model = new_env["rest.log"].sudo()
             entry = log_model.search([]) - initial_entries
-            expected = {
-                "collection": service._collection,
-                "state": "failed",
-                "result": "null",
-                "exception_name": exc_name,
-                "exception_message": "Failed as you wanted!",
-                "severity": severity,
-            }
-            self.assertRecordValues(entry, [expected])
+            if will_be_retried:
+                # retryable error must bubble up to the retrying mechanism
+                self.assertEqual(len(entry), 0)
+            else:
+                # not retryable, so we log it
+                expected = {
+                    "collection": service._collection,
+                    "state": "failed",
+                    "result": "null",
+                    "exception_name": exc_name,
+                    "exception_message": "Failed as you wanted!",
+                    "severity": severity,
+                }
+                self.assertRecordValues(entry, [expected])
 
     @staticmethod
     def _get_test_controller(class_or_instance, root_path=None):
@@ -436,4 +445,12 @@ class TestDBLoggingRetryableError(
             FakeConcurrentUpdateError,
             "odoo.addons.rest_log.tests.common.FakeConcurrentUpdateError",
             "warning",
+            will_be_retried=True,
+        )
+        self._test_exception(
+            "retryable",
+            FakeConcurrentUpdateError,
+            "odoo.addons.rest_log.tests.common.FakeConcurrentUpdateError",
+            "warning",
+            will_be_retried=False,
         )

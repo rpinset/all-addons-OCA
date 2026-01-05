@@ -202,9 +202,15 @@ msgstr ""
 #. module: account_payment_order_vendor_email
 #. odoo-python
 #: code:addons/account_payment_order_vendor_email/models/account_payment_mode.py:0
-#: code:addons/account_payment_order_vendor_email/models/account_payment_mode.py:0
 #, python-format
 msgid "An email is not able to send to %s vendor."
+msgstr ""
+
+#. module: account_payment_order_vendor_email
+#. odoo-python
+#: code:addons/account_payment_order_vendor_email/models/account_payment_mode.py:0
+#, python-format
+msgid "An email is sent successfully to %s vendor."
 msgstr ""
 
 #. module: account_payment_order_vendor_email

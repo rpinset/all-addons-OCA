@@ -671,6 +671,7 @@ msgstr "Pendent"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__priority
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Priority"
 msgstr "Prioritat"
 
@@ -903,6 +904,11 @@ msgstr "Temps (s)"
 msgid "Time required to execute this job in seconds. Average when grouped."
 msgstr ""
 "Temps necessari per executar el treball en segons. Mitjana quan s'agrupa."
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Tried many times"
+msgstr ""
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__activity_exception_decoration

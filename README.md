@@ -189,16 +189,16 @@ Date:   Tue Oct 14 14:37:31 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 3bbedebe6a5d50c7eb3fe641677413ebb34686c1
+commit fa9c349bd9649797abf21b61f9edf1632a78f183
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 3 07:39:06 2025 +0000
+Date:   Mon Jan 5 17:51:26 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (83 of 83 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: bank-payment-16.0/bank-payment-16.0-account_banking_sepa_direct_debit
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_banking_sepa_direct_debit/it/
+    Translation: bank-payment-16.0/bank-payment-16.0-account_payment_order_vendor_email
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_payment_order_vendor_email/it/
 
 
 ## account-reconcile
@@ -258,16 +258,16 @@ Date:   Sun Feb 2 18:15:34 2025 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 7c20ae04369cc028f76e4111985882cbf7688168
-Author: Bastian Günther <mail@bastian-guenther.de>
-Date:   Thu Sep 25 13:31:01 2025 +0000
+commit e5762cbf7338539857a7bfca8e2251baf8aebca1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 5 17:40:29 2026 +0000
 
-    Translated using Weblate (German)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (159 of 159 strings)
     
-    Translation: queue-16.0/queue-16.0-queue_job_cron_jobrunner
-    Translate-URL: https://translation.odoo-community.org/projects/queue-16-0/queue-16-0-queue_job_cron_jobrunner/de/
+    Translation: queue-16.0/queue-16.0-queue_job
+    Translate-URL: https://translation.odoo-community.org/projects/queue-16-0/queue-16-0-queue_job/it/
 
 
 ## connector-accountedge
@@ -394,16 +394,16 @@ Date:   Tue Nov 11 09:41:04 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit dc94fe8514391d643bef038ac39c7719ea8d55c6
+commit c8bbd7a840ed20709a2cfdd26104ac5acce7485d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 1 11:29:21 2026 +0000
+Date:   Mon Jan 5 17:44:00 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: partner-contact-16.0/partner-contact-16.0-base_partner_merge_user_consolidation
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-16-0/partner-contact-16-0-base_partner_merge_user_consolidation/it/
+    Translation: partner-contact-16.0/partner-contact-16.0-partner_address_format_domestic
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-16-0/partner-contact-16-0-partner_address_format_domestic/it/
 
 
 ## sale-financial
@@ -476,11 +476,16 @@ Date:   Wed Dec 31 17:38:13 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 56dbca792091a0e8a6deee5b4fb3e19651d5a539
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 29 09:05:29 2025 +0000
+commit 0b45e0517271bbdcf6045f0cadd383f66106e676
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 5 17:49:56 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: dms-16.0/dms-16.0-sale_dms_field
+    Translate-URL: https://translation.odoo-community.org/projects/dms-16-0/dms-16-0-sale_dms_field/it/
 
 
 ## e-commerce
@@ -499,11 +504,16 @@ Date:   Fri Nov 28 08:30:15 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit ca50e5868c96ebaaaf2d16000b96d724d8891fac
+commit d9bb83329bc0e56fa9a8a4107979d180f120ebd9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 1 16:16:05 2026 +0000
+Date:   Mon Jan 5 17:48:21 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: edi-16.0/edi-16.0-account_edi_no_product_name_match
+    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-account_edi_no_product_name_match/it/
 
 
 ## field-service
@@ -563,11 +573,16 @@ Date:   Tue Sep 16 09:03:13 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 22d73ad6f136b2e19c8be6900998e9c20aaec395
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 3 07:36:09 2025 +0000
+commit c81ffe2681f3c8f1dedd21cebf7eeb7285378fbd
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Mon Jan 5 11:25:55 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: timesheet-16.0/timesheet-16.0-sale_timesheet_task_exclude
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-16-0/timesheet-16-0-sale_timesheet_task_exclude/pt_BR/
 
 
 ## hr
@@ -1538,16 +1553,16 @@ Date:   Sat Jun 21 10:46:55 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 1390f0dc55a9840bb1aed79e76acfa6c372b5f0f
+commit bf1d99097d067f2a017fd275adaafc1503605b61
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 10 09:37:03 2025 +0000
+Date:   Mon Jan 5 17:40:17 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (45 of 45 strings)
+    Currently translated at 100.0% (44 of 44 strings)
     
-    Translation: rest-framework-16.0/rest-framework-16.0-fastapi_auth_partner
-    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-16-0/rest-framework-16-0-fastapi_auth_partner/it/
+    Translation: rest-framework-16.0/rest-framework-16.0-fastapi
+    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-16-0/rest-framework-16-0-fastapi/it/
 
 
 ## role-policy
