@@ -131,11 +131,11 @@ Date:   Tue Dec 9 10:49:51 2025 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 740777fe2107ef96bc6af2d00f267edc4b4b5a69
+commit 5550dae5ddeadf1519d86bef54c548e2ee0cf15a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 5 02:33:56 2025 +0000
+Date:   Sun Jan 4 22:27:05 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## operating-unit
