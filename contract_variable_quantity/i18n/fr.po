@@ -10,14 +10,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-26 11:50+0000\n"
-"PO-Revision-Date: 2017-11-30 01:41+0000\n"
-"Last-Translator: leemannd <denis.leemann@camptocamp.com>, 2017\n"
+"PO-Revision-Date: 2026-01-03 21:42+0000\n"
+"Last-Translator: Quentin THEURET <quentin@quentin-theuret.net>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -29,11 +30,17 @@ msgid ""
 "                                    '=', True)])\n"
 "                                </code>"
 msgstr ""
+"<code>\n"
+"                                    result =\n"
+"                                    env['product.product']"
+".search_count([('sale_ok',\n"
+"                                    '=', True)])\n"
+"                                </code>"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "<i>context</i>: Current context dictionary."
-msgstr ""
+msgstr "<i>context</i> : Dictionnaire du contexte actuel."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -41,6 +48,8 @@ msgid ""
 "<i>contract</i>: Contract whose line\n"
 "                                    belongs to."
 msgstr ""
+"<i>contract</i> : Contrat auquel appartiennent\n"
+"                                    les lignes."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -48,6 +57,8 @@ msgid ""
 "<i>env</i>: Environment variable for\n"
 "                                    getting other models."
 msgstr ""
+"<i>env</i> : Variable d'environnement pour\n"
+"                                    récupérer les autres modèles."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -55,6 +66,8 @@ msgid ""
 "<i>invoice</i>: Invoice (header) being\n"
 "                                    created."
 msgstr ""
+"<i>invoice</i> : Facture (en-tête) qui vient\n"
+"                                    d'être créé."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -62,21 +75,24 @@ msgid ""
 "<i>line</i>: Contract recurring invoice\n"
 "                                    line that triggers this formula."
 msgstr ""
+"<i>line</i> : Ligne de la facture récurrente\n"
+"                                    qui déclenche cette formule."
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "<i>user</i>: Current user."
-msgstr ""
+msgstr "<i>user</i> : Utilisateur courant."
 
 #. module: contract_variable_quantity
 #: model:ir.model,name:contract_variable_quantity.model_contract_abstract_contract_line
 msgid "Abstract Recurring Contract Line"
-msgstr ""
+msgstr "Ligne de contrat récurrent (abstrait)"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.actions.act_window,help:contract_variable_quantity.action_contract_quantity_formula
 msgid "Click to create a new formula for variable quantities."
 msgstr ""
+"Cliquez pour créer une nouvelle formule de calcul des quantités variables."
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__code
@@ -87,17 +103,17 @@ msgstr "Code"
 #. module: contract_variable_quantity
 #: model:ir.model,name:contract_variable_quantity.model_contract_contract
 msgid "Contract"
-msgstr ""
+msgstr "Contrat"
 
 #. module: contract_variable_quantity
 #: model:ir.model,name:contract_variable_quantity.model_contract_line
 msgid "Contract Line"
-msgstr ""
+msgstr "Ligne de contrat"
 
 #. module: contract_variable_quantity
 #: model:ir.model,name:contract_variable_quantity.model_contract_line_qty_formula
 msgid "Contract Line Formula"
-msgstr ""
+msgstr "Formule de la ligne de contrat"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__create_uid
@@ -122,29 +138,31 @@ msgid ""
 "Error evaluating code.\n"
 "Details: %s"
 msgstr ""
+"Erreur d'évaluation du code.\n"
+"Détails : %s"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "Example of Python code"
-msgstr ""
+msgstr "Exemple de code Python"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields.selection,name:contract_variable_quantity.selection__contract_abstract_contract_line__qty_type__fixed
 #: model:ir.model.fields.selection,name:contract_variable_quantity.selection__contract_line__qty_type__fixed
 #: model:ir.model.fields.selection,name:contract_variable_quantity.selection__contract_template_line__qty_type__fixed
 msgid "Fixed quantity"
-msgstr ""
+msgstr "Quantité fixe"
 
 #. module: contract_variable_quantity
 #: model:ir.actions.act_window,name:contract_variable_quantity.action_contract_quantity_formula
 #: model:ir.ui.menu,name:contract_variable_quantity.menu_contract_quantity_formula
 msgid "Formulas (quantity)"
-msgstr ""
+msgstr "Formules (quantité)"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
 msgid "Help with Python expressions."
-msgstr ""
+msgstr "Aide avec les expressions Python."
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__id
@@ -155,6 +173,8 @@ msgstr "ID"
 #: model:ir.model.fields,help:contract_variable_quantity.field_contract_contract__skip_zero_qty
 msgid "If checked, contract lines with 0 qty don't create invoice line"
 msgstr ""
+"Si cochée, les lignes de contrat avec 0 quantité ne créeront pas de lignes "
+"de facture"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line_qty_formula__write_uid
@@ -177,31 +197,31 @@ msgstr "Nom"
 #: code:addons/contract_variable_quantity/models/contract_line_formula.py:0
 #, python-format
 msgid "No valid result returned."
-msgstr ""
+msgstr "Pas de résultat valide retourné."
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_abstract_contract_line__qty_formula_id
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line__qty_formula_id
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_template_line__qty_formula_id
 msgid "Qty. formula"
-msgstr ""
+msgstr "Formule de Qté"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_abstract_contract_line__qty_type
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_line__qty_type
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_template_line__qty_type
 msgid "Qty. type"
-msgstr ""
+msgstr "Type de Qté"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields,field_description:contract_variable_quantity.field_contract_contract__skip_zero_qty
 msgid "Skip Zero Qty Lines"
-msgstr ""
+msgstr "Ignorer les lignes avec Qté Zéro"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.portal_contract_page
 msgid "Variable"
-msgstr ""
+msgstr "Variable"
 
 #. module: contract_variable_quantity
 #: model:ir.model.fields.selection,name:contract_variable_quantity.selection__contract_abstract_contract_line__qty_type__variable
@@ -216,6 +236,8 @@ msgid ""
 "You can use these variables to compute your\n"
 "                                formula:"
 msgstr ""
+"Vous pouvez utiliser ces variables pour calculer votre\n"
+"                                formule :"
 
 #. module: contract_variable_quantity
 #: model_terms:ir.ui.view,arch_db:contract_variable_quantity.view_contract_line_qty_formula_form
@@ -226,6 +248,11 @@ msgid ""
 "                                the quantity to invoice in the variable\n"
 "                                'result'."
 msgstr ""
+"Vous devez insérer un bloc de code Python valide qui\n"
+"                                enregistrera au bon moment une valeur entiè"
+"re/décimale\n"
+"                                de la quantité à facturer pour la variable\n"
+"                                'result'."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Dernière modification le"

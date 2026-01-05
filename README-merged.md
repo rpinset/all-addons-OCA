@@ -1242,12 +1242,12 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_import_async](base_import_async/) | 18.0.1.0.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 18.0.2.0.2 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
+[queue_job](queue_job/) | 18.0.2.0.9 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 18.0.1.0.0 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 18.0.1.1.1 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 18.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 18.0.1.0.0 |  | Control which users are subscribed to queue job notifications
-[test_queue_job](test_queue_job/) | 18.0.2.0.0 |  | Queue Job Tests
+[test_queue_job](test_queue_job/) | 18.0.2.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Queue Job Tests
 [test_queue_job_batch](test_queue_job_batch/) | 18.0.1.0.0 |  | Test Job Queue Batch
 
 [//]: # (end addons)
@@ -1850,7 +1850,7 @@ addon | version | maintainers | summary
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 18.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.1 |  | Multiple warehouse source locations for Sale order
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
-[sale_stock_delivery_address](sale_stock_delivery_address/) | 18.0.1.0.0 |  | Sale Stock Delivery Address
+[sale_stock_delivery_address](sale_stock_delivery_address/) | 18.0.1.1.0 |  | Sale Stock Delivery Address
 [sale_stock_delivery_state](sale_stock_delivery_state/) | 18.0.1.0.0 |  | Change the way to compute the delivery state
 [sale_stock_line_customer_ref](sale_stock_line_customer_ref/) | 18.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Allow you to add a customer reference on order lines propagaged to move operations.
 [sale_stock_line_sequence](sale_stock_line_sequence/) | 18.0.1.0.0 |  | Glue Module for Sale Order Line Sequence and Stock Picking Line Sequence
@@ -2485,7 +2485,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 18.0.1.0.6 |  | Document Management System for Odoo
 [dms_auto_classification](dms_auto_classification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Auto classify documents into DMS
-[dms_field](dms_field/) | 18.0.1.0.4 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 18.0.1.1.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Auto classify files into embedded DMS
 [dms_user_role](dms_user_role/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | DMS User Role
 [hr_dms_field](hr_dms_field/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Add dms field for employees
@@ -3360,6 +3360,7 @@ addon | version | maintainers | summary
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 18.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 18.0.1.0.2 |  | Intercompany PO/SO rules
 [purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 18.0.1.0.2 |  | Intercompany PO/SO rules with warehouse
+[res_company_active](res_company_active/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Company Categories
 [res_company_code](res_company_code/) | 18.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'code' field on company model
 [res_company_search_view](res_company_search_view/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a search view for company model
@@ -4505,6 +4506,7 @@ addon | version | maintainers | summary
 [l10n_jp_country_state](l10n_jp_country_state/) | 18.0.1.0.0 |  | Japan Country States
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 18.0.1.0.0 |  | Japan Partner Title QWeb
 [l10n_jp_partner_zip_address](l10n_jp_partner_zip_address/) | 18.0.1.0.1 |  | Japan Partner Zip Address
+[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 18.0.1.0.0 |  | Japan Summary Invoice
 [report_alternative_layout](report_alternative_layout/) | 18.0.1.1.0 |  | Report Alternative Layout
 
 [//]: # (end addons)
@@ -5586,6 +5588,7 @@ addon | version | maintainers | summary
 [delivery_carrier_shipping_policy](delivery_carrier_shipping_policy/) | 18.0.1.0.0 |  | Delivery Carrier Shipping Policy
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
 [delivery_correos_express](delivery_correos_express/) | 18.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
+[delivery_dachser](delivery_dachser/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Delivery Carrier implementation for Dachser API
 [delivery_date_exclude_service](delivery_date_exclude_service/) | 18.0.1.0.0 |  | Exclude service products from delivery date computation
 [delivery_driver](delivery_driver/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow choose driver in delivery methods
 [delivery_driver_stock_picking_batch](delivery_driver_stock_picking_batch/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add drivers from delivery in stock picking batch
@@ -6033,7 +6036,7 @@ addon | version | maintainers | summary
 [stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Stock Picking Report - Product Sticker
 [stock_picking_report_salesperson](stock_picking_report_salesperson/) | 18.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Salesperson info in Stock Picking reports
 [stock_picking_report_summary](stock_picking_report_summary/) | 18.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Stock Picking Report Summary
-[stock_picking_report_valued](stock_picking_report_valued/) | 18.0.1.0.2 |  | Adding Valued Picking on Delivery Slip report
+[stock_picking_report_valued](stock_picking_report_valued/) | 18.0.1.0.3 |  | Adding Valued Picking on Delivery Slip report
 [stock_portal_lot_list_download](stock_portal_lot_list_download/) | 18.0.1.0.0 |  | Allows portal users to download lot list of delivery pickings in Excel format.
 [stock_quantity_history_location](stock_quantity_history_location/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/rolandojduartem'><img src='https://github.com/rolandojduartem.png' width='32' height='32' style='border-radius:50%;' alt='rolandojduartem'/></a> | Provides stock quantity by location on past date
 
@@ -6870,6 +6873,7 @@ addon | version | maintainers | summary
 [product_attribute_value_archive](product_attribute_value_archive/) | 18.0.1.0.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Allows to archive a `product.attribute.value` referenced by archived `product.product`.
 [product_variant_change_attribute_value](product_variant_change_attribute_value/) | 18.0.1.0.0 |  | Product Variant Change Attribute Value
 [product_variant_configurator](product_variant_configurator/) | 18.0.1.0.0 |  | Provides an abstract model for product variant configuration.
+[product_variant_configurator_manual_creation](product_variant_configurator_manual_creation/) | 18.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Provides a wizards to make variants on demand
 [product_variant_default_code](product_variant_default_code/) | 18.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Allow to automatically generate the variant default code
 [product_variant_name](product_variant_name/) | 18.0.1.0.0 |  | Product Variant Name
 [product_variant_sale_price](product_variant_sale_price/) | 18.0.1.0.1 |  | Allows to write fixed prices in product variants
@@ -7723,7 +7727,7 @@ addon | version | maintainers | summary
 [attachment_queue](attachment_queue/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
 [attachment_synchronize](attachment_synchronize/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Attachment Synchronize
 [attachment_unindex_content](attachment_unindex_content/) | 18.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
-[auditlog](auditlog/) | 18.0.2.0.4 |  | Audit Log
+[auditlog](auditlog/) | 18.0.2.0.5 |  | Audit Log
 [auto_backup](auto_backup/) | 18.0.1.0.1 |  | Backups database
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 18.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Automatically delete old mail messages and attachments
 [base_cron_exclusion](base_cron_exclusion/) | 18.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
@@ -7762,7 +7766,7 @@ addon | version | maintainers | summary
 [scheduler_error_mailer](scheduler_error_mailer/) | 18.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 18.0.1.0.3 | <a href='https://github.com/barsi'><img src='https://github.com/barsi.png' width='32' height='32' style='border-radius:50%;' alt='barsi'/></a> <a href='https://github.com/naglis'><img src='https://github.com/naglis.png' width='32' height='32' style='border-radius:50%;' alt='naglis'/></a> <a href='https://github.com/versada'><img src='https://github.com/versada.png' width='32' height='32' style='border-radius:50%;' alt='versada'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/fernandahf'><img src='https://github.com/fernandahf.png' width='32' height='32' style='border-radius:50%;' alt='fernandahf'/></a> | Report Odoo errors to Sentry
 [session_db](session_db/) | 18.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Store sessions in DB
-[test_auditlog](test_auditlog/) | 18.0.1.0.2 |  | Additional unit tests for Audit Log based on accounting models
+[test_auditlog](test_auditlog/) | 18.0.1.0.3 |  | Additional unit tests for Audit Log based on accounting models
 [test_base_time_window](test_base_time_window/) | 18.0.1.0.0 |  | Test Base model to handle time windows
 [tracking_manager](tracking_manager/) | 18.0.1.1.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
 [tracking_manager_domain](tracking_manager_domain/) | 18.0.1.0.1 | <a href='https://github.com/CRogos'><img src='https://github.com/CRogos.png' width='32' height='32' style='border-radius:50%;' alt='CRogos'/></a> | This module extends the tracking manager to allow to define a domain on fields to track changes only when certain conditions apply.
@@ -8307,6 +8311,7 @@ addon | version | maintainers | summary
 [extendable](extendable/) | 18.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Extendable classes registry loader for Odoo
 [fastapi](fastapi/) | 18.0.1.3.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_api_key](fastapi_auth_api_key/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Fastapi Auth API Key
+[fastapi_auth_jwt](fastapi_auth_jwt/) | 18.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | JWT bearer token authentication for FastAPI.
 [pydantic](pydantic/) | 18.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Utility addon to ease mapping between Pydantic and Odoo models
 [rest_log](rest_log/) | 18.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Track REST API calls into DB
 
@@ -8982,6 +8987,7 @@ addon | version | maintainers | summary
 [website_require_login](website_require_login/) | 18.0.1.0.0 |  | Website Login Required
 [website_search_header](website_search_header/) | 18.0.1.0.0 |  | Website Search in Header
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 18.0.1.0.1 |  | Allow to select country in a dropdown
+[website_user_login_redirect_custom](website_user_login_redirect_custom/) | 18.0.1.0.0 |  | Redirect website/portal user to custom URL after login or signup
 [website_whatsapp](website_whatsapp/) | 18.0.1.0.1 | <a href='https://github.com/ioans73'><img src='https://github.com/ioans73.png' width='32' height='32' style='border-radius:50%;' alt='ioans73'/></a> | Whatsapp integration
 
 [//]: # (end addons)
