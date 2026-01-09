@@ -165,6 +165,7 @@ class StockWarehouse(models.Model):
                 },
                 "rules_values": {
                     "active": True,
+                    "propagate_carrier": True,
                 },
             },
             "rma_out_route_id": {
@@ -181,6 +182,7 @@ class StockWarehouse(models.Model):
                 },
                 "rules_values": {
                     "active": True,
+                    "propagate_carrier": True,
                 },
             },
         }

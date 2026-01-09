@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+        <record model="res.bank" id="bank_sber">
+            <field name="name">ПАО Сбербанк</field>
+            <field name="bic">044525225</field>
+            <field name="city">г. Москва</field>
+            <field name="state" ref="base.state_ru_mow" />
+            <field name="street">улица Вавилова, дом 19</field>
+            <field name="zip">117312</field>
+            <field name="country" ref="base.ru" />
+            <field name="email">sberbank@sberbank.ru</field>
+        </record>
+        <record model="res.bank.corracc" id="bank_sber_corracc">
+            <field name="bank_id" ref="bank_sber" />
+            <field name="corr_acc">30101810400000000225</field>
+        </record>
+
+        <record model="res.bank" id="bank_alpha">
+            <field name="name">АО "АЛЬФА-БАНК"</field>
+            <field name="bic">044525593</field>
+            <field name="city">г. Москва</field>
+            <field name="state" ref="base.state_ru_mow" />
+            <field name="street">улица Каланчевская, дом 27</field>
+            <field name="zip">107078</field>
+            <field name="country" ref="base.ru" />
+            <field name="phone">+7 495 620-91-91</field>
+            <field name="email">mail@alfabank.ru</field>
+        </record>
+        <record model="res.bank.corracc" id="bank_alpha_corracc">
+            <field name="bank_id" ref="bank_alpha" />
+            <field name="corr_acc">30101810200000000593</field>
+        </record>
+
+        <record model="res.bank" id="bank_vtb">
+            <field name="name">Банк ВТБ (ПАО)</field>
+            <field name="bic">044525187</field>
+            <field name="city">г. Москва</field>
+            <field name="state" ref="base.state_ru_mow" />
+            <field name="street">Пресненская набережная, дом 12</field>
+            <field name="zip">123100</field>
+            <field name="country" ref="base.ru" />
+            <field name="phone">+7 495 775-78-22</field>
+        </record>
+        <record model="res.bank.corracc" id="bank_vtb_corracc">
+            <field name="bank_id" ref="bank_vtb" />
+            <field name="corr_acc">30101810700000000187</field>
+        </record>
+
+</odoo>

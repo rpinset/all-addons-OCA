@@ -1,0 +1,17 @@
+{
+    "name": "Russian - Banks",
+    "summary": "Russian banks and their addresses",
+    "version": "17.0.1.0.0",
+    "countries": ["ru"],
+    "category": "Accounting/Localizations",
+    "website": "https://github.com/OCA/l10n-russia",
+    "author": "CodUP, Katulos, Odoo Community Association (OCA)",
+    "maintainers": ["Katulos"],
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": ["account"],
+    "auto_install": ["account"],
+    "data": ["security/ir.model.access.csv", "views/res_bank.xml"],
+    "demo": ["data/res_bank_demo.xml"],
+}

@@ -1,0 +1,189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ru_banks
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-08 00:00+0000\n"
+"PO-Revision-Date: 2026-01-08 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__bank_id
+msgid "Bank"
+msgstr "Банк"
+
+#. module: l10n_ru_banks
+#: model:ir.model,name:l10n_ru_banks.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Банковские Счета"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__corr_acc
+msgid "Correspondent account"
+msgstr "Корреспондентский счет"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,help:l10n_ru_banks.field_res_bank_corracc__corr_acc
+msgid "Correspondent account used by Russian banks"
+msgstr "Корреспондентский счет, используемый Российскими банками."
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank__corr_acc_ids
+msgid "Correspondent accounts"
+msgstr "Корреспондентские счета"
+
+#. module: l10n_ru_banks
+#: model:ir.model,name:l10n_ru_banks.model_res_bank_corracc
+msgid "Correspondent accounts of Russian banks"
+msgstr "Корреспондентские счета Российских банков"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank__country_code
+msgid "Country Code"
+msgstr "Код страны"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__create_uid
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__create_date
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__display_name
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Downloaded archive is empty"
+msgstr "Загруженный архив пуст"
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Error reading or extracting archive: %s"
+msgstr "Ошибка при чтении или извлечении архива: %s"
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Failed to save file to disk: %s"
+msgstr "Не удалось сохранить файл на диск: %s"
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "HTTP error while downloading file"
+msgstr "Ошибка HTTP при загрузке файла"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__id
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Import complete: %s banks created, %s updated."
+msgstr "Импорт завершен: %s банков создано, %s обновлено."
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Import of Banks from the Central Bank of the Russian Federation"
+msgstr "Импорт банков из Центрального банка Российской Федерации"
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Invalid XML format in downloaded file: %s"
+msgstr "В загруженном файле обнаружена ошибка формата XML: %s"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__write_uid
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_res_bank_corracc__write_date
+#: model:ir.model.fields,field_description:l10n_ru_banks.field_update_ru_banks_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Network error while downloading file: %s"
+msgstr "Сетевая ошибка при загрузке файла: %s"
+
+#. module: l10n_ru_banks
+#: model:ir.model,name:l10n_ru_banks.model_res_bank
+msgid "Russian Banks"
+msgstr "Российские Банки"
+
+#. module: l10n_ru_banks
+#: model:ir.model.fields,help:l10n_ru_banks.field_res_bank__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"Код страны ISO в двух символах. \n"
+"Вы можете использовать это поле для быстрого поиска."
+
+#. module: l10n_ru_banks
+#. odoo-python
+#: code:addons/l10n_ru_banks/wizard/update_banks_wizard.py:0
+#, python-format
+msgid "Timed out while downloading file from CBR"
+msgstr "Истекло время ожидания при загрузке файла из ЦБ РФ."
+
+#. module: l10n_ru_banks
+#: model_terms:ir.ui.view,arch_db:l10n_ru_banks.update_ru_banks_wizard_form
+msgid "Update"
+msgstr "Обновить"
+
+#. module: l10n_ru_banks
+#: model:ir.actions.server,name:l10n_ru_banks.ir_cron_action_update_ru_banks_ir_actions_server
+msgid "Update Banks Russian"
+msgstr ""
+
+#. module: l10n_ru_banks
+#: model:ir.model,name:l10n_ru_banks.model_update_ru_banks_wizard
+msgid "Update Banks Russian Wizard"
+msgstr "Обновление банков России"
+
+#. module: l10n_ru_banks
+#: model:ir.actions.act_window,name:l10n_ru_banks.update_ru_banks_wizard_action
+#: model:ir.ui.menu,name:l10n_ru_banks.menu_action_update_ru_banks
+#: model_terms:ir.ui.view,arch_db:l10n_ru_banks.update_ru_banks_wizard_form
+msgid "Update the directory of Russian banks"
+msgstr "Обновить справочник Российских банков"

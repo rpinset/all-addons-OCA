@@ -962,7 +962,7 @@ addon | version | maintainers | summary
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_partner_reconcile](account_partner_reconcile/) | 17.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.26 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.27 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.6.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1220,7 +1220,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_import_async](base_import_async/) | 17.0.1.0.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 17.0.1.5.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
+[queue_job](queue_job/) | 17.0.1.5.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_cron](queue_job_cron/) | 17.0.1.1.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 17.0.1.1.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 17.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -1781,7 +1781,7 @@ addon | version | maintainers | summary
 [sale_order_priority](sale_order_priority/) | 17.0.1.0.1 |  | Define priority on sale orders
 [sale_order_product_assortment](sale_order_product_assortment/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 17.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Show product availability in sales order line product drop-down.
-[sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.1.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
+[sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.1.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.6 |  | Sale product in a secondary unit
@@ -4817,6 +4817,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_ru](l10n_ru/) | 17.0.1.0.0 | <a href='https://github.com/Katulos'><img src='https://github.com/Katulos.png' width='32' height='32' style='border-radius:50%;' alt='Katulos'/></a> | Russia - Accounting
+[l10n_ru_banks](l10n_ru_banks/) | 17.0.1.0.0 | <a href='https://github.com/Katulos'><img src='https://github.com/Katulos.png' width='32' height='32' style='border-radius:50%;' alt='Katulos'/></a> | Russian banks and their addresses
 
 [//]: # (end addons)
 
@@ -4926,7 +4927,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.5.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.0 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.8.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.8.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 17.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 17.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
@@ -4936,9 +4937,9 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
-[l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.1.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
-[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.1 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
-[l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
+[l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.1.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
+[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.2 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
+[l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.1 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
@@ -4953,7 +4954,7 @@ addon | version | maintainers | summary
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.0.0 |  | Punto de venta adaptado a la legislación española
-[l10n_es_pos_sii](l10n_es_pos_sii/) | 17.0.1.0.0 |  | Envío de pedidos del TPV al SII
+[l10n_es_pos_sii](l10n_es_pos_sii/) | 17.0.1.0.2 |  | Envío de pedidos del TPV al SII
 [l10n_es_reav](l10n_es_reav/) | 17.0.1.0.0 | <a href='https://github.com/Bilbonet'><img src='https://github.com/Bilbonet.png' width='32' height='32' style='border-radius:50%;' alt='Bilbonet'/></a> | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.0.2 |  | Libro de IVA
@@ -5774,7 +5775,7 @@ addon | version | maintainers | summary
 [stock_picking_operations_multilang](stock_picking_operations_multilang/) | 17.0.1.0.0 |  | Stock Picking Operations Multilang
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 17.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
-[stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.1.2 |  | Adding Valued Picking on Delivery Slip report
+[stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.2.0 |  | Adding Valued Picking on Delivery Slip report
 [stock_quant_history](stock_quant_history/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/rolandojduartem'><img src='https://github.com/rolandojduartem.png' width='32' height='32' style='border-radius:50%;' alt='rolandojduartem'/></a> | Provides stock quantity by location on past date
@@ -5824,7 +5825,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 17.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Product Warranty
-[rma](rma/) | 17.0.3.2.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
+[rma](rma/) | 17.0.3.2.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 17.0.1.1.0 |  | Manage lot in RMA
 [rma_repair](rma_repair/) | 17.0.1.0.2 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create a repair order from rma
 [rma_sale](rma_sale/) | 17.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sale Order - Return Merchandise Authorization (RMA)
@@ -5873,7 +5874,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.5.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.5.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs

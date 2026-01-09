@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_res_bank_ru_form" model="ir.ui.view">
+        <field name="name">res.bank.ru.form</field>
+        <field name="model">res.bank</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_res_bank_form" />
+        <field name="arch" type="xml">
+            <field name="bic" position="after">
+                <field name="country_code" invisible="1" />
+                <field name="corr_acc_ids" invisible="country_code !='RU'" />
+            </field>
+        </field>
+    </record>
+
+    <record id="update_ru_banks_wizard_form" model="ir.ui.view">
+        <field name="name">update.ru.banks.wizard.form</field>
+        <field name="model">update.ru.banks.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Update the directory of Russian banks">
+                 <button
+                    class="btn-primary"
+                    type="object"
+                    name="action_import_banks"
+                >Update</button>
+            </form>
+        </field>
+    </record>
+
+    <record id="update_ru_banks_wizard_action" model="ir.actions.act_window">
+        <field name="name">Update the directory of Russian banks</field>
+        <field name="res_model">update.ru.banks.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="menu_action_update_ru_banks"
+        name="Update the directory of Russian banks"
+        parent="account.account_banks_menu"
+        action="update_ru_banks_wizard_action"
+        groups="account.group_account_manager"
+        sequence="4"
+    />
+
+    <record id="ir_cron_action_update_ru_banks" model="ir.cron">
+        <field name="name">Update Banks Russian</field>
+        <field name="model_id" ref="l10n_ru_banks.model_update_ru_banks_wizard" />
+        <field name="state">code</field>
+        <field name="code">model.action_import_banks()</field>
+        <field name="user_id" ref="base.user_root" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+</odoo>

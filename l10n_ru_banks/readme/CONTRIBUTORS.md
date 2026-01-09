@@ -1,0 +1,2 @@
+- CodUP \<codup@mail.ru\> (\<http://codup.com\>)
+- Katulos \<katulos@protonmail.com\> (\<http://github.com/Katulos\>)
