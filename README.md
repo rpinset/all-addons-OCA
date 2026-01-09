@@ -117,16 +117,11 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 637c7203e79a4b4a135d9fd078444e7a2f31dfef
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:51 2025 +0000
+commit 2c1fd70f5a67c113242415bf071f83a3d02c04dd
+Author: Julien Hémono <julien@hemono.fr>
+Date:   Fri Jan 9 16:22:59 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: account-invoicing-14.0/account-invoicing-14.0-product_supplierinfo_for_customer_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-product_supplierinfo_for_customer_invoice/it/
+    Added translation using Weblate (French)
 
 
 ## account-fiscal-rule
@@ -404,16 +399,16 @@ Date:   Wed Jun 4 02:45:55 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 564c750bac91a500875043c7529ffbc3615c92b7
+commit 5b7f3ca1173cab546708179e5bd2b5ff41ea81bf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:42:21 2025 +0000
+Date:   Mon Jan 5 18:59:19 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (38 of 38 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: partner-contact-14.0/partner-contact-14.0-base_location_nuts
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-base_location_nuts/it/
+    Translation: partner-contact-14.0/partner-contact-14.0-partner_vat_unique
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_vat_unique/it/
 
 
 ## sale-financial
@@ -427,11 +422,11 @@ Date:   Sun Feb 9 18:27:50 2025 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit a146666b564ef93aff172f99d3118a5d3db306ad
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 24 07:17:21 2025 +0000
+commit e5e846c8dc595ee4955777fa136fb8915d29317f
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Jan 7 10:48:23 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## sale-reporting
@@ -1350,16 +1345,11 @@ Date:   Sun Feb 2 20:17:19 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 5e6df6ecc15463fd4137d3b50ced4d77a92d35ff
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:46:11 2025 +0000
+commit c76e254401fc02ca640cf8b131396e6f234703f3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 6 08:55:58 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (58 of 58 strings)
-    
-    Translation: project-14.0/project-14.0-project_wbs
-    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_wbs/it/
+    [BOT] post-merge updates
 
 
 ## project-agile
