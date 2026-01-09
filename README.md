@@ -377,11 +377,16 @@ Date:   Wed Jun 4 02:46:05 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit a4d2dc371ee778ab9d08b8797b79468a121f70d1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 29 17:08:02 2025 +0000
+commit 8501ce53068e572bd922351b84c5a3df097b7ba8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 5 18:59:16 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 50.0% (2 of 4 strings)
+    
+    Translation: partner-contact-15.0/partner-contact-15.0-partner_vat_unique
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_vat_unique/it/
 
 
 ## sale-financial
@@ -564,9 +569,9 @@ Date:   Tue Oct 21 07:03:56 2025 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 6881a9d6e60cbe285064463e6a52cf120b8bce1e
+commit 9411fd863a20894d423a748ef3107b365ec8255b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 14 16:55:29 2025 +0000
+Date:   Wed Jan 7 19:13:31 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1054,16 +1059,16 @@ Date:   Tue Sep 9 10:05:39 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 42e0d3621e3218756a91698dcc714a9a686458c8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:50:00 2025 +0000
+commit a27c555d23e8e5517fe068393495aba17e83b191
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jan 8 07:46:43 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-product_supplierinfo_for_customer_picking
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-product_supplierinfo_for_customer_picking/it/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_filter_lot
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_filter_lot/
 
 
 ## stock-logistics-tracking

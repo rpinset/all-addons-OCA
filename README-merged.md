@@ -3232,7 +3232,7 @@ addon | version | maintainers | summary
 [hr_attendance_missing_days](hr_attendance_missing_days/) | 15.0.1.0.0 |  | This modules generates attendances for working days without attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 15.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_overtime_manual](hr_attendance_overtime_manual/) | 15.0.1.0.0 |  | Allows adding manual overtime records
-[hr_attendance_reason](hr_attendance_reason/) | 15.0.1.3.0 |  | HR Attendance Reason
+[hr_attendance_reason](hr_attendance_reason/) | 15.0.1.3.1 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 15.0.1.3.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 15.0.1.0.3 |  | HR Attendance RFID
 
@@ -5831,7 +5831,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_outgoing](stock_picking_batch_outgoing/) | 15.0.1.2.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allows set on pickings the batch picking from last picking (out)
 [stock_picking_batch_set_quantity](stock_picking_batch_set_quantity/) | 15.0.1.1.0 |  | Adds buttons to set all reserved quantity in quantity done fields
 [stock_picking_customer_ref](stock_picking_customer_ref/) | 15.0.1.0.0 |  | This module displays the sale reference/description in the pickings
-[stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.1 |  | In picking out lots' selection, filter lots based on their location
+[stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.2 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_import_serial_number](stock_picking_import_serial_number/) | 15.0.2.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Import S/N from excel file for incoming pickings
 [stock_picking_info_lot](stock_picking_info_lot/) | 15.0.1.0.0 |  | Add lot information on Stock Transfer lines
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.3.1 |  | Adds link between pickings and invoices
