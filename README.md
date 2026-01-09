@@ -414,16 +414,16 @@ Date:   Wed Jun 4 02:45:40 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 1fcce07d8c763d34ca65ba885fd1820f6e1a71bd
+commit 0b8e370e637751c6ee22787d3a6467badbf9aa6c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:41:36 2025 +0000
+Date:   Mon Jan 5 18:59:02 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 85.0% (34 of 40 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-base_location_nuts
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_location_nuts/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-partner_vat_unique
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_vat_unique/it/
 
 
 ## sale-financial
