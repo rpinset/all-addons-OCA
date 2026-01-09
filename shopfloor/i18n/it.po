@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-08-16 13:25+0000\n"
+"PO-Revision-Date: 2026-01-08 17:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -417,8 +417,9 @@ msgstr "Conferma modifica ubicazione da %(location_from)s a %(location_to)s?"
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
-msgid "Content transfer to {} completed"
-msgstr "Tasferimento contenuto a {} completato"
+msgid ""
+"Content line transferred from %(location_name)s to %(location_dest_name)s"
+msgstr "Riga contenuto trasferita da %(location_name)s a %(location_dest_name)s"
 
 #. module: shopfloor
 #. odoo-python
@@ -2363,6 +2364,10 @@ msgstr "Prelievo per area"
 #, python-format
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
+
+#, python-format
+#~ msgid "Content transfer to {} completed"
+#~ msgstr "Tasferimento contenuto a {} completato"
 
 #, python-format
 #~ msgid ""

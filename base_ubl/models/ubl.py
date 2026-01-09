@@ -81,20 +81,24 @@ class BaseUbl(models.AbstractModel):
     def _ubl_add_contact(
         self, partner, parent_node, ns, node_name="Contact", version="2.1"
     ):
-        contact = etree.SubElement(parent_node, ns["cac"] + node_name)
+        contact = None  # Do not create an empty contact element
         contact_id_text = self._ubl_get_contact_id(partner)
         if contact_id_text:
+            contact = etree.SubElement(parent_node, ns["cac"] + node_name)
             contact_id = etree.SubElement(contact, ns["cbc"] + "ID")
             contact_id.text = contact_id_text
         if partner.parent_id:
+            contact = contact or etree.SubElement(parent_node, ns["cac"] + node_name)
             contact_name = etree.SubElement(contact, ns["cbc"] + "Name")
             contact_name.text = partner.name or partner.parent_id.name
         phone = partner.phone or partner.commercial_partner_id.phone
         if phone:
+            contact = contact or etree.SubElement(parent_node, ns["cac"] + node_name)
             telephone = etree.SubElement(contact, ns["cbc"] + "Telephone")
             telephone.text = phone
         email = partner.email or partner.commercial_partner_id.email
         if email:
+            contact = contact or etree.SubElement(parent_node, ns["cac"] + node_name)
             electronicmail = etree.SubElement(contact, ns["cbc"] + "ElectronicMail")
             electronicmail.text = email
 
@@ -373,7 +377,7 @@ class BaseUbl(models.AbstractModel):
         return ""
 
     @api.model
-    def _ubl_add_item(
+    def _ubl_add_item(  # noqa  C901
         self,
         name,
         product,
@@ -441,10 +445,12 @@ class BaseUbl(models.AbstractModel):
                     schemeID="0160",  # GTIN = 0160
                 )
                 std_identification_id.text = product.barcode
-            # I'm not 100% sure, but it seems that ClassifiedTaxCategory
-            # contains the taxes of the product without taking into
-            # account the fiscal position
-            if type_ == "sale":
+            if taxes is not None:
+                pass
+                # Provide the line taxes to this method otherwise it will
+                # fallback on the product taxes without taking into account the
+                # fiscal position
+            elif type_ == "sale":
                 taxes = product.taxes_id.filtered(
                     lambda t: t.unece_type_id.code == "VAT"
                 )
@@ -452,16 +458,17 @@ class BaseUbl(models.AbstractModel):
                 taxes = product.supplier_taxes_id.filtered(
                     lambda t: t.unece_type_id.code == "VAT"
                 )
-            skip_taxes = self.env.context.get("ubl_add_item__skip_taxes")
-            if taxes and not skip_taxes:
-                for tax in taxes:
-                    self._ubl_add_tax_category(
-                        tax,
-                        item,
-                        ns,
-                        node_name="ClassifiedTaxCategory",
-                        version=version,
-                    )
+        skip_taxes = self.env.context.get("ubl_add_item__skip_taxes")
+        if taxes and not skip_taxes:
+            for tax in taxes:
+                self._ubl_add_tax_category(
+                    tax,
+                    item,
+                    ns,
+                    node_name="ClassifiedTaxCategory",
+                    version=version,
+                )
+        if product:
             for attribute_value in product.attribute_line_ids.mapped("value_ids"):
                 item_property = etree.SubElement(
                     item, ns["cac"] + "AdditionalItemProperty"
