@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-03-13 11:40+0000\n"
+"PO-Revision-Date: 2026-01-05 21:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_invoice_facturx
 #. odoo-python
@@ -41,7 +41,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_invoice_facturx/models/account_move.py:0
 msgid "Discount"
-msgstr ""
+msgstr "Sconto"
 
 #. module: account_invoice_facturx
 #. odoo-python
@@ -101,7 +101,7 @@ msgstr "Tipo imposta UNECE non presente nell'imposta '%s'"
 #. odoo-python
 #: code:addons/account_invoice_facturx/models/account_move.py:0
 msgid "Missing UNECE code on payment method '%s'."
-msgstr ""
+msgstr "Codice UNECE non presente nel metodo di pagamento '%s'."
 
 #. module: account_invoice_facturx
 #. odoo-python
@@ -123,6 +123,10 @@ msgid ""
 "which is not a VAT tax and is not configured with the option 'Affect Base of "
 "Subsequent Taxes'. This is not supported."
 msgstr ""
+"Nella fattura %(invoice)s, la riga della fattura '%(line)s' presenta "
+"un'imposta '%(tax)s' che non è un'imposta IVA e non è configurata con "
+"l'opzione 'Influenza la base imponibile delle imposte successive'. Questa "
+"opzione non è supportata."
 
 #. module: account_invoice_facturx
 #. odoo-python
@@ -131,6 +135,8 @@ msgid ""
 "On invoice %(invoice)s, there are several VAT taxes on invoice line "
 "%(line)s. This should not happen."
 msgstr ""
+"Nella fattura %(invoice)s, sono presenti diverse imposte IVA sulla riga "
+"%(line)s della fattura. Ciò non dovrebbe accadere."
 
 #. module: account_invoice_facturx
 #. odoo-python

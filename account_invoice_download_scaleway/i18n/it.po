@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-29 16:26+0000\n"
+"PO-Revision-Date: 2026-01-05 21:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -19,18 +19,18 @@ msgstr ""
 #. module: account_invoice_download_scaleway
 #: model:ir.model.fields,field_description:account_invoice_download_scaleway.field_account_invoice_download_config__backend
 msgid "Backend"
-msgstr ""
+msgstr "Backend"
 
 #. module: account_invoice_download_scaleway
 #: code:addons/account_invoice_download_scaleway/models/account_invoice_download_config.py:0
 #, python-format
 msgid "Cannot connect to the Scaleway API. Error message: '%s'."
-msgstr ""
+msgstr "Impossibile connettersi all'API Scaleway. Messaggio di errore: '%s'."
 
 #. module: account_invoice_download_scaleway
 #: model:ir.model,name:account_invoice_download_scaleway.model_account_invoice_download_config
 msgid "Configuration for the download of Supplier Invoices"
-msgstr ""
+msgstr "Configurazione per scaricare le fatture del fornitore"
 
 #. module: account_invoice_download_scaleway
 #: model:ir.model.fields,field_description:account_invoice_download_scaleway.field_account_invoice_download_config__display_name
@@ -45,20 +45,20 @@ msgstr "ID"
 #. module: account_invoice_download_scaleway
 #: model:ir.model.fields,field_description:account_invoice_download_scaleway.field_account_invoice_download_config____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_invoice_download_scaleway
 #: model:ir.model.fields.selection,name:account_invoice_download_scaleway.selection__account_invoice_download_config__backend__scaleway
 msgid "Scaleway"
-msgstr ""
+msgstr "Scaleway"
 
 #. module: account_invoice_download_scaleway
 #: model:ir.model.fields,field_description:account_invoice_download_scaleway.field_account_invoice_download_config__scaleway_secret_key
 msgid "Scaleway Secret Key"
-msgstr ""
+msgstr "Chiave segreta Scaleway"
 
 #. module: account_invoice_download_scaleway
 #: code:addons/account_invoice_download_scaleway/models/account_invoice_download_config.py:0
 #, python-format
 msgid "You must set the Scaleway Secret key."
-msgstr ""
+msgstr "Bisogna impostare la chiave segreta Scaleway."
