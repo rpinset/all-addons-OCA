@@ -7309,6 +7309,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_folio_sale_line__reservation_line_ids
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__nights
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__nights
+#: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Nights"
 msgstr "Noches"
 
@@ -12241,18 +12242,6 @@ msgid "Total amount"
 msgstr "Importe total"
 
 #. module: pms
-#: model_terms:ir.ui.view,arch_db:pms.traveller_report
-msgid ""
-"Total amount\n"
-"                        (Reservation Card):"
-msgstr ""
-
-#. module: pms
-#: model_terms:ir.ui.view,arch_db:pms.traveller_report
-msgid "Total amount (Reservation Card):"
-msgstr "Importe total (Tarjeta de Reserva):"
-
-#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__credit
 msgid "Total amount this customer owes you."
 msgstr "Cantidad total que este cliente le debe."
@@ -13166,6 +13155,9 @@ msgstr ""
 #, python-format
 msgid "{room_name}: No room available in {checkin} <-> {checkout}."
 msgstr ""
+
+#~ msgid "Total amount (Reservation Card):"
+#~ msgstr "Importe total (Tarjeta de Reserva):"
 
 #, python-format
 #~ msgid "Room {} not available."

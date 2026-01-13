@@ -243,7 +243,7 @@ class PmsReservation(models.Model):
         compute="_compute_commission_percent",
         tracking=True,
     )
-    commission_amount = fields.Float(
+    commission_amount = fields.Monetary(
         string="Commission amount",
         help="Amount corresponding to commission",
         store=True,
@@ -573,7 +573,7 @@ class PmsReservation(models.Model):
         compute="_compute_amount_reservation",
         tracking=True,
     )
-    price_tax = fields.Float(
+    price_tax = fields.Monetary(
         string="Taxes Amount",
         help="Total of taxes in a reservation",
         readonly=True,
@@ -594,7 +594,7 @@ class PmsReservation(models.Model):
         store=True,
         compute="_compute_price_room_services_set",
     )
-    discount = fields.Float(
+    discount = fields.Monetary(
         help="Discount of total price in reservation",
         readonly=False,
         store=True,
@@ -603,7 +603,7 @@ class PmsReservation(models.Model):
         tracking=True,
     )
 
-    services_discount = fields.Float(
+    services_discount = fields.Monetary(
         help="Services discount",
         readonly=False,
         store=True,
@@ -1441,22 +1441,17 @@ class PmsReservation(models.Model):
                 record.checkin_partner_count = 0
                 record.checkin_partner_pending_count = 0
 
-    @api.depends("room_type_id", "partner_id")
+    @api.depends("room_type_id", "partner_id", "folio_id.fiscal_position_id")
     def _compute_tax_ids(self):
         for record in self:
             record = record.with_company(record.company_id)
-            if (
-                record.partner_id == record.company_id.partner_id
-                and record.company_id.self_billed_tax_ids
-            ):
-                record.tax_ids = record.company_id.self_billed_tax_ids
-            else:
-                product = self.env["product.product"].browse(
-                    record.room_type_id.product_id.id
-                )
-                record.tax_ids = product.taxes_id.filtered(
+            product = record.room_type_id.product_id
+            fiscal_position = record.folio_id.fiscal_position_id
+            record.tax_ids = fiscal_position.map_tax(
+                product.taxes_id.filtered(
                     lambda t, r=record: t.company_id == r.env.company
                 )
+            )
 
     @api.depends("reservation_line_ids", "reservation_line_ids.room_id")
     def _compute_rooms(self):
@@ -2500,7 +2495,7 @@ class PmsReservation(models.Model):
     def _compute_tourist_tax_lines(self):
         """Return ORM commands to sync tourist tax services on this reservation."""
         self.ensure_one()
-        if self.reservation_type != "normal":
+        if self.reservation_type != "normal" or not self.overnight_room:
             return False
         tax_products = self._get_tourist_tax_products(
             pms_property_id=self.pms_property_id.id

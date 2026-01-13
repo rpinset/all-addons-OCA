@@ -6,20 +6,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-01-11 16:43+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__attention_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__attention_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__attention_quality
 msgid "Attention given"
-msgstr ""
+msgstr "Attenzione data"
 
 #. module: partner_quality_log
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__1_bad
@@ -29,27 +31,27 @@ msgstr ""
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__1_bad
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__1_bad
 msgid "Bad"
-msgstr ""
+msgstr "Scadente"
 
 #. module: partner_quality_log
 #: model:ir.model,name:partner_quality_log.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: partner_quality_log
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__3_good
@@ -59,97 +61,97 @@ msgstr ""
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__3_good
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__3_good
 msgid "Good"
-msgstr ""
+msgstr "Buono"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Happy face"
-msgstr ""
+msgstr "Viso felice"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Neutral face"
-msgstr ""
+msgstr "Viso neutro"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__partner_id
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__partner_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__partner_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__partner_quality
 msgid "Partner Quality"
-msgstr ""
+msgstr "Qualità partner"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Partner quality: Bad"
-msgstr ""
+msgstr "Qualità partner: scadente"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Partner quality: Good"
-msgstr ""
+msgstr "Qualità partner: buono"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Partner quality: Regular"
-msgstr ""
+msgstr "Qualità partner: normale"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.view_partner_form
 msgid "Partner rating"
-msgstr ""
+msgstr "Valutazione partner"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__qualification_date
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__qualification_date
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__qualification_date
 msgid "Qualification Date"
-msgstr ""
+msgstr "Data valutazione"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__qualification_log_ids
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__qualification_log_ids
 msgid "Qualification Log"
-msgstr ""
+msgstr "Registro valutazione"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.view_res_partner_filter
 msgid "Qualification date"
-msgstr ""
+msgstr "Data valutazione"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.view_partner_form
 msgid "Qualification log"
-msgstr ""
+msgstr "Registro valutazione"
 
 #. module: partner_quality_log
 #: model:ir.model,name:partner_quality_log.model_quality_partner_log
 msgid "Quality Partner Log"
-msgstr ""
+msgstr "Registro qualità partner"
 
 #. module: partner_quality_log
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__quality_partner_log__attention_quality__2_regular
@@ -159,23 +161,23 @@ msgstr ""
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__price_quality__2_regular
 #: model:ir.model.fields.selection,name:partner_quality_log.selection__res_partner__service_quality__2_regular
 msgid "Regular"
-msgstr ""
+msgstr "Normale"
 
 #. module: partner_quality_log
 #: model_terms:ir.ui.view,arch_db:partner_quality_log.res_partner_kanban_view
 msgid "Sad face"
-msgstr ""
+msgstr "Viso triste"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__service_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__service_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__service_quality
 msgid "Service"
-msgstr ""
+msgstr "Servizio"
 
 #. module: partner_quality_log
 #: model:ir.model.fields,field_description:partner_quality_log.field_quality_partner_log__price_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_partner__price_quality
 #: model:ir.model.fields,field_description:partner_quality_log.field_res_users__price_quality
 msgid "Value for money"
-msgstr ""
+msgstr "Valore per denaro"

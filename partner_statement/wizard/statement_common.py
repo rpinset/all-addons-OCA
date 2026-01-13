@@ -25,7 +25,7 @@ class StatementCommon(models.AbstractModel):
         help="Show only lines due before the selected date",
     )
     number_partner_ids = fields.Integer(
-        default=lambda self: len(self._context["active_ids"])
+        default=lambda self: len(self._context.get("active_ids", []))
     )
     filter_partners_non_due = fields.Boolean(
         string="Don't show partners with no due entries", default=True
