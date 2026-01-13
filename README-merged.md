@@ -638,7 +638,7 @@ addon | version | maintainers | summary
 [account_asset_operating_unit](account_asset_operating_unit/) | 14.0.1.0.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | This module adds operating unit information to assets.
 [account_asset_operating_unit_access_all](account_asset_operating_unit_access_all/) | 14.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Access all OUs' Assets
 [account_financial_report_operating_unit](account_financial_report_operating_unit/) | 14.0.1.0.2 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 14.0.1.1.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 14.0.1.2.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 14.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Accounting
 [agreement_operating_unit](agreement_operating_unit/) | 14.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to agreements and service profiles.
 [analytic_operating_unit](analytic_operating_unit/) | 14.0.1.0.1 |  | Analytic Operating Unit
@@ -1948,6 +1948,7 @@ addon | version | maintainers | summary
 [sale_mail_autosubscribe](sale_mail_autosubscribe/) | 14.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's sale orders
 [sale_manual_delivery](sale_manual_delivery/) | 14.0.1.0.1 |  | Create manually your deliveries
 [sale_mrp_bom](sale_mrp_bom/) | 14.0.1.0.1 |  | Allows define a BOM in the sales lines.
+[sale_multi_payment_confirm](sale_multi_payment_confirm/) | 14.0.1.0.1 |  | Allows confirming sale orders when more than 1 payment transaction is associated to them
 [sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 14.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
 [sale_order_archive](sale_order_archive/) | 14.0.1.0.0 |  | Archive Sale Orders
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 14.0.1.0.1 |  | Auto assign delivery carrier on sale order confirmation
@@ -5864,7 +5865,7 @@ addon | version | maintainers | summary
 [account_banking_ach_credit_transfer](account_banking_ach_credit_transfer/) | 14.0.1.0.0 |  | Create ACH files for Credit Transfers
 [account_banking_ach_direct_debit](account_banking_ach_direct_debit/) | 14.0.1.0.0 |  | Create ACH files for Direct Debit
 [l10n_us_form_1099](l10n_us_form_1099/) | 14.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage 1099 Types and Suppliers
-[l10n_us_gaap](l10n_us_gaap/) | 14.0.1.1.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | United States Sample GAAP Chart of Accounts
+[l10n_us_gaap](l10n_us_gaap/) | 14.0.1.1.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | United States Sample GAAP Chart of Accounts
 [l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 14.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | MIS Builder Templates for US Chart of Accounts
 [l10n_us_partner_legal_number](l10n_us_partner_legal_number/) | 14.0.1.0.1 |  | Add Legal Number for North American Banking & Financials
 [partner_usps_address_validation](partner_usps_address_validation/) | 14.0.1.0.0 |  | Utilize the USPS open API for address validation
@@ -9609,7 +9610,7 @@ addon | version | maintainers | summary
 [web_m2x_options_manager](web_m2x_options_manager/) | 14.0.1.4.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 14.0.1.1.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 14.0.1.1.0 |  | Send notification messages to user
-[web_notify_channel_message](web_notify_channel_message/) | 14.0.1.0.0 |  | Send an instant notification to channel users when a new message is posted
+[web_notify_channel_message](web_notify_channel_message/) | 14.0.1.1.0 |  | Send an instant notification to channel users when a new message is posted
 [web_notify_upgrade](web_notify_upgrade/) | 14.0.1.0.1 |  | Notify active users when a module is installed or updated
 [web_pivot_hide_total](web_pivot_hide_total/) | 14.0.1.0.1 |  | This addon adds a new inherited version of pivot view. It intends to hide the last total column when required.
 [web_pwa_oca](web_pwa_oca/) | 14.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA

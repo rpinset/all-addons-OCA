@@ -135,9 +135,9 @@ Date:   Sun Jan 4 22:27:05 2026 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit f328a80a555705f0177a774e838cce14458d70ac
+commit 45f8e48087c3a319345b7910768f3d1090322311
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 23 07:50:58 2025 +0000
+Date:   Tue Jan 13 10:38:05 2026 +0000
 
     [BOT] post-merge updates
 
@@ -381,9 +381,9 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit df64f776b47b5170e3bc23ab2091e994616856b7
+commit abfe2f56eb636125fd5db1900117fdab0f009150
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 20 14:21:37 2025 +0000
+Date:   Mon Jan 12 09:42:09 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1078,11 +1078,11 @@ Date:   Sun Feb 2 19:49:39 2025 +0000
 
 ## l10n-usa
 From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
-commit 198d0645db85e9e20c0312deed95dad4fd94f341
+commit 4e58c97ad3bc85153785b3fd0f5b68ce8dc016c3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:12:53 2025 +0000
+Date:   Mon Jan 12 12:56:15 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-venezuela
@@ -1272,16 +1272,16 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit cb1ad159aca82ccc2da2c8f30a361262f4d302ed
+commit af79bcc2801e13ae7d5ef14ab68a539e4c742857
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Nov 28 14:09:36 2025 +0000
+Date:   Tue Jan 13 15:26:57 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (26 of 26 strings)
     
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_manual_delivery/it/
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_type/it/
 
 
 ## purchase-reporting
@@ -1725,9 +1725,9 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 8d17efca4d0f5ae3d174699e77574aabcec08cd1
+commit 9592a514f2f7d396326580ac0ec36ca0e1a5eeb4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 11 09:50:08 2025 +0000
+Date:   Mon Jan 12 10:24:33 2026 +0000
 
     [BOT] post-merge updates
 
