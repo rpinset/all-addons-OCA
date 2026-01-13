@@ -11,9 +11,6 @@
             <xpath expr="//field[@name='name']" position="before">
                 <span>[<field name="code" />] </span>
             </xpath>
-            <xpath expr="//field[@name='name'][1]" position="before">
-                <span>[<field name="code" />] </span>
-            </xpath>
         </field>
     </record>
 

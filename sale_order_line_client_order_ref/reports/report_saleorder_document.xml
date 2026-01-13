@@ -1,0 +1,23 @@
+<odoo>
+    <template
+        id="report_saleorder_document_inherit"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath expr="//th[@name='th_description']" position="after">
+            <th
+                name="th_client_order_ref"
+                t-if="doc.company_id.show_client_order_ref_sale"
+                class="text-start"
+            >Order Ref</th>
+        </xpath>
+        <xpath expr="//td[@name='td_name']" position="after">
+            <td
+                name="td_client_order_ref"
+                t-if="doc.company_id.show_client_order_ref_sale"
+                class="text-start"
+            >
+                <span t-esc="line.client_order_ref" />
+            </td>
+        </xpath>
+    </template>
+</odoo>

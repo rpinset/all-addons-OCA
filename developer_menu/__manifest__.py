@@ -2,7 +2,7 @@
 
 {
     "name": "Developer Menu",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "category": "Tools",
     "license": "AGPL-3",
     "summary": "Menu Shortcut for developer usage",
@@ -14,6 +14,7 @@
     ],
     "data": [
         "views/menu_view.xml",
+        "views/ir_model_fields.xml",
     ],
     "installable": True,
 }

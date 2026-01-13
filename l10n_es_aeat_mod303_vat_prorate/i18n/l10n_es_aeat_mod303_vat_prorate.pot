@@ -39,6 +39,14 @@ msgid "Prorate"
 msgstr ""
 
 #. module: l10n_es_aeat_mod303_vat_prorate
+#. odoo-python
+#: code:addons/l10n_es_aeat_mod303_vat_prorate/models/mod303.py:0
+msgid ""
+"Prorate percentage not found, or it's 0. Please review the company's prorate"
+" adjustments."
+msgstr ""
+
+#. module: l10n_es_aeat_mod303_vat_prorate
 #: model:ir.model.fields,field_description:l10n_es_aeat_mod303_vat_prorate.field_l10n_es_aeat_mod303_report__prorate_account_id
 msgid "Prorate regularization account"
 msgstr ""

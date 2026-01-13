@@ -5,9 +5,9 @@
     "name": "Stock Picking Batch Creation",
     "summary": """
         Create a batch of pickings to be processed all together""",
-    "version": "18.0.1.2.2",
+    "version": "18.0.1.4.0",
     "license": "AGPL-3",
-    "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
+    "author": "ACSONE SA/NV,BCIM,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "category": "Warehouse Management",
     "application": False,
@@ -31,6 +31,6 @@
         ],
     },
     "development_status": "Beta",
-    "maintainers": ["lmignon"],
+    "maintainers": ["lmignon", "jbaudoux"],
     "pre_init_hook": "pre_init_hook",
 }

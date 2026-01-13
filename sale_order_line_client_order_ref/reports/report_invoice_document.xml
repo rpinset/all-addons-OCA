@@ -1,0 +1,23 @@
+<odoo>
+    <template
+        id="report_invoice_document_inherit"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//th[@name='th_description']" position="after">
+            <th
+                name="th_client_order_ref"
+                t-if="o.company_id.show_client_order_ref_invoice and o.move_type in ['out_invoice', 'out_refund', 'out_receipt']"
+                class="text-start"
+            >Order Ref</th>
+        </xpath>
+        <xpath expr="//td[@name='account_invoice_line_name']" position="after">
+            <td
+                name="td_client_order_ref"
+                t-if="o.company_id.show_client_order_ref_invoice and o.move_type in ['out_invoice', 'out_refund', 'out_receipt']"
+                class="text-start"
+            >
+                <span t-esc="line.client_order_ref" />
+            </td>
+        </xpath>
+    </template>
+</odoo>

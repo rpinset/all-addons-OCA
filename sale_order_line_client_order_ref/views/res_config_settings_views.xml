@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sale_config_settings" model="ir.ui.view">
+        <field name="name">res.config.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='proforma_configuration']" position="after">
+                <setting
+                    id="show_client_order_ref_sale"
+                    company_dependent="1"
+                    string="Show Customer Order Reference in Sale Reports (PDF)"
+                    help="If selected, the Order Ref column will be added to the lines in the sale report (PDF)"
+                >
+                    <field name="show_client_order_ref_sale" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_invoice_config_settings" model="ir.ui.view">
+        <field name="name">res.config.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='show_sale_receipts']" position="after">
+                <setting
+                    id="show_client_order_ref_invoice"
+                    company_dependent="1"
+                    string="Show Customer Order Reference in Invoice Reports (PDF)"
+                    help="If selected, the Order Ref column will be added to the lines in the invoice report (PDF)"
+                >
+                    <field name="show_client_order_ref_invoice" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
