@@ -391,16 +391,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c3cff445f47c29de774746ea760b630905bfd9b1
+commit 96100b348d25f4eb990ae7e6c01a17473a1a2081
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:58 2025 +0000
+Date:   Sun Jan 11 14:46:05 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 33.3% (2 of 6 strings)
+    Currently translated at 60.1% (62 of 103 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-product_supplierinfo_for_customer_sale
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-product_supplierinfo_for_customer_sale/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_rental
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_rental/it/
 
 
 ## crm
@@ -826,16 +826,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 81ff30754a2b80748b5109858dc4bdd99e5d567c
+commit 81f1555355608eeecb7b567280e386de7139e1ec
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:07:24 2025 +0000
+Date:   Sun Jan 11 14:37:15 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 39.8% (4380 of 10995 strings)
+    Currently translated at 100.0% (173 of 173 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
 
 
 ## l10n-japan

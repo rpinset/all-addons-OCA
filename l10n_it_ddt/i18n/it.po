@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-25 05:17+0000\n"
-"PO-Revision-Date: 2025-10-23 09:42+0000\n"
+"PO-Revision-Date: 2026-01-11 16:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -361,7 +361,7 @@ msgstr "Firma del conducente"
 #. module: l10n_it_ddt
 #: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__date_to
 msgid "End Date"
-msgstr "Data di fine"
+msgstr "Data fine"
 
 #. module: l10n_it_ddt
 #: selection:stock.picking.package.preparation,show_deadline_date:0
