@@ -354,16 +354,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit cba7ccba1c8ea0b08ee86377d5ee1e6d093d5be8
+commit 7aa36ef7e4790d694376f7992b33079c3d316795
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:56 2025 +0000
+Date:   Sun Jan 11 14:46:08 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 14.2% (2 of 14 strings)
+    Currently translated at 55.7% (58 of 104 strings)
     
-    Translation: sale-workflow-15.0/sale-workflow-15.0-product_supplierinfo_for_customer_sale
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-product_supplierinfo_for_customer_sale/it/
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_rental
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_rental/it/
 
 
 ## crm
@@ -491,11 +491,16 @@ Date:   Wed Oct 22 06:19:25 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 3c512d3a71363a6073b01278198fa9fe565369ac
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 9 06:50:19 2025 +0000
+commit 0415c25d097f434eb1bf75896822454c302e8a27
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Jan 11 14:44:00 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (28 of 28 strings)
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_size
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_size/it/
 
 
 ## margin-analysis
@@ -1178,11 +1183,16 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e5206c779e75521ba1bfe0d361af80917e7ecfd1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 24 18:54:14 2025 +0000
+commit 8b367c6ee9e39b84d0a7cdfa981f104d37cfb688
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Jan 13 15:44:39 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (26 of 26 strings)
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_order_type/it/
 
 
 ## purchase-reporting
@@ -1433,16 +1443,16 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 13689f27ae262fb7a24ece7613acbbde542ca9e6
+commit ef9325eb4fc5c91bb0f8b2609687622fa75374b8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 6 11:28:10 2025 +0000
+Date:   Sun Jan 11 14:29:55 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 65.8% (83 of 126 strings)
+    Currently translated at 91.1% (41 of 45 strings)
     
-    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
+    Translation: server-ux-15.0/server-ux-15.0-chained_swapper
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-chained_swapper/it/
 
 
 ## community-data-files
@@ -1520,14 +1530,16 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 40d8d26f90d8e1620fc096bc6b2bc4b05ac2927e
-Merge: 569b9a2 0d75fbf
-Author: Serpent Consulting Services Pvt. Ltd. <jay.vora@serpentcs.com>
-Date:   Fri Dec 12 10:47:47 2025 +0530
+commit 98aa4f126a20507c178d7b9e03f0ec736674906b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 12 15:24:28 2026 +0000
 
-    Merge pull request #223 from cetmix/15.0-t4808-vertical-hotel-add-web_icon
+    Translated using Weblate (Italian)
     
-    [15.0][IMP] hotel: add web_icon to the Hotel Management menu
+    Currently translated at 100.0% (520 of 520 strings)
+    
+    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel/it/
 
 
 ## vertical-isp
