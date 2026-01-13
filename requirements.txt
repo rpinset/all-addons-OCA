@@ -219,6 +219,16 @@ python-dateutil
 # From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
+# generated from manifests external_dependencies
+PyJWT>=1.7.1,<2.9.0
+atlassian_jwt>=3.0.0
+cryptography>=38,<39
+jira==3.10.5
+oauthlib>=2.1.0
+requests-jwt>=0.6.0
+requests-oauthlib>=1.1.0
+requests-toolbelt>=0.9.1
+requests>=2.21.0
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 # generated from manifests external_dependencies
 requests_toolbelt
