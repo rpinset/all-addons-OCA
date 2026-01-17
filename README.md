@@ -550,11 +550,16 @@ Date:   Wed Jun 4 02:49:39 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 6c6ae7ec2fe384736afc3e2bb7a314433211b112
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:51:03 2025 +0000
+commit 6d2ed9d87d391c18469a5357d28bbcc9a84fa587
+Author: strarsis <strarsis@gmail.com>
+Date:   Wed Jan 14 22:57:03 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (German)
+    
+    Currently translated at 75.8% (22 of 29 strings)
+    
+    Translation: edi-13.0/edi-13.0-account_invoice_facturx
+    Translate-URL: https://translation.odoo-community.org/projects/edi-13-0/edi-13-0-account_invoice_facturx/de/
 
 
 ## field-service
