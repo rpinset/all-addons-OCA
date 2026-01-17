@@ -12,6 +12,10 @@ class ProductPricelist(models.Model):
         default=False, inverse="_inverse_intercompany_supplier"
     )
 
+    intercompany_supplier_lead_time = fields.Float(
+        default=0, help="Vendor pricelist lead time, in days."
+    )
+
     generated_supplierinfo_ids = fields.One2many(
         comodel_name="product.supplierinfo",
         inverse_name="intercompany_pricelist_id",
@@ -43,3 +47,13 @@ class ProductPricelist(models.Model):
         self.sudo().with_context(automatic_intercompany_sync=True).mapped(
             "generated_supplierinfo_ids"
         ).unlink()
+
+    def write(self, vals):
+        res = super().write(vals)
+        if "active" in vals:
+            to_sync = self.filtered("is_intercompany_supplier")
+            if vals["active"]:
+                to_sync._active_intercompany()
+            else:
+                to_sync._unactive_intercompany()
+        return res

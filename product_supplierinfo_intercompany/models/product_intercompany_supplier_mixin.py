@@ -23,6 +23,8 @@ class ProductIntercompanySupplierMixin(models.AbstractModel):
             "name": pricelist.company_id.partner_id.id,
             "company_id": False,
             "price": price,
+            "currency_id": pricelist.currency_id.id,
+            "delay": pricelist.intercompany_supplier_lead_time,
         }
         return res
 
@@ -43,15 +45,28 @@ class ProductIntercompanySupplierMixin(models.AbstractModel):
             ):
                 domain = record._get_intercompany_supplier_info_domain(pricelist)
                 supplierinfo = record.env["product.supplierinfo"].search(domain)
-                if (
-                    record._has_intercompany_price(pricelist)
-                    and record.sale_ok
-                    and record.purchase_ok
-                ):
-                    vals = record._prepare_intercompany_supplier_info(pricelist)
-                    if supplierinfo:
-                        supplierinfo.write(vals)
-                    else:
-                        supplierinfo.create(vals)
-                elif supplierinfo:
-                    supplierinfo.sudo().unlink()
+                record._synchronise_supplier_info_for_record(pricelist, supplierinfo)
+
+    def _synchronise_supplier_info_for_record(self, pricelist, supplierinfo):
+        self.ensure_one()
+        if self._condition_supplierinfo_create_or_update(pricelist, supplierinfo):
+            vals = self._prepare_intercompany_supplier_info(pricelist)
+            if supplierinfo:
+                supplierinfo.write(vals)
+            else:
+                supplierinfo.create(vals)
+        elif self._condition_supplierinfo_unlink(pricelist, supplierinfo):
+            supplierinfo.sudo().unlink()
+
+    def _condition_supplierinfo_create_or_update(self, pricelist, supplierinfo):
+        self.ensure_one()
+        return (
+            self._has_intercompany_price(pricelist)
+            and self.sale_ok
+            and self.purchase_ok
+            and self.active
+        )
+
+    def _condition_supplierinfo_unlink(self, pricelist, supplierinfo):
+        self.ensure_one()
+        return bool(supplierinfo) or (not self.active)

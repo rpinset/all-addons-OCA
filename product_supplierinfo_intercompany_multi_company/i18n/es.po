@@ -36,8 +36,6 @@ msgstr "Combinación de productos entre compañías"
 msgid "Last Modified on"
 msgstr "Última Modificación el"
 
-#. module: product_supplierinfo_intercompany_multi_company
-#: code:addons/product_supplierinfo_intercompany_multi_company/models/product_intercompany_supplier_mixin.py:0
 #, python-format
-msgid "The pricelist %s is not intercompany"
-msgstr "La lista de precios %s no es interempresarial"
+#~ msgid "The pricelist %s is not intercompany"
+#~ msgstr "La lista de precios %s no es interempresarial"

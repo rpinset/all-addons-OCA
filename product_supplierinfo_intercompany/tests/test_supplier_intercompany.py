@@ -84,6 +84,9 @@ class TestIntercompanySupplierCase(SavepointCase):
         self.assertEqual(len(supplierinfo), 1)
         self.assertEqual(len(supplierinfo.intercompany_pricelist_id), 1)
         self.assertEqual(supplierinfo.price, price)
+        self.assertEqual(
+            supplierinfo.currency_id, supplierinfo.intercompany_pricelist_id.currency_id
+        )
 
 
 class TestIntercompanySupplier(TestIntercompanySupplierCase):
@@ -149,6 +152,14 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
         supplierinfo = self._get_supplier_info()
         self.assertEqual(len(supplierinfo), 0)
 
+    def test_archive_pricelist_intercompany(self):
+        self.pricelist_intercompany.active = False
+        supplierinfo = self._get_supplier_info()
+        self.assertEqual(len(supplierinfo), 0)
+        self.pricelist_intercompany.active = True
+        supplierinfo = self._get_supplier_info()
+        self.assertEqual(len(supplierinfo), 4)
+
     def test_intercompany_access_rule(self):
         # Check that supplier this supplier info are not visible
         # with the current user "demo"
@@ -167,6 +178,10 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
     def test_add_template_item(self):
         template = self.env.ref("product.product_product_2_product_template")
         self._add_item(template, 30)
+        self._check_supplier_info_for(template, 30)
+        template.active = False
+        self._check_no_supplier_info_for(template)
+        template.active = True
         self._check_supplier_info_for(template, 30)
 
     def test_update_product_item(self):
@@ -335,3 +350,11 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
         # Select using sudo (as some native odoo code do it)
         supplier = self.product_product_4b.sudo()._select_seller()
         self.assertEqual(supplier.name, partner)
+
+    def test_currency_consistency(self):
+        different_currency = self.env.ref("base.CHF")
+        self.assertNotEqual(self.pricelist_intercompany.currency_id, different_currency)
+        self.pricelist_intercompany.currency_id = different_currency
+        template = self.env["product.template"].create({"name": "New One"})
+        self._add_item(template, 30)
+        self._check_supplier_info_for(template, 30)

@@ -68,6 +68,11 @@ msgid "Intercompany Pricelist"
 msgstr "Lista de Precios Intercompañía"
 
 #. module: product_supplierinfo_intercompany
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
+msgid "Intercompany Supplier Lead Time"
+msgstr ""
+
+#. module: product_supplierinfo_intercompany
 #: code:addons/product_supplierinfo_intercompany/models/product_pricelist.py:0
 #, python-format
 msgid "Intercompany pricelist must belong to a company"
@@ -157,12 +162,18 @@ msgstr "La lista de precios %s no es interempresarial"
 #: code:addons/product_supplierinfo_intercompany/models/product_supplierinfo.py:0
 #, python-format
 msgid ""
-"This supplier info can not be edited as it's linked to an intercompany 'sale' pricelist.\n"
+"This supplier info can not be edited as it's linked to an intercompany "
+"'sale' pricelist.\n"
 " Please modify the information on the 'sale' pricelist"
 msgstr ""
 "La información de este proveedor no se puede editar, ya que está vinculada a "
 "una lista de precios de \"venta\" entre empresas.\n"
 " Modifique la información de la lista de precios de venta"
+
+#. module: product_supplierinfo_intercompany
+#: model:ir.model.fields,help:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
+msgid "Vendor pricelist lead time, in days."
+msgstr ""
 
 #. module: product_supplierinfo_intercompany
 #: model:ir.model,name:product_supplierinfo_intercompany.model_intercompany_supplierinfo_mixin

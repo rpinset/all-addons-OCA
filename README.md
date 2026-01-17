@@ -80,16 +80,16 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit a678604ace95978885e3b40e413a39b72a103f9d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 15 14:45:15 2025 +0000
+commit 25482fb885e60ee78b695cbbceb3c093b126bd74
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Thu Jan 15 16:43:40 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (171 of 171 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_loan
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_loan/it/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_balance_line
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_balance_line/tr/
 
 
 ## account-financial-reporting
@@ -381,9 +381,9 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit abfe2f56eb636125fd5db1900117fdab0f009150
+commit ec4b4a9dbb5e43d6553f0da0c2c1494184330661
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 12 09:42:09 2026 +0000
+Date:   Thu Jan 15 11:45:17 2026 +0000
 
     [BOT] post-merge updates
 
@@ -514,11 +514,16 @@ Date:   Wed Nov 19 14:59:23 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 6370702a35e66477f5edb082f4ec1d531e40a2cd
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Oct 26 18:09:53 2025 +0000
+commit 5f6b6f8581049a3a64bdd546e6b93267a6e06a49
+Author: strarsis <strarsis@gmail.com>
+Date:   Wed Jan 14 23:00:20 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 68.7% (22 of 32 strings)
+    
+    Translation: edi-14.0/edi-14.0-account_invoice_facturx
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-account_invoice_facturx/de/
 
 
 ## field-service
@@ -671,16 +676,16 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 3d8417a550eeff28ec7f9092d482ad5b1d89992f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 14 15:37:44 2025 +0000
+commit 6bbb7d5eae02be6672bf7d2d965a5c7dde3db466
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jan 15 13:44:03 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (55 of 55 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: multi-company-14.0/multi-company-14.0-purchase_sale_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-purchase_sale_inter_company/it/
+    Translation: multi-company-14.0/multi-company-14.0-product_supplierinfo_intercompany_multi_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-product_supplierinfo_intercompany_multi_company/
 
 
 ## l10n-argentina

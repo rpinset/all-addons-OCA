@@ -66,6 +66,11 @@ msgid "Intercompany Pricelist"
 msgstr "Liste de prix intersociété"
 
 #. module: product_supplierinfo_intercompany
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
+msgid "Intercompany Supplier Lead Time"
+msgstr ""
+
+#. module: product_supplierinfo_intercompany
 #: code:addons/product_supplierinfo_intercompany/models/product_pricelist.py:0
 #, python-format
 msgid "Intercompany pricelist must belong to a company"
@@ -164,6 +169,11 @@ msgstr ""
 "Ce prix fournisseur ne peut pas être édité car il est lié à une liste de "
 "prix de vente intersociété.\n"
 "Veuillez modifié les informations sur la liste de prix de vente si besoin"
+
+#. module: product_supplierinfo_intercompany
+#: model:ir.model.fields,help:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
+msgid "Vendor pricelist lead time, in days."
+msgstr ""
 
 #. module: product_supplierinfo_intercompany
 #: model:ir.model,name:product_supplierinfo_intercompany.model_intercompany_supplierinfo_mixin

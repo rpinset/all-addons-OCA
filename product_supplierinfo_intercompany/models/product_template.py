@@ -65,10 +65,27 @@ class ProductTemplate(models.Model):
         return res
 
     def write(self, vals):
-        res = super(ProductTemplate, self).write(vals)
-        for rec in self:
-            rec.update_intercompany_prices()
+        res = super().write(vals)
+        if any(field in vals for field in self._fields_for_intercompany_pricelist()):
+            for rec in self:
+                rec.update_intercompany_prices()
         return res
+
+    @api.model
+    def _fields_for_intercompany_pricelist(self):
+        """
+        If any of these fields change,
+        the intercompany pricelist will be recomputed
+        """
+        return [
+            "sale_ok",
+            "purchase_ok",
+            "list_price",
+            "standard_price",
+            "company_id",
+            "company_ids",
+            "active",
+        ]
 
     def update_intercompany_prices(self):
         pricelist_ids = (
