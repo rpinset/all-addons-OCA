@@ -35,7 +35,8 @@ class ValidationForwardWizard(models.TransientModel):
                 )
             }
         )
-        prev_reviews = prev_comment.add_comment()
+        prev_comment.add_comment()
+        prev_reviews = prev_comment.review_ids
         review = self.env["tier.review"].create(
             {
                 "model": rec._name,

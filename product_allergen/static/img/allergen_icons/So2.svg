@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120.2 125.4" enable-background="new 0 0 120.2 125.4" xml:space="preserve">
+<path fill="#209FB4" d="M112.5,46.9C106.1,23.6,83.5,5.6,58.7,8.2C58.6,8,58.4,7.9,58.1,8C35.5,10.1,16.9,26.3,9.9,47.6
+	c-0.9,2.7-1.6,5.4-2.1,8.2c-0.2,0.1-0.3,0.4-0.1,0.5c-0.2,1-0.3,2-0.5,3c-0.1,0.1-0.1,0.2,0,0.3c-0.9,7.3-0.6,14.8,1.4,21.8
+	c0.8,2.9,1.9,5.6,3.3,8.1c0,0.2,0.1,0.4,0.3,0.5c3.7,6.6,9.3,11.9,15.8,16.2c9.7,6.5,20.4,11,32.2,11c1.3,0,2.6,0,3.9-0.1
+	c0.2,0.3,0.7,0.2,0.8-0.1c9-0.8,17.7-3.8,25.4-8.4c10-6.1,17.2-14.4,20.9-25.5C115,71.4,115.7,58.7,112.5,46.9z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30.2173" y1="55.9477" x2="114.4152" y2="83.5977">
+	<stop  offset="9.811620e-02" style="stop-color:#0E4B51"/>
+	<stop  offset="0.5826" style="stop-color:#19808E"/>
+	<stop  offset="0.8216" style="stop-color:#209FB4"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M113.5,51.6l-52.7-23l1.1,34L30,93.2l55,18.2c1.8-0.9,3.6-1.8,5.3-2.9c10-6.1,17.2-14.4,20.9-25.5
+	C114.5,72.9,115.5,62,113.5,51.6z"/>
+<line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="60.9" y1="55.4" x2="60.9" y2="47.8"/>
+<line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="43.4" y1="78.6" x2="48" y2="75.8"/>
+<line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="80" y1="79.5" x2="72.2" y2="74.9"/>
+<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="60.9" cy="68.2" r="12.9"/>
+<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="60.9" cy="38.3" r="9.1"/>
+<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="87.5" cy="83.9" r="9.1"/>
+<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="34.2" cy="83.9" r="9.1"/>
+<path fill="none" stroke="#209FB4" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.2,83.2c0,0-0.4,5.2,5.7,7.4"/>
+<path fill="none" stroke="#209FB4" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M80.5,83.2c0,0-0.4,5.2,5.7,7.4"/>
+<path fill="none" stroke="#209FB4" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M53.8,37.5c0,0-0.4,5.2,5.7,7.4"/>
+<path fill="none" stroke="#209FB4" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M50.4,67.5c0,0,0,8.5,7.7,11"/>
+</svg>

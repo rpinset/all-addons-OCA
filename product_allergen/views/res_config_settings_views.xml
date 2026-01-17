@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add configuration option to res.config.settings -->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.allergen</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="product.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='product_general_settings']" position="after">
+                <block
+                    title="Allergen Information"
+                    id="product_nutritional_general_settings"
+                >
+                    <setting
+                        id="product_allergens"
+                        string="Show Allergens on Product Labels"
+                    >
+                        <field name="show_allergens_on_product_labels" />
+                        <div class="text-muted">
+                            Display allergen icons at the bottom of product labels
+                        </div>
+                        <button
+                            type="action"
+                            name="%(product_allergen.action_allergen_allergen)d"
+                            string="Allergens"
+                            class="oe_link"
+                            icon="fa-arrow-right"
+                        />
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

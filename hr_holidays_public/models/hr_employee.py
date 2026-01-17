@@ -64,7 +64,7 @@ class HrEmployeeBase(models.AbstractModel):
             "away": "leave_away",
             "offline": "leave_offline",
         }
-        return im_status_mapped[key]
+        return im_status_mapped.get(key, key)
 
     def _compute_leave_status(self):
         res = super()._compute_leave_status()

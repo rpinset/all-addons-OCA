@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Kanban View for Allergen -->
+    <record id="view_allergen_allergen_kanban" model="ir.ui.view">
+        <field name="name">allergen.allergen.kanban</field>
+        <field name="model">allergen.allergen</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_allergen">
+                <field name="image" />
+                <field name="name" />
+                <templates>
+                    <t t-name="card" class="flex-row p-1">
+                        <aside>
+                            <field
+                                name="image"
+                                widget="image"
+                                options="{'img_class': 'object-fit-contain'}"
+                            />
+                        </aside>
+                        <main class="ms-2 mt-1">
+                            <field class="fw-bold fs-5" name="name" />
+                        </main>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- List View for Allergen -->
+    <record id="view_allergen_allergen_list" model="ir.ui.view">
+        <field name="name">allergen.allergen.list</field>
+        <field name="model">allergen.allergen</field>
+        <field name="arch" type="xml">
+            <list string="Allergens">
+                <field
+                    name="image"
+                    widget="image"
+                    options='{"size": [40, 40], "img_class": "bg-transparent"}'
+                />
+                <field name="name" />
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View for Allergen -->
+    <record id="view_allergen_allergen_form" model="ir.ui.view">
+        <field name="name">allergen.allergen.form</field>
+        <field name="model">allergen.allergen</field>
+        <field name="arch" type="xml">
+            <form string="Allergen">
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar" />
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View for Allergen -->
+    <record id="view_allergen_allergen_search" model="ir.ui.view">
+        <field name="name">allergen.allergen.search</field>
+        <field name="model">allergen.allergen</field>
+        <field name="arch" type="xml">
+            <search>
+                <field
+                    name="name"
+                    string="Name"
+                    filter_domain="[('name', 'ilike', self)]"
+                />
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
+            </search>
+        </field>
+    </record>
+
+    <!-- Action for Allergen -->
+    <record id="action_allergen_allergen" model="ir.actions.act_window">
+        <field name="name">Allergens</field>
+        <field name="res_model">allergen.allergen</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first allergen
+            </p>
+            <p>
+                Define allergens that can be associated with products.
+            </p>
+        </field>
+    </record>
+</odoo>

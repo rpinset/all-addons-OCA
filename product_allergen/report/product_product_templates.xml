@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="product_allergens">
+        <t
+            t-if="not product.barcode and product.allergen_ids and env['ir.config_parameter'].sudo().get_param('product_allergen.show_allergens_on_product_labels')"
+        >
+            <div class="mb-2" style="text-align: center;">
+                <t t-foreach="product.allergen_ids" t-as="allergen">
+                    <img
+                        t-if="allergen.image"
+                        t-att-src="image_data_uri(allergen.image)"
+                        style="max-width: 24px; max-height: 24px; margin: 2px; display: inline-block;"
+                        t-att-title="allergen.name"
+                        t-att-alt="allergen.name"
+                    />
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_simple_label2x7" inherit_id="product.report_simple_label2x7">
+        <xpath expr="//div[hasclass('o_label_extra_data')]" position="inside">
+            <t t-call="product_allergen.product_allergens" />
+        </xpath>
+    </template>
+
+    <template id="report_simple_label4x7" inherit_id="product.report_simple_label4x7">
+        <xpath expr="//div[hasclass('o_label_full')]" position="inside">
+            <t t-call="product_allergen.product_allergens" />
+        </xpath>
+    </template>
+
+    <template id="report_simple_label4x12" inherit_id="product.report_simple_label4x12">
+        <xpath expr="//div[hasclass('o_label_full')]" position="inside">
+            <t t-call="product_allergen.product_allergens" />
+        </xpath>
+    </template>
+
+    <template
+        id="report_simple_label4x12_no_price"
+        inherit_id="product.report_simple_label4x12_no_price"
+    >
+        <xpath expr="//div[hasclass('o_label_full')]" position="inside">
+            <t t-call="product_allergen.product_allergens" />
+        </xpath>
+    </template>
+
+    <template
+        id="report_simple_label_dymo"
+        inherit_id="product.report_simple_label_dymo"
+    >
+        <xpath expr="//div[hasclass('o_label_full')]" position="inside">
+            <t t-call="product_allergen.product_allergens" />
+        </xpath>
+    </template>
+</odoo>

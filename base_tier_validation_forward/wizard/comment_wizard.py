@@ -7,9 +7,9 @@ class CommentWizard(models.TransientModel):
     _inherit = "comment.wizard"
 
     def add_comment(self):
-        super().add_comment()
+        res = super().add_comment()
         rec = self.env[self.res_model].browse(self.res_id)
         if self.validate_reject == "forward":
             rec._forward_tier(self.review_ids)
         rec._update_counter({"review_created": True})
-        return self.review_ids
+        return res

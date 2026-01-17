@@ -1,0 +1,213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_allergen
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-05 11:34+0000\n"
+"PO-Revision-Date: 2025-11-05 11:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: product_allergen
+#: model:ir.model,name:product_allergen.model_allergen_allergen
+#: model_terms:ir.ui.view,arch_db:product_allergen.view_allergen_allergen_form
+msgid "Allergen"
+msgstr "Alérgeno"
+
+#. module: product_allergen
+#: model_terms:ir.ui.view,arch_db:product_allergen.res_config_settings_view_form
+msgid "Allergen Information"
+msgstr "Información sobre alérgenos"
+
+#. module: product_allergen
+#: model:ir.actions.act_window,name:product_allergen.action_allergen_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_product_product__allergen_ids
+#: model:ir.model.fields,field_description:product_allergen.field_product_template__allergen_ids
+#: model_terms:ir.ui.view,arch_db:product_allergen.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:product_allergen.view_allergen_allergen_list
+msgid "Allergens"
+msgstr "Alérgenos"
+
+#. module: product_allergen
+#: model:ir.model.fields,help:product_allergen.field_product_template__allergen_ids
+msgid ""
+"Allergens present in this product template. When the template has a single "
+"variant, changes are applied to that variant. When there are multiple "
+"variants, this shows the union of all variant allergens."
+msgstr ""
+"Alérgenos presentes en esta plantilla de producto. Cuando la plantilla "
+"tiene una sola variante, los cambios se aplican a esa variante. Cuando hay "
+"varias variantes, se muestra la unión de todos los alérgenos de las "
+"variantes."
+
+#. module: product_allergen
+#: model:ir.model.fields,help:product_allergen.field_product_product__allergen_ids
+msgid "Allergens present in this product variant"
+msgstr "Alérgenos presentes en esta variante del producto"
+
+#. module: product_allergen
+#: model_terms:ir.ui.view,arch_db:product_allergen.view_allergen_allergen_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_celery
+msgid "Celery"
+msgstr "Apio"
+
+#. module: product_allergen
+#: model:ir.model,name:product_allergen.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes"
+
+#. module: product_allergen
+#: model_terms:ir.actions.act_window,help:product_allergen.action_allergen_allergen
+msgid "Create your first allergen"
+msgstr "Crea tu primer alérgeno"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_crustaceans
+msgid "Crustaceans"
+msgstr "Crustáceos"
+
+#. module: product_allergen
+#: model_terms:ir.actions.act_window,help:product_allergen.action_allergen_allergen
+msgid "Define allergens that can be associated with products."
+msgstr "Define alérgenos que pueden asociarse con productos."
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: product_allergen
+#: model:ir.model.fields,help:product_allergen.field_res_config_settings__show_allergens_on_product_labels
+#: model_terms:ir.ui.view,arch_db:product_allergen.res_config_settings_view_form
+msgid "Display allergen icons at the bottom of product labels"
+msgstr "Mostrar iconos de alérgenos en la parte inferior de las etiquetas de productos"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_eggs
+msgid "Eggs"
+msgstr "Huevos"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_fish
+msgid "Fish"
+msgstr "Pescado"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_gluten
+msgid "Gluten (Cereals containing gluten)"
+msgstr "Gluten (Cereales que contienen gluten)"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__image
+msgid "Icon"
+msgstr "Icono"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_lupin
+msgid "Lupin"
+msgstr "Altramuces"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_milk
+msgid "Milk"
+msgstr "Leche"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_molluscs
+msgid "Molluscs"
+msgstr "Moluscos"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_mustard
+msgid "Mustard"
+msgstr "Mostaza"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_allergen_allergen__name
+#: model_terms:ir.ui.view,arch_db:product_allergen.view_allergen_allergen_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_peanuts
+msgid "Peanuts"
+msgstr "Cacahuetes"
+
+#. module: product_allergen
+#: model:ir.model,name:product_allergen.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_allergen
+#: model:ir.model,name:product_allergen.model_product_product
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_sesame
+msgid "Sesame seeds"
+msgstr "Semillas de sésamo"
+
+#. module: product_allergen
+#: model:ir.model.fields,field_description:product_allergen.field_res_config_settings__show_allergens_on_product_labels
+#: model_terms:ir.ui.view,arch_db:product_allergen.res_config_settings_view_form
+msgid "Show Allergens on Product Labels"
+msgstr "Mostrar alérgenos en etiquetas de productos"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_soybeans
+msgid "Soybeans"
+msgstr "Soja"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_sulphites
+msgid "Sulphur dioxide and sulphites"
+msgstr "Dióxido de azufre y sulfitos"
+
+#. module: product_allergen
+#: model:allergen.allergen,name:product_allergen.allergen_tree_nuts
+msgid "Tree nuts"
+msgstr "Frutos secos"

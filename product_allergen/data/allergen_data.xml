@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Common allergens based on FDA and EU regulations (14 major allergens) -->
+<odoo noupdate="1">
+    <record id="allergen_gluten" model="allergen.allergen">
+        <field name="name">Gluten (Cereals containing gluten)</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Gluten.png"
+        />
+    </record>
+    <record id="allergen_crustaceans" model="allergen.allergen">
+        <field name="name">Crustaceans</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Crustaceans.png"
+        />
+    </record>
+    <record id="allergen_eggs" model="allergen.allergen">
+        <field name="name">Eggs</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/egg.png"
+        />
+    </record>
+    <record id="allergen_fish" model="allergen.allergen">
+        <field name="name">Fish</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Fish.png"
+        />
+    </record>
+    <record id="allergen_peanuts" model="allergen.allergen">
+        <field name="name">Peanuts</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Peanuts.png"
+        />
+    </record>
+    <record id="allergen_soybeans" model="allergen.allergen">
+        <field name="name">Soybeans</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Soyabeans.png"
+        />
+    </record>
+    <record id="allergen_milk" model="allergen.allergen">
+        <field name="name">Milk</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/milk.png"
+        />
+    </record>
+    <record id="allergen_tree_nuts" model="allergen.allergen">
+        <field name="name">Tree nuts</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Treenuts.png"
+        />
+    </record>
+    <record id="allergen_celery" model="allergen.allergen">
+        <field name="name">Celery</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Celery.png"
+        />
+    </record>
+    <record id="allergen_mustard" model="allergen.allergen">
+        <field name="name">Mustard</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Mustard.png"
+        />
+    </record>
+    <record id="allergen_sesame" model="allergen.allergen">
+        <field name="name">Sesame seeds</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Sesame.png"
+        />
+    </record>
+    <record id="allergen_sulphites" model="allergen.allergen">
+        <field name="name">Sulphur dioxide and sulphites</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/So2.png"
+        />
+    </record>
+    <record id="allergen_lupin" model="allergen.allergen">
+        <field name="name">Lupin</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Lupin.png"
+        />
+    </record>
+    <record id="allergen_molluscs" model="allergen.allergen">
+        <field name="name">Molluscs</field>
+        <field
+            name="image"
+            type="base64"
+            file="product_allergen/static/img/allergen_icons/Molluscs.png"
+        />
+    </record>
+</odoo>

@@ -492,7 +492,11 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertTrue(b"CIG: 7987210EG5 CUP: H71N17000690124" in riba_txt)
         # Assert
         file_content = base64.decodebytes(wizard_riba_export.riba_txt).decode()
-        self.assertNotIn("INV/2025/00004", file_content)
+        # Post invoice to have the name assigned
+        self.invoice.company_id.due_cost_service_id = self.service_due_cost
+        self.invoice.action_post()
+        # Check that an invoice name not in the riba list isn't in the RiBa file
+        self.assertNotIn(self.invoice.name, file_content)
         self.assertIn("CABNP Paribas", file_content)
 
     def test_riba_fatturapa_group(self):
@@ -601,9 +605,13 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertTrue(b"CIG: 7987210EG5 CUP: H71N17000690125" in riba_txt)
         # Assert
         file_content = base64.decodebytes(wizard_riba_export.riba_txt).decode()
-        self.assertNotIn("INV/2025/00008", file_content)
-        self.assertIn("INV/2025/00005", file_content)
-        self.assertIn("INV/2025/00006", file_content)
+        # Post invoice to have the name assigned
+        self.invoice.company_id.due_cost_service_id = self.service_due_cost
+        self.invoice.action_post()
+        # Check that an invoice name not in the riba list isn't in the RiBa file
+        self.assertNotIn(self.invoice.name, file_content)
+        self.assertIn(invoice.name, file_content)
+        self.assertIn(invoice1.name, file_content)
 
     def test_riba_presentation(self):
         total_amount = 200000
@@ -946,3 +954,84 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
             .create({})
         )
         self.assertEqual(wizard.past_due_fee_amount, 15.0)
+
+    def test_charge_to_customer_with_partner(self):
+        """Test that bank fee line has partner_id when charge_to_customer is set."""
+        invoice, riba_list = self.riba_sbf_common()
+
+        # Create past due wizard with charge_to_customer set
+        past_due_wizard = (
+            self.env["riba.past_due"]
+            .with_context(
+                active_model="riba.slip.line",
+                active_ids=[riba_list.line_ids[0].id],
+                active_id=riba_list.line_ids[0].id,
+            )
+            .create(
+                {
+                    "past_due_fee_amount": 10.0,
+                    "charge_to_customer": True,
+                }
+            )
+        )
+        past_due_wizard.create_move()
+
+        # Get the past due move
+        riba_list._compute_past_due_move_ids()
+        self.assertEqual(len(riba_list.past_due_move_ids), 1)
+        past_due_move = riba_list.past_due_move_ids[0]
+
+        # Find the bank fee line
+        bank_fee_line = past_due_move.line_ids.filtered(
+            lambda line: line.name == "Bank Fee"
+            and line.account_id == past_due_wizard.bank_expense_account_id
+            and line.debit > 0
+        )
+
+        # Assert that partner_id is set
+        self.assertTrue(bank_fee_line, "Bank fee line should exist")
+        self.assertEqual(
+            bank_fee_line.partner_id,
+            riba_list.line_ids[0].partner_id,
+            "Bank fee line should have partner_id set when charge_to_customer is True",
+        )
+
+    def test_charge_to_customer_without_partner(self):
+        """Test bank fee line has no partner_id when charge_to_customer is not set."""
+        invoice, riba_list = self.riba_sbf_common()
+
+        # Create past due wizard without charge_to_customer set
+        past_due_wizard = (
+            self.env["riba.past_due"]
+            .with_context(
+                active_model="riba.slip.line",
+                active_ids=[riba_list.line_ids[0].id],
+                active_id=riba_list.line_ids[0].id,
+            )
+            .create(
+                {
+                    "past_due_fee_amount": 10.0,
+                    "charge_to_customer": False,
+                }
+            )
+        )
+        past_due_wizard.create_move()
+
+        # Get the past due move
+        riba_list._compute_past_due_move_ids()
+        self.assertEqual(len(riba_list.past_due_move_ids), 1)
+        past_due_move = riba_list.past_due_move_ids[0]
+
+        # Find the bank fee line
+        bank_fee_line = past_due_move.line_ids.filtered(
+            lambda line: line.name == "Bank Fee"
+            and line.account_id == past_due_wizard.bank_expense_account_id
+            and line.debit > 0
+        )
+
+        # Assert that partner_id is not set
+        self.assertTrue(bank_fee_line, "Bank fee line should exist")
+        self.assertFalse(
+            bank_fee_line.partner_id,
+            "Bank fee line should not have partner_id when charge_to_customer is False",
+        )
