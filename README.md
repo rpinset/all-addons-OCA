@@ -186,11 +186,16 @@ Date:   Sat Feb 1 20:36:04 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 4ff2726d0a5e42b076679988417775c2d129e2d2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:45:23 2025 +0000
+commit fd9df884de0032d44d8533be32c35f1856647124
+Author: Rémi <remi@le-filament.com>
+Date:   Thu Jan 15 15:37:04 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (French)
+    
+    Currently translated at 98.9% (187 of 189 strings)
+    
+    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/fr/
 
 
 ## data-protection
