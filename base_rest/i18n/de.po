@@ -6,34 +6,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-01-14 14:42+0000\n"
+"Last-Translator: Bastian Günther <mail@bastian-guenther.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "%(key)'s JSON content is malformed: %(error)s"
-msgstr ""
+msgstr "Der JSON-Inhalt von %(key)s ist fehlerhaft: %(error)s"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "BadRequest %s"
-msgstr ""
+msgstr "Ungültige Anfrage %s"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "BadRequest item %(idx)s :%(errors)s"
-msgstr ""
+msgstr "Ungültige Anfrage für Element %(idx)s: %(errors)s"
 
 #. module: base_rest
 #. odoo-python
@@ -41,6 +43,8 @@ msgstr ""
 #, python-format
 msgid "BadRequest: Not enough items in the list (%(current)s < %(expected)s)"
 msgstr ""
+"Ungültige Anfrage: Nicht genügend Einträge in der Liste (%(current)s < "
+"%(expected)s)"
 
 #. module: base_rest
 #. odoo-python
@@ -48,45 +52,47 @@ msgstr ""
 #, python-format
 msgid "BadRequest: Too many items in the list (%(current)s > %(expected)s)"
 msgstr ""
+"Ungültige Anfrage: Zu viele Einträge in der Liste (%(current)s > "
+"%(expected)s)"
 
 #. module: base_rest
 #: model:ir.ui.menu,name:base_rest.menu_rest_api_docs
 msgid "Docs"
-msgstr ""
+msgstr "Dokumentation"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "Invalid Response %s"
-msgstr ""
+msgstr "Ungültige Antwort %s"
 
 #. module: base_rest
 #: model:ir.actions.act_url,name:base_rest.action_rest_api_docs
 #: model:ir.ui.menu,name:base_rest.menu_rest_api_root
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #. module: base_rest
 #: model:ir.model,name:base_rest.model_rest_service_registration
 msgid "REST Services Registration Model"
-msgstr ""
+msgstr "Registrierungsmodell für REST-Dienste"
 
 #. module: base_rest
 #: model:ir.model,name:base_rest.model_ir_rule
 msgid "Record Rule"
-msgstr ""
+msgstr "Datensatzregel"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "Unable to get cerberus schema from %s"
-msgstr ""
+msgstr "Cerberus-Schema konnte nicht von %s abgerufen werden"
 
 #. module: base_rest
 #. odoo-python
 #: code:addons/base_rest/restapi.py:0
 #, python-format
 msgid "You must provide a dict of RestMethodParam"
-msgstr ""
+msgstr "Es muss ein Dictionary mit RestMethodParam angegeben werden"

@@ -22,15 +22,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-26 09:11+0000\n"
-"PO-Revision-Date: 2024-06-07 14:36+0000\n"
-"Last-Translator: Metin GÜLSOY <metin.gulsoy@kitayazilim.com>\n"
+"PO-Revision-Date: 2026-01-15 17:43+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_statement_import_file
 #. odoo-python
@@ -163,7 +163,7 @@ msgstr "Bir işlemde ödeme_ref'i eksik."
 #: code:addons/account_statement_import_file/models/account_journal.py:0
 #, python-format
 msgid "OCA Import"
-msgstr ""
+msgstr "OCA İçe aktar"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file

@@ -3150,6 +3150,11 @@ msgid "Board Service Lines"
 msgstr "Righe servizio pensione"
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_reservation__board_service_room_manual
+msgid "Board Service Manually Set"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__name
 #: model:ir.model.fields,help:pms.field_pms_board_service__name
 msgid "Board Service Name"
@@ -7168,11 +7173,6 @@ msgid "Journal Items"
 msgstr "Movimenti contabili"
 
 #. module: pms
-#: model:ir.model.fields,help:pms.field_res_company__self_billed_journal_id
-msgid "Journal used to create self billing"
-msgstr "Registro utilizzato per creare l'autofattura"
-
-#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__journal_normal_invoice_id
 msgid "Journal used to create the normal invoice"
 msgstr "Registro usato per creare la fattura normale"
@@ -10973,16 +10973,6 @@ msgid "Self"
 msgstr ""
 
 #. module: pms
-#: model:ir.model.fields,field_description:pms.field_res_company__self_billed_journal_id
-msgid "Self billed journal"
-msgstr ""
-
-#. module: pms
-#: model:ir.model.fields,field_description:pms.field_res_company__self_billed_tax_ids
-msgid "Self billed taxes"
-msgstr ""
-
-#. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Send Cancellation Email"
 msgstr ""
@@ -11739,11 +11729,6 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_advance_payment_inv__deposit_taxes_id
 msgid "Taxes used for deposits"
-msgstr ""
-
-#. module: pms
-#: model:ir.model.fields,help:pms.field_res_company__self_billed_tax_ids
-msgid "Taxes used to create self billing"
 msgstr ""
 
 #. module: pms
@@ -13372,6 +13357,14 @@ msgid "Weight unit of measure label"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_reservation__board_service_room_manual
+msgid ""
+"When enabled, the reservation will NOT auto-assign a default board service "
+"even if the field is empty. This is set automatically when the user edits or "
+"clears the board service."
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__force_nothing_to_invoice
 msgid ""
 "When you set this field, the folio will be considered as nothin to invoice, "
@@ -13704,6 +13697,9 @@ msgstr ""
 #, python-format
 msgid "{room_name}: No room available in {checkin} <-> {checkout}."
 msgstr ""
+
+#~ msgid "Journal used to create self billing"
+#~ msgstr "Registro utilizzato per creare l'autofattura"
 
 #, python-format
 #~ msgid "%(room_name)s: No room available in %(checkin)s <-> %(checkout)s."

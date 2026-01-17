@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-04-09 09:24+0000\n"
+"PO-Revision-Date: 2026-01-15 14:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -149,7 +149,7 @@ msgstr "Tipo correzione"
 #: code:addons/base_tier_validation_correction/models/tier_correction.py:0
 #, python-format
 msgid "Correction is allowed on state = 'done' only"
-msgstr "La correzione p consentita solo in stato 'completato'"
+msgstr "La correzione è consentita solo in stato 'completato'"
 
 #. module: base_tier_validation_correction
 #. odoo-python
@@ -480,17 +480,17 @@ msgstr "Correzione schedulato"
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_correct
 msgid "Scheduled Correction Date"
-msgstr "Data correzione schedulazione"
+msgstr "Data correzione schedulato"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
 msgid "Scheduled Revert"
-msgstr "Ripristina schedulazione"
+msgstr "Ripristina schedulato"
 
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_revert
 msgid "Scheduled Revert Date"
-msgstr "Data ripristino schedulazione"
+msgstr "Data ripristino schedulato"
 
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
@@ -622,4 +622,4 @@ msgstr "Cronologia comunicazioni sito web"
 #. module: base_tier_validation_correction
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
 msgid "e.g. Correction for..."
-msgstr "Es. Correzione per..."
+msgstr "es. Correzione per..."
