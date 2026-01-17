@@ -482,11 +482,16 @@ Date:   Wed Nov 26 17:16:44 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit cef263139277f4f4dde0e649773d0749f68b98ac
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 22 06:19:25 2025 +0000
+commit 34f23535ac02ed2a428a1355a255feceb5e61f60
+Author: strarsis <strarsis@gmail.com>
+Date:   Wed Jan 14 22:57:27 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 67.7% (21 of 31 strings)
+    
+    Translation: edi-15.0/edi-15.0-account_invoice_facturx
+    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-account_invoice_facturx/de/
 
 
 ## field-service
@@ -951,9 +956,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 06757f5a5eda1a37ffed89504a1b1ef98296d766
+commit d0c1b0c0a53259c576191e91e5d8fc52b4aa34a3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 11 16:41:01 2025 +0000
+Date:   Sat Jan 17 15:02:48 2026 +0000
 
     [BOT] post-merge updates
 
