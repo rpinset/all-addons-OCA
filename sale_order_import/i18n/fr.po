@@ -9,33 +9,34 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-12 13:36+0000\n"
-"PO-Revision-Date: 2016-11-12 13:36+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"PO-Revision-Date: 2026-01-19 13:50+0000\n"
+"Last-Translator: EvaS595 <eva.saintier@horanet.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/models/sale.py:0
 #: code:addons/sale_order_import/tests/test_sale_order.py:0
 #, python-format
 msgid " Amount w/o tax: %s %s)"
-msgstr ""
+msgstr " Montant HT : %s %s)"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "%d new order line(s) created: %s"
-msgstr ""
+msgstr "%d nouvelle(s) ligne(s) de commande créée(s) : %s"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "%d order line(s) deleted: %s"
-msgstr ""
+msgstr "%d ligne(s) de commande supprimée(s) : %s"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -43,11 +44,13 @@ msgstr ""
 msgid ""
 "An order of customer '%s' with reference '%s' already exists: %s (state: %s)"
 msgstr ""
+"Une commande du client \"%s\" avec la référence \"%s\" existe déjà : %s "
+"(état : %s)"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__price_source
 msgid "Apply Prices From"
-msgstr ""
+msgstr "Appliquer les prix depuis"
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -57,7 +60,7 @@ msgstr "Annuler"
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__commercial_partner_id
 msgid "Commercial Entity"
-msgstr ""
+msgstr "Entité commerciale"
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -68,7 +71,7 @@ msgstr "Créer une nouvelle"
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "Created automatically via file import (%s)."
-msgstr ""
+msgstr "Créé automatiquement par import de fichier (%s)."
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__create_uid
@@ -82,29 +85,28 @@ msgstr "Créé le"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__csv_import
-#, fuzzy
 msgid "Csv Import"
-msgstr "Importer"
+msgstr "Import CSV"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__partner_id
 msgid "Customer"
-msgstr ""
+msgstr "Client"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__price_source__order
 msgid "Customer Order"
-msgstr ""
+msgstr "Commande Client"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom affiché"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__doc_type
 msgid "Document Type"
-msgstr ""
+msgstr "Type de document"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__order_filename
@@ -126,6 +128,13 @@ msgid ""
 "separator ; if it is a decimal value, it should use dot as the decimal "
 "separator."
 msgstr ""
+"S'il s'agit d'un fichier CSV, vous devrez sélectionner manuellement le "
+"client. Le fichier CSV devrait comporter 2 colonnes : la référence du "
+"produit ou EAN13 (1ère colonne) puis la quantité du produit (2ème colonne). "
+"Il devrait n'y avoir aucune ligne d'en-tête et utiliser le point-virgule "
+"comme séparateur de champs. La quantité ne doit pas utiliser de séparateur "
+"de milliers ; s'il s'agit d'une valeur décimale, il faut utiliser le point "
+"comme séparateur de décimales."
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -133,6 +142,9 @@ msgid ""
 "If it is a PDF file, Odoo will try to find an XML file in the attachments of "
 "the PDF file and then use this XML file to create the quotation."
 msgstr ""
+"S'il s'agit d'un fichier PDF, Odoo essaiera de trouver un fichier XML dans "
+"les pièces jointes du fichier PDF, puis utilisera ce fichier XML pour créer "
+"le devis."
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -140,6 +152,8 @@ msgid ""
 "If it is an XML file, Odoo will parse it if the module that adds support for "
 "this XML format is installed. For the"
 msgstr ""
+"S'il s'agit d'un fichier XML, Odoo l'analysera si le module qui ajoute la "
+"compatibilité avec ce format XML est installé. Pour le"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__state__import
@@ -151,17 +165,17 @@ msgstr "Importer"
 #: model:ir.actions.act_window,name:sale_order_import.sale_order_import_action
 #: model:ir.ui.menu,name:sale_order_import.sale_order_import_menu
 msgid "Import RFQ or Order"
-msgstr ""
+msgstr "Importer une demande de prix ou une commande"
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid "Import Sale Orders"
-msgstr ""
+msgstr "Importer des bons de commande"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Dernière modification le"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__write_uid
@@ -177,47 +191,47 @@ msgstr "Dernière mise-à-jour le"
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "Missing customer"
-msgstr ""
+msgstr "Client manquant"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__price_source__pricelist
 msgid "Pricelist"
-msgstr ""
+msgstr "Liste de prix"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__sale_id
 msgid "Quotation to Update"
-msgstr ""
+msgstr "Devis à mettre à jour"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__doc_type__rfq
 msgid "Request For Quotation"
-msgstr ""
+msgstr "Demande de devis"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__order_file
 msgid "Request for Quotation or Order"
-msgstr ""
+msgstr "Demande de devis ou commande"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__doc_type__order
 msgid "Sale Order"
-msgstr ""
+msgstr "Bon de commande"
 
 #. module: sale_order_import
 #: model:ir.model,name:sale_order_import.model_sale_order_import
 msgid "Sale Order Import from Files"
-msgstr ""
+msgstr "Import de bons de commande à partir de fichiers"
 
 #. module: sale_order_import
 #: model:ir.model,name:sale_order_import.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Bons de commande"
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__partner_shipping_id
 msgid "Shipping Address"
-msgstr ""
+msgstr "Adresse d'expédition"
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -226,6 +240,9 @@ msgid ""
 "correspond to the order or RFQ that you are importing. You can either select "
 "an existing quotation to update or create a new one."
 msgstr ""
+"Des devis ont été trouvés pour ce client ; l'un d'eux pourrait correspondre "
+"à la commande ou à la demande de prix que vous importez. Vous pouvez soit "
+"sélectionner un devis existant à mettre à jour soit en créer un nouveau."
 
 #. module: sale_order_import
 #: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__state
@@ -239,6 +256,8 @@ msgid ""
 "The currency of the imported order (%s) is different from the currency of "
 "the existing order (%s)"
 msgstr ""
+"La devise de la commande importée (%s) est différente de la devise de la "
+"commande existante (%s)"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -247,6 +266,8 @@ msgid ""
 "The customer '%s' has a pricelist '%s' but the currency of this order is "
 "'%s'."
 msgstr ""
+"Le client \"%s\" a une liste de prix \"%s\" mais la devise de cette commande "
+"est \"%s\"."
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -255,6 +276,8 @@ msgid ""
 "The quantity has been updated on the order line with product '%s' from %s to "
 "%s %s"
 msgstr ""
+"La quantité a été mise à jour sur la ligne de commande du produit \"%s\" "
+"pour passer de %s à %s%s"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -263,18 +286,20 @@ msgid ""
 "The unit price has been updated on the order line with product '%s' from %s "
 "to %s %s"
 msgstr ""
+"Le prix unitaire a été mis à jour sur la ligne de commande du produit \"%s\" "
+"pour passer de %s à %s%s"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "There are no embedded XML file in this PDF file."
-msgstr ""
+msgstr "Il n'y a pas de fichier XML intégré à ce fichier PDF."
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "This XML file is not XML-compliant"
-msgstr ""
+msgstr "Ce fichier XML n'est pas un XML conforme"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -283,18 +308,20 @@ msgid ""
 "This file '%s' is not recognised as a CSV, XML nor PDF file. Please check "
 "the file and it's extension."
 msgstr ""
+"Le fichier \"%s\" n'est pas reconnu comme un fichier CSV, XML ou PDF. "
+"Veuillez vérifier le fichier et son extension."
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "This order doesn't have any line !"
-msgstr ""
+msgstr "Cette commande ne comporte aucune ligne !"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "This quotation has been updated automatically via the import of file %s"
-msgstr ""
+msgstr "Ce devis a été mis à jour automatiquement par l'import du fichier %s"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -303,6 +330,8 @@ msgid ""
 "This type of CSV order is not supported. Did you install the module to "
 "support CSV orders?"
 msgstr ""
+"Le type de commande CSV n'est pas compatible. Avez-vous installé le module "
+"pour gérer les commandes CSV ?"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
@@ -311,17 +340,19 @@ msgid ""
 "This type of XML RFQ/order is not supported. Did you install the module to "
 "support this XML format?"
 msgstr ""
+"Ce type de demande de prix/commande XML n'est pas compatible. Avez-vous "
+"installé le module pour gérer ce format XML ?"
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid "Universal Business Language"
-msgstr ""
+msgstr "Universal Business Language"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "Unsupported file format"
-msgstr ""
+msgstr "Format de fichier incompatible"
 
 #. module: sale_order_import
 #: model:ir.model.fields.selection,name:sale_order_import.selection__sale_order_import__state__update
@@ -339,6 +370,8 @@ msgid ""
 "Upload a Request for Quotation or an Order file. Supported formats: CSV, XML "
 "and PDF (PDF with an embeded XML file)."
 msgstr ""
+"Importer un fichier de demande de devis ou de commande. Formats supportés : "
+"CSV, XML et PDF (PDF avec fichier XML intégré)."
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
@@ -346,15 +379,18 @@ msgid ""
 "Upload below the customer order or request for quotation as CSV, XML or PDF "
 "file. When you click on the Import button:"
 msgstr ""
+"Importer ci-dessous la commande client ou la demande de devis en CSV, XML ou "
+"PDF. Quand vous cliquez sur le bouton Importer :"
 
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid "You must select a quotation to update."
-msgstr ""
+msgstr "Vous devez sélectionner un devis à mettre à jour."
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid ""
 "format (UBL), you should install the module <em>sale_order_import_ubl</em>."
 msgstr ""
+"format (UBL), vous devez installer le module <em>sale_order_import_ubl</em>."

@@ -550,16 +550,16 @@ Date:   Wed Jun 4 02:49:39 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 6d2ed9d87d391c18469a5357d28bbcc9a84fa587
-Author: strarsis <strarsis@gmail.com>
-Date:   Wed Jan 14 22:57:03 2026 +0000
+commit 736f768ed7029dd7522d9c724afff53480c26858
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Mon Jan 19 13:56:25 2026 +0000
 
-    Translated using Weblate (German)
+    Translated using Weblate (French)
     
-    Currently translated at 75.8% (22 of 29 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: edi-13.0/edi-13.0-account_invoice_facturx
-    Translate-URL: https://translation.odoo-community.org/projects/edi-13-0/edi-13-0-account_invoice_facturx/de/
+    Translation: edi-13.0/edi-13.0-base_facturx
+    Translate-URL: https://translation.odoo-community.org/projects/edi-13-0/edi-13-0-base_facturx/fr/
 
 
 ## field-service
@@ -1332,16 +1332,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit e0c6f2fcfd07c91748165ad3617b5431c7b05905
+commit de5d5127f80d20b63e959df007ac142bb48088e2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:55:46 2025 +0000
+Date:   Mon Jan 19 11:19:40 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_category_active
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_category_active/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_attribute_value_menu
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_attribute_value_menu/it/
 
 
 ## product-kitting
@@ -1595,11 +1595,16 @@ Date:   Wed Jul 23 11:33:17 2025 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 7a28b7651ed76b2137672e8bc381ce48f7ad0975
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:41:44 2025 +0000
+commit 692fe6493d8c10468d12ec082a3cb5484535421c
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Mon Jan 19 14:15:01 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (18 of 18 strings)
+    
+    Translation: community-data-files-13.0/community-data-files-13.0-base_unece
+    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-13-0/community-data-files-13-0-base_unece/fr/
 
 
 ## webhook
