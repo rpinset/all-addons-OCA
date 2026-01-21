@@ -1,5 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Jairo Llopis \<<jairo.llopis@tecnativa.com>\>
-  - David Vidal \<<david.vidal@tecnativa.com>\>
-  - Alexandre Díaz \<<alexandre.diaz@tecnativa.com>\>
-  - Juan Carlos Oñate

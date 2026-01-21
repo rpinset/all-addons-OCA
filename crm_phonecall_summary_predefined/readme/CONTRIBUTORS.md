@@ -1,8 +1,0 @@
-  - [Tecnativa](https://www.tecnativa.com):
-      - Rafael Blasco
-      - Jairo Llopis
-      - Vicent Cubells
-      - Cristina Martín
-      - Víctor Martínez
-      - Carolina Fernandez
-  - Anand Kansagra \<<kansagraanand@hotmail.com>\>

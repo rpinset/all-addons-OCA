@@ -28,8 +28,8 @@ msgstr "%(name)s är inte ett giltigt intervall (%(date_start)s > %(date_end)s)"
 #. module: date_range
 #. odoo-python
 #: code:addons/date_range/models/date_range.py:0
-msgid "%(thisname)s overlaps %(dtname)s"
-msgstr "%(thisname)s överlappar %(dtname)s"
+msgid "%(thisname)s overlaps %(dtnames)s"
+msgstr ""
 
 #. module: date_range
 #: model_terms:ir.ui.view,arch_db:date_range.date_range_generator_view_form
@@ -39,11 +39,6 @@ msgid ""
 msgstr ""
 ",\n"
 "                                eller generera"
-
-#. module: date_range
-#: model:ir.model.constraint,message:date_range.constraint_date_range_date_range_uniq
-msgid "A date range must be unique per company !"
-msgstr "Ett datumintervall måste vara unikt för varje företag!"
 
 #. module: date_range
 #: model:ir.model.constraint,message:date_range.constraint_date_range_type_date_range_type_uniq
@@ -99,7 +94,11 @@ msgid "Cancel"
 msgstr "Avbryt"
 
 #. module: date_range
-#: model:ir.model.fields,field_description:date_range.field_date_range__company_id
+#: model:ir.model.fields,field_description:date_range.field_date_range__company_ids
+msgid "Companies"
+msgstr ""
+
+#. module: date_range
 #: model:ir.model.fields,field_description:date_range.field_date_range_generator__company_id
 #: model:ir.model.fields,field_description:date_range.field_date_range_type__company_id
 #: model_terms:ir.ui.view,arch_db:date_range.view_date_range_search
@@ -359,6 +358,14 @@ msgstr ""
 "detsamma."
 
 #. module: date_range
+#. odoo-python
+#: code:addons/date_range/models/date_range.py:0
+msgid ""
+"The Date Range Type %(drt_name)s assigned to other company, you can't change "
+"the company in Date Range %(dt_name)s"
+msgstr ""
+
+#. module: date_range
 #: model:ir.model.fields,help:date_range.field_date_range_type__active
 msgid ""
 "The active field allows you to hide the date range type without removing it."
@@ -441,6 +448,12 @@ msgstr "veckor"
 #: model:ir.model.fields.selection,name:date_range.selection__date_range_type__unit_of_time__0
 msgid "years"
 msgstr "år"
+
+#~ msgid "%(thisname)s overlaps %(dtname)s"
+#~ msgstr "%(thisname)s överlappar %(dtname)s"
+
+#~ msgid "A date range must be unique per company !"
+#~ msgstr "Ett datumintervall måste vara unikt för varje företag!"
 
 #~ msgid "&amp;nbsp;"
 #~ msgstr "&amp; nbsp;"

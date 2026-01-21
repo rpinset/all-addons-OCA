@@ -58,7 +58,6 @@ requests
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 # generated from manifests external_dependencies
 openupgradelib
-# From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
 # generated from manifests external_dependencies
 email-validator
@@ -186,6 +185,7 @@ python-stdnum
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 # generated from manifests external_dependencies
+easypost==7.15.0
 openupgradelib
 roulier
 unidecode
@@ -310,6 +310,7 @@ apispec
 cerberus
 contextvars
 cryptography
+extendable-pydantic>=1.2.0
 extendable>=0.0.4
 fastapi>=0.110.0
 parse-accept-language

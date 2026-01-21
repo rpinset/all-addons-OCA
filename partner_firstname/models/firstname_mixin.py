@@ -25,12 +25,12 @@ class FirstNameMixin(models.AbstractModel):
             .sudo()
             .get_param("partner_names_required_fields")
         )
-        for partner in self:
-            partner.firstname_required = not partner.lastname or required_fields in [
+        for item in self:
+            item.firstname_required = not item.lastname or required_fields in [
                 "firstname",
                 "firstname_lastname",
             ]
-            partner.lastname_required = not partner.firstname or required_fields in [
+            item.lastname_required = not item.firstname or required_fields in [
                 "lastname",
                 "firstname_lastname",
             ]
@@ -121,7 +121,7 @@ class FirstNameMixin(models.AbstractModel):
     def _get_inverse_name(self, name, is_company=False):
         """Compute the inverted name.
 
-        - If the partner is a company, save it in the lastname.
+        - If the item is a company, save it in the lastname.
         - Otherwise, make a guess.
 
         This method can be easily overriden by other submodules.

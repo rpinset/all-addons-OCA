@@ -1,2 +1,0 @@
-- Quentin Groulard \<<quentin.groulard@acsone.eu>\>
-- Souheil Bejaoui \<<souheil.bejaoui@acsone.eu>\>

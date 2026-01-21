@@ -1,5 +1,0 @@
-- Odoo SA
-- Akim Juillerat \<<akim.juillerat@camptocamp.com>\>
-- Robin Goots \<<robin.goots@dynapps.be>\>
-- \[APSL-Nagarro\](<https://apsl.tech>):
-  - Antoni Marroig \<<amarroig@apsl.net>\>

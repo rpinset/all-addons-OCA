@@ -6,7 +6,7 @@
 # Copyright 2018-2022 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import _, api, fields, models
+from odoo import Command, _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 
 
@@ -242,22 +242,22 @@ class AccountCheckDeposit(models.Model):
         total_debit = self.company_id.currency_id.round(total_debit)
         total_amount_currency = self.currency_id.round(total_amount_currency)
 
-        counterpart_account_id = False
+        counterpart_account = False
         for line in self.bank_journal_id.inbound_payment_method_line_ids:
             if line.payment_method_id.code == "manual" and line.payment_account_id:
-                counterpart_account_id = line.payment_account_id.id
+                counterpart_account = line.payment_account_id
                 break
         # inspired by _get_outstanding_account() on account.payment
-        if not counterpart_account_id:
+        if not counterpart_account:
             chart_template = self.with_context(
                 allowed_company_ids=self.company_id.root_id.ids
             ).env["account.chart.template"]
-            counterpart_account_id = chart_template.ref(
+            counterpart_account = chart_template.ref(
                 "account_journal_payment_debit_account_id", raise_if_not_found=False
-            ).id
-        if not counterpart_account_id:
-            counterpart_account_id = self.company_id.transfer_account_id.id
-        if not counterpart_account_id:
+            )
+        if not counterpart_account:
+            counterpart_account = self.company_id.transfer_account_id
+        if not counterpart_account:
             raise UserError(
                 _("Missing 'Internal Transfer' account on the company '%s'.")
                 % self.company_id.display_name
@@ -269,27 +269,23 @@ class AccountCheckDeposit(models.Model):
             "ref": _("Check Deposit %s") % self.name,
             "company_id": self.company_id.id,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "account_id": self.in_hand_check_account_id.id,
                         "partner_id": False,
                         "credit": total_debit,
                         "currency_id": self.currency_id.id,
                         "amount_currency": total_amount_currency * -1,
-                    },
+                    }
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
-                        "account_id": counterpart_account_id,
+                        "account_id": counterpart_account.id,
                         "partner_id": False,
                         "debit": total_debit,
                         "currency_id": self.currency_id.id,
                         "amount_currency": total_amount_currency,
-                    },
+                    }
                 ),
             ],
         }
