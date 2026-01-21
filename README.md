@@ -1300,16 +1300,16 @@ Date:   Mon Aug 4 06:41:58 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 96c9ed258d1b5b468fa58799c91757d9394ce949
+commit a98b50f01bd3a55b278c54f34e38f154b83f981a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:55:41 2025 +0000
+Date:   Mon Jan 19 11:19:38 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_category_active
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_category_active/it/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_attribute_value_menu
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_attribute_value_menu/it/
 
 
 ## product-kitting
@@ -1492,9 +1492,9 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 2a6451e8a3830c7cc96198d03d9c00f6560a7dc4
+commit 9a770c5e03ec73a6590b69f56361078f4f302611
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 5 14:50:52 2025 +0000
+Date:   Tue Jan 20 10:26:35 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1547,16 +1547,16 @@ Date:   Fri Jun 13 09:05:16 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit bc790c058f9a9eb0aa2d9e07f503b248e3acb670
+commit 1282cabc9c6da0aaee0d36f6170c7741ff60654a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 6 11:27:02 2025 +0000
+Date:   Mon Jan 19 11:28:10 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (128 of 128 strings)
     
-    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation_waiting
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation_waiting/it/
+    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation/it/
 
 
 ## community-data-files
