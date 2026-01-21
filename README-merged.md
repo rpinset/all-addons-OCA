@@ -4210,6 +4210,8 @@ addon | version | maintainers | summary
 [l10n_fr_chorus_account](l10n_fr_chorus_account/) | 15.0.1.3.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
 [l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 15.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add checks on sale orders for Chorus Pro
+[l10n_fr_cog](l10n_fr_cog/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Code Officiel Géographique (COG) on countries
+[l10n_fr_das2](l10n_fr_das2/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 15.0.1.2.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_ecotaxe](l10n_fr_ecotaxe/) | 15.0.1.0.0 |  | Use Ecotaxe in French localisation contexte
@@ -5153,7 +5155,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 15.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 15.0.1.0.1 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 15.0.1.0.1 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.1.1 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.2.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303

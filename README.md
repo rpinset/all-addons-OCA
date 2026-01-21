@@ -768,14 +768,11 @@ Date:   Sun Feb 2 19:18:17 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit a54747e4c0bb0a4821fc5e8d03ea930209b10bcb
-Merge: 2aacedc8 95f104ac
+commit 7100ac829815b51af937209d737389dd5aa7546a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 19 17:54:04 2025 +0000
+Date:   Tue Jan 20 23:07:22 2026 +0000
 
-    Merge PR #715 into 15.0
-    
-    Signed-off-by alexis-via
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -956,11 +953,16 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit d0c1b0c0a53259c576191e91e5d8fc52b4aa34a3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 17 15:02:48 2026 +0000
+commit aff2f5983bd2685aac3135e46ee6de99ff77e0b5
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jan 21 18:54:17 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod190
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod190/
 
 
 ## l10n-switzerland
@@ -1211,16 +1213,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 164ddf4dceda789f710c81a519e2aad2ca44ebfe
+commit 27d592aaefcdceaa8106d01c3f7edc9f696af562
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:55:36 2025 +0000
+Date:   Mon Jan 19 11:19:39 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: product-attribute-15.0/product-attribute-15.0-product_category_active
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_category_active/it/
+    Translation: product-attribute-15.0/product-attribute-15.0-product_attribute_value_menu
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_attribute_value_menu/it/
 
 
 ## product-kitting
@@ -1448,16 +1450,16 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit ef9325eb4fc5c91bb0f8b2609687622fa75374b8
+commit 1083ff1e6ce37a6a34123e5388b9ad3f8b30a18b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Jan 11 14:29:55 2026 +0000
+Date:   Mon Jan 19 11:28:12 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 91.1% (41 of 45 strings)
+    Currently translated at 65.8% (83 of 126 strings)
     
-    Translation: server-ux-15.0/server-ux-15.0-chained_swapper
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-chained_swapper/it/
+    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
 
 
 ## community-data-files

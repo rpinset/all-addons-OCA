@@ -2,7 +2,7 @@
 
 {
     "name": "AEAT modelo 190",
-    "version": "15.0.2.1.1",
+    "version": "15.0.2.2.0",
     "category": "Localization/Accounting",
     "author": "Punt Sistemes SLU,"
     "Odoo Community Association (OCA),"
@@ -11,10 +11,14 @@
     "license": "AGPL-3",
     "depends": ["l10n_es", "l10n_es_aeat"],
     "data": [
+        # 2017
+        "data/2017/aeat_export_mod190_partner_data.xml",
+        "data/2017/aeat_export_mod190_data.xml",
+        # 2025
+        "data/2025/aeat.model.export.config.csv",
+        "data/2025/aeat.model.export.config.line.csv",
         "data/perception_key_data.xml",
         "data/perception_subkey_data.xml",
-        "data/aeat_export_mod190_partner_data.xml",
-        "data/aeat_export_mod190_data.xml",
         "data/tax_code_map_mod190_data.xml",
         "views/account_fiscal_position.xml",
         "views/account_invoice_view.xml",
