@@ -1808,6 +1808,7 @@ addon | version | maintainers | summary
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start date and end date on sale order lines
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 17.0.1.0.0 |  | Sale Stock Cancel Restriction
 [sale_stock_delivery_state](sale_stock_delivery_state/) | 17.0.1.0.0 |  | Change the way to compute the delivery state
+[sale_stock_line_sequence](sale_stock_line_sequence/) | 17.0.1.0.0 |  | Glue Module for Sale Order Line Sequence and Stock Picking Line Sequence
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.1.1 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 17.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add picking note in sale and purchase order
 [sale_stock_secondary_unit](sale_stock_secondary_unit/) | 17.0.1.0.1 |  | Get product quantities in a secondary unit
@@ -4914,7 +4915,7 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.1 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 17.0.2.5.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 17.0.2.5.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.3 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.3 |  | AEAT modelo 123
@@ -5426,9 +5427,10 @@ addon | version | maintainers | summary
 [delivery_carrier_manual_weight](delivery_carrier_manual_weight/) | 17.0.1.0.0 |  | Allow setting weight and shipping weight in stock transfers manually based on carrier.
 [delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 17.0.1.0.0 |  | Multiple ZIP intervals for the same delivery method
 [delivery_carrier_partner](delivery_carrier_partner/) | 17.0.1.0.0 |  | Add a partner in the delivery carrier
-[delivery_cbl](delivery_cbl/) | 17.0.1.1.1 |  | Integrate CBL webservice
+[delivery_cbl](delivery_cbl/) | 17.0.2.0.0 |  | Integrate CBL webservice
 [delivery_correos_express](delivery_correos_express/) | 17.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 17.0.1.0.1 |  | Delivery Carrier implementation for CTT Express API
+[delivery_easypost_oca](delivery_easypost_oca/) | 17.0.1.0.0 |  | OCA Delivery Easypost
 [delivery_estimated_package_quantity_by_weight](delivery_estimated_package_quantity_by_weight/) | 17.0.1.0.0 |  | Compute the amount of packages a picking out should have depending on the weight of the products and the limit fixed by the carrier
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 17.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_multi_destination](delivery_multi_destination/) | 17.0.1.0.1 |  | Multiple destinations for the same delivery method
@@ -6115,7 +6117,7 @@ addon | version | maintainers | summary
 [document_page_procedure](document_page_procedure/) | 17.0.1.0.1 |  | Document Management - Wiki - Procedures
 [document_page_quality_manual](document_page_quality_manual/) | 17.0.1.0.1 |  | Quality Manual
 [document_page_work_instruction](document_page_work_instruction/) | 17.0.1.0.1 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 17.0.1.1.1 |  | Management System
+[mgmtsystem](mgmtsystem/) | 17.0.1.2.0 |  | Management System
 [mgmtsystem_action](mgmtsystem_action/) | 17.0.1.0.1 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 17.0.1.0.1 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 17.0.1.0.0 |  | Add Template management for Actions.

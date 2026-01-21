@@ -178,6 +178,7 @@ python-stdnum
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 # generated from manifests external_dependencies
+easypost==7.15.0
 roulier
 unidecode
 zeep

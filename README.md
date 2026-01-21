@@ -53,11 +53,16 @@ Date:   Mon Dec 15 14:45:24 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit fcea159a1af3695e1fa5560529d17d20bad22c5d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 12 15:20:14 2026 +0000
+commit 013c9c28535aca1a5623d67f3dedb0514f98522a
+Author: Valaeys Stéphane <svalaeys@fiefmanage.ch>
+Date:   Wed Jan 21 16:27:44 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (110 of 110 strings)
+    
+    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-partner_statement/fr/
 
 
 ## account-invoice-reporting
@@ -320,9 +325,9 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 71532cb80b572d0afa84a887a0658082b4ddd1c2
+commit a6677d6eead23b4b96ca7433c9fece52563fcb5d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 9 13:36:04 2026 +0000
+Date:   Mon Jan 19 15:01:44 2026 +0000
 
     [BOT] post-merge updates
 
@@ -942,20 +947,23 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 36eda0438efb096ed8c040418fd10893a0e3fe1c
+commit ce7d74ffb8bbaff47df4c546c264726aeff554e8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 17 16:15:19 2026 +0000
+Date:   Tue Jan 20 22:37:59 2026 +0000
 
     [BOT] post-merge updates
 
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 4a5d71428b031922c5419e356ae666076c078a56
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:11:43 2025 +0000
+commit f2fe11cc51b9b873b2776a35d07afaec720c07c6
+Merge: 4a5d7142 2a010782
+Author: Thierry Ducrest <TDu@users.noreply.github.com>
+Date:   Wed Jan 21 09:48:50 2026 +0100
 
-    [UPD] addons table in README.md
+    Merge pull request #768 from camptocamp/17-ebill-postfinance-fix-amount
+    
+    [17.0][FWP] ebill_postfinance: use residual_amount to calculate total
 
 
 ## l10n-taiwan
@@ -1032,11 +1040,11 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ba8bb9efa935326cac73f535067ac9a7001df633
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 22 09:08:24 2025 +0000
+commit 9e84be72901cf8a79d80508f8e97380b3558918c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jan 20 08:18:31 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## stock-logistics-barcode
@@ -1136,16 +1144,11 @@ Date:   Mon Jul 28 10:07:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 6b0d91a2f4589cdabac871f146464fb120321f0f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:44:53 2025 +0000
+commit 37094541181c8353fb01c207f1ee783a65f18253
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jan 18 11:09:44 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: management-system-17.0/management-system-17.0-mgmtsystem_nonconformity_type
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-17-0/management-system-17-0-mgmtsystem_nonconformity_type/it/
+    [BOT] post-merge updates
 
 
 ## pms
@@ -1419,16 +1422,16 @@ Date:   Wed Jun 4 03:42:57 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 2b908a8e68ddde906ea45be7b5fb24676f29f8cc
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 12 05:15:40 2025 +0000
+commit 1848bcb2e05a458c1c8bc477649d06cfcdf5389e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 19 11:28:13 2026 +0000
 
-    Translated using Weblate (Japanese)
+    Translated using Weblate (Italian)
     
-    Currently translated at 98.5% (70 of 71 strings)
+    Currently translated at 100.0% (150 of 150 strings)
     
-    Translation: server-ux-17.0/server-ux-17.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-date_range/ja/
+    Translation: server-ux-17.0/server-ux-17.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-base_tier_validation/it/
 
 
 ## community-data-files
