@@ -22,11 +22,6 @@ msgid "DMS Directories"
 msgstr "Cartelle DMS"
 
 #. module: account_dms_field
-#: model:ir.model,name:account_dms_field.model_dms_field_template
-msgid "Dms Field Template"
-msgstr "Modello campo DMS"
-
-#. module: account_dms_field
 #: model_terms:ir.ui.view,arch_db:account_dms_field.view_move_form_inherit_account_dms_field
 msgid "Documents"
 msgstr "Documenti"
@@ -40,3 +35,6 @@ msgstr "Tutti per conto DMS"
 #: model:ir.model,name:account_dms_field.model_account_move
 msgid "Journal Entry"
 msgstr "Registrazione contabile"
+
+#~ msgid "Dms Field Template"
+#~ msgstr "Modello campo DMS"

@@ -19,11 +19,6 @@ msgid "DMS Directories"
 msgstr ""
 
 #. module: account_dms_field
-#: model:ir.model,name:account_dms_field.model_dms_field_template
-msgid "Dms Field Template"
-msgstr ""
-
-#. module: account_dms_field
 #: model_terms:ir.ui.view,arch_db:account_dms_field.view_move_form_inherit_account_dms_field
 msgid "Documents"
 msgstr ""

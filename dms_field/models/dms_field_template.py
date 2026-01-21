@@ -194,7 +194,9 @@ class DmsFieldTemplate(models.Model):
             "storage_id": directory.storage_id.id,
             "res_id": record.id,
             "res_model": record._name,
-            "name": directory_name,
+            "name": directory_name
+            if "/" not in directory_name
+            else directory_name.replace("/", "-"),
             "group_ids": [(4, group.id) for group in groups],
         }
         if not self.parent_directory_id:
