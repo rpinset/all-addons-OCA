@@ -94,16 +94,16 @@ Date:   Thu Jan 15 16:43:40 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit f70c3070ac085decd02a8c27ad13336e04140f32
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Sep 16 14:06:40 2025 +0000
+commit 071c39451871cda6f3dd184b3342fa887bb58abd
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Thu Jan 22 17:05:24 2026 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 83.6% (46 of 55 strings)
+    Currently translated at 86.2% (94 of 109 strings)
     
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-mis_builder_cash_flow
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-mis_builder_cash_flow/tr/
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/sl/
 
 
 ## account-invoice-reporting
@@ -1020,9 +1020,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 9b36a6849d6e56d1b30eb0bb8b2816fa8ede7cf6
+commit fd23732dee3a31ea7772a96ec338789f5a4b60df
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 11 16:07:13 2025 +0000
+Date:   Fri Jan 23 22:32:59 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1133,16 +1133,16 @@ Date:   Wed Oct 15 09:12:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 50be0701dbbf89c196bd3ec877605a50072c64d5
+commit cdae12ecccb0d317f2828c269309774a078146b8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:43 2025 +0000
+Date:   Thu Jan 22 07:51:32 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-product_supplierinfo_for_customer_picking
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-product_supplierinfo_for_customer_picking/it/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_no_negative
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_no_negative/it/
 
 
 ## stock-logistics-tracking
