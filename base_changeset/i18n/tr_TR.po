@@ -181,6 +181,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__changeset_change_ids
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__changeset_change_ids
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__changeset_change_ids
@@ -660,6 +662,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__changeset_ids
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__changeset_ids
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__changeset_ids
@@ -1126,6 +1130,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__count_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__count_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__count_changesets
@@ -1585,6 +1591,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__count_pending_changeset_changes
@@ -2044,6 +2052,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__count_pending_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__count_pending_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__count_pending_changesets
@@ -2469,8 +2479,11 @@ msgstr ""
 #. module: base_changeset
 #: model:ir.model.fields,help:base_changeset.field_changeset_field_rule__source_model_id
 msgid ""
-"If a source model is defined, the rule will be applied only when the change is made from this origin.  Rules without source model are global and applies to all backends.\n"
-"Rules with a source model have precedence over global rules, but if a field has no rule with a source model, the global rule is used."
+"If a source model is defined, the rule will be applied only when the change "
+"is made from this origin.  Rules without source model are global and applies "
+"to all backends.\n"
+"Rules with a source model have precedence over global rules, but if a field "
+"has no rule with a source model, the global rule is used."
 msgstr ""
 
 #. module: base_changeset
@@ -2874,6 +2887,8 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m_child__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_preview__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_abstract__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_stage__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_base_language_export__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_base_language_import__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_base_language_install__count_pending_changeset_changes
@@ -3333,6 +3348,8 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m_child__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_preview__count_pending_changesets
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_abstract__count_pending_changesets
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_stage__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_export__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_import__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_install__count_pending_changesets
@@ -3792,6 +3809,8 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_o2m_child__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_import_tests_models_preview__count_changesets
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_abstract__count_changesets
+#: model:ir.model.fields,help:base_changeset.field_base_kanban_stage__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_export__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_import__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_base_language_install__count_changesets
@@ -4167,7 +4186,8 @@ msgstr ""
 #: code:addons/base_changeset/models/record_changeset_change.py:0
 #, python-format
 msgid ""
-"This change cannot be applied because a previous changeset for the same record is pending.\n"
+"This change cannot be applied because a previous changeset for the same "
+"record is pending.\n"
 "Apply all the anterior changesets before applying this one."
 msgstr ""
 
@@ -4295,6 +4315,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_o2m_child__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_base_import_tests_models_preview__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_abstract__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_changeset.field_base_kanban_stage__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_export__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_import__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_base_language_install__user_can_see_changeset

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) 2020-Today: Sylvain LE GAL (http://www.grap.coop)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+
+    <record id="res_partner_category_multicompany_rule" model="ir.rule">
+        <field name="name">Res Partner Category - Multi Company</field>
+        <field name="model_id" ref="base.model_res_partner_category" />
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+</odoo>

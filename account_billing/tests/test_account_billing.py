@@ -47,6 +47,7 @@ class TestAccountBilling(AccountTestInvoicingCommon):
             invoice_amount=200,
             currency_id=cls.currency_eur_id,
             partner_id=cls.partner_a.id,
+            date_invoice=fields.Date.context_today(cls.env.user),
             payment_term_id=cls.payment_term.id,
             auto_validate=True,
         )
@@ -56,6 +57,7 @@ class TestAccountBilling(AccountTestInvoicingCommon):
             invoice_amount=300,
             currency_id=cls.currency_usd_id,
             partner_id=cls.partner_a.id,
+            date_invoice=fields.Date.context_today(cls.env.user),
             payment_term_id=cls.payment_term.id,
             auto_validate=True,
         )
@@ -65,6 +67,7 @@ class TestAccountBilling(AccountTestInvoicingCommon):
             invoice_amount=400,
             currency_id=cls.currency_eur_id,
             partner_id=cls.partner_china_exp.id,
+            date_invoice=fields.Date.context_today(cls.env.user),
             payment_term_id=cls.payment_term.id,
             auto_validate=True,
         )
@@ -74,6 +77,7 @@ class TestAccountBilling(AccountTestInvoicingCommon):
             invoice_amount=500,
             currency_id=cls.currency_usd_id,
             partner_id=cls.partner_a.id,
+            date_invoice=fields.Date.context_today(cls.env.user),
             payment_term_id=cls.payment_term.id,
             auto_validate=True,
         )
@@ -83,6 +87,7 @@ class TestAccountBilling(AccountTestInvoicingCommon):
             invoice_amount=500,
             currency_id=cls.currency_usd_id,
             partner_id=cls.partner_a.id,
+            date_invoice=fields.Date.context_today(cls.env.user),
             payment_term_id=cls.payment_term.id,
             auto_validate=True,
         )
@@ -125,6 +130,8 @@ class TestAccountBilling(AccountTestInvoicingCommon):
         action = invoices.action_create_billing()
         customer_billing1 = self.billing_model.browse(action["res_id"])
         self.assertEqual(customer_billing1.state, "draft")
+        # In case other modules change the default value of threshold_date_type
+        customer_billing1.threshold_date_type = "invoice_date_due"
         # Threshold Date error
         with self.assertRaises(ValidationError):
             customer_billing1.validate_billing()
@@ -199,3 +206,21 @@ class TestAccountBilling(AccountTestInvoicingCommon):
         invoices = inv_1 + inv_2
         action = invoices.action_create_billing()
         self.billing_model.browse(action["res_id"])
+
+    def test_account_billing_currency(self):
+        inv_1 = self._create_invoice(
+            move_type="in_invoice",
+            invoice_amount=100,
+            currency_id=self.currency_eur_id,
+            partner_id=self.partner_a.id,
+            payment_term_id=self.payment_term.id,
+            auto_validate=True,
+        )
+        inv_2 = inv_1.copy()
+        inv_2.invoice_date = fields.Date.today()
+        inv_2.action_post()
+        invoices = inv_1 + inv_2
+        action = invoices.action_create_billing()
+        customer_billing = self.billing_model.browse(action["res_id"])
+        self.assertEqual(customer_billing.currency_id.id, self.currency_eur_id)
+        self.assertEqual(self.env.company.currency_id.id, self.currency_usd_id)

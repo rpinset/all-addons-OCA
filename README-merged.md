@@ -453,7 +453,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_billing](account_billing/) | 16.0.1.1.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
+[account_billing](account_billing/) | 16.0.1.1.2 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 16.0.2.0.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 16.0.1.0.0 |  | Set a alternate payor/payee in invoices
 [account_invoice_block_payment](account_invoice_block_payment/) | 16.0.1.0.0 |  | Module to block payment of invoices
@@ -504,11 +504,13 @@ addon | version | maintainers | summary
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.4.0.1 |  | Manage triple discount on invoice lines
 [account_invoice_uom_column](account_invoice_uom_column/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Display UoM invoice line in a dedicated column on invoice reports
 [account_invoice_validation_queued](account_invoice_validation_queued/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enqueue account invoice validation
+[account_invoice_view_payment](account_invoice_view_payment/) | 16.0.1.0.0 |  | Access to the payment from an invoice
 [account_invoice_warn_message](account_invoice_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_mail_autosubscribe](account_mail_autosubscribe/) | 16.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's invoices
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 16.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | New invoice menu that combine invoices and refunds
 [account_move_auto_post_ref](account_move_auto_post_ref/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Propagate customer ref when auto-generating next recurring invoice
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Account Move Cancel Confirm
+[account_move_original_partner](account_move_original_partner/) | 16.0.1.0.0 |  | Display original customers when creating invoices from multiple sale orders.
 [account_move_sent_usability](account_move_sent_usability/) | 16.0.1.1.0 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
 [account_move_substate](account_move_substate/) | 16.0.1.0.1 |  | Account Move Sub State
 [account_move_tier_validation](account_move_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Account Moves to support a tier validation process.
@@ -522,7 +524,7 @@ addon | version | maintainers | summary
 [partner_invoicing_mode](partner_invoicing_mode/) | 16.0.2.0.0 |  | Base module for handling multiple partner invoicing mode
 [partner_invoicing_mode_at_shipping](partner_invoicing_mode_at_shipping/) | 16.0.1.2.0 |  | Create invoices automatically when goods are shipped.
 [partner_invoicing_mode_monthly](partner_invoicing_mode_monthly/) | 16.0.2.0.0 |  | Create invoices automatically on a monthly basis.
-[partner_last_invoice_date](partner_last_invoice_date/) | 16.0.1.0.0 |  | Add Last Invoice Date to Partners.
+[partner_last_invoice_date](partner_last_invoice_date/) | 16.0.1.0.1 |  | Add Last Invoice Date to Partners.
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 16.0.1.0.0 |  | Portal Accounting Personal Data Only
 [product_form_account_move_line_link](product_form_account_move_line_link/) | 16.0.1.0.0 |  | Adds a button on product forms to access Journal Items
 [purchase_invoicing_no_zero_line](purchase_invoicing_no_zero_line/) | 16.0.1.0.1 |  | Avoid creation of zero quantity invoice lines from purchase
@@ -599,7 +601,7 @@ addon | version | maintainers | summary
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 16.0.1.0.2 |  | Account Fiscal Position Partner Type
 [account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.4 |  | Add sale / purchase type on fiscal position
-[account_product_fiscal_classification](account_product_fiscal_classification/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simplify taxes management for products
+[account_product_fiscal_classification](account_product_fiscal_classification/) | 16.0.1.2.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simplify taxes management for products
 [l10n_eu_oss_oca](l10n_eu_oss_oca/) | 16.0.1.1.2 |  | L10n EU OSS OCA
 
 [//]: # (end addons)
@@ -1112,6 +1114,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_journal_dashboard_statement_button](account_journal_dashboard_statement_button/) | 16.0.1.0.0 |  | This module enhances the Account Journal Dashboard by introducing a shortcut button in the Bank and Cash journals. The button provides a direct link to the Bank Statements view.
 [account_statement_import_base](account_statement_import_base/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statement Import
 [account_statement_import_camt](account_statement_import_camt/) | 16.0.1.0.3 |  | CAMT Format Bank Statements Import
 [account_statement_import_camt54](account_statement_import_camt54/) | 16.0.1.0.0 |  | Bank Account Camt54 Import
@@ -2184,7 +2187,7 @@ addon | version | maintainers | summary
 [partner_employee_quantity](partner_employee_quantity/) | 16.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Know how many employees a partner has
 [partner_external_map](partner_external_map/) | 16.0.1.0.0 |  | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
 [partner_fax](partner_fax/) | 16.0.1.0.0 |  | Add fax number on partner
-[partner_firstname](partner_firstname/) | 16.0.1.0.3 |  | Split first name and last name for non company partners
+[partner_firstname](partner_firstname/) | 16.0.1.0.4 |  | Split first name and last name for non company partners
 [partner_identification](partner_identification/) | 16.0.1.0.3 |  | Partner Identification Numbers
 [partner_identification_eori](partner_identification_eori/) | 16.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for EORI Number
 [partner_identification_gln](partner_identification_gln/) | 16.0.1.0.1 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
@@ -3591,6 +3594,7 @@ addon | version | maintainers | summary
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 16.0.1.0.0 |  | This module adds a wizard to create companies easily
 [account_period_lock_date_multi_company](account_period_lock_date_multi_company/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Provides a company tree view to manage accounting lock dates
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Propagate account reconcile model in companies with same chart template
+[base_company_legal_info](base_company_legal_info/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Adds Legal informations on company model
 [base_multi_company](base_multi_company/) | 16.0.3.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 [calendar_event_multi_company](calendar_event_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar events
 [calendar_event_type_multi_company](calendar_event_type_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar event type
@@ -3625,10 +3629,12 @@ addon | version | maintainers | summary
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 16.0.1.1.3 |  | Intercompany PO/SO rules
 [purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 16.0.1.0.2 |  | Intercompany PO/SO rules with warehouse
 [purchase_sale_stock_inter_company_mrp](purchase_sale_stock_inter_company_mrp/) | 16.0.1.0.0 |  | Intercompany PO/SO rules with MRP
+[res_company_access_all_children](res_company_access_all_children/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Give access to all children companies to users that have access to a parent company
 [res_company_active](res_company_active/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Company Categories
 [res_company_code](res_company_code/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'code' field on company model
 [res_company_search_view](res_company_search_view/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a search view for company model
+[res_partner_category_multi_company](res_partner_category_multi_company/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Contact Tags - Multi Company
 [sale_partner_company](sale_partner_company/) | 16.0.1.0.0 |  | Set sale company from partner
 [sale_product_company](sale_product_company/) | 16.0.2.0.0 |  | Set selling companies on product
 [sale_product_company_multi_add](sale_product_company_multi_add/) | 16.0.1.0.0 |  | Filter products by selling companies on sale order multi add
@@ -4807,7 +4813,7 @@ addon | version | maintainers | summary
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 16.0.1.0.0 |  | Japan Partner Title QWeb
 [l10n_jp_partner_zip_address](l10n_jp_partner_zip_address/) | 16.0.1.0.0 |  | Japan Partner Zip Address
-[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.3.0 |  | Japan Summary Invoice
+[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.3.1 |  | Japan Summary Invoice
 [report_alternative_layout](report_alternative_layout/) | 16.0.1.3.0 |  | Report Alternative Layout
 
 [//]: # (end addons)
@@ -5438,6 +5444,7 @@ addon | version | maintainers | summary
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.3 |  | Sistema de gestión de aceites industriales usados en España - Compras
 [l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.3 |  | Sist. gestión aceites industriales usados en España - Ventas
 [l10n_es_sigaus_stock_picking_report_valued](l10n_es_sigaus_stock_picking_report_valued/) | 16.0.1.0.2 |  | Show SIGAUS amount in valued stock pickings.
+[l10n_es_subcontractor_certificate](l10n_es_subcontractor_certificate/) | 16.0.1.0.0 |  | Certificado de subcontratista
 [l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.2.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.1.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - API
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 16.0.1.0.4 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
@@ -6600,8 +6607,8 @@ addon | version | maintainers | summary
 [shopfloor_mobile](shopfloor_mobile/) | 16.0.1.4.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
-[shopfloor_reception](shopfloor_reception/) | 16.0.1.6.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
-[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.1.1 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
+[shopfloor_reception](shopfloor_reception/) | 16.0.1.6.2 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
+[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.1.2 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
 [shopfloor_reception_refund_return](shopfloor_reception_refund_return/) | 16.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Mark created return as to refund
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
@@ -6942,11 +6949,13 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.0.26.0 |  | A property management system
+[pms](pms/) | 16.0.2.1.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 16.0.1.3.0 |  | PMS Spanish Adaptation
-[pms_l10n_es_sii](pms_l10n_es_sii/) | 16.0.1.1.0 |  | PMS AEAT SII Integration
+[pms_l10n_es](pms_l10n_es/) | 16.0.2.0.0 |  | PMS Spanish Adaptation
+[pms_l10n_es_sii](pms_l10n_es_sii/) | 16.0.1.2.0 |  | PMS AEAT SII Integration
+[pms_partner_identification](pms_partner_identification/) | 16.0.2.1.0 |  | Add identification models in pms
+[pms_partner_second_lastname](pms_partner_second_lastname/) | 16.0.2.1.0 |  | Add lastname2 in pms models
 [pos_pms_link](pos_pms_link/) | 16.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
 
 [//]: # (end addons)
@@ -7217,6 +7226,7 @@ addon | version | maintainers | summary
 [product_category_level](product_category_level/) | 16.0.1.0.0 | <a href='https://github.com/PierrickBrun'><img src='https://github.com/PierrickBrun.png' width='32' height='32' style='border-radius:50%;' alt='PierrickBrun'/></a> | Add Level field on Product Categories to show the recursion level on the category
 [product_category_product_qty](product_category_product_qty/) | 16.0.1.0.0 |  | Product Category - Product Quantity
 [product_category_type](product_category_type/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Type field on Product Categories to distinguish between parent and final categories
+[product_category_usage_group](product_category_usage_group/) | 16.0.1.0.0 |  | Restrict Usage of Product Categories to a given Group
 [product_code_mandatory](product_code_mandatory/) | 16.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_mixin](product_code_mixin/) | 16.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Make product code available for any inherited model
 [product_code_regex_validation](product_code_regex_validation/) | 16.0.1.0.0 |  | Configure regEx validation for product codes.
@@ -7259,7 +7269,7 @@ addon | version | maintainers | summary
 [product_pricelist_simulation](product_pricelist_simulation/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simulate the product price for all pricelists
 [product_pricelist_simulation_margin](product_pricelist_simulation_margin/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add margin of product price for all pricelists
 [product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 16.0.1.1.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to create priceslists based on supplier info
-[product_print_category](product_print_category/) | 16.0.1.0.7 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Define print categories for products and automate products print, when data has changed
+[product_print_category](product_print_category/) | 16.0.1.0.8 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Define print categories for products and automate products print, when data has changed
 [product_product_template_link](product_product_template_link/) | 16.0.1.0.0 |  | Adds a button in product to view the template
 [product_profile](product_profile/) | 16.0.1.0.1 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Allow to configure a product in 1 click
 [product_route_mto](product_route_mto/) | 16.0.1.0.0 |  | This module allows to compute if a product is an 'MTO' one from its configured routes
@@ -8327,12 +8337,13 @@ addon | version | maintainers | summary
 [base_changeset](base_changeset/) | 16.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Track record changesets
 [base_conditional_image](base_conditional_image/) | 16.0.1.0.0 |  | This module extends the functionality to support conditional images
 [base_cron_exclusion](base_cron_exclusion/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
-[base_domain_inverse_function](base_domain_inverse_function/) | 16.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Provide function to inverse domain into parts
+[base_domain_inverse_function](base_domain_inverse_function/) | 16.0.1.0.1 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Provide function to inverse domain into parts
 [base_exception](base_exception/) | 16.0.2.1.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 16.0.6.6.1 |  | Up to date Fontawesome resources.
 [base_force_record_noupdate](base_force_record_noupdate/) | 16.0.1.0.0 |  | Manually force noupdate=True on models
 [base_import_default_enable_tracking](base_import_default_enable_tracking/) | 16.0.1.0.0 | <a href='https://github.com/benwillig'><img src='https://github.com/benwillig.png' width='32' height='32' style='border-radius:50%;' alt='benwillig'/></a> | This modules simply enables history tracking when doing an import.
 [base_import_odoo](base_import_odoo/) | 16.0.1.0.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> <a href='https://github.com/thomaspaulb'><img src='https://github.com/thomaspaulb.png' width='32' height='32' style='border-radius:50%;' alt='thomaspaulb'/></a> | Import records from another Odoo instance
+[base_kanban_stage](base_kanban_stage/) | 16.0.1.0.0 |  | Provides stage model and abstract logic for inheritance
 [base_m2m_custom_field](base_m2m_custom_field/) | 16.0.1.0.0 |  | Customizations of Many2many
 [base_model_restrict_update](base_model_restrict_update/) | 16.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Update Restrict Model
 [base_multi_image](base_multi_image/) | 16.0.1.0.1 |  | Allow multiple images for database objects
@@ -8354,7 +8365,7 @@ addon | version | maintainers | summary
 [excel_import_export](excel_import_export/) | 16.0.1.3.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base module for developing Excel import/export/report
 [excel_import_export_demo](excel_import_export_demo/) | 16.0.1.1.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Excel Import/Export/Report Demo
 [excel_import_export_unidecode](excel_import_export_unidecode/) | 16.0.1.0.1 |  | Add unidecode option to excel import/export/report
-[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.1.6.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
+[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.1.6.1 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 16.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 16.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
 [field_vector](field_vector/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
@@ -8367,7 +8378,7 @@ addon | version | maintainers | summary
 [module_analysis](module_analysis/) | 16.0.1.0.5 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 16.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 16.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
-[nsca_client](nsca_client/) | 16.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.
+[nsca_client](nsca_client/) | 16.0.1.0.2 |  | Send passive alerts to monitor your Odoo application.
 [odoo_test_xmlrunner](odoo_test_xmlrunner/) | 16.0.1.0.1 |  | This module override Odoo testing method to run them with xmlrunner tool.
 [onchange_helper](onchange_helper/) | 16.0.1.0.0 |  | Technical module that ease execution of onchange in Python code
 [postgres_vacuum](postgres_vacuum/) | 16.0.1.0.0 |  | Vacuum or analyze Odoo's database tables

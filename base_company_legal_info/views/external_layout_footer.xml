@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright (C) 2018 - Today: GRAP (http://www.grap.coop)
+  @author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+  @author: Quentin DUPONT (quentin.dupont@grap.coop)
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!-- Light -->
+    <template
+        id="legal_info_external_layout_standard"
+        inherit_id="web.external_layout_standard"
+    >
+
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <div><span t-field="company.report_legal_description" /></div>
+        </xpath>
+
+    </template>
+
+    <!-- Bold -->
+    <template
+        id="legal_info_external_layout_bold"
+        inherit_id="web.external_layout_bold"
+    >
+
+        <xpath expr="//span[@t-field='company.report_footer']" position="before">
+            <div><span t-field="company.report_legal_description" /></div>
+        </xpath>
+
+    </template>
+
+    <!-- Boxed -->
+    <template
+        id="legal_info_external_layout_boxed"
+        inherit_id="web.external_layout_boxed"
+    >
+
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <div><span t-field="company.report_legal_description" /></div>
+        </xpath>
+
+    </template>
+
+    <!-- Striped -->
+    <template
+        id="legal_info_external_layout_striped"
+        inherit_id="web.external_layout_striped"
+    >
+
+        <xpath expr="//div[@t-field='company.report_footer']" position="before">
+            <div><span t-field="company.report_legal_description" /></div>
+        </xpath>
+
+    </template>
+
+</odoo>

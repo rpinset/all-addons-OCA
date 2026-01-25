@@ -62,49 +62,43 @@
                             />
                             <field name="firstname" />
                             <field name="lastname" />
-                            <field name="lastname2" />
                             <field name="gender" />
                             <field name="birthdate_date" />
-                            <field name="document_country_id" />
-                            <field name="document_type" />
-                            <field name="document_number" />
-                            <field name="document_expedition_date" />
                             <field name="nationality_id" />
                             <field name="email" />
                             <field name="mobile" />
                             <field name="phone" />
-                            <field name="document_id" invisible="1" />
                             <field name="pms_property_id" invisible="1" />
-                            <label for="residence_street" string="Residence Address" />
+                            <label for="street" string="Residence Address" />
                             <div class="o_address_format">
                                 <field
-                                    name="residence_street"
+                                    name="street"
                                     placeholder="Street..."
                                     class="o_address_street"
                                 />
                                 <field
-                                    name="residence_street2"
+                                    name="street2"
                                     placeholder="Street 2..."
                                     class="o_address_street"
                                 />
                                 <field
-                                    name="residence_city"
+                                    name="city"
                                     placeholder="City"
                                     class="o_address_city"
                                 />
                                 <field
-                                    name="residence_state_id"
+                                    name="state_id"
                                     class="o_address_state"
                                     placeholder="State"
                                     options="{'no_open': True, 'no_quick_create': True}"
                                 />
                                 <field
-                                    name="residence_zip"
+                                    name="zip"
                                     placeholder="ZIP"
                                     class="o_address_zip"
                                 />
                                 <field
-                                    name="residence_country_id"
+                                    name="country_id"
                                     placeholder="Country"
                                     class="o_address_country"
                                     options='{"no_open": True, "no_create": True}'
@@ -161,15 +155,10 @@
                 <field name="partner_id" />
                 <field name="firstname" />
                 <field name="lastname" />
-                <field name="lastname2" />
                 <field name="gender" />
                 <field name="birthdate_date" />
-                <field name="document_country_id" />
-                <field name="document_type" />
-                <field name="document_number" />
-                <field name="document_expedition_date" />
                 <field name="nationality_id" />
-                <field name="residence_state_id" />
+                <field name="state_id" />
                 <field name="mobile" />
                 <field name="email" />
                 <field name="arrival" />
@@ -209,15 +198,10 @@
                 <field name="partner_id" domain="[('is_company','=', False)]" />
                 <field name="firstname" />
                 <field name="lastname" />
-                <field name="lastname2" />
                 <field name="gender" />
                 <field name="birthdate_date" />
-                <field name="document_country_id" />
-                <field name="document_type" />
-                <field name="document_number" />
-                <field name="document_expedition_date" />
                 <field name="nationality_id" />
-                <field name="residence_state_id" />
+                <field name="state_id" />
                 <field name="mobile" />
                 <field name="email" />
                 <field name="arrival" invisible="1" />
@@ -254,15 +238,10 @@
                 <field name="pms_property_id" invisible="1" />
                 <field name="firstname" />
                 <field name="lastname" />
-                <field name="lastname2" />
                 <field name="gender" />
                 <field name="birthdate_date" />
-                <field name="document_country_id" />
-                <field name="document_type" />
-                <field name="document_number" />
-                <field name="document_expedition_date" />
                 <field name="nationality_id" />
-                <field name="residence_state_id" />
+                <field name="state_id" />
                 <field name="mobile" />
                 <field name="email" />
                 <field name="arrival" />
@@ -294,15 +273,10 @@
                 <field name="partner_id" domain="[('is_company','=', False)]" />
                 <field name="firstname" />
                 <field name="lastname" />
-                <field name="lastname2" />
                 <field name="gender" />
                 <field name="birthdate_date" />
-                <field name="document_country_id" />
-                <field name="document_type" />
-                <field name="document_number" />
-                <field name="document_expedition_date" />
                 <field name="nationality_id" />
-                <field name="residence_state_id" />
+                <field name="state_id" />
                 <field name="email" />
                 <field name="mobile" />
                 <field name="arrival" />

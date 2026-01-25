@@ -134,6 +134,8 @@ msgstr "Tous"
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_import_tests_models_o2m__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_import_tests_models_o2m_child__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_import_tests_models_preview__assigned_attachment_ids
+#: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_kanban_abstract__assigned_attachment_ids
+#: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_kanban_stage__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_language_export__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_language_import__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_base_language_install__assigned_attachment_ids
@@ -804,8 +806,8 @@ msgstr ""
 #. module: autovacuum_message_attachment
 #: model:ir.model.fields,help:autovacuum_message_attachment.field_vacuum_rule__model_id
 msgid ""
-"Technical field used to set attributes (invisible/required, domain, etc..."
-"for other fields, like the domain filter"
+"Technical field used to set attributes (invisible/required, domain, "
+"etc...for other fields, like the domain filter"
 msgstr ""
 
 #. module: autovacuum_message_attachment

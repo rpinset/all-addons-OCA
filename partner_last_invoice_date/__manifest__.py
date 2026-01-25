@@ -4,7 +4,7 @@
 {
     "name": "Partner Last Invoice Date",
     "summary": "Add Last Invoice Date to Partners.",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Accounting & Finance",
     "website": "https://github.com/OCA/account-invoicing",
     "author": "ForgeFlow, Odoo Community Association (OCA)",

@@ -62,6 +62,10 @@ class MockConnection:
         method = getattr(self, command)
         return method(*args)
 
+    def expunge(self):
+        """Mock an IMAP4.expunge action"""
+        return ("OK", None)
+
 
 class TestMatchAlgorithms(TransactionCase):
     @classmethod

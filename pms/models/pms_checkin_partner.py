@@ -5,12 +5,8 @@
 import json
 from datetime import datetime
 
-from dateutil.relativedelta import relativedelta
-
 from odoo import _, api, fields, models
-from odoo.exceptions import UserError, ValidationError
-from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
-from odoo.tools.safe_eval import safe_eval
+from odoo.exceptions import ValidationError
 
 
 class PmsCheckinPartner(models.Model):
@@ -28,12 +24,9 @@ class PmsCheckinPartner(models.Model):
     partner_id = fields.Many2one(
         string="Partner",
         help="Partner associated with checkin partner",
-        readonly=False,
         index=True,
-        store=True,
         comodel_name="res.partner",
         domain="[('is_company', '=', False)]",
-        compute="_compute_partner_id",
     )
     reservation_id = fields.Many2one(
         string="Reservation",
@@ -65,18 +58,21 @@ class PmsCheckinPartner(models.Model):
         readonly=False,
         store=True,
         compute="_compute_email",
+        inverse=lambda r: r._inverse_partner_fields("email", "email"),
     )
     mobile = fields.Char(
         help="Checkin Partner Mobile",
         readonly=False,
         store=True,
         compute="_compute_mobile",
+        inverse=lambda r: r._inverse_partner_fields("mobile", "mobile"),
     )
     phone = fields.Char(
         help="Checkin Partner Phone",
         readonly=False,
         store=True,
         compute="_compute_phone",
+        inverse=lambda r: r._inverse_partner_fields("phone", "phone"),
     )
     image_128 = fields.Image(
         string="Image",
@@ -130,6 +126,7 @@ class PmsCheckinPartner(models.Model):
         store=True,
         compute="_compute_gender",
         selection=[("male", "Male"), ("female", "Female"), ("other", "Other")],
+        inverse=lambda r: r._inverse_partner_fields("gender", "gender"),
     )
     nationality_id = fields.Many2one(
         string="Nationality",
@@ -139,52 +136,49 @@ class PmsCheckinPartner(models.Model):
         index=True,
         compute="_compute_nationality_id",
         comodel_name="res.country",
+        inverse=lambda r: r._inverse_partner_fields("nationality_id", "nationality_id"),
     )
-    residence_street = fields.Char(
-        string="Street",
-        help="Street of the guest's residence",
+    street = fields.Char(
+        help="Street of the guest",
         readonly=False,
         store=True,
-        compute="_compute_residence_street",
+        compute="_compute_street",
     )
-    residence_street2 = fields.Char(
-        string="Street2",
-        help="Second street of the guest's residence",
+    street2 = fields.Char(
+        help="Second street of the guest",
         readonly=False,
         store=True,
-        compute="_compute_residence_street2",
+        compute="_compute_street2",
     )
-    residence_zip = fields.Char(
-        string="Zip",
-        help="Zip of the guest's residence",
+    zip = fields.Char(
+        help="Zip of the guest",
         readonly=False,
         store=True,
-        compute="_compute_residence_zip",
+        compute="_compute_zip",
         change_default=True,
     )
-    residence_city = fields.Char(
-        string="City",
-        help="City of the guest's residence",
+    city = fields.Char(
+        help="City of the guest",
         readonly=False,
         store=True,
-        compute="_compute_residence_city",
+        compute="_compute_city",
     )
-    residence_country_id = fields.Many2one(
+    country_id = fields.Many2one(
         string="Country of residence",
-        help="Country of the guest's residence",
+        help="Country of the guest",
         readonly=False,
         store=True,
         index=True,
-        compute="_compute_residence_country_id",
+        compute="_compute_country_id",
         comodel_name="res.country",
     )
-    residence_state_id = fields.Many2one(
+    state_id = fields.Many2one(
         string="State of residence",
-        help="State of the guest's residence",
+        help="State of the guest",
         readonly=False,
         store=True,
         index=True,
-        compute="_compute_residence_state_id",
+        compute="_compute_state_id",
         comodel_name="res.country.state",
     )
 
@@ -194,6 +188,7 @@ class PmsCheckinPartner(models.Model):
         readonly=False,
         store=True,
         compute="_compute_firstname",
+        inverse=lambda r: r._inverse_partner_fields("firstname", "firstname"),
     )
     lastname = fields.Char(
         string="Last Name",
@@ -201,13 +196,7 @@ class PmsCheckinPartner(models.Model):
         readonly=False,
         store=True,
         compute="_compute_lastname",
-    )
-    lastname2 = fields.Char(
-        string="Second Last Name",
-        help="host second lastname",
-        readonly=False,
-        store=True,
-        compute="_compute_lastname2",
+        inverse=lambda r: r._inverse_partner_fields("lastname", "lastname"),
     )
     birthdate_date = fields.Date(
         string="Birthdate",
@@ -215,51 +204,8 @@ class PmsCheckinPartner(models.Model):
         readonly=False,
         store=True,
         compute="_compute_birth_date",
+        inverse=lambda r: r._inverse_partner_fields("birthdate_date", "birthdate_date"),
     )
-    document_number = fields.Char(
-        help="Host document number",
-        readonly=False,
-        store=True,
-        compute="_compute_document_number",
-    )
-    document_type = fields.Many2one(
-        help="Select a valid document type",
-        readonly=False,
-        store=True,
-        index=True,
-        comodel_name="res.partner.id_category",
-        compute="_compute_document_type",
-        domain="['|', ('country_ids', '=', False),"
-        " ('country_ids', 'in', document_country_id)]",
-    )
-    document_expedition_date = fields.Date(
-        string="Expedition Date",
-        help="Date on which document_type was issued",
-        readonly=False,
-        store=True,
-        compute="_compute_document_expedition_date",
-    )
-
-    document_id = fields.Many2one(
-        string="Document",
-        help="Technical field",
-        readonly=False,
-        store=True,
-        index=True,
-        comodel_name="res.partner.id_number",
-        compute="_compute_document_id",
-        ondelete="restrict",
-    )
-
-    document_country_id = fields.Many2one(
-        string="Document Country",
-        help="Country of the document",
-        comodel_name="res.country",
-        compute="_compute_document_country_id",
-        store=True,
-        readonly=False,
-    )
-
     partner_incongruences = fields.Char(
         help="indicates that some partner fields \
             on the checkin do not correspond to that of \
@@ -271,7 +217,6 @@ class PmsCheckinPartner(models.Model):
         string="Possible existing customer",
         compute="_compute_possible_existing_customer_ids",
         comodel_name="res.partner",
-        inverse_name="checkin_partner_possible_customer_id",
     )
 
     partner_relationship = fields.Char(help="Family relationship between travelers")
@@ -285,49 +230,10 @@ class PmsCheckinPartner(models.Model):
         compute="_compute_sign_on",
     )
 
-    @api.depends("partner_id")
-    def _compute_document_number(self):
+    def _inverse_partner_fields(self, checkin_field_name, partner_field_name):
         for record in self:
-            if not record.document_number and record.partner_id.id_numbers:
-                last_update_document = record.partner_id.id_numbers.filtered(
-                    lambda x, record=record: x.write_date
-                    == max(record.partner_id.id_numbers.mapped("write_date"))
-                )
-                if last_update_document and last_update_document[0].name:
-                    record.document_number = last_update_document[0].name
-
-    @api.depends("partner_id")
-    def _compute_document_type(self):
-        for record in self:
-            if not record.document_type and record.partner_id.id_numbers:
-                last_update_document = record.partner_id.id_numbers.filtered(
-                    lambda x, record=record: x.write_date
-                    == max(record.partner_id.id_numbers.mapped("write_date"))
-                )
-                if last_update_document and last_update_document[0].category_id:
-                    record.document_type = last_update_document[0].category_id
-
-    @api.depends("partner_id")
-    def _compute_document_expedition_date(self):
-        for record in self:
-            if not record.document_expedition_date and record.partner_id.id_numbers:
-                last_update_document = record.partner_id.id_numbers.filtered(
-                    lambda x, record=record: x.write_date
-                    == max(record.partner_id.id_numbers.mapped("write_date"))
-                )
-                if last_update_document and last_update_document[0].valid_from:
-                    record.document_expedition_date = last_update_document[0].valid_from
-
-    @api.depends("partner_id")
-    def _compute_document_country_id(self):
-        for record in self:
-            if not record.document_country_id and record.partner_id.id_numbers:
-                last_update_document = record.partner_id.id_numbers.filtered(
-                    lambda x, record=record: x.write_date
-                    == max(record.partner_id.id_numbers.mapped("write_date"))
-                )
-                if last_update_document and last_update_document[0].country_id:
-                    record.document_country_id = last_update_document[0].country_id
+            if record.partner_id:
+                record.partner_id[partner_field_name] = record[checkin_field_name]
 
     @api.depends("partner_id")
     def _compute_firstname(self):
@@ -344,14 +250,6 @@ class PmsCheckinPartner(models.Model):
                 record.lastname = record.partner_id.lastname
             elif not record.lastname:
                 record.lastname = False
-
-    @api.depends("partner_id")
-    def _compute_lastname2(self):
-        for record in self:
-            if not record.lastname2 and record.partner_id.lastname2:
-                record.lastname2 = record.partner_id.lastname2
-            elif not record.lastname2:
-                record.lastname2 = False
 
     @api.depends("partner_id")
     def _compute_birth_date(self):
@@ -378,53 +276,52 @@ class PmsCheckinPartner(models.Model):
                 record.nationality_id = False
 
     @api.depends("partner_id")
-    def _compute_residence_street(self):
+    def _compute_street(self):
         for record in self:
-            if not record.residence_street and record.partner_id.residence_street:
-                record.residence_street = record.partner_id.residence_street
-            elif not record.residence_street:
-                record.residence_street = False
+            if not record.street and record.partner_id.street:
+                record.street = record.partner_id.street
+            elif not record.street:
+                record.street = False
 
     @api.depends("partner_id")
-    def _compute_residence_street2(self):
+    def _compute_street2(self):
         for record in self:
-            if not record.residence_street2 and record.partner_id.residence_street2:
-                record.residence_street2 = record.partner_id.residence_street2
-            elif not record.residence_street2:
-                record.residence_street2 = False
+            if not record.street2 and record.partner_id.street2:
+                record.street2 = record.partner_id.street2
+            elif not record.street2:
+                record.street2 = False
 
     @api.depends("partner_id")
-    def _compute_residence_zip(self):
+    def _compute_zip(self):
         for record in self:
-            if not record.residence_zip and record.partner_id.residence_zip:
-                record.residence_zip = record.partner_id.residence_zip
-            elif not record.residence_zip:
-                record.residence_zip = False
+            if not record.zip and record.partner_id.zip:
+                record.zip = record.partner_id.zip
+            elif not record.zip:
+                record.zip = False
 
     @api.depends("partner_id")
-    def _compute_residence_city(self):
+    def _compute_city(self):
         for record in self:
-            if not record.residence_city and record.partner_id.residence_city:
-                record.residence_city = record.partner_id.residence_city
-            elif not record.residence_city:
-                record.residence_city = False
+            if not record.city and record.partner_id.city:
+                record.city = record.partner_id.city
+            elif not record.city:
+                record.city = False
 
     @api.depends("partner_id", "nationality_id")
-    def _compute_residence_country_id(self):
+    def _compute_country_id(self):
         for record in self:
-            if (
-                not record.residence_country_id
-                and record.partner_id.residence_country_id
-            ):
-                record.residence_country_id = record.partner_id.residence_country_id
+            if not record.country_id and record.partner_id.country_id:
+                record.country_id = record.partner_id.country_id
+            elif not record.state_id:
+                record.country_id = False
 
     @api.depends("partner_id")
-    def _compute_residence_state_id(self):
+    def _compute_state_id(self):
         for record in self:
-            if not record.residence_state_id and record.partner_id.residence_state_id:
-                record.residence_state_id = record.partner_id.residence_state_id
-            elif not record.residence_state_id:
-                record.residence_state_id = False
+            if not record.state_id and record.partner_id.state_id:
+                record.state_id = record.partner_id.state_id
+            elif not record.state_id:
+                record.state_id = False
 
     @api.depends(lambda self: self._checkin_manual_fields())
     def _compute_state(self):
@@ -441,11 +338,7 @@ class PmsCheckinPartner(models.Model):
                     record.state = "dummy"
                 elif any(
                     not getattr(record, field)
-                    for field in record._checkin_mandatory_fields(
-                        residence_country=record.residence_country_id,
-                        document_type=record.document_type,
-                        birthdate_date=record.birthdate_date,
-                    )
+                    for field in record._checkin_mandatory_fields()
                 ):
                     record.state = "draft"
                 else:
@@ -481,91 +374,20 @@ class PmsCheckinPartner(models.Model):
             elif not record.phone:
                 record.phone = False
 
-    @api.depends("partner_id")
-    def _compute_document_id(self):
-        for record in self:
-            if record.partner_id:
-                if (
-                    not record.document_id
-                    and record.document_number
-                    and record.document_type
-                ):
-                    id_number_id = (
-                        self.sudo()
-                        .env["res.partner.id_number"]
-                        .search(
-                            [
-                                ("partner_id", "=", record.partner_id.id),
-                                ("name", "=", record.document_number),
-                                ("category_id", "=", record.document_type.id),
-                            ]
-                        )
-                    )
-                    if not id_number_id:
-                        document_vals = record.get_document_vals()
-                        id_number_id = self.env["res.partner.id_number"].create(
-                            document_vals
-                        )
+    def _completed_partner_creation_fields(self):
+        self.ensure_one()
+        if self.firstname or self.lastname:
+            return True
+        return False
 
-                    record.document_id = id_number_id
-            else:
-                record.document_id = False
-
-    def get_document_vals(self):
+    def _get_partner_create_vals(self):
         return {
-            "name": self.document_number,
-            "partner_id": self.partner_id.id,
-            "category_id": self.document_type.id,
-            "valid_from": self.document_expedition_date,
-            "country_id": self.document_country_id.id,
+            "firstname": self.firstname,
+            "lastname": self.lastname,
+            "gender": self.gender,
+            "birthdate_date": self.birthdate_date,
+            "nationality_id": self.nationality_id.id,
         }
-
-    @api.depends(
-        "document_number",
-        "document_type",
-        "firstname",
-        "lastname",
-        "lastname2",
-    )
-    def _compute_partner_id(self):
-        for record in self:
-            if not record.partner_id:
-                if record.document_number and record.document_type:
-                    partner = self._get_partner_by_document(
-                        record.document_number, record.document_type
-                    )
-                    if not partner:
-                        if record.firstname or record.lastname or record.lastname2:
-                            partner_values = {
-                                "firstname": record.firstname,
-                                "lastname": record.lastname,
-                                "lastname2": record.lastname2,
-                                "gender": record.gender,
-                                "birthdate_date": record.birthdate_date,
-                                "nationality_id": record.nationality_id.id,
-                            }
-                            partner = (
-                                self.env["res.partner"]
-                                .with_context(avoid_document_restriction=True)
-                                .create(partner_values)
-                            )
-                    record.partner_id = partner
-
-    @api.model
-    def _get_partner_by_document(self, document_number, document_type):
-        number = (
-            self.sudo()
-            .env["res.partner.id_number"]
-            .search(
-                [
-                    ("name", "=", document_number),
-                    ("category_id", "=", document_type.id),
-                ]
-            )
-        )
-        return (
-            self.sudo().env["res.partner"].search([("id", "=", number.partner_id.id)])
-        )
 
     @api.depends("email", "mobile")
     def _compute_possible_existing_customer_ids(self):
@@ -578,17 +400,20 @@ class PmsCheckinPartner(models.Model):
             else:
                 record.possible_existing_customer_ids = False
 
-    @api.depends(
-        "firstname",
-        "lastname",
-        "lastname2",
-        "gender",
-        "birthdate_date",
-        "nationality_id",
-        "email",
-        "mobile",
-        "partner_id",
-    )
+    @api.model
+    def _get_partner_incongruences_field_names(self):
+        return [
+            "firstname",
+            "lastname",
+            "gender",
+            "birthdate_date",
+            "nationality_id",
+            "email",
+            "mobile",
+            "partner_id",
+        ]
+
+    @api.depends(lambda self: self._get_partner_incongruences_field_names())
     def _compute_partner_incongruences(self):
         for record in self:
             incongruous_fields = False
@@ -657,89 +482,49 @@ class PmsCheckinPartner(models.Model):
                         _("This guest is already registered in the room")
                     )
 
-    @api.constrains("document_number")
-    def check_document_number(self):
-        for record in self:
-            if record.partner_id:
-                for number in record.partner_id.id_numbers:
-                    if record.document_type == number.category_id:
-                        if record.document_number != number.name:
-                            raise ValidationError(_("Document_type has already exists"))
-
     def _validation_eval_context(self, id_number):
         self.ensure_one()
         return {"self": self, "id_number": id_number}
 
-    @api.constrains("document_number", "document_type")
-    def validate_id_number(self):
-        """Validate the given ID number
-        The method raises an odoo.exceptions.ValidationError if the eval of
-        python validation code fails
-        """
+    @api.constrains("state_id", "country_id")
+    def _check_state_id_country_id_consistence(self):
         for record in self:
-            if record.document_number and record.document_type:
-                id_number = self.env["res.partner.id_number"].new(
-                    {
-                        "name": record.document_number,
-                        "category_id": record.document_type,
-                    }
-                )
+            if record.state_id and record.country_id:
                 if (
-                    self.env.context.get("id_no_validate")
-                    or not record.document_type.validation_code
-                ):
-                    return
-                eval_context = record._validation_eval_context(id_number)
-                try:
-                    safe_eval(
-                        record.document_type.validation_code,
-                        eval_context,
-                        mode="exec",
-                        nocopy=True,
-                    )
-                except Exception as e:
-                    raise UserError(
-                        _(
-                            "Error when evaluating the id_category "
-                            "validation code:\n %(name)s \n(%(error)s)",
-                            name=self.name,
-                            error=e,
-                        )
-                    ) from e
-                if eval_context.get("failed", False):
-                    raise ValidationError(
-                        _(
-                            "%(doc_number)s is not a valid %(doc_type)s identifier",
-                            doc_number=record.document_number,
-                            doc_type=record.document_type.name,
-                        )
-                    )
-
-    @api.constrains("document_country_id", "document_type")
-    def _check_document_country_id_document_type_consistence(self):
-        for record in self:
-            if record.document_country_id and record.document_type:
-                if (
-                    record.document_type.country_ids
-                    and record.document_country_id
-                    not in record.document_type.country_ids
-                ):
-                    raise ValidationError(
-                        _("Document type and country of document do not match")
-                    )
-
-    @api.constrains("residence_state_id", "residence_country_id")
-    def _check_residence_state_id_residence_country_id_consistence(self):
-        for record in self:
-            if record.residence_state_id and record.residence_country_id:
-                if (
-                    record.residence_state_id.country_id
-                    and record.residence_country_id
-                    not in record.residence_state_id.country_id
+                    record.state_id.country_id
+                    and record.country_id not in record.state_id.country_id
                 ):
                     raise ValidationError(
                         _("State and country of residence do not match")
                     )
+
+    def set_partner_address(self):
+        """
+        Only sets the checkin.partner address in the associated partner if
+        the partner don't have any address field filled.
+        """
+        for record in self:
+            if record.partner_id:
+                residence_vals = {
+                    "street": record.street,
+                    "street2": record.street2,
+                    "zip": record.zip,
+                    "city": record.city,
+                    "country_id": record.country_id.id,
+                    "state_id": record.state_id.id,
+                }
+                if any(residence_vals.values()):
+                    address_fields = residence_vals.keys()
+                    if not any(record.partner_id[field] for field in address_fields):
+                        record.partner_id.write(residence_vals)
+
+    def set_partner_id(self):
+        for record in self:
+            if not record.partner_id:
+                if record._completed_partner_creation_fields():
+                    partner_values = record._get_partner_create_vals()
+                    partner = self.env["res.partner"].create(partner_values)
+                    record.partner_id = partner
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -775,6 +560,10 @@ class PmsCheckinPartner(models.Model):
                         "check-in in this reservation"
                     )
                 )
+        records_without_partner = records.filtered(lambda r: not r.partner_id)
+        if records_without_partner:
+            records_without_partner.set_partner_id()
+        records.set_partner_address()
         return records
 
     def write(self, vals):
@@ -784,6 +573,11 @@ class PmsCheckinPartner(models.Model):
             tourist_tax_services_cmds = reservation._compute_tourist_tax_lines()
             if tourist_tax_services_cmds:
                 reservation.write({"service_ids": tourist_tax_services_cmds})
+        records_without_partner = self.filtered(lambda r: not r.partner_id)
+        if records_without_partner:
+            records_without_partner.set_partner_id()
+
+        self.set_partner_address()
         return res
 
     def unlink(self):
@@ -803,19 +597,14 @@ class PmsCheckinPartner(models.Model):
             "gender",
             "firstname",
             "lastname",
-            "lastname2",
             "birthdate_date",
-            "document_number",
-            "document_expedition_date",
             "nationality_id",
-            "residence_street",
-            "residence_street2",
-            "residence_zip",
-            "residence_city",
-            "residence_country_id",
-            "residence_state_id",
-            "document_country_id",
-            "document_type",
+            "street",
+            "street2",
+            "zip",
+            "city",
+            "country_id",
+            "state_id",
         ]
         return manual_fields
 
@@ -825,19 +614,19 @@ class PmsCheckinPartner(models.Model):
         manual_fields.append("reservation_id.state")
         return manual_fields
 
-    @api.model
-    def _checkin_mandatory_fields(
-        self, residence_country=False, document_type=False, birthdate_date=False
-    ):
-        mandatory_fields = []
-        return mandatory_fields
+    def _checkin_mandatory_fields(self):
+        """
+        Auxiliar method to return the mandatory fields for checkin.
+        It can be extended by modules that need to add more mandatory fields.
+        """
+        self.ensure_one()
+        return []
 
     @api.model
     def _checkin_partner_fields(self):
         checkin_fields = [
             "firstname",
             "lastname",
-            "lastname2",
             "mobile",
             "email",
             "gender",
@@ -873,28 +662,6 @@ class PmsCheckinPartner(models.Model):
                 checkin_vals[key] = value
             checkin.write(checkin_vals)
 
-    @api.model
-    def calculate_doc_type_expedition_date_from_validity_date(
-        self, doc_type, doc_date, birthdate
-    ):
-        today = fields.datetime.today()
-        datetime_doc_date = datetime.strptime(doc_date, DEFAULT_SERVER_DATE_FORMAT)
-        if datetime_doc_date < today:
-            return datetime_doc_date
-        datetime_birthdate = datetime.strptime(birthdate, DEFAULT_SERVER_DATE_FORMAT)
-        age = today.year - datetime_birthdate.year
-
-        document_expedition_date = False
-        if doc_type.code == "D" or doc_type.code == "P":
-            if age < 30:
-                document_expedition_date = datetime_doc_date - relativedelta(years=5)
-            else:
-                document_expedition_date = datetime_doc_date - relativedelta(years=10)
-        if doc_type.code == "C":
-            if age < 70:
-                document_expedition_date = datetime_doc_date - relativedelta(years=10)
-        return document_expedition_date
-
     def action_on_board(self):
         for record in self:
             if record.reservation_id.checkin > fields.Date.today():
@@ -903,7 +670,8 @@ class PmsCheckinPartner(models.Model):
                 raise ValidationError(_("Its too late to checkin"))
 
             if any(
-                not getattr(record, field) for field in self._checkin_mandatory_fields()
+                not getattr(record, field)
+                for field in record._checkin_mandatory_fields()
             ):
                 raise ValidationError(_("Personal data is missing for check-in"))
             vals = {
@@ -963,52 +731,6 @@ class PmsCheckinPartner(models.Model):
             "type": "ir.actions.act_window",
             "context": ctx,
         }
-
-    def _save_data_from_portal(self, values):
-        checkin_partner = values.get("checkin_partner", "")
-        values.pop("checkin_partner")
-        values.pop("folio_access_token") if "folio_access_token" in values else None
-        if values.get("nationality"):
-            values.update({"nationality_id": int(values.get("nationality_id"))})
-
-        doc_type = (
-            self.sudo()
-            .env["res.partner.id_category"]
-            .browse(int(values.get("document_type")))
-        )
-        if values.get("document_type"):
-            values.update({"document_type": int(values.get("document_type"))})
-        if values.get("residence_state_id"):
-            values.update({"residence_state_id": int(values.get("residence_state_id"))})
-        if values.get("residence_country_id"):
-            values.update(
-                {"residence_country_id": int(values.get("residence_country_id"))}
-            )
-
-        if values.get("document_expedition_date"):
-            values.update(
-                {
-                    "document_expedition_date": datetime.strptime(
-                        values.get("document_expedition_date"), "%d/%m/%Y"
-                    ).strftime("%Y-%m-%d"),
-                    "birthdate_date": datetime.strptime(
-                        values.get("birthdate_date"), "%d/%m/%Y"
-                    ).strftime("%Y-%m-%d"),
-                }
-            )
-            doc_date = values.get("document_expedition_date")
-            birthdate = values.get("birthdate_date")
-            document_expedition_date = (
-                self.calculate_doc_type_expedition_date_from_validity_date(
-                    doc_type, doc_date, birthdate
-                )
-            )
-            values.update(
-                {
-                    "document_expedition_date": document_expedition_date,
-                }
-            )
-        checkin_partner.sudo().write(values)
 
     def send_portal_invitation_email(self, invitation_firstname=None, email=None):
         template = self.sudo().env.ref(

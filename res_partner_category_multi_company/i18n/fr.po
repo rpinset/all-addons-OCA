@@ -1,0 +1,9 @@
+#. module: res_partner_category_multi_company
+#: model:ir.model.fields,field_description:res_partner_category_multi_company.field_res_partner_category__company_id
+msgid "Company"
+msgstr ""
+
+#. module: res_partner_category_multi_company
+#: model:ir.model,name:res_partner_category_multi_company.model_res_partner_category
+msgid "Partner Tags"
+msgstr ""

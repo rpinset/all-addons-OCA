@@ -1,0 +1,3 @@
+In the default (vanilla) behavior of Odoo CE, when a user clicks on the name of a Bank or Cash journal in the Accounting dashboard, they are redirected to the Statements view. However, this behavior changes when installing the OCA Reconcile add-ons or using Odoo EE.
+
+This module offers an alternative by adding a **Statements** button directly into the journal card, providing users with a one-click option to access the Statements view. This approach ensures that users can maintain the familiar workflow of quickly accessing the Statements view, even when other customizations or versions are in place, without altering the default functionality.

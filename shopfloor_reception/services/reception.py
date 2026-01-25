@@ -1149,10 +1149,22 @@ class Reception(Component):
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
         if message:
             return self._response_for_set_lot(picking, selected_line, message=message)
-        message = self._check_expiry_date(selected_line)
-        if message:
-            return self._response_for_set_lot(picking, selected_line, message=message)
+        checks = [
+            self._check_expiry_date,
+            self._check_lot,
+        ]
+        for check in checks:
+            message = check(selected_line)
+            if message:
+                return self._response_for_set_lot(
+                    picking, selected_line, message=message
+                )
         return self._before_state__set_quantity(picking, selected_line)
+
+    def _check_lot(self, line):
+        need_lot = line.product_id.tracking == "lot"
+        if need_lot and not line.lot_id:
+            return self.msg_store.scan_lot_on_product_tracked_by_lot()
 
     def _check_expiry_date(self, line):
         use_expiration_date = (
@@ -1372,17 +1384,11 @@ class Reception(Component):
         # In such case, we must ensure there's another move with the remaining
         # quantity to do, so selected_line is extracted in a new move as expected.
 
-        # Always keep the quantity todo at zero, the same is done
-        # in Odoo when move lines are created manually (setting)
         lines_with_qty_todo = selected_line.move_id.move_line_ids.filtered(
             lambda line: line.state not in ("cancel", "done")
             and line.reserved_uom_qty > 0
         )
         move = selected_line.move_id
-        lock = self._actions_for("lock")
-        lock.for_update(move)
-        if lines_with_qty_todo:
-            lines_with_qty_todo.reserved_uom_qty = 0
 
         move_quantity = move.product_uom._compute_quantity(
             move.product_uom_qty, selected_line.product_uom_id
@@ -1390,6 +1396,14 @@ class Reception(Component):
         if selected_line.qty_done == move_quantity:
             # In case of full quantity, post the initial move
             return selected_line.move_id.extract_and_action_done()
+
+        # Always keep the quantity todo at zero, the same is done
+        # in Odoo when move lines are created manually (setting)
+        lock = self._actions_for("lock")
+        lock.for_update(move)
+        if lines_with_qty_todo:
+            lines_with_qty_todo.reserved_uom_qty = 0
+
         split_move_vals = move._split(selected_line.qty_done)
         new_move = move.create(split_move_vals)
         new_move.move_line_ids = selected_line
@@ -1470,6 +1484,12 @@ class Reception(Component):
         response = self._post_line(selected_line)
         if response:
             return response
+        # After line is posted, if picking is done,
+        # return select document with success message
+        if picking.state == "done":
+            message = self.msg_store.transfer_done_success(picking)
+            return self._response_for_select_document(message=message)
+        # Else return select move
         return self._response_for_select_move(picking)
 
     def select_dest_package(

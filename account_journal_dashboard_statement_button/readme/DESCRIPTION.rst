@@ -1,0 +1,1 @@
+This module enhances the Account Journal Dashboard by introducing a shortcut button for Bank and Cash journals. The button provides a direct link to the Bank Statements view, streamlining access to statement management.
