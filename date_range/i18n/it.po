@@ -28,8 +28,8 @@ msgstr "%(name)s non è un intervallo valido (%(date_start)s > %(date_end)s)"
 #. module: date_range
 #. odoo-python
 #: code:addons/date_range/models/date_range.py:0
-msgid "%(thisname)s overlaps %(dtnames)s"
-msgstr "%(thisname)s si sovrappone a %(dtnames)s"
+msgid "%(thisname)s overlaps %(dtname)s"
+msgstr "%(thisname)s si sovrappone a %(dtname)s"
 
 #. module: date_range
 #: model_terms:ir.ui.view,arch_db:date_range.date_range_generator_view_form
@@ -39,6 +39,11 @@ msgid ""
 msgstr ""
 ",\n"
 "                                o genera"
+
+#. module: date_range
+#: model:ir.model.constraint,message:date_range.constraint_date_range_date_range_uniq
+msgid "A date range must be unique per company !"
+msgstr "Un intervallo data deve essere univoco per azienda !"
 
 #. module: date_range
 #: model:ir.model.constraint,message:date_range.constraint_date_range_type_date_range_type_uniq
@@ -94,11 +99,7 @@ msgid "Cancel"
 msgstr "Annulla"
 
 #. module: date_range
-#: model:ir.model.fields,field_description:date_range.field_date_range__company_ids
-msgid "Companies"
-msgstr "Aziende"
-
-#. module: date_range
+#: model:ir.model.fields,field_description:date_range.field_date_range__company_id
 #: model:ir.model.fields,field_description:date_range.field_date_range_generator__company_id
 #: model:ir.model.fields,field_description:date_range.field_date_range_type__company_id
 #: model_terms:ir.ui.view,arch_db:date_range.view_date_range_search
@@ -360,16 +361,6 @@ msgstr ""
 "devono corrispondere."
 
 #. module: date_range
-#. odoo-python
-#: code:addons/date_range/models/date_range.py:0
-msgid ""
-"The Date Range Type %(drt_name)s assigned to other company, you can't change "
-"the company in Date Range %(dt_name)s"
-msgstr ""
-"Il tipo intervallo date %(drt_name)s è assegnato ad un'altra azienda, non si "
-"può modificare l'azienda nell'intervallo date %(dt_name)s"
-
-#. module: date_range
 #: model:ir.model.fields,help:date_range.field_date_range_type__active
 msgid ""
 "The active field allows you to hide the date range type without removing it."
@@ -454,11 +445,18 @@ msgstr "settimane"
 msgid "years"
 msgstr "anni"
 
-#~ msgid "%(thisname)s overlaps %(dtname)s"
-#~ msgstr "%(thisname)s si sovrappone a %(dtname)s"
+#~ msgid "%(thisname)s overlaps %(dtnames)s"
+#~ msgstr "%(thisname)s si sovrappone a %(dtnames)s"
 
-#~ msgid "A date range must be unique per company !"
-#~ msgstr "Un intervallo data deve essere univoco per azienda !"
+#~ msgid "Companies"
+#~ msgstr "Aziende"
+
+#~ msgid ""
+#~ "The Date Range Type %(drt_name)s assigned to other company, you can't "
+#~ "change the company in Date Range %(dt_name)s"
+#~ msgstr ""
+#~ "Il tipo intervallo date %(drt_name)s è assegnato ad un'altra azienda, non "
+#~ "si può modificare l'azienda nell'intervallo date %(dt_name)s"
 
 #~ msgid "&amp;nbsp;"
 #~ msgstr "&amp;nbsp;"

@@ -30,8 +30,8 @@ class VATReportWizard(models.TransientModel):
     def onchange_company_id(self):
         if (
             self.company_id
-            and self.date_range_id.company_ids
-            and self.company_id.id not in self.date_range_id.company_ids.ids
+            and self.date_range_id.company_id
+            and self.date_range_id.company_id != self.company_id
         ):
             self.date_range_id = False
         res = {"domain": {"date_range_id": []}}
@@ -40,8 +40,8 @@ class VATReportWizard(models.TransientModel):
         else:
             res["domain"]["date_range_id"] += [
                 "|",
-                ("company_ids", "=", self.company_id.id),
-                ("company_ids", "=", False),
+                ("company_id", "=", self.company_id.id),
+                ("company_id", "=", False),
             ]
         return res
 
@@ -56,8 +56,8 @@ class VATReportWizard(models.TransientModel):
         for rec in self.sudo():
             if (
                 rec.company_id
-                and rec.date_range_id.company_ids
-                and rec.company_id.id not in rec.date_range_id.company_ids.ids
+                and rec.date_range_id.company_id
+                and rec.company_id != rec.date_range_id.company_id
             ):
                 raise ValidationError(
                     self.env._(

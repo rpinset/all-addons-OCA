@@ -144,8 +144,8 @@ class TrialBalanceReportWizard(models.TransientModel):
         )
         if (
             self.company_id
-            and self.date_range_id.company_ids
-            and self.company_id.id not in self.date_range_id.company_ids.ids
+            and self.date_range_id.company_id
+            and self.date_range_id.company_id != self.company_id
         ):
             self.date_range_id = False
         if self.company_id and self.partner_ids:
@@ -195,8 +195,8 @@ class TrialBalanceReportWizard(models.TransientModel):
         for rec in self.sudo():
             if (
                 rec.company_id
-                and rec.date_range_id.company_ids
-                and rec.company_id.id not in rec.date_range_id.company_ids.ids
+                and rec.date_range_id.company_id
+                and rec.company_id != rec.date_range_id.company_id
             ):
                 raise ValidationError(
                     self.env._(

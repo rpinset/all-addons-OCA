@@ -1,0 +1,9 @@
+- Rafael Blasco \<<rafaelbn@antiun.com>\>
+- Jairo Llopis \<<yajo.sk8@gmail.com>\>
+- Tharathip Chaweewongphan \<<tharathipc@ecosoft.co.th>\>
+- [Tecnativa](https://www.tecnativa.com):
+  - Stefan Ungureanu
+- Emilio Pascual ([Moduon](https://www.moduon.team/))
+- [APSL](https://apsl.tech):
+  - Antoni Marroig
+- Heliconia Solutions Pvt. Ltd. \<<https://www.heliconia.io>\>

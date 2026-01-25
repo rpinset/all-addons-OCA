@@ -62,8 +62,8 @@ class JournalLedgerReportWizard(models.TransientModel):
         """Handle company change."""
         if (
             self.company_id
-            and self.date_range_id.company_ids
-            and self.company_id.id not in self.date_range_id.company_ids.ids
+            and self.date_range_id.company_id
+            and self.date_range_id.company_id != self.company_id
         ):
             self.date_range_id = False
         if self.company_id and self.journal_ids:
