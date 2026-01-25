@@ -1071,16 +1071,16 @@ Date:   Tue Sep 9 10:05:39 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit a27c555d23e8e5517fe068393495aba17e83b191
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jan 8 07:46:43 2026 +0000
+commit 182d373d177b19138ca518dc9fbd90650ff162cf
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 22 07:49:28 2026 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_filter_lot
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_filter_lot/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_no_negative
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_no_negative/it/
 
 
 ## stock-logistics-tracking
@@ -1213,16 +1213,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 27d592aaefcdceaa8106d01c3f7edc9f696af562
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 19 11:19:39 2026 +0000
+commit 9dc8a95dde7c458d2755cfae967819811a6ad85f
+Author: Weblate <noreply@weblate.org>
+Date:   Sun Jan 25 13:40:21 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: product-attribute-15.0/product-attribute-15.0-product_attribute_value_menu
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_attribute_value_menu/it/
+    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_direct_print
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_direct_print/
 
 
 ## product-kitting
@@ -1632,11 +1632,16 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 8a6efe3899f3ecc417fe58c133362337f5b7ddae
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 22 13:26:12 2025 +0000
+commit 6e2539e37acb981dee779953600f8f044c38b099
+Author: Toshikimi Shigenobu (Quartile) <nobu@quartile.co>
+Date:   Thu Jan 22 02:30:46 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Japanese)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: web-15.0/web-15.0-web_widget_open_tab
+    Translate-URL: https://translation.odoo-community.org/projects/web-15-0/web-15-0-web_widget_open_tab/ja/
 
 
 ## website
