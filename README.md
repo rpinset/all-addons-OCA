@@ -167,20 +167,25 @@ Date:   Tue Dec 23 08:54:52 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit d2d3bd815abf04b0fa70f3f8155f9a5d0ea9e95f
+commit 61172f200b08a2a64f941436dd48607e46ae3b7f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 9 10:32:30 2026 +0000
+Date:   Thu Jan 22 11:24:26 2026 +0000
 
     [BOT] post-merge updates
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 46c0e544c0923df01444b8598467b4579a55b2a8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 16 11:58:19 2026 +0000
+commit c3f0e32ce467f8b5d9f1b5c319e0bcbdf6225ee4
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jan 23 05:23:13 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_online_paypal
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_online_paypal/
 
 
 ## account-payment
@@ -1063,11 +1068,16 @@ Date:   Fri Nov 7 07:00:23 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 26180c66bdc6737e1d01f5a08890a38ec13a038f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 23 16:37:47 2025 +0000
+commit dca22ac59478b9cde7b6ff33707551ee1ce91430
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 22 07:51:09 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (10 of 10 strings)
+    
+    Translation: stock-logistics-workflow-17.0/stock-logistics-workflow-17.0-stock_no_negative
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-17-0/stock-logistics-workflow-17-0-stock_no_negative/it/
 
 
 ## stock-logistics-tracking
@@ -1180,9 +1190,9 @@ Date:   Thu Jun 5 10:31:14 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit f60c1ae38c220d7e7c0e4f967895507bae1e8b5a
+commit a626c83d721c65c243ddc4e3d01ed13bb896f9a0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 5 07:25:18 2025 +0000
+Date:   Sat Jan 24 11:49:54 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1362,16 +1372,16 @@ Date:   Sun Feb 9 19:21:09 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit e17a3399e54961e15feb76b1b28635f489b90f35
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:39:43 2025 +0000
+commit 2d37266370d35d84ca667f3eb195f2829728bee0
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jan 23 12:44:04 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-tools-17.0/server-tools-17.0-sequence_python
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-sequence_python/it/
+    Translation: server-tools-17.0/server-tools-17.0-attachment_queue
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-attachment_queue/
 
 
 ## server-auth

@@ -601,6 +601,13 @@ msgstr "Retirada internacional de tarjetas de crédito"
 #. odoo-python
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #, python-format
+msgid "Invalid JSON response from PayPal API."
+msgstr ""
+
+#. module: account_statement_import_online_paypal
+#. odoo-python
+#: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
+#, python-format
 msgid "Invalid token type!"
 msgstr "¡Tipo de símbolo no válido!"
 

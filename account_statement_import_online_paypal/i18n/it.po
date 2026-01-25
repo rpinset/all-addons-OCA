@@ -555,7 +555,6 @@ msgstr "Acquisto buono omaggio"
 #. module: account_statement_import_online_paypal
 #. odoo-python
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
-#: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #, python-format
 msgid "Gift certificate redemption"
 msgstr "Riscatto buono omaggio"
@@ -594,6 +593,13 @@ msgstr "Inversione revisione pagamento istantaneo (IPR)"
 #, python-format
 msgid "International credit card withdrawal"
 msgstr "Prelievo con carta di credito internazionale"
+
+#. module: account_statement_import_online_paypal
+#. odoo-python
+#: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
+#, python-format
+msgid "Invalid JSON response from PayPal API."
+msgstr ""
 
 #. module: account_statement_import_online_paypal
 #. odoo-python
@@ -724,15 +730,14 @@ msgstr "Pagamento PayPal Here"
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #, python-format
 msgid ""
-"PayPal allows retrieving transactions only up to 3 years in the past. Please"
-" import older transactions manually. See "
-"https://www.paypal.com/us/smarthelp/article/why-can't-i-access-transaction-"
-"history-greater-than-3-years-ts2241"
+"PayPal allows retrieving transactions only up to 3 years in the past. Please "
+"import older transactions manually. See https://www.paypal.com/us/smarthelp/"
+"article/why-can't-i-access-transaction-history-greater-than-3-years-ts2241"
 msgstr ""
 "PayPal consente di recuperare transazioni solo fino a 3 anni fa. Si prega di "
-"importare manualmente le transazioni più vecchie. Vedere https://www.paypal."
-"com/us/smarthelp/article/why-can't-i-access-transaction-history-greater-"
-"than-3-years-ts2241"
+"importare manualmente le transazioni più vecchie. Vedere https://"
+"www.paypal.com/us/smarthelp/article/why-can't-i-access-transaction-history-"
+"greater-than-3-years-ts2241"
 
 #. module: account_statement_import_online_paypal
 #. odoo-python
@@ -781,8 +786,8 @@ msgstr "Prelievo con carta di debito PayPal da ATM"
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #, python-format
 msgid ""
-"PayPal protection bonus, payout for PayPal buyer protection, payout for full"
-" protection with PayPal buyer credit."
+"PayPal protection bonus, payout for PayPal buyer protection, payout for full "
+"protection with PayPal buyer credit."
 msgstr ""
 "Bonus protezione PayPal, pagamento per la protezione acquirente PayPal, "
 "pagamento per la protezione completa con credito acquirente PayPal."
@@ -1047,7 +1052,6 @@ msgstr "Indicata autenticazione sconosciuta!"
 
 #. module: account_statement_import_online_paypal
 #. odoo-python
-#: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 #, python-format
 msgid "Unknown error"
