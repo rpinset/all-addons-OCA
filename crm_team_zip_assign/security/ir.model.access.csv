@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_team_zip_pattern_user,crm.team.zip.pattern.user,model_crm_team_zip_pattern,base.group_user,1,0,0,0
+access_crm_team_zip_pattern_manager,crm.team.zip.pattern.manager,model_crm_team_zip_pattern,sales_team.group_sale_manager,1,1,1,1
+access_crm_team_zip_pattern_salesman,crm.team.zip.pattern.salesman,model_crm_team_zip_pattern,sales_team.group_sale_salesman,1,1,1,0

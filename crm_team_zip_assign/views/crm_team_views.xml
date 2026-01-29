@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Binhex
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- CRM Team Form View -->
+    <record id="crm_team_view_form" model="ir.ui.view">
+        <field name="name">crm.team.form.zip.assign</field>
+        <field name="model">crm.team</field>
+        <field name="inherit_id" ref="sales_team.crm_team_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="before">
+                <group
+                    name="zip_auto_assignment_settings"
+                    string="ZIP Auto Assignment Settings"
+                    colspan="2"
+                >
+                <field name="enable_zip_auto_assignment" />
+                <field
+                        name="pre_zip_match_condition"
+                        widget="domain"
+                        options="{'model': 'res.partner', 'in_dialog': True}"
+                        attrs="{'invisible': [('enable_zip_auto_assignment', '=', False)]}"
+                    />
+                <field
+                        name="zip_assignment_priority"
+                        attrs="{'invisible': [('enable_zip_auto_assignment', '=', False)]}"
+                    />
+                <field
+                        name="country_ids"
+                        widget="many2many_tags"
+                        attrs="{'required': [('enable_zip_auto_assignment', '=', True)], 'invisible': [('enable_zip_auto_assignment', '=', False)]}"
+                    />
+                        <field
+                        name="state_ids"
+                        widget="many2many_tags"
+                        attrs="{'required': [('enable_zip_auto_assignment', '=', True)], 'invisible': [('enable_zip_auto_assignment', '=', False)]}"
+                    />
+                </group>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page
+                    name="zip_patterns"
+                    string="ZIP Patterns"
+                    attrs="{'invisible': [('enable_zip_auto_assignment', '=', False)], 'required': [('enable_zip_auto_assignment', '=', True)]}"
+                >
+                    <field name="zip_regex_ids" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="pattern" placeholder="^1[0-5].*" />
+                            <field name="team_id" invisible="1" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- CRM Team List View -->
+    <record id="crm_team_view_tree" model="ir.ui.view">
+        <field name="name">crm.team.tree.zip.assign</field>
+        <field name="model">crm.team</field>
+        <field name="inherit_id" ref="sales_team.crm_team_view_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="enable_zip_auto_assignment" />
+                <field name="zip_assignment_priority" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

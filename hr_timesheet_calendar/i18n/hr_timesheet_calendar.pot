@@ -15,5 +15,5 @@ msgstr ""
 
 #. module: hr_timesheet_calendar
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_calendar.hr_timesheet_line_calendar
-msgid "Timesheets"
+msgid "Timesheet Lines"
 msgstr ""

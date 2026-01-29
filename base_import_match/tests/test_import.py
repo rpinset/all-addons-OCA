@@ -111,3 +111,39 @@ class ImportCase(TransactionCase):
         record = self._base_import_record("res.users", "res_users_login")
         record.execute_import(["login", "name"], [], OPTIONS)
         self.assertEqual(self.env.ref("base.user_demo").name, "Demo User Changed")
+
+    def test_res_partner_email_one2many(self):
+        """Change function based on email and import one2many record."""
+        record = self._base_import_record("res.partner", "res_partner_email_one2many")
+        record.execute_import(
+            [
+                "name",
+                "email",
+                "child_ids/name",
+                "child_ids/email",
+            ],
+            [],
+            OPTIONS,
+        )
+        parent_partner = self.env["res.partner"].search(
+            [("name", "=", "Steward and Co.")]
+        )
+        self.assertTrue(
+            parent_partner.child_ids,
+        )
+        self.assertEqual(
+            len(parent_partner.child_ids),
+            3,
+        )
+        self.assertEqual(
+            set(parent_partner.mapped("child_ids.name")),
+            {"Bart Steward", "Lisa Steward", "Maggie Steward"},
+        )
+        self.assertEqual(
+            set(parent_partner.mapped("child_ids.email")),
+            {
+                "bart.steward@example.com",
+                "lisa.steward@example.com",
+                "maggie.steward@example.com",
+            },
+        )

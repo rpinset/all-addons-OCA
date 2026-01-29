@@ -250,6 +250,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__changeset_change_ids
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__changeset_change_ids
@@ -731,6 +732,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__changeset_ids
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__changeset_ids
@@ -1199,6 +1201,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__count_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__count_changesets
@@ -1660,6 +1663,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__count_pending_changeset_changes
@@ -2121,6 +2125,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__count_pending_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__count_pending_changesets
@@ -2953,6 +2958,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_actions__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_client__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_report__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_changeset.field_ir_actions_report_duplicate__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_server__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_todo__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_ir_asset__count_pending_changeset_changes
@@ -3414,6 +3420,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_actions__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_client__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_report__count_pending_changesets
+#: model:ir.model.fields,help:base_changeset.field_ir_actions_report_duplicate__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_server__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_todo__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_asset__count_pending_changesets
@@ -3875,6 +3882,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_actions__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_client__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_report__count_changesets
+#: model:ir.model.fields,help:base_changeset.field_ir_actions_report_duplicate__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_server__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_actions_todo__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_ir_asset__count_changesets
@@ -4380,6 +4388,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_actions__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_client__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_changeset.field_ir_actions_report_duplicate__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_server__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_ir_actions_todo__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_ir_asset__user_can_see_changeset

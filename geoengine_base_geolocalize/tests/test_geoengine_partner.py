@@ -1,5 +1,7 @@
 # Copyright 2015-2017 ACSONE SA/NV (<http://acsone.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+from unittest.mock import MagicMock, patch
+
 from odoo.tests.common import TransactionCase
 
 
@@ -18,7 +20,14 @@ class TestGeoenginePartner(TransactionCase):
         partner_id.partner_longitude = 20
         self.assertTrue(partner_id.geo_point, "Should have geo_point")
 
-    def test_geo_localize(self):
+    @patch("requests.get")
+    def test_geo_localize(self, requests_get):
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json = MagicMock(
+            return_value=[{"lat": "49.9549071", "lon": "5.4085830"}]
+        )
+        requests_get.return_value = mock_response
         vals = {
             "name": "Partner Project",
             "street": "Rue au bois la dame",

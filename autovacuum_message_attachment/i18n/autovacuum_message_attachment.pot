@@ -204,6 +204,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_actions__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_client__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_report__assigned_attachment_ids
+#: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_report_duplicate__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_server__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_actions_todo__assigned_attachment_ids
 #: model:ir.model.fields,field_description:autovacuum_message_attachment.field_ir_asset__assigned_attachment_ids

@@ -432,6 +432,7 @@ class MessageSPV(models.Model):
         if b"<CreditNote" in xml:
             val1 = "FCN"
 
+        # flake8: noqa: E231
         url = f"https://webservicesp.anaf.ro/prod/FCTEL/rest/transformare/{val1}"
         if no_validate:
             url = f"https://webservicesp.anaf.ro/prod/FCTEL/rest/transformare/{val1}/DA"

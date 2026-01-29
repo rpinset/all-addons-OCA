@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <record id="hr_timesheet.act_hr_timesheet_line" model="ir.actions.act_window">
-            <field name="view_mode">tree,form,kanban,pivot,graph,calendar</field>
+        <field name="view_mode">tree,form,kanban,pivot,graph,calendar</field>
     </record>
 
     <record id="hr_timesheet_line_calendar" model="ir.ui.view">
         <field name="model">account.analytic.line</field>
         <field name="arch" type="xml">
             <calendar
-                string="Timesheets"
+                string="Timesheet Lines"
+                color="project_id"
+                hide_time="True"
+                mode="week"
                 date_start="date_time"
                 date_stop="date_time_end"
+                event_open_popup="1"
             >
-                <field name="name" />
+                <field name="display_name" />
+                <field name="project_id" filters="1" />
+                <field name="commercial_partner_id" filters="1" />
             </calendar>
         </field>
     </record>

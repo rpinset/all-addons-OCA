@@ -6,34 +6,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-01-28 18:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_account_analytic_line__free_text
 msgid "Additional Description"
-msgstr ""
+msgstr "Descrizione addizionale"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_account_analytic_line__allow_free_text_related
 #: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__allow_free_text
 msgid "Allow Free Text"
-msgstr ""
+msgstr "Consenti testo libero"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model,name:hr_timesheet_predefined_description_rules.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Riga analitica"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__append_free_text_to_name
 msgid "Append Free Text To Name"
-msgstr ""
+msgstr "Aggiungi testo libero al nome"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_account_analytic_line__allow_free_text_related
@@ -42,11 +44,13 @@ msgid ""
 "Enable this to allow users to enter additional text when using this "
 "predefined description."
 msgstr ""
+"Abilitare questa opzione per consentire all'utente di aggiungere testo "
+"addizionale quando si utilizza questa descrizione predefinita."
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,field_description:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__free_text_required
 msgid "Free Text Required"
-msgstr ""
+msgstr "Richiesto testo libero"
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_account_analytic_line__free_text
@@ -54,6 +58,8 @@ msgid ""
 "Free text. If the predefined description has 'append_free_text_to_name' "
 "enabled, it will be auto-completed with the predefined description."
 msgstr ""
+"Testo libero. Se la descrizione predefinita ha 'append_free_text_to_name' "
+"abilitato, verrà auto completata con la descrizione predefinita."
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__free_text_required
@@ -61,6 +67,8 @@ msgid ""
 "If checked, the user must provide additional text when using this predefined"
 " description."
 msgstr ""
+"Se selezionata, l'utente deve fornire testo addizionale quando usa la "
+"descrizione predefinita."
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model.fields,help:hr_timesheet_predefined_description_rules.field_timesheet_predefined_description__append_free_text_to_name
@@ -68,11 +76,13 @@ msgid ""
 "If enabled, any additional text entered by the user will be appended to the "
 "predefined description name."
 msgstr ""
+"Se abilitata, ogni testo addizionale inserito dall'utente verrà aggiunto al "
+"nome della descrizione predefinita."
 
 #. module: hr_timesheet_predefined_description_rules
 #: model:ir.model,name:hr_timesheet_predefined_description_rules.model_timesheet_predefined_description
 msgid "Predefined Description for Timesheets"
-msgstr ""
+msgstr "Descrizione predefinita per fogli ore"
 
 #. module: hr_timesheet_predefined_description_rules
 #. odoo-python
@@ -80,3 +90,5 @@ msgstr ""
 #, python-format
 msgid "You must add additional information for this predefined description."
 msgstr ""
+"È necessario inserire informazioni addizionali per questa descrizione "
+"predefinita."

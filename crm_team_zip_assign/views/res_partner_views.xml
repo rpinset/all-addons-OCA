@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Binhex
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Partner Form View -->
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.zip.assign</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="exclude_from_zip_assign" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="ir_action_server_crm_team_zip_assign" model="ir.actions.server">
+        <field name="name">Assign CRM Team By Zip</field>
+        <field name="model_id" ref="base.model_res_partner" />
+        <field name="binding_model_id" ref="base.model_res_partner" />
+        <field name="binding_view_types">form,list</field>
+        <field name="state">code</field>
+        <field name="code">records._process_zip_assignment()</field>
+    </record>
+</odoo>
