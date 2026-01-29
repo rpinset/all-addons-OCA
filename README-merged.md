@@ -1945,6 +1945,7 @@ addon | version | maintainers | summary
 [sale_invoice_policy](sale_invoice_policy/) | 14.0.1.0.0 |  | Sales Management: let the user choose the invoice policy on the order
 [sale_isolated_quotation](sale_isolated_quotation/) | 14.0.2.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Sale Isolated Quotation
 [sale_last_price_info](sale_last_price_info/) | 14.0.1.0.1 |  | Product Last Price Info - Sale
+[sale_line_service_qty_delivered](sale_line_service_qty_delivered/) | 14.0.1.0.1 |  | Changes the Delivered Quantity (qty_delivered) of a service sale.order.lineif one other sale.order.line is delivered the qty_delivered of the service lineis changed to its Quantity (product_uom_qty)
 [sale_mail_autosubscribe](sale_mail_autosubscribe/) | 14.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's sale orders
 [sale_manual_delivery](sale_manual_delivery/) | 14.0.1.0.1 |  | Create manually your deliveries
 [sale_mrp_bom](sale_mrp_bom/) | 14.0.1.0.1 |  | Allows define a BOM in the sales lines.
@@ -8433,6 +8434,7 @@ addon | version | maintainers | summary
 [fetchmail_incoming_log](fetchmail_incoming_log/) | 14.0.1.0.0 |  | Log all messages received, before they start to be processed.
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 14.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 14.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
+[fix_compute_trans_implied_groups](fix_compute_trans_implied_groups/) | 14.0.1.0.0 |  | Fix transitively implied groups computation
 [html_image_url_extractor](html_image_url_extractor/) | 14.0.1.0.1 |  | Extract images found in any HTML field
 [html_text](html_text/) | 14.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 14.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
@@ -9708,7 +9710,7 @@ addon | version | maintainers | summary
 [website_no_crawler](website_no_crawler/) | 14.0.1.2.0 |  | Disables robots.txt for indexing by webcrawlers like Google
 [website_odoo_debranding](website_odoo_debranding/) | 14.0.1.1.0 |  | Remove Odoo Branding from Website
 [website_plausible](website_plausible/) | 14.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Track website users using plausible
-[website_require_login](website_require_login/) | 14.0.1.1.0 |  | Website Login Required
+[website_require_login](website_require_login/) | 14.0.1.1.1 |  | Website Login Required
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 14.0.1.0.0 |  | Allow to select country in a dropdown
 [website_user_login_redirect_custom](website_user_login_redirect_custom/) | 14.0.1.0.0 |  | Redirect website/portal user to custom URL after login or signup
 

@@ -381,9 +381,9 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ec4b4a9dbb5e43d6553f0da0c2c1494184330661
+commit 3a2e42c4ba71212c30462650881b253d8215940a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jan 15 11:45:17 2026 +0000
+Date:   Wed Jan 28 17:17:09 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1492,9 +1492,9 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 9a770c5e03ec73a6590b69f56361078f4f302611
+commit 57b21e9953a09cc2da5186131464110a5cf71df9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 20 10:26:35 2026 +0000
+Date:   Tue Jan 27 09:00:16 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1739,9 +1739,9 @@ Date:   Mon Jan 12 10:24:33 2026 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit c12e35819c98859de374fcf552efdf381946e639
+commit 992756d8f2bf217de56e5f3f227e8f8aa625aa1f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 4 13:09:51 2025 +0000
+Date:   Wed Jan 28 09:23:07 2026 +0000
 
     [BOT] post-merge updates
 
