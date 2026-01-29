@@ -6,86 +6,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-01-29 15:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Warning Options</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Opzioni avviso</span>"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__active
 msgid "Active"
-msgstr ""
+msgstr "Attiva"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_search
 msgid "Alert"
-msgstr ""
+msgstr "Avviso"
 
 #. module: base_warn_option
 #: model:ir.model.fields.selection,name:base_warn_option.selection__warn_option__allowed_warning_usage__all
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_search
 msgid "All"
-msgstr ""
+msgstr "Tutte"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_search
 msgid "Allowed Warning Location"
-msgstr ""
+msgstr "Ubicazione attenzione consentita"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__allowed_warning_type
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_search
 msgid "Allowed Warning Type"
-msgstr ""
+msgstr "Tipo avviso consentito"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__allowed_warning_usage
 msgid "Allowed Warning Usage"
-msgstr ""
+msgstr "Utilizzo avviso consentito"
 
 #. module: base_warn_option
 #: model:ir.model.fields,help:base_warn_option.field_warn_option__allowed_warning_usage
 msgid "Allows to choose where the message can be selected"
-msgstr ""
+msgstr "Consente di scegliere dove può essere selezionato il messaggio"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_form
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: base_warn_option
 #: model:ir.model.fields.selection,name:base_warn_option.selection__warn_option__allowed_warning_type__block
 #: model_terms:ir.ui.view,arch_db:base_warn_option.warn_option_search
 msgid "Block"
-msgstr ""
+msgstr "Blocco"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: base_warn_option
 #: model:ir.model.fields,help:base_warn_option.field_warn_option__allowed_warning_type
@@ -93,21 +95,23 @@ msgid ""
 "If no option is selected, the message is valid for both warning messages and"
 " blocking messages"
 msgstr ""
+"Se non è selezionata un'opzione, il messaggio è valido per entrambi i "
+"messaggi di avviso e blocco"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.res_config_settings_view_form
 msgid "Manage Warning Options"
-msgstr ""
+msgstr "Opzioni avviso messaggio"
 
 #. module: base_warn_option
 #: model_terms:ir.ui.view,arch_db:base_warn_option.res_config_settings_view_form
@@ -115,28 +119,30 @@ msgid ""
 "Manage predefined Warning Options to maintain consistency between the "
 "warning or blocking messages"
 msgstr ""
+"Gestione opzioni avviso predefinite per mantenere la consistenza tra i "
+"messaggi di avviso o blocco"
 
 #. module: base_warn_option
 #: model:ir.model.fields,field_description:base_warn_option.field_warn_option__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: base_warn_option
 #: model:ir.model.fields,help:base_warn_option.field_warn_option__name
 msgid "This text will be the warning message."
-msgstr ""
+msgstr "Questo testo sarà il messaggio di avviso."
 
 #. module: base_warn_option
 #: model:ir.model,name:base_warn_option.model_warn_option
 msgid "Warn Option"
-msgstr ""
+msgstr "Opzione avviso"
 
 #. module: base_warn_option
 #: model:ir.actions.act_window,name:base_warn_option.warn_option_action
 msgid "Warn Options"
-msgstr ""
+msgstr "Opzioni avviso"
 
 #. module: base_warn_option
 #: model:ir.model.fields.selection,name:base_warn_option.selection__warn_option__allowed_warning_type__warning
 msgid "Warning"
-msgstr ""
+msgstr "Attenzione"

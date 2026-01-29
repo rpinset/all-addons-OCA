@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rma_sale_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-01-29 11:01+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: rma_sale_delivery
+#: model:ir.model.fields,field_description:rma_sale_delivery.field_sale_order_rma_wizard__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: rma_sale_delivery
+#: model:ir.model.fields,field_description:rma_sale_delivery.field_sale_order_rma_wizard__rma_reception_strategy
+msgid "RMA reception method strategy"
+msgstr "Strategia metodo ricevimento RMA"
+
+#. module: rma_sale_delivery
+#: model:ir.model.fields,field_description:rma_sale_delivery.field_sale_order_rma_wizard__reception_carrier_id
+msgid "Reception Carrier"
+msgstr "Corriere ricevimento"
+
+#. module: rma_sale_delivery
+#: model:ir.model,name:rma_sale_delivery.model_sale_order_line_rma_wizard
+msgid "Sale Order Line Rma Wizard"
+msgstr "Procedura guidata RMA riga ordine di vendita"
+
+#. module: rma_sale_delivery
+#: model:ir.model,name:rma_sale_delivery.model_sale_order_rma_wizard
+msgid "Sale Order Rma Wizard"
+msgstr "Procedura guidata RMA ordine di vendita"

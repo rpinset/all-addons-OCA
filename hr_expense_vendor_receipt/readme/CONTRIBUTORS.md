@@ -1,0 +1,3 @@
+-   Andrii Kompaniiets ([Moduon](https://www.moduon.team/))
+-   Eduardo de Miguel ([Moduon](https://www.moduon.team/))
+-   Rafael Blasco ([Moduon](https://www.moduon.team/))

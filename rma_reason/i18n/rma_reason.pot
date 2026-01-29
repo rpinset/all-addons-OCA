@@ -143,14 +143,14 @@ msgid "RMA Reason"
 msgstr ""
 
 #. module: rma_reason
-#: model:ir.actions.act_window,name:rma_reason.rma_reason_act_window
-#: model:ir.ui.menu,name:rma_reason.rma_reason_menu
-msgid "RMA Reasons"
+#: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
+msgid "Reason"
 msgstr ""
 
 #. module: rma_reason
-#: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
-msgid "Reason"
+#: model:ir.actions.act_window,name:rma_reason.rma_reason_act_window
+#: model:ir.ui.menu,name:rma_reason.rma_reason_menu
+msgid "Reasons"
 msgstr ""
 
 #. module: rma_reason

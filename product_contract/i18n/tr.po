@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-21 01:48+0000\n"
-"PO-Revision-Date: 2025-09-24 16:42+0000\n"
+"PO-Revision-Date: 2026-01-28 09:09+0000\n"
 "Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.contract_contract_customer_form_view
@@ -217,7 +217,7 @@ msgstr "Görünüm Adı"
 #: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Duration"
-msgstr ""
+msgstr "Süre"
 
 #. module: product_contract
 #: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__end_this
@@ -261,13 +261,13 @@ msgstr "Ayı Zorla"
 #: model:ir.model.fields,field_description:product_contract.field_product_product__force_month_quarterly
 #: model:ir.model.fields,field_description:product_contract.field_product_template__force_month_quarterly
 msgid "Force Month (quarterly)"
-msgstr ""
+msgstr "Ayı Zorla (üç aylık)"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_product__force_month_semesterly
 #: model:ir.model.fields,field_description:product_contract.field_product_template__force_month_semesterly
 msgid "Force Month (semesterly)"
-msgstr ""
+msgstr "Ayı Zorla (dönemlik)"
 
 #. module: product_contract
 #: model:ir.model.fields,help:product_contract.field_product_product__force_month_quarterly
@@ -293,6 +293,7 @@ msgid ""
 "Frequency at which invoices are generated (e.g., every 1 month, every 2 "
 "weeks)."
 msgstr ""
+"Faturaların oluşturulma sıklığı (örneğin her 1 ayda bir, her 2 haftada bir)."
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__id
@@ -315,19 +316,19 @@ msgstr "Tekrar Aralığı"
 #: model:ir.model.fields,help:product_contract.field_sale_order_line__recurring_interval
 #: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurring_interval
 msgid "Invoice every (Days/Week/Month/Year)"
-msgstr ""
+msgstr "Tekrar aralığı (Günler/Hafta/Ay/Yıl)"
 
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Invoicing"
-msgstr ""
+msgstr "Faturalama"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_product__recurring_rule_type
 #: model:ir.model.fields,field_description:product_contract.field_product_template__recurring_rule_type
 msgid "Invoicing Recurrence"
-msgstr ""
+msgstr "Fatura Tekrarı"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurring_invoicing_type
@@ -430,7 +431,7 @@ msgstr "Kasım"
 #: model:ir.model.fields,field_description:product_contract.field_product_product__recurrence_number
 #: model:ir.model.fields,field_description:product_contract.field_product_template__recurrence_number
 msgid "Number of Recurrences"
-msgstr ""
+msgstr "Tekrar Sayısı"
 
 #. module: product_contract
 #: model:ir.model.fields.selection,name:product_contract.selection__product_template__force_month_yearly__10
@@ -502,7 +503,7 @@ msgstr "Çeyrek(ler)"
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurring_rule_type
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurring_rule_type
 msgid "Recurrence"
-msgstr ""
+msgstr "Tekrarlama"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__recurrence_interval
@@ -511,7 +512,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurrence_interval
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurrence_interval
 msgid "Recurrence Interval"
-msgstr ""
+msgstr "Tekrarlama Aralığı"
 
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.view_order_form
@@ -523,7 +524,7 @@ msgstr "Faturalama Tekrarlama"
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line__recurrence_number
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__recurrence_number
 msgid "Recurrence Number"
-msgstr ""
+msgstr "Tekrarlama Sayısı"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__auto_renew_interval
@@ -547,12 +548,12 @@ msgstr "Yenilenme her (Gün/Hafte/Ay/Yıl)"
 #: model_terms:ir.ui.view,arch_db:product_contract.product_contract_configurator_form
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Renewal"
-msgstr ""
+msgstr "Yenilenme"
 
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Renewal Frequency"
-msgstr ""
+msgstr "Yenilenme Sıklığı"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__auto_renew_rule_type
@@ -577,7 +578,7 @@ msgstr "Satış Sipariş Satırı"
 #. module: product_contract
 #: model:ir.model,name:product_contract.model_sale_order_line_contract_mixin
 msgid "Sale Order Line Contract Mixin"
-msgstr ""
+msgstr "Satış Sipariş Satırı Sözleşme Mixin"
 
 #. module: product_contract
 #. odoo-python
@@ -650,7 +651,7 @@ msgstr "Otomatik yenilenme için aralık belirtin."
 #: model:ir.model.fields,help:product_contract.field_sale_order_line__recurrence_interval
 #: model:ir.model.fields,help:product_contract.field_sale_order_line_contract_mixin__recurrence_interval
 msgid "Specify Interval for contract duration."
-msgstr ""
+msgstr "Sözleşme süresi için Aralığı belirtin."
 
 #. module: product_contract
 #: model:ir.model.fields,help:product_contract.field_product_contract_configurator__recurring_invoicing_type
@@ -660,6 +661,8 @@ msgid ""
 "Specify if the invoice must be generated at the beginning (pre-paid) or end "
 "(post-paid) of the period."
 msgstr ""
+"Faturanın dönemin başında (ön ödemeli) mı yoksa sonunda (sonradan ödemeli) "
+"mı oluşturulması gerektiğini belirtin."
 
 #. module: product_contract
 #: model:ir.model.fields,help:product_contract.field_product_product__recurring_rule_type
@@ -668,6 +671,8 @@ msgid ""
 "Specify the time unit for generating recurring invoices (days, weeks, "
 "months, etc.)."
 msgstr ""
+"Yinelenen faturaların oluşturulması için zaman birimini belirtin (gün, "
+"hafta, ay vb.)."
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_start_date_method
@@ -681,7 +686,7 @@ msgstr "Başlangıç Tarihi Yöntemi"
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Start Method"
-msgstr ""
+msgstr "Başlatma Yöntemi"
 
 #. module: product_contract
 #: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__contract_start_date_method__start_this
@@ -702,7 +707,7 @@ msgstr "Bir sonraki dönemin başlangıcı"
 #. module: product_contract
 #: model_terms:ir.ui.view,arch_db:product_contract.product_template_form_contract_view
 msgid "Termination Notice"
-msgstr ""
+msgstr "Fesih Bildirimi"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_product__termination_notice_interval
@@ -801,7 +806,7 @@ msgstr ""
 #: model:ir.model.fields,help:product_contract.field_product_product__recurrence_number
 #: model:ir.model.fields,help:product_contract.field_product_template__recurrence_number
 msgid "Total number of recurrence periods for the contract."
-msgstr ""
+msgstr "Sözleşmenin toplam tekrarlama periyodu sayısı."
 
 #. module: product_contract
 #: model:ir.model.fields.selection,name:product_contract.selection__product_contract_configurator__auto_renew_rule_type__weekly
@@ -849,6 +854,11 @@ msgid ""
 "            - Date: {date_text}\n"
 "            "
 msgstr ""
+"{product}:\n"
+"            - Yinelenme: {recurring_rule}\n"
+"            - Faturalama Türü: {invoicing_type}\n"
+"            - Tarih: {date_text}\n"
+"            "
 
 #~ msgid ""
 #~ "You must specify a contract template for '%(product_name)s' product in "

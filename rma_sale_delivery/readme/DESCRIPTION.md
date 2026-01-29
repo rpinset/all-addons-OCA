@@ -1,0 +1,1 @@
+This module allows you to define the carrier for receipt in the RMA creation wizard from the sales order.

@@ -22,9 +22,8 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title="
-"\"Los valores establecidos aquí son específicos de la compañía.\" groups="
-"\"base.group_multi_company\"/>"
+"<span class=\"fa fa-lg fa-building-o\" title=\"Los valores establecidos aquí "
+"son específicos de la compañía.\" groups=\"base.group_multi_company\"/>"
 
 #. module: rma_reason
 #: model_terms:ir.ui.view,arch_db:rma_reason.portal_rma_page
@@ -88,7 +87,8 @@ msgid ""
 "                            mandatory when creating an RMA order.\n"
 "                            Enabling this ensures that all return requests\n"
 "                            have a documented reason, aiding in inventory\n"
-"                            management, quality control, and customer service."
+"                            management, quality control, and customer "
+"service."
 msgstr ""
 "Indica si es obligatorio especificar un motivo de RMA\n"
 "                            al crear un pedido de RMA.\n"
@@ -104,8 +104,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:rma_reason.field_rma__is_rma_reason_required
 #: model:ir.model.fields,field_description:rma_reason.field_stock_return_picking_line__is_rma_reason_required
 msgid ""
-"Indicates whether specifying an RMA reason is mandatory when creating an RMA"
-" order."
+"Indicates whether specifying an RMA reason is mandatory when creating an RMA "
+"order."
 msgstr ""
 "Indica si es obligatorio especificar un motivo de RMA al crear un pedido de "
 "RMA."
@@ -158,15 +158,15 @@ msgid "RMA Reason"
 msgstr "Motivo de RMA"
 
 #. module: rma_reason
-#: model:ir.actions.act_window,name:rma_reason.rma_reason_act_window
-#: model:ir.ui.menu,name:rma_reason.rma_reason_menu
-msgid "RMA Reasons"
-msgstr "Motivos de RMA"
-
-#. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
 msgid "Reason"
 msgstr "Motivo"
+
+#. module: rma_reason
+#: model:ir.actions.act_window,name:rma_reason.rma_reason_act_window
+#: model:ir.ui.menu,name:rma_reason.rma_reason_menu
+msgid "Reasons"
+msgstr "Motivos"
 
 #. module: rma_reason
 #: model:ir.model,name:rma_reason.model_stock_return_picking
@@ -192,8 +192,8 @@ msgstr "Motivo Rma"
 #. module: rma_reason
 #: model:rma.reason,description:rma_reason.rma_reason_unwanted_changed_mind
 msgid ""
-"The customer no longer wants the item or changed their mind after purchasing"
-" it."
+"The customer no longer wants the item or changed their mind after purchasing "
+"it."
 msgstr ""
 "El cliente ya no quiere el artículo o ha cambiado de opinión después de "
 "comprarlo."

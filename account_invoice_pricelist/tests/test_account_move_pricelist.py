@@ -29,6 +29,7 @@ class TestAccountMovePricelist(common.TransactionCase):
         cls.journal_sale = cls.env["account.journal"].create(
             {"name": "Test sale journal", "type": "sale", "code": "TEST_SJ"}
         )
+        cls._dp = cls.env["decimal.precision"].precision_get("Product Price")
         # Make sure the currency of the company is USD, as this not always happens
         # To be removed in V17: https://github.com/odoo/odoo/pull/107113
         cls.company = cls.env.company
@@ -345,7 +346,10 @@ class TestAccountMovePricelist(common.TransactionCase):
         )
 
     def test_01_account_invoice_pricelist(self):
-        self.assertEqual(self.invoice.pricelist_id, self.sale_pricelist)
+        self.assertEqual(
+            self.invoice.pricelist_id,
+            self.invoice.partner_id.property_product_pricelist,
+        )
 
     def test_02_account_invoice_change_pricelist(self):
         self.env.user.write({"groups_id": [(5, self.group_discount.id)]})
@@ -384,7 +388,7 @@ class TestAccountMovePricelist(common.TransactionCase):
         self.invoice.pricelist_id = self.sale_pricelist_with_discount_in_euros.id
         self.invoice.button_update_prices_from_pricelist()
         invoice_line = self.invoice.invoice_line_ids[:1]
-        self.assertAlmostEqual(invoice_line.price_unit, 75.55)
+        self.assertAlmostEqual(invoice_line.price_unit, 75.55, places=self._dp)
         self.assertEqual(invoice_line.discount, 0.00)
 
     def test_07_account_invoice_pricelist_without_discount_secondary_currency(self):
@@ -392,7 +396,7 @@ class TestAccountMovePricelist(common.TransactionCase):
         self.invoice.pricelist_id = self.sale_pricelist_without_discount_in_euros.id
         self.invoice.button_update_prices_from_pricelist()
         invoice_line = self.invoice.invoice_line_ids[:1]
-        self.assertAlmostEqual(invoice_line.price_unit, 83.94)
+        self.assertAlmostEqual(invoice_line.price_unit, 83.94, places=self._dp)
         self.assertEqual(invoice_line.discount, 10.00)
 
     def test_08_account_invoice_fixed_pricelist_with_discount_secondary_currency(self):
@@ -410,7 +414,7 @@ class TestAccountMovePricelist(common.TransactionCase):
         self.invoice.pricelist_id = self.sale_pricelist_fixed_wo_disc_euros.id
         self.invoice.button_update_prices_from_pricelist()
         invoice_line = self.invoice.invoice_line_ids[:1]
-        self.assertAlmostEqual(invoice_line.price_unit, 60)
+        self.assertAlmostEqual(invoice_line.price_unit, 60.00, places=self._dp)
         self.assertEqual(invoice_line.discount, 0)
 
     def test_10_check_currency(self):

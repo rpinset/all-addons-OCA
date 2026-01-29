@@ -1,0 +1,440 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_invoice_plan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-01-27 23:09+0000\n"
+"Last-Translator: Ediz Duman <neps1192@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields.selection,name:sale_invoice_plan.selection__sale_invoice_plan__invoice_type__advance
+msgid "Advance"
+msgstr "Avans"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__advance
+msgid "Advance on 1st Invoice"
+msgstr "1. Faturada Avans"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__amount
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_list
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_list_readonly
+msgid "Amount"
+msgstr "Tutar"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__amount_invoiced
+msgid "Amount Invoiced"
+msgstr "Faturalanan Tutar"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_order_form_invoice_plan
+msgid "Are you sure to remove this invoice plan?"
+msgstr "Bu fatura planını kaldırmak istediğinizden emin misiniz?"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_order__invoice_plan_process
+msgid "At least one invoice plan line pending to create invoice"
+msgstr "Fatura oluşturulması bekleyen en az bir fatura planı satırı var"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_create_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_make_planned_invoice
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_make_planned_invoice
+msgid "Create All Remaining Invoices"
+msgstr "Tüm Kalan Faturaları Oluştur"
+
+#. module: sale_invoice_plan
+#: model:ir.actions.act_window,name:sale_invoice_plan.action_sale_create_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_create_invoice_plan
+msgid "Create Invoice Plan"
+msgstr "Fatura Planı Oluştur"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_order_form_invoice_plan
+msgid "Create Invoice by Plan"
+msgstr "Plana Göre Fatura Oluştur"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_make_planned_invoice
+msgid "Create Next Invoice"
+msgstr "Sonraki Faturayı Oluştur"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__create_uid
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__create_uid
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__create_date
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__create_date
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__create_date
+msgid "Created on"
+msgstr "Oluşturulma Tarihi"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__partner_id
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Customer"
+msgstr "Müşteri"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields.selection,name:sale_invoice_plan.selection__sale_create_invoice_plan__interval_type__day
+msgid "Day"
+msgstr "Gün"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__display_name
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__display_name
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__display_name
+msgid "Display Name"
+msgstr "Görünen Ad"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Distribution Analytic Account"
+msgstr "Dağıtım Analitik Hesabı"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__distribution_analytic_account_ids
+msgid "Distribution Analytic Accounts"
+msgstr "Dağıtım Analitik Hesapları"
+
+#. module: sale_invoice_plan
+#: model:ir.model,name:sale_invoice_plan.model_sale_create_invoice_plan
+msgid "Fillig invoice planning criteria"
+msgstr "Fatura planlama kriterlerini doldurma"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Group By"
+msgstr "Gruplandır"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__id
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__id
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_invoice_plan__invoiced
+msgid "If this line already invoiced"
+msgstr "Bu satır zaten faturalandırılmışsa"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_invoice_plan__to_invoice
+msgid "If this line is ready to create new invoice"
+msgstr "Bu satır yeni fatura oluşturmaya hazırsa"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__installment
+#: model:ir.model.fields.selection,name:sale_invoice_plan.selection__sale_invoice_plan__invoice_type__installment
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Installment"
+msgstr "Taksit"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale_invoice_plan.py:0
+msgid ""
+"Installment %s: already used and not allowed to delete.\n"
+"Please discard changes."
+msgstr ""
+"Taksit %s: zaten kullanılmış ve silinmesine izin verilmiyor.\n"
+"Lütfen değişiklikleri iptal edin."
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__installment_date
+msgid "Installment Date"
+msgstr "Taksit Tarihi"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__interval
+msgid "Interval"
+msgstr "Aralık"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__interval_type
+msgid "Interval Type"
+msgstr "Aralık Türü"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__invoiced
+msgid "Invoice Created"
+msgstr "Fatura Oluşturuldu"
+
+#. module: sale_invoice_plan
+#: model:ir.actions.act_window,name:sale_invoice_plan.action_view_sale_make_planned_invoice
+msgid "Invoice Order"
+msgstr "Siparişi Faturalandır"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_order__invoice_plan_ids
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_order_form_invoice_plan
+msgid "Invoice Plan"
+msgstr "Fatura Planı"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_order__invoice_plan_process
+msgid "Invoice Plan In Process"
+msgstr "Fatura Planı İşlemde"
+
+#. module: sale_invoice_plan
+#: model:ir.model,name:sale_invoice_plan.model_sale_invoice_plan
+msgid "Invoice Planning Detail"
+msgstr "Fatura Planlama Detayı"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_make_planned_invoice
+msgid "Invoice Sales Order"
+msgstr "Satış Siparişini Faturalandır"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale.py:0
+msgid "Invoice plan total percentage must not exceed 100%"
+msgstr "Fatura planı toplam yüzdesi %100'ü aşmamalıdır"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__invoice_move_ids
+msgid "Invoices"
+msgstr "Faturalar"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_make_planned_invoice
+msgid ""
+"Invoices will be created in draft for this installment\n"
+"                        so that you can review them before validation."
+msgstr ""
+"Bu taksit için faturalar taslak olarak oluşturulacak\n"
+"                        böylece onaylamadan önce inceleyebilirsiniz."
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__last
+msgid "Last Installment"
+msgstr "Son Taksit"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__write_uid
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__write_uid
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__write_date
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__write_date
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_make_planned_invoice__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme Tarihi"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_invoice_plan__last
+msgid "Last installment will create invoice use remaining amount"
+msgstr "Son taksit kalan tutarı kullanarak fatura oluşturacak"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields.selection,name:sale_invoice_plan.selection__sale_create_invoice_plan__interval_type__month
+msgid "Month"
+msgstr "Ay"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__to_invoice
+msgid "Next Invoice"
+msgstr "Sonraki Fatura"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__no_edit
+msgid "No Edit"
+msgstr "Düzenleme Yok"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/tests/test_sale_invoice_plan.py:0
+msgid "No installment raises following error : %s"
+msgstr "Taksit olmaması şu hataya neden oluyor: %s"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale_invoice_plan.py:0
+msgid "No matched order line for invoice line"
+msgstr "Fatura satırı için eşleşen sipariş satırı yok"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Not Invoiced"
+msgstr "Faturalanmamış"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Not Invoiced & Due"
+msgstr "Faturalanmamış ve Vadesi Gelmiş"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/wizard/sale_create_invoice_plan.py:0
+msgid "Number Installment must greater than 1"
+msgstr "Taksit Sayısı 1'den büyük olmalıdır"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_create_invoice_plan__num_installment
+msgid "Number of Installment"
+msgstr "Taksit Sayısı"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__percent
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_order__invoice_plan_total_percent
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_list_readonly
+msgid "Percent"
+msgstr "Yüzde"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__plan_date
+msgid "Plan Date"
+msgstr "Plan Tarihi"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale_invoice_plan.py:0
+msgid ""
+"Plan quantity: %(plan_qty)s, exceed invoiceable quantity: %(invoiceable_qty)s\n"
+"Product should be delivered before invoice"
+msgstr ""
+"Plan miktarı: %(plan_qty)s, faturalanabilir miktarı aşıyor: %"
+"(invoiceable_qty)s\n"
+"Ürün fatura edilmeden önce teslim edilmelidir"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale.py:0
+msgid "Please fill percentage for all invoice plan lines"
+msgstr "Lütfen tüm fatura planı satırları için yüzde değerini doldurun"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Quotations"
+msgstr "Teklifler"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_form
+msgid "Related Invoices"
+msgstr "İlişkili Faturalar"
+
+#. module: sale_invoice_plan
+#: model:ir.model,name:sale_invoice_plan.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Satış Avans Ödeme Faturası"
+
+#. module: sale_invoice_plan
+#: model:ir.actions.act_window,name:sale_invoice_plan.action_sale_invoice_plan
+#: model:ir.ui.menu,name:sale_invoice_plan.menu_sale_invoice_plan
+msgid "Sales Invoice Plan"
+msgstr "Satış Fatura Planı"
+
+#. module: sale_invoice_plan
+#: model:ir.model,name:sale_invoice_plan.model_sale_order
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__sale_id
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Sales Order"
+msgstr "Satış Siparişi"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Sales Orders"
+msgstr "Satış Siparişleri"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Search Sales Invoice Plan Lines"
+msgstr "Satış Fatura Planı Satırlarını Ara"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__state
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_invoice_plan_filter
+msgid "Status"
+msgstr "Durum"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_invoice_plan__amount
+msgid "This amount will be used to calculate the percent"
+msgstr "Bu tutar yüzde hesaplamak için kullanılacak"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,help:sale_invoice_plan.field_sale_invoice_plan__percent
+msgid "This percent will be used to calculate new quantity"
+msgstr "Bu yüzde yeni miktar hesaplamak için kullanılacak"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.actions.act_window,help:sale_invoice_plan.action_sale_invoice_plan
+msgid "This view show all available invoice plan line for reporting purposes"
+msgstr ""
+"Bu görünüm raporlama amaçlı tüm mevcut fatura planı satırlarını gösterir"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_sale_create_invoice_plan
+msgid "This wizard help you quickly create invoice plan."
+msgstr "Bu sihirbaz fatura planını hızlıca oluşturmanıza yardımcı olur."
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_order__invoice_plan_total_amount
+msgid "Total Plan Amount"
+msgstr "Toplam Plan Tutarı"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_invoice_plan__invoice_type
+msgid "Type"
+msgstr "Tür"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields,field_description:sale_invoice_plan.field_sale_order__use_invoice_plan
+msgid "Use Invoice Plan"
+msgstr "Fatura Planı Kullan"
+
+#. module: sale_invoice_plan
+#. odoo-python
+#: code:addons/sale_invoice_plan/models/sale.py:0
+msgid "Use Invoice Plan selected, but no plan created"
+msgstr "Fatura Planı Kullan seçildi, ancak plan oluşturulmadı"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.actions.act_window,help:sale_invoice_plan.action_sale_invoice_plan
+msgid "View sales invoice plan lines"
+msgstr "Satış fatura planı satırlarını görüntüle"
+
+#. module: sale_invoice_plan
+#: model:ir.model,name:sale_invoice_plan.model_sale_make_planned_invoice
+msgid "Wizard when create invoice by plan"
+msgstr "Plana göre fatura oluşturulduğunda sihirbaz"
+
+#. module: sale_invoice_plan
+#: model:ir.model.fields.selection,name:sale_invoice_plan.selection__sale_create_invoice_plan__interval_type__year
+msgid "Year"
+msgstr "Yıl"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_order_form_invoice_plan
+msgid "⇒ Create Invoice Plan"
+msgstr "⇒ Fatura Planı Oluştur"
+
+#. module: sale_invoice_plan
+#: model_terms:ir.ui.view,arch_db:sale_invoice_plan.view_order_form_invoice_plan
+msgid "⇒ Remove Invoice Plan"
+msgstr "⇒ Fatura Planını Kaldır"

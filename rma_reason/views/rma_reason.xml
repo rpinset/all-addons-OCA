@@ -41,7 +41,7 @@
     </record>
 
     <record model="ir.actions.act_window" id="rma_reason_act_window">
-        <field name="name">RMA Reasons</field>
+        <field name="name">Reasons</field>
         <field name="res_model">rma.reason</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[]</field>
@@ -49,7 +49,7 @@
     </record>
 
     <record model="ir.ui.menu" id="rma_reason_menu">
-        <field name="name">RMA Reasons</field>
+        <field name="name">Reasons</field>
         <field name="parent_id" ref="rma.rma_configuration_menu" />
         <field name="action" ref="rma_reason_act_window" />
         <field name="sequence" eval="16" />

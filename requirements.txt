@@ -125,6 +125,7 @@ zeep
 pyfrdas2>=0.10
 pypdf>=3.1.0
 python-stdnum
+requests
 requests_oauthlib
 unidecode
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
@@ -197,6 +198,7 @@ python-barcode
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
 # generated from manifests external_dependencies
 openupgradelib
+xlrd
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
 # generated from manifests external_dependencies
@@ -270,6 +272,7 @@ paramiko<4.0.0
 pygount
 pysftp
 sentry_sdk>=2.0.0,<=2.22.0
+unittest-xml-reporting
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
 cryptography

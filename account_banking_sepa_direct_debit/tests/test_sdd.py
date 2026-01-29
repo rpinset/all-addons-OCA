@@ -7,17 +7,15 @@ import base64
 from lxml import etree
 
 from odoo import fields
-from odoo.tests.common import TransactionCase
 from odoo.tools import float_compare
 
-from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestSDDBase(TransactionCase):
+class TestSDDBase(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
         cls.company_B = cls.env["res.company"].create({"name": "Company B"})
         cls.account_payable_company_B = cls.env["account.account"].create(
             {
@@ -219,6 +217,7 @@ class TestSDDBase(TransactionCase):
                 "code": "NC1113",
                 "name": "HR Expense - Test Purchase Account Company B",
                 "account_type": "expense",
+                "reconcile": True,
                 "company_ids": [(6, 0, [cls.company_B.id])],
             }
         )
