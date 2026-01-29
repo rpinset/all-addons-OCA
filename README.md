@@ -953,16 +953,11 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit aff2f5983bd2685aac3135e46ee6de99ff77e0b5
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jan 21 18:54:17 2026 +0000
+commit 51b348ea328d20bb6d903d76c7dad24016d3fd55
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 27 14:06:44 2026 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod190
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod190/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
