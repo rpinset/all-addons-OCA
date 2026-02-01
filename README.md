@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 5b38dbe9c316b5349e3458a354d5195631ab4817
-Author: Tamer Sezgin <tamer.sezgin@gmail.com>
-Date:   Fri Aug 29 13:34:14 2025 +0000
+commit 0e545b61e3d1d6cff518f21774e8c829186b6324
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 06:20:38 2026 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 76.9% (10 of 13 strings)
     
-    Translation: account-analytic-14.0/account-analytic-14.0-mrp_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-mrp_analytic/tr/
+    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_parent
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_parent/sl/
 
 
 ## account-budgeting
@@ -52,9 +52,9 @@ Date:   Fri Jun 13 15:25:21 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 5445e6ff19da2a4bb0c0b19beb44900d7a1055dd
+commit 31fadd4491f8ac90eb895cab104d1048ff90da44
 Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Mon Nov 24 08:20:59 2025 +0000
+Date:   Sun Feb 1 07:44:33 2026 +0000
 
     Translated using Weblate (Slovenian)
     
@@ -80,23 +80,23 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 25482fb885e60ee78b695cbbceb3c093b126bd74
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Thu Jan 15 16:43:40 2026 +0000
+commit eb82d9465c4dd5a0e1ea5334ab0d08358a738b09
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 06:47:52 2026 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 100.0% (137 of 137 strings)
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_balance_line
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_balance_line/tr/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_chart_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_chart_update/sl/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 071c39451871cda6f3dd184b3342fa887bb58abd
+commit 03f6063657e4cbe90fe38dd7c0838aeffb407c33
 Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Thu Jan 22 17:05:24 2026 +0000
+Date:   Sun Feb 1 07:25:41 2026 +0000
 
     Translated using Weblate (Slovenian)
     
@@ -117,11 +117,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 2c1fd70f5a67c113242415bf071f83a3d02c04dd
-Author: Julien Hémono <julien@hemono.fr>
-Date:   Fri Jan 9 16:22:59 2026 +0000
+commit c4d1858b099353485fd7879edfd5220e158f7b5d
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:25:29 2026 +0000
 
-    Added translation using Weblate (French)
+    Translated using Weblate (Slovenian)
+    
+    Currently translated at 100.0% (21 of 21 strings)
+    
+    Translation: account-invoicing-14.0/account-invoicing-14.0-sale_order_invoicing_grouping_criteria
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_order_invoicing_grouping_criteria/sl/
 
 
 ## account-fiscal-rule
@@ -213,11 +218,16 @@ Date:   Wed Jul 30 12:13:47 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit f773e1f212de68c0a5473d42b0b8a327479b7e67
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 25 15:12:37 2025 +0000
+commit 08497f2c2b6fa0c171cfe6745524b9c5dd2bb795
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:25:59 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Slovenian)
+    
+    Currently translated at 100.0% (102 of 102 strings)
+    
+    Translation: account-reconcile-14.0/account-reconcile-14.0-account_reconciliation_widget
+    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-14-0/account-reconcile-14-0-account_reconciliation_widget/sl/
 
 
 ## bank-statement-import
@@ -399,16 +409,16 @@ Date:   Wed Jun 4 02:45:55 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 5b7f3ca1173cab546708179e5bd2b5ff41ea81bf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 5 18:59:19 2026 +0000
+commit e959f96e2035f00b3bf3b962f5e6d0c473e72034
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:34:58 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 50.6% (42 of 83 strings)
     
-    Translation: partner-contact-14.0/partner-contact-14.0-partner_vat_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_vat_unique/it/
+    Translation: partner-contact-14.0/partner-contact-14.0-partner_identification
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_identification/sl/
 
 
 ## sale-financial
@@ -472,16 +482,16 @@ Date:   Wed Jun 4 03:56:13 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 758aab191dd12ecbdbe51d13bf4dfeb5aa85250d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:41:45 2025 +0000
+commit 1e5682046d240e2e692c9f45687a431ad6b11c8e
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 09:09:55 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (108 of 108 strings)
+    Currently translated at 58.6% (17 of 29 strings)
     
-    Translation: knowledge-14.0/knowledge-14.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-14-0/knowledge-14-0-document_page/it/
+    Translation: knowledge-14.0/knowledge-14.0-knowledge
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-14-0/knowledge-14-0-knowledge/sl/
 
 
 ## dms
@@ -1133,16 +1143,16 @@ Date:   Wed Oct 15 09:12:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit cdae12ecccb0d317f2828c269309774a078146b8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 22 07:51:32 2026 +0000
+commit 2f92d95028c2f857cc251dc83a04b57bba4ef4c7
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:48:08 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (135 of 135 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_no_negative
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_no_negative/it/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_batch_extended/sl/
 
 
 ## stock-logistics-tracking
@@ -1226,11 +1236,16 @@ Date:   Mon Oct 13 07:20:52 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 1a5ecd9f93aea6710a6c6fcd1efd93cf038b440b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 08:38:00 2025 +0000
+commit 409fdf330ff69087643a1c179d4098e7b11d8743
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:53:59 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Slovenian)
+    
+    Currently translated at 72.0% (116 of 161 strings)
+    
+    Translation: manufacture-14.0/manufacture-14.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-quality_control_oca/sl/
 
 
 ## manufacture-reporting
@@ -1391,16 +1406,16 @@ Date:   Sun Feb 2 20:14:27 2025 +0000
 
 ## business-requirement
 From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
-commit dc11688de4e58dedb55df2cf53f89ec8ee71fa26
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:39:15 2025 +0000
+commit 3084b17f3f68ea52d3631b925d9047efc53c1000
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:44:04 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (131 of 131 strings)
     
-    Translation: business-requirement-14.0/business-requirement-14.0-business_requirement_sale_timesheet
-    Translate-URL: https://translation.odoo-community.org/projects/business-requirement-14-0/business-requirement-14-0-business_requirement_sale_timesheet/it/
+    Translation: business-requirement-14.0/business-requirement-14.0-business_requirement
+    Translate-URL: https://translation.odoo-community.org/projects/business-requirement-14-0/business-requirement-14-0-business_requirement/sl/
 
 
 ## connector-redmine
