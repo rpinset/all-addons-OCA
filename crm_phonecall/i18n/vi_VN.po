@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2017-06-01 02:38+0000\n"
 "PO-Revision-Date: 2017-06-01 02:38+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
-"Language-Team: Vietnamese (Viet Nam) (https://www.transifex.com/oca/"
-"teams/23907/vi_VN/)\n"
+"Language-Team: Vietnamese (Viet Nam) (https://www.transifex.com/oca/teams/"
+"23907/vi_VN/)\n"
 "Language: vi_VN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,6 +77,12 @@ msgstr ""
 #. module: crm_phonecall
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
 msgid "Additional Info"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__partner_state
+msgid ""
+"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
 msgstr ""
 
 #. module: crm_phonecall
@@ -146,6 +152,13 @@ msgstr ""
 #. module: crm_phonecall
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "City"
 msgstr ""
 
 #. module: crm_phonecall
@@ -781,8 +794,14 @@ msgid "Source"
 msgstr ""
 
 #. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
+msgid "State Name"
 msgstr ""
 
 #. module: crm_phonecall
@@ -876,4 +895,15 @@ msgstr ""
 msgid ""
 "You can use the import feature to massively import a new list of\n"
 "            prospects to qualify."
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "ZIP"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
+msgid "Zip"
 msgstr ""

@@ -95,6 +95,12 @@ msgid "Additional Info"
 msgstr "Informazioni aggiuntive"
 
 #. module: crm_phonecall
+#: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__partner_state
+msgid ""
+"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
+msgstr ""
+
+#. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__user_id
 msgid "Assign To"
 msgstr "Assegna a"
@@ -166,6 +172,13 @@ msgstr "Annullata"
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
 msgstr "Categorie"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "City"
+msgstr ""
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -810,9 +823,15 @@ msgid "Source"
 msgstr "Origine"
 
 #. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
 msgstr "Stato"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
+msgid "State Name"
+msgstr ""
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__state
@@ -917,6 +936,17 @@ msgstr ""
 "Si può utilizzare la funzionalità di importazione per importare in massa una "
 "nuova lista\n"
 "            di prospettive di qualificazione."
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "ZIP"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
+msgid "Zip"
+msgstr ""
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Errore consegna SMS"

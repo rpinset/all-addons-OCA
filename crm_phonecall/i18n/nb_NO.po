@@ -80,6 +80,12 @@ msgid "Additional Info"
 msgstr ""
 
 #. module: crm_phonecall
+#: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__partner_state
+msgid ""
+"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
+msgstr ""
+
+#. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__user_id
 msgid "Assign To"
 msgstr ""
@@ -146,6 +152,13 @@ msgstr ""
 #. module: crm_phonecall
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "City"
 msgstr ""
 
 #. module: crm_phonecall
@@ -781,8 +794,14 @@ msgid "Source"
 msgstr ""
 
 #. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
+msgid "State Name"
 msgstr ""
 
 #. module: crm_phonecall
@@ -876,6 +895,17 @@ msgstr ""
 msgid ""
 "You can use the import feature to massively import a new list of\n"
 "            prospects to qualify."
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "ZIP"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
+msgid "Zip"
 msgstr ""
 
 #~ msgid "Last Modified on"

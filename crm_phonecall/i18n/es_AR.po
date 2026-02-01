@@ -12,8 +12,8 @@ msgstr ""
 "POT-Creation-Date: 2017-12-14 05:51+0000\n"
 "PO-Revision-Date: 2023-10-29 23:38+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
-"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/"
-"teams/23907/es_AR/)\n"
+"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/teams/"
+"23907/es_AR/)\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,6 +97,12 @@ msgid "Additional Info"
 msgstr "Información Adicional"
 
 #. module: crm_phonecall
+#: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__partner_state
+msgid ""
+"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
+msgstr ""
+
+#. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__user_id
 msgid "Assign To"
 msgstr "Asignado A"
@@ -168,6 +174,13 @@ msgstr "Cancelado"
 #: model:ir.ui.menu,name:crm_phonecall.menu_crm_case_phonecall-act
 msgid "Categories"
 msgstr "Categorías"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_city
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "City"
+msgstr ""
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -815,9 +828,15 @@ msgid "Source"
 msgstr "Origen"
 
 #. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_state
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "State"
 msgstr "Estado"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
+msgid "State Name"
+msgstr ""
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__state
@@ -923,6 +942,17 @@ msgstr ""
 "Puede utilizar la característica de importación para importar masivamente "
 "una nueva lista de\n"
 "              prospectos para calificar."
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
+#: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
+msgid "ZIP"
+msgstr ""
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
+msgid "Zip"
+msgstr ""
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Error de entrega de SMS"

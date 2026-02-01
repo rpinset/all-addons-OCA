@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-18 22:50+0000\n"
+"PO-Revision-Date: 2026-02-01 07:09+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -41,22 +41,22 @@ msgstr "Vsi vknjiženi vnosi"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__balance_regular
 msgid "Balance"
-msgstr "Stanje"
+msgstr "Saldo"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__balance_refund
 msgid "Balance Refund"
-msgstr "Saldo povračila"
+msgstr "Saldo vračila"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__base_balance_regular
 msgid "Base Balance"
-msgstr "Saldo osnova"
+msgstr "Osnova"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__base_balance_refund
 msgid "Base Balance Refund"
-msgstr "Saldo osnove dobropisa"
+msgstr "Osnova vračila"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
@@ -153,7 +153,7 @@ msgstr "Likvidnost"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.wizard_open_tax_balances
 msgid "Open Taxes"
-msgstr "Odprti davki"
+msgstr "Odpri davke"
 
 #. module: account_tax_balance
 #. odoo-python
@@ -171,7 +171,7 @@ msgstr "Obveznost"
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Payable refund"
-msgstr "Prejeti dobropis"
+msgstr "Obveznost vračila"
 
 #. module: account_tax_balance
 #. odoo-python
@@ -183,7 +183,7 @@ msgstr "Terjatev"
 #. odoo-python
 #: code:addons/account_tax_balance/models/account_move.py:0
 msgid "Receivable refund"
-msgstr "Izdani dobropis"
+msgstr "Terjatev vračila"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_search_balance
@@ -218,7 +218,7 @@ msgstr "Področje uporabe davka"
 #: model:ir.ui.menu,name:account_tax_balance.menu_tax_balances
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.wizard_open_tax_balances
 msgid "Taxes Balance"
-msgstr "Davki saldo"
+msgstr "Saldo davki"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__to_date
@@ -238,7 +238,7 @@ msgstr "Saldo skupaj"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_tax__base_balance
 msgid "Total Base Balance"
-msgstr "Skupaj osnova stanje"
+msgstr "Saldo osnova skupaj"
 
 #. module: account_tax_balance
 #. odoo-python
@@ -259,7 +259,7 @@ msgstr "Prikaži postavke osnov dobropisov"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
 msgid "View base regular lines"
-msgstr "Prikaži postavke običajnih osnov"
+msgstr "Prikaži postavke osnov računov"
 
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
@@ -274,7 +274,7 @@ msgstr "Prikaži postavke davka dobropisov"
 #. module: account_tax_balance
 #: model_terms:ir.ui.view,arch_db:account_tax_balance.view_tax_tree_balance
 msgid "View tax regular lines"
-msgstr "Prikaži postavke običajnih davkov"
+msgstr "Prikaži postavke davka računov"
 
 #. module: account_tax_balance
 #: model:ir.model,name:account_tax_balance.model_wizard_open_tax_balances

@@ -142,7 +142,7 @@
                                 />
                                 <b>min(s)</b>
                             </div>
-                            <field name="partner_id" />
+                            <field name="partner_id" context="{'show_address': 1}" />
                             <field name="partner_mobile" />
                             <field
                                 context="{'opportunity_id': opportunity_id}"
@@ -190,6 +190,9 @@
                 <field name="date" />
                 <field name="name" />
                 <field name="partner_id" />
+                <field name="partner_state" optional="hide" readonly="1" />
+                <field name="partner_zip" optional="hide" readonly="1" />
+                <field name="partner_city" optional="hide" readonly="1" />
                 <field column_invisible="1" name="partner_phone" />
                 <field column_invisible="1" name="partner_mobile" />
                 <field
@@ -239,6 +242,9 @@
             >
                 <field name="name" />
                 <field name="partner_id" />
+                <field name="partner_state" />
+                <field name="partner_zip" />
+                <field name="partner_city" />
             </calendar>
         </field>
     </record>
@@ -285,6 +291,22 @@
                 <separator />
                 <filter date="date" name="date" string="Date" />
                 <separator />
+                <filter
+                    domain="[('partner_city', '!=', False)]"
+                    name="has_city"
+                    string="City"
+                />
+                <filter
+                    domain="[('partner_state', '!=', False)]"
+                    name="has_state"
+                    string="State"
+                />
+                <filter
+                    domain="[('partner_zip', '!=', False)]"
+                    name="has_zip"
+                    string="ZIP"
+                />
+                <separator />
                 <field name="partner_id" operator="child_of" />
                 <field name="user_id" />
                 <field name="opportunity_id" />
@@ -321,6 +343,21 @@
                         help="Calls by status"
                         name="groupby_state"
                         string="State"
+                    />
+                    <filter
+                        context="{'group_by': 'partner_city'}"
+                        name="groupby_city"
+                        string="City"
+                    />
+                    <filter
+                        context="{'group_by': 'partner_state'}"
+                        name="groupby_state2"
+                        string="State"
+                    />
+                    <filter
+                        context="{'group_by': 'partner_zip'}"
+                        name="groupby_zip"
+                        string="ZIP"
                     />
                 </group>
             </search>

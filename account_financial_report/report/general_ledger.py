@@ -17,8 +17,10 @@ class GeneralLedgerReport(models.AbstractModel):
     _inherit = "report.account_financial_report.abstract_report"
 
     def _get_analytic_data(self, account_ids):
-        analytic_accounts = self.env["account.analytic.account"].search_fetch(
-            [("id", "in", account_ids)], ["name", "code"]
+        analytic_accounts = (
+            self.env["account.analytic.account"]
+            .with_context(active_test=False)
+            .search_fetch([("id", "in", account_ids)], ["name", "code"])
         )
         analytic_data = {}
         for account in analytic_accounts:

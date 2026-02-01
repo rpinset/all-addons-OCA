@@ -61,6 +61,9 @@ class CrmPhonecall(models.Model):
     )
     partner_phone = fields.Char(string="Phone")
     partner_mobile = fields.Char("Mobile")
+    partner_city = fields.Char(related="partner_id.city")
+    partner_zip = fields.Char(related="partner_id.zip")
+    partner_state = fields.Char(related="partner_id.state_id.name")
     priority = fields.Selection(
         selection=[("0", "Low"), ("1", "Normal"), ("2", "High")],
         default="1",

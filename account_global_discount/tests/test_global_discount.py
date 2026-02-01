@@ -172,6 +172,7 @@ class TestGlobalDiscount(AccountTestInvoicingCommon):
         # global discounts
         with Form(self.invoice) as invoice_form:
             invoice_form.partner_id = self.partner_2
+        invoice_tax_line = self.invoice.line_ids.filtered("tax_line_id")
         self.assertAlmostEqual(invoice_tax_line.tax_base_amount, 140.0)
         self.assertAlmostEqual(invoice_tax_line.balance, 21.0)
         self.assertAlmostEqual(self.invoice.amount_untaxed, 340.0)
