@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit c01083d71e3c74ce7cad85eb50cdee50868e5892
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:30:14 2025 +0000
+commit a6cd6c10273a96130e7d32eca58de785ed6de517
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 06:20:46 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Slovenian)
+    
+    Currently translated at 100.0% (11 of 11 strings)
+    
+    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_parent
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_parent/sl/
 
 
 ## account-budgeting
@@ -149,16 +154,16 @@ Date:   Thu Oct 3 06:45:43 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 4decb5993583b4bf87db7fbbedad35bf11329c1c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:58:33 2025 +0000
+commit a69e2ef96d98749f399a86d36dab07d6b9fba2ab
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:33:28 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 98.6% (216 of 219 strings)
     
-    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-product_harmonized_system_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-product_harmonized_system_delivery/it/
+    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-intrastat_product
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-intrastat_product/sl/
 
 
 ## mis-builder
@@ -419,16 +424,16 @@ Date:   Wed Jun 4 02:45:40 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 0b8e370e637751c6ee22787d3a6467badbf9aa6c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 5 18:59:02 2026 +0000
+commit f7de324d99f515d55921ef9b341b2d2fd8aa768a
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:58:10 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-partner_vat_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_vat_unique/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-partner_external_map
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_external_map/sl/
 
 
 ## sale-financial
@@ -1048,16 +1053,16 @@ Date:   Tue Sep 9 10:05:35 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2076c49580cb41d25402750fe5ff896f317454cf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:36 2025 +0000
+commit 3500e1e62862b23fdc001425b726f5abeb66f784
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:36:41 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (100 of 100 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-product_supplierinfo_for_customer_picking
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-product_supplierinfo_for_customer_picking/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_batch_extended/sl/
 
 
 ## stock-logistics-tracking
@@ -1131,16 +1136,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit dfb1ab75145e00db99c6b31cc237db684c5ddd9c
+commit 9f7f824111efa85012b26de78cc80d2fdfe90445
 Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Mon Nov 24 08:33:44 2025 +0000
+Date:   Sun Feb 1 07:54:03 2026 +0000
 
     Translated using Weblate (Slovenian)
     
-    Currently translated at 21.7% (10 of 46 strings)
+    Currently translated at 74.0% (117 of 158 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_subcontracting
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_subcontracting/sl/
+    Translation: manufacture-12.0/manufacture-12.0-quality_control
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control/sl/
 
 
 ## manufacture-reporting
@@ -1159,16 +1164,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit ec795eca125c2cf8fc732809541202a9d548afd4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:46:18 2025 +0000
+commit cb05377c337eeb1cfda5a0223a49aeb23f879604
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 06:20:50 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 75.0% (129 of 172 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity_type
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity_type/it/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity/sl/
 
 
 ## purchase-workflow
