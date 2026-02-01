@@ -153,6 +153,7 @@ python-stdnum
 requests
 requests_oauthlib
 unidecode
+xlsxwriter
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
 # generated from manifests external_dependencies
 chardet

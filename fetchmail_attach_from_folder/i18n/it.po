@@ -378,7 +378,7 @@ msgid "Match Algorithm"
 msgstr "Algoritmo di corrispondenza"
 
 #. module: fetchmail_attach_from_folder
-#: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually_mail__msgid
+#: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually_mail__message_uid
 msgid "Message id"
 msgstr "ID messaggio"
 
@@ -570,11 +570,11 @@ msgstr "Numero totale di insiemi di modifiche di questo record"
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server_folder__path
 msgid ""
-"The path to your mail folder. Typically would be something like 'INBOX."
-"myfolder'"
+"The path to your mail folder. Typically would be something like "
+"'INBOX.myfolder'"
 msgstr ""
-"Percorso alla cartella e-mail. Normalmente è qualcosa del tipo 'INBOX."
-"miacartella'"
+"Percorso alla cartella e-mail. Normalmente è qualcosa del tipo "
+"'INBOX.miacartella'"
 
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server_folder__archive_path

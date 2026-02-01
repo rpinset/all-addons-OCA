@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 11:14+0000\n"
 "PO-Revision-Date: 2024-05-29 16:35+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"Last-Translator: Rodrigo Macedo "
+"<sottomaiormacedotec@users.noreply.translation.odoo-community.org>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/OCA-server-"
 "tools-8-0/language/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -372,7 +372,7 @@ msgid "Match Algorithm"
 msgstr ""
 
 #. module: fetchmail_attach_from_folder
-#: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually_mail__msgid
+#: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually_mail__message_uid
 msgid "Message id"
 msgstr "Identificação da mensagem"
 
@@ -551,11 +551,11 @@ msgstr "O número total de conjuntos de alterações deste registro"
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server_folder__path
 msgid ""
-"The path to your mail folder. Typically would be something like 'INBOX."
-"myfolder'"
+"The path to your mail folder. Typically would be something like "
+"'INBOX.myfolder'"
 msgstr ""
-"O caminho para sua pasta de mail. Tipicamente seria alguma coisa como 'INBOX."
-"myfolder'"
+"O caminho para sua pasta de mail. Tipicamente seria alguma coisa como "
+"'INBOX.myfolder'"
 
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server_folder__archive_path
