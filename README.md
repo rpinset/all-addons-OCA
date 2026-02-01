@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 593cde3ac925728d526bc921f337a09cb5daac9f
-Author: Isabelle RICHARD <isabellerichard89@gmail.com>
-Date:   Fri Sep 5 10:09:54 2025 +0000
+commit 570a66a9a32e76f7f8db282d824e62d6536d68d0
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 06:20:42 2026 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: account-analytic-13.0/account-analytic-13.0-product_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-product_analytic/fr/
+    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_parent
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_parent/sl/
 
 
 ## account-budgeting
@@ -73,16 +73,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ceb5334d4e32c66a096f0b231afcd0d4ad5b49b4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 30 11:09:39 2025 +0000
+commit 52ead8361314620ea50ad230d176f4c5a05c9824
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:39:26 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 27.4% (73 of 266 strings)
+    Currently translated at 54.1% (144 of 266 strings)
     
     Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/sl/
 
 
 ## account-financial-reporting
@@ -437,16 +437,16 @@ Date:   Mon Sep 15 11:35:45 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 6ac52e17f3e70990cc177d1749c8b2827b66df86
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 5 18:59:14 2026 +0000
+commit b8c7c6dfc2c1ae8f91fb301f2a95ff54cf431223
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:58:19 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 50.0% (2 of 4 strings)
+    Currently translated at 52.0% (13 of 25 strings)
     
-    Translation: partner-contact-13.0/partner-contact-13.0-partner_vat_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-13-0/partner-contact-13-0-partner_vat_unique/it/
+    Translation: partner-contact-13.0/partner-contact-13.0-base_location_geonames_import
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-13-0/partner-contact-13-0-base_location_geonames_import/sl/
 
 
 ## sale-financial
@@ -1189,16 +1189,16 @@ Date:   Wed Jun 4 03:49:02 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 0bb658440bf0c5a775a8e1bfd05bfd324cc88e42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:44 2025 +0000
+commit 25fcbf00a2cb8a215b3e8472562a2e060e9ad171
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 08:36:24 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 94.0% (95 of 101 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-product_supplierinfo_for_customer_picking
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-product_supplierinfo_for_customer_picking/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_batch_extended/sl/
 
 
 ## stock-logistics-tracking
@@ -1267,16 +1267,16 @@ Date:   Wed Sep 3 06:46:34 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 9b1fbd72782258f8e05f5991ced65c6502133605
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:46 2025 +0000
+commit fa2c050fd852fa60c4ca77ef76f2a6480c5bee0e
+Author: Matjaz Mozetic <matjaz@luxim.si>
+Date:   Sun Feb 1 07:53:49 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Slovenian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 73.2% (115 of 157 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
+    Translation: manufacture-13.0/manufacture-13.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_oca/sl/
 
 
 ## manufacture-reporting
