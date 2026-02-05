@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-05 04:13+0000\n"
-"Last-Translator: Kaynnan Lemes <kaynnanx1@gmail.com>\n"
+"PO-Revision-Date: 2026-02-02 17:34+0000\n"
+"Last-Translator: felipemotter <felipkin@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_commission_oca
 #: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__quantity
@@ -570,7 +570,7 @@ msgstr "Assistente para liquidar comiss??es"
 #: code:addons/account_commission_oca/models/account_move.py:0
 #, python-format
 msgid "You can't cancel an invoice with settled lines"
-msgstr "Voc?? n??o pode cancelar uma fatura com linhas liquidadas"
+msgstr "Você não pode cancelar uma fatura com linhas de comissão liquidadas"
 
 #. module: account_commission_oca
 #. odoo-python

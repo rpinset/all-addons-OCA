@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-15 09:03+0000\n"
+"PO-Revision-Date: 2026-02-04 08:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_it_edi_extension
 #: model_terms:ir.ui.view,arch_db:l10n_it_edi_extension.view_account_config_settings_create_partner
@@ -593,6 +593,16 @@ msgstr "Numero riga"
 #. odoo-python
 #: code:addons/l10n_it_edi_extension/models/account_move.py:0
 msgid ""
+"Line with description %(line_description)s has been replaced by summary line "
+"because import detail level is tax."
+msgstr ""
+"La riga con descrizione %(line_description)s è stata sostituita dalla riga "
+"di riepilogo perché il livello di dettaglio dell'importazione è imposta."
+
+#. module: l10n_it_edi_extension
+#. odoo-python
+#: code:addons/l10n_it_edi_extension/models/account_move.py:0
+msgid ""
 "Line with description %(line_description)s has been skipped because import "
 "detail level is minimum."
 msgstr ""
@@ -1000,8 +1010,8 @@ msgstr "Aliquota fiscale"
 #. odoo-python
 #: code:addons/l10n_it_edi_extension/models/account_move.py:0
 msgid ""
-"Taxed amount (%(tax_amount)s}) does not match with e-invoice taxed amount "
-"(%(edi_tax_amount)s)"
+"Taxed amount (%(tax_amount)s}) does not match with e-invoice taxed amount (%"
+"(edi_tax_amount)s)"
 msgstr ""
 "L'importo tassato (%(tax_amount)s}) non corrisponde all'importo tassato "
 "della e-fattura (%(edi_tax_amount)s)"
@@ -1052,8 +1062,8 @@ msgstr "Prezzo totale"
 #. odoo-python
 #: code:addons/l10n_it_edi_extension/models/account_move.py:0
 msgid ""
-"Total amount (%(total_amount)s) does not match with e-invoice total amount "
-"(%(edi_total_amount)s)"
+"Total amount (%(total_amount)s) does not match with e-invoice total amount (%"
+"(edi_total_amount)s)"
 msgstr ""
 "L'importo totale (%(total_amount)s) non corrisponde all'importo totale della "
 "e-fattura (%(edi_total_amount)s)"
@@ -1086,9 +1096,9 @@ msgid ""
 "Untaxed amount (%(amount_untaxed)s}) minus rounding (%(rounding)s}) does not "
 "match with e-invoice untaxed amount %(edi_amount_untaxed)s)"
 msgstr ""
-"L'importo non tassato (%(amount_untaxed)s}) meno l'arrotondamento "
-"(%(rounding)s}) non corrisponde all'importo non tassato della e-fattura "
-"%(edi_amount_untaxed)s)"
+"L'importo non tassato (%(amount_untaxed)s}) meno l'arrotondamento (%"
+"(rounding)s}) non corrisponde all'importo non tassato della e-fattura %"
+"(edi_amount_untaxed)s)"
 
 #. module: l10n_it_edi_extension
 #: model:ir.model.fields,field_description:l10n_it_edi_extension.field_l10n_it_edi_line__tax_amount
