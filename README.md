@@ -359,16 +359,11 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7aa36ef7e4790d694376f7992b33079c3d316795
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Jan 11 14:46:08 2026 +0000
+commit 872f7edd81a7670187c842a70da71b14bdc8c9c0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 2 09:01:31 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 55.7% (58 of 104 strings)
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_rental
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_rental/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -423,9 +418,9 @@ Date:   Wed Jun 4 03:37:02 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit a00f24634a91a30fcde4223dd5d5ef2ea41cecb2
+commit 7d34780c368d0821161e12997a92d5ea73ae075d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 17 17:47:42 2025 +0000
+Date:   Mon Feb 2 12:39:46 2026 +0000
 
     [BOT] post-merge updates
 
@@ -584,9 +579,9 @@ Date:   Tue Oct 21 07:03:56 2025 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 9411fd863a20894d423a748ef3107b365ec8255b
+commit 31dbaf33180781bf077ec9c1fdd1eac9716e0116
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 7 19:13:31 2026 +0000
+Date:   Wed Feb 4 16:59:45 2026 +0000
 
     [BOT] post-merge updates
 
@@ -958,11 +953,16 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 51b348ea328d20bb6d903d76c7dad24016d3fd55
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 27 14:06:44 2026 +0000
+commit 5fa033be522ab4af1f8f3da0970215576a2fecd3
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 5 15:58:59 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod347
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod347/
 
 
 ## l10n-switzerland

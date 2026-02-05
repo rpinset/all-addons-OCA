@@ -1858,6 +1858,7 @@ addon | version | maintainers | summary
 [sale_missing_tracking](sale_missing_tracking/) | 15.0.1.0.2 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Tracking sale missing products
 [sale_missing_tracking_tier_validation](sale_missing_tracking_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Sale missing tracking exceptions to support a tier validation process.
 [sale_mrp_bom](sale_mrp_bom/) | 15.0.1.0.0 |  | Allows define a BOM in the sales lines.
+[sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 15.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
 [sale_order_archive](sale_order_archive/) | 15.0.1.0.1 |  | Archive Sale Orders
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 15.0.1.0.1 |  | Auto assign delivery carrier on sale order confirmation
 [sale_order_discount_invoicing](sale_order_discount_invoicing/) | 15.0.1.0.0 |  | Sale Discount Invoicing
@@ -2343,6 +2344,7 @@ addon | version | maintainers | summary
 [commission_formula](commission_formula/) | 15.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 15.0.1.0.1 |  | HR commissions
 [sale_commission](sale_commission/) | 15.0.2.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales commissions
+[sale_commission_product_criteria](sale_commission_product_criteria/) | 15.0.1.0.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Advanced commissions rules
 [sale_commission_salesman](sale_commission_salesman/) | 15.0.1.0.1 |  | Sales commissions from salesman
 
 [//]: # (end addons)
@@ -3234,6 +3236,7 @@ addon | version | maintainers | summary
 [hr_attendance_overtime_manual](hr_attendance_overtime_manual/) | 15.0.1.0.0 |  | Allows adding manual overtime records
 [hr_attendance_reason](hr_attendance_reason/) | 15.0.1.3.1 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 15.0.1.3.0 |  | Theoretical vs Attended Time Analysis
+[hr_attendance_rest_time_included](hr_attendance_rest_time_included/) | 15.0.1.0.0 |  | Rest time of employee's is included during their working hours
 [hr_attendance_rfid](hr_attendance_rfid/) | 15.0.1.0.3 |  | HR Attendance RFID
 
 [//]: # (end addons)
@@ -5160,7 +5163,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.2 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.14.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
