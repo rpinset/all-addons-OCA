@@ -237,7 +237,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 17.0.1.0.0 |  | Add a code field to the accounts tags
 [account_asset_force_account](account_asset_force_account/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | This module allows you to enforce specific accounts for assets, including depreciation and expense accounts, through asset profiles and forms.
-[account_asset_management](account_asset_management/) | 17.0.1.1.0 |  | Assets Management
+[account_asset_management](account_asset_management/) | 17.0.1.2.0 |  | Assets Management
 [account_asset_management_stock_lot](account_asset_management_stock_lot/) | 17.0.1.0.0 |  | Assets Management Stock Lot
 [account_chart_update](account_chart_update/) | 17.0.1.1.1 |  | Wizard to update a company's account chart from a template
 [account_chart_update_l10n_eu_oss](account_chart_update_l10n_eu_oss/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Account Chart update OSS
@@ -1790,6 +1790,7 @@ addon | version | maintainers | summary
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
 [sale_order_warn_message](sale_order_warn_message/) | 17.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
+[sale_packaging_default](sale_packaging_default/) | 17.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Simplify using products default packaging for sales
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_order_template](sale_partner_order_template/) | 17.0.1.0.0 |  | Order template in partner
@@ -1801,6 +1802,7 @@ addon | version | maintainers | summary
 [sale_product_multi_add](sale_product_multi_add/) | 17.0.1.0.1 |  | Sale Product Multi Add
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
 [sale_promotion_rule](sale_promotion_rule/) | 17.0.1.0.0 |  | Module to manage promotion rule on sale order
+[sale_purchase_procurement_group_by_line](sale_purchase_procurement_group_by_line/) | 17.0.1.0.0 |  | Glue module between 'MTO Sale <-> Purchase' and 'Sale Procurement Group by Line'
 [sale_quotation_number](sale_quotation_number/) | 17.0.1.1.2 |  | Different sequence for sale quotations
 [sale_readonly_security](sale_readonly_security/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Readonly Security
 [sale_resource_booking](sale_resource_booking/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
@@ -3259,7 +3261,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.1.4 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.1.5 |  | Intercompany invoice rules
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 17.0.1.0.0 |  | This module adds a wizard to create companies easily
 [base_multi_company](base_multi_company/) | 17.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 [crm_tag_multi_company](crm_tag_multi_company/) | 17.0.1.0.0 |  | This module add multi-company management to crm tag
@@ -4778,7 +4780,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> <a href='https://github.com/mcojocaru'><img src='https://github.com/mcojocaru.png' width='32' height='32' style='border-radius:50%;' alt='mcojocaru'/></a> <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.4.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Report (Fișă Magazie)
-[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.6.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - VAT on Payment
+[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - VAT on Payment
 
 [//]: # (end addons)
 
@@ -4930,7 +4932,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.10.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 17.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.5.0 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.6.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.9.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
@@ -4939,7 +4941,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.3 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.5.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.5.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
@@ -4948,7 +4950,7 @@ addon | version | maintainers | summary
 [l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.1 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_special_payment](l10n_es_facturae_special_payment/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Special Payment
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.1.2 |  | IGIC (Impuesto General Indirecto Canario)
 [l10n_es_igic_reav](l10n_es_igic_reav/) | 17.0.1.0.3 |  | Aplicación REAV en la localización canaria
@@ -4963,12 +4965,12 @@ addon | version | maintainers | summary
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 17.0.1.0.3 |  | Envío de pedidos del TPV al SII
 [l10n_es_reav](l10n_es_reav/) | 17.0.1.0.0 | <a href='https://github.com/Bilbonet'><img src='https://github.com/Bilbonet.png' width='32' height='32' style='border-radius:50%;' alt='Bilbonet'/></a> | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.0.3 |  | Libro de IVA
-[l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 17.0.1.0.1 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
+[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.1.0 |  | Libros registro del IVA y del IRPF
+[l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 17.0.1.0.2 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.2 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.4 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.2.0 |  | Prorrata de IVA para la localización española
 [l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.2.1 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 17.0.1.0.2 |  | Payment Acquirer: Redsys Implementation
 
@@ -6256,7 +6258,7 @@ addon | version | maintainers | summary
 [purchase_invoice_method](purchase_invoice_method/) | 17.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to purchases order, ability to manage future invoice plan
 [purchase_invoice_status_line](purchase_invoice_status_line/) | 17.0.1.0.1 | <a href='https://github.com/JoanSForgeFlow'><img src='https://github.com/JoanSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JoanSForgeFlow'/></a> | Add invoice status on purchase order lines
-[purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Purchase Product Last Price Info
+[purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.3 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Purchase Product Last Price Info
 [purchase_location_by_line](purchase_location_by_line/) | 17.0.1.0.1 |  | Allows to define a specific destination location on each PO line
 [purchase_lot](purchase_lot/) | 17.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Purchase Lot
 [purchase_manual_currency](purchase_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Purchase
@@ -6711,6 +6713,7 @@ addon | version | maintainers | summary
 [project_role](project_role/) | 17.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Project role-based roster
 [project_sequence](project_sequence/) | 17.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
 [project_status](project_status/) | 17.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Status
+[project_tag_hierarchy](project_tag_hierarchy/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
 [project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Adds extra options 'High' and 'Very High' on tasks
 [project_task_code](project_task_code/) | 17.0.1.0.0 |  | Sequential Code for Tasks
 [project_task_default_stage](project_task_default_stage/) | 17.0.1.0.1 |  | Recovery default task stages for projects from v8
@@ -7067,8 +7070,9 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_forward](mail_forward/) | 17.0.2.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
 [mail_gateway](mail_gateway/) | 17.0.1.0.6 |  | Base module for gateway communications
-[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.1.0 |  | Set a gateway for whatsapp
+[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.1.1 |  | Set a gateway for whatsapp
 [mail_history_mark_unread](mail_history_mark_unread/) | 17.0.1.0.0 |  | Add 'Mark as Unread' action to messages in History mailbox
+[mail_layout_force](mail_layout_force/) | 17.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
 [mail_no_user_assign_notification](mail_no_user_assign_notification/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail No user Assign Notification
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Apply a custom subject to mail notifications
@@ -8583,7 +8587,7 @@ addon | version | maintainers | summary
 [web_group_expand](web_group_expand/) | 17.0.1.0.0 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 17.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
 [web_m2x_options](web_m2x_options/) | 17.0.1.0.7 |  | web_m2x_options
-[web_m2x_options_manager](web_m2x_options_manager/) | 17.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
+[web_m2x_options_manager](web_m2x_options_manager/) | 17.0.1.0.1 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 17.0.1.1.0 |  | Send notification messages to user
 [web_pwa_customize](web_pwa_customize/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Web Pwa Customize
