@@ -14,8 +14,8 @@ msgstr ""
 "POT-Creation-Date: 2017-03-10 23:23+0000\n"
 "PO-Revision-Date: 2025-12-11 10:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
-"Language-Team: Italian (http://www.transifex.com/oca/"
-"OCA-account-financial-tools-8-0/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/oca/OCA-account-financial-"
+"tools-8-0/language/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,13 +35,18 @@ msgstr ""
 "Errore durante l'elaborazione del cespite '{ref}': {exception}"
 
 #. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__depreciation_count
+msgid "# of Depreciation Lines"
+msgstr "# di Righe Ammortamento"
+
+#. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_profile_view_form
 msgid ""
 "<span class=\"o_form_label oe_inline\" attrs=\"{'invisible':"
 "[('salvage_type','!=','percent')]}\">%</span>"
 msgstr ""
-"<span class=\"o_form_label oe_inline\" attrs=\""
-"{'invisible':[('salvage_type','!=','percent')]}\">%</span>"
+"<span class=\"o_form_label oe_inline\" attrs=\"{'invisible':"
+"[('salvage_type','!=','percent')]}\">%</span>"
 
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.view_move_form
@@ -132,6 +137,11 @@ msgid "Amount Already Depreciated"
 msgstr "Importo Ammortizzato"
 
 #. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__depreciation_value
+msgid "Amount of Depreciation Lines"
+msgstr "Importo delle Righe d'Ammortamento"
+
+#. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__analytic_distribution
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__analytic_distribution
 msgid "Analytic"
@@ -170,8 +180,10 @@ msgstr "Sei sicuro?"
 #. module: account_asset_management
 #: model:ir.model,name:account_asset_management.model_account_asset
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_line__asset_id
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__asset_id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_move_line__asset_id
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_form
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Asset"
 msgstr "Cespite"
 
@@ -232,6 +244,7 @@ msgstr "Nome cespite"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__profile_id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_move_line__asset_profile_id
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_profile_view_search
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Asset Profile"
 msgstr "Profilo cespite"
 
@@ -282,6 +295,7 @@ msgstr "Il nome del cespite deve essere impostato nell'etichetta della riga."
 
 #. module: account_asset_management
 #: model:ir.model,name:account_asset_management.model_account_asset_profile
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__asset_profile_id
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_profile_view_form
 msgid "Asset profile"
 msgstr "Profilo cespite"
@@ -303,6 +317,30 @@ msgstr "Ricalcola tabella del cespite"
 #: model:ir.ui.menu,name:account_asset_management.menu_finance_config_assets
 msgid "Assets"
 msgstr "Cespiti"
+
+#. module: account_asset_management
+#: model:ir.actions.act_window,name:account_asset_management.action_account_asset_report
+#: model:ir.model,name:account_asset_management.model_account_asset_report
+#: model_terms:ir.ui.view,arch_db:account_asset_management.action_account_asset_report_graph
+#: model_terms:ir.ui.view,arch_db:account_asset_management.action_account_asset_report_pivot
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Assets Analysis"
+msgstr "Analisi Immobilizzazioni"
+
+#. module: account_asset_management
+#: model:ir.ui.menu,name:account_asset_management.menu_action_account_asset_report
+msgid "Assets analysis"
+msgstr ""
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Assets in draft state"
+msgstr ""
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Assets in running state"
+msgstr ""
 
 #. module: account_asset_management
 #. odoo-python
@@ -393,12 +431,12 @@ msgid ""
 msgstr ""
 "Scegliere il metodo da utilizzare per calcolare le righe di ammortamento.\n"
 " * Lineare: calcolato sulla base di: base di ammortamento/numero di "
-"ammortamenti. Base di ammortamento = Valore di acquisto - Valore di recupero."
-"\n"
+"ammortamenti. Base di ammortamento = Valore di acquisto - Valore di "
+"recupero.\n"
 " * Limite lineare: lineare fino al valore di recupero. Base di ammortamento "
 "= Valore di acquisto.\n"
-" * Degressivo: Calcolato sulla base di: Valore Residuo * Fattore Degressivo."
-"\n"
+" * Degressivo: Calcolato sulla base di: Valore Residuo * Fattore "
+"Degressivo.\n"
 " * Degressivo-Lineare (solo per Metodo temporale = Anno): Degressivo diventa "
 "lineare quando l'ammortamento lineare annuale supera l'ammortamento "
 "degressivo annuale.\n"
@@ -423,7 +461,9 @@ msgstr "Codice"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__company_id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_recompute_trigger__company_id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_remove__company_id
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__company_id
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_account_asset_report__company_id
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Company"
 msgstr "Azienda"
 
@@ -547,8 +587,19 @@ msgstr "Creato il"
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_compute__date_end
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_line__line_date
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__date
 msgid "Date"
 msgstr "Data"
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Date of asset purchase"
+msgstr ""
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Date of depreciation"
+msgstr "Data di ammortamento"
 
 #. module: account_asset_management
 #: model:ir.model.fields,help:account_asset_management.field_account_asset_recompute_trigger__date_trigger
@@ -646,6 +697,11 @@ msgid "Depreciation Board"
 msgstr "Piano d'ammortamento"
 
 #. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__depreciation_date
+msgid "Depreciation Date"
+msgstr ""
+
+#. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_profile_view_form
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_form
 msgid "Depreciation Dates"
@@ -668,6 +724,11 @@ msgid "Depreciation Method"
 msgstr "Metodo ammortamento"
 
 #. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Depreciation Month"
+msgstr ""
+
+#. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_line__name
 msgid "Depreciation Name"
 msgstr "Nome ammortamento"
@@ -680,6 +741,7 @@ msgstr "Nome ammortamento"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__display_name
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_recompute_trigger__display_name
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_remove__display_name
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__display_name
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_account_asset_report__display_name
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_asset_move_reverse__display_name
 msgid "Display Name"
@@ -693,6 +755,7 @@ msgstr "Fatto"
 #. module: account_asset_management
 #: model:ir.model.fields.selection,name:account_asset_management.selection__account_asset__state__draft
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_search
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Draft"
 msgstr "Bozza"
 
@@ -775,6 +838,14 @@ msgid "Force accounting date"
 msgstr "Forza data contabile"
 
 #. module: account_asset_management
+#: model_terms:ir.actions.act_window,help:account_asset_management.action_account_asset_report
+msgid ""
+"From this report, you can have an overview on all depreciations. The\n"
+"            search bar can also be used to personalize your assets "
+"depreciation reporting."
+msgstr ""
+
+#. module: account_asset_management
 #. odoo-python
 #: code:addons/account_asset_management/wizard/account_asset_remove.py:0
 #, python-format
@@ -804,6 +875,16 @@ msgid "Generate Report"
 msgstr "Genera resoconto"
 
 #. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__gross_value
+msgid "Gross Amount"
+msgstr ""
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Group By"
+msgstr ""
+
+#. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__has_message
 msgid "Has Message"
 msgstr "Ha un messaggio"
@@ -826,6 +907,7 @@ msgstr "Cronologia"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_recompute_trigger__id
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_remove__id
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__id
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_account_asset_report__id
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_asset_move_reverse__id
 msgid "ID"
@@ -886,9 +968,9 @@ msgstr ""
 "ammortizzare negli anni, in base al numero di anni. Quindi l'importo annuo "
 "sarà la base di ammortamento/numero di anni.\n"
 " Se impostato, il sistema valuterà se l'anno corrente è un anno bisestile. "
-"L'importo da ammortizzare ogni anno sarà calcolato come base di ammortamento "
-"/ (data di fine ammortamento - data di inizio + 1) * giorni dell'anno "
-"corrente."
+"L'importo da ammortizzare ogni anno sarà calcolato come base di "
+"ammortamento / (data di fine ammortamento - data di inizio + 1) * giorni "
+"dell'anno corrente."
 
 #. module: account_asset_management
 #: model:ir.model.fields,help:account_asset_management.field_account_asset_profile__allow_reversal
@@ -989,6 +1071,7 @@ msgstr "Movimenti contabili"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile____last_update
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_recompute_trigger____last_update
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_remove____last_update
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report____last_update
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_account_asset_report____last_update
 #: model:ir.model.fields,field_description:account_asset_management.field_wiz_asset_move_reverse____last_update
 msgid "Last Modified on"
@@ -1118,6 +1201,11 @@ msgid "No"
 msgstr "No"
 
 #. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Not archived"
+msgstr ""
+
+#. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__note
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_compute__note
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__note
@@ -1197,6 +1285,7 @@ msgstr "Percorso padre"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__partner_id
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__partner_id
 msgid "Partner"
 msgstr "Partner"
 
@@ -1246,8 +1335,20 @@ msgstr "Conto di plusvalenza"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_line__move_check
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__move_check
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Posted"
 msgstr "Pubblicato"
+
+#. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__posted_value
+msgid "Posted Amount"
+msgstr "Importo Contabilizzato"
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Posted depreciation lines"
+msgstr "Righe di ammortamento emesse"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_line__previous_id
@@ -1267,6 +1368,11 @@ msgstr "Profilo"
 #, python-format
 msgid "Prorata Temporis"
 msgstr "Pro-rata temporis"
+
+#. module: account_asset_management
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
+msgid "Purchase Month"
+msgstr ""
 
 #. module: account_asset_management
 #. odoo-python
@@ -1402,6 +1508,7 @@ msgstr ""
 #. module: account_asset_management
 #: model:ir.model.fields.selection,name:account_asset_management.selection__account_asset__state__open
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_search
+#: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
 msgid "Running"
 msgstr "In esecuzione"
 
@@ -1472,6 +1579,7 @@ msgstr "Stato del cespite"
 #. odoo-python
 #: code:addons/account_asset_management/report/account_asset_report_xls.py:0
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__state
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__state
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_search
 #, python-format
 msgid "Status"
@@ -1645,6 +1753,11 @@ msgstr "Tipo di attività eccezione sul record."
 #, python-format
 msgid "Undetermined error"
 msgstr "Errore indefinito"
+
+#. module: account_asset_management
+#: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__unposted_value
+msgid "Unposted Amount"
+msgstr "Importi Non Pubblicati"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__use_leap_years
@@ -1882,12 +1995,6 @@ msgstr "o"
 #~ msgid "Account Entry"
 #~ msgstr "Registrazione Contabile"
 
-#~ msgid "# of Depreciation Lines"
-#~ msgstr "# di Righe Ammortamento"
-
-#~ msgid "Amount of Depreciation Lines"
-#~ msgstr "Importo delle Righe d'Ammortamento"
-
 #~ msgid "Asset Category"
 #~ msgstr "Categoria Immobilizzazione"
 
@@ -1906,9 +2013,6 @@ msgstr "o"
 #~ msgid "Asset history"
 #~ msgstr "Storico immobilizzazione"
 
-#~ msgid "Assets Analysis"
-#~ msgstr "Analisi Immobilizzazioni"
-
 #~ msgid "Change Duration"
 #~ msgstr "Modifica Durata"
 
@@ -1918,9 +2022,6 @@ msgstr "o"
 #~ msgstr ""
 #~ "Selezionare il periodo per il quale saranno create automaticamente le "
 #~ "righe d'ammortamento delle immobilizzazioni attive."
-
-#~ msgid "Date of depreciation"
-#~ msgstr "Data di ammortamento"
 
 #~ msgid "Ending date"
 #~ msgstr "Data finale"
@@ -1939,15 +2040,6 @@ msgstr "o"
 
 #~ msgid "Period"
 #~ msgstr "Periodo"
-
-#~ msgid "Posted Amount"
-#~ msgstr "Importo Contabilizzato"
-
-#~ msgid "Posted depreciation lines"
-#~ msgstr "Righe di ammortamento emesse"
-
-#~ msgid "Unposted Amount"
-#~ msgstr "Importi Non Pubblicati"
 
 #~ msgid "User"
 #~ msgstr "Utente"

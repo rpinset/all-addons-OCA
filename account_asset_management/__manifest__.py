@@ -5,7 +5,7 @@
 
 {
     "name": "Assets Management",
-    "version": "16.0.1.2.8",
+    "version": "16.0.1.3.0",
     "license": "AGPL-3",
     "depends": ["account", "report_xlsx_helper"],
     "excludes": ["account_asset"],
@@ -29,5 +29,6 @@
         "data/cron.xml",
         "wizard/wiz_account_asset_report.xml",
         "wizard/wiz_asset_move_reverse.xml",
+        "report/account_asset_report_views.xml",
     ],
 }

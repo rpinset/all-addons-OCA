@@ -1,6 +1,6 @@
 {
     "name": "PMS partner identification",
-    "version": "16.0.2.1.0",
+    "version": "16.0.2.3.0",
     "summary": "Add identification models in pms",
     "development_status": "Beta",
     "category": "Generic Modules/Property Management System",
@@ -8,6 +8,7 @@
     "author": "Commit [Sun], Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "depends": [
+        "base_vat",
         "pms",
         "partner_identification",
     ],
