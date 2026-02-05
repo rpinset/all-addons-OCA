@@ -52,16 +52,16 @@ Date:   Fri Jun 13 15:25:21 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 31fadd4491f8ac90eb895cab104d1048ff90da44
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:44:33 2026 +0000
+commit c8d063020e08138536f45e39d6294fc478455fcf
+Author: matthieusaison <matthieu.saison@akretion.com.br>
+Date:   Mon Feb 2 10:38:44 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (French)
     
-    Currently translated at 82.4% (113 of 137 strings)
+    Currently translated at 4.5% (1 of 22 strings)
     
-    Translation: account-closing-14.0/account-closing-14.0-account_cutoff_base
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_cutoff_base/sl/
+    Translation: account-closing-14.0/account-closing-14.0-account_cutoff_accrual_picking
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_cutoff_accrual_picking/fr/
 
 
 ## account-consolidation
@@ -1039,11 +1039,14 @@ Date:   Fri Jan 23 22:32:59 2026 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit f7f7a4b2728b5348b8dd41e4324de4b80481e994
+commit e40374e0cc4e43649c3ccda7240b94b23fb9e986
+Merge: f7f7a4b2 f5b7db63
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:11:30 2025 +0000
+Date:   Mon Feb 2 13:18:16 2026 +0000
 
-    [UPD] addons table in README.md
+    Merge PR #776 into 14.0
+    
+    Signed-off-by ecino
 
 
 ## l10n-taiwan
@@ -1236,16 +1239,16 @@ Date:   Mon Oct 13 07:20:52 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 409fdf330ff69087643a1c179d4098e7b11d8743
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:53:59 2026 +0000
+commit 8357a8571bdef9d5f715be0b8f8c2c42db95cd14
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Feb 4 16:29:10 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 72.0% (116 of 161 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: manufacture-14.0/manufacture-14.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-quality_control_oca/sl/
+    Translation: manufacture-14.0/manufacture-14.0-mrp_production_filter_lot
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_production_filter_lot/it/
 
 
 ## manufacture-reporting
@@ -1264,16 +1267,16 @@ Date:   Fri Jun 13 15:06:10 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 4c2293db7f93affd3437bba458d1c64200e78092
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:46:24 2025 +0000
+commit aff06d4c114cb92cd961e205baeedd55c97cfd35
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Feb 3 18:41:00 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: management-system-14.0/management-system-14.0-mgmtsystem_nonconformity_type
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_nonconformity_type/it/
+    Translation: management-system-14.0/management-system-14.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_nonconformity/
 
 
 ## pms
@@ -1365,11 +1368,16 @@ Date:   Sun Feb 2 20:17:19 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit c76e254401fc02ca640cf8b131396e6f234703f3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 6 08:55:58 2026 +0000
+commit 68a61755945ddd59a35a3a94082483b5d1e0d632
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Tue Feb 3 09:19:01 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 97.4% (75 of 77 strings)
+    
+    Translation: project-14.0/project-14.0-project_timesheet_time_control
+    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_timesheet_time_control/tr/
 
 
 ## project-agile
@@ -1745,11 +1753,16 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 9592a514f2f7d396326580ac0ec36ca0e1a5eeb4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 12 10:24:33 2026 +0000
+commit c998757c0c5fbc3929a4517efea142d390ed5037
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Tue Feb 3 09:26:11 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 94.1% (16 of 17 strings)
+    
+    Translation: web-14.0/web-14.0-web_ir_actions_act_view_reload
+    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_ir_actions_act_view_reload/tr/
 
 
 ## website

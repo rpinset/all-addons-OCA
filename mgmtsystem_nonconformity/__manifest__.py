@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Management System - Nonconformity",
-    "version": "14.0.2.1.0",
+    "version": "14.0.2.2.0",
     "author": "Savoir-faire Linux, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/management-system",
     "license": "AGPL-3",
@@ -17,6 +17,7 @@
         "views/mgmtsystem_severity.xml",
         "views/mgmtsystem_action.xml",
         "views/mgmtsystem_nonconformity_stage.xml",
+        "views/report_mgmtsystem_nonconformity.xml",
         "data/sequence.xml",
         "data/mgmtsystem_nonconformity_severity.xml",
         "data/mgmtsystem_nonconformity_origin.xml",

@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_ir_actions_act_multi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-02-03 09:23+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__help
+msgid "Action Description"
+msgstr "Eylem Tanımı"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_actions_act_multi
+msgid "Action Mulit"
+msgstr "Çoklu Eylem"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__type
+msgid "Action Type"
+msgstr "Eylem Tipi"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__binding_model_id
+msgid "Binding Model"
+msgstr "Bağlayıcı Model"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__binding_type
+msgid "Binding Type"
+msgstr "Bağlama Tipi"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__binding_view_types
+msgid "Binding View Types"
+msgstr "Bağlayıcı Görünüm Türleri"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__create_date
+msgid "Created on"
+msgstr "Oluşturuldu"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__xml_id
+msgid "External ID"
+msgstr "Harici ID"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_fields
+msgid "Fields"
+msgstr "Alanlar"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields__id
+msgid "ID"
+msgstr ""
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields____last_update
+msgid "Last Modified on"
+msgstr "Son Düzenleme"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_data
+msgid "Model Data"
+msgstr "Model Verileri"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model
+msgid "Models"
+msgstr "Modeller"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__name
+msgid "Name"
+msgstr "İsim"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__help
+msgid ""
+"Optional help text for the users with a description of the target view, such"
+" as its usage and purpose."
+msgstr ""
+"Kullanıcılar için, kullanımı ve amacı gibi hedef görünümün açıklamasını "
+"içeren isteğe bağlı yardım metni."
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model.fields,help:web_ir_actions_act_multi.field_ir_actions_act_multi__binding_model_id
+msgid ""
+"Setting a value makes this action available in the sidebar for the given "
+"model."
+msgstr ""
+"Bir değer ayarlamak, bu eylemi verilen model için kenar çubuğunda "
+"kullanılabilir hale getirir."
