@@ -1076,16 +1076,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit e3fae1a0fbb47de142a0ab0b5d78495bd79996ad
+commit 5aa3314189e66131c6460fcf4fe99ab1f379b55e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 2 11:31:40 2025 +0000
+Date:   Wed Feb 4 08:05:46 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (49 of 49 strings)
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_move_location
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_move_location/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-sale_stock_info_popup
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-sale_stock_info_popup/it/
 
 
 ## stock-logistics-reporting
