@@ -204,16 +204,16 @@ Date:   Sun Feb 2 18:33:51 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 95f720ae3f565923cc2b348395f9424c6bc876bb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 30 12:13:47 2025 +0000
+commit 2be7966a62f71807b8ae3ceaf73d8f3dfabba9c1
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Feb 6 13:12:01 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (178 of 178 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-payment-14.0/bank-payment-14.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_banking_pain_base/it/
+    Translation: bank-payment-14.0/bank-payment-14.0-account_banking_sepa_credit_transfer
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_banking_sepa_credit_transfer/
 
 
 ## account-reconcile
@@ -1146,16 +1146,11 @@ Date:   Wed Oct 15 09:12:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2f92d95028c2f857cc251dc83a04b57bba4ef4c7
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 08:48:08 2026 +0000
+commit 93bc50518a2a5f23dbd36fc566e60ea9a16608a5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 9 13:21:53 2026 +0000
 
-    Translated using Weblate (Slovenian)
-    
-    Currently translated at 100.0% (135 of 135 strings)
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_batch_extended/sl/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking

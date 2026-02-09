@@ -23,8 +23,8 @@ msgid ""
 "Bank account is missing on the bank payment line of partner '%s' (reference "
 "'%s')."
 msgstr ""
-"Falta la cuenta bancaria en la línea de pago bancaria del socio "
-"'%s' (referencia '%s')."
+"Falta la cuenta bancaria en la línea de pago bancaria del socio '%s' "
+"(referencia '%s')."
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields,field_description:account_banking_sepa_credit_transfer.field_account_payment_line__display_name
@@ -96,8 +96,8 @@ msgstr "pain.001.001.02"
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (recomendada para transferencia de crédito)"
+msgid "pain.001.001.03"
+msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_04
@@ -110,9 +110,17 @@ msgid "pain.001.001.05"
 msgstr "pain.001.001.05"
 
 #. module: account_banking_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (recommended for credit transfer)"
+msgstr ""
+
+#. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_003_03
 msgid "pain.001.003.03"
 msgstr "pain.001.003.03"
+
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (recomendada para transferencia de crédito)"
 
 #~ msgid "pain.001.003.03 (credit transfer in Germany)"
 #~ msgstr "pain.001.003.03 (transferencia de crédito en Alemania)"

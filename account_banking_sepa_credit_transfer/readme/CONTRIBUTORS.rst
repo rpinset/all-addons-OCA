@@ -17,3 +17,6 @@
 * `Sygel Technology <https://www.sygel.es>`_:
 
   * Valentin Vinagre <valentin.vinagre@sygel.es>
+* `Therp BV <https://www.therp.nl>`_:
+  
+  * Nikos Tsirintanis <ntsirintanis@therp.nl>

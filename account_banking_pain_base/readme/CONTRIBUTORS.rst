@@ -13,3 +13,7 @@
 
   * Pedro M. Baeza
   * Carlos Roca
+
+* `Therp BV <https://www.therp.nl>`_:
+  
+  * Nikos Tsirintanis <ntsirintanis@therp.nl>

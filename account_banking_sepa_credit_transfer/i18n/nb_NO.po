@@ -98,7 +98,7 @@ msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
+msgid "pain.001.001.03"
 msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
@@ -109,6 +109,11 @@ msgstr ""
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_05
 msgid "pain.001.001.05"
+msgstr ""
+
+#. module: account_banking_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (recommended for credit transfer)"
 msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
