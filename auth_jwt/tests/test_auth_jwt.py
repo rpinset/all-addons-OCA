@@ -15,6 +15,7 @@ from odoo.tools.misc import DotDict
 
 from ..exceptions import (
     AmbiguousJwtValidator,
+    ConfigurationError,
     JwtValidatorNotFound,
     UnauthorizedCompositeJwtError,
     UnauthorizedInvalidToken,
@@ -399,3 +400,16 @@ class TestAuthMethod(TransactionCase):
         with self._mock_request(authorization=authorization) as request:
             self.env["ir.http"]._auth_method_public_or_jwt_validator()
             assert request.jwt_payload["aud"] == "me"
+
+    def test_jwt_cookie_secret(self):
+        validator = self._create_validator("validator")
+        database_secret = self.env["ir.config_parameter"].get_param("database.secret")
+        self.assertEqual(database_secret, validator._get_jwt_cookie_secret())
+        database_secret_param = self.env["ir.config_parameter"].search(
+            [("key", "=", "database.secret")]
+        )
+        database_secret_param.write({"value": ""})
+        with self.assertRaises(ConfigurationError):
+            validator._get_jwt_cookie_secret()
+        validator.cookie_secret = "cookie-secret"
+        self.assertEqual(validator.cookie_secret, validator._get_jwt_cookie_secret())

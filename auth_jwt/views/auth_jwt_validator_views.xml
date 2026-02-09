@@ -68,6 +68,10 @@
                                 name="cookie_max_age"
                                 attrs="{'invisible': [('cookie_enabled', '=', False)]}"
                             />
+                            <field
+                                name="cookie_secret"
+                                attrs="{'invisible': [('cookie_enabled', '=', False)]}"
+                            />
                         </group>
                     </group>
                 </sheet>

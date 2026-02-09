@@ -102,16 +102,11 @@ Date:   Mon Nov 17 07:28:27 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 4e1512119aa5fec1b9e660453289b2be51f3fadb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 26 10:51:18 2026 +0000
+commit cc7f750894567c28c4d6520e74fadc9d1956f5ca
+Author: Jonathan Pasquier <jpasquier@fundesplai.org>
+Date:   Fri Feb 6 16:06:58 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: account-invoicing-16.0/account-invoicing-16.0-account_move_original_partner
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-16-0/account-invoicing-16-0-account_move_original_partner/it/
+    Added translation using Weblate (Catalán (ca_ES) (ca_ES))
 
 
 ## account-fiscal-rule
@@ -504,11 +499,16 @@ Date:   Fri Nov 28 08:30:15 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 2ba691b264b7ad028fa2e410686e3733ac66db3e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 28 10:45:32 2026 +0000
+commit d004bf80be75b992bed6ba2d8d4a2a42ee50c9fa
+Author: Jonathan Pasquier <jpasquier@fundesplai.org>
+Date:   Fri Feb 6 06:56:54 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (144 of 144 strings)
+    
+    Translation: edi-16.0/edi-16.0-account_invoice_import_simple_pdf
+    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-account_invoice_import_simple_pdf/ca/
 
 
 ## field-service
@@ -980,11 +980,16 @@ Date:   Sun Feb 2 19:41:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e0dc8657a2c0be68cac93f69a7266ae50787a8cb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 5 09:33:30 2026 +0000
+commit a19a167469639e3683cb5f65fad9a78bff19e18d
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Feb 9 15:25:19 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 98.2% (166 of 169 strings)
+    
+    Translation: l10n-spain-16.0/l10n-spain-16.0-l10n_es_vat_book
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_vat_book/es/
 
 
 ## l10n-switzerland
@@ -1184,16 +1189,16 @@ Date:   Wed Jan 28 16:00:10 2026 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 96dddab263525fbed8a727303a6edfaddba6660e
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 05:56:52 2026 +0000
+commit 8dff92766b145f56ced8cf3ad20a73de54370915
+Author: Lois Rilo <lois.rilo@forgeflow.com>
+Date:   Mon Feb 9 15:12:27 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Galician)
     
-    Currently translated at 66.2% (114 of 172 strings)
+    Currently translated at 27.3% (47 of 172 strings)
     
     Translation: manufacture-16.0/manufacture-16.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-16-0/manufacture-16-0-quality_control_oca/sl/
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-16-0/manufacture-16-0-quality_control_oca/gl/
 
 
 ## manufacture-reporting
@@ -1221,23 +1226,18 @@ Date:   Wed Feb 4 05:33:22 2026 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 601ba48bf6be9e0135021b05d75fea3dcc3b3015
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 4 08:05:56 2026 +0000
+commit dfd1173293aa5a67afec06762c1544d69ce0d8d4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 9 08:47:29 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 59.5% (1152 of 1933 strings)
-    
-    Translation: pms-16.0/pms-16.0-pms
-    Translate-URL: https://translation.odoo-community.org/projects/pms-16-0/pms-16-0-pms/it/
+    [BOT] post-merge updates
 
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 0e33ee2234303cfb8dd6f40afb08720572dfbed7
+commit 08ddce8e3e192d2df83e85aa5c606a43e12eda12
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 31 09:45:24 2026 +0000
+Date:   Sun Feb 8 14:22:12 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1258,11 +1258,14 @@ Date:   Wed Dec 10 09:35:26 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit bae107ae726ded67edf4a72fe56efa7a3c7469be
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 24 14:20:18 2026 +0000
+commit 198468b826785ab7b0d995b771bcd38db30d4ac0
+Merge: bae107ae7 367502941
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Feb 6 16:24:12 2026 +0100
 
-    [BOT] post-merge updates
+    Merge pull request #2205 from AmetrasIntelligence/16.0_fix_product_packaging_level_migration
+    
+    [16.0][OU-FIX] product_packaging_level: Fixed migration script for Migration 16.0
 
 
 ## product-kitting
@@ -1469,11 +1472,16 @@ Date:   Wed Feb 4 15:45:19 2026 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 6286d730b609aa3a1a691fec42e93b4e21f440a8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Nov 8 15:52:16 2025 +0000
+commit e6f61110265807d0469b0c4ee5cb63eac5c898e5
+Author: Weblate <noreply@weblate.org>
+Date:   Sun Feb 8 19:24:22 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: server-auth-16.0/server-auth-16.0-auth_jwt
+    Translate-URL: https://translation.odoo-community.org/projects/server-auth-16-0/server-auth-16-0-auth_jwt/
 
 
 ## server-env

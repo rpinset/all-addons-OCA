@@ -79,6 +79,11 @@ msgid "Cookie Path"
 msgstr "Path cookie"
 
 #. module: auth_jwt
+#: model:ir.model.fields,field_description:auth_jwt.field_auth_jwt_validator__cookie_secret
+msgid "Cookie Secret"
+msgstr ""
+
+#. module: auth_jwt
 #: model:ir.model.fields,field_description:auth_jwt.field_auth_jwt_validator__cookie_secure
 msgid "Cookie Secure"
 msgstr "Cookie secure"

@@ -97,6 +97,7 @@ class AuthJwtValidator(models.Model):
     cookie_secure = fields.Boolean(
         default=True, help="Set to false only for development without https."
     )
+    cookie_secret = fields.Char()
 
     _sql_constraints = [
         ("name_uniq", "unique(name)", "JWT validator names must be unique !"),
@@ -292,10 +293,12 @@ class AuthJwtValidator(models.Model):
         return super().unlink()
 
     def _get_jwt_cookie_secret(self):
-        secret = self.env["ir.config_parameter"].sudo().get_param("database.secret")
+        secret = self.cookie_secret
         if not secret:
-            _logger.error("database.secret system parameter is not set.")
-            raise ConfigurationError()
+            secret = self.env["ir.config_parameter"].sudo().get_param("database.secret")
+            if not secret:
+                _logger.error("database.secret system parameter is not set.")
+                raise ConfigurationError()
         return secret
 
     @api.model
