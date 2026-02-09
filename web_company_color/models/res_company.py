@@ -5,6 +5,8 @@ from colorsys import hls_to_rgb, rgb_to_hls
 
 from odoo import api, fields, models
 
+from odoo.addons.base.models.assetsbundle import ScssStylesheetAsset
+
 from ..utils import convert_to_image, image_to_rgb, n_rgb_to_hex
 
 URL_BASE = "/web_company_color/static/src/scss/"
@@ -14,7 +16,8 @@ URL_SCSS_GEN_TEMPLATE = URL_BASE + "custom_colors.%d.gen.scss"
 class ResCompany(models.Model):
     _inherit = "res.company"
 
-    SCSS_TEMPLATE = """
+    def _get_scss_template(self):
+        return """
         .o_main_navbar {
           background: %(color_navbar_bg)s !important;
           background-color: %(color_navbar_bg)s !important;
@@ -231,7 +234,7 @@ class ResCompany(models.Model):
         # ir.attachment need files with content to work
         if not self.company_colors:
             return "// No Web Company Color SCSS Content\n"
-        return self.SCSS_TEMPLATE % self._scss_get_sanitized_values()
+        return self._get_scss_template() % self._scss_get_sanitized_values()
 
     def scss_get_url(self):
         self.ensure_one()
@@ -240,8 +243,12 @@ class ResCompany(models.Model):
     def scss_create_or_update_attachment(self):
         IrAttachmentObj = self.env["ir.attachment"]
         for record in self:
-            datas = base64.b64encode(record._scss_generate_content().encode("utf-8"))
             custom_url = record.scss_get_url()
+            SCSS_asset = ScssStylesheetAsset(
+                "web_company_color.company_color_assets", url=custom_url
+            )
+            compiled_CSS = SCSS_asset.compile(record._scss_generate_content())
+            datas = base64.b64encode(compiled_CSS.encode("utf-8"))
             custom_attachment = IrAttachmentObj.sudo().search(
                 [("url", "=", custom_url), ("company_id", "=", record.id)]
             )
