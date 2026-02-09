@@ -6,6 +6,7 @@ import time
 from datetime import date
 
 from odoo import fields
+from odoo.fields import Command
 from odoo.tests import tagged
 from odoo.tests.common import Form
 
@@ -47,18 +48,8 @@ class TestVATReport(AccountTestInvoicingCommon):
         return rslt
 
     @classmethod
-    def setUpClass(cls, chart_template_ref=None):
-        super().setUpClass(chart_template_ref=chart_template_ref)
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
+    def setUpClass(cls):
+        super().setUpClass()
         cls.date_from = time.strftime("%Y-%m-01")
         cls.date_to = time.strftime("%Y-%m-28")
         cls.company = cls.env.user.company_id
@@ -114,10 +105,8 @@ class TestVATReport(AccountTestInvoicingCommon):
                 "company_id": cls.company.id,
                 "tax_group_id": cls.tax_group_10.id,
                 "invoice_repartition_line_ids": [
-                    (0, 0, {"factor_percent": 100, "repartition_type": "base"}),
-                    (
-                        0,
-                        0,
+                    Command.create({"factor_percent": 100, "repartition_type": "base"}),
+                    Command.create(
                         {
                             "factor_percent": 100,
                             "repartition_type": "tax",
@@ -127,10 +116,8 @@ class TestVATReport(AccountTestInvoicingCommon):
                     ),
                 ],
                 "refund_repartition_line_ids": [
-                    (0, 0, {"factor_percent": 100, "repartition_type": "base"}),
-                    (
-                        0,
-                        0,
+                    Command.create({"factor_percent": 100, "repartition_type": "base"}),
+                    Command.create(
                         {
                             "factor_percent": 100,
                             "repartition_type": "tax",
@@ -151,10 +138,8 @@ class TestVATReport(AccountTestInvoicingCommon):
                 "cash_basis_transition_account_id": cls.tax_account.id,
                 "tax_group_id": cls.tax_group_20.id,
                 "invoice_repartition_line_ids": [
-                    (0, 0, {"factor_percent": 100, "repartition_type": "base"}),
-                    (
-                        0,
-                        0,
+                    Command.create({"factor_percent": 100, "repartition_type": "base"}),
+                    Command.create(
                         {
                             "factor_percent": 100,
                             "repartition_type": "tax",
@@ -164,10 +149,8 @@ class TestVATReport(AccountTestInvoicingCommon):
                     ),
                 ],
                 "refund_repartition_line_ids": [
-                    (0, 0, {"factor_percent": 100, "repartition_type": "base"}),
-                    (
-                        0,
-                        0,
+                    Command.create({"factor_percent": 100, "repartition_type": "base"}),
+                    Command.create(
                         {
                             "factor_percent": 100,
                             "repartition_type": "tax",

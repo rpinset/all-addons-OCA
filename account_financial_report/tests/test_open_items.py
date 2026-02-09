@@ -5,6 +5,7 @@
 
 from odoo.fields import Date
 from odoo.tests import tagged
+from odoo.tools import mute_logger
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -14,16 +15,6 @@ class TestOpenItems(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls, chart_template_ref=None):
         super().setUpClass(chart_template_ref=chart_template_ref)
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
         cls.account001 = cls.env["account.account"].create(
             {
                 "code": "001",
@@ -33,6 +24,7 @@ class TestOpenItems(AccountTestInvoicingCommon):
             }
         )
 
+    @mute_logger("odoo.models.unlink")
     def test_partner_filter(self):
         partner_1 = self.env.ref("base.res_partner_1")
         partner_2 = self.env.ref("base.res_partner_2")

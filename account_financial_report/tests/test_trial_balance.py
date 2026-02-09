@@ -3,6 +3,7 @@
 # Copyright 2020 ForgeFlow S.L. (https://www.forgeflow.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from odoo.fields import Command
 from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
@@ -11,18 +12,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestTrialBalanceReport(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls, chart_template_ref=None):
-        super().setUpClass(chart_template_ref=chart_template_ref)
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
+    def setUpClass(cls):
+        super().setUpClass()
         # Remove previous account groups and related invoices to avoid conflicts
         group_obj = cls.env["account.group"]
         cls.group1 = group_obj.create({"code_prefix_start": "1", "name": "Group 1"})
@@ -120,9 +111,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": date,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": receivable_debit,
                         "credit": receivable_credit,
@@ -130,9 +119,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                         "account_id": self.account100.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": income_debit,
                         "credit": income_credit,
@@ -140,9 +127,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                         "account_id": self.account200.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": unaffected_debit,
                         "credit": unaffected_credit,
@@ -150,9 +135,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                         "account_id": self.account110.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": receivable_debit,
                         "credit": receivable_credit,
@@ -160,9 +143,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                         "account_id": self.account300.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": receivable_credit,
                         "credit": receivable_debit,
@@ -520,14 +501,10 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": self.previous_fy_date_end,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 0.0, "credit": 1000.0, "account_id": self.account300.id},
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 1000.0, "credit": 0.0, "account_id": self.account100.id},
                 ),
             ],
@@ -574,14 +551,10 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": self.date_start,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 0.0, "credit": 1000.0, "account_id": self.account300.id},
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 1000.0, "credit": 0.0, "account_id": self.account100.id},
                 ),
             ],
@@ -628,14 +601,10 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": self.date_start,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 0.0, "credit": 1000.0, "account_id": self.account110.id},
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {"debit": 1000.0, "credit": 0.0, "account_id": self.account100.id},
                 ),
             ],

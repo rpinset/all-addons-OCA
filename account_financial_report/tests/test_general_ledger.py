@@ -6,8 +6,9 @@
 import time
 from datetime import date
 
-from odoo import api, fields
+from odoo import Command, api, fields
 from odoo.tests import tagged
+from odoo.tools import mute_logger
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -15,18 +16,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestGeneralLedgerReport(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls, chart_template_ref=None):
-        super().setUpClass(chart_template_ref=chart_template_ref)
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
+    def setUpClass(cls):
+        super().setUpClass()
         cls.before_previous_fy_year = fields.Date.from_string("2014-05-05")
         cls.previous_fy_date_start = fields.Date.from_string("2015-01-01")
         cls.previous_fy_date_end = fields.Date.from_string("2015-12-31")
@@ -66,9 +57,7 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": date,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": receivable_debit,
                         "credit": receivable_credit,
@@ -76,9 +65,7 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
                         "partner_id": partner.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": income_debit,
                         "credit": income_credit,
@@ -86,9 +73,7 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
                         "partner_id": partner.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "debit": unaffected_debit,
                         "credit": unaffected_credit,
@@ -687,6 +672,7 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
         self.assertEqual(unaffected_fin_balance["credit"], 1000)
         self.assertEqual(unaffected_fin_balance["balance"], 500)
 
+    @mute_logger("odoo.models.unlink")
     def test_partner_filter(self):
         partner_1 = self.env.ref("base.res_partner_1")
         partner_2 = self.env.ref("base.res_partner_2")

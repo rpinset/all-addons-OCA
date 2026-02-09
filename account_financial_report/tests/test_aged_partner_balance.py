@@ -1,25 +1,18 @@
 #  Copyright 2021 Simone Rubino - Agile Business Group
 #  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tests import TransactionCase, tagged
+from odoo import Command
+from odoo.tests import tagged
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT, test_reports
+
+from odoo.addons.base.tests.common import BaseCommon
 
 
 @tagged("post_install", "-at_install")
-class TestAgedPartnerBalance(TransactionCase):
+class TestAgedPartnerBalance(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
         cls.wizard_model = cls.env["aged.partner.balance.report.wizard"]
         # Check that report is produced correctly
         cls.wizard_with_line_details = cls.wizard_model.create(
@@ -40,9 +33,7 @@ class TestAgedPartnerBalance(TransactionCase):
             {
                 "name": "Intervals configuration",
                 "line_ids": [
-                    (
-                        0,
-                        0,
+                    Command.create(
                         {
                             "name": "1-30",
                             "inferior_limit": 30,

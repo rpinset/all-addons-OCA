@@ -55,16 +55,11 @@ Date:   Wed Feb 4 12:58:41 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 013c9c28535aca1a5623d67f3dedb0514f98522a
-Author: Valaeys Stéphane <svalaeys@fiefmanage.ch>
-Date:   Wed Jan 21 16:27:44 2026 +0000
+commit e9443f2a779357ffe43c023fcd09fdff8a9c8c0a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 7 10:48:06 2026 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (110 of 110 strings)
-    
-    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-partner_statement/fr/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -337,16 +332,11 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 780e92f8c0bf2512abafb6dc150111c775b0b236
-Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
-Date:   Thu Feb 5 11:22:48 2026 +0000
+commit 2f911644a7ac63c3606d1cd0389f55bc7062870d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 6 13:28:47 2026 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (17 of 17 strings)
-    
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_discount_display_amount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_discount_display_amount/ca/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -961,11 +951,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit a19ef6dd23558b3eb09bb9c28cbf4ed780a6f516
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 5 19:28:32 2026 +0000
+commit eb2ed79f919559d1a63f15ac872eec55f65c327c
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Feb 9 16:02:19 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 98.2% (164 of 167 strings)
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_vat_book
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_vat_book/es/
 
 
 ## l10n-switzerland

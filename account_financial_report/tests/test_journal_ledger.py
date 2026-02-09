@@ -6,7 +6,7 @@ from datetime import datetime
 
 from dateutil.relativedelta import relativedelta
 
-from odoo.fields import Date
+from odoo.fields import Command, Date
 from odoo.tests import tagged
 from odoo.tests.common import Form
 
@@ -16,18 +16,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestJournalReport(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls, chart_template_ref=None):
-        super().setUpClass(chart_template_ref=chart_template_ref)
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                mail_create_nolog=True,
-                mail_create_nosubscribe=True,
-                mail_notrack=True,
-                no_reset_password=True,
-                tracking_disable=True,
-            )
-        )
+    def setUpClass(cls):
+        super().setUpClass()
         cls.AccountObj = cls.env["account.account"]
         cls.InvoiceObj = cls.env["account.move"]
         cls.JournalObj = cls.env["account.journal"]
@@ -100,9 +90,7 @@ class TestJournalReport(AccountTestInvoicingCommon):
             "journal_id": journal.id,
             "date": date,
             "line_ids": [
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "name": move_name,
                         "debit": receivable_debit,
@@ -110,9 +98,7 @@ class TestJournalReport(AccountTestInvoicingCommon):
                         "account_id": self.receivable_account.id,
                     },
                 ),
-                (
-                    0,
-                    0,
+                Command.create(
                     {
                         "name": move_name,
                         "debit": income_debit,
@@ -173,7 +159,7 @@ class TestJournalReport(AccountTestInvoicingCommon):
                 "date_from": self.fy_date_start,
                 "date_to": self.fy_date_end,
                 "company_id": self.company.id,
-                "journal_ids": [(6, 0, self.journal_sale.ids)],
+                "journal_ids": [Command.set(self.journal_sale.ids)],
                 "move_target": "all",
             }
         )
@@ -234,7 +220,7 @@ class TestJournalReport(AccountTestInvoicingCommon):
                 "date_from": self.fy_date_start,
                 "date_to": self.fy_date_end,
                 "company_id": self.company.id,
-                "journal_ids": [(6, 0, self.journal_sale.ids)],
+                "journal_ids": [Command.set(self.journal_sale.ids)],
                 "move_target": "all",
             }
         )
@@ -272,7 +258,7 @@ class TestJournalReport(AccountTestInvoicingCommon):
                 "date_from": self.fy_date_start,
                 "date_to": self.fy_date_end,
                 "company_id": self.company.id,
-                "journal_ids": [(6, 0, self.journal_purchase.ids)],
+                "journal_ids": [Command.set(self.journal_purchase.ids)],
                 "move_target": "all",
             }
         )

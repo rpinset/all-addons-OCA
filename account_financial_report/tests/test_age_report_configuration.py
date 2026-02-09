@@ -1,12 +1,14 @@
 #  Copyright 2023 Tecnativa - Carolina Fernandez
 #  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-
+from odoo import Command
 from odoo.exceptions import ValidationError
-from odoo.tests import common, tagged
+from odoo.tests import tagged
+
+from odoo.addons.base.tests.common import BaseCommon
 
 
 @tagged("post_install", "-at_install")
-class TestAccountAgeReportConfiguration(common.TransactionCase):
+class TestAccountAgeReportConfiguration(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -16,9 +18,7 @@ class TestAccountAgeReportConfiguration(common.TransactionCase):
             {
                 "name": "Intervals configuration",
                 "line_ids": [
-                    (
-                        0,
-                        0,
+                    Command.create(
                         {
                             "name": "1-30",
                             "inferior_limit": 30,
