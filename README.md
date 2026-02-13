@@ -456,11 +456,16 @@ Date:   Wed Jun 4 03:36:49 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit cc096053cd72ae84d96b360b6322da9f768622c6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:41:11 2025 +0000
+commit 29518584a664b9cda5158e39834406bbda777336
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 10 12:42:16 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 89.2% (150 of 168 strings)
+    
+    Translation: commission-12.0/commission-12.0-sale_commission
+    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission/it/
 
 
 ## event
