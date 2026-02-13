@@ -79,16 +79,11 @@ Date:   Sun Feb 1 07:51:41 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit cf255e1bcf3f45da48acd4076e492937b53c29bd
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Tue Dec 2 08:36:15 2025 +0000
+commit 7fbef25c038b5fd2b09ae0a12c5b99a954ac71fb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 11 16:50:18 2026 +0000
 
-    Translated using Weblate (Danish)
-    
-    Currently translated at 92.3% (266 of 288 strings)
-    
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/da/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -482,16 +477,11 @@ Date:   Wed Nov 26 17:16:44 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 34f23535ac02ed2a428a1355a255feceb5e61f60
-Author: strarsis <strarsis@gmail.com>
-Date:   Wed Jan 14 22:57:27 2026 +0000
+commit 3eca63c90d3176ab0e4420c76ee5517a27bdc3ac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 10 07:42:37 2026 +0000
 
-    Translated using Weblate (German)
-    
-    Currently translated at 67.7% (21 of 31 strings)
-    
-    Translation: edi-15.0/edi-15.0-account_invoice_facturx
-    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-account_invoice_facturx/de/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -953,16 +943,11 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5fa033be522ab4af1f8f3da0970215576a2fecd3
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 5 15:58:59 2026 +0000
+commit ad7ba955a42d284b043271e405897ac5177ff636
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 13 15:18:43 2026 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod347
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod347/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1447,11 +1432,11 @@ Date:   Wed Jun 4 03:43:11 2025 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 05e8765af56ac31c66c02438d3f0a27ec01b939a
+commit e6046636bb682a975fcce6eab36266605687bec3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:42:31 2025 +0000
+Date:   Thu Feb 12 09:10:32 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## server-brand

@@ -11,8 +11,9 @@ class ResUsers(models.Model):
     ical_ids = fields.One2many("base.ical", compute="_compute_ical_ids")
 
     def _compute_ical_ids(self):
-        domain = [("allowed_users_ids", "=", self.env.uid)]
-        self.write({"ical_ids": self.env["base.ical"].search(domain)})
+        for this in self:
+            domain = [("allowed_users_ids", "=", this.id)]
+            this.ical_ids = self.env["base.ical"].search(domain)
 
     @property
     def SELF_READABLE_FIELDS(self):
