@@ -127,7 +127,11 @@ class GeneralLedgerReport(models.AbstractModel):
         domain = []
         domain += base_domain
         domain += [("date", "<", fy_start_date)]
-        accounts = self.env["account.account"].search(accounts_domain)
+        accounts = (
+            self.env["account.account"]
+            .with_context(active_test=False)
+            .search(accounts_domain)
+        )
         domain += [("account_id", "in", accounts.ids)]
         return domain
 

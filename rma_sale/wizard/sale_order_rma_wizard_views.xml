@@ -16,18 +16,18 @@
                     <field name="operation_id" />
                     <field name="line_ids" nolabel="1" colspan="2">
                         <tree editable="bottom">
-                            <field name="order_id" invisible="1" />
-                            <field name="allowed_product_ids" invisible="1" />
+                            <field name="order_id" column_invisible="1" />
+                            <field name="allowed_product_ids" column_invisible="1" />
                             <field name="product_id" options="{'no_create': True}" />
                             <field name="quantity" />
                             <field name="allowed_quantity" />
-                            <field name="uom_category_id" invisible="1" />
+                            <field name="uom_category_id" column_invisible="1" />
                             <field
                                 name="uom_id"
                                 groups="uom.group_uom"
                                 options="{'no_create': True}"
                             />
-                            <field name="allowed_picking_ids" invisible="1" />
+                            <field name="allowed_picking_ids" column_invisible="1" />
                             <field
                                 name="picking_id"
                                 options="{'no_create': True}"
@@ -39,7 +39,10 @@
                                 invisible="not different_return_product"
                                 required="different_return_product and quantity>0"
                             />
-                            <field name="different_return_product" invisible="1" />
+                            <field
+                                name="different_return_product"
+                                column_invisible="1"
+                            />
                         </tree>
                     </field>
                 </group>
