@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* contract_invoice_manually
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-02-12 12:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_contract_contract
+msgid "Contract"
+msgstr "Contratto"
+
+#. module: contract_invoice_manually
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_manually_create_invoice_form_view
+msgid "Contract Filter"
+msgstr "Filtro contratto"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_contract_manually_create_invoice
+msgid "Contract Manually Create Invoice Wizard"
+msgstr "Procedura guidata creazione manualmente fattura da contratto"
+
+#. module: contract_invoice_manually
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_manually_create_invoice_form_view
+msgid "Contracts"
+msgstr "Contratti"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
+msgid "Domain"
+msgstr "Dominio"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_company__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
+msgid "Enable Manual Invoicing"
+msgstr "Abilita fatturazione manuale"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_contract__enable_contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_res_company__enable_contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
+msgid "Exclude contracts from being invoiced automatically"
+msgstr "Esclude i contratti dalla fatturazione automatica"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
+msgid "Filter/Domain to apply on contracts to invoice"
+msgstr "Filtro /dominio da applicare ai contratti da fatturare"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_contract_search_view
+msgid "Manually Invoiced"
+msgstr "Fatturato manualmente"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+msgid ""
+"The contract will be excluded from the automated invoice creation. It can be"
+" invoiced manually via Accounting > Customers/Vendors > Manually Invoice "
+"Sale/Purchase Contracts"
+msgstr ""
+"Il contratto sarà escluso dalla creazione automatica della fattura. Può "
+"essere fatturato manualmente tramite Contabilità > Clienti/Fornitori > "
+"Fatturazione manuale contratti di vendita/acquisto"

@@ -53,6 +53,8 @@ class JSONEncoder(json.JSONEncoder):
             return obj.isoformat()
         elif isinstance(obj, datetime.date):
             return obj.isoformat()
+        elif isinstance(obj, datetime.time):
+            return obj.isoformat()
         elif isinstance(obj, decimal.Decimal):
             return float(obj)
         return super().default(obj)

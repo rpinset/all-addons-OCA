@@ -17,6 +17,17 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: base_search_custom_field_filter
+#: model:ir.model.constraint,message:base_search_custom_field_filter.constraint_ir_ui_custom_field_filter_unique_model_expression
+msgid "A filter with the same expression already exists for this model."
+msgstr ""
+
+#. module: base_search_custom_field_filter
+#. odoo-python
+#: code:addons/base_search_custom_field_filter/models/ir_ui_custom_field_filter.py:0
+msgid "A filter with the same name already exists for this model."
+msgstr ""
+
+#. module: base_search_custom_field_filter
 #: model:ir.model,name:base_search_custom_field_filter.model_base
 msgid "Base"
 msgstr "Base"
@@ -60,7 +71,6 @@ msgstr "ID"
 #. module: base_search_custom_field_filter
 #. odoo-python
 #: code:addons/base_search_custom_field_filter/models/ir_ui_custom_field_filter.py:0
-#, python-format
 msgid "Incorrect expression: %s."
 msgstr "Expresión incorrecta: %s."
 
@@ -68,11 +78,6 @@ msgstr "Expresión incorrecta: %s."
 #: model:ir.ui.custom.field.filter,name:base_search_custom_field_filter.custom_field_filter_demo
 msgid "Language"
 msgstr "Idioma"
-
-#. module: base_search_custom_field_filter
-#: model:ir.model.fields,field_description:base_search_custom_field_filter.field_ir_ui_custom_field_filter____last_update
-msgid "Last Modified on"
-msgstr "Última modificación el"
 
 #. module: base_search_custom_field_filter
 #: model:ir.model.fields,field_description:base_search_custom_field_filter.field_ir_ui_custom_field_filter__write_uid
@@ -117,3 +122,6 @@ msgstr "Posición Después"
 #: model:ir.model.fields,field_description:base_search_custom_field_filter.field_ir_ui_custom_field_filter__sequence
 msgid "Sequence"
 msgstr "Secuencia"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última modificación el"

@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-01 04:03+0000\n"
-"PO-Revision-Date: 2017-03-01 04:03+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-02-13 11:16+0000\n"
+"Last-Translator: Administrator <alexzub@tut.by>\n"
 "Language-Team: Russian (https://www.transifex.com/oca/teams/23907/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -19,55 +19,56 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entry_ids
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_move_line_journal_entries_form
 msgid "Journal Entries"
-msgstr ""
+msgstr "Проводки"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entries_count
 msgid "Journal Entries Count"
-msgstr ""
+msgstr "Подсчет записей в журнале"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Элемент журнала"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_account_move_line__oca_purchase_line_id
 msgid "OCA Purchase Line"
-msgstr ""
+msgstr "Линия закупок OCA"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_purchase_order
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_account_move_line__purchase_order_id
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_account_move_line_filter
 msgid "Purchase Order"
-msgstr ""
+msgstr "Заказ на покупку"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_purchase_order_line
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_account_move_line_filter
 msgid "Purchase Order Line"
-msgstr ""
+msgstr "Строка заказа на поставку"
 
 #. module: account_move_line_purchase_info
 #: model:res.groups,name:account_move_line_purchase_info.group_account_move_purchase_info
 msgid "Purchase info in Journal Items"
-msgstr ""
+msgstr "Информация о покупках в статьях журнала"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order_line__stock_invoice_lines
 msgid "Stock Invoice Lines"
-msgstr ""
+msgstr "Строки счета-фактуры на складе"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_stock_move
 msgid "Stock Move"
-msgstr ""
+msgstr "Движение акций"
 
 #~ msgid "Invoice"
 #~ msgstr "Счет"

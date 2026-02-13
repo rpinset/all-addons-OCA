@@ -1,0 +1,1 @@
+from . import test_contract_manually_create_invoice

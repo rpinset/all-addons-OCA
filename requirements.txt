@@ -78,6 +78,7 @@ factur-x
 ovh
 phonenumbers
 pymupdf
+pypdf
 pypdf>=3.1.0
 regex
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
@@ -290,6 +291,7 @@ mysqlclient
 pymssql<=2.2.5 ; python_version <= '3.10'
 pymssql<=2.2.8 ; python_version > '3.10'
 sqlalchemy
+vobject
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # generated from manifests external_dependencies

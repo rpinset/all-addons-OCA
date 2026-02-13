@@ -9,6 +9,7 @@ from dateutil.relativedelta import relativedelta
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
+from odoo.tools.sql import SQL
 
 
 class AccountAnalyticLine(models.Model):
@@ -22,6 +23,7 @@ class AccountAnalyticLine(models.Model):
         string="End Time",
         compute="_compute_date_time_end",
         inverse="_inverse_date_time_end",
+        search="_search_date_time_end",
     )
     show_time_control = fields.Selection(
         selection=[("resume", "Resume"), ("stop", "Stop")],
@@ -32,6 +34,7 @@ class AccountAnalyticLine(models.Model):
     @api.depends("date_time", "unit_amount", "product_uom_id")
     def _compute_date_time_end(self):
         hour_uom = self.env.ref("uom.product_uom_hour")
+        day_uom = self.env.ref("uom.product_uom_day")
         for record in self:
             if (
                 record.product_uom_id == hour_uom
@@ -40,6 +43,15 @@ class AccountAnalyticLine(models.Model):
             ):
                 record.date_time_end = record.date_time + relativedelta(
                     hours=record.unit_amount
+                )
+            elif (
+                record.product_uom_id == day_uom
+                and day_uom.factor == 1
+                and record.date_time
+                and record.unit_amount
+            ):
+                record.date_time_end = record.date_time + relativedelta(
+                    hours=record.unit_amount * hour_uom.factor
                 )
             else:
                 record.date_time_end = record.date_time_end
@@ -166,3 +178,22 @@ class AccountAnalyticLine(models.Model):
                 )
             line.unit_amount = line._duration(line.date_time, end)
         return True
+
+    @api.model
+    def _search_date_time_end(self, operator, value):
+        # reference value is 1 day == 8 hours
+        hour_uom = self.env.ref("uom.product_uom_hour")
+        return [
+            (
+                "date_time",
+                operator,
+                SQL(
+                    "%(start_time)s - account_analytic_line.unit_amount * "
+                    "(select 1 / factor * %(day_factor)s "
+                    "from uom_uom where id = account_analytic_line.product_uom_id) * "
+                    "interval '1 hour'",
+                    start_time=datetime.strptime(value, "%Y-%m-%d %H:%M:%S"),
+                    day_factor=hour_uom.factor,
+                ),
+            )
+        ]

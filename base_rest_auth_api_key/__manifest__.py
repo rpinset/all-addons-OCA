@@ -6,7 +6,7 @@
     "summary": """
         Base Rest: Add support for the auth_api_key security policy into the
         openapi documentation""",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "license": "LGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rest-framework",

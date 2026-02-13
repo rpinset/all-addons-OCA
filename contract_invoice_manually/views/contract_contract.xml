@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="contract_contract_form_view" model="ir.ui.view">
+        <field name="model">contract.contract</field>
+        <field name="inherit_id" ref="contract.contract_contract_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='recurring_invoices']/group" position="inside">
+                <field
+                    name="is_manually_invoiced"
+                    invisible="not enable_contract_invoice_manually"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="contract_contract_search_view" model="ir.ui.view">
+        <field name="model">contract.contract</field>
+        <field name="inherit_id" ref="contract.contract_contract_search_view" />
+        <field name="arch" type="xml">
+            <filter name="finished" position="after">
+                <separator />
+                <filter
+                    name="is_manually_invoiced"
+                    string="Manually Invoiced"
+                    domain="[('is_manually_invoiced', '=', True)]"
+                />
+            </filter>
+            <filter name="group_by_date_end" position="after">
+                <filter
+                    name="group_by_is_manually_invoiced"
+                    string="Manually Invoiced"
+                    context="{'group_by':'is_manually_invoiced'}"
+                />
+            </filter>
+        </field>
+    </record>
+
+    <record id="contract_contract_tree_view" model="ir.ui.view">
+        <field name="model">contract.contract</field>
+        <field name="inherit_id" ref="contract.contract_contract_tree_view" />
+        <field name="arch" type="xml">
+            <field name="company_id" position="before">
+                <field name="is_manually_invoiced" optional="hide" />
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -14,12 +14,6 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: base_search_custom_field_filter
-#. odoo-python
-#: code:addons/base_search_custom_field_filter/models/base.py:0
-msgid "//field[@name='%s']"
-msgstr ""
-
-#. module: base_search_custom_field_filter
 #: model:ir.model.constraint,message:base_search_custom_field_filter.constraint_ir_ui_custom_field_filter_unique_model_expression
 msgid "A filter with the same expression already exists for this model."
 msgstr ""

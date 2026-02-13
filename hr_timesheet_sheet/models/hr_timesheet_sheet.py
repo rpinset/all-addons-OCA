@@ -131,7 +131,8 @@ class Sheet(models.Model):
     add_line_project_id = fields.Many2one(
         comodel_name="project.project",
         string="Select Project",
-        domain="[('company_id', '=', company_id), ('allow_timesheets', '=', True)]",
+        domain="[('company_id', 'in', [company_id, False]), "
+        "('allow_timesheets', '=', True)]",
         help="If selected, the associated project is added "
         "to the timesheet sheet when clicked the button.",
     )
@@ -228,7 +229,7 @@ class Sheet(models.Model):
     def _get_complete_name_components(self):
         """Hook for extensions"""
         self.ensure_one()
-        return [self.employee_id.display_name]
+        return [self.employee_id.display_name or ""]
 
     def _get_overlapping_sheet_domain(self):
         """Hook for extensions"""
@@ -356,7 +357,14 @@ class Sheet(models.Model):
             ("project_id", "!=", False),
         ]
 
-    @api.depends("date_start", "date_end")
+    @api.depends(
+        "date_start",
+        "date_end",
+        "timesheet_ids.unit_amount",
+        "timesheet_ids.project_id",
+        "timesheet_ids.task_id",
+        "timesheet_ids.date",
+    )
     def _compute_line_ids(self):
         SheetLine = self.env["hr_timesheet.sheet.line"]
         for sheet in self:
@@ -639,13 +647,13 @@ class Sheet(models.Model):
         return values
 
     @api.model
-    def _prepare_empty_analytic_line(self):
+    def _prepare_empty_analytic_line(self, project=None, task=None):
         return {
             "name": empty_name,
             "employee_id": self.employee_id.id,
             "date": self.date_start,
-            "project_id": self.add_line_project_id.id,
-            "task_id": self.add_line_task_id.id,
+            "project_id": (project or self.add_line_project_id).id,
+            "task_id": (task or self.add_line_task_id).id,
             "sheet_id": self.id,
             "unit_amount": 0.0,
             "company_id": self.company_id.id,
