@@ -101,11 +101,11 @@ Date:   Mon Jun 30 11:11:16 2025 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 707fe3505b25850e1fc3436a946a5c37e15dd578
+commit a396ee5ba5578a703395851604a0d608e001f406
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:34:40 2025 +0000
+Date:   Wed Feb 11 08:25:49 2026 +0000
 
-    [UPD] addons table in README.md
+    [ADD] setup.py
 
 
 ## account-invoicing
@@ -481,11 +481,16 @@ Date:   Wed Jun 4 03:36:54 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 5fffa33863fcdd7747ae995f1eda88117e4a3202
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:41:16 2025 +0000
+commit 7996a0ba674ca8e274c758c82dfd780aaf1a2f6f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 10 12:42:14 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 70.2% (111 of 158 strings)
+    
+    Translation: commission-13.0/commission-13.0-sale_commission
+    Translate-URL: https://translation.odoo-community.org/projects/commission-13-0/commission-13-0-sale_commission/it/
 
 
 ## event
