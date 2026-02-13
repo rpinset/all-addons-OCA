@@ -1,6 +1,7 @@
 # Copyright 2024 Akretion (http://www.akretion.com).
 # @author Florian Mounier <florian.mounier@akretion.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+import re
 from datetime import datetime, timedelta, timezone
 from secrets import token_urlsafe
 
@@ -34,6 +35,14 @@ class CrossConnectClient(models.Model):
         related="endpoint_id.cross_connect_allowed_group_ids",
     )
 
+    bypass_user_mail_re = fields.Char(
+        string="Bypass Users Email Regexes",
+        help=(
+            "If set, users with an email matching one of these regex will bypass "
+            "the token user/login creation. The regexes are comma separated."
+        ),
+    )
+
     group_ids = fields.Many2many(
         "res.groups",
         string="Groups",
@@ -64,6 +73,12 @@ class CrossConnectClient(models.Model):
             record.user_count = len(record.user_ids)
 
     def _request_access(self, access_request):
+        if self.bypass_user_mail_re and any(
+            re.search(mail_re.strip(), access_request.email)
+            for mail_re in self.bypass_user_mail_re.split(",")
+        ):
+            return "bypass"
+
         # check groups
         groups = self.env["res.groups"].browse(access_request.groups)
         if groups - self.group_ids or not groups.exists():
@@ -72,6 +87,13 @@ class CrossConnectClient(models.Model):
         user = self.user_ids.filtered(
             lambda u: u.cross_connect_client_user_id == access_request.id
         )
+
+        # Fallback to default lang if not installed
+        if access_request.lang not in [
+            code for code, _name in self.env["res.lang"].get_installed()
+        ]:
+            access_request.lang = "en_US"
+
         vals = {
             "login": f"{self.id}_{access_request.id}_{access_request.login}",
             "email": access_request.email,
@@ -94,7 +116,6 @@ class CrossConnectClient(models.Model):
                 "exp": datetime.now(tz=timezone.utc) + timedelta(minutes=2),
                 "aud": str(self.id),
                 "id": user.id,
-                "redirect_url": access_request.redirect_url or "/web",
             },
             self.endpoint_id.cross_connect_secret_key,
             algorithm="HS256",
@@ -117,4 +138,10 @@ class CrossConnectClient(models.Model):
         if not user:
             raise AccessDenied(_("Invalid Token"))
 
-        return user, obj["redirect_url"]
+        return user
+
+    def _get_final_redirect_url(self, **params):
+        """Get the final redirect url after login.
+        Override this method to customize the local landing action.
+        """
+        return "/web"

@@ -128,6 +128,7 @@ class TestSCT(TransactionCase):
                 "acc_number": "FR66 1212 1212 1212 1212 1212 121",
                 "bank_id": cls.bank.id,
                 "partner_id": cls.partner_1.id,
+                "allow_out_payment": True,
             }
         )
         cls.partner_2 = cls.env["res.partner"].create(

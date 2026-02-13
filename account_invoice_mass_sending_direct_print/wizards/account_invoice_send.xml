@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="account_invoice_send_wizard_form" model="ir.ui.view">
+        <field name="model">account.invoice.send</field>
+        <field name="inherit_id" ref="account.account_invoice_send_wizard_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='option_email']" position='before'>
+                <div
+                    name="option_is_direct_print"
+                    attrs="{'invisible': [('is_print', '=', False)]}"
+                >
+                    <field name="is_direct_print" />
+                    <label for="is_direct_print" string="Direct Print" />
+                </div>
+            </xpath>
+            <button name="enqueue_invoices" position="after">
+                <button
+                    name="enqueue_invoices"
+                    string="Print Invoice (Job Queue)"
+                    type="object"
+                    attrs="{'invisible': ['|', '|',('is_email', '=', True),('template_id', '=', False),('is_direct_print', '=', False)]}"
+                    class="btn-primary"
+                />
+            </button>
+        </field>
+    </record>
+</odoo>

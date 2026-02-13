@@ -22,5 +22,5 @@ class CrossConnectController(Controller):
         if not server:
             raise UserError(_("Server not found"))
 
-        url = server._get_cross_connect_url(request.params.get("redirect_url"))
+        url = server._get_cross_connect_url(**params)
         return request.redirect(url, local=False)

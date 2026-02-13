@@ -6,7 +6,7 @@
 {
     "name": "Partner Auth",
     "summary": "Implements the base features for a authenticable partner",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "Akretion,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rest-framework",

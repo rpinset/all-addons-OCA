@@ -17,6 +17,7 @@ class AccountMove(models.Model):
                         not bank.company_id or bank.company_id == move.company_id
                     )
                     and (not bank.currency_id or bank.currency_id == move.currency_id)
+                    and bank.allow_out_payment
                 )
                 bank_ids = bank_ids.sorted(key=lambda bank: bank.sequence)
                 move.partner_bank_id = bank_ids[0] if bank_ids else move.partner_bank_id

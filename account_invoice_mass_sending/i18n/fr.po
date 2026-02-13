@@ -27,6 +27,19 @@ msgid "Email mass sending (Job Queue)"
 msgstr ""
 
 #. module: account_invoice_mass_sending
+#: model:ir.model.fields,field_description:account_invoice_mass_sending.field_account_invoice_send__exclude_followers
+msgid "Exclude Followers"
+msgstr ""
+
+#. module: account_invoice_mass_sending
+#: model:ir.model.fields,help:account_invoice_mass_sending.field_account_invoice_send__exclude_followers
+msgid ""
+"If checked, the email will be send only to the invoice partner, excluding "
+"followers.\n"
+"Note: This functionality only applies for mass sending."
+msgstr ""
+
+#. module: account_invoice_mass_sending
 #: model:ir.model.fields,help:account_invoice_mass_sending.field_account_bank_statement_line__sending_in_progress
 #: model:ir.model.fields,help:account_invoice_mass_sending.field_account_move__sending_in_progress
 #: model:ir.model.fields,help:account_invoice_mass_sending.field_account_payment__sending_in_progress

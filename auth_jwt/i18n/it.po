@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-29 11:35+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2026-02-11 09:31+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: auth_jwt
 #. odoo-python
@@ -81,7 +81,7 @@ msgstr "Path cookie"
 #. module: auth_jwt
 #: model:ir.model.fields,field_description:auth_jwt.field_auth_jwt_validator__cookie_secret
 msgid "Cookie Secret"
-msgstr ""
+msgstr "Segreto cookie"
 
 #. module: auth_jwt
 #: model:ir.model.fields,field_description:auth_jwt.field_auth_jwt_validator__cookie_secure

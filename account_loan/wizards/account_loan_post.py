@@ -48,18 +48,35 @@ class AccountLoanPost(models.TransientModel):
                 "name": self.loan_id.name,
                 "partner_id": partner.id,
                 "credit": 0,
-                "debit": line.pending_principal_amount,
+                "currency_id": self.loan_id.currency_id.id,
+                "amount_currency": line.pending_principal_amount,
+                "debit": self.loan_id.currency_id._convert(
+                    from_amount=line.pending_principal_amount,
+                    to_currency=self.loan_id.company_id.currency_id,
+                    company=self.loan_id.company_id,
+                    date=self.loan_id.start_date,
+                    round=True,
+                ),
             }
         )
         if line.pending_principal_amount - line.long_term_pending_principal_amount > 0:
             res.append(
                 {
                     "account_id": self.loan_id.short_term_loan_account_id.id,
-                    "credit": (
+                    "debit": 0,
+                    "currency_id": self.loan_id.currency_id.id,
+                    "amount_currency": -(
                         line.pending_principal_amount
                         - line.long_term_pending_principal_amount
                     ),
-                    "debit": 0,
+                    "credit": self.loan_id.currency_id._convert(
+                        from_amount=line.pending_principal_amount
+                        - line.long_term_pending_principal_amount,
+                        to_currency=self.loan_id.company_id.currency_id,
+                        company=self.loan_id.company_id,
+                        date=self.loan_id.start_date,
+                        round=True,
+                    ),
                 }
             )
         if (
@@ -69,8 +86,16 @@ class AccountLoanPost(models.TransientModel):
             res.append(
                 {
                     "account_id": self.loan_id.long_term_loan_account_id.id,
-                    "credit": line.long_term_pending_principal_amount,
                     "debit": 0,
+                    "currency_id": self.loan_id.currency_id.id,
+                    "amount_currency": -line.long_term_pending_principal_amount,
+                    "credit": self.loan_id.currency_id._convert(
+                        from_amount=line.long_term_pending_principal_amount,
+                        to_currency=self.loan_id.company_id.currency_id,
+                        company=self.loan_id.company_id,
+                        date=self.loan_id.start_date,
+                        round=True,
+                    ),
                 }
             )
 
