@@ -612,16 +612,16 @@ Date:   Wed Jul 23 07:55:18 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 31fa63205949c5d3cff1f1c78c0835fb05c0d426
+commit 74f580b92a5c8298a1d9444b39e639278f6bfec8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 21 07:03:59 2025 +0000
+Date:   Tue Feb 10 10:52:22 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (115 of 115 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: hr-14.0/hr-14.0-hr_course
-    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_course/it/
+    Translation: hr-14.0/hr-14.0-hr_personal_equipment_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_personal_equipment_request_tier_validation/it/
 
 
 ## hr-attendance
@@ -640,16 +640,16 @@ Date:   Sat Jun 21 10:46:58 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 28044232c21015fa28ae47e22481ad2f19a6bd08
+commit 8b4d6510e3eeef9eff1d57364cbb4641e7313c8b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:44:39 2025 +0000
+Date:   Tue Feb 10 10:52:27 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (23 of 23 strings)
     
-    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_substate
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_substate/it/
+    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_tier_validation/it/
 
 
 ## hr-holidays
@@ -1164,16 +1164,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6890178beaa927755fd3a57c7300ed9e4b6ae66c
+commit 54504e2e861513895a377e1c2943290899287c3c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 11:59:16 2025 +0000
+Date:   Tue Feb 10 10:52:30 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_location_lockdown
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_location_lockdown/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request_tier_validation/it/
 
 
 ## stock-logistics-reporting
@@ -1220,16 +1220,11 @@ Date:   Tue Oct 21 07:04:36 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit e0759969730a3761827061d6cfcb57ef807baa14
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 07:20:52 2025 +0000
+commit d0811514d20d9f81bf0e93672eccaad074a2f793
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 13 08:38:41 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (14 of 14 strings)
-    
-    Translation: wms-14.0/wms-14.0-stock_full_location_reservation
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_full_location_reservation/it/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1313,16 +1308,11 @@ Date:   Mon Aug 4 06:41:58 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit a98b50f01bd3a55b278c54f34e38f154b83f981a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 19 11:19:38 2026 +0000
+commit 9334ee11d0cb4d8fed1d0d7086b6e0b6a43ab836
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 10 09:35:00 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (13 of 13 strings)
-    
-    Translation: product-attribute-14.0/product-attribute-14.0-product_attribute_value_menu
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_attribute_value_menu/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1625,11 +1615,11 @@ Date:   Tue Oct 7 07:12:16 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 05476c00fdde1d6071616d686f9c86c7e6f919e9
+commit 4a98e88f08eeb225e47b4e58b22c84a6bb8f9489
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:34:53 2025 +0000
+Date:   Thu Feb 12 13:25:07 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## vertical-association
