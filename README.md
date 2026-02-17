@@ -1104,9 +1104,9 @@ Date:   Wed Jun 4 03:49:32 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 24401b97ec9045d0dde000600065b5b8d666651d
+commit 136ed75d77dec611761928f0a7d8f2352b83ed70
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:15:46 2025 +0000
+Date:   Tue Feb 17 07:23:52 2026 +0000
 
     Translated using Weblate (Italian)
     

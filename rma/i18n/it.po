@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-11-25 11:42+0000\n"
+"PO-Revision-Date: 2026-02-17 10:09+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_draft_notification
@@ -449,7 +449,7 @@ msgstr "Annullato"
 #: model_terms:ir.actions.act_window,help:rma.rma_action
 #: model_terms:ir.actions.act_window,help:rma.rma_team_action
 msgid "Click to add a new RMA."
-msgstr "Fai click per aggiungere un nuovo RMA."
+msgstr "Fai click per aggiungere una nuova RMA."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_tag__color
@@ -1106,7 +1106,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_split_wizard__product_uom_qty
 msgid "Quantity to extract to a new RMA."
-msgstr "Quantità da prelevare in un nuovo RMA."
+msgstr "Quantità da prelevare in una nuova RMA."
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_action
@@ -1342,7 +1342,7 @@ msgstr "Rimborso"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__partner_invoice_id
 msgid "Refund address for current RMA."
-msgstr "Indirizzo di rimborso per questo RMA."
+msgstr "Indirizzo di rimborso per questa RMA."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__refund_line_id
@@ -1569,7 +1569,7 @@ msgstr "Indirizzo di spedizione"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__partner_shipping_id
 msgid "Shipping address for current RMA."
-msgstr "Indirizzo di spedizione per questo RMA."
+msgstr "Indirizzo di spedizione per questa RMA."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__origin
@@ -1776,7 +1776,7 @@ msgstr "Tipo di operazione"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Unassigned RMAs"
-msgstr "RMA non assegnati"
+msgstr "RMA non assegnate"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_uom
@@ -1804,7 +1804,7 @@ msgstr "Numero messaggi non letti"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Unresolved RMAs"
-msgstr "RMA non completati"
+msgstr "RMA non completate"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__product_uom
