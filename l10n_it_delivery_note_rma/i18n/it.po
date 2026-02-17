@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-10-29 23:42+0000\n"
+"PO-Revision-Date: 2026-02-17 10:09+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_it_delivery_note_rma
 #: code:addons/l10n_it_delivery_note_rma/controllers/delivery_note_portal.py:0
@@ -282,7 +282,7 @@ msgstr "RMA"
 #. module: l10n_it_delivery_note_rma
 #: model:ir.model.fields,help:l10n_it_delivery_note_rma.field_stock_delivery_note_line_rma_wizard__partner_invoice_id
 msgid "Refund address for current RMA."
-msgstr "Indirizzo di rimborso per questo RMA."
+msgstr "Indirizzo di rimborso per questa RMA."
 
 #. module: l10n_it_delivery_note_rma
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note_rma.delivery_note_rma_request_form
@@ -314,7 +314,7 @@ msgstr "Indirizzo di spedizione"
 #. module: l10n_it_delivery_note_rma
 #: model:ir.model.fields,help:l10n_it_delivery_note_rma.field_stock_delivery_note_line_rma_wizard__partner_shipping_id
 msgid "Shipping address for current RMA."
-msgstr "Indirizzo di spedizione per questo RMA."
+msgstr "Indirizzo di spedizione per questa RMA."
 
 #. module: l10n_it_delivery_note_rma
 #: model:ir.model,name:l10n_it_delivery_note_rma.model_stock_delivery_note_line_rma_wizard
@@ -334,7 +334,7 @@ msgstr "Movimento di magazzino"
 #. module: l10n_it_delivery_note_rma
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note_rma.delivery_note_rma_request_form
 msgid "The limit will decrease when the units in other RMAs are confirmed"
-msgstr "Il limite diminuirà quando le unità in altri RMA saranno confermate"
+msgstr "Il limite diminuirà quando le unità in altre RMA saranno confermate"
 
 #. module: l10n_it_delivery_note_rma
 #: model:ir.model.fields,field_description:l10n_it_delivery_note_rma.field_stock_delivery_note_line_rma_wizard__uom_id
@@ -382,7 +382,7 @@ msgstr ""
 #. module: l10n_it_delivery_note_rma
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note_rma.delivery_note_rma_request_form
 msgid "You can send a message in every RMA sent"
-msgstr "Puoi inviare un messaggio in ogni RMA inviato"
+msgstr "Puoi inviare un messaggio in ogni RMA inviata"
 
 #. module: l10n_it_delivery_note_rma
 #: code:addons/l10n_it_delivery_note_rma/models/stock_delivery_note.py:0

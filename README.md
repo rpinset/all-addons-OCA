@@ -903,16 +903,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0607cf91f552a50502dba97ebd66c03b4ec93b2e
+commit 301c603dc26991c3595a1f1cac5d65fb5a28668b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 9 10:49:45 2025 +0000
+Date:   Tue Feb 17 07:17:47 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 100.0% (66 of 66 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_customer_code
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_customer_code/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_rma
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_rma/it/
 
 
 ## l10n-japan
@@ -1192,16 +1192,16 @@ Date:   Wed Oct 15 09:10:25 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 9d1255e5be22de4ea6e0e29e896bc687dfc684fb
+commit f200dea6be264f999c23224ae52cfe8349410c13
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 25 09:15:26 2025 +0000
+Date:   Tue Feb 17 07:17:45 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (347 of 347 strings)
+    Currently translated at 100.0% (79 of 79 strings)
     
-    Translation: rma-14.0/rma-14.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma/it/
+    Translation: rma-14.0/rma-14.0-rma_sale
+    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma_sale/it/
 
 
 ## ddmrp
