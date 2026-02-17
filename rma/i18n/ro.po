@@ -241,13 +241,6 @@ msgid ""
 msgstr ""
 
 #. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-
-#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "<span>Awaiting action</span>"
 msgstr ""
@@ -2363,6 +2356,11 @@ msgid "User: Own Documents Only"
 msgstr ""
 
 #. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr ""
+
+#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "View"
 msgstr ""
@@ -2548,8 +2546,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Here is the RMA <strong>${object.name}</strong> from ${object."
-#~ "company_id.name}.\n"
+#~ "    Here is the RMA <strong>${object.name}</strong> from $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Do not hesitate to contact us if you have any question.\n"
 #~ "</p>\n"
@@ -2564,8 +2562,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Aici este formularul de retur <strong>${object.name}</strong> de la "
-#~ "${object.company_id.name}.\n"
+#~ "    Aici este formularul de retur <strong>${object.name}</strong> de la $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "   Nu ezitați să ne contactați dacă aveți întrebări.\n"
 #~ "</p>\n"

@@ -236,15 +236,6 @@ msgid ""
 msgstr ""
 
 #. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Estes valores são específicos "
-"por empresa.\" groups=\"base.group_multi_company\"/>"
-
-#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "<span>Awaiting action</span>"
 msgstr ""
@@ -2377,6 +2368,11 @@ msgid "User: Own Documents Only"
 msgstr "Utilizador: Apenas os Seus Documentos"
 
 #. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr ""
+
+#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "View"
 msgstr ""
@@ -2515,6 +2511,13 @@ msgid ""
 "{{object.name or 'n/a' }})"
 msgstr ""
 
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Estes valores são "
+#~ "específicos por empresa.\" groups=\"base.group_multi_company\"/>"
+
 #~ msgid "<strong>Delivered qty:</strong>"
 #~ msgstr "<strong>Quantidade Enviada:</strong>"
 
@@ -2624,8 +2627,8 @@ msgstr ""
 #~ "data-oe-id=\"%d\">%s</a>) has been created."
 #~ msgstr ""
 #~ "Substituição: Movimentação <a href=\"#\" data-oe-model=\"stock.move\" "
-#~ "data-oe-id=\"%d\">%s</a> (A Coleta <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a> foi criada."
+#~ "data-oe-id=\"%d\">%s</a> (A Coleta <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a> foi criada."
 
 #, python-format
 #~ msgid ""
@@ -2634,10 +2637,10 @@ msgstr ""
 #~ "create a new move, but one of the previously created moves was updated "
 #~ "with this data."
 #~ msgstr ""
-#~ "Substituição:<br/> Produto <a href=\"#\" data-oe-model=\"product."
-#~ "product\" data-oe-id=\"%d\">%s</a><br/> Quantidade %f%s<br/> Essa "
-#~ "substituição não criou uma nova movimentação, mas uma das movimentos "
-#~ "criadas anteriormente foi atualizada com esses dados."
+#~ "Substituição:<br/> Produto <a href=\"#\" data-oe-"
+#~ "model=\"product.product\" data-oe-id=\"%d\">%s</a><br/> Quantidade "
+#~ "%f%s<br/> Essa substituição não criou uma nova movimentação, mas uma das "
+#~ "movimentos criadas anteriormente foi atualizada com esses dados."
 
 #, python-format
 #~ msgid ""

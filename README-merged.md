@@ -1073,6 +1073,7 @@ addon | version | maintainers | summary
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 17.0.1.0.0 |  | Payment Due List Payment Mode
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Payment Register with Multiple Deduction
+[account_payment_promissory_note](account_payment_promissory_note/) | 17.0.1.0.0 |  | Account Payment Promissory Note
 [account_payment_return](account_payment_return/) | 17.0.1.2.2 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 17.0.1.0.0 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 17.0.1.0.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
@@ -2964,6 +2965,7 @@ addon | version | maintainers | summary
 [hr_employee_age](hr_employee_age/) | 17.0.1.0.0 |  | Age field for employee
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_document](hr_employee_document/) | 17.0.1.0.1 |  | Documents attached to the employee profile
+[hr_employee_document_from_applicant](hr_employee_document_from_applicant/) | 17.0.1.0.0 | <a href='https://github.com/ursais'><img src='https://github.com/ursais.png' width='32' height='32' style='border-radius:50%;' alt='ursais'/></a> | HR Employee Document from Applicant
 [hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.2 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_id](hr_employee_id/) | 17.0.1.0.0 |  | Employee ID
 [hr_employee_language](hr_employee_language/) | 17.0.1.0.0 |  | HR Employee Language
@@ -4891,7 +4893,9 @@ and promote its widespread use.
 ----
 
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
 
+# l10n-spain
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-spain&target_branch=17.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml?query=branch%3A17.0)
 [![Build Status](https://github.com/OCA/l10n-spain/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-spain/actions/workflows/test.yml?query=branch%3A17.0)
@@ -4899,8 +4903,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-spain-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-spain-17-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# l10n-spain
 
 TODO: add repo description.
 
@@ -4930,10 +4932,10 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.3.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 17.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 17.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.10.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.11.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 17.0.1.0.0 |  | AEAT modelo 303 - OSS
-[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.6.1 |  | AEAT modelo 347
+[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.7.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.9.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
@@ -7009,6 +7011,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [connector_jira](connector_jira/) | 17.0.1.0.0 |  | JIRA Connector
+[connector_jira_servicedesk](connector_jira_servicedesk/) | 17.0.1.0.0 |  | JIRA Connector - Service Desk Extension
 
 [//]: # (end addons)
 

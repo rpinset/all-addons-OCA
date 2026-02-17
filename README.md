@@ -96,11 +96,16 @@ Date:   Fri Oct 17 12:51:33 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 5d4c8715e1f3412d545f5738cd9fa34d2f4dd7b9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 14 12:05:30 2026 +0000
+commit a3057a12e5c5b2e38f49a3a0f8abed256c0096e3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 17 07:02:14 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (23 of 23 strings)
+    
+    Translation: operating-unit-17.0/operating-unit-17.0-report_qweb_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-17-0/operating-unit-17-0-report_qweb_operating_unit/it/
 
 
 ## intrastat
@@ -192,9 +197,9 @@ Date:   Mon Jan 26 15:23:50 2026 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 4069a825c09971f9e7849bf445af4d98ac8c2f8a
+commit e43128838fbb7d1fcc2fefd815afe95a8b112be1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 27 15:27:24 2025 +0000
+Date:   Mon Feb 16 07:28:23 2026 +0000
 
     [BOT] post-merge updates
 
@@ -350,16 +355,16 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 71d420a580f6939b46a076688df812a99113fa70
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 12 15:57:22 2026 +0000
+commit 2070fabf64300ab67c764d295b977a7427eebd70
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 16 12:31:59 2026 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (10 of 10 strings)
     
     Translation: partner-contact-17.0/partner-contact-17.0-partner_ref_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_ref_unique/
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_ref_unique/it/
 
 
 ## sale-financial
@@ -480,16 +485,16 @@ Date:   Fri Nov 28 08:31:39 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 68ff136ab622eb13244be8960605c730a2b91404
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 12 19:56:21 2026 +0000
+commit afcffda14178402fca02a17b0cb29cc5585bd3b0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 16 12:32:29 2026 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (12 of 12 strings)
     
     Translation: edi-17.0/edi-17.0-base_import_pdf_by_template_account
-    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_import_pdf_by_template_account/
+    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_import_pdf_by_template_account/it/
 
 
 ## field-service
@@ -558,11 +563,16 @@ Date:   Thu Nov 20 06:13:38 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit da58cad8c1e6c42d15d36d8ee269a7bc56599008
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Nov 8 11:30:00 2025 +0000
+commit 791e058b949f2fe1320204664f3d205307e705e6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 17 06:53:35 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (100 of 100 strings)
+    
+    Translation: hr-17.0/hr-17.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-17-0/hr-17-0-hr_course/it/
 
 
 ## hr-attendance
@@ -956,11 +966,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3169eedd1b593c8ad33ffce348ad2d8bbf2f985d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 13 14:31:42 2026 +0000
+commit c2c17cc0a85d06936ef167f063544164c276650b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Feb 16 18:25:33 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat_mod303/
 
 
 ## l10n-switzerland
@@ -1113,25 +1128,30 @@ Date:   Wed Jan 28 09:57:06 2026 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 7cbd98f45d3c501be3d3a395c83dc2f3a074b046
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 12 19:00:06 2026 +0000
-
-    [BOT] post-merge updates
-
-
-## ddmrp
-From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit ec7b8aa68d8b9b49f0315f7339bda0e1377cac6a
+commit 273efde5a41bf05f12d5ec10d2c791c744705759
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 12 12:07:38 2026 +0000
+Date:   Tue Feb 17 09:32:49 2026 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: ddmrp-17.0/ddmrp-17.0-ddmrp_product_replace
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-17-0/ddmrp-17-0-ddmrp_product_replace/
+    Translation: rma-17.0/rma-17.0-rma_sale
+    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma_sale/
+
+
+## ddmrp
+From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
+commit 53562f12a8ddfed491a361af8529b9936d687633
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 17 06:54:15 2026 +0000
+
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (340 of 340 strings)
+    
+    Translation: ddmrp-17.0/ddmrp-17.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-17-0/ddmrp-17-0-ddmrp/it/
 
 
 ## wms
@@ -1318,11 +1338,16 @@ Date:   Sun Feb 2 18:23:39 2025 +0000
 
 ## connector-jira
 From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
-commit 2a6da49a1e58888280def374bdc827ff669fb034
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 14 13:25:45 2026 +0000
+commit 4aed43cfc23ce8beb2522c138fb300bdd872217c
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Feb 17 15:45:42 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: connector-jira-17.0/connector-jira-17.0-connector_jira
+    Translate-URL: https://translation.odoo-community.org/projects/connector-jira-17-0/connector-jira-17-0-connector_jira/
 
 
 ## social

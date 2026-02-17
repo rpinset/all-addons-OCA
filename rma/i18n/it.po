@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-11 10:42+0000\n"
+"PO-Revision-Date: 2026-02-17 09:29+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: rma
 #. odoo-python
@@ -193,8 +193,8 @@ msgid ""
 "<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" "
 "title=\"Download\"/>"
 msgstr ""
-"<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" title="
-"\"Scarica\"/>"
+"<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" "
+"title=\"Scarica\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -229,8 +229,8 @@ msgid ""
 "<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" "
 "title=\"Download\"/>"
 msgstr ""
-"<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" title="
-"\"Scarica\"/>"
+"<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" "
+"title=\"Scarica\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -343,15 +343,6 @@ msgstr ""
 "                                    <i class=\"fa fa-fw fa-clock-o\"/>\n"
 "                                    Parzialmente disponibile\n"
 "                                </span>"
-
-#. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
-"specifici per azienda.\" groups=\"base.group_multi_company\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
@@ -685,7 +676,7 @@ msgstr "Categoria UdM"
 #: model_terms:ir.actions.act_window,help:rma.rma_action
 #: model_terms:ir.actions.act_window,help:rma.rma_team_action
 msgid "Click to add a new RMA."
-msgstr "Fai click per aggiungere un nuovo RMA."
+msgstr "Fai click per aggiungere una nuova RMA."
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
@@ -1012,20 +1003,21 @@ msgstr "Dominio e-mail es 'example.com' in 'odoo@example.com'"
 #: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_confirmation_template_id
 msgid "Email sent to the customer once the RMA is confirmed."
 msgstr ""
-"l' Email sarà inviata al cliente una volta che l'RMA è stata confermato."
+"l'e-mail sarà inviata al cliente una volta che l'RMA è stata confermata."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_res_company__rma_mail_receipt_confirmation_template_id
 #: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_receipt_confirmation_template_id
 msgid "Email sent to the customer once the RMA products are received."
-msgstr "l'Email sarà inviata al cliente una volta ricevuti i prodotti RMA."
+msgstr ""
+"l'e-mail sarà inviata al cliente una volta ricevuti i prodotti dell'RMA."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_res_company__rma_mail_draft_confirmation_template_id
 #: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_draft_confirmation_template_id
 msgid "Email sent to the customer when they place an RMA from the portal"
 msgstr ""
-"l'Email sarà inviata al cliente quando si inserisce una RMA dal portale"
+"l'e-mail sarà inviata al cliente quando si inserisce una RMA dal portale"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_operation__auto_confirm_reception
@@ -1630,7 +1622,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_split_wizard__product_uom_qty
 msgid "Quantity to extract to a new RMA."
-msgstr "Quantità da prelevare in un nuovo RMA."
+msgstr "Quantità da prelevare in una nuova RMA."
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_action
@@ -1953,7 +1945,7 @@ msgstr "Riga rimborso"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__partner_invoice_id
 msgid "Refund address for current RMA."
-msgstr "Indirizzo di rimborso per questo RMA."
+msgstr "Indirizzo di rimborso per questa RMA."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__refunded
@@ -2111,7 +2103,7 @@ msgstr "RMA"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__rma_count
 msgid "Rma Count"
-msgstr "Conteggio Rma"
+msgstr "Conteggio RMA"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_return_picking__rma_location_ids
@@ -2160,7 +2152,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "Send automatic notification when the customer places an RMA"
-msgstr "Invia una notifica automatica quando il cliente inserisce un RMA"
+msgstr "Invia una notifica automatica quando il cliente inserisce una RMA"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -2221,7 +2213,7 @@ msgstr "Indirizzo di spedizione"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__partner_shipping_id
 msgid "Shipping address for current RMA."
-msgstr "Indirizzo di spedizione per questo RMA."
+msgstr "Indirizzo di spedizione per questa RMA."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__show_create_receipt
@@ -2481,7 +2473,7 @@ msgstr "Tipo di attività eccezione sul record."
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Unassigned RMAs"
-msgstr "RMA non assegnati"
+msgstr "RMA non assegnate"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_uom
@@ -2497,7 +2489,7 @@ msgstr "Sblocca"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Unresolved RMAs"
-msgstr "RMA non completati"
+msgstr "RMA non completate"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__product_uom
@@ -2528,6 +2520,11 @@ msgstr "Utente: tutti i documenti"
 #: model:res.groups,name:rma.rma_group_user_own
 msgid "User: Own Documents Only"
 msgstr "Utente: solo i propri documenti"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr "I valori impostati qui sono specifici per azienda."
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
@@ -2567,7 +2564,7 @@ msgstr "Storico comunicazioni sito web"
 #: model:ir.model.fields,help:rma.field_res_company__send_rma_draft_confirmation
 #: model:ir.model.fields,help:rma.field_res_config_settings__send_rma_draft_confirmation
 msgid "When a customer places an RMA, send a notification with it"
-msgstr "Quando un cliente inserisce un RMA, invia una notifica con esso"
+msgstr "Quando un cliente inserisce una RMA, invia una notifica con essa"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
@@ -2589,7 +2586,7 @@ msgid ""
 "When the RMA is receive, allow to finsish it manually choosing\n"
 "                                    a finalization reason."
 msgstr ""
-"Quando si riceve l'RMA, permette di chiuderlo manualmente scegliendo\n"
+"Quando si riceve l'RMA, permette di chiuderla manualmente scegliendo\n"
 "                                    un motivo per la chiusura."
 
 #. module: rma
@@ -2665,8 +2662,8 @@ msgid ""
 "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }}) products "
 "received"
 msgstr ""
-"Prodotti ricevuti per RMA (rif. {{object.name or 'n/a' }}) di {{object."
-"company_id.name}}"
+"Prodotti ricevuti per RMA (rif. {{object.name or 'n/a' }}) di "
+"{{object.company_id.name}}"
 
 #. module: rma
 #: model:mail.template,subject:rma.mail_template_rma_draft_notification
@@ -2677,8 +2674,12 @@ msgstr ""
 "{{object.company_id.name}} La vostra RMA è stata creata con successo (rif. "
 "{{object.name or 'n/a' }})"
 
-#~ msgid "Values set here are company-specific."
-#~ msgstr "I valori impostati qui sono specifici per azienda."
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui "
+#~ "sono specifici per azienda.\" groups=\"base.group_multi_company\"/>"
 
 #~ msgid ""
 #~ "When the RMA is receive, allow to finsish it manually choosing a "
@@ -2759,11 +2760,11 @@ msgstr ""
 #~ "ricevuti"
 
 #~ msgid ""
-#~ "${object.company_id.name} Your RMA has been succesfully created (Ref "
-#~ "${object.name or 'n/a' })"
+#~ "${object.company_id.name} Your RMA has been succesfully created (Ref $"
+#~ "{object.name or 'n/a' })"
 #~ msgstr ""
-#~ "${object.company_id.name} Il tuo RMA è stato creato correttamente (Ref "
-#~ "${object.name or 'n/a' })"
+#~ "${object.company_id.name} Il tuo RMA è stato creato correttamente (Ref $"
+#~ "{object.name or 'n/a' })"
 
 #, python-format
 #~ msgid "<b>E-mail subject:</b> %s<br/><br/><b>E-mail body:</b><br/>%s"
@@ -2778,8 +2779,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Here is the RMA <strong>${object.name}</strong> from ${object."
-#~ "company_id.name}.\n"
+#~ "    Here is the RMA <strong>${object.name}</strong> from $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Do not hesitate to contact us if you have any question.\n"
 #~ "</p>\n"
@@ -2794,8 +2795,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Di seguito l'RMA <strong>${object.name}</strong> da ${object."
-#~ "company_id.name}.\n"
+#~ "    Di seguito l'RMA <strong>${object.name}</strong> da $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Non esiti a contattarci per qualsiasi domanda.\n"
 #~ "</p>\n"
@@ -2929,8 +2930,8 @@ msgstr ""
 #~ "data-oe-id=\"%d\">%s</a>) has been created."
 #~ msgstr ""
 #~ "Sostituzione: Il trasferimento <a href=\"#\" data-oe-model=\"stock.move\" "
-#~ "data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a>) è stato creato."
+#~ "data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a>) è stato creato."
 
 #, python-format
 #~ msgid ""
@@ -2939,10 +2940,10 @@ msgstr ""
 #~ "create a new move, but one of the previously created moves was updated "
 #~ "with this data."
 #~ msgstr ""
-#~ "Sostituzione:<br/>Il prodotto<a href=\"#\" data-oe-model=\"product."
-#~ "product\" data-oe-id=\"%d\">%s</a><br/>Quantità%f %s<br/>Questo prodotto "
-#~ "non ha generato un nuovo trasferimento, ma uno dei trasferimenti già "
-#~ "creati è stato aggiornato con questi dati."
+#~ "Sostituzione:<br/>Il prodotto<a href=\"#\" data-oe-"
+#~ "model=\"product.product\" data-oe-id=\"%d\">%s</a><br/>Quantità%f %s<br/"
+#~ ">Questo prodotto non ha generato un nuovo trasferimento, ma uno dei "
+#~ "trasferimenti già creati è stato aggiornato con questi dati."
 
 #, python-format
 #~ msgid ""

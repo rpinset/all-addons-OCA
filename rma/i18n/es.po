@@ -348,15 +348,6 @@ msgstr ""
 "                                </span>"
 
 #. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Valores específicos por "
-"compañía.\" groups=\"base.group_multi_company\"/>"
-
-#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "<span>Awaiting action</span>"
 msgstr ""
@@ -2085,8 +2076,8 @@ msgid ""
 "Return: <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
 "id=\"%(id)d\">%(name)s</a> has been created."
 msgstr ""
-"Devolución: La orden de entrega <a href=\"#\" data-oe-model=\"stock."
-"picking\" data-oe-id=\"%(id)d\">%(name)s</a> ha sido creada."
+"Devolución: La orden de entrega <a href=\"#\" data-oe-"
+"model=\"stock.picking\" data-oe-id=\"%(id)d\">%(name)s</a> ha sido creada."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__returned
@@ -2370,8 +2361,8 @@ msgid ""
 "<jobs@example.odoo.com>"
 msgstr ""
 "El nombre de este seudónimo de correo electrónico. Por ejemplo, "
-"\"trabajos\", si lo que quiere es obtener los correos para <trabajos@example."
-"odoo.com>"
+"\"trabajos\", si lo que quiere es obtener los correos para "
+"<trabajos@example.odoo.com>"
 
 #. module: rma
 #. odoo-python
@@ -2522,6 +2513,11 @@ msgid "User: Own Documents Only"
 msgstr "Usuario: Solo mostrar documentos propios"
 
 #. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr ""
+
+#. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
 msgid "View"
 msgstr ""
@@ -2669,6 +2665,13 @@ msgid ""
 msgstr ""
 "{{object.company_id.name}} Su RMA se ha creado con éxito (Ref {{object.name "
 "or 'n/a' }})"
+
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Valores específicos por "
+#~ "compañía.\" groups=\"base.group_multi_company\"/>"
 
 #~ msgid "<strong>Delivered qty:</strong>"
 #~ msgstr "<strong>Cantidad entregada:</strong>"

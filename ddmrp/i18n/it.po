@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-10-21 09:42+0000\n"
+"PO-Revision-Date: 2026-02-17 09:09+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__used_in_bom_count
@@ -39,17 +39,6 @@ msgstr ""
 "* Disponibile: il prodotto del movimento di magazzino è prenotato.\n"
 "* Eseguito: il prodotto è stato trasferito e il trasferimento è stato "
 "confermato."
-
-#. module: ddmrp
-#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" role=\"img\" aria-label=\"Values set here are company-specific."
-"\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
-"specifici per azienda.\" role=\"img\" aria-label=\"I valori impostati qui "
-"sono specifici per azienda.\" groups=\"base.group_multi_company\"/>"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu
@@ -1960,6 +1949,11 @@ msgid "Used In"
 msgstr "Utilizzato in"
 
 #. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr "I valori impostati qui sono specifici per azienda."
+
+#. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile__variability_id
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability__factor
 msgid "Variability Factor"
@@ -2168,6 +2162,16 @@ msgstr "giorni"
 #: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
 msgid "or"
 msgstr "o"
+
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" role=\"img\" aria-label=\"Values set here are company-"
+#~ "specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui "
+#~ "sono specifici per azienda.\" role=\"img\" aria-label=\"I valori "
+#~ "impostati qui sono specifici per azienda.\" "
+#~ "groups=\"base.group_multi_company\"/>"
 
 #~ msgid ""
 #~ "* New: When the stock move is created and not yet confirmed.\n"
