@@ -63,6 +63,9 @@ class TestAnnouncement(BaseCommon):
                 "active": True,
             }
         )
+        cls.test_group = cls.env["res.groups"].create(
+            {"name": "Test Group for Exclusion", "users": [Command.link(cls.user.id)]}
+        )
 
     @users("test-user-system")
     def test_announcements_user_system(self):
@@ -92,3 +95,36 @@ class TestAnnouncement(BaseCommon):
             {"specific_user_ids": [Command.link(self.user.id)]}
         )
         self.assertIn(self.custom_announcement, self.user.unread_announcement_ids)
+
+    def test_excluded_user(self):
+        """If a general announcement has excluded users, those users should not see it."""
+        self.env.invalidate_all()
+        self.general_announcement._compute_allowed_user_ids()
+        self.assertIn(self.user, self.general_announcement.allowed_user_ids)
+
+        self.general_announcement.write(
+            {
+                "excluded_users_ids": [Command.link(self.user.id)],
+            }
+        )
+
+        self.env.invalidate_all()
+        self.general_announcement._compute_allowed_user_ids()
+        self.assertNotIn(self.user, self.general_announcement.allowed_user_ids)
+
+    def test_excluded_group(self):
+        """If a general announcement has excluded groups, users in those groups
+        should not see it."""
+        self.env.invalidate_all()
+        self.general_announcement._compute_allowed_user_ids()
+        self.assertIn(self.user, self.general_announcement.allowed_user_ids)
+
+        self.general_announcement.write(
+            {
+                "excluded_groups_ids": [Command.link(self.test_group.id)],
+            }
+        )
+
+        self.env.invalidate_all()
+        self.general_announcement._compute_allowed_user_ids()
+        self.assertNotIn(self.user, self.general_announcement.allowed_user_ids)

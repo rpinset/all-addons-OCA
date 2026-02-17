@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-02-17 10:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: crm_team_zip_assign
 #. odoo-python
@@ -20,67 +22,69 @@ msgstr ""
 #, python-format
 msgid "A company must be set if 'Enable Auto ZIP Assignment' is checked."
 msgstr ""
+"Se è selezionata l'opzione \"Abilita assegnazione automatica CAP\", è "
+"necessario impostare un'azienda."
 
 #. module: crm_team_zip_assign
 #: model:ir.actions.server,name:crm_team_zip_assign.ir_action_server_crm_team_zip_assign
 msgid "Assign CRM Team By Zip"
-msgstr ""
+msgstr "Assegna il team CRM in base al codice postale"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__zip_assignment_priority
 msgid "Assignment Priority"
-msgstr ""
+msgstr "Priorità assegnazione"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__team_id
 msgid "CRM Team"
-msgstr ""
+msgstr "Team CRM"
 
 #. module: crm_team_zip_assign
 #: model:ir.model,name:crm_team_zip_assign.model_crm_team_zip_pattern
 msgid "CRM Team ZIP Pattern"
-msgstr ""
+msgstr "Schema CAP team CRM"
 
 #. module: crm_team_zip_assign
 #: model:ir.model,name:crm_team_zip_assign.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__country_ids
 msgid "Countries"
-msgstr ""
+msgstr "Nazioni"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__country_ids
 msgid "Countries where this team operates"
-msgstr ""
+msgstr "Nazioni dove opera i team"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__enable_zip_auto_assignment
 msgid "Enable Auto ZIP Assignment"
-msgstr ""
+msgstr "Abilita assegnazione automatica CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_res_partner__exclude_from_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_res_users__exclude_from_zip_assign
 msgid "Exclude from ZIP Assignment"
-msgstr ""
+msgstr "Escludi dall'assegnazione CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__zip_assignment_priority
@@ -88,11 +92,13 @@ msgid ""
 "Higher priority teams will be preferred when multiple teams match the same "
 "ZIP code. Higher number = higher priority."
 msgstr ""
+"Saranno preferiti i team con priorità più alta quando più team corrispondono "
+"allo stesso CAP. Numero più alto = priorità più alta."
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_res_partner__exclude_from_zip_assign
@@ -101,6 +107,8 @@ msgid ""
 "If checked, this partner will not be automatically assigned to a CRM team "
 "based on ZIP code patterns."
 msgstr ""
+"Se selezionato, questo partner non verrà assegnato automaticamente a un team "
+"CRM in base agli schemi CAP."
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__enable_zip_auto_assignment
@@ -108,6 +116,8 @@ msgid ""
 "If checked, this team will be considered for automatic assignment based on "
 "ZIP code patterns."
 msgstr ""
+"Se selezionata, questo team verrà preso in considerazione per l'assegnazione "
+"automatica in base agli schemi CAP."
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__pre_zip_match_condition
@@ -115,31 +125,33 @@ msgid ""
 "If present, this condition must be satisfied before matching the zip regular"
 " expression."
 msgstr ""
+"Se presente, questa condizione deve essere soddisfatta prima di trovare la "
+"corrispondenza con l'espressione regolare CAP."
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__pre_zip_match_condition
 msgid "Pre-Zip Match Condition"
-msgstr ""
+msgstr "Precondizione corrispondenza CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team_zip_pattern__pattern
@@ -147,26 +159,28 @@ msgid ""
 "Python regular expression pattern to match ZIP codes. Example: '^1[0-5].*' "
 "for ZIP codes starting with 10-15"
 msgstr ""
+"Schema espressione regolare Python per trovare i CAP corrispondenti. "
+"Esempio: '^1[0-5].*' per i CAP che iniziano con 10-15"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__zip_regex_ids
 msgid "Regular expression patterns to match partner ZIP codes"
-msgstr ""
+msgstr "Schemi espressione regolare per la corrispondenza CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model,name:crm_team_zip_assign.model_crm_team
 msgid "Sales Team"
-msgstr ""
+msgstr "Team di vendita"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__state_ids
 msgid "States"
-msgstr ""
+msgstr "Stati"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,help:crm_team_zip_assign.field_crm_team__state_ids
 msgid "States where this team operates"
-msgstr ""
+msgstr "Stati dove opera questo team"
 
 #. module: crm_team_zip_assign
 #. odoo-python
@@ -174,29 +188,29 @@ msgstr ""
 #: model:ir.model.constraint,message:crm_team_zip_assign.constraint_crm_team_zip_pattern_unique_team_id_pattern_combination
 #, python-format
 msgid "The pattern has already been assigned to this team."
-msgstr ""
+msgstr "È già stato assegnato uno schema a questo team."
 
 #. module: crm_team_zip_assign
 #: model_terms:ir.ui.view,arch_db:crm_team_zip_assign.crm_team_view_form
 msgid "ZIP Auto Assignment Settings"
-msgstr ""
+msgstr "Impostazioni auto assegnazione CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team_zip_pattern__pattern
 msgid "ZIP Pattern"
-msgstr ""
+msgstr "Schema CAP"
 
 #. module: crm_team_zip_assign
 #: model_terms:ir.ui.view,arch_db:crm_team_zip_assign.crm_team_view_form
 msgid "ZIP Patterns"
-msgstr ""
+msgstr "Schemi CAP"
 
 #. module: crm_team_zip_assign
 #: model:ir.model.fields,field_description:crm_team_zip_assign.field_crm_team__zip_regex_ids
 msgid "ZIP Regex"
-msgstr ""
+msgstr "Espressione regolare CAP"
 
 #. module: crm_team_zip_assign
 #: model_terms:ir.ui.view,arch_db:crm_team_zip_assign.crm_team_view_form
 msgid "^1[0-5].*"
-msgstr ""
+msgstr "^1[0-5].*"

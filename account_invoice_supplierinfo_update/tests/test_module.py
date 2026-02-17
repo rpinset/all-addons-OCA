@@ -88,7 +88,7 @@ class TestModule(AccountTestInvoicingCommon):
         )
 
         # Set the variation 2 on the invoice and run the wizard
-        self.line_a.write({"product_id": product_a_2, "price_unit": 400})
+        self.line_a.write({"product_id": product_a_2.id, "price_unit": 400})
         vals_wizard = self.invoice.check_supplierinfo().get("context", {})
         line_ids = vals_wizard.get("default_line_ids", {})
 

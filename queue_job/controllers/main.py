@@ -6,6 +6,7 @@ import logging
 import random
 import time
 import traceback
+from contextlib import contextmanager
 from io import StringIO
 from typing import Optional
 
@@ -24,6 +25,29 @@ _logger = logging.getLogger(__name__)
 PG_RETRY = 5  # seconds
 
 DEPENDS_MAX_TRIES_ON_CONCURRENCY_FAILURE = 5
+
+
+@contextmanager
+def _prevent_commit(cr):
+    """Context manager to prevent commits on a cursor.
+
+    Commiting while the job is not finished would release the job lock, causing
+    it to be started again by the dead jobs requeuer.
+    """
+
+    def forbidden_commit(*args, **kwargs):
+        raise RuntimeError(
+            "Commit is forbidden in queue jobs. "
+            "If the current job is a cron running as queue job, "
+            "modify it to run as a normal cron."
+        )
+
+    original_commit = cr.commit
+    cr.commit = forbidden_commit
+    try:
+        yield
+    finally:
+        cr.commit = original_commit
 
 
 class RunJobController(http.Controller):
@@ -69,13 +93,16 @@ class RunJobController(http.Controller):
     def _try_perform_job(cls, env, job):
         """Try to perform the job, mark it done and commit if successful."""
         _logger.debug("%s started", job)
-        job.perform()
-        # Triggers any stored computed fields before calling 'set_done'
-        # so that will be part of the 'exec_time'
-        env.flush_all()
-        job.set_done()
-        job.store()
-        env.flush_all()
+        # TODO refactor, the relation between env and job.env is not clear
+        assert env.cr is job.env.cr
+        with _prevent_commit(env.cr):
+            job.perform()
+            # Triggers any stored computed fields before calling 'set_done'
+            # so that will be part of the 'exec_time'
+            env.flush_all()
+            job.set_done()
+            job.store()
+            env.flush_all()
         env.cr.commit()
         _logger.debug("%s done", job)
 
@@ -212,6 +239,7 @@ class RunJobController(http.Controller):
         size=1,
         failure_rate=0,
         job_duration=0,
+        commit_within_job=False,
     ):
         """Create test jobs
 
@@ -267,6 +295,7 @@ class RunJobController(http.Controller):
                 description=description,
                 failure_rate=failure_rate,
                 job_duration=job_duration,
+                commit_within_job=commit_within_job,
             )
 
         if size > 1:
@@ -278,6 +307,7 @@ class RunJobController(http.Controller):
                 description=description,
                 failure_rate=failure_rate,
                 job_duration=job_duration,
+                commit_within_job=commit_within_job,
             )
         return ""
 
@@ -290,6 +320,7 @@ class RunJobController(http.Controller):
         size=1,
         failure_rate=0,
         job_duration=0,
+        commit_within_job=False,
     ):
         delayed = (
             http.request.env["queue.job"]
@@ -299,7 +330,11 @@ class RunJobController(http.Controller):
                 channel=channel,
                 description=description,
             )
-            ._test_job(failure_rate=failure_rate, job_duration=job_duration)
+            ._test_job(
+                failure_rate=failure_rate,
+                job_duration=job_duration,
+                commit_within_job=commit_within_job,
+            )
         )
         return "job uuid: %s" % (delayed.db_record().uuid,)
 
@@ -314,6 +349,7 @@ class RunJobController(http.Controller):
         description="Test job",
         failure_rate=0,
         job_duration=0,
+        commit_within_job=False,
     ):
         model = http.request.env["queue.job"]
         current_count = 0
@@ -336,7 +372,11 @@ class RunJobController(http.Controller):
                         max_retries=max_retries,
                         channel=channel,
                         description="%s #%d" % (description, current_count),
-                    )._test_job(failure_rate=failure_rate, job_duration=job_duration)
+                    )._test_job(
+                        failure_rate=failure_rate,
+                        job_duration=job_duration,
+                        commit_within_job=commit_within_job,
+                    )
                 )
 
             grouping = random.choice(possible_grouping_methods)

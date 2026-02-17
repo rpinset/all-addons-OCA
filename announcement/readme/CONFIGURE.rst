@@ -9,6 +9,10 @@ When your user has such permissions, this is the way to create an announcement:
    - Specific users: manually select which users will see the announcement.
    - User groups: users from the selected groups will be the ones to see the
      announcement.
+   - Excluded users: excluded users won't see the announcement even it is a general 
+     announcement or belongs to selected groups.
+   - Excluded groups: users from the excluded groups won't see the announcement even it
+     is a general announcement or belongs to selected groups.
 #. Define the announcement body. You can use rich formatting and event paste your
    own html (editor in debug mode).
 #. By default, the announcement will be archived. This is to prevent the announcement

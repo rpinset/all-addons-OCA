@@ -163,6 +163,16 @@ msgid "Employees"
 msgstr "Empleados"
 
 #. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__excluded_groups_ids
+msgid "Excluded Groups"
+msgstr ""
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__excluded_users_ids
+msgid "Excluded Users"
+msgstr ""
+
+#. module: announcement
 #: model:ir.model.fields,field_description:announcement.field_announcement_tag__full_name
 msgid "Full Name"
 msgstr "Nombre completo"
@@ -416,6 +426,11 @@ msgstr "Grupos de usuarios"
 #: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_form
 msgid "Users"
 msgstr "Usuarios"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Users Scope"
+msgstr ""
 
 #. module: announcement
 #: model:res.groups,comment:announcement.announcemenent_manager

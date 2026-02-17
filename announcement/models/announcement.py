@@ -90,6 +90,14 @@ class Announcement(models.Model):
         comodel_name="announcement.log",
         inverse_name="announcement_id",
     )
+    excluded_users_ids = fields.Many2many(
+        comodel_name="res.users",
+        relation="announcement_res_users_excluded_rel",
+    )
+    excluded_groups_ids = fields.Many2many(
+        comodel_name="res.groups",
+        relation="announcement_res_groups_excluded_rel",
+    )
 
     def _inverse_specific_user_ids(self):
         """Used to set users unread announcements when they're set in the announcement
@@ -101,7 +109,12 @@ class Announcement(models.Model):
             ):
                 user.unread_announcement_ids |= announcement
 
-    @api.depends("specific_user_ids", "user_group_ids")
+    @api.depends(
+        "specific_user_ids",
+        "user_group_ids",
+        "excluded_users_ids",
+        "excluded_groups_ids",
+    )
     def _compute_allowed_user_ids(self):
         self.allowed_user_ids = False
         self.allowed_users_count = False
@@ -112,7 +125,10 @@ class Announcement(models.Model):
             announcement.allowed_user_ids = announcement.specific_user_ids
             announcement.allowed_users_count = len(announcement.specific_user_ids)
         for announcement in self - specific_user_announcements:
-            announcement.allowed_user_ids = announcement.user_group_ids.users
+            announcement.allowed_user_ids = announcement.user_group_ids.users.filtered(
+                lambda u: u not in announcement.excluded_users_ids
+                and not (u.groups_id & announcement.excluded_groups_ids)
+            )
             announcement.allowed_users_count = len(announcement.user_group_ids.users)
 
     @api.depends("is_general_announcement")

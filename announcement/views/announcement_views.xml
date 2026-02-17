@@ -89,6 +89,8 @@
                                 options="{'color_field': 'color'}"
                                 placeholder="Tags..."
                             />
+                            <field name="excluded_users_ids" widget="many2many_tags" />
+                            <field name="excluded_groups_ids" widget="many2many_tags" />
                         </group>
                     </group>
                     <group>
@@ -106,6 +108,17 @@
                                     placeholder="Set here the content of the announcement."
                                 />
                             </group>
+                        </page>
+                        <page name="users_scope" string="Users Scope">
+                            <field
+                                name="allowed_user_ids"
+                                options="{'no_create': True}"
+                                nolabel="1"
+                            >
+                                <tree>
+                                    <field name="name" />
+                                </tree>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>
