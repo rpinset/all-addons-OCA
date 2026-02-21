@@ -7,18 +7,17 @@ from odoo.addons.base.tests.common import BaseCommon
 
 
 class CommonBaseSubstate(BaseCommon):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+    def setUp(self):
+        super().setUp()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .sale_test import (
             BaseSubstateType,
             LineTest,
             SaleTest,
         )
 
-        cls.loader.update_registry(
+        self.loader.update_registry(
             (
                 SaleTest,
                 LineTest,
@@ -26,10 +25,10 @@ class CommonBaseSubstate(BaseCommon):
             )
         )
 
-        cls.sale_test_model = cls.env[SaleTest._name]
-        cls.sale_line_test_model = cls.env[LineTest._name]
+        self.sale_test_model = self.env[SaleTest._name]
+        self.sale_line_test_model = self.env[LineTest._name]
 
-        models = cls.env["ir.model"].search(
+        models = self.env["ir.model"].search(
             [
                 (
                     "model",
@@ -40,7 +39,7 @@ class CommonBaseSubstate(BaseCommon):
         )
         for model in models:
             # Access record:
-            cls.env["ir.model.access"].create(
+            self.env["ir.model.access"].create(
                 {
                     "name": f"access {model.name}",
                     "model_id": model.id,
@@ -51,7 +50,6 @@ class CommonBaseSubstate(BaseCommon):
                 }
             )
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        super().tearDown()

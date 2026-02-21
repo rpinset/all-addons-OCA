@@ -3,7 +3,7 @@
 {
     "name": "Date Range",
     "summary": "Manage all kind of date range",
-    "version": "18.0.5.0.0",
+    "version": "18.0.5.0.1",
     "category": "Uncategorized",
     "website": "https://github.com/OCA/server-ux",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",

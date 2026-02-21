@@ -15,9 +15,7 @@ msgstr ""
 
 #. module: l10n_it_riba_oca
 #: model_terms:ir.ui.view,arch_db:l10n_it_riba_oca.view_account_config_settings_riba
-msgid ""
-"<span class=\"o_form_label\">RiBa Collection Fees</span>\n"
-"                        <span class=\"fa fa-lg fa-building-o\" title=\"Product used as Service for RiBa Collection Fees\" aria-label=\"Product used as Service for RiBa Collection Fees\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgid "<span class=\"o_form_label\">RiBa Collection Fees</span>"
 msgstr ""
 
 #. module: l10n_it_riba_oca

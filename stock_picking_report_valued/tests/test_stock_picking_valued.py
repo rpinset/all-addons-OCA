@@ -3,6 +3,8 @@
 # Copyright 2019 Tecnativa - Carlos Dauden
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+from unittest.mock import patch
+
 from odoo.tests import common
 
 
@@ -163,22 +165,18 @@ class TestStockPickingValued(common.TransactionCase):
         picking = self.sale_order.picking_ids[0]
         picking.action_assign()
         StockPicking = type(picking)
-        # Save original method
-        original_method = StockPicking._get_report_valued_total_amount
 
         # Patch the CORRECT method
         def _patched_get_report_valued_total_amount(self):
             self.ensure_one()
             return self.amount_total + 10.23
 
-        try:
-            StockPicking._get_report_valued_total_amount = (
-                _patched_get_report_valued_total_amount
-            )
+        with patch.object(
+            StockPicking,
+            "_get_report_valued_total_amount",
+            _patched_get_report_valued_total_amount,
+        ):
             self.assertTrue(
                 picking._show_report_valued_total_block(),
                 "Total Picking block should be displayed when totals differ",
             )
-        finally:
-            # Restore original method
-            StockPicking._get_report_valued_total_amount = original_method

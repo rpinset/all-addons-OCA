@@ -9,19 +9,18 @@ from ..models.mis_kpi_data import ACC_AVG, ACC_SUM
 
 
 class TestKpiData(TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .fake_models import MisKpiDataTestItem
 
-        cls.loader.update_registry((MisKpiDataTestItem,))
-        cls.addClassCleanup(cls.loader.restore_registry)
+        self.loader.update_registry((MisKpiDataTestItem,))
+        self.addClassCleanup(self.loader.restore_registry)
 
-        report = cls.env["mis.report"].create(dict(name="test report"))
-        cls.kpi1 = cls.env["mis.report.kpi"].create(
+        report = self.env["mis.report"].create(dict(name="test report"))
+        self.kpi1 = self.env["mis.report.kpi"].create(
             dict(
                 report_id=report.id,
                 name="k1",
@@ -29,8 +28,8 @@ class TestKpiData(TransactionCase):
                 expression="AccountingNone",
             )
         )
-        cls.expr1 = cls.kpi1.expression_ids[0]
-        cls.kpi2 = cls.env["mis.report.kpi"].create(
+        self.expr1 = self.kpi1.expression_ids[0]
+        self.kpi2 = self.env["mis.report.kpi"].create(
             dict(
                 report_id=report.id,
                 name="k2",
@@ -38,39 +37,43 @@ class TestKpiData(TransactionCase):
                 expression="AccountingNone",
             )
         )
-        cls.expr2 = cls.kpi2.expression_ids[0]
-        cls.kd11 = cls.env["mis.kpi.data.test.item"].create(
+        self.expr2 = self.kpi2.expression_ids[0]
+        self.kd11 = self.env["mis.kpi.data.test.item"].create(
             dict(
-                kpi_expression_id=cls.expr1.id,
+                kpi_expression_id=self.expr1.id,
                 date_from="2017-05-01",
                 date_to="2017-05-10",
                 amount=10,
             )
         )
-        cls.kd12 = cls.env["mis.kpi.data.test.item"].create(
+        self.kd12 = self.env["mis.kpi.data.test.item"].create(
             dict(
-                kpi_expression_id=cls.expr1.id,
+                kpi_expression_id=self.expr1.id,
                 date_from="2017-05-11",
                 date_to="2017-05-20",
                 amount=20,
             )
         )
-        cls.kd13 = cls.env["mis.kpi.data.test.item"].create(
+        self.kd13 = self.env["mis.kpi.data.test.item"].create(
             dict(
-                kpi_expression_id=cls.expr1.id,
+                kpi_expression_id=self.expr1.id,
                 date_from="2017-05-21",
                 date_to="2017-05-25",
                 amount=30,
             )
         )
-        cls.kd21 = cls.env["mis.kpi.data.test.item"].create(
+        self.kd21 = self.env["mis.kpi.data.test.item"].create(
             dict(
-                kpi_expression_id=cls.expr2.id,
+                kpi_expression_id=self.expr2.id,
                 date_from="2017-06-01",
                 date_to="2017-06-30",
                 amount=3,
             )
         )
+
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def test_kpi_data_name(self):
         self.assertEqual(self.kd11.name, "k1: 2017-05-01 - 2017-05-10")

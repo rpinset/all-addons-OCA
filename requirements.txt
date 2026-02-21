@@ -140,6 +140,7 @@ chardet
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
 # generated from manifests external_dependencies
 codicefiscale
+num2words>=0.5.12
 openupgradelib
 unidecode
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)

@@ -7,18 +7,17 @@ from odoo.tests import TransactionCase
 
 
 class TestProrataReadGroup(TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+    def setUp(self):
+        super().setUp()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .fake_models import ProrataReadGroupThing
 
-        cls.loader.update_registry((ProrataReadGroupThing,))
-        cls.addClassCleanup(cls.loader.restore_registry)
+        self.loader.update_registry((ProrataReadGroupThing,))
+        self.addClassCleanup(self.loader.restore_registry)
 
-        cls.thing_model = cls.env["prorata.read.group.thing"]
-        cls.thing_model.create(
+        self.thing_model = self.env["prorata.read.group.thing"]
+        self.thing_model.create(
             {
                 "date_from": "2024-01-01",
                 "date_to": "2024-01-05",
@@ -27,7 +26,7 @@ class TestProrataReadGroup(TransactionCase):
                 "credit": 0,
             }
         )
-        cls.thing_model.create(
+        self.thing_model.create(
             {
                 "date_from": "2024-01-01",
                 "date_to": "2024-01-20",
@@ -36,7 +35,7 @@ class TestProrataReadGroup(TransactionCase):
                 "credit": 0,
             }
         )
-        cls.thing_model.create(
+        self.thing_model.create(
             {
                 "date_from": "2024-01-15",
                 "date_to": "2024-01-20",
@@ -45,6 +44,10 @@ class TestProrataReadGroup(TransactionCase):
                 "credit": 0,
             }
         )
+
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def test_prorata_read_group(self):
         """Test a pro-rata read_group with a date period."""

@@ -9,22 +9,20 @@ from odoo.tests import common
 
 
 class TestBaseRevision(common.TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .base_revision_tester import BaseRevisionTester
 
-        cls.loader.update_registry((BaseRevisionTester,))
+        self.loader.update_registry((BaseRevisionTester,))
 
-        cls.revision_model = cls.env[BaseRevisionTester._name]
+        self.revision_model = self.env[BaseRevisionTester._name]
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        return super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def _create_tester(self, vals_list=None):
         if not vals_list:

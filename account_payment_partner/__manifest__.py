@@ -6,7 +6,7 @@
 
 {
     "name": "Account Payment Partner",
-    "version": "18.0.1.0.3",
+    "version": "18.0.1.0.4",
     "category": "Banking addons",
     "license": "AGPL-3",
     "summary": "Adds payment mode on partners and invoices",
@@ -20,6 +20,7 @@
         "views/account_move_view.xml",
         "views/account_move_line.xml",
         "views/account_payment_mode.xml",
+        "views/res_config_settings.xml",
         "views/report_invoice.xml",
         "reports/account_invoice_report_view.xml",
     ],

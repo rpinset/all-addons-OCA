@@ -9,15 +9,14 @@ from odoo.addons.base_tier_validation.tests.common import CommonTierValidation
 
 
 class TierTierValidation(CommonTierValidation):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
         from .tier_validation_tester import TierValidationTester
 
-        cls.loader.update_registry((TierValidationTester,))
+        self.loader.update_registry((TierValidationTester,))
 
-        cls.test_record.name = "test"
+        self.test_record.name = "test"
 
     def test_01_tier_correction(self):
         """With the document in validation,

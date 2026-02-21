@@ -106,19 +106,21 @@ class TestBaseExternalDbsource(common.TransactionCase):
         """It should call the adapter method with proper args"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = "table"
-        res, adapter = self._test_adapter_method(
-            "remote_browse", create=True, args=args, kwargs=kwargs
-        )
-        adapter.assert_called_once_with(*args, **kwargs)
-        self.assertEqual(res, adapter())
+        with mock.patch.object(type(self.dbsource), "current_table", "table"):
+            res, adapter = self._test_adapter_method(
+                "remote_browse", create=True, args=args, kwargs=kwargs
+            )
+            adapter.assert_called_once_with(*args, **kwargs)
+            self.assertEqual(res, adapter())
 
     def test_remote_browse_asserts_current_table(self):
         """It should raise AssertionError if a table not selected"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = False
-        with self.assertRaises(AssertionError):
+        with (
+            mock.patch.object(type(self.dbsource), "current_table", False),
+            self.assertRaises(AssertionError),
+        ):
             res, adapter = self._test_adapter_method(
                 "remote_browse", create=True, args=args, kwargs=kwargs
             )
@@ -127,19 +129,21 @@ class TestBaseExternalDbsource(common.TransactionCase):
         """It should call the adapter method with proper args"""
         args = {"val": "Value"}, "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = "table"
-        res, adapter = self._test_adapter_method(
-            "remote_create", create=True, args=args, kwargs=kwargs
-        )
-        adapter.assert_called_once_with(*args, **kwargs)
-        self.assertEqual(res, adapter())
+        with mock.patch.object(type(self.dbsource), "current_table", "table"):
+            res, adapter = self._test_adapter_method(
+                "remote_create", create=True, args=args, kwargs=kwargs
+            )
+            adapter.assert_called_once_with(*args, **kwargs)
+            self.assertEqual(res, adapter())
 
     def test_remote_create_asserts_current_table(self):
         """It should raise AssertionError if a table not selected"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = False
-        with self.assertRaises(AssertionError):
+        with (
+            mock.patch.object(type(self.dbsource), "current_table", False),
+            self.assertRaises(AssertionError),
+        ):
             res, adapter = self._test_adapter_method(
                 "remote_create", create=True, args=args, kwargs=kwargs
             )
@@ -148,19 +152,21 @@ class TestBaseExternalDbsource(common.TransactionCase):
         """It should call the adapter method with proper args"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = "table"
-        res, adapter = self._test_adapter_method(
-            "remote_delete", create=True, args=args, kwargs=kwargs
-        )
-        adapter.assert_called_once_with(*args, **kwargs)
-        self.assertEqual(res, adapter())
+        with mock.patch.object(type(self.dbsource), "current_table", "table"):
+            res, adapter = self._test_adapter_method(
+                "remote_delete", create=True, args=args, kwargs=kwargs
+            )
+            adapter.assert_called_once_with(*args, **kwargs)
+            self.assertEqual(res, adapter())
 
     def test_remote_delete_asserts_current_table(self):
         """It should raise AssertionError if a table not selected"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = False
-        with self.assertRaises(AssertionError):
+        with (
+            mock.patch.object(type(self.dbsource), "current_table", False),
+            self.assertRaises(AssertionError),
+        ):
             res, adapter = self._test_adapter_method(
                 "remote_delete", create=True, args=args, kwargs=kwargs
             )
@@ -169,19 +175,21 @@ class TestBaseExternalDbsource(common.TransactionCase):
         """It should call the adapter method with proper args"""
         args = {"search": "query"}, "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = "table"
-        res, adapter = self._test_adapter_method(
-            "remote_search", create=True, args=args, kwargs=kwargs
-        )
-        adapter.assert_called_once_with(*args, **kwargs)
-        self.assertEqual(res, adapter())
+        with mock.patch.object(type(self.dbsource), "current_table", "table"):
+            res, adapter = self._test_adapter_method(
+                "remote_search", create=True, args=args, kwargs=kwargs
+            )
+            adapter.assert_called_once_with(*args, **kwargs)
+            self.assertEqual(res, adapter())
 
     def test_remote_search_asserts_current_table(self):
         """It should raise AssertionError if a table not selected"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = False
-        with self.assertRaises(AssertionError):
+        with (
+            mock.patch.object(type(self.dbsource), "current_table", False),
+            self.assertRaises(AssertionError),
+        ):
             res, adapter = self._test_adapter_method(
                 "remote_search", create=True, args=args, kwargs=kwargs
             )
@@ -190,19 +198,21 @@ class TestBaseExternalDbsource(common.TransactionCase):
         """It should call the adapter method with proper args"""
         args = [1], {"vals": "Value"}, "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = "table"
-        res, adapter = self._test_adapter_method(
-            "remote_update", create=True, args=args, kwargs=kwargs
-        )
-        adapter.assert_called_once_with(*args, **kwargs)
-        self.assertEqual(res, adapter())
+        with mock.patch.object(type(self.dbsource), "current_table", "table"):
+            res, adapter = self._test_adapter_method(
+                "remote_update", create=True, args=args, kwargs=kwargs
+            )
+            adapter.assert_called_once_with(*args, **kwargs)
+            self.assertEqual(res, adapter())
 
     def test_remote_update_asserts_current_table(self):
         """It should raise AssertionError if a table not selected"""
         args = [1], "args"
         kwargs = {"kwargs": True}
-        type(self.dbsource).current_table = False
-        with self.assertRaises(AssertionError):
+        with (
+            mock.patch.object(type(self.dbsource), "current_table", False),
+            self.assertRaises(AssertionError),
+        ):
             res, adapter = self._test_adapter_method(
                 "remote_update", create=True, args=args, kwargs=kwargs
             )

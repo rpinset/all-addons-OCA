@@ -8,27 +8,26 @@ from odoo.tests import Form, common, tagged
 
 @tagged("post_install", "-at_install")
 class TestCancelConfirm(common.TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .cancel_confirm_tester import CancelConfirmTester
 
-        cls.loader.update_registry((CancelConfirmTester,))
-        cls.test_model = cls.env[CancelConfirmTester._name]
-        cls.tester_model = cls.env["ir.model"].search(
+        self.loader.update_registry((CancelConfirmTester,))
+        self.test_model = self.env[CancelConfirmTester._name]
+        self.tester_model = self.env["ir.model"].search(
             [("model", "=", "cancel.confirm.tester")]
         )
-        cls.env["ir.config_parameter"].create(
+        self.env["ir.config_parameter"].create(
             {"key": "cancel.confirm.tester.cancel_confirm_disable", "value": "False"}
         )
         # Access record:
-        cls.env["ir.model.access"].create(
+        self.env["ir.model.access"].create(
             {
                 "name": "access.cancel.confirm.tester",
-                "model_id": cls.tester_model.id,
+                "model_id": self.tester_model.id,
                 "perm_read": 1,
                 "perm_write": 1,
                 "perm_create": 1,
@@ -36,12 +35,11 @@ class TestCancelConfirm(common.TransactionCase):
             }
         )
 
-        cls.test_record = cls.test_model.create({"name": "DOC-001"})
+        self.test_record = self.test_model.create({"name": "DOC-001"})
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        return super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def test_01_cancel_confirm_tester(self):
         """Cancel a document, I expect cancel_reason.

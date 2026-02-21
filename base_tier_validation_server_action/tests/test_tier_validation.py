@@ -8,25 +8,24 @@ from odoo.tests.common import tagged
 
 @tagged("post_install", "-at_install")
 class TierTierValidation(common.TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .tier_validation_tester import TierValidationTester
 
-        cls.loader.update_registry((TierValidationTester,))
-        cls.test_model = cls.env[TierValidationTester._name]
-        cls.tester_model = cls.env["ir.model"].search(
+        self.loader.update_registry((TierValidationTester,))
+        self.test_model = self.env[TierValidationTester._name]
+        self.tester_model = self.env["ir.model"].search(
             [("model", "=", "tier.validation.tester")]
         )
 
         # Access record:
-        cls.env["ir.model.access"].create(
+        self.env["ir.model.access"].create(
             {
                 "name": "access.tester",
-                "model_id": cls.tester_model.id,
+                "model_id": self.tester_model.id,
                 "perm_read": 1,
                 "perm_write": 1,
                 "perm_create": 1,
@@ -35,36 +34,35 @@ class TierTierValidation(common.TransactionCase):
         )
 
         # Create users:
-        cls.group_system = cls.env.ref("base.group_system")
-        group_ids = cls.group_system.ids
-        cls.test_user_1 = cls.env["res.users"].create(
+        self.group_system = self.env.ref("base.group_system")
+        group_ids = self.group_system.ids
+        self.test_user_1 = self.env["res.users"].create(
             {"name": "John", "login": "test1", "groups_id": [(6, 0, group_ids)]}
         )
-        cls.test_user_2 = cls.env["res.users"].create(
+        self.test_user_2 = self.env["res.users"].create(
             {"name": "Mike", "login": "test2"}
         )
-        cls.test_user_3 = cls.env["res.users"].create(
+        self.test_user_3 = self.env["res.users"].create(
             {"name": "John Wick", "login": "test3", "groups_id": [(6, 0, group_ids)]}
         )
 
         # Create tier definitions:
-        cls.tier_def_obj = cls.env["tier.definition"]
-        cls.tier_def_obj.create(
+        self.tier_def_obj = self.env["tier.definition"]
+        self.tier_def_obj.create(
             {
-                "model_id": cls.tester_model.id,
+                "model_id": self.tester_model.id,
                 "review_type": "individual",
-                "reviewer_id": cls.test_user_1.id,
+                "reviewer_id": self.test_user_1.id,
                 "definition_domain": "[('test_field', '>', 1.0)]",
                 "sequence": 30,
             }
         )
 
-        cls.test_record = cls.test_model.create({"test_field": 2.5})
+        self.test_record = self.test_model.create({"test_field": 2.5})
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        super().tearDown()
 
     def test_1_auto_validation(self):
         # Create new test record

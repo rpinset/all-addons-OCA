@@ -8,21 +8,20 @@ from odoo.tests.common import TransactionCase
 
 
 class TestDateRangeSearchMixin(TransactionCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
         # Load a test model using odoo_test_helper
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .models import TestDateRangeSearchMixin
 
-        cls.loader.update_registry((TestDateRangeSearchMixin,))
+        self.loader.update_registry((TestDateRangeSearchMixin,))
 
-        cls.env.user.lang = "en_US"
-        rtype = cls.env["date.range.type"].create(
+        self.env.user.lang = "en_US"
+        rtype = self.env["date.range.type"].create(
             {"name": __name__, "company_id": False, "allow_overlap": False}
         )
-        cls.env["date.range.generator"].create(
+        self.env["date.range.generator"].create(
             {
                 "date_start": "1943-01-01",
                 "name_prefix": "1943-",
@@ -32,13 +31,12 @@ class TestDateRangeSearchMixin(TransactionCase):
                 "count": 4,
             }
         ).action_apply()
-        cls.ranges = cls.env["date.range"].search([("type_id", "=", rtype.id)])
-        cls.model = cls.env[TestDateRangeSearchMixin._name]
+        self.ranges = self.env["date.range"].search([("type_id", "=", rtype.id)])
+        self.model = self.env[TestDateRangeSearchMixin._name]
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        return super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def test_01_search_view(self):
         """The search field is injected in the model's search view"""

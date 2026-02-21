@@ -164,15 +164,15 @@ msgid "Stock Valuation History"
 msgstr ""
 
 #. module: stock_account_valuation_report
-#: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__stock_valuation_layer_ids
-msgid "Stock Valuation Layer"
-msgstr ""
-
-#. module: stock_account_valuation_report
 #: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__valuation_discrepancy
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.product_search_form_view
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.view_stock_product_tree2
 msgid "Valuation Discrepancy"
+msgstr ""
+
+#. module: stock_account_valuation_report
+#: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__valuation_layer_ids
+msgid "Valuation Layer"
 msgstr ""
 
 #. module: stock_account_valuation_report

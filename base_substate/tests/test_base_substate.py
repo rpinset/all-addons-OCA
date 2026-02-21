@@ -9,21 +9,20 @@ from .common import CommonBaseSubstate
 
 @tagged("post_install", "-at_install", "mi_tag")
 class TestBaseSubstate(CommonBaseSubstate):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
 
-        cls.substate_type = cls.env["base.substate.type"]
-        cls.base_substate = cls.env["base.substate"]
+        self.substate_type = self.env["base.substate.type"]
+        self.base_substate = self.env["base.substate"]
 
-        cls.mail_template = cls.env["mail.template"].create(
+        self.mail_template = self.env["mail.template"].create(
             {
                 "name": "Waiting for legal documents",
-                "model_id": cls.env["ir.model"]._get(cls.sale_test_model._name).id,
+                "model_id": self.env["ir.model"]._get(self.sale_test_model._name).id,
                 "subject": "Test Email Substate",
             }
         )
-        cls.sale_test_substate_type = cls.substate_type.create(
+        self.sale_test_substate_type = self.substate_type.create(
             {
                 "name": "Sale",
                 "model": "base.substate.test.sale",
@@ -31,59 +30,59 @@ class TestBaseSubstate(CommonBaseSubstate):
             }
         )
 
-        cls.substate_val_quotation = cls.env["target.state.value"].create(
+        self.substate_val_quotation = self.env["target.state.value"].create(
             {
                 "name": "Quotation",
-                "base_substate_type_id": cls.sale_test_substate_type.id,
+                "base_substate_type_id": self.sale_test_substate_type.id,
                 "target_state_value": "draft",
             }
         )
 
-        cls.substate_val_sale = cls.env["target.state.value"].create(
+        self.substate_val_sale = self.env["target.state.value"].create(
             {
                 "name": "Sale order",
-                "base_substate_type_id": cls.sale_test_substate_type.id,
+                "base_substate_type_id": self.sale_test_substate_type.id,
                 "target_state_value": "sale",
             }
         )
-        cls.substate_under_negotiation = cls.base_substate.create(
+        self.substate_under_negotiation = self.base_substate.create(
             {
                 "name": "Under negotiation",
                 "sequence": 1,
-                "target_state_value_id": cls.substate_val_quotation.id,
+                "target_state_value_id": self.substate_val_quotation.id,
             }
         )
 
-        cls.substate_won = cls.base_substate.create(
+        self.substate_won = self.base_substate.create(
             {
                 "name": "Won",
                 "sequence": 1,
-                "target_state_value_id": cls.substate_val_quotation.id,
+                "target_state_value_id": self.substate_val_quotation.id,
             }
         )
 
-        cls.substate_wait_docs = cls.base_substate.create(
+        self.substate_wait_docs = self.base_substate.create(
             {
                 "name": "Waiting for legal documents",
                 "sequence": 2,
-                "target_state_value_id": cls.substate_val_sale.id,
-                "mail_template_id": cls.mail_template.id,
+                "target_state_value_id": self.substate_val_sale.id,
+                "mail_template_id": self.mail_template.id,
             }
         )
 
-        cls.substate_valid_docs = cls.base_substate.create(
+        self.substate_valid_docs = self.base_substate.create(
             {
                 "name": "To validate legal documents",
                 "sequence": 3,
-                "target_state_value_id": cls.substate_val_sale.id,
+                "target_state_value_id": self.substate_val_sale.id,
             }
         )
 
-        cls.substate_in_delivering = cls.base_substate.create(
+        self.substate_in_delivering = self.base_substate.create(
             {
                 "name": "In delivering",
                 "sequence": 4,
-                "target_state_value_id": cls.substate_val_sale.id,
+                "target_state_value_id": self.substate_val_sale.id,
             }
         )
 

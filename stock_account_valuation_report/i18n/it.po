@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-10-21 14:42+0000\n"
+"PO-Revision-Date: 2026-02-21 12:09+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_account_valuation_report
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.view_stock_product_tree2
@@ -34,7 +34,6 @@ msgstr "Valutazione contabilità"
 #. module: stock_account_valuation_report
 #. odoo-python
 #: code:addons/stock_account_valuation_report/models/product_product.py:0
-#, python-format
 msgid "Accounting Valuation at date"
 msgstr "Valutazione contabilità alla data"
 
@@ -106,14 +105,6 @@ msgid "Inventory Quantity"
 msgstr "Quantità intentario"
 
 #. module: stock_account_valuation_report
-#. odoo-python
-#: code:addons/stock_account_valuation_report/models/product_product.py:0
-#: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__valuation
-#, python-format
-msgid "Inventory Valuation"
-msgstr "Valutazione intentario"
-
-#. module: stock_account_valuation_report
 #: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__stock_value
 msgid "Inventory Value"
 msgstr "Valore inventario"
@@ -122,11 +113,6 @@ msgstr "Valore inventario"
 #: model:ir.model,name:stock_account_valuation_report.model_account_move_line
 msgid "Journal Item"
 msgstr "Movimento contabile"
-
-#. module: stock_account_valuation_report
-#: model:ir.model.fields,field_description:stock_account_valuation_report.field_stock_valuation_history____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: stock_account_valuation_report
 #: model:ir.model.fields,field_description:stock_account_valuation_report.field_stock_valuation_history__write_uid
@@ -142,21 +128,6 @@ msgstr "Ultimo aggiornamento il"
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.product_search_form_view
 msgid "Manual"
 msgstr "Manuale"
-
-#. module: stock_account_valuation_report
-#: model:ir.model.fields,help:stock_account_valuation_report.field_product_product__valuation
-msgid ""
-"Manual: The accounting entries to value the inventory are not posted "
-"automatically.\n"
-"        Automated: An accounting entry is automatically created to value the "
-"inventory when a product enters or leaves the company.\n"
-"        "
-msgstr ""
-"Manuale: le registrazioni contabili per la valorizzazione del magazzino non "
-"sono inserite automaticamente.\n"
-"        Automatico: una registrazione contabile è creata automaticamente per "
-"valorizzare il magazzino quando un prodotto entra o esce dall'azienda.\n"
-"        "
 
 #. module: stock_account_valuation_report
 #: model:ir.model.fields,field_description:stock_account_valuation_report.field_account_move_line__product_id
@@ -196,16 +167,16 @@ msgid "Stock Valuation History"
 msgstr "Cronologia valutazione giacenza"
 
 #. module: stock_account_valuation_report
-#: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__stock_valuation_layer_ids
-msgid "Stock Valuation Layer"
-msgstr "Livello valutazione magazzino"
-
-#. module: stock_account_valuation_report
 #: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__valuation_discrepancy
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.product_search_form_view
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.view_stock_product_tree2
 msgid "Valuation Discrepancy"
 msgstr "Differenza valutazione"
+
+#. module: stock_account_valuation_report
+#: model:ir.model.fields,field_description:stock_account_valuation_report.field_product_product__valuation_layer_ids
+msgid "Valuation Layer"
+msgstr "Strato valorizzazione"
 
 #. module: stock_account_valuation_report
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.product_search_form_view
@@ -221,3 +192,27 @@ msgstr "Visualizza registrazioni contabili"
 #: model_terms:ir.ui.view,arch_db:stock_account_valuation_report.view_stock_product_tree2
 msgid "View Valuation Layers"
 msgstr "Visualizza livelli valutazione"
+
+#, python-format
+#~ msgid "Inventory Valuation"
+#~ msgstr "Valutazione intentario"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid ""
+#~ "Manual: The accounting entries to value the inventory are not posted "
+#~ "automatically.\n"
+#~ "        Automated: An accounting entry is automatically created to value "
+#~ "the inventory when a product enters or leaves the company.\n"
+#~ "        "
+#~ msgstr ""
+#~ "Manuale: le registrazioni contabili per la valorizzazione del magazzino "
+#~ "non sono inserite automaticamente.\n"
+#~ "        Automatico: una registrazione contabile è creata automaticamente "
+#~ "per valorizzare il magazzino quando un prodotto entra o esce "
+#~ "dall'azienda.\n"
+#~ "        "
+
+#~ msgid "Stock Valuation Layer"
+#~ msgstr "Livello valutazione magazzino"

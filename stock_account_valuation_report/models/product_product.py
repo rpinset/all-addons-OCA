@@ -19,7 +19,7 @@ class ProductProduct(models.Model):
     stock_fifo_real_time_aml_ids = fields.Many2many(
         "account.move.line", compute="_compute_inventory_value"
     )
-    stock_valuation_layer_ids = fields.Many2many(
+    valuation_layer_ids = fields.Many2many(
         "stock.valuation.layer", compute="_compute_inventory_value"
     )
     valuation_discrepancy = fields.Float(
@@ -142,9 +142,9 @@ class ProductProduct(models.Model):
             quantity, value, svl_ids = layer_values.get(product.id) or (0, 0, [])
             product.stock_value = value
             product.qty_at_date = quantity
-            product.stock_valuation_layer_ids = self.env[
-                "stock.valuation.layer"
-            ].browse(svl_ids)
+            product.valuation_layer_ids = self.env["stock.valuation.layer"].browse(
+                svl_ids
+            )
             if product.valuation == "real_time":
                 product.valuation_discrepancy = (
                     product.stock_value - product.account_value
@@ -183,7 +183,7 @@ class ProductProduct(models.Model):
             "stock_account.stock_valuation_layer_report_action"
         )
         action["domain"] = [
-            ("id", "in", self.stock_valuation_layer_ids.ids),
+            ("id", "in", self.valuation_layer_ids.ids),
         ]
         action["context"] = {}
         return action
