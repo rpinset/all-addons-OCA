@@ -246,11 +246,11 @@ Date:   Sun Feb 2 18:15:23 2025 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 78e319938284982981af72be08a8d81c4751763b
+commit c67b0117f614e62a61c6a1f20780564ec4648374
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:32:48 2025 +0000
+Date:   Fri Feb 20 11:44:25 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -1419,11 +1419,11 @@ Date:   Fri Nov 28 08:10:25 2025 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 00854bf76067035265eaf21f92c71c14e14672a6
-Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Wed Nov 26 01:02:38 2025 +0000
+commit c31df1664312cd9d11d49cb5ca85973369ddcb9c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 19 10:47:25 2026 +0000
 
-    Added translation using Weblate (Japanese)
+    [BOT] post-merge updates
 
 
 ## server-env

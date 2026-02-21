@@ -1276,6 +1276,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Queue Job
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/queue&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/queue/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/queue/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/queue/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/queue/actions/workflows/test.yml?query=branch%3A15.0)
@@ -1283,8 +1286,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/queue-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/queue-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Odoo Queue Job
 
 Asynchronous Job Queue. Delay Model methods in asynchronous jobs, executed in the background as soon as possible or on a schedule. Support Channels to segregates jobs in different queues with different capacities. Unlike scheduled tasks, a job captures arguments for later processing.
 
@@ -1299,7 +1300,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 15.0.1.0.1 |  | Asynchronous export with job queue
-[queue_job](queue_job/) | 15.0.2.3.12 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
+[queue_job](queue_job/) | 15.0.2.3.13 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_cron](queue_job_cron/) | 15.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 15.0.2.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 15.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -7812,6 +7813,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Server Authentication
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-auth&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/server-auth/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/server-auth/actions/workflows/test.yml?query=branch%3A15.0)
@@ -7819,8 +7823,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-auth-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-auth-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Server Authentication
 
 Modules for handling various authentication schemes
 
@@ -7839,6 +7841,7 @@ addon | version | maintainers | summary
 [auth_api_key_group](auth_api_key_group/) | 15.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
 [auth_api_key_server_env](auth_api_key_server_env/) | 15.0.1.0.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
 [auth_ldaps](auth_ldaps/) | 15.0.1.0.0 |  | Allows to use LDAP over SSL authentication
+[auth_oauth_autologin](auth_oauth_autologin/) | 15.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Automatically redirect to the OAuth provider for login
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 15.0.1.0.1 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 15.0.1.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
 [auth_saml](auth_saml/) | 15.0.1.4.6 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
