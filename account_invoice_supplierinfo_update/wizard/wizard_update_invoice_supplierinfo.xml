@@ -67,7 +67,6 @@
                         confirm="Do you want to set invoice as checked ?"
                         help="This will mark the invoice as checked. It will be possible to uncheck manually in the 'Other Info' tab."
                     />
-                    or
                     <button string="Cancel" class="oe_link" special="cancel" />
                 </footer>
             </form>

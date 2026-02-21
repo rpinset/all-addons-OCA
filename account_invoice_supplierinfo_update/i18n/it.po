@@ -279,10 +279,8 @@ msgstr "Procedura guidata per aggiornare le informazioni fornitore"
 msgid "current Min quantity"
 msgstr "quantità minima attuale"
 
-#. module: account_invoice_supplierinfo_update
-#: model_terms:ir.ui.view,arch_db:account_invoice_supplierinfo_update.view_wizard_update_invoice_supplierinfo_form
-msgid "or"
-msgstr "o"
+#~ msgid "or"
+#~ msgstr "o"
 
 #~ msgid "Invoice Line"
 #~ msgstr "Righe Fattura"

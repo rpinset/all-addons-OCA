@@ -431,6 +431,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-invoicing
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoicing&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-invoicing/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-invoicing/actions/workflows/test.yml?query=branch%3A16.0)
@@ -438,8 +441,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-invoicing-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoicing-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-invoicing
 
 TODO: add repo description.
 
@@ -494,7 +495,7 @@ addon | version | maintainers | summary
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 16.0.1.0.7 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 16.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 16.0.1.0.0 |  | Purchase Self Invoice
-[account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 16.0.1.1.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
+[account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 16.0.1.1.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
 [account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 16.0.2.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
 [account_invoice_supplierinfo_update_qty_multiplier](account_invoice_supplierinfo_update_qty_multiplier/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the invoice Supplierinfo wizard, allow to change the Quantity Multiplier field
 [account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
@@ -3162,6 +3163,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# timesheet
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/timesheet&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/timesheet/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/timesheet/actions/workflows/test.yml?query=branch%3A16.0)
@@ -3169,8 +3173,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/timesheet-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/timesheet-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# timesheet
 
 TODO: add repo description.
 
@@ -3198,8 +3200,8 @@ addon | version | maintainers | summary
 [hr_timesheet_report](hr_timesheet_report/) | 16.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
 [hr_timesheet_report_rounded](hr_timesheet_report_rounded/) | 16.0.1.0.0 |  | Show rounded time in the Timesheet Reports
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 16.0.1.2.0 |  | Timesheet Sheets, Activities
-[hr_timesheet_sheet_attendance](hr_timesheet_sheet_attendance/) | 16.0.1.0.0 |  | HR Timesheet Sheet Attendance
-[hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 16.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
+[hr_timesheet_sheet_attendance](hr_timesheet_sheet_attendance/) | 16.0.1.0.1 |  | HR Timesheet Sheet Attendance
+[hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 16.0.1.0.1 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
 [hr_timesheet_sheet_policy_department_manager](hr_timesheet_sheet_policy_department_manager/) | 16.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Allows setting Department Manager as Reviewer
 [hr_timesheet_sheet_policy_project_manager](hr_timesheet_sheet_policy_project_manager/) | 16.0.1.0.0 |  | Allows setting Project Manager as Reviewer
 [hr_timesheet_task_domain](hr_timesheet_task_domain/) | 16.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
@@ -4790,6 +4792,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-japan
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-japan&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/l10n-japan/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-japan/actions/workflows/test.yml?query=branch%3A16.0)
@@ -4798,9 +4803,7 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# l10n-japan
-
-TODO: add repo description.
+Odoo日本向けローカリゼーション (l10n-japan)
 
 <!-- /!\ do not modify below this line -->
 
@@ -4819,7 +4822,7 @@ addon | version | maintainers | summary
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 16.0.1.0.0 |  | Japan Partner Title QWeb
 [l10n_jp_partner_zip_address](l10n_jp_partner_zip_address/) | 16.0.1.0.0 |  | Japan Partner Zip Address
-[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.3.1 |  | Japan Summary Invoice
+[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.3.2 |  | Japan Summary Invoice
 [report_alternative_layout](report_alternative_layout/) | 16.0.1.3.0 |  | Report Alternative Layout
 
 [//]: # (end addons)
@@ -5371,6 +5374,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-spain
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-spain&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/l10n-spain/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-spain/actions/workflows/test.yml?query=branch%3A16.0)
@@ -5378,8 +5384,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-spain-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-spain-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# l10n-spain
 
 TODO: add repo description.
 
@@ -6609,7 +6613,7 @@ addon | version | maintainers | summary
 [sale_stock_release_channel_delivery_date](sale_stock_release_channel_delivery_date/) | 16.0.1.1.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Compute expected date based on available release channels
 [sale_stock_release_channel_partner_by_date](sale_stock_release_channel_partner_by_date/) | 16.0.1.1.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Release channels integration with Sales
 [sale_stock_release_channel_partner_by_date_delivery](sale_stock_release_channel_partner_by_date_delivery/) | 16.0.1.1.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Filters channels on sales based on selected carrier.
-[shopfloor](shopfloor/) | 16.0.2.14.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 16.0.2.15.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 16.0.1.2.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 16.0.1.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_mobile](shopfloor_mobile/) | 16.0.1.4.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
@@ -6630,7 +6634,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_creation](stock_picking_batch_creation/) | 16.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Create a batch of pickings to be processed all together
 [stock_picking_completion_info](stock_picking_completion_info/) | 16.0.1.0.1 |  | Display on current document completion information according to next operations
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 16.0.1.0.0 |  | Define different shipping policies according to picking type
-[stock_release_channel](stock_release_channel/) | 16.0.3.1.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Manage workload in WMS with release channels
+[stock_release_channel](stock_release_channel/) | 16.0.3.1.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Manage workload in WMS with release channels
 [stock_release_channel_auto_release](stock_release_channel_auto_release/) | 16.0.1.1.0 |  | Add an automatic release mode to the release channel
 [stock_release_channel_batch_mode_commercial_partner](stock_release_channel_batch_mode_commercial_partner/) | 16.0.1.0.2 |  | Release pickings into channels by batch of same commercial entity
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Add the cutoff time to the release channel
@@ -6649,7 +6653,7 @@ addon | version | maintainers | summary
 [stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.7.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_propagate_channel_picking](stock_release_channel_propagate_channel_picking/) | 16.0.1.2.0 |  | Allows to propagate the channel to every picking that is created from the original one.
 [stock_release_channel_shipment_advice](stock_release_channel_shipment_advice/) | 16.0.1.2.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Plan shipment advices for ready and released pickings
-[stock_release_channel_shipment_advice_deliver](stock_release_channel_shipment_advice_deliver/) | 16.0.2.0.1 |  | This module adds an action to the release channel to automate the delivery of its shippings.
+[stock_release_channel_shipment_advice_deliver](stock_release_channel_shipment_advice_deliver/) | 16.0.2.0.2 |  | This module adds an action to the release channel to automate the delivery of its shippings.
 [stock_release_channel_shipment_advice_process_end_time](stock_release_channel_shipment_advice_process_end_time/) | 16.0.1.0.0 |  | This module allows to set a delay time (in minutes) between the release channel process end time and the shipment advice arrival to the dock time.
 [stock_release_channel_shipment_advice_toursolver](stock_release_channel_shipment_advice_toursolver/) | 16.0.1.1.0 |  | Use TourSolver to plan shipment advices for ready and released pickings
 [stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.2.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Release channel with shipment lead time
@@ -6934,6 +6938,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# pms
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/pms&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/pms/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/pms/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/pms/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/pms/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6942,9 +6949,7 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# pms
-
-TODO: add repo description.
+Property Management System on Odoo.
 
 <!-- /!\ do not modify below this line -->
 
@@ -6957,7 +6962,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.3.2.0 |  | A property management system
+[pms](pms/) | 16.0.3.3.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.2.0.0 |  | PMS Spanish Adaptation
@@ -6988,6 +6993,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# purchase-workflow
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6995,8 +7003,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/purchase-workflow-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-workflow-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# purchase-workflow
 
 TODO: add repo description.
 
@@ -7114,7 +7120,7 @@ addon | version | maintainers | summary
 [purchase_warn_message](purchase_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [purchase_work_acceptance](purchase_work_acceptance/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Purchase Work Acceptance
 [purchase_work_acceptance_evaluation](purchase_work_acceptance_evaluation/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Work Acceptance Evaluation
-[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Purchase Force Vendor
+[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Purchase Force Vendor
 [supplier_calendar](supplier_calendar/) | 16.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Supplier Calendar
 
 [//]: # (end addons)
@@ -7914,6 +7920,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# social
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A16.0)
@@ -7922,9 +7931,7 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# social
-
-{'TODO': 'add repo description.'}
+{'TODO': 'add repo description.'}Better integration of Odoo with mail and social media
 
 <!-- /!\ do not modify below this line -->
 
@@ -7938,7 +7945,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 16.0.1.0.5 |  | Base Search Mail Content
 [base_user_signature](base_user_signature/) | 16.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Base User Signature
-[email_template_qweb](email_template_qweb/) | 16.0.1.0.0 |  | Use the QWeb templating mechanism for emails
+[email_template_qweb](email_template_qweb/) | 16.0.1.0.1 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.1.0 |  | Post unkonwn messages to an existing thread
 [mail_activity_board](mail_activity_board/) | 16.0.1.2.0 |  | Add Activity Boards
 [mail_activity_done](mail_activity_done/) | 16.0.1.3.0 |  | Mail Activity Done
@@ -8777,7 +8784,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_payment_unece](account_payment_unece/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the payment methods
 [account_tax_unece](account_tax_unece/) | 16.0.1.3.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for taxes
-[base_bank_from_iban](base_bank_from_iban/) | 16.0.2.0.3 |  | Bank from IBAN
+[base_bank_from_iban](base_bank_from_iban/) | 16.0.2.0.4 |  | Bank from IBAN
 [base_currency_iso_4217](base_currency_iso_4217/) | 16.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
 [base_iso3166](base_iso3166/) | 16.0.1.0.1 |  | ISO 3166
 [base_unece](base_unece/) | 16.0.1.1.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for UNECE code lists

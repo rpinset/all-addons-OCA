@@ -11,7 +11,7 @@
                     help="Check if the invoice information are similar from the supplier information"
                     class="oe_highlight"
                     type="object"
-                    attrs="{'invisible': ['|', ('supplierinfo_ok', '=', True), ('partner_id', '=', False)]}"
+                    attrs="{'invisible': ['|', '|', ('supplierinfo_ok', '=', True), ('partner_id', '=', False), ('move_type', 'not in', ['in_invoice', 'in_refund'])]}"
                 />
             </xpath>
             <field name="to_check" position="before">
