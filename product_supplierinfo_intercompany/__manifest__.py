@@ -4,7 +4,7 @@
 
 {
     "name": "Product SupplierInfo Intercompany",
-    "version": "14.0.1.1.2",
+    "version": "14.0.1.1.3",
     "category": "Generic Modules/Others",
     "license": "AGPL-3",
     "author": "Odoo Community Association (OCA), Akretion",

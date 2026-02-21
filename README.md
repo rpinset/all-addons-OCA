@@ -686,16 +686,16 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 6bbb7d5eae02be6672bf7d2d965a5c7dde3db466
+commit a016cb337c14c5e0316ae29a6d52e0cd71fa031f
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Jan 15 13:44:03 2026 +0000
+Date:   Sat Feb 21 09:41:18 2026 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: multi-company-14.0/multi-company-14.0-product_supplierinfo_intercompany_multi_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-product_supplierinfo_intercompany_multi_company/
+    Translation: multi-company-14.0/multi-company-14.0-product_supplierinfo_intercompany
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-product_supplierinfo_intercompany/
 
 
 ## l10n-argentina
@@ -1030,11 +1030,16 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit fd23732dee3a31ea7772a96ec338789f5a4b60df
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 23 22:32:59 2026 +0000
+commit f83a336c41d7f241c5fe40c0cd513c441b6e049f
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Feb 20 10:44:38 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-14.0/l10n-spain-14.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-14-0/l10n-spain-14-0-l10n_es_aeat_mod303/
 
 
 ## l10n-switzerland

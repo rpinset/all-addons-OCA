@@ -95,6 +95,11 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: product_supplierinfo_intercompany
+#: model:ir.model,name:product_supplierinfo_intercompany.model_intercompany_supplierinfo_mixin
+msgid "Mixin for intercompany supplierinfo"
+msgstr ""
+
+#. module: product_supplierinfo_intercompany
 #: model:ir.model,name:product_supplierinfo_intercompany.model_product_pricelist
 msgid "Pricelist"
 msgstr ""
@@ -163,9 +168,4 @@ msgstr ""
 #. module: product_supplierinfo_intercompany
 #: model:ir.model.fields,help:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
 msgid "Vendor pricelist lead time, in days."
-msgstr ""
-
-#. module: product_supplierinfo_intercompany
-#: model:ir.model,name:product_supplierinfo_intercompany.model_intercompany_supplierinfo_mixin
-msgid "intercompany.supplierinfo.mixin"
 msgstr ""

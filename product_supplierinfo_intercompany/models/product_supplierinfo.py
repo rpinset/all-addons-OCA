@@ -7,6 +7,7 @@ from odoo.exceptions import Warning as UserError
 
 class IntercompanySupplierinfoMixin(models.AbstractModel):
     _name = "intercompany.supplierinfo.mixin"
+    _description = "Mixin for intercompany supplierinfo"
 
     def check_intercompany_pricelist(self):
         if not self._context.get("automatic_intercompany_sync"):
