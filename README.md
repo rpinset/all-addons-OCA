@@ -1055,14 +1055,16 @@ Date:   Wed Jun 4 03:07:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit a6fab940edb5c2f13a99e3d1ff66471aba2758d7
-Merge: 021a1eaea e884727a3
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Oct 3 15:54:24 2025 +0200
+commit fc66e41c65eb922accbc02d8c29fd63b391d1807
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Feb 25 20:22:22 2026 +0000
 
-    Merge pull request #4414 from dixmit/13.0-ou
+    Update translation files
     
-    [13.0][OU-ADD] l10n_es_aeat: We have added a compute field, we should add it in the pre-migration to avoid issues and time
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-13.0/l10n-spain-13.0-l10n_es_aeat_mod347
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-13-0/l10n-spain-13-0-l10n_es_aeat_mod347/
 
 
 ## l10n-switzerland
