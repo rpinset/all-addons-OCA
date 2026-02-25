@@ -165,6 +165,7 @@ python-dateutil
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
 # generated from manifests external_dependencies
 chardet
+deepdiff<8
 pycountry
 pycryptodome
 requests
