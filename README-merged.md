@@ -320,6 +320,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-financial-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A14.0)
@@ -327,8 +330,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-financial-reporting
 
 TODO: add repo description.
 
@@ -7980,6 +7981,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Social addons for Odoo
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A14.0)
@@ -7987,8 +7991,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/social-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/social-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Social addons for Odoo
 
 Addons concerning Odoo's social ERP features and messaging in general.
 

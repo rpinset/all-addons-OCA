@@ -94,16 +94,14 @@ Date:   Sun Feb 1 06:47:52 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 03f6063657e4cbe90fe38dd7c0838aeffb407c33
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:25:41 2026 +0000
+commit 5b5580ca5e3ecb4290722ea5c05ea5cb8897ac24
+Merge: 03f60636 05e3bcd8
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Feb 25 15:58:08 2026 +0100
 
-    Translated using Weblate (Slovenian)
+    Merge pull request #1452 from PyTech-SRL/14.0-copier
     
-    Currently translated at 86.2% (94 of 109 strings)
-    
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/sl/
+    Updated from template
 
 
 ## account-invoice-reporting
@@ -1225,11 +1223,11 @@ Date:   Tue Oct 21 07:04:36 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit d0811514d20d9f81bf0e93672eccaad074a2f793
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 13 08:38:41 2026 +0000
+commit af6454f3de2cd8af6b894fb86b5d889da98df454
+Author: beau sebastien <sebastien.beau@akretion.com>
+Date:   Wed Feb 25 09:14:02 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (French)
 
 
 ## manufacture
@@ -1436,16 +1434,14 @@ Date:   Sun Feb 2 18:18:12 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 4de56ec9be1122fe8075b452edcaa7078da6c6e7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 15 09:20:49 2025 +0000
+commit dcf4c98baf7c67d859984962f60460e4078959f2
+Merge: 4de56ec9b 5114c3f9a
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Feb 23 13:06:47 2026 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #1816 from Therp/14.0-copier-update
     
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: social-14.0/social-14.0-fetchmail_thread_default
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-fetchmail_thread_default/it/
+    [14.0][UPD] copier update from repo template
 
 
 ## storage
