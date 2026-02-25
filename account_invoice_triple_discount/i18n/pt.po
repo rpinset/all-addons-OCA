@@ -61,6 +61,8 @@ msgstr ""
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount1_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount1_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount1_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount1_limit
 msgid "Discount 1 must be lower than 100%."
 msgstr ""
@@ -73,6 +75,8 @@ msgstr ""
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount2_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount2_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount2_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount2_limit
 msgid "Discount 2 must be lower than 100%."
 msgstr ""
@@ -85,6 +89,8 @@ msgstr ""
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount3_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount3_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount3_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount3_limit
 msgid "Discount 3 must be lower than 100%."
 msgstr ""

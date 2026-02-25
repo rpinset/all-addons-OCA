@@ -471,7 +471,8 @@ addon | version | maintainers | summary
 [account_invoice_discount_date](account_invoice_discount_date/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Set the early discount date on invoices
 [account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 16.0.1.1.2 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 16.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Changing the fiscal position of an invoice will auto-update invoice lines
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.2.0.0 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.3.0.0 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_triple_discount](account_invoice_fixed_triple_discount/) | 16.0.2.0.0 |  | Compatibility between fixed and triple discount modules
 [account_invoice_force_number](account_invoice_force_number/) | 16.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_google_document_ai](account_invoice_google_document_ai/) | 16.0.1.0.0 |  | Allows to import data from document using Google Document AI
 [account_invoice_line_default_account](account_invoice_line_default_account/) | 16.0.1.0.0 |  | Account Invoice Line Default Account
@@ -503,7 +504,7 @@ addon | version | maintainers | summary
 [account_invoice_tax_required](account_invoice_tax_required/) | 16.0.1.1.0 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_tree_currency](account_invoice_tree_currency/) | 16.0.1.0.0 |  | Show currencies in the invoice tree view
-[account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.4.0.1 |  | Manage triple discount on invoice lines
+[account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.5.0.0 |  | Manage triple discount on invoice lines
 [account_invoice_uom_column](account_invoice_uom_column/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Display UoM invoice line in a dedicated column on invoice reports
 [account_invoice_validation_queued](account_invoice_validation_queued/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enqueue account invoice validation
 [account_invoice_view_payment](account_invoice_view_payment/) | 16.0.1.0.0 |  | Access to the payment from an invoice
@@ -567,6 +568,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-fiscal-rule
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A16.0)
@@ -574,8 +578,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-fiscal-rule
 
 Odoo Accounting Taxe and Fiscal Features
 
@@ -597,6 +599,7 @@ addon | version | maintainers | summary
 [account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.3.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | <a href='https://github.com/cybernexus'><img src='https://github.com/cybernexus.png' width='32' height='32' style='border-radius:50%;' alt='cybernexus'/></a> | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_ecotax](account_ecotax/) | 16.0.1.1.2 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
+[account_ecotax_report](account_ecotax_report/) | 16.0.1.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Reporting add fields and view to anlysis ecotaxe
 [account_ecotax_sale](account_ecotax_sale/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe
 [account_ecotax_sale_tax](account_ecotax_sale_tax/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe managed as a tax
 [account_ecotax_tax](account_ecotax_tax/) | 16.0.1.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Use Odoo tax mechanism to compute the ecotaxes
@@ -2873,6 +2876,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# field-service
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/field-service&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/field-service/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/field-service/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2880,8 +2886,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/field-service-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/field-service-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# field-service
 
 TODO: add repo description.
 
@@ -2903,7 +2907,7 @@ addon | version | maintainers | summary
 [fieldservice_calendar](fieldservice_calendar/) | 16.0.1.0.1 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 16.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Create Field Service orders from the CRM
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 16.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate stock operations with your field service equipments
-[fieldservice_geoengine](fieldservice_geoengine/) | 16.0.1.4.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
+[fieldservice_geoengine](fieldservice_geoengine/) | 16.0.1.4.2 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_account](fieldservice_isp_account/) | 16.0.1.0.0 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Invoice Field Service orders based on employee time or contractor costs
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 16.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service workflow for Internet Service Providers
 [fieldservice_portal](fieldservice_portal/) | 16.0.1.1.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Bridge module between fieldservice and portal.
@@ -5462,7 +5466,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 16.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 16.0.1.1.2 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.2.1.0 |  | Libros registro del IVA y del IRPF
+[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.2.1.1 |  | Libros registro del IVA y del IRPF
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 16.0.1.0.2 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.1 |  | Libro de IVA OSS
@@ -7538,6 +7542,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# project
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/project/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/project/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/project/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/project/actions/workflows/test.yml?query=branch%3A16.0)
@@ -7545,8 +7552,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/project-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# project
 
 TODO: add repo description.
 
@@ -7563,7 +7568,7 @@ addon | version | maintainers | summary
 [project_administrator_restricted_visibility](project_administrator_restricted_visibility/) | 16.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Adds a 'Project Administrator' access group with restricted visibility to 'Projects'
 [project_department](project_department/) | 16.0.1.0.0 |  | Project Department Categorization
 [project_duplicate_subtask](project_duplicate_subtask/) | 16.0.1.0.0 |  | The module adds an action to duplicate tasks with the child subtasks
-[project_hr](project_hr/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
+[project_hr](project_hr/) | 16.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_internal_access_from_portal](project_internal_access_from_portal/) | 16.0.1.0.1 |  | Show internal projects in portal
 [project_key](project_key/) | 16.0.2.0.0 |  | Module decorates projects and tasks with Project Key
 [project_list](project_list/) | 16.0.1.0.1 |  | Projects list view
@@ -8227,6 +8232,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# report-print-send
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/report-print-send&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/report-print-send/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/report-print-send/actions/workflows/test.yml?query=branch%3A16.0)
@@ -8234,8 +8242,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/report-print-send-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/report-print-send-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# report-print-send
 
 TODO: add repo description.
 
@@ -8250,11 +8256,11 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_report_to_label_printer](base_report_to_label_printer/) | 16.0.1.0.1 |  | Report to label printer
-[base_report_to_printer](base_report_to_printer/) | 16.0.1.5.0 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 16.0.1.5.1 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 16.0.1.0.0 |  | Report to printer - Mail extension
 [pingen](pingen/) | 16.0.1.1.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | pingen.com integration
 [pingen_env](pingen_env/) | 16.0.1.0.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> | pingen.com server environment
-[printer_zpl2](printer_zpl2/) | 16.0.1.1.1 |  | Add a ZPL II label printing feature
+[printer_zpl2](printer_zpl2/) | 16.0.1.1.2 |  | Add a ZPL II label printing feature
 [printing_simple_configuration](printing_simple_configuration/) | 16.0.1.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Allow to set printing configuration in company or in warehouse
 [remote_report_to_printer](remote_report_to_printer/) | 16.0.1.0.1 |  | Report to printer on remotes
 
@@ -8322,6 +8328,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# server-tools
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-tools&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/server-tools/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-tools/actions/workflows/test.yml?query=branch%3A16.0)
@@ -8329,8 +8338,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-tools-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-tools-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# server-tools
 
 TODO: add repo description.
 
@@ -8409,7 +8416,7 @@ addon | version | maintainers | summary
 [server_action_logging](server_action_logging/) | 16.0.1.0.0 |  | Module that provides a logging mechanism for server actions
 [session_db](session_db/) | 16.0.1.0.7 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Store sessions in DB
 [test_auditlog](test_auditlog/) | 16.0.1.0.2 |  | Additional unit tests for Audit Log based on accounting models
-[tracking_manager](tracking_manager/) | 16.0.1.1.9 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
+[tracking_manager](tracking_manager/) | 16.0.1.1.10 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 16.0.1.2.1 | <a href='https://github.com/StefanRijnhart'><img src='https://github.com/StefanRijnhart.png' width='32' height='32' style='border-radius:50%;' alt='StefanRijnhart'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Performs a difference analysis between modules installed on two different Odoo instances
 [url_attachment_search_fuzzy](url_attachment_search_fuzzy/) | 16.0.1.0.0 | <a href='https://github.com/mariadforgelow'><img src='https://github.com/mariadforgelow.png' width='32' height='32' style='border-radius:50%;' alt='mariadforgelow'/></a> | Fuzzy Search of URL in Attachments
 

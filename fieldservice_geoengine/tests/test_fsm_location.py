@@ -2,6 +2,8 @@
 # Copyright (C) 2023 - TODAY Pytech SRL
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+from unittest.mock import MagicMock, patch
+
 from odoo import fields
 from odoo.tests.common import TransactionCase
 
@@ -30,7 +32,19 @@ class TestFsmLocation(TransactionCase):
             }
         )
 
-    def test_fsm_location_creation(self):
+    @patch("requests.get")
+    def test_fsm_location_creation(self, requests_get):
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json = MagicMock(
+            return_value=[
+                {
+                    "lat": "50.629980",
+                    "lon": "4.863370",
+                }
+            ]
+        )
+        requests_get.return_value = mock_response
         test_partner = self.env["res.partner"].create(
             {
                 "name": "Test partner",
