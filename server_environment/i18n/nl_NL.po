@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2017-06-22 01:12+0000\n"
 "PO-Revision-Date: 2017-06-22 01:12+0000\n"
 "Last-Translator: Peter Hageman <hageman.p@gmail.com>, 2017\n"
-"Language-Team: Dutch (Netherlands) (https://www.transifex.com/oca/"
-"teams/23907/nl_NL/)\n"
+"Language-Team: Dutch (Netherlands) (https://www.transifex.com/oca/teams/"
+"23907/nl_NL/)\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -389,6 +389,11 @@ msgstr ""
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_shell_interface
 msgid "odoo | shell_interface"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_skip_auto_install
+msgid "odoo | skip_auto_install"
 msgstr ""
 
 #. module: server_environment

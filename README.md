@@ -87,11 +87,16 @@ Date:   Thu Feb 5 10:01:54 2026 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 1529666e346b74eb6e84a67833aaad86ac11cb62
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 17 12:51:33 2025 +0000
+commit 5438ae39d86b830f63a77efd7993cfa35c9895f1
+Author: epanisset <emeric.panisset@camptocamp.com>
+Date:   Tue Feb 24 15:55:38 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (French)
+    
+    Currently translated at 0.9% (1 of 109 strings)
+    
+    Translation: account-fiscal-rule-17.0/account-fiscal-rule-17.0-account_ecotax
+    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-17-0/account-fiscal-rule-17-0-account_ecotax/fr/
 
 
 ## operating-unit
@@ -119,16 +124,11 @@ Date:   Tue Nov 11 15:19:17 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 3e1cd17ee9f892300985de6abac52b668f83d93b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:10:30 2025 +0000
+commit 7f5bd4af96e86e19137f82bcca605fbf547295d7
+Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
+Date:   Sun Feb 22 18:24:36 2026 +0100
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (23 of 23 strings)
-    
-    Translation: mis-builder-17.0/mis-builder-17.0-mis_builder_demo
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-17-0/mis-builder-17-0-mis_builder_demo/it/
+    Update copier source
 
 
 ## currency
@@ -409,16 +409,16 @@ Date:   Sun Feb 1 06:55:23 2026 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 20652220c456ad833ecfc539cfc5d5aa47d1831b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 11 09:48:10 2025 +0000
+commit 2e78ec0655d617a2a6423b1897e6ffa4c53f74c7
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Feb 23 20:40:54 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
     Currently translated at 100.0% (138 of 138 strings)
     
     Translation: commission-17.0/commission-17.0-commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/it/
+    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/es/
 
 
 ## event
@@ -469,16 +469,16 @@ Date:   Thu Jan 1 15:02:08 2026 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 9867af5f107c1d08a6c80ca8fc8214e0568690f3
+commit a78cbdc86b8a5083dac772027160df595862a2fe
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 28 08:31:39 2025 +0000
+Date:   Tue Feb 24 07:49:43 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: e-commerce-17.0/e-commerce-17.0-website_sale_empty_cart
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-17-0/e-commerce-17-0-website_sale_empty_cart/it/
+    Translation: e-commerce-17.0/e-commerce-17.0-website_sale_checkout_skip_payment
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-17-0/e-commerce-17-0-website_sale_checkout_skip_payment/it/
 
 
 ## edi
@@ -533,11 +533,14 @@ Date:   Sun Feb 2 18:58:24 2025 +0000
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit 15ab361bee4bfb9796a35451dc60e68b178ea00b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 15 09:14:30 2025 +0000
+commit 4c7a8d353c0dc8bb5eefc2d4140d517adaf536cc
+Merge: 15ab361b 653f76fc
+Author: Yannick Payot <yannick.payot@acsone.eu>
+Date:   Wed Feb 25 14:59:07 2026 +0100
 
-    [BOT] post-merge updates
+    Merge pull request #440 from acsone/17.0-ci-geoengine_base_geolocalize
+    
+    [FIX] geoengine_base_geoengine: avoid external calls in unit tests
 
 
 ## timesheet
@@ -593,16 +596,11 @@ Date:   Tue Jan 27 08:50:19 2026 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit d514ab87a5fe8f8c6a5253491d2b9d7618017139
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 2 19:36:45 2025 +0000
+commit a4949bf5adf57ece8e4851a8e00d9f6337504cc1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 23 07:37:18 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (10 of 10 strings)
-    
-    Translation: hr-holidays-17.0/hr-holidays-17.0-hr_holidays_natural_period
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-17-0/hr-holidays-17-0-hr_holidays_natural_period/it/
+    [BOT] post-merge updates
 
 
 ## department
@@ -941,11 +939,11 @@ Date:   Thu Feb 19 10:48:35 2026 +0000
 
 ## l10n-russia
 From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
-commit 017a956d7bf4c16bed6178538880a6512384f8fd
+commit 1b1552953ef91584bdb93ba1341c3b9f1197fddb
 Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Thu Jan 8 18:43:14 2026 +0000
+Date:   Tue Feb 24 07:09:05 2026 +0000
 
-    [UPD] Update l10n_ru_banks.pot
+    [UPD] Update l10n_ru.pot
 
 
 ## l10n-slovenia
@@ -959,14 +957,11 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 831d6fe084660b49b0c13b4e0928f5ef16fcee31
-Merge: 7cd58fb83 046eb36fe
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Feb 20 11:42:44 2026 +0100
+commit 29171edf4c700cc2a7d28ee8cd5e800738412079
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 25 15:59:02 2026 +0000
 
-    Merge pull request #4846 from Tecnativa/17.0-copier
-    
-    [17.0] Update copier template
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1416,20 +1411,25 @@ Date:   Fri Feb 13 15:48:24 2026 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 7bf5379f02c21b43f0649d04a37242edb72d947e
+commit c229e2d1ad7de51f9329bfdd43a0a4a66e040ece
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 19 10:23:26 2026 +0000
+Date:   Mon Feb 23 08:34:26 2026 +0000
 
     [BOT] post-merge updates
 
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 88441ec905a3b673b1a76da3c31f241996a95b8e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 1 15:56:52 2025 +0000
+commit c701f2636966d9e41bf197baadb82d0cdc5e58eb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 25 14:10:08 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (110 of 110 strings)
+    
+    Translation: server-env-17.0/server-env-17.0-server_environment
+    Translate-URL: https://translation.odoo-community.org/projects/server-env-17-0/server-env-17-0-server_environment/it/
 
 
 ## server-backend

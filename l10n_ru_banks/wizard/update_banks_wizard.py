@@ -150,8 +150,8 @@ class UpdateBanksWizard(models.TransientModel):
             "Import complete: "
             "%(created_count)s banks created, %(updated_count)s updated."
         ) % {
-            count_created,
-            count_updated,
+            "created_count": count_created,
+            "updated_count": count_updated,
         }
 
         return {

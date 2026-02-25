@@ -14,23 +14,33 @@ except ImportError as err:  # pragma: no cover
 
 
 class CommonDataEncrypted(TransactionCase):
-    def setUp(self):
-        super().setUp()
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
 
-        self.encrypted_data = self.env["encrypted.data"]
-        self.set_new_key_env("test")
-        self.old_running_env = config.get("running_env", "")
+        cls.encrypted_data = cls.env["encrypted.data"]
+        cls.set_new_key_env("test")
+        old_running_env = config.get("running_env", "")
+
+        def reset_running_env():
+            config["running_env"] = old_running_env
+
+        cls.addClassCleanup(reset_running_env)
         config["running_env"] = "test"
-        self.crypted_data_name = "test_model,1"
+        cls.crypted_data_name = "test_model,1"
 
-    def set_new_key_env(self, environment):
+    @classmethod
+    def set_new_key_env(cls, environment):
         crypting_key = Fernet.generate_key()
         # The key is encoded to bytes in the module, because in real life
         # the key com from the config file and is not in a binary format.
         # So we decode here to avoid having a special behavior because of
         # the tests.
-        config[f"encryption_key_{environment}"] = crypting_key.decode()
+        encryption_key_environment_config_name = f"encryption_key_{environment}"
+        old_key = config.get(encryption_key_environment_config_name, "")
 
-    def tearDown(self):
-        config["running_env"] = self.old_running_env
-        return super().tearDown()
+        def reset_config_key():
+            config[encryption_key_environment_config_name] = old_key
+
+        cls.addClassCleanup(reset_config_key)
+        config[encryption_key_environment_config_name] = crypting_key.decode()

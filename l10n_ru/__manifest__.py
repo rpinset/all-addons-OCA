@@ -1,7 +1,7 @@
 {
     "name": "Russia - Accounting",
     "icon": "/account/static/description/l10n.png",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "countries": ["ru"],
     "category": "Accounting/Localizations/Account Charts",
     "website": "https://github.com/OCA/l10n-russia",

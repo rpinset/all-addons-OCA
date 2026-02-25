@@ -1,1 +1,1 @@
-from . import chart_template
+from . import template_ru

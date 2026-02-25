@@ -20,7 +20,7 @@ msgstr ""
 
 #. module: l10n_ru
 #. odoo-python
-#: code:addons/l10n_ru/models/chart_template.py:0
+#: code:addons/l10n_ru/models/template_ru.py:0
 #, python-format
 msgid "Chart of Accounts"
 msgstr ""
