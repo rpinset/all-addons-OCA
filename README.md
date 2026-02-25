@@ -1213,16 +1213,14 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 9dc8a95dde7c458d2755cfae967819811a6ad85f
-Author: Weblate <noreply@weblate.org>
-Date:   Sun Jan 25 13:40:21 2026 +0000
+commit b3a0683d8ea2d2034af4d2bfb726b171500e9a02
+Merge: 9dc8a95dd 86a5f37f2
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Feb 25 17:29:15 2026 +0100
 
-    Update translation files
+    Merge pull request #2224 from Tecnativa/15.0-upd-copier-product-attribute
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_direct_print
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_direct_print/
+    Update copier template to 1.39
 
 
 ## product-kitting
@@ -1637,16 +1635,11 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 6e2539e37acb981dee779953600f8f044c38b099
-Author: Toshikimi Shigenobu (Quartile) <nobu@quartile.co>
-Date:   Thu Jan 22 02:30:46 2026 +0000
+commit e5fffe9fbb20063cbc58d87cce7f4ba172eea090
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 24 07:30:35 2026 +0000
 
-    Translated using Weblate (Japanese)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: web-15.0/web-15.0-web_widget_open_tab
-    Translate-URL: https://translation.odoo-community.org/projects/web-15-0/web-15-0-web_widget_open_tab/ja/
+    [BOT] post-merge updates
 
 
 ## website

@@ -6725,6 +6725,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# product-attribute
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/product-attribute/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/product-attribute/actions/workflows/test.yml?query=branch%3A15.0)
@@ -6732,8 +6735,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/product-attribute-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-attribute-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# product-attribute
 
 TODO: add repo description.
 
@@ -8910,6 +8911,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# web
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/web&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/web/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/web/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/web/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/web/actions/workflows/test.yml?query=branch%3A15.0)
@@ -8917,8 +8921,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/web-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/web-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# web
 
 TODO: add repo description.
 
@@ -8955,7 +8957,7 @@ addon | version | maintainers | summary
 [web_m2x_options_manager](web_m2x_options_manager/) | 15.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 15.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 15.0.2.1.1 |  | Send notification messages to user
-[web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.5 |  | Web Pivot Computed Measure
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.6 |  | Web Pivot Computed Measure
 [web_pwa_oca](web_pwa_oca/) | 15.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA
 [web_refresher](web_refresher/) | 15.0.2.0.1 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 15.0.1.0.1 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Remember the tree columns' widths across sessions.
