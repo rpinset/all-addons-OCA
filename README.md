@@ -1098,16 +1098,11 @@ Date:   Sun Feb 1 07:42:53 2026 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 00dfb1167702017cd9913d4b55bf5425dbf273d3
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Tue Jul 8 09:38:10 2025 +0000
+commit 15e9af5e5866555203ffe380c18cdec00be4a33a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 26 07:56:54 2026 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 90.9% (20 of 22 strings)
-    
-    Translation: stock-logistics-reporting-15.0/stock-logistics-reporting-15.0-stock_picking_report_valued
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-15-0/stock-logistics-reporting-15-0-stock_picking_report_valued/ca/
+    [BOT] post-merge updates
 
 
 ## rma
