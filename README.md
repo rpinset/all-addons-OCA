@@ -80,28 +80,25 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit eb82d9465c4dd5a0e1ea5334ab0d08358a738b09
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 06:47:52 2026 +0000
+commit 75d30db1fad09bfd6d85f299a3b0872d0868cf66
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 11:28:42 2026 +0000
 
-    Translated using Weblate (Slovenian)
-    
-    Currently translated at 100.0% (137 of 137 strings)
-    
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_chart_update
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_chart_update/sl/
+    Added translation using Weblate (Turkish)
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 5b5580ca5e3ecb4290722ea5c05ea5cb8897ac24
-Merge: 03f60636 05e3bcd8
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Wed Feb 25 15:58:08 2026 +0100
+commit 9feba587cd5796da28b762f22ab34281e9929475
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 09:30:42 2026 +0000
 
-    Merge pull request #1452 from PyTech-SRL/14.0-copier
+    Translated using Weblate (Turkish)
     
-    Updated from template
+    Currently translated at 1.5% (4 of 261 strings)
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/tr/
 
 
 ## account-invoice-reporting
@@ -216,30 +213,20 @@ Date:   Fri Feb 6 13:12:01 2026 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 08497f2c2b6fa0c171cfe6745524b9c5dd2bb795
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:25:59 2026 +0000
+commit 53a360e837d93f921b2c266aa37675c9ca269b48
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 14:11:08 2026 +0000
 
-    Translated using Weblate (Slovenian)
-    
-    Currently translated at 100.0% (102 of 102 strings)
-    
-    Translation: account-reconcile-14.0/account-reconcile-14.0-account_reconciliation_widget
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-14-0/account-reconcile-14-0-account_reconciliation_widget/sl/
+    Added translation using Weblate (Turkish)
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 3adfc66a8c1bb69b9b9a145cb34e3e0c2bdbff02
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Sep 18 13:01:28 2025 +0000
+commit fba7844751b1316cb771a16b9efc83774ec3f465
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 11:39:15 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (10 of 10 strings)
-    
-    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_base/it/
+    Added translation using Weblate (Turkish)
 
 
 ## account-payment
@@ -638,16 +625,11 @@ Date:   Sat Jun 21 10:46:58 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 8b4d6510e3eeef9eff1d57364cbb4641e7313c8b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 10 10:52:27 2026 +0000
+commit e4e389fa9dfad9c7f152058032388eae2858d131
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 12:34:29 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (23 of 23 strings)
-    
-    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_tier_validation/it/
+    Added translation using Weblate (Turkish)
 
 
 ## hr-holidays
@@ -1149,11 +1131,11 @@ Date:   Wed Oct 15 09:12:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 93bc50518a2a5f23dbd36fc566e60ea9a16608a5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 9 13:21:53 2026 +0000
+commit a5b2bd01407cad67c558aa1bb6af0a97859051af
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 12:27:34 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Turkish)
 
 
 ## stock-logistics-tracking
@@ -1167,16 +1149,11 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 54504e2e861513895a377e1c2943290899287c3c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 10 10:52:30 2026 +0000
+commit 0db8e67ed48b4eb583239ea97978d7a819537396
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 12:30:08 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (32 of 32 strings)
-    
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request_tier_validation/it/
+    Added translation using Weblate (Turkish)
 
 
 ## stock-logistics-reporting
@@ -1288,16 +1265,11 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit af79bcc2801e13ae7d5ef14ab68a539e4c742857
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jan 13 15:26:57 2026 +0000
+commit 87034c1202fef7712a97b10f88a9f3af8c113777
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 10:22:57 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (26 of 26 strings)
-    
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_type
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_type/it/
+    Added translation using Weblate (Turkish)
 
 
 ## purchase-reporting
@@ -1379,16 +1351,11 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 4e5db61bd9a2cae2571732c039446c92cb474045
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 11 08:03:19 2025 +0000
+commit 25cc284c81de89d99119b5b35329bef918f357f3
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Feb 27 09:56:52 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (75 of 75 strings)
-    
-    Translation: contract-14.0/contract-14.0-agreement
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-agreement/it/
+    Added translation using Weblate (Turkish)
 
 
 ## program
@@ -1739,16 +1706,11 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit c998757c0c5fbc3929a4517efea142d390ed5037
+commit 514678b32199879f30f2b683e1b7e0f7be742f1c
 Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Feb 3 09:26:11 2026 +0000
+Date:   Fri Feb 27 10:29:01 2026 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 94.1% (16 of 17 strings)
-    
-    Translation: web-14.0/web-14.0-web_ir_actions_act_view_reload
-    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_ir_actions_act_view_reload/tr/
+    Added translation using Weblate (Turkish)
 
 
 ## website

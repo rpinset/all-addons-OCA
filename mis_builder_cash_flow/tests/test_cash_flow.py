@@ -8,6 +8,8 @@ from odoo.fields import Date
 from odoo.tests.common import TransactionCase, tagged
 from odoo.tools import mute_logger
 
+from odoo.addons.mail.tests.common import mail_new_test_user
+
 
 @tagged("post_install", "-at_install")
 class TestCashFlow(TransactionCase):
@@ -155,3 +157,29 @@ class TestCashFlow(TransactionCase):
                         break
                 if not found:
                     self.assertEqual(cell.val, 0)
+
+    def test_multi_company(self):
+        """Forecast lines can only be accessed within their company."""
+        # Arrange
+        company = self.company
+        company_line = self.env["mis.cash_flow.forecast_line"].create(
+            {
+                "account_id": self.account.id,
+                "date": Date.to_date("2020-01-01"),
+                "balance": 1000,
+                "company_id": company.id,
+            }
+        )
+        other_company_user = mail_new_test_user(
+            self.env,
+            login="test user from another company",
+        )
+        # pre-condition
+        self.assertNotEqual(company, other_company_user.company_id)
+
+        # Assert
+        self.assertFalse(
+            self.env["mis.cash_flow.forecast_line"]
+            .with_user(other_company_user)
+            .search([("id", "=", company_line.id)])
+        )
