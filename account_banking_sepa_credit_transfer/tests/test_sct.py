@@ -121,13 +121,17 @@ class TestSCT(BaseCommon):
                 "name": "Test Partner 1",
             }
         )
-        cls.partner_bank_1 = cls.env["res.partner.bank"].create(
-            {
-                "acc_number": "FR66 1212 1212 1212 1212 1212 121",
-                "bank_id": cls.bank.id,
-                "partner_id": cls.partner_1.id,
-                "allow_out_payment": True,
-            }
+        cls.partner_bank_1 = (
+            cls.env["res.partner.bank"]
+            .with_user(cls.env.ref("base.user_admin"))
+            .create(
+                {
+                    "acc_number": "FR66 1212 1212 1212 1212 1212 121",
+                    "bank_id": cls.bank.id,
+                    "partner_id": cls.partner_1.id,
+                    "allow_out_payment": True,
+                }
+            )
         )
         cls.partner_2 = cls.env["res.partner"].create(
             {

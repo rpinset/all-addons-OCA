@@ -646,6 +646,14 @@ export class GeoengineRenderer extends Component {
     }
 
     /**
+     * When you click on the edit button, it calls the controller's
+     * editRecord method.
+     */
+    onEditButtonClicked() {
+        this.props.editRecord(this.record.resModel, this.record.resId);
+    }
+
+    /**
      * Allows you to change the visibility of layers. This method is called
      * when the user changes raster layers.
      */
@@ -1305,6 +1313,7 @@ GeoengineRenderer.props = {
     archInfo: {type: Object},
     data: {type: Object},
     openRecord: {type: Function},
+    editRecord: {type: Function},
     editable: {type: Boolean, optional: true},
     updateRecord: {type: Function},
     onClickDiscard: {type: Function},

@@ -43,6 +43,11 @@ msgid "Add tag"
 msgstr "Aggiungi etichetta"
 
 #. module: base_geoengine
+#: model:ir.model.fields,field_description:base_geoengine.field_geoengine_vector_layer__attribute_field_id_domain
+msgid "Attribute Field Id Domain"
+msgstr ""
+
+#. module: base_geoengine
 #: model:ir.model.fields,field_description:base_geoengine.field_geoengine_vector_layer__attribute_field_id
 msgid "Attribute field"
 msgstr "Campo attributo"
@@ -241,8 +246,8 @@ msgid ""
 "Geo Value %(geom_type)s must be of the same type "
 "%(geo_type)s                         as fields"
 msgstr ""
-"Il valore geografico %(geom_type)s deve essere dello stesso tipo %(geo_type)"
-"s                         come campo"
+"Il valore geografico %(geom_type)s deve essere dello stesso tipo "
+"%(geo_type)s                         come campo"
 
 #. module: base_geoengine
 #. odoo-python
@@ -544,8 +549,8 @@ msgstr "Parametri"
 
 #. module: base_geoengine
 #: model:ir.model.fields,field_description:base_geoengine.field_geoengine_raster_layer__params_wms
-msgid "Params Wms"
-msgstr "Parametri WMS"
+msgid "Params WMS"
+msgstr ""
 
 #. module: base_geoengine
 #: model:ir.model.fields.selection,name:base_geoengine.selection__ir_model_fields__geo_type__point
@@ -1022,6 +1027,9 @@ msgstr "not in active_ids"
 #: model:ir.model.fields,field_description:base_geoengine.field_ir_model_fields__srid
 msgid "srid"
 msgstr "srid"
+
+#~ msgid "Params Wms"
+#~ msgstr "Parametri WMS"
 
 #, python-format
 #~ msgid ""

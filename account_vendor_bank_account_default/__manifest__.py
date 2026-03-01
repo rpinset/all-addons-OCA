@@ -3,7 +3,7 @@
 {
     "name": "Account Vendor Bank Account Default",
     "summary": "Set a default bank account on partners for their vendor bills",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "development_status": "Beta",
     "category": "Banking addons",
     "website": "https://github.com/OCA/bank-payment",

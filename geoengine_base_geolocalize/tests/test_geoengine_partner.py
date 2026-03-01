@@ -28,8 +28,6 @@ PAYLOAD = [
     }
 ]
 
-TEST_URL = "https://nominatim.openstreetmap.org/search?format=json&q=Rue+au+bois+la+dame%2C+6800%2C+Belgium"
-
 
 class TestGeoenginePartner(TransactionCase):
     @classmethod
@@ -42,8 +40,6 @@ class TestGeoenginePartner(TransactionCase):
 
     @classmethod
     def _request_handler(cls, session: Session, request: PreparedRequest, /, **kwargs):
-        response = Response()
-        response.status_code = 200
         url = request.url.lower()
         matching = cls.nominatim_osm_request_re.match(url)
         if matching:

@@ -897,22 +897,22 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_banking_mandate](account_banking_mandate/) | 17.0.1.0.4 |  | Banking mandates
-[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.1.1 |  | Assign specific banking mandates in contact level
+[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.1.2 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 17.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.5 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.6 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.3.1 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 17.0.1.1.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 17.0.1.7.4 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 17.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 17.0.1.0.1 |  | Account Payment Order Return
-[account_payment_partner](account_payment_partner/) | 17.0.1.0.8 |  | Adds payment mode on partners and invoices
+[account_payment_partner](account_payment_partner/) | 17.0.1.0.9 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 17.0.1.2.3 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 17.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 17.0.1.0.4 |  | Adds payment mode on sale orders
-[account_vendor_bank_account_default](account_vendor_bank_account_default/) | 17.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Set a default bank account on partners for their vendor bills
+[account_vendor_bank_account_default](account_vendor_bank_account_default/) | 17.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Set a default bank account on partners for their vendor bills
 [account_vendor_bank_account_default_purchase](account_vendor_bank_account_default_purchase/) | 17.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Set a default bank account purchase orders
 
 [//]: # (end addons)
@@ -1019,7 +1019,7 @@ addon | version | maintainers | summary
 [account_statement_import_ofx](account_statement_import_ofx/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
 [account_statement_import_online](account_statement_import_online/) | 17.0.1.1.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.5 |  | Online Bank Statements: GoCardless
-[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 17.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
+[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 17.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_plaid](account_statement_import_online_plaid/) | 17.0.1.0.0 |  | Online Bank Statements: plaid.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_stripe](account_statement_import_online_stripe/) | 17.0.1.0.2 | <a href='https://github.com/juancarlosonate-tecnativa'><img src='https://github.com/juancarlosonate-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juancarlosonate-tecnativa'/></a> | Online bank statements for Stripe
@@ -1739,7 +1739,7 @@ addon | version | maintainers | summary
 [partner_sale_pivot](partner_sale_pivot/) | 17.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 17.0.1.0.0 |  | Portal Sale Personal Data Only
 [product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
-[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.1 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 17.0.1.0.5 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.2.0 |  | Sale Automatic Workflow
@@ -1787,6 +1787,7 @@ addon | version | maintainers | summary
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 17.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Show product availability in sales order line product drop-down.
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.1.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
+[sale_order_report_without_price](sale_order_report_without_price/) | 17.0.1.0.0 |  | Allow you to generate quotation and order reports without price.
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.6 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
@@ -1808,6 +1809,7 @@ addon | version | maintainers | summary
 [sale_quotation_number](sale_quotation_number/) | 17.0.1.1.2 |  | Different sequence for sale quotations
 [sale_readonly_security](sale_readonly_security/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Readonly Security
 [sale_resource_booking](sale_resource_booking/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
+[sale_restricted_qty](sale_restricted_qty/) | 17.0.1.0.0 | <a href='https://github.com/ashishhirapara'><img src='https://github.com/ashishhirapara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirapara'/></a> | Sale order min quantity
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 17.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 17.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start date and end date on sale order lines
@@ -2843,7 +2845,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_geoengine](base_geoengine/) | 17.0.1.1.0 |  | Geospatial support for Odoo
+[base_geoengine](base_geoengine/) | 17.0.1.2.0 |  | Geospatial support for Odoo
 [base_geoengine_demo](base_geoengine_demo/) | 17.0.1.0.1 |  | Geo spatial support Demo
 [geoengine_base_geolocalize](geoengine_base_geolocalize/) | 17.0.1.0.0 |  | Geospatial support for base_geolocalize
 [geoengine_partner](geoengine_partner/) | 17.0.1.0.0 |  | Geospatial support of partners
@@ -2901,7 +2903,7 @@ addon | version | maintainers | summary
 [hr_timesheet_editable_top](hr_timesheet_editable_top/) | 17.0.1.0.0 |  | Add new timesheet entries to the top of the list
 [hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Timesheet Employee Analytic Tag
 [hr_timesheet_portal](hr_timesheet_portal/) | 17.0.1.0.0 |  | Fill in timesheets via the portal
-[hr_timesheet_sheet](hr_timesheet_sheet/) | 17.0.1.0.0 |  | Timesheet Sheets, Activities
+[hr_timesheet_sheet](hr_timesheet_sheet/) | 17.0.1.1.0 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 17.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
 [hr_timesheet_task_domain](hr_timesheet_task_domain/) | 17.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 17.0.1.0.1 |  | Set task on timesheet as a mandatory field
@@ -4952,6 +4954,7 @@ addon | version | maintainers | summary
 [l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.2.2 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.2 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
 [l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.2 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
+[l10n_es_atc_sii_oca](l10n_es_atc_sii_oca/) | 17.0.1.0.0 |  | Suministro Inmediato de Información en el IGIC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
@@ -5507,7 +5510,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
+[barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 17.0.1.0.1 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
 [product_multi_barcode](product_multi_barcode/) | 17.0.1.0.1 |  | Multiple barcodes on products
@@ -5890,8 +5893,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.5.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
+[ddmrp](ddmrp/) | 17.0.1.6.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.2.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.1 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 17.0.1.1.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Define additional rules to exclude certain moves from ADU calculation
@@ -6025,7 +6028,7 @@ addon | version | maintainers | summary
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds sequence to production work orders.
 [purchase_mrp_distribution](purchase_mrp_distribution/) | 17.0.1.0.0 |  | Purchase MRP Distribution
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 17.0.1.1.0 |  | MRP extension for quality control (OCA)
-[quality_control_oca](quality_control_oca/) | 17.0.1.3.0 |  | Generic infrastructure for quality tests.
+[quality_control_oca](quality_control_oca/) | 17.0.1.4.0 |  | Generic infrastructure for quality tests.
 [quality_control_oca_timesheet](quality_control_oca_timesheet/) | 17.0.1.0.0 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Quality Control - Timesheet (OCA)
 [quality_control_stock_oca](quality_control_stock_oca/) | 17.0.2.1.0 |  | Quality control - Stock (OCA)
 [stock_replenishment_mrp_bom_selection](stock_replenishment_mrp_bom_selection/) | 17.0.1.0.0 |  | Stock Replenishment MRP BoM Selection
@@ -6705,7 +6708,7 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 17.0.1.0.0 |  | Project Department Categorization
 [project_group](project_group/) | 17.0.1.0.0 |  | Add groups for filtering on projects
 [project_group_hr_timesheet](project_group_hr_timesheet/) | 17.0.1.0.0 |  | This module makes project group work properly with timesheets
-[project_hr](project_hr/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
+[project_hr](project_hr/) | 17.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 17.0.1.1.1 |  | Module decorates projects and tasks with Project Key
 [project_merge](project_merge/) | 17.0.1.0.0 |  | Wizard to merge project tasks
 [project_milestone_status](project_milestone_status/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Milestone Status
@@ -8585,7 +8588,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_chatter_position](web_chatter_position/) | 17.0.1.0.1 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | Add an option to change the chatter position
-[web_company_color](web_company_color/) | 17.0.1.2.1 |  | Web Company Color
+[web_company_color](web_company_color/) | 17.0.1.2.2 |  | Web Company Color
 [web_dialog_size](web_dialog_size/) | 17.0.1.0.1 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_editor_class_selector](web_editor_class_selector/) | 17.0.1.1.0 |  | Web editor class selector
 [web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.3 |  | Web Environment Ribbon

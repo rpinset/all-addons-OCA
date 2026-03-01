@@ -30,8 +30,12 @@ class TestAccountPaymentOrder(TransactionCase):
                 "name": "BANK",
                 "type": "bank",
                 "code": "bank",
+                "bank_acc_number": "123456",
             }
         )
+        cls.journal_bank.bank_account_id.with_user(
+            cls.env.ref("base.user_admin")
+        ).allow_out_payment = True
         payment_form = Form(cls.env["account.payment.mode"])
         payment_form.name = "SEPA (CORE)"
         payment_form.payment_method_id = cls.method_sepa

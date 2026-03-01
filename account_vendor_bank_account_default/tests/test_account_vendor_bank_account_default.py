@@ -97,11 +97,11 @@ class TestAccountVendorBankAccountDefault(AccountTestInvoicingCommon):
         self.assertFalse(in_invoice.partner_bank_id)
 
     def test_no_payment_mode(self):
-        # Test no bank account if bank_account is not required in payment mode
+        # Test bank account remains the same if no payment mode
         self.partner_a.default_bank_id = self.bank_account2
         self.partner_a.supplier_payment_mode_id = False
         in_invoice = self.create_in_invoice()
-        self.assertFalse(in_invoice.partner_bank_id)
+        self.assertEqual(in_invoice.partner_bank_id, self.bank_account1)
 
     def test_commercial_fields(self):
         # Test the default partner account in vendor bills with individual partner

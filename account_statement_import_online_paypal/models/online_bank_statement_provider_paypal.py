@@ -282,6 +282,12 @@ class OnlineBankStatementProviderPayPal(models.Model):
 
     @api.model
     def _paypal_preparse_transaction(self, transaction):
+        try:
+            transaction["_odoo_transaction_details"] = json.loads(
+                json.dumps(transaction)
+            )
+        except Exception:
+            transaction["_odoo_transaction_details"] = dict(transaction or {})
         date = (
             dateutil.parser.parse(self._paypal_get_transaction_date(transaction))
             .astimezone(pytz.utc)
@@ -293,6 +299,8 @@ class OnlineBankStatementProviderPayPal(models.Model):
     @api.model
     def _paypal_transaction_to_lines(self, data):
         transaction = data["transaction_info"]
+        transaction_details = (data or {}).get("_odoo_transaction_details") or {}
+        transaction_details_json = json.dumps(transaction_details, default=str)
         payer = data["payer_info"]
         transaction_id = transaction["transaction_id"]
         event_code = transaction["transaction_event_code"]
@@ -312,6 +320,11 @@ class OnlineBankStatementProviderPayPal(models.Model):
         if payer_email:
             note += " (%s)" % payer_email
         unique_import_id = f"{transaction_id}-{int(date.timestamp())}"
+        bank_ref = transaction.get("bank_reference_id") or transaction.get(
+            "settlement_reference_id"
+        )
+        if bank_ref and note == transaction_id:
+            note = f"General withdrawal from PayPal account {bank_ref} {note}"
         name = (
             invoice
             or transaction_subject
@@ -319,6 +332,8 @@ class OnlineBankStatementProviderPayPal(models.Model):
             or EVENT_DESCRIPTIONS.get(event_code)
             or ""
         )
+        item_codes = self._paypal_get_cart_item_codes(data)
+        narration = "\n".join(item_codes) if item_codes else False
         line = {
             "ref": name,
             "amount": str(total_amount),
@@ -326,7 +341,10 @@ class OnlineBankStatementProviderPayPal(models.Model):
             "payment_ref": note,
             "unique_import_id": unique_import_id,
             "raw_data": transaction,
+            "transaction_details": transaction_details_json,
         }
+        if narration:
+            line["narration"] = narration
         payer_full_name = payer_name.get("full_name") or payer_name.get(
             "alternate_full_name"
         )
@@ -342,9 +360,35 @@ class OnlineBankStatementProviderPayPal(models.Model):
                     "partner_name": "PayPal",
                     "unique_import_id": "%s-FEE" % unique_import_id,
                     "payment_ref": _("Transaction fee for %s") % note,
+                    "transaction_details": transaction_details_json,
                 }
             ]
         return lines
+
+    @api.model
+    def _paypal_get_cart_item_codes(self, data) -> list[str]:
+        """Extract unique PayPal cart item codes from a transaction payload.
+
+        PayPal may include sold items under ``cart_info.item_details``. Each entry can
+        contain an ``item_code`` which (for Odoo-originated payments) matches the
+        Sales Order name. This helper collects all non-empty item codes, strips
+        whitespace, removes duplicates while preserving the original order, and
+        returns the resulting list.
+
+        :param data: PayPal transaction payload (one ``transaction_details`` item).
+        :return: List of unique, non-empty item codes in first-seen order.
+        """
+        item_details = ((data or {}).get("cart_info") or {}).get("item_details") or []
+        seen: set[str] = set()
+        result: list[str] = []
+
+        for item in item_details:
+            code = str((item or {}).get("item_code") or "").strip()
+            if code and code not in seen:
+                seen.add(code)
+                result.append(code)
+
+        return result
 
     def _paypal_get_token(self):
         self.ensure_one()
