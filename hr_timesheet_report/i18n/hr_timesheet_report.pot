@@ -478,6 +478,12 @@ msgid "Type"
 msgstr ""
 
 #. module: hr_timesheet_report
+#: model:ir.model.fields,field_description:hr_timesheet_report.field_hr_timesheet_report__uom
+#: model:ir.model.fields,field_description:hr_timesheet_report.field_hr_timesheet_report_entry__uom
+msgid "Uom"
+msgstr ""
+
+#. module: hr_timesheet_report
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_report.hr_timesheet_report_wizard_form
 msgid "View"
 msgstr ""

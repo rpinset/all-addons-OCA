@@ -4,7 +4,7 @@
 
 {
     "name": "Task Logs Timesheet Report",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Human Resources",
     "maintainers": ["alexey-pelykh"],
     "website": "https://github.com/OCA/timesheet",

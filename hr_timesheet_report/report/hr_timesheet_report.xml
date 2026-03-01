@@ -9,7 +9,6 @@
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="report">
                 <t t-call="web.external_layout">
-                    <t t-set="uom_hour" t-value="env.ref('uom.product_uom_hour')" />
                     <div class="page">
                         <div class="oe_structure" />
                         <div class="row">
@@ -32,7 +31,12 @@
                                             t-out="report.total_unit_amount"
                                             t-options="{'widget': 'float', 'precision': 2}"
                                         />
-                                        <span t-field="uom_hour.name" />
+                                        <span
+                                            t-elif="report.time_format == 'days'"
+                                            t-esc="report.total_unit_amount"
+                                            t-options="{'widget': 'float', 'precision': 2}"
+                                        />
+                                        <span t-esc="report.uom.name" />
                                     </span>
                                 </h2>
                             </div>
@@ -152,7 +156,7 @@
                                             <span t-field="field.field_title" />
                                         </th>
                                         <th class="text-right">
-                                            <span t-field="uom_hour.name" />
+                                            <span t-esc="report.uom.name" />
                                         </th>
                                     </tr>
                                     <tr t-foreach="group.entry_ids" t-as="entry">
@@ -182,6 +186,11 @@
                                                 t-field="entry.total_unit_amount"
                                                 t-options="{'widget': 'float', 'precision': 2}"
                                             />
+                                            <span
+                                                t-elif="report.time_format == 'days'"
+                                                t-field="entry.total_unit_amount"
+                                                t-options="{'widget': 'float', 'precision': 2}"
+                                            />
                                         </td>
                                     </tr>
                                     <tr class="o_subtotal">
@@ -208,6 +217,11 @@
                                             <strong
                                                 t-elif="report.time_format == 'decimal'"
                                                 t-out="group.total_unit_amount"
+                                                t-options="{'widget': 'float', 'precision': 2}"
+                                            />
+                                            <strong
+                                                t-elif="report.time_format == 'days'"
+                                                t-esc="group.total_unit_amount"
                                                 t-options="{'widget': 'float', 'precision': 2}"
                                             />
                                         </td>

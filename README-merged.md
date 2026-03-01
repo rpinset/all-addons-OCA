@@ -2724,6 +2724,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# e-commerce
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2731,8 +2734,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# e-commerce
 
 TODO: add repo description.
 
@@ -2768,7 +2769,7 @@ addon | version | maintainers | summary
 [website_sale_product_item_cart_custom_qty](website_sale_product_item_cart_custom_qty/) | 16.0.1.2.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Allows to add to cart from product items a custom quantity.
 [website_sale_product_minimal_price](website_sale_product_minimal_price/) | 16.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Display minimal price for products that has variants
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 16.0.1.0.2 |  | Display product reference in e-commerce
-[website_sale_require_legal](website_sale_require_legal/) | 16.0.1.0.1 |  | Force the user to accept legal tems to buy in the web shop
+[website_sale_require_legal](website_sale_require_legal/) | 16.0.1.0.2 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_stock_available](website_sale_stock_available/) | 16.0.1.0.2 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
 [website_sale_stock_list_preview](website_sale_stock_list_preview/) | 16.0.1.0.1 |  | Show the stock of products on the product previews
 [website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 16.0.1.0.0 |  | Display provisioning date for a product in shop online
@@ -3201,7 +3202,7 @@ addon | version | maintainers | summary
 [hr_timesheet_portal](hr_timesheet_portal/) | 16.0.1.0.0 |  | Fill in timesheets via the portal
 [hr_timesheet_predefined_description](hr_timesheet_predefined_description/) | 16.0.1.0.0 | <a href='https://github.com/juanjosesegui-tecnativa'><img src='https://github.com/juanjosesegui-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juanjosesegui-tecnativa'/></a> | Predefined descriptions for timesheet entries
 [hr_timesheet_predefined_description_rules](hr_timesheet_predefined_description_rules/) | 16.0.1.0.0 |  | Manage predefined descriptions for timesheet entries
-[hr_timesheet_report](hr_timesheet_report/) | 16.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
+[hr_timesheet_report](hr_timesheet_report/) | 16.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
 [hr_timesheet_report_rounded](hr_timesheet_report_rounded/) | 16.0.1.0.0 |  | Show rounded time in the Timesheet Reports
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 16.0.1.2.0 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_attendance](hr_timesheet_sheet_attendance/) | 16.0.1.0.1 |  | HR Timesheet Sheet Attendance
@@ -6528,6 +6529,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# ddmrp
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/ddmrp&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/ddmrp/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/ddmrp/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6536,9 +6540,7 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# ddmrp
-
-TODO: add repo description.
+DDMRP in Odoo.
 
 <!-- /!\ do not modify below this line -->
 
@@ -6550,8 +6552,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 16.0.1.12.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.5.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
+[ddmrp](ddmrp/) | 16.0.1.13.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.7.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.1 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 16.0.1.1.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Define additional rules to exclude certain moves from ADU calculation
@@ -6966,7 +6968,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.3.3.0 |  | A property management system
+[pms](pms/) | 16.0.3.4.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.2.0.0 |  | PMS Spanish Adaptation
@@ -8391,7 +8393,7 @@ addon | version | maintainers | summary
 [excel_import_export](excel_import_export/) | 16.0.1.3.2 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base module for developing Excel import/export/report
 [excel_import_export_demo](excel_import_export_demo/) | 16.0.1.1.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Excel Import/Export/Report Demo
 [excel_import_export_unidecode](excel_import_export_unidecode/) | 16.0.1.0.1 |  | Add unidecode option to excel import/export/report
-[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.1.7.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
+[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.2.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 16.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 16.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
 [field_vector](field_vector/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
@@ -9567,6 +9569,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# web
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/web&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/web/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/web/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/web/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/web/actions/workflows/test.yml?query=branch%3A16.0)
@@ -9574,8 +9579,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/web-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/web-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# web
 
 TODO: add repo description.
 
@@ -9644,7 +9647,7 @@ addon | version | maintainers | summary
 [web_systray_button_init_action](web_systray_button_init_action/) | 16.0.1.0.1 |  | Add a button to go to the user init action.
 [web_theme_classic](web_theme_classic/) | 16.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Contrasted style on fields to improve the UI.
 [web_time_range_menu_custom](web_time_range_menu_custom/) | 16.0.1.0.0 |  | Web Time Range Menu Custom
-[web_timeline](web_timeline/) | 16.0.2.0.0 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 16.0.2.0.1 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time
 [web_touchscreen](web_touchscreen/) | 16.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | UX improvements for touch screens
 [web_tree_duplicate](web_tree_duplicate/) | 16.0.1.0.1 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Duplicate records directly from the tree view.
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 16.0.1.0.0 |  | Allows you to dynamically color fields on tree views

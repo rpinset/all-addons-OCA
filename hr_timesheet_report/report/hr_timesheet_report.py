@@ -62,6 +62,7 @@ class HrTimesheetReport(models.TransientModel):
         selection=lambda self: self._selection_time_format(),
         required=True,
     )
+    uom = fields.Many2one("uom.uom", compute="_compute_uom", store=True)
     group_ids = fields.One2many(
         string="Groups",
         comodel_name="hr.timesheet.report.group",
@@ -81,6 +82,7 @@ class HrTimesheetReport(models.TransientModel):
             ("hh_mm", "Hours, minutes"),
             ("hh_mm_ss", "Hours, minutes, seconds"),
             ("decimal", "Decimal"),
+            ("days", "Days"),
         ]
 
     @api.model
@@ -164,6 +166,14 @@ class HrTimesheetReport(models.TransientModel):
             "name": reduce(lambda l, r: _("{l} » {r}").format(l=l, r=r), name_parts),
             "scope": ustr(grouped_lines["__domain"]),
         }
+
+    @api.depends("time_format")
+    def _compute_uom(self):
+        for report in self:
+            if report.time_format == "days":
+                report.uom = self.env.ref("uom.product_uom_day")
+            else:
+                report.uom = self.env.ref("uom.product_uom_hour")
 
     @api.depends("group_ids.total_unit_amount")
     def _compute_total_unit_amount(self):
@@ -404,6 +414,7 @@ class HrTimesheetReportEntry(models.TransientModel):
         compute="_compute_total_unit_amount",
         store=True,
     )
+    uom = fields.Many2one("uom.uom", related="group_id.report_id.uom")
 
     @api.depends("scope")
     def _compute_any_line_id(self):
@@ -418,16 +429,16 @@ class HrTimesheetReportEntry(models.TransientModel):
     @api.depends("scope")
     def _compute_total_unit_amount(self):
         AccountAnalyticLine = self.env["account.analytic.line"]
-        uom_hour = self.env.ref("uom.product_uom_hour")
 
         for entry in self:
+
             total_unit_amount = 0.0
             line_ids = AccountAnalyticLine.search(
                 safe_eval(entry.scope) if entry.scope else TRUE_DOMAIN
             )
             for line_id in line_ids:
                 total_unit_amount += line_id.product_uom_id._compute_quantity(
-                    line_id.unit_amount, uom_hour
+                    line_id.unit_amount, entry.uom
                 )
             entry.total_unit_amount = total_unit_amount
 
@@ -644,6 +655,8 @@ class Report(models.AbstractModel):
             return "[h]:mm"
         elif report.time_format == "hh_mm_ss":
             return "[h]:mm:ss"
+        elif report.time_format == "days":
+            return "0.00"
 
     @api.model
     def _convert_amount_num_format(self, report, amount):

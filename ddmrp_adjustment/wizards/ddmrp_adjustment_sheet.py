@@ -4,7 +4,13 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
-from ..models.ddmrp_adjustment import DAF_string, LTAF_string
+from ..models.ddmrp_adjustment import (
+    DAF_string,
+    GZAF_string,
+    LTAF_string,
+    RZAF_string,
+    YZAF_string,
+)
 
 
 class DdmrpAdjustmentSheet(models.TransientModel):
@@ -17,6 +23,12 @@ class DdmrpAdjustmentSheet(models.TransientModel):
             factors.append(DAF_string)
         if self.apply_ltaf:
             factors.append(LTAF_string)
+        if self.apply_rzaf:
+            factors.append(RZAF_string)
+        if self.apply_yzaf:
+            factors.append(YZAF_string)
+        if self.apply_gzaf:
+            factors.append(GZAF_string)
         return factors
 
     def _prepare_line(self, period, factor):
@@ -76,9 +88,19 @@ class DdmrpAdjustmentSheet(models.TransientModel):
     )
     apply_daf = fields.Boolean(string="Demand Adjustment Factor")
     apply_ltaf = fields.Boolean(string="Lead Time Adjustment Factor")
+    apply_rzaf = fields.Boolean(string="Red Zone Adjustment Factor")
+    apply_yzaf = fields.Boolean(string="Yellow Zone Adjustment Factor")
+    apply_gzaf = fields.Boolean(string="Green Zone Adjustment Factor")
 
     @api.onchange(
-        "date_range_type_id", "date_start", "date_end", "apply_daf", "apply_ltaf"
+        "date_range_type_id",
+        "date_start",
+        "date_end",
+        "apply_daf",
+        "apply_ltaf",
+        "apply_rzaf",
+        "apply_yzaf",
+        "apply_gzaf",
     )
     def _onchange_sheet(self):
         self.line_ids = [(6, 0, [])]
@@ -89,7 +111,13 @@ class DdmrpAdjustmentSheet(models.TransientModel):
             and len(self.buffer_ids) > 0
         ):
             return
-        if self.apply_daf or self.apply_ltaf:
+        if (
+            self.apply_daf
+            or self.apply_ltaf
+            or self.apply_rzaf
+            or self.apply_yzaf
+            or self.apply_gzaf
+        ):
             lines = self._prepare_lines()
             self.line_ids = lines
 
