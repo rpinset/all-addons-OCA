@@ -17,13 +17,6 @@ msgstr ""
 "X-Generator: Weblate 3.10\n"
 
 #. module: contract_sale_payment_mode
-#: model_terms:ir.ui.view,arch_db:contract_sale_payment_mode.res_config_settings_form_view
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-
-#. module: contract_sale_payment_mode
 #: model:ir.model,name:contract_sale_payment_mode.model_res_company
 msgid "Companies"
 msgstr ""
@@ -45,8 +38,8 @@ msgstr ""
 
 #. module: contract_sale_payment_mode
 #: model:ir.model,name:contract_sale_payment_mode.model_sale_order
-msgid "Sale Order"
-msgstr "Encomenda de Venda"
+msgid "Sales Order"
+msgstr ""
 
 #. module: contract_sale_payment_mode
 #: model:ir.model.fields,field_description:contract_sale_payment_mode.field_res_company__specific_contract_payment_mode
@@ -60,3 +53,11 @@ msgid ""
 "This option allow allow to set different payment mode for the contracts "
 "generated from the sale order than the one will be used for invoices."
 msgstr ""
+
+#. module: contract_sale_payment_mode
+#: model_terms:ir.ui.view,arch_db:contract_sale_payment_mode.res_config_settings_form_view
+msgid "Values set here are company-specific."
+msgstr ""
+
+#~ msgid "Sale Order"
+#~ msgstr "Encomenda de Venda"

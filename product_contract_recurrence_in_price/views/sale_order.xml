@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="sale_order_form_view">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="product_contract.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']/form//field[@name='is_auto_renew']"
+                position="before"
+            >
+                <field name="include_recurrence_in_price" />
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']/list//field[@name='recurring_invoicing_type']"
+                position="after"
+            >
+                <field name="recurring_invoicing_number" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

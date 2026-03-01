@@ -101,12 +101,12 @@ msgstr "Aantal contracten"
 
 #. module: product_contract
 #: model:ir.model,name:product_contract.model_contract_line
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_line_id
 msgid "Contract Line"
 msgstr "Contractregel"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_line_id
-#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_line_id
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__contract_line_id
 msgid "Contract Line to replace"
 msgstr "Te vervangen contractregel"
@@ -662,8 +662,8 @@ msgid ""
 "Specify if the invoice must be generated at the beginning (pre-paid) or end "
 "(post-paid) of the period."
 msgstr ""
-"Geef aan of de factuur aan het begin (vooraf betaald) of aan het einde ("
-"achteraf betaald) van de periode moet worden gegenereerd."
+"Geef aan of de factuur aan het begin (vooraf betaald) of aan het einde "
+"(achteraf betaald) van de periode moet worden gegenereerd."
 
 #. module: product_contract
 #: model:ir.model.fields,help:product_contract.field_product_product__recurring_rule_type

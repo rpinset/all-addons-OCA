@@ -17,16 +17,6 @@ msgstr ""
 "X-Generator: Weblate 5.10.4\n"
 
 #. module: contract_sale_payment_mode
-#: model_terms:ir.ui.view,arch_db:contract_sale_payment_mode.res_config_settings_form_view
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title="
-"\"I valori impostati qui sono specifici per azienda.\" groups="
-"\"base.group_multi_company\"/>"
-
-#. module: contract_sale_payment_mode
 #: model:ir.model,name:contract_sale_payment_mode.model_res_company
 msgid "Companies"
 msgstr "Aziende"
@@ -49,14 +39,15 @@ msgstr ""
 
 #. module: contract_sale_payment_mode
 #: model:ir.model,name:contract_sale_payment_mode.model_sale_order
-msgid "Sale Order"
-msgstr "Ordine di vendita"
+msgid "Sales Order"
+msgstr ""
 
 #. module: contract_sale_payment_mode
 #: model:ir.model.fields,field_description:contract_sale_payment_mode.field_res_company__specific_contract_payment_mode
 #: model:ir.model.fields,field_description:contract_sale_payment_mode.field_res_config_settings__specific_contract_payment_mode
 msgid "Specific payment mode for contracts created from sale orders"
-msgstr "Metodo di pagamento specifico per contratti creati da ordini di vendita"
+msgstr ""
+"Metodo di pagamento specifico per contratti creati da ordini di vendita"
 
 #. module: contract_sale_payment_mode
 #: model_terms:ir.ui.view,arch_db:contract_sale_payment_mode.res_config_settings_form_view
@@ -66,3 +57,18 @@ msgid ""
 msgstr ""
 "Questa opzione consente di impostare un metodo di pagamento diverso per i "
 "contratti generati da ordine di vendita che verrà usato nelle fatture."
+
+#. module: contract_sale_payment_mode
+#: model_terms:ir.ui.view,arch_db:contract_sale_payment_mode.res_config_settings_form_view
+msgid "Values set here are company-specific."
+msgstr ""
+
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "
+#~ "company-specific.\" groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui "
+#~ "sono specifici per azienda.\" groups=\"base.group_multi_company\"/>"
+
+#~ msgid "Sale Order"
+#~ msgstr "Ordine di vendita"

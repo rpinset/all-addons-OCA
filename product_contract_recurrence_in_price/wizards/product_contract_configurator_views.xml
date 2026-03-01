@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_contract_configurator_form_views" model="ir.ui.view">
+        <field name="model">product.contract.configurator</field>
+        <field
+            name="inherit_id"
+            ref="product_contract.product_contract_configurator_form"
+        />
+        <field name="arch" type="xml">
+            <field name="recurring_invoicing_type" position="after">
+                <field name="include_recurrence_in_price" />
+            </field>
+        </field>
+    </record>
+</odoo>

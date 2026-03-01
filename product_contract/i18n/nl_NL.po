@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2017-06-09 01:10+0000\n"
 "PO-Revision-Date: 2017-06-09 01:10+0000\n"
 "Last-Translator: Peter Hageman <hageman.p@gmail.com>, 2017\n"
-"Language-Team: Dutch (Netherlands) (https://www.transifex.com/oca/"
-"teams/23907/nl_NL/)\n"
+"Language-Team: Dutch (Netherlands) (https://www.transifex.com/oca/teams/"
+"23907/nl_NL/)\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -101,13 +101,13 @@ msgstr "Contract"
 
 #. module: product_contract
 #: model:ir.model,name:product_contract.model_contract_line
+#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_line_id
 #, fuzzy
 msgid "Contract Line"
 msgstr "Contract"
 
 #. module: product_contract
 #: model:ir.model.fields,field_description:product_contract.field_product_contract_configurator__contract_line_id
-#: model:ir.model.fields,field_description:product_contract.field_sale_order_line__contract_line_id
 #: model:ir.model.fields,field_description:product_contract.field_sale_order_line_contract_mixin__contract_line_id
 #, fuzzy
 msgid "Contract Line to replace"

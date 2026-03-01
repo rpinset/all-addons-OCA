@@ -32,6 +32,7 @@ unidecode
 xlrd
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # generated from manifests external_dependencies
+cryptography
 ofxparse
 plaid-python
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
