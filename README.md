@@ -945,11 +945,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit dd3edd4219828bd4c81a81e77576d58c548f7e7e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:09:04 2025 +0000
+commit 5d9163e6a6c51a2fd621f036ec40ba6c55ba360e
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 26 23:17:21 2026 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_mod347
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_mod347/
 
 
 ## l10n-switzerland
@@ -1058,16 +1063,16 @@ Date:   Tue Sep 9 10:05:35 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 3500e1e62862b23fdc001425b726f5abeb66f784
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 08:36:41 2026 +0000
+commit 119dbfcfc178d0533a1ae174a7100b4b267b86f5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Feb 28 14:01:44 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (100 of 100 strings)
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_batch_extended/sl/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_backdating
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_backdating/it/
 
 
 ## stock-logistics-tracking
@@ -1081,16 +1086,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 5aa3314189e66131c6460fcf4fe99ab1f379b55e
+commit 576930983e7e0be78af2e0217b9bf86354b871f1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 4 08:05:46 2026 +0000
+Date:   Sat Feb 28 14:04:24 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (26 of 26 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-sale_stock_info_popup
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-sale_stock_info_popup/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_change_qty_reason
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_change_qty_reason/it/
 
 
 ## stock-logistics-reporting
