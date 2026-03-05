@@ -348,7 +348,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.5 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 14.0.1.9.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[partner_statement](partner_statement/) | 14.0.1.9.1 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 [portal_partner_statement](portal_partner_statement/) | 14.0.1.0.0 |  | Download OCA Financial Reports from portal
 
 [//]: # (end addons)
@@ -557,6 +557,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-fiscal-rule
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A14.0)
@@ -564,8 +567,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-fiscal-rule
 
 TODO: add repo description.
 

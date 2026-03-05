@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 0e545b61e3d1d6cff518f21774e8c829186b6324
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 06:20:38 2026 +0000
+commit 0d5c137696d5c3e7354293804ef1375f6041f6e5
+Author: Anxo López Rodríguez <lopezrodriguezanxo@gmail.com>
+Date:   Mon Mar 2 19:43:24 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Galician)
     
-    Currently translated at 76.9% (10 of 13 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_parent/sl/
+    Translation: account-analytic-14.0/account-analytic-14.0-stock_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-stock_analytic/gl/
 
 
 ## account-budgeting
@@ -89,16 +89,11 @@ Date:   Fri Feb 27 11:28:42 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 9feba587cd5796da28b762f22ab34281e9929475
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 09:30:42 2026 +0000
+commit 9875dfcec0cad4f82693cc4868a0d0de3d510f40
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 3 19:54:05 2026 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 1.5% (4 of 261 strings)
-    
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/tr/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -112,25 +107,28 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit c4d1858b099353485fd7879edfd5220e158f7b5d
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:25:29 2026 +0000
+commit c8a9a5c9f6fcc99e4c5690af6faaba89759e2e15
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Mar 4 10:33:17 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (21 of 21 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-invoicing-14.0/account-invoicing-14.0-sale_order_invoicing_grouping_criteria
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_order_invoicing_grouping_criteria/sl/
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_purchase_picking_selection
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_purchase_picking_selection/it/
 
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 5550dae5ddeadf1519d86bef54c548e2ee0cf15a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jan 4 22:27:05 2026 +0000
+commit 15069cbcd33c4919a534b3d8419f31395f040380
+Merge: 5550dae5 cefb342d
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Mar 2 11:52:34 2026 +0100
 
-    [BOT] post-merge updates
+    Merge pull request #581 from ursais/14-dr-precommit-update
+    
+    [14.0][REF] pre-commit: copier update
 
 
 ## operating-unit
@@ -394,16 +392,16 @@ Date:   Wed Jun 4 02:45:55 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit e959f96e2035f00b3bf3b962f5e6d0c473e72034
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 08:34:58 2026 +0000
+commit 284fb2e3d03c1b1e8c90ec472a564fd00048774d
+Author: K <luca@pretto.eu>
+Date:   Thu Mar 5 08:50:48 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 50.6% (42 of 83 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: partner-contact-14.0/partner-contact-14.0-partner_identification
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_identification/sl/
+    Translation: partner-contact-14.0/partner-contact-14.0-partner_deduplicate_acl
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_deduplicate_acl/it/
 
 
 ## sale-financial
@@ -1200,11 +1198,16 @@ Date:   Tue Oct 21 07:04:36 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit af6454f3de2cd8af6b894fb86b5d889da98df454
-Author: beau sebastien <sebastien.beau@akretion.com>
-Date:   Wed Feb 25 09:14:02 2026 +0000
+commit d499f7b047fa8c47f73ef23943942f9a9e806064
+Author: Francois Poizat <francois.poizat@gmail.com>
+Date:   Wed Mar 4 17:34:34 2026 +0000
 
-    Added translation using Weblate (French)
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (318 of 318 strings)
+    
+    Translation: wms-14.0/wms-14.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/fr/
 
 
 ## manufacture
