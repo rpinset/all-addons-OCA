@@ -82,9 +82,67 @@ class TestEnv(common.ServerEnvironmentCase):
             model = self.env["server.config"]
             model._add_columns()
             self.env.registry.setup_models(self.env.cr)
-        defaults = self._test_default(hidden_pwd=True)
+            defaults = self._test_default(hidden_pwd=True)
 
-        self.assertIn("odoo_I_admin_passwd", defaults)
-        self.assertIn("odoo_I_db_password", defaults)
-        self.assertIn("odoo_I_smtp_password", defaults)
-        self.assertIn("outgoing_mail_provider_promail_I_smtp_pass", defaults)
+            self.assertIn("odoo_I_admin_passwd", defaults)
+            self.assertIn("odoo_I_db_password", defaults)
+            self.assertIn("odoo_I_smtp_password", defaults)
+            self.assertIn("outgoing_mail_provider_promail_I_smtp_pass", defaults)
+
+    @patch.dict(os.environ, {"SERVER_ENVIRONMENT_ALLOW_OVERWRITE_OPTIONS_SECTION": "0"})
+    @patch.dict(
+        odoo_config.options,
+        {
+            "running_env": "testing",
+            "server_environment_allow_overwrite_options_section": True,
+            "odoo_test_option": "fake odoo config",
+        },
+    )
+    def test_server_environment_allow_overwrite_options_section(self):
+        with self.set_config_dir("testfiles"):
+            server_env._load_config()
+            self.assertEqual(
+                odoo_config["odoo_test_option"], "Set in config file for testing env"
+            )
+
+    @patch.dict(os.environ, {"SERVER_ENVIRONMENT_ALLOW_OVERWRITE_OPTIONS_SECTION": "1"})
+    @patch.dict(
+        odoo_config.options,
+        {
+            "running_env": "testing",
+            "server_environment_allow_overwrite_options_section": False,
+            "odoo_test_option": "fake odoo config",
+        },
+    )
+    def test_server_environment_disabled_overwrite_options_section(self):
+        with self.set_config_dir("testfiles"):
+            server_env._load_config()
+            self.assertEqual(odoo_config["odoo_test_option"], "fake odoo config")
+
+    @patch.dict(os.environ, {"SERVER_ENVIRONMENT_ALLOW_OVERWRITE_OPTIONS_SECTION": "1"})
+    @patch.dict(
+        odoo_config.options,
+        {
+            "running_env": "testing",
+            "odoo_test_option": "fake odoo config",
+        },
+    )
+    def test_server_environment_allow_overwrite_options_section_by_env(self):
+        with self.set_config_dir("testfiles"):
+            server_env._load_config()
+            self.assertEqual(
+                odoo_config["odoo_test_option"], "Set in config file for testing env"
+            )
+
+    @patch.dict(os.environ, {"SERVER_ENVIRONMENT_ALLOW_OVERWRITE_OPTIONS_SECTION": "0"})
+    @patch.dict(
+        odoo_config.options,
+        {
+            "running_env": "testing",
+            "odoo_test_option": "fake odoo config",
+        },
+    )
+    def test_server_environment_disabled_overwrite_options_section_by_env(self):
+        with self.set_config_dir("testfiles"):
+            server_env._load_config()
+            self.assertEqual(odoo_config["odoo_test_option"], "fake odoo config")

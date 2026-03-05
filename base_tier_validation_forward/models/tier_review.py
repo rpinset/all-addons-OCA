@@ -5,7 +5,6 @@ from odoo import api, fields, models
 
 class TierReview(models.Model):
     _inherit = "tier.review"
-    _order = "sequence"
 
     # NOTE: Added translate=True because in the compute method we assign:
     #   rec.name = rec.definition_id.name

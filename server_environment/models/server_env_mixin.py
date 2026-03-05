@@ -7,6 +7,7 @@ from functools import partialmethod
 from lxml import etree
 
 from odoo import api, fields, models
+from odoo.tools import mute_logger
 
 from odoo.addons.base_sparse_field.models.fields import Serialized
 
@@ -356,7 +357,9 @@ class ServerEnvMixin(models.AbstractModel):
         inverse_method = _partialmethod(
             type(self)._inverse_server_env, field.name, __name__=inverse_method_name
         )
-        setattr(type(self), inverse_method_name, inverse_method)
+        # Mute message related to new safeguard (PR odoo/odoo#247151)
+        with mute_logger("odoo.tests.common"):
+            setattr(type(self), inverse_method_name, inverse_method)
         field.inverse = inverse_method_name
         field.store = False
         field.required = False

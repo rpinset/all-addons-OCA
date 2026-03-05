@@ -35,15 +35,21 @@ class ValidationForwardWizard(models.TransientModel):
                 )
             }
         )
-        prev_comment.add_comment()
+        prev_comment.with_context(
+            tier_validation_defer_compute_can_review=True
+        ).add_comment()
         prev_reviews = prev_comment.review_ids
-        review = self.env["tier.review"].create(
-            {
-                "model": rec._name,
-                "res_id": rec.id,
-                "sequence": max(prev_reviews.mapped("sequence")) + 0.1,
-                "requested_by": self.env.uid,
-            }
+        review = (
+            self.env["tier.review"]
+            .with_context(tier_validation_defer_compute_can_review=True)
+            .create(
+                {
+                    "model": rec._name,
+                    "res_id": rec.id,
+                    "sequence": max(prev_reviews.mapped("sequence")),
+                    "requested_by": self.env.uid,
+                }
+            )
         )
         # Because following fields are readonly, we need to write after create
         review.write(

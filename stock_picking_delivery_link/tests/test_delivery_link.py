@@ -38,16 +38,17 @@ class TestStockPickingDeliveryLink(StockPickingDeliveryLinkCommonCase):
                 }
             )
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
+    def setUp(self):
+        super().setUp()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
         from .models.delivery_carrier import DeliveryCarrier
 
-        cls.loader.update_registry((DeliveryCarrier,))
+        self.loader.update_registry((DeliveryCarrier,))
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        super().tearDownClass()
+    def tearDown(self):
+        self.loader.restore_registry()
+        return super().tearDown()
 
     def test_ship_data_from_pick(self):
         move1 = self._create_move(
@@ -293,9 +294,11 @@ class TestStockPickingDeliveryLink(StockPickingDeliveryLinkCommonCase):
         self.env["stock.quant"]._update_available_quantity(
             self.product, self.shelf1_loc, 20.0
         )
+        group = self.env["procurement.group"].create({"name": "Test group"})
         ship_move = self.env["stock.move"].create(
             {
                 "name": "The ship move",
+                "group_id": group.id,
                 "product_id": self.product.id,
                 "product_uom_qty": 5.0,
                 "product_uom": self.product.uom_id.id,
@@ -309,7 +312,6 @@ class TestStockPickingDeliveryLink(StockPickingDeliveryLinkCommonCase):
         )
 
         ship_move._action_confirm()
-        ship_move._assign_picking()
         ship_move.picking_id.carrier_id = self.test_carrier
 
         res = ship_move.picking_id.action_put_in_pack()

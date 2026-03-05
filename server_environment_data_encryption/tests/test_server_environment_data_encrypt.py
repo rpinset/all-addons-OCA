@@ -14,18 +14,27 @@ class TestServerEnvDataEncrypted(CommonDataEncrypted):
         super().setUpClass()
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()
+        cls._origin_fields = {}
+        for model in "res.partner", "res.users":
+            cls._origin_fields[model] = set(dir(cls.env[model].__class__))
 
+    def setUp(self):
+        super().setUp()
         # The fake class is imported here !! After the backup_registry
         from .models import FakePartner
 
-        cls.loader.update_registry((FakePartner,))
-        cls.set_new_key_env("prod")
-        cls.set_new_key_env("preprod")
+        self.loader.update_registry((FakePartner,))
+        self.addCleanup(self.loader.restore_registry)
+        self.addCleanup(self.remove_mixin_fields)
+        self.set_new_key_env("prod")
+        self.set_new_key_env("preprod")
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        super().tearDownClass()
+    def remove_mixin_fields(self):
+        # E.g: server_env_defaults, _inverse_server_env_city
+        for model in "res.partner", "res.users":
+            extra = set(self.env[model].__class__.__dict__) - self._origin_fields[model]
+            for attr in extra:
+                delattr(self.env[model].__class__, attr)
 
     def test_env_dependent_value(self):
         partner = self.env["res.partner"].create(

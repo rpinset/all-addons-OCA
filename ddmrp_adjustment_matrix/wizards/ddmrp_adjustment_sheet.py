@@ -1,10 +1,10 @@
-# Copyright 2017-20 ForgeFlow S.L. (https://www.forgeflow.com)
+# Copyright 2026 ForgeFlow S.L. (https://www.forgeflow.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
-from ..models.ddmrp_adjustment import (
+from odoo.addons.ddmrp_adjustment.models.ddmrp_adjustment import (
     DAF_string,
     GZAF_string,
     LTAF_string,
@@ -135,7 +135,7 @@ class DdmrpAdjustmentSheet(models.TransientModel):
             lines = self._prepare_lines()
             self.line_ids = lines
         action = self.env["ir.actions.actions"]._for_xml_id(
-            "ddmrp_adjustment.action_ddmrp_adjustment_sheet_wizard"
+            "ddmrp_adjustment_matrix.action_ddmrp_adjustment_sheet_wizard"
         )
         action["res_id"] = self.id
         return action

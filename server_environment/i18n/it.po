@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: server-tools (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 02:53+0000\n"
-"PO-Revision-Date: 2025-05-16 09:24+0000\n"
+"PO-Revision-Date: 2026-03-05 16:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-9-0/"
 "language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
@@ -405,6 +405,11 @@ msgstr "odoo | server_wide_modules"
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_shell_interface
 msgid "odoo | shell_interface"
 msgstr "odoo | shell_interface"
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_skip_auto_install
+msgid "odoo | skip_auto_install"
+msgstr "odoo | skip_auto_install"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_password

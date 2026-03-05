@@ -406,6 +406,11 @@ msgid "odoo | shell_interface"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_skip_auto_install
+msgid "odoo | skip_auto_install"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_password
 msgid "odoo | smtp_password"
 msgstr ""

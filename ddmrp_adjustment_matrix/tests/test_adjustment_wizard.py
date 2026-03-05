@@ -1,13 +1,32 @@
-# Copyright 2018 Camptocamp SA
-# Copyright 2020 ForgeFlow S.L. (https://www.forgeflow.com)
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+# Copyright 2026 ForgeFlow S.L. (https://www.forgeflow.com)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+
+import datetime
 
 from dateutil.relativedelta import relativedelta
 
-from .test_common import TestDDMRPAdjustmentCommon
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
+
+from odoo.addons.ddmrp_adjustment.tests.test_common import TestDDMRPAdjustmentCommon
 
 
 class TestAdjustmentWizard(TestDDMRPAdjustmentCommon):
+    def _create_adjustment_wizard(self, number_of_periods):
+        date_start = datetime.datetime(year=self.now.year, month=self.now.month, day=1)
+        date_end = (
+            date_start + relativedelta(months=number_of_periods) - relativedelta(days=1)
+        )
+        wiz = self.env["ddmrp.adjustment.sheet"].create(
+            {
+                "date_start": date_start.strftime(DEFAULT_SERVER_DATE_FORMAT),
+                "date_end": date_end.strftime(DEFAULT_SERVER_DATE_FORMAT),
+                "date_range_type_id": self.month_date_range_type.id,
+            }
+        )
+        wiz.buffer_ids = [(4, self.buffer.id, False)]
+        wiz.action_refresh()
+        return wiz
+
     def test_adjustment_generation(self):
         wiz = self._create_adjustment_wizard(3)
         self.assertEqual(len(wiz.line_ids), 0)
