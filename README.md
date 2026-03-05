@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit a6cd6c10273a96130e7d32eca58de785ed6de517
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 06:20:46 2026 +0000
+commit eec2678495c4b805344b0f8643bfbccc944c7575
+Author: Anxo López Rodríguez <lopezrodriguezanxo@gmail.com>
+Date:   Mon Mar 2 19:36:14 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Galician)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_parent/sl/
+    Translation: account-analytic-12.0/account-analytic-12.0-stock_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-stock_analytic/gl/
 
 
 ## account-budgeting
