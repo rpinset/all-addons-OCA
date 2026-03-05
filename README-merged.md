@@ -288,6 +288,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-financial-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A15.0)
@@ -295,8 +298,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-financial-reporting
 
 TODO: add repo description.
 
@@ -318,7 +319,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 15.0.1.1.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 15.0.1.0.0 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 15.0.1.0.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 15.0.1.3.1 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[partner_statement](partner_statement/) | 15.0.1.3.2 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -524,6 +525,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-fiscal-rule
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A15.0)
@@ -531,8 +535,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-fiscal-rule
 
 Odoo Accounting Taxe and Fiscal Features
 
@@ -6781,6 +6783,7 @@ addon | version | maintainers | summary
 [product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.5.1 |  | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 15.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 15.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Extend Product Pricelist Direct Print for filter by public categories
+[product_pricelist_discount_by_range](product_pricelist_discount_by_range/) | 15.0.1.0.0 |  | Allows to create priceslists with discount ranges
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 15.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 15.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_simulation](product_pricelist_simulation/) | 15.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simulate the product price for all pricelists
@@ -8125,6 +8128,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# community-data-files
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/community-data-files&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/community-data-files/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/community-data-files/actions/workflows/test.yml?query=branch%3A15.0)
@@ -8132,8 +8138,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/community-data-files-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/community-data-files-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# community-data-files
 
 TODO: add repo description.
 
@@ -8153,7 +8157,7 @@ addon | version | maintainers | summary
 [base_currency_iso_4217](base_currency_iso_4217/) | 15.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
 [base_iso3166](base_iso3166/) | 15.0.1.0.4 |  | ISO 3166
 [base_unece](base_unece/) | 15.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for UNECE code lists
-[company_sanitary_registry](company_sanitary_registry/) | 15.0.2.0.0 |  | Sanitary Registry
+[company_sanitary_registry](company_sanitary_registry/) | 15.0.2.1.0 |  | Sanitary Registry
 [product_fao_fishing](product_fao_fishing/) | 15.0.1.0.2 |  | Set fishing areas and capture technology
 [uom_unece](uom_unece/) | 15.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 

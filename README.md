@@ -79,9 +79,9 @@ Date:   Sun Feb 1 07:51:41 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 7fbef25c038b5fd2b09ae0a12c5b99a954ac71fb
+commit 2184c384321cb95de82736bb2237e29bb96ea55d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 11 16:50:18 2026 +0000
+Date:   Tue Mar 3 20:16:21 2026 +0000
 
     [BOT] post-merge updates
 
@@ -116,11 +116,14 @@ Date:   Tue Dec 9 10:49:48 2025 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 3e58754bd0f067f8d1fe9a4e31b9056d62a26a72
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 13 15:27:10 2025 +0000
+commit 63049dff0e5b569b82420be226ae1db9b9ed0837
+Merge: 3e58754b 1f0f3299
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Mar 2 11:57:43 2026 +0100
 
-    [BOT] post-merge updates
+    Merge pull request #580 from ursais/15-dr-precommit-update
+    
+    [15.0][REF] pre-commit: copier update
 
 
 ## operating-unit
@@ -1208,14 +1211,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit b3a0683d8ea2d2034af4d2bfb726b171500e9a02
-Merge: 9dc8a95dd 86a5f37f2
+commit e8d5480cb7af847d3dfeef03b5271c1e6241f111
 Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Wed Feb 25 17:29:15 2026 +0100
+Date:   Tue Mar 3 14:28:05 2026 +0000
 
-    Merge pull request #2224 from Tecnativa/15.0-upd-copier-product-attribute
+    Translated using Weblate (Spanish)
     
-    Update copier template to 1.39
+    Currently translated at 95.8% (23 of 24 strings)
+    
+    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_discount_by_range
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_discount_by_range/es/
 
 
 ## product-kitting
@@ -1462,9 +1467,9 @@ Date:   Mon Jan 19 11:28:12 2026 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit ec332767b2fc4ed84eb24f857ea6366bde89381a
+commit 9a9477c7b207987fc15a8302e06b978270a3f841
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 18 18:35:09 2025 +0000
+Date:   Thu Mar 5 14:44:23 2026 +0000
 
     [BOT] post-merge updates
 
