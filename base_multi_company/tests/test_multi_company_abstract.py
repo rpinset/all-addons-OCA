@@ -273,12 +273,12 @@ class TestMultiCompanyAbstract(common.TransactionCase):
         # Check set company_id
         tester.company_id = company1
 
-        self.assertEqual(tester.sudo().company_ids, company1)
+        self.assertEqual(tester.company_ids, company1)
 
         # Check remove company_id
         tester.company_id = False
 
-        self.assertFalse(tester.sudo().company_ids)
+        self.assertFalse(tester.company_ids)
 
     def test_rule_in_false(self):
         # Create an ir.rule imitating base.res_partner_rule

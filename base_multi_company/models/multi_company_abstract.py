@@ -19,6 +19,9 @@ class MultiCompanyAbstract(models.AbstractModel):
     company_ids = fields.Many2many(
         string="Companies",
         comodel_name="res.company",
+        depends_context=(
+            "uid",
+        ),  # To avoid cache pollution between sudo / non-sudo uses of the field
     )
 
     @api.depends("company_ids")
