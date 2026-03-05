@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: stock_lot_multi_image
+#: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1920
+msgid "Image"
+msgstr ""
+
+#. module: stock_lot_multi_image
 #: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1024
 msgid "Image 1024"
 msgstr ""
@@ -21,11 +26,6 @@ msgstr ""
 #. module: stock_lot_multi_image
 #: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_128
 msgid "Image 128"
-msgstr ""
-
-#. module: stock_lot_multi_image
-#: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1920
-msgid "Image 1920"
 msgstr ""
 
 #. module: stock_lot_multi_image

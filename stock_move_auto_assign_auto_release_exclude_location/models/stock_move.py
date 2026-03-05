@@ -11,5 +11,5 @@ class StockMove(models.Model):
         return (
             super()
             ._filter_auto_releaseable_locations(locations)
-            .filtered(lambda l: not l.exclude_from_immediately_usable_qty)
+            .filtered(lambda line: not line.exclude_from_immediately_usable_qty)
         )

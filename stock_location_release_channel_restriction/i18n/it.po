@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-04 10:26+0000\n"
+"PO-Revision-Date: 2026-03-03 10:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_location_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction_in_move
@@ -134,23 +134,33 @@ msgstr ""
 #. odoo-python
 #: code:addons/stock_location_release_channel_restriction/models/exception.py:0
 #, python-format
-msgid "Undefined"
-msgstr "Non definito"
-
-#. module: stock_location_release_channel_restriction
-#. odoo-python
-#: code:addons/stock_location_release_channel_restriction/models/exception.py:0
-#, python-format
 msgid ""
 "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
-"That location has already pending outgoing moves for "
+"That location already has pending outgoing moves for "
 "%(release_channel_name)s release channel and/or pending incoming moves for "
-"%(incoming_channel_names)s"
+"%(incoming_channel_names)s."
 msgstr ""
-"Non è possibile spostare i prodotti in fase di prelievo (%(picking_name)s) "
+"Non è possibile spostare i prodotti (%(picking_name)s) in fase di prelievo "
 "in %(location_name)s. Quella ubicazione ha già movimenti in uscita in "
-"sospeso per il canale di rilascio di %(release_channel_name)s e/o movimenti "
-"in entrata in sospeso per %(incoming_channel_names)s"
+"sospeso per il canale di rilascio %(release_channel_name)s e/o movimenti in "
+"entrata in sospeso per %(incoming_channel_names)s."
+
+#, python-format
+#~ msgid "Undefined"
+#~ msgstr "Non definito"
+
+#, python-format
+#~ msgid ""
+#~ "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
+#~ "That location has already pending outgoing moves for "
+#~ "%(release_channel_name)s release channel and/or pending incoming moves "
+#~ "for %(incoming_channel_names)s"
+#~ msgstr ""
+#~ "Non è possibile spostare i prodotti in fase di prelievo "
+#~ "(%(picking_name)s) in %(location_name)s. Quella ubicazione ha già "
+#~ "movimenti in uscita in sospeso per il canale di rilascio di "
+#~ "%(release_channel_name)s e/o movimenti in entrata in sospeso per "
+#~ "%(incoming_channel_names)s"
 
 #, python-format
 #~ msgid ""

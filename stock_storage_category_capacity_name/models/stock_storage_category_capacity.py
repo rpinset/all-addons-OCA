@@ -5,7 +5,6 @@ from odoo import _, api, models
 
 
 class StockStorageCategoryCapacity(models.Model):
-
     _inherit = "stock.storage.category.capacity"
 
     def _get_display_name_attributes(self):

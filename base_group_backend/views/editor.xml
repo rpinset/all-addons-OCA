@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="web_editor.assets_edit_html_field" model="ir.ui.view">
+        <field
+            name="groups_id"
+            eval="[(4, ref('base_group_backend.group_backend_ui_users'))]"
+        />
+    </record>
+
+</odoo>

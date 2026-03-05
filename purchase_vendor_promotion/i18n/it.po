@@ -17,6 +17,21 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: purchase_vendor_promotion
+#: model:ir.model.fields,field_description:purchase_vendor_promotion.field_stock_route__force_vendor_with_best_promotion
+msgid "Force Vendor With Best Promotion"
+msgstr ""
+
+#. module: purchase_vendor_promotion
+#: model:ir.model.fields,help:purchase_vendor_promotion.field_stock_route__force_vendor_with_best_promotion
+msgid "Force the orderpoint to use the vendor with the best promotion."
+msgstr ""
+
+#. module: purchase_vendor_promotion
+#: model:ir.model,name:purchase_vendor_promotion.model_stock_route
+msgid "Inventory Routes"
+msgstr ""
+
+#. module: purchase_vendor_promotion
 #: model:ir.model,name:purchase_vendor_promotion.model_stock_warehouse_orderpoint
 msgid "Minimum Inventory Rule"
 msgstr "Regola giacenza minima"
@@ -25,6 +40,11 @@ msgstr "Regola giacenza minima"
 #: model:ir.model.fields,help:purchase_vendor_promotion.field_purchase_order_line__is_promotion
 msgid "Price was calculated based on a vendor promotion."
 msgstr "Il prezzo è stato calcolato in base ad una promozione del fornitore."
+
+#. module: purchase_vendor_promotion
+#: model:ir.model.fields,field_description:purchase_vendor_promotion.field_stock_warehouse_orderpoint__supplier_id
+msgid "Product Supplier"
+msgstr ""
 
 #. module: purchase_vendor_promotion
 #: model:ir.model.fields,field_description:purchase_vendor_promotion.field_product_supplierinfo__is_promotion
@@ -48,7 +68,8 @@ msgstr "Data inizio promozione"
 #: code:addons/purchase_vendor_promotion/models/product_supplierinfo.py:0
 #, python-format
 msgid "Promotion start date must be before end date."
-msgstr "La data di inizio promozione deve essere antecedente alla data di fine."
+msgstr ""
+"La data di inizio promozione deve essere antecedente alla data di fine."
 
 #. module: purchase_vendor_promotion
 #: model:ir.model,name:purchase_vendor_promotion.model_purchase_order_line

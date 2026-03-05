@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-30 14:06+0000\n"
+"PO-Revision-Date: 2026-03-04 13:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_lot_multi_image
+#: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1920
+msgid "Image"
+msgstr "Immgine"
 
 #. module: stock_lot_multi_image
 #: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1024
@@ -25,11 +30,6 @@ msgstr "Immagine 1024"
 #: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_128
 msgid "Image 128"
 msgstr "Immagine 128"
-
-#. module: stock_lot_multi_image
-#: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_1920
-msgid "Image 1920"
-msgstr "Immagine 1920"
 
 #. module: stock_lot_multi_image
 #: model:ir.model.fields,field_description:stock_lot_multi_image.field_stock_lot__image_256
@@ -51,3 +51,6 @@ msgstr "Immagini"
 #: model:ir.model,name:stock_lot_multi_image.model_stock_lot
 msgid "Lot/Serial"
 msgstr "Lotto/seriale"
+
+#~ msgid "Image 1920"
+#~ msgstr "Immagine 1920"

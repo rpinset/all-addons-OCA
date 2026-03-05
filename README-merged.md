@@ -318,6 +318,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-financial-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A16.0)
@@ -325,8 +328,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-financial-reporting
 
 TODO: add repo description.
 
@@ -340,7 +341,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 16.0.1.16.2 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 16.0.1.16.3 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 16.0.1.1.0 |  | OCA Financial Reports Sale
 [account_liquidity_forecast](account_liquidity_forecast/) | 16.0.1.0.0 |  | Account Liquidity Forecast
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 16.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
@@ -348,7 +349,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 16.0.1.1.4 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 16.0.1.0.2 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 16.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 16.0.1.3.1 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[partner_statement](partner_statement/) | 16.0.1.3.2 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -483,7 +484,7 @@ addon | version | maintainers | summary
 [account_invoice_partner_reference](account_invoice_partner_reference/) | 16.0.1.0.0 |  | Add partner reference in the billing tree view.
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 16.0.1.0.0 |  | Account Invoice Payment Retention
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 16.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Display invoices date due when using payment terms
-[account_invoice_pricelist](account_invoice_pricelist/) | 16.0.1.1.0 |  | Add partner pricelist on invoices
+[account_invoice_pricelist](account_invoice_pricelist/) | 16.0.1.1.1 |  | Add partner pricelist on invoices
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 16.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
 [account_invoice_recipient_bank_currency](account_invoice_recipient_bank_currency/) | 16.0.1.0.1 |  | Module to fill recipient bank from invoices by using the invoice's currency.
 [account_invoice_refund_code](account_invoice_refund_code/) | 16.0.1.0.0 |  | This module allows to have specific refund codes.
@@ -492,7 +493,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 16.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Account Invoice Refund Reason.
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 16.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Account Invoice Refund Reason.
 [account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 16.0.1.0.0 |  | Allow to Reinvoice a Refund
-[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 16.0.1.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
+[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 16.0.1.2.0 |  | For invoices targetting multiple sale order addsections with sale order name.
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 16.0.1.0.7 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 16.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 16.0.1.0.0 |  | Purchase Self Invoice
@@ -598,11 +599,11 @@ addon | version | maintainers | summary
 [account_avatax_repair_oca](account_avatax_repair_oca/) | 16.0.1.0.0 |  | Repair Orders with automatic Tax application using Avatax
 [account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.3.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | <a href='https://github.com/cybernexus'><img src='https://github.com/cybernexus.png' width='32' height='32' style='border-radius:50%;' alt='cybernexus'/></a> | Ecommerce Sales Orders require tax recalculation prior to payment.
-[account_ecotax](account_ecotax/) | 16.0.1.1.2 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
+[account_ecotax](account_ecotax/) | 16.0.2.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
 [account_ecotax_report](account_ecotax_report/) | 16.0.1.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Reporting add fields and view to anlysis ecotaxe
-[account_ecotax_sale](account_ecotax_sale/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe
-[account_ecotax_sale_tax](account_ecotax_sale_tax/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe managed as a tax
-[account_ecotax_tax](account_ecotax_tax/) | 16.0.1.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Use Odoo tax mechanism to compute the ecotaxes
+[account_ecotax_sale](account_ecotax_sale/) | 16.0.3.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe
+[account_ecotax_sale_tax](account_ecotax_sale_tax/) | 16.0.3.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe managed as a tax
+[account_ecotax_tax](account_ecotax_tax/) | 16.0.2.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Use Odoo tax mechanism to compute the ecotaxes
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 16.0.1.0.2 |  | Account Fiscal Position Partner Type
 [account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.4 |  | Add sale / purchase type on fiscal position
@@ -743,6 +744,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# MIS Builder
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/mis-builder/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/mis-builder/actions/workflows/test.yml?query=branch%3A16.0)
@@ -750,8 +754,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/mis-builder-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mis-builder-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# MIS Builder
 
 Management Information System reports for Odoo: easily build super fast,
 beautiful, custom reports such as P&L, Balance Sheets and more.
@@ -794,7 +796,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 16.0.5.7.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 16.0.5.7.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 16.0.5.4.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 16.0.1.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -1038,6 +1040,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-reconcile
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-reconcile&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-reconcile/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-reconcile/actions/workflows/test.yml?query=branch%3A16.0)
@@ -1045,8 +1050,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-reconcile-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-reconcile-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-reconcile
 
 TODO: add repo description.
 
@@ -1069,7 +1072,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.10 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.11 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_reconcile_oca_add_default_filters](account_reconcile_oca_add_default_filters/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add default filters in Reconcile tab when the bank statement line has a partner
 [account_statement_base](account_statement_base/) | 16.0.1.15.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [bank_statement_check_number](bank_statement_check_number/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Add the check number in the bank statements
@@ -1857,6 +1860,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# sale-workflow
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-workflow&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/sale-workflow/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/sale-workflow/actions/workflows/test.yml?query=branch%3A16.0)
@@ -1864,8 +1870,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/sale-workflow-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-workflow-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# sale-workflow
 
 TODO: add repo description.
 
@@ -1986,7 +1990,7 @@ addon | version | maintainers | summary
 [sale_payment_sheet](sale_payment_sheet/) | 16.0.1.1.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
 [sale_planner_calendar](sale_planner_calendar/) | 16.0.3.0.0 |  | Sale planner calendar
 [sale_pricelist_display_surcharge](sale_pricelist_display_surcharge/) | 16.0.1.0.0 |  | This module shows to the customer the surcharges if wanted.
-[sale_pricelist_from_commitment_date](sale_pricelist_from_commitment_date/) | 16.0.1.0.0 |  | Use sale order commitment date to compute line price from pricelist
+[sale_pricelist_from_commitment_date](sale_pricelist_from_commitment_date/) | 16.0.1.0.1 |  | Use sale order commitment date to compute line price from pricelist
 [sale_pricelist_item_advanced](sale_pricelist_item_advanced/) | 16.0.1.0.0 |  | Pricelist items menu
 [sale_pricelist_technical](sale_pricelist_technical/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent some pricelists from being selected on order and customer forms
 [sale_pricelist_triple_discount](sale_pricelist_triple_discount/) | 16.0.1.0.0 |  | Sale Pricelist Triple Discount
@@ -2016,7 +2020,7 @@ addon | version | maintainers | summary
 [sale_stock_reservation_issue_on_qty_at_date_widget](sale_stock_reservation_issue_on_qty_at_date_widget/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Warn user when a reservation issue will happen when confirming an order
 [sale_stock_secondary_unit](sale_stock_secondary_unit/) | 16.0.1.0.0 |  | Get product quantities in a secondary unit
 [sale_substate](sale_substate/) | 16.0.1.0.0 |  | Sale Sub State
-[sale_tier_validation](sale_tier_validation/) | 16.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
+[sale_tier_validation](sale_tier_validation/) | 16.0.1.1.3 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_timesheet_project_manual](sale_timesheet_project_manual/) | 16.0.1.0.0 |  | Allows to create the project/tasks before the sale confirmation
 [sale_transaction_form_link](sale_transaction_form_link/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display a link to payment transactions on Sale Order form view.
 [sale_triple_discount](sale_triple_discount/) | 16.0.1.0.6 |  | Manage triple discount on sale order lines
@@ -2802,6 +2806,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# edi
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/edi&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/edi/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/edi/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/edi/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/edi/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2809,8 +2816,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/edi-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/edi-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# edi
 
 TODO: add repo description.
 
@@ -2852,7 +2857,7 @@ addon | version | maintainers | summary
 [despatch_advice_import](despatch_advice_import/) | 16.0.1.2.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Despatch Advice import
 [despatch_advice_import_ubl](despatch_advice_import_ubl/) | 16.0.1.1.0 |  | Import Despatch Advice files
 [pdf_helper](pdf_helper/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides helpers to work w/ PDFs
-[sale_order_import](sale_order_import/) | 16.0.1.4.0 |  | Import RFQ or sale orders from files
+[sale_order_import](sale_order_import/) | 16.0.1.5.0 |  | Import RFQ or sale orders from files
 [sale_order_import_edifact](sale_order_import_edifact/) | 16.0.1.1.0 | <a href='https://github.com/rmorant'><img src='https://github.com/rmorant.png' width='32' height='32' style='border-radius:50%;' alt='rmorant'/></a> | EDIFACT/D96A Order
 
 [//]: # (end addons)
@@ -3246,6 +3251,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# hr
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/hr/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/hr/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr/actions/workflows/test.yml?query=branch%3A16.0)
@@ -3253,8 +3261,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/hr-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# hr
 
 TODO: add repo description.
 
@@ -3580,6 +3586,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Tools for managing instances containing multiple companies
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/multi-company&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/multi-company/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/multi-company/actions/workflows/test.yml?query=branch%3A16.0)
@@ -3587,8 +3596,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/multi-company-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/multi-company-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Tools for managing instances containing multiple companies
 
 TODO: add repo description.
 
@@ -3640,7 +3647,7 @@ addon | version | maintainers | summary
 [project_multi_company](project_multi_company/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | This module adds support for multi company on Project Module.
 [purchase_sale_container_deposit_inter_company](purchase_sale_container_deposit_inter_company/) | 16.0.1.0.2 |  | Add compatibility between OCA product_packaging_container_deposit and purchase_sale_inter_company
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 16.0.1.1.3 |  | Intercompany PO/SO rules
-[purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 16.0.1.0.2 |  | Intercompany PO/SO rules with warehouse
+[purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 16.0.1.0.3 |  | Intercompany PO/SO rules with warehouse
 [purchase_sale_stock_inter_company_mrp](purchase_sale_stock_inter_company_mrp/) | 16.0.1.0.0 |  | Intercompany PO/SO rules with MRP
 [res_company_access_all_children](res_company_access_all_children/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Give access to all children companies to users that have access to a parent company
 [res_company_active](res_company_active/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add the 'active' feature on company model
@@ -6014,6 +6021,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-barcode
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-barcode&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6021,8 +6031,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-barcode-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-barcode-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# stock-logistics-barcode
 
 TODO: add repo description.
 
@@ -6036,7 +6044,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[barcodes_generator_abstract](barcodes_generator_abstract/) | 16.0.3.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
+[barcodes_generator_abstract](barcodes_generator_abstract/) | 16.0.3.1.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 16.0.1.0.0 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_package](barcodes_generator_package/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Product Packaging
 [barcodes_generator_product](barcodes_generator_product/) | 16.0.2.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
@@ -6276,6 +6284,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-warehouse
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-warehouse&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6283,8 +6294,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-warehouse-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-warehouse-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# stock-logistics-warehouse
 
 TODO: add repo description.
 
@@ -6299,79 +6308,79 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 16.0.1.0.0 |  | Displays the product in the journal entries and items
-[account_move_line_stock_info](account_move_line_stock_info/) | 16.0.1.1.1 |  | Account Move Line Stock Info
-[base_product_merge](base_product_merge/) | 16.0.1.0.1 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Merge duplicate products
+[account_move_line_stock_info](account_move_line_stock_info/) | 16.0.1.1.2 |  | Account Move Line Stock Info
+[base_product_merge](base_product_merge/) | 16.0.1.0.2 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Merge duplicate products
 [procurement_auto_create_group](procurement_auto_create_group/) | 16.0.1.1.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [product_packaging_usability](product_packaging_usability/) | 16.0.1.0.1 |  | Add sugar to Product Packaging
 [product_route_profile](product_route_profile/) | 16.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Add Route profile concept on product
 [product_view_inventory_no_search_default_my_count](product_view_inventory_no_search_default_my_count/) | 16.0.1.0.0 |  | Product View Inventory No Search Default My Count
-[scrap_reason_code](scrap_reason_code/) | 16.0.1.1.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Reason code for scrapping
-[stock_cycle_count](stock_cycle_count/) | 16.0.2.2.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
-[stock_demand_estimate](stock_demand_estimate/) | 16.0.1.2.0 |  | Allows to create demand estimates.
-[stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 16.0.1.0.0 |  | Allows to create demand estimates.
-[stock_exception](stock_exception/) | 16.0.1.1.0 |  | Custom exceptions on stock picking
+[scrap_reason_code](scrap_reason_code/) | 16.0.1.1.1 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Reason code for scrapping
+[stock_cycle_count](stock_cycle_count/) | 16.0.2.2.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
+[stock_demand_estimate](stock_demand_estimate/) | 16.0.1.2.1 |  | Allows to create demand estimates.
+[stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 16.0.1.0.1 |  | Allows to create demand estimates.
+[stock_exception](stock_exception/) | 16.0.1.1.1 |  | Custom exceptions on stock picking
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 16.0.2.6.0 |  | Allows to do an easier follow up of the Inventory Adjustments
-[stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
-[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.2.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
+[stock_inventory](stock_inventory/) | 16.0.2.6.1 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.1 |  | Request an inventory count filling the quantities to zero as default
+[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.2.1.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | This module allows to set justification on inventories
-[stock_inventory_lockdown](stock_inventory_lockdown/) | 16.0.1.0.0 |  | Lock down stock locations during inventories.
-[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.0 |  | More filters for inventory adjustments
+[stock_inventory_lockdown](stock_inventory_lockdown/) | 16.0.1.0.1 |  | Lock down stock locations during inventories.
+[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.1 |  | More filters for inventory adjustments
 [stock_inventory_quantity_history](stock_inventory_quantity_history/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Keep theoretical and real quantities history
-[stock_location_children](stock_location_children/) | 16.0.1.0.1 |  | Add relation between stock location and all its children
-[stock_location_fill_state](stock_location_fill_state/) | 16.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | This module allows to identify the fill state of stock locations
-[stock_location_lockdown](stock_location_lockdown/) | 16.0.1.0.1 |  | Prevent to add stock on locked locations
-[stock_location_package_restriction](stock_location_package_restriction/) | 16.0.1.0.1 |  | Control if the location can contain products in a package
-[stock_location_pending_move](stock_location_pending_move/) | 16.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | This module allows to show pending stock moves (outgoing and incoming) on a stock location
-[stock_location_position](stock_location_position/) | 16.0.1.0.0 |  | Add coordinate attributes on stock location.
-[stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Prevent to mix different products into the same stock location
-[stock_location_release_channel_restriction](stock_location_release_channel_restriction/) | 16.0.1.1.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allows to restrict location content to products that are in the same release channel (moves).
+[stock_location_children](stock_location_children/) | 16.0.1.0.2 |  | Add relation between stock location and all its children
+[stock_location_fill_state](stock_location_fill_state/) | 16.0.1.0.2 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | This module allows to identify the fill state of stock locations
+[stock_location_lockdown](stock_location_lockdown/) | 16.0.1.0.2 |  | Prevent to add stock on locked locations
+[stock_location_package_restriction](stock_location_package_restriction/) | 16.0.1.0.2 |  | Control if the location can contain products in a package
+[stock_location_pending_move](stock_location_pending_move/) | 16.0.1.0.2 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | This module allows to show pending stock moves (outgoing and incoming) on a stock location
+[stock_location_position](stock_location_position/) | 16.0.1.0.1 |  | Add coordinate attributes on stock location.
+[stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.2.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Prevent to mix different products into the same stock location
+[stock_location_release_channel_restriction](stock_location_release_channel_restriction/) | 16.0.1.1.2 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allows to restrict location content to products that are in the same release channel (moves).
 [stock_location_zone](stock_location_zone/) | 16.0.1.0.2 |  | Classify locations with zones.
-[stock_lot_multi_image](stock_lot_multi_image/) | 16.0.1.0.0 |  | This module implements the possibility to have multiple images for a stock lot
-[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.2 |  | Try to reserve moves when goods enter in a location
-[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.2.0 |  | Auto release moves after auto assign
-[stock_move_auto_assign_auto_release_exclude_location](stock_move_auto_assign_auto_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from auto release moves after auto assign
+[stock_lot_multi_image](stock_lot_multi_image/) | 16.0.1.0.1 |  | This module implements the possibility to have multiple images for a stock lot
+[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.3 |  | Try to reserve moves when goods enter in a location
+[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.2.1 |  | Auto release moves after auto assign
+[stock_move_auto_assign_auto_release_exclude_location](stock_move_auto_assign_auto_release_exclude_location/) | 16.0.1.0.1 |  | Exclude locations from auto release moves after auto assign
 [stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.2 |  | Adds field for common destination moves
-[stock_move_location](stock_move_location/) | 16.0.1.4.1 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_location](stock_move_location/) | 16.0.1.4.2 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.5.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add packaging fields in the stock moves
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.2 |  | Add a MTS+MTO route
-[stock_package_type_category](stock_package_type_category/) | 16.0.1.0.0 |  | This module allows to group package types in different categories
-[stock_package_type_volume](stock_package_type_volume/) | 16.0.1.0.0 |  | Compute volume of a package type
-[stock_packaging_calculator](stock_packaging_calculator/) | 16.0.1.0.1 |  | Compute product quantity to pick by packaging
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.3 |  | Add a MTS+MTO route
+[stock_package_type_category](stock_package_type_category/) | 16.0.1.0.1 |  | This module allows to group package types in different categories
+[stock_package_type_volume](stock_package_type_volume/) | 16.0.1.0.1 |  | Compute volume of a package type
+[stock_packaging_calculator](stock_packaging_calculator/) | 16.0.1.0.2 |  | Compute product quantity to pick by packaging
 [stock_packaging_calculator_packaging_level](stock_packaging_calculator_packaging_level/) | 16.0.1.0.0 |  | Glue module for packaging level
 [stock_picking_batch_packaging_qty](stock_picking_batch_packaging_qty/) | 16.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add packaging fields in stock picking batch
-[stock_picking_commercial_partner](stock_picking_commercial_partner/) | 16.0.1.0.0 |  | Add Commercial Partner on the Stock Picking
-[stock_picking_procure_method](stock_picking_procure_method/) | 16.0.1.0.1 |  | Allows to force the procurement method from the picking
-[stock_picking_product_interchangeable](stock_picking_product_interchangeable/) | 16.0.1.0.0 | <a href='https://github.com/CetmixGitDrone'><img src='https://github.com/CetmixGitDrone.png' width='32' height='32' style='border-radius:50%;' alt='CetmixGitDrone'/></a> | Stock Picking Product Interchangeable
+[stock_picking_commercial_partner](stock_picking_commercial_partner/) | 16.0.1.0.1 |  | Add Commercial Partner on the Stock Picking
+[stock_picking_procure_method](stock_picking_procure_method/) | 16.0.1.0.2 |  | Allows to force the procurement method from the picking
+[stock_picking_product_interchangeable](stock_picking_product_interchangeable/) | 16.0.1.0.1 | <a href='https://github.com/CetmixGitDrone'><img src='https://github.com/CetmixGitDrone.png' width='32' height='32' style='border-radius:50%;' alt='CetmixGitDrone'/></a> | Stock Picking Product Interchangeable
 [stock_picking_show_linked](stock_picking_show_linked/) | 16.0.1.0.0 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
-[stock_picking_volume](stock_picking_volume/) | 16.0.1.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Compute volume information on stock moves and pickings
+[stock_picking_volume](stock_picking_volume/) | 16.0.1.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 16.0.1.0.1 |  | Use volume information on potential product packaging to compute the volume of a stock.move
 [stock_product_qty_by_packaging](stock_product_qty_by_packaging/) | 16.0.1.1.0 |  | Compute product quantity to pick by packaging
 [stock_production_lot_quantity_tree](stock_production_lot_quantity_tree/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display product quantity field on production lot tree view
-[stock_pull_list](stock_pull_list/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | The pull list checks the stock situation and calculates needed quantities.
+[stock_pull_list](stock_pull_list/) | 16.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | The pull list checks the stock situation and calculates needed quantities.
 [stock_putaway_product_template](stock_putaway_product_template/) | 16.0.1.1.0 | <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 16.0.1.0.0 |  | Shows the cost of the quants
 [stock_quant_expiration_date_tree](stock_quant_expiration_date_tree/) | 16.0.1.1.0 | <a href='https://github.com/manuelcalerosolis'><img src='https://github.com/manuelcalerosolis.png' width='32' height='32' style='border-radius:50%;' alt='manuelcalerosolis'/></a> | Allows to display expirations dates on stock quant tree view
-[stock_quant_manual_assign](stock_quant_manual_assign/) | 16.0.1.3.0 |  | Stock - Manual Quant Assignment
+[stock_quant_manual_assign](stock_quant_manual_assign/) | 16.0.1.3.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 16.0.1.0.1 |  | Allows to see the reserved info of Products
-[stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 16.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
+[stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 16.0.1.0.1 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_quant_safe_inventory](stock_quant_safe_inventory/) | 16.0.1.0.1 |  | Prevents the quantity on the quant from being updated if quantities have already been picked but not validated in pickings in progress.
-[stock_removal_location_by_priority](stock_removal_location_by_priority/) | 16.0.1.0.0 |  | Establish a removal priority on stock locations.
+[stock_removal_location_by_priority](stock_removal_location_by_priority/) | 16.0.1.0.1 |  | Establish a removal priority on stock locations.
 [stock_reservation_date_show](stock_reservation_date_show/) | 16.0.1.0.0 |  | Display reservation date of stock moves
 [stock_reserve](stock_reserve/) | 16.0.1.3.1 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 16.0.1.0.1 |  | Configure reservation rules by location
-[stock_route_mto](stock_route_mto/) | 16.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
-[stock_scrap_location_default](stock_scrap_location_default/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a setting at company level that reference a default scrap location
+[stock_route_mto](stock_route_mto/) | 16.0.1.0.1 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
+[stock_scrap_location_default](stock_scrap_location_default/) | 16.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a setting at company level that reference a default scrap location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 16.0.1.0.1 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 16.0.1.1.2 |  | Get product quantities in a secondary unit
-[stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.0 |  | Allows to have a better display name for Stock Storage Category Capacity model
-[stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.2 |  | Stock Valuation Layer Accounting Date
+[stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.1 |  | Allows to have a better display name for Stock Storage Category Capacity model
+[stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.3 |  | Stock Valuation Layer Accounting Date
 [stock_valuation_layer_inventory_filter](stock_valuation_layer_inventory_filter/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Allows to filter Inventory Adjustments on Stock Valuation Layers
-[stock_valuation_layer_total_value](stock_valuation_layer_total_value/) | 16.0.1.0.0 |  | Show total value on tree and form view
-[stock_vlm_mgmt](stock_vlm_mgmt/) | 16.0.1.0.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light self contained alternative for VLM integrations
-[stock_vlm_mgmt_kardex](stock_vlm_mgmt_kardex/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Kardex VLM integrations
-[stock_vlm_mgmt_modula](stock_vlm_mgmt_modula/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Modula VLM integrations
-[stock_warehouse_calendar](stock_warehouse_calendar/) | 16.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
+[stock_valuation_layer_total_value](stock_valuation_layer_total_value/) | 16.0.1.0.1 |  | Show total value on tree and form view
+[stock_vlm_mgmt](stock_vlm_mgmt/) | 16.0.1.0.3 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light self contained alternative for VLM integrations
+[stock_vlm_mgmt_kardex](stock_vlm_mgmt_kardex/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Kardex VLM integrations
+[stock_vlm_mgmt_modula](stock_vlm_mgmt_modula/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Modula VLM integrations
+[stock_warehouse_calendar](stock_warehouse_calendar/) | 16.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
 [stock_warehouse_relationship](stock_warehouse_relationship/) | 16.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Technical module to add warehouse_id field on various stock.* models
 
 
@@ -6552,7 +6561,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 16.0.1.13.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 16.0.1.13.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.7.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.1 |  | Run DDMRP Buffer Calculation as jobs
@@ -7034,6 +7043,7 @@ addon | version | maintainers | summary
 [purchase_advance_payment](purchase_advance_payment/) | 16.0.1.2.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 16.0.1.0.1 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 16.0.2.1.1 |  | This module allows to select only products that can be supplied by the vendor
+[purchase_analytic_global](purchase_analytic_global/) | 16.0.1.0.0 |  | This module allows to a Global analytic plan in purchases
 [purchase_blanket_order](purchase_blanket_order/) | 16.0.2.1.2 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 16.0.1.0.1 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Supplier' on POs
@@ -7122,7 +7132,7 @@ addon | version | maintainers | summary
 [purchase_transport_mode](purchase_transport_mode/) | 16.0.1.1.0 |  | Purchase expection based on constraints
 [purchase_triple_discount](purchase_triple_discount/) | 16.0.3.0.3 |  | Manage triple discount on purchase order lines
 [purchase_uninvoiced_amount_force_invoiced_line](purchase_uninvoiced_amount_force_invoiced_line/) | 16.0.1.0.0 | <a href='https://github.com/JoanSForgeFlow'><img src='https://github.com/JoanSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JoanSForgeFlow'/></a> | Glue module between uninvoiced amount line and force invoiced line
-[purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.1.0.1 |  | Purchase Vendor Promotion
+[purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.2.0.0 |  | Purchase Vendor Promotion
 [purchase_warn_message](purchase_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [purchase_work_acceptance](purchase_work_acceptance/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Purchase Work Acceptance
 [purchase_work_acceptance_evaluation](purchase_work_acceptance_evaluation/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Work Acceptance Evaluation
@@ -7203,6 +7213,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# product-attribute
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/product-attribute/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/product-attribute/actions/workflows/test.yml?query=branch%3A16.0)
@@ -7210,8 +7223,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/product-attribute-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-attribute-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# product-attribute
 
 TODO: add repo description.
 
@@ -7285,7 +7296,7 @@ addon | version | maintainers | summary
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 16.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
 [product_pricelist_item_uom](product_pricelist_item_uom/) | 16.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Set UoM in Pricelist Rules.
-[product_pricelist_margin](product_pricelist_margin/) | 16.0.1.0.1 |  | This module shows the product's cost and margin from the pricelists.
+[product_pricelist_margin](product_pricelist_margin/) | 16.0.1.1.0 |  | This module shows the product's cost and margin from the pricelists.
 [product_pricelist_revision](product_pricelist_revision/) | 16.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_simulation](product_pricelist_simulation/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simulate the product price for all pricelists
 [product_pricelist_simulation_margin](product_pricelist_simulation_margin/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add margin of product price for all pricelists
@@ -7582,6 +7593,7 @@ addon | version | maintainers | summary
 [project_pivot](project_pivot/) | 16.0.1.0.1 |  | Pivot view for projects
 [project_portal_task_visibility](project_portal_task_visibility/) | 16.0.1.1.0 |  | Project Portal Task Visibility
 [project_purchase_link](project_purchase_link/) | 16.0.1.0.0 |  | Project Purchase Link
+[project_required_field_by_stage](project_required_field_by_stage/) | 16.0.1.0.0 |  | This module adds checks to allow certain stages to be set only if some fields are populated. After install every stage can have mandatory fields associated.
 [project_reviewer](project_reviewer/) | 16.0.1.0.0 |  | Add the possibility to assign reviewer to a task
 [project_risk](project_risk/) | 16.0.1.0.0 |  | MOR risk management method
 [project_role](project_role/) | 16.0.1.0.4 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Project role-based roster
@@ -7623,6 +7635,7 @@ addon | version | maintainers | summary
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 16.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 16.0.1.0.4 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Project timesheet time control
 [project_type](project_type/) | 16.0.1.0.1 |  | Project Types
+[project_update_portal](project_update_portal/) | 16.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Allows portal access for project and update followers
 [project_update_visible](project_update_visible/) | 16.0.1.0.0 |  | Visible project_id in project.update view form.
 [project_version](project_version/) | 16.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Version
 [sale_project_copy_tasks](sale_project_copy_tasks/) | 16.0.1.0.4 | <a href='https://github.com/shide'><img src='https://github.com/shide.png' width='32' height='32' style='border-radius:50%;' alt='shide'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Copy tasks into sale order's project
@@ -8118,7 +8131,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [connector_elasticsearch](connector_elasticsearch/) | 16.0.1.0.0 |  | Connector For Elasticsearch Search Engine
-[connector_search_engine](connector_search_engine/) | 16.0.1.1.1 |  | Connector Search Engine
+[connector_search_engine](connector_search_engine/) | 16.0.1.1.2 |  | Connector Search Engine
 [connector_search_engine_serializer_ir_export](connector_search_engine_serializer_ir_export/) | 16.0.1.0.2 |  | Use Exporter (ir.exports) as serializer for index
 [connector_typesense](connector_typesense/) | 16.0.1.0.1 |  | Connector For Typesense Search Engine
 [search_engine_image_thumbnail](search_engine_image_thumbnail/) | 16.0.1.0.7 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Generate thumbnails for binded record
@@ -8570,6 +8583,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# server-backend
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-backend&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/server-backend/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-backend/actions/workflows/test.yml?query=branch%3A16.0)
@@ -8577,8 +8593,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-backend-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-backend-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# server-backend
 
 Mainly base modules used by others
 
@@ -8598,7 +8612,7 @@ addon | version | maintainers | summary
 [base_external_dbsource_sqlite](base_external_dbsource_sqlite/) | 16.0.1.0.2 | <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | External Database Source - SQLite
 [base_external_system](base_external_system/) | 16.0.1.0.0 |  | Data models allowing for connection to external systems.
 [base_global_discount](base_global_discount/) | 16.0.1.1.0 |  | Base Global Discount
-[base_group_backend](base_group_backend/) | 16.0.1.1.0 | <a href='https://github.com/FranzPoize'><img src='https://github.com/FranzPoize.png' width='32' height='32' style='border-radius:50%;' alt='FranzPoize'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Group backend
+[base_group_backend](base_group_backend/) | 16.0.1.2.0 | <a href='https://github.com/FranzPoize'><img src='https://github.com/FranzPoize.png' width='32' height='32' style='border-radius:50%;' alt='FranzPoize'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Group backend
 [base_import_match](base_import_match/) | 16.0.1.1.0 |  | Try to avoid duplicates before importing
 [base_portal_type](base_portal_type/) | 16.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Base module to allow different types of portals
 [base_user_effective_permissions](base_user_effective_permissions/) | 16.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Inspect effective permissions applying to a user
@@ -9080,6 +9094,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# vertical-association
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-association&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/vertical-association/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/vertical-association/actions/workflows/test.yml?query=branch%3A16.0)
@@ -9087,8 +9104,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/vertical-association-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-association-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# vertical-association
 
 TODO: add repo description.
 
@@ -9104,7 +9119,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 16.0.1.0.1 |  | Set delegate membership on the contract
 [membership_delegated_partner](membership_delegated_partner/) | 16.0.1.0.3 |  | Delegate membership on a specific partner
-[membership_extension](membership_extension/) | 16.0.3.0.3 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improves user experience of membership addon
+[membership_extension](membership_extension/) | 16.0.3.0.4 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improves user experience of membership addon
 [membership_initial_fee](membership_initial_fee/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Initial fee for memberships
 [membership_prorate](membership_prorate/) | 16.0.1.0.2 |  | Prorate membership fee
 [membership_prorate_variable_period](membership_prorate_variable_period/) | 16.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Prorate membership fee for variable periods
@@ -9480,6 +9495,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# vertical-rental
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-rental&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/vertical-rental/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/vertical-rental/actions/workflows/test.yml?query=branch%3A16.0)
@@ -9487,8 +9505,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/vertical-rental-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-rental-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# vertical-rental
 
 TODO: add repo description.
 

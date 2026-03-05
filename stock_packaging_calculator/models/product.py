@@ -191,7 +191,7 @@ class Product(models.Model):
         )
         # Collect all strings representations
         as_string = []
-        for record, info in zip(records, _qty_by_packaging):
+        for record, info in zip(records, _qty_by_packaging, strict=True):
             bit = _qty_by_packaging_as_str(record, info["qty"])
             if bit:
                 as_string.append(bit)

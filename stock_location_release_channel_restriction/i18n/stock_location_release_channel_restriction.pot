@@ -118,16 +118,9 @@ msgstr ""
 #. odoo-python
 #: code:addons/stock_location_release_channel_restriction/models/exception.py:0
 #, python-format
-msgid "Undefined"
-msgstr ""
-
-#. module: stock_location_release_channel_restriction
-#. odoo-python
-#: code:addons/stock_location_release_channel_restriction/models/exception.py:0
-#, python-format
 msgid ""
 "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
-"That location has already pending outgoing moves for "
+"That location already has pending outgoing moves for "
 "%(release_channel_name)s release channel and/or pending incoming moves for "
-"%(incoming_channel_names)s"
+"%(incoming_channel_names)s."
 msgstr ""

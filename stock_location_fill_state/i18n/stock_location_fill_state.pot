@@ -14,19 +14,6 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: stock_location_fill_state
-#: model:ir.model.fields,help:stock_location_fill_state.field_stock_location__fill_state
-msgid ""
-"\n"
-"        This shows the location fill state.\n"
-"        Possible values:\n"
-"        [empty] Empty location\n"
-"        [filled] Filled location\n"
-"        [being_filled] The location is empty and an incoming move is in progress\n"
-"        [being_emptied] The location is filled and the outgoing move(s) will empty the location\n"
-"        "
-msgstr ""
-
-#. module: stock_location_fill_state
 #: model:ir.model.fields.selection,name:stock_location_fill_state.selection__stock_location__fill_state__being_emptied
 #: model_terms:ir.ui.view,arch_db:stock_location_fill_state.stock_location_search_view
 msgid "Being Emptied"
@@ -71,4 +58,15 @@ msgstr ""
 #. module: stock_location_fill_state
 #: model:ir.model,name:stock_location_fill_state.model_stock_location
 msgid "Inventory Locations"
+msgstr ""
+
+#. module: stock_location_fill_state
+#: model:ir.model.fields,help:stock_location_fill_state.field_stock_location__fill_state
+msgid ""
+"This shows the location fill state.\n"
+"Possible values:\n"
+"[empty] Empty location\n"
+"[filled] Filled location\n"
+"[being_filled] The location is empty and an incoming move is in progress\n"
+"[being_emptied] The location is filled and the outgoing move(s) will empty the location"
 msgstr ""

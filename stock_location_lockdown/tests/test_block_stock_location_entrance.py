@@ -7,7 +7,7 @@ from odoo.tests.common import TransactionCase
 
 class TestStockLocationLockdown(TransactionCase):
     def setUp(self, *args, **kwargs):
-        super(TestStockLocationLockdown, self).setUp(*args, **kwargs)
+        super().setUp(*args, **kwargs)
 
         # Create a new stock location with no quants and blocked stock entrance
         new_loc = {"name": "location_test", "usage": "internal"}

@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Group backend",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.2.0",
     "development_status": "Alpha",
     "category": "Tools",
     "author": "Pierre Verkest, Odoo Community Association (OCA)",
@@ -12,6 +12,7 @@
         "base",
         "mail",
         "calendar",
+        "web_editor",
     ],
     "maintainers": ["FranzPoize", "bealdav"],
     "demo": [
@@ -24,6 +25,7 @@
     "data": [
         "data/res_groups.xml",
         "security/ir.model.access.csv",
+        "views/editor.xml",
     ],
     "installable": True,
 }

@@ -16,7 +16,6 @@ RELEASE_RESTRICTION = [
 
 
 class StockLocation(models.Model):
-
     _inherit = "stock.location"
 
     release_channel_restriction = fields.Selection(
@@ -45,8 +44,11 @@ class StockLocation(models.Model):
     )
     release_channel_restriction_in_move = fields.Boolean(
         string="Release Channel Restriction For Incoming Moves",
-        help="Check this box if you want to take into account all pending incoming movements"
-        " to restrict the future movements to be in the same release channel.",
+        help=(
+            "Check this box if you want to take into account all pending "
+            "incoming movements to restrict the future movements to be "
+            "in the same release channel."
+        ),
     )
 
     @api.model
@@ -55,13 +57,15 @@ class StockLocation(models.Model):
             (
                 "mixed",
                 _(
-                    "Movements of different release channels are allowed into the location"
+                    "Movements of different release channels are allowed "
+                    "into the location"
                 ),
             ),
             (
                 "same",
                 _(
-                    "Only movements of the same release channel are allowed into the location"
+                    "Only movements of the same release channel are "
+                    "allowed into the location"
                 ),
             ),
         ]

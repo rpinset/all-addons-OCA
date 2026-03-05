@@ -21,18 +21,19 @@ class ReleaseChannelLocationRestrictionError(ValidationError):
     ):
         self.env = env
         error_msg = _(
-            "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
-            "That location has already pending outgoing moves for %(release_channel_name)s "
-            "release channel and/or pending incoming moves for %(incoming_channel_names)s",
+            "You cannot move picking (%(picking_name)s) products "
+            "to %(location_name)s. "
+            "That location already has pending outgoing moves for "
+            "%(release_channel_name)s release channel "
+            "and/or pending incoming moves for "
+            "%(incoming_channel_names)s.",
             picking_name=picking.name,
             location_name=location.name,
-            incoming_channel_names=",".join(
+            incoming_channel_names=", ".join(
                 incoming_channel.name for incoming_channel in incoming_channels
             ),
-            release_channel_name=channel.name
-            if channel
-            else _(
-                "Undefined"
+            release_channel_name=(
+                channel.name if channel else _("Undefined")
             ),  # Pending moves with no release channel can be contained in location
         )
         super().__init__(error_msg)

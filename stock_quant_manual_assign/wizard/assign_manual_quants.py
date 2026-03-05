@@ -244,9 +244,11 @@ class AssignManualQuantsLines(models.TransientModel):
         )
         for record in self.filtered("qty"):
             quant = record.quant_id
+            location_id = quant.location_id.id
+            lot_id = quant.lot_id.id
             move_lines = record.assign_wizard.move_id.move_line_ids.filtered(
-                lambda ml: (
-                    ml.location_id == quant.location_id and ml.lot_id == quant.lot_id
+                lambda ml, location_id=location_id, lot_id=lot_id: (
+                    ml.location_id.id == location_id and ml.lot_id.id == lot_id
                 )
             )
             reserved = quant.reserved_quantity - sum(
@@ -255,7 +257,7 @@ class AssignManualQuantsLines(models.TransientModel):
             if (
                 float_compare(
                     record.qty,
-                    record.quant_id.quantity - reserved,
+                    quant.quantity - reserved,
                     precision_digits=precision_digits,
                 )
                 > 0

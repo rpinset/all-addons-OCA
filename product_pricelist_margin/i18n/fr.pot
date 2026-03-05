@@ -35,6 +35,16 @@ msgid "Margin"
 msgstr "Marge"
 
 #. module: product_pricelist_margin
+#: model:ir.model.fields,field_description:product_pricelist_margin.field_product_pricelist_item__original_price
+msgid "Original Price"
+msgstr ""
+
+#. module: product_pricelist_margin
+#: model:ir.model.fields,help:product_pricelist_margin.field_product_pricelist_item__original_price
+msgid "Original price before applying this pricelist item."
+msgstr ""
+
+#. module: product_pricelist_margin
 #: model:ir.model.fields,field_description:product_pricelist_margin.field_product_pricelist_item__margin_percent
 msgid "Margin (%)"
 msgstr "Marge (%)"

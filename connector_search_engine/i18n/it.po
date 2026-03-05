@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-16 11:42+0000\n"
+"PO-Revision-Date: 2026-03-05 16:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: connector_search_engine
 #: model_terms:ir.ui.view,arch_db:connector_search_engine.se_backend_form_view
@@ -32,13 +32,13 @@ msgstr ""
 #. module: connector_search_engine
 #: model_terms:ir.ui.view,arch_db:connector_search_engine.se_index_form_view
 msgid ""
-"<span class=\"o_stat_text\" attrs=\"{'invisible': [('count_all', '&lt;', "
-"2)]}\"> Bindings</span>\n"
+"<span class=\"o_stat_text\" attrs=\"{'invisible': [('count_all', '&lt;', 2)]}"
+"\"> Bindings</span>\n"
 "                                <span class=\"o_stat_text\" "
 "attrs=\"{'invisible': [('count_all', '&gt;', 1)]}\"> Binding</span>"
 msgstr ""
-"<span class=\"o_stat_text\" attrs=\"{'invisible': [('count_all', '&lt;', "
-"2)]}\"> Collegamenti</span>\n"
+"<span class=\"o_stat_text\" attrs=\"{'invisible': [('count_all', '&lt;', 2)]}"
+"\"> Collegamenti</span>\n"
 "                                <span class=\"o_stat_text\" "
 "attrs=\"{'invisible': [('count_all', '&gt;', 1)]}\"> Collegamento</span>"
 
@@ -291,6 +291,16 @@ msgstr "Cancellazione"
 #: model:ir.model.fields,field_description:connector_search_engine.field_se_index_config__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
+
+#. module: connector_search_engine
+#: model:ir.model.fields,field_description:connector_search_engine.field_se_binding_state_updater__do_it_now
+msgid "Do It Now"
+msgstr "Esegui ora"
+
+#. module: connector_search_engine
+#: model:ir.model.fields,help:connector_search_engine.field_se_binding_state_updater__do_it_now
+msgid "Don't wait for the cron to process these records"
+msgstr "Non attendere il cron per elaborare questi record"
 
 #. module: connector_search_engine
 #: model:ir.model.fields.selection,name:connector_search_engine.selection__se_binding__state__done

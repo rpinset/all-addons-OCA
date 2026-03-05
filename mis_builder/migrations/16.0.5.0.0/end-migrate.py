@@ -5,6 +5,6 @@ import odoo
 from odoo import api
 
 
-def migrate(cr, installed_version):
+def migrate(cr, version):
     env = api.Environment(cr, odoo.SUPERUSER_ID, {})
     env["mis.report.instance.period"].search([])._compute_source_aml_model_id()

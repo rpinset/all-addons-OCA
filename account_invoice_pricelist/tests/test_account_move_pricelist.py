@@ -316,3 +316,11 @@ class TestAccountMovePricelist(BaseCommon):
             self.invoice.with_context(force_check_currecy=True).write(
                 {"currency_id": self.usd_currency.id}
             )
+
+    def test_switch_invoice_into_refund_credit_note(self):
+        self.invoice.pricelist_id = self.sale_pricelist_with_discount.id
+        self.invoice.invoice_line_ids.write({"price_unit": -100.00})
+        self.invoice.action_switch_invoice_into_refund_credit_note()
+        self.assertEqual(self.invoice.move_type, "out_refund")
+        self.assertEqual(self.invoice.invoice_line_ids[0].price_unit, -100.00)
+        self.assertEqual(self.invoice.amount_total, 230.00)

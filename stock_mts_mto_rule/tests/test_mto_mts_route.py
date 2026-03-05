@@ -214,7 +214,7 @@ class TestMtoMtsRoute(TransactionCase):
         self.assertEqual(new_rule_name, self.warehouse.mts_mto_rule_id.name)
 
     def setUp(self):
-        super(TestMtoMtsRoute, self).setUp()
+        super().setUp()
         self.move_obj = self.env["stock.move"]
         self.warehouse = self.env.ref("stock.warehouse0")
         self.uom = self.env["uom.uom"].browse(1)

@@ -7,7 +7,6 @@ from .exception import ReleaseChannelLocationRestrictionError
 
 
 class StockMoveLine(models.Model):
-
     _inherit = "stock.move.line"
 
     for_restriction_incoming_location_channel_ids = fields.Many2many(
@@ -28,9 +27,7 @@ class StockMoveLine(models.Model):
     )
     def _compute_for_restriction_incoming_location_channel_ids(self):
         for line in self:
-            line.for_restriction_incoming_location_channel_ids = (
-                line.location_dest_id.pending_in_move_line_ids.picking_id.release_channel_id
-            )
+            line.for_restriction_incoming_location_channel_ids = line.location_dest_id.pending_in_move_line_ids.picking_id.release_channel_id  # noqa: E501
 
     @api.depends(
         "location_dest_id.pending_out_move_line_ids.picking_id.release_channel_id"

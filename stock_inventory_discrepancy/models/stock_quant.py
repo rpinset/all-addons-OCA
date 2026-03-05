@@ -130,4 +130,4 @@ class StockQuant(models.Model):
             )
         # Allow to write last_inventory_date on stock.location
         self = self.sudo().with_context(from_apply_inventory=True)
-        return super(StockQuant, self)._apply_inventory()
+        return super()._apply_inventory()

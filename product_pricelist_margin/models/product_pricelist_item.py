@@ -20,6 +20,14 @@ class ProductPricelistItem(models.Model):
         string="Margin (%)",
         compute="_compute_margin",
     )
+    original_price = fields.Float(
+        compute="_compute_margin",
+        help="Original price before applying this pricelist item.",
+    )
+    final_price = fields.Float(
+        compute="_compute_margin",
+        help="Final price after applying this pricelist item.",
+    )
 
     @api.depends(
         "compute_price",
@@ -43,6 +51,8 @@ class ProductPricelistItem(models.Model):
             ):
                 item.margin = 0
                 item.margin_percent = 0
+                item.original_price = 0
+                item.final_price = 0
                 continue
 
             price = item._compute_price(
@@ -55,6 +65,8 @@ class ProductPricelistItem(models.Model):
             if float_is_zero(price, precision_digits=item.currency_id.rounding):
                 item.margin = 0
                 item.margin_percent = 0
+                item.original_price = 0
+                item.final_price = 0
                 continue
 
             current_company = self.env.company
@@ -66,13 +78,19 @@ class ProductPricelistItem(models.Model):
                 item.currency_id,
                 product=item.product_tmpl_id,
             )
-
             price_vat_excl = res["total_excluded"]
 
             cost = self.env.user.company_id.currency_id.compute(
                 item.cost, item.currency_id
             )
-
+            pricelist = item.pricelist_id._origin or item.pricelist_id
+            item.original_price = pricelist._get_product_price(
+                item.product_tmpl_id,
+                item.min_quantity,
+                item.product_tmpl_id.uom_id,
+                fields.Datetime.now(),
+            )
+            item.final_price = price_vat_excl
             item.margin = price_vat_excl - cost
             item.margin_percent = float_round(
                 price_vat_excl and (item.margin / price_vat_excl) * 100,

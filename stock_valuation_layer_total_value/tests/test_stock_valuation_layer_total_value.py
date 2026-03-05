@@ -2,9 +2,11 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from odoo.tests import tagged
 
-from odoo.addons.stock_account.tests.test_anglo_saxon_valuation_reconciliation_common import (
-    ValuationReconciliationTestCommon,
+from odoo.addons.stock_account.tests import (
+    test_anglo_saxon_valuation_reconciliation_common as valuation_common,
 )
+
+ValuationReconciliationTestCommon = valuation_common.ValuationReconciliationTestCommon
 
 
 @tagged("-at_install", "post_install")
@@ -41,7 +43,7 @@ class TestValuationLayerTotalValue(ValuationReconciliationTestCommon):
         unit_cost = unit_cost or product.standard_price
         in_move = self.env["stock.move"].create(
             {
-                "name": "in %s units @ %s per unit" % (str(quantity), str(unit_cost)),
+                "name": f"in {quantity} units @ {unit_cost} per unit",
                 "product_id": product.id,
                 "location_id": self.env.ref("stock.stock_location_suppliers").id,
                 "location_dest_id": self.company_data[

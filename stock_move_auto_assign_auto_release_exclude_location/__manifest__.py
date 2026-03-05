@@ -5,7 +5,7 @@
     "name": "Stock Move Auto Assign Auto Release Exclude Location",
     "summary": """
         Exclude locations from auto release moves after auto assign""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "BCIM, Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-warehouse",

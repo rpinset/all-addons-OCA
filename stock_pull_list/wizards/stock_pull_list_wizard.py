@@ -147,7 +147,9 @@ class PullListWizard(models.TransientModel):
         incoming_dict = {}
         for supply in incoming_moves:
             move_for_date = demand_moves.filtered(
-                lambda m: m.product_id == supply.product_id and m.date >= supply.date
+                lambda m, supply=supply: (
+                    m.product_id == supply.product_id and m.date >= supply.date
+                )
             )
             if move_for_date:
                 date_selected = move_for_date[0].date if not force_date else force_date
@@ -263,7 +265,7 @@ class PullListWizard(models.TransientModel):
             group = pg_obj.create(self._prepare_proc_group_values())
             proc_groups.append(group.id)
             procurements = []
-            for line in lines.filtered(lambda l: l.selected):
+            for line in lines.filtered(lambda line: line.selected):
                 n += 1
                 if 0 < self.max_lines < n:
                     n = 0

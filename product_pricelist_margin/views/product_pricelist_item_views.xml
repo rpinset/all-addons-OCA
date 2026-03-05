@@ -9,6 +9,8 @@
                 <field name="cost" invisible="1" />
                 <field name="margin" optional="show" />
                 <field name="margin_percent" optional="show" />
+                <field name="original_price" optional="hide" />
+                <field name="final_price" optional="hide" />
             </field>
         </field>
     </record>
@@ -41,6 +43,8 @@
                     <field name="cost" invisible="1" />
                     <field name="margin" />
                     <field name="margin_percent" />
+                    <field name="original_price" />
+                    <field name="final_price" />
                 </group>
             </xpath>
         </field>

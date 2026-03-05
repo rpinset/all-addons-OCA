@@ -256,9 +256,9 @@ class StockMoveLocationWizard(models.TransientModel):
         """
         moves_to_reassign = self.env["stock.move"]
         lines_to_ckeck_reverve = self.stock_move_location_line_ids.filtered(
-            lambda l: (
-                l.move_quantity > l.max_quantity - l.reserved_quantity
-                and not l.origin_location_id.should_bypass_reservation()
+            lambda line: (
+                line.move_quantity > line.max_quantity - line.reserved_quantity
+                and not line.origin_location_id.should_bypass_reservation()
             )
         )
         for line in lines_to_ckeck_reverve:

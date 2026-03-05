@@ -6,7 +6,7 @@ from odoo.tests.common import TransactionCase
 
 class TestAccountMoveLineStockInfo(TransactionCase):
     def setUp(self):
-        super(TestAccountMoveLineStockInfo, self).setUp()
+        super().setUp()
         self.product_model = self.env["product.product"]
         self.product_ctg_model = self.env["product.category"]
         self.account_model = self.env["account.account"]
@@ -108,7 +108,6 @@ class TestAccountMoveLineStockInfo(TransactionCase):
         return product
 
     def _create_picking(self, picking_type, location, location_dest):
-
         picking = self.stock_picking_model.with_user(self.stock_manager).create(
             {
                 "picking_type_id": picking_type.id,

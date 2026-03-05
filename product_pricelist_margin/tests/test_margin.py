@@ -1,6 +1,7 @@
 # Copyright 2024 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from odoo.tests import Form
 from odoo.tests.common import tagged
 
 from odoo.addons.base.tests.common import BaseCommon
@@ -52,3 +53,23 @@ class TestMargin(BaseCommon):
     def test_margin_with_discount_computation(self):
         self.line.write({"compute_price": "percentage", "percent_price": 0.5})
         self.assertAlmostEqual(self.line.margin_percent, 49.75)
+
+    def test_original_vs_final_price(self):
+        pricelist_form = Form(self.pricelist)
+        with pricelist_form.item_ids.new() as item_form:
+            item_form.compute_price = "fixed"
+            item_form.applied_on = "1_product"
+            item_form.product_tmpl_id = self.product.product_tmpl_id
+            item_form.fixed_price = 50.0
+            item_form.min_quantity = 1
+            self.assertEqual(item_form.original_price, 35.0)
+            self.assertEqual(item_form.final_price, 50.0)
+        self.pricelist = pricelist_form.save()
+        with pricelist_form.item_ids.new() as item_form:
+            item_form.compute_price = "percentage"
+            item_form.applied_on = "1_product"
+            item_form.product_tmpl_id = self.product.product_tmpl_id
+            item_form.percent_price = 50.0
+            item_form.min_quantity = 1
+            self.assertEqual(item_form.original_price, 50.0)
+            self.assertEqual(item_form.final_price, 40.0 * 0.5)

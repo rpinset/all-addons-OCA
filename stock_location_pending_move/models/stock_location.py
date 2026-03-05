@@ -10,7 +10,6 @@ PENDING_MOVE_DOMAIN = [
 
 
 class StockLocation(models.Model):
-
     _inherit = "stock.location"
 
     pending_in_move_ids = fields.One2many(

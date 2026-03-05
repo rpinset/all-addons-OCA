@@ -7,7 +7,6 @@ from odoo.addons.stock.models.stock_location import Location as StockLocation
 
 
 class StockScrap(models.Model):
-
     _inherit = "stock.scrap"
 
     def _get_default_scrap_location_id(self) -> StockLocation:

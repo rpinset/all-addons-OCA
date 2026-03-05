@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Order Import",
-    "version": "16.0.1.4.0",
+    "version": "16.0.1.5.0",
     "category": "Sales Management",
     "license": "AGPL-3",
     "summary": "Import RFQ or sale orders from files",
@@ -20,6 +20,10 @@
         # and support for PDF import should be moved to a glue module
         "pdf_helper",
     ],
-    "data": ["security/ir.model.access.csv", "wizard/sale_order_import_view.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "wizard/sale_order_import_view.xml",
+        "templates/error_lines_chatter_msg.xml",
+    ],
     "installable": True,
 }

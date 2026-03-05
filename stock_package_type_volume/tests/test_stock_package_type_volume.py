@@ -6,7 +6,7 @@ from odoo.tests.common import TransactionCase
 
 class TestStockPackageTypeVolume(TransactionCase):
     def setUp(self):
-        super(TestStockPackageTypeVolume, self).setUp()
+        super().setUp()
         self.package_type = self.env["stock.package.type"].new()
 
     def test_01(self):

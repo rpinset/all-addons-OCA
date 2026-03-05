@@ -6,7 +6,6 @@ from odoo.osv.expression import NEGATIVE_TERM_OPERATORS
 
 
 class StockLocation(models.Model):
-
     _inherit = "stock.location"
 
     product_restriction = fields.Selection(

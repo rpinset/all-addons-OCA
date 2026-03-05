@@ -181,7 +181,7 @@ class InventoryAdjustmentsGroup(models.Model):
             quants = rec.stock_quant_ids
             quants_to_do = quants.filtered(lambda q: q.to_do)
             quants_pending_to_review = quants_to_do.filtered(
-                lambda q: q.current_inventory_id.id == rec.id
+                lambda q, rec=rec: q.current_inventory_id.id == rec.id
             )
             count_pending_to_review = len(quants_pending_to_review)
             rec.count_stock_quants = len(quants)
@@ -460,8 +460,9 @@ class InventoryAdjustmentsGroup(models.Model):
                     ):
                         raise ValidationError(
                             _(
-                                "Cannot have more than one in-progress inventory adjustment "
-                                "affecting the same location or product at the same time."
+                                "Cannot have more than one in-progress "
+                                "inventory adjustment affecting the same "
+                                "location or product at the same time."
                             )
                         )
 

@@ -44,12 +44,13 @@ class StockScrap(models.Model):
             ):
                 raise ValidationError(
                     _(
-                        "The selected reason code is not allowed for this product category."
+                        "The selected reason code is not allowed "
+                        "for this product category."
                     )
                 )
 
     def _prepare_move_values(self):
-        res = super(StockScrap, self)._prepare_move_values()
+        res = super()._prepare_move_values()
         res["reason_code_id"] = self.reason_code_id.id
         return res
 
@@ -70,7 +71,7 @@ class StockScrap(models.Model):
 
     def write(self, vals):
         self._update_scrap_reason_code_location(vals)
-        return super(StockScrap, self).write(vals)
+        return super().write(vals)
 
     @api.model_create_multi
     def create(self, vals_list):

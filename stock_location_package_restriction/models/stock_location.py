@@ -53,15 +53,22 @@ class StockLocation(models.Model):
         self.flush_model()
         self.quant_ids.flush_model()
         query = """
-            SELECT stock_quant.location_id,
-            (count(distinct(stock_quant.package_id)) > 1)::bool as has_multiple_packages,
-            (count(*) FILTER (WHERE stock_quant.package_id IS NULL) > 0)::bool as has_no_package
+            SELECT
+                stock_quant.location_id,
+                (count(distinct stock_quant.package_id) > 1)::bool
+                    AS has_multiple_packages,
+                (
+                    count(*) FILTER (
+                        WHERE stock_quant.package_id IS NULL
+                    ) > 0
+                )::bool AS has_no_package
             FROM stock_quant
-            JOIN stock_location ON stock_location.id = stock_quant.location_id
+            JOIN stock_location
+                ON stock_location.id = stock_quant.location_id
             WHERE
                 quantity != 0
                 AND stock_location.package_restriction IS NOT NULL
-            """
+        """
         if self:
             query += "AND stock_quant.location_id in %s"
         query += f"""
@@ -150,7 +157,8 @@ class StockLocation(models.Model):
     def _check_package_restriction(self, move_lines=None):
         """Check if the location respect the package restrictions
 
-        :param move_lines: Optional planned move_line to validate its destination location
+        :param move_lines: Optional planned move_line
+        to validate its destination location
         :raises ValidationError: if the restriction is not respected
         """
         error_msgs = []

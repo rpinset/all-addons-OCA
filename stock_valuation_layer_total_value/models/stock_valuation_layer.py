@@ -9,7 +9,10 @@ class StockValuationLayer(models.Model):
     total_value_with_additional_costs = fields.Float(
         string="Total value (with additional costs)",
         compute="_compute_original_layer_values",
-        help="This is the sum of the total value's layer and total value of child layers",
+        help=(
+            "This is the sum of the total value's layer "
+            "and total value of child layers"
+        ),
         store=True,
     )
     unit_price_with_extra_cost = fields.Float(

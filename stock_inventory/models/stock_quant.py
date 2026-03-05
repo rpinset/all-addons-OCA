@@ -34,9 +34,11 @@ class StockQuant(models.Model):
                 ],
                 order="create_date asc",
             ).filtered(
-                lambda x: not x.company_id.id
-                or not rec.company_id.id
-                or rec.company_id.id == x.company_id.id
+                lambda x, rec=rec: (
+                    not x.company_id.id
+                    or not rec.company_id.id
+                    or rec.company_id.id == x.company_id.id
+                )
             )
             if len(moves) == 0:
                 raise ValueError(_("No move lines have been created"))

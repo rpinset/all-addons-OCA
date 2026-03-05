@@ -25,4 +25,4 @@ class StockQuant(models.Model):
             raise UserError(
                 _("Removal strategy %s not implemented.") % (removal_strategy,)
             )
-        return super(StockQuant, self)._get_removal_strategy_order(removal_strategy)
+        return super()._get_removal_strategy_order(removal_strategy)

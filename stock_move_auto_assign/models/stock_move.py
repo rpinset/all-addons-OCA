@@ -47,7 +47,7 @@ class StockMove(models.Model):
             if product.type != "product":
                 continue
             locations = move.mapped(location_field).filtered(
-                lambda l: l.usage == "internal"
+                lambda line: line.usage == "internal"
             )
             product_locs[product.id].update(locations.ids)
 

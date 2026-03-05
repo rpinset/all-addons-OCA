@@ -11,7 +11,6 @@ from odoo.addons.stock_location_pending_move.models.stock_location import (
 
 
 class StockLocation(models.Model):
-
     _inherit = "stock.location"
 
     exclude_from_fill_state_computation = fields.Boolean(
@@ -28,14 +27,16 @@ class StockLocation(models.Model):
         compute="_compute_fill_state",
         store=True,
         index=True,
-        help="""
-        This shows the location fill state.
-        Possible values:
-        [empty] Empty location
-        [filled] Filled location
-        [being_filled] The location is empty and an incoming move is in progress
-        [being_emptied] The location is filled and the outgoing move(s) will empty the location
-        """,
+        help=(
+            "This shows the location fill state.\n"
+            "Possible values:\n"
+            "[empty] Empty location\n"
+            "[filled] Filled location\n"
+            "[being_filled] The location is empty and an "
+            "incoming move is in progress\n"
+            "[being_emptied] The location is filled and the "
+            "outgoing move(s) will empty the location"
+        ),
     )
 
     def _get_locations_for_fill_state(self):
@@ -104,5 +105,5 @@ class StockLocation(models.Model):
         for state, records in records_by_state.items():
             # Don't update if value is already set
             records.filtered(
-                lambda record: record.fill_state != state
+                lambda record, state=state: record.fill_state != state
             ).fill_state = state

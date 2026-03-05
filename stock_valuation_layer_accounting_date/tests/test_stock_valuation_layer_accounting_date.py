@@ -16,7 +16,7 @@ from odoo.addons.stock_account.tests.test_stockvaluationlayer import (
 @tagged("post_install", "-at_install")
 class TestStockValuationStandard(TestStockValuationStandard):
     def setUp(self):
-        super(TestStockValuationStandard, self).setUp()
+        super().setUp()
 
     @freeze_time("2022-12-02 23:00:00")
     def test_svl_accounting_date_real_time(self):

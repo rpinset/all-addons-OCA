@@ -4,7 +4,6 @@ from odoo import fields, models
 
 
 class StockPackageType(models.Model):
-
     _inherit = "stock.package.type"
 
     category_id = fields.Many2one(
@@ -19,9 +18,7 @@ class StockPackageType(models.Model):
         for rec in self:
             name = rec.name
             if rec.category_id:
-                name = "{name} ({category})".format(
-                    name=rec.name, category=rec.category_id.code
-                )
+                name = f"{rec.name} ({rec.category_id.code})"
             result.append((rec.id, name))
 
         return result

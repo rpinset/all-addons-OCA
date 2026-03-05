@@ -3,7 +3,7 @@ from odoo.tests.common import TransactionCase
 
 class TestStockPicking(TransactionCase):
     def setUp(self):
-        super(TestStockPicking, self).setUp()
+        super().setUp()
         stock_location = self.env.ref("stock.stock_location_stock")
         customer_location = self.env.ref("stock.stock_location_customers")
         product = self.env.ref("product.product_product_4")
@@ -58,7 +58,8 @@ class TestStockPicking(TransactionCase):
         move = self.picking_with_exceptions.move_ids[0]
         move.write({"product_uom_qty": 0})
         move.write({"quantity_done": 1})
-        # Result returns a dict in case it detects an exception, otherwise it returns 'True'
+        # Result returns a dict in case it detects an exception,
+        # otherwise it returns 'True'
         result = self.picking_with_exceptions.button_validate()
 
         # Verify the result of the button_validate action

@@ -8,9 +8,11 @@ class StockLot(models.Model):
     _name = "stock.lot"
     _inherit = ["stock.lot", "base_multi_image.owner", "image.mixin"]
 
-    image_1920 = fields.Binary(
+    image_1920 = fields.Image(
         compute="_compute_image_1920",
         store=True,
+        max_width=1920,
+        max_height=1920,
     )
 
     @api.depends("image_ids")

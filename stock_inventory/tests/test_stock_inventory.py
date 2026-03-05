@@ -7,7 +7,7 @@ from odoo.tests.common import TransactionCase
 
 class TestStockInventory(TransactionCase):
     def setUp(self):
-        super(TestStockInventory, self).setUp()
+        super().setUp()
         self.env.company.stock_inventory_auto_complete = False
         self.quant_model = self.env["stock.quant"]
         self.move_model = self.env["stock.move.line"]

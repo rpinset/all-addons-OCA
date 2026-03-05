@@ -5,7 +5,6 @@ from odoo import fields, models
 
 
 class StockPackageTypeCategory(models.Model):
-
     _name = "stock.package.type.category"
     _description = "Stock Package Type Category"
 

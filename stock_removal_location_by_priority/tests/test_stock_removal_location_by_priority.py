@@ -10,7 +10,7 @@ from odoo.tests.common import TransactionCase
 
 class TestStockRemovalLocationByPriority(TransactionCase):
     def setUp(self):
-        super(TestStockRemovalLocationByPriority, self).setUp()
+        super().setUp()
         self.res_users_model = self.env["res.users"]
         self.stock_location_model = self.env["stock.location"]
         self.stock_warehouse_model = self.env["stock.warehouse"]

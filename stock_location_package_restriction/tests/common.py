@@ -127,8 +127,9 @@ class TestLocationPackageRestrictionCommon(TransactionCase):
 
         picking_in.action_confirm()
         for move_info in short_move_infos:
+            product_id = move_info.product.id
             line = picking_in.move_line_ids.filtered(
-                lambda x: x.product_id.id == move_info.product.id
+                lambda x, product_id=product_id: x.product_id.id == product_id
             )
             if line:
                 line.result_package_id = move_info.package_id
