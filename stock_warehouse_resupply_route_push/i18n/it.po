@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-30 09:25+0000\n"
+"PO-Revision-Date: 2026-03-09 14:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_warehouse_resupply_route_push
 #. odoo-python
@@ -27,6 +27,16 @@ msgstr "Sequenza %(name)s inter-magazzino"
 #: code:addons/stock_warehouse_resupply_route_push/models/stock_warehouse.py:0
 msgid "%(name)s Sequence inter warehouse (external)"
 msgstr "Sequenza %(name)s inter-magazzino (esterno)"
+
+#. module: stock_warehouse_resupply_route_push
+#. odoo-python
+#: code:addons/stock_warehouse_resupply_route_push/models/stock_warehouse.py:0
+msgid ""
+"Address is required in warehouse %s to use Inter-warehouse push routes "
+"generation."
+msgstr ""
+"L'indirizzo è richiesto nel magazzino %s per utilizzare la generazione delle "
+"rotte inoltro inter-magazzino."
 
 #. module: stock_warehouse_resupply_route_push
 #. odoo-python
@@ -53,8 +63,7 @@ msgstr "Tipo inter-magazzino (interno)"
 #. module: stock_warehouse_resupply_route_push
 #: model:ir.model.fields,help:stock_warehouse_resupply_route_push.field_stock_warehouse__resupply_wh_push
 msgid ""
-"Note that this will create new operation type for inter-warehouse "
-"deliveries."
+"Note that this will create new operation type for inter-warehouse deliveries."
 msgstr ""
 "Notare che questo creerà un nuovo tipo operazione per consegne inter-"
 "magazzino."

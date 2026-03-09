@@ -1,0 +1,49 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crm_lead_vat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-09 10:45+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: crm_lead_vat
+#: model_terms:ir.ui.view,arch_db:crm_lead_vat.crm_lead_view_form
+msgid ""
+"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" "
+"title=\"By saving this change, the customer vat number will also be "
+"updated.\" invisible=\"partner_vat_update == False\"/>"
+msgstr ""
+"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" "
+"title=\"Bu değişikliği kaydettiğinizde, müşterinin VKN/TCKN numarası da "
+"güncellenecektir.\" invisible=\"partner_vat_update == False\"/>"
+
+#. module: crm_lead_vat
+#: model:ir.model,name:crm_lead_vat.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Aday/Fırsat"
+
+#. module: crm_lead_vat
+#: model:ir.model.fields,field_description:crm_lead_vat.field_crm_lead__partner_vat_update
+msgid "Partner VAT will Update"
+msgstr "İş Ortağı VKN/TCKN'si Güncellenecek"
+
+#. module: crm_lead_vat
+#: model:ir.model.fields,field_description:crm_lead_vat.field_crm_lead__vat
+msgid "TIN"
+msgstr "Vergi Kimlik Numarası"
+
+#. module: crm_lead_vat
+#: model:ir.model.fields,help:crm_lead_vat.field_crm_lead__vat
+msgid ""
+"Tax Identification Number. The first 2 characters are the country code."
+msgstr "Vergi Kimlik Numarası. İlk 2 karakter ülke kodunu gösterir."
