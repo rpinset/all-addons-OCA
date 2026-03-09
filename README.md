@@ -1,15 +1,10 @@
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit aefed96dffcb8a0631781864669a8da0e0ef9ca7
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 06:20:17 2026 +0000
+commit 89da49b084bdfa92a358751da38792234f1d05e3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 6 12:29:18 2026 +0000
 
-    Translated using Weblate (Slovenian)
-    
-    Currently translated at 32.2% (10 of 31 strings)
-    
-    Translation: account-analytic-17.0/account-analytic-17.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-17-0/account-analytic-17-0-account_analytic_parent/sl/
+    [BOT] post-merge updates
 
 
 ## account-budgeting
@@ -55,9 +50,9 @@ Date:   Thu Feb 12 09:47:49 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 785cc6d1f0a0518cfbac6cb5c11fa266d869f8a4
+commit 160d619b85cfcd7fed2e6cd63a0a55a92b32e5e7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 3 22:54:01 2026 +0000
+Date:   Fri Mar 6 09:08:32 2026 +0000
 
     [BOT] post-merge updates
 
@@ -353,16 +348,11 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 2070fabf64300ab67c764d295b977a7427eebd70
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 16 12:31:59 2026 +0000
+commit 128c4c9a99cf464b73b016d1a86dd50d1111687f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 9 09:02:29 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (10 of 10 strings)
-    
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_ref_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_ref_unique/it/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -418,11 +408,16 @@ Date:   Mon Feb 23 20:40:54 2026 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 774cdc0c7d72e01d5c668a9cbd510201ee6f8b17
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 5 07:40:50 2026 +0000
+commit f6b1445e159be6bf0ecd2221c4f027fb1177db62
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 9 12:10:29 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: event-17.0/event-17.0-website_event_ribbon
+    Translate-URL: https://translation.odoo-community.org/projects/event-17-0/event-17-0-website_event_ribbon/it/
 
 
 ## survey
@@ -523,16 +518,11 @@ Date:   Sun Feb 2 18:58:24 2025 +0000
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit 5d7b7acf95ef1ae66ca80cf64fe247d8b5ccb650
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 2 12:57:11 2026 +0000
+commit e427dcdcbf30268959646d3ba58a4987a2bf9c15
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 9 15:06:06 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (169 of 169 strings)
-    
-    Translation: geospatial-17.0/geospatial-17.0-base_geoengine
-    Translate-URL: https://translation.odoo-community.org/projects/geospatial-17-0/geospatial-17-0-base_geoengine/it/
+    [BOT] post-merge updates
 
 
 ## timesheet
@@ -912,16 +902,11 @@ Date:   Sun Feb 2 19:35:19 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit f25bae39c566567b6d0fb773c9f93bfc9a1cf122
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 19 10:48:35 2026 +0000
+commit 3d2129ef14ba8d5df5d8fd5785aec8ac605a891f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 9 17:37:26 2026 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_partner_unique
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_partner_unique/
+    [BOT] post-merge updates
 
 
 ## l10n-russia

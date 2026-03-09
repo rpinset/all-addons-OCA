@@ -127,12 +127,6 @@ export class GeoengineRenderer extends Component {
                 ],
                 overlays: [this.overlay],
             });
-            this.map.on("moveend", () => {
-                const newZoom = this.map.getView().getZoom();
-                if (newZoom !== localStorage.getItem("ol-zoom")) {
-                    localStorage.setItem("ol-zoom", newZoom);
-                }
-            });
             this.addMoveEndListenerToMap();
             this.format = new ol.format.GeoJSON({
                 dataProjection: this.map.getView().getProjection(),
