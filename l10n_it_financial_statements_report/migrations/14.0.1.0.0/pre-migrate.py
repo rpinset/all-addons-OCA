@@ -1,6 +1,7 @@
 #  Copyright 2023 Simone Rubino - TAKOBI
 #  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+# pylint: disable=odoo-addons-relative-import
 from odoo.addons.l10n_it_financial_statements_report import hooks
 
 

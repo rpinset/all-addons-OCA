@@ -333,7 +333,7 @@ class MigrateL10nItDdt(EasyCommand):
                     }
                 )
             delivery_note = DeliveryNote.create(vals_getter(document))
-            extra_lines = document.line_ids.filtered(lambda l: not l.move_id)
+            extra_lines = document.line_ids.filtered(lambda li: not li.move_id)
 
             if extra_lines:
                 lines_vals = []

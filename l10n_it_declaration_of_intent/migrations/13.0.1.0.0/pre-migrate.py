@@ -5,6 +5,7 @@
 from openupgradelib import openupgrade
 from psycopg2 import sql
 
+# pylint: disable=odoo-addons-relative-import
 from odoo.addons.l10n_it_declaration_of_intent import hooks
 
 

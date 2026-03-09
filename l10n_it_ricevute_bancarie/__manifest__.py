@@ -46,5 +46,10 @@
         "wizard/wizard_riba_multiple_payment_views.xml",
     ],
     "demo": ["demo/riba_demo.xml"],
+    "external_dependencies": {
+        "python": [
+            "unidecode",
+        ],
+    },
     "installable": True,
 }

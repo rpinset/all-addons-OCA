@@ -4739,6 +4739,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Odoo Italia Modules
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-italy&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/l10n-italy/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-italy/actions/workflows/test.yml?query=branch%3A14.0)
@@ -4746,8 +4749,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-italy-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-italy-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Odoo Italia Modules
 
 Addons concerning Odoo Italian Localization.
 

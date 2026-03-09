@@ -338,7 +338,7 @@ class StockDeliveryNote(models.Model):
     @api.depends("state", "line_ids", "line_ids.invoice_status")
     def _compute_invoice_status(self):
         for note in self:
-            lines = note.line_ids.filtered(lambda l: l.sale_line_id)
+            lines = note.line_ids.filtered(lambda li: li.sale_line_id)
             invoice_status = DOMAIN_INVOICE_STATUSES[0]
             if lines:
                 if all(
@@ -707,7 +707,7 @@ class StockDeliveryNote(models.Model):
                     cache[line] = line.fix_qty_to_invoice()
 
         pickings_move_ids = self.mapped("picking_ids.move_lines")
-        for line in pickings_lines.filtered(lambda l: len(l.move_ids) > 1):
+        for line in pickings_lines.filtered(lambda li: len(li.move_ids) > 1):
             move_ids = line.move_ids & pickings_move_ids
             qty_to_invoice = sum(move_ids.mapped("quantity_done"))
 
@@ -731,11 +731,11 @@ class StockDeliveryNote(models.Model):
             if not sale_ids:
                 continue
             orders_lines = sale_ids.mapped("order_line").filtered(
-                lambda l: l.product_id
+                lambda li: li.product_id
             )
 
-            downpayment_lines = orders_lines.filtered(lambda l: l.is_downpayment)
-            invoiceable_lines = orders_lines.filtered(lambda l: l.is_invoiceable)
+            downpayment_lines = orders_lines.filtered(lambda li: li.is_downpayment)
+            invoiceable_lines = orders_lines.filtered(lambda li: li.is_invoiceable)
 
             cache = self._fix_quantities_to_invoice(
                 invoiceable_lines - downpayment_lines, invoice_method
@@ -744,10 +744,10 @@ class StockDeliveryNote(models.Model):
             for downpayment in downpayment_lines:
                 order = downpayment.order_id
                 order_lines = order.order_line.filtered(
-                    lambda l: l.product_id and not l.is_downpayment
+                    lambda li: li.product_id and not li.is_downpayment
                 )
 
-                if order_lines.filtered(lambda l: l.need_to_be_invoiced):
+                if order_lines.filtered(lambda li: li.need_to_be_invoiced):
                     cache[downpayment] = downpayment.fix_qty_to_invoice()
 
             invoice_ids = sale_ids.filtered(
@@ -1144,7 +1144,7 @@ class StockDeliveryNoteLine(models.Model):
 
     def write(self, vals):
         if "display_type" in vals and self.filtered(
-            lambda l: l.display_type != vals["display_type"]
+            lambda li: li.display_type != vals["display_type"]
         ):
             raise UserError(
                 _(
@@ -1157,7 +1157,7 @@ class StockDeliveryNoteLine(models.Model):
         return super().write(vals)
 
     def sync_invoice_status(self):
-        for line in self.filtered(lambda l: l.sale_line_id):
+        for line in self.filtered(lambda li: li.sale_line_id):
             invoice_status = line.sale_line_id.invoice_status
             line.invoice_status = (
                 DOMAIN_INVOICE_STATUSES[1]

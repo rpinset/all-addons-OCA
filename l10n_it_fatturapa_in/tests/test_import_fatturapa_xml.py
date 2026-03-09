@@ -858,7 +858,7 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         )
         self.assertEqual(len(invoice), 1)
         invoice_line = invoice.invoice_line_ids.filtered(
-            lambda l: l.product_id.id == product_id
+            lambda li: li.product_id.id == product_id
         )
         self.assertEqual(len(invoice_line), 1)
 

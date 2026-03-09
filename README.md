@@ -142,11 +142,16 @@ Date:   Tue Jan 13 10:38:05 2026 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 640642c0f62d3c7e85db03ca10da973487d4ea70
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:58:38 2025 +0000
+commit c67470d08fd60a7bdb5e706809b8d6b607431fc6
+Author: painkin <pasi.inkinen@iodo.fi>
+Date:   Mon Mar 9 05:04:37 2026 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Finnish)
+    
+    Currently translated at 17.4% (47 of 270 strings)
+    
+    Translation: intrastat-extrastat-14.0/intrastat-extrastat-14.0-intrastat_product
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-14-0/intrastat-extrastat-14-0-intrastat_product/fi/
 
 
 ## mis-builder
@@ -881,16 +886,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 301c603dc26991c3595a1f1cac5d65fb5a28668b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 17 07:17:47 2026 +0000
+commit 3500206459a74b68304cfaf16ca2b0d62fe49575
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 6 10:03:52 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (66 of 66 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_rma
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_rma/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan

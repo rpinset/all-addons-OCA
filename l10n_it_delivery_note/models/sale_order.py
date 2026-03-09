@@ -54,11 +54,11 @@ class SaleOrder(models.Model):
 
     def _assign_delivery_notes_invoices(self, invoice_ids):
         order_lines = self.mapped("order_line").filtered(
-            lambda l: l.is_invoiced and l.delivery_note_line_ids
+            lambda li: li.is_invoiced and li.delivery_note_line_ids
         )
 
         delivery_note_lines = order_lines.mapped("delivery_note_line_ids").filtered(
-            lambda l: l.is_invoiceable
+            lambda li: li.is_invoiceable
         )
         delivery_notes = delivery_note_lines.mapped("delivery_note_id")
 
@@ -166,6 +166,6 @@ class SaleOrderLine(models.Model):
         return bool(self.move_ids & picking_ids.mapped("move_lines"))
 
     def retrieve_pickings_lines(self, picking_ids):
-        return self.filtered(lambda l: l.has_picking).filtered(
-            lambda l: l.is_pickings_related(picking_ids)
+        return self.filtered(lambda li: li.has_picking).filtered(
+            lambda li: li.is_pickings_related(picking_ids)
         )

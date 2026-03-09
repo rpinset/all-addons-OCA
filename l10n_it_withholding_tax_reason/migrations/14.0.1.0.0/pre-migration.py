@@ -1,3 +1,4 @@
+# pylint: disable=odoo-addons-relative-import
 from odoo.addons.l10n_it_withholding_tax_reason import hooks
 
 

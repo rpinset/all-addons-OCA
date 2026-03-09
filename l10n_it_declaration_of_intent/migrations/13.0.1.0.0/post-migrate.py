@@ -3,6 +3,7 @@
 
 from openupgradelib import openupgrade
 
+# pylint: disable=odoo-addons-relative-import
 from odoo.addons.l10n_it_declaration_of_intent import hooks
 
 

@@ -266,7 +266,7 @@ class AccountMove(models.Model):
             ):
                 move_line = self.env["account.move.line"]
             # ---- Filtered recordset with date_maturity
-            move_line = move_line.filtered(lambda l: l.date_maturity is not False)
+            move_line = move_line.filtered(lambda li: li.date_maturity is not False)
             # ---- Sorted
             move_line = move_line.sorted(key=lambda r: r.date_maturity)
             # ---- Get date
@@ -361,7 +361,7 @@ class AccountMove(models.Model):
         return invoice
 
     def get_due_cost_line_ids(self):
-        return self.invoice_line_ids.filtered(lambda l: l.due_cost_line).ids
+        return self.invoice_line_ids.filtered(lambda li: li.due_cost_line).ids
 
     def action_riba_payment_date(self):
         return {

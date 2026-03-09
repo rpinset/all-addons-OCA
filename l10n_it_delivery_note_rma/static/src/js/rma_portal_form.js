@@ -68,6 +68,7 @@ odoo.define("rma_ddt.animation", function (require) {
          * We should be able to submit only when an operation is selected and a
          * quantity entered in a row at least.
          * @private
+         * @returns {Boolean}
          */
         _canSubmit: function () {
             var can_submit = false;

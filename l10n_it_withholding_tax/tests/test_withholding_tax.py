@@ -477,7 +477,7 @@ class TestWithholdingTax(TransactionCase):
             ]
         )
         self.assertEqual(len(wt_statement_ids), 1)
-        debit_line_id = partials[0][2].move_id.line_ids.filtered(lambda l: l.debit)
+        debit_line_id = partials[0][2].move_id.line_ids.filtered(lambda li: li.debit)
         self.invoice.js_assign_outstanding_line(debit_line_id.id)
         self.assertEqual(self.invoice.amount_net_pay, 800)
         self.assertEqual(self.invoice.amount_net_pay_residual, 200)

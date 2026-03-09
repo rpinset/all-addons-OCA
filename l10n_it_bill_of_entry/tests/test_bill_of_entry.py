@@ -251,7 +251,7 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
 
         # Customs Expense account.move.lines
         boe_payable_lines = self.bill_of_entry.line_ids.filtered(
-            lambda l: l.account_internal_type == "payable"
+            lambda li: li.account_internal_type == "payable"
         )
         boe_account = first(boe_payable_lines).account_id
         move_line_domain = [
@@ -277,12 +277,12 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
 
         # Storno - BoE reconciliation (supplier debit account)
         storno_reconcile_ids = (
-            storno.line_ids.filtered(lambda l: l.full_reconcile_id)
+            storno.line_ids.filtered(lambda li: li.full_reconcile_id)
             .mapped("full_reconcile_id")
             .ids
         )
         boe_reconcile_ids = (
-            self.bill_of_entry.line_ids.filtered(lambda l: l.full_reconcile_id)
+            self.bill_of_entry.line_ids.filtered(lambda li: li.full_reconcile_id)
             .mapped("full_reconcile_id")
             .ids
         )

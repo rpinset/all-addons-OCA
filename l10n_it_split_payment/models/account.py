@@ -74,7 +74,7 @@ class AccountMove(models.Model):
         """
         self._recompute_dynamic_lines()
         line_client_ids = self.line_ids.filtered(
-            lambda l: l.account_id.id
+            lambda li: li.account_id.id
             == self.partner_id.property_account_receivable_id.id
         )
         if self.move_type == "out_invoice":
@@ -114,7 +114,7 @@ class AccountMove(models.Model):
 
     def _compute_split_payments(self):
         write_off_line_vals = self._build_debit_line()
-        line_sp = self.line_ids.filtered(lambda l: l.is_split_payment)
+        line_sp = self.line_ids.filtered(lambda li: li.is_split_payment)
         if line_sp:
             line_sp = line_sp[0].with_context(check_move_validity=False)
             if (

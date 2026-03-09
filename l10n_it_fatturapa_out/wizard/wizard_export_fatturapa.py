@@ -209,7 +209,7 @@ class WizardExportFatturapa(models.TransientModel):
         to DatiCassaPrevidenziale nodes.
         """
         return invoice.invoice_line_ids.sorted(
-            key=lambda l: (-l.sequence, l.date, l.move_name, -l.id),
+            key=lambda li: (-li.sequence, li.date, li.move_name, -li.id),
             reverse=True,
         )
 

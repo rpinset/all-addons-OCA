@@ -92,7 +92,7 @@ class AccountInvoice(models.Model):
 
         for invoice in self.filtered(lambda i: i.delivery_note_ids):
             new_lines = []
-            old_lines = invoice.invoice_line_ids.filtered(lambda l: l.note_dn)
+            old_lines = invoice.invoice_line_ids.filtered(lambda li: li.note_dn)
             old_lines.unlink()
 
             #
@@ -136,7 +136,7 @@ class AccountInvoice(models.Model):
                     )
                     done_invoice_lines |= dn_invoice_lines
                     for note_line in dn.line_ids.filtered(
-                        lambda l: l.invoice_status == DOMAIN_INVOICE_STATUSES[2]
+                        lambda li: li.invoice_status == DOMAIN_INVOICE_STATUSES[2]
                     ):
                         for invoice_line in dn_invoice_lines:
                             if (

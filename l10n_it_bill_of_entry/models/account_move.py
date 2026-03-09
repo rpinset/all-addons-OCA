@@ -163,7 +163,7 @@ class AccountMove(models.Model):
 
         for bill_of_entry in self.forwarder_bill_of_entry_ids:
             boe_payable_lines = bill_of_entry.line_ids.filtered(
-                lambda l: l.account_internal_type == "payable"
+                lambda li: li.account_internal_type == "payable"
             )
             boe_account = first(boe_payable_lines).account_id
             line_vals = {
@@ -202,7 +202,7 @@ class AccountMove(models.Model):
             line_account = move_line.account_id
             for boe in self.forwarder_bill_of_entry_ids:
                 boe_payable_lines = boe.line_ids.filtered(
-                    lambda l: l.account_internal_type == "payable"
+                    lambda li: li.account_internal_type == "payable"
                 )
                 boe_account = first(boe_payable_lines).account_id
                 if line_account == boe_account:

@@ -100,7 +100,7 @@ class Asset(models.Model):
             template_data_list = [
                 line.get_template_file_data(file_headers)
                 for line in self.mapped("depreciation_ids.line_ids").sorted(
-                    key=lambda l: (l.asset_id, l.depreciation_id, l.date)
+                    key=lambda li: (li.asset_id, li.depreciation_id, li.date)
                 )
             ]
             for template_data in template_data_list:

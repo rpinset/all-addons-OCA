@@ -336,7 +336,7 @@ class AccountMove(models.Model):
                     amount = 0.0
         for declaration in declarations:
             # exclude amount from lines with invoice_id equals to self
-            for line in declaration.line_ids.filtered(lambda l: l.invoice_id == self):
+            for line in declaration.line_ids.filtered(lambda li: li.invoice_id == self):
                 declarations_amounts[declaration.id] += line.amount
         return declarations_amounts
 

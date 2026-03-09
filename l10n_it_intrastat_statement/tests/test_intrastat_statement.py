@@ -195,7 +195,9 @@ class TestIntrastatStatement(TransactionCase):
         )
 
         statement.compute_statement()
-        line = statement.purchase_section1_ids.filtered(lambda l: l.invoice_id == bill)
+        line = statement.purchase_section1_ids.filtered(
+            lambda li: li.invoice_id == bill
+        )
         self.assertEqual(bill.intrastat_line_ids.amount_currency, line.amount_currency)
 
     def test_statement_purchase_refund(self):
@@ -446,7 +448,7 @@ class TestIntrastatStatement(TransactionCase):
         )
         statement.compute_statement()
         statement_invoice_line = statement.sale_section1_ids.filtered(
-            lambda l: l.invoice_id == invoice
+            lambda li: li.invoice_id == invoice
         )
         self.assertEqual(statement_invoice_line.amount_euro, 101)
         self.assertEqual(statement_invoice_line.statistic_amount_euro, 101)
@@ -465,7 +467,7 @@ class TestIntrastatStatement(TransactionCase):
         )
         statement.compute_statement()
         statement_invoice_line = statement.sale_section1_ids.filtered(
-            lambda l: l.invoice_id == invoice
+            lambda li: li.invoice_id == invoice
         )
         self.assertEqual(statement_invoice_line.amount_euro, 100)
         self.assertEqual(statement_invoice_line.statistic_amount_euro, 100)
@@ -488,7 +490,7 @@ class TestIntrastatStatement(TransactionCase):
         )
         statement.compute_statement()
         statement_invoice_line = statement.purchase_section1_ids.filtered(
-            lambda l: l.invoice_id == bill
+            lambda li: li.invoice_id == bill
         )
 
         bill_amount_euro = bill.intrastat_line_ids.amount_euro
@@ -520,7 +522,7 @@ class TestIntrastatStatement(TransactionCase):
         )
         statement.compute_statement()
         statement_invoice_line = statement.purchase_section1_ids.filtered(
-            lambda l: l.invoice_id == bill
+            lambda li: li.invoice_id == bill
         )
 
         bill_amount_euro = bill.intrastat_line_ids.amount_euro
