@@ -24,8 +24,25 @@ class TestInvoiceMode(CommonPartnerInvoicingMode, TransactionCase):
 
     def test_invoice_job_related_action(self):
         """Dedicated invoice view is present in queue job's multi invoice action"""
-        invoice1 = self.env.ref("account.1_demo_invoice_1").copy()
-        invoice2 = self.env.ref("account.1_demo_invoice_1").copy()
+        invoice1 = self.env["account.move"].create(
+            {
+                "partner_id": self.partner.id,
+                "move_type": "out_invoice",
+                "invoice_line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "product_id": self.product.id,
+                            "name": "Test line",
+                            "quantity": 1.0,
+                            "price_unit": 100.00,
+                        },
+                    ),
+                ],
+            }
+        )
+        invoice2 = invoice1.copy()
         job_single = self.env["queue.job"].search(
             [("uuid", "=", invoice1.with_delay()._validate_invoice().uuid)]
         )

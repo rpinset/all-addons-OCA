@@ -109,6 +109,9 @@ class TestAccountInvoiceRecipientBankCurrency(TransactionCase):
         self.assertEqual(invoice_EUR.partner_bank_id, self.bank_acc4)
         self.assertEqual(invoice_DKK.partner_bank_id, self.bank_acc1)
 
+        # some modules change the relation to a restrict, so empty the value before unlink
+        invoice_DKK.partner_bank_id = False
+        invoice_USD.partner_bank_id = False
         self.bank_acc1.unlink()
         self.bank_acc3.unlink()
         invoice_USD._compute_partner_bank_id()

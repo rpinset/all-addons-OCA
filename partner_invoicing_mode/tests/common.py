@@ -2,15 +2,31 @@
 # Copyright 2023 ACSONE SA/NV
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+from odoo.addons.base.tests.common import BaseCommon
 
-class CommonPartnerInvoicingMode:
+
+class CommonPartnerInvoicingMode(BaseCommon):
 
     _invoicing_mode = "standard"
 
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            if not coa:
+                cls.tearDownClass()
+                # skipTest raises exception
+                cls.skipTest(
+                    cls, "Tests skipped because no available chart of accounts."
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.SaleOrder = cls.env["sale.order"]
         cls.partner = cls.env.ref("base.res_partner_1")
         cls.partner.invoicing_mode = cls._invoicing_mode
