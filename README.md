@@ -1198,16 +1198,11 @@ Date:   Tue Oct 21 07:04:36 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit d499f7b047fa8c47f73ef23943942f9a9e806064
-Author: Francois Poizat <francois.poizat@gmail.com>
-Date:   Wed Mar 4 17:34:34 2026 +0000
+commit 1802d8e080fbce18f3d70a6dd8f3925d74869622
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 12 17:16:49 2026 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (318 of 318 strings)
-    
-    Translation: wms-14.0/wms-14.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/fr/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1268,11 +1263,16 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 87034c1202fef7712a97b10f88a9f3af8c113777
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 10:22:57 2026 +0000
+commit f237ea470d8b8862cbabcc856d66d353262875fe
+Author: Rémi <remi@le-filament.com>
+Date:   Thu Mar 12 21:04:59 2026 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_line_menu
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_line_menu/fr/
 
 
 ## purchase-reporting
