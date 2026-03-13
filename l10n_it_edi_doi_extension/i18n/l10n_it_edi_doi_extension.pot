@@ -20,7 +20,6 @@ msgstr ""
 
 #. module: l10n_it_edi_doi_extension
 #. odoo-python
-#: code:addons/l10n_it_edi_doi_extension/models/account_move.py:0
 #: code:addons/l10n_it_edi_doi_extension/models/purchase_order.py:0
 msgid "A line using tax %s should not contain any other taxes"
 msgstr ""

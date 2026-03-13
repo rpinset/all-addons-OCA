@@ -3,7 +3,7 @@
 
 {
     "name": "Declaration of Intent for Italy (OCA)",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "author": "Nextev Srl, " "Odoo Community Association (OCA)",
     "category": "Accounting",
     "website": "https://github.com/OCA/l10n-italy",

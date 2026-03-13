@@ -9,7 +9,7 @@ import json
 from unidecode import unidecode
 
 from odoo import api, exceptions, fields, models
-from odoo.exceptions import UserError, ValidationError
+from odoo.exceptions import UserError
 from odoo.modules.registry import Registry
 from odoo.tools.float_utils import float_compare
 
@@ -298,7 +298,11 @@ class SiiMixin(models.AbstractModel):
             self.sii_send_date = send_date
         else:
             for record in self:
-                record.sii_send_date = record.company_id._get_sii_sending_time()
+                # If the document failed to be sent to SII previously, send it now
+                if record.aeat_send_failed:
+                    record.sii_send_date = fields.Datetime.now()
+                else:
+                    record.sii_send_date = record.company_id._get_sii_sending_time()
         # Create trigger if any company needs to send doc to SII now
         # so the sending to SII cron is executed as soon as possible
         if (
@@ -823,13 +827,9 @@ class SiiMixin(models.AbstractModel):
             doc_vals = {
                 "aeat_header_sent": json.dumps(header, indent=4),
             }
-            # add this extra try except in case _get_aeat_invoice_dict fails
-            # if not, get the value doc_dict for the next try and except below
+            inv_dict = False
             try:
                 inv_dict = document._get_aeat_invoice_dict()
-            except Exception as fault:
-                raise ValidationError(fault) from fault
-            try:
                 mapping_key = document._get_mapping_key()
                 serv = document._connect_aeat(mapping_key)
                 doc_vals["aeat_content_sent"] = json.dumps(inv_dict, indent=4)
@@ -891,10 +891,11 @@ class SiiMixin(models.AbstractModel):
                         "aeat_send_failed": True,
                         "aeat_send_error": repr(fault)[:60],
                         "sii_return": repr(fault),
-                        "aeat_content_sent": json.dumps(inv_dict, indent=4),
                         "sii_send_date": False,
                     }
                 )
+                if inv_dict:
+                    doc_vals["aeat_content_sent"] = json.dumps(inv_dict, indent=4)
                 document.write(doc_vals)
                 new_cr.commit()
                 new_cr.close()

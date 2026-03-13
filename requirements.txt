@@ -254,6 +254,12 @@ pyftpdlib
 python_slugify
 webdav4[fsspec]
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
+# generated from manifests external_dependencies
+pydantic
+requests
+typesense>=1.1.0
+typing-extensions
+unidecode
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
 mock

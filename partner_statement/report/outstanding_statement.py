@@ -16,7 +16,7 @@ class OutstandingStatement(models.AbstractModel):
         kwargs["context"] = {
             "lang": partner.lang,
         }
-        if kwargs.get("account_type") == "receivable":
+        if kwargs.get("account_type") == "asset_receivable":
             title = _("Statement up to %(ending_date)s in %(currency)s", **kwargs)
         else:
             title = _(

@@ -14,6 +14,13 @@ class TestCommentTemplate(common.TransactionCase):
     def setUpClass(cls):
         super().setUpClass()
         setup_test_model(cls.env, ResUsers)
+        res_users_model = cls.env.registry["res.users"]
+        # Register the comment_template_ids field added by comment.template mixin
+        cls.classPatch(
+            res_users_model,
+            "comment_template_ids",
+            res_users_model.comment_template_ids,
+        )
         cls.user_obj = cls.env.ref("base.model_res_users")
         cls.user = cls.env.ref("base.user_demo")
         cls.user2 = cls.env.ref("base.demo_user0")
