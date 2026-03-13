@@ -271,7 +271,7 @@
                 />
                 <t
                     t-set="misc_grouped_domain"
-                    t-value="[('partner_id', '=', account_or_group_item_object['id'])]"
+                    t-value="[('partner_id', '=', account_or_group_item_object['id'] or False)]"
                     t-if="'partners' in account"
                 />
                 <t t-set="misc_grouped_domain" t-value="[]" t-else="" />
@@ -761,7 +761,7 @@
                 />
                 <t
                     t-set="misc_grouped_domain"
-                    t-value="[('partner_id', '=', account_or_group_item_object['id'])]"
+                    t-value="[('partner_id', '=', account_or_group_item_object['id'] or False)]"
                     t-if="'partners' in account"
                 />
                 <t t-set="misc_grouped_domain" t-value="[]" t-else="" />

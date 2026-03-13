@@ -32,7 +32,7 @@ class AccountMove(models.Model):
         total_tax_base = sum(
             (
                 inv_tax.price_subtotal
-                for inv_tax in self.line_ids.filtered(
+                for inv_tax in self.invoice_line_ids.filtered(
                     lambda line: set(line.tax_ids.ids)
                     & set(stamp_product_id.stamp_apply_tax_ids.ids)
                 )

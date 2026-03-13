@@ -20,7 +20,7 @@ class ActivityStatement(models.AbstractModel):
             "lang": partner.lang,
         }
         if kwargs.get("is_detailed"):
-            if kwargs.get("account_type") == "receivable":
+            if kwargs.get("account_type") == "asset_receivable":
                 title = _(
                     "Detailed Statement "
                     "between %(starting_date)s and %(ending_date)s "
@@ -35,7 +35,7 @@ class ActivityStatement(models.AbstractModel):
                     **kwargs,
                 )
         else:
-            if kwargs.get("account_type") == "receivable":
+            if kwargs.get("account_type") == "asset_receivable":
                 title = _(
                     "Statement between %(starting_date)s and %(ending_date)s in %(currency)s",
                     **kwargs,

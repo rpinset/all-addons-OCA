@@ -5,7 +5,7 @@
     "name": "Stock Lot Auto Remove",
     "summary": """Automatically move remaining quants with a past removal date out "
     "of your stock""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,BCIM,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-workflow",

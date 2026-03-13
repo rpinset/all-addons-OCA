@@ -50,10 +50,18 @@ class TestStockLotRemove(BaseCommon):
             }
         )
         cls.env["stock.quant"]._update_available_quantity(
-            cls.product, cls.loc_stock_child_1, 3, lot_id=cls.lot_2023
+            cls.product,
+            cls.loc_stock_child_1,
+            3,
+            lot_id=cls.lot_2023,
+            in_date="2023-01-01",
         )
         cls.env["stock.quant"]._update_available_quantity(
-            cls.product, cls.loc_stock_child_2, 6, lot_id=cls.lot_2024
+            cls.product,
+            cls.loc_stock_child_2,
+            6,
+            lot_id=cls.lot_2024,
+            in_date="2024-01-01",
         )
         cls.customer_location = cls.env.ref("stock.stock_location_customers")
         cls.warehouse.lot_remove_orig_location_ids = cls.loc_stock

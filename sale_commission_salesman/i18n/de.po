@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_commission_salesman
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-12 12:45+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_commission_salesman
+#: model:ir.model,name:sale_commission_salesman.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: sale_commission_salesman
+#: model:ir.model.fields,field_description:sale_commission_salesman.field_res_partner__salesman_as_agent
+#: model:ir.model.fields,field_description:sale_commission_salesman.field_res_users__salesman_as_agent
+msgid "Convert salesman into agent"
+msgstr "Konvertiere Verkäufen in einen Provisionsempfänger"
+
+#. module: sale_commission_salesman
+#: model:ir.model.fields,help:sale_commission_salesman.field_res_partner__salesman_as_agent
+#: model:ir.model.fields,help:sale_commission_salesman.field_res_users__salesman_as_agent
+msgid ""
+"If the user linked to this partner is put as salesman and no other "
+"commission rule is triggered, this agent will be added as the commission "
+"agent"
+msgstr ""
+"Wenn der mit diesem Kontakt verknüpfte Benutzer als Verkäufer gesetzt wird "
+"und keine andere Provisionsregel greift, wird dieser Provisionsempfänger als "
+"Provisionsempfänger der Provision gesetzt"
+
+#. module: sale_commission_salesman
+#: model:ir.model,name:sale_commission_salesman.model_account_move_line
+msgid "Journal Item"
+msgstr "Buchungszeile"
+
+#. module: sale_commission_salesman
+#: model:ir.model,name:sale_commission_salesman.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkaufsauftragszeile"
+
+#. module: sale_commission_salesman
+#. odoo-python
+#: code:addons/sale_commission_salesman/models/res_partner.py:0
+#, python-format
+msgid "You can't have a salesman auto-agent without commission."
+msgstr ""
+"Ein Verkäufer als automatischer Provisionsempfänger kann nicht ohne "
+"Provision angelegt werden."

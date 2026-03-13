@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 03:38+0000\n"
-"PO-Revision-Date: 2025-05-13 12:23+0000\n"
+"PO-Revision-Date: 2026-03-13 15:45+0000\n"
 "Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_partner
 #: model_terms:ir.ui.view,arch_db:account_payment_partner.account_payment_mode_form
@@ -77,12 +77,12 @@ msgstr "Bankkonto aus Journalen"
 #. module: account_payment_partner
 #: model:ir.model,name:account_payment_partner.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Firmen"
 
 #. module: account_payment_partner
 #: model:ir.model,name:account_payment_partner.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #. module: account_payment_partner
 #: model:ir.model,name:account_payment_partner.model_res_partner
@@ -131,7 +131,7 @@ msgstr "Logbuch Eintrag"
 #: model:ir.model.fields,field_description:account_payment_partner.field_res_company__keep_partner_bank_without_payment_mode
 #: model:ir.model.fields,field_description:account_payment_partner.field_res_config_settings__keep_partner_bank_without_payment_mode
 msgid "Keep Bank Account Without Payment Mode"
-msgstr ""
+msgstr "Behalte Bankverbindung ohne Zahlungsmethode"
 
 #. module: account_payment_partner
 #: model_terms:ir.ui.view,arch_db:account_payment_partner.res_config_settings_view_form
@@ -141,6 +141,10 @@ msgid ""
 "                            to clear the bank account when no payment\n"
 "                            mode is set."
 msgstr ""
+"Halte das von Odoo automatisch ausgewählte \n"
+"Bankkonto auf Rechnungen ohne Zahlungsart bei.\n"
+"Deaktivieren, um das Bankkonto zu löschen,\n"
+"wenn keine Zahlungsart festgelegt ist."
 
 #. module: account_payment_partner
 #: model:ir.model.fields.selection,name:account_payment_partner.selection__account_payment_mode__show_bank_account__last
@@ -267,6 +271,9 @@ msgid ""
 "auto-selected by Odoo. When disabled, the bank account will be cleared if no "
 "payment mode is set."
 msgstr ""
+"Wenn aktiviert, behalten Rechnungen ohne Zahlungsart das von Odoo "
+"automatisch ausgewählte Bankkonto bei. Wenn deaktiviert, wird das Bankkonto "
+"gelöscht, wenn keine Zahlungsart festgelegt ist."
 
 #. module: account_payment_partner
 #. odoo-python

@@ -63,6 +63,7 @@ msgstr "Remise 1 (%)"
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount1_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_customerinfo_discount1_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount1_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount1_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount1_limit
@@ -77,6 +78,7 @@ msgstr "Remise 2 (%)"
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount2_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_customerinfo_discount2_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount2_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount2_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount2_limit
@@ -91,6 +93,7 @@ msgstr "Remise 3 (%)"
 
 #. module: account_invoice_triple_discount
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_account_move_line_discount3_limit
+#: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_customerinfo_discount3_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_product_supplierinfo_discount3_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_purchase_order_line_discount3_limit
 #: model:ir.model.constraint,message:account_invoice_triple_discount.constraint_triple_discount_mixin_discount3_limit

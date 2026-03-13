@@ -340,12 +340,12 @@ class TestSubcontractingTracking(TransactionCase):
 
         action = picking_receipt.action_record_components()
         mo = self.env["mrp.production"].browse(action["res_id"])
-        mo_form = Form(mo.with_context(**action["context"]), view=action["view_id"])
-        mo_form.qty_producing = 1
-        mo_form.lot_producing_id = lot_id
-        with mo_form.move_line_raw_ids.edit(0) as ml:
-            ml.lot_id = serial_id
-        mo = mo_form.save()
+        mo.qty_producing = 1
+        mo.lot_producing_id = lot_id
+        mo._set_qty_producing()
+        mo.move_line_raw_ids.filtered(
+            lambda ml: ml.product_id == self.comp1_sn
+        ).lot_id = serial_id
         mo.subcontracting_record_component()
 
         # We should not be able to call the 'record_components' button

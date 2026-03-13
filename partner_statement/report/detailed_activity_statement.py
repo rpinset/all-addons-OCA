@@ -18,7 +18,7 @@ class DetailedActivityStatement(models.AbstractModel):
             "lang": partner.lang,
         }
         if kwargs.get("line_type") == "prior_lines":
-            if kwargs.get("account_type") == "receivable":
+            if kwargs.get("account_type") == "asset_receivable":
                 title = _(
                     "Prior Balance up to %(ending_date)s in %(currency)s", **kwargs
                 )
@@ -28,7 +28,7 @@ class DetailedActivityStatement(models.AbstractModel):
                     **kwargs
                 )
         elif kwargs.get("line_type") == "ending_lines":
-            if kwargs.get("account_type") == "receivable":
+            if kwargs.get("account_type") == "asset_receivable":
                 title = _(
                     "Ending Balance up to %(ending_date)s in %(currency)s", **kwargs
                 )
