@@ -58,9 +58,18 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         values = [f"account.account,{a_id}" for a_id in accounts.ids]
         ip.search([("value_reference", "in", values)]).unlink()
         journals = self.env["account.journal"].search(domain)
+        # Empty accounts references in journals, allowing to unlink them
+        # later without FK error
+        journals.write(
+            {
+                "default_account_id": False,
+                "suspense_account_id": False,
+                "profit_account_id": False,
+                "loss_account_id": False,
+            }
+        )
         values = [f"account.journal,{j_id}" for j_id in journals.ids]
         ip.search([("value_reference", "in", values)]).unlink()
-        journals.unlink()
         accounts.unlink()
         self.env["account.fiscal.position"].search(domain).unlink()
         self.env["account.group"].search(domain).unlink()

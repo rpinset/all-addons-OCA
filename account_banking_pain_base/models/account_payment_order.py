@@ -283,12 +283,12 @@ class AccountPaymentOrder(models.Model):
             ) from None
         return True
 
-    def finalize_sepa_file_creation(self, xml_root, gen_args):
+    def finalize_pain_file_creation(self, xml_root, gen_args):
         xml_string = etree.tostring(
             xml_root, pretty_print=True, encoding="UTF-8", xml_declaration=True
         )
         logger.debug(
-            "Generated SEPA XML file in format %s below" % gen_args["pain_flavor"]
+            "Generated pain XML file in format %s below" % gen_args["pain_flavor"]
         )
         logger.debug(xml_string)
         self._validate_xml(xml_string, gen_args)
@@ -461,7 +461,14 @@ class AccountPaymentOrder(models.Model):
 
     @api.model
     def generate_party_agent(
-        self, parent_node, party_type, order, partner_bank, gen_args, bank_line=None
+        self,
+        parent_node,
+        party_type,
+        order,
+        partner_bank,
+        gen_args,
+        bank_line=None,
+        bank_name=None,
     ):
         """Generate the piece of the XML file corresponding to BIC
         This code is mutualized between TRF and DD
@@ -470,7 +477,9 @@ class AccountPaymentOrder(models.Model):
         http://www.europeanpaymentscouncil.eu/index.cfm/
         sepa-credit-transfer/iban-and-bic/
         In some localization (l10n_ch_sepa for example), they need the
-        bank_line argument"""
+        bank_line argument
+        For some special transfers such as International Credit Transfers, we want the
+        bank name to be set besides the BIC."""
         assert order in ("B", "C"), "Order can be 'B' or 'C'"
         if partner_bank.bank_bic:
             party_agent = etree.SubElement(parent_node, "%sAgt" % party_type)
@@ -479,6 +488,9 @@ class AccountPaymentOrder(models.Model):
                 party_agent_institution, gen_args.get("bic_xml_tag")
             )
             party_agent_bic.text = partner_bank.bank_bic
+            if bank_name:
+                party_agent_name = etree.SubElement(party_agent_institution, "Nm")
+                party_agent_name.text = bank_name
         else:
             if order == "B" or (order == "C" and gen_args["payment_method"] == "DD"):
                 party_agent = etree.SubElement(parent_node, "%sAgt" % party_type)
@@ -567,12 +579,21 @@ class AccountPaymentOrder(models.Model):
 
     @api.model
     def generate_party_block(
-        self, parent_node, party_type, order, partner_bank, gen_args, bank_line=None
+        self,
+        parent_node,
+        party_type,
+        order,
+        partner_bank,
+        gen_args,
+        bank_line=None,
+        bank_name=None,
     ):
         """Generate the piece of the XML file corresponding to Name+IBAN+BIC
         This code is mutualized between TRF and DD
         In some localization (l10n_ch_sepa for example), they need the
-        bank_line argument"""
+        bank_line argument
+        For some special transfers such as International Credit Transfers, we want the
+        bank name to be set besides the BIC."""
         assert order in ("B", "C"), "Order can be 'B' or 'C'"
         party_type_label = _("Partner name")
         if party_type == "Cdtr":
@@ -598,6 +619,7 @@ class AccountPaymentOrder(models.Model):
                 partner_bank,
                 gen_args,
                 bank_line=bank_line,
+                bank_name=bank_name,
             )
         party = etree.SubElement(parent_node, party_type)
         party_nm = etree.SubElement(party, "Nm")
@@ -620,6 +642,7 @@ class AccountPaymentOrder(models.Model):
                 partner_bank,
                 gen_args,
                 bank_line=bank_line,
+                bank_name=bank_name,
             )
         return True
 

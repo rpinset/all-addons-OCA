@@ -204,4 +204,4 @@ class AccountPaymentOrder(models.Model):
         else:
             nb_of_transactions_a.text = str(transactions_count_a)
             control_sum_a.text = "%.2f" % amount_control_sum_a
-        return self.finalize_sepa_file_creation(xml_root, gen_args)
+        return self.finalize_pain_file_creation(xml_root, gen_args)
