@@ -554,9 +554,9 @@ Date:   Tue Sep 2 16:04:28 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 36232ebf33d0a14fadd7fd9b622e675792a7af60
+commit 30e3dfec766e7cc45601075b89d1978477c1a6eb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 15:04:18 2025 +0000
+Date:   Tue Mar 10 09:43:55 2026 +0000
 
     Translated using Weblate (Italian)
     
@@ -1515,16 +1515,16 @@ Date:   Sun Sep 3 13:14:48 2023 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit ec948fa67fbc739c8575467f8226f387c8388dc2
+commit 089eb90808278e27e316a9dfda76d26c3516ff8f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:40:57 2025 +0000
+Date:   Tue Mar 10 09:24:50 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (72 of 72 strings)
+    Currently translated at 100.0% (48 of 48 strings)
     
-    Translation: iot-12.0/iot-12.0-iot
-    Translate-URL: https://translation.odoo-community.org/projects/iot-12-0/iot-12-0-iot/it/
+    Translation: iot-12.0/iot-12.0-iot_template_oca
+    Translate-URL: https://translation.odoo-community.org/projects/iot-12-0/iot-12-0-iot_template_oca/it/
 
 
 ## rest-framework
