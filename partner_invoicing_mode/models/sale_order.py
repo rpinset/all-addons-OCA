@@ -72,12 +72,17 @@ class SaleOrder(models.Model):
         domain = self._get_generate_invoices_domain(
             companies=companies, invoicing_mode=invoicing_mode
         )
+        # Apply context BEFORE computing grouping keys
+        sale_order_auto = self.with_context(partner_invoicing_mode_auto=True)
+        # Compute grouping with correct context
+        grouping_keys = sale_order_auto._get_invoice_grouping_keys()
         saleorder_groups = self.read_group(
             domain,
             ["partner_invoice_id", "sale_ids:array_agg(id)"],
-            groupby=self._get_invoice_grouping_keys(),
+            groupby=grouping_keys,
             lazy=False,
         )
+        # Enqueue invoice generation jobs
         for saleorder_group in saleorder_groups:
             self.with_delay()._generate_invoices_by_partner(saleorder_group["sale_ids"])
         companies.write({last_execution_field: Datetime.now()})
@@ -90,6 +95,10 @@ class SaleOrder(models.Model):
         add some missing keys. We remove also the partner_id key.
         """
         keys = super()._get_invoice_grouping_keys()
+
+        if not self.env.context.get("partner_invoicing_mode_auto", False):
+            return keys
+
         if "partner_invoice_id" not in keys:
             keys.append("partner_invoice_id")
         if "payment_term_id" not in keys:

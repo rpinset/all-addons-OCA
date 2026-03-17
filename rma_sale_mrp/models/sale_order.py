@@ -130,3 +130,8 @@ class SaleOrderLine(models.Model):
             )
         )
         return bom and bom.get(self.product_id).type == "phantom"
+
+    def _get_rma_allowed_quantity(self, vals=None):
+        if self._rma_is_kit_product():
+            return vals["quantity"]
+        return super()._get_rma_allowed_quantity(vals=vals)

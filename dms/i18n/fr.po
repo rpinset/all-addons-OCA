@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-06-03 16:48+0000\n"
-"Last-Translator: Yves Le Doeuff <yld@alliasys.fr>\n"
+"PO-Revision-Date: 2026-03-15 22:45+0000\n"
+"Last-Translator: Arnaud LAYEC <arnaudlayec@gmail.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: dms
 #: model:ir.model.fields,help:dms.field_dms_directory__alias_process
@@ -108,6 +108,14 @@ msgid ""
 "change it, the permissions will also change.<br/>\n"
 "                    Make this change at your own risk."
 msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-3\" title=\"Attention\"/>\n"
+"                    <b>ATTENTION:</b> Conseils avant de migrer des fichiers "
+":<br/>\n"
+"                    - Ce changement est irréversible.<br/>\n"
+"                    - Les permissions des fichier sont ceux de leur dossier "
+"d'appartenance. Ainsi, au changement de dossier du fichier, les permissions "
+"de celui-ci peuvent aussi changer.<br/>\n"
+"                    Effectuer ce changement à vos propres risques."
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
@@ -236,6 +244,9 @@ msgid ""
 "                                        <span class=\"oe_edit_only\"> @ </"
 "span>"
 msgstr ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </"
+"span>"
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
@@ -367,7 +378,7 @@ msgstr "Activités"
 #: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_decoration
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Décoration de l'exception d'activité"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__activity_state
@@ -396,7 +407,7 @@ msgstr "Ajouter un nouveau fichier."
 #. module: dms
 #: model:ir.model.fields,help:dms.field_wizard_dms_share__note
 msgid "Add extra content to display in the email"
-msgstr ""
+msgstr "Ajouter du contenu supplémentaire à afficher dans le mail"
 
 #. module: dms
 #: model:dms.access.group,name:dms.access_group_01_demo
@@ -406,7 +417,7 @@ msgstr "Administrateur"
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__alias_id
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__alias_contact
@@ -732,7 +743,7 @@ msgstr "Créer"
 #: model:ir.model.fields,field_description:dms.field_dms_file__permission_create
 #: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_create
 msgid "Create Access"
-msgstr "Créer Accès"
+msgstr "Créer"
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.onboarding_directory_step
@@ -2251,7 +2262,7 @@ msgstr "Type de l'activité d'exception enregistrée."
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_unlink
 msgid "Unlink Access"
-msgstr "Accès dissocié"
+msgstr "Supprimer"
 
 #. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
@@ -2337,7 +2348,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:dms.field_dms_file__permission_write
 #: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
 msgid "Write Access"
-msgstr "Accès en Ecriture"
+msgstr "Ecrire"
 
 #. module: dms
 #. odoo-javascript

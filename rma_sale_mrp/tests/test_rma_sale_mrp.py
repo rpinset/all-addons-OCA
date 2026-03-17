@@ -8,7 +8,7 @@ from odoo.tests import Form
 from odoo.addons.rma_sale.tests.test_rma_sale import TestRmaSaleBase
 
 
-class TestRmaSaleMrp(TestRmaSaleBase):
+class TestRmaSaleMrpBase(TestRmaSaleBase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -62,6 +62,8 @@ class TestRmaSaleMrp(TestRmaSaleBase):
             line.quantity_done = line.product_uom_qty
         cls.backorder.button_validate()
 
+
+class TestRmaSaleMrp(TestRmaSaleMrpBase):
     def test_create_rma_from_so(self):
         order = self.sale_order
         out_pickings = self.order_out_picking + self.backorder

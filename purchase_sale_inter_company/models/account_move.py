@@ -9,10 +9,10 @@ from odoo import _, models
 class AccountMove(models.Model):
     _inherit = "account.move"
 
-    def _inter_company_create_invoice(self, dest_company):
-        res = super()._inter_company_create_invoice(dest_company)
-        if res["dest_invoice"].move_type == "in_invoice":
-            self._link_invoice_purchase(res["dest_invoice"])
+    def _create_destination_account_move_line(self, dest_invoice, dest_company):
+        res = super()._create_destination_account_move_line(dest_invoice, dest_company)
+        if dest_invoice.move_type == "in_invoice":
+            self._link_invoice_purchase(dest_invoice)
         return res
 
     def _link_invoice_purchase(self, dest_invoice):

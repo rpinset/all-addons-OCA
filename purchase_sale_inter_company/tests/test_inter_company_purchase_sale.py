@@ -275,3 +275,26 @@ class TestPurchaseSaleInterCompany(TestAccountInvoiceInterCompanyBase):
             purchase.order_line[0].with_context(allow_update_locked_sales=True).write(
                 {"product_qty": 99}
             )
+
+    def test_purchase_link_set_before_post(self):
+        """The bill must be linked to the PO after creating the invoice lines,
+        before posting.
+        """
+        self.partner_company_a.company_id = False
+        self.partner_company_b.company_id = False
+        sale = self._approve_po()
+        sale_invoice = sale._create_invoices()[0]
+        # Prepare the destination invoice in draft without posting
+        dest_company = self.company_a
+        src_invoice = sale_invoice.with_context(
+            skip_check_amount_difference=True,
+            check_move_validity=False,
+        )
+        dest_invoice_data = src_invoice._prepare_invoice_data(dest_company)
+        dest_invoice = src_invoice.create(dest_invoice_data)
+        src_invoice._create_destination_account_move_line(dest_invoice, dest_company)
+        # The purchase link must already be set before any posting
+        self.assertEqual(
+            dest_invoice.invoice_line_ids.purchase_line_id,
+            self.purchase_company_a.order_line,
+        )
