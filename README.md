@@ -1718,9 +1718,9 @@ Date:   Fri Feb 27 10:29:01 2026 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 992756d8f2bf217de56e5f3f227e8f8aa625aa1f
+commit 2e7fdb71f490bef59fd1d3489bb5b4867b63131b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 28 09:23:07 2026 +0000
+Date:   Mon Mar 16 18:37:04 2026 +0000
 
     [BOT] post-merge updates
 

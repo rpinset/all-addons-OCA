@@ -9684,6 +9684,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# website
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/website/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/website/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/website/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/website/actions/workflows/test.yml?query=branch%3A14.0)
@@ -9691,8 +9694,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/website-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# website
 
 TODO: add repo description.
 
@@ -9707,7 +9708,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [website_analytics_matomo](website_analytics_matomo/) | 14.0.1.0.0 |  | Track website users using matomo
-[website_cookiefirst](website_cookiefirst/) | 14.0.1.1.0 |  | Cookiefirst integration
+[website_cookiefirst](website_cookiefirst/) | 14.0.2.0.0 |  | Cookiefirst integration
 [website_crm_privacy_policy](website_crm_privacy_policy/) | 14.0.1.0.0 |  | Website CRM privacy policy
 [website_crm_quick_answer](website_crm_quick_answer/) | 14.0.1.1.0 |  | Add an automatic answer for contacts asking for info
 [website_forum_subscription](website_forum_subscription/) | 14.0.1.0.0 |  | Adds a button to allow subscription from the website
