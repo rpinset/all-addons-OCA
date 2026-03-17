@@ -978,9 +978,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit f6518c4a4f23b466c3290729dfb4c5b8908423f1
+commit 211cd563ee21f13e7940633f1c087b1db15c38c9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 24 04:29:56 2025 +0000
+Date:   Mon Mar 16 10:20:16 2026 +0000
 
     [BOT] post-merge updates
 
