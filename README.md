@@ -45,9 +45,9 @@ Date:   Tue Mar 10 19:03:49 2026 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit e4cd4cb81ea44d180852d172fbfe8993d8c4db17
+commit 317bddc3acdfaa6a1cdbc7b092fe90977b7f556e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 11 09:56:43 2026 +0000
+Date:   Mon Mar 16 09:51:40 2026 +0000
 
     [BOT] post-merge updates
 
@@ -127,16 +127,11 @@ Date:   Wed Nov 26 06:25:47 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 752945dea1f152db48bafc3a336db6bdecfb2a43
-Author: Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>
-Date:   Fri Mar 13 07:24:23 2026 +0000
+commit 2cfbeefe687bb629454aac0ebb1868a0dbd90f8f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 17 19:04:04 2026 +0000
 
-    Translated using Weblate (Finnish)
-    
-    Currently translated at 100.0% (281 of 281 strings)
-    
-    Translation: credit-control-17.0/credit-control-17.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-17-0/credit-control-17-0-account_credit_control/fi/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -320,9 +315,9 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 36473bcc88cdf461a9c95e78587ce55c94bcc7b4
+commit 84e03c4d9bda5d4d246e19d110acd095093f8441
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 12 16:12:59 2026 +0000
+Date:   Tue Mar 17 16:20:53 2026 +0000
 
     [BOT] post-merge updates
 
@@ -338,11 +333,16 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 128c4c9a99cf464b73b016d1a86dd50d1111687f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 9 09:02:29 2026 +0000
+commit a2f8a8be42e4798e22ab26c368420417ba5dbf14
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Mar 17 09:24:46 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: partner-contact-17.0/partner-contact-17.0-base_country_state_translatable
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-base_country_state_translatable/
 
 
 ## sale-financial
@@ -924,16 +924,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit c56c376af63d4f1cfc9d2c4745d46116917a8fab
+commit 97419e4a1c346b1578934a8382118aaa09b32575
 Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 13 13:13:35 2026 +0000
+Date:   Mon Mar 16 11:26:08 2026 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat_sii_oca
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat_sii_oca/
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat_mod190
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat_mod190/
 
 
 ## l10n-switzerland
@@ -1086,16 +1086,11 @@ Date:   Wed Jan 28 09:57:06 2026 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 0f761ebd67fe86be73f8c399bc91101eecc1b36c
-Author: alexmorel-tecnativa <alex.morel@tecnativa.com>
-Date:   Fri Mar 13 15:56:51 2026 +0000
+commit ff3cd97c7d8aff96d781ec29de27e25ff137edc4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 17 08:46:03 2026 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 93.3% (14 of 15 strings)
-    
-    Translation: rma-17.0/rma-17.0-rma_repair
-    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma_repair/es/
+    [BOT] post-merge updates
 
 
 ## ddmrp
@@ -1154,16 +1149,16 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 05c5a5a5d022e3c3d7d55095b3794756d611a4c3
+commit c56c902596f031e2e03837ac19edd30badcae6db
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 11 10:14:09 2026 +0000
+Date:   Tue Mar 17 08:43:02 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (2 of 2 strings)
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_advance_payment_line
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_advance_payment_line/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_order_date_approve_editable
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_order_date_approve_editable/it/
 
 
 ## purchase-reporting
@@ -1341,16 +1336,14 @@ Date:   Mon Jan 12 15:13:00 2026 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 19d804fcb337ab0d192ba520165960de1f5baf6a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 13 13:59:38 2026 +0000
+commit 9284c155c6d05e3240b59b2e831b9fabc5f6464c
+Merge: 19d804f 5c3a862
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Mar 16 08:34:21 2026 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #452 from CompassionCH/17.0-printer-output-tray
     
-    Currently translated at 100.0% (169 of 169 strings)
-    
-    Translation: report-print-send-17.0/report-print-send-17.0-base_report_to_printer
-    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-17-0/report-print-send-17-0-base_report_to_printer/it/
+    FIX openupgrade migration script
 
 
 ## webkit-tools
@@ -1614,9 +1607,9 @@ Date:   Sun Feb 9 19:15:40 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 3fb5d2f0ef492d932a8c688822e97892ae1e1493
+commit f4555f6431629caec8ac707d20f8fb37d4c70e63
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 13 13:35:31 2026 +0000
+Date:   Tue Mar 17 10:05:10 2026 +0000
 
     [BOT] post-merge updates
 
