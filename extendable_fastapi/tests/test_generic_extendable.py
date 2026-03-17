@@ -1,10 +1,9 @@
 # Copyright 2023 ACSONE SA/NV
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+from fastapi.exceptions import ResponseValidationError
 from requests import Response
 
 from odoo.tests.common import tagged
-
-from fastapi.exceptions import ResponseValidationError
 
 from .common import FastAPITransactionCase
 from .routers import demo_pydantic_router
@@ -87,7 +86,7 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_user", content=pydantic_data.model_dump_json()
+                "/post_user", json=pydantic_data.model_dump()
             )
             self.assertEqual(response.status_code, 200)
             res = response.json()
@@ -115,7 +114,7 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_private_user", content=pydantic_data.model_dump_json()
+                "/post_private_user", json=pydantic_data.model_dump()
             )
             self.assertEqual(response.status_code, 200)
             user = response.json()
@@ -143,7 +142,7 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_private_user_generic", content=pydantic_data.model_dump_json()
+                "/post_private_user_generic", json=pydantic_data.model_dump()
             )
             self.assertEqual(response.status_code, 200)
             res = response.json()
@@ -206,5 +205,6 @@ class TestUser(FastAPITransactionCase):
             self._create_test_client(router=demo_pydantic_router) as test_client,
         ):
             test_client.post(
-                "/post_private_customer", content=pydantic_data.model_dump_json()
+                "/post_private_customer",
+                json=pydantic_data.model_dump(),
             )

@@ -1254,6 +1254,41 @@ class TierTierValidation(CommonTierValidation):
         ):
             test_record.request_validation()
 
+    def test_34_test_duplicate_new_user_should_not_have_review_ids(self):
+        """
+        This test ensures that when a user with review_ids is duplicated and
+        the new user does not get the same review_ids.
+        """
+        # Create new test record
+        test_record = self.test_model.create({"test_field": 2.5})
+        # Create tier definitions
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+                "has_comment": True,
+            }
+        )
+
+        # Request validation
+        review = test_record.request_validation()
+        self.assertTrue(review)
+
+        # User Should have review_ids
+        self.assertTrue(self.test_user_2.review_ids.ids)
+        self.assertEqual(
+            self.test_user_2.review_ids.mapped("res_id"),
+            [test_record.id],
+        )
+
+        # Duplicate user
+        new_user = self.test_user_2.copy()
+
+        # Review_ids should not be copied when duplicating a user
+        self.assertFalse(new_user.review_ids.ids)
+
 
 @tagged("at_install")
 class TierTierValidationView(CommonTierValidation):

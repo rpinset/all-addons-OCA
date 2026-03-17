@@ -1,0 +1,3 @@
+- [Tecnativa](https://www.tecnativa.com):
+  - David Vidal
+- Michael Tietz (MT Software) \<mtietz@mt-software.de\>
