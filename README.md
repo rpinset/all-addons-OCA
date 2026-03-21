@@ -379,11 +379,11 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3a2e42c4ba71212c30462650881b253d8215940a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 28 17:17:09 2026 +0000
+commit 3ecc3308496b92316b80fe02d78c2fd6b057afba
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Wed Mar 18 11:53:05 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Turkish)
 
 
 ## crm
@@ -498,16 +498,14 @@ Date:   Thu Dec 11 08:03:12 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 09db93d80deb23a427ad4faf61e57019e813591d
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Nov 19 14:59:23 2025 +0000
+commit c3f5fba66167f2913a3683248bb9e07ac5a274dc
+Merge: 09db93d8 6f6178ef
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 20 10:17:50 2026 +0000
 
-    Translated using Weblate (Italian)
+    Merge PR #1113 into 14.0
     
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_reference_displayed
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_reference_displayed/it/
+    Signed-off-by pedrobaeza
 
 
 ## edi
@@ -1106,11 +1104,14 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 07341cf13424b186d41a3cc1df4a03e8adf40b04
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 25 15:30:42 2025 +0000
+commit fed707047d70833de0802c7ae03aaa8a092c04f0
+Merge: 07341cf1 9b100743
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Mar 20 14:27:08 2026 +0100
 
-    [BOT] post-merge updates
+    Merge pull request #1141 from raumschmiede-joshuaL/14.0-update-template
+    
+    [14.0][UPD] Update Repo Template
 
 
 ## stock-logistics-barcode

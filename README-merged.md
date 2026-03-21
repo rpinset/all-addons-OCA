@@ -2705,6 +2705,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Odoo E-Commerce Modules
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A14.0)
@@ -2712,8 +2715,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Odoo E-Commerce Modules
 
 Modules aiming to support e-commerce specific needs. This includes all the new website_sale related modules.
 
@@ -5987,6 +5988,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# delivery-carrier
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/delivery-carrier&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml?query=branch%3A14.0)
@@ -5994,8 +5998,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/delivery-carrier-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/delivery-carrier-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# delivery-carrier
 
 Repository for Delivery Carriers implementations
 
