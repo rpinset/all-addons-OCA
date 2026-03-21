@@ -26,6 +26,7 @@ class TestFsImage(TransactionCase):
         )
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()
+        cls.addClassCleanup(cls.loader.restore_registry)
         from .models import TestImageModel, TestRelatedImageModel
 
         cls.loader.update_registry((TestImageModel, TestRelatedImageModel))
@@ -39,6 +40,11 @@ class TestFsImage(TransactionCase):
         with open(cls.tmpfile_path, "wb") as f:
             f.write(cls.create_content)
         cls.filename = os.path.basename(cls.tmpfile_path)
+
+    def check_attrs(self):
+        # Deactivate check_attrs to avoid conflict with FakeModelLoader.
+        # since superClass uses it for its own puposes not relevant for our tests.
+        pass
 
     def setUp(self):
         super().setUp()
@@ -56,7 +62,6 @@ class TestFsImage(TransactionCase):
     def tearDownClass(cls):
         if os.path.exists(cls.tmpfile_path):
             os.remove(cls.tmpfile_path)
-        cls.loader.restore_registry()
         return super().tearDownClass()
 
     @classmethod

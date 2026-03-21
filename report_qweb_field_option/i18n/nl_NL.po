@@ -19,7 +19,8 @@ msgstr ""
 #. module: report_qweb_field_option
 #: model:ir.model.fields,help:report_qweb_field_option.field_qweb_field_options__field_options
 msgid ""
-"A string representation of a dictionary to specify field formatting options. Examples:\n"
+"A string representation of a dictionary to specify field formatting options. "
+"Examples:\n"
 "{'widget': 'date'}\n"
 "{'widget': 'monetary'}\n"
 "{'widget': 'contact', 'fields': ['name', 'phone']}"
@@ -66,6 +67,11 @@ msgid "Display Name"
 msgstr "Weergavenaam"
 
 #. module: report_qweb_field_option
+#: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__domain
+msgid "Domain"
+msgstr ""
+
+#. module: report_qweb_field_option
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__field_id
 msgid "Field"
 msgstr "Veld"
@@ -89,6 +95,14 @@ msgstr "Groeperen op"
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__id
 msgid "ID"
 msgstr "ID"
+
+#. module: report_qweb_field_option
+#. odoo-python
+#: code:addons/report_qweb_field_option/models/qweb_field_options.py:0
+msgid ""
+"Invalid domain format: %(domain)s.\n"
+"Error: %(error)s"
+msgstr ""
 
 #. module: report_qweb_field_option
 #. odoo-python
@@ -120,6 +134,17 @@ msgstr "Model"
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__res_model_name
 msgid "Model Name"
 msgstr "Modelnaam"
+
+#. module: report_qweb_field_option
+#: model:ir.model.fields,help:report_qweb_field_option.field_qweb_field_options__domain
+msgid ""
+"Optional domain for additional filtering conditions.\n"
+"This is evaluated in addition to UoM/Currency conditions.\n"
+"Examples:\n"
+"[('secondary_uom_id', '=', 1)]\n"
+"[('secondary_uom_id.name', '=', 'Box')]\n"
+"[('state', 'in', ['sale', 'done'])]"
+msgstr ""
 
 #. module: report_qweb_field_option
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__field_options

@@ -140,6 +140,11 @@ msgid "Encoding to be applied to the generated CSV file. e.g. cp932"
 msgstr ""
 
 #. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__text_encoding
+msgid "Encoding to be applied to the generated Text file. e.g. cp932"
+msgstr ""
+
+#. module: report_pdf_form
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__xml_id
 msgid "External ID"
 msgstr ""
@@ -201,6 +206,13 @@ msgid ""
 msgstr ""
 
 #. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__text_encode_error_handling
+msgid ""
+"If nothing is selected, text export will fail with an error message when "
+"there is a character that fail to be encoded."
+msgstr ""
+
+#. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__multi
 msgid ""
 "If set to true, the action will not be displayed on the right toolbar of a "
@@ -231,6 +243,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form_field__write_date
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form_variable__write_date
 msgid "Last Updated on"
+msgstr ""
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__line_ending
+msgid "Line Ending"
 msgstr ""
 
 #. module: report_pdf_form
@@ -376,6 +393,13 @@ msgid "Save as Attachment Prefix"
 msgstr ""
 
 #. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__line_ending
+msgid ""
+"Select the type of line ending in case the report needs to be output with "
+"other line ending than 'LF'."
+msgstr ""
+
+#. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__binding_model_id
 msgid ""
 "Setting a value makes this action available in the sidebar for the given "
@@ -390,6 +414,16 @@ msgstr ""
 #. module: report_pdf_form
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__report_name
 msgid "Template Name"
+msgstr ""
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__text_encode_error_handling
+msgid "Text Encode Error Handling"
+msgstr ""
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__text_encoding
+msgid "Text Encoding"
 msgstr ""
 
 #. module: report_pdf_form

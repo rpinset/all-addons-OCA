@@ -1,0 +1,2 @@
+-  Enric Tobella (`Dixmit <https://www.dixmit.com/>`__)
+-  Michael Tietz (MT Software) <mtietz@mt-software.de>

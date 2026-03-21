@@ -19,7 +19,7 @@
                 expr="//field[@name='line_ids']//field[@name='operation_id']"
                 position="before"
             >
-                <field name="operation_domain" invisible="1" />
+                <field name="operation_domain" column_invisible="1" />
                 <field
                     name="reason_id"
                     required="is_rma_reason_required and quantity>0"

@@ -46,6 +46,11 @@ class FsFolderTestCase(TransactionCase):
         def cleanup_tempdir():
             shutil.rmtree(cls.temp_dir)
 
+    def check_attrs(self):
+        # Deactivate check_attrs to avoid conflict with FakeModelLoader.
+        # since superClass uses it for its own puposes not relevant for our tests.
+        pass
+
     def setUp(self):
         super().setUp()
         # enforce temp_backend field since it seems that they are reset on

@@ -123,13 +123,6 @@ msgid "2021/2022"
 msgstr ""
 
 #. module: l10n_de_tax_statement
-#: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
-msgstr ""
-
-#. module: l10n_de_tax_statement
 #. odoo-python
 #: code:addons/l10n_de_tax_statement/models/l10n_de_tax_statement_2018.py:0
 #: code:addons/l10n_de_tax_statement/models/l10n_de_tax_statement_2019.py:0
@@ -1148,6 +1141,11 @@ msgstr ""
 #. module: l10n_de_tax_statement
 #: model:ir.model.fields,help:l10n_de_tax_statement.field_l10n_de_tax_statement_line__currency_id
 msgid "Utility field to express amount currency"
+msgstr ""
+
+#. module: l10n_de_tax_statement
+#: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.res_config_settings_view_form
+msgid "Values set here are company-specific."
 msgstr ""
 
 #. module: l10n_de_tax_statement

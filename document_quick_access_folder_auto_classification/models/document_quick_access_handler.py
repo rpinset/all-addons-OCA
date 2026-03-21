@@ -78,6 +78,8 @@ class EdiDocumentQuickAccessHandler(models.AbstractModel):
     def _search_pil_image(self, image):
         zbar_results = decode(image, symbols=[ZBarSymbol.QRCODE])
         results = [zbar_result.data.decode("utf-8") for zbar_result in zbar_results]
+        if not results:
+            results = self._fallback_decode_with_contrast(image)
         if not results and cv2:
             detector = cv2.QRCodeDetector()
             is_ok, cv2_results, _vertices, _binary = detector.detectAndDecodeMulti(
@@ -94,3 +96,13 @@ class EdiDocumentQuickAccessHandler(models.AbstractModel):
             if record and record not in records:
                 records += record
         return records
+
+    def _fallback_decode_with_contrast(self, image):
+        gray_img = image.convert("L")
+        min_val, max_val = gray_img.getextrema()
+        dynamic_umbral = (min_val + max_val) / 2
+        binary_img = gray_img.point(lambda p: 255 if p > dynamic_umbral else 0)
+        zbar_results = decode(binary_img, symbols=[ZBarSymbol.QRCODE])
+        results = [zbar_result.data.decode("utf-8") for zbar_result in zbar_results]
+
+        return results

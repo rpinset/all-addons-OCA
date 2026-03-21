@@ -1,10 +1,11 @@
 # Copyright 2023 ForgeFlow S.L.
 # Copyright 2024 OERP Canada <https://www.oerp.ca>
+# Copyright 2026 ACSONE SA/NV (<http://acsone.eu>)
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 {
     "name": "Sale Validity Auto-Cancel",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "category": "Sales",
     "license": "LGPL-3",
     "summary": "Automatically cancel quotations after validity period.",

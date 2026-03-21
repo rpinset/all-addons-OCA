@@ -88,9 +88,9 @@ msgstr "Contextwaarde"
 
 #. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__context
-msgid ""
-"Context dictionary as Python expression, empty by default (Default: {})"
-msgstr "Context dictionary als Python expressie, standaard leeg (Standaard: {})"
+msgid "Context dictionary as Python expression, empty by default (Default: {})"
+msgstr ""
+"Context dictionary als Python expressie, standaard leeg (Standaard: {})"
 
 #. module: report_pdf_form
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__create_uid
@@ -116,8 +116,8 @@ msgstr "Schermnaam"
 #. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form_field__odoo_field_value
 msgid ""
-"Dot-separated path to field from the record, e.g. partner_id.name, or python"
-" code"
+"Dot-separated path to field from the record, e.g. partner_id.name, or python "
+"code"
 msgstr ""
 "Pad naar veld gescheiden door punten, bijv. partner_id.name, of python code"
 
@@ -152,6 +152,11 @@ msgid "Encoding to be applied to the generated CSV file. e.g. cp932"
 msgstr ""
 "Codering die moet worden toegepast op het gegenereerde CSV-bestand, bijv. "
 "cp932"
+
+#. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__text_encoding
+msgid "Encoding to be applied to the generated Text file. e.g. cp932"
+msgstr ""
 
 #. module: report_pdf_form
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__xml_id
@@ -219,6 +224,13 @@ msgstr ""
 "foutmelding wanneer een teken niet kan worden gecodeerd."
 
 #. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__text_encode_error_handling
+msgid ""
+"If nothing is selected, text export will fail with an error message when "
+"there is a character that fail to be encoded."
+msgstr ""
+
+#. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__multi
 msgid ""
 "If set to true, the action will not be displayed on the right toolbar of a "
@@ -229,8 +241,7 @@ msgstr ""
 
 #. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__domain
-msgid ""
-"If set, the action will only appear on records that matches the domain."
+msgid "If set, the action will only appear on records that matches the domain."
 msgstr ""
 "Indien ingesteld, verschijnt de actie alleen bij records die aan het domein "
 "voldoen."
@@ -254,6 +265,11 @@ msgstr "Laatst bijgewerkt door"
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form_variable__write_date
 msgid "Last Updated on"
 msgstr "Laatst bijgewerkt op"
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__line_ending
+msgid "Line Ending"
+msgstr ""
 
 #. module: report_pdf_form
 #: model:ir.model,name:report_pdf_form.model_report_pdf_form_field
@@ -299,8 +315,8 @@ msgstr "Op meerdere doc."
 #. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__help
 msgid ""
-"Optional help text for the users with a description of the target view, such"
-" as its usage and purpose."
+"Optional help text for the users with a description of the target view, such "
+"as its usage and purpose."
 msgstr ""
 "Optionele helptekst voor de gebruikers met een beschrijving van de "
 "doelweergave, zoals het gebruik en het doel ervan."
@@ -405,6 +421,13 @@ msgid "Save as Attachment Prefix"
 msgstr "Opslaan als bijlage voorvoegsel"
 
 #. module: report_pdf_form
+#: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__line_ending
+msgid ""
+"Select the type of line ending in case the report needs to be output with "
+"other line ending than 'LF'."
+msgstr ""
+
+#. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__binding_model_id
 msgid ""
 "Setting a value makes this action available in the sidebar for the given "
@@ -422,6 +445,16 @@ msgstr "Statische tekst"
 #: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__report_name
 msgid "Template Name"
 msgstr "Sjabloonnaam"
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__text_encode_error_handling
+msgid "Text Encode Error Handling"
+msgstr ""
+
+#. module: report_pdf_form
+#: model:ir.model.fields,field_description:report_pdf_form.field_report_pdf_form__text_encoding
+msgid "Text Encoding"
+msgstr ""
 
 #. module: report_pdf_form
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__report_file
@@ -454,7 +487,8 @@ msgstr "Er zijn twee manieren om een waarde uit het object op te halen:"
 #: model:ir.model.fields,help:report_pdf_form.field_report_pdf_form__footer_html
 msgid ""
 "This HTML will be displayed in the footer of this report.\n"
-"It's recommended to change Paper Format to a new one that fits correctly to this report by adjusting 'Bottom Margin (mm)' accordingly."
+"It's recommended to change Paper Format to a new one that fits correctly to "
+"this report by adjusting 'Bottom Margin (mm)' accordingly."
 msgstr ""
 "Deze HTML wordt weergegeven in de voettekst van dit rapport.\n"
 "Het wordt aanbevolen om het papierformaat te wijzigen naar een formaat dat "

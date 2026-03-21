@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-30 21:06+0000\n"
+"PO-Revision-Date: 2026-03-19 16:48+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: report_qweb_field_option
 #: model:ir.model.fields,help:report_qweb_field_option.field_qweb_field_options__field_options
 msgid ""
-"A string representation of a dictionary to specify field formatting options. Examples:\n"
+"A string representation of a dictionary to specify field formatting options. "
+"Examples:\n"
 "{'widget': 'date'}\n"
 "{'widget': 'monetary'}\n"
 "{'widget': 'contact', 'fields': ['name', 'phone']}"
@@ -66,6 +67,11 @@ msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: report_qweb_field_option
+#: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__domain
+msgid "Domain"
+msgstr "Dominio"
+
+#. module: report_qweb_field_option
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__field_id
 msgid "Field"
 msgstr "Campo"
@@ -93,18 +99,22 @@ msgstr "ID"
 #. module: report_qweb_field_option
 #. odoo-python
 #: code:addons/report_qweb_field_option/models/qweb_field_options.py:0
-#, python-format
+msgid ""
+"Invalid domain format: %(domain)s.\n"
+"Error: %(error)s"
+msgstr ""
+"Formato dominio errato: %(domain)s.\n"
+"Errore: %(error)s"
+
+#. module: report_qweb_field_option
+#. odoo-python
+#: code:addons/report_qweb_field_option/models/qweb_field_options.py:0
 msgid ""
 "Invalid string for the Options field: %(field_options)s.\n"
 "Error: %(error)s"
 msgstr ""
 "Stringa non valida per il campo opzioni: %(field_options)s.\n"
 "Errore: %(error)s"
-
-#. module: report_qweb_field_option
-#: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: report_qweb_field_option
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__write_uid
@@ -128,6 +138,24 @@ msgid "Model Name"
 msgstr "Nome modello"
 
 #. module: report_qweb_field_option
+#: model:ir.model.fields,help:report_qweb_field_option.field_qweb_field_options__domain
+msgid ""
+"Optional domain for additional filtering conditions.\n"
+"This is evaluated in addition to UoM/Currency conditions.\n"
+"Examples:\n"
+"[('secondary_uom_id', '=', 1)]\n"
+"[('secondary_uom_id.name', '=', 'Box')]\n"
+"[('state', 'in', ['sale', 'done'])]"
+msgstr ""
+"Dominio opzionale per ulteriori condizioni di filtraggio.\n"
+"Questo viene valutato in aggiunta alle condizioni relative all'unità di "
+"misura/valuta.\n"
+"Esempi:\n"
+"[('secondary_uom_id', '=', 1)]\n"
+"[('secondary_uom_id.name', '=', 'Box')]\n"
+"[('state', 'in', ['sale', 'done'])]"
+
+#. module: report_qweb_field_option
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__field_options
 msgid "Options"
 msgstr "Opzioni"
@@ -135,7 +163,6 @@ msgstr "Opzioni"
 #. module: report_qweb_field_option
 #. odoo-python
 #: code:addons/report_qweb_field_option/models/qweb_field_options.py:0
-#, python-format
 msgid "Options must be a dictionary, but got %s"
 msgstr "Le opzioni devono essere un dizionario, ma sono %s"
 
@@ -165,3 +192,6 @@ msgstr "UdM"
 #: model:ir.model.fields,field_description:report_qweb_field_option.field_qweb_field_options__uom_field_id
 msgid "UoM Field"
 msgstr "Campo UdM"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
