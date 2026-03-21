@@ -17,8 +17,8 @@ msgstr ""
 #: code:addons/product_pricelist_discount_by_range/models/product_pricelist_item.py:0
 #, python-format
 msgid ""
-"%(base)s from %(min)s to %(max)s: %(discount)s%% discount and %(surcharge)s extra fee\n"
-" - Example: %(amount)s * %(discount_charge)s + %(price_surcharge)s → %(total_amount)s \n"
+"%(base)s from %(min)s to %(max)s: %(discount)s%% discount and %(price_surcharge)s extra fee and %(surcharge)s surcharge\n"
+" - Example: %(amount)s * %(discount_charge)s + %(price_surcharge)s + %(surcharge)s → %(total_amount)s \n"
 msgstr ""
 
 #. module: product_pricelist_discount_by_range
@@ -125,6 +125,12 @@ msgstr ""
 #. module: product_pricelist_discount_by_range
 #: model:ir.model.fields.selection,name:product_pricelist_discount_by_range.selection__product_pricelist_item__discount_type__simple
 msgid "Simple"
+msgstr ""
+
+#. module: product_pricelist_discount_by_range
+#: model:ir.model.fields,field_description:product_pricelist_discount_by_range.field_product_pricelist_item_discount_range__surcharge
+#: model_terms:ir.ui.view,arch_db:product_pricelist_discount_by_range.product_pricelist_supplier_item_form_view
+msgid "Surcharge"
 msgstr ""
 
 #. module: product_pricelist_discount_by_range

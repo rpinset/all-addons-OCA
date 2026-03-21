@@ -1211,16 +1211,11 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit e8d5480cb7af847d3dfeef03b5271c1e6241f111
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Tue Mar 3 14:28:05 2026 +0000
+commit 051560ed31b87e38663ee221d6e86bbe0d40dc28
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 19 12:06:12 2026 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 95.8% (23 of 24 strings)
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_discount_by_range
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_discount_by_range/es/
+    [BOT] post-merge updates
 
 
 ## product-kitting
