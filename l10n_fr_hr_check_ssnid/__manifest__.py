@@ -4,7 +4,7 @@
 
 {
     "name": "French Localization - Check Social Security Number",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Human Resources",
     "development_status": "Mature",
     "license": "AGPL-3",
@@ -13,7 +13,7 @@
     "maintainers": ["alexis-via"],
     "website": "https://github.com/OCA/l10n-france",
     "depends": ["hr"],
-    "external_dependencies": {"python": ["stdnum"]},
+    "external_dependencies": {"python": ["python-stdnum"]},
     "data": ["views/hr_employee.xml"],
     "installable": True,
 }

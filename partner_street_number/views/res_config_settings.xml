@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <div name="contacts_setting_container" position="inside">
+                <div
+                    class="col-xs-12 col-md-6 o_setting_box"
+                    id="partner_street_number"
+                >
+                                    <div class="o_setting_left_pane">
+                                        <field name="group_partner_street_number" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="group_partner_street_number" />
+                                        <div class="text-muted">
+                                            This allows you to manually edit the parts of a street name
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+        </field>
+    </record>
+</data>

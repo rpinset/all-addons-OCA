@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <template id="template_test_result">
+        <p>Parsed split fields:</p>
+        <dl>
+            <dt>street_name</dt>
+            <dd t-out="partner_regex.street_name" />
+            <dt>street_number</dt>
+            <dd t-out="partner_regex.street_number" />
+            <dt>street_number2</dt>
+            <dd t-out="partner_regex.street_number2" />
+        </dl>
+        <p>Formatted street name: <span
+                class="fw-bold"
+                t-out="partner_format.street"
+            /></p>
+    </template>
+</odoo>

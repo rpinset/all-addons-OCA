@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="view_partner_street_number_wizard_form" model="ir.ui.view">
+        <field name="model">partner.street.number.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <div>
+                    Select which field(s) to update:
+                </div>
+                <field name="direction" widget="radio" />
+                <footer>
+                    <button
+                        name="action_set"
+                        type="object"
+                        string="Update partners"
+                        class="btn-primary"
+                    />
+                    <button special="cancel" string="Cancel" class="btn-secondary" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_model_action" model="ir.actions.act_window">
+        <field name="name">Update partner street fields</field>
+        <field name="res_model">partner.street.number.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="base.model_res_partner" />
+    </record>
+</data>

@@ -1,0 +1,7 @@
+.o_form_view .o_form_editable .o_row > div.o_address_street_name {
+    flex: 5 1 auto;
+}
+.o_form_view .o_form_editable .o_row > div.o_address_street_number,
+.o_form_view .o_form_editable .o_row > div.o_address_street_number2 {
+    flex: 1 1 auto;
+}

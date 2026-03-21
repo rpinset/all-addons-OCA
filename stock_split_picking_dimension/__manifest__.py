@@ -5,12 +5,11 @@
     "name": "Stock Split Picking Dimension",
     "summary": """Split a picking in two not transferred pickings to ensure that the """
     """first one doesn't exceed given dimensions (nbr lines, volume, weight)""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.2.0.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "depends": [
-        "delivery",  # weight on picking
         "stock_picking_volume",  # OCA/stock-logistics-warehouse
         "stock_split_picking",  # OCA/stock-logistics-worflow
     ],

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="view_country_form" model="ir.ui.view">
+        <field name="model">res.country</field>
+        <field name="inherit_id" ref="base.view_country_form" />
+        <field name="arch" type="xml">
+            <group name="advanced_address_formatting" position="after">
+                <group name="partner_street_number" string="Street names">
+                    <field
+                        name="partner_street_number_regex"
+                        placeholder="(?P&lt;street_name&gt;...)"
+                    />
+                    <field
+                        name="partner_street_number_format"
+                        placeholder="{{object.street_name}}"
+                    />
+                    <field
+                        name="partner_street_number_test_value"
+                        class="oe_edit_only"
+                    />
+                    <field
+                        name="partner_street_number_test_result"
+                        nolabel="1"
+                        colspan="2"
+                        attrs="{'invisible': [('partner_street_number_test_value', '=', False)]}"
+                        class="oe_edit_only"
+                    />
+                    <div
+                        colspan="2"
+                        attrs="{'invisible': [('partner_street_number_test_value', '!=', False)]}"
+                        class="oe_edit_only"
+                    >
+                        Fill in a full street above to test your regex and format expression.
+                    </div>
+                </group>
+            </group>
+        </field>
+    </record>
+</data>

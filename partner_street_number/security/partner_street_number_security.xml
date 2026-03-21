@@ -1,0 +1,5 @@
+<odoo>
+    <record id="group_edit_split_street_name" model="res.groups">
+        <field name="name">Use split fields for street name in partner form</field>
+    </record>
+</odoo>

@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 12eec4ebad4ae450cd25fe22600b86d639bbdc68
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 06:20:25 2026 +0000
+commit 8f09f74dc0bff3e1aeba7f91da3cd792767a3fde
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 19 15:45:31 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: account-analytic-16.0/account-analytic-16.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-16-0/account-analytic-16-0-account_analytic_parent/sl/
+    Translation: account-analytic-16.0/account-analytic-16.0-analytic_amount_security
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-16-0/account-analytic-16-0-analytic_amount_security/it/
 
 
 ## account-budgeting
@@ -392,9 +392,9 @@ Date:   Tue Feb 17 07:36:57 2026 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 35320badb912c67f6b72a77729988a325d97e12b
+commit 957fe8e6a59a030566ba94185a3c3b22849e3bd6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 13 20:20:46 2026 +0000
+Date:   Thu Mar 19 13:48:53 2026 +0000
 
     [BOT] post-merge updates
 
@@ -470,16 +470,16 @@ Date:   Mon Dec 8 13:08:22 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 830d8231333c226a68fd6a7aa621a6f16c742210
+commit 1237fc6ad9d24265ab22946cb910f947b1699be9
 Author: risto42 <richard.palo@free.fr>
-Date:   Tue Mar 17 15:12:06 2026 +0000
+Date:   Wed Mar 18 06:16:23 2026 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 95.2% (20 of 21 strings)
     
-    Translation: knowledge-16.0/knowledge-16.0-document_page_project
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-16-0/knowledge-16-0-document_page_project/fr/
+    Translation: knowledge-16.0/knowledge-16.0-document_knowledge
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-16-0/knowledge-16-0-document_knowledge/fr/
 
 
 ## dms
@@ -507,11 +507,16 @@ Date:   Fri Feb 27 08:34:42 2026 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit cc3ccc3c615307098431e5c87b4fc524681ceb11
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 17 14:23:22 2026 +0000
+commit 430869a3d0482583f36f369196b83256bc0e351f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 19 16:09:50 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: edi-16.0/edi-16.0-purchase_order_ubl
+    Translate-URL: https://translation.odoo-community.org/projects/edi-16-0/edi-16-0-purchase_order_ubl/it/
 
 
 ## field-service
@@ -786,9 +791,9 @@ Date:   Sun Feb 2 19:18:26 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 0f931fbfe859d24552953dfe072312b82a5a2fea
+commit c448250ea8ade214f37cf9effd66f65ae5ecf8f8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 11 17:12:55 2026 +0000
+Date:   Fri Mar 20 23:19:51 2026 +0000
 
     [BOT] post-merge updates
 
@@ -971,14 +976,11 @@ Date:   Sun Feb 2 19:41:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit aa942b581eea9c0afb97a0c1a5a2bf1611df4d16
-Merge: 1cb79e3f9 3a279eb6d
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Thu Mar 12 18:10:54 2026 +0100
+commit ceb39626e60f237d2c62f27831bff174d0a90612
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 19 12:16:23 2026 +0000
 
-    Merge pull request #4899 from Tecnativa/16.0-ou-imp-l10n_es_intrastat_report
-    
-    [16.0] [OU-IMP] l10n_es_intrastat_report: Adapt attachment/messages/followers records
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1085,11 +1087,16 @@ Date:   Thu Mar 5 09:16:56 2026 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 4046654210ef0b60717b2c4d5be8a82c9add01f3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 11 10:43:03 2026 +0000
+commit 81553d849d54c8eecdfef65a3895999c86f49f92
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 20 08:22:43 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-workflow-16.0/stock-logistics-workflow-16.0-stock_split_picking
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-16-0/stock-logistics-workflow-16-0-stock_split_picking/
 
 
 ## stock-logistics-tracking
@@ -1117,11 +1124,11 @@ Date:   Wed Mar 4 11:07:02 2026 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 90cc97816542d49eac614580cd1296a252e3ca99
-Author: Diego Paradeda <diego.paradeda@kmee.com.br>
-Date:   Mon Mar 16 13:01:52 2026 -0300
+commit 7decee34450471ec3d9abd391a6e83a33f37aaff
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 19 17:00:02 2026 +0000
 
-    [FIX] Update copier template
+    [BOT] post-merge updates
 
 
 ## rma
@@ -1135,18 +1142,23 @@ Date:   Tue Mar 17 08:15:21 2026 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 503a1afdfad34f8efc169b9b7ef0c531fee873d1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 5 08:36:25 2026 +0000
+commit 3fa136f8cece866bc800905f524830b70941ae36
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 19 16:10:09 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: ddmrp-16.0/ddmrp-16.0-ddmrp_sale_order_line_date
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-16-0/ddmrp-16-0-ddmrp_sale_order_line_date/it/
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 17bbcf0f2bb38adef8864eb404a214c1537e2dc1
+commit 5b64d3a7fd8c26c340afa6dbaf7f08fe2c76a1ce
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 12 17:10:04 2026 +0000
+Date:   Fri Mar 20 15:54:37 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1190,9 +1202,9 @@ Date:   Wed Feb 4 05:33:22 2026 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 0ca5602d8b17ba48cf80d28811d85d280cb3e1d8
+commit f5b6f7f437aef5f4235d1a367782c951d4921761
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 27 08:11:52 2026 +0000
+Date:   Sat Mar 21 11:29:56 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1369,16 +1381,16 @@ Date:   Wed Mar 11 07:39:37 2026 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 12ef9502cc3b783931f0e5d30eadc8901eb6f681
-Author: Vincent Hatakeyama <vincent+github@hatakeyama.fr>
-Date:   Thu Mar 12 16:14:21 2026 +0000
+commit a4e92d167bd488b8c1605e3479480db64279faf6
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Mar 19 16:00:16 2026 +0000
 
-    Translated using Weblate (French)
+    Update translation files
     
-    Currently translated at 98.0% (49 of 50 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: storage-16.0/storage-16.0-fs_storage
-    Translate-URL: https://translation.odoo-community.org/projects/storage-16-0/storage-16-0-fs_storage/fr/
+    Translate-URL: https://translation.odoo-community.org/projects/storage-16-0/storage-16-0-fs_storage/
 
 
 ## search-engine
@@ -1646,14 +1658,11 @@ Date:   Sun Feb 9 19:13:59 2025 +0000
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 56455209923ab65972569fb46ef45b109d5c7f3f
-Merge: 7f4c5b0 f9bec84
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Mon Mar 2 11:56:59 2026 +0100
+commit 363ab6c72e90202e94c328a35718acf266281472
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 20 13:03:00 2026 +0000
 
-    Merge pull request #76 from thienvh332/16.0-upgrade-project-template
-    
-    [UPD] templates: update from OCA repo template
+    [BOT] post-merge updates
 
 
 ## vertical-travel
