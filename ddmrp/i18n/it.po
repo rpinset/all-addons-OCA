@@ -72,6 +72,11 @@ msgid "Adds chatter and activities to stock buffers."
 msgstr "Aggiunge messaggi e attività ai buffer di materiale."
 
 #. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__demand_stock_move_ids
+msgid "All demand stock moves for this buffer"
+msgstr ""
+
+#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
 msgid ""
 "Apply adjustments to dynamically alter stock buffers to respond to planned "
@@ -508,6 +513,11 @@ msgid "Demand"
 msgstr "Fabbisogno"
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__demand_stock_move_ids
+msgid "Demand Stock Move"
+msgstr ""
+
+#. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__display_name
@@ -625,6 +635,7 @@ msgstr "Orizzonte futuro"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_future
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method_source_future
 msgid "Future Source"
 msgstr "Origine futura"
 
@@ -786,11 +797,13 @@ msgstr "In arrivo all'interno di DLT"
 
 #. module: ddmrp
 #: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_future
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__adu_calculation_method_source_future
 msgid "Information source used for future calculation."
 msgstr "Origine informazione utilizzata per calcoli futuri."
 
 #. module: ddmrp
 #: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_past
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__adu_calculation_method_source_past
 msgid "Information source used for past calculation."
 msgstr "Origine informazione utitlizzata per calcoli del passato."
 
@@ -1134,6 +1147,7 @@ msgstr "Orizzonte passato"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_past
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method_source_past
 msgid "Past Source"
 msgstr "Sorgente passata"
 
@@ -1337,6 +1351,11 @@ msgstr "Il multiplo q.tà deve essere maggiore o uguale a zero."
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
 msgid "Qualified Demand"
 msgstr "Fabbisogno qualificato"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_move__qualified_demand_buffer_ids
+msgid "Qualified Demand For Buffers"
+msgstr ""
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qualified_demand_mrp_move_ids
@@ -1760,6 +1779,11 @@ msgstr "Consumo annuale movimenti di magazzino"
 #: model:ir.model,name:ddmrp.model_stock_rule
 msgid "Stock Rule"
 msgstr "Regola di giacenza"
+
+#. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__qualified_demand_stock_move_ids
+msgid "Stock moves considered qualified demand for this buffer"
+msgstr ""
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_stock_buffer_capacity_limit

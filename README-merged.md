@@ -2486,7 +2486,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display prices with(out) taxes in eCommerce, complementing normal mode
-[website_sale_cart_add_product_xlsx_csv](website_sale_cart_add_product_xlsx_csv/) | 17.0.1.0.0 |  | Adds button to import xlsx or csv in website cart
+[website_sale_cart_add_product_xlsx_csv](website_sale_cart_add_product_xlsx_csv/) | 17.0.1.0.1 |  | Adds button to import xlsx or csv in website cart
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.1 |  | Skip payment for logged users in checkout process
 [website_sale_empty_cart](website_sale_empty_cart/) | 17.0.1.0.0 |  | Adds a button in the website cart to empty all
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.0 |  | Hide any Product Categories that are empty
@@ -4966,10 +4966,11 @@ addon | version | maintainers | summary
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
+[l10n_es_facturae_literal_legal](l10n_es_facturae_literal_legal/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Literal Legal Texts
 [l10n_es_facturae_special_payment](l10n_es_facturae_special_payment/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Special Payment
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.1.2 |  | IGIC (Impuesto General Indirecto Canario)
 [l10n_es_igic_reav](l10n_es_igic_reav/) | 17.0.1.0.3 |  | Aplicación REAV en la localización canaria
-[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.1.0 |  | Spanish Intrastat Product Declaration
+[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.1.1 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 17.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.7 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
@@ -5904,7 +5905,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.6.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.8.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.2.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.1 |  | Run DDMRP Buffer Calculation as jobs
@@ -7093,7 +7094,7 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_forward](mail_forward/) | 17.0.2.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
 [mail_gateway](mail_gateway/) | 17.0.1.0.6 |  | Base module for gateway communications
-[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.1.2 |  | Set a gateway for whatsapp
+[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.1.3 |  | Set a gateway for whatsapp
 [mail_history_mark_unread](mail_history_mark_unread/) | 17.0.1.0.0 |  | Add 'Mark as Unread' action to messages in History mailbox
 [mail_layout_force](mail_layout_force/) | 17.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
@@ -7750,7 +7751,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 17.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 17.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.4.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.4.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 17.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
@@ -8638,7 +8639,7 @@ addon | version | maintainers | summary
 [web_widget_open_tab](web_widget_open_tab/) | 17.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | <a href='https://github.com/robyf70'><img src='https://github.com/robyf70.png' width='32' height='32' style='border-radius:50%;' alt='robyf70'/></a> | Allow to draw plotly charts.
 [web_widget_popover](web_widget_popover/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Render an icon that displays the field content in a popover
-[web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.1.0.1 |  | unify the product and name into a single column
+[web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.2.0.0 |  | unify the product and name into a single column
 [web_widget_section_and_note_text_scrollable](web_widget_section_and_note_text_scrollable/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Make the text field of Section and Note widget scrollable
 [web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.2.0.1 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Show list fields as a matrix
