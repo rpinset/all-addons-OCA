@@ -266,11 +266,14 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 33bcad90198577ef8bb7e0324a1b011ac54b1930
+commit 602bb0dbc737a065e4255bc780eeb3d344d4b222
+Merge: 33bcad90 c75f5d22
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 29 19:06:13 2025 +0000
+Date:   Mon Mar 23 12:48:07 2026 +0000
 
-    [BOT] post-merge updates
+    Merge PR #912 into 14.0
+    
+    Signed-off-by guewen
 
 
 ## connector-accountedge
