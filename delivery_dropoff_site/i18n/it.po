@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-24 16:25+0000\n"
+"PO-Revision-Date: 2026-03-24 11:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: delivery_dropoff_site
 #: model:ir.model.fields,field_description:delivery_dropoff_site.field_dropoff_site__supplier_invoice_count
@@ -492,6 +492,11 @@ msgid "Formatted Email"
 msgstr "Email formattata"
 
 #. module: delivery_dropoff_site
+#: model:ir.model.fields,field_description:delivery_dropoff_site.field_dropoff_site__global_location_number
+msgid "GLN"
+msgstr "NUG"
+
+#. module: delivery_dropoff_site
 #: model:ir.model.fields,field_description:delivery_dropoff_site.field_dropoff_site__partner_latitude
 msgid "Geo Latitude"
 msgstr "Latitudine geografica"
@@ -510,6 +515,11 @@ msgstr "Geolocalizza"
 #: model:ir.model.fields,field_description:delivery_dropoff_site.field_dropoff_site__date_localization
 msgid "Geolocation Date"
 msgstr "Data geolocalizzazione"
+
+#. module: delivery_dropoff_site
+#: model:ir.model.fields,help:delivery_dropoff_site.field_dropoff_site__global_location_number
+msgid "Global Location Number"
+msgstr "Numero ubicazione globale"
 
 #. module: delivery_dropoff_site
 #: model:ir.model.fields,field_description:delivery_dropoff_site.field_dropoff_site__has_message
@@ -815,8 +825,8 @@ msgstr "Tasso puntualità consegna"
 #: model:ir.model.fields,help:delivery_dropoff_site.field_dropoff_site__on_time_rate
 msgid ""
 "Over the past x days; the number of products received on time divided by the "
-"number of ordered products.x is either the System Parameter purchase_stock."
-"on_time_delivery_days or the default 365"
+"number of ordered products.x is either the System Parameter "
+"purchase_stock.on_time_delivery_days or the default 365"
 msgstr ""
 "Negli ultimi X giorni; il numero di prodotti ricevuti puntualmente diviso "
 "per il numero di prodotti ordinati. X è il parametro di sistema "

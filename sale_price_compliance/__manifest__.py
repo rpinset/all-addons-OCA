@@ -4,7 +4,7 @@
 {
     "name": "Sale Price Compliance",
     "summary": "Visual price compliance based on product, category and company thresholds",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "development_status": "Alpha",
     "category": "Sales/Sales",
     "website": "https://github.com/OCA/sale-workflow",

@@ -4,7 +4,7 @@
 {
     "name": "Sale Seasonality",
     "summary": """Sale Seasonality""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "Akretion,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-workflow",

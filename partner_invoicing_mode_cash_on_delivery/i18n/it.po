@@ -1,0 +1,62 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_invoicing_mode_cash_on_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-25 08:45+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model.fields,field_description:partner_invoicing_mode_cash_on_delivery.field_account_payment_mode__auto_validate_invoice_cash_on_delivery
+msgid "Auto Validate Invoice Cash On Delivery"
+msgstr "Valida automaticamente la fattura al pagamento alla consegna"
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model.fields,field_description:partner_invoicing_mode_cash_on_delivery.field_stock_picking__cash_on_delivery_invoice_ids
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_mode_cash_on_delivery.view_picking_form
+msgid "COD Invoices"
+msgstr "Fatture CAC"
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:account.payment.mode,name:partner_invoicing_mode_cash_on_delivery.payment_mode_cash_on_delivery
+#: model:ir.model.fields,field_description:partner_invoicing_mode_cash_on_delivery.field_account_payment_mode__cash_on_delivery
+msgid "Cash On Delivery"
+msgstr "Contanti alla consegna"
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model.fields,help:partner_invoicing_mode_cash_on_delivery.field_account_payment_mode__auto_validate_invoice_cash_on_delivery
+msgid ""
+"Check this if you want Cash on Delivery deliveries to validate automatically"
+" generated invoices."
+msgstr ""
+"Selezionare questa opzione se si vuole che le consegne con contanti alla "
+"consegna validino automaticamente le fatture generate."
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model.fields,help:partner_invoicing_mode_cash_on_delivery.field_account_payment_mode__cash_on_delivery
+msgid ""
+"Check this if you want to identify Cash On Delivery invoices on stock "
+"pickings."
+msgstr ""
+"Selezionare questa opzione se si vuole identificare le fatture con contanti "
+"alla consegna sui prelievi di magazzino."
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model,name:partner_invoicing_mode_cash_on_delivery.model_account_payment_mode
+msgid "Payment Modes"
+msgstr "Modi di pagamento"
+
+#. module: partner_invoicing_mode_cash_on_delivery
+#: model:ir.model,name:partner_invoicing_mode_cash_on_delivery.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"

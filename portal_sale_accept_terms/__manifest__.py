@@ -2,7 +2,7 @@
 #  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Portal Sale accept Terms",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Sale",
     "author": "Aion Tech, Odoo Community Association (OCA)",
     "maintainers": [

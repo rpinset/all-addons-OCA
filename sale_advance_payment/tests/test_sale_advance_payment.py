@@ -560,3 +560,48 @@ class TestSaleAdvancePayment(common.TransactionCase):
             }
         )._create_payments()
         self.assertEqual(self.sale_order_1.amount_residual, 3600)
+
+    def test_06_sale_advance_payment_invoice_refund(self):
+        self.assertEqual(self.sale_order_1.amount_residual, 3600)
+        # Confirm Sale Order
+        self.sale_order_1.action_confirm()
+
+        # Create Invoice
+        invoice = self.sale_order_1._create_invoices()
+        invoice.action_post()
+        self.assertEqual(self.sale_order_1.amount_residual, 3600)
+
+        refund = (
+            self.env["account.move.reversal"]
+            .with_context(
+                active_model="account.move",
+                active_ids=invoice.ids,
+            )
+            .create(
+                {
+                    "reason": "no reason",
+                    "refund_method": "refund",
+                    "journal_id": invoice.journal_id.id,
+                }
+            )
+            .reverse_moves()
+        )
+        refund = self.env["account.move"].browse(refund["res_id"])
+        self.assertEqual(len(refund.invoice_line_ids), 3)
+        refund.invoice_line_ids[0].unlink()
+        self.assertEqual(len(refund.invoice_line_ids), 2)
+        refund.action_post()
+        self.assertEqual(invoice.payment_state, "not_paid")
+        self.assertEqual(refund.payment_state, "not_paid")
+        self.assertEqual(self.sale_order_1.amount_residual, 3600)
+
+        self.env["account.payment.register"].with_context(
+            active_model="account.move", active_ids=invoice.ids
+        ).create(
+            {
+                "payment_date": fields.Date.today(),
+                "amount": 600.0,
+            }
+        ).action_create_payments()
+        self.assertEqual(invoice.payment_state, "partial")
+        self.assertEqual(self.sale_order_1.amount_residual, 3000)

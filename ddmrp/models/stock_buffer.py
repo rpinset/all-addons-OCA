@@ -1096,6 +1096,12 @@ class StockBuffer(models.Model):
     adu_calculation_method_type = fields.Selection(
         related="adu_calculation_method.method",
     )
+    adu_calculation_method_source_past = fields.Selection(
+        related="adu_calculation_method.source_past",
+    )
+    adu_calculation_method_source_future = fields.Selection(
+        related="adu_calculation_method.source_future",
+    )
     adu_fixed = fields.Float(
         string="Fixed ADU",
         default=1.0,
@@ -1174,8 +1180,16 @@ class StockBuffer(models.Model):
         digits="Product Unit of Measure",
         readonly=True,
     )
+    demand_stock_move_ids = fields.Many2many(
+        comodel_name="stock.move",
+        help="All demand stock moves for this buffer",
+    )
     qualified_demand_stock_move_ids = fields.Many2many(
         comodel_name="stock.move",
+        relation="stock_buffer_qualified_demand_stock_move_rel",
+        column1="stock_buffer_id",
+        column2="stock_move_id",
+        help="Stock moves considered qualified demand for this buffer",
     )
     qualified_demand_mrp_move_ids = fields.Many2many(
         comodel_name="mrp.move",
@@ -1663,6 +1677,7 @@ class StockBuffer(models.Model):
         for rec in self:
             qualified_demand = 0.0
             moves = rec._search_stock_moves_qualified_demand()
+            rec.demand_stock_move_ids = moves
             mrp_moves = rec._search_mrp_moves_qualified_demand()
             demand_by_days = rec._get_demand_by_days(moves)
             mrp_moves_by_days = rec._get_qualified_mrp_moves(mrp_moves)
@@ -1674,7 +1689,7 @@ class StockBuffer(models.Model):
                 ):
                     qualified_demand += demand_by_days.get(date, 0.0)
                 else:
-                    moves = moves.filtered(lambda x: x.date != date)
+                    moves = moves.filtered(lambda x: x.date.date() != date)
                 if (
                     mrp_moves_by_days.get(date, 0.0) >= rec.order_spike_threshold
                     or date <= today
@@ -1903,8 +1918,11 @@ class StockBuffer(models.Model):
 
     def action_view_qualified_demand_moves(self):
         result = self.env["ir.actions.actions"]._for_xml_id("stock.stock_move_action")
-        result["context"] = {}
-        result["domain"] = [("id", "in", self.qualified_demand_stock_move_ids.ids)]
+        result["context"] = {
+            "search_default_qualified_demand_buffer_ids": self.name,
+            "show_reserved_availability": True,
+        }
+        result["domain"] = [("id", "in", self.demand_stock_move_ids.ids)]
         return result
 
     def action_view_qualified_demand_mrp(self):

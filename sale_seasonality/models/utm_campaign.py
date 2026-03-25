@@ -9,7 +9,7 @@ class UtmCampaign(models.Model):
 
     seasonality_id = fields.Many2one("seasonality", string="Seasonality")
     display_name = fields.Char(compute="_compute_display_name")
-    start_date = fields.Date(required=True)
+    start_date = fields.Date(required=True, default=fields.Date.context_today)
     end_date = fields.Date()
     start_date_year = fields.Integer(compute="_compute_start_date_year", store=True)
     display_seasonality_name = fields.Char(

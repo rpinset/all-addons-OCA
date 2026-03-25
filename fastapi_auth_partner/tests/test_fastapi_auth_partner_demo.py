@@ -48,6 +48,9 @@ class TestEndToEnd(tests.HttpCase):
         return self.url_open(
             "/fastapi_auth_partner_demo/auth/register",
             timeout=1000,
+            headers={
+                "Content-Type": "application/json",
+            },
             data=json.dumps(
                 {
                     "name": "Loriot",

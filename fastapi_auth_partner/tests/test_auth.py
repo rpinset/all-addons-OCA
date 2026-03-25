@@ -45,6 +45,9 @@ class CommonTestAuth(FastAPITransactionCase):
         with self._create_test_client() as test_client, self.new_mails() as new_mails:
             response: Response = test_client.post(
                 "/auth/register",
+                headers={
+                    "Content-Type": "application/json",
+                },
                 content=json.dumps(
                     {
                         "name": "Loriot",
@@ -59,6 +62,9 @@ class CommonTestAuth(FastAPITransactionCase):
     def _login(self, test_client, password="supersecret"):
         response: Response = test_client.post(
             "/auth/login",
+            headers={
+                "Content-Type": "application/json",
+            },
             content=json.dumps(
                 {
                     "login": "loriot@example.org",
@@ -105,6 +111,9 @@ class TestFastapiAuthPartner(CommonTestAuth, CommonTestAuthPartner):
         with self._create_test_client() as test_client, self.new_mails() as new_mails:
             response: Response = test_client.post(
                 "/auth/request_reset_password",
+                headers={
+                    "Content-Type": "application/json",
+                },
                 content=json.dumps({"login": "loriot@example.org"}),
             )
             self.assertEqual(response.status_code, status.HTTP_200_OK, response.text)
@@ -121,6 +130,9 @@ class TestFastapiAuthPartner(CommonTestAuth, CommonTestAuthPartner):
             token = str(new_mails.body).split("token=")[1].split('">')[0]
             response: Response = test_client.post(
                 "/auth/set_password",
+                headers={
+                    "Content-Type": "application/json",
+                },
                 content=json.dumps(
                     {
                         "password": "megasecret",
@@ -155,6 +167,9 @@ class TestFastapiAuthPartner(CommonTestAuth, CommonTestAuthPartner):
         with self._create_test_client() as test_client:
             response: Response = test_client.post(
                 "/auth/validate_email",
+                headers={
+                    "Content-Type": "application/json",
+                },
                 content=json.dumps({"token": token}),
             )
         self.assertEqual(response.status_code, status.HTTP_200_OK, response.text)

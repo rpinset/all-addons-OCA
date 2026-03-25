@@ -77,6 +77,8 @@ class TestStockPickingDeliveryLink(StockPickingDeliveryLinkCommonCase):
         self.assertEqual(ship, move3.picking_id)
         self.assertEqual(ship.carrier_id, carrier)
 
+        self.assertEqual(ship.ship_picking_id, ship)
+
     def test_ship_data_from_pack(self):
         move1 = self._create_move(
             self.product,

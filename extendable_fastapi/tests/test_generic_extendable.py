@@ -87,7 +87,11 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_user", content=pydantic_data.model_dump_json()
+                "/post_user",
+                headers={
+                    "Content-Type": "application/json",
+                },
+                content=pydantic_data.model_dump_json(),
             )
             self.assertEqual(response.status_code, 200)
             res = response.json()
@@ -115,7 +119,11 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_private_user", content=pydantic_data.model_dump_json()
+                "/post_private_user",
+                headers={
+                    "Content-Type": "application/json",
+                },
+                content=pydantic_data.model_dump_json(),
             )
             self.assertEqual(response.status_code, 200)
             user = response.json()
@@ -143,7 +151,11 @@ class TestUser(FastAPITransactionCase):
 
         with self._create_test_client(router=demo_pydantic_router) as test_client:
             response: Response = test_client.post(
-                "/post_private_user_generic", content=pydantic_data.model_dump_json()
+                "/post_private_user_generic",
+                headers={
+                    "Content-Type": "application/json",
+                },
+                content=pydantic_data.model_dump_json(),
             )
             self.assertEqual(response.status_code, 200)
             res = response.json()
@@ -204,5 +216,9 @@ class TestUser(FastAPITransactionCase):
             router=demo_pydantic_router
         ) as test_client:
             test_client.post(
-                "/post_private_customer", content=pydantic_data.model_dump_json()
+                "/post_private_customer",
+                headers={
+                    "Content-Type": "application/json",
+                },
+                content=pydantic_data.model_dump_json(),
             )

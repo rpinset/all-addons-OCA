@@ -33,6 +33,8 @@ class PriceComplianceThresholdTierMixin(models.AbstractModel):
     def _get_tier_selections(self, param, default_selection):
         """Get tier selections using config parameters"""
         icp_st = self.env["ir.config_parameter"].sudo().get_param(param)
+        if not icp_st:
+            return default_selection
         try:
             st_dict = safe_eval(icp_st)
         except Exception:

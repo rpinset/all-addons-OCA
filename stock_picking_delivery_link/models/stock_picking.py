@@ -35,6 +35,9 @@ class StockPicking(models.Model):
 
     def _get_ship_from_chain(self, done=False):
         """Returns the shipment related to the current operation."""
+        self.ensure_one()
+        if self.picking_type_id.code == "outgoing":
+            return self
         move_dest = get_first_move_dest(self.move_ids, done=done)
         while move_dest:
             picking = move_dest.picking_id

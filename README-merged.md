@@ -529,6 +529,7 @@ addon | version | maintainers | summary
 [account_tax_one_vat_sale](account_tax_one_vat_sale/) | 16.0.1.0.0 |  | Allow only the selection of one VAT Tax in purchase order line
 [partner_invoicing_mode](partner_invoicing_mode/) | 16.0.2.0.1 |  | Base module for handling multiple partner invoicing mode
 [partner_invoicing_mode_at_shipping](partner_invoicing_mode_at_shipping/) | 16.0.1.2.0 |  | Create invoices automatically when goods are shipped.
+[partner_invoicing_mode_cash_on_delivery](partner_invoicing_mode_cash_on_delivery/) | 16.0.1.0.0 |  | This module allows users to distinguish cash on delivery invoices in the automatic invoicing flow
 [partner_invoicing_mode_monthly](partner_invoicing_mode_monthly/) | 16.0.2.0.0 |  | Create invoices automatically on a monthly basis.
 [partner_last_invoice_date](partner_last_invoice_date/) | 16.0.1.0.1 |  | Add Last Invoice Date to Partners.
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 16.0.1.0.0 |  | Portal Accounting Personal Data Only
@@ -1890,7 +1891,7 @@ addon | version | maintainers | summary
 [account_invoice_pricelist_technical](account_invoice_pricelist_technical/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent technical pricelists from being selected on invoice forms
 [partner_contact_sale_info_propagation](partner_contact_sale_info_propagation/) | 16.0.1.0.1 |  | Propagate Salesperson and Sales Channel from Company to Contacts
 [partner_sale_pivot](partner_sale_pivot/) | 16.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
-[portal_sale_accept_terms](portal_sale_accept_terms/) | 16.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Portal Sale accept Terms
+[portal_sale_accept_terms](portal_sale_accept_terms/) | 16.0.1.0.1 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Portal Sale accept Terms
 [portal_sale_order_search](portal_sale_order_search/) | 16.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow customers to set and search their own order reference in portal
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 16.0.1.0.0 |  | Portal Sale Personal Data Only
 [pricelist_cache](pricelist_cache/) | 16.0.1.0.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
@@ -1898,7 +1899,7 @@ addon | version | maintainers | summary
 [product_form_sale_link](product_form_sale_link/) | 16.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_price_category](product_price_category/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Add Price Category field on product and allow to apply a pricelist on this field.
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 16.0.1.0.2 |  | Loads in every sale order line the customer code defined in the product
-[sale_advance_payment](sale_advance_payment/) | 16.0.1.1.1 |  | Allow to add advance payments on sales and then use them on invoices
+[sale_advance_payment](sale_advance_payment/) | 16.0.1.1.2 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_auto_remove_zero_quantity_lines](sale_auto_remove_zero_quantity_lines/) | 16.0.1.1.0 |  | On sale confirmation remove lines with zero quantities
 [sale_automatic_workflow](sale_automatic_workflow/) | 16.0.1.1.1 |  | Sale Automatic Workflow
@@ -1954,7 +1955,7 @@ addon | version | maintainers | summary
 [sale_order_line_move_to_optional](sale_order_line_move_to_optional/) | 16.0.1.0.0 |  | Move sale order line to optional products.
 [sale_order_line_multi_warehouse](sale_order_line_multi_warehouse/) | 16.0.1.0.0 |  | Sale Order Line Multi Warehouse
 [sale_order_line_no_print](sale_order_line_no_print/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Hide order lines in reports
-[sale_order_line_price_history](sale_order_line_price_history/) | 16.0.1.2.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
+[sale_order_line_price_history](sale_order_line_price_history/) | 16.0.1.2.2 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
 [sale_order_line_price_lock_by_pricelist](sale_order_line_price_lock_by_pricelist/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Lock price or discount edition depending on pricelist items
 [sale_order_line_product_attribute_values](sale_order_line_product_attribute_values/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Store Product Attribute Values in Sale Order Lines
 [sale_order_line_remove](sale_order_line_remove/) | 16.0.1.0.0 |  | Allows removal of sale order lines from confirmed orders if not invoiced or received
@@ -1971,7 +1972,7 @@ addon | version | maintainers | summary
 [sale_order_priority](sale_order_priority/) | 16.0.1.0.0 |  | Define priority on sale orders
 [sale_order_product_assortment](sale_order_product_assortment/) | 16.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 16.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Show product availability in sales order line product drop-down.
-[sale_order_product_picker](sale_order_product_picker/) | 16.0.1.2.1 |  | Sale Order Product Picker
+[sale_order_product_picker](sale_order_product_picker/) | 16.0.1.2.2 |  | Sale Order Product Picker
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 16.0.3.0.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
 [sale_order_product_recommendation_elaboration](sale_order_product_recommendation_elaboration/) | 16.0.2.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Include elaborations when generating or accepting sale order product recommendations
 [sale_order_product_recommendation_packaging_default](sale_order_product_recommendation_packaging_default/) | 16.0.3.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Quickly add recommended products to sale order by packagings
@@ -1992,8 +1993,8 @@ addon | version | maintainers | summary
 [sale_partner_pricelist](sale_partner_pricelist/) | 16.0.1.0.0 |  | Sale Partner Pricelist
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 16.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 16.0.1.1.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 16.0.3.0.0 |  | Sale planner calendar
-[sale_price_compliance](sale_price_compliance/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Visual price compliance based on product, category and company thresholds
+[sale_planner_calendar](sale_planner_calendar/) | 16.0.3.0.1 |  | Sale planner calendar
+[sale_price_compliance](sale_price_compliance/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Visual price compliance based on product, category and company thresholds
 [sale_pricelist_display_surcharge](sale_pricelist_display_surcharge/) | 16.0.1.0.0 |  | This module shows to the customer the surcharges if wanted.
 [sale_pricelist_from_commitment_date](sale_pricelist_from_commitment_date/) | 16.0.1.0.1 |  | Use sale order commitment date to compute line price from pricelist
 [sale_pricelist_item_advanced](sale_pricelist_item_advanced/) | 16.0.1.0.0 |  | Pricelist items menu
@@ -2010,12 +2011,12 @@ addon | version | maintainers | summary
 [sale_readonly_security](sale_readonly_security/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Readonly Security
 [sale_resource_booking](sale_resource_booking/) | 16.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
 [sale_restricted_qty](sale_restricted_qty/) | 16.0.1.0.0 | <a href='https://github.com/ashishhirapara'><img src='https://github.com/ashishhirapara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirapara'/></a> | Sale order min quantity
-[sale_seasonality](sale_seasonality/) | 16.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Sale Seasonality
+[sale_seasonality](sale_seasonality/) | 16.0.1.0.1 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Sale Seasonality
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 16.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 16.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_start_end_dates](sale_start_end_dates/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start date and end date on sale order lines
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 16.0.1.0.0 |  | Sale Stock Cancel Restriction
-[sale_stock_delivery_state](sale_stock_delivery_state/) | 16.0.1.0.1 |  | Change the way to compute the delivery state
+[sale_stock_delivery_state](sale_stock_delivery_state/) | 16.0.1.0.2 |  | Change the way to compute the delivery state
 [sale_stock_expiry_date_on_qty_at_date_widget](sale_stock_expiry_date_on_qty_at_date_widget/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Show next Expiry Date on Qty at Date Widget
 [sale_stock_line_sequence](sale_stock_line_sequence/) | 16.0.1.0.0 |  | Glue Module for Sale Order Line Sequence and Stock Picking Line Sequence
 [sale_stock_partner_warehouse](sale_stock_partner_warehouse/) | 16.0.1.0.0 |  | Allow to choose by default a warehouse on SO based on a Partner parameter
@@ -4744,8 +4745,9 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.6 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.1 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.7.1 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.8.0 |  | Emissione fatture elettroniche
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.3 |  | Dichiarazioni d'intento in fatturapa
+[l10n_it_fatturapa_out_dn](l10n_it_fatturapa_out_dn/) | 16.0.1.1.0 |  | DDT in fatture elettroniche
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 16.0.1.0.2 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.3 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
 [l10n_it_fatturapa_out_sp](l10n_it_fatturapa_out_sp/) | 16.0.1.0.0 |  | Scissione pagamenti in fatturapa
@@ -5455,12 +5457,12 @@ addon | version | maintainers | summary
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 16.0.1.0.1 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 16.0.1.2.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
-[l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
+[l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.1.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
 [l10n_es_facturae](l10n_es_facturae/) | 16.0.1.13.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.3.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | Creación de Facturae IGIC
-[l10n_es_igic](l10n_es_igic/) | 16.0.1.4.1 |  | IGIC (Impuesto General Indirecto Canario
+[l10n_es_igic](l10n_es_igic/) | 16.0.1.5.0 |  | IGIC (Impuesto General Indirecto Canario
 [l10n_es_igic_verifactu_oca](l10n_es_igic_verifactu_oca/) | 16.0.1.0.1 |  | Comunicación Veri*FACTU para IGIC
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.4.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_irnr](l10n_es_irnr/) | 16.0.1.2.1 |  | Retenciones IRNR (No residentes)
@@ -5943,6 +5945,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# delivery-carrier
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/delivery-carrier&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml?query=branch%3A16.0)
@@ -5950,8 +5955,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/delivery-carrier-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/delivery-carrier-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# delivery-carrier
 
 TODO: add repo description.
 
@@ -6007,7 +6010,7 @@ addon | version | maintainers | summary
 [partner_delivery_zone](partner_delivery_zone/) | 16.0.1.3.0 |  | This module allows to create partner delivery zones for physical products
 [sale_order_warehouse_from_delivery_carrier](sale_order_warehouse_from_delivery_carrier/) | 16.0.1.0.0 |  | Sale Order WH from Delivery Carrier
 [server_environment_delivery](server_environment_delivery/) | 16.0.1.0.0 |  | Configure prod environment for delivery carriers
-[stock_picking_delivery_link](stock_picking_delivery_link/) | 16.0.1.1.4 |  | Adds link to the delivery on all intermediate operations.
+[stock_picking_delivery_link](stock_picking_delivery_link/) | 16.0.1.2.0 |  | Adds link to the delivery on all intermediate operations.
 [stock_picking_delivery_package_type_domain](stock_picking_delivery_package_type_domain/) | 16.0.1.0.1 |  | This module will allow to extend the domain to filter package type selection in 'Choose Delivery Package' wizard
 [stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 16.0.1.1.1 |  | Show delivery cost in delivery slip and picking operations reports
 
@@ -6576,7 +6579,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 16.0.1.13.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 16.0.1.14.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.7.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.1 |  | Run DDMRP Buffer Calculation as jobs
@@ -6995,10 +6998,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.3.6.0 |  | A property management system
+[pms](pms/) | 16.0.4.0.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 16.0.2.0.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 16.0.2.1.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 16.0.1.2.0 |  | PMS AEAT SII Integration
 [pms_partner_identification](pms_partner_identification/) | 16.0.2.3.0 |  | Add identification models in pms
 [pms_partner_second_lastname](pms_partner_second_lastname/) | 16.0.2.2.0 |  | Add lastname2 in pms models
@@ -8291,10 +8294,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_report_to_label_printer](base_report_to_label_printer/) | 16.0.1.0.1 |  | Report to label printer
-[base_report_to_printer](base_report_to_printer/) | 16.0.1.5.1 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 16.0.1.5.2 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 16.0.1.0.0 |  | Report to printer - Mail extension
 [pingen](pingen/) | 16.0.1.1.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | pingen.com integration
-[pingen_env](pingen_env/) | 16.0.1.0.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> | pingen.com server environment
+[pingen_env](pingen_env/) | 16.0.1.1.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | pingen.com server environment
 [printer_zpl2](printer_zpl2/) | 16.0.1.1.2 |  | Add a ZPL II label printing feature
 [printing_simple_configuration](printing_simple_configuration/) | 16.0.1.1.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Allow to set printing configuration in company or in warehouse
 [remote_report_to_printer](remote_report_to_printer/) | 16.0.1.0.1 |  | Report to printer on remotes
@@ -8803,6 +8806,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# community-data-files
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/community-data-files&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/community-data-files/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/community-data-files/actions/workflows/test.yml?query=branch%3A16.0)
@@ -8810,8 +8816,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/community-data-files-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/community-data-files-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# community-data-files
 
 TODO: add repo description.
 
@@ -8834,6 +8838,7 @@ addon | version | maintainers | summary
 [company_sanitary_registry](company_sanitary_registry/) | 16.0.1.0.0 |  | Sanitary Registry
 [l10n_eu_nace](l10n_eu_nace/) | 16.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | European NACE partner categories
 [product_fao_fishing](product_fao_fishing/) | 16.0.1.0.1 |  | Set fishing areas and capture technology
+[product_packaging_unece](product_packaging_unece/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | UNECE nomenclature for product packaging
 [uom_unece](uom_unece/) | 16.0.1.3.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 
 [//]: # (end addons)
@@ -8999,6 +9004,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Rest Frameworks
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rest-framework&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/rest-framework/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/rest-framework/actions/workflows/test.yml?query=branch%3A16.0)
@@ -9006,8 +9014,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/rest-framework-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rest-framework-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Rest Frameworks
 
 This repository has nice modules to interact with Odoo using JSON and HTTP requests.
 
