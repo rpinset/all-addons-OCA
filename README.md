@@ -945,16 +945,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5d9163e6a6c51a2fd621f036ec40ba6c55ba360e
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 26 23:17:21 2026 +0000
+commit 12a65a6e5fcf1cce181c8a325231a0b6803e1f9f
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Sun Mar 22 19:43:35 2026 +0000
 
-    Update translation files
+    Translated using Weblate (Catalan)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (253 of 253 strings)
     
-    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_mod347
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_mod347/
+    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat/ca/
 
 
 ## l10n-switzerland
