@@ -71,6 +71,11 @@ msgid "Adds chatter and activities to stock buffers."
 msgstr "Añade chatter y actividades a los búferes de stock."
 
 #. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__demand_stock_move_ids
+msgid "All demand stock moves for this buffer"
+msgstr ""
+
+#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
 msgid ""
 "Apply adjustments to dynamically alter stock buffers to respond to planned "
@@ -502,6 +507,11 @@ msgid "Demand"
 msgstr "Demanda"
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__demand_stock_move_ids
+msgid "Demand Stock Move"
+msgstr ""
+
+#. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__display_name
@@ -616,6 +626,7 @@ msgstr "Horizonte Futuro"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_future
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method_source_future
 msgid "Future Source"
 msgstr "Fuente a Futuro"
 
@@ -781,11 +792,13 @@ msgstr "Entrante Dentro de LTD"
 
 #. module: ddmrp
 #: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_future
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__adu_calculation_method_source_future
 msgid "Information source used for future calculation."
 msgstr "Fuente de información para cálculo a futuro."
 
 #. module: ddmrp
 #: model:ir.model.fields,help:ddmrp.field_product_adu_calculation_method__source_past
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__adu_calculation_method_source_past
 msgid "Information source used for past calculation."
 msgstr "Fuente de información para cálculo a pasado."
 
@@ -1130,6 +1143,7 @@ msgstr "Horizonte a Pasado"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__source_past
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__adu_calculation_method_source_past
 msgid "Past Source"
 msgstr "Fuente a Pasado"
 
@@ -1326,6 +1340,11 @@ msgstr "Múltiple Ctd. debe ser mayor o igual a cero."
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
 msgid "Qualified Demand"
 msgstr "Demanda Calificada"
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_move__qualified_demand_buffer_ids
+msgid "Qualified Demand For Buffers"
+msgstr ""
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__qualified_demand_mrp_move_ids
@@ -1741,6 +1760,11 @@ msgid "Stock Rule"
 msgstr "Regla de Inventario"
 
 #. module: ddmrp
+#: model:ir.model.fields,help:ddmrp.field_stock_buffer__qualified_demand_stock_move_ids
+msgid "Stock moves considered qualified demand for this buffer"
+msgstr ""
+
+#. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_stock_buffer_capacity_limit
 msgid "Storage Capacity Limits"
 msgstr "Límites de Capacidad de Almacenamiento"
@@ -1977,8 +2001,8 @@ msgstr "Ver Demanda Calificada desde MRP"
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
-msgid "View Qualified Demand from Pickings"
-msgstr "Ver Demanda Calificada desde Pickings"
+msgid "View Qualified Demand from Moves"
+msgstr ""
 
 #. module: ddmrp
 #: model:ir.model,name:ddmrp.model_stock_warehouse
@@ -2135,6 +2159,9 @@ msgstr "días"
 #: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
 msgid "or"
 msgstr "o"
+
+#~ msgid "View Qualified Demand from Pickings"
+#~ msgstr "Ver Demanda Calificada desde Pickings"
 
 #~ msgid ""
 #~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "

@@ -227,6 +227,8 @@ openupgradelib
 # From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
 # From [https://github.com/OCA/project-reporting.git](https://github.com/OCA/project-reporting.git)
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
+# generated from manifests external_dependencies
+freezegun
 # From [https://github.com/OCA/project-agile.git](https://github.com/OCA/project-agile.git)
 # From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
 # generated from manifests external_dependencies

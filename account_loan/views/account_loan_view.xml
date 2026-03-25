@@ -160,8 +160,8 @@
                         <page string="Items" id="items">
                             <field
                                 name="line_ids"
-                                context="{'tree_view_ref': 'account_loan.account_loan_line_tree'}"
-                                readonly="state in ['canlcelled', 'closed']"
+                                context="{'list_view_ref': 'account_loan.account_loan_line_tree'}"
+                                readonly="state in ['cancelled', 'closed']"
                             />
                         </page>
                         <page string="Accounts" id="accounting">

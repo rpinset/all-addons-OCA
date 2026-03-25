@@ -98,8 +98,8 @@ msgstr "Ek Bilgi"
 #. module: crm_phonecall
 #: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__partner_state
 msgid ""
-"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
-msgstr "Bir ülkenin idari bölümleri. Örn. Eyalet, Departman, Kanton"
+"Administrative divisions of a country. E.g. Fed. State, Department, Canton"
+msgstr ""
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__user_id
@@ -944,6 +944,11 @@ msgstr "PK"
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
 msgid "Zip"
 msgstr "Posta Kodu"
+
+#~ msgid ""
+#~ "Administrative divisions of a country. E.g. Fed. State, Departement, "
+#~ "Canton"
+#~ msgstr "Bir ülkenin idari bölümleri. Örn. Eyalet, Departman, Kanton"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Son Değişiklik"

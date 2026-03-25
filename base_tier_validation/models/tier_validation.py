@@ -352,8 +352,6 @@ class TierValidation(models.AbstractModel):
         for val in vals:
             if val not in exceptions:
                 not_allowed_fields.append(val)
-        if not not_allowed_fields:
-            return []
 
         not_allowed_field_names, allowed_field_names = [], []
         for fld_name, fld_data in self.fields_get(
