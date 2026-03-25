@@ -544,16 +544,14 @@ Date:   Sun Feb 2 18:51:16 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 34827f84321c130d8d6ae94b1cc9c0a8545ccb7a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 1 19:03:29 2025 +0000
+commit 0223d0511a929120288197ae5edd886332d52cda
+Merge: 34827f84 0e290c09
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Mar 25 12:08:33 2026 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #890 from ForgeFlow/15.0-copier-update
     
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: timesheet-15.0/timesheet-15.0-sale_timesheet_rounded
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-sale_timesheet_rounded/it/
+    [15.0][IMP] update copier to commit v1.39
 
 
 ## hr
@@ -1448,16 +1446,14 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 1083ff1e6ce37a6a34123e5388b9ad3f8b30a18b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 19 11:28:12 2026 +0000
+commit 5326e749b043a61666b861b873c782eefe6f6a63
+Merge: 1083ff1e 8a3a17d5
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Mar 25 08:32:26 2026 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #1264 from qrtl/15.0-upd-copier
     
-    Currently translated at 65.8% (83 of 126 strings)
-    
-    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
+    [15.0][UPD] copier update
 
 
 ## community-data-files
