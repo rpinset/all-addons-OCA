@@ -382,11 +382,14 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3ecc3308496b92316b80fe02d78c2fd6b057afba
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Wed Mar 18 11:53:05 2026 +0000
+commit 0d81f3c6f4ef8cc53e399f7c8a8a32fd52954d2a
+Merge: 3ecc33084 96fdfc815
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 27 15:01:16 2026 +0000
 
-    Added translation using Weblate (Turkish)
+    Merge PR #4238 into 14.0
+    
+    Signed-off-by rousseldenis
 
 
 ## crm
@@ -1211,16 +1214,16 @@ Date:   Thu Mar 12 17:16:49 2026 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8357a8571bdef9d5f715be0b8f8c2c42db95cd14
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Feb 4 16:29:10 2026 +0000
+commit 91d8ed6e23929b7f59ac0c9ad4a7e9091185185c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 26 11:53:15 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (42 of 42 strings)
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_production_filter_lot
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_production_filter_lot/it/
+    Translation: manufacture-14.0/manufacture-14.0-mrp_production_serial_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_production_serial_matrix/it/
 
 
 ## manufacture-reporting
@@ -1267,16 +1270,14 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit f237ea470d8b8862cbabcc856d66d353262875fe
-Author: Rémi <remi@le-filament.com>
-Date:   Thu Mar 12 21:04:59 2026 +0000
+commit 00aabb411527657c612328add04df690b19097ee
+Merge: f237ea470 f9626b018
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 26 18:37:00 2026 +0000
 
-    Translated using Weblate (French)
+    Merge PR #3007 into 14.0
     
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_line_menu
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_line_menu/fr/
+    Signed-off-by sebastienbeau
 
 
 ## purchase-reporting
