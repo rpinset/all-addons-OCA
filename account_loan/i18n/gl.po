@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-30 02:39+0000\n"
-"PO-Revision-Date: 2018-03-30 02:39+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2018\n"
+"PO-Revision-Date: 2026-03-27 01:45+0000\n"
+"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_loan
 #: model_terms:ir.ui.view,arch_db:account_loan.account_loan_form
@@ -24,6 +25,8 @@ msgid ""
 "<span class=\"o_stat_text\">Deduct</span>\n"
 "                                <span class=\"o_stat_text\">Debt</span>"
 msgstr ""
+"<span class=\"o_stat_text\">Deducir</span>\n"
+"                                <span class=\"o_stat_text\">Débeda</span>"
 
 #. module: account_loan
 #: model_terms:ir.ui.view,arch_db:account_loan.account_loan_form
@@ -31,34 +34,36 @@ msgid ""
 "<span class=\"o_stat_text\">Increase</span>\n"
 "                                <span class=\"o_stat_text\">Debt</span>"
 msgstr ""
+"<span class=\"o_stat_text\">Incrementar</span>\n"
+"                                <span class=\"o_stat_text\">Débeda</span>"
 
 #. module: account_loan
 #: model_terms:ir.ui.view,arch_db:account_loan.res_partner_form_view
 msgid "<span class=\"o_stat_text\">Loans</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Préstamos</span>"
 
 #. module: account_loan
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_increase_amount__account_id
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_post__account_id
 msgid "Account"
-msgstr ""
+msgstr "Conta"
 
 #. module: account_loan
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_generate_wizard__date
 msgid "Account Date"
-msgstr ""
+msgstr "Data contable"
 
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan__long_term_loan_account_id
 #: model:ir.model.fields,help:account_loan.field_account_loan_line__long_term_loan_account_id
 msgid "Account that will contain the pending amount on Long term"
-msgstr ""
+msgstr "Conta que conterá a cantidade pendente a longo prazo"
 
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan__short_term_loan_account_id
 #: model:ir.model.fields,help:account_loan.field_account_loan_line__short_term_loan_account_id
 msgid "Account that will contain the pending amount on short term"
-msgstr ""
+msgstr "Conta que conterá a cantidade pendente a corto prazo"
 
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan__interest_expenses_account_id

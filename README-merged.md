@@ -695,6 +695,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# intrastat-extrastat
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/intrastat-extrastat&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml?query=branch%3A16.0)
@@ -702,8 +705,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/intrastat-extrastat-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/intrastat-extrastat-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# intrastat-extrastat
 
 TODO: add repo description.
 
@@ -2505,6 +2506,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# event
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/event&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/event/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/event/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/event/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/event/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2512,8 +2516,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/event-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/event-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# event
 
 TODO: add repo description.
 
@@ -2540,6 +2542,7 @@ addon | version | maintainers | summary
 [event_session_registration_multi_qty](event_session_registration_multi_qty/) | 16.0.1.0.0 |  | Allow registration grouped by quantities in sessions
 [partner_event](partner_event/) | 16.0.1.1.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Link partner to events
 [website_event_contact](website_event_contact/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display your event contacts on your event page
+[website_event_external](website_event_external/) | 16.0.1.0.0 |  | External Event
 [website_event_membership_restriction](website_event_membership_restriction/) | 16.0.1.2.0 |  | Restrict event registration to members only
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 16.0.1.0.0 |  | Events Questions conditional to the chosen ticket
 [website_event_require_legal](website_event_require_legal/) | 16.0.1.0.0 |  | Website Event Require Legal
@@ -5520,6 +5523,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-switzerland
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-switzerland&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml?query=branch%3A16.0)
@@ -5527,8 +5533,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-switzerland-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-switzerland-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# l10n-switzerland
 
 TODO: add repo description.
 
@@ -9027,6 +9031,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[api_log](api_log/) | 16.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log API requests in database
+[api_log_mail](api_log_mail/) | 16.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
 [auth_partner](auth_partner/) | 16.0.1.0.1 |  | Implements the base features for a authenticable partner
 [base_rest](base_rest/) | 16.0.1.0.5 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
@@ -9042,6 +9048,8 @@ addon | version | maintainers | summary
 [fastapi_auth_partner](fastapi_auth_partner/) | 16.0.1.0.0 |  | This provides an implementation of auth_partner for FastAPI
 [fastapi_encrypted_errors](fastapi_encrypted_errors/) | 16.0.1.0.1 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Adds encrypted error messages to FastAPI error responses.
 [fastapi_endpoint_context](fastapi_endpoint_context/) | 16.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Provides an overridable request context for FastAPI endpoints
+[fastapi_log](fastapi_log/) | 16.0.1.1.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log Fastapi requests in database
+[fastapi_log_mail](fastapi_log_mail/) | 16.0.1.1.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
 [graphql_base](graphql_base/) | 16.0.1.0.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Base GraphQL/GraphiQL controller
 [graphql_demo](graphql_demo/) | 16.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | GraphQL Demo
 [pydantic](pydantic/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Utility addon to ease mapping between Pydantic and Odoo models
@@ -9145,7 +9153,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 16.0.1.0.1 |  | Set delegate membership on the contract
 [membership_delegated_partner](membership_delegated_partner/) | 16.0.1.0.3 |  | Delegate membership on a specific partner
-[membership_extension](membership_extension/) | 16.0.3.0.4 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improves user experience of membership addon
+[membership_extension](membership_extension/) | 16.0.3.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improves user experience of membership addon
 [membership_initial_fee](membership_initial_fee/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Initial fee for memberships
 [membership_prorate](membership_prorate/) | 16.0.1.0.2 |  | Prorate membership fee
 [membership_prorate_variable_period](membership_prorate_variable_period/) | 16.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Prorate membership fee for variable periods

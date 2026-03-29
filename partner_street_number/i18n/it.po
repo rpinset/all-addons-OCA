@@ -6,123 +6,127 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-03-26 14:45+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_country_form
 msgid "(?P<street_name>...)"
-msgstr ""
+msgstr "(?P<street_name>...)"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_street_number_wizard_form
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #. module: partner_street_number
 #: model:ir.model,name:partner_street_number.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Impostazioni configurazione"
 
 #. module: partner_street_number
 #: model:ir.model,name:partner_street_number.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: partner_street_number
 #: model:ir.model,name:partner_street_number.model_res_country
 msgid "Country"
-msgstr ""
+msgstr "Nazione"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__direction
 msgid "Direction"
-msgstr ""
+msgstr "Direzione"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_form
 msgid "Door..."
-msgstr ""
+msgstr "Porta..."
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_country_form
 msgid "Fill in a full street above to test your regex and format expression."
 msgstr ""
+"Inserirei una via completa qui sopra per testare l'espressione regolare e il "
+"formato."
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_res_country__partner_street_number_format
 msgid "Format expression"
-msgstr ""
+msgstr "Formatta espressione"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.template_test_result
 msgid "Formatted street name:"
-msgstr ""
+msgstr "Nome via formattato:"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_res_country__partner_street_number_test_value
 msgid "Full street (for testing)"
-msgstr ""
+msgstr "Via completa (per test)"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_form
 msgid "House..."
-msgstr ""
+msgstr "Casa..."
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_partner_street_number_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_res_country__partner_street_number_regex
 msgid "Parse regex"
-msgstr ""
+msgstr "Elabora espressione regolare"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.template_test_result
 msgid "Parsed split fields:"
-msgstr ""
+msgstr "Campi suddivisi elaborati:"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_res_country__partner_street_number_test_result
 msgid "Partner Street Number Test Result"
-msgstr ""
+msgstr "Risultato test numero via partner"
 
 #. module: partner_street_number
 #: model:ir.model.fields,help:partner_street_number.field_res_country__partner_street_number_regex
@@ -130,31 +134,33 @@ msgid ""
 "Regular expression to parse street_* fields from the street field. Should "
 "contain at least a (?P<street_name>...) group."
 msgstr ""
+"Espressione regolare per analizzare i campi street_* dal campo via. Dovrebbe "
+"contenere almeno un gruppo (?P<street_name>...)."
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_street_number_wizard_form
 msgid "Select which field(s) to update:"
-msgstr ""
+msgstr "Selezionare quale campo(i) aggiornare:"
 
 #. module: partner_street_number
 #: model:ir.model.fields.selection,name:partner_street_number.selection__partner_street_number_wizard__direction___inverse_street_data
 msgid "Set street from component fields"
-msgstr ""
+msgstr "Imposta via dai campi componente"
 
 #. module: partner_street_number
 #: model:ir.model.fields.selection,name:partner_street_number.selection__partner_street_number_wizard__direction___compute_street_data
 msgid "Set street_name, street_number, street_number2 from street"
-msgstr ""
+msgstr "Imposta street_name, street_number, street_number2 dalla via"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_country_form
 msgid "Street names"
-msgstr ""
+msgstr "Nomi via"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_form
 msgid "Street..."
-msgstr ""
+msgstr "Via..."
 
 #. module: partner_street_number
 #: model:ir.model.fields,help:partner_street_number.field_res_country__partner_street_number_format
@@ -162,49 +168,51 @@ msgid ""
 "Template expression to fill the street field from street_* fields. Should "
 "contain at least {{object.street_name}}."
 msgstr ""
+"Espressione modello per popolare il campo via dai campi street_*. Dovrebbe "
+"contenere almeno {{object.street_name}}."
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.res_config_settings_view_form
 msgid "This allows you to manually edit the parts of a street name"
-msgstr ""
+msgstr "Ciò consente di modificare manualmente le parti di un nome della via"
 
 #. module: partner_street_number
 #: model:ir.actions.act_window,name:partner_street_number.wizard_model_action
 msgid "Update partner street fields"
-msgstr ""
+msgstr "Aggiorna i campi via del partner"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_partner_street_number_wizard_form
 msgid "Update partners"
-msgstr ""
+msgstr "Aggiorna partner"
 
 #. module: partner_street_number
 #: model:ir.model,name:partner_street_number.model_partner_street_number_wizard
 msgid "Update street components/street"
-msgstr ""
+msgstr "Aggiorna i componenti via/via"
 
 #. module: partner_street_number
 #: model:ir.model.fields,field_description:partner_street_number.field_res_config_settings__group_partner_street_number
 #: model:res.groups,name:partner_street_number.group_edit_split_street_name
 msgid "Use split fields for street name in partner form"
-msgstr ""
+msgstr "Utilizza di campi divisi per il nome via nel modulo partner"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.template_test_result
 msgid "street_name"
-msgstr ""
+msgstr "street_name"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.template_test_result
 msgid "street_number"
-msgstr ""
+msgstr "street_number"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.template_test_result
 msgid "street_number2"
-msgstr ""
+msgstr "street_number2"
 
 #. module: partner_street_number
 #: model_terms:ir.ui.view,arch_db:partner_street_number.view_country_form
 msgid "{{object.street_name}}"
-msgstr ""
+msgstr "{{object.street_name}}"

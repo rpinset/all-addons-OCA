@@ -9,50 +9,51 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-28 23:23+0000\n"
-"PO-Revision-Date: 2017-11-28 23:23+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-03-27 01:45+0000\n"
+"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__code_digits
 msgid "# of Digits"
-msgstr ""
+msgstr "# de dixitos"
 
 #. module: account_chart_update
 #: model_terms:ir.ui.view,arch_db:account_chart_update.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Update Chart Template</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Actualizar plan contable</span>"
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_group_ids
 msgid "Account Groups"
-msgstr ""
+msgstr "Grupo de contas"
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_field_ids
 msgid "Account fields"
-msgstr ""
+msgstr "Campos de conta"
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__account_group_id
 msgid "Account group template"
-msgstr ""
+msgstr "Plantilla de grupo de contas"
 
 #. module: account_chart_update
 #: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts_account_group
 msgid ""
 "Account group that needs to be updated (new or updated in the template)."
-msgstr ""
+msgstr "Grupo de contas que debe actualizarse (novo ou actualizado no modelo)."
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__update_account_group_id
 msgid "Account group to update"
-msgstr ""
+msgstr "Grupo de contas a actualizar"
 
 #. module: account_chart_update
 #: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart

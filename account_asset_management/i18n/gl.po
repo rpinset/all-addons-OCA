@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-10 23:23+0000\n"
-"PO-Revision-Date: 2026-03-13 18:36+0000\n"
+"PO-Revision-Date: 2026-03-27 01:45+0000\n"
 "Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: Galician (http://www.transifex.com/oca/OCA-account-financial-"
 "tools-8-0/language/gl/)\n"
@@ -44,11 +44,13 @@ msgid ""
 "\n"
 "Error while processing asset '{ref}': {exception}"
 msgstr ""
+"\n"
+"Erro mentres se procesaba o activo '{ref}': {exception}"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_report__depreciation_count
 msgid "# of Depreciation Lines"
-msgstr ""
+msgstr "# de liñas de amortización"
 
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_profile_view_form
@@ -56,11 +58,13 @@ msgid ""
 "<span class=\"o_form_label oe_inline\" attrs=\"{'invisible':"
 "[('salvage_type','!=','percent')]}\">%</span>"
 msgstr ""
+"<span class=\"o_form_label oe_inline\" attrs=\"{'invisible':["
+"('salvage_type','!=','percent')]}\">%</span>"
 
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.view_move_form
 msgid "<span class=\"o_stat_text\"> Asset(s)</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\"> Activos(s)</span>"
 
 #. module: account_asset_management
 #. odoo-python
@@ -78,7 +82,7 @@ msgstr "Conta do activo"
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__carry_forward_missed_depreciations
 msgid "Accumulate missed depreciations"
-msgstr ""
+msgstr "Acumular amortizacións pendentes"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__message_needaction
