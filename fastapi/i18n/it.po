@@ -50,8 +50,8 @@ msgstr "In archivio"
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__demo_auth_method
-msgid "Authenciation method"
-msgstr "Metodo autenticazione"
+msgid "Authentication method"
+msgstr ""
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__company_id
@@ -257,6 +257,9 @@ msgstr ""
 #: code:addons/fastapi/models/fastapi_endpoint.py:0
 msgid "`%(name)s` uses a blacklisted root_path = `%(root_path)s`"
 msgstr "`%(name)s` utilizza un root_path bloccato = `%(root_path)s`"
+
+#~ msgid "Authenciation method"
+#~ msgstr "Metodo autenticazione"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

@@ -1,37 +1,20 @@
 # Copyright 2024 Antoni Marroig(APSL-Nagarro)<amarroig@apsl.net>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo.addons.base.tests.common import BaseCommon
+from odoo.addons.rma.tests.test_rma import TestRma
 
 
-class RMARepairOrderTest(BaseCommon):
+class RMARepairOrderTest(TestRma):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.warehouse_company = cls.env["stock.warehouse"].search(
-            [("company_id", "=", cls.env.company.id)], limit=1
+        cls.product.tracking = "lot"
+        cls.operation = cls.operation_return
+        cls.rma = cls._create_rma(
+            cls.partner, cls.product, 2, cls.rma_loc, cls.operation_return
         )
-        cls.product = cls.env["product.product"].create(
-            {
-                "name": "Test product",
-                "is_storable": True,
-                "tracking": "lot",
-            }
-        )
-        cls.rma_loc = cls.warehouse_company.rma_loc_id
-        cls.res_partner = cls.env["res.partner"].create({"name": "Test"})
-        cls.operation = cls.env.ref("rma.rma_operation_return")
         cls.lot = cls.env["stock.lot"].create({"product_id": cls.product.id})
-        cls.rma = cls.env["rma"].create(
-            {
-                "product_id": cls.product.id,
-                "product_uom_qty": 2,
-                "location_id": cls.rma_loc.id,
-                "partner_id": cls.res_partner.id,
-                "operation_id": cls.operation.id,
-                "lot_id": cls.lot.id,
-            }
-        )
+        cls.rma.lot_id = cls.lot
 
     def test_repair_order_default_vals(self):
         vals = self.rma._get_repair_order_default_vals()

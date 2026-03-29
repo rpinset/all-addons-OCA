@@ -45,6 +45,12 @@ msgstr "Novas Revisões"
 #. module: base_revision
 #. odoo-python
 #: code:addons/base_revision/models/base_revision.py:0
+msgid "New revision created from: %s"
+msgstr ""
+
+#. module: base_revision
+#. odoo-python
+#: code:addons/base_revision/models/base_revision.py:0
 msgid "New revision created: %s"
 msgstr "Nova revisão criada: %s"
 

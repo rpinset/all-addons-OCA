@@ -5,7 +5,7 @@
 {
     "name": "Sale Commercial Partner",
     "summary": "Add stored related field 'Commercial Entity' on sale orders",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "development_status": "Production/Stable",
     "author": "Akretion,Odoo Community Association (OCA)",
     "maintainers": ["alexis-via"],
@@ -14,6 +14,10 @@
     "license": "AGPL-3",
     "contributors": ["Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>"],
     "depends": ["sale"],
-    "data": ["views/sale_order.xml", "views/sale_report.xml"],
+    "data": [
+        "views/sale_order.xml",
+        "views/sale_report.xml",
+        "views/res_config_settings_views.xml",
+    ],
     "installable": True,
 }

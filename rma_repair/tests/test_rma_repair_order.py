@@ -3,29 +3,17 @@
 
 from odoo.tests import Form
 
-from odoo.addons.base.tests.common import BaseCommon
+from odoo.addons.rma.tests.test_rma import TestRma
 
 
-class RMARepairOrderTest(BaseCommon):
+class RMARepairOrderTest(TestRma):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.warehouse_company = cls.env["stock.warehouse"].search(
-            [("company_id", "=", cls.env.company.id)], limit=1
-        )
-        cls.rma_loc = cls.warehouse_company.rma_loc_id
-        cls.res_partner = cls.env["res.partner"].create({"name": "Test"})
-        cls.operation = cls.env.ref("rma.rma_operation_return")
-        cls.operation.action_create_repair = False
-        cls.action_create_repair = "manual_after_receipt"
-        cls.rma = cls.env["rma"].create(
-            {
-                "product_id": cls.env.ref("product.product_delivery_01").id,
-                "product_uom_qty": 2,
-                "location_id": cls.rma_loc.id,
-                "partner_id": cls.res_partner.id,
-                "operation_id": cls.operation.id,
-            }
+        cls.operation_return.action_create_repair = "automatic_on_confirm"
+        cls.operation = cls.operation_return
+        cls.rma = cls._create_rma(
+            cls.partner, cls.product, 2, cls.rma_loc, cls.operation_return
         )
         repair_form = Form(
             cls.env["repair.order"].with_context(
@@ -35,14 +23,8 @@ class RMARepairOrderTest(BaseCommon):
             )
         )
         cls.repair_order = repair_form.save()
-        cls.rma_without_repair = cls.env["rma"].create(
-            {
-                "product_id": cls.env.ref("product.product_delivery_01").id,
-                "product_uom_qty": 2,
-                "location_id": cls.rma_loc.id,
-                "partner_id": cls.res_partner.id,
-                "operation_id": cls.operation.id,
-            }
+        cls.rma_without_repair = cls._create_rma(
+            cls.partner, cls.product, 2, cls.rma_loc, cls.operation_return
         )
 
     @classmethod
@@ -88,7 +70,7 @@ class RMARepairOrderTest(BaseCommon):
         self.repair_order.action_repair_cancel()
         self.assertFalse(self.rma.can_be_returned)
         self.assertTrue(self.rma.can_be_replaced)
-        self.assertTrue(self.rma.can_be_refunded)
+        self.assertFalse(self.rma.can_be_refunded)
 
     def test_action_view_rma_repair_order(self):
         self.assertEqual(
@@ -122,6 +104,7 @@ class RMARepairOrderTest(BaseCommon):
         - verify repair is created and no longer allowed afterward
         """
 
+        self.operation.action_create_repair = False
         self.assertFalse(self.operation.action_create_repair)
         self.rma_without_repair.action_confirm()
         self.assertFalse(self.rma_without_repair.can_be_repaired)

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    class="oe_stat_button"
+                    name="%(auth_partner_action)d"
+                    icon="fa-user"
+                    type="action"
+                    groups="auth_partner.group_auth_partner_manager"
+                    context="{'search_default_partner_id': id}"
+                >
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="auth_partner_count" />
+                        </span>
+                        <span class="o_stat_text">Accounts</span>
+                    </div>
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

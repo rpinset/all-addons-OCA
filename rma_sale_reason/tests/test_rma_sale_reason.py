@@ -14,7 +14,6 @@ class TestRmaSaleReason(TestRmaSaleBase):
     def setUpClass(cls):
         super().setUpClass()
         cls.rma_reason = cls.env.ref("rma_reason.rma_reason_defective_product")
-        cls.operation = cls.rma_operation_model.sudo().search([], limit=1)
         cls.sale_order = cls._create_sale_order([[cls.product_1, 5]])
         cls.sale_order.action_confirm()
         cls.order_line = cls.sale_order.order_line.filtered(

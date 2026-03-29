@@ -113,9 +113,10 @@ class BaseRevision(models.AbstractModel):
             # Calling  Copy method
             copied_rec = rec.copy_revision_with_context()
             if hasattr(self, "message_post"):
-                msg = _("New revision created: %s") % copied_rec.name
-                copied_rec.message_post(body=msg)
-                rec.message_post(body=msg)
+                target_msg = _("New revision created from: %s", rec._get_html_link())
+                copied_rec.message_post(body=target_msg)
+                source_msg = _("New revision created: %s", copied_rec._get_html_link())
+                rec.message_post(body=source_msg)
             revision_ids.append(copied_rec.id)
         action = {
             "type": "ir.actions.act_window",

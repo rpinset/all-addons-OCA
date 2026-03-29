@@ -98,6 +98,11 @@ msgid "Display Name"
 msgstr "Visningsnavn"
 
 #. module: crm_lead_to_task
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_project_task__effective_lead_id
+msgid "Effective Lead"
+msgstr ""
+
+#. module: crm_lead_to_task
 #: model:ir.model.fields,field_description:crm_lead_to_task.field_res_company__crm_force_project_id
 #: model:ir.model.fields,field_description:crm_lead_to_task.field_res_config_settings__crm_force_project_id
 msgid "Force Project"
@@ -169,6 +174,12 @@ msgstr ""
 #: code:addons/crm_lead_to_task/models/crm_lead.py:0
 #: code:addons/crm_lead_to_task/tests/test_crm_lead_task.py:0
 msgid "Tasks from crm lead %s"
+msgstr ""
+
+#. module: crm_lead_to_task
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.project_message_user_assigned
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.task_invitation_follower
+msgid "of lead/opportunity"
 msgstr ""
 
 #~ msgid "Last Modified on"

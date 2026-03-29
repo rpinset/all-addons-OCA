@@ -47,7 +47,7 @@ msgstr ""
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__demo_auth_method
-msgid "Authenciation method"
+msgid "Authentication method"
 msgstr ""
 
 #. module: fastapi

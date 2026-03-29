@@ -69,6 +69,7 @@ class TestRmaSaleMrpBase(TestRmaSaleBase):
 
 class TestRmaSaleMrp(TestRmaSaleMrpBase):
     def test_create_rma_from_so(self):
+        self.operation.action_create_refund = "manual_after_receipt"
         order = self.sale_order
         out_pickings = self.order_out_picking + self.backorder
         wizard = self._rma_sale_wizard(order)

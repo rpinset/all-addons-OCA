@@ -1,0 +1,3 @@
+- [Akretion](https://www.akretion.com):
+  - Sébastien Beau
+  - Florian Mounier

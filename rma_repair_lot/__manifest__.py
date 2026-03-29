@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "RMA Repair Lot",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "RMA",
     "website": "https://github.com/OCA/rma",
     "author": "Antoni Marroig, Odoo Community Association (OCA)",

@@ -2,7 +2,6 @@
 #  Copyright 2025 Simone Rubino
 #  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import base64
 from datetime import date
 from unittest.mock import patch
 
@@ -134,24 +133,9 @@ class TestFatturaPAXMLValidation(Common):
             self.assertEqual(attachments[0].raw, orig_attachment_data)
 
     def test_import_zip(self):
-        path = "l10n_it_edi_extension/tests/import_xmls/xml_import.zip"
-        import_file_model = self.env["l10n_it_edi.import_file_wizard"].with_company(
-            self.company
-        )
+        zip_name = "xml_import.zip"
+        moves = self._import_moves_from_zip(zip_name)
 
-        with tools.file_open(path, mode="rb") as file:
-            encoded_file = base64.encodebytes(file.read())
-
-            wizard_attachment_import = import_file_model.create(
-                {
-                    "l10n_it_edi_attachment_filename": "xml_import.zip",
-                    "l10n_it_edi_attachment": encoded_file,
-                }
-            )
-            action = wizard_attachment_import.action_import()
-
-        move_ids = action.get("domain")[0][2]
-        moves = self.env["account.move"].browse(move_ids)
         out_moves = moves.filtered(lambda m: m.is_sale_document())
         in_moves = moves.filtered(lambda m: m.is_purchase_document())
         self.assertEqual(len(out_moves), 6)
@@ -382,6 +366,41 @@ class TestFatturaPAXMLValidation(Common):
 
         # Assert
         self.assertEqual(len(invoice.invoice_line_ids), 1)
+
+    def test_import_zip_tax_detail_level_sale(self):
+        """If import detail level is Tax rate,
+        and a zip containing a customer invoice is imported,
+        the used tax is for customers."""
+        # Arrange
+        company = self.company
+        company.vat = "01654010345"
+        company.l10n_it_edi_import_detail_level = "tax"
+        zip_name = "INV_2026_00005.zip"
+
+        # Act
+        moves = self._import_moves_from_zip(zip_name)
+
+        # Assert
+        self.assertEqual(moves.move_type, "out_invoice")
+        self.assertEqual(moves.invoice_line_ids.tax_ids.type_tax_use, "sale")
+
+    def test_import_zip_max_detail_level_sale(self):
+        """If import detail level is Maximum,
+        and a zip containing a customer invoice is imported,
+        the used tax is for customers."""
+        # Arrange
+        company = self.company
+        company.vat = "01654010345"
+        zip_name = "INV_2026_00005.zip"
+        # pre-condition
+        self.assertEqual(company.l10n_it_edi_import_detail_level, "max")
+
+        # Act
+        moves = self._import_moves_from_zip(zip_name)
+
+        # Assert
+        self.assertEqual(moves.move_type, "out_invoice")
+        self.assertEqual(moves.invoice_line_ids.tax_ids.type_tax_use, "sale")
 
     def test_max_import_detail_level(self):
         """If import detail level is Maximum,
