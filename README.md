@@ -1145,16 +1145,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 6f9501bfc3b8aeec975dc616a5c0e76bd8ce8fbe
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:53:45 2026 +0000
+commit b7e5fd9b21dd6c00ea5ed364a3158ede47e48975
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 26 11:53:19 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 70.1% (115 of 164 strings)
+    Currently translated at 100.0% (42 of 42 strings)
     
-    Translation: manufacture-15.0/manufacture-15.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-quality_control_oca/sl/
+    Translation: manufacture-15.0/manufacture-15.0-mrp_production_serial_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_serial_matrix/it/
 
 
 ## manufacture-reporting
@@ -1608,11 +1608,11 @@ Date:   Sun Feb 9 19:13:50 2025 +0000
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 3b6afbbb24458d6ca0a4a8c13986b3e6d9d9ca02
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 19:14:36 2025 +0000
+commit 9debad862d9c22312540def22dfeb128775ef436
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 27 18:35:34 2026 +0000
 
-    [IMP] update dotfiles
+    [ADD] setup.py
 
 
 ## vertical-travel
