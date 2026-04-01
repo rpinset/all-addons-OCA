@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-02-02 17:34+0000\n"
-"Last-Translator: felipemotter <felipkin@gmail.com>\n"
+"PO-Revision-Date: 2026-03-31 20:45+0000\n"
+"Last-Translator: \"Rodrigo A. Madureira\" <rodrigomadu85@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -23,13 +23,11 @@ msgstr "# Qtd"
 
 #. module: account_commission_oca
 #: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
-#, fuzzy
 msgid "(keep empty for invoicing all the pending settlements)"
 msgstr "(manter em branco para faturar todas as liquidações pendentes)"
 
 #. module: account_commission_oca
 #: model_terms:ir.ui.view,arch_db:account_commission_oca.report_settlement_document
-#, fuzzy
 msgid "<strong>Settlement invoice:</strong>"
 msgstr "<strong>Fatura de Liquidação:</strong>"
 
@@ -42,7 +40,6 @@ msgstr "Representante"
 
 #. module: account_commission_oca
 #: model:ir.model,name:account_commission_oca.model_account_invoice_line_agent
-#, fuzzy
 msgid "Agent detail of commission line in invoice lines"
 msgstr "Detalhe da comissão do representante nas linhas da fatura"
 
@@ -55,13 +52,11 @@ msgstr "Representantes"
 
 #. module: account_commission_oca
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__agent_ids
-#, fuzzy
 msgid "Agents & commissions"
-msgstr "Representantes & comissões"
+msgstr "Representantes e comissões"
 
 #. module: account_commission_oca
 #: model:ir.model.fields,help:account_commission_oca.field_account_move_line__agent_ids
-#, fuzzy
 msgid "Agents/Commissions related to the invoice line."
 msgstr "Representantes/Comissões relacionadas com a linha da fatura."
 
@@ -88,7 +83,7 @@ msgstr "Cancelar"
 #. module: account_commission_oca
 #. odoo-python
 #: code:addons/account_commission_oca/models/commission_settlement.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "Cannot cancel an invoiced settlement."
 msgstr "Não é possível cancelar uma liquidação faturada."
 
@@ -100,7 +95,6 @@ msgstr "Categoria do Produto"
 
 #. module: account_commission_oca
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__commission_free
-#, fuzzy
 msgid "Comm. free"
 msgstr "Sem Comissão"
 
@@ -109,20 +103,17 @@ msgstr "Sem Comissão"
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__commission_id
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__commission_status
 #: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__commission_id
-#, fuzzy
 msgid "Commission"
 msgstr "Comissão"
 
 #. module: account_commission_oca
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__amount
-#, fuzzy
 msgid "Commission Amount"
 msgstr "Total Comissão"
 
 #. module: account_commission_oca
 #: model:ir.actions.act_window,name:account_commission_oca.action_invoice_commission_analysis_report
 #: model:ir.ui.menu,name:account_commission_oca.menu_invoice_commissions_analysis
-#, fuzzy
 msgid "Commission Analysis"
 msgstr "Análise de Comissão"
 
@@ -132,7 +123,6 @@ msgstr "Análise de Comissão"
 #: model:ir.model.fields,field_description:account_commission_oca.field_account_payment__commission_total
 #: model:ir.ui.menu,name:account_commission_oca.menu_invoicing_commission
 #: model_terms:ir.ui.view,arch_db:account_commission_oca.view_move_line_form
-#, fuzzy
 msgid "Commissions"
 msgstr "Comissões"
 

@@ -306,7 +306,6 @@ vobject
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # generated from manifests external_dependencies
-openupgradelib
 pdf2image
 pyzbar
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)

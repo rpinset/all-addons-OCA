@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-05 12:51+0000\n"
-"Last-Translator: Kaynnan Lemes <kaynnanx1@gmail.com>\n"
+"PO-Revision-Date: 2026-03-31 20:45+0000\n"
+"Last-Translator: \"Rodrigo A. Madureira\" <rodrigomadu85@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: commission_oca
 #. odoo-python
@@ -24,9 +24,8 @@ msgstr "%s representantes comissionados"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settled_wizard
-#, fuzzy
 msgid "(keep empty for making the settlement of all agents)"
-msgstr "(manter vazio para efetuar o acerto de contas de todos os agentes)"
+msgstr "(manter vazio para efetuar a liquidação de todos os representantes)"
 
 #. module: commission_oca
 #. odoo-python
@@ -36,7 +35,6 @@ msgstr "1 representante comissionado"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settled_wizard
-#, fuzzy
 msgid ""
 "<span>\n"
 "                        No automatic settlements can be made. Install any "
@@ -64,7 +62,6 @@ msgstr "<strong>Total</strong>"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__message_needaction
-#, fuzzy
 msgid "Action Needed"
 msgstr "Ação necessária"
 
@@ -80,7 +77,6 @@ msgstr "Atividades"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_exception_decoration
-#, fuzzy
 msgid "Activity Exception Decoration"
 msgstr "Decoração de exceção de atividade"
 
@@ -91,7 +87,6 @@ msgstr "Estado da Atividade"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_type_icon
-#, fuzzy
 msgid "Activity Type Icon"
 msgstr "Ícone do Tipo de Atividade"
 
@@ -113,7 +108,6 @@ msgstr "Parceiros Representantes"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_partner_form_agent
-#, fuzzy
 msgid "Agent information"
 msgstr "Informações do Representante"
 
@@ -131,19 +125,16 @@ msgstr "Representantes"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_mixin__agent_ids
-#, fuzzy
 msgid "Agents & commissions"
-msgstr "Representantes & Comissões"
+msgstr "Representantes e Comissões"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_mixin__agent_ids
-#, fuzzy
 msgid "Agents/Commissions related to the invoice line."
-msgstr "Representantes/Comissões relacionadas à linha da fatura."
+msgstr "Representantes/Comissões relacionados à linha da fatura."
 
 #. module: commission_oca
 #: model:ir.module.category,description:commission_oca.module_category_commission
-#, fuzzy
 msgid "Allows to handle commission related stuff."
 msgstr "Permite lidar com assuntos relacionados a comissões."
 
@@ -179,7 +170,6 @@ msgstr "Bi-semanal"
 
 #. module: commission_oca
 #: model:ir.model.fields.selection,name:commission_oca.selection__commission__commission_type__section
-#, fuzzy
 msgid "By sections"
 msgstr "Por seções"
 
@@ -227,39 +217,33 @@ msgstr "Com. livre"
 #: model:ir.model.fields,field_description:commission_oca.field_res_users__commission_id
 #: model_terms:ir.ui.view,arch_db:commission_oca.commission_form
 #: model_terms:ir.ui.view,arch_db:commission_oca.report_settlement_document
-#, fuzzy
 msgid "Commission"
 msgstr "Comissão"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_line_mixin__amount
-#, fuzzy
 msgid "Commission Amount"
 msgstr "Valor da Comissão"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_form
-#, fuzzy
 msgid "Commission lines"
 msgstr "Linhas de comissão"
 
 #. module: commission_oca
 #: model:ir.model,name:commission_oca.model_commission_section
-#, fuzzy
 msgid "Commission section"
 msgstr "Seção da comissão"
 
 #. module: commission_oca
 #: model:ir.actions.act_window,name:commission_oca.action_commission
 #: model:ir.ui.menu,name:commission_oca.menu_commission_type
-#, fuzzy
 msgid "Commission types"
 msgstr "Tipos de comissão"
 
 #. module: commission_oca
 #: model:ir.module.category,name:commission_oca.module_category_commission
 #: model:ir.ui.menu,name:commission_oca.menu_commission
-#, fuzzy
 msgid "Commissions"
 msgstr "Comissões"
 
@@ -271,7 +255,6 @@ msgstr "Empresa"
 
 #. module: commission_oca
 #: model:ir.ui.menu,name:commission_oca.menu_commission_management
-#, fuzzy
 msgid "Configuration"
 msgstr "Configuração"
 
@@ -283,7 +266,6 @@ msgstr "Contato"
 #. module: commission_oca
 #. odoo-python
 #: code:addons/commission_oca/wizards/commission_make_settle.py:0
-#, fuzzy
 msgid "Created Settlements"
 msgstr "Liquidações Criadas"
 
@@ -326,19 +308,16 @@ msgstr "Data"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_search
-#, fuzzy
 msgid "Date from month"
 msgstr "Data do mês"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_line_search
-#, fuzzy
 msgid "Date month"
 msgstr "Data mês"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_commission_mixin_agent_only
-#, fuzzy
 msgid "Discard"
 msgstr "Descartar"
 
@@ -348,9 +327,8 @@ msgstr "Descartar"
 #: model:ir.model.fields,field_description:commission_oca.field_commission_section__display_name
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__display_name
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement_line__display_name
-#, fuzzy
 msgid "Display Name"
-msgstr "Nome Exibição"
+msgstr "Nome em Exibição"
 
 #. module: commission_oca
 #: model:ir.model.fields.selection,name:commission_oca.selection__res_partner__agent_type__agent
@@ -381,7 +359,6 @@ msgstr "Ícone Fonte awesome e.x fa-tasks"
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_product_product__commission_free
 #: model:ir.model.fields,field_description:commission_oca.field_product_template__commission_free
-#, fuzzy
 msgid "Free of commission"
 msgstr "Livre de comissão"
 
@@ -393,7 +370,6 @@ msgstr "De"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.commission_form
-#, fuzzy
 msgid "General information"
 msgstr "Informações Gerais"
 
@@ -419,19 +395,16 @@ msgstr "ID"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_exception_icon
-#, fuzzy
 msgid "Icon"
 msgstr "Ícone"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__activity_exception_icon
-#, fuzzy
 msgid "Icon to indicate an exception activity."
 msgstr "Ícone para indicar uma atividade de exceção."
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__message_needaction
-#, fuzzy
 msgid "If checked, new messages require your attention."
 msgstr "Se marcado novas mensagens solicitarção sua atenção."
 
@@ -451,7 +424,6 @@ msgstr "É seguidor"
 #: model:ir.model.fields,field_description:commission_oca.field_commission_section__write_uid
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__write_uid
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement_line__write_uid
-#, fuzzy
 msgid "Last Updated by"
 msgstr "Última atualização por"
 
@@ -461,15 +433,13 @@ msgstr "Última atualização por"
 #: model:ir.model.fields,field_description:commission_oca.field_commission_section__write_date
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__write_date
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement_line__write_date
-#, fuzzy
 msgid "Last Updated on"
 msgstr "Última Atualização em"
 
 #. module: commission_oca
 #: model:ir.model,name:commission_oca.model_commission_settlement_line
-#, fuzzy
 msgid "Line of a commission settlement"
-msgstr "Linha de liquidação da comissção"
+msgstr "Linha de liquidação da comissão"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settled_wizard
@@ -503,7 +473,6 @@ msgstr "Mensagens"
 
 #. module: commission_oca
 #: model:ir.model,name:commission_oca.model_commission_mixin
-#, fuzzy
 msgid "Mixin model for applying to any object that wants to handle commissions"
 msgstr ""
 "Modelo Mixin para aplicar a qualquer objeto que queira lidar com comissões"
@@ -535,19 +504,16 @@ msgstr "Nome"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_date_deadline
-#, fuzzy
 msgid "Next Activity Deadline"
 msgstr "Prazo para Próxima Atividade"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_summary
-#, fuzzy
 msgid "Next Activity Summary"
 msgstr "Resumo da Próxima Atividade"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_type_id
-#, fuzzy
 msgid "Next Activity Type"
 msgstr "Tipo da Próxima Atividade"
 
@@ -559,25 +525,21 @@ msgstr "Sem representantes comissionados"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__message_needaction_counter
-#, fuzzy
 msgid "Number of Actions"
 msgstr "Número de Ações"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__message_has_error_counter
-#, fuzzy
 msgid "Number of errors"
 msgstr "Número de erros"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__message_needaction_counter
-#, fuzzy
 msgid "Number of messages requiring action"
 msgstr "Número de mensagens que exigem ação"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__message_has_error_counter
-#, fuzzy
 msgid "Number of messages with delivery error"
 msgstr "Número de mensagens com erro de entrega"
 
@@ -604,13 +566,11 @@ msgstr "Trimestral"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.commission_form
-#, fuzzy
 msgid "Rates definition"
 msgstr "Definição de taxas"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__activity_user_id
-#, fuzzy
 msgid "Responsible User"
 msgstr "Usuário Responsável"
 
@@ -626,13 +586,11 @@ msgstr "Salvar"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission__section_ids
-#, fuzzy
 msgid "Sections"
 msgstr "Seções"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission__amount_base_type
-#, fuzzy
 msgid ""
 "Select the base amount for computing the percentage:\n"
 "* 'Sale/Invoice Amount': percentage is computed from the amount put on sales "
@@ -648,13 +606,11 @@ msgstr ""
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settled_wizard
-#, fuzzy
 msgid "Select the date up to which you want to make the settlements:"
 msgstr "Selecione a data até a qual deseja efetuar os pagamentos:"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission__commission_type
-#, fuzzy
 msgid ""
 "Select the percentage type of the commission:\n"
 "* 'Fixed percentage': all commissions are computed with a fixed percentage. "
@@ -676,13 +632,11 @@ msgstr "Semestral"
 #. module: commission_oca
 #: model:ir.actions.act_window,name:commission_oca.action_agents_settlement
 #: model:ir.ui.menu,name:commission_oca.menu_commission_make_settle
-#, fuzzy
 msgid "Settle Commissions"
 msgstr "Liquidar Comissões"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settled_wizard
-#, fuzzy
 msgid "Settle commissions"
 msgstr "Liquidar Comissões"
 
@@ -710,7 +664,6 @@ msgstr "Total Liquidado"
 #: model:ir.model.fields,field_description:commission_oca.field_res_users__settlement_ids
 #: model_terms:ir.ui.view,arch_db:commission_oca.report_settlement_document
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_form
-#, fuzzy
 msgid "Settlement"
 msgstr "Liquidação"
 
@@ -718,44 +671,37 @@ msgstr "Liquidação"
 #: model:ir.model.fields,field_description:commission_oca.field_commission__settlement_type
 #: model:ir.model.fields,field_description:commission_oca.field_commission_make_settle__settlement_type
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__settlement_type
-#, fuzzy
 msgid "Settlement Type"
 msgstr "Tipo de Liquidação"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_line_graph
-#, fuzzy
 msgid "Settlement analysis"
 msgstr "Análise de Liquidação"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__line_ids
-#, fuzzy
 msgid "Settlement lines"
 msgstr "Linhas da Liquidação"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_line_search
-#, fuzzy
 msgid "Settlement lines search"
 msgstr "Pesquisa linhas de liquidação"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_res_partner__settlement
 #: model:ir.model.fields,field_description:commission_oca.field_res_users__settlement
-#, fuzzy
 msgid "Settlement period"
 msgstr "Período de Liquidação"
 
 #. module: commission_oca
 #: model:ir.actions.report,name:commission_oca.action_report_settlement
-#, fuzzy
 msgid "Settlement report"
 msgstr "Relatório de Liquidação"
 
 #. module: commission_oca
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_settlement_search
-#, fuzzy
 msgid "Settlement search"
 msgstr "Pesquisa Liquidação"
 
@@ -764,19 +710,16 @@ msgstr "Pesquisa Liquidação"
 #: model:ir.ui.menu,name:commission_oca.menu_settlement
 #: model:ir.ui.menu,name:commission_oca.menu_settlement_parent
 #: model_terms:ir.ui.view,arch_db:commission_oca.view_partner_form_agent
-#, fuzzy
 msgid "Settlements"
 msgstr "Liquidações"
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_settlement__state
-#, fuzzy
 msgid "State"
 msgstr "Situação"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__activity_state
-#, fuzzy
 msgid ""
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
@@ -790,13 +733,11 @@ msgstr ""
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__can_edit
-#, fuzzy
 msgid "Technical field for determining if user can edit settlements"
 msgstr "Campo técnico para determinar se o usuário pode editar liquidações"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_make_settle__can_settle
-#, fuzzy
 msgid ""
 "Technical field for improving UX when no extra *commission is installed."
 msgstr ""
@@ -805,13 +746,11 @@ msgstr ""
 #. module: commission_oca
 #. odoo-python
 #: code:addons/commission_oca/models/commission.py:0
-#, fuzzy
 msgid "The lower limit cannot be greater than upper one."
 msgstr "O limite inferior não pode ser maior que o superior."
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__settlement_type
-#, fuzzy
 msgid ""
 "The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase "
 "order'..."
@@ -822,7 +761,6 @@ msgstr ""
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_res_partner__commission_id
 #: model:ir.model.fields,help:commission_oca.field_res_users__commission_id
-#, fuzzy
 msgid ""
 "This is the default commission used in the sales where this agent is "
 "assigned. It can be changed on each operation if needed."
@@ -857,19 +795,16 @@ msgstr "Tipo"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__activity_exception_decoration
-#, fuzzy
 msgid "Type of the exception activity on record."
 msgstr "Tipo de atividade de exceção registrada."
 
 #. module: commission_oca
 #: model:ir.model.fields,field_description:commission_oca.field_commission_make_settle__date_to
-#, fuzzy
 msgid "Up to"
 msgstr "Até"
 
 #. module: commission_oca
 #: model:res.groups,name:commission_oca.group_commission_user
-#, fuzzy
 msgid "User"
 msgstr "Usuário"
 
@@ -880,13 +815,11 @@ msgstr "Mensagens do Site"
 
 #. module: commission_oca
 #: model:ir.model.fields,help:commission_oca.field_commission_settlement__website_message_ids
-#, fuzzy
 msgid "Website communication history"
 msgstr "Histórico de comunicação do Site"
 
 #. module: commission_oca
 #: model:ir.model,name:commission_oca.model_commission_make_settle
-#, fuzzy
 msgid "Wizard for settling commissions"
 msgstr "Assistente para liquidação de comissões"
 
@@ -894,7 +827,6 @@ msgstr "Assistente para liquidação de comissões"
 #: model:ir.model.constraint,message:commission_oca.constraint_account_invoice_line_agent_unique_agent
 #: model:ir.model.constraint,message:commission_oca.constraint_commission_line_mixin_unique_agent
 #: model:ir.model.constraint,message:commission_oca.constraint_sale_order_line_agent_unique_agent
-#, fuzzy
 msgid "You can only add one time each agent."
 msgstr "Você só pode adicionar cada agente uma vez."
 

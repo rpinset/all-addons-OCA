@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Rewire account_payment_mode views to inherit from base module -->
+
+    <record id="account_payment_mode.account_payment_method_form" model="ir.ui.view">
+        <field
+            name="inherit_id"
+            ref="account_payment_method_base.account_payment_method_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <widget
+                    name="web_ribbon"
+                    title="Archived"
+                    bg_color="bg-danger"
+                    invisible="active"
+                />
+            </xpath>
+            <xpath
+                expr="//group[@name='main']/field[@name='payment_type']"
+                position="after"
+            >
+                <field name="bank_account_required" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_payment_mode.account_payment_method_tree" model="ir.ui.view">
+        <field
+            name="inherit_id"
+            ref="account_payment_method_base.account_payment_method_list"
+        />
+    </record>
+
+    <record id="account_payment_mode.account_payment_method_search" model="ir.ui.view">
+        <field
+            name="inherit_id"
+            ref="account_payment_method_base.account_payment_method_search"
+        />
+    </record>
+    <!-- Remove duplicated menu -->
+    <record id="account_payment_mode.account_payment_method_menu" model="ir.ui.menu">
+        <field name="active" eval="False" />
+    </record>
+</odoo>

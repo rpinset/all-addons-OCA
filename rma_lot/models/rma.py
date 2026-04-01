@@ -1,7 +1,7 @@
 # Copyright 2024 ACSONE SA/NV
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import Command, api, fields, models
 
 
 class Rma(models.Model):
@@ -23,6 +23,13 @@ class Rma(models.Model):
         for rec in self:
             rec.lots_visible = rec.product_id.tracking != "none"
 
+    def _prepare_delivery_procurement_vals(self, scheduled_date=None):
+        vals = super()._prepare_delivery_procurement_vals(scheduled_date=scheduled_date)
+        if vals.get("restrict_lot_id") and self.reception_move_id.restrict_lot_id:
+            if self.reception_move_id.restrict_lot_id.id != vals.get("restrict_lot_id"):
+                vals["move_orig_ids"] = [Command.clear()]  # Avoid inconsistencies
+        return vals
+
     def _prepare_reception_procurement_vals(self, group=None):
         vals = super()._prepare_reception_procurement_vals(group=group)
         vals["restrict_lot_id"] = self.lot_id.id
@@ -34,7 +41,10 @@ class Rma(models.Model):
         vals = super()._prepare_common_procurement_vals(
             warehouse=warehouse, scheduled_date=scheduled_date, group=group
         )
-        if self.operation_id.deliver_same_lot:
+        replace_lot = self.env.context.get("rma_replace_lot_id")
+        if replace_lot:
+            vals["restrict_lot_id"] = replace_lot.id
+        elif self.operation_id.deliver_same_lot:
             vals["restrict_lot_id"] = self.lot_id.id
         return vals
 
