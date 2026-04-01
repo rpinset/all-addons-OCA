@@ -1800,6 +1800,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Sale Workflow
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-workflow&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/sale-workflow/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/sale-workflow/actions/workflows/test.yml?query=branch%3A15.0)
@@ -1807,8 +1810,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/sale-workflow-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-workflow-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Sale Workflow
 
 TODO: add repo description.
 
@@ -1913,6 +1914,7 @@ addon | version | maintainers | summary
 [sale_readonly_security](sale_readonly_security/) | 15.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Readonly Security
 [sale_rental](sale_rental/) | 15.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Manage Rental of Products
 [sale_resource_booking](sale_resource_booking/) | 15.0.1.0.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
+[sale_semaphore](sale_semaphore/) | 15.0.1.0.0 |  | Adds a semaphore for commercial purposes
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 15.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 15.0.1.1.0 |  | Multiple warehouse source locations for Sale order
 [sale_start_end_dates](sale_start_end_dates/) | 15.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start date and end date on sale order lines

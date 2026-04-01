@@ -357,9 +357,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 872f7edd81a7670187c842a70da71b14bdc8c9c0
+commit 41eba3cac4ecc480b55c01caa31721ee1464f1f8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 2 09:01:31 2026 +0000
+Date:   Mon Mar 30 16:22:08 2026 +0000
 
     [BOT] post-merge updates
 
