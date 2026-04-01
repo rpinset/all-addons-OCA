@@ -169,13 +169,6 @@ msgid "Partner Tag"
 msgstr "Etiqueta del asociado"
 
 #. module: mass_mailing_partner
-#. odoo-python
-#: code:addons/mass_mailing_partner/models/mailing_contact.py:0
-#, python-format
-msgid "Partner already exists in one of these mailing lists"
-msgstr "El asociado ya existe en esta lista de correo"
-
-#. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__tag_ids
 msgid "Tags"
 msgstr "Etiquetas"
@@ -190,6 +183,10 @@ msgid ""
 msgstr ""
 "Este socio '%s' está vinculado a uno o más contactos de correo masivo. El "
 "correo electrónico debe estar asignado."
+
+#, python-format
+#~ msgid "Partner already exists in one of these mailing lists"
+#~ msgstr "El asociado ya existe en esta lista de correo"
 
 #~ msgid "Mass Mailing Contact"
 #~ msgstr "Contacto de envío masivo"

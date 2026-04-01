@@ -31,7 +31,6 @@ class MailThread(models.AbstractModel):
         partner = self._whatsapp_get_partner()
         if not self.env["res.partner.gateway.channel"].search(
             [
-                ("partner_id", "=", partner.id),
                 ("gateway_id", "=", gateway.id),
                 ("gateway_token", "=", sanitized_number),
             ]

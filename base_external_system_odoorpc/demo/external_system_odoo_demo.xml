@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2026 Therp BV <https://therp.nl>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+    <record id="external_system_rpc" model="external.system">
+        <field name="name">External connection via RPC</field>
+        <field name="system_type">external.system.odoo</field>
+        <field name="host">localhost</field>
+        <field name="port">8069</field>
+        <field name="db_name">odoo16</field>
+        <field name="username">admin</field>
+        <field name="password">admin</field>
+        <field name="is_ssl">0</field>
+        <field name="company_ids" eval="[(5, 0), (4, ref('base.main_company'))]" />
+    </record>
+</odoo>

@@ -27,7 +27,9 @@ class MailMessage(models.Model):
         string="Child gateway messages",
     )
     gateway_message_id = fields.Many2one(
-        "mail.message", string="Original gateway message"
+        "mail.message",
+        string="Original gateway message",
+        index=True,
     )
     gateway_thread_data = fields.Json(compute="_compute_gateway_thread_data")
 

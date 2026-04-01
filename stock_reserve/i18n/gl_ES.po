@@ -197,6 +197,16 @@ msgid "Created Production Order"
 msgstr ""
 
 #. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__created_purchase_line_id
+msgid "Created Purchase Order Line"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__created_purchase_request_line_id
+msgid "Created Purchase Request Line"
+msgstr ""
+
+#. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__create_uid
 msgid "Created by"
 msgstr ""
@@ -713,6 +723,21 @@ msgid "Propagate cancel and split"
 msgstr ""
 
 #. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_line_id
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_request_allocation_ids
+msgid "Purchase Request Allocation"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_request_ids
+msgid "Purchase Requests"
+msgstr ""
+
+#. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__product_qty_by_packaging_display
 msgid "Qty by packaging"
 msgstr ""
@@ -878,6 +903,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__state
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_search
 msgid "Status"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__allocation_ids
+msgid "Stock Request Allocation"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__stock_request_ids
+msgid "Stock Requests"
 msgstr ""
 
 #. module: stock_reserve

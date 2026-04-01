@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-30 03:53+0000\n"
-"PO-Revision-Date: 2025-04-08 09:24+0000\n"
+"PO-Revision-Date: 2026-03-31 10:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_product_product__reservation_count
@@ -38,15 +38,15 @@ msgid ""
 "* Available: When products are reserved, it is set to 'Available'.\n"
 "* Done: When the shipment is processed, the state is 'Done'."
 msgstr ""
-"* Nuovo: quando il movimento di magazzino è creato ma non ancora confermato."
-"\n"
+"* Nuovo: quando il movimento di magazzino è creato ma non ancora "
+"confermato.\n"
 "* Attesa altro movimento: questo stato si attiva quando un movimento è in "
 "attesa dI un altro, per esempio in un flusso concatenato.\n"
 "* Attesa disponibilità: questo stato viene raggiunto quando il completamento "
 "dell'approvvigionamento non è semplice. Richiede l'esecuzione della "
 "schedulazione, la lavorazione di un componente...\n"
-"* Disponibile: quando i prodotti sono prenotati, è impostato a 'Disponibile'."
-"\n"
+"* Disponibile: quando i prodotti sono prenotati, è impostato a "
+"'Disponibile'.\n"
 "* Eseguito: quando la spedizione viene elaborata, lo stato è 'Eseguito'."
 
 #. module: stock_reserve
@@ -246,6 +246,16 @@ msgstr "Quota costo (%)"
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__created_production_id
 msgid "Created Production Order"
 msgstr "Ordine di produzione creato"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__created_purchase_line_id
+msgid "Created Purchase Order Line"
+msgstr "Riga ordine approvvigionamento creata"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__created_purchase_request_line_id
+msgid "Created Purchase Request Line"
+msgstr "Riga richiesta di acquisto creata"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__create_uid
@@ -788,6 +798,21 @@ msgid "Propagate cancel and split"
 msgstr "Propaga annullamento e suddivisione"
 
 #. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_line_id
+msgid "Purchase Order Line"
+msgstr "Riga ordine di acquisto"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_request_allocation_ids
+msgid "Purchase Request Allocation"
+msgstr "Allocazione richiesta di acquisto"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__purchase_request_ids
+msgid "Purchase Requests"
+msgstr "Richieste di acquisto"
+
+#. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__product_qty_by_packaging_display
 msgid "Qty by packaging"
 msgstr "Q.tà per confezione"
@@ -963,6 +988,16 @@ msgstr "Tipo ubicazione sorgente"
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_search
 msgid "Status"
 msgstr "Stato"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__allocation_ids
+msgid "Stock Request Allocation"
+msgstr "Allocazione richiesta di magazzino"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__stock_request_ids
+msgid "Stock Requests"
+msgstr "Richieste di magazzino"
 
 #. module: stock_reserve
 #: model:ir.model,name:stock_reserve.model_stock_reservation

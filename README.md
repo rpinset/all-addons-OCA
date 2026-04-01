@@ -372,11 +372,16 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4886504f768e0dca7d7b264d5cccdc721a8c184a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 25 18:12:15 2026 +0000
+commit 9d35cddc5ffa8ed6eeb60a930ea66d3b4f83afb3
+Author: Cristiano Mafra Junior <cristiano.mafracontanto@gmail.com>
+Date:   Wed Apr 1 16:31:44 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 100.0% (171 of 171 strings)
+    
+    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_blanket_order/pt_BR/
 
 
 ## crm
@@ -441,39 +446,42 @@ Date:   Mon Mar 16 07:52:48 2026 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 571bda847614124218c2955a8e9e9f9af7d1964e
-Author: davidbeckercbl <becker@cbl-computer.de>
-Date:   Thu Mar 12 12:29:18 2026 +0000
+commit df327792edfcb962ebf96a76335f614ed0657ef5
+Author: Rodrigo A. Madureira <rodrigomadu85@gmail.com>
+Date:   Tue Mar 31 17:44:49 2026 +0000
 
-    Translated using Weblate (German)
+    Translated using Weblate (Portuguese (Brazil))
     
-    Currently translated at 100.0% (101 of 101 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: commission-16.0/commission-16.0-account_commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-16-0/commission-16-0-account_commission/de/
+    Translation: commission-16.0/commission-16.0-sale_commission_product_criteria_fiscal_position_type
+    Translate-URL: https://translation.odoo-community.org/projects/commission-16-0/commission-16-0-sale_commission_product_criteria_fiscal_position_type/pt_BR/
 
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit ad1dfb3546d2698d3bd3f4b88a95639530ea94db
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 26 06:15:09 2026 +0000
+commit 9f6655ed3a618b463647974b9b01cd6a93c03580
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 30 09:46:52 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: event-16.0/event-16.0-website_event_external
+    Translate-URL: https://translation.odoo-community.org/projects/event-16-0/event-16-0-website_event_external/it/
 
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit f4f9b2246702612605752231494ad0cbe9e5389e
-Author: Fabien B <fabien@yaltik.com>
-Date:   Mon Dec 8 13:08:22 2025 +0000
+commit 72f2e7f7e4e28b4b8ba23b0e8ac9c7775899968a
+Merge: f4f9b22 d5eab0b
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Mar 30 16:11:42 2026 +0200
 
-    Translated using Weblate (French)
+    Merge pull request #218 from Tecnativa/16.0-copier
     
-    Currently translated at 100.0% (38 of 38 strings)
-    
-    Translation: survey-16.0/survey-16.0-survey_question_type_binary
-    Translate-URL: https://translation.odoo-community.org/projects/survey-16-0/survey-16-0-survey_question_type_binary/fr/
+    [16.0] Update copier template to 1.39
 
 
 ## knowledge
@@ -1128,16 +1136,16 @@ Date:   Sun Feb 9 18:52:53 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6e7166c3da4f5c9f1896deaef5db23d4c3b3dfcc
+commit a491586a8537984b954aa5d35d80400ccb7c8a75
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 4 11:07:02 2026 +0000
+Date:   Tue Mar 31 08:26:49 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (194 of 194 strings)
     
-    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_lot_multi_image
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_lot_multi_image/it/
+    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_reserve
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_reserve/it/
 
 
 ## stock-logistics-reporting
@@ -1174,11 +1182,16 @@ Date:   Wed Mar 25 06:03:54 2026 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 5b64d3a7fd8c26c340afa6dbaf7f08fe2c76a1ce
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 20 15:54:37 2026 +0000
+commit c943870187ef6c05ac4af5ab6d4f5dde348576ea
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Mar 31 08:25:21 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (76 of 76 strings)
+    
+    Translation: wms-16.0/wms-16.0-stock_picking_batch_creation
+    Translate-URL: https://translation.odoo-community.org/projects/wms-16-0/wms-16-0-stock_picking_batch_creation/it/
 
 
 ## manufacture
@@ -1257,16 +1270,16 @@ Date:   Wed Dec 10 09:35:26 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 9d7d48a24a39a336282f0d5e8cf59c4aaea42931
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 3 07:53:38 2026 +0000
+commit 38ea6888224751633abae5815935e3a545ae1256
+Author: Rodrigo A. Madureira <rodrigomadu85@gmail.com>
+Date:   Tue Mar 31 14:25:38 2026 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Portuguese (Brazil))
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: product-attribute-16.0/product-attribute-16.0-product_pricelist_margin
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-16-0/product-attribute-16-0-product_pricelist_margin/it/
+    Translation: product-attribute-16.0/product-attribute-16.0-product_category_product_qty
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-16-0/product-attribute-16-0-product_category_product_qty/pt_BR/
 
 
 ## product-kitting
@@ -1390,9 +1403,9 @@ Date:   Sun Feb 2 18:18:52 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 732f776fd68c110a122da1750ca52e0dd81f7ba2
+commit 6c3434b688ebe352c732a21a1d407dc3a0a36bec
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 11 07:39:37 2026 +0000
+Date:   Tue Mar 31 10:58:19 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1499,11 +1512,11 @@ Date:   Fri Oct 10 15:49:27 2025 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 2ddd398f219700658a748542c20c951c4916fbe4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 5 09:24:35 2026 +0000
+commit b2020bcdaf877f2119c4cd9608baa6ea8a8c5d05
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Mar 31 08:27:17 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## server-brand
@@ -1582,11 +1595,16 @@ Date:   Sat Jun 21 10:46:55 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 5de4d3a6560aefd59ffeb0aac826b99950f80d6b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 26 10:39:52 2026 +0000
+commit fa39936d3897472bdafba5f0eb7541e1d83e562a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Apr 1 07:33:43 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: rest-framework-16.0/rest-framework-16.0-fastapi_log
+    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-16-0/rest-framework-16-0-fastapi_log/it/
 
 
 ## role-policy

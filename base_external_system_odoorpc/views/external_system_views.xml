@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="external_system_view_form_odoo" model="ir.ui.view">
+        <field name="name">external.system.form.odoo</field>
+        <field name="model">external.system</field>
+        <field name="inherit_id" ref="base_external_system.external_system_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='remote_path']" position="after">
+                <field
+                    name="db_name"
+                    attrs="{'invisible': [('system_type', '!=', 'external.system.odoo')]}"
+                />
+                <field
+                    name="is_ssl"
+                    attrs="{'invisible': [('system_type', '!=', 'external.system.odoo')]}"
+                />
+            </xpath>
+            <xpath expr="//field[@name='remote_path']" position="attributes">
+                <attribute name="attrs">
+                    {'invisible': [('system_type', '=', 'external.system.odoo')]}
+                </attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
