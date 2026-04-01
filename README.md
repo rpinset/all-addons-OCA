@@ -325,11 +325,11 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f41290ebbe564a9d924e067f0e29585db50a4acf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 27 18:35:32 2026 +0000
+commit 30667118147f4ee673ca2fcacab29cb092db1fcc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 30 09:49:20 2026 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## crm
@@ -394,16 +394,16 @@ Date:   Sun Feb 1 06:55:23 2026 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 2e78ec0655d617a2a6423b1897e6ffa4c53f74c7
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Mon Feb 23 20:40:54 2026 +0000
+commit 5feb0dfc38e521df12f9af17ec1731587773beb2
+Author: Rodrigo A. Madureira <rodrigomadu85@gmail.com>
+Date:   Tue Mar 31 18:32:01 2026 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Portuguese (Brazil))
     
     Currently translated at 100.0% (138 of 138 strings)
     
     Translation: commission-17.0/commission-17.0-commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/es/
+    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/pt_BR/
 
 
 ## event
@@ -454,16 +454,11 @@ Date:   Thu Jan 1 15:02:08 2026 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit a609fa5794a405785a889f115705e3031da51e39
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 26 11:51:04 2026 +0000
+commit 1e020945eaf15a06e603b67fcb13ff1c6a64c7cd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 31 13:53:33 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (23 of 23 strings)
-    
-    Translation: e-commerce-17.0/e-commerce-17.0-website_sale_cart_add_product_xlsx_csv
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-17-0/e-commerce-17-0-website_sale_cart_add_product_xlsx_csv/it/
+    [BOT] post-merge updates
 
 
 ## edi
@@ -518,11 +513,16 @@ Date:   Sun Feb 2 18:58:24 2025 +0000
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit e427dcdcbf30268959646d3ba58a4987a2bf9c15
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 9 15:06:06 2026 +0000
+commit 083621842a778fcec5a7dcd9f5012f467650d595
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Apr 1 12:39:28 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: geospatial-17.0/geospatial-17.0-base_geoengine
+    Translate-URL: https://translation.odoo-community.org/projects/geospatial-17-0/geospatial-17-0-base_geoengine/
 
 
 ## timesheet
@@ -713,9 +713,9 @@ Date:   Sun Feb 2 19:15:17 2025 +0000
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 87e1ec5decf7d2521dd928b8a63f044823e0880e
+commit 3532f110eb3662fee9a0af350696e33fa390ed18
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 26 01:26:30 2026 +0000
+Date:   Mon Mar 30 20:17:39 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1159,16 +1159,16 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit a28cf3f6945d21890067d747c816c9ff5ec4537b
+commit 26c38f457fe57eee5ea821c9cfd4e7bf299ec54d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 23 08:04:22 2026 +0000
+Date:   Wed Apr 1 07:37:51 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (28 of 28 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_security
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_security/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_reception_threshold
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_reception_threshold/it/
 
 
 ## purchase-reporting
@@ -1255,16 +1255,16 @@ Date:   Sun Feb 2 20:17:01 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 6f8de96e68f399dbf3268759f48cbfaad8da6d26
-Author: Jonathan Pasquier <jpasquier@fundesplai.org>
-Date:   Wed Jan 28 14:14:13 2026 +0000
+commit f48287dd986268c95efdc9f24406f9980e554e43
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Apr 1 07:39:04 2026 +0000
 
-    Translated using Weblate (Catalan)
+    Translated using Weblate (Italian)
     
-    Currently translated at 99.4% (336 of 338 strings)
+    Currently translated at 100.0% (96 of 96 strings)
     
-    Translation: contract-17.0/contract-17.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-17-0/contract-17-0-contract/ca/
+    Translation: contract-17.0/contract-17.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-17-0/contract-17-0-product_contract/it/
 
 
 ## program

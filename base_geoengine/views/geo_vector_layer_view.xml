@@ -58,6 +58,10 @@
                             invisible="geo_repr in ['basic', 'proportion']"
                         >
                             <field
+                                name="intermediate_colors"
+                                invisible="classification in ['unique', False]"
+                            />
+                            <field
                                 name="end_color"
                                 invisible="classification in ['unique', False]"
                                 required="classification in ['interval', 'quantil']"
@@ -130,6 +134,10 @@
                             colspan="4"
                             invisible="geo_repr in ['basic', 'proportion']"
                         >
+                            <field
+                                name="intermediate_colors"
+                                invisible="classification in ['unique', False]"
+                            />
                             <field
                                 name="end_color"
                                 invisible="classification in ['unique', False]"

@@ -94,6 +94,11 @@ msgid "Colors"
 msgstr ""
 
 #. module: base_geoengine
+#: model:ir.model.fields,help:base_geoengine.field_geoengine_vector_layer__intermediate_colors
+msgid "Comma-separated hex values for intermediate gradient stops"
+msgstr ""
+
+#. module: base_geoengine
 #: model:ir.ui.menu,name:base_geoengine.geoengine_base_view_menu
 msgid "Configuration"
 msgstr ""
@@ -298,6 +303,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_geoengine.field_geoengine_raster_layer_type__id
 #: model:ir.model.fields,field_description:base_geoengine.field_geoengine_vector_layer__id
 msgid "ID"
+msgstr ""
+
+#. module: base_geoengine
+#: model:ir.model.fields,field_description:base_geoengine.field_geoengine_vector_layer__intermediate_colors
+msgid "Intermediate colors"
 msgstr ""
 
 #. module: base_geoengine
