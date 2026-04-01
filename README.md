@@ -841,9 +841,9 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 81f1555355608eeecb7b567280e386de7139e1ec
+commit 4324c254705213304047c8f653e9533328f93353
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Jan 11 14:37:15 2026 +0000
+Date:   Tue Mar 31 08:24:30 2026 +0000
 
     Translated using Weblate (Italian)
     
