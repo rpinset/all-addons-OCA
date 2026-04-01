@@ -6052,7 +6052,7 @@ addon | version | maintainers | summary
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.2.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 14.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Add options to roulier modules
-[delivery_schenker](delivery_schenker/) | 14.0.2.2.0 |  | Delivery Carrier implementation for DB Schenker API
+[delivery_schenker](delivery_schenker/) | 14.0.2.2.1 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
 [delivery_schenker_quant_package_dimension](delivery_schenker_quant_package_dimension/) | 14.0.2.0.1 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Glue module between delivery_schenker and stock_quant_package_dimensionWith this module the transmitted package volume is changed,it uses the computed volume from stock_quant_package_dimension.Also the dimensions length, width and height of a package getting added to the request
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.3 |  | Send delivery notice to the shipper from any operation.
@@ -8625,6 +8625,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# server-backend
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-backend&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/server-backend/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/server-backend/actions/workflows/test.yml?query=branch%3A14.0)
@@ -8632,8 +8635,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-backend-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-backend-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# server-backend
 
 TODO: add repo description.
 
@@ -8653,7 +8654,7 @@ addon | version | maintainers | summary
 [base_user_role](base_user_role/) | 14.0.2.5.3 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jcdrubay'><img src='https://github.com/jcdrubay.png' width='32' height='32' style='border-radius:50%;' alt='jcdrubay'/></a> <a href='https://github.com/novawish'><img src='https://github.com/novawish.png' width='32' height='32' style='border-radius:50%;' alt='novawish'/></a> | User roles
 [base_user_role_company](base_user_role_company/) | 14.0.2.0.2 |  | User roles by company
 [base_user_role_profile](base_user_role_profile/) | 14.0.1.1.0 |  | User profiles
-[server_action_navigate](server_action_navigate/) | 14.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/ashishhirpara'><img src='https://github.com/ashishhirpara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirpara'/></a> | Navigate between any items of any Odoo Models
+[server_action_navigate](server_action_navigate/) | 14.0.1.0.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/ashishhirpara'><img src='https://github.com/ashishhirpara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirpara'/></a> | Navigate between any items of any Odoo Models
 
 [//]: # (end addons)
 

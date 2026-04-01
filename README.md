@@ -1110,14 +1110,11 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit fed707047d70833de0802c7ae03aaa8a092c04f0
-Merge: 07341cf1 9b100743
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Mar 20 14:27:08 2026 +0100
+commit 7df55bf4ce7a95feac082438b57305d3952b41fe
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 1 06:28:35 2026 +0000
 
-    Merge pull request #1141 from raumschmiede-joshuaL/14.0-update-template
-    
-    [14.0][UPD] Update Repo Template
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1508,16 +1505,11 @@ Date:   Wed Jun 4 08:40:37 2025 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 8a6d5c278107a61d85d7df93c8a6b86d4472a772
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Sep 16 14:13:53 2025 +0000
+commit d1e4ec8302dfd00fbb1b5cbc14bd17cb1008b432
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 1 13:29:22 2026 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 100.0% (53 of 53 strings)
-    
-    Translation: server-backend-14.0/server-backend-14.0-base_user_role
-    Translate-URL: https://translation.odoo-community.org/projects/server-backend-14-0/server-backend-14-0-base_user_role/tr/
+    [BOT] post-merge updates
 
 
 ## server-brand

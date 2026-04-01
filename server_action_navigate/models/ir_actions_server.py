@@ -62,10 +62,9 @@ class IrActionsServer(models.Model):
         self.navigate_line_ids[-1].unlink()
         self.navigate_action_id = False
 
-    @api.model
-    def run_action_navigate_multi(self, action, eval_context=None):
+    def _run_action_navigate_multi(self, eval_context=None):
         IrModel = self.env["ir.model"]
-        lines = action.navigate_line_ids
+        lines = self.navigate_line_ids
         if not lines:
             raise UserError(
                 _("The Action Server %s is not correctly set\n" " : No fields defined")
@@ -76,13 +75,13 @@ class IrActionsServer(models.Model):
         domain = "[('id','in',[" + ",".join(map(str, item_ids)) + "])]"
 
         # Use Defined action if defined
-        if action.navigate_action_id:
-            return_action = action.navigate_action_id
+        if self.navigate_action_id:
+            return_action = self.navigate_action_id
             result = return_action.read()[0]
             result["domain"] = domain
         else:
             # Otherwise, return a default action
-            model_name = action.max_navigate_line_model
+            model_name = self.max_navigate_line_model
             model = IrModel.search([("model", "=", model_name)])
             view_mode = "tree,form"
             result = {
