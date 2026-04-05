@@ -1151,11 +1151,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 0db8e67ed48b4eb583239ea97978d7a819537396
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 12:30:08 2026 +0000
+commit f7024779d75966567aaa9064c93f4fee8a7080fd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 3 07:01:34 2026 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (183 of 183 strings)
+    
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request/it/
 
 
 ## stock-logistics-reporting
@@ -1174,16 +1179,16 @@ Date:   Wed Oct 15 09:10:25 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit f200dea6be264f999c23224ae52cfe8349410c13
+commit 0494fc3c239a8537605a3f0b035ce51060672779
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 17 07:17:45 2026 +0000
+Date:   Fri Apr 3 07:28:47 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (79 of 79 strings)
+    Currently translated at 100.0% (347 of 347 strings)
     
-    Translation: rma-14.0/rma-14.0-rma_sale
-    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma_sale/it/
+    Translation: rma-14.0/rma-14.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma/it/
 
 
 ## ddmrp
@@ -1706,11 +1711,14 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 514678b32199879f30f2b683e1b7e0f7be742f1c
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 10:29:01 2026 +0000
+commit 108e8950e4cae78473a805658dc1eae70d050c66
+Merge: 514678b32 38ade5ed9
+Author: Enric Tobella <etobella@creublanca.es>
+Date:   Thu Apr 2 10:08:01 2026 +0200
 
-    Added translation using Weblate (Turkish)
+    Merge pull request #3498 from PyTech-SRL/14.0-copier
+    
+    [14.0] Update copier template to 1.39
 
 
 ## website
