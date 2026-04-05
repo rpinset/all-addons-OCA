@@ -1086,16 +1086,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 576930983e7e0be78af2e0217b9bf86354b871f1
+commit 6cd43e718b9dfa59eca76fa51521a49842342b9f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Feb 28 14:04:24 2026 +0000
+Date:   Fri Apr 3 07:01:11 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (26 of 26 strings)
+    Currently translated at 64.4% (107 of 166 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_change_qty_reason
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_change_qty_reason/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/it/
 
 
 ## stock-logistics-reporting
@@ -1109,9 +1109,9 @@ Date:   Wed Jun 4 03:49:32 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 136ed75d77dec611761928f0a7d8f2352b83ed70
+commit 8eda9d34d0935a20f5b1cd2bc3de1014cd2988bc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 17 07:23:52 2026 +0000
+Date:   Fri Apr 3 07:28:49 2026 +0000
 
     Translated using Weblate (Italian)
     
