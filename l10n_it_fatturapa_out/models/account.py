@@ -7,6 +7,8 @@ from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.tools.translate import _
 
+from .company import E_INVOICE_HIDE_LINE_TYPE_SELECTION
+
 fatturapa_attachment_state_mapping = {
     "ready": "ready",
     "sent": "sent",
@@ -58,6 +60,12 @@ class AccountInvoice(models.Model):
         compute="_compute_fatturapa_payment_term_data",
         store=True,
         readonly=False,
+    )
+    e_invoice_hide_line_type = fields.Selection(
+        selection=E_INVOICE_HIDE_LINE_TYPE_SELECTION,
+        help="Choose which type of descriptive line "
+        "will not be present in the e-invoice.\n"
+        "If empty, the same field in the partner is evaluated.",
     )
 
     @api.depends("fatturapa_attachment_out_id.state")

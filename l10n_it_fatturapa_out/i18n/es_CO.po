@@ -99,6 +99,31 @@ msgid "Checksum/SHA1"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_company__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_config_settings__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in e-invoices."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_bank_statement_line__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_move__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_payment__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in the e-invoice.\n"
+"If empty, the same field in the partner is evaluated."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_partner__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_users__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in the e-invoices "
+"of this partner.\n"
+"If empty, the same field in the company is evaluated."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model,name:l10n_it_fatturapa_out.model_res_company
 msgid "Companies"
 msgstr ""
@@ -187,6 +212,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_wizard_export_fatturapa__display_name
 msgid "Display Name"
 msgstr "Nombre Público"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_bank_statement_line__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_move__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_payment__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_company__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_config_settings__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_partner__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_users__e_invoice_hide_line_type
+msgid "E Invoice Hide Line Type"
+msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_company__e_invoice_transmitter_id
@@ -537,6 +573,17 @@ msgid "Last Updated on"
 msgstr "Actualizado"
 
 #. module: l10n_it_fatturapa_out
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_partner_form_fatturapa
+msgid "Line Types to hide"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
+msgid "Line types to hide"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_main_attachment_id
 msgid "Main Attachment"
 msgstr ""
@@ -579,9 +626,30 @@ msgid "Name"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__none
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__none
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__none
+msgid "None"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__fatturapa_attachment_out__state__recipient_error
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_fatturapa_out_attachment_search
 msgid "Not delivered"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__note
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__note
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__note
+msgid "Notes"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__note_section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__note_section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__note_section
+msgid "Notes and Sections"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
@@ -692,6 +760,13 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__att_name
 msgid "SdI file name"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__section
+msgid "Sections"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out

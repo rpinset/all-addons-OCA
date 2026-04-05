@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-09 10:03+0000\n"
-"PO-Revision-Date: 2025-11-25 15:42+0000\n"
+"PO-Revision-Date: 2026-04-03 09:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
@@ -99,6 +99,39 @@ msgstr "Annulla"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__checksum
 msgid "Checksum/SHA1"
 msgstr "Checksum/SHA1"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_company__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_config_settings__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in e-invoices."
+msgstr ""
+"Scegliere quale tipo di riga descrittiva non verrà inserita nella fattura "
+"elettronica."
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_bank_statement_line__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_move__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_account_payment__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in the e-invoice.\n"
+"If empty, the same field in the partner is evaluated."
+msgstr ""
+"Scegliere quale tipo di riga descrittiva non sarà presente nella fattura "
+"elettronica.\n"
+"Se vuoto, viene valutato lo stesso campo del partner."
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_partner__e_invoice_hide_line_type
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_res_users__e_invoice_hide_line_type
+msgid ""
+"Choose which type of descriptive line will not be present in the e-invoices "
+"of this partner.\n"
+"If empty, the same field in the company is evaluated."
+msgstr ""
+"Scegliere quale tipo di riga descrittiva non verrà inserita nella fattura "
+"elettronica di questo partner.\n"
+"Se vuoto, verrà usato lo stesso campo dell'azienda."
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model,name:l10n_it_fatturapa_out.model_res_company
@@ -193,6 +226,17 @@ msgstr "Descrizione"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_wizard_export_fatturapa__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_bank_statement_line__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_move__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_account_payment__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_company__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_config_settings__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_partner__e_invoice_hide_line_type
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_users__e_invoice_hide_line_type
+msgid "E Invoice Hide Line Type"
+msgstr "Tipo riga nascosto nella fattura elettronica"
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_res_company__e_invoice_transmitter_id
@@ -458,7 +502,8 @@ msgstr "Contenuto indicizzato"
 #: code:addons/l10n_it_fatturapa_out/models/account.py:0
 #, python-format
 msgid "Invoice %(name)s: Fiscal Payment Method must be set."
-msgstr "Fattura %(name)s: il metodo di pagamento fiscale deve essere impostato."
+msgstr ""
+"Fattura %(name)s: il metodo di pagamento fiscale deve essere impostato."
 
 #. module: l10n_it_fatturapa_out
 #. odoo-python
@@ -560,6 +605,17 @@ msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
 
 #. module: l10n_it_fatturapa_out
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_invoice_form_fatturapa
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_partner_form_fatturapa
+msgid "Line Types to hide"
+msgstr "Tipi riga da nascondere"
+
+#. module: l10n_it_fatturapa_out
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
+msgid "Line types to hide"
+msgstr "Tipi riga da nascondere"
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_main_attachment_id
 msgid "Main Attachment"
 msgstr "Allegato principale"
@@ -605,10 +661,31 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__none
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__none
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__none
+msgid "None"
+msgstr "Nessuno"
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__fatturapa_attachment_out__state__recipient_error
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_fatturapa_out_attachment_search
 msgid "Not delivered"
 msgstr "Non consegnato"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__note
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__note
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__note
+msgid "Notes"
+msgstr "Note"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__note_section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__note_section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__note_section
+msgid "Notes and Sections"
+msgstr "Note e sessioni"
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_needaction_counter
@@ -719,6 +796,13 @@ msgstr "Risultato"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__att_name
 msgid "SdI file name"
 msgstr "Nome file SdI"
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__e_invoice_hide_line_type__section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__e_invoice_hide_line_type__section
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_partner__e_invoice_hide_line_type__section
+msgid "Sections"
+msgstr "Sezioni"
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__fatturapa_attachment_out__state__sender_error

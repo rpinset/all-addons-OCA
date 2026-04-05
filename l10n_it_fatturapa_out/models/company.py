@@ -7,6 +7,13 @@ from odoo.exceptions import ValidationError
 
 _DEFAULT_XML_DIVISA_VALUE = "force_eur"
 
+E_INVOICE_HIDE_LINE_TYPE_SELECTION = [
+    ("none", "None"),
+    ("note", "Notes"),
+    ("section", "Sections"),
+    ("note_section", "Notes and Sections"),
+]
+
 
 class ResCompany(models.Model):
     _inherit = "res.company"
@@ -34,6 +41,11 @@ class ResCompany(models.Model):
         string="XML Divisa value",
         default=_DEFAULT_XML_DIVISA_VALUE,
     )
+    e_invoice_hide_line_type = fields.Selection(
+        selection=E_INVOICE_HIDE_LINE_TYPE_SELECTION,
+        help="Choose which type of descriptive line "
+        "will not be present in e-invoices.",
+    )
 
     @api.constrains("max_invoice_in_xml")
     def _validate_max_invoice_in_xml(self):
@@ -58,6 +70,10 @@ class AccountConfigSettings(models.TransientModel):
 
     xml_divisa_value = fields.Selection(
         related="company_id.xml_divisa_value", readonly=False
+    )
+    e_invoice_hide_line_type = fields.Selection(
+        related="company_id.e_invoice_hide_line_type",
+        readonly=False,
     )
 
     @api.onchange("company_id")

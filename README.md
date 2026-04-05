@@ -97,16 +97,11 @@ Date:   Fri Mar 13 17:36:30 2026 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit fef4d19cc39be952d7ef68cf4968961970735d68
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 25 06:10:00 2026 +0000
+commit b65b500ba0be9d52f40169cf7af76da0af654120
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 3 05:03:20 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: account-invoicing-16.0/account-invoicing-16.0-partner_invoicing_mode_cash_on_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-16-0/account-invoicing-16-0-partner_invoicing_mode_cash_on_delivery/it/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -372,9 +367,9 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 9d35cddc5ffa8ed6eeb60a930ea66d3b4f83afb3
+commit 8c00fa243ca11205456032707c25aa0b5e8e4e9b
 Author: Cristiano Mafra Junior <cristiano.mafracontanto@gmail.com>
-Date:   Wed Apr 1 16:31:44 2026 +0000
+Date:   Thu Apr 2 11:42:33 2026 +0000
 
     Translated using Weblate (Portuguese (Brazil))
     
@@ -870,11 +865,16 @@ Date:   Sun Feb 2 19:24:42 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 61b49af2e9bc64a7e1d097ff207b1b68a0a27356
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 25 09:56:32 2026 +0000
+commit d429c9adfb4f49e0aaa61903e82f08d7a660a7da
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 3 07:11:43 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (154 of 154 strings)
+    
+    Translation: l10n-italy-16.0/l10n-italy-16.0-l10n_it_fatturapa_out
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-16-0/l10n-italy-16-0-l10n_it_fatturapa_out/it/
 
 
 ## l10n-japan
@@ -1136,16 +1136,16 @@ Date:   Sun Feb 9 18:52:53 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit a491586a8537984b954aa5d35d80400ccb7c8a75
+commit 4ded282901dbe451243face1dc503e9ed1b620a9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 31 08:26:49 2026 +0000
+Date:   Fri Apr 3 07:05:21 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (194 of 194 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_reserve
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_reserve/it/
+    Translation: stock-logistics-warehouse-16.0/stock-logistics-warehouse-16.0-stock_request_purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-16-0/stock-logistics-warehouse-16-0-stock_request_purchase_request/it/
 
 
 ## stock-logistics-reporting
@@ -1159,11 +1159,16 @@ Date:   Thu Mar 19 17:00:02 2026 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit d58e1f2e5eb0c1c9258def4b0933987a19ed27de
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 17 08:15:21 2026 +0000
+commit c451b8058f49401eb761bf2de2717ae9060a8ac8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 3 07:28:49 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (402 of 402 strings)
+    
+    Translation: rma-16.0/rma-16.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-16-0/rma-16-0-rma/it/
 
 
 ## ddmrp
@@ -1182,16 +1187,11 @@ Date:   Wed Mar 25 06:03:54 2026 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit c943870187ef6c05ac4af5ab6d4f5dde348576ea
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 31 08:25:21 2026 +0000
+commit 5b8d9eebc3b7a02487a10d5ce895fc7a85756a72
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 2 10:32:31 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (76 of 76 strings)
-    
-    Translation: wms-16.0/wms-16.0-stock_picking_batch_creation
-    Translate-URL: https://translation.odoo-community.org/projects/wms-16-0/wms-16-0-stock_picking_batch_creation/it/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1475,16 +1475,11 @@ Date:   Sun Feb 9 19:21:00 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 42042e70359b7d560c2121678ab41162ba605cf9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 5 14:06:42 2026 +0000
+commit 473dbfe1ba37fa711aab0331a827f856db95b7f4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 2 06:36:55 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (112 of 112 strings)
-    
-    Translation: server-tools-16.0/server-tools-16.0-fetchmail_attach_from_folder
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-16-0/server-tools-16-0-fetchmail_attach_from_folder/it/
+    [BOT] post-merge updates
 
 
 ## server-auth

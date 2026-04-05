@@ -105,6 +105,15 @@
                                     ],
                                 }"
                             />
+                            <field
+                                name="e_invoice_hide_line_type"
+                                string="Line Types to hide"
+                                attrs="{
+                                    'readonly': [
+                                        ('fatturapa_attachment_out_id', '!=', False),
+                                    ],
+                                }"
+                            />
                             <field name="related_documents">
                                 <tree editable="bottom">
                                     <field name="type" />

@@ -5,6 +5,8 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
+from .company import E_INVOICE_HIDE_LINE_TYPE_SELECTION
+
 
 class ResPartner(models.Model):
     _inherit = "res.partner"
@@ -16,6 +18,12 @@ class ResPartner(models.Model):
         "XML file.\n"
         "If this is 0, then the number configured "
         "in the account settings is considered.",
+    )
+    e_invoice_hide_line_type = fields.Selection(
+        selection=E_INVOICE_HIDE_LINE_TYPE_SELECTION,
+        help="Choose which type of descriptive line "
+        "will not be present in the e-invoices of this partner.\n"
+        "If empty, the same field in the company is evaluated.",
     )
 
     @api.constrains("max_invoice_in_xml")

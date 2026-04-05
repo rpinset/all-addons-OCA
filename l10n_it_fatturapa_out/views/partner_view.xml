@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <field name="ipa_code" position="before">
                 <field name="max_invoice_in_xml" />
+                <field name="e_invoice_hide_line_type" string="Line Types to hide" />
             </field>
         </field>
     </record>

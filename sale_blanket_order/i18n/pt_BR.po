@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-04-01 16:44+0000\n"
+"PO-Revision-Date: 2026-04-02 11:54+0000\n"
 "Last-Translator: Cristiano Mafra Junior <cristiano.mafracontanto@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -43,7 +43,7 @@ msgstr "'Pedido em Aberto - %s' % object.name"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "<span>Blanket Order # </span>"
-msgstr "<span>Pedido em Aberto # </span>"
+msgstr "<span>Pedido Guarda-Chuva # </span>"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -185,7 +185,7 @@ msgstr "Linha do Pedido em Aberto"
 #: model:ir.actions.act_window,name:sale_blanket_order.act_open_sale_blanket_order_lines_view_tree
 #: model:ir.ui.menu,name:sale_blanket_order.menu_sale_blanket_order_line
 msgid "Blanket Order Lines"
-msgstr "Linhas de Pedido em Aberto"
+msgstr "Linhas de Pedido guarda-chuva"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_order_line__blanket_order_line
@@ -197,7 +197,7 @@ msgstr "Linha do Pedido em Aberto"
 #: model:ir.ui.menu,name:sale_blanket_order.menu_blanket_order_config
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_config_settings_form_view
 msgid "Blanket Orders"
-msgstr "Pedidos em Aberto"
+msgstr "Pedidos Guarda-Chuva"
 
 #. module: sale_blanket_order
 #: model:ir.model,name:sale_blanket_order.model_sale_blanket_order_wizard
@@ -216,8 +216,8 @@ msgstr "Linha do assistente de pedido em aberto"
 msgid ""
 "Can not create Sale Order from Blanket Order lines with different currencies"
 msgstr ""
-"Não é possível criar Pedido de Venda a partir de linhas de Pedido em Aberto "
-"com moedas diferentes"
+"Não é possível criar Pedido de Venda a partir de linhas de Pedido guarda-"
+"chuva com moedas diferentes"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
@@ -234,7 +234,7 @@ msgid ""
 "has no remaining quantity."
 msgstr ""
 "Não é possível confirmar o pedido %s, pois uma das linhas se refere a um "
-"pedido em aberto sem quantidade restante."
+"pedido guarda-chuva sem quantidade restante."
 
 #. module: sale_blanket_order
 #: model_terms:ir.actions.act_window,help:sale_blanket_order.act_open_blanket_order_view
@@ -348,8 +348,8 @@ msgstr "Desabilitar adição de mais linhas aos pedidos de venda"
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_config_settings_form_view
 msgid "Disable adding more lines to SOs from Blanket Orders"
 msgstr ""
-"Desabilitar adição de mais linhas aos pedidos de venda vindos de pedidos em "
-"aberto"
+"Desabilitar adição de mais linhas aos pedidos de venda vindos de pedidos "
+"guarda-chuva"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__display_name
@@ -378,7 +378,7 @@ msgstr "Rascunho"
 #: model:ir.actions.server,name:sale_blanket_order.expired_blanket_orders_cron_ir_actions_server
 #: model:ir.cron,cron_name:sale_blanket_order.expired_blanket_orders_cron
 msgid "Expire Blanket Orders"
-msgstr "Expirar Pedidos em Aberto"
+msgstr "Expirar Pedidos Guarda-Chuva"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields.selection,name:sale_blanket_order.selection__sale_blanket_order__state__expired
@@ -671,7 +671,7 @@ msgstr "Parceiro Ã© obrigatÃ³rio"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__payment_term_id
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__payment_term_id
 msgid "Payment Terms"
-msgstr "CondiÃ§Ãµes de Pagamento"
+msgstr "Condições de Pagamento"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_unit
@@ -683,7 +683,7 @@ msgstr "PreÃ§o"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__pricelist_id
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__pricelist_id
 msgid "Pricelist"
-msgstr "Lista de PreÃ§os"
+msgstr "Lista de Preços"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__product_id
@@ -956,8 +956,8 @@ msgid ""
 "                you can track the related discussion with the customer, control\n"
 "                the products delivered and control the vendor bills."
 msgstr ""
-"Use este menu para pesquisar em seus pedidos em aberto. Para cada pedido em "
-"aberto,\n"
+"Use este menu para pesquisar em seus pedidos guarda-chuva. Para cada pedido "
+"em aberto,\n"
 "                vocÃª pode acompanhar a conversa relacionada com o cliente, "
 "controlar\n"
 "                os produtos entregues e controlar as faturas de fornecedor."
@@ -1016,7 +1016,7 @@ msgid ""
 "You can not delete a blanket order with opened sale orders! Try to cancel "
 "them before."
 msgstr ""
-"Você não pode excluir um pedido em aberto com pedidos de venda abertos! "
+"Você não pode excluir um pedido guarda-chuva com pedidos de venda abertos! "
 "Tente cancelá-los antes."
 
 #. module: sale_blanket_order
@@ -1027,7 +1027,7 @@ msgid ""
 "You can not delete an open blanket or with active sale orders! Try to cancel"
 " it before."
 msgstr ""
-"Você não pode excluir um pedido em aberto ou com pedidos de venda ativos! "
+"Você não pode excluir um pedido guarda-chuva ou com pedidos de venda ativos! "
 "Tente cancelá-lo antes."
 
 #. module: sale_blanket_order

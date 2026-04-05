@@ -1292,3 +1292,74 @@ class TestFatturaPAXMLValidation(FatturaPACommon):
         # Check that two attachments are created
         attachments_nbr = len(invoices.mapped("fatturapa_attachment_out_id"))
         self.assertEqual(attachments_nbr, 2)
+
+    def test_hide_descriptive_lines(self):
+        """Check that descriptive lines are hidden in the e-invoice
+        according to invoice/partner/company configuration."""
+        # Arrange
+        company = self.company
+        partner = self.res_partner_fatturapa_0
+        invoice = self.init_invoice(
+            "out_invoice",
+            partner=partner,
+            amounts=[
+                100,
+            ],
+        )
+        note_name = "Test note"
+        section_name = "Test section"
+        with Form(invoice) as invoice_form:
+            with invoice_form.invoice_line_ids.new() as section_line:
+                section_line.name = section_name
+                section_line.display_type = "line_section"
+            with invoice_form.invoice_line_ids.new() as note_line:
+                note_line.name = note_name
+                note_line.display_type = "line_note"
+        # Map settings for
+        # invoice, partner, company
+        # to their expected result
+        hide_keys_dict = {
+            (False, False, False): "nothing hidden",
+            ("none", False, False): "nothing hidden",
+            ("note", False, False): "notes hidden",
+            ("section", False, False): "sections hidden",
+            ("note_section", False, False): "both hidden",
+            (False, "note", False): "notes hidden",
+            (False, False, "note"): "notes hidden",
+            ("none", False, "note"): "nothing hidden",
+        }
+
+        for hide_keys, expected_result in hide_keys_dict.items():
+            (
+                invoice.e_invoice_hide_line_type,
+                invoice.partner_id.e_invoice_hide_line_type,
+                company.e_invoice_hide_line_type,
+            ) = hide_keys
+            invoice.action_post()
+
+            # Act
+            self.run_wizard(invoice.ids)
+
+            # Assert
+            e_invoice = invoice.fatturapa_attachment_out_id
+            e_invoice_content = base64.decodebytes(e_invoice.datas).decode()
+            if expected_result == "nothing hidden":
+                self.assertIn(note_name, e_invoice_content)
+                self.assertIn(section_name, e_invoice_content)
+            elif expected_result == "notes hidden":
+                self.assertNotIn(note_name, e_invoice_content)
+                self.assertIn(section_name, e_invoice_content)
+            elif expected_result == "sections hidden":
+                self.assertIn(note_name, e_invoice_content)
+                self.assertNotIn(section_name, e_invoice_content)
+            elif expected_result == "both hidden":
+                self.assertNotIn(note_name, e_invoice_content)
+                self.assertNotIn(section_name, e_invoice_content)
+            else:
+                self.fail(f"Expected result {expected_result} not managed")
+
+            # cleanup for next loop,
+            # without spamming the logs with deleted mail.followers etc.
+            with mute_logger("odoo.models.unlink"):
+                e_invoice.unlink()
+                invoice.button_draft()
