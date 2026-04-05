@@ -116,6 +116,13 @@ zeep
 # From [https://github.com/OCA/l10n-chile.git](https://github.com/OCA/l10n-chile.git)
 # From [https://github.com/OCA/l10n-china.git](https://github.com/OCA/l10n-china.git)
 # From [https://github.com/OCA/l10n-colombia.git](https://github.com/OCA/l10n-colombia.git)
+# generated from manifests external_dependencies
+cryptography
+lxml
+qrcode
+requests
+xmlsig
+xmltodict
 # From [https://github.com/OCA/l10n-costa-rica.git](https://github.com/OCA/l10n-costa-rica.git)
 # From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croatia.git)
 # From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)

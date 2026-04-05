@@ -15,8 +15,6 @@
                     column_invisible="not parent.create_rma"
                     required="is_rma_reason_required and parent.create_rma and quantity>0"
                 />
-                <field name="is_rma_reason_required" invisible="1" />
-                <field name="rma_operation_domain" invisible="1" />
             </xpath>
             <xpath
                 expr="//field[@name='product_return_moves']//list//field[@name='rma_operation_id']"
