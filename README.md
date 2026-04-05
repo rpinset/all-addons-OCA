@@ -416,9 +416,9 @@ Date:   Wed Jun 4 03:37:02 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 7d34780c368d0821161e12997a92d5ea73ae075d
+commit 4ff20e8d506f00cfcc4c928151c2d14a88055d13
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 2 12:39:46 2026 +0000
+Date:   Thu Apr 2 17:28:44 2026 +0000
 
     [BOT] post-merge updates
 
@@ -1085,16 +1085,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 38e603b8b40c46831a3f44647084082bd66b9c3c
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:42:53 2026 +0000
+commit 3c6420b00e9171c764ce3dc97c6d69709e136b98
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 3 07:00:49 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 22.2% (34 of 153 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/sl/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_request_purchase
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_request_purchase/it/
 
 
 ## stock-logistics-reporting
@@ -1108,9 +1108,9 @@ Date:   Thu Feb 26 07:56:54 2026 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit ef1c66e92b8b17bda1b2eef19ee67e734eff4784
+commit 643fdcd7a8927c25b934b673bc65dec05304ae01
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 17 07:25:32 2026 +0000
+Date:   Fri Apr 3 07:28:51 2026 +0000
 
     Translated using Weblate (Italian)
     
