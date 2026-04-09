@@ -17,36 +17,6 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_121togr
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_121togr
-msgid "+121"
-msgstr "+121"
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_01to30
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_01to30
-msgid "1/30"
-msgstr "1/30"
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_31to60
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_31to60
-msgid "31/60"
-msgstr "31/60"
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_61to90
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_61to90
-msgid "61/90"
-msgstr "61/90"
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_91to120
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_91to120
-msgid "91/120"
-msgstr "91/120"
-
-#. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_date__age_date
 msgid "Aging Date"
 msgstr "Data anzianità"
@@ -84,14 +54,14 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: partner_aging
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Current"
 msgstr "Attuale"
 
 #. module: partner_aging
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
 msgid "Customer"
 msgstr "Cliente"
 
@@ -103,7 +73,7 @@ msgid "Customer Aging"
 msgstr "Anzianità cliente"
 
 #. module: partner_aging
-#: model:ir.actions.act_window,name:partner_aging.action_customer_aging_tree
+#: model:ir.actions.act_window,name:partner_aging.action_customer_aging_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
 msgid "Customer Aging Date wise"
 msgstr "In merito alla data anzianità cliente"
@@ -130,8 +100,8 @@ msgstr "Nome visualizzato"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__date_due
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__date_due
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Due Date"
 msgstr "Scadenza"
 
@@ -161,8 +131,8 @@ msgstr "Fattura"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__inv_date_due
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__inv_date_due
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Invoice Date"
 msgstr "Data fattura"
 
@@ -183,8 +153,8 @@ msgid "Not Due Yet"
 msgstr "Non ancora dovuto"
 
 #. module: partner_aging
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Open Document"
 msgstr "Apri documento"
 
@@ -229,14 +199,14 @@ msgid "Sales Rep"
 msgstr "Resoconto vendite"
 
 #. module: partner_aging
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
 msgid "Supplier"
 msgstr "Fornitore"
 
 #. module: partner_aging
 #: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_date
-#: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_tree
+#: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_list
 #: model:ir.ui.menu,name:partner_aging.menu_supplier_aging_wizard
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_date
 msgid "Supplier Aging"
@@ -255,10 +225,10 @@ msgstr "Loro fattura"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__total
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__total
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
 msgid "Total"
 msgstr "Totale"
 
@@ -266,3 +236,18 @@ msgstr "Totale"
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_date
 msgid "or"
 msgstr "o"
+
+#~ msgid "+121"
+#~ msgstr "+121"
+
+#~ msgid "1/30"
+#~ msgstr "1/30"
+
+#~ msgid "31/60"
+#~ msgstr "31/60"
+
+#~ msgid "61/90"
+#~ msgstr "61/90"
+
+#~ msgid "91/120"
+#~ msgstr "91/120"

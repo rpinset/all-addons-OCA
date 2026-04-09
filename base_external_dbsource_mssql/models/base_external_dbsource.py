@@ -4,6 +4,7 @@
 # this is needed to generate connection string
 import pymssql
 import sqlalchemy
+from sqlalchemy import text
 
 from odoo import fields, models
 
@@ -34,6 +35,8 @@ class BaseExternalDbsource(models.Model):
 
     def _execute_mssql(self, sqlquery, sqlparams, metadata):
         rows, cols = list(), list()
+        # Convert to accepted object by sqlalchemy
+        sqlquery = text(sqlquery)
         for record in self:
             with record.connection_open() as connection:
                 if sqlparams is None:

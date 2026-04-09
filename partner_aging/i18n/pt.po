@@ -16,36 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_121togr
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_121togr
-msgid "+121"
-msgstr ""
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_01to30
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_01to30
-msgid "1/30"
-msgstr ""
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_31to60
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_31to60
-msgid "31/60"
-msgstr ""
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_61to90
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_61to90
-msgid "61/90"
-msgstr ""
-
-#. module: partner_aging
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__days_due_91to120
-#: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__days_due_91to120
-msgid "91/120"
-msgstr ""
-
-#. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_date__age_date
 msgid "Aging Date"
 msgstr "Data de Antiguidade"
@@ -83,14 +53,14 @@ msgid "Created on"
 msgstr "Criado em"
 
 #. module: partner_aging
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Current"
 msgstr "Corrente"
 
 #. module: partner_aging
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
 msgid "Customer"
 msgstr "Cliente"
 
@@ -102,7 +72,7 @@ msgid "Customer Aging"
 msgstr "Antiguidade de Clientes"
 
 #. module: partner_aging
-#: model:ir.actions.act_window,name:partner_aging.action_customer_aging_tree
+#: model:ir.actions.act_window,name:partner_aging.action_customer_aging_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
 msgid "Customer Aging Date wise"
 msgstr ""
@@ -129,8 +99,8 @@ msgstr "Nome a Exibir"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__date_due
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__date_due
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Due Date"
 msgstr "Data de Vencimento"
 
@@ -160,8 +130,8 @@ msgstr "Fatura"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__inv_date_due
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__inv_date_due
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Invoice Date"
 msgstr "Data da Fatura"
 
@@ -182,8 +152,8 @@ msgid "Not Due Yet"
 msgstr "Vincendo"
 
 #. module: partner_aging
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 msgid "Open Document"
 msgstr ""
 
@@ -228,14 +198,14 @@ msgid "Sales Rep"
 msgstr "Repr. Vendas"
 
 #. module: partner_aging
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
 msgid "Supplier"
 msgstr "Fornecedor"
 
 #. module: partner_aging
 #: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_date
-#: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_tree
+#: model:ir.actions.act_window,name:partner_aging.action_supplier_aging_list
 #: model:ir.ui.menu,name:partner_aging.menu_supplier_aging_wizard
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_date
 msgid "Supplier Aging"
@@ -254,10 +224,10 @@ msgstr "Fatura Deles"
 #. module: partner_aging
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_customer__total
 #: model:ir.model.fields,field_description:partner_aging.field_res_partner_aging_supplier__total
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_customer_aging_ad_tree
+#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_list
 #: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_search
-#: model_terms:ir.ui.view,arch_db:partner_aging.view_supplier_aging_ad_tree
 msgid "Total"
 msgstr ""
 

@@ -435,6 +435,11 @@ msgstr "Bir role birden fazla kullanıcı ekleme sihirbazı"
 msgid "or"
 msgstr "veya"
 
+#. module: base_user_role
+#: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_form_inherit
+msgid "x"
+msgstr ""
+
 #~ msgid "# Roles"
 #~ msgstr "# Roller"
 

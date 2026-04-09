@@ -1,0 +1,7 @@
+- [Ooops404](https://www.ooops404.com):
+  - Ilyas \<irazor147@gmail.com\>
+- [Aion Tech](https://aiontech.company/):
+  - Simone Rubino \<simone.rubino@aion-tech.it\>
+- [Tecnativa](https://www.tecnativa.com)
+  - Carlos Roca
+  - David Bañón Gil
