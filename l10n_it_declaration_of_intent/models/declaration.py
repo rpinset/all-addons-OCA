@@ -85,7 +85,7 @@ class DeclarationOfIntent(models.Model):
         domain=[("valid_for_declaration_of_intent", "=", True)],
     )
     state = fields.Selection(
-        [("valid", "Valid"), ("expired", "Expired"), ("close", "Close")],
+        [("valid", "Valid"), ("expired", "Expired"), ("close", "Closed")],
         compute="_compute_state",
         store=True,
     )
