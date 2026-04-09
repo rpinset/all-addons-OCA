@@ -553,7 +553,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report_operating_unit](account_financial_report_operating_unit/) | 17.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 17.0.1.2.1 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 17.0.1.3.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Accounting
 [analytic_operating_unit](analytic_operating_unit/) | 17.0.1.0.0 |  | Analytic Operating Unit
 [analytic_operating_unit_access_all](analytic_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Analytics
@@ -567,13 +567,13 @@ addon | version | maintainers | summary
 [pos_operating_unit](pos_operating_unit/) | 17.0.1.0.0 |  | POS with Operating Units
 [product_operating_unit](product_operating_unit/) | 17.0.1.0.0 |  | Adds the concept of operating unit (OU) in products
 [project_operating_unit](project_operating_unit/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
-[purchase_operating_unit](purchase_operating_unit/) | 17.0.1.0.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
+[purchase_operating_unit](purchase_operating_unit/) | 17.0.1.1.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
 [report_qweb_operating_unit](report_qweb_operating_unit/) | 17.0.1.0.0 |  | Qweb Report With Operating Unit
 [res_partner_operating_unit](res_partner_operating_unit/) | 17.0.1.1.0 |  | Introduces Operating Unit fields in Partner
-[sale_operating_unit](sale_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
+[sale_operating_unit](sale_operating_unit/) | 17.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sale_stock_operating_unit](sale_stock_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 17.0.1.0.0 |  | Sales Team Operating Unit
-[stock_operating_unit](stock_operating_unit/) | 17.0.1.0.1 |  | Adds the concept of operating unit (OU) in stock management
+[stock_operating_unit](stock_operating_unit/) | 17.0.1.1.0 |  | Adds the concept of operating unit (OU) in stock management
 [stock_operating_unit_access_all](stock_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Stock
 
 [//]: # (end addons)
@@ -621,7 +621,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.5.0 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.5.1 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
@@ -1075,6 +1075,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
+[account_due_list_aging_comment](account_due_list_aging_comment/) | 17.0.1.0.0 |  | Account Due List Aging Comment
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 17.0.1.0.0 |  | Payment Due List Payment Mode
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Payment Register with Multiple Deduction
 [account_payment_promissory_note](account_payment_promissory_note/) | 17.0.1.0.0 |  | Account Payment Promissory Note
@@ -1780,7 +1781,7 @@ addon | version | maintainers | summary
 [sale_order_line_input](sale_order_line_input/) | 17.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 17.0.1.0.0 |  | Note on sale order line
-[sale_order_line_price_history](sale_order_line_price_history/) | 17.0.1.1.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
+[sale_order_line_price_history](sale_order_line_price_history/) | 17.0.1.1.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
 [sale_order_line_sequence](sale_order_line_sequence/) | 17.0.1.1.1 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_line_tag](sale_order_line_tag/) | 17.0.1.0.1 | <a href='https://github.com/smaciaosi'><img src='https://github.com/smaciaosi.png' width='32' height='32' style='border-radius:50%;' alt='smaciaosi'/></a> <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> <a href='https://github.com/ckolobow'><img src='https://github.com/ckolobow.png' width='32' height='32' style='border-radius:50%;' alt='ckolobow'/></a> | Add tags to classify sales order line reasons
 [sale_order_lot_generator](sale_order_lot_generator/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Sale Order Lot Generator
@@ -1804,7 +1805,7 @@ addon | version | maintainers | summary
 [sale_partner_order_template](sale_partner_order_template/) | 17.0.1.0.0 |  | Order template in partner
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_partner_utm_source](sale_partner_utm_source/) | 17.0.1.0.0 |  | This module adds the use of utm source in sales
-[sale_payment_sheet](sale_payment_sheet/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
+[sale_payment_sheet](sale_payment_sheet/) | 17.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
 [sale_pricelist_global_rule](sale_pricelist_global_rule/) | 17.0.1.0.2 |  | Apply a global rule to all sale order
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.2 |  | Base module for multiple procurement group by Sale order
 [sale_product_configurator_widget_product_label](sale_product_configurator_widget_product_label/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Sale product configurator widget product label
@@ -1970,6 +1971,7 @@ addon | version | maintainers | summary
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 17.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Add a page to contacts form to put personal information
 [partner_contact_role](partner_contact_role/) | 17.0.1.0.0 |  | Add roles to partners.
 [partner_country_lang](partner_country_lang/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner language according country
+[partner_data_vies_populator](partner_data_vies_populator/) | 17.0.1.0.0 |  | Populate Partner name and address using the VIES webservice
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 17.0.1.0.0 |  | Contact deduplication with fine-grained permission control
 [partner_deduplicate_by_website](partner_deduplicate_by_website/) | 17.0.1.0.0 |  | Deduplicate Contacts by Website
 [partner_deduplicate_filter](partner_deduplicate_filter/) | 17.0.1.0.0 |  | Exclude records from the deduplication
@@ -1986,7 +1988,7 @@ addon | version | maintainers | summary
 [partner_identification_gln](partner_identification_gln/) | 17.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
 [partner_industry_secondary](partner_industry_secondary/) | 17.0.1.1.1 |  | Add secondary partner industries
 [partner_lastname_uppercase](partner_lastname_uppercase/) | 17.0.1.0.0 |  | Uppercases the the last names of partners
-[partner_manual_rank](partner_manual_rank/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> | Be able to manually flag partners as customer or supplier.
+[partner_manual_rank](partner_manual_rank/) | 17.0.1.1.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> | Be able to manually flag partners as customer or supplier.
 [partner_multi_relation](partner_multi_relation/) | 17.0.1.0.0 |  | Partner Relations
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 17.0.1.0.0 |  | Track the time and days your partners expect phone calls
 [partner_pricelist_search](partner_pricelist_search/) | 17.0.1.0.0 |  | Partner pricelist search
@@ -1997,6 +1999,7 @@ addon | version | maintainers | summary
 [partner_ref_unique](partner_ref_unique/) | 17.0.1.1.0 |  | Add an unique constraint to partner ref field
 [partner_search_alias](partner_search_alias/) | 17.0.1.0.0 |  | Partner Search Alias
 [partner_second_lastname](partner_second_lastname/) | 17.0.1.0.2 |  | Have split first and second lastnames
+[partner_shipping_policy](partner_shipping_policy/) | 17.0.1.0.0 |  | Define shipping policy at partners level.
 [partner_socialmedia](partner_socialmedia/) | 17.0.1.0.1 |  | Add social media fields to contacts
 [partner_stage](partner_stage/) | 17.0.1.1.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Add lifecycle Stages to Partners
 [partner_stage_only_confirmed](partner_stage_only_confirmed/) | 17.0.1.1.0 |  | Adds filters on form views to display only confirmed partners
@@ -2644,6 +2647,7 @@ addon | version | maintainers | summary
 [fieldservice_current_location](fieldservice_current_location/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Use current location on fsm orders
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate stock operations with your field service equipments
 [fieldservice_equipment_stock_return](fieldservice_equipment_stock_return/) | 17.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Integrate return orders for field service equipments
+[fieldservice_fleet](fieldservice_fleet/) | 17.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Link Field Service vehicles with Odoo Fleet
 [fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.2.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service workflow for Internet Service Providers
 [fieldservice_kanban_info](fieldservice_kanban_info/) | 17.0.1.0.0 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Display key service information on Field Service Kanban cards.
@@ -2768,6 +2772,7 @@ addon | version | maintainers | summary
 [fleet_vehicle_fuel_capacity](fleet_vehicle_fuel_capacity/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the functionality of fleet management. It allows the registration of a vehicle's fuel capacity.
 [fleet_vehicle_history_date_end](fleet_vehicle_history_date_end/) | 17.0.1.0.0 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically assign date end in vehicle history when a new driver is assigned.
 [fleet_vehicle_inspection](fleet_vehicle_inspection/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
+[fleet_vehicle_inspection_template](fleet_vehicle_inspection_template/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extend module fleet_vehicle_inspection enable inspection templates feature
 [fleet_vehicle_service_services](fleet_vehicle_service_services/) | 17.0.1.0.0 |  | Add subservices in Services.
 [fleet_vehicle_usage](fleet_vehicle_usage/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Fleet Vehicle Usage
 
@@ -2991,6 +2996,7 @@ addon | version | maintainers | summary
 [hr_employee_ssn](hr_employee_ssn/) | 17.0.1.0.0 |  | View/edit employee's SIN field
 [hr_job_category](hr_job_category/) | 17.0.1.0.1 |  | Adds tags to employee through contract and job position
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 17.0.1.0.0 |  | This addon allows to manage employee personal equipment
+[hr_personal_equipment_request_tier_validation](hr_personal_equipment_request_tier_validation/) | 17.0.1.0.0 |  | Enables tier validation from hr.personal.equipment.request
 [hr_professional_category](hr_professional_category/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Professional Category
 [hr_study](hr_study/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Structured study field for employees
 [hr_work_entry_profile](hr_work_entry_profile/) | 17.0.1.0.0 |  | User can access their work entries from the profile view.
@@ -3145,7 +3151,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.10 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.11 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Holidays Public City
 [hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.0 |  | Enables Settings Form for HR Holidays.
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 17.0.1.0.1 |  | Edit start and end of leaves using time intervals
@@ -3463,9 +3469,9 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_statement_import_coda](account_statement_import_coda/) | 17.0.1.0.0 |  | Import CODA Bank Statement
 [companyweb_base](companyweb_base/) | 17.0.1.1.0 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
-[companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.1 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Send your customer payment information to Companyweb
+[companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.2 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Send your customer payment information to Companyweb
 [l10n_be_intrastat_product](l10n_be_intrastat_product/) | 17.0.1.0.0 | <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> <a href='https://github.com/jdidderen-noviat'><img src='https://github.com/jdidderen-noviat.png' width='32' height='32' style='border-radius:50%;' alt='jdidderen-noviat'/></a> | Intrastat Product Declaration for Belgium
-[l10n_be_mis_reports](l10n_be_mis_reports/) | 17.0.2.0.0 |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
+[l10n_be_mis_reports](l10n_be_mis_reports/) | 17.0.2.0.1 |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
 [l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 17.0.1.0.0 |  | Belgium - KBO/BCE numbers
 
 [//]: # (end addons)
@@ -4000,7 +4006,7 @@ addon | version | maintainers | summary
 [l10n_fr_department](l10n_fr_department/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Check validity of Social Security Numbers in French companies
-[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | EMEBI (ex-DEB) for France
+[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.2.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | EMEBI (ex-DEB) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Module for Intrastat service reporting (DES) for France
 [l10n_fr_mis_reports](l10n_fr_mis_reports/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | MIS Report templates for the French P&L and Balance Sheets
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 17.0.1.4.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add support for Caisse-AP payment protocol used in France
@@ -4947,25 +4953,25 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.4.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 17.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 17.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.11.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.11.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 17.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.7.2 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.7.3 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.0 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.9.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.9.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 17.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.1.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.5 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.6.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.6.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.3 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
-[l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.2.2 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
-[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.3 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
-[l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.2 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
+[l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.2.3 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
+[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.1.4 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
+[l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.3 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_atc_sii_oca](l10n_es_atc_sii_oca/) | 17.0.1.0.0 |  | Suministro Inmediato de Información en el IGIC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
@@ -4976,22 +4982,22 @@ addon | version | maintainers | summary
 [l10n_es_igic_reav](l10n_es_igic_reav/) | 17.0.1.0.3 |  | Aplicación REAV en la localización canaria
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.1.2 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 17.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | NUTS specific options for Spain
-[l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
+[l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.1 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.7 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.1 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
-[l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.0.0 |  | Punto de venta adaptado a la legislación española
+[l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.1.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 17.0.1.1.0 |  | Envío de pedidos del TPV al SII
 [l10n_es_reav](l10n_es_reav/) | 17.0.1.0.0 | <a href='https://github.com/Bilbonet'><img src='https://github.com/Bilbonet.png' width='32' height='32' style='border-radius:50%;' alt='Bilbonet'/></a> | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.1.1 |  | Libros registro del IVA y del IRPF
+[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.2.1.2 |  | Libros registro del IVA y del IRPF
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 17.0.1.0.2 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.2 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.3.0 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.2.1 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.2.2 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 17.0.1.0.2 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -7431,7 +7437,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_logging](attachment_logging/) | 17.0.1.0.0 |  | Show attachment information in chatter
 [attachment_queue](attachment_queue/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
-[auditlog](auditlog/) | 17.0.1.1.0 |  | Audit Log
+[auditlog](auditlog/) | 17.0.1.1.1 |  | Audit Log
 [auto_backup](auto_backup/) | 17.0.1.1.1 |  | Backups database
 [auto_backup_fs_file](auto_backup_fs_file/) | 17.0.1.0.0 |  | Store backups using some FSSPEC implementation
 [base_cron_exclusion](base_cron_exclusion/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
