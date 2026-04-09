@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2024-05-21 03:19+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"Last-Translator: Rodrigo Macedo "
+"<sottomaiormacedotec@users.noreply.translation.odoo-community.org>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -18,10 +18,15 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_account
+#: model:ir.model.fields,field_description:fieldservice_account.field_account_payment__fsm_order_count
+msgid "FSM Order Count"
+msgstr "Contagem de Ordens do FSM (Field Service Management)"
+
+#. module: fieldservice_account
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_bank_statement_line__fsm_order_count
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_move__fsm_order_count
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_move_line__fsm_order_ids
-#: model:ir.model.fields,field_description:fieldservice_account.field_account_payment__fsm_order_count
+#: model:ir.model.fields,field_description:fieldservice_account.field_account_payment__fsm_order_ids
 #: model_terms:ir.ui.view,arch_db:fieldservice_account.account_invoice_form
 #: model_terms:ir.ui.view,arch_db:fieldservice_account.invoice_search_view_fso
 msgid "FSM Orders"
@@ -45,7 +50,6 @@ msgstr "Estágio do Serviço de Campo"
 #. module: fieldservice_account
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_bank_statement_line__fsm_order_ids
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_move__fsm_order_ids
-#: model:ir.model.fields,field_description:fieldservice_account.field_account_payment__fsm_order_ids
 msgid "Field Service orders associated to this invoice"
 msgstr "Ordens de Serviço de Campo associadas a esta fatura"
 
@@ -86,9 +90,6 @@ msgstr "Item de Diário"
 
 #~ msgid "Display Name"
 #~ msgstr "Nome Exibido"
-
-#~ msgid "FSM Order Count"
-#~ msgstr "Contagem de Ordens do FSM (Field Service Management)"
 
 #~ msgid "ID"
 #~ msgstr "ID"

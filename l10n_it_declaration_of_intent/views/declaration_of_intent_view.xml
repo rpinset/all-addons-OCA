@@ -148,7 +148,7 @@
                 />
                 <filter
                     name="state_close"
-                    string="Close"
+                    string="Closed"
                     domain="[('state','=','close')]"
                 />
                 <filter

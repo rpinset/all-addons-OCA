@@ -6,7 +6,7 @@
     "name": "Sale payment sheet",
     "summary": "Allow to create invoice payments to commercial users without "
     "accounting permissions",
-    "version": "16.0.1.1.2",
+    "version": "16.0.1.1.3",
     "development_status": "Beta",
     "category": "Account",
     "website": "https://github.com/OCA/sale-workflow",

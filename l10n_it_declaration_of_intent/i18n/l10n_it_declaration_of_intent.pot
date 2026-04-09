@@ -89,7 +89,7 @@ msgstr ""
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields.selection,name:l10n_it_declaration_of_intent.selection__l10n_it_declaration_of_intent_declaration__state__close
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_search
-msgid "Close"
+msgid "Closed"
 msgstr ""
 
 #. module: l10n_it_declaration_of_intent
