@@ -2260,6 +2260,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# sale-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-reporting&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/sale-reporting/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/sale-reporting/actions/workflows/test.yml?query=branch%3A15.0)
@@ -2267,8 +2270,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/sale-reporting-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-reporting-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# sale-reporting
 
 TODO: add repo description.
 
@@ -2295,6 +2296,7 @@ addon | version | maintainers | summary
 [sale_report_delivered_brand](sale_report_delivered_brand/) | 15.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Sale Report Delivered Brand
 [sale_report_delivered_elaboration](sale_report_delivered_elaboration/) | 15.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered Elaboration
 [sale_report_delivered_partner_priority](sale_report_delivered_partner_priority/) | 15.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Sale Report Delivered Partner Priority
+[sale_report_delivered_semaphore](sale_report_delivered_semaphore/) | 15.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Sale Report Delivered Semaphore
 [sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 15.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered subtotal
 [sale_report_delivered_volume](sale_report_delivered_volume/) | 15.0.1.0.0 |  | Sale Report Delivered Volume
 [sale_report_salesman](sale_report_salesman/) | 15.0.1.0.1 | <a href='https://github.com/carolina-fernandez'><img src='https://github.com/carolina-fernandez.png' width='32' height='32' style='border-radius:50%;' alt='carolina-fernandez'/></a> | Sale Report Salesman
@@ -3473,6 +3475,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# multi-company
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/multi-company&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/multi-company/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/multi-company/actions/workflows/test.yml?query=branch%3A15.0)
@@ -3480,8 +3485,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/multi-company-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/multi-company-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# multi-company
 
 TODO: add repo description.
 
@@ -8990,7 +8993,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 15.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_view_calendar_list](web_view_calendar_list/) | 15.0.1.0.0 |  | Show calendars as a List
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 15.0.1.1.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | This widget allows to display charts using Bokeh library.
-[web_widget_char_size](web_widget_char_size/) | 15.0.1.0.0 |  | Add size option to Char widget
+[web_widget_char_size](web_widget_char_size/) | 15.0.1.0.1 |  | Add size option to Char widget
 [web_widget_child_selector](web_widget_child_selector/) | 15.0.1.0.0 |  | Widget used for navigation on hierarchy fields
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 15.0.1.0.1 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 15.0.1.0.0 |  | This module adds support for dynamic dropdown widget

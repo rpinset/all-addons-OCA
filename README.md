@@ -217,16 +217,16 @@ Date:   Wed Jun 4 02:39:57 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 67d27cce7bb259a96b1f39d11bdf4fa59226e893
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Thu Sep 25 19:10:46 2025 +0000
+commit cb16af4157fb78b17da246295f59095c710593eb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Apr 8 10:50:23 2026 +0000
 
-    Translated using Weblate (Catalan)
+    Translated using Weblate (Italian)
     
-    Currently translated at 25.2% (24 of 95 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: account-payment-15.0/account-payment-15.0-account_payment_return
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-15-0/account-payment-15-0-account_payment_return/ca/
+    Translation: account-payment-15.0/account-payment-15.0-account_due_list_payment_mode
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-15-0/account-payment-15-0-account_due_list_payment_mode/it/
 
 
 ## connector
@@ -407,11 +407,11 @@ Date:   Wed Jun 4 03:36:25 2025 +0000
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit 772443d08a90b8e2dd1e530bd80a710059c6f3a5
+commit 0587b35b438a1edbe701fa62feab2b0321e46348
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:37:02 2025 +0000
+Date:   Mon Apr 6 07:12:00 2026 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## commission
@@ -615,11 +615,14 @@ Date:   Sun Feb 2 18:21:44 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 00056c5427693f4de103dad3106da1ebf0b48cb5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:18:33 2025 +0000
+commit b32c7476a23de301ec5f293ddc19f9ff7a02e229
+Merge: 00056c54 2e9339c1
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Apr 6 12:43:16 2026 +0200
 
-    [UPD] addons table in README.md
+    Merge pull request #980 from qrtl/15.0-copier
+    
+    [15.0] Update copier template to v1.39
 
 
 ## l10n-argentina
@@ -1626,9 +1629,9 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit e5fffe9fbb20063cbc58d87cce7f4ba172eea090
+commit 952baf06bb611b179ad47df2033f493c0c927568
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 24 07:30:35 2026 +0000
+Date:   Tue Apr 7 16:21:59 2026 +0000
 
     [BOT] post-merge updates
 
