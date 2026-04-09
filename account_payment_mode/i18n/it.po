@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2024-03-05 14:38+0000\n"
+"PO-Revision-Date: 2026-04-08 13:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_mode
 #: sql_constraint:account.payment.method:0
@@ -290,7 +290,7 @@ msgstr "Metodi di pagamento"
 #. module: account_payment_mode
 #: model_terms:ir.ui.view,arch_db:account_payment_mode.account_payment_mode_form
 msgid "Payment Mode"
-msgstr "Metodo di pagamento"
+msgstr "Modo di pagamento"
 
 #. module: account_payment_mode
 #: model:ir.actions.act_window,name:account_payment_mode.account_payment_mode_action

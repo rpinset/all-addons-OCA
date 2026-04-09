@@ -219,16 +219,16 @@ Date:   Thu Oct 3 08:18:16 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit aadf4bf69a5b8f734440f034cb9a254d5affe7eb
+commit 2cf72e2c9d2f521ffbf818d220522c0ad306cb27
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:43:45 2025 +0000
+Date:   Wed Apr 8 10:48:56 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.1% (100 of 104 strings)
+    Currently translated at 64.2% (36 of 56 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_mandate/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_mode
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_mode/it/
 
 
 ## account-reconcile
@@ -841,16 +841,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 4324c254705213304047c8f653e9533328f93353
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 31 08:24:30 2026 +0000
+commit 44811eee08a0d13cafd2c0ace98028acf9346ade
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Wed Apr 8 10:23:24 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (173 of 173 strings)
+    Currently translated at 100.0% (78 of 78 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_dichiarazione_intento
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_dichiarazione_intento/it/
 
 
 ## l10n-japan
