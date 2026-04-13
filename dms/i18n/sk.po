@@ -1,0 +1,2326 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-04-13 14:36+0000\n"
+"Last-Translator: SMNDVC <simon.dovicovic@gmail.com>\n"
+"Language-Team: none\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_process
+msgid ""
+"                Define how incoming emails are processed:\n"
+"\n"
+"                - Single Files: The email gets attached to the directory and\n"
+"                all attachments are created as files.\n"
+"\n"
+"                - Subdirectory: A new subdirectory is created for each email\n"
+"                and the mail is attached to this subdirectory. The attachments\n"
+"                are created as files of the subdirectory.\n"
+"                "
+msgstr ""
+"                Definuje, ako sa spracúvajú prichádzajúce e-maily:\n"
+"\n"
+"                - Jednotlivé súbory: E-mail sa pripojí k priečinku a\n"
+"                všetky prílohy sa vytvoria ako súbory.\n"
+"\n"
+"                - Podpriečinok: Pre každý e-mail sa vytvorí nový "
+"podpriečinok\n"
+"                a e-mail sa pripojí k tomuto podpriečinku. Prílohy\n"
+"                sa vytvoria ako súbory podpriečinka.\n"
+"                "
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/access_groups.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (kópia)"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Files"
+msgstr "%s súbory"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Subdirectories"
+msgstr "%s podpriečinky"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Archive"
+msgstr ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Archivovať"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Unarchive"
+msgstr ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Obnoviť z archívu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Download"
+msgstr ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Stiahnuť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid ""
+"<i class=\"fa fa-exclamation-triangle mr-3\" title=\"Warning\"/>\n"
+"                    <b>ATTENTION:</b> Tips to keep in mind before moving files:<br/>\n"
+"                    - This change cannot be undone.<br/>\n"
+"                    - Remember that the permissions of the files are those of the folder that contains it, therefore, it is possible that when you change it, the permissions will also change.<br/>\n"
+"                    Make this change at your own risk."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-3\" title=\"Warning\"/>\n"
+"                    <b>POZOR:</b> Tipy, ktoré treba mať na pamäti pred "
+"presunom súborov:<br/>\n"
+"                    - Túto zmenu nie je možné vrátiť späť.<br/>\n"
+"                    - Nezabudnite, že oprávnenia súborov sú rovnaké ako "
+"oprávnenia priečinka, ktorý ich obsahuje, preto sa pri zmene môžu zmeniť aj "
+"oprávnenia.<br/>\n"
+"                    Túto zmenu vykonávate na vlastné riziko."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-external-link\"/>\n"
+"                                            Open"
+msgstr ""
+"<i class=\"fa fa-external-link\"/>\n"
+"                                            Otvoriť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid ""
+"<i class=\"fa fa-file-o\"/>\n"
+"                                            Files"
+msgstr ""
+"<i class=\"fa fa-file-o\"/>\n"
+"                                            Súbory"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid ""
+"<i class=\"fa fa-folder-o\"/>\n"
+"                                            Directories"
+msgstr ""
+"<i class=\"fa fa-folder-o\"/>\n"
+"                                            Priečinky"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-lock\"/>\n"
+"                                            Lock"
+msgstr ""
+"<i class=\"fa fa-lock\"/>\n"
+"                                            Zamknúť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-pencil-square-o\"/>\n"
+"                                            Edit"
+msgstr ""
+"<i class=\"fa fa-pencil-square-o\"/>\n"
+"                                            Upraviť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-trash-o\"/>\n"
+"                                            Delete"
+msgstr ""
+"<i class=\"fa fa-trash-o\"/>\n"
+"                                            Odstrániť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-unlock-alt\"/>\n"
+"                                            Unlock"
+msgstr ""
+"<i class=\"fa fa-unlock-alt\"/>\n"
+"                                            Odomknúť"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </span>"
+msgstr ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </"
+"span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid "<span>Actions</span>"
+msgstr "<span>Akcie</span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "<span>Documents</span>"
+msgstr "<span>Dokumenty</span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid "<span>Operations</span>"
+msgstr "<span>Operácie</span>"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr ""
+"Slovník Pythonu, ktorý sa vyhodnotí na poskytnutie predvolených hodnôt pri "
+"vytváraní nových záznamov pre tento alias."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory can't be a root and have a parent directory."
+msgstr "Priečinok nemôže byť koreňový a zároveň mať nadradený priečinok."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory has to have a parent directory."
+msgstr "Priečinok musí mať nadradený priečinok."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory has to have model in attachment storage."
+msgstr "Priečinok musí mať v úložisku príloh model."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory with the same name already exists."
+msgstr "Priečinok s rovnakým názvom už existuje."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "A file must have model and resource ID in attachment storage."
+msgstr "Súbor musí mať v úložisku príloh model a ID zdroja."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "A file with the same name already exists in this directory."
+msgstr "V tomto priečinku už existuje súbor s rovnakým názvom."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A root directory has to have a storage."
+msgstr "Koreňový priečinok musí mať úložisko."
+
+#. module: dms
+#: model:ir.model,name:dms.model_abstract_dms_mixin
+msgid "Abstract Dms Mixin"
+msgstr "Abstract Dms Mixin"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Accept Emails from"
+msgstr "Prijímať e-maily od"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_access_groups
+#: model:ir.ui.menu,name:dms.menu_dms_access_groups
+msgid "Access Groups"
+msgstr "Prístupové skupiny"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Access Information"
+msgstr "Informácie o prístupe"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_warning
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_warning
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__access_warning
+msgid "Access warning"
+msgstr "Upozornenie na prístup"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_07_demo
+msgid "Accounting"
+msgstr "Účtovníctvo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction
+msgid "Action Needed"
+msgstr "Vyžaduje akciu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Actions"
+msgstr "Akcie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__active
+#: model:ir.model.fields,field_description:dms.field_dms_tag__active
+msgid "Active"
+msgstr "Aktívne"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_ids
+msgid "Activities"
+msgstr "Aktivity"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Označenie výnimky aktivity"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_state
+msgid "Activity State"
+msgstr "Stav aktivity"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona typu aktivity"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+msgid "Add a new Directory."
+msgstr "Pridať nový priečinok."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+msgid "Add a new File."
+msgstr "Pridať nový súbor."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_wizard_dms_share__note
+msgid "Add extra content to display in the email"
+msgstr "Pridať dodatočný obsah na zobrazenie v e-maile"
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_01_demo
+msgid "Admin"
+msgstr "Administrátor"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_id
+msgid "Alias"
+msgstr "Alias"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_contact
+msgid "Alias Contact Security"
+msgstr "Zabezpečenie kontaktov aliasu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain_id
+msgid "Alias Domain"
+msgstr "Doména aliasu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain
+msgid "Alias Domain Name"
+msgstr "Názov domény aliasu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_full_name
+msgid "Alias Email"
+msgstr "E-mail aliasu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_name
+msgid "Alias Name"
+msgstr "Názov aliasu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Alias Setting"
+msgstr "Nastavenie aliasu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_status
+msgid "Alias Status"
+msgstr "Stav aliasu"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr "Stav aliasu vyhodnotený na základe poslednej prijatej správy."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Alias-Mail-Extraction"
+msgstr "Alias-Mail-Extraction"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_model_id
+msgid "Aliased Model"
+msgstr "Model aliasu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "All"
+msgstr "Všetko"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "All Files"
+msgstr "Všetky súbory"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
+#, python-format
+msgid "An error occurred during the upload"
+msgstr "Počas nahrávania sa vyskytla chyba"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_06_demo
+msgid "Apps"
+msgstr "Aplikácie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__active
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Archived"
+msgstr "Archivované"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Archived Files"
+msgstr "Archivované súbory"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Are you sure? All files will be moved."
+msgstr "Ste si istí? Všetky súbory budú presunuté."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model,name:dms.model_ir_attachment
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__attachment
+#, python-format
+msgid "Attachment"
+msgstr "Príloha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_attachment_count
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_attachment_count
+msgid "Attachment Count"
+msgstr "Počet príloh"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__attachment_id
+msgid "Attachment File"
+msgstr "Súbor prílohy"
+
+#. module: dms
+#: model:ir.model,name:dms.model_base
+msgid "Base"
+msgstr "Základ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_category
+#: model:ir.ui.menu,name:dms.menu_dms_category
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Categories"
+msgstr "Kategórie"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Categories are used to categorize Documents."
+msgstr "Kategórie sa používajú na kategorizáciu dokumentov."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__category_id
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Category"
+msgstr "Kategória"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_category_name_uniq
+msgid "Category name already exists!"
+msgstr "Názov kategórie už existuje!"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__checksum
+msgid "Checksum/SHA1"
+msgstr "Checksum/SHA1"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__child_category_ids
+msgid "Child Categories"
+msgstr "Podkategórie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__child_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Child Groups"
+msgstr "Podriadené skupiny"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+msgid "Click to add a new directory."
+msgstr "Kliknutím pridáte nový priečinok."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Click to add a new file."
+msgstr "Kliknutím pridáte nový súbor."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Click to create a new tag."
+msgstr "Kliknutím vytvoríte novú značku."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__closed
+msgid "Closed"
+msgstr "Uzavreté"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__color
+#: model:ir.model.fields,field_description:dms.field_dms_directory__color
+#: model:ir.model.fields,field_description:dms.field_dms_file__color
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Color"
+msgstr "Farba"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_tag__color
+msgid "Color Index"
+msgstr "Index farby"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_company
+msgid "Companies"
+msgstr "Spoločnosti"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__company_id
+msgid "Company"
+msgstr "Spoločnosť"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Complete Groups"
+msgstr "Kompletné skupiny"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__complete_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_name
+msgid "Complete Name"
+msgstr "Úplný názov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__complete_directory_ids
+msgid "Complete directories"
+msgstr "Úplné priečinky"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_config_settings
+msgid "Config Settings"
+msgstr "Nastavenia konfigurácie"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config
+msgid "Configuration"
+msgstr "Konfigurácia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content
+msgid "Content"
+msgstr "Obsah"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_binary
+msgid "Content Binary"
+msgstr "Binárny obsah"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_file
+msgid "Content File"
+msgstr "Súbor obsahu"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_11_demo
+msgid "Contract"
+msgstr "Zmluva"
+
+#. module: dms
+#: model:dms.category,name:dms.category_03_demo
+msgid "Contracts"
+msgstr "Zmluvy"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_directories
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_directories
+msgid "Count Directories"
+msgstr "Počet priečinkov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_elements
+msgid "Count Elements"
+msgstr "Počet prvkov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_files
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files_title
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_files
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_files
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__count_files
+msgid "Count Files"
+msgstr "Počet súborov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files
+msgid "Count Files Title"
+msgstr "Nadpis počtu súborov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_categories
+msgid "Count Subcategories"
+msgstr "Počet podkategórií"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories_title
+msgid "Count Subdirectories"
+msgstr "Počet podpriečinkov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories
+msgid "Count Subdirectories Title"
+msgstr "Nadpis počtu podpriečinkov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_tags
+msgid "Count Tags"
+msgstr "Počet značiek"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_users
+msgid "Count Users"
+msgstr "Počet používateľov"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+msgid "Create"
+msgstr "Vytvoriť"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_create
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_create
+msgid "Create Access"
+msgstr "Prístup na vytváranie"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_create_directory
+msgid "Create Directory"
+msgstr "Vytvoriť priečinok"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_document_storage
+msgid "Create Storage"
+msgstr "Vytvoriť úložisko"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Create a new Category."
+msgstr "Vytvoriť novú kategóriu."
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_document_storage
+msgid "Create a new Document Storage."
+msgstr "Vytvoriť nové úložisko dokumentov."
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_create_directory
+msgid "Create a new Root Directory."
+msgstr "Vytvoriť nový koreňový priečinok."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Create a new Storage object."
+msgstr "Vytvoriť nový objekt úložiska."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__include_message_attachments
+msgid "Create files from message attachments"
+msgstr "Vytvárať súbory z príloh správ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__create_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__create_uid
+msgid "Created by"
+msgstr "Vytvoril"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__create_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__create_date
+msgid "Created on"
+msgstr "Vytvorené"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Creation Date"
+msgstr "Dátum vytvorenia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__save_type
+msgid "Current Save Type"
+msgstr "Aktuálny typ uloženia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "Vlastná správa o nedoručení"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_01_demo
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Customer"
+msgstr "Zákazník"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_08_demo
+msgid "Customer Invoice"
+msgstr "Faktúra zákazníka"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__access_url
+#: model:ir.model.fields,help:dms.field_dms_file__access_url
+msgid "Customer Portal URL"
+msgstr "URL zákazníckeho portálu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "DMS"
+msgstr "DMS"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_security_mixin
+msgid "DMS Security Mixin"
+msgstr "DMS Security Mixin"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_mixins_thumbnail
+msgid "DMS thumbnail and icon mixin"
+msgstr "DMS thumbnail and icon mixin"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__database
+#, python-format
+msgid "Database"
+msgstr "Databáza"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_defaults
+msgid "Default Values"
+msgstr "Predvolené hodnoty"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Define forbidden file extensions"
+msgstr "Definujte zakázané prípony súborov"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Define the maximum upload size of a file in MB"
+msgstr "Definujte maximálnu veľkosť nahrávaného súboru v MB"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Defines a list of forbidden file extensions. (Example: 'exe,msi')"
+msgstr "Definuje zoznam zakázaných prípon súborov. (Príklad: 'exe,msi')"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_binary_max_size
+msgid "Defines the maximum upload size in MB. Default (25MB)"
+msgstr "Definuje maximálnu veľkosť nahrávania v MB. Predvolene (25MB)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_unlink
+msgid "Delete Access"
+msgstr "Prístup na odstraňovanie"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_storage
+#: model:ir.actions.act_window,name:dms.action_dms_directory
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_category__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__directory_ids
+#: model:ir.ui.menu,name:dms.menu_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Directories"
+msgstr "Priečinky"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+msgid ""
+"Directories can be used to structure and organize\n"
+"                files directly in Odoo."
+msgstr ""
+"Priečinky sa dajú použiť na štruktúrovanie a organizáciu\n"
+"                súborov priamo v Odoo."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_directory
+#: model:ir.model.fields,field_description:dms.field_dms_file__directory_id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__directory_id
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_create_directory
+msgid "Directory"
+msgstr "Priečinok"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_category__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_file__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__display_name
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__display_name
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__display_name
+msgid "Display Name"
+msgstr "Zobrazovaný názov"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_category
+msgid "Document Category"
+msgstr "Kategória dokumentu"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_document_storage
+msgid "Document Storage Created!"
+msgstr "Úložisko dokumentov vytvorené!"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_tag
+msgid "Document Tag"
+msgstr "Značka dokumentu"
+
+#. module: dms
+#: model:ir.module.category,name:dms.category_dms_security
+#: model:ir.ui.menu,name:dms.main_menu_dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_home_dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Documents"
+msgstr "Dokumenty"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_directory_state
+msgid "Documents Onboarding Directory State"
+msgstr "Stav zavádzania dokumentov pre priečinok"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_file_state
+msgid "Documents Onboarding File State"
+msgstr "Stav zavádzania dokumentov pre súbor"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_state
+msgid "Documents Onboarding State"
+msgstr "Stav zavádzania dokumentov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_storage_state
+msgid "Documents Onboarding Storage State"
+msgstr "Stav zavádzania dokumentov pre úložisko"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__done
+msgid "Done"
+msgstr "Hotovo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_lock_editor
+msgid "Editor"
+msgstr "Editor"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Elements"
+msgstr "Prvky"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_email
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Email Alias"
+msgstr "E-mailový alias"
+
+#. module: dms
+#: model:ir.model,name:dms.model_mail_thread
+msgid "Email Thread"
+msgstr "E-mailové vlákno"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_domain
+msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
+msgstr "E-mailová doména, napr. 'example.com' v 'odoo@example.com'"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_category.py:0
+#, python-format
+msgid "Error! You cannot create recursive categories."
+msgstr "Chyba! Nie je možné vytvárať rekurzívne kategórie."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Error! You cannot create recursive directories."
+msgstr "Chyba! Nie je možné vytvárať rekurzívne priečinky."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__explicit_user_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Explicit Users"
+msgstr "Explicitne určení používatelia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__extension
+msgid "Extension"
+msgstr "Prípona"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Extensions"
+msgstr "Prípony"
+
+#. module: dms
+#: model:dms.category,name:dms.category_05_demo
+msgid "External"
+msgstr "Externé"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_file
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_upload_file
+msgid "File"
+msgstr "Súbor"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Extensions"
+msgstr "Prípony súborov"
+
+#. module: dms
+#: model:onboarding.onboarding,name:dms.onboarding_onboarding_dms_file
+msgid "File Onboarding"
+msgstr "Zavádzanie súborov"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Size"
+msgstr "Veľkosť súboru"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Upload"
+msgstr "Nahrávanie súborov"
+
+#. module: dms
+#: model:ir.model,name:dms.model_ir_binary
+msgid "File streaming helper model for controllers"
+msgstr "Pomocný model streamovania súborov pre controllery"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_file
+#: model:ir.actions.act_window,name:dms.action_dms_file_migration
+#: model:ir.actions.act_window,name:dms.action_dms_file_storage_migration
+#: model:ir.actions.act_window,name:dms.action_dms_file_wizard_selector
+#: model:ir.actions.act_window,name:dms.action_dms_files_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_storage
+#: model:ir.model.fields,field_description:dms.field_dms_category__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__file_ids
+#: model:ir.ui.menu,name:dms.menu_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Files"
+msgstr "Súbory"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Files are used to save content directly in Odoo."
+msgstr "Súbory sa používajú na ukladanie obsahu priamo v Odoo."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__file
+#, python-format
+msgid "Filestore"
+msgstr "Úložisko súborov"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_upload_file
+msgid "First File Uploaded!"
+msgstr "Prvý súbor nahraný!"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_follower_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_follower_ids
+msgid "Followers"
+msgstr "Sledujúci"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_partner_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Sledujúci (partneri)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikona Font Awesome, napr. fa-tasks"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_settings_general
+#: model:ir.ui.menu,name:dms.menu_dms_settings_general
+msgid "General Settings"
+msgstr "Všeobecné nastavenia"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Group"
+msgstr "Skupina"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Group By"
+msgstr "Zoskupiť podľa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__name
+msgid "Group Name"
+msgstr "Názov skupiny"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__users
+msgid "Group Users"
+msgstr "Používatelia skupiny"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__group_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Groups"
+msgstr "Skupiny"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__has_message
+#: model:ir.model.fields,field_description:dms.field_dms_file__has_message
+msgid "Has Message"
+msgstr "Má správu"
+
+#. module: dms
+#: model:dms.category,name:dms.category_02_demo
+msgid "Human Resource"
+msgstr "Ľudské zdroje"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__id
+#: model:ir.model.fields,field_description:dms.field_dms_category__id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__id
+#: model:ir.model.fields,field_description:dms.field_dms_file__id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__id
+msgid "ID"
+msgstr "ID"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr ""
+"ID nadradeného záznamu, ktorý drží alias (napríklad projekt držiaci alias na "
+"vytvorenie úlohy)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_icon
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__icon_url
+msgid "Icon URL"
+msgstr "URL ikony"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona označujúca výnimočnú aktivitu."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_file__active
+msgid "If a file is set to archived, it is not displayed, but still exists."
+msgstr ""
+"Ak je súbor nastavený ako archivovaný, nezobrazuje sa, ale stále existuje."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Ak je zaškrtnuté, nové správy vyžadujú vašu pozornosť."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Ak je zaškrtnuté, niektoré správy majú chybu doručenia."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,help:dms.field_dms_directory__company_id
+#: model:ir.model.fields,help:dms.field_dms_file__company_id
+#: model:ir.model.fields,help:dms.field_dms_storage__company_id
+msgid ""
+"If set, directories and files will only be available for the selected "
+"company."
+msgstr ""
+"Ak je nastavené, priečinky a súbory budú dostupné len pre vybranú spoločnosť."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr ""
+"Ak je nastavené, tento obsah bude automaticky odoslaný neoprávneným "
+"používateľom namiesto predvolenej správy."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1920
+msgid "Image"
+msgstr "Obrázok"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1024
+msgid "Image 1024"
+msgstr "Obrázok 1024"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_128
+msgid "Image 128"
+msgstr "Obrázok 128"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_256
+msgid "Image 256"
+msgstr "Obrázok 256"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_512
+msgid "Image 512"
+msgstr "Obrázok 512"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,help:dms.field_dms_storage__inherit_access_from_parent_record
+msgid ""
+"Indicate if directories and files access work only with related model access"
+" (for example, if some directories are related with any sale, only users "
+"with read access to these sale can access)"
+msgstr ""
+"Označuje, či prístup k priečinkom a súborom funguje len cez prístup k "
+"súvisiacemu modelu (napríklad ak niektoré priečinky súvisia s nejakým "
+"predajom, pristupovať k nim môžu iba používatelia s právom čítania tohto "
+"predaja)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_storage__include_message_attachments
+msgid ""
+"Indicate if directories and files auto-create in mail composition process "
+"too"
+msgstr ""
+"Označuje, či sa priečinky a súbory automaticky vytvárajú aj pri procese "
+"tvorby e-mailu"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_storage__is_hidden
+msgid "Indicates if directories and files are hidden by default."
+msgstr "Označuje, či sú priečinky a súbory predvolene skryté."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__is_root_directory
+msgid ""
+"Indicates if the directory is a root directory.\n"
+"        A root directory has a settings object, while a directory with a set\n"
+"        parent inherits the settings form its parent."
+msgstr ""
+"Označuje, či je priečinok koreňový.\n"
+"        Koreňový priečinok má objekt nastavení, zatiaľ čo priečinok s "
+"nastaveným\n"
+"        nadradeným priečinkom dedí nastavenia od svojho rodiča."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__inherit_group_ids
+msgid "Inherit Groups"
+msgstr "Zdediť skupiny"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,field_description:dms.field_dms_storage__inherit_access_from_parent_record
+msgid "Inherit permissions from related record"
+msgstr "Zdediť oprávnenia zo súvisiaceho záznamu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_create
+msgid "Inherited Create Access"
+msgstr "Zdedený prístup na vytváranie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_unlink
+msgid "Inherited Unlink Access"
+msgstr "Zdedený prístup na odstránenie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_write
+msgid "Inherited Write Access"
+msgstr "Zdedený prístup na zápis"
+
+#. module: dms
+#: model:dms.category,name:dms.category_01_demo
+msgid "Internal"
+msgstr "Interné"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Internal / Human Resource"
+msgstr "Interné / Ľudské zdroje"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Invalid attachments!"
+msgstr "Neplatné prílohy!"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Invoices"
+msgstr "Faktúry"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_is_follower
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_is_follower
+msgid "Is Follower"
+msgstr "Je sledujúci"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_root_directory
+msgid "Is Root Directory"
+msgstr "Je koreňový priečinok"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change the storage."
+msgstr "Nie je možné zmeniť úložisko."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change to a parent with other storage."
+msgstr "Nie je možné zmeniť nadradený priečinok na priečinok s iným úložiskom."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__just_done
+msgid "Just done"
+msgstr "Práve dokončené"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__write_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__write_uid
+msgid "Last Updated by"
+msgstr "Naposledy aktualizoval"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__write_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__write_date
+msgid "Last Updated on"
+msgstr "Naposledy aktualizované"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Last update"
+msgstr "Posledná aktualizácia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__share_link
+msgid "Link"
+msgstr "Odkaz"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__allowed_model_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model_ids
+msgid "Linked Models"
+msgstr "Prepojené modely"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_model
+msgid "Linked attachments model"
+msgstr "Model prepojených príloh"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_id
+msgid "Linked attachments record ID"
+msgstr "ID záznamu prepojených príloh"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr "Detekcia prichádzajúcich správ podľa local-part"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Lock"
+msgstr "Zamknúť"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_locked
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Locked"
+msgstr "Zamknuté"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__locked_by
+msgid "Locked By"
+msgstr "Zamkol"
+
+#. module: dms
+#: model:res.groups,name:dms.group_dms_manager
+msgid "Manager"
+msgstr "Manažér"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Manual File Migration"
+msgstr "Manuálna migrácia súborov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error
+msgid "Message Delivery error"
+msgstr "Chyba doručenia správy"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_ids
+msgid "Messages"
+msgstr "Správy"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Meta Information"
+msgstr "Meta informácie"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.action_dms_attachment_migrate
+msgid "Migrate"
+msgstr "Migrovať"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Migrate File %(index)s of %(record_count)s [ %(dms_file_migration)s ]"
+msgstr "Migrovať súbor %(index)s z %(record_count)s [ %(dms_file_migration)s ]"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Migrate Files"
+msgstr "Migrovať súbory"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.menu_dms_file_migration
+msgid "Migration"
+msgstr "Migrácia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__migration
+msgid "Migration Status"
+msgstr "Stav migrácie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__model_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model
+msgid "Model"
+msgstr "Model"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Modification Date"
+msgstr "Dátum úpravy"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.action_wizard_dms_file_move
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Move"
+msgstr "Presunúť"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.wizard_dms_file_move_act_window
+msgid "Move files"
+msgstr "Presunúť súbory"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Termín mojej aktivity"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "My Directories"
+msgstr "Moje priečinky"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "My Documents"
+msgstr "Moje dokumenty"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "My Files"
+msgstr "Moje súbory"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/portal.py:0
+#: code:addons/dms/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__name
+#: model:ir.model.fields,field_description:dms.field_dms_category__name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__name
+#: model:ir.model.fields,field_description:dms.field_dms_file__name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__name
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+#, python-format
+msgid "Name"
+msgstr "Názov"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directory_new
+#: model:ir.actions.act_window,name:dms.action_dms_file_new
+msgid "New Root Directory"
+msgstr "Nový koreňový priečinok"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage_new
+msgid "New Storage"
+msgstr "Nové úložisko"
+
+#. module: dms
+#: model:dms.category,name:dms.category_06_demo
+msgid "News"
+msgstr "Novinky"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Termín nasledujúcej aktivity"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_summary
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_summary
+msgid "Next Activity Summary"
+msgstr "Zhrnutie nasledujúcej aktivity"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
+msgid "Next Activity Type"
+msgstr "Typ nasledujúcej aktivity"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "No attachment was provided"
+msgstr "Nebola poskytnutá žiadna príloha"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__not_done
+msgid "Not done"
+msgstr "Nedokončené"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Not results"
+msgstr "Žiadne výsledky"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__note
+msgid "Note"
+msgstr "Poznámka"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Počet akcií"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error_counter
+msgid "Number of errors"
+msgstr "Počet chýb"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Počet správ vyžadujúcich akciu"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Počet správ s chybou doručenia"
+
+#. module: dms
+#: model:ir.model,name:dms.model_onboarding_onboarding
+msgid "Onboarding"
+msgstr "Zavádzanie"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_create_directory
+msgid "Onboarding Directory"
+msgstr "Zavádzanie priečinka"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_upload_file
+msgid "Onboarding File"
+msgstr "Zavádzanie súboru"
+
+#. module: dms
+#: model:ir.model,name:dms.model_onboarding_onboarding_step
+msgid "Onboarding Step"
+msgstr "Krok zavádzania"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_document_storage
+msgid "Onboarding Storage"
+msgstr "Zavádzanie úložiska"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Only files in the same root directory can be moved."
+msgstr "Presúvať možno len súbory v tom istom koreňovom priečinku."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#, python-format
+msgid "Only managers can execute this action."
+msgstr "Túto akciu môžu vykonať iba manažéri."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"Voliteľné ID vlákna (záznamu), ku ktorému budú pripojené všetky "
+"prichádzajúce správy, aj keď naň neodpovedajú. Ak je nastavené, úplne sa "
+"vypne vytváranie nových záznamov."
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_organizing
+msgid "Organizing"
+msgstr "Organizácia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_id
+msgid "Parent Category"
+msgstr "Nadradená kategória"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_id
+msgid "Parent Directory"
+msgstr "Nadradený priečinok"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_group_id
+msgid "Parent Group"
+msgstr "Nadradená skupina"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_model_id
+msgid "Parent Model"
+msgstr "Nadradený model"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_path
+msgid "Parent Path"
+msgstr "Nadradená cesta"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "ID vlákna nadradeného záznamu"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/access_groups.py:0
+#, python-format
+msgid "Parent group '%(parent)s' is child of '%(current)s'."
+msgstr "Nadradená skupina '%(parent)s' je podriadená skupine '%(current)s'."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"Nadradený model, ktorý drží alias. Model, ktorý drží referenciu aliasu, "
+"nemusí byť nevyhnutne model zadaný v alias_model_id (napríklad project "
+"(parent_model) a task (model))"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_02_demo
+msgid "Partner"
+msgstr "Partner"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_json
+msgid "Path Json"
+msgstr "Path Json"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_names
+msgid "Path Names"
+msgstr "Názvy cesty"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr ""
+"Zásady pre uverejnenie správy v dokumente pomocou mailgateway.\n"
+"- everyone: môže uverejniť každý\n"
+"- partners: iba autentifikovaní partneri\n"
+"- followers: iba sledujúci súvisiaceho dokumentu alebo členovia "
+"nasledujúcich kanálov\n"
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_02_demo
+#: model:dms.tag,name:dms.tag_05_demo
+msgid "Portal"
+msgstr "Portál"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_url
+msgid "Portal Access URL"
+msgstr "URL prístupu do portálu"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/fields/preview_binary/preview_record.xml:0
+#: code:addons/dms/static/src/js/fields/preview_binary/preview_record.xml:0
+#, python-format
+msgid "Preview"
+msgstr "Náhľad"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_10_demo
+msgid "Product"
+msgstr "Produkt"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_03_demo
+msgid "Project"
+msgstr "Projekt"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_read
+msgid "Read Access"
+msgstr "Prístup na čítanie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__partner_ids
+msgid "Recipients"
+msgstr "Príjemcovia"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_access_group
+msgid "Record Access Groups"
+msgstr "Skupiny prístupu k záznamu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_file__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__record_ref
+msgid "Record Referenced"
+msgstr "Referencovaný záznam"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "ID vlákna záznamu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__resource_ref
+msgid "Related Document"
+msgstr "Súvisiaci dokument"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__res_id
+msgid "Related Document ID"
+msgstr "ID súvisiaceho dokumentu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__res_model
+msgid "Related Document Model"
+msgstr "Model súvisiaceho dokumentu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__require_migration
+msgid "Require Migration"
+msgstr "Vyžaduje migráciu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_user_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_user_id
+msgid "Responsible User"
+msgstr "Zodpovedný používateľ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__root_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Root Directories"
+msgstr "Koreňové priečinky"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__root_directory_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__root_directory_id
+msgid "Root Directory"
+msgstr "Koreňový priečinok"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_create_directory
+msgid "Root Directory Created!"
+msgstr "Koreňový priečinok vytvorený!"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_04_demo
+msgid "Sales"
+msgstr "Predaj"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_storage__save_type
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+msgid "Save Type"
+msgstr "Typ uloženia"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/file_kanban_renderer.xml:0
+#: code:addons/dms/static/src/js/views/file_list_renderer.xml:0
+#, python-format
+msgid "Scan"
+msgstr "Skenovať"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_token
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_token
+msgid "Security Token"
+msgstr "Bezpečnostný token"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Settings"
+msgstr "Nastavenia"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.wizard_dms_directory_share_action
+#: model:ir.actions.act_window,name:dms.wizard_dms_file_share_action
+msgid "Share"
+msgstr "Zdieľať"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Show storages"
+msgstr "Zobraziť úložiská"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__files
+msgid "Single Files"
+msgstr "Jednotlivé súbory"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__size
+#: model:ir.model.fields,field_description:dms.field_dms_file__size
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_binary_max_size
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_migration_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Size"
+msgstr "Veľkosť"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__human_size
+#: model:ir.model.fields,field_description:dms.field_dms_file__human_size
+msgid "Size (human readable)"
+msgstr "Veľkosť (čitateľná pre človeka)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__starred
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Starred"
+msgstr "Označené hviezdičkou"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "Starred Directories"
+msgstr "Priečinky označené hviezdičkou"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__user_star_ids
+msgid "Stars"
+msgstr "Hviezdičky"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,help:dms.field_dms_file__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stav podľa aktivít\n"
+"Po termíne: Termín už uplynul\n"
+"Dnes: Dátum aktivity je dnes\n"
+"Plánované: Budúce aktivity."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_storage
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_document_storage
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+msgid "Storage"
+msgstr "Úložisko"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_storage__is_hidden
+msgid "Storage is Hidden"
+msgstr "Úložisko je skryté"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage
+#: model:ir.ui.menu,name:dms.menu_dms_storage
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Storages"
+msgstr "Úložiská"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Storages are used to configure your Documents."
+msgstr "Úložiská sa používajú na konfiguráciu vašich dokumentov."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Subcategories"
+msgstr "Podkategórie"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_directories_directory
+#: model:ir.model.fields,field_description:dms.field_dms_directory__child_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Subdirectories"
+msgstr "Podpriečinky"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__directory
+msgid "Subdirectory"
+msgstr "Podpriečinok"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_system
+msgid "System"
+msgstr "Systém"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Tag"
+msgstr "Značka"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_tag_name_uniq
+msgid "Tag name already exists!"
+msgstr "Názov značky už existuje!"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_tag
+#: model:ir.model.fields,field_description:dms.field_dms_category__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__tag_ids
+#: model:ir.ui.menu,name:dms.menu_dms_tag
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Tags"
+msgstr "Značky"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Tags are used to categorize Documents."
+msgstr "Značky sa používajú na kategorizáciu dokumentov."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Tags..."
+msgstr "Značky..."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Technical Information"
+msgstr "Technické informácie"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_category__active
+msgid "The active field allows you to hide the category without removing it."
+msgstr "Pole aktívny vám umožňuje skryť kategóriu bez jej odstránenia."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_tag__active
+msgid "The active field allows you to hide the tag without removing it."
+msgstr "Pole aktívny vám umožňuje skryť značku bez jej odstránenia."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "The directory name is invalid."
+msgstr "Názov priečinka je neplatný."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The file has a forbidden file extension."
+msgstr "Súbor má zakázanú príponu."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The file name is invalid."
+msgstr "Názov súboru je neplatný."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The maximum upload size is %s MB."
+msgstr "Maximálna veľkosť nahrávania je %s MB."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr ""
+"Model (Odoo Document Kind), ktorému tento alias zodpovedá. Každý "
+"prichádzajúci e-mail, ktorý nie je odpoveďou na existujúci záznam, spôsobí "
+"vytvorenie nového záznamu tohto modelu (napr. Project Task)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr ""
+"Názov e-mailového aliasu, napr. 'jobs', ak chcete zachytávať e-maily pre "
+"<jobs@example.odoo.com>"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_access_group_name_uniq
+msgid "The name of the group must be unique!"
+msgstr "Názov skupiny musí byť jedinečný!"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_storage__save_type
+msgid ""
+"The save type is used to determine how a file is saved by the system. If you"
+" change this setting, you can migrate existing files manually by triggering "
+"the action."
+msgstr ""
+"Typ uloženia sa používa na určenie spôsobu, akým systém ukladá súbor. Ak "
+"toto nastavenie zmeníte, môžete existujúce súbory migrovať manuálne "
+"spustením akcie."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "This directory needs to be associated to a record."
+msgstr "Tento priečinok musí byť priradený k záznamu."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_elements
+msgid "Total Elements"
+msgstr "Celkový počet prvkov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_files
+msgid "Total Files"
+msgstr "Celkový počet súborov"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_directories
+msgid "Total Subdirectories"
+msgstr "Celkový počet podpriečinkov"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Total files"
+msgstr "Celkový počet súborov"
+
+#. module: dms
+#: model:dms.category,name:dms.category_04_demo
+msgid "Traveling"
+msgstr "Cestovanie"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__mimetype
+msgid "Type"
+msgstr "Typ"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Typ výnimočnej aktivity na zázname."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_unlink
+msgid "Unlink Access"
+msgstr "Prístup na odstránenie"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Unlock"
+msgstr "Odomknúť"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_process
+msgid "Unpack Emails as"
+msgstr "Rozbaliť e-maily ako"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/file_kanban_controller.xml:0
+#: code:addons/dms/static/src/js/views/file_kanban_renderer.xml:0
+#: code:addons/dms/static/src/js/views/file_list_renderer.xml:0
+#, python-format
+msgid "Upload"
+msgstr "Nahrať"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_upload_file
+msgid "Upload File"
+msgstr "Nahrať súbor"
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_upload_file
+msgid "Upload your first File."
+msgstr "Nahrajte svoj prvý súbor."
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_03_demo
+#: model:res.groups,name:dms.group_dms_user
+msgid "User"
+msgstr "Používateľ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Users"
+msgstr "Používatelia"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_09_demo
+msgid "Vendor Bill"
+msgstr "Dodávateľská faktúra"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Views"
+msgstr "Zobrazenia"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__website_message_ids
+msgid "Website Messages"
+msgstr "Správy webovej stránky"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,help:dms.field_dms_file__website_message_ids
+msgid "Website communication history"
+msgstr "História komunikácie webovej stránky"
+
+#. module: dms
+#: model:ir.model,name:dms.model_wizard_dms_file_move
+msgid "Wizard Dms File Move"
+msgstr "Sprievodca presunom súborov Dms"
+
+#. module: dms
+#: model:ir.model,name:dms.model_wizard_dms_share
+msgid "Wizard for sharing DMS records"
+msgstr "Sprievodca zdieľaním záznamov DMS"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_write
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
+msgid "Write Access"
+msgstr "Prístup na zápis"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
+#, python-format
+msgid "You must select a directory first"
+msgstr "Najprv musíte vybrať priečinok"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "element(s)"
+msgstr "prvok(y)"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "exe,msi"
+msgstr "exe,msi"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "mail.catchall.domain"
+msgstr "mail.catchall.domain"

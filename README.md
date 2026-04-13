@@ -358,11 +358,16 @@ Date:   Sun Nov 30 16:02:57 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit f8a0f6f5ab8456225805f5751b2365e4c82dc972
+commit 09b6a9cfe8116d36b1a59c2377920bb596d4513c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 8 10:06:10 2026 +0000
+Date:   Mon Apr 13 08:34:01 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_data_vies_populator
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_data_vies_populator/it/
 
 
 ## sale-financial
@@ -404,16 +409,16 @@ Date:   Sun Feb 1 06:55:23 2026 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 5feb0dfc38e521df12f9af17ec1731587773beb2
-Author: Rodrigo A. Madureira <rodrigomadu85@gmail.com>
-Date:   Tue Mar 31 18:32:01 2026 +0000
+commit b4700d55954e5939bde1ffd6e2af6ba8a48452f2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 13 10:30:11 2026 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (138 of 138 strings)
     
     Translation: commission-17.0/commission-17.0-commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/pt_BR/
+    Translate-URL: https://translation.odoo-community.org/projects/commission-17-0/commission-17-0-commission/it/
 
 
 ## event
@@ -441,25 +446,30 @@ Date:   Wed Feb 18 00:33:33 2026 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 0480bc895a7c8eb2fc8f17b8a67db82638c2abd2
+commit 023881d266b430e3b4604b550e6f2d078f72bcab
 Author: Weblate <noreply@weblate.org>
-Date:   Fri Dec 19 08:57:35 2025 +0000
+Date:   Mon Apr 13 09:37:29 2026 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: knowledge-17.0/knowledge-17.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-17-0/knowledge-17-0-document_page/
+    Translation: knowledge-17.0/knowledge-17.0-attachment_category
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-17-0/knowledge-17-0-attachment_category/
 
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 82f3b8510827fabb2c65f4080908a6373516b04a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 1 15:02:08 2026 +0000
+commit c6ae08c8f1c02da86ab559c3388ae72a57ce651d
+Author: SMNDVC <simon.dovicovic@gmail.com>
+Date:   Mon Apr 13 14:39:29 2026 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Slovak)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: dms-17.0/dms-17.0-dms_file_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/dms-17-0/dms-17-0-dms_file_sequence/sk/
 
 
 ## e-commerce
@@ -482,16 +492,16 @@ Date:   Fri Feb 20 10:40:31 2026 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 7efe439248a49d491b306d8839605051bc5706bf
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Apr 9 17:34:59 2026 +0000
+commit 9231081211edaaec6da03992c343b2da1c01cb16
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 13 08:41:12 2026 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (624 of 624 strings)
     
     Translation: field-service-17.0/field-service-17.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1115,16 +1125,11 @@ Date:   Fri Apr 3 07:28:52 2026 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 427ebfb7eb546567d3b82d504cf20b450f2b7d02
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 26 07:53:45 2026 +0000
+commit e283bd60cdf8f573a5d3f1999e151fd187070100
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 13 10:26:10 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (344 of 344 strings)
-    
-    Translation: ddmrp-17.0/ddmrp-17.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-17-0/ddmrp-17-0-ddmrp/it/
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1325,25 +1330,25 @@ Date:   Wed Feb 18 07:23:22 2026 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 74bd476934c00cd7e2024be375fce64fbd38bbfa
+commit 1d6fecd4d7455f2524d3b68a13d394abb3b9c632
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 25 15:18:48 2026 +0000
+Date:   Mon Apr 13 11:54:11 2026 +0000
 
     [BOT] post-merge updates
 
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit e1413c2667061bb3f62466a634892f1bdf32bbd2
+commit 96c1c93f476c2c6c7099c926f919673a00bb3cf9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 23 08:03:41 2026 +0000
+Date:   Mon Apr 13 08:32:46 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (52 of 52 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: storage-17.0/storage-17.0-fs_storage
-    Translate-URL: https://translation.odoo-community.org/projects/storage-17-0/storage-17-0-fs_storage/it/
+    Translation: storage-17.0/storage-17.0-fs_base_multi_image
+    Translate-URL: https://translation.odoo-community.org/projects/storage-17-0/storage-17-0-fs_base_multi_image/it/
 
 
 ## search-engine
