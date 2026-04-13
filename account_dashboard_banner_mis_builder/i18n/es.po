@@ -6,65 +6,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-04-12 13:11+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model,name:account_dashboard_banner_mis_builder.model_account_dashboard_banner_cell
 msgid "Accounting Dashboard Banner Cell"
-msgstr ""
+msgstr "Celda del banner del panel de contabilidad"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__cell_type
 msgid "Cell Type"
-msgstr ""
+msgstr "Tipo de celda"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_kpi_num_display_currency
 msgid "Display Currency"
-msgstr ""
+msgstr "Mostrar moneda"
 
 #. module: account_dashboard_banner_mis_builder
 #. odoo-python
 #: code:addons/account_dashboard_banner_mis_builder/models/account_dashboard_banner_cell.py:0
 msgid "Expression: %(kpi_expression)s."
-msgstr ""
+msgstr "Expresión: %(kpi_expression)s."
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields.selection,name:account_dashboard_banner_mis_builder.selection__account_dashboard_banner_cell__cell_type__mis_builder
 msgid "MIS Builder KPI"
-msgstr ""
+msgstr "KPI del MIS Builder"
 
 #. module: account_dashboard_banner_mis_builder
 #. odoo-python
 #: code:addons/account_dashboard_banner_mis_builder/models/account_dashboard_banner_cell.py:0
 msgid "MIS Builder KPI: %(kpi)s. From %(date_from)s to %(date_to)s."
-msgstr ""
+msgstr "KPI del MIS Builder: %(kpi)s. Desde %(date_from)s hasta %(date_to)s."
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_instance_id
 msgid "MIS Report"
-msgstr ""
+msgstr "Informe MIS"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_kpi_id
 msgid "MIS Report KPI"
-msgstr ""
+msgstr "KPI del informe MIS"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_instance_period_id
 msgid "MIS Report Period"
-msgstr ""
+msgstr "Período del informe MIS"
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_id
 msgid "MIS Report Template"
-msgstr ""
+msgstr "Plantilla de informe MIS"
 
 #. module: account_dashboard_banner_mis_builder
 #. odoo-python
@@ -73,6 +75,8 @@ msgid ""
 "On MIS Builder cells, you must configure a MIS Report, a related KPI and a "
 "related Period."
 msgstr ""
+"En las celdas del MIS Builder, debe configurar un Informe MIS, un KPI "
+"relacionado y un Período relacionado."
 
 #. module: account_dashboard_banner_mis_builder
 #. odoo-python
@@ -82,6 +86,9 @@ msgid ""
 "'%(kpi_report)s' whereas the MIS Report '%(instance)s' is attached to MIS "
 "Report Template '%(instance_report)s'."
 msgstr ""
+"El KPI del Informe MIS '%(kpi)s' está vinculado a la Plantilla de Informe "
+"MIS '%(kpi_report)s' mientras que el Informe MIS '%(instance)s' está "
+"vinculado a la Plantilla de Informe MIS '%(instance_report)s'."
 
 #. module: account_dashboard_banner_mis_builder
 #. odoo-python
@@ -90,8 +97,10 @@ msgid ""
 "The MIS Report Period '%(period)s' is attached to MIS Report "
 "'%(period_report)s' and not to the selected MIS Report '%(report)s'."
 msgstr ""
+"El Período del Informe MIS '%(period)s' está vinculado al Informe MIS '%"
+"(period_report)s' y no al Informe MIS seleccionado '%(report)s'."
 
 #. module: account_dashboard_banner_mis_builder
 #: model:ir.model.fields,field_description:account_dashboard_banner_mis_builder.field_account_dashboard_banner_cell__mis_report_kpi_type
 msgid "Value type"
-msgstr ""
+msgstr "Tipo de valor"
