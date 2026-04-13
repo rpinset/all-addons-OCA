@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-27 01:45+0000\n"
+"PO-Revision-Date: 2026-04-12 17:45+0000\n"
 "Last-Translator: risto42 <richard.palo@free.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -165,8 +165,9 @@ msgstr "Décembre"
 #: model_terms:ir.actions.act_window,help:fieldservice_recurring.action_fsm_frequency_set
 msgid "Define a Frequency Rule Set for scheduling recurring orders here."
 msgstr ""
-"Définissez un jeu de règles de fréquence pour planifier les commandes "
-"récurrentes ici."
+"Définir ici un ensemble de règles de fréquence pour la planification des "
+"commandes récurrentes.Définissez un jeu de règles de fréquence pour "
+"planifier les commandes récurrentes ici."
 
 #. module: fieldservice_recurring
 #: model_terms:ir.actions.act_window,help:fieldservice_recurring.action_fsm_frequency

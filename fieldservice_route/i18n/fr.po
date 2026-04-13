@@ -1,0 +1,391 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_route
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-04-12 17:45+0000\n"
+"Last-Translator: risto42 <richard.palo@free.fr>\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: fieldservice_route
+#: model_terms:ir.actions.act_window,help:fieldservice_route.action_fsm_route_dayroute
+msgid "Add Day Routes here."
+msgstr "Ajouter des tournées journalières ici."
+
+#. module: fieldservice_route
+#: model_terms:ir.actions.act_window,help:fieldservice_route.action_fsm_route
+msgid "Add Routes here."
+msgstr "Ajouter des tournées ici."
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_order__person_id
+msgid "Assigned To"
+msgstr "Assigné à"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__order_remaining
+msgid "Available Capacity"
+msgstr "Capacité disponible"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Cancel order"
+msgstr "Annuler la commande"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_form
+msgid "Capacity"
+msgstr "Capacité"
+
+#. module: fieldservice_route
+#: model:fsm.stage,name:fieldservice_route.fsm_stage_route_close
+msgid "Closed"
+msgstr "Clôturée"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Complete order"
+msgstr "Terminer la commande"
+
+#. module: fieldservice_route
+#: model_terms:ir.actions.act_window,help:fieldservice_route.action_fsm_route_day
+msgid "Create a Route Day."
+msgstr "Créer un jour de tournée."
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__create_uid
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__create_uid
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__create_date
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__create_date
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__date
+msgid "Date"
+msgstr "Date"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_order__dayroute_id
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Day Route"
+msgstr "Tournée journalière"
+
+#. module: fieldservice_route
+#: model:ir.actions.act_window,name:fieldservice_route.action_fsm_route_dayroute
+#: model:ir.actions.act_window,name:fieldservice_route.action_fsm_route_dayroute_dash
+#: model:ir.actions.act_window,name:fieldservice_route.action_fsm_route_dayroute_report
+#: model:ir.ui.menu,name:fieldservice_route.menu_fsm_dash_dayroute
+#: model:ir.ui.menu,name:fieldservice_route.menu_fsm_route_dayroute
+#: model:ir.ui.menu,name:fieldservice_route.menu_fsm_route_dayroute_report
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_calendar
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_graph_view
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_pivot_view
+msgid "Day Routes"
+msgstr "Tournées journalières"
+
+#. module: fieldservice_route
+#: model_terms:ir.actions.act_window,help:fieldservice_route.action_fsm_route_dayroute_report
+msgid "Day Routes Report"
+msgstr "Rapport des tournées journalières"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__day_ids
+msgid "Days"
+msgstr "Jours"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__display_name
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__display_name
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__end_location_id
+msgid "End Location"
+msgstr "Lieu d'arrivée"
+
+#. module: fieldservice_route
+#: model:ir.model,name:fieldservice_route.model_fsm_location
+msgid "Field Service Location"
+msgstr "Lieu d'intervention"
+
+#. module: fieldservice_route
+#: model:ir.model,name:fieldservice_route.model_fsm_order
+msgid "Field Service Order"
+msgstr "Commande d'intervention"
+
+#. module: fieldservice_route
+#: model:ir.model,name:fieldservice_route.model_fsm_route
+msgid "Field Service Route"
+msgstr "Tournée d'intervention"
+
+#. module: fieldservice_route
+#: model:ir.model,name:fieldservice_route.model_fsm_route_dayroute
+msgid "Field Service Route Dayroute"
+msgstr "Tournée journalière d'intervention"
+
+#. module: fieldservice_route
+#: model:ir.model,name:fieldservice_route.model_fsm_stage
+msgid "Field Service Stage"
+msgstr "Étape d'intervention"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__friday
+msgid "Friday"
+msgstr "Vendredi"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__id
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__id
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__id
+msgid "ID"
+msgstr "ID"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__last_location_id
+msgid "Last Location"
+msgstr "Dernier lieu"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route____last_update
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day____last_update
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__write_uid
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__write_uid
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__write_date
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__write_date
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__latitude
+msgid "Latitude"
+msgstr "Latitude"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__longitude
+msgid "Longitude"
+msgstr "Longitude"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__max_allow_time
+msgid "Maximal Allowable Time (in hours)"
+msgstr "Durée maximale autorisée (en heures)"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_form
+msgid "Maximum"
+msgstr "Maximum"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__max_order
+msgid "Maximum Capacity"
+msgstr "Capacité maximale"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__max_order
+msgid "Maximum Orders"
+msgstr "Commandes maximum"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,help:fieldservice_route.field_fsm_route__max_order
+msgid "Maximum number of orders per day route."
+msgstr "Nombre maximum de commandes par tournée journalière."
+
+#. module: fieldservice_route
+#: model:ir.model.fields,help:fieldservice_route.field_fsm_route_dayroute__max_order
+msgid "Maximum numbers of orders that can be added to this day route."
+msgstr ""
+"Nombre maximum de commandes pouvant être ajoutées à cette tournée "
+"journalière."
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__monday
+msgid "Monday"
+msgstr "Lundi"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__name
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_day__name
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: fieldservice_route
+#. odoo-python
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#: model:fsm.stage,name:fieldservice_route.fsm_stage_route_new
+#, python-format
+msgid "New"
+msgstr "Nouveau"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__order_count
+msgid "Number of Orders"
+msgstr "Nombre de commandes"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__order_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Orders"
+msgstr "Commandes"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route__fsm_person_id
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__person_id
+msgid "Person"
+msgstr "Technicien"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__date_start_planned
+msgid "Planned Start Time"
+msgstr "Heure de début prévue"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Planning"
+msgstr "Planification"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Positioning"
+msgstr "Positionnement"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_location__fsm_route_id
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_order__fsm_route_id
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__route_id
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_stage__stage_type__route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_form
+msgid "Route"
+msgstr "Tournée"
+
+#. module: fieldservice_route
+#: model:ir.actions.act_window,name:fieldservice_route.action_fsm_route_day
+#: model:ir.model,name:fieldservice_route.model_fsm_route_day
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_day_form_view
+msgid "Route Day"
+msgstr "Jour de tournée"
+
+#. module: fieldservice_route
+#: model:ir.ui.menu,name:fieldservice_route.menu_fsm_route_day
+msgid "Route Days"
+msgstr "Jours de tournée"
+
+#. module: fieldservice_route
+#: model:ir.actions.act_window,name:fieldservice_route.action_fsm_route
+#: model:ir.ui.menu,name:fieldservice_route.menu_fsm_route
+msgid "Routes"
+msgstr "Tournées"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__saturday
+msgid "Saturday"
+msgstr "Samedi"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__stage_id
+msgid "Stage"
+msgstr "Étape"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__start_location_id
+msgid "Start Location"
+msgstr "Lieu de départ"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__sunday
+msgid "Sunday"
+msgstr "Dimanche"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__team_id
+msgid "Team"
+msgstr "Équipe"
+
+#. module: fieldservice_route
+#. odoo-python
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#, python-format
+msgid "The day route is exceeding the maximum number of orders of the route."
+msgstr ""
+"La tournée journalière dépasse le nombre maximum de commandes de la tournée."
+
+#. module: fieldservice_route
+#. odoo-python
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#, python-format
+msgid "The route %(route_name)s does not run on %(name)s!"
+msgstr "La tournée %(route_name)s ne fonctionne pas le %(name)s !"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__thursday
+msgid "Thursday"
+msgstr "Jeudi"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_route_dayroute__work_time
+msgid "Time before overtime (in hours)"
+msgstr "Temps avant heures supplémentaires (en heures)"
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_dayroute_form
+msgid "Timing"
+msgstr "Horaires"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__tuesday
+msgid "Tuesday"
+msgstr "Mardi"
+
+#. module: fieldservice_route
+#: model:ir.model.fields,field_description:fieldservice_route.field_fsm_stage__stage_type
+msgid "Type"
+msgstr "Type"
+
+#. module: fieldservice_route
+#: model:ir.model.fields.selection,name:fieldservice_route.selection__fsm_route_day__name__wednesday
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#. module: fieldservice_route
+#. odoo-python
+#: code:addons/fieldservice_route/models/fsm_route_dayroute.py:0
+#, python-format
+msgid "You must create a FSM team first."
+msgstr "Vous devez d'abord créer une équipe d'intervention."
+
+#. module: fieldservice_route
+#: model_terms:ir.ui.view,arch_db:fieldservice_route.fsm_route_form
+msgid "orders per day route"
+msgstr "commandes par tournée journalière"

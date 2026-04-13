@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-26 23:19+0000\n"
+"PO-Revision-Date: 2026-04-12 17:45+0000\n"
 "Last-Translator: risto42 <richard.palo@free.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: fieldservice_account
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_payment__fsm_order_count
 msgid "FSM Order Count"
-msgstr ""
+msgstr "Nombre de commandes d'intervention"
 
 #. module: fieldservice_account
 #: model:ir.model.fields,field_description:fieldservice_account.field_account_bank_statement_line__fsm_order_count
