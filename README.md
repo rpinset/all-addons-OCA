@@ -569,9 +569,9 @@ Date:   Mon Jan 19 13:56:25 2026 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit e0e6de95ef032a55e4b785a7aa2e09df95a138fd
+commit d98bc4674e726d86d688aefadddf45660da3e702
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 15:04:19 2025 +0000
+Date:   Mon Apr 13 08:41:04 2026 +0000
 
     Translated using Weblate (Italian)
     
