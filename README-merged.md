@@ -8731,6 +8731,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Server UX
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-ux&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/server-ux/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/server-ux/actions/workflows/test.yml?query=branch%3A14.0)
@@ -8738,8 +8741,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-ux-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-ux-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Server UX
 
 Server side features for usability and user experience related.
 

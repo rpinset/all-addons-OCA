@@ -449,11 +449,16 @@ Date:   Wed Jun 4 03:36:55 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 20ac01027079756525fe7d2f575bf2a2266e914c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 9 08:35:42 2026 +0000
+commit f47b3abcb6e57fbdf6b7d0625ad626118ded935d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 13 10:30:14 2026 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (66 of 66 strings)
+    
+    Translation: commission-14.0/commission-14.0-sale_commission_partial_settlement
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_partial_settlement/it/
 
 
 ## event
@@ -530,16 +535,16 @@ Date:   Wed Jan 14 23:00:20 2026 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit c9571459886a9e8cdaee92a40f50e0c8a27a0ce4
+commit 5b5d0b1b9716e955d6df3be12d613f9d7c745ede
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 08:40:16 2025 +0000
+Date:   Mon Apr 13 08:41:06 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (578 of 578 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice_equipment_type
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_equipment_type/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1221,11 +1226,14 @@ Date:   Thu Mar 12 17:16:49 2026 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit a016777ba29aafe474b2b50f6cb2a824c0fd4192
+commit 4a021fe9a77c044e721efc05fac0e3c4ea4e8abf
+Merge: a016777ba 1f60fba61
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 8 11:26:08 2026 +0000
+Date:   Mon Apr 13 09:59:30 2026 +0000
 
-    [BOT] post-merge updates
+    Merge PR #1757 into 14.0
+    
+    Signed-off-by dreispt
 
 
 ## manufacture-reporting
@@ -1533,16 +1541,14 @@ Date:   Fri Jun 13 09:05:16 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 1282cabc9c6da0aaee0d36f6170c7741ff60654a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 19 11:28:10 2026 +0000
+commit 64fb728f6784ff84e707d21624574febf985377d
+Merge: 1282cabc 71d26102
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 13 06:54:19 2026 +0000
 
-    Translated using Weblate (Italian)
+    Merge PR #1266 into 14.0
     
-    Currently translated at 100.0% (128 of 128 strings)
-    
-    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation/it/
+    Signed-off-by StefanRijnhart
 
 
 ## community-data-files
