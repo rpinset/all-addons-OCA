@@ -60,7 +60,7 @@ msgstr ""
 #. module: l10n_it_dichiarazione_intento
 #: selection:dichiarazione.intento,state:0
 #: model_terms:ir.ui.view,arch_db:l10n_it_dichiarazione_intento.dichiarazione_intento_search
-msgid "Close"
+msgid "Closed"
 msgstr ""
 
 #. module: l10n_it_dichiarazione_intento

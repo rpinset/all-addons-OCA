@@ -98,7 +98,7 @@
                 <field name="date_start"/>
                 <field name="date_end"/>
                 <filter name="state_valid" string="Valid" domain="[('state','=','valid')]"/>
-                <filter name="state_close" string="Close" domain="[('state','=','close')]"/>
+                <filter name="state_close" string="Closed" domain="[('state','=','close')]"/>
                 <filter string="Partner" name="partner_group" context="{'group_by':'partner_id'}"/>
                 <filter string="State" name="state_group" context="{'group_by':'state'}"/>
             </search>

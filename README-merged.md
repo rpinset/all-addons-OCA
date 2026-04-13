@@ -3170,6 +3170,9 @@ promote its widespread use.
 
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Odoo Italia Modules
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-italy&target_branch=12.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml/badge.svg?branch=12.0)](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml?query=branch%3A12.0)
 [![Build Status](https://github.com/OCA/l10n-italy/actions/workflows/test.yml/badge.svg?branch=12.0)](https://github.com/OCA/l10n-italy/actions/workflows/test.yml?query=branch%3A12.0)
@@ -3177,8 +3180,6 @@ promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-italy-12-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-italy-12-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Odoo Italia Modules
 
 Addons concerning Odoo Italian Localization.
 
@@ -3223,7 +3224,7 @@ addon | version | maintainers | summary
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 12.0.1.0.1 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 12.0.1.0.0 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> <a href='https://github.com/TheMule71'><img src='https://github.com/TheMule71.png' width='32' height='32' style='border-radius:50%;' alt='TheMule71'/></a> | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 12.0.1.0.1 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> <a href='https://github.com/andreampiovesana'><img src='https://github.com/andreampiovesana.png' width='32' height='32' style='border-radius:50%;' alt='andreampiovesana'/></a> | Crea collegamento tra i DDT e ordine di vendita
-[l10n_it_dichiarazione_intento](l10n_it_dichiarazione_intento/) | 12.0.0.2.1 |  | Gestione dichiarazioni di intento
+[l10n_it_dichiarazione_intento](l10n_it_dichiarazione_intento/) | 12.0.0.2.2 |  | Gestione dichiarazioni di intento
 [l10n_it_esigibilita_iva](l10n_it_esigibilita_iva/) | 12.0.2.0.0 |  | Italian Localization - Esigibilita' IVA
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 12.0.3.0.3 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 12.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche

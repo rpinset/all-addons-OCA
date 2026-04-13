@@ -456,9 +456,9 @@ Date:   Wed Jun 4 03:36:49 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 29518584a664b9cda5158e39834406bbda777336
+commit 28f4c1531aefb49aae1bedbd8326e99023f8d8a7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 10 12:42:16 2026 +0000
+Date:   Mon Apr 13 10:30:10 2026 +0000
 
     Translated using Weblate (Italian)
     
@@ -554,9 +554,9 @@ Date:   Tue Sep 2 16:04:28 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 30e3dfec766e7cc45601075b89d1978477c1a6eb
+commit f75d55677b3be03dd5f616c9e2ea82f1ba5c5771
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 10 09:43:55 2026 +0000
+Date:   Mon Apr 13 08:41:03 2026 +0000
 
     Translated using Weblate (Italian)
     
@@ -841,16 +841,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 44811eee08a0d13cafd2c0ace98028acf9346ade
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Wed Apr 8 10:23:24 2026 +0000
+commit 07e612aa88391ca02588a09833ab75ec42d94a6c
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Apr 10 13:48:14 2026 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (78 of 78 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_dichiarazione_intento
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_dichiarazione_intento/it/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_dichiarazione_intento/
 
 
 ## l10n-japan
@@ -1040,11 +1040,14 @@ Date:   Tue Nov 19 21:09:20 2019 +0100
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 0cf18d8178ed0ce0ce956a1d547cd78f092db8f1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:36:22 2025 +0000
+commit 74408069aee1aebd98398c1c54aeef8116a11127
+Merge: 0cf18d81 0b8ea1d2
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Apr 13 11:31:30 2026 +0200
 
-    [IMP] update dotfiles
+    Merge pull request #1163 from akretion/12.0-fix-icon
+    
+    delivery_carrier_label_default: icon was not a valid svg, but instead an html downloaded from github
 
 
 ## stock-logistics-barcode

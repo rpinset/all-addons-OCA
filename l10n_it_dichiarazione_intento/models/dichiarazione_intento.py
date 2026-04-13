@@ -84,7 +84,7 @@ class DichiarazioneIntento(models.Model):
         'account.fiscal.position', string='Fiscal Position', required=True,
         domain=[('valid_for_dichiarazione_intento', '=', True)])
     state = fields.Selection(
-        [('valid', 'Valid'), ('expired', 'Expired'), ('close', 'Close')],
+        [('valid', 'Valid'), ('expired', 'Expired'), ('close', 'Closed')],
         compute='_compute_state', store=True)
     force_close = fields.Boolean()
     line_ids = fields.One2many('dichiarazione.intento.line',
