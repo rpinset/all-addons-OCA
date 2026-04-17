@@ -979,11 +979,16 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 211cd563ee21f13e7940633f1c087b1db15c38c9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 16 10:20:16 2026 +0000
+commit 8da7316276be8437ec236907af9630dc06135fad
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Apr 17 04:11:22 2026 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-thailand-15.0/l10n-thailand-15.0-l10n_th_account_tax
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-thailand-15-0/l10n-thailand-15-0-l10n_th_account_tax/
 
 
 ## l10n-turkey
@@ -1479,11 +1484,11 @@ Date:   Sun Feb 9 19:20:08 2025 +0000
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit f57a30cf96d88dcb21cfafca8c1ec8820471489e
+commit 7bb75f2efa0e88f0d4e372d9370e0af9797aa1d5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jun 8 13:41:10 2025 +0000
+Date:   Thu Apr 16 03:08:07 2026 +0000
 
-    [BOT] post-merge updates
+    [ADD] setup.py
 
 
 ## iot
