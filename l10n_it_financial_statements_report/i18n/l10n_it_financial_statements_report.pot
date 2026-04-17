@@ -153,14 +153,9 @@ msgstr ""
 
 #. module: l10n_it_financial_statements_report
 #. odoo-python
-#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report_xlsx.py:0
+#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
 #, python-format
 msgid "DEFICIT"
-msgstr ""
-
-#. module: l10n_it_financial_statements_report
-#: model_terms:ir.ui.view,arch_db:l10n_it_financial_statements_report.financial_statements_report_totals
-msgid "DEFICIT:"
 msgstr ""
 
 #. module: l10n_it_financial_statements_report
@@ -303,6 +298,13 @@ msgid "LIABILITIES"
 msgstr ""
 
 #. module: l10n_it_financial_statements_report
+#. odoo-python
+#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
+#, python-format
+msgid "LOSS"
+msgstr ""
+
+#. module: l10n_it_financial_statements_report
 #: model_terms:ir.ui.view,arch_db:l10n_it_financial_statements_report.financial_statements_report_filters
 msgid "Level"
 msgstr ""
@@ -367,6 +369,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
 #, python-format
+msgid "PROFIT"
+msgstr ""
+
+#. module: l10n_it_financial_statements_report
+#. odoo-python
+#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
+#, python-format
 msgid "PROFIT & LOSS"
 msgstr ""
 
@@ -396,14 +405,9 @@ msgstr ""
 
 #. module: l10n_it_financial_statements_report
 #. odoo-python
-#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report_xlsx.py:0
+#: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
 #, python-format
 msgid "SURPLUS"
-msgstr ""
-
-#. module: l10n_it_financial_statements_report
-#: model_terms:ir.ui.view,arch_db:l10n_it_financial_statements_report.financial_statements_report_totals
-msgid "SURPLUS:"
 msgstr ""
 
 #. module: l10n_it_financial_statements_report

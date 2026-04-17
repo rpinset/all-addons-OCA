@@ -13,13 +13,17 @@ class ProductSupplierInfo(models.Model):
             self.env.context.get("customerinfo")
             and self._name == "product.supplierinfo"
         ):
-            limit2 = limit - len(res) if limit else limit
+            res_len = res if count else len(res)
+            limit2 = (limit - res_len) if limit else limit
             res2 = self.env["product.customerinfo"].search(
                 args, offset=offset, limit=limit2, order=order, count=count
             )
-            res2 = res2.read(list(self.env["product.supplierinfo"]._fields.keys()))
-            for result in res2:
-                res += self.env["product.supplierinfo"].new(result)
+            if count:
+                res += res2
+            else:
+                res2 = res2.read(list(self.env["product.supplierinfo"]._fields.keys()))
+                for result in res2:
+                    res += self.env["product.supplierinfo"].new(result)
         return res
 
     def read(self, fields=None, load="_classic_read"):

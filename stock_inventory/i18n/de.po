@@ -304,6 +304,22 @@ msgid "Number of messages with delivery error"
 msgstr "Anzahl der Nachrichten mit einem Zustellungsfehler"
 
 #. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.res_config_settings_view_form
+msgid ""
+"Number of quants to process per batch during inventory adjustments.\n"
+"                                Lower this value if you experience memory "
+"issues."
+msgstr ""
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_res_company__stock_inventory_batch_size
+#: model:ir.model.fields,help:stock_inventory.field_res_config_settings__stock_inventory_batch_size
+msgid ""
+"Number of quants to process per batch during inventory adjustments. Lower "
+"this value if you experience memory issues."
+msgstr ""
+
+#. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__one
 msgid "One Product"
 msgstr "Ein Produkt"
@@ -380,6 +396,12 @@ msgstr "Inventur"
 #: model:ir.model.fields,field_description:stock_inventory.field_res_config_settings__stock_inventory_auto_complete
 msgid "Stock Inventory Auto Complete"
 msgstr "Inventur automatisch abschließen"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_res_company__stock_inventory_batch_size
+#: model:ir.model.fields,field_description:stock_inventory.field_res_config_settings__stock_inventory_batch_size
+msgid "Stock Inventory Batch Size"
+msgstr ""
 
 #. module: stock_inventory
 #: model:ir.actions.act_window,name:stock_inventory.action_view_stock_move_line_inventory_tree
@@ -461,7 +483,8 @@ msgstr ""
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid "You can only delete inventory adjustments groups in draft state."
-msgstr "Inventuranpassungsgruppen können nur im Entwurfsstatus gelöscht werden."
+msgstr ""
+"Inventuranpassungsgruppen können nur im Entwurfsstatus gelöscht werden."
 
 #. module: stock_inventory
 #. odoo-python

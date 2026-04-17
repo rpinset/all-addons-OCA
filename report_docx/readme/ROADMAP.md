@@ -1,0 +1,3 @@
+- support images and embedded objects
+- support concatenating docx files for multiple records
+- support embedding html

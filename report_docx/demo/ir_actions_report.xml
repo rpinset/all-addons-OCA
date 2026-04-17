@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="report_ir_module_multi_mode_template" model="ir.actions.report">
+        <field name="name">DOCX (one file)</field>
+        <field name="model">ir.module.module</field>
+        <field name="report_type">docx</field>
+        <field name="report_name">ir_module_multi_mode_template</field>
+        <field name="print_report_name">object.name</field>
+        <field
+            name="docx_template"
+            type="base64"
+            file="report_docx/static/examples/modules_multi_mode_template.docx"
+        />
+        <field name="docx_multi_mode">template</field>
+        <field name="binding_model_id" ref="base.model_ir_module_module" />
+    </record>
+    <record id="report_ir_module_multi_mode_zip" model="ir.actions.report">
+        <field name="name">DOCX (zip if multiple)</field>
+        <field name="model">ir.module.module</field>
+        <field name="report_type">docx</field>
+        <field name="report_name">ir_module_multi_mode_zip</field>
+        <field name="print_report_name">object.name</field>
+        <field
+            name="docx_template"
+            type="base64"
+            file="report_docx/static/examples/modules_multi_mode_zip.docx"
+        />
+        <field name="docx_multi_mode">zip</field>
+        <field name="binding_model_id" ref="base.model_ir_module_module" />
+    </record>
+</data>

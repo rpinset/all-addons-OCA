@@ -311,6 +311,7 @@ unidecode
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
 cryptography
+docxtpl
 endesive ; python_version >= '3.12'
 endesive<=2.18.5 ; python_version < '3.12'
 mock

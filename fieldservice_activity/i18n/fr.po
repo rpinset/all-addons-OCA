@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-04-12 17:45+0000\n"
+"PO-Revision-Date: 2026-04-16 07:00+0000\n"
 "Last-Translator: risto42 <richard.palo@free.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -38,23 +38,23 @@ msgstr "Annulée"
 #: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_order_form_add_activity
 #: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_template_form_add_activity
 msgid "Complete"
-msgstr "Terminer"
+msgstr "Fait"
 
 #. module: fieldservice_activity
 #: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed
 #: model:ir.model.fields.selection,name:fieldservice_activity.selection__fsm_activity__state__done
 msgid "Completed"
-msgstr "Terminée"
+msgstr "Faite"
 
 #. module: fieldservice_activity
 #: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed_by
 msgid "Completed By"
-msgstr "Terminée par"
+msgstr "Faite par"
 
 #. module: fieldservice_activity
 #: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed_on
 msgid "Completed On"
-msgstr "Terminée le"
+msgstr "Faite le"
 
 #. module: fieldservice_activity
 #: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__create_uid
@@ -158,6 +158,4 @@ msgstr "À faire"
 msgid ""
 "You must complete activity '%s' before                     completing this "
 "order."
-msgstr ""
-"Vous devez terminer l'activité « %s » avant                     de terminer "
-"cette commande."
+msgstr "Vous devez terminer l'activité « %s » avant de terminer cette commande."

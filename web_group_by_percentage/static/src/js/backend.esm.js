@@ -18,7 +18,7 @@ patch(ListRenderer.prototype, "list_group_by_percentage", {
 
         if (list.isGrouped) {
             for (var column of columns) {
-                if (!this.isNumericColumn(column)) continue;
+                if (column.type != "field" || !this.isNumericColumn(column)) continue;
 
                 column.totalSum = 0;
                 for (var group of list.groups) {

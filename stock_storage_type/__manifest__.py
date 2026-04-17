@@ -4,7 +4,7 @@
 {
     "name": "Stock Storage Type",
     "summary": "Manage packages and locations storage types",
-    "version": "16.0.2.0.3",
+    "version": "16.0.2.1.0",
     "development_status": "Beta",
     "category": "Warehouse Management",
     "website": "https://github.com/OCA/wms",
@@ -14,6 +14,7 @@
     "application": False,
     "installable": True,
     "depends": [
+        "stock_location_fill_state",
         "stock_move_line_reserved_quant",
         "stock_putaway_hook",
         "stock_quant_package_dimension",

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-04-02 11:54+0000\n"
+"PO-Revision-Date: 2026-04-15 13:52+0000\n"
 "Last-Translator: Cristiano Mafra Junior <cristiano.mafracontanto@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -123,7 +123,7 @@ msgstr "Adicionar um produto"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 msgid "Add a section"
-msgstr "Adicionar uma seÃ§Ã£o"
+msgstr "Adicionar uma sessão"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -665,7 +665,7 @@ msgstr "Parceiro"
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 #, python-format
 msgid "Partner is mandatory"
-msgstr "Parceiro Ã© obrigatÃ³rio"
+msgstr "Parceiro não obrigatório"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__payment_term_id
@@ -677,7 +677,7 @@ msgstr "Condições de Pagamento"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_unit
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__price_unit
 msgid "Price"
-msgstr "PreÃ§o"
+msgstr "Preço"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__pricelist_id
@@ -730,13 +730,13 @@ msgstr "Quantidade restante na UdM base"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__user_id
 msgid "Responsible"
-msgstr "ResponsÃ¡vel"
+msgstr "Responsável"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_user_id
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__activity_user_id
 msgid "Responsible User"
-msgstr "UsuÃ¡rio ResponsÃ¡vel"
+msgstr "Usuário Responsável"
 
 #. module: sale_blanket_order
 #. odoo-python
@@ -778,7 +778,7 @@ msgstr "Linhas do pedido de venda"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 msgid "Sales Information"
-msgstr "InformaÃ§Ãµes de Venda"
+msgstr "Informações de Venda"
 
 #. module: sale_blanket_order
 #: model:ir.model,name:sale_blanket_order.model_sale_order

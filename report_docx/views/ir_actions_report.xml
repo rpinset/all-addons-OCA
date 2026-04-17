@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="act_report_xml_view" model="ir.ui.view">
+        <field name="model">ir.actions.report</field>
+        <field name="inherit_id" ref="base.act_report_xml_view" />
+        <field name="arch" type="xml">
+            <group position="inside">
+                <group
+                    name="report_docx"
+                    attrs="{'invisible': [('report_type', '!=', 'docx')]}"
+                >
+                    <field
+                        name="docx_template"
+                        filename="docx_template_filename"
+                        attrs="{'required': [('report_type', '=', 'docx')]}"
+                    />
+                    <field name="docx_template_filename" invisible="True" />
+                    <field
+                        name="docx_multi_mode"
+                        widget="radio"
+                        options="{'horizontal': true}"
+                    />
+                </group>
+            </group>
+            <notebook position="inside">
+                <page
+                    name="report_docx"
+                    string="DOCX"
+                    attrs="{'invisible': [('report_type', '!=', 'docx')]}"
+                >
+                    <group name="wrap">
+                    <group name="expression_tester" string="Expression Tester">
+                        <field name="docx_expression_test_model_id" invisible="True" />
+                        <field
+                                name="docx_expression_test_record"
+                                widget="reference"
+                                options="{'model_field': 'docx_expression_test_model_id'}"
+                            />
+                        <field
+                                name="docx_expression_test_expression"
+                                placeholder="Expression, eg object.display_name"
+                            />
+                        <field name="docx_expression_test_result" />
+                        <field name="docx_expression_test_code" />
+                    </group>
+                    <group name="help" string="Help">
+                        <field name="docx_help" nolabel="1" colspan="2" />
+                    </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</data>

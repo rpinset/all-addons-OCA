@@ -18,6 +18,11 @@ msgstr ""
 "X-Generator: Weblate 3.10\n"
 
 #. module: delivery_package_number
+#: model:ir.model.fields.selection,name:delivery_package_number.selection__stock_picking_type__force_set_number_of_packages__always
+msgid "Always"
+msgstr ""
+
+#. module: delivery_package_number
 #: model_terms:ir.ui.view,arch_db:delivery_package_number.view_number_package_validate
 msgid "Apply"
 msgstr ""
@@ -35,6 +40,11 @@ msgstr ""
 #. module: delivery_package_number
 #: model_terms:ir.ui.view,arch_db:delivery_package_number.view_number_package_validate
 msgid "Cancel"
+msgstr ""
+
+#. module: delivery_package_number
+#: model:ir.model,name:delivery_package_number.model_res_partner
+msgid "Contact"
 msgstr ""
 
 #. module: delivery_package_number
@@ -61,6 +71,9 @@ msgid "Display Name"
 msgstr ""
 
 #. module: delivery_package_number
+#: model:ir.model.fields,field_description:delivery_package_number.field_dropoff_site__force_set_number_of_packages
+#: model:ir.model.fields,field_description:delivery_package_number.field_res_partner__force_set_number_of_packages
+#: model:ir.model.fields,field_description:delivery_package_number.field_res_users__force_set_number_of_packages
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_picking_type__force_set_number_of_packages
 msgid "Force Set Number Of Packages"
 msgstr ""
@@ -113,6 +126,11 @@ msgstr ""
 #. module: delivery_package_number
 #: model_terms:ir.ui.view,arch_db:delivery_package_number.delivery_package_number_document
 msgid "Number of packages:"
+msgstr ""
+
+#. module: delivery_package_number
+#: model:ir.model.fields.selection,name:delivery_package_number.selection__stock_picking_type__force_set_number_of_packages__partner
+msgid "Partner condition"
 msgstr ""
 
 #. module: delivery_package_number

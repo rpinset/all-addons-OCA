@@ -1,0 +1,60 @@
+<odoo>
+    <template id="template_help">
+        <div t-if="object.docx_multi_mode=='zip'">
+            Use variable <code>object</code> (or <code
+            >o</code> for brevity) in your expressions. If the user has selected multiple records, the template will be applied to each of them separately, and the resulting files will be delivered as a zip file.
+        </div>
+        <div t-if="object.docx_multi_mode=='template'">
+            <p>
+                Use variable <code
+                >docs</code> to iterate through the records selected by the user. Most likely your template should contain something like:
+            </p>
+            <pre>
+                <code>{%p for object in docs %}</code>
+                <code>...</code>
+                <code>{%p endfor %}</code>
+            </pre>
+        </div>
+        <div
+            class="o_horizontal_separator mt-4 mb-3 text-uppercase fw-bolder small"
+        >Variables and Functions</div>
+        <dl>
+            <t t-foreach="object._docx_help_get_scope()" t-as="scope_item">
+                <dt t-out="scope_item.name" />
+                <dd t-out="scope_item.explanation" t-if="scope_item.explanation" />
+                <dd
+                    t-out="scope_item.explanation"
+                    t-else=""
+                >no explanation available</dd>
+            </t>
+        </dl>
+        <div
+            class="o_horizontal_separator mt-4 mb-3 text-uppercase fw-bolder small"
+        >Examples</div>
+        <p>
+            Check out the existing demo report templates:
+        </p>
+        <ul>
+            <li><a
+                    href="/report_docx/static/examples/modules_multi_mode_template.docx"
+                >DOCX (one file)</a></li>
+            <li><a
+                    href="/report_docx/static/examples/modules_multi_mode_zip.docx"
+                >DOCX (zip if multiple)</a></li>
+        </ul>
+        <div
+            class="o_horizontal_separator mt-4 mb-3 text-uppercase fw-bolder small"
+        >Further reading</div>
+        <p>
+                For background information, read the documentation of <a
+                href="https://docxtpl.readthedocs.io/en/latest/#tags"
+                target="_blank"
+                tabindex="-1"
+            >docxtpl</a> which is the library used for templating docx files, and for even more background, read the documentation <a
+                href="https://jinja.palletsprojects.com/en/stable/templates/"
+                target="_blank"
+                tabindex="-1"
+            >jinja2</a>, which in turn is used by <em>docxtpl</em>.
+        </p>
+    </template>
+</odoo>

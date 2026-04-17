@@ -16,6 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.6.2\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: delivery_package_number
+#: model:ir.model.fields.selection,name:delivery_package_number.selection__stock_picking_type__force_set_number_of_packages__always
+msgid "Always"
+msgstr "Siempre"
 
 #. module: delivery_package_number
 #: model_terms:ir.ui.view,arch_db:delivery_package_number.view_number_package_validate
@@ -36,6 +42,11 @@ msgstr "Confirmación backorder"
 #: model_terms:ir.ui.view,arch_db:delivery_package_number.view_number_package_validate
 msgid "Cancel"
 msgstr "Cancelar"
+
+#. module: delivery_package_number
+#: model:ir.model,name:delivery_package_number.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
 
 #. module: delivery_package_number
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_number_package_validate_line_wizard__create_uid
@@ -61,6 +72,9 @@ msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: delivery_package_number
+#: model:ir.model.fields,field_description:delivery_package_number.field_dropoff_site__force_set_number_of_packages
+#: model:ir.model.fields,field_description:delivery_package_number.field_res_partner__force_set_number_of_packages
+#: model:ir.model.fields,field_description:delivery_package_number.field_res_users__force_set_number_of_packages
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_picking_type__force_set_number_of_packages
 msgid "Force Set Number Of Packages"
 msgstr "Forzar solicitud de número de bultos"
@@ -116,9 +130,14 @@ msgid "Number of packages:"
 msgstr "Número de bultos:"
 
 #. module: delivery_package_number
+#: model:ir.model.fields.selection,name:delivery_package_number.selection__stock_picking_type__force_set_number_of_packages__partner
+msgid "Partner condition"
+msgstr "Condición en el contacto"
+
+#. module: delivery_package_number
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_number_package_validate_wizard__pick_ids
 msgid "Pick"
-msgstr ""
+msgstr "Recogida"
 
 #. module: delivery_package_number
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_number_package_validate_line_wizard__picking_id
@@ -128,7 +147,7 @@ msgstr "Albarán"
 #. module: delivery_package_number
 #: model:ir.model,name:delivery_package_number.model_stock_picking_type
 msgid "Picking Type"
-msgstr ""
+msgstr "Tipo de operación"
 
 #. module: delivery_package_number
 #: model:ir.model.fields,field_description:delivery_package_number.field_stock_number_package_validate_wizard__print_package_label
