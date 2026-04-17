@@ -1628,11 +1628,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit f8cbe5c99a56dbd3435e26827729a3cd87bbf542
+commit 6e8c7e4842b165317970549a85d83fe8813ee9df
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 13:14:50 2023 +0000
+Date:   Thu Apr 16 03:07:59 2026 +0000
 
-    [UPD] README.rst
+    [ADD] setup.py
 
 
 ## iot
