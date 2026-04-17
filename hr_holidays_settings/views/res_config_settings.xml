@@ -15,6 +15,7 @@
                         title="Leaves Management"
                         name="leaves_management_setting_container"
                     >
+                    <setting class="d-none" />
                     </block>
                 </app>
             </xpath>

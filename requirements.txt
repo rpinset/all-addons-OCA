@@ -189,6 +189,8 @@ zeep
 # generated from manifests external_dependencies
 python-barcode
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
+# generated from manifests external_dependencies
+xlrd
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
 # generated from manifests external_dependencies
