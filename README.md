@@ -498,16 +498,16 @@ Date:   Sun Oct 29 09:56:21 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit e72a5ad407832d15c625f52412c9f4349d5ded57
+commit bfc7467ab9531ec9158e4e3d733436a9bf22abd0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 24 10:41:39 2025 +0000
+Date:   Tue Apr 14 10:20:16 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (103 of 103 strings)
+    Currently translated at 100.0% (26 of 26 strings)
     
-    Translation: knowledge-12.0/knowledge-12.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page/it/
+    Translation: knowledge-12.0/knowledge-12.0-knowledge
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-knowledge/it/
 
 
 ## dms
@@ -1089,16 +1089,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6cd43e718b9dfa59eca76fa51521a49842342b9f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 3 07:01:11 2026 +0000
+commit 6eb1b59b0ea4d13145d91fe88914c55e76423f5b
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Apr 16 09:37:34 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 64.4% (107 of 166 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_secondary_unit/it/
 
 
 ## stock-logistics-reporting
@@ -1509,11 +1509,11 @@ Date:   Tue Nov 19 21:18:45 2019 +0100
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit a7c204cefc1e4f8dc1483225bff873b7843bf206
+commit 7905718e74a203962b69c8a11403206fed2ef385
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 13:14:48 2023 +0000
+Date:   Thu Apr 16 03:07:53 2026 +0000
 
-    [UPD] README.rst
+    [ADD] setup.py
 
 
 ## iot
