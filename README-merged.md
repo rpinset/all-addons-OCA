@@ -7292,6 +7292,9 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# product-attribute
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/product-attribute/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/product-attribute/actions/workflows/test.yml?query=branch%3A14.0)
@@ -7299,8 +7302,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/product-attribute-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-attribute-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# product-attribute
 
 TODO: add repo description.
 

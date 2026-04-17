@@ -107,16 +107,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 33900fe9caf87fe3f3a194117b8ba32b83503fdb
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Apr 7 12:07:24 2026 +0000
+commit 7015684f6d9ffd8607efb85e771b63edf737fb65
+Author: matthieusaison <matthieu.saison@akretion.com.br>
+Date:   Tue Apr 14 07:31:23 2026 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 90.0% (9 of 10 strings)
     
-    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_merge
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_merge/tr/
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_validation_queued
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_validation_queued/fr/
 
 
 ## account-fiscal-rule
@@ -1161,16 +1161,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit f7024779d75966567aaa9064c93f4fee8a7080fd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 3 07:01:34 2026 +0000
+commit d89d8a2987f41139ae920a5adba6f45d76daf470
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Apr 16 09:37:46 2026 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (183 of 183 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_secondary_unit/it/
 
 
 ## stock-logistics-reporting
@@ -1301,11 +1301,14 @@ Date:   Mon Aug 4 06:41:58 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 9334ee11d0cb4d8fed1d0d7086b6e0b6a43ab836
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 10 09:35:00 2026 +0000
+commit 973a035eaab9266ca233cb0f49f6ab1074586796
+Merge: 9334ee11d 4602c660f
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Thu Apr 16 17:26:40 2026 +0200
 
-    [BOT] post-merge updates
+    Merge pull request #2262 from raumschmiede-joshuaL/14.0-copier-update
+    
+    [14.0][UPD] Updated Repo from copier Template
 
 
 ## product-kitting
@@ -1571,16 +1574,11 @@ Date:   Sun Feb 9 19:19:58 2025 +0000
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit d5c9816976c56b513ff736403fa9f04833b7527f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 13 08:38:20 2025 +0000
+commit 11854ca027a735b993c8b114cd161b69152ff083
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 16 03:08:00 2026 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: interface-github-14.0/interface-github-14.0-github_connector_oca
-    Translate-URL: https://translation.odoo-community.org/projects/interface-github-14-0/interface-github-14-0-github_connector_oca/it/
+    [ADD] setup.py
 
 
 ## iot
