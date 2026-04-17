@@ -428,6 +428,9 @@ msgstr "Historial de la comunicación en el sitio web"
 msgid "Year"
 msgstr "Año"
 
+#~ msgid "Next Activity Calendar Event"
+#~ msgstr "Próximo evento del calendario de actividades"
+
 #~ msgid "Hr Employee Medical Examination"
 #~ msgstr "Reconocimiento médico para empleados de RRHH"
 
@@ -436,9 +439,6 @@ msgstr "Año"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Archivo adjunto principal"
-
-#~ msgid "Next Activity Calendar Event"
-#~ msgstr "Próximo evento del calendario de actividades"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Error en la entrega de sms"

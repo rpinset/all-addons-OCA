@@ -428,6 +428,9 @@ msgstr "Cronologia comunicazioni sito web"
 msgid "Year"
 msgstr "Anno"
 
+#~ msgid "Next Activity Calendar Event"
+#~ msgstr "Evento calendario attività successiva"
+
 #~ msgid "Hr Employee Medical Examination"
 #~ msgstr "Visita medica dipendente RU"
 
@@ -436,9 +439,6 @@ msgstr "Anno"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Allegato principale"
-
-#~ msgid "Next Activity Calendar Event"
-#~ msgstr "Evento calendario attività successiva"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Errore consegna SMS"

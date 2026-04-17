@@ -428,6 +428,9 @@ msgstr ""
 msgid "Year"
 msgstr "Année"
 
+#~ msgid "Next Activity Calendar Event"
+#~ msgstr "Activité suivante de l’événement du calendrier"
+
 #~ msgid "Hr Employee Medical Examination"
 #~ msgstr "Examen médical d’un employé"
 
@@ -436,6 +439,3 @@ msgstr "Année"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Pièce jointe principale"
-
-#~ msgid "Next Activity Calendar Event"
-#~ msgstr "Activité suivante de l’événement du calendrier"

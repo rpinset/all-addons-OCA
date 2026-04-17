@@ -1,16 +1,25 @@
 # Copyright 2017 Creu Blanca
+# Copyright 2025 XCG SAS
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
+import io
 import logging
+import unittest
 
-from odoo.tests import common
+from odoo.tests import can_import, common
 
 _logger = logging.getLogger(__name__)
 
-try:
-    from xlrd import open_workbook
-except ImportError:
-    _logger.debug("Can not import xlrd`.")
+try:  # pragma: no cover
+    from openpyxl import load_workbook
+except ImportError:  # pragma: no cover
+    _logger.debug("Can not import openpyxl.")
+    load_workbook = None
+    try:
+        from xlrd import open_workbook
+    except ImportError:
+        _logger.debug("Can not import xlrd`.")
+        open_workbook = None
 
 
 class TestReport(common.TransactionCase):
@@ -24,13 +33,22 @@ class TestReport(common.TransactionCase):
         self.report = self.report_object._get_report_from_name(self.report_name)
         self.docs = self.env["res.company"].search([], limit=1).partner_id
 
+    @unittest.skipUnless(
+        can_import("xlrd.xlsx") or can_import("openpyxl"), "XLRD/XLSX not available"
+    )
     def test_report(self):
         report = self.report
         self.assertEqual(report.report_type, "xlsx")
         rep = self.report_object._render(self.report_name, self.docs.ids, {})
-        wb = open_workbook(file_contents=rep[0])
-        sheet = wb.sheet_by_index(0)
-        self.assertEqual(sheet.cell(0, 0).value, self.docs.name)
+        if load_workbook:  # pragma: no cover
+            wb = load_workbook(io.BytesIO(rep[0]), read_only=True)
+            sheet = wb[wb.sheetnames[0]]
+            cell_0_0 = sheet.cell(1, 1)
+        elif open_workbook:  # pragma: no cover
+            wb = open_workbook(file_contents=rep[0])
+            sheet = wb.sheet_by_index(0)
+            cell_0_0 = sheet.cell(0, 0)
+        self.assertEqual(cell_0_0.value, self.docs.name)
 
     def test_save_attachment(self):
         self.report.attachment = 'object.name + ".xlsx"'

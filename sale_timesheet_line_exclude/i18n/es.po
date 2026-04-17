@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-05-18 20:19+0000\n"
-"Last-Translator: Josep M <jmyepes@mac.com>\n"
+"PO-Revision-Date: 2026-04-16 21:45+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model,name:sale_timesheet_line_exclude.model_account_analytic_line
@@ -30,7 +30,7 @@ msgstr ""
 #. module: sale_timesheet_line_exclude
 #: model:res.groups,name:sale_timesheet_line_exclude.group_exclude_from_sale_order
 msgid "Exclude timesheets from sale order"
-msgstr ""
+msgstr "Excluir Hojas de horas de la orden de venta"
 
 #. module: sale_timesheet_line_exclude
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_line_exclude.account_analytic_line_search
@@ -41,6 +41,7 @@ msgstr "Excluido del pedido de venta"
 #: model:res.groups,comment:sale_timesheet_line_exclude.group_exclude_from_sale_order
 msgid "Gives access to the Non-Billable field on timesheets."
 msgstr ""
+"Permite acceder al campo \"No facturable\" en las hojas de horas trabajadas."
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model.fields,field_description:sale_timesheet_line_exclude.field_account_analytic_line__exclude_from_sale_order

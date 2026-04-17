@@ -20,11 +20,6 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: report_py3o_fusion_server
-#: model:ir.model.fields.selection,name:report_py3o_fusion_server.selection__py3o_pdf_options__open_bookmark_levels__10
-msgid "10"
-msgstr "10"
-
-#. module: report_py3o_fusion_server
 #: model:ir.model.fields.selection,name:report_py3o_fusion_server.selection__py3o_pdf_options__image_reduce_resolution__1200
 msgid "1200 DPI"
 msgstr "1200 DPI"
@@ -679,6 +674,9 @@ msgstr "Zoom"
 #: model:ir.model.fields,field_description:report_py3o_fusion_server.field_py3o_pdf_options__zoom
 msgid "Zoom Factor"
 msgstr "Coefficente zoom"
+
+#~ msgid "10"
+#~ msgstr "10"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

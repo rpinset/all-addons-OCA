@@ -10,6 +10,10 @@ from odoo.tests import common
 
 
 class TestXmlReport(common.HttpCase):
+    def test_demo_loaded(self):
+        report = self.env.ref("report_xml.demo_xml_report")
+        self.assertTrue(report.xsd_schema)
+
     def test_xml(self):
         report_object = self.env["ir.actions.report"]
         report_name = "report_xml.demo_report_xml_view"

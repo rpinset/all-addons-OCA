@@ -113,21 +113,6 @@ msgid "... zum Steuersatz von 7% (86)"
 msgstr "... zum Steuersatz von 7% (86)"
 
 #. module: l10n_de_tax_statement
-#: model:ir.model.fields.selection,name:l10n_de_tax_statement.selection__l10n_de_tax_statement__version__2018
-msgid "2018"
-msgstr ""
-
-#. module: l10n_de_tax_statement
-#: model:ir.model.fields.selection,name:l10n_de_tax_statement.selection__l10n_de_tax_statement__version__2019
-msgid "2019/2020"
-msgstr ""
-
-#. module: l10n_de_tax_statement
-#: model:ir.model.fields.selection,name:l10n_de_tax_statement.selection__l10n_de_tax_statement__version__2021
-msgid "2021/2022"
-msgstr ""
-
-#. module: l10n_de_tax_statement
 #. odoo-python
 #: code:addons/l10n_de_tax_statement/models/l10n_de_tax_statement_2018.py:0
 #: code:addons/l10n_de_tax_statement/models/l10n_de_tax_statement_2019.py:0

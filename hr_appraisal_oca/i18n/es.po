@@ -1257,6 +1257,9 @@ msgstr "{{ user.name or ''}} solicita una valoración"
 msgid "{{object.employee_id.name}}: Appraisal Confirmed"
 msgstr "{{ object.employee_id.name }}: Valoración confirmada"
 
+#~ msgid "Next Activity Calendar Event"
+#~ msgstr "Siguiente evento en el calendario de actividades."
+
 #~ msgid ""
 #~ "<div style=\"margin: 0px; padding: 0px;\">\n"
 #~ "                <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
@@ -1544,9 +1547,6 @@ msgstr "{{ object.employee_id.name }}: Valoración confirmada"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Adjunto principal"
-
-#~ msgid "Next Activity Calendar Event"
-#~ msgstr "Siguiente evento en el calendario de actividades."
 
 #~ msgid "Related user name for the resource to manage its access."
 #~ msgstr ""
