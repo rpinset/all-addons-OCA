@@ -10,15 +10,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-22 23:20+0000\n"
-"PO-Revision-Date: 2019-02-25 09:36+0000\n"
-"Last-Translator: Thorsten Vocks <thorsten.vocks@big-consulting.net>\n"
+"PO-Revision-Date: 2026-04-20 10:26+0000\n"
+"Last-Translator: Judith Massa <jsmassa@users.noreply.translation.odoo-"
+"community.org>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__code_digits
@@ -494,7 +495,7 @@ msgstr "Neue Steuerzuordnungen"
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__new_taxes
 msgid "New taxes"
-msgstr "Neue  Steuern"
+msgstr "Neue Steuern"
 
 #. module: account_chart_update
 #: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_account__type__new

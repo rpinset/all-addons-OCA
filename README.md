@@ -80,11 +80,16 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 75d30db1fad09bfd6d85f299a3b0872d0868cf66
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 11:28:42 2026 +0000
+commit 2d3638b519de36afbae12754d672cbf3d71c864a
+Author: Judith Massa <jsmassa@users.noreply.translation.odoo-community.org>
+Date:   Mon Apr 20 09:25:36 2026 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (German)
+    
+    Currently translated at 51.6% (46 of 89 strings)
+    
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_check_deposit
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_check_deposit/de/
 
 
 ## account-financial-reporting
@@ -225,11 +230,16 @@ Date:   Fri Feb 27 14:11:08 2026 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit fba7844751b1316cb771a16b9efc83774ec3f465
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Feb 27 11:39:15 2026 +0000
+commit 53df9ab39e9c0340de32e7b80b71b555e3a30d9a
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Apr 20 14:11:11 2026 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 94.3% (84 of 89 strings)
+    
+    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_online
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_online/it/
 
 
 ## account-payment
@@ -1349,16 +1359,14 @@ Date:   Sun Feb 2 20:17:19 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 68a61755945ddd59a35a3a94082483b5d1e0d632
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Feb 3 09:19:01 2026 +0000
+commit bc6b27b05631f3dff45df583e2ae3aa65fff8e0c
+Merge: 68a617559 f2fcaed8c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 21 07:29:53 2026 +0000
 
-    Translated using Weblate (Turkish)
+    Merge PR #1706 into 14.0
     
-    Currently translated at 97.4% (75 of 77 strings)
-    
-    Translation: project-14.0/project-14.0-project_timesheet_time_control
-    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_timesheet_time_control/tr/
+    Signed-off-by AaronHForgeFlow
 
 
 ## project-agile
