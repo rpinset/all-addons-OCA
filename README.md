@@ -65,16 +65,16 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 9fe46768b333ff1138e476d748450674733ea0e1
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 07:51:41 2026 +0000
+commit d5a57f32f6d2ee8cd2dcc7ba4ead0d9068ccacd6
+Author: Judith Massa <jsmassa@users.noreply.translation.odoo-community.org>
+Date:   Mon Apr 20 09:29:41 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (German)
     
-    Currently translated at 51.3% (136 of 265 strings)
+    Currently translated at 51.6% (137 of 265 strings)
     
     Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/sl/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/de/
 
 
 ## account-financial-reporting
