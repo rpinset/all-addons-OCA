@@ -47,11 +47,6 @@ msgid "&gt;"
 msgstr "&gt;"
 
 #. module: account_move_template
-#: model_terms:ir.ui.view,arch_db:account_move_template.account_move_template_line_form
-msgid "1250"
-msgstr "1250"
-
-#. module: account_move_template
 #: model:ir.model.fields,field_description:account_move_template.field_account_move_template_line__account_id
 #: model:ir.model.fields,field_description:account_move_template.field_account_move_template_line_run__account_id
 msgid "Account"
@@ -530,6 +525,9 @@ msgid ""
 msgstr ""
 "Heu suprimit una línia del wizard. Això no està permès: haureu d'actualitzar "
 "la plantilla o modificar l'entrada del diari que generarà aquest wizard."
+
+#~ msgid "1250"
+#~ msgstr "1250"
 
 #~ msgid "Analytic"
 #~ msgstr "Analític"

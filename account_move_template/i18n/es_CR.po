@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2018-02-01 03:44+0000\n"
 "PO-Revision-Date: 2018-02-01 03:44+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
-"Language-Team: Spanish (Costa Rica) (https://www.transifex.com/oca/"
-"teams/23907/es_CR/)\n"
+"Language-Team: Spanish (Costa Rica) (https://www.transifex.com/oca/teams/"
+"23907/es_CR/)\n"
 "Language: es_CR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,11 +39,6 @@ msgstr ""
 #. module: account_move_template
 #: model_terms:ir.ui.view,arch_db:account_move_template.account_move_template_line_form
 msgid "&gt;"
-msgstr ""
-
-#. module: account_move_template
-#: model_terms:ir.ui.view,arch_db:account_move_template.account_move_template_line_form
-msgid "1250"
 msgstr ""
 
 #. module: account_move_template

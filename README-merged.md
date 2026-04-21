@@ -561,7 +561,7 @@ addon | version | maintainers | summary
 [contract_operating_unit_access_all](contract_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Contracts
 [crm_operating_unit](crm_operating_unit/) | 17.0.1.1.0 |  | Operating Unit in CRM
 [hr_operating_unit](hr_operating_unit/) | 17.0.1.0.0 |  | HR Operating Unit
-[mail_operating_unit](mail_operating_unit/) | 17.0.1.0.1 |  | Mail Operating Unit
+[mail_operating_unit](mail_operating_unit/) | 17.0.2.0.0 |  | Mail Operating Unit
 [operating_unit](operating_unit/) | 17.0.1.1.1 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [pos_operating_unit](pos_operating_unit/) | 17.0.1.0.0 |  | POS with Operating Units
@@ -1084,6 +1084,7 @@ addon | version | maintainers | summary
 [account_payment_return_import](account_payment_return_import/) | 17.0.1.0.0 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 17.0.1.0.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.5 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
+[account_payment_term_partner_paydays](account_payment_term_partner_paydays/) | 17.0.1.0.0 |  | Allows to define payment days for partners.
 [account_payment_term_security](account_payment_term_security/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Payment Term Security
 [account_payment_widget_amount](account_payment_widget_amount/) | 17.0.1.0.0 |  | Extends the payment widget to be able to choose the payment amount
 [partner_aging](partner_aging/) | 17.0.1.0.0 | <a href='https://github.com/Urvisha-OSI'><img src='https://github.com/Urvisha-OSI.png' width='32' height='32' style='border-radius:50%;' alt='Urvisha-OSI'/></a> | Aging as a view - invoices and credits
@@ -1944,6 +1945,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_partner_company_group](account_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
+[animal](animal/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage animals information
 [base_country_state_translatable](base_country_state_translatable/) | 17.0.1.0.0 |  | Translate Country States
 [base_location](base_location/) | 17.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 17.0.1.0.1 |  | Import zip entries from Geonames
@@ -3053,6 +3055,7 @@ addon | version | maintainers | summary
 [hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.1 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 17.0.1.0.0 |  | HR Attendance RFID
+[hr_contract_update_overtime](hr_contract_update_overtime/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Update Overtime from HR Contract
 
 [//]: # (end addons)
 
@@ -4782,12 +4785,12 @@ addon | version | maintainers | summary
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 17.0.0.5.0 | <a href='https://github.com/mcojocaru'><img src='https://github.com/mcojocaru.png' width='32' height='32' style='border-radius:50%;' alt='mcojocaru'/></a> | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 17.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 17.0.1.5.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Invoice Report
-[l10n_ro_city](l10n_ro_city/) | 17.0.1.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - City
+[l10n_ro_city](l10n_ro_city/) | 17.0.1.7.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 17.0.1.17.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.9.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.40.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.41.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.9.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.13.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.

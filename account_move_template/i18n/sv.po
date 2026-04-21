@@ -47,11 +47,6 @@ msgid "&gt;"
 msgstr "&gt;"
 
 #. module: account_move_template
-#: model_terms:ir.ui.view,arch_db:account_move_template.account_move_template_line_form
-msgid "1250"
-msgstr "1250"
-
-#. module: account_move_template
 #: model:ir.model.fields,field_description:account_move_template.field_account_move_template_line__account_id
 #: model:ir.model.fields,field_description:account_move_template.field_account_move_template_line_run__account_id
 msgid "Account"
@@ -517,8 +512,8 @@ msgid ""
 "You can refer to other lines using their sequence number e.g. <i>L1</i> for "
 "line with sequence = 1. Examples:"
 msgstr ""
-"Du kan referera till andra rader genom att använda deras sekvensnummer, t."
-"ex. <i>L1</i> för raden med sekvens = 1. Exempel:"
+"Du kan referera till andra rader genom att använda deras sekvensnummer, "
+"t.ex. <i>L1</i> för raden med sekvens = 1. Exempel:"
 
 #. module: account_move_template
 #. odoo-python
@@ -532,6 +527,9 @@ msgstr ""
 "Du tog bort en rad i guiden. Detta är inte tillåtet: du måste antingen "
 "uppdatera mallen eller ändra verifikatet som kommer att genereras av denna "
 "guide."
+
+#~ msgid "1250"
+#~ msgstr "1250"
 
 #~ msgid "Analytic"
 #~ msgstr "Objekt"
