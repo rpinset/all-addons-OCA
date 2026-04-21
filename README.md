@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 1bc9789311a2a4c7cc80c4ee0b874fbb9f3dd689
-Author: Anxo López Rodríguez <lopezrodriguezanxo@gmail.com>
-Date:   Mon Mar 2 19:38:53 2026 +0000
+commit f502873646cf348c634d157aee461a3175d10244
+Author: Judith Massa <jsmassa@users.noreply.translation.odoo-community.org>
+Date:   Mon Apr 20 10:36:10 2026 +0000
 
-    Translated using Weblate (Galician)
+    Translated using Weblate (German)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_sequence/gl/
+    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_required
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_required/de/
 
 
 ## account-budgeting
@@ -73,16 +73,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 52ead8361314620ea50ad230d176f4c5a05c9824
-Author: Matjaz Mozetic <matjaz@luxim.si>
-Date:   Sun Feb 1 08:39:26 2026 +0000
+commit 4d0c3d88cc5cb65401b0dde16b76fa2da1ef22ec
+Author: Judith Massa <jsmassa@users.noreply.translation.odoo-community.org>
+Date:   Mon Apr 20 08:48:13 2026 +0000
 
-    Translated using Weblate (Slovenian)
+    Translated using Weblate (German)
     
-    Currently translated at 54.1% (144 of 266 strings)
+    Currently translated at 54.5% (145 of 266 strings)
     
     Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/sl/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/de/
 
 
 ## account-financial-reporting
