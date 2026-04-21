@@ -20,5 +20,5 @@ class SaleOrder(models.Model):
         for order in self.filtered("auto_purchase_order_id"):
             for line in order.order_line.sudo():
                 if line.auto_purchase_line_id:
-                    line.auto_purchase_line_id.price_unit = line.price_unit
+                    line._sync_price_unit_to_intercompany_purchase_line()
         return super().action_confirm()

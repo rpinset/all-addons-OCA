@@ -10,25 +10,26 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-03 03:37+0000\n"
-"PO-Revision-Date: 2022-02-02 14:33+0000\n"
-"Last-Translator: Olga Marco Puértolas <olga.marco@creublanca.es>\n"
+"PO-Revision-Date: 2026-04-19 09:36+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_employee_base
 msgid "Basic Employee"
-msgstr ""
+msgstr "Empleado Básico"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_res_partner
+#, fuzzy
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: hr_holidays_public
 #: model:ir.ui.menu,name:hr_holidays_public.menu_create_next_year_public_holidays
@@ -37,8 +38,9 @@ msgstr "Crear Próximo Calendario de Festivos"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_employee
+#, fuzzy
 msgid "Employee"
-msgstr ""
+msgstr "Empleado/a"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_leave_type__exclude_public_holidays
@@ -57,7 +59,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_employee_base__is_public_holiday
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_employee_public__is_public_holiday
 msgid "Public Holiday Today"
-msgstr ""
+msgstr "Hoy Festivo"
 
 #. module: hr_holidays_public
 #: model:ir.ui.menu,name:hr_holidays_public.menu_holidays_public_view
@@ -68,7 +70,7 @@ msgstr "Festivos"
 #. module: hr_holidays_public
 #: model:ir.ui.menu,name:hr_holidays_public.menu_hr_public_holidays
 msgid "Public Holidays (OCA)"
-msgstr ""
+msgstr "Festivos (OCA)"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_resource_calendar
@@ -88,7 +90,7 @@ msgstr "Tipo de tiempo libre"
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_res_users
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #~ msgid ""
 #~ "By default, the most recent public holidays\n"

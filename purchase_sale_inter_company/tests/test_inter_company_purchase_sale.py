@@ -379,3 +379,78 @@ class TestPurchaseSaleInterCompany(TestAccountInvoiceInterCompanyBase):
         self.assertEqual(sale.state, "sale")
         self.assertEqual(sale.partner_shipping_id, delivery_address)
         self.assertFalse(sale.partner_shipping_id.company_id)
+
+    def test_tax_exclude(self):
+        """
+        When the tax configuration is different between the two companies,
+        the purchase order must keep the same total as the sale order.
+        Company A has tax included prices
+        Company B has tax excluded prices
+        """
+        self.company_b.sale_auto_validation = False
+        # set the price_include_override to force the tax computation
+        self.tax_company_a.write(
+            {"price_include_override": "tax_included", "type_tax_use": "purchase"}
+        )
+        self.tax_company_b.write(
+            {"price_include_override": "tax_excluded", "type_tax_use": "sale"}
+        )
+        self.product.with_company(self.company_a).supplier_taxes_id = [
+            Command.link(self.tax_company_a.id)
+        ]
+        self.product.with_company(self.company_b).taxes_id = [
+            Command.link(self.tax_company_b.id)
+        ]
+        self.purchase_company_a.order_line.taxes_id = [
+            Command.set(self.tax_company_a.ids)
+        ]
+
+        sale = self._approve_po()
+        self.assertEqual(sale.order_line.tax_id, self.tax_company_b)
+        sale.order_line.price_unit = 150.0
+        sale.action_confirm()
+        # the quantity is 3, so 150 * 3 = 450
+        self.assertAlmostEqual(sale.amount_untaxed, 450.0, places=0)
+        self.assertAlmostEqual(sale.amount_total, 495.0, places=0)
+        self.assertAlmostEqual(
+            self.purchase_company_a.order_line.price_unit, 165.0, places=0
+        )
+        self.assertAlmostEqual(self.purchase_company_a.amount_untaxed, 450.0, places=0)
+        self.assertAlmostEqual(self.purchase_company_a.amount_total, 495.0, places=0)
+
+    def test_tax_include(self):
+        """
+        When the tax configuration is different between the two companies,
+        the purchase order must keep the same total as the sale order.
+        Company A has tax excluded prices
+        Company B has tax included prices
+        """
+        self.company_b.sale_auto_validation = False
+        # set the price_include_override to force the tax computation
+        self.tax_company_a.write(
+            {"price_include_override": "tax_excluded", "type_tax_use": "purchase"}
+        )
+        self.tax_company_b.write(
+            {"price_include_override": "tax_included", "type_tax_use": "sale"}
+        )
+        self.product.with_company(self.company_a).supplier_taxes_id = [
+            Command.link(self.tax_company_a.id)
+        ]
+        self.product.with_company(self.company_b).taxes_id = [
+            Command.link(self.tax_company_b.id)
+        ]
+        self.purchase_company_a.order_line.taxes_id = [
+            Command.set(self.tax_company_a.ids)
+        ]
+        sale = self._approve_po()
+        self.assertEqual(sale.order_line.tax_id, self.tax_company_b)
+        sale.order_line.price_unit = 150.0
+        sale.action_confirm()
+        # the quantity is 3, so 150 * 3 = 450
+        self.assertAlmostEqual(sale.amount_untaxed, 409, places=0)
+        self.assertAlmostEqual(sale.amount_total, 450.0, places=0)
+        self.assertAlmostEqual(
+            self.purchase_company_a.order_line.price_unit, 136.0, places=0
+        )
+        self.assertAlmostEqual(self.purchase_company_a.amount_untaxed, 409, places=0)
+        self.assertAlmostEqual(self.purchase_company_a.amount_total, 450.0, places=0)

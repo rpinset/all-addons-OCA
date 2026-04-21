@@ -31,8 +31,20 @@ msgid "Done Packaging Quantity"
 msgstr ""
 
 #. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_tree_detailed
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_picking_move_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Done Pkg."
+msgstr ""
+
+#. module: stock_move_packaging_qty
 #: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_move_line__product_packaging_id
 #: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_form
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_tree_detailed
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_picking_move_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
 msgid "Packaging"
 msgstr ""
 
@@ -49,6 +61,12 @@ msgstr ""
 #. module: stock_move_packaging_qty
 #: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
 msgid "Reserved Packaging Quantity"
+msgstr ""
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Reserved Pkg."
 msgstr ""
 
 #. module: stock_move_packaging_qty
