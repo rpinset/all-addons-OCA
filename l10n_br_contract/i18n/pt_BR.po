@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-08-19 20:07+0000\n"
+"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: l10n_br_contract
+#: model_terms:ir.ui.view,arch_db:l10n_br_contract.contract_line_form_view
+msgid "Amounts"
+msgstr "Montantes"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__cnpj_cpf
+#, fuzzy
+msgid "CNPJ/CPF"
+msgstr "CNPJ/CPF"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__comment_ids
+msgid "Comments"
+msgstr "Comentários"
+
+#. module: l10n_br_contract
+#: model:ir.model,name:l10n_br_contract.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_br_contract
+#: model:ir.model,name:l10n_br_contract.model_contract_contract
+#: model_terms:ir.ui.view,arch_db:l10n_br_contract.l10n_br_contract_res_company_form
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: l10n_br_contract
+#: model:ir.model,name:l10n_br_contract.model_contract_line
+msgid "Contract Line"
+msgstr "Linha de Contrato"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__country_id
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_res_company__contract_recalculate_taxes_before_invoice
+msgid "Dafault recalculate taxes before invoicing"
+msgstr "Padrão recalcular impostos antes do faturamento"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_res_company__contract_purchase_fiscal_operation_id
+msgid "Default Contract Purchase Fiscal Operation"
+msgstr "Padrão para Operação Fiscal de Compras em Contratos"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_res_company__contract_sale_fiscal_operation_id
+msgid "Default Contract Sale Fiscal Operation"
+msgstr "Padrão de Operação Fiscal de Vendas em Contratos"
+
+#. module: l10n_br_contract
+#: model_terms:ir.ui.view,arch_db:l10n_br_contract.contract_line_form_view
+msgid "Extra Info"
+msgstr "Informação Extra"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__ind_final
+msgid "Final Consumption Operation"
+msgstr "Operação de Consumo Final"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__fiscal_operation_id
+msgid "Fiscal Operation"
+msgstr "Operação Fiscal"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__fiscal_tax_ids
+msgid "Fiscal Taxes"
+msgstr "Impostos Fiscais"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__legal_name
+msgid "Legal Name"
+msgstr "Nome Civil"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__partner_id
+msgid "Partner"
+msgstr "Parceiro"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__contract_recalculate_taxes_before_invoice
+msgid "Recalculate taxes before invoicing"
+msgstr "Recalcular impostos antes do faturamento"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__ie
+msgid "State Tax Number/RG"
+msgstr "Número da Inscrição Estadual/RG"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__tax_framework
+msgid "Tax Framework"
+msgstr ""
+
+#. module: l10n_br_contract
+#: model_terms:ir.ui.view,arch_db:l10n_br_contract.contract_line_form_view
+msgid "Taxes"
+msgstr "Impostos"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,help:l10n_br_contract.field_contract_contract__legal_name
+msgid "Used in fiscal documents"
+msgstr "Usado em documentos fiscais"
+
+#~ msgid ""
+#~ "Contract manually invoiced: <a href=\"#\" data-oe-model=\"%s\" data-oe-id="
+#~ "\"%s\">Invoice</a>"
+#~ msgstr ""
+#~ "Contrato faturado manualmente: <a href=\"#\" data-oe-model=\"%s\" data-oe-"
+#~ "id=\"%s\">Fatura</a>"
+
+#~ msgid "Default Fiscal Operation"
+#~ msgstr "Operação Fiscal Padrão"
+
+#~ msgid "Document Count"
+#~ msgstr "Contagem de Documentos Fiscais"
+
+#~ msgid "Documents"
+#~ msgstr "Documentos"
+
+#~ msgid "Fiscal Document Line"
+#~ msgstr "Linha de Documentos Fiscais"
+
+#~ msgid "Invoice Line"
+#~ msgstr "Linha da Fatura"
