@@ -1,16 +1,17 @@
 # all-addons-OCA — branch `18.0`
 
-Last build: **2026-04-25 07:07 UTC** (elapsed 76s)
+Last build: **2026-04-25 13:04 UTC** (elapsed 100s)
 
-- Repos integrated: **141**
-- Canonical modules: **2542**
+- Repos integrated: **143**
+- Canonical modules: **2549**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **101**
+- Skipped repos (no branch / no module): **110**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | c4958a0 2026-04-22 Miquel Raïch Merge pull request #5597 from OCA/18.0-update-analysis-bot |
 | [account-analytic](https://github.com/OCA/account-analytic) | 24 | 0275618 2026-04-08 pere-aquarian Translated using Weblate (Spanish) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | 4281ef0 2025-10-30 OCA-git-bot [BOT] post-merge updates |
 | [account-closing](https://github.com/OCA/account-closing) | 7 | 21e02dd 2026-03-26 OCA-git-bot Merge PR #370 into 18.0 |
@@ -69,7 +70,7 @@ Last build: **2026-04-25 07:07 UTC** (elapsed 76s)
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | 1 | 3315e32 2025-10-24 OCA-git-bot [BOT] post-merge updates |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 3b8427b 2026-04-15 oca-ci [UPD] Update connector_apix.pot |
 | [l10n-france](https://github.com/OCA/l10n-france) | 26 | 7c0d360 2026-04-16 OCA-git-bot [BOT] post-merge updates |
-| [l10n-germany](https://github.com/OCA/l10n-germany) | 9 | 329e2be 2026-04-24 OCA-git-bot [BOT] post-merge updates |
+| [l10n-germany](https://github.com/OCA/l10n-germany) | 9 | 22dd133 2026-04-25 Weblate Update translation files |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 1 | 46e51b7 2025-04-15 OCA-git-bot Merge PR #44 into 18.0 |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | 31 | 6e86e96 2026-04-22 mymage Translated using Weblate (Italian) |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 10 | 94d2a6d 2026-04-23 Weblate Update translation files |
@@ -91,6 +92,7 @@ Last build: **2026-04-25 07:07 UTC** (elapsed 76s)
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | e31b63f 2026-03-17 mymage Translated using Weblate (Italian) |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | 4 | 5f4877c 2026-04-10 OCA-git-bot [BOT] post-merge updates |
 | [multi-company](https://github.com/OCA/multi-company) | 30 | a24a41d 2026-04-24 Weblate Update translation files |
+| [oca-custom](https://github.com/OCA/oca-custom) | 5 | ec63f37 2026-04-15 OCA-git-bot [BOT] add or update setup/_metapackage |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 3 | 86e8efe 2026-01-19 mymage Translated using Weblate (Italian) |
 | [operating-unit](https://github.com/OCA/operating-unit) | 16 | 8a6ec74 2026-03-27 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 86 | b5ce91b 2026-04-23 Weblate Update translation files |

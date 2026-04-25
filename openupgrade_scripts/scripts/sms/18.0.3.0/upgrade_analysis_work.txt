@@ -1,0 +1,33 @@
+---Models in module 'sms'---
+new model sms.account.code [transient]
+new model sms.account.phone [transient]
+new model sms.account.sender [transient]
+
+# NOTHING TO DO: new wizards
+
+---Fields in module 'sms'---
+sms          / hr.department            / message_has_sms_error (boolean): module is now 'hr' ('sms')
+sms          / hr.employee              / message_has_sms_error (boolean): module is now 'hr' ('sms')
+sms          / hr.job                   / message_has_sms_error (boolean): module is now 'hr' ('sms')
+sms          / loyalty.card             / message_has_sms_error (boolean): module is now 'loyalty' ('sms')
+
+# NOTHING TO DO: fluke of analysis module
+
+sms          / iap.account              / sender_name (char)            : NEW
+
+# NOTHING TO DO: new functionality
+
+---XML records in module 'sms'---
+NEW iap.service: sms.iap_service_sms
+
+# NOTHING TO DO: iap's end-migration links existing iap.account records to this service
+
+NEW ir.model.access: sms.access_sms_account_registration_phone_number_wizard_system
+NEW ir.model.access: sms.access_sms_account_sender_name_wizard_system
+NEW ir.model.access: sms.access_sms_account_verification_code_wizard_system
+NEW ir.ui.view: sms.iap_account_view_form
+NEW ir.ui.view: sms.sms_account_code_view_form
+NEW ir.ui.view: sms.sms_account_phone_view_form
+NEW ir.ui.view: sms.sms_account_sender_view_form
+
+# NOTHING TO DO: fluke of analysis module

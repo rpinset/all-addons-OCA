@@ -1,0 +1,6 @@
+---Models in module 'partner_autocomplete'---
+---Fields in module 'partner_autocomplete'---
+---XML records in module 'partner_autocomplete'---
+NEW iap.service: partner_autocomplete.iap_service_partner_autocomplete
+
+# NOTHING TO DO: iap's end-migration links existing iap.account records to this service

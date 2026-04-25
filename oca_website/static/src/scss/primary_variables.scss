@@ -1,0 +1,102 @@
+// prettier-ignore
+$o-website-values-palettes: (
+    (
+        // Colors
+        "color-palettes-name": "oca_website",
+        // Fonts
+        "headings-font": "DM Sans",
+        "font": "DM Sans",
+        "navbar-font": "DM Sans",
+        "buttons-font": "DM Sans",
+
+        // Footer
+        "footer": 3,
+
+        //hedings, margins and line heights
+        "font-size-base": 16px,
+        "body-line-height": 1.5,
+        "headings-line-height": 1.2,
+        "paragraph-margin-top": 0,
+        "paragraph-margin-bottom": 16px,
+        "headings-margin-top": 0,
+        "headings-margin-bottom": 0.5rem,
+    ),
+);
+
+// Fonts
+$o-theme-font-configs: (
+    "DM Sans": (
+        "family": (
+            "DM Sans",
+            sans-serif,
+        ),
+        "url": "DM+Sans:400,500,700",
+        "properties": (
+            "base": (
+                "font-size-base": 1rem,
+            ),
+        ),
+    ),
+);
+// Colors
+$o-color-palettes: map-merge(
+    $o-color-palettes,
+    (
+        "oca_website": (
+            "o-color-1": #141a46,
+            "o-color-2": #a4b0f1,
+            "o-color-3": #fc624d,
+            "o-color-4": #ffffff,
+            "o-color-5": #2a2a2a,
+            "o-color-6": #fff6f5,
+
+            "o-cc1-bg": "o-color-4",
+            "o-cc1-text": "o-color-1",
+            "o-cc1-headings": "o-color-3",
+            "o-cc1-link": "o-color-1",
+            "o-cc1-btn-primary": "o-color-1",
+            "o-cc1-btn-secondary": "o-color-3",
+
+            "o-cc2-bg": "o-color-6",
+            "o-cc2-text": "o-color-1",
+            "o-cc2-headings": "o-color-1",
+            "o-cc2-link": "o-color-2",
+            "o-cc2-btn-primary": "o-color-1",
+            "o-cc2-btn-secondary": "o-color-2",
+
+            "o-cc3-bg": "o-color-1",
+            "o-cc3-text": "o-color-4",
+            "o-cc3-headings": "o-color-4",
+            "o-cc3-link": "o-color-4",
+            "o-cc3-btn-primary": "o-color-3",
+            "o-cc3-btn-secondary": "o-color-4",
+
+            "o-cc4-bg": "o-color-3",
+            "o-cc4-text": "o-color-4",
+            "o-cc4-headings": "o-color-4",
+            "o-cc4-link": "o-color-4",
+            "o-cc4-btn-primary": "o-color-1",
+            "o-cc4-btn-secondary": "o-color-2",
+
+            "o-cc5-bg": "o-color-5",
+            "o-cc5-text": "o-color-4",
+            "o-cc5-headings": "o-color-4",
+            "o-cc5-link": "o-color-4",
+            "o-cc5-btn-primary": "o-color-3",
+            "o-cc5-btn-secondary": "o-color-2",
+        ),
+    )
+);
+
+$o-selected-color-palettes-names: append(
+    $o-selected-color-palettes-names,
+    "oca_website"
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1280px,
+);

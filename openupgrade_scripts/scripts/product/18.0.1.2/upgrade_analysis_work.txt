@@ -1,0 +1,123 @@
+---Models in module 'product'---
+new model product.combo (renamed from pos.combo in module point_of_sale)
+new model product.combo.item (renamed from pos.combo.line in module point_of_sale)
+# DONE: pre-migration: rename models and fields from point_of_sale models if installed
+
+new model update.product.attribute.value [transient]
+# NOTHING TO DO: new functionality
+
+---Fields in module 'product'---
+point_of_sale / pos.combo.line           / combo_id (many2one)           : now required
+# DONE: post-migration: delete lines without combo_id
+
+point_of_sale / pos.combo.line           / combo_id (many2one)           : relation is now 'product.combo' ('pos.combo') [nothing to do]
+point_of_sale / product.product          / combo_ids (many2many)         : relation is now 'product.combo' ('pos.combo') [nothing to do]
+point_of_sale / product.template         / combo_ids (many2many)         : relation is now 'product.combo' ('pos.combo') [nothing to do]
+# NOTHING TO DO
+
+point_of_sale / product.template         / combo_ids (many2many)         : column2 is now 'product_combo_id' ('pos_combo_id') [pos_combo_product_template_rel]
+point_of_sale / product.template         / combo_ids (many2many)         : table is now 'product_combo_product_template_rel' ('pos_combo_product_template_rel')
+# DONE: pre-migration: renamed column and table
+
+product      / product.attribute        / active (boolean)              : NEW hasdefault: default
+# DONE: added in pre-migration
+
+product      / product.attribute        / template_value_ids (one2many) : NEW relation: product.template.attribute.value
+# NOTHING TO DO
+
+product      / product.attribute.value  / active (boolean)              : NEW hasdefault: default
+# DONE: added in pre-migration
+
+product      / product.category         / message_follower_ids (one2many): NEW relation: mail.followers
+product      / product.category         / message_ids (one2many)        : NEW relation: mail.message
+product      / product.combo            / combo_item_ids (one2many)     : NEW relation: product.combo.item
+product      / product.combo            / company_id (many2one)         : NEW relation: res.company
+product      / product.combo            / name (char)                   : NEW required
+product      / product.combo            / sequence (integer)            : NEW hasdefault: default
+product      / product.combo.item       / combo_id (many2one)           : NEW relation: product.combo, required
+product      / product.combo.item       / company_id (many2one)         : NEW relation: res.company, isrelated: related, stored
+product      / product.combo.item       / extra_price (float)           : NEW hasdefault: default
+product      / product.combo.item       / product_id (many2one)         : NEW relation: product.product, required
+# NOTHING TO DO
+
+product      / product.document         / _order                        : _order is now 'sequence, name' ('name')
+# DONE: see product.document#sequence below
+
+product      / product.document         / sequence (integer)            : NEW hasdefault: default
+# DONE: post-migration: create sequence matching name
+
+product      / product.pricelist        / _order                        : _order is now 'sequence, id, name' ('sequence asc, id asc')
+# NOTHING TO DO: change doesn't actually affect ordering
+
+product      / product.pricelist        / discount_policy (selection)   : DEL required, selection_keys: ['with_discount', 'without_discount']
+product      / product.pricelist.item   / display_applied_on (selection): NEW required, selection_keys: ['1_product', '2_product_category'], hasdefault: default
+product      / product.pricelist.item   / price_markup (float)          : NEW isfunction: function, stored
+# DONE: added and filled in pre-migration
+
+product      / product.product          / _order                        : _order is now 'is_favorite desc, default_code, name, id' ('priority desc, default_code, name, id')
+# NOTHING TO DO: see product.template#is_favorite below
+
+product      / product.product          / combo_ids (many2many)         : previously in module point_of_sale
+# DONE: see product.combo above
+
+product      / product.product          / service_tracking (selection)  : previously in module sale_project
+# NOTHING TO DO
+
+product      / product.product          / standard_price (float)        : needs conversion to v18-style company dependent
+# DONE: post-migration
+
+product      / product.product          / type (selection)              : now required
+# NOTHING TO DO: had a default in previous version already
+
+product      / product.tag              / _order                        : _order is now 'sequence, id' ('id')
+product      / product.tag              / sequence (integer)            : NEW hasdefault: default
+product      / product.template         / _order                        : _order is now 'is_favorite desc, name' ('priority desc, name')
+# NOTHING TO DO: ordering stays the same
+
+product      / product.template         / combo_ids (many2many)         : previously in module point_of_sale
+# NOTHING TO DO: see product.combo above
+
+product      / product.template         / detailed_type (selection)     : DEL required, selection_keys: ['consu', 'service']
+# NOTHING TO DO, might need followup in subsequent addons
+
+product      / product.template         / is_favorite (boolean)         : NEW
+product      / product.template         / priority (selection)          : DEL selection_keys: ['0', '1']
+# DONE: set is_favorite flag based on priority
+
+product      / product.template         / service_tracking (selection)  : previously in module sale_project
+product      / product.template         / type (selection)              : now required
+product      / product.template         / type (selection)              : selection_keys is now '['combo', 'consu', 'service']' ('['consu', 'service']')
+# NOTHING TO DO
+
+product      / res.partner              / specific_property_product_pricelist (many2one): NEW relation: product.pricelist
+# DONE: post-migration: convert from v17 property res.partner#property_product_pricelist
+
+sale_project / product.product          / service_tracking (selection)  : now required
+sale_project / product.template         / service_tracking (selection)  : now required
+sale_project / product.template         / service_tracking (selection)  : selection_keys is now '['no']' ('['no', 'project_only', 'task_global_project', 'task_in_project']')
+# DONE: pre-migration: add default 'no' if service_tracking is null
+
+---XML records in module 'product'---
+NEW ir.actions.act_window: product.product_combo_action
+NEW ir.model.access: product.access_product_combo_item_manager
+NEW ir.model.access: product.access_product_combo_item_user
+NEW ir.model.access: product.access_product_combo_manager
+NEW ir.model.access: product.access_product_combo_user
+NEW ir.model.access: product.access_update_product_attribute_value_manager
+DEL ir.model.constraint: product.constraint_product_attribute_value_value_company_uniq
+NEW ir.rule: product.product_combo_comp_rule (noupdate)
+NEW ir.ui.view: product.product_attribute_search
+NEW ir.ui.view: product.product_combo_view_form
+NEW ir.ui.view: product.product_combo_view_tree
+NEW ir.ui.view: product.product_packaging_search_view
+NEW ir.ui.view: product.product_product_view_form_normalized
+NEW ir.ui.view: product.product_template_attribute_line_view_tree
+NEW ir.ui.view: product.update_product_attribute_value_form
+NEW res.groups: product.group_product_manager
+# NOTHING TO DO
+
+DEL res.groups: product.group_discount_per_so_line [renamed to sale module]
+# DONE: pre-migration: moved xmlid to sale
+
+DEL res.groups: product.group_sale_pricelist
+# NOTHING TO DO

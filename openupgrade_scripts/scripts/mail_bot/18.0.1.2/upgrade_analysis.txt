@@ -1,0 +1,5 @@
+---Models in module 'mail_bot'---
+---Fields in module 'mail_bot'---
+im_livechat_mail_bot / res.users                / odoobot_state (False)         : DEL selection_keys: ['disabled', 'idle', 'not_initialized', 'onboarding_attachement', 'onboarding_canned', 'onboarding_command', 'onboarding_emoji', 'onboarding_ping'], mode: modify
+mail_bot     / res.users                / odoobot_state (selection)     : selection_keys added: [onboarding_canned] (most likely nothing to do)
+---XML records in module 'mail_bot'---

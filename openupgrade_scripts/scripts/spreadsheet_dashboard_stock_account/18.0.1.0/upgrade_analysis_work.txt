@@ -1,0 +1,8 @@
+---Models in module 'spreadsheet_dashboard_stock_account'---
+---Fields in module 'spreadsheet_dashboard_stock_account'---
+---XML records in module 'spreadsheet_dashboard_stock_account'---
+NEW spreadsheet.dashboard: spreadsheet_dashboard_stock_account.spreadsheet_dashboard_warehouse_metrics
+# NOTHING TO DO
+
+DEL spreadsheet.dashboard: spreadsheet_dashboard_stock_account.spreadsheet_dashboard_inventory_on_hand
+# NOTHING TO DO: removed in https://github.com/odoo/odoo/commit/13c46612bf08ef2547ffa485411d3aebce0e8d68

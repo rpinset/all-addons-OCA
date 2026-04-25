@@ -1,0 +1,15 @@
+#wrapwrap {
+    .o_wcrm_filters_top,
+    .o_searchbar_form {
+        .input-group {
+            .bg-light,
+            .btn-light {
+                background-color: #f3f4f6 !important;
+            }
+            .btn.btn-light {
+                border-color: #f3f4f6 !important;
+                color: map-get($theme-colors, "primary");
+            }
+        }
+    }
+}

@@ -1,13 +1,14 @@
 # Copyright 2019 BIG-Consulting GmbH(<http://www.openbig.org>)
 # Copyright 2019-2020 Onestein (<https://www.onestein.eu>)
 # Copyright 2025 Tecnativa - Víctor Martínez
+# Copyright 2026 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import datetime
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import Command, fields
+from odoo import fields
 from odoo.exceptions import UserError
 from odoo.tests import Form, tagged
 from odoo.tools import mute_logger
@@ -68,38 +69,42 @@ class TestVatStatement(BaseCommon):
         cls.tax_6 = cls.env.ref(
             f"account.{cls.company.id}_tax_ust_7_13b_bau_ohne_vst_skr03"
         )
+        cls.tax_vst_19 = cls.env.ref(f"account.{cls.company.id}_tax_vst_19_skr03")
         cls.statement_1 = cls.env["l10n.de.tax.statement"].create(
             {"name": "Statement 1", "version": "2018"}
         )
-
-    def _create_test_invoice(self, additional=False, refund=False):
-        account_receivable = self.env["account.account"].create(
-            {
-                "account_type": "expense",
-                "code": "EXPTEST",
-                "name": "Test expense account",
-                "company_ids": [Command.link(self.company.id)],
-            }
+        cls.journal_sale = cls.env["account.journal"].search(
+            [("company_id", "=", cls.company.id), ("type", "=", "sale")], limit=1
         )
-        journal = self.env["account.journal"].create(
-            {
-                "name": "Journal 1",
-                "code": "Jou1",
-                "type": "sale",
-                "default_account_id": account_receivable.id,
-                "company_id": self.company.id,
-            }
+        cls.journal_purchase = cls.env["account.journal"].search(
+            [("company_id", "=", cls.company.id), ("type", "=", "purchase")], limit=1
         )
-        partner = self.env["res.partner"].create({"name": "Test partner"})
+        cls.partner = cls.env["res.partner"].create({"name": "Test partner"})
 
-        invoice_form = Form(
-            self.env["account.move"].with_context(
-                default_move_type="out_refund" if refund else "out_invoice",
+    @classmethod
+    def _create_move_form(cls, move_type, lines=None):
+        journal = "out" in move_type and cls.journal_sale or cls.journal_purchase
+        move_form = Form(
+            cls.env["account.move"].with_context(
+                default_move_type=move_type,
                 default_journal_id=journal.id,
             ),
         )
-        self.assertEqual(journal, invoice_form.journal_id)
-        invoice_form.partner_id = partner
+        move_form.partner_id = cls.partner
+        lines = lines or []
+        for price_unit, tax in lines:
+            with move_form.invoice_line_ids.new() as line:
+                line.name = "Test line"
+                line.quantity = 1.0
+                line.price_unit = price_unit
+                line.tax_ids.clear()
+                line.tax_ids.add(tax)
+        return move_form
+
+    def _create_test_invoice(self, additional=False, refund=False):
+        # "default_account_id": account_receivable.id,
+        invoice_form = self._create_move_form(refund and "out_refund" or "out_invoice")
+        self.assertEqual(self.journal_sale, invoice_form.journal_id)
         invoice_form.invoice_date = fields.Date.today()
         with invoice_form.invoice_line_ids.new() as line:
             line.name = "Test line"
@@ -140,7 +145,7 @@ class TestVatStatement(BaseCommon):
                 line.tax_ids.add(self.tax_6)
         self.invoice_1 = invoice_form.save()
         for line in self.invoice_1.invoice_line_ids:
-            self.assertEqual(account_receivable, line.account_id)
+            self.assertEqual(self.journal_sale.default_account_id, line.account_id)
         self.assertEqual(len(self.invoice_1.line_ids), 5 if not additional else 13)
 
     def test_01_onchange(self):
@@ -394,20 +399,6 @@ class TestVatStatement(BaseCommon):
         self.assertEqual(len(self.statement_1.line_ids.ids), 45)
         self.assertEqual(self.statement_1.tax_total, 122.5)
 
-    def test_17_2021_version_is_invoice_basis_false(self):
-        self.assertEqual(len(self.statement_1.line_ids.ids), 0)
-        self.assertEqual(self.statement_1.tax_total, 0.0)
-
-        self._create_test_invoice(additional=True)
-        self.invoice_1.action_post()
-        self.statement_1.version = "2021"
-        self.statement_1.company_id.l10n_de_tax_invoice_basis = False
-        self.statement_1.statement_update()
-        self.statement_1.post()
-
-        self.assertEqual(len(self.statement_1.line_ids.ids), 45)
-        self.assertEqual(self.statement_1.tax_total, 122.5)
-
     def test_18_2021_version_refund(self):
         self.assertEqual(len(self.statement_1.line_ids.ids), 0)
         self.assertEqual(self.statement_1.tax_total, 0.0)
@@ -415,9 +406,23 @@ class TestVatStatement(BaseCommon):
         self._create_test_invoice(additional=True, refund=True)
         self.invoice_1.action_post()
         self.statement_1.version = "2021"
-        self.statement_1.company_id.l10n_de_tax_invoice_basis = False
         self.statement_1.statement_update()
         self.statement_1.post()
 
         self.assertEqual(len(self.statement_1.line_ids.ids), 45)
         self.assertEqual(self.statement_1.tax_total, -22.5)
+
+    def test_bill_dates(self):
+        bill_form = self._create_move_form("in_invoice", [(100.0, self.tax_vst_19)])
+        bill_form.invoice_date = "2026-04-12"
+        bill_form.date = "2026-04-01"
+        bill = bill_form.save()
+        bill.action_post()
+        self.statement_1.from_date = "2026-04-12"
+        self.statement_1.to_date = "2026-04-12"
+        self.statement_1.statement_update()
+        self.assertFalse(self.statement_1.tax_total)
+        self.statement_1.from_date = "2026-04-01"
+        self.statement_1.to_date = "2026-04-01"
+        self.statement_1.statement_update()
+        self.assertEqual(self.statement_1.tax_total, -19)

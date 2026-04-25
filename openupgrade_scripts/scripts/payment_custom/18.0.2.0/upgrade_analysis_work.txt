@@ -1,0 +1,6 @@
+---Models in module 'payment_custom'---
+---Fields in module 'payment_custom'---
+---XML records in module 'payment_custom'---
+NEW ir.ui.view: payment_custom.custom_state_header
+DEL ir.ui.view: payment_custom.custom_transaction_status
+# NOTHING TO DO: noupdate=0 ir records.

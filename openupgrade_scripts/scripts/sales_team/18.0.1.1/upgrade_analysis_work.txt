@@ -1,0 +1,11 @@
+---Models in module 'sales_team'---
+---Fields in module 'sales_team'---
+sales_team   / res.partner              / team_id (many2one)            : DEL relation: crm.team
+# NOTHING TO DO: just removed, see https://github.com/odoo/odoo/commit/d11691c0312470c8eeae0f3061953adc8be926c4
+
+---XML records in module 'sales_team'---
+DEL crm.team: sales_team.ebay_sales_team (noupdate)
+# DONE: post-migration: safely removed
+
+DEL ir.ui.view: sales_team.res_partner_view_team
+# NOTHING TO DO

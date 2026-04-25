@@ -1,0 +1,10 @@
+---Models in module 'hr_homeworking'---
+model homework.location.wizard (moved to hr_homeworking_calendar) [transient]
+---Fields in module 'hr_homeworking'---
+hr_homeworking / hr.employee              / hr_icon_display (False)       : selection_keys added: [presence_archive, presence_out_of_working_hour], removed: [presence_absent_active, presence_to_define]
+---XML records in module 'hr_homeworking'---
+DEL ir.actions.act_window: hr_homeworking.set_location_wizard_action [renamed to hr_homeworking_calendar module]
+DEL ir.model.access: hr_homeworking.access_homework_location_wizard [renamed to hr_homeworking_calendar module]
+DEL ir.rule: hr_homeworking.homeworking_location_wizard_admin_rule [renamed to hr_homeworking_calendar module] (noupdate)
+DEL ir.rule: hr_homeworking.homeworking_location_wizard_own_rule [renamed to hr_homeworking_calendar module] (noupdate)
+DEL ir.ui.view: hr_homeworking.homework_location_wizard_view_form

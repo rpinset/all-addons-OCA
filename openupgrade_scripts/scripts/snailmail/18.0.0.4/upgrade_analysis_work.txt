@@ -1,0 +1,6 @@
+---Models in module 'snailmail'---
+---Fields in module 'snailmail'---
+---XML records in module 'snailmail'---
+NEW iap.service: snailmail.iap_service_snailmail
+
+# NOTHING TO DO: iap's end-migration links existing iap.account records to this service

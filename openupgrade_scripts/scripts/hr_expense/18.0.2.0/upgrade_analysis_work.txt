@@ -1,0 +1,28 @@
+---Models in module 'hr_expense'---
+---Fields in module 'hr_expense'---
+hr_expense   / hr.expense               / analytic_distribution_search (json): DEL stored: False
+# NOTHING TO DO: Helper field for searching analytic.
+
+hr_expense   / hr.expense               / payment_mode (selection)      : now required
+# DONE: pre-migration: Assing default "own_account" for those (which should be none) without this value.
+
+hr_expense   / hr.expense               / vendor_id (many2one)          : NEW relation: res.partner
+# NOTHING TO DO: Field to be filled by the user to get the appropiate fiscal position, but not automatically, so no value to put for the existing records.
+
+hr_expense   / hr.expense.sheet         / accounting_date (date)        : not a function anymore
+# NOTHING TO DO: Existing values are correct, and new ones will be set on the moment the moves are posted.
+
+hr_expense   / res.company              / expense_outstanding_account_id (many2one): NEW relation: account.account
+# NOTHING TO DO: New feature for selecting a specific outstanding account as fallback. It's OK to not fill it.
+
+hr_expense   / res.company              / expense_product_id (many2one) : DEL relation: product.product
+# NOTHING TO DO: Now the expense producto for the uploaded files is selected from the generic or the first one found.
+
+---XML records in module 'hr_expense'---
+NEW ir.ui.view: hr_expense.hr_expense_kanban_view_minimal
+DEL ir.ui.view: hr_expense.account_journal_dashboard_kanban_view_inherit_hr_expense
+NEW web_tour.tour: hr_expense.hr_expense_tour
+# NOTHING TO DO: noupdate=0 stuff.
+
+NEW mail.message.subtype: hr_expense.mt_expense_entry_draft (noupdate)
+# NOTHING TO DO: new noupdate=1 record.

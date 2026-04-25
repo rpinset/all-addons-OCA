@@ -1,0 +1,23 @@
+---Models in module 'delivery'---
+---Fields in module 'delivery'---
+delivery     / delivery.carrier         / excluded_tag_ids (many2many)  : NEW relation: product.tag
+delivery     / delivery.carrier         / must_have_tag_ids (many2many) : NEW relation: product.tag
+# NOTHING TO DO: New feature for the availability of the delivery method if some product tags are/are not in the order. Previous behavior is to not have any of them.
+
+delivery     / delivery.carrier         / max_volume (float)            : NEW
+delivery     / delivery.carrier         / max_weight (float)            : NEW
+# NOTHING TO DO: New feature for for the availability of the delivery method up to some maximum amounts. Leave empty is the equivalente to the previous behavior.
+
+delivery     / delivery.carrier         / tracking_url (char)           : NEW
+# NOTHING TO DO: New feature for indicating a pattern URL for creating automatically the shipping tracking URL.
+
+delivery     / res.partner              / property_delivery_carrier_id (many2one): needs conversion to v18-style company dependent
+# DONE: post-migration: Converted to new company-dependent style.
+
+delivery     / sale.order               / delivery_rating_success (boolean): DEL
+# NOTHING TO DO: Field not used anymore.
+
+delivery     / sale.order               / pickup_location_data (json)   : NEW
+# NOTHING TO DO: New feature for picking up the order in shop.
+
+---XML records in module 'delivery'---

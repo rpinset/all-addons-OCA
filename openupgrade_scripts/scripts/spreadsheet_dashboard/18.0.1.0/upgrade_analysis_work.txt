@@ -1,0 +1,24 @@
+---Models in module 'spreadsheet_dashboard'---
+---Fields in module 'spreadsheet_dashboard'---
+spreadsheet_dashboard / spreadsheet.dashboard    / company_id (many2one)         : NEW relation: res.company
+NEW ir.rule: spreadsheet_dashboard.spreadsheet_dashboard_rule_company
+# NOTHING TO DO: Dashboards can now be specific of a company, but we should keep existing ones without filling this field for preserving the old visibility.
+
+spreadsheet_dashboard / spreadsheet.dashboard    / is_published (boolean)        : NEW hasdefault: default
+# NOTHING TO DO: The default value True is equivalent to the previous behavior.
+
+spreadsheet_dashboard / spreadsheet.dashboard    / main_data_model_ids (many2many): NEW relation: ir.model
+# NOTHING TO DO: Field filled by XML data on the provided dashboards to inform the models used inside. It seems only informative and for querying if empty.
+
+spreadsheet_dashboard / spreadsheet.dashboard    / sample_dashboard_file_path (char): NEW
+# NOTHING TO DO: To be filled by XML data to provide a sample dashboard.
+
+spreadsheet_dashboard / spreadsheet.dashboard.group / published_dashboard_ids (one2many): NEW relation: spreadsheet.dashboard
+# NOTHING TO DO: One2many field with domain for getting the published dashboards. The inverse already exists.
+
+---XML records in module 'spreadsheet_dashboard'---
+DEL ir.module.category: spreadsheet_dashboard.dashboard_management
+# DONE: pre-migration in base: Renamed XML-ID to base.module_category_productivity_dashboard in the base scripts.
+
+NEW spreadsheet.dashboard.group: spreadsheet_dashboard.spreadsheet_dashboard_group_marketing [renamed from spreadsheet_dashboard_event_sale module]
+# DONE: pre-migration: Renamed XML-ID (in case it exists).

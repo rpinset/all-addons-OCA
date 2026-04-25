@@ -1,0 +1,5 @@
+---Models in module 'mrp_subcontracting_landed_costs'---
+---Fields in module 'mrp_subcontracting_landed_costs'---
+---XML records in module 'mrp_subcontracting_landed_costs'---
+NEW ir.ui.view: mrp_subcontracting_landed_costs.view_mrp_landed_costs_form
+DEL ir.ui.view: mrp_subonctracting_landed_costs.view_mrp_landed_costs_form

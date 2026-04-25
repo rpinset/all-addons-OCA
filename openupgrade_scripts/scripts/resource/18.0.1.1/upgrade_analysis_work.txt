@@ -1,0 +1,10 @@
+---Models in module 'resource'---
+---Fields in module 'resource'---
+resource     / resource.calendar        / flexible_hours (boolean)      : NEW
+resource     / resource.calendar        / hours_per_day (float)         : not a function anymore
+# NOTHING TO DO: new feature
+
+resource     / resource.calendar        / full_time_required_hours (float): NEW
+# NOTHING TO DO: moved from hr_payroll enterprise due to above feature
+
+---XML records in module 'resource'---

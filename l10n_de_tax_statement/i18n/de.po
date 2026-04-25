@@ -230,20 +230,10 @@ msgid "Code"
 msgstr "Zeile"
 
 #. module: l10n_de_tax_statement
-#: model:ir.model,name:l10n_de_tax_statement.model_res_company
-msgid "Companies"
-msgstr ""
-
-#. module: l10n_de_tax_statement
 #: model:ir.model.fields,field_description:l10n_de_tax_statement.field_l10n_de_tax_statement__company_id
 #: model:ir.model.fields,field_description:l10n_de_tax_statement.field_l10n_de_tax_statement_config__company_id
 msgid "Company"
 msgstr "Unternehmen"
-
-#. module: l10n_de_tax_statement
-#: model:ir.model,name:l10n_de_tax_statement.model_res_config_settings
-msgid "Config Settings"
-msgstr ""
 
 #. module: l10n_de_tax_statement
 #: model:ir.model.fields,field_description:l10n_de_tax_statement.field_l10n_de_tax_statement__create_uid
@@ -265,14 +255,6 @@ msgstr "Angelegt am"
 #: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.report_tax_statement_filters
 msgid "Currency"
 msgstr "Währung"
-
-#. module: l10n_de_tax_statement
-#: model:ir.model.fields,field_description:l10n_de_tax_statement.field_l10n_de_tax_statement__is_invoice_basis
-#: model:ir.model.fields,field_description:l10n_de_tax_statement.field_res_company__l10n_de_tax_invoice_basis
-#: model:ir.model.fields,field_description:l10n_de_tax_statement.field_res_config_settings__l10n_de_tax_invoice_basis
-#: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.res_config_settings_view_form
-msgid "DE Tax Invoice Basis"
-msgstr "Bemessungsgrundlage"
 
 #. module: l10n_de_tax_statement
 #: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.view_l10n_de_tax_report_form
@@ -441,12 +423,6 @@ msgstr ""
 #. module: l10n_de_tax_statement
 #: model:ir.model.fields,help:l10n_de_tax_statement.field_l10n_de_tax_statement__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
-
-#. module: l10n_de_tax_statement
-#: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.res_config_settings_view_form
-msgid ""
-"If this checkbox is ticked, you will enable the german Tax Invoice Basis."
 msgstr ""
 
 #. module: l10n_de_tax_statement
@@ -1165,11 +1141,6 @@ msgstr "Ust-Voranmeldung"
 #: model:ir.model.fields,help:l10n_de_tax_statement.field_l10n_de_tax_statement_line__currency_id
 msgid "Utility field to express amount currency"
 msgstr "Hilfsfeld, welches die Betragswährung ausweist"
-
-#. module: l10n_de_tax_statement
-#: model_terms:ir.ui.view,arch_db:l10n_de_tax_statement.res_config_settings_view_form
-msgid "Values set here are company-specific."
-msgstr ""
 
 #. module: l10n_de_tax_statement
 #: model:ir.model.fields,field_description:l10n_de_tax_statement.field_l10n_de_tax_statement__tax_total

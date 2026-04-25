@@ -1,0 +1,7 @@
+---Models in module 'maintenance'---
+---Fields in module 'maintenance'---
+maintenance  / maintenance.equipment    / equipment_properties (properties): NEW hasdefault: compute
+maintenance  / maintenance.equipment.category / equipment_properties_definition (properties_definition): NEW
+# NOTHING TO DO: new functionality
+
+---XML records in module 'maintenance'---

@@ -1,0 +1,5 @@
+---Models in module 'web_hierarchy'---
+---Fields in module 'web_hierarchy'---
+web_hierarchy / ir.actions.act_window.view / view_mode (False)             : selection_keys added: [list], removed: [gantt, tree]
+web_hierarchy / ir.ui.view               / type (False)                  : selection_keys added: [list], removed: [gantt, tree]
+---XML records in module 'web_hierarchy'---
