@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div
+                    class="app_settings_block"
+                    data-string="Crowdfunding"
+                    string="Crowdfunding"
+                    data-key="crowdfunding"
+                    groups="crowdfunding.group_manager"
+                >
+                    <h2>Crowdfunding</h2>
+                    <div class="row mt16 o_settings_container" name="crowdfunding">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane" />
+                            <div class="o_setting_right_pane">
+                                <label for="crowdfunding_product_id" />
+                                <field name="crowdfunding_product_id" required="True" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane" />
+                            <div class="o_setting_right_pane">
+                                <span class="o_light_label">
+                                    <label for="crowdfunding_default_fee_percentage" />
+                                    <field
+                                        name="crowdfunding_default_fee_percentage"
+                                        widget="percentage"
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_res_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form" />
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'crowdfunding'}</field>
+    </record>
+
+</odoo>

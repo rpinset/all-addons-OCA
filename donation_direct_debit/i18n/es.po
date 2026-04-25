@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* donation_direct_debit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-03-18 21:33+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: donation_direct_debit
+#: code:addons/donation_direct_debit/models/donation.py:0
+#, python-format
+msgid ""
+"A new payment line %s has been automatically added to the draft direct debit "
+"order <a href=# data-oe-model=account.payment.order data-oe-id=%d>%s</a>."
+msgstr ""
+"Se ha añadido automáticamente una nueva línea de pago %s al borrador de "
+"orden de domiciliación <a href=# data-oe-model=account.payment.order data-oe-"
+"id=%d>%s</a>."
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,help:donation_direct_debit.field_donation_donation__mandate_required
+msgid ""
+"Activate this option if this payment method requires your customer to sign a "
+"direct debit mandate with your company."
+msgstr ""
+"Active esta opción si este método de pago requiere que su cliente firme un "
+"mandato de domiciliación bancaria con su compañía."
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_account_journal__display_name
+#: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: donation_direct_debit
+#: model:ir.model,name:donation_direct_debit.model_donation_donation
+msgid "Donation"
+msgstr "Donación"
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_account_journal__donation_debit_order_account_id
+msgid "Donation by Debit Order Account"
+msgstr "Donación por Orden de Ingreso en Cuenta"
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_account_journal__id
+#: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__id
+msgid "ID"
+msgstr "ID"
+
+#. module: donation_direct_debit
+#: model:ir.model,name:donation_direct_debit.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_account_journal____last_update
+#: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__mandate_id
+msgid "Mandate"
+msgstr "Mandato"
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,field_description:donation_direct_debit.field_donation_donation__mandate_required
+msgid "Mandate Required"
+msgstr "Mandato Requerido"
+
+#. module: donation_direct_debit
+#: code:addons/donation_direct_debit/models/donation.py:0
+#, python-format
+msgid "Missing Donation by Debit Order Account on journal '%s'."
+msgstr "Falta Donación por Cuenta de Orden de Débito en el diario '%s'."
+
+#. module: donation_direct_debit
+#: code:addons/donation_direct_debit/models/account_journal.py:0
+#, python-format
+msgid ""
+"The Donation by Debit Order Account of journal '%(journal)s' must be a "
+"receivable account, but the account '%(account)s' is configured with type "
+"'%(account_type)s'."
+msgstr ""
+"La cuenta Donación por orden de cargo del diario '%(journal)s' debe ser una "
+"cuenta deudora, pero la cuenta '%(account)s' está configurada con el tipo "
+"'%(account_type)s'."
+
+#. module: donation_direct_debit
+#: code:addons/donation_direct_debit/models/account_journal.py:0
+#, python-format
+msgid ""
+"The Donation by Debit Order Account of journal '%(journal)s' must be "
+"reconciliable, but the account '%(account)s' is not reconciliable."
+msgstr ""
+"La cuenta \"Donación por orden de cargo\" del diario \"%(journal)s\" debe "
+"ser conciliable, pero la cuenta \"%(account)s\" no lo es."
+
+#. module: donation_direct_debit
+#: model:ir.model.fields,help:donation_direct_debit.field_account_journal__donation_debit_order_account_id
+msgid ""
+"Transfer account for donations by debit order. Leave empty if you don't "
+"handle donations by debit order on this bank account.This account must be a "
+"receivable account, otherwise the debit order will not work."
+msgstr ""
+"Cuenta de transferencia para donaciones por orden de débito. Déjela vacía si "
+"no gestiona donaciones por orden de débito en esta cuenta bancaria. Esta "
+"cuenta debe ser una cuenta deudora; de lo contrario, la orden de débito no "
+"funcionará."
+
+#. module: donation_direct_debit
+#: code:addons/donation_direct_debit/models/donation.py:0
+#, python-format
+msgid ""
+"You cannot cancel a donation which is linked to a payment line in a direct "
+"debit order. Remove it from the following direct debit order: %s."
+msgstr ""
+"No puede anular una donación vinculada a una línea de pago de una orden de "
+"domiciliación bancaria. Elimínelo de la siguiente orden de domiciliación: %s."
+
+#, python-format
+#~ msgid ""
+#~ "A new draft direct debit order <a href=# data-oe-model=account.payment."
+#~ "order data-oe-id=%d>%s</a> has been automatically created"
+#~ msgstr ""
+#~ "Se ha creado automáticamente un nuevo borrador de orden de domiciliación "
+#~ "bancaria <a href=# data-oe-model=account.paid.order data-oe-id=%d>%s</a>"
+
+#, python-format
+#~ msgid ""
+#~ "A new payment line has been automatically added to the existing draft "
+#~ "direct debit order <a href=# data-oe-model=account.payment.order data-oe-"
+#~ "id=%d>%s</a>."
+#~ msgstr ""
+#~ "Se ha agregado automáticamente una nueva línea de pago al borrador de "
+#~ "orden de domiciliación bancaria existente <a href=# data-oe-model=account."
+#~ "paid.order data-oe-id=%d>%s</a>."

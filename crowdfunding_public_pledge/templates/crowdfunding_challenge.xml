@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <template
+        id="template_challenge_detail"
+        inherit_id="crowdfunding.template_challenge_detail"
+    >
+        <section position="after">
+            <t
+                t-set="public_pledge_invoices"
+                t-value="object.sudo().invoice_ids.filtered(lambda x: x.payment_state == 'paid' and x.crowdfunding_public).sorted(lambda x: -x.amount_total)"
+            />
+            <section
+                name="crowdfunding_public_pledge"
+                t-if="public_pledge_invoices"
+                class="mb24"
+            >
+                <h2>Pledges</h2>
+                <div class="container d-flex flex-wrap">
+                <div
+                        t-foreach="public_pledge_invoices"
+                        t-as="invoice"
+                        class="card col-12 col-md-6"
+                    >
+                    <div class="card-body">
+                        <div class="row mx-0">
+                            <t
+                                    t-set="partner"
+                                    t-value="invoice.partner_id.commercial_partner_id"
+                                />
+                            <img
+                                    t-if="partner.image_128"
+                                    t-att-src="image_data_uri(partner.image_128)"
+                                    class="mr-2"
+                                    width="128"
+                                />
+                            <img
+                                    t-if="not partner.image_128"
+                                    src="/base/static/img/company_image.png"
+                                    class="mr-2"
+                                    width="128"
+                                />
+                            <div>
+                                <div t-field="partner.name" />
+                                <div t-field="invoice.amount_total" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+    </template>
+</data>

@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* attribute_set_mass_edit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-06-09 14:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_attribute__allow_mass_editing
+msgid "Allow Mass Editing"
+msgstr "Consenti modifica di massa"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model,name:attribute_set_mass_edit.model_attribute_attribute
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_line__attribute_id
+msgid "Attribute"
+msgstr "Attributo"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model,name:attribute_set_mass_edit.model_attribute_group
+msgid "Attribute Group"
+msgstr "Gruppo attributo"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_attribute__display_name
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_group__display_name
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_ir_actions_server__display_name
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_line__display_name
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_wizard__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: attribute_set_mass_edit
+#: code:addons/attribute_set_mass_edit/models/attribute_group.py:0
+#, python-format
+msgid "Edit %s fields"
+msgstr "Modifica campi %s"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_attribute__id
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_group__id
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_ir_actions_server__id
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_line__id
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_attribute____last_update
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_group____last_update
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_ir_actions_server____last_update
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_line____last_update
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_mass_editing_wizard____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_group__mass_edit_action_ids
+msgid "Mass Edit Action"
+msgstr "Azione modifica di massa"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_ir_actions_server__mass_edit_attribute_group_id
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_ir_cron__mass_edit_attribute_group_id
+msgid "Mass Edit Attribute Group"
+msgstr "Gruppo modifica di massa attributo"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model,name:attribute_set_mass_edit.model_mass_editing_line
+#: model:ir.model.fields,field_description:attribute_set_mass_edit.field_attribute_attribute__mass_editing_line_ids
+msgid "Mass Editing Line"
+msgstr "Riga modifica di massa"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model,name:attribute_set_mass_edit.model_ir_actions_server
+msgid "Server Action"
+msgstr "Azione server"
+
+#. module: attribute_set_mass_edit
+#: model:ir.model,name:attribute_set_mass_edit.model_mass_editing_wizard
+msgid "Wizard for mass edition"
+msgstr "Procedura guidata per le modifiche massive"

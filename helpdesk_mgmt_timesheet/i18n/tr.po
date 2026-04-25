@@ -1,0 +1,198 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_mgmt_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-02-03 08:57+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__allow_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket_team__allow_timesheet
+msgid "Allow Timesheet"
+msgstr "Zaman Çizelgesine İzin Ver"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model,name:helpdesk_mgmt_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Analitik Hesap"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_team_view_form
+msgid "Change the Default Project will not have retroactive effects."
+msgstr "Varsayılan Projeyi değiştirmenin geriye dönük etkileri olmayacaktır."
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Date"
+msgstr "Tarih"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket_team__default_project_id
+msgid "Default Project"
+msgstr "Varsayılan Proje"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__display_name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket_team__display_name
+msgid "Display Name"
+msgstr "Görünen İsim"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Duration (Hour(s))"
+msgstr "Süre (Saat)"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_kanban_view
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.ticket_view_tree
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "End work"
+msgstr "İşi sonlandır"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model,name:helpdesk_mgmt_timesheet.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Yardım Masası Destek Kayıtı"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model,name:helpdesk_mgmt_timesheet.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "Yardım Masası Destek Kayıtı Ekibi"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket_team__id
+msgid "ID"
+msgstr ""
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,help:helpdesk_mgmt_timesheet.field_helpdesk_ticket__show_time_control
+msgid "Indicate which time control button to show, if any."
+msgstr "Varsa, hangi zaman kontrol düğmesinin gösterileceğini belirtin."
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket____last_update
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket_team____last_update
+msgid "Last Modified on"
+msgstr "Son Düzenleme"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__last_timesheet_activity
+msgid "Last Timesheet Activity"
+msgstr "Son Zaman Çizelgesi Etkinliği"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_view_search
+msgid "Late"
+msgstr "Geç"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__planned_hours
+msgid "Planned Hours"
+msgstr "Planlanmış Saatler"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__progress
+msgid "Progress"
+msgstr "İlerleme"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__remaining_hours
+msgid "Remaining Hours"
+msgstr "Kalan Saatler"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Resume work"
+msgstr "İşi devam ettir"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__show_time_control
+msgid "Show Time Control"
+msgstr "Zaman Kontrolünü Göster"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_kanban_view
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.ticket_view_tree
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Start work"
+msgstr "İşi Başlat"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_kanban_view
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.ticket_view_tree
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Stop work"
+msgstr "İşi Durdur"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:project.project,label_tasks:helpdesk_mgmt_timesheet.project_1
+msgid "Tasks"
+msgstr "Görevler"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_hr_timesheet_switch__ticket_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.report_timesheet
+msgid "Ticket"
+msgstr "Destek Kaydı"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__ticket_partner_id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_hr_timesheet_switch__ticket_partner_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
+msgid "Ticket partner"
+msgstr "Destek Kaydı partneri"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:project.project,label_tickets:helpdesk_mgmt_timesheet.project_1
+#: model:project.task,label_tickets:helpdesk_mgmt_timesheet.project_task_1
+msgid "Tickets"
+msgstr "Destek Kayıtları"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__timesheet_ids
+msgid "Timesheet"
+msgstr "Zaman Çizelgesi"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_view_search
+msgid "Timesheet allowed"
+msgstr "Zaman Çizelgesine izin verildi"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.actions.act_window,name:helpdesk_mgmt_timesheet.helpdesk_timesheet_action
+#: model:ir.ui.menu,name:helpdesk_mgmt_timesheet.helpdesk_timesheet_menu
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.timesheet_helpdesk_ticket_view_form
+msgid "Timesheets"
+msgstr "Zaman Çizelgeleri"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__total_hours
+msgid "Total Hours"
+msgstr "Toplam Saatler"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_view_search
+msgid "With activity today"
+msgstr "Bugünkü etkinlik ile"
+
+#. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
+msgid "With ticket"
+msgstr "Destek Kaydı ile"

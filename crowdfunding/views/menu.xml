@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <menuitem
+        id="menu_crowdfunding_root"
+        name="Crowdfunding"
+        web_icon="crowdfunding,static/description/icon.png"
+    />
+    <menuitem
+        id="menu_crowdfunding_challenge"
+        sequence="10"
+        action="action_crowdfunding_challenge"
+        parent="menu_crowdfunding_root"
+    />
+    <menuitem
+        id="menu_crowdfunding_configuration"
+        name="Configuration"
+        sequence="100"
+        parent="menu_crowdfunding_root"
+    />
+
+    <menuitem
+        id="menu_res_config_settings"
+        name="Settings"
+        parent="menu_crowdfunding_configuration"
+        sequence="0"
+        action="action_res_config_settings"
+        groups="base.group_system"
+    />
+</data>

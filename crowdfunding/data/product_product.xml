@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo noupdate="1">
+    <record id="product_crowdfunding" model="product.product" forcecreate="False">
+        <field name="name">Crowdfunding</field>
+        <field name="type">service</field>
+    </record>
+    <record id="base.main_company" model="res.company">
+        <field name="crowdfunding_product_id" ref="product_crowdfunding" />
+    </record>
+</odoo>

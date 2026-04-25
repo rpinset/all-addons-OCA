@@ -1,0 +1,782 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crowdfunding
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "<option value=\"\">Select country</option>"
+msgstr ""
+
+#. module: crowdfunding
+#: model:crowdfunding.challenge,website_meta_title:crowdfunding.demo_challenge
+msgid "A very challenging challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_details
+msgid "Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Amount needed:"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Amount pledged:"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__can_publish
+msgid "Can Publish"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_invoicing_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__challenge_ids
+msgid "Challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: code:addons/crowdfunding/models/crowdfunding_challenge.py:0
+#, python-format
+msgid ""
+"Challenge %(name)s cannot be marked as done as the amount paid differs from "
+"the amount to be paid"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Challenge Cover"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.actions.act_window,name:crowdfunding.action_crowdfunding_challenge
+#: model:ir.ui.menu,name:crowdfunding.menu_crowdfunding_challenge
+msgid "Challenges"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "City"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__claimed
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Claimed"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Claimed by"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__fee_percentage
+msgid "Commission Fee %"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__fee_amount
+msgid "Commission Fee Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__company_id
+msgid "Company"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.ui.menu,name:crowdfunding.menu_crowdfunding_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Continue"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Country"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__cover_properties
+msgid "Cover Properties"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Create Vendor Bill"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.actions.act_window,name:crowdfunding.action_crowdfunding_invoicing_wizard
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_invoicing_wizard_form
+msgid "Create Vendor Bills"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__create_uid
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__create_date
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.module.category,name:crowdfunding.module_category
+#: model:ir.ui.menu,name:crowdfunding.menu_crowdfunding_root
+#: model:product.product,name:crowdfunding.product_crowdfunding
+#: model:product.template,name:crowdfunding.product_crowdfunding_product_template
+#: model:website.menu,name:crowdfunding.website_menu_crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list_header
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_move_form
+msgid "Crowdfunding"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_challenge_id
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_challenge_id
+#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_challenge_id
+#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__crowdfunding_challenge_id
+msgid "Crowdfunding Challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_crowdfunding_invoicing_wizard
+msgid "Crowdfunding Invoicing Wizard"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_crowdfunding_challenge
+msgid "Crowdfunding challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Customer Invoices"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledge_default_amount
+msgid "Default Pledge Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_res_company__crowdfunding_default_fee_percentage
+#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__crowdfunding_default_fee_percentage
+msgid "Default fee percentage"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Delivered by"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Describe the challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__description
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Description"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__description_image
+msgid "Description Image"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__description_url
+msgid "Description URL"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__display_name
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__display_name
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__display_name
+#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__display_name
+#: model:ir.model.fields,field_description:crowdfunding.field_res_company__display_name
+#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__done
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Done"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__state
+msgid ""
+"Draft: The challenge is in preparation\n"
+"Open: The challenge is visible for users, payments can be done\n"
+"Claimed: Somebody has been assigned to work on the challenge, payments can "
+"be done\n"
+"Submitted: Work is submitted, no further payments possible\n"
+"Done: Work is done, all payments done"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list_footer
+msgid "Edit the footer of the crowdfunding list"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list_header
+msgid "Edit the header of the crowdfunding list"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Email"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__vendor_bill_ids
+msgid "Existing vendor bills"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__pledge_default_amount
+msgid "Fill in a proposed amount pledgers can modify"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Fill in the minimum amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__funding_state__funded
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Funded"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__funding_state
+msgid "Funding State"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Funding state"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__id
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__id
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__id
+#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__id
+#: model:ir.model.fields,field_description:crowdfunding.field_res_company__id
+#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_needaction
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__description_image
+msgid "Image that will be displayed on the challenge description"
+msgstr ""
+
+#. module: crowdfunding
+#: code:addons/crowdfunding/controllers/payment.py:0
+#, python-format
+msgid "Invalid country"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__invoice_ids
+msgid "Invoice"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__invoice_count
+msgid "Invoice Count"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__is_published
+msgid "Is Published"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move____last_update
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge____last_update
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard____last_update
+#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction____last_update
+#: model:ir.model.fields,field_description:crowdfunding.field_res_company____last_update
+#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__write_uid
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__write_date
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Link for more information"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Login"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: crowdfunding
+#: model:res.groups,name:crowdfunding.group_manager
+msgid "Manager"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Mark As Submitted"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "More information"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__name
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Name"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__funding_state__needs_funding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Needs funding"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__open
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Open"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Other info"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_payment_transaction
+msgid "Payment Transaction"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__percentage
+msgid "Percentage"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__percentage_paid
+msgid "Percentage Paid"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_details
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Pledge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_percentage
+msgid "Pledged %"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_pledged_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_pledged_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_pledged_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_amount
+msgid "Pledged Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_amount_total
+msgid "Pledges Total"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_res_company__crowdfunding_product_id
+#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__crowdfunding_product_id
+msgid "Product"
+msgstr ""
+
+#. module: crowdfunding
+#: code:addons/crowdfunding/controllers/payment.py:0
+#, python-format
+msgid "Required field"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__is_seo_optimized
+msgid "SEO optimized"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Select partner to work on this challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__seo_name
+msgid "Seo name"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Set Claimed"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Set Done"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.actions.act_window,name:crowdfunding.action_res_config_settings
+#: model:ir.ui.menu,name:crowdfunding.menu_res_config_settings
+msgid "Settings"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__state
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "State"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Street"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__submitted
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_search
+msgid "Submitted"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "Submitted by"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_target_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_target_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_target_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__target_amount
+msgid "Target Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__claimed_partner_amount
+msgid "The amount to be paid out"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__website_url
+msgid "The full URL to access the document through the website."
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_res_company__crowdfunding_default_fee_percentage
+#: model:ir.model.fields,help:crowdfunding.field_res_config_settings__crowdfunding_default_fee_percentage
+msgid ""
+"The percentage of money pledged for a challenge your organization uses to "
+"pay for overhead"
+msgstr ""
+
+#. module: crowdfunding
+#: model:crowdfunding.challenge,website_meta_description:crowdfunding.demo_challenge
+msgid ""
+"This challenge is very challenging because of the challenging challenges it "
+"involves"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_res_company__crowdfunding_product_id
+#: model:ir.model.fields,help:crowdfunding.field_res_config_settings__crowdfunding_product_id
+msgid "This product is used to create invoices and vendor bills."
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__description_url
+msgid "URL for more information about this challenge"
+msgstr ""
+
+#. module: crowdfunding
+#: model:product.product,uom_name:crowdfunding.product_crowdfunding
+#: model:product.template,uom_name:crowdfunding.product_crowdfunding_product_template
+msgid "Units"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_amount_unpaid
+msgid "Unposted Pledges"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__claimed_partner_amount
+msgid "Unposted Vendor Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: crowdfunding
+#: model:res.groups,name:crowdfunding.group_user
+msgid "User"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__claimed_partner_id
+msgid "Vendor"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_vendor_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_vendor_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_vendor_amount
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_amount
+msgid "Vendor Amount"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_amount_total
+msgid "Vendor Amount Total"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_amount_unpaid
+msgid "Vendor Amount Unposted"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_bill_ids
+msgid "Vendor Bill"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_bill_count
+msgid "Vendor Bill Count"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_form
+msgid "Vendor Bills"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_published
+msgid "Visible on current website"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_url
+msgid "Website URL"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_meta_title
+msgid "Website meta title"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_meta_og_img
+msgid "Website opengraph image"
+msgstr ""
+
+#. module: crowdfunding
+#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__fee_amount
+msgid ""
+"When a challenge is claimed, this amount will be deducted from the total "
+"amount pledged to cover overhead costs"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "Zip"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
+msgid "or"
+msgstr ""

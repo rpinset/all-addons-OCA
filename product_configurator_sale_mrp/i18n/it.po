@@ -1,0 +1,58 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_configurator_sale_mrp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-05-21 10:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_sale_order_line__bom_id
+msgid "Bom"
+msgstr "DiBa"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_product_configurator_sale__display_name
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_stock_rule__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_product_configurator_sale__id
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_sale_order_line__id
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_stock_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_product_configurator_sale____last_update
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:product_configurator_sale_mrp.field_stock_rule____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model,name:product_configurator_sale_mrp.model_product_configurator_sale
+msgid "Product Configurator Sale"
+msgstr "Configuratore di prodotto vendita"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model,name:product_configurator_sale_mrp.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: product_configurator_sale_mrp
+#: model:ir.model,name:product_configurator_sale_mrp.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regola di giacenza"

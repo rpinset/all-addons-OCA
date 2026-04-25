@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* endpoint_product_catalog
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: endpoint_product_catalog
+#: model_terms:ir.ui.view,arch_db:endpoint_product_catalog.product_assortment_view_form
+msgid "<span class=\"o_stat_text\">Endpoints</span>"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model_terms:ir.ui.view,arch_db:endpoint_product_catalog.endpoint_endpoint_form_view
+msgid "Catalog"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model_terms:ir.ui.view,arch_db:endpoint_product_catalog.endpoint_endpoint_search_view
+msgid "Catalogs"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint__display_name
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_ir_filters__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model,name:endpoint_product_catalog.model_endpoint_endpoint
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_ir_filters__endpoint_ids
+msgid "Endpoint"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_ir_filters__endpoint_count
+msgid "Endpoint Count"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: code:addons/endpoint_product_catalog/models/ir_filters.py:0
+#, python-format
+msgid "Endpoints"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model,name:endpoint_product_catalog.model_ir_filters
+msgid "Filters"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint__id
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_ir_filters__id
+msgid "ID"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint__include_prices
+msgid "Include Prices"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint__lang_id
+msgid "Lang"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint____last_update
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_ir_filters____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: endpoint_product_catalog
+#: model:ir.model.fields,field_description:endpoint_product_catalog.field_endpoint_endpoint__product_assortment_id
+msgid "Product Assortment"
+msgstr ""

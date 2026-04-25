@@ -1,0 +1,616 @@
+---Models in module 'general'---
+obsolete model account.accrual.accounting.wizard [module account]
+obsolete model account.bank.statement.import [module account_statement_import]
+obsolete model account.bank.statement.import.journal.creation [module account_statement_import]
+obsolete model account.fiscal.year [module account]
+obsolete model account.reconciliation.widget [module account]
+obsolete model base.gengo.translations [module base_gengo]
+obsolete model crm.lead.tag (renamed to crm.tag) [module crm]
+obsolete model crm.partner.binding [module crm]
+obsolete model email_template.preview (renamed to mail.template.preview) [module mail]
+obsolete model event.answer (renamed to event.question.answer) [module website_event_questions]
+obsolete model event.confirm [module event]
+obsolete model event.question.report [module website_event_questions]
+obsolete model fleet.vehicle.cost [module fleet]
+obsolete model fleet.vehicle.log.fuel [module fleet]
+obsolete model google.calendar [module google_calendar]
+obsolete model hr.expense.sheet.register.payment.wizard [module hr_expense]
+obsolete model lunch.order.temp [module lunch]
+obsolete model mail.address.mixin [module mail]
+obsolete model mail.test [module test_mail]
+obsolete model mail.test.full [module test_mail]
+obsolete model mass.mail.test [module test_mass_mailing]
+obsolete model mass.mail.test.bl [module test_mass_mailing]
+obsolete model mrp.abstract.workorder [module mrp]
+obsolete model mrp.abstract.workorder.line [module mrp]
+obsolete model mrp.product.produce [module mrp]
+obsolete model mrp.product.produce.line [module mrp]
+obsolete model mrp.routing [module mrp]
+obsolete model mrp.workorder.line [module mrp]
+obsolete model openupgrade.analysis.wizard (renamed to upgrade.analysis) [module upgrade_analysis]
+obsolete model openupgrade.attribute (renamed to upgrade.attribute) [module upgrade_analysis]
+obsolete model openupgrade.comparison.config (renamed to upgrade.comparison.config) [module upgrade_analysis]
+obsolete model openupgrade.generate.records.wizard (renamed to upgrade.generate.record.wizard) [module upgrade_analysis]
+obsolete model openupgrade.install.all.wizard (renamed to upgrade.install.wizard) [module upgrade_analysis]
+obsolete model openupgrade.record (renamed to upgrade.record) [module upgrade_analysis]
+obsolete model product.price_list [module product]
+obsolete model product.style (renamed to product.ribbon) [module website_sale]
+obsolete model repair.cancel [module repair]
+obsolete model report.account.report_agedpartnerbalance [module account]
+obsolete model report.sale_coupon.report_coupon (renamed to report.coupon.report_coupon) [module coupon]
+obsolete model sale.coupon (renamed to coupon.coupon) [module coupon]
+obsolete model sale.coupon.generate (renamed to coupon.generate.wizard) [module coupon]
+obsolete model sale.coupon.program (renamed to coupon.program) [module coupon]
+obsolete model sale.coupon.reward (renamed to coupon.reward) [module coupon]
+obsolete model sale.coupon.rule (renamed to coupon.rule) [module coupon]
+obsolete model stock.change.standard.price [module stock_account]
+obsolete model stock.overprocessed.transfer [module stock]
+obsolete model stock.picking.responsible [module stock]
+obsolete model survey.label (renamed to survey.question.answer) [module survey]
+obsolete model survey.user_input_line (renamed to survey.user_input.line) [module survey]
+obsolete model test_performance.mail [module test_mail]
+new model account.automatic.entry.wizard [module account]
+new model account.edi.common [module account_edi_ubl_cii]
+new model account.edi.document [module account_edi]
+new model account.edi.format [module account_edi]
+new model account_edi_proxy_client.user [module account_edi_proxy_client]
+new model account.edi.xml.cii [module account_edi_ubl_cii]
+new model account.edi.xml.ubl_20 [module account_edi_ubl_cii]
+new model account.edi.xml.ubl_21 [module account_edi_ubl_cii]
+new model account.edi.xml.ubl_bis3 [module account_edi_ubl_cii]
+new model account.edi.xml.ubl_de [module account_edi_ubl_cii]
+new model account.edi.xml.ubl_efff [module account_edi_ubl_cii]
+new model account.group.template [module account]
+new model account.reconcile.model.line [module account]
+new model account.reconcile.model.line.template [module account]
+new model account.reconcile.model.partner.mapping [module account]
+new model account.resequence.wizard [module account]
+new model account.tax.report [module account]
+new model account.tour.upload.bill [module account]
+new model account.tour.upload.bill.email.confirm [module account]
+new model adyen.account [module adyen_platforms]
+new model adyen.address.mixin [module adyen_platforms]
+new model adyen.bank.account [module adyen_platforms]
+new model adyen.id.mixin [module adyen_platforms]
+new model adyen.payout [module adyen_platforms]
+new model adyen.shareholder [module adyen_platforms]
+new model adyen.store [module pos_adyen]
+new model adyen.terminal [module pos_adyen]
+new model adyen.transaction [module adyen_platforms]
+new model applicant.get.refuse.reason [module hr_recruitment]
+new model auth_totp.wizard [module auth_totp]
+new model base.automation.link.test [module test_base_automation]
+new model base.automation.linked.test [module test_base_automation]
+new model calendar.recurrence [module calendar]
+new model chat.room [module website_jitsi]
+new model chat.room.mixin [module website_jitsi]
+new model coupon.coupon (renamed from sale.coupon) [module coupon]
+new model coupon.generate.wizard (renamed from sale.coupon.generate) [module coupon]
+new model coupon.program (renamed from sale.coupon.program) [module coupon]
+new model coupon.reward (renamed from sale.coupon.reward) [module coupon]
+new model coupon.rule (renamed from sale.coupon.rule) [module coupon]
+new model crm.recurring.plan [module crm]
+new model crm.tag (renamed from crm.lead.tag) [module sales_team]
+new model decimal.precision.test [module test_new_api]
+new model domain.bool [module test_new_api]
+new model event.lead.rule [module event_crm]
+new model event.meeting.room [module website_event_meet]
+new model event.question.answer (renamed from event.answer) [module website_event_questions]
+new model event.quiz [module website_event_track_quiz]
+new model event.quiz.answer [module website_event_track_quiz]
+new model event.quiz.question [module website_event_track_quiz]
+new model event.stage [module event]
+new model event.tag [module event]
+new model event.tag.category [module event]
+new model event.track.tag.category [module website_event_track]
+new model event.track.visitor [module website_event_track]
+new model event.type.ticket [module event]
+new model expiry.picking.confirmation [module product_expiry]
+new model export.boolean [module test_impex]
+new model export.computed.binary [module test_xlsx_export]
+new model export.date [module test_impex]
+new model export.datetime [module test_impex]
+new model export.decimal [module test_impex]
+new model export.float [module test_impex]
+new model export.function [module test_impex]
+new model export.group_operator [module test_xlsx_export]
+new model export.group_operator.one2many [module test_xlsx_export]
+new model export.inherits.child [module test_impex]
+new model export.inherits.parent [module test_impex]
+new model export.integer [module test_impex]
+new model export.m2o.str [module test_impex]
+new model export.m2o.str.child [module test_impex]
+new model export.many2many [module test_impex]
+new model export.many2many.other [module test_impex]
+new model export.many2one [module test_impex]
+new model export.one2many [module test_impex]
+new model export.one2many.child [module test_impex]
+new model export.one2many.child.1 [module test_impex]
+new model export.one2many.child.2 [module test_impex]
+new model export.one2many.multiple [module test_impex]
+new model export.one2many.multiple.child [module test_impex]
+new model export.one2many.recursive [module test_impex]
+new model export.selection [module test_impex]
+new model export.selection.function [module test_impex]
+new model export.selection.withdefault [module test_impex]
+new model export.string [module test_impex]
+new model export.string.bounded [module test_impex]
+new model export.string.required [module test_impex]
+new model export.text [module test_impex]
+new model export.unique [module test_impex]
+new model fleet.vehicle.cost.report [module fleet]
+new model gamification.karma.tracking [module gamification]
+new model google.calendar.account.reset [module google_calendar]
+new model google.calendar.sync [module google_calendar]
+new model hr.applicant.refuse.reason [module hr_recruitment]
+new model hr.payroll.structure.type [module hr_contract]
+new model ir.qweb.field.image_url [module base]
+new model l10n_es_edi.certificate [module l10n_es_edi_sii]
+new model l10n_es.sii.account.tax.mixin [module l10n_es_edi_sii]
+new model l10n_ph_2307.wizard [module l10n_ph]
+new model mail.blacklist.remove [module mail]
+new model mail.performance.thread [module test_mail]
+new model mail.performance.tracking [module test_mail]
+new model mail.render.mixin [module mail]
+new model mail.template.preview (renamed from email_template.preview) [module mail]
+new model mail.test.container [module test_mail]
+new model mail.test.sms.bl.optout [module test_mail_full]
+new model mail.test.sms.partner.2many [module test_mail_full]
+new model mail.test.ticket [module test_mail]
+new model mail.test.track.compute [module test_mail]
+new model mailing.performance [module test_mass_mailing]
+new model mailing.performance.blacklist [module test_mass_mailing]
+new model mailing.test.blacklist [module test_mass_mailing]
+new model mailing.test.optout [module test_mass_mailing]
+new model mailing.test.simple [module test_mass_mailing]
+new model mailing.test.utm [module test_mass_mailing]
+new model microsoft.calendar.account.reset [module microsoft_calendar]
+new model microsoft.calendar.sync [module microsoft_calendar]
+new model microsoft.service [module microsoft_account]
+new model mrp.consumption.warning [module mrp]
+new model mrp.consumption.warning.line [module mrp]
+new model mrp.immediate.production [module mrp]
+new model mrp.immediate.production.line [module mrp]
+new model mrp.production.backorder [module mrp]
+new model mrp.production.backorder.line [module mrp]
+new model o2m_changes_children [module test_testing_utilities]
+new model o2m_changes_children.lines [module test_testing_utilities]
+new model o2m_changes_parent [module test_testing_utilities]
+new model o2m_readonly_subfield_child [module test_testing_utilities]
+new model o2m_readonly_subfield_parent [module test_testing_utilities]
+new model phone.blacklist.remove [module phone_validation]
+new model product.ribbon (renamed from product.style) [module website_sale]
+new model project.delete.wizard [module project]
+new model project.task.create.sale.order [module sale_timesheet]
+new model project.task.create.timesheet [module hr_timesheet]
+new model project.task.recurrence [module project]
+new model project.task.type.delete.wizard [module project]
+new model report.account.report_invoice [module account]
+new model report.coupon.report_coupon (renamed from report.sale_coupon.report_coupon) [module coupon]
+new model report.l10n_ch.qr_report_main [module l10n_ch]
+new model report.stock.report_product_product_replenishment [module stock]
+new model report.stock.report_product_template_replenishment [module stock]
+new model res.users.apikeys [module base]
+new model res.users.apikeys.description [module base]
+new model res.users.apikeys.show [module base]
+new model res.users.identitycheck [module base]
+new model sale.order.cancel [module sale]
+new model sequence.mixin [module account]
+new model slide.slide.resource [module website_slides]
+new model snailmail.confirm [module snailmail]
+new model snailmail.confirm.invoice [module snailmail_account]
+new model stock.backorder.confirmation.line [module stock]
+new model stock.immediate.transfer.line [module stock]
+new model stock.orderpoint.snooze [module stock]
+new model stock.valuation.layer.revaluation [module stock_account]
+new model survey.question.answer (renamed from survey.label) [module survey]
+new model survey.user_input.line (renamed from survey.user_input_line) [module survey]
+new model tab.a [module test_action_bindings]
+new model tab.b [module test_action_bindings]
+new model test_access_right.container [module test_access_rights]
+new model test_access_right.obj_categ [module test_access_rights]
+new model test_access_right.parent [module test_access_rights]
+new model test_access_right.some_obj [module test_access_rights]
+new model test_access_right.ticket [module test_access_rights]
+new model test.another_box [module test_inherits]
+new model test.another_unit [module test_inherits]
+new model test_base_automation.project [module test_base_automation]
+new model test_base_automation.task [module test_base_automation]
+new model test.box [module test_inherits]
+new model test_convert.test_model [module test_convert]
+new model test_convert.usered [module test_convert]
+new model test_converter.monetary [module test_converter]
+new model test_converter.test_model [module test_converter]
+new model test_converter.test_model.sub [module test_converter]
+new model test.exceptions.model [module test_exceptions]
+new model test.inherit.child [module test_inherit]
+new model test.inherit.daughter [module test_inherit]
+new model test.inherit.mother [module test_inherit]
+new model test.inherit.parent [module test_inherit]
+new model test.inherit.property [module test_inherit]
+new model test.limits.model [module test_limits]
+new model test.model [module test_website]
+new model test_new_api.attachment [module test_new_api]
+new model test_new_api.attachment.host [module test_new_api]
+new model test_new_api.bar [module test_new_api]
+new model test_new_api.binary_svg [module test_new_api]
+new model test_new_api.cascade [module test_new_api]
+new model test_new_api.category [module test_new_api]
+new model test_new_api.city [module test_new_api]
+new model test_new_api.company [module test_new_api]
+new model test_new_api.company.attr [module test_new_api]
+new model test_new_api.compute.container [module test_new_api]
+new model test_new_api.compute.dynamic.depends [module test_new_api]
+new model test_new_api.compute_editable [module test_new_api]
+new model test_new_api.compute_editable.line [module test_new_api]
+new model test_new_api.compute.inverse [module test_new_api]
+new model test_new_api.compute.member [module test_new_api]
+new model test_new_api.compute.onchange [module test_new_api]
+new model test_new_api.compute.onchange.line [module test_new_api]
+new model test_new_api.compute.readonly [module test_new_api]
+new model test_new_api.compute.readwrite [module test_new_api]
+new model test_new_api.compute.unassigned [module test_new_api]
+new model test_new_api.country [module test_new_api]
+new model test_new_api.creativework.book [module test_new_api]
+new model test_new_api.creativework.edition [module test_new_api]
+new model test_new_api.creativework.movie [module test_new_api]
+new model test_new_api.crew [module test_new_api]
+new model test_new_api.discussion [module test_new_api]
+new model test_new_api.display [module test_new_api]
+new model test_new_api.emailmessage [module test_new_api]
+new model test_new_api.field_with_caps [module test_new_api]
+new model test_new_api.foo [module test_new_api]
+new model test_new_api.inverse_m2o_ref [module test_new_api]
+new model test_new_api.message [module test_new_api]
+new model test_new_api.mixed [module test_new_api]
+new model test_new_api.mixin [module test_new_api]
+new model test_new_api.model_a [module test_new_api]
+new model test_new_api.model_active_field [module test_new_api]
+new model test_new_api.model_b [module test_new_api]
+new model test_new_api.model_binary [module test_new_api]
+new model test_new_api.model_child [module test_new_api]
+new model test_new_api.model_child_m2o [module test_new_api]
+new model test_new_api.model_child_nocheck [module test_new_api]
+new model test_new_api.model_image [module test_new_api]
+new model test_new_api.model_many2one_reference [module test_new_api]
+new model test_new_api.model_parent [module test_new_api]
+new model test_new_api.model_parent_m2o [module test_new_api]
+new model test_new_api.model_private_address_onchange [module test_new_api]
+new model test_new_api.model_selection_base [module test_new_api]
+new model test_new_api.model_selection_non_stored [module test_new_api]
+new model test_new_api.model_selection_required [module test_new_api]
+new model test_new_api.model_selection_required_for_write_override [module test_new_api]
+new model test_new_api.model_shared_cache_compute_line [module test_new_api]
+new model test_new_api.model_shared_cache_compute_parent [module test_new_api]
+new model test_new_api.monetary_base [module test_new_api]
+new model test_new_api.monetary_custom [module test_new_api]
+new model test_new_api.monetary_inherits [module test_new_api]
+new model test_new_api.monetary_order [module test_new_api]
+new model test_new_api.monetary_order_line [module test_new_api]
+new model test_new_api.monetary_related [module test_new_api]
+new model test_new_api.move [module test_new_api]
+new model test_new_api.move_line [module test_new_api]
+new model test_new_api.multi [module test_new_api]
+new model test_new_api.multi_compute_inverse [module test_new_api]
+new model test_new_api.multi.line [module test_new_api]
+new model test_new_api.multi.line2 [module test_new_api]
+new model test_new_api.multi.tag [module test_new_api]
+new model test_new_api.one2many [module test_new_api]
+new model test_new_api.one2many.line [module test_new_api]
+new model test_new_api.order [module test_new_api]
+new model test_new_api.order.line [module test_new_api]
+new model test_new_api.payment [module test_new_api]
+new model test_new_api.pirate [module test_new_api]
+new model test_new_api.prisoner [module test_new_api]
+new model test_new_api.recursive [module test_new_api]
+new model test_new_api.recursive.tree [module test_new_api]
+new model test_new_api.related [module test_new_api]
+new model test_new_api.req_m2o [module test_new_api]
+new model test_new_api.req_m2o_transient [module test_new_api]
+new model test_new_api.selection [module test_new_api]
+new model test_new_api.ship [module test_new_api]
+new model test_new_api.state_mixin [module test_new_api]
+new model test_new_api.trigger.left [module test_new_api]
+new model test_new_api.trigger.middle [module test_new_api]
+new model test_new_api.trigger.right [module test_new_api]
+new model test.no.populate [module test_populate]
+new model test.pallet [module test_inherits]
+new model test.populate [module test_populate]
+new model test.populate.category [module test_populate]
+new model test.populate.inherit [module test_populate]
+new model test_read_group.aggregate [module test_read_group]
+new model test_read_group.aggregate.boolean [module test_read_group]
+new model test_read_group.fill_temporal [module test_read_group]
+new model test_read_group.on_date [module test_read_group]
+new model test_read_group.on_selection [module test_read_group]
+new model test_read_group.order [module test_read_group]
+new model test_read_group.order.line [module test_read_group]
+new model test_rpc.model_a [module test_rpc]
+new model test_rpc.model_b [module test_rpc]
+new model test_search_panel.category_target_model [module test_search_panel]
+new model test_search_panel.category_target_model_no_parent_name [module test_search_panel]
+new model test_search_panel.filter_target_model [module test_search_panel]
+new model test_search_panel.source_model [module test_search_panel]
+new model test_testing_utilities.a [module test_testing_utilities]
+new model test_testing_utilities.c [module test_testing_utilities]
+new model test_testing_utilities.d [module test_testing_utilities]
+new model test_testing_utilities.default [module test_testing_utilities]
+new model test_testing_utilities.e [module test_testing_utilities]
+new model test_testing_utilities.f [module test_testing_utilities]
+new model test_testing_utilities.g [module test_testing_utilities]
+new model test_testing_utilities.m2o [module test_testing_utilities]
+new model test_testing_utilities.onchange_count [module test_testing_utilities]
+new model test_testing_utilities.onchange_count_sub [module test_testing_utilities]
+new model test_testing_utilities.onchange_line [module test_testing_utilities]
+new model test_testing_utilities.onchange_parent [module test_testing_utilities]
+new model test_testing_utilities.parent [module test_testing_utilities]
+new model test_testing_utilities.readonly [module test_testing_utilities]
+new model test_testing_utilities.recursive [module test_testing_utilities]
+new model test_testing_utilities.req_bool [module test_testing_utilities]
+new model test_testing_utilities.sub [module test_testing_utilities]
+new model test_testing_utilities.sub2 [module test_testing_utilities]
+new model test_testing_utilities.sub3 [module test_testing_utilities]
+new model test.translation.import [module test_translation_import]
+new model test_uninstall.model [module test_uninstall]
+new model test.unit [module test_inherits]
+new model test.unit.line [module test_inherits]
+new model ttu.child [module test_testing_utilities]
+new model ttu.grandchild [module test_testing_utilities]
+new model ttu.product [module test_testing_utilities]
+new model ttu.root [module test_testing_utilities]
+new model upgrade.analysis (renamed from openupgrade.analysis.wizard) [module upgrade_analysis]
+new model upgrade.attribute (renamed from openupgrade.attribute) [module upgrade_analysis]
+new model upgrade.comparison.config (renamed from openupgrade.comparison.config) [module upgrade_analysis]
+new model upgrade.generate.record.wizard (renamed from openupgrade.generate.records.wizard) [module upgrade_analysis]
+new model upgrade.install.wizard (renamed from openupgrade.install.all.wizard) [module upgrade_analysis]
+new model upgrade.record (renamed from openupgrade.record) [module upgrade_analysis]
+new model vendor.delay.report [module purchase_stock]
+new model website.cover_properties.mixin [module website]
+new model website.robots [module website]
+new model website.sale.extra.field [module website_sale]
+new model website.snippet.filter [module website]
+---Fields in module 'general'---
+# 9985 fields matched,
+# Direct match: 9851
+# Found in other module: 134
+# Found with different type: 0
+# In obsolete models: 204
+# New columns: 3394
+# Not matched: 562
+---XML records in module 'general'---
+ERROR: module not in list of installed modules:
+---Models in module 'account_bank_statement_import'---
+---Fields in module 'account_bank_statement_import'---
+---XML records in module 'account_bank_statement_import'---
+---nothing has changed in this module--
+ERROR: module not in list of installed modules:
+---Models in module 'base_gengo'---
+obsolete model base.gengo.translations [transient]
+---Fields in module 'base_gengo'---
+base_gengo   / ir.translation           / gengo_comment (text)          : DEL
+base_gengo   / ir.translation           / gengo_translation (selection) : DEL selection_keys: ['machine', 'pro', 'standard', 'ultra']
+base_gengo   / ir.translation           / order_id (char)               : DEL
+base_gengo   / res.company              / gengo_auto_approve (boolean)  : DEL
+base_gengo   / res.company              / gengo_comment (text)          : DEL
+base_gengo   / res.company              / gengo_private_key (char)      : DEL
+base_gengo   / res.company              / gengo_public_key (text)       : DEL
+base_gengo   / res.company              / gengo_sandbox (boolean)       : DEL
+---XML records in module 'base_gengo'---
+DEL ir.actions.act_window: base_gengo.action_wizard_base_gengo_translations
+DEL ir.cron: base_gengo.gengo_sync_receive_request_scheduler (noupdate)
+DEL ir.cron: base_gengo.gengo_sync_send_request_scheduler (noupdate)
+DEL ir.ui.menu: base_gengo.menu_action_wizard_base_gengo_translations
+DEL ir.ui.view: base_gengo.base_gengo_translation_wizard_from
+DEL ir.ui.view: base_gengo.res_config_settings_view_form
+DEL ir.ui.view: base_gengo.view_ir_translation_inherit_base_gengo_form
+DEL ir.ui.view: base_gengo.view_translation_search
+ERROR: module not in list of installed modules:
+---Models in module 'im_support'---
+---Fields in module 'im_support'---
+---XML records in module 'im_support'---
+DEL ir.ui.view: im_support.assets_backend
+DEL ir.ui.view: im_support.qunit_mobile_suite
+DEL ir.ui.view: im_support.qunit_suite
+DEL ir.ui.view: im_support.support_qunit_suite
+ERROR: module not in list of installed modules:
+---Models in module 'l10n_cn_standard'---
+---Fields in module 'l10n_cn_standard'---
+---XML records in module 'l10n_cn_standard'---
+DEL account.account.template: l10n_cn_standard.account_1011
+DEL account.account.template: l10n_cn_standard.account_1012
+DEL account.account.template: l10n_cn_standard.account_1021
+DEL account.account.template: l10n_cn_standard.account_1031
+DEL account.account.template: l10n_cn_standard.account_1101
+DEL account.account.template: l10n_cn_standard.account_1111
+DEL account.account.template: l10n_cn_standard.account_1121
+DEL account.account.template: l10n_cn_standard.account_1122
+DEL account.account.template: l10n_cn_standard.account_1123
+DEL account.account.template: l10n_cn_standard.account_1124
+DEL account.account.template: l10n_cn_standard.account_1131
+DEL account.account.template: l10n_cn_standard.account_1132
+DEL account.account.template: l10n_cn_standard.account_1201
+DEL account.account.template: l10n_cn_standard.account_1211
+DEL account.account.template: l10n_cn_standard.account_1212
+DEL account.account.template: l10n_cn_standard.account_1221
+DEL account.account.template: l10n_cn_standard.account_1231
+DEL account.account.template: l10n_cn_standard.account_1301
+DEL account.account.template: l10n_cn_standard.account_1302
+DEL account.account.template: l10n_cn_standard.account_1303
+DEL account.account.template: l10n_cn_standard.account_1304
+DEL account.account.template: l10n_cn_standard.account_1311
+DEL account.account.template: l10n_cn_standard.account_1321
+DEL account.account.template: l10n_cn_standard.account_1401
+DEL account.account.template: l10n_cn_standard.account_1402
+DEL account.account.template: l10n_cn_standard.account_1403
+DEL account.account.template: l10n_cn_standard.account_1404
+DEL account.account.template: l10n_cn_standard.account_1405
+DEL account.account.template: l10n_cn_standard.account_1406
+DEL account.account.template: l10n_cn_standard.account_1407
+DEL account.account.template: l10n_cn_standard.account_1408
+DEL account.account.template: l10n_cn_standard.account_1411
+DEL account.account.template: l10n_cn_standard.account_1421
+DEL account.account.template: l10n_cn_standard.account_1431
+DEL account.account.template: l10n_cn_standard.account_1441
+DEL account.account.template: l10n_cn_standard.account_1451
+DEL account.account.template: l10n_cn_standard.account_1461
+DEL account.account.template: l10n_cn_standard.account_1471
+DEL account.account.template: l10n_cn_standard.account_1501
+DEL account.account.template: l10n_cn_standard.account_1502
+DEL account.account.template: l10n_cn_standard.account_1503
+DEL account.account.template: l10n_cn_standard.account_1511
+DEL account.account.template: l10n_cn_standard.account_1512
+DEL account.account.template: l10n_cn_standard.account_1521
+DEL account.account.template: l10n_cn_standard.account_1531
+DEL account.account.template: l10n_cn_standard.account_1532
+DEL account.account.template: l10n_cn_standard.account_1541
+DEL account.account.template: l10n_cn_standard.account_1601
+DEL account.account.template: l10n_cn_standard.account_1602
+DEL account.account.template: l10n_cn_standard.account_1603
+DEL account.account.template: l10n_cn_standard.account_1604
+DEL account.account.template: l10n_cn_standard.account_1605
+DEL account.account.template: l10n_cn_standard.account_1606
+DEL account.account.template: l10n_cn_standard.account_1611
+DEL account.account.template: l10n_cn_standard.account_1621
+DEL account.account.template: l10n_cn_standard.account_1622
+DEL account.account.template: l10n_cn_standard.account_1623
+DEL account.account.template: l10n_cn_standard.account_1631
+DEL account.account.template: l10n_cn_standard.account_1632
+DEL account.account.template: l10n_cn_standard.account_1701
+DEL account.account.template: l10n_cn_standard.account_1702
+DEL account.account.template: l10n_cn_standard.account_1703
+DEL account.account.template: l10n_cn_standard.account_1711
+DEL account.account.template: l10n_cn_standard.account_1801
+DEL account.account.template: l10n_cn_standard.account_1811
+DEL account.account.template: l10n_cn_standard.account_1821
+DEL account.account.template: l10n_cn_standard.account_1901
+DEL account.account.template: l10n_cn_standard.account_2001
+DEL account.account.template: l10n_cn_standard.account_2002
+DEL account.account.template: l10n_cn_standard.account_2003
+DEL account.account.template: l10n_cn_standard.account_2004
+DEL account.account.template: l10n_cn_standard.account_2011
+DEL account.account.template: l10n_cn_standard.account_2012
+DEL account.account.template: l10n_cn_standard.account_2021
+DEL account.account.template: l10n_cn_standard.account_2101
+DEL account.account.template: l10n_cn_standard.account_2111
+DEL account.account.template: l10n_cn_standard.account_2201
+DEL account.account.template: l10n_cn_standard.account_2202
+DEL account.account.template: l10n_cn_standard.account_2203
+DEL account.account.template: l10n_cn_standard.account_2211
+DEL account.account.template: l10n_cn_standard.account_2221
+DEL account.account.template: l10n_cn_standard.account_2221_10
+DEL account.account.template: l10n_cn_standard.account_2221_11
+DEL account.account.template: l10n_cn_standard.account_2221_1_1
+DEL account.account.template: l10n_cn_standard.account_2221_1_10
+DEL account.account.template: l10n_cn_standard.account_2221_1_2
+DEL account.account.template: l10n_cn_standard.account_2221_1_3
+DEL account.account.template: l10n_cn_standard.account_2221_1_4
+DEL account.account.template: l10n_cn_standard.account_2221_1_5
+DEL account.account.template: l10n_cn_standard.account_2221_1_6
+DEL account.account.template: l10n_cn_standard.account_2221_1_7
+DEL account.account.template: l10n_cn_standard.account_2221_1_8
+DEL account.account.template: l10n_cn_standard.account_2221_1_9
+DEL account.account.template: l10n_cn_standard.account_2221_2
+DEL account.account.template: l10n_cn_standard.account_2221_3
+DEL account.account.template: l10n_cn_standard.account_2221_4
+DEL account.account.template: l10n_cn_standard.account_2221_5
+DEL account.account.template: l10n_cn_standard.account_2221_6
+DEL account.account.template: l10n_cn_standard.account_2221_7
+DEL account.account.template: l10n_cn_standard.account_2221_8
+DEL account.account.template: l10n_cn_standard.account_2221_9
+DEL account.account.template: l10n_cn_standard.account_2231
+DEL account.account.template: l10n_cn_standard.account_2232
+DEL account.account.template: l10n_cn_standard.account_2241
+DEL account.account.template: l10n_cn_standard.account_2251
+DEL account.account.template: l10n_cn_standard.account_2261
+DEL account.account.template: l10n_cn_standard.account_2311
+DEL account.account.template: l10n_cn_standard.account_2312
+DEL account.account.template: l10n_cn_standard.account_2313
+DEL account.account.template: l10n_cn_standard.account_2314
+DEL account.account.template: l10n_cn_standard.account_2401
+DEL account.account.template: l10n_cn_standard.account_2501
+DEL account.account.template: l10n_cn_standard.account_2502
+DEL account.account.template: l10n_cn_standard.account_2601
+DEL account.account.template: l10n_cn_standard.account_2602
+DEL account.account.template: l10n_cn_standard.account_2611
+DEL account.account.template: l10n_cn_standard.account_2621
+DEL account.account.template: l10n_cn_standard.account_2701
+DEL account.account.template: l10n_cn_standard.account_2702
+DEL account.account.template: l10n_cn_standard.account_2711
+DEL account.account.template: l10n_cn_standard.account_2801
+DEL account.account.template: l10n_cn_standard.account_2901
+DEL account.account.template: l10n_cn_standard.account_3001
+DEL account.account.template: l10n_cn_standard.account_3002
+DEL account.account.template: l10n_cn_standard.account_3101
+DEL account.account.template: l10n_cn_standard.account_3201
+DEL account.account.template: l10n_cn_standard.account_3202
+DEL account.account.template: l10n_cn_standard.account_4001
+DEL account.account.template: l10n_cn_standard.account_4002
+DEL account.account.template: l10n_cn_standard.account_4101
+DEL account.account.template: l10n_cn_standard.account_4102
+DEL account.account.template: l10n_cn_standard.account_4103
+DEL account.account.template: l10n_cn_standard.account_4104
+DEL account.account.template: l10n_cn_standard.account_4201
+DEL account.account.template: l10n_cn_standard.account_5001
+DEL account.account.template: l10n_cn_standard.account_5101
+DEL account.account.template: l10n_cn_standard.account_5201
+DEL account.account.template: l10n_cn_standard.account_5301
+DEL account.account.template: l10n_cn_standard.account_5401
+DEL account.account.template: l10n_cn_standard.account_5402
+DEL account.account.template: l10n_cn_standard.account_5403
+DEL account.account.template: l10n_cn_standard.account_6001
+DEL account.account.template: l10n_cn_standard.account_6011
+DEL account.account.template: l10n_cn_standard.account_6021
+DEL account.account.template: l10n_cn_standard.account_6031
+DEL account.account.template: l10n_cn_standard.account_6041
+DEL account.account.template: l10n_cn_standard.account_6051
+DEL account.account.template: l10n_cn_standard.account_6061
+DEL account.account.template: l10n_cn_standard.account_6101
+DEL account.account.template: l10n_cn_standard.account_6111
+DEL account.account.template: l10n_cn_standard.account_6201
+DEL account.account.template: l10n_cn_standard.account_6202
+DEL account.account.template: l10n_cn_standard.account_6203
+DEL account.account.template: l10n_cn_standard.account_6301
+DEL account.account.template: l10n_cn_standard.account_6401
+DEL account.account.template: l10n_cn_standard.account_6402
+DEL account.account.template: l10n_cn_standard.account_6403
+DEL account.account.template: l10n_cn_standard.account_6411
+DEL account.account.template: l10n_cn_standard.account_6421
+DEL account.account.template: l10n_cn_standard.account_6501
+DEL account.account.template: l10n_cn_standard.account_6502
+DEL account.account.template: l10n_cn_standard.account_6511
+DEL account.account.template: l10n_cn_standard.account_6521
+DEL account.account.template: l10n_cn_standard.account_6531
+DEL account.account.template: l10n_cn_standard.account_6541
+DEL account.account.template: l10n_cn_standard.account_6542
+DEL account.account.template: l10n_cn_standard.account_6601
+DEL account.account.template: l10n_cn_standard.account_6602
+DEL account.account.template: l10n_cn_standard.account_6603
+DEL account.account.template: l10n_cn_standard.account_6604
+DEL account.account.template: l10n_cn_standard.account_6701
+DEL account.account.template: l10n_cn_standard.account_6711
+DEL account.account.template: l10n_cn_standard.account_6801
+DEL account.account.template: l10n_cn_standard.account_6901
+DEL account.chart.template: l10n_cn_standard.l10n_chart_china_standard_business
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_purchase_excluded_11 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_purchase_excluded_17 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_purchase_excluded_3 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_purchase_excluded_6 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_excluded_11 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_excluded_17 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_excluded_6 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_excluded_small_3 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_included_11 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_included_17 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_included_3 (noupdate)
+DEL account.tax.template: l10n_cn_standard.l10n_cn_standard_sales_included_6 (noupdate)
+ERROR: module not in list of installed modules:
+---Models in module 'web_diagram'---
+---Fields in module 'web_diagram'---
+---XML records in module 'web_diagram'---
+DEL ir.ui.view: web_diagram.assets_backend
+DEL ir.ui.view: web_diagram.qunit_suite
+ERROR: module not in list of installed modules:
+---Models in module 'website_gengo'---
+---Fields in module 'website_gengo'---
+---XML records in module 'website_gengo'---
+DEL ir.ui.view: website_gengo.gengo_assets_editor

@@ -1,0 +1,246 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* donation_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 16:07+0000\n"
+"PO-Revision-Date: 2016-11-23 16:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: donation_sale
+#: model:ir.model.fields.selection,name:donation_sale.selection__account_move__tax_receipt_option__annual
+#: model:ir.model.fields.selection,name:donation_sale.selection__sale_order__tax_receipt_option__annual
+msgid "Annual Tax Receipt"
+msgstr "Reçu fiscal annuel"
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order__company_currency_id
+msgid "Company Currency"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.ui.menu,name:donation_sale.tax_receipt_annual_create_menu
+msgid "Create Annual Receipts"
+msgstr "Créer les reçus fiscaux annuels"
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_move__display_name
+#: model:ir.model.fields,field_description:donation_sale.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:donation_sale.field_donation_tax_receipt__display_name
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order__display_name
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.ui.menu,name:donation_sale.donation_tax_receipt_menu
+msgid "Donation Tax Receipts"
+msgstr "Reçus fiscaux"
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_bank_statement_line__tax_receipt_total
+#: model:ir.model.fields,field_description:donation_sale.field_account_move__tax_receipt_total
+#: model:ir.model.fields,field_description:donation_sale.field_account_payment__tax_receipt_total
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order__tax_receipt_total
+msgid "Eligible Tax Receipt Sub-total"
+msgstr "Sous-total éligible au reçu fiscal"
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/account_move.py:0
+#: code:addons/donation_sale/models/sale.py:0
+#, python-format
+msgid "Error:"
+msgstr "Erreur :"
+
+#. module: donation_sale
+#: model:ir.model.fields.selection,name:donation_sale.selection__account_move__tax_receipt_option__each
+#: model:ir.model.fields.selection,name:donation_sale.selection__sale_order__tax_receipt_option__each
+msgid "For Each Donation"
+msgstr "Reçu fiscal ponctuel"
+
+#. module: donation_sale
+#: model:ir.actions.server,name:donation_sale.donation_tax_receipt_invoice_cron_ir_actions_server
+#: model:ir.cron,cron_name:donation_sale.donation_tax_receipt_invoice_cron
+#: model:ir.cron,name:donation_sale.donation_tax_receipt_invoice_cron
+msgid "Generation donation tax receipts from invoices"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_move__id
+#: model:ir.model.fields,field_description:donation_sale.field_account_move_line__id
+#: model:ir.model.fields,field_description:donation_sale.field_donation_tax_receipt__id
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order__id
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_move_line__tax_receipt_ok
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order_line__tax_receipt_ok
+msgid "Is Eligible for a Tax Receipt"
+msgstr "Est éligible au reçu fiscal"
+
+#. module: donation_sale
+#: model:ir.model,name:donation_sale.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model,name:donation_sale.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_move____last_update
+#: model:ir.model.fields,field_description:donation_sale.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:donation_sale.field_donation_tax_receipt____last_update
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order____last_update
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model.fields.selection,name:donation_sale.selection__account_move__tax_receipt_option__none
+#: model:ir.model.fields.selection,name:donation_sale.selection__sale_order__tax_receipt_option__none
+msgid "None"
+msgstr "Aucun"
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/sale.py:0
+#, python-format
+msgid ""
+"On the sale order '%s', the sale order line '%s' has a donation product, so "
+"it should not have taxes."
+msgstr ""
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_donation_tax_receipt__invoice_ids
+#: model_terms:ir.ui.view,arch_db:donation_sale.donation_tax_receipt_form
+msgid "Related Invoices"
+msgstr "Factures associées"
+
+#. module: donation_sale
+#: model:ir.model,name:donation_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: donation_sale
+#: model:ir.model,name:donation_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande"
+
+#. module: donation_sale
+#: model:ir.model.fields,help:donation_sale.field_account_move_line__tax_receipt_ok
+#: model:ir.model.fields,help:donation_sale.field_sale_order_line__tax_receipt_ok
+msgid "Specify if the product is eligible for a tax receipt"
+msgstr "Définit si l'article est éligible au reçu fiscal"
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_bank_statement_line__tax_receipt_id
+#: model:ir.model.fields,field_description:donation_sale.field_account_move__tax_receipt_id
+#: model:ir.model.fields,field_description:donation_sale.field_account_payment__tax_receipt_id
+#: model_terms:ir.ui.view,arch_db:donation_sale.view_move_form
+msgid "Tax Receipt"
+msgstr "Reçu fiscal"
+
+#. module: donation_sale
+#: model:ir.model.fields,field_description:donation_sale.field_account_bank_statement_line__tax_receipt_option
+#: model:ir.model.fields,field_description:donation_sale.field_account_move__tax_receipt_option
+#: model:ir.model.fields,field_description:donation_sale.field_account_payment__tax_receipt_option
+#: model:ir.model.fields,field_description:donation_sale.field_sale_order__tax_receipt_option
+#: model_terms:ir.ui.view,arch_db:donation_sale.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:donation_sale.view_sales_order_filter
+msgid "Tax Receipt Option"
+msgstr "Option pour le reçu fiscal"
+
+#. module: donation_sale
+#: model:ir.model,name:donation_sale.model_donation_tax_receipt
+msgid "Tax Receipt for Donations"
+msgstr "Reçu fiscal pour les dons"
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/account_move.py:0
+#, python-format
+msgid ""
+"The invoice line '%s' has a donation product, so it should not have taxes."
+msgstr ""
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/account_move.py:0
+#, python-format
+msgid ""
+"You cannot cancel the invoice '%s' because it is linked to the tax receipt "
+"%s. You should first delete this tax receipt (but it may not be legally "
+"allowed)."
+msgstr ""
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/account_move.py:0
+#: code:addons/donation_sale/models/sale.py:0
+#, python-format
+msgid "You cannot change the Tax Receipt Option when it is Annual."
+msgstr ""
+"Vous ne pouvez pas changer l'option pour le reçu fiscal quand il est annuel."
+
+#. module: donation_sale
+#: code:addons/donation_sale/models/account_move.py:0
+#, python-format
+msgid ""
+"You cannot delete the invoice '%s' because it is linked to the tax receipt "
+"%s."
+msgstr ""
+
+#~ msgid "Donations"
+#~ msgstr "Dons"
+
+#~ msgid "Invoice"
+#~ msgstr "Facture"
+
+#~ msgid "Invoice Line"
+#~ msgstr "Ligne de facture"
+
+#, python-format
+#~ msgid ""
+#~ "On the sale order '%s', the sale order line '%s' has a donation product, "
+#~ "so it should not have taxes"
+#~ msgstr ""
+#~ "Sur la commande client '%s', la ligne de commande '%s' a un article de "
+#~ "don, donc il ne devrait pas avoir de taxes"
+
+#, fuzzy
+#~| msgid "Donations"
+#~ msgid "Quotation"
+#~ msgstr "Dons"
+
+#, python-format
+#~ msgid ""
+#~ "The invoice line '%s' has a donation product, so it should not have taxes"
+#~ msgstr ""
+#~ "La ligne de facture '%s' a un article de don, donc elle ne devrait pas "
+#~ "avoir de taxes"
+
+#, python-format
+#~ msgid ""
+#~ "You cannot cancel this invoice because it is linked to the tax receipt "
+#~ "%s. You should first delete this tax receipt (but it may not be legally "
+#~ "allowed)."
+#~ msgstr ""
+#~ "Vous ne pouvez pas annuler cette facture car elle est liée au reçu fiscal "
+#~ "%s. Vous devez d'abord supprimer ce reçu fiscal (mais cela n'est "
+#~ "probablement pas permis d'un point de vue légal)."
+
+#, python-format
+#~ msgid ""
+#~ "You cannot delete this invoice because it is linked to the tax receipt %s"
+#~ msgstr ""
+#~ "Vous ne pouvez pas supprimer cette facture car elle est liée au reçu "
+#~ "fiscal %s"

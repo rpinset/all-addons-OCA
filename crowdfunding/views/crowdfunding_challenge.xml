@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <record id="view_crowdfunding_challenge_form" model="ir.ui.view">
+        <field name="model">crowdfunding.challenge</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="currency_id" invisible="1" />
+                <field name="vendor_bill_ids" invisible="1" />
+                <header>
+                    <button
+                        class="btn btn-primary"
+                        attrs="{'invisible': [('state', '!=', 'draft')]}"
+                        type="object"
+                        name="action_open"
+                        string="Open"
+                    />
+                    <button
+                        class="btn"
+                        attrs="{'invisible': [('state', 'in', ['draft', 'done'])]}"
+                        type="object"
+                        name="action_cancel"
+                        string="Cancel"
+                    />
+                    <button
+                        class="btn btn-primary"
+                        attrs="{'invisible': ['|', ('claimed_partner_id', '=', False), ('state', '!=', 'open')]}"
+                        type="object"
+                        name="action_claimed"
+                        string="Set Claimed"
+                    />
+                    <button
+                        class="btn btn-primary"
+                        attrs="{'invisible': ['|', ('claimed_partner_id', '=', False), ('state', '!=', 'claimed')]}"
+                        type="object"
+                        name="action_submitted"
+                        string="Mark As Submitted"
+                    />
+                    <button
+                        class="btn btn-primary"
+                        attrs="{'invisible': ['|', ('claimed_partner_id', '=', False), ('state', 'not in', ['claimed', 'submitted'])]}"
+                        type="object"
+                        name="action_invoice_wizard"
+                        string="Create Vendor Bill"
+                    />
+                    <button
+                        class="btn btn-primary"
+                        attrs="{'invisible': [('state', '!=', 'submitted')]}"
+                        type="object"
+                        name="action_done"
+                        string="Set Done"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="action_vendor_bills"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible': [('vendor_bill_ids', '=', [])]}"
+                        >
+                            <field
+                                name="vendor_bill_count"
+                                widget="statinfo"
+                                string="Vendor Bills"
+                            />
+                        </button>
+                        <button
+                            name="action_invoices"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-money"
+                            attrs="{'invisible': [('invoice_count', '=', 0)]}"
+                        >
+                            <field
+                                name="invoice_count"
+                                widget="statinfo"
+                                string="Customer Invoices"
+                            />
+                        </button>
+                        <field
+                            name="website_published"
+                            widget="website_redirect_button"
+                        />
+                    </div>
+                    <h1>
+                        <field name="name" placeholder="Name" />
+                    </h1>
+                    <group name="main">
+                        <group name="left">
+                            <field
+                                name="target_amount"
+                                placeholder="Fill in the minimum amount"
+                            />
+                            <field name="fee_percentage" widget="percentage" />
+                            <field name="fee_amount" />
+                        </group>
+                        <group name="right">
+                            <field name="pledged_amount" />
+                            <field
+                                name="pledged_amount_unpaid"
+                                attrs="{'invisible': [('pledged_amount_unpaid', '=', 0)]}"
+                            />
+                            <field
+                                name="claimed_partner_id"
+                                attrs="{'readonly': [('state', 'not in', ('draft', 'open'))]}"
+                                placeholder="Select partner to work on this challenge"
+                            />
+                            <field name="claimed_partner_amount" />
+                            <field name="vendor_amount" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description" name="description">
+                            <field
+                                name="description"
+                                placeholder="Describe the challenge"
+                            />
+                            <group>
+                                <group name="left">
+                                    <field
+                                        name="description_url"
+                                        widget="url"
+                                        placeholder="Link for more information"
+                                    />
+                                </group>
+                                <group name="right">
+                                    <field name="description_image" widget="image" />
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Other info" name="misc">
+                            <group>
+                                <group name="left">
+                                    <field name="website_meta_keywords" />
+                                    <field
+                                        name="is_published"
+                                        widget="boolean_toggle"
+                                    />
+                                </group>
+                                <group name="right">
+                                    <field name="pledge_default_amount" />
+                                    <field
+                                        name="company_id"
+                                        groups="base.group_multi_company"
+                                    />
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" />
+                    <field name="message_ids" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_crowdfunding_challenge_list" model="ir.ui.view">
+        <field name="model">crowdfunding.challenge</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="state" />
+                <field name="target_amount" />
+                <field name="pledged_amount" />
+                <field name="pledged_amount_unpaid" />
+                <field name="pledged_amount_total" />
+                <field name="vendor_amount" />
+                <field name="website_published" />
+                <field name="pledged_percentage" widget="float" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_crowdfunding_challenge_search" model="ir.ui.view">
+        <field name="model">crowdfunding.challenge</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="claimed_partner_id" />
+                <field name="website_published" />
+                <filter
+                    name="state_open"
+                    string="Open"
+                    domain="[('state', '=', 'open')]"
+                />
+                <filter
+                    name="state_claimed"
+                    string="Claimed"
+                    domain="[('state', '=', 'claimed')]"
+                />
+                <filter
+                    name="state_submitted"
+                    string="Submitted"
+                    domain="[('state', '=', 'submitted')]"
+                />
+                <filter
+                    name="state_done"
+                    string="Done"
+                    domain="[('state', '=', 'done')]"
+                />
+                <separator />
+                <filter
+                    name="funding_state_needs_funding"
+                    string="Needs funding"
+                    domain="[('funding_state', '=', 'needs_funding')]"
+                />
+                <filter
+                    name="funding_state_funded"
+                    string="Funded"
+                    domain="[('funding_state', '=', 'funded')]"
+                />
+                <separator />
+                <filter
+                    name="groupby_state"
+                    string="State"
+                    context="{'group_by': 'state'}"
+                />
+                <filter
+                    name="groupby_funding_state"
+                    string="Funding state"
+                    context="{'group_by': 'funding_state'}"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_crowdfunding_challenge" model="ir.actions.act_window">
+        <field name="name">Challenges</field>
+        <field name="res_model">crowdfunding.challenge</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

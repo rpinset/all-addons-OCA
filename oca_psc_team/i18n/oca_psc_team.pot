@@ -1,0 +1,168 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oca_psc_team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__psc_category_id
+msgid "Category"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__description
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__description
+msgid "Description"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_github_repository__display_name
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__display_name
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__github_repository_ids
+msgid "Github Repositories"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model,name:oca_psc_team.model_github_repository
+msgid "Github Repository"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_github_repository__id
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__id
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__id
+msgid "ID"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__image_1920
+msgid "Image"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__image_1024
+msgid "Image 1024"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__image_128
+msgid "Image 128"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__image_256
+msgid "Image 256"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__image_512
+msgid "Image 512"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_github_repository____last_update
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project____last_update
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__name
+msgid "Name"
+msgstr ""
+
+#. module: oca_psc_team
+#: code:addons/oca_psc_team/models/project.py:0
+#, python-format
+msgid ""
+"Number of characters must be less than or equal to 75 for 'Short "
+"Description' field."
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model,name:oca_psc_team.model_psc_category
+#: model:ir.ui.menu,name:oca_psc_team.psc_category_menu
+#: model_terms:ir.ui.view,arch_db:oca_psc_team.psc_category_view_form
+msgid "PSC Categories"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.actions.act_window,name:oca_psc_team.psc_category_action
+msgid "PSC Category"
+msgstr ""
+
+#. module: oca_psc_team
+#: model_terms:ir.ui.view,arch_db:oca_psc_team.edit_project
+msgid "PSC Details"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model,name:oca_psc_team.model_project_project
+#: model:ir.model.fields,field_description:oca_psc_team.field_github_repository__project_id
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__project_ids
+#: model:ir.model.fields,field_description:oca_psc_team.field_wizard_create_repository__project_id
+msgid "Project"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_psc_category__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,field_description:oca_psc_team.field_project_project__short_description
+msgid "Short Description"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,help:oca_psc_team.field_project_project__short_description
+msgid "Short description to display it in website PSC teams list page."
+msgstr ""
+
+#. module: oca_psc_team
+#: model:project.project,label_tasks:oca_psc_team.project_project_1_demo
+#: model:project.project,label_tasks:oca_psc_team.project_project_2_demo
+#: model:project.project,label_tasks:oca_psc_team.project_project_3_demo
+#: model:project.project,label_tasks:oca_psc_team.project_project_4_demo
+#: model:project.project,label_tasks:oca_psc_team.project_project_5_demo
+msgid "Tasks"
+msgstr ""
+
+#. module: oca_psc_team
+#: model:ir.model.fields,help:oca_psc_team.field_project_project__description
+msgid "This will be displayed in the project's detail page of PSC team."
+msgstr ""

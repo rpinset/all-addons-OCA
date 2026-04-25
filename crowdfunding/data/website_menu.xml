@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <record id="website_menu_crowdfunding" model="website.menu">
+        <field name="name">Crowdfunding</field>
+        <field name="url">/crowdfunding</field>
+        <field name="parent_id" ref="website.main_menu" />
+        <field name="sequence">80</field>
+    </record>
+</odoo>

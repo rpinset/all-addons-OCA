@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <template id="template_challenge_list" name="Crowdfunding">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div id="challenge_list" class="container py-4">
+                    <div class="card" t-foreach="results" t-as="result">
+                        <div class="card-body">
+                            <a t-att-href="result.website_url"><t
+                                    t-esc="result.name"
+                                /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template
+        id="template_challenge_list_header"
+        name="Crowdfunding list header"
+        inherit_id="template_challenge_list"
+        customize_show="True"
+    >
+        <div id="challenge_list" position="before">
+            <t
+                t-set="challenge_list_header_description"
+            >Edit the header of the crowdfunding list</t>
+            <div
+                id="challenge_list_header"
+                class="oe_structure"
+                t-att-data-editor-sub-message="challenge_list_header_description"
+            >
+                <nav class="navbar navbar-light border-top">
+                    <div class="container">
+                        Crowdfunding
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </template>
+    <template
+        id="template_challenge_list_footer"
+        name="Crowdfunding list footer"
+        inherit_id="template_challenge_list"
+        customize_show="True"
+    >
+        <div id="challenge_list" position="after">
+            <t
+                t-set="challenge_list_footer_description"
+            >Edit the footer of the crowdfunding list</t>
+            <div
+                id="challenge_list_footer"
+                class="oe_structure oe_empty"
+                t-att-data-editor-sub-message="challenge_list_footer_description"
+            />
+        </div>
+    </template>
+    <template id="template_challenge_detail" name="Crowdfunding">
+        <t t-call="website.layout">
+            <t t-set="additional_title" t-value="object.name" />
+            <div id="wrap">
+                <t t-call="website.record_cover">
+                    <t t-set="_record" t-value="object" />
+                    <t t-set="snippet_autofocus" t-value="True" />
+                    <t t-set="use_filters" t-value="True" />
+                    <t t-set="use_size" t-value="True" />
+                    <t t-set="display_opt_name">Challenge Cover</t>
+                    <div class="container">
+                        <h1 t-field="object.name" class="py-4" />
+                    </div>
+                </t>
+                <div class="container">
+                    <section class="mb24">
+                        <div class="container">
+                            <img
+                                t-attf-src="/web/image/crowdfunding.challenge/{{object.id}}/description_image"
+                                t-if="object.description_image"
+                            />
+                            <div t-field="object.description" />
+                        </div>
+                        <div class="container" t-if="object.target_amount">
+                            Amount needed: <span t-field="object.target_amount" />
+                        </div>
+                        <div class="container">
+                                Amount pledged: <span
+                                t-field="object.pledged_amount"
+                            /> (<span t-esc="round(object.pledged_percentage)" />%)
+                        </div>
+                        <div class="container" t-if="object.description_url"><a
+                                t-att-href="object.description_url"
+                            >More information</a></div>
+                        <div class="container" t-if="object.claimed_partner_id">
+                            <t>
+                                <span t-if="object.state == 'claimed'">Claimed by</span>
+                                <span
+                                    t-if="object.state == 'submitted'"
+                                >Submitted by</span>
+                                <span t-if="object.state == 'done'">Delivered by</span>
+                            </t>
+                            <t t-esc="object.claimed_partner_id.sudo().name" />
+                        </div>
+                        <ul class="nav">
+                            <li t-if="object._can_pay()" class="nav-item m-1">
+                                <a
+                                    class="btn btn-primary"
+                                    t-attf-href="/crowdfunding/{{object.id}}/pay"
+                                >Pledge</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template
+        id="template_challenge_detail_discuss"
+        name="Comments"
+        inherit_id="template_challenge_detail"
+        customize_show="True"
+    >
+        <div id="wrap" position="inside">
+            <div id="discuss" class="container">
+                <t t-call="portal.message_thread" />
+            </div>
+        </div>
+    </template>
+</data>

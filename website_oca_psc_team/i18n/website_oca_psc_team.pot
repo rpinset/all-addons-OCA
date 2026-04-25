@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_oca_psc_team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.psc_team_projects
+msgid "Discover"
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.oca_project_representative
+msgid "No OCA Representative found."
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.project_github_links
+msgid "No Project found."
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.project_team_members
+msgid "No Team member found."
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.oca_project_representative
+msgid "OCA Representative:"
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model:website.menu,name:website_oca_psc_team.menu_psc_teams
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.psc_teams
+msgid "PSC Teams"
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.project_github_links
+msgid "Projects:"
+msgstr ""
+
+#. module: website_oca_psc_team
+#: model_terms:ir.ui.view,arch_db:website_oca_psc_team.project_team_members
+msgid "Team Members"
+msgstr ""

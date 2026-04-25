@@ -1,0 +1,4 @@
+---Models in module 'resource'---
+---Fields in module 'resource'---
+resource     / resource.calendar        / active (boolean)              : NEW hasdefault: default
+---XML records in module 'resource'---

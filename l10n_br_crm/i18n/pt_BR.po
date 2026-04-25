@@ -1,0 +1,195 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_br_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-05-24 22:49+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__br_currency_id
+msgid "BR Company Currency"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnpj
+msgid "CNPJ"
+msgstr "CNPJ"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnpj_cpf
+msgid "CNPJ/CPF"
+msgstr "CNPJ/CPF"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnpj_cpf_stripped
+msgid "CNPJ/CPF Stripped"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,help:l10n_br_crm.field_crm_lead__cnpj_cpf_stripped
+msgid "CNPJ/CPF without special characters"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cpf
+msgid "CPF"
+msgstr "CPF"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__city_id
+msgid "City of Address"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnae_main_id
+msgid "Cnae Main"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__display_name
+msgid "Display Name"
+msgstr "Nome Exibido"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__district
+msgid "District"
+msgstr "Bairro"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__equity_capital
+msgid "Equity Capital"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,help:l10n_br_crm.field_crm_lead__show_l10n_br
+msgid "Indicates if Brazilian localization fields should be displayed."
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: l10n_br_crm
+#: model:ir.model,name:l10n_br_crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Prospectos/Oportunidades"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__legal_name
+msgid "Legal Name"
+msgstr "Razão Social"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__legal_nature_id
+msgid "Legal Nature"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__inscr_mun
+msgid "Municipal Tax Number"
+msgstr "Número da Inscrição Municipal"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__name_surname
+msgid "Name and Surname"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,help:l10n_br_crm.field_crm_lead__name_surname
+msgid "Name used in fiscal documents"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__state_tax_number_ids
+msgid "Others State Tax Number"
+msgstr "Número de Outras Inscrição Estaduais"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__rg
+msgid "RG"
+msgstr "RG"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__show_l10n_br
+msgid "Show L10N Br"
+msgstr ""
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__inscr_est
+msgid "State Tax Number"
+msgstr "Número da Inscrição Estadual"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__street_name
+msgid "Street Name"
+msgstr "Nome da Rua"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__street_number
+msgid "Street Number"
+msgstr "Número do Endereço"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__suframa
+msgid "Suframa"
+msgstr "Suframa"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,help:l10n_br_crm.field_crm_lead__legal_name
+msgid "Used in fiscal documents"
+msgstr "Usado em documentos fiscais"
+
+#, python-format
+#~ msgid "CNPJ inválido!"
+#~ msgstr "CNPJ inválido!"
+
+#, python-format
+#~ msgid "CPF inválido!"
+#~ msgstr "CPF inválido!"
+
+#~ msgid "City ID"
+#~ msgstr "ID da Cidade"
+
+#~ msgid "Inscr. Estadual/RG"
+#~ msgstr "Inscr. Estadual/RG"
+
+#~ msgid "Inscr. Municipal"
+#~ msgstr "Inscr. Municipal"
+
+#, python-format
+#~ msgid "Inscrição Estadual Invalida!"
+#~ msgstr "Inscrição Estadual Inválida!"
+
+#~ msgid "Nome e sobrenome"
+#~ msgstr "Nome e sobrenome"
+
+#~ msgid "Nome utilizado em documentos fiscais"
+#~ msgstr "Nome utilizado em documentos fiscais"
+
+#~ msgid "Número"
+#~ msgstr "Número"
+
+#~ msgid "nome utilizado em documentos fiscais"
+#~ msgstr "nome utilizado em documentos fiscais"

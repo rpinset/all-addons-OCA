@@ -1,0 +1,161 @@
+<odoo>
+    <template id="pay_details">
+        <t t-call="portal.frontend_layout">
+            <t t-set="additional_title" t-value="object.name" />
+            <div class="wrap">
+                <div class="container">
+                    <h1 t-esc="object.name" />
+                </div>
+                <div class="container">
+                    <form method="post">
+                        <input
+                            type="hidden"
+                            name="csrf_token"
+                            t-att-value="request.csrf_token()"
+                        />
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span
+                                        class="input-group-text"
+                                        t-esc="object.currency_id.name"
+                                    />
+                                </div>
+                                <input
+                                    type="number"
+                                    name="amount"
+                                    class="form-control"
+                                    id="amount"
+                                    required="required"
+                                    t-att-value="object.pledge_default_amount"
+                                />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Pledge</button>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="pay_partner_details">
+        <t t-call="portal.frontend_layout">
+            <t t-set="additional_title" t-value="object.name" />
+            <div class="wrap">
+                <div class="container">
+                    <h1 t-esc="object.name" />
+                </div>
+                <div class="container">
+                    <form method="post">
+                        <input
+                            type="hidden"
+                            name="csrf_token"
+                            t-att-value="request.csrf_token()"
+                        />
+                        <div class="form-group">
+                            <t t-set="field" t-value="'name'" />
+                            <label for="name">Name</label>
+                            <input
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            />
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <t t-set="field" t-value="'email'" />
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            />
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <t t-set="field" t-value="'street'" />
+                            <label t-att-for="field">Street</label>
+                            <input
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            />
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <t t-set="field" t-value="'city'" />
+                            <label t-att-for="field">City</label>
+                            <input
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            />
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <t t-set="field" t-value="'zip'" />
+                            <label t-att-for="field">Zip</label>
+                            <input
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            />
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <t t-set="field" t-value="'country_id'" />
+                            <label t-att-for="field">Country</label>
+                            <select
+                                t-att-id="field"
+                                t-att-name="field"
+                                t-att-value="form_values.get(field)"
+                                t-attf-class="form-control {{'is-invalid' if field in form_errors else 'is-valid' if field in form_values else ''}}"
+                            >
+                                <option value="">Select country</option>
+                                <option
+                                    t-foreach="request.env['res.country'].search([])"
+                                    t-as="country"
+                                    t-att-value="country.id"
+                                    t-att-selected="str(country.id) == form_values.get(field) and 'selected'"
+                                >
+                                    <t t-esc="country.name" />
+                                </option>
+                            </select>
+                            <div
+                                class="invalid-feedback"
+                                t-esc="form_errors.get(field)"
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                        or
+                        <a
+                            class="btn btn-primary"
+                            t-attf-href="/web/login?redirect={{object.website_url}}/pay"
+                        >Login</a>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

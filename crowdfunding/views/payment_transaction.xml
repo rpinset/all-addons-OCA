@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <record id="transaction_form" model="ir.ui.view">
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.transaction_form" />
+        <field name="arch" type="xml">
+            <group position="inside">
+                <group
+                    name="crowdfunding"
+                    attrs="{'invisible': [('crowdfunding_challenge_id', '=', False)]}"
+                >
+                    <field name="crowdfunding_challenge_id" />
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>

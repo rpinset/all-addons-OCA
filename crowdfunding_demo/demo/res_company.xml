@@ -1,0 +1,6 @@
+<odoo>
+    <record id="base.main_company" model="res.company">
+        <field name="account_sale_tax_id" eval="False" />
+        <field name="account_purchase_tax_id" eval="False" />
+    </record>
+</odoo>

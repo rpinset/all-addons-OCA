@@ -1,0 +1,10 @@
+<odoo>
+<template id="assets_tests" name="Website Assets Tests" inherit_id="web.assets_tests">
+    <xpath expr="." position="inside">
+        <script
+                type="text/javascript"
+                src="/crowdfunding/static/tests/tours/crowdfunding_frontend.js"
+            />
+    </xpath>
+</template>
+</odoo>

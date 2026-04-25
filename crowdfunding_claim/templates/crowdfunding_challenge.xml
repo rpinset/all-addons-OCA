@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <template
+        id="template_challenge_detail"
+        inherit_id="crowdfunding.template_challenge_detail"
+    >
+        <xpath expr="//ul[hasclass('nav')]/li" position="before">
+            <li t-if="object._can_claim()" class="nav-item m-1">
+            <form t-attf-action="{{object.website_url}}/claim" method="post">
+                <input
+                        type="hidden"
+                        name="csrf_token"
+                        t-att-value="request.csrf_token()"
+                    />
+                <button type="submit" class="btn btn-primary">Claim</button>
+            </form>
+            </li>
+        </xpath>
+    </template>
+    <template
+        id="template_challenge_detail_discuss"
+        inherit_id="crowdfunding.template_challenge_detail_discuss"
+    >
+        <xpath expr="//div[@id='discuss']" position="attributes">
+            <attribute name="t-if">not hide_discuss</attribute>
+        </xpath>
+    </template>
+</data>
