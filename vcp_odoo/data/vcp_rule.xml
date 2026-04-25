@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="vcp_rule_odoo" model="vcp.rule">
+        <field name="name">Odoo SA Module Detection</field>
+        <field name="rule_type">odoo_module</field>
+        <field name="branch_pattern">^\d+\.\d$</field>
+        <field
+            name="paths"
+        ><![CDATA[/addons/*/__manifest__.py
+/odoo/addons/*/__manifest__.py]]></field>
+    </record>
+    <record id="vcp_rule_oca" model="vcp.rule">
+        <field name="name">Odoo Module Detection (OCA)</field>
+        <field name="rule_type">odoo_module</field>
+        <field name="branch_pattern">^\d+\.\d$</field>
+        <field name="paths"><![CDATA[/*/__manifest__.py]]></field>
+    </record>
+</odoo>

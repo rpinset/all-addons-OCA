@@ -1,0 +1,781 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* taric_ai_classifier
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_product__taric_code_id
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_template__taric_code_id
+msgid "10-digit TARIC code for customs"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_taric_code__code
+msgid "8-10 digit HS or TARIC code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.actions.act_window,name:taric_ai_classifier.action_taric_classify_wizard
+msgid "AI Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "AI Classification Suggestions"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_product__ai_classification_confidence
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_template__ai_classification_confidence
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__confidence_score
+msgid "AI Confidence"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "AI HS Code Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__ai_model
+msgid "AI Model"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__reasoning
+msgid "AI Reasoning"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__product_template__classification_method__ai
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__taric_classification_history__classification_method__ai
+msgid "AI Suggested"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__suggestion_ids
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "AI Suggestions"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "AI and Verification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "AI classification failed: %s"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_product__ai_classification_confidence
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_template__ai_classification_confidence
+#: model:ir.model.fields,help:taric_ai_classifier.field_taric_code__confidence_score
+msgid "AI confidence level (0-100)"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/product.py:0
+msgid "AI could not suggest any codes. Please try manual classification."
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "AI service error: %s"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__product_template__classification_method__api
+msgid "API Verified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_res_config_settings__anthropic_api_key
+msgid "API key for Claude AI service from Anthropic"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__active
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Active"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_res_config_settings__anthropic_api_key
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Anthropic API Key"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "Anthropic API key not configured in Settings!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "Apply Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Auto-applied"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__auto_apply_high_confidence
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_res_config_settings__auto_apply_high_confidence
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Auto-apply High Confidence"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Automatically apply AI suggestions with confidence &gt; 95%"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_res_config_settings__auto_apply_high_confidence
+msgid "Automatically apply AI suggestions with confidence > 95%"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_batch_classify_wizard__auto_apply_high_confidence
+msgid "Automatically apply suggestions with >90% confidence"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_res_config_settings__auto_classify_enabled
+msgid "Automatically suggest TARIC codes when creating new products"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.actions.act_window,name:taric_ai_classifier.action_batch_classify_wizard
+msgid "Batch Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_batch_classify_result
+msgid "Batch Classification Result"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.actions.act_window,name:taric_ai_classifier.action_batch_classify_products
+msgid "Batch Classify Products"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_batch_classify_wizard
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Batch Product Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__category_id
+msgid "Category Filter"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.product_template_form_view_taric
+msgid "Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_product__classification_history_ids
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_template__classification_history_ids
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Classification History"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_product__classification_method
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_template__classification_method
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__classification_method
+msgid "Classification Method"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__notes
+msgid "Classification Notes"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_product__classification_verified
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_template__classification_verified
+msgid "Classification Verified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.product_template_form_view_taric
+msgid "Classify with AI"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Close"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__code
+msgid "Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "Code %s verified successfully!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Code Information"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Completed: %(processed)s/%(total)s products processed"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__confidence
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__confidence_score
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__confidence
+msgid "Confidence %"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.actions.act_window,help:taric_ai_classifier.action_taric_code
+msgid "Create your first TARIC code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__create_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__create_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__create_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__create_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__create_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__create_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__create_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__create_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__create_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__custom_code
+msgid "Custom TARIC Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Customs Information"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__create_date
+msgid "Date"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__description
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Description"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__description_en
+msgid "Description (EN)"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Description..."
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__display_name
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__display_name
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__display_name
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__display_name
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__display_name
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__duty_rate
+msgid "Duty Rate %"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_res_config_settings__auto_classify_enabled
+msgid "Enable Auto-Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_taric_classify_wizard__custom_code
+msgid "Enter code manually if not in suggestions"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__batch_classify_result__status__error
+msgid "Error"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__product_template__classification_method__expert
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__taric_classification_history__classification_method__expert
+msgid "Expert Verified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Filters"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Get your API key from:"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Group By"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__code
+msgid "HS/TARIC Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "HS/TARIC code must be 6, 8 or 10 digits!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.constraint,message:taric_ai_classifier.constraint_taric_code_code_unique
+msgid "HS/TARIC code must be unique!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/taric_code.py:0
+msgid "HS/TARIC code must contain only digits!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "High Confidence"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__classification_history_ids
+msgid "History"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_product__classification_method
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_template__classification_method
+msgid "How was the current TARIC code assigned"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__id
+msgid "ID"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__write_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__write_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__write_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__write_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__write_uid
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__write_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__write_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__write_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__write_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__write_date
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__product_template__classification_method__manual
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__taric_classification_history__classification_method__manual
+msgid "Manual"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "Manual Entry"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Manual classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Manual review needed"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__message
+msgid "Message"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Min Confidence %"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_res_config_settings__min_confidence_threshold
+msgid "Minimum Confidence Threshold %"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_res_config_settings__min_confidence_threshold
+msgid "Minimum confidence score to show AI suggestions"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/product.py:0
+msgid "No TARIC code assigned to verify!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "No products found to classify!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "No suggestions from AI"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__filter_unclassified
+msgid "Only Unclassified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Options"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__batch_classify_result__status__pending
+msgid "Pending Review"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Please select a suggestion or enter a custom code!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_batch_classify_wizard__category_id
+msgid "Process only products in this category"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_batch_classify_wizard__filter_unclassified
+msgid "Process only products without TARIC codes"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Processed %(processed)s/%(total)s products"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_product_template
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__product_id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__product_id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__product_id
+msgid "Product"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/wizard/taric_classify_wizard.py:0
+msgid "Product classified with code %s"
+msgstr ""
+
+#. module: taric_ai_classifier
+#. odoo-python
+#: code:addons/taric_ai_classifier/models/product.py:0
+msgid "Product must have a name or description for AI classification!"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__product_ids
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__product_ids
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Products"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__progress
+msgid "Progress %"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "Reason for manual classification..."
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__reasoning
+msgid "Reasoning"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__result_ids
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Results"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Search TARIC Codes"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_wizard__selected_suggestion_id
+msgid "Selected Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.batch_classify_wizard_form_view
+msgid "Start Classification"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__status
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_wizard__status
+msgid "Status"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields.selection,name:taric_ai_classifier.selection__batch_classify_result__status__success
+msgid "Success"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__taric_code
+msgid "Suggested Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "TARIC & INTRASTAT AI"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_taric_classification_history
+msgid "TARIC Classification History"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_taric_classify_suggestion
+msgid "TARIC Classification Suggestion"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_taric_classify_wizard
+msgid "TARIC Classification Wizard"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model,name:taric_ai_classifier.model_taric_code
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "TARIC Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_product__taric_code_id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_product_template__taric_code_id
+msgid "TARIC Code (template)"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.actions.act_window,name:taric_ai_classifier.action_taric_code
+#: model:ir.ui.menu,name:taric_ai_classifier.menu_taric_codes
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_tree_view
+msgid "TARIC Codes"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.actions.act_window,help:taric_ai_classifier.action_taric_code
+msgid ""
+"TARIC codes are used for customs classification.\n"
+"                Use the AI classification tool to automatically suggest codes for your products."
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__taric_code_id
+msgid "Taric Code"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__supplementary_unit
+msgid "Unit"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Unverified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "Use AI to automatically suggest HS/TARIC codes for products"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.product_template_form_view_taric
+msgid "Use AI to suggest TARIC codes"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classification_history__user_id
+msgid "User"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__valid_from
+msgid "Valid From"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__valid_to
+msgid "Valid To"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__verified_date
+msgid "Verification Date"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Verification Status"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__verified
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_search_view
+msgid "Verified"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_code__verified_by_id
+msgid "Verified By"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_product__classification_verified
+#: model:ir.model.fields,help:taric_ai_classifier.field_product_template__classification_verified
+#: model:ir.model.fields,help:taric_ai_classifier.field_taric_code__verified
+msgid "Verified by customs expert"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_code_form_view
+msgid "Verify Online"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_batch_classify_result__wizard_id
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.taric_classify_wizard_form_view
+msgid "e.g., 12345678"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "https://console.anthropic.com/"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.res_config_settings_view_form_taric
+msgid "sk-ant-..."
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model:ir.model.fields,field_description:taric_ai_classifier.field_taric_classify_suggestion__description_bg
+msgid "Описание (BG)"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.product_template_form_view_taric
+msgid "✓ Verify Code Online"
+msgstr ""
+
+#. module: taric_ai_classifier
+#: model_terms:ir.ui.view,arch_db:taric_ai_classifier.product_template_form_view_taric
+msgid "📋 View History"
+msgstr ""

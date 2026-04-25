@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* endpoint_cache_preheat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-06-09 14:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: endpoint_cache_preheat
+#: model_terms:ir.ui.view,arch_db:endpoint_cache_preheat.endpoint_mixin_form_view
+msgid ""
+"A job will be created to pre-heat the cache. You can check the status of the"
+" job in the Jobs menu."
+msgstr ""
+"Verrà creato un lavoro per preriscaldare la cache. Puoi controllare lo stato "
+"del lavoro nel menu Lavoro."
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_endpoint__cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_mixin__cache_preheat
+msgid "Automatic cache pre-heat"
+msgstr "Preriscaldamento cache automatico"
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_mixin__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: endpoint_cache_preheat
+#: model:ir.actions.server,name:endpoint_cache_preheat.cron_endpoint_cache_preheat_ir_actions_server
+#: model:ir.cron,cron_name:endpoint_cache_preheat.cron_endpoint_cache_preheat
+#: model:ir.cron,name:endpoint_cache_preheat.cron_endpoint_cache_preheat
+msgid "Endpoint cache pre-heat"
+msgstr "Preriscaldamento cache endpoint"
+
+#. module: endpoint_cache_preheat
+#: model:ir.model,name:endpoint_cache_preheat.model_endpoint_mixin
+msgid "Endpoint mixin"
+msgstr "Mixin endpoint"
+
+#. module: endpoint_cache_preheat
+#: model_terms:ir.ui.view,arch_db:endpoint_cache_preheat.endpoint_mixin_form_view
+msgid "Force cache pre-heat (async)"
+msgstr "Forza preriscaldamento cache (asincrono)"
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_mixin__id
+msgid "ID"
+msgstr "ID"
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,help:endpoint_cache_preheat.field_endpoint_endpoint__cache_preheat
+#: model:ir.model.fields,help:endpoint_cache_preheat.field_endpoint_mixin__cache_preheat
+msgid ""
+"If checked, cache will be pre-heated by a cron according to the selected "
+"policy. Cache generation will be done in a queue job."
+msgstr ""
+"Se selezionata, la cache verrà preriscaldata da un cron in conformità alla "
+"apolitica selezionata. La generazione della cache verrà eseguita in un "
+"lavoro in coda."
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_mixin____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: endpoint_cache_preheat
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_endpoint__cache_preheat_ts
+#: model:ir.model.fields,field_description:endpoint_cache_preheat.field_endpoint_mixin__cache_preheat_ts
+msgid "Last pre-heat on"
+msgstr "Ultimo preriscaldamento su"

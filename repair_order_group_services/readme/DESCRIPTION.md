@@ -1,0 +1,1 @@
+This is a technical bridge module between the 'repair_order_group' and 'repair_service' modules. It ensures that all services from all grouped repair orders are added to the corresponding quotation when the latter is created from a grouped repair order.

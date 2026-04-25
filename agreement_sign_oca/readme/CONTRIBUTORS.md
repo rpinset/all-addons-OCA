@@ -1,0 +1,4 @@
+- [APSL Nagarro](https://nagarro.com)
+  - Miquel Alzanillas
+- [Heliconia Solutions Pvt. Ltd.](https://www.heliconia.io)
+  - Bhavesh Heliconia

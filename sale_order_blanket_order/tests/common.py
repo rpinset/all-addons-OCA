@@ -1,0 +1,159 @@
+# Copyright 2024 ACSONE SA/NV
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+from odoo import Command
+
+from odoo.addons.base.tests.common import BaseCommon
+
+
+class SaleOrderBlanketOrderCase(BaseCommon):
+    @classmethod
+    def setUpClass(cls):
+        """Setup the test
+
+        - Create a partner
+        - Create three products (and set their quantity in stock)
+        - Create a blanket sale order with 3 lines.
+            - 2 lines for product 1
+            - 1 line for product 2
+            - reservation strategy at_confirm
+        - Create a blanket sale order with 3 lines.
+            - 2 lines for product 1
+            - 1 line for product 2
+            - reservation strategy at_call_off
+        - Create a normal sale order with 2 lines.
+        """
+        super().setUpClass()
+
+        # Simulate the final registry loaded signal
+        # This method is called by the _register_hook
+        # of the sale.order.line model, but since we are in a test, we
+        # need to call it manually to patch the _compute_price_unit method
+        cls.env["sale.order.line"]._do_patch_compute_price_unit()
+        # create a flat tax
+        cls.tax_fixed = cls.env["account.tax"].create(
+            {
+                "sequence": 10,
+                "name": "Tax 10.0 (Fixed)",
+                "amount": 10.0,
+                "amount_type": "fixed",
+                "include_base_amount": True,
+            }
+        )
+        cls.product_1 = cls.env["product.product"].create(
+            {
+                "name": "Product 1",
+                "type": "consu",
+                "is_storable": True,
+                "taxes_id": [Command.link(cls.tax_fixed.id)],
+            }
+        )
+        cls.product_2 = cls.env["product.product"].create(
+            {
+                "name": "Product 2",
+                "type": "consu",
+                "is_storable": True,
+                "taxes_id": [Command.link(cls.tax_fixed.id)],
+            }
+        )
+        cls.product_3 = cls.env["product.product"].create(
+            {
+                "name": "Product 3",
+                "type": "consu",
+                "is_storable": True,
+                "taxes_id": [Command.link(cls.tax_fixed.id)],
+            }
+        )
+        cls._set_qty_in_loc_only(cls.product_1, 1000)
+        cls._set_qty_in_loc_only(cls.product_2, 2000)
+        cls.blanket_so = cls.env["sale.order"].create(
+            {
+                "order_type": "blanket",
+                "partner_id": cls.partner.id,
+                "blanket_validity_start_date": "2025-01-01",
+                "blanket_validity_end_date": "2025-12-31",
+                "blanket_reservation_strategy": "at_call_off",
+                "order_line": [
+                    Command.create(
+                        {
+                            "product_id": cls.product_1.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 100.0,
+                        }
+                    ),
+                    Command.create(
+                        {
+                            "product_id": cls.product_1.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 100.0,
+                        }
+                    ),
+                    Command.create(
+                        {
+                            "product_id": cls.product_2.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 200.0,
+                        }
+                    ),
+                ],
+            }
+        )
+
+        cls.so = cls.env["sale.order"].create(
+            {
+                "partner_id": cls.partner.id,
+                "order_line": [
+                    Command.create(
+                        {
+                            "product_id": cls.product_1.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 100.0,
+                        }
+                    ),
+                    Command.create(
+                        {
+                            "product_id": cls.product_2.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 200.0,
+                        }
+                    ),
+                ],
+            }
+        )
+        cls.so_model = cls.env["sale.order"]
+        cls.call_off_domain = [("order_type", "=", "call_off")]
+
+        cls.product_2_pack2 = cls.env["product.packaging"].create(
+            {
+                "name": "Test Pack of 2",
+                "product_id": cls.product_2.id,
+                "qty": 2,
+                "sales": True,
+            }
+        )
+        cls.product_2_pack3 = cls.env["product.packaging"].create(
+            {
+                "name": "Test Pack of 3",
+                "product_id": cls.product_2.id,
+                "qty": 3,
+                "sales": True,
+            }
+        )
+
+    @classmethod
+    def _set_qty_in_loc_only(cls, product, qty, location=None):
+        location = location or cls.env.ref("stock.stock_location_stock")
+        cls.env["stock.quant"].with_context(inventory_mode=True).create(
+            {
+                "product_id": product.id,
+                "inventory_quantity": qty,
+                "location_id": location.id,
+            }
+        ).action_apply_inventory()
+
+    @classmethod
+    def _set_call_off_auto_create_mode(cls, value):
+        # Enable the auto create mode
+        cls.env["res.config.settings"].create(
+            {"create_call_off_from_so_if_possible": value}
+        ).execute()

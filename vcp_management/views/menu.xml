@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <menuitem
+        id="vcp_main_menu"
+        name="Version Control Platform"
+        sequence="16"
+        web_icon="vcp_management,static/description/icon.png"
+    >
+        <menuitem
+            id="vcp_platform_menu"
+            name="Platforms"
+            action="vcp_platform_act_window"
+            sequence="1"
+        />
+
+        <menuitem
+            id="vcp_repository_menu"
+            name="Repositories"
+            action="vcp_repository_act_window"
+            sequence="10"
+        />
+
+        <menuitem
+            id="vcp_request_menu"
+            name="Pull Requests"
+            action="vcp_request_act_window"
+            sequence="20"
+        />
+
+        <menuitem id="vcp_technical_menu" name="Technical" sequence="70">
+            <menuitem
+                id="vcp_branch_menu"
+                name="Branches"
+                action="vcp_branch_act_window"
+                sequence="10"
+            />
+            <menuitem
+                id="vcp_repository_branch_menu"
+                name="Repository Branches"
+                action="vcp_repository_branch_act_window"
+                sequence="20"
+            />
+            <menuitem
+                id="vcp_comment_menu"
+                name="Comments"
+                action="vcp_comment_act_window"
+                sequence="30"
+            />
+            <menuitem
+                id="vcp_review_menu"
+                name="Reviews"
+                action="vcp_review_act_window"
+                sequence="50"
+            />
+            <menuitem
+                id="vcp_request_label_menu"
+                name="Request Labels"
+                action="vcp_request_label_act_window"
+                sequence="100"
+            />
+        </menuitem>
+
+        <menuitem id="vcp_settings_menu" name="Settings" sequence="80">
+            <menuitem
+                id="vcp_organization_menu"
+                name="Organizations"
+                action="vcp_organization_act_window"
+                sequence="10"
+            />
+
+            <menuitem
+                id="vcp_user_menu"
+                name="Users"
+                action="vcp_user_act_window"
+                sequence="20"
+            />
+
+            <menuitem
+                id="vcp_rule_menu"
+                name="Processing Rules"
+                action="vcp_rule_act_window"
+                sequence="30"
+            />
+
+            <menuitem
+                id="vcp_host_menu"
+                name="Platform Types"
+                action="vcp_host_act_window"
+                sequence="90"
+            />
+        </menuitem>
+    </menuitem>
+</odoo>

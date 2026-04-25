@@ -1,0 +1,2 @@
+- [Camptocamp SA](https://camptocamp.com):
+  - Silvio Gregorini \<<silvio.gregorini@camptocamp.com>\>

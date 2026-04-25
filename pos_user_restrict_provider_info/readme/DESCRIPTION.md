@@ -1,0 +1,1 @@
+This module controls access to supplier information in the Point of Sale product details, restricting visibility for pos users.

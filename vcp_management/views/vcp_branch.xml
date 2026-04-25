@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_branch_form_view">
+        <field name="model">vcp.branch</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <group>
+                        <field name="name" readonly="True" />
+                        <field name="platform_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_branch_list_view">
+        <field name="model">vcp.branch</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="platform_id" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_branch_act_window">
+        <field name="name">Branches</field>
+        <field name="res_model">vcp.branch</field>
+        <field name="path">vcp-branch</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

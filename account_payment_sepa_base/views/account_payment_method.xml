@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="account_payment_method_form" model="ir.ui.view">
+        <field name="name">sepa_base.account_payment_method.form</field>
+        <field name="model">account.payment.method</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_base_oca.account_payment_method_form"
+        />
+        <field name="arch" type="xml">
+            <field name="payment_type" position="after">
+                <field
+                    name="pain_version"
+                    invisible="code not in ('sepa_direct_debit', 'sepa_credit_transfer')"
+                    required="code in ('sepa_direct_debit', 'sepa_credit_transfer')"
+                />
+
+                <field name="warn_not_sepa" invisible="not pain_version" />
+            </field>
+        </field>
+    </record>
+    <record id="account_payment_method_list" model="ir.ui.view">
+        <field name="name">sepa_base.account_payment_method.list</field>
+        <field name="model">account.payment.method</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_base_oca.account_payment_method_list"
+        />
+        <field name="arch" type="xml">
+            <field name="payment_type" position="after">
+                <field
+                    name="pain_version"
+                    optional="show"
+                    invisible="code not in ('sepa_direct_debit', 'sepa_credit_transfer')"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

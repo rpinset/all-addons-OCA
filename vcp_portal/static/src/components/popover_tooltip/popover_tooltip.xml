@@ -1,0 +1,7 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="vcp_portal.PopoverTooltip">
+        <div class="p-2">
+            <t t-raw="props.content" />
+        </div>
+    </t>
+</templates>

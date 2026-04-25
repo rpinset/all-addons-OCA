@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <menuitem
+        id="vcp_odoo_menu"
+        name="Odoo Modules"
+        parent="vcp_management.vcp_main_menu"
+        sequence="30"
+    >
+        <menuitem
+            id="vcp_odoo_module_menu"
+            name="Modules"
+            action="vcp_odoo_module_act_window"
+            sequence="10"
+        />
+
+        <menuitem
+            id="vcp_odoo_module_version_menu"
+            name="Module Versions"
+            action="vcp_odoo_module_version_act_window"
+            sequence="20"
+        />
+
+        <menuitem id="vcp_odoo_dependencies_menu" name="Dependencies" sequence="30">
+            <menuitem
+                id="vcp_odoo_bin_packages_menu"
+                name="Bin Packages"
+                action="vcp_odoo_bin_package_act_window"
+                sequence="10"
+            />
+
+            <menuitem
+                id="vcp_odoo_python_library_menu"
+                name="Python Librairies"
+                action="vcp_odoo_python_library_act_window"
+                sequence="20"
+            />
+        </menuitem>
+    </menuitem>
+</odoo>

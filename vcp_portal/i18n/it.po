@@ -1,0 +1,191 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vcp_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid ": Month-To-Date"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid ": Moving Annual Total - Last 12 Months"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid ": Year-To-Date - From January to the selected month"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "April"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "August"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
+msgid "Comments"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "Contributors"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "Contributors Statistics"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
+msgid "Created Requests"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "Date selection Tooltip"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "December"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "February"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "January"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "July"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "June"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "MAT"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "MTD"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "March"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "May"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
+msgid "Merged Requests"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "November"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "October"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "Organizations"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "Repositories"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
+msgid "Reviews"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid ""
+"Select the period for which you want to see the contributors statistics.\n"
+"        Options are:"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "September"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.portal_my_home_contributors
+msgid "Show Version Control Platform information"
+msgstr ""
+
+#. module: vcp_portal
+#: model_terms:ir.ui.view,arch_db:vcp_portal.portal_my_home_contributors
+msgid "Version Control Platforms"
+msgstr ""
+
+#. module: vcp_portal
+#. odoo-javascript
+#: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
+msgid "YTD"
+msgstr ""

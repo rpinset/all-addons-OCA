@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_available_to_promise_release_carrier_alternative
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-06 09:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model.fields,help:stock_available_to_promise_release_carrier_alternative.field_delivery_carrier__alternative_carrier_ids
+msgid ""
+"\n"
+"    Change delivery to one of those alternative carriers if the conditions "
+"are met.\n"
+"    Evaluated carriers are this carrier and those alternatives sorted by "
+"sequence.\n"
+"    The first valid carrier will be selected\n"
+msgstr ""
+"\n"
+"    Cambiare la consegna a uno di questi corrieri alternativi se le "
+"condizioni sono soddisfatte.\n"
+"    I corrieri valutati sono questo corriere e le alternative ordinate per "
+"sequenza.\n"
+"    Verrà selezionato il primo corriere valido.\n"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model.fields,field_description:stock_available_to_promise_release_carrier_alternative.field_delivery_carrier__alternative_carrier_ids
+msgid "Alternative Carrier"
+msgstr "Corriere alternativo"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model.fields,field_description:stock_available_to_promise_release_carrier_alternative.field_procurement_group__picking_ids
+msgid "Picking"
+msgstr "Prelievo"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model,name:stock_available_to_promise_release_carrier_alternative.model_procurement_group
+msgid "Procurement Group"
+msgstr "Gruppo di approvvigionamento"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model,name:stock_available_to_promise_release_carrier_alternative.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Metodi di spedizione"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model,name:stock_available_to_promise_release_carrier_alternative.model_stock_move
+msgid "Stock Move"
+msgstr "Movimento di magazzino"
+
+#. module: stock_available_to_promise_release_carrier_alternative
+#: model:ir.model,name:stock_available_to_promise_release_carrier_alternative.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"
+
+#~ msgid "%s - Alternative carrier %s"
+#~ msgstr "%s - Corriere alternativo %s"

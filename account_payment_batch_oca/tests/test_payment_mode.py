@@ -1,0 +1,90 @@
+# © 2017 Creu Blanca
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+from unittest.mock import patch
+
+from odoo.tests import tagged
+from odoo.tests.common import TransactionCase
+
+from odoo.addons.account.models.account_payment_method import AccountPaymentMethod
+
+
+@tagged("post_install", "-at_install")
+class TestPaymentMode(TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+        Method_get_payment_method_information = (
+            AccountPaymentMethod._get_payment_method_information
+        )
+
+        def _get_payment_method_information(self):
+            res = Method_get_payment_method_information(self)
+            res["IN"] = {"mode": "multi", "type": ("bank",)}
+            res["IN2"] = {"mode": "multi", "type": ("bank",)}
+            res["electronic_out"] = {"mode": "multi", "type": ("bank",)}
+            return res
+
+        # Company
+        cls.company = cls.env.ref("base.main_company")
+
+        cls.journal_c1 = cls.env["account.journal"].create(
+            {
+                "name": "Journal 1",
+                "code": "J1",
+                "type": "bank",
+                "company_id": cls.company.id,
+            }
+        )
+
+        cls.account = cls.env["account.account"].search(
+            [("reconcile", "=", True), ("company_ids", "in", cls.company.id)], limit=1
+        )
+
+        cls.manual_out = cls.env.ref("account.account_payment_method_manual_out")
+
+        cls.manual_in = cls.env.ref("account.account_payment_method_manual_in")
+
+        with patch.object(
+            AccountPaymentMethod,
+            "_get_payment_method_information",
+            _get_payment_method_information,
+        ):
+            cls.electronic_out = cls.env["account.payment.method"].create(
+                {
+                    "name": "Electronic Out",
+                    "code": "electronic_out",
+                    "payment_type": "outbound",
+                }
+            )
+
+        cls.payment_method_line_c1 = cls.env["account.payment.method.line"].create(
+            {
+                "name": "Direct Debit of suppliers from Bank 1",
+                "bank_account_link": "variable",
+                "payment_method_id": cls.manual_out.id,
+                "company_id": cls.company.id,
+                "journal_id": cls.journal_c1.id,
+            }
+        )
+
+    def test_onchange_payment_type(self):
+        self.payment_method_line_c1.payment_method_id = self.manual_in
+        self.assertTrue(
+            all(
+                [
+                    journal.type == "sale"
+                    for journal in self.payment_method_line_c1.default_journal_ids
+                ]
+            )
+        )
+        self.payment_method_line_c1.payment_method_id = self.manual_out
+        self.assertTrue(
+            all(
+                [
+                    journal.type == "purchase"
+                    for journal in self.payment_method_line_c1.default_journal_ids
+                ]
+            )
+        )

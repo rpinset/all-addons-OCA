@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="account_payment_line_form" model="ir.ui.view">
+        <field name="name">account.payment.line.form</field>
+        <field name="model">account.payment.line</field>
+        <field name="arch" type="xml">
+            <form string="Payment Lines">
+                <group name="main" col="2">
+                    <group name="left">
+                        <field name="state" invisible="1" />
+                        <field name="company_id" invisible="1" />
+                        <field name="mail_notif" invisible="1" />
+                        <field
+                            name="order_id"
+                            invisible="not context.get('account_payment_line_main_view')"
+                        />
+                        <field name="name" />
+                        <field name="move_line_id" />
+                        <!-- we removed the filter on amount_to_pay, because we want to be able to select refunds -->
+                        <field name="partner_id" />
+                        <field
+                            name="partner_bank_id"
+                            context="{'default_partner_id': partner_id}"
+                            domain="[('partner_id', '=', partner_id), ('id', '!=', parent.company_partner_bank_id)]"
+                            required="bank_account_required"
+                            invisible="not partner_id"
+                        />
+                        <field name="bank_account_required" invisible="1" />
+                        <field name="date" />
+                        <field name="ml_maturity_date" readonly="1" />
+                        <field name="amount_currency" />
+                        <field name="currency_id" />
+                        <field name="communication_type" />
+                        <field name="communication" required="1" />
+                    </group>
+                    <group name="right">
+                        <field
+                            name="mail_notif_partner_id"
+                            invisible="not mail_notif"
+                        />
+                        <field name="company_id" groups="base.group_multi_company" />
+                        <field name="amount_company_currency" />
+                        <field name="company_currency_id" invisible="1" />
+                        <field name="payment_type" invisible="1" />
+                    </group>
+                </group>
+                <group
+                    col="12"
+                    name="account_payment"
+                    string="Payment Transaction"
+                    invisible="payment_ids == []"
+                >
+                    <field name="payment_ids" colspan="12" nolabel="1" />
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="account_payment_line_form_readonly" model="ir.ui.view">
+        <field name="name">account.payment.line.form.readonly</field>
+        <field name="model">account.payment.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_batch_oca.account_payment_line_form"
+        />
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <form position="attributes">
+                <attribute name="create">0</attribute>
+                <attribute name="edit">0</attribute>
+                <attribute name="delete">0</attribute>
+                <attribute name="duplicate">0</attribute>
+            </form>
+        </field>
+    </record>
+    <record id="account_payment_line_tree" model="ir.ui.view">
+        <field name="name">account.payment.line.list</field>
+        <field name="model">account.payment.line</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-danger="context.get('default_payment_type') == 'outbound' and partner_bank_id and not partner_bank_allow_out_payment"
+            >
+                <field
+                    name="order_id"
+                    column_invisible="not context.get('account_payment_line_main_view')"
+                />
+                <field name="partner_id" />
+                <field name="communication" />
+                <field name="partner_bank_id" />
+                <field name="partner_bank_allow_out_payment" column_invisible="1" />
+                <field name="partner_bank_acc_type" optional="hide" />
+                <field name="move_line_id" optional="hide" />
+                <field name="ml_maturity_date" optional="show" />
+                <field name="date" />
+                <field name="amount_currency" string="Amount" />
+                <field name="name" optional="show" />
+                <field
+                    name="mail_notif_partner_id"
+                    optional="hide"
+                    column_invisible="not context.get('mail_notif')"
+                />
+                <button
+                    name="action_open_related_move"
+                    type="object"
+                    string="Invoice"
+                    class="btn btn-secondary"
+                    invisible="not move_line_id"
+                />
+                <field
+                    name="amount_company_currency"
+                    sum="Total in Company Currency"
+                    column_invisible="1"
+                />
+                <field name="payment_type" column_invisible="1" />
+                <field name="currency_id" column_invisible="1" />
+            </list>
+        </field>
+    </record>
+    <record id="account_payment_line_action" model="ir.actions.act_window">
+        <field name="name">Payment Lines</field>
+        <field name="res_model">account.payment.line</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'account_payment_line_main_view': True}</field>
+    </record>
+</odoo>

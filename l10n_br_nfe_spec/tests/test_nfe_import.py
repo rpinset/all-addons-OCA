@@ -1,0 +1,209 @@
+# Copyright 2020 Akretion - Raphael Valyi <raphael.valyi@akretion.com>
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+# flake8: noqa: C901
+
+import re
+from datetime import datetime
+from importlib import resources
+
+import nfelib
+from nfelib.nfe.bindings.v4_0.leiaute_nfe_v4_00 import TnfeProc
+from odoo_test_helper import FakeModelLoader
+
+from odoo import Command, api, models
+from odoo.models import MAGIC_COLUMNS
+from odoo.tests.common import TransactionCase
+
+from odoo.addons.l10n_br_nfe_spec.models.v4_0 import leiaute_nfe_v4_00
+
+from ..models import spec_mixin
+
+tz_datetime = re.compile(r".*[-+]0[0-9]:00$")
+
+
+# Store the original _add_field method
+original_add_field = models.BaseModel._add_field
+
+
+# Define magic fields that should bypass validation
+MAGIC_FIELDS = MAGIC_COLUMNS + ["display_name"]
+
+
+def patched_add_field(self, name, field):
+    """
+    Patched _add_field that allows magic columns for
+    dynamically created test models.
+    """
+    if name in MAGIC_FIELDS:
+        # Allow magic fields without validation
+        cls = self.env.registry[self._name]
+        if not isinstance(getattr(cls, name, field), models.fields.Field):
+            setattr(cls, name, field)
+        field._toplevel = True
+        field.__set_name__(cls, name)
+        cls._fields[name] = field
+    else:
+        # Call original method for other fields
+        original_add_field(self, name, field)
+
+
+# Apply the patch
+models.BaseModel._add_field = patched_add_field
+
+
+@api.model
+def build_fake(self, node, create=False):
+    attrs = self.build_attrs_fake(node, create_m2o=True)
+    return self.new(attrs)
+
+
+@api.model
+def build_attrs_fake(self, node, create_m2o=False):
+    """
+    Similar to build_attrs from spec_driven_model but simpler: assuming
+    generated abstract mixins are not injected into concrete Odoo models.
+    """
+    fields = self.fields_get()
+    vals = self.default_get(fields.keys())
+    for fname, fspec in node.__dataclass_fields__.items():
+        value = getattr(node, fname)
+        if value is None:
+            continue
+        key = f"nfe40_{fspec.metadata.get('name', fname)}"
+        if (
+            fspec.type is str or not any(["." in str(i) for i in fspec.type.__args__])
+        ) and not str(fspec.type).startswith("typing.List"):
+            # SimpleType
+            if fields[key]["type"] == "datetime":
+                if "T" in value:
+                    if tz_datetime.match(value):
+                        old_value = value
+                        value = old_value[:19]
+                        # TODO see python3/pysped/xml_sped/base.py#L692
+                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S")
+            vals[key] = value
+
+        else:
+            if hasattr(fspec.type.__args__[0], "__name__"):
+                binding_type = fspec.type.__args__[0].__name__
+            else:
+                binding_type = fspec.type.__args__[0].__forward_arg__
+
+            # ComplexType
+            if fields.get(key) and fields[key].get("related"):
+                key = fields[key]["related"][0]
+                comodel_name = fields[key]["relation"]
+            else:
+                clean_type = binding_type.lower()
+                comodel_name = f"nfe.40.{clean_type.split('.')[-1]}"
+            comodel = self.env.get(comodel_name)
+            if comodel is None:  # example skip ICMS100 class
+                continue
+
+            if not str(fspec.type).startswith("typing.List"):
+                # m2o
+                new_value = comodel.build_attrs_fake(
+                    value,
+                    create_m2o=create_m2o,
+                )
+                if new_value is None:
+                    continue
+                if comodel._name == self._name:  # stacked m2o
+                    vals.update(new_value)
+                else:
+                    vals[key] = self.match_or_create_m2o_fake(
+                        comodel, new_value, create_m2o
+                    )
+            else:  # if attr.get_container() == 1:
+                # o2m
+                lines = []
+                for line in [li for li in value if li]:
+                    line_vals = comodel.build_attrs_fake(line, create_m2o=create_m2o)
+                    lines.append(Command.create(line_vals))
+                vals[key] = lines
+
+    for k, v in fields.items():
+        if (
+            v.get("related") is not None
+            and len(v["related"]) == 1
+            and vals.get(k) is not None
+        ):
+            vals[v["related"][0]] = vals.get(k)
+
+    return vals
+
+
+@api.model
+def match_or_create_m2o_fake(self, comodel, new_value, create_m2o=False):
+    return comodel.new(new_value)._ids[0]
+
+
+spec_mixin.NfeSpecMixin.build_fake = build_fake
+spec_mixin.NfeSpecMixin.build_attrs_fake = build_attrs_fake
+spec_mixin.NfeSpecMixin.match_or_create_m2o_fake = match_or_create_m2o_fake
+
+
+class NFeImportTest(TransactionCase, FakeModelLoader):
+    def setUp(self):
+        super().setUp()
+        self.env = self.env(context=dict(self.env.context, tracking_disable=True))
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
+
+        # Get all classes from the module that inherit from AbstractModel
+        modified_classes = []
+        for _name, obj in vars(leiaute_nfe_v4_00).items():
+            if isinstance(obj, type) and models.AbstractModel in obj.__bases__:
+                # Create new bases tuple with Model added
+                new_bases = (models.Model,) + obj.__bases__
+
+                # Create new class with same attributes but modified bases
+                modified_class = type(obj.__name__, new_bases, dict(obj.__dict__))
+
+                # Replace original class in module
+                modified_classes.append(modified_class)
+        self.loader.update_registry(modified_classes)
+        self.addCleanup(self.loader.restore_registry)
+
+    def test_import_nfe1(self):
+        file = (
+            resources.files(nfelib)
+            .joinpath("nfe")
+            .joinpath("samples")
+            .joinpath("v4_0")
+            .joinpath("leiauteNFe")
+            .joinpath("26180875335849000115550010000016871192213331-nfe.xml")
+        )
+        with file.open("rb") as f:
+            nfe_stream = f.read()
+        binding = TnfeProc.from_xml(nfe_stream.decode())
+        nfe = (
+            self.env["nfe.40.infnfe"]
+            .with_context(tracking_disable=True, edoc_type="in")
+            .build_fake(binding.NFe.infNFe, create=False)
+        )
+        self.assertEqual(nfe.nfe40_emit.nfe40_CNPJ, "75335849000115")
+        self.assertEqual(len(nfe.nfe40_det), 3)
+        self.assertEqual(nfe.nfe40_det[0].nfe40_prod.nfe40_cProd, "880945")
+
+    def test_import_nfe2(self):
+        file = (
+            resources.files(nfelib)
+            .joinpath("nfe")
+            .joinpath("samples")
+            .joinpath("v4_0")
+            .joinpath("leiauteNFe")
+            .joinpath("35180834128745000152550010000476491552806942-nfe.xml")
+        )
+        with file.open("rb") as f:
+            nfe_stream = f.read()
+
+        binding = TnfeProc.from_xml(nfe_stream.decode())
+        nfe = (
+            self.env["nfe.40.infnfe"]
+            .with_context(tracking_disable=True, edoc_type="in")
+            .build_fake(binding.NFe.infNFe, create=False)
+        )
+        self.assertEqual(nfe.nfe40_emit.nfe40_CNPJ, "34128745000152")
+        self.assertEqual(len(nfe.nfe40_det), 16)
+        self.assertEqual(nfe.nfe40_det[0].nfe40_prod.nfe40_cProd, "1094")

@@ -1,0 +1,20 @@
+<odoo>
+    <record model="ir.ui.view" id="view_stock_picking_type_form">
+        <field name="name">InvoiceXpress: add fields</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form" />
+        <field name="arch" type="xml">
+            <field name="move_type" position="after">
+                <field name="invoicexpress_doc_type" />
+                <field
+                    name="invoicexpress_auto_create"
+                    invisible="invoicexpress_doc_type == 'none' or not invoicexpress_doc_type"
+                />
+                <field
+                    name="invoicexpress_include_uom"
+                    invisible="invoicexpress_doc_type == 'none' or not invoicexpress_doc_type"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

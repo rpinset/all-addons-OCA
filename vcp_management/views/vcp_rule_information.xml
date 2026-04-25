@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_rule_information_list_view">
+        <field name="model">vcp.rule.information</field>
+        <field name="arch" type="xml">
+            <list create="0">
+                <field name="rule_id" />
+                <field name="code_count" />
+                <field name="documentation_count" />
+                <field name="empty_count" />
+                <field name="total_count" />
+                <field name="scanned_files" />
+            </list>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="vcp_rule_information_form_view">
+        <field name="model">vcp.rule.information</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <group>
+                        <field name="rule_id" />
+                        <field name="code_count" />
+                        <field name="documentation_count" />
+                        <field name="empty_count" />
+                        <field name="total_count" />
+                        <field name="scanned_files" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,1 @@
+Glue module between agreement_helpdesk_mgmt and agreement_serviceprofile.

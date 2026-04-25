@@ -1,0 +1,690 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_phone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-01 07:17+0000\n"
+"PO-Revision-Date: 2025-08-20 11:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__google_translate_api_key
+msgid ""
+"A valid Google API key is required to enable message translation. https://"
+"cloud.google.com/translate/docs/setup"
+msgstr ""
+"Per abilitare la traduzione dei messaggi è necessaria una chiave API Google "
+"valida. https://cloud.google.com/translate/docs/setup"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__tenor_api_key
+msgid ""
+"Add a Tenor GIF API key to enable GIFs support. https://developers.google."
+"com/tenor/guides/quickstart#setup"
+msgstr ""
+"Aggiungere una chiave API GIF Tenor per abilitare il supporto GIF. https://"
+"developers.google.com/tenor/guides/quickstart#setup"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__alias_domain_id
+msgid "Alias Domain"
+msgstr "Dominio alias"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_mail_plugin
+msgid "Allow integration with the mail plugins"
+msgstr "Consenti l'integrazione con i plugin di posta"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_google_calendar
+msgid "Allow the users to synchronize their calendar  with Google Calendar"
+msgstr ""
+"Consenti agli utenti di sincronizzare il loro calendario con Google Calendar"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_microsoft_calendar
+msgid "Allow the users to synchronize their calendar with Outlook Calendar"
+msgstr ""
+"Consenti agli utenti di sincronizzare il proprio calendario con il "
+"calendario di Outlook"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_base_import
+msgid "Allow users to import data from CSV/XLS/XLSX/ODS files"
+msgstr "Consenti agli utenti di importare dati da file CSV/XLS/XLSX/ODS"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__group_multi_currency
+msgid "Allows to work in a multi currency environment"
+msgstr "Permette di lavorare in un ambiente multivaluta"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__sfu_server_key
+msgid "Base64 encoded key"
+msgstr "Chiave codificata base64"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__calling_number
+msgid "Calling Number"
+msgstr "Numero chiamata"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.reformat_all_phonenumbers_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.esm.js:0
+msgid "Click2dial successfull"
+msgstr "CliccaXChiamare riuscito"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.esm.js:0
+msgid "Click2dial to %s"
+msgstr "CliccaXChiamare a %s"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+#: model_terms:ir.ui.view,arch_db:base_phone.reformat_all_phonenumbers_form
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_website_cf_turnstile
+msgid "Cloudflare Turnstile"
+msgstr "Cloudflare Turnstile"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_phone_common
+msgid "Common methods for phone features"
+msgstr "Metodi comuni per funzionalità telefono"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__company_country_code
+msgid "Company Country Code"
+msgstr "Codice nazione"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__company_informations
+msgid "Company Informations"
+msgstr "Informazioni azienda"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__company_name
+msgid "Company Name"
+msgstr "Nome azienda"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni di configurazione"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: base_phone
+#. odoo-python
+#: code:addons/base_phone/wizard/number_not_found.py:0
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+msgid "Create New Partner"
+msgstr "Crea nuovo partner"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+msgid "Create or Update a Partner"
+msgstr "Creare o aggiornare un partner"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__create_uid
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__create_date
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__current_partner_mobile
+msgid "Current Mobile"
+msgstr "Cellulare attuale"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__current_partner_phone
+msgid "Current Phone"
+msgstr "Telefono attuale"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__report_footer
+msgid "Custom Report Footer"
+msgstr "Piè pagina resoconto personalizzato"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__auth_signup_uninvited
+msgid "Customer Account"
+msgstr "Account cliente"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__user_default_rights
+msgid "Default Access Rights"
+msgstr "Autorizzazioni accesso predefinite"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.xml:0
+msgid "Dial"
+msgstr "Componi"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.esm.js:0
+msgid "Dial phone"
+msgstr "Chiama telefono"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__display_name
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__external_report_layout_id
+msgid "Document Template"
+msgstr "Modello documento"
+
+#. module: base_phone
+#: model:ir.model.fields.selection,name:base_phone.selection__reformat_all_phonenumbers__state__done
+msgid "Done"
+msgstr "Completato"
+
+#. module: base_phone
+#: model:ir.model.fields.selection,name:base_phone.selection__reformat_all_phonenumbers__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__e164_number
+msgid "E.164 Number"
+msgstr "Numero E.164"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_number_not_found__e164_number
+msgid "E.164 equivalent of the calling number."
+msgstr "E.164 equivalente al numero che chiama."
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__email_secondary_color
+msgid "Email Button Color"
+msgstr "Colore pulsante e-mail"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__email_primary_color
+msgid "Email Header Color"
+msgstr "Colore intestazione e-mail"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__auth_signup_reset_password
+msgid "Enable password reset from Login page"
+msgstr "Abilita il reset della password dalla pagina di accesso"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__fail_counter
+msgid "Fail Mail"
+msgstr "E-mail fallita"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__tenor_gif_limit
+msgid "Fetch up to the specified number of GIF."
+msgstr "Recupera fino al numero specificato di GIF."
+
+#. module: base_phone
+#: model:ir.model.fields.selection,name:base_phone.selection__number_not_found__number_type__phone
+msgid "Fixed"
+msgstr "Fisso"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__number_type
+msgid "Fixed/Mobile"
+msgstr "Fisso/cellulare"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__report_footer
+msgid "Footer text displayed at the bottom of all reports."
+msgstr "Testo in calce visualizzato in fondo al resoconto."
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_base_geolocalize
+msgid "GeoLocalize"
+msgstr "GeoLocalize"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_product_images
+msgid "Get product pictures using barcode"
+msgstr "Ottieni immagini prodotto usando il codice a barre"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__id
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__alias_domain_id
+msgid ""
+"If you have setup a catch-all email domain redirected to the Odoo server, "
+"enter the domain name here."
+msgstr ""
+"Se si è configurato un dominio email catch-all reindirizzato al server Odoo, "
+"inserire qui il nome del dominio."
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__use_twilio_rtc_servers
+msgid "If you want to use twilio as TURN/STUN server provider"
+msgstr "Se si vuole usare Twilio come fornitore di server TURN/STUN"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__number_of_digits_to_match_from_end
+#: model:ir.model.fields,help:base_phone.field_res_company__number_of_digits_to_match_from_end
+#: model:ir.model.fields,help:base_phone.field_res_config_settings__number_of_digits_to_match_from_end
+msgid ""
+"In several situations, Odoo will have to find a Partner/Lead/Employee/... "
+"from a phone number presented by the calling party. As the phone numbers "
+"presented by your phone operator may not always be displayed in a standard "
+"format, the best method to find the related Partner/Lead/Employee/... in "
+"Odoo is to try to match the end of the phone number in Odoo with the N last "
+"digits of the phone number presented by the calling party. N is the value "
+"you should enter in this field."
+msgstr ""
+"In diverse situazioni, Odoo dovrà cercare un partner/contatto/dipendente... "
+"da un numero di telefono presentato dal soggetto chiamante. Poiché il numero "
+"di telefono presentato dal vostro operatore telefonico potrebbe non essere "
+"visualizzato in formato standard, il miglior modo per trovare il partner/"
+"contatto/dipendente/... relativo in Odoo è di cercare la corrispondenza tra "
+"la fine del numero di telefono in Odoo con gli ultimi N numeri del numero di "
+"telefono presentato dal soggetto chiamante. N è il numero da inserire in "
+"questo campo."
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.res_config_settings_view_form
+msgid "Incoming calls"
+msgstr "Chiamate in arrivo"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__is_root_company
+msgid "Is Root Company"
+msgstr "È azienda radice"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_auth_ldap
+msgid "LDAP Authentication"
+msgstr "Autenticazione LDAP"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__write_uid
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__write_date
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_account_inter_company_rules
+msgid "Manage Inter Company"
+msgstr "Gestione inter company"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__google_translate_api_key
+msgid "Message Translation API Key"
+msgstr "Chiave API traduzione messaggio"
+
+#. module: base_phone
+#. odoo-python
+#: code:addons/base_phone/wizard/number_not_found.py:0
+msgid "Missing country on company %s"
+msgstr "Nazione mancante nell'azienda %s"
+
+#. module: base_phone
+#: model:ir.model.fields.selection,name:base_phone.selection__number_not_found__number_type__mobile
+msgid "Mobile"
+msgstr "Cellulare"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__group_multi_currency
+msgid "Multi-Currencies"
+msgstr "Multi valute"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+msgid "Number Not Found"
+msgstr "Numero non trovato"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+msgid "Number converted to international format:"
+msgstr "Numero convertito in formato internazinale:"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.esm.js:0
+msgid "Number dialed: %s"
+msgstr "Numero chiamato: %s"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_number_not_found
+msgid "Number not found"
+msgstr "Numero non trovato"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__active_user_count
+msgid "Number of Active Users"
+msgstr "Numero di utenti attivi"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__company_count
+msgid "Number of Companies"
+msgstr "Numero di aziende"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__number_of_digits_to_match_from_end
+#: model:ir.model.fields,field_description:base_phone.field_res_config_settings__number_of_digits_to_match_from_end
+msgid "Number of Digits"
+msgstr "Numero di cifre"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_res_company__number_of_digits_to_match_from_end
+msgid "Number of Digits To Match From End"
+msgstr "Numero di cifre corrispondenti dalla fine"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__language_count
+msgid "Number of Languages"
+msgstr "Numero di lingue"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_partner_autocomplete
+msgid "Partner Autocomplete"
+msgstr "Auto completa partner"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_number_not_found__to_update_partner_id
+msgid "Partner on which the phone number will be written"
+msgstr "Partner in cui verrà scritto il numero"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_number_not_found__to_update_partner_id
+msgid "Partner to Update"
+msgstr "Partner da aggiornare"
+
+#. module: base_phone
+#. odoo-python
+#: code:addons/base_phone/wizard/number_not_found.py:0
+msgid "Partner: %s"
+msgstr "Partner: %s"
+
+#. module: base_phone
+#: model:res.groups,name:base_phone.group_callerid
+msgid "Phone CallerID"
+msgstr "ID chamata telefonica"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_phone_validation_mixin
+msgid "Phone Validation Mixin"
+msgstr "Mixin validazione telefono"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_number_not_found__calling_number
+msgid ""
+"Phone number of calling party that has been obtained from the telephony "
+"server, in the format used by the telephony server (not E.164)."
+msgstr ""
+"Numero di telefono del soggetto chiamante ottenuto dal server telefonico, "
+"nel formato usato dal server telefonico (non E.164)."
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__phonenumbers_not_reformatted
+msgid "Phone numbers that couldn't be reformatted"
+msgstr "Numeri telefonici che non possono essere riformattati"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.reformat_all_phonenumbers_form
+msgid "Phone numbers that couldn't be reformatted:"
+msgstr "Numeri telefonici che non possono essere riformattati:"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__profiling_enabled_until
+msgid "Profiling enabled until"
+msgstr "Profilazione abilitata fino"
+
+#. module: base_phone
+#: model:ir.actions.act_window,name:base_phone.reformat_all_phonenumbers_action
+#: model:ir.ui.menu,name:base_phone.reformat_all_phonenumbers_menu
+msgid "Reformat Phone Numbers"
+msgstr "Riformatta numeri telefonici"
+
+#. module: base_phone
+#: model:ir.model,name:base_phone.model_reformat_all_phonenumbers
+#: model_terms:ir.ui.view,arch_db:base_phone.reformat_all_phonenumbers_form
+msgid "Reformat all phone numbers"
+msgstr "Riformatta tutti i numeri telefonici"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__restrict_template_rendering
+msgid "Restrict Template Rendering"
+msgstr "Rendering modello ristretto"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__sfu_server_url
+msgid "SFU Server URL"
+msgstr "URL server SFU"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__sfu_server_key
+msgid "SFU Server key"
+msgstr "Chiave server SFU"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_sms
+msgid "SMS"
+msgstr "SMA"
+
+#. module: base_phone
+#. odoo-python
+#: code:addons/base_phone/wizard/number_not_found.py:0
+msgid "Select the Partner to Update."
+msgstr "Selezionare il partner da aggiornare."
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.res_config_settings_view_form
+msgid ""
+"Set how many digits must be identical from the end of the phone number to "
+"declare it as a match with a partner, a lead, an employee, a candidate, etc."
+msgstr ""
+"Impostare quanti numeri devono essere identici dalla fine del numero di "
+"telefono per affermare la corrispondenza con un partner, un contatto, un "
+"dipendente, un candidato, ecc."
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__show_effect
+msgid "Show Effect"
+msgstr "Visualizza effetto"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__state
+msgid "State"
+msgstr "Stato"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_google_gmail
+msgid "Support Gmail Authentication"
+msgstr "Autenticazione supporto Gmail"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_microsoft_outlook
+msgid "Support Outlook Authentication"
+msgstr "Supporto autenticazione Outlook"
+
+#. module: base_phone
+#: model:ir.ui.menu,name:base_phone.menu_config_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:base_phone.view_users_form
+msgid "Telephony"
+msgstr "Telefonia"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.view_users_form
+msgid "Telephony Preferences"
+msgstr "Preferenze telefonia"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__auth_signup_template_user_id
+msgid "Template user for new users created through signup"
+msgstr "Utente modello per nuovi utenti creati attraverso l'iscrizione"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_api_key
+msgid "Tenor API key"
+msgstr "Chiave API Tenor"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_gif_limit
+msgid "Tenor Gif Limit"
+msgstr "Limite GIF Tenor"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_content_filter
+msgid "Tenor content filter"
+msgstr "Filtro contenuto Tenor"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__company_country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"Il codice ISO nazione in due caratteri. \n"
+"Si può utilizzare per ricerche rapide."
+
+#. module: base_phone
+#: model:ir.model.constraint,message:base_phone.constraint_res_company_number_of_digits_to_match_from_end_positive
+msgid ""
+"The value of the field 'Number of Digits To Match From End' must be positive."
+msgstr ""
+"Il valore del campo 'Numero di cifre corrispondenti dalla fine' deve essere "
+"positivo."
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.reformat_all_phonenumbers_form
+msgid ""
+"This wizard reformats the phone and mobile numbers of all partners in "
+"standard international format e.g. +33 1 41 98 12 42"
+msgstr ""
+"Questa procedura guidata riformatta i numeri cellulari e fissi di tutti i "
+"partner con il formato internazionale standard es. +33 1 41 98 12 42"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__twilio_account_token
+msgid "Twilio Account Auth Token"
+msgstr "Token autorizzazione account Twillo"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__twilio_account_sid
+msgid "Twilio Account SID"
+msgstr "SID account Twillo"
+
+#. module: base_phone
+#. odoo-javascript
+#: code:addons/base_phone/static/src/components/on_dial_button/on_dial_button.esm.js:0
+msgid "Unhook your ringing phone"
+msgstr "Rispondere al telefono che suona"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_web_unsplash
+msgid "Unsplash Image Library"
+msgstr "Libreria immagine Unsplash"
+
+#. module: base_phone
+#: model_terms:ir.ui.view,arch_db:base_phone.number_not_found_form
+msgid "Update Existing Partner"
+msgstr "Aggiorna partner esistente"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__external_email_server_default
+msgid "Use Custom Email Servers"
+msgstr "Utilizza server e-mail personalizzati"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__use_twilio_rtc_servers
+msgid "Use Twilio ICE servers"
+msgstr "Utilizza server ICE Twillo"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_auth_oauth
+msgid "Use external authentication providers (OAuth)"
+msgstr "Usa fornitore autenticazione esterno (OAuth)"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__restrict_template_rendering
+msgid ""
+"Users will still be able to render templates.\n"
+"However only Mail Template Editors will be able to create new dynamic "
+"templates or modify existing ones."
+msgstr ""
+"Gli utenti potranno comunque creare modelli.\n"
+"Tuttavia, solo gli editor di modelli di posta potranno creare nuovi modelli "
+"dinamici o modificare quelli esistenti."
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_voip
+msgid "VoIP"
+msgstr "VOIP"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__web_app_name
+msgid "Web App Name"
+msgstr "Nome app web"
+
+#. module: base_phone
+#: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__tenor_content_filter
+msgid "https://developers.google.com/tenor/guides/content-filtering"
+msgstr "https://developers.google.com/tenor/guides/content-filtering"
+
+#. module: base_phone
+#: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_google_recaptcha
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+#~ msgid "<span class=\"o_form_label\">Incoming calls</span>"
+#~ msgstr "<span class=\"o_form_label\">Chiamate in arrivo</span>"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"

@@ -1,0 +1,72 @@
+# Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
+# Copyright 2020 Akretion (http://www.akretion.com)
+# Copyright 2020 BCIM
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
+{
+    "name": "Shopfloor",
+    "summary": "manage warehouse operations with barcode scanners",
+    "version": "18.0.0.13.1",
+    "development_status": "Beta",
+    "category": "Inventory",
+    "website": "https://github.com/OCA/stock-logistics-shopfloor",
+    "author": "Camptocamp, BCIM, Akretion, Odoo Community Association (OCA)",
+    "maintainers": ["jbaudoux", "simahawk", "sebalix", "mmequignon", "TDu"],
+    "license": "AGPL-3",
+    "application": True,
+    "depends": [
+        "shopfloor_base",
+        "stock",
+        "stock_picking_batch",
+        "jsonifier",
+        "base_rest",
+        "base_sparse_field",
+        #  OCA / stock-logistics-warehouse
+        "stock_location_is_sublocation",
+        "stock_picking_completion_info",
+        #  OCA / stock-logistics-workflow
+        "stock_move_line_change_lot",
+        "stock_picking_progress",
+        #  OCA / stock-logistics-tracking
+        "stock_quant_package_dimension",
+        "stock_quant_package_product_packaging",
+        #  OCA / product-attribute
+        # TODO: used for manuf info on prod detail.
+        # This must be an optional dep
+        "product_manufacturer",
+        # TODO: used for prod lot expire detail info.
+        # This must be an optional dep
+        "product_expiry",
+        # TODO: used for package.package_type_id detail info.
+        # This must be an optional dep
+        "stock_storage_type",
+        # TODO: used for picking.carrier_id detail info
+        # and to validate packaging/carrier in checkout scenario
+        # This must be an optional dep
+        "delivery",
+        #  OCA / product-attribute
+        "product_packaging_level",
+        #  OCA / delivery
+        "stock_picking_delivery_link",
+        # TODO v18: new dependency due to ``available_carriers`` that needs a SO.
+        # see picking_form.py
+        "sale_stock",
+        # OCA/stock-logistics-workflow
+        "stock_move_line_qty_picked",
+    ],
+    "data": [
+        "data/shopfloor_scenario_data.xml",
+        "security/groups.xml",
+        "views/shopfloor_menu.xml",
+        "views/stock_picking_type.xml",
+        "views/stock_location.xml",
+        "views/stock_move_line.xml",
+    ],
+    "demo": [
+        "demo/stock_picking_type_demo.xml",
+        "demo/shopfloor_profile_demo.xml",
+        "demo/shopfloor_menu_demo.xml",
+        "demo/shopfloor_app_demo.xml",
+    ],
+    "installable": True,
+}

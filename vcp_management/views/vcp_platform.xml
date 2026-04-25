@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.actions.act_window" id="vcp_platform_2_repository_act_window">
+        <field name="name">Repositories</field>
+        <field name="res_model">vcp.repository</field>
+        <field name="path">vcp-platform-to-repository</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'default_platform_id': active_id}</field>
+        <field name="domain">[("platform_id", "=", active_id)]</field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_platform_form_view">
+        <field name="model">vcp.platform</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="update_information"
+                        type="object"
+                        string="Update Information"
+                        class="oe_highlight"
+                    />
+                </header>
+                <sheet>
+                    <div name="button_box">
+                        <button
+                            class="oe_stat_button"
+                            icon="fa-folder"
+                            type="action"
+                            name="%(vcp_platform_2_repository_act_window)d"
+                        >
+                            <field
+                                name="repository_count"
+                                string="Repositories"
+                                widget="statinfo"
+                            />
+                        </button>
+                    </div>
+                    <field
+                        name="image_1920"
+                        widget='image'
+                        class="oe_avatar"
+                        options='{"preview_image": "image_128"}'
+                    />
+                    <group>
+                        <field name="name" />
+                        <field name="host_id" />
+                        <field name="short_description" />
+                        <field name="description" />
+                        <field name="update_interval_days" />
+                        <field name="fetch_repository_fork" />
+                        <field name="fetch_repository_archived" />
+                        <field name="fetch_repository_branch_pattern" />
+                        <field
+                            name="scheduled_information_update"
+                            widget="boolean_toggle"
+                        />
+                        <field
+                            name="default_repository_scheduled_information_update"
+                            widget="boolean_toggle"
+                        />
+                        <field
+                            name="default_repository_scheduled_branch_update"
+                            widget="boolean_toggle"
+                        />
+                        <field name="rule_ids" widget="many2many_tags" />
+                    </group>
+                    <notebook>
+                        <page string="Branches" name="branch">
+                            <field name="branch_ids">
+                                <list editable="bottom">
+                                    <field name="name" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="API Keys" name="keys" groups="base.group_system">
+                            <field name="key_ids">
+                                <list editable="bottom">
+                                    <field name="name" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_platform_search_view">
+        <field name="model">vcp.platform</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="description" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_platform_tree_view">
+        <field name="model">vcp.platform</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="repository_count" optional="show" />
+                <field
+                    name="scheduled_information_update"
+                    widget="boolean_toggle"
+                    optional="hide"
+                />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_platform_act_window">
+        <field name="name">Platforms</field>
+        <field name="path">vcp-platform</field>
+        <field name="res_model">vcp.platform</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

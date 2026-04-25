@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_sale_payment_mode" inherit_id="sale.report_saleorder_document">
+        <xpath
+            expr="//p[@t-if='not is_html_empty(doc.payment_term_id.note)']"
+            position="after"
+        >
+            <p
+                t-if="not is_html_empty(doc.payment_method_line_id.report_description)"
+                id="payment_method_line_desc"
+            >
+                <strong>Payment Mode:</strong>
+                <span
+                    t-field="doc.payment_method_line_id.report_description"
+                >Here are the instructions for your payment</span>
+            </p>
+        </xpath>
+    </template>
+</odoo>

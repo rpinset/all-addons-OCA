@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopfloor_menu_form_view" model="ir.ui.view">
+        <field name="name">shopfloor menu form</field>
+        <field name="model">shopfloor.menu</field>
+        <field name="inherit_id" ref="shopfloor_base.shopfloor_menu_form_view" />
+        <field name="arch" type="xml">
+            <group name="options" position="after">
+                <group
+                    name="batch_create"
+                    string="Batch Creation"
+                    invisible="scenario_key != 'cluster_picking'"
+                >
+                    <field name="batch_create" />
+                    <field
+                        name="batch_group_by_commercial_partner"
+                        invisible="not batch_create"
+                    />
+                    <field
+                        name="batch_maximum_number_of_preparation_lines"
+                        invisible="not batch_create"
+                    />
+                    <field
+                        name="batch_split_picking_exceeding_limit"
+                        invisible="not batch_create"
+                    />
+
+                    <label
+                        for="stock_device_type_ids"
+                        colspan="2"
+                        invisible="not batch_create"
+                    />
+                    <field
+                        name="stock_device_type_ids"
+                        nolabel="1"
+                        colspan="2"
+                        invisible="not batch_create"
+                    >
+                        <list>
+                            <field name="name" />
+                        </list>
+                    </field>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>

@@ -32,7 +32,13 @@ function evaluateHasCreatePermission(attrs) {
 }
 
 function evaluateFieldBooleanOption(option) {
-    return typeof option === "boolean" ? option : evaluateBooleanExpr(option);
+    if (typeof option === "boolean") {
+        return option;
+    }
+    if (typeof option === "string") {
+        return evaluateBooleanExpr(option);
+    }
+    return true;
 }
 
 patch(many2OneField, {

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_user_form_view">
+        <field name="model">vcp.user</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="external_id" />
+                        <field name="host_id" />
+                        <field name="partner_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_user_search_view">
+        <field name="model">vcp.user</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="external_id" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_user_tree_view">
+        <field name="model">vcp.user</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="external_id" />
+                <field name="host_id" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_user_act_window">
+        <field name="name">Users</field>
+        <field name="path">vcp-user</field>
+        <field name="res_model">vcp.user</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

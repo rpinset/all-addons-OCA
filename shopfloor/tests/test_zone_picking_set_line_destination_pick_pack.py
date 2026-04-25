@@ -1,0 +1,220 @@
+# Copyright 2021 Camptocamp SA (http://www.camptocamp.com)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+from odoo_test_helper import FakeModelLoader
+
+from .test_zone_picking_base import ZonePickingCommonCase
+
+
+# pylint: disable=missing-return
+class ZonePickingSetLineDestinationPickPackCase(ZonePickingCommonCase):
+    """Tests set_line_destination when `pick_pack_same_time` is one
+
+    * /set_destination
+
+    """
+
+    def setUp(self):
+        super().setUp()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
+
+        from .models import DeliveryCarrierTest, StockPackageType
+
+        self.loader.update_registry((DeliveryCarrierTest, StockPackageType))
+
+        self.service.work.current_picking_type = self.picking1.picking_type_id
+        self.menu.sudo().pick_pack_same_time = True
+
+        self.carrier = self.env["delivery.carrier"].search([], limit=1)
+        package_type_type = (
+            self.env["stock.package.type"]
+            .sudo()
+            .create({"name": "TEST DEFAULT", "package_carrier_type": "test"})
+        )
+        self.carrier.sudo().write(
+            {
+                "delivery_type": "test",
+                "integration_level": "rate",  # avoid sending emails
+                "test_default_package_type_id": package_type_type.id,
+            }
+        )
+
+    def tearDown(self):
+        self.loader.restore_registry()
+        super().tearDown()
+
+    def test_set_destination_location_no_carrier(self):
+        """Scan location but carrier not set on picking"""
+        zone_location = self.zone_location
+        picking_type = self.picking1.picking_type_id
+        move_line = self.picking1.move_line_ids
+        move_line.location_dest_id = self.shelf1
+        quantity_reserved = move_line.quantity
+        previous_qty_picked = move_line.qty_picked
+        # Confirm the destination with the right destination
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "move_line_id": move_line.id,
+                "barcode": self.packing_location.barcode,
+                "quantity": quantity_reserved,
+            },
+        )
+        self.assertEqual(move_line.qty_picked, previous_qty_picked)
+        self.assert_response_set_line_destination(
+            response,
+            zone_location,
+            picking_type,
+            move_line,
+            message=self.service.msg_store.picking_without_carrier_cannot_pack(
+                move_line.picking_id
+            ),
+            qty_done=quantity_reserved,
+        )
+
+    def test_set_destination_location_ok_carrier(self):
+        """When carried is set goods are packed into new delivery package."""
+        existing_packages = self.env["stock.quant.package"].search([])
+        zone_location = self.zone_location
+        picking_type = self.picking1.picking_type_id
+        move_line = self.picking1.move_line_ids
+        move_line.location_dest_id = self.shelf1
+        move_line.picking_id.carrier_id = self.carrier
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "move_line_id": move_line.id,
+                "barcode": self.packing_location.barcode,
+                "quantity": move_line.quantity,
+                "confirmation": self.packing_location.barcode,
+            },
+        )
+        # Check response
+        move_lines = self.service._find_location_move_lines()
+        move_lines = move_lines.sorted(lambda x: x.move_id.priority, reverse=True)
+        delivery_pkg = move_line.result_package_id
+        self.assertNotIn(delivery_pkg, existing_packages)
+        self.assertEqual(
+            delivery_pkg.package_type_id, self.carrier.test_default_package_type_id
+        )
+        message = self.msg_store.confirm_pack_moved()
+        message["body"] += "\n" + self.msg_store.goods_packed_in(delivery_pkg)["body"]
+        self.assert_response_select_line(
+            response,
+            zone_location,
+            picking_type,
+            move_lines,
+            message=message,
+        )
+
+    def test_set_destination_package_full_qty_no_carrier(self):
+        """Scan destination package, no carrier on picking."""
+        zone_location = self.zone_location
+        picking_type = self.picking1.picking_type_id
+        moves_before = self.picking1.move_ids
+        self.assertEqual(len(moves_before), 1)
+        self.assertEqual(len(moves_before.move_line_ids), 1)
+        move_line = moves_before.move_line_ids
+        quantity_reserved = move_line.quantity
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "move_line_id": move_line.id,
+                "barcode": self.free_package.name,
+                "quantity": quantity_reserved,
+            },
+        )
+        self.assert_response_set_line_destination(
+            response,
+            zone_location,
+            picking_type,
+            move_line,
+            message=self.service.msg_store.picking_without_carrier_cannot_pack(
+                move_line.picking_id
+            ),
+            qty_done=quantity_reserved,
+        )
+
+    def test_set_destination_package_full_qty_ok_carrier_bad_package(self):
+        """Scan destination package, carrier on picking, package invalid."""
+        zone_location = self.zone_location
+        picking_type = self.picking1.picking_type_id
+        moves_before = self.picking1.move_ids
+        self.assertEqual(len(moves_before), 1)
+        self.assertEqual(len(moves_before.move_line_ids), 1)
+        move_line = moves_before.move_line_ids
+        move_line.picking_id.carrier_id = self.carrier
+        quantity_reserved = move_line.quantity
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "move_line_id": move_line.id,
+                "barcode": self.free_package.name,
+                "quantity": quantity_reserved,
+            },
+        )
+        self.assert_response_set_line_destination(
+            response,
+            zone_location,
+            picking_type,
+            move_line,
+            message=self.service.msg_store.package_type_invalid_for_carrier(
+                self.free_package.product_packaging_id, self.carrier
+            ),
+            qty_done=quantity_reserved,
+        )
+
+    def test_set_destination_package_full_qty_ok_carrier_ok_package(self):
+        """Scan destination package, carrier on picking, package valid."""
+        zone_location = self.zone_location
+        picking_type = self.picking1.picking_type_id
+        moves_before = self.picking1.move_ids
+        self.assertEqual(len(moves_before), 1)
+        self.assertEqual(len(moves_before.move_line_ids), 1)
+        move_line = moves_before.move_line_ids
+        move_line.picking_id.carrier_id = self.carrier
+        packaging = (
+            self.env["product.packaging"]
+            .sudo()
+            .create(
+                {
+                    "name": "TEST DEFAULT",
+                    "package_type_id": self.carrier.test_default_package_type_id.id,
+                    "product_id": self.free_product.id,
+                }
+            )
+        )
+
+        self.free_package.product_packaging_id = packaging
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "move_line_id": move_line.id,
+                "barcode": self.free_package.name,
+                "quantity": move_line.quantity,
+            },
+        )
+        # Check picking data
+        moves_after = self.picking1.move_ids
+        self.assertEqual(moves_before, moves_after)
+        self.assertRecordValues(
+            move_line,
+            [
+                {
+                    "result_package_id": self.free_package.id,
+                    "quantity": 10,
+                    "qty_picked": 10,
+                    "shopfloor_user_id": self.env.user.id,
+                },
+            ],
+        )
+        # Check response
+        move_lines = self.service._find_location_move_lines()
+        move_lines = move_lines.sorted(lambda x: x.move_id.priority, reverse=True)
+        self.assert_response_select_line(
+            response,
+            zone_location,
+            picking_type,
+            move_lines,
+            message=self.service.msg_store.confirm_pack_moved(),
+        )

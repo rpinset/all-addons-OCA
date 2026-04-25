@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record id="vcp_github_host_type" model="vcp.host.type">
+        <field name="name">GitHub</field>
+        <field name="code">github</field>
+        <field name="code_kind">git</field>
+    </record>
+    <record id="vcp_github_host" model="vcp.host">
+        <field name="name">GitHub</field>
+        <field name="type_id" ref="vcp_github_host_type" />
+    </record>
+</odoo>

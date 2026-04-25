@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_sale_ubl_output_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-07-17 14:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
+msgid "EUR"
+msgstr "EUR"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qweb_tmpl_ubl_party
+msgid "Moderna Produkter AB"
+msgstr "Moderna Produkter AB"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
+msgid "SO1234"
+msgstr "SO1234"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
+msgid "XYZ123"
+msgstr "XYZ123"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
+msgid "urn:www.cenbii.eu:profile:BIIXYZ:ver1.0"
+msgstr "urn:www.cenbii.eu:profile:BIIXYZ:ver1.0"
+
+#. module: edi_sale_ubl_output_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
+msgid "urn:www.cenbii.eu:transaction:biicoretrdmXYZ:ver1.0"
+msgstr "urn:www.cenbii.eu:transaction:biicoretrdmXYZ:ver1.0"
+
+#~ msgid "1.0"
+#~ msgstr "1.0"
+
+#~ msgid "12:30:00"
+#~ msgstr "12:30:00"
+
+#~ msgid "2.2"
+#~ msgstr "2.2"
+
+#~ msgid "2010-01-21"
+#~ msgstr "2010-01-21"
+
+#~ msgid "2010-02-10"
+#~ msgstr "2010-02-10"
+
+#~ msgid "2010-02-25"
+#~ msgstr "2010-02-25"
+
+#~ msgid "7300070011115"
+#~ msgstr "7300070011115"
+
+#~ msgid "7302347231111"
+#~ msgstr "7302347231111"

@@ -1,0 +1,20 @@
+<odoo>
+    <template id="pay_details" inherit_id="crowdfunding.pay_details">
+        <div class="mb-3" position="after">
+            <div class="mb-3">
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="public"
+                        name="public"
+                    />
+                    <label
+                        class="form-label form-check-label"
+                        for="public"
+                    >Publish my pledge on the website</label>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

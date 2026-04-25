@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2022 ACSONE SA/NV
+     Copyright 2025 Camptocamp SA
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="stock_storage_category_form" model="ir.ui.view">
+        <field name="name">stock.storage.category.form (in stock_storage_type)</field>
+        <field name="model">stock.storage.category</field>
+        <field name="inherit_id" ref="stock.stock_storage_category_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='max_weight']//parent::div" position="after">
+                <label for="max_height" />
+                <div class="o_row">
+                    <field name="max_height" class="oe_inline" />
+                    <field name="length_uom_id" class="oe_inline" />
+                </div>
+            </xpath>
+            <notebook position="inside">
+                <page name="advanced" string="Advanced">
+                    <group
+                        string="Allow New Product Rules"
+                        name="allow_new_product_rules"
+                    >
+                        <field name="allow_new_product_ids" nolabel="1" colspan="2">
+                            <list editable="bottom">
+                                <field name="sequence" widget="handle" />
+                                <field name="allow_new_product" />
+                                <field
+                                    name="condition_ids"
+                                    widget="many2many_tags"
+                                    options="{'no_quick_create': True}"
+                                />
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

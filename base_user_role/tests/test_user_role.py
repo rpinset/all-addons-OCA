@@ -58,7 +58,7 @@ class TestUserRoleCommon(BaseCommon):
         # Setup for multi-company testing
         cls.multicompany_user_1 = cls.user_model.create(
             {
-                "name": "User 2",
+                "name": "multicompany_user_1",
                 "company_id": cls.company1.id,
                 "company_ids": [(6, 0, [cls.company1.id, cls.company2.id])],
                 "groups_id": [(6, 0, cls.env.ref("base.group_erp_manager").ids)],
@@ -67,7 +67,7 @@ class TestUserRoleCommon(BaseCommon):
         )
         cls.multicompany_user_2 = cls.user_model.create(
             {
-                "name": "User 2",
+                "name": "multicompany_user_2",
                 "company_id": cls.company2.id,
                 "company_ids": [(6, 0, [cls.company2.id])],
                 "groups_id": [(6, 0, cls.env.ref("base.group_user").ids)],

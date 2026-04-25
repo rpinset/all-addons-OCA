@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_picking_release_form" model="ir.ui.view">
+        <field name="name">stock.picking.release.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <button name="action_confirm" position="after">
+                <button
+                    name="release_available_to_promise"
+                    invisible="not release_ready"
+                    string="Release"
+                    type="object"
+                    class="oe_highlight"
+                    groups="stock.group_stock_user"
+                />
+            </button>
+            <div name="button_box" position="inside">
+                <button
+                    type="object"
+                    name="action_open_move_need_release"
+                    invisible="not need_release"
+                    class="oe_stat_button"
+                    icon="fa-cubes"
+                >
+                    <div class="o_field_widget o_stat_info mr4">
+                        <span class="o_stat_text">Release:</span>
+                        <span class="o_stat_text">Ready:</span>
+                    </div>
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="need_release_count" />
+                        </span>
+                        <span class="o_stat_value">
+                            <field name="release_ready_count" />
+                        </span>
+                    </div>
+                </button>
+            </div>
+            <field name="picked" position="after">
+                <field name="unrelease_allowed" column_invisible="1" />
+                <button
+                    name="unrelease"
+                    invisible="not unrelease_allowed"
+                    string="Unrelease"
+                    type="object"
+                    icon="fa-cube"
+                    groups="stock.group_stock_user"
+                />
+            </field>
+            <field name="date_done" position="before">
+                <field name="last_release_date" />
+            </field>
+            <field name="move_type" position="before">
+                <field name="release_policy" invisible="not need_release" />
+            </field>
+        </field>
+    </record>
+    <record id="view_picking_release_tree" model="ir.ui.view">
+        <field name="name">stock.picking.release.tree</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" eval="False" />
+        <field name="arch" type="xml">
+            <list
+                string="Picking list"
+                multi_edit="1"
+                sample="1"
+                js_class="stock_list_view"
+            >
+                <field name="name" decoration-bf="1" />
+                <field
+                    name="location_id"
+                    options="{'no_create': True}"
+                    string="From"
+                    groups="stock.group_stock_multi_locations"
+                    optional="hide"
+                    readonly="state == 'done'"
+                />
+                <field
+                    name="location_dest_id"
+                    options="{'no_create': True}"
+                    string="To"
+                    groups="stock.group_stock_multi_locations"
+                    optional="hide"
+                    readonly="state == 'done'"
+                />
+                <field
+                    name="partner_id"
+                    optional="show"
+                    readonly="state in ['cancel', 'done']"
+                />
+                <field name="priority" widget="priority" nolabel="1" />
+                <field name="date_priority" />
+                <field name="need_release" column_invisible="1" />
+                <field name="release_ready" />
+                <field
+                    name="scheduled_date"
+                    optional="hide"
+                    widget="remaining_days"
+                    invisible="state in ('done', 'cancel')"
+                    readonly="state in ['cancel', 'done']"
+                />
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    optional="hide"
+                />
+                <field
+                    name="state"
+                    optional="show"
+                    widget="badge"
+                    decoration-danger="state=='cancel'"
+                    decoration-info="state== 'assigned'"
+                    decoration-muted="state == 'draft'"
+                    decoration-success="state == 'done'"
+                    decoration-warning="state not in ('draft','cancel','done','assigned')"
+                />
+                <field name="release_ready_count" />
+                <button
+                    name="action_open_move_need_release"
+                    string="View Move Allocations"
+                    title="View Move Allocations"
+                    icon="fa-cubes"
+                    type="object"
+                    invisible="not need_release"
+                />
+                <field
+                    name="activity_exception_decoration"
+                    widget="activity_exception"
+                />
+            </list>
+        </field>
+    </record>
+    <record id="view_picking_release_search" model="ir.ui.view">
+        <field name="name">stock.picking.release.search</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_internal_search" />
+        <field name="arch" type="xml">
+            <filter name="late" position="before">
+                <filter
+                    string="Release Ready"
+                    name="release_ready"
+                    domain="[('release_ready', '=', True)]"
+                />
+                <separator />
+            </filter>
+            <filter name="late" position="attributes">
+                <attribute
+                    name="domain"
+                >[('scheduled_date','&lt;', time.strftime('%%Y-%%m-%%d %%H:%%M:%%S')), ('state', 'in', ('assigned', 'waiting', 'confirmed')), ('need_release', '=', False)]</attribute>
+            </filter>
+            <filter name="waiting" position="attributes">
+                <attribute name="domain">
+                    [('state', 'in', ('confirmed', 'waiting')), ('need_release', '=', False)]
+                </attribute>
+            </filter>
+        </field>
+    </record>
+    <record id="stock_picking_release_action" model="ir.actions.act_window">
+        <field name="name">Transfers Allocations</field>
+        <field name="res_model">stock.picking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search" />
+        <field
+            name="view_ids"
+            eval="[(5, 0, 0),
+                     (0, 0, {'view_mode': 'list', 'view_id': ref('view_picking_release_tree')}),
+                     (0, 0, {'view_mode': 'kanban', 'view_id': ref('stock.stock_picking_kanban')}),
+                     (0, 0, {'view_mode': 'form', 'view_id': ref('stock.view_picking_form')}),
+                     ]"
+        />
+        <field
+            name="context"
+        >{'search_default_release_ready': 1, 'search_default_groupby_picking_id': 1}</field>
+        <field name="domain">[('need_release', '=' , True)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No transfers to release.
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="stock_picking_release_action"
+        id="stock_picking_release_menu"
+        parent="stock.menu_stock_transfers"
+        sequence="50"
+        groups="stock.group_stock_manager,stock.group_stock_user"
+    />
+</odoo>

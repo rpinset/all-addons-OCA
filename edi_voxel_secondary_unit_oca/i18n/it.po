@@ -1,0 +1,87 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_voxel_secondary_unit_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-06-04 09:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__cajas
+msgid "Boxes"
+msgstr "Scatole"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__contenedores
+msgid "Containers"
+msgstr "Contenitori"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__horas
+msgid "Hours"
+msgstr "Ore"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__kgs
+msgid "Kgs"
+msgstr "Kg"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__lbs
+msgid "Lbs"
+msgstr "Lb"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__lts
+msgid "Liters"
+msgstr "Litri"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__metros
+msgid "Meters"
+msgstr "Metri"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__otros
+msgid "Others"
+msgstr "Altre"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__bultos
+msgid "Packages"
+msgstr "Colli"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__palets
+msgid "Pallets"
+msgstr "Pallet"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model,name:edi_voxel_secondary_unit_oca.model_product_secondary_unit
+msgid "Product Secondary Unit"
+msgstr "Unità di misura secondaria del prodotto"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__metroscuadrados
+msgid "Square meters"
+msgstr "Metri quadri"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields.selection,name:edi_voxel_secondary_unit_oca.selection__product_secondary_unit__voxel_code__unidades
+msgid "Units"
+msgstr "Unità"
+
+#. module: edi_voxel_secondary_unit_oca
+#: model:ir.model.fields,field_description:edi_voxel_secondary_unit_oca.field_product_secondary_unit__voxel_code
+msgid "Voxel Code"
+msgstr "Codice Voxel"

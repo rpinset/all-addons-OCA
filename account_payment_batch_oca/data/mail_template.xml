@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright 2025 Akretion France (https://www.akretion.com/)
+  @author: Alexis de Lattre <alexis.delattre@akretion.com>
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo noupdate="0">
+    <record id="payment_order_mail_notif" model="mail.template">
+        <field name="name">Payment/Debit Order: mail notification</field>
+        <field
+            name="model_id"
+            ref="account_payment_batch_oca.model_account_payment_order"
+        />
+        <field name="lang">{{ ctx['partner_lang'] }}</field>
+        <field
+            name="email_from"
+        >{{ object.company_id.email_formatted or user.email_formatted }}</field>
+        <field name="partner_to">{{ ctx['partner_to'] }}</field>
+        <field name="auto_delete" eval="True" />
+        <field
+            name="subject"
+        >{{object.payment_type == "inbound" and 'Debit' or 'Payment'}} notification of {{ object.company_id.name }}</field>
+        <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px;">
+                <h2 style="text-align: center;">
+            <t t-if="object.payment_type == 'inbound'">Debit</t><t
+                    t-if="object.payment_type == 'outbound'"
+                >Payment</t> notification
+        </h2>
+
+                <p><t
+                    t-out="object.company_id.name"
+                >My Company</t> has sent instructions to its bank to execute a <t
+                    t-if="object.payment_type == 'inbound'"
+                >debit order</t><t
+                    t-if="object.payment_type == 'outbound'"
+                >payment order</t> which includes the <t
+                    t-if="object.payment_type == 'inbound'"
+                >debit(s)</t><t
+                    t-if="object.payment_type == 'outbound'"
+                >payment(s)</t> below for <strong>
+                    <t t-out="ctx['partner_display_name']">Azur Interior</t>
+                </strong>.</p>
+                <table
+                    style="border-spacing: 0; border-collapse: collapse; width: 100%; text-align: center;"
+                >
+                    <tr>
+                        <th style="padding: 5px; border: 2px solid black;">
+                            <t t-if="object.payment_type == 'inbound'">Debit Date</t>
+                            <t t-if="object.payment_type == 'outbound'">Payment Date</t>
+                        </th>
+                        <th style="padding: 5px; border: 2px solid black;">Label</th>
+                        <th style="padding: 5px; border: 2px solid black;">Amount</th>
+                        <th
+                            style="padding: 5px; border: 2px solid black;"
+                            t-if="ctx['detail_col']"
+                        >Details</th>
+                        <th style="padding: 5px; border: 2px solid black;">
+                            <t
+                                t-if="object.payment_type == 'inbound'"
+                            >Debited Bank Account</t>
+                            <t
+                                t-if="object.payment_type == 'outbound'"
+                            >Destination Bank Account</t>
+                        </th>
+                    </tr>
+                    <t t-foreach="ctx['payments']" t-as="payment">
+                        <tr>
+                            <td
+                                style="padding: 5px; border: 2px solid black; text-align: center;"
+                            >
+                                <t t-out="payment['date']">02/07/2025</t>
+                            </td>
+                            <td
+                                style="padding: 5px; border: 2px solid black; text-align: left;"
+                            >
+                                <t t-out="payment['payment_ref']">F250012-F250042</t>
+                            </td>
+                            <td
+                                style="padding: 5px; border: 2px solid black; text-align: right;"
+                            >
+                                <t t-out="payment['amount']">2 546,56 €</t>
+                            </td>
+                            <td
+                                style="padding: 5px; border: 2px solid black;"
+                                t-if="ctx['detail_col']"
+                            >
+                                <table
+                                    t-if="payment['lines']"
+                                    style="border-spacing: 0; border-collapse: collapse; width: 100%;"
+                                >
+                                    <t t-foreach="payment['lines']" t-as="line">
+                                        <tr>
+                                            <td
+                                                style="padding: 2px; border: 1px solid grey; text-align: left;"
+                                            >
+                                                <t
+                                                    t-out="line['communication']"
+                                                >F250012</t>
+                                            </td>
+                                            <td
+                                                style="padding: 2px; border: 1px solid grey; text-align: right;"
+                                            >
+                                                <t t-out="line['amount']">1 400,36 €</t>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </table>
+                            </td>
+                            <td style="padding: 5px; border: 2px solid black;">
+                                <t
+                                    t-out="payment['bank_account_number_scrambled']"
+                                >FR66 **** **** **** **** ***2 121</t>
+                            </td>
+                        </tr>
+                    </t>
+                </table>
+            </div>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,1 @@
+l10n_bg_stock_sale_line_description module for Bulgarian localization in Odoo.

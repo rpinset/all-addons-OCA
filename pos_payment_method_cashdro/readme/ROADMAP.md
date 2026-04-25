@@ -1,0 +1,2 @@
+- Integrate cash control (money inputs / outputs).
+- This module should be evaluated during the migration to 19.0, since Odoo has integrated similar functionality into the core (pos_cashdro addon). It may no longer be necessary to maintain this module separately, and deprecation or consolidation should be considered. https://github.com/odoo/odoo/tree/19.0/addons/pos_cashdro

@@ -1,0 +1,30 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_helpdesk_mgmt_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: agreement_helpdesk_mgmt_sale
+#: model:ir.model.fields,field_description:agreement_helpdesk_mgmt_sale.field_helpdesk_ticket__agreement_id
+msgid "Agreement"
+msgstr ""
+
+#. module: agreement_helpdesk_mgmt_sale
+#: model:ir.model,name:agreement_helpdesk_mgmt_sale.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr ""
+
+#. module: agreement_helpdesk_mgmt_sale
+#. odoo-python
+#: code:addons/agreement_helpdesk_mgmt_sale/models/helpdesk_ticket.py:0
+msgid "Ticket '%s' cannot have multiple different agreements."
+msgstr ""

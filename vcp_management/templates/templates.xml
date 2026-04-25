@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- We add this view to avoid glue modules -->
+    <template id="vcp_partner_detail">
+        <div class="row mt-4 o_contributors_data">
+            <div class="col-6 col-md-2 mb-3 o_contributors_merged_requests">
+                <h5>Merged Requests</h5>
+                <span class="h3" t-esc="partner.vcp_merged_requests" />
+            </div>
+            <div class="col-6 col-md-2 mb-3 o_contributors_created_requests">
+                <h5>Created Requests</h5>
+                <span class="h3" t-esc="partner.vcp_created_requests" />
+            </div>
+            <div class="col-6 col-md-2 mb-3 o_contributors_comments">
+                <h5>Comments</h5>
+                <span class="h3" t-esc="partner.vcp_comments" />
+            </div>
+            <div class="col-6 col-md-2 mb-3 o_contributors_reviews">
+                <h5>Reviews</h5>
+                <span class="h3" t-esc="partner.vcp_reviews" />
+            </div>
+        </div>
+    </template>
+</odoo>

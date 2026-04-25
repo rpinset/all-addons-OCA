@@ -1,0 +1,31 @@
+<odoo>
+    <template id="portal_invoice_page" inherit_id="account.portal_invoice_page">
+        <div t-if="invoice.crowdfunding_challenge_id" position="inside">
+            <form
+                class="crowdfunding_public_pledge_portal_invoice_form"
+                t-if="invoice.payment_state == 'paid'"
+                t-attf-data-flag-route="/my/invoices/{{invoice.id}}/crowdfunding/public"
+            >
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="crowdfunding_public_pledge_flag"
+                        t-att-checked="'checked' if invoice.crowdfunding_public else None"
+                    />
+                    <label
+                        class="form-check-label"
+                        for="crowdfunding_public_pledge_flag"
+                    >Publish my pledge on the website</label>
+                </div>
+                <a
+                    id="crowdfunding_public_pledge_link"
+                    t-attf-href="{{invoice.crowdfunding_challenge_id.website_url}}/pledge/{{invoice.partner_id.commercial_partner_id.id}}"
+                    t-att-style="'display: none' if not invoice.crowdfunding_public else None"
+                >
+                        My pledge
+                    </a>
+            </form>
+        </div>
+    </template>
+</odoo>

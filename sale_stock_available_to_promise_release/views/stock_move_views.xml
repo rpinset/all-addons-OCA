@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_move_release_tree" model="ir.ui.view">
+        <field name="name">Stock Moves Release</field>
+        <field name="model">stock.move</field>
+        <field
+            name="inherit_id"
+            ref="stock_available_to_promise_release.view_move_release_tree"
+        />
+        <field name="arch" type="xml">
+            <field name="product_uom_qty" position="after">
+                <field name="weight" optional="show" sum="Weight" />
+            </field>
+            <field name="reference" position="after">
+                <field name="carrier_id" string="Delivery Method" />
+            </field>
+            <field name="date" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+    <record id="view_move_release_form" model="ir.ui.view">
+        <field name="name">stock.move.release.form</field>
+        <field name="model">stock.move</field>
+        <field
+            name="inherit_id"
+            ref="stock_available_to_promise_release.view_move_release_form"
+        />
+        <field name="arch" type="xml">
+            <field name="date" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <xpath expr="//div[hasclass('o_td_label')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_move_release_search" model="ir.ui.view">
+        <field name="name">stock.move.release.search</field>
+        <field name="model">stock.move</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="stock.view_move_search" />
+        <field eval="900" name="priority" />
+        <field name="arch" type="xml">
+            <filter name="outgoing" position="after">
+                <separator />
+                <filter
+                    string="Late Shipment"
+                    name="late"
+                    domain="[('date_deadline', '&lt;=', (context_today() + relativedelta(days=-1)).strftime('%Y-%m-%d'))]"
+                />
+                <filter
+                    string="Today Shipment"
+                    name="today"
+                    domain="['&amp;', ('date_deadline', '&gt;', (context_today() + relativedelta(days=-1)).strftime('%Y-%m-%d')),
+                    ('date_deadline', '&lt;', (context_today() + relativedelta(days=1)).strftime('%Y-%m-%d'))]"
+                />
+                <filter
+                    string="Further Shipment"
+                    name="further"
+                    domain="[('date_deadline', '&gt;=', (context_today() + relativedelta(days=1)).strftime('%Y-%m-%d'))]"
+                />
+            </filter>
+            <filter name="groupby_date" position="after">
+                <filter
+                    string="Delivery Date"
+                    name="groupby_date_deadline"
+                    domain="[]"
+                    context="{'group_by': 'date_deadline'}"
+                />
+            </filter>
+        </field>
+    </record>
+    <record
+        id="stock_available_to_promise_release.stock_move_release_action"
+        model="ir.actions.act_window"
+    >
+        <field name="search_view_id" ref="view_move_release_search" />
+        <field
+            name="view_ids"
+            eval="[(5, 0, 0),
+                     (0, 0, {'view_mode': 'list', 'view_id': ref('view_move_release_tree')}),
+                     (0, 0, {'view_mode': 'kanban', 'view_id': ref('stock.view_move_kandan')}),
+                     (0, 0, {'view_mode': 'form', 'view_id': ref('view_move_release_form')}),
+                     ]"
+        />
+    </record>
+</odoo>

@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mail_post_defer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-02-21 12:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mail_post_defer
+#. odoo-python
+#: code:addons/mail_post_defer/models/mail_thread.py:0
+msgid "Cannot modify message; notifications were already sent."
+msgstr ""
+"Non si può modificare il messaggio; le notifiche sono già state spedite."
+
+#. module: mail_post_defer
+#: model:ir.model,name:mail_post_defer.model_mail_thread
+msgid "Email Thread"
+msgstr "Discussione e-mail"
+
+#. module: mail_post_defer
+#: model:ir.model,name:mail_post_defer.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Procedura guidata creazione e-mail"
+
+#. module: mail_post_defer
+#: model:ir.model,name:mail_post_defer.model_mail_message
+msgid "Message"
+msgstr "Messaggio"
+
+#. module: mail_post_defer
+#. odoo-python
+#: code:addons/mail_post_defer/models/mail_thread.py:0
+msgid "Only messages type comment can have their content updated"
+msgstr "Solo per i commenti di tipo messaggio si può aggiornare il contenuto"
+
+#. module: mail_post_defer
+#: model:ir.model,name:mail_post_defer.model_mail_message_schedule
+msgid "Scheduled Messages"
+msgstr "Messaggi schedulati"

@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* repair_picking_after_done
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-12-27 11:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_res_config_settings__auto_transfer_repair
+msgid "Automatic Transfer on Repair Completion"
+msgstr "Trasferimento automatico a completamento riparazione"
+
+#. module: repair_picking_after_done
+#. odoo-python
+#: code:addons/repair_picking_after_done/models/repair.py:0
+#, python-format
+msgid ""
+"Automatic transfer cannot be completed because no product is specified for "
+"this repair order. Please ensure that a product is assigned to the repair "
+"order before proceeding with the transfer."
+msgstr ""
+"Il trasferimento automatico non può essere completato perché non è "
+"specificato alcun prodotto per questo ordine di riparazione. Assicurarsi che "
+"un prodotto sia assegnato all'ordine di riparazione prima di procedere con "
+"il trasferimento."
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.res_config_settings_view_form_inherit
+msgid ""
+"Automatically create and validate stock transfers for completed repair "
+"orders."
+msgstr ""
+"Crea e convalida automaticamente i trasferimenti di magazzino per gli ordini "
+"di riparazione completati."
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,help:repair_picking_after_done.field_res_config_settings__auto_transfer_repair
+msgid ""
+"Automatically create and validate transfers for repair orders upon "
+"completion."
+msgstr ""
+"Crea e convalida automaticamente i trasferimenti per gli ordini di "
+"riparazione al completamento."
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.view_repair_move_transfer_wizard
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: repair_picking_after_done
+#: model:ir.model,name:repair_picking_after_done.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.repair_type_form_inherit
+msgid "Create Transfer"
+msgstr "Crea trasferimento"
+
+#. module: repair_picking_after_done
+#: model:ir.model,name:repair_picking_after_done.model_repair_move_transfer
+msgid "Create an internal transfer from repaired moves"
+msgstr "Crea un trasferimento interno da movimenti di riparazione"
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.view_repair_move_transfer_wizard
+msgid "Create transfer"
+msgstr "Crea trasferimento"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__location_dest_id
+msgid "Destination location"
+msgstr "Ubicazione di destinazione"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__id
+msgid "ID"
+msgstr "ID"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__quantity
+msgid "Quantity to transfer"
+msgstr "Quantità da trasferire"
+
+#. module: repair_picking_after_done
+#. odoo-python
+#: code:addons/repair_picking_after_done/wizards/repair_move_transfer.py:0
+#, python-format
+msgid ""
+"Quantity to transfer cannot exceed the remaining quantity in the repair "
+"order."
+msgstr ""
+"La quantità da trasferire non può superare la quantità residua nell'ordine "
+"di riparazione."
+
+#. module: repair_picking_after_done
+#. odoo-python
+#: code:addons/repair_picking_after_done/wizards/repair_move_transfer.py:0
+#, python-format
+msgid "Quantity to transfer must be greater than 0."
+msgstr "La quantità da trasferire deve essere maggiore di 0."
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__remaining_quantity
+msgid "Remaining Quantity to Transfer"
+msgstr "Quantità residua da trasferire"
+
+#. module: repair_picking_after_done
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_order__remaining_quantity
+msgid "Remaining quantity to be transferred"
+msgstr "Quantità rimanente da trasferire"
+
+#. module: repair_picking_after_done
+#: model:ir.model,name:repair_picking_after_done.model_repair_order
+#: model:ir.model.fields,field_description:repair_picking_after_done.field_repair_move_transfer__repair_order_id
+msgid "Repair Order"
+msgstr "Ordine di riparazione"
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.view_repair_move_transfer_wizard
+msgid "Transfer Repaired Moves"
+msgstr "Movimenti trasferimenti di riparazione"
+
+#. module: repair_picking_after_done
+#: model_terms:ir.ui.view,arch_db:repair_picking_after_done.view_repair_move_transfer_wizard
+msgid "or"
+msgstr "o"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "<span class=\"o_stat_text\">Transfers</span>"
+#~ msgstr "<span class=\"o_stat_text\">Trasferimenti</span>"
+
+#, python-format
+#~ msgid "Transfers"
+#~ msgstr "Trasferimenti"

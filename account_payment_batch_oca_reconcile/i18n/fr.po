@@ -1,0 +1,68 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_batch_oca_reconcile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-22 15:39+0000\n"
+"PO-Revision-Date: 2025-08-22 15:39+0000\n"
+"Last-Translator: Alexis de Lattre <alexis.delattre@akretion.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_payment_batch_oca_reconcile
+#: model:ir.model,name:account_payment_batch_oca_reconcile.model_account_payment_lot
+msgid "Account Payment Lot"
+msgstr "Lots de paiement"
+
+#. module: account_payment_batch_oca_reconcile
+#: model:ir.model.fields,field_description:account_payment_batch_oca_reconcile.field_account_bank_statement_line__add_payment_lot_id
+msgid "Add Payment Lot"
+msgstr "Ajouter un lot de paiement"
+
+#. module: account_payment_batch_oca_reconcile
+#: model:ir.model,name:account_payment_batch_oca_reconcile.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Ligne de relevé de compte"
+
+#. module: account_payment_batch_oca_reconcile
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_reconcile.account_payment_lot_reconcile_list
+msgid "Date"
+msgstr "Date"
+
+#. module: account_payment_batch_oca_reconcile
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_reconcile.bank_statement_line_form_reconcile_view
+msgid "Debit Lots"
+msgstr "Lots de prélèvement"
+
+#. module: account_payment_batch_oca_reconcile
+#: model:ir.model.fields,field_description:account_payment_batch_oca_reconcile.field_account_payment_lot__is_matched
+msgid "Is Matched"
+msgstr "Est rapproché"
+
+#. module: account_payment_batch_oca_reconcile
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_reconcile.bank_statement_line_form_reconcile_view
+msgid "Payment Lots"
+msgstr "Lots de paiement"
+
+#. module: account_payment_batch_oca_reconcile
+#. odoo-python
+#: code:addons/account_payment_batch_oca_reconcile/models/account_payment_lot.py:0
+msgid ""
+"The selected payment lot %s is made of payments that are already reconciled "
+"or don't have a journal entry and are not linked to invoices."
+msgstr ""
+"Le lot de paiement sélectionné %s est composé de paiements qui sont déjà "
+"rapprochés ou qui n'ont pas de pièce comptable et qui ne sont pas liés à des "
+"factures."
+
+#. module: account_payment_batch_oca_reconcile
+#: model_terms:ir.ui.view,arch_db:account_payment_batch_oca_reconcile.account_payment_lot_reconcile_list
+msgid "View"
+msgstr "Visualiser"

@@ -1,0 +1,819 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_blanket_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 14:30+0000\n"
+"PO-Revision-Date: 2026-01-11 17:43+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Freccia\"/>"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
+"specifici per azienda.\" groups=\"base.group_multi_company\"/>"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "A blanket order cannot have a blanket order."
+msgstr "Un ordine quadro non può avere un ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
+#, python-format
+msgid "A call off order should have at least one product."
+msgstr "Un ordine a chiamata deve avere almeno un prodotto."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "A call-off order must have a blanket order."
+msgstr "Un ordine a chiamata deve avere un ordine quadro."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_product_product__allow_blanket_order_overlap
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_product_template__allow_blanket_order_overlap
+msgid "Allow Blanket Order Overlap"
+msgstr "Consente sovrapposizione ordini quadro"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "An order cannot have a blanket order."
+msgstr "Un ordine non può avere un ordine quadro."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__blanket_reservation_strategy__at_call_off
+msgid "At Call-off"
+msgstr "Alla chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_eol_strategy
+msgid "Blanket Eol Strategy"
+msgstr "Strategia EOL ordine aperto"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_order_id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_order_id
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__order_type__blanket
+msgid "Blanket Order"
+msgstr "Ordine quadro"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_order_id_domain
+msgid "Blanket Order Domain"
+msgstr "Dominio ordine quadro"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_line_id
+msgid "Blanket Order Line"
+msgstr "Riga ordine quadro"
+
+#. module: sale_order_blanket_order
+#: model:ir.actions.act_window,name:sale_order_blanket_order.action_blankets
+#: model:ir.ui.menu,name:sale_order_blanket_order.blanket_order_menu
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_search_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
+msgid "Blanket Orders"
+msgstr "Ordini quadro"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.product_template_form_view
+msgid "Blanket orders"
+msgstr "Ordini quadro"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_search_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
+msgid "Call Off Orders"
+msgstr "Ordini a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_stock_move__call_off_sale_line_id
+msgid "Call Off Sale Line"
+msgstr "Riga vendita a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__order_type__call_off
+msgid "Call-off Order"
+msgstr "Ordine a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__call_off_order_count
+msgid "Call-off Order Count"
+msgstr "Conteggio ordini a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__call_off_line_ids
+msgid "Call-off Order Lines"
+msgstr "Righe ordine a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.actions.act_window,name:sale_order_blanket_order.action_calloffs
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__call_off_order_ids
+#: model:ir.ui.menu,name:sale_order_blanket_order.calloff_order_menu
+msgid "Call-off Orders"
+msgstr "Ordini a chiamata"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_form_view
+msgid "Call-off lines"
+msgstr "Righe chiamata"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "Call-offs"
+msgstr "A chiamata"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.view_create_call_off_wizard_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__create_call_off_from_so_if_possible
+msgid "Create Call Off From So If Possible"
+msgstr "Crea chiamata da OV se possibile"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_company__create_call_off_from_so_if_possible
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_res_config_settings__create_call_off_from_so_if_possible
+msgid "Create Call-Off from SO if possible"
+msgstr "Crea chiavata da OV se possibile"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.view_create_call_off_wizard_form
+msgid "Create Call-off Order"
+msgstr "Crea ordine a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.actions.act_window,name:sale_order_blanket_order.action_create_call_off_wizard
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.view_create_call_off_wizard_form
+msgid "Create Call-off Sale Order"
+msgstr "Crea ordine di vendita a chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_sale_order_deliver_remaining_wizard
+msgid "Create Call-off Sale Order for remaining products"
+msgstr "Crea un ordine di vendita a chiamata per i prodotti residui"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "Create call-off sale order for products still to be delivered"
+msgstr ""
+"Crea un ordine di vendita a chiamata per i prodotti ancora da consegnare"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__create_uid
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__create_date
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
+msgid "Current Blanket Orders"
+msgstr "Ordini quadro attuali"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__blanket_eol_strategy__deliver
+msgid "Deliver Remaining Quantity"
+msgstr "Consegna quantità residua"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "Deliver remaining"
+msgstr "Consegna residuo"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__display_name
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: sale_order_blanket_order
+#: model:ir.actions.server,name:sale_order_blanket_order.ir_cron_sale_order_blanket_order_finalizer_ir_actions_server
+#: model:ir.cron,cron_name:sale_order_blanket_order.ir_cron_sale_order_blanket_order_finalizer
+msgid "Finalize expired sale blanket orders"
+msgstr "Finalizza ordini quadro vendita scaduti"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "From"
+msgstr "Dal"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
+msgid ""
+"Generate a call-off order from a sales order if possible when the sales "
+"order is confirmed."
+msgstr ""
+"Se possibile genera un ordine a chiamata da un ordine di vendita quando "
+"l'ordine di vendita è confermato."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__id
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_res_company__create_call_off_from_so_if_possible
+#: model:ir.model.fields,help:sale_order_blanket_order.field_res_config_settings__create_call_off_from_so_if_possible
+msgid ""
+"If checked, when a sales order is confirmed and some lines refer to a "
+"blanket order, these lines will be automatically moved to a new call-off "
+"order."
+msgstr ""
+"Se selezionata, quando un ordine di vendita viene confermato e alcune righe "
+"fanno riferimento a un ordine quadro, queste righe verranno automaticamente "
+"spostate in un nuovo ordine a chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_product_product__allow_blanket_order_overlap
+#: model:ir.model.fields,help:sale_order_blanket_order.field_product_template__allow_blanket_order_overlap
+msgid ""
+"If enabled, blanket orders for this product can have overlapping "
+"validityperiods. By default, overlap is not allowed, ensuring only one "
+"active blanket order applies at a time."
+msgstr ""
+"Se abilitata, la validità degli ordini quadro per questo prodotto può essere "
+"sovrapposta. Per impostazione predefinita, la sovrapposizione non è "
+"consentita, garantendo che venga applicato un solo ordine quadro attivo alla "
+"volta."
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.res_config_settings_form_view
+msgid ""
+"If this option is enabled, a call-off order will be generated from a sale "
+"order if the sale order contains products\n"
+"                            that are part of an open blanket order. The call-"
+"off order will be generated with the same products and quantities as the\n"
+"                            sale order provided that the blanket order has "
+"enough available quantity. If the blanket order does not have enough "
+"available\n"
+"                            quantity, the call-off order will be generated "
+"with the available quantity and the original sale order line will be\n"
+"                            split into two lines: one line with the "
+"available quantity and one line with the remaining quantity. All the lines "
+"related to\n"
+"                            a blanket order will be moved to a new call-off "
+"order and the new call-off order will be confirmed."
+msgstr ""
+"Se questa opzione è abilitata, verrà generato un ordine a chiamata da un "
+"ordine di vendita se quest'ultimo contiene\n"
+"                            prodotti che fanno parte di un ordine quadro "
+"aperto. L'ordine a chiamata verrà generato con gli stessi prodotti e "
+"quantità dell'ordine di vendita, \n"
+"                            a condizione che l'ordine quadro disponga di una "
+"quantità disponibile sufficiente. Se l'ordine quadro non dispone di una "
+"quantità disponibile \n"
+"                            sufficiente, l'ordine a chiamata verrà generato "
+"con la quantità disponibile e la riga dell'ordine di vendita originale verrà "
+"suddivisa in due righe:\n"
+"                            una con la quantità disponibile e una con la "
+"quantità rimanente. Tutte le righe relative a un ordine quadro verranno "
+"spostate in un nuovo \n"
+"                            ordine a chiamata e il nuovo ordine a chiamata "
+"verrà confermato."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_need_to_be_finalized
+msgid ""
+"Indicates if the blanket order needs to be finalized. This field is a "
+"technical field used to manage the end-of-life of the blanket orders. To "
+"avoid costly operations to determine if the blanket order needs to be "
+"finalized once the validity period is reached, the system will set this "
+"field to True when a blanket order is confirmed. To know if a blanket order "
+"needs to be finalized, the system will search for the blanket orders with "
+"this field set to True and the validity period reached.Once the blanket "
+"order is finalized, the system will set this field to False. In this way, "
+"the DB will always contain less records to search with this field set to "
+"True."
+msgstr ""
+"Indica se l'ordine quadro deve essere finalizzato. Questo campo è un campo "
+"tecnico utilizzato per gestire la fine del ciclo di vita degli ordini "
+"quadro. Per evitare costose operazioni per determinare se l'ordine quadro "
+"deve essere finalizzato una volta raggiunto il periodo di validità, il "
+"sistema imposterà questo campo su Vero quando un ordine quadro viene "
+"confermato. Per sapere se un ordine quadro deve essere finalizzato, il "
+"sistema cercherà gli ordini quadro con questo campo impostato su Vero e il "
+"periodo di validità raggiunto. Una volta finalizzato l'ordine quadro, il "
+"sistema imposterà questo campo su Falso. In questo modo, il database "
+"conterrà sempre meno record da ricercare con questo campo impostato su Vero."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__is_blanket_eol_strategy_editable
+msgid ""
+"Indicates if the end-of-life strategy can be edited. By default, the end-of-"
+"life strategy can be edited while the blanket order is not finalized."
+msgstr ""
+"Indica se la strategia di fine vita può essere modificata. Per impostazione "
+"predefinita, la strategia di fine vita può essere modificata finché l'ordine "
+"quadro non è ancora finalizzato."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__is_blanket_reservation_strategy_editable
+msgid "Indicates if the reservation strategy can be edited."
+msgstr "Indica se la strategia di prenotazione può essere modificata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__is_blanket_eol_strategy_editable
+msgid "Is Blanket Eol Strategy Editable"
+msgstr "La strategia EOL ordine aperto può essere modificata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__is_blanket_reservation_strategy_editable
+msgid "Is Blanket Reservation Strategy Editable"
+msgstr "La strategia di prenotazione dell'ordine aperto può essere modificata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard____last_update
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__write_uid
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__write_date
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_need_to_be_finalized
+msgid "Need to be Finalized"
+msgstr "Deve essere finalizzato"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_search_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
+msgid "Normal Orders"
+msgstr "Ordini normali"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "Only blanket orders can be confirmed as blanket orders."
+msgstr "Solo gli ordini quadro possono essere confermati come ordini quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "Only call-off orders can be confirmed as call-off orders."
+msgstr ""
+"Solo gli ordini a chiamata possono essere confermati come ordini a chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__order_id
+#: model:ir.model.fields.selection,name:sale_order_blanket_order.selection__sale_order__order_type__order
+msgid "Order"
+msgstr "Ordine"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__order_type
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__order_type
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_search_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_search_view
+msgid "Order Type"
+msgstr "Tipo ordine"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__product_packaging_id
+msgid "Packaging"
+msgstr "Imballaggio"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_line_form_view
+msgid "Picking moves"
+msgstr "Movimenti di prelievo"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_product_template
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__product_id
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard__wizard_line_ids
+msgid "Products to Deliver"
+msgstr "Prodotti da consegnare"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__call_off_remaining_qty
+msgid "Quantity remaining for Call-off"
+msgstr "Quantità residua per chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__qty_to_deliver
+msgid "Quantity to Deliver"
+msgstr "Quantità da consegnare"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__call_off_remaining_qty
+msgid "Remaining Quantity"
+msgstr "Quantità residua"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_sale_order_deliver_remaining_wizard_line
+msgid "Remaining product to deliver"
+msgstr "Prodotto residuo da consegnare"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_reservation_strategy
+msgid "Reservation Strategy"
+msgstr "Strategia di prenotazione"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__sale_order_line_id
+msgid "Sale Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__show_deliver_remaining
+msgid "Show Deliver Remaining"
+msgstr "Visualizza residuo consegna"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_eol_strategy
+msgid ""
+"Specifies the end-of-life strategy for the blanket order. At the end of the "
+"validity period, in any case if a reserved quantity remains, the system will "
+"release the reservation. If the strategy is 'Deliver Remaining Quantity', "
+"the system will automaticaly create a delivery order for the remaining "
+"quantity."
+msgstr ""
+"Specifica la strategia di fine vita per l'ordine quadro. Al termine del "
+"periodo di validità, in ogni caso, se rimane una quantità prenotata, il "
+"sistema la rilascerà. Se la strategia è \"Consegna quantità rimanente\", il "
+"sistema creerà automaticamente un ordine di consegna per la quantità "
+"rimanente."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__order_type
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__order_type
+msgid "Specifies the type of sale order: Order, Blanket, or Call-off."
+msgstr "Specifica il tipo di ordine di vendita: Ordine, Quadro o A chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_reservation_strategy
+msgid ""
+"Specifies when the stock should be reserved for the blanket order.  When the "
+"strategy is 'At Order Confirmation', the stock is reserved when the blanket "
+"order is confirmed. When the strategy is 'At Call-off', the stock is "
+"reserved when the call-off order is confirmed."
+msgstr ""
+"Specifica quando le scorte devono essere riservate per l'ordine quadro. "
+"Quando la strategia è \"Alla conferma dell'ordine\", le scorte vengono "
+"riservate al momento della conferma dell'ordine quadro. Quando la strategia "
+"è \"Alla richiesta\", le scorte vengono riservate al momento della conferma "
+"dell'ordine a chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_stock_move
+msgid "Stock Move"
+msgstr "Movimento di magazzino"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_move_ids
+msgid "Stock Moves on Blanket Order"
+msgstr "Movimenti di magazzino su ordine quadro"
+
+#. module: sale_order_blanket_order
+#: model:ir.model,name:sale_order_blanket_order.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regola di giacenza"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
+#, python-format
+msgid ""
+"The 'Quantity to Deliver' cannot be greater than the 'Remaining Quantity'."
+msgstr ""
+"La 'Quantità da consegnare' non può essere superiore della 'Quantità "
+"residua'."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/wizards/sale_order_deliver_remaining_wizard.py:0
+#, python-format
+msgid "The 'Quantity to Deliver' cannot be negative."
+msgstr "La 'Quantità da consegnare' non può essere negativa."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__blanket_line_id
+msgid "The blanket order line corresponding to this call-off order line."
+msgstr "La riga ordine quadro corrispondente a questa riga ordine a chiamata."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The blanket order must be confirmed before creating a call-off order."
+msgstr ""
+"L'ordine quadro deve essere confermato prima della creazione dell'ordine a "
+"chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_order_id
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__blanket_order_id
+msgid "The blanket order that this call-off order is related to."
+msgstr "L'ordine quadro relativo a questo ordine a chiamata."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__call_off_line_ids
+msgid "The call-off order lines linked to this blanket order line."
+msgstr "Le righe ordine a chiamata relative a questa riga ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid ""
+"The call-off order must be within the validity period of the blanket order."
+msgstr "L'ordine a chiamata deve essere entro la validità dell'ordine quadro."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__call_off_order_ids
+msgid "The call-off orders related to this blanket order."
+msgstr "Gli ordini a chiamata relativi a questo ordine quadro."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_order_id_domain
+msgid "The domain to search for the blanket order candidates."
+msgstr "Il dominio per cercare gli ordini quadro candidati."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_validity_end_date
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__blanket_validity_end_date
+msgid "The end date of the validity period for the blanket order."
+msgstr "La data fine del periodo di validità dell'ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The end-of-life strategy cannot be modified on order %(order)s."
+msgstr "La strategia di fine vita non può modificata nell'ordine %(order)s."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The forecasted quantity cannot be less than the quantity already called by "
+"call-off orders."
+msgstr ""
+"La quantità prevista non può essere inferiore alla quantità già richiamata "
+"dagli ordini a chiamata."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid ""
+"The line %(line)s has been created from order %(order)s. (Qty moved: "
+"%(qty_deliverable)s)"
+msgstr ""
+"La riga %(line)s è stata creata dall'ordine %(order)s. (Q.tà movimentata: "
+"%(qty_deliverable)s)"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The line %(line)s has been moved from order %(order)s."
+msgstr "La riga %(line)s è stata movimentata dall'ordine %(order)s."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The line %(line)s has been moved to a new call-off order %(call_off)s."
+msgstr ""
+"La riga %(line)s è stata movimentata nel nuovo ordine a chiamata "
+"%(call_off)s."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid ""
+"The line %(line)s has been partially moved to a new call-off order "
+"%(call_off)s. (Qty moved: %(qty_deliverable)s)"
+msgstr ""
+"La riga %(line)s è stata parzialmente movimentata nel nuovo ordine a "
+"chiamata %(call_off)s. (Q.tà movimentata: %(qty_deliverable)s)"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__call_off_order_count
+msgid "The number of call-off orders related to this blanket order."
+msgstr "Il numero di ordini a chiamata relativi a questo ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The price of a call-off order line must be 0.0. (Order: '%(order)s', "
+"Product: '%(product)s')"
+msgstr ""
+"Il prezzo di una riga ordine a chiamata deve essere 0,0. (Ordine: "
+"'%(order)s', prodotto: '%(product)s')"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The product '%(product_name)s' is already part of another blanket order "
+"%(order_name)s."
+msgstr ""
+"Il prodotto '%(product_name)s' è già parte di un altro ordine quadro "
+"%(order_name)s."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The product is not part of linked blanket order. (Product: '%(product)s', "
+"Order: '%(order)s', Blanket Order: '%(blanket_order)s')"
+msgstr ""
+"Il prodotto non è parte di un ordine quadro collegato. (Prodotto: "
+"'%(product)s', ordine: '%(order)s', ordine quadro: '%(blanket_order)s')"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__call_off_remaining_qty
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__call_off_remaining_qty
+msgid ""
+"The quantity remaining to consume by call-off orders in case of a blanket "
+"order. This quantity is the difference between the quantity not yet "
+"delivered or part of a pending delivery and the ordered quantity."
+msgstr ""
+"Quantità rimanente da consumare tramite ordini a chiamata in caso di ordine "
+"quadro. Questa quantità è la differenza tra la quantità non ancora "
+"consegnata o parte di una consegna in sospeso e la quantità ordinata."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"The quantity to procure is greater than the quantity remaining to deliver in "
+"the linked blanket order for this product. (Product: '%(product)s', Order: "
+"'%(order)s', Blanket Order: '%(blanket_order)s')"
+msgstr ""
+"La quantità da acquistare è maggiore della quantità rimanente da consegnare "
+"nell'ordine quadro collegato per questo prodotto. (Prodotto: '%(product)s', "
+"ordine: '%(order)s', ordine quadro: '%(blanket_order)s')"
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The reservation strategy cannot be modified on order %(order)s."
+msgstr ""
+"La strategia di prenotazione non può essere modificata per l'ordine "
+"%(order)s."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__blanket_validity_start_date
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order_line__blanket_validity_start_date
+msgid "The start date of the validity period for the blanket order."
+msgstr "Data di inizio del periodo di validità dell'ordine quadro."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The validity end date is required for a blanket order."
+msgstr "Per un ordine quadro è obbligatoria la data di fine validità."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#: code:addons/sale_order_blanket_order/models/sale_order_line.py:0
+#, python-format
+msgid "The validity end date must be greater than the validity start date."
+msgstr ""
+"La data di fine validità deve essere successiva alla data di inizio validità."
+
+#. module: sale_order_blanket_order
+#. odoo-python
+#: code:addons/sale_order_blanket_order/models/sale_order.py:0
+#, python-format
+msgid "The validity start date is required for a blanket order."
+msgstr "Per un ordine quadro è obbligatoria la data di inizio della validità."
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "To"
+msgstr "A"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "To Call-off"
+msgstr "A chiamata"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_validity_end_date
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_validity_end_date
+msgid "Validity End Date"
+msgstr "Data di fine validità"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order__blanket_validity_start_date
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_line__blanket_validity_start_date
+msgid "Validity Start Date"
+msgstr "Data inizio validità"
+
+#. module: sale_order_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_order_blanket_order.sale_order_form_view
+msgid "Validity period"
+msgstr "Periodo validità"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__create_call_off_from_so_if_possible
+msgid ""
+"When this option is enabled, the system will automatically create call-off "
+"orders when a sales order is confirmed and some lines refer to a blanket "
+"order."
+msgstr ""
+"Se questa opzione è abilitata, il sistema creerà automaticamente ordini a "
+"chiamata quando un ordine di vendita viene confermato e alcune righe fanno "
+"riferimento a un ordine quadro."
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,help:sale_order_blanket_order.field_sale_order__show_deliver_remaining
+msgid "Whether to show the 'deliver remaining' button or not"
+msgstr "Se visualizzare il pulsante 'Residuo consegna' o meno"
+
+#. module: sale_order_blanket_order
+#: model:ir.model.fields,field_description:sale_order_blanket_order.field_sale_order_deliver_remaining_wizard_line__wizard_id
+msgid "Wizard"
+msgstr "Procedura guidata"

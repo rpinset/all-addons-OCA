@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template
+        id="report_accepted_delivery_document"
+        inherit_id="stock.report_delivery_document"
+    >
+        <xpath expr="//t[@t-set='partner']" position="after">
+            <t t-if="l10n_bg_report_stock_accepted">
+                <t
+                    t-if="o.picking_type_id.code=='outgoing' and partner and partner != partner.commercial_partner_id"
+                >
+                    <t
+                        t-set="recipient"
+                        t-value="o.partner_id.commercial_partner_id or (o.move_ids and o.move_ids[0].partner_id.commercial_partner_id) or False"
+                    />
+                </t>
+                <t
+                    t-if="o.picking_type_id.code=='outgoing' and partner and partner == partner.commercial_partner_id"
+                >
+                    <t
+                        t-set="recipient"
+                        t-value="o.partner_id or (o.move_ids and o.move_ids[0].partner_id) or False"
+                    />
+                </t>
+                <t
+                    t-if="o.picking_type_id.code=='internal' and o.location_dest_id.warehouse_id.partner_id"
+                >
+                    <t
+                        t-set="recipient"
+                        t-value="o.location_dest_id.warehouse_id.partner_id"
+                    />
+                </t>
+                <t t-if="o.picking_type_id.code=='incoming' and partner">
+                    <t
+                        t-set="sender"
+                        t-value="o.partner_id or (o.move_ids and o.move_ids[0].partner_id) or False"
+                    />
+                </t>
+                <t
+                    t-if="o.picking_type_id.code=='incoming' and o.company_id.partner_id"
+                >
+                    <t t-set="recipient" t-value="o.company_id.partner_id" />
+                </t>
+                <t
+                    t-if="o.picking_type_id.code=='outgoing' and o.company_id.partner_id"
+                >
+                    <t t-set="sender" t-value="o.company_id.partner_id" />
+                </t>
+                <t
+                    t-if="o.picking_type_id.code=='internal' and o.picking_type_id.warehouse_id.partner_id"
+                >
+                    <t
+                        t-set="sender"
+                        t-value="o.picking_type_id.warehouse_id.partner_id"
+                    />
+                </t>
+                <t
+                    t-set="layout_is_sections"
+                    t-value="o.company_id.external_report_layout_id and (o.company_id.external_report_layout_id.key == 'l10n_bg_report_theme.external_layout_sections' or o.company_id.external_report_layout_id.xml_id == 'l10n_bg_report_theme.external_layout_sections')"
+                />
+                <t
+                    groups="l10n_bg_report_theme.group_control_address_swap"
+                    t-if="sender and recipient"
+                >
+                    <t t-if="not sender_vat_label">
+                        <t
+                            t-set="sender_vat_label"
+                            t-value="sender.country_id.vat_label"
+                        />
+                    </t>
+                    <t t-if="not sender_vat_label">
+                        <t t-set="sender_vat_label">TIN</t>
+                    </t>
+                    <t t-if="not recipient_vat_label">
+                        <t
+                            t-set="recipient_vat_label"
+                            t-value="recipient.country_id.vat_label"
+                        />
+                    </t>
+                    <t t-if="not recipient_vat_label">
+                        <t t-set="recipient_vat_label">TIN</t>
+                    </t>
+                    <t t-set="information_block">
+                        <div
+                            t-out="recipient"
+                            t-options="{'widget': 'contact', 'fields': ['address', 'name', 'phone', 'mobile'], 'no_marker': True, 'phone_icons': True}"
+                        />
+                        <p t-if="recipient.vat">
+                            <t t-esc="recipient_vat_label" />: <span
+                                t-field="recipient.vat"
+                            />
+                        </p>
+                    </t>
+                    <t t-set="address">
+                        <strong
+                            class="o_section_labels mt-2 d-block"
+                            t-if="sender"
+                        >From:</strong>
+                        <div
+                            t-if="sender"
+                            t-out="sender"
+                            t-options="{'widget': 'contact', 'fields': ['address', 'name', 'phone', 'mobile'], 'no_marker': True, 'phone_icons': True}"
+                        />
+                        <div
+                            name="company_vat_number"
+                            t-if="sender and sender.vat"
+                        >
+                            <span t-if="sender" t-esc="sender_vat_label" />:
+                            <span t-if="sender" t-field="sender.vat" />
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </xpath>
+        <xpath expr="//div[@name='signature']" position="after">
+            <t
+                t-if="l10n_bg_report_stock_accepted and not layout_is_sections and o.picking_type_id.code in ('incoming', 'outgoing', 'internal')"
+            >
+                <t t-call="l10n_bg_report_theme.signatures_section" />
+            </t>
+        </xpath>
+        <xpath expr="//th[@name='th_sml_product']" position="after">
+            <th
+                name="th_sml_sale_description"
+                t-if="o.sale_id"
+                groups="l10n_bg_report_theme.group_control_sale_description"
+            >
+                Sale Description
+            </th>
+        </xpath>
+    </template>
+    <template
+        id="stock_report_delivery_aggregated_move_lines"
+        inherit_id="stock.stock_report_delivery_aggregated_move_lines"
+    >
+        <xpath expr="//td[1]" position="after">
+            <t
+                t-set="sale_line"
+                t-value="aggregated_lines[line]['move'].sale_line_id"
+            />
+            <td
+                name="td_sale_description"
+                t-if="aggregated_lines[line]['move'].picking_id.sale_id"
+                groups="l10n_bg_report_theme.group_control_sale_description"
+            >
+                <span t-if="sale_line and sale_line.name" t-esc="sale_line.name" />
+            </td>
+        </xpath>
+    </template>
+    <template
+        id="stock_report_delivery_has_serial_move_line"
+        inherit_id="stock.stock_report_delivery_has_serial_move_line"
+    >
+        <xpath expr="//td[span[@t-field='move_line.product_id']]" position="after">
+            <td
+                name="move_line_sale_description"
+                t-if="move_line.move_id.picking_id.sale_id"
+                groups="l10n_bg_report_theme.group_control_sale_description"
+            >
+                <span
+                    t-if="move_line.move_id.sale_line_id and move_line.move_id.sale_line_id.name"
+                    t-esc="move_line.move_id.sale_line_id.name"
+                />
+            </td>
+        </xpath>
+    </template>
+
+    <template id="report_accepted_deliveryslip">
+        <t t-foreach="docs" t-as="o">
+            <t t-set="l10n_bg_report_stock_accepted" t-value="True" />
+            <t t-call="stock.report_delivery_document" t-lang="o._get_report_lang()" />
+        </t>
+    </template>
+</odoo>

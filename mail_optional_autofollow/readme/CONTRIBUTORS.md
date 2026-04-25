@@ -1,0 +1,4 @@
+- Adrien Peiffer adrien.peiffer@acsone.eu
+- Stéphane Bidoul stephane.bidoul@acsone.eu
+- [Heliconia Solutions Pvt. Ltd.](https://www.heliconia.io)
+  - Bhavesh Heliconia

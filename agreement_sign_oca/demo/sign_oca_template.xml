@@ -1,0 +1,21 @@
+<odoo>
+    <record id="sign_oca_template_agreement_legal_demo" model="sign.oca.template">
+        <field name="name">Agreement</field>
+        <field name="model_id" ref="agreement_legal.model_agreement" />
+        <field name="data" type="base64" file="sign_oca/tests/empty.pdf" />
+    </record>
+    <record id="sign_oca_template_agreement_demo_item_0" model="sign.oca.template.item">
+        <field
+            name="template_id"
+            ref="agreement_sign_oca.sign_oca_template_agreement_legal_demo"
+        />
+        <field name="field_id" ref="sign_oca.sign_field_name" />
+        <field name="role_id" ref="agreement_sign_oca.role_agreement_signer" />
+        <field name="page">1</field>
+        <field name="position_x">10</field>
+        <field name="position_y">10</field>
+        <field name="width">10</field>
+        <field name="height">10</field>
+        <field name="required" eval="True" />
+    </record>
+</odoo>

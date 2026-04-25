@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Stock Picking form view extended -->
+    <record model="ir.ui.view" id="view_stock_picking_form">
+        <field name="name">stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+                <field name="can_invoicexpress" invisible="1" />
+                <field name="can_invoicexpress_email" invisible="1" />
+                <field name="invoicexpress_doc_type" />
+                <field
+                    name="invoicexpress_transport_date"
+                    invisible="not can_invoicexpress"
+                />
+                <field name="license_plate" invisible="not can_invoicexpress" />
+                <field
+                    name="invoicexpress_send_email"
+                    invisible="not can_invoicexpress_email"
+                />
+            </field>
+            <xpath expr="//notebook//page[@name='note']" position="after">
+                <page
+                    name="invoicexpress"
+                    string="InvoiceXpress"
+                    invisible="not can_invoicexpress_email"
+                    groups="base.group_no_one"
+                >
+                    <group>
+                        <field name="invoicexpress_number" />
+                        <field name="invoicexpress_permalink" widget="url" />
+                        <field name="invoicexpress_id" groups="base.group_no_one" />
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//button[@name='do_print_picking']" position="before">
+                <button
+                    name="action_send_invoicexpress_delivery"
+                    string="InvoiceXpress Email"
+                    type="object"
+                    invisible="not can_invoicexpress_email or not invoicexpress_id"
+                />
+                <button
+                    name="action_create_invoicexpress_delivery"
+                    string="New Legal Document"
+                    type="object"
+                    invisible="not can_invoicexpress or state not in ('done')"
+                    confirm="Are you sure you want to recreate the InvoiceXpress document? This will replace the current document with a new one."
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

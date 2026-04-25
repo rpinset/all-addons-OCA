@@ -1,0 +1,112 @@
+# Build report — `18.0`
+
+Generated 2026-04-25 07:07 UTC
+
+## Skipped repos
+
+- account-consolidation
+- apps-store
+- business-requirement
+- cim
+- connector-accountedge
+- connector-cmis
+- connector-ecommerce
+- connector-infor
+- connector-jira
+- connector-lengow
+- connector-lims
+- connector-magento
+- connector-magento-php-extension
+- connector-odoo2odoo
+- connector-prestashop
+- connector-redmine
+- connector-sage
+- connector-salesforce
+- connector-spscommerce
+- connector-woocommerce
+- cooperative
+- department
+- dotnet
+- e-learning
+- edi-ediversa
+- l10n-argentina
+- l10n-austria
+- l10n-belarus
+- l10n-cambodia
+- l10n-canada
+- l10n-chile
+- l10n-china
+- l10n-costa-rica
+- l10n-croatia
+- l10n-estonia
+- l10n-ethiopia
+- l10n-greece
+- l10n-india
+- l10n-indonesia
+- l10n-ireland
+- l10n-luxemburg
+- l10n-macedonia
+- l10n-morocco
+- l10n-norway
+- l10n-paraguay
+- l10n-peru
+- l10n-poland
+- l10n-russia
+- l10n-slovenia
+- l10n-taiwan
+- l10n-turkey
+- l10n-ukraine
+- l10n-united-kingdom
+- l10n-uruguay
+- l10n-venezuela
+- l10n-vietnam
+- mirrors-flake8
+- mis-builder-contrib
+- oca-ci
+- oca-github-bot
+- oca-weblate-deployment
+- oca.recipe.odoo
+- odoo-sentinel
+- odoo-sphinx-autodoc
+- odoo-test-helper
+- odoorpc
+- openupgradelib
+- product-kitting
+- program
+- project-agile
+- project-reporting
+- pwa-builder
+- py3o.template
+- repo-maintainer
+- repo-maintainer-conf
+- resource
+- rest-api
+- role-policy
+- sale-financial
+- shoppingfeed
+- tier-validation
+- vertical-abbey
+- vertical-agriculture
+- vertical-community
+- vertical-construction
+- vertical-cooperative-supermarket
+- vertical-edition
+- vertical-education
+- vertical-hotel
+- vertical-isp
+- vertical-medical
+- vertical-ngo
+- vertical-realestate
+- vertical-rental
+- vertical-travel
+- wallet
+- webhook
+- webkit-tools
+- website-cms
+- website-themes
+- wms
+
+## Duplicate modules
+
+_None_
+

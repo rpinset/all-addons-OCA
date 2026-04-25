@@ -1,0 +1,325 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_measuring_device
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-10-02 18:43+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "Codice a barre letto"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Cancel Scan"
+msgstr "Annulla lettura"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__create_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__create_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__create_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__create_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__device_id
+msgid "Device"
+msgstr "Dispositivo"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__device_type
+msgid "Device Type"
+msgstr "Tipo dispositivo"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_product_packaging__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_stock_warehouse__display_name
+msgid "Display Name"
+msgstr "Nome Visualizzato"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Fullscreen"
+msgstr "Schermo intero"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__barcode
+msgid "GTIN"
+msgstr "GTIN"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__height
+msgid "Height (mm)"
+msgstr "Altezza (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_product_packaging__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_stock_warehouse__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__is_measured
+msgid "Is Measured"
+msgstr "È misurato"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__is_unit_line
+msgid "Is Unit Line"
+msgstr "È riga unità"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device____last_update
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard____last_update
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line____last_update
+#: model:ir.model.fields,field_description:stock_measuring_device.field_product_packaging____last_update
+#: model:ir.model.fields,field_description:stock_measuring_device.field_stock_warehouse____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__write_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__write_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__write_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__write_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_length
+msgid "Length (mm)"
+msgstr "Lunghezza (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__line_ids
+msgid "Line"
+msgstr "Riga"
+
+#. module: stock_measuring_device
+#: code:addons/stock_measuring_device/models/measuring_device.py:0
+#, python-format
+msgid "Measurement Wizard"
+msgstr "Procedura guidata misurazione"
+
+#. module: stock_measuring_device
+#: code:addons/stock_measuring_device/wizard/measuring_wizard_line.py:0
+#, python-format
+msgid "Measurement machine already in use."
+msgstr "Macchina di misurazione già in uso."
+
+#. module: stock_measuring_device
+#: model:ir.actions.act_window,name:stock_measuring_device.action_measuring_device_form
+#: model:ir.model.fields,field_description:stock_measuring_device.field_stock_warehouse__measuring_device_ids
+#: model:ir.ui.menu,name:stock_measuring_device.menu_measuring_device
+msgid "Measuring Devices"
+msgstr "Dispositivi misura"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_device
+msgid "Measuring and Weighing Device"
+msgstr "Dispositivo di misurazione e pesatura"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_product_packaging__measuring_device_id
+msgid "Measuring device which will scan the package"
+msgstr "Dispositivo di misura che leggerà il collo"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields.selection,name:stock_measuring_device.selection__measuring_device__state__not_ready
+msgid "Not Ready"
+msgstr "Non pronto"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__name
+msgid "Packaging"
+msgstr "Imballaggio"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_id
+msgid "Packaging (rel)"
+msgstr "Imballaggio (rel)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_type_id
+msgid "Packaging Type"
+msgstr "Tipo imballaggio"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__product_id
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_product_packaging
+msgid "Product Packaging"
+msgstr "Imballaggio prodotto"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__qty
+msgid "Quantity"
+msgstr "Quantità"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields.selection,name:stock_measuring_device.selection__measuring_device__state__ready
+msgid "Ready"
+msgstr "Pronto"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__required
+msgid "Required"
+msgstr "Obbligatorio"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Retrieve Product"
+msgstr "Recupera prodotto"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Save"
+msgstr "Salva"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Scan"
+msgstr "Leggi"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__scan_requested
+msgid "Scan Requested"
+msgstr "Scansione richiesta"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: stock_measuring_device
+#: code:addons/stock_measuring_device/models/product_packaging.py:0
+#, python-format
+msgid ""
+"Several packagings ({}) found to update by device {}. Will update the first:"
+" {}"
+msgstr ""
+"Diversi imballaggi ({}) sono stati trovati per l'aggiornamento dal "
+"dispositivo {}. Aggiornerà il primo: {}"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__state
+msgid "State"
+msgstr "Stato"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_product_packaging__measuring_device_id
+msgid ""
+"Technical field set when an operator uses the device to scan this package"
+msgstr ""
+"Campo tecnico impostato quando un operatore utilizza il dispositivo per "
+"scansionare questo collo"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_device_form
+msgid "Test Device"
+msgstr "Test dispositivo"
+
+#. module: stock_measuring_device
+#: model:ir.model.constraint,message:stock_measuring_device.constraint_measuring_device_name_uniq
+msgid "The name of the measuring/weighing device must be unique."
+msgstr "Il nome del dispositivo di misura/pesatura deve essere univoco."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_measuring_device__device_type
+msgid ""
+"The type of device (e.g. zippcube, cubiscan...) depending on which module "
+"are installed."
+msgstr ""
+"Il tipo di dispositivo (es. Zippcube, Cubiscan...) in funzione del modello "
+"installato."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_measuring_wizard___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "Valore dell'ultimo codice a barre letto."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__volume
+msgid "Volume (m³)"
+msgstr "Volume (m³)"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_stock_warehouse
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__warehouse_id
+msgid "Warehouse"
+msgstr "Magazzino"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__max_weight
+msgid "Weight (kg)"
+msgstr "Peso (kg)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__width
+msgid "Width (mm)"
+msgstr "Larghezza (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__wizard_id
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_device_form
+msgid "Wizard"
+msgstr "Procedura guidata"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_wizard
+msgid "measuring Wizard"
+msgstr "Procedura guidata misurazione"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_wizard_line
+msgid "measuring Wizard Line"
+msgstr "Riga procedura guidata misurazione"

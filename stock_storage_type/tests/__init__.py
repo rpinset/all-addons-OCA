@@ -1,0 +1,8 @@
+from . import (
+    test_package_height_required,
+    test_stock_location,
+    test_storage_type,
+    test_storage_type_move,
+    test_storage_type_putaway_strategy,
+    test_storage_category_allow_new_product,
+)

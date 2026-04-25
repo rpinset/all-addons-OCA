@@ -1,0 +1,15 @@
+<odoo>
+    <template id="portal_invoice_page" inherit_id="account.portal_invoice_page">
+        <div t-if="invoice.invoice_user_id" position="after">
+            <div t-if="invoice.crowdfunding_challenge_id" class="flex-grow-1">
+                <h6>
+                    <small class="text-muted">Crowdfunding</small>
+                </h6>
+                <a
+                    t-att-href="invoice.crowdfunding_challenge_id.website_url"
+                    t-out="invoice.crowdfunding_challenge_id.display_name"
+                />
+            </div>
+        </div>
+    </template>
+</odoo>

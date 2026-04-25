@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="stock_picking_form_view">
+        <field name="name">stock.picking.form - stock_picking_unreserve_button</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <button name="do_print_picking" position="before">
+                <button
+                    name="do_unreserve"
+                    string="Unreserve"
+                    groups="base.group_user"
+                    type="object"
+                    invisible="picking_type_code == 'incoming' or (state != 'assigned' and move_type != 'one') or (state not in ('assigned', 'confirmed') and move_type == 'one')"
+                />
+            </button>
+        </field>
+    </record>
+</odoo>

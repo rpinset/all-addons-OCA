@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+crud_crowdfunding_challenge,access_crowdfunding_challenge,crowdfunding.model_crowdfunding_challenge,group_manager,1,1,1,1
+access_crowdfunding_challenge,access_crowdfunding_challenge,crowdfunding.model_crowdfunding_challenge,group_user,1,0,0,0
+portal_crowdfunding_challenge,access_crowdfunding_challenge,crowdfunding.model_crowdfunding_challenge,base.group_portal,1,0,0,0
+public_crowdfunding_challenge,access_crowdfunding_challenge,crowdfunding.model_crowdfunding_challenge,base.group_public,1,0,0,0
+crud_crowdfunding_invoicing_wizard,access_crowdfunding_invoicing_wizard,model_crowdfunding_invoicing_wizard,group_user,1,1,1,1

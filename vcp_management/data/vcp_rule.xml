@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record model="vcp.rule" id="rule_python_information">
+        <field name="name">Python Information</field>
+        <field name="branch_pattern">.*</field>
+        <field name="active" eval="True" />
+        <field name="paths">*.py</field>
+        <field name="rule_type">cloc</field>
+    </record>
+    <record model="vcp.rule" id="rule_Javascript_information">
+        <field name="name">Javascript Information</field>
+        <field name="branch_pattern">.*</field>
+        <field name="active" eval="True" />
+        <field name="paths">*.js</field>
+        <field name="rule_type">cloc</field>
+    </record>
+</odoo>

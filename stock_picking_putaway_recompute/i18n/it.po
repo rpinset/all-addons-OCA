@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_picking_putaway_recompute
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-25 15:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model.fields,field_description:stock_picking_putaway_recompute.field_stock_picking_type__allow_to_recompute_putaways
+msgid "Allow To Recompute Putaways"
+msgstr "Consente ricalcolo inoltro"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model.fields,field_description:stock_picking_putaway_recompute.field_stock_move_line__can_recompute_putaways
+#: model:ir.model.fields,field_description:stock_picking_putaway_recompute.field_stock_picking__can_recompute_putaways
+msgid "Can Recompute Putaways"
+msgstr "Può ricalcolare l'inoltro"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model.fields,help:stock_picking_putaway_recompute.field_stock_picking_type__allow_to_recompute_putaways
+msgid ""
+"Check this if you want to authorize putaways recomputations for the "
+"operations of this type."
+msgstr ""
+"Selezionare questa opzione se si vuole autorizzare il ricalcolo inoltri per "
+"operazioni di questo tipo."
+
+#. module: stock_picking_putaway_recompute
+#: model_terms:ir.ui.view,arch_db:stock_picking_putaway_recompute.view_stock_move_line_detailed_operation_tree
+msgid ""
+"Click this if you want to recompute destination location for this operation"
+msgstr ""
+"Fare clic qui se sei vuole ricalcolare l'ubicazione di destinazione per "
+"questa operazione"
+
+#. module: stock_picking_putaway_recompute
+#: model_terms:ir.ui.view,arch_db:stock_picking_putaway_recompute.stock_picking_form_view
+msgid "Click this if you want to recompute destination locations"
+msgstr "Fare clic qui se si vuole ricalcolare le ubicazioni di destinazione"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model,name:stock_picking_putaway_recompute.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tipo prelievo"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model,name:stock_picking_putaway_recompute.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimenti prodotto (riga movimento di magazzino)"
+
+#. module: stock_picking_putaway_recompute
+#. odoo-python
+#: code:addons/stock_picking_putaway_recompute/models/stock_move_line.py:0
+msgid ""
+"Recomputation of putaway is not allowed if not all move lines with same "
+"destination package were selected."
+msgstr ""
+"Il ricalcolo dell'inoltro non è consentito se non sono selezionate righe di "
+"movimento con lo stesso collo di destinazione."
+
+#. module: stock_picking_putaway_recompute
+#: model_terms:ir.ui.view,arch_db:stock_picking_putaway_recompute.stock_picking_form_view
+#: model_terms:ir.ui.view,arch_db:stock_picking_putaway_recompute.view_stock_move_line_detailed_operation_tree
+msgid "Recompute Putaways"
+msgstr "Ricalcola inoltri"
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model.fields,help:stock_picking_putaway_recompute.field_stock_picking__can_recompute_putaways
+msgid "Technical field in order to display the Recompute Putaways button."
+msgstr "Campo tecnico per visualizzare il pulsante ricalcolo inoltri."
+
+#. module: stock_picking_putaway_recompute
+#: model:ir.model,name:stock_picking_putaway_recompute.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"

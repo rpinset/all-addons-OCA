@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_repository_branch_form_view">
+        <field name="model">vcp.repository.branch</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="repository_id" />
+                        <field name="branch_id" />
+                        <field name="rule_ids" widget="many2many_tags" />
+                        <field name="override_parent_rules" />
+                        <field name="platform_id" />
+                        <field name="last_commit" />
+                    </group>
+                    <notebook>
+                        <page string="Information" name="information">
+                            <field name="rule_information_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_repository_branch_search_view">
+        <field name="model">vcp.repository.branch</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="repository_id" />
+                <field name="branch_id" />
+                <field name="platform_id" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_repository_branch_tree_view">
+        <field name="model">vcp.repository.branch</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="platform_id" />
+                <field name="repository_id" />
+                <field name="branch_id" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_repository_branch_act_window">
+        <field name="name">Repository Branches</field>
+        <field name="path">vcp-repository-branch</field>
+        <field name="res_model">vcp.repository.branch</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

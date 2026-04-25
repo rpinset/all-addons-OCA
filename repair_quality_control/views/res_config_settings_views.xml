@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.repair</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="5" />
+        <field
+            name="inherit_id"
+            ref="base_repair_config.res_config_settings_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='repair_setting_container']" position="inside">
+                <setting
+                    id="auto_generate_qc_inspection"
+                    string="Auto-generate QC Inspection"
+                    help="If checked, QC Inspections will be automatically created for Repair Order, on state changes"
+                >
+                    <field name="repair_auto_generate_qc_inspection" />
+                </setting>
+                <setting
+                    id="generate_qc_inspection_state"
+                    string="Generate QC Inspection State"
+                    help="This field allows you to select the state of the Repair Order in which the QC Inspection will be generated"
+                >
+                    <field
+                        name="repair_generate_qc_inspection_state"
+                        class="o_light_label"
+                        widget="radio"
+                        required="True"
+                    />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

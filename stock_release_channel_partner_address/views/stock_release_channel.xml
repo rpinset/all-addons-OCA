@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="stock_release_channel_form_view_inherit" model="ir.ui.view">
+        <field name="model">stock.release.channel</field>
+        <field
+            name="inherit_id"
+            ref="stock_release_channel.stock_release_channel_form_view"
+        />
+        <field name="arch" type="xml">
+            <field name="partner_ids" position="before">
+                <field
+                    name="country_ids"
+                    widget="many2many_tags"
+                    options="{'no_create': True}"
+                />
+                <field
+                    name="state_ids"
+                    widget="many2many_tags"
+                    options="{'no_create': True}"
+                    invisible="not country_ids"
+                    domain="[('country_id', 'in', country_ids)]"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

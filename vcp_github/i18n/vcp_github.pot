@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vcp_github
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vcp_github
+#. odoo-python
+#: code:addons/vcp_github/models/vcp_platform.py:0
+msgid ""
+"No github clients configured. Please enter at least a Github Personal Access"
+" Token. You can check more information at "
+"https://docs.github.com/en/authentication/keeping-your-account-and-data-"
+"secure/managing-your-personal-access-tokens"
+msgstr ""
+
+#. module: vcp_github
+#. odoo-python
+#: code:addons/vcp_github/models/vcp_host.py:0
+msgid "Only one GitHub Host type is allowed."
+msgstr ""
+
+#. module: vcp_github
+#: model:ir.model,name:vcp_github.model_vcp_organization
+msgid "Organization"
+msgstr ""
+
+#. module: vcp_github
+#: model:ir.model,name:vcp_github.model_vcp_repository
+msgid "Repository"
+msgstr ""
+
+#. module: vcp_github
+#: model:ir.model,name:vcp_github.model_vcp_user
+msgid "User"
+msgstr ""
+
+#. module: vcp_github
+#: model:ir.model,name:vcp_github.model_vcp_host
+msgid "VCP Host"
+msgstr ""
+
+#. module: vcp_github
+#: model:ir.model,name:vcp_github.model_vcp_platform
+msgid "VCP Platform"
+msgstr ""

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_review_form_view">
+        <field name="model">vcp.review</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <group>
+                        <field name="external_id" />
+                        <field name="body" widget="html" />
+                        <field name="state" />
+                        <field name="user_id" />
+                        <field name="submitted_at" />
+                        <field name="request_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_review_tree_view">
+        <field name="model">vcp.review</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="external_id" />
+                <field name="request_id" />
+                <field name="submitted_at" />
+                <field name="user_id" />
+                <field name="body" optional="hide" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_review_act_window">
+        <field name="name">Reviews</field>
+        <field name="res_model">vcp.review</field>
+        <field name="path">vcp-review</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

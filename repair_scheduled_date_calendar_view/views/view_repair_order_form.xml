@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_repair_order_form_inherit_duration" model="ir.ui.view">
+        <field name="name">repair.order.form.inherit.duration</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_form" />
+        <field name="arch" type="xml">
+            <field name="schedule_date" position="after">
+                <field
+                    name="planned_duration"
+                    string="Order Duration"
+                    widget="float_time"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,44 @@
+# Copyright 2020 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+
+from odoo import api, fields, models
+
+
+class AccountPaymentMethod(models.Model):
+    _inherit = "account.payment.method"
+
+    pain_version = fields.Selection(
+        selection_add=[
+            (
+                "pain.008.001.02",
+                "pain.008.001.02 (direct debit, old recommended version)",
+            ),
+            (
+                "pain.008.001.08",
+                "pain.008.001.08 (direct debit, new recommended version)",
+            ),
+            ("pain.008.003.02", "pain.008.003.02 (direct debit for Germany only)"),
+        ],
+        ondelete={
+            "pain.008.001.02": "set null",
+            "pain.008.001.08": "set null",
+            "pain.008.003.02": "set null",
+        },
+    )
+
+    def _get_xsd_file_path(self):
+        self.ensure_one()
+        if self.pain_version in [
+            "pain.008.001.02",
+            "pain.008.001.08",
+            "pain.008.003.02",
+        ]:
+            path = f"account_payment_sepa_direct_debit/data/{self.pain_version}.xsd"
+            return path
+        return super()._get_xsd_file_path()
+
+    @api.model
+    def _get_payment_method_information(self):
+        res = super()._get_payment_method_information()
+        res["sepa_direct_debit"] = {"mode": "multi", "type": ("bank",)}
+        return res

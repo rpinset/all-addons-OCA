@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="vcp_platform_oca_github" model="vcp.platform">
+        <field name="name">OCA</field>
+        <field name="host_id" ref="vcp_github_host" />
+        <field name="fetch_repository_branch_pattern">^\d+\.\d+$</field>
+        <field name="scheduled_information_update" eval="False" />
+    </record>
+</odoo>

@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_vcp_platform_portal,Access Platform from Portal,vcp_management.model_vcp_platform,base.group_portal,1,0,0,0
+access_vcp_host_type_portal,Access Host Type for Portal,vcp_management.model_vcp_host_type,base.group_portal,1,0,0,0
+access_vcp_host_portal,Access Hosts from Portal,vcp_management.model_vcp_host,base.group_portal,1,0,0,0

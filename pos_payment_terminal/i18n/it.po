@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_payment_terminal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 02:52+0000\n"
+"PO-Revision-Date: 2026-04-21 10:45+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: pos_payment_terminal
+#. odoo-javascript
+#: code:addons/pos_payment_terminal/static/src/js/payment_terminal.esm.js:0
+msgid "Cannot process transactions with negative amount."
+msgstr "Impossibile elaborare transazioni con importo negativo."
+
+#. module: pos_payment_terminal
+#: model:ir.model.fields.selection,name:pos_payment_terminal.selection__pos_payment_method__oca_payment_terminal_mode__card
+msgid "Card"
+msgstr "Carta"
+
+#. module: pos_payment_terminal
+#: model:ir.model.fields.selection,name:pos_payment_terminal.selection__pos_payment_method__oca_payment_terminal_mode__check
+msgid "Check"
+msgstr "Conto"
+
+#. module: pos_payment_terminal
+#. odoo-javascript
+#: code:addons/pos_payment_terminal/static/src/js/payment_terminal.esm.js:0
+msgid "Connecting to the payment terminal failed"
+msgstr "Connessione al terminale di pagamento non riuscita"
+
+#. module: pos_payment_terminal
+#. odoo-javascript
+#: code:addons/pos_payment_terminal/static/src/js/payment_terminal.esm.js:0
+msgid ""
+"Failed to send the amount to pay to the payment terminal.Press the red "
+"button on the payment terminal and try again."
+msgstr ""
+"Invio dell’importo da pagare al terminale di pagamento non riuscito. "
+"Premere il pulsante rosso sul terminale di pagamento e riprovare."
+
+#. module: pos_payment_terminal
+#: model:ir.model.fields,field_description:pos_payment_terminal.field_pos_payment_method__oca_payment_terminal_mode
+msgid "Payment Mode"
+msgstr "Metodo di pagamento"
+
+#. module: pos_payment_terminal
+#. odoo-javascript
+#: code:addons/pos_payment_terminal/static/src/js/payment_terminal.esm.js:0
+msgid "Payment Terminal Error"
+msgstr "Errore terminale pagamento"
+
+#. module: pos_payment_terminal
+#. odoo-javascript
+#: code:addons/pos_payment_terminal/static/src/js/payment_terminal.esm.js:0
+msgid ""
+"Please press the red button on the payment terminal to cancel the "
+"transaction."
+msgstr ""
+"Fare clic sul pulsante rosso sul terminale pagamento per annullare la "
+"transizione."
+
+#. module: pos_payment_terminal
+#: model:ir.model,name:pos_payment_terminal.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Metodi di pagamento punto vendita"
+
+#. module: pos_payment_terminal
+#: model:ir.model.fields,field_description:pos_payment_terminal.field_pos_payment_method__oca_payment_terminal_id
+msgid "Terminal Identifier"
+msgstr "Identificatore terminale"
+
+#. module: pos_payment_terminal
+#: model:ir.model.fields,help:pos_payment_terminal.field_pos_payment_method__oca_payment_terminal_id
+msgid ""
+"The identifier of the terminal as known by the hardware proxy. Leave empty "
+"if the proxy has only one terminal connected."
+msgstr ""
+"L'identificativo del terminale come conosciuto dal dispositivo proxy. "
+"Lasciare vuoto se il proxy ha solo un terminale collegato."

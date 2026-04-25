@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="partner_detail" inherit_id="website_partner.partner_detail">
+        <xpath expr="//div[@t-field='partner.website_description']" position="after">
+            <t t-call="vcp.vcp_partner_detail" />
+        </xpath>
+    </template>
+</odoo>

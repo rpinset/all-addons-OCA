@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sale_order_form_reserve" model="ir.ui.view">
+        <field name="name">sale.order.form.reserve.simple</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock" />
+        <field name="arch" type="xml">
+            <button name="action_quotation_send" position="before">
+                <button
+                    string="Reserve Stock"
+                    name="reserve_stock"
+                    type="object"
+                    invisible="(state not in ['draft', 'sent'] or stock_is_reserved)"
+                />
+                <button
+                    string="Release Reservation"
+                    name="release_reservation"
+                    type="object"
+                    invisible="(state not in ['draft', 'sent'] or not stock_is_reserved)"
+                />
+            </button>
+        </field>
+    </record>
+</odoo>

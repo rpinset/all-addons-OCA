@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Multibanco Payment Method -->
+    <record id="payment_method_mb" model="payment.method">
+        <field name="name">Multibanco (Portugal)</field>
+        <field name="code">mb</field>
+        <field name="sequence">800</field>
+        <field
+            name="image"
+            type="base64"
+            file="l10n_pt_payment/static/img/multibanco_icon.png"
+        />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- MB WAY Payment Method -->
+    <record id="payment_method_mbway" model="payment.method">
+        <field name="name">MB Way (Portugal)</field>
+        <field name="code">mbway</field>
+        <field name="sequence">801</field>
+        <field
+            name="image"
+            type="base64"
+            file="l10n_pt_payment/static/img/mbway_icon.png"
+        />
+        <field name="active" eval="True" />
+    </record>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <form position="inside">
+                <app
+                    data-string="Crowdfunding"
+                    string="Crowdfunding"
+                    name="crowdfunding"
+                    logo="/crowdfunding/static/description/icon.png"
+                    groups="crowdfunding.group_manager"
+                >
+                    <div id="crowdfunding">
+                        <block title="Crowdfunding" name="crowdfunding">
+                            <setting id="crowdfunding_product_id">
+                                <label for="crowdfunding_product_id" class="col-lg-3" />
+                                <field name="crowdfunding_product_id" required="True" />
+                            </setting>
+                            <setting id="crowdfunding_default_fee_percentage">
+                                <label
+                                    for="crowdfunding_default_fee_percentage"
+                                    class="col-lg-3"
+                                />
+                                <field
+                                    name="crowdfunding_default_fee_percentage"
+                                    widget="percentage"
+                                />
+                            </setting>
+                        </block>
+                    </div>
+                </app>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_res_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form" />
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'crowdfunding'}</field>
+    </record>
+</odoo>

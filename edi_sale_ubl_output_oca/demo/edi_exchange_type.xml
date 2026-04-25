@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- TODO: noupdate OR better create via post init hook   -->
+    <record id="demo_edi_sale_ubl_output_so_out" model="edi.exchange.type">
+        <field name="backend_type_id" ref="edi_ubl_oca.edi_backend_type_ubl" />
+        <field name="backend_id" ref="edi_ubl_oca.edi_backend_ubl_demo" />
+        <field
+            name="output_template_id"
+            ref="demo_edi_exc_template_order_response_out"
+        />
+        <field name="name">Demo UBL Sale Order Response</field>
+        <field name="code">demo_edi_sale_ubl_output_so_out</field>
+        <field name="direction">output</field>
+        <field name="exchange_filename_pattern">{record_name}-{type.code}-{dt}</field>
+        <field name="exchange_file_ext">xml</field>
+        <field
+            name="generate_model_id"
+            ref="edi_exchange_template_oca.model_edi_oca_template_handler"
+        />
+        <field
+            name="state_workflow_ids"
+            eval="[(6, 0, [
+              ref('edi_sale_ubl_oca.edi_sale_order_state_workflow'),
+              ref('edi_sale_ubl_oca.edi_sale_order_line_state_workflow')
+            ])]"
+        />
+        <field name="advanced_settings_edit">
+components:
+  generate:
+    usage: ubl.generate.OrderResponse
+  validate:
+    usage: edi.xml
+    work_ctx:
+      schema_path: base_ubl:data/xsd-2.2/maindoc/UBL-OrderResponse-2.2.xsd
+        </field>
+    </record>
+
+    <record id="demo_edi_sale_ubl_output_so_in" model="edi.exchange.type">
+        <field name="backend_type_id" ref="edi_ubl_oca.edi_backend_type_ubl" />
+        <field name="backend_id" ref="edi_ubl_oca.edi_backend_ubl_demo" />
+        <field name="ack_type_id" ref="demo_edi_sale_ubl_output_so_out" />
+        <field name="name">Demo UBL Sale Order</field>
+        <field name="code">demo_edi_sale_ubl_output_so_in</field>
+        <field name="direction">input</field>
+        <field name="exchange_file_ext">xml</field>
+        <field
+            name="state_workflow_ids"
+            eval="[(6, 0, [
+              ref('edi_sale_ubl_oca.edi_sale_order_state_workflow'),
+              ref('edi_sale_ubl_oca.edi_sale_order_line_state_workflow')
+            ])]"
+        />
+    </record>
+</odoo>

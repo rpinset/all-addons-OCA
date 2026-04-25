@@ -25,4 +25,5 @@
         ],
     },
     "installable": True,
+    "maintainers": ["mt-software-de"],
 }

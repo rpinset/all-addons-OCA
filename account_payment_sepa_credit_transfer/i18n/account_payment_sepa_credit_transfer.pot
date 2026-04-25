@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_sepa_credit_transfer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_payment_sepa_credit_transfer
+#. odoo-python
+#: code:addons/account_payment_sepa_credit_transfer/models/account_payment_order.py:0
+msgid ""
+"Bank account is missing on the payment {payment} of partner '{partner}'."
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_payment_sepa_credit_transfer.selection__account_payment_line__local_instrument__inst
+msgid "Instant Transfer"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields,field_description:account_payment_sepa_credit_transfer.field_account_payment_line__local_instrument
+msgid "Local Instrument"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields,field_description:account_payment_sepa_credit_transfer.field_account_payment_method__pain_version
+msgid "PAIN Version"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#. odoo-python
+#: code:addons/account_payment_sepa_credit_transfer/models/account_payment_order.py:0
+msgid "PAIN version '%s' is not supported."
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model,name:account_payment_sepa_credit_transfer.model_account_payment_line
+msgid "Payment Lines"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model,name:account_payment_sepa_credit_transfer.model_account_payment_method
+msgid "Payment Methods"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model,name:account_payment_sepa_credit_transfer.model_account_payment_order
+msgid "Payment/Debit Order"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model,name:account_payment_sepa_credit_transfer.model_account_payment
+msgid "Payments"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:account.payment.method,name:account_payment_sepa_credit_transfer.sepa_credit_transfer
+msgid "SEPA Credit Transfer to suppliers"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_payment_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
+msgid "pain.001.001.03 (credit transfer, old recommended version)"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_payment_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (credit transfer, new recommended version)"
+msgstr ""
+
+#. module: account_payment_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_payment_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_003_03
+msgid "pain.001.003.03 (credit transfer for Germany only)"
+msgstr ""

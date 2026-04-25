@@ -1,0 +1,9 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_vcp_odoo_module,Access Odoo Module,model_vcp_odoo_module,vcp_management.group_vcp_user,1,0,0,0
+manage_vcp_odoo_module,Manage Odoo Module,model_vcp_odoo_module,vcp_management.group_vcp_manager,1,1,1,1
+access_vcp_odoo_module_version,Access Odoo Module Version,model_vcp_odoo_module_version,vcp_management.group_vcp_user,1,0,0,0
+manage_vcp_odoo_module_version,Manage Odoo Module Version,model_vcp_odoo_module_version,vcp_management.group_vcp_manager,1,1,1,1
+access_vcp_odoo_bin_package,Access Odoo Bin Package,model_vcp_odoo_bin_package,vcp_management.group_vcp_user,1,0,0,0
+manage_vcp_odoo_bin_package,Manage Odoo Bin Package,model_vcp_odoo_bin_package,vcp_management.group_vcp_manager,1,1,1,1
+access_vcp_odoo_python_library,Access Odoo Python Library,model_vcp_odoo_python_library,vcp_management.group_vcp_user,1,0,0,0
+manage_vcp_odoo_python_library,Manage Odoo Python Library,model_vcp_odoo_python_library,vcp_management.group_vcp_manager,1,1,1,1

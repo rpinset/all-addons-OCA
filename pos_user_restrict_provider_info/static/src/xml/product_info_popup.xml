@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Copyright 2026 Bernat Obrador APSL-Nagarro
+ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<templates xml:space="preserve">
+      <template
+        t-name="pos_user_restrict_provider_info.ProductInfoPopup"
+        t-inherit="point_of_sale.ProductInfoPopup"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//div[contains(@class,'section-supplier')]" position="attributes">
+            <attribute name="t-if">
+            this.pos.user.canSeeSupplierInfo
+        </attribute>
+        </xpath>
+    </template>
+</templates>

@@ -1,0 +1,29 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_vcp_platform,Access Platform,model_vcp_platform,group_vcp_user,1,0,0,0
+manage_vcp_platform,Manage Platform,model_vcp_platform,group_vcp_manager,1,1,1,0
+manage_vcp_platform_key,Manage Platform Keys,model_vcp_platform_key,group_vcp_manager,1,1,1,1
+access_branch,Access Branch,model_vcp_branch,group_vcp_user,1,0,0,0
+manage_branch,Access Branch,model_vcp_branch,group_vcp_manager,1,1,1,1
+access_repository,Access Repository,model_vcp_repository,group_vcp_user,1,0,0,0
+manage_repository,Access Repository,model_vcp_repository,group_vcp_manager,1,1,1,1
+access_repository_branch,Access Repository Branch,model_vcp_repository_branch,group_vcp_user,1,0,0,0
+manage_repository_branch,Access Repository Branch,model_vcp_repository_branch,group_vcp_manager,1,1,1,1
+access_rule_information,Access Repository Branch Rule information,model_vcp_rule_information,group_vcp_user,1,0,0,0
+manage_rule_information,Access Repository Branch Rule information,model_vcp_rule_information,group_vcp_manager,1,1,1,1
+access_request,Access Pull Requests,model_vcp_request,group_vcp_user,1,0,0,0
+manage_request,Access Pull Requests,model_vcp_request,group_vcp_manager,1,1,1,1
+access_request_label,Access Pull Requests Labels,model_vcp_request_label,group_vcp_user,1,0,0,0
+manage_request_label,Access Pull Requests Labels,model_vcp_request_label,group_vcp_manager,1,1,1,1
+access_review,Access Reviews,model_vcp_review,group_vcp_user,1,0,0,0
+manage_review,Access Reviews,model_vcp_review,group_vcp_manager,1,1,1,1
+access_comment,Access Comments,model_vcp_comment,group_vcp_user,1,0,0,0
+manage_comment,Access Comments,model_vcp_comment,group_vcp_manager,1,1,1,1
+access_vcp_host_type,Access Host Type,model_vcp_host_type,group_vcp_user,1,0,0,0
+access_vcp_host,Access Hosts,model_vcp_host,group_vcp_user,1,0,0,0
+manage_vcp_host,Nabage Hosts,model_vcp_host,group_vcp_manager,1,1,1,1
+access_user,Access Users,model_vcp_user,group_vcp_user,1,0,0,0
+manage_user,Manage Users,model_vcp_user,group_vcp_manager,1,1,1,1
+access_organization,Access Organizations,model_vcp_organization,group_vcp_user,1,0,0,0
+manage_organization,Manage Organizations,model_vcp_organization,group_vcp_manager,1,1,1,1
+access_vcp_rule,Access VCP Rules,model_vcp_rule,group_vcp_user,1,0,0,0
+manage_vcp_rule,Manage VCP Rules,model_vcp_rule,group_vcp_manager,1,1,1,1

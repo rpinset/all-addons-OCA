@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_repair_order_calendar" model="ir.ui.view">
+        <field name="name">repair.order.calendar</field>
+        <field name="model">repair.order</field>
+        <field name="arch" type="xml">
+            <calendar
+                string="Repair Orders Calendar"
+                date_start="schedule_date"
+                date_delay="planned_duration"
+                color="user_id"
+                mode="month"
+                event_open_popup="true"
+                quick_create="false"
+            >
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="user_id" />
+                <field name="state" />
+                <field name="schedule_date" />
+                <field name="product_id" />
+            </calendar>
+        </field>
+    </record>
+
+    <record id="act_window_view_repair_list" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="repair.action_repair_order_tree" />
+        <field name="view_mode">list</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="act_window_view_repair_form" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="repair.action_repair_order_tree" />
+        <field name="view_mode">form</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="act_window_view_repair_calendar" model="ir.actions.act_window.view">
+        <field name="act_window_id" ref="repair.action_repair_order_tree" />
+        <field name="view_id" ref="view_repair_order_calendar" />
+        <field name="view_mode">calendar</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <record id="repair.action_repair_order_tree" model="ir.actions.act_window">
+        <field name="context">{'repair_calendar_force_default_duration': 1}</field>
+    </record>
+</odoo>

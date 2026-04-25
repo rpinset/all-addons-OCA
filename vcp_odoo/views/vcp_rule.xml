@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_rule_form_view">
+        <field name="model">vcp.rule</field>
+        <field name="inherit_id" ref="vcp_management.vcp_rule_form_view" />
+        <field name="arch" type="xml">
+            <field name="branch_pattern" position="after">
+                <field
+                    name="odoo_module_rule_ids"
+                    widget="many2many_tags"
+                    invisible="rule_type != 'odoo_module'"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

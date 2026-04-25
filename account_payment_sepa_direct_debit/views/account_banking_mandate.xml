@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  © 2013-2016 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="view_mandate_form" model="ir.ui.view">
+        <field name="name">sdd.mandate.form</field>
+        <field name="model">account.banking.mandate</field>
+        <field name="inherit_id" ref="account_payment_mandate.view_mandate_form" />
+        <field name="arch" type="xml">
+            <button name="validate" position="before">
+                <button
+                    name="%(report_sepa_direct_debit_mandate)d"
+                    type="action"
+                    string="Print"
+                />
+            </button>
+        </field>
+    </record>
+    <record id="view_mandate_tree" model="ir.ui.view">
+        <field name="name">sdd.mandate.list</field>
+        <field name="model">account.banking.mandate</field>
+        <field name="inherit_id" ref="account_payment_mandate.view_mandate_tree" />
+        <field name="arch" type="xml">
+            <field name="format" position="attributes">
+                <attribute name="decoration-success">format == 'sepa_core'</attribute>
+                <attribute name="decoration-warning">format == 'sepa_b2b'</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

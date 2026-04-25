@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_sale_ubl_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-06-20 10:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_line_state_7
+msgid " Not accepted"
+msgstr " Non accettato"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_state_ap
+msgid "Accepted"
+msgstr "Accettato"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_line_state_5
+msgid "Accepted without amendment"
+msgstr "Accettato senza rettifica"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_line_state_42
+msgid "Already delivered"
+msgstr "Già consegnato"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_line_state_3
+msgid "Changed"
+msgstr "Modificato"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_state_ca
+msgid "Conditionally accepted"
+msgstr "Accettato condizionalmente"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model.fields,field_description:edi_sale_ubl_oca.field_sale_order_line__edi_id
+msgid "EDI ID"
+msgstr "ID EDI"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model.fields,field_description:edi_sale_ubl_oca.field_sale_order__edi_state_id
+#: model:ir.model.fields,field_description:edi_sale_ubl_oca.field_sale_order_line__edi_state_id
+msgid "EDI state"
+msgstr "Stato EDI"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model.fields,help:edi_sale_ubl_oca.field_sale_order_line__edi_id
+msgid "Internal or external identifier for records."
+msgstr "Identificatore interno o esterno per i record."
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_state_ab
+msgid "Message acknowledgement"
+msgstr "Riconoscimento messaggio"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,description:edi_sale_ubl_oca.edi_sale_order_line_state_3
+msgid "Order line is accepted with change"
+msgstr "La riga ordine è accettata con modifica"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_line_state_1
+msgid "Order line is added"
+msgstr "Aggiunta riga ordine"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,name:edi_sale_ubl_oca.edi_sale_order_state_re
+msgid "Rejected"
+msgstr "Rifiutato"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model,name:edi_sale_ubl_oca.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model,name:edi_sale_ubl_oca.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: edi_sale_ubl_oca
+#: model:edi.state,description:edi_sale_ubl_oca.edi_sale_order_line_state_1
+msgid "The information is to be or has been added"
+msgstr "L'informazione è stata o deve essere aggiunta"
+
+#. module: edi_sale_ubl_oca
+#: model:ir.model.fields,field_description:edi_sale_ubl_oca.field_sale_order__edi_state_workflow_id
+#: model:ir.model.fields,field_description:edi_sale_ubl_oca.field_sale_order_line__edi_state_workflow_id
+msgid "Workflow"
+msgstr "Flusso di lavoro"

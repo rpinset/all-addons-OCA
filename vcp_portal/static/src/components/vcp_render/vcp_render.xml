@@ -1,0 +1,148 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="vcp_portal.DateSelectionTooltip">
+        <div class="p-2">
+        Select the period for which you want to see the contributors statistics.
+        Options are:
+        </div>
+        <ul class="mb-0">
+            <li><strong>MTD</strong>: Month-To-Date</li>
+            <li><strong
+            >YTD</strong>: Year-To-Date - From January to the selected month</li>
+            <li><strong>MAT</strong>: Moving Annual Total - Last 12 Months</li>
+        </ul>
+    </t>
+    <t t-name="vcp_portal.VcpRender">
+        <div class="o_vcp_render">
+            <h4>Contributors Statistics</h4>
+            <div class="d-flex mb-3 o_vcp_render_filters row">
+                <div class="col">
+                    <input
+                        id="year_input"
+                        class="form-control me-4"
+                        type="number"
+                        t-model="state.year"
+                        t-on-change="fetchData"
+                    />
+                </div>
+                <div class="col">
+                    <select
+                        t-model="state.month"
+                        class="form-select"
+                        t-on-change="fetchData"
+                    >
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <Dropdown>
+                        <button
+                            class="ms-4 px-3 btn btn-link btn-primary py-0 px-1 o-dropdown-caret h-100"
+                        >
+                            <span t-esc="state.period" />
+                            <i
+                                class="fa fa-info-circle ms-1"
+                                title="Date selection Tooltip"
+                                data-bs-toggle="tooltip"
+                                data-bs-html="true"
+                                t-on-click.stop.prevent="initDateTooltip"
+                            />
+                        </button>
+                        <t t-set-slot="content">
+                            <DropdownItem
+                                onSelected="() => this.selectPeriod('MTD')"
+                            >MTD</DropdownItem>
+                            <DropdownItem
+                                onSelected="() => this.selectPeriod('YTD')"
+                            >YTD</DropdownItem>
+                            <DropdownItem
+                                onSelected="() => this.selectPeriod('MAT')"
+                            >MAT</DropdownItem>
+                        </t>
+                    </Dropdown>
+                </div>
+                <div class="col o_vcp_contributors">
+                    <button
+                        t-att-class="state.kind === 'contributors' ? 'btn ms-4 btn-primary' : 'btn ms-4'"
+                        t-on-click="(ev) => this.setKind('contributors')"
+                    >Contributors</button>
+                </div>
+                <div class="col o_vcp_organizations">
+                    <button
+                        t-att-class="state.kind === 'organizations' ? 'btn ms-4 btn-primary' : 'btn ms-4'"
+                        t-on-click="(ev) => this.setKind('organizations')"
+                    >Organizations</button>
+                </div>
+                <div class="col o_vcp_repositories">
+                    <button
+                        t-att-class="state.kind === 'repositories' ? 'btn ms-4 btn-primary' : 'btn ms-4'"
+                        t-on-click="(ev) => this.setKind('repositories')"
+                    >Repositories</button>
+                </div>
+            </div>
+            <table class="table table-striped o_vcp_render_table">
+                <thead>
+                    <tr>
+                        <t t-foreach="state.columns" t-as="column" t-key="column_index">
+                            <th
+                                t-on-click="() => this.sortBy(column.field)"
+                                t-attf-class="o_vcp_render_table_header sortable {{ column.kind === 'float' ? 'text-end' : '' }}"
+                            >
+                                <span t-esc="column.title" />
+                                <i
+                                    t-if="column.tooltip"
+                                    class="fa fa-info-circle ms-1"
+                                    t-att-title="column.tooltip"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-html="true"
+                                    t-on-click.stop.prevent="(ev) => this.initColumnTooltip(ev, column)"
+                                />
+                                <i
+                                    t-if="state.sort[state.kind] === column.field"
+                                    class="fa fa-sort-desc"
+                                />
+                            </th>
+                        </t>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="rowIds" t-as="row_id" t-key="row_id">
+                        <t t-set="row" t-value="getRowData(row_id)" />
+                        <t t-foreach="state.columns" t-as="column" t-key="column_index">
+                            <t t-if="column.kind === 'float'">
+                                <td
+                                    class="text-end"
+                                    t-esc="formatFloat(row[column.field], column.decimals)"
+                                />
+                            </t>
+                            <t t-if="column.kind === 'name'">
+                                <td>
+                                    <a
+                                        t-att-href="row.url"
+                                        t-esc="row[column.field]"
+                                        t-if="row.url"
+                                    />
+                                    <span t-esc="row[column.field]" t-if="!row.url" />
+                                </td>
+                            </t>
+                            <t t-if="column.kind === 'string'">
+                                <td t-esc="row[column.field]" />
+                            </t>
+                        </t>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </t>
+
+</templates>

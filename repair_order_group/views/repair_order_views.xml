@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add group field + notebook page + header button -->
+    <record id="view_repair_order_form_inherit_group" model="ir.ui.view">
+        <field name="name">repair.order.form.inherit.group</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_form" />
+        <field name="arch" type="xml">
+            <!-- Header button -->
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_add_another_repair"
+                    type="object"
+                    class="btn-primary"
+                    string="Add Grouped Repair"
+                    help="Create a new repair linked to the same group and partner."
+                    invisible="state != 'draft'"
+                />
+            </xpath>
+            <!-- Tab with grouped repairs -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Grouped Repairs">
+                    <field
+                        name="group_id"
+                        readonly="1"
+                        options="{'no_create_edit': True}"
+                    />
+                    <field name="grouped_repair_ids">
+                        <list>
+                            <field name="name" />
+                            <field name="state" />
+                            <field name="partner_id" />
+                        </list>
+                        <form>
+                            <sheet>
+                                <group>
+                                    <field name="name" />
+                                    <field name="state" readonly="1" />
+                                    <field name="partner_id" />
+                                </group>
+                            </sheet>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- List view с optional field -->
+    <record id="view_repair_order_tree_inherit_group" model="ir.ui.view">
+        <field name="name">repair.order.tree.inherit.group</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="group_id" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search view with group filter -->
+    <record id="view_repair_order_search_inherit_group" model="ir.ui.view">
+        <field name="name">repair.order.search.inherit.group</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_form_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='company']" position="after">
+                <filter
+                    name="group_by_group"
+                    string="By Group"
+                    context="{'group_by': 'group_id'}"
+                    groups="base.group_multi_company"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

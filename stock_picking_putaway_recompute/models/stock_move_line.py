@@ -1,0 +1,85 @@
+# Copyright 2024 ACSONE SA/NV
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from __future__ import annotations
+
+from typing_extensions import Self
+
+from odoo import api, fields, models
+from odoo.exceptions import UserError
+from odoo.tools import groupby
+
+
+class StockMoveLine(models.Model):
+    _inherit = "stock.move.line"
+
+    can_recompute_putaways = fields.Boolean(
+        compute="_compute_can_recompute_putaways",
+    )
+
+    @api.depends(
+        "picking_type_id.allow_to_recompute_putaways",
+        "picking_id.printed",
+        "picking_id.state",
+        "result_package_id",
+        "picked",
+    )
+    def _compute_can_recompute_putaways(self):
+        can_recompute_lines = self._filtered_for_putaway_recompute()
+        can_recompute_lines.can_recompute_putaways = True
+        (self - can_recompute_lines).can_recompute_putaways = False
+
+    def _can_recompute_putaway(self):
+        self.ensure_one()
+        return self.picking_id._can_recompute_putaway() and not self.picked
+
+    def _filtered_for_putaway_recompute(self) -> Self:
+        """
+        Recompute putaways on operations that:
+
+            - have their picking type configured for that
+            - have their picking not printed (started)
+            - have their picked field set
+        """
+        return self.filtered(lambda line: line._can_recompute_putaway())
+
+    def _check_all_lines_with_same_dest_package(self):
+        for package, move_line_list in groupby(
+            self, lambda line: line.result_package_id
+        ):
+            if not package:
+                continue
+            move_lines = self.env["stock.move.line"].concat(*move_line_list)
+            other_package_lines = self.env["stock.move.line"].search_count(
+                [
+                    ("result_package_id", "=", package.id),
+                    ("id", "not in", move_lines.ids),
+                ],
+                limit=1,
+            )
+            if other_package_lines:
+                raise UserError(
+                    self.env._(
+                        "Recomputation of putaway is not allowed if not all move lines"
+                        " with same destination package were selected."
+                    )
+                )
+
+    def _recompute_putaways(self) -> None:
+        """
+        Launches the computation of putaways on operations that are
+        allowed to.
+        """
+        to_recompute_lines = self._filtered_for_putaway_recompute()
+        to_recompute_lines._check_all_lines_with_same_dest_package()
+        # Reset location destinations to their move destination
+        # First, protect the field from recomputations as
+        # value will be reaffected afterwards.
+        with to_recompute_lines.env.protecting(
+            ["location_dest_id"], to_recompute_lines
+        ):
+            for line in to_recompute_lines:
+                line.location_dest_id = line.move_id.location_dest_id
+        to_recompute_lines._apply_putaway_strategy()
+
+    def action_recompute_putaways(self):
+        self._recompute_putaways()

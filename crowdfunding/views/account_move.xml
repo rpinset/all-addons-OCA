@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form" />
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page
+                    name="crowdfunding"
+                    string="Crowdfunding"
+                    invisible="not crowdfunding_challenge_id and state != 'draft'"
+                >
+                    <group>
+                        <field name="crowdfunding_challenge_id" />
+                        <field
+                            name="crowdfunding_target_amount"
+                            invisible="not crowdfunding_challenge_id"
+                        />
+                        <field
+                            name="crowdfunding_pledged_amount"
+                            invisible="not crowdfunding_challenge_id"
+                        />
+                        <field
+                            name="crowdfunding_vendor_amount"
+                            invisible="not crowdfunding_challenge_id"
+                        />
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_odoo_module_version_form_view">
+        <field name="model">vcp.odoo.module.version</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <field
+                        name="image_1920"
+                        widget="image"
+                        class="oe_avatar"
+                        options="{'preview_image': 'image_128'}"
+                    />
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="module_id" />
+                        <field name="version" />
+                        <field name="depends_on_module_ids" widget="many2many_tags" />
+                        <field name="auto_install" />
+                        <field name="license" />
+                        <field name="website" />
+                        <field name="summary" />
+                        <field name="python_library_ids" widget="many2many_tags" />
+                        <field name="bin_package_ids" widget="many2many_tags" />
+                    </group>
+                    <notebook>
+                        <page name="description" string="Description">
+                            <field name="description" widget="html" />
+                        </page>
+                        <page string="Information" name="information">
+                            <field name="rule_information_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_odoo_module_version_search_view">
+        <field name="model">vcp.odoo.module.version</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="module_id" />
+                <field name="version" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vcp_odoo_module_version_tree_view">
+        <field name="model">vcp.odoo.module.version</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="module_id" />
+                <field name="version" />
+                <field name="depends_on_module_ids" widget="many2many_tags" />
+            </list>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_odoo_module_version_act_window">
+        <field name="name">Module Versions</field>
+        <field name="path">vcp-odoo-module-version</field>
+        <field name="res_model">vcp.odoo.module.version</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>
