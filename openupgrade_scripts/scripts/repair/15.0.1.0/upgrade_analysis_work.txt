@@ -1,0 +1,25 @@
+---Models in module 'repair'---
+---Fields in module 'repair'---
+repair       / repair.order             / _order                        : _order is now 'priority desc, create_date desc' ('create_date desc')
+# NOTHING TO DO: the default value for priority is coherent and preserves the behavior of the previous version, so the order is unaltered
+
+repair       / repair.order             / description (char)            : NEW
+repair       / repair.order             / sale_order_id (many2one)      : NEW relation: sale.order
+repair       / repair.order             / schedule_date (date)          : NEW
+# NOTHING TO DO: new fields for new feature
+
+repair       / repair.order             / priority (selection)          : NEW selection_keys: ['0', '1'], hasdefault: default
+# NOTHING TO DO: new field for a new feature. The default value is coherent and preserves the behavior of the previous version
+
+repair       / repair.order             / internal_notes (text)         : type is now 'html' ('text')
+repair       / repair.order             / quotation_notes (text)        : type is now 'html' ('text')
+# DONE: pre-migration: convert text to html
+
+repair       / repair.order             / state (selection)             : selection_keys is now '['2binvoiced', 'cancel', 'confirmed', 'done', 'draft', 'ready', 'under_repair']' ('['2binvoiced', 'cancel', 'confirmed', 'done', 'draft', 'invoice_except', 'ready', 'under_repair']')
+# DONE: post-migration: Map value from invoice_except to 2binvoiced.
+
+---XML records in module 'repair'---
+NEW ir.actions.act_window: repair.action_repair_move_lines
+DEL ir.model.access: repair.access_stock_production_lot_user
+NEW ir.ui.view: repair.stock_production_lot_view_form
+# NOTHING TO DO: Handled by ORM

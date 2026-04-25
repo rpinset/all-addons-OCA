@@ -1,0 +1,105 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_brand
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-11-02 05:44+0000\n"
+"Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
+"Language-Team: none\n"
+"Language: es_AR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: sale_brand
+#: model:ir.model.fields.selection,name:sale_brand.selection__res_brand__terms_type__plain
+msgid "Add a Note"
+msgstr "Añadir una Nota"
+
+#. module: sale_brand
+#: model:ir.model.fields.selection,name:sale_brand.selection__res_brand__terms_type__html
+msgid "Add a link to a Web Page"
+msgstr "Añadir un vínculo a una Página Web"
+
+#. module: sale_brand
+#: model:ir.model,name:sale_brand.model_res_brand
+#: model:ir.model.fields,field_description:sale_brand.field_crm_team__brand_id
+#: model:ir.model.fields,field_description:sale_brand.field_sale_order__brand_id
+msgid "Brand"
+msgstr "Marca"
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_sale_order__brand_use_level
+msgid "Brand Use Level"
+msgstr "Nivel de Uso de Marca"
+
+#. module: sale_brand
+#: model:ir.model.fields,help:sale_brand.field_sale_order__brand_id
+msgid "Brand to use for this sale"
+msgstr "Marca a utilizar para este venta"
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_sale_order__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_res_brand__invoice_terms
+msgid "Default Terms and Conditions"
+msgstr "Términos y Condiciones Predeterminados"
+
+#. module: sale_brand
+#: model_terms:ir.ui.view,arch_db:sale_brand.res_brand_sale_form_view
+msgid "Insert your terms & conditions here..."
+msgstr "Inserte sus términos y condiciones acá..."
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_res_brand__terms_url
+msgid "Preview terms"
+msgstr "Previsualización de términos"
+
+#. module: sale_brand
+#: model:ir.model,name:sale_brand.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Factura de Pago Anticipado de Ventas"
+
+#. module: sale_brand
+#: model:ir.model,name:sale_brand.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de Ventas"
+
+#. module: sale_brand
+#: model:ir.model,name:sale_brand.model_crm_team
+msgid "Sales Team"
+msgstr "Equipo de Ventas"
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_res_brand__terms_type
+msgid "Terms & Conditions format"
+msgstr "Formato de Términos y Condiciones"
+
+#. module: sale_brand
+#: code:addons/sale_brand/models/sale_order.py:0
+#, python-format
+msgid "Terms & Conditions: %s"
+msgstr "Términos y Condiciones: %s"
+
+#. module: sale_brand
+#: model:ir.model.fields,field_description:sale_brand.field_res_brand__terms_page
+msgid "Terms Page"
+msgstr "Página de Términos"
+
+#. module: sale_brand
+#: model_terms:ir.ui.view,arch_db:sale_brand.res_brand_sale_form_view
+msgid "Terms page"
+msgstr "Página de términos"
+
+#. module: sale_brand
+#: model:ir.model.fields,help:sale_brand.field_res_brand__terms_page
+msgid "page on the brands site where the terms can be found"
+msgstr "página en el sitio de las marcas donde pueden encontrarse los términos"

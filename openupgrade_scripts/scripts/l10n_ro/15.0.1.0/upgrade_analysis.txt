@@ -1,0 +1,4 @@
+---Models in module 'l10n_ro'---
+---Fields in module 'l10n_ro'---
+---XML records in module 'l10n_ro'---
+NEW account.tax.template: l10n_ro.tvati_extras
