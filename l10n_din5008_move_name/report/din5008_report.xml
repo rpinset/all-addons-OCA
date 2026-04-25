@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_invoice_document"
+        inherit_id="l10n_din5008.report_invoice_document"
+        priority="100"
+    >
+        <xpath expr="//t[@t-set='din5008_document_title']/span" position="after">
+            <span
+                t-if="o and o._name == 'account.move' and o.is_sale_document(include_receipts=True)"
+            >
+                <t t-out="o.name" />
+            </span>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 C4A8
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="view_mailing_contact_form_title">
+        <field name="name">mailing.contact.form.title</field>
+        <field name="model">mailing.contact</field>
+        <field name="inherit_id" ref="mass_mailing.mailing_contact_view_form" />
+        <field name="arch" type="xml">
+            <field name="company_name" position="before">
+                <field name="title_id" readonly="partner_id" />
+            </field>
+        </field>
+    </record>
+</odoo>

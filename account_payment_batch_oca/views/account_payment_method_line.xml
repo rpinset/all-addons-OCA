@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="account_payment_method_line_form" model="ir.ui.view">
+        <field name="model">account.payment.method.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_base_oca.account_payment_method_line_form"
+        />
+        <field name="arch" type="xml">
+            <field name="payment_type" position="after">
+                <field name="payment_order_ok" />
+            </field>
+            <group name="main" position="after">
+                <group
+                    name="payment_order_options"
+                    string="Options for Payment/Debit Orders"
+                    invisible="not payment_order_ok"
+                >
+                    <field
+                        name="no_debit_before_maturity"
+                        invisible="payment_type != 'inbound'"
+                    />
+                    <field name="default_date_prefered" />
+                    <field name="group_lines" />
+                    <field
+                        name="specific_sequence_id"
+                        context="{'default_padding': 5, 'default_name': name, 'default_company_id': company_id}"
+                    />
+                </group>
+                <group
+                    name="payment_order_create_defaults"
+                    string="Select Journal Items to Pay - Default Values"
+                    invisible="not payment_order_ok"
+                >
+                    <field name="default_journal_ids" widget="many2many_tags" />
+                    <field name="default_payment_mode" />
+                    <field name="default_target_move" widget="radio" />
+                    <field name="default_invoice" />
+                    <field name="default_date_type" />
+                </group>
+                <group
+                    name="email"
+                    string="Email Notification"
+                    invisible="not payment_order_ok"
+                >
+                    <field name="mail_notif" />
+                    <field
+                        name="mail_partner_policy"
+                        invisible="not mail_notif"
+                        widget="radio"
+                    />
+                </group>
+            </group>
+        </field>
+    </record>
+    <record id="view_account_payment_method_line_tree" model="ir.ui.view">
+        <field name="model">account.payment.method.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_base_oca.view_account_payment_method_line_tree"
+        />
+        <field name="arch" type="xml">
+            <field name="payment_type" position="after">
+                <field name="payment_order_ok" optional="hide" />
+            </field>
+        </field>
+    </record>
+    <record id="account_payment_method_line_search" model="ir.ui.view">
+        <field name="model">account.payment.method.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_base_oca.account_payment_method_line_search"
+        />
+        <field name="arch" type="xml">
+            <filter name="outbound" position="after">
+                <separator />
+                <filter
+                    name="payment_order_ok"
+                    string="Selectable in Payment Orders"
+                    domain="[('payment_order_ok', '=', True)]"
+                />
+                <filter
+                    name="payment_order_ko"
+                    string="Not Selectable in Payment Orders"
+                    domain="[('payment_order_ok', '=', False)]"
+                />
+            </filter>
+        </field>
+    </record>
+</odoo>

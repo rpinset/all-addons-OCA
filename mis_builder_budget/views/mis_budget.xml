@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2017 ACSONE SA/NV
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="mis_budget_form_view">
+        <field name="name">mis.budget.form (in mis_builder_budget)</field>
+        <field name="model">mis.budget</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_draft"
+                        string="Set draft"
+                        type="object"
+                        invisible="state == 'draft'"
+                    />
+                    <button
+                        name="action_confirm"
+                        string="Confirm"
+                        type="object"
+                        invisible="state != 'draft'"
+                        class="oe_highlight"
+                    />
+                    <button
+                        name="action_cancel"
+                        string="Cancel"
+                        type="object"
+                        invisible="state == 'cancelled'"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="bg-danger"
+                        invisible="active"
+                    />
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="%(mis_budget_item_act_window)d"
+                            type="action"
+                            class="oe_stat_button"
+                            icon="fa-bars"
+                            string="Budget items"
+                        />
+                    </div>
+                    <group>
+                        <field name="name" />
+                        <field name="active" invisible="True" />
+                        <field name="description" />
+                        <field name="report_id" />
+                        <field name="company_id" groups="base.group_multi_company" />
+                    </group>
+                    <group>
+                        <field name="date_range_id" />
+                        <field name="date_from" />
+                        <field name="date_to" />
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="mis_budget_search_view">
+        <field name="name">mis.budget.search (in mis_builder_budget)</field>
+        <field name="model">mis.budget</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="state" />
+                <separator />
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
+            </search>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="mis_budget_list_view">
+        <field name="name">mis.budget.list (in mis_builder_budget)</field>
+        <field name="model">mis.budget</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="report_id" />
+                <field name="date_from" />
+                <field name="date_to" />
+                <field name="state" />
+            </list>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="mis_budget_act_window">
+        <field name="name">MIS Budgets (by KPIs)</field>
+        <field name="res_model">mis.budget</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="path">mis-budgets</field>
+    </record>
+    <record model="ir.ui.menu" id="mis_budget_menu">
+        <field name="name">MIS Budgets (by KPIs)</field>
+        <field name="parent_id" ref="mis_builder.mis_report_finance_menu" />
+        <field name="action" ref="mis_budget_act_window" />
+        <field name="sequence" eval="201" />
+    </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="privilege_show_send_message_button" model="res.groups.privilege">
+        <field name="name">Send Message</field>
+        <field name="category_id" ref="base.module_category_productivity" />
+    </record>
+    <record id="group_show_send_message_button" model="res.groups">
+        <field name="name">Allowed</field>
+        <field name="privilege_id" ref="privilege_show_send_message_button" />
+    </record>
+</odoo>

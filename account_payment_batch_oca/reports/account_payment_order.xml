@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2017 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="print_account_payment_order_document">
+        <t t-call="web.external_layout">
+            <t t-set="doc" t-value="doc.with_context({'lang': user.lang})" />
+            <t t-set="address">
+                <div t-if="doc.journal_id.bank_id">
+                    <div t-field="doc.journal_id.bank_id.name" />
+                    <div t-field="doc.journal_id.bank_id.street" />
+                    <div t-field="doc.journal_id.bank_id.street2" />
+                    <div t-field="doc.journal_id.bank_id.zip" />
+                    <div t-field="doc.journal_id.bank_id.city" />
+                    <div t-field="doc.journal_id.bank_id.state.name" />
+                    <div t-field="doc.journal_id.bank_id.country.name" />
+                </div>
+            </t>
+
+            <div class="page">
+                <div class="oe_structure" id="oe_structure_1" />
+                <t t-set="layout_document_title">
+                    <span t-if="doc.payment_type == 'inbound'">Debit Order #</span>
+                    <span t-else="">Payment Order #</span>
+                    <span t-field="doc.name">PAY001</span>
+                </t>
+                <div class="row mb-4" id="informations_l1">
+                    <div class="col">
+                        <strong>Payment Method</strong>
+                        <p t-field="doc.payment_method_line_id" />
+                    </div>
+                    <div t-if="doc.company_partner_bank_id" class="col">
+                        <strong>Used Account</strong>
+                        <p t-field="doc.company_partner_bank_id" />
+                    </div>
+                </div>
+                <div class="row mb-4" id="informations_l2">
+                    <div class="col">
+                        <strong>Execution</strong>
+                        <p t-field="doc.date_prefered" />
+                    </div>
+                    <div class="col" t-if="doc.description">
+                        <strong>Description</strong>
+                        <p t-field="doc.description" />
+                    </div>
+                </div>
+                <table class="o_has_total_table table o_main_table table-borderless">
+                    <thead>
+                        <tr>
+                            <th name="th_partner">
+                                <strong>Partner</strong>
+                            </th>
+                            <th name="th_bank_account">
+                                <strong>Bank Account</strong>
+                            </th>
+                            <th name="th_communication">
+                                <strong>Communication</strong>
+                            </th>
+                            <th class="text-center" name="th_date">
+                                <strong>Payment Date</strong>
+                            </th>
+                            <th class="text-end" name="th_amount_currency">
+                                <strong>Amount</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="doc.payment_line_ids" t-as="line">
+                            <td name="td_partner">
+                                <span t-field="line.partner_id" />
+                            </td>
+                            <td name="td_bank_account">
+                                <span t-field="line.partner_bank_id" />
+                            </td>
+                            <td name="td_communication">
+                                <span t-esc="line.communication" />
+                            </td>
+                            <td class="text-center" name="td_date">
+                                <span t-field="line.date" />
+                            </td>
+                            <td class="text-end" name="td_amount_currency">
+                                <span t-field="line.amount_currency" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="total" class="row justify-content-end mt-n3">
+                    <div class="col-3">
+                        <table class="o_total_table table table-borderless">
+                            <tr class="o_total">
+                                <td class="text-end">
+                                    <strong>Total</strong>
+                                </td>
+                                <td class="text-end">
+                                    <span t-field="doc.total_company_currency" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="print_account_payment_order_main">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t
+                    t-call="account_payment_batch_oca.print_account_payment_order_document"
+                    t-lang="user.lang"
+                />
+            </t>
+        </t>
+    </template>
+</odoo>

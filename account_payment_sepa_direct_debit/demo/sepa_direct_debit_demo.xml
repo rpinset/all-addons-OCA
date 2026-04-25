@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="base.main_company" model="res.company">
+        <field name="sepa_creditor_identifier">FR78ZZZ424242</field>
+    </record>
+    <!-- Azure Interior -->
+    <record id="res_partner_12_mandate" model="account.banking.mandate">
+        <field name="partner_id" ref="base.res_partner_12" />
+        <field
+            name="partner_bank_id"
+            ref="account_payment_base_oca.res_partner_12_iban"
+        />
+        <field name="format">sepa_core</field>
+        <field name="type">recurrent</field>
+        <field name="signature_date" eval="time.strftime('%Y-01-01')" />
+        <field name="state">valid</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+    <!-- Deco Addict -->
+    <record id="res_partner_2_mandate" model="account.banking.mandate">
+        <field name="partner_id" ref="base.res_partner_2" />
+        <field
+            name="partner_bank_id"
+            ref="account_payment_base_oca.res_partner_2_iban"
+        />
+        <field name="format">sepa_core</field>
+        <field name="type">recurrent</field>
+        <field name="signature_date" eval="time.strftime('%Y-%m-01')" />
+        <field name="state">valid</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+</odoo>

@@ -1,0 +1,492 @@
+# Copyright 2013-2020 Camptocamp SA
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
+
+import logging
+import random
+import time
+from datetime import datetime, timedelta
+
+from odoo import api, exceptions, fields, models
+from odoo.tools import config, html_escape
+from odoo.tools.sql import create_index
+
+from odoo.addons.base_sparse_field.models.fields import Serialized
+
+from ..delay import Graph
+from ..exception import JobError, RetryableJobError
+from ..fields import JobSerialized
+from ..job import (
+    CANCELLED,
+    DONE,
+    ENQUEUED,
+    FAILED,
+    PENDING,
+    STARTED,
+    STATES,
+    WAIT_DEPENDENCIES,
+    Job,
+)
+
+_logger = logging.getLogger(__name__)
+
+
+class QueueJob(models.Model):
+    """Model storing the jobs to be executed."""
+
+    _name = "queue.job"
+    _description = "Queue Job"
+    _inherit = ["mail.thread", "mail.activity.mixin"]
+    _log_access = False
+
+    _order = "date_created DESC, date_done DESC"
+
+    _removal_interval = 30  # days
+    _default_related_action = "related_action_open_record"
+
+    # This must be passed in a context key "_job_edit_sentinel" to write on
+    # protected fields. It protects against crafting "queue.job" records from
+    # RPC (e.g. on internal methods). When ``with_delay`` is used, the sentinel
+    # is set.
+    EDIT_SENTINEL = object()
+    _protected_fields = (
+        "uuid",
+        "name",
+        "date_created",
+        "model_name",
+        "method_name",
+        "func_string",
+        "channel_method_name",
+        "job_function_id",
+        "records",
+        "args",
+        "kwargs",
+    )
+
+    uuid = fields.Char(string="UUID", readonly=True, index=True, required=True)
+    graph_uuid = fields.Char(
+        string="Graph UUID",
+        readonly=True,
+        index=True,
+        help="Single shared identifier of a Graph. Empty for a single job.",
+    )
+    user_id = fields.Many2one(comodel_name="res.users", string="User ID")
+    company_id = fields.Many2one(
+        comodel_name="res.company", string="Company", index=True
+    )
+    name = fields.Char(string="Description", readonly=True)
+
+    model_name = fields.Char(string="Model", readonly=True)
+    method_name = fields.Char(readonly=True)
+    records = JobSerialized(
+        string="Record(s)",
+        readonly=True,
+        base_type=models.BaseModel,
+    )
+    dependencies = Serialized(readonly=True)
+    # dependency graph as expected by the field widget
+    dependency_graph = Serialized(compute="_compute_dependency_graph")
+    graph_jobs_count = fields.Integer(compute="_compute_graph_jobs_count")
+    args = JobSerialized(readonly=True, base_type=tuple)
+    kwargs = JobSerialized(readonly=True, base_type=dict)
+    func_string = fields.Char(string="Task", readonly=True)
+
+    state = fields.Selection(STATES, readonly=True, required=True, index=True)
+    priority = fields.Integer(aggregator=False)
+    exc_name = fields.Char(string="Exception", readonly=True)
+    exc_message = fields.Char(string="Exception Message", readonly=True, tracking=True)
+    exc_info = fields.Text(string="Exception Info", readonly=True)
+    result = fields.Text(readonly=True)
+
+    date_created = fields.Datetime(string="Created Date", readonly=True)
+    date_started = fields.Datetime(string="Start Date", readonly=True)
+    date_enqueued = fields.Datetime(string="Enqueue Time", readonly=True)
+    date_done = fields.Datetime(readonly=True)
+    exec_time = fields.Float(
+        string="Execution Time (avg)",
+        readonly=True,
+        aggregator="avg",
+        help="Time required to execute this job in seconds. Average when grouped.",
+    )
+    date_cancelled = fields.Datetime(readonly=True)
+
+    eta = fields.Datetime(string="Execute only after")
+    retry = fields.Integer(string="Current try")
+    max_retries = fields.Integer(
+        string="Max. retries",
+        help="The job will fail if the number of tries reach the "
+        "max. retries.\n"
+        "Retries are infinite when empty.",
+    )
+    # FIXME the name of this field is very confusing
+    channel_method_name = fields.Char(string="Complete Method Name", readonly=True)
+    job_function_id = fields.Many2one(
+        comodel_name="queue.job.function",
+        string="Job Function",
+        readonly=True,
+    )
+
+    channel = fields.Char(index=True)
+
+    identity_key = fields.Char(readonly=True)
+    worker_pid = fields.Integer(readonly=True)
+
+    def init(self):
+        cr = self.env.cr
+        # Used by Job.job_record_with_same_identity_key
+        create_index(
+            cr,
+            "queue_job_identity_key_state_partial_index",
+            "queue_job",
+            ["identity_key"],
+            where=(
+                "state in ('pending','enqueued','wait_dependencies') "
+                "AND identity_key IS NOT NULL"
+            ),
+            comment=("Queue Job: partial index for identity_key on active states"),
+        )
+        # Used by <queue.job>.autovacuum
+        create_index(
+            cr,
+            "queue_job_channel_date_done_date_created_index",
+            "queue_job",
+            ["channel", "date_done", "date_created"],
+            comment="Queue Job: index to accelerate autovacuum",
+        )
+
+    @api.depends("dependencies")
+    def _compute_dependency_graph(self):
+        graph_uuids = [uuid for uuid in self.mapped("graph_uuid") if uuid]
+        if graph_uuids:
+            ids_per_graph_uuid = dict(
+                self.env["queue.job"]._read_group(
+                    [("graph_uuid", "in", graph_uuids)],
+                    groupby=["graph_uuid"],
+                    aggregates=["id:array_agg"],
+                )
+            )
+        else:
+            ids_per_graph_uuid = {}
+        for record in self:
+            if not record.graph_uuid:
+                record.dependency_graph = {}
+                continue
+
+            graph_jobs = self.browse(ids_per_graph_uuid.get(record.graph_uuid) or [])
+            if not graph_jobs:
+                record.dependency_graph = {}
+                continue
+
+            graph_ids = {graph_job.uuid: graph_job.id for graph_job in graph_jobs}
+            graph_jobs_by_ids = {graph_job.id: graph_job for graph_job in graph_jobs}
+
+            graph = Graph()
+            for graph_job in graph_jobs:
+                graph.add_vertex(graph_job.id)
+                for parent_uuid in graph_job.dependencies["depends_on"]:
+                    parent_id = graph_ids.get(parent_uuid)
+                    if not parent_id:
+                        continue
+                    graph.add_edge(parent_id, graph_job.id)
+                for child_uuid in graph_job.dependencies["reverse_depends_on"]:
+                    child_id = graph_ids.get(child_uuid)
+                    if not child_id:
+                        continue
+                    graph.add_edge(graph_job.id, child_id)
+
+            record.dependency_graph = {
+                # list of ids
+                "nodes": [
+                    graph_jobs_by_ids[graph_id]._dependency_graph_vis_node()
+                    for graph_id in graph.vertices()
+                ],
+                # list of tuples (from, to)
+                "edges": graph.edges(),
+            }
+
+    def _dependency_graph_vis_node(self):
+        """Return the node as expected by the JobDirectedGraph widget"""
+        default = ("#D2E5FF", "#2B7CE9")
+        colors = {
+            DONE: ("#C2FABC", "#4AD63A"),
+            FAILED: ("#FB7E81", "#FA0A10"),
+            STARTED: ("#FFFF00", "#FFA500"),
+        }
+        return {
+            "id": self.id,
+            "title": (
+                f"<strong>{html_escape(self.display_name)}</strong><br/>"
+                f"{html_escape(self.func_string)}"
+            ),
+            "color": colors.get(self.state, default)[0],
+            "border": colors.get(self.state, default)[1],
+            "shadow": True,
+        }
+
+    def _compute_graph_jobs_count(self):
+        graph_uuids = [uuid for uuid in self.mapped("graph_uuid") if uuid]
+        if graph_uuids:
+            count_per_graph_uuid = dict(
+                self.env["queue.job"]._read_group(
+                    [("graph_uuid", "in", graph_uuids)],
+                    groupby=["graph_uuid"],
+                    aggregates=["__count"],
+                )
+            )
+        else:
+            count_per_graph_uuid = {}
+        for record in self:
+            record.graph_jobs_count = count_per_graph_uuid.get(record.graph_uuid) or 0
+
+    @api.model_create_multi
+    @api.private
+    def create(self, vals_list):
+        return super(
+            QueueJob,
+            self.with_context(mail_create_nolog=True, mail_create_nosubscribe=True),
+        ).create(vals_list)
+
+    def write(self, vals):
+        if self.env.context.get("_job_edit_sentinel") is not self.EDIT_SENTINEL:
+            write_on_protected_fields = [
+                fieldname for fieldname in vals if fieldname in self._protected_fields
+            ]
+            if write_on_protected_fields:
+                # use env translation and lazy formatting (args to _)
+                msg = self.env._(
+                    "Not allowed to change field(s): %s",
+                    ", ".join(write_on_protected_fields),
+                )
+                raise exceptions.AccessError(msg)
+
+        different_user_jobs = self.browse()
+        if vals.get("user_id"):
+            different_user_jobs = self.filtered(
+                lambda records: records.env.user.id != vals["user_id"]
+            )
+
+        if vals.get("state") == "failed":
+            self._message_post_on_failure()
+
+        result = super().write(vals)
+
+        for record in different_user_jobs:
+            # the user is stored in the env of the record, but we still want to
+            # have a stored user_id field to be able to search/groupby, so
+            # synchronize the env of records with user_id
+            super(QueueJob, record).write(
+                {"records": record.records.with_user(vals["user_id"])}
+            )
+        return result
+
+    def open_related_action(self):
+        """Open the related action associated to the job"""
+        self.ensure_one()
+        job = Job.load(self.env, self.uuid)
+        action = job.related_action()
+        if action is None:
+            msg = self.env._("No action available for this job")
+            raise exceptions.UserError(msg)
+        return action
+
+    def open_graph_jobs(self):
+        """Return action that opens all jobs of the same graph"""
+        self.ensure_one()
+        jobs = self.env["queue.job"].search([("graph_uuid", "=", self.graph_uuid)])
+
+        action = self.env["ir.actions.act_window"]._for_xml_id(
+            "queue_job.action_queue_job"
+        )
+        action.update(
+            {
+                "name": self.env._("Jobs for graph %s", self.graph_uuid),
+                "context": {},
+                "domain": [("id", "in", jobs.ids)],
+            }
+        )
+        return action
+
+    def _change_job_state(self, state, result=None):
+        """Change the state of the `Job` object
+
+        Changing the state of the Job will automatically change some fields
+        (date, result, ...).
+        """
+        for record in self:
+            job_ = Job.load(record.env, record.uuid)
+            if state == DONE:
+                job_.set_done(result=result)
+                job_.store()
+                record.env["queue.job"].flush_model()
+                job_.enqueue_waiting()
+            elif state == PENDING:
+                job_.set_pending(result=result)
+                job_.store()
+            elif state == CANCELLED:
+                job_.set_cancelled(result=result)
+                job_.store()
+                record.env["queue.job"].flush_model()
+                job_.cancel_dependent_jobs()
+            else:
+                msg = f"State not supported: {state}"
+                raise ValueError(msg)
+
+    def button_done(self):
+        # If job was set to STARTED or CANCELLED, do not set it to DONE
+        states_from = (WAIT_DEPENDENCIES, PENDING, ENQUEUED, FAILED)
+        result = self.env._("Manually set to done by %s", self.env.user.name)
+        records = self.filtered(lambda job_: job_.state in states_from)
+        records._change_job_state(DONE, result=result)
+        return True
+
+    def button_cancelled(self):
+        # If job was set to DONE do not cancel it
+        states_from = (WAIT_DEPENDENCIES, PENDING, ENQUEUED, FAILED)
+        result = self.env._("Cancelled by %s", self.env.user.name)
+        records = self.filtered(lambda job_: job_.state in states_from)
+        records._change_job_state(CANCELLED, result=result)
+        return True
+
+    def requeue(self):
+        # If job is already in queue or started, do not requeue it
+        states_from = (FAILED, DONE, CANCELLED)
+        records = self.filtered(lambda job_: job_.state in states_from)
+        records._change_job_state(PENDING)
+        return True
+
+    def _message_post_on_failure(self):
+        # subscribe the users now to avoid to subscribe them
+        # at every job creation
+        domain = self._subscribe_users_domain()
+        base_users = self.env["res.users"].search(domain)
+        suscribe_job_creator = self._subscribe_job_creator()
+        for record in self:
+            users = base_users
+            if suscribe_job_creator:
+                users |= record.user_id
+            record.message_subscribe(partner_ids=users.mapped("partner_id").ids)
+            msg = record._message_failed_job()
+            if msg:
+                record.message_post(body=msg, subtype_xmlid="queue_job.mt_job_failed")
+
+    def _subscribe_users_domain(self):
+        """Subscribe all users having the 'Queue Job Manager' group"""
+        group = self.env.ref("queue_job.group_queue_job_manager")
+        if not group:
+            return None
+        companies = self.mapped("company_id")
+        domain = [("group_ids", "=", group.id)]
+        if companies:
+            domain.append(("company_id", "in", companies.ids))
+        return domain
+
+    @api.model
+    def _subscribe_job_creator(self):
+        """
+        Whether the user that created the job should be subscribed to the job,
+        in addition to users determined by `_subscribe_users_domain`
+        """
+        return True
+
+    def _message_failed_job(self):
+        """Return a message which will be posted on the job when it is failed.
+
+        It can be inherited to allow more precise messages based on the
+        exception informations.
+
+        If nothing is returned, no message will be posted.
+        """
+        self.ensure_one()
+        return self.env._(
+            "Something bad happened during the execution of the job. "
+            "More details in the 'Exception Information' section."
+        )
+
+    def _needaction_domain_get(self):
+        """Returns the domain to filter records that require an action
+
+        :return: domain or False is no action
+        """
+        return [("state", "=", "failed")]
+
+    def autovacuum(self):
+        """Delete all jobs done based on the removal interval defined on the
+           channel
+
+        Called from a cron.
+        """
+        for channel in self.env["queue.job.channel"].search([]):  # pylint: disable=no-search-all
+            deadline = datetime.now() - timedelta(days=int(channel.removal_interval))
+            # Delete in chunks using a stable order (matches composite index)
+            while True:
+                jobs = self.search(
+                    [
+                        "|",
+                        ("date_done", "<=", deadline),
+                        ("date_cancelled", "<=", deadline),
+                        ("channel", "=", channel.complete_name),
+                    ],
+                    order="date_done, date_created",
+                    limit=1000,
+                )
+                if jobs:
+                    jobs.unlink()
+                    if not config["test_enable"]:
+                        self.env.cr.commit()  # pylint: disable=E8102
+                else:
+                    break
+        return True
+
+    def related_action_open_record(self):
+        """Open a form view with the record(s) of the job.
+
+        For instance, for a job on a ``product.product``, it will open a
+        ``product.product`` form view with the product record(s) concerned by
+        the job. If the job concerns more than one record, it opens them in a
+        list.
+
+        This is the default related action.
+
+        """
+        self.ensure_one()
+        records = self.records.exists()
+        if not records:
+            return None
+        action = {
+            "name": self.env._("Related Record"),
+            "type": "ir.actions.act_window",
+            "view_mode": "form",
+            "res_model": records._name,
+        }
+        if len(records) == 1:
+            action["res_id"] = records.id
+        else:
+            action.update(
+                {
+                    "name": self.env._("Related Records"),
+                    "view_mode": "list,form",
+                    "domain": [("id", "in", records.ids)],
+                }
+            )
+        return action
+
+    def _test_job(
+        self,
+        failure_rate=0,
+        job_duration=0,
+        commit_within_job=False,
+        failure_retry_seconds=0,
+    ):
+        _logger.info("Running test job.")
+        if random.random() <= failure_rate:
+            if failure_retry_seconds:
+                raise RetryableJobError(
+                    f"Retryable job failed, will be retried in "
+                    f"{failure_retry_seconds} seconds",
+                    seconds=failure_retry_seconds,
+                )
+            else:
+                raise JobError("Job failed")
+        if job_duration:
+            time.sleep(job_duration)
+        if commit_within_job:
+            self.env.cr.commit()  # pylint: disable=invalid-commit

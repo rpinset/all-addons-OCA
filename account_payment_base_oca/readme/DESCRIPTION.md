@@ -1,0 +1,5 @@
+This is the new base module for the OCA project **bank-payment-alternative**. As the name suggests, the OCA project **bank-payment-alternative** is an alternative to the OCA project **bank-payment**. The project **bank-payment-alternative** uses the native payment method object of Odoo (model *account.payment.method.line*) which has been introduced in Odoo v15 and is used on partners and invoices since Odoo v18.
+
+This module adds support for variable link between bank/cash journal and payment method. A typical use case is for a company that has several bank accounts and wants to have an outbound payment method *Wire transfer to suppliers* which is not linked to a specific bank account and decide which bank account will be debited when confirming the payment order.
+
+This module also adds support for the display of partially scrambled bank account numbers. This is useful for some inbound payment methods where the company debits the bank account of its customers and the company wants to show on its customer invoices the bank account number that will be debited without printing the full bank account number, but print it partially scrambled.

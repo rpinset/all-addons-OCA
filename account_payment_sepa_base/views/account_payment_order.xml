@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  © 2016 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="account_payment_order_form" model="ir.ui.view">
+        <field name="name">pain.base.account.payment.order.form</field>
+        <field name="model">account.payment.order</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_batch_oca.account_payment_order_form"
+        />
+        <field name="arch" type="xml">
+            <field name="company_partner_bank_id" position="after">
+                <field
+                    name="sepa"
+                    invisible="payment_method_code not in ('sepa_credit_transfer', 'sepa_direct_debit')"
+                />
+                <field name="show_warning_not_sepa" invisible="1" />
+                <field
+                    name="batch_booking"
+                    invisible="payment_method_code not in ('sepa_credit_transfer', 'sepa_direct_debit')"
+                    readonly="state not in ('draft', 'open')"
+                />
+                <field
+                    name="charge_bearer"
+                    invisible="sepa or payment_method_code not in ('sepa_credit_transfer', 'sepa_direct_debit')"
+                    readonly="state not in ('draft', 'open')"
+                />
+            </field>
+            <header position="after">
+                <div
+                    class="alert alert-warning"
+                    role="alert"
+                    invisible="not show_warning_not_sepa"
+                >
+                        This payment order is <b
+                >not SEPA</b>. If it is not intented, check that all payment lines are in € and that all bank accounts are valid IBANs with a country prefix in the <a
+                    href="https://en.wikipedia.org/wiki/Single_Euro_Payments_Area"
+                    target="_blank"
+                >SEPA zone</a>.
+                </div>
+            </header>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,396 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_base_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-09-17 17:47+0000\n"
+"Last-Translator: matnoublanche <log-github@thieu.biz>\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "# of Chars"
+msgstr "nombre de caractères"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__show_bank_account_chars
+msgid "# of Digits to Show for Customer Bank Account"
+msgstr "Nombre de chiffres à afficher pour le compte bancaire du client"
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/res_bank.py:0
+msgid ""
+"A valid BIC contains 8 or 11 characters. BIC '%(bic)s' contains %(num)d "
+"characters, so it is not valid."
+msgstr ""
+"Un code BIC valide contient 8 ou 11 caractères. Le code BIC '%(bic)s' "
+"contient %(num)d caractères et n'est donc pas valide."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_setup_bank_manual_config__acc_number_scrambled
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_res_partner_bank__acc_number_scrambled
+msgid "Acc Number Scrambled"
+msgstr "Numéro de compte brouillé"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_bank_statement_line__bank_account_required
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_move__bank_account_required
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_payment_method__bank_account_required
+msgid ""
+"Activate this option if this payment method requires you to know the bank "
+"account number of your customer or supplier."
+msgstr ""
+"Activez cette option si ce mode de paiement nécessite de connaître le numéro "
+"de compte bancaire de votre client ou fournisseur."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__variable_journal_ids
+msgid "Allowed Bank Journals"
+msgstr "Journaux bancaires autorisés"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/res_bank.py:0
+msgid "BIC '%(bic)s' doesn't respect the standard pattern '{pattern}'."
+msgstr "Le BIC '%(bic)s' ne respecte pas le modèle standard '{pattern}'."
+
+#. module: account_payment_base_oca
+#: model:ir.model,name:account_payment_base_oca.model_res_bank
+msgid "Bank"
+msgstr "Banque"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_bank_statement_line__bank_account_required
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_move__bank_account_required
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method__bank_account_required
+msgid "Bank Account Required"
+msgstr "Compte bancaire requis"
+
+#. module: account_payment_base_oca
+#: model:ir.model,name:account_payment_base_oca.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Comptes bancaires"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_bank_statement_line__payment_method_code
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_move__payment_method_code
+msgid "Code"
+msgstr "Code"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: account_payment_base_oca
+#: model:ir.model,name:account_payment_base_oca.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "Default Journal"
+msgstr "Journal par défaut"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "Display Customer Bank Account in Invoice Report"
+msgstr "Afficher le compte bancaire du client dans le rapport de facture"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__filter_journal_ids
+msgid "Filter Journal"
+msgstr "Filter le journal"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__first
+msgid "First n chars"
+msgstr "n premiers caractères"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__first_last
+msgid "First n chars and Last n chars"
+msgstr "n premiers caractères et n derniers caractères"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__bank_account_link__fixed
+msgid "Fixed"
+msgstr "Fixe"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_payment_method_line__bank_account_link
+msgid ""
+"For payment methods that are always attached to the same bank account of "
+"your company (such as wire transfer from customers or SEPA direct debit from"
+" suppliers), select 'Fixed'. For payment methods that are not always "
+"attached to the same bank account (such as SEPA Direct debit for customers, "
+"wire transfer to suppliers), you should select 'Variable', which means that "
+"you will select the bank account on the payment order. If your company only "
+"has one bank account, you should always select 'Fixed'."
+msgstr ""
+"Pour les modes de paiement toujours rattachés au même compte bancaire de "
+"votre entreprise (comme les virements bancaires des clients ou les "
+"prélèvements SEPA des fournisseurs), sélectionnez 'Fixe'. Pour les modes de "
+"paiement qui ne sont pas toujours rattachés au même compte bancaire (comme "
+"les prélèvements SEPA des clients ou les virements des fournisseurs), "
+"sélectionnez 'Variable', ce qui signifie que vous sélectionnerez le compte "
+"bancaire figurant sur l'ordre de paiement. Si votre entreprise n'a qu'un "
+"seul compte bancaire, sélectionnez toujours 'Fixe'."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__full
+msgid "Full"
+msgstr "Complet"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Group By"
+msgstr "Grouper par"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Inbound"
+msgstr "Entrant"
+
+#. module: account_payment_base_oca
+#: model:ir.model,name:account_payment_base_oca.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Statistiques sur les factures"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__journal_id
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_payment_base_oca
+#: model:ir.model,name:account_payment_base_oca.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__last
+msgid "Last n chars"
+msgstr "n derniers caractères"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__bank_account_link
+msgid "Link to Bank Account"
+msgstr "Lien vers le compte bancaire"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__show_bank_account__no
+msgid "No"
+msgstr "Non"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Not Selectable"
+msgstr "Non sélectionnable"
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/account_payment_method_line.py:0
+msgid ""
+"On %(name)s, the Payment Method %(method)s is configured with Bank Account "
+"Required but journal %(journal)s is not linked to a bank account."
+msgstr ""
+"Sur %(name)s, le mode de paiement %(method)s est configuré avec Compte "
+"bancaire requis mais le journal %(journal)s n'est pas lié à un compte "
+"bancaire."
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/account_payment_method_line.py:0
+msgid ""
+"On %(name)s, the default journal '%(default_journal)s' is not part of the "
+"allowed bank journals."
+msgstr ""
+"Sur %(name)s, le journal par défaut '%(default_journal)s' ne fait pas partie "
+"des journaux bancaires autorisés."
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/account_payment_method_line.py:0
+msgid "On %(name)s, the journal is not set."
+msgstr "Sur %(name)s, le journal n'est pas défini."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_payment_method_line__show_bank_account
+msgid "On invoice report, show partial or full bank account number."
+msgstr ""
+"Sur le rapport de facture, indiquez le numéro de compte bancaire partiel ou "
+"complet."
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Outbound"
+msgstr "Sortant"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "Outstanding Payment Account"
+msgstr "Compte de paiement en suspens"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__payment_account_id
+msgid "Outstanding Payment/Receipt Account"
+msgstr "Compte de paiement/reçu en suspens"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "Outstanding Receipt Account"
+msgstr "Compte de réception en suspens"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_invoice_report__payment_method_line_id
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.view_account_invoice_report_search
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.view_move_form
+msgid "Payment Method"
+msgstr "Mode de paiement"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__refund_payment_method_line_id
+msgid "Payment Method for Refunds"
+msgstr "Mode de paiement pour les remboursements"
+
+#. module: account_payment_base_oca
+#: model:ir.actions.act_window,name:account_payment_base_oca.account_payment_method_line_action
+#: model:ir.model,name:account_payment_base_oca.model_account_payment_method
+#: model:ir.model,name:account_payment_base_oca.model_account_payment_method_line
+#: model:ir.ui.menu,name:account_payment_base_oca.account_payment_method_line_menu
+msgid "Payment Methods"
+msgstr "Modes de paiement"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_res_partner__property_outbound_payment_method_line_id
+#: model:ir.model.fields,help:account_payment_base_oca.field_res_users__property_outbound_payment_method_line_id
+msgid ""
+"Preferred payment method when buying from this vendor. This will be set by "
+"default on all outgoing payments created for this vendor"
+msgstr ""
+"Mode de paiement privilégié pour les achats auprès de ce fournisseur. Ce "
+"mode sera défini par défaut pour tous les paiements sortants créés pour ce "
+"fournisseur"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_res_partner__property_inbound_payment_method_line_id
+#: model:ir.model.fields,help:account_payment_base_oca.field_res_users__property_inbound_payment_method_line_id
+msgid ""
+"Preferred payment method when selling to this customer. This will be set by "
+"default on all incoming payments created for this customer"
+msgstr ""
+"Mode de paiement privilégié pour la vente à ce client. Ce mode sera défini "
+"par défaut pour tous les paiements entrants créés pour ce client"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_res_partner__property_inbound_payment_method_line_id
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_res_users__property_inbound_payment_method_line_id
+msgid "Property Inbound Payment Method Line"
+msgstr "Ligne de mode de paiement entrant"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_res_partner__property_outbound_payment_method_line_id
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_res_users__property_outbound_payment_method_line_id
+msgid "Property Outbound Payment Method Line"
+msgstr "Ligne de mode de paiement sortant"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__report_description
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_form
+msgid "Report Description"
+msgstr "Description du rapport"
+
+#. module: account_payment_base_oca
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Selectable"
+msgstr "Sélectionnable"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__selectable
+msgid "Selectable on Partners/Invoices"
+msgstr "Sélectionnable sur les partenaires/factures"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__show_bank_account
+msgid "Show Customer Bank Account"
+msgstr "Afficher le compte bancaire du client"
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,field_description:account_payment_base_oca.field_account_payment_method_line__payment_method_id
+#: model_terms:ir.ui.view,arch_db:account_payment_base_oca.account_payment_method_line_search
+msgid "Technical Payment Method"
+msgstr "Mode de paiement technique"
+
+#. module: account_payment_base_oca
+#: model:ir.model.constraint,message:account_payment_base_oca.constraint_account_payment_method_line_show_bank_account_chars_positive
+msgid ""
+"The number of digits to show for customer bank account must be positive or "
+"null."
+msgstr ""
+"Le nombre de chiffres à afficher pour le compte bancaire du client doit être "
+"positif ou nul."
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/account_payment_method_line.py:0
+msgid ""
+"The payment method '%(name)s' has a variable link to a bank account, so it "
+"should not have an outstanding payment/receipt account. Only payment methods"
+" with a fixed link to a bank account can have one."
+msgstr ""
+"Le mode de paiement '%(name)s' possède un lien variable vers un compte "
+"bancaire, il ne doit donc pas avoir de compte de paiement/reçu en attente. "
+"Seuls les modes de paiement ayant un lien fixe vers un compte bancaire "
+"peuvent en avoir un."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields,help:account_payment_base_oca.field_account_payment_method_line__refund_payment_method_line_id
+msgid ""
+"This payment method will be used when doing refunds coming from the current "
+"payment method."
+msgstr ""
+"Ce mode de paiement sera utilisé lors des remboursements provenant du mode "
+"de paiement actuel."
+
+#. module: account_payment_base_oca
+#: model:ir.model.fields.selection,name:account_payment_base_oca.selection__account_payment_method_line__bank_account_link__variable
+msgid "Variable"
+msgstr "Variable"
+
+#. module: account_payment_base_oca
+#. odoo-python
+#: code:addons/account_payment_base_oca/models/account_payment_method_line.py:0
+msgid ""
+"You should not edit the payment method '%(name)s' to change it from a fixed "
+"bank account link to a variable bank account link. You should create a new "
+"payment method with a variable bank account link."
+msgstr ""
+"Vous ne devez pas modifier le mode de paiement '%(name)s' pour passer d'un "
+"compte bancaire fixe à un compte bancaire variable. Vous devez créer un "
+"nouveau mode de paiement avec un compte bancaire variable."

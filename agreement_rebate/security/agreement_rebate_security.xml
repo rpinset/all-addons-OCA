@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="group_use_agreement_rebate" model="res.groups">
+        <field name="name">Use agreement rebate</field>
+    </record>
+    <record id="agreement_rebate_settlement_comp_rule" model="ir.rule">
+        <field name="name">Rebate settlement multi-company</field>
+        <field name="model_id" ref="model_agreement_rebate_settlement" />
+        <field name="domain_force">[('company_id', 'in', [False] + company_ids)]</field>
+    </record>
+    <record id="agreement_rebate_settlement_line_comp_rule" model="ir.rule">
+        <field name="name">Rebate settlement line multi-company</field>
+        <field name="model_id" ref="model_agreement_rebate_settlement_line" />
+        <field name="domain_force">[('company_id', 'in', [False] + company_ids)]</field>
+    </record>
+</odoo>

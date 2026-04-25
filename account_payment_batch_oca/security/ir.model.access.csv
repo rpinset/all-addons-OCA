@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_payment_order,Full access on account.payment.order to Payment Manager,model_account_payment_order,group_account_payment,1,1,1,1
+access_account_payment_order_read,Read access on account.payment.order to Auditor,model_account_payment_order,account.group_account_readonly,1,0,0,0
+access_account_payment_line,Full access on account.payment.line to Payment Manager,model_account_payment_line,group_account_payment,1,1,1,1
+access_account_payment_line_read,Read access on account.payment.line to Auditor,model_account_payment_line,account.group_account_readonly,1,0,0,0
+access_account_payment_lot,Full access on account.payment.lot to Payment Manager,model_account_payment_lot,group_account_payment,1,1,1,1
+access_account_payment_lot_read,Read access on account.payment.lot to Auditor,model_account_payment_lot,account.group_account_readonly,1,0,0,0
+access_bank_payment_line,Full access on account.payment to Payment Manager,account.model_account_payment,group_account_payment,1,1,1,1
+access_account_payment_line_create,access_account_payment_line_create,model_account_payment_line_create,group_account_payment,1,1,1,1

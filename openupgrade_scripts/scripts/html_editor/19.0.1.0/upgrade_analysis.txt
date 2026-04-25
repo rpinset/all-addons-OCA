@@ -1,0 +1,23 @@
+---Models in module 'html_editor'---
+obsolete model web_editor.assets (renamed to website.assets in module website) [abstract]
+obsolete model web_editor.converter.test (renamed to html_editor.converter.test)
+obsolete model web_editor.converter.test.sub (renamed to html_editor.converter.test.sub)
+new model html_editor.converter.test (renamed from web_editor.converter.test)
+new model html_editor.converter.test.sub (renamed from web_editor.converter.test.sub)
+---Fields in module 'html_editor'---
+web_editor   / web_editor.converter.test / many2one (many2one)           : relation is now 'html_editor.converter.test.sub' ('web_editor.converter.test.sub') [nothing to do]
+---XML records in module 'html_editor'---
+DEL ir.asset: web_editor.13_0_color_system_support_primary_variables_scss
+NEW ir.model.access: html_editor.access_html_editor_converter_test
+NEW ir.model.access: html_editor.access_html_editor_converter_test_sub
+DEL ir.model.access: web_editor.access_web_editor_converter_test
+DEL ir.model.access: web_editor.access_web_editor_converter_test_sub
+DEL ir.ui.view: web_editor.colorpicker
+DEL ir.ui.view: web_editor.s_hr
+DEL ir.ui.view: web_editor.snippet_options
+DEL ir.ui.view: web_editor.snippet_options_background_color_widget
+DEL ir.ui.view: web_editor.snippet_options_background_options
+DEL ir.ui.view: web_editor.snippet_options_image_optimization_widgets
+DEL ir.ui.view: web_editor.snippet_options_version_control
+DEL ir.ui.view: web_editor.snippets
+DEL ir.ui.view: web_editor.tests

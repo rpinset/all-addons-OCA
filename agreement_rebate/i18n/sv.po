@@ -1,0 +1,691 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_rebate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-11-04 11:20+0000\n"
+"Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__rebate_discount
+msgid "% Dto"
+msgstr "% Dto"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_form
+msgid ""
+"<i class=\"fa fa-filter\"/>\n"
+"                            You can create a filter to apply the rebate.\n"
+"                            Categories, products, variants, generic conditions to reuse or a custom filter"
+msgstr ""
+"<i class=\"fa fa-filter\"/>\n"
+"                            Du kan skapa ett filter för att tillämpa "
+"rabatten.\n"
+"                            Kategorier, produkter, varianter, generiska "
+"villkor att återanvända eller ett anpassat filter"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+msgid "<span>Agreement</span>"
+msgstr "<span>Avtal</span>"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+msgid "<span>Details</span>"
+msgstr "<span>Detaljer</span>"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+msgid "<span>Lines</span>"
+msgstr "<span>Rader</span>"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__active
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__active
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__additional_consumption
+msgid "Additional Consumption"
+msgstr "Ytterligare konsumtion"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__agreement_id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__agreement_id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__agreement_id
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+msgid "Agreement"
+msgstr "Avtal"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_rebate_condition
+msgid "Agreement Rebate Condition"
+msgstr "Avtal Rabattvillkor"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_rebate_line
+msgid "Agreement Rebate Lines"
+msgstr "Avtal Rabattrader"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_rebate_section
+msgid "Agreement Rebate Section"
+msgstr "Avsnitt om avtalsrabatt"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_rebate_settlement
+msgid "Agreement Rebate Settlement"
+msgstr "Avtal Återbetalning Uppgörelse"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_rebate_settlement_line
+msgid "Agreement Rebate Settlement Lines"
+msgstr "Avtal Rabatt Avräkningsrader"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_type
+msgid "Agreement Types"
+msgstr "Typer av avtal"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_invoice_create_wiz
+msgid "Agreement invoice create wizard"
+msgstr "Guide för att skapa avtalsfakturor"
+
+#. module: agreement_rebate
+#: model:ir.actions.act_window,name:agreement_rebate.agreement_rebate_condition_action
+msgid "Agreement rebate conditions"
+msgstr "Villkor för avtalsrabatt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__rebate_line_ids
+msgid "Agreement rebate lines"
+msgstr "Avtalets rabattsrader"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__rebate_section_ids
+msgid "Agreement rebate sections"
+msgstr "Avtalets rabattavsnitt"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_agreement_settlement_create_wiz
+msgid "Agreement settlement create wizard"
+msgstr "Guide för avtal förlikning"
+
+#. module: agreement_rebate
+#: model:ir.actions.act_window,name:agreement_rebate.agreement_rebate_settlement_line_action
+msgid "Agreement settlement lines"
+msgstr "Avtalets avvecklingsRADER"
+
+#. module: agreement_rebate
+#: model:ir.actions.act_window,name:agreement_rebate.agreement_rebate_settlement_action
+msgid "Agreement settlements"
+msgstr "Avtal om avveckling"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__agreement_type_ids
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__agreement_type_ids
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Agreement types"
+msgstr "Avtalstyper"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__agreement_ids
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__agreement_ids
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Agreements"
+msgstr "Avtal"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__amount_gross
+msgid "Amount Gross"
+msgstr "Bruttobelopp"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__amount_invoiced
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__amount_invoiced
+msgid "Amount Invoiced"
+msgstr "Fakturerat belopp"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__amount_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__amount_rebate
+msgid "Amount Rebate"
+msgstr "Belopp Återbäring"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Archived"
+msgstr "Arkiverad"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement__rebate_type__section_prorated
+msgid "Calculate the discount in each amount section"
+msgstr "Beräkna rabatten i varje beloppssektion"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Cancel"
+msgstr "Avbryt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_group__commercial_partner
+msgid "Commercial partner"
+msgstr "Kommersiell partner"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__company_id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__company_id
+msgid "Company"
+msgstr "Bolag"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement__rebate_type__section_total
+msgid "Compute total and apply discount rule match"
+msgstr "Beräkna totalbelopp och tillämpa rabattregelmatchning"
+
+#. module: agreement_rebate
+#: model:ir.ui.menu,name:agreement_rebate.agreement_invoice_create_menu
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+msgid "Create invoices"
+msgstr "Skapa fakturor"
+
+#. module: agreement_rebate
+#: model:ir.ui.menu,name:agreement_rebate.agreement_settlement_create_menu
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Create settlements"
+msgstr "Skapa bosättningar"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__create_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__create_uid
+msgid "Created by"
+msgstr "Skapad av"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__create_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__create_date
+msgid "Created on"
+msgstr "Skapad den"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_type__out_refund
+msgid "Customer Credit Note"
+msgstr "Kundkreditnota"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_type__out_invoice
+msgid "Customer Invoice"
+msgstr "Kundfaktura"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__date
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Date"
+msgstr "Datum"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__date_from
+msgid "Date From"
+msgstr "Datum från"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__date_to
+msgid "Date To"
+msgstr "Datum till"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Dates filter"
+msgstr "Filter för datum"
+
+#. module: agreement_rebate
+#. odoo-python
+#: code:addons/agreement_rebate/models/agreement_rebate_settlement.py:0
+msgid "Details"
+msgstr "Detaljer"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__discard_settled_agreement
+msgid "Discard settled agreements"
+msgstr "Avbryt ingångna avtal"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__display_name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__domain
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__rebate_domain
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__domain
+msgid "Domain"
+msgstr "Domän"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__invoice_partner_id
+msgid "Force invoice to"
+msgstr "Tvinga fakturan att"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__date_from
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__amount_from
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__amount_from
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__date_from
+msgid "From"
+msgstr "Från"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_settlement_line__invoice_status__invoiced
+msgid "Fully Invoiced"
+msgstr "Fullt fakturerad"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement__rebate_type__global
+msgid "Global (A discount global for all lines)"
+msgstr "Global (en rabatt som är global för alla rader)"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+msgid "Group By"
+msgstr "Gruppera efter"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__invoice_group
+msgid "Group invoice by"
+msgstr "Gruppera fakturan efter"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__id
+msgid "ID"
+msgstr "ID"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,help:agreement_rebate.field_agreement_settlement_create_wiz__discard_settled_agreement
+msgid ""
+"If checked, the agreements with settlements in selected period will be "
+"discard"
+msgstr ""
+"Om markerad, kommer avtalen med avräkningar under vald period att kasseras"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__invoice_id
+msgid "Invoice"
+msgstr "Faktura"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__invoice_status
+msgid "Invoice Status"
+msgstr "Fakturans status"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__invoice_type
+msgid "Invoice Type"
+msgstr "Fakturatyp"
+
+#. module: agreement_rebate
+#: model:ir.actions.act_window,name:agreement_rebate.agreement_invoice_create_action
+msgid "Invoice create"
+msgstr "Skapa faktura"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+msgid "Invoice data"
+msgstr "Fakturauppgifter"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__invoice_line_ids
+msgid "Invoice lines"
+msgstr "Fakturarader"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Invoiced"
+msgstr "Fakturerad"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__is_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_type__is_rebate
+msgid "Is rebate agreement type"
+msgstr "Är typ av rabattavtal"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__journal_id
+msgid "Journal"
+msgstr "Verifikat"
+
+#. module: agreement_rebate
+#: model:ir.model,name:agreement_rebate.model_account_move_line
+msgid "Journal Item"
+msgstr "Verifikatsdel"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__journal_ids
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_settlement_create_wiz
+msgid "Journals"
+msgstr "Verifikat"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__write_uid
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__write_uid
+msgid "Last Updated by"
+msgstr "Senast uppdaterad av"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__write_date
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__write_date
+msgid "Last Updated on"
+msgstr "Senast uppdaterad den"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement__rebate_type__line
+msgid "Line (A discount for every line)"
+msgstr "Rader (En rabatt för varje rad)"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_form
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+msgid "Lines"
+msgstr "Rader"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__name
+msgid "Name"
+msgstr "Namn"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Name or agreement code"
+msgstr "Namn eller avtalskod"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Not invoiced"
+msgstr "Ej fakturerad"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_settlement_line__invoice_status__no
+msgid "Nothing to Invoice"
+msgstr "Inget att fakturera"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__partner_id
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__partner_id
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_group__partner
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Partner"
+msgstr "Partner"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__percent
+msgid "Percent"
+msgstr "Procent"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Period"
+msgstr "Period"
+
+#. module: agreement_rebate
+#. odoo-python
+#: code:addons/agreement_rebate/models/account_move_line.py:0
+msgid "Period: %s - %s"
+msgstr "Period: %s - %s"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__product_id
+msgid "Product"
+msgstr "Produkt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_category_ids
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__category
+msgid "Product categories"
+msgstr "Produktkategorier"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_product_tmpl_ids
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__product_tmpl
+msgid "Product templates"
+msgstr "Produktmallar"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__product
+msgid "Product variant"
+msgstr "Produktvariant"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_product_ids
+msgid "Products"
+msgstr "Produkter"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_form
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_search
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_type_search
+msgid "Rebate"
+msgstr "Rabatt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__rebate_discount
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_discount
+msgid "Rebate Discount"
+msgstr "Rabatt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_domain
+msgid "Rebate Domain"
+msgstr "Rabattdomän"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__rebate_line_id
+msgid "Rebate Line"
+msgstr "Rabattrad"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_line_form
+msgid "Rebate Lines"
+msgstr "Rabattrader"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+msgid "Rebate Settlements"
+msgstr "Avräkning av rabatter"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_target
+msgid "Rebate Target"
+msgstr "Mål för återbetalning"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__name
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_condition_id
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__condition
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_condition_form
+msgid "Rebate condition"
+msgstr "Villkor för återbetalning"
+
+#. module: agreement_rebate
+#: model:ir.ui.menu,name:agreement_rebate.agreement_rebate_condition_menu
+msgid "Rebate conditions"
+msgstr "Villkor för återbetalning"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__domain
+msgid "Rebate domain"
+msgstr "Rabattdomän"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__rebate_section_id
+msgid "Rebate section"
+msgstr "Rabattavsnitt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__settlement_id
+msgid "Rebate settlement"
+msgstr "Avveckling av rabatt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__settlements_ids
+msgid "Rebate settlements"
+msgstr "Avveckling av rabatter"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__rebate_type
+msgid "Rebate type"
+msgstr "Rabatt-typ"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_search
+msgid "Search agreement settlements"
+msgstr "Sök avtalsuppgörelser"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+msgid "Search settlement lines"
+msgstr "Sök uppgörelserader"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_form
+msgid "Sections"
+msgstr "Avsnitt"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_line_form
+msgid "Select items"
+msgstr "Välj objekt"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_group__settlement
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_search
+msgid "Settlement"
+msgstr "Avveckling"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement__line_ids
+#: model:ir.ui.menu,name:agreement_rebate.agreement_rebate_settlement_line_menu
+msgid "Settlement Lines"
+msgstr "Avvecklingsrader"
+
+#. module: agreement_rebate
+#: model:ir.actions.act_window,name:agreement_rebate.agreement_settlement_create_action
+msgid "Settlement create"
+msgstr "Skapa avveckling"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_account_move_line__agreement_rebate_settlement_line_ids
+msgid "Settlement lines"
+msgstr "Avvecklingsrader"
+
+#. module: agreement_rebate
+#: model:ir.ui.menu,name:agreement_rebate.agreement_rebate_settlement_menu
+#: model:ir.ui.menu,name:agreement_rebate.agreement_rebate_settlement_menu_root
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.view_invoice_create_wiz
+msgid "Settlements"
+msgstr "Avvecklingar"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_form
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_tree
+msgid "Show details"
+msgstr "Visa detaljer"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__target_domain
+msgid "Target Domain"
+msgstr "Måldomän"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_invoice_create_wiz__date_to
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_section__amount_to
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_settlement_line__amount_to
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement_settlement_create_wiz__date_to
+msgid "To"
+msgstr "Till"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_settlement_line__invoice_status__to_invoice
+msgid "To Invoice"
+msgstr "Till faktura"
+
+#. module: agreement_rebate
+#: model_terms:ir.ui.view,arch_db:agreement_rebate.agreement_rebate_settlement_line_tree
+msgid "Total"
+msgstr "Totalt"
+
+#. module: agreement_rebate
+#: model:res.groups,name:agreement_rebate.group_use_agreement_rebate
+msgid "Use agreement rebate"
+msgstr "Rabatt på användningsavtal"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_type__in_invoice
+msgid "Vendor Bill"
+msgstr "Leverantörsfaktura"
+
+#. module: agreement_rebate
+#: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_invoice_create_wiz__invoice_type__in_refund
+msgid "Vendor Credit Note"
+msgstr "leverantörskreditnota"
+
+#. module: agreement_rebate
+#: model:ir.model.fields,field_description:agreement_rebate.field_agreement__rebate_type
+msgid "rebate type"
+msgstr "rabatt-typ"
