@@ -1,0 +1,156 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* agreement_sign_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-09-03 12:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: agreement_sign_oca
+#: model:ir.model,name:agreement_sign_oca.model_agreement
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_sign_oca_request__agreement_id
+#: model_terms:ir.ui.view,arch_db:agreement_sign_oca.sign_oca_request_search_view
+msgid "Agreement"
+msgstr "Accordo"
+
+#. module: agreement_sign_oca
+#: model:ir.model,name:agreement_sign_oca.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: agreement_sign_oca
+#: model:ir.model,name:agreement_sign_oca.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
+
+#. module: agreement_sign_oca
+#: model_terms:ir.ui.view,arch_db:agreement_sign_oca.agreement_sign_view_form
+msgid "Create adn sent signature request for this agreement."
+msgstr "Crea e invia richiesta di firma per questo accordo."
+
+#. module: agreement_sign_oca
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_res_company__agreement_sign_oca_template_id
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_res_config_settings__agreement_sign_oca_template_id
+msgid "Default Agreement Sign Template"
+msgstr "Modello firma accordo predefinito"
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid "Please create a user for ther company signatory person"
+msgstr "Creare un utente per la persona firmataria dell'azienda"
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid ""
+"Please set a Company Primary Contact in order to set\n"
+"                    the signatory person of the company in this document"
+msgstr ""
+"Impostare un contatto principale aziendale per definire\n"
+"                    la persona firmataria dell'azienda in questo documento"
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid ""
+"Please set a Primary Contact in order to set the\n"
+"                    signatory person of the counterpart in this document"
+msgstr ""
+"Impostare un contatto principale per definire la persona\n"
+"                    firmataria della controparte in questo documento"
+
+#. module: agreement_sign_oca
+#: model_terms:ir.ui.view,arch_db:agreement_sign_oca.agreement_sign_view_form
+msgid "Request Signature"
+msgstr "Richiedi firma"
+
+#. module: agreement_sign_oca
+#: model_terms:ir.ui.view,arch_db:agreement_sign_oca.res_config_settings_view_form
+msgid "Sign Oca"
+msgstr "Firma OCA"
+
+#. module: agreement_sign_oca
+#: model:ir.model,name:agreement_sign_oca.model_sign_oca_request
+msgid "Sign Request"
+msgstr "Firma richiesta"
+
+#. module: agreement_sign_oca
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_agreement__sign_request_ids
+msgid "Sign Requests"
+msgstr "Firma richieste"
+
+#. module: agreement_sign_oca
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_agreement__sign_request_count
+msgid "Sign request count"
+msgstr "Conteggio firme richieste"
+
+#. module: agreement_sign_oca
+#: model_terms:ir.ui.view,arch_db:agreement_sign_oca.agreement_sign_view_form
+msgid "Signature Requests"
+msgstr "Richieste firma"
+
+#. module: agreement_sign_oca
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_res_company__agreement_sign_oca_signed_stage_id
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_res_config_settings__agreement_sign_oca_signed_stage_id
+msgid "Signed Agreements Stage"
+msgstr "Fase accordo firmato"
+
+#. module: agreement_sign_oca
+#: model:ir.model.fields,field_description:agreement_sign_oca.field_agreement__signed_contract
+msgid "Signed Document"
+msgstr "Documento firmato"
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid ""
+"The 'Agreement Company Signatory Person' role for the signature\n"
+"                    was not found. Please update 'agreement_sign_oca' module."
+msgstr ""
+"Il ruolo \"Persona firmataria dell'accordo\" per la firma\n"
+"                    non è stato trovato. Aggiornare il modulo "
+"\"agreement_sign_oca\"."
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid ""
+"The 'Customer' role for the signature\n"
+"                    was not found. Please update 'agreement' module."
+msgstr ""
+"Il ruolo \"Cliente\" per la firma\n"
+"                    non è stato trovato. Aggiornare il modulo \"Accordo\"."
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid "The agreement must have an assigned contact (counterparty)."
+msgstr "L'accordo deve prevedere un contatto assegnato (controparte)."
+
+#. module: agreement_sign_oca
+#. odoo-python
+#: code:addons/agreement_sign_oca/models/agreement.py:0
+#, python-format
+msgid ""
+"The agreement's counterparty contact\n"
+"                    does not have an email configured."
+msgstr ""
+"Il contatto della controparte dell'accordo\n"
+"                    non ha un indirizzo email configurato."

@@ -15,8 +15,13 @@
                 <field name="sequence" readonly="has_moves or has_invoices" />
                 <field name="date" readonly="has_moves or has_invoices" />
                 <field name="rate" readonly="has_moves or has_invoices" />
-                <field name="pending_principal_amount" readonly="True" />
-                <field name="payment_amount" sum="Total payments" readonly="True" />
+                <field name="pending_principal_amount" readonly="True" force_save="1" />
+                <field
+                    name="payment_amount"
+                    sum="Total payments"
+                    readonly="True"
+                    force_save="1"
+                />
                 <field
                     name="principal_amount"
                     sum="principal_amount"

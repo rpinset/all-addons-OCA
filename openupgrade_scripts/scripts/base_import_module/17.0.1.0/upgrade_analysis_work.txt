@@ -1,0 +1,12 @@
+---Models in module 'base_import_module'---
+---Fields in module 'base_import_module'---
+base_import_module / ir.module.module         / module_type (selection)       : NEW selection_keys: ['industries', 'official'], hasdefault: default
+# New field. 'industries' value is set when the module is installed here:
+# https://github.com/odoo/odoo/blob/36f75798544d3bb4405075ceac1210ba5dbcd61f/addons/base_import_module/models/ir_module.py#L414C9-L414C37
+# At migration step, it is not possible to deduce the value, so we let 'official' key value.
+
+---XML records in module 'base_import_module'---
+NEW ir.ui.view: base_import_module.module_form_apps_inherit
+NEW ir.ui.view: base_import_module.module_tree_apps_inherit
+NEW ir.ui.view: base_import_module.module_view_kanban_apps_inherit
+NEW ir.ui.view: base_import_module.view_module_filter_apps_inherit

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="project_project_view_form_simplified_inherit" model="ir.ui.view">
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.project_project_view_form_simplified" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_settings_container')]" position="inside">
+                <setting
+                    class="col-lg-12"
+                    string="Disable EDI workflow"
+                    help="When marked, EDI automatic processing will be avoided"
+                >
+                    <field name="edi_disable_auto" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="edit_project_inherit" model="ir.ui.view">
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-retweet"
+                    invisible="exchange_record_count == 0"
+                    name="action_view_edi_records"
+                >
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="exchange_record_count" />
+                        </span>
+                        <span class="o_stat_text">EDI</span>
+                    </div>
+                </button>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page name="edi_project_page" string="EDI">
+                    <group name="edi_project_group">
+                        <group name="edi_project_group_left">
+                            <field
+                                name="edi_disable_auto"
+                                string="Disable EDI workflow"
+                            />
+                        </group>
+                        <group name="edi_project_group_right" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

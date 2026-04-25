@@ -1,0 +1,12 @@
+---Models in module 'l10n_it_edi_doi'---
+---Fields in module 'l10n_it_edi_doi'---
+l10n_it_edi_doi / l10n_it_edi_doi.declaration_of_intent / activity_user_id (many2one)   : not related anymore
+l10n_it_edi_doi / l10n_it_edi_doi.declaration_of_intent / activity_user_id (many2one)   : now a function
+l10n_it_edi_doi / l10n_it_edi_doi.declaration_of_intent / rating_ids (one2many)         : NEW relation: rating.rating
+---XML records in module 'l10n_it_edi_doi'---
+DEL account.fiscal.position.tax.template: l10n_it_edi_doi.afpttn_declaration_of_intent_fiscal_position_1
+DEL account.fiscal.position.tax.template: l10n_it_edi_doi.afpttn_declaration_of_intent_fiscal_position_2
+DEL account.fiscal.position.tax.template: l10n_it_edi_doi.afpttn_declaration_of_intent_fiscal_position_3
+DEL account.fiscal.position.tax.template: l10n_it_edi_doi.afpttn_declaration_of_intent_fiscal_position_4
+DEL account.fiscal.position.template: l10n_it_edi_doi.declaration_of_intent_fiscal_position
+DEL account.tax.template: l10n_it_edi_doi.00di

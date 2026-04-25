@@ -1021,6 +1021,11 @@ msgid "Email sent to the customer when they place an RMA from the portal"
 msgstr "E-mail envoyé au client lorsqu'il passe un RMA depuis le portail"
 
 #. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Emails"
+msgstr ""
+
+#. module: rma
 #: model:ir.model.fields,help:rma.field_rma_operation__auto_confirm_reception
 msgid ""
 "Enable this option to automatically confirm the reception when the RMA is "
@@ -1068,11 +1073,6 @@ msgstr "Terminer RMA manuellement"
 #: model:ir.model.fields,field_description:rma.field_res_config_settings__group_rma_manual_finalization
 msgid "Finish RMA manually choosing a reason"
 msgstr "Terminer RMA manuellement en choisissant une raison"
-
-#. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid "Finish RMAs manually"
-msgstr "Terminer RMA manuellement"
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__finished
@@ -1442,6 +1442,7 @@ msgstr ""
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_operation_act_window
 #: model:ir.ui.menu,name:rma.rma_operation_menu
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "Operations"
 msgstr ""
 
@@ -2027,11 +2028,6 @@ msgid "Return Location"
 msgstr "Emplacement de retour"
 
 #. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid "Return Merchandise Authorization Management"
-msgstr ""
-
-#. module: rma
 #: model:ir.model,name:rma.model_stock_return_picking
 msgid "Return Picking"
 msgstr "Ordres de retour"
@@ -2119,24 +2115,6 @@ msgstr "Envoyer confirmation de réception RMA"
 #: model:ir.model.fields,field_description:rma.field_res_config_settings__send_rma_draft_confirmation
 msgid "Send RMA draft Confirmation"
 msgstr "Envoyer confirmation brouillon RMA"
-
-#. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid "Send automatic RMA info to customer"
-msgstr "Envoyer automatiquement les infos RMA au client"
-
-#. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid "Send automatic RMA products reception notification to customer"
-msgstr ""
-"Envoyer automatiquement les notifications de réceptions produits RMA au "
-"client"
-
-#. module: rma
-#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
-msgid "Send automatic notification when the customer places an RMA"
-msgstr ""
-"Envoyer automatiquement une notification quand le client demande une RMA"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -2557,8 +2535,8 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid ""
-"When the RMA is receive, allow to finsish it manually choosing\n"
-"                                    a finalization reason."
+"When the RMA is receive, allow to finsish it manually choosing a "
+"finalization reason."
 msgstr ""
 
 #. module: rma
@@ -2646,6 +2624,21 @@ msgid ""
 msgstr ""
 "{{object.company_id.name}} Votre RMA a été crée avec succès(Ref "
 "{{object.name or 'n/a' }})"
+
+#~ msgid "Finish RMAs manually"
+#~ msgstr "Terminer RMA manuellement"
+
+#~ msgid "Send automatic RMA info to customer"
+#~ msgstr "Envoyer automatiquement les infos RMA au client"
+
+#~ msgid "Send automatic RMA products reception notification to customer"
+#~ msgstr ""
+#~ "Envoyer automatiquement les notifications de réceptions produits RMA au "
+#~ "client"
+
+#~ msgid "Send automatic notification when the customer places an RMA"
+#~ msgstr ""
+#~ "Envoyer automatiquement une notification quand le client demande une RMA"
 
 #~ msgid ""
 #~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "

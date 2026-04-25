@@ -1,0 +1,5 @@
+---Models in module 'hr_work_entry'---
+---Fields in module 'hr_work_entry'---
+hr_work_entry / hr.work.entry.type       / external_code (char)          : NEW
+---XML records in module 'hr_work_entry'---
+NEW hr.work.entry.type: hr_work_entry.overtime_work_entry_type

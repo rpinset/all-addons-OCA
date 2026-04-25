@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* repair_quality_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-10-25 18:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: repair_quality_control
+#: model_terms:ir.ui.view,arch_db:repair_quality_control.view_repair_order_form_inherit
+msgid "<span class=\"o_stat_text\">Inspections</span>"
+msgstr "<span class=\"o_stat_text\">Ispezioni</span>"
+
+#. module: repair_quality_control
+#: model_terms:ir.ui.view,arch_db:repair_quality_control.view_qc_inspection_form_inherit
+msgid "<span class=\"o_stat_text\">Repair order</span>"
+msgstr "<span class=\"o_stat_text\">Ordine di riparazione</span>"
+
+#. module: repair_quality_control
+#. odoo-python
+#: code:addons/repair_quality_control/models/repair.py:0
+#: model_terms:ir.ui.view,arch_db:repair_quality_control.view_repair_order_form_inherit
+#, python-format
+msgid "Create Inspection"
+msgstr "Crea ispezione"
+
+#. module: repair_quality_control
+#: model:ir.model.fields,field_description:repair_quality_control.field_repair_order__inspection_ids
+msgid "Inspections"
+msgstr "Ispezioni"
+
+#. module: repair_quality_control
+#: model:ir.model,name:repair_quality_control.model_qc_inspection
+msgid "Quality control inspection"
+msgstr "Ispezione controllo qualità"
+
+#. module: repair_quality_control
+#: model:ir.model.fields,field_description:repair_quality_control.field_qc_inspection__repair_id
+msgid "Repair"
+msgstr "Riparazione"
+
+#. module: repair_quality_control
+#: model:ir.model,name:repair_quality_control.model_repair_order
+msgid "Repair Order"
+msgstr "Ordine di riparazione"

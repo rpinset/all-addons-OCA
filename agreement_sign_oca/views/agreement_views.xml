@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="agreement_sign_view_form" model="ir.ui.view">
+        <field name="name">agreement.legal.form</field>
+        <field name="model">agreement</field>
+        <field name="inherit_id" ref="agreement_legal.partner_agreement_form_view" />
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="sign_request_count" invisible="1" />
+            </field>
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_send_for_signature"
+                    string="Request Signature"
+                    type="object"
+                    class="btn-primary"
+                    help="Create adn sent signature request for this agreement."
+                    invisible="sign_request_count > 0"
+                />
+            </xpath>
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                 <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_sign_requests"
+                    icon="fa-pencil-square-o"
+                    groups="sign_oca.sign_oca_group_user"
+                    invisible="sign_request_count == 0"
+                >
+                    <field
+                        name="sign_request_count"
+                        widget="statinfo"
+                        string="Signature Requests"
+                    />
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

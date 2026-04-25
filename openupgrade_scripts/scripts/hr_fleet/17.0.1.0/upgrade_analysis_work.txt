@@ -1,0 +1,8 @@
+---Models in module 'hr_fleet'---
+---Fields in module 'hr_fleet'---
+hr_fleet     / mail.activity.plan.template / responsible_type (False)      : NEW selection_keys: ['coach', 'employee', 'fleet_manager', 'manager', 'on_demand', 'other'], mode: modify
+# NOTHING TO DO: done in hr module
+
+---XML records in module 'hr_fleet'---
+NEW mail.activity.plan.template: hr_fleet.offboarding_fleet (noupdate)
+# NOTHING TO DO

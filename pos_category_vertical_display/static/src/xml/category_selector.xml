@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2025 (APSL-Nagarro) - Antoni Marroig
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<templates xml:space="preserve">
+    <t
+        t-name="pos_category_display.CategorySelector"
+        t-inherit="point_of_sale.CategorySelector"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//div[1]" position="replace">
+            <div t-attf-class="{{props.class}} overflow-y-auto w-100 h-100 py-1 px-1">
+             <div class="breadcrumbs">
+                <t t-foreach="props.categories" t-as="category" t-key="category.id">
+                    <i
+                            t-if="category_index != 0"
+                            t-attf-class="px-2 fa {{category.separator}}"
+                            t-att-style="`opacity: ${category.showSeparator ? 1 : 0};`"
+                            aria-hidden="true"
+                        />
+                    <button
+                            class="category-button btn btn-light category-item h-100"
+                            style="min-width: 100px;max-width: 120px;"
+                            t-on-click="() => props.onClick(category.id)"
+                        >
+                        <t t-if="props.showImage">
+                            <img
+                                    t-if="category.imageUrl"
+                                    class="rounded h-75 float-left"
+                                    style="text-align: start;position: relative;max-height: 100px; max-width: 120px;"
+                                    t-att-src="category.imageUrl"
+                                    alt="Category"
+                                />
+                        </t>
+                        <i
+                                t-if="category.icon"
+                                t-attf-class="fa {{category.icon}}"
+                                aria-hidden="true"
+                            />
+                        <span
+                                t-if="category.name"
+                                class="w-100 text-center d-inline-block "
+                                t-esc="category.name"
+                                style="min-height: 2rem"
+                            />
+                    </button>
+                </t>
+            </div>
+            </div>
+        </xpath>
+    </t>
+    <t
+        t-name="pos_category_display.ProductsWidget"
+        t-inherit="point_of_sale.ProductsWidget"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//div[hasclass('products-widget-control')]" position="replace">
+
+            <div
+                class="products-widget-control overflow-hidden overflow-y-auto w-100 d-flex bg-view shadow-sm justify-content-between"
+                style="height: 340px;"
+            >
+                <CategorySelector
+                    categories="getCategories()"
+                    onClick="(id) => this.pos.setSelectedCategoryId(id)"
+                    showImage="showCategoryImages"
+                    class="ui.isSmall ? 'scrollbar-hidden' : ''"
+                />
+                <Input
+                    tModel="[pos, 'searchProductWord']"
+                    class="'p-2 h-25'"
+                    isSmall="ui.isSmall"
+                    placeholder="'Search products...'"
+                    icon="{type: 'fa', value: 'fa-search'}"
+                    debounceMillis="500"
+                />
+            </div>
+        </xpath>
+
+    </t>
+</templates>

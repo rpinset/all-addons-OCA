@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_project_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: edi_project_oca
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.edit_project_inherit
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.view_task_form2_inherit
+msgid "<span class=\"o_stat_text\">EDI</span>"
+msgstr ""
+
+#. module: edi_project_oca
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.edit_project_inherit
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.project_project_view_form_simplified_inherit
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.quick_create_task_form_inherit
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.view_task_form2_inherit
+msgid "Disable EDI workflow"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__edi_disable_auto
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__edi_disable_auto
+msgid "Disable auto"
+msgstr ""
+
+#. module: edi_project_oca
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.edit_project_inherit
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.view_task_form2_inherit
+msgid "EDI"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__origin_edi_endpoint_id
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__origin_edi_endpoint_id
+msgid "EDI origin endpoint"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__origin_exchange_type_id
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__origin_exchange_type_id
+msgid "EDI origin exchange type"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__origin_exchange_record_id
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__origin_exchange_record_id
+msgid "EDI origin record"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,help:edi_project_oca.field_project_project__origin_exchange_record_id
+#: model:ir.model.fields,help:edi_project_oca.field_project_task__origin_exchange_record_id
+msgid "EDI record that originated this document."
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__edi_config
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__edi_config
+msgid "Edi Config"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__edi_has_form_config
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__edi_has_form_config
+msgid "Edi Has Form Config"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__exchange_record_ids
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__exchange_record_ids
+msgid "Exchange Record"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__exchange_record_count
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__exchange_record_count
+msgid "Exchange Record Count"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_project__exchange_related_record_ids
+#: model:ir.model.fields,field_description:edi_project_oca.field_project_task__exchange_related_record_ids
+msgid "Exchange Related Record"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.ui.menu,name:edi_project_oca.menu_edi_project_root
+msgid "Exchange records"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model,name:edi_project_oca.model_project_project
+msgid "Project"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.ui.menu,name:edi_project_oca.menu_edi_project_project_exchange_record
+msgid "Projects"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.actions.act_window,name:edi_project_oca.action_edi_project_project_exchange_record
+msgid "Projects Exchange Record"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,help:edi_project_oca.field_project_project__origin_edi_endpoint_id
+#: model:ir.model.fields,help:edi_project_oca.field_project_task__origin_edi_endpoint_id
+msgid "Record generated via this endpoint"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model,name:edi_project_oca.model_project_task
+msgid "Task"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.ui.menu,name:edi_project_oca.menu_edi_project_task_exchange_record
+msgid "Tasks"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.actions.act_window,name:edi_project_oca.action_edi_project_task_exchange_record
+msgid "Tasks Exchange Record"
+msgstr ""
+
+#. module: edi_project_oca
+#: model:ir.model.fields,help:edi_project_oca.field_project_project__edi_disable_auto
+#: model:ir.model.fields,help:edi_project_oca.field_project_task__edi_disable_auto
+#: model_terms:ir.ui.view,arch_db:edi_project_oca.project_project_view_form_simplified_inherit
+msgid "When marked, EDI automatic processing will be avoided"
+msgstr ""

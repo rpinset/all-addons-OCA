@@ -1,0 +1,15 @@
+---Models in module 'website_slides_forum'---
+---Fields in module 'website_slides_forum'---
+website_slides_forum / forum.forum              / image_1920 (False)            : NEW mode: modify, hasdefault: compute
+# NOTHING TO DO: Let the ORM do their job, as the number of records here is very few
+
+---XML records in module 'website_slides_forum'---
+NEW ir.rule: website_slides_forum.website_slides_forum_post_signed_in_user (noupdate)
+NEW ir.rule: website_slides_forum.website_slides_forum_signed_in_user (noupdate)
+NEW ir.rule: website_slides_forum.website_slides_forum_tag_signed_in_user (noupdate)
+# NOTHING TO DO: noupdate=1, but they are new records
+
+NEW ir.ui.view: website_slides_forum.forum_all_all_entries
+NEW ir.ui.view: website_slides_forum.website_slides_forum_breadcrumb
+DEL ir.ui.view: website_slides_forum.website_slides_forum_header
+# NOTHING TO DO: ir noupdate=0 stuff

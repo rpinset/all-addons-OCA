@@ -1,0 +1,15 @@
+---Models in module 'website_hr_recruitment'---
+---Fields in module 'website_hr_recruitment'---
+website_hr_recruitment / hr.job                   / published_date (date)         : NEW isfunction: function, stored
+# DONE: pre-migration: Pre-create and fill the column
+---XML records in module 'website_hr_recruitment'---
+NEW ir.model.access: website_hr_recruitment.access_hr_job_public_employee
+NEW ir.model.access: website_hr_recruitment.access_hr_job_public_portal
+NEW ir.model.access: website_hr_recruitment.access_hr_job_public_public
+DEL ir.model.access: website_hr_recruitment.access_hr_job_public
+# NOTHING TO DO: New ACLs
+NEW ir.ui.view: website_hr_recruitment.default_description
+NEW ir.ui.view: website_hr_recruitment.job_search_bar
+NEW ir.ui.view: website_hr_recruitment.jobs_searchbar_input_snippet_options
+NEW ir.ui.view: website_hr_recruitment.topbar_customizations
+# NOTHING TO DO: new feature

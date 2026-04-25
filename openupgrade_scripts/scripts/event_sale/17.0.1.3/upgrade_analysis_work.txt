@@ -1,0 +1,25 @@
+---Models in module 'event_sale'---
+---Fields in module 'event_sale'---
+event_sale   / event.event.ticket       / _order                        : _order is now 'event_id, sequence, price, name, id' ('event_id, price')
+# DONE: pre-migration: Preserve the previous order on existing tickets assigning the sequence by price
+
+event_sale   / event.event.ticket       / price_incl (float)            : NEW hasdefault: compute
+# NOTHING TO DO: While computing by ORM is not optimal, given the complexity of the computations and the expected number of records, let's keep it this way for now
+
+event_sale   / event.registration       / is_paid (boolean)             : DEL
+event_sale   / event.registration       / sale_status (selection)       : NEW selection_keys: ['free', 'sold', 'to_pay'], isfunction: function, stored
+# DONE: pre-migration: filled sale_status by SQL, using is_paid and SOL price as data source
+
+event_sale   / event.registration       / state (False)                 : NEW mode: modify, hasdefault: compute
+# NOTHING TO DO: existing field in event module being added a compute (which is not the best practice).
+
+event_sale   / product.template         / detailed_type (False)         : selection_keys is now '['combo', 'consu', 'event', 'product', 'service']' ('['consu', 'event', 'product', 'service']')
+# NOTHING TO DO: The detailed_type value already exists
+
+event_sale   / sale.order.line          / registration_ids (one2many)   : NEW relation: event.registration
+# NOTHING TO DO: one2many counterpart over existing m2o field
+
+---XML records in module 'event_sale'---
+NEW ir.ui.view: event_sale.event_registration_view_graph
+DEL ir.ui.view: event_sale.event_report_template_full_page_ticket_inherit_sale
+# NOTHING TO DO: ir noupdate=0 stuff

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Actions -->
+    <record
+        model="ir.actions.act_window"
+        id="action_edi_project_project_exchange_record"
+    >
+        <field name="name">Projects Exchange Record</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">edi.exchange.record</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('model', '=', 'project.project')]</field>
+        <field name="context">{}</field>
+    </record>
+    <record model="ir.actions.act_window" id="action_edi_project_task_exchange_record">
+        <field name="name">Tasks Exchange Record</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">edi.exchange.record</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('model', '=', 'project.task')]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem
+        id="menu_edi_project_root"
+        name="Exchange records"
+        parent="project.menu_project_config"
+    />
+    <menuitem
+        id="menu_edi_project_project_exchange_record"
+        name="Projects"
+        action="action_edi_project_project_exchange_record"
+        parent="menu_edi_project_root"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_edi_project_task_exchange_record"
+        name="Tasks"
+        action="action_edi_project_task_exchange_record"
+        parent="menu_edi_project_root"
+        sequence="20"
+    />
+</odoo>

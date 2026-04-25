@@ -1,0 +1,17 @@
+---Models in module 'sale_timesheet'---
+---Fields in module 'sale_timesheet'---
+sale_timesheet / project.project          / allocated_hours (False)       : DEL mode: modify
+# NOTHING TO DO, now is a normal field, no compute
+sale_timesheet / project.project          / billing_type (selection)      : NEW required, selection_keys: ['manually', 'not_billable'], hasdefault: default
+# DONE: pre-migration: Add new column & set the default value(not_billable)
+sale_timesheet / project.project          / partner_id (False)            : module is now 'sale_project' ('sale_timesheet')
+sale_timesheet / project.task             / allow_billable (boolean)      : module is now 'sale_project' ('sale_timesheet')
+# NOTHING TO DO, just moved to sale_timesheet module
+---XML records in module 'sale_timesheet'---
+NEW ir.ui.view: sale_timesheet.project_task_view_search_inherit_sale_timesheet
+NEW ir.ui.view: sale_timesheet.view_hr_timesheet_line_graph_invoice_employee
+NEW ir.ui.view: sale_timesheet.view_hr_timesheet_line_pivot_inherited
+NEW ir.ui.view: sale_timesheet.view_task_project_user_pivot_inherited
+DEL ir.ui.view: sale_timesheet.project_project_view_form_simplified_inherit
+DEL ir.ui.view: sale_timesheet.view_sale_service_inherit_form2
+# NOTHING TO DO

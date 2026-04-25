@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_warehouse_inherit_repair" model="ir.ui.view">
+        <field name="name">Stock Warehouse Inherit Repair</field>
+        <field name="model">stock.warehouse</field>
+        <field name="inherit_id" ref="stock.view_warehouse" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='resupply_wh_ids']" position="before">
+                <!-- Add invisible field to solve issue of Field 'repair_steps' used in modifier
+                'invisible' (repair_steps != '3_steps') is restricted to the group(s)
+                stock.group_stock_multi_warehouses,stock.group_adv_location. -->
+                <field
+                    name="repair_steps"
+                    invisible="1"
+                    widget="radio"
+                    groups="!stock.group_stock_multi_warehouses,!stock.group_adv_location"
+                />
+                <field
+                    name="repair_steps"
+                    widget="radio"
+                    groups="stock.group_stock_multi_warehouses,stock.group_adv_location"
+                />
+            </xpath>
+            <xpath expr="//field[@name='wh_output_stock_loc_id']" position="after">
+                <field name="repair_location_id" />
+            </xpath>
+            <xpath expr="//field[@name='out_type_id']" position="after">
+                <field
+                    name="add_c_type_id"
+                    invisible="repair_steps not in ['2_steps', '3_steps']"
+                    readonly="1"
+                />
+                <field
+                    name="recycle_c_type_id"
+                    invisible="repair_steps != '3_steps'"
+                    readonly="1"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

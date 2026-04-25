@@ -1,0 +1,228 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_order_line_customer_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-04-08 12:35+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "% Disc"
+msgstr "% sconto"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Add"
+msgstr "Aggiungi"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Back"
+msgstr "Indietro"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Barcode"
+msgstr "Codice a barre"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Cart"
+msgstr "Carrello"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Buttons/customer_history.xml:0
+#: code:addons/pos_order_line_customer_history/static/src/Buttons/customer_history.xml:0
+#, python-format
+msgid "Customer History"
+msgstr "Cronologia cliente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#: model:ir.model.fields,field_description:pos_order_line_customer_history.field_pos_order_line__date_order
+#, python-format
+msgid "Date"
+msgstr "Data"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Date ASC"
+msgstr "Data crescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Date DESC"
+msgstr "Data decrescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Discount"
+msgstr "Sconto"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Buttons/customer_history.xml:0
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "History"
+msgstr "Storico"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Next Order List"
+msgstr "Prossima lista ordini"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Payment"
+msgstr "Pagamento"
+
+#. module: pos_order_line_customer_history
+#: model:ir.model,name:pos_order_line_customer_history.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "Righe ordine punto vendita"
+
+#. module: pos_order_line_customer_history
+#: model:ir.model,name:pos_order_line_customer_history.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Ordini punto vendita"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Previous Order List"
+msgstr "Lista ordini precedente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Price"
+msgstr "Prezzo"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Price Unit ASC"
+msgstr "Prezzo unitario crescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Price Unit DESC"
+msgstr "Prezzo unitario decrescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Product ASC"
+msgstr "Prodotto crescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Product DESC"
+msgstr "Prodotto decrescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Qty"
+msgstr "Q.tà"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Qty ASC"
+msgstr "Q.tà crescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Qty DESC"
+msgstr "Q.tà decrescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Review"
+msgstr "Revisione"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.esm.js:0
+#, python-format
+msgid "Search Orders..."
+msgstr "Cerca ordini..."
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Sort By"
+msgstr "Ordina per"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Total ASC"
+msgstr "Totale crescente"
+
+#. module: pos_order_line_customer_history
+#. odoo-javascript
+#: code:addons/pos_order_line_customer_history/static/src/Screens/CustomerHistoryScreen.xml:0
+#, python-format
+msgid "Total DESC"
+msgstr "Totale decrescente"

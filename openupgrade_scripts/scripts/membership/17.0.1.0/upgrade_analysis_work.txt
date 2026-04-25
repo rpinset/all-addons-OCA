@@ -1,0 +1,9 @@
+---Models in module 'membership'---
+---Fields in module 'membership'---
+---XML records in module 'membership'---
+NEW ir.model.access: membership.access_membership_membership_line_employee
+DEL ir.model.access: membership.access_membership_membership_line
+# DONE: pre-migration: renamed xmlid
+
+DEL ir.ui.menu: association.menu_event_config
+# NOTHING TO DO

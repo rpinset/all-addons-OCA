@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+  <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
+    <field name="name">res.config.settings.view.form.inherit.repair</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="base_repair_config.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//block[@name='repair_setting_container']" position="inside">
+        <setting
+                    id="auto_transfer_repair_setting"
+                    help="Automatically create and validate stock transfers for completed repair orders."
+                >
+          <field name="auto_transfer_repair" />
+        </setting>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>

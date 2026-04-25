@@ -642,6 +642,37 @@ class TestLoan(BaseCommon):
         self.assertEqual(loan.payment_amount - loan.interests_amount, amount)
         self.assertEqual(loan.pending_principal_amount, 0)
 
+    @mute_logger("odoo.models.unlink")
+    def test_manual_principal_and_interest_edit(self):
+        # Manual edits on principal/interests must persist pending and payment.
+        amount = 1000.0
+        periods = 5
+        loan = self.create_loan("fixed-annuity", amount, 12, periods)
+        # Manual schedule: uniform principal, arbitrary growing interests.
+        manual_data = [
+            (200.00, 1.00),
+            (200.00, 2.00),
+            (200.00, 3.00),
+            (200.00, 4.00),
+            (200.00, 5.00),
+        ]
+        with Form(loan) as loan_form:
+            for i, (prin, intr) in enumerate(manual_data):
+                with loan_form.line_ids.edit(i) as line_form:
+                    line_form.principal_amount = prin
+                    line_form.interests_amount = intr
+        loan.invalidate_recordset()
+        expected_pending = amount
+        for line, (prin, intr) in zip(
+            loan.line_ids.sorted("sequence"), manual_data, strict=True
+        ):
+            self.assertAlmostEqual(line.pending_principal_amount, expected_pending, 2)
+            self.assertAlmostEqual(line.principal_amount, prin, 2)
+            self.assertAlmostEqual(line.interests_amount, intr, 2)
+            self.assertAlmostEqual(line.payment_amount, prin + intr, 2)
+            expected_pending -= prin
+        self.assertAlmostEqual(sum(loan.line_ids.mapped("principal_amount")), amount, 2)
+
     def test_negative_loan(self):
         # Check that negatives amounts don't give an error
         loan = self.create_loan("fixed-annuity", -4000, 1, 10)

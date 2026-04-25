@@ -1,0 +1,51 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_config_phone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-26 06:31+0000\n"
+"PO-Revision-Date: 2025-05-26 06:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_config_phone
+#: model:ir.model,name:pos_config_phone.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paràmetres de configuració"
+
+#. module: pos_config_phone
+#: model:ir.model.fields,field_description:pos_config_phone.field_pos_config__phone
+#: model:ir.model.fields,field_description:pos_config_phone.field_res_config_settings__pos_phone
+#: model_terms:ir.ui.view,arch_db:pos_config_phone.res_config_settings_view_form_inherit
+msgid "Phone"
+msgstr "Telèfon"
+
+#. module: pos_config_phone
+#: model:ir.model,name:pos_config_phone.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuració del Punt de Venda"
+
+#. module: pos_config_phone
+#: model_terms:ir.ui.view,arch_db:pos_config_phone.res_config_settings_view_form_inherit
+msgid "Show phone in ticket"
+msgstr "Mostra el número de telèfon al tiquet"
+
+#. module: pos_config_phone
+#. odoo-javascript
+#: code:addons/pos_config_phone/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml:0
+#, python-format
+msgid "Tel:"
+msgstr "Telf:"
+
+#. module: pos_config_phone
+#: model_terms:ir.ui.view,arch_db:pos_config_phone.res_config_settings_view_form_inherit
+msgid "e.g. +34 600 000 000"
+msgstr ""

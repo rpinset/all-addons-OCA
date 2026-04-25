@@ -1,0 +1,7 @@
+---Models in module 'lunch'---
+---Fields in module 'lunch'---
+lunch        / lunch.order              / name (char)                   : not stored anymore
+lunch        / lunch.supplier           / activity_user_id (many2one)   : not related anymore
+lunch        / lunch.supplier           / activity_user_id (many2one)   : now a function
+lunch        / lunch.supplier           / message_main_attachment_id (many2one): DEL relation: ir.attachment
+---XML records in module 'lunch'---

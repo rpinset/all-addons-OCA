@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="time_product" model="product.product">
+    <field name="name">Service on Timesheets</field>
+  </record>
+  <!-- Recent changes from
+  https://github.com/odoo/odoo/commit/a0542b13f679d4dc20d61eb62e4eb5106d6abe5a -->
+  <record id="account.account_analytic_line_rule_readonly_user" model="ir.rule">
+    <field name="domain_force">[('project_id', '=', False)]</field>
+  </record>
+</odoo>

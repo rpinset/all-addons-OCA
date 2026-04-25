@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2019 Tecnativa - Ernesto Tejeda
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.voxel.invoice</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="edi_voxel_oca.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='voxel']" position="inside">
+                <setting groups="edi_voxel_oca.group_voxel_manager">
+                    <field name="voxel_sale_order_login_id" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

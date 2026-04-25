@@ -1,0 +1,101 @@
+---Models in module 'mrp'---
+obsolete model mrp.immediate.production [transient]
+obsolete model mrp.immediate.production.line [transient]
+# NOTHING TO DO: Transient models
+
+new model report.mrp.report_mo_overview [abstract]
+# NOTHING TO DO: New abstract
+
+---Fields in module 'mrp'---
+mrp          / mrp.bom                  / days_to_prepare_mo (integer)  : NEW hasdefault: default
+mrp          / mrp.bom                  / produce_delay (integer)       : NEW hasdefault: default
+mrp          / product.template         / days_to_prepare_mo (float)    : DEL
+mrp          / product.template         / produce_delay (float)         : DEL
+# DONE: post-migration: Transfer data from products to BoMs.
+
+mrp          / mrp.bom                  / message_main_attachment_id (many2one): DEL relation: ir.attachment
+mrp          / mrp.bom                  / rating_ids (one2many)         : NEW relation: rating.rating
+mrp          / mrp.production           / activity_user_id (many2one)   : not related anymore
+mrp          / mrp.production           / activity_user_id (many2one)   : now a function
+mrp          / mrp.production           / message_main_attachment_id (many2one): DEL relation: ir.attachment
+mrp          / mrp.production           / rating_ids (one2many)         : NEW relation: rating.rating
+mrp          / mrp.unbuild              / activity_user_id (many2one)   : not related anymore
+mrp          / mrp.unbuild              / activity_user_id (many2one)   : now a function
+mrp          / mrp.unbuild              / message_main_attachment_id (many2one): DEL relation: ir.attachment
+mrp          / mrp.unbuild              / rating_ids (one2many)         : NEW relation: rating.rating
+# NOTHING TO DO: Mixin changes that don't require anything here.
+
+mrp          / mrp.production           / _order                        : _order is now 'priority desc, date_start asc,id' ('priority desc, date_planned_start asc,id')
+mrp          / mrp.production           / date_finished (datetime)      : now a function
+mrp          / mrp.production           / date_planned_finished (datetime): DEL
+mrp          / mrp.production           / date_planned_start (datetime) : DEL required
+mrp          / mrp.production           / date_start (datetime)         : now required
+mrp          / mrp.workorder            / date_finished (datetime)      : now a function
+mrp          / mrp.workorder            / date_planned_finished (datetime): DEL
+mrp          / mrp.workorder            / date_planned_start (datetime) : DEL
+mrp          / mrp.workorder            / date_start (datetime)         : now a function
+# DONE: pre-migration: Fill date_start and date_finished with the planned ones when no value. More details at https://github.com/odoo/odoo/commit/d4ed9f8a50fbe5e31bc36bb44dbda24349b66e08
+
+mrp          / mrp.production           / all_move_ids (one2many)       : NEW relation: stock.move
+mrp          / mrp.production           / all_move_raw_ids (one2many)   : NEW relation: stock.move
+# NOTHING TO DO: New o2m supporting fields over existing inverse m2o.
+
+mrp          / mrp.production           / components_availability_state (selection): selection_keys is now '['available', 'expected', 'late', 'unavailable']' ('['available', 'expected', 'late']')
+# NOTHING TO DO: Non stored field which adds extra value
+
+mrp          / mrp.production           / is_outdated_bom (boolean)     : NEW
+# NOTHING TO DO: New feature to highlight that there have been changes in the related BoM. It's OK to start with all at False.
+
+mrp          / mrp.production           / product_id (many2one)         : not a function anymore
+# NOTHING TO DO: Glitch in the analysis. There's no real change
+
+mrp          / mrp.production           / workcenter_id (many2one)      : NEW relation: mrp.workcenter
+# NOTHING TO DO: non stored field only used for search in view_mrp_production_filter
+
+mrp          / mrp.workorder            / _order                        : _order is now 'leave_id, date_start, id' ('id')
+# NOTHING TO DO: New ordering criteria, but it may make more sense
+
+mrp          / mrp.workorder            / barcode (char)                : NEW isfunction: function, stored
+# DONE: pre-migration: Pre-created and filled for avoiding ORM
+
+mrp          / mrp.workorder            / finished_lot_id (many2one)    : not a function anymore
+mrp          / mrp.workorder            / finished_lot_id (many2one)    : now related
+# NOTHING TO DO: NOTHING TO DO: Not stored.
+
+mrp          / stock.picking.type       / auto_print_done_mrp_lot (boolean): NEW
+mrp          / stock.picking.type       / auto_print_done_mrp_product_labels (boolean): NEW
+mrp          / stock.picking.type       / auto_print_done_production_order (boolean): NEW
+mrp          / stock.picking.type       / auto_print_generated_mrp_lot (boolean): NEW
+mrp          / stock.picking.type       / auto_print_mrp_reception_report (boolean): NEW
+mrp          / stock.picking.type       / auto_print_mrp_reception_report_labels (boolean): NEW
+mrp          / stock.picking.type       / done_mrp_lot_label_to_print (selection): NEW selection_keys: ['pdf', 'zpl'], hasdefault: default
+mrp          / stock.picking.type       / generated_mrp_lot_label_to_print (selection): NEW selection_keys: ['pdf', 'zpl'], hasdefault: default
+mrp          / stock.picking.type       / mrp_product_label_to_print (selection): NEW selection_keys: ['pdf', 'zpl'], hasdefault: default
+# NOTHING TO DO: New features for auto-printing. Default falsy value is OK to preserve previous behavior, and to be enable by demand.
+
+mrp          / stock.scrap              / bom_id (many2one)             : NEW relation: mrp.bom
+# NOTHING TO DO: New feature to scrap a kit, so existing scraps shouldn't have this filled.
+
+---XML records in module 'mrp'---
+NEW ir.actions.act_window: mrp.action_picking_tree_mrp_operation
+DEL ir.actions.act_window: mrp.mrp_production_report
+NEW ir.actions.client: mrp.action_mrp_display
+NEW ir.actions.client: mrp.action_mrp_display_fullscreen
+NEW ir.actions.client: mrp.action_report_mo_overview
+NEW ir.actions.report: mrp.action_report_mrp_mo_overview
+NEW ir.actions.server: mrp.action_plan_with_components_availability
+DEL ir.model.access: mrp.access_mrp_immediate_production
+DEL ir.model.access: mrp.access_mrp_immediate_production_line
+NEW ir.model.constraint: mrp.constraint_mrp_unbuild_qty_positive
+NEW ir.ui.menu: mrp.mrp_operation_picking
+DEL ir.ui.menu: mrp.menu_mrp_production_report
+NEW ir.ui.view: mrp.mo_overview_byproducts
+NEW ir.ui.view: mrp.mo_overview_components
+NEW ir.ui.view: mrp.mo_overview_content
+NEW ir.ui.view: mrp.mo_overview_line
+NEW ir.ui.view: mrp.mo_overview_operations
+NEW ir.ui.view: mrp.mrp_production_view_activity
+NEW ir.ui.view: mrp.report_mo_overview
+DEL ir.ui.view: mrp.mrp_report_product_product_replenishment
+DEL ir.ui.view: mrp.view_immediate_production
+# NOTHING TO DO: ir noupdate=0 stuff

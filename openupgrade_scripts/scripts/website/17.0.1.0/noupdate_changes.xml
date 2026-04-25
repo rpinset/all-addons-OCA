@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <!--
+  <record id="contactus_page" model="website.page">
+    <field name="website_meta_description">This is the contact us page of the website</field>
+  </record>
+  <record id="homepage_page" model="website.page">
+    <field name="website_meta_description">This is the homepage of the website</field>
+  </record>
+  -->
+</odoo>

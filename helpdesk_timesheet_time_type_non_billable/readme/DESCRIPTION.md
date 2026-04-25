@@ -1,0 +1,1 @@
+This module extends the functionality of hr_timesheet_type_non_billable so that non-billable hours from helpdesk tickets are also excluded.

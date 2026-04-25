@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <!-- Add this record because it is not loaded by Odoo due to noupdate=True and forcecreate=0 -->
+  <record id="picking_type_warehouse0_repair" model="stock.picking.type" forcecreate="0">
+      <field name="name">Repairs</field>
+      <field name="code">repair_operation</field>
+      <field name="company_id" ref="base.main_company"/>
+      <field name="default_location_src_id" ref="stock.stock_location_stock"/>
+      <field name="default_location_dest_id" model="stock.location" search="[('usage', '=', 'production'), ('company_id', '=', obj().env.ref('base.main_company').id)]"/>
+      <field name="default_remove_location_dest_id" model="stock.location" search="[('scrap_location', '=', True), ('company_id', '=', obj().env.ref('base.main_company').id)]"/>
+      <field name="default_recycle_location_dest_id" ref="stock.stock_location_stock"/>
+      <field name="sequence_code">RO</field>
+      <field name="warehouse_id" ref="stock.warehouse0"/>
+  </record>
+  <record id="stock.warehouse0" model="stock.warehouse">
+    <field name="repair_type_id" ref="repair.picking_type_warehouse0_repair"/>
+  </record>
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_select_type" model="ir.ui.view">
+        <field name="name">res.config.settings.form.inherit.helpdesk.select_type</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='show_teams_form']" position="after">
+                <setting
+                    string="Types"
+                    id="show_type_form"
+                    help="Controls if the types are visible on the portal and if they are required."
+                >
+                    <div class="mt16">
+                        <div class="content-group">
+                            <div>
+                                <field
+                                    name="helpdesk_mgmt_portal_type"
+                                    string="Display"
+                                />
+                                <label for="helpdesk_mgmt_portal_type" />
+                            </div>
+                            <div invisible="not helpdesk_mgmt_portal_type">
+                                <field
+                                    name="helpdesk_mgmt_portal_type_id_required"
+                                    string="Required"
+                                />
+                                <label for="helpdesk_mgmt_portal_type_id_required" />
+                            </div>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

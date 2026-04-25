@@ -1,0 +1,6 @@
+---Models in module 'google_gmail'---
+---Fields in module 'google_gmail'---
+google_gmail / ir.mail_server           / smtp_authentication (False)   : selection_keys is now '['certificate', 'cli', 'gmail', 'login']' ('['certificate', 'gmail', 'login']')
+# NOTHING TO DO: Glitch in the selection options recognition.
+
+---XML records in module 'google_gmail'---

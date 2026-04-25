@@ -1,0 +1,121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_ediversa_oca_invoice_send
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "Alcohol Taxes"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model,name:edi_ediversa_oca_invoice_send.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model.fields,field_description:edi_ediversa_oca_invoice_send.field_res_partner__ediversa_send_invoice
+#: model:ir.model.fields,field_description:edi_ediversa_oca_invoice_send.field_res_users__ediversa_send_invoice
+msgid "Ediversa Send Invoice"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model.fields,field_description:edi_ediversa_oca_invoice_send.field_account_tax__ediversa_tax_type
+msgid "Ediversa Tax Type"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "Equivalence Surcharge"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/components/ediversa_send_invoice.py:0
+#, python-format
+msgid ""
+"Error when sending invoice exchange record %(identifier)s to Ediversa. "
+"Company %(company)s does not accept invoice Ediversa connection."
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/components/ediversa_send_invoice.py:0
+#, python-format
+msgid ""
+"Error when sending invoice exchange record %(identifier)s to Ediversa. The "
+"external reference could not be retrieved."
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "Green Point"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "IGIC"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/components/ediversa_send_invoice.py:0
+#, python-format
+msgid ""
+"Invoice exchange record %(identifier)s has been sent to Ediversa. The "
+"external reference is '%(external_ref)s'."
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model,name:edi_ediversa_oca_invoice_send.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model,name:edi_ediversa_oca_invoice_send.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#: model:ir.model,name:edi_ediversa_oca_invoice_send.model_account_tax
+msgid "Tax"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "Tax Exempt"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "VAT"
+msgstr ""
+
+#. module: edi_ediversa_oca_invoice_send
+#. odoo-python
+#: code:addons/edi_ediversa_oca_invoice_send/models/account_tax.py:0
+#, python-format
+msgid "Withholdings For Professional Services"
+msgstr ""

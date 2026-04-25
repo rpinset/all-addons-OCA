@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright 2025 ForgeFlow S.L. (https://www.forgeflow.com)
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+    <record id="view_repair_order_form" model="ir.ui.view">
+        <field name="name">repair.order.form - repair_restrict_lot</field>
+        <field name="model">repair.order</field>
+        <field name="inherit_id" ref="repair.view_repair_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='move_ids']/tree//field[@name='lot_ids']"
+                position="before"
+            >
+                <field
+                    name="restrict_lot_id"
+                    string="Lot/Serial Number"
+                    groups="stock.group_production_lot"
+                    domain="[('product_id','=',product_id)]"
+                    invisible="has_tracking == 'none'"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

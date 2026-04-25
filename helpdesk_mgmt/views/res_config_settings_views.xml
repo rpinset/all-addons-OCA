@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app
+                    data-string="Helpdesk"
+                    string="Helpdesk"
+                    name="helpdesk_mgmt"
+                    groups="helpdesk_mgmt.group_helpdesk_manager"
+                >
+                    <block title="Ticket Form Portal">
+                        <setting
+                            string="Teams"
+                            id="show_teams_form"
+                            help="Controls if the teams are visible on the portal and if they are required."
+                        >
+                            <div class="mt16">
+                                <div class="content-group">
+                                    <div>
+                                        <field
+                                            name="helpdesk_mgmt_portal_select_team"
+                                            string="Display"
+                                        />
+                                        <label for="helpdesk_mgmt_portal_select_team" />
+                                    </div>
+                                    <div
+                                        invisible="not helpdesk_mgmt_portal_select_team"
+                                    >
+                                        <field
+                                            name="helpdesk_mgmt_portal_team_id_required"
+                                            string="Required"
+                                        />
+                                        <label
+                                            for="helpdesk_mgmt_portal_team_id_required"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+                        <setting
+                            string="Categories"
+                            id="show_categories_form"
+                            help="Controls if the categories are required on the portal"
+                        >
+                            <div class="mt16">
+                                <div class="content-group">
+                                    <div>
+                                        <field
+                                            name="helpdesk_mgmt_portal_category_id_required"
+                                            string="Required"
+                                        />
+                                        <label
+                                            for="helpdesk_mgmt_portal_category_id_required"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+                    <block title="Helpdesk">
+                        <setting
+                            string="Tickets"
+                            id="helpdesk_mgmt_ticket_misc"
+                            help="Controls if the tickets created are automatically assigned to the user."
+                        >
+                            <div class="mt16">
+                                <div class="content-group">
+                                    <div>
+                                        <field
+                                            name="helpdesk_mgmt_ticket_auto_assign"
+                                            string="Auto assign User"
+                                        />
+                                        <label for="helpdesk_mgmt_ticket_auto_assign" />
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_helpdesk_mgmt_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'helpdesk_mgmt', 'bin_size': False}</field>
+    </record>
+</odoo>

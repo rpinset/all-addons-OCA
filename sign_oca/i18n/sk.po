@@ -1,0 +1,1560 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sign_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-04-13 16:29+0000\n"
+"Last-Translator: SMNDVC <simon.dovicovic@gmail.com>\n"
+"Language-Team: none\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "%(name)s (%(email)s) has sent the signed document."
+msgstr "%(name)s (%(email)s) odoslal(a) podpísaný dokument."
+
+#. module: sign_oca
+#: model:ir.actions.report,print_report_name:sign_oca.action_report_signature_certificate
+msgid "'Signature Certificate'"
+msgstr "'Certifikát podpisu'"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_mail
+msgid ""
+")\n"
+"                has requested your signature on a document."
+msgstr ""
+")\n"
+"                vás požiadal o podpis dokumentu."
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Created by:</span>"
+msgstr "<span class=\"fw-bold\">Vytvoril:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Created on:</span>"
+msgstr "<span class=\"fw-bold\">Vytvorené:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Current hash:</span>"
+msgstr "<span class=\"fw-bold\">Aktuálny hash:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Document ID:</span>"
+msgstr "<span class=\"fw-bold\">ID dokumentu:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Print date:</span>"
+msgstr "<span class=\"fw-bold\">Dátum tlače:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Related record:</span>"
+msgstr "<span class=\"fw-bold\">Súvisiaci záznam:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Responsible:</span>"
+msgstr "<span class=\"fw-bold\">Zodpovedný:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Signature filename:</span>"
+msgstr "<span class=\"fw-bold\">Názov súboru podpisu:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"fw-bold\">Signers:</span>"
+msgstr "<span class=\"fw-bold\">Signatári:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+msgid "<span class=\"o_stat_text\"> Signed</span>"
+msgstr "<span class=\"o_stat_text\"> Podpísané</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"text-muted\">Inalterability hash:</span>"
+msgstr "<span class=\"text-muted\">Hash nemennosti:</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span class=\"text-muted\">Not available</span>"
+msgstr "<span class=\"text-muted\">Nedostupné</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span>(UTC)</span>"
+msgstr "<span>(UTC)</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span>-</span>"
+msgstr "<span>-</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span>remaining</span>"
+msgstr "<span>zostáva</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span>signed,</span>"
+msgstr "<span>podpísané,</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "<span>signers →</span>"
+msgstr "<span>signatári →</span>"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_mail
+msgid ""
+"<strong>Warning</strong> do not forward this email to other people!<br/>\n"
+"                    They will be able to access this document and sign it as yourself.<br/>"
+msgstr ""
+"<strong>Upozornenie</strong> neposielajte tento e-mail ďalej!<br/>\n"
+"                    Príjemcovia získajú prístup k dokumentu a môžu ho "
+"podpísať vaším menom.<br/>"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__access_token
+msgid "Access Token"
+msgstr "Prístupový token"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__access_warning
+msgid "Access warning"
+msgstr "Upozornenie na prístup"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__action
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Action"
+msgstr "Akcia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_needaction
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_needaction
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_needaction
+msgid "Action Needed"
+msgstr "Vyžaduje akciu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__active
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__active
+msgid "Active"
+msgstr "Aktívne"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_ids
+msgid "Activities"
+msgstr "Aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_exception_decoration
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorácia výnimky aktivity"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+msgid "Activity Log"
+msgstr "Denník aktivít"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Activity Logs"
+msgstr "Záznamy aktivít"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_state
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_state
+msgid "Activity State"
+msgstr "Stav aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_type_icon
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona typu aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__add_field
+msgid "Add field"
+msgstr "Pridať pole"
+
+#. module: sign_oca
+#: model:res.groups,name:sign_oca.sign_oca_group_admin
+msgid "Administrator"
+msgstr "Správca"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__altered_hash
+msgid "Altered Hash"
+msgstr "Zmenený hash"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid ""
+"An error occurred when computing the inalterability. Impossible to get the "
+"unique previous signer information."
+msgstr ""
+"Pri výpočte nemennosti nastala chyba. Nie je možné získať informácie o "
+"jedinečnom predchádzajúcom signatárovi."
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_kanban_view
+msgid "Archive"
+msgstr "Archivovať"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Archived"
+msgstr "Archivované"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+msgid ""
+"As soon as all signers have signed the document, you will receive an email "
+"with the full document"
+msgstr ""
+"Keď dokument podpíšu všetci signatári, dostanete e-mail s kompletným "
+"dokumentom"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__ask_location
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__ask_location
+msgid "Ask Location"
+msgstr "Žiadať polohu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_attachment_count
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_attachment_count
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "Počet príloh"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/elements/elements.xml:0
+#, python-format
+msgid ""
+"By clicking Adopt and Sign, I agree that the chosen signature/initials will "
+"be a valid electronic representation of my hand-written signature/initials "
+"for all purposes when it is used on documents, including legally binding "
+"contracts."
+msgstr ""
+"Kliknutím na Prijať a podpísať súhlasím, že zvolený podpis/iniciály budú "
+"platným elektronickým zobrazením môjho vlastnoručného podpisu/iniciál pre "
+"všetky účely pri použití na dokumentoch vrátane právne záväzných zmlúv."
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__cancel
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_generate_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_generate_multi_form_view
+#, python-format
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Canceled"
+msgstr "Zrušené"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request__state__3_cancel
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+msgid "Cancelled"
+msgstr "Zrušené"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_field__field_type__check
+msgid "Check"
+msgstr "Zaškrtnutie"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid "Click on the field that you want to add"
+msgstr "Kliknite na pole, ktoré chcete pridať"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_res_company
+msgid "Companies"
+msgstr "Spoločnosti"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__company_id
+msgid "Company"
+msgstr "Spoločnosť"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_res_config_settings
+msgid "Config Settings"
+msgstr "Nastavenia konfigurácie"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__configure
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_kanban_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_tree_view
+msgid "Configure"
+msgstr "Nastaviť"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__create
+msgid "Create"
+msgstr "Vytvoriť"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_signer_search_view
+msgid "Create date"
+msgstr "Dátum vytvorenia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__create_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__create_uid
+msgid "Created by"
+msgstr "Vytvoril"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__create_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__create_date
+msgid "Created on"
+msgstr "Vytvorené"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__current_hash
+msgid "Current Hash"
+msgstr "Aktuálny hash"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__access_url
+msgid "Customer Portal URL"
+msgstr "URL zákazníckeho portálu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__data
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__data
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__data
+msgid "Data"
+msgstr "Údaje"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid "Data is saved automatically when editing"
+msgstr "Údaje sa pri úprave ukladajú automaticky"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid "Data is saved automatically when editing."
+msgstr "Údaje sa pri úprave ukladajú automaticky."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__date
+msgid "Date"
+msgstr "Dátum"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Date (UTC)"
+msgstr "Dátum (UTC)"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_role__partner_selection_policy__default
+msgid "Default"
+msgstr "Predvolené"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__default_value
+msgid "Default Value"
+msgstr "Predvolená hodnota"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__default_partner_id
+msgid "Default partner"
+msgstr "Predvolený partner"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#, python-format
+msgid "Delete"
+msgstr "Odstrániť"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__delete_field
+msgid "Delete field"
+msgstr "Odstrániť pole"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_kanban_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_signer_kanban_view
+msgid "Details"
+msgstr "Podrobnosti"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__display_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__display_name
+msgid "Display Name"
+msgstr "Zobrazovaný názov"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+msgid "Document"
+msgstr "Dokument"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Document Information"
+msgstr "Informácie o dokumente"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/js/systray_service.esm.js:0
+#, python-format
+msgid "Documents to be Signed"
+msgstr "Dokumenty na podpis"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__domain
+msgid "Domain"
+msgstr "Doména"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request__state__1_draft
+msgid "Draft"
+msgstr "Koncept"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_kanban_view
+msgid "Dropdown menu"
+msgstr "Rozbaľovacia ponuka"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.esm.js:0
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__edit_field
+#, python-format
+msgid "Edit field"
+msgstr "Upraviť pole"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Email"
+msgstr "E-mail"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_role__partner_selection_policy__empty
+msgid "Empty"
+msgstr "Prázdne"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_role__expression_partner
+msgid "Example: {{object.partner_id.id}}"
+msgstr "Príklad: {{object.partner_id.id}}"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__expression_partner
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_role__partner_selection_policy__expression
+msgid "Expression"
+msgstr "Výraz"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__field_id
+#, python-format
+msgid "Field"
+msgstr "Pole"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "Field %s is not filled"
+msgstr "Pole %s nie je vyplnené"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__field_type
+msgid "Field Type"
+msgstr "Typ poľa"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_field_act_window
+#: model:ir.ui.menu,name:sign_oca.sign_oca_field_menu
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_form_view
+msgid "Fields"
+msgstr "Polia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__filename
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__filename
+msgid "Filename"
+msgstr "Názov súboru"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#, python-format
+msgid "Filled by"
+msgstr "Kto vyplní"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_follower_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_follower_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_follower_ids
+msgid "Followers"
+msgstr "Sledujúci"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_partner_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_partner_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Sledujúci (partneri)"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__activity_type_icon
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikona Font Awesome, napr. fa-tasks"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+msgid "Fully Signed"
+msgstr "Úplne podpísané"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Future Activities"
+msgstr "Budúce aktivity"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_general_settings_act_window
+msgid "General Settings"
+msgstr "Všeobecné nastavenia"
+
+#. module: sign_oca
+#: model:ir.ui.menu,name:sign_oca.sign_oca_general_settings_menu
+msgid "General settings"
+msgstr "Všeobecné nastavenia"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_generate_multi_form_view
+msgid "Generate"
+msgstr "Generovať"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_generate_form_view
+msgid "Generate & sign"
+msgstr "Generovať a podpísať"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_template_generate
+msgid "Generate a signature request"
+msgstr "Vytvoriť žiadosť o podpis"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_template_generate_multi
+msgid "Generate signature requests"
+msgstr "Vytvoriť žiadosti o podpis"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Geolocation"
+msgstr "Geolokácia"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_signer_search_view
+msgid "Group By"
+msgstr "Zoskupiť podľa"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__has_message
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__has_message
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__has_message
+msgid "Has Message"
+msgstr "Má správu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__height
+msgid "Height"
+msgstr "Výška"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid "Help"
+msgstr "Pomoc"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "IP address"
+msgstr "IP adresa"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_exception_icon
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__activity_exception_icon
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona označujúca výnimočnú aktivitu."
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__message_needaction
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__message_needaction
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Ak je zaškrtnuté, nové správy vyžadujú vašu pozornosť."
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__message_has_error
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__message_has_error
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_template__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Ak je zaškrtnuté, niektoré správy majú chybu doručenia."
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid ""
+"If you do a click over a field, you will be able to change the default "
+"configurations of the field"
+msgstr "Kliknutím na pole môžete zmeniť predvolené nastavenia poľa"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid ""
+"In order to add a new field, do a right click over the PDF page. You will be"
+" able to select the field that you will import"
+msgstr ""
+"Nové pole pridáte kliknutím pravým tlačidlom na stránku PDF. Potom môžete "
+"vybrať pole, ktoré chcete vložiť"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid ""
+"In order to add a new field, do a right click over the PDF page. You will be able to select the field that you will import.\n"
+"                Then, you can move and resize the fields over the PDF page using the move icons.\n"
+"                If you do a click over a field, you will be able to change the default configurations of the field"
+msgstr ""
+"Nové pole pridáte kliknutím pravým tlačidlom na stránku PDF. Potom môžete "
+"vybrať pole, ktoré chcete vložiť.\n"
+"                Polia na stránke PDF môžete presúvať a meniť ich veľkosť "
+"pomocou ikon presunu.\n"
+"                Kliknutím na pole môžete zmeniť jeho predvolené nastavenia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__inalterable_hash
+msgid "Inalterability Hash"
+msgstr "Hash nemennosti"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__secure_sequence_number
+msgid "Inalteralbility No Gap Sequence #"
+msgstr "Postupnosť nemennosti bez medzier č."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__ip
+msgid "Ip"
+msgstr "IP"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__is_allow_signature
+msgid "Is Allow Signature"
+msgstr "Povolený podpis"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_is_follower
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_is_follower
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_is_follower
+msgid "Is Follower"
+msgstr "Je sledujúci"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__item_ids
+msgid "Item"
+msgstr "Položka"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__write_uid
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__write_uid
+msgid "Last Updated by"
+msgstr "Naposledy upravil"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__write_date
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__write_date
+msgid "Last Updated on"
+msgstr "Naposledy upravené"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Late Activities"
+msgstr "Oneskorené aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__latitude
+msgid "Latitude"
+msgstr "Zemepisná šírka"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_request_log
+msgid "Log access and edition on requests"
+msgstr "Denník prístupov a úprav žiadostí"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf_portal/sign_oca_pdf_portal.xml:0
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+#, python-format
+msgid "Logo"
+msgstr "Logo"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__longitude
+msgid "Longitude"
+msgstr "Zemepisná dĺžka"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf/sign_oca_pdf.xml:0
+#, python-format
+msgid "Main actions"
+msgstr "Hlavné akcie"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__message
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__message
+msgid "Message"
+msgstr "Správa"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_has_error
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_has_error
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_has_error
+msgid "Message Delivery error"
+msgstr "Chyba doručenia správy"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_ids
+msgid "Messages"
+msgstr "Správy"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__model
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__model_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__model
+msgid "Model"
+msgstr "Model"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__model
+msgid "Model name"
+msgstr "Názov modelu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__my_activity_date_deadline
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Termín mojej aktivity"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "My Documents"
+msgstr "Moje dokumenty"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "My Requests"
+msgstr "Moje žiadosti"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_field__name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__partner_name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__name
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__name
+msgid "Name"
+msgstr "Názov"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf_common/sign_oca_pdf_common.esm.js:0
+#, python-format
+msgid "Need a valid PDF to add signature fields !"
+msgstr "Na pridanie polí podpisu je potrebný platný súbor PDF!"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "New document to sign"
+msgstr "Nový dokument na podpis"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_date_deadline
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Termín ďalšej aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_summary
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_summary
+msgid "Next Activity Summary"
+msgstr "Zhrnutie ďalšej aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_type_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_type_id
+msgid "Next Activity Type"
+msgstr "Typ ďalšej aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__next_item_id
+msgid "Next Item"
+msgstr "Ďalšia položka"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/xml/systray.xml:0
+#, python-format
+msgid "No requests to sign."
+msgstr "Žiadne žiadosti na podpis."
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Not available"
+msgstr "Nedostupné"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_needaction_counter
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_needaction_counter
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Počet akcií"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__message_has_error_counter
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__message_has_error_counter
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "Počet chýb"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__message_needaction_counter
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__message_needaction_counter
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Počet správ vyžadujúcich akciu"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__message_has_error_counter
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__message_has_error_counter
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Počet správ s chybou doručenia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__record_ref
+msgid "Object"
+msgstr "Objekt"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_res_company__sign_oca_send_sign_request_copy
+#: model:ir.model.fields,help:sign_oca.field_res_config_settings__sign_oca_send_sign_request_copy
+#: model_terms:ir.ui.view,arch_db:sign_oca.res_config_settings_view_form
+msgid ""
+"Once all signers have signed the request, a copy of the final document will "
+"be sent to each of them."
+msgstr ""
+"Keď žiadosť podpíšu všetci signatári, každému z nich bude zaslaná kópia "
+"konečného dokumentu."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__page
+msgid "Page"
+msgstr "Strana"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__partner_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__partner_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__partner_id
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Partner"
+msgstr "Partner"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_role__partner_selection_policy
+msgid "Partner Selection Policy"
+msgstr "Pravidlá výberu partnera"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/xml/systray.xml:0
+#, python-format
+msgid "Pending"
+msgstr "Čakajúce"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__placeholder
+#, python-format
+msgid "Placeholder"
+msgstr "Zástupný text"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf_portal/sign_oca_pdf_portal.xml:0
+#, python-format
+msgid "Please Review And Act On This Document"
+msgstr "Skontrolujte tento dokument a vykonajte potrebné kroky"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__access_url
+msgid "Portal Access URL"
+msgstr "URL prístupu na portál"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__position_x
+msgid "Position X"
+msgstr "Pozícia X"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__position_y
+msgid "Position Y"
+msgstr "Pozícia Y"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__rating_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__rating_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__rating_ids
+msgid "Ratings"
+msgstr "Hodnotenia"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__request_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__request_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__request_ids
+msgid "Request"
+msgstr "Žiadosť"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__request_count
+msgid "Request Count"
+msgstr "Počet žiadostí"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "Request cannot be signed"
+msgstr "Žiadosť nie je možné podpísať"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/xml/systray.xml:0
+#: model:ir.ui.menu,name:sign_oca.sign_oca_request_menu
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_form_view
+#, python-format
+msgid "Requests"
+msgstr "Žiadosti"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__required
+#, python-format
+msgid "Required"
+msgstr "Povinné"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__res_id
+msgid "Res"
+msgstr "Res"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__user_id
+msgid "Responsible"
+msgstr "Zodpovedný"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__activity_user_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__activity_user_id
+msgid "Responsible User"
+msgstr "Zodpovedný používateľ"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_kanban_view
+msgid "Restore"
+msgstr "Obnoviť"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__role_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__role_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__role_id
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_signer_search_view
+msgid "Role"
+msgstr "Rola"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_role_act_window
+#: model:ir.ui.menu,name:sign_oca.sign_oca_role_menu
+msgid "Roles"
+msgstr "Roly"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure_field_dialog.xml:0
+#, python-format
+msgid "Save"
+msgstr "Uložiť"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__access_token
+msgid "Security Token"
+msgstr "Bezpečnostný token"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_kanban_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_tree_view
+msgid "Send"
+msgstr "Odoslať"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_res_company__sign_oca_send_sign_request_copy
+#: model:ir.model.fields,field_description:sign_oca.field_res_config_settings__sign_oca_send_sign_request_copy
+msgid "Send signers a copy of the final signed document"
+msgstr "Poslať signatárom kópiu konečného podpísaného dokumentu"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_form_view
+msgid "Send to sign"
+msgstr "Odoslať na podpis"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request__state__0_sent
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Sent"
+msgstr "Odoslané"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__sequence_id
+msgid "Sequence"
+msgstr "Postupnosť"
+
+#. module: sign_oca
+#: model:ir.ui.menu,name:sign_oca.sign_oca_settings_menu
+msgid "Settings"
+msgstr "Nastavenia"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Show all records which has next action date is before today"
+msgstr "Zobraziť všetky záznamy, ktorých dátum ďalšej akcie je pred dneškom"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf/sign_oca_pdf.xml:0
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__sign
+#: model:ir.module.category,name:sign_oca.sign_oca_module_category
+#: model:ir.ui.menu,name:sign_oca.sign_oca_root_menu
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_signer_form_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_tree_view
+#, python-format
+msgid "Sign"
+msgstr "Podpísať"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__sign_now
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_kanban_view
+msgid "Sign Now"
+msgstr "Podpísať teraz"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.res_config_settings_view_form
+msgid "Sign Oca"
+msgstr "Sign Oca"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_template
+msgid "Sign Oca Template"
+msgstr "Šablóna Sign Oca"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_template_generate_act_window
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_generate_form_view
+msgid "Sign Oca Template Generate"
+msgstr "Generovanie šablóny Sign Oca"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_template_generate_multi_act_window
+msgid "Sign Oca Template Generate Multi"
+msgstr "Hromadné generovanie šablón Sign Oca"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_template_item
+msgid "Sign Oca Template Item"
+msgstr "Položka šablóny Sign Oca"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_request
+msgid "Sign Request"
+msgstr "Žiadosť o podpis"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_request_signer_act_window
+msgid "Sign Request Signers"
+msgstr "Signatári žiadosti o podpis"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_request_signer
+msgid "Sign Request Value"
+msgstr "Hodnota žiadosti o podpis"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/xml/systray.xml:0
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_request_act_window
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_request_log_act_window
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_request_template_act_window
+#: model_terms:ir.ui.view,arch_db:sign_oca.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:sign_oca.view_partner_form
+#, python-format
+msgid "Sign Requests"
+msgstr "Žiadosti o podpis"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_role
+msgid "Sign Role"
+msgstr "Rola podpisu"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_mail
+msgid "Sign document"
+msgstr "Podpísať dokument"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/js/sign_oca.esm.js:0
+#, python-format
+msgid "Sign from template"
+msgstr "Podpísať zo šablóny"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_template_tree_view
+msgid "Sign now"
+msgstr "Podpísať teraz"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signatory_data
+msgid "Signatory Data"
+msgstr "Údaje signatára"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_field__field_type__signature
+msgid "Signature"
+msgstr "Podpis"
+
+#. module: sign_oca
+#: model:ir.actions.report,name:sign_oca.action_report_signature_certificate
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Signature Certificate"
+msgstr "Certifikát podpisu"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_field
+msgid "Signature Field Type"
+msgstr "Typ poľa podpisu"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__signature_hash
+msgid "Signature Hash"
+msgstr "Hash podpisu"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid "Signature configuration"
+msgstr "Konfigurácia podpisu"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_sign_oca_template_generate_signer
+msgid "Signature request signers"
+msgstr "Signatári žiadosti o podpis"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Signatures"
+msgstr "Podpisy"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signed
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request__state__2_signed
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Signed"
+msgstr "Podpísané"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signed_count
+msgid "Signed Count"
+msgstr "Počet podpisov"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__signed_on
+msgid "Signed On"
+msgstr "Dátum podpisu"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "Signed document"
+msgstr "Podpísaný dokument"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Signed on"
+msgstr "Podpísané dňa"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Signed?"
+msgstr "Podpísané?"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_res_partner__signer_ids
+#: model:ir.model.fields,field_description:sign_oca.field_res_users__signer_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signer_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__signer_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__signer_ids
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+msgid "Signer"
+msgstr "Signatár"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_res_partner__signer_count
+#: model:ir.model.fields,field_description:sign_oca.field_res_users__signer_count
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signer_count
+msgid "Signer Count"
+msgstr "Počet signatárov"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__signer_ids
+#: model_terms:ir.ui.view,arch_db:sign_oca.report_signature_certificate_doc
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_tree_view
+msgid "Signers"
+msgstr "Signatári"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__state
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "State"
+msgstr "Stav"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__activity_state
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stav podľa aktivít\n"
+"Oneskorené: termín už uplynul\n"
+"Dnes: dátum aktivity je dnes\n"
+"Plánované: budúce aktivity."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__template_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate__template_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_multi__template_id
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__template_id
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_kanban_view
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Template"
+msgstr "Šablóna"
+
+#. module: sign_oca
+#: model:ir.actions.act_window,name:sign_oca.sign_oca_template_act_window
+#: model:ir.ui.menu,name:sign_oca.sign_oca_template_menu
+msgid "Templates"
+msgstr "Šablóny"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_field__field_type__text
+msgid "Text"
+msgstr "Text"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+msgid "The document has been cancelled"
+msgstr "Dokument bol zrušený"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__signer_id
+msgid "The signer related to the active user."
+msgstr "Signatár súvisiaci s aktívnym používateľom."
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_configure/sign_oca_configure.xml:0
+#, python-format
+msgid ""
+"Then, you can move and resize the fields over the PDF page using the move "
+"icons."
+msgstr ""
+"Polia na stránke PDF môžete presúvať a meniť ich veľkosť pomocou ikon "
+"presunu."
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "There are no signers, please fill them before configuring it"
+msgstr "Žiadni signatári – pred nastavením ich prosím vyplňte"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_role__partner_selection_policy
+msgid ""
+"This field is used to define how the partner will be calculated in the "
+"different roles of a request. This field will be used when the 'Sign from "
+"Template' action is triggered."
+msgstr ""
+"Toto pole určuje, ako sa vypočíta partner v jednotlivých rolách žiadosti. "
+"Použije sa pri spustení akcie „Podpísať zo šablóny“."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__to_sign
+msgid "To Sign"
+msgstr "Na podpis"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "To sign"
+msgstr "Na podpis"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_search_view
+msgid "Today Activities"
+msgstr "Dnešné aktivity"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__activity_exception_decoration
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Typ výnimočnej aktivity na zázname."
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_log__uid
+msgid "Uid"
+msgstr "UID"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/res_users.py:0
+#, python-format
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#. module: sign_oca
+#: model:ir.model,name:sign_oca.model_res_users
+msgid "User"
+msgstr "Používateľ"
+
+#. module: sign_oca
+#: model:res.groups,name:sign_oca.sign_oca_group_manager
+msgid "User: All Documents"
+msgstr "Používateľ: všetky dokumenty"
+
+#. module: sign_oca
+#: model:res.groups,name:sign_oca.sign_oca_group_user
+msgid "User: Own Documents Only"
+msgstr "Používateľ: len vlastné dokumenty"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "Users %s has already signed the document"
+msgstr "Používateľ %s už dokument podpísal"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__validate
+msgid "Validate"
+msgstr "Overiť"
+
+#. module: sign_oca
+#. odoo-javascript
+#: code:addons/sign_oca/static/src/components/sign_oca_pdf_portal/sign_oca_pdf_portal.xml:0
+#, python-format
+msgid "Validate & Send document"
+msgstr "Overiť a odoslať dokument"
+
+#. module: sign_oca
+#: model:ir.model.fields.selection,name:sign_oca.selection__sign_oca_request_log__action__view
+msgid "View Document"
+msgstr "Zobraziť dokument"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request__website_message_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_request_signer__website_message_ids
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template__website_message_ids
+msgid "Website Messages"
+msgstr "Správy z webu"
+
+#. module: sign_oca
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request__website_message_ids
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_request_signer__website_message_ids
+#: model:ir.model.fields,help:sign_oca.field_sign_oca_template__website_message_ids
+msgid "Website communication history"
+msgstr "História komunikácie cez web"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_item__width
+msgid "Width"
+msgstr "Šírka"
+
+#. module: sign_oca
+#: model:ir.model.fields,field_description:sign_oca.field_sign_oca_template_generate_signer__wizard_id
+msgid "Wizard"
+msgstr "Sprievodca"
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "You are not allowed to sign this document."
+msgstr "Nemáte oprávnenie podpísať tento dokument."
+
+#. module: sign_oca
+#. odoo-python
+#: code:addons/sign_oca/models/sign_oca_request.py:0
+#, python-format
+msgid "You can only configure requests in draft state"
+msgstr "Žiadosti je možné nastavovať len v stave konceptu"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+msgid ""
+"You should have received an email with the final document.<br/>\n"
+"                            Check on your mailbox."
+msgstr ""
+"Mali by ste dostať e-mail s konečným dokumentom.<br/>\n"
+"                            Skontrolujte si schránku."
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.sign_oca_request_form_view
+msgid ""
+"You will cancel the request and all the accesses. Are you sure about it?"
+msgstr "Žiadosť a všetky prístupy budú zrušené. Ste si istí?"
+
+#. module: sign_oca
+#: model_terms:ir.ui.view,arch_db:sign_oca.portal_sign_document_signed
+msgid "has already been signed"
+msgstr "už bol podpísaný"

@@ -1,0 +1,1 @@
+This module allows you to configure and display a specific phone number for each Point of Sale (POS) on the printed sales receipt, replacing the company's default phone number.

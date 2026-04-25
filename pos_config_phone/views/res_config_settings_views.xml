@@ -1,0 +1,16 @@
+<!-- Copyright 2025 APSL-Nagarro Antoni Marroig
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="res_config_settings_view_form_inherit">
+        <field name="name">res.config.settings.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='margin_and_cost']" position="after">
+                <setting id="phone" string="Phone" help="Show phone in ticket">
+                    <field name="pos_phone" placeholder="e.g. +34 600 000 000" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
