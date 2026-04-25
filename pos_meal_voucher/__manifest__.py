@@ -1,0 +1,35 @@
+# Copyright (C) 2020 - Today: GRAP (http://www.grap.coop)
+# @author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+{
+    "name": "Point Of Sale - Meal Voucher",
+    "summary": "Handle meal vouchers in Point of Sale"
+    " with eligible amount and max amount",
+    "version": "16.0.1.0.0",
+    "category": "Point of Sale",
+    "author": "GRAP, Odoo Community Association (OCA)",
+    "maintainers": ["legalsylvain"],
+    "website": "https://github.com/OCA/pos",
+    "license": "AGPL-3",
+    "depends": [
+        "point_of_sale",
+    ],
+    "data": [
+        "data/barcode_rule.xml",
+        "views/pos_payment_method_view.xml",
+        "views/res_config_settings_view.xml",
+        "views/view_product_category.xml",
+        "views/view_product_template.xml",
+    ],
+    "assets": {
+        "point_of_sale.assets": [
+            "pos_meal_voucher/static/src/scss/*.scss",
+            "pos_meal_voucher/static/src/js/**/*.js",
+            "pos_meal_voucher/static/src/xml/**/*.xml",
+        ],
+    },
+    "demo": [
+        "demo/product_category.xml",
+        "demo/product_product.xml",
+    ],
+}

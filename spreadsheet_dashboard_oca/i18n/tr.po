@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* spreadsheet_dashboard_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-25 12:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_dashboard__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_dashboard__can_edit
+msgid "Can Edit"
+msgstr "Düzenleyebilir"
+
+#. module: spreadsheet_dashboard_oca
+#: model_terms:ir.ui.view,arch_db:spreadsheet_dashboard_oca.spreadsheet_dashboard_tree_view
+msgid "Copy"
+msgstr "Kopyala"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_spreadsheet_import__dashboard_id
+msgid "Dashboard"
+msgstr "Kontrol Paneli"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_spreadsheet_import__dashboard_group_id
+msgid "Dashboard Group"
+msgstr "Kontrol Paneli Grubu"
+
+#. module: spreadsheet_dashboard_oca
+#: model_terms:ir.ui.view,arch_db:spreadsheet_dashboard_oca.spreadsheet_dashboard_tree_view
+msgid "Edit"
+msgstr "Düzenle"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model,name:spreadsheet_dashboard_oca.model_spreadsheet_spreadsheet_import
+msgid "Import data to spreadsheet"
+msgstr "Verileri e-tabloya aktar"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_dashboard__name
+msgid "Name"
+msgstr "Isim"
+
+#. module: spreadsheet_dashboard_oca
+#: model:spreadsheet.spreadsheet.import.mode,name:spreadsheet_dashboard_oca.spreadsheet_import_mode_dashboard_new_spreadsheet
+msgid "New dashboard"
+msgstr "Yeni kontrol paneli"
+
+#. module: spreadsheet_dashboard_oca
+#. odoo-python
+#: code:addons/spreadsheet_dashboard_oca/models/spreadsheet_dashboard.py:0
+#, python-format
+msgid "Search operation not supported"
+msgstr "Arama işlemi desteklenmiyor"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model,name:spreadsheet_dashboard_oca.model_spreadsheet_dashboard
+msgid "Spreadsheet Dashboard"
+msgstr "E-Tablo Kontrol Paneli"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_dashboard__spreadsheet_raw
+msgid "Spreadsheet Raw"
+msgstr "Ham E-Tablo"
+
+#. module: spreadsheet_dashboard_oca
+#: model:ir.model.fields,field_description:spreadsheet_dashboard_oca.field_spreadsheet_dashboard__spreadsheet_revision_ids
+msgid "Spreadsheet Revision"
+msgstr "E-Tablo Revizyonu"
+
+#. module: spreadsheet_dashboard_oca
+#. odoo-python
+#: code:addons/spreadsheet_dashboard_oca/models/spreadsheet_dashboard.py:0
+#, python-format
+msgid "The value has to be a boolean"
+msgstr "Değer boolean olmalıdır"
+
+#. module: spreadsheet_dashboard_oca
+#: model:spreadsheet.spreadsheet.import.mode,name:spreadsheet_dashboard_oca.spreadsheet_import_mode_dashboard
+msgid "To dashboard"
+msgstr "Kontrol paneline"
+
+#. module: spreadsheet_dashboard_oca
+#: model:spreadsheet.spreadsheet.import.mode,name:spreadsheet_dashboard_oca.spreadsheet_import_mode_dashboard_sheet
+msgid "To dashboard new sheet"
+msgstr "Kontrol panelinde yeni tabloya gitmek için"

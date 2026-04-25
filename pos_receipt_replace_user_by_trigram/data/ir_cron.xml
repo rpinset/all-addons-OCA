@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record forcecreate="True" id="ir_cron_generate_pos_trigram" model="ir.cron">
+        <field name="name">POS: generate user trigram</field>
+        <field name="model_id" ref="base.model_res_partner" />
+        <field name="state">code</field>
+        <field eval="False" name="active" />
+        <field name="user_id" ref="base.user_root" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">1</field>
+        <field name="code">
+def get_trigram(*args):
+  valid = [x.strip() for x in args if x and x.strip()]
+  if valid:
+    if len(valid) &gt; 1:
+      trigram = valid[0][:1] + valid[1][:2]
+    else:
+      trigram = valid[0][:3]
+  else:
+    trigram = ""
+  return trigram
+
+partners = model.search([('pos_trigram', '=', ''), ('user_ids', '=', True)])
+for partner in partners:
+  firstname, lastname = partner.split(' ', 1)
+  partner.write({'pos_trigram': get_trigram(firstname, lastname)})
+</field>
+    </record>
+</odoo>

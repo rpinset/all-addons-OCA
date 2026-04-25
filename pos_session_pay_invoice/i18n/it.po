@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_session_pay_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-08-08 14:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: pos_session_pay_invoice
+#: model_terms:ir.ui.view,arch_db:pos_session_pay_invoice.view_pos_session_form
+msgid ""
+"<span class=\"o_stat_text\">Get Payment</span>\n"
+"                        <span class=\"o_stat_text\">from Invoice</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Ottieni pagamento</span>\n"
+"                        <span class=\"o_stat_text\">dalla fattura</span>"
+
+#. module: pos_session_pay_invoice
+#: model_terms:ir.ui.view,arch_db:pos_session_pay_invoice.view_pos_session_form
+msgid ""
+"<span class=\"o_stat_text\">Pay Supplier</span>\n"
+"                        <span class=\"o_stat_text\">Invoice</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Pagamento fattura</span>\n"
+"                        <span class=\"o_stat_text\">fornitore</span>"
+
+#. module: pos_session_pay_invoice
+#: model_terms:ir.ui.view,arch_db:pos_session_pay_invoice.view_pos_session_form
+msgid ""
+"<span class=\"o_stat_text\">Pay</span>\n"
+"                        <span class=\"o_stat_text\">Refund</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Pagamento</span>\n"
+"                        <span class=\"o_stat_text\">rimborso</span>"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model,name:pos_session_pay_invoice.model_cash_pay_invoice
+msgid "Cash Pay invoice from bank statement"
+msgstr "Fattura pagamento contanti da estratto conto bancario"
+
+#. module: pos_session_pay_invoice
+#: model:ir.actions.act_window,name:pos_session_pay_invoice.action_pos_invoice_in_control
+msgid "Pay invoice"
+msgstr "Paga la fattura"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model.fields,field_description:pos_session_pay_invoice.field_cash_pay_invoice__pos_payment_method_id
+msgid "Payment Method"
+msgstr "Metodo di pagamento"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model,name:pos_session_pay_invoice.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Ordini punto vendita"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model,name:pos_session_pay_invoice.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sessione punto vendita"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model.fields,field_description:pos_session_pay_invoice.field_cash_pay_invoice__pos_payment_method_domain
+msgid "Pos Payment Method Domain"
+msgstr "Dominio metodo pagamento POS"
+
+#. module: pos_session_pay_invoice
+#: model:ir.model.fields,field_description:pos_session_pay_invoice.field_cash_pay_invoice__pos_session_id
+msgid "Pos Session"
+msgstr "Sessione POS"
+
+#. module: pos_session_pay_invoice
+#: model_terms:ir.ui.view,arch_db:pos_session_pay_invoice.view_pos_config_kanban
+msgid "Summary"
+msgstr "Riepilogo"
+
+#. module: pos_session_pay_invoice
+#. odoo-python
+#: code:addons/pos_session_pay_invoice/models/pos_session.py:0
+#, python-format
+msgid ""
+"You can only pay invoices in an opened session. Please refresh the window "
+"and try again."
+msgstr ""
+"Si possono pagare solo fatture in una sessione aperta. Ricaricare la pagina "
+"e riprovare."
+
+#~ msgid "Amount"
+#~ msgstr "Valore"
+
+#, python-format
+#~ msgid "Bank Statement was not found"
+#~ msgstr "Non è stato trovato il rendiconto bancario"
+
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
+
+#~ msgid "Cash invoice in"
+#~ msgstr "Contanti fattura passiva"
+
+#~ msgid "Collect Payment from Invoice"
+#~ msgstr "Riscuoti pagamento da fattura"
+
+#~ msgid "Company"
+#~ msgstr "Azienda"
+
+#~ msgid "Created by"
+#~ msgstr "Creato da"
+
+#~ msgid "Created on"
+#~ msgstr "Creato il"
+
+#~ msgid "Currency"
+#~ msgstr "Valuta"
+
+#~ msgid "Display Name"
+#~ msgstr "Nome visualizzato"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Invoice"
+#~ msgstr "Fattura"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "Last Updated by"
+#~ msgstr "Ultimo aggiornamento di"
+
+#~ msgid "Last Updated on"
+#~ msgstr "Ultimo aggiornamento il"
+
+#~ msgid "Payment Method Count"
+#~ msgstr "Conteggio metodo di pagamento"
+
+#~ msgid "Payment methods"
+#~ msgstr "Metodi di pagamento"
+
+#~ msgid "Reason"
+#~ msgstr "Motivo"
+
+#~ msgid "Register"
+#~ msgstr "Registra"
+
+#~ msgid "Session"
+#~ msgstr "Sessione"
+
+#, python-format
+#~ msgid "There is no cash register for this Pos session"
+#~ msgstr "Non è presente il registratore di cassa per questa sessione POS"
+
+#~ msgid "pos box cash invoice in"
+#~ msgstr "POS BOX contanti fattura passiva"
+
+#~ msgid "pos box cash invoice out"
+#~ msgstr "POS BOX fattura attiva contanti"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t
+        t-name="TareNumpadWidget"
+        t-inherit="point_of_sale.NumpadWidget"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <!-- add the tare button after the 6 digit button -->
+        <xpath
+            expr="//button[@t-on-click=&quot;() => this.sendInput('6')&quot;]"
+            position="after"
+        >
+            <button
+                class="mode-button"
+                t-att-class="{'selected-mode': props.activeMode === 'tare'}"
+                t-on-click="() => this.changeMode('tare')"
+            >Tare
+            </button>
+        </xpath>
+        <!-- move the discount button after the 9 digit button -->
+        <xpath
+            expr="//button[@t-on-click=&quot;() => this.sendInput('9')&quot;]"
+            position="after"
+        >
+            <xpath
+                expr="//button[@t-on-click=&quot;() => this.changeMode('discount')&quot;]"
+                position="move"
+            />
+        </xpath>
+        <!-- move the price button after the decimal separator button -->
+        <xpath
+            expr="//button[@t-on-click=&quot;() => this.sendInput(decimalSeparator)&quot;]"
+            position="after"
+        >
+            <xpath
+                expr="//button[@t-on-click=&quot;() => this.changeMode('price')&quot;]"
+                position="move"
+            />
+        </xpath>
+    </t>
+
+</templates>

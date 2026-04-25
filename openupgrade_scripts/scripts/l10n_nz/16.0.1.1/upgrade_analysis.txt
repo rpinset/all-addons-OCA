@@ -1,0 +1,10 @@
+---Models in module 'l10n_nz'---
+---Fields in module 'l10n_nz'---
+---XML records in module 'l10n_nz'---
+NEW account.account.template: l10n_nz.nz_11340
+NEW account.report.column: l10n_nz.tax_report_balance
+NEW account.report.expression: l10n_nz.tax_report_box11_tag
+NEW account.report.expression: l10n_nz.tax_report_box13_formula
+NEW account.report.expression: l10n_nz.tax_report_box5_tag
+NEW account.report.expression: l10n_nz.tax_report_box6_tag
+NEW account.report.expression: l10n_nz.tax_report_box9_tag

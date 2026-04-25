@@ -1,0 +1,9 @@
+---Models in module 'microsoft_outlook'---
+---Fields in module 'microsoft_outlook'---
+fetchmail_outlook / fetchmail.server         / use_microsoft_outlook_service (boolean): DEL
+microsoft_outlook / fetchmail.server         / server_type (False)           : NEW selection_keys: ['gmail', 'imap', 'local', 'outlook', 'pop'], mode: modify
+microsoft_outlook / ir.mail_server           / smtp_authentication (False)   : NEW selection_keys: ['certificate', 'gmail', 'login', 'outlook'], mode: modify
+microsoft_outlook / ir.mail_server           / use_microsoft_outlook_service (boolean): DEL
+---XML records in module 'microsoft_outlook'---
+NEW ir.ui.view: microsoft_outlook.fetchmail_server_view_form
+DEL ir.ui.view: fetchmail_outlook.fetchmail_server_view_form

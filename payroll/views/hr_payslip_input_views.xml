@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_payslip_input_view_search" model="ir.ui.view">
+        <field name="name">hr.payslip.input.search</field>
+        <field name="model">hr.payslip.input</field>
+        <field name="arch" type="xml">
+            <search>
+                <field
+                    string="Search all"
+                    name="name"
+                    filter_domain="['|', '|', '|', ('name', 'ilike', self), ('payslip_id', 'ilike', self), ('code', 'ilike', self), ('contract_id', 'ilike', self)]"
+                />
+                <field name="name" />
+                <field name="payslip_id" />
+                <field name="code" />
+                <field name="amount" />
+                <field name="contract_id" />
+
+                <group expand="1">
+                    <filter
+                        name="group_by_name"
+                        domain="[]"
+                        context="{'group_by':'name'}"
+                    />
+                    <filter
+                        name="group_by_payslip_id"
+                        domain="[]"
+                        context="{'group_by':'payslip_id'}"
+                    />
+                    <filter
+                        name="group_by_code"
+                        domain="[]"
+                        context="{'group_by':'code'}"
+                    />
+                    <filter
+                        name="group_by_contract_id"
+                        domain="[]"
+                        context="{'group_by':'contract_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="hr_payslip_input_view_tree" model="ir.ui.view">
+        <field name="name">hr.payslip.input.tree</field>
+        <field name="model">hr.payslip.input</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="true" multi_edit="1" editable="top">
+                <field name="name" />
+                <field name="payslip_id" />
+                <field name="sequence" />
+                <field name="code" />
+                <field name="amount" />
+                <field name="amount_qty" />
+                <field name="contract_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_payslip_input_action" model="ir.actions.act_window">
+        <field name="name">Payslip Inputs</field>
+        <field name="res_model">hr.payslip.input</field>
+        <field name="view_mode">tree</field>
+        <field name="search_view_id" ref="hr_payslip_input_view_search" />
+    </record>
+
+    <menuitem
+        action="hr_payslip_input_action"
+        id="hr_payslip_input_menu"
+        parent="payroll_menu_configuration"
+        sequence="13"
+    />
+</odoo>

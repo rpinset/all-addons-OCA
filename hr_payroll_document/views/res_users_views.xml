@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2025 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="res_users_view_form_profile" model="ir.ui.view">
+        <field name="name">Add Payroll fields to User profile form view</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="hr.res_users_view_form_profile" />
+        <field name="arch" type="xml">
+            <div id="o_work_employee_main" position="inside">
+                <group name="payroll" string="Payroll">
+                    <field
+                        name="no_payroll_encryption"
+                        string="Disable encryption"
+                        attrs="{
+                            'readonly': [
+                                ('can_edit', '=', False),
+                            ],
+                        }"
+                    />
+                </group>
+            </div>
+        </field>
+    </record>
+</odoo>

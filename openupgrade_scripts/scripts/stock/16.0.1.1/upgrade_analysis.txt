@@ -1,0 +1,86 @@
+---Models in module 'stock'---
+obsolete model stock.location.route (renamed to stock.route)
+obsolete model stock.production.lot (renamed to stock.lot)
+new model lot.label.layout [transient]
+new model picking.label.type [transient]
+new model stock.lot (renamed from stock.production.lot)
+new model stock.replenishment.option [transient]
+new model stock.route (renamed from stock.location.route)
+---Fields in module 'stock'---
+stock        / barcode.rule             / type (False)                  : selection_keys is now '['alias', 'expiration_date', 'location', 'location_dest', 'lot', 'pack_date', 'package', 'package_type', 'product', 'quantity', 'use_date', 'weight']' ('['alias', 'expiration_date', 'location', 'location_dest', 'lot', 'package', 'package_type', 'packaging_date', 'product', 'quantity', 'use_date', 'weight']')
+stock        / product.category         / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.category         / route_ids (many2many)         : table is now 'stock_route_categ' ('stock_location_route_categ')
+stock        / product.category         / total_route_ids (many2many)   : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.packaging        / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.packaging        / route_ids (many2many)         : table is now 'stock_route_packaging' ('stock_location_route_packaging')
+stock        / product.product          / route_from_categ_ids (many2many): relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.product          / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.template         / detailed_type (False)         : selection_keys is now '['consu', 'product', 'service']' ('['consu', 'gift', 'product', 'service']')
+stock        / product.template         / route_from_categ_ids (many2many): relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / product.template         / route_from_categ_ids (many2many): table is now 'stock.route' ('stock.location.route')
+stock        / product.template         / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.location           / replenish_location (boolean)  : NEW hasdefault: compute
+stock        / stock.location           / warehouse_id (many2one)       : is now stored
+stock        / stock.location.route     / categ_ids (many2many)         : table is now 'stock_route_categ' ('stock_location_route_categ')
+stock        / stock.location.route     / packaging_ids (many2many)     : table is now 'stock_route_packaging' ('stock_location_route_packaging')
+stock        / stock.move               / lot_ids (many2many)           : relation is now 'stock.lot' ('stock.production.lot') [nothing to do]
+stock        / stock.move               / quantity_done (float)         : is now stored
+stock        / stock.move               / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.move               / route_ids (many2many)         : table is now 'stock_route_move' ('stock_location_route_move')
+stock        / stock.move.line          / _order                        : _order is now 'result_package_id desc, id' ('result_package_id desc, location_id asc, location_dest_id asc, picking_id asc, id')
+stock        / stock.move.line          / lot_id (many2one)             : relation is now 'stock.lot' ('stock.production.lot') [nothing to do]
+stock        / stock.move.line          / product_category_name (char)  : NEW isrelated: related, stored
+stock        / stock.move.line          / product_qty (float)           : DEL
+stock        / stock.move.line          / product_uom_qty (float)       : DEL required
+stock        / stock.move.line          / reserved_qty (float)          : NEW isfunction: function, stored
+stock        / stock.move.line          / reserved_uom_qty (float)      : NEW required, hasdefault: default
+stock        / stock.package.type       / _order                        : _order is now 'id' ('sequence')
+stock        / stock.package.type       / base_weight (float)           : NEW
+stock        / stock.picking            / move_ids (one2many)           : NEW relation: stock.move
+stock        / stock.picking            / move_lines (one2many)         : DEL relation: stock.move
+stock        / stock.picking.type       / auto_show_reception_report (boolean): NEW
+stock        / stock.picking.type       / create_backorder (selection)  : NEW required, selection_keys: ['always', 'ask', 'never'], hasdefault: default
+stock        / stock.quant              / lot_id (many2one)             : relation is now 'stock.lot' ('stock.production.lot') [nothing to do]
+stock        / stock.quant              / storage_category_id (many2one): NEW relation: stock.storage.category, isrelated: related, stored
+stock        / stock.quant.package      / pack_date (date)              : NEW hasdefault: default
+stock        / stock.rule               / location_dest_id (many2one)   : NEW relation: stock.location, required
+stock        / stock.rule               / location_id (many2one)        : DEL relation: stock.location, required
+stock        / stock.rule               / route_id (many2one)           : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.scrap              / lot_id (many2one)             : relation is now 'stock.lot' ('stock.production.lot') [nothing to do]
+stock        / stock.warehouse          / crossdock_route_id (many2one) : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.warehouse          / delivery_route_id (many2one)  : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.warehouse          / reception_route_id (many2one) : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.warehouse          / resupply_route_ids (one2many) : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.warehouse          / route_ids (many2many)         : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+stock        / stock.warehouse.orderpoint / route_id (many2one)           : relation is now 'stock.route' ('stock.location.route') [nothing to do]
+---XML records in module 'stock'---
+NEW ir.actions.act_window: stock.action_product_stock_view
+DEL ir.actions.act_window: stock.report_stock_quantity_action
+DEL ir.actions.act_window: stock.report_stock_quantity_action_product
+NEW ir.actions.client: stock.stock_replenishment_product_template_action
+NEW ir.actions.report: stock.action_report_picking_packages
+DEL ir.actions.report: stock.stock_replenishment_report_product_product_action
+DEL ir.actions.report: stock.stock_replenishment_report_product_template_action
+NEW ir.actions.server: stock.action_revert_inventory_adjustment
+NEW ir.model.access: stock.access_product_tag_stock_manager
+NEW ir.model.access: stock.access_stock_lot_label_layout_user
+NEW ir.model.access: stock.access_stock_lot_user
+NEW ir.model.access: stock.access_stock_picking_label_type_user
+NEW ir.model.access: stock.access_stock_replenish_option
+DEL ir.model.access: stock.access_stock_production_lot_user
+NEW ir.ui.menu: stock.menu_product_stock
+DEL ir.ui.menu: stock.menu_forecast_inventory
+DEL ir.ui.menu: stock.menu_storage_categoty_capacity_config
+NEW ir.ui.view: stock.duplicated_sn_warning
+NEW ir.ui.view: stock.lot_label_layout_form_picking
+NEW ir.ui.view: stock.picking_label_type_form
+NEW ir.ui.view: stock.product_product_stock_tree
+NEW ir.ui.view: stock.product_search_form_view_stock_report
+NEW ir.ui.view: stock.replenishment_option_tree_view
+NEW ir.ui.view: stock.replenishment_option_warning_view
+NEW ir.ui.view: stock.report_picking_packages
+NEW ir.ui.view: stock.view_move_line_mobile_form
+DEL ir.ui.view: stock.stock_report_view_search
+DEL ir.ui.view: stock.view_warehouse_orderpoint_tree_editable_config
+NEW res.groups: stock.group_stock_lot_print_gs1
+DEL res.groups: stock.group_auto_reception_report

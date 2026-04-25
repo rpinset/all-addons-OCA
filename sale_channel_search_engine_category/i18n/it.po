@@ -1,0 +1,52 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_channel_search_engine_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-09-15 17:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model.fields,field_description:sale_channel_search_engine_category.field_product_category__count_se_binding_done
+msgid "Count Se Binding Done"
+msgstr "Conta collegamenti SE eseguiti"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model.fields,field_description:sale_channel_search_engine_category.field_product_category__count_se_binding_error
+msgid "Count Se Binding Error"
+msgstr "Conta errori collegamenti SE"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model.fields,field_description:sale_channel_search_engine_category.field_product_category__count_se_binding_pending
+msgid "Count Se Binding Pending"
+msgstr "Conta collegamenti SE in attesa"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model.fields,field_description:sale_channel_search_engine_category.field_product_category__count_se_binding_total
+msgid "Count Se Binding Total"
+msgstr "Conta collegamenti SE totali"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model,name:sale_channel_search_engine_category.model_product_category
+msgid "Product Category"
+msgstr "Categoria prodotto"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model,name:sale_channel_search_engine_category.model_sale_channel
+msgid "Sale Channel"
+msgstr "Canale di vendita"
+
+#. module: sale_channel_search_engine_category
+#: model:ir.model.fields,field_description:sale_channel_search_engine_category.field_product_category__se_binding_ids
+msgid "Seacrh Engine Bindings"
+msgstr "Collgamenti motore di ricerca"

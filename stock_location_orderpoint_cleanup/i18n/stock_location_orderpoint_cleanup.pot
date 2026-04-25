@@ -1,0 +1,133 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_location_orderpoint_cleanup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,help:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__run_after
+msgid "Check this if you want to run the orderpoint after cleanup."
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Cleanup"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.actions.act_window,name:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_act_window
+msgid "Cleanup Stock Location Orderpoints"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_form
+msgid "Cleanup replenishments"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__id
+msgid "ID"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:res.groups,name:stock_location_orderpoint_cleanup.group_location_cleanup
+msgid "Location Orderpoint Cleanup"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__orderpoint_ids
+msgid "Orderpoint"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__run_after
+msgid "Run After"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#. odoo-python
+#: code:addons/stock_location_orderpoint_cleanup/models/stock_location_orderpoint.py:0
+#, python-format
+msgid "Running the cleanup for the orderpoint %(orderpoint_name)s"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Stock Location Orderpoint Cleanup"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_location_orderpoint
+msgid "Stock location orderpoint"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#. odoo-python
+#: code:addons/stock_location_orderpoint_cleanup/models/stock_picking.py:0
+#, python-format
+msgid ""
+"These moves have been cleaned up for location orderpoint "
+"%(orderpoint_name)s: %(moves_name)s"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid ""
+"This will launch the cleanup process for all selected location orderpoints.<br/>\n"
+"                    Check the \"Run After\" box if you want to run the orderpoints after\n"
+"                    that cleanup."
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_location_orderpoint_cleanup
+msgid "Wizard to cleanup the generated moves through location orderpoints"
+msgstr ""

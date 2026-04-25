@@ -11,6 +11,7 @@
                 <field name="sequence" widget="handle" />
                 <field name="name" invisible="1" />
                 <field name="order_id" />
+                <field name="partner_id" optional="hide" />
                 <field
                     name="product_id"
                     context="{'partner_id':parent.partner_id, 'quantity':original_uom_qty, 'company_id': company_id}"
@@ -27,6 +28,7 @@
                 <field name="invoiced_uom_qty" />
                 <field name="delivered_uom_qty" />
                 <field name="remaining_uom_qty" />
+                <field name="price_subtotal" widget="monetary" optional="hide" />
                 <field name="company_id" invisible="1" />
             </tree>
         </field>

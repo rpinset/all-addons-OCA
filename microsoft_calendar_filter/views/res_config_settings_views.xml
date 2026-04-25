@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field
+            name="name"
+        >res.config.settings.view.form - microsoft_calendar_filters</field>
+        <field name="model">res.config.settings</field>
+        <field
+            name="inherit_id"
+            ref="microsoft_calendar.res_config_settings_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='cal_microsoft_client_secret']/parent::div"
+                position="after"
+            >
+                <div name="div_filter_private" class="mt16 row">
+                    <label
+                        for="filter_microsoft_private_events"
+                        string="Filter private events"
+                        class="col-3 col-lg-3 o_light_label"
+                    />
+                    <field name="filter_microsoft_private_events" nolabel="1" />
+                </div>
+                <div name="div_filter_odoo" class="mt16 row">
+                    <label
+                        for="filter_odoo_events"
+                        string="Domain for Odoo events to sync"
+                        class="col-3 col-lg-3 o_light_label"
+                    />
+                    <field name="filter_odoo_events" nolabel="1" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

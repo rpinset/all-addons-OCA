@@ -1,0 +1,280 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_configurator_mrp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-25 14:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__value_ids
+msgid "Attribute Values"
+msgstr "Nitelik Değerleri"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__attribute_line_ids
+msgid "Attributes"
+msgstr "Nitelikler"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Malzeme Listesi"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Malzeme Listesi Satırları"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__bom_line_ids
+msgid "BoM Lines"
+msgstr "BoM Satırları"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_production__config_session_id
+msgid "Config Session"
+msgstr "Yapılandırma Oturumu"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__config_set_id
+msgid "Config Set"
+msgstr "Yapılandırma Seti"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom__config_ok
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_production__config_ok
+msgid "Configurable"
+msgstr "Yapılandırılabilir"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__product_tmpl_id
+msgid "Configurable Template"
+msgstr "Yapılandırılabilir Şablon"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__name
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__config_session_id
+msgid "Configuration Session"
+msgstr "Yapılandırma Oturumu"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__name
+msgid "Configuration Session Number"
+msgstr "Yapılandırma Oturumu Numarası"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line__config_set_id
+msgid "Configuration Set"
+msgstr "Yapılandırma Seti"
+
+#. module: product_configurator_mrp
+#: model:ir.ui.menu,name:product_configurator_mrp.product_menu_mrp_bom_line_config_set
+msgid "Configuration Sets"
+msgstr "Yapılandırma Setleri"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__config_step_name
+msgid "Configuration Step"
+msgstr "Yapılandırma Adımı"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__config_step
+msgid "Configuration Step ID"
+msgstr "Yapılandırma Adımı ID"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__config_step_ids
+msgid "Configuration Steps"
+msgstr "Yapılandırma Adımları"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__configuration_ids
+msgid "Configurations"
+msgstr "Yapılandırmalar"
+
+#. module: product_configurator_mrp
+#. odoo-javascript
+#: code:addons/product_configurator_mrp/static/src/xml/mrp_production_views.xml:0
+#: code:addons/product_configurator_mrp/static/src/xml/mrp_production_views.xml:0
+#: code:addons/product_configurator_mrp/static/src/xml/mrp_production_views.xml:0
+#, python-format
+msgid "Configure"
+msgstr "Yapılandır"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__create_uid
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__create_uid
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__create_uid
+msgid "Created by"
+msgstr "Tarafından oluşturuldu"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__create_date
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__create_date
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__create_date
+msgid "Created on"
+msgstr "Tarihinde oluşturuldu"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__currency_id
+msgid "Currency"
+msgstr "Para Birimi"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_production__custom_value_ids
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__custom_value_ids
+#: model_terms:ir.ui.view,arch_db:product_configurator_mrp.mrp_production_form_view_config
+msgid "Custom Values"
+msgstr "Özel Değerler"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__display_name
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__display_name
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__id
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__id
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration____last_update
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set____last_update
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp____last_update
+msgid "Last Modified on"
+msgstr "Son Değiştirilme tarihi"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__write_uid
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__write_uid
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration__write_date
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_mrp_bom_line_configuration_set__write_date
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme tarihi"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__order_id
+msgid "Manufacturing Order"
+msgstr "Üretim Emri"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_mrp_bom_line_configuration
+msgid "Mrp Bom Line Configuration"
+msgstr "Mrp Bom Satırı Yapılandırma"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_mrp_bom_line_configuration_set
+msgid "Mrp Bom Line Configuration Set"
+msgstr "Mrp Bom Satırı Yapılandırma Seti"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__product_preset_id
+msgid "Preset"
+msgstr "Ön Ayar"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__price
+msgid "Price"
+msgstr "Fiyat"
+
+#. module: product_configurator_mrp
+#: model:ir.actions.act_window,name:product_configurator_mrp.action_mrp_bom_line_config_set
+#: model:ir.ui.menu,name:product_configurator_mrp.menu_mrp_bom_line_config_set
+msgid "Product Attribute Sets"
+msgstr "Ürün Nitelik Setleri"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_product_config_session
+msgid "Product Config Session"
+msgstr "Ürün Yapılandırma Oturumu"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_product_configurator_mrp
+msgid "Product Configurator MRP"
+msgstr "Ürün Yapılandırıcı MRP"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__product_img
+msgid "Product Img"
+msgstr "Ürün Resmi"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__product_id
+msgid "Product Variant"
+msgstr "Ürün Varyantı"
+
+#. module: product_configurator_mrp
+#: model:ir.model,name:product_configurator_mrp.model_mrp_production
+msgid "Production Order"
+msgstr "Üretim Emri"
+
+#. module: product_configurator_mrp
+#: model:res.groups,name:product_configurator_mrp.group_product_configurator_mrp
+msgid "Products & BOMS"
+msgstr "Ürünler & BOM'lar"
+
+#. module: product_configurator_mrp
+#: model_terms:ir.ui.view,arch_db:product_configurator_mrp.mrp_production_form_view_config
+msgid "Reconfigure"
+msgstr "Yeniden yapılandır"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,help:product_configurator_mrp.field_product_configurator_mrp__product_id
+msgid "Set only when re-configuring a existing variant"
+msgstr "Yalnızca mevcut bir varyantı yeniden yapılandırırken ayarlayın"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__state
+msgid "State"
+msgstr "Durum"
+
+#. module: product_configurator_mrp
+#. odoo-python
+#: code:addons/product_configurator_mrp/wizard/product_configurator_mrp.py:0
+#, python-format
+msgid ""
+"There is no BOM associated with selected product. Please inform to "
+"administrator/manager. [Product: %s]"
+msgstr ""
+"Seçilen ürünle ilişkili bir ürün ağacı yok. Lütfen yöneticiye/idareciye "
+"bilgi verin. [Ürün: %s]"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__user_id
+msgid "User"
+msgstr "Kullanıcı"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__value_ids
+msgid "Value"
+msgstr "Değer"
+
+#. module: product_configurator_mrp
+#: model:ir.model.fields,field_description:product_configurator_mrp.field_product_configurator_mrp__weight
+msgid "Weight"
+msgstr "Ağırlık"

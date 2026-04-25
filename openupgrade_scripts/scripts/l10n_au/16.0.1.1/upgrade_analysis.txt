@@ -1,0 +1,34 @@
+---Models in module 'l10n_au'---
+---Fields in module 'l10n_au'---
+---XML records in module 'l10n_au'---
+NEW account.account.template: l10n_au.au_11340
+NEW account.account.template: l10n_au.au_21320
+NEW account.account.template: l10n_au.au_61640
+NEW account.report.column: l10n_au.tax_report_balance
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_comparison_gl_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g10_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g11_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g13_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g14_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g15_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g18_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g1_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g2_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g3_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g4_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_g7_tag
+NEW account.report.expression: l10n_au.account_tax_report_gstrpt_gstonly_tag
+NEW account.tax.group: l10n_au.tax_group_withheld
+DEL account.tax.template: l10n_au.au_tax_purchase_0
+DEL account.tax.template: l10n_au.au_tax_purchase_10
+DEL account.tax.template: l10n_au.au_tax_purchase_adj
+DEL account.tax.template: l10n_au.au_tax_purchase_capital
+DEL account.tax.template: l10n_au.au_tax_purchase_gst_only
+DEL account.tax.template: l10n_au.au_tax_purchase_inc_10
+DEL account.tax.template: l10n_au.au_tax_purchase_input
+DEL account.tax.template: l10n_au.au_tax_purchase_private
+DEL account.tax.template: l10n_au.au_tax_purchase_taxable_import
+NEW ir.ui.view: l10n_au.report_invoice
+NEW ir.ui.view: l10n_au.report_invoice_document
+NEW ir.ui.view: l10n_au.report_invoice_with_payments
+NEW ir.ui.view: l10n_au.view_company_form

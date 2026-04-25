@@ -1,0 +1,14 @@
+---Models in module 'l10n_gr'---
+---Fields in module 'l10n_gr'---
+---XML records in module 'l10n_gr'---
+DEL account.account.type: l10n_gr.account_type_other
+NEW account.report.column: l10n_gr.tax_report_balance
+NEW account.report.expression: l10n_gr.account_tax_report_line_303_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_311_formula
+NEW account.report.expression: l10n_gr.account_tax_report_line_333_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_353_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_357_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_373_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_377_tag
+NEW account.report.expression: l10n_gr.account_tax_report_line_501-511_formula
+DEL ir.ui.menu: l10n_gr.account_reports_gr_statements_menu

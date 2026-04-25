@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * pos_to_weight_by_product_uom
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-09 08:33+0000\n"
+"PO-Revision-Date: 2017-12-09 08:33+0000\n"
+"Last-Translator: Matjaž Mozetič <m.mozetic@matmoz.si>, 2017\n"
+"Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#. module: pos_to_weight_by_product_uom
+#: model:ir.model,name:pos_to_weight_by_product_uom.model_product_template
+#, fuzzy
+msgid "Product"
+msgstr "Predloga proizvoda"
+
+#. module: pos_to_weight_by_product_uom
+#: model:ir.model,name:pos_to_weight_by_product_uom.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "EM proizvoda"
+
+#. module: pos_to_weight_by_product_uom
+#: model:ir.model,name:pos_to_weight_by_product_uom.model_uom_category
+#, fuzzy
+msgid "Product UoM Categories"
+msgstr "Kateg. EM proizvoda"
+
+#. module: pos_to_weight_by_product_uom
+#: model:ir.model,name:pos_to_weight_by_product_uom.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: pos_to_weight_by_product_uom
+#: model:ir.model.fields,field_description:pos_to_weight_by_product_uom.field_uom_category__to_weight
+#: model:ir.model.fields,field_description:pos_to_weight_by_product_uom.field_uom_uom__to_weight
+msgid "To Weigh With Scale"
+msgstr ""
+
+#~ msgid "Demo - New Category To Weigh"
+#~ msgstr "Demo - nova kategorija za tehtanje"
+
+#~ msgid "Demo - New Uom To Weigh"
+#~ msgstr "Demo - nova EM za tehtanje"
+
+#~ msgid "Product Template"
+#~ msgstr "Predloga proizvoda"
+
+#~ msgid "Set 'to weigh' in each product of this category"
+#~ msgstr "Nastavite 'za tehtanje' pri vsakem proizvodu te kategorije"
+
+#~ msgid "To weigh"
+#~ msgstr "Za tehtanje"

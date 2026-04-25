@@ -1,0 +1,37 @@
+---Models in module 'l10n_ma'---
+---Fields in module 'l10n_ma'---
+---XML records in module 'l10n_ma'---
+NEW account.report.column: l10n_ma.tax_report_balance
+NEW account.report.expression: l10n_ma.account_report_taux_reduit_base_ht_10_tag
+NEW account.report.expression: l10n_ma.tax_report_achat_importation_ht_7_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_ht_10_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_ht_14_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_ht_20_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_tva_10_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_tva_14_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_tva_20_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_importation_tva_7_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_ht_10_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_ht_14_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_ht_20_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_ht_7_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_tva_10_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_tva_14_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_tva_20_tag
+NEW account.report.expression: l10n_ma.tax_report_achats_interieur_tva_7_tag
+NEW account.report.expression: l10n_ma.tax_report_immobilisations_base_ht_tag
+NEW account.report.expression: l10n_ma.tax_report_immobilisations_deductible_tva_tag
+NEW account.report.expression: l10n_ma.tax_report_prestations_service_deductible_tva_formula
+NEW account.report.expression: l10n_ma.tax_report_prestations_services_ht_1_formula
+NEW account.report.expression: l10n_ma.tax_report_sous_traitance_immobiliers_ht_formula
+NEW account.report.expression: l10n_ma.tax_report_sous_traitance_immobiliers_tva_formula
+NEW account.report.expression: l10n_ma.tax_report_taux_normal_20_tag
+NEW account.report.expression: l10n_ma.tax_report_taux_normal_tva_20_tag
+NEW account.report.expression: l10n_ma.tax_report_taux_rediut_tva_14_tag
+NEW account.report.expression: l10n_ma.tax_report_taux_reduit_ht_7_tag
+NEW account.report.expression: l10n_ma.tax_report_taux_reduit_tva_10_tag
+NEW account.report.expression: l10n_ma.tax_report_taux_reduit_tva_7_tag
+NEW account.report.expression: l10n_ma.tax_report_tauz_reduit_ht_14_tag
+NEW account.report.expression: l10n_ma.tax_report_travaux_facons_ht_formula
+NEW account.report.expression: l10n_ma.tax_report_travaux_facons_tva_formula
+DEL ir.ui.menu: l10n_ma.account_reports_ma_statements_menu

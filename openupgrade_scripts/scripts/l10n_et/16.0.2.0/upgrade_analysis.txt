@@ -1,0 +1,27 @@
+---Models in module 'l10n_et'---
+---Fields in module 'l10n_et'---
+---XML records in module 'l10n_et'---
+NEW account.account.template: l10n_et.l10n_et120001
+NEW account.account.template: l10n_et.l10n_et626001
+NEW account.report.column: l10n_et.tax_report_balance
+NEW account.report.expression: l10n_et.account_tax_report_net_purch_witholding_2_tag
+NEW account.report.expression: l10n_et.account_tax_report_net_purch_witholding_35_tag
+NEW account.report.expression: l10n_et.account_tax_report_net_sale_vat_15_tag
+NEW account.report.expression: l10n_et.account_tax_report_net_sale_vat_witheld_tag
+NEW account.report.expression: l10n_et.account_tax_report_net_sale_witheld_2_tag
+NEW account.report.expression: l10n_et.account_tax_report_net_sale_witheld_35_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_vat_rated_15_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_vt_exmpt_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_vt_out_scope_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_vt_ratd_0_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_vt_ratd_15_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_withholding_2_tag
+NEW account.report.expression: l10n_et.account_tax_report_purch_withholding_35_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_vat_exmpt_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_vat_out_scope_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_vat_rated_0_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_vat_rated_15_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_vat_withholding_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_withholding_2_tag
+NEW account.report.expression: l10n_et.account_tax_report_sale_withholding_35_tag
+DEL ir.ui.menu: l10n_et.account_reports_et_statements_menu

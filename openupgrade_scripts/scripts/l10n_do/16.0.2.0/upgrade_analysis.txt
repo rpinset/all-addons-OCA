@@ -1,0 +1,18 @@
+---Models in module 'l10n_do'---
+---Fields in module 'l10n_do'---
+---XML records in module 'l10n_do'---
+NEW account.account.template: l10n_do.do_niif_99900003
+NEW account.account.template: l10n_do.do_niif_99900004
+NEW account.report.column: l10n_do.tax_report_balance
+NEW account.report.expression: l10n_do.account_tax_report_2A2_ingrs_exprt_formula
+NEW account.report.expression: l10n_do.account_tax_report_2A3_ingrs_local_vnts_tag
+NEW account.report.expression: l10n_do.account_tax_report_2b6_grvd_tag
+NEW account.report.expression: l10n_do.account_tax_report_2b7_grvd_formula
+NEW account.report.expression: l10n_do.account_tax_report_itbs_18_casilla_tag
+NEW account.report.expression: l10n_do.account_tax_report_itbs_pgdo_dedubl_tag
+NEW account.report.expression: l10n_do.account_tax_report_itbs_pgdo_imptcn_tag
+NEW account.report.expression: l10n_do.account_tax_report_itbs_pgdo_locales_tag
+NEW account.report.expression: l10n_do.account_tax_report_itbs_retcn_prsn_tag
+NEW account.report.expression: l10n_do.account_tax_report_retcn_prsn_tag
+NEW account.report.expression: l10n_do.account_tax_report_tbs_11_casilla_formula
+DEL ir.ui.menu: l10n_do.account_reports_do_statements_menu

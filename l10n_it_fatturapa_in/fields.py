@@ -17,7 +17,8 @@ E_INVOICE_PRECISION_TO_FIELD = {
 
 def get_digits(self, env):
     digits = orig_get_digits(self, env)
-    if e_invoice_precision := env.context.get("l10n_it_fatturapa_in_precision"):
+    e_invoice_precision = env.context.get("l10n_it_fatturapa_in_precision")
+    if e_invoice_precision:
         digits = digits[0], e_invoice_precision
     return digits
 
@@ -35,7 +36,8 @@ def convert_to_cache(self, value, record, validate=True):
                     field_precision
                 )
                 if e_invoice_precision_field:
-                    if e_invoice_precision := e_invoice[e_invoice_precision_field]:
+                    e_invoice_precision = e_invoice[e_invoice_precision_field]
+                    if e_invoice_precision:
                         record = record.with_context(
                             l10n_it_fatturapa_in_precision=e_invoice_precision
                         )

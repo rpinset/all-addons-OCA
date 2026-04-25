@@ -1,0 +1,1 @@
+from . import test_pos_partner_pricelist_load_background

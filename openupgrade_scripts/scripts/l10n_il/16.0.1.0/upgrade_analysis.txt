@@ -1,0 +1,13 @@
+---Models in module 'l10n_il'---
+---Fields in module 'l10n_il'---
+---XML records in module 'l10n_il'---
+NEW account.report.column: l10n_il.vat_report_balance
+NEW account.report.expression: l10n_il.account_tax_report_line_in_balance_17_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_in_balance_1_4_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_in_balance_2_3_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_in_balance_pa_16_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_out_balance_pa_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_out_balance_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_out_base_exempt_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_out_base_tag
+NEW account.report.expression: l10n_il.account_tax_report_line_vat_in_fa_tag

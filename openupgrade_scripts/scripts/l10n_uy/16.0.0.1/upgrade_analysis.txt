@@ -1,0 +1,21 @@
+---Models in module 'l10n_uy'---
+---Fields in module 'l10n_uy'---
+---XML records in module 'l10n_uy'---
+NEW account.report.column: l10n_uy.tax_report_balance
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_cmprs_0_tag
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_cmprs_10_tag
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_cmprs_22_tag
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_vnts_0_tag
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_vnts_10_tag
+NEW account.report.expression: l10n_uy.account_tax_report_base_impb_vnts_22_tag
+NEW account.report.expression: l10n_uy.account_tax_report_cmprs_exnto_iva_formula
+NEW account.report.expression: l10n_uy.account_tax_report_cmprs_pagdo_tag
+NEW account.report.expression: l10n_uy.account_tax_report_impb_cmprs_tag
+NEW account.report.expression: l10n_uy.account_tax_report_impb_vnts_tag
+NEW account.report.expression: l10n_uy.account_tax_report_iva_cmprs_10_tag
+NEW account.report.expression: l10n_uy.account_tax_report_iva_cmprs_22_tag
+NEW account.report.expression: l10n_uy.account_tax_report_iva_vnts_10_tag
+NEW account.report.expression: l10n_uy.account_tax_report_iva_vnts_22_tag
+NEW account.report.expression: l10n_uy.account_tax_report_vnts_iva_formula
+NEW account.report.expression: l10n_uy.account_tax_report_vnts_prcbdo_tag
+DEL ir.ui.menu: l10n_uy.account_reports_uy_statements_menu

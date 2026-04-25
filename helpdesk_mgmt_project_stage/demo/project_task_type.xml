@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data noupdate="1">
+    <record id="project.project_stage_0" model="project.task.type">
+        <field
+            name="ticket_stage_ids"
+            eval="[(4, ref('helpdesk_mgmt.helpdesk_ticket_stage_new'))]"
+        />
+    </record>
+    <record id="project.project_stage_1" model="project.task.type">
+        <field
+            name="ticket_stage_ids"
+            eval="[(4, ref('helpdesk_mgmt.helpdesk_ticket_stage_in_progress'))]"
+        />
+    </record>
+    <record id="project.project_stage_2" model="project.task.type">
+        <field
+            name="ticket_stage_ids"
+            eval="[(4, ref('helpdesk_mgmt.helpdesk_ticket_stage_done'))]"
+        />
+    </record>
+    <record id="project.project_stage_3" model="project.task.type">
+        <field
+            name="ticket_stage_ids"
+            eval="[(4, ref('helpdesk_mgmt.helpdesk_ticket_stage_cancelled'))]"
+        />
+    </record>
+</data>

@@ -1,0 +1,67 @@
+---Models in module 'l10n_sa'---
+---Fields in module 'l10n_sa'---
+l10n_sa      / account.bank.statement.line / l10n_sa_confirmation_datetime (datetime): previously in module l10n_sa_invoice
+l10n_sa      / account.bank.statement.line / l10n_sa_delivery_date (date)  : previously in module l10n_sa_invoice
+l10n_sa      / account.bank.statement.line / l10n_sa_qr_code_str (char)    : previously in module l10n_sa_invoice
+l10n_sa      / account.bank.statement.line / l10n_sa_show_delivery_date (boolean): previously in module l10n_sa_invoice
+l10n_sa      / account.move             / l10n_sa_confirmation_datetime (datetime): previously in module l10n_sa_invoice
+l10n_sa      / account.move             / l10n_sa_delivery_date (date)  : previously in module l10n_sa_invoice
+l10n_sa      / account.move             / l10n_sa_qr_code_str (char)    : previously in module l10n_sa_invoice
+l10n_sa      / account.move             / l10n_sa_show_delivery_date (boolean): previously in module l10n_sa_invoice
+l10n_sa      / account.payment          / l10n_sa_confirmation_datetime (datetime): previously in module l10n_sa_invoice
+l10n_sa      / account.payment          / l10n_sa_delivery_date (date)  : previously in module l10n_sa_invoice
+l10n_sa      / account.payment          / l10n_sa_qr_code_str (char)    : previously in module l10n_sa_invoice
+l10n_sa      / account.payment          / l10n_sa_show_delivery_date (boolean): previously in module l10n_sa_invoice
+---XML records in module 'l10n_sa'---
+NEW account.report.column: l10n_sa.tax_report_vat_filing_balance
+NEW account.report.column: l10n_sa.tax_report_withholding_tax_balance
+NEW account.report.expression: l10n_sa.tax_report_line_exempt_purchases_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_exempt_purchases_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_exempt_sales_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_exempt_sales_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_export_sales_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_export_sales_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_imports_subject_tp_reverse_charge_mechanism_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_imports_subject_tp_reverse_charge_mechanism_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_local_sales_subject_to_0_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_local_sales_subject_to_0_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_net_vat_due_formula
+NEW account.report.expression: l10n_sa.tax_report_line_special_sales_to_locals_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_special_sales_to_locals_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_standard_rated_15_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_standard_rated_15_purchases_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_standard_rated_15_purchases_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_standard_rated_15_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_taxable_imports_15_paid_to_customs_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_taxable_imports_15_paid_to_customs_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_others_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_others_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_paid_services_from_another_branch_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_paid_services_from_another_branch_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_paid_services_from_main_branch_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_paid_services_from_main_branch_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_royalties_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_15_royalties_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_20_managerial_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_20_managerial_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_consulting_and_technical_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_consulting_and_technical_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_distributed_profits_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_distributed_profits_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_insurance_and_reinsurance_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_insurance_and_reinsurance_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_international_telecommunication_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_international_telecommunication_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_rental_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_rental_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_return_from_loans_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_return_from_loans_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_tickets_or_air_freight_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_tickets_or_air_freight_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_tickets_or_sea_freight_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_withholding_tax_5_tickets_or_sea_freight_tax_tag
+NEW account.report.expression: l10n_sa.tax_report_line_zero_rated_purchases_base_tag
+NEW account.report.expression: l10n_sa.tax_report_line_zero_rated_purchases_tax_tag
+NEW ir.ui.view: l10n_sa.arabic_english_invoice
+NEW ir.ui.view: l10n_sa.view_move_form
+NEW report.paperformat: l10n_sa.paperformat_l10n_sa_a4 (noupdate)

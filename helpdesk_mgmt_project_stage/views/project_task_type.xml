@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Hunki Enterprises BV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="task_type_edit" model="ir.ui.view">
+        <field name="model">project.task.type</field>
+        <field name="inherit_id" ref="project.task_type_edit" />
+        <field name="arch" type="xml">
+            <field name="project_ids" position="after">
+                <field name="ticket_stage_ids" widget="many2many_tags" />
+            </field>
+        </field>
+    </record>
+</data>

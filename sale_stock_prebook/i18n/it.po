@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_stock_prebook
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-03-27 15:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,help:sale_stock_prebook.field_stock_route__no_sale_stock_prebook
+msgid ""
+"If set no stock will be prebooked, for configured Products with this route"
+msgstr ""
+"Se impostata a no la giacenza verrà prenotata in anticipo per i prodotti "
+"configurati con questa rotta"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_route
+msgid "Inventory Routes"
+msgstr "Percorsi di inventario"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.stock_route_view_form_inherit_prebook_dropshipment
+msgid "No Prebook Stock"
+msgstr "Nessuna giacenza prenotata in anticipo"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_route__no_sale_stock_prebook
+msgid "No Sale Stock Prebook"
+msgstr "Nessuna giacenza vendite prenotata in anticipo"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_rule__prebook_picking_type_id
+msgid "Operation Type for Prebooking"
+msgstr "Tipo operazione per prenotazione in anticipo"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_stock_rule_form
+msgid "Prebook Picking Type"
+msgstr "Tipo prelievo prenotazione in anticipo"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_sale_order_form_reserve
+msgid "Release Reservation"
+msgstr "Rilascia prenotazione"
+
+#. module: sale_stock_prebook
+#: model_terms:ir.ui.view,arch_db:sale_stock_prebook.view_sale_order_form_reserve
+msgid "Reserve Stock"
+msgstr "Prenota giacenza"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_sale_order__stock_is_reserved
+msgid "Stock Is Reserved"
+msgstr "La giacenza è prenotata"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_move
+msgid "Stock Move"
+msgstr "Movimento di magazzino"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_report_stock_report_product_product_replenishment
+msgid "Stock Replenishment Report"
+msgstr "Resoconto rifornimento di magazzino"
+
+#. module: sale_stock_prebook
+#: model:ir.model,name:sale_stock_prebook.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regola di giacenza"
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,help:sale_stock_prebook.field_stock_rule__prebook_picking_type_id
+msgid ""
+"This operation type will be used for prebooking stock for sale orders. It's "
+"therefore only relevant for rules that are used for sale order lines."
+msgstr ""
+"Questo tipo di operazione verrà utilizzato per la prenotazione anticipata "
+"delle scorte per gli ordini di vendita. È quindi rilevante solo per le "
+"regole utilizzate per le righe degli ordini di vendita."
+
+#. module: sale_stock_prebook
+#: model:ir.model.fields,field_description:sale_stock_prebook.field_stock_move__used_for_sale_reservation
+msgid "Used For Sale Reservation"
+msgstr "Utilizzato per la prenotazione vendita"
+
+#. module: sale_stock_prebook
+#. odoo-python
+#: code:addons/sale_stock_prebook/models/stock_move.py:0
+#, python-format
+msgid "You cannot set a quantity done on a move used for sale reservation"
+msgstr ""
+"Non si può impostare una quantità completata in un movimento utilizzato per "
+"una prenotazione di vendita"

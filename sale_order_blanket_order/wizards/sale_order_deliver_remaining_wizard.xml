@@ -1,0 +1,37 @@
+<odoo>
+    <record id="view_create_call_off_wizard_form" model="ir.ui.view">
+        <field name="name">Create Call-off Sale Order</field>
+        <field name="model">sale.order.deliver.remaining.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Call-off Sale Order">
+                <field name="order_id" invisible="1" />
+                <field name="wizard_line_ids">
+                    <tree create="false" editable="bottom">
+                        <field name="product_id" />
+                        <field name="product_packaging_id" />
+                        <field name="call_off_remaining_qty" />
+                        <field name="qty_to_deliver" />
+                        <field name="sale_order_line_id" invisible="1" />
+                    </tree>
+                </field>
+                <footer>
+                    <button
+                        name="action_create_call_off"
+                        string="Create Call-off Order"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_create_call_off_wizard" model="ir.actions.act_window">
+        <field name="name">Create Call-off Sale Order</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order.deliver.remaining.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

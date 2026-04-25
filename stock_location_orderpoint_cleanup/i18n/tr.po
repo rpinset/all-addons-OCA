@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_location_orderpoint_cleanup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-09 17:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Cancel"
+msgstr "Iptal Et"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,help:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__run_after
+msgid "Check this if you want to run the orderpoint after cleanup."
+msgstr ""
+"Temizleme sonrasında sipariş noktasını çalıştırmak istiyorsanız bunu "
+"işaretleyin."
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Cleanup"
+msgstr "Temizleme"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.actions.act_window,name:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_act_window
+msgid "Cleanup Stock Location Orderpoints"
+msgstr "Stok Konumu Sipariş Noktası Temizleme"
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_form
+msgid "Cleanup replenishments"
+msgstr "Ikmal temizleme"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__create_uid
+msgid "Created by"
+msgstr "Tarafından oluşturuldu"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__create_date
+msgid "Created on"
+msgstr "Tarihinde oluşturuldu"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup____last_update
+msgid "Last Modified on"
+msgstr "Son Değiştirilme Tarihi"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__write_date
+msgid "Last Updated on"
+msgstr "Son Güncellenme Tarihi"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:res.groups,name:stock_location_orderpoint_cleanup.group_location_cleanup
+msgid "Location Orderpoint Cleanup"
+msgstr "Konum Sipariş Noktası Temizleme"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__orderpoint_ids
+msgid "Orderpoint"
+msgstr "Sipariş Noktası"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model.fields,field_description:stock_location_orderpoint_cleanup.field_stock_location_orderpoint_cleanup__run_after
+msgid "Run After"
+msgstr "'dan sonra çalıştır"
+
+#. module: stock_location_orderpoint_cleanup
+#. odoo-python
+#: code:addons/stock_location_orderpoint_cleanup/models/stock_location_orderpoint.py:0
+#, python-format
+msgid "Running the cleanup for the orderpoint %(orderpoint_name)s"
+msgstr "%(orderpoint_name)s sipariş noktası için temizleme çalıştırılıyor"
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid "Stock Location Orderpoint Cleanup"
+msgstr "Stok Konumu Sipariş Noktası Temizleme"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_location_orderpoint
+msgid "Stock location orderpoint"
+msgstr "Stok konumu sipariş noktası"
+
+#. module: stock_location_orderpoint_cleanup
+#. odoo-python
+#: code:addons/stock_location_orderpoint_cleanup/models/stock_picking.py:0
+#, python-format
+msgid ""
+"These moves have been cleaned up for location orderpoint "
+"%(orderpoint_name)s: %(moves_name)s"
+msgstr ""
+"Bu hareketler konum sipariş noktası %(orderpoint_name)s için temizlendi: "
+"%(moves_name)s"
+
+#. module: stock_location_orderpoint_cleanup
+#: model_terms:ir.ui.view,arch_db:stock_location_orderpoint_cleanup.stock_location_orderpoint_cleanup_form_view
+msgid ""
+"This will launch the cleanup process for all selected location orderpoints.<br/>\n"
+"                    Check the \"Run After\" box if you want to run the orderpoints after\n"
+"                    that cleanup."
+msgstr ""
+"Bu, seçilen tüm konum sipariş noktaları için temizleme işlemini "
+"başlatacaktır.<br/>\n"
+"                    Bu temizleme işleminden sonra sipariş noktalarını "
+"çalıştırmak istiyorsanız\n"
+"                    \"dan sonra çalıştır\" kutusunu işaretleyin."
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer Et"
+
+#. module: stock_location_orderpoint_cleanup
+#: model:ir.model,name:stock_location_orderpoint_cleanup.model_stock_location_orderpoint_cleanup
+msgid "Wizard to cleanup the generated moves through location orderpoints"
+msgstr "Konum sipariş noktalarında oluşturulan hareketleri temizleyen sihirbaz"

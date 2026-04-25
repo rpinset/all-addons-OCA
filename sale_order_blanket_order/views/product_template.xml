@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record model="ir.ui.view" id="product_template_form_view">
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="sale.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales']" position="inside">
+                <group string="Blanket orders" name="blanket_order">
+                    <field name="allow_blanket_order_overlap" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

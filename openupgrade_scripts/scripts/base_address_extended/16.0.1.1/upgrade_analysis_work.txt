@@ -1,0 +1,27 @@
+---Models in module 'base_address_extended'---
+---Fields in module 'base_address_extended'---
+base_address_extended / res.country              / street_format (text)          : DEL required
+# NOTHING TO DO
+
+---XML records in module 'base_address_extended'---
+NEW ir.actions.act_window: base_address_extended.action_res_city_tree [renamed from base_address_city module]
+DEL ir.actions.act_window: base_address_city.action_res_city_tree [renamed to base_address_extended module]
+NEW ir.model.access: base_address_extended.access_res_city_group_all [renamed from base_address_city module]
+NEW ir.model.access: base_address_extended.access_res_city_group_user [renamed from base_address_city module]
+DEL ir.model.access: base_address_city.access_res_city_group_all [renamed to base_address_extended module]
+DEL ir.model.access: base_address_city.access_res_city_group_user [renamed to base_address_extended module]
+# NOTHING TO DO
+
+NEW ir.ui.view: base_address_extended.address_street_extended_city_form
+NEW ir.ui.view: base_address_extended.address_street_extended_form
+NEW ir.ui.view: base_address_extended.view_city_filter
+NEW ir.ui.view: base_address_extended.view_city_tree
+NEW ir.ui.view: base_address_extended.view_res_country_city_extended_form
+DEL ir.ui.view: base_address_city.view_city_filter
+DEL ir.ui.view: base_address_city.view_city_tree
+DEL ir.ui.view: base_address_city.view_res_country_city_extended_form
+DEL ir.ui.view: base_address_extended.view_partner_address_structured_form
+DEL ir.ui.view: base_address_extended.view_partner_structured_form
+DEL ir.ui.view: base_address_extended.view_res_company_extended_form
+DEL ir.ui.view: base_address_extended.view_res_country_extended_form
+# NOTHING TO DO

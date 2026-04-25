@@ -1,0 +1,32 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_category_complete_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-09-26 19:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: pos_category_complete_name
+#: model:ir.model.fields,field_description:pos_category_complete_name.field_pos_category__complete_name
+msgid "Complete Name"
+msgstr "Nome completo"
+
+#. module: pos_category_complete_name
+#: model:ir.model.fields,field_description:pos_category_complete_name.field_pos_category__parent_path
+msgid "Parent Path"
+msgstr "Percorso padre"
+
+#. module: pos_category_complete_name
+#: model:ir.model,name:pos_category_complete_name.model_pos_category
+msgid "Point of Sale Category"
+msgstr "Categoria punto vendita"

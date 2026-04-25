@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* microsoft_calendar_filter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: microsoft_calendar_filter
+#: model:ir.model,name:microsoft_calendar_filter.model_calendar_event
+msgid "Calendar Event"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model,name:microsoft_calendar_filter.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model.fields,help:microsoft_calendar_filter.field_res_config_settings__filter_microsoft_private_events
+msgid ""
+"Do not synchronize microsoft private events to Odoo. Actually delete private"
+" events that have already been synchronized."
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#. odoo-python
+#: code:addons/microsoft_calendar_filter/models/ir_config_parameter.py:0
+#, python-format
+msgid "Domain %(domain_text)s is invalid: %(message)s"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model_terms:ir.ui.view,arch_db:microsoft_calendar_filter.res_config_settings_view_form
+msgid "Domain for Odoo events to sync"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model.fields,field_description:microsoft_calendar_filter.field_res_config_settings__filter_microsoft_private_events
+msgid "Filter Microsoft Private Events"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model.fields,field_description:microsoft_calendar_filter.field_res_config_settings__filter_odoo_events
+msgid "Filter Odoo Events"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model_terms:ir.ui.view,arch_db:microsoft_calendar_filter.res_config_settings_view_form
+msgid "Filter private events"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model.fields,help:microsoft_calendar_filter.field_res_config_settings__filter_odoo_events
+msgid ""
+"Limit Odoo events synchronized to records satisfying domain. When no filter "
+"is set, all Odoo events will be synchronized."
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model,name:microsoft_calendar_filter.model_microsoft_calendar_sync
+msgid "Synchronize a record with Microsoft Calendar"
+msgstr ""
+
+#. module: microsoft_calendar_filter
+#: model:ir.model,name:microsoft_calendar_filter.model_ir_config_parameter
+msgid "System Parameter"
+msgstr ""

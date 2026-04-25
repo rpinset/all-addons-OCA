@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <!--
+        TODO: define a component to handle the display and edition of a weight
+        value and use it for both the weight and the tare, instead of
+        duplicating the code.
+    -->
+    <t t-inherit="point_of_sale.ScaleScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('js-weight')]" position="before">
+            <div class="product-price">
+                Gross Weight
+            </div>
+            <t t-if="env.pos.config.iface_gross_weight_method == 'scale'">
+                <div class="computed-price weight-value">
+                    <t t-out="state.gross_weight_str" /> <t t-out="gross_uom.name" />
+                </div>
+            </t>
+            <t t-else="">
+                <div class="computed-price weight-value weight-value-editable">
+                    <input
+                        type="text"
+                        class="computed-price input-weight"
+                        t-att-class="{'invalid-input': !state.gross_weight_input_valid}"
+                        id="input_gross_weight"
+                        placeholder="0"
+                        t-model="state.gross_weight_str"
+                        t-on-input="updateWeight"
+                    /> <t t-out="gross_uom.name" />
+                </div>
+            </t>
+            <div class="product-price">
+                Tare
+            </div>
+            <t t-if="env.pos.config.iface_tare_method == 'barcode'">
+                <div class="computed-price weight-value">
+                    <t t-out="state.tare_str" /> <t
+                        t-out="env.pos.config.iface_tare_uom_id[1]"
+                    />
+                </div>
+            </t>
+            <t t-else="">
+                <div class="computed-price weight-value weight-value-editable">
+                    <input
+                        type="text"
+                        class="computed-price input-weight"
+                        t-att-class="{'invalid-input': !state.tare_input_valid}"
+                        id="input_weight_tare"
+                        placeholder="0"
+                        t-model="state.tare_str"
+                        t-on-input="updateWeight"
+                    /> <t t-out="env.pos.config.iface_tare_uom_id[1]" />
+                </div>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

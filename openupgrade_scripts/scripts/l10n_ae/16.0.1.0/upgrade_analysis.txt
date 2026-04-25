@@ -1,0 +1,41 @@
+---Models in module 'l10n_ae'---
+---Fields in module 'l10n_ae'---
+---XML records in module 'l10n_ae'---
+NEW account.account.template: l10n_ae.uae_account_400071
+NEW account.account.template: l10n_ae.uae_account_500014
+NEW account.report.column: l10n_ae.tax_report_balance
+NEW account.report.expression: l10n_ae.tax_report_line_adjustment_import_uae_base_formula
+NEW account.report.expression: l10n_ae.tax_report_line_adjustment_import_uae_vat_formula
+NEW account.report.expression: l10n_ae.tax_report_line_exempt_supplies_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_exempt_supplies_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_expense_out_of_scope_formula
+NEW account.report.expression: l10n_ae.tax_report_line_expense_out_of_scope_vat_formula
+NEW account.report.expression: l10n_ae.tax_report_line_expense_supplies_reverse_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_expense_supplies_reverse_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_import_uae_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_import_uae_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_expense_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_expense_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_abu_dhabi_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_ajman_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_dubai_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_fujairah_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_ras_al_khaima_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_sharjah_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_base_umm_al_quwain_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_abu_dhabi_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_ajman_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_dubai_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_fujairah_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_ras_al_khaima_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_sharjah_tag
+NEW account.report.expression: l10n_ae.tax_report_line_standard_rated_supplies_vat_umm_al_quwain_tag
+NEW account.report.expression: l10n_ae.tax_report_line_supplies_out_of_scope_base_formula
+NEW account.report.expression: l10n_ae.tax_report_line_supplies_out_of_scope_vat_formula
+NEW account.report.expression: l10n_ae.tax_report_line_supplies_reverse_charge_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_supplies_reverse_charge_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_tax_refund_tourist_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_tax_refund_tourist_vat_tag
+NEW account.report.expression: l10n_ae.tax_report_line_zero_rated_supplies_base_tag
+NEW account.report.expression: l10n_ae.tax_report_line_zero_rated_supplies_vat_tag
+DEL ir.ui.menu: l10n_ae.account_reports_ae_statements_menu

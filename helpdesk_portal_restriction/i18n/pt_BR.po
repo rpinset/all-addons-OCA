@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_portal_restriction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-08-21 02:32+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_fsm_location__helpdesk_category_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_fsm_person__helpdesk_category_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_res_partner__helpdesk_category_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_res_users__helpdesk_category_ids
+msgid "Available category"
+msgstr "Categoria disponível"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_fsm_location__helpdesk_team_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_fsm_person__helpdesk_team_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_res_partner__helpdesk_team_ids
+msgid "Available teams"
+msgstr "Equipes disponíveis"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model,name:helpdesk_portal_restriction.model_res_partner
+msgid "Contact"
+msgstr "Contato"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model,name:helpdesk_portal_restriction.model_helpdesk_ticket_category
+msgid "Helpdesk Ticket Category"
+msgstr "Categoria do Chamado da Central de Ajuda"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model,name:helpdesk_portal_restriction.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "Equipe do Chamado da Central de Ajuda"
+
+#. module: helpdesk_portal_restriction
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_helpdesk_ticket_category__helpdesk_category_partner_ids
+#: model:ir.model.fields,field_description:helpdesk_portal_restriction.field_helpdesk_ticket_team__helpdesk_partner_ids
+msgid "Partners"
+msgstr "Parceiros"

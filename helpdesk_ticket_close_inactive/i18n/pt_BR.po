@@ -1,0 +1,265 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_ticket_close_inactive
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-08-21 02:20+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,body_html:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid ""
+"<table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <!-- HEADER -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                        <tr>\n"
+"                            <td valign=\"middle\" align=\"right\">\n"
+"                            <img t-att-src=\"'/logo.png?company=%s' % object.company_id.id\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"'%s' % object.company_id.name\">\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                    <!-- CONTENT -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px; border-collapse:separate;\">\n"
+"                        <tbody>\n"
+"                            <td valign=\"top\" style=\"font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"                            <p>Ticket with subject \"<t t-out=\"object.display_name\"></t>\" will be closed in <t t-out=\"ctx.get('remaining_days')\"></t> days if it is not updated .</p>\n"
+"                            </td>\n"
+"                        </tbody>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                        <tr>\n"
+"                            <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                            </td>\n"
+"                            <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.email\"></t>\n"
+"                            </td>\n"
+"                            <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.website\"></t>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        "
+msgstr ""
+"<table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" "
+"style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\""
+">\n"
+"                <tbody>\n"
+"                    <!-- HEADER -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
+"bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: "
+"rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                        <tr>\n"
+"                            <td valign=\"middle\" align=\"right\">\n"
+"                            <img t-att-src="
+"\"'/logo.png?company=%s' % object.company_id.id\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt="
+"\"'%s' % object.company_id.name\">\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                    <!-- CONTENT -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
+"bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, "
+"255, 255); padding: 20px; border-collapse:separate;\">\n"
+"                        <tbody>\n"
+"                            <td valign=\"top\" style=\"font-"
+"family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"                            <p>Chamado com assunto \"<t t-out=\"object."
+"display_name\"></t>\" será fechado em <t t-out=\"ctx.get('remaining_days')\""
+"></t> dia se não for atualizado.</p>\n"
+"                            </td>\n"
+"                        </tbody>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr>\n"
+"                    <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
+"bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: "
+"rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                        <tr>\n"
+"                            <td valign=\"middle\" align=\"left\" style="
+"\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.phone\"></t>\n"
+"                            </td>\n"
+"                            <td valign=\"middle\" align=\"left\" style="
+"\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.email\"></t>\n"
+"                            </td>\n"
+"                            <td valign=\"middle\" align=\"left\" style="
+"\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                            <t t-out=\"object.company_id.website\"></t>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        </table>\n"
+"                    </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        "
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_tickets
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Automatic closure of inactive tickets"
+msgstr "Fechamento automático de chamados inativos"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.actions.server,name:helpdesk_ticket_close_inactive.ir_cron_close_inactive_tickets_ir_actions_server
+#: model:ir.cron,cron_name:helpdesk_ticket_close_inactive.ir_cron_close_inactive_tickets
+msgid "Close Inactive Tickets"
+msgstr "Fechar Chamados Inativos"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__closing_ticket_stage
+msgid "Closing Stage"
+msgstr "Estágio de Encerramento"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_mail_template_id
+msgid "Closing email template"
+msgstr "Modelo de e-mail de fechamento"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_closing
+msgid "Day limit for automatic ticket closing due to inactivity."
+msgstr ""
+"Limite de dias para fechamento automático de chamados devido à inatividade."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_warning
+msgid ""
+"Day limit for email notification of upcoming ticket closure due to "
+"inactivity."
+msgstr ""
+"Limite de dias para notificação por e-mail sobre o próximo fechamento de "
+"chamados devido à inatividade."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,name:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid "Helpdesk Inactivity Warning Ticket Notification Email"
+msgstr ""
+"Notificação por E-mail de Aviso de Inatividade em Chamado da Central de Ajuda"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model,name:helpdesk_ticket_close_inactive.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "Equipe do Chamado da Central de Ajuda"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_closing
+msgid "Inactive Tickets Day Limit Closing"
+msgstr "Fechamento de Chamados Inativos por Limite de Dias"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_warning
+msgid "Inactive days limit before send a warning"
+msgstr "Limite de dias inativos antes de enviar um aviso"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Inactivity Warning Notification"
+msgstr "Notificação de Aviso de Inatividade"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__warning_inactive_mail_template_id
+msgid "Inactivity warning email template"
+msgstr "Modelo de e-mail de aviso de inatividade"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__closing_ticket_stage
+msgid "Set this stage for autoclosing tickets"
+msgstr "Definir este estágio para fechamento automático de chamados"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_mail_template_id
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__warning_inactive_mail_template_id
+msgid "Template to be sent on inactive ticket closing notification"
+msgstr "Modelo a ser enviado na notificação de fechamento de chamado inativo"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_category_ids
+msgid ""
+"The cronjob will check for inactivity in tickets         that belongs to "
+"this categories."
+msgstr ""
+"O cronjob verificará a inatividade nos chamados          que pertencem a "
+"estas categorias."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_stage_ids
+msgid ""
+"The cronjob will check for inactivity in tickets that are in these stages."
+msgstr ""
+"O cronjob verificará se há inatividade nos chamados que estão nesses "
+"estágios."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,subject:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid "The ticket {{object.number}} will be closed."
+msgstr "O chamado {{object.number}} será fechado."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_tickets
+msgid "This option enables a cronjob to automatically close inactive tickets."
+msgstr ""
+"Essa opção ativa um cronjob para fechar automaticamente os chamados inativos."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_category_ids
+msgid "Ticket Category"
+msgstr "Categoria do Chamado"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Category Filter"
+msgstr "Filtro de Categoria de Chamado"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Closing"
+msgstr "Fechamento de Chamado"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_stage_ids
+msgid "Ticket Stage"
+msgstr "Estágio do Chamado"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Stage Filter"
+msgstr "Filtro de Estágio do Chamado"

@@ -1,0 +1,59 @@
+/***************************************************************
+Overloading existing PoS objects
+****************************************************************/
+
+/*
+Change the design of the numpad in the product-screen. Because this module
+adds a Tare button between the quantity button and the discount button in the
+last column, the backspace button goes onto a new line. To make it more
+consistent, make the payment button span 4 lines instead of 3 and make the
+backspace span 4 columns to avoid empty space.
+*/
+
+.pos .product-screen .actionpad .button.pay {
+    height: calc(var(--btn-height-size) * 4);
+}
+
+.pos .product-screen .numpad button.input-button.numpad-backspace {
+    grid-column-end: span 4;
+}
+
+/*Fix the receipt in the non proxy mode as the order lines can now
+content multiple lines*/
+.pos .pos-right-align {
+    vertical-align: top;
+}
+
+/***************************************************************
+New style for new scale objects
+****************************************************************/
+
+.pos .scale-screen .computed-price.weight-value {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.pos .scale-screen .computed-price.weight-value-editable {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.pos .scale-screen .computed-price.input-weight {
+    border: 1px solid #e0e2e6;
+    width: 50%;
+    float: none;
+    margin: 6px 0;
+    color: $gray-700;
+    text-shadow: 0 0;
+    padding: 10px;
+}
+
+.pos .scale-screen .input-weight.invalid-input {
+    /* same as .popup.popup-error */
+    background-color: #f3bbbb;
+    color: rgb(168, 89, 89);
+
+    box-shadow: none;
+    /* same as .popup.popup-error .title */
+    border-color: rgba(255, 76, 76, 0.5);
+}
