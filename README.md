@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-04-25 13:01 UTC** (elapsed 60s)
+Last build: **2026-04-28 15:40 UTC** (elapsed 172s)
 
 - Repos integrated: **117**
 - Canonical modules: **2090**
@@ -11,7 +11,7 @@ Last build: **2026-04-25 13:01 UTC** (elapsed 60s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 761d427 2026-03-02 OCA-git-bot Merge PR #5549 into 15.0 |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 92174ab 2026-04-27 Pedro M. Baeza Merge pull request #5545 from hbrunn/15.0-mass_operation_abstract-merge_into_base |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | 561e5be 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | 896dfad 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2184c38 2026-03-03 OCA-git-bot [BOT] post-merge updates |
@@ -110,7 +110,7 @@ Last build: **2026-04-25 13:01 UTC** (elapsed 60s)
 | [server-ux](https://github.com/OCA/server-ux) | 37 | 5326e74 2026-03-25 Pedro M. Baeza Merge pull request #1264 from qrtl/15.0-upd-copier |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 0bb1516 2026-02-19 OCA-git-bot [BOT] post-merge updates |
 | [sign](https://github.com/OCA/sign) | 3 | 265ed93 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
-| [social](https://github.com/OCA/social) | 47 | 2163b42 2025-08-08 OCA-git-bot [BOT] post-merge updates |
+| [social](https://github.com/OCA/social) | 47 | 61b050a 2026-04-27 OCA-git-bot Merge PR #1856 into 15.0 |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | 15e9af5 2026-02-26 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
