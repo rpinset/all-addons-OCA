@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-04-25 13:05 UTC
+Generated 2026-04-28 15:43 UTC
 
-Total skipped: **173**
+Total skipped: **170**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **149**
+Count: **146**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -131,11 +131,9 @@ Count: **149**
 | [margin-analysis](https://github.com/OCA/margin-analysis) | [19.0](https://github.com/OCA/margin-analysis/tree/19.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [19.0](https://github.com/OCA/mis-builder-contrib/tree/19.0) | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | [19.0](https://github.com/OCA/module-composition-analysis/tree/19.0) | No directory with __manifest__.py at repo root |
-| [payroll](https://github.com/OCA/payroll) | [19.0](https://github.com/OCA/payroll/tree/19.0) | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | [19.0](https://github.com/OCA/pms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | [19.0](https://github.com/OCA/product-configurator/tree/19.0) | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | [19.0](https://github.com/OCA/product-kitting/tree/19.0) | No directory with __manifest__.py at repo root |
-| [product-variant](https://github.com/OCA/product-variant) | [19.0](https://github.com/OCA/product-variant/tree/19.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [19.0](https://github.com/OCA/program/tree/19.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [19.0](https://github.com/OCA/project-agile/tree/19.0) | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | [19.0](https://github.com/OCA/project-reporting/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -153,7 +151,6 @@ Count: **149**
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [19.0](https://github.com/OCA/shopfloor-app/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [19.0](https://github.com/OCA/shoppingfeed/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | [19.0](https://github.com/OCA/sign/tree/19.0) | No directory with __manifest__.py at repo root |
-| [social](https://github.com/OCA/social) | [19.0](https://github.com/OCA/social/tree/19.0) | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | [19.0](https://github.com/OCA/spreadsheet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | [19.0](https://github.com/OCA/stock-logistics-availability/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [19.0](https://github.com/OCA/stock-logistics-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |

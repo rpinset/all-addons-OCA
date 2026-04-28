@@ -273,7 +273,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_production_lot](account_invoice_production_lot/) | 19.0.1.0.0 |  | Display delivered serial numbers in invoice
+[account_invoice_production_lot](account_invoice_production_lot/) | 19.0.1.0.1 |  | Display delivered serial numbers in invoice
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 19.0.1.0.0 |  | Print invoice lines grouped by picking
 
 [//]: # (end addons)
@@ -832,6 +832,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_payment_unece](account_payment_unece/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the payment methods
 [account_tax_unece](account_tax_unece/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for taxes
 [base_bank_from_iban](base_bank_from_iban/) | 19.0.1.0.1 |  | Bank from IBAN
 [base_iso3166](base_iso3166/) | 19.0.1.0.0 |  | ISO 3166
@@ -935,6 +936,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_risk](account_financial_risk/) | 19.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
+[account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [sale_financial_risk](sale_financial_risk/) | 19.0.1.0.0 |  | Manage partner risk in sales orders
 
 [//]: # (end addons)
@@ -1402,7 +1404,7 @@ addon | version | maintainers | summary
 [hr_employee_firstname](hr_employee_firstname/) | 19.0.1.1.0 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_language](hr_employee_language/) | 19.0.1.0.0 |  | HR Employee Language
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 19.0.1.0.0 |  | Adds information about employee's medical examinations
-[hr_employee_second_lastname](hr_employee_second_lastname/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
+[hr_employee_second_lastname](hr_employee_second_lastname/) | 19.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
 
 [//]: # (end addons)
 
@@ -2026,6 +2028,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 19.0.1.0.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 19.0.1.0.0 |  | AEAT modelo 123
+[l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 19.0.1.0.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
@@ -2184,7 +2187,11 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_maintenance](base_maintenance/) | 19.0.1.0.0 |  | Base Maintenance
 [maintenance_equipment_certification](maintenance_equipment_certification/) | 19.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Add to store certifications associated with a equipment.
+[maintenance_equipment_tags](maintenance_equipment_tags/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Adds category tags to equipment
 [maintenance_product](maintenance_product/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Maintenance Product
+[maintenance_project](maintenance_project/) | 19.0.1.0.0 |  | Adds projects to maintenance equipments and requests
+[maintenance_request_repair](maintenance_request_repair/) | 19.0.1.0.0 |  | This is a bridge module between Maintenance and Repair
+[maintenance_request_tags](maintenance_request_tags/) | 19.0.1.0.0 |  | Adds tags to Maintenance Requests
 
 [//]: # (end addons)
 
@@ -2572,6 +2579,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_partner_company_group](account_partner_company_group/) | 19.0.1.0.0 |  | Adds the possibility to add a company group to a company
 [base_country_state_translatable](base_country_state_translatable/) | 19.0.1.0.0 |  | Translate Country States
 [base_location](base_location/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 19.0.1.0.0 |  | Import zip entries from Geonames
@@ -2582,6 +2590,7 @@ addon | version | maintainers | summary
 [partner_affiliate](partner_affiliate/) | 19.0.1.0.0 |  | Partner Affiliates
 [partner_auto_archive](partner_auto_archive/) | 19.0.1.0.0 |  | Archive periodically all contacts marked as auto-archive.
 [partner_company_default](partner_company_default/) | 19.0.1.0.0 |  | Partner Company Default
+[partner_company_group](partner_company_group/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 19.0.1.0.0 |  | Adds a company type to partner that are companies
 [partner_contact_access_link](partner_contact_access_link/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Allow to visit the full contact form from a company
 [partner_contact_address_default](partner_contact_address_default/) | 19.0.2.0.0 |  | Set a default delivery address, invoice address and contact for contacts
@@ -2591,6 +2600,8 @@ addon | version | maintainers | summary
 [partner_contact_job_position](partner_contact_job_position/) | 19.0.1.0.0 |  | Categorize job positions for contacts
 [partner_contact_nationality](partner_contact_nationality/) | 19.0.1.0.0 |  | Add nationality field to contacts
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 19.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Add a page to contacts form to put personal information
+[partner_country_lang](partner_country_lang/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner language according country
+[partner_country_state_required](partner_country_state_required/) | 19.0.1.0.0 |  | Partner Country State Required
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 19.0.1.0.0 |  | Contact deduplication with fine-grained permission control
 [partner_deduplicate_by_website](partner_deduplicate_by_website/) | 19.0.1.0.0 |  | Deduplicate Contacts by Website
 [partner_email_check](partner_email_check/) | 19.0.1.0.0 |  | Validate email address field
@@ -2609,11 +2620,60 @@ addon | version | maintainers | summary
 [partner_ref_unique](partner_ref_unique/) | 19.0.1.0.0 |  | Add an unique constraint to partner ref field
 [partner_shipping_policy](partner_shipping_policy/) | 19.0.1.0.0 |  | Define shipping policy at partners level.
 [partner_stage](partner_stage/) | 19.0.1.1.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Add lifecycle Stages to Partners
+[partner_store](partner_store/) | 19.0.1.0.0 | <a href='https://github.com/wouitmil'><img src='https://github.com/wouitmil.png' width='32' height='32' style='border-radius:50%;' alt='wouitmil'/></a> | Add store type to Partners
 [partner_supplier_ref](partner_supplier_ref/) | 19.0.1.0.0 |  | Adds a supplier reference to contacts
 [partner_title](partner_title/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
 [partner_tz](partner_tz/) | 19.0.1.0.0 |  | Remove partner timezone default value and display on form
 [partner_utm_source](partner_utm_source/) | 19.0.1.0.0 |  | This module adds the use of utm source in partners
 [partner_vat_unique](partner_vat_unique/) | 19.0.1.0.1 |  | Module to make the VAT number unique for customers and suppliers.
+[sale_partner_company_group](sale_partner_company_group/) | 19.0.1.0.0 |  | Adds the possibility to add a company group to a company
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/payroll
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/payroll&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/payroll/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/payroll/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/payroll/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/payroll/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/payroll/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/payroll)
+[![Translation Status](https://translation.odoo-community.org/widgets/payroll-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/payroll-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# payroll
+
+payroll
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[payroll](payroll/) | 19.0.1.0.0 | <a href='https://github.com/appstogrow'><img src='https://github.com/appstogrow.png' width='32' height='32' style='border-radius:50%;' alt='appstogrow'/></a> <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Manage your employee payroll records
 
 [//]: # (end addons)
 
@@ -2790,6 +2850,53 @@ and promote its widespread use.
 
 ---
 
+## From OCA/product-variant
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-variant&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/product-variant/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/product-variant/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/product-variant/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-variant)
+[![Translation Status](https://translation.odoo-community.org/widgets/product-variant-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-variant-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# product-variant
+
+product-variant
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[product_variant_attribute_tax](product_variant_attribute_tax/) | 19.0.1.0.0 |  | Set taxes on the product attribute values
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/project
 
 
@@ -2816,6 +2923,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_department](project_department/) | 19.0.1.0.0 |  | Project Department Categorization
+[project_hr](project_hr/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 19.0.1.0.0 |  | Module decorates projects and tasks with Project Key
 [project_parent_task_filter](project_parent_task_filter/) | 19.0.1.0.0 |  | Add a filter to show the parent tasks
 [project_sequence](project_sequence/) | 19.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
@@ -3145,6 +3253,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_comment_template](base_comment_template/) | 19.0.0.0.0 |  | Add conditional mako template to any reporton models that inherits comment.template.
 [bi_sql_editor](bi_sql_editor/) | 19.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [report_context](report_context/) | 19.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 19.0.1.0.0 |  | Base module to create csv report
@@ -3657,6 +3766,7 @@ addon | version | maintainers | summary
 [module_auto_update](module_auto_update/) | 19.0.1.0.0 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
 [onchange_helper](onchange_helper/) | 19.0.1.0.0 |  | Technical module that ease execution of onchange in Python code
+[rpc_helper](rpc_helper/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Helpers for disabling RPC calls
 [sequence_python](sequence_python/) | 19.0.1.0.0 |  | Calculate a sequence number from a Python expression
 [session_db](session_db/) | 19.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Store sessions in DB
 [test_auditlog](test_auditlog/) | 19.0.1.0.0 |  | Additional unit tests for Audit Log based on accounting models
@@ -3713,6 +3823,53 @@ addon | version | maintainers | summary
 [base_substate](base_substate/) | 19.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 19.0.1.0.0 |  | Access to technical features without activating debug mode
 [date_range](date_range/) | 19.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/social
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/social/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/social)
+[![Translation Status](https://translation.odoo-community.org/widgets/social-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/social-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# social
+
+social
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mute_notification_user_autosubscribe](mute_notification_user_autosubscribe/) | 19.0.1.0.0 |  | Do not send notifications to users autosubcribed through user_id field
 
 [//]: # (end addons)
 

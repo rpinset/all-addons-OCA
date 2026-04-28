@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-04-25 13:05 UTC
+Generated 2026-04-28 15:43 UTC
 
 ## Skipped repos
 
@@ -118,11 +118,9 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
-| [payroll](https://github.com/OCA/payroll) | `no_module` | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
-| [product-variant](https://github.com/OCA/product-variant) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
@@ -144,7 +142,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | `no_module` | No directory with __manifest__.py at repo root |
-| [social](https://github.com/OCA/social) | `no_module` | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
