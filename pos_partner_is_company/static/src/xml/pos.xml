@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t
+        t-name="PartnerDetailsEdit"
+        t-inherit="point_of_sale.PartnerDetailsEdit"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <xpath expr="//div[hasclass('partner-details-left')]/div[1]" position="before">
+            <div class="partner-detail" id="div-is-company-container">
+                <span class='label'>Company</span>
+                <input
+                    type='checkbox'
+                    class='detail o_checkbox checkbox is_company'
+                    name='is_company'
+                    t-att-checked="changes.is_company ? 'checked' : null"
+                    t-on-change="captureChange"
+                    t-model="changes.is_company"
+                />
+            </div>
+        </xpath>
+    </t>
+
+</templates>

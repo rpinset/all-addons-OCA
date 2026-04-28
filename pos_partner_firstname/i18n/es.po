@@ -24,13 +24,6 @@ msgid "Both Customer First and Last Name Are Required"
 msgstr "El nombre y los apellidos del cliente son obligatorios"
 
 #. module: pos_partner_firstname
-#. odoo-javascript
-#: code:addons/pos_partner_firstname/static/src/xml/pos.xml:0
-#, python-format
-msgid "Company"
-msgstr "Compañías"
-
-#. module: pos_partner_firstname
 #: model:ir.model,name:pos_partner_firstname.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
@@ -67,6 +60,10 @@ msgstr "Apellido"
 #: model:ir.model,name:pos_partner_firstname.model_pos_session
 msgid "Point of Sale Session"
 msgstr "Sesión del Punto de Venta"
+
+#, python-format
+#~ msgid "Company"
+#~ msgstr "Compañías"
 
 #, python-format
 #~ msgid "Name"

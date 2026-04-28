@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * product_is_bulk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-28 12:45+0000\n"
+"PO-Revision-Date: 2026-04-28 12:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_is_bulk
+#: model:ir.model.fields,help:product_is_bulk.field_product_product__is_bulk
+#: model:ir.model.fields,help:product_is_bulk.field_product_template__is_bulk
+msgid ""
+"Check this box if this product is sold without any manufactured packaging. "
+"It is usually the case for product whose unit of measure is a unit of weight "
+"or volume, but it can be also the case for products priced per unit but sold "
+"in bulk (such as cookies, bread, etc.)"
+msgstr ""
+"Cochez cette case si ce produit est vendu sans aucun emballage fabriqué. "
+"C'est généralement le cas pour le produit dont l'unité de mesure est une "
+"unité de  poids ou volume, mais cela peut aussi être le cas pour les "
+"produits vendu à  l'unité mais vendu en vrac (comme des cookies, du pain, "
+"etc.)"
+
+#. module: product_is_bulk
+#: model:ir.model.fields,field_description:product_is_bulk.field_product_product__is_bulk
+#: model:ir.model.fields,field_description:product_is_bulk.field_product_template__is_bulk
+msgid "Is Bulk"
+msgstr "En vrac"
+
+#. module: product_is_bulk
+#: model:ir.model,name:product_is_bulk.model_product_template
+msgid "Product"
+msgstr "Produit"
+
+#. module: product_is_bulk
+#: model:ir.model,name:product_is_bulk.model_product_product
+msgid "Product Variant"
+msgstr "Variante de produit"

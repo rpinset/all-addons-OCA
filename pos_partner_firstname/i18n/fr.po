@@ -24,13 +24,6 @@ msgid "Both Customer First and Last Name Are Required"
 msgstr "Les champs prénom et nom de famille sont obligatoires."
 
 #. module: pos_partner_firstname
-#. odoo-javascript
-#: code:addons/pos_partner_firstname/static/src/xml/pos.xml:0
-#, python-format
-msgid "Company"
-msgstr "Société"
-
-#. module: pos_partner_firstname
 #: model:ir.model,name:pos_partner_firstname.model_res_partner
 msgid "Contact"
 msgstr "Contact"

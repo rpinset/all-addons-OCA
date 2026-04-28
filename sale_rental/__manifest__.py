@@ -5,7 +5,7 @@
 
 {
     "name": "Sale Rental",
-    "version": "16.0.1.0.3",
+    "version": "16.0.1.0.4",
     "category": "Sales",
     "license": "AGPL-3",
     "summary": "Manage Rental of Products",
@@ -16,12 +16,15 @@
     "data": [
         "security/ir.model.access.csv",
         "security/sale_rental_security.xml",
+        "data/ir_crons.xml",
+        "data/mail_template_data.xml",
         "data/rental_data.xml",
         "views/sale_order.xml",
         "views/stock_warehouse.xml",
         "views/sale_rental.xml",
         "wizard/create_rental_product_view.xml",
         "views/product.xml",
+        "views/res_config_settings_views.xml",
     ],
     "demo": ["demo/rental_demo.xml"],
     "installable": True,

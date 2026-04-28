@@ -1,0 +1,1 @@
+This module adds a simple boolean to ease working with bulk products.

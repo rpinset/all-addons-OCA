@@ -8,5 +8,5 @@ class POSSession(models.Model):
 
     def _loader_params_res_partner(self):
         res = super()._loader_params_res_partner()
-        res["search_params"]["fields"].extend(["firstname", "lastname", "is_company"])
+        res["search_params"]["fields"].extend(["firstname", "lastname"])
         return res

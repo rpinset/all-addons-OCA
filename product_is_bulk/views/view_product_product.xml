@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) 2026 - Today: GRAP (http://www.grap.coop)
+@author: Quentin DUPONT (quentin.dupont@grap.coop)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+
+    <!-- TREE -->
+    <record id="view_product_is_bulk_product_tree" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view" />
+        <field name="arch" type="xml">
+            <field name="uom_id" position="after">
+                <field name="is_bulk" optional="hide" />
+            </field>
+        </field>
+    </record>
+
+    <!-- FORM -->
+    <record id="view_product_is_bulk_product_form" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+            <field
+                name="uom_po_id"
+                position="after"
+                attrs="{'invisible': [('product_variant_count', '>', 1)]}"
+            >
+                <field name="is_bulk" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_product_is_bulk_product_form_variant" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='weight']" position="inside">
+                <field name="is_bulk" />
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
