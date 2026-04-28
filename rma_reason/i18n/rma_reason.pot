@@ -69,16 +69,6 @@ msgid "ID"
 msgstr ""
 
 #. module: rma_reason
-#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
-msgid ""
-"Indicates whether specifying an RMA reason is\n"
-"                            mandatory when creating an RMA order.\n"
-"                            Enabling this ensures that all return requests\n"
-"                            have a documented reason, aiding in inventory\n"
-"                            management, quality control, and customer service."
-msgstr ""
-
-#. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_res_company__is_rma_reason_required
 #: model:ir.model.fields,field_description:rma_reason.field_res_config_settings__is_rma_reason_required
 #: model:ir.model.fields,field_description:rma_reason.field_rma__is_rma_reason_required
@@ -86,6 +76,15 @@ msgstr ""
 msgid ""
 "Indicates whether specifying an RMA reason is mandatory when creating an RMA"
 " order."
+msgstr ""
+
+#. module: rma_reason
+#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
+msgid ""
+"Indicates whether specifying an RMA reason is mandatory when creating an RMA"
+" order.                             Enabling this ensures that all return "
+"requests have a documented reason, aiding in inventory management, quality "
+"control, and customer service."
 msgstr ""
 
 #. module: rma_reason
@@ -202,11 +201,6 @@ msgstr ""
 #. module: rma_reason
 #: model:rma.reason,name:rma_reason.rma_reason_unwanted_changed_mind
 msgid "Unwanted/Changed Mind"
-msgstr ""
-
-#. module: rma_reason
-#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
-msgid "Values set here are company-specific."
 msgstr ""
 
 #. module: rma_reason

@@ -203,6 +203,7 @@ msgstr ""
 "        godkännandesekvensen har uppnåtts"
 
 #. module: base_tier_validation
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__cancel
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.view_comment_wizard
 msgid "Cancel"
 msgstr "Avbryt"

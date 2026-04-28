@@ -194,7 +194,7 @@ class TierTierValidation(CommonTierValidation):
         )._notify_rejected_review_body()
         self.assertEqual(comment, "A review was rejected by John. (Test Comment)")
 
-    def test_12_approve_sequence(self):
+    def test_12_approve_sequence_validate(self):
         # Create new test record
         test_record = self.test_model.create({"test_field": 2.5})
         # Create tier definitions
@@ -238,6 +238,58 @@ class TierTierValidation(CommonTierValidation):
         self.assertFalse(any(r.status == "approved" for r in record1.review_ids))
         record1.validate_tier()
         self.assertTrue(any(r.status == "approved" for r in record1.review_ids))
+
+    def test_12_approve_sequence_reject(self):
+        # Create new test record
+        test_record = self.test_model.create({"test_field": 2.5})
+        # Create tier definitions
+        tier_def_1 = self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+                "approve_sequence": True,
+                "sequence": 30,
+            }
+        )
+        tier_def_2 = self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+                "approve_sequence": True,
+                "sequence": 20,
+            }
+        )
+        tier_def_3 = self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_3_multi_company.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+                "approve_sequence": True,
+                "sequence": 10,
+            }
+        )
+        # Request validation
+        self.assertFalse(self.test_record.review_ids)
+        reviews = test_record.with_user(self.test_user_2.id).request_validation()
+        self.assertTrue(reviews)
+        record = test_record.with_user(self.test_user_1.id)
+        self.assertTrue(record.can_review)
+        # User 1 validates the record, extra reviews should be cancel.
+        self.assertFalse(any(r.status == "approved" for r in record.review_ids))
+        record.reject_tier()
+        self.assertTrue(any(r.status == "rejected" for r in record.review_ids))
+        self.assertTrue(any(r.status == "cancel" for r in record.review_ids))
+        review_1 = record.review_ids.filtered(lambda x: x.definition_id == tier_def_1)
+        self.assertEqual(review_1.status, "rejected")
+        review_2 = record.review_ids.filtered(lambda x: x.definition_id == tier_def_2)
+        self.assertEqual(review_2.status, "cancel")
+        review_3 = record.review_ids.filtered(lambda x: x.definition_id == tier_def_3)
+        self.assertEqual(review_3.status, "cancel")
 
     def test_12_approve_sequence_same_user(self):
         """Similar to test_12_approve_sequence, but all same users,

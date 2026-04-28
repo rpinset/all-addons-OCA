@@ -23,6 +23,7 @@ class TierReview(models.Model):
             ("pending", "Pending"),
             ("rejected", "Rejected"),
             ("approved", "Approved"),
+            ("cancel", "Cancel"),
         ],
         default="waiting",
     )

@@ -72,26 +72,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: rma_reason
-#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
-msgid ""
-"Indicates whether specifying an RMA reason is\n"
-"                            mandatory when creating an RMA order.\n"
-"                            Enabling this ensures that all return requests\n"
-"                            have a documented reason, aiding in inventory\n"
-"                            management, quality control, and customer "
-"service."
-msgstr ""
-"Indica se specificare un motivo RMA è \n"
-"                            obbligatorio durante la creazione di un ordine "
-"RMA. \n"
-"                            Abilitando questa opzione, tutte le richieste di "
-"reso \n"
-"                            hanno un motivo documentato, facilitando la "
-"gestione \n"
-"                            dell'inventario, il controllo qualità e il "
-"servizio clienti."
-
-#. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_res_company__is_rma_reason_required
 #: model:ir.model.fields,field_description:rma_reason.field_res_config_settings__is_rma_reason_required
 #: model:ir.model.fields,field_description:rma_reason.field_rma__is_rma_reason_required
@@ -102,6 +82,15 @@ msgid ""
 msgstr ""
 "Indica quando specificare un motivo RMA è obbligatorio nel creare un ordine "
 "RMA."
+
+#. module: rma_reason
+#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
+msgid ""
+"Indicates whether specifying an RMA reason is mandatory when creating an RMA "
+"order.                             Enabling this ensures that all return "
+"requests have a documented reason, aiding in inventory management, quality "
+"control, and customer service."
+msgstr ""
 
 #. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_rma_reason__write_uid
@@ -227,14 +216,32 @@ msgid "Unwanted/Changed Mind"
 msgstr "Non voluto/cambio idea"
 
 #. module: rma_reason
-#: model_terms:ir.ui.view,arch_db:rma_reason.res_config_settings_form_view
-msgid "Values set here are company-specific."
-msgstr "I valori impostati qui sono specifici per azienda."
-
-#. module: rma_reason
 #: model:rma.reason,name:rma_reason.rma_reason_wrong_item_shipped
 msgid "Wrong Item Shipped"
 msgstr "Spedito oggetto errato"
+
+#~ msgid ""
+#~ "Indicates whether specifying an RMA reason is\n"
+#~ "                            mandatory when creating an RMA order.\n"
+#~ "                            Enabling this ensures that all return "
+#~ "requests\n"
+#~ "                            have a documented reason, aiding in "
+#~ "inventory\n"
+#~ "                            management, quality control, and customer "
+#~ "service."
+#~ msgstr ""
+#~ "Indica se specificare un motivo RMA è \n"
+#~ "                            obbligatorio durante la creazione di un "
+#~ "ordine RMA. \n"
+#~ "                            Abilitando questa opzione, tutte le richieste "
+#~ "di reso \n"
+#~ "                            hanno un motivo documentato, facilitando la "
+#~ "gestione \n"
+#~ "                            dell'inventario, il controllo qualità e il "
+#~ "servizio clienti."
+
+#~ msgid "Values set here are company-specific."
+#~ msgstr "I valori impostati qui sono specifici per azienda."
 
 #~ msgid ""
 #~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "

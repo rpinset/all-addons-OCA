@@ -11,6 +11,7 @@ from odoo.addons.point_of_sale.tests.test_frontend import TestPointOfSaleHttpCom
 class TestUi(TestPointOfSaleHttpCommon):
     def test_pos_order_to_sale_order(self):
         self.main_pos_config.with_user(self.pos_user).open_ui()
+        self.main_pos_config.current_session_id.set_opening_control(0, "")
 
         # Make the test compatible with pos_minimize_menu
         if "iface_important_buttons" in self.main_pos_config._fields:

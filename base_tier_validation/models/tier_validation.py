@@ -690,6 +690,13 @@ class TierValidation(models.AbstractModel):
         )
         # We need to notify all pending users if there is approve sequence
         if tier_reviews and any(review.approve_sequence for review in tier_reviews):
+            # If there are waiting reviews that should be approved sequentially,
+            # they must be marked as canceled
+            waiting_reviews = self.review_ids.filtered(
+                lambda r: r.status == "waiting" and r.approve_sequence
+            )
+            if waiting_reviews:
+                waiting_reviews.write({"status": "cancel"})
             reviews_to_notify = self.review_ids.filtered(
                 lambda r: r.status == "pending" and r.definition_id.notify_on_rejected
             )

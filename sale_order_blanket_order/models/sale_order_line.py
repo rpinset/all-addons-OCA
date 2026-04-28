@@ -596,7 +596,7 @@ class SaleOrderLine(models.Model):
             call_off_lines = self.filtered(lambda line: line.order_type == "call_off")
         other_lines = self - call_off_lines
         res = super(SaleOrderLine, other_lines)._action_launch_stock_rule(
-            previous_product_uom_qty
+            previous_product_uom_qty=previous_product_uom_qty
         )
         if not self.env.context.get("call_off_split_process"):
             # When splitting a call-off line, we don't want to launch the stock rule

@@ -8,31 +8,15 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="rma.res_config_settings_view_form" />
         <field name="arch" type="xml">
-            <xpath
-                expr="//field[@name='group_rma_manual_finalization']/parent::div/parent::div"
-                position="before"
-            >
-                <div class="col-12 col-lg-6 o_setting_box">
-                    <div class="o_setting_left_pane">
-                        <field name="is_rma_reason_required" />
-                    </div>
-                    <div class="o_setting_right_pane">
-                        <label for="is_rma_reason_required" string="RMA Reason" />
-                        <span
-                            class="fa fa-lg fa-building-o"
-                            title="Values set here are company-specific."
-                            groups="base.group_multi_company"
-                        />
-                        <div class="text-muted">
-                            Indicates whether specifying an RMA reason is
-                            mandatory when creating an RMA order.
-                            Enabling this ensures that all return requests
-                            have a documented reason, aiding in inventory
-                            management, quality control, and customer service.
-                        </div>
-                    </div>
-                </div>
-            </xpath>
+            <block name="rma_operations_block" position="inside">
+                <setting
+                    help="Indicates whether specifying an RMA reason is mandatory when creating an RMA order.
+                            Enabling this ensures that all return requests have a documented reason, aiding in inventory management, quality control, and customer service."
+                    company_specific="1"
+                >
+                    <field name="is_rma_reason_required" string="RMA Reason" />
+                </setting>
+            </block>
         </field>
     </record>
 </odoo>

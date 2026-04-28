@@ -50,7 +50,7 @@
                                     t-key="review.id"
                                 >
                                     <t
-                                        t-if="review.status == 'waiting'"
+                                        t-if="review.status == 'waiting' or review.status == 'cancel'"
                                         t-set="status_class"
                                         t-value="'text-muted'"
                                     />

@@ -185,6 +185,7 @@ msgid ""
 msgstr ""
 
 #. module: base_tier_validation
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__cancel
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.view_comment_wizard
 msgid "Cancel"
 msgstr ""
@@ -351,9 +352,9 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_on_pending
 msgid ""
-"If set, all possible reviewers will be notified by email when this status is"
-" reached.Usefull in an Approve by sequence scenario. An notification request"
-" to review is sent out when it's their turn to review."
+"If set, all possible reviewers will be notified by email when this status is "
+"reached.Usefull in an Approve by sequence scenario. An notification request "
+"to review is sent out when it's their turn to review."
 msgstr ""
 
 #. module: base_tier_validation

@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crowdfunding_public_pledge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.pledge_detail
+msgid "Add your pledge today!"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.pledge_detail
+msgid "Challenge Cover"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model:ir.model,name:crowdfunding_public_pledge.model_crowdfunding_challenge
+msgid "Crowdfunding challenge"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model:ir.model,name:crowdfunding_public_pledge.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.portal_invoice_page
+msgid "My pledge"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.template_challenge_detail
+msgid "Pledges"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.pay_details
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.portal_invoice_page
+msgid "Publish my pledge on the website"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model:ir.model.fields,field_description:crowdfunding_public_pledge.field_account_bank_statement_line__crowdfunding_public
+#: model:ir.model.fields,field_description:crowdfunding_public_pledge.field_account_move__crowdfunding_public
+msgid "Show on website"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.pledge_detail
+msgid "has contributed"
+msgstr ""
+
+#. module: crowdfunding_public_pledge
+#: model_terms:ir.ui.view,arch_db:crowdfunding_public_pledge.pledge_detail
+msgid "to"
+msgstr ""
