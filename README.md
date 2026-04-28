@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-04-25 12:58 UTC** (elapsed 74s)
+Last build: **2026-04-28 15:35 UTC** (elapsed 82s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -96,8 +96,8 @@ Last build: **2026-04-25 12:58 UTC** (elapsed 74s)
 | [multi-company](https://github.com/OCA/multi-company) | 29 | a016cb3 2026-02-21 Weblate Update translation files |
 | [oca-custom](https://github.com/OCA/oca-custom) | 7 | 177276f 2026-02-18 Tom [UPD] use merged bank_payment modules |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 8 | 4b73a08 2025-07-03 Weblate Update translation files |
-| [operating-unit](https://github.com/OCA/operating-unit) | 42 | 45f8e48 2026-01-13 OCA-git-bot [BOT] post-merge updates |
-| [partner-contact](https://github.com/OCA/partner-contact) | 73 | 284fb2e 2026-03-05 K Translated using Weblate (Italian) |
+| [operating-unit](https://github.com/OCA/operating-unit) | 42 | 8f79f40 2026-04-28 OCA-git-bot [BOT] post-merge updates |
+| [partner-contact](https://github.com/OCA/partner-contact) | 73 | 34b7c67 2026-04-27 Sergio Zanchetta Translated using Weblate (Italian) |
 | [payroll](https://github.com/OCA/payroll) | 6 | ac916a2 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
