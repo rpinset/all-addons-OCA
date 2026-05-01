@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-04-28 15:35 UTC** (elapsed 82s)
+Last build: **2026-05-01 04:43 UTC** (elapsed 186s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -17,7 +17,7 @@ Last build: **2026-04-28 15:35 UTC** (elapsed 82s)
 | [account-closing](https://github.com/OCA/account-closing) | 9 | c8d0630 2026-02-02 matthieusaison Translated using Weblate (French) |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 2f902a6 2025-03-13 mymage Translated using Weblate (Italian) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 7 | 9875dfc 2026-03-03 OCA-git-bot [BOT] post-merge updates |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | 2d3638b 2026-04-20 Judith Massa Translated using Weblate (German) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | c90513d 2026-04-30 Sergio Zanchetta Translated using Weblate (Italian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | 15069cb 2026-03-02 Pedro M. Baeza Merge pull request #581 from ursais/14-dr-precommit-update |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 10 | 8670e82 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 7015684 2026-04-14 matthieusaison Translated using Weblate (French) |
@@ -67,7 +67,7 @@ Last build: **2026-04-28 15:35 UTC** (elapsed 82s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | 1e56820 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 3f7bcba 2026-04-16 Weblate Update translation files |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 21fc9b9 2026-04-29 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 7 | 0f2df49 2025-07-25 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -86,7 +86,7 @@ Last build: **2026-04-28 15:35 UTC** (elapsed 82s)
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 19 | e40374e 2026-02-02 OCA-git-bot Merge PR #776 into 14.0 |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 25 | 6dd956c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 9 | 4e58c97 2026-01-12 OCA-git-bot [BOT] post-merge updates |
-| [maintenance](https://github.com/OCA/maintenance) | 31 | a90b515 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [maintenance](https://github.com/OCA/maintenance) | 31 | 3dec9a2 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 31 | aff06d4 2026-02-03 Weblate Update translation files |
 | [manufacture](https://github.com/OCA/manufacture) | 75 | 4a021fe 2026-04-13 OCA-git-bot Merge PR #1757 into 14.0 |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | 91e83d0 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
