@@ -1,6 +1,8 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
 # Copyright 2022 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+from markupsafe import Markup
+
 from odoo import api, fields, models
 from odoo.tools.float_utils import float_compare
 
@@ -94,12 +96,12 @@ class StockMove(models.Model):
         }
         data.update(dict(default or []))
         new_picking = picking.copy(data)
-        link = '<a href="#" data-oe-model="stock.picking" data-oe-id="%d">%s</a>' % (
-            new_picking.id,
-            new_picking.name,
+        tmpl = (
+            "<a href='#' data-oe-model='stock.picking' data-oe-id='{p_id}'>{p_name}</a>"
         )
-        message = (self.env._("The split order {} has been created.")).format(link)
-        picking.message_post(body=message)
+        link = tmpl.format(p_id=new_picking.id, p_name=new_picking.name)
+        body = Markup(self.env._("The split order %s has been created.", link))
+        picking.message_post(body=body)
         self.picking_id = new_picking.id
         self.package_level_id.picking_id = new_picking.id
         self.move_line_ids.picking_id = new_picking.id

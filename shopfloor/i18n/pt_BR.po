@@ -534,8 +534,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/completion_info.py:0
 msgid ""
-"Last operation of transfer %(picking_names)s. Next operation "
-"(%(next_picking_names)s) is ready to proceed."
+"Last operation of transfer %(picking_names)s. Next operation (%"
+"(next_picking_names)s) is ready to proceed."
 msgstr ""
 
 #. module: shopfloor
@@ -936,8 +936,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package %(package_name)s cannot be picked, already moved by transfer "
-"%(picking_name)s."
+"Package %(package_name)s cannot be picked, already moved by transfer %"
+"(picking_name)s."
 msgstr ""
 
 #. module: shopfloor
@@ -958,8 +958,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move_line.py:0
 msgid ""
-"Package %(package_name)s does not contain available product "
-"%(product_name)s, cannot replace package."
+"Package %(package_name)s does not contain available product %"
+"(product_name)s, cannot replace package."
 msgstr ""
 
 #. module: shopfloor
@@ -1007,8 +1007,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package type '%(package_type_name)s' is not allowed for carrier "
-"%(carrier_name)s.or carrier %(carrier_name)s."
+"Package type '%(package_type_name)s' is not allowed for carrier %"
+"(carrier_name)s.or carrier %(carrier_name)s."
 msgstr ""
 
 #. module: shopfloor
@@ -1584,8 +1584,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/models/stock_picking.py:0
 msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
-"id=\"%(new_picking_id)d\">%(new_picking_name)s</a> has been created."
+"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
+"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
 msgstr ""
 
 #. module: shopfloor
@@ -1675,7 +1675,7 @@ msgstr ""
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move.py:0
-msgid "The split order {} has been created."
+msgid "The split order %s has been created."
 msgstr ""
 
 #. module: shopfloor

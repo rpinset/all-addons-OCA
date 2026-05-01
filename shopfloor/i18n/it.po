@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-16 12:43+0000\n"
+"PO-Revision-Date: 2026-04-30 10:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__pick_pack_same_time
@@ -629,8 +629,8 @@ msgstr "Il reparto è creato"
 #. odoo-python
 #: code:addons/shopfloor/actions/completion_info.py:0
 msgid ""
-"Last operation of transfer %(picking_names)s. Next operation "
-"(%(next_picking_names)s) is ready to proceed."
+"Last operation of transfer %(picking_names)s. Next operation (%"
+"(next_picking_names)s) is ready to proceed."
 msgstr ""
 "Ultima operazione del trasferimento %(picking_names)s. L'operazione seguente "
 "(%(next_picking_names)s) è pronta all'esecuzione."
@@ -1040,8 +1040,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package %(package_name)s cannot be picked, already moved by transfer "
-"%(picking_name)s."
+"Package %(package_name)s cannot be picked, already moved by transfer %"
+"(picking_name)s."
 msgstr ""
 "Il collo %(package_name)s non può essere prelevato, già movimentato dal "
 "trasferimento %(picking_name)s."
@@ -1059,42 +1059,42 @@ msgid ""
 "Package %(package_name)s contains already lines from a different operation "
 "type %(picking_type_name)s."
 msgstr ""
-"Il collo %(package_name)s contiene già righe di un tipo operazione diverso "
-"%(picking_type_name)s."
+"Il collo %(package_name)s contiene già righe di un tipo operazione diverso %"
+"(picking_type_name)s."
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move_line.py:0
 msgid ""
-"Package %(package_name)s does not contain available product "
-"%(product_name)s, cannot replace package."
+"Package %(package_name)s does not contain available product %"
+"(product_name)s, cannot replace package."
 msgstr ""
-"Il collo %(package_name)s non contiene il prodotto disponibile "
-"%(product_name)s, impossibile sostituire il collo."
+"Il collo %(package_name)s non contiene il prodotto disponibile %"
+"(product_name)s, impossibile sostituire il collo."
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Package %(package_name)s is not available in transfer %(picking_name)s."
 msgstr ""
-"Il collo %(package_name)s non è disponibile nel traferimento "
-"%(picking_name)s."
+"Il collo %(package_name)s non è disponibile nel traferimento %"
+"(picking_name)s."
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Package %(package_name)s not found in location %(location_name)s"
 msgstr ""
-"Il collo %(package_name)s non è stato trovato nell'ubicazione "
-"%(location_name)s"
+"Il collo %(package_name)s non è stato trovato nell'ubicazione %"
+"(location_name)s"
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Package %(package_name)s not found in transfer %(picking_name)s"
 msgstr ""
-"Il collo %(package_name)s non è stato trovato nel trasferimento "
-"%(picking_name)s"
+"Il collo %(package_name)s non è stato trovato nel trasferimento %"
+"(picking_name)s"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_picking__package_level_count
@@ -1123,11 +1123,11 @@ msgstr "Il nome collo deve essere univoco!"
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package type '%(package_type_name)s' is not allowed for carrier "
-"%(carrier_name)s.or carrier %(carrier_name)s."
+"Package type '%(package_type_name)s' is not allowed for carrier %"
+"(carrier_name)s.or carrier %(carrier_name)s."
 msgstr ""
-"Tipo collo '%(package_type_name)s' non consentito per il trasportatore "
-"%(carrier_name)s. o corriere %(carrier_name)s."
+"Tipo collo '%(package_type_name)s' non consentito per il trasportatore %"
+"(carrier_name)s. o corriere %(carrier_name)s."
 
 #. module: shopfloor
 #. odoo-python
@@ -1207,8 +1207,8 @@ msgstr "Prelievo e collo simultanei"
 #: code:addons/shopfloor/actions/change_package_lot.py:0
 msgid "Pick: stock issue on lot: %(lot_name)s found in %(location_name)s"
 msgstr ""
-"Prelievo: problema di giacenza nel lotto: %(lot_name)s trovato in "
-"%(location_name)s"
+"Prelievo: problema di giacenza nel lotto: %(lot_name)s trovato in %"
+"(location_name)s"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_package_level__picking_id
@@ -1729,11 +1729,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/models/stock_picking.py:0
 msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
-"id=\"%(new_picking_id)d\">%(new_picking_name)s</a> has been created."
+"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
+"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
 msgstr ""
-"È stato creato l'ordine residuo <a href=\"#\" data-oe-model=\"stock."
-"picking\" data-oe-id=\"%(new_picking_id)d\">%(new_picking_name)s</a>."
+"È stato creato l'ordine residuo <a href=\"#\" data-oe-"
+"model=\"stock.picking\" data-oe-id=\"%(new_picking_id)d\">%"
+"(new_picking_name)s</a>."
 
 #. module: shopfloor
 #. odoo-python
@@ -1812,8 +1813,8 @@ msgid ""
 "allowed. (%(product_name)s : %(quantity_done)s > %(quantity_reserved)s)"
 msgstr ""
 "La quantità scansionata per una o più righe non può essere superiore al "
-"massimo consentito. (%(product_name)s : %(quantity_done)s > "
-"%(quantity_reserved)s)"
+"massimo consentito. (%(product_name)s : %(quantity_done)s > %"
+"(quantity_reserved)s)"
 
 #. module: shopfloor
 #. odoo-python
@@ -1830,8 +1831,8 @@ msgstr "Il record su cui si stava lavorando non esiste più."
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move.py:0
-msgid "The split order {} has been created."
-msgstr "L'ordine suddiviso {} è stato creato."
+msgid "The split order %s has been created."
+msgstr "L'ordine suddiviso %s è stato creato."
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__picking_id
@@ -2252,17 +2253,20 @@ msgstr "Prelievo per area"
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
 
+#~ msgid "The split order {} has been created."
+#~ msgstr "L'ordine suddiviso {} è stato creato."
+
 #~ msgid ""
 #~ "Package %(old_package_name)s replaced by package %(new_package_name)s."
 #~ msgstr ""
 #~ "Collo %(old_package_name)s sostituito dal collo %(new_package_name)s."
 
 #~ msgid ""
-#~ "Packaging '%(package_name)s' is not allowed for carrier %(carrier_name)s."
-#~ "or carrier %(carrier_name)s."
+#~ "Packaging '%(package_name)s' is not allowed for carrier %"
+#~ "(carrier_name)s.or carrier %(carrier_name)s."
 #~ msgstr ""
-#~ "Il collo '%(package_name)s' non è abilitato per il contenitore "
-#~ "%(carrier_name)s. o contenitore %(carrier_name)s."
+#~ "Il collo '%(package_name)s' non è abilitato per il contenitore %"
+#~ "(carrier_name)s. o contenitore %(carrier_name)s."
 
 #~ msgid "Packaging changed on package {}"
 #~ msgstr "Imballo modificato per il collo {}"
@@ -2414,8 +2418,8 @@ msgstr "{} non è un collo destinazione valido."
 #~ "The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
 #~ "id=\"%d\">%s</a> has been created."
 #~ msgstr ""
-#~ "È stato creato l'ordine residuo <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a> ."
+#~ "È stato creato l'ordine residuo <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a> ."
 
 #, python-format
 #~ msgid "You cannot work on a package (%s) outside of locations: %s"

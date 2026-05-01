@@ -54,6 +54,9 @@ class SaleOrder(models.Model):
             for move in sale_order.mapped("picking_ids.move_ids_without_package"):
                 move.quantity = move.product_uom_qty
             sale_order.mapped("picking_ids").button_validate()
+            pickings = sale_order.picking_ids
+            if pickings and all(p.state in ("done", "cancel") for p in pickings):
+                sale_order.write({"delivery_status": "full"})
 
         if action in ["invoiced"]:
             # Create and confirm invoices

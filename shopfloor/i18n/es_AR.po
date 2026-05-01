@@ -392,8 +392,8 @@ msgstr "Transferencia de contenido a {} completada"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Content transferred from %(location_name)s to %(location_dest_name)s."
 msgstr ""
-"Transferencia de contenido desde %(location_name)s hacia "
-"%(location_dest_name)s."
+"Transferencia de contenido desde %(location_name)s hacia %"
+"(location_dest_name)s."
 
 #. module: shopfloor
 #. odoo-python
@@ -580,8 +580,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/completion_info.py:0
 msgid ""
-"Last operation of transfer %(picking_names)s. Next operation "
-"(%(next_picking_names)s) is ready to proceed."
+"Last operation of transfer %(picking_names)s. Next operation (%"
+"(next_picking_names)s) is ready to proceed."
 msgstr ""
 
 #. module: shopfloor
@@ -988,8 +988,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package %(package_name)s cannot be picked, already moved by transfer "
-"%(picking_name)s."
+"Package %(package_name)s cannot be picked, already moved by transfer %"
+"(picking_name)s."
 msgstr ""
 "El Paquete %(package_name)s no puede ser seleccionado, ya ha sido movido por "
 "la transferencia %(picking_name)s."
@@ -1012,19 +1012,19 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move_line.py:0
 msgid ""
-"Package %(package_name)s does not contain available product "
-"%(product_name)s, cannot replace package."
+"Package %(package_name)s does not contain available product %"
+"(product_name)s, cannot replace package."
 msgstr ""
-"El Paquete %(package_name)s no contiene un producto disponible "
-"%(product_name)s, no se puede reemplazar el paquete."
+"El Paquete %(package_name)s no contiene un producto disponible %"
+"(product_name)s, no se puede reemplazar el paquete."
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Package %(package_name)s is not available in transfer %(picking_name)s."
 msgstr ""
-"El Paquete %(package_name)s no está disponible en la transferencia "
-"%(picking_name)s."
+"El Paquete %(package_name)s no está disponible en la transferencia %"
+"(picking_name)s."
 
 #. module: shopfloor
 #. odoo-python
@@ -1065,8 +1065,8 @@ msgstr "¡El nombre del Paquete debe ser único!"
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package type '%(package_type_name)s' is not allowed for carrier "
-"%(carrier_name)s.or carrier %(carrier_name)s."
+"Package type '%(package_type_name)s' is not allowed for carrier %"
+"(carrier_name)s.or carrier %(carrier_name)s."
 msgstr ""
 
 #. module: shopfloor
@@ -1147,8 +1147,8 @@ msgstr "Pick y pack al mismo tiempo"
 #: code:addons/shopfloor/actions/change_package_lot.py:0
 msgid "Pick: stock issue on lot: %(lot_name)s found in %(location_name)s"
 msgstr ""
-"Entrega: error de inventario en el lote: %(lot_name)s encontrado en "
-"%(location_name)s"
+"Entrega: error de inventario en el lote: %(lot_name)s encontrado en %"
+"(location_name)s"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_package_level__picking_id
@@ -1674,8 +1674,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/models/stock_picking.py:0
 msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
-"id=\"%(new_picking_id)d\">%(new_picking_name)s</a> has been created."
+"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
+"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
 msgstr ""
 
 #. module: shopfloor
@@ -1770,8 +1770,8 @@ msgstr "El registro en el que estaba trabajando ya no existe."
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move.py:0
-msgid "The split order {} has been created."
-msgstr "Se ha creado el pedido dividido {}."
+msgid "The split order %s has been created."
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__picking_id
@@ -2171,11 +2171,14 @@ msgstr "Zona de Entreda"
 msgid "{} is not a valid destination package."
 msgstr "{} no es un paquete de destino válido."
 
+#~ msgid "The split order {} has been created."
+#~ msgstr "Se ha creado el pedido dividido {}."
+
 #~ msgid ""
 #~ "Package %(old_package_name)s replaced by package %(new_package_name)s."
 #~ msgstr ""
-#~ "El Paquete %(old_package_name)s está reemplazado por el paquete "
-#~ "%(new_package_name)s."
+#~ "El Paquete %(old_package_name)s está reemplazado por el paquete %"
+#~ "(new_package_name)s."
 
 #~ msgid "Packaging changed on package {}"
 #~ msgstr "El Empaquetado cambió en el paquete {}"
@@ -2261,8 +2264,8 @@ msgstr "{} no es un paquete de destino válido."
 #~ "The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
 #~ "id=\"%d\">%s</a> has been created."
 #~ msgstr ""
-#~ "Se ha creado el pedido pendiente <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a>."
+#~ "Se ha creado el pedido pendiente <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a>."
 
 #, python-format
 #~ msgid "You cannot work on a package (%s) outside of locations: %s"
