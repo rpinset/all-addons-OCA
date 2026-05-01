@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-04-28 15:43 UTC
+Generated 2026-05-01 04:50 UTC
 
 ## Skipped repos
 
@@ -40,7 +40,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | `no_module` | No directory with __manifest__.py at repo root |
-| [ddmrp](https://github.com/OCA/ddmrp) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
 | [dms](https://github.com/OCA/dms) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |

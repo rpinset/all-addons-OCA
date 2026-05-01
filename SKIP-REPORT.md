@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-04-28 15:43 UTC
+Generated 2026-05-01 04:50 UTC
 
-Total skipped: **170**
+Total skipped: **169**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **146**
+Count: **145**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -70,7 +70,6 @@ Count: **146**
 | [cooperative](https://github.com/OCA/cooperative) | [19.0](https://github.com/OCA/cooperative/tree/19.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [19.0](https://github.com/OCA/crowdfunding/tree/19.0) | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | [19.0](https://github.com/OCA/data-protection/tree/19.0) | No directory with __manifest__.py at repo root |
-| [ddmrp](https://github.com/OCA/ddmrp) | [19.0](https://github.com/OCA/ddmrp/tree/19.0) | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | [19.0](https://github.com/OCA/department/tree/19.0) | No directory with __manifest__.py at repo root |
 | [dms](https://github.com/OCA/dms) | [19.0](https://github.com/OCA/dms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | [19.0](https://github.com/OCA/donation/tree/19.0) | No directory with __manifest__.py at repo root |

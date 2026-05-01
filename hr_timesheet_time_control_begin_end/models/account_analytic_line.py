@@ -1,6 +1,5 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-from datetime import datetime
 
 import pytz
 from dateutil.relativedelta import relativedelta
@@ -110,9 +109,9 @@ class AccountAnalyticLine(models.Model):
             "default_date"
         ):
             ctx = dict(self.env.context)
-            ctx["default_date"] = datetime.fromisoformat(
-                self.env.context.get("default_date_time")
-            ).date()
+            default_date_time = self.env.context.get("default_date_time")
+            if default_date_time:
+                ctx["default_date"] = default_date_time.date()
         vals = super(AccountAnalyticLine, self.with_context(**ctx)).default_get(
             fields_list + ["product_uom_id"]
         )

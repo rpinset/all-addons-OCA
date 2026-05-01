@@ -172,8 +172,8 @@ class TestAccountAnalyticLine(BaseCommon):
                 is_timesheet=1,
                 default_employee_id=self.employee.id,
                 is_my_timesheets=1,
-                default_date_time="2025-10-20 03:15:00",
-                default_date_time_end="2025-10-20 07:00:00",
+                default_date_time=datetime(2025, 10, 20, 3, 15, 0),
+                default_date_time_end=datetime(2025, 10, 20, 7, 0, 0),
                 default_time_start=5.25,  # compatibility with hr_timesheet_begin_end
                 default_time_stop=9.0,  # compatibility with hr_timesheet_begin_end
             ),
@@ -189,3 +189,16 @@ class TestAccountAnalyticLine(BaseCommon):
         self.assertEqual(form.time_begin, 5.25)
         self.assertEqual(form.time_end, 9.0)
         self.assertEqual(form.unit_amount, 3.75)
+
+    def test_default_get_derives_date_from_datetime(self):
+        """Date is derived from default_date_time (UTC) when default_date is absent."""
+        start = datetime(2025, 6, 15, 23, 0, 0)
+        vals = (
+            self.env["account.analytic.line"]
+            .with_context(
+                default_date_time=start,
+            )
+            .default_get(["date", "date_time"])
+        )
+        self.assertEqual(vals.get("date"), date(2025, 6, 15))
+        self.assertEqual(vals.get("date_time"), start)
