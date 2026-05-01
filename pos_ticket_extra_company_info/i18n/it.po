@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_ticket_extra_company_info
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-04-30 10:45+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: pos_ticket_extra_company_info
+#: model:ir.model,name:pos_ticket_extra_company_info.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: pos_ticket_extra_company_info
+#. odoo-javascript
+#: code:addons/pos_ticket_extra_company_info/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "Company Registry:"
+msgstr "Registro azienda:"
+
+#. module: pos_ticket_extra_company_info
+#: model:ir.model,name:pos_ticket_extra_company_info.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sessione punto vendita"
+
+#. module: pos_ticket_extra_company_info
+#: model:ir.model.fields,field_description:pos_ticket_extra_company_info.field_res_company__pos_ticket_address
+msgid "Pos Ticket Address"
+msgstr "Indirizzo ticket POS"
+
+#, python-format
+#~ msgid "Email:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Point of Sale Configuration"
+#~ msgstr "Configurazione punto vendita"
+
+#~ msgid "Ticket Address"
+#~ msgstr "Indirizzo biglietto"
+
+#, python-format
+#~ msgid "VAT:"
+#~ msgstr "IVA:"
+
+#, python-format
+#~ msgid "Website:"
+#~ msgstr "Sito web:"

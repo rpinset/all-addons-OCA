@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-18 11:42+0000\n"
+"PO-Revision-Date: 2026-04-29 13:45+0000\n"
 "Last-Translator: Bastian Günther <mail@bastian-guenther.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants
@@ -310,6 +310,10 @@ msgid ""
 "                                Lower this value if you experience memory "
 "issues."
 msgstr ""
+"Anzahl der Bestände, die pro Stapel während der Bestandsanpassungen "
+"verarbeitet werden sollen.\n"
+"                                Verringern Sie diesen Wert, wenn "
+"Speicherprobleme auftreten."
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_res_company__stock_inventory_batch_size
@@ -318,6 +322,9 @@ msgid ""
 "Number of quants to process per batch during inventory adjustments. Lower "
 "this value if you experience memory issues."
 msgstr ""
+"Anzahl der Bestände, die pro Stapel während der Bestandsanpassungen "
+"verarbeitet werden sollen. Verringern Sie diesen Wert, wenn Speicherprobleme "
+"auftreten."
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__one
@@ -401,7 +408,7 @@ msgstr "Inventur automatisch abschließen"
 #: model:ir.model.fields,field_description:stock_inventory.field_res_company__stock_inventory_batch_size
 #: model:ir.model.fields,field_description:stock_inventory.field_res_config_settings__stock_inventory_batch_size
 msgid "Stock Inventory Batch Size"
-msgstr ""
+msgstr "Stapelgröße für Bestandsanpassungen"
 
 #. module: stock_inventory
 #: model:ir.actions.act_window,name:stock_inventory.action_view_stock_move_line_inventory_tree

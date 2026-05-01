@@ -18,7 +18,7 @@
             >
                 <field name="display_name" />
                 <field name="project_id" filters="1" />
-                <field name="commercial_partner_id" filters="1" />
+                <field name="partner_id" filters="1" />
             </calendar>
         </field>
     </record>

@@ -3,7 +3,7 @@
 
 {
     "name": "Partner and HR Employee First Name, Last Name",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "GRAP, Odoo Community Association (OCA)",
     "maintainers": ["legalsylvain"],
     "website": "https://github.com/OCA/hr",
@@ -12,5 +12,5 @@
     "summary": "Glue module between partner_firstname and hr_employee_firstname",
     "depends": ["hr_employee_firstname", "partner_firstname"],
     "installable": True,
-    "autoinstall": True,
+    "auto_install": True,
 }
