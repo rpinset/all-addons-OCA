@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-04-28 15:40 UTC** (elapsed 172s)
+Last build: **2026-05-01 04:44 UTC** (elapsed 95s)
 
 - Repos integrated: **117**
 - Canonical modules: **2090**
@@ -69,11 +69,11 @@ Last build: **2026-04-28 15:40 UTC** (elapsed 172s)
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 8 | 6592499 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 1 | a8e45c4 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | 01d9e56 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | ab5b2fc 2026-02-16 Weblate Update translation files |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | 835b1a5 2026-04-28 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 2 | 9ae910b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 30 | 130cbf3 2026-04-23 OCA-git-bot [BOT] post-merge updates |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [maintenance](https://github.com/OCA/maintenance) | 25 | 7ecd3fc 2025-10-14 Yann Papouin Added translation using Weblate (French) |
+| [maintenance](https://github.com/OCA/maintenance) | 25 | 922ca6b 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | b049888 2025-12-04 OCA-git-bot [BOT] post-merge updates |
 | [manufacture](https://github.com/OCA/manufacture) | 51 | b7e5fd9 2026-03-26 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
