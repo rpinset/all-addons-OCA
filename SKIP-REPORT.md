@@ -1,12 +1,12 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-05-01 04:43 UTC
+Generated 2026-05-04 15:29 UTC
 
-Total skipped: **137**
+Total skipped: **138**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **76**
+Count: **77**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -64,6 +64,7 @@ Count: **76**
 | [resource](https://github.com/OCA/resource) | [12.0](https://github.com/OCA/resource/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | [12.0](https://github.com/OCA/rest-api/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [role-policy](https://github.com/OCA/role-policy) | [12.0](https://github.com/OCA/role-policy/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | [12.0](https://github.com/OCA/route-planning/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | [12.0](https://github.com/OCA/sale-blanket/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [sale-channel](https://github.com/OCA/sale-channel) | [12.0](https://github.com/OCA/sale-channel/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [12.0](https://github.com/OCA/sale-prebook/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
