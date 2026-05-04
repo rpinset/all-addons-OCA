@@ -1,26 +1,19 @@
 # Copyright 2020 NextERP Romania SRL
 # Copyright 2021 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+from odoo_test_helper import FakeModelLoader
+
 from odoo import Command
 from odoo.exceptions import ValidationError
 from odoo.tests import common
 from odoo.tools.misc import mute_logger
-
-from .fake_models import ResUsers, setup_test_model, teardown_test_model
 
 
 class TestCommentTemplate(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        setup_test_model(cls.env, ResUsers)
-        res_users_model = cls.env.registry["res.users"]
         # Register the comment_template_ids field added by comment.template mixin
-        cls.classPatch(
-            res_users_model,
-            "comment_template_ids",
-            res_users_model.comment_template_ids,
-        )
         cls.user_obj = cls.env.ref("base.model_res_users")
         cls.user = cls.env.ref("base.user_demo")
         cls.user2 = cls.env.ref("base.demo_user0")
@@ -29,32 +22,38 @@ class TestCommentTemplate(common.TransactionCase):
         cls.ResPartnerTitle = cls.env["res.partner.title"]
         cls.main_company = cls.env.ref("base.main_company")
         cls.company = cls.env["res.company"].create({"name": "Test company"})
-        cls.before_template_id = cls.env["base.comment.template"].create(
+
+    def setUp(self):
+        super().setUp()
+
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
+        from .fake_models import ResUsers
+
+        self.loader.update_registry((ResUsers,))
+        self.addCleanup(self.loader.restore_registry)
+
+        self.before_template_id = self.env["base.comment.template"].create(
             {
                 "name": "Top template",
                 "text": "Text before lines",
-                "models": cls.user_obj.model,
-                "company_id": cls.company.id,
+                "models": self.user_obj.model,
+                "company_id": self.company.id,
             }
         )
-        cls.after_template_id = cls.env["base.comment.template"].create(
+        self.after_template_id = self.env["base.comment.template"].create(
             {
                 "name": "Bottom template",
                 "position": "after_lines",
                 "text": "Text after lines",
-                "models": cls.user_obj.model,
-                "company_id": cls.company.id,
+                "models": self.user_obj.model,
+                "company_id": self.company.id,
             }
         )
-        cls.user.partner_id.base_comment_template_ids = [
-            (4, cls.before_template_id.id),
-            (4, cls.after_template_id.id),
+        self.user.partner_id.base_comment_template_ids = [
+            (4, self.before_template_id.id),
+            (4, self.after_template_id.id),
         ]
-
-    @classmethod
-    def tearDownClass(cls):
-        teardown_test_model(cls.env, ResUsers)
-        return super().tearDownClass()
 
     def test_template_model_ids(self):
         self.assertIn(

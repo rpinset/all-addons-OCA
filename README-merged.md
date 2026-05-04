@@ -688,6 +688,7 @@ addon | version | maintainers | summary
 [account_reconcile_oca_queue](account_reconcile_oca_queue/) | 18.0.1.1.0 |  | Auto-reconcile in queue jobs
 [account_reconcile_restrict_partner_mismatch](account_reconcile_restrict_partner_mismatch/) | 18.0.1.0.0 |  | Restrict reconciliation on receivable and payable accounts to the same partner
 [account_reconcile_sale_order](account_reconcile_sale_order/) | 18.0.1.0.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Invoice and reconcile sales orders
+[account_reconcile_wizard](account_reconcile_wizard/) | 18.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Account Reconcile from Wizard
 [account_statement_base](account_statement_base/) | 18.0.1.3.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [account_statement_reconcile_status](account_statement_reconcile_status/) | 18.0.1.0.0 |  | Show reconciliation status on bank statements
 [base_transaction_id](base_transaction_id/) | 18.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -1438,6 +1439,9 @@ and promote its widespread use.
 ## From OCA/connector-telephony
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# connector-telephony
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-telephony&target_branch=18.0)
 [![Pre-commit Status](https://github.com/OCA/connector-telephony/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-telephony/actions/workflows/pre-commit.yml?query=branch%3A18.0)
 [![Build Status](https://github.com/OCA/connector-telephony/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-telephony/actions/workflows/test.yml?query=branch%3A18.0)
@@ -1445,8 +1449,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/connector-telephony-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-telephony-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# connector-telephony
 
 connector-telephony
 
@@ -1946,7 +1948,7 @@ addon | version | maintainers | summary
 [delivery_carrier_manual_price](delivery_carrier_manual_price/) | 18.0.1.0.0 |  | Allow setting manual shipping cost in sale order.
 [delivery_carrier_manual_weight](delivery_carrier_manual_weight/) | 18.0.1.0.0 |  | Allow setting weight and shipping weight in stock transfers manually based on carrier.
 [delivery_carrier_max_weight_constraint](delivery_carrier_max_weight_constraint/) | 18.0.1.0.0 |  | Constrain package maximum weight
-[delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 18.0.1.0.0 |  | Multiple ZIP intervals for the same delivery method
+[delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 18.0.1.0.1 |  | Multiple ZIP intervals for the same delivery method
 [delivery_carrier_option](delivery_carrier_option/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Delivery Carrier Option
 [delivery_carrier_partner](delivery_carrier_partner/) | 18.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_carrier_picking_valid](delivery_carrier_picking_valid/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Checks if a transfer matches carrier requirements
@@ -2677,7 +2679,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[helpdesk_mgmt](helpdesk_mgmt/) | 18.0.1.16.11 |  | Helpdesk
+[helpdesk_mgmt](helpdesk_mgmt/) | 18.0.1.16.12 |  | Helpdesk
 [helpdesk_mgmt_activity](helpdesk_mgmt_activity/) | 18.0.1.0.0 |  | Create Activities for Odoo records from the Helpdesk
 [helpdesk_mgmt_crm](helpdesk_mgmt_crm/) | 18.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Links helpdesk tickets with leads
 [helpdesk_mgmt_fieldservice](helpdesk_mgmt_fieldservice/) | 18.0.1.1.3 |  | Create service orders from a ticket
@@ -2882,6 +2884,7 @@ addon | version | maintainers | summary
 [hr_expense_invoice](hr_expense_invoice/) | 18.0.1.0.3 |  | Supplier invoices on HR expenses
 [hr_expense_payment](hr_expense_payment/) | 18.0.1.0.0 |  | HR Expense Payment
 [hr_expense_sequence](hr_expense_sequence/) | 18.0.1.0.0 |  | HR expense sequence
+[hr_expense_sequence_option](hr_expense_sequence_option/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Manage sequence options for hr.expense.sheet
 [hr_expense_tier_validation](hr_expense_tier_validation/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Expense Tier Validation
 [hr_expense_vendor_receipt](hr_expense_vendor_receipt/) | 18.0.1.0.0 | <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow to create Vendor Receipt from Hr Expense
 
@@ -3190,7 +3193,7 @@ addon | version | maintainers | summary
 [document_page_product](document_page_product/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | This module links document pages to products
 [document_page_project](document_page_project/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | This module links document pages to projects
 [document_page_project_task](document_page_project_task/) | 18.0.2.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module links document pages to project tasks
-[document_page_reference](document_page_reference/) | 18.0.2.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Include references on document pages
+[document_page_reference](document_page_reference/) | 18.0.2.1.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Include references on document pages
 [document_page_tag](document_page_tag/) | 18.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 [document_url](document_url/) | 18.0.1.0.1 |  | URL attachment
 
@@ -4195,7 +4198,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.2.1.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.1.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
-[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 18.0.1.0.5 | <a href='https://github.com/christian-ramos-tecnativa'><img src='https://github.com/christian-ramos-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='christian-ramos-tecnativa'/></a> <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 420
+[l10n_es_atc_mod420](l10n_es_atc_mod420/) | 18.0.1.1.0 | <a href='https://github.com/christian-ramos-tecnativa'><img src='https://github.com/christian-ramos-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='christian-ramos-tecnativa'/></a> <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 420
 [l10n_es_cnae](l10n_es_cnae/) | 18.0.1.0.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 18.0.1.2.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 18.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
@@ -5620,7 +5623,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [payroll](payroll/) | 18.0.1.3.0 | <a href='https://github.com/appstogrow'><img src='https://github.com/appstogrow.png' width='32' height='32' style='border-radius:50%;' alt='appstogrow'/></a> <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Manage your employee payroll records
-[payroll_account](payroll_account/) | 18.0.1.0.5 | <a href='https://github.com/appstogrow'><img src='https://github.com/appstogrow.png' width='32' height='32' style='border-radius:50%;' alt='appstogrow'/></a> <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Manage your payroll to accounting
+[payroll_account](payroll_account/) | 18.0.1.0.6 | <a href='https://github.com/appstogrow'><img src='https://github.com/appstogrow.png' width='32' height='32' style='border-radius:50%;' alt='appstogrow'/></a> <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Manage your payroll to accounting
 [payroll_contract_advantages](payroll_contract_advantages/) | 18.0.1.0.0 | <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Allow to define contract advantages for employees.
 [payroll_hr_public_holidays](payroll_hr_public_holidays/) | 18.0.1.0.0 | <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Integration between payroll and hr_public_holidays
 
@@ -6111,6 +6114,7 @@ addon | version | maintainers | summary
 [project_task_code](project_task_code/) | 18.0.1.0.1 |  | Sequential Code for Tasks
 [project_task_code_portal](project_task_code_portal/) | 18.0.1.1.1 |  | Use custom task code in customer portal
 [project_task_default_stage](project_task_default_stage/) | 18.0.1.0.1 |  | Recovery default task stages for projects from v8
+[project_task_default_user](project_task_default_user/) | 18.0.1.0.0 | <a href='https://github.com/NICO-SOLUTIONS'><img src='https://github.com/NICO-SOLUTIONS.png' width='32' height='32' style='border-radius:50%;' alt='NICO-SOLUTIONS'/></a> | Auto assign default users to tasks or when changing task stages
 [project_task_description_portal](project_task_description_portal/) | 18.0.1.0.0 |  | Dedicated task description for portal users
 [project_task_description_template](project_task_description_template/) | 18.0.1.0.0 |  | Add a description template to project tasks
 [project_task_material](project_task_material/) | 18.0.1.0.0 |  | Record products spent in a Task
@@ -6380,7 +6384,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_import_async](base_import_async/) | 18.0.1.0.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 18.0.3.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
+[queue_job](queue_job/) | 18.0.3.1.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 18.0.1.0.0 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 18.0.1.1.1 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 18.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Run jobs without a dedicated JobRunner
@@ -6525,6 +6529,9 @@ and promote its widespread use.
 ## From OCA/reporting-engine
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# reporting-engine
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/reporting-engine&target_branch=18.0)
 [![Pre-commit Status](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml?query=branch%3A18.0)
 [![Build Status](https://github.com/OCA/reporting-engine/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/reporting-engine/actions/workflows/test.yml?query=branch%3A18.0)
@@ -6532,8 +6539,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/reporting-engine-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/reporting-engine-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# reporting-engine
 
 reporting-engine
 
@@ -6547,7 +6552,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_comment_template](base_comment_template/) | 18.0.1.1.1 |  | Add conditional mako template to any reporton models that inherits comment.template.
+[base_comment_template](base_comment_template/) | 18.0.1.1.2 |  | Add conditional mako template to any reporton models that inherits comment.template.
 [bi_sql_editor](bi_sql_editor/) | 18.0.1.0.4 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [pdf_xml_attachment](pdf_xml_attachment/) | 18.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides helpers to work w/ PDFs and XML attachments
 [report_context](report_context/) | 18.0.1.0.0 |  | Adding context to reports
@@ -6745,7 +6750,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_blanket_order](sale_blanket_order/) | 18.0.1.2.2 |  | Blanket Orders
-[sale_order_blanket_order](sale_order_blanket_order/) | 18.0.1.0.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
+[sale_order_blanket_order](sale_order_blanket_order/) | 18.0.1.0.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
 [sale_order_blanket_order_stock_prebook](sale_order_blanket_order_stock_prebook/) | 18.0.1.0.0 |  | Allow to prebook stock for blanket order
 
 [//]: # (end addons)
@@ -6855,6 +6860,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_stock_prebook](sale_stock_prebook/) | 18.0.1.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Add process to prebook a sale order's stock before confirming it
+[sale_stock_prebook_stock_available_to_promise_release](sale_stock_prebook_stock_available_to_promise_release/) | 18.0.1.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Extends the previous available qty to promised with moves of a reservation
 
 [//]: # (end addons)
 
@@ -7084,6 +7090,7 @@ addon | version | maintainers | summary
 [sale_order_cancel_optional_email](sale_order_cancel_optional_email/) | 18.0.1.0.0 |  | Cancel sales orders directly without proposing to send email to customer
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 18.0.1.0.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 18.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
+[sale_order_finish_service](sale_order_finish_service/) | 18.0.1.0.0 |  | Adds a finish service flag on sale orders
 [sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.1 |  | General discount per sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 18.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_cancel](sale_order_line_cancel/) | 18.0.1.1.0 |  | Sale cancel remaining
@@ -7290,7 +7297,7 @@ addon | version | maintainers | summary
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 18.0.2.0.0 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 18.0.1.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
 [auth_oidc_environment](auth_oidc_environment/) | 18.0.1.0.0 |  | This module allows to use server env for OIDC configuration
-[auth_saml](auth_saml/) | 18.0.1.1.0 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
+[auth_saml](auth_saml/) | 18.0.1.1.1 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 18.0.1.0.0 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 18.0.1.0.0 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 18.0.1.0.0 |  | Makes the user login field case insensitive
@@ -7461,6 +7468,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[auth_saml_environment](auth_saml_environment/) | 18.0.1.0.0 |  | Allows system administrator to authenticate with any account
 [data_encryption](data_encryption/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Store accounts and credentials encrypted by environment
 [mail_environment](mail_environment/) | 18.0.1.0.1 |  | Configure mail servers with server_environment_files
 [mail_environment_google_gmail](mail_environment_google_gmail/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Configure Gmail mail servers with server_environment_files
@@ -7614,7 +7622,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [announcement](announcement/) | 18.0.1.0.1 |  | Notify internal users about relevant organization stuff
 [barcode_action](barcode_action/) | 18.0.1.0.0 |  | Allows to use barcodes as a launcher
-[base_cancel_confirm](base_cancel_confirm/) | 18.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base Cancel Confirm
+[base_cancel_confirm](base_cancel_confirm/) | 18.0.1.0.2 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base Cancel Confirm
 [base_custom_filter](base_custom_filter/) | 18.0.1.0.0 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> <a href='https://github.com/ForgeFlow'><img src='https://github.com/ForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ForgeFlow'/></a> | Add custom filters in standard filters and group by dropdowns
 [base_export_manager](base_export_manager/) | 18.0.1.0.2 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 18.0.1.0.0 |  | Group-based permissions for importing CSV files
@@ -8889,7 +8897,7 @@ addon | version | maintainers | summary
 [stock_picking_send_by_mail](stock_picking_send_by_mail/) | 18.0.1.0.1 |  | Send stock picking by email
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 18.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 18.0.1.0.0 |  | Show returns on stock pickings
-[stock_picking_tier_validation](stock_picking_tier_validation/) | 18.0.1.0.1 |  | Extends the functionality of Transfers to support a tier validation process.
+[stock_picking_tier_validation](stock_picking_tier_validation/) | 18.0.1.0.2 |  | Extends the functionality of Transfers to support a tier validation process.
 [stock_picking_to_batch_group_fields](stock_picking_to_batch_group_fields/) | 18.0.1.0.2 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Allows to create batches grouped by picking fields.
 [stock_picking_type_force_move_type](stock_picking_type_force_move_type/) | 18.0.1.0.1 |  | Force shipping policies on operation types
 [stock_picking_warn_message](stock_picking_warn_message/) | 18.0.1.0.0 |  | Add a popup warning on picking to ensure warning is populated
@@ -9353,6 +9361,7 @@ addon | version | maintainers | summary
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.2.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 18.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/ThiagoMForgeFlow'><img src='https://github.com/ThiagoMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ThiagoMForgeFlow'/></a> | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.2 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Web Widget Numeric Step
+[web_widget_o2m_attachment_image_gallery](web_widget_o2m_attachment_image_gallery/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Widget o2m Attachment Image Gallery Widget
 [web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 18.0.1.0.1 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_open_tab](web_widget_open_tab/) | 18.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_popover](web_widget_popover/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Render an icon that displays the field content in a popover

@@ -1,0 +1,78 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* auth_saml_environment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,help:auth_saml_environment.field_auth_saml_provider__idp_metadata
+#: model:ir.model.fields,help:auth_saml_environment.field_auth_saml_provider__x_idp_metadata_env_default
+msgid ""
+"Configuration for this Identity Provider. Supplied by the provider, in XML "
+"format."
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__entity_id
+msgid "Entity ID"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__x_entity_id_env_default
+msgid "Entity ID Env Default"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,help:auth_saml_environment.field_auth_saml_provider__entity_id
+#: model:ir.model.fields,help:auth_saml_environment.field_auth_saml_provider__x_entity_id_env_default
+msgid "EntityID passed to IDP, used to identify the Odoo"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__idp_metadata
+msgid "Identity Provider Metadata"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__x_idp_metadata_env_default
+msgid "Identity Provider Metadata Env Default"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model,name:auth_saml_environment.model_auth_saml_provider
+msgid "SAML2 Provider"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__server_env_defaults
+msgid "Server Env Defaults"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__sp_pem_private
+msgid "Sp Pem Private"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__sp_pem_public
+msgid "Sp Pem Public"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__sp_pem_private_path
+msgid "sp_pem_private_path env config value"
+msgstr ""
+
+#. module: auth_saml_environment
+#: model:ir.model.fields,field_description:auth_saml_environment.field_auth_saml_provider__sp_pem_public_path
+msgid "sp_pem_public_path env config value"
+msgstr ""

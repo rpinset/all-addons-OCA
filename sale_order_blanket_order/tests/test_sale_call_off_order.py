@@ -196,6 +196,25 @@ class TestSaleCallOffOrder(SaleOrderBlanketOrderCase):
             ],
         )
 
+    @freezegun.freeze_time("2025-02-01")
+    def test_call_off_order_count(self):
+        self.blanket_so.action_confirm()
+        self.env["sale.order"].create(
+            [
+                {
+                    "order_type": "call_off",
+                    "partner_id": self.partner.id,
+                    "blanket_order_id": self.blanket_so.id,
+                },
+                {
+                    "order_type": "call_off",
+                    "partner_id": self.partner.id,
+                    "blanket_order_id": self.blanket_so.id,
+                },
+            ]
+        )
+        self.assertEqual(self.blanket_so.call_off_order_count, 2)
+
 
 class TestSaleCallOffOrderProcessing(SaleOrderBlanketOrderCase):
     @classmethod
