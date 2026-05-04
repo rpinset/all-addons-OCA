@@ -1,17 +1,17 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-01 04:44 UTC** (elapsed 95s)
+Last build: **2026-05-04 15:33 UTC** (elapsed 169s)
 
 - Repos integrated: **117**
 - Canonical modules: **2090**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **136**
+- Skipped repos (no branch / no module): **137**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 92174ab 2026-04-27 Pedro M. Baeza Merge pull request #5545 from hbrunn/15.0-mass_operation_abstract-merge_into_base |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 9068a5d 2026-05-04 Pedro M. Baeza Merge pull request #5098 from efatto/15.0-fix-l10n_it-migration |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | 561e5be 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | 896dfad 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2184c38 2026-03-03 OCA-git-bot [BOT] post-merge updates |
@@ -126,6 +126,6 @@ Last build: **2026-05-01 04:44 UTC** (elapsed 95s)
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 1 | 9debad8 2026-03-27 OCA-git-bot [ADD] setup.py |
 | [web](https://github.com/OCA/web) | 53 | 952baf0 2026-04-07 OCA-git-bot [BOT] post-merge updates |
 | [web-api](https://github.com/OCA/web-api) | 1 | 0102039 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [website](https://github.com/OCA/website) | 21 | 83fcd63 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [website](https://github.com/OCA/website) | 21 | 92d30ea 2026-05-04 OCA-git-bot [BOT] post-merge updates |
 | [wms](https://github.com/OCA/wms) | 1 | 97f63f6 2025-02-09 oca-git-bot [IMP] update dotfiles |
 

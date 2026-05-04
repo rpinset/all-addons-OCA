@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-05-01 04:44 UTC
+Generated 2026-05-04 15:33 UTC
 
-Total skipped: **136**
+Total skipped: **137**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **57**
+Count: **58**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -49,6 +49,7 @@ Count: **57**
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [15.0](https://github.com/OCA/repo-maintainer/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [15.0](https://github.com/OCA/repo-maintainer-conf/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | [15.0](https://github.com/OCA/rest-api/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | [15.0](https://github.com/OCA/route-planning/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | [15.0](https://github.com/OCA/sale-blanket/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-channel](https://github.com/OCA/sale-channel) | [15.0](https://github.com/OCA/sale-channel/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [15.0](https://github.com/OCA/sale-prebook/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
