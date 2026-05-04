@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-05-01 04:50 UTC
+Generated 2026-05-04 15:35 UTC
 
-Total skipped: **169**
+Total skipped: **170**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **145**
+Count: **146**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -141,6 +141,7 @@ Count: **145**
 | [rest-api](https://github.com/OCA/rest-api) | [19.0](https://github.com/OCA/rest-api/tree/19.0) | No directory with __manifest__.py at repo root |
 | [rma](https://github.com/OCA/rma) | [19.0](https://github.com/OCA/rma/tree/19.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [19.0](https://github.com/OCA/role-policy/tree/19.0) | No directory with __manifest__.py at repo root |
+| [route-planning](https://github.com/OCA/route-planning) | [19.0](https://github.com/OCA/route-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-channel](https://github.com/OCA/sale-channel) | [19.0](https://github.com/OCA/sale-channel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | [19.0](https://github.com/OCA/sale-financial/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [19.0](https://github.com/OCA/sale-prebook/tree/19.0) | No directory with __manifest__.py at repo root |

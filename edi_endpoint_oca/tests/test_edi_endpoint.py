@@ -1,0 +1,57 @@
+# Copyright 2021 Camptocamp SA
+# @author: Simone Orsi <simone.orsi@camptocamp.com>
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+
+import base64
+
+from odoo import exceptions
+
+from .common import EDIEndpointCommonTestCase
+
+
+class TestEndpoint(EDIEndpointCommonTestCase):
+    def test_endpoint_find(self):
+        self.assertEqual(
+            self.env["edi.endpoint"]._find_endpoint("/edi/demo/try"), self.endpoint
+        )
+
+    def test_exchange_record(self):
+        rec = self.endpoint.create_exchange_record()
+        self.assertEqual(rec.edi_endpoint_id, self.endpoint)
+
+    def test_route(self):
+        rec = self.endpoint.copy(
+            {
+                "route": "/noprefix",
+            }
+        )
+        self.assertEqual(rec.route, "/edi/noprefix")
+
+    def test_endpoint_count(self):
+        backend = self.endpoint.backend_id
+        self.assertEqual(backend.endpoints_count, 1)
+        rec = self.endpoint.copy(
+            {
+                "route": "/another",
+            }
+        )
+        self.assertEqual(backend.endpoints_count, 2)
+        rec.active = False
+        self.assertEqual(backend.endpoints_count, 1)
+
+    def test_archive_check(self):
+        backend = self.endpoint.backend_id
+        msg = r"The following backend\(s\) have endpoints attached*"
+        with self.assertRaisesRegex(exceptions.UserError, msg):
+            backend.active = False
+        backend.endpoint_ids.active = False
+        backend.active = False
+
+    def test_sync(self):
+        # FIXME: just testing if the method here is available on GH
+        self.endpoint._handle_registry_sync()
+
+    def test_create_exchange_record_with_file_content(self):
+        content = "This is a test"
+        rec = self.endpoint.create_exchange_record(file_content=content)
+        self.assertEqual(base64.b64decode(rec.exchange_file).decode("utf-8"), content)

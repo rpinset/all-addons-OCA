@@ -1138,13 +1138,18 @@ addon | version | maintainers | summary
 [delivery_carrier_account](delivery_carrier_account/) | 19.0.1.0.0 |  | Delivery Carrier Account
 [delivery_carrier_agency](delivery_carrier_agency/) | 19.0.1.0.0 |  | Add a model for Carrier Agencies
 [delivery_carrier_manual_price](delivery_carrier_manual_price/) | 19.0.1.0.0 |  | Allow setting manual shipping cost in sale order.
+[delivery_carrier_option](delivery_carrier_option/) | 19.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Delivery Carrier Option
+[delivery_carrier_partner](delivery_carrier_partner/) | 19.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_carrier_picking_valid](delivery_carrier_picking_valid/) | 19.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Checks if a transfer matches carrier requirements
-[delivery_carrier_picking_valid_dangerous_goods](delivery_carrier_picking_valid_dangerous_goods/) | 19.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Checks if a transfer matches carrier dangerous goods restrictions
+[delivery_carrier_picking_valid_dangerous_goods](delivery_carrier_picking_valid_dangerous_goods/) | 19.0.1.0.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Checks if a transfer matches carrier dangerous goods restrictions
 [delivery_correos_express](delivery_correos_express/) | 19.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_multi_destination](delivery_multi_destination/) | 19.0.1.0.0 |  | Multiple destinations for the same delivery method
 [delivery_package_number](delivery_package_number/) | 19.0.1.0.0 |  | Set or compute number of packages for a picking
+[delivery_price_method](delivery_price_method/) | 19.0.1.0.0 |  | Force a fixed or rule price calculation on Delivery Methods, for example to override a webservice provided prices.
 [delivery_state](delivery_state/) | 19.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [partner_delivery_info](partner_delivery_info/) | 19.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
+[partner_delivery_schedule](partner_delivery_schedule/) | 19.0.1.0.0 |  | Set on partners a schedule for delivery goods
+[partner_delivery_zone](partner_delivery_zone/) | 19.0.1.0.0 |  | Enables partner delivery zones for physical products
 
 [//]: # (end addons)
 
@@ -1245,6 +1250,7 @@ addon | version | maintainers | summary
 [base_ubl_generate](base_ubl_generate/) | 19.0.1.0.0 |  | Base module to generate UBL files (Universal Business Language)
 [base_ubl_parse](base_ubl_parse/) | 19.0.1.0.0 |  | Base module to parse UBL files (Universal Business Language)
 [partner_identification_import](partner_identification_import/) | 19.0.1.0.0 |  | Provides partner matching on extra ID
+[purchase_order_ubl](purchase_order_ubl/) | 19.0.1.0.0 |  | Embed UBL XML file inside the PDF purchase order
 
 [//]: # (end addons)
 
@@ -1294,6 +1300,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [edi_component_oca](edi_component_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Allow to use Connector as a source in EDI
 [edi_core_oca](edi_core_oca/) | 19.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_endpoint_oca](edi_endpoint_oca/) | 19.0.1.0.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_queue_oca](edi_queue_oca/) | 19.0.1.0.0 |  | Set Queue Jobs on EDI
 [edi_record_metadata_oca](edi_record_metadata_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to store metadata for related records.
 [edi_ubl_oca](edi_ubl_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Define EDI backend type for UBL.
@@ -1454,6 +1461,7 @@ addon | version | maintainers | summary
 [hr_employee_firstname](hr_employee_firstname/) | 19.0.1.1.0 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_language](hr_employee_language/) | 19.0.1.0.0 |  | HR Employee Language
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 19.0.1.0.0 |  | Adds information about employee's medical examinations
+[hr_employee_relative](hr_employee_relative/) | 19.0.1.0.0 |  | Allows storing information about employee's family
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 19.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
 
 [//]: # (end addons)
@@ -1851,6 +1859,7 @@ addon | version | maintainers | summary
 [datev_export](datev_export/) | 19.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [datev_export_dtvf](datev_export_dtvf/) | 19.0.1.0.0 |  | Export Data for DATEV (dtvf)
 [datev_import_csv_dtvf](datev_import_csv_dtvf/) | 19.0.2.0.0 |  | Import account moves generated by external software
+[l10n_din5008_company_header_country_invisible](l10n_din5008_company_header_country_invisible/) | 19.0.1.0.1 |  | Do not display the companies country on the header of the address block
 [l10n_din5008_move_name](l10n_din5008_move_name/) | 19.0.1.0.0 |  | Add Account move name on the name of the move
 
 [//]: # (end addons)
@@ -2008,7 +2017,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 19.0.0.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 19.0.0.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 19.0.0.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.14.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.15.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 19.0.0.3.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 19.0.0.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 19.0.0.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -2021,6 +2030,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 19.0.1.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 19.0.1.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 19.0.0.2.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
+[l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 19.0.1.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 19.0.0.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 19.0.0.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> <a href='https://github.com/mcojocaru'><img src='https://github.com/mcojocaru.png' width='32' height='32' style='border-radius:50%;' alt='mcojocaru'/></a> <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 19.0.2.3.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Report (Fișă Magazie)
@@ -2182,7 +2192,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_activity_board](mail_activity_board/) | 19.0.1.0.0 |  | Add Activity Boards
-[mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.0 |  | Reminder notifications about planned activities
+[mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.1 |  | Reminder notifications about planned activities
 [mail_message_search](mail_message_search/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_optional_autofollow](mail_optional_autofollow/) | 19.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 19.0.1.0.0 |  | Allows you to configure the from header for a mail server.
@@ -2528,7 +2538,7 @@ addon | version | maintainers | summary
 [attribute_set](attribute_set/) | 19.0.1.1.0 |  | Attribute Set
 [pim](pim/) | 19.0.1.0.0 |  | Product Information Management
 [product_attribute_set](product_attribute_set/) | 19.0.1.0.0 |  | Product Attribute Set
-[website_attribute_set](website_attribute_set/) | 19.0.1.0.1 | <a href='https://github.com/kobros-tech'><img src='https://github.com/kobros-tech.png' width='32' height='32' style='border-radius:50%;' alt='kobros-tech'/></a> | Website Attribute Set
+[website_attribute_set](website_attribute_set/) | 19.0.1.1.0 | <a href='https://github.com/kobros-tech'><img src='https://github.com/kobros-tech.png' width='32' height='32' style='border-radius:50%;' alt='kobros-tech'/></a> | Website Attribute Set
 
 [//]: # (end addons)
 
@@ -2648,6 +2658,7 @@ addon | version | maintainers | summary
 [partner_contact_birthdate](partner_contact_birthdate/) | 19.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Contact's birthdate
 [partner_contact_birthplace](partner_contact_birthplace/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | This module allows to define a birthplace for partners.
 [partner_contact_department](partner_contact_department/) | 19.0.1.0.0 |  | Assign contacts to departments
+[partner_contact_gender](partner_contact_gender/) | 19.0.1.0.0 |  | Add gender field to contacts
 [partner_contact_job_position](partner_contact_job_position/) | 19.0.1.0.0 |  | Categorize job positions for contacts
 [partner_contact_nationality](partner_contact_nationality/) | 19.0.1.0.0 |  | Add nationality field to contacts
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 19.0.1.0.0 | <a href='https://github.com/Daemo00'><img src='https://github.com/Daemo00.png' width='32' height='32' style='border-radius:50%;' alt='Daemo00'/></a> | Add a page to contacts form to put personal information
@@ -2658,6 +2669,7 @@ addon | version | maintainers | summary
 [partner_department](partner_department/) | 19.0.1.0.1 |  | Adds department as a partner type
 [partner_email_check](partner_email_check/) | 19.0.1.0.0 |  | Validate email address field
 [partner_email_duplicate_warn](partner_email_duplicate_warn/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Warning banner on partner form if other partners have the same email
+[partner_employee_quantity](partner_employee_quantity/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Know how many employees a partner has
 [partner_fax](partner_fax/) | 19.0.1.0.0 |  | Add fax number on partner
 [partner_firstname](partner_firstname/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Split first name and last name for non company partners
 [partner_identification](partner_identification/) | 19.0.1.0.0 |  | Partner Identification Numbers
@@ -2675,6 +2687,7 @@ addon | version | maintainers | summary
 [partner_store](partner_store/) | 19.0.1.0.0 | <a href='https://github.com/wouitmil'><img src='https://github.com/wouitmil.png' width='32' height='32' style='border-radius:50%;' alt='wouitmil'/></a> | Add store type to Partners
 [partner_supplier_ref](partner_supplier_ref/) | 19.0.1.0.0 |  | Adds a supplier reference to contacts
 [partner_title](partner_title/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
+[partner_title_contacts](partner_title_contacts/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Glue module between contacts and partner_title
 [partner_tz](partner_tz/) | 19.0.1.0.0 |  | Remove partner timezone default value and display on form
 [partner_utm_source](partner_utm_source/) | 19.0.1.0.0 |  | This module adds the use of utm source in partners
 [partner_vat_unique](partner_vat_unique/) | 19.0.1.0.1 |  | Module to make the VAT number unique for customers and suppliers.
@@ -2836,6 +2849,7 @@ addon | version | maintainers | summary
 [product_status](product_status/) | 19.0.1.0.0 |  | Product Status Computed From Fields
 [product_supplierinfo_indirect_cost](product_supplierinfo_indirect_cost/) | 19.0.1.0.0 |  | Add indirect cost percent and amount to supplier info
 [purchase_product_template_tags](purchase_product_template_tags/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Purchase app
+[uom_alias](uom_alias/) | 19.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Adds alias for UOM
 
 [//]: # (end addons)
 
@@ -2979,6 +2993,8 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 19.0.1.0.0 |  | Project Department Categorization
 [project_hr](project_hr/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 19.0.1.0.0 |  | Module decorates projects and tasks with Project Key
+[project_milestone_status](project_milestone_status/) | 19.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Milestone Status
+[project_parent](project_parent/) | 19.0.1.0.0 |  | Project Parent
 [project_parent_task_filter](project_parent_task_filter/) | 19.0.1.0.0 |  | Add a filter to show the parent tasks
 [project_sequence](project_sequence/) | 19.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
 [project_task_default_stage](project_task_default_stage/) | 19.0.1.0.0 |  | Recovery default task stages for projects from v8
@@ -2990,6 +3006,8 @@ addon | version | maintainers | summary
 [project_task_pull_request_state](project_task_pull_request_state/) | 19.0.1.0.0 |  | Track Pull Request state in tasks
 [project_task_stage_mgmt](project_task_stage_mgmt/) | 19.0.1.0.0 | <a href='https://github.com/DavidJForgeFlow'><img src='https://github.com/DavidJForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='DavidJForgeFlow'/></a> | Allows to assign and create task stages on project creation wizard
 [project_task_stage_state](project_task_stage_state/) | 19.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
+[project_task_tag](project_task_tag/) | 19.0.1.0.0 |  | Limit tags available on task
+[project_timeline](project_timeline/) | 19.0.1.0.0 |  | Timeline view for projects
 [project_type](project_type/) | 19.0.1.0.0 |  | Project Types
 [project_version](project_version/) | 19.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Version
 
@@ -3152,7 +3170,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queue_job](queue_job/) | 19.0.2.0.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
+[queue_job](queue_job/) | 19.0.2.0.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
 [test_queue_job](test_queue_job/) | 19.0.2.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Queue Job Tests
 
 
@@ -3262,6 +3280,7 @@ addon | version | maintainers | summary
 [base_report_to_label_printer](base_report_to_label_printer/) | 19.0.1.1.0 |  | Report to label printer
 [base_report_to_printer](base_report_to_printer/) | 19.0.1.2.0 |  | Report to printer
 [base_report_to_printer_cups](base_report_to_printer_cups/) | 19.0.0.2.0 |  | Report to printer CUPS
+[base_report_to_printer_websocket](base_report_to_printer_websocket/) | 19.0.1.0.0 |  | Report to printer via WebSocket
 
 [//]: # (end addons)
 
@@ -3538,6 +3557,7 @@ addon | version | maintainers | summary
 [sale_invoice_blocking](sale_invoice_blocking/) | 19.0.1.0.0 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 19.0.1.1.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
 [sale_last_price_info](sale_last_price_info/) | 19.0.1.0.0 |  | Product Last Price Info - Sale
+[sale_manual_delivery](sale_manual_delivery/) | 19.0.1.0.0 |  | Create your deliveries manually
 [sale_order_archive](sale_order_archive/) | 19.0.1.0.0 |  | Archive Sale Orders
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 19.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
 [sale_order_general_discount](sale_order_general_discount/) | 19.0.1.0.1 |  | General discount per sale order
@@ -4331,6 +4351,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_timesheet_begin_end](hr_timesheet_begin_end/) | 19.0.1.0.0 |  | Timesheet - Begin/End Hours
 [hr_timesheet_day_week](hr_timesheet_day_week/) | 19.0.1.0.0 |  | Timesheets - Day of Week
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 19.0.1.0.0 |  | Set task on timesheet as a mandatory field
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 19.0.1.0.0 |  | Open/Close task from corresponding Task Log entry
@@ -4448,6 +4469,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [endpoint](endpoint/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide custom endpoint machinery.
+[endpoint_auth_api_key](endpoint_auth_api_key/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide API key auth for endpoints.
 [endpoint_route_handler](endpoint_route_handler/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide mixin and tool to generate custom endpoints on the fly.
 [webservice](webservice/) | 19.0.1.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally
 [webservice_server_env](webservice_server_env/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Use Server Environment feature to manage Webservice configs
