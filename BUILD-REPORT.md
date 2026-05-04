@@ -1,6 +1,6 @@
 # Build report — `13.0`
 
-Generated 2026-05-01 04:41 UTC
+Generated 2026-05-04 15:29 UTC
 
 ## Skipped repos
 
@@ -107,6 +107,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [resource](https://github.com/OCA/resource) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [sale-channel](https://github.com/OCA/sale-channel) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
