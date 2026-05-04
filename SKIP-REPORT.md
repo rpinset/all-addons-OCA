@@ -1,12 +1,12 @@
 # Skipped repos — branch `14.0`
 
-Generated 2026-05-01 04:43 UTC
+Generated 2026-05-04 15:29 UTC
 
-Total skipped: **113**
+Total skipped: **114**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **55**
+Count: **56**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -49,6 +49,7 @@ Count: **55**
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [14.0](https://github.com/OCA/repo-maintainer-conf/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | [14.0](https://github.com/OCA/rest-api/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [role-policy](https://github.com/OCA/role-policy) | [14.0](https://github.com/OCA/role-policy/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | [14.0](https://github.com/OCA/route-planning/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | [14.0](https://github.com/OCA/sale-blanket/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [sale-channel](https://github.com/OCA/sale-channel) | [14.0](https://github.com/OCA/sale-channel/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [14.0](https://github.com/OCA/shopfloor-app/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |

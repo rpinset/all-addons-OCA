@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-01 04:43 UTC** (elapsed 186s)
+Last build: **2026-05-04 15:29 UTC** (elapsed 115s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **113**
+- Skipped repos (no branch / no module): **114**
 
 ## Integrated repos
 
@@ -87,7 +87,7 @@ Last build: **2026-05-01 04:43 UTC** (elapsed 186s)
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 25 | 6dd956c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 9 | 4e58c97 2026-01-12 OCA-git-bot [BOT] post-merge updates |
 | [maintenance](https://github.com/OCA/maintenance) | 31 | 3dec9a2 2026-04-30 mymage Translated using Weblate (Italian) |
-| [management-system](https://github.com/OCA/management-system) | 31 | aff06d4 2026-02-03 Weblate Update translation files |
+| [management-system](https://github.com/OCA/management-system) | 31 | 9f750fc 2026-05-02 OCA-git-bot [BOT] post-merge updates |
 | [manufacture](https://github.com/OCA/manufacture) | 75 | 4a021fe 2026-04-13 OCA-git-bot Merge PR #1757 into 14.0 |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | 91e83d0 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 7 | a7a0b8b 2025-06-17 mymage Translated using Weblate (Italian) |
@@ -105,7 +105,7 @@ Last build: **2026-05-01 04:43 UTC** (elapsed 186s)
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 9 | 9b5dbf8 2025-09-16 Betül Öğmen Added translation using Weblate (Turkish) |
-| [project](https://github.com/OCA/project) | 48 | bc6b27b 2026-04-21 OCA-git-bot Merge PR #1706 into 14.0 |
+| [project](https://github.com/OCA/project) | 48 | 4aeff08 2026-05-01 OCA-git-bot [BOT] post-merge updates |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
