@@ -9,7 +9,7 @@
 {
     "name": "CRM Timesheet",
     "category": "Customer Relationship Management",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.0.2",
     "depends": ["crm", "project_timesheet_time_control"],
     "data": [
         "security/ir.model.access.csv",

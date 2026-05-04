@@ -1,12 +1,12 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-05-01 04:48 UTC
+Generated 2026-05-04 15:33 UTC
 
-Total skipped: **127**
+Total skipped: **128**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **30**
+Count: **31**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -32,6 +32,7 @@ Count: **30**
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [17.0](https://github.com/OCA/openupgradelib/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [17.0](https://github.com/OCA/py3o.template/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [17.0](https://github.com/OCA/pylint-odoo/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | [17.0](https://github.com/OCA/route-planning/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [17.0](https://github.com/OCA/shopfloor-app/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [17.0](https://github.com/OCA/shoppingfeed/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [17.0](https://github.com/OCA/stock-logistics-putaway/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |

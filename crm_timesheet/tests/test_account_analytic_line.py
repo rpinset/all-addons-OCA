@@ -79,3 +79,13 @@ class AccountAnalyticLineCase(TransactionCase):
         )
         line._onchange_lead_id()
         self.assertEqual(line.project_id, self.project1)
+
+    def test_compute_partner_id(self):
+        line = (
+            self.env["account.analytic.line"]
+            .sudo()
+            .create({"name": "test", "lead_id": self.lead.id})
+        )
+        self.assertFalse(line.partner_id)
+        self.lead.partner_id = self.env["res.partner"].create({"name": "Test Partner"})
+        self.assertEqual(line.partner_id, self.lead.partner_id)
