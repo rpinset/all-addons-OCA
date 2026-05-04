@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- ACTIVO -->
+    <record id="account_group_1" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1</field>
+        <field name="name">ACTIVO</field>
+    </record>
+
+    <!-- ACTIVO CORRIENTE -->
+    <record id="account_group_101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01</field>
+        <field name="name">ACTIVO CORRIENTE</field>
+    </record>
+
+    <!-- DISPONIBILIDADES -->
+    <record id="account_group_10101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.01</field>
+        <field name="name">DISPONIBILIDADES</field>
+    </record>
+
+    <record id="account_group_10102" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.02</field>
+        <field name="name">INVERSIONES TEMPORARIAS</field>
+    </record>
+
+    <record id="account_group_10103" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.03</field>
+        <field name="name">CRÉDITOS</field>
+    </record>
+
+    <record id="account_group_101030" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.03.05</field>
+        <field name="name">CRÉDITOS POR IMPUESTOS CORRIENTES</field>
+    </record>
+
+    <record id="account_group_101031" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.03.06</field>
+        <field name="name">ANTICIPO A PROVEEDORES</field>
+    </record>
+
+    <!-- INVENTARIOS -->
+    <record id="account_group_10104" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.04</field>
+        <field name="name">INVENTARIOS</field>
+    </record>
+
+    <!-- MERCADERÍAS -->
+    <record id="account_group_101040" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.04.01</field>
+        <field name="name">MERCADERÍAS</field>
+    </record>
+
+    <!-- MERCADERÍAS REGÍMENES ESPECIALES -->
+    <record id="account_group_101041" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.04.02</field>
+        <field name="name">MERCADERÍAS REGÍMENES ESPECIALES</field>
+    </record>
+
+    <!-- PRODUCTOS TERMINADOS -->
+    <record id="account_group_101042" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.04.03</field>
+        <field name="name">PRODUCTOS TERMINADOS</field>
+    </record>
+
+    <!-- GASTOS PAGADOS POR ADELANTADO -->
+    <record id="account_group_10105" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.05</field>
+        <field name="name">GASTOS PAGADOS POR ADELANTADO</field>
+    </record>
+
+
+    <record id="account_group_10106" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.01.06</field>
+        <field name="name">OTROS ACTIVOS CORRIENTES</field>
+    </record>
+
+    <record id="account_group_102" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02</field>
+        <field name="name">ACTIVO NO CORRIENTE</field>
+    </record>
+
+    <record id="account_group_10201" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.01</field>
+        <field name="name">CRÉDITOS A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_102010" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.01.06</field>
+        <field name="name">ANTICIPOS A PROVEEDORES L/P</field>
+    </record>
+
+    <record id="account_group_10202" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.02</field>
+        <field name="name">INVENTARIOS A REALIZAR A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_10203" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.03</field>
+        <field name="name">INVERSIONES A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_10204" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.04</field>
+        <field name="name">PROPIEDAD, PLANTA Y EQUIPO</field>
+    </record>
+
+    <record id="account_group_10205" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.05</field>
+        <field name="name">OTROS ACTIVOS A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_10206" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.06</field>
+        <field name="name">CARGOS DIFERIDOS</field>
+    </record>
+
+    <record id="account_group_10207" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">1.02.07</field>
+        <field name="name">ACTIVOS INTANGIBLES</field>
+    </record>
+
+    <!-- PASIVO -->
+    <record id="account_group_2" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2</field>
+        <field name="name">PASIVO</field>
+    </record>
+
+    <record id="account_group_201" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01</field>
+        <field name="name">PASIVO CORRIENTE</field>
+    </record>
+
+    <record id="account_group_20101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.01</field>
+        <field name="name">ACREEDORES COMERCIALES</field>
+    </record>
+
+    <record id="account_group_20102" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.02</field>
+        <field name="name">DEUDAS FINANCIERAS</field>
+    </record>
+
+    <record id="account_group_20103" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.03</field>
+        <field name="name">OTRAS CUENTAS POR PAGAR</field>
+    </record>
+
+    <record id="account_group_201030" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.03.01</field>
+        <field name="name">DEUDAS FISCALES CORRIENTES</field>
+    </record>
+
+    <record id="account_group_20104" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.04</field>
+        <field name="name">PROVISIONES</field>
+    </record>
+
+    <record id="account_group_20105" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.01.05</field>
+        <field name="name">INGRESOS DIFERIDOS</field>
+    </record>
+
+    <record id="account_group_202" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02</field>
+        <field name="name">PASIVO NO CORRIENTE</field>
+    </record>
+
+    <record id="account_group_20201" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02.01</field>
+        <field name="name">ACREEDORES COMERCIALES A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_20202" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02.02</field>
+        <field name="name">DEUDAS FINANCIERAS A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_20203" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02.03</field>
+        <field name="name">OTRAS CUENTAS POR PAGAR</field>
+    </record>
+
+    <record id="account_group_20204" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02.04</field>
+        <field name="name">PROVISIONES PARA OBLIGACIONES A LARGO PLAZO</field>
+    </record>
+
+    <record id="account_group_20205" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">2.02.05</field>
+        <field name="name">INGRESOS DIFERIDOS A LARGO PLAZO</field>
+    </record>
+
+    <!-- PATRIMONIO NETO -->
+    <record id="account_group_3" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3</field>
+        <field name="name">PATRIMONIO NETO</field>
+    </record>
+
+    <record id="account_group_301" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3.01</field>
+        <field name="name">CAPITAL</field>
+    </record>
+
+    <record id="account_group_30101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3.01.01</field>
+        <field name="name">CAPITAL INTEGRADO</field>
+    </record>
+
+    <record id="account_group_302" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3.02</field>
+        <field name="name">RESERVAS</field>
+    </record>
+
+    <record id="account_group_30202" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3.02.02</field>
+        <field name="name">RESERVA DE REVALÚO</field>
+    </record>
+
+    <record id="account_group_303" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">3.03</field>
+        <field name="name">RESULTADOS</field>
+    </record>
+
+    <!-- INGRESOS OPERATIVOS -->
+    <record id="account_group_4" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4</field>
+        <field name="name">INGRESOS OPERATIVOS</field>
+    </record>
+
+    <record id="account_group_401" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.01</field>
+        <field name="name">VENTAS DE MERCADERÍAS</field>
+    </record>
+
+    <record id="account_group_402" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.02</field>
+        <field name="name">VENTAS DE PRODUCTOS AGRÍCOLAS</field>
+    </record>
+
+    <record id="account_group_406" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.06</field>
+        <field name="name">EXPORTACIONES DE PRODUCTOS AGRÍCOLAS</field>
+    </record>
+
+    <record id="account_group_40601" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.06.01</field>
+        <field name="name">EXPORTACIONES DE SOJA Y SUS DERIVADOS</field>
+    </record>
+
+    <record id="account_group_407" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.07</field>
+        <field name="name">EXPORTACIONES DE BIENES INDUSTRIALIZADOS</field>
+    </record>
+
+    <record id="account_group_410" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.10</field>
+        <field name="name">VENTAS DE BIENES - REGÍMENES ESPECIALES</field>
+    </record>
+
+    <record id="account_group_41001" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">4.10.01</field>
+        <field name="name">VENTAS MERCADERÍAS - RÉGIMEN DE TURISMO</field>
+    </record>
+
+    <!-- COSTOS OPERATIVOS -->
+    <record id="account_group_5" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5</field>
+        <field name="name">COSTOS OPERATIVOS</field>
+    </record>
+
+    <record id="account_group_501" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.01</field>
+        <field name="name">COSTO DE MERCADERÍAS</field>
+    </record>
+
+    <record id="account_group_502" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.02</field>
+        <field name="name">COSTO DE PRODUCTOS AGRÍCOLAS</field>
+    </record>
+
+    <record id="account_group_506" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.06</field>
+        <field name="name">COSTO DE PRODUCTOS AGRÍCOLAS EXPORTADOS</field>
+    </record>
+
+    <record id="account_group_50601" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.06.01</field>
+        <field name="name">COSTO DE SOJA Y SUS DERIVADOS EXPORTADOS</field>
+    </record>
+
+    <record id="account_group_507" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.07</field>
+        <field name="name">COSTO DE BIENES INDUSTRIALIZADOS EXPORTADOS</field>
+    </record>
+
+    <record id="account_group_510" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.10</field>
+        <field name="name">COSTO DE VENTAS DE BIENES - REGÍMENES ESPECIALES</field>
+    </record>
+
+    <record id="account_group_51001" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">5.10.01</field>
+        <field name="name">COSTO DE VENTAS MERCADERÍAS - RÉGIMEN DE TURISMO</field>
+    </record>
+
+    <!-- INGRESOS POR ACTIVOS BIOLÓGICOS -->
+    <record id="account_group_7" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">7</field>
+        <field name="name">INGRESOS POR ACTIVOS BIOLÓGICOS</field>
+    </record>
+
+    <record id="account_group_701" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">7.01</field>
+        <field
+            name="name"
+        >INGRESOS POR PRODUCCIÓN Y/O TENENCIA DE ACTIVOS BIOLÓGICOS</field>
+    </record>
+
+    <record id="account_group_702" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">7.02</field>
+        <field
+            name="name"
+        >COSTO DE PRODUCCIÓN Y/O TENENCIA DE ACTIVOS BIOLÓGICOS</field>
+    </record>
+
+    <!-- OTROS INGRESOS -->
+    <record id="account_group_8" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">8</field>
+        <field name="name">OTROS INGRESOS</field>
+    </record>
+
+    <!-- GASTOS DE VENTAS -->
+    <record id="account_group_10" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">10</field>
+        <field name="name">GASTOS DE VENTAS O COMERCIALIZACIÓN</field>
+    </record>
+
+    <record id="account_group_1001" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">10.01</field>
+        <field name="name">SUELDOS Y REMUNERACIONES VENTAS</field>
+    </record>
+
+    <record id="account_group_100101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">10.01.01</field>
+        <field name="name">SUELDOS Y OTRAS REMUNERACIONES AL PERSONAL VENTAS</field>
+    </record>
+
+    <!-- GASTOS DE ADMINISTRACIÓN -->
+    <record id="account_group_11" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">11</field>
+        <field name="name">GASTOS DE ADMINISTRACIÓN</field>
+    </record>
+
+    <record id="account_group_1101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">11.01</field>
+        <field name="name">SUELDOS Y REMUNERACIONES ADMINISTRACIÓN</field>
+    </record>
+
+    <record id="account_group_110101" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">11.01.01</field>
+        <field name="name">SUELDOS Y OTRAS REMUNERACIONES AL PERSONAL ADM</field>
+    </record>
+
+    <!-- GASTOS BANCARIOS Y FINANCIEROS -->
+    <record id="account_group_13" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">13</field>
+        <field name="name">GASTOS BANCARIOS Y FINANCIEROS</field>
+    </record>
+
+    <!-- PREVISIONES -->
+    <record id="account_group_14" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">14</field>
+        <field name="name">PREVISIONES</field>
+    </record>
+
+    <!-- DEPRECIACIONES Y AMORTIZACIONES -->
+    <record id="account_group_15" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">15</field>
+        <field name="name">DEPRECIACIONES Y AMORTIZACIONES DE ACTIVOS</field>
+    </record>
+
+    <!-- OTROS RESULTADOS NO OPERATIVOS -->
+    <record id="account_group_17" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">17</field>
+        <field name="name">OTROS RESULTADOS NO OPERATIVOS</field>
+    </record>
+
+    <!-- IMPUESTO A LA RENTA -->
+    <record id="account_group_19" model="account.group.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="code_prefix_start">19</field>
+        <field name="name">IMPUESTO A LA RENTA</field>
+    </record>
+
+</odoo>

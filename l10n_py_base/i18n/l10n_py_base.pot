@@ -1,0 +1,1696 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_12
+msgid "25 DE DICIEMBRE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_18
+msgid "3 DE FEBRERO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_11
+msgid "3 DE MAYO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_02
+msgid "ABAÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_02
+msgid "ACAHAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_02
+msgid "ALBERDI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_25
+msgid "ALTO VERÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_02
+msgid "ALTOS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_02
+msgid "ANTEQUERA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_01
+msgid "AREGUÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_12
+msgid "ARROYITO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_03
+msgid "ARROYOS Y ESTEROS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_04
+msgid "ATYRÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_02
+msgid "AYOLAS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_08
+msgid "AZOTE'Y"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_activity_description
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_activity_description
+msgid "Actividad Económica"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_17_04
+msgid "BAHÍA NEGRA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_02
+#: model:res.city,name:l10n_py_base.city_py_13_02
+msgid "BELLA VISTA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_02
+msgid "BELÉN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_02
+msgid "BENJAMÍN ACEVAL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_02
+msgid "BORJA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_03
+msgid "BUENA VISTA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model,name:l10n_py_base.model_l10n_py_neighborhood
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_neighborhood_id
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_neighborhood_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.view_l10n_py_neighborhood_form
+msgid "Barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_neighborhood_id
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_neighborhood_id
+msgid "Barrio o distrito del contacto"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Barrio..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.actions.act_window,name:l10n_py_base.action_l10n_py_neighborhood
+#: model:ir.ui.menu,name:l10n_py_base.menu_l10n_py_neighborhood
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.view_l10n_py_neighborhood_search
+msgid "Barrios"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_01
+msgid "CAACUPÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_02
+msgid "CAAGUAZÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_03
+msgid "CAAPUCÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_01
+msgid "CAAZAPÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_04
+msgid "CABALLERO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_03
+msgid "CAMBYRETÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_02
+msgid "CAPIATÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_17
+msgid "CAPIIBARY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_13_03
+msgid "CAPITÁN BADO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_03
+msgid "CAPITÁN MAURICIO JOSÉ TROCHE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_04
+msgid "CAPITÁN MEZA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_05
+msgid "CAPITÁN MIRANDA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_05
+msgid "CARAGUATAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_05
+msgid "CARAPEGUÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_03
+msgid "CARAYAÓ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_09
+msgid "CARLOS ANTONIO LÓPEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_17_05
+msgid "CARMELO PERALTA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_07
+msgid "CARMEN DEL PARANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_03
+msgid "CERRITO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_03
+msgid "CHORÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:l10n_latam.identification.type,name:l10n_py_base.it_ci
+msgid "CI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_01
+msgid "CIUDAD DEL ESTE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_01
+msgid "CONCEPCIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_08
+msgid "CORONEL BOGADO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_04
+msgid "CORONEL MARTÍNEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_01
+msgid "CORONEL OVIEDO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_02
+msgid "CORPUS CHRISTI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_doc_type__3
+#: model:l10n_latam.identification.type,name:l10n_py_base.it_carnet_residencia
+msgid "Carnet de Residencia"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model,name:l10n_py_base.model_res_city
+msgid "City"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "City..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__city_id
+msgid "Ciudad"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__city_id
+msgid "Ciudad a la que pertenece el barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model,name:l10n_py_base.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Complement..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model,name:l10n_py_base.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_taxpayer_type__1
+msgid "Contribuyente"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_company__country_id
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__country_id
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__country_id
+msgid "Country"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model,name:l10n_py_base.model_res_country_state
+msgid "Country state"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Country..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.actions.act_window,help:l10n_py_base.action_l10n_py_neighborhood
+msgid "Crear un nuevo barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_doc_type__1
+msgid "Cédula de Identidad"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__code
+msgid "Código"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_city_code
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_city_code
+msgid "Código Ciudad SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_department_code
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_department_code
+msgid "Código Departamento SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__zipcode
+msgid "Código Postal"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_city__l10n_py_code
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_country_state__l10n_py_code
+msgid "Código SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_city_code
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_city_code
+msgid "Código de la ciudad según SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_city__l10n_py_code
+msgid "Código de la ciudad según SET (Subsecretaría de Estado de Tributación)"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__code
+msgid "Código del barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_department_code
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_department_code
+msgid "Código del departamento según SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_country_state__l10n_py_code
+msgid ""
+"Código del departamento según SET (Subsecretaría de Estado de Tributación)"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__zipcode
+msgid "Código postal del barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_04
+msgid "DESMOCHADOS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_16
+msgid "DOCTOR BOTTRELL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_03
+msgid "DOMINGO MARTÍNEZ DE IRALA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_04
+msgid "DR. CECILIO BÁEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_12
+msgid "DR. J. EULOGIO ESTIGARRIBIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_04
+msgid "DR. JUAN LEÓN MALLORQUÍN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_06
+msgid "DR. JUAN MANUEL FRUTOS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_04
+msgid "DR. MOISÉS S. BERTONI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_22
+msgid "DR. RAÚL PEÑA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_ruc_dv
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_ruc_dv
+msgid "DV"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__state_id
+msgid "Departamento"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__state_id
+msgid "Departamento al que pertenece el barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_activity_description
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_activity_description
+msgid "Descripción de la actividad económica principal"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_ruc_dv
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_ruc_dv
+msgid "Dígito verificador del RUC"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_23
+msgid "EDELIRA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_06
+msgid "EMBOSCADA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_01
+msgid "ENCARNACIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_06
+msgid "ESCOBAR"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_07
+msgid "EUSEBIO AYALA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.constraint,message:l10n_py_base.constraint_res_city_l10n_py_code_unique
+msgid "El código SET de la ciudad debe ser único por país"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.constraint,message:l10n_py_base.constraint_res_country_state_l10n_py_code_unique
+msgid "El código SET del departamento debe ser único por país"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_03
+msgid "FERNANDO DE LA MORA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_16_04
+msgid "FILADELFIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_11
+msgid "FRAM"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_07
+msgid "FRANCISCO CABALLERO ALVAREZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_17_01
+msgid "FUERTE OLIMPO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_05
+msgid "FÉLIX PÉREZ CARDOZO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_12
+msgid "GENERAL ARTIGAS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_13
+msgid "GENERAL DELGADO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_04
+msgid "GENERAL ELIZARDO AQUINO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_14
+msgid "GENERAL FRANCISCO ISIDORO RESQUÍN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_09
+msgid "GENERAL JOSÉ MARÍA BRUGUEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_06
+msgid "GRAL. EUGENIO A. GARAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_05
+msgid "GRAL. HIGINIO MORINIGO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_05
+msgid "GRAL. JOSÉ EDUVIGIS DÍAZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_16
+msgid "GUAJAYVI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_04
+msgid "GUARAMBARÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_06
+msgid "GUAZÚ-CUÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_05
+msgid "HERNANDARIAS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_14
+msgid "HOHENAU"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_03
+msgid "HORQUETA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_07
+msgid "HUMAITÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_07
+msgid "INDEPENDENCIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_19
+msgid "IRUÑA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_08
+msgid "ISLA PUCÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_08
+msgid "ISLA UMBÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_09
+msgid "ITACURUBÍ DE LA CORDILLERA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_05
+msgid "ITACURUBÍ DEL ROSARIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_06
+msgid "ITAKYRY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_05
+msgid "ITANARÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_08
+msgid "ITAPÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_30
+msgid "ITAPÚA POTY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_06
+msgid "ITAUGUÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_09
+msgid "ITURBE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_05
+msgid "ITÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_doc_type__4
+msgid "Innominado"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_19
+msgid "J. AUGUSTO SALDIVAR"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_15
+msgid "JESÚS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_15
+msgid "JOSÉ DOMINGO OCAMPOS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_06
+msgid "JOSÉ FALCÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_10
+msgid "JOSÉ FASSARDI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_16
+msgid "JOSÉ LEANDRO OVIEDO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_10
+msgid "JUAN DE MENA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_07
+msgid "JUAN E. O'LEARY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_13_05
+msgid "KARAPAÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_08
+msgid "KATUETÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_11
+msgid "LA CATEDRAL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_07
+msgid "LA COLMENA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_10
+msgid "LA ENCARNACIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_09
+msgid "LA PALOMA DEL ESPÍRITU SANTO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_17
+msgid "LA PASTORA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_26
+msgid "LA PAZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_14
+msgid "LA RECOLETA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_07
+msgid "LAMBARÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_09
+msgid "LAURELES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_20
+msgid "LIBERACIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_06
+msgid "LIMA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_08
+msgid "LIMPIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_11
+msgid "LOMA GRANDE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_16_05
+msgid "LOMA PLATA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_04
+msgid "LORETO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_10
+msgid "LOS CEDRALES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_09
+msgid "LUQUE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.actions.act_window,help:l10n_py_base.action_l10n_py_neighborhood
+msgid ""
+"Los barrios son subdivisiones de las ciudades en Paraguay.\n"
+"                Puede crear barrios para organizar mejor las direcciones."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_06
+msgid "MACIEL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_14
+msgid "MARACANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_10
+msgid "MARIANO ROQUE ALONSO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_16
+msgid "MARISCAL FRANCISCO SOLANO LÓPEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_16_02
+msgid "MARISCAL JOSÉ FÉLIX ESTIGARRIBIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_18
+msgid "MARÍA ANTONIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_10
+msgid "MAYOR JOSÉ DEJESÚS MARTÍNEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_18
+msgid "MAYOR JULIO DIONISIO OTAÑO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_17
+msgid "MBARACAYÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_11
+msgid "MBOCAYATY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_12
+msgid "MBOCAYATY DEL YHAGUY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_08
+msgid "MBUYAPEY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_11
+msgid "MINGA GUAZÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_16
+msgid "MINGA PORÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_05
+msgid "NANAWA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_14
+msgid "NARANJAL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_12
+msgid "NATALICIO TALAVERA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_10
+msgid "NATALIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_06
+msgid "NUEVA ALBORADA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_13
+msgid "NUEVA COLOMBIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_10
+msgid "NUEVA ESPERANZA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_07
+msgid "NUEVA GERMANIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_11
+msgid "NUEVA ITALIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_08
+msgid "NUEVA LONDRES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_22
+msgid "NUEVA TOLEDO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_taxpayer_type__2
+msgid "No Contribuyente"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__name
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_fantasy_name
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_fantasy_name
+msgid "Nombre comercial o de fantasía"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_fantasy_name
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_fantasy_name
+msgid "Nombre de Fantasía"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_form
+msgid "Nombre de Fantasía..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_neighborhood_name
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_neighborhood_name
+msgid "Nombre del Barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__name
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_neighborhood_name
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_neighborhood_name
+msgid "Nombre del barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_doc_number
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_doc_number
+msgid "Número de Documento"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_doc_number
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_doc_number
+msgid "Número de documento de identidad para no contribuyentes (SIFEN D025)"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_17
+msgid "OBLIGADO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_01
+msgid "PARAGUARÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_11
+msgid "PASO BARRETO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_11
+msgid "PASO DE PATRIA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_17
+msgid "PASO YOBAI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_13_01
+msgid "PEDRO JUAN CABALLERO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_01
+msgid "PILAR"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_29
+msgid "PIRAPÓ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_09
+msgid "PIRAYÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_14
+msgid "PIRIBEBUY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_02
+msgid "PRESIDENTE FRANCO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_15
+msgid "PRIMERO DE MARZO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_17_02
+msgid "PUERTO CASADO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_03
+msgid "PUERTO PINASCO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields.selection,name:l10n_py_base.selection__res_partner__l10n_py_doc_type__2
+#: model:l10n_latam.identification.type,name:l10n_py_base.it_pasaporte
+msgid "Pasaporte"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_l10n_py_neighborhood__country_id
+msgid "País"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_l10n_py_neighborhood__country_id
+msgid "País al que pertenece el barrio"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.view_l10n_py_neighborhood_search
+msgid "Por Ciudad"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.view_l10n_py_neighborhood_search
+msgid "Por Departamento"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_10
+msgid "QUIINDY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_11
+msgid "QUYQUYHÓ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_13
+msgid "R.I. 3 CORRALES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_14
+msgid "RAÚL ARSENIO OVIEDO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_07
+msgid "REPATRIACIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_12
+msgid "ROQUE GONZÁLEZ DE SANTA CRUZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_ruc
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_ruc
+#: model:l10n_latam.identification.type,name:l10n_py_base.it_ruc
+msgid "RUC"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_ruc
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_ruc
+msgid "Registro Único del Contribuyente (sin dígito verificador)"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_01
+msgid "SALTO DEL GUAIRÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_18
+msgid "SAN ALBERTO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_10
+msgid "SAN ALFREDO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_13
+msgid "SAN ANTONIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_16
+msgid "SAN BERNARDINO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_05
+msgid "SAN CARLOS DEL APA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_19
+msgid "SAN COSME Y DAMIÁN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_12
+msgid "SAN CRISTÓBAL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_08
+msgid "SAN ESTANISLAO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_03
+msgid "SAN IGNACIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_09
+msgid "SAN JOAQUÍN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_10
+msgid "SAN JOSÉ DE LOS ARROYOS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_20
+msgid "SAN JOSÉ OBRERO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_01
+msgid "SAN JUAN BAUTISTA DE LAS MISIONES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_12
+msgid "SAN JUAN BAUTISTA DE ÑEEMBUCÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_28
+msgid "SAN JUAN DEL PARANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_07
+msgid "SAN JUAN NEPOMUCENO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_14
+msgid "SAN LORENZO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_06
+msgid "SAN LÁZARO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_04
+msgid "SAN MIGUEL"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_09
+msgid "SAN PABLO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_05
+msgid "SAN PATRICIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_20
+msgid "SAN PEDRO DEL PARANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_01
+msgid "SAN PEDRO DEL YCUAMANDYYÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_21
+msgid "SAN RAFAEL DEL PARANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_12
+msgid "SAN ROQUE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_14
+msgid "SAN SALVADOR"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_21
+msgid "SAN VICENTE PANCHOLO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_17
+msgid "SANTA ELENA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_20
+msgid "SANTA FE DEL PARANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_06
+msgid "SANTA MARÍA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_13
+msgid "SANTA MARÍA DE LA ASUNCIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_13
+msgid "SANTA RITA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_07
+msgid "SANTA ROSA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_18
+msgid "SANTA ROSA DEL AGUARAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_05
+msgid "SANTA ROSA DEL MBUTUY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_15
+msgid "SANTA ROSA DEL MONDAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_08
+msgid "SANTIAGO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_00_15
+msgid "SANTÍSIMA TRINIDAD"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_13
+msgid "SAPUCÁI"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_09
+msgid "SARGENTO JOSÉ FÉLIX LÓPEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_19
+msgid "SIMÓN BOLIVAR"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "State..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Street number..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Street..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_13
+msgid "TACUARAS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_10
+msgid "TACUATÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_21
+msgid "TAVAPY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_08
+msgid "TAVAÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_18
+msgid "TEBICUARY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_14
+msgid "TEBICUARY-MÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_21
+msgid "TEMBIAPORÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_08
+msgid "TENIENTE ESTEBAN MARTÍNEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_18
+msgid "TOBATÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_24
+msgid "TOMÁS ROMERO PEREIRA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_22
+msgid "TRINIDAD"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_07
+msgid "TTE. 1° MANUEL IRALA FERNÁNDEZ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_taxpayer_type
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_taxpayer_type
+msgid "Tipo de Contribuyente"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_partner__l10n_py_doc_type
+#: model:ir.model.fields,field_description:l10n_py_base.field_res_users__l10n_py_doc_type
+msgid "Tipo de Documento de Identidad"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_taxpayer_type
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_taxpayer_type
+msgid "Tipo de contribuyente según la SET"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:ir.model.fields,help:l10n_py_base.field_res_partner__l10n_py_doc_type
+#: model:ir.model.fields,help:l10n_py_base.field_res_users__l10n_py_doc_type
+msgid "Tipo de documento de identidad para no contribuyentes (SIFEN D024)"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_11
+msgid "UNIÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_03_19
+msgid "VALENZUELA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_20
+msgid "VAQUERÍA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_03
+msgid "VILLA CURUGUATY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_13
+msgid "VILLA DEL ROSARIO"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_15
+msgid "VILLA ELISA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_09
+msgid "VILLA FLORIDA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_14
+msgid "VILLA FRANCA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_15_04
+msgid "VILLA HAYES"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_15
+msgid "VILLA OLIVA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_04
+msgid "VILLA YGATIMÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_12_16
+msgid "VILLALBÍN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_01
+msgid "VILLARRICA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_16
+msgid "VILLETA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_08_10
+msgid "YABEBYRY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_15
+msgid "YAGUARÓN"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_11
+msgid "YASY CAÑY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_15
+msgid "YATAITY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_15
+msgid "YATAITY DEL NORTE"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_07_27
+msgid "YATYTAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_13
+msgid "YBY PYTÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_01_07
+msgid "YBY YAÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_16
+msgid "YBYCUÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_12
+msgid "YBYRAROBANÁ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_09_17
+msgid "YBYTYMÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_09
+msgid "YEGROS"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_09
+msgid "YGUAZÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_05_11
+msgid "YHÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_17
+msgid "YPACARAÍ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_18
+msgid "YPANÉ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_14_06
+msgid "YPEJHÚ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_02_19
+msgid "YRYBUCUA"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_06_10
+msgid "YUTY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_13_04
+msgid "ZANJA PYTÃ"
+msgstr ""
+
+#. module: l10n_py_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_base.l10n_py_base_res_partner_address
+msgid "Zip code..."
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_10_08
+msgid "ÑACUNDAY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_11_12
+msgid "ÑEMBY"
+msgstr ""
+
+#. module: l10n_py_base
+#: model:res.city,name:l10n_py_base.city_py_04_13
+msgid "ÑUMÍ"
+msgstr ""

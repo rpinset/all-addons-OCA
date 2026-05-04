@@ -5,7 +5,7 @@
 {
     "name": "Point of Sale - Extra Company Info",
     "summary": "Add extra company infos on the ticket",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Sales/Point Of Sale",
     "website": "https://github.com/OCA/pos",
     "author": "GRAP, Odoo Community Association (OCA)",

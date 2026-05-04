@@ -1,6 +1,6 @@
 # Build report — `16.0`
 
-Generated 2026-05-01 04:46 UTC
+Generated 2026-05-04 15:33 UTC
 
 ## Skipped repos
 
@@ -53,7 +53,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | `no_module` | No directory with __manifest__.py at repo root |
@@ -93,6 +92,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [resource](https://github.com/OCA/resource) | `no_module` | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
+| [route-planning](https://github.com/OCA/route-planning) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Configure EDI fiscal fields on the demo company -->
+    <record id="base.main_company" model="res.company">
+        <field name="l10n_py_ruc">80009401</field>
+        <field name="l10n_py_trade_name">Empresa Demo PY</field>
+        <field name="l10n_py_economic_activity">Comercio al por mayor</field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Extend base connector form for SIFEN provider -->
+    <record id="view_edi_connector_form_sifen" model="ir.ui.view">
+        <field name="name">l10n_py.edi.connector.form.sifen</field>
+        <field name="model">l10n_py.edi.connector</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_edi_connector_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='credentials']" position="inside">
+                <group
+                    attrs="{'invisible': [('provider_type', '!=', 'sifen')]}"
+                    string="SIFEN"
+                >
+                    <p colspan="2">
+                        El certificado digital PKCS12 se configura en la ficha de la empresa.
+                    </p>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

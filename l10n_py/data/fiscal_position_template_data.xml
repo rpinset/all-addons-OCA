@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Fiscal Position: Compras - destinadas a generar operaciones no gravadas o exentas -->
+    <record
+        id="py_fiscal_position_compras_no_gravadas_exentas"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field
+            name="name"
+        >Compras - destinadas a generar operaciones no gravadas o exentas</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Facturas de proveedores registrados fuera de plazo -->
+    <record
+        id="py_fiscal_position_compras_fuera_plazo"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field
+            name="name"
+        >Compras - Facturas de proveedores registrados fuera de plazo</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Gastos rechazados -->
+    <record
+        id="py_fiscal_position_compras_gastos_rechazados"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Compras - Gastos rechazados</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Entregas gratuitas (premios, bonificaciones, etc.) recibidos -->
+    <record
+        id="py_fiscal_position_compras_entregas_gratuitas"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field
+            name="name"
+        >Compras - Entregas gratuitas (premios, bonificaciones, etc.) recibidos</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Otros -->
+    <record
+        id="py_fiscal_position_compras_otros"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Compras - Otros</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Activo Fijo -->
+    <record
+        id="py_fiscal_position_compras_activo_fijo"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Compras - Activo Fijo</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Exentas -->
+    <record
+        id="py_fiscal_position_compras_exentas"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Compras - Exentas</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position Tax Mapping: Compras - Exentas (IVA 10% -> Exento) -->
+    <record
+        id="py_fiscal_position_compras_exentas_tax_10"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="py_fiscal_position_compras_exentas" />
+        <field name="tax_src_id" ref="l10n_py.py_tax_vat_10_compras" />
+        <field name="tax_dest_id" ref="l10n_py.py_tax_vat_exento_compras" />
+    </record>
+
+    <!-- Fiscal Position Tax Mapping: Compras - Exentas (IVA 5% -> Exento) -->
+    <record
+        id="py_fiscal_position_compras_exentas_tax_5"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="py_fiscal_position_compras_exentas" />
+        <field name="tax_src_id" ref="l10n_py.py_tax_vat_5_compras" />
+        <field name="tax_dest_id" ref="l10n_py.py_tax_vat_exento_compras" />
+    </record>
+
+    <!-- Fiscal Position: Compras - Supermercado -->
+    <record
+        id="py_fiscal_position_compras_supermercado"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Compras - Supermercado</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position: Ventas - Exentas -->
+    <record
+        id="py_fiscal_position_ventas_exentas"
+        model="account.fiscal.position.template"
+    >
+        <field name="chart_template_id" ref="l10n_py.py_chart_template" />
+        <field name="name">Ventas - Exentas</field>
+        <field name="country_id" ref="base.py" />
+        <field name="auto_apply" eval="False" />
+    </record>
+
+    <!-- Fiscal Position Tax Mapping: Ventas - Exentas (IVA 10% -> Exento) -->
+    <record
+        id="py_fiscal_position_ventas_exentas_tax_10"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="py_fiscal_position_ventas_exentas" />
+        <field name="tax_src_id" ref="l10n_py.py_tax_vat_10_ventas" />
+        <field name="tax_dest_id" ref="l10n_py.py_tax_vat_exento_ventas" />
+    </record>
+
+    <!-- Fiscal Position Tax Mapping: Ventas - Exentas (IVA 5% -> Exento) -->
+    <record
+        id="py_fiscal_position_ventas_exentas_tax_5"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="py_fiscal_position_ventas_exentas" />
+        <field name="tax_src_id" ref="l10n_py.py_tax_vat_5_ventas" />
+        <field name="tax_dest_id" ref="l10n_py.py_tax_vat_exento_ventas" />
+    </record>
+</odoo>

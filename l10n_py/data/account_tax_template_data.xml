@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- IVA Venta 10% -->
+    <record id="py_tax_vat_10_ventas" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">IVA 10%</field>
+        <field name="description">IVA 10%</field>
+        <field name="sequence">1</field>
+        <field eval="10" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_iva_10" />
+        <field name="type_tax_use">sale</field>
+    </record>
+
+    <!-- IVA Compra 10% -->
+    <record id="py_tax_vat_10_compras" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">IVA 10%</field>
+        <field name="description">IVA 10%</field>
+        <field name="sequence">1</field>
+        <field eval="10" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_iva_10" />
+        <field name="type_tax_use">purchase</field>
+    </record>
+
+    <!-- IVA Venta 5% -->
+    <record id="py_tax_vat_5_ventas" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">IVA 5%</field>
+        <field name="description">IVA 5%</field>
+        <field name="sequence">2</field>
+        <field eval="5" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_iva_5" />
+        <field name="type_tax_use">sale</field>
+    </record>
+
+    <!-- IVA Compra 5% -->
+    <record id="py_tax_vat_5_compras" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">IVA 5%</field>
+        <field name="description">IVA 5%</field>
+        <field name="sequence">2</field>
+        <field eval="5" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_iva_5" />
+        <field name="type_tax_use">purchase</field>
+    </record>
+
+    <!-- IVA Exento Venta -->
+    <record id="py_tax_vat_exento_ventas" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">Exento</field>
+        <field name="description">Exento</field>
+        <field name="sequence">3</field>
+        <field eval="0" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_exempt" />
+        <field name="type_tax_use">sale</field>
+    </record>
+
+    <!-- IVA Exento Compra -->
+    <record id="py_tax_vat_exento_compras" model="account.tax.template">
+        <field name="chart_template_id" ref="py_chart_template" />
+        <field name="name">Exento</field>
+        <field name="description">Exento</field>
+        <field name="sequence">3</field>
+        <field eval="0" name="amount" />
+        <field name="amount_type">percent</field>
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_30503'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {'repartition_type': 'base'}),
+            (0,0, {
+                'repartition_type': 'tax',
+                'account_id': ref('account_py_220102'),
+            }),
+        ]"
+        />
+        <field name="tax_group_id" ref="tax_group_exempt" />
+        <field name="type_tax_use">purchase</field>
+    </record>
+</odoo>

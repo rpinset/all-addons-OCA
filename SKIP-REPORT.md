@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-05-01 04:46 UTC
+Generated 2026-05-04 15:33 UTC
 
 Total skipped: **112**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **35**
+Count: **36**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -37,6 +37,7 @@ Count: **35**
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [16.0](https://github.com/OCA/pylint-odoo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [16.0](https://github.com/OCA/repo-maintainer/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [16.0](https://github.com/OCA/repo-maintainer-conf/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [route-planning](https://github.com/OCA/route-planning) | [16.0](https://github.com/OCA/route-planning/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [16.0](https://github.com/OCA/shopfloor-app/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [16.0](https://github.com/OCA/shoppingfeed/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [16.0](https://github.com/OCA/stock-logistics-putaway/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
@@ -48,7 +49,7 @@ Count: **35**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **77**
+Count: **76**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -90,7 +91,6 @@ Count: **77**
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | [16.0](https://github.com/OCA/l10n-macedonia/tree/16.0) | No directory with __manifest__.py at repo root |
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | [16.0](https://github.com/OCA/l10n-morocco/tree/16.0) | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | [16.0](https://github.com/OCA/l10n-norway/tree/16.0) | No directory with __manifest__.py at repo root |
-| [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | [16.0](https://github.com/OCA/l10n-paraguay/tree/16.0) | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | [16.0](https://github.com/OCA/l10n-peru/tree/16.0) | No directory with __manifest__.py at repo root |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | [16.0](https://github.com/OCA/l10n-russia/tree/16.0) | No directory with __manifest__.py at repo root |
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | [16.0](https://github.com/OCA/l10n-slovenia/tree/16.0) | No directory with __manifest__.py at repo root |

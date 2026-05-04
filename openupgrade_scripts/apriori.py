@@ -36,6 +36,7 @@ renamed_modules = {
     "res_partner_category_multi_company": "partner_category_multi_company",
     # OCA/pos
     "pos_cashback_warning": "pos_cashback",
+    "pos_sale_order_load": "pos_picking_load",
     # OCA/product-attribute
     "product_packaging_type": "product_packaging_level",
     # OCA/project

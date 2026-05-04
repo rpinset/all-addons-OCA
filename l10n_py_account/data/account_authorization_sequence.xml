@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Secuencia para timbrados -->
+    <record id="seq_account_authorization" model="ir.sequence">
+        <field name="name">Account Authorization</field>
+        <field name="code">account.authorization</field>
+        <field name="prefix">AUTH-</field>
+        <field name="padding">5</field>
+        <field name="company_id" ref="base.main_company" />
+    </record>
+</odoo>

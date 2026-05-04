@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- ============================================================ -->
+    <!-- Timbrado para Notas de Remisión                              -->
+    <!-- ============================================================ -->
+
+    <record id="demo_authorization_nre" model="account.authorization">
+        <field name="name">77889900</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=15)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=350)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">5000</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nr" />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Notas de Remisión Electrónicas (NRE — código 7)              -->
+    <!-- Requieren motivo de remisión (E501)                          -->
+    <!-- ============================================================ -->
+
+    <!-- NRE 1: Traslado por venta con FE asociada -->
+    <record id="demo_nre_traslado_venta" model="account.move">
+        <field name="partner_id" ref="l10n_py_account.partner_contribuyente_general" />
+        <field name="move_type">out_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-20'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nr" />
+        <field name="l10n_py_authorization_id" ref="demo_authorization_nre" />
+        <field name="l10n_py_nre_motive">1</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_10_electronica'),
+                'quantity': 3,
+                'price_unit': 5500000.0,
+                'name': 'Traslado Notebook Dell Inspiron',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Documento asociado electrónico para NRE 1 (FE de venta) -->
+    <record id="demo_nre_venta_assoc_doc" model="l10n_py.associated.document">
+        <field name="move_id" ref="demo_nre_traslado_venta" />
+        <field name="association_type">1</field>
+        <field name="cdc">01800123456001001000000042025010412345678904</field>
+    </record>
+
+    <!-- NRE 2: Traslado por consignación (sin FE, con fecha estimada) -->
+    <record id="demo_nre_consignacion" model="account.move">
+        <field
+            name="partner_id"
+            ref="l10n_py_account.partner_contribuyente_servicios"
+        />
+        <field name="move_type">out_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-21'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nr" />
+        <field name="l10n_py_authorization_id" ref="demo_authorization_nre" />
+        <field name="l10n_py_nre_motive">2</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_5_alimento'),
+                'quantity': 200,
+                'price_unit': 52500.0,
+                'name': 'Consignación Yerba Mate Kurupí 1kg',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- NRE 3: Traslado entre locales (mismo RUC) -->
+    <record id="demo_nre_entre_locales" model="account.move">
+        <field name="partner_id" ref="l10n_py_account.partner_sucursal_propia" />
+        <field name="move_type">out_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-22'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nr" />
+        <field name="l10n_py_authorization_id" ref="demo_authorization_nre" />
+        <field name="l10n_py_nre_motive">5</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_10_electronica'),
+                'quantity': 10,
+                'price_unit': 5500000.0,
+                'name': 'Transferencia Notebook Dell a Sucursal',
+            }),
+        ]"
+        />
+    </record>
+
+</odoo>

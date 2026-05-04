@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- ============================================================ -->
+    <!-- Inutilización de Números — Ejemplos demo                     -->
+    <!-- ============================================================ -->
+
+    <!-- Inutilización de rango pequeño (números dañados en impresión) -->
+    <record id="demo_inutilization_damaged" model="l10n_py.number.inutilization">
+        <field name="authorization_id" ref="l10n_py_account.demo_authorization_001" />
+        <field name="number_from">9990</field>
+        <field name="number_to">10000</field>
+        <field
+            name="motive"
+        >Números reservados para pruebas del sistema — no usar en producción</field>
+    </record>
+
+    <!-- Inutilización de rango en timbrado por vencer -->
+    <record id="demo_inutilization_expiring" model="l10n_py.number.inutilization">
+        <field
+            name="authorization_id"
+            ref="l10n_py_account.demo_authorization_to_expire"
+        />
+        <field name="number_from">2900</field>
+        <field name="number_to">3000</field>
+        <field
+            name="motive"
+        >Números restantes del timbrado próximo a vencer — inutilizados preventivamente</field>
+    </record>
+
+</odoo>

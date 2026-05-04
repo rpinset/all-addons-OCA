@@ -1,0 +1,223 @@
+id,name,code,account_type,chart_template_id:id,reconcile
+account_py_101,RECAUDACIONES A DEPOSITAR,1.01.01.01,asset_current,py_chart_template,False
+account_py_102,CAJA,1.01.01.02,asset_current,py_chart_template,False
+account_py_103,FONDOS FIJOS,1.01.01.03,asset_current,py_chart_template,False
+account_py_104,BANCOS,1.01.01.04,asset_current,py_chart_template,True
+account_py_201,INVERSIONES FINANCIERAS,1.01.02.01,asset_current,py_chart_template,False
+account_py_202,INVERSIONES EN ENTIDADES VINCULADAS,1.01.02.02,asset_current,py_chart_template,False
+account_py_203,OTRAS INVERSIONES,1.01.02.03,asset_current,py_chart_template,False
+account_py_204,"INTERESES, REGALÍAS Y OTROS RENDIMIENTOS DE INVERSIONES",1.01.02.04,asset_current,py_chart_template,False
+account_py_301,DEUDORES POR VENTAS,1.01.03.01,asset_receivable,py_chart_template,True
+account_py_302,DEUDORES POR PRÉSTAMOS,1.01.03.02,asset_current,py_chart_template,True
+account_py_303,CUENTAS A COBRAR A DIRECTORES Y FUNCIONARIOS,1.01.03.03,asset_current,py_chart_template,True
+account_py_304,CUENTAS A COBRAR A SOCIOS O A ENTIDADES VINCULADAS,1.01.03.04,asset_current,py_chart_template,True
+account_py_30501,ANTICIPOS Y RETENCIONES DE IMPUESTO A LA RENTA,1.01.03.05.01,asset_current,py_chart_template,False
+account_py_30502,RETENCIONES DE IVA,1.01.03.05.02,asset_current,py_chart_template,False
+account_py_30503,IVA - CRÉDITO FISCAL,1.01.03.05.03,asset_current,py_chart_template,False
+account_py_30504,IVA - CRÉDITO FISCAL - RÉGIMEN DE TURISMO,1.01.03.05.04,asset_current,py_chart_template,False
+account_py_30601,ANTICIPOS A PROVEEDORES LOCALES,1.01.03.06.01,asset_current,py_chart_template,False
+account_py_30602,ANTICIPOS A PROVEEDORES DEL EXTERIOR,1.01.03.06.02,asset_current,py_chart_template,False
+account_py_3099,PREVISIÓN PARA CRÉDITOS DE DUDOSO COBRO,1.01.03.99,asset_current,py_chart_template,False
+account_py_40101,MERCADERÍAS GRAVADAS POR EL IVA AL 10%,1.01.04.01.01,asset_current,py_chart_template,False
+account_py_40102,MERCADERÍAS GRAVADAS POR EL IVA AL 5%,1.01.04.01.02,asset_current,py_chart_template,False
+account_py_40103,MERCADERÍAS EXENTAS DEL IVA,1.01.04.01.03,asset_current,py_chart_template,False
+account_py_40201,MERCADERÍAS RÉGIMEN DE TURISMO,1.01.04.02.01,asset_current,py_chart_template,False
+account_py_40202,MERCADERÍAS ZONA FRANCA,1.01.04.02.02,asset_current,py_chart_template,False
+account_py_40203,MERCADERÍAS RÉGIMEN DE MAQUILA,1.01.04.02.03,asset_current,py_chart_template,False
+account_py_40204,MERCADERÍAS OTROS REGÍMENES ESPECIALES,1.01.04.02.04,asset_current,py_chart_template,False
+account_py_40301,PRODUCTOS TERMINADOS GRAVADOS POR EL IVA AL 10%,1.01.04.03.01,asset_current,py_chart_template,False
+account_py_40302,PRODUCTOS TERMINADOS GRAVADOS POR EL IVA AL 5%,1.01.04.03.02,asset_current,py_chart_template,False
+account_py_40303,PRODUCTOS TERMINADOS EXENTOS DEL IVA,1.01.04.03.03,asset_current,py_chart_template,False
+account_py_404,PRODUCTOS EN PROCESO,1.01.04.04,asset_current,py_chart_template,False
+account_py_405,MATERIAS PRIMAS,1.01.04.05,asset_current,py_chart_template,False
+account_py_406,"MATERIALES, SUMINISTROS Y REPUESTOS",1.01.04.06,asset_current,py_chart_template,False
+account_py_407,PRODUCTOS AGRÍCOLAS,1.01.04.07,asset_current,py_chart_template,False
+account_py_408,PRODUCTOS FORESTALES,1.01.04.08,asset_current,py_chart_template,False
+account_py_409,ACTIVOS BIOLÓGICOS EN PRODUCCIÓN,1.01.04.09,asset_current,py_chart_template,False
+account_py_4010,ACTIVOS BIOLÓGICOS EN DESARROLLO,1.01.04.10,asset_current,py_chart_template,False
+account_py_4011,IMPORTACIONES EN CURSO,1.01.04.11,asset_current,py_chart_template,False
+account_py_4099,PREVISIÓN POR DEVALUACIÓN DE INVENTARIOS,1.01.04.99,asset_current,py_chart_template,False
+account_py_501,ALQUILERES PAGADOS POR ADELANTADO,1.01.05.01,asset_prepayments,py_chart_template,False
+account_py_502,SEGUROS A DEVENGAR,1.01.05.02,asset_prepayments,py_chart_template,False
+account_py_1001,DEUDORES POR VENTAS L/P,1.02.01.01,asset_non_current,py_chart_template,True
+account_py_1002,DEUDORES POR PRÉSTAMOS L/P,1.02.01.02,asset_non_current,py_chart_template,True
+account_py_1003,CUENTAS A COBRAR A DIRECTORES Y FUNCIONARIOS L/P,1.02.01.03,asset_non_current,py_chart_template,True
+account_py_1004,CUENTAS A COBRAR A SOCIOS O ENTIDADES VINCULADAS L/P,1.02.01.04,asset_non_current,py_chart_template,True
+account_py_1005,DEUDORES EN GESTIÓN DE COBRO – MOROSOS O SIMILARES,1.02.01.05,asset_non_current,py_chart_template,True
+account_py_100601,ANTICIPOS A PROVEEDORES LOCALES L/P,1.02.01.06.01,asset_non_current,py_chart_template,False
+account_py_100602,ANTICIPOS A PROVEEDORES DEL EXTERIOR L/P,1.02.01.06.02,asset_non_current,py_chart_template,False
+account_py_1007,CRÉDITOS POR IMPUESTOS DIFERIDOS,1.02.01.07,asset_non_current,py_chart_template,False
+account_py_10099,PREVISIÓN PARA CRÉDITOS DE DUDOSO COBRO L/P,1.02.01.99,asset_non_current,py_chart_template,False
+account_py_1101,ACTIVOS BIOLÓGICOS EN PRODUCCIÓN L/P,1.02.02.01,asset_non_current,py_chart_template,False
+account_py_1102,ACTIVOS BIOLÓGICOS EN DESARROLLO L/P,1.02.02.02,asset_non_current,py_chart_template,False
+account_py_1199,PREVISIÓN POR DEVALUACIÓN DE ACTIVOS BIOLÓGICOS,1.02.02.99,asset_non_current,py_chart_template,False
+account_py_1201,INVERSIONES FINANCIERAS L/P,1.02.03.01,asset_non_current,py_chart_template,False
+account_py_1202,INVERSIONES EN ENTIDADES VINCULADAS L/P,1.02.03.02,asset_non_current,py_chart_template,False
+account_py_1203,INVERSIONES INMOBILIARIAS,1.02.03.03,asset_non_current,py_chart_template,False
+account_py_1204,OTRAS INVERSIONES L/P,1.02.03.04,asset_non_current,py_chart_template,False
+account_py_1205,"INTERESES, REGALÍAS Y OTROS RENDIMIENTOS DE INVERSIONES L/P",1.02.03.05,asset_non_current,py_chart_template,False
+account_py_1299,PREVISIÓN POR DEVALUACIÓN DE INVERSIONES,1.02.03.99,asset_non_current,py_chart_template,False
+account_py_1301,INMUEBLES,1.02.04.01,asset_fixed,py_chart_template,False
+account_py_1302,RODADOS / TRANSPORTES,1.02.04.02,asset_fixed,py_chart_template,False
+account_py_1303,"MUEBLES, ÚTILES Y ENSERES",1.02.04.03,asset_fixed,py_chart_template,False
+account_py_1304,MAQUINARIAS,1.02.04.04,asset_fixed,py_chart_template,False
+account_py_1305,EQUIPOS,1.02.04.05,asset_fixed,py_chart_template,False
+account_py_1306,HERRAMIENTAS,1.02.04.06,asset_fixed,py_chart_template,False
+account_py_1307,BIENES FUERA DE OPERACIÓN,1.02.04.07,asset_fixed,py_chart_template,False
+account_py_1308,MEJORAS EN PREDIO AJENO,1.02.04.08,asset_fixed,py_chart_template,False
+account_py_1397,BIENES INCORPORADOS AL AMPARO DE LA LEY N° 60/90,1.02.04.97,asset_fixed,py_chart_template,False
+account_py_1398,BIENES EN ARRENDAMIENTO FINANCIERO,1.02.04.98,asset_fixed,py_chart_template,False
+account_py_1399,DEPRECIACIÓN ACUMULADA,1.02.04.99,asset_fixed,py_chart_template,False
+account_py_1401,DERECHOS FIDUCIARIOS,1.02.05.01,asset_non_current,py_chart_template,False
+account_py_1501,GASTOS DE CONSTITUCIÓN,1.02.06.01,asset_non_current,py_chart_template,False
+account_py_1502,GASTOS DE ORGANIZACIÓN,1.02.06.02,asset_non_current,py_chart_template,False
+account_py_1503,GASTOS DE DESARROLLO,1.02.06.03,asset_non_current,py_chart_template,False
+account_py_1504,GASTOS DE PROYECTOS DE INVERSIÓN,1.02.06.04,asset_non_current,py_chart_template,False
+account_py_1599,AMORTIZACIÓN ACUMULADA CARGOS DIFERIDOS,1.02.06.99,asset_non_current,py_chart_template,False
+account_py_1601,"LICENCIAS, MARCAS Y PATENTES",1.02.07.01,asset_non_current,py_chart_template,False
+account_py_1602,FRANQUICIAS,1.02.07.02,asset_non_current,py_chart_template,False
+account_py_1699,AMORTIZACIÓN ACUMULADA INTANGIBLES,1.02.07.99,asset_non_current,py_chart_template,False
+account_py_2001,PROVEEDORES LOCALES,2.01.01.01,liability_payable,py_chart_template,True
+account_py_2002,PROVEEDORES DEL EXTERIOR,2.01.01.02,liability_payable,py_chart_template,True
+account_py_2003,INTERESES A PAGAR A PROVEEDORES,2.01.01.03,liability_current,py_chart_template,False
+account_py_2004,OTROS ACREEDORES,2.01.01.04,liability_current,py_chart_template,False
+account_py_2101,PRÉSTAMOS DE BANCOS Y OTRAS ENTIDADES FINANCIERAS,2.01.02.01,liability_current,py_chart_template,False
+account_py_2102,"PRÉSTAMOS DEL DUEÑO, SOCIOS O ENTIDADES VINCULADAS",2.01.02.02,liability_current,py_chart_template,False
+account_py_2103,ARRENDAMIENTOS FINANCIEROS,2.01.02.03,liability_current,py_chart_template,False
+account_py_2104,OTROS PRÉSTAMOS A PAGAR,2.01.02.04,liability_current,py_chart_template,False
+account_py_2105,INTERESES A PAGAR,2.01.02.05,liability_current,py_chart_template,False
+account_py_220101,IMPUESTO A LA RENTA A PAGAR,2.01.03.01.01,liability_current,py_chart_template,False
+account_py_220102,IVA A PAGAR,2.01.03.01.02,liability_current,py_chart_template,False
+account_py_220103,RETENCIONES DE IMPUESTOS A INGRESAR,2.01.03.01.03,liability_current,py_chart_template,False
+account_py_2202,OBLIGACIONES LABORALES Y CARGAS SOCIALES,2.01.03.02,liability_current,py_chart_template,False
+account_py_2203,DIVIDENDOS A PAGAR,2.01.03.03,liability_current,py_chart_template,False
+account_py_2204,PASIVOS FIDUCIARIOS,2.01.03.04,liability_current,py_chart_template,False
+account_py_2301,OBLIGACIONES POR GARANTÍAS OTORGADAS,2.01.04.01,liability_current,py_chart_template,False
+account_py_2302,OBLIGACIONES LEGALES POR LITIGIOS,2.01.04.02,liability_current,py_chart_template,False
+account_py_2303,PROVISIÓN PARA BENEFICIOS A EMPLEADOS,2.01.04.03,liability_current,py_chart_template,False
+account_py_2401,ANTICIPOS DE CLIENTES,2.01.05.01,liability_current,py_chart_template,False
+account_py_2402,SUBVENCIONES,2.01.05.02,liability_current,py_chart_template,False
+account_py_2403,DERECHOS DE FIDELIZACIÓN DE CLIENTES,2.01.05.03,liability_current,py_chart_template,False
+account_py_2404,ALQUILERES COBRADOS POR ADELANTADO,2.01.05.04,liability_current,py_chart_template,False
+account_py_2501,PROVEEDORES LOCALES L/P,2.02.01.01,liability_non_current,py_chart_template,True
+account_py_2502,PROVEEDORES DEL EXTERIOR L/P,2.02.01.02,liability_non_current,py_chart_template,True
+account_py_2503,INTERESES A PAGAR A PROVEEDORES L/P,2.02.01.03,liability_non_current,py_chart_template,False
+account_py_2504,OTROS ACREEDORES L/P,2.02.01.04,liability_non_current,py_chart_template,False
+account_py_2601,PRÉSTAMOS DE BANCOS Y OTRAS ENTIDADES FINANCIERAS L/P,2.02.02.01,liability_non_current,py_chart_template,False
+account_py_2602,"PRÉSTAMOS DEL DUEÑO, SOCIOS O ENTIDADES VINCULADAS L/P",2.02.02.02,liability_non_current,py_chart_template,False
+account_py_2603,ARRENDAMIENTOS FINANCIEROS L/P,2.02.02.03,liability_non_current,py_chart_template,False
+account_py_2604,OTROS PRÉSTAMOS L/P,2.02.02.04,liability_non_current,py_chart_template,False
+account_py_2605,INTERESES A PAGAR L/P,2.02.02.05,liability_non_current,py_chart_template,False
+account_py_2701,PASIVOS POR IMPUESTOS DIFERIDOS,2.02.03.01,liability_non_current,py_chart_template,False
+account_py_2702,PASIVOS FIDUCIARIOS L/P,2.02.03.02,liability_non_current,py_chart_template,False
+account_py_2801,OBLIGACIONES POR GARANTÍAS OTORGADAS L/P,2.02.04.01,liability_non_current,py_chart_template,False
+account_py_2802,OBLIGACIONES LEGALES POR LITIGIOS PENDIENTES,2.02.04.02,liability_non_current,py_chart_template,False
+account_py_2803,PROVISIONES PARA BENEFICIOS A EMPLEADOS L/P,2.02.04.03,liability_non_current,py_chart_template,False
+account_py_2901,ANTICIPOS DE CLIENTES L/P,2.02.05.01,liability_non_current,py_chart_template,False
+account_py_2902,SUBVENCIONES L/P,2.02.05.02,liability_non_current,py_chart_template,False
+account_py_2903,DERECHO DE FIDELIZACIÓN DE CLIENTES L/P,2.02.05.03,liability_non_current,py_chart_template,False
+account_py_2904,ALQUILERES COBRADOS POR ADELANTADO L/P,2.02.05.04,liability_non_current,py_chart_template,False
+account_py_3001,CAPITAL SUSCRIPTO,3.01.01.01,equity,py_chart_template,False
+account_py_3002,CAPITAL A INTEGRAR,3.01.01.02,equity,py_chart_template,False
+account_py_3101,RESERVA LEGAL,3.02.01,equity,py_chart_template,False
+account_py_320201,RESERVA DE REVALÚO FISCAL,3.02.02.01,equity,py_chart_template,False
+account_py_320202,RESERVA DE REVALÚO TÉCNICO,3.02.02.02,equity,py_chart_template,False
+account_py_3203,OTRAS RESERVAS,3.02.03,equity,py_chart_template,False
+account_py_3301,RESULTADOS ACUMULADOS,3.03.01,equity,py_chart_template,False
+account_py_3302,RESULTADO DEL EJERCICIO,3.03.02,equity_unaffected,py_chart_template,False
+account_py_40101_income,VENTAS DE MERCADERÍAS GRAVADAS POR EL IVA,4.01.01,income,py_chart_template,False
+account_py_40102_income,VENTAS DE MERCADERÍAS EXENTAS DEL IVA,4.01.02,income,py_chart_template,False
+account_py_40201_income,VENTAS DE SOJA Y SUS DERIVADOS,4.02.01,income,py_chart_template,False
+account_py_40202_income,VENTAS DE MAÍZ,4.02.02,income,py_chart_template,False
+account_py_40203_income,VENTAS DE TRIGO,4.02.03,income,py_chart_template,False
+account_py_40204_income,OTROS PRODUCTOS AGRÍCOLAS,4.02.04,income,py_chart_template,False
+account_py_403_income,VENTAS DE GANADO,4.03,income,py_chart_template,False
+account_py_404_income,VENTAS DE PRODUCTOS FRUTÍCOLAS Y HORTÍCOLAS,4.04,income,py_chart_template,False
+account_py_405_income,VENTAS DE PRODUCTOS DE LA EXPLOTACIÓN FORESTAL,4.05,income,py_chart_template,False
+account_py_406_income,EXPORTACIONES DE SOJA Y SUS DERIVADOS,4.06.01,income,py_chart_template,False
+account_py_40602_income,EXPORTACIONES DE OTROS PRODUCTOS AGRÍCOLAS,4.06.02,income,py_chart_template,False
+account_py_40701_income,EXPORTACIONES DE PRODUCTOS FARMACÉUTICOS,4.07.01,income,py_chart_template,False
+account_py_40702_income,EXPORTACIONES DE MAQUINARIAS Y EQUIPOS,4.07.02,income,py_chart_template,False
+account_py_40703_income,EXPORTACIONES DE OTROS PRODUCTOS INDUSTRIALIZADOS,4.07.03,income,py_chart_template,False
+account_py_408_income,EXPORTACIONES DE OTROS PRODUCTOS,4.08,income,py_chart_template,False
+account_py_409_income,VENTAS DE SERVICIOS GRAVADOS,4.09,income,py_chart_template,False
+account_py_41001_income,VENTAS RÉGIMEN DE TURISMO,4.10.01,income,py_chart_template,False
+account_py_41002_income,VENTAS ZONA FRANCA,4.10.02,income,py_chart_template,False
+account_py_41003_income,VENTAS RÉGIMEN DE MAQUILA,4.10.03,income,py_chart_template,False
+account_py_41004_income,VENTAS OTROS REGÍMENES ESPECIALES,4.10.04,income,py_chart_template,False
+account_py_411_income,OTRAS VENTAS EXENTAS DEL IVA,4.11,income,py_chart_template,False
+account_py_498_income,DESCUENTOS CONCEDIDOS,4.98,income,py_chart_template,False
+account_py_499_income,DEVOLUCIONES,4.99,income,py_chart_template,False
+account_py_50101_expense,COSTO DE MERCADERÍAS GRAVADAS POR EL IVA,5.01.01,expense,py_chart_template,False
+account_py_50102_expense,COSTO DE MERCADERÍAS EXENTAS DEL IVA,5.01.02,expense,py_chart_template,False
+account_py_50201_expense,COSTO DE VENTAS DE SOJA Y SUS DERIVADOS,5.02.01,expense,py_chart_template,False
+account_py_50202_expense,COSTO DE VENTAS DE MAÍZ,5.02.02,expense,py_chart_template,False
+account_py_50203_expense,COSTO DE VENTAS DE TRIGO,5.02.03,expense,py_chart_template,False
+account_py_50204_expense,COSTO DE VENTAS DE OTROS PRODUCTOS AGRÍCOLAS,5.02.04,expense,py_chart_template,False
+account_py_503_expense,COSTO DE VENTAS DE GANADO,5.03,expense,py_chart_template,False
+account_py_504_expense,COSTO DE VENTAS DE PRODUCTOS FRUTÍCOLAS Y HORTÍCOLAS,5.04,expense,py_chart_template,False
+account_py_505_expense,COSTO DE VENTAS DE PRODUCTOS DE LA EXPLOTACIÓN FORESTAL,5.05,expense,py_chart_template,False
+account_py_50601_expense,COSTO DE SOJA Y SUS DERIVADOS EXPORTADOS,5.06.01,expense,py_chart_template,False
+account_py_50602_expense,COSTO DE OTROS PRODUCTOS AGRÍCOLAS EXPORTADOS,5.06.02,expense,py_chart_template,False
+account_py_50701_expense,COSTO DE PRODUCTOS FARMACÉUTICOS EXPORTADOS,5.07.01,expense,py_chart_template,False
+account_py_50702_expense,COSTO DE MAQUINARIAS Y EQUIPOS EXPORTADOS,5.07.02,expense,py_chart_template,False
+account_py_50703_expense,COSTO DE OTROS PRODUCTOS INDUSTRIALIZADOS EXPORTADOS,5.07.03,expense,py_chart_template,False
+account_py_508_expense,COSTO DE OTROS PRODUCTOS EXPORTADOS,5.08,expense,py_chart_template,False
+account_py_509_expense,COSTO DE SERVICIOS GRAVADOS,5.09,expense,py_chart_template,False
+account_py_51001_expense,COSTO DE VENTAS RÉGIMEN DE TURISMO,5.10.01,expense,py_chart_template,False
+account_py_51002_expense,COSTO DE VENTAS ZONA FRANCA,5.10.02,expense,py_chart_template,False
+account_py_51003_expense,COSTO DE VENTAS RÉGIMEN DE MAQUILA,5.10.03,expense,py_chart_template,False
+account_py_51004_expense,COSTO DE VENTAS OTROS REGÍMENES ESPECIALES,5.10.04,expense,py_chart_template,False
+account_py_511_expense,COSTO DE VENTAS EXENTAS DEL IVA,5.11,expense,py_chart_template,False
+account_py_70101_income,INGRESOS POR PRODUCCIÓN Y/O TENENCIA DE BIENES DEL SECTOR AGRÍCOLA,7.01.01,income_other,py_chart_template,False
+account_py_70102_income,INGRESOS POR PRODUCCIÓN Y/O TENENCIA DE GANADO,7.01.02,income_other,py_chart_template,False
+account_py_70103_income,INGRESOS POR PRODUCCIÓN Y/O TENENCIA DE BIENES DE LA ACTIVIDAD FORESTAL,7.01.03,income_other,py_chart_template,False
+account_py_70201_expense,COSTO DE PRODUCCIÓN Y/O TENENCIA DE BIENES DEL SECTOR AGRÍCOLA,7.02.01,expense,py_chart_template,False
+account_py_70202_expense,COSTO DE PRODUCCIÓN Y/O TENENCIA DE GANADO,7.02.02,expense,py_chart_template,False
+account_py_70203_expense,COSTO DE PRODUCCIÓN Y/O TENENCIA DE BIENES DE LA ACTIVIDAD FORESTAL,7.02.03,expense,py_chart_template,False
+account_py_70204_expense,MERMAS Y MORTANDAD,7.02.04,expense,py_chart_template,False
+account_py_801_income,INTERESES GANADOS,8.01,income_other,py_chart_template,False
+account_py_802_income,COMISIONES COBRADAS,8.02,income_other,py_chart_template,False
+account_py_803_income,DESCUENTOS OBTENIDOS,8.03,income_other,py_chart_template,False
+account_py_804_income,SUBVENCIONES,8.04,income_other,py_chart_template,False
+account_py_805_income,RESULTADO POR DIFERENCIA DE CAMBIO,8.05,income_other,py_chart_template,False
+account_py_100101_expense,SUELDOS Y JORNALES,10.01.01,expense,py_chart_template,False
+account_py_100102_expense,APORTE PATRONAL,10.01.02,expense,py_chart_template,False
+account_py_100103_expense,OTROS BENEFICIOS AL PERSONAL,10.01.03,expense,py_chart_template,False
+account_py_1002_expense,COMISIONES PAGADAS SOBRE VENTAS,10.02,expense,py_chart_template,False
+account_py_1003_expense,VIÁTICOS A VENDEDORES,10.03,expense,py_chart_template,False
+account_py_1004_expense,PUBLICIDAD Y PROPAGANDA,10.04,expense,py_chart_template,False
+account_py_1005_expense,FLETES PAGADOS,10.05,expense,py_chart_template,False
+account_py_1099_expense,OTROS GASTOS DE VENTAS,10.99,expense,py_chart_template,False
+account_py_110101_expense,SUELDOS Y JORNALES ADM,11.01.01,expense,py_chart_template,False
+account_py_110102_expense,APORTE PATRONAL ADM,11.01.02,expense,py_chart_template,False
+account_py_110103_expense,OTROS BENEFICIOS AL PERSONAL ADM,11.01.03,expense,py_chart_template,False
+account_py_1102_expense,REMUNERACIÓN PERSONAL SUPERIOR,11.02,expense,py_chart_template,False
+account_py_1103_expense,GASTOS DE REPRESENTACIÓN,11.03,expense,py_chart_template,False
+account_py_1104_expense,HONORARIOS PROFESIONALES,11.04,expense,py_chart_template,False
+account_py_1105_expense,ALQUILERES,11.05,expense,py_chart_template,False
+account_py_1106_expense,"AGUA, LUZ, TELÉFONO E INTERNET",11.06,expense,py_chart_template,False
+account_py_1107_expense,MOVILIDAD,11.07,expense,py_chart_template,False
+account_py_1108_expense,COMBUSTIBLES Y LUBRICANTES,11.08,expense,py_chart_template,False
+account_py_1109_expense,REPARACIONES Y MANTENIMIENTOS,11.09,expense,py_chart_template,False
+account_py_1110_expense,SEGUROS PAGADOS,11.10,expense,py_chart_template,False
+account_py_1111_expense,ÚTILES DE OFICINA,11.11,expense,py_chart_template,False
+account_py_1112_expense,GASTOS PAGADOS EN EL EXTERIOR,11.12,expense,py_chart_template,False
+account_py_1113_expense,JUICIOS Y GASTOS JUDICIALES,11.13,expense,py_chart_template,False
+account_py_1114_expense,GASTOS DE COBRANZAS,11.14,expense,py_chart_template,False
+account_py_1115_expense,DONACIONES Y CONTRIBUCIONES,11.15,expense,py_chart_template,False
+account_py_1116_expense,COMISIONES Y GASTOS BANCARIOS OPERACIONALES,11.16,expense,py_chart_template,False
+account_py_1117_expense,"IMPUESTOS, PATENTES, TASAS Y OTRAS CONTRIBUCIONES",11.17,expense,py_chart_template,False
+account_py_1118_expense,MULTAS Y SANCIONES,11.18,expense,py_chart_template,False
+account_py_1301_expense,INTERESES PAGADOS A ENTIDADES BANCARIAS Y FINANCIERAS,13.01,expense,py_chart_template,False
+account_py_1302_expense,OTROS INTERESES PAGADOS,13.02,expense,py_chart_template,False
+account_py_1303_expense,COMISIONES Y GASTOS BANCARIOS SOBRE OPERACIONES CREDITICIAS,13.03,expense,py_chart_template,False
+account_py_1304_expense,RESULTADO POR DIFERENCIA DE CAMBIO,13.04,expense,py_chart_template,False
+account_py_1401_expense,DESAFECTACIÓN DE PREVISIONES,14.01,expense,py_chart_template,False
+account_py_1402_expense,CONSTITUCIÓN DE PREVISIONES,14.02,expense,py_chart_template,False
+account_py_1501_expense,DEPRECIACIONES DEL EJERCICIO,15.01,expense_depreciation,py_chart_template,False
+account_py_1502_expense,AMORTIZACIONES DEL EJERCICIO,15.02,expense_depreciation,py_chart_template,False
+account_py_1701_income,UTILIDAD/PÉRDIDA EN VENTA DE ACTIVOS FIJOS,17.01,income_other,py_chart_template,False
+account_py_1702_income,UTILIDAD/PÉRDIDA EN VENTA DE INVERSIONES,17.02,income_other,py_chart_template,False
+account_py_1703_income,CUENTAS INCOBRABLES RECUPERADAS,17.03,income_other,py_chart_template,False
+account_py_1900,IMPUESTO A LA RENTA,19,expense,py_chart_template,False

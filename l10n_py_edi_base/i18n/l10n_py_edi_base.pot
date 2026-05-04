@@ -1,0 +1,2616 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_edi_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Cond. Venta: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Dir.: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Email: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Fecha Emisión: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Moneda: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>RUC: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Razón Social: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Tel: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Timbrado Nro.:</strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Tipo Trans.: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Total en Letras: </strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "<strong>Vigencia:</strong>"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "AUTOFACTURA ELECTRÓNICA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__accepted
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_number_inutilization__state__accepted
+msgid "Aceptado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Act. Econ.:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__active
+msgid "Active"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__4
+msgid "Agente intermediario del transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__11
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__9
+msgid "Anticipo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Autofactura (AFE)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,name:l10n_py_edi_base.l10n_py_edi_doc_type_4
+msgid "Autofactura Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Autofactura: %s es obligatorio."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Autofactura: debe tener exactamente 1 documento asociado."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"Autofactura: el documento asociado debe ser una constancia electrónica."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_mode__3
+msgid "Aéreo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__7
+msgid "Billetera electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__draft
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_number_inutilization__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_cdc
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_cdc
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_cdc
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__cdc
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__cdc
+msgid "CDC"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__cfr
+msgid "CFR"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "CI:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__cif
+msgid "CIF"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__cip
+msgid "CIP"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__cpt
+msgid "CPT"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__cancel
+msgid "Cancelación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/l10n_py_edi_cancel_wizard.py:0
+#, python-format
+msgid "Cancelación Exitosa"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__cancelled
+msgid "Cancelado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_account_move_send_edi_wizard
+msgid "Cancelar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_edi_cancel_wizard
+msgid "Cancelar Documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Cancelar EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Cant."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__quantity
+msgid "Cantidad"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Carnet Res.:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_vendor_doc_type__4
+msgid "Carnet de residencia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_edi_cancel_wizard
+msgid "Cerrar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__2
+msgid "Cheque"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__city
+msgid "Ciudad (E938)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_provision_city
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_provision_city
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_provision_city
+msgid "Ciudad Provisión (EA023)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__departure_city
+msgid "Ciudad Salida (E928)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_city
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_city
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_city
+msgid "Ciudad Vendedor (EA016)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__company_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__company_id
+msgid "Compañía"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__14
+msgid "Compensación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__13
+msgid "Compra de crédito fiscal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__6
+msgid "Compra de divisas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__10
+msgid "Compra de productos"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__11
+msgid "Compra de servicios"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__doc_type_code__5
+msgid "Comprobante de retención"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_exchange_rate_condition
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_exchange_rate_condition
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_exchange_rate_condition
+msgid "Condición Tipo de Cambio"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__incoterm
+msgid "Condición de Negociación (E906)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_exchange_rate_condition
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_exchange_rate_condition
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_exchange_rate_condition
+msgid "Condición del tipo de cambio (D015)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_edi_connector
+msgid "Conector EDI Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.ui.menu,name:l10n_py_edi_base.menu_edi_connector
+#: model:ir.ui.menu,name:l10n_py_edi_base.menu_edi_connectors
+msgid "Conectores"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.actions.act_window,name:l10n_py_edi_base.action_edi_connector
+msgid "Conectores EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_edi_connector_form
+msgid "Configuración"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Configure el RUC de la empresa"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Configure el timbrado en el diario"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Constancia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__association_type__3
+msgid "Constancia Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__constancia_type__2
+msgid "Constancia de microproductor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__constancia_type__1
+msgid "Constancia de no ser contribuyente"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid "Constancia electrónica: tipo y número son obligatorios."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__status
+msgid "Consulta de Status"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Consulte en: https://ekuatia.set.gov.py/consultas/qr?cdc="
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Contado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_emission_type__2
+msgid "Contingencia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transporter_nature__1
+msgid "Contribuyente"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.actions.act_window,help:l10n_py_edi_base.action_l10n_py_number_inutilization
+msgid "Crear una nueva inutilización"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__create_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__create_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_edi_connector_form
+msgid "Credenciales"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Crédito -"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_vendor_doc_type__3
+msgid "Cédula extranjera"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_vendor_doc_type__1
+msgid "Cédula paraguaya"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Cód."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__code
+msgid "Código"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_economic_activity_code
+msgid "Código Actividad Económica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_city_code
+msgid "Código Ciudad SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_department_code
+msgid "Código Departamento SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_district_code
+msgid "Código Distrito SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_product_product__l10n_py_ncm_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_product_template__l10n_py_ncm_code
+msgid "Código NCM"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_qr_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_qr_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_qr_code
+msgid "Código QR"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_product_product__l10n_py_unit_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_product_template__l10n_py_unit_code
+msgid "Código Unidad de Medida"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Código de Control (CDC)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_associated_document__cdc
+msgid "Código de Control del Documento Electrónico (44 dígitos)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__cdc
+msgid "Código de Control del documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_cdc
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_cdc
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_cdc
+msgid "Código de Control del documento electrónico"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__error_code
+msgid "Código de Erro"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_security_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_security_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_security_code
+msgid "Código de Seguridad"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__status_code
+msgid "Código de Status"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_economic_activity_code
+msgid "Código de actividad económica principal según SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__error_code
+msgid "Código de erro do provedor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_associated_document__establishment
+msgid "Código de establecimiento (H006)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_city_code
+msgid "Código de la ciudad según SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__status_code
+msgid "Código de status HTTP"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_product_product__l10n_py_unit_code
+#: model:ir.model.fields,help:l10n_py_edi_base.field_product_template__l10n_py_unit_code
+msgid "Código de unidad de medida según SET (77 = UNI - Unidad)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_department_code
+msgid "Código del departamento según SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_district_code
+msgid "Código del distrito según SET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__dap
+msgid "DAP"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__dat
+msgid "DAT"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__ddp
+msgid "DDP"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__method__delete
+msgid "DELETE"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "DOCUMENTO ELECTRÓNICO"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_dv
+msgid "DV"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transporter_dv
+msgid "DV del Transportista (E943)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__request_data
+msgid "Dados Enviados"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_edi_log.py:0
+#, python-format
+msgid "Dados da %s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Datos EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_company_form_edi
+msgid "Datos Fiscales Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_product_template_form_edi
+msgid "Datos Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_edi_log_form
+msgid "Datos de Solicitud"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_transport_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_transport_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_transport_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_transport_form
+msgid "Datos de Transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_transport_id
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_transport_id
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_transport_id
+msgid "Datos de transporte para Nota de Remisión (Grupo G SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Datos del Vendedor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__department
+msgid "Departamento (E934)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_provision_department
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_provision_department
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_provision_department
+msgid "Departamento Provisión (EA019)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__departure_department
+msgid "Departamento Salida (E924)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_department
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_department
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_department
+msgid "Departamento Vendedor (EA012)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Descargar KUDE"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Descargar XML"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__description
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Descripción"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_economic_activity
+msgid "Descripción Actividad Económica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_economic_activity
+msgid "Descripción de la actividad económica principal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__error_message
+msgid "Descrição do erro se houver"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_provision_address
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_provision_address
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_provision_address
+msgid "Dirección Provisión (EA018)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_address
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_address
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_address
+msgid "Dirección Vendedor (EA010)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__address
+msgid "Dirección de Entrega (E930)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__departure_address
+msgid "Dirección de Salida (E920)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__display_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__district
+msgid "Distrito (E936)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_provision_district
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_provision_district
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_provision_district
+msgid "Distrito Provisión (EA021)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__departure_district
+msgid "Distrito Salida (E926)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_district
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_district
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_district
+msgid "Distrito Vendedor (EA014)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__driver_doc_number
+msgid "Doc. del Chofer (E950)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Doc:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__document_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__move_id
+msgid "Documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_associated_document
+msgid "Documento Asociado (Grupo H SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid "Documento electrónico: el CDC es obligatorio."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,description:l10n_py_edi_base.l10n_py_edi_doc_type_1
+msgid "Documento fiscal electrónico que documenta una venta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__document_id
+msgid "Documento fiscal relacionado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid "Documento impreso: campos obligatorios faltantes: %(fields)s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,description:l10n_py_edi_base.l10n_py_edi_doc_type_7
+msgid "Documento que acredita el traslado de mercaderías"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,description:l10n_py_edi_base.l10n_py_edi_doc_type_5
+msgid "Documento que anula o corrige una factura"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,description:l10n_py_edi_base.l10n_py_edi_doc_type_6
+msgid "Documento que incrementa el valor de una factura"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_associated_document_ids
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_associated_document_ids
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_associated_document_ids
+msgid "Documentos Asociados"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Documentos Asociados (Grupo H)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_associated_document_ids
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_associated_document_ids
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_associated_document_ids
+msgid "Documentos asociados al DTE (Grupo H del SIFEN)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid ""
+"Documentos electrónicos o constancias no pueden tener campos de documento "
+"impreso."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__8
+msgid "Donación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__download_pdf
+msgid "Download PDF"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__download_xml
+msgid "Download XML"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Dto."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__duration_human
+msgid "Duração"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__duration_human
+msgid "Duração em formato legível"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_dv
+msgid "Dígito Verificador del RUC"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:res.groups,name:l10n_py_edi_base.group_edi_manager
+msgid "EDI Manager"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__exw
+msgid "EXW"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__1
+msgid "Efectivo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_product_template_form_edi
+msgid "Ej: 84713000"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid "El CDC debe contener exactamente 44 dígitos numéricos."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "El cliente contribuyente debe tener RUC"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"El cliente no contribuyente debe tener número de documento de identidad"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "El código de seguridad debe tener exactamente 9 caracteres"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.constraint,message:l10n_py_edi_base.constraint_l10n_py_edi_document_type_code_unique
+msgid "El código del tipo de documento debe ser único"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/l10n_py_edi_cancel_wizard.py:0
+#, python-format
+msgid "El documento ha sido cancelado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "El número final debe ser mayor o igual al inicial."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "El número final está fuera del rango del timbrado (máximo: %(max)s)."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "El número inicial está fuera del rango del timbrado (mínimo: %(min)s)."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"El plazo de cancelación ha expirado. Límite: %(deadline)s (%(hours)s horas "
+"desde emisión)."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/l10n_py_edi_cancel_wizard.py:0
+#, python-format
+msgid ""
+"El plazo de cancelación ha expirado. Tipo %(doc_type)s permite cancelación "
+"hasta %(limit)s horas después de la aceptación (han transcurrido "
+"%(elapsed).0f horas)."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "El producto %s no tiene código NCM"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa el envío de documentos"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa la cancelación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa la consulta de estado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa la inutilización"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa la previsualización"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/edi_connector.py:0
+#, python-format
+msgid "El proveedor '%s' no implementa la prueba de conexión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid ""
+"El rango máximo de inutilización es %(max)s números (solicitados: %(qty)s)."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "El timbrado está vencido"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__association_type__1
+msgid "Electrónico"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__1
+msgid "Emisor de la Factura Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__endpoint
+msgid "Endpoint"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__delivery_ids
+msgid "Entregas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__sent
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_number_inutilization__state__sent
+msgid "Enviado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_account_move_send_edi_wizard
+msgid "Enviar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Enviar a EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_number_inutilization_form
+msgid "Enviar al SIFEN"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__send
+msgid "Envio de Documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__environment
+msgid "Environment"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/account_move_send_edi.py:0
+#, python-format
+msgid "Envío Exitoso"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__error
+msgid "Error"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Error cancelando documento: %s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "Error de inutilización: %s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Error enviando documento: %s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "Error enviando inutilización: %s"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__establishment
+msgid "Establecimiento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__state
+msgid "Estado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_status
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_status
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_edi_status
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Estado EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid ""
+"Este documento es una representación gráfica de un Documento Electrónico "
+"(DE)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__event
+msgid "Evento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Exenta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "FACTURA ELECTRÓNICA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__fas
+msgid "FAS"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__fca
+msgid "FCA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__incoterm__fob
+msgid "FOB"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__provider__factpy
+msgid "FactPy"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__invoice_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__move_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__invoice_id
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__doc_type_code__1
+msgid "Factura"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,name:l10n_py_edi_base.l10n_py_edi_doc_type_1
+msgid "Factura Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,description:l10n_py_edi_base.l10n_py_edi_doc_type_4
+msgid "Factura emitida por el comprador"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__provider__facturasend
+msgid "FacturaSend"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.ui.menu,name:l10n_py_edi_base.menu_l10n_py_edi_root
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Facturación Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"Facturas superiores a Gs. 7.000.000 no pueden ser innominadas. Debe "
+"identificar al receptor."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_nre_estimated_invoice_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_nre_estimated_invoice_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_nre_estimated_invoice_date
+msgid "Fecha Estimada de Facturación (E506)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transport_end_date
+msgid "Fecha Fin Transporte (E910)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transport_start_date
+msgid "Fecha Inicio Transporte (E909)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__doc_date
+msgid "Fecha del Documento (H010)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_nre_estimated_invoice_date
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_nre_estimated_invoice_date
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_nre_estimated_invoice_date
+msgid "Fecha estimada de facturación para NRE sin factura asociada"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_mode__2
+msgid "Fluvial"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__method__get
+msgid "GET"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__6
+msgid "Giro"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_exchange_rate_condition__1
+msgid "Global"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid ""
+"Hay %(count)s número(s) en el rango que ya fueron usados en facturas "
+"confirmadas."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__request_headers
+msgid "Headers HTTP enviados"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__response_headers
+msgid "Headers HTTP recebidos"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__request_headers
+msgid "Headers da Requisição"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__response_headers
+msgid "Headers da Resposta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_batch_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_batch_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_edi_batch_id
+msgid "ID de Lote"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__batch_id
+msgid "ID do Lote"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_receipt_id
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_receipt_id
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_receipt_id
+msgid "ID único del sistema cliente"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "IVA 10%"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "IVA 5%"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_company_form_edi
+msgid "Identificación Fiscal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__batch_id
+msgid "Identificador de lote do provedor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__association_type__2
+msgid "Impreso"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__success
+msgid "Indica se a operação foi bem-sucedida"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__error
+msgid "Indica se houve erro na operação"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_edi_cancel_wizard
+msgid "Ingrese el motivo de cancelación..."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.actions.act_window,name:l10n_py_edi_base.action_l10n_py_number_inutilization
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_number_inutilization
+msgid "Inutilización de Números"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_kude_pdf
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_kude_pdf
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_kude_pdf
+msgid "KUDE (PDF)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.actions.report,name:l10n_py_edi_base.action_kude_report
+msgid "KUDE (Representación Impresa)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_kude_filename
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_kude_filename
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_kude_filename
+msgid "KUDE Filename"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_doc_type_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_doc_type_code
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_doc_type_code
+msgid "L10N Py Doc Type Code"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "La dirección del cliente es obligatoria"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/account_move_send_edi.py:0
+#, python-format
+msgid "La factura ha sido enviada al sistema EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/l10n_py_edi_cancel_wizard.py:0
+#, python-format
+msgid "La factura no tiene CDC, no se puede cancelar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"La fecha estimada de facturación no puede exceder el mes siguiente al de "
+"emisión."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.actions.act_window,help:l10n_py_edi_base.action_l10n_py_number_inutilization
+msgid ""
+"La inutilización permite informar al SIFEN que ciertos números\n"
+"                de la faja autorizada no serán utilizados."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery____last_update
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__write_uid
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move_send_edi_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__write_date
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Liq. IVA 10% (F016):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Liq. IVA 5% (F015):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_edi_log
+msgid "Log de Operações EDI Paraguay"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.actions.act_window,name:l10n_py_edi_base.action_l10n_py_edi_log
+#: model:ir.ui.menu,name:l10n_py_edi_base.menu_l10n_py_edi_logs
+msgid "Logs EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "Los números deben ser mayores a cero."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Lugar de Provisión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__brand
+msgid "Marca (E961)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__error_message
+msgid "Mensagem de Erro"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_message
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_message
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_edi_message
+msgid "Mensaje EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_constancia_type__2
+msgid "Microproductor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_edi_logging_mixin
+msgid "Mixin para Logging Automático EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Mixto"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__3
+msgid "Mixto (Venta de mercadería y servicios)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transport_mode
+msgid "Modalidad de Transporte (E901)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__motive
+msgid "Motivo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_cancel_wizard__motive
+msgid "Motivo de Cancelación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_contingency_motive
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_contingency_motive
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_contingency_motive
+msgid "Motivo de Contingencia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_nre_motive
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_nre_motive
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_nre_motive
+msgid "Motivo de Remisión (E501)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_mode__4
+msgid "Multimodal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__method
+msgid "Método HTTP"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "NOTA DE CRÉDITO ELECTRÓNICA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "NOTA DE DÉBITO ELECTRÓNICA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "NOTA DE REMISIÓN ELECTRÓNICA"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"NRE traslado por venta sin documento asociado: debe indicar fecha estimada "
+"de facturación."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transporter_nature
+msgid "Naturaleza del Transportista (E940)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_constancia_type__1
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transporter_nature__2
+msgid "No contribuyente"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "No hay KUDE disponible para este documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "No hay XML disponible para este documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "No hay XML disponible para generar el KuDE"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "No hay un conector EDI configurado para esta empresa"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "No hay un conector EDI configurado para esta empresa."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "No se puede cancelar un documento sin CDC"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/wizard/account_move_send_edi.py:0
+#: code:addons/l10n_py_edi_base/wizard/l10n_py_edi_cancel_wizard.py:0
+#, python-format
+msgid "No se seleccionó una factura"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_document_type__name
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_trade_name
+msgid "Nombre Fantasía"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_name
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_name
+msgid "Nombre Vendedor (EA009)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_trade_name
+msgid "Nombre comercial o de fantasía de la empresa"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__driver_name
+msgid "Nombre del Chofer (E951)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transporter_name
+msgid "Nombre del Transportista (E941)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_edi_connector_form
+msgid "Nombre del conector"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_product_product__l10n_py_ncm_code
+#: model:ir.model.fields,help:l10n_py_edi_base.field_product_template__l10n_py_ncm_code
+msgid "Nomenclatura Común del Mercosur (8 dígitos)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_emission_type__1
+msgid "Normal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,name:l10n_py_edi_base.l10n_py_edi_doc_type_5
+msgid "Nota de Crédito Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"Nota de Crédito Electrónica: debe tener exactamente 1 documento asociado."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,name:l10n_py_edi_base.l10n_py_edi_doc_type_6
+msgid "Nota de Débito Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"Nota de Débito Electrónica: debe tener exactamente 1 documento asociado."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Nota de Remisión (NRE)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:l10n_py.edi.document.type,name:l10n_py_edi_base.l10n_py_edi_doc_type_7
+msgid "Nota de Remisión Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Nota de Remisión: el motivo es obligatorio."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__doc_type_code__2
+msgid "Nota de crédito"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__doc_type_code__3
+msgid "Nota de débito"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_associated_document__doc_type_code__4
+msgid "Nota de remisión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_house
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_house
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_house
+msgid "Nro. Casa Vendedor (EA011)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_doc_number
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_doc_number
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_doc_number
+msgid "Nro. Doc. Vendedor (EA008)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__number_from
+msgid "Número Desde"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__number_to
+msgid "Número Hasta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__house_number
+msgid "Número de Casa (E931)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__departure_house
+msgid "Número de Casa Salida (E921)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_constancia_number
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_constancia_number
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_constancia_number
+msgid "Número de Constancia (EA004)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__constancia_number
+msgid "Número de Constancia (H012)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_constancia_control
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_constancia_control
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_constancia_control
+msgid "Número de Control (EA005)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__doc_number
+msgid "Número de Documento"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__plate_number
+msgid "Número de Identificación (E962)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__manifest_number
+msgid "Número de Manifiesto / Conocimiento (E907)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__retry_count
+msgid "Número de tentativas realizadas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_associated_document__timbrado
+msgid "Número de timbrado del documento impreso (H005)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_associated_document__doc_number
+msgid "Número del documento (H008)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_presence_type__5
+msgid "Operación bancaria"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_presence_type__2
+msgid "Operación electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_presence_type__1
+msgid "Operación presencial"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_presence_type__3
+msgid "Operación telemarketing"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__6
+msgid "Otros"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "P. Unit."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__method__patch
+msgid "PATCH"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__method__post
+msgid "POST"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__method__put
+msgid "PUT"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__16
+msgid "Pago bancario"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__to_send
+msgid "Para Enviar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_afe_vendor_doc_type__2
+msgid "Pasaporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Pasaporte:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__request_data
+msgid "Payload da requisição"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__response_data
+msgid "Payload da resposta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__15
+msgid "Permuta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_transmission_deadline
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_transmission_deadline
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_transmission_deadline
+msgid "Plazo de Transmisión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_transmission_deadline
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_transmission_deadline
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_transmission_deadline
+msgid "Plazo máximo para transmitir el DTE (72 horas desde emisión)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_exchange_rate_condition__2
+msgid "Por Ítem"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__2
+msgid "Prestación de servicios"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Preview KuDE"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Preview XML"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_edi_connector_form
+msgid "Probar Conexión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__processing
+msgid "Procesando"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__provider__local
+msgid "Processamento Local"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_connector__environment__prod
+msgid "Producción"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__7
+msgid "Promoción o entrega de muestras"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_type__1
+msgid "Propio"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__provider
+msgid "Provedor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__provider_type
+msgid "Proveedor"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_connector__environment__test
+msgid "Pruebas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_transport_delivery
+msgid "Punto de Entrega"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__expedition_point
+msgid "Punto de Expedición"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_transport_form
+msgid "Punto de Salida"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_associated_document__expedition_point
+msgid "Punto de expedición (H007)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_transport_form
+msgid "Puntos de Entrega"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "QR"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_ruc
+msgid "RUC"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_res_company__l10n_py_ruc_full
+msgid "RUC Completo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_ruc_full
+msgid "RUC con dígito verificador"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transporter_ruc
+msgid "RUC del Transportista (E942)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "RUC:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_receipt_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_receipt_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_receipt_id
+msgid "Receipt ID"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__2
+msgid "Receptor de la Factura Electrónica"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_edi_status__rejected
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_number_inutilization__state__rejected
+msgid "Rechazado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_res_company__l10n_py_ruc
+msgid "Registro Único del Contribuyente sin dígito verificador"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Reintentar"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__freight_responsibility
+msgid "Responsable del Flete (E905)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__response_data
+msgid "Resposta Recebida"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_edi_log_form
+msgid "Respuesta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__10
+msgid "Retención"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__provider__sifen
+msgid "SIFEN Directo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_edi_log.py:0
+#, python-format
+msgid "Sem dados"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Serv."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid ""
+"Solo constancias electrónicas pueden tener tipo y número de constancia."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_associated_document.py:0
+#, python-format
+msgid "Solo documentos electrónicos pueden tener CDC."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/l10n_py_number_inutilization.py:0
+#, python-format
+msgid "Solo se pueden enviar inutilizaciones en estado borrador."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid "Solo se pueden reintentar documentos con error o rechazados"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.constraint,message:l10n_py_edi_base.constraint_l10n_py_edi_connector_company_unique
+msgid "Solo un conector EDI por empresa"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_qr_string
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_qr_string
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_qr_string
+msgid "String QR"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Sub-total Exento (F003):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Sub-total Gravado 10% (F005):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Sub-total Gravado 5% (F004):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__success
+msgid "Sucesso"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__3
+msgid "Tarjeta de crédito"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__4
+msgid "Tarjeta de débito"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__8
+msgid "Tarjeta empresarial"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Tel:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__execution_time
+msgid "Tempo de Execução (ms)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__execution_time
+msgid "Tempo de execução em milissegundos"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__retry_count
+msgid "Tentativas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__freight_responsibility__3
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_type__2
+msgid "Tercero"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_transport__transport_mode__1
+msgid "Terrestre"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__timbrado
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_number_inutilization__authorization_id
+msgid "Timbrado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_connector__timeout
+msgid "Timeout"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_vendor_doc_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_vendor_doc_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_vendor_doc_type
+msgid "Tipo Doc. Vendedor (EA006)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__association_type
+msgid "Tipo de Asociación (H002)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_afe_constancia_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_afe_constancia_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_afe_constancia_type
+msgid "Tipo de Constancia (EA002)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__constancia_type
+msgid "Tipo de Constancia (H011)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_edi_document_type
+msgid "Tipo de Documento Electrónico"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_associated_document__doc_type_code
+msgid "Tipo de Documento Impreso (H009)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_emission_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_emission_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_emission_type
+msgid "Tipo de Emisión"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__operation_type
+msgid "Tipo de Operação"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_payment_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_payment_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_payment_type
+msgid "Tipo de Pago"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_presence_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_presence_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_presence_type
+msgid "Tipo de Presencia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_transaction_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_transaction_type
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_transaction_type
+msgid "Tipo de Transacción"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__transport_type
+msgid "Tipo de Transporte (E903)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__vehicle_type
+msgid "Tipo de Vehículo (E960)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_payment_type
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_move__l10n_py_payment_type
+#: model:ir.model.fields,help:l10n_py_edi_base.field_account_payment__l10n_py_payment_type
+msgid "Tipo de pago para condición contado (E606)"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Total Liq. IVA (F017):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Total Operación (F008):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Total en Gs. (F023):"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__5
+msgid "Transferencia"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__transport_id
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__transport_id
+msgid "Transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_transport
+msgid "Transporte de Mercaderías"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_transport_form
+msgid "Transportista"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__5
+msgid "Traslado entre locales"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+#, python-format
+msgid ""
+"Traslado entre locales: el RUC del receptor debe coincidir con el del "
+"emisor."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__2
+msgid "Traslado por consignación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__3
+msgid "Traslado por exportación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__4
+msgid "Traslado por importación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_nre_motive__1
+msgid "Traslado por venta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,help:l10n_py_edi_base.field_l10n_py_edi_log__endpoint
+msgid "URL ou endpoint da API"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_company_form_edi
+msgid "Ubicación"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__9
+msgid "Vale"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__l10n_py_edi_log__operation_type__validate
+msgid "Validação"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__13
+msgid "Valor comercial"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_payment_type__12
+msgid "Valor fiscal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_transport_vehicle
+msgid "Vehículo de Transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport__vehicle_ids
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_l10n_py_transport_form
+msgid "Vehículos"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_presence_type__4
+msgid "Venta a domicilio"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__4
+msgid "Venta de activo fijo"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__12
+msgid "Venta de crédito fiscal"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__5
+msgid "Venta de divisas"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields.selection,name:l10n_py_edi_base.selection__account_move__l10n_py_transaction_type__1
+msgid "Venta de mercadería"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "Venta merc."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.actions.server,name:l10n_py_edi_base.ir_cron_check_edi_status_ir_actions_server
+#: model:ir.cron,cron_name:l10n_py_edi_base.ir_cron_check_edi_status
+msgid "Verificar Estado EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_l10n_py_edi_cancel_wizard
+msgid "Wizard para cancelar documento EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model,name:l10n_py_edi_base.model_account_move_send_edi_wizard
+msgid "Wizard para enviar factura a EDI"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_xml_filename
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_xml_filename
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_edi_xml_filename
+msgid "XML Filename"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_edi_xml
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_edi_xml
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_payment__l10n_py_edi_xml
+msgid "XML Firmado"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "al"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
+msgid "| T.C.:"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_edi_log__error
+msgid "É Erro"
+msgstr ""

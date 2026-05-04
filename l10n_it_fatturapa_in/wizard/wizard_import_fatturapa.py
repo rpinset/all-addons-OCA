@@ -289,34 +289,33 @@ class WizardImportFatturapa(models.TransientModel):
             return commercial_partner_id
         else:
             # partner to be created
-            country_id = False
-            if DatiAnagrafici.IdFiscaleIVA:
-                CountryCode = DatiAnagrafici.IdFiscaleIVA.IdPaese
-                countries = self.CountryByCode(CountryCode)
-                if countries:
-                    country_id = countries[0].id
-                else:
-                    raise UserError(
-                        _("Country Code %s not found in system.") % CountryCode
-                    )
-            vals = {
-                "vat": vat,
-                "fiscalcode": cf,
-                "is_company": (
-                    DatiAnagrafici.Anagrafica.Denominazione and True or False
-                ),
-                "eori_code": DatiAnagrafici.Anagrafica.CodEORI or "",
-                "country_id": country_id,
-                "company_id": self.env.company.id,
-            }
-            if DatiAnagrafici.Anagrafica.Nome:
-                vals["firstname"] = DatiAnagrafici.Anagrafica.Nome
-            if DatiAnagrafici.Anagrafica.Cognome:
-                vals["lastname"] = DatiAnagrafici.Anagrafica.Cognome
-            if DatiAnagrafici.Anagrafica.Denominazione:
-                vals["name"] = DatiAnagrafici.Anagrafica.Denominazione
-
+            vals = self._prepare_partner_base_vals(vat, cf, DatiAnagrafici)
             return partner_model.create(vals).id
+
+    def _prepare_partner_base_vals(self, vat, cf, DatiAnagrafici):
+        country_id = False
+        if DatiAnagrafici.IdFiscaleIVA:
+            CountryCode = DatiAnagrafici.IdFiscaleIVA.IdPaese
+            countries = self.CountryByCode(CountryCode)
+            if countries:
+                country_id = countries[0].id
+            else:
+                raise UserError(_("Country Code %s not found in system.") % CountryCode)
+        vals = {
+            "vat": vat,
+            "fiscalcode": cf,
+            "is_company": (DatiAnagrafici.Anagrafica.Denominazione and True or False),
+            "eori_code": DatiAnagrafici.Anagrafica.CodEORI or "",
+            "country_id": country_id,
+            "company_id": self.env.company.id,
+        }
+        if DatiAnagrafici.Anagrafica.Nome:
+            vals["firstname"] = DatiAnagrafici.Anagrafica.Nome
+        if DatiAnagrafici.Anagrafica.Cognome:
+            vals["lastname"] = DatiAnagrafici.Anagrafica.Cognome
+        if DatiAnagrafici.Anagrafica.Denominazione:
+            vals["name"] = DatiAnagrafici.Anagrafica.Denominazione
+        return vals
 
     def getCedPrest(self, cedPrest):
         partner_model = self.env["res.partner"]

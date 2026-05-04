@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Tipos de Documento LATAM para Paraguay -->
+
+    <record id="dc_py_f" model="l10n_latam.document.type">
+        <field name="country_id" ref="base.py" />
+        <field name="name">Factura</field>
+        <field name="code">1</field>
+        <field name="doc_code_prefix">FE</field>
+        <field name="report_name">FACTURA ELECTRÓNICA</field>
+        <field name="internal_type">invoice</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="dc_py_af" model="l10n_latam.document.type">
+        <field name="country_id" ref="base.py" />
+        <field name="name">Autofactura</field>
+        <field name="code">4</field>
+        <field name="doc_code_prefix">AF</field>
+        <field name="report_name">AUTOFACTURA ELECTRÓNICA</field>
+        <field name="internal_type">invoice</field>
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="dc_py_nc" model="l10n_latam.document.type">
+        <field name="country_id" ref="base.py" />
+        <field name="name">Nota de Crédito</field>
+        <field name="code">5</field>
+        <field name="doc_code_prefix">NC</field>
+        <field name="report_name">NOTA DE CRÉDITO ELECTRÓNICA</field>
+        <field name="internal_type">credit_note</field>
+        <field name="sequence">5</field>
+    </record>
+
+    <record id="dc_py_nd" model="l10n_latam.document.type">
+        <field name="country_id" ref="base.py" />
+        <field name="name">Nota de Débito</field>
+        <field name="code">6</field>
+        <field name="doc_code_prefix">ND</field>
+        <field name="report_name">NOTA DE DÉBITO ELECTRÓNICA</field>
+        <field name="internal_type">debit_note</field>
+        <field name="sequence">6</field>
+    </record>
+
+    <record id="dc_py_nr" model="l10n_latam.document.type">
+        <field name="country_id" ref="base.py" />
+        <field name="name">Nota de Remisión</field>
+        <field name="code">7</field>
+        <field name="doc_code_prefix">NR</field>
+        <field name="report_name">NOTA DE REMISIÓN ELECTRÓNICA</field>
+        <field name="internal_type">invoice</field>
+        <field name="sequence">7</field>
+    </record>
+
+</odoo>

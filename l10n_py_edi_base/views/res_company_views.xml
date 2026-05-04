@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_company_form_edi" model="ir.ui.view">
+        <field name="name">res.company.form.edi</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_info']" position="after">
+                <page string="Datos Fiscales Paraguay" name="l10n_py_fiscal">
+                    <group>
+                        <group string="Identificación Fiscal">
+                            <field name="l10n_py_ruc" />
+                            <field name="l10n_py_dv" readonly="1" />
+                            <field name="l10n_py_ruc_full" readonly="1" />
+                            <field name="l10n_py_trade_name" />
+                            <field name="l10n_py_economic_activity" />
+                        </group>
+                        <group string="Ubicación">
+                            <field name="l10n_py_department_code" />
+                            <field name="l10n_py_district_code" />
+                            <field name="l10n_py_city_code" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

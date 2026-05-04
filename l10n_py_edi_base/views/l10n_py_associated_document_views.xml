@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Inline tree para documentos asociados en factura -->
+    <record id="view_l10n_py_associated_document_tree" model="ir.ui.view">
+        <field name="name">l10n_py.associated.document.tree</field>
+        <field name="model">l10n_py.associated.document</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="association_type" />
+                <field
+                    name="cdc"
+                    attrs="{'invisible': [('association_type', '!=', '1')], 'required': [('association_type', '=', '1')]}"
+                />
+                <field
+                    name="timbrado"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="establishment"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="expedition_point"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="doc_number"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="doc_type_code"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="doc_date"
+                    attrs="{'invisible': [('association_type', '!=', '2')], 'required': [('association_type', '=', '2')]}"
+                />
+                <field
+                    name="constancia_type"
+                    attrs="{'invisible': [('association_type', '!=', '3')], 'required': [('association_type', '=', '3')]}"
+                />
+                <field
+                    name="constancia_number"
+                    attrs="{'invisible': [('association_type', '!=', '3')], 'required': [('association_type', '=', '3')]}"
+                />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

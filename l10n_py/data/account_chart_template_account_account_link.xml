@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- We complete the declaration of the chart of account here.
+    These data are to be created once the accounts have been created in database,
+    they finish "linking" the CoA to them. -->
+    <record id="py_chart_template" model="account.chart.template">
+            <field name="property_account_receivable_id" ref="account_py_301" />
+            <field name="property_account_payable_id" ref="account_py_2001" />
+            <field
+            name="property_account_expense_categ_id"
+            ref="account_py_50101_expense"
+        />
+            <field
+            name="property_account_income_categ_id"
+            ref="account_py_40101_income"
+        />
+            <field name="property_account_income_id" ref="account_py_40101_income" />
+            <field name="property_account_expense_id" ref="account_py_50101_expense" />
+            <field name="default_pos_receivable_account_id" ref="account_py_301" />
+            <field
+            name="income_currency_exchange_account_id"
+            ref="account_py_805_income"
+        />
+            <field
+            name="expense_currency_exchange_account_id"
+            ref="account_py_1304_expense"
+        />
+            <field
+            name="default_cash_difference_income_account_id"
+            ref="account_py_802_income"
+        />
+            <field
+            name="default_cash_difference_expense_account_id"
+            ref="account_py_1116_expense"
+        />
+            <field name="account_journal_suspense_account_id" ref="account_py_103" />
+            <field
+            name="account_journal_payment_debit_account_id"
+            ref="account_py_301"
+        />
+            <field
+            name="account_journal_payment_credit_account_id"
+            ref="account_py_2001"
+        />
+            <field name="property_tax_payable_account_id" ref="account_py_220102" />
+            <field name="property_tax_receivable_account_id" ref="account_py_30503" />
+        </record>
+
+</odoo>
