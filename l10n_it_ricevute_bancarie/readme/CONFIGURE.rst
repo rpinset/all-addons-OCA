@@ -30,6 +30,11 @@ La configurazione relativa all'insoluto verrà utilizzata in caso di mancato pag
 da parte del cliente.
 Il conto può chiamarsi ad esempio "Crediti insoluti".
 
+Se il conto configurato per gli effetti insoluti è il conto riconciliabile nella fattura,
+abilitando "Riconcilia effetti insoluti" durante la procedura dell'insoluto
+il movimento sul conto configurato verrà riconciliato con il movimento analogo nella registrazione di accettazione,
+così la fattura non mostrerà il movimento di accettazione come un "Credito in sospeso".
+
 Nel caso si vogliano gestire anche le spese per ogni scadenza con ricevuta bancaria,
 si deve configurare un prodotto di tipo servizio e collegarlo in
 *Configurazione → Impostazioni → Contabilità → Imposte → Spese di incasso Ri.Ba.*.

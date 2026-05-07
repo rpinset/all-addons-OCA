@@ -1402,6 +1402,18 @@ msgid "RIBA To Issue"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_unsolved__reconcile_overdue_effects
+msgid "Reconcile Overdue Effects"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields,help:l10n_it_ricevute_bancarie.field_riba_unsolved__reconcile_overdue_effects
+msgid ""
+"Reconcile the Past Due Bills Amount with the acceptance entry if possible.\n"
+"This allows to get rid of the outstanding payments in the invoice."
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.riba_filter
 msgid "Reconciled"
 msgstr ""

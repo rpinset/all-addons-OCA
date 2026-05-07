@@ -23,6 +23,7 @@
                     <field name="bank_expense_account_id" />
                     <field name="past_due_fee_amount" />
                     <field name="date" />
+                    <field name="reconcile_overdue_effects" />
                 </group>
                 <footer>
                     <button

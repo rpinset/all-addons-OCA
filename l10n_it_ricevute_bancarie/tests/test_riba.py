@@ -860,3 +860,59 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertEqual(
             acceptance_lines.mapped("date"), [acceptance_date] * len(acceptance_lines)
         )
+
+    def test_unsolved_reconcile_overdue(self):
+        """
+        When the Past Due Bills Account is the same as the invoice's reconcileable account
+        and Reconcile Overdue Effects is enabled in the Past Due wizard,
+        setting a RiBa line as unsolved
+        reconciles the unsolved move with the acceptance move
+        so that the old acceptance move's entries do not show anymore as outstanding credits.
+        """
+        # Arrange
+        riba_configuration = self.riba_config_sbf_immediate
+        overdue_effects_account = self.account_rec1_id
+        riba_configuration.overdue_effects_account_id = overdue_effects_account
+        invoice, riba_list = self.riba_sbf_common(riba_configuration.id)
+        riba_line = riba_list.line_ids[0]
+        unsolved_wizard = (
+            self.env["riba.unsolved"]
+            .with_context(
+                active_model=riba_line._name,
+                active_id=riba_line.id,
+            )
+            .create(
+                {
+                    "reconcile_overdue_effects": True,
+                }
+            )
+        )
+        # pre-condition
+        self.assertFalse(invoice.invoice_has_outstanding)
+        self.assertTrue(unsolved_wizard.reconcile_overdue_effects)
+        self.assertIn(
+            riba_list.config_id.overdue_effects_account_id, invoice.line_ids.account_id
+        )
+
+        # Act
+        unsolved_wizard.create_move()
+
+        # Assert
+        unsolved_move = riba_line.unsolved_move_id
+        unsolved_reconciliations = (
+            unsolved_move.line_ids.matched_debit_ids
+            | unsolved_move.line_ids.matched_credit_ids
+        )
+
+        acceptance_move = riba_line.acceptance_move_id
+        acceptance_reconciliations = (
+            acceptance_move.line_ids.matched_debit_ids
+            | acceptance_move.line_ids.matched_credit_ids
+        )
+        common_reconciliations = unsolved_reconciliations & acceptance_reconciliations
+        overdue_reconciliations = common_reconciliations.filtered(
+            lambda reconciliation: overdue_effects_account
+            in (reconciliation.debit_move_id | reconciliation.debit_move_id).account_id
+        )
+        self.assertTrue(overdue_reconciliations)
+        self.assertFalse(invoice.invoice_has_outstanding)

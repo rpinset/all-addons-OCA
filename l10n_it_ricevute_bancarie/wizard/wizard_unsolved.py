@@ -104,6 +104,10 @@ class RibaUnsolved(models.TransientModel):
         help="If empty, the due date in the line will be used.",
         readonly=False,
     )
+    reconcile_overdue_effects = fields.Boolean(
+        help="Reconcile the Past Due Bills Amount with the acceptance entry if possible.\n"
+        "This allows to get rid of the outstanding payments in the invoice.",
+    )
 
     @api.depends("overdue_effects_amount", "past_due_fee_amount")
     def _compute_bank_amount(self):
@@ -225,8 +229,10 @@ class RibaUnsolved(models.TransientModel):
         move.action_post()
 
         to_be_reconciled = []
+        to_be_overdue_reconciled = []
         for move_line in move.line_ids:
             if move_line.account_id.id == wizard.overdue_effects_account_id.id:
+                to_be_overdue_reconciled.append(move_line.id)
                 for riba_move_line in distinta_line.move_line_ids:
                     invoice_ids = []
                     if riba_move_line.move_line_id.move_id:
@@ -248,6 +254,8 @@ class RibaUnsolved(models.TransientModel):
         for acceptance_move_line in distinta_line.acceptance_move_id.line_ids:
             if acceptance_move_line.account_id.id == wizard.effects_account_id.id:
                 to_be_reconciled.append(acceptance_move_line.id)
+            if acceptance_move_line.account_id == wizard.overdue_effects_account_id:
+                to_be_overdue_reconciled.append(acceptance_move_line.id)
 
         distinta_line.write(
             {
@@ -259,6 +267,12 @@ class RibaUnsolved(models.TransientModel):
             {"unsolved_reconciliation": True}
         ).browse(to_be_reconciled)
         to_be_reconciled_lines.reconcile()
+
+        if self.reconcile_overdue_effects and to_be_overdue_reconciled:
+            move_line_model.with_context({"unsolved_reconciliation": True}).browse(
+                to_be_overdue_reconciled
+            ).reconcile()
+
         distinta_line.distinta_id.state = "unsolved"
         return {
             "name": _("Past Due Entry"),

@@ -6,9 +6,9 @@
     option to make upgrades between two major revisions.""",
     "author": "Odoo Community Association (OCA)," " Therp BV, Opener B.V., GRAP",
     "maintainers": ["legalsylvain", "StefanRijnhart"],
-    "website": "https://github.com/OCA/openupgrade",
+    "website": "https://github.com/OCA/OpenUpgrade",
     "category": "Migration",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "license": "AGPL-3",
     "depends": ["base"],
     "external_dependencies": {
