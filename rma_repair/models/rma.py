@@ -7,7 +7,7 @@ from odoo import _, api, fields, models
 class RMA(models.Model):
     _inherit = "rma"
 
-    repair_id = fields.Many2one("repair.order")
+    repair_id = fields.Many2one("repair.order", copy=False)
     can_be_repaired = fields.Boolean(compute="_compute_can_be_repaired")
 
     @api.depends("repair_id", "state", "operation_id.action_create_repair")
@@ -35,7 +35,9 @@ class RMA(models.Model):
         res = super()._compute_can_be_returned()
         for r in self:
             r.can_be_returned = r.can_be_returned and (
-                not r.repair_id or r.repair_id.state == "done"
+                r.operation_id.action_create_delivery
+                in ("automatic_on_confirm", "automatic_after_receipt")
+                or (not r.repair_id or r.repair_id.state == "done")
             )
         return res
 
@@ -44,7 +46,9 @@ class RMA(models.Model):
         res = super()._compute_can_be_replaced()
         for r in self:
             r.can_be_replaced = r.can_be_replaced and (
-                not r.repair_id or r.repair_id.state == "cancel"
+                r.operation_id.action_create_delivery
+                in ("automatic_on_confirm", "automatic_after_receipt")
+                or (not r.repair_id or r.repair_id.state == "cancel")
             )
         return res
 
@@ -69,6 +73,7 @@ class RMA(models.Model):
             "default_address_id": self.partner_shipping_id.id,
             "default_partner_invoice_id": self.partner_invoice_id.id,
             "default_picking_id": self.reception_move_id.picking_id.id,
+            "default_user_id": False,
         }
         if self.lot_id:
             vals["default_lot_id"] = self.lot_id.id
@@ -97,11 +102,13 @@ class RMA(models.Model):
         self.ensure_one()
         if self.repair_id:
             return self.repair_id
-        return (
+        repair = (
             self.env["repair.order"]
             .with_context(**self._get_repair_order_default_vals())
-            .create({})
+            .create({"user_id": False})
         )
+
+        return repair
 
     def action_confirm(self):
         res = super().action_confirm()

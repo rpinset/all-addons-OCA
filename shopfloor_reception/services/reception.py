@@ -698,12 +698,7 @@ class Reception(Component):
         if not pack_location:
             line.result_package_id = package
             return None
-        (
-            move_dest_location_ok,
-            pick_type_dest_location_ok,
-        ) = self._check_location_ok(pack_location, line, picking)
-        if not (move_dest_location_ok or pick_type_dest_location_ok):
-            # Package location is not a child of the move destination
+        if not self.is_dest_location_valid(line.move_id, pack_location):
             message = self.msg_store.dest_location_not_allowed()
             return self._response_for_set_quantity(picking, line, message=message)
         quantity = line.qty_done
@@ -729,11 +724,7 @@ class Reception(Component):
         return self._response_for_set_destination(picking, selected_line)
 
     def _set_quantity__by_location(self, picking, selected_line, location):
-        move_dest_location_ok, pick_type_dest_location_ok = self._check_location_ok(
-            location, selected_line, picking
-        )
-        if not (move_dest_location_ok or pick_type_dest_location_ok):
-            # Scanned location isn't a child of the move's dest location
+        if not self.is_dest_location_valid(selected_line.move_id, location):
             message = self.msg_store.dest_location_not_allowed()
             return self._response_for_set_quantity(
                 picking, selected_line, message=message
@@ -743,28 +734,10 @@ class Reception(Component):
         selected_line.location_dest_id = location
         return self._response_for_select_move(picking)
 
-    def _set_quantity__by_lot(self, picking, selected_line, barcode):
-        if selected_line.lot_id.name == barcode or selected_line.lot_name == barcode:
+    def _set_quantity__by_lot(self, picking, selected_line, lot):
+        if selected_line.lot_id.name == lot.name or selected_line.lot_name == lot.name:
             selected_line.qty_done += 1
             return self._response_for_set_quantity(picking, selected_line)
-
-    def _check_location_ok(self, location, selected_line, picking):
-        if location.usage == "view":
-            return (False, False)
-
-        move_dest_location = selected_line.location_dest_id
-        pick_type_dest_location = picking.picking_type_id.default_location_dest_id
-
-        move_dest_location_ok = location.parent_path.startswith(
-            move_dest_location.parent_path
-        )
-        pick_type_dest_location_ok = location.parent_path.startswith(
-            pick_type_dest_location.parent_path
-        )
-        if move_dest_location_ok or pick_type_dest_location_ok:
-            return (move_dest_location_ok, pick_type_dest_location_ok)
-
-        return (False, False)
 
     def _use_handlers(self, handlers, *args, **kwargs):
         for handler in handlers:
@@ -940,12 +913,15 @@ class Reception(Component):
         )
         return self._align_display_product_uom_qty(line, response)
 
-    def _response_for_set_destination(self, picking, line, message=None):
+    def _response_for_set_destination(
+        self, picking, line, message=None, confirmation=None
+    ):
         return self._response(
             next_state="set_destination",
             data={
                 "selected_move_line": self._data_for_move_lines(line),
                 "picking": self.data.picking(picking),
+                "confirmation": confirmation,
             },
             message=message,
         )
@@ -1416,8 +1392,6 @@ class Reception(Component):
         return self._response_for_select_move(picking)
 
     def _set_quantity__process__set_qty_and_split(self, picking, line, quantity):
-        move = line.move_id
-        sum(move.move_line_ids.mapped("qty_done"))
         savepoint = self._actions_for("savepoint").new()
         line.qty_done = quantity
         compare = self._set_quantity__check_quantity_done(line)
@@ -1437,33 +1411,33 @@ class Reception(Component):
             }
             line._split_qty_to_be_done(quantity, **default_values)
 
+    def _process(self, picking, line, quantity):
+        if message := self._check_picking_processible(picking):
+            return self._response_for_set_quantity(picking, line, message=message)
+
+        if float_is_zero(quantity, precision_rounding=line.product_id.uom_id.rounding):
+            return self._response_for_set_quantity(
+                picking,
+                line,
+                message=self.msg_store.invalid_quantity(quantity),
+            )
+
+        response = self._set_quantity__process__set_qty_and_split(
+            picking, line, quantity
+        )
+        return response
+
     def process_with_existing_pack(self, picking_id, selected_line_id, quantity):
         picking = self.env["stock.picking"].browse(picking_id)
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
-        message = self._check_picking_processible(picking)
-        if message:
-            return self._response_for_set_quantity(
-                picking, selected_line, message=message
-            )
-        response = self._set_quantity__process__set_qty_and_split(
-            picking, selected_line, quantity
-        )
-        if response:
+        if response := self._process(picking, selected_line, quantity):
             return response
         return self._response_for_select_dest_package(picking, selected_line)
 
     def process_with_new_pack(self, picking_id, selected_line_id, quantity):
         picking = self.env["stock.picking"].browse(picking_id)
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
-        message = self._check_picking_processible(picking)
-        if message:
-            return self._response_for_set_quantity(
-                picking, selected_line, message=message
-            )
-        response = self._set_quantity__process__set_qty_and_split(
-            picking, selected_line, quantity
-        )
-        if response:
+        if response := self._process(picking, selected_line, quantity):
             return response
         picking._put_in_pack(selected_line)
         return self._response_for_set_destination(picking, selected_line)
@@ -1471,15 +1445,7 @@ class Reception(Component):
     def process_without_pack(self, picking_id, selected_line_id, quantity):
         picking = self.env["stock.picking"].browse(picking_id)
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
-        message = self._check_picking_processible(picking)
-        if message:
-            return self._response_for_set_quantity(
-                picking, selected_line, message=message
-            )
-        response = self._set_quantity__process__set_qty_and_split(
-            picking, selected_line, quantity
-        )
-        if response:
+        if response := self._process(picking, selected_line, quantity):
             return response
         return self._response_for_set_destination(picking, selected_line)
 
@@ -1555,8 +1521,13 @@ class Reception(Component):
         move._recompute_state()
         new_move.extract_and_action_done()
 
+    def is_dest_location_valid(self, moves, location):
+        if location.usage == "view":
+            return False
+        return super().is_dest_location_valid(moves, location)
+
     def set_destination(
-        self, picking_id, selected_line_id, location_name, confirmation=False
+        self, picking_id, selected_line_id, location_name, confirmation=""
     ):
         """Set the destination on the move line.
 
@@ -1564,10 +1535,10 @@ class Reception(Component):
             location_name: The name of the location
 
         transitions:
-          - set_destination: Warning: User scanned a child location of the picking type.
+          - set_destination: Warning: User scanned a valid but unexpected location.
             Ask for confirmation
           - set_destination: Error: User tried to scan a non-valid location
-          - select_move: User scanned a child location of the move's dest location
+          - select_move: User scanned a valid location
         """
         picking = self.env["stock.picking"].browse(picking_id)
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
@@ -1581,37 +1552,31 @@ class Reception(Component):
             return self._response_for_set_destination(
                 picking, selected_line, message=message
             )
-        search = self._actions_for("search")
 
-        location = search.location_from_scan(location_name)
+        location = self._actions_for("search").location_from_scan(location_name)
         if not location:
             return self._response_for_set_destination(
                 picking, selected_line, message=self.msg_store.no_location_found()
             )
-        move_dest_location_ok, pick_type_dest_location_ok = self._check_location_ok(
-            location, selected_line, picking
-        )
-        if not (move_dest_location_ok or pick_type_dest_location_ok):
+        if not self.is_dest_location_valid(selected_line.move_id, location):
             return self._response_for_set_destination(
                 picking,
                 selected_line,
                 message=self.msg_store.dest_location_not_allowed(),
             )
-        if move_dest_location_ok:
-            # If location is a child of move's dest location, assign it without asking
-            selected_line.location_dest_id = location
-        elif pick_type_dest_location_ok:
-            # If location is a child of picking types's dest location,
-            # ask for confirmation before assigning
-            if not confirmation:
-                return self._response_for_set_destination(
-                    picking,
-                    selected_line,
-                    message=self.msg_store.place_in_location_ask_confirmation(
-                        location.name
-                    ),
-                )
-            selected_line.location_dest_id = location
+        if confirmation != location_name and self.is_dest_location_to_confirm(
+            selected_line.location_dest_id, location
+        ):
+            return self._response_for_set_destination(
+                picking,
+                selected_line,
+                message=self.msg_store.place_in_location_ask_confirmation(
+                    location.name
+                ),
+                confirmation=location_name,
+            )
+        selected_line.location_dest_id = location
+
         response = self._post_line(selected_line)
         if response:
             return response
@@ -1790,7 +1755,7 @@ class ShopfloorReceptionValidator(Component):
                 "required": True,
             },
             "location_name": {"required": True, "type": "string"},
-            "confirmation": {"type": "boolean"},
+            "confirmation": {"type": "string"},
         }
 
     def select_dest_package(self):
@@ -1970,6 +1935,7 @@ class ShopfloorReceptionValidatorResponse(Component):
                 "schema": {"type": "dict", "schema": self.schemas.move_line()},
             },
             "picking": {"type": "dict", "schema": self.schemas.picking()},
+            "confirmation": {"type": "string", "nullable": True},
         }
 
     @property

@@ -53,6 +53,28 @@ class TestSetQuantity(CommonCase):
             },
         )
 
+    def test_set_quantity_scan_lot(self):
+        picking = self._create_picking()
+        selected_move_line = picking.move_line_ids.filtered(
+            lambda l: l.product_id == self.product_a
+        )
+        lot = self._create_lot(
+            product_id=selected_move_line.product_id.id, name="Test Lot"
+        )
+        selected_move_line.write({"shopfloor_user_id": self.env.uid, "lot_id": lot.id})
+        self.service.dispatch(
+            "set_quantity",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                # ↓ UI calls with 0 by default
+                "quantity": 0.0,
+                "barcode": "Test Lot",
+            },
+        )
+
+        self.assertEqual(selected_move_line.qty_done, 1)
+
     def test_set_quantity_scan_wrong_lot(self):
         # create lot "4" for product b
         self.env["stock.lot"].create(
@@ -285,6 +307,7 @@ class TestSetQuantity(CommonCase):
             data={
                 "picking": data,
                 "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation": None,
             },
         )
 
@@ -407,6 +430,7 @@ class TestSetQuantity(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation": None,
             },
         )
 
@@ -667,6 +691,7 @@ class TestSetQuantity(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation": None,
             },
         )
         # there should be 3 lines now
@@ -742,6 +767,7 @@ class TestSetQuantity(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": self.data.move_lines(move_line_user_1),
+                "confirmation": None,
             },
         )
 
@@ -845,6 +871,7 @@ class TestSetQuantity(CommonCase):
             data={
                 "picking": data,
                 "selected_move_line": self.data.move_lines(move_line_user_2),
+                "confirmation": None,
             },
         )
         self.assertEqual(move_product_a.quantity_done, 1.0)

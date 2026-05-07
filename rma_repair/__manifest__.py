@@ -3,7 +3,7 @@
 {
     "name": "RMA Repair",
     "summary": "Create a repair order from rma",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.2.0",
     "category": "RMA",
     "website": "https://github.com/OCA/rma",
     "author": "Antoni Marroig, Odoo Community Association (OCA)",

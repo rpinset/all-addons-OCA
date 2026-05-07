@@ -20,17 +20,13 @@ tour.register(
 tour.register(
     "web_systray_button_init_action_set_tour",
     {
-        url: "/web",
+        url: "/web#action=base.action_res_users",
         test: true,
     },
     [
-        tour.stepUtils.showAppsMenuItem(),
         {
-            trigger: ".o_navbar_apps_menu button",
-            extra_trigger: ".init_action_div:has(a[name='init_action'])",
-        },
-        {
-            trigger: "a[data-menu-xmlid='base.menu_administration']",
+            trigger: ".init_action_div:has(a[name='init_action'])",
+            isCheck: true,
         },
         {
             trigger: "a[name='init_action']",

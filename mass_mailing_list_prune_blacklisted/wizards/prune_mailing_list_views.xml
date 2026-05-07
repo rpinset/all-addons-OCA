@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ~ Copyright 2026 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="prune_wizard_form_view" model="ir.ui.view">
+        <field name="name">Prune mailing list wizard Form view</field>
+        <field name="model">mass_mailing_list_prune_blacklisted.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <span
+                        attrs="{
+                            'invisible': [
+                                ('blacklisted_contact_ids', '!=', []),
+                            ],
+                        }"
+                    >
+                        The selected mailing lists have no blacklisted contacts.
+                    </span>
+                    <group
+                        attrs="{
+                            'invisible': [
+                                ('blacklisted_contact_ids', '=', []),
+                            ],
+                        }"
+                    >
+                        <span colspan="2">
+                            Do you want to remove the following contacts from the selected mailing lists?
+                        </span>
+                        <br />
+                        <field name="list_ids" invisible="True" />
+                        <field name="blacklisted_contact_ids" nolabel="1" colspan="2" />
+                    </group>
+                </sheet>
+                <footer>
+                    <button
+                        string="Confirm"
+                        name="remove_blacklisted_contacts"
+                        type="object"
+                        class="oe_highlight"
+                        attrs="{
+                            'invisible': [
+                                ('blacklisted_contact_ids', '=', []),
+                            ],
+                        }"
+                    />
+                    <button string="Cancel" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="prune_wizard_action" model="ir.actions.act_window">
+        <field name="name">Remove blacklisted contacts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mass_mailing_list_prune_blacklisted.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="mass_mailing.model_mailing_list" />
+    </record>
+</odoo>

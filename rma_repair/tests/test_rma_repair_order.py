@@ -60,6 +60,7 @@ class RMARepairOrderTest(TransactionCase):
             "default_address_id": self.rma.partner_shipping_id.id,
             "default_partner_invoice_id": self.rma.partner_invoice_id.id,
             "default_picking_id": self.rma.reception_move_id.picking_id.id,
+            "default_user_id": False,
         }
         for key, expected_value in expected.items():
             self.assertIn(key, ctx, f"Missing context key: {key}")
@@ -179,3 +180,52 @@ class RMARepairOrderTest(TransactionCase):
         self.assertFalse(self.rma_without_repair.can_be_repaired)
         self.assertTrue(self.rma_without_repair.repair_id)
         self.assertFalse(self.rma_without_repair.can_be_repaired)
+
+    def test_rma_repair_no_defualt_user_id(self):
+        """
+        Ensure repair order create from RMA is not assigned a responsible.
+
+        Rationale:
+        The customer service agent confirming the RMA is often not
+        part of the technical repair team. Automatically assigning the RMA
+        validator as the repair responsible would create unwanted notifications.
+        """
+        rma = self.rma.copy()
+        rma.operation_id.action_create_repair = "automatic_on_confirm"
+        rma.action_confirm()
+        self.assertTrue(rma.repair_id)
+        self.assertFalse(rma.repair_id.user_id)
+
+    def test_automatically_create_return_and_repair_on_confirm(self):
+        """
+        Test automatic creation of return, repair, and delivery on confirmation
+
+        - receipt is automatically created on confirm
+        - repair is automatically created on confirm
+        - delivery is automatically created on confirm
+        """
+        self.operation.action_create_receipt = "automatic_on_confirm"
+        self.operation.action_create_repair = "automatic_on_confirm"
+        self.operation.action_create_delivery = "automatic_on_confirm"
+        self.rma_without_repair.action_confirm()
+        self.assertTrue(self.rma_without_repair.reception_move_id)
+        self.assertTrue(self.rma_without_repair.delivery_move_ids)
+        self.assertTrue(self.rma_without_repair.repair_id)
+
+    def test_automatically_create_return_and_repair_after_receipt(self):
+        """
+        Test automatic creation of repair and delivery after receipt
+
+        - receipt is automatically created on confirm
+        - repair and delivery are automatically created after receipt
+        """
+        self.operation.action_create_receipt = "automatic_on_confirm"
+        self.operation.action_create_repair = "automatic_after_receipt"
+        self.operation.action_create_delivery = "automatic_after_receipt"
+        self.rma_without_repair.action_confirm()
+        self.assertTrue(self.rma_without_repair.reception_move_id)
+        self.assertFalse(self.rma_without_repair.delivery_move_ids)
+        self.assertFalse(self.rma_without_repair.repair_id)
+        self._receive_rma(self.rma_without_repair)
+        self.assertTrue(self.rma_without_repair.delivery_move_ids)
+        self.assertTrue(self.rma_without_repair.repair_id)
