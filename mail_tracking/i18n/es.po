@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-12 17:22+0000\n"
-"PO-Revision-Date: 2023-10-15 20:38+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-05-07 18:19+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_tracking_email__state
@@ -125,12 +125,12 @@ msgstr "URL Clicada"
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Empresas"
 
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_res_partner
@@ -230,7 +230,7 @@ msgstr "Correo rebotado"
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_alias_domain
 msgid "Email Domain"
-msgstr ""
+msgstr "Dominio de correo electrónico"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_res_partner__email_score
@@ -358,13 +358,13 @@ msgstr "Mensajes enviados fallidos"
 #. odoo-javascript
 #: code:addons/mail_tracking/static/src/components/failed_message/failed_message.xml:0
 msgid "Go"
-msgstr ""
+msgstr "Ir"
 
 #. module: mail_tracking
 #. odoo-javascript
 #: code:addons/mail_tracking/static/src/components/failed_message/failed_message.xml:0
 msgid "Go to message"
-msgstr ""
+msgstr "Ir al mensaje"
 
 #. module: mail_tracking
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_email_search
@@ -395,12 +395,14 @@ msgid ""
 "If set as positive integer enables the deletion of old mail tracking records "
 "to reduce the database size."
 msgstr ""
+"Si se establece como entero positivo, permite la eliminación de registros "
+"antiguos de seguimiento de correo para reducir el tamaño de la base de datos."
 
 #. module: mail_tracking
 #. odoo-javascript
 #: code:addons/mail_tracking/static/src/components/failed_message/failed_message.xml:0
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_mail__is_failed_message
@@ -489,6 +491,8 @@ msgstr "MailTracking eventos"
 #: model_terms:ir.ui.view,arch_db:mail_tracking.res_config_settings_view_form
 msgid "Max age in days of mail tracking email records"
 msgstr ""
+"Antigüedad máxima en días de los registros de seguimiento de correo "
+"electrónico"
 
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
@@ -652,7 +656,7 @@ msgstr "Marcar como Revisado"
 #: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings__mail_tracking_show_aliases
 #: model_terms:ir.ui.view,arch_db:mail_tracking.res_config_settings_view_form
 msgid "Show Aliases in Mail Tracking"
-msgstr ""
+msgstr "Mostrar alias en el seguimiento de correo"
 
 #. module: mail_tracking
 #: model:ir.model.fields.selection,name:mail_tracking.selection__mail_tracking_event__event_type__soft_bounce
@@ -692,7 +696,7 @@ msgstr "Asunto"
 #. odoo-javascript
 #: code:addons/mail_tracking/static/src/components/failed_message/failed_message.xml:0
 msgid "Subject:"
-msgstr ""
+msgstr "Asunto:"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_mail__mail_tracking_needs_action
@@ -719,6 +723,12 @@ msgid ""
 "\n"
 "Records: %(records)s, User: %(user)s"
 msgstr ""
+"La operación solicitada no se puede completar debido a restricciones de "
+"seguridad. Por favor, contacte con su administrador del sistema.\n"
+"\n"
+"(Tipo de documento: %(type)s, Operación: %(operation)s\n"
+"\n"
+"Registros: %(records)s, Usuario: %(user)s"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__time
@@ -800,7 +810,7 @@ msgstr "Dado de baja"
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_res_users
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__user_agent

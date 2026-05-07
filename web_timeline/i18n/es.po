@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-03 03:50+0000\n"
-"PO-Revision-Date: 2026-04-13 08:14+0000\n"
+"PO-Revision-Date: 2026-05-07 17:46+0000\n"
 "Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
@@ -24,12 +24,12 @@ msgstr ""
 #: code:addons/web_timeline/static/src/views/timeline/timeline_renderer.esm.js:0
 #, python-format
 msgid "<b>UNASSIGNED</b>"
-msgstr "<b>SINASIGNAR</b>"
+msgstr "<b>SIN ASIGNAR</b>"
 
 #. module: web_timeline
 #: model:ir.model,name:web_timeline.model_ir_actions_act_window_view
 msgid "Action Window View"
-msgstr "Vista de ventana de acción"
+msgstr "Vista de Ventana de Acción"
 
 #. module: web_timeline
 #. odoo-javascript

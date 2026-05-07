@@ -157,7 +157,7 @@ class CrowdfundingChallenge(models.Model):
             self.env["res.company"].browse(
                 self.default_get(["company_id"]).get("company_id") or []
             )
-            or self.env.user.company
+            or self.env.company
         )
         return company.crowdfunding_default_fee_percentage
 

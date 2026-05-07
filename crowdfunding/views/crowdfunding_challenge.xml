@@ -143,6 +143,7 @@
                                 </group>
                                 <group name="right">
                                     <field name="pledge_default_amount" />
+                                    <field name="company_id" invisible="True" />
                                     <field
                                         name="company_id"
                                         groups="base.group_multi_company"

@@ -32,7 +32,7 @@ class SaleOrderRmaWizard(models.TransientModel):
                 carrier_model._check_company_domain(item.company_id)
             )
             item.available_reception_carrier_ids = (
-                carriers.available_carriers_rma(partner, item.order_id)
+                carriers.available_carriers(partner, item.order_id)
                 if partner
                 else carriers
             )
