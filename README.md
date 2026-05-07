@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-04 15:33 UTC** (elapsed 169s)
+Last build: **2026-05-07 21:36 UTC** (elapsed 151s)
 
 - Repos integrated: **117**
-- Canonical modules: **2090**
+- Canonical modules: **2091**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **137**
 
@@ -110,7 +110,7 @@ Last build: **2026-05-04 15:33 UTC** (elapsed 169s)
 | [server-ux](https://github.com/OCA/server-ux) | 37 | 5326e74 2026-03-25 Pedro M. Baeza Merge pull request #1264 from qrtl/15.0-upd-copier |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 0bb1516 2026-02-19 OCA-git-bot [BOT] post-merge updates |
 | [sign](https://github.com/OCA/sign) | 3 | 265ed93 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
-| [social](https://github.com/OCA/social) | 47 | 61b050a 2026-04-27 OCA-git-bot Merge PR #1856 into 15.0 |
+| [social](https://github.com/OCA/social) | 48 | cdccbd4 2026-05-07 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | 15e9af5 2026-02-26 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
