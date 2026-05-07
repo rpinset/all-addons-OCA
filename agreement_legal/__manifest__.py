@@ -11,7 +11,7 @@
     "website": "https://github.com/OCA/agreement",
     "category": "Partner",
     "license": "AGPL-3",
-    "version": "17.0.2.1.2",
+    "version": "17.0.3.0.0",
     "depends": ["contacts", "agreement", "product", "web"],
     "data": [
         "data/cron.xml",
@@ -33,6 +33,7 @@
         "views/agreement.xml",
         "views/menu.xml",
         "wizards/create_agreement_wizard.xml",
+        "wizards/recompute_agreement_from_template_wizard.xml",
     ],
     "demo": ["demo/demo.xml"],
     "assets": {

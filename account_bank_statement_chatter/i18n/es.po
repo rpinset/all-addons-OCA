@@ -7,45 +7,45 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-01 15:11+0000\n"
-"PO-Revision-Date: 2021-02-01 16:11+0100\n"
-"Last-Translator: cubells <vicent@vcubells.net>\n"
+"PO-Revision-Date: 2026-05-05 19:07+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
-"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción Necesaria"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Actividades"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Decoración de Excepción de Actividad"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Estado de Actividad"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icono de Tipo de Actividad"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Recuento de Archivos Adjuntos"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model,name:account_bank_statement_chatter.model_account_bank_statement
@@ -55,12 +55,12 @@ msgstr "Extracto"
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (Socios)"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__activity_type_icon
