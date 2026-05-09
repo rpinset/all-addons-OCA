@@ -62,14 +62,31 @@ msgid "Created on"
 msgstr "作成日"
 
 #. module: mass_mailing_partner
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_base_partner_merge_automatic_wizard__display_name
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__display_name
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__display_name
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_subscription__display_name
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_trace__display_name
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__display_name
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__display_name
 msgid "Display Name"
 msgstr "表示名"
 
 #. module: mass_mailing_partner
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_base_partner_merge_automatic_wizard__id
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__id
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__id
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_subscription__id
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_trace__id
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__id
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__id
 msgid "ID"
 msgstr "ID"
+
+#. module: mass_mailing_partner
+#: model:ir.model.fields,help:mass_mailing_partner.field_mailing_list__partner_unique
+msgid "If is checked, multiple contacts cannot be linked to the same partner"
+msgstr ""
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__write_uid
@@ -157,6 +174,11 @@ msgstr ""
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_category
 msgid "Partner Tag"
+msgstr ""
+
+#. module: mass_mailing_partner
+#: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_unique
+msgid "Partner unique?"
 msgstr ""
 
 #. module: mass_mailing_partner
