@@ -76,6 +76,17 @@ class StockMove(models.Model):
             partial_move.split_other_move_lines(partial_move.move_line_ids)
         return partial_moves
 
+    def _last_move_from_package_level(self):
+        """Returns True if self is the last move in the related package level"""
+        if self.package_level_id.move_ids - self:
+            # More moves in package level than self
+            return False
+        move_lines = self.move_line_ids
+        if move_lines.package_level_id.move_line_ids - move_lines:
+            # More lines in package level than there's lines with package level
+            return False
+        return True
+
     def _extract_in_split_order(self, default=None, backorder=False):
         """Extract moves in a new picking
 
@@ -103,10 +114,22 @@ class StockMove(models.Model):
         body = Markup(self.env._("The split order %s has been created.", link))
         picking.message_post(body=body)
         self.picking_id = new_picking.id
-        self.package_level_id.picking_id = new_picking.id
         self.move_line_ids.picking_id = new_picking.id
-        self.move_line_ids.package_level_id.picking_id = new_picking.id
-        self._action_assign()
+        # When package content is fully extracted to a new picking, also move
+        # the package. Otherwise the package stays in current picking.
+        if self._last_move_from_package_level():
+            self.package_level_id.picking_id = new_picking.id
+            self.move_line_ids.package_level_id.picking_id = new_picking.id
+        else:
+            self.package_level_id = False
+            self.move_line_ids.package_level_id = False
+            self.package_level_id.picking_id = False
+            for line in self.move_line_ids:
+                # We drop result package only if the whole package was
+                # supposed to be moved.
+                if line.package_id == line.result_package_id:
+                    line.result_package_id = False
+
         return new_picking
 
     def extract_and_action_done(self):

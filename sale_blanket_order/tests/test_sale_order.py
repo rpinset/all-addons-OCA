@@ -3,6 +3,7 @@
 from datetime import date, timedelta
 
 from odoo import fields
+from odoo.exceptions import ValidationError
 from odoo.tests import common
 
 
@@ -180,3 +181,155 @@ class TestSaleOrder(common.TransactionCase):
             ]
         )
         self.assertEqual(so_line.blanket_order_line, bo_line_assigned)
+
+    def test_action_confirm_raises_when_blanket_order_line_exhausted(self):
+        """We check that confirming a sale order that over-consumes a blanket
+        order line raises a ValidationError"""
+        blanket_order = self.create_blanket_order_02()
+        blanket_order.sudo().action_confirm()
+        bo_line = blanket_order.line_ids.filtered(
+            lambda line: line.product_id == self.product
+        )
+
+        # SO1 consumes 15 out of 20 — still within the limit
+        so1 = self.sale_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "order_line": [
+                    fields.Command.create(
+                        {
+                            "product_id": self.product.id,
+                            "product_uom": self.product.uom_id.id,
+                            "product_uom_qty": 15.0,
+                            "price_unit": 30.0,
+                            "blanket_order_line": bo_line.id,
+                        }
+                    )
+                ],
+            }
+        )
+        so1.action_confirm()
+
+        # SO2 tries to consume 10 more, pushing the total over the original qty
+        so2 = self.sale_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "order_line": [
+                    fields.Command.create(
+                        {
+                            "product_id": self.product.id,
+                            "product_uom": self.product.uom_id.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 30.0,
+                            "blanket_order_line": bo_line.id,
+                        }
+                    )
+                ],
+            }
+        )
+        with self.assertRaises(ValidationError):
+            so2.action_confirm()
+
+    def test_disable_adding_lines(self):
+        """We check that disable_adding_lines is False without the restriction group
+        and True when the user is in the group and the order is linked to a BO"""
+        blanket_order = self.create_blanket_order_02()
+        blanket_order.sudo().action_confirm()
+        bo_line = blanket_order.line_ids.filtered(
+            lambda line: line.product_id == self.product
+        )
+
+        so = self.sale_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "order_line": [
+                    fields.Command.create(
+                        {
+                            "product_id": self.product.id,
+                            "product_uom": self.product.uom_id.id,
+                            "product_uom_qty": 5.0,
+                            "price_unit": 30.0,
+                            "blanket_order_line": bo_line.id,
+                        }
+                    )
+                ],
+            }
+        )
+        self.assertFalse(so.disable_adding_lines)
+
+        group = self.env.ref("sale_blanket_order.blanket_orders_disable_adding_lines")
+        self.env.user.write({"groups_id": [fields.Command.link(group.id)]})
+        so.invalidate_recordset(["disable_adding_lines"])
+        self.assertTrue(so.disable_adding_lines)
+
+    def test_product_uom_change_assigns_blanket_order_line(self):
+        """We check that changing the uom or quantity on a sale order line
+        triggers blanket order line reassignment when a matching BO exists"""
+        blanket_order = self.create_blanket_order_02()
+        blanket_order.sudo().action_confirm()
+
+        so = self.sale_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "order_line": [
+                    fields.Command.create(
+                        {
+                            "product_id": self.product.id,
+                            "product_uom": self.product.uom_id.id,
+                            "product_uom_qty": 5.0,
+                            "price_unit": 30.0,
+                        }
+                    )
+                ],
+            }
+        )
+        so_line = so.order_line[0]
+        so_line.product_uom_change()
+        self.assertEqual(so_line.blanket_order_line.order_id, blanket_order)
+
+    def test_check_currency_raises_on_mismatch(self):
+        """We check that linking a sale order line to a blanket order line
+        whose currency differs from the sale order raises a ValidationError"""
+        pricelist_eur = self.env["product.pricelist"].create(
+            {"name": "Test EUR", "currency_id": self.env.ref("base.EUR").id}
+        )
+        blanket_order = self.blanket_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "validity_date": fields.Date.to_string(self.validity),
+                "payment_term_id": self.payment_term.id,
+                "pricelist_id": pricelist_eur.id,
+                "line_ids": [
+                    fields.Command.create(
+                        {
+                            "product_id": self.product.id,
+                            "product_uom": self.product.uom_id.id,
+                            "original_uom_qty": 20.0,
+                            "price_unit": 30.0,
+                        }
+                    )
+                ],
+            }
+        )
+        blanket_order.sudo().action_confirm()
+        bo_line = blanket_order.line_ids[0]
+        self.assertEqual(bo_line.currency_id, self.env.ref("base.EUR"))
+
+        with self.assertRaises(ValidationError):
+            self.sale_order_obj.create(
+                {
+                    "partner_id": self.partner.id,
+                    "pricelist_id": self.sale_pricelist.id,
+                    "order_line": [
+                        fields.Command.create(
+                            {
+                                "product_id": self.product.id,
+                                "product_uom": self.product.uom_id.id,
+                                "product_uom_qty": 5.0,
+                                "price_unit": 30.0,
+                                "blanket_order_line": bo_line.id,
+                            }
+                        )
+                    ],
+                }
+            )

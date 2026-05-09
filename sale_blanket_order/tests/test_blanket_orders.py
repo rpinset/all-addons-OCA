@@ -121,6 +121,36 @@ class TestSaleBlanketOrders(common.TransactionCase):
             str(cls.env.ref("analytic.analytic_internal").id): 100,
         }
 
+        cls.blanket_order = cls.blanket_order_obj.create(
+            {
+                "partner_id": cls.partner.id,
+                "validity_date": fields.Date.to_string(cls.tomorrow),
+                "payment_term_id": cls.payment_term.id,
+                "pricelist_id": cls.sale_pricelist.id,
+                "line_ids": [
+                    fields.Command.create(
+                        {
+                            "name": cls.product.name,
+                            "product_id": cls.product.id,
+                            "product_uom": cls.product.uom_id.id,
+                            "original_uom_qty": 20.0,
+                            "price_unit": 30.0,
+                        }
+                    ),
+                    fields.Command.create(
+                        {
+                            "name": cls.product.name,
+                            "product_id": cls.product.id,
+                            "product_uom": cls.product.uom_id.id,
+                            "original_uom_qty": 5.0,
+                            "price_unit": 30.0,
+                            "date_schedule": fields.Date.to_string(cls.tomorrow),
+                        }
+                    ),
+                ],
+            }
+        )
+
     def test_01_create_blanket_order(self):
         """We create a blanket order and check constrains to confirm BO"""
         blanket_order = self.blanket_order_obj.create(
@@ -473,3 +503,137 @@ class TestSaleBlanketOrders(common.TransactionCase):
         view_action = blanket_order.action_view_sale_orders()
         domain_ids = view_action["domain"][0][2]
         self.assertEqual(len(domain_ids), 3)
+
+    def test_compute_uom_qty(self):
+        """We confirm the shared blanket order and check that the computed qty
+        fields aggregate line quantities correctly before and after a sale order"""
+        self.blanket_order.sudo().action_confirm()
+
+        # Two lines: 20 + 5 = 25 total, nothing ordered yet
+        self.assertEqual(self.blanket_order.original_uom_qty, 25.0)
+        self.assertEqual(self.blanket_order.ordered_uom_qty, 0.0)
+        self.assertEqual(self.blanket_order.remaining_uom_qty, 25.0)
+        self.assertEqual(self.blanket_order.delivered_uom_qty, 0.0)
+        self.assertEqual(self.blanket_order.invoiced_uom_qty, 0.0)
+
+        wizard = self.blanket_order_wiz_obj.with_context(
+            active_id=self.blanket_order.id, active_model="sale.blanket.order"
+        ).create({})
+        # Only order from the line without a date_schedule
+        wizard.line_ids.filtered(lambda line: not line.date_schedule).write(
+            {"qty": 8.0}
+        )
+        wizard.line_ids.filtered("date_schedule").write({"qty": 0.0})
+        wizard.sudo().create_sale_order()
+        self.blanket_order.invalidate_recordset()
+
+        self.assertEqual(self.blanket_order.ordered_uom_qty, 8.0)
+        self.assertEqual(self.blanket_order.remaining_uom_qty, 17.0)
+
+    def test_unlink_blanket_order(self):
+        """We check that deleting a blanket order is only allowed when it is in
+        draft/expired state and has no active sale orders linked to it"""
+        # An open BO cannot be deleted
+        self.blanket_order.sudo().action_confirm()
+        self.assertEqual(self.blanket_order.state, "open")
+        with self.assertRaises(UserError):
+            self.blanket_order.unlink()
+
+        # Create a SO while the BO is open, then reset to draft:
+        # a draft BO with active SOs cannot be deleted either
+        wizard = self.blanket_order_wiz_obj.with_context(
+            active_id=self.blanket_order.id, active_model="sale.blanket.order"
+        ).create({})
+        wizard.line_ids.filtered(lambda line: not line.date_schedule).write(
+            {"qty": 5.0}
+        )
+        wizard.line_ids.filtered("date_schedule").write({"qty": 0.0})
+        wizard.sudo().create_sale_order()
+
+        self.blanket_order.sudo().write({"confirmed": False})
+        self.assertEqual(self.blanket_order.state, "draft")
+        self.assertTrue(self.blanket_order._check_active_orders())
+        with self.assertRaises(UserError):
+            self.blanket_order.unlink()
+
+        # A draft copy with no linked SOs can be deleted
+        bo_copy = self.blanket_order.copy()
+        bo_copy_id = bo_copy.id
+        bo_copy.unlink()
+        self.assertFalse(self.blanket_order_obj.browse(bo_copy_id).exists())
+
+    def test_onchange_partner_id_no_partner(self):
+        """We check that clearing the partner on a blanket order resets the
+        payment term and fiscal position to False"""
+        self.blanket_order.payment_term_id = self.payment_term
+        self.blanket_order.partner_id = False
+        self.blanket_order.onchange_partner_id()
+
+        self.assertFalse(self.blanket_order.payment_term_id)
+        self.assertFalse(self.blanket_order.fiscal_position_id)
+
+    def test_action_cancel_with_active_sale_orders(self):
+        """We check that cancelling a blanket order that still has active
+        sale orders raises a UserError"""
+        self.blanket_order.sudo().action_confirm()
+
+        wizard = self.blanket_order_wiz_obj.with_context(
+            active_id=self.blanket_order.id, active_model="sale.blanket.order"
+        ).create({})
+        wizard.line_ids.filtered(lambda line: not line.date_schedule).write(
+            {"qty": 5.0}
+        )
+        wizard.line_ids.filtered("date_schedule").write({"qty": 0.0})
+        wizard.sudo().create_sale_order()
+
+        with self.assertRaises(UserError):
+            self.blanket_order.sudo().action_cancel()
+
+    def test_search_uom_qty_fields(self):
+        """We check that the search methods on the computed qty fields return
+        blanket orders whose lines match the given criterion"""
+        self.blanket_order.sudo().action_confirm()
+
+        results = self.blanket_order_obj.search([("original_uom_qty", ">", 0.0)])
+        self.assertIn(self.blanket_order, results)
+
+        results = self.blanket_order_obj.search([("remaining_uom_qty", ">", 0.0)])
+        self.assertIn(self.blanket_order, results)
+
+        results = self.blanket_order_obj.search([("invoiced_uom_qty", "=", 0.0)])
+        self.assertIn(self.blanket_order, results)
+
+        results = self.blanket_order_obj.search([("delivered_uom_qty", "=", 0.0)])
+        self.assertIn(self.blanket_order, results)
+
+        wizard = self.blanket_order_wiz_obj.with_context(
+            active_id=self.blanket_order.id, active_model="sale.blanket.order"
+        ).create({})
+        wizard.line_ids.filtered(lambda line: not line.date_schedule).write(
+            {"qty": 5.0}
+        )
+        wizard.line_ids.filtered("date_schedule").write({"qty": 0.0})
+        wizard.sudo().create_sale_order()
+
+        results = self.blanket_order_obj.search([("ordered_uom_qty", ">", 0.0)])
+        self.assertIn(self.blanket_order, results)
+
+    def test_compute_display_name_from_sale_order(self):
+        """We check that the blanket order line display name in the sale order context
+        includes the order name, the scheduled date when set, and the remaining qty.
+        Without the context it falls back to the standard Odoo display name."""
+        self.blanket_order.sudo().action_confirm()
+
+        line_without_date = self.blanket_order.line_ids.filtered(
+            lambda line: not line.date_schedule
+        )
+        name = line_without_date.with_context(from_sale_order=True).display_name
+        self.assertIn(self.blanket_order.name, name)
+        self.assertIn(str(int(line_without_date.remaining_uom_qty)), name)
+
+        line_with_date = self.blanket_order.line_ids.filtered("date_schedule")
+        name_with_date = line_with_date.with_context(from_sale_order=True).display_name
+        self.assertIn(self.blanket_order.name, name_with_date)
+
+        # Without the context, falls back to the standard Odoo display name
+        self.assertTrue(line_without_date.display_name)

@@ -3,9 +3,11 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 import logging
 
-from odoo import _, exceptions, fields, models
+from odoo import exceptions, fields, models
 from odoo.exceptions import UserError
 from odoo.tools.float_utils import float_compare, float_is_zero
+
+from ..exceptions import CannotProcessMoreThanPlanned
 
 _logger = logging.getLogger(__name__)
 
@@ -45,8 +47,11 @@ class StockMoveLine(models.Model):
         )
         qty_lesser = compare == -1
         qty_greater = compare == 1
-        assert not qty_greater, "Quantity done cannot exceed quantity to do"
-        if qty_lesser:
+        if qty_greater:
+            raise CannotProcessMoreThanPlanned(
+                "Quantity done cannot exceed quantity to do"
+            )
+        elif qty_lesser:
             remaining = self.quantity - self.qty_picked
             new_line = self.copy(
                 {"quantity": remaining, "qty_picked": 0, "picked": False}
@@ -105,7 +110,7 @@ class StockMoveLine(models.Model):
             otherwise rely on a backorder.
         """
         if self.quantity < 0:
-            raise UserError(_("The demand cannot be negative"))
+            raise UserError(self.env._("The demand cannot be negative"))
         # store a new line if we have split our line (not enough qty)
         new_line = self.env["stock.move.line"]
         rounding = self.product_uom_id.rounding
@@ -166,7 +171,7 @@ class StockMoveLine(models.Model):
                 # in another location, user should never be able to scan it in
                 # another location, block the operation
                 raise exceptions.UserError(
-                    _(
+                    self.env._(
                         "Package {} has been partially picked in another location"
                     ).format(new_package.display_name)
                 )
@@ -197,7 +202,7 @@ class StockMoveLine(models.Model):
         )
         if not quant:
             raise exceptions.UserError(
-                _(
+                self.env._(
                     "Package %(package_name)s does not contain available product "
                     "%(product_name)s, cannot replace package.",
                     package_name=new_package.display_name,

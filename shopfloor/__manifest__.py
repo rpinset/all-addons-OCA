@@ -6,7 +6,7 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "18.0.0.13.1",
+    "version": "18.0.0.13.2",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",

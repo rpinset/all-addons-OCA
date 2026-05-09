@@ -35,8 +35,8 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable')."
-"id)][]\n"
+"                                            data_account_type_receivable').id)]"
+"[]\n"
 "                                        </code>\n"
 "                                        : variation of the balance of all "
 "receivable accounts over\n"
@@ -692,8 +692,8 @@ msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
 "                                    query results by name (eg <code>kpi1 + "
 "kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1."
-"field1</code>)."
+"                                    <code>kpi2.subkpi1</code>, "
+"<code>query1.field1</code>)."
 msgstr ""
 
 #. module: mis_builder
@@ -988,6 +988,11 @@ msgstr ""
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 msgid "Layout"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e6
+msgid "M"
 msgstr ""
 
 #. module: mis_builder
@@ -1779,8 +1784,18 @@ msgid "from %(date_from)s to %(date_to)s"
 msgstr ""
 
 #. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e3
+msgid "k"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__large
 msgid "large"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e-3
+msgid "m"
 msgstr ""
 
 #. module: mis_builder
@@ -1814,8 +1829,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "when <code>fld</code> is used : a field name specifier\n"
-"                                        must be provided (e.g. <code>fldp."
-"quantity</code>"
+"                                        must be provided (e.g. "
+"<code>fldp.quantity</code>"
 msgstr ""
 
 #. module: mis_builder
@@ -1836,4 +1851,9 @@ msgstr ""
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__divider__1e-6
+msgid "µ"
 msgstr ""

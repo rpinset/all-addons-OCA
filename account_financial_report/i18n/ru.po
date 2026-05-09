@@ -16,6 +16,12 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+msgid "%s"
+msgstr ""
+
+#. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
 msgid "&gt; 120 d."
 msgstr ""
@@ -23,11 +29,6 @@ msgstr ""
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
 msgid "1 - 30 d."
-msgstr ""
-
-#. module: account_financial_report
-#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
-msgid "10"
 msgstr ""
 
 #. module: account_financial_report
@@ -55,7 +56,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 msgid ""
 "<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
-"                    Duplicate amounts may be shown because more than one analytical account may be defined in the journal items."
+"                    Duplicate amounts may be shown because more than one "
+"analytical account may be defined in the journal items."
 msgstr ""
 
 #. module: account_financial_report
@@ -1646,8 +1648,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
 msgid ""
-"The Company in the Trial Balance Report Wizard and in Date Range must be the"
-" same."
+"The Company in the Trial Balance Report Wizard and in Date Range must be the "
+"same."
 msgstr ""
 
 #. module: account_financial_report
@@ -1745,9 +1747,9 @@ msgstr ""
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
 #: model:ir.model.fields,help:account_financial_report.field_open_items_report_wizard__hide_account_at_0
 msgid ""
-"Use this filter to hide an account or a partner with an ending balance at 0."
-" If partners are filtered, debits and credits totals will not match the "
-"trial balance."
+"Use this filter to hide an account or a partner with an ending balance at 0. "
+"If partners are filtered, debits and credits totals will not match the trial "
+"balance."
 msgstr ""
 
 #. module: account_financial_report

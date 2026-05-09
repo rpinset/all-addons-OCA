@@ -247,7 +247,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 18.0.1.4.10 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.4.11 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 18.0.1.0.0 |  | OCA Financial Reports Sale
 [account_move_line_report_xls](account_move_line_report_xls/) | 18.0.1.0.0 |  | Journal Items Excel export
 [account_tax_balance](account_tax_balance/) | 18.0.1.0.3 |  | Compute tax balances based on date range
@@ -560,7 +560,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales order invoicing by percentage of the quantity
 [sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 18.0.1.0.3 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
-[stock_picking_invoicing](stock_picking_invoicing/) | 18.0.1.1.0 |  | Stock Picking Invoicing
+[stock_picking_invoicing](stock_picking_invoicing/) | 18.0.1.2.0 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 18.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
 [//]: # (end addons)
@@ -1256,6 +1256,7 @@ addon | version | maintainers | summary
 [sale_commission_oca](sale_commission_oca/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales commissions OCA
 [sale_commission_oca_product_criteria](sale_commission_oca_product_criteria/) | 18.0.1.0.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Advanced commissions rules
 [sale_commission_oca_product_criteria_semaphore](sale_commission_oca_product_criteria_semaphore/) | 18.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Add semaphore for advanced commissions rules
+[sale_commission_pricelist_oca](sale_commission_pricelist_oca/) | 18.0.1.0.0 |  | Sales commissions by pricelist OCA
 [sale_commission_salesman](sale_commission_salesman/) | 18.0.1.0.0 |  | Sales commissions from salesman
 
 [//]: # (end addons)
@@ -3275,6 +3276,9 @@ and promote its widespread use.
 ## From OCA/l10n-brazil
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-brazil
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&target_branch=18.0)
 [![Pre-commit Status](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml?query=branch%3A18.0)
 [![Build Status](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml?query=branch%3A18.0)
@@ -3282,8 +3286,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-brazil-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-brazil-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# l10n-brazil
 
 l10n-brazil
 
@@ -4172,7 +4174,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 18.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 18.0.1.0.0 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 18.0.1.0.7 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 18.0.1.1.0 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur_atlas](delivery_seur_atlas/) | 18.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 18.0.1.0.1 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 18.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
@@ -4183,7 +4185,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 18.0.1.0.3 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 18.0.1.0.1 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 18.0.1.3.1 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 18.0.1.4.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 18.0.1.1.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 18.0.1.0.1 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 18.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
@@ -4197,14 +4199,14 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390_vat_prorate](l10n_es_aeat_mod390_vat_prorate/) | 18.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | AEAT modelo 390 Prorate
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 18.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 18.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 18.0.1.0.1 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.2.1.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 18.0.2.0.0 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.2.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.1.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 18.0.1.1.0 | <a href='https://github.com/christian-ramos-tecnativa'><img src='https://github.com/christian-ramos-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='christian-ramos-tecnativa'/></a> <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 420
 [l10n_es_atc_sii_oca](l10n_es_atc_sii_oca/) | 18.0.1.0.0 |  | Suministro Inmediato de Información en el IGIC
 [l10n_es_cnae](l10n_es_cnae/) | 18.0.1.0.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
-[l10n_es_facturae](l10n_es_facturae/) | 18.0.1.2.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 18.0.1.2.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 18.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_sale_stock](l10n_es_facturae_sale_stock/) | 18.0.1.0.0 |  | Entregas en Factura-e
 [l10n_es_hr_collective_agreement](l10n_es_hr_collective_agreement/) | 18.0.1.0.0 |  | Datos iniciales de configuración para convenios colectivos en España
@@ -4217,13 +4219,14 @@ addon | version | maintainers | summary
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 18.0.1.0.2 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos_oca](l10n_es_pos_oca/) | 18.0.1.1.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 18.0.2.0.0 |  | Envío de pedidos del TPV al SII
+[l10n_es_pos_sii_match](l10n_es_pos_sii_match/) | 18.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Extensión del contraste SII para el TPV
 [l10n_es_toponyms](l10n_es_toponyms/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 18.0.2.1.3 |  | Libros registro del IVA y del IRPF
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 18.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 18.0.2.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.2.4 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 18.0.1.2.5 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 18.0.1.0.1 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -4883,7 +4886,7 @@ addon | version | maintainers | summary
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 18.0.1.1.0 |  | Track metadata for GDPR compliance
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 18.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 18.0.1.0.2 |  | Mass mailing lists that get autopopulated
-[mass_mailing_partner](mass_mailing_partner/) | 18.0.1.1.0 |  | Link partners with mass-mailing
+[mass_mailing_partner](mass_mailing_partner/) | 18.0.1.2.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Resend mass mailings
 
 [//]: # (end addons)
@@ -5531,6 +5534,7 @@ addon | version | maintainers | summary
 [partner_country_lang](partner_country_lang/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner language according country
 [partner_country_state_required](partner_country_state_required/) | 18.0.1.0.0 |  | Partner Country State Required
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 18.0.1.0.0 |  | Contact deduplication with fine-grained permission control
+[partner_deduplicate_by_ref](partner_deduplicate_by_ref/) | 18.0.1.0.0 |  | Deduplicate Contacts by reference
 [partner_deduplicate_by_website](partner_deduplicate_by_website/) | 18.0.1.0.0 |  | Deduplicate Contacts by Website
 [partner_deduplicate_filter](partner_deduplicate_filter/) | 18.0.1.0.0 |  | Exclude records from the deduplication
 [partner_disable_gravatar](partner_disable_gravatar/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Disable automatic connection to gravatar.com
@@ -5852,7 +5856,7 @@ addon | version | maintainers | summary
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
 [product_pricelist_margin](product_pricelist_margin/) | 18.0.1.0.0 |  | This module shows the product's cost and margin from the pricelists.
 [product_pricelist_product_price_history](product_pricelist_product_price_history/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Track product price history within pricelists
-[product_pricelist_revision](product_pricelist_revision/) | 18.0.1.0.0 |  | Product Pricelist Revision
+[product_pricelist_revision](product_pricelist_revision/) | 18.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 18.0.2.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to create priceslists based on supplier info
 [product_print_category](product_print_category/) | 18.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Define print categories for products and automate products print, when data has changed
 [product_product_template_link](product_product_template_link/) | 18.0.1.0.0 |  | Adds a button in product to view the template
@@ -6757,6 +6761,7 @@ addon | version | maintainers | summary
 [sale_blanket_order](sale_blanket_order/) | 18.0.1.2.2 |  | Blanket Orders
 [sale_order_blanket_order](sale_order_blanket_order/) | 18.0.1.0.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
 [sale_order_blanket_order_stock_prebook](sale_order_blanket_order_stock_prebook/) | 18.0.1.0.0 |  | Allow to prebook stock for blanket order
+[sale_order_blanket_order_stock_prebook_release](sale_order_blanket_order_stock_prebook_release/) | 18.0.1.0.0 |  | Ensure that the date priotity when releasing qty is the start date of the blanker order
 
 [//]: # (end addons)
 
@@ -7362,7 +7367,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_external_dbsource](base_external_dbsource/) | 18.0.1.0.1 |  | External Database Sources
-[base_external_dbsource_mssql](base_external_dbsource_mssql/) | 18.0.1.0.3 | <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | External Database Source - MSSQL
+[base_external_dbsource_mssql](base_external_dbsource_mssql/) | 18.0.1.0.4 | <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | External Database Source - MSSQL
 [base_external_dbsource_mysql](base_external_dbsource_mysql/) | 18.0.1.0.0 |  | External Database Source - MySQL
 [base_external_dbsource_sqlite](base_external_dbsource_sqlite/) | 18.0.1.0.0 | <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | External Database Source - SQLite
 [base_external_system](base_external_system/) | 18.0.1.0.0 |  | Data models allowing for connection to external systems.
@@ -8518,7 +8523,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[shopfloor](shopfloor/) | 18.0.0.13.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 18.0.0.13.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 18.0.1.2.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_checkout_sync](shopfloor_checkout_sync/) | 18.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Glue module
 [shopfloor_cluster_picking_repack](shopfloor_cluster_picking_repack/) | 18.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Build delivery packages at the end of the cluster picking
@@ -8727,9 +8732,10 @@ addon | version | maintainers | summary
 [stock_location_tray](stock_location_tray/) | 18.0.1.0.0 |  | Organize a location as a matrix of cells
 [stock_location_zone](stock_location_zone/) | 18.0.1.0.0 |  | Classify locations with zones.
 [stock_lot_catalog](stock_lot_catalog/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Catalog
+[stock_lot_catalog_condition](stock_lot_catalog_condition/) | 18.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Catalog Condition
 [stock_lot_catalog_sale](stock_lot_catalog_sale/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Stock Lot Catalog
 [stock_lot_catalog_warehouse](stock_lot_catalog_warehouse/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Catalog Warehouse
-[stock_lot_condition](stock_lot_condition/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Condition
+[stock_lot_condition](stock_lot_condition/) | 18.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Condition
 [stock_lot_image](stock_lot_image/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Image
 [stock_lot_warehouse](stock_lot_warehouse/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock Lot Warehouse
 [stock_move_common_dest](stock_move_common_dest/) | 18.0.1.0.1 |  | Adds field for common destination moves
@@ -9347,11 +9353,12 @@ addon | version | maintainers | summary
 [web_notify_channel_message](web_notify_channel_message/) | 18.0.1.0.1 |  | Send an instant notification to channel users when a new message is posted
 [web_notify_upgrade](web_notify_upgrade/) | 18.0.1.0.0 |  | Notify active users when a module is installed or updated
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.5 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Web Pivot Computed Measure
+[web_portal_properties](web_portal_properties/) | 18.0.1.0.0 |  | Add a new field on properties to show them on portal
 [web_pwa_customize](web_pwa_customize/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Web Pwa Customize
 [web_quick_start_screen](web_quick_start_screen/) | 18.0.1.0.0 |  | Configurable start screen for quick actions
 [web_refresher](web_refresher/) | 18.0.1.0.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 18.0.1.0.2 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/cuongnmtm'><img src='https://github.com/cuongnmtm.png' width='32' height='32' style='border-radius:50%;' alt='cuongnmtm'/></a> | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 18.0.1.0.5 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 18.0.1.0.6 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
 [web_save_discard_button](web_save_discard_button/) | 18.0.1.0.1 | <a href='https://github.com/synconics'><img src='https://github.com/synconics.png' width='32' height='32' style='border-radius:50%;' alt='synconics'/></a> | Save & Discard Buttons
 [web_search_with_and](web_search_with_and/) | 18.0.1.0.1 |  | Use AND conditions on omnibar search
 [web_send_message_popup](web_send_message_popup/) | 18.0.1.0.0 |  | Web Send Message as Popup

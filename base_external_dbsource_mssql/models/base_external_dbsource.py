@@ -48,4 +48,8 @@ class BaseExternalDbsource(models.Model):
                 # If the query doesn't return rows, trying to get them anyway
                 # will raise an exception `sqlalchemy.exc.ResourceClosedError`
                 rows = [r for r in cur] if cur.returns_rows else []
+                # cur.returns_rows is False for DML (INSERT/UPDATE/DELETE),
+                # which need an explicit commit to persist changes.
+                if not cur.returns_rows:
+                    connection.commit()
         return rows, cols
