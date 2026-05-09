@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_timesheet_line_billable_tree" model="ir.ui.view">
+        <field name="name">account.analytic.line.tree.hr_timesheet</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="hr_timesheet.hr_timesheet_line_tree" />
+        <field name="arch" type="xml">
+            <field name="unit_amount" position="after">
+                <field name="is_billable" />
+            </field>
+        </field>
+    </record>
+    <record id="view_timesheet_billable_search" model="ir.ui.view">
+        <field name="name">account.analytic.line.search.billable</field>
+        <field name="model">account.analytic.line</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search string="Search Timesheets">
+                <field name="employee_id" />
+                <field name="project_id" />
+                <field name="task_id" />
+                <field name="date" />
+                <filter
+                    string="Month"
+                    name="this_month"
+                    domain="[('date','&gt;=', (context_today()).strftime('%Y-%m-01'))]"
+                />
+                <group expand="0" string="Group By">
+                    <filter
+                        string="Employee"
+                        name="groupby_employee"
+                        context="{'group_by': 'employee_id'}"
+                    />
+                    <filter
+                        string="project"
+                        name="groupby_project"
+                        context="{'group_by': 'project_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_timesheet_billable" model="ir.actions.act_window">
+        <field name="name">Timesheet Billable</field>
+        <field name="res_model">account.analytic.line</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="hr_timesheet_line_billable_tree" />
+        <field name="search_view_id" ref="view_timesheet_billable_search" />
+        <field
+            name="domain"
+        >[('is_billable', '!=', False),('sale_order_line_id', '=', False)]</field>
+    </record>
+    <record id="action_create_sale_orders" model="ir.actions.server">
+        <field name="name">Create Sales orders</field>
+        <field name="model_id" ref="model_account_analytic_line" />
+        <field name="binding_model_id" ref="model_account_analytic_line" />
+        <field name="binding_view_types">tree</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                action = records.create_sale_orders()
+        </field>
+    </record>
+    <menuitem
+        id="timesheet_to_bill"
+        name="Timesheets to Bill"
+        parent="hr_timesheet.menu_hr_time_tracking"
+        action="action_timesheet_billable"
+        sequence="10"
+    />
+</odoo>
