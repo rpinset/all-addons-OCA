@@ -21,10 +21,10 @@ class SaleOrder(models.Model):
 
     def action_confirm(self):
         self.flush_recordset()
-        self._compute_blanket_move_date_priority()
+        self._set_blanket_move_date_priority()
         return super().action_confirm()
 
-    def _compute_blanket_move_date_priority(self):
+    def _set_blanket_move_date_priority(self):
         """
         Compute the move date priority for the blanket orders.
 
@@ -43,25 +43,21 @@ class SaleOrder(models.Model):
         if not blankets:
             return
 
-        # we must use plain SQL to avoid the transformation of date and datetime
-        # fields to strings done by the read_group method which is designed to
-        # be use to display data in a view... :-(
-        query = """
-            SELECT
-                blanket_validity_start_date,
-                count(1)
-            FROM
-                sale_order
-            WHERE
-                order_type = 'blanket'
-                AND state in ('sale', 'done')
-                AND blanket_validity_start_date in %s
-            GROUP BY blanket_validity_start_date
-        """
-        self.env.cr.execute(
-            query, (tuple(blankets.mapped("blanket_validity_start_date")),)
+        start_dates = blankets.mapped("blanket_validity_start_date")
+        groupby_key = "blanket_validity_start_date:day"
+        groups = self.env["sale.order"]._read_group(
+            domain=[
+                ("order_type", "=", "blanket"),
+                ("state", "in", ("sale", "done")),
+                ("blanket_validity_start_date", "in", start_dates),
+            ],
+            fields=["order_count:count(id)"],
+            groupby=[groupby_key],
         )
-        count_per_date = dict(self.env.cr.fetchall())
+        count_per_date = {
+            fields.Date.to_date(g["__range"][groupby_key]["from"]): g["order_count"]
+            for g in groups
+        }
         for order in blankets.sorted("create_date"):
             start_date = order.blanket_validity_start_date
             order_position = count_per_date.get(start_date, 0)
@@ -74,13 +70,13 @@ class SaleOrder(models.Model):
         blanket_orders = self.filtered(
             lambda o: o.order_type == "blanket" and o.state != "draft"
         )
-        blanket_orders.with_context(from_inverse_commitment_date=True)
+        blanket_orders = blanket_orders.with_context(from_inverse_commitment_date=True)
 
         # Ensure we do not get back into the "_inverse_blanket_validity_start_date"
-        # since this would trigger "_compute_blanket_move_date_priority" and this
+        # since this would trigger "_set_blanket_move_date_priority" and this
         # would mess with the date priority
         for blanket_order in blanket_orders:
-            blanket_order.with_context(from_inverse_commitment_date=True).write(
+            blanket_order.write(
                 {"blanket_validity_start_date": blanket_order.commitment_date}
             )
 
@@ -100,7 +96,7 @@ class SaleOrder(models.Model):
         for order in blanket_orders:
             order.commitment_date = order.blanket_validity_start_date
 
-        blanket_orders._compute_blanket_move_date_priority()
+        blanket_orders._set_blanket_move_date_priority()
 
         out_moves = self.env["stock.move"].search(
             [

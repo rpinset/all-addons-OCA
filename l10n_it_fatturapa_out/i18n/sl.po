@@ -923,7 +923,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_fatturapa_out/models/attachment.py:0
 #, python-format
-msgid "You can only delete files in 'Ready to Send' state."
+msgid "You can only delete files that haven't been sent to SdI yet."
 msgstr ""
 
 #. module: l10n_it_fatturapa_out

@@ -5,7 +5,7 @@
     "name": "Sale Order Blanket Order Stock Prebook Release",
     "summary": """Ensure that the date priotity when releasing"""
     """ qty is the start date of the blanker order""",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.2.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-blanket",

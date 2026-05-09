@@ -94,8 +94,8 @@ class TestSaleOrderBlanketOrderStockPrebookRelease(
             ),
         )
 
-    def test_date_priority_on_prebook_moves(self):
-        """For blanket oders, the prebook moves must have the date priority set to the
+    def test_date_priority_on_prebook_moves_blanket_orders(self):
+        """For blanket orders, the prebook moves must have the date priority set to the
         blanket move date priority"""
         self.blanket_so.action_confirm()
         prebook_moves = self.blanket_so.order_line.move_ids.filtered(
@@ -107,7 +107,7 @@ class TestSaleOrderBlanketOrderStockPrebookRelease(
                 move.date_priority, self.blanket_so.blanket_move_date_priority
             )
 
-    def test_date_priority_on_prebook_moves_2(self):
+    def test_date_priority_on_prebook_moves_regular_orders(self):
         """For normal order, in case of prebooking, the date priority must be the
         datetime at confirmation"""
         new_so = self.env["sale.order"].create(
@@ -200,24 +200,129 @@ class TestSaleOrderBlanketOrderStockPrebookRelease(
         self.assertEqual(
             out_moves.date_priority.date(), self.blanket_so.blanket_validity_start_date
         )
-
-        self.blanket_so.blanket_validity_start_date = date(2025, 1, 2)
-        self.assertEqual(self.blanket_so.commitment_date.date(), date(2025, 1, 2))
+        validity_start_date = date(2025, 1, 2)
+        self.blanket_so.blanket_validity_start_date = validity_start_date
+        self.assertEqual(self.blanket_so.commitment_date.date(), validity_start_date)
         self.assertEqual(
             out_moves.date_priority.date(), self.blanket_so.blanket_validity_start_date
         )
 
     def test_confirm_dates_validation_not_broken_on_confirm(self):
-        """Ensure the dates validation occurs when confirming a blanket order.
-
-        This unit test addresses a bug where a computed field's calculation was
-        triggered before essential date validation (defined by @api.constrains).
-        The bug arose because the compute method did not account for potentially
-        empty date fields, leading to a stack trace in the UI instead of a nice
-        Validation Error pop up.
-        """
+        """Ensure the dates validation occurs when confirming a blanket order."""
         self.blanket_so.write(
             {"blanket_validity_start_date": False, "blanket_validity_end_date": False}
         )
         with self.assertRaises(ValidationError):
             self.blanket_so.action_confirm()
+
+    def test_set_blanket_move_date_priority_skips_without_start_date(self):
+        self.env["sale.order"]._set_blanket_move_date_priority()
+
+        self.blanket_so.write({"blanket_validity_start_date": False})
+        self.blanket_so._set_blanket_move_date_priority()
+        self.assertFalse(self.blanket_so.blanket_move_date_priority)
+
+    def test_inverse_commitment_date_updates_validity_start_date_when_confirmed(self):
+        """Changing commitment_date on a confirmed blanket order must sync
+        blanket_validity_start_date without recomputing move date priorities."""
+        self.blanket_so.action_confirm()
+        original_priority = self.blanket_so.blanket_move_date_priority
+        self.assertTrue(original_priority)
+
+        new_date = date(2025, 3, 1)
+        self.blanket_so.commitment_date = new_date
+
+        self.assertEqual(
+            self.blanket_so.blanket_validity_start_date,
+            new_date,
+            "blanket_validity_start_date must be updated when commitment_date changes",
+        )
+        # _set_blanket_move_date_priority must NOT have been triggered again
+        # (the context from_inverse_commitment_date prevents it)
+        self.assertEqual(
+            self.blanket_so.blanket_move_date_priority,
+            original_priority,
+            (
+                "blanket_move_date_priority must not change "
+                "when updating via commitment_date"
+            ),
+        )
+
+    def test_inverse_commitment_date_skips_draft_blanket_orders(self):
+        """Changing commitment_date on a draft blanket order must not affect
+        blanket_validity_start_date."""
+        self.assertEqual(self.blanket_so.state, "draft")
+        original_start = self.blanket_so.blanket_validity_start_date
+
+        self.blanket_so.commitment_date = date(2025, 3, 1)
+
+        self.assertEqual(
+            self.blanket_so.blanket_validity_start_date,
+            original_start,
+            "Draft blanket orders must not be affected by commitment_date inverse",
+        )
+
+    def test_inverse_blanket_validity_start_date_skips_with_context(self):
+        """_inverse_blanket_validity_start_date must return early when
+        from_inverse_commitment_date is in the context, leaving commitment_date
+        and move date_priorities untouched."""
+        self.blanket_so.action_confirm()
+        original_commitment = self.blanket_so.commitment_date
+        original_priority = self.blanket_so.blanket_move_date_priority
+
+        new_date = date(2025, 3, 1)
+        self.blanket_so.with_context(from_inverse_commitment_date=True).write(
+            {"blanket_validity_start_date": new_date}
+        )
+
+        self.assertEqual(
+            self.blanket_so.blanket_validity_start_date,
+            new_date,
+            "blanket_validity_start_date must be updated",
+        )
+        self.assertEqual(
+            self.blanket_so.commitment_date,
+            original_commitment,
+            "commitment_date must not change when from_inverse_commitment_date is set",
+        )
+        self.assertEqual(
+            self.blanket_so.blanket_move_date_priority,
+            original_priority,
+            (
+                "blanket_move_date_priority must not change "
+                "when from_inverse_commitment_date is set"
+            ),
+        )
+
+    def test_inverse_blanket_validity_start_date_skips_draft(self):
+        """_inverse_blanket_validity_start_date must not update commitment_date or
+        recompute priorities for draft blanket orders."""
+        self.assertEqual(self.blanket_so.state, "draft")
+        # Commitment date is not set on a draft order
+        self.assertFalse(self.blanket_so.commitment_date)
+
+        self.blanket_so.write({"blanket_validity_start_date": date(2025, 3, 1)})
+
+        self.assertFalse(
+            self.blanket_so.commitment_date,
+            (
+                "commitment_date must not be set by "
+                "_inverse_blanket_validity_start_date on draft"
+            ),
+        )
+        self.assertFalse(self.blanket_so.blanket_move_date_priority)
+
+    def test_prepare_procurement_values_sets_date_priority_for_blanket_at_confirm(
+        self,
+    ):
+        """_prepare_procurement_values must include date_priority equal to
+        blanket_move_date_priority for blanket orders with at_confirm strategy."""
+        self.blanket_so.action_confirm()
+        expected_priority = self.blanket_so.blanket_move_date_priority
+        self.assertTrue(expected_priority)
+
+        line = self.blanket_so.order_line[0]
+        values = line._prepare_procurement_values()
+
+        self.assertIn("date_priority", values)
+        self.assertEqual(values["date_priority"], expected_priority)
