@@ -8,3 +8,6 @@
 * `Aion Tech <https://aiontech.company/>`_:
 
   * Simone Rubino <simone.rubino@aion-tech.it>
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>

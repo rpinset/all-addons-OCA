@@ -279,20 +279,29 @@ class WithholdingTaxStatement(models.Model):
                 if wt_inv:
                     # Compute how much has been already paid
                     # but has no corresponding Withholding Tax move
-                    payment_moves = self.env["account.move"].browse()
+                    payment_moves_to_amount = {}
                     for (
                         _partial,
-                        _amount,
+                        amount,
                         counterpart_line,
                     ) in st.invoice_id._get_reconciled_invoices_partials():
-                        payment_moves |= counterpart_line.move_id
+                        payment_move = counterpart_line.move_id
+                        payment_moves_to_amount.setdefault(
+                            payment_move,
+                            payment_moves_to_amount.get(payment_move, 0) + amount,
+                        )
+                    payment_moves = self.env["account.move"].browse(
+                        [move.id for move in payment_moves_to_amount.keys()]
+                    )
                     # Exclude payments created for Withholding Taxes
                     wt_moves = self.env["withholding.tax.move"].search(
                         [("account_move_id", "in", payment_moves.ids)]
                     )
                     wt_payment_moves = wt_moves.wt_account_move_id
                     no_wt_payment_moves = payment_moves - wt_payment_moves
-                    no_wt_paid_amount = sum(no_wt_payment_moves.mapped("amount_total"))
+                    no_wt_paid_amount = sum(
+                        [payment_moves_to_amount[move] for move in no_wt_payment_moves]
+                    )
 
                     amount_base = st.invoice_id.amount_untaxed * (
                         no_wt_paid_amount / st.invoice_id.amount_net_pay

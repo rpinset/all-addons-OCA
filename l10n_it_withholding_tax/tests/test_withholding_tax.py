@@ -626,8 +626,15 @@ class TestWithholdingTax(TransactionCase):
             ],
         )
         self.assertEqual(len(statements), len(invoices))
-        self.assertAlmostEqual(
-            sum(x.tax for x in statements), 95.44 + 2.62 + 20 + 9.68 + 9.68
+        self.assertRecordValues(
+            statements.sorted("tax"),
+            [
+                {
+                    "amount": amount,
+                    "tax": amount,
+                }
+                for amount in (2.62, 9.68, 9.68, 20, 95.44)
+            ],
         )
         wh_move_ids = statements.mapped("move_ids.wt_account_move_id")
         self.assertEqual(len(wh_move_ids), len(statements))
@@ -734,8 +741,9 @@ class TestWithholdingTax(TransactionCase):
         """
         # Arrange
         amount = 2000
-        wt_amount = 500
         bill = self._create_bill(price_unit=amount)
+        w_tax = bill.line_ids.invoice_line_tax_wt_ids
+        wt_amount = amount * w_tax.rate_ids.tax / 100
         bill.withholding_tax_no_generate_move = True
         wt_statement = self.env["withholding.tax.statement"].search(
             [
@@ -743,6 +751,7 @@ class TestWithholdingTax(TransactionCase):
             ]
         )
         # pre-condition
+        self.assertEqual(wt_amount, 400)
         self.assertTrue(bill.withholding_tax_no_generate_move)
 
         # Act 1: Partial payment generating no move

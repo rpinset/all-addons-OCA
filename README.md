@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-09 04:30 UTC** (elapsed 75s)
+Last build: **2026-05-12 15:42 UTC** (elapsed 204s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -26,7 +26,7 @@ Last build: **2026-05-09 04:30 UTC** (elapsed 75s)
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 7138a05 2025-11-25 mymage Translated using Weblate (Italian) |
 | [bank-payment](https://github.com/OCA/bank-payment) | 21 | 884303a 2026-04-08 mymage Translated using Weblate (Italian) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 16 | 53df9ab 2026-04-20 Francesco Foresti Translated using Weblate (Italian) |
-| [brand](https://github.com/OCA/brand) | 12 | a69fcc8 2026-01-15 Betül Öğmen Translated using Weblate (Turkish) |
+| [brand](https://github.com/OCA/brand) | 12 | 6b61503 2026-05-12 mymage Translated using Weblate (Italian) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | 3084b17 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [calendar](https://github.com/OCA/calendar) | 2 | f49cd17 2025-07-22 mymage Translated using Weblate (Italian) |
 | [commission](https://github.com/OCA/commission) | 18 | f47b3ab 2026-04-13 mymage Translated using Weblate (Italian) |
@@ -74,7 +74,7 @@ Last build: **2026-05-09 04:30 UTC** (elapsed 75s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 0d7b685 2026-05-05 Francesco Foresti Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | f2dde4b 2026-05-11 OCA-git-bot [BOT] post-merge updates |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
