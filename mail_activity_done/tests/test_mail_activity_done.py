@@ -1,69 +1,68 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from datetime import date
-
+from odoo import fields
 from odoo.tests.common import TransactionCase
 
 
 class TestMailActivityDoneMethods(TransactionCase):
-    def setUp(self):
-        super(TestMailActivityDoneMethods, self).setUp()
-        self.employee = self.env["res.users"].create(
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.employee = cls.env["res.users"].create(
             {
-                "company_id": self.env.ref("base.main_company").id,
+                "company_id": cls.env.ref("base.main_company").id,
                 "name": "Test User",
                 "login": "testuser@testuser.local",
                 "email": "testuser@testuser.local",
                 "tz": "Europe/Brussels",
                 "groups_id": [
-                    (
-                        6,
-                        0,
+                    fields.Command.set(
                         [
-                            self.env.ref("base.group_user").id,
-                            self.env.ref("base.group_partner_manager").id,
-                        ],
+                            cls.env.ref("base.group_user").id,
+                            cls.env.ref("base.group_partner_manager").id,
+                        ]
                     )
                 ],
             }
         )
-        self.partner = (
-            self.env["res.partner"]
-            .with_user(self.employee)
+        cls.partner = (
+            cls.env["res.partner"]
+            .with_user(cls.employee)
             .create({"name": "test partner"})
         )
-        activity_type = self.env["mail.activity.type"].create(
+        activity_type = cls.env["mail.activity.type"].create(
             {"name": "test activity type"}
         )
-        self.act1 = (
-            self.env["mail.activity"]
-            .with_user(self.employee)
+        today = fields.Date.context_today(cls.employee)
+        cls.act1 = (
+            cls.env["mail.activity"]
+            .with_user(cls.employee)
             .create(
                 {
                     "activity_type_id": activity_type.id,
-                    "res_id": self.partner.id,
+                    "res_id": cls.partner.id,
                     "res_model": "res.partner",
-                    "res_model_id": self.env["ir.model"]._get("res.partner").id,
-                    "user_id": self.employee.id,
-                    "date_deadline": date.today(),
+                    "res_model_id": cls.env["ir.model"]._get("res.partner").id,
+                    "user_id": cls.employee.id,
+                    "date_deadline": today,
                 }
             )
         )
-        self.act2 = (
-            self.env["mail.activity"]
-            .with_user(self.employee)
+        cls.act2 = (
+            cls.env["mail.activity"]
+            .with_user(cls.employee)
             .create(
                 {
                     "activity_type_id": activity_type.id,
-                    "res_id": self.partner.id,
+                    "res_id": cls.partner.id,
                     "res_model": "res.partner",
-                    "res_model_id": self.env["ir.model"]._get("res.partner").id,
-                    "user_id": self.employee.id,
-                    "date_deadline": date.today(),
+                    "res_model_id": cls.env["ir.model"]._get("res.partner").id,
+                    "user_id": cls.employee.id,
+                    "date_deadline": today,
                 }
             )
         )
-        self.activities = self.act1 + self.act2
+        cls.activities = cls.act1 + cls.act2
 
     def _set_activities_done(self):
         self.activities._action_done()

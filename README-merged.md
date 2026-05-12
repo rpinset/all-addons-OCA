@@ -540,7 +540,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_billing](account_billing/) | 16.0.1.2.1 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
+[account_billing](account_billing/) | 16.0.1.2.2 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 16.0.2.0.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 16.0.1.0.0 |  | Set a alternate payor/payee in invoices
 [account_invoice_analytic_search](account_invoice_analytic_search/) | 16.0.1.0.0 |  | Search invoices by analytic account or by project manager
@@ -976,7 +976,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.3 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.1.7 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.2.0 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.6 |  | Create SEPA files for Direct Debit
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.3 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
 [account_payment_mode](account_payment_mode/) | 16.0.2.0.0 |  | Account Payment Mode
@@ -1051,7 +1051,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.3 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_plaid](account_statement_import_online_plaid/) | 16.0.1.0.0 |  | Online Bank Statements: plaid.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.3 |  | Online Bank Statements: MyPonto.com
-[account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.1.0.1 |  | Online Bank Statements: Qonto
+[account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.2.0.0 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 16.0.1.0.0 |  | Import QIF Bank Statements
 [account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
@@ -1331,7 +1331,7 @@ addon | version | maintainers | summary
 [l10n_eu_nace](l10n_eu_nace/) | 16.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | European NACE partner categories
 [product_fao_fishing](product_fao_fishing/) | 16.0.1.0.1 |  | Set fishing areas and capture technology
 [product_packaging_unece](product_packaging_unece/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | UNECE nomenclature for product packaging
-[uom_unece](uom_unece/) | 16.0.1.3.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
+[uom_unece](uom_unece/) | 16.0.1.3.1 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 
 [//]: # (end addons)
 
@@ -1607,6 +1607,9 @@ and promote its widespread use.
 ## From OCA/contract
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# contract
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/contract&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/contract/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/contract/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/contract/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/contract/actions/workflows/test.yml?query=branch%3A16.0)
@@ -1614,8 +1617,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/contract-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/contract-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# contract
 
 TODO: add repo description.
 
@@ -1635,7 +1636,7 @@ addon | version | maintainers | summary
 [contract_forecast](contract_forecast/) | 16.0.1.0.0 |  | Contract forecast
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Contract Invoice Start End Dates
 [contract_mandate](contract_mandate/) | 16.0.1.0.0 |  | Mandate in contracts and their invoices
-[contract_payment_auto](contract_payment_auto/) | 16.0.1.0.0 |  | Adds automatic payments to contracts.
+[contract_payment_auto](contract_payment_auto/) | 16.0.1.0.1 |  | Adds automatic payments to contracts.
 [contract_payment_mode](contract_payment_mode/) | 16.0.1.0.1 |  | Payment mode in contracts and their invoices
 [contract_queue_job](contract_queue_job/) | 16.0.1.0.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/BurkhalterY'><img src='https://github.com/BurkhalterY.png' width='32' height='32' style='border-radius:50%;' alt='BurkhalterY'/></a> | This addon make contract invoicing cron plan each contract in a job instead of creating all invoices in one transaction
 [contract_sale](contract_sale/) | 16.0.1.2.0 |  | Contract from Sale
@@ -1645,7 +1646,7 @@ addon | version | maintainers | summary
 [contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 16.0.1.0.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/danypr92'><img src='https://github.com/danypr92.png' width='32' height='32' style='border-radius:50%;' alt='danypr92'/></a> | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 16.0.1.1.1 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 16.0.1.0.2 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Recurring - Product Contract
-[subscription_oca](subscription_oca/) | 16.0.1.3.0 |  | Generate recurring invoices.
+[subscription_oca](subscription_oca/) | 16.0.1.3.1 |  | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -2975,6 +2976,9 @@ and promote its widespread use.
 ## From OCA/hr-expense
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# hr-expense
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-expense&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/hr-expense/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/hr-expense/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2982,8 +2986,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/hr-expense-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-expense-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# hr-expense
 
 TODO: add repo description.
 
@@ -4927,6 +4929,7 @@ addon | version | maintainers | summary
 [mrp_bom_tag](mrp_bom_tag/) | 16.0.1.2.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Add tags on your BoM to find it easily
 [mrp_bom_tracking](mrp_bom_tracking/) | 16.0.1.0.1 |  | Logs any change to a BoM in the chatter
 [mrp_bom_version](mrp_bom_version/) | 16.0.1.0.0 |  | BoM versioning
+[mrp_bom_weight](mrp_bom_weight/) | 16.0.1.0.0 |  | MRP BoM Weight
 [mrp_bom_widget_section_and_note_one2many](mrp_bom_widget_section_and_note_one2many/) | 16.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Add section and note in Bills of Materials
 [mrp_default_workorder_time](mrp_default_workorder_time/) | 16.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Adds an MRP default workorder time
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 16.0.1.0.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
@@ -5722,10 +5725,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.4.1.0 |  | A property management system
+[pms](pms/) | 16.0.4.3.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 16.0.2.1.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 16.0.2.3.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 16.0.1.2.0 |  | PMS AEAT SII Integration
 [pms_l10n_es_tbai](pms_l10n_es_tbai/) | 16.0.1.1.0 |  | PMS TicketBAI Integration
 [pms_partner_identification](pms_partner_identification/) | 16.0.2.3.0 |  | Add identification models in pms
@@ -8044,7 +8047,7 @@ addon | version | maintainers | summary
 [email_template_qweb](email_template_qweb/) | 16.0.1.0.1 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.1.0 |  | Post unkonwn messages to an existing thread
 [mail_activity_board](mail_activity_board/) | 16.0.1.2.0 |  | Add Activity Boards
-[mail_activity_done](mail_activity_done/) | 16.0.1.3.0 |  | Mail Activity Done
+[mail_activity_done](mail_activity_done/) | 16.0.1.4.0 |  | Mail Activity Done
 [mail_activity_filter_internal_user](mail_activity_filter_internal_user/) | 16.0.1.0.0 |  | Filter on internal user by default when assigning someone to an activity.
 [mail_activity_meeting_reminder](mail_activity_meeting_reminder/) | 16.0.1.0.0 |  | Allow to enforce reminders on meeting activity types
 [mail_activity_partner](mail_activity_partner/) | 16.0.1.0.0 |  | Add Partner to Activities

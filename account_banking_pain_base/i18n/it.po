@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-30 14:25+0000\n"
+"PO-Revision-Date: 2026-05-12 09:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_banking_pain_base
 #: model:ir.model.constraint,message:account_banking_pain_base.constraint_account_payment_method_code_payment_type_unique
@@ -197,6 +197,18 @@ msgstr "Impostazioni configurazione"
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__comt
 msgid "Consumer Third Party Consolidated Payment"
 msgstr "Pagamento consolidato intermediario cliente"
+
+#. module: account_banking_pain_base
+#: model:ir.model.fields,help:account_banking_pain_base.field_account_payment_method__sepa_pain09_address_mode
+msgid ""
+"Controls how the <PstlAdr> block is generated for PAIN.001.001.09- Minimal: "
+"only City (TwnNm) and Country (Ctry)- Hybrid: City/Country plus optional "
+"AdrLine lines (street/street2) and optional Post Code (PstCd) when available."
+msgstr ""
+"Controlla come viene generato il blocco <PstlAdr> per PAIN.001.001.09 - "
+"Minimo: solo Città (TwnNm) e Nazione (Ctry) - Ibrido: Città/Nazione più "
+"linee AdrLine opzionali (street/street2) e codice postale opzionale (PstCd) "
+"quando disponibile."
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__cvcf
@@ -408,6 +420,11 @@ msgid "Housing Tax"
 msgstr "Imposta sulla casa"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_method__sepa_pain09_address_mode__hybrid
+msgid "Hybrid (City/Country + AdrLine)"
+msgstr "Ibrido (Città/Nazione + AdrLine)"
+
+#. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__communication_type__iso
 msgid "ISO"
 msgstr "ISO"
@@ -568,6 +585,11 @@ msgid "Medical Services"
 msgstr "Servizi medici"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_method__sepa_pain09_address_mode__minimal
+msgid "Minimal (City + Country only)"
+msgstr "Minimo (solo Città + Nazione)"
+
+#. module: account_banking_pain_base
 #. odoo-python
 #: code:addons/account_banking_pain_base/models/account_payment_order.py:0
 #, python-format
@@ -644,6 +666,23 @@ msgstr "Altra fattura relativa alle telecomunicazioni"
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_method__pain_version
 msgid "PAIN Version"
 msgstr "Versione PAIN"
+
+#. module: account_banking_pain_base
+#. odoo-python
+#: code:addons/account_banking_pain_base/models/account_payment_order.py:0
+#, python-format
+msgid ""
+"PAIN format %(flavor)s requires City (TwnNm). Partner missing City: "
+"%(partner)s. Please set a City or choose an older PAIN format."
+msgstr ""
+"Il formato PAIN %(flavor)s richiede la città (TwnNm). Il partner non ha la "
+"città: %(partner)s. Si prega di impostare una città o di scegliere un "
+"formato PAIN precedente."
+
+#. module: account_banking_pain_base
+#: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_method__sepa_pain09_address_mode
+msgid "PAIN.001.001.09 Address Mode"
+msgstr "Modo indirizzo PAIN.001.001.09"
 
 #. module: account_banking_pain_base
 #. odoo-python

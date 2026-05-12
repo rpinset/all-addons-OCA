@@ -1,0 +1,22 @@
+# Copyright (C) 2024-Today: GRAP (http://www.grap.coop)
+# @author: Quentin Dupont
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+{
+    "name": "MRP BoM Weight",
+    "version": "16.0.1.0.0",
+    "category": "Manufacturing",
+    "author": "GRAP, Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/manufacture",
+    "license": "AGPL-3",
+    "depends": [
+        "mrp",
+        # OCA
+        "product_uom_measure_type",
+        "product_net_weight",
+        "mrp_bom_line_net_qty",
+    ],
+    "data": [
+        "views/view_mrp_bom.xml",
+    ],
+    "installable": True,
+}

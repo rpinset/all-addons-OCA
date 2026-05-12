@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 03:38+0000\n"
 "PO-Revision-Date: 2024-05-29 19:36+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"Last-Translator: Rodrigo Macedo "
+"<sottomaiormacedotec@users.noreply.translation.odoo-community.org>\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
 "23907/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -26,8 +26,8 @@ msgstr ""
 #: code:addons/account_banking_sepa_credit_transfer/models/account_payment_order.py:0
 #, python-format
 msgid ""
-"Bank account is missing on the bank payment line of partner "
-"'{partner}' (reference '{reference}')."
+"Bank account is missing on the bank payment line of partner '{partner}' "
+"(reference '{reference}')."
 msgstr ""
 "A conta bancária está faltando na linha de pagamento bancário do parceiro "
 "'{partner}' (referência '{reference}')."
@@ -82,8 +82,8 @@ msgstr "pain.001.001.02"
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (recomendado para transferência de crédito)"
+msgid "pain.001.001.03"
+msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_04
@@ -96,14 +96,22 @@ msgid "pain.001.001.05"
 msgstr "pain.001.001.05"
 
 #. module: account_banking_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (recommended for credit transfer)"
+msgstr ""
+
+#. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_003_03
 msgid "pain.001.003.03"
 msgstr "pain.001.003.03"
 
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (recomendado para transferência de crédito)"
+
 #, python-format
 #~ msgid ""
-#~ "Bank account is missing on the bank payment line of partner "
-#~ "'%s' (reference '%s')."
+#~ "Bank account is missing on the bank payment line of partner '%s' "
+#~ "(reference '%s')."
 #~ msgstr ""
 #~ "Conta bancária está faltando na linha de pagamento do parceiro '%s' (ref. "
 #~ "'%s')."
