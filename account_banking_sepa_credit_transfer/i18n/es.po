@@ -22,13 +22,12 @@ msgstr ""
 #. module: account_banking_sepa_credit_transfer
 #. odoo-python
 #: code:addons/account_banking_sepa_credit_transfer/models/account_payment_order.py:0
-#, python-format
 msgid ""
-"Bank account is missing on the bank payment line of partner "
-"'{partner}' (reference '{reference}')."
+"Bank account is missing on the bank payment line of partner '{partner}' "
+"(reference '{reference}')."
 msgstr ""
-"Falta la cuenta bancaria en la línea de pago del partner "
-"'{partner}' (reference '{reference}')."
+"Falta la cuenta bancaria en la línea de pago del partner '{partner}' "
+"(reference '{reference}')."
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_line__local_instrument__inst
@@ -48,7 +47,6 @@ msgstr "Versión PAIN"
 #. module: account_banking_sepa_credit_transfer
 #. odoo-python
 #: code:addons/account_banking_sepa_credit_transfer/models/account_payment_order.py:0
-#, python-format
 msgid "PAIN version '%s' is not supported."
 msgstr "La versión PAIN '%s' no está soportada."
 
@@ -80,8 +78,8 @@ msgstr "pain.001.001.02"
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (recomendado para pagos por transferencia)"
+msgid "pain.001.001.03"
+msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_04
@@ -94,14 +92,22 @@ msgid "pain.001.001.05"
 msgstr "pain.001.001.05"
 
 #. module: account_banking_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (recommended for credit transfer)"
+msgstr ""
+
+#. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_003_03
 msgid "pain.001.003.03"
 msgstr "pain.001.003.03"
 
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (recomendado para pagos por transferencia)"
+
 #, python-format
 #~ msgid ""
-#~ "Bank account is missing on the bank payment line of partner "
-#~ "'%s' (reference '%s')."
+#~ "Bank account is missing on the bank payment line of partner '%s' "
+#~ "(reference '%s')."
 #~ msgstr ""
-#~ "Falta la cuenta bancaria en la línea de pago de la empresa "
-#~ "'%s' (referencia '%s')."
+#~ "Falta la cuenta bancaria en la línea de pago de la empresa '%s' "
+#~ "(referencia '%s')."

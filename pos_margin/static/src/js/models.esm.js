@@ -26,6 +26,15 @@ patch(PosOrder.prototype, {
     get_margin_rate_str() {
         return roundCurrency(this.get_margin_rate(), this.currency) + "%";
     },
+
+    export_for_printing(baseUrl, headerData) {
+        const result = super.export_for_printing(baseUrl, headerData);
+        result.orderlines = result.orderlines.map((line) => ({
+            ...line,
+            ifaceDisplayMargin: false,
+        }));
+        return result;
+    },
 });
 
 // /////////////////////////////

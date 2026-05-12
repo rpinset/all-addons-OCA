@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 03:38+0000\n"
-"PO-Revision-Date: 2024-04-23 10:37+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-05-10 09:13+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.actions.report,print_report_name:account_banking_sepa_direct_debit.report_sepa_direct_debit_mandate
@@ -51,6 +51,26 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t\t\t\t\tHola,\n"
+"\t\t\t\t\t<br/><br/>\n"
+"\t\t\t\t\tSu mandato SEPA para <t t-out=\"object.company_id.name or ''\" "
+"contenteditable=\"false\" data-oe-t-inline=\"true\">YourCompany</t> está "
+"pendiente de firma.\n"
+"\t\t\t\t\t<br/><br/>\n"
+"\t\t\t\t\tNo dude en ponerse en contacto con nosotros si tiene alguna "
+"pregunta.\n"
+"\t\t\t\t\t<br/>\n"
+"\n"
+"\t\t\t\t\t<t t-if=\"user.signature\" data-o-mail-quote-container=\"1\">\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<t t-out=\"user.signature or ''\" data-o-mail-quote=\"1\">--<br "
+"data-o-mail-quote=\"1\"/>Mitchell Admin</t>\n"
+"\t\t\t\t\t</t>\n"
+"\t\t\t\t</p>\n"
+"\t\t\t</div>\n"
+"        "
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
@@ -128,6 +148,8 @@ msgid ""
 "<span class=\"native_lang native_lang_small\">(Sepa Business-To-Business "
 "Direct debit Mandate)</span>"
 msgstr ""
+"<span class=\"native_lang native_lang_small\">(Mandato de adeudo directo "
+"SEPA empresarial)</span>"
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
@@ -135,6 +157,8 @@ msgid ""
 "<span class=\"native_lang native_lang_small\">(Sepa Direct Debit Mandate)</"
 "span>"
 msgstr ""
+"<span class=\"native_lang native_lang_small\">(Mandato de adeudo directo "
+"SEPA)</span>"
 
 #. module: account_banking_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_banking_sepa_direct_debit.sepa_direct_debit_mandate_document
@@ -213,6 +237,9 @@ msgid ""
 "order <a href=# data-oe-model=account.payment.order data-oe-"
 "id=%(id)d>%(name)s</a> has been marked as uploaded."
 msgstr ""
+"Cambiado automáticamente de <b>Primera</b> a <b>Recurrente</b> cuando la "
+"orden de débito <a href=# data-oe-model=account.payment.order data-oe-id=%"
+"(id)d>%(name)s</a> se ha marcado como cargada."
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model.fields.selection,name:account_banking_sepa_direct_debit.selection__account_banking_mandate__scheme__core

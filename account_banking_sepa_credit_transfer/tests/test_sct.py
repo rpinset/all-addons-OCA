@@ -1,6 +1,7 @@
 # Copyright 2016 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
 # Copyright 2020 Sygel Technology - Valentin Vinagre
 # Copyright 2018-2022 Tecnativa - Pedro M. Baeza
+# Copyright 2026 Therp BV <https://therp.nl>.
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import base64
@@ -40,6 +41,18 @@ class TestSCT(AccountTestInvoicingCommon):
         cls.usd_currency = cls.env.ref("base.USD")
         cls.usd_currency.active = True
         cls.main_company = cls.env.company
+        # PAIN.001.001.09 requires debtor party city (TwnNm) + country (Ctry),
+        # and the debtor is the company partner.
+        cls.main_company.partner_id.write(
+            {
+                "country_id": cls.env["res.country"]
+                .search([("code", "=", "NL")], limit=1)
+                .id,
+                "city": "Amersfoort",
+                "zip": "3865 CC",
+                "street": "Company Street 1",
+            }
+        )
         cls.partner_agrolait.company_id = cls.main_company.id
         cls.partner_asus.company_id = cls.main_company.id
         cls.partner_c2c.company_id = cls.main_company.id
@@ -163,6 +176,24 @@ class TestSCT(AccountTestInvoicingCommon):
         self.payment_mode.payment_method_id.pain_version = "pain.001.001.05"
         self.check_eur_currency_sct()
 
+    def test_pain_001_09_minimal_address(self):
+        self.payment_mode.payment_method_id.write(
+            {
+                "pain_version": "pain.001.001.09",
+                "sepa_pain09_address_mode": "minimal",
+            }
+        )
+        self.check_eur_currency_sct()
+
+    def test_pain_001_09_hybrid_address(self):
+        self.payment_mode.payment_method_id.write(
+            {
+                "pain_version": "pain.001.001.09",
+                "sepa_pain09_address_mode": "hybrid",
+            }
+        )
+        self.check_eur_currency_sct()
+
     def test_pain_003_03(self):
         self.payment_mode.payment_method_id.pain_version = "pain.001.003.03"
         self.check_eur_currency_sct()
@@ -257,6 +288,16 @@ class TestSCT(AccountTestInvoicingCommon):
         namespaces = xml_root.nsmap
         namespaces["p"] = xml_root.nsmap[None]
         namespaces.pop(None)
+        if self.payment_mode.payment_method_id.pain_version == "pain.001.001.09":
+            twn = xml_root.xpath("//p:PstlAdr/p:TwnNm", namespaces=namespaces)
+            ctry = xml_root.xpath("//p:PstlAdr/p:Ctry", namespaces=namespaces)
+            self.assertTrue(twn)
+            self.assertTrue(ctry)
+            adr_lines = xml_root.xpath("//p:PstlAdr/p:AdrLine", namespaces=namespaces)
+            if self.payment_mode.payment_method_id.sepa_pain09_address_mode == "hybrid":
+                self.assertGreaterEqual(len(adr_lines), 1)
+            else:
+                self.assertEqual(len(adr_lines), 0)
         pay_method_xpath = xml_root.xpath("//p:PmtInf/p:PmtMtd", namespaces=namespaces)
         self.assertEqual(pay_method_xpath[0].text, "TRF")
         sepa_xpath = xml_root.xpath(

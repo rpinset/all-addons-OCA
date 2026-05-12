@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-25 15:06+0000\n"
+"PO-Revision-Date: 2026-05-12 10:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.stock_picking_type_kanban
 msgid "<span class=\"col-6\">To be Invoiced</span>"
-msgstr ""
+msgstr "<span class=\"col-6\">Da fatturare</span>"
 
 #. module: stock_picking_invoicing
 #. odoo-python
@@ -222,7 +222,7 @@ msgstr "Prelievo di reso"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_return_picking_line
 msgid "Return Picking Line"
-msgstr ""
+msgstr "Riga prelievo di reso"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__sale_journal
@@ -277,7 +277,7 @@ msgstr "Movimento di magazzino"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "Regola di giacenza"
 
 #. module: stock_picking_invoicing
 #: model:account.fiscal.position,name:stock_picking_invoicing.fiscal_position_demo

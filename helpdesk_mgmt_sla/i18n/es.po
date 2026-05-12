@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-26 16:24+0000\n"
-"PO-Revision-Date: 2024-01-09 19:34+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-05-10 10:19+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.inherit_helpdesk_ticket_view_form
@@ -23,12 +23,14 @@ msgid ""
 "<i class=\"fa fa-lg fa-clock-o mx-2\" aria-label=\"SLA Deadline\" "
 "title=\"SLA Deadline\"/>"
 msgstr ""
+"<i class=\"fa fa-lg fa-clock-o mx-2\" aria-label=\"Fecha límite SLA\" "
+"title=\"Fecha límite SLA\"/>"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__accomplished
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__accomplished
 msgid "Accomplished"
-msgstr ""
+msgstr "Completado"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction
@@ -64,7 +66,7 @@ msgstr "Icono Tipo de Actividad"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_ids
 msgid "Applicable SLAs"
-msgstr ""
+msgstr "SLAs aplicables"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
@@ -90,22 +92,22 @@ msgstr "Categorías"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__color
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__company_id
 msgid "Company"
-msgstr ""
+msgstr "Empresa"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__consumed_time
 msgid "Consumed time"
-msgstr ""
+msgstr "Tiempo consumido"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__partner_id
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__create_uid
@@ -122,7 +124,7 @@ msgstr "Creado en"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__date
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__days
@@ -132,7 +134,7 @@ msgstr "Días"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__deadline
 msgid "Deadline"
-msgstr ""
+msgstr "Fecha límite"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
@@ -154,14 +156,14 @@ msgstr "Nombre"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__expected_stage_id
 msgid "Expected Stage"
-msgstr ""
+msgstr "Etapa esperada"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__expired
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__expired
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__expired
 msgid "Expired"
-msgstr ""
+msgstr "Vencido"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__domain
@@ -186,7 +188,7 @@ msgstr "Fuente iconos sorprendentes , por ejemplo fa-tasks"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Tiene mensaje"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.actions.act_window,name:helpdesk_mgmt_sla.action_helpdesk_sla_tree
@@ -197,7 +199,7 @@ msgstr "SLA del Servicio de asistencia"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_sla_report
 msgid "Helpdesk SLA Report"
-msgstr ""
+msgstr "Informe SLA de soporte"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.view_helpdesk_sla_search
@@ -250,17 +252,17 @@ msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__ignore_stage_ids
 msgid "Ignore Stages"
-msgstr ""
+msgstr "Etapas a ignorar"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__on_hold
 msgid "In Hold"
-msgstr ""
+msgstr "En espera"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__in_progress
 msgid "In Progress"
-msgstr ""
+msgstr "En progreso"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_is_follower
@@ -270,7 +272,7 @@ msgstr "es Seguidor/a"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__last_state_date
 msgid "Last State Date"
-msgstr ""
+msgstr "Fecha del último estado"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__write_uid
@@ -287,7 +289,7 @@ msgstr "Última actualización en"
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
 msgid "Leave blank for all companies."
-msgstr ""
+msgstr "Dejar en blanco para todas las empresas."
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error
@@ -314,7 +316,7 @@ msgstr "Nombre"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Próximo evento de calendario de actividad"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_date_deadline
@@ -349,7 +351,7 @@ msgstr "Número de Errores"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensajes que requieren acción"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error_counter
@@ -359,18 +361,18 @@ msgstr "Número de mensajes con error de entrega"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__on_going
 msgid "Ongoing"
-msgstr ""
+msgstr "En curso"
 
 #. module: helpdesk_mgmt_sla
 #. odoo-python
 #: code:addons/helpdesk_mgmt_sla/models/helpdesk_ticket_sla.py:0
 msgid "Operator is not valid"
-msgstr ""
+msgstr "El operador no es válido"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Valoraciones"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
@@ -391,18 +393,18 @@ msgstr "SLA"
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_view_search
 msgid "SLA Expired"
-msgstr ""
+msgstr "SLA vencido"
 
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_view_search
 msgid "SLA Not Expired"
-msgstr ""
+msgstr "SLA no vencido"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.actions.act_window,name:helpdesk_mgmt_sla.helpdesk_sla_report_act_window
 #: model:ir.ui.menu,name:helpdesk_mgmt_sla.helpdesk_sla_report_menu
 msgid "SLA Report"
-msgstr ""
+msgstr "Informe SLA"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_deadline
@@ -417,17 +419,17 @@ msgstr "SLA Expirado"
 #. module: helpdesk_mgmt_sla
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.inherit_helpdesk_ticket_view_form
 msgid "Set SLA"
-msgstr ""
+msgstr "Establecer SLA"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__sla_id
 msgid "Sla"
-msgstr ""
+msgstr "SLA"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_fits
 msgid "Sla Fits"
-msgstr ""
+msgstr "SLA cumplido"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__stage_id
@@ -438,7 +440,7 @@ msgstr "Etapa"
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__state
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__state
 msgid "State"
-msgstr ""
+msgstr "Estado"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_state
@@ -466,7 +468,7 @@ msgstr "Objetivo"
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__team_id
 msgid "Team"
-msgstr ""
+msgstr "Equipo"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__team_sla
@@ -482,13 +484,13 @@ msgstr "Equipos"
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__ticket_id
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__ticket_id
 msgid "Ticket"
-msgstr ""
+msgstr "Ticket"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_ticket_sla
 #: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__ticket_sla_ids
 msgid "Ticket Sla"
-msgstr ""
+msgstr "Ticket SLA"
 
 #. module: helpdesk_mgmt_sla
 #: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_exception_decoration

@@ -5,7 +5,7 @@
 
 {
     "name": "Rma Reason",
-    "version": "18.0.1.0.3",
+    "version": "18.0.1.1.0",
     "license": "AGPL-3",
     "author": "Raumschmiede GmbH,BCIM,ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rma",
@@ -17,6 +17,7 @@
         "views/rma_reason.xml",
         "views/res_config_settings.xml",
         "views/rma_portal_templates.xml",
+        "wizards/rma_rma_wizard_views.xml",
         "wizards/stock_return_picking.xml",
     ],
     "demo": [

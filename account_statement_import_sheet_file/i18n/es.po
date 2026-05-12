@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-18 06:13+0000\n"
-"PO-Revision-Date: 2024-05-12 21:35+0000\n"
-"Last-Translator: Sergio Ariel Ameghino <ariel.ameghino@gmail.com>\n"
+"PO-Revision-Date: 2026-05-10 17:00+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_statement_import_sheet_file
 #. odoo-python
@@ -33,6 +33,10 @@ msgid ""
 "by comma.\n"
 "                                </span>"
 msgstr ""
+"<span class=\"fa fa-info-circle\"> Agregue los nombres de columna o el "
+"número de columna (cuando el archivo no tiene encabezado). Puede concatenar "
+"varias columnas del archivo en el mismo campo, indicando los nombres o "
+"números de columna separados por coma. </span>"
 
 #. module: account_statement_import_sheet_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_sheet_file.account_statement_import_sheet_mapping_tree
@@ -42,6 +46,8 @@ msgid ""
 "Columns section. The first column is 0.\n"
 "                                </span>"
 msgstr ""
+"<span class=\"fa fa-info-circle\"> indique el número de columna en la "
+"sección Columnas. La primera columna es 0. </span>"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields.selection,name:account_statement_import_sheet_file.selection__account_statement_import_sheet_mapping__amount_type__absolute_value
@@ -57,7 +63,7 @@ msgstr "Cuenta: %s; "
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__skip_empty_lines
 msgid "Allows to skip empty lines"
-msgstr ""
+msgstr "Permite omitir líneas vacías"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__amount_column
@@ -129,7 +135,7 @@ msgstr "Columnas"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__offset_column
 msgid "Columns to ignore before starting to parse"
-msgstr ""
+msgstr "Columnas a ignorar antes de comenzar a analizar"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__create_uid
@@ -354,13 +360,13 @@ msgstr "Columna de Notas"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__offset_column
 msgid "Offset Column"
-msgstr ""
+msgstr "Columna de desplazamiento"
 
 #. module: account_statement_import_sheet_file
 #. odoo-python
 #: code:addons/account_statement_import_sheet_file/models/account_statement_import_sheet_mapping.py:0
 msgid "Offsets cannot be negative"
-msgstr ""
+msgstr "Los desplazamientos no pueden ser negativos"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__original_amount_column
@@ -424,11 +430,16 @@ msgid ""
 "(absolute value + indicate sign)\n"
 "Distinct Credit/debit Column: use a distinct column for debit and credit"
 msgstr ""
+"Valor simple: usar el importe firmado en la columna de importe\n"
+"Valor absoluto: usar la misma columna para débito y crédito (valor absoluto "
+"+ indicar signo)\n"
+"Columna débito/crédito distinta: usar una columna distinta para débito y "
+"crédito"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__skip_empty_lines
 msgid "Skip Empty Lines"
-msgstr ""
+msgstr "Omitir líneas vacías"
 
 #. module: account_statement_import_sheet_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_sheet_file.view_account_journal_form_n43
@@ -579,6 +590,8 @@ msgid ""
 "When the separator is 'none', the value will be shifted according to the "
 "currency decimals. For example, 12345 will be converted to 123.45"
 msgstr ""
+"Cuando el separador es 'ninguno', el valor se desplazará según los decimales "
+"de la moneda. Por ejemplo, 12345 se convertirá en 123.45"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__no_header

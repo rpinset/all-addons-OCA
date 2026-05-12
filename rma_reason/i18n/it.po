@@ -67,6 +67,11 @@ msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_rma_wizard__domain_operation_id
+msgid "Domain Operation"
+msgstr ""
+
+#. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_rma_reason__id
 msgid "ID"
 msgstr "ID"
@@ -146,6 +151,7 @@ msgstr "Motivo RMA"
 
 #. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
+#: model:ir.model.fields,field_description:rma_reason.field_rma_rma_wizard__reason_id
 msgid "Reason"
 msgstr "Motivo"
 
@@ -154,6 +160,11 @@ msgstr "Motivo"
 #: model:ir.ui.menu,name:rma_reason.rma_reason_menu
 msgid "Reasons"
 msgstr "Motivi"
+
+#. module: rma_reason
+#: model:ir.model.fields,field_description:rma_reason.field_rma_rma_wizard__operation_id
+msgid "Requested operation"
+msgstr ""
 
 #. module: rma_reason
 #: model:ir.model,name:rma_reason.model_stock_return_picking
@@ -175,6 +186,11 @@ msgstr "Dominio operazione RMA"
 #: model:ir.model,name:rma_reason.model_rma_reason
 msgid "Rma Reason"
 msgstr "Motivo RMA"
+
+#. module: rma_reason
+#: model:ir.model,name:rma_reason.model_rma_rma_wizard
+msgid "Rma Rma Wizard"
+msgstr ""
 
 #. module: rma_reason
 #: model:rma.reason,description:rma_reason.rma_reason_unwanted_changed_mind

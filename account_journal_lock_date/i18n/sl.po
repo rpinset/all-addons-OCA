@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 00:47+0000\n"
-"PO-Revision-Date: 2026-05-09 02:32+0000\n"
+"PO-Revision-Date: 2026-05-10 08:17+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -28,22 +28,22 @@ msgstr "Prekliči"
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Ustvaril"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Ustvarjeno"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Prikazani naziv"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_account_journal
@@ -53,34 +53,34 @@ msgstr "Dnevnik"
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Temeljnica"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zadnjič posodobil"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zadnjič posodobljeno"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__fiscalyear_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__fiscalyear_lock_date
 msgid "Lock Date"
-msgstr ""
+msgstr "Datum zaklepa"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__period_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__period_lock_date
 msgid "Lock Date for Non-Advisers"
-msgstr ""
+msgstr "Datum zaklepa za tiste, ki niso svetovalci"
 
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_update_journal_lock_dates_wizard
 msgid "Mass Update Journal Lock Dates Wizard"
-msgstr ""
+msgstr "Čarovnik za masovno posodabljanje datumov zaklepa dnevnika"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,help:account_journal_lock_date.field_account_journal__fiscalyear_lock_date
@@ -89,6 +89,9 @@ msgid ""
 "this date for this journal. Use it for fiscal year locking for this journal, "
 "for example."
 msgstr ""
+"Nobeden od uporabnikov, vključno s svetovalci, ne more urejati vnosov v tem "
+"dnevniku pred tem datumom in vključno z njim. To lahko uporabite na primer "
+"za zaklepanje poslovnega leta za ta dnevnik."
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,help:account_journal_lock_date.field_account_journal__period_lock_date
@@ -97,23 +100,26 @@ msgid ""
 "of this date for this journal. Use it for period locking inside an open "
 "fiscal year for this journal, for example."
 msgstr ""
+"Le uporabniki z vlogo »Svetovalec« lahko urejajo knjižbe za ta dnevnik pred "
+"tem datumom in vključno z njim. To lahko uporabite na primer za zaklepanje "
+"obdobja znotraj odprtega poslovnega leta za ta dnevnik."
 
 #. module: account_journal_lock_date
 #: model_terms:ir.ui.view,arch_db:account_journal_lock_date.update_journal_lock_dates_wizard_view_form
 msgid "Update"
-msgstr ""
+msgstr "Posodobi"
 
 #. module: account_journal_lock_date
 #: model:ir.actions.act_window,name:account_journal_lock_date.update_journal_lock_dates_wizard_action
 msgid "Update journals lock dates"
-msgstr ""
+msgstr "Posodobi datume zaklepa dnevnikov"
 
 #. module: account_journal_lock_date
 #. odoo-python
 #: code:addons/account_journal_lock_date/wizards/update_journal_lock_dates.py:0
 #, python-format
 msgid "You are not allowed to execute this action."
-msgstr ""
+msgstr "Nimate dovoljenj za izvajanje te akcije."
 
 #. module: account_journal_lock_date
 #. odoo-python
@@ -123,6 +129,8 @@ msgid ""
 "You cannot add/modify entries for the journal '%(journal)s' prior to and "
 "inclusive of the lock date %(journal_date)s"
 msgstr ""
+"Vpisov v dnevnik '%(journal)s' ni mogoče dodajati ali spreminjati pred "
+"datumom zaklepa %(journal_date)s, vključno z njim"
 
 #. module: account_journal_lock_date
 #. odoo-python
@@ -133,6 +141,9 @@ msgid ""
 "inclusive of the lock date %(journal_date)s. Check the Journal settings or "
 "ask someone with the 'Adviser' role"
 msgstr ""
+"Vnosov v dnevnik '%(journal)s' ni mogoče dodajati ali spreminjati pred "
+"datumom zaklepa %(journal_date)s, vključno z njim. Preverite nastavitve "
+"dnevnika ali se obrnite na osebo z vlogo »Svetovalec«"
 
 #, fuzzy
 #~ msgid "Journal Entries"

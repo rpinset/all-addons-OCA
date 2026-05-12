@@ -10,15 +10,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-10 02:10+0000\n"
-"PO-Revision-Date: 2023-06-29 12:08+0000\n"
-"Last-Translator: Rémi <remi@le-filament.com>\n"
+"PO-Revision-Date: 2026-05-11 14:45+0000\n"
+"Last-Translator: Hpar <raph@hpar.fr>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_sepa_direct_debit
 #: model:ir.actions.report,print_report_name:account_payment_sepa_direct_debit.report_sepa_direct_debit_mandate
@@ -456,21 +456,18 @@ msgstr "Référence de mandat unique"
 
 #. module: account_payment_sepa_direct_debit
 #: model:ir.model.fields.selection,name:account_payment_sepa_direct_debit.selection__account_payment_method__pain_version__pain_008_001_02
-#, fuzzy
 msgid "pain.008.001.02 (direct debit, old recommended version)"
-msgstr "pain.008.003.02 (prélèvement en Allemagne)"
+msgstr "pain.008.001.02 (prélèvement, version anciennement recommandée)"
 
 #. module: account_payment_sepa_direct_debit
 #: model:ir.model.fields.selection,name:account_payment_sepa_direct_debit.selection__account_payment_method__pain_version__pain_008_001_08
-#, fuzzy
 msgid "pain.008.001.08 (direct debit, new recommended version)"
-msgstr "pain.008.003.02 (prélèvement en Allemagne)"
+msgstr "pain.008.001.08 (prélèvement, nouvelle version recommandée)"
 
 #. module: account_payment_sepa_direct_debit
 #: model:ir.model.fields.selection,name:account_payment_sepa_direct_debit.selection__account_payment_method__pain_version__pain_008_003_02
-#, fuzzy
 msgid "pain.008.003.02 (direct debit for Germany only)"
-msgstr "pain.008.003.02 (prélèvement en Allemagne)"
+msgstr "pain.008.003.02 (prélèvement en Allemagne uniquement)"
 
 #. module: account_payment_sepa_direct_debit
 #: model_terms:ir.ui.view,arch_db:account_payment_sepa_direct_debit.sepa_direct_debit_mandate_document

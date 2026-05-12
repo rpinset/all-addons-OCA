@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-19 08:42+0000\n"
+"PO-Revision-Date: 2026-05-12 08:45+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -14,13 +14,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, fuzzy
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
@@ -244,17 +245,17 @@ msgstr "Ålder ≤ 90 d."
 #: model:ir.actions.report,name:account_financial_report.action_print_report_aged_partner_balance_qweb
 #: model:ir.ui.menu,name:account_financial_report.menu_aged_partner_balance_wizard
 msgid "Aged Partner Balance"
-msgstr "Äldre kontakter balans"
+msgstr "Åldersfördelad reskontra"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_base
 msgid "Aged Partner Balance -"
-msgstr "Äldre kontakter balans -"
+msgstr "Åldersfördelad reskontra -"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_aged_partner_balance
 msgid "Aged Partner Balance Report"
-msgstr "Äldre kontakt balansrapport"
+msgstr "Åldersfördelad reskontra rapport"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_aged_partner_balance_report_wizard
@@ -1064,17 +1065,17 @@ msgstr "Domän för verifikat"
 #: model:ir.actions.report,name:account_financial_report.action_print_journal_ledger_wizard_html
 #: model:ir.ui.menu,name:account_financial_report.menu_journal_ledger_wizard
 msgid "Journal Ledger"
-msgstr "Journalreskontra"
+msgstr "Dagbok"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_base
 msgid "Journal Ledger -"
-msgstr "Journalreskontra -"
+msgstr "Dagbok -"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_report_account_financial_report_journal_ledger
 msgid "Journal Ledger Report"
-msgstr "Journalreskontrarapport"
+msgstr "Dagboksrapport"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_journal_ledger_report_wizard
@@ -1293,12 +1294,12 @@ msgstr "Endast ett intäktskonto som inte påverkas"
 #: model:ir.actions.report,name:account_financial_report.action_print_report_open_items_qweb
 #: model:ir.ui.menu,name:account_financial_report.menu_open_items_wizard
 msgid "Open Items"
-msgstr "Öppna föremål"
+msgstr "Oavstämda verifikat"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_base
 msgid "Open Items -"
-msgstr "Öppna föremål -"
+msgstr "Oavstämda verifikat -"
 
 #. module: account_financial_report
 #: model:ir.actions.act_window,name:account_financial_report.act_action_open_items_wizard_partner_relation

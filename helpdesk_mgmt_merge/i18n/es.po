@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-07-18 12:25+0000\n"
-"Last-Translator: Enric Tobella <etobella@creublanca.es>\n"
+"PO-Revision-Date: 2026-05-10 10:19+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: helpdesk_mgmt_merge
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_merge.helpdesk_ticket_merge_view_form
@@ -118,7 +118,7 @@ msgstr "Sin descripción"
 #. odoo-python
 #: code:addons/helpdesk_mgmt_merge/wizard/helpdesk_ticket_merge.py:0
 msgid "This helpdesk ticket has been merged %(way)s %(tickets)s"
-msgstr ""
+msgstr "Este ticket de soporte ha sido fusionado %(way)s %(tickets)s"
 
 #. module: helpdesk_mgmt_merge
 #: model:ir.model.fields,field_description:helpdesk_mgmt_merge.field_helpdesk_ticket_merge__ticket_ids
@@ -129,10 +129,10 @@ msgstr "Tíquets a fusionar"
 #. odoo-python
 #: code:addons/helpdesk_mgmt_merge/wizard/helpdesk_ticket_merge.py:0
 msgid "from"
-msgstr ""
+msgstr "de"
 
 #. module: helpdesk_mgmt_merge
 #. odoo-python
 #: code:addons/helpdesk_mgmt_merge/wizard/helpdesk_ticket_merge.py:0
 msgid "to"
-msgstr ""
+msgstr "a"

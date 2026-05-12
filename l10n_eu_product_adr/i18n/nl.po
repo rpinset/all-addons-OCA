@@ -1215,8 +1215,8 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2733_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2733_5L
 msgid ""
-"AMINES, FLAMMABLE, CORROSIVE, N.O.S. or POLYAMINES, FLAMMABLE, CORROSIVE, N."
-"O.S."
+"AMINES, FLAMMABLE, CORROSIVE, N.O.S. or POLYAMINES, FLAMMABLE, CORROSIVE, "
+"N.O.S."
 msgstr ""
 "AMINEN, BRANDBAAR, BIJTEND, N.E.G. of POLYAMINEN, BRANDBAAR, BIJTEND, N.E.G."
 
@@ -1980,6 +1980,11 @@ msgstr ""
 "Vaste stof, onderworpen aan de voorschriften voor de luchtvaart, n.e.g."
 
 #. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__b
+msgid "B"
+msgstr ""
+
+#. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__b/d
 msgid "B/D"
 msgstr ""
@@ -2612,6 +2617,11 @@ msgstr "BUTYRYLCHLORIDE"
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3496
 msgid "Batteries, nickel-metal hydride"
 msgstr "Nikkel-metaalhydride-batterijen"
+
+#. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__c
+msgid "C"
+msgstr ""
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__c/d
@@ -4324,6 +4334,11 @@ msgid "Created on"
 msgstr ""
 
 #. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__d
+msgid "D"
+msgstr ""
+
+#. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__d/e
 msgid "D/E"
 msgstr ""
@@ -5074,6 +5089,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__display_name
 msgid "Display Name"
 msgstr "Schermnaam"
+
+#. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__e
+msgid "E"
+msgstr ""
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3256_F2_3_274/560_P099/IBC99_3

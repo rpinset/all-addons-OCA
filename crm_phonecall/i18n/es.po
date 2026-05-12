@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-04 15:47+0000\n"
-"PO-Revision-Date: 2025-09-15 16:42+0000\n"
-"Last-Translator: Javier Iza Ca <javier.izaguirre@sygel.es>\n"
+"PO-Revision-Date: 2026-05-10 09:51+0000\n"
+"Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__nbr_cases
@@ -99,6 +99,8 @@ msgstr "Información adicional"
 msgid ""
 "Administrative divisions of a country. E.g. Fed. State, Department, Canton"
 msgstr ""
+"Divisiones administrativas de un país. Ej. Estado Federal, Departamento, "
+"Cantón"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__user_id
@@ -178,7 +180,7 @@ msgstr "Categorias"
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_city
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "City"
-msgstr ""
+msgstr "Ciudad"
 
 #. module: crm_phonecall
 #: model_terms:ir.actions.act_window,help:crm_phonecall.crm_phonecall_categ_action
@@ -749,7 +751,7 @@ msgstr "Prioridad"
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Valoraciones"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__user_id
@@ -831,7 +833,7 @@ msgstr "Estado"
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_state
 msgid "State Name"
-msgstr ""
+msgstr "Nombre del estado"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__state
@@ -941,12 +943,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall_report__partner_zip
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "ZIP"
-msgstr ""
+msgstr "Código postal"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__partner_zip
 msgid "Zip"
-msgstr ""
+msgstr "Código postal"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Error de entrega de SMS"

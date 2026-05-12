@@ -1219,8 +1219,8 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2733_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2733_5L
 msgid ""
-"AMINES, FLAMMABLE, CORROSIVE, N.O.S. or POLYAMINES, FLAMMABLE, CORROSIVE, N."
-"O.S."
+"AMINES, FLAMMABLE, CORROSIVE, N.O.S. or POLYAMINES, FLAMMABLE, CORROSIVE, "
+"N.O.S."
 msgstr ""
 "AMINES INFLAMMABLES, CORROSIVES, N.S.A. ou POLYAMINES INFLAMMABLES, "
 "CORROSIVES, N.S.A."
@@ -1988,6 +1988,11 @@ msgid "Aviation regulated solid, n.o.s."
 msgstr "Matière solide réglementée pour l'aviation, n.s.a."
 
 #. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__b
+msgid "B"
+msgstr ""
+
+#. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__b/d
 msgid "B/D"
 msgstr ""
@@ -2618,6 +2623,11 @@ msgstr "CHLORURE DE BUTYRYLE"
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3496
 msgid "Batteries, nickel-metal hydride"
 msgstr "Piles au nickel-hydrure métallique"
+
+#. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__c
+msgid "C"
+msgstr ""
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__c/d
@@ -4303,8 +4313,8 @@ msgstr ""
 "Contient le numéro ONU : de la matière ou de l'objet dangereux si un numéro "
 "ONU spécifique a été affecté à cette matière ou cet objet ; ou de la "
 "rubrique générique ou n.s.a. à laquelle les matières ou objets dangereux non "
-"nommément mentionnés doivent être affectés conformément aux critères (« "
-"diagrammes de décision ») de la partie 2."
+"nommément mentionnés doivent être affectés conformément aux critères "
+"(« diagrammes de décision ») de la partie 2."
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields,help:l10n_eu_product_adr.field_adr_goods__name
@@ -4346,6 +4356,11 @@ msgstr "Créé par"
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__create_date
 msgid "Created on"
 msgstr "Créé le"
+
+#. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__d
+msgid "D"
+msgstr ""
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__d/e
@@ -5069,8 +5084,8 @@ msgid ""
 "one or more dangerous goods: %(labels)s"
 msgstr ""
 "L'étiquette de marchandise dangereuse %(label)s ne peut pas être supprimée "
-"parce qu'elle est utilisée par une ou plusieurs marchandises dangereuses : "
-"%(labels)s"
+"parce qu'elle est utilisée par une ou plusieurs marchandises dangereuses : %"
+"(labels)s"
 
 #. module: l10n_eu_product_adr
 #: model:ir.actions.act_window,name:l10n_eu_product_adr.adr_label_action
@@ -5105,6 +5120,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
+
+#. module: l10n_eu_product_adr
+#: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__e
+msgid "E"
+msgstr ""
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3256_F2_3_274/560_P099/IBC99_3

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-02 15:55+0000\n"
-"PO-Revision-Date: 2026-05-07 17:46+0000\n"
+"PO-Revision-Date: 2026-05-10 08:29+0000\n"
 "Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -19,7 +19,6 @@ msgstr ""
 
 #. module: web_company_color
 #: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
-#, fuzzy
 msgid ""
 "<span class=\"fa fa-info fa-2x me-2\"/>\n"
 "                        In order for the changes to take effect, please "

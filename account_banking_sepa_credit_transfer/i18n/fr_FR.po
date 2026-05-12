@@ -19,10 +19,9 @@ msgstr ""
 #. module: account_banking_sepa_credit_transfer
 #. odoo-python
 #: code:addons/account_banking_sepa_credit_transfer/models/account_payment_order.py:0
-#, python-format
 msgid ""
-"Bank account is missing on the bank payment line of partner "
-"'{partner}' (reference '{reference}')."
+"Bank account is missing on the bank payment line of partner '{partner}' "
+"(reference '{reference}')."
 msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
@@ -43,7 +42,6 @@ msgstr ""
 #. module: account_banking_sepa_credit_transfer
 #. odoo-python
 #: code:addons/account_banking_sepa_credit_transfer/models/account_payment_order.py:0
-#, python-format
 msgid "PAIN version '%s' is not supported."
 msgstr "PAIN version '%s' n'est pas supporté."
 
@@ -75,8 +73,8 @@ msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (recommandé pour les virements)"
+msgid "pain.001.001.03"
+msgstr ""
 
 #. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_04
@@ -89,14 +87,22 @@ msgid "pain.001.001.05"
 msgstr "pain.001.001.05"
 
 #. module: account_banking_sepa_credit_transfer
+#: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_09
+msgid "pain.001.001.09 (recommended for credit transfer)"
+msgstr ""
+
+#. module: account_banking_sepa_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_sepa_credit_transfer.selection__account_payment_method__pain_version__pain_001_003_03
 msgid "pain.001.003.03"
 msgstr ""
 
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (recommandé pour les virements)"
+
 #, python-format
 #~ msgid ""
-#~ "Bank account is missing on the bank payment line of partner "
-#~ "'%s' (reference '%s')."
+#~ "Bank account is missing on the bank payment line of partner '%s' "
+#~ "(reference '%s')."
 #~ msgstr ""
 #~ "Le compte bancaire est manquant sur la ligne de paiement bancaire du "
 #~ "partenaire '%s' (référence '%s')."
