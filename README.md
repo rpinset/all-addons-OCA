@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-09 04:34 UTC** (elapsed 152s)
+Last build: **2026-05-12 15:44 UTC** (elapsed 99s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -22,9 +22,9 @@ Last build: **2026-05-09 04:34 UTC** (elapsed 152s)
 | [account-payment](https://github.com/OCA/account-payment) | 24 | cb16af4 2026-04-08 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 11 | 8219cd8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [agreement](https://github.com/OCA/agreement) | 4 | 0eb9de0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [bank-payment](https://github.com/OCA/bank-payment) | 14 | 96da08a 2025-06-27 Pedro M. Baeza Merge pull request #1483 from solvosci/15.0-fix-account_payment_order-miginspayline |
+| [bank-payment](https://github.com/OCA/bank-payment) | 14 | 2c9aa65 2026-05-12 Weblate Update translation files |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 15 | 3fb0963 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [brand](https://github.com/OCA/brand) | 9 | 5cb1696 2025-09-17 OCA-git-bot [BOT] post-merge updates |
+| [brand](https://github.com/OCA/brand) | 9 | 4a02869 2026-05-12 mymage Translated using Weblate (Italian) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 1 | 18d2b25 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [calendar](https://github.com/OCA/calendar) | 3 | 3aa3095 2025-09-02 Pedro M. Baeza Merge pull request #172 from efatto/15.0-fix-resource_booking-pre-migration-script |
 | [commission](https://github.com/OCA/commission) | 8 | 4ff20e8 2026-04-02 OCA-git-bot [BOT] post-merge updates |

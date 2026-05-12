@@ -16,3 +16,7 @@
 * `Sygel <https://www.sygel.es>`_:
 
   * Manuel Regidor
+
+* `Therp BV <https://www.therp.nl>`_:
+
+  * Nikos Tsirintanis <ntsirintanis@therp.nl>

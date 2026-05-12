@@ -18,3 +18,7 @@
 
   * Valentin Vinagre <valentin.vinagre@sygel.es>
   * Manuel Regidor <manuel.regidor@sygel.es>
+
+* `Therp BV <https://www.therp.nl>`_:
+
+  * Nikos Tsirintanis <ntsirintanis@therp.nl>

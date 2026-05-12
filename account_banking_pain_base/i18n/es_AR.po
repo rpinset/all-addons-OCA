@@ -198,6 +198,14 @@ msgid "Consumer Third Party Consolidated Payment"
 msgstr "Pago Consolidado del Consumidor a Terceros"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields,help:account_banking_pain_base.field_account_payment_method__sepa_pain09_address_mode
+msgid ""
+"Controls how the <PstlAdr> block is generated for PAIN.001.001.09- Minimal: "
+"only City (TwnNm) and Country (Ctry)- Hybrid: City/Country plus optional "
+"AdrLine lines (street/street2) and optional Post Code (PstCd) when available."
+msgstr ""
+
+#. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__cvcf
 msgid "Convalescent Care Facility"
 msgstr "Centro de Atención Convaleciente"
@@ -404,6 +412,11 @@ msgid "Housing Tax"
 msgstr "Impuesto de Vivienda"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_method__sepa_pain09_address_mode__hybrid
+msgid "Hybrid (City/Country + AdrLine)"
+msgstr ""
+
+#. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__communication_type__iso
 msgid "ISO"
 msgstr "ISO"
@@ -565,6 +578,11 @@ msgid "Medical Services"
 msgstr "Servicios Médicos"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_method__sepa_pain09_address_mode__minimal
+msgid "Minimal (City + Country only)"
+msgstr ""
+
+#. module: account_banking_pain_base
 #: code:addons/account_banking_pain_base/models/account_payment_order.py:0
 #, python-format
 msgid ""
@@ -639,6 +657,19 @@ msgstr "Otra Factura Relacionada a Telecomunicaciones"
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_method__pain_version
 msgid "PAIN Version"
 msgstr "Versión PAIN"
+
+#. module: account_banking_pain_base
+#: code:addons/account_banking_pain_base/models/account_payment_order.py:0
+#, python-format
+msgid ""
+"PAIN format %(flavor)s requires City (TwnNm). Partner missing City: "
+"%(partner)s. Please set a City or choose an older PAIN format."
+msgstr ""
+
+#. module: account_banking_pain_base
+#: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_method__sepa_pain09_address_mode
+msgid "PAIN.001.001.09 Address Mode"
+msgstr ""
 
 #. module: account_banking_pain_base
 #: code:addons/account_banking_pain_base/models/account_payment_order.py:0
@@ -765,6 +796,16 @@ msgid "SEPA Payment"
 msgstr "Pago SEPA"
 
 #. module: account_banking_pain_base
+#: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_order__sepa_payment_method
+msgid "SEPA Payment Method"
+msgstr ""
+
+#. module: account_banking_pain_base
+#: model_terms:ir.ui.view,arch_db:account_banking_pain_base.account_payment_order_form
+msgid "SEPA zone"
+msgstr ""
+
+#. module: account_banking_pain_base
 #: model_terms:ir.ui.view,arch_db:account_banking_pain_base.view_account_config_settings
 msgid "SEPA/PAIN"
 msgstr "SEPA/PAIN"
@@ -795,6 +836,11 @@ msgstr "Seguridades"
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_order__charge_bearer__shar
 msgid "Shared"
 msgstr "Compartidos"
+
+#. module: account_banking_pain_base
+#: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_order__show_warning_not_sepa
+msgid "Show Warning Not Sepa"
+msgstr ""
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__category_purpose__ssbe
@@ -879,6 +925,14 @@ msgid ""
 msgstr ""
 "Este campo se usará como 'Prioridad de instrucción' en el archivo PAIN "
 "generado."
+
+#. module: account_banking_pain_base
+#: model_terms:ir.ui.view,arch_db:account_banking_pain_base.account_payment_order_form
+msgid ""
+"This payment order is <b>not SEPA</b>. If it is not intented, check that all "
+"payment lines are in € and that all bank accounts are valid IBANs with a "
+"country prefix in the"
+msgstr ""
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields,help:account_banking_pain_base.field_res_company__initiating_party_identifier
@@ -1005,6 +1059,11 @@ msgstr "Pago del Impuesto al Valor Agregado"
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__view
 msgid "Vision Care"
 msgstr "Cuidado de la Visión"
+
+#. module: account_banking_pain_base
+#: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_method__warn_not_sepa
+msgid "Warn If Not SEPA"
+msgstr ""
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__wter
