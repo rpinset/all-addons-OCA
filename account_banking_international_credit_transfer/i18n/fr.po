@@ -10,6 +10,7 @@ msgstr ""
 "PO-Revision-Date: 2025-10-10 12:31+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -25,9 +26,9 @@ msgstr "Comptes bancaires"
 #: code:addons/account_banking_international_credit_transfer/models/account_payment_order.py:0
 #, python-format
 msgid ""
-"Bank account is missing on the bank payment line of partner '%s' (reference "
-"'%s')."
-msgstr "Le compte bancaire est manquant sur la ligne de paiement bancaire du partenaire '%s' (référence '%s')."
+"Bank account is missing on the bank payment line of partner '%(partner)s' "
+"(reference '%(reference)s')."
+msgstr ""
 
 #. module: account_banking_international_credit_transfer
 #: model:ir.model.fields,help:account_banking_international_credit_transfer.field_account_setup_bank_manual_config__intermediary_bank_id
@@ -46,9 +47,9 @@ msgstr "Banque Intermédiaire"
 #: code:addons/account_banking_international_credit_transfer/models/account_payment_order.py:0
 #, python-format
 msgid ""
-"Intermediary bank is missing on the recipient bank account of partner '%s' "
-"(reference '%s')."
-msgstr "La banque intermédiaire est manquante sur le compte bancaire bénéficiaire du partenaire '%s' (référence '%s')."
+"Intermediary bank is missing on the recipient bank account of partner "
+"'%(partner)s' (reference '%(reference)s')."
+msgstr ""
 
 #. module: account_banking_international_credit_transfer
 #: model:account.payment.method,name:account_banking_international_credit_transfer.international_credit_transfer
@@ -88,5 +89,24 @@ msgstr "Ordre de paiement"
 
 #. module: account_banking_international_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_international_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (recommandé pour les virements)"
+msgid "pain.001.001.03"
+msgstr ""
+
+#, python-format
+#~ msgid ""
+#~ "Bank account is missing on the bank payment line of partner '%s' "
+#~ "(reference '%s')."
+#~ msgstr ""
+#~ "Le compte bancaire est manquant sur la ligne de paiement bancaire du "
+#~ "partenaire '%s' (référence '%s')."
+
+#, python-format
+#~ msgid ""
+#~ "Intermediary bank is missing on the recipient bank account of partner "
+#~ "'%s' (reference '%s')."
+#~ msgstr ""
+#~ "La banque intermédiaire est manquante sur le compte bancaire bénéficiaire "
+#~ "du partenaire '%s' (référence '%s')."
+
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (recommandé pour les virements)"

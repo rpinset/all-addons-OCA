@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-22 09:47+0000\n"
-"PO-Revision-Date: 2023-03-04 20:41+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-05-09 15:08+0000\n"
+"Last-Translator: Peter Schubert <hello@it-consult.org>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_payment_order
 #. odoo-python
@@ -24,6 +25,8 @@ msgid ""
 "%(count)d payment lines added to the existing draft payment order "
 "%(payorder_link)s."
 msgstr ""
+"%(count)d Zahlungszeilen wurden dem bestehenden Zahlungsentwurf %"
+"(payorder_link)s hinzugefügt."
 
 #. module: account_payment_order
 #. odoo-python
@@ -33,6 +36,8 @@ msgid ""
 "%(count)d payment lines added to the new draft payment order "
 "%(payorder_link)s, which has been automatically created."
 msgstr ""
+"%(count)d Zahlungszeilen wurden dem neuen Zahlungsauftrag %(payorder_link)s "
+"hinzugefügt, der automatisch erstellt wurde."
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.print_account_payment_order_document
@@ -80,6 +85,8 @@ msgid ""
 "A valid BIC contains 8 or 11 characters. The BIC '%(bic)s' contains %(num)d "
 "characters, so it is not valid."
 msgstr ""
+"Ein gültiger BIC besteht aus 8 oder 11 Zeichen. Der BIC „%(bic)s“ enthält %"
+"(num)d Zeichen und ist daher ungültig."
 
 #. module: account_payment_order
 #: model:res.groups,name:account_payment_order.group_account_payment
@@ -199,7 +206,7 @@ msgstr "Zurück zum Entwurf"
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_res_bank
 msgid "Bank"
-msgstr ""
+msgstr "Bank"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.print_account_payment_order_document
@@ -214,7 +221,7 @@ msgstr "Bankkonto erforderlich"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__partner_bank_acc_type
 msgid "Bank Account Type"
-msgstr ""
+msgstr "Art des Bankkontos"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__journal_id
@@ -232,6 +239,7 @@ msgstr "Bankkonto, auf das wir den Lieferanten bezahlen sollen"
 msgid ""
 "Bank account type: Normal or IBAN. Inferred from the bank account number."
 msgstr ""
+"Bankkontotyp: Normal oder IBAN. Wird aus der Bankkontonummer abgeleitet."
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_order__state__cancel
@@ -258,6 +266,10 @@ msgid ""
 "criteria or click on Add an item to manually select the move lines filtered "
 "by the above criteria."
 msgstr ""
+"Klicken Sie auf „Alle Umzugszeilen hinzufügen“, um die Umzugszeilen, die den "
+"oben genannten Kriterien entsprechen, automatisch auszuwählen, oder klicken "
+"Sie auf „Ein Element hinzufügen“, um die nach den oben genannten Kriterien "
+"gefilterten Umzugszeilen manuell auszuwählen."
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__communication
@@ -345,7 +357,7 @@ msgstr "Erstellt von"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__create_date
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_update__create_date
 msgid "Created on"
-msgstr "Erstellt am:"
+msgstr "Erstellt am"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__company_currency_id
@@ -462,7 +474,7 @@ msgstr "Follower (Partner)"
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_order__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Font Awesome Icon z.B. "
+msgstr "Font Awesome Icon z.B."
 
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_order__bank_account_link

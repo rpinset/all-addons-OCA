@@ -19,7 +19,13 @@ msgid "Email Thread"
 msgstr ""
 
 #. module: mail_message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_calendar_event__message_search
 #: model:ir.model.fields,field_description:mail_message_search.field_discuss_channel__message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_hr_department__message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_hr_employee__message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_hr_job__message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_hr_leave__message_search
+#: model:ir.model.fields,field_description:mail_message_search.field_hr_leave_allocation__message_search
 #: model:ir.model.fields,field_description:mail_message_search.field_mail_blacklist__message_search
 #: model:ir.model.fields,field_description:mail_message_search.field_mail_thread__message_search
 #: model:ir.model.fields,field_description:mail_message_search.field_mail_thread_blacklist__message_search
@@ -33,7 +39,13 @@ msgid "Message Search"
 msgstr ""
 
 #. module: mail_message_search
+#: model:ir.model.fields,help:mail_message_search.field_calendar_event__message_search
 #: model:ir.model.fields,help:mail_message_search.field_discuss_channel__message_search
+#: model:ir.model.fields,help:mail_message_search.field_hr_department__message_search
+#: model:ir.model.fields,help:mail_message_search.field_hr_employee__message_search
+#: model:ir.model.fields,help:mail_message_search.field_hr_job__message_search
+#: model:ir.model.fields,help:mail_message_search.field_hr_leave__message_search
+#: model:ir.model.fields,help:mail_message_search.field_hr_leave_allocation__message_search
 #: model:ir.model.fields,help:mail_message_search.field_mail_blacklist__message_search
 #: model:ir.model.fields,help:mail_message_search.field_mail_thread__message_search
 #: model:ir.model.fields,help:mail_message_search.field_mail_thread_blacklist__message_search

@@ -52,8 +52,8 @@ msgid ""
 "Intermediary bank is missing on the recipient bank account of partner "
 "'%(partner)s' (reference '%(reference)s')."
 msgstr ""
-"Manca la banca intermediario nel conto banca ricevimento del partner '%"
-"(partner)s' (riferimento '%(reference)s')."
+"Manca la banca intermediario nel conto banca ricevimento del partner "
+"'%(partner)s' (riferimento '%(reference)s')."
 
 #. module: account_banking_international_credit_transfer
 #: model:account.payment.method,name:account_banking_international_credit_transfer.international_credit_transfer
@@ -93,5 +93,8 @@ msgstr "Ordine di pagamento"
 
 #. module: account_banking_international_credit_transfer
 #: model:ir.model.fields.selection,name:account_banking_international_credit_transfer.selection__account_payment_method__pain_version__pain_001_001_03
-msgid "pain.001.001.03 (recommended for credit transfer)"
-msgstr "pain.001.001.03 (raccomandato per il trasferimento del credito)"
+msgid "pain.001.001.03"
+msgstr ""
+
+#~ msgid "pain.001.001.03 (recommended for credit transfer)"
+#~ msgstr "pain.001.001.03 (raccomandato per il trasferimento del credito)"

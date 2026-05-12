@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: bank-payment (10.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-21 10:17+0000\n"
-"PO-Revision-Date: 2025-10-08 20:42+0000\n"
-"Last-Translator: Peter Schubert <psc@saco.info>\n"
+"PO-Revision-Date: 2026-05-09 09:45+0000\n"
+"Last-Translator: Peter Schubert <hello@it-consult.org>\n"
 "Language-Team: German (http://www.transifex.com/oca/OCA-bank-payment-10-0/"
 "language/de/)\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_banking_mandate_sale
 #: model:ir.model.fields,help:account_banking_mandate_sale.field_sale_order__mandate_required
@@ -37,7 +37,7 @@ msgstr "Lastschrift Mandat"
 #. module: account_banking_mandate_sale
 #: model:ir.model.fields,field_description:account_banking_mandate_sale.field_sale_order__commercial_invoice_partner_id
 msgid "Invoicing Commercial Entity"
-msgstr ""
+msgstr "Rechnungsstellung an Unternehmen"
 
 #. module: account_banking_mandate_sale
 #: model:ir.model.fields,field_description:account_banking_mandate_sale.field_sale_order__mandate_required
