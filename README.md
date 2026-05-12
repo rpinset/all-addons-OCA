@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-05-09 04:31 UTC** (elapsed 162s)
+Last build: **2026-05-12 15:40 UTC** (elapsed 95s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -24,7 +24,7 @@ Last build: **2026-05-09 04:31 UTC** (elapsed 162s)
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 12669d8 2025-04-02 mymage Translated using Weblate (Italian) |
 | [bank-payment](https://github.com/OCA/bank-payment) | 14 | 338a10d 2025-10-03 EvaS595 Translated using Weblate (French) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 19 | 8069952 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [brand](https://github.com/OCA/brand) | 12 | b021a64 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [brand](https://github.com/OCA/brand) | 12 | b820473 2026-05-12 mymage Translated using Weblate (Italian) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | e9b4003 2023-10-09 Weblate Update translation files |
 | [calendar](https://github.com/OCA/calendar) | 1 | 65f5345 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [commission](https://github.com/OCA/commission) | 6 | 7996a0b 2026-02-10 mymage Translated using Weblate (Italian) |
