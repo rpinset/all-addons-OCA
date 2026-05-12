@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-05-09 04:37 UTC
+Generated 2026-05-12 15:50 UTC
 
-Total skipped: **169**
+Total skipped: **167**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **145**
+Count: **143**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -101,7 +101,6 @@ Count: **145**
 | [l10n-greece](https://github.com/OCA/l10n-greece) | [19.0](https://github.com/OCA/l10n-greece/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | [19.0](https://github.com/OCA/l10n-india/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | [19.0](https://github.com/OCA/l10n-indonesia/tree/19.0) | No directory with __manifest__.py at repo root |
-| [l10n-iran](https://github.com/OCA/l10n-iran) | [19.0](https://github.com/OCA/l10n-iran/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | [19.0](https://github.com/OCA/l10n-ireland/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | [19.0](https://github.com/OCA/l10n-italy/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | [19.0](https://github.com/OCA/l10n-luxemburg/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -162,7 +161,6 @@ Count: **145**
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | [19.0](https://github.com/OCA/stock-logistics-transport/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [19.0](https://github.com/OCA/stock-weighing/tree/19.0) | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | [19.0](https://github.com/OCA/survey/tree/19.0) | No directory with __manifest__.py at repo root |
-| [tier-validation](https://github.com/OCA/tier-validation) | [19.0](https://github.com/OCA/tier-validation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [19.0](https://github.com/OCA/version-control-platform/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [19.0](https://github.com/OCA/vertical-abbey/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [19.0](https://github.com/OCA/vertical-agriculture/tree/19.0) | No directory with __manifest__.py at repo root |

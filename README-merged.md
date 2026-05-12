@@ -76,6 +76,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_analytic_tag](account_analytic_tag/) | 19.0.1.0.0 |  | Account Analytic Tag
 [account_move_update_analytic](account_move_update_analytic/) | 19.0.1.1.0 | <a href='https://github.com/remi-filament'><img src='https://github.com/remi-filament.png' width='32' height='32' style='border-radius:50%;' alt='remi-filament'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | This module allows the user to update analytic on posted moves
+[hr_expense_analytic_tag](hr_expense_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Expense Analytic Tag
 [purchase_analytic](purchase_analytic/) | 19.0.1.0.0 |  | Purchase Analytic
 [sale_analytic_tag](sale_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Analytic Tag
 
@@ -171,7 +172,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 19.0.0.0.6 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 19.0.0.0.9 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 19.0.1.0.2 |  | Compute tax balances based on date range
 [partner_statement](partner_statement/) | 19.0.1.0.2 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
@@ -436,6 +437,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
 [account_reconcile_oca](account_reconcile_oca/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
@@ -536,9 +538,9 @@ addon | version | maintainers | summary
 [account_banking_mandate](account_banking_mandate/) | 19.0.1.0.0 |  | Banking mandates
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 19.0.1.0.0 |  | Base module for PAIN file generation
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.0.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.1.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.3 |  | Adds payment mode on partners and invoices
-[account_payment_order](account_payment_order/) | 19.0.1.0.1 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 19.0.1.0.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_purchase](account_payment_purchase/) | 19.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_sale](account_payment_sale/) | 19.0.1.0.1 |  | Adds payment mode on sale orders
@@ -646,6 +648,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt](account_statement_import_camt/) | 19.0.1.0.0 |  | CAMT Format Bank Statements Import
 [account_statement_import_file](account_statement_import_file/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files
 [account_statement_import_online](account_statement_import_online/) | 19.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online_qonto](account_statement_import_online_qonto/) | 19.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 19.0.1.0.0 |  | Import QIF Bank Statements
 
 [//]: # (end addons)
@@ -993,6 +996,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_claim](crm_claim/) | 19.0.1.0.0 |  | Track your customers/vendors claims and grievances.
+[crm_claim_code](crm_claim_code/) | 19.0.1.0.0 |  | Sequential Code for Claims
 [crm_industry](crm_industry/) | 19.0.1.0.0 |  | Link leads/opportunities to industries
 [crm_lead_code](crm_lead_code/) | 19.0.1.0.0 |  | Sequential Code for Leads / Opportunities
 [crm_lead_to_task](crm_lead_to_task/) | 19.0.1.0.0 |  | Create Tasks from Leads/Opportunities
@@ -1944,6 +1948,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/l10n-iran
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-iran&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/l10n-iran/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/l10n-iran/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-iran/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-iran)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-iran-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-iran-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# l10n-iran
+
+l10n-iran
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_ir_account](l10n_ir_account/) | 19.0.1.0.0 |  | Iranian accounting chart and localization.
+[l10n_ir_states](l10n_ir_states/) | 19.0.1.0.0 |  | Add Iran States and Cities
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/l10n-japan
 
 
@@ -2080,7 +2132,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 19.0.0.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 19.0.0.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 19.0.0.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.15.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.16.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 19.0.0.3.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 19.0.0.8.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 19.0.0.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -2161,6 +2213,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 19.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
+[l10n_es_facturae](l10n_es_facturae/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_toponyms](l10n_es_toponyms/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 
@@ -2658,7 +2711,7 @@ addon | version | maintainers | summary
 [operating_unit](operating_unit/) | 19.0.1.0.1 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 19.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [product_operating_unit](product_operating_unit/) | 19.0.1.0.0 |  | Adds the concept of operating unit (OU) in products
-[res_partner_operating_unit](res_partner_operating_unit/) | 19.0.1.0.0 |  | Introduces Operating Unit fields in Partner
+[res_partner_operating_unit](res_partner_operating_unit/) | 19.0.1.1.0 |  | Introduces Operating Unit fields in Partner
 [sale_operating_unit](sale_operating_unit/) | 19.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 19.0.1.0.0 |  | Sales Team Operating Unit
 
@@ -3018,6 +3071,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_attribute_tax](product_variant_attribute_tax/) | 19.0.1.0.0 |  | Set taxes on the product attribute values
+[product_variant_configurator](product_variant_configurator/) | 19.0.1.0.0 |  | Provides an abstract model for product variant configuration.
 
 [//]: # (end addons)
 
@@ -3064,6 +3118,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[project_administrator_restricted_visibility](project_administrator_restricted_visibility/) | 19.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | Adds a 'Project Administrator' access group with restricted visibility to 'Projects'
 [project_department](project_department/) | 19.0.1.0.0 |  | Project Department Categorization
 [project_hr](project_hr/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 19.0.1.0.0 |  | Module decorates projects and tasks with Project Key
@@ -3550,6 +3605,9 @@ and promote its widespread use.
 ## From OCA/sale-reporting
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# sale-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-reporting&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/sale-reporting/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/sale-reporting/actions/workflows/test.yml?query=branch%3A19.0)
@@ -3557,8 +3615,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/sale-reporting-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-reporting-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# sale-reporting
 
 sale-reporting
 
@@ -4409,6 +4465,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/tier-validation
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/tier-validation&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/tier-validation/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/tier-validation/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/tier-validation/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/tier-validation/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/tier-validation/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/tier-validation)
+[![Translation Status](https://translation.odoo-community.org/widgets/tier-validation-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/tier-validation-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# tier-validation
+
+tier-validation
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_tier_validation](base_tier_validation/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation_formula](base_tier_validation_formula/) | 19.0.1.0.0 |  | Formulas for Base tier validation
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/timesheet
 
 
@@ -4501,7 +4605,7 @@ addon | version | maintainers | summary
 [web_pwa_customize](web_pwa_customize/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Web Pwa Customize
 [web_refresher](web_refresher/) | 19.0.1.0.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 19.0.1.0.0 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/cuongnmtm'><img src='https://github.com/cuongnmtm.png' width='32' height='32' style='border-radius:50%;' alt='cuongnmtm'/></a> | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 19.0.1.0.1 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 19.0.1.0.2 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
 [web_search_with_and](web_search_with_and/) | 19.0.1.0.0 |  | Use AND conditions on omnibar search
 [web_timeline](web_timeline/) | 19.0.1.0.0 |  | Interactive visualization chart to show events in time
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 19.0.1.0.0 |  | Open the linked resource when clicking on their name

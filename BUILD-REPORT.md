@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-05-09 04:37 UTC
+Generated 2026-05-12 15:50 UTC
 
 ## Skipped repos
 
@@ -71,7 +71,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-iran](https://github.com/OCA/l10n-iran) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
@@ -153,7 +152,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_module` | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | `no_module` | No directory with __manifest__.py at repo root |
-| [tier-validation](https://github.com/OCA/tier-validation) | `no_module` | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
