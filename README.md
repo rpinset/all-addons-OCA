@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-05-09 04:30 UTC** (elapsed 88s)
+Last build: **2026-05-12 15:40 UTC** (elapsed 100s)
 
 - Repos integrated: **116**
 - Canonical modules: **2221**
@@ -88,7 +88,7 @@ Last build: **2026-05-09 04:30 UTC** (elapsed 88s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 26 | 63d82bc 2024-10-03 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 64 | f7de324 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 82 | 1f1a5b9 2025-10-01 mymage Translated using Weblate (Italian) |
-| [product-attribute](https://github.com/OCA/product-attribute) | 56 | f3c9f13 2025-11-24 mymage Translated using Weblate (Italian) |
+| [product-attribute](https://github.com/OCA/product-attribute) | 56 | d0b2171 2026-05-12 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | fa25c0b 2025-02-12 mymage Translated using Weblate (Italian) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | e8dc020 2024-05-08 mymage Translated using Weblate (Italian) |
 | [project](https://github.com/OCA/project) | 40 | dd8fc1b 2025-06-21 mymage Translated using Weblate (Italian) |
