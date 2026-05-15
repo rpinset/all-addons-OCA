@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-05-12 15:40 UTC** (elapsed 95s)
+Last build: **2026-05-15 21:34 UTC** (elapsed 93s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -75,7 +75,7 @@ Last build: **2026-05-12 15:40 UTC** (elapsed 95s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 3 | 09713cd 2023-10-10 Weblate Update translation files |
 | [maintenance](https://github.com/OCA/maintenance) | 28 | f2e91e2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [management-system](https://github.com/OCA/management-system) | 27 | 70054d4 2025-11-28 mymage Translated using Weblate (Italian) |
-| [manufacture](https://github.com/OCA/manufacture) | 31 | fa2c050 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [manufacture](https://github.com/OCA/manufacture) | 31 | ef6453e 2026-05-13 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | b4a345b 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 6a79436 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | d4baf6b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
