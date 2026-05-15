@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-05-12 15:40 UTC** (elapsed 100s)
+Last build: **2026-05-15 21:34 UTC** (elapsed 86s)
 
 - Repos integrated: **116**
 - Canonical modules: **2221**
@@ -77,7 +77,7 @@ Last build: **2026-05-12 15:40 UTC** (elapsed 100s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 7 | a570350 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 24 | 83c3d8a 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [management-system](https://github.com/OCA/management-system) | 23 | cb05377 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [manufacture](https://github.com/OCA/manufacture) | 53 | 9f7f824 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [manufacture](https://github.com/OCA/manufacture) | 53 | 3035b2b 2026-05-13 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 6 | c312b21 2023-10-29 mymage Translated using Weblate (Italian) |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 12 | d285ed3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | f2725c2 2025-10-15 mymage Translated using Weblate (Italian) |
@@ -100,7 +100,7 @@ Last build: **2026-05-12 15:40 UTC** (elapsed 100s)
 | [report-print-send](https://github.com/OCA/report-print-send) | 5 | 5035ec3 2024-01-15 mymage Translated using Weblate (Italian) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 27 | b18ab36 2025-11-25 mymage Translated using Weblate (Italian) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 6 | ce695b4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [rma](https://github.com/OCA/rma) | 6 | 8eda9d3 2026-04-03 mymage Translated using Weblate (Italian) |
+| [rma](https://github.com/OCA/rma) | 6 | 032e07f 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 6 | b18afd3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 96100b3 2026-01-11 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 1197df9 2023-09-03 OCA-git-bot [UPD] README.rst |
