@@ -284,14 +284,14 @@ class StockReserveRuleRemoval(models.Model):
         def is_greater_eq(value, other):
             return float_compare(value, other, precision_rounding=rounding) >= 0
 
-        for location, location_quants in quants_per_bin:
-            location_quantity = sum(location_quants.mapped("quantity")) - sum(
-                location_quants.mapped("reserved_quantity")
-            )
-            if location_quantity <= 0:
-                continue
+        for pack_quantity in packaging_quantities:
+            for location, location_quants in quants_per_bin:
+                location_quantity = sum(location_quants.mapped("quantity")) - sum(
+                    location_quants.mapped("reserved_quantity")
+                )
+                if location_quantity <= 0:
+                    continue
 
-            for pack_quantity in packaging_quantities:
                 enough_for_packaging = is_greater_eq(location_quantity, pack_quantity)
                 asked_at_least_packaging_qty = is_greater_eq(need, pack_quantity)
                 if enough_for_packaging and asked_at_least_packaging_qty:

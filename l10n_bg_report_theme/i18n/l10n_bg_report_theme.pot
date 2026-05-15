@@ -14,11 +14,6 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_bg_report_theme
-#: model_terms:ir.ui.view,arch_db:l10n_bg_report_theme.report_invoice_document
-msgid "2023-09-25"
-msgstr ""
-
-#. module: l10n_bg_report_theme
 #: model_terms:ir.ui.view,arch_db:l10n_bg_report_theme.deal_partner
 #: model_terms:ir.ui.view,arch_db:l10n_bg_report_theme.signatures_section
 msgid ":<span/>"
@@ -522,9 +517,4 @@ msgstr ""
 msgid ""
 "When enabled, swaps address and information block positions in reports "
 "(address moves to left, information block to right)"
-msgstr ""
-
-#. module: l10n_bg_report_theme
-#: model_terms:ir.ui.view,arch_db:l10n_bg_report_theme.signatures_section
-msgid "____________________"
 msgstr ""

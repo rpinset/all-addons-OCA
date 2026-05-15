@@ -42,6 +42,7 @@ msgstr ""
 #. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__active
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__active
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_report_xml_action__active
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_server__active
 msgid "Active"
 msgstr ""
@@ -79,6 +80,11 @@ msgstr ""
 #. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_printer__status__available
 msgid "Available"
+msgstr ""
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__backend
+msgid "Backend"
 msgstr ""
 
 #. module: base_report_to_printer
@@ -210,6 +216,11 @@ msgstr "Creado en"
 #. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
 msgid "Creation Date"
+msgstr ""
+
+#. module: base_report_to_printer
+#: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_printer__backend__cups
+msgid "Cups"
 msgstr ""
 
 #. module: base_report_to_printer

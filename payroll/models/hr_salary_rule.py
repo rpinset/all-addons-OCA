@@ -199,7 +199,6 @@ class HrSalaryRule(models.Model):
         self.require_code_and_category = require
         return require
 
-    # TODO should add some checks on the type of result (should be float)
     def _compute_rule(self, localdict):
         """
         :param localdict: dictionary containing the environement in which to
@@ -210,7 +209,17 @@ class HrSalaryRule(models.Model):
         """
         self.ensure_one()
         method = f"_compute_rule_{self.amount_select}"
-        return api.call_kw(self, method, [self.ids, localdict], {})
+        result = api.call_kw(self, method, [self.ids, localdict], {})
+
+        # Ensure quantity, rate, and amount are floats.
+        for key in ("quantity", "rate", "amount"):
+            try:
+                result[key] = float(result[key])
+            except (TypeError, ValueError, KeyError) as err:
+                raise UserError(
+                    _("Rule computation field '%s' must be a float") % key
+                ) from err
+        return result
 
     def _compute_rule_fix(self, localdict):
         try:

@@ -480,6 +480,53 @@ class TestReserveRule(ReserveRuleCommon):
             [{"location_id": self.loc_zone1_bin2.id, "quantity": 50.0}],
         )
 
+    def test_rule_packaging_fifo_pack(self):
+        self._setup_packagings(
+            self.product1,
+            [("Pallet", 500, self.pallet), ("Retail Box", 100, self.retail_box)],
+        )
+        pack_1, pack_2 = self.env["stock.quant.package"].create(
+            [{"name": "PACK0001"}, {"name": "PACK0002"}]
+        )
+        self._update_qty_in_location(
+            self.loc_zone1_bin1,
+            self.product1,
+            100,
+            in_date=fields.Datetime.to_datetime("2021-01-02 12:00:00"),
+            package=pack_1,
+        )
+        self._update_qty_in_location(
+            self.loc_zone1_bin2,
+            self.product1,
+            500,
+            in_date=fields.Datetime.to_datetime("2021-01-04 12:00:00"),
+            package=pack_2,
+        )
+        self._create_rule(
+            {},
+            [
+                {
+                    "location_id": self.loc_zone1.id,
+                    "sequence": 1,
+                    "removal_strategy": "packaging",
+                },
+            ],
+        )
+
+        picking = self._create_picking(self.wh, [(self.product1, 500)])
+        # Pick from biggest packaging
+        picking.action_assign()
+        self.assertRecordValues(
+            picking.move_ids.move_line_ids,
+            [
+                {
+                    "location_id": self.loc_zone1_bin2.id,
+                    "quantity": 500.0,
+                    "package_id": pack_2.id,
+                }
+            ],
+        )
+
     def test_rule_packaging_0_packaging(self):
         # a packaging mistakenly created with a 0 qty should be ignored,
         # not make the reservation fail

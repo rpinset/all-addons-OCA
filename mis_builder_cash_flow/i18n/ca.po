@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-11 09:58+0000\n"
+"PO-Revision-Date: 2026-05-12 20:57+0000\n"
 "Last-Translator: QuiJoQuim <quim.rebull@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ca\n"
@@ -44,17 +44,17 @@ msgstr "+5s"
 #. module: mis_builder_cash_flow
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_plus_6w
 msgid "+6w"
-msgstr ""
+msgstr "+6s"
 
 #. module: mis_builder_cash_flow
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_plus_7w
 msgid "+7w"
-msgstr ""
+msgstr "+7s"
 
 #. module: mis_builder_cash_flow
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_plus_8w
 msgid "+8w"
-msgstr ""
+msgstr "+8s"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model,name:mis_builder_cash_flow.model_account_account
@@ -63,37 +63,41 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_forecast_line_view_search
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_search_view
 msgid "Account"
-msgstr ""
+msgstr "Cuenta"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,help:mis_builder_cash_flow.field_mis_cash_flow__account_type
+#, fuzzy
 msgid ""
 "Account Type is used for information purpose, to generate country-specific "
 "legal reports, and set the rules to close a fiscal year and generate opening "
 "entries."
 msgstr ""
+"El tipus de compte es fa servir amb propòsits informatius, per a generar "
+"informes legals específics per país i per a establir les regles per a tancar "
+"un any fiscal i generar assentaments d'obertura."
 
 #. module: mis_builder_cash_flow
 #: model:mis.report.kpi,description:mis_builder_cash_flow.mis_kpi_balance
 msgid "BALANCE"
-msgstr ""
+msgstr "SALDO"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__balance
 msgid "Balance"
-msgstr ""
+msgstr "Saldo"
 
 #. module: mis_builder_cash_flow
 #: model:mis.report,name:mis_builder_cash_flow.mis_report_cash_flow
 #: model:mis.report.instance,name:mis_builder_cash_flow.mis_instance_cash_flow
 msgid "Cash Flow"
-msgstr ""
+msgstr "Flux de caixa"
 
 #. module: mis_builder_cash_flow
 #: model:ir.actions.act_window,name:mis_builder_cash_flow.action_mis_cash_flow_forecast_line
 #: model:ir.ui.menu,name:mis_builder_cash_flow.menu_mis_cash_flow_forecast_line
 msgid "Cash Flow Forecast Line"
-msgstr ""
+msgstr "Línia de previsió de fluxe de caixa"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__company_id
@@ -101,27 +105,27 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_forecast_line_view_search
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_search_view
 msgid "Company"
-msgstr ""
+msgstr "Empresa"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creada per"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creat en"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__credit
 msgid "Credit"
-msgstr ""
+msgstr "Haver"
 
 #. module: mis_builder_cash_flow
 #: model:mis.report.instance.period,name:mis_builder_cash_flow.mis_period_current
 msgid "Current"
-msgstr ""
+msgstr "Actual"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__date
@@ -129,24 +133,24 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_forecast_line_view_search
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_search_view
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__debit
 msgid "Debit"
-msgstr ""
+msgstr "Deure"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow__display_name
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_mis_cash_flow_forecast_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom Mostrat"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields.selection,name:mis_builder_cash_flow.selection__mis_cash_flow__line_type__forecast_line
 #: model_terms:ir.ui.view,arch_db:mis_builder_cash_flow.mis_cash_flow_search_view
 msgid "Forecast Line"
-msgstr ""
+msgstr "Línia de previsió"
 
 #. module: mis_builder_cash_flow
 #: model:ir.model.fields,field_description:mis_builder_cash_flow.field_account_account__hide_in_cash_flow

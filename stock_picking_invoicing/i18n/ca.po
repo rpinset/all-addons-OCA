@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-06 13:02+0000\n"
-"Last-Translator: Ricard <ricard.calvo@forgeflow.com>\n"
+"PO-Revision-Date: 2026-05-12 23:45+0000\n"
+"Last-Translator: QuiJoQuim <quim.rebull@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.stock_picking_type_kanban
 msgid "<span class=\"col-6\">To be Invoiced</span>"
-msgstr ""
+msgstr "<span class=\"col-6\">A ser facturat</span>"
 
 #. module: stock_picking_invoicing
 #. odoo-python

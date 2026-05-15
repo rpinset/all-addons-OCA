@@ -52,8 +52,8 @@ msgstr ""
 #: code:addons/payroll/models/hr_salary_rule.py:0
 msgid ""
 "\n"
-"Wrong python code defined for salary rule %(nm)s (%(code)s) for employee "
-"%(ee)s.\n"
+"Wrong python code defined for salary rule %(nm)s (%(code)s) for employee %"
+"(ee)s.\n"
 "Here is the error received:\n"
 "\n"
 "%(err)s\n"
@@ -127,8 +127,8 @@ msgstr ""
 msgid ""
 "<code>\n"
 "                                            result = contract.wage\n"
-"                                            result_qty = worked_days.WORK100."
-"number_of_days\n"
+"                                            result_qty = "
+"worked_days.WORK100.number_of_days\n"
 "                                        </code>"
 msgstr ""
 
@@ -265,8 +265,8 @@ msgid ""
 "\">\n"
 "            Dear <t t-out=\"object.employee_id.name\"/>,\n"
 "            <br/><br/>\n"
-"            Please find attached the payslip for <t t-out=\"object."
-"payslip_run_id.name\"/>.\n"
+"            Please find attached the payslip for <t t-"
+"out=\"object.payslip_run_id.name\"/>.\n"
 "            <br/><br/>\n"
 "            Do not hesitate to contact us if you have any questions.\n"
 "            <br/><br/>\n"
@@ -610,6 +610,7 @@ msgstr "محاسبات"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_change_state_form
+#: model_terms:ir.ui.view,arch_db:payroll.view_hr_payslip_by_employees
 #: model_terms:ir.ui.view,arch_db:payroll.view_payslip_lines_contribution_register
 msgid "Cancel"
 msgstr "لغو"
@@ -1325,8 +1326,8 @@ msgstr ""
 #: model:ir.model.fields,help:payroll.field_hr_payslip_input__amount
 msgid ""
 "It is used in computation. For e.g. A rule for sales having 1% commission of "
-"basic salary for per product can defined in expression like result = inputs."
-"SALEURO.amount * contract.wage*0.01."
+"basic salary for per product can defined in expression like result = "
+"inputs.SALEURO.amount * contract.wage*0.01."
 msgstr ""
 "در محاسبات استفاده می شود. برای مثال قاعده ای برای فروش دارای 1% کارمزد حقوق "
 "پایه برای هر محصول می تواند به صورت result = inputs.SALEURO.amount * "
@@ -1545,8 +1546,8 @@ msgstr "مسئول"
 msgid ""
 "Only draft payslips can be verified,the payslip %(nm)s is in %(st)s state"
 msgstr ""
-"فقط پیش‌نویس فیش‌های حقوق را می‌توان تأیید کرد، فیش حقوقی %(nm)s در وضعیت "
-"%(st)s است"
+"فقط پیش‌نویس فیش‌های حقوق را می‌توان تأیید کرد، فیش حقوقی %(nm)s در وضعیت %"
+"(st)s است"
 
 #. module: payroll
 #. odoo-python
@@ -1555,18 +1556,18 @@ msgid ""
 "Only payslips in states verify or draft can be confirmed, the payslip %(nm)s "
 "is in %(st)s state"
 msgstr ""
-"فقط فیش‌های حقوق در ایالت‌های تأیید یا پیش‌نویس قابل تأیید است، فیش حقوقی "
-"%(nm)s در وضعیت %(st)s است."
+"فقط فیش‌های حقوق در ایالت‌های تأیید یا پیش‌نویس قابل تأیید است، فیش حقوقی %"
+"(nm)s در وضعیت %(st)s است."
 
 #. module: payroll
 #. odoo-python
 #: code:addons/payroll/wizard/hr_payslip_change_state.py:0
 msgid ""
-"Only rejected payslips can be reset to draft, the payslip %(nm)s is in "
-"%(st)s state"
+"Only rejected payslips can be reset to draft, the payslip %(nm)s is in %"
+"(st)s state"
 msgstr ""
-"فقط فیش های حقوقی رد شده را می توان به پیش نویس بازنشانی کرد، فیش حقوقی "
-"%(nm)s در وضعیت %(st)s است"
+"فقط فیش های حقوقی رد شده را می توان به پیش نویس بازنشانی کرد، فیش حقوقی %"
+"(nm)s در وضعیت %(st)s است"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_form
@@ -1998,6 +1999,12 @@ msgid "Rule Configuration"
 msgstr "پیکربندی قانون"
 
 #. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_salary_rule.py:0
+msgid "Rule computation field '%s' must be a float"
+msgstr ""
+
+#. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_category_view_form
 msgid "Salary Categories"
 msgstr "دسته بندی حقوق"
@@ -2332,8 +2339,8 @@ msgid ""
 "Wrong percentage base or quantity defined for salary rule %(nm)s (%(code)s) "
 "for employee %(ee)s."
 msgstr ""
-"پایه درصد یا مقدار اشتباه تعریف شده برای قانون حقوق %(nm)s (%(code)s) برای "
-"%(ee)s کارمند."
+"پایه درصد یا مقدار اشتباه تعریف شده برای قانون حقوق %(nm)s (%(code)s) برای %"
+"(ee)s کارمند."
 
 #. module: payroll
 #. odoo-python

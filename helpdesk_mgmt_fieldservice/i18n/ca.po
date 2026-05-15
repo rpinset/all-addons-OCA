@@ -6,38 +6,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-05-12 23:45+0000\n"
+"Last-Translator: QuiJoQuim <quim.rebull@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_fsm_location__ticket_count
 msgid "# Tickets"
-msgstr ""
+msgstr "# Tiquets"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_helpdesk_ticket__all_orders_closed
 msgid "All Orders Closed"
-msgstr ""
+msgstr "Totes les comandes tancades"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_helpdesk_ticket__all_partners
 msgid "All Partners"
-msgstr ""
+msgstr "Tots els tercers"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_fieldservice.fsm_order_close_wizard_view_form
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_fieldservice.fsm_order_close_wizard_view_form
 msgid "Close Ticket"
-msgstr ""
+msgstr "Tancar tiquet"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_fieldservice.helpdesk_ticket_search_closed_orders
@@ -62,19 +64,19 @@ msgstr ""
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_fsm_order_close_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_fieldservice.helpdesk_ticket_view_form_logic
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_fsm_location__display_name
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_fsm_order_close_wizard__display_name
 #: model:ir.model.fields,field_description:helpdesk_mgmt_fieldservice.field_helpdesk_ticket__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom a Mostrar"
 
 #. module: helpdesk_mgmt_fieldservice
 #: model:ir.model,name:helpdesk_mgmt_fieldservice.model_fsm_order_close_wizard

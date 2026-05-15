@@ -18,3 +18,12 @@ class AccountAnalyticLine(models.Model):
     def _onchange_lead_id(self):
         if self.lead_id.project_id:
             self.project_id = self.lead_id.project_id.id
+
+    @api.depends("lead_id.partner_id")
+    def _compute_partner_id(self):
+        # Use lead partner if any
+        self_with_partner = self.filtered("lead_id.partner_id")
+        for line in self_with_partner:
+            line.partner_id = line.lead_id.partner_id
+        self -= self_with_partner
+        return super()._compute_partner_id()
