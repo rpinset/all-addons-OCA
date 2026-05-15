@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-05-12 15:50 UTC
+Generated 2026-05-15 21:39 UTC
 
-Total skipped: **167**
+Total skipped: **165**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,11 +37,10 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **143**
+Count: **141**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
-| [account-budgeting](https://github.com/OCA/account-budgeting) | [19.0](https://github.com/OCA/account-budgeting/tree/19.0) | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | [19.0](https://github.com/OCA/account-consolidation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | [19.0](https://github.com/OCA/account-fiscal-rule/tree/19.0) | No directory with __manifest__.py at repo root |
 | [ai](https://github.com/OCA/ai) | [19.0](https://github.com/OCA/ai/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -154,7 +153,6 @@ Count: **143**
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [19.0](https://github.com/OCA/stock-logistics-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [19.0](https://github.com/OCA/stock-logistics-putaway/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [19.0](https://github.com/OCA/stock-logistics-release-channel/tree/19.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | [19.0](https://github.com/OCA/stock-logistics-request/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [19.0](https://github.com/OCA/stock-logistics-reservation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [19.0](https://github.com/OCA/stock-logistics-shopfloor/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [19.0](https://github.com/OCA/stock-logistics-tracking/tree/19.0) | No directory with __manifest__.py at repo root |

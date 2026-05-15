@@ -139,11 +139,9 @@ class TierTierValidation(CommonTierValidation):
                 "has_comment": True,
             }
         )
-        # Request validation
+        # Request validation -- auto-promotes the single review to pending.
         review = test_record.with_user(self.test_user_2.id).request_validation()
         self.assertTrue(review)
-        # Let the normal workflow assign status 'pending' instead of waiting
-        review._update_review_status()
         record = test_record.with_user(self.test_user_1.id)
         res = record.validate_tier()
         ctx = res.get("context")
@@ -550,19 +548,19 @@ class TierTierValidation(CommonTierValidation):
         # Create new test record
         tier_review_obj = self.env["tier.review"]
         test_record = self.test_model.create({"test_field": 3.5})
-        # Request validation
+        # Request validation -- the first review must be promoted to ``pending``
+        # automatically; the second one stays ``waiting`` until its turn.
         review = test_record.request_validation()
 
         self.assertTrue(review)
-        # both reviews should be waiting when created
         review_1 = tier_review_obj.browse(review.ids[0])
         review_2 = tier_review_obj.browse(review.ids[1])
-        self.assertTrue(review_1.status == "waiting")
-        self.assertTrue(review_2.status == "waiting")
-        # and then normal workflow will follow...
         review_1.invalidate_model()
-        review_1._update_review_status()
         self.assertTrue(review_1.status == "pending")
+        # ``next_review`` must contain the pending review's definition name,
+        # not the str-representation of an empty recordset (e.g. ``tier.review()``).
+        test_record.invalidate_recordset(["next_review"])
+        self.assertEqual(test_record.next_review, f"Next: {review_1.name}")
         # first reviewer does not want notifications
         # chatter should be empty
         self.assertFalse(test_record.message_ids)
@@ -581,17 +579,128 @@ class TierTierValidation(CommonTierValidation):
         self.assertTrue(review_2.done_by.id is False)
         self.assertTrue(review_2.reviewed_date is False)
 
+    def test_19a_notify_on_pending_sequence_negative(self):
+        """When ``approve_sequence`` is used, only the first reviewer in the
+        chain must receive a ``notify_on_pending`` notification. The next
+        reviewer must NOT be subscribed and must NOT receive a message until
+        their predecessor has approved.
+        """
+        # Fresh definitions so the test is self-contained: both have
+        # ``notify_on_pending=True`` so the difference between sequence
+        # positions is what is being asserted. Use a ``test_field`` value
+        # that does NOT match any definition created by ``common.py`` so
+        # only these two definitions apply.
+        TierDefinition = self.env["tier.definition"]
+        test_record = self.test_model.create({"test_field": 2.5})
+        def_first = TierDefinition.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '=', 2.5)]",
+                "approve_sequence": True,
+                "notify_on_pending": True,
+                "sequence": 20,
+                "name": "First in sequence -- user 1",
+            }
+        )
+        def_second = TierDefinition.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '=', 2.5)]",
+                "approve_sequence": True,
+                "notify_on_pending": True,
+                "sequence": 10,
+                "name": "Second in sequence -- user 2",
+            }
+        )
+
+        reviews = test_record.request_validation()
+        # ``request_validation`` iterates definitions in ``sequence desc``, so
+        # def_first (sequence=20) becomes tier.review.sequence=1 and def_second
+        # (sequence=10) becomes tier.review.sequence=2.
+        review_first = reviews.filtered(lambda r: r.definition_id == def_first)
+        review_second = reviews.filtered(lambda r: r.definition_id == def_second)
+        self.assertEqual(review_first.status, "pending")
+        self.assertEqual(review_second.status, "waiting")
+
+        # Exactly one chatter message must have been posted -- for the first
+        # reviewer reaching ``pending``. The second reviewer must not have been
+        # subscribed yet and must not have been notified.
+        self.assertEqual(len(test_record.message_ids), 1)
+        first_message = test_record.message_ids
+        followers = test_record.message_follower_ids
+        self.assertIn(self.test_user_1.partner_id, followers.mapped("partner_id"))
+        self.assertNotIn(
+            self.test_user_2.partner_id,
+            followers.mapped("partner_id"),
+            "Second-tier reviewer must not be subscribed to the record before "
+            "their turn.",
+        )
+        self.assertNotIn(
+            self.test_user_2.partner_id,
+            first_message.notified_partner_ids,
+            "Second-tier reviewer must not be notified before their "
+            "predecessor has approved.",
+        )
+
+        # Once the first reviewer approves, the second review must reach
+        # ``pending`` AND its reviewer must receive their own notification.
+        test_record.with_user(self.test_user_1).validate_tier()
+        self.assertEqual(review_first.status, "approved")
+        self.assertEqual(review_second.status, "pending")
+        followers = test_record.message_follower_ids
+        self.assertIn(self.test_user_2.partner_id, followers.mapped("partner_id"))
+        new_messages = test_record.message_ids - first_message
+        self.assertTrue(new_messages)
+        self.assertIn(
+            self.test_user_2.partner_id,
+            new_messages.mapped("notified_partner_ids"),
+            "Second-tier reviewer must be notified once promoted to pending.",
+        )
+
+    def test_19b_notify_review_available_no_op_when_no_users(self):
+        """``_notify_review_available`` must short-circuit (no follower
+        added, no chatter message posted) when none of the passed reviews
+        actually wants ``notify_on_pending``. This is the defensive contract
+        that prevents stray subtype messages routed to nobody.
+        """
+        TierDefinition = self.env["tier.definition"]
+        test_record = self.test_model.create({"test_field": 2.5})
+        silent_def = TierDefinition.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '=', 2.5)]",
+                "notify_on_pending": False,
+                "sequence": 10,
+                "name": "Silent definition -- no notify_on_pending",
+            }
+        )
+        reviews = test_record.request_validation()
+        silent_review = reviews.filtered(lambda r: r.definition_id == silent_def)
+        self.assertTrue(silent_review)
+
+        followers_before = test_record.message_follower_ids
+        messages_before = test_record.message_ids
+        test_record._notify_review_available(silent_review)
+        self.assertEqual(test_record.message_follower_ids, followers_before)
+        self.assertEqual(test_record.message_ids, messages_before)
+
     def test_20_no_sequence(self):
         # Create new test record
         tier_review_obj = self.env["tier.review"]
         test_record2 = self.test_model.create({"test_field": 0.9})
-        # request validation
+        # Request validation -- with no approve_sequence the single review must
+        # be promoted to ``pending`` automatically and ``notify_on_pending``
+        # must trigger a chatter message.
         review = test_record2.request_validation()
         self.assertTrue(review)
         review_1 = tier_review_obj.browse(review.ids[0])
-        self.assertTrue(review_1.status == "waiting")
         review_1.invalidate_model()
-        review_1._update_review_status()
         self.assertTrue(review_1.status == "pending")
         msg2 = test_record2.message_ids[0].body
         request = test_record2._notify_requested_review_body()
@@ -1022,10 +1131,11 @@ class TierTierValidation(CommonTierValidation):
                 # Flush manually to trigger the _write
                 self.test_record_computed.flush_recordset()
         self.assertEqual(self.test_record_computed.state, "draft")
-        # The validation is performed
+        # The validation is performed -- the single review is auto-promoted
+        # to ``pending`` so the reviewer can act on it.
         self.test_record_computed.request_validation()
         self.test_record_computed.invalidate_recordset()
-        self.assertEqual(self.test_record_computed.review_ids.status, "waiting")
+        self.assertEqual(self.test_record_computed.review_ids.status, "pending")
         self.test_record_computed.with_user(self.test_user_1).validate_tier()
         self.test_record_computed.invalidate_recordset()
         self.assertEqual(self.test_record_computed.review_ids.status, "approved")

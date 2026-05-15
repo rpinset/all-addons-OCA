@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_tier_validation_confirm_auth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-02-10 13:24+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model,name:base_tier_validation_confirm_auth.model_comment_wizard
+msgid "Comment Wizard"
+msgstr "Procedura guidata commento"
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model.fields,help:base_tier_validation_confirm_auth.field_tier_definition__require_authentication
+#: model:ir.model.fields,help:base_tier_validation_confirm_auth.field_tier_review__require_authentication
+msgid ""
+"If enabled, the user will be asked to authenticate himself in order to "
+"validate or reject the tier."
+msgstr ""
+"Se abilitata, verrà chiesto all'utente di autenticarsi per validare o "
+"rifiutare il livello."
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model.fields,field_description:base_tier_validation_confirm_auth.field_tier_definition__require_authentication
+#: model:ir.model.fields,field_description:base_tier_validation_confirm_auth.field_tier_review__require_authentication
+#: model:ir.model.fields,field_description:base_tier_validation_confirm_auth.field_tier_validation__require_authentication
+msgid "Require Authentication"
+msgstr "Richiede autenticazione"
+
+#. module: base_tier_validation_confirm_auth
+#. odoo-python
+#: code:addons/base_tier_validation_confirm_auth/models/res_users.py:0
+msgid "Security Control"
+msgstr "Controllo di sicurezza"
+
+#. module: base_tier_validation_confirm_auth
+#. odoo-python
+#: code:addons/base_tier_validation_confirm_auth/models/res_users.py:0
+msgid "This method can only be accessed over HTTP"
+msgstr "Si può accedere a questo metodo solo tramite accesso con HTTP"
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model,name:base_tier_validation_confirm_auth.model_tier_definition
+msgid "Tier Definition"
+msgstr "Definizione livello"
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model,name:base_tier_validation_confirm_auth.model_tier_review
+msgid "Tier Review"
+msgstr "Revisione livello"
+
+#. module: base_tier_validation_confirm_auth
+#: model:ir.model,name:base_tier_validation_confirm_auth.model_tier_validation
+msgid "Tier Validation (abstract)"
+msgstr "Validazione livello (sintesi)"

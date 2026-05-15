@@ -1,0 +1,625 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_tier_validation_correction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-01-19 13:50+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "<span class=\"oe_edit_only\">Name</span>"
+msgstr "<span class=\"oe_edit_only\">Nome</span>"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_ids
+msgid "Activities"
+msgstr "Attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione eccezione attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_state
+msgid "Activity State"
+msgstr "Stato attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona tipo attività"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Actual Correct"
+msgstr "Attuale corretto"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_correct
+msgid "Actual Correction Date"
+msgstr "Data correzione attuale"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Actual Revert"
+msgstr "Ripristino attuale"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_actual_revert
+msgid "Actual Revert Date"
+msgstr "Data ripristino attuale"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__reference
+msgid "Affected Documents"
+msgstr "Documenti interessati"
+
+#. module: base_tier_validation_correction
+#: model:ir.actions.act_window,name:base_tier_validation_correction.view_affected_tier_reviews_action
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__review_ids
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Affected Tier Reviews"
+msgstr "Revisioni livello interessate"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Are you sure to reassign new reviewer(s) for affected tier reviews?"
+msgstr ""
+"Si è sicuri di riassegnare un nuovo revisore(i) per le revisioni livello "
+"interessate?"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Are you sure to revert to old reviewer(s) for affected tier reviews?"
+msgstr ""
+"Si è sicuri di ripristinare il precedente revisore(i) per le revisioni "
+"livello interessate?"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteggio allegati"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__cancel
+msgid "Cancelled"
+msgstr "Annullata"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_validation_label_forward
+msgid "Change Reviewer"
+msgstr "Modifica revisore"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Change Reviewers"
+msgstr "Modifica revisori"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.view_affected_tier_reviews_form
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__done
+msgid "Corrected"
+msgstr "Corretti"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__correction_id
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Correction"
+msgstr "Correzione"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Correction Details"
+msgstr "Dettagli correzioni"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__correction_type
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Correction Type"
+msgstr "Tipo correzione"
+
+#. module: base_tier_validation_correction
+#. odoo-python
+#: code:addons/base_tier_validation_correction/models/tier_correction.py:0
+#, python-format
+msgid "Correction is allowed on state = 'done' only"
+msgstr "La correzione è consentita solo in stato 'completato'"
+
+#. module: base_tier_validation_correction
+#. odoo-python
+#: code:addons/base_tier_validation_correction/models/tier_correction.py:0
+#, python-format
+msgid "Correction is allowed on state = 'prepare' only"
+msgstr "La correzione è consentita solo nello stato 'prepara'"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__create_uid
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__create_uid
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__create_date
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__create_date
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid ""
+"Default new reviewers to be assigned to the correction. This value can be overwritten in\n"
+"                                Correction Detail."
+msgstr ""
+"Nuovi revisori predefiniti da assegnare alla correzione. Questo valore può "
+"essere sovrascritto in\n"
+"                                Dettagli correzione."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__name
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Find documents with pending reviews by"
+msgstr "Trova documenti con revisioni in corso da"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__old_reviewer_ids
+msgid "Find documents with tier reviews matching some reviewers"
+msgstr ""
+"Trova documenti con revisioni livello che corrispondono a qualche revisore"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_follower_ids
+msgid "Followers"
+msgstr "Seguito da"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguito da (partner)"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome es. fa-tasks"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Group By"
+msgstr "Raggruppa per"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__has_message
+msgid "Has Message"
+msgstr "Ha un messaggio"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__id
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__id
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per indicare un'attività eccezione."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_is_follower
+msgid "Is Follower"
+msgstr "Segue"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__item_ids
+msgid "Item"
+msgstr "Elemento"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews____last_update
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction____last_update
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__write_uid
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__write_uid
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__write_date
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__write_date
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Allegato principale"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Make Correcton"
+msgstr "Crea correzione"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di consegna messaggio"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__model
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Model"
+msgstr "Modello"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Scadenza mia attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__search_name
+msgid "Name Search"
+msgstr "Ricerca nome"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__new_reviewer_ids
+msgid "New Reviewers"
+msgstr "Nuovi revisori"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Evento calendario attività successiva"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza prossima attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo prossima attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo prossima attività"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di consegna"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__model_id
+msgid "On Model"
+msgstr "Nel modello"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__old_reviewer_ids
+msgid "Original Reviewer(s)"
+msgstr "Revisore(i) originale"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Prepare"
+msgstr "Prepara"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__prepare
+msgid "Preparing"
+msgstr "Preparazione"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__new_reviewer_ids
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__correction_type__reviewer
+msgid "Reassign Reviewer(s)"
+msgstr "Riassegna revisore(i)"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__new_reviewer_ids
+msgid "Reassign these reviewers to the tier reviews of the found document"
+msgstr "Riassegna questi revisori alle revisioni livello del documento trovato"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Reassign to new value"
+msgstr "Riassegna a nuovo valore"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__reference
+msgid "Reference"
+msgstr "Riferimento"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__res_id
+msgid "Res"
+msgstr "Res"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__res_model
+msgid "Res Model"
+msgstr "Modello res"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__resource_ref
+msgid "Resource"
+msgstr "Risorsa"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Revert Back"
+msgstr "Ripristina"
+
+#. module: base_tier_validation_correction
+#. odoo-python
+#: code:addons/base_tier_validation_correction/models/tier_correction.py:0
+#, python-format
+msgid "Revert Date should be after Correct Date"
+msgstr "La data di ripristino deve essere dopo la data di corretta"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__revert
+msgid "Reverted"
+msgstr "Ripristinato"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_affected_tier_reviews__review_ids
+msgid "Review"
+msgstr "Revisione"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_search
+msgid "Reviewer"
+msgstr "Revisore"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Reviewer(s)"
+msgstr "Revisore(i)"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Scheduled Action"
+msgstr "Azione schedulata"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Scheduled Correct"
+msgstr "Correzione schedulato"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_correct
+msgid "Scheduled Correction Date"
+msgstr "Data correzione schedulato"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Scheduled Revert"
+msgstr "Ripristina schedulato"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__date_schedule_revert
+msgid "Scheduled Revert Date"
+msgstr "Data ripristino schedulato"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Scheduled date/time to auto correct and/or revert by"
+msgstr "Data/ora schedulata da auto correggere e/o ripristinare da"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Set to Draft"
+msgstr "Imposta a bozza"
+
+#. module: base_tier_validation_correction
+#: model:ir.model,name:base_tier_validation_correction.model_affected_tier_reviews
+msgid "Show Affected Tier Reviews"
+msgstr "Visualizza revisioni livello coinvolte"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__state
+msgid "Status"
+msgstr "Stato"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
+"Oggi: la data attività è oggi\n"
+"Pianificato: attività future."
+
+#. module: base_tier_validation_correction
+#. odoo-python
+#: code:addons/base_tier_validation_correction/models/tier_correction.py:0
+#, python-format
+msgid ""
+"The Correction '%(name)s', corrrected reviewers on '%(reviews)s' to "
+"'%(reviewers)s'"
+msgstr ""
+"La correzione '%(name)s', ha corretto i revisori in '%(reviews)s' a "
+"'%(reviewers)s'"
+
+#. module: base_tier_validation_correction
+#. odoo-python
+#: code:addons/base_tier_validation_correction/models/tier_correction.py:0
+#, python-format
+msgid ""
+"The Correction '%(name)s', reverted reviewers on '%(reviews)s' back to "
+"'%(reviewers)s'"
+msgstr ""
+"La correzione '%(name)s', ha ripristinato i revisori in '%(reviews)s' a "
+"'%(reviewers)s'"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction_item__new_reviewer_ids
+msgid ""
+"These reviewers will overwrite the existing reviewer_ids in tier.review"
+msgstr ""
+"Questi revisori sovrascriveranno gli attuali reviewer_ids in tier.review"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid ""
+"This is optional search criteria to find matched document into Correction Details.\n"
+"                                Only document with pending reviews will be listed."
+msgstr ""
+"Questo è un criterio di ricerca facoltativo per trovare il documento "
+"corrispondente nei dettagli della correzione. \n"
+"                                Verranno elencati solo i documenti con "
+"revisioni in sospeso."
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "Tier Correction"
+msgstr "Correzione livello"
+
+#. module: base_tier_validation_correction
+#: model:ir.model,name:base_tier_validation_correction.model_tier_correction_item
+msgid "Tier Correction Detail"
+msgstr "Dettagli correzione livello"
+
+#. module: base_tier_validation_correction
+#: model:ir.actions.server,name:base_tier_validation_correction.tier_correction_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:base_tier_validation_correction.tier_correction_scheduler
+msgid "Tier Correction Scheduler"
+msgstr "Schedulatore correzione livello"
+
+#. module: base_tier_validation_correction
+#: model:ir.actions.act_window,name:base_tier_validation_correction.tier_correction_action
+#: model:ir.model,name:base_tier_validation_correction.model_tier_correction
+#: model:ir.ui.menu,name:base_tier_validation_correction.menu_tier_correction
+#: model:res.groups,name:base_tier_validation_correction.group_tier_correction
+msgid "Tier Review Correction"
+msgstr "Correzione revisione livello"
+
+#. module: base_tier_validation_correction
+#: model:ir.model,name:base_tier_validation_correction.model_tier_validation
+msgid "Tier Validation (abstract)"
+msgstr "Validazione livello (sintesi)"
+
+#. module: base_tier_validation_correction
+#: model:mail.message.subtype,name:base_tier_validation_correction.mt_tier_validation_correction
+msgid "Tier Validation Correction"
+msgstr "Correzione validazione livello"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction_item__review_ids
+msgid "Tier reivews that will be affected by this correction."
+msgstr "Revisioni livello che verranno coinvolte da questa correzione."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo di attività eccezione sul record."
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia comunicazioni sito web"
+
+#. module: base_tier_validation_correction
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_correction.tier_correction_view_form
+msgid "e.g. Correction for..."
+msgstr "es. Correzione per..."

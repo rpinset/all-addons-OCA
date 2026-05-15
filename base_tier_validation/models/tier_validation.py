@@ -238,7 +238,7 @@ class TierValidation(models.AbstractModel):
             review = rec.review_ids.sorted("sequence").filtered(
                 lambda x: x.status == "pending"
             )[:1]
-            rec.next_review = review and self.env._("Next: %s", review.name or "")
+            rec.next_review = self.env._("Next: %s", review.name) if review else False
 
     def _compute_hide_reviews(self):
         for rec in self:
@@ -788,16 +788,15 @@ class TierValidation(models.AbstractModel):
                         sequence += 1
                         vals_list.append(rec._prepare_tier_review_vals(td, sequence))
         created_trs = tr_obj.create(vals_list)
-        review_counter = any(self.mapped("can_review"))
-        if review_counter:
+        # ``request_validation`` creates all reviews as ``waiting``. Promote the
+        # available one(s) to ``pending`` immediately so the workflow can move
+        # forward without an external trigger. Without this, when the user
+        # asking for validation is not themself the first reviewer (and no
+        # ``notify_on_create`` definition is present), reviews would stay in
+        # ``waiting`` indefinitely and no reviewer would be notified.
+        created_trs._update_review_status()
+        if any(self.mapped("can_review")):
             self._update_counter({"review_created": True})
-        # ``request_validation`` creates all reviews as ``waiting``.
-        # If the counter update have not already updated the actionable review status,
-        # do it before notifying reviewers about creation.
-        if not review_counter and created_trs.filtered(
-            "definition_id.notify_on_create"
-        ):
-            created_trs._update_review_status()
         self._notify_review_requested(created_trs)
         return created_trs
 
@@ -945,9 +944,18 @@ class TierValidation(models.AbstractModel):
                     lambda r, x=rec: r.definition_id.notify_on_pending
                     and r.res_id == x.id
                 ).mapped("reviewer_ids")
-                # Subscribe reviewers and notify
+                # Subscribe reviewers to the tier-validation-requested
+                # subtype explicitly, otherwise ``message_post`` below would
+                # route to no one (the subtype is ``default=False``). Only
+                # post the message when at least one reviewer wants to be
+                # notified -- mirroring ``_notify_review_requested``.
+                if not users_to_notify:
+                    continue
                 rec.message_subscribe(
-                    partner_ids=users_to_notify.mapped("partner_id").ids
+                    partner_ids=users_to_notify.mapped("partner_id").ids,
+                    subtype_ids=self.env.ref(
+                        self._get_requested_notification_subtype()
+                    ).ids,
                 )
                 rec.message_post(
                     subtype_xmlid=self._get_requested_notification_subtype(),

@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-05-12 15:50 UTC
+Generated 2026-05-15 21:39 UTC
 
 ## Skipped repos
 
@@ -9,7 +9,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | Repo | Reason | Detail |
 | ---- | ------ | ------ |
 | [.github](https://github.com/OCA/.github) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
-| [account-budgeting](https://github.com/OCA/account-budgeting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [ai](https://github.com/OCA/ai) | `no_module` | No directory with __manifest__.py at repo root |
@@ -145,7 +144,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |

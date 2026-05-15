@@ -1,0 +1,84 @@
+from odoo.fields import Command
+from odoo.tests import tagged
+
+from odoo.addons.base.tests.common import TransactionCaseWithUserDemo
+
+
+@tagged("-at_install", "post_install")
+class Common(TransactionCaseWithUserDemo):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.setUpClassOrder()
+
+    @classmethod
+    def setUpClassOrder(cls):
+        cls.partner_1 = cls.env["res.partner"].create({"name": "Partner 1"})
+        cls.product_1 = cls.env["product.product"].create(
+            {"name": "Product 1", "list_price": 20, "invoice_policy": "order"}
+        )
+        cls.product_2 = cls.env["product.product"].create(
+            {"name": "Product 2", "list_price": 20, "invoice_policy": "order"}
+        )
+        cls.pricelist = cls.env["product.pricelist"].create(
+            {"name": "Europe pricelist", "currency_id": cls.env.ref("base.EUR").id}
+        )
+        cls.order1_p1 = cls.env["sale.order"].create(
+            {
+                "partner_id": cls.partner_1.id,
+                "partner_shipping_id": cls.partner_1.id,
+                "partner_invoice_id": cls.partner_1.id,
+                "client_order_ref": "ref123",
+                "pricelist_id": cls.pricelist.id,
+                "order_line": [
+                    Command.create(
+                        {
+                            "name": "order 1 line 1",
+                            "product_id": cls.product_1.id,
+                            "price_unit": 20,
+                            "product_uom_qty": 1,
+                            "product_uom_id": cls.product_1.uom_id.id,
+                        },
+                    ),
+                    Command.create(
+                        {
+                            "name": "order 1 line 2",
+                            "product_id": cls.product_2.id,
+                            "price_unit": 20,
+                            "product_uom_qty": 1,
+                            "product_uom_id": cls.product_2.uom_id.id,
+                        },
+                    ),
+                ],
+            }
+        )
+        cls.order1_p1.action_confirm()
+        cls.order2_p1 = cls.env["sale.order"].create(
+            {
+                "partner_id": cls.partner_1.id,
+                "partner_shipping_id": cls.partner_1.id,
+                "partner_invoice_id": cls.partner_1.id,
+                "pricelist_id": cls.pricelist.id,
+                "order_line": [
+                    Command.create(
+                        {
+                            "name": "order 2 line 1",
+                            "product_id": cls.product_1.id,
+                            "price_unit": 20,
+                            "product_uom_qty": 1,
+                            "product_uom_id": cls.product_1.uom_id.id,
+                        },
+                    ),
+                    Command.create(
+                        {
+                            "name": "order 2 line 2",
+                            "product_id": cls.product_2.id,
+                            "price_unit": 20,
+                            "product_uom_qty": 1,
+                            "product_uom_id": cls.product_2.uom_id.id,
+                        },
+                    ),
+                ],
+            }
+        )
+        cls.order2_p1.action_confirm()
