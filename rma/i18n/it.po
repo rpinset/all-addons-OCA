@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-04-03 09:45+0000\n"
+"PO-Revision-Date: 2026-05-13 09:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1393,7 +1393,7 @@ msgstr "Motivi chiusura RMA"
 #. module: rma
 #: model:ir.model,name:rma.model_rma_finalization_wizard
 msgid "RMA Finalization Wizard"
-msgstr "Wizard Chiusura RMA"
+msgstr "Procedura guidata chiusura RMA"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_in_type_id
@@ -1458,7 +1458,7 @@ msgstr "Resoconto RMA"
 #. module: rma
 #: model:ir.model,name:rma.model_rma_split_wizard
 msgid "RMA Split Wizard"
-msgstr "Wizard divisione RMA"
+msgstr "Procedura guidata divisione RMA"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.view_rma_tag_form

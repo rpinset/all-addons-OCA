@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-12 15:44 UTC** (elapsed 99s)
+Last build: **2026-05-15 21:38 UTC** (elapsed 150s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -75,7 +75,7 @@ Last build: **2026-05-12 15:44 UTC** (elapsed 99s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 25 | 922ca6b 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | b049888 2025-12-04 OCA-git-bot [BOT] post-merge updates |
-| [manufacture](https://github.com/OCA/manufacture) | 51 | b7e5fd9 2026-03-26 mymage Translated using Weblate (Italian) |
+| [manufacture](https://github.com/OCA/manufacture) | 51 | 217bf83 2026-05-13 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 1d962d6 2025-10-15 mymage Translated using Weblate (Italian) |
@@ -93,11 +93,11 @@ Last build: **2026-05-12 15:44 UTC** (elapsed 99s)
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 2 | e253f67 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 108 | 8b367c6 2026-01-13 Francesco Foresti Translated using Weblate (Italian) |
 | [queue](https://github.com/OCA/queue) | 8 | c67b011 2026-02-20 OCA-git-bot [BOT] post-merge updates |
-| [repair](https://github.com/OCA/repair) | 12 | ff86f2a 2026-04-10 OCA-git-bot Merge PR #159 into 15.0 |
+| [repair](https://github.com/OCA/repair) | 12 | 89affc7 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [report-print-send](https://github.com/OCA/report-print-send) | 3 | f981cbc 2025-04-03 Weblate Update translation files |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | 769f30c 2025-09-03 Weblate Update translation files |
 | [rest-framework](https://github.com/OCA/rest-framework) | 14 | c537ec2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [rma](https://github.com/OCA/rma) | 7 | 643fdcd 2026-04-03 mymage Translated using Weblate (Italian) |
+| [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | 0587b35 2026-04-06 OCA-git-bot [BOT] post-merge updates |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | 41eba3c 2026-03-30 OCA-git-bot [BOT] post-merge updates |
