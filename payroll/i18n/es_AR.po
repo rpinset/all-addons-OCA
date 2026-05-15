@@ -122,8 +122,8 @@ msgstr ""
 msgid ""
 "<code>\n"
 "                                            result = contract.wage\n"
-"                                            result_qty = worked_days.WORK100."
-"number_of_days\n"
+"                                            result_qty = "
+"worked_days.WORK100.number_of_days\n"
 "                                        </code>"
 msgstr ""
 
@@ -150,8 +150,8 @@ msgstr ""
 msgid ""
 "<code>contract:</code> contains current contract object data (hr.contract)"
 msgstr ""
-"<code>contract:</code> contiene los datos del objeto del contrato actual (hr."
-"contract)"
+"<code>contract:</code> contiene los datos del objeto del contrato actual "
+"(hr.contract)"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -167,8 +167,8 @@ msgstr ""
 msgid ""
 "<code>employee:</code> contains current employee object data (hr.employee)"
 msgstr ""
-"<code>employee:</code> contiene los datos del objeto del empleado actual (hr."
-"employee)"
+"<code>employee:</code> contiene los datos del objeto del empleado actual "
+"(hr.employee)"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -272,8 +272,8 @@ msgid ""
 "        <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "            Dear <t t-out=\"object.employee_id.name\"></t>,\n"
 "            <br><br>\n"
-"            Please find attached the payslip for <t t-out=\"object."
-"payslip_run_id.name\"></t>.\n"
+"            Please find attached the payslip for <t t-"
+"out=\"object.payslip_run_id.name\"></t>.\n"
 "            <br><br>\n"
 "            Do not hesitate to contact us if you have any questions.\n"
 "            <br><br>\n"
@@ -379,6 +379,11 @@ msgstr "<strong>Referencia</strong>"
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
 msgid "<strong>Register Name:</strong>"
 msgstr "<strong>Nombre del Registro:</strong>"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.report_payslip
+msgid "<strong>Salary Structure</strong>"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
@@ -1329,15 +1334,15 @@ msgid ""
 msgstr ""
 "Es usada para calcular el porcentaje y la cantidad fija, por ejemplo, un "
 "vale de alimentos con una cantidad fija de 1€ por día trabajado puede tener "
-"una cantidad definida en la expresión como worked_days.WORK100."
-"number_of_days."
+"una cantidad definida en la expresión como "
+"worked_days.WORK100.number_of_days."
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_input__amount
 msgid ""
 "It is used in computation. For e.g. A rule for sales having 1% commission of "
-"basic salary for per product can defined in expression like result = inputs."
-"SALEURO.amount * contract.wage*0.01."
+"basic salary for per product can defined in expression like result = "
+"inputs.SALEURO.amount * contract.wage*0.01."
 msgstr ""
 "Se usa en el cálculo. Por ejemplo, una regla para ventas con un 1% de "
 "comisión del salario básico para cada producto puede ser definida con una "

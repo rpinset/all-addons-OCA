@@ -316,6 +316,11 @@ msgid "<strong>Register Name:</strong>"
 msgstr ""
 
 #. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.report_payslip
+msgid "<strong>Salary Structure</strong>"
+msgstr ""
+
+#. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
 msgid "<strong>Total</strong>"
 msgstr ""

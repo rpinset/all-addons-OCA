@@ -109,8 +109,8 @@ msgstr ""
 msgid ""
 "<code>\n"
 "                                            result = contract.wage\n"
-"                                            result_qty = worked_days.WORK100."
-"number_of_days\n"
+"                                            result_qty = "
+"worked_days.WORK100.number_of_days\n"
 "                                        </code>"
 msgstr ""
 
@@ -232,8 +232,8 @@ msgid ""
 "        <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "            Dear <t t-out=\"object.employee_id.name\"></t>,\n"
 "            <br><br>\n"
-"            Please find attached the payslip for <t t-out=\"object."
-"payslip_run_id.name\"></t>.\n"
+"            Please find attached the payslip for <t t-"
+"out=\"object.payslip_run_id.name\"></t>.\n"
 "            <br><br>\n"
 "            Do not hesitate to contact us if you have any questions.\n"
 "            <br><br>\n"
@@ -339,6 +339,11 @@ msgstr "<strong>رقم الإشارة</strong>"
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
 msgid "<strong>Register Name:</strong>"
 msgstr "<strong>اسم السجل:</strong>"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.report_payslip
+msgid "<strong>Salary Structure</strong>"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
@@ -1260,12 +1265,12 @@ msgstr ""
 #: model:ir.model.fields,help:payroll.field_hr_payslip_input__amount
 msgid ""
 "It is used in computation. For e.g. A rule for sales having 1% commission of "
-"basic salary for per product can defined in expression like result = inputs."
-"SALEURO.amount * contract.wage*0.01."
+"basic salary for per product can defined in expression like result = "
+"inputs.SALEURO.amount * contract.wage*0.01."
 msgstr ""
 "تستخدم في الاحتساب. مثلًا: يمكن تعريف قاعدة مبيعات تنص على عمولة بقدر 1٪ من "
-"المرتب الأساسي لكل منتج بالتعبير: result = inputs.SALEURO.amount * contract."
-"wage*0.01."
+"المرتب الأساسي لكل منتج بالتعبير: result = inputs.SALEURO.amount * "
+"contract.wage*0.01."
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_contribution_register____last_update

@@ -76,6 +76,14 @@
                                     <span t-field="o.date_to" />
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <strong>Salary Structure</strong>
+                                </td>
+                                <td>
+                                    <span t-field="o.struct_id.name" />
+                                </td>
+                            </tr>
                         </table>
                         <table class="table table-sm">
                             <thead>

@@ -46,8 +46,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"            'Detalhes do Recibo de vencimento - %s' % (object.employee_id."
-"name)\n"
+"            'Detalhes do Recibo de vencimento - %s' % "
+"(object.employee_id.name)\n"
 "        "
 
 #. module: payroll
@@ -136,14 +136,14 @@ msgstr ""
 msgid ""
 "<code>\n"
 "                                            result = contract.wage\n"
-"                                            result_qty = worked_days.WORK100."
-"number_of_days\n"
+"                                            result_qty = "
+"worked_days.WORK100.number_of_days\n"
 "                                        </code>"
 msgstr ""
 "<code>\n"
 "                                            result = contract.wage\n"
-"                                            result_qty = worked_days.WORK100."
-"number_of_days\n"
+"                                            result_qty = "
+"worked_days.WORK100.number_of_days\n"
 "                                        </code>"
 
 #. module: payroll
@@ -189,8 +189,8 @@ msgstr ""
 msgid ""
 "<code>employee:</code> contains current employee object data (hr.employee)"
 msgstr ""
-"<code>employee:</code> contém dados atuais do objeto funcionário (hr."
-"employee)"
+"<code>employee:</code> contém dados atuais do objeto funcionário "
+"(hr.employee)"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -292,8 +292,8 @@ msgid ""
 "        <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "            Dear <t t-out=\"object.employee_id.name\"></t>,\n"
 "            <br><br>\n"
-"            Please find attached the payslip for <t t-out=\"object."
-"payslip_run_id.name\"></t>.\n"
+"            Please find attached the payslip for <t t-"
+"out=\"object.payslip_run_id.name\"></t>.\n"
 "            <br><br>\n"
 "            Do not hesitate to contact us if you have any questions.\n"
 "            <br><br>\n"
@@ -412,6 +412,11 @@ msgstr "<strong>Referência</strong>"
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
 msgid "<strong>Register Name:</strong>"
 msgstr "<strong>Nome de registo:</strong>"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.report_payslip
+msgid "<strong>Salary Structure</strong>"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.report_contributionregister
@@ -1361,15 +1366,15 @@ msgid ""
 msgstr ""
 "É usado no cálculo para valores percentuais e fixos. Por exemplo, uma regra "
 "para Vale de Refeição com valor fixo de 1€ por dia trabalhado pode ter a sua "
-"quantidade definida como uma expressão do tipo worked_days. WORK100."
-"number_of_days."
+"quantidade definida como uma expressão do tipo worked_days. "
+"WORK100.number_of_days."
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_input__amount
 msgid ""
 "It is used in computation. For e.g. A rule for sales having 1% commission of "
-"basic salary for per product can defined in expression like result = inputs."
-"SALEURO.amount * contract.wage*0.01."
+"basic salary for per product can defined in expression like result = "
+"inputs.SALEURO.amount * contract.wage*0.01."
 msgstr ""
 "É utilizado em cálculo Como por exemplo, numa regra para as vendas com "
 "comissão de 1% do salário básico por artigo, que pode ser definido na "
@@ -1838,8 +1843,8 @@ msgstr "Dias Trabalhados do Recibos de Vencimento"
 msgid ""
 "Payslip for {{object.payslip_run_id.name}} from {{object.company_id.name}}"
 msgstr ""
-"Recibo de vencimento para {{object.payslip_run_id.name}} da empresa {{object."
-"company_id.name}}"
+"Recibo de vencimento para {{object.payslip_run_id.name}} da empresa "
+"{{object.company_id.name}}"
 
 #. module: payroll
 #. odoo-python

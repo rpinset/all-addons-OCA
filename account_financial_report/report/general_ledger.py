@@ -60,6 +60,9 @@ class GeneralLedgerReport(models.AbstractModel):
         ]
 
     def _get_acc_prt_accounts_ids(self, company_id, grouped_by):
+        # In non-grouped mode, lines must stay at account level.
+        if grouped_by == "none":
+            return []
         accounts_domain = [
             ("company_id", "=", company_id),
         ] + self._get_account_type_domain(grouped_by)
@@ -80,7 +83,7 @@ class GeneralLedgerReport(models.AbstractModel):
         domain += [("date", "<", date_from)]
         accounts = self.env["account.account"].search(accounts_domain)
         domain += [("account_id", "in", accounts.ids)]
-        if acc_prt:
+        if acc_prt and grouped_by != "none":
             domain += self._get_account_type_domain(grouped_by)
         return domain
 
@@ -163,7 +166,27 @@ class GeneralLedgerReport(models.AbstractModel):
         initial_domain_pl = self._get_initial_balances_pl_ml_domain(
             account_ids, company_id, date_from, fy_start_date, base_domain
         )
-        return self._get_accounts_initial_balance(initial_domain_bs, initial_domain_pl)
+        gl_initial_acc = self._get_accounts_initial_balance(
+            initial_domain_bs, initial_domain_pl
+        )
+        if grouped_by != "none":
+            return gl_initial_acc
+        # If grouped_by none we add balance
+        domain = list(base_domain) + [("date", "<", date_from)]
+        if account_ids:
+            domain += [("account_id", "in", account_ids)]
+        rows = self.env["account.move.line"].read_group(
+            domain=domain,
+            fields=["account_id", "debit", "credit", "balance", "amount_currency:sum"],
+            groupby=["account_id"],
+        )
+        covered_ids = {
+            row["account_id"][0] for row in gl_initial_acc if row.get("account_id")
+        }
+        for row in rows:
+            if row.get("account_id") and row["account_id"][0] not in covered_ids:
+                gl_initial_acc.append(row)
+        return gl_initial_acc
 
     def _prepare_gen_ld_data_item(self, gl):
         res = {}
@@ -171,7 +194,7 @@ class GeneralLedgerReport(models.AbstractModel):
             res[key_bal] = {}
             for key_field in ["credit", "debit", "balance", "bal_curr"]:
                 field_name = key_field if key_field != "bal_curr" else "amount_currency"
-                res[key_bal][key_field] = gl[field_name]
+                res[key_bal][key_field] = gl.get(field_name, 0.0)
         return res
 
     def _prepare_gen_ld_data(self, gl_initial_acc, domain, grouped_by):
