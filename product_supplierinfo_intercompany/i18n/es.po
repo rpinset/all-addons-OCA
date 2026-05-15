@@ -148,8 +148,8 @@ msgstr "Orden de Compra"
 
 #. module: product_supplierinfo_intercompany
 #: model:ir.model,name:product_supplierinfo_intercompany.model_product_supplierinfo
-msgid "Supplier Pricelist"
-msgstr "Lista de precios de Proveedor"
+msgid "Supplier Pricelist (Multi-Company)"
+msgstr ""
 
 #. module: product_supplierinfo_intercompany
 #: code:addons/product_supplierinfo_intercompany/models/product_pricelist.py:0
@@ -179,6 +179,9 @@ msgstr ""
 #: model:ir.model.fields,help:product_supplierinfo_intercompany.field_product_pricelist__intercompany_supplier_lead_time
 msgid "Vendor pricelist lead time, in days."
 msgstr ""
+
+#~ msgid "Supplier Pricelist"
+#~ msgstr "Lista de precios de Proveedor"
 
 #~ msgid "intercompany.supplierinfo.mixin"
 #~ msgstr "intercompany.supplierinfo.mixin"

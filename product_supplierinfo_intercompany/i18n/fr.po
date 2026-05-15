@@ -148,7 +148,7 @@ msgstr ""
 
 #. module: product_supplierinfo_intercompany
 #: model:ir.model,name:product_supplierinfo_intercompany.model_product_supplierinfo
-msgid "Supplier Pricelist"
+msgid "Supplier Pricelist (Multi-Company)"
 msgstr ""
 
 #. module: product_supplierinfo_intercompany

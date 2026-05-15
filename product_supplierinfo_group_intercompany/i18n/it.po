@@ -80,8 +80,8 @@ msgstr "Gruppo fornitore"
 
 #. module: product_supplierinfo_group_intercompany
 #: model:ir.model,name:product_supplierinfo_group_intercompany.model_product_supplierinfo
-msgid "Supplier Pricelist"
-msgstr "Listino prezzi fornitore"
+msgid "Supplier Pricelist (Multi-Company)"
+msgstr ""
 
 #. module: product_supplierinfo_group_intercompany
 #: model:ir.model.fields,field_description:product_supplierinfo_group_intercompany.field_product_pricelist__supplier_sequence
@@ -92,3 +92,6 @@ msgstr "Sequenza fornitore"
 #: model:ir.model,name:product_supplierinfo_group_intercompany.model_product_supplierinfo_group
 msgid "Supplierinfo group"
 msgstr "Gruppo informazioni fornitore"
+
+#~ msgid "Supplier Pricelist"
+#~ msgstr "Listino prezzi fornitore"

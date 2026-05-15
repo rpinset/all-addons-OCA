@@ -4,15 +4,6 @@ from odoo import models
 class ProductIntercompanySupplierMixin(models.AbstractModel):
     _inherit = "product.intercompany.supplier.mixin"
 
-    def _synchronise_supplier_info_for_record(self, pricelist, supplierinfo):
-        res = super()._synchronise_supplier_info_for_record(pricelist, supplierinfo)
-        if (
-            self._has_intercompany_price(pricelist)
-            and self.company_id == pricelist.company_id
-        ):
-            supplierinfo.sudo().unlink()
-        return res
-
     def _condition_supplierinfo_create_or_update(self, pricelist, supplierinfo):
         res = super()._condition_supplierinfo_create_or_update(pricelist, supplierinfo)
         return res and (
@@ -22,3 +13,12 @@ class ProductIntercompanySupplierMixin(models.AbstractModel):
                 and pricelist.company_id != self.company_ids
             )
         )
+
+    def _prepare_intercompany_supplier_info(self, pricelist):
+        """
+        Let the compute set the company on the supplierinfo
+        """
+        res = super()._prepare_intercompany_supplier_info(pricelist)
+        if "company_id" in res:
+            del res["company_id"]
+        return res

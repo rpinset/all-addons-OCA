@@ -17,12 +17,24 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: product_supplierinfo_intercompany_multi_company
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_supplierinfo__company_ids
+msgid "Companies"
+msgstr ""
+
+#. module: product_supplierinfo_intercompany_multi_company
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_supplierinfo__company_id
+msgid "Company"
+msgstr ""
+
+#. module: product_supplierinfo_intercompany_multi_company
 #: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_intercompany_supplier_mixin__display_name
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_supplierinfo__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
 
 #. module: product_supplierinfo_intercompany_multi_company
 #: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_intercompany_supplier_mixin__id
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_supplierinfo__id
 msgid "ID"
 msgstr "ID"
 
@@ -33,8 +45,14 @@ msgstr "Combinación de productos entre compañías"
 
 #. module: product_supplierinfo_intercompany_multi_company
 #: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_intercompany_supplier_mixin____last_update
+#: model:ir.model.fields,field_description:product_supplierinfo_intercompany_multi_company.field_product_supplierinfo____last_update
 msgid "Last Modified on"
 msgstr "Última Modificación el"
+
+#. module: product_supplierinfo_intercompany_multi_company
+#: model:ir.model,name:product_supplierinfo_intercompany_multi_company.model_product_supplierinfo
+msgid "Supplier Pricelist (Multi-Company)"
+msgstr ""
 
 #, python-format
 #~ msgid "The pricelist %s is not intercompany"
