@@ -197,6 +197,11 @@ msgstr ""
 "Yaz, Doğrulama Sonrası Yaz"
 
 #. module: base_tier_validation
+#: model:ir.model,name:base_tier_validation.model_base
+msgid "Base"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__approve_sequence_bypass
 #: model:ir.model.fields,help:base_tier_validation.field_tier_review__approve_sequence_bypass
 msgid ""
@@ -547,8 +552,8 @@ msgid ""
 "Number of days after which a message must be posted to remind about pending "
 "validation  (0 = no reminder)"
 msgstr ""
-"Bekleyen doğrulamayı hatırlatmak için bir mesajın gönderilmesi gereken gün  ("
-"0 = hatırlatma yok)"
+"Bekleyen doğrulamayı hatırlatmak için bir mesajın gönderilmesi gereken gün  "
+"(0 = hatırlatma yok)"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action

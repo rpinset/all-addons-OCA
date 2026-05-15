@@ -62,8 +62,8 @@ msgstr "<span class=\"oe_edit_only\">Nom</span>"
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "<span>Bypass, if previous tier was validated by same reviewer</span>"
 msgstr ""
-"<span>Contourner, si le niveau précédent a été validé par le même "
-"réviseur</span>"
+"<span>Contourner, si le niveau précédent a été validé par le même réviseur</"
+"span>"
 
 #. module: base_tier_validation
 #. odoo-python
@@ -198,6 +198,11 @@ msgid ""
 msgstr ""
 "Au moins l'un de ces champs doit être activé ! Modification en cours de "
 "validation, Modification après validation"
+
+#. module: base_tier_validation
+#: model:ir.model,name:base_tier_validation.model_base
+msgid "Base"
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__approve_sequence_bypass

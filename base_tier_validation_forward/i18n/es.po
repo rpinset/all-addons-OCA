@@ -18,6 +18,13 @@ msgstr ""
 
 #. module: base_tier_validation_forward
 #. odoo-python
+#: code:addons/base_tier_validation_forward/wizard/forward_wizard.py:0
+#, python-format
+msgid ">> %s"
+msgstr ""
+
+#. module: base_tier_validation_forward
+#. odoo-python
 #: code:addons/base_tier_validation_forward/models/tier_validation.py:0
 #, python-format
 msgid "A review was forwarded by %s."

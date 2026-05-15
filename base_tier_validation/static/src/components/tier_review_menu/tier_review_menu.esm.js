@@ -29,7 +29,8 @@ export class TierReviewMenu extends Component {
     onBeforeOpen() {
         this.fetchSystrayReviewer();
     }
-    availableViews() {
+    // eslint-disable-next-line no-unused-vars
+    availableViews(group) {
         return [
             [false, "kanban"],
             [false, "list"],
@@ -37,7 +38,14 @@ export class TierReviewMenu extends Component {
             [false, "activity"],
         ];
     }
-    openReviewGroup(group) {
+    async getCustomAction(group) {
+        if (group.model) {
+            const action = await this.orm.call(group.model, "get_tier_review_action");
+            return action || false;
+        }
+        return false;
+    }
+    async openReviewGroup(group) {
         document.body.click();
         // Hack to close dropdown
         const context = {};
@@ -45,22 +53,37 @@ export class TierReviewMenu extends Component {
         if (group.active_field) {
             domain.push(["active", "in", [true, false]]);
         }
-        const views = this.availableViews();
 
-        this.action.doAction(
-            {
-                context,
-                domain,
-                name: group.name,
-                res_model: group.model,
-                search_view_id: [false],
-                type: "ir.actions.act_window",
-                views,
-            },
-            {
-                clearBreadcrumbs: true,
-            }
-        );
+        const action = await this.getCustomAction(group);
+        if (action) {
+            this.action.doAction(
+                {
+                    ...action,
+                    context,
+                    domain,
+                },
+                {
+                    clearBreadcrumbs: true,
+                }
+            );
+        } else {
+            const views = this.availableViews(group);
+
+            this.action.doAction(
+                {
+                    context,
+                    domain,
+                    name: group.name,
+                    res_model: group.model,
+                    search_view_id: [false],
+                    type: "ir.actions.act_window",
+                    views,
+                },
+                {
+                    clearBreadcrumbs: true,
+                }
+            );
+        }
     }
 }
 

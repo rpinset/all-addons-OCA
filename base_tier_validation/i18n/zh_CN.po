@@ -183,6 +183,11 @@ msgid ""
 msgstr ""
 
 #. module: base_tier_validation
+#: model:ir.model,name:base_tier_validation.model_base
+msgid "Base"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__approve_sequence_bypass
 #: model:ir.model.fields,help:base_tier_validation.field_tier_review__approve_sequence_bypass
 msgid ""

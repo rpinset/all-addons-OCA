@@ -6,3 +6,4 @@ from . import tier_review
 from . import tier_validation
 from . import res_users
 from . import res_config_settings
+from . import base
