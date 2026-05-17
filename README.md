@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-05-15 21:37 UTC** (elapsed 79s)
+Last build: **2026-05-17 04:47 UTC** (elapsed 82s)
 
 - Repos integrated: **142**
 - Canonical modules: **3037**
@@ -99,7 +99,7 @@ Last build: **2026-05-15 21:37 UTC** (elapsed 79s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 15 | 1535a4a 2026-04-30 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 92 | 99902d9 2026-05-14 mymage Added translation using Weblate (Italian) |
 | [payroll](https://github.com/OCA/payroll) | 6 | b454fa8 2026-05-14 Weblate Update translation files |
-| [pms](https://github.com/OCA/pms) | 10 | 45cdcd5 2026-05-11 OCA-git-bot [BOT] post-merge updates |
+| [pms](https://github.com/OCA/pms) | 10 | 53c93a0 2026-05-16 OCA-git-bot [BOT] post-merge updates |
 | [pos](https://github.com/OCA/pos) | 90 | bd4dcc2 2026-05-01 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 103 | f698b81 2026-04-28 OCA-git-bot [BOT] post-merge updates |
 | [product-configurator](https://github.com/OCA/product-configurator) | 3 | 95c8b9e 2026-01-19 mymage Translated using Weblate (Italian) |
