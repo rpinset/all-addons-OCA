@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `18.0`
 
-Last build: **2026-05-15 21:41 UTC** (elapsed 168s)
+Last build: **2026-05-17 04:49 UTC** (elapsed 73s)
 
 - Repos integrated: **143**
 - Canonical modules: **2596**
@@ -65,7 +65,7 @@ Last build: **2026-05-15 21:41 UTC** (elapsed 168s)
 | [knowledge](https://github.com/OCA/knowledge) | 15 | 7b748b5 2026-05-04 OCA-git-bot [BOT] post-merge updates |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 7 | ea13ac6 2026-01-31 OCA-git-bot [BOT] post-merge updates |
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 31 | fc3d5d6 2026-05-08 CristianoMafraJunior [IMP] copier update |
-| [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | 25 | 10fd095 2026-05-15 rosenvladimirov [DOC] l10n-bulgaria-oca: deep-analysis README.en.md/README.bg.md (replace auto-generated baseline) |
+| [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | 25 | b21817e 2026-05-16 OCA-git-bot [UPD] README.rst |
 | [l10n-colombia](https://github.com/OCA/l10n-colombia) | 4 | dc7c82b 2026-04-03 oca-ci [UPD] Update l10n_co_electronic_invoice_self.pot |
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | 1 | 3315e32 2025-10-24 OCA-git-bot [BOT] post-merge updates |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 3b8427b 2026-04-15 oca-ci [UPD] Update connector_apix.pot |
@@ -95,7 +95,7 @@ Last build: **2026-05-15 21:41 UTC** (elapsed 168s)
 | [oca-custom](https://github.com/OCA/oca-custom) | 5 | 3cb2edf 2026-04-28 oca-ci [UPD] Update oca_website.pot |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 3 | b1a0df5 2026-05-11 Bosd Translated using Weblate (Dutch) |
 | [operating-unit](https://github.com/OCA/operating-unit) | 16 | 786ba0e 2026-05-12 mymage Translated using Weblate (Italian) |
-| [partner-contact](https://github.com/OCA/partner-contact) | 91 | 80b52fb 2026-05-14 Ben Brich Translated using Weblate (German) |
+| [partner-contact](https://github.com/OCA/partner-contact) | 91 | 88d8b21 2026-05-16 OCA-git-bot [BOT] post-merge updates |
 | [payroll](https://github.com/OCA/payroll) | 4 | 59ae313 2026-05-14 Weblate Update translation files |
 | [pms](https://github.com/OCA/pms) | 1 | 58405c1 2025-07-29 OCA-git-bot [BOT] post-merge updates |
 | [pos](https://github.com/OCA/pos) | 22 | 0a667fe 2026-05-12 QuiJoQuim Translated using Weblate (Catalan) |
