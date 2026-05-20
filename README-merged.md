@@ -979,7 +979,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.3 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.2.0 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.2.1 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.6 |  | Create SEPA files for Direct Debit
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.3 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
 [account_payment_mode](account_payment_mode/) | 16.0.2.0.0 |  | Account Payment Mode
@@ -2088,7 +2088,7 @@ addon | version | maintainers | summary
 [delivery_roulier](delivery_roulier/) | 16.0.2.1.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Integration of multiple carriers
 [delivery_roulier_dpd_fr](delivery_roulier_dpd_fr/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Labels for DPD
 [delivery_roulier_geodis_fr](delivery_roulier_geodis_fr/) | 16.0.1.1.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for Geodis logistic
-[delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for La Poste/Colissimo
+[delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 16.0.1.1.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Add options to roulier modules
 [delivery_schenker](delivery_schenker/) | 16.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_state](delivery_state/) | 16.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
@@ -2647,6 +2647,9 @@ and promote its widespread use.
 ## From OCA/fleet
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# fleet
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/fleet&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/fleet/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/fleet/actions/workflows/test.yml?query=branch%3A16.0)
@@ -2654,8 +2657,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/fleet-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/fleet-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# fleet
 
 TODO: add repo description.
 
@@ -4541,6 +4542,7 @@ addon | version | maintainers | summary
 [l10n_ch_account_tags](l10n_ch_account_tags/) | 16.0.1.0.0 |  | Switzerland Account Tags
 [l10n_ch_mis_reports](l10n_ch_mis_reports/) | 16.0.1.0.0 |  | Specific MIS reports for switzerland localization
 [l10n_ch_pain_base](l10n_ch_pain_base/) | 16.0.1.0.0 |  | ISO 20022 base module for Switzerland
+[l10n_ch_pain_credit_transfer](l10n_ch_pain_credit_transfer/) | 16.0.1.0.0 | <a href='https://github.com/ecino'><img src='https://github.com/ecino.png' width='32' height='32' style='border-radius:50%;' alt='ecino'/></a> | Generate ISO 20022 credit transfert (SEPA and not SEPA)
 [l10n_ch_partner_address_street3](l10n_ch_partner_address_street3/) | 16.0.1.0.0 |  | Take into account street3 in QR-bills
 [l10n_ch_partner_company_type](l10n_ch_partner_company_type/) | 16.0.1.0.0 | <a href='https://github.com/mihien'><img src='https://github.com/mihien.png' width='32' height='32' style='border-radius:50%;' alt='mihien'/></a> | Data module to add swiss compay types
 
@@ -5553,7 +5555,7 @@ addon | version | maintainers | summary
 [partner_address_split](partner_address_split/) | 16.0.1.0.0 |  | Add specific helper methods
 [partner_address_street3](partner_address_street3/) | 16.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 16.0.1.0.0 |  | Partner Affiliates
-[partner_archive_propagate](partner_archive_propagate/) | 16.0.1.0.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Archive/unarchive partner contacts hierarchically
+[partner_archive_propagate](partner_archive_propagate/) | 16.0.1.1.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Archive/unarchive partner contacts hierarchically
 [partner_auto_archive](partner_auto_archive/) | 16.0.1.0.0 |  | Archive periodically all contacts marked as auto-archive.
 [partner_bank_acc_type_constraint](partner_bank_acc_type_constraint/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds constraint on bank account type
 [partner_bank_code](partner_bank_code/) | 16.0.1.0.1 |  | Add fields information in banks
@@ -6453,7 +6455,7 @@ addon | version | maintainers | summary
 [purchase_all_shipments](purchase_all_shipments/) | 16.0.1.0.1 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 16.0.2.1.1 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_analytic_global](purchase_analytic_global/) | 16.0.1.0.0 |  | This module allows to a Global analytic plan in purchases
-[purchase_blanket_order](purchase_blanket_order/) | 16.0.2.1.2 |  | Purchase Blanket Orders
+[purchase_blanket_order](purchase_blanket_order/) | 16.0.2.1.3 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 16.0.1.0.1 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Supplier' on POs
 [purchase_date_planned_manual](purchase_date_planned_manual/) | 16.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | This module makes the system to always respect the planned (or scheduled) date in PO lines.
@@ -7528,6 +7530,9 @@ and promote its widespread use.
 ## From OCA/server-auth
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Server Authentication
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-auth&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/server-auth/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/server-auth/actions/workflows/test.yml?query=branch%3A16.0)
@@ -7535,8 +7540,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/server-auth-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-auth-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Server Authentication
 
 Modules for handling various authentication schemes
 
@@ -7571,7 +7574,7 @@ addon | version | maintainers | summary
 [base_user_show_email](base_user_show_email/) | 16.0.1.0.0 |  | Untangle user login and email
 [cross_connect_client](cross_connect_client/) | 16.0.1.1.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Cross Connect Client allows to connect to a Cross Connect Server enabled odoo instance.
 [cross_connect_server](cross_connect_server/) | 16.0.1.1.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Cross Connect Server allows Cross Connect Client to connect to it.
-[impersonate_login](impersonate_login/) | 16.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | tools
+[impersonate_login](impersonate_login/) | 16.0.1.0.1 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | tools
 [password_security](password_security/) | 16.0.1.0.4 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 16.0.1.0.0 | <a href='https://github.com/trojikman'><img src='https://github.com/trojikman.png' width='32' height='32' style='border-radius:50%;' alt='trojikman'/></a> | Allow to see user's actions log
 [users_ldap_groups](users_ldap_groups/) | 16.0.1.0.1 |  | Adds user accounts to groups based on rules defined by the administrator.
@@ -8913,7 +8916,7 @@ addon | version | maintainers | summary
 [fs_product_multi_image](fs_product_multi_image/) | 16.0.1.1.5 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
 [fs_product_public_category_multi_image](fs_product_public_category_multi_image/) | 16.0.1.0.0 |  | Manage multi images from extenal file system on eCommerce public categories
-[fs_storage](fs_storage/) | 16.0.1.3.6 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_storage](fs_storage/) | 16.0.1.4.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [fs_storage_backup](fs_storage_backup/) | 16.0.1.0.1 |  | Filesystem Storage Backup
 [image_tag](image_tag/) | 16.0.1.0.1 |  | Image tag model
 [storage_backend](storage_backend/) | 16.0.1.1.0 |  | Implement the concept of Storage with amazon S3, sftp...

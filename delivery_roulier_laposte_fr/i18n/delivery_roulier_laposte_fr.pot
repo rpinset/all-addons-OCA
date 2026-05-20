@@ -69,6 +69,16 @@ msgid "Assurance 900 €"
 msgstr ""
 
 #. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_carrier_account
+msgid "Base account datas"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_package_type__package_carrier_type
+msgid "Carrier"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
 #: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_DOM
 msgid "Colissimo Domicile (FR + Europe)"
 msgstr ""
@@ -109,6 +119,16 @@ msgid "Coûts de livraison - Laposte"
 msgstr ""
 
 #. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_203dpi
+msgid "DPL 10x15 203dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_300dpi
+msgid "DPL 10x15 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__display_insurance
 msgid ""
 "Define a condition to display/hide your custom Insurancefield with a "
@@ -129,6 +149,16 @@ msgid ""
 msgstr ""
 
 #. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_package_type__package_carrier_type__laposte_fr
+msgid "La Poste"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_carrier_account__laposte_fr_file_format
+msgid "Label format"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__delivery_carrier__delivery_type__laposte_fr
 msgid "Laposte"
 msgstr ""
@@ -136,6 +166,16 @@ msgstr ""
 #. module: delivery_roulier_laposte_fr
 #: model:delivery.carrier.template.option,name:delivery_roulier_laposte_fr.carrier_opt_tmpl_NM
 msgid "Non Mécanisable"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_10x15_300dpi
+msgid "PDF 10x15 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_a4_300dpi
+msgid "PDF A4 300dpi"
 msgstr ""
 
 #. module: delivery_roulier_laposte_fr
@@ -204,6 +244,21 @@ msgid "Shipping Methods"
 msgstr ""
 
 #. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_package_type
+msgid "Stock package type"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_picking
 msgid "Transfer"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_203dpi
+msgid "ZPL 10x15 203dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_300dpi
+msgid "ZPL 10x15 300dpi"
 msgstr ""

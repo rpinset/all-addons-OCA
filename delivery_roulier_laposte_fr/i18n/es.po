@@ -17,14 +17,6 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: delivery_roulier_laposte_fr
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CDS_laposte_carrier_opt_tmpl_ACK
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.COLI_laposte_carrier_opt_tmpl_ACK
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CORI_laposte_carrier_opt_tmpl_ACK
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOS_laposte_carrier_opt_tmpl_ACK
-msgid "Acknowledgment"
-msgstr "Acuse de recibo"
-
-#. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__laposte_insurance
 msgid "Assurance"
 msgstr "Garantía"
@@ -80,6 +72,16 @@ msgid "Assurance 900 €"
 msgstr "Aseguramiento 900 €"
 
 #. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_carrier_account
+msgid "Base account datas"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_package_type__package_carrier_type
+msgid "Carrier"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
 #: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_DOM
 msgid "Colissimo Domicile (FR + Europe)"
 msgstr "Domicilio Colissimo (FR + Europa)"
@@ -115,10 +117,19 @@ msgid "Colissimo Retour International"
 msgstr "Colissimo Retour Internacional"
 
 #. module: delivery_roulier_laposte_fr
-#: model:product.product,name:delivery_roulier_laposte_fr.laposte_product
 #: model:product.template,name:delivery_roulier_laposte_fr.laposte_product_product_template
 msgid "Coûts de livraison - Laposte"
 msgstr "Gastos de envío - Laposte"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_203dpi
+msgid "DPL 10x15 203dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_300dpi
+msgid "DPL 10x15 300dpi"
+msgstr ""
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__display_insurance
@@ -130,52 +141,27 @@ msgstr ""
 "con una vista dedicada"
 
 #. module: delivery_roulier_laposte_fr
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_delivery_carrier__display_name
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__display_name
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_quant_package__display_name
-msgid "Display Name"
-msgstr "Nombre a Mostrar"
-
-#. module: delivery_roulier_laposte_fr
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CDS_laposte_carrier_opt_tmpl_FCR
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.COM_laposte_carrier_opt_tmpl_FCR
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOS_laposte_carrier_opt_tmpl_FCR
-msgid "Free of charges and rights"
-msgstr "Libre de cargas y derechos"
-
-#. module: delivery_roulier_laposte_fr
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_delivery_carrier__id
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__id
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_quant_package__id
-msgid "ID"
-msgstr "ID"
-
-#. module: delivery_roulier_laposte_fr
+#. odoo-python
 #: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
 #, python-format
 msgid ""
 "Incident\n"
 "-----------\n"
-"%s\n"
+"%(displ_exception_message)s\n"
 "Données transmises:\n"
 "-----------------------------\n"
-"%s"
+"%(displ_data_transmitted)s"
 msgstr ""
-"Incidente\n"
-"-----------\n"
-"%s\n"
-"Datos transmitidos:\n"
-"-----------------------------\n"
-"%s"
 
 #. module: delivery_roulier_laposte_fr
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CDS_laposte_carrier_opt_tmpl_INS
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.COLI_laposte_carrier_opt_tmpl_INS
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CORE_laposte_carrier_opt_tmpl_INS
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CORI_laposte_carrier_opt_tmpl_INS
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOS_laposte_carrier_opt_tmpl_INS
-msgid "Insurance"
-msgstr "Seguro"
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_package_type__package_carrier_type__laposte_fr
+msgid "La Poste"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_carrier_account__laposte_fr_file_format
+msgid "Label format"
+msgstr ""
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__delivery_carrier__delivery_type__laposte_fr
@@ -183,23 +169,19 @@ msgid "Laposte"
 msgstr "Laposte"
 
 #. module: delivery_roulier_laposte_fr
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_delivery_carrier____last_update
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking____last_update
-#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_quant_package____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
-
-#. module: delivery_roulier_laposte_fr
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CDS_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.COLI_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.COM_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CORE_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.CORI_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOM_laposte_carrier_opt_tmpl_NM
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOS_laposte_carrier_opt_tmpl_NM
 #: model:delivery.carrier.template.option,name:delivery_roulier_laposte_fr.carrier_opt_tmpl_NM
 msgid "Non Mécanisable"
 msgstr "No mecanizable"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_10x15_300dpi
+msgid "PDF 10x15 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_a4_300dpi
+msgid "PDF A4 300dpi"
+msgstr ""
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_quant_package
@@ -242,6 +224,7 @@ msgid "Recommendation R3"
 msgstr "Recomendación R3"
 
 #. module: delivery_roulier_laposte_fr
+#. odoo-python
 #: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
 #, python-format
 msgid ""
@@ -254,6 +237,7 @@ msgstr ""
 "%(resolution)s"
 
 #. module: delivery_roulier_laposte_fr
+#. odoo-python
 #: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
 #, python-format
 msgid ""
@@ -266,14 +250,14 @@ msgstr ""
 "%sid"
 
 #. module: delivery_roulier_laposte_fr
-#: model:delivery.carrier.option,name:delivery_roulier_laposte_fr.DOS_laposte_carrier_opt_tmpl_COD
-msgid "Shipping Cash On Delivery"
-msgstr "Envío Contra Reembolso"
-
-#. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_delivery_carrier
 msgid "Shipping Methods"
 msgstr "Métodos de Envío"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_package_type
+msgid "Stock package type"
+msgstr ""
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_picking
@@ -281,19 +265,57 @@ msgid "Transfer"
 msgstr "Transferencia"
 
 #. module: delivery_roulier_laposte_fr
-#: model:product.product,uom_name:delivery_roulier_laposte_fr.laposte_product
-#: model:product.template,uom_name:delivery_roulier_laposte_fr.laposte_product_product_template
-msgid "Units"
-msgstr "Unidades"
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_203dpi
+msgid "ZPL 10x15 203dpi"
+msgstr ""
 
 #. module: delivery_roulier_laposte_fr
-#: model:product.product,weight_uom_name:delivery_roulier_laposte_fr.laposte_product
-#: model:product.template,weight_uom_name:delivery_roulier_laposte_fr.laposte_product_product_template
-msgid "kg"
-msgstr "kg"
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_300dpi
+msgid "ZPL 10x15 300dpi"
+msgstr ""
 
-#. module: delivery_roulier_laposte_fr
-#: model:product.product,volume_uom_name:delivery_roulier_laposte_fr.laposte_product
-#: model:product.template,volume_uom_name:delivery_roulier_laposte_fr.laposte_product_product_template
-msgid "m³"
-msgstr "metros cúbicos"
+#~ msgid "Acknowledgment"
+#~ msgstr "Acuse de recibo"
+
+#~ msgid "Display Name"
+#~ msgstr "Nombre a Mostrar"
+
+#~ msgid "Free of charges and rights"
+#~ msgstr "Libre de cargas y derechos"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#, python-format
+#~ msgid ""
+#~ "Incident\n"
+#~ "-----------\n"
+#~ "%s\n"
+#~ "Données transmises:\n"
+#~ "-----------------------------\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Incidente\n"
+#~ "-----------\n"
+#~ "%s\n"
+#~ "Datos transmitidos:\n"
+#~ "-----------------------------\n"
+#~ "%s"
+
+#~ msgid "Insurance"
+#~ msgstr "Seguro"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"
+
+#~ msgid "Shipping Cash On Delivery"
+#~ msgstr "Envío Contra Reembolso"
+
+#~ msgid "Units"
+#~ msgstr "Unidades"
+
+#~ msgid "kg"
+#~ msgstr "kg"
+
+#~ msgid "m³"
+#~ msgstr "metros cúbicos"

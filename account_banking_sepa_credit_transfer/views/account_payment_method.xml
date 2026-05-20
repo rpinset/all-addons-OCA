@@ -2,7 +2,10 @@
   <record id="view_account_payment_method_form_inherit_sepa_hybrid" model="ir.ui.view">
     <field name="name">account.payment.method.form.sepa.hybrid</field>
     <field name="model">account.payment.method</field>
-    <field name="inherit_id" ref="account_payment_mode.account_payment_method_form" />
+    <field
+            name="inherit_id"
+            ref="account_banking_pain_base.account_payment_method_form"
+        />
     <field name="arch" type="xml">
         <field name="pain_version" position="after">
             <field

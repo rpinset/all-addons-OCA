@@ -27,10 +27,7 @@ class StockQuantPackage(models.Model):
 
         def calc_package_price():
             return sum(
-                [
-                    op.product_id.lst_price * op.qty_done or op.product_qty
-                    for op in self.get_operations()
-                ]
+                [op.product_id.lst_price * op.qty_done for op in self.get_operations()]
             )
 
         vals["totalAmount"] = "%.f" % (  # truncate to string
