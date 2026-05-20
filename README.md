@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-17 04:46 UTC** (elapsed 60s)
+Last build: **2026-05-20 16:05 UTC** (elapsed 180s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -41,7 +41,7 @@ Last build: **2026-05-17 04:46 UTC** (elapsed 60s)
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | dd20d1e 2025-09-25 OCA-git-bot [BOT] post-merge updates |
 | [dms](https://github.com/OCA/dms) | 7 | c7271d4 2025-06-21 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [e-commerce](https://github.com/OCA/e-commerce) | 53 | c8e9ec4 2025-11-26 OCA-git-bot [BOT] post-merge updates |
+| [e-commerce](https://github.com/OCA/e-commerce) | 53 | 8d70b7e 2026-05-19 Pedro M. Baeza Merge pull request #1218 from qrtl/15.0-copier |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
 | [edi](https://github.com/OCA/edi) | 22 | 3eca63c 2026-02-10 OCA-git-bot [BOT] post-merge updates |
 | [event](https://github.com/OCA/event) | 25 | 607f2c1 2025-07-17 OCA-git-bot [BOT] post-merge updates |
@@ -126,6 +126,6 @@ Last build: **2026-05-17 04:46 UTC** (elapsed 60s)
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 1 | 9debad8 2026-03-27 OCA-git-bot [ADD] setup.py |
 | [web](https://github.com/OCA/web) | 53 | 952baf0 2026-04-07 OCA-git-bot [BOT] post-merge updates |
 | [web-api](https://github.com/OCA/web-api) | 1 | 0102039 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [website](https://github.com/OCA/website) | 21 | 92d30ea 2026-05-04 OCA-git-bot [BOT] post-merge updates |
+| [website](https://github.com/OCA/website) | 21 | 307ea7d 2026-05-19 mymage Translated using Weblate (Italian) |
 | [wms](https://github.com/OCA/wms) | 1 | 97f63f6 2025-02-09 oca-git-bot [IMP] update dotfiles |
 
