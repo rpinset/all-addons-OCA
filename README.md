@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-17 04:43 UTC** (elapsed 74s)
+Last build: **2026-05-20 16:02 UTC** (elapsed 185s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -24,7 +24,7 @@ Last build: **2026-05-17 04:43 UTC** (elapsed 74s)
 | [account-payment](https://github.com/OCA/account-payment) | 37 | aab6d21 2026-04-08 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 20 | 53a360e 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 7138a05 2025-11-25 mymage Translated using Weblate (Italian) |
-| [bank-payment](https://github.com/OCA/bank-payment) | 21 | 884303a 2026-04-08 mymage Translated using Weblate (Italian) |
+| [bank-payment](https://github.com/OCA/bank-payment) | 21 | e997933 2026-05-19 OCA-git-bot [BOT] post-merge updates |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 16 | 53df9ab 2026-04-20 Francesco Foresti Translated using Weblate (Italian) |
 | [brand](https://github.com/OCA/brand) | 12 | 6b61503 2026-05-12 mymage Translated using Weblate (Italian) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | 3084b17 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
@@ -45,7 +45,7 @@ Last build: **2026-05-17 04:43 UTC** (elapsed 74s)
 | [currency](https://github.com/OCA/currency) | 8 | 9e281c1 2025-09-16 Betül Öğmen Translated using Weblate (Turkish) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d70466e 2025-10-21 mymage Translated using Weblate (Italian) |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 7df55bf 2026-04-01 OCA-git-bot [BOT] post-merge updates |
+| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 6e6a48d 2026-05-20 Weblate Update translation files |
 | [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
@@ -145,7 +145,7 @@ Last build: **2026-05-17 04:43 UTC** (elapsed 74s)
 | [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 92478af 2025-10-14 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 6 | 4bbbb97 2025-10-15 mymage Translated using Weblate (Italian) |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | 1 | 5f56d1e 2025-04-02 mymage Translated using Weblate (Italian) |
-| [web](https://github.com/OCA/web) | 69 | c1245ef 2026-04-08 Weblate Update translation files |
+| [web](https://github.com/OCA/web) | 69 | 790767b 2026-05-18 OCA-git-bot [BOT] post-merge updates |
 | [web-api](https://github.com/OCA/web-api) | 7 | 3000025 2025-06-09 mymage Translated using Weblate (Italian) |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
