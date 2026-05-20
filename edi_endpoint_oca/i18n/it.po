@@ -50,7 +50,6 @@ msgstr "Tipo backend"
 #. module: edi_endpoint_oca
 #. odoo-python
 #: code:addons/edi_endpoint_oca/models/edi_endpoint.py:0
-#, python-format
 msgid "Backend and exchange type are mandatory"
 msgstr "Il backend e il tipo scambio sono obbligatori"
 
@@ -75,6 +74,12 @@ msgid "Company"
 msgstr "Azienda"
 
 #. module: edi_endpoint_oca
+#. odoo-python
+#: code:addons/edi_endpoint_oca/models/edi_endpoint.py:0
+msgid "Create exchange record"
+msgstr ""
+
+#. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__create_uid
 msgid "Created by"
 msgstr "Creato da"
@@ -90,7 +95,11 @@ msgid "Csrf"
 msgstr "CSRF"
 
 #. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type__display_name
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -167,7 +176,6 @@ msgstr "Tipo scambio"
 #. module: edi_endpoint_oca
 #. odoo-python
 #: code:addons/edi_endpoint_oca/models/edi_endpoint.py:0
-#, python-format
 msgid "Exchange type not compatible with selected backend type."
 msgstr "Tipo scambio non compatibile con il tipo backend selezionato."
 
@@ -182,12 +190,11 @@ msgid "Exec Mode"
 msgstr "Modo esecuzione"
 
 #. module: edi_endpoint_oca
-#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_search_view
-msgid "Group By"
-msgstr "Raggruppa per"
-
-#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type__id
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record__id
 msgid "ID"
 msgstr "ID"
 
@@ -195,11 +202,6 @@ msgstr "ID"
 #: model:ir.model.fields,help:edi_endpoint_oca.field_edi_endpoint__endpoint_hash
 msgid "Identify the route with its main params"
 msgstr "Identifica la rotta con questi parametri principali"
-
-#. module: edi_endpoint_oca
-#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__write_uid
@@ -234,6 +236,11 @@ msgstr ""
 "attraverso un'azione opportuna.\n"
 "\n"
 "Spento: record allineato con il registro, non c'è niente da fare."
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__readonly
+msgid "Readonly"
+msgstr ""
 
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,help:edi_endpoint_oca.field_edi_exchange_consumer_mixin__origin_edi_endpoint_id
@@ -279,15 +286,14 @@ msgstr "Sincronizza registro"
 #. module: edi_endpoint_oca
 #. odoo-python
 #: code:addons/edi_endpoint_oca/models/edi_backend.py:0
-#, python-format
 msgid ""
 "The following backend(s) have endpoints attached. Please archive them "
 "before:\n"
 "\n"
 "%s"
 msgstr ""
-"I seguenti backend hanno endpoints allegati. Devono essere prima archiviati:"
-"\n"
+"I seguenti backend hanno endpoints allegati. Devono essere prima "
+"archiviati:\n"
 "\n"
 "%s"
 
@@ -300,3 +306,9 @@ msgstr "Utilizzarlo per classificare i percorsi insieme"
 #: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_backend_view_form
 msgid "endpoints configured"
 msgstr "endopoint configurati"
+
+#~ msgid "Group By"
+#~ msgstr "Raggruppa per"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"

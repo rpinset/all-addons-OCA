@@ -2,15 +2,21 @@
 # @author: Simone Orsi <simone.orsi@camptocamp.com>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
+import json
 import textwrap
 
+import jsonschema
 import werkzeug
+import yaml
+from lxml import etree
 
 from odoo import api, exceptions, fields, http, models
 from odoo.exceptions import UserError
 from odoo.tools import safe_eval
 
 from odoo.addons.rpc_helper.decorator import disable_rpc
+
+from ..exceptions import RequestValidationError
 
 hashlib = safe_eval.wrap_module(
     __import__("hashlib"),
@@ -48,6 +54,18 @@ class EndpointMixin(models.AbstractModel):
         selection="_selection_exec_mode",
         required=True,
     )
+    request_content_schema = fields.Text(
+        help=(
+            "Optional schema validated against the parsed request body. "
+            "The accepted format depends on 'Request content type':\n"
+            " - application/json: JSON Schema (Draft 2020-12), as YAML or JSON\n"
+            " - application/xml, text/xml: XML Schema (XSD)\n"
+            "If empty, no validation runs."
+        ),
+    )
+    request_content_schema_applicable = fields.Boolean(
+        compute="_compute_request_content_schema_applicable",
+    )
     code_snippet = fields.Text()
     code_snippet_docs = fields.Text(
         compute="_compute_code_snippet_docs",
@@ -79,6 +97,69 @@ class EndpointMixin(models.AbstractModel):
                     "Exec mode is set to `Code`: you must provide a piece of code"
                 )
             )
+
+    def _get_request_content_schema_applicable_for_types(self):
+        """Content types for which ``request_content_schema`` applies."""
+        return ["application/json", "application/xml"]
+
+    @api.depends("request_method", "request_content_type")
+    def _compute_request_content_schema_applicable(self):
+        applicable_types = self._get_request_content_schema_applicable_for_types()
+        for rec in self:
+            rec.request_content_schema_applicable = (
+                rec.request_method in ("POST", "PUT")
+                and rec.request_content_type in applicable_types
+            )
+
+    @api.onchange("request_content_type")
+    def _onchange_request_content_type_clear_schema(self):
+        # The schema format depends on the content type (e.g. JSON Schema vs
+        # XSD), so it cannot survive a content type change.
+        self.request_content_schema = False
+
+    @api.constrains("request_content_schema", "request_content_type")
+    def _check_request_content_schema(self):
+        for rec in self:
+            if not rec.request_content_schema:
+                continue
+            elif rec.request_content_type == "application/json":
+                rec._check_request_content_schema_json()
+            elif rec.request_content_type == "application/xml":
+                rec._check_request_content_schema_xml()
+
+    def _check_request_content_schema_json(self):
+        try:
+            schema = yaml.safe_load(self.request_content_schema)
+        except yaml.YAMLError as exception:
+            raise UserError(
+                self.env._("Invalid YAML/JSON in request content schema: %s", exception)
+            ) from exception
+        try:
+            jsonschema.Draft202012Validator.check_schema(schema)
+        except jsonschema.SchemaError as exception:
+            raise UserError(
+                self.env._(
+                    "Invalid JSON Schema in request content schema: %s",
+                    exception.message,
+                )
+            ) from exception
+
+    def _check_request_content_schema_xml(self):
+        try:
+            schema_doc = etree.fromstring(self.request_content_schema.encode())
+        except etree.XMLSyntaxError as exception:
+            raise UserError(
+                self.env._("Invalid XML in request content schema: %s", exception)
+            ) from exception
+        try:
+            etree.XMLSchema(schema_doc)
+        except etree.XMLSchemaParseError as exception:
+            raise UserError(
+                self.env._(
+                    "Invalid XML Schema (XSD) in request content schema: %s",
+                    exception,
+                )
+            ) from exception
 
     @api.constrains("auth_type")
     def _check_auth(self):
@@ -233,6 +314,59 @@ class EndpointMixin(models.AbstractModel):
         ):
             self._logger.error("_validate_request: UnsupportedMediaType")
             raise werkzeug.exceptions.UnsupportedMediaType()
+        self._validate_request_content(request)
+
+    def _validate_request_content(self, request):
+        if not (self.request_content_schema and self.request_content_schema_applicable):
+            return
+        if self.request_content_type == "application/json":
+            self._validate_request_content_json(request)
+        elif self.request_content_type == "application/xml":
+            self._validate_request_content_xml(request)
+
+    def _validate_request_content_json(self, request):
+        try:
+            body = request.get_json_data()
+        except json.JSONDecodeError as exception:
+            self._logger.error("Invalid JSON body: %s", exception)
+            raise RequestValidationError(
+                [{"loc": ["body"], "msg": str(exception), "type": "json_invalid"}]
+            ) from exception
+        schema = yaml.safe_load(self.request_content_schema)
+        errors = list(jsonschema.Draft202012Validator(schema).iter_errors(body))
+        if errors:
+            self._logger.error("Schema validation failed (%d errors)", len(errors))
+            raise RequestValidationError(
+                [
+                    {
+                        "loc": ["body", *err.absolute_path],
+                        "msg": err.message,
+                        "type": err.validator,
+                    }
+                    for err in errors
+                ]
+            )
+
+    def _validate_request_content_xml(self, request):
+        body = request.httprequest.get_data()
+        try:
+            doc = etree.fromstring(body)
+        except etree.XMLSyntaxError as exception:
+            self._logger.error("Invalid XML body: %s", exception)
+            raise RequestValidationError(
+                [{"loc": ["body"], "msg": str(exception), "type": "xml_invalid"}]
+            ) from exception
+        schema = etree.XMLSchema(etree.fromstring(self.request_content_schema.encode()))
+        if not schema.validate(doc):
+            self._logger.error(
+                "Schema validation failed (%d errors)", len(schema.error_log)
+            )
+            raise RequestValidationError(
+                [
+                    {"loc": ["body"], "msg": err.message, "type": "xml_schema"}
+                    for err in schema.error_log
+                ]
+            )
 
     def _get_handler(self):
         try:

@@ -54,6 +54,17 @@ class EDIEndpointTestMixin:
             )
             or cls._get_endpoint()
         )
+        cls.endpoint_create_record = (
+            cls.Endpoint.search(
+                [
+                    ("route", "=", "/edi/demo/create"),
+                    ("backend_type_id", "=", cls.backend_type.id),
+                    ("exchange_type_id", "=", cls.exchange_type.id),
+                ],
+                limit=1,
+            )
+            or cls._get_endpoint_create_record()
+        )
 
     @classmethod
     def _get_backend_type(cls):
@@ -100,6 +111,21 @@ class EDIEndpointTestMixin:
                     'result = {"response": Response("'
                     'Created record: %s" % record.identifier)}'
                 ),
+            }
+        )
+
+    @classmethod
+    def _get_endpoint_create_record(cls):
+        return cls.env["edi.endpoint"].create(
+            {
+                "name": "EDI Demo Endpoint 2",
+                "backend_id": cls.backend.id,
+                "backend_type_id": cls.backend_type.id,
+                "exchange_type_id": cls.exchange_type.id,
+                "route": "/demo/create",
+                "request_method": "POST",
+                "request_content_type": "application/json",
+                "exec_mode": "create_exchange_record",
             }
         )
 

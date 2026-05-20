@@ -74,6 +74,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_required](account_analytic_required/) | 19.0.1.0.0 |  | Account Analytic Required
 [account_analytic_tag](account_analytic_tag/) | 19.0.1.0.0 |  | Account Analytic Tag
 [account_move_update_analytic](account_move_update_analytic/) | 19.0.1.1.0 | <a href='https://github.com/remi-filament'><img src='https://github.com/remi-filament.png' width='32' height='32' style='border-radius:50%;' alt='remi-filament'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | This module allows the user to update analytic on posted moves
 [hr_expense_analytic_tag](hr_expense_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Expense Analytic Tag
@@ -219,7 +220,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 19.0.0.0.11 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 19.0.0.0.12 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 19.0.1.0.2 |  | Compute tax balances based on date range
 [partner_statement](partner_statement/) | 19.0.1.0.2 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
@@ -269,6 +270,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 19.0.1.0.0 |  | Add a code field to the accounts tags
+[account_chart_update](account_chart_update/) | 19.0.1.0.0 |  | Wizard to update a company's account chart from a template
 [account_fiscal_year](account_fiscal_year/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_journal_lock_date](account_journal_lock_date/) | 19.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 19.0.1.0.0 |  | Lock All Posted Entries of Journals.
@@ -278,6 +280,53 @@ addon | version | maintainers | summary
 [account_move_total_by_account_internal_group](account_move_total_by_account_internal_group/) | 19.0.1.0.0 |  | Adds Totals by Account Internal Group in Journal Entries
 [account_netting](account_netting/) | 19.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
 [account_usability](account_usability/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/account-fiscal-rule
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/account-fiscal-rule/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-fiscal-rule)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# account-fiscal-rule
+
+account-fiscal-rule
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_fiscal_position_vies_warning](account_fiscal_position_vies_warning/) | 19.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Account Fiscal Position Vies Warning
 
 [//]: # (end addons)
 
@@ -562,6 +611,9 @@ and promote its widespread use.
 ## From OCA/bank-payment
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# bank-payment
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-payment&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/bank-payment/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/bank-payment/actions/workflows/test.yml?query=branch%3A19.0)
@@ -569,8 +621,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/bank-payment-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-payment-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# bank-payment
 
 bank-payment
 
@@ -586,12 +636,14 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_banking_mandate](account_banking_mandate/) | 19.0.1.0.0 |  | Banking mandates
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
-[account_banking_pain_base](account_banking_pain_base/) | 19.0.1.0.0 |  | Base module for PAIN file generation
+[account_banking_pain_base](account_banking_pain_base/) | 19.0.1.1.0 |  | Base module for PAIN file generation
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 19.0.1.0.0 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.1.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.3 |  | Adds payment mode on partners and invoices
 [account_payment_order](account_payment_order/) | 19.0.1.0.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_purchase](account_payment_purchase/) | 19.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase_stock](account_payment_purchase_stock/) | 19.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 19.0.1.0.1 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
@@ -775,6 +827,9 @@ and promote its widespread use.
 ## From OCA/calendar
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# calendar
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/calendar&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/calendar/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/calendar/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/calendar/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/calendar/actions/workflows/test.yml?query=branch%3A19.0)
@@ -782,8 +837,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/calendar-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/calendar-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# calendar
 
 calendar
 
@@ -847,6 +900,7 @@ addon | version | maintainers | summary
 [account_commission_oca](account_commission_oca/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Account commissions OCA
 [commission_oca](commission_oca/) | 19.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Commissions OCA
 [sale_commission_oca](sale_commission_oca/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales commissions OCA
+[sale_commission_pricelist_oca](sale_commission_pricelist_oca/) | 19.0.1.1.0 |  | Sales commissions by pricelist OCA
 
 [//]: # (end addons)
 
@@ -949,6 +1003,103 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [component](component/) | 19.0.1.0.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Add capabilities to register and use decoupled components, as an alternative to model classes
 [component_event](component_event/) | 19.0.1.0.0 |  | Components Events
+[connector](connector/) | 19.0.1.0.0 |  | Connector
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/connector-telephony
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# connector-telephony
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-telephony&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/connector-telephony/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/connector-telephony/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/connector-telephony/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/connector-telephony/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/connector-telephony/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-telephony)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-telephony-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-telephony-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+connector-telephony
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[voip_oca](voip_oca/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Provides the use of Voip
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/contract
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# contract
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/contract&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/contract/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/contract/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/contract/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/contract/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/contract/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/contract)
+[![Translation Status](https://translation.odoo-community.org/widgets/contract-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/contract-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+contract
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[subscription_oca](subscription_oca/) | 19.0.1.0.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -1052,7 +1203,9 @@ addon | version | maintainers | summary
 [crm_lead_code](crm_lead_code/) | 19.0.1.0.0 |  | Sequential Code for Leads / Opportunities
 [crm_lead_to_task](crm_lead_to_task/) | 19.0.1.0.0 |  | Create Tasks from Leads/Opportunities
 [crm_lead_vat](crm_lead_vat/) | 19.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add VAT field to leads
+[crm_location](crm_location/) | 19.0.1.0.0 |  | CRM location
 [crm_partner_assign](crm_partner_assign/) | 19.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Assign a Partner to an Opportunity/Lead/Partner to indicate Partnership
+[crm_project_create](crm_project_create/) | 19.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow create projects from lead/opportunity
 [crm_stage_probability](crm_stage_probability/) | 19.0.1.0.0 |  | Define fixed probability on the stages
 [crm_won_restrict_per_stage](crm_won_restrict_per_stage/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | CRM Won Restrict Per Stage
 [marketing_crm_partner](marketing_crm_partner/) | 19.0.1.0.0 |  | Copy tracking fields from leads to partners
@@ -1238,6 +1391,9 @@ and promote its widespread use.
 ## From OCA/e-commerce
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# e-commerce
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A19.0)
@@ -1245,8 +1401,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# e-commerce
 
 e-commerce
 
@@ -1364,7 +1518,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [edi_component_oca](edi_component_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Allow to use Connector as a source in EDI
 [edi_core_oca](edi_core_oca/) | 19.0.1.0.4 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
-[edi_endpoint_oca](edi_endpoint_oca/) | 19.0.1.0.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
+[edi_endpoint_oca](edi_endpoint_oca/) | 19.0.1.1.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_queue_oca](edi_queue_oca/) | 19.0.1.0.0 |  | Set Queue Jobs on EDI
 [edi_record_metadata_oca](edi_record_metadata_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to store metadata for related records.
 [edi_ubl_oca](edi_ubl_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Define EDI backend type for UBL.
@@ -1521,10 +1675,11 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_course](hr_course/) | 19.0.1.0.0 |  | This module allows your to manage employee's training courses
 [hr_department_code](hr_department_code/) | 19.0.1.0.0 |  | HR department code
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
+[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_firstname](hr_employee_firstname/) | 19.0.1.1.0 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_language](hr_employee_language/) | 19.0.1.0.0 |  | HR Employee Language
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 19.0.1.0.0 |  | Adds information about employee's medical examinations
+[hr_employee_partner_external](hr_employee_partner_external/) | 19.0.1.0.0 |  | Associate an external Partner to Employee
 [hr_employee_relative](hr_employee_relative/) | 19.0.1.0.0 |  | Allows storing information about employee's family
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 19.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
 
@@ -1622,6 +1777,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 19.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
 [intrastat_product](intrastat_product/) | 19.0.1.0.0 |  | Base module for Intrastat Product
+[intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 19.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
 [product_harmonized_system_delivery](product_harmonized_system_delivery/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Hide native hs_code field provided by the delivery module
 [product_harmonized_system_stock](product_harmonized_system_stock/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Adds a menu entry for H.S. codes
@@ -2075,7 +2231,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_jp_address_layout](l10n_jp_address_layout/) | 19.0.1.0.0 |  | Japan Address Layout
-[l10n_jp_country_state](l10n_jp_country_state/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Japan Country States
+[l10n_jp_country_state](l10n_jp_country_state/) | 19.0.1.1.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | 日本の都道府県を英語表記化し日本語訳を提供
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 19.0.1.0.0 |  | Japan Partner Title QWeb
 
 [//]: # (end addons)
@@ -2365,6 +2521,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_activity_board](mail_activity_board/) | 19.0.1.0.0 |  | Add Activity Boards
 [mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.1 |  | Reminder notifications about planned activities
+[mail_activity_team](mail_activity_team/) | 19.0.1.0.0 |  | Add Teams to Activities
 [mail_message_search](mail_message_search/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_optional_autofollow](mail_optional_autofollow/) | 19.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 19.0.1.0.0 |  | Allows you to configure the from header for a mail server.
@@ -2659,6 +2816,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_inter_company](account_invoice_inter_company/) | 19.0.1.0.0 |  | Intercompany invoice rules
 [mail_multicompany](mail_multicompany/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
+[product_tax_multicompany_default](product_tax_multicompany_default/) | 19.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 19.0.1.0.0 |  | Intercompany PO/SO rules
 [res_company_active](res_company_active/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add the 'active' feature on company model
 [res_company_search_view](res_company_search_view/) | 19.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a search view for company model
@@ -2823,6 +2981,7 @@ addon | version | maintainers | summary
 [partner_address_street3](partner_address_street3/) | 19.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 19.0.1.0.0 |  | Partner Affiliates
 [partner_auto_archive](partner_auto_archive/) | 19.0.1.0.0 |  | Archive periodically all contacts marked as auto-archive.
+[partner_category_description](partner_category_description/) | 19.0.1.0.1 | <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Adds a description field to contact categories to improve organization and managment of customer relationships.
 [partner_company_default](partner_company_default/) | 19.0.1.0.0 |  | Partner Company Default
 [partner_company_group](partner_company_group/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 19.0.1.0.0 |  | Adds a company type to partner that are companies
@@ -3025,7 +3184,9 @@ addon | version | maintainers | summary
 [product_net_weight](product_net_weight/) | 19.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 19.0.1.0.0 |  | Product Pricelist Revision
-[product_state](product_state/) | 19.0.1.0.0 | <a href='https://github.com/emagdalenaC2i'><img src='https://github.com/emagdalenaC2i.png' width='32' height='32' style='border-radius:50%;' alt='emagdalenaC2i'/></a> | Module introducing a state field on product template
+[product_set](product_set/) | 19.0.1.0.0 |  | Product set
+[product_state](product_state/) | 19.0.1.0.1 | <a href='https://github.com/emagdalenaC2i'><img src='https://github.com/emagdalenaC2i.png' width='32' height='32' style='border-radius:50%;' alt='emagdalenaC2i'/></a> | Module introducing a state field on product template
+[product_state_sale](product_state_sale/) | 19.0.1.0.0 |  | This module add the use of Product State in Sale
 [product_status](product_status/) | 19.0.1.0.0 |  | Product Status Computed From Fields
 [product_supplierinfo_indirect_cost](product_supplierinfo_indirect_cost/) | 19.0.1.0.0 |  | Add indirect cost percent and amount to supplier info
 [purchase_product_template_tags](purchase_product_template_tags/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Purchase app
@@ -3177,14 +3338,18 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 19.0.1.0.0 |  | Project Department Categorization
 [project_hr](project_hr/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 19.0.1.0.0 |  | Module decorates projects and tasks with Project Key
+[project_merge](project_merge/) | 19.0.1.0.0 |  | Wizard to merge project tasks
 [project_milestone_status](project_milestone_status/) | 19.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Project Milestone Status
 [project_parent](project_parent/) | 19.0.1.0.0 |  | Project Parent
 [project_parent_task_filter](project_parent_task_filter/) | 19.0.1.0.0 |  | Add a filter to show the parent tasks
 [project_sequence](project_sequence/) | 19.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
+[project_stage_extra_info](project_stage_extra_info/) | 19.0.1.0.0 |  | Project Stage Extra Info
 [project_tag_hierarchy](project_tag_hierarchy/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Hierarchy
+[project_tag_multicompany](project_tag_multicompany/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Tag Multicompany
 [project_task_code](project_task_code/) | 19.0.1.0.0 |  | Sequential Code for Tasks
 [project_task_customer_ref](project_task_customer_ref/) | 19.0.1.0.0 |  | Adds Order Customer Reference to tasks, syncs it to the linked sale order, and exposes it on website webforms.
 [project_task_default_stage](project_task_default_stage/) | 19.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_default_user](project_task_default_user/) | 19.0.1.0.0 | <a href='https://github.com/NICO-SOLUTIONS'><img src='https://github.com/NICO-SOLUTIONS.png' width='32' height='32' style='border-radius:50%;' alt='NICO-SOLUTIONS'/></a> | Auto assign default users to tasks or when changing task stages
 [project_task_description_template](project_task_description_template/) | 19.0.1.0.0 |  | Add a description template to project tasks
 [project_task_name_with_id](project_task_name_with_id/) | 19.0.1.1.0 |  | Project Task Name with ID
 [project_task_note](project_task_note/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Add notes in project tasks
@@ -3305,6 +3470,7 @@ addon | version | maintainers | summary
 [purchase_no_rfq](purchase_no_rfq/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Purchase Order - No Request For Quotation
 [purchase_order_approved](purchase_order_approved/) | 19.0.1.0.0 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_general_discount](purchase_order_general_discount/) | 19.0.1.0.0 |  | General discount per purchase order
+[purchase_order_line_description](purchase_order_line_description/) | 19.0.1.0.0 |  | Purchase order line description
 [purchase_order_line_menu](purchase_order_line_menu/) | 19.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_sequence](purchase_order_line_sequence/) | 19.0.1.0.0 |  | Adds sequence to PO lines and propagates it toInvoice lines and Stock Moves
 [purchase_order_owner](purchase_order_owner/) | 19.0.1.0.0 |  | Purchase Order Owner
@@ -3316,6 +3482,7 @@ addon | version | maintainers | summary
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 19.0.1.0.0 |  | Update cost price in stock moves already done
 [purchase_tag](purchase_tag/) | 19.0.1.0.0 |  | Allows to add multiple tags to purchase orders
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Purchase Force Vendor
+[supplier_calendar](supplier_calendar/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Supplier Calendar
 
 [//]: # (end addons)
 
@@ -3470,9 +3637,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_report_to_label_printer](base_report_to_label_printer/) | 19.0.1.1.0 |  | Report to label printer
-[base_report_to_printer](base_report_to_printer/) | 19.0.1.2.0 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 19.0.1.2.1 |  | Report to printer
 [base_report_to_printer_cups](base_report_to_printer_cups/) | 19.0.0.2.0 |  | Report to printer CUPS
-[base_report_to_printer_qztray](base_report_to_printer_qztray/) | 19.0.1.0.1 |  | Report to QZ Tray
+[base_report_to_printer_qztray](base_report_to_printer_qztray/) | 19.0.1.0.2 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Report to QZ Tray
 [base_report_to_printer_websocket](base_report_to_printer_websocket/) | 19.0.1.0.0 |  | Report to printer via WebSocket
 
 [//]: # (end addons)
@@ -3735,6 +3902,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[portal_sale_list_extra_info](portal_sale_list_extra_info/) | 19.0.1.0.0 |  | Adds additional fields 'client_order_ref' and 'amount_untaxed' to the portal view. It also makes it easier to add other fields in the future.
+[portal_sale_personal_data_only](portal_sale_personal_data_only/) | 19.0.1.0.0 |  | Portal Sale Personal Data Only
 [product_form_sale_link](product_form_sale_link/) | 19.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
 [sale_advance_payment](sale_advance_payment/) | 19.0.1.0.0 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_automatic_workflow](sale_automatic_workflow/) | 19.0.1.0.0 |  | Sale Automatic Workflow
@@ -3766,6 +3935,7 @@ addon | version | maintainers | summary
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 19.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 19.0.1.0.0 |  | Define priority on sale orders
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 19.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
+[sale_order_split_strategy](sale_order_split_strategy/) | 19.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_type](sale_order_type/) | 19.0.1.4.0 |  | Sale Order Type
 [sale_partner_delay](sale_partner_delay/) | 19.0.1.0.0 |  | Add customer-specific delivery lead time
 [sale_partner_incoterm](sale_partner_incoterm/) | 19.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
@@ -4044,6 +4214,7 @@ addon | version | maintainers | summary
 [sequence_python](sequence_python/) | 19.0.1.0.0 |  | Calculate a sequence number from a Python expression
 [session_db](session_db/) | 19.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Store sessions in DB
 [test_auditlog](test_auditlog/) | 19.0.1.0.0 |  | Additional unit tests for Audit Log based on accounting models
+[tracking_manager](tracking_manager/) | 19.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 19.0.1.0.4 | <a href='https://github.com/StefanRijnhart'><img src='https://github.com/StefanRijnhart.png' width='32' height='32' style='border-radius:50%;' alt='StefanRijnhart'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
@@ -4477,6 +4648,7 @@ addon | version | maintainers | summary
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 19.0.1.0.0 |  | Restrict the return to delivered quantity
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 19.0.1.0.0 |  | Link between picking and sale order
 [stock_picking_send_by_mail](stock_picking_send_by_mail/) | 19.0.1.0.0 |  | Send stock picking by email
+[stock_restrict_lot](stock_restrict_lot/) | 19.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 [stock_split_picking](stock_split_picking/) | 19.0.1.0.0 |  | Split a picking in two not transferred pickings
 
 [//]: # (end addons)
@@ -4652,12 +4824,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[crm_timesheet](crm_timesheet/) | 19.0.1.1.0 |  | CRM Timesheet
 [hr_timesheet_autofill_project_off](hr_timesheet_autofill_project_off/) | 19.0.1.0.0 |  | Timesheet - Autofill project off
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 19.0.1.0.0 |  | Timesheet - Begin/End Hours
 [hr_timesheet_day_week](hr_timesheet_day_week/) | 19.0.1.0.0 |  | Timesheets - Day of Week
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 19.0.1.0.0 |  | Set task on timesheet as a mandatory field
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 19.0.1.0.0 |  | Open/Close task from corresponding Task Log entry
-[hr_timesheet_time_control](hr_timesheet_time_control/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project timesheet time control
+[hr_timesheet_time_control](hr_timesheet_time_control/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project timesheet time control
 [hr_timesheet_time_control_begin_end](hr_timesheet_time_control_begin_end/) | 19.0.1.0.1 | <a href='https://github.com/CRogos'><img src='https://github.com/CRogos.png' width='32' height='32' style='border-radius:50%;' alt='CRogos'/></a> | HR Timesheet Time Control begin/end
 [sale_order_update_timesheet_price](sale_order_update_timesheet_price/) | 19.0.1.0.0 |  | Update the unit price of already invoiced sale order lines by creating a new line
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 19.0.1.0.0 |  | Exclude Timesheet Line from Sale Order
@@ -4715,6 +4888,7 @@ addon | version | maintainers | summary
 [web_environment_ribbon](web_environment_ribbon/) | 19.0.1.0.0 |  | Web Environment Ribbon
 [web_favicon](web_favicon/) | 19.0.1.0.0 |  | Allows to set a custom shortcut icon (aka favicon)
 [web_group_expand](web_group_expand/) | 19.0.1.0.0 |  | Group Expand Buttons
+[web_ir_actions_act_multi](web_ir_actions_act_multi/) | 19.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 19.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Show a message box to users
 [web_m2x_options](web_m2x_options/) | 19.0.1.0.0 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 19.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
@@ -4772,7 +4946,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[endpoint](endpoint/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide custom endpoint machinery.
+[endpoint](endpoint/) | 19.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide custom endpoint machinery.
 [endpoint_auth_api_key](endpoint_auth_api_key/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide API key auth for endpoints.
 [endpoint_route_handler](endpoint_route_handler/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide mixin and tool to generate custom endpoints on the fly.
 [webservice](webservice/) | 19.0.1.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally

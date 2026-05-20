@@ -70,6 +70,17 @@
                                 </group>
                             </group>
                         </page>
+                        <page
+                            name="request_content_schema"
+                            string="Request Schema"
+                            invisible="not request_content_schema_applicable"
+                        >
+                            <field
+                                name="request_content_schema"
+                                widget="ace"
+                                placeholder="Optional schema (JSON Schema or XSD, depending on Request Content Type)"
+                            />
+                        </page>
                         <page name="code" string="Code" invisible="exec_mode != 'code'">
                             <field name="code_snippet" widget="ace" />
                         </page>

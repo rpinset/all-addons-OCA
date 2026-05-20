@@ -96,6 +96,7 @@ msgstr "CSRF"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__display_name
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -142,6 +143,7 @@ msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__id
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__id
 msgid "ID"
 msgstr "ID"
 
@@ -150,6 +152,30 @@ msgstr "ID"
 #: model:ir.model.fields,help:endpoint.field_endpoint_mixin__endpoint_hash
 msgid "Identify the route with its main params"
 msgstr "Identifica la rotta con questi parametri principali"
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid JSON Schema in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid XML Schema (XSD) in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid XML in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid YAML/JSON in request content schema: %s"
+msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__write_uid
@@ -194,6 +220,22 @@ msgstr ""
 "Spento: record allineato con il registro, non c'è niente da fare."
 
 #. module: endpoint
+#: model_terms:ir.ui.view,arch_db:endpoint.endpoint_mixin_form_view
+msgid "Optional schema (JSON Schema or XSD, depending on Request Content Type)"
+msgstr ""
+
+#. module: endpoint
+#: model:ir.model.fields,help:endpoint.field_endpoint_endpoint__request_content_schema
+#: model:ir.model.fields,help:endpoint.field_endpoint_mixin__request_content_schema
+msgid ""
+"Optional schema validated against the parsed request body. The accepted "
+"format depends on 'Request content type':\n"
+" - application/json: JSON Schema (Draft 2020-12), as YAML or JSON\n"
+" - application/xml, text/xml: XML Schema (XSD)\n"
+"If empty, no validation runs."
+msgstr ""
+
+#. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__readonly
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__readonly
 msgid "Readonly"
@@ -220,6 +262,18 @@ msgid "Request"
 msgstr "Richiesta"
 
 #. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_schema
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_schema
+msgid "Request Content Schema"
+msgstr ""
+
+#. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_schema_applicable
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_schema_applicable
+msgid "Request Content Schema Applicable"
+msgstr ""
+
+#. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_type
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_type
 msgid "Request Content Type"
@@ -230,6 +284,11 @@ msgstr "Tipo contenuto richiesta"
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_method
 msgid "Request Method"
 msgstr "Metodo richiesta"
+
+#. module: endpoint
+#: model_terms:ir.ui.view,arch_db:endpoint.endpoint_mixin_form_view
+msgid "Request Schema"
+msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__route

@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-05-17 04:49 UTC
+Generated 2026-05-20 16:10 UTC
 
 ## Skipped repos
 
@@ -10,7 +10,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | ---- | ------ | ------ |
 | [.github](https://github.com/OCA/.github) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
-| [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [ai](https://github.com/OCA/ai) | `no_module` | No directory with __manifest__.py at repo root |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [apps-store](https://github.com/OCA/apps-store) | `no_module` | No directory with __manifest__.py at repo root |
@@ -33,9 +32,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-sage](https://github.com/OCA/connector-sage) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | `no_module` | No directory with __manifest__.py at repo root |
-| [connector-telephony](https://github.com/OCA/connector-telephony) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | `no_module` | No directory with __manifest__.py at repo root |
-| [contract](https://github.com/OCA/contract) | `no_module` | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | `no_module` | No directory with __manifest__.py at repo root |

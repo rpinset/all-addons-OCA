@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-05-17 04:49 UTC
+Generated 2026-05-20 16:10 UTC
 
-Total skipped: **165**
+Total skipped: **162**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,12 +37,11 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **141**
+Count: **138**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | [19.0](https://github.com/OCA/account-consolidation/tree/19.0) | No directory with __manifest__.py at repo root |
-| [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | [19.0](https://github.com/OCA/account-fiscal-rule/tree/19.0) | No directory with __manifest__.py at repo root |
 | [ai](https://github.com/OCA/ai) | [19.0](https://github.com/OCA/ai/tree/19.0) | No directory with __manifest__.py at repo root |
 | [apps-store](https://github.com/OCA/apps-store) | [19.0](https://github.com/OCA/apps-store/tree/19.0) | No directory with __manifest__.py at repo root |
 | [automation](https://github.com/OCA/automation) | [19.0](https://github.com/OCA/automation/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -63,9 +62,7 @@ Count: **141**
 | [connector-sage](https://github.com/OCA/connector-sage) | [19.0](https://github.com/OCA/connector-sage/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | [19.0](https://github.com/OCA/connector-salesforce/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | [19.0](https://github.com/OCA/connector-spscommerce/tree/19.0) | No directory with __manifest__.py at repo root |
-| [connector-telephony](https://github.com/OCA/connector-telephony) | [19.0](https://github.com/OCA/connector-telephony/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [19.0](https://github.com/OCA/connector-woocommerce/tree/19.0) | No directory with __manifest__.py at repo root |
-| [contract](https://github.com/OCA/contract) | [19.0](https://github.com/OCA/contract/tree/19.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [19.0](https://github.com/OCA/cooperative/tree/19.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [19.0](https://github.com/OCA/crowdfunding/tree/19.0) | No directory with __manifest__.py at repo root |
 | [data-protection](https://github.com/OCA/data-protection) | [19.0](https://github.com/OCA/data-protection/tree/19.0) | No directory with __manifest__.py at repo root |

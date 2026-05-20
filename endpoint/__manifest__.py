@@ -4,13 +4,16 @@
 {
     "name": "Endpoint",
     "summary": """Provide custom endpoint machinery.""",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "license": "LGPL-3",
     "development_status": "Beta",
     "author": "Camptocamp,Odoo Community Association (OCA)",
     "maintainers": ["simahawk"],
     "website": "https://github.com/OCA/web-api",
     "depends": ["endpoint_route_handler", "rpc_helper"],
+    "external_dependencies": {
+        "python": ["jsonschema", "PyYAML"],
+    },
     "data": [
         "data/server_action.xml",
         "security/ir.model.access.csv",

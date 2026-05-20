@@ -96,6 +96,7 @@ msgstr "跨站请求伪造"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__display_name
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__display_name
 msgid "Display Name"
 msgstr "显示名称"
 
@@ -141,6 +142,7 @@ msgstr "执行模式设置为`代码`：你必须提供一段代码"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__id
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__id
 msgid "ID"
 msgstr "ID"
 
@@ -149,6 +151,30 @@ msgstr "ID"
 #: model:ir.model.fields,help:endpoint.field_endpoint_mixin__endpoint_hash
 msgid "Identify the route with its main params"
 msgstr "用其主要参数识别路由"
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid JSON Schema in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid XML Schema (XSD) in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid XML in request content schema: %s"
+msgstr ""
+
+#. module: endpoint
+#. odoo-python
+#: code:addons/endpoint/models/endpoint_mixin.py:0
+msgid "Invalid YAML/JSON in request content schema: %s"
+msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__write_uid
@@ -192,6 +218,22 @@ msgstr ""
 "关：记录与注册表一致，无需操作。"
 
 #. module: endpoint
+#: model_terms:ir.ui.view,arch_db:endpoint.endpoint_mixin_form_view
+msgid "Optional schema (JSON Schema or XSD, depending on Request Content Type)"
+msgstr ""
+
+#. module: endpoint
+#: model:ir.model.fields,help:endpoint.field_endpoint_endpoint__request_content_schema
+#: model:ir.model.fields,help:endpoint.field_endpoint_mixin__request_content_schema
+msgid ""
+"Optional schema validated against the parsed request body. The accepted "
+"format depends on 'Request content type':\n"
+" - application/json: JSON Schema (Draft 2020-12), as YAML or JSON\n"
+" - application/xml, text/xml: XML Schema (XSD)\n"
+"If empty, no validation runs."
+msgstr ""
+
+#. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__readonly
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__readonly
 msgid "Readonly"
@@ -216,6 +258,18 @@ msgid "Request"
 msgstr "请求"
 
 #. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_schema
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_schema
+msgid "Request Content Schema"
+msgstr ""
+
+#. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_schema_applicable
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_schema_applicable
+msgid "Request Content Schema Applicable"
+msgstr ""
+
+#. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__request_content_type
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_content_type
 msgid "Request Content Type"
@@ -226,6 +280,11 @@ msgstr "请求内容类型"
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__request_method
 msgid "Request Method"
 msgstr "请求方法"
+
+#. module: endpoint
+#: model_terms:ir.ui.view,arch_db:endpoint.endpoint_mixin_form_view
+msgid "Request Schema"
+msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__route
@@ -258,8 +317,8 @@ msgstr "待同步"
 #. module: endpoint
 #: model_terms:ir.ui.view,arch_db:endpoint.endpoint_mixin_form_view
 msgid ""
-"Use the action \"Sync registry\" to make changes effective once you are done"
-" with edits and creates."
+"Use the action \"Sync registry\" to make changes effective once you are done "
+"with edits and creates."
 msgstr "完成编辑和创建后，使用“同步注册表”操作使更改生效。"
 
 #. module: endpoint

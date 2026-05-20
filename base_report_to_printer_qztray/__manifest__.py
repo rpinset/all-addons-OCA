@@ -3,7 +3,7 @@
 
 {
     "name": "Report to QZ Tray",
-    "version": "19.0.1.0.1",
+    "version": "19.0.1.0.2",
     "category": "Generic Modules/Base",
     "author": "PESOL, Nagarro, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/report-print-send",
@@ -20,4 +20,5 @@
             "base_report_to_printer_qztray/static/src/js/qweb_action_manager.esm.js"
         ],
     },
+    "maintainers": ["miquelalzanillas"],
 }

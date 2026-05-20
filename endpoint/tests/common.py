@@ -101,6 +101,42 @@ def _setup_demo_records(env):
             ),
         }
     )
+    endpoints += env["endpoint.endpoint"].create(
+        {
+            "name": "Demo Endpoint 8",
+            "route": "/demo/schema",
+            "request_method": "POST",
+            "request_content_type": "application/json",
+            "auth_type": "public",
+            "exec_as_user_id": demo_user.id,
+            "exec_mode": "code",
+            "code_snippet": 'result = {"payload": {"ok": True}}',
+            "request_content_schema": (
+                "type: object\n"
+                "required: [data]\n"
+                "properties:\n"
+                "  data:\n"
+                "    type: array\n"
+            ),
+        }
+    )
+    endpoints += env["endpoint.endpoint"].create(
+        {
+            "name": "Demo Endpoint 9",
+            "route": "/demo/schema-xml",
+            "request_method": "POST",
+            "request_content_type": "application/xml",
+            "auth_type": "public",
+            "exec_as_user_id": demo_user.id,
+            "exec_mode": "code",
+            "code_snippet": 'result = {"payload": {"ok": True}}',
+            "request_content_schema": (
+                '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">'
+                '<xs:element name="greeting" type="xs:string"/>'
+                "</xs:schema>"
+            ),
+        }
+    )
     return endpoints
 
 
