@@ -25,8 +25,13 @@ class CustomerPortal(portal.CustomerPortal):
     def _prepare_home_portal_values(self, counters):
         """Compute values for multi-booking portal views."""
         values = super()._prepare_home_portal_values(counters)
+        Booking = request.env["resource.booking"]
         if "booking_count" in counters:
-            booking_count = request.env["resource.booking"].search_count([])
+            # Portal users without read access on resource.booking would have
+            # raised an AccessError here, breaking the whole /my landing page.
+            booking_count = (
+                Booking.search_count([]) if Booking.has_access("read") else 0
+            )
             values.update({"booking_count": booking_count})
         return values
 
@@ -48,18 +53,27 @@ class CustomerPortal(portal.CustomerPortal):
         website=True,
     )
     def portal_my_bookings(self, page=1, **kwargs):
-        """List bookings that I can access."""
+        """List bookings that I can access.
+
+        Users without read access on resource.booking get an empty list
+        rendered through the same code path — same pager shape, same
+        template — so the page degrades gracefully instead of raising
+        AccessError on the unguarded search_count.
+        """
         Booking = request.env["resource.booking"].with_context(using_portal=True)
         values = self._prepare_portal_layout_values()
-        booking_count = Booking.search_count([])
+        has_access = Booking.has_access("read")
+        booking_count = Booking.search_count([]) if has_access else 0
         pager = portal.pager(
             url="/my/bookings",
             total=booking_count,
             page=page,
             step=self._items_per_page,
         )
-        bookings = Booking.search(
-            [], limit=self._items_per_page, offset=pager["offset"]
+        bookings = (
+            Booking.search([], limit=self._items_per_page, offset=pager["offset"])
+            if booking_count
+            else Booking
         )
         request.session["my_bookings_history"] = bookings.ids
         values.update({"bookings": bookings, "pager": pager, "page_name": "bookings"})

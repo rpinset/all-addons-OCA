@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-09 09:04+0000\n"
+"PO-Revision-Date: 2026-05-18 18:06+0000\n"
 "Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -68,7 +68,7 @@ msgstr "Apunte"
 #: model:ir.model.fields,field_description:account_manual_currency.field_account_payment_register__manual_currency
 #, fuzzy
 msgid "Manual Currency"
-msgstr "Tasa de cambio manual"
+msgstr "Divisa Manual"
 
 #. module: account_manual_currency
 #: model:ir.model.fields,field_description:account_manual_currency.field_account_bank_statement_line__manual_currency_rate

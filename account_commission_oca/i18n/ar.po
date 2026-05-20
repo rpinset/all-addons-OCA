@@ -1,0 +1,572 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_commission_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-17 13:46+0000\n"
+"Last-Translator: Mohamed Essam Salem <mohamed.e.salem@protonmail.com>\n"
+"Language-Team: none\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__quantity
+msgid "# of Qty"
+msgstr "الكمية"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
+msgid "(keep empty for invoicing all the pending settlements)"
+msgstr "(اتركه فارغاً لفوترة جميع التسويات المعلقة)"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.report_settlement_document
+msgid "<strong>Settlement invoice:</strong>"
+msgstr "<strong>فاتورة التسوية:</strong>"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__agent_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__agent_id
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Agent"
+msgstr "الوكيل"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_account_invoice_line_agent
+msgid "Agent detail of commission line in invoice lines"
+msgstr "تفاصيل الوكيل لخط العمولة في بنود الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_bank_statement_line__partner_agent_ids
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move__partner_agent_ids
+msgid "Agents"
+msgstr "الوكلاء"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__agent_ids
+msgid "Agents & commissions"
+msgstr "الوكلاء والعمولات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,help:account_commission_oca.field_account_move_line__agent_ids
+msgid "Agents/Commissions related to the invoice line."
+msgstr "الوكلاء/العمولات المتعلقة ببند الفاتورة."
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__any_settled
+msgid "Any Settled"
+msgstr "أي تسوية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__balance
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/commission_settlement.py:0
+msgid "Cannot cancel an invoiced settlement."
+msgstr "لا يمكن إلغاء تسوية تم فوترتها."
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__categ_id
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Category of Product"
+msgstr "فئة المنتج"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__commission_free
+msgid "Comm. free"
+msgstr "بدون عمولة"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_commission
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__commission_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__commission_status
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__commission_id
+msgid "Commission"
+msgstr "العمولة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__amount
+msgid "Commission Amount"
+msgstr "مبلغ العمولة"
+
+#. module: account_commission_oca
+#: model:ir.actions.act_window,name:account_commission_oca.action_invoice_commission_analysis_report
+#: model:ir.ui.menu,name:account_commission_oca.menu_invoice_commissions_analysis
+msgid "Commission Analysis"
+msgstr "تحليل العمولات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_bank_statement_line__commission_total
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move__commission_total
+#: model:ir.ui.menu,name:account_commission_oca.menu_invoicing_commission
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_move_line_form
+msgid "Commissions"
+msgstr "العمولات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__company_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__company_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__company_id
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Company"
+msgstr "الشركة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,help:account_commission_oca.field_commission_make_invoice__company_id
+msgid "Company related to this journal"
+msgstr "الشركة المتعلقة بهذا اليومية"
+
+#. module: account_commission_oca
+#: model:ir.actions.act_window,name:account_commission_oca.action_commission_make_invoices
+#: model:ir.ui.menu,name:account_commission_oca.menu_invoicing_settlements_make_invoice
+msgid "Create Commission Invoices"
+msgstr "إنشاء فواتير العمولات"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
+msgid "Create invoices"
+msgstr "إنشاء الفواتير"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/wizards/wizard_invoice.py:0
+msgid "Created Invoices"
+msgstr "الفواتير المنشأة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__create_uid
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__create_date
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Customer"
+msgstr "العميل"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__display_name
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__display_name
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_move_form
+msgid "Edit agents"
+msgstr "تحرير الوكلاء"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Extended Filters"
+msgstr "الفلاتر الموسعة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__from_settlement
+msgid "From Settlement"
+msgstr "من التسوية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement__invoice_id
+msgid "Generated Invoice"
+msgstr "الفاتورة المولدة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement__invoice_line_ids
+msgid "Generated invoice lines"
+msgstr "بنود الفاتورة المولدة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__grouped
+msgid "Group invoices"
+msgstr "تجميع الفواتير"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__id
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__id
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement_line__invoice_agent_line_id
+msgid "Invoice Agent Line"
+msgstr "بند وكيل الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission__invoice_state__open
+msgid "Invoice Based"
+msgstr "بناءً على الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_invoice_commission_analysis_report
+msgid "Invoice Commission Analysis Report"
+msgstr "تقرير تحليل عمولات الفواتير"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__date_invoice
+msgid "Invoice Date"
+msgstr "تاريخ الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__invoice_line_id
+msgid "Invoice Line"
+msgstr "بند الفاتورة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Invoice Month"
+msgstr "شهر الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission__invoice_state
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__invoice_state
+msgid "Invoice Status"
+msgstr "حالة الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__invoice_date
+msgid "Invoice date"
+msgstr "تاريخ الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission_settlement__state__except_invoice
+msgid "Invoice exception"
+msgstr "استثناء الفاتورة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.report_settlement_document
+msgid "Invoice line"
+msgstr "بند الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission_settlement__state__invoiced
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Invoiced"
+msgstr "مفوتر"
+
+#. module: account_commission_oca
+#: model:ir.actions.act_window,name:account_commission_oca.action_invoicing_commission_settlement
+#: model:ir.ui.menu,name:account_commission_oca.menu_invoicing_settlements
+msgid "Invoices Settlements"
+msgstr "تسويات الفواتير"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__write_uid
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__write_date
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_commission_settlement_line
+msgid "Line of a commission settlement"
+msgstr "بند من تسوية عمولة"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/commission_settlement.py:0
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_settlement_form
+msgid "Make invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
+msgid "Make invoices"
+msgstr "إنشاء فواتير"
+
+#. module: account_commission_oca
+#: model:res.groups,name:account_commission_oca.group_invoicing_commission
+msgid "Manage invoices commissions"
+msgstr "إدارة عمولات الفواتير"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/wizards/wizard_invoice.py:0
+msgid "No valid settlements to invoice."
+msgstr "لا توجد تسويات صالحة للفوترة."
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Not Settled"
+msgstr "غير مسوى"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__object_id
+msgid "Parent"
+msgstr "الأصل"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__partner_id
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: account_commission_oca
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission__invoice_state__paid
+msgid "Payment Based"
+msgstr "بناءً على الدفع"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__percentage
+msgid "Percentage of commission"
+msgstr "نسبة العمولة"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/commission_settlement.py:0
+msgid "Period: from %(date_from)s to %(date_to)s"
+msgstr "الفترة: من %(date_from)s إلى %(date_to)s"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__product_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__product_id
+msgid "Product for invoicing"
+msgstr "منتج للفوترة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.report_settlement_document
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_move_form
+msgid "Regenerate agents"
+msgstr "إعادة إنشاء الوكلاء"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_settlement_form
+msgid "Reset to draft"
+msgstr "إعادة تعيين إلى مسودة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission_make_settle__settlement_type__sale_invoice
+#: model:ir.model.fields.selection,name:account_commission_oca.selection__commission_settlement__settlement_type__sale_invoice
+msgid "Sales Invoices"
+msgstr "فواتير المبيعات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,help:account_commission_oca.field_commission__invoice_state
+msgid ""
+"Select the invoice status for settling the commissions:\n"
+"* 'Invoice Based': Commissions are settled when the invoice is issued.\n"
+"* 'Payment Based': Commissions are settled when the invoice is paid."
+msgstr ""
+"حدد حالة الفاتورة لتسوية العمولات:\n"
+"* 'بناءً على الفاتورة': يتم تسوية العمولات عند إصدار الفاتورة.\n"
+"* 'بناءً على الدفع': يتم تسوية العمولات عند سداد الفاتورة."
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__settled
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__settled
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Settled"
+msgstr "مسوى"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_commission_settlement
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move_line__settlement_id
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_invoice__settlement_ids
+msgid "Settlement"
+msgstr "التسوية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_bank_statement_line__settlement_count
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move__settlement_count
+msgid "Settlement Count"
+msgstr "عدد التسويات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_invoice_line_agent__settlement_line_ids
+msgid "Settlement Line"
+msgstr "بند التسوية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_make_settle__settlement_type
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement__settlement_type
+msgid "Settlement Type"
+msgstr "نوع التسوية"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,help:account_commission_oca.field_account_move_line__settlement_id
+msgid "Settlement that generates this invoice line"
+msgstr "التسوية التي تولد هذا البند من الفاتورة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_bank_statement_line__settlement_ids
+#: model:ir.model.fields,field_description:account_commission_oca.field_account_move__settlement_ids
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.commission_make_invoice_form
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_in_invoice_bill_tree_inherit
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_move_form
+msgid "Settlements"
+msgstr "التسويات"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement_line__invoice_line_id
+msgid "Source invoice line"
+msgstr "بند الفاتورة المصدر"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_commission_settlement__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__price_subtotal
+msgid "Subtotal"
+msgstr "المجموع الفرعي"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,help:account_commission_oca.field_commission_settlement__settlement_type
+msgid ""
+"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase"
+" order'..."
+msgstr "مصدر التسوية، على سبيل المثال 'فاتورة مبيعات'، 'أمر بيع'، 'أمر شراء'..."
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "This Year"
+msgstr "هذا العام"
+
+#. module: account_commission_oca
+#: model_terms:ir.actions.act_window,help:account_commission_oca.action_invoice_commission_analysis_report
+msgid ""
+"This report performs analysis on your commissions added in invoice lines. "
+"You can check the amount and lines that will be settled by date, product, "
+"product category, aget, etc. Use this report to perform analysis on invoice "
+"lines agents not beeing settled yet."
+msgstr ""
+"يقوم هذا التقرير بإجراء تحليل على عمولاتك المضافة في بنود الفواتير. يمكنك "
+"التحقق من المبلغ والبنود التي سيتم تسويتها حسب التاريخ والمنتج وفئة المنتج "
+"والوكيل وما إلى ذلك. استخدم هذا التقرير لإجراء تحليل على وكلاء بنود الفواتير "
+"الذين لم يتم تسويتهم بعد."
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__price_unit
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: account_commission_oca
+#: model:ir.model.fields,field_description:account_commission_oca.field_invoice_commission_analysis_report__uom_id
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_commission_make_invoice
+msgid "Wizard for making an invoice from a settlement"
+msgstr "معالج لإنشاء فاتورة من تسوية"
+
+#. module: account_commission_oca
+#: model:ir.model,name:account_commission_oca.model_commission_make_settle
+msgid "Wizard for settling commissions"
+msgstr "معالج لتسوية العمولات"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/account_move.py:0
+msgid "You can't cancel an invoice with settled lines"
+msgstr "لا يمكنك إلغاء فاتورة تحتوي على بنود مسواة"
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/commission_settlement.py:0
+msgid "You can't delete invoiced settlements."
+msgstr "لا يمكنك حذف التسويات المفوترة."
+
+#. module: account_commission_oca
+#. odoo-python
+#: code:addons/account_commission_oca/models/account_move.py:0
+msgid "You can't modify a settled line"
+msgstr "لا يمكنك تعديل بند مسوى"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_graph
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_pivot
+msgid "invoice Commission Analysis"
+msgstr "تحليل عمولات الفواتير"
+
+#. module: account_commission_oca
+#: model_terms:ir.ui.view,arch_db:account_commission_oca.view_invoice_commission_analysis_search
+msgid "invoices Commission Analysis"
+msgstr "تحليل عمولات الفواتير"

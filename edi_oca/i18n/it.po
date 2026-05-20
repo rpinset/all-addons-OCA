@@ -971,6 +971,11 @@ msgid "Generator"
 msgstr "Generatore"
 
 #. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_configuration__is_global
+msgid "Global Configuration"
+msgstr ""
+
+#. module: edi_oca
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_record_view_search
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_type_rule_view_search
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_type_view_search
@@ -1040,6 +1045,13 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 #: model:ir.model.fields,help:edi_oca.field_edi_exchange_record__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
+
+#. module: edi_oca
+#: model:ir.model.fields,help:edi_oca.field_edi_configuration__is_global
+msgid ""
+"If checked, this configuration will be executed for all records, regardless "
+"of the partner relation."
+msgstr ""
 
 #. module: edi_oca
 #: model:ir.model.fields,help:edi_oca.field_edi_exchange_type__exchange_filename_sequence_id

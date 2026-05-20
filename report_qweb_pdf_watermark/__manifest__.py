@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Pdf watermark",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "author": "Therp BV, " "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Technical Settings",
@@ -14,6 +14,7 @@
     "data": [
         "views/ir_actions_report_xml.xml",
         "views/res_company.xml",
+        "wizards/base_document_layout.xml",
     ],
     "assets": {
         "web.report_assets_pdf": [

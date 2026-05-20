@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_commission_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-17 13:46+0000\n"
+"Last-Translator: Mohamed Essam Salem <mohamed.e.salem@protonmail.com>\n"
+"Language-Team: none\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__agent_id
+msgid "Agent"
+msgstr "الوكيل"
+
+#. module: sale_commission_oca
+#: model:ir.model,name:sale_commission_oca.model_sale_order_line_agent
+msgid "Agent detail of commission line in order lines"
+msgstr "تفاصيل الوكيل لبند العمولة في بنود أمر البيع"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order__partner_agent_ids
+msgid "Agents"
+msgstr "الوكلاء"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line__agent_ids
+msgid "Agents & commissions"
+msgstr "الوكلاء والعمولات"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,help:sale_commission_oca.field_sale_order_line__agent_ids
+msgid "Agents/Commissions related to the invoice line."
+msgstr "الوكلاء/العمولات المتعلقة ببند الفاتورة."
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line__commission_free
+msgid "Comm. free"
+msgstr "بدون عمولة"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line__commission_status
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__commission_id
+msgid "Commission"
+msgstr "العمولة"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__amount
+msgid "Commission Amount"
+msgstr "مبلغ العمولة"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order__commission_total
+msgid "Commissions"
+msgstr "العمولات"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: sale_commission_oca
+#: model_terms:ir.ui.view,arch_db:sale_commission_oca.view_order_agent_form_inherit
+msgid "Edit agents"
+msgstr "تعديل الوكلاء"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line_agent__object_id
+msgid "Parent"
+msgstr "الأصل"
+
+#. module: sale_commission_oca
+#: model:ir.model.fields,field_description:sale_commission_oca.field_sale_order_line__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: sale_commission_oca
+#: model_terms:ir.ui.view,arch_db:sale_commission_oca.view_order_agent_form_inherit
+msgid "Regenerate agents"
+msgstr "إعادة إنشاء الوكلاء"
+
+#. module: sale_commission_oca
+#: model:ir.model,name:sale_commission_oca.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: sale_commission_oca
+#: model:ir.model,name:sale_commission_oca.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
