@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-05-17 04:43 UTC** (elapsed 85s)
+Last build: **2026-05-20 16:02 UTC** (elapsed 187s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -124,7 +124,7 @@ Last build: **2026-05-17 04:43 UTC** (elapsed 85s)
 | [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | bcad0ae 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [vertical-realestate](https://github.com/OCA/vertical-realestate) | 2 | 1b9d3e8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [web](https://github.com/OCA/web) | 58 | a2fb358 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [website](https://github.com/OCA/website) | 24 | 4a854f8 2025-02-01 oca-git-bot [IMP] update dotfiles |
+| [website](https://github.com/OCA/website) | 24 | 01abd1a 2026-05-19 mymage Translated using Weblate (Italian) |
 | [website-cms](https://github.com/OCA/website-cms) | 6 | 649c588 2025-10-30 mymage Translated using Weblate (Italian) |
 | [website-themes](https://github.com/OCA/website-themes) | 1 | 4b4b060 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [wms](https://github.com/OCA/wms) | 36 | e5c9da3 2025-09-03 mymage Translated using Weblate (Italian) |
