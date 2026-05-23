@@ -244,8 +244,7 @@ msgstr "Periodă"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Aging Report at %(end)s in %(currency)s"
 msgstr ""
 
@@ -341,9 +340,7 @@ msgstr "Data Început"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Date:"
 msgstr "Data:"
 
@@ -384,8 +381,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid ""
-"Detailed Statement between %(starting_date)s and %(ending_date)s in "
-"%(currency)s"
+"Detailed Statement between %(starting_date)s and %(ending_date)s in %"
+"(currency)s"
 msgstr ""
 
 #. module: partner_statement
@@ -431,9 +428,8 @@ msgstr "Activați Solduri Restante OCA"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 msgid "Ending Balance"
@@ -684,6 +680,11 @@ msgid "Show only lines due before the selected date"
 msgstr ""
 
 #. module: partner_statement
+#: model:ir.model,name:partner_statement.model_report_p_s_report_statement_common_xlsx
+msgid "Statement Common XLSX Report"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model,name:partner_statement.model_statement_common
 msgid "Statement Reports Common"
 msgstr ""
@@ -701,9 +702,7 @@ msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement from:"
 msgstr ""
 
@@ -716,17 +715,13 @@ msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement of Account from %s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement to:"
 msgstr ""
 
@@ -752,8 +747,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid ""
-"Supplier Statement between %(starting_date)s and %(ending_date)s in "
-"%(currency)s"
+"Supplier Statement between %(starting_date)s and %(ending_date)s in %"
+"(currency)s"
 msgstr ""
 
 #. module: partner_statement
@@ -780,9 +775,7 @@ msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "VAT:"
 msgstr ""
 

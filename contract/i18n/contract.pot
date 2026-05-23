@@ -905,6 +905,7 @@ msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
+#: model_terms:ir.ui.view,arch_db:contract.contract_line_search_view
 msgid "In progress"
 msgstr ""
 
@@ -1120,6 +1121,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:contract.selection__contract_template__recurring_rule_type__monthlylastday
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__recurring_rule_type__monthlylastday
 msgid "Month(s) last day"
+msgstr ""
+
+#. module: contract
+#: model:ir.model.fields,field_description:contract.field_contract_line__monthly_recurring
+msgid "Monthly Recurring"
 msgstr ""
 
 #. module: contract
@@ -1548,6 +1554,12 @@ msgstr ""
 #: model:ir.model.fields,help:contract.field_contract_line__display_type
 #: model:ir.model.fields,help:contract.field_contract_template_line__display_type
 msgid "Technical field for UX purposes."
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_line_report_tree_view
+#: model_terms:ir.ui.view,arch_db:contract.contract_line_tree_view
+msgid "Total Monthly Recurring"
 msgstr ""
 
 #. module: contract

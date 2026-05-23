@@ -155,16 +155,10 @@ export class PaymentCashdro extends PaymentInterface {
         return url;
     }
 
-    _cashdro_request(url) {
+    async _cashdro_request(url) {
         // We'll use it for regular requests
-        return $.ajax({
-            url: url,
-            method: "GET",
-            async: true,
-            success: function (response) {
-                return response;
-            },
-        });
+        const response = await fetch(url, {method: "GET"});
+        return response.json();
     }
 
     /**
@@ -175,22 +169,22 @@ export class PaymentCashdro extends PaymentInterface {
      * @returns promise
      */
     _cashdro_request_payment(request_url) {
-        var def = $.Deferred();
-        var _request_payment = (url) => {
-            $.ajax({
-                url: url,
-                method: "GET",
-                success: (response) => {
-                    var data = JSON.parse(response.data);
+        return new Promise((resolve, reject) => {
+            const _request_payment = async (url) => {
+                try {
+                    const response = await fetch(url, {method: "GET"});
+                    const responseData = await response.json();
+                    var data = JSON.parse(responseData.data);
                     if (data.operation.state === "F") {
-                        def.resolve(response);
+                        resolve(responseData);
                     } else {
                         _request_payment(url);
                     }
-                },
-            });
-        };
-        _request_payment(request_url);
-        return def;
+                } catch (error) {
+                    reject(error);
+                }
+            };
+            _request_payment(request_url);
+        });
     }
 }
