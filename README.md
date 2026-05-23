@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-20 16:02 UTC** (elapsed 185s)
+Last build: **2026-05-23 21:30 UTC** (elapsed 174s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -12,7 +12,7 @@ Last build: **2026-05-20 16:02 UTC** (elapsed 185s)
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 8cf2703 2026-05-08 OCA-git-bot Merge PR #5608 into 14.0 |
-| [account-analytic](https://github.com/OCA/account-analytic) | 30 | 0d5c137 2026-03-02 Anxo López Rodríguez Translated using Weblate (Galician) |
+| [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | c8d0630 2026-02-02 matthieusaison Translated using Weblate (French) |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 2f902a6 2025-03-13 mymage Translated using Weblate (Italian) |
