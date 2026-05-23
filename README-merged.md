@@ -3,6 +3,9 @@
 ## From OCA/account-analytic
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-analytic
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-analytic&target_branch=12.0)
 [![Pre-commit Status](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml/badge.svg?branch=12.0)](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml?query=branch%3A12.0)
 [![Build Status](https://github.com/OCA/account-analytic/actions/workflows/test.yml/badge.svg?branch=12.0)](https://github.com/OCA/account-analytic/actions/workflows/test.yml?query=branch%3A12.0)
@@ -10,8 +13,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/account-analytic-12-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-analytic-12-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-analytic
 
 
 
@@ -25,6 +26,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_default_account](account_analytic_default_account/) | 12.0.1.0.2 |  | Account Analytic Default Account
 [account_analytic_default_purchase](account_analytic_default_purchase/) | 12.0.1.0.0 |  | Set default values for analytic accounts in purchases
 [account_analytic_distribution_required](account_analytic_distribution_required/) | 12.0.2.0.0 |  | Account Analytic Distribution Required
 [account_analytic_line_name_text](account_analytic_line_name_text/) | 12.0.1.0.0 |  | Changes account analytic line name field to Text.

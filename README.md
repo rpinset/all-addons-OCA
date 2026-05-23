@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-05-20 16:01 UTC** (elapsed 103s)
+Last build: **2026-05-23 21:30 UTC** (elapsed 139s)
 
 - Repos integrated: **116**
-- Canonical modules: **2221**
+- Canonical modules: **2222**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **138**
 
@@ -11,7 +11,7 @@ Last build: **2026-05-20 16:01 UTC** (elapsed 103s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [account-analytic](https://github.com/OCA/account-analytic) | 23 | eec2678 2026-03-02 Anxo López Rodríguez Translated using Weblate (Galician) |
+| [account-analytic](https://github.com/OCA/account-analytic) | 24 | 47c2733 2026-05-22 OCA-git-bot [BOT] post-merge updates |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 2 | eff7e5b 2024-09-11 mymage Translated using Weblate (Italian) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 3b629dc 2025-05-06 mymage Translated using Weblate (Italian) |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 8d9c0ab 2023-10-09 Weblate Update translation files |
