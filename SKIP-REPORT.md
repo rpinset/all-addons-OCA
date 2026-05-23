@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-05-20 16:10 UTC
+Generated 2026-05-23 21:37 UTC
 
-Total skipped: **162**
+Total skipped: **160**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **138**
+Count: **136**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -73,7 +73,6 @@ Count: **138**
 | [e-learning](https://github.com/OCA/e-learning) | [19.0](https://github.com/OCA/e-learning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
-| [event](https://github.com/OCA/event) | [19.0](https://github.com/OCA/event/tree/19.0) | No directory with __manifest__.py at repo root |
 | [geospatial](https://github.com/OCA/geospatial) | [19.0](https://github.com/OCA/geospatial/tree/19.0) | No directory with __manifest__.py at repo root |
 | [helpdesk](https://github.com/OCA/helpdesk) | [19.0](https://github.com/OCA/helpdesk/tree/19.0) | No directory with __manifest__.py at repo root |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | [19.0](https://github.com/OCA/hr-attendance/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -146,7 +145,6 @@ Count: **138**
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [19.0](https://github.com/OCA/shoppingfeed/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | [19.0](https://github.com/OCA/sign/tree/19.0) | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | [19.0](https://github.com/OCA/spreadsheet/tree/19.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | [19.0](https://github.com/OCA/stock-logistics-availability/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [19.0](https://github.com/OCA/stock-logistics-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [19.0](https://github.com/OCA/stock-logistics-putaway/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [19.0](https://github.com/OCA/stock-logistics-release-channel/tree/19.0) | No directory with __manifest__.py at repo root |

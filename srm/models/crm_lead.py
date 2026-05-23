@@ -10,7 +10,7 @@ class CrmLead(models.Model):
     _inherit = "crm.lead"
 
     user_id = fields.Many2one(string="Responsible")
-    team_id = fields.Many2one(string="Team")
+    team_id = fields.Many2one()
 
     request_type = fields.Selection(
         selection=[

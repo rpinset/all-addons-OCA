@@ -10,6 +10,7 @@ msgstr ""
 "PO-Revision-Date: 2026-01-08 13:16+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -72,22 +73,29 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid ""
-"<span class=\"o_form_label\">Aging details can be shown in the report, expressed in\n"
+"<span class=\"o_form_label\">Aging details can be shown in the report, "
+"expressed in\n"
 "                        aging\n"
-"                        buckets, so the partner can review how much is open, due or overdue.\n"
+"                        buckets, so the partner can review how much is open, "
+"due or overdue.\n"
 "                    </span>"
 msgstr ""
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The activity statement provides details of all activity on\n"
-"                    a partner's receivables and payables between two selected dates. This includes\n"
+"<span class=\"o_form_label\">The activity statement provides details of all "
+"activity on\n"
+"                    a partner's receivables and payables between two "
+"selected dates. This includes\n"
 "                    all invoices,\n"
-"                    refunds and payments. Any outstanding balance dated prior to the chosen\n"
+"                    refunds and payments. Any outstanding balance dated "
+"prior to the chosen\n"
 "                    statement\n"
-"                    period will appear as a forward balance at the top of the statement. The list is\n"
-"                    displayed in chronological order and is split by currencies.\n"
+"                    period will appear as a forward balance at the top of "
+"the statement. The list is\n"
+"                    displayed in chronological order and is split by "
+"currencies.\n"
 "                </span>\n"
 "                <br/>\n"
 "                <br/>"
@@ -96,9 +104,12 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.detailed_activity_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The detailed activity statement is an extension of the\n"
-"                    activity statement, and intends to explain the transactions\n"
-"                    that have happened during the period, also providing with a Prior Balance\n"
+"<span class=\"o_form_label\">The detailed activity statement is an extension "
+"of the\n"
+"                    activity statement, and intends to explain the "
+"transactions\n"
+"                    that have happened during the period, also providing "
+"with a Prior Balance\n"
 "                    section and an Ending Balance section.\n"
 "                </span>\n"
 "                <br/>\n"
@@ -108,11 +119,14 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The outstanding statement provides details of all partner's\n"
+"<span class=\"o_form_label\">The outstanding statement provides details of "
+"all partner's\n"
 "                    outstanding\n"
-"                    receivables and payables up to a particular date. This includes all unpaid\n"
+"                    receivables and payables up to a particular date. This "
+"includes all unpaid\n"
 "                    invoices, unclaimed\n"
-"                    refunds and outstanding payments. The list is displayed in chronological order\n"
+"                    refunds and outstanding payments. The list is displayed "
+"in chronological order\n"
 "                    and is\n"
 "                    split by currencies.\n"
 "                </span>\n"
@@ -226,8 +240,7 @@ msgstr "Skolų intervalai"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Aging Report at %(end)s in %(currency)s"
 msgstr ""
 
@@ -323,9 +336,7 @@ msgstr "Pradžios data"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Date:"
 msgstr ""
 
@@ -366,24 +377,34 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid ""
-"Detailed Statement between %(starting_date)s and %(ending_date)s in "
-"%(currency)s"
+"Detailed Statement between %(starting_date)s and %(ending_date)s in %"
+"(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid ""
-"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in"
-" %(currency)s"
+"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
 msgstr ""
-"Išsami tiekėjo ataskaita nuo %(starting_date)s iki %(ending_date)s,"
-" %(currency)s"
+"Išsami tiekėjo ataskaita nuo %(starting_date)s iki %(ending_date)s, %"
+"(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
 #: model:ir.model.fields,field_description:partner_statement.field_detailed_activity_statement_wizard__display_name
 #: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_activity_statement_xlsx__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_detailed_activity_statement_xlsx__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_outstanding_statement_xlsx__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_statement_common_xlsx__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_activity_statement__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_detailed_activity_statement__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_outstanding_statement__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common__display_name
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__display_name
 msgid "Display Name"
 msgstr "Rodomas pavadinimas"
 
@@ -415,9 +436,8 @@ msgstr "Įjungti OCA Neapmokėtų skolų aktą"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 msgid "Ending Balance"
@@ -457,6 +477,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__id
 #: model:ir.model.fields,field_description:partner_statement.field_detailed_activity_statement_wizard__id
 #: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_activity_statement_xlsx__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_detailed_activity_statement_xlsx__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_outstanding_statement_xlsx__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_p_s_report_statement_common_xlsx__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_activity_statement__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_detailed_activity_statement__id
+#: model:ir.model.fields,field_description:partner_statement.field_report_partner_statement_outstanding_statement__id
+#: model:ir.model.fields,field_description:partner_statement.field_res_config_settings__id
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common__id
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__id
 msgid "ID"
 msgstr ""
 
@@ -669,6 +699,11 @@ msgid "Show only lines due before the selected date"
 msgstr ""
 
 #. module: partner_statement
+#: model:ir.model,name:partner_statement.model_report_p_s_report_statement_common_xlsx
+msgid "Statement Common XLSX Report"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model,name:partner_statement.model_statement_common
 msgid "Statement Reports Common"
 msgstr "Bendros suderinimo ataskaitos"
@@ -681,15 +716,12 @@ msgstr "Bendrų suderinimo ataskaitų vedlys"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-msgid ""
-"Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
+msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement from:"
 msgstr ""
 
@@ -702,17 +734,13 @@ msgstr "Skolų suderinimo aktas"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement of Account from %s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "Statement to:"
 msgstr ""
 
@@ -738,11 +766,10 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid ""
-"Supplier Statement between %(starting_date)s and %(ending_date)s in "
-"%(currency)s"
+"Supplier Statement between %(starting_date)s and %(ending_date)s in %"
+"(currency)s"
 msgstr ""
-"Tiekėjo ataskaita nuo %(starting_date)s iki %(ending_date)s, "
-"%(currency)s"
+"Tiekėjo ataskaita nuo %(starting_date)s iki %(ending_date)s, %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -768,9 +795,7 @@ msgstr "Neapmokėtų skolų akto naudojimas"
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
+#: code:addons/partner_statement/report/report_statement_common_xlsx.py:0
 msgid "VAT:"
 msgstr ""
 

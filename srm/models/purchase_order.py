@@ -9,7 +9,6 @@ class PurchaseOrder(models.Model):
 
     opportunity_id = fields.Many2one(
         comodel_name="crm.lead",
-        string="Opportunity",
         check_company=True,
         domain="""
             [

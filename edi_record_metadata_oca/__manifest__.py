@@ -7,8 +7,8 @@
     "summary": """
     Allow to store metadata for related records.
     """,
-    "version": "19.0.1.0.0",
-    "development_status": "Alpha",
+    "version": "19.0.1.0.1",
+    "development_status": "Beta",
     "license": "LGPL-3",
     "website": "https://github.com/OCA/edi-framework",
     "author": "Camptocamp, Odoo Community Association (OCA)",

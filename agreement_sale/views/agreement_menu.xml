@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Agreement Type -->
+    <menuitem
+        name="Agreement Type"
+        id="agreement.agreement_type_menu_main"
+        parent="agreement.agreement_menu"
+        sequence="45"
+    />
+    <menuitem
+        id="agreement.agreement_type_menu"
+        action="agreement.agreement_type_action"
+        parent="agreement.agreement_type_menu_main"
+        sequence="10"
+        groups="agreement.group_use_agreement_type"
+    />
+</odoo>

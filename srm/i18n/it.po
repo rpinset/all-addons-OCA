@@ -203,6 +203,7 @@ msgstr "SRM"
 
 #. module: srm
 #: model:ir.model,name:srm.model_crm_team
+#: model:ir.model.fields,field_description:srm.field_crm_lead__team_id
 msgid "Sales Team"
 msgstr "Team di vendita"
 
@@ -237,11 +238,6 @@ msgid "Supplier Lead"
 msgstr "Contatto fornitore"
 
 #. module: srm
-#: model:ir.model.fields,field_description:srm.field_crm_lead__team_id
-msgid "Team"
-msgstr "Squadra"
-
-#. module: srm
 #: model:ir.model.fields,help:srm.field_crm_lead__purchase_amount_total
 msgid "Untaxed Total of Confirmed Purchase Orders"
 msgstr "Totale imponibile degli ordini di acquisto confermati"
@@ -261,3 +257,6 @@ msgstr "Fornitori"
 #: code:addons/srm/wizard/srm_opportunity_to_rfq.py:0
 msgid "You can only apply this action from a lead."
 msgstr "Si può applicare questa azione solo da un contatto."
+
+#~ msgid "Team"
+#~ msgstr "Squadra"

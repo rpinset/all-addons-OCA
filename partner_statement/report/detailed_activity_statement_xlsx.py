@@ -149,11 +149,9 @@ class DetailedActivityStatementXslx(models.AbstractModel):
             ]
         )
 
-    def _write_currency_lines(self, row_pos, sheet, partner, currency, data):
-        partner_data = data.get("data", {}).get(partner.id, {})
-        currency_data = partner_data.get("currencies", {}).get(currency.id)
-        account_type = data.get("account_type", False)
-        row_pos += 2
+    def _write_currency_title(
+        self, row_pos, sheet, partner, currency, data, partner_data, account_type
+    ):
         statement_header = data["get_title"](
             partner,
             is_detailed=True,
@@ -165,19 +163,6 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         sheet.merge_range(
             row_pos, 0, row_pos, 6, statement_header, FORMATS["format_left_bold"]
         )
-        row_pos += 1
-        row_pos = self._write_currency_header(row_pos, sheet, partner, currency, data)
-        row_pos += 1
-        row_pos = self._write_currency_subheader(
-            row_pos, sheet, partner, currency, data
-        )
-        for line in currency_data.get("lines"):
-            row_pos += 1
-            row_pos = self._write_currency_line(
-                row_pos, sheet, partner, currency, data, line
-            )
-        row_pos += 1
-        row_pos = self._write_currency_footer(row_pos, sheet, partner, currency, data)
         return row_pos
 
     def _get_currency_prior_header_row_data(self, partner, currency, data):
@@ -295,11 +280,9 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         self._write_row_data(sheet, row_pos, row_data)
         return row_pos
 
-    def _write_currency_prior_lines(self, row_pos, sheet, partner, currency, data):
-        partner_data = data.get("data", {}).get(partner.id, {})
-        currency_data = partner_data.get("currencies", {}).get(currency.id)
-        account_type = data.get("account_type", False)
-        row_pos += 2
+    def _write_currency_prior_title(
+        self, row_pos, sheet, partner, currency, data, partner_data, account_type
+    ):
         statement_header = data["get_title"](
             partner,
             is_detailed=False,
@@ -316,15 +299,33 @@ class DetailedActivityStatementXslx(models.AbstractModel):
             statement_header,
             FORMATS["format_left_bold"],
         )
-        row_pos += 1
-        row_pos = self._write_currency_prior_header(
-            row_pos, sheet, partner, currency, data
-        )
+        return row_pos
+
+    def _iter_currency_prior_lines(
+        self, row_pos, sheet, partner, currency, data, currency_data
+    ):
         for line in currency_data.get("prior_lines"):
             row_pos += 1
             row_pos = self._write_currency_prior_line(
                 row_pos, sheet, partner, currency, data, line
             )
+        return row_pos
+
+    def _write_currency_prior_lines(self, row_pos, sheet, partner, currency, data):
+        partner_data = data.get("data", {}).get(partner.id, {})
+        currency_data = partner_data.get("currencies", {}).get(currency.id)
+        account_type = data.get("account_type", False)
+        row_pos += 2
+        row_pos = self._write_currency_prior_title(
+            row_pos, sheet, partner, currency, data, partner_data, account_type
+        )
+        row_pos += 1
+        row_pos = self._write_currency_prior_header(
+            row_pos, sheet, partner, currency, data
+        )
+        row_pos = self._iter_currency_prior_lines(
+            row_pos, sheet, partner, currency, data, currency_data
+        )
         row_pos += 1
         row_pos = self._write_currency_prior_footer(
             row_pos, sheet, partner, currency, data
@@ -447,11 +448,9 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         self._write_row_data(sheet, row_pos, row_data)
         return row_pos
 
-    def _write_currency_ending_lines(self, row_pos, sheet, partner, currency, data):
-        partner_data = data.get("data", {}).get(partner.id, {})
-        currency_data = partner_data.get("currencies", {}).get(currency.id)
-        account_type = data.get("account_type", False)
-        row_pos += 2
+    def _write_currency_ending_title(
+        self, row_pos, sheet, partner, currency, data, partner_data, account_type
+    ):
         statement_header = data["get_title"](
             partner,
             is_detailed=False,
@@ -468,24 +467,108 @@ class DetailedActivityStatementXslx(models.AbstractModel):
             statement_header,
             FORMATS["format_left_bold"],
         )
-        row_pos += 1
-        row_pos = self._write_currency_ending_header(
-            row_pos, sheet, partner, currency, data
-        )
+        return row_pos
+
+    def _iter_currency_ending_lines(
+        self, row_pos, sheet, partner, currency, data, currency_data
+    ):
         for line in currency_data.get("ending_lines"):
             row_pos += 1
             row_pos = self._write_currency_ending_line(
                 row_pos, sheet, partner, currency, data, line
             )
+        return row_pos
+
+    def _write_currency_ending_lines(self, row_pos, sheet, partner, currency, data):
+        partner_data = data.get("data", {}).get(partner.id, {})
+        currency_data = partner_data.get("currencies", {}).get(currency.id)
+        account_type = data.get("account_type", False)
+        row_pos += 2
+        row_pos = self._write_currency_ending_title(
+            row_pos, sheet, partner, currency, data, partner_data, account_type
+        )
+        row_pos += 1
+        row_pos = self._write_currency_ending_header(
+            row_pos, sheet, partner, currency, data
+        )
+        row_pos = self._iter_currency_ending_lines(
+            row_pos, sheet, partner, currency, data, currency_data
+        )
         row_pos += 1
         row_pos = self._write_currency_ending_footer(
             row_pos, sheet, partner, currency, data
         )
         return row_pos
 
-    def _size_columns(self, sheet, data):
-        for i in range(7):
-            sheet.set_column(0, i, 20)
+    def _setup_currency_money_format(self, workbook, currency):
+        res = super()._setup_currency_money_format(workbook, currency)
+        fc_red = "#DC3545"
+        FORMATS["format_tcell_left_reconciled"] = copy_format(
+            workbook, FORMATS["format_tcell_left"]
+        )
+        FORMATS["format_tcell_left_reconciled"].set_italic(True)
+        FORMATS["format_tcell_left_reconciled"].set_font_size(10)
+        FORMATS["format_tcell_left_reconciled"].set_indent(1)
+        FORMATS["format_tcell_date_left_reconciled"] = copy_format(
+            workbook, FORMATS["format_tcell_date_left"]
+        )
+        FORMATS["format_tcell_date_left_reconciled"].set_italic(True)
+        FORMATS["format_tcell_date_left_reconciled"].set_font_size(10)
+        FORMATS["format_distributed_reconciled"] = copy_format(
+            workbook, FORMATS["format_distributed"]
+        )
+        FORMATS["format_distributed_reconciled"].set_italic(True)
+        FORMATS["format_distributed_reconciled"].set_font_size(10)
+        FORMATS["current_money_format_reconciled"] = copy_format(
+            workbook, FORMATS["current_money_format"]
+        )
+        FORMATS["current_money_format_reconciled"].set_italic(True)
+        FORMATS["current_money_format_reconciled"].set_font_size(10)
+        FORMATS["format_tcell_left_reconciled_outside-date-rank"] = copy_format(
+            workbook, FORMATS["format_tcell_left_reconciled"]
+        )
+        FORMATS["format_tcell_left_reconciled_outside-date-rank"].set_font_color(fc_red)
+        FORMATS["format_tcell_date_left_reconciled_outside-date-rank"] = copy_format(
+            workbook, FORMATS["format_tcell_date_left_reconciled"]
+        )
+        FORMATS["format_tcell_date_left_reconciled_outside-date-rank"].set_font_color(
+            fc_red
+        )
+        FORMATS["format_distributed_reconciled_outside-date-rank"] = copy_format(
+            workbook, FORMATS["format_distributed_reconciled"]
+        )
+        FORMATS["format_distributed_reconciled_outside-date-rank"].set_font_color(
+            fc_red
+        )
+        FORMATS["current_money_format_reconciled_outside-date-rank"] = copy_format(
+            workbook, FORMATS["current_money_format_reconciled"]
+        )
+        FORMATS["current_money_format_reconciled_outside-date-rank"].set_font_color(
+            fc_red
+        )
+        return res
+
+    def _iter_partner_currencies(self, workbook, sheet, row_pos, data, partner):
+        partner_data = data.get("data", {}).get(partner.id)
+        currencies = partner_data.get("currencies", {}).keys()
+        if currencies:
+            row_pos += 1
+        for currency_id in currencies:
+            currency = self.env["res.currency"].browse(currency_id)
+            self._setup_currency_money_format(workbook, currency)
+            row_pos = self._write_currency_prior_lines(
+                row_pos, sheet, partner, currency, data
+            )
+            row_pos = self._write_currency_lines(
+                row_pos, sheet, partner, currency, data
+            )
+            row_pos = self._write_currency_ending_lines(
+                row_pos, sheet, partner, currency, data
+            )
+            row_pos = self._write_currency_buckets(
+                row_pos, sheet, partner, currency, data
+            )
+        return row_pos
 
     def generate_xlsx_report(self, workbook, data, objects):
         lang = (
@@ -507,158 +590,12 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         sheet = workbook.add_worksheet(self.env._("Detailed Activity Statement"))
         sheet.set_landscape()
         row_pos = 0
-        sheet.merge_range(
-            row_pos,
-            0,
-            row_pos,
-            6,
-            self.env._("Statement of Account from %s", company.display_name),
-            FORMATS["format_ws_title"],
-        )
-        row_pos += 1
-        sheet.write(
-            row_pos, 1, self.env._("Date:"), FORMATS["format_theader_yellow_right"]
-        )
-        sheet.write(
-            row_pos,
-            2,
-            data.get("data", {}).get(partners.ids[0], {}).get("today"),
-            FORMATS["format_date_left"],
-        )
+        row_pos = self._write_workbook_title(sheet, row_pos, data, company)
+        row_pos = self._write_workbook_date(sheet, row_pos, data, partners)
         self._size_columns(sheet, data)
+        row_pos = self._write_pre_partners(sheet, row_pos, data, partners, company)
         for partner in partners:
-            invoice_address = data.get(
-                "get_inv_addr", lambda x: self.env["res.partner"]
-            )(partner)
-            row_pos += 3
-            sheet.write(
-                row_pos,
-                1,
-                self.env._("Statement to:"),
-                FORMATS["format_theader_yellow_right"],
+            row_pos = self._write_partner(
+                workbook, sheet, row_pos, data, partner, company
             )
-            sheet.merge_range(
-                row_pos,
-                2,
-                row_pos,
-                3,
-                invoice_address.display_name,
-                FORMATS["format_left"],
-            )
-            if invoice_address.vat:
-                sheet.write(
-                    row_pos,
-                    4,
-                    self.env._("VAT:"),
-                    FORMATS["format_theader_yellow_right"],
-                )
-                sheet.write(
-                    row_pos,
-                    5,
-                    invoice_address.vat,
-                    FORMATS["format_left"],
-                )
-            row_pos += 1
-            sheet.write(
-                row_pos,
-                1,
-                self.env._("Statement from:"),
-                FORMATS["format_theader_yellow_right"],
-            )
-            sheet.merge_range(
-                row_pos,
-                2,
-                row_pos,
-                3,
-                company.partner_id.display_name,
-                FORMATS["format_left"],
-            )
-            if company.vat:
-                sheet.write(
-                    row_pos,
-                    4,
-                    self.env._("VAT:"),
-                    FORMATS["format_theader_yellow_right"],
-                )
-                sheet.write(
-                    row_pos,
-                    5,
-                    company.vat,
-                    FORMATS["format_left"],
-                )
-            partner_data = data.get("data", {}).get(partner.id)
-            currencies = partner_data.get("currencies", {}).keys()
-            if currencies:
-                row_pos += 1
-            for currency_id in currencies:
-                currency = self.env["res.currency"].browse(currency_id)
-                if currency.position == "after":
-                    money_string = (
-                        "#,##0.%s " % ("0" * currency.decimal_places)
-                        + f"[${currency.symbol}]"
-                    )
-                elif currency.position == "before":
-                    money_string = f"[${currency.symbol}]" + " #,##0.%s" % (
-                        "0" * currency.decimal_places
-                    )
-                FORMATS["current_money_format"] = workbook.add_format(
-                    {"align": "right", "num_format": money_string}
-                )
-                fc_red = "#DC3545"
-                FORMATS["format_tcell_left_reconciled"] = copy_format(
-                    workbook, FORMATS["format_tcell_left"]
-                )
-                FORMATS["format_tcell_left_reconciled"].set_italic(True)
-                FORMATS["format_tcell_left_reconciled"].set_font_size(10)
-                FORMATS["format_tcell_left_reconciled"].set_indent(1)
-                FORMATS["format_tcell_date_left_reconciled"] = copy_format(
-                    workbook, FORMATS["format_tcell_date_left"]
-                )
-                FORMATS["format_tcell_date_left_reconciled"].set_italic(True)
-                FORMATS["format_tcell_date_left_reconciled"].set_font_size(10)
-                FORMATS["format_distributed_reconciled"] = copy_format(
-                    workbook, FORMATS["format_distributed"]
-                )
-                FORMATS["format_distributed_reconciled"].set_italic(True)
-                FORMATS["format_distributed_reconciled"].set_font_size(10)
-                FORMATS["current_money_format_reconciled"] = copy_format(
-                    workbook, FORMATS["current_money_format"]
-                )
-                FORMATS["current_money_format_reconciled"].set_italic(True)
-                FORMATS["current_money_format_reconciled"].set_font_size(10)
-                FORMATS["format_tcell_left_reconciled_outside-date-rank"] = copy_format(
-                    workbook, FORMATS["format_tcell_left_reconciled"]
-                )
-                FORMATS[
-                    "format_tcell_left_reconciled_outside-date-rank"
-                ].set_font_color(fc_red)
-                FORMATS["format_tcell_date_left_reconciled_outside-date-rank"] = (
-                    copy_format(workbook, FORMATS["format_tcell_date_left_reconciled"])
-                )
-                FORMATS[
-                    "format_tcell_date_left_reconciled_outside-date-rank"
-                ].set_font_color(fc_red)
-                FORMATS["format_distributed_reconciled_outside-date-rank"] = (
-                    copy_format(workbook, FORMATS["format_distributed_reconciled"])
-                )
-                FORMATS[
-                    "format_distributed_reconciled_outside-date-rank"
-                ].set_font_color(fc_red)
-                FORMATS["current_money_format_reconciled_outside-date-rank"] = (
-                    copy_format(workbook, FORMATS["current_money_format_reconciled"])
-                )
-                FORMATS[
-                    "current_money_format_reconciled_outside-date-rank"
-                ].set_font_color(fc_red)
-                row_pos = self._write_currency_prior_lines(
-                    row_pos, sheet, partner, currency, data
-                )
-                row_pos = self._write_currency_lines(
-                    row_pos, sheet, partner, currency, data
-                )
-                row_pos = self._write_currency_ending_lines(
-                    row_pos, sheet, partner, currency, data
-                )
-                row_pos = self._write_currency_buckets(
-                    row_pos, sheet, partner, currency, data
-                )
+        row_pos = self._write_post_partners(sheet, row_pos, data, partners, company)

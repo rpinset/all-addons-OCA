@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-05-20 16:10 UTC
+Generated 2026-05-23 21:37 UTC
 
 ## Skipped repos
 
@@ -43,7 +43,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [e-learning](https://github.com/OCA/e-learning) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
-| [event](https://github.com/OCA/event) | `no_module` | No directory with __manifest__.py at repo root |
 | [geospatial](https://github.com/OCA/geospatial) | `no_module` | No directory with __manifest__.py at repo root |
 | [helpdesk](https://github.com/OCA/helpdesk) | `no_module` | No directory with __manifest__.py at repo root |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | `no_module` | No directory with __manifest__.py at repo root |
@@ -137,7 +136,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | `no_module` | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |

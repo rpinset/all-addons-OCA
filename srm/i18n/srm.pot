@@ -200,6 +200,7 @@ msgstr ""
 
 #. module: srm
 #: model:ir.model,name:srm.model_crm_team
+#: model:ir.model.fields,field_description:srm.field_crm_lead__team_id
 msgid "Sales Team"
 msgstr ""
 
@@ -231,11 +232,6 @@ msgstr ""
 #. module: srm
 #: model:ir.model.fields.selection,name:srm.selection__crm_lead__request_type__supplier
 msgid "Supplier Lead"
-msgstr ""
-
-#. module: srm
-#: model:ir.model.fields,field_description:srm.field_crm_lead__team_id
-msgid "Team"
 msgstr ""
 
 #. module: srm
