@@ -9,19 +9,20 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-30 16:31+0000\n"
-"PO-Revision-Date: 2018-03-30 02:39+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2018\n"
+"PO-Revision-Date: 2026-05-23 04:48+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_invoice_constraint_chronology
 #: model:ir.model.fields,field_description:account_invoice_constraint_chronology.field_account_journal__check_chronology
 msgid "Check Chronology"
-msgstr ""
+msgstr "Comprobar Cronoloxía"
 
 #. module: account_invoice_constraint_chronology
 #: code:addons/account_invoice_constraint_chronology/model/account_move.py:0
@@ -30,6 +31,8 @@ msgid ""
 "Chronology conflict: A conflicting draft invoice dated before {date_invoice} "
 "exists, please validate it first."
 msgstr ""
+"Conflito na cronoloxía: Existe unha factura borrador en conflito con data de "
+"factura anterior {dáche_invoice} , por favor valídaa antes de continuar."
 
 #. module: account_invoice_constraint_chronology
 #: code:addons/account_invoice_constraint_chronology/model/account_move.py:0
@@ -38,6 +41,8 @@ msgid ""
 "Chronology conflict: A conflicting validated invoice dated after "
 "{date_invoice} exists."
 msgstr ""
+"Conflito na cronoloxía: Existe unha factura validada en conflito con data de "
+"factura {dáche_invoice} posterior."
 
 #. module: account_invoice_constraint_chronology
 #: code:addons/account_invoice_constraint_chronology/model/account_move.py:0
@@ -46,16 +51,18 @@ msgid ""
 "Chronology conflict: An invoice with a higher number {highest_name} dated "
 "before {date_invoice} exists."
 msgstr ""
+"Conflito na cronoloxía: Existe unha factura cun número superior "
+"{highest_name} e con data de factura anterior {dáche_invoice}."
 
 #. module: account_invoice_constraint_chronology
 #: model:ir.model,name:account_invoice_constraint_chronology.model_account_journal
 msgid "Journal"
-msgstr ""
+msgstr "Diario"
 
 #. module: account_invoice_constraint_chronology
 #: model:ir.model,name:account_invoice_constraint_chronology.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Entrada Diaria"
 
 #~ msgid "Invoice"
 #~ msgstr "Factura"

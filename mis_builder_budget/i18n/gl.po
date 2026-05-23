@@ -1,0 +1,600 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mis_builder_budget
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 18:46+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
+#, python-format
+msgid "%(rec_name)s is not within budget %(budget_name)s date range."
+msgstr ""
+"%(rec_name)s non se atopa dentro do intervalo de datas do orzamento %"
+"(budget_name)s."
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
+#, python-format
+msgid "%(rec_name)s overlaps %(res_name)s in budget %(budget_name)s"
+msgstr ""
+"%(rec_name)s non se atopa%(res_name)s dentro do intervalo de datas do "
+"orzamento %(budget_name)s"
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_abstract.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (copia)"
+
+#. module: mis_builder_budget
+#: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
+#, python-format
+msgid "%s start date must not be after end date"
+msgstr "A data de inicio de %s non pode ser posterior á data de fin"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__account_id
+msgid "Account"
+msgstr "Conta"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_needaction
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_needaction
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_needaction
+msgid "Action Needed"
+msgstr "Acción Necesaria"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_report_instance_period__source
+msgid ""
+"Actuals: current data, from accounting and other queries.\n"
+"Actuals (alternative): current data from an alternative source (eg a database view providing look-alike account move lines).\n"
+"Sum columns: summation (+/-) of other columns.\n"
+"Compare to column: compare to other column.\n"
+msgstr ""
+"Actuais: datos actuais, procedentes da contabilidade e doutras consultas.\n"
+"Reais (alternativos): datos actuais procedentes dunha fonte alternativa (por "
+"exemplo, unha vista de base de datos que proporcione liñas de movemento de "
+"contas similares).\n"
+"Suma de columnas: suma (+/-) doutras columnas.\n"
+"Comparar con columna: comparar con outra columna.\n"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__allow_items_overlap
+msgid "Allow Items Overlap"
+msgstr "Permitir o solapamento de elementos"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_tag_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__analytic_tag_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__analytic_tag_ids
+msgid "Analytic Tags"
+msgstr "Etiquetas analíticas"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_account_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__analytic_account_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__analytic_account_id
+msgid "Analytic account"
+msgstr "Conta analítica"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_attachment_count
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_attachment_count
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conta de arquivos adxuntos"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__balance
+msgid "Balance"
+msgstr "Equilibrar"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__budget_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__budget_id
+msgid "Budget"
+msgstr "Orzamento"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__budget_date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__budget_date_from
+msgid "Budget Date From"
+msgstr "Data de orzamento desde"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__budget_date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__budget_date_to
+msgid "Budget Date To"
+msgstr "Data de orzamento ata"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__source_mis_budget_by_account_id
+msgid "Budget by Account"
+msgstr "Orzamento por conta"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__source_mis_budget_id
+msgid "Budget by KPI"
+msgstr "Orzamento por KPI"
+
+#. module: mis_builder_budget
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
+msgid "Budget items"
+msgstr "Elementos do orzamento"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi__budgetable
+msgid "Budgetable"
+msgstr "Presupuestable"
+
+#. module: mis_builder_budget
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget__state__cancelled
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_abstract__state__cancelled
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_by_account__state__cancelled
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__company_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__company_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__company_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__company_currency_id
+msgid "Company Currency"
+msgstr "Moeda da empresa"
+
+#. module: mis_builder_budget
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget__state__confirmed
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_abstract__state__confirmed
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_by_account__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__create_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__create_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__create_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__create_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__create_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__create_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__credit
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__date
+msgid "Date"
+msgstr "Data"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__date_range_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__date_range_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__date_range_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__date_range_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__date_range_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__date_range_id
+msgid "Date range"
+msgstr "Rango de data"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__debit
+msgid "Debit"
+msgstr "Debe"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__description
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__description
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__description
+msgid "Description"
+msgstr "Descrición"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__display_name
+msgid "Display Name"
+msgstr "Nome mostrado"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget__state__draft
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_abstract__state__draft
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_by_account__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account_item__date
+msgid ""
+"Dummy field that adapts searches on date to searches on date_from/date_to."
+msgstr ""
+"Campo ficticio que adapta as procuras en data a procuras en dáche_from / "
+"dáche_to."
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_follower_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_follower_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_partner_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_partner_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__date_from
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__date_from
+msgid "From"
+msgstr "Desde"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__has_message
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__has_message
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__has_message
+msgid "Has Message"
+msgstr "Ten Mensaxe"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_needaction
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_unread
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_needaction
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_unread
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_needaction
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Se está marcado, as novas mensaxes requiren a súa atención."
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__allow_items_overlap
+msgid "If checked, overlap between budget items is allowed"
+msgstr "Se está marcada, permítese o solapamento entre partidas orzamentarias"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_has_error
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_has_error
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se está marcado, algunhas mensaxes teñen un erro na entrega."
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_is_follower
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_is_follower
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_is_follower
+msgid "Is Follower"
+msgstr "É seguidor"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__item_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__item_ids
+msgid "Item"
+msgstr "Obxecto"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__kpi_expression_id
+msgid "KPI"
+msgstr "KPI"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__seq1
+msgid "KPI Sequence"
+msgstr "KPI de Secuencia"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__name
+msgid "Label"
+msgstr "etiqueta"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget____last_update
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account____last_update
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item____last_update
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__write_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__write_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__write_uid
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__write_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__write_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__write_date
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget_abstract
+msgid "MIS Budget (Abstract Base Class)"
+msgstr "Orzamento Os meus (Clase basee abstracta)"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget_item_abstract
+msgid "MIS Budget Item (Abstract Base Class)"
+msgstr "Partida orzamentaria As miñas (clase basee abstracta)"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget_by_account_item
+msgid "MIS Budget Item (by Account)"
+msgstr "Partida orzamentaria das miñas (por conta)"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget_item
+msgid "MIS Budget Item (by KPI)"
+msgstr "Partida orzamentaria As miñas (por KPI)"
+
+#. module: mis_builder_budget
+#: model:ir.actions.act_window,name:mis_builder_budget.mis_budget_item_act_window
+msgid "MIS Budget Items (by KPIs)"
+msgstr "Partidas orzamentarias das miñas (por KPI)"
+
+#. module: mis_builder_budget
+#: model:ir.actions.act_window,name:mis_builder_budget.mis_budget_by_account_item_act_window
+msgid "MIS Budget Items (by accounts)"
+msgstr "Partidas orzamentarias das miñas (por contas)"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget_by_account
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_report_instance_period__source__mis_budget_by_account
+msgid "MIS Budget by Account"
+msgstr "Orzamento Os meus por conta"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_budget
+#: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_report_instance_period__source__mis_budget
+msgid "MIS Budget by KPI"
+msgstr "Orzamento Os meus por KPI"
+
+#. module: mis_builder_budget
+#: model:ir.actions.act_window,name:mis_builder_budget.mis_budget_act_window
+#: model:ir.ui.menu,name:mis_builder_budget.mis_budget_menu
+msgid "MIS Budgets (by KPIs)"
+msgstr "Orzamentos dos meus (por KPIs)"
+
+#. module: mis_builder_budget
+#: model:ir.actions.act_window,name:mis_builder_budget.mis_budget_by_account_act_window
+#: model:ir.ui.menu,name:mis_builder_budget.mis_budget_by_account_menu
+msgid "MIS Budgets (by accounts)"
+msgstr "Orzamentos Os meus (por contas)"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_report_instance
+msgid "MIS Report Instance"
+msgstr "Instancia de informe Os meus"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_report_instance_period
+msgid "MIS Report Instance Period"
+msgstr "Período de instancia do informe Os meus"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_report_kpi
+msgid "MIS Report KPI"
+msgstr "KPI de informe Os meus"
+
+#. module: mis_builder_budget
+#: model:ir.model,name:mis_builder_budget.model_mis_report_kpi_expression
+msgid "MIS Report KPI Expression"
+msgstr "Informe Os meus - KPI Expresión"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__report_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__report_id
+msgid "MIS Report Template"
+msgstr "Modelo de orzamento Os meus"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_main_attachment_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_main_attachment_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adxunto principal"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_has_error
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_has_error
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_has_error
+msgid "Message Delivery error"
+msgstr "Mensaxe de erro na entrega"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_ids
+msgid "Messages"
+msgstr "Mensaxes"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_needaction_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_needaction_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de accións"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_has_error_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_has_error_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de erros"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_needaction_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_needaction_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensaxes que requiren unha acción"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_has_error_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_has_error_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensaxes con erro na entrega"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__message_unread_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__message_unread_counter
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensaxes non lidas"
+
+#. module: mis_builder_budget
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
+msgid "Set draft"
+msgstr "Cambiar a borrador"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__source
+msgid "Source"
+msgstr "Orixe"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__state
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__state
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__state
+msgid "State"
+msgstr "Estado"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__seq2
+msgid "Sub-KPI Sequence"
+msgstr "Sub-KPI Secuencia"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__date_to
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__date_to
+msgid "To"
+msgstr "a"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_unread
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_unread
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_unread
+msgid "Unread Messages"
+msgstr "Mensaxes non lidas"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_unread_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__message_unread_counter
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensaxes non lidas"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account_item__company_currency_id
+msgid "Utility field to express amount currency"
+msgstr "Campo de utilidade para expresar a cantidade de moeda"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__website_message_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__website_message_ids
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__website_message_ids
+msgid "Website Messages"
+msgstr "Mensaxes do sitio web"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget__website_message_ids
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_abstract__website_message_ids
+#: model:ir.model.fields,help:mis_builder_budget.field_mis_budget_by_account__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación do sitio web"
+
+#. module: mis_builder_budget
+#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit2
+msgid ""
+"Wrong credit or debit value in budget item! Credit and debit should be "
+"positive."
+msgstr ""
+"Valor de crédito ou débito incorrecto na partida orzamentaria! O crédito e o "
+"débito deben ser positivos."
+
+#. module: mis_builder_budget
+#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit1
+msgid ""
+"Wrong credit or debit value in budget item! Credit or debit should be zero."
+msgstr ""
+"Valor de crédito ou débito incorrecto na partida orzamentaria! O crédito ou "
+"débito debe ser cero."

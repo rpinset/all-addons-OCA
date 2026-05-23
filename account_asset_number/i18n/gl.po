@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_number
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 05:16+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_asset_number
+#: model:ir.actions.report,print_report_name:account_asset_number.report_account_asset_number
+msgid "'Asset Number - %s' % (object.name)"
+msgstr "'Número de activo - %s' % (object.name)"
+
+#. module: account_asset_number
+#: model_terms:ir.ui.view,arch_db:account_asset_number.report_simple_asset_number
+msgid "<span class=\"text-muted\">No number available</span>"
+msgstr "<span class=\"text-muted\">Ningún número dispoñible</span>"
+
+#. module: account_asset_number
+#: model:ir.model,name:account_asset_number.model_account_asset
+msgid "Asset"
+msgstr "Activo"
+
+#. module: account_asset_number
+#: model:ir.model.fields,field_description:account_asset_number.field_account_asset__number
+msgid "Asset Number"
+msgstr "Número de activo"
+
+#. module: account_asset_number
+#: model:ir.actions.report,name:account_asset_number.report_account_asset_number
+msgid "Asset Number (PDF)"
+msgstr "Número de activo (PDF)"
+
+#. module: account_asset_number
+#: model:ir.model.fields,field_description:account_asset_number.field_account_asset_profile__sequence_id
+msgid "Asset Number Sequence"
+msgstr "Secuencia do número de activo"
+
+#. module: account_asset_number
+#: model:ir.model,name:account_asset_number.model_account_asset_profile
+msgid "Asset profile"
+msgstr "Perfil do activo"
+
+#. module: account_asset_number
+#: model:ir.model.fields,field_description:account_asset_number.field_account_asset__use_sequence
+#: model:ir.model.fields,field_description:account_asset_number.field_account_asset_profile__use_sequence
+msgid "Auto Asset Number by Sequence"
+msgstr "Número de activo automático por secuencia"
+
+#. module: account_asset_number
+#: model_terms:ir.ui.view,arch_db:account_asset_number.report_simple_asset_number
+msgid "Barcode"
+msgstr "Código de Barras"
+
+#. module: account_asset_number
+#: model:ir.model,name:account_asset_number.model_report_account_asset_management_asset_report_xls
+msgid "Dynamic XLS asset report generator"
+msgstr "Xerador dinámico de informes de activos en XLS"
+
+#. module: account_asset_number
+#: model:ir.model.fields,help:account_asset_number.field_account_asset__use_sequence
+#: model:ir.model.fields,help:account_asset_number.field_account_asset_profile__use_sequence
+msgid "If check, asset number auto run by sequence."
+msgstr ""
+"Se está marcada, o número de activo execútase automaticamente por secuencia."
+
+#. module: account_asset_number
+#: code:addons/account_asset_number/report/account_asset_report_xls.py:0
+#, python-format
+msgid "Number"
+msgstr "Número"

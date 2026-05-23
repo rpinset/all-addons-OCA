@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_category_tax
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 18:47+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_category_tax
+#: model_terms:ir.ui.view,arch_db:product_category_tax.product_category_form_view
+msgid "-> Apply to Products"
+msgstr "-> Aplicar a produtos"
+
+#. module: product_category_tax
+#: model:ir.model.fields,field_description:product_category_tax.field_product_category__taxes_id
+msgid "Customer Taxes"
+msgstr "Impostos do Cliente"
+
+#. module: product_category_tax
+#: model:ir.model.fields,help:product_category_tax.field_product_category__supplier_taxes_id
+msgid "Default taxes used when buying the product."
+msgstr "Impostos por defecto utilizados ao comprar o produto."
+
+#. module: product_category_tax
+#: model:ir.model.fields,help:product_category_tax.field_product_category__taxes_id
+msgid "Default taxes used when selling the product."
+msgstr "Impostos por defecto utilizados ao vender o produto."
+
+#. module: product_category_tax
+#: model:ir.model,name:product_category_tax.model_product_product
+msgid "Product"
+msgstr "Produto"
+
+#. module: product_category_tax
+#: model:ir.model,name:product_category_tax.model_product_category
+msgid "Product Category"
+msgstr "Categoría de Produto"
+
+#. module: product_category_tax
+#: model:ir.model,name:product_category_tax.model_product_template
+msgid "Product Template"
+msgstr "Modelo do Produto"
+
+#. module: product_category_tax
+#: model_terms:ir.ui.view,arch_db:product_category_tax.product_category_form_view
+msgid "Taxes"
+msgstr "Impostos"
+
+#. module: product_category_tax
+#: model:ir.model.fields,field_description:product_category_tax.field_product_product__taxes_updeatable_from_category
+#: model:ir.model.fields,field_description:product_category_tax.field_product_template__taxes_updeatable_from_category
+msgid "Taxes Updeatable From Category"
+msgstr "Impostos imputables á categoría"
+
+#. module: product_category_tax
+#: model_terms:ir.ui.view,arch_db:product_category_tax.product_category_form_view
+msgid "This will apply to all products in the category"
+msgstr "Aplicarase a todos os produtos da categoría"
+
+#. module: product_category_tax
+#: model:ir.model.fields,field_description:product_category_tax.field_product_category__supplier_taxes_id
+msgid "Vendor Taxes"
+msgstr "Impostos dos vendedores"

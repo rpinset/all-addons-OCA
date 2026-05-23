@@ -1,0 +1,143 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_move_total_by_account_internal_group
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 05:16+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_asset
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_asset
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_asset
+msgid "Amount Total Signed Account Internal Group Asset"
+msgstr "Importe Total Conta Asinada Grupo Interno Activo"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_equity
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_equity
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_equity
+msgid "Amount Total Signed Account Internal Group Equity"
+msgstr "Importe Total Conta asinada Patrimonio interno do Grupo"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_expense
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_expense
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_expense
+msgid "Amount Total Signed Account Internal Group Expense"
+msgstr "Importe Total Conta asinada Gastos internos do grupo"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_income
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_income
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_income
+msgid "Amount Total Signed Account Internal Group Income"
+msgstr "Importe Total Conta Asinada Ingresos Grupo Interno"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_liability
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_liability
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_liability
+msgid "Amount Total Signed Account Internal Group Liability"
+msgstr "Importe Total Conta asinada Pasivo interno do grupo"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_bank_statement_line__amount_total_signed_account_internal_group_off_balance
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move__amount_total_signed_account_internal_group_off_balance
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_payment__amount_total_signed_account_internal_group_off_balance
+msgid "Amount Total Signed Account Internal Group Off Balance"
+msgstr "Importe Total Conta Asinada Grupo Interno Saldo"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,field_description:account_move_total_by_account_internal_group.field_account_move_line__account_internal_group
+msgid "Internal Group"
+msgstr "Grupo interno"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model,name:account_move_total_by_account_internal_group.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada Diaria"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model,name:account_move_total_by_account_internal_group.model_account_move_line
+msgid "Journal Item"
+msgstr "Artigo Diario"
+
+#. module: account_move_total_by_account_internal_group
+#: model:ir.model.fields,help:account_move_total_by_account_internal_group.field_account_move_line__account_internal_group
+msgid ""
+"The 'Internal Group' is used to filter accounts based on the internal group "
+"set on the account type."
+msgstr ""
+"O \"Grupo interno\" utilízase para filtrar as contas en función do grupo "
+"interno establecido no tipo de conta."
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Asset"
+msgstr "Activo total"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Equity"
+msgstr "Patrimonio neto total"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Expense"
+msgstr "Gasto total"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Income"
+msgstr "Ingresos totais"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Liability"
+msgstr "Pasivo total"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Off Balance"
+msgstr "Total fóra de balance"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Asset"
+msgstr "Total Activo Asinado"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Equity"
+msgstr "Total de fondos propios asinados"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Expense"
+msgstr "Gasto total asinado"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Income"
+msgstr "Ingresos totais asinados"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Liability"
+msgstr "Responsabilidade total asinada"
+
+#. module: account_move_total_by_account_internal_group
+#: model_terms:ir.ui.view,arch_db:account_move_total_by_account_internal_group.view_account_move_user_type_tree
+msgid "Total Signed Off Balance"
+msgstr "Saldo total asinado"

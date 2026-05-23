@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_product_recommendation_xlsx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 18:46+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model,name:purchase_order_product_recommendation_xlsx.model_report_purchase_order_product_recommendation_xlsx_summary
+msgid "Abstract model to export as xlsx the product recommendation"
+msgstr "Modelo abstracto para exportar a recomendación de produtos a xlsx"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#, python-format
+msgid "Date begin:"
+msgstr "Data de inicio:"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#, python-format
+msgid "Date end:"
+msgstr "Data final:"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model_terms:ir.ui.view,arch_db:purchase_order_product_recommendation_xlsx.purchase_order_recommendation_view_form
+msgid "Export"
+msgstr "Exportar"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_virtual_available
+msgid "Forecasted Qty"
+msgstr "Ctd Prevista"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#, python-format
+msgid "PRODUCTS"
+msgstr "PRODUTOS"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__price_unit
+msgid "Price"
+msgstr "Prezo"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#, python-format
+msgid "Product"
+msgstr "Produto"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.actions.report,name:purchase_order_product_recommendation_xlsx.recommendation_xlsx
+msgid "Product Recommendation XLSX"
+msgstr "XLSX de produtos recomendados"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_included
+#, python-format
+msgid "Qty"
+msgstr "Ctd"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_avg_delivered
+msgid "Qty Dlvd./day"
+msgstr "Ctd Entrg./día"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_available
+msgid "Qty On Hand"
+msgstr "Ctd a man"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_received
+msgid "Qty Received"
+msgstr "Ctd recibida"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model.fields,field_description:purchase_order_product_recommendation_xlsx.field_purchase_order_recommendation_line__units_delivered
+msgid "Qty delivered"
+msgstr "Ctd entregada"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model,name:purchase_order_product_recommendation_xlsx.model_purchase_order_recommendation_line
+msgid "Recommended product for current purchase order"
+msgstr "Produto recomendado para o pedido de compra en curso"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: model:ir.model,name:purchase_order_product_recommendation_xlsx.model_purchase_order_recommendation
+msgid "Recommended products for current purchase order"
+msgstr "Produtos recomendados para o pedido de compra en curso"
+
+#. module: purchase_order_product_recommendation_xlsx
+#: code:addons/purchase_order_product_recommendation_xlsx/report/recommendation_xlsx.py:0
+#, python-format
+msgid "Recommended products for supplier:"
+msgstr "Produtos recomendados para o provedor:"

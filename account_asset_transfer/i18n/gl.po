@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_transfer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 05:16+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,help:account_asset_transfer.field_account_asset__can_transfer
+msgid "Allow transfer AUC (running) to Asset"
+msgstr "Permitir transferencia AUC (en curso) a Activo"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__analytic_account_id
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__analytic_account_id
+msgid "Analytic account"
+msgstr "Conta Analítica"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__analytic_tag_ids
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__analytic_tag_ids
+msgid "Analytic tags"
+msgstr "Etiquetas analíticas"
+
+#. module: account_asset_transfer
+#: model:ir.model,name:account_asset_transfer.model_account_asset
+msgid "Asset"
+msgstr "Activo"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_form
+msgid "Asset From"
+msgstr "Activo Desde"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__asset_name
+msgid "Asset Name"
+msgstr "Nome do activo"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__asset_profile_id
+msgid "Asset Profile"
+msgstr "Perfil do activo"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_form
+msgid "Asset To"
+msgstr "Activo a"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/wizard/account_asset_transfer.py:0
+#, python-format
+msgid "Asset Transfer Journal Entry"
+msgstr "Entrada no diario de transferencia de activos"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__asset_value
+msgid "Asset Value"
+msgstr "Valor do activo"
+
+#. module: account_asset_transfer
+#: model:ir.model,name:account_asset_transfer.model_account_asset_profile
+msgid "Asset profile"
+msgstr "Perfil do activo"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/models/account_asset.py:0
+#, python-format
+msgid "Assets"
+msgstr "Activos"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__balance
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset__can_transfer
+msgid "Can Transfer"
+msgstr "Pode transferir"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_search
+msgid "Can be transferred"
+msgstr "Pódese transferir"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__create_uid
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__create_date
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__create_date
+msgid "Created on"
+msgstr "Creado o"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__currency_id
+msgid "Currency"
+msgstr "Divisa"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__display_name
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__display_name
+msgid "Display Name"
+msgstr "Mostrar Nome"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "Expand Asset"
+msgstr "Ampliar activos"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "From"
+msgstr "Desde"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__from_asset_ids
+msgid "From Asset(s)"
+msgstr "Desde Activo(s)"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__from_asset_value
+msgid "From Value"
+msgstr "Desde Valor"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__id
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset__is_transfer
+msgid "Is Transfer"
+msgstr "É Transferencia"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer____last_update
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line____last_update
+msgid "Last Modified on"
+msgstr "Última Modifiación en"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__write_uid
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__write_date
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización o"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__note
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "Notes"
+msgstr "Notas"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/models/account_asset.py:0
+#, python-format
+msgid "Only running assets without depreciation (AUC) can transfer"
+msgstr "Só poden transferirse os activos circulantes sen amortización (AUC)"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__partner_id
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__partner_id
+msgid "Partner"
+msgstr "Socio"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__quantity
+msgid "Quantity"
+msgstr "Cantidade"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_form
+msgid ""
+"There are no journal entries on current asset(s), asset transfer will use "
+"account settings from the asset/asset profile instead."
+msgstr ""
+"Non hai asentos nos activos actuais, a transferencia de activos utilizará no "
+"seu lugar os axustes de conta do perfil de activo/activo."
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__to_asset_ids
+msgid "To Asset(s)"
+msgstr "A Activo(s)"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "To New Asset"
+msgstr "Ao novo activo"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__to_asset_value
+msgid "To Value"
+msgstr "Para valorar"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/wizard/account_asset_transfer.py:0
+#, python-format
+msgid "Total values of new assets must equal to source assets"
+msgstr "O valor total dos activos novos debe ser igual ao dos activos de orixe"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__transfer_id
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_form
+msgid "Transfer"
+msgstr "Transferencia"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/models/account_asset.py:0
+#, python-format
+msgid "Transfer AUC to Asset & Create Transfer Journal Entry"
+msgstr "Transferir AUC a activo e crear asento de transferencia"
+
+#. module: account_asset_transfer
+#: model:ir.actions.act_window,name:account_asset_transfer.action_account_asset_transfer
+#: model:ir.actions.server,name:account_asset_transfer.action_asset_transfer_from_list
+#: model:ir.model,name:account_asset_transfer.model_account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_transfer_view_form
+msgid "Transfer Asset"
+msgstr "Transferencia de activos"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__date_transfer
+msgid "Transfer Date"
+msgstr "Data de transferencia"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_profile__transfer_journal_id
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer__transfer_journal_id
+msgid "Transfer Journal"
+msgstr "Diario de transferencia"
+
+#. module: account_asset_transfer
+#: model:ir.model,name:account_asset_transfer.model_account_asset_transfer_line
+msgid "Transfer To Asset"
+msgstr "Transferencia a activos"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_form
+msgid "Transfer asset from AUC to Asset"
+msgstr "Transferir activo de AUC a Activo"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,help:account_asset_transfer.field_account_asset_transfer__date_transfer
+msgid "Transfer date must be after the asset journal entry"
+msgstr "A data de transferencia debe ser posterior ao asento do activo"
+
+#. module: account_asset_transfer
+#: model_terms:ir.ui.view,arch_db:account_asset_transfer.account_asset_view_search
+msgid "Transferable"
+msgstr "Transferible"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,field_description:account_asset_transfer.field_account_asset_transfer_line__price_unit
+msgid "Unit Price"
+msgstr "Prezo Unitario"
+
+#. module: account_asset_transfer
+#: code:addons/account_asset_transfer/wizard/account_asset_transfer.py:0
+#, python-format
+msgid "Value of new asset must greater than 0.0"
+msgstr "O valor do novo activo debe ser superior a 0,0"
+
+#. module: account_asset_transfer
+#: model:ir.model.fields,help:account_asset_transfer.field_account_asset__is_transfer
+msgid ""
+"flag indicating if the asset has been transferred from/to another asset."
+msgstr "que indica se o activo foi transferido de/a outro activo."

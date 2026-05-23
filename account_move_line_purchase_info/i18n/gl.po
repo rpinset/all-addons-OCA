@@ -9,53 +9,54 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-01 04:03+0000\n"
-"PO-Revision-Date: 2017-03-01 04:03+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-05-23 04:49+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entry_ids
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_move_line_journal_entries_form
 msgid "Journal Entries"
-msgstr ""
+msgstr "Entradas diarias"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entries_count
 msgid "Journal Entries Count"
-msgstr ""
+msgstr "Reconto de entradas diarias"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Apuntamento contable"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_purchase_order
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_account_move_line__purchase_order_id
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_account_move_line_filter
 msgid "Purchase Order"
-msgstr ""
+msgstr "Orde de compra"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_purchase_order_line
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_account_move_line_filter
 msgid "Purchase Order Line"
-msgstr ""
+msgstr "Liña orde de compra"
 
 #. module: account_move_line_purchase_info
 #: model:res.groups,name:account_move_line_purchase_info.group_account_move_purchase_info
 msgid "Purchase info in Journal Items"
-msgstr ""
+msgstr "Información de compra nos artigos do diario"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_stock_move
 msgid "Stock Move"
-msgstr ""
+msgstr "Movemento de existencias"
 
 #~ msgid "Invoice"
 #~ msgstr "Factura"
