@@ -27,11 +27,16 @@ def copy_register_balance(cr):
     openupgrade.logged_query(
         cr,
         """
-        UPDATE pos_session session
-        SET cash_register_balance_end_real=statement.balance_end_real,
-            cash_register_balance_start=statement.balance_start
-        FROM account_bank_statement statement
-        WHERE statement.pos_session_id=session.id
+        update pos_session as ps
+        set
+            cash_register_balance_end_real = coalesce(abs.balance_end_real, 0),
+            cash_register_balance_start = coalesce(abs.balance_start, 0)
+        from pos_session as ps2
+        left outer join account_bank_statement as abs on
+            abs.pos_session_id = ps2.id and
+            abs.journal_id = ps2.cash_journal_id
+        where
+            ps2.id = ps.id
         """,
     )
 

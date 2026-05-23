@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_partner_required
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:14+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_partner_required
+#: model:ir.model,name:account_partner_required.model_account_account
+msgid "Account"
+msgstr "Conta"
+
+#. module: account_partner_required
+#: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__always
+msgid "Always"
+msgstr "Sempre"
+
+#. module: account_partner_required
+#: model:ir.model,name:account_partner_required.model_account_move_line
+msgid "Journal Item"
+msgstr "Artigo Diario"
+
+#. module: account_partner_required
+#: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__never
+msgid "Never"
+msgstr "Nunca"
+
+#. module: account_partner_required
+#: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__optional
+msgid "Optional"
+msgstr "Opcional"
+
+#. module: account_partner_required
+#: model:ir.model.fields,field_description:account_partner_required.field_account_account__partner_policy
+#: model_terms:ir.ui.view,arch_db:account_partner_required.view_account_search
+msgid "Partner Policy"
+msgstr "Política de Socio"
+
+#. module: account_partner_required
+#. odoo-python
+#: code:addons/account_partner_required/models/account_move_line.py:0
+#, python-format
+msgid ""
+"Partner policy is set to 'Always' on account '%(account)s' but the partner "
+"is missing on the journal item '%(move_line)s'."
+msgstr ""
+"A política de socio está establecida en \"Sempre\" na conta \"%(account)s\", "
+"pero falta o socio na partida \"%(move_line)s\"."
+
+#. module: account_partner_required
+#. odoo-python
+#: code:addons/account_partner_required/models/account_move_line.py:0
+#, python-format
+msgid ""
+"Partner policy is set to 'Never' on account '%(account)s' but the journal "
+"item '%(move_line)s' has the partner '%(partner)s'."
+msgstr ""
+"A política de socios está establecida en \"Nunca\" na conta \"%(account)s\" "
+"pero o artigo do diario \"%(move_line)s\" ten o socio \"%(partner)s\"."
+
+#. module: account_partner_required
+#: model:ir.model.fields,help:account_partner_required.field_account_account__partner_policy
+msgid ""
+"Set the policy for the partner field:\n"
+"if you select 'Optional', the accountant is free to put a partner on journal items with this account ;\n"
+"if you select 'Always', the accountant will get an error message if there is no partner ;\n"
+"if you select 'Never', the accountant will get an error message if a partner is present."
+msgstr ""
+"Estableza a política para o campo socio:\n"
+"se selecciona 'Opcional', o contable é libre de poñer un socio nas partidas "
+"de diario con esta conta ;\n"
+"Se selecciona \"Sempre\", o contable recibirá unha mensaxe de erro se non "
+"hai ningún interlocutor;\n"
+"se selecciona \"Nunca\", o contable recibirá unha mensaxe de erro se hai un "
+"socio."

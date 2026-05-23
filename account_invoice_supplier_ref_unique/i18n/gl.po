@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-29 02:39+0000\n"
-"PO-Revision-Date: 2026-05-11 20:45+0000\n"
-"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
+"PO-Revision-Date: 2026-05-23 04:18+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -42,17 +42,17 @@ msgstr ""
 #. module: account_invoice_supplier_ref_unique
 #: model_terms:ir.ui.view,arch_db:account_invoice_supplier_ref_unique.res_config_settings_form_view
 msgid "Check whether the supplier invoice number is unique"
-msgstr ""
+msgstr "Comprobe se o número de factura do provedor é único"
 
 #. module: account_invoice_supplier_ref_unique
 #: model:ir.model,name:account_invoice_supplier_ref_unique.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Compañías"
 
 #. module: account_invoice_supplier_ref_unique
 #: model:ir.model,name:account_invoice_supplier_ref_unique.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Configuración de Axustes"
 
 #. module: account_invoice_supplier_ref_unique
 #: model_terms:ir.ui.view,arch_db:account_invoice_supplier_ref_unique.res_config_settings_form_view
@@ -60,11 +60,13 @@ msgid ""
 "If you check this box, the system verifies that supplier invoice number is "
 "unique across the system."
 msgstr ""
+"Se marca esta casa, o sistema verifica que o número de factura do provedor é "
+"único en todo o sistema."
 
 #. module: account_invoice_supplier_ref_unique
 #: model:ir.model,name:account_invoice_supplier_ref_unique.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Entrada Diaria"
 
 #. module: account_invoice_supplier_ref_unique
 #. odoo-python
@@ -74,13 +76,15 @@ msgid ""
 "The invoice/refund with supplier invoice number %(number)s already exists in "
 "Odoo under the number %(same)s for supplier %(supplier)s."
 msgstr ""
+"A factura/reembolso co número de factura do provedor %(number)s xa existe en "
+"Odoo co número %(same)s para o provedor %(supplier)s."
 
 #. module: account_invoice_supplier_ref_unique
 #: model:ir.model.fields,field_description:account_invoice_supplier_ref_unique.field_account_bank_statement_line__supplier_invoice_number
 #: model:ir.model.fields,field_description:account_invoice_supplier_ref_unique.field_account_move__supplier_invoice_number
 #: model:ir.model.fields,field_description:account_invoice_supplier_ref_unique.field_account_payment__supplier_invoice_number
 msgid "Vendor invoice number"
-msgstr ""
+msgstr "Número de factura de provedor"
 
 #~ msgid "Invoice"
 #~ msgstr "Factura"

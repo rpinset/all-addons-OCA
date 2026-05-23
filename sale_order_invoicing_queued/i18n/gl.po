@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_invoicing_queued
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:27+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_order_invoicing_queued
+#: model_terms:ir.ui.view,arch_db:sale_order_invoicing_queued.view_queue_job_sale_order_invoicing
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sale_order_invoicing_queued
+#: model_terms:ir.ui.view,arch_db:sale_order_invoicing_queued.view_sale_advance_payment_inv
+msgid "Enqueue Invoicing"
+msgstr "Encolar facturación"
+
+#. module: sale_order_invoicing_queued
+#: model:ir.model.fields,field_description:sale_order_invoicing_queued.field_sale_order__invoicing_job_ids
+#: model_terms:ir.ui.view,arch_db:sale_order_invoicing_queued.view_order_form_invoicing_queued
+msgid "Invoicing Jobs"
+msgstr "Traballos de facturación"
+
+#. module: sale_order_invoicing_queued
+#: model_terms:ir.ui.view,arch_db:sale_order_invoicing_queued.view_queue_job_sale_order_invoicing
+msgid "Requeue"
+msgstr "Volver poñer en cola"
+
+#. module: sale_order_invoicing_queued
+#: model:ir.model,name:sale_order_invoicing_queued.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Vendas. Anticipo pago factura"
+
+#. module: sale_order_invoicing_queued
+#: model:ir.model,name:sale_order_invoicing_queued.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venda"
+
+#. module: sale_order_invoicing_queued
+#. odoo-python
+#: code:addons/sale_order_invoicing_queued/wizards/sale_advance_payment_inv.py:0
+#, python-format
+msgid ""
+"There's already an enqueued job for invoicing the sales order %s. Please "
+"wait until it's finished or remove it from the selection."
+msgstr ""
+"Xa existe un traballo encolado para facturar o pedido de venda %s. Por favor "
+"espera ata que terminase ou elimine o pedido da selección."

@@ -1,0 +1,163 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_stock_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:43+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_stock_state
+#: model_terms:ir.ui.view,arch_db:product_stock_state.res_config_settings_view_form_threshold
+msgid "<span class=\"o_form_label\">Product stock thresholds</span>"
+msgstr "<span class=\"o_form_label\">Limiares de stock de produtos</span>"
+
+#. module: product_stock_state
+#: model:ir.model,name:product_stock_state.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: product_stock_state
+#: model:ir.model,name:product_stock_state.model_res_config_settings
+msgid "Config Settings"
+msgstr "Axustes Configuración"
+
+#. module: product_stock_state
+#: model:ir.model.fields,help:product_stock_state.field_res_config_settings__stock_state_threshold
+msgid ""
+"Define custom value under which the stock state will pass from 'In Stock' to"
+" 'In Limited Stock' State."
+msgstr ""
+"Defina o valor personalizado por baixo do cal o estado de stock pasará do "
+"estado 'En stock' ao estado 'En stock limitado'."
+
+#. module: product_stock_state
+#: model:ir.model.fields,help:product_stock_state.field_product_product__stock_state_threshold
+#: model:ir.model.fields,help:product_stock_state.field_product_template__stock_state_threshold
+msgid ""
+"Define custom value under which the stock state will pass from 'In Stock' to"
+" 'In Limited Stock' State. If not set, Odoo will use the value defined in "
+"the product category. If no value is defined in product category, it will "
+"use the value defined for the company"
+msgstr ""
+"Defina o valor personalizado por baixo do cal o estado de stock pasará do "
+"estado 'En stock' ao estado 'En stock limitado'. Se non se establece, Odoo "
+"utilizará o valor definido na categoría de produto. Se non se define ningún "
+"valor na categoría de produto, utilizarase o valor definido para a empresa"
+
+#. module: product_stock_state
+#: model:ir.model.fields.selection,name:product_stock_state.selection__product_product__stock_state__in_limited_stock
+msgid "In Limited Stock"
+msgstr "En existencias limitadas"
+
+#. module: product_stock_state
+#: model:ir.model.fields.selection,name:product_stock_state.selection__product_product__stock_state__in_stock
+msgid "In Stock"
+msgstr "Dispoñible"
+
+#. module: product_stock_state
+#: model:ir.model.fields,field_description:product_stock_state.field_product_category__manual_stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_product_product__manual_stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_product_template__manual_stock_state_threshold
+msgid "Manual Stock State Threshold"
+msgstr "Limiar Manual do Estado das Existencias"
+
+#. module: product_stock_state
+#: model:ir.model.fields.selection,name:product_stock_state.selection__product_product__stock_state__out_of_stock
+msgid "Out Of Stock"
+msgstr "Esgotado"
+
+#. module: product_stock_state
+#: model:ir.model,name:product_stock_state.model_product_template
+msgid "Product"
+msgstr "Produto"
+
+#. module: product_stock_state
+#: model:ir.model,name:product_stock_state.model_product_category
+msgid "Product Category"
+msgstr "Categoría de Produto"
+
+#. module: product_stock_state
+#: model:ir.model,name:product_stock_state.model_product_product
+msgid "Product Variant"
+msgstr "Variante do Produto"
+
+#. module: product_stock_state
+#: model:product.template,name:product_stock_state.product_setting_by_company_product_template
+msgid "Product with threshold set on the company"
+msgstr "Produto con limiar establecido na compañía"
+
+#. module: product_stock_state
+#: model:product.template,name:product_stock_state.product_setting_by_product_product_template
+msgid "Product with threshold set on the product"
+msgstr "Produto con limiar establecido no produto"
+
+#. module: product_stock_state
+#: model:ir.model.fields.selection,name:product_stock_state.selection__product_product__stock_state__resupplying
+msgid "Resupplying"
+msgstr "Reabastecimiento"
+
+#. module: product_stock_state
+#: model_terms:ir.ui.view,arch_db:product_stock_state.res_config_settings_view_form_threshold
+msgid "Set stock state threshold"
+msgstr "Establecer limiar de estado de existencias"
+
+#. module: product_stock_state
+#: model:ir.model.fields,field_description:product_stock_state.field_product_product__stock_state
+msgid "Stock State"
+msgstr "Estado de Existencias"
+
+#. module: product_stock_state
+#: model:ir.model.fields,field_description:product_stock_state.field_product_category__stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_product_product__stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_product_template__stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_res_company__stock_state_threshold
+#: model:ir.model.fields,field_description:product_stock_state.field_res_config_settings__stock_state_threshold
+msgid "Stock State Threshold"
+msgstr "Limiar do Estado de Existencias"
+
+#. module: product_stock_state
+#: model:res.groups,name:product_stock_state.group_stock_state_by_category
+msgid "Stock State Threshold by Category"
+msgstr "Limiar do Estado de Existencias por Categoría"
+
+#. module: product_stock_state
+#: model:res.groups,name:product_stock_state.group_stock_state_by_product
+msgid "Stock State Threshold by Product"
+msgstr "Limiar de Estado de Existencias por Produto"
+
+#. module: product_stock_state
+#: model_terms:ir.ui.view,arch_db:product_stock_state.view_product_category_form
+#: model_terms:ir.ui.view,arch_db:product_stock_state.view_product_template_form
+msgid "Stock Threshold"
+msgstr "Limiar de existencias"
+
+#. module: product_stock_state
+#: model_terms:ir.ui.view,arch_db:product_stock_state.res_company_view_form_threshold
+msgid "Stock parameters"
+msgstr "Parámetros de existencias"
+
+#. module: product_stock_state
+#: model_terms:ir.ui.view,arch_db:product_stock_state.res_config_settings_view_form_threshold
+msgid "Stock threshold"
+msgstr "Limiar de existencias"
+
+#. module: product_stock_state
+#: model:ir.model.fields,help:product_stock_state.field_product_category__stock_state_threshold
+msgid ""
+"The custom value under which the stock state of the products of this "
+"category will pass from 'In Stock' to 'In Limited Stock' State. If not set, "
+"Odoo will use the threshold defined at the company level."
+msgstr ""
+"O valor personalizado baixo o cal o estado de stock dos produtos desta "
+"categoría pasará de 'En Stock' a 'En Existencias Limitadas'. Se non se "
+"establece, Odoo utilizará o limiar definido a nivel de empresa."

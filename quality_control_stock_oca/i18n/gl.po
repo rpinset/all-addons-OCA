@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: manufacture (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 07:24+0000\n"
-"PO-Revision-Date: 2021-02-22 08:28+0100\n"
-"Last-Translator: Carlos <carlos.roca@tecnativa.com>\n"
+"PO-Revision-Date: 2026-05-23 04:19+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (http://www.transifex.com/oca/OCA-manufacture-8-0/"
 "language/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: quality_control_stock_oca
 #. odoo-python
@@ -31,7 +31,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_lot__created_inspections
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_picking__created_inspections
 msgid "Created inspections"
-msgstr ""
+msgstr "Inspeccións creadas"
 
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_stock_lot__done_inspections
@@ -71,12 +71,12 @@ msgstr "Inspeccións fallidas"
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,help:quality_control_stock_oca.field_stock_lot__qc_inspections_ids
 msgid "Inspections related to this lot."
-msgstr ""
+msgstr "Inspeccións relativas a este lote."
 
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,help:quality_control_stock_oca.field_stock_picking__qc_inspections_ids
 msgid "Inspections related to this picking."
-msgstr ""
+msgstr "Inspeccións relativas a este albará."
 
 #. module: quality_control_stock_oca
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_inspection__is_mandatory_to_validate
@@ -108,68 +108,68 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.qc_inspection_line_search_stock_view
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.qc_inspection_search_view_picking
 msgid "Picking"
-msgstr ""
+msgstr "Albará"
 
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_stock_picking_type
 #: model:ir.model.fields,field_description:quality_control_stock_oca.field_qc_trigger__picking_type_id
 msgid "Picking Type"
-msgstr ""
+msgstr "Tipo de albará"
 
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_qc_inspection
 msgid "Quality control inspection"
-msgstr ""
+msgstr "Inspección do control de calidade"
 
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_qc_inspection_line
 msgid "Quality control inspection line"
-msgstr ""
+msgstr "Liña de inspección de control de calidade"
 
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_qc_trigger
 msgid "Quality control trigger"
-msgstr ""
+msgstr "Disparador do control de calidade"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_lot_done
 msgid "Quality inspection from lot done"
-msgstr ""
+msgstr "Inspeccións desde lote realizadas"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_lot_passed
 msgid "Quality inspection from lot passed"
-msgstr ""
+msgstr "Inspeccións desde lote pasadas"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_picking_done
 msgid "Quality inspection from picking done"
-msgstr ""
+msgstr "Inspeccións desde albará realizadas"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_picking_passed
 msgid "Quality inspection from picking passed"
-msgstr ""
+msgstr "Inspeccións desde albará realizadas"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_lot
 msgid "Quality inspections from lot"
-msgstr ""
+msgstr "Inspeccións desde lote"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_lot_failed
 msgid "Quality inspections from lot failed"
-msgstr ""
+msgstr "Inspeccións desde lote erradas"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_picking
 msgid "Quality inspections from picking"
-msgstr ""
+msgstr "Inspeccións desde albará"
 
 #. module: quality_control_stock_oca
 #: model:ir.actions.act_window,name:quality_control_stock_oca.action_qc_inspection_per_picking_failed
 msgid "Quality inspections from picking failed"
-msgstr ""
+msgstr "Inspeccións desde albará falladas"
 
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_stock_move
@@ -179,7 +179,7 @@ msgstr ""
 #. module: quality_control_stock_oca
 #: model:ir.model,name:quality_control_stock_oca.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Transferir"
 
 #. module: quality_control_stock_oca
 #. odoo-python
@@ -193,4 +193,4 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_lot_qc_view
 #: model_terms:ir.ui.view,arch_db:quality_control_stock_oca.stock_picking_qc_view
 msgid "inspections"
-msgstr ""
+msgstr "inspeccións"

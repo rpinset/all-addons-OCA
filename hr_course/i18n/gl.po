@@ -1,0 +1,621 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_course
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:46+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_attendee__result__absent
+msgid "Absent"
+msgstr "Ausente"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_needaction
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_state
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_type_icon
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Assign attendees"
+msgstr "Asignar asistentes"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_attachment_count
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_attachment_count
+msgid "Attachment Count"
+msgstr "Reconto de arquivos adxuntos"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__attendant_ids
+msgid "Attendant"
+msgstr "Asistente"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Attendees"
+msgstr "Asistentes"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__authorized_by
+msgid "Authorized By"
+msgstr "Autorizado por"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Back to Draft"
+msgstr "Devolver a borrador"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Cancel Course"
+msgstr "Cancelar curso"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__cancelled
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Cancelled Course"
+msgstr "Curso cancelado"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__category_id
+#: model_terms:ir.ui.view,arch_db:hr_course.view_course_category_search
+msgid "Category"
+msgstr "Categoría"
+
+#. module: hr_course
+#: model:ir.model.constraint,message:hr_course.constraint_hr_course_category_name_uniq
+msgid "Category already exists !"
+msgstr "Esta categoría xa existe !"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__comment
+msgid "Comment"
+msgstr "Comentario"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Complete Course"
+msgstr "Curso finalizado"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__completed
+msgid "Completed"
+msgstr "Finalizado"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__content
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+msgid "Content"
+msgstr "Contido"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Convocatory"
+msgstr "Convocatoria"
+
+#. module: hr_course
+#: model:ir.model,name:hr_course.model_hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__course_id
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_search_view
+msgid "Course"
+msgstr "Curso"
+
+#. module: hr_course
+#: model:ir.model,name:hr_course.model_hr_course_attendee
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__course_attendee_ids
+msgid "Course Attendee"
+msgstr "Asistente ao curso"
+
+#. module: hr_course
+#: model:ir.actions.act_window,name:hr_course.open_view_course_category_form
+#: model:ir.ui.menu,name:hr_course.menu_view_course_category_form
+#: model_terms:ir.ui.view,arch_db:hr_course.view_course_category_form
+#: model_terms:ir.ui.view,arch_db:hr_course.view_course_category_search
+msgid "Course Categories"
+msgstr "Tipos de cursos"
+
+#. module: hr_course
+#: model:ir.model,name:hr_course.model_hr_course_category
+msgid "Course Category"
+msgstr "Tipo de curso"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__cost
+msgid "Course Cost"
+msgstr "Custo do curso"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_search_view
+msgid "Course Name"
+msgstr "Nome do curso"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Course Results"
+msgstr "Resultado do curso"
+
+#. module: hr_course
+#: model:ir.model,name:hr_course.model_hr_course_schedule
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__course_schedule_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__course_schedule_id
+msgid "Course Schedule"
+msgstr "Calendario de cursos"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__name
+msgid "Course category"
+msgstr "Tipo do curso"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+msgid "Course name"
+msgstr "Nome do curso"
+
+#. module: hr_course
+#: model:ir.actions.act_window,name:hr_course.action_hr_course
+#: model:ir.actions.act_window,name:hr_course.action_view_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_employee__courses_ids
+#: model:ir.ui.menu,name:hr_course.menu_hr_course
+#: model:ir.ui.menu,name:hr_course.menu_hr_course_courses
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+#: model_terms:ir.ui.view,arch_db:hr_course.view_hr_employee_form
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: hr_course
+#: model:ir.actions.act_window,name:hr_course.action_hr_course_schedule
+#: model:ir.ui.menu,name:hr_course.menu_hr_course_schedule
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Courses Schedule"
+msgstr "Calendario de cursos"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__create_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__create_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__create_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__create_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__create_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__create_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__display_name
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__display_name
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__display_name
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__display_name
+msgid "Display Name"
+msgstr "Nome a mostrar"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Draft Course"
+msgstr "Curso en borrador"
+
+#. module: hr_course
+#: model:ir.model,name:hr_course.model_hr_employee
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__employee_id
+msgid "Employee"
+msgstr "Empregado"
+
+#. module: hr_course
+#. odoo-python
+#: code:addons/hr_course/models/hr_course_schedule.py:0
+#, python-format
+msgid "Employees removed from this course: <br></br>%s"
+msgstr "Empregados eliminados deste curso: <br></br>%s"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__course_end
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__end_date
+msgid "End Date"
+msgstr "Data final"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__evaluation_criteria
+msgid "Evaluation Criteria"
+msgstr "Criterios de avaliación"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+msgid "Evaluation criteria"
+msgstr "Criterios de avaliación"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_attendee__result__failed
+msgid "Failed"
+msgstr "Suspendido"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_follower_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_partner_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_type_icon
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__has_message
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__has_message
+msgid "Has Message"
+msgstr "Ten mensaxe"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__permanence
+msgid "Has Permanence"
+msgstr "Ten permanencia"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_exception_icon
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__message_needaction
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se está marcado, as novas mensaxes requiren a súa atención."
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__message_has_error
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se está marcado, algunhas mensaxes teñen un erro de entrega."
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__in_progress
+msgid "In progress"
+msgstr "En progreso"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__in_validation
+msgid "In validation"
+msgstr "En corrección"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__instructor_ids
+msgid "Instructor"
+msgstr "Instrutor"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Internal notes"
+msgstr "Notas internas"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_is_follower
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_is_follower
+msgid "Is Follower"
+msgstr "É Seguidor"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course____last_update
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee____last_update
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category____last_update
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__write_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__write_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__write_uid
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__write_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__write_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_category__write_date
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Arquivo adxunto principal"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_has_error
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_has_error
+msgid "Message Delivery error"
+msgstr "Erro de entrega de mensaxes"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_ids
+msgid "Messages"
+msgstr "Mensaxes"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__name
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__name
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_summary
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_type_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de accións"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_employee__count_courses
+msgid "Number of courses"
+msgstr "Número de cursos"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de erros"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__message_needaction_counter
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensaxes que requiren unha acción"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__message_has_error_counter
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensaxes con erro de entrega"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__objective
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+msgid "Objective"
+msgstr "Obxectivo"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Pass everybody"
+msgstr "Todos aprobados"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_attendee__result__passed
+msgid "Passed"
+msgstr "Aprobado"
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_attendee__result__pending
+msgid "Pending"
+msgstr "Pendente"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__permanence_time
+msgid "Permanence Time"
+msgstr "Tempo de permanencia"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__place
+msgid "Place"
+msgstr "Lugar"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Rate Course"
+msgstr "Corrixir curso"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_user_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_form_view
+msgid "Schedules"
+msgstr "Horarios"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Start Course"
+msgstr "Empezar curso"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__course_start
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__start_date
+msgid "Start Date"
+msgstr "Data de inicio"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__state
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__state
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_state
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: hr_course
+#. odoo-python
+#: code:addons/hr_course/models/hr_course_schedule.py:0
+#, python-format
+msgid "The start date cannot be later than the end date."
+msgstr "A data de inicio non pode ser posterior á de fin."
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__training_company_id
+msgid "Training company"
+msgstr "Empresa de formación"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_exception_decoration
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__waiting_attendees
+msgid "Waiting attendees"
+msgstr "Esperando asistentes"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__website_message_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__website_message_ids
+msgid "Website Messages"
+msgstr "Mensaxes do sitio web"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__website_message_ids
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación do sitio web"
+
+#. module: hr_course
+#. odoo-python
+#: code:addons/hr_course/models/hr_course_schedule.py:0
+#, python-format
+msgid "You cannot complete the course with pending results"
+msgstr "Non se pode finalizar o curso con resultados pendentes"
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid ""
+"You should set a course back to draft only if you cancelled it by mistake or"
+" if some of its information is incorrect. Do you want to continue?"
+msgstr ""
+"Só deberías devolver un curso a borrador se se cancelou por erro ou se "
+"algunha da súa información é incorrecta. Queres continuar?"

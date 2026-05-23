@@ -1,0 +1,602 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_schenker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:30+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_barcode_format__a4
+msgid "A4"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_barcode_format__a6
+msgid "A6"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_access_key
+msgid "Access Key"
+msgstr "Clave de acceso"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__a2a
+msgid "Aiport-to-airport"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_booking_type__air
+msgid "Air"
+msgstr "Aéreo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_service_air
+msgid "Air service"
+msgstr "Servizo aéreo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_service_air
+msgid ""
+"Air shipping product options. Depending on your customer account, some "
+"services could not be available"
+msgstr ""
+"Opcións de produtos de envío aéreo. Dependendo da túa conta de cliente, "
+"algúns servizos poderían non estar dispoñibles."
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__a2d
+msgid "Airport-to-door"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_barcode_mail
+msgid "Barcode Copy Email"
+msgstr "Enviar etiqueta por correo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_barcode_format
+msgid "Barcode Format"
+msgstr "Formato de etiqueta"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_barcode_a4_separated
+msgid "Barcode Separated"
+msgstr "Separar etiquetas"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_barcode_a4_start_pos
+msgid "Barcode Start Position"
+msgstr "Primeira posición de etiquetas"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_booking_type
+msgid "Booking Type"
+msgstr "Tipo de envío"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_stock_package_type__package_carrier_type
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_booking_type
+msgid "Choose Schenker booking type. Only land is currently supported"
+msgstr ""
+"Elixe tipo de envío Schenker. Actualmente só está soportado os envíos "
+"terrestres."
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_delivery_carrier_form
+msgid "Connection"
+msgstr "Conexión"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__71
+msgid "DB SCHENKERdirect"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__b
+msgid "DB SCHENKERjetcargo business"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__e
+msgid "DB SCHENKERjetcargo economy"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__f
+msgid "DB SCHENKERjetcargo first"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__s
+msgid "DB SCHENKERjetcargo special"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__eagd
+msgid "DB SCHENKERjetexpress gold"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_air__easv
+msgid "DB SCHENKERjetexpress silver"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ecpa
+msgid "DB SCHENKERparcel"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ectn
+msgid "DB SCHENKERspeed"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ect1
+msgid "DB SCHENKERspeed 10"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ect2
+msgid "DB SCHENKERspeed 12"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ect8
+msgid "DB SCHENKERspeed 8"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__40
+msgid "DB SCHENKERsystem classic"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__sysd
+msgid "DB SCHENKERsystem domestic"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__schx
+msgid "DB SCHENKERsystem fix"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__42
+msgid "DB SCHENKERsystem fixday"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__schs
+msgid "DB SCHENKERsystem international"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__41
+msgid "DB SCHENKERsystem speed"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__scht
+msgid "DB SCHENKERtop"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__sch2
+msgid "DB SCHENKERtop 12"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__delivery_type__schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__stock_package_type__package_carrier_type__schenker
+msgid "DB Schenker"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__43
+msgid "DBSchenker System"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__44
+msgid "DBSchenker System Premium"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__con
+msgid "DBSchenkerconcepts"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__dir
+msgid "DBSchenkerdirects"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__pal
+msgid "DBSchenkerpallets"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__lpa
+msgid "DBSchenkerparcel Logistics Parcel"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__pri
+msgid "DBSchenkerprivpark"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_incoterm_id
+msgid "Default Incoterm"
+msgstr "Incoterm por defecto"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_default_package_type_id
+msgid "Default Package Type"
+msgstr "Tipo de empaquetado por defecto"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_stock_package_type__schenker_stackable
+msgid "Define if the package is stackable by default"
+msgstr "Define se o paquete é apilable por defecto"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_indoor_delivery
+msgid "Defines if indoor delivery is required"
+msgstr "Define se é necesaria a entrega a interiores"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_express
+msgid "Defines if shipment is express"
+msgstr "Define se o envío é exprés"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_food_related
+msgid "Defines if shipment is food related"
+msgstr "Define se o envío está relacionado coa comida"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_pharmaceuticals
+msgid "Defines if shipment is pharmaceutical"
+msgstr "Define se o envío é farmacéutico"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_heated_transport
+msgid "Defines if shipment is required heated transport"
+msgstr "Define se o envío require transporte quentado"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_home_delivery
+msgid "Defines if shipment is required home delivery"
+msgstr "Define se o envío require a entrega a domicilio"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_own_pickup
+msgid "Defines if shipment is required own pickup"
+msgstr "Define se o envío require recollida propia"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_service_type
+msgid ""
+"Defines service type: D2D, D2P, P2D, P2P, D2A, A2D, A2A. Depending on the "
+"Transport mode the service will be validated. For instance if the transport "
+"mode is AIR, the service type A2A (AirportToAirport)"
+msgstr ""
+"Define os tipos de servizo: D2D, D2P, P2D, P2P, D2A, A2D, A2A. Depende do "
+"tipo de servizo elixido será validado. Por exemplo se o transporte é Aéreo, "
+"un tipo de de servizo correcto sería A2A (AirportToAirport)"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__d2a
+msgid "Door-to-airport"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__d2d
+msgid "Door-to-door"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__d2p
+msgid "Door-to-port"
+msgstr ""
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/schenker_request.py:0
+#, python-format
+msgid ""
+"Error in the request to the Schenker API. This is the thrown message:\n"
+"\n"
+"[%(error_text)s]\n"
+"%(error_code)s - %(error_message)s"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_express
+msgid "Express"
+msgstr "Exprés"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_food_related
+msgid "Food Related"
+msgstr "Envío relacionado con alimientos"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_barcode_a4_separated
+msgid "For A4 define if the labels shall be printed on separate pages"
+msgstr ""
+"Para as etiquetas A4, define se se deben imprimir en páxinas por separado"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_barcode_a4_start_pos
+msgid "For A4 format you can define the starting position"
+msgstr "Para as etiquetas A4, define a primeira posición"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_group_id
+msgid "Group"
+msgstr "Grupo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_heated_transport
+msgid "Heated Transport"
+msgstr "Transporte quentado"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_home_delivery
+msgid "Home Delivery"
+msgstr "Envío a domicilio"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_default_package_type_id
+msgid ""
+"If not delivery package or the package doesn't have defined the packaging it"
+" will default to this type"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_indoor_delivery
+msgid "Indoor Delivery"
+msgstr "Entrega a interiores"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_incoterm_id
+msgid "It will be overriden by the sale order one if it's specified."
+msgstr ""
+"Indica o incoterm, será sobreescrito polo incoterm do pedido de venda se ese "
+"está establecido"
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_delivery_carrier_form
+msgid "Label"
+msgstr "Etiqueta"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_booking_type__land
+msgid "Land"
+msgstr "Terrestre"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_service_land
+msgid "Land service"
+msgstr "Servizo terrestre"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_service_land
+msgid ""
+"Land shipping product options. Depending on your customer account, some "
+"services could not be available"
+msgstr ""
+"Opcións de produtos de envío terrestre. Dependendo da túa conta de cliente, "
+"algúns servizos poderían non estar dispoñibles."
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_measure_unit__loading_meters
+msgid "Loading meters"
+msgstr "Metros de carga"
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_delivery_carrier_form
+msgid "Logistics"
+msgstr "Datos loxísticos"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_measure_unit
+msgid "Measure Unit"
+msgstr "Unidade de medida"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_booking_type__ocean_fcl
+msgid "Ocean FCL"
+msgstr "Marítimo FCL"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_booking_type__ocean_lcl
+msgid "Ocean LCL"
+msgstr "Marítimo LCL"
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/delivery_carrier.py:0
+#, python-format
+msgid "Only land shipping is currently supported"
+msgstr "Actualmente só os envíos terretres están soportados"
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/delivery_carrier.py:0
+#, python-format
+msgid "Only volume is currently supported"
+msgstr "Actualmente só o volume está soportado"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_barcode_mail
+msgid "Optional: send a barcode copy to this email address"
+msgstr "Opcional: Enviar unha cópia da etiqueta a este correo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_own_pickup
+msgid "Own Pickup"
+msgstr "Recollida propia"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_measure_unit__pallet_space
+msgid "Pallet space"
+msgstr "Espazo palet"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_pharmaceuticals
+msgid "Pharmaceuticals"
+msgstr "Farmacéutico"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_measure_unit__pieces
+msgid "Pieces"
+msgstr "Vultos"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_type__p2d
+msgid "Port-to-door"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__delivery_type
+msgid "Provider"
+msgstr "Provedor"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__ecsp
+msgid "SCHENKERsystem-plus"
+msgstr ""
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/delivery_carrier.py:0
+#: code:addons/delivery_schenker/models/delivery_carrier.py:0
+#, python-format
+msgid ""
+"Schenker API doesn't provide methods to compute delivery rates, so you "
+"should relay on another price method instead or override this one in your "
+"custom code."
+msgstr ""
+"API Schenker non prové ningunha forma de calcular as tarifas de envío, porlo "
+"tanto se deberia usar outro método ou sobreescribir leste en código "
+"personalizado."
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_access_key
+msgid "Schenker Access Key"
+msgstr "Clave de acceso Schenker"
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_delivery_carrier_form
+msgid "Schenker Configuration"
+msgstr "Configuración Schenker"
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_picking_withcarrier_out_form
+msgid "Schenker Label"
+msgstr "Etiqueta Schenker"
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/delivery_carrier.py:0
+#, python-format
+msgid "Schenker Shipping barcode document"
+msgstr "Etiqueta de envío Schenker"
+
+#. module: delivery_schenker
+#. odoo-python
+#: code:addons/delivery_schenker/models/stock_picking.py:0
+#, python-format
+msgid "Schenker label for %s"
+msgstr "Etiqueta Schenker para envío %s"
+
+#. module: delivery_schenker
+#: model_terms:ir.ui.view,arch_db:delivery_schenker.view_delivery_carrier_form
+msgid "Service"
+msgstr "Servizo"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_service_type
+msgid "Service Type"
+msgstr "Tipo de servizo"
+
+#. module: delivery_schenker
+#: model:ir.model,name:delivery_schenker.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_stock_package_type__schenker_stackable
+msgid "Stackable"
+msgstr "Apilable"
+
+#. module: delivery_schenker
+#: model:ir.model,name:delivery_schenker.model_stock_package_type
+msgid "Stock package type"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields,help:delivery_schenker.field_delivery_carrier__schenker_measure_unit
+msgid "The proper request will be formed accordingly from the picking"
+msgstr "A petición apropiada será creada a partir do albará"
+
+#. module: delivery_schenker
+#: model:ir.model,name:delivery_schenker.model_stock_picking
+msgid "Transfer"
+msgstr "Albará"
+
+#. module: delivery_schenker
+#: model:ir.model.fields,field_description:delivery_schenker.field_delivery_carrier__schenker_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_measure_unit__volume
+msgid "Volume"
+msgstr "Volume"
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__auco
+msgid "austrocargo"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__auc0
+msgid "austroexpress PUNKT 10"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__auc2
+msgid "austroexpress PUNKT 12"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__aucc
+msgid "austroexpress PUNKT 17"
+msgstr ""
+
+#. module: delivery_schenker
+#: model:ir.model.fields.selection,name:delivery_schenker.selection__delivery_carrier__schenker_service_land__auc8
+msgid "austroexpress PUNKT 8"
+msgstr ""

@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_location_product_restriction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 18:33+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,field_description:stock_location_product_restriction.field_stock_location__has_restriction_violation
+msgid "Has Restriction Violation"
+msgstr "Violou unha restrición"
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,help:stock_location_product_restriction.field_stock_location__parent_product_restriction
+#: model:ir.model.fields,help:stock_location_product_restriction.field_stock_location__product_restriction
+msgid ""
+"If 'Same product' is selected the system will prevent to put items of "
+"different products into the same location."
+msgstr ""
+"Se se selecciona 'Mesmo produto', o sistema impedirá colocar artigos de "
+"diferentes produtos na mesma localización."
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,help:stock_location_product_restriction.field_stock_location__specific_product_restriction
+msgid ""
+"If specified the restriction specified will apply to the current location "
+"and all its children"
+msgstr ""
+"Se se especifica, a restrición especificada aplicarase á localización actual "
+"e a todas as súas localizacións secundarias"
+
+#. module: stock_location_product_restriction
+#: model:ir.model,name:stock_location_product_restriction.model_stock_location
+msgid "Inventory Locations"
+msgstr "Localizacións de Inventario"
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,field_description:stock_location_product_restriction.field_stock_location__parent_product_restriction
+msgid "Parent Location Product Restriction"
+msgstr "Localización parental Restrición de produtos"
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,field_description:stock_location_product_restriction.field_stock_location__product_restriction
+msgid "Product Restriction"
+msgstr "Restrición do produto"
+
+#. module: stock_location_product_restriction
+#: model:ir.model,name:stock_location_product_restriction.model_stock_quant
+msgid "Quants"
+msgstr ""
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,field_description:stock_location_product_restriction.field_stock_location__restriction_violation_message
+msgid "Restriction Violation Message"
+msgstr "Mensaxe de violación de restrición"
+
+#. module: stock_location_product_restriction
+#: model_terms:ir.ui.view,arch_db:stock_location_product_restriction.stock_location_form_view
+msgid "Restrictions"
+msgstr "Restricións"
+
+#. module: stock_location_product_restriction
+#: model:ir.model.fields,field_description:stock_location_product_restriction.field_stock_location__specific_product_restriction
+msgid "Specific Product Restriction"
+msgstr "Restrición específica de produto"
+
+#. module: stock_location_product_restriction
+#. odoo-python
+#: code:addons/stock_location_product_restriction/models/stock_quant.py:0
+#, python-format
+msgid ""
+"The location %(location)s can only contain items of the same product. You "
+"plan to put different products into this location. (%(products)s)"
+msgstr ""
+
+#. module: stock_location_product_restriction
+#. odoo-python
+#: code:addons/stock_location_product_restriction/models/stock_location.py:0
+#, python-format
+msgid ""
+"This location should only contain items of the same product but it contains "
+"items of products %(products)s"
+msgstr ""
+
+#. module: stock_location_product_restriction
+#: model_terms:ir.ui.view,arch_db:stock_location_product_restriction.stock_location_search_view
+msgid "With restriction violation"
+msgstr "Con violación de restrición"
+
+#. module: stock_location_product_restriction
+#. odoo-python
+#: code:addons/stock_location_product_restriction/models/stock_quant.py:0
+#, python-format
+msgid ""
+"You plan to add the product %(product)s into the location %(location)s but "
+"the location must only contain items of same product and already contains "
+"items of other product(s) (%(existing_products)s)."
+msgstr ""

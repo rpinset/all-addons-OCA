@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_picking_to_batch_group_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 15:57+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_picking_to_batch_group_fields
+#. odoo-python
+#: code:addons/stock_picking_to_batch_group_fields/wizard/stock_picking_to_batch.py:0
+#, python-format
+msgid ""
+"All selected pickings are already in a batch picking or are in a wrong "
+"state."
+msgstr ""
+"Todos os albarás seleccionadas xa están nunha agrupación ou nun estado "
+"incorrecto."
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model,name:stock_picking_to_batch_group_fields.model_stock_picking_batch_creator_group_field
+msgid "Batch Picking Creator Group Field"
+msgstr "Campo Grupo Creador de Selección por Lotes"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model,name:stock_picking_to_batch_group_fields.model_stock_picking_to_batch
+msgid "Batch Transfer Lines"
+msgstr "Liñas de agrupación de albarás"
+
+#. module: stock_picking_to_batch_group_fields
+#: model_terms:ir.ui.view,arch_db:stock_picking_to_batch_group_fields.stock_picking_to_batch_form_inherit
+msgid "Create multiple batch picking grouped by..."
+msgstr "Crear múltiples agrupacións de albarás agrupadas por..."
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__create_date
+msgid "Created on"
+msgstr "Creado o"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__display_name
+msgid "Display Name"
+msgstr "Nome mostrado"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__field_id
+msgid "Field to group"
+msgstr "Campo para agrupar"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_to_batch__group_field_ids
+msgid "Group by field"
+msgstr "Agrupar por campo"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,help:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__sequence
+msgid "Group by picking field"
+msgstr "Agrupar por campo de albará"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_to_batch__batch_by_group
+msgid "Grouped by fields"
+msgstr "Agrupado por campos"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,help:stock_picking_to_batch_group_fields.field_stock_picking_to_batch__group_field_ids
+msgid ""
+"If set any, multiple batch picking will be created, one per group field"
+msgstr ""
+"Se se establece calquera, crearanse varios lotes, un por campo de agrupación"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,help:stock_picking_to_batch_group_fields.field_stock_picking_to_batch__batch_by_group
+msgid "If set, multiple batch picking will be created, one per group field"
+msgstr "Se se establece, crearanse varios lotes, un por campo de agrupación"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field____last_update
+msgid "Last Modified on"
+msgstr "Última modificación o"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__write_date
+msgid "Last Updated on"
+msgstr "Última actualización o"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__picking_to_batch_id
+msgid "Picking To Batch"
+msgstr "Selección Por Lotes"
+
+#. module: stock_picking_to_batch_group_fields
+#: model:ir.model.fields,field_description:stock_picking_to_batch_group_fields.field_stock_picking_batch_creator_group_field__sequence
+msgid "Sequence"
+msgstr "Secuencia"

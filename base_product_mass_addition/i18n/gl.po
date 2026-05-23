@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_product_mass_addition
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:43+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: base_product_mass_addition
+#: model_terms:ir.ui.view,arch_db:base_product_mass_addition.product_search_form_view
+msgid "Filter products in current parent"
+msgstr "Filtrar produtos en pai actual"
+
+#. module: base_product_mass_addition
+#: model_terms:ir.ui.view,arch_db:base_product_mass_addition.product_search_form_view
+msgid "In current parent"
+msgstr "En pai actual"
+
+#. module: base_product_mass_addition
+#: model_terms:ir.ui.view,arch_db:base_product_mass_addition.product_product_tree_view
+msgid "Open"
+msgstr "Abrir"
+
+#. module: base_product_mass_addition
+#: model:ir.model,name:base_product_mass_addition.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: base_product_mass_addition
+#: model:ir.model.fields,field_description:base_product_mass_addition.field_product_product__qty_to_process
+msgid "Qty To Process"
+msgstr "Cantidade a procesar"
+
+#. module: base_product_mass_addition
+#: model:ir.model.fields,field_description:base_product_mass_addition.field_product_product__quick_uom_id
+msgid "Quick Uom"
+msgstr "UdM rápida"
+
+#. module: base_product_mass_addition
+#: model:ir.model.fields,field_description:base_product_mass_addition.field_product_product__quick_uom_category_id
+msgid "Quick Uom Category"
+msgstr ""
+
+#. module: base_product_mass_addition
+#: model:ir.model.fields,help:base_product_mass_addition.field_product_product__qty_to_process
+msgid ""
+"Set this quantity to create a new line for this product or update the "
+"existing one."
+msgstr ""
+"Estableza esta cantidade para crear unha nova liña para este produto ou "
+"actualizar a existente."
+
+#. module: base_product_mass_addition
+#: model:ir.model,name:base_product_mass_addition.model_product_mass_addition
+msgid ""
+"inherit this to add a mass product addition function                    to "
+"your model"
+msgstr ""
+"herda isto para engadir unha función de adición de produto masiva"
+"                    ao teu modelo"

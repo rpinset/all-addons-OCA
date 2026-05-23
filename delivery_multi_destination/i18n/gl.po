@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_multi_destination
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:30+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields.selection,name:delivery_multi_destination.selection__delivery_carrier__delivery_type__base_on_destination
+msgid "Based on Destination"
+msgstr ""
+
+#. module: delivery_multi_destination
+#: model:delivery.carrier,name:delivery_multi_destination.delivery_carrier_multi_child_1
+msgid "Belgium"
+msgstr "Bélxica"
+
+#. module: delivery_multi_destination
+#: model:ir.model,name:delivery_multi_destination.model_choose_delivery_carrier
+msgid "Delivery Carrier Selection Wizard"
+msgstr ""
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields,field_description:delivery_multi_destination.field_delivery_carrier__destination_type
+msgid "Destination Type"
+msgstr "Tipo de destino"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields,field_description:delivery_multi_destination.field_delivery_carrier__child_ids
+msgid "Destination grid"
+msgstr "Cuadrícula de destino"
+
+#. module: delivery_multi_destination
+#: model_terms:ir.ui.view,arch_db:delivery_multi_destination.view_delivery_carrier_form
+msgid "Destinations"
+msgstr "Destinos"
+
+#. module: delivery_multi_destination
+#. odoo-python
+#: code:addons/delivery_multi_destination/wizards/choose_delivery_carrier.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: delivery_multi_destination
+#. odoo-python
+#: code:addons/delivery_multi_destination/models/delivery_carrier.py:0
+#, python-format
+msgid "Error: this delivery method is not available for this address."
+msgstr ""
+
+#. module: delivery_multi_destination
+#: model:delivery.carrier,name:delivery_multi_destination.delivery_carrier_multi_child_2
+msgid "France"
+msgstr "Francia"
+
+#. module: delivery_multi_destination
+#: model:delivery.carrier,name:delivery_multi_destination.delivery_carrier_multi
+#: model:product.template,name:delivery_multi_destination.product_product_delivery_carrier_multi_product_template
+msgid "International Carrier Inc."
+msgstr "Transportes Internacionais Inc."
+
+#. module: delivery_multi_destination
+#: model:product.template,name:delivery_multi_destination.product_product_delivery_carrier_multi_child_1_product_template
+msgid "International Carrier Inc., Belgium"
+msgstr "Transportes Internacionais Inc., Bélxica"
+
+#. module: delivery_multi_destination
+#: model:product.template,name:delivery_multi_destination.product_product_delivery_carrier_multi_child_2_product_template
+msgid "International Carrier Inc., France"
+msgstr "Transportes Internacionais Inc., Francia"
+
+#. module: delivery_multi_destination
+#: model:product.template,name:delivery_multi_destination.product_product_delivery_carrier_multi_child_3_product_template
+msgid "International Carrier Inc., United Kingdom"
+msgstr "Transporte Internacional Inc., Reino Unido"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields.selection,name:delivery_multi_destination.selection__delivery_carrier__destination_type__multi
+msgid "Multiple destinations"
+msgstr "Destinos múltiples"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields.selection,name:delivery_multi_destination.selection__delivery_carrier__destination_type__one
+msgid "One destination"
+msgstr "Un destino"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields,field_description:delivery_multi_destination.field_delivery_carrier__parent_id
+msgid "Parent carrier"
+msgstr "Transportista matriz"
+
+#. module: delivery_multi_destination
+#: model:ir.model.fields,field_description:delivery_multi_destination.field_delivery_carrier__delivery_type
+msgid "Provider"
+msgstr ""
+
+#. module: delivery_multi_destination
+#: model:ir.model,name:delivery_multi_destination.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de Envío"
+
+#. module: delivery_multi_destination
+#. odoo-python
+#: code:addons/delivery_multi_destination/models/delivery_carrier.py:0
+#, python-format
+msgid "There is no matching delivery rule."
+msgstr "Non hai unha regra de entrega coincidente."
+
+#. module: delivery_multi_destination
+#: model:delivery.carrier,name:delivery_multi_destination.delivery_carrier_multi_child_3
+msgid "United Kingdom"
+msgstr "Reino Unido"

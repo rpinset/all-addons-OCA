@@ -1,0 +1,37 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_price_recalculation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 15:58+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_order_price_recalculation
+#: model:ir.actions.server,name:sale_order_price_recalculation.recalculate_prices_act_serv
+msgid "Recalculate Prices"
+msgstr ""
+
+#. module: sale_order_price_recalculation
+#: model_terms:ir.ui.view,arch_db:sale_order_price_recalculation.view_order_form
+msgid "Recalculate prices"
+msgstr "Recalcular prezos"
+
+#. module: sale_order_price_recalculation
+#: model_terms:ir.ui.view,arch_db:sale_order_price_recalculation.view_order_form
+msgid "Reset descriptions"
+msgstr "Restablecer descricións"
+
+#. module: sale_order_price_recalculation
+#: model:ir.model,name:sale_order_price_recalculation.model_sale_order
+msgid "Sales Order"
+msgstr "Orde de Venda"

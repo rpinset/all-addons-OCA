@@ -10,14 +10,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-26 03:03+0000\n"
-"PO-Revision-Date: 2017-10-26 03:03+0000\n"
-"Last-Translator: César Castro Cruz <ulmroan@gmail.com>, 2017\n"
+"PO-Revision-Date: 2026-05-23 04:18+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_form
@@ -133,7 +134,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__database_id
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__database_id
 msgid "Database"
-msgstr ""
+msgstr "Base de datos"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__defaults
@@ -145,12 +146,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__display_name
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome mostrado"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__domain
 msgid "Domain"
-msgstr ""
+msgstr "Dominio"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__duplicates
@@ -165,7 +166,7 @@ msgstr ""
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__field_ids
 msgid "Field"
-msgstr ""
+msgstr "Campo"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__import_field_mappings
@@ -175,7 +176,7 @@ msgstr ""
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database_field__mapping_type__fixed
 msgid "Fixed"
-msgstr ""
+msgstr "Fixo"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__import_database_id
@@ -269,7 +270,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__model_id
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__model_id
 msgid "Model"
-msgstr ""
+msgstr "Modelo"
 
 #. module: base_import_odoo
 #: model:ir.model,name:base_import_odoo.model_ir_model_data
@@ -321,7 +322,7 @@ msgstr ""
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__password
 msgid "Password"
-msgstr ""
+msgstr "Contrasinal"
 
 #. module: base_import_odoo
 #. odoo-python
@@ -487,7 +488,7 @@ msgstr ""
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__url
 msgid "Url"
-msgstr ""
+msgstr "Url"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__ssl

@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* report_qweb_pdf_cover
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:55+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__back_cover_pdf
+msgid "Back Cover PDF"
+msgstr "Contraportada PDF"
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "Failed to load back cover: %s"
+msgstr "Erro ao cargar a contraportada: %s"
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "Failed to load front cover: %s"
+msgstr "Erro ao cargar a portada: %s"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__front_cover_pdf
+msgid "Front Cover PDF"
+msgstr "Portada PDF"
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "No usable back cover found."
+msgstr "Non se atopou ningunha contraportada usable."
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "No usable front cover found."
+msgstr "Non se atopou ningunha portada usable."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__back_cover_overlap
+msgid "Overlap Back Cover"
+msgstr "Superpoñer Contraportada"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__front_cover_overlap
+msgid "Overlap Front Cover"
+msgstr "Superpoñer Portada"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model,name:report_qweb_pdf_cover.model_ir_actions_report
+msgid "Report Action"
+msgstr "Acción de Informe"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__back_cover_pdf
+msgid "Upload an PDF file to use as a back cover on this report."
+msgstr "Suba un arquivo PDF para usar como contraportada neste informe."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__front_cover_pdf
+msgid "Upload an PDF file to use as a front cover on this report."
+msgstr "Suba un arquivo PDF para usar como portada neste informe."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__use_back_cover
+msgid "Use Back Cover"
+msgstr "Usar Contraportada"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,field_description:report_qweb_pdf_cover.field_ir_actions_report__use_front_cover
+msgid "Use Front Cover"
+msgstr "Usar Portada"
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__use_back_cover
+msgid "Use a back cover when rendering the PDF report."
+msgstr "Usar unha contraportada ao renderizar o informe PDF."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__use_front_cover
+msgid "Use a front cover when rendering the PDF report."
+msgstr "Usar unha portada ao renderizar o informe PDF."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__back_cover_overlap
+msgid ""
+"When set, the back cover of the report will overlap with the contents of the"
+" last page of the report. This is useful to include some information of the "
+"report in the back cover."
+msgstr ""
+"Cando se establece, a contraportada do informe superpoñerase co contido da "
+"última páxina do informe. Isto é útil para incluír algunha información do "
+"informe na contraportada."
+
+#. module: report_qweb_pdf_cover
+#: model:ir.model.fields,help:report_qweb_pdf_cover.field_ir_actions_report__front_cover_overlap
+msgid ""
+"When set, the front cover of the report will overlap with the contents of "
+"the first page of the report. This is useful to include some information of "
+"the report in the front cover."
+msgstr ""
+"Cando se establece, a portada do informe superpoñerase co contido da "
+"primeira páxina do informe. Isto é útil para incluír algunha información do "
+"informe na portada."
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid ""
+"Your back cover PDF contains more than one page, all but the first one will "
+"be ignored."
+msgstr ""
+"A súa contraportada PDF contén máis dunha páxina, todas menos a primeira "
+"ignoraranse."
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "Your back cover PDF does not contain any pages."
+msgstr "A súa contraportada PDF non contén ningunha páxina."
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid ""
+"Your front cover PDF contains more than one page, all but the first one will"
+" be ignored."
+msgstr ""
+"O seu portada PDF contén máis dunha páxina, todas menos a primeira "
+"ignoraranse."
+
+#. module: report_qweb_pdf_cover
+#. odoo-python
+#: code:addons/report_qweb_pdf_cover/models/ir_actions_report.py:0
+#, python-format
+msgid "Your front cover PDF does not contain any pages."
+msgstr "O seu portada PDF non contén ningunha páxina"

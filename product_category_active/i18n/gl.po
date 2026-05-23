@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_category_active
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:43+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_category_active
+#: model:ir.model.fields,field_description:product_category_active.field_product_category__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: product_category_active
+#: model_terms:ir.ui.view,arch_db:product_category_active.product_category_search_view
+msgid "Archived"
+msgstr ""
+
+#. module: product_category_active
+#: model_terms:ir.ui.view,arch_db:product_category_active.product_category_search_view
+msgid "Archived or Active"
+msgstr ""
+
+#. module: product_category_active
+#. odoo-python
+#: code:addons/product_category_active/models/product_category.py:0
+#, python-format
+msgid ""
+"At least one category that you are trying to archive or one of its children "
+"has one or more product linked to it."
+msgstr ""
+"Polo menos una das categorías que se están tentando arquivar ou polo menos "
+"una das súas fillas ten un ou máis produtos asociados."
+
+#. module: product_category_active
+#: model:ir.model.fields,help:product_category_active.field_product_category__active
+msgid ""
+"If unchecked, it will allow you to hide the product category without "
+"removing it."
+msgstr ""
+"Se non está marcado, permitirá ocultar a categoría de produto sen eliminala."
+
+#. module: product_category_active
+#: model:ir.model,name:product_category_active.model_product_category
+msgid "Product Category"
+msgstr "Categoría de produto"

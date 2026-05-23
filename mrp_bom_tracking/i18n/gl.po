@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_tracking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 15:56+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+msgid "-&gt;"
+msgstr "-&gt;"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid ""
+":\n"
+"                New component<br/>"
+msgstr ""
+":\n"
+"                                    Novo compoñente<br/>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid ""
+":\n"
+"                Removed component<br/>"
+msgstr ""
+":\n"
+"                Eliminar compoñente<br/>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid ""
+"<br/>\n"
+"                    Product Unit of Measure:"
+msgstr ""
+"<br/>\n"
+"                    Unidade de medida do produto:"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+msgid "<strong>The component quantities or UoMs have been updated.</strong>"
+msgstr "<strong>Actualizáronse as cantidades ou UM dos compoñentes.</strong>"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template_2
+msgid "<strong>The components have changed.</strong>"
+msgstr "<strong>Os compoñentes cambiaron.</strong>"
+
+#. module: mrp_bom_tracking
+#: model:ir.model,name:mrp_bom_tracking.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Factura de material"
+
+#. module: mrp_bom_tracking
+#: model:ir.model,name:mrp_bom_tracking.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Liña da factura de materiais"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__type
+msgid "BoM Type"
+msgstr "Tipo BoM"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__product_id
+msgid ""
+"If a product variant is defined the BOM is available only for this product."
+msgstr ""
+"Se se define unha variante de produto, a lista de materiais só está "
+"dispoñible para este produto."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__picking_type_id
+msgid "Operation Type"
+msgstr "Tipo de operación"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_tmpl_id
+msgid "Product"
+msgstr "produto"
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_line_template
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid "Product Quantity:"
+msgstr "Cantidade de Produtos:"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_id
+msgid "Product Variant"
+msgstr "Variante de Produto"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__product_qty
+msgid "Quantity"
+msgstr "cantidade"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,field_description:mrp_bom_tracking.field_mrp_bom__code
+msgid "Reference"
+msgstr "referencia"
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__product_qty
+msgid ""
+"This should be the smallest quantity that this product can be produced in. "
+"If the BOM contains operations, make sure the work center capacity is "
+"accurate."
+msgstr ""
+"Esta debe ser a cantidade máis pequena na que se pode fabricar este produto. "
+"Se a lista de materiais contén operacións, asegúrese de que a capacidade do "
+"posto de traballo é correcta."
+
+#. module: mrp_bom_tracking
+#: model:ir.model.fields,help:mrp_bom_tracking.field_mrp_bom__picking_type_id
+msgid ""
+"When a procurement has a ‘produce’ route with a operation type set, it will "
+"try to create a Manufacturing Order for that product using a BoM of the same"
+" operation type. That allows to define stock rules which trigger different "
+"manufacturing orders with different BoMs."
+msgstr ""
+"Cando un aprovisionamento ten un roteiro 'producir' cun tipo de operación "
+"establecido, tentará crear unha Orde de Fabricación para ese produto "
+"utilizando unha lista de materiais do mesmo tipo de operación. Isto permite "
+"definir regras de stock que activen diferentes ordes de fabricación con "
+"diferentes listas de materiais."
+
+#. module: mrp_bom_tracking
+#: model_terms:ir.ui.view,arch_db:mrp_bom_tracking.track_bom_template
+msgid "component<br/>"
+msgstr "compoñente<br/>"

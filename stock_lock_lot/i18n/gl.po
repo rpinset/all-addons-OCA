@@ -8,132 +8,135 @@ msgstr ""
 "Project-Id-Version: stock-logistics-workflow (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-31 02:51+0000\n"
-"PO-Revision-Date: 2017-05-30 18:20+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
+"PO-Revision-Date: 2026-05-23 04:23+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (http://www.transifex.com/oca/OCA-stock-logistics-"
 "workflow-8-0/language/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción requirida"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_location__allow_locked
 msgid "Allow Locked Lots/Serial Numbers"
-msgstr ""
+msgstr "Permitir o bloqueo lotes/números de serie"
 
 #. module: stock_lock_lot
 #: model:res.groups,name:stock_lock_lot.group_lock_lot
 msgid "Allow to block/unblock Serial Numbers/Lots"
-msgstr ""
+msgstr "Permitir bloquear/desbloquear Números de Serie/Lotes"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Nº de arquivos adxuntos"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_product_category__lot_default_locked
 msgid "Block new Serial Numbers/lots"
-msgstr ""
+msgstr "Bloquear novos números de serie/lotes"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__locked
 #: model_terms:ir.ui.view,arch_db:stock_lock_lot.search_product_lot_filter
 msgid "Blocked"
-msgstr ""
+msgstr "Bloqueado"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (Contactos)"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Ten unha mensaxe"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_product_category__lot_default_locked
 msgid ""
 "If checked, future Serial Numbers/lots will be created blocked by default"
 msgstr ""
+"Se está marcada, os próximos números de serie/lotes crearanse bloqueados por "
+"defecto"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_stock_lot__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Se está marcado hai novas mensaxes que requiren a súa atención."
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_stock_lot__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Se se atopa marcado, algunhas mensaxes teñen erro de envío."
 
 #. module: stock_lock_lot
 #: model:ir.model,name:stock_lock_lot.model_stock_location
 msgid "Inventory Locations"
-msgstr ""
+msgstr "Localizacións de inventario"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "É un seguidor"
 
 #. module: stock_lock_lot
 #: model_terms:ir.ui.view,arch_db:stock_lock_lot.search_product_lot_filter
 msgid "Locked"
-msgstr ""
+msgstr "Bloqueado"
 
 #. module: stock_lock_lot
 #: model:ir.model,name:stock_lock_lot.model_stock_lot
 msgid "Lot/Serial"
-msgstr ""
+msgstr "Lote/Número de serie"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Adxuntos principais"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Erro de Envío de Mensaxe"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensaxes"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Número de accións"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Numero de erros"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_stock_lot__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensaxes que requiren unha acción"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_stock_lot__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensaxes con erro de envío"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__product_id
@@ -143,24 +146,24 @@ msgstr "Produto"
 #. module: stock_lock_lot
 #: model:ir.model,name:stock_lock_lot.model_product_category
 msgid "Product Category"
-msgstr ""
+msgstr "Categoría de produto"
 
 #. module: stock_lock_lot
 #: model:ir.model,name:stock_lock_lot.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
-msgstr ""
+msgstr "Movementos de Produto (Stock Move Line)"
 
 #. module: stock_lock_lot
 #: model:mail.message.subtype,description:stock_lock_lot.mt_lock_lot
 #: model:mail.message.subtype,name:stock_lock_lot.mt_lock_lot
 msgid "Serial Number/lot blocked"
-msgstr ""
+msgstr "Número de serie/lote bloqueado"
 
 #. module: stock_lock_lot
 #: model:mail.message.subtype,description:stock_lock_lot.mt_unlock_lot
 #: model:mail.message.subtype,name:stock_lock_lot.mt_unlock_lot
 msgid "Serial Number/lot unblocked"
-msgstr ""
+msgstr "Número de serie/lote desbloqueado"
 
 #. module: stock_lock_lot
 #. odoo-python
@@ -170,16 +173,18 @@ msgid ""
 "The following lots/serial number is blocked and cannot be moved:\n"
 "%s"
 msgstr ""
+"O seguinte lote/número de serie está bloqueado e non se pode mover:\n"
+"%s"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,field_description:stock_lock_lot.field_stock_lot__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensaxes do sitio web"
 
 #. module: stock_lock_lot
 #: model:ir.model.fields,help:stock_lock_lot.field_stock_lot__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicacións do sitio web"
 
 #. module: stock_lock_lot
 #. odoo-python
@@ -187,7 +192,7 @@ msgstr ""
 #: code:addons/stock_lock_lot/models/stock_lot.py:0
 #, python-format
 msgid "You are not allowed to block/unblock Serial Numbers/Lots"
-msgstr ""
+msgstr "Prohibir estritamente os movementos de lote/nº de serie bloqueados."
 
 #. module: stock_lock_lot
 #. odoo-python
@@ -197,6 +202,8 @@ msgid ""
 "You are not allowed to block/unblock, there are reserved quantities for "
 "these Serial Numbers/Lots"
 msgstr ""
+"Non está permitido bloquear/desbloquear, hai cantidades reservadas para "
+"estes Números de Serie/Lotes"
 
 #~ msgid "ID"
 #~ msgstr "ID"

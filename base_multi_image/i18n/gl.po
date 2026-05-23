@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:10+0000\n"
-"PO-Revision-Date: 2017-12-01 02:10+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-05-23 04:18+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: base_multi_image
 #: model:ir.model,name:base_multi_image.model_base_multi_image_owner
@@ -52,7 +53,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__comments
 #: model_terms:ir.ui.view,arch_db:base_multi_image.image_form_view
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"
 
 #. module: base_multi_image
 #. odoo-python
@@ -74,7 +75,7 @@ msgstr "Creado en"
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome a mostrar"
 
 #. module: base_multi_image
 #: model:ir.model.fields,help:base_multi_image.field_base_multi_image_image__load_from
@@ -97,7 +98,7 @@ msgstr "ID"
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__image_1920
 #: model_terms:ir.ui.view,arch_db:base_multi_image.image_form_view
 msgid "Image"
-msgstr ""
+msgstr "Imaxe"
 
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__image_1024
@@ -130,13 +131,13 @@ msgstr ""
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__name
 msgid "Image title"
-msgstr ""
+msgstr "Título da imaxe"
 
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_owner__image_ids
 #: model_terms:ir.ui.view,arch_db:base_multi_image.image_kanban_view
 msgid "Images"
-msgstr ""
+msgstr "Imaxes"
 
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image____last_update
@@ -173,7 +174,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__owner_id
 #: model_terms:ir.ui.view,arch_db:base_multi_image.image_form_view
 msgid "Owner"
-msgstr ""
+msgstr "Propietario"
 
 #. module: base_multi_image
 #: model:ir.model.fields,field_description:base_multi_image.field_base_multi_image_image__owner_model

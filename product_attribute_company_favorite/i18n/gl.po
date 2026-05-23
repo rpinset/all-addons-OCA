@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_attribute_company_favorite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 16:43+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model,name:product_attribute_company_favorite.model_product_attribute_value
+msgid "Attribute Value"
+msgstr "Valor do Atributo"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model,name:product_attribute_company_favorite.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configuración de Axustes"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_product_attribute__is_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_product_attribute_favorite_mixin__is_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_product_attribute_value__is_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_product_template_attribute_line__is_favorite
+msgid "Favorite"
+msgstr "Favorito"
+
+#. module: product_attribute_company_favorite
+#: model_terms:ir.ui.view,arch_db:product_attribute_company_favorite.product_attribute_view_search
+msgid "Favorites"
+msgstr "Favoritos"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_product_attribute__is_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_product_attribute_favorite_mixin__is_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_product_attribute_value__is_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_product_template_attribute_line__is_favorite
+msgid "If checked, this record can be linked to a product template."
+msgstr "Se está marcada, este rexistro pode vincularse a un modelo de produto."
+
+#. module: product_attribute_company_favorite
+#: model:ir.model,name:product_attribute_company_favorite.model_product_attribute_favorite_mixin
+msgid ""
+"Methods used both in product.attribute and\n"
+"    product.attribute.value to implement is_favorite functionalities\n"
+"    "
+msgstr ""
+"Métodos utilizados tanto en product.attribute como\n"
+"    product.attribute.value para implementar funcionalidades is_favorite\n"
+"    "
+
+#. module: product_attribute_company_favorite
+#: model:ir.model,name:product_attribute_company_favorite.model_product_attribute
+msgid "Product Attribute"
+msgstr "Atributo de produto"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model,name:product_attribute_company_favorite.model_product_template_attribute_line
+msgid "Product Template Attribute Line"
+msgstr "Modelo de Liña de Atributo de Produto"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_res_config_settings__new_attribute_favorite_for_all_companies
+msgid "Set new attribute as favorite for all companies"
+msgstr "Establecer novo atributo como favorito para todas as compañías"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,field_description:product_attribute_company_favorite.field_res_config_settings__new_attribute_value_favorite_for_all_companies
+msgid "Set new attributes value as favorite for all companies"
+msgstr ""
+"Establecer o valor dos novos atributos como favorito para todas as compañías"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_res_config_settings__new_attribute_favorite_for_all_companies
+msgid ""
+"When a new attribute is created,\n"
+"        set it as favorite for all companies.\n"
+"        Otherwise it is only set as favorite for the user's current company"
+msgstr ""
+"Cando se crea un novo atributo,\n"
+"        establécese como favorito para todas as compañías.\n"
+"        Pola contra, só se establecerá como favorito para a compañía actual "
+"do usuario"
+
+#. module: product_attribute_company_favorite
+#: model_terms:ir.ui.view,arch_db:product_attribute_company_favorite.res_config_settings_view_form
+msgid ""
+"When a new attribute is created, set it as favorite for all companies. "
+"Otherwise, it is only set as favorite for the user's current company"
+msgstr ""
+"Cando se crea un novo atributo, establécese como favorito para todas as "
+"compañías. Pola contra, só se establecerá como favorito para a compañía "
+"actual do usuario"
+
+#. module: product_attribute_company_favorite
+#: model:ir.model.fields,help:product_attribute_company_favorite.field_res_config_settings__new_attribute_value_favorite_for_all_companies
+msgid ""
+"When a new attribute value is created,\n"
+"        set it as favorite for all companies.\n"
+"        Otherwise it is only set as favorite for the user's current company"
+msgstr ""
+"Cando se crea un novo valor de atributo,\n"
+"        establécese como favorito para todas as compañías.\n"
+"        Pola contra, só se establecerá como favorito para a compañía actual "
+"do usuario"
+
+#. module: product_attribute_company_favorite
+#: model_terms:ir.ui.view,arch_db:product_attribute_company_favorite.res_config_settings_view_form
+msgid ""
+"When a new attribute value is created, set it as favorite for all companies."
+" Otherwise, it is only set as favorite for the user's current company"
+msgstr ""
+"Cando se crea un novo valor de atributo, establécese como favorito para "
+"todas as compañías. Pola contra, só se establecerá como favorito para a "
+"compañía actual do usuario"

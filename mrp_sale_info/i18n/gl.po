@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_sale_info
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 15:56+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__commitment_date
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__commitment_date
+msgid "Commitment Date"
+msgstr "Data compromiso"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__partner_id
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__client_order_ref
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__client_order_ref
+msgid "Customer Reference"
+msgstr "Referencia do cliente"
+
+#. module: mrp_sale_info
+#: model:ir.model,name:mrp_sale_info.model_mrp_production
+msgid "Production Order"
+msgstr "Orde de Produción"
+
+#. module: mrp_sale_info
+#: model_terms:ir.ui.view,arch_db:mrp_sale_info.mrp_production_workorder_form_view_inherit
+msgid "Sale information"
+msgstr "Información de venda"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__sale_id
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_workorder__sale_id
+msgid "Sale order"
+msgstr "Pedido de venda"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,field_description:mrp_sale_info.field_mrp_production__source_procurement_group_id
+msgid "Source Procurement Group"
+msgstr "Orixe de Grupo de Adquisicións"
+
+#. module: mrp_sale_info
+#: model:ir.model,name:mrp_sale_info.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regra de existencias"
+
+#. module: mrp_sale_info
+#: model:ir.model.fields,help:mrp_sale_info.field_mrp_production__commitment_date
+#: model:ir.model.fields,help:mrp_sale_info.field_mrp_workorder__commitment_date
+msgid ""
+"This is the delivery date promised to the customer. If set, the delivery "
+"order will be scheduled based on this date rather than product lead times."
+msgstr ""
+"É a data de entrega prometida ao cliente. Se se establece, a orde de entrega "
+"programarase en función desta data e non dos prazos de entrega do produto."
+
+#. module: mrp_sale_info
+#: model:ir.model,name:mrp_sale_info.model_mrp_workorder
+msgid "Work Order"
+msgstr "Orde de traballo"

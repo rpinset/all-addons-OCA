@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_roulier_laposte_fr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:30+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__laposte_insurance
+msgid "Assurance"
+msgstr "Garantía"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__105000
+msgid "Assurance 1050 €"
+msgstr "Seguro 1050"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__120000
+msgid "Assurance 1200 €"
+msgstr "Aseguramento 1200 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__135000
+msgid "Assurance 1350 €"
+msgstr "Aseguramento 1350 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__15000
+msgid "Assurance 150 €"
+msgstr "Aseguramento 150 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__150000
+msgid "Assurance 1500 €"
+msgstr "Aseguramento 1500 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__30000
+msgid "Assurance 300 €"
+msgstr "Aseguramento 300 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__45000
+msgid "Assurance 450 €"
+msgstr "Aseguramento 450 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__60000
+msgid "Assurance 600 €"
+msgstr "Aseguramento 600 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__75000
+msgid "Assurance 750 €"
+msgstr "Aseguramento 750 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_insurance__90000
+msgid "Assurance 900 €"
+msgstr "Aseguramento 900 €"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_carrier_account
+msgid "Base account datas"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_package_type__package_carrier_type
+msgid "Carrier"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_DOM
+msgid "Colissimo Domicile (FR + Europe)"
+msgstr "Domicilio Colissimo (FR + Europa)"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_COM
+msgid "Colissimo Domicile Outre-Mer"
+msgstr "Domicilio Colissimo Outre-Mer"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_CDS
+msgid "Colissimo Domicile Outre-Mer sign."
+msgstr "Signo Colissimo Domicilio Outre-Mer."
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_DOS
+msgid "Colissimo Domicile sign. (FR + Europe)"
+msgstr "Signo de domicilio de Colissimo. (FR + Europa)"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_COLI
+msgid "Colissimo Expert International"
+msgstr "Colissimo Experto Internacional"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_CORE
+msgid "Colissimo Retour France"
+msgstr "Colissimo Retour Francia"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_CORI
+msgid "Colissimo Retour International"
+msgstr "Colissimo Retour Internacional"
+
+#. module: delivery_roulier_laposte_fr
+#: model:product.template,name:delivery_roulier_laposte_fr.laposte_product_product_template
+msgid "Coûts de livraison - Laposte"
+msgstr "Gastos de envío - Laposte"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_203dpi
+msgid "DPL 10x15 203dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_300dpi
+msgid "DPL 10x15 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__display_insurance
+msgid ""
+"Define a condition to display/hide your custom Insurancefield with a "
+"dedicated view"
+msgstr ""
+"Defina unha condición para mostrar/ocultar o seu campo de seguro "
+"personalizado cunha vista dedicada"
+
+#. module: delivery_roulier_laposte_fr
+#. odoo-python
+#: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
+#, python-format
+msgid ""
+"Incident\n"
+"-----------\n"
+"%(displ_exception_message)s\n"
+"Données transmises:\n"
+"-----------------------------\n"
+"%(displ_data_transmitted)s"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_package_type__package_carrier_type__laposte_fr
+msgid "La Poste"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_carrier_account__laposte_fr_file_format
+msgid "Label format"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__delivery_carrier__delivery_type__laposte_fr
+msgid "Laposte"
+msgstr "Laposte"
+
+#. module: delivery_roulier_laposte_fr
+#: model:delivery.carrier.template.option,name:delivery_roulier_laposte_fr.carrier_opt_tmpl_NM
+msgid "Non Mécanisable"
+msgstr "Non mecanizable"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_10x15_300dpi
+msgid "PDF 10x15 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_a4_300dpi
+msgid "PDF A4 300dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_quant_package
+msgid "Packages"
+msgstr "Paquetes"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,help:delivery_roulier_laposte_fr.field_stock_picking__laposte_recommande
+msgid "Paramètre incompatible avec le paramètre Assurance"
+msgstr "Parámetro incompatible co parámetro Asegurar"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,help:delivery_roulier_laposte_fr.field_stock_picking__laposte_insurance
+msgid "Paramètre incompatible avec le paramètre Recommandé"
+msgstr "Parámetro incompatible co parámetro Recomendado"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_delivery_carrier__delivery_type
+msgid "Provider"
+msgstr "Provedor"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__laposte_recommande
+msgid "Recommandé"
+msgstr "Recomendado"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_recommande__r1
+msgid "Recommendation R1"
+msgstr "Recomendación R1"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_recommande__r2
+msgid "Recommendation R2"
+msgstr "Recomendación R2"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_picking__laposte_recommande__r3
+msgid "Recommendation R3"
+msgstr "Recomendación R3"
+
+#. module: delivery_roulier_laposte_fr
+#. odoo-python
+#: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
+#, python-format
+msgid ""
+"Réponse de Laposte:\n"
+"%(ws_exception)s\n"
+"%(resolution)s"
+msgstr ""
+"Resposta de Laposte:\n"
+"%(ws_exception)s\n"
+"%(resolution)s"
+
+#. module: delivery_roulier_laposte_fr
+#. odoo-python
+#: code:addons/delivery_roulier_laposte_fr/models/stock_quant_package.py:0
+#, python-format
+msgid ""
+"Résolution\n"
+"-------------\n"
+"%sid"
+msgstr ""
+"Resolución\n"
+"-------------\n"
+"%side"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de Envío"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_package_type
+msgid "Stock package type"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_picking
+msgid "Transfer"
+msgstr "Transferencia"
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_203dpi
+msgid "ZPL 10x15 203dpi"
+msgstr ""
+
+#. module: delivery_roulier_laposte_fr
+#: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_300dpi
+msgid "ZPL 10x15 300dpi"
+msgstr ""

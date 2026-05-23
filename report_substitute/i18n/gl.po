@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* report_substitute
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:55+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: report_substitute
+#: model:ir.model,name:report_substitute.model_ir_actions_report_substitution_rule
+msgid "Action Report Substitution Rule"
+msgstr "Informe de acción Regula de substitución"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__create_date
+msgid "Created on"
+msgstr "Creado o"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__display_name
+msgid "Display Name"
+msgstr "Mostrar Nome"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__domain
+msgid "Domain"
+msgstr "Dominio"
+
+#. module: report_substitute
+#: model:ir.model,name:report_substitute.model_mail_thread
+msgid "Email Thread"
+msgstr "Fío de correo electrónico"
+
+#. module: report_substitute
+#: model:ir.model,name:report_substitute.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Asistente de redacción de correo electrónico"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__id
+msgid "ID"
+msgstr "ID(identificación)"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación o"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__write_date
+msgid "Last Updated on"
+msgstr "Ultima Actualización o"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__model
+msgid "Model Name"
+msgstr "Nome do modelo"
+
+#. module: report_substitute
+#: model:ir.model,name:report_substitute.model_ir_actions_report
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__action_report_id
+msgid "Report Action"
+msgstr "Informar Acción"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: report_substitute
+#: model:ir.actions.report,name:report_substitute.substitution_report_print_2
+msgid "Substitution 2 For Technical guide"
+msgstr "Substitución 2 Para Guía técnica"
+
+#. module: report_substitute
+#: model:ir.actions.report,name:report_substitute.substitution_report_print
+msgid "Substitution For Technical guide"
+msgstr "Substitución Para Guía técnica"
+
+#. module: report_substitute
+#: model_terms:ir.ui.view,arch_db:report_substitute.substitution_report
+msgid "Substitution Report"
+msgstr "Informe de substitución"
+
+#. module: report_substitute
+#: model_terms:ir.ui.view,arch_db:report_substitute.substitution_report_2
+msgid "Substitution Report 2"
+msgstr "Informe de substitución 2"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report_substitution_rule__substitution_action_report_id
+msgid "Substitution Report Action"
+msgstr "Acción do informe de substitución"
+
+#. module: report_substitute
+#: model:ir.model.fields,field_description:report_substitute.field_ir_actions_report__action_report_substitution_rule_ids
+#: model_terms:ir.ui.view,arch_db:report_substitute.ir_actions_report_form_view
+msgid "Substitution Rules"
+msgstr "Regras de substitución"
+
+#. module: report_substitute
+#. odoo-python
+#: code:addons/report_substitute/models/ir_actions_report_substitution_rule.py:0
+#, python-format
+msgid "Substitution infinite loop detected"
+msgstr "Detectado bucle infinito de substitución"

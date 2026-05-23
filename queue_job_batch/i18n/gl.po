@@ -1,0 +1,346 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* queue_job_batch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 17:18+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_needaction
+msgid "Action Needed"
+msgstr "Acción Necesaria"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de Actividade de Excepción"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_state
+msgid "Activity State"
+msgstr "Estado da Actividade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona Tipo de Actividade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_attachment_count
+msgid "Attachment Count"
+msgstr "Reconto de Arquivos Adxuntos"
+
+#. module: queue_job_batch
+#: model:ir.model,name:queue_job_batch.model_queue_job_batch
+msgid "Batch of jobs"
+msgstr "Lote de traballos"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__company_id
+msgid "Company"
+msgstr "Companía"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__completeness
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_form
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_tree
+msgid "Completeness"
+msgstr "Integridade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__display_name
+msgid "Display Name"
+msgstr "Mostrar Nome"
+
+#. module: queue_job_batch
+#: model:ir.model.fields.selection,name:queue_job_batch.selection__queue_job_batch__state__draft
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: queue_job_batch
+#: model:ir.model.fields.selection,name:queue_job_batch.selection__queue_job_batch__state__enqueued
+msgid "Enqueued"
+msgstr "En Cola"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__failed_job_count
+msgid "Failed Job Count"
+msgstr "Reconto de Traballos Errados"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__failed_percentage
+msgid "Failed Percentage"
+msgstr "Porcentaxe Fallada"
+
+#. module: queue_job_batch
+#: model:ir.model.fields.selection,name:queue_job_batch.selection__queue_job_batch__state__finished
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "Finished"
+msgstr "Terminado"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__finished_job_count
+msgid "Finished Job Count"
+msgstr "Reconto de Traballos Terminados"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores/as"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (socios)"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona de fonte impresionante, por exemplo fa-tasks"
+
+#. module: queue_job_batch
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "Group By"
+msgstr "Grupo por"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__has_message
+msgid "Has Message"
+msgstr "Ten Mensaxe"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__id
+msgid "ID"
+msgstr "ID"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona para indicar a excepción da actividade."
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "se está marcada, mensaxes novas requiren a súa atención."
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se está seleccionado, algunhas mensaxes teñen un erro de entrega."
+
+#. module: queue_job_batch
+#: model:ir.model.fields.selection,name:queue_job_batch.selection__queue_job_batch__state__progress
+msgid "In Progress"
+msgstr "En Progreso"
+
+#. module: queue_job_batch
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "In progress"
+msgstr "En progreso"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_is_follower
+msgid "Is Follower"
+msgstr "é Seguidor/a"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__is_read
+msgid "Is Read"
+msgstr "Lido"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__job_ids
+msgid "Job"
+msgstr "Traballo"
+
+#. module: queue_job_batch
+#. odoo-javascript
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#, python-format
+msgid ""
+"Job\n"
+"                        Batches"
+msgstr ""
+"Traballo\n"
+"                        Lotes"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job__job_batch_id
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_form
+msgid "Job Batch"
+msgstr "Lote de Traballos"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__job_count
+msgid "Job Count"
+msgstr "Cálculo de Traballos"
+
+#. module: queue_job_batch
+#: model:res.groups,name:queue_job_batch.group_queue_job_batch_user
+msgid "Job Queue Batch User"
+msgstr "Usuario da Cola de Traballos por Lotes"
+
+#. module: queue_job_batch
+#. odoo-javascript
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#: model:ir.actions.act_window,name:queue_job_batch.action_queue_job_batch
+#: model:ir.actions.act_window,name:queue_job_batch.action_view_your_queue_job_batch
+#: model:ir.ui.menu,name:queue_job_batch.menu_queue_job_batch
+#, python-format
+msgid "Job batches"
+msgstr "Lotes de traballo"
+
+#. module: queue_job_batch
+#: model:ir.actions.act_window,name:queue_job_batch.action_queue_job_related
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_form
+msgid "Jobs"
+msgstr "Traballos"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación o"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Arquivo adxunto principal"
+
+#. module: queue_job_batch
+#. odoo-javascript
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#, python-format
+msgid "Mark as Read"
+msgstr "Marcar como Lido"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_has_error
+msgid "Message Delivery error"
+msgstr "Erro en Entrega de Mensaxe"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_ids
+msgid "Messages"
+msgstr "Mensaxes"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "A miña data límite da actividade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Data limite proxima actividade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumo de próxima actividade"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo de seguinte actividade"
+
+#. module: queue_job_batch
+#. odoo-javascript
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#, python-format
+msgid "No jobs to view."
+msgstr "Sen traballos a visualizar."
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Accións"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de erros"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensaxes que requiren unha acción"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensaxes cun erro de entrega"
+
+#. module: queue_job_batch
+#: model:ir.model,name:queue_job_batch.model_queue_job
+msgid "Queue Job"
+msgstr "Cola de Traballo"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__state
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "State"
+msgstr "Estado"
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado baseado en actividades\n"
+"Atrasado: A data xa pasou\n"
+"Hoxe: A actividade é para hoxe\n"
+"Planeada: Actividades futuras."
+
+#. module: queue_job_batch
+#: model:ir.model.fields,help:queue_job_batch.field_queue_job_batch__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividade excepcional rexistrada."
+
+#. module: queue_job_batch
+#: model:ir.model.fields,field_description:queue_job_batch.field_queue_job_batch__user_id
+#: model_terms:ir.ui.view,arch_db:queue_job_batch.view_queue_job_batch_search
+msgid "User"
+msgstr "Usuario"
+
+#. module: queue_job_batch
+#. odoo-javascript
+#: code:addons/queue_job_batch/static/src/xml/queue_job_batch_menu.xml:0
+#, python-format
+msgid "View All"
+msgstr "Ver todos"

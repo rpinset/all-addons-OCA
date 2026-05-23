@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_hierarchy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 15:56+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model,name:mrp_bom_hierarchy.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Lista de Material"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model,name:mrp_bom_hierarchy.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Liña de Lista de Materiais"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.mrp_bom_hierarchy_tree_view
+msgid "Child BoMs"
+msgstr "LdMs Infantil"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__child_bom_ids
+msgid "Child Bom"
+msgstr "LdM Infantil"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.view_mrp_bom_filter
+msgid "Has child BoMs"
+msgstr "Ten LdM Infantil"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__has_child
+msgid "Has components"
+msgstr "Ten compoñentes"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.view_mrp_bom_filter
+msgid "Has parent BoMs"
+msgstr "Ten LdM Parental"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom_line__has_bom
+msgid "Has sub BoM"
+msgstr "Ten sub LdM"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__has_parent
+msgid "Is component"
+msgstr "É compoñente"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.mrp_bom_hierarchy_tree_view
+msgid "Parent BoMs"
+msgstr "LdMs Parental"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__parent_bom_ids
+msgid "Parent Bom"
+msgstr "LdM Parental"
+
+#. module: mrp_bom_hierarchy
+#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__product_has_other_bom
+msgid "Product has other BoMs"
+msgstr "O produto ten outras LdMs"
+
+#. module: mrp_bom_hierarchy
+#. odoo-python
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
+#, python-format
+msgid "This operator is not supported"
+msgstr "Este operador non é compatible"
+
+#. module: mrp_bom_hierarchy
+#. odoo-python
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
+#, python-format
+msgid "Value should be True or False (not %s)"
+msgstr "O valor debe ser Verdadeiro ou Falso (non %s)"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.mrp_bom_form_view
+msgid "View product's BoM"
+msgstr "Ver a lista de materiais do produto"
+
+#. module: mrp_bom_hierarchy
+#: model_terms:ir.ui.view,arch_db:mrp_bom_hierarchy.mrp_bom_hierarchy_tree_view
+msgid "View product's other BoMs"
+msgstr "Ver outras listas de materiais do produto"
+
+#. module: mrp_bom_hierarchy
+#. odoo-python
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom_line.py:0
+#, python-format
+msgid ""
+"You should provide either a product or a product template to search a BoM "
+"Line"
+msgstr ""
+"Debe proporcionar un produto ou un modelo de produto para buscar unha liña "
+"da lista de materiais"

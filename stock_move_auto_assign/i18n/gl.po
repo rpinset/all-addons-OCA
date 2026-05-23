@@ -1,0 +1,35 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_move_auto_assign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-23 18:33+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"Language-Team: none\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_move_auto_assign
+#: model:ir.model,name:stock_move_auto_assign.model_product_product
+msgid "Product Variant"
+msgstr "Variantes de produto"
+
+#. module: stock_move_auto_assign
+#: model:ir.model,name:stock_move_auto_assign.model_stock_move
+msgid "Stock Move"
+msgstr "Movemento de stock"
+
+#. module: stock_move_auto_assign
+#. odoo-python
+#: code:addons/stock_move_auto_assign/models/stock_move.py:0
+#, python-format
+msgid "Try reserving \"%(product)s\" for quantities added in: %(locations)s"
+msgstr ""
+"Tente reservar \"%(product)s\" para as cantidades agregadas en: %(locations)s"

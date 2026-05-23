@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-13 03:45+0000\n"
-"PO-Revision-Date: 2018-03-13 03:45+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2018\n"
+"PO-Revision-Date: 2026-05-23 04:22+0000\n"
+"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: delivery_auto_refresh
 #: model_terms:ir.ui.view,arch_db:delivery_auto_refresh.res_config_settings_view_form
@@ -28,7 +29,7 @@ msgstr ""
 #. module: delivery_auto_refresh
 #: model:ir.model.fields,field_description:delivery_auto_refresh.field_sale_order__available_carrier_ids
 msgid "Available Carrier"
-msgstr ""
+msgstr "Transportista dispoñible"
 
 #. module: delivery_auto_refresh
 #: model:ir.model,name:delivery_auto_refresh.model_res_company
@@ -38,7 +39,7 @@ msgstr ""
 #. module: delivery_auto_refresh
 #: model:ir.model,name:delivery_auto_refresh.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Axustes de Configuración"
 
 #. module: delivery_auto_refresh
 #: model_terms:ir.ui.view,arch_db:delivery_auto_refresh.res_config_settings_view_form
@@ -65,12 +66,12 @@ msgstr ""
 #. module: delivery_auto_refresh
 #: model:ir.model,name:delivery_auto_refresh.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Ordes de Venda"
 
 #. module: delivery_auto_refresh
 #: model:ir.model,name:delivery_auto_refresh.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
+msgstr "Liña de Orde de Venda"
 
 #. module: delivery_auto_refresh
 #: model:ir.model.fields,field_description:delivery_auto_refresh.field_res_company__sale_auto_assign_carrier_on_create
@@ -87,7 +88,7 @@ msgstr "Transferencia"
 #: model:ir.model.fields,field_description:delivery_auto_refresh.field_res_company__sale_auto_void_delivery_line
 #: model:ir.model.fields,field_description:delivery_auto_refresh.field_res_config_settings__sale_auto_void_delivery_line
 msgid "Void delivery lines automatically"
-msgstr ""
+msgstr "Anular liñas de entrega automaticamente"
 
 #. module: delivery_auto_refresh
 #: model_terms:ir.ui.view,arch_db:delivery_auto_refresh.res_config_settings_view_form
