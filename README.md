@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `18.0`
 
-Last build: **2026-05-23 21:36 UTC** (elapsed 71s)
+Last build: **2026-05-25 05:00 UTC** (elapsed 129s)
 
 - Repos integrated: **143**
-- Canonical modules: **2611**
+- Canonical modules: **2613**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **111**
 
@@ -19,7 +19,7 @@ Last build: **2026-05-23 21:36 UTC** (elapsed 71s)
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 40 | 05a66c9 2026-05-20 OCA-git-bot [BOT] post-merge updates |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 11 | a29ce25 2026-04-27 OCA-git-bot [BOT] post-merge updates |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 14 | 9d9cffd 2026-04-08 mymage Translated using Weblate (Italian) |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | 61 | 7d9b2b5 2026-05-19 OCA-git-bot [BOT] post-merge updates |
+| [account-invoicing](https://github.com/OCA/account-invoicing) | 62 | 1fdd497 2026-05-25 OCA-git-bot [BOT] post-merge updates |
 | [account-payment](https://github.com/OCA/account-payment) | 23 | c4953a7 2026-05-18 OCA-git-bot [BOT] post-merge updates |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 16 | cb91d0a 2026-05-10 Ed-Spain Translated using Weblate (Spanish) |
 | [agreement](https://github.com/OCA/agreement) | 12 | 3e855a3 2026-05-22 Weblate Update translation files |
@@ -43,11 +43,11 @@ Last build: **2026-05-23 21:36 UTC** (elapsed 71s)
 | [data-protection](https://github.com/OCA/data-protection) | 4 | 60211f7 2025-12-09 mymage Translated using Weblate (Italian) |
 | [ddmrp](https://github.com/OCA/ddmrp) | 19 | 5e4cd37 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 55 | 85364f6 2026-05-22 Víctor Martínez Translated using Weblate (Spanish) |
-| [dms](https://github.com/OCA/dms) | 7 | f349698 2026-05-14 Mohamed Essam Salem Translated using Weblate (Arabic) |
+| [dms](https://github.com/OCA/dms) | 7 | 69f82dc 2026-05-24 Ed-Spain Translated using Weblate (Spanish) |
 | [donation](https://github.com/OCA/donation) | 2 | 357b6a3 2026-02-04 OCA-git-bot [BOT] post-merge updates |
 | [e-commerce](https://github.com/OCA/e-commerce) | 35 | 58e737b 2026-05-23 Eugeni Chafer Translated using Weblate (Catalan) |
 | [edi](https://github.com/OCA/edi) | 32 | 504d040 2026-05-22 OCA-git-bot [BOT] post-merge updates |
-| [edi-framework](https://github.com/OCA/edi-framework) | 26 | f34cddb 2026-05-20 Weblate Update translation files |
+| [edi-framework](https://github.com/OCA/edi-framework) | 27 | 6f12a27 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | 5 | 9ac1da6 2025-09-12 OCA-git-bot [BOT] post-merge updates |
 | [event](https://github.com/OCA/event) | 22 | 874c8b8 2026-05-14 Ben Brich Translated using Weblate (German) |
 | [field-service](https://github.com/OCA/field-service) | 31 | 9560bf6 2026-05-15 Rolando Pérez Rebollo Translated using Weblate (Spanish) |
@@ -96,7 +96,7 @@ Last build: **2026-05-23 21:36 UTC** (elapsed 71s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 3 | b1a0df5 2026-05-11 Bosd Translated using Weblate (Dutch) |
 | [operating-unit](https://github.com/OCA/operating-unit) | 16 | 786ba0e 2026-05-12 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 92 | da5570d 2026-05-20 OCA-git-bot [BOT] post-merge updates |
-| [payroll](https://github.com/OCA/payroll) | 4 | 3fda224 2026-05-19 mymage Translated using Weblate (Italian) |
+| [payroll](https://github.com/OCA/payroll) | 4 | 9334a0c 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [pms](https://github.com/OCA/pms) | 1 | 58405c1 2025-07-29 OCA-git-bot [BOT] post-merge updates |
 | [pos](https://github.com/OCA/pos) | 22 | 6b8ba3a 2026-05-21 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 97 | 2a3cc9d 2026-05-08 OCA-git-bot [BOT] post-merge updates |

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-18 18:06+0000\n"
+"PO-Revision-Date: 2026-05-24 17:51+0000\n"
 "Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -122,7 +122,7 @@ msgstr "Total Divisa de la Compañía"
 #: model:ir.model.fields,field_description:account_manual_currency.field_account_payment_register__type_currency
 #, fuzzy
 msgid "Type Currency"
-msgstr "Tipo de moneda"
+msgstr "Tipo Divisa"
 
 #. module: account_manual_currency
 #. odoo-python

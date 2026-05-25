@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 ForgeFlow S.L. (https://www.forgeflow.com)
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="purchase_order_form" model="ir.ui.view">
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <page name="purchase_delivery_invoice" position="after">
+                <page name="edi" string="EDI">
+                    <group name="edi_main">
+                        <field
+                            name="edi_disable_auto"
+                            string="Disable automated actions"
+                        />
+                        <field name="origin_exchange_record_id" />
+                        <field name="origin_exchange_type_id" />
+                    </group>
+                </page>
+            </page>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-retweet"
+                    invisible="not exchange_record_count"
+                    name="action_view_edi_records"
+                >
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="exchange_record_count" />
+                        </span>
+                        <span class="o_stat_text">EDI</span>
+                    </div>
+                </button>
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']/list/field[@name='name']"
+                position="before"
+            >
+                <field name="edi_id" optional="hide" />
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form//notebook" position="after">
+                <group name="edi" invisible="not origin_exchange_record_id">
+                    <field name="edi_id" />
+                    <field name="origin_exchange_record_id" />
+                    <field name="origin_exchange_type_id" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
