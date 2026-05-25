@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-05-23 21:33 UTC** (elapsed 109s)
+Last build: **2026-05-25 04:57 UTC** (elapsed 74s)
 
 - Repos integrated: **142**
 - Canonical modules: **3039**
@@ -53,7 +53,7 @@ Last build: **2026-05-23 21:33 UTC** (elapsed 109s)
 | [edi-framework](https://github.com/OCA/edi-framework) | 22 | 4a295eb 2026-02-20 OCA-git-bot [BOT] post-merge updates |
 | [event](https://github.com/OCA/event) | 20 | 9bc63bd 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [field-service](https://github.com/OCA/field-service) | 27 | 2c03183 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [fleet](https://github.com/OCA/fleet) | 17 | 5384486 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [fleet](https://github.com/OCA/fleet) | 17 | 3f88e12 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [geospatial](https://github.com/OCA/geospatial) | 10 | ba5121e 2026-01-27 OCA-git-bot [BOT] post-merge updates |
 | [helpdesk](https://github.com/OCA/helpdesk) | 25 | 57f1feb 2026-05-20 risto42 Translated using Weblate (French) |
 | [hr](https://github.com/OCA/hr) | 40 | 9f98524 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -99,7 +99,7 @@ Last build: **2026-05-23 21:33 UTC** (elapsed 109s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 15 | 1535a4a 2026-04-30 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 93 | 44c8226 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [payroll](https://github.com/OCA/payroll) | 6 | 7599d12 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [pms](https://github.com/OCA/pms) | 10 | 53c93a0 2026-05-16 OCA-git-bot [BOT] post-merge updates |
+| [pms](https://github.com/OCA/pms) | 10 | 29545e9 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [pos](https://github.com/OCA/pos) | 90 | bd4dcc2 2026-05-01 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 103 | 8233493 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-configurator](https://github.com/OCA/product-configurator) | 3 | 95c8b9e 2026-01-19 mymage Translated using Weblate (Italian) |
