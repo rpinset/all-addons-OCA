@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 03:38+0000\n"
-"PO-Revision-Date: 2026-05-09 17:45+0000\n"
+"PO-Revision-Date: 2026-05-25 21:46+0000\n"
 "Last-Translator: Peter Schubert <hello@it-consult.org>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
@@ -331,7 +331,7 @@ msgstr "Erstes"
 msgid "Invalid mandate type in '%s'. Valid ones are 'Recurrent' or 'One-Off'"
 msgstr ""
 "Ungültiger Auftrags-Typ in '%s'. Gültige Typen sind „Wiederkehrend“ oder „"
-"Einmalig“."
+"Einmalig“"
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model.fields,field_description:account_banking_sepa_direct_debit.field_account_banking_mandate__is_sent
@@ -384,9 +384,8 @@ msgstr "PAIN-Version"
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model,name:account_banking_sepa_direct_debit.model_account_payment_line
-#, fuzzy
 msgid "Payment Lines"
-msgstr "Bankzahlungszeilen"
+msgstr "Zahungszeilen"
 
 #. module: account_banking_sepa_direct_debit
 #: model:ir.model,name:account_banking_sepa_direct_debit.model_account_payment_method

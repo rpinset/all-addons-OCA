@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-09 14:56+0000\n"
-"PO-Revision-Date: 2026-05-09 17:45+0000\n"
+"PO-Revision-Date: 2026-05-25 21:46+0000\n"
 "Last-Translator: Peter Schubert <hello@it-consult.org>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
@@ -439,6 +439,8 @@ msgid ""
 "Only valid mandates can be used in a payment line. A cancelled mandate is a "
 "mandate that has been cancelled by the customer."
 msgstr ""
+"In einer Zahlungszeile können nur gültige Mandate verwendet werden. Ein "
+"widerrufenes Mandat ist ein Mandat, das vom Kunden widerrufen wurde."
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__partner_id
@@ -492,7 +494,7 @@ msgstr "Zugehörige Zahlungszeilen"
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Verantwortlicher Benutzer"
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__scan
@@ -528,13 +530,17 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Status basierend auf Aktivitäten\n"
+"Überfällig: Das Fälligkeitsdatum ist bereits überschritten\n"
+"Heute: Das Datum der Aktivität ist heute\n"
+"Geplant: Zukünftige Aktivitäten."
 
 #. module: account_banking_mandate
 #. odoo-python
 #: code:addons/account_banking_mandate/models/account_banking_mandate.py:0
 #, python-format
 msgid "The date of signature of mandate '%s' is in the future!"
-msgstr ""
+msgstr "Das Datum der Unterzeichnung des Mandats „%s“ liegt in der Zukunft!"
 
 #. module: account_banking_mandate
 #. odoo-python
@@ -544,6 +550,8 @@ msgid ""
 "The mandate '%s' can't have a date of last debit before the date of "
 "signature."
 msgstr ""
+"Das Mandat „%s“ darf kein Datum der letzten Abbuchung aufweisen, das vor dem "
+"Datum der Unterzeichnung liegt."
 
 #. module: account_banking_mandate
 #. odoo-python
@@ -553,6 +561,8 @@ msgid ""
 "The payment line number {line_number} a different company than that of the "
 "linked mandate {mandate})."
 msgstr ""
+"Die Zahlungs Zeilennummer {line_number} gehört zu einem anderen Unternehmen "
+"als das mit dem Mandat {mandate} verknüpfte."
 
 #. module: account_banking_mandate
 #. odoo-python
@@ -564,6 +574,9 @@ msgid ""
 "'{mandate_ref}' (this mandate is attached to the bank account "
 "'{mandate_bank_account}')."
 msgstr ""
+"Die Zahlungszeilennummer {line_number} ist mit dem Bankkonto „"
+"{line_bank_account}“ verknüpft, das nicht zum Mandat „{mandate_ref}“ gehört "
+"(dieses Mandat ist mit dem Bankkonto „{mandate_bank_account}“ verknüpft)."
 
 #. module: account_banking_mandate
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate.view_mandate_form
@@ -574,12 +587,12 @@ msgstr "Art"
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__type
 msgid "Type of Mandate"
-msgstr ""
+msgstr "Art des Mandats"
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,help:account_banking_mandate.field_account_banking_mandate__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Art der im Datensatz erfassten Ausnahmeaktivität."
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__unique_mandate_reference
@@ -601,12 +614,12 @@ msgstr "Bestätigen"
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Webseiten Nachrichten"
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,help:account_banking_mandate.field_account_banking_mandate__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Verlauf der Website-Kommunikation"
 
 #. module: account_banking_mandate
 #. odoo-python
@@ -616,6 +629,8 @@ msgid ""
 "You cannot change the company of Partner Bank %s, as there exists mandates "
 "referencing it that belong to another company."
 msgstr ""
+"Sie können die Firma der Partnerbank %s nicht ändern, da es Mandate gibt, "
+"die sich darauf beziehen und zu einem anderen Unternehmen gehören."
 
 #. module: account_banking_mandate
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate.view_mandate_form
@@ -623,6 +638,9 @@ msgid ""
 "You should set a mandate back to draft only if you cancelled it by mistake. "
 "Do you want to continue?"
 msgstr ""
+"Sie sollten einen Auftrag nur dann wieder auf den Entwurfsstatus "
+"zurücksetzen, wenn Sie ihn versehentlich storniert haben. Möchten Sie "
+"fortfahren?"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Zuletzt geändert am"
