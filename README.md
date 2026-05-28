@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-05-25 04:54 UTC** (elapsed 85s)
+Last build: **2026-05-28 16:09 UTC** (elapsed 104s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -87,7 +87,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 85s)
 | [partner-contact](https://github.com/OCA/partner-contact) | 62 | b8c7c6d 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [payroll](https://github.com/OCA/payroll) | 2 | 21b99b0 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 22 | 55da831 2025-07-30 mymage Translated using Weblate (Italian) |
-| [product-attribute](https://github.com/OCA/product-attribute) | 59 | de5d512 2026-01-19 mymage Translated using Weblate (Italian) |
+| [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 11 | 6db146b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [project](https://github.com/OCA/project) | 38 | 0271ea5 2025-06-21 mymage Translated using Weblate (Italian) |
