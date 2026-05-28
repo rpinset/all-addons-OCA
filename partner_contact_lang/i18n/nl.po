@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-25 03:41+0000\n"
-"PO-Revision-Date: 2017-01-25 03:41+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-05-26 18:54+0000\n"
+"Last-Translator: Ronald Portier <ronald@therp.nl>\n"
 "Language-Team: Dutch (https://www.transifex.com/oca/teams/23907/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: partner_contact_lang
 #: model:ir.model,name:partner_contact_lang.model_res_partner
@@ -26,7 +27,7 @@ msgstr ""
 #. module: partner_contact_lang
 #: model_terms:ir.ui.view,arch_db:partner_contact_lang.view_res_partner_filter
 msgid "Language"
-msgstr ""
+msgstr "Taal"
 
 #~ msgid "Partner"
 #~ msgstr "Partner"

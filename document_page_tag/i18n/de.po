@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: knowledge (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-31 02:38+0000\n"
-"PO-Revision-Date: 2025-03-14 10:12+0000\n"
-"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
+"PO-Revision-Date: 2026-05-26 18:46+0000\n"
+"Last-Translator: smaddlsoft <jm.veddeler@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/oca/OCA-knowledge-8-0/"
 "language/de/)\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: document_page_tag
 #: model:ir.model,name:document_page_tag.model_document_page_tag
@@ -79,7 +79,7 @@ msgstr "ID"
 #. module: document_page_tag
 #: model:ir.model.fields,field_description:document_page_tag.field_document_page__tag_ids
 msgid "Keywords"
-msgstr "Schlüsselbegriffe"
+msgstr "Stichwörter"
 
 #. module: document_page_tag
 #: model:ir.model.fields,field_description:document_page_tag.field_document_page_tag____last_update

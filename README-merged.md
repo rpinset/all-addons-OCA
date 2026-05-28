@@ -300,6 +300,9 @@ and promote its widespread use.
 ## From OCA/account-financial-tools
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-financial-tools
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-tools&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml?query=branch%3A16.0)
@@ -307,8 +310,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-financial-tools-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-tools-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-financial-tools
 
 TODO: add repo description.
 
@@ -457,6 +458,9 @@ and promote its widespread use.
 ## From OCA/account-invoice-reporting
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-invoice-reporting
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoice-reporting&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml?query=branch%3A16.0)
@@ -464,8 +468,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/account-invoice-reporting-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoice-reporting-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# account-invoice-reporting
 
 TODO: add repo description.
 
@@ -493,6 +495,7 @@ addon | version | maintainers | summary
 [account_reporting_volume](account_reporting_volume/) | 16.0.1.0.0 |  | Volume in the invoices analysis view
 [account_reporting_weight](account_reporting_weight/) | 16.0.1.0.0 |  | Weights in the invoices analysis view
 [partner_time_to_pay](partner_time_to_pay/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Add receivables and payables statistics to partners
+[stock_account_invoice_report_lot_expiry](stock_account_invoice_report_lot_expiry/) | 16.0.1.0.5 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display expiry date in the lots table of the invoice report
 
 [//]: # (end addons)
 
@@ -1334,7 +1337,7 @@ addon | version | maintainers | summary
 [company_sanitary_registry](company_sanitary_registry/) | 16.0.1.2.0 |  | Sanitary Registry
 [l10n_eu_nace](l10n_eu_nace/) | 16.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | European NACE partner categories
 [product_fao_fishing](product_fao_fishing/) | 16.0.1.0.1 |  | Set fishing areas and capture technology
-[product_packaging_unece](product_packaging_unece/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | UNECE nomenclature for product packaging
+[product_packaging_unece](product_packaging_unece/) | 16.0.1.1.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | UNECE nomenclature for product packaging
 [uom_unece](uom_unece/) | 16.0.1.3.1 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 
 [//]: # (end addons)
@@ -1635,7 +1638,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 16.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 16.0.2.14.3 |  | Recurring - Contracts Management
+[contract](contract/) | 16.0.2.15.0 |  | Recurring - Contracts Management
 [contract_analytic_tag](contract_analytic_tag/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Contract Analytic Tag
 [contract_forecast](contract_forecast/) | 16.0.1.0.0 |  | Contract forecast
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Contract Invoice Start End Dates
@@ -2391,18 +2394,18 @@ addon | version | maintainers | summary
 [account_invoice_edifact](account_invoice_edifact/) | 16.0.1.0.0 |  | Generate customer invoices with EDIFACT/D96A format
 [account_invoice_export](account_invoice_export/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export Job
-[account_invoice_facturx](account_invoice_facturx/) | 16.0.2.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx](account_invoice_facturx/) | 16.0.2.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Factur-X invoices with Py3o reporting engine
 [account_invoice_import](account_invoice_import/) | 16.0.2.5.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import supplier invoices/refunds as PDF or XML files
 [account_invoice_import_facturx](account_invoice_import_facturx/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Factur-X/ZUGFeRD Vendor Bills
 [account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import simple PDF vendor bills
 [account_invoice_import_ubl](account_invoice_import_ubl/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import UBL XML supplier invoices/refunds
 [account_invoice_ubl](account_invoice_ubl/) | 16.0.1.0.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Generate UBL XML file for customer invoices/refunds
-[base_business_document_import](base_business_document_import/) | 16.0.1.3.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
+[base_business_document_import](base_business_document_import/) | 16.0.1.4.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Use phone numbers to match partners upon import of business documents
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 16.0.1.0.2 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
-[base_edifact](base_edifact/) | 16.0.1.5.1 | <a href='https://github.com/rmorant'><img src='https://github.com/rmorant.png' width='32' height='32' style='border-radius:50%;' alt='rmorant'/></a> | UN/EDIFACT/D96A utilities using pydifact parser
+[base_edifact](base_edifact/) | 16.0.1.6.0 | <a href='https://github.com/rmorant'><img src='https://github.com/rmorant.png' width='32' height='32' style='border-radius:50%;' alt='rmorant'/></a> | UN/EDIFACT/D96A utilities using pydifact parser
 [base_facturx](base_facturx/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Factur-X/ZUGFeRD
 [base_ubl](base_ubl/) | 16.0.1.2.1 |  | Base module for Universal Business Language (UBL)
 [base_ubl_payment](base_ubl_payment/) | 16.0.1.0.1 |  | Payment-related code for Universal Business Language (UBL)
@@ -3522,7 +3525,7 @@ addon | version | maintainers | summary
 [l10n_br_account_renegotiation](l10n_br_account_renegotiation/) | 16.0.1.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Allows renegotiating payment installments on posted invoices in Brazil
 [l10n_br_account_withholding](l10n_br_account_withholding/) | 16.0.3.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Withholding Invoice Generator
 [l10n_br_base](l10n_br_base/) | 16.0.6.4.3 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Customization of base module for implementations in Brazil.
-[l10n_br_cnab_structure](l10n_br_cnab_structure/) | 16.0.3.1.1 | <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> <a href='https://github.com/kaynnan'><img src='https://github.com/kaynnan.png' width='32' height='32' style='border-radius:50%;' alt='kaynnan'/></a> | This module allows defining the structure for generating the CNAB file. Used to exchange information with Brazilian banks.
+[l10n_br_cnab_structure](l10n_br_cnab_structure/) | 16.0.3.2.0 | <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> <a href='https://github.com/kaynnan'><img src='https://github.com/kaynnan.png' width='32' height='32' style='border-radius:50%;' alt='kaynnan'/></a> | This module allows defining the structure for generating the CNAB file. Used to exchange information with Brazilian banks.
 [l10n_br_cnpj_search](l10n_br_cnpj_search/) | 16.0.3.3.1 |  | Integração com os Webservices da ReceitaWS e SerPro
 [l10n_br_coa](l10n_br_coa/) | 16.0.2.6.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base do Planos de Contas brasileiros
 [l10n_br_coa_generic](l10n_br_coa_generic/) | 16.0.2.2.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Plano de Contas para empresas do Regime normal (Micro e pequenas empresas)
@@ -3535,7 +3538,7 @@ addon | version | maintainers | summary
 [l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 16.0.1.1.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Update exchange rates using OCA modules for Brazil
 [l10n_br_delivery](l10n_br_delivery/) | 16.0.4.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | delivery module Brazilian Localization
 [l10n_br_delivery_nfe](l10n_br_delivery_nfe/) | 16.0.2.0.0 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization Delivery NFe
-[l10n_br_fiscal](l10n_br_fiscal/) | 16.0.21.2.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
+[l10n_br_fiscal](l10n_br_fiscal/) | 16.0.21.3.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
 [l10n_br_fiscal_certificate](l10n_br_fiscal_certificate/) | 16.0.1.2.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | A1 fiscal certificate management for Brazil
 [l10n_br_fiscal_closing](l10n_br_fiscal_closing/) | 16.0.2.6.0 |  | Period fiscal closing
 [l10n_br_fiscal_dfe](l10n_br_fiscal_dfe/) | 16.0.1.2.0 |  | Distribuição de documentos fiscais
@@ -3557,11 +3560,12 @@ addon | version | maintainers | summary
 [l10n_br_pos](l10n_br_pos/) | 16.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/lfdivino'><img src='https://github.com/lfdivino.png' width='32' height='32' style='border-radius:50%;' alt='lfdivino'/></a> <a href='https://github.com/luismalta'><img src='https://github.com/luismalta.png' width='32' height='32' style='border-radius:50%;' alt='luismalta'/></a> <a href='https://github.com/ygcarvalh'><img src='https://github.com/ygcarvalh.png' width='32' height='32' style='border-radius:50%;' alt='ygcarvalh'/></a> | Ponto de venda adaptado a legislação Brasileira
 [l10n_br_product_contract](l10n_br_product_contract/) | 16.0.2.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Criação de contratos através dos Pedidos de Vendas
 [l10n_br_purchase](l10n_br_purchase/) | 16.0.6.0.3 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Purchase
+[l10n_br_purchase_blanket_order](l10n_br_purchase_blanket_order/) | 16.0.1.0.0 | <a href='https://github.com/WesleyOlivera98'><img src='https://github.com/WesleyOlivera98.png' width='32' height='32' style='border-radius:50%;' alt='WesleyOlivera98'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Purchase Blanket Order
 [l10n_br_purchase_request](l10n_br_purchase_request/) | 16.0.2.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Purchase Request Brazilian Localization Purchase Request
 [l10n_br_purchase_requisition](l10n_br_purchase_requisition/) | 16.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Purchase Requisition
 [l10n_br_purchase_stock](l10n_br_purchase_stock/) | 16.0.2.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization Purchase Stock
 [l10n_br_resource](l10n_br_resource/) | 16.0.1.1.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/lfdivino'><img src='https://github.com/lfdivino.png' width='32' height='32' style='border-radius:50%;' alt='lfdivino'/></a> | This module extend core resource to create important brazilian informations. Define a Brazilian calendar and some tools to compute dates used in financial and payroll modules
-[l10n_br_sale](l10n_br_sale/) | 16.0.8.0.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Sale
+[l10n_br_sale](l10n_br_sale/) | 16.0.8.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Sale
 [l10n_br_sale_blanket_order](l10n_br_sale_blanket_order/) | 16.0.2.0.1 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Sale Blanket Order
 [l10n_br_sale_commission](l10n_br_sale_commission/) | 16.0.2.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Localization of Sales Commissions
 [l10n_br_sale_invoice_plan](l10n_br_sale_invoice_plan/) | 16.0.3.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Sale Invoice Plan
@@ -5405,6 +5409,9 @@ and promote its widespread use.
 ## From OCA/odoo-pim
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# odoo-pim
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/odoo-pim&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/odoo-pim/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/odoo-pim/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/odoo-pim/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/odoo-pim/actions/workflows/test.yml?query=branch%3A16.0)
@@ -5412,8 +5419,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/odoo-pim-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/odoo-pim-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# odoo-pim
 
 TODO: add repo description.
 
@@ -5959,7 +5964,7 @@ addon | version | maintainers | summary
 [product_country_restriction](product_country_restriction/) | 16.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define product restrictions country based
 [product_dimension](product_dimension/) | 16.0.1.2.0 |  | Product Dimension
 [product_english_name](product_english_name/) | 16.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Display the product name in English besides the product name in the users language.
-[product_expiry_configurable](product_expiry_configurable/) | 16.0.1.0.0 |  | This model allows setting expiry times on category and to use the 'end_of_life' date for the computation of lot dates
+[product_expiry_configurable](product_expiry_configurable/) | 16.0.1.0.1 |  | This model allows setting expiry times on category and to use the 'end_of_life' date for the computation of lot dates
 [product_get_price_helper](product_get_price_helper/) | 16.0.1.1.0 |  | This module provides a helper function to compute product prices.
 [product_internal_reference_generator](product_internal_reference_generator/) | 16.0.1.0.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Product template and variant reference based on sequence
 [product_is_bulk](product_is_bulk/) | 16.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Compute or Set Product as Bulk
@@ -6509,7 +6514,7 @@ addon | version | maintainers | summary
 [purchase_order_revision](purchase_order_revision/) | 16.0.1.0.0 |  | Keep track of revised quotations
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 16.0.1.0.0 |  | Purchase product in a secondary unit
 [purchase_order_supplier_return](purchase_order_supplier_return/) | 16.0.1.0.0 |  | Return product to supplier and update quantiy received
-[purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 16.0.1.0.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Update product supplierinfo with the last purchase price
+[purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 16.0.2.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 16.0.1.0.3 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 16.0.1.0.0 | <a href='https://github.com/dalonsod'><img src='https://github.com/dalonsod.png' width='32' height='32' style='border-radius:50%;' alt='dalonsod'/></a> | Purchase Order Type Dashboard
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 16.0.1.0.2 |  | Purchase Order Univoiced Amount
@@ -6524,7 +6529,7 @@ addon | version | maintainers | summary
 [purchase_quick](purchase_quick/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Quick Purchase order
 [purchase_reception_status](purchase_reception_status/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
 [purchase_reorder_control](purchase_reorder_control/) | 16.0.1.0.0 |  | Restrict reordering unpurchaseable product
-[purchase_request](purchase_request/) | 16.0.2.4.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 16.0.2.4.3 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.1.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
@@ -6682,6 +6687,7 @@ addon | version | maintainers | summary
 [repair_type](repair_type/) | 16.0.1.0.2 |  | Repair type
 [repair_type_refurbish](repair_type_refurbish/) | 16.0.1.0.0 |  | Repair type
 [repair_type_sequence](repair_type_sequence/) | 16.0.1.0.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Adds sequence to repair orders defined in the repairs's type
+[repair_warehouse](repair_warehouse/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon
 
 [//]: # (end addons)
 
@@ -7246,7 +7252,7 @@ addon | version | maintainers | summary
 [sale_packaging_report](sale_packaging_report/) | 16.0.1.1.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Packaging data in sale reports
 [sale_report_commitment_date](sale_report_commitment_date/) | 16.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Display the commitment date on Sales Order analysis reports
 [sale_report_country_state](sale_report_country_state/) | 16.0.1.0.0 |  | Sale Report Filter by State
-[sale_report_delivered](sale_report_delivered/) | 16.0.2.2.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered
+[sale_report_delivered](sale_report_delivered/) | 16.0.2.2.3 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered
 [sale_report_delivered_attribute_values](sale_report_delivered_attribute_values/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow to view Attribute values of Lines on Sale Report Delivered
 [sale_report_delivered_deposit](sale_report_delivered_deposit/) | 16.0.2.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow to view Customer Deposits on Sale Report Delivered
 [sale_report_delivered_price_compliance](sale_report_delivered_price_compliance/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allow to view Price Compliance Tiers on Sale Report Delivered
@@ -7318,7 +7324,7 @@ addon | version | maintainers | summary
 [sale_automatic_workflow](sale_automatic_workflow/) | 16.0.1.1.1 |  | Sale Automatic Workflow
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 16.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
 [sale_automatic_workflow_payment_mode](sale_automatic_workflow_payment_mode/) | 16.0.1.0.0 |  | Sale Automatic Workflow - Payment Mode
-[sale_blanket_order](sale_blanket_order/) | 16.0.2.0.1 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 16.0.2.0.2 |  | Blanket Orders
 [sale_block_no_stock](sale_block_no_stock/) | 16.0.2.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Block Sales if products has not enough Quantity based on a chosen field
 [sale_cancel_reason](sale_cancel_reason/) | 16.0.1.0.1 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
@@ -8388,7 +8394,7 @@ addon | version | maintainers | summary
 [delivery_line_sale_line_position](delivery_line_sale_line_position/) | 16.0.1.1.0 |  | Adds the sale line position to the delivery report lines
 [stock_account_valuation_discrepancy_adjust](stock_account_valuation_discrepancy_adjust/) | 16.0.1.0.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Implements Wizard for Adjust Discrepancies on Account Inventory Valuation
 [stock_account_valuation_report](stock_account_valuation_report/) | 16.0.1.1.1 |  | Improves logic of the Inventory Valuation Report
-[stock_average_daily_sale](stock_average_daily_sale/) | 16.0.3.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Allows to gather consumed products on daily basis
+[stock_average_daily_sale](stock_average_daily_sale/) | 16.0.3.0.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Allows to gather consumed products on daily basis
 [stock_card_report](stock_card_report/) | 16.0.1.0.2 |  | Add stock card report on Inventory Reporting.
 [stock_move_value_report](stock_move_value_report/) | 16.0.1.0.0 |  | Stock Move Cost Value Report
 [stock_picking_batch_report](stock_picking_batch_report/) | 16.0.1.0.0 |  | Stock Picking Batch Report
@@ -8905,19 +8911,19 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 16.0.2.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
-[fs_attachment_s3](fs_attachment_s3/) | 16.0.2.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
-[fs_base_multi_image](fs_base_multi_image/) | 16.0.1.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
-[fs_base_multi_media](fs_base_multi_media/) | 16.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
-[fs_file](fs_file/) | 16.0.1.0.6 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
-[fs_file_demo](fs_file_demo/) | 16.0.1.0.1 |  | Demo addon for fs_file and fs_image
-[fs_image](fs_image/) | 16.0.1.0.4 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store images into filesystem storages
-[fs_image_thumbnail](fs_image_thumbnail/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Generate and store thumbnail for images
-[fs_product_brand_multi_image](fs_product_brand_multi_image/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link images to product brands
-[fs_product_multi_image](fs_product_multi_image/) | 16.0.1.1.5 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
-[fs_product_multi_media](fs_product_multi_media/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
-[fs_product_public_category_multi_image](fs_product_public_category_multi_image/) | 16.0.1.0.0 |  | Manage multi images from extenal file system on eCommerce public categories
-[fs_storage](fs_storage/) | 16.0.1.4.0 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_attachment](fs_attachment/) | 16.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
+[fs_attachment_s3](fs_attachment_s3/) | 16.0.2.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
+[fs_base_multi_image](fs_base_multi_image/) | 16.0.1.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
+[fs_base_multi_media](fs_base_multi_media/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
+[fs_file](fs_file/) | 16.0.1.0.7 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
+[fs_file_demo](fs_file_demo/) | 16.0.1.0.2 |  | Demo addon for fs_file and fs_image
+[fs_image](fs_image/) | 16.0.1.0.5 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store images into filesystem storages
+[fs_image_thumbnail](fs_image_thumbnail/) | 16.0.1.0.3 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Generate and store thumbnail for images
+[fs_product_brand_multi_image](fs_product_brand_multi_image/) | 16.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link images to product brands
+[fs_product_multi_image](fs_product_multi_image/) | 16.0.1.1.6 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
+[fs_product_multi_media](fs_product_multi_media/) | 16.0.1.0.3 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
+[fs_product_public_category_multi_image](fs_product_public_category_multi_image/) | 16.0.1.0.1 |  | Manage multi images from extenal file system on eCommerce public categories
+[fs_storage](fs_storage/) | 16.0.1.5.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [fs_storage_backup](fs_storage_backup/) | 16.0.1.0.1 |  | Filesystem Storage Backup
 [image_tag](image_tag/) | 16.0.1.0.1 |  | Image tag model
 [storage_backend](storage_backend/) | 16.0.1.1.0 |  | Implement the concept of Storage with amazon S3, sftp...
@@ -9654,7 +9660,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 16.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
-[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 16.0.1.1.2 |  | Integration between Sales and Available to Promise Release
+[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 16.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_block](sale_stock_available_to_promise_release_block/) | 16.0.1.1.1 |  | Block release of deliveries from sales orders.
 [sale_stock_release_channel](sale_stock_release_channel/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Sales Stock Release Channel
 [sale_stock_release_channel_delivery](sale_stock_release_channel_delivery/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Sales Stock Release Channel Delivery
@@ -9662,13 +9668,14 @@ addon | version | maintainers | summary
 [sale_stock_release_channel_partner_by_date](sale_stock_release_channel_partner_by_date/) | 16.0.1.1.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Release channels integration with Sales
 [sale_stock_release_channel_partner_by_date_delivery](sale_stock_release_channel_partner_by_date_delivery/) | 16.0.1.1.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Filters channels on sales based on selected carrier.
 [shopfloor](shopfloor/) | 16.0.2.17.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
-[shopfloor_base](shopfloor_base/) | 16.0.1.2.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
+[shopfloor_base](shopfloor_base/) | 16.0.1.2.2 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 16.0.1.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_mobile](shopfloor_mobile/) | 16.0.1.4.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.2.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
-[shopfloor_reception](shopfloor_reception/) | 16.0.1.9.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
-[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.3.0 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
+[shopfloor_product_dimension](shopfloor_product_dimension/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allow to enrich product available details about its dimension in shopfloor
+[shopfloor_reception](shopfloor_reception/) | 16.0.1.10.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
+[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.4.0 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
 [shopfloor_reception_packaging_dimension](shopfloor_reception_packaging_dimension/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Collect Packaging Dimension from the Reception scenario
 [shopfloor_reception_packaging_dimension_mobile](shopfloor_reception_packaging_dimension_mobile/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Frontend for the packaging dimension on reception scenario
 [shopfloor_reception_putinpack_restriction](shopfloor_reception_putinpack_restriction/) | 16.0.1.1.0 |  | Restrict the use of packages in shopfloor reception

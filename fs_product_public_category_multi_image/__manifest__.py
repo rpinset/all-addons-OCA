@@ -5,7 +5,7 @@
     "name": "Fs Product Public Category Multi Image",
     "summary": """
         Manage multi images from extenal file system on eCommerce public categories""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/storage",
@@ -16,5 +16,5 @@
         "views/product_public_category.xml",
     ],
     "demo": [],
-    "development_status": "Alpha",
+    "development_status": "Beta",
 }

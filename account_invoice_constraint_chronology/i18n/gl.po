@@ -64,7 +64,7 @@ msgstr ""
 msgid ""
 "Chronology conflict: Invoice {name} cannot be {time} invoice {inv_name}."
 msgstr ""
-"Conflito de cronoloxía: Factura {nome} non pode ser {time} factura {inv_name}"
+"Conflito de cronoloxía: Factura {name} non pode ser {time} factura {inv_name}"
 "."
 
 #. module: account_invoice_constraint_chronology

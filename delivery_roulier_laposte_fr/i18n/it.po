@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-20 18:06+0000\n"
+"PO-Revision-Date: 2026-05-25 20:30+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__laposte_insurance
@@ -74,12 +74,12 @@ msgstr "Assicurazione 900 €"
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_carrier_account
 msgid "Base account datas"
-msgstr ""
+msgstr "Dati account base"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_package_type__package_carrier_type
 msgid "Carrier"
-msgstr ""
+msgstr "Vettore"
 
 #. module: delivery_roulier_laposte_fr
 #: model:delivery.carrier,name:delivery_roulier_laposte_fr.delivery_carrier_DOM
@@ -124,12 +124,12 @@ msgstr "Costi di consegna - Laposte"
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_203dpi
 msgid "DPL 10x15 203dpi"
-msgstr ""
+msgstr "DPL 10x15 203dpi"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__dpl_10x15_300dpi
 msgid "DPL 10x15 300dpi"
-msgstr ""
+msgstr "DPL 10x15 300dpi"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_stock_picking__display_insurance
@@ -162,12 +162,12 @@ msgstr ""
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__stock_package_type__package_carrier_type__laposte_fr
 msgid "La Poste"
-msgstr ""
+msgstr "La Poste"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields,field_description:delivery_roulier_laposte_fr.field_carrier_account__laposte_fr_file_format
 msgid "Label format"
-msgstr ""
+msgstr "Formato etichetta"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__delivery_carrier__delivery_type__laposte_fr
@@ -182,12 +182,12 @@ msgstr "Non meccanizzabile"
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_10x15_300dpi
 msgid "PDF 10x15 300dpi"
-msgstr ""
+msgstr "PDF 10x15 300dpi"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__pdf_a4_300dpi
 msgid "PDF A4 300dpi"
-msgstr ""
+msgstr "PDF A4 300dpi"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_quant_package
@@ -263,7 +263,7 @@ msgstr "Metodi di spedizione"
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_package_type
 msgid "Stock package type"
-msgstr ""
+msgstr "Tipo collo magazzino"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model,name:delivery_roulier_laposte_fr.model_stock_picking
@@ -273,9 +273,9 @@ msgstr "Trasferimento"
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_203dpi
 msgid "ZPL 10x15 203dpi"
-msgstr ""
+msgstr "ZPL 10x15 203dpi"
 
 #. module: delivery_roulier_laposte_fr
 #: model:ir.model.fields.selection,name:delivery_roulier_laposte_fr.selection__carrier_account__laposte_fr_file_format__zpl_10x15_300dpi
 msgid "ZPL 10x15 300dpi"
-msgstr ""
+msgstr "ZPL 10x15 300dpi"

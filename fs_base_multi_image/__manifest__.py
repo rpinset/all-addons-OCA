@@ -5,7 +5,7 @@
     "name": "Fs Base Multi Image",
     "summary": """
         Mulitple Images from External File System""",
-    "version": "16.0.1.1.1",
+    "version": "16.0.1.1.2",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/storage",
@@ -30,5 +30,5 @@
     },
     "demo": [],
     "maintainers": ["lmignon"],
-    "development_status": "Alpha",
+    "development_status": "Beta",
 }

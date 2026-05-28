@@ -4,7 +4,7 @@
 {
     "name": "Fs File Demo",
     "summary": """Demo addon for fs_file and fs_image""",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.0.2",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/storage",
@@ -17,5 +17,5 @@
         "views/fs_file.xml",
     ],
     "demo": [],
-    "development_status": "Alpha",
+    "development_status": "Beta",
 }

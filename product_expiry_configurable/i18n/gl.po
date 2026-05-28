@@ -212,7 +212,7 @@ msgstr "Recordatorio da data de retirada"
 #: code:addons/product_expiry_configurable/models/stock_lot.py:0
 #, python-format
 msgid "The {date_name} has been reached for this lot/serial number"
-msgstr "Alcanzouse o {dáche_name} para este lote/número de serie"
+msgstr "Alcanzouse o {date_name} para este lote/número de serie"
 
 #. module: product_expiry_configurable
 #: model_terms:ir.ui.view,arch_db:product_expiry_configurable.search_product_lot_filter_inherit_product_expiry

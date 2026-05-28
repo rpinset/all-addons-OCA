@@ -182,7 +182,9 @@ class BlanketOrder(models.Model):
 
     @api.depends("line_ids")
     def _compute_line_count(self):
-        self.line_count = len(self.mapped("line_ids"))
+        self.line_count = len(
+            self.mapped("line_ids").filtered(lambda l: not l.display_type)
+        )
 
     def _compute_sale_count(self):
         for blanket_order in self:
@@ -333,7 +335,7 @@ class BlanketOrder(models.Model):
         action = self.env["ir.actions.act_window"]._for_xml_id(
             "sale_blanket_order.act_open_sale_blanket_order_lines_view_tree"
         )
-        lines = self.mapped("line_ids")
+        lines = self.mapped("line_ids").filtered(lambda l: not l.display_type)
         if len(lines) > 0:
             action["domain"] = [("id", "in", lines.ids)]
         return action
