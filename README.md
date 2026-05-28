@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-05-25 04:54 UTC** (elapsed 111s)
+Last build: **2026-05-28 16:10 UTC** (elapsed 186s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -114,7 +114,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 111s)
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | 2751886 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 19 | 682e5e6 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 3fe4f6e 2023-10-09 Weblate Update translation files |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 74 | 6eb1b59 2026-04-16 Francesco Foresti Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 74 | ab028d7 2026-05-26 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 52 | 119dbfc 2026-02-28 mymage Translated using Weblate (Italian) |
 | [storage](https://github.com/OCA/storage) | 11 | a0e4ca5 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [survey](https://github.com/OCA/survey) | 3 | 523a7e9 2023-10-29 mymage Translated using Weblate (Italian) |
