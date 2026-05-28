@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-25 04:54 UTC** (elapsed 106s)
+Last build: **2026-05-28 16:10 UTC** (elapsed 183s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -45,7 +45,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 106s)
 | [currency](https://github.com/OCA/currency) | 8 | 9e281c1 2025-09-16 Betül Öğmen Translated using Weblate (Turkish) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d70466e 2025-10-21 mymage Translated using Weblate (Italian) |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 6e6a48d 2026-05-20 Weblate Update translation files |
+| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 0759d52 2026-05-27 Weblate Update translation files |
 | [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
@@ -101,7 +101,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 106s)
 | [payroll](https://github.com/OCA/payroll) | 6 | ac916a2 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
-| [product-attribute](https://github.com/OCA/product-attribute) | 83 | 973a035 2026-04-16 Pedro M. Baeza Merge pull request #2262 from raumschmiede-joshuaL/14.0-copier-update |
+| [product-attribute](https://github.com/OCA/product-attribute) | 83 | 6d932a5 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 9 | 9b5dbf8 2025-09-16 Betül Öğmen Added translation using Weblate (Turkish) |
@@ -109,7 +109,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 106s)
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | df368cc 2026-04-24 OCA-git-bot [BOT] post-merge updates |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | 2790e79 2026-05-26 mymage Translated using Weblate (Italian) |
 | [queue](https://github.com/OCA/queue) | 12 | 602bb0d 2026-03-23 OCA-git-bot Merge PR #912 into 14.0 |
 | [report-print-send](https://github.com/OCA/report-print-send) | 8 | abe01e8 2025-10-09 Betül Öğmen Translated using Weblate (Turkish) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 24 | 9aa96a9 2025-11-25 mymage Translated using Weblate (Italian) |
@@ -133,7 +133,7 @@ Last build: **2026-05-25 04:54 UTC** (elapsed 106s)
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | ca8a787 2025-10-15 mymage Translated using Weblate (Italian) |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | ea13ae4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | d89d8a2 2026-04-16 Francesco Foresti Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | f9a76b6 2026-05-26 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | a5b2bd0 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
 | [storage](https://github.com/OCA/storage) | 19 | c0e1f39 2025-10-20 OCA-git-bot [BOT] post-merge updates |
 | [survey](https://github.com/OCA/survey) | 8 | 53c9f49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
