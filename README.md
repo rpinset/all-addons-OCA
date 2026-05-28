@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-25 04:56 UTC** (elapsed 68s)
+Last build: **2026-05-28 16:13 UTC** (elapsed 170s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -86,7 +86,7 @@ Last build: **2026-05-25 04:56 UTC** (elapsed 68s)
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 1616c04 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [payroll](https://github.com/OCA/payroll) | 3 | de2cad2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
-| [product-attribute](https://github.com/OCA/product-attribute) | 55 | 021b90e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [product-attribute](https://github.com/OCA/product-attribute) | 55 | c466fb8 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [project](https://github.com/OCA/project) | 39 | 6d4a1f8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -100,7 +100,7 @@ Last build: **2026-05-25 04:56 UTC** (elapsed 68s)
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | b43c4e3 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | 9c8ddbd 2026-05-26 Pedro M. Baeza Merge pull request #4362 from Tecnativa/15.0-FIX-sale_start_end_dates- |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -114,7 +114,7 @@ Last build: **2026-05-25 04:56 UTC** (elapsed 68s)
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | c4b3e65 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 59 | e69371d 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 59 | 0156a19 2026-05-26 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 97e0c60 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | 0fbad2b 2026-04-20 Weblate Update translation files |
 | [storage](https://github.com/OCA/storage) | 13 | 1ea7f73 2025-02-09 oca-git-bot [IMP] update dotfiles |
