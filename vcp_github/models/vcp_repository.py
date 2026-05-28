@@ -17,6 +17,12 @@ _logger = logging.getLogger(__name__)
 class VcpRepository(models.Model):
     _inherit = "vcp.repository"
 
+    def _get_repository_url(self):
+        result = super()._get_repository_url()
+        if not result and self.platform_id.host_id.type_id.code == "github":
+            return f"https://github.com/{self.platform_id.name}/{self.name}"
+        return result
+
     def _update_branches_github(self):
         self.ensure_one()
         client = self.platform_id._get_github_clients()[0]

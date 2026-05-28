@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_maintained_modules"
+                    icon="fa-file-code-o"
+                    invisible="not modules_maintained_count"
+                >
+                    <field
+                        string="Maintained Modules"
+                        name="modules_maintained_count"
+                        widget="statinfo"
+                    />
+                </button>
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_author_modules"
+                    icon="fa-codepen"
+                    invisible="not modules_author_count"
+                >
+                    <field
+                        string="Author Modules"
+                        name="modules_author_count"
+                        widget="statinfo"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

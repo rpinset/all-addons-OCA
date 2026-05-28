@@ -31,6 +31,7 @@ class HelpdeskTicketTeam(models.Model):
     )
     ticket_stage_ids = fields.Many2many(
         comodel_name="helpdesk.ticket.stage",
+        relation="helpdesk_team_stage_closing_ticket_filter_rel",
         string="Ticket Stage",
         help="The cronjob will check for inactivity in \
         tickets that are in these stages.",

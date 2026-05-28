@@ -78,7 +78,7 @@ class MisReportInstanceAnnotation(models.Model):
             .user_can_edit_annotation
         ):
             raise AccessError(
-                self.env._("You do not have the rights to edit" " annotations")
+                self.env._("You do not have the rights to edit annotations")
             )
 
         annotation = self._get_first_matching_annotation(cell_id, instance_id)
@@ -109,7 +109,7 @@ class MisReportInstanceAnnotation(models.Model):
             .user_can_edit_annotation
         ):
             raise AccessError(
-                self.env._("You do not have the" " rights to edit annotations")
+                self.env._("You do not have the rights to edit annotations")
             )
 
         annotation = self._get_first_matching_annotation(cell_id, instance_id)

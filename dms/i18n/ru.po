@@ -401,12 +401,6 @@ msgid "All Files"
 msgstr ""
 
 #. module: dms
-#. odoo-javascript
-#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
-msgid "An error occurred during the upload"
-msgstr ""
-
-#. module: dms
 #: model:dms.tag,name:dms.tag_06_demo
 msgid "Apps"
 msgstr ""
@@ -1308,12 +1302,6 @@ msgid "Internal / Human Resource"
 msgstr ""
 
 #. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "Invalid attachments!"
-msgstr ""
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
 msgid "Invoices"
 msgstr ""
@@ -1567,12 +1555,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_id
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
-
-#. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "No attachment was provided"
 msgstr ""
 
 #. module: dms
@@ -1912,6 +1894,12 @@ msgid "Size (human readable)"
 msgstr ""
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "Something horrible happened"
+msgstr ""
+
+#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__starred
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
 msgid "Starred"
@@ -2213,6 +2201,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:dms.field_dms_file__permission_write
 #: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
 msgid "Write Access"
+msgstr ""
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "You are not allowed to upload a file here."
 msgstr ""
 
 #. module: dms

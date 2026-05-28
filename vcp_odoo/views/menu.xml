@@ -21,8 +21,13 @@
             action="vcp_odoo_module_version_act_window"
             sequence="20"
         />
+        <menuitem
+            id="menu_odoo_author"
+            sequence="30"
+            action="vcp_odoo_author_act_window"
+        />
 
-        <menuitem id="vcp_odoo_dependencies_menu" name="Dependencies" sequence="30">
+        <menuitem id="vcp_odoo_dependencies_menu" name="Dependencies" sequence="40">
             <menuitem
                 id="vcp_odoo_bin_packages_menu"
                 name="Bin Packages"

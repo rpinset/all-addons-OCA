@@ -139,12 +139,18 @@ class KpiMatrixCell:  # noqa: B903 (immutable data class)
 
 
 class KpiMatrix:
-    def __init__(self, env, multi_company=False, account_model="account.account"):
+    def __init__(
+        self,
+        env,
+        companies=None,
+        account_model="account.account",
+    ):
         # cache language id for faster rendering
         lang_model = env["res.lang"]
         self.lang = lang_model._lang_get(env.user.lang)
         self._style_model = env["mis.report.style"]
         self._account_model = env[account_model]
+        self._companies = companies
         # data structures
         # { kpi: KpiMatrixRow }
         self._kpi_rows = OrderedDict()
@@ -158,7 +164,6 @@ class KpiMatrix:
         self._sum_todo = {}
         # { account_id: account_name }
         self._account_names = {}
-        self._multi_company = multi_company
 
     def declare_kpi(self, kpi):
         """Declare a new kpi (row) in the matrix.
@@ -467,10 +472,34 @@ class KpiMatrix:
         self._account_names = {a.id: self._get_account_name(a) for a in accounts}
 
     def _get_account_name(self, account):
-        result = f"{account.code} {account.name}"
-        if self._multi_company:
-            result = f"{result} [{account.company_id.name}]"
-        return result
+        # display_name is account code + account name. Note the account may have
+        # no code for the user current active company, in which case only the
+        # name is displayed. It is consistent with other places where accounts
+        # are displayed in Odoo.
+        account_companies = (
+            account.company_ids & self._companies
+            if self._companies
+            else account.company_ids
+        )
+        if len(account_companies) == 1:
+            # When there is no ambiguity on the company, use it to compute the label
+            account_name = account.with_company(account_companies).display_name
+        else:
+            # Otherwise use the default Odoo behaviour to get the account label
+            # (this may return a name without code)
+            account_name = account.display_name
+        is_multi_company = self._companies and len(self._companies) > 1
+        if is_multi_company and len(account_companies) == 1:
+            # In a multi-company report, if the account is bound to one
+            # company, it makes sense to show the company name. If the account
+            # is bound to multiple companies it does not make sense, because we
+            # don't know to which companies this detail line effectively
+            # contributes, so the list of companies in it would not add useful
+            # information. To be able to accurately display the company on
+            # detail lines when the account is bound to multiple companies,
+            # we'll need a generalized kpi details expansion.
+            account_name = f"{account_name} [{account_companies.display_name}]"
+        return account_name
 
     def get_account_name(self, account_id):
         if account_id not in self._account_names:

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-21 13:27+0000\n"
+"PO-Revision-Date: 2026-05-26 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: dms
 #: model:ir.model.fields,help:dms.field_dms_directory__alias_process
@@ -448,12 +448,6 @@ msgstr "Tutte"
 #: model_terms:ir.ui.view,arch_db:dms.search_dms_file
 msgid "All Files"
 msgstr "Tutti i file"
-
-#. module: dms
-#. odoo-javascript
-#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
-msgid "An error occurred during the upload"
-msgstr "Si è verificato un errore durante il caricamento"
 
 #. module: dms
 #: model:dms.tag,name:dms.tag_06_demo
@@ -1381,12 +1375,6 @@ msgid "Internal / Human Resource"
 msgstr "Interno / Risorse umane"
 
 #. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "Invalid attachments!"
-msgstr "Allegato non valido!"
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
 msgid "Invoices"
 msgstr "Fatture"
@@ -1641,12 +1629,6 @@ msgstr "Riepilogo prossima attività"
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
 msgid "Next Activity Type"
 msgstr "Tipo prossima attività"
-
-#. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "No attachment was provided"
-msgstr "Non è stato fornito l'allegato"
 
 #. module: dms
 #: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
@@ -1996,6 +1978,12 @@ msgid "Size (human readable)"
 msgstr "Dimensione (leggibile)"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "Something horrible happened"
+msgstr "È successo qualcosa di orribile"
+
+#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__starred
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
 msgid "Starred"
@@ -2312,6 +2300,12 @@ msgid "Write Access"
 msgstr "Accesso in scrittura"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "You are not allowed to upload a file here."
+msgstr "Non si è autorizzati a caricare un file qui."
+
+#. module: dms
 #. odoo-javascript
 #: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
 msgid "You must select a directory first"
@@ -2331,6 +2325,15 @@ msgstr "exe,msi"
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
 msgid "mail.catchall.domain"
 msgstr "mail.catchall.domain"
+
+#~ msgid "An error occurred during the upload"
+#~ msgstr "Si è verificato un errore durante il caricamento"
+
+#~ msgid "Invalid attachments!"
+#~ msgstr "Allegato non valido!"
+
+#~ msgid "No attachment was provided"
+#~ msgstr "Non è stato fornito l'allegato"
 
 #~ msgid "Actions"
 #~ msgstr "Azioni"

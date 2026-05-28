@@ -35,6 +35,10 @@ class VcpOdooModuleVersion(models.Model):
     license = fields.Char(string="License (Manifest)", readonly=True)
     summary = fields.Char(string="Summary (Manifest)", readonly=True)
     website = fields.Char(string="Website (Manifest)", readonly=True)
+    development_status = fields.Char(
+        string="Development Status (Manifest)",
+        readonly=True,
+    )
     python_library_ids = fields.Many2many(
         "vcp.odoo.python.library",
         string="Python Libraries",
@@ -46,6 +50,16 @@ class VcpOdooModuleVersion(models.Model):
         readonly=True,
     )
     description = fields.Html(readonly=True)
+    author_ids = fields.Many2many(
+        comodel_name="vcp.odoo.author",
+        string="Author",
+        readonly=True,
+    )
+    maintainer_ids = fields.Many2many(
+        comodel_name="vcp.user",
+        string="Maintainer",
+        readonly=True,
+    )
 
     def _get_local_path(self):
         return f"{self.repository_branch_id.local_path}/{self.path}"

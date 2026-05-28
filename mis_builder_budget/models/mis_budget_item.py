@@ -14,8 +14,7 @@ class MisBudgetItem(models.Model):
     report_id = fields.Many2one(related="budget_id.report_id")
     kpi_expression_id = fields.Many2one(
         domain=(
-            "[('kpi_id.report_id', '=', report_id),"
-            " ('kpi_id.budgetable', '=', True)]"
+            "[('kpi_id.report_id', '=', report_id), ('kpi_id.budgetable', '=', True)]"
         )
     )
 

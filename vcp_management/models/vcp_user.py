@@ -26,6 +26,14 @@ class VcpUser(models.Model):
     partner_id = fields.Many2one(
         "res.partner",
     )
+    sync_image_to_partner = fields.Boolean(
+        help="Use the image user as image on the partner"
+    )
+    user_update_date = fields.Datetime(readonly=True, default=fields.Datetime.now)
+    avatar_url = fields.Char(readonly=True)
+    email = fields.Char(readonly=True)
+    company = fields.Char(readonly=True)
+    active = fields.Boolean(readonly=True, default=True)
 
     _sql_constraints = [
         (
@@ -40,3 +48,18 @@ class VcpUser(models.Model):
 
     def _get_contributors_name(self, kind, **kwargs):
         return self.partner_id.name or self.name
+
+    def update_information(self):
+        self.ensure_one()
+        now = fields.Datetime.now()
+        getattr(self, f"_update_information_{self.host_id.type_id.code}")()
+        self.user_update_date = now
+
+    def _cron_update_users(self, limit):
+        users = self.search(
+            [],
+            limit=limit,
+            order="user_update_date ASC",
+        )
+        for user in users:
+            user.update_information()

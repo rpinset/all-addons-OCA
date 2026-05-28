@@ -7,3 +7,5 @@ access_vcp_odoo_bin_package,Access Odoo Bin Package,model_vcp_odoo_bin_package,v
 manage_vcp_odoo_bin_package,Manage Odoo Bin Package,model_vcp_odoo_bin_package,vcp_management.group_vcp_manager,1,1,1,1
 access_vcp_odoo_python_library,Access Odoo Python Library,model_vcp_odoo_python_library,vcp_management.group_vcp_user,1,0,0,0
 manage_vcp_odoo_python_library,Manage Odoo Python Library,model_vcp_odoo_python_library,vcp_management.group_vcp_manager,1,1,1,1
+access_vcp_odoo_author,Access Odoo Author,model_vcp_odoo_author,vcp_management.group_vcp_user,1,0,0,0
+manage_vcp_odoo_author,Manage Odoo Author,model_vcp_odoo_author,vcp_management.group_vcp_manager,1,1,1,1

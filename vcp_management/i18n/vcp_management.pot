@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: vcp_management
+#: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_form_view
+msgid "<strong>There is an exception blocking the rule processing:</strong>"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_platform_key_name_uniq
 msgid "API Key must be unique."
 msgstr ""
@@ -30,6 +35,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__active
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__active
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule__active
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__active
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_search_view
 msgid "Active"
 msgstr ""
@@ -43,6 +49,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_search_view
 msgid "Archived"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__avatar_url
+msgid "Avatar Url"
 msgstr ""
 
 #. module: vcp_management
@@ -157,6 +168,11 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__commits
 msgid "Commits"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__company
+msgid "Company"
 msgstr ""
 
 #. module: vcp_management
@@ -286,6 +302,11 @@ msgid "Draft"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__email
+msgid "Email"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__empty_count
 msgid "Empty Count"
 msgstr ""
@@ -310,6 +331,12 @@ msgstr ""
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_review_external_id_uniq
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_user_external_id_uniq
 msgid "External ID must be unique."
+msgstr ""
+
+#. module: vcp_management
+#. odoo-python
+#: code:addons/vcp_management/models/res_partner.py:0
+msgid "Fail to download avatar, %s.please retry"
 msgstr ""
 
 #. module: vcp_management
@@ -423,6 +450,8 @@ msgid ""
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_res_partner__image_1920
+#: model:ir.model.fields,field_description:vcp_management.field_res_users__image_1920
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_1920
 msgid "Image"
 msgstr ""
@@ -591,6 +620,12 @@ msgid "Number"
 msgstr ""
 
 #. module: vcp_management
+#. odoo-python
+#: code:addons/vcp_management/models/res_partner.py:0
+msgid "Only one Vcp User can be use for synchronising the main image"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__open
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Open"
@@ -665,6 +700,12 @@ msgid "Platforms"
 msgstr ""
 
 #. module: vcp_management
+#: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_search_view
+msgid "Process Rule Error"
+msgstr ""
+
+#. module: vcp_management
+#: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Process Rules"
 msgstr ""
@@ -809,6 +850,11 @@ msgid "Rule"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__rule_failure_msg
+msgid "Rule Failure Msg"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__rule_information_ids
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information_mixin__rule_information_ids
 msgid "Rule Information"
@@ -875,6 +921,11 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__submitted_at
 msgid "Submitted At"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__sync_image_to_partner
+msgid "Sync Image To Partner"
 msgstr ""
 
 #. module: vcp_management
@@ -947,10 +998,20 @@ msgid "Url"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,help:vcp_management.field_vcp_user__sync_image_to_partner
+msgid "Use the image user as image on the partner"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_user
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__user_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__user_id
 msgid "User"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_user__user_update_date
+msgid "User Update Date"
 msgstr ""
 
 #. module: vcp_management
@@ -1007,6 +1068,11 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_repository_update_ir_actions_server
 msgid "VCP: Repository Update"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.actions.server,name:vcp_management.cron_user_update_ir_actions_server
+msgid "VCP: User Update"
 msgstr ""
 
 #. module: vcp_management

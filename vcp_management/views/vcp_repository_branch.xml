@@ -6,6 +6,26 @@
         <field name="model">vcp.repository.branch</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button
+                        name="process_rules"
+                        type="object"
+                        string="Process Rules"
+                        class="oe_highlight"
+                    />
+                </header>
+                <div
+                    class="alert alert-danger"
+                    role="alert"
+                    style="margin-bottom:0px;"
+                    invisible="not rule_failure_msg"
+                >
+                    <p>
+                        <strong
+                        >There is an exception blocking the rule processing:</strong>
+                    </p>
+                    <field name="rule_failure_msg" />
+                </div>
                 <sheet>
                     <group>
                         <field name="repository_id" />
@@ -29,6 +49,11 @@
         <field name="model">vcp.repository.branch</field>
         <field name="arch" type="xml">
             <search>
+                <filter
+                    string="Process Rule Error"
+                    name="error"
+                    domain="[('rule_failure_msg', '!=', False)]"
+                />
                 <field name="repository_id" />
                 <field name="branch_id" />
                 <field name="platform_id" />
@@ -43,6 +68,11 @@
                 <field name="platform_id" />
                 <field name="repository_id" />
                 <field name="branch_id" />
+                <field
+                    name="update_rule_processing_date"
+                    decoration-danger="rule_failure_msg!=False"
+                />
+                <field name="rule_failure_msg" column_invisible="True" />
             </list>
         </field>
     </record>

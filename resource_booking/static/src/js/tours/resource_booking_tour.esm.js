@@ -2,7 +2,6 @@ import {registry} from "@web/core/registry";
 
 registry.category("web_tour.tours").add("resource_booking_ptl_tour", {
     url: "/my",
-    test: true,
     steps: () => [
         {
             content: "Go /my/bookings url",
@@ -18,7 +17,6 @@ registry.category("web_tour.tours").add("resource_booking_ptl_tour", {
 
 registry.category("web_tour.tours").add("resource_booking_ptl2_tour", {
     url: "/my",
-    test: true,
     steps: () => [
         {
             content: "Go /my/bookings url",

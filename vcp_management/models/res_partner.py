@@ -2,7 +2,12 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 
+import base64
+
+import requests
+
 from odoo import api, fields, models
+from odoo.exceptions import UserError
 
 
 class ResPartner(models.Model):
@@ -32,6 +37,34 @@ class ResPartner(models.Model):
         "vcp.organization",
         inverse_name="partner_id",
     )
+    image_1920 = fields.Image(
+        compute="_compute_image_1920",
+        store=True,
+        readonly=False,
+    )
+
+    @api.depends(
+        "vcp_user_ids.sync_image_to_partner",
+        "vcp_user_ids.avatar_url",
+    )
+    def _compute_image_1920(self):
+        for record in self:
+            sync_user = record.vcp_user_ids.filtered("sync_image_to_partner")
+            if len(sync_user) > 1:
+                raise UserError(
+                    self.env._(
+                        "Only one Vcp User can be use for synchronising the main image"
+                    )
+                )
+            elif sync_user.avatar_url:
+                try:
+                    response = requests.get(sync_user.avatar_url, timeout=10)
+                    response.raise_for_status()
+                except Exception as e:
+                    raise UserError(
+                        self.env._("Fail to download avatar, %s.please retry".format())
+                    ) from e
+                record.image_1920 = base64.b64encode(response.content).decode("utf-8")
 
     @api.depends()
     def _compute_vcp_contributions(self):

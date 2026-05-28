@@ -80,37 +80,8 @@ export function createFileUploadExtension() {
         },
 
         async onChangeFileInput() {
-            const params = {
-                csrf_token: odoo.csrf_token,
-                ufile: [...this.fileInput.el.files],
-                model: "dms.file",
-                id: 0,
-            };
-
-            const fileData = await this.http.post(
-                "/web/binary/upload_attachment",
-                params,
-                "text"
-            );
-            const attachments = JSON.parse(fileData);
-            if (attachments.error) {
-                throw new Error(attachments.error);
-            }
-
-            await this.onUpload(attachments);
-        },
-
-        async onUpload(attachments) {
             const self = this;
-            const attachmentIds = attachments.map((a) => a.id);
-            const ctx = this.props.context;
             const controllerID = this.actionService.currentController.jsId;
-
-            if (!attachmentIds.length) {
-                this.notification.add(_t("An error occurred during the upload"));
-                return;
-            }
-
             // Search the correct directory_id value according to the domain
             let directory_id = false;
             if (this.props.domain) {
@@ -133,37 +104,22 @@ export function createFileUploadExtension() {
                 });
             }
 
-            const attachment_datas = await this.orm.call(
-                "dms.file",
-                "get_dms_files_from_attachments",
-                [],
-                {attachment_ids: attachmentIds}
+            const params = {
+                csrf_token: odoo.csrf_token,
+                ufile: [...this.fileInput.el.files],
+                directory_id: directory_id,
+            };
+
+            const fileData = await this.http.post(
+                "/web/binary/upload_dms_file",
+                params,
+                "text"
             );
-
-            const attachments_args = [];
-
-            attachment_datas.forEach((attachment_data) => {
-                attachments_args.push({
-                    name: attachment_data.name,
-                    content: attachment_data.datas,
-                    mimetype: attachment_data.mimetype,
-                    directory_id,
-                });
-            });
-
-            this.orm
-                .call("dms.file", "create", [attachments_args], {
-                    context: ctx,
-                })
-                .then(() => {
-                    self.actionService.restore(controllerID);
-                })
-                .catch((error) => {
-                    self.notification.add(error.data.message, {
-                        type: "danger",
-                    });
-                    self.actionService.restore(controllerID);
-                });
+            const result = JSON.parse(fileData);
+            if (result.error) {
+                throw new Error(result.error);
+            }
+            self.actionService.restore(controllerID);
         },
     };
 }

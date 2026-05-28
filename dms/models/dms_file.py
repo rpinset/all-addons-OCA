@@ -640,29 +640,3 @@ class DMSFile(models.Model):
                 )
             else:
                 record.update({"is_locked": False, "is_lock_editor": False})
-
-    def get_attachment_object(self, attachment):
-        return {
-            "name": attachment.name,
-            "datas": attachment.datas,
-            "res_model": attachment.res_model,
-            "mimetype": attachment.mimetype,
-        }
-
-    @api.model
-    def get_dms_files_from_attachments(self, attachment_ids=None):
-        """Get the dms files from uploaded attachments.
-        :return: An Array of dms files.
-        """
-        if not attachment_ids:
-            raise UserError(_("No attachment was provided"))
-
-        attachments = self.env["ir.attachment"].browse(attachment_ids)
-
-        if any(
-            attachment.res_id or attachment.res_model != "dms.file"
-            for attachment in attachments
-        ):
-            raise UserError(_("Invalid attachments!"))
-
-        return [self.get_attachment_object(attachment) for attachment in attachments]

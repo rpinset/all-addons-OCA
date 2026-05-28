@@ -369,6 +369,12 @@ msgid "Canceled"
 msgstr ""
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+msgid "Cannot compute total value for contract line '%s': no end date is set."
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__product_uom_category_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__product_uom_category_id
 msgid "Category"

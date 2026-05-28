@@ -8,11 +8,22 @@
             <form>
                 <header />
                 <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
                     <group>
-                        <field name="name" />
+                        <field name="avatar_url" widget='url' />
                         <field name="external_id" />
+                        <field name="email" />
+                        <field name="company" />
                         <field name="host_id" />
                         <field name="partner_id" />
+                        <field
+                            name="sync_image_to_partner"
+                            invisible="not partner_id"
+                        />
                     </group>
                 </sheet>
             </form>
@@ -36,6 +47,7 @@
                 <field name="name" />
                 <field name="external_id" />
                 <field name="host_id" />
+                <field name="sync_image_to_partner" />
             </list>
         </field>
     </record>

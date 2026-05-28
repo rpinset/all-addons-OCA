@@ -405,12 +405,6 @@ msgid "All Files"
 msgstr "כל הקבצים"
 
 #. module: dms
-#. odoo-javascript
-#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
-msgid "An error occurred during the upload"
-msgstr ""
-
-#. module: dms
 #: model:dms.tag,name:dms.tag_06_demo
 msgid "Apps"
 msgstr ""
@@ -1313,12 +1307,6 @@ msgid "Internal / Human Resource"
 msgstr "משאבים פנימיים / אנושיים"
 
 #. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "Invalid attachments!"
-msgstr ""
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
 msgid "Invoices"
 msgstr "חשבוניות"
@@ -1573,12 +1561,6 @@ msgstr "תיאור הפעילות הבאה"
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
 msgid "Next Activity Type"
 msgstr "סוג הפעילות הבאה"
-
-#. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "No attachment was provided"
-msgstr ""
 
 #. module: dms
 #: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
@@ -1925,6 +1907,12 @@ msgid "Size (human readable)"
 msgstr ""
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "Something horrible happened"
+msgstr ""
+
+#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__starred
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
 msgid "Starred"
@@ -2096,8 +2084,8 @@ msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
-"שם כינוי הדוא\"ל, למשל 'עבודות' אם ברצונך לקבל הודעות דוא\"ל ל <jobs@example."
-"odoo.com>"
+"שם כינוי הדוא\"ל, למשל 'עבודות' אם ברצונך לקבל הודעות דוא\"ל ל "
+"<jobs@example.odoo.com>"
 
 #. module: dms
 #: model:ir.model.constraint,message:dms.constraint_dms_access_group_name_uniq
@@ -2235,6 +2223,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
 msgid "Write Access"
 msgstr "גישה לכתיבה"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "You are not allowed to upload a file here."
+msgstr ""
 
 #. module: dms
 #. odoo-javascript

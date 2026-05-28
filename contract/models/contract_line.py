@@ -8,8 +8,8 @@ import warnings
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import api, fields, models
-from odoo.exceptions import ValidationError
+from odoo import _, api, fields, models
+from odoo.exceptions import UserError, ValidationError
 
 # Months equivalent per recurrence unit (to normalise amounts to monthly)
 _MONTHS_PER_RULE = {
@@ -345,3 +345,25 @@ class ContractLine(models.Model):
     ):
         self.ensure_one()
         return self.quantity if not self.display_type else 0.0
+
+    def _get_contract_line_total_value(self):
+        """Return the total value of this contract line over its full period.
+
+        Raises UserError if the line has no date_end, since a
+        total cannot be computed without a known end date.
+        """
+        self.ensure_one()
+        if not self.date_end:
+            raise UserError(
+                _(
+                    "Cannot compute total value for contract line '%s': "
+                    "no end date is set.",
+                    self.display_name,
+                )
+            )
+        quantity = self._get_quantity_to_invoice(
+            self.date_start,
+            self.date_end,
+            self.date_start,
+        )
+        return quantity * self.price_unit

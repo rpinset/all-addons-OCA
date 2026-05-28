@@ -442,12 +442,6 @@ msgid "All Files"
 msgstr "همه پرونده‌ها"
 
 #. module: dms
-#. odoo-javascript
-#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
-msgid "An error occurred during the upload"
-msgstr "یک خطا طی بارگذاری رخ داد"
-
-#. module: dms
 #: model:dms.tag,name:dms.tag_06_demo
 msgid "Apps"
 msgstr "اپلیکیشن‌ها"
@@ -1369,12 +1363,6 @@ msgid "Internal / Human Resource"
 msgstr "داخلی/منابع انسانی"
 
 #. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "Invalid attachments!"
-msgstr "پیوست‌ها نامعتبر!"
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
 msgid "Invoices"
 msgstr "فاکتورها"
@@ -1629,12 +1617,6 @@ msgstr "خلاصه فعالیت بعدی"
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
 msgid "Next Activity Type"
 msgstr "نوع فعالیت بعدی"
-
-#. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "No attachment was provided"
-msgstr "هیچ پیوستی ارائه نشده است"
 
 #. module: dms
 #: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
@@ -1994,6 +1976,12 @@ msgid "Size (human readable)"
 msgstr "اندازه (قابل خواندن توسط انسان)"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "Something horrible happened"
+msgstr ""
+
+#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__starred
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
 msgid "Starred"
@@ -2311,6 +2299,12 @@ msgid "Write Access"
 msgstr "دسترسی نوشتن"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "You are not allowed to upload a file here."
+msgstr ""
+
+#. module: dms
 #. odoo-javascript
 #: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
 msgid "You must select a directory first"
@@ -2331,6 +2325,15 @@ msgstr "exe،msi"
 #, fuzzy
 msgid "mail.catchall.domain"
 msgstr "دامنه‌ای که ایمیل‌های بدون گیرنده خاص به آن ارسال می‌شود"
+
+#~ msgid "An error occurred during the upload"
+#~ msgstr "یک خطا طی بارگذاری رخ داد"
+
+#~ msgid "Invalid attachments!"
+#~ msgstr "پیوست‌ها نامعتبر!"
+
+#~ msgid "No attachment was provided"
+#~ msgstr "هیچ پیوستی ارائه نشده است"
 
 #~ msgid "Actions"
 #~ msgstr "اقدامات"

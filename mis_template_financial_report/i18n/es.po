@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-04 12:05+0000\n"
-"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
+"PO-Revision-Date: 2026-05-26 15:46+0000\n"
+"Last-Translator: Oso Tranquilo <osotranquilo@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mis_template_financial_report
 #: model:ir.model.fields,field_description:mis_template_financial_report.field_mis_report_instance__allow_horizontal
@@ -59,7 +59,7 @@ msgstr "Instancia de informe MIS"
 #. module: mis_template_financial_report
 #: model:ir.model,name:mis_template_financial_report.model_mis_report_kpi
 msgid "MIS Report KPI"
-msgstr ""
+msgstr "KPI de Informe MIS"
 
 #. module: mis_template_financial_report
 #: model:mis.report.kpi,description:mis_template_financial_report.kpi_profit
@@ -84,7 +84,7 @@ msgstr "Ganancias o pérdidas a reportar"
 #. module: mis_template_financial_report
 #: model:ir.model.fields,field_description:mis_template_financial_report.field_mis_report_kpi__split_after
 msgid "Split After"
-msgstr ""
+msgstr "Dividir después"
 
 #. module: mis_template_financial_report
 #: model:ir.model.fields,help:mis_template_financial_report.field_mis_report_kpi__split_after
@@ -92,11 +92,13 @@ msgid ""
 "Split the table after this KPI. This allows displaying KPIs next to each "
 "other in non-comparison mode"
 msgstr ""
+"Dividir la tabla tras este KPI. Así se pueden mostrar los KPI uno junto a "
+"otro en modo sin comparación"
 
 #. module: mis_template_financial_report
 #: model_terms:ir.ui.view,arch_db:mis_template_financial_report.mis_report_view_kpi_form
 msgid "Splitting"
-msgstr ""
+msgstr "Desglose"
 
 #~ msgid "Display Name"
 #~ msgstr "Nombre mostrado"

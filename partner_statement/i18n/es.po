@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-22 16:14+0000\n"
-"PO-Revision-Date: 2023-10-09 09:09+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-05-26 15:46+0000\n"
+"Last-Translator: Oso Tranquilo <osotranquilo@gmail.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: partner_statement
 #. odoo-python
@@ -85,6 +85,12 @@ msgid ""
 "due or overdue.\n"
 "                    </span>"
 msgstr ""
+"<span class=\"o_form_label\">Los detalles de antigüedad se pueden mostrar en "
+"el informe, \n"
+"expresados en tramos de antigüedad, \n"
+"para que el socio comercial pueda revisar cuánto hay pendiente, a vencer o "
+"vencido.\n"
+"</span>"
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_statement_wizard_view
@@ -105,6 +111,18 @@ msgid ""
 "                <br/>\n"
 "                <br/>"
 msgstr ""
+"<span class=\"o_form_label\">El estado de actividad proporciona los detalles "
+"de toda la actividad en\n"
+" las cuentas por cobrar y por pagar de un socio comercial entre dos fechas "
+"seleccionadas.\n"
+"Esto incluye todas las facturas, abonos y pagos.\n"
+"Cualquier saldo pendiente con fecha anterior al período del estado "
+"seleccionado aparecerá\n"
+" como saldo inicial en la parte superior del estado.\n"
+"La lista se muestra en orden cronológico y está dividida por monedas.\n"
+"</span>\n"
+"<br/>\n"
+"<br/>"
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.detailed_activity_statement_wizard_view
@@ -120,6 +138,15 @@ msgid ""
 "                <br/>\n"
 "                <br/>"
 msgstr ""
+"<span class=\"o_form_label\">El estado de actividad detallado es una "
+"extensión del estado de\n"
+"actividad y tiene como objetivo explicar las transacciones\n"
+" que han tenido lugar durante el período, \n"
+"proporcionando también una sección de Saldo inicial y una sección de Saldo "
+"final.\n"
+"</span>\n"
+"<br/>\n"
+"<br/>"
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_statement_wizard_view
@@ -138,6 +165,16 @@ msgid ""
 "                <br/>\n"
 "                <br/>"
 msgstr ""
+"<span class=\"o_form_label\">El estado de saldos pendientes proporciona los "
+"detalles de todas las cuentas por cobrar y por pagar pendientes de un socio "
+"comercial hasta una fecha determinada. \n"
+"Esto incluye todas las facturas impagadas, los abonos no reclamados y los "
+"pagos pendientes. \n"
+"La lista se muestra en orden cronológico y está dividida por monedas.\n"
+"\n"
+"</span>\n"
+"<br/>\n"
+"<br/>"
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_statement_document
@@ -181,7 +218,7 @@ msgstr "Tipo de Cuenta"
 #: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__excluded_accounts_selector
 #: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__excluded_accounts_selector
 msgid "Accounts to exclude"
-msgstr ""
+msgstr "Cuentas a excluir"
 
 #. module: partner_statement
 #. odoo-python
@@ -209,7 +246,7 @@ msgstr "Declaración de actividad XLSX"
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.res_config_settings_view_form
 msgid "Activity Statements"
-msgstr ""
+msgstr "Declaraciones de actividad"
 
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.res_config_settings_view_form
@@ -253,7 +290,7 @@ msgstr "Informe de antigüedad al %(end)s en %(currency)s"
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
 msgid "Aging Report at %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Informe de antigüedad al %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -385,6 +422,7 @@ msgid ""
 "Detailed Statement between %(starting_date)s and %(ending_date)s in %"
 "(currency)s"
 msgstr ""
+"Estado detallado entre %(starting_date)s y %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -393,6 +431,8 @@ msgid ""
 "Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
 msgstr ""
+"Estado detallado del proveedor entre %(starting_date)s y %(ending_date)s en %"
+"(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -441,7 +481,7 @@ msgstr "Saldo Final"
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 msgid "Ending Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo final hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -618,7 +658,7 @@ msgstr "Por favor establezca los valores por defecto en estado de la cuenta."
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 msgid "Prior Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo inicial hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__asset_receivable
@@ -651,6 +691,8 @@ msgid ""
 "Select account codes to be excluded with a comma-separated list of "
 "expressions like 70%."
 msgstr ""
+"Seleccione los códigos de cuenta que desea excluir mediante una lista "
+"separada por comas de expresiones (por ejemplo, 70%)."
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__show_aging_buckets
@@ -672,7 +714,7 @@ msgstr "Mostrar columna Saldo"
 #: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__show_only_overdue
 #: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__show_only_overdue
 msgid "Show Only Overdue"
-msgstr ""
+msgstr "Mostrar solo vencidos"
 
 #. module: partner_statement
 #: model:ir.model.fields,help:partner_statement.field_activity_statement_wizard__show_only_overdue
@@ -681,11 +723,12 @@ msgstr ""
 #: model:ir.model.fields,help:partner_statement.field_statement_common_wizard__show_only_overdue
 msgid "Show only lines due before the selected date"
 msgstr ""
+"Mostrar solo las líneas con vencimiento anterior a la fecha seleccionada"
 
 #. module: partner_statement
 #: model:ir.model,name:partner_statement.model_report_p_s_report_statement_common_xlsx
 msgid "Statement Common XLSX Report"
-msgstr ""
+msgstr "Informe XLSX de estado común"
 
 #. module: partner_statement
 #: model:ir.model,name:partner_statement.model_statement_common
@@ -701,7 +744,7 @@ msgstr "Asistente para Informe Estado de la cuenta"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
 msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estado entre %(starting_date)s y %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -732,19 +775,19 @@ msgstr "Declaración hasta:"
 #. odoo-python
 #: code:addons/partner_statement/report/outstanding_statement.py:0
 msgid "Statement up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estado hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo final del proveedor hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo inicial del proveedor hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -753,12 +796,14 @@ msgid ""
 "Supplier Statement between %(starting_date)s and %(ending_date)s in %"
 "(currency)s"
 msgstr ""
+"Estado del proveedor entre %(starting_date)s y %(ending_date)s en %(currency)"
+"s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/outstanding_statement.py:0
 msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estado del proveedor hasta el %(ending_date)s en %(currency)s"
 
 #. module: partner_statement
 #. odoo-python

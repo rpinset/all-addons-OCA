@@ -523,7 +523,11 @@ class BusinessDocumentImport(models.AbstractModel):
         )
         if partner:
             return partner
-        if not partner_dict.get("vat"):
+
+        # Fallback, only if we have a proper domain here: if we get ``domain = []``,
+        # then we'd be searching for the whole DB for a partner and retrieve a random
+        # one, which makes no sense
+        if not partner_dict.get("vat") and domain and domain != expression.TRUE_DOMAIN:
             partner = self.env["res.partner"].search(domain, limit=1)
         if partner:
             return partner

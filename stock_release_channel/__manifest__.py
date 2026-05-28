@@ -5,7 +5,7 @@
 {
     "name": "Stock Release Channels",
     "summary": "Manage workload in WMS with release channels",
-    "version": "18.0.1.7.0",
+    "version": "18.0.1.7.1",
     "development_status": "Beta",
     "license": "AGPL-3",
     "author": "Camptocamp, BCIM, ACSONE SA/NV, Odoo Community Association (OCA)",

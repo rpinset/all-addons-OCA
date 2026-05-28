@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 20254 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="rma_form_view" model="ir.ui.view">
+        <field name="model">rma</field>
+        <field name="inherit_id" ref="rma.rma_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="after">
+                <div
+                    role="alert"
+                    class="alert alert-warning"
+                    invisible="not has_sale_auto_detect_issue"
+                >
+                    <field name="sale_auto_detect_note" nolabel="1" />
+                </div>
+                <div
+                    role="alert"
+                    class="alert alert-warning"
+                    invisible="not return_eligibility_period_exceeded"
+                >
+                    This return may no longer be eligible; the return eligibility period has been exceeded
+                </div>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_link_rma_to_sale_line"
+                    string="Link to sale line"
+                    type="object"
+                    class="btn-secondary"
+                    invisible="state != 'draft' or move_id"
+                />
+            </xpath>
+            <xpath expr="//field[@name='order_id']" position="before">
+                <field name="return_eligibility_days" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -455,12 +455,6 @@ msgid "All Files"
 msgstr "Todos los archivos"
 
 #. module: dms
-#. odoo-javascript
-#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
-msgid "An error occurred during the upload"
-msgstr "Se ha producido un error durante la carga"
-
-#. module: dms
 #: model:dms.tag,name:dms.tag_06_demo
 msgid "Apps"
 msgstr "Aplicaciones"
@@ -1384,12 +1378,6 @@ msgid "Internal / Human Resource"
 msgstr "Interno / Recursos humanos"
 
 #. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "Invalid attachments!"
-msgstr "¡Archivos adjuntos no válidos!"
-
-#. module: dms
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
 msgid "Invoices"
 msgstr "Facturas"
@@ -1645,12 +1633,6 @@ msgstr "Resumen de siguiente actividad"
 #: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
 msgid "Next Activity Type"
 msgstr "Tipo de siguiente actividad"
-
-#. module: dms
-#. odoo-python
-#: code:addons/dms/models/dms_file.py:0
-msgid "No attachment was provided"
-msgstr "No se proporcionó ningún anexo"
 
 #. module: dms
 #: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
@@ -2000,6 +1982,12 @@ msgid "Size (human readable)"
 msgstr "Tamaño (legible por humanos)"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "Something horrible happened"
+msgstr ""
+
+#. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__starred
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
 msgid "Starred"
@@ -2317,6 +2305,12 @@ msgid "Write Access"
 msgstr "Acceso de escritura"
 
 #. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/main.py:0
+msgid "You are not allowed to upload a file here."
+msgstr ""
+
+#. module: dms
 #. odoo-javascript
 #: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
 msgid "You must select a directory first"
@@ -2336,6 +2330,15 @@ msgstr "exe,msi"
 #: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
 msgid "mail.catchall.domain"
 msgstr "mail.catchall.domain"
+
+#~ msgid "An error occurred during the upload"
+#~ msgstr "Se ha producido un error durante la carga"
+
+#~ msgid "Invalid attachments!"
+#~ msgstr "¡Archivos adjuntos no válidos!"
+
+#~ msgid "No attachment was provided"
+#~ msgstr "No se proporcionó ningún anexo"
 
 #~ msgid "Actions"
 #~ msgstr "Acciones"

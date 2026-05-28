@@ -14,6 +14,20 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: vcp_odoo
+#: model:ir.actions.act_window,name:vcp_odoo.vcp_odoo_author_act_window
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__author_ids
+#: model:ir.ui.menu,name:vcp_odoo.menu_odoo_author
+#: model_terms:ir.ui.view,arch_db:vcp_odoo.vcp_odoo_author_view_search
+#: model_terms:ir.ui.view,arch_db:vcp_odoo.vcp_odoo_author_view_tree
+msgid "Author"
+msgstr ""
+
+#. module: vcp_odoo
+#: model_terms:ir.ui.view,arch_db:vcp_odoo.view_partner_form
+msgid "Author Modules"
+msgstr ""
+
+#. module: vcp_odoo
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__auto_install
 msgid "Auto Install"
 msgstr ""
@@ -31,6 +45,12 @@ msgid "Binary Package required by an Odoo Module"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model,name:vcp_odoo.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__create_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__create_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__create_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__create_uid
@@ -39,6 +59,7 @@ msgid "Created by"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__create_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__create_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__create_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__create_date
@@ -63,6 +84,12 @@ msgid "Description"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__development_status
+msgid "Development Status (Manifest)"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__display_name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__display_name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__display_name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__display_name
@@ -71,6 +98,7 @@ msgid "Display Name"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__id
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__id
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__id
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__id
@@ -109,6 +137,7 @@ msgid "Information"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__write_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__write_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__write_uid
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__write_uid
@@ -117,6 +146,7 @@ msgid "Last Updated by"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__write_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__write_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__write_date
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__write_date
@@ -132,6 +162,16 @@ msgstr ""
 #. module: vcp_odoo
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__local_path
 msgid "Local Path"
+msgstr ""
+
+#. module: vcp_odoo
+#: model_terms:ir.ui.view,arch_db:vcp_odoo.view_partner_form
+msgid "Maintained Modules"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__maintainer_ids
+msgid "Maintainer"
 msgstr ""
 
 #. module: vcp_odoo
@@ -152,11 +192,29 @@ msgid "Modules"
 msgstr ""
 
 #. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_res_partner__modules_author_count
+#: model:ir.model.fields,field_description:vcp_odoo.field_res_users__modules_author_count
+msgid "Modules Author Count"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_res_partner__modules_maintained_count
+#: model:ir.model.fields,field_description:vcp_odoo.field_res_users__modules_maintained_count
+msgid "Modules Maintained Count"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_bin_package__name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module__name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_module_version__name
 #: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_python_library__name
 msgid "Name"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.constraint,message:vcp_odoo.constraint_vcp_odoo_author_name_unique
+msgid "Name must be uniq"
 msgstr ""
 
 #. module: vcp_odoo
@@ -188,6 +246,11 @@ msgstr ""
 #. module: vcp_odoo
 #: model:ir.ui.menu,name:vcp_odoo.vcp_odoo_menu
 msgid "Odoo Modules"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model.fields,field_description:vcp_odoo.field_vcp_odoo_author__partner_id
+msgid "Partner"
 msgstr ""
 
 #. module: vcp_odoo
@@ -244,6 +307,11 @@ msgstr ""
 #. module: vcp_odoo
 #: model:ir.model.constraint,message:vcp_odoo.constraint_vcp_odoo_module_name_uniq
 msgid "The module name must be unique"
+msgstr ""
+
+#. module: vcp_odoo
+#: model:ir.model,name:vcp_odoo.model_vcp_odoo_author
+msgid "Vcp Odoo Author"
 msgstr ""
 
 #. module: vcp_odoo
