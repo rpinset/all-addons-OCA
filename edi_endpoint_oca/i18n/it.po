@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-21 15:46+0000\n"
+"PO-Revision-Date: 2026-05-25 22:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -246,6 +246,11 @@ msgid ""
 " - application/xml, text/xml: XML Schema (XSD)\n"
 "If empty, no validation runs."
 msgstr ""
+"Schema opzionale convalidato rispetto al corpo della richiesta analizzato. "
+"Il formato accettato dipende dal \"Tipo di contenuto della richiesta\":\n"
+" - application/json: schema JSON (bozza 2020-12), in formato YAML o JSON\n"
+" - application/xml, text/xml: schema XML (XSD)\n"
+"Se vuoto, non viene eseguita alcuna convalida."
 
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__readonly
@@ -266,12 +271,12 @@ msgstr "Sincro registro"
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__request_content_schema
 msgid "Request Content Schema"
-msgstr ""
+msgstr "Schema del contenuto della richiesta"
 
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__request_content_schema_applicable
 msgid "Request Content Schema Applicable"
-msgstr ""
+msgstr "Schema del contenuto della richiesta applicabile"
 
 #. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__request_content_type

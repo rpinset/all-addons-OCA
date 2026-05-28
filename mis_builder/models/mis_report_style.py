@@ -3,7 +3,6 @@
 # Copyright 2020 CorporateHub (https://corporatehub.eu)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-import sys
 
 from odoo import api, fields, models
 from odoo.exceptions import ValidationError
@@ -12,15 +11,13 @@ from odoo.tools import float_round
 from .accounting_none import AccountingNone
 from .data_error import DataError
 
-if sys.version_info.major >= 3:
-    unicode = str
-
 
 class PropertyDict(dict):
     def __getattr__(self, name):
         return self.get(name)
 
-    def copy(self):  # pylint: disable=copy-wo-api-one,method-required-super
+    # pylint: disable=method-required-super
+    def copy(self):
         return PropertyDict(self)
 
 
@@ -133,9 +130,10 @@ class MisReportKpiStyle(models.Model):
     hide_always_inherit = fields.Boolean(default=True)
     hide_always = fields.Boolean(default=False)
 
-    _sql_constraints = [
-        ("style_name_uniq", "unique(name)", "Style name should be unique")
-    ]
+    _style_name_uniq = models.Constraint(
+        "unique(name)",
+        "Style name should be unique",
+    )
 
     description = fields.Html(
         compute="_compute_description",
@@ -223,7 +221,8 @@ class MisReportKpiStyle(models.Model):
         if value is None or value is AccountingNone:
             return ""
         value = float_round(value / float(divider or 1), dp or 0) or 0
-        r = lang.format("%%%s.%df" % (sign, dp or 0), value, grouping=True)
+        format_str = f"%{sign}.{dp or 0}f"
+        r = lang.format(format_str, value, grouping=True)
         r = r.replace("-", "\N{NON-BREAKING HYPHEN}")
         if prefix:
             r = prefix + "\N{NO-BREAK SPACE}" + r
@@ -239,7 +238,7 @@ class MisReportKpiStyle(models.Model):
     def render_str(self, lang, value):
         if value is None or value is AccountingNone:
             return ""
-        return unicode(value)
+        return str(value)
 
     @api.model
     def compare_and_render(
@@ -286,10 +285,8 @@ class MisReportKpiStyle(models.Model):
                 delta = AccountingNone
         elif var_type == TYPE_NUM:
             if value and average_value:
-                # pylint: disable=redefined-variable-type
                 value = value / float(average_value)
             if base_value and average_base_value:
-                # pylint: disable=redefined-variable-type
                 base_value = base_value / float(average_base_value)
             if compare_method == CMP_DIFF:
                 delta = value - base_value

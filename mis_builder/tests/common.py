@@ -26,9 +26,9 @@ def assert_matrix(matrix, expected):
         if row is not None and expected_row is None:
             raise AssertionError("too many rows")
         for j, cell, expected_val in _zip(row.iter_cells(), expected_row):
-            assert (
-                (cell and cell.val) == expected_val
-            ), f"{cell and cell.val} != {expected_val} in row {i} col {j}"
+            assert (cell and cell.val) == expected_val, (
+                f"{cell and cell.val} != {expected_val} in row {i} col {j}"
+            )
 
 
 @tagged("doctest")

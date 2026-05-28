@@ -5,7 +5,7 @@ from collections import defaultdict
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
-from odoo.osv import expression
+from odoo.fields import Domain
 
 ACC_SUM = "sum"
 ACC_AVG = "avg"
@@ -79,7 +79,7 @@ class MisKpiData(models.AbstractModel):
         dt_to = fields.Date.from_string(date_to)
         # all data items within or overlapping [date_from, date_to]
         date_domain = [("date_from", "<=", date_to), ("date_to", ">=", date_from)]
-        domain = expression.AND([date_domain, base_domain])
+        domain = Domain(date_domain) & Domain(base_domain)
         res = defaultdict(float)
         res_avg = defaultdict(list)
         for item in self.search(domain):

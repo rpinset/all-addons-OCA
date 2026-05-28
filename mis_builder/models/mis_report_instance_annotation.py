@@ -63,11 +63,10 @@ class MisReportInstanceAnnotation(models.Model):
             .browse(instance_id)
             ._get_annotation_context()
         )
-        annotation = fields.first(
-            annotations.filtered(
-                lambda rec: rec.annotation_context == annotation_context
-            )
+        annotation_rec = annotations.filtered(
+            lambda rec: rec.annotation_context == annotation_context
         )
+        annotation = next(iter(annotation_rec), annotation_rec)
         return annotation
 
     @api.model
@@ -78,7 +77,7 @@ class MisReportInstanceAnnotation(models.Model):
             .user_can_edit_annotation
         ):
             raise AccessError(
-                self.env._("You do not have the rights to edit" " annotations")
+                self.env._("You do not have the rights to edit annotations")
             )
 
         annotation = self._get_first_matching_annotation(cell_id, instance_id)
@@ -109,7 +108,7 @@ class MisReportInstanceAnnotation(models.Model):
             .user_can_edit_annotation
         ):
             raise AccessError(
-                self.env._("You do not have the" " rights to edit annotations")
+                self.env._("You do not have the rights to edit annotations")
             )
 
         annotation = self._get_first_matching_annotation(cell_id, instance_id)

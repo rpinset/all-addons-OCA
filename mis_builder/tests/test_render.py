@@ -322,23 +322,25 @@ class TestRendering(common.TransactionCase):
         )
 
     def test_description(self):
-        self.assertEqual(self.style.description.unescape(), "")
+        self.assertEqual(self.style.description.unescape(), "<div></div>")
 
         self.style.dp_inherit = False
         self.style.dp = 4
-        self.assertEqual(self.style.description.unescape(), "Rounding : 4")
+        self.assertEqual(self.style.description.unescape(), "<div>Rounding : 4</div>")
         self.style.dp_inherit = True
 
         self.style.color_inherit = False
         self.style.color = "red"
         self.assertEqual(
             self.style.description.unescape(),
-            'Text color : <span style="background-color: red;'
+            '<div>Text color : <span style="background-color: red;'
             " width: 15px; height: 15px; display: inline-block;"
-            ' border: 1px black solid; border-radius: 5px;"></span>',
+            ' border: 1px black solid; border-radius: 5px;"></span></div>',
         )
         self.style.color_inherit = True
 
         self.style.prefix_inherit = False
         self.style.prefix = "$"
-        self.assertEqual(self.style.description.unescape(), "Prefix : '<code>$</code>'")
+        self.assertEqual(
+            self.style.description.unescape(), "<div>Prefix : '<code>$</code>'</div>"
+        )

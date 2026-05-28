@@ -10,6 +10,7 @@ from dateutil.relativedelta import relativedelta
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.fields import Domain
 
 from .aep import AccountingExpressionProcessor as AEP
 from .expression_evaluator import ExpressionEvaluator
@@ -289,19 +290,20 @@ class MisReportInstancePeriod(models.Model):
 
     _order = "sequence, id"
 
-    _sql_constraints = [
-        ("duration", "CHECK (duration>0)", "Wrong duration, it must be positive!"),
-        (
-            "normalize_factor",
-            "CHECK (normalize_factor>0)",
-            "Wrong normalize factor, it must be positive!",
-        ),
-        (
-            "name_unique",
-            "unique(name, report_instance_id)",
-            "Period name should be unique by report",
-        ),
-    ]
+    _duration = models.Constraint(
+        "CHECK(duration > 0)",
+        "Wrong duration, it must be positive!",
+    )
+
+    _normalize_factor = models.Constraint(
+        "CHECK(normalize_factor > 0)",
+        "Wrong normalize factor, it must be positive!",
+    )
+
+    _name_unique = models.Constraint(
+        "unique(name, report_instance_id)",
+        "Period name should be unique by report",
+    )
 
     @api.depends("source", "report_instance_id.report_id.move_lines_source")
     def _compute_source_aml_model_id(self):
@@ -423,8 +425,7 @@ class MisReportInstancePeriod(models.Model):
                 if rec.mode == MODE_NONE:
                     raise DateFilterRequired(
                         self.env._(
-                            "A date filter is mandatory for this source "
-                            "in column %s.",
+                            "A date filter is mandatory for this source in column %s.",
                             rec.name,
                         )
                     )
@@ -432,8 +433,7 @@ class MisReportInstancePeriod(models.Model):
                 if rec.mode != MODE_NONE:
                     raise DateFilterForbidden(
                         self.env._(
-                            "No date filter is allowed for this source "
-                            "in column %s.",
+                            "No date filter is allowed for this source in column %s.",
                             rec.name,
                         )
                     )
@@ -460,8 +460,7 @@ class MisReportInstancePeriod(models.Model):
                 ):
                     raise ValidationError(
                         self.env._(
-                            "Columns to compare must belong to the same report "
-                            "in %s",
+                            "Columns to compare must belong to the same report in %s",
                             rec.name,
                         )
                     )
@@ -499,7 +498,7 @@ class MisReportInstance(models.Model):
     sequence = fields.Integer(default=10)
     description = fields.Char(related="report_id.description")
     date = fields.Date(
-        string="Base date", help="Report base date " "(leave empty to use current date)"
+        string="Base date", help="Report base date (leave empty to use current date)"
     )
     pivot_date = fields.Date(compute="_compute_pivot_date")
     report_id = fields.Many2one("mis.report", required=True, string="Report")
@@ -765,9 +764,7 @@ class MisReportInstance(models.Model):
             context.get("from_dashboard")
             and context.get("active_model") == "mis.report.instance"
         ):
-            view_id = self.env.ref(
-                "mis_builder." "mis_report_instance_result_view_form"
-            )
+            view_id = self.env.ref("mis_builder.mis_report_instance_result_view_form")
             mis_report_form_view = view_id and [view_id.id, "form"]
             for view in views:
                 if view and view[1] == "form":
@@ -778,7 +775,7 @@ class MisReportInstance(models.Model):
 
     def preview(self):
         self.ensure_one()
-        view_id = self.env.ref("mis_builder." "mis_report_instance_result_view_form")
+        view_id = self.env.ref("mis_builder.mis_report_instance_result_view_form")
         return {
             "type": "ir.actions.act_window",
             "res_model": "mis.report.instance",
@@ -882,8 +879,7 @@ class MisReportInstance(models.Model):
         """
         self.ensure_one()
         aep = self.report_id._prepare_aep(self.query_company_ids, self.currency_id)
-        multi_company = self.multi_company and len(self.query_company_ids) > 1
-        kpi_matrix = self.report_id.prepare_kpi_matrix(multi_company)
+        kpi_matrix = self.report_id.prepare_kpi_matrix(self.query_company_ids)
         for period in self.period_ids:
             description = None
             if period.mode == MODE_NONE:
@@ -980,7 +976,9 @@ class MisReportInstance(models.Model):
                 period.date_to,
                 account_id,
             )
-            domain.extend(period._get_additional_move_line_filter())
+            additional_domain = period._get_additional_move_line_filter()
+            if additional_domain:
+                domain = Domain.AND([domain, additional_domain])
             views = self._get_drilldown_model_views(period.source_aml_model_name)
             return {
                 "name": self._get_drilldown_action_name(arg),

@@ -6,7 +6,7 @@ from itertools import chain
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
-from odoo.fields import Date
+from odoo.fields import Date, Domain
 
 from .mis_kpi_data import intersect_days
 from .simple_array import SimpleArray
@@ -28,9 +28,9 @@ class ProRataReadGroupMixin(models.AbstractModel):
 
     def _search_date(self, operator, value):
         if operator in (">=", ">"):
-            return [("date_to", operator, value)]
+            return Domain("date_to", operator, value)
         elif operator in ("<=", "<"):
-            return [("date_from", operator, value)]
+            return Domain("date_from", operator, value)
         raise UserError(
             self.env._("Unsupported operator %s for searching on date", operator)
         )
@@ -73,7 +73,7 @@ class ProRataReadGroupMixin(models.AbstractModel):
         """
         date_from = None
         date_to = None
-        assert isinstance(domain, list)
+        assert isinstance(domain, list | Domain)
         for domain_item in domain:
             if isinstance(domain_item, list | tuple):
                 field, op, value = domain_item

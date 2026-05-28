@@ -124,9 +124,9 @@ class TestPeriodDates(common.TransactionCase):
             self.env["date.range"].create(
                 dict(
                     type_id=date_range_type.id,
-                    name="%d" % year,
-                    date_start="%d-01-01" % year,
-                    date_end="%d-12-31" % year,
+                    name=f"{year}",
+                    date_start=f"{year}-01-01",
+                    date_end=f"{year}-12-31",
                     company_id=date_range_type.company_id.id,
                 )
             )

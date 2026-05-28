@@ -13,6 +13,7 @@ import pytz
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.fields import Domain
 from odoo.tools.safe_eval import (
     datetime as safe_datetime,
 )
@@ -292,13 +293,10 @@ class MisReportKpiExpression(models.Model):
     # TODO FIXME set readonly=True when onchange('subkpi_ids') below works
     subkpi_id = fields.Many2one("mis.report.subkpi", readonly=False, ondelete="cascade")
 
-    _sql_constraints = [
-        (
-            "subkpi_kpi_unique",
-            "unique(subkpi_id, kpi_id)",
-            "Sub KPI must be used once and only once for each KPI",
-        )
-    ]
+    _subkpi_kpi_unique = models.Constraint(
+        "unique(subkpi_id, kpi_id)",
+        "Sub KPI must be used once and only once for each KPI",
+    )
 
     @api.depends(
         "kpi_id.description",
@@ -324,22 +322,18 @@ class MisReportKpiExpression(models.Model):
     def _search_display_name(self, operator, value):
         if "." in value:
             kpi_name, subkpi_name = value.split(".", 1)
-            name_search_domain = [
-                "|",
-                "|",
-                "&",
-                ("kpi_id.name", "=", kpi_name),
-                ("subkpi_id.name", operator, subkpi_name),
-                ("kpi_id.description", operator, value),
-                ("subkpi_id.description", operator, value),
-            ]
+            name_search_domain = (
+                (
+                    Domain("kpi_id.name", "=", kpi_name)
+                    & Domain("subkpi_id.name", operator, subkpi_name)
+                )
+                | Domain("kpi_id.description", operator, value)
+                | Domain("subkpi_id.description", operator, value)
+            )
         else:
-            name_search_domain = [
-                "|",
-                ("kpi_id.name", operator, value),
-                ("kpi_id.description", operator, value),
-            ]
-
+            name_search_domain = Domain("kpi_id.name", operator, value) | Domain(
+                "kpi_id.description", operator, value
+            )
         return name_search_domain
 
 
@@ -453,7 +447,7 @@ class MisReport(models.Model):
             ("field_id.name", "=", "date"),
             ("field_id.name", "=", "company_id"),
         ],
-        default=_default_move_lines_source,
+        default=lambda self: self._default_move_lines_source(),
         required=True,
         ondelete="cascade",
         help="A 'move line like' model, ie having at least debit, credit, "
@@ -539,9 +533,9 @@ class MisReport(models.Model):
 
     # TODO: kpi name cannot be start with query name
 
-    def prepare_kpi_matrix(self, multi_company=False):
+    def prepare_kpi_matrix(self, companies=None):
         self.ensure_one()
-        kpi_matrix = KpiMatrix(self.env, multi_company, self.account_model)
+        kpi_matrix = KpiMatrix(self.env, companies, self.account_model)
         for kpi in self.kpi_ids:
             kpi_matrix.declare_kpi(kpi)
         return kpi_matrix
@@ -619,7 +613,7 @@ class MisReport(models.Model):
                         v = data[0][field_name]
                     except KeyError:
                         _logger.error(
-                            "field %s not found in read_group " "for %s; not summable?",
+                            "field %s not found in read_group for %s; not summable?",
                             field_name,
                             model._name,
                         )

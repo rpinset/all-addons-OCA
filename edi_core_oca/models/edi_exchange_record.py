@@ -529,8 +529,20 @@ class EDIExchangeRecord(models.Model):
             rec._notify_related_record(message, level)
 
     def _trigger_edi_event(self, name, suffix=None, target=None, **kw):
-        """Hook to be implemented in other modules"""
-        pass
+        """Trigger a component event linked to this backend and edi exchange."""
+        event_name = self._trigger_edi_event_make_name(name, suffix)
+        target = target or self
+        global_configs = self.env["edi.configuration"].edi_get_conf_global(
+            self, event_name
+        )
+        for conf in global_configs:
+            conf.edi_exec_snippet_do(target, **kw)
+
+    def _trigger_edi_event_make_name(self, name, suffix=None):
+        return "on_edi_exchange_{name}{suffix}".format(
+            name=name,
+            suffix=("_" + suffix) if suffix else "",
+        )
 
     def _notify_done(self):
         self._notify_related_record(self._exchange_status_message("process_ok"))

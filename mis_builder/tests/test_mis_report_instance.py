@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 import odoo.tests.common as common
+from odoo.fields import Domain
 from odoo.tools import test_reports
 
 from ..models.accounting_none import AccountingNone
@@ -417,7 +418,9 @@ class TestMisReportInstance(common.HttpCase):
             )
             .ids
         )
-        self.assertTrue(("account_id", "in", tuple(account_ids)) in action["domain"])
+        domain_list = list(Domain(action["domain"]))
+        self.assertIn(("account_id", "in", account_ids), domain_list)
+
         self.assertEqual(action["res_model"], "account.move.line")
 
     def test_drilldown_action_name_with_account(self):
@@ -488,6 +491,68 @@ class TestMisReportInstance(common.HttpCase):
         self.assertEqual(
             action["views"],
             [[False, "list"], [False, "form"], [False, "pivot"], [False, "graph"]],
+        )
+
+    def test_multicompany_account_code_display(self):
+        """Account codes should display correctly in multi-company reports.
+
+        In Odoo 18, account.code is company-dependent. When a report belongs
+        to a different company than the user's current company, account codes
+        must still display correctly in auto-expanded rows.
+        """
+        company2 = self.env["res.company"].create({"name": "Test Co 2"})
+        account = (
+            self.env["account.account"]
+            .with_company(company2)
+            .create(
+                {
+                    "name": "Test Account",
+                    "code": "999001",
+                    "account_type": "expense",
+                    "company_ids": [(6, 0, [company2.id])],
+                }
+            )
+        )
+        # Verify code is visible from company2 but not from main company
+        self.assertEqual(account.with_company(company2).code, "999001")
+        self.assertFalse(account.with_company(self.env.ref("base.main_company")).code)
+        # Create report + instance for company2
+        report = self.env["mis.report"].create({"name": "MC Test Report"})
+        self.env["mis.report.kpi"].create(
+            {
+                "report_id": report.id,
+                "name": "exp",
+                "description": "Test Expense",
+                "auto_expand_accounts": True,
+                "sequence": 1,
+                "expression_ids": [(0, 0, {"name": "balp[999%]"})],
+            }
+        )
+        instance = self.env["mis.report.instance"].create(
+            {
+                "name": "MC Test Instance",
+                "report_id": report.id,
+                "company_id": company2.id,
+                "period_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "2024",
+                            "mode": "fix",
+                            "manual_date_from": "2024-01-01",
+                            "manual_date_to": "2024-12-31",
+                        },
+                    ),
+                ],
+            }
+        )
+        matrix = instance.compute()
+        body = matrix.get("body", [])
+        has_false = any("False" in (r.get("label") or "") for r in body)
+        self.assertFalse(
+            has_false,
+            "Account codes should not show as 'False' in multi-company reports",
         )
 
     def test_qweb(self):

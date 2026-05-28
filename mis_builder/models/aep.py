@@ -7,7 +7,7 @@ from collections import defaultdict
 
 from odoo import fields
 from odoo.exceptions import UserError
-from odoo.models import expression
+from odoo.fields import Domain
 from odoo.tools.float_utils import float_is_zero
 from odoo.tools.safe_eval import datetime, dateutil, safe_eval, time
 
@@ -184,7 +184,7 @@ class AccountingExpressionProcessor:
                 elems.append([("code", "=like", account_code)])
             else:
                 elems.append([("code", "=", account_code)])
-        return tuple(expression.OR(elems))
+        return tuple(Domain.OR(elems))
 
     def _parse_match_object(self, mo):
         """Split a match object corresponding to an accounting variable
@@ -285,7 +285,7 @@ class AccountingExpressionProcessor:
                 # separately.
                 account_ids = []
                 for company in self.companies:
-                    acc_domain_with_company = expression.AND(
+                    acc_domain_with_company = Domain.AND(
                         [acc_domain, [("company_ids", "=", company.id)]]
                     )
                     account_ids += (
@@ -328,7 +328,7 @@ class AccountingExpressionProcessor:
             account_ids = set()
             account_ids.update(self._account_ids_by_acc_domain[acc_domain])
             if not account_id:
-                aml_domain.append(("account_id", "in", tuple(account_ids)))
+                aml_domain.append(("account_id", "in", list(account_ids)))
             else:
                 # filter on account_id
                 if account_id in account_ids:
@@ -341,7 +341,7 @@ class AccountingExpressionProcessor:
                 aml_domain.append(("debit", "<>", 0.0))
             elif fld_name:
                 aml_domain.append((fld_name, "!=", False))
-            aml_domains.append(expression.normalize_domain(aml_domain))
+            aml_domains.append(aml_domain)
             if mode not in date_domain_by_mode:
                 date_domain_by_mode[mode] = self.get_aml_domain_for_dates(
                     date_from, date_to, mode
@@ -349,7 +349,9 @@ class AccountingExpressionProcessor:
         assert aml_domains
         # TODO we could do this for more precision:
         #      AND(OR(aml_domains[mode]), date_domain[mode]) for each mode
-        return expression.OR(aml_domains) + expression.OR(date_domain_by_mode.values())
+        return Domain.AND(
+            [Domain.OR(aml_domains), Domain.OR(list(date_domain_by_mode.values()))]
+        )
 
     def get_aml_domain_for_dates(self, date_from, date_to, mode):
         if mode == self.MODE_VARIATION:
@@ -384,7 +386,7 @@ class AccountingExpressionProcessor:
                 ("date", "<", fields.Date.to_string(fy_date_from)),
                 ("account_id.include_initial_balance", "=", False),
             ]
-        return expression.normalize_domain(domain)
+        return Domain(domain)
 
     def _get_company_rates(self, date):
         # get exchange rates for each company with its rouding

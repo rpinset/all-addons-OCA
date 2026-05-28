@@ -7,6 +7,7 @@ import time
 import odoo.tests.common as common
 from odoo import Command, fields
 from odoo.exceptions import UserError
+from odoo.fields import Domain
 from odoo.tools.safe_eval import safe_eval
 
 from ..models import aep
@@ -124,11 +125,11 @@ class TestAEP(common.TransactionCase):
         self.aep.parse_expr("bale[700%]")
         self.aep.parse_expr("balp[700I%]")
         self.aep.parse_expr("fldp.quantity[700%]")
-        self.aep.parse_expr("balp[]" "[('account_id.code', '=', '400AR')]")
+        self.aep.parse_expr("balp[][('account_id.code', '=', '400AR')]")
         self.aep.parse_expr(
-            "balp[]" "[('account_id.account_type', '=', " " 'asset_receivable')]"
+            "balp[][('account_id.account_type', '=', 'asset_receivable')]"
         )
-        self.aep.parse_expr("balp[('account_type', '=', " "      'asset_receivable')]")
+        self.aep.parse_expr("balp[('account_type', '=', 'asset_receivable')]")
         self.aep.parse_expr(
             "balp['&', "
             "     ('account_type', '=', "
@@ -220,13 +221,11 @@ class TestAEP(common.TransactionCase):
         self.assertEqual(self._eval("balp[400AR]"), 100)
         self.assertEqual(self._eval("balp[][('account_id.code', '=', '400AR')]"), 100)
         self.assertEqual(
-            self._eval(
-                "balp[]" "[('account_id.account_type', '=', " "  'asset_receivable')]"
-            ),
+            self._eval("balp[][('account_id.account_type', '=', 'asset_receivable')]"),
             100,
         )
         self.assertEqual(
-            self._eval("balp[('account_type', '=', " "      'asset_receivable')]"),
+            self._eval("balp[('account_type', '=', 'asset_receivable')]"),
             100,
         )
         self.assertEqual(
@@ -402,36 +401,40 @@ class TestAEP(common.TransactionCase):
         expr = "balp[700IN]"
         domain = self.aep.get_aml_domain_for_expr(expr, "2017-01-01", "2017-03-31")
         self.assertEqual(
-            domain,
-            [
-                ("account_id", "in", (self.account_in.id,)),
-                "&",
-                ("date", ">=", "2017-01-01"),
-                ("date", "<=", "2017-03-31"),
-            ],
+            Domain(domain),
+            Domain(
+                [
+                    ("account_id", "in", [self.account_in.id]),
+                    "&",
+                    ("date", ">=", "2017-01-01"),
+                    ("date", "<=", "2017-03-31"),
+                ]
+            ),
         )
         expr = "debi[700IN] - crdi[400AR]"
         domain = self.aep.get_aml_domain_for_expr(expr, "2017-02-01", "2017-03-31")
         self.assertEqual(
-            domain,
-            [
-                "|",
-                # debi[700IN]
-                "&",
-                ("account_id", "in", (self.account_in.id,)),
-                ("debit", "<>", 0.0),
-                # crdi[400AR]
-                "&",
-                ("account_id", "in", (self.account_ar.id,)),
-                ("credit", "<>", 0.0),
-                "&",
-                # for P&L accounts, only after fy start
-                "|",
-                ("date", ">=", "2017-01-01"),
-                ("account_id.include_initial_balance", "=", True),
-                # everything must be before from_date for initial balance
-                ("date", "<", "2017-02-01"),
-            ],
+            Domain(domain),
+            Domain(
+                [
+                    "|",
+                    # debi[700IN]
+                    "&",
+                    ("account_id", "in", [self.account_in.id]),
+                    ("debit", "<>", 0.0),
+                    # crdi[400AR]
+                    "&",
+                    ("account_id", "in", [self.account_ar.id]),
+                    ("credit", "<>", 0.0),
+                    "&",
+                    # for P&L accounts, only after fy start
+                    "|",
+                    ("date", ">=", "2017-01-01"),
+                    ("account_id.include_initial_balance", "=", True),
+                    # everything must be before from_date for initial balance
+                    ("date", "<", "2017-02-01"),
+                ]
+            ),
         )
 
     def test_is_domain(self):

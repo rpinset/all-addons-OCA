@@ -1,8 +1,7 @@
 # Copyright 2025 ACSONE SA/NV (<http://acsone.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo_test_helper import FakeModelLoader
-
+from odoo.orm.model_classes import add_to_registry
 from odoo.tests import TransactionCase
 
 
@@ -10,12 +9,13 @@ class TestProrataReadGroup(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
         from .fake_models import ProrataReadGroupThing
 
-        cls.loader.update_registry((ProrataReadGroupThing,))
-        cls.addClassCleanup(cls.loader.restore_registry)
+        add_to_registry(cls.registry, ProrataReadGroupThing)
+        model_name = "prorata.read.group.thing"
+        cls.registry._setup_models__(cls.env.cr, [model_name])
+        cls.registry.init_models(cls.env.cr, [model_name], {"models_to_check": True})
+        cls.addClassCleanup(cls.registry.__delitem__, model_name)
 
         cls.thing_model = cls.env["prorata.read.group.thing"]
         cls.thing_model.create(
@@ -46,31 +46,29 @@ class TestProrataReadGroup(TransactionCase):
             }
         )
 
-    def test_prorata_read_group(self):
-        """Test a pro-rata read_group with a date period."""
-        data = self.thing_model.read_group(
+    def test_prorata_formatted_read_group(self):
+        """Test a pro-rata formatted_read_group with a date period."""
+        data = self.thing_model.formatted_read_group(
             [("date", ">=", "2024-01-11"), ("date", "<=", "2024-01-20")],
-            fields=["debit", "credit", "account_code", "company_id"],
+            aggregates=["debit:sum", "credit:sum"],
             groupby=["account_code", "company_id"],
-            lazy=False,
         )[0]
-        self.assertEqual(data["debit"], 111)
-        self.assertEqual(data["credit"], 0)
+        self.assertEqual(data["debit:sum"], 111)
+        self.assertEqual(data["credit:sum"], 0)
         self.assertEqual(data["account_code"], "A1")
         self.assertEqual(
             data["company_id"], (self.env.company.id, self.env.company.name)
         )
 
-    def test_read_group(self):
-        """Test a regular read_group without date filtering still works."""
-        data = self.thing_model.read_group(
+    def test_formatted_read_group(self):
+        """Test a regular formatted_read_group without date filtering still works."""
+        data = self.thing_model.formatted_read_group(
             domain=[],
-            fields=["debit", "credit", "account_code", "company_id"],
             groupby=["account_code", "company_id"],
-            lazy=False,
+            aggregates=["debit:sum", "credit:sum"],
         )[0]
-        self.assertEqual(data["debit"], 218)
-        self.assertEqual(data["credit"], 0)
+        self.assertEqual(data["debit:sum"], 218)
+        self.assertEqual(data["credit:sum"], 0)
         self.assertEqual(data["account_code"], "A1")
         self.assertEqual(
             data["company_id"], (self.env.company.id, self.env.company.name)

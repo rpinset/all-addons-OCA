@@ -1,8 +1,7 @@
 # Copyright 2017 ACSONE SA/NV (<http://acsone.eu>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo_test_helper import FakeModelLoader
-
+from odoo.orm.model_classes import add_to_registry
 from odoo.tests.common import TransactionCase
 
 from ..models.mis_kpi_data import ACC_AVG, ACC_SUM
@@ -13,12 +12,13 @@ class TestKpiData(TransactionCase):
     def setUpClass(cls):
         super().setUpClass()
 
-        cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.loader.backup_registry()
         from .fake_models import MisKpiDataTestItem
 
-        cls.loader.update_registry((MisKpiDataTestItem,))
-        cls.addClassCleanup(cls.loader.restore_registry)
+        add_to_registry(cls.registry, MisKpiDataTestItem)
+        model_name = "mis.kpi.data.test.item"
+        cls.registry._setup_models__(cls.env.cr, [model_name])
+        cls.registry.init_models(cls.env.cr, [model_name], {"models_to_check": True})
+        cls.addClassCleanup(cls.registry.__delitem__, model_name)
 
         report = cls.env["mis.report"].create(dict(name="test report"))
         cls.kpi1 = cls.env["mis.report.kpi"].create(

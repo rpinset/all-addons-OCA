@@ -17,7 +17,7 @@ class AddMisReportInstanceDashboard(models.TransientModel):
         "ir.actions.act_window",
         string="Dashboard",
         required=True,
-        domain="[('res_model', '=', " "'board.board')]",
+        domain="[('res_model', '=', 'board.board')]",
     )
 
     @api.model
