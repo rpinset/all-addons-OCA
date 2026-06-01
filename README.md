@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-05-28 16:09 UTC** (elapsed 104s)
+Last build: **2026-06-01 05:00 UTC** (elapsed 88s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -51,7 +51,7 @@ Last build: **2026-05-28 16:09 UTC** (elapsed 104s)
 | [fleet](https://github.com/OCA/fleet) | 13 | 5982b92 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 5 | f5783f7 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [helpdesk](https://github.com/OCA/helpdesk) | 12 | 94ad1d9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [hr](https://github.com/OCA/hr) | 37 | 2ba5a9f 2025-10-21 mymage Translated using Weblate (Italian) |
+| [hr](https://github.com/OCA/hr) | 37 | a6d1fb4 2026-05-29 mymage Translated using Weblate (Italian) |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 8 | b864e0c 2026-04-27 Enric Tobella Merge pull request #276 from ForgeFlow/13.0-imp-copier-v140 |
 | [hr-expense](https://github.com/OCA/hr-expense) | 10 | 127db96 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 7 | 2b2bfe5 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
