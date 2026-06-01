@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-05-28 16:13 UTC** (elapsed 170s)
+Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -45,7 +45,7 @@ Last build: **2026-05-28 16:13 UTC** (elapsed 170s)
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
 | [edi](https://github.com/OCA/edi) | 22 | e3f5fba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [field-service](https://github.com/OCA/field-service) | 46 | 0de6727 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [field-service](https://github.com/OCA/field-service) | 46 | 60ccf87 2026-05-29 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 989fe00 2026-01-26 OCA-git-bot [BOT] post-merge updates |
 | [hr](https://github.com/OCA/hr) | 32 | 95fc148 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
