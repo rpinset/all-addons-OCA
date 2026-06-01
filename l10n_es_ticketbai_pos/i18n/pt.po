@@ -1,0 +1,397 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_es_ticketbai_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-29 08:23+0000\n"
+"Last-Translator: Daniel Duque <danieldqmrt@gmail.com>\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-info-circle me-1 oe_inline\" title=\"PoS Device Serial "
+"Number. As of TicketBAI v1.1, is not required.\" pos-data-"
+"toggle=\"tooltip\"/>"
+msgstr ""
+"<i class=\"fa fa-info-circle me-1 oe_inline\" title=\"Número de série do "
+"dispositivo do ponto de venda. A partir do TicketBAI v1.1, não é "
+"obrigatório.\" pos-data-toggle=\"tooltip\"/>"
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid ""
+"<i class=\"fa fa-info-circle me-1 oe_inline\" title=\"TicketBAI Certificate "
+"(optional). If not set, the certificate from the company is used instead.\" "
+"pos-data-toggle=\"tooltip\"/>"
+msgstr ""
+"<i class=\"fa fa-info-circle me-1 oe_inline\" title=\"Certificado TicketBAI "
+"(opcional). Se não estiver definido, é utilizado o certificado da empresa.\" "
+"pos-data-toggle=\"tooltip\"/>"
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">TicketBAI</span>"
+msgstr "<span class=\"o_form_label\">TicketBAI</span>"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "At least one product does not have a tax."
+msgstr "Pelo menos um produto não tem imposto atribuído."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid ""
+"Cannot generate TicketBAI simplified invoice.\n"
+"\n"
+"Check:\n"
+"• Company VAT is set\n"
+"• Customer has VAT (or foreign ID)\n"
+"• All products have exactly one tax\n"
+"• Fiscal position has VAT Regime Key"
+msgstr ""
+"Não é possível gerar a fatura simplificada TicketBAI.\n"
+"\n"
+"Verifique:\n"
+"• O NIF da empresa está definido\n"
+"• O cliente tem NIF (ou ID estrangeiro)\n"
+"• Todos os produtos têm exatamente um imposto\n"
+"• A posição fiscal tem Chave de Regime de IVA"
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid "Certificate"
+msgstr "Certificado"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_config__tbai_device_serial_number
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid "Device Serial Number"
+msgstr "Número de série do dispositivo"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_config__tbai_enabled
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_order__tbai_enabled
+msgid "Enable TicketBAI"
+msgstr "Ativar TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid ""
+"Failed to generate or sign the TicketBAI invoice.\n"
+"\n"
+"Error: %s\n"
+"\n"
+"The order cannot be validated without a valid signed ticket."
+msgstr ""
+"Falha ao gerar ou assinar a fatura TicketBAI.\n"
+"\n"
+"Erro: %s\n"
+"\n"
+"A encomenda não pode ser validada sem um bilhete assinado válido."
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+msgid "Files Sent"
+msgstr "Ficheiros enviados"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_config__tbai_last_invoice_id
+msgid "Last TicketBAI Invoice sent"
+msgstr "Última fatura TicketBAI enviada"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,help:l10n_es_ticketbai_pos.field_account_bank_statement_line__tbai_substitution_pos_order_id
+#: model:ir.model.fields,help:l10n_es_ticketbai_pos.field_account_move__tbai_substitution_pos_order_id
+#: model:ir.model.fields,help:l10n_es_ticketbai_pos.field_account_payment__tbai_substitution_pos_order_id
+msgid "Link between a validated Customer Invoice and its substitute."
+msgstr "Ligação entre uma fatura de cliente validada e a sua substituta."
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+msgid "Messages"
+msgstr "Mensagens"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "Non spanish customers are not supported for Simplified Invoice."
+msgstr "Clientes não espanhóis não são suportados para Fatura Simplificada."
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+msgid "Orders"
+msgstr "Encomendas"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "PRO FORMA"
+msgstr "PRO FORMA"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "Please set Company VAT."
+msgstr "Por favor, defina o NIF da empresa."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#, python-format
+msgid "Please set Country for customer %s."
+msgstr "Por favor, defina o país do cliente %s."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid ""
+"Please set VAT Regime Key for fiscal position ${order.fiscal_position.name}."
+msgstr ""
+"Por favor, defina a Chave de Regime de IVA para a posição fiscal $"
+"{order.fiscal_position.name}."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#, python-format
+msgid ""
+"Please set VAT or TicketBAI Partner Identification Number for customer %s."
+msgstr ""
+"Por favor, defina o NIF ou o Número de Identificação TicketBAI para o "
+"cliente %s."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid ""
+"Please set VAT or TicketBAI Partner Identification Number for customer."
+msgstr ""
+"Por favor, defina o NIF ou o Número de Identificação TicketBAI para o "
+"cliente."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/models.js:0
+#, python-format
+msgid "Please set a tax for product ${product.display_names}."
+msgstr "Por favor, defina um imposto para o produto ${product.display_names}."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#, python-format
+msgid "Please set a valid ZIP code (5 digits) for customer %s."
+msgstr ""
+"Por favor, defina um código postal válido (5 dígitos) para o cliente %s."
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.res_config_settings_view_form
+msgid "PoS TicketBAI Configuration"
+msgstr "Configuração TicketBAI do ponto de venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_res_config_settings__pos_tbai_device_serial_number
+msgid "PoS TicketBAI Device Serial Number"
+msgstr "Número de série do dispositivo TicketBAI do ponto de venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuração do Ponto de Venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Ordens do Ponto de Venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sessão do Ponto de Venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_tbai_invoice__pos_order_id
+msgid "Pos Order"
+msgstr "Encomenda do ponto de venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_order__tbai_response_ids
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+msgid "Responses"
+msgstr "Respostas"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-python
+#: code:addons/l10n_es_ticketbai_pos/models/pos_config.py:0
+#, python-format
+msgid "Simplified Invoice IDs Sequence is required"
+msgstr "A sequência de IDs de fatura simplificada é obrigatória"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-python
+#: code:addons/l10n_es_ticketbai_pos/models/pos_order.py:0
+#, python-format
+msgid "Simplified Invoice Number Prefix %s is not part of Number %%!"
+msgstr ""
+"O prefixo do número de fatura simplificada %s não faz parte do número %%!"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_account_bank_statement_line__tbai_substitution_pos_order_id
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_account_move__tbai_substitution_pos_order_id
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_account_payment__tbai_substitution_pos_order_id
+msgid "Tbai Substitution Pos Order"
+msgstr "Encomenda TPV de substituição TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/models.js:0
+#, python-format
+msgid ""
+"The TicketBAI invoice could not be signed. Please refresh and try again."
+msgstr ""
+"A fatura TicketBAI não pôde ser assinada. Por favor, atualize e tente "
+"novamente."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid ""
+"The TicketBAI invoice was generated but is missing critical data.\n"
+"\n"
+"This may be due to:\n"
+"• Certificate signing failure\n"
+"• Network connectivity issues\n"
+"• Corrupt certificate\n"
+"\n"
+"Please try again or contact support."
+msgstr ""
+"A fatura TicketBAI foi gerada, mas faltam dados críticos.\n"
+"\n"
+"Isto pode dever-se a:\n"
+"• Falha na assinatura do certificado\n"
+"• Problemas de conectividade de rede\n"
+"• Certificado corrompido\n"
+"\n"
+"Por favor, tente novamente ou contacte o suporte."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PartnerListScreen/PartnerListScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/ProductScreen/ProductScreen.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/models.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/models.js:0
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/tbai_models.js:0
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+#, python-format
+msgid "TicketBAI"
+msgstr "TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "TicketBAI - Critical Error"
+msgstr "TicketBAI - Erro crítico"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "TicketBAI - Incomplete Invoice"
+msgstr "TicketBAI - Fatura incompleta"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_config__tbai_certificate_id
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_res_config_settings__pos_tbai_certificate_id
+msgid "TicketBAI Certificate"
+msgstr "Certificado TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.ui.menu,name:l10n_es_ticketbai_pos.menu_pos_tbai_certificates
+msgid "TicketBAI Certificates"
+msgstr "Certificados TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "TicketBAI Invoice is incomplete. Please try again."
+msgstr "A fatura TicketBAI está incompleta. Por favor, tente novamente."
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "TicketBAI Invoice not built yet. Please try again."
+msgstr "A fatura TicketBAI ainda não foi criada. Por favor, tente novamente."
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model,name:l10n_es_ticketbai_pos.model_tbai_invoice
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_order__tbai_invoice_ids
+msgid "TicketBAI Invoices"
+msgstr "Faturas TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_order__tbai_invoice_id
+msgid "TicketBAI PoS Order"
+msgstr "Encomenda TPV TicketBAI"
+
+#. module: l10n_es_ticketbai_pos
+#. odoo-javascript
+#: code:addons/l10n_es_ticketbai_pos/static/src/js/Screens/PaymentScreen/PaymentScreen.js:0
+#, python-format
+msgid "TicketBAI certificate not loaded!"
+msgstr "Certificado TicketBAI não carregado!"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_config__iface_l10n_es_simplified_invoice
+msgid "Use simplified invoices for this POS"
+msgstr "Usar faturas simplificadas neste ponto de venda"
+
+#. module: l10n_es_ticketbai_pos
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_pos.field_pos_order__tbai_vat_regime_key
+msgid "VAT Regime Key"
+msgstr "Chave de regime de IVA"
+
+#. module: l10n_es_ticketbai_pos
+#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_pos.view_pos_pos_form_inherit
+msgid "VAT Regimes"
+msgstr "Regimes de IVA"
