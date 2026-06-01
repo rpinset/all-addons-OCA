@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-05-28 16:10 UTC** (elapsed 183s)
+Last build: **2026-06-01 05:00 UTC** (elapsed 108s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -53,11 +53,11 @@ Last build: **2026-05-28 16:10 UTC** (elapsed 183s)
 | [edi](https://github.com/OCA/edi) | 63 | 5f6b6f8 2026-01-14 strarsis Translated using Weblate (German) |
 | [edi-framework](https://github.com/OCA/edi-framework) | 2 | 1359541 2025-10-13 mymage Translated using Weblate (Italian) |
 | [event](https://github.com/OCA/event) | 18 | 8259a1a 2025-10-13 mymage Added translation using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 45 | 5b5d0b1 2026-04-13 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 45 | 24e204c 2026-05-29 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 18 | 76d7116 2025-11-10 mymage Translated using Weblate (Italian) |
 | [geospatial](https://github.com/OCA/geospatial) | 4 | c643b29 2025-07-22 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 11 | ef71283 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
-| [hr](https://github.com/OCA/hr) | 40 | 74f580b 2026-02-10 mymage Translated using Weblate (Italian) |
+| [hr](https://github.com/OCA/hr) | 40 | 31300cd 2026-05-29 mymage Translated using Weblate (Italian) |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 11 | 128a449 2025-06-21 mymage Translated using Weblate (Italian) |
 | [hr-expense](https://github.com/OCA/hr-expense) | 21 | afe931a 2026-05-13 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 12 | 5ce858e 2025-11-28 mymage Translated using Weblate (Italian) |
