@@ -1234,6 +1234,7 @@ class Rma(models.Model):
             "move_type": "out_refund",
             "company_id": self.company_id.id,
             "partner_id": self.partner_invoice_id.id,
+            "partner_shipping_id": self.partner_shipping_id.id,
             "invoice_payment_term_id": False,
             "invoice_origin": origin,
             "invoice_line_ids": [],

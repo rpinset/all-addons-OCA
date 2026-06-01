@@ -90,6 +90,11 @@ msgid ""
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__exchange_record_count
+msgid "# Exchange Records"
+msgstr ""
+
+#. module: edi_oca
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_consumer_mixin_buttons
 msgid "<span class=\"pe-4\"><i class=\"fa fa-retweet\"/> EDI actions</span>"
 msgstr ""
@@ -710,6 +715,7 @@ msgstr ""
 #. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_consumer_mixin__exchange_record_ids
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_related_record__exchange_record_id
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__exchange_record_ids
 msgid "Exchange Record"
 msgstr ""
 
@@ -785,6 +791,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:edi_oca.act_open_edi_exchange_record_view
 #: model:ir.ui.menu,name:edi_oca.menu_edi_exchange_record_root
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_backend_view_form
+#: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_type_view_form
 msgid "Exchanges"
 msgstr ""
 
