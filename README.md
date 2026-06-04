@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
+Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
 
 - Repos integrated: **117**
 - Canonical modules: **2091**
@@ -13,9 +13,9 @@ Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
 | ---- | ------: | ----------- |
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 9068a5d 2026-05-04 Pedro M. Baeza Merge pull request #5098 from efatto/15.0-fix-l10n_it-migration |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [account-closing](https://github.com/OCA/account-closing) | 6 | 328d01b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 9e0f14e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | d89de15 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | a36d4f1 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 79 | c99fd2b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -43,7 +43,7 @@ Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [e-commerce](https://github.com/OCA/e-commerce) | 53 | 8d70b7e 2026-05-19 Pedro M. Baeza Merge pull request #1218 from qrtl/15.0-copier |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
-| [edi](https://github.com/OCA/edi) | 22 | e3f5fba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [edi](https://github.com/OCA/edi) | 22 | 2fbde62 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [field-service](https://github.com/OCA/field-service) | 46 | 60ccf87 2026-05-29 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -89,7 +89,7 @@ Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | c466fb8 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [project](https://github.com/OCA/project) | 39 | 6d4a1f8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [project](https://github.com/OCA/project) | 39 | cf77f6e 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 2 | e775244 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 108 | 65cb351 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [queue](https://github.com/OCA/queue) | 8 | 7b617b6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -107,7 +107,7 @@ Last build: **2026-06-01 05:04 UTC** (elapsed 155s)
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 2dfa55f 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-env](https://github.com/OCA/server-env) | 7 | 3d8f0d5 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-tools](https://github.com/OCA/server-tools) | 46 | f31518b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [server-ux](https://github.com/OCA/server-ux) | 37 | 11a5e7c 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [server-ux](https://github.com/OCA/server-ux) | 37 | f765f9c 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 0bb1516 2026-02-19 OCA-git-bot [BOT] post-merge updates |
 | [sign](https://github.com/OCA/sign) | 3 | 265ed93 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
 | [social](https://github.com/OCA/social) | 48 | a622e29 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
