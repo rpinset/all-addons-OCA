@@ -300,7 +300,8 @@ class TestRmaCase(TestRma):
         self.assertEqual(rma.reception_move_id.quantity_done, 10)
         self.assertEqual(rma.state, "received")
 
-    def test_cancel(self):
+    @mute_logger("odoo.models.unlink")
+    def test_cancel_01(self):
         # cancel a draft RMA
         rma = self._create_rma(self.partner, self.product)
         rma.action_cancel()
@@ -314,6 +315,27 @@ class TestRmaCase(TestRma):
         rma = self._create_confirm_receive(self.partner, self.product, 10, self.rma_loc)
         with self.assertRaises(UserError):
             rma.action_cancel()
+
+    @mute_logger("odoo.models.unlink")
+    def test_cancel_02(self):
+        self.operation.action_create_delivery = "manual_on_confirm"
+        rma = self._create_rma(self.partner, self.product)
+        rma.action_confirm()
+        self.assertEqual(rma.state, "confirmed")
+        reception_picking = rma.reception_move_id.picking_id
+        self.assertEqual(reception_picking.state, "assigned")
+        res = rma.action_replace()
+        delivery_form = Form(self.env[res["res_model"]].with_context(**res["context"]))
+        delivery_form.product_id = self.product
+        delivery_wizard = delivery_form.save()
+        delivery_wizard.action_deliver()
+        self.assertEqual(rma.state, "waiting_replacement")
+        delivery_picking = rma.delivery_move_ids.picking_id
+        self.assertEqual(delivery_picking.state, "confirmed")
+        rma.action_cancel()
+        self.assertEqual(rma.state, "cancelled")
+        self.assertEqual(reception_picking.state, "cancel")
+        self.assertEqual(delivery_picking.state, "cancel")
 
     def test_lock_unlock(self):
         # A RMA is only locked from 'received' state
