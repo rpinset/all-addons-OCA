@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="uom_uom_form_view_inherit" model="ir.ui.view">
+        <field name="name">uom.uom.form.view - edi_product_oca</field>
+        <field name="model">uom.uom</field>
+        <field name="inherit_id" ref="product.uom_uom_form_view_inherit" />
+        <field name="arch" type="xml">
+            <group name="uom_details" position="inside">
+                <field name="edi_disable_auto" />
+            </group>
+            <div name="button_box" position="inside">
+                <button
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-retweet"
+                    invisible="exchange_record_count == 0"
+                    name="action_view_edi_records"
+                >
+                    <field
+                        string="EDI"
+                        name="exchange_record_count"
+                        widget="statinfo"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-06-01 05:06 UTC
+Generated 2026-06-04 16:04 UTC
 
-Total skipped: **160**
+Total skipped: **158**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **136**
+Count: **134**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -74,7 +74,6 @@ Count: **136**
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [geospatial](https://github.com/OCA/geospatial) | [19.0](https://github.com/OCA/geospatial/tree/19.0) | No directory with __manifest__.py at repo root |
-| [helpdesk](https://github.com/OCA/helpdesk) | [19.0](https://github.com/OCA/helpdesk/tree/19.0) | No directory with __manifest__.py at repo root |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | [19.0](https://github.com/OCA/hr-attendance/tree/19.0) | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | [19.0](https://github.com/OCA/hr-expense/tree/19.0) | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | [19.0](https://github.com/OCA/infrastructure/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -143,7 +142,6 @@ Count: **136**
 | [shift-planning](https://github.com/OCA/shift-planning) | [19.0](https://github.com/OCA/shift-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [19.0](https://github.com/OCA/shopfloor-app/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [19.0](https://github.com/OCA/shoppingfeed/tree/19.0) | No directory with __manifest__.py at repo root |
-| [sign](https://github.com/OCA/sign) | [19.0](https://github.com/OCA/sign/tree/19.0) | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | [19.0](https://github.com/OCA/spreadsheet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [19.0](https://github.com/OCA/stock-logistics-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [19.0](https://github.com/OCA/stock-logistics-putaway/tree/19.0) | No directory with __manifest__.py at repo root |

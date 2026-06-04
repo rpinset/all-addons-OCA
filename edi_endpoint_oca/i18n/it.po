@@ -69,9 +69,19 @@ msgid "Code Snippet Docs"
 msgstr "Documenti esempio codice"
 
 #. module: edi_endpoint_oca
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_endpoint__cors
+msgid "Comma-separated list of allowed origins"
+msgstr ""
+
+#. module: edi_endpoint_oca
 #: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__company_id
 msgid "Company"
 msgstr "Azienda"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__cors
+msgid "Cors"
+msgstr ""
 
 #. module: edi_endpoint_oca
 #. odoo-python

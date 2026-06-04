@@ -73,10 +73,22 @@ msgid "Code Snippet Docs"
 msgstr "Documenti esempio codice"
 
 #. module: endpoint
+#: model:ir.model.fields,help:endpoint.field_endpoint_endpoint__cors
+#: model:ir.model.fields,help:endpoint.field_endpoint_mixin__cors
+msgid "Comma-separated list of allowed origins"
+msgstr ""
+
+#. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__company_id
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__company_id
 msgid "Company"
 msgstr "Azienda"
+
+#. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__cors
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__cors
+msgid "Cors"
+msgstr ""
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__create_uid

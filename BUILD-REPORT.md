@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-06-01 05:06 UTC
+Generated 2026-06-04 16:04 UTC
 
 ## Skipped repos
 
@@ -44,7 +44,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
 | [geospatial](https://github.com/OCA/geospatial) | `no_module` | No directory with __manifest__.py at repo root |
-| [helpdesk](https://github.com/OCA/helpdesk) | `no_module` | No directory with __manifest__.py at repo root |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | `no_module` | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | `no_module` | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
@@ -134,7 +133,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
-| [sign](https://github.com/OCA/sign) | `no_module` | No directory with __manifest__.py at repo root |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |

@@ -67,6 +67,7 @@
                                         required="request_method in ('POST', 'PUT')"
                                         invisible="request_method not in ('POST', 'PUT')"
                                     />
+                                    <field name="cors" />
                                 </group>
                             </group>
                         </page>
