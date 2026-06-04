@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-06-01 05:00 UTC** (elapsed 88s)
+Last build: **2026-06-04 15:58 UTC** (elapsed 187s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -90,7 +90,7 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 88s)
 | [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 11 | 6db146b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [project](https://github.com/OCA/project) | 38 | 0271ea5 2025-06-21 mymage Translated using Weblate (Italian) |
+| [project](https://github.com/OCA/project) | 38 | 07ea689 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 363a54f 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 1 | 4e2c8a9 2023-10-09 Weblate Update translation files |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 80 | f1ff601 2026-01-13 Francesco Foresti Translated using Weblate (Italian) |
@@ -109,7 +109,7 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 88s)
 | [server-brand](https://github.com/OCA/server-brand) | 4 | ae1b8e8 2023-10-09 Weblate Update translation files |
 | [server-env](https://github.com/OCA/server-env) | 4 | 9d2069b 2023-09-04 OCA-git-bot [UPD] README.rst |
 | [server-tools](https://github.com/OCA/server-tools) | 54 | 98b9e9a 2025-11-28 mymage Translated using Weblate (Italian) |
-| [server-ux](https://github.com/OCA/server-ux) | 35 | 0a5572f 2025-07-23 mymage Translated using Weblate (Italian) |
+| [server-ux](https://github.com/OCA/server-ux) | 35 | 2c38496 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [social](https://github.com/OCA/social) | 41 | 7d075ac 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | fd8c438 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | d1d93ec 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
