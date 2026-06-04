@@ -12,7 +12,7 @@
 {
     "name": "AEAT Base",
     "summary": "Modulo base para declaraciones de la AEAT",
-    "version": "17.0.2.5.6",
+    "version": "17.0.2.6.0",
     "author": "Pexego, "
     "Acysos S.L., "
     "AvanzOSC, "
@@ -46,6 +46,7 @@
         "views/aeat_certificate_view.xml",
         "views/account_journal_view.xml",
         "views/account_move_view.xml",
+        "views/account_tax_view.xml",
     ],
     "installable": True,
     "maintainers": ["pedrobaeza"],
