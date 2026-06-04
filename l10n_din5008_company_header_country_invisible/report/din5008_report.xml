@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="external_layout_din5008"
+        inherit_id="l10n_din5008.external_layout_din5008"
+    >
+        <xpath expr="//t[@t-if='company.country_id']" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+</odoo>

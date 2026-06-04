@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_timesheet_task_stage
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-01 08:29+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: hr_timesheet_task_stage
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_task_stage.account_analytic_line_form
+msgid "<span class=\"text-danger\">Closed</span>"
+msgstr "<span class=\"text-danger\">Zaključeno</span>"
+
+#. module: hr_timesheet_task_stage
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_task_stage.account_analytic_line_form
+msgid "<span class=\"text-success\">Open</span>"
+msgstr "<span class=\"text-success\">Odprto</span>"
+
+#. module: hr_timesheet_task_stage
+#: model:ir.model,name:hr_timesheet_task_stage.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Analitična postavka"
+
+#. module: hr_timesheet_task_stage
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_task_stage.account_analytic_line_tree
+msgid "Close task"
+msgstr "Zaključi opravilo"
+
+#. module: hr_timesheet_task_stage
+#: model:ir.model.fields,field_description:hr_timesheet_task_stage.field_account_analytic_line__is_task_closed
+msgid "Folded in Kanban"
+msgstr "Prepognjeno v kanban"
+
+#. module: hr_timesheet_task_stage
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_task_stage.account_analytic_line_tree
+msgid "Open task"
+msgstr "Odpri opravilo"
+
+#. module: hr_timesheet_task_stage
+#. odoo-python
+#: code:addons/hr_timesheet_task_stage/models/account_analytic_line.py:0
+msgid "There isn't any stage with \"Closed\" checked. Please mark any."
+msgstr ""
+"Ni nobene stopnje z označbo \"Zaključeno\". Prosimo, označite katero koli."
+
+#. module: hr_timesheet_task_stage
+#. odoo-python
+#: code:addons/hr_timesheet_task_stage/models/account_analytic_line.py:0
+msgid "There isn't any stage with \"Closed\" unchecked. Please unmark any."
+msgstr ""
+"Ni nobene stopnje brez označbe \"Zaključeno\". Prosimo, odstranite označite "
+"za katero koli."

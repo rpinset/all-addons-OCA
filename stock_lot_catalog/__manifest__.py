@@ -3,7 +3,7 @@
 
 {
     "name": "Stock Lot Catalog",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "website": "https://github.com/OCA/stock-logistics-warehouse",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "category": "Warehouse",
@@ -15,7 +15,6 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "stock_lot_catalog/static/src/js/**/*",
             "stock_lot_catalog/static/src/stock_lot_catalog/**/*.js",
             "stock_lot_catalog/static/src/stock_lot_catalog/**/*.xml",
             "stock_lot_catalog/static/src/stock_lot_catalog/**/*.scss",

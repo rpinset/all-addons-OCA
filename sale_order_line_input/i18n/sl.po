@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_line_input
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-01 06:51+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Amount"
+msgstr "Znesek"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,field_description:sale_order_line_input.field_sale_order_line__company_price_amount
+msgid "Company Price Amount"
+msgstr "Znesek cene podjetja"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,field_description:sale_order_line_input.field_sale_order_line__company_price_tax_incl_excl
+msgid "Company Price Tax Incl Excl"
+msgstr "Cena podjetja z davkom / brez davka"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Delivered"
+msgstr "Dobavljeno"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Disc.%"
+msgstr "Pop. (%)"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,field_description:sale_order_line_input.field_sale_order_line__force_company_id
+msgid "Forced company"
+msgstr "Vsiljena družba"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,help:sale_order_line_input.field_sale_order_line__pricelist_id
+msgid "If you change the pricelist, only newly added lines will be affected."
+msgstr "Če spremenite cenik, bo to vplivalo samo na novo dodane postavke."
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_filter
+msgid "Invoice Related"
+msgstr "Povezano z računom"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_filter
+msgid "Invoice Status"
+msgstr "Status obračuna"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Invoiced"
+msgstr "Obračunano"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "New"
+msgstr "Novo"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_filter
+msgid "Not Invoice Related"
+msgstr "Ni vezano na račun"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Order"
+msgstr "Nalog"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_filter
+msgid "Order State"
+msgstr "Stanje naročila"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,field_description:sale_order_line_input.field_sale_order_line__pricelist_id
+msgid "Pricelist"
+msgstr "Cenik"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Product Variant"
+msgstr "Različica proizvoda"
+
+#. module: sale_order_line_input
+#: model:ir.model,name:sale_order_line_input.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Prodajna postavka"
+
+#. module: sale_order_line_input
+#: model:ir.actions.act_window,name:sale_order_line_input.action_sales_order_line_input
+#: model:ir.ui.menu,name:sale_order_line_input.menu_sales_order_line_input
+msgid "Sales Orders Lines"
+msgstr "Prodajne postavke"
+
+#. module: sale_order_line_input
+#: model:ir.model.fields,help:sale_order_line_input.field_sale_order_line__force_company_id
+msgid ""
+"Technical field to force company or get it from env user if order don't "
+"exist."
+msgstr ""
+"Tehnično polje za nastavitev družbe na silo ali pridobitev iz uporabniškega "
+"okolja, če naročilo ne obstaja."
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Total"
+msgstr "Skupaj"
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "Type to find a product..."
+msgstr "Vnesite za iskanje izdelka ..."
+
+#. module: sale_order_line_input
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_filter
+#: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
+msgid "UoM"
+msgstr "EM"

@@ -30,6 +30,7 @@ class ZonePickingZeroCheckCase(ZonePickingCommonCase):
         zone_location = self.zone_location
         picking_type = self.picking1.picking_type_id
         move_line = self.picking1.move_line_ids[0]
+        move_line.location_id = self.shelf1
         response = self.service.dispatch(
             "is_zero",
             params={"move_line_id": move_line.id, "zero": True},

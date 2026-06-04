@@ -379,7 +379,7 @@ class TestRmaCase(TestRma):
         self.assertEqual(res["res_id"], new_rma.id)
 
     @mute_logger("odoo.models.unlink")
-    def test_cancel(self):
+    def test_cancel_01(self):
         # cancel a draft RMA
         rma = self._create_rma(self.partner, self.product)
         rma.action_cancel()
@@ -393,6 +393,27 @@ class TestRmaCase(TestRma):
         rma = self._create_confirm_receive(self.partner, self.product, 10, self.rma_loc)
         with self.assertRaises(UserError):
             rma.action_cancel()
+
+    @mute_logger("odoo.models.unlink")
+    def test_cancel_02(self):
+        self.operation.action_create_delivery = "manual_on_confirm"
+        rma = self._create_rma(self.partner, self.product)
+        rma.action_confirm()
+        self.assertEqual(rma.state, "confirmed")
+        reception_picking = rma.reception_move_id.picking_id
+        self.assertEqual(reception_picking.state, "assigned")
+        res = rma.action_replace()
+        delivery_form = Form(self.env[res["res_model"]].with_context(**res["context"]))
+        delivery_form.product_id = self.product
+        delivery_wizard = delivery_form.save()
+        delivery_wizard.action_deliver()
+        self.assertEqual(rma.state, "waiting_replacement")
+        delivery_picking = rma.delivery_move_ids.picking_id
+        self.assertEqual(delivery_picking.state, "confirmed")
+        rma.action_cancel()
+        self.assertEqual(rma.state, "cancelled")
+        self.assertEqual(reception_picking.state, "cancel")
+        self.assertEqual(delivery_picking.state, "cancel")
 
     def test_lock_unlock(self):
         # A RMA is only locked from 'received' state
@@ -558,11 +579,15 @@ class TestRmaCase(TestRma):
         self.assertEqual(rma.state, "waiting_replacement")
         self.assertFalse(rma.can_be_refunded)
         self.assertFalse(rma.can_be_returned)
-        self.assertTrue(rma.can_be_replaced)
+        self.assertFalse(rma.can_be_replaced)
         self.assertEqual(rma.delivered_qty, 2)
         self.assertEqual(rma.remaining_qty, 8)
         first_move = rma.delivery_move_ids
         picking = first_move.picking_id
+        picking.action_cancel()
+        self.assertEqual(picking.state, "cancel")
+        self.assertEqual(rma.state, "received")
+        self.assertTrue(rma.can_be_replaced)
         # Replace again with another product with the remaining quantity
         product_3 = self.product_product.create(
             {"name": "Product 3 test", "type": "consu", "is_storable": True}
@@ -578,19 +603,17 @@ class TestRmaCase(TestRma):
         delivery_wizard.action_deliver()
         second_move = rma.delivery_move_ids - first_move
         self.assertEqual(len(rma.delivery_move_ids), 2)
-        self.assertEqual(rma.delivery_move_ids.mapped("picking_id"), picking)
+        new_picking = second_move.picking_id
         self.assertEqual(first_move.product_id, product_2)
         self.assertEqual(first_move.product_uom_qty, 2)
         self.assertEqual(second_move.product_id, product_3)
-        self.assertEqual(second_move.product_uom_qty, 8)
-        self.assertTrue(picking.state, "waiting")
+        self.assertEqual(second_move.product_uom_qty, 10)
+        self.assertTrue(new_picking.state, "waiting")
         self.assertEqual(rma.delivered_qty, 10)
         self.assertEqual(rma.remaining_qty, 0)
-        # remaining_qty is 0 but rma is not set to 'replaced' until
-        first_move.quantity = 2
-        second_move.quantity = 8
-        picking.button_validate()
-        self.assertEqual(picking.state, "done")
+        second_move.quantity = 10
+        new_picking.button_validate()
+        self.assertEqual(new_picking.state, "done")
         self.assertEqual(rma.delivered_qty, 10)
         self.assertEqual(rma.remaining_qty, 0)
         # The RMA is now in 'replaced' state
@@ -598,8 +621,8 @@ class TestRmaCase(TestRma):
         self.assertFalse(rma.can_be_refunded)
         self.assertFalse(rma.can_be_returned)
         # Despite being in 'replaced' state,
-        # RMAs can still perform replacements.
-        self.assertTrue(rma.can_be_replaced)
+        # RMAs can't still perform replacements.
+        self.assertFalse(rma.can_be_replaced)
 
     def test_return_to_customer(self):
         # Create, confirm and receive an RMA

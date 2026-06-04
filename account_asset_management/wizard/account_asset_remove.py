@@ -5,7 +5,7 @@
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import api, fields, models
+from odoo import Command, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 
 
@@ -188,9 +188,7 @@ class AccountAssetRemove(models.TransientModel):
 
         if self.date_remove < last_date:
             raise UserError(
-                self.env._(
-                    "The removal date must be after " "the last depreciation date."
-                )
+                self.env._("The removal date must be after the last depreciation date.")
             )
 
         line_name = asset._get_depreciation_entry_name(len(dlines) + 1)
@@ -323,7 +321,7 @@ class AccountAssetRemove(models.TransientModel):
                 "partner_id": partner_id,
                 "asset_id": asset.id,
             }
-            move_lines.append((0, 0, move_line_vals))
+            move_lines.append(Command.create(move_line_vals))
 
         depreciation_base_comp = currency.compare_amounts(asset.depreciation_base, 0)
         move_line_vals = {
@@ -334,48 +332,47 @@ class AccountAssetRemove(models.TransientModel):
             "partner_id": partner_id,
             "asset_id": asset.id,
         }
-        move_lines.append((0, 0, move_line_vals))
+        move_lines.append(Command.create(move_line_vals))
 
-        if residual_value:
-            if self.posting_regime == "residual_value":
+        if self.posting_regime == "residual_value" and residual_value:
+            move_line_vals = {
+                "name": asset.name,
+                "account_id": self.account_residual_value_id.id,
+                "analytic_distribution": asset.analytic_distribution,
+                "debit": residual_value,
+                "credit": 0.0,
+                "partner_id": partner_id,
+                "asset_id": asset.id,
+            }
+            move_lines.append(Command.create(move_line_vals))
+        elif self.posting_regime == "gain_loss_on_sale":
+            if self.sale_value:
+                sale_value = self.sale_value
                 move_line_vals = {
                     "name": asset.name,
-                    "account_id": self.account_residual_value_id.id,
+                    "account_id": self.account_sale_id.id,
                     "analytic_distribution": asset.analytic_distribution,
-                    "debit": residual_value,
+                    "debit": sale_value,
                     "credit": 0.0,
                     "partner_id": partner_id,
                     "asset_id": asset.id,
                 }
-                move_lines.append((0, 0, move_line_vals))
-            elif self.posting_regime == "gain_loss_on_sale":
-                if self.sale_value:
-                    sale_value = self.sale_value
-                    move_line_vals = {
-                        "name": asset.name,
-                        "account_id": self.account_sale_id.id,
-                        "analytic_distribution": asset.analytic_distribution,
-                        "debit": sale_value,
-                        "credit": 0.0,
-                        "partner_id": partner_id,
-                        "asset_id": asset.id,
-                    }
-                    move_lines.append((0, 0, move_line_vals))
-                balance = self.sale_value - residual_value
-                balance_comp = currency.compare_amounts(balance, 0)
-                account_id = (
-                    self.account_plus_value_id.id
-                    if balance_comp > 0
-                    else self.account_min_value_id.id
-                )
-                move_line_vals = {
-                    "name": asset.name,
-                    "account_id": account_id,
-                    "debit": balance_comp < 0 and -balance or 0.0,
-                    "credit": balance_comp > 0 and balance or 0.0,
-                    "analytic_distribution": asset.analytic_distribution,
-                    "partner_id": partner_id,
-                    "asset_id": asset.id,
-                }
-                move_lines.append((0, 0, move_line_vals))
+                move_lines.append(Command.create(move_line_vals))
+            balance = self.sale_value - residual_value
+            balance_comp = currency.compare_amounts(balance, 0)
+            account_id = (
+                self.account_plus_value_id.id
+                if balance_comp > 0
+                else self.account_min_value_id.id
+            )
+            move_line_vals = {
+                "name": asset.name,
+                "account_id": account_id,
+                "debit": balance_comp < 0 and -balance or 0.0,
+                "credit": balance_comp > 0 and balance or 0.0,
+                "analytic_distribution": asset.analytic_distribution,
+                "partner_id": partner_id,
+                "asset_id": asset.id,
+            }
+            move_lines.append(Command.create(move_line_vals))
         return move_lines

@@ -22,9 +22,11 @@ class InventoryAction(Component):
         # see comment in models/stock_inventory.py
         return self.env["stock.quant"].with_context(_sf_inventory=True)
 
-    def create_draft_check_empty(self, location, product, ref=None, lot=None):
+    def create_draft_check_empty(
+        self, location, product, ref=None, lot=None, package=None
+    ):
         """Create a draft inventory for a product with a zero quantity"""
-        return self._create_draft_inventory(location, product, lot=lot)
+        return self._create_draft_inventory(location, product, package=package, lot=lot)
 
     def _inventory_exists(self, location, product, package=None, lot=None):
         """Return if an inventory for location and product exist"""
@@ -39,8 +41,12 @@ class InventoryAction(Component):
             domain.append(("lot_id", "=", lot.id))
         return self.inventory_model.search_count(domain)
 
-    def _get_existing_quant(self, location, product, package=None, lot=None, limit=1):
-        domain = [("location_id", "=", location.id), ("product_id", "=", product.id)]
+    def _get_existing_quant(
+        self, location, product=None, package=None, lot=None, limit=1
+    ):
+        domain = [("location_id", "=", location.id)]
+        if product is not None:
+            domain.append(("product_id", "=", product.id))
         if package is not None:
             domain.append(("package_id", "=", package.id))
         else:
@@ -97,6 +103,35 @@ class InventoryAction(Component):
         """
         if not self._inventory_exists(location, product, package=package, lot=lot):
             self._create_draft_inventory(location, product, package=package, lot=lot)
+
+    def confirm_not_empty(self, location, product, ref=None, package=None, lot=None):
+        return self.create_draft_check_empty(
+            location, product, ref=ref, package=package, lot=lot
+        )
+
+    def confirm_empty(self, location, product, ref=None, package=None, lot=None):
+        quants = self._get_existing_quant(location, limit=None)
+        if quants.filtered(
+            lambda quant: quant.user_id and quant.user_id != self.env.user
+        ):
+            # the location is empty but there is still a planned check empty inventory
+            # do nothing, someone will have to check
+            return
+        if not quants:
+            quants = self.create_draft_check_empty(
+                location, product, package=package, lot=lot
+            )
+        else:
+            quants.write(
+                {
+                    "user_id": self.env.user.id,
+                    "inventory_quantity": 0,
+                    "inventory_quantity_set": True,
+                    "inventory_date": fields.Date.today(),
+                }
+            )
+        quants.sudo().action_apply_inventory()
+        return quants
 
     def create_stock_issue(self, move, location, package, lot):
         """Create an inventory for a stock issue

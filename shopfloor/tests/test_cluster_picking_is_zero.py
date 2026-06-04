@@ -33,6 +33,8 @@ class ClusterPickingIsZeroCase(ClusterPickingCommonCase):
 
         cls.line = cls.picking.move_line_ids[0]
         cls.next_line = cls.picking.move_line_ids[1]
+        cls.line.location_id = cls.shelf1
+        cls.next_line.location_id = cls.shelf2
         cls.bin1 = cls.env["stock.quant.package"].create({})
         cls._update_qty_in_location(
             cls.line.location_id, cls.line.product_id, cls.line.quantity

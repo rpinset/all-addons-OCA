@@ -984,12 +984,21 @@ class ClusterPicking(Component):
                 batch, message=self.msg_store.operation_not_found()
             )
 
-        if not zero:
-            inventory = self._actions_for("inventory")
-            inventory.create_draft_check_empty(
+        inventory = self._actions_for("inventory")
+        if zero:
+            inventory.confirm_empty(
                 move_line.location_id,
                 move_line.product_id,
                 ref=move_line.picking_id.name,
+                package=move_line.package_id,
+                lot=move_line.lot_id,
+            )
+        else:
+            inventory.confirm_not_empty(
+                move_line.location_id,
+                move_line.product_id,
+                ref=move_line.picking_id.name,
+                package=move_line.package_id,
                 lot=move_line.lot_id,
             )
 

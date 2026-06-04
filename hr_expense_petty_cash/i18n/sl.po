@@ -1,0 +1,255 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_expense_petty_cash
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-02 19:29+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "%(date_from)s - %(date_to)s"
+msgstr "%(date_from)s - %(date_to)s"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid "%s is not a petty cash holder"
+msgstr "%s ni blagajnik drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid "Account on invoice line should be {name}."
+msgstr "Konto na postavki računa mora biti {name}."
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__active
+msgid "Active"
+msgstr "Aktivno"
+
+#. module: hr_expense_petty_cash
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_form
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Archived"
+msgstr "Arhivirano"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__petty_cash_balance
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_list
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__company_id
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Company"
+msgstr "Družba"
+
+#. module: hr_expense_petty_cash
+#: model_terms:ir.actions.act_window,help:hr_expense_petty_cash.action_petty_cash
+msgid "Create a new petty cash holder"
+msgstr "Ustvari novega blagajnika drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model,name:hr_expense_petty_cash.model_hr_expense
+msgid "Expense"
+msgstr "Izdatek"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model,name:hr_expense_petty_cash.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "Poročilo o stroških"
+
+#. module: hr_expense_petty_cash
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Group By"
+msgstr "Združi po"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__journal_id
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model,name:hr_expense_petty_cash.model_account_move
+msgid "Journal Entry"
+msgstr "Temeljnica"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense_sheet.py:0
+msgid "Journal entries"
+msgstr "Temeljnice"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: hr_expense_petty_cash
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_list
+msgid "Limit"
+msgstr "Limit"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__petty_cash_limit
+msgid "Max Limit"
+msgstr "Maks. limit"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense_sheet.py:0
+msgid ""
+"Not enough money in petty cash holder.\n"
+"You are requesting {amount_company}{symbol}, but the balance is {balance}{symbol}."
+msgstr ""
+"V drobni blagajni ni dovolj denarja.\n"
+"Zahtevate {amount_company}{symbol}, vendar je stanje {balance}{symbol}."
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_hr_expense__payment_mode
+msgid "Paid By"
+msgstr "Plačal"
+
+#. module: hr_expense_petty_cash
+#: model:ir.actions.act_window,name:hr_expense_petty_cash.action_petty_cash
+#: model:ir.model,name:hr_expense_petty_cash.model_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_account_bank_statement_line__is_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_account_move__is_petty_cash
+#: model:ir.model.fields.selection,name:hr_expense_petty_cash.selection__hr_expense__payment_mode__petty_cash
+#: model:ir.ui.menu,name:hr_expense_petty_cash.menu_petty_cash
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.hr_expense_sheet_view_search_inherit
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.hr_expense_view_search_inherit
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_form
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Petty Cash"
+msgstr "Drobna blagajna"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__account_id
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Petty Cash Account"
+msgstr "Konto drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__partner_id
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.hr_expense_sheet_view_search_inherit
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.hr_expense_view_search_inherit
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Petty Cash Holder"
+msgstr "Blagajnik drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.constraint,message:hr_expense_petty_cash.constraint_petty_cash_partner_uniq
+msgid "Petty Cash Holder must be unique!"
+msgstr "Blagajnik drobne blagajne mora biti edinstven!"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid ""
+"Petty Cash balance is {balance} {symbol}.\n"
+"Max amount to add is {max_amount} {symbol}."
+msgstr ""
+"Stanje drobne blagajne je {balance} {symbol}.\n"
+"Najvišji znesek, ki ga lahko dodate, je {max_amount} {symbol}."
+
+#. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_hr_expense__petty_cash_id
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_hr_expense_sheet__petty_cash_id
+msgid "Petty cash holder"
+msgstr "Blagajnik drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid "Please check Petty Cash on {name}."
+msgstr "Označite Drobno blagajno na {name}."
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid "Please select petty cash holder"
+msgstr "Izberite blagajnika drobne blagajne"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "You can not create report without category."
+msgstr "Ne morete ustvariti poročila brez kategorije."
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+#: code:addons/hr_expense_petty_cash/models/hr_expense_sheet.py:0
+msgid "You cannot create report from many petty cash holders."
+msgstr "Poročila ni mogoče ustvariti za več blagajnikov drobne blagajne."
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "You cannot report expenses for different companies in the same report."
+msgstr "Stroškov za različne družbe ne morete vključiti v isto poročilo."
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "You cannot report expenses for different employees in the same report."
+msgstr "Stroškov za različne zaposlene ne morete vključiti v isto poročilo."
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "You cannot report the expenses without amount!"
+msgstr "Stroškov ne morete poročati brez zneska!"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/hr_expense.py:0
+msgid "You cannot report twice the same line!"
+msgstr "Iste postavke ne morete poročati dvakrat!"
+
+#. module: hr_expense_petty_cash
+#. odoo-python
+#: code:addons/hr_expense_petty_cash/models/account_move.py:0
+msgid "{name} with petty cash checked must contain only 1 line."
+msgstr "{name} z označeno drobno blagajno mora vsebovati le 1 postavko."

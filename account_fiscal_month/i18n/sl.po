@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-28 23:23+0000\n"
-"PO-Revision-Date: 2026-02-01 08:09+0000\n"
+"PO-Revision-Date: 2026-06-01 09:29+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -28,7 +28,7 @@ msgstr "Družbe"
 #. module: account_fiscal_month
 #: model:ir.model,name:account_fiscal_month.model_date_range_type
 msgid "Date Range Type"
-msgstr "Tip časovnega obsega"
+msgstr "Tip obdobja"
 
 #. module: account_fiscal_month
 #: model:date.range.type,name:account_fiscal_month.date_range_fiscal_month

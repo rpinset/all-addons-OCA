@@ -28,7 +28,7 @@ class MailThread(models.AbstractModel):
 
                 update_stage = False
                 email_partner = False
-                if ticket.partner_email == email_from:
+                if email_normalize(ticket.partner_email) == email_from:
                     update_stage = True
 
                 ticket_partner = ticket.partner_id

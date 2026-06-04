@@ -477,12 +477,7 @@ class Rma(models.Model):
             r.can_be_replaced = (
                 r.operation_id.action_create_delivery
                 in ("manual_after_receipt", "automatic_after_receipt")
-                and r.state
-                in [
-                    "received",
-                    "waiting_replacement",
-                    "replaced",
-                ]
+                and r.state == "received"
             ) or (
                 r.operation_id.action_create_delivery
                 in ("manual_on_confirm", "automatic_on_confirm")
@@ -995,6 +990,7 @@ class Rma(models.Model):
     def action_cancel(self):
         """Invoked when 'Cancel' button in rma form view is clicked."""
         self.reception_move_id._action_cancel()
+        self.delivery_move_ids._action_cancel()
         self.write({"state": "cancelled"})
 
     def action_draft(self):

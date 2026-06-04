@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-02-13 12:09+0000\n"
+"PO-Revision-Date: 2026-06-03 17:46+0000\n"
 "Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: none\n"
 "Language: tr\n"
@@ -591,6 +591,8 @@ msgid ""
 "When the separator is 'none', the value will be shifted according to the "
 "currency decimals. For example, 12345 will be converted to 123.45"
 msgstr ""
+"Ayırıcı 'none' olduğunda, değer para biriminin ondalık basamaklarına göre "
+"kaydırılacaktır. Örneğin, 12345, 123.45'e dönüştürülecektir"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__no_header
