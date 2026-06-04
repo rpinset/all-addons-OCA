@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-06-01 05:00 UTC** (elapsed 123s)
+Last build: **2026-06-04 15:56 UTC** (elapsed 94s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -65,7 +65,7 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 123s)
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | 1143570 2021-10-17 OCA-git-bot [ADD] setup.py |
 | [l10n-france](https://github.com/OCA/l10n-france) | 20 | 4066626 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 7 | e0eb893 2023-10-09 Weblate Update translation files |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | 07e612a 2026-04-10 Weblate Update translation files |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | 77bfd31 2026-06-03 mymage Translated using Weblate (Italian) |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | d631e83 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 17 | aa4c98b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | 1 | bcca2e7 2023-09-03 OCA-git-bot [UPD] README.rst |
@@ -91,7 +91,7 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 123s)
 | [product-attribute](https://github.com/OCA/product-attribute) | 56 | d0b2171 2026-05-12 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | fa25c0b 2025-02-12 mymage Translated using Weblate (Italian) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | e8dc020 2024-05-08 mymage Translated using Weblate (Italian) |
-| [project](https://github.com/OCA/project) | 40 | dd8fc1b 2025-06-21 mymage Translated using Weblate (Italian) |
+| [project](https://github.com/OCA/project) | 40 | 61e8090 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | 0e81de6 2023-10-10 Weblate Update translation files |
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 5077fcd 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 3 | 8be9f39 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
