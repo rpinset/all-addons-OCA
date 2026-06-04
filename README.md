@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-01 05:00 UTC** (elapsed 108s)
+Last build: **2026-06-04 15:56 UTC** (elapsed 91s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -105,12 +105,12 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 108s)
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 9 | 9b5dbf8 2025-09-16 Betül Öğmen Added translation using Weblate (Turkish) |
-| [project](https://github.com/OCA/project) | 48 | 4aeff08 2026-05-01 OCA-git-bot [BOT] post-merge updates |
+| [project](https://github.com/OCA/project) | 48 | a40a05d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | 2790e79 2026-05-26 mymage Translated using Weblate (Italian) |
-| [queue](https://github.com/OCA/queue) | 12 | 602bb0d 2026-03-23 OCA-git-bot Merge PR #912 into 14.0 |
+| [queue](https://github.com/OCA/queue) | 12 | 1c896eb 2026-06-03 mymage Translated using Weblate (Italian) |
 | [report-print-send](https://github.com/OCA/report-print-send) | 8 | abe01e8 2025-10-09 Betül Öğmen Translated using Weblate (Turkish) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 24 | 9aa96a9 2025-11-25 mymage Translated using Weblate (Italian) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 16 | 4a98e88 2026-02-12 OCA-git-bot [BOT] post-merge updates |
@@ -118,14 +118,14 @@ Last build: **2026-06-01 05:00 UTC** (elapsed 108s)
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | 89dec1f 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 149 | 0d81f3c 2026-03-27 OCA-git-bot Merge PR #4238 into 14.0 |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 149 | 993a3f8 2026-06-04 Guillaume Masson Translated using Weblate (French) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | 12045c4 2025-07-15 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 8333e14 2025-06-13 Betül Öğmen Added translation using Weblate (Turkish) |
 | [server-env](https://github.com/OCA/server-env) | 10 | 041cc08 2025-06-04 OCA-git-bot [BOT] post-merge updates |
 | [server-tools](https://github.com/OCA/server-tools) | 81 | 4b1c106 2026-04-07 Weblate Update translation files |
-| [server-ux](https://github.com/OCA/server-ux) | 41 | 64fb728 2026-04-13 OCA-git-bot Merge PR #1266 into 14.0 |
+| [server-ux](https://github.com/OCA/server-ux) | 41 | 5a86e6d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 857ac8f 2025-09-03 mymage Translated using Weblate (Italian) |
 | [sign](https://github.com/OCA/sign) | 4 | 79ed266 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
 | [social](https://github.com/OCA/social) | 59 | dcf4c98 2026-02-23 Pedro M. Baeza Merge pull request #1816 from Therp/14.0-copier-update |
