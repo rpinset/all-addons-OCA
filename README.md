@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
+Last build: **2026-06-07 21:42 UTC** (elapsed 142s)
 
 - Repos integrated: **117**
-- Canonical modules: **2091**
+- Canonical modules: **2093**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **137**
 
@@ -22,7 +22,7 @@ Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
 | [account-payment](https://github.com/OCA/account-payment) | 24 | 77243c2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 11 | 8219cd8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [agreement](https://github.com/OCA/agreement) | 4 | 0eb9de0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [bank-payment](https://github.com/OCA/bank-payment) | 14 | 1f495ca 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [bank-payment](https://github.com/OCA/bank-payment) | 14 | 2458ce2 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 15 | 57ce9ae 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [brand](https://github.com/OCA/brand) | 9 | da24d2a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 1 | 18d2b25 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
@@ -41,11 +41,11 @@ Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | f7d0af8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [dms](https://github.com/OCA/dms) | 7 | 05bf325 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [e-commerce](https://github.com/OCA/e-commerce) | 53 | 8d70b7e 2026-05-19 Pedro M. Baeza Merge pull request #1218 from qrtl/15.0-copier |
+| [e-commerce](https://github.com/OCA/e-commerce) | 55 | 45837a2 2026-06-04 OCA-git-bot [BOT] post-merge updates |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
 | [edi](https://github.com/OCA/edi) | 22 | 2fbde62 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [field-service](https://github.com/OCA/field-service) | 46 | 60ccf87 2026-05-29 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 46 | 6344130 2026-06-05 bigfoot88 Translated using Weblate (Chinese (Simplified) (zh_CN)) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 989fe00 2026-01-26 OCA-git-bot [BOT] post-merge updates |
 | [hr](https://github.com/OCA/hr) | 32 | 95fc148 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -78,7 +78,7 @@ Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
 | [manufacture](https://github.com/OCA/manufacture) | 51 | 217bf83 2026-05-13 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [mis-builder](https://github.com/OCA/mis-builder) | 3 | caec62b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [mis-builder](https://github.com/OCA/mis-builder) | 3 | 7dde8f9 2026-06-06 Pablo Castelo Translated using Weblate (Galician) |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | 2 | 94db0df 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [multi-company](https://github.com/OCA/multi-company) | 19 | b32c747 2026-04-06 Pedro M. Baeza Merge pull request #980 from qrtl/15.0-copier |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 1 | f40efd6 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -95,12 +95,12 @@ Last build: **2026-06-04 16:01 UTC** (elapsed 169s)
 | [queue](https://github.com/OCA/queue) | 8 | 7b617b6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [repair](https://github.com/OCA/repair) | 12 | 89affc7 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [report-print-send](https://github.com/OCA/report-print-send) | 3 | f981cbc 2025-04-03 Weblate Update translation files |
-| [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | eab7a7f 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | 5b9bca0 2026-06-06 Pablo Castelo Translated using Weblate (Galician) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 14 | c537ec2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | 9c8ddbd 2026-05-26 Pedro M. Baeza Merge pull request #4362 from Tecnativa/15.0-FIX-sale_start_end_dates- |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | c858e56 2026-06-05 Weblate Update translation files |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |

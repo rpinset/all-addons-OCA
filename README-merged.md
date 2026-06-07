@@ -1788,13 +1788,14 @@ addon | version | maintainers | summary
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 15.0.1.1.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_block_partner](website_sale_block_partner/) | 15.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | This module help to blacklist partners description
 [website_sale_cart_expire](website_sale_cart_expire/) | 15.0.1.1.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Cancel carts without activity after a configurable time
+[website_sale_cart_selectable](website_sale_cart_selectable/) | 15.0.1.0.0 |  | Enables to control button Add to cart display per product
 [website_sale_charge_payment_fee](website_sale_charge_payment_fee/) | 15.0.1.0.0 | <a href='https://github.com/miguel-S73'><img src='https://github.com/miguel-S73.png' width='32' height='32' style='border-radius:50%;' alt='miguel-S73'/></a> | Payment fee charged to customer
 [website_sale_checkout_country_vat](website_sale_checkout_country_vat/) | 15.0.1.0.0 |  | Autocomplete VAT in checkout process
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 15.0.1.3.2 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 15.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_google_tag_manager](website_sale_google_tag_manager/) | 15.0.1.0.0 |  | Add support for Google Tag Manager Enhanced Conversions
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 15.0.1.0.1 |  | Hide any Product Categories that are empty
-[website_sale_hide_price](website_sale_hide_price/) | 15.0.1.3.0 |  | Hide product prices on the shop
+[website_sale_hide_price](website_sale_hide_price/) | 15.0.1.4.0 |  | Hide product prices on the shop
 [website_sale_invoice_address](website_sale_invoice_address/) | 15.0.1.0.2 |  | Set e-Commerce sale orders invoice address as in backend
 [website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 15.0.1.0.0 |  | Displays the user's regular products in the e-commerce.
 [website_sale_order_cancel](website_sale_order_cancel/) | 15.0.1.0.1 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Allow customers to cancel their website sale orders
@@ -1833,6 +1834,7 @@ addon | version | maintainers | summary
 [website_sale_wishlist_archive_cron](website_sale_wishlist_archive_cron/) | 15.0.1.0.0 |  | Website Sales Wishlist Archive Cron
 [website_sale_wishlist_hide_price](website_sale_wishlist_hide_price/) | 15.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_wishlist_keep](website_sale_wishlist_keep/) | 15.0.1.0.1 |  | Allows to add products to my cart but keep it in my wishlist"
+[website_sale_wishlist_menuitem](website_sale_wishlist_menuitem/) | 15.0.1.0.0 |  | Website Sales Wishlist Menuitem
 [website_snippet_product_category](website_snippet_product_category/) | 15.0.1.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Adds a new snippet to show e-commerce categories
 
 [//]: # (end addons)
@@ -5750,7 +5752,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.2.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.4.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.4.0.1 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.4.0.2 |  | Sale planner calendar
 [sale_pricelist_global_rule](sale_pricelist_global_rule/) | 15.0.1.0.3 |  | Apply a global rule to all sale order
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 15.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.1 |  | Base module for multiple procurement group by Sale order
