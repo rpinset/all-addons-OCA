@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-02 20:20+0000\n"
+"PO-Revision-Date: 2026-06-07 19:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -120,7 +120,7 @@ msgstr "Aktivnosti"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Dekoracija pri aktivnosti"
+msgstr "Dekoracija izjeme"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__activity_state
@@ -140,7 +140,7 @@ msgstr "Napredno tiskanje"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__message_attachment_count
 msgid "Attachment Count"
-msgstr "Število prilog"
+msgstr "Št. priponk"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__breakage_per_category
@@ -235,7 +235,7 @@ msgstr "Polje skupine"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__has_message
 msgid "Has Message"
-msgstr "Vsebuje sporočila"
+msgstr "Vsebuje sporočilo"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__id
@@ -250,17 +250,19 @@ msgstr "Ikona"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Ikona za prikaz aktivnosti."
+msgstr "Ikona za prikaz izjem pri aktivnostih."
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Če je označeno, zahtevajo nova sporočila vašo pozornost."
+msgstr "Če označeno pomeni, da nova sporočila zahtevajo vašo pozornost."
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Če je označeno, imajo nekatera sporočila napako pri dostavi."
+msgstr ""
+"Kadar je označeno, pomeni, da je pri nekaterih sporočilih prišlo do napake "
+"pri dostavi."
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__last_categ_level_to_print
@@ -337,7 +339,7 @@ msgstr "Največja raven kategorije"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__message_has_error
 msgid "Message Delivery error"
-msgstr "Napaka pri dostavi sporočila"
+msgstr "Napaka ob dostavi sporočila"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__message_ids
@@ -347,7 +349,7 @@ msgstr "Sporočila"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Roki mojih aktivnosti"
+msgstr "Rok mojih aktivnosti"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields.selection,name:product_pricelist_direct_print.selection__product_pricelist_print__order_field__name
@@ -377,7 +379,7 @@ msgstr "Tip naslednje aktivnosti"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Število aktivnosti"
+msgstr "Število ukrepov"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__message_has_error_counter
@@ -387,7 +389,7 @@ msgstr "Število napak"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Število sporočil, kjer je potrebno ukrepati"
+msgstr "Število sporočil, ki zahtevajo ukrepanje"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__message_has_error_counter
@@ -467,13 +469,13 @@ msgstr "Tisk cenika izdelkov"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__product_tmpl_ids
 msgid "Product Templates"
-msgstr "Predloge izdelkov"
+msgstr "Predloge proizvodov"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__product_ids
 #: model_terms:ir.ui.view,arch_db:product_pricelist_direct_print.view_product_pricelist_print
 msgid "Products"
-msgstr "Izdelki"
+msgstr "Proizvodi"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__rating_ids
@@ -543,9 +545,9 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Status na podlagi aktivnosti\n"
-"Zapadel: Rok je že prekoračen\n"
-"Danes: Datum aktivnosti je danes\n"
+"Status glede na aktivnosti\n"
+"Prekoračeno: rok izvedbe je že prekoračen\n"
+"Danes: Datum aktivnosti je današnji dan\n"
 "Planirano: Bodoče aktivnosti."
 
 #. module: product_pricelist_direct_print
@@ -557,7 +559,7 @@ msgstr "Povzetek"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Vrsta dejavnosti izjeme na zapisu."
+msgstr "Tip izjeme pri aktivnosti na zapisu."
 
 #. module: product_pricelist_direct_print
 #. odoo-python
@@ -583,7 +585,7 @@ msgstr "Način DDV"
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__website_message_ids
 msgid "Website Messages"
-msgstr "Sporočila iz spletne strani"
+msgstr "Sporočila spletne strani"
 
 #. module: product_pricelist_direct_print
 #: model:ir.model.fields,help:product_pricelist_direct_print.field_product_pricelist_print__website_message_ids

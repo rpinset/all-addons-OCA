@@ -1,9 +1,12 @@
 # Copyright 2023 Tony Masci (Rapsodoo)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from psycopg2 import IntegrityError
+
 from odoo import fields
 from odoo.exceptions import UserError, ValidationError
 from odoo.tests import Form, tagged
+from odoo.tools import mute_logger
 
 from odoo.addons.l10n_it_account_vat_period_end_settlement.tests.common import (
     TestVATStatementCommon,
@@ -168,10 +171,11 @@ class VatStatementCommunicationCase(TestVATStatementCommon):
 
         self.assertEqual(comunicazione_liquidazione.identificativo, 2)
 
-        with self.assertRaises(ValidationError):
-            vals = self.get_vals_comunicazione_liquidazione()
-            vals["identificativo"] = 2
-            self.env["comunicazione.liquidazione"].create(vals)
+        with self.assertRaises(IntegrityError), mute_logger("odoo.sql_db"):
+            with self.env.cr.savepoint():
+                vals = self.get_vals_comunicazione_liquidazione()
+                vals["identificativo"] = 2
+                self.env["comunicazione.liquidazione"].create(vals)
 
         comunicazione_liquidazione = self.env["comunicazione.liquidazione"].create(
             self.get_vals_comunicazione_liquidazione()

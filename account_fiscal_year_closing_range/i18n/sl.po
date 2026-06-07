@@ -1,0 +1,243 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_fiscal_year_closing_range
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-07 18:51+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_fiscal_year_closing_range
+#. odoo-python
+#: code:addons/account_fiscal_year_closing_range/wizards/mapping_range_wizard.py:0
+msgid "%(count)d mapping lines created using destination code %(code)s."
+msgstr "%(count)d mapiranj ustvarjenih z uporabo ciljne kode %(code)s."
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_template_form_range
+msgid ""
+"<i class=\"fa fa-exclamation-triangle mr-2\"/>\n"
+"                    Please save the template first before using the range wizard."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-2\"/>\n"
+"                    Pred uporabo čarovnika za razpon shranite predlogo."
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_form_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_template_form_range
+msgid ""
+"<i class=\"fa fa-info-circle mr-2\"/>\n"
+"                        Use the wizard to generate individual mapping lines for a specific range of accounts."
+msgstr ""
+"<i class=\"fa fa-info-circle mr-2\"/>\n"
+"                        Uporabite čarovnika za generiranje posameznih "
+"mapiranj za določen razpon kontov."
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid ""
+"<i class=\"fa fa-info-circle mr-2\"/>\n"
+"                    This wizard creates individual mapping lines for\n"
+"                    <strong>every account</strong> found within the specified range.\n"
+"                    Ideal for mapping entire groups of accounts to a single result."
+msgstr ""
+"<i class=\"fa fa-info-circle mr-2\"/>\n"
+"                    Ta čarovnik ustvari posamezne vrstice mapiranja za\n"
+"                    <strong>vsak konto</strong>, najden v izbranem razponu.\n"
+"                    Idealno za mapiranje celotnih skupin kontov na en sam "
+"rezultat."
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "<span>to</span>"
+msgstr "<span>do</span>"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Account Code Range"
+msgstr "Razpon kontnih kod"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Accounts to be Mapped"
+msgstr "Konte za mapiranje"
+
+#. module: account_fiscal_year_closing_range
+#. odoo-python
+#: code:addons/account_fiscal_year_closing_range/wizards/mapping_range_wizard.py:0
+msgid ""
+"Cannot generate range mappings: The fiscal year closing template is not "
+"properly linked to a parent template.This usually happens when trying to use"
+" the wizard before saving the template. Please save the template first and "
+"try again."
+msgstr ""
+"Ne morem ustvariti mapiranj po razponu: predloga zapiranja poslovnega leta "
+"ni pravilno povezana z nadrejeno predlogo. To se običajno zgodi, če "
+"poskušate uporabiti čarovnika, preden shranite predlogo. Najprej shranite "
+"predlogo in poskusite znova."
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__company_id
+msgid "Company"
+msgstr "Družba"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Destination"
+msgstr "Cilj"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__dest_account_code
+msgid "Destination Account Code"
+msgstr "Koda ciljnega konta"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Discard"
+msgstr "Zavrzi"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_account_fiscalyear_closing_mapping__code_end
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__code_end
+msgid "End Account Code"
+msgstr "Končna koda konta"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__fyc_config_id
+msgid "Fiscal Year Closing Config"
+msgstr "Konfiguracija zapiranja poslovnega leta"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__fyc_config_template_id
+msgid "Fiscal Year Closing Config Template"
+msgstr "Predloga konfiguracije zapiranja poslovnega leta"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model,name:account_fiscal_year_closing_range.model_account_fiscalyear_closing_config
+msgid "Fiscal year closing configuration"
+msgstr "Konfiguracija zapiranja poslovnega leta"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model,name:account_fiscal_year_closing_range.model_account_fiscalyear_closing_mapping
+msgid "Fiscal year closing mapping"
+msgstr "Mapiranje zapiranja poslovnega leta"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.actions.act_window,name:account_fiscal_year_closing_range.action_account_fiscalyear_closing_mapping_range_wizard
+msgid "Generate Account Range"
+msgstr "Ustvari razpon kontov"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Generate Account Range Mappings"
+msgstr "Ustvari mapiranja razpona kontov"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Generate Mappings"
+msgstr "Ustvari mapiranja"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_form_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_template_form_range
+msgid "Generate Range"
+msgstr "Ustvari razpon"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__name_prefix
+msgid "Mapping Name Prefix"
+msgstr "Predpona naziva mapiranja"
+
+#. module: account_fiscal_year_closing_range
+#. odoo-python
+#: code:addons/account_fiscal_year_closing_range/wizards/mapping_range_wizard.py:0
+msgid "No accounts found in the selected range."
+msgstr "V izbranem razponu ni najdenih kontov."
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__preview_account_ids
+msgid "Preview Accounts"
+msgstr "Predogled kontov"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "Source Range"
+msgstr "Izvorni razpon"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_account_fiscalyear_closing_mapping__code_start
+#: model:ir.model.fields,field_description:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__code_start
+msgid "Start Account Code"
+msgstr "Začetna koda konta"
+
+#. module: account_fiscal_year_closing_range
+#. odoo-python
+#: code:addons/account_fiscal_year_closing_range/wizards/mapping_range_wizard.py:0
+msgid "Success"
+msgstr "Uspeh"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "The account code where the balance will be transferred to."
+msgstr "Kontna koda, kamor bo prenesen saldo."
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model.fields,help:account_fiscal_year_closing_range.field_fiscalyear_closing_range_wizard__dest_account_code
+msgid "The code of the destination account (e.g., 3.1.01.001)"
+msgstr "Koda ciljnega konta (npr. 3.1.01.001)"
+
+#. module: account_fiscal_year_closing_range
+#: model:ir.model,name:account_fiscal_year_closing_range.model_fiscalyear_closing_range_wizard
+msgid "Wizard for generating account range mappings in fiscal year closing"
+msgstr ""
+"Čarovnik za generiranje mapiranj razpona kontov pri zapiranju poslovnega leta"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "e.g. 3.1.01.001"
+msgstr "npr. 3.1.01.001"
+
+#. module: account_fiscal_year_closing_range
+#: model_terms:ir.ui.view,arch_db:account_fiscal_year_closing_range.view_account_fiscalyear_closing_mapping_range_wizard_form
+msgid "e.g. Closing"
+msgstr "npr. Zapiranje"

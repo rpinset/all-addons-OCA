@@ -167,10 +167,9 @@ msgid "Communication prepared by taxpayer"
 msgstr "Comunicazione preparata dal contribuente"
 
 #. module: l10n_it_vat_settlement_communication
-#. odoo-python
-#: code:addons/l10n_it_vat_settlement_communication/models/comunicazione_liquidazione.py:0
-msgid "Communication with identifier {} already exists"
-msgstr "Comunicazione con identificativo {} già esistente"
+#: model:ir.model.constraint,message:l10n_it_vat_settlement_communication.constraint_comunicazione_liquidazione_unique_identificativo_per_company
+msgid "Communication with this identifier already exists for the company."
+msgstr ""
 
 #. module: l10n_it_vat_settlement_communication
 #: model:ir.model,name:l10n_it_vat_settlement_communication.model_res_company
@@ -754,6 +753,9 @@ msgstr "oppure"
 #: code:addons/l10n_it_vat_settlement_communication/models/comunicazione_liquidazione.py:0
 msgid "quarter"
 msgstr "trimestre"
+
+#~ msgid "Communication with identifier {} already exists"
+#~ msgstr "Comunicazione con identificativo {} già esistente"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

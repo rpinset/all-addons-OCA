@@ -3,7 +3,7 @@
 
 {
     "name": "Related Documents for EDI",
-    "version": "18.0.1.1.1",
+    "version": "18.0.1.1.2",
     "category": "Localization/Italy",
     "author": "Nextev Srl, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-italy",

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-02 22:46+0000\n"
+"PO-Revision-Date: 2026-06-07 19:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -265,7 +265,7 @@ msgstr "Arhivirano"
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration__message_attachment_count
 msgid "Attachment Count"
-msgstr "Število prilog"
+msgstr "Št. priponk"
 
 #. module: automation_oca
 #: model:ir.ui.menu,name:automation_oca.automation_root_menu
@@ -545,7 +545,7 @@ msgstr "Uredljiva domena"
 #. module: automation_oca
 #: model:ir.model,name:automation_oca.model_mail_thread
 msgid "Email Thread"
-msgstr "Obravnava z elektronsko pošto"
+msgstr "E-poštni niz"
 
 #. module: automation_oca
 #: model:ir.model,name:automation_oca.model_mail_compose_message
@@ -733,7 +733,7 @@ msgstr "Graf napak"
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration__has_message
 msgid "Has Message"
-msgstr "Vsebuje sporočila"
+msgstr "Vsebuje sporočilo"
 
 #. module: automation_oca
 #: model:ir.model.fields.selection,name:automation_oca.selection__automation_configuration_step__expiry_interval_type__hours
@@ -756,12 +756,14 @@ msgstr "ID"
 #. module: automation_oca
 #: model:ir.model.fields,help:automation_oca.field_automation_configuration__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Če je označeno, zahtevajo nova sporočila vašo pozornost."
+msgstr "Če označeno pomeni, da nova sporočila zahtevajo vašo pozornost."
 
 #. module: automation_oca
 #: model:ir.model.fields,help:automation_oca.field_automation_configuration__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Če je označeno, imajo nekatera sporočila napako pri dostavi."
+msgstr ""
+"Kadar je označeno, pomeni, da je pri nekaterih sporočilih prišlo do napake "
+"pri dostavi."
 
 #. module: automation_oca
 #: model_terms:ir.ui.view,arch_db:automation_oca.automation_configuration_step_form_view
@@ -926,7 +928,7 @@ msgstr "Sporočilo"
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration__message_has_error
 msgid "Message Delivery error"
-msgstr "Napaka pri dostavi sporočila"
+msgstr "Napaka ob dostavi sporočila"
 
 #. module: automation_oca
 #: model:ir.model.fields,help:automation_oca.field_automation_configuration_step__activity_verification_domain_error
@@ -1037,7 +1039,7 @@ msgstr "Opomba"
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Število aktivnosti"
+msgstr "Število ukrepov"
 
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration__message_has_error_counter
@@ -1047,7 +1049,7 @@ msgstr "Število napak"
 #. module: automation_oca
 #: model:ir.model.fields,help:automation_oca.field_automation_configuration__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Število sporočil, kjer je potrebno ukrepati"
+msgstr "Število sporočil, ki zahtevajo ukrepanje"
 
 #. module: automation_oca
 #: model:ir.model.fields,help:automation_oca.field_automation_configuration__message_has_error_counter
@@ -1117,7 +1119,7 @@ msgstr "Osiroteli zapis"
 #. module: automation_oca
 #: model:ir.model,name:automation_oca.model_mail_mail
 msgid "Outgoing Mails"
-msgstr "Odhajajoča sporočila"
+msgstr "Izhodna pošta"
 
 #. module: automation_oca
 #: model:ir.model.fields,field_description:automation_oca.field_automation_configuration_step__parent_id

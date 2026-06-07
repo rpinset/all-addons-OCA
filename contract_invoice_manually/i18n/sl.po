@@ -1,0 +1,89 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* contract_invoice_manually
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-07 09:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_res_company
+msgid "Companies"
+msgstr "Družbe"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_res_config_settings
+msgid "Config Settings"
+msgstr "Nastavitve"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_contract_contract
+msgid "Contract"
+msgstr "Pogodba"
+
+#. module: contract_invoice_manually
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_manually_create_invoice_form_view
+msgid "Contract Filter"
+msgstr "Filtriranje pogodb"
+
+#. module: contract_invoice_manually
+#: model:ir.model,name:contract_invoice_manually.model_contract_manually_create_invoice
+msgid "Contract Manually Create Invoice Wizard"
+msgstr "Čarovnik za ročno ustvarjanje računa za pogodbo"
+
+#. module: contract_invoice_manually
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_manually_create_invoice_form_view
+msgid "Contracts"
+msgstr "Pogodbe"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
+msgid "Domain"
+msgstr "Domena"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_company__enable_contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
+msgid "Enable Manual Invoicing"
+msgstr "Omogoči ročni obračun"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_contract__enable_contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_res_company__enable_contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_res_config_settings__enable_contract_invoice_manually
+msgid "Exclude contracts from being invoiced automatically"
+msgstr "Izloči pogodbe iz samodejnega obračuna"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_manually_create_invoice__filter_domain
+msgid "Filter/Domain to apply on contracts to invoice"
+msgstr "Filter/domena, ki se uporabi za pogodbe, ki jih je treba zaračunati"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,field_description:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+#: model_terms:ir.ui.view,arch_db:contract_invoice_manually.contract_contract_search_view
+msgid "Manually Invoiced"
+msgstr "Ročno obračunano"
+
+#. module: contract_invoice_manually
+#: model:ir.model.fields,help:contract_invoice_manually.field_contract_contract__is_manually_invoiced
+msgid ""
+"The contract will be excluded from the automated invoice creation. It can be"
+" invoiced manually via Accounting > Customers/Vendors > Manually Invoice "
+"Sale/Purchase Contracts"
+msgstr ""
+"Pogodba bo izključena iz avtomatskega ustvarjanja računov. Račun zanjo lahko "
+"izdajate ročno preko Računovodstvo > Stranke/dobavitelji > Ročno izdajanje "
+"računov za prodajne/nabavne pogodbe"

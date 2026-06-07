@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_vendor_bank_account_default
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-06 07:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_vendor_bank_account_default
+#: model:ir.model,name:account_vendor_bank_account_default.model_res_partner
+msgid "Contact"
+msgstr "Stik"
+
+#. module: account_vendor_bank_account_default
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_partner__default_bank_id
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_users__default_bank_id
+msgid "Default Bank Account"
+msgstr "Privzeti bančni račun"
+
+#. module: account_vendor_bank_account_default
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_partner__has_default_bank_id
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_users__has_default_bank_id
+msgid "Has Default Bank Account"
+msgstr "Ima privzeti bančni račun"
+
+#. module: account_vendor_bank_account_default
+#: model:ir.model,name:account_vendor_bank_account_default.model_account_move
+msgid "Journal Entry"
+msgstr "Temeljnica"
+
+#. module: account_vendor_bank_account_default
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_partner__user_default_bank_id
+#: model:ir.model.fields,field_description:account_vendor_bank_account_default.field_res_users__user_default_bank_id
+msgid "User Default Bank Account"
+msgstr "Uporabnikov privzeti bančni račun"

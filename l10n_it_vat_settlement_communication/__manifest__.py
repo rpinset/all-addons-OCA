@@ -5,7 +5,7 @@
     "name": "ITA - Comunicazione liquidazione IVA",
     "summary": "Comunicazione liquidazione IVA ed esportazione file xml"
     "conforme alle specifiche dell'Agenzia delle Entrate",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.3",
     "category": "Account",
     "author": "Openforce di Camilli Alessandro, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-italy",
@@ -25,4 +25,5 @@
     ],
     "installable": True,
     "pre_init_hook": "pre_absorb_old_module",
+    "post_init_hook": "post_absorb_old_module",
 }
