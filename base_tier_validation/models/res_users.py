@@ -1,8 +1,13 @@
 # Copyright 2019 ForgeFlow S.L. (https://www.forgeflow.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+import logging
+
 from odoo import api, fields, models, modules
+from odoo.exceptions import AccessError
 from odoo.fields import Domain
+
+_logger = logging.getLogger(__name__)
 
 
 class Users(models.Model):
@@ -36,11 +41,25 @@ class Users(models.Model):
                     & Domain("validation_status", "!=", "rejected")
                     & Domain("can_review", "=", True)
                 )
-                records = (
-                    Model.with_user(user)
-                    .with_context(active_test=False)
-                    .search(records_domain)
-                )
+                try:
+                    records = (
+                        Model.with_user(user)
+                        .with_context(active_test=False)
+                        .search(records_domain)
+                    )
+                except AccessError:
+                    # The user is a reviewer on records of a model whose
+                    # ir.model.access does not grant them read access (e.g.
+                    # a tier definition pointing at account.move while the
+                    # reviewer has no accounting group). Skip silently so
+                    # the systray keeps working; the reviewer cannot act on
+                    # these reviews anyway without read access.
+                    _logger.debug(
+                        "User %s has no read access to %s; skipping in systray.",
+                        user.login,
+                        model,
+                    )
+                    continue
                 # Excludes any cancelled records depending on the structure of the model
                 if Model._state_field in Model._fields:
                     records = records.filtered(

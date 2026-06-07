@@ -7,7 +7,7 @@ from unittest import mock
 from lxml import etree
 
 from odoo import Command
-from odoo.exceptions import ValidationError
+from odoo.exceptions import AccessError, ValidationError
 from odoo.fields import Domain
 from odoo.tests import Form
 from odoo.tests.common import tagged
@@ -507,6 +507,34 @@ class TierTierValidation(CommonTierValidation):
         self.assertFalse(
             self.test_user_2.with_user(self.test_user_2).review_user_count()
         )
+
+    def test_16b_review_user_count_no_model_access(self):
+        """Reviewer without ir.model.access read on the validated model must
+        not crash the systray endpoint. Regression: the systray called
+        Model.with_user(user).search(...) which raises AccessError when the
+        user has no read access (e.g. tier definition on account.move for a
+        non-accounting user)."""
+        test_record = self.test_model.create({"test_field": 2.5})
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '>', 1.0)]",
+            }
+        )
+        test_record.with_user(self.test_user_1).request_validation()
+        self.assertTrue(self.test_user_2.review_ids)
+        # Revoke read access on the validated model for non-superadmin users.
+        self.env["ir.model.access"].search(
+            Domain("model_id", "=", self.tester_model.id)
+        ).unlink()
+        # Sanity check: a direct search now raises AccessError.
+        with self.assertRaises(AccessError):
+            self.test_model.with_user(self.test_user_2).search([])
+        # The systray endpoint must swallow that error and return [].
+        result = self.test_user_2.with_user(self.test_user_2).review_user_count()
+        self.assertEqual(result, [])
 
     def test_17_search_records_no_validation(self):
         """Search for records that have no validation process started"""

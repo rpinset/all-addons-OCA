@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-21 14:46+0000\n"
+"PO-Revision-Date: 2026-06-05 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -76,7 +76,7 @@ msgstr "Documenti esempio codice"
 #: model:ir.model.fields,help:endpoint.field_endpoint_endpoint__cors
 #: model:ir.model.fields,help:endpoint.field_endpoint_mixin__cors
 msgid "Comma-separated list of allowed origins"
-msgstr ""
+msgstr "Elenco separato da virgola delle origini consentite"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__company_id
@@ -88,7 +88,7 @@ msgstr "Azienda"
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__cors
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__cors
 msgid "Cors"
-msgstr ""
+msgstr "Cors"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__create_uid
