@@ -493,13 +493,17 @@ class TestRmaCase(TestRma):
         self.assertEqual(rma.state, "waiting_replacement")
         self.assertFalse(rma.can_be_refunded)
         self.assertFalse(rma.can_be_returned)
-        self.assertTrue(rma.can_be_replaced)
+        self.assertFalse(rma.can_be_replaced)
         self.assertEqual(rma.delivered_qty, 2)
         self.assertEqual(rma.remaining_qty, 8)
         self.assertEqual(rma.delivered_qty_done, 0)
         self.assertEqual(rma.remaining_qty_to_done, 10)
         first_move = rma.delivery_move_ids
         picking = first_move.picking_id
+        picking.action_cancel()
+        self.assertEqual(picking.state, "cancel")
+        self.assertEqual(rma.state, "received")
+        self.assertTrue(rma.can_be_replaced)
         # Replace again with another product with the remaining quantity
         product_3 = self.product_product.create(
             {"name": "Product 3 test", "type": "product"}
@@ -515,22 +519,17 @@ class TestRmaCase(TestRma):
         delivery_wizard.action_deliver()
         second_move = rma.delivery_move_ids - first_move
         self.assertEqual(len(rma.delivery_move_ids), 2)
-        self.assertEqual(rma.delivery_move_ids.mapped("picking_id"), picking)
+        new_picking = second_move.picking_id
         self.assertEqual(first_move.product_id, product_2)
         self.assertEqual(first_move.product_uom_qty, 2)
         self.assertEqual(second_move.product_id, product_3)
-        self.assertEqual(second_move.product_uom_qty, 8)
-        self.assertTrue(picking.state, "waiting")
+        self.assertEqual(second_move.product_uom_qty, 10)
+        self.assertTrue(new_picking.state, "waiting")
         self.assertEqual(rma.delivered_qty, 10)
         self.assertEqual(rma.remaining_qty, 0)
-        self.assertEqual(rma.delivered_qty_done, 0)
-        self.assertEqual(rma.remaining_qty_to_done, 10)
-        # remaining_qty is 0 but rma is not set to 'replaced' until
-        # remaining_qty_to_done is less than or equal to 0
-        first_move.quantity_done = 2
-        second_move.quantity_done = 8
-        picking.button_validate()
-        self.assertEqual(picking.state, "done")
+        second_move.quantity_done = 10
+        new_picking.button_validate()
+        self.assertEqual(new_picking.state, "done")
         self.assertEqual(rma.delivered_qty, 10)
         self.assertEqual(rma.remaining_qty, 0)
         self.assertEqual(rma.delivered_qty_done, 10)
@@ -540,8 +539,8 @@ class TestRmaCase(TestRma):
         self.assertFalse(rma.can_be_refunded)
         self.assertFalse(rma.can_be_returned)
         # Despite being in 'replaced' state,
-        # RMAs can still perform replacements.
-        self.assertTrue(rma.can_be_replaced)
+        # RMAs can't still perform replacements.
+        self.assertFalse(rma.can_be_replaced)
 
     def test_return_to_customer(self):
         # Create, confirm and receive an RMA

@@ -603,6 +603,8 @@ addon | version | maintainers | summary
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 16.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | New invoice menu that combine invoices and refunds
 [account_move_auto_post_ref](account_move_auto_post_ref/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Propagate customer ref when auto-generating next recurring invoice
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Account Move Cancel Confirm
+[account_move_line_packaging](account_move_line_packaging/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Add packaging to invoice lines
+[account_move_line_purchase_packaging](account_move_line_purchase_packaging/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Purchase packaging support on invoice lines
 [account_move_original_partner](account_move_original_partner/) | 16.0.1.0.0 |  | Display original customers when creating invoices from multiple sale orders.
 [account_move_sent_usability](account_move_sent_usability/) | 16.0.1.1.0 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
 [account_move_substate](account_move_substate/) | 16.0.1.0.1 |  | Account Move Sub State
@@ -2262,15 +2264,16 @@ addon | version | maintainers | summary
 [product_template_multi_link](product_template_multi_link/) | 16.0.1.0.0 |  | Product Multi Links (Template)
 [website_sale_attribute_filter_form_submit](website_sale_attribute_filter_form_submit/) | 16.0.1.0.0 |  | Allow to apply manually the filters on the e-commerce
 [website_sale_attribute_filter_multiselect](website_sale_attribute_filter_multiselect/) | 16.0.1.0.0 |  | Add multiselect display type for product and new filter for it
-[website_sale_cart_expire](website_sale_cart_expire/) | 16.0.1.0.2 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Cancel carts without activity after a configurable time
+[website_sale_cart_expire](website_sale_cart_expire/) | 16.0.1.0.3 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Cancel carts without activity after a configurable time
+[website_sale_cart_selectable](website_sale_cart_selectable/) | 16.0.1.0.0 |  | Add a toggle to products for enabling "Add to Cart" functionality in the e-commerce.
 [website_sale_category_breadcrumb](website_sale_category_breadcrumb/) | 16.0.1.0.0 | <a href='https://github.com/Rad0van'><img src='https://github.com/Rad0van.png' width='32' height='32' style='border-radius:50%;' alt='Rad0van'/></a> | Displays Product Category Breadcrumb(s) in eCommerce
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 16.0.1.2.2 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 16.0.1.0.0 |  | Hide product prices on the shop
-[website_sale_hide_price](website_sale_hide_price/) | 16.0.2.3.0 |  | Hide product prices on the shop
+[website_sale_hide_price](website_sale_hide_price/) | 16.0.2.4.0 |  | Hide product prices on the shop
 [website_sale_invoice_address](website_sale_invoice_address/) | 16.0.1.1.0 |  | Set e-Commerce sale orders invoice address as in backend
 [website_sale_order_shipping_modification](website_sale_order_shipping_modification/) | 16.0.1.0.0 |  | Change the delivery address in quotes from the portal
 [website_sale_order_type](website_sale_order_type/) | 16.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
-[website_sale_product_assortment](website_sale_product_assortment/) | 16.0.1.1.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Use product assortments to display products available on e-commerce.
+[website_sale_product_assortment](website_sale_product_assortment/) | 16.0.1.1.2 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Use product assortments to display products available on e-commerce.
 [website_sale_product_attachment](website_sale_product_attachment/) | 16.0.1.1.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Let visitors download attachments from a product page
 [website_sale_product_attribute_filter_collapse](website_sale_product_attribute_filter_collapse/) | 16.0.1.0.1 |  | Allows the attributes of the categories to be folded
 [website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 16.0.1.2.1 |  | Allow hide attributes values not used in variants
@@ -2283,7 +2286,7 @@ addon | version | maintainers | summary
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 16.0.1.0.2 |  | Display product reference in e-commerce
 [website_sale_require_legal](website_sale_require_legal/) | 16.0.1.0.2 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_stock_available](website_sale_stock_available/) | 16.0.1.0.2 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
-[website_sale_stock_list_preview](website_sale_stock_list_preview/) | 16.0.1.0.1 |  | Show the stock of products on the product previews
+[website_sale_stock_list_preview](website_sale_stock_list_preview/) | 16.0.1.0.2 |  | Show the stock of products on the product previews
 [website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 16.0.1.0.0 |  | Display provisioning date for a product in shop online
 [website_sale_suggest_create_account](website_sale_suggest_create_account/) | 16.0.1.1.0 |  | Suggest users to create an account when buying in the website
 [website_sale_tax_toggle](website_sale_tax_toggle/) | 16.0.1.1.1 |  | Allow display price in Shop with or without taxes
@@ -2391,7 +2394,10 @@ addon | version | maintainers | summary
 [account_edi_ubl_cii_additional_document](account_edi_ubl_cii_additional_document/) | 16.0.1.0.0 |  | Extends account_edi_ubl_cii to import all attachments from UBL invoices (not only PDFs) and link them to the vendor bill.
 [account_edi_ubl_cii_check_total](account_edi_ubl_cii_check_total/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon extends the UBL invoice import process to automatically populate the suppliers check total field based on the value found in the XML file.
 [account_edi_ubl_cii_invoice_line_name_enhance](account_edi_ubl_cii_invoice_line_name_enhance/) | 16.0.1.0.0 |  | This module improves invoice line label generation when importing UBL vendor bills by including the product name when it is not already present.
+[account_edi_ubl_cii_purchase_match](account_edi_ubl_cii_purchase_match/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Extend UBL vendor bill import to automatically match and link bill lines to purchase order lines using the OrderReference and product label.
+[account_edi_ubl_cii_retrieve_tax](account_edi_ubl_cii_retrieve_tax/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Match taxes on UBL import using UNECE tax codes
 [account_edi_ubl_cii_supplier_invoice_number](account_edi_ubl_cii_supplier_invoice_number/) | 16.0.1.0.0 |  | This addon extends the UBL invoice import process to automatically populate the suppliers invoice number based on the value found in the XML file.
+[account_edi_ubl_move_line_uom_and_packaging_unece](account_edi_ubl_move_line_uom_and_packaging_unece/) | 16.0.1.0.0 |  | Adds UNECE-based detection of UoM and packaging on invoice lines during UBL import.
 [account_einvoice_generate](account_einvoice_generate/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Technical module to generate PDF invoices with embedded XML file
 [account_invoice_download](account_invoice_download/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Auto-download supplier invoices and import them
 [account_invoice_download_ovh](account_invoice_download_ovh/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Get OVH Invoice via the API
@@ -5564,7 +5570,7 @@ addon | version | maintainers | summary
 [partner_address_split](partner_address_split/) | 16.0.1.0.0 |  | Add specific helper methods
 [partner_address_street3](partner_address_street3/) | 16.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 16.0.1.0.0 |  | Partner Affiliates
-[partner_archive_propagate](partner_archive_propagate/) | 16.0.1.1.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Archive/unarchive partner contacts hierarchically
+[partner_archive_propagate](partner_archive_propagate/) | 16.0.1.2.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Archive/unarchive partner contacts hierarchically
 [partner_auto_archive](partner_auto_archive/) | 16.0.1.0.0 |  | Archive periodically all contacts marked as auto-archive.
 [partner_bank_acc_type_constraint](partner_bank_acc_type_constraint/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds constraint on bank account type
 [partner_bank_code](partner_bank_code/) | 16.0.1.0.1 |  | Add fields information in banks
@@ -5617,7 +5623,7 @@ addon | version | maintainers | summary
 [partner_middlename](partner_middlename/) | 16.0.1.0.0 |  | Have split Middle
 [partner_mobile_duplicate_warn](partner_mobile_duplicate_warn/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Warning banner on partner form if another partner has the same mobile
 [partner_multi_relation](partner_multi_relation/) | 16.0.1.5.0 |  | Partner Relations
-[partner_multi_relation_archive_propagate](partner_multi_relation_archive_propagate/) | 16.0.1.0.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Propagate archiving via partner_multi_relation relations
+[partner_multi_relation_archive_propagate](partner_multi_relation_archive_propagate/) | 16.0.1.1.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Propagate archiving via partner_multi_relation relations
 [partner_multi_relation_function](partner_multi_relation_function/) | 16.0.1.1.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Partner Relation Functions
 [partner_phone_extension](partner_phone_extension/) | 16.0.1.0.0 |  | Partner Phone Number Extension
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 16.0.1.0.1 |  | Track the time and days your partners expect phone calls
@@ -5742,7 +5748,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.4.5.0 |  | A property management system
+[pms](pms/) | 16.0.4.6.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.2.3.0 |  | PMS Spanish Adaptation
@@ -6195,7 +6201,7 @@ addon | version | maintainers | summary
 [purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.2 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
 [sale_product_variant_attribute_tax](sale_product_variant_attribute_tax/) | 16.0.1.0.0 |  | Bring the taxes associated to product values
-[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.3 |  | Product variants in sale management
+[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.4 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -6497,7 +6503,7 @@ addon | version | maintainers | summary
 [purchase_only_by_packaging](purchase_only_by_packaging/) | 16.0.1.0.2 |  | Manage purchase of packaging
 [purchase_open_qty](purchase_open_qty/) | 16.0.3.0.1 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_approval_block](purchase_order_approval_block/) | 16.0.1.0.0 |  | Purchase Order Approval Block
-[purchase_order_approved](purchase_order_approved/) | 16.0.1.0.0 |  | Add a new state 'Approved' in purchase orders.
+[purchase_order_approved](purchase_order_approved/) | 16.0.1.0.2 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_archive](purchase_order_archive/) | 16.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_downpayment](purchase_order_downpayment/) | 16.0.1.0.0 |  | Allow to add payments from Purchase order view
 [purchase_order_duplicate_check](purchase_order_duplicate_check/) | 16.0.1.0.0 |  | Prevents overordering in the Purchase app with a Confirmation Wizard, 'Pending Orders' field, and activity tracking for repeated orders.
@@ -6958,7 +6964,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 16.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Product Warranty
-[rma](rma/) | 16.0.5.3.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
+[rma](rma/) | 16.0.5.3.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_delivery](rma_delivery/) | 16.0.1.1.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allow to choose a default delivery carrier for returns
 [rma_lot](rma_lot/) | 16.0.1.0.1 |  | Manage lot in RMA
 [rma_lot_autocreate](rma_lot_autocreate/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Auto-generate stock lot at RMA confirm using per-operation sequence
@@ -7849,7 +7855,7 @@ addon | version | maintainers | summary
 [fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.2.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 16.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 16.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
-[field_vector](field_vector/) | 16.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
+[field_vector](field_vector/) | 16.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
 [html_image_url_extractor](html_image_url_extractor/) | 16.0.1.0.0 |  | Extract images found in any HTML field
 [html_text](html_text/) | 16.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 16.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
