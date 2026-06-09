@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-06-07 21:47 UTC
+Generated 2026-06-09 04:53 UTC
 
 ## Skipped repos
 
@@ -66,7 +66,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-india](https://github.com/OCA/l10n-india) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | `no_module` | No directory with __manifest__.py at repo root |
@@ -88,7 +87,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
-| [management-system](https://github.com/OCA/management-system) | `no_module` | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | `no_module` | No directory with __manifest__.py at repo root |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |

@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-06-07 21:47 UTC
+Generated 2026-06-09 04:53 UTC
 
-Total skipped: **158**
+Total skipped: **156**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **134**
+Count: **132**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -96,7 +96,6 @@ Count: **134**
 | [l10n-india](https://github.com/OCA/l10n-india) | [19.0](https://github.com/OCA/l10n-india/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | [19.0](https://github.com/OCA/l10n-indonesia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | [19.0](https://github.com/OCA/l10n-ireland/tree/19.0) | No directory with __manifest__.py at repo root |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | [19.0](https://github.com/OCA/l10n-italy/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | [19.0](https://github.com/OCA/l10n-luxemburg/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | [19.0](https://github.com/OCA/l10n-macedonia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | [19.0](https://github.com/OCA/l10n-mexico/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -117,7 +116,6 @@ Count: **134**
 | [l10n-usa](https://github.com/OCA/l10n-usa) | [19.0](https://github.com/OCA/l10n-usa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | [19.0](https://github.com/OCA/l10n-venezuela/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [19.0](https://github.com/OCA/l10n-vietnam/tree/19.0) | No directory with __manifest__.py at repo root |
-| [management-system](https://github.com/OCA/management-system) | [19.0](https://github.com/OCA/management-system/tree/19.0) | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | [19.0](https://github.com/OCA/manufacture-reporting/tree/19.0) | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | [19.0](https://github.com/OCA/margin-analysis/tree/19.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [19.0](https://github.com/OCA/mis-builder-contrib/tree/19.0) | No directory with __manifest__.py at repo root |
