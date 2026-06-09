@@ -5,7 +5,7 @@
 {
     "name": "Sale Order Line Sequence",
     "summary": "Propagates SO line sequence to invoices and stock picking.",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.2.0",
     "author": "ForgeFlow, Serpent CS, Odoo Community Association (OCA)",
     "category": "Sales",
     "website": "https://github.com/OCA/sale-workflow",
@@ -13,6 +13,7 @@
     "data": [
         "views/sale_view.xml",
         "views/report_saleorder.xml",
+        "views/sale_portal_templates.xml",
         "views/account_move_view.xml",
         "views/report_invoice.xml",
     ],

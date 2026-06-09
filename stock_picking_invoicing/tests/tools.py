@@ -16,7 +16,8 @@ def create_with_form_product_product(env, values):
         product.type = values.get("type")
         if values.get("type") == "consu":
             product.is_storable = values.get("is_storable")
-            product.invoice_policy = values.get("invoice_policy")
+            if "invoice_policy" in env["product.product"]._fields:
+                product.invoice_policy = values.get("invoice_policy")
         product.sale_ok = True
         product.purchase_ok = True
 

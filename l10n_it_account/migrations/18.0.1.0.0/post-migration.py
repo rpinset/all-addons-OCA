@@ -6,6 +6,7 @@ from odoo import SUPERUSER_ID, api
 OLD_MODULES = [
     "l10n_it_account_tax_kind",
     "l10n_it_fatturapa",
+    "l10n_it_fatturapa_pec",
 ]
 
 
@@ -106,6 +107,22 @@ def _l10n_it_fatturapa_migration(env):
         WHERE name = 'l10n_it_edi'
     """
     openupgrade.logged_query(env.cr, query)
+
+
+def _l10n_it_fatturapa_pec_migration(env):
+    """
+    Install "l10n_it_edi_pec" which replaces the old
+    l10n_it_fatturapa_pec module.
+    """
+    openupgrade.logged_query(
+        env.cr,
+        """
+        UPDATE ir_module_module
+        SET state = 'to install'
+        WHERE name = 'l10n_it_edi_pec'
+        AND state = 'uninstalled'
+        """,
+    )
 
 
 def migrate(cr, version):

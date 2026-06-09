@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fastapi_captcha_altcha_backend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: fastapi_captcha_altcha_backend
+#: model:ir.model.fields.selection,name:fastapi_captcha_altcha_backend.selection__fastapi_endpoint__captcha_type__altcha_local
+msgid "Altcha (Local)"
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#. odoo-python
+#: code:addons/fastapi_captcha_altcha_backend/models/fastapi_endpoint.py:0
+#: code:addons/fastapi_captcha_altcha_backend/routers/altcha.py:0
+msgid "Altcha library is not installed."
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#. odoo-python
+#: code:addons/fastapi_captcha_altcha_backend/models/fastapi_endpoint.py:0
+msgid "Altcha validation failed: %(error)s"
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#: model:ir.model.fields,field_description:fastapi_captcha_altcha_backend.field_fastapi_endpoint__captcha_type
+msgid "Captcha Type"
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#. odoo-python
+#: code:addons/fastapi_captcha_altcha_backend/routers/altcha.py:0
+msgid "Captcha secret key is not set for this endpoint."
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#. odoo-python
+#: code:addons/fastapi_captcha_altcha_backend/routers/altcha.py:0
+msgid "Failed to create Altcha challenge."
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#. odoo-python
+#: code:addons/fastapi_captcha_altcha_backend/models/fastapi_endpoint.py:0
+msgid "Failed to process Altcha payload: %(error)s"
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#: model:ir.model,name:fastapi_captcha_altcha_backend.model_fastapi_endpoint
+msgid "FastAPI Endpoint"
+msgstr ""
+
+#. module: fastapi_captcha_altcha_backend
+#: model:ir.model.fields,help:fastapi_captcha_altcha_backend.field_fastapi_endpoint__captcha_type
+msgid "Type of captcha to use for this endpoint"
+msgstr ""

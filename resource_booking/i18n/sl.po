@@ -1,0 +1,1342 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* resource_booking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-08 07:33+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+msgid "%(resources)s"
+msgstr "%(resources)s"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+msgid "%(resources)s (using calendar %(calendar)s)"
+msgstr "%(resources)s (z uporabo koledarja %(calendar)s)"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+msgid ""
+"<br/>\n"
+"                        Error details:"
+msgstr ""
+"<br/>\n"
+"                        Podrobnosti napake:"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Reschedule"
+msgstr ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Preplaniraj"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Schedule"
+msgstr ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Načrtuj"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-comment\"/>\n"
+"                        Feedback"
+msgstr ""
+"<i class=\"fa fa-comment\"/>\n"
+"                        Povratne informacije"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-times\"/>\n"
+"                                Cancel this booking"
+msgstr ""
+"<i class=\"fa fa-times\"/>\n"
+"                                Prekliči to rezervacijo"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-times\"/>\n"
+"                            Cancel"
+msgstr ""
+"<i class=\"fa fa-times\"/>\n"
+"                            Prekliči"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "<small class=\"text-end\">Stage:</small>"
+msgstr "<small class=\"text-end\">Stopnja:</small>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "<span>Preview</span>"
+msgstr "<span>Predogled</span>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Advice:</strong>"
+msgstr "<strong>Nasvet:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Booked resources:</strong>"
+msgstr "<strong>Rezervirani viri:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Dates:</strong>"
+msgstr "<strong>Datumi:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Duration:</strong>"
+msgstr "<strong>Trajanje:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Location:</strong>"
+msgstr "<strong>Lokacija:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Meeting URL:</strong>"
+msgstr "<strong>URL sestanka:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Requested by:</strong>"
+msgstr "<strong>Zahteval:</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+msgid "<strong>The chosen schedule is no longer available.</strong>"
+msgstr "<strong>Izbrani razpored ni več na voljo.</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Type:</strong>"
+msgstr "<strong>Tip:</strong>"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_warning
+msgid "Access warning"
+msgstr "Opozorilo ob dostopu"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_mail_activity_type__category
+msgid "Action"
+msgstr "Ukrep"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_needaction
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_needaction
+msgid "Action Needed"
+msgstr "Potrebno ukrepanje"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_mail_activity_type__category
+msgid ""
+"Actions may trigger specific behavior like opening calendar view or "
+"automatically mark as done when a document is uploaded"
+msgstr ""
+"Dejanja lahko sprožijo določeno vedenje, kot je odpiranje koledarskega "
+"pogleda ali samodejno označevanje kot dokončano, ko je dokument naložen"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__active
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__active
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__active
+msgid "Active"
+msgstr "Aktivno"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_ids
+msgid "Activities"
+msgstr "Aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity
+msgid "Activity"
+msgstr "Aktivnost"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_exception_decoration
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekoracija izjeme"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_state
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_state
+msgid "Activity State"
+msgstr "Stanje aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity_type
+msgid "Activity Type"
+msgstr "Tip aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_type_icon
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona tipa aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity_schedule
+msgid "Activity schedule plan Wizard"
+msgstr "Čarovnik za načrtovanje urnika dejavnosti"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "All times are displayed using this timezone:"
+msgstr "Vsi časi so prikazani v tem časovnem pasu:"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__duration
+msgid ""
+"Amount of time that the resources will be booked and unavailable for others."
+msgstr "Čas, v katerem bodo viri rezervirani in nedosegljivi za druge."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_combination_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Archived"
+msgstr "Arhivirano"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Are you sure?"
+msgstr "Ste prepričani?"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_attachment_count
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_attachment_count
+msgid "Attachment Count"
+msgstr "Št. priponk"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__partner_ids
+msgid "Attendees"
+msgstr "Udeleženci"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__combination_auto_assign
+msgid "Auto assigned"
+msgstr "Samodejno dodeljeno"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Auto-assigned:"
+msgstr "Samodejno dodeljeno:"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__resource_calendar_id
+msgid "Availability Calendar"
+msgstr "Koledar razpoložljivosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__combination_rel_ids
+msgid "Available resource combinations"
+msgstr "Razpoložljive kombinacije virov"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_combination
+msgid "Bookable resource combinations"
+msgstr "Kombinacije virov, ki jih je mogoče rezervirati"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "Booking"
+msgstr "Rezervacija"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__booking_activity_ids
+msgid "Booking Activities"
+msgstr "Aktivnosti rezervacije"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__booking_count
+msgid "Booking Count"
+msgstr "Število rezervacij"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__booking_count
+msgid "Booking count"
+msgstr "Število rezervacij"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__duration
+msgid "Booking default duration."
+msgstr "Privzeto trajanje rezervacije."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Booking ref."
+msgstr "Sklic rezervacije."
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__type_count
+msgid "Booking types"
+msgstr "Tipi rezervacij"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#: code:addons/resource_booking/models/resource_booking_type.py:0
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_action
+#: model:ir.model.fields,field_description:resource_booking.field_res_partner__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_res_users__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__booking_ids
+#: model:ir.ui.menu,name:resource_booking.resource_booking_menu
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_home
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_calendar
+#: model_terms:ir.ui.view,arch_db:resource_booking.view_partner_form
+msgid "Bookings"
+msgstr "Rezervacije"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__booking_ids
+msgid "Bookings available for this type"
+msgstr "Rezervacije, ki so na voljo za ta tip"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_calendar_event
+msgid "Calendar Event"
+msgstr "Koledarski dogodek"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Cancel"
+msgstr "Prekliči"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__canceled
+msgid "Canceled"
+msgstr "Preklicano"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+msgid ""
+"Cannot schedule these bookings because no resources are selected for them:\n"
+"\n"
+"- %s"
+msgstr ""
+"Teh rezervacij ni mogoče načrtovati, ker zanje niso izbrani nobeni viri:\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+msgid ""
+"Cannot schedule these bookings because they do not fit in their type or resources calendars, or because all resources are busy:\n"
+"\n"
+"- %s"
+msgstr ""
+"Teh rezervacij ni mogoče načrtovati, ker se ne ujemajo z njihovimi tipi ali "
+"koledarji virov ali pa so vsi viri zasedeni:\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__combination_assignment
+msgid ""
+"Choose how to auto-assign resource combinations. It has no effect if "
+"assigned manually."
+msgstr ""
+"Izberite način samodejnega dodeljevanja kombinacij virov. Če je dodeljeno "
+"ročno, to nima učinka."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Close"
+msgstr "Zaključi"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__combination_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Combination"
+msgstr "Kombinacija"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__combination_assignment
+msgid "Combination Assignment"
+msgstr "Dodelitev kombinacij"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_combination_menu
+msgid "Combinations"
+msgstr "Kombinacije"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__company_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_search
+msgid "Company"
+msgstr "Družba"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__company_id
+msgid "Company where this booking type is available."
+msgstr "Družba, kjer je ta tip rezervacije na voljo."
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_type_configuration_menu
+msgid "Configuration"
+msgstr "Nastavitve"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Confirm"
+msgstr "Potrdi"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Confirm booking"
+msgstr "Potrdi rezervacijo"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid ""
+"Confirm that the requesting partner and yourself will attend the scheduled "
+"meeting."
+msgstr ""
+"Potrdite, da bosta zahtevajoči partner in vi prisotni na načrtovanem "
+"sestanku."
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__confirmed
+msgid "Confirmed"
+msgstr "Potrjeno"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_res_partner
+msgid "Contact"
+msgstr "Stik"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "Current state of this booking"
+msgstr "Trenutno stanje te rezervacije"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__access_url
+msgid "Customer Portal URL"
+msgstr "URL portala strank"
+
+#. module: resource_booking
+#: model:resource.booking.type,name:resource_booking.resource_booking_type_customer
+msgid "Customer meeting"
+msgstr "Sestanek s stranko"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Date"
+msgstr "Datum"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid ""
+"Dear user,\n"
+"            <br/>\n"
+"            You have been assigned to the"
+msgstr ""
+"Spoštovani uporabnik,\n"
+"            <br/>\n"
+"            Dodeljeni ste dokumentu"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__alarm_ids
+msgid "Default reminders"
+msgstr "Privzeti opomniki"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__categ_ids
+msgid "Default tags"
+msgstr "Privzete oznake"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_combination_action
+msgid "Define bookable resource combinations."
+msgstr "Določite kombinacije virov, ki jih je mogoče rezervirati."
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_type_action
+msgid "Define resource booking types."
+msgstr "Določite tipe rezervacij virov."
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_action
+msgid "Define resource bookings."
+msgstr "Določite rezervacije virov."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__description
+msgid "Description"
+msgstr "Opis"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__duration
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__duration
+msgid "Duration"
+msgstr "Trajanje"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_type_duration_positive
+msgid "Duration must be positive."
+msgstr "Trajanje mora biti pozitivno."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Duration:"
+msgstr "Trajanje:"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/mail_activity.py:0
+msgid "Feedback: %(feedback)s"
+msgstr "Povratne informacije: %(feedback)s"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_follower_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_follower_ids
+msgid "Followers"
+msgstr "Sledilci"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_partner_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Sledilci (partnerji)"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_type_icon
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome ikona, npr. fa-tasks"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__forced_calendar_id
+msgid "Force a specific calendar, instead of combining the resources'."
+msgstr "Vsili določen koledar namesto združevanja koledarjev virov."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__forced_calendar_id
+msgid "Forced calendar"
+msgstr "Vsiljen koledar"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Go back"
+msgstr "Nazaj"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_search
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Group By"
+msgstr "Združi po"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__has_message
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__has_message
+msgid "Has Message"
+msgstr "Vsebuje sporočilo"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__id
+msgid "ID"
+msgstr "ID"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_exception_icon
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_exception_icon
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona za prikaz izjem pri aktivnostih."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_needaction
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Če je označeno, nova sporočila zahtevajo vašo pozornost."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_has_error
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+"Kadar je označeno, pomeni, da je pri nekaterih sporočilih prišlo do napake "
+"pri dostavi."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "If you cancel this booking:"
+msgstr "Če prekličete to rezervacijo:"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__slot_duration
+msgid "Interval offered to start each resource booking."
+msgstr "Interval, v katerem se lahko začne vsaka rezervacija virov."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Invite requesting partner to portal."
+msgstr "Povabite zahtevajočega partnerja na portal."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Involving me"
+msgstr "Vključuje mene"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_is_follower
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_is_follower
+msgid "Is Follower"
+msgstr "Je sledilec"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__is_modifiable
+msgid "Is Modifiable"
+msgstr "Je mogoče spreminjati"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__is_overdue
+msgid "Is Overdue"
+msgstr "Je zapadlo"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "It will be unscheduled."
+msgstr "Rezervacija bo umaknjena iz razporeda."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "It will disappear from your bookings list."
+msgstr "Izginila bo z vašega seznama rezervacij."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__name
+msgid "Leave empty to autogenerate a booking name."
+msgstr "Pustite prazno za samodejno ustvarjeno ime rezervacije."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__location
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__location
+msgid "Location"
+msgstr "Lokacija"
+
+#. module: resource_booking
+#: model:res.groups,name:resource_booking.group_manager
+msgid "Manager"
+msgstr "Upravitelj"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Manually assigned:"
+msgstr "Ročno dodeljeno:"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__meeting_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Meeting"
+msgstr "Sestanek"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__videocall_location
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__videocall_location
+msgid "Meeting URL"
+msgstr "URL sestanka"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__meeting_id
+msgid "Meeting confirmed for this booking."
+msgstr "Sestanek je potrjen za to rezervacijo."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Meeting defaults"
+msgstr "Privzete nastavitve sestankov"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__alarm_ids
+msgid "Meetings will be created with these reminders by default."
+msgstr "Sestanki bodo privzeto ustvarjeni s temi opomniki."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__categ_ids
+msgid "Meetings will be created with these tags by default."
+msgstr "Sestanki bodo privzeto ustvarjeni s temi oznakami."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_has_error
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_has_error
+msgid "Message Delivery error"
+msgstr "Napaka ob dostavi sporočila"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Message and communication history"
+msgstr "Zgodovina sporočil in komunikacij"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_ids
+msgid "Messages"
+msgstr "Sporočila"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_combination_required_if_event
+msgid "Missing resource booking combination."
+msgstr "Manjka kombinacija rezervacije virov."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__modifications_deadline
+msgid "Modifications Deadline"
+msgstr "Rok za spremembe"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__my_activity_date_deadline
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Rok mojih aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__type_name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_calendar_event_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Naslednji dogodek v koledarju aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_date_deadline
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Rok naslednje aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_summary
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_summary
+msgid "Next Activity Summary"
+msgstr "Povzetek naslednje aktivnosti"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_type_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tip naslednje aktivnosti"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Next month"
+msgstr "Naslednji mesec"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "No free slots found this month."
+msgstr "Ta mesec ni prostih terminov."
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+msgid "No resource combinations available on %s"
+msgstr "Za %s ni na voljo nobenih kombinacij virov"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_needaction_counter
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Število ukrepov"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_has_error_counter
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_has_error_counter
+msgid "Number of errors"
+msgstr "Število napak"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_needaction_counter
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Število sporočil, ki zahtevajo ukrepanje"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_has_error_counter
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Število sporočil, ki niso bila pravilno dostavljena"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_unique_meeting_id
+msgid "Only one event per resource booking can exist."
+msgstr "Za vsako rezervacijo virov lahko obstaja le en dogodek."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_schedule_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_view_form_popup
+msgid "Open Resource Booking"
+msgstr "Odpri rezervacijo virov"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Open a calendar to schedule a meeting for this booking request."
+msgstr "Odpri koledar za načrtovanje sestanka za to zahtevo za rezervacijo."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__user_id
+msgid "Organizer"
+msgstr "Organizator"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__pending
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Pending"
+msgstr "Na čakanju"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__state
+msgid ""
+"Pending: No meeting scheduled.\n"
+"Scheduled: The requester has not confirmed attendance yet.\n"
+"Confirmed: Meeting scheduled, and requester attendance confirmed.\n"
+"Canceled: Meeting removed, booking archived."
+msgstr ""
+"Na čakanju: Sestanek ni načrtovan.\n"
+"Načrtovano: Zahtevatelj še ni potrdil udeležbe.\n"
+"Potrjeno: Sestanek je načrtovan in udeležba zahtevatelja potrjena.\n"
+"Preklicano: Sestanek je odstranjen, rezervacija arhivirana."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Please confirm this is really what you want."
+msgstr "Prosimo, potrdite, da to res želite."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_url
+msgid "Portal Access URL"
+msgstr "URL dostopa do portala"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Previous month"
+msgstr "Prejšnji mesec"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking_type__combination_assignment__random
+msgid "Randomly: order is not important"
+msgstr "Naključno: vrstni red ni pomemben"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__partner_id
+msgid "Requester"
+msgstr "Zahtevatelj"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__requester_advice
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__requester_advice
+msgid "Requester Advice"
+msgstr "Nasvet za zahtevatelja"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking
+#: model:ir.module.category,name:resource_booking.category_resource_booking
+#: model:mail.activity.type,name:resource_booking.mail_activity_data_resource_booking
+msgid "Resource Booking"
+msgstr "Rezervacija virov"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Resource Booking Name"
+msgstr "Naziv rezervacije virov"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_type
+msgid "Resource Booking Type"
+msgstr "Tip rezervacije virov"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_main_menu
+msgid "Resource Bookings"
+msgstr "Rezervacije virov"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.menu_view_resource_calendar_leaves_search
+msgid "Resource Time Off"
+msgstr "Čas odsotnosti virov"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_calendar
+msgid "Resource Working Time"
+msgstr "Delovni čas vira"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_calendar_event__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_mail_activity__booking_id
+#: model:ir.model.fields.selection,name:resource_booking.selection__mail_activity_type__category__resource_booking
+msgid "Resource booking"
+msgstr "Rezervacija virov"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_res_partner__resource_booking_count
+#: model:ir.model.fields,field_description:resource_booking.field_res_users__resource_booking_count
+msgid "Resource booking count"
+msgstr "Število rezervacij virov"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_type_combination_rel
+msgid "Resource booking type relation with combinations"
+msgstr "Povezava tipa rezervacije virov s kombinacijami"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__type_rel_ids
+msgid "Resource booking types"
+msgstr "Tipi rezervacij virov"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__type_rel_ids
+msgid "Resource booking types where this combination is available."
+msgstr "Tipi rezervacij virov, kjer je ta kombinacija na voljo."
+
+#. module: resource_booking
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_combination_action
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Resource combinations"
+msgstr "Kombinacije virov"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__combination_rel_ids
+msgid "Resource combinations available for this type of bookings."
+msgstr "Kombinacije virov, ki so na voljo za ta tip rezervacij."
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_resource
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__resource_ids
+#: model:ir.ui.menu,name:resource_booking.menu_resource_resource
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Resources"
+msgstr "Viri"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__combination_id
+msgid "Resources combination"
+msgstr "Kombinacija virov"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__resource_ids
+msgid "Resources that must be free to be booked together."
+msgstr "Viri, ki morajo biti prosti, da se lahko skupaj rezervirajo."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_user_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_user_id
+msgid "Responsible User"
+msgstr "Odgovorni uporabnik"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__resource_calendar_id
+msgid "Restrict bookings to this schedule."
+msgstr "Omejite rezervacije na ta razpored."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Schedule"
+msgstr "Načrtuj"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+msgid "Schedule booking"
+msgstr "Načrtuj rezervacijo"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__scheduled
+msgid "Scheduled"
+msgstr "Načrtovano"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Scheduled or confirmed"
+msgstr "Načrtovano ali potrjeno"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/wizard/mail_activity_schedule.py:0
+msgid ""
+"Scheduling an activity using the booking is not possible on more than one "
+"record."
+msgstr ""
+"Načrtovanje aktivnosti z uporabo rezervacije ni mogoče na več kot enem "
+"zapisu."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_token
+msgid "Security Token"
+msgstr "Varnostni žeton"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__sequence
+msgid "Sequence"
+msgstr "Zaporedje"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Set pending"
+msgstr "Nastavi na čakanje"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Set to pending"
+msgstr "Nastavi na čakanje"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Settings"
+msgstr "Nastavitve"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Share"
+msgstr "Souporaba"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__slot_duration
+msgid "Slot Duration"
+msgstr "Trajanje termina"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking_type__combination_assignment__sorted
+msgid "Sorted: pick the first one that is free"
+msgstr "Razvrščeno: izberi prvo, ki je prosta"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__start
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Start"
+msgstr "Zagon"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Start date"
+msgstr "Začetni datum"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Start:"
+msgstr "Zagon:"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__state
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "State"
+msgstr "Stanje"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_state
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status na osnovi aktivnosti\n"
+"Zapadel: Rok je že prekoračen\n"
+"Danes: Datum aktivnosti je danes\n"
+"Planirano: Bodoče aktivnosti."
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__stop
+msgid "Stop"
+msgstr "Ustavi"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__categ_ids
+msgid "Tags"
+msgstr "Oznake"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__requester_advice
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__requester_advice
+msgid ""
+"Text that will appear by default in portal invitation emails and in calendar"
+" views for scheduling."
+msgstr ""
+"Besedilo, ki bo privzeto prikazano v e-poštnih vabilih portala in v "
+"koledarskih pogledih za načrtovanje."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "There are currently no bookings for your account."
+msgstr "Trenutno ni rezervacij za vaš račun."
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_type_action
+msgid ""
+"These records categorize resource bookings and apply restrictions to them, "
+"such as available resource combinations, availability schedules and interval"
+" duration."
+msgstr ""
+"Ti zapisi kategorizirajo rezervacije virov in nanje uveljavljajo omejitve, "
+"kot so razpoložljive kombinacije virov, razporedi razpoložljivosti in "
+"trajanje intervala."
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_combination_action
+msgid ""
+"These records define resource combinations that can be booked together in "
+"specified schedules and intervals."
+msgstr ""
+"Ti zapisi določajo kombinacije virov, ki jih je mogoče skupaj rezervirati v "
+"določenih razporedih in intervalih."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "This booking exceeded its modifications deadline."
+msgstr "Ta rezervacija je presegla rok za spremembe."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid ""
+"This will remove the associated meeting to unschedule the booking. Are you "
+"sure?"
+msgstr ""
+"To bo odstranilo povezani sestanek in umaknilo rezervacijo iz razporeda. Ste "
+"prepričani?"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid ""
+"Try next month\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
+msgstr ""
+"Poskusite naslednji mesec\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__type_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__type_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Type"
+msgstr "Tip"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_exception_decoration
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tip izjeme pri aktivnosti na zapisu."
+
+#. module: resource_booking
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_type_action
+#: model:ir.ui.menu,name:resource_booking.resource_booking_type_menu
+msgid "Types"
+msgstr "Tipi"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule"
+msgstr "Umakni iz razporeda"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule this booking and archive it."
+msgstr "Umakni to rezervacijo iz razporeda in jo arhiviraj."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule this booking."
+msgstr "Umakni to rezervacijo iz razporeda."
+
+#. module: resource_booking
+#: model:res.groups,name:resource_booking.group_user
+msgid "User"
+msgstr "Uporabnik"
+
+#. module: resource_booking
+#: model:res.groups,comment:resource_booking.group_user
+msgid "Users allowed to book resources"
+msgstr "Uporabniki, ki lahko rezervirajo vire"
+
+#. module: resource_booking
+#: model:res.groups,comment:resource_booking.group_manager
+msgid "Users allowed to manage resource booking configurations."
+msgstr "Uporabniki, ki lahko upravljajo nastavitve rezervacij virov."
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid "View"
+msgstr "Prikaz"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__website_message_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__website_message_ids
+msgid "Website Messages"
+msgstr "Sporočila spletne strani"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__website_message_ids
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__website_message_ids
+msgid "Website communication history"
+msgstr "Kronologija komunikacij spletne strani"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__combination_auto_assign
+msgid ""
+"When checked, resource combinations will be (un)assigned automatically based"
+" on their availability during the booking dates."
+msgstr ""
+"Ko je označeno, bodo kombinacije virov samodejno (od)dodeljene glede na "
+"njihovo razpoložljivost v času datumov rezervacije."
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_action
+msgid ""
+"When scheduled, resources will be blocked. When pending, it means the "
+"requester didn't place the booking yet."
+msgstr ""
+"Ko je načrtovano, bodo viri blokirani. Ko je na čakanju, to pomeni, da "
+"zahtevatelj rezervacije še ni oddal."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__modifications_deadline
+msgid ""
+"When this deadline has been exceeded, if a booking was not yet confirmed, it"
+" will be canceled automatically. Also, only booking managers will be able to"
+" unschedule or reschedule them. The value is expressed in hours."
+msgstr ""
+"Ko je ta rok presežen, se rezervacija, ki še ni potrjena, samodejno "
+"prekliče. Poleg tega bodo lahko rezervacije umaknili iz razporeda ali "
+"preplanirali le upravitelji rezervacij. Vrednost je izražena v urah."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__user_id
+msgid ""
+"Who organized this booking? Usually whoever created the record. It will "
+"appear as the calendar event organizer, when scheduled, and calendar "
+"notifications will be sent in his/her name."
+msgstr ""
+"Kdo je organiziral to rezervacijo? Običajno tisti, ki je ustvaril zapis. Ko "
+"je načrtovano, bo prikazan kot organizator koledarskega dogodka, obvestila "
+"koledarja pa bodo poslana v njegovem/njenem imenu."
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__partner_ids
+msgid "Who will attend this booking?"
+msgstr "Kdo se bo udeležil te rezervacije?"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.menu_resource_calendar
+msgid "Working Schedules"
+msgstr "Delovni urniki"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "You are about to confirm this booking:"
+msgstr "Nameravate potrditi to rezervacijo:"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/calendar_event.py:0
+msgid ""
+"You are not allowed to alter these bookings because they exceeded their modification deadlines:\n"
+"\n"
+"- %s"
+msgstr ""
+"Teh rezervacij ne smete spreminjati, ker so presegle svoje roke za "
+"spremembe:\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid "because you belong to the chosen resource combination:"
+msgstr "ker pripadate izbrani kombinaciji virov:"

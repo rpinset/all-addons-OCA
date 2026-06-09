@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-21 18:22+0000\n"
-"PO-Revision-Date: 2026-06-07 20:46+0000\n"
+"PO-Revision-Date: 2026-06-08 06:03+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -368,7 +368,7 @@ msgstr "<strong>Cena na enoto</strong>"
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__access_warning
 msgid "Access warning"
-msgstr "Opozorilo o dostopu"
+msgstr "Opozorilo ob dostopu"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction
@@ -1675,10 +1675,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stanje glede na aktivnosti\n"
-"Zapadlo: rok je že pretekel\n"
-"Danes: datum aktivnosti je danes\n"
-"Načrtovano: prihodnje aktivnosti."
+"Status glede na aktivnosti\n"
+"Prekoračeno: rok izvedbe je že prekoračen\n"
+"Danes: Datum aktivnosti je današnji dan\n"
+"Planirano: Bodoče aktivnosti."
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__price_subtotal

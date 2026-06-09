@@ -6,59 +6,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-06-08 16:46+0000\n"
+"Last-Translator: smaddlsoft <jm.veddeler@gmail.com>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_lock_to_date
 #. odoo-python
 #: code:addons/account_lock_to_date/models/res_company.py:0
 msgid "A new Hard Lock To Date must be prior (or equal) to the previous one."
 msgstr ""
+"Ein neues endgültiges Bis-Sperrdatum muss vor dem bisherigen liegen (oder "
+"diesem entsprechen)."
 
 #. module: account_lock_to_date
 #: model:ir.model,name:account_lock_to_date.model_account_lock_exception
 msgid "Account Lock Exception"
-msgstr ""
+msgstr "Sperrdatum-Ausnahme"
 
 #. module: account_lock_to_date
 #: model:ir.model,name:account_lock_to_date.model_account_update_lock_to_date
 msgid "Account Update Lock_to_date"
-msgstr ""
+msgstr "Aktualisierung Buchhaltungs-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model_terms:ir.ui.view,arch_db:account_lock_to_date.account_update_lock_to_date_form_view
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #. module: account_lock_to_date
 #: model:ir.model,name:account_lock_to_date.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Unternehmen"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__company_id
 msgid "Company"
-msgstr ""
+msgstr "Unternehmen"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Erstellt von"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Erstellt am"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigename"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_lock_exception__fiscalyear_lock_to_date
@@ -66,48 +70,48 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__fiscalyear_lock_to_date
 #: model:ir.model.fields.selection,name:account_lock_to_date.selection__account_lock_exception__lock_date_field__fiscalyear_lock_to_date
 msgid "Global Lock To Date"
-msgstr ""
+msgstr "Globales Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__hard_lock_to_date
 msgid "Hard Lock To Date"
-msgstr ""
+msgstr "Endgültiges Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_lock_to_date
 #: model:ir.model,name:account_lock_to_date.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Buchungssatz"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zuletzt aktualisiert von"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zuletzt aktualisiert am"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_update_lock_to_date__hard_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_res_company__hard_lock_to_date
 msgid "Like the \"Global Lock Date\", but no exceptions are possible."
-msgstr ""
+msgstr "Wie das \"Globale Sperrdatum\", jedoch ohne Möglichkeit für Ausnahmen."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_lock_exception__lock_date_field
 msgid "Lock Date Field"
-msgstr ""
+msgstr "Sperrdatum-Feld"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_update_lock_to_date__hard_lock_to_date
 msgid "Lock To Date"
-msgstr ""
+msgstr "Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_update_lock_to_date__fiscalyear_lock_to_date
@@ -116,12 +120,14 @@ msgid ""
 "No users can edit accounts posterior to this date. Use it for fiscal year "
 "locking for example."
 msgstr ""
+"Niemand kann Buchungen nach diesem Datum bearbeiten. Geeignet z. B. zur "
+"Sperre eines Geschäftsjahres."
 
 #. module: account_lock_to_date
 #. odoo-python
 #: code:addons/account_lock_to_date/models/account_lock_exception.py:0
 msgid "Operation not supported"
-msgstr ""
+msgstr "Vorgang wird nicht unterstützt"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_update_lock_to_date__purchase_lock_to_date
@@ -130,6 +136,8 @@ msgid ""
 "Prevents creation and modification of entries in purchase journals posterior"
 " to the defined date inclusive."
 msgstr ""
+"Verhindert das Erstellen und Ändern von Buchungen in Einkaufsjournalen ab "
+"einschließlich des festgelegten Datums."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_update_lock_to_date__sale_lock_to_date
@@ -138,6 +146,8 @@ msgid ""
 "Prevents creation and modification of entries in sales journals posterior to"
 " the defined date inclusive."
 msgstr ""
+"Verhindert das Erstellen und Ändern von Buchungen in Verkaufsjournalen ab "
+"einschließlich des festgelegten Datums."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_lock_exception__purchase_lock_to_date
@@ -145,7 +155,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__purchase_lock_to_date
 #: model:ir.model.fields.selection,name:account_lock_to_date.selection__account_lock_exception__lock_date_field__purchase_lock_to_date
 msgid "Purchase Lock To Date"
-msgstr ""
+msgstr "Einkaufs-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_account_lock_exception__sale_lock_to_date
@@ -153,18 +163,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__sale_lock_to_date
 #: model:ir.model.fields.selection,name:account_lock_to_date.selection__account_lock_exception__lock_date_field__sale_lock_to_date
 msgid "Sales Lock To Date"
-msgstr ""
+msgstr "Verkaufs-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_lock_exception__lock_date_field
 msgid "Technical field identifying the changed lock date"
-msgstr ""
+msgstr "Technisches Feld zur Identifizierung des geänderten Sperrdatums"
 
 #. module: account_lock_to_date
 #. odoo-python
 #: code:addons/account_lock_to_date/models/res_company.py:0
 msgid "The Hard Lock Date cannot be removed."
-msgstr ""
+msgstr "Das endgültige Sperrdatum kann nicht entfernt werden."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_lock_exception__fiscalyear_lock_to_date
@@ -172,6 +182,8 @@ msgid ""
 "The date the Global Lock To Date is set to by this exception. If the lock to"
 " date is not changed it is set to False."
 msgstr ""
+"Datum, auf das das globale Bis-Sperrdatum durch diese Ausnahme gesetzt wird. "
+"Bleibt das Bis-Sperrdatum unverändert, ist der Wert False."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_lock_exception__purchase_lock_to_date
@@ -179,6 +191,8 @@ msgid ""
 "The date the Purchase Lock To Date is set to by this exception. If the lock "
 "to date is not changed it is set to False."
 msgstr ""
+"Datum, auf das das Einkaufs-Bis-Sperrdatum durch diese Ausnahme gesetzt "
+"wird. Bleibt das Bis-Sperrdatum unverändert, ist der Wert False."
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,help:account_lock_to_date.field_account_lock_exception__sale_lock_to_date
@@ -186,6 +200,8 @@ msgid ""
 "The date the Sale Lock To Date is set to by this exception. If the lock to "
 "date is not changed it is set to False."
 msgstr ""
+"Datum, auf das das Verkaufs-Bis-Sperrdatum durch diese Ausnahme gesetzt "
+"wird. Bleibt das Bis-Sperrdatum unverändert, ist der Wert False."
 
 #. module: account_lock_to_date
 #. odoo-python
@@ -194,43 +210,45 @@ msgid ""
 "There are still unposted entries in the period to date you want to hard "
 "lock. You should either post or delete them."
 msgstr ""
+"Im Zeitraum bis zu dem von Ihnen gewünschten endgültigen Sperrdatum gibt es "
+"noch unverbuchte Buchungen. Bitte verbuchen oder löschen Sie diese."
 
 #. module: account_lock_to_date
 #: model_terms:ir.ui.view,arch_db:account_lock_to_date.account_update_lock_to_date_form_view
 msgid "Update"
-msgstr ""
+msgstr "Aktualisieren"
 
 #. module: account_lock_to_date
 #: model:ir.actions.act_window,name:account_lock_to_date.account_update_lock_to_date_act_window
 #: model:ir.ui.menu,name:account_lock_to_date.account_update_lock_to_date_menu
 msgid "Update accounting lock to dates"
-msgstr ""
+msgstr "Buchhaltungs-Bis-Sperrdaten aktualisieren"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__user_fiscalyear_lock_to_date
 msgid "User Fiscalyear Lock To Date"
-msgstr ""
+msgstr "Benutzerspezifisches Geschäftsjahres-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__user_hard_lock_to_date
 msgid "User Hard Lock To Date"
-msgstr ""
+msgstr "Benutzerspezifisches endgültiges Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__user_purchase_lock_to_date
 msgid "User Purchase Lock To Date"
-msgstr ""
+msgstr "Benutzerspezifisches Einkaufs-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #: model:ir.model.fields,field_description:account_lock_to_date.field_res_company__user_sale_lock_to_date
 msgid "User Sale Lock To Date"
-msgstr ""
+msgstr "Benutzerspezifisches Verkaufs-Bis-Sperrdatum"
 
 #. module: account_lock_to_date
 #. odoo-python
 #: code:addons/account_lock_to_date/wizards/account_update_lock_to_date.py:0
 msgid "You are not allowed to execute this action."
-msgstr ""
+msgstr "Sie haben keine Berechtigung für diese Aktion."
 
 #. module: account_lock_to_date
 #. odoo-python
@@ -239,3 +257,5 @@ msgid ""
 "You cannot add/modify entries posterior to and inclusive of: "
 "%(lock_date_info)s."
 msgstr ""
+"Buchungen ab einschließlich %(lock_date_info)s können nicht hinzugefügt oder "
+"geändert werden."

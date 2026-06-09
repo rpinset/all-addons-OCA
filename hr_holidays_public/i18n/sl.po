@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-03 03:37+0000\n"
-"PO-Revision-Date: 2026-06-02 19:09+0000\n"
+"PO-Revision-Date: 2026-06-08 08:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -33,7 +33,7 @@ msgstr "Stik"
 #. module: hr_holidays_public
 #: model:ir.ui.menu,name:hr_holidays_public.menu_create_next_year_public_holidays
 msgid "Create Next Year Public Holidays"
-msgstr "Ustvari javne praznike za naslednje leto"
+msgstr "Ustvari praznike za naslednje leto"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_employee
@@ -61,7 +61,7 @@ msgstr "Javni praznik danes"
 #: model:ir.ui.menu,name:hr_holidays_public.menu_holidays_public_view
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.edit_holiday_status_form
 msgid "Public Holidays"
-msgstr "Javni prazniki"
+msgstr "Prazniki"
 
 #. module: hr_holidays_public
 #: model:ir.ui.menu,name:hr_holidays_public.menu_hr_public_holidays
@@ -76,12 +76,12 @@ msgstr "Delovni čas vira"
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_leave
 msgid "Time Off"
-msgstr "Prosti čas"
+msgstr "Odsotnost"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_leave_type
 msgid "Time Off Type"
-msgstr "Tip prostega časa"
+msgstr "Tip odsotnosti"
 
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_res_users
