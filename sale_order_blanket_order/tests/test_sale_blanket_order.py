@@ -10,6 +10,45 @@ from .common import SaleOrderBlanketOrderCase
 
 
 class TestSaleBlanketOrder(SaleOrderBlanketOrderCase):
+    def test_action_view_call_off_orders_addresses(self):
+        partner_invoice = self.env["res.partner"].create(
+            {
+                "name": "Alternative Invoice Address",
+                "type": "invoice",
+                "parent_id": self.partner.id,
+            }
+        )
+        partner_shipping = self.env["res.partner"].create(
+            {
+                "name": "Alternative Shipping Address",
+                "type": "delivery",
+                "parent_id": self.partner.id,
+            }
+        )
+        self.blanket_so.write(
+            {
+                "partner_invoice_id": partner_invoice.id,
+                "partner_shipping_id": partner_shipping.id,
+            }
+        )
+
+        action = self.blanket_so.action_view_call_off_orders()
+        action_context = action.get("context", {})
+        with Form(self.env["sale.order"].with_context(**action_context)) as so_form:
+            with so_form.order_line.new() as line:
+                line.product_id = self.product_1
+                line.product_uom_qty = 1.0
+            call_off_order = so_form.save()
+
+        self.assertEqual(
+            call_off_order.partner_invoice_id,
+            partner_invoice,
+        )
+        self.assertEqual(
+            call_off_order.partner_shipping_id,
+            partner_shipping,
+        )
+
     def test_confirm_start_date_required(self):
         order = self.env["sale.order"].create(
             {

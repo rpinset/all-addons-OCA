@@ -1803,6 +1803,9 @@ and promote its widespread use.
 ## From OCA/crm
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# crm
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/crm&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/crm/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/crm/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/crm/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/crm/actions/workflows/test.yml?query=branch%3A16.0)
@@ -1810,8 +1813,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/crm-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/crm-16-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# crm
 
 TODO: add repo description.
 
@@ -2391,10 +2392,12 @@ addon | version | maintainers | summary
 [account_edi_no_autocreate_partner](account_edi_no_autocreate_partner/) | 16.0.1.0.0 |  | Prevents auto-creation of partners during invoice import by assigning unmatched invoices to a protected “Partner Not Found” contact.
 [account_edi_no_product_name_match](account_edi_no_product_name_match/) | 16.0.1.0.0 |  | Disable product matching by name in Account EDI imports
 [account_edi_retrieve_partner](account_edi_retrieve_partner/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module extends EDI invoice import process by improving how vendor partners are identified from the XML file.
+[account_edi_retrieve_partner_from_purchase_order](account_edi_retrieve_partner_from_purchase_order/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Retrieves the partner from the related purchase order if set in UBL document
 [account_edi_ubl_cii_additional_document](account_edi_ubl_cii_additional_document/) | 16.0.1.0.0 |  | Extends account_edi_ubl_cii to import all attachments from UBL invoices (not only PDFs) and link them to the vendor bill.
 [account_edi_ubl_cii_check_total](account_edi_ubl_cii_check_total/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon extends the UBL invoice import process to automatically populate the suppliers check total field based on the value found in the XML file.
 [account_edi_ubl_cii_invoice_line_name_enhance](account_edi_ubl_cii_invoice_line_name_enhance/) | 16.0.1.0.0 |  | This module improves invoice line label generation when importing UBL vendor bills by including the product name when it is not already present.
 [account_edi_ubl_cii_purchase_match](account_edi_ubl_cii_purchase_match/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Extend UBL vendor bill import to automatically match and link bill lines to purchase order lines using the OrderReference and product label.
+[account_edi_ubl_cii_purchase_match_product_packaging](account_edi_ubl_cii_purchase_match_product_packaging/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Allows retrieving the correct UoM and packaging from UNECE codes when matching invoice lines with purchase orders
 [account_edi_ubl_cii_retrieve_tax](account_edi_ubl_cii_retrieve_tax/) | 16.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Match taxes on UBL import using UNECE tax codes
 [account_edi_ubl_cii_supplier_invoice_number](account_edi_ubl_cii_supplier_invoice_number/) | 16.0.1.0.0 |  | This addon extends the UBL invoice import process to automatically populate the suppliers invoice number based on the value found in the XML file.
 [account_edi_ubl_move_line_uom_and_packaging_unece](account_edi_ubl_move_line_uom_and_packaging_unece/) | 16.0.1.0.0 |  | Adds UNECE-based detection of UoM and packaging on invoice lines during UBL import.
@@ -5748,7 +5751,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.4.6.0 |  | A property management system
+[pms](pms/) | 16.0.4.8.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.2.3.0 |  | PMS Spanish Adaptation
@@ -7022,7 +7025,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[sale_order_blanket_order](sale_order_blanket_order/) | 16.0.1.2.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
+[sale_order_blanket_order](sale_order_blanket_order/) | 16.0.1.2.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage blanket order and call of order
 [sale_order_blanket_order_sale_margin](sale_order_blanket_order_sale_margin/) | 16.0.1.0.0 |  | Ensure sale margins are properly set on call off order lines
 [sale_order_blanket_order_stock_prebook](sale_order_blanket_order_stock_prebook/) | 16.0.1.0.1 |  | Allow to prebook stock for blanket order
 [sale_order_blanket_order_stock_prebook_release](sale_order_blanket_order_stock_prebook_release/) | 16.0.1.2.0 |  | Ensure that the date priotity when releasing qty is the start date of the blanker order
@@ -8922,8 +8925,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 16.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
-[fs_attachment_s3](fs_attachment_s3/) | 16.0.2.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
+[fs_attachment](fs_attachment/) | 16.0.3.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
+[fs_attachment_environment](fs_attachment_environment/) | 16.0.1.0.0 |  | Allows to use server environment with fs storage attachment
+[fs_attachment_s3](fs_attachment_s3/) | 16.0.3.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
+[fs_attachment_s3_environment](fs_attachment_s3_environment/) | 16.0.1.0.0 |  | Allows to use server environment with fs storage attachment S3
 [fs_base_multi_image](fs_base_multi_image/) | 16.0.1.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 16.0.1.0.7 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
@@ -8934,8 +8939,10 @@ addon | version | maintainers | summary
 [fs_product_multi_image](fs_product_multi_image/) | 16.0.1.1.6 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 16.0.1.0.3 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
 [fs_product_public_category_multi_image](fs_product_public_category_multi_image/) | 16.0.1.0.1 |  | Manage multi images from extenal file system on eCommerce public categories
-[fs_storage](fs_storage/) | 16.0.1.5.0 |  | Implement the concept of Storage with amazon S3, sftp...
-[fs_storage_backup](fs_storage_backup/) | 16.0.1.0.1 |  | Filesystem Storage Backup
+[fs_storage](fs_storage/) | 16.0.2.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_storage_backup](fs_storage_backup/) | 16.0.2.0.0 |  | Filesystem Storage Backup
+[fs_storage_backup_environment](fs_storage_backup_environment/) | 16.0.1.0.0 |  | Allows to use server environment with fs storage attachment
+[fs_storage_environment](fs_storage_environment/) | 16.0.1.0.0 |  | Allows to use server environment with fs storage
 [image_tag](image_tag/) | 16.0.1.0.1 |  | Image tag model
 [storage_backend](storage_backend/) | 16.0.1.1.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend_sftp](storage_backend_sftp/) | 16.0.1.0.2 |  | Implement SFTP Storage
@@ -9679,7 +9686,7 @@ addon | version | maintainers | summary
 [sale_stock_release_channel_delivery_date](sale_stock_release_channel_delivery_date/) | 16.0.1.1.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Compute expected date based on available release channels
 [sale_stock_release_channel_partner_by_date](sale_stock_release_channel_partner_by_date/) | 16.0.1.1.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Release channels integration with Sales
 [sale_stock_release_channel_partner_by_date_delivery](sale_stock_release_channel_partner_by_date_delivery/) | 16.0.1.1.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Filters channels on sales based on selected carrier.
-[shopfloor](shopfloor/) | 16.0.2.17.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 16.0.2.18.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 16.0.1.2.2 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 16.0.1.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_gs1](shopfloor_gs1/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Integrate GS1 barcode scan into Shopfloor app
@@ -9689,8 +9696,8 @@ addon | version | maintainers | summary
 [shopfloor_product_dimension](shopfloor_product_dimension/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allow to enrich product available details about its dimension in shopfloor
 [shopfloor_reception](shopfloor_reception/) | 16.0.1.10.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
 [shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.4.0 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
-[shopfloor_reception_packaging_dimension](shopfloor_reception_packaging_dimension/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Collect Packaging Dimension from the Reception scenario
-[shopfloor_reception_packaging_dimension_mobile](shopfloor_reception_packaging_dimension_mobile/) | 16.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Frontend for the packaging dimension on reception scenario
+[shopfloor_reception_packaging_dimension](shopfloor_reception_packaging_dimension/) | 16.0.1.1.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Collect Packaging Dimension from the Reception scenario
+[shopfloor_reception_packaging_dimension_mobile](shopfloor_reception_packaging_dimension_mobile/) | 16.0.1.1.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Frontend for the packaging dimension on reception scenario
 [shopfloor_reception_putinpack_restriction](shopfloor_reception_putinpack_restriction/) | 16.0.1.1.0 |  | Restrict the use of packages in shopfloor reception
 [shopfloor_reception_refund_return](shopfloor_reception_refund_return/) | 16.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Mark created return as to refund
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Integrate rest_log into Shopfloor app
@@ -9705,7 +9712,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_creation](stock_picking_batch_creation/) | 16.0.2.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Create a batch of pickings to be processed all together
 [stock_picking_completion_info](stock_picking_completion_info/) | 16.0.1.0.1 |  | Display on current document completion information according to next operations
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 16.0.1.0.0 |  | Define different shipping policies according to picking type
-[stock_release_channel](stock_release_channel/) | 16.0.3.1.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Manage workload in WMS with release channels
+[stock_release_channel](stock_release_channel/) | 16.0.3.1.2 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Manage workload in WMS with release channels
 [stock_release_channel_auto_release](stock_release_channel_auto_release/) | 16.0.1.1.0 |  | Add an automatic release mode to the release channel
 [stock_release_channel_batch_mode_commercial_partner](stock_release_channel_batch_mode_commercial_partner/) | 16.0.1.0.2 |  | Release pickings into channels by batch of same commercial entity
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Add the cutoff time to the release channel
@@ -9730,7 +9737,7 @@ addon | version | maintainers | summary
 [stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.2.1.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Release channel with shipment lead time
 [stock_release_channel_show_volume](stock_release_channel_show_volume/) | 16.0.1.1.0 |  | Display volumes of stock release channels
 [stock_release_channel_show_weight](stock_release_channel_show_weight/) | 16.0.1.1.0 |  | Display weights of stock release channels
-[stock_release_channel_warehouse_calendar](stock_release_channel_warehouse_calendar/) | 16.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Glue module between release channel and warehouse calendar
+[stock_release_channel_warehouse_calendar](stock_release_channel_warehouse_calendar/) | 16.0.1.0.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Glue module between release channel and warehouse calendar
 [stock_storage_type](stock_storage_type/) | 16.0.2.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Manage packages and locations storage types
 [stock_storage_type_putaway_abc](stock_storage_type_putaway_abc/) | 16.0.1.0.0 |  | Advanced storage strategy ABC for WMS
 [stock_warehouse_flow](stock_warehouse_flow/) | 16.0.1.1.0 |  | Configure routing flow for stock moves
