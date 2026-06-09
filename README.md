@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-07 21:38 UTC** (elapsed 76s)
+Last build: **2026-06-09 04:47 UTC** (elapsed 117s)
 
 - Repos integrated: **140**
 - Canonical modules: **2902**
@@ -133,7 +133,7 @@ Last build: **2026-06-07 21:38 UTC** (elapsed 76s)
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | ca8a787 2025-10-15 mymage Translated using Weblate (Italian) |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | ea13ae4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | f9a76b6 2026-05-26 mymage Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 8960772 2026-06-08 OCA-git-bot Merge PR #2593 into 14.0 |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | cfd0d59 2026-06-07 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [storage](https://github.com/OCA/storage) | 19 | c0e1f39 2025-10-20 OCA-git-bot [BOT] post-merge updates |
 | [survey](https://github.com/OCA/survey) | 8 | 53c9f49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
