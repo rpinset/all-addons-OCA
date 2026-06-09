@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-06-07 21:43 UTC** (elapsed 106s)
+Last build: **2026-06-09 04:51 UTC** (elapsed 72s)
 
 - Repos integrated: **126**
-- Canonical modules: **1878**
+- Canonical modules: **1879**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **128**
 
@@ -28,7 +28,7 @@ Last build: **2026-06-07 21:43 UTC** (elapsed 106s)
 | [bank-payment](https://github.com/OCA/bank-payment) | 19 | 85ed07a 2026-05-25 Peter Schubert Translated using Weblate (German) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 16 | 04f7058 2026-05-25 Peter Schubert Translated using Weblate (German) |
 | [brand](https://github.com/OCA/brand) | 7 | 054df9c 2026-05-12 mymage Translated using Weblate (Italian) |
-| [calendar](https://github.com/OCA/calendar) | 1 | 466140f 2026-03-17 OCA-git-bot [BOT] post-merge updates |
+| [calendar](https://github.com/OCA/calendar) | 2 | c160c0f 2026-06-08 mymage Translated using Weblate (Italian) |
 | [commission](https://github.com/OCA/commission) | 7 | b4700d5 2026-04-13 mymage Translated using Weblate (Italian) |
 | [community-data-files](https://github.com/OCA/community-data-files) | 12 | 917f7fa 2026-03-11 mymage Translated using Weblate (Italian) |
 | [connector](https://github.com/OCA/connector) | 6 | d14307d 2026-01-29 OCA-git-bot [BOT] post-merge updates |
@@ -43,7 +43,7 @@ Last build: **2026-06-07 21:43 UTC** (elapsed 106s)
 | [ddmrp](https://github.com/OCA/ddmrp) | 12 | 7daa8cb 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 34 | 3b5014f 2026-03-11 mymage Translated using Weblate (Italian) |
 | [dms](https://github.com/OCA/dms) | 4 | 5bcd966 2026-04-14 mymage Translated using Weblate (Italian) |
-| [e-commerce](https://github.com/OCA/e-commerce) | 35 | f6096a0 2026-06-05 OCA-git-bot [BOT] post-merge updates |
+| [e-commerce](https://github.com/OCA/e-commerce) | 35 | 43699e3 2026-06-08 Weblate Update translation files |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 1c30d01 2026-02-04 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 12 | f472fc2 2026-05-08 Peter Schubert Translated using Weblate (German) |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | 3 | 6406cdf 2025-10-19 OCA-git-bot [BOT] post-merge updates |
