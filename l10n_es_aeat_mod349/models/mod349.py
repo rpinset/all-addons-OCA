@@ -233,7 +233,9 @@ class Mod349(models.Model):
                 original_details = original_details.filtered(
                     lambda d, report=report: d.report_id == report
                 )
-                origin_amount = sum(original_details.mapped("amount_untaxed"))
+                origin_amount = (
+                    original_details.partner_record_id.total_operation_amount
+                )
                 period_type = report.period_type
                 year = str(report.year)
                 # If there are intermediate periods between the original
@@ -285,9 +287,9 @@ class Mod349(models.Model):
                     period_type = month
             key = (partner, op_key, period_type, year)
             key_vals = data.setdefault(
-                key, {"original_amount": 0, "refund_details": refund_detail_obj}
+                key,
+                {"original_amount": origin_amount, "refund_details": refund_detail_obj},
             )
-            key_vals["original_amount"] += origin_amount
             key_vals["refund_details"] += refund_details
         for key, key_vals in data.items():
             partner, op_key, period_type, year = key
@@ -321,13 +323,10 @@ class Mod349(models.Model):
     def _get_taxes(self):
         """Obtain all the taxes to be considered for 349."""
         map_lines = self.env["aeat.349.map.line"].search([])
-        tax_templates = map_lines.mapped("tax_xmlid_ids")
+        tax_templates = map_lines.tax_xmlid_ids
         if not tax_templates:
             raise exceptions.UserError(_("No Tax Mapping was found"))
-        taxes_ids = self.env["aeat.349.map.line"]._get_tax_ids_from_xmlids(
-            tax_templates, self.company_id
-        )
-        return self.env["account.tax"].search([("id", "in", taxes_ids)])
+        return self.company_id._get_taxes_from_xmlids(tax_templates.mapped("name"))
 
     def _cleanup_report(self):
         """Remove previous partner records and partner refunds in report."""

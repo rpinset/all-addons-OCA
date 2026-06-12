@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="email_template_form_filter_domain" model="ir.ui.view">
+        <field name="name">mail.template.form.filter.domain</field>
+        <field name="model">mail.template</field>
+        <field name="inherit_id" ref="mail.email_template_form" />
+        <field name="arch" type="xml">
+            <field name="model_id" position="after">
+                <field
+                    name="filter_model"
+                    string="Restrict to"
+                    invisible="not model_id"
+                />
+                <field
+                    name="filter_domain"
+                    widget="domain"
+                    options="{'model': 'model', 'in_dialog': True}"
+                    invisible="not filter_model"
+                    nolabel="1"
+                    colspan="2"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

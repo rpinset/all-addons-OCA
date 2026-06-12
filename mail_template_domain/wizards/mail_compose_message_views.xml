@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mail_compose_message_form_filter_domain" model="ir.ui.view">
+        <field name="name">mail.compose.message.form.filter.domain</field>
+        <field name="model">mail.compose.message</field>
+        <field name="inherit_id" ref="mail.email_compose_message_wizard_form" />
+        <field name="arch" type="xml">
+            <field name="res_ids" position="after">
+                <field name="domain_template_id" invisible="1" />
+            </field>
+        </field>
+    </record>
+</odoo>

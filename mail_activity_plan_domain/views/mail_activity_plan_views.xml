@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add domain field to the activity plan form view -->
+    <record id="mail_activity_plan_view_form_domain" model="ir.ui.view">
+            <field name="name">mail.activity.plan.view.form.domain</field>
+            <field name="model">mail.activity.plan</field>
+            <field name="inherit_id" ref="mail.mail_activity_plan_view_form" />
+            <field name="arch" type="xml">
+                <!-- Add domain field after res_model inside the notebook page -->
+                <xpath expr="//group[@name='plan_res_model']" position="after">
+                    <group name="plan_domain" invisible="not res_model">
+                        <field
+                        name="domain"
+                        widget="domain"
+                        options="{'model': 'res_model'}"
+                    />
+                    </group>
+                </xpath>
+            </field>
+    </record>
+</odoo>
