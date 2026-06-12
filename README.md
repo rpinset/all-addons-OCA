@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-09 04:50 UTC** (elapsed 70s)
+Last build: **2026-06-12 15:56 UTC** (elapsed 70s)
 
 - Repos integrated: **117**
 - Canonical modules: **2093**
@@ -50,7 +50,7 @@ Last build: **2026-06-09 04:50 UTC** (elapsed 70s)
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 989fe00 2026-01-26 OCA-git-bot [BOT] post-merge updates |
 | [hr](https://github.com/OCA/hr) | 32 | 95fc148 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 11 | ca17736 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [hr-expense](https://github.com/OCA/hr-expense) | 23 | f99355e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [hr-expense](https://github.com/OCA/hr-expense) | 23 | b49dd6e 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 7 | 3a05ba6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [interface-git](https://github.com/OCA/interface-git) | 2 | 7bb75f2 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 7 | a59642c 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -100,7 +100,7 @@ Last build: **2026-06-09 04:50 UTC** (elapsed 70s)
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | c858e56 2026-06-05 Weblate Update translation files |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | 6c02b1a 2026-06-11 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
