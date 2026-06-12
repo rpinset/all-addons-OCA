@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-06-09 04:48 UTC** (elapsed 191s)
+Last build: **2026-06-12 15:53 UTC** (elapsed 169s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -53,7 +53,7 @@ Last build: **2026-06-09 04:48 UTC** (elapsed 191s)
 | [fleet](https://github.com/OCA/fleet) | 16 | b4b1fbd 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 15 | 83a10be 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 89d6d40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [hr](https://github.com/OCA/hr) | 70 | 6f9a031 2025-10-14 OCA-git-bot [UPD] README.rst |
+| [hr](https://github.com/OCA/hr) | 70 | 7788796 2026-06-10 mymage Translated using Weblate (Italian) |
 | [interface-git](https://github.com/OCA/interface-git) | 3 | 7905718 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 6 | a69e2ef 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [iot](https://github.com/OCA/iot) | 6 | 089eb90 2026-03-10 mymage Translated using Weblate (Italian) |
@@ -87,7 +87,7 @@ Last build: **2026-06-09 04:48 UTC** (elapsed 191s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 7 | e3a7de4 2025-02-01 oca-ci [UPD] Update pim.pot |
 | [operating-unit](https://github.com/OCA/operating-unit) | 26 | 63d82bc 2024-10-03 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 64 | f7de324 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [pos](https://github.com/OCA/pos) | 82 | 1f1a5b9 2025-10-01 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 82 | b0ed243 2026-06-10 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 56 | d0b2171 2026-05-12 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | fa25c0b 2025-02-12 mymage Translated using Weblate (Italian) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | e8dc020 2024-05-08 mymage Translated using Weblate (Italian) |
