@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="incident_type_customer_not_available_demo" model="route.incident.type">
+        <field name="name">Customer Not Available</field>
+        <field name="rescheduled" eval="True" />
+    </record>
+    <record id="incident_type_traffic_delay_demo" model="route.incident.type">
+        <field name="name">Traffic Delay</field>
+        <field name="rescheduled" eval="False" />
+    </record>
+</odoo>

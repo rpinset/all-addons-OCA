@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form_route" model="ir.ui.view">
+        <field name="name">res.partner.form.route</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page
+                    name="route_planning"
+                    string="Route Planning"
+                    groups="route_planning.group_route_planning_user"
+                >
+                    <group>
+                        <group string="Geolocation">
+                            <div>
+                                <div name="geo_localize_button">
+                                    <button
+                                        invisible="partner_latitude != 0 or partner_longitude != 0"
+                                        icon="fa-gear"
+                                        string="Compute based on address"
+                                        title="Compute Localization"
+                                        name="geo_localize"
+                                        type="object"
+                                        class="btn btn-link p-0"
+                                    />
+                                    <button
+                                        invisible="partner_latitude == 0 and partner_longitude == 0"
+                                        icon="fa-refresh"
+                                        string="Refresh"
+                                        title="Refresh Localization"
+                                        name="geo_localize"
+                                        type="object"
+                                        class="btn btn-link p-0"
+                                    />
+                                </div>
+                            </div>
+                            <field
+                                name="partner_latitude"
+                                string="Latitude"
+                                class="oe_inline"
+                            />
+                            <field
+                                name="partner_longitude"
+                                string="Longitude"
+                                class="oe_inline"
+                            />
+                            <field
+                                name="date_localization"
+                                string="Updated on"
+                                class="oe_inline"
+                                invisible="not date_localization"
+                            />
+                        </group>
+                        <group string="Route Planning Info">
+                            <field
+                                name="route_area_id"
+                                options="{'no_create': True, 'no_open': True}"
+                            />
+                        </group>
+                    </group>
+                    <group string="Visit Windows">
+                        <field
+                            name="route_visitwindow_template_id"
+                            options="{'no_create': True, 'no_open': True}"
+                        />
+                        <field name="route_visitwindow_ids" nolabel="1">
+                            <list editable="bottom">
+                                <field name="day_of_week" />
+                                <field name="time_from" widget="float_time" />
+                                <field name="time_to" widget="float_time" />
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_partner_geolocalize_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base_geolocalize.view_crm_partner_geo_form" />
+        <field name="priority" eval="100" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='geo_location']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

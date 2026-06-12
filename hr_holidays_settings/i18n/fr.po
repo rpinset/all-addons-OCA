@@ -11,20 +11,20 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-28 01:44+0000\n"
-"PO-Revision-Date: 2019-05-23 20:19+0000\n"
-"Last-Translator: Kévin Allard <kallard@efficom-lille.com>\n"
+"PO-Revision-Date: 2026-06-12 09:46+0000\n"
+"Last-Translator: Yann Papouin <ypa@decgroupe.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: hr_holidays_settings
 #: model:ir.actions.act_window,name:hr_holidays_settings.hr_holidays_config_settings_action
 msgid "Configure HR Holidays"
-msgstr ""
+msgstr "Configuration RH des congés"
 
 #. module: hr_holidays_settings
 #: model_terms:ir.ui.view,arch_db:hr_holidays_settings.res_config_settings_view_form

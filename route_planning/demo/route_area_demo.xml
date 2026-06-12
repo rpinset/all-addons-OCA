@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="route_area_north_demo" model="route.area">
+        <field name="code">RA1</field>
+        <field name="name">North</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="time_start">8.5</field>
+    </record>
+    <record id="route_area_south_demo" model="route.area">
+        <field name="code">RA2</field>
+        <field name="name">South</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="time_start">9</field>
+    </record>
+</odoo>

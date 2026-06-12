@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add domain column (optional) to the inline template tree -->
+    <record id="mail_activity_plan_view_form_template_domain" model="ir.ui.view">
+        <field name="name">mail.activity.plan.view.form.template.domain</field>
+        <field name="model">mail.activity.plan</field>
+        <field name="inherit_id" ref="mail.mail_activity_plan_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='template_ids']//list" position="inside">
+                <field name="domain" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Add domain field to the standalone template form view -->
+    <record id="mail_activity_plan_template_view_form_domain" model="ir.ui.view">
+        <field name="name">mail.activity.plan.template.view.form.domain</field>
+        <field name="model">mail.activity.plan.template</field>
+        <field name="inherit_id" ref="mail.mail_activity_plan_template_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='note']" position="after">
+                <field
+                    name="domain"
+                    widget="domain"
+                    options="{'model': 'res_model'}"
+                    invisible="not res_model"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

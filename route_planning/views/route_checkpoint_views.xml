@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_checkpoint_list" model="ir.ui.view">
+        <field name="name">route.checkpoint.list</field>
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="route_id" />
+                <field name="user_id" options="{'no_open': True}" />
+                <field name="schedule_date" />
+                <field name="schedule_time" widget="float_time" />
+                <field name="partner_id" />
+                <field name="latitude" optional="show" />
+                <field name="longitude" optional="show" />
+                <field
+                    name="origin_checkpoint_id"
+                    optional="show"
+                    options="{'no_open': True}"
+                />
+                <field name="note" optional="show" />
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    options="{'no_open': True}"
+                />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-info="state == 'planned'"
+                    decoration-success="state == 'done'"
+                    decoration-warning="state == 'incident'"
+                />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_route_checkpoint_form" model="ir.ui.view">
+        <field name="name">route.checkpoint.form</field>
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <form create="0">
+                <header>
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Mark Done"
+                        confirm="Do you want to mark this checkpoint as done?"
+                        class="btn-success"
+                        invisible="state != 'planned'"
+                        groups="route_planning.group_route_planning_user"
+                    />
+                    <button
+                        name="action_back_to_planned"
+                        type="object"
+                        string="Back to Planned"
+                        confirm="Do you want to set this checkpoint back to planned?"
+                        icon="fa-undo"
+                        invisible="state not in ['done', 'incident'] or route_state == 'done'"
+                        groups="route_planning.group_route_planning_user"
+                    />
+                    <button
+                        name="%(action_route_create_incident)d"
+                        type="action"
+                        string="Create Incident"
+                        class="btn-warning"
+                        invisible="state != 'planned'"
+                        groups="route_planning.group_route_planning_user"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,planned,done"
+                    />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field
+                                name="route_id"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True}"
+                            />
+                            <field
+                                name="partner_id"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True}"
+                            />
+                            <field name="latitude" readonly="state != 'draft'" />
+                            <field name="longitude" readonly="state != 'draft'" />
+                        </group>
+                        <group>
+                            <field
+                                name="user_id"
+                                options="{'no_create': True, 'no_open': True}"
+                            />
+                            <field name="schedule_date" />
+                            <field
+                                name="schedule_time"
+                                widget="float_time"
+                                readonly="state in ['done', 'incident']"
+                            />
+                            <field name="date_done" invisible="not date_done" />
+                            <field
+                                name="incident_type_id"
+                                options="{'no_create': True, 'no_open': True}"
+                                invisible="not incident_type_id"
+                            />
+                            <field
+                                name="origin_checkpoint_id"
+                                invisible="not origin_checkpoint_id"
+                                options="{'no_create': True}"
+                            />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                                options="{'no_create': True, 'no_open': True}"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="notes" string="Notes">
+                            <field
+                                name="note"
+                                readonly="state in ['done', 'incident']"
+                            />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <record id="route_checkpoint_view_calendar" model="ir.ui.view">
+        <field name="name">route.checkpoint.view.calendar</field>
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <calendar
+                date_start="schedule_date"
+                color="user_id"
+                create="0"
+                quick_create="0"
+                mode="month"
+                hide_time="true"
+            >
+                <field name="route_id" options="{'no_open': True}" />
+                <field name="user_id" options="{'no_open': True}" filters="1" />
+                <field name="partner_id" options="{'no_open': True}" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-info="state == 'planned'"
+                    decoration-success="state == 'done'"
+                    decoration-warning="state == 'incident'"
+                />
+            </calendar>
+        </field>
+    </record>
+
+    <record id="route_checkpoint_view_kanban" model="ir.ui.view">
+        <field name="name">route.checkpoint.view.kanban</field>
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <kanban
+                class="o_kanban_mobile"
+                create="0"
+                group_create="0"
+                records_draggable="0"
+            >
+                <progressbar
+                    field="state"
+                    colors='{"planned": "info", "done": "success", "incident": "warning"}'
+                />
+                <templates>
+                    <t t-name="card">
+                        <main class="pe-2">
+                            <field name="partner_id" class="fw-bold fs-5 ms-1" />
+                        </main>
+                        <footer class="align-items-end">
+                            <div class="d-flex flex-column text-nowrap">
+                                <div class="col-12">
+                                    <strong>Route:</strong>
+                                    <field name="route_id" class="ps-1" />
+                                </div>
+                                <div class="col-12">
+                                    <strong>User:</strong>
+                                    <field name="user_id" class="ps-1" />
+                                </div>
+                                <div class="col-12 d-flex flex-wrap">
+                                    <field name="schedule_date" />
+                                    <field
+                                        name="schedule_time"
+                                        widget="float_time"
+                                        class="ps-1"
+                                    />
+                                </div>
+                            </div>
+                            <field
+                                name="state"
+                                widget="label_selection"
+                                options="{'classes': {'planned': 'info', 'done': 'success', 'incident': 'warning'}}"
+                                class="ms-auto"
+                            />
+                        </footer>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_route_checkpoint_search" model="ir.ui.view">
+        <field name="name">route.checkpoint.search</field>
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="route_id" />
+                <field name="partner_id" />
+                <filter
+                    name="my_routes"
+                    string="My Routes"
+                    domain="[('user_id', '=', uid)]"
+                />
+                <separator />
+                <filter
+                    name="filter_date"
+                    string="Schedule date"
+                    date="schedule_date"
+                />
+                <separator />
+                <filter
+                    name="draft"
+                    string="Draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    name="planned"
+                    string="Planned"
+                    domain="[('state', '=', 'planned')]"
+                />
+                <filter name="done" string="Done" domain="[('state', '=', 'done')]" />
+                <filter
+                    name="incident"
+                    string="Incident"
+                    domain="[('state', '=', 'incident')]"
+                />
+                <separator />
+                <group string="Group By">
+                    <filter
+                        name="group_by_route"
+                        string="Route"
+                        context="{'group_by': 'route_id'}"
+                    />
+                    <filter
+                        name="group_by_partner"
+                        string="Partner"
+                        context="{'group_by': 'partner_id'}"
+                    />
+                    <filter
+                        name="group_by_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_by_company"
+                        string="Company"
+                        context="{'group_by': 'company_id'}"
+                        groups="base.group_multi_company"
+                    />
+                    <separator />
+                    <filter
+                        name="group_by_date"
+                        string="Schedule date"
+                        context="{'group_by': 'schedule_date'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_route_checkpoint_map" model="ir.ui.view">
+        <field name="model">route.checkpoint</field>
+        <field name="arch" type="xml">
+            <leaflet_map
+                field_latitude="latitude"
+                field_longitude="longitude"
+                field_title="display_name"
+                field_address="display_address"
+            />
+        </field>
+    </record>
+
+    <record id="action_route_checkpoint" model="ir.actions.act_window">
+        <field name="name">Checkpoints</field>
+        <field name="res_model">route.checkpoint</field>
+        <field name="view_mode">list,form,kanban,calendar,leaflet_map</field>
+        <field
+            name="context"
+        >{"search_default_my_routes": 1, "search_default_planned": 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No checkpoints found
+            </p>
+            <p>
+                Checkpoints are created when you plan routes.
+            </p>
+        </field>
+    </record>
+</odoo>

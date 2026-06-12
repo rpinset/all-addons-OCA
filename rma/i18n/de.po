@@ -1999,8 +1999,8 @@ msgstr "Rückerstattungsadresse für aktuelle Reklamation."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__refunded
-msgid "Refunded"
-msgstr "Erstattet"
+msgid "Refunded/Not invoiceable"
+msgstr ""
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__remaining_qty
@@ -2102,6 +2102,12 @@ msgstr "Retouren-Kommissionierlinie"
 #: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__return_product_id
 msgid "Return Product"
 msgstr "Rückgabeprodukt"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+msgid "Return of %s"
+msgstr ""
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
@@ -2717,6 +2723,9 @@ msgid ""
 msgstr ""
 "{{object.company_id.name}} Ihre Reklamation wurde erfolgreich erstellt (Ref "
 "{{object.name or 'n/a' }})"
+
+#~ msgid "Refunded"
+#~ msgstr "Erstattet"
 
 #~ msgid "Finish RMAs manually"
 #~ msgstr "Schließen Sie RMAs manuell ab"

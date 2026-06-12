@@ -42,9 +42,8 @@ class AttachmentController(attachment.AttachmentController):
                 return False
             responseData = {"email_upload": 1}
         except AccessError:
-            responseData = {
-                "error": _("You are not allowed to upload an attachment here.")
-            }
+            message = _("You are not allowed to upload an attachment here.")
+            responseData = {"error": {"message": message}}
         except UserError as err:
-            responseData = {"error": str(err)}
+            responseData = {"error": {"message": str(err)}}
         return request.make_json_response(responseData)

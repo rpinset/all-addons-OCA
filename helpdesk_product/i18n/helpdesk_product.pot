@@ -36,7 +36,15 @@ msgstr ""
 
 #. module: helpdesk_product
 #: model:ir.model,name:helpdesk_product.model_helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_product.field_product_product__helpdesk_ticket_ids
+#: model:ir.model.fields,field_description:helpdesk_product.field_product_template__helpdesk_ticket_ids
 msgid "Helpdesk Ticket"
+msgstr ""
+
+#. module: helpdesk_product
+#: model:ir.model.fields,field_description:helpdesk_product.field_product_product__helpdesk_ticket_count
+#: model:ir.model.fields,field_description:helpdesk_product.field_product_template__helpdesk_ticket_count
+msgid "Helpdesk Ticket Count"
 msgstr ""
 
 #. module: helpdesk_product
@@ -52,9 +60,19 @@ msgid "Product Related"
 msgstr ""
 
 #. module: helpdesk_product
+#: model:ir.model,name:helpdesk_product.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: helpdesk_product
 #: model:ir.actions.act_window,name:helpdesk_product.product_template_action_helpdesk
 #: model:ir.ui.menu,name:helpdesk_product.action_menu_view_products
 msgid "Products"
+msgstr ""
+
+#. module: helpdesk_product
+#: model_terms:ir.ui.view,arch_db:helpdesk_product.product_view_template
+msgid "Tickets"
 msgstr ""
 
 #. module: helpdesk_product

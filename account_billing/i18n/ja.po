@@ -540,6 +540,11 @@ msgid "Search Billings"
 msgstr "合計請求書検索"
 
 #. module: account_billing
+#: model:ir.model.fields,field_description:account_billing.field_account_billing_line__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: account_billing
 #: model_terms:ir.ui.view,arch_db:account_billing.view_account_billing_form
 msgid "Set to Draft"
 msgstr "ドラフトに設定"

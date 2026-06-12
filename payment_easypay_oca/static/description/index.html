@@ -1,81 +1,606 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Payment Provider: EasyPay</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>README.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
 </head>
 <body>
-    <section class="oe_container">
-        <div class="oe_row oe_spaced">
-            <h2 class="oe_slogan">EasyPay Payment Provider</h2>
-            <h3 class="oe_slogan">Accept payments through EasyPay</h3>
-            <div class="oe_span6">
-                <div class="oe_demo oe_picture oe_screenshot">
-                    <img src="icon.png" alt="EasyPay">
-                </div>
-            </div>
-            <div class="oe_span6">
-                <p class="oe_mt32">
-                    This module integrates EasyPay as a payment provider in Odoo, allowing customers to pay via credit card and other payment methods using EasyPay's secure payment gateway.
-                </p>
-                <p>
-                    EasyPay is a Portuguese payment service provider that supports multiple payment methods including:
-                </p>
-                <ul>
-                    <li>Credit/Debit Cards (Visa, Mastercard)</li>
-                    <li>Multibanco</li>
-                    <li>MB WAY</li>
-                    <li>SEPA Direct Debit</li>
-                    <li>Virtual IBAN</li>
-                    <li>Apple Pay</li>
-                    <li>Google Pay</li>
-                    <li>Samsung Pay</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<div class="document">
 
-    <section class="oe_container oe_dark">
-        <div class="oe_row oe_spaced">
-            <h2 class="oe_slogan">Features</h2>
-            <div class="oe_span6">
-                <h3>Integrated Checkout</h3>
-                <p>
-                    Use EasyPay's integrated checkout experience for a seamless payment flow directly on your website.
-                </p>
-            </div>
-            <div class="oe_span6">
-                <h3>Multiple Payment Methods</h3>
-                <p>
-                    Support for various payment methods popular in Portugal and Europe.
-                </p>
-            </div>
-        </div>
-        <div class="oe_row oe_spaced">
-            <div class="oe_span6">
-                <h3>Webhook Support</h3>
-                <p>
-                    Automatic payment status updates via webhooks ensure real-time synchronization.
-                </p>
-            </div>
-            <div class="oe_span6">
-                <h3>Refunds & Captures</h3>
-                <p>
-                    Support for manual capture and full refunds directly from Odoo.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="oe_container">
-        <div class="oe_row oe_spaced">
-            <h2 class="oe_slogan">Easy Configuration</h2>
-            <div class="oe_span12">
-                <p class="oe_mt32">
-                    Simple configuration with just your EasyPay Account ID and API Key. Choose between test and production environments with a single click.
-                </p>
-            </div>
-        </div>
-    </section>
+<a class="reference external image-reference" href="https://odoo-community.org/get-involved?utm_source=readme">
+<img alt="Odoo Community Association" src="https://odoo-community.org/readme-banner-image" />
+</a>
+<div class="section" id="payment-provider-easypay">
+<h1>Payment Provider: EasyPay</h1>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:4ec3c4d437ee64646d407915769c97d9c3ae10df626320c28972821974d0c354
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html"><img alt="License: LGPL-3" src="https://img.shields.io/badge/license-LGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/l10n-portugal/tree/18.0/payment_easypay_oca"><img alt="OCA/l10n-portugal" src="https://img.shields.io/badge/github-OCA%2Fl10n--portugal-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/l10n-portugal-18-0/l10n-portugal-18-0-payment_easypay_oca"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/l10n-portugal&amp;target_branch=18.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<p>This module integrates EasyPay as a payment provider in Odoo, allowing
+customers to pay via credit card and other payment methods using
+EasyPay’s secure payment gateway.</p>
+<p>EasyPay is a Portuguese payment service provider that supports multiple
+payment methods including credit cards, Multibanco, MB WAY, SEPA Direct
+Debit, and more.</p>
+<p>Verified as supported:</p>
+<ul class="simple">
+<li>Credit/Debit Card payments,</li>
+<li>Multibanco (MB) reference payments,</li>
+<li>MB WAY.</li>
+</ul>
+<p>Not yet implemented or verified:</p>
+<ul class="simple">
+<li>SEPA Direct Debit,</li>
+<li>Pay by Link,</li>
+<li>Multibanco reference on invoices.</li>
+</ul>
+<p>Learn more about EasyPay at <a class="reference external" href="https://www.easypay.pt/">https://www.easypay.pt/</a></p>
+<p><strong>Table of contents</strong></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#configuration" id="toc-entry-1">Configuration</a><ul>
+<li><a class="reference internal" href="#create-an-easypay-account" id="toc-entry-2">1. Create an EasyPay Account</a></li>
+<li><a class="reference internal" href="#configure-the-provider-in-odoo" id="toc-entry-3">2. Configure the Provider in Odoo</a></li>
+<li><a class="reference internal" href="#register-webhooks" id="toc-entry-4">3. Register Webhooks</a></li>
+<li><a class="reference internal" href="#test-the-connection" id="toc-entry-5">4. Test the Connection</a></li>
+<li><a class="reference internal" href="#go-live" id="toc-entry-6">5. Go Live</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage" id="toc-entry-7">Usage</a><ul>
+<li><a class="reference internal" href="#payment-method-behaviour" id="toc-entry-8">Payment method behaviour</a></li>
+<li><a class="reference internal" href="#refunds" id="toc-entry-9">Refunds</a></li>
+<li><a class="reference internal" href="#test-card-details-test-environment-only" id="toc-entry-10">Test card details (test environment only)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bug-tracker" id="toc-entry-11">Bug Tracker</a></li>
+<li><a class="reference internal" href="#credits" id="toc-entry-12">Credits</a><ul>
+<li><a class="reference internal" href="#authors" id="toc-entry-13">Authors</a></li>
+<li><a class="reference internal" href="#contributors" id="toc-entry-14">Contributors</a></li>
+<li><a class="reference internal" href="#maintainers" id="toc-entry-15">Maintainers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#toc-entry-1">Configuration</a></h2>
+<p><strong>Currency requirement:</strong> EasyPay only supports <strong>EUR</strong>. The provider is
+pre-configured to appear only for EUR transactions and will be hidden
+automatically when the customer’s currency is different.</p>
+<div class="section" id="create-an-easypay-account">
+<h3><a class="toc-backref" href="#toc-entry-2">1. Create an EasyPay Account</a></h3>
+<ul class="simple">
+<li><strong>Test environment</strong>: Sign up at <a class="reference external" href="https://backoffice.test.easypay.pt/">https://backoffice.test.easypay.pt/</a></li>
+<li><strong>Production</strong>: Sign up at <a class="reference external" href="https://www.easypay.pt/">https://www.easypay.pt/</a> and complete
+merchant verification</li>
+</ul>
+<p>Once logged in, note your <strong>Account ID</strong> and <strong>API Key</strong> (both UUID
+format) from the EasyPay dashboard.</p>
+</div>
+<div class="section" id="configure-the-provider-in-odoo">
+<h3><a class="toc-backref" href="#toc-entry-3">2. Configure the Provider in Odoo</a></h3>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting → Configuration → Payment Providers</strong> (or
+<strong>Website → Configuration → Payment Providers</strong>)</li>
+<li>Search for <strong>EasyPay</strong> and open the provider form</li>
+<li>Fill in:<ul>
+<li><strong>Account ID</strong> — from your EasyPay dashboard</li>
+<li><strong>API Key</strong> — from your EasyPay dashboard (admin-only field)</li>
+<li><strong>Payment Methods</strong> — select the methods to offer (Credit/Debit
+Card, Multibanco, MB WAY, etc.)</li>
+<li><strong>Allow Saving Payment Methods</strong> — when enabled, logged-in
+customers can tick “Save my payment details” at checkout to
+tokenize their card or SEPA Direct Debit mandate for future charges
+(e.g. subscriptions). Enabled by default.</li>
+</ul>
+</li>
+<li>Set the provider <strong>State</strong>:<ul>
+<li><strong>Test Mode</strong> → uses <tt class="docutils literal"><span class="pre">https://api.test.easypay.pt</span></tt> and enables
+the <tt class="docutils literal">testing</tt> flag in the SDK automatically</li>
+<li><strong>Enabled</strong> → uses <tt class="docutils literal"><span class="pre">https://api.prod.easypay.pt</span></tt> (production)</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+</div>
+<div class="section" id="register-webhooks">
+<h3><a class="toc-backref" href="#toc-entry-4">3. Register Webhooks</a></h3>
+<p>EasyPay sends payment status updates to three separate Odoo endpoints.
+The simplest way to register them is to use the built-in button:</p>
+<ol class="arabic simple">
+<li>On the EasyPay provider form, click <strong>Configure Webhooks</strong></li>
+<li>Odoo will call <tt class="docutils literal">PATCH /2.0/config</tt> on the EasyPay API and register:<ul>
+<li><tt class="docutils literal"><span class="pre">https://yourdomain.com/payment/easypay/webhook/generic</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">https://yourdomain.com/payment/easypay/webhook/authorisation</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">https://yourdomain.com/payment/easypay/webhook/transaction</span></tt></li>
+</ul>
+</li>
+</ol>
+<p>If you need to register webhooks manually in the EasyPay dashboard, use
+the three URLs above. All three must be registered for all payment
+methods to work correctly (Multibanco confirmation, for example, arrives
+via the transaction webhook).</p>
+<p><strong>Note:</strong> Webhooks must be reachable from the internet. If running
+locally, use a tunnel such as localtunnel
+(<a class="reference external" href="https://theboroer.github.io/localtunnel-www/">https://theboroer.github.io/localtunnel-www/</a>) or ngrok and update the
+Odoo base URL accordingly before clicking <strong>Configure Webhooks</strong>.</p>
+</div>
+<div class="section" id="test-the-connection">
+<h3><a class="toc-backref" href="#toc-entry-5">4. Test the Connection</a></h3>
+<p>Click <strong>Test Connection</strong> on the provider form to verify that your
+credentials are correct and the EasyPay API is reachable.</p>
+</div>
+<div class="section" id="go-live">
+<h3><a class="toc-backref" href="#toc-entry-6">5. Go Live</a></h3>
+<ol class="arabic simple">
+<li>Replace test credentials with production values</li>
+<li>Change provider <strong>State</strong> to <strong>Enabled</strong></li>
+<li>Click <strong>Configure Webhooks</strong> again to register production webhook
+URLs</li>
+<li>Test with a small real payment before going fully live</li>
+<li>Set the provider to <strong>Published</strong> so customers can see it</li>
+</ol>
+</div>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#toc-entry-7">Usage</a></h2>
+<p>Once configured, customers can use EasyPay to make payments:</p>
+<ol class="arabic simple">
+<li>During checkout, select <strong>EasyPay</strong> as the payment method</li>
+<li>Click <strong>Pay Now</strong></li>
+<li>A secure inline payment form loads. The customer selects a payment
+method and completes the payment without leaving the site.</li>
+</ol>
+<div class="section" id="payment-method-behaviour">
+<h3><a class="toc-backref" href="#toc-entry-8">Payment method behaviour</a></h3>
+<ul class="simple">
+<li><strong>Credit/Debit Card</strong>: Payment is captured immediately. Order is
+confirmed as soon as the card is charged.</li>
+<li><strong>MB WAY</strong>: The customer enters their mobile number. A push
+notification is sent to their phone for confirmation. The order is
+placed in <em>Pending</em> state until the user confirms (or rejects) on the
+MB WAY app.</li>
+<li><strong>Multibanco</strong>: An ATM reference (Entity + Reference + Amount) is
+displayed. The customer pays at any ATM or via online banking. The
+order remains <em>Pending</em> until the payment is confirmed, which may take
+minutes to days. The customer should <strong>not</strong> close the confirmation
+page before noting down the reference.</li>
+<li><strong>SEPA Direct Debit</strong>: The customer enters their IBAN and accepts a
+SEPA mandate authorizing EasyPay to debit their account. The order
+remains <em>Pending</em> until the bank settles the debit (typically 2–5
+business days). When used with tokenization, the mandate is saved and
+subsequent charges are pulled automatically.</li>
+<li><strong>Virtual IBAN</strong>: A dedicated IBAN is displayed. The customer
+transfers the exact amount via online banking. The order remains
+<em>Pending</em> until the transfer is received and matched by EasyPay.</li>
+<li><strong>Save payment details (tokenization)</strong>: Logged-in customers can tick
+<em>Save my payment details</em> at checkout. The payment method is saved as
+a token for future charges (e.g. subscriptions). This works with cards
+and SEPA Direct Debit.</li>
+</ul>
+</div>
+<div class="section" id="refunds">
+<h3><a class="toc-backref" href="#toc-entry-9">Refunds</a></h3>
+<p>Refunds can be initiated from the Odoo backend on any confirmed
+transaction:</p>
+<ol class="arabic simple">
+<li>Open the payment transaction and click <strong>Refund</strong></li>
+<li>A refund request is sent to EasyPay and a child refund transaction is
+created in <em>Pending</em> state</li>
+<li>Once EasyPay processes the refund, a webhook updates the refund
+transaction to <em>Done</em> (or <em>Error</em> if it failed)</li>
+</ol>
+<p>Partial refunds are supported — enter the amount to refund when
+prompted.</p>
+</div>
+<div class="section" id="test-card-details-test-environment-only">
+<h3><a class="toc-backref" href="#toc-entry-10">Test card details (test environment only)</a></h3>
+<p>See the <a class="reference external" href="https://docs.easypay.pt/docs/guides/payment-methods">EasyPay Payment Methods
+guide</a> for full
+test credentials for all payment methods.</p>
+</div>
+</div>
+<div class="section" id="bug-tracker">
+<h2><a class="toc-backref" href="#toc-entry-11">Bug Tracker</a></h2>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/l10n-portugal/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/OCA/l10n-portugal/issues/new?body=module:%20payment_easypay_oca%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h2><a class="toc-backref" href="#toc-entry-12">Credits</a></h2>
+<div class="section" id="authors">
+<h3><a class="toc-backref" href="#toc-entry-13">Authors</a></h3>
+<ul class="simple">
+<li>Open Source Integrators</li>
+</ul>
+</div>
+<div class="section" id="contributors">
+<h3><a class="toc-backref" href="#toc-entry-14">Contributors</a></h3>
+<ul class="simple">
+<li>Open Source Integrators &lt;<a class="reference external" href="https://www.opensourceintegrators.com">https://www.opensourceintegrators.com</a>&gt;<ul>
+<li>Daniel Reis (<a class="reference external" href="mailto:dreis&#64;opensourceintegrators.com">dreis&#64;opensourceintegrators.com</a>)</li>
+</ul>
+</li>
+</ul>
+<p>This work was developed with the aid of AI tools under human guidance
+and supervision, specifically Cascade (IDE coding assistant) and
+Anthropic Claude. All AI-assisted changes were reviewed and approved by
+human maintainers.</p>
+</div>
+<div class="section" id="maintainers">
+<h3><a class="toc-backref" href="#toc-entry-15">Maintainers</a></h3>
+<p>This module is maintained by the OCA.</p>
+<a class="reference external image-reference" href="https://odoo-community.org">
+<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
+</a>
+<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/l10n-portugal/tree/18.0/payment_easypay_oca">OCA/l10n-portugal</a> project on GitHub.</p>
+<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>

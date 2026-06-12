@@ -1,5 +1,5 @@
 # Copyright 2019 Camptocamp SA
-# Copyright 2019-2021 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
+# Copyright 2019 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 from odoo import models
 from odoo.tools.float_utils import float_compare
@@ -131,7 +131,7 @@ class StockMove(models.Model):
     def _action_assign(self, force_qty=False):
         unreserve_locations = {}
         partially_assigned_moves = self.filtered(
-            lambda mov: mov.state == "partially_available"
+            lambda m: not m.picked and m.state == "partially_available"
         )
 
         for move in partially_assigned_moves:

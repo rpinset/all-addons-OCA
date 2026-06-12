@@ -14,6 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "%(model)s --> %(name)s (ID = %(res_id)s)."
+msgstr ""
+
+#. module: mail_drop_target
 #: model:ir.model,name:mail_drop_target.model_ir_attachment
 msgid "Attachment"
 msgstr ""
@@ -47,7 +53,13 @@ msgstr ""
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
-msgid "This message is already imported."
+msgid "The already imported copy is attached to: %(locations)s"
+msgstr ""
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "This message is already imported. "
 msgstr ""
 
 #. module: mail_drop_target
@@ -69,4 +81,16 @@ msgstr ""
 #. odoo-python
 #: code:addons/mail_drop_target/controllers/discuss.py:0
 msgid "You are not allowed to upload an attachment here."
+msgstr ""
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "a record that no longer exists."
+msgstr ""
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "a record you are not allowed to access."
 msgstr ""

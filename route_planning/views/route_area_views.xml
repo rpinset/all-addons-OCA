@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_area_list" model="ir.ui.view">
+        <field name="name">route.area.list</field>
+        <field name="model">route.area</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="code" />
+                <field name="name" />
+                <field name="user_id" />
+                <field name="time_start" widget="float_time" />
+                <field name="waiting_time" optional="show" widget="float_time" />
+                <field name="auto_assign" optional="show" />
+                <field
+                    name="country_ids"
+                    optional="show"
+                    options="{'no_create': True}"
+                    widget="many2many_tags"
+                />
+                <field
+                    name="state_ids"
+                    optional="show"
+                    options="{'no_create': True}"
+                    widget="many2many_tags"
+                />
+                <field name="user_id" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="active" widget="boolean_toggle" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_route_area_form" model="ir.ui.view">
+        <field name="name">route.area.form</field>
+        <field name="model">route.area</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code" />
+                            <field name="name" />
+                            <field
+                                name="user_id"
+                                options="{'no_create': True, 'no_open': True}"
+                            />
+                            <field name="time_start" widget="float_time" />
+                            <field name="waiting_time" widget="float_time" />
+                            <field
+                                name="company_id"
+                                options="{'no_create': True, 'no_open': True}"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                        <group string="Availability">
+                            <field name="auto_assign" />
+                            <field
+                                name="country_ids"
+                                options="{'no_create': True}"
+                                widget="many2many_tags"
+                            />
+                            <field
+                                name="state_ids"
+                                options="{'no_create': True}"
+                                widget="many2many_tags"
+                            />
+                            <separator string="ZIP ranges" />
+                            <field name="zip_ids" nolabel="1">
+                                <list editable="bottom">
+                                    <field name="zip_from" />
+                                    <field name="zip_to" />
+                                </list>
+                            </field>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_route_area_search" model="ir.ui.view">
+        <field name="name">route.area.search</field>
+        <field name="model">route.area</field>
+        <field name="arch" type="xml">
+            <search>
+                <field
+                    name="name"
+                    filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]"
+                />
+                <field name="user_id" />
+                <filter
+                    name="filter_inactive"
+                    string="Archived"
+                    domain="[('active', '=', False)]"
+                />
+                <filter
+                    name="group_by_user"
+                    string="User"
+                    context="{'group_by':'user_id'}"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_route_area" model="ir.actions.act_window">
+        <field name="name">Route Areas</field>
+        <field name="res_model">route.area</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first route area
+            </p>
+            <p>
+                Route areas help organize delivery zones and assign responsible users.
+            </p>
+        </field>
+    </record>
+</odoo>

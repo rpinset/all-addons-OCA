@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- subtypes for messaging / Chatter -->
+    <record id="mt_checkpoint_new" model="mail.message.subtype">
+        <field name="name">Checkpoint Created</field>
+        <field name="res_model">route.checkpoint</field>
+        <field name="default" eval="False" />
+        <field name="hidden" eval="True" />
+        <field name="description">Checkpoint Created</field>
+    </record>
+    <record id="mt_route_checkpoint_new" model="mail.message.subtype">
+        <field name="name">Checkpoint Created</field>
+        <field name="sequence">10</field>
+        <field name="res_model">route.route</field>
+        <field name="default" eval="False" />
+        <field name="parent_id" ref="mt_checkpoint_new" />
+        <field name="relation_field">route_id</field>
+    </record>
+</odoo>

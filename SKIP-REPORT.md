@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-06-09 04:54 UTC
+Generated 2026-06-12 15:59 UTC
 
-Total skipped: **111**
+Total skipped: **110**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **87**
+Count: **86**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -105,7 +105,6 @@ Count: **87**
 | [resource](https://github.com/OCA/resource) | [18.0](https://github.com/OCA/resource/tree/18.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [18.0](https://github.com/OCA/rest-api/tree/18.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [18.0](https://github.com/OCA/role-policy/tree/18.0) | No directory with __manifest__.py at repo root |
-| [route-planning](https://github.com/OCA/route-planning) | [18.0](https://github.com/OCA/route-planning/tree/18.0) | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | [18.0](https://github.com/OCA/sale-financial/tree/18.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [18.0](https://github.com/OCA/shoppingfeed/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [18.0](https://github.com/OCA/vertical-abbey/tree/18.0) | No directory with __manifest__.py at repo root |

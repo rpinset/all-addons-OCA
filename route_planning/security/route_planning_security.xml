@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="module_category_route_planning" model="ir.module.category">
+        <field name="name">Route Planning</field>
+    </record>
+    <record id="group_route_planning_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="module_category_route_planning" />
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+    </record>
+    <record id="group_route_planning_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="module_category_route_planning" />
+        <field
+            name="implied_ids"
+            eval="[Command.link(ref('group_route_planning_user'))]"
+        />
+        <field
+            name="users"
+            eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"
+        />
+    </record>
+
+    <record id="route_route_multicompany_rule" model="ir.rule">
+        <field name="name">Route: Multicompany</field>
+        <field name="model_id" ref="model_route_route" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="route_area_multicompany_rule" model="ir.rule">
+        <field name="name">Route Area: Multicompany</field>
+        <field name="model_id" ref="model_route_area" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="route_checkpoint_multicompany_rule" model="ir.rule">
+        <field name="name">Route Checkpoint: Multicompany</field>
+        <field name="model_id" ref="model_route_checkpoint" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="route_incident_type_multicompany_rule" model="ir.rule">
+        <field name="name">Route Incident Type: Multicompany</field>
+        <field name="model_id" ref="model_route_incident_type" />
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="route_route_user_rule" model="ir.rule">
+        <field name="name">Route: User access followers</field>
+        <field name="model_id" ref="model_route_route" />
+        <field
+            name="domain_force"
+        >['|',('create_uid', '=', user.id), ('message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_route_planning_user'))]" />
+    </record>
+    <record id="route_route_manager_rule" model="ir.rule">
+        <field name="name">Route: Manager access</field>
+        <field name="model_id" ref="model_route_route" />
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_route_planning_manager'))]" />
+    </record>
+
+    <record id="route_checkpoint_user_rule" model="ir.rule">
+        <field name="name">Route Checkpoint : User access followers</field>
+        <field name="model_id" ref="model_route_checkpoint" />
+        <field
+            name="domain_force"
+        >[('message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_route_planning_user'))]" />
+        <field name="perm_create" eval="False" />
+    </record>
+    <record id="route_checkpoint_manager_rule" model="ir.rule">
+        <field name="name">Route Checkpoint: Manager access</field>
+        <field name="model_id" ref="model_route_checkpoint" />
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_route_planning_manager'))]" />
+    </record>
+</odoo>

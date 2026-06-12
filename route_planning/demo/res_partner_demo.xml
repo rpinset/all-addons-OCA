@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- My Company -->
+    <record id="base.main_partner" model="res.partner">
+        <field name="partner_latitude">40.432705895463606</field>
+        <field name="partner_longitude">-3.6970388945265644</field>
+    </record>
+    <!-- Acme -->
+    <record id="base.res_partner_2" model="res.partner">
+        <field name="partner_latitude">40.41831064312621</field>
+        <field name="partner_longitude">-3.7143479878277055</field>
+        <field
+            name="route_visitwindow_ids"
+            eval="[
+            Command.create({'day_of_week': '0', 'time_from': 17, 'time_to': 18}),
+            Command.create({'day_of_week': '1', 'time_from': 17, 'time_to': 18}),
+            Command.create({'day_of_week': '2', 'time_from': 17, 'time_to': 18}),
+            Command.create({'day_of_week': '3', 'time_from': 17, 'time_to': 18}),
+            Command.create({'day_of_week': '4', 'time_from': 17, 'time_to': 18}),
+        ]"
+        />
+    </record>
+    <!-- Gemini -->
+    <record id="base.res_partner_3" model="res.partner">
+        <field name="partner_latitude">40.41429270410794</field>
+        <field name="partner_longitude">-3.692142478954325</field>
+    </record>
+    <!-- Azure -->
+    <record id="base.res_partner_12" model="res.partner">
+        <field name="partner_latitude">40.453370156222306</field>
+        <field name="partner_longitude">-3.6884337678686903</field>
+    </record>
+</odoo>

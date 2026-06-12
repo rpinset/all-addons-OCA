@@ -100,3 +100,26 @@ class TestMailDropTarget(TransactionCase):
             self.partner.message_process_msg(
                 self.partner._name, message, thread_id=self.partner.id
             )
+
+    def test_duplicate_error_message_details(self):
+        message = tools.file_open("addons/mail_drop_target/tests/sample.eml").read()
+        self.partner.message_process(
+            self.partner._name, message, thread_id=self.partner.id
+        )
+        with self.assertRaises(exceptions.UserError) as catcher:
+            self.partner.message_drop(
+                self.partner._name, message, thread_id=self.partner.id
+            )
+        error_message = str(catcher.exception)
+        self.assertIn("already imported", error_message)
+        # The record the existing copy is attached to is described.
+        self.assertIn(self.partner.display_name, error_message)
+        self.assertIn(str(self.partner.id), error_message)
+
+    def test_drop_existing_without_match(self):
+        message = "Message-Id: <unknown-message-id@example.com>\n\nBody"
+        with self.assertRaises(exceptions.UserError) as catcher:
+            self.env["res.partner"].message_drop_existing("res.partner", message)
+        error_message = str(catcher.exception)
+        self.assertIn("already imported", error_message)
+        self.assertNotIn("attached to", error_message)

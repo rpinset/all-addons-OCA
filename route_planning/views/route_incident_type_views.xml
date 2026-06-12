@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_incident_type_list" model="ir.ui.view">
+        <field name="name">route.incident.type.list</field>
+        <field name="model">route.incident.type</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name" />
+                <field name="rescheduled" />
+                <field
+                    name="company_id"
+                    options="{'no_create': True, 'no_open': True}"
+                    groups="base.group_multi_company"
+                />
+                <field name="active" widget="boolean_toggle" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_route_incident_type_form" model="ir.ui.view">
+        <field name="name">route.incident.type.form</field>
+        <field name="model">route.incident.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="rescheduled" />
+                        <field
+                            name="company_id"
+                            options="{'no_create': True, 'no_open': True}"
+                            groups="base.group_multi_company"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_route_incident_type_search" model="ir.ui.view">
+        <field name="name">route.incident.type.search</field>
+        <field name="model">route.incident.type</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <filter
+                    name="filter_inactive"
+                    string="Archived"
+                    domain="[('active', '=', False)]"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_route_incident_type" model="ir.actions.act_window">
+        <field name="name">Incident Types</field>
+        <field name="res_model">route.incident.type</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first incident type
+            </p>
+            <p>
+                Incident types help categorize route problems and define actions.
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -118,16 +118,12 @@ msgstr ""
 
 #. module: edi_voxel_oca
 #: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
-msgid ""
-"<span class=\"o_form_label\">Send mode</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgid "<span class=\"o_form_label\">Send mode</span>"
 msgstr ""
 
 #. module: edi_voxel_oca
 #: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
-msgid ""
-"<span class=\"o_form_label\">Web Service Credentials</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgid "<span class=\"o_form_label\">Web Service Credentials</span>"
 msgstr ""
 
 #. module: edi_voxel_oca
@@ -404,6 +400,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:edi_voxel_oca.field_res_config_settings__voxel_login_user
 #: model:ir.model.fields,field_description:edi_voxel_oca.field_voxel_login__user
 msgid "User"
+msgstr ""
+
+#. module: edi_voxel_oca
+#: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
+msgid "Values set here are company-specific."
 msgstr ""
 
 #. module: edi_voxel_oca

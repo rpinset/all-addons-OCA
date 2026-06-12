@@ -126,29 +126,13 @@ msgstr "(RE) Supplemento di equivalenza"
 
 #. module: edi_voxel_oca
 #: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
-msgid ""
-"<span class=\"o_form_label\">Send mode</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" "
-"title=\"Values set here are company-specific.\" groups=\"base."
-"group_multi_company\"/>"
+msgid "<span class=\"o_form_label\">Send mode</span>"
 msgstr ""
-"<span class=\"o_form_label\">Modalità invio</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" title="
-"\"I valori impostati qui sono specifici per azienda.\" groups="
-"\"base.group_multi_company\"/>"
 
 #. module: edi_voxel_oca
 #: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
-msgid ""
-"<span class=\"o_form_label\">Web Service Credentials</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" "
-"title=\"Values set here are company-specific.\" groups=\"base."
-"group_multi_company\"/>"
+msgid "<span class=\"o_form_label\">Web Service Credentials</span>"
 msgstr ""
-"<span class=\"o_form_label\">Credenziali servizio web</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" title="
-"\"I valori impostati qui sono specifici per azienda\" groups="
-"\"base.group_multi_company\"/>"
 
 #. module: edi_voxel_oca
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__res_company__voxel_send_mode__fixed
@@ -161,6 +145,8 @@ msgid "Boxes"
 msgstr "Scatole"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__cancelled
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__cancelled
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__cancelled
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__cancelled
 msgid "Cancelled"
@@ -292,6 +278,8 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__not_sent
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__not_sent
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__not_sent
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__not_sent
 msgid "Not sent"
@@ -329,6 +317,8 @@ msgid "Processing Error"
 msgstr "Errore elaborazione"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__processing_error
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__processing_error
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__processing_error
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__processing_error
 msgid "Processing error"
@@ -351,18 +341,24 @@ msgid "Send mode"
 msgstr "Modalità invio"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__sent_errors
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__sent_errors
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__sent_errors
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__sent_errors
 msgid "Sending error"
 msgstr "Errore invio"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__accepted
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__accepted
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__accepted
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__accepted
 msgid "Sent and accepted"
 msgstr "Inviato e accettato"
 
 #. module: edi_voxel_oca
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__account_move__voxel_state__sent
+#: model:ir.model.fields.selection,name:edi_voxel_oca.selection__sale_order__voxel_state__sent
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__stock_picking__voxel_state__sent
 #: model:ir.model.fields.selection,name:edi_voxel_oca.selection__voxel_mixin__voxel_state__sent
 msgid "Sent not verified"
@@ -416,6 +412,11 @@ msgstr "Unità"
 #: model:ir.model.fields,field_description:edi_voxel_oca.field_voxel_login__user
 msgid "User"
 msgstr "Utente"
+
+#. module: edi_voxel_oca
+#: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr ""
 
 #. module: edi_voxel_oca
 #: model_terms:ir.ui.view,arch_db:edi_voxel_oca.res_config_settings_view_form
@@ -475,22 +476,44 @@ msgstr "Resoconto XML"
 
 #~ msgid ""
 #~ "<span class=\"o_form_label\">Send mode</span>\n"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"Values set here are company-specific.\" "
+#~ "groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"o_form_label\">Modalità invio</span>\n"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"I valori impostati qui sono specifici per azienda.\" "
+#~ "groups=\"base.group_multi_company\"/>"
+
+#~ msgid ""
+#~ "<span class=\"o_form_label\">Web Service Credentials</span>\n"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"Values set here are company-specific.\" "
+#~ "groups=\"base.group_multi_company\"/>"
+#~ msgstr ""
+#~ "<span class=\"o_form_label\">Credenziali servizio web</span>\n"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"I valori impostati qui sono specifici per azienda\" "
+#~ "groups=\"base.group_multi_company\"/>"
+
+#~ msgid ""
+#~ "<span class=\"o_form_label\">Send mode</span>\n"
 #~ "                        <span class=\"fa fa-lg fa-building-o\" "
-#~ "title=\"Values set here are company-specific.\" groups=\"base."
-#~ "group_multi_company\"/>"
+#~ "title=\"Values set here are company-specific.\" "
+#~ "groups=\"base.group_multi_company\"/>"
 #~ msgstr ""
 #~ "<span class=\"o_form_label\">Modalità invio</span>\n"
 #~ "                        <span class=\"fa fa-lg fa-building-o\" title=\"I "
-#~ "valori impostati qui sono specifici per azienda.\" groups=\"base."
-#~ "group_multi_company\"/>"
+#~ "valori impostati qui sono specifici per azienda.\" "
+#~ "groups=\"base.group_multi_company\"/>"
 
 #~ msgid ""
 #~ "<span class=\"o_form_label\">Web Sevice credentials</span>\n"
 #~ "                        <span class=\"fa fa-lg fa-building-o\" "
-#~ "title=\"Values set here are company-specific.\" groups=\"base."
-#~ "group_multi_company\"/>"
+#~ "title=\"Values set here are company-specific.\" "
+#~ "groups=\"base.group_multi_company\"/>"
 #~ msgstr ""
 #~ "<span class=\"o_form_label\">Credenziali servizio web</span>\n"
 #~ "                        <span class=\"fa fa-lg fa-building-o\" title=\"I "
-#~ "valori impostati qui sono specifici per azienda.\" groups=\"base."
-#~ "group_multi_company\"/>"
+#~ "valori impostati qui sono specifici per azienda.\" "
+#~ "groups=\"base.group_multi_company\"/>"

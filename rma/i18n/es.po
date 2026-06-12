@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-09 08:07+0000\n"
-"PO-Revision-Date: 2026-05-26 10:46+0000\n"
+"PO-Revision-Date: 2026-06-12 13:47+0000\n"
 "Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -1987,8 +1987,8 @@ msgstr "Dirección de facturación de este RMA."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__refunded
-msgid "Refunded"
-msgstr "Reembolsado"
+msgid "Refunded/Not invoiceable"
+msgstr "Reembolsado/No facturable"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__remaining_qty
@@ -2090,6 +2090,12 @@ msgstr "Línea de albarán de devolución"
 #: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__return_product_id
 msgid "Return Product"
 msgstr "Producto devuelto"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+msgid "Return of %s"
+msgstr "Devolución de %s"
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
@@ -2687,6 +2693,9 @@ msgid ""
 msgstr ""
 "{{object.company_id.name}} Su RMA se ha creado con éxito (Ref {{object.name "
 "or 'n/a' }})"
+
+#~ msgid "Refunded"
+#~ msgstr "Reembolsado"
 
 #~ msgid "Finish RMAs manually"
 #~ msgstr "Finalizar RMAs manualmente"

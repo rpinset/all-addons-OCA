@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add domain field to the activity plan form view -->
+    <record id="mail_activity_plan_view_form_domain" model="ir.ui.view">
+        <field name="name">mail.activity.plan.view.form.domain</field>
+        <field name="model">mail.activity.plan</field>
+        <field name="inherit_id" ref="mail.mail_activity_plan_view_form" />
+        <field name="arch" type="xml">
+            <field name="res_model" position="after">
+                <field
+                    name="domain"
+                    widget="domain"
+                    options="{'model': 'res_model'}"
+                    nvisible="not res_model"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_create_incident_form" model="ir.ui.view">
+        <field name="name">route.create.incident.form</field>
+        <field name="model">route.create.incident</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field
+                        name="checkpoint_id"
+                        required="1"
+                        readonly="1"
+                        options="{'no_open': True}"
+                        force_save="1"
+                    />
+                    <field
+                        name="incident_type_id"
+                        options="{'no_create': True, 'no_open': True}"
+                    />
+                    <field name="note" />
+                </group>
+                <footer>
+                    <button
+                        name="action_create_incident"
+                        type="object"
+                        string="Create Incident"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_route_create_incident" model="ir.actions.act_window">
+        <field name="name">Create Incident</field>
+        <field name="res_model">route.create.incident</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

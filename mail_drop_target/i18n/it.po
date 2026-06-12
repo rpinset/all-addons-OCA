@@ -17,6 +17,12 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "%(model)s --> %(name)s (ID = %(res_id)s)."
+msgstr ""
+
+#. module: mail_drop_target
 #: model:ir.model,name:mail_drop_target.model_ir_attachment
 msgid "Attachment"
 msgstr "Allegato"
@@ -44,16 +50,20 @@ msgstr "Discussione e-mail"
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
-#, python-format
 msgid "Install the msg-extractor library to handle .msg files"
 msgstr "Installare la libreria msg-extractor per festire i file .msg"
 
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
-#, python-format
-msgid "This message is already imported."
-msgstr "Questo messaggio è già stato importato."
+msgid "The already imported copy is attached to: %(locations)s"
+msgstr ""
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "This message is already imported. "
+msgstr ""
 
 #. module: mail_drop_target
 #: model_terms:ir.ui.view,arch_db:mail_drop_target.res_config_settings_view_form
@@ -67,8 +77,8 @@ msgstr ""
 #. module: mail_drop_target
 #: model:ir.model.fields,help:mail_drop_target.field_res_config_settings__disable_notify_mail_drop_target
 msgid ""
-"When this setting is set, when a user drops an email into an existing thread"
-" the followers of the thread will not be notified. This sets an "
+"When this setting is set, when a user drops an email into an existing thread "
+"the followers of the thread will not be notified. This sets an "
 "ir.config.parameter mail_drop_target.disable_notify"
 msgstr ""
 "Quanto è attiva questa impostazione, quando un utente rilascia una e.mail in "
@@ -78,6 +88,21 @@ msgstr ""
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/controllers/discuss.py:0
-#, python-format
 msgid "You are not allowed to upload an attachment here."
 msgstr "Non si ha l'autorizzazione per caricare qui un allegato."
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "a record that no longer exists."
+msgstr ""
+
+#. module: mail_drop_target
+#. odoo-python
+#: code:addons/mail_drop_target/models/mail_thread.py:0
+msgid "a record you are not allowed to access."
+msgstr ""
+
+#, python-format
+#~ msgid "This message is already imported."
+#~ msgstr "Questo messaggio è già stato importato."

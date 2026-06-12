@@ -713,5 +713,12 @@ class TestReserveRule(ReserveRuleCommon):
             self.product1, self.wh.lot_stock_id, 10, lot_id=lot_2
         )
 
+        # When picked, reassign won't occur
+        picking_2.move_line_ids.picked = True
+        picking_2.action_assign()
+        self.assertEqual(picking_2.move_line_ids.lot_id, lot_2)
+
+        # Should switch to lot1 according to FIFO
+        picking_2.move_line_ids.picked = False
         picking_2.action_assign()
         self.assertEqual(picking_2.move_line_ids.lot_id, lot_1)

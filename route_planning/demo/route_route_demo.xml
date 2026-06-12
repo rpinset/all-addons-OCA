@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="route_north_demo" model="route.route">
+        <field name="route_area_id" ref="route_area_north_demo" />
+        <field name="schedule_date">2026-05-25</field>
+    </record>
+    <record id="route_south_demo" model="route.route">
+        <field name="route_area_id" ref="route_area_south_demo" />
+        <field name="schedule_date">2026-05-26</field>
+    </record>
+    <record id="route_checkpoint_with_incident_demo" model="route.checkpoint">
+        <field name="partner_id" ref="base.res_partner_12" />
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_1_demo" model="route.checkpoint">
+        <field name="partner_id" ref="base.res_partner_2" />
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_2_demo" model="route.checkpoint">
+        <field name="partner_id" ref="base.res_partner_3" />
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_3_demo" model="route.checkpoint">
+        <field name="latitude">40.42089824019973</field>
+        <field name="longitude">-3.63856677353255</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_4_demo" model="route.checkpoint">
+        <field name="latitude">40.43231505532147</field>
+        <field name="longitude">-3.665351094863614</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_5_demo" model="route.checkpoint">
+        <field name="latitude">40.43765879483703</field>
+        <field name="longitude">-3.6835879974053403</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_7_demo" model="route.checkpoint">
+        <field name="latitude">40.42978104292568</field>
+        <field name="longitude">-3.747812910919574</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_8_demo" model="route.checkpoint">
+        <field name="latitude">40.464522539617555</field>
+        <field name="longitude">-3.6375814094970718</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_9_demo" model="route.checkpoint">
+        <field name="latitude">40.474283609123006</field>
+        <field name="longitude">-3.68309177922432</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_north_checkpoint_10_demo" model="route.checkpoint">
+        <field name="latitude">40.499549936822405</field>
+        <field name="longitude">-3.654228437779411</field>
+        <field name="route_id" ref="route_north_demo" />
+    </record>
+    <record id="route_south_checkpoint_1_demo" model="route.checkpoint">
+        <field name="latitude">40.372390463125214</field>
+        <field name="longitude">-3.729184970076142</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_2_demo" model="route.checkpoint">
+        <field name="latitude">40.39539630632711</field>
+        <field name="longitude">-3.697984067539168</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_3_demo" model="route.checkpoint">
+        <field name="latitude">40.38679121485028</field>
+        <field name="longitude">-3.7195503816596522</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_4_demo" model="route.checkpoint">
+        <field name="latitude">40.38273385466708</field>
+        <field name="longitude">-3.7036082330078943</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_5_demo" model="route.checkpoint">
+        <field name="latitude">40.37240230951635</field>
+        <field name="longitude">-3.695297160251053</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_6_demo" model="route.checkpoint">
+        <field name="latitude">40.36782907744416</field>
+        <field name="longitude">-3.7011408318376917</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <record id="route_south_checkpoint_7_demo" model="route.checkpoint">
+        <field name="latitude">40.36921362341327</field>
+        <field name="longitude">-3.6857641722632324</field>
+        <field name="route_id" ref="route_south_demo" />
+    </record>
+    <function
+        model="route.route"
+        name="action_planned"
+        eval="[ref('route_north_demo')]"
+    />
+    <function
+        model="route.checkpoint"
+        name="action_done"
+        eval="[ref('route_north_checkpoint_5_demo')]"
+    />
+    <function model="route.checkpoint" name="_action_create_incident">
+        <value eval="ref('route_checkpoint_with_incident_demo')" />
+        <value
+            eval="obj(ref('incident_type_customer_not_available_demo'))"
+            model="route.incident.type"
+        />
+        <value eval="'Incident note'" />
+    </function>
+</odoo>

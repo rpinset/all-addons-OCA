@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_route_list" model="ir.ui.view">
+        <field name="name">route.route.list</field>
+        <field name="model">route.route</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="route_area_id" />
+                <field name="schedule_date" />
+                <field name="time_start" widget="float_time" />
+                <field name="waiting_time" widget="float_time" />
+                <field name="start_location_id" />
+                <field name="user_id" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-info="state == 'planned'"
+                    decoration-success="state == 'done'"
+                />
+                <field name="company_id" groups="base.group_multi_company" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_route_route_form" model="ir.ui.view">
+        <field name="name">route.route.form</field>
+        <field name="model">route.route</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_planned"
+                        id="plan_route_button_primary"
+                        type="object"
+                        string="Plan"
+                        class="btn-primary"
+                        invisible="state != 'draft'"
+                        groups="route_planning.group_route_planning_user"
+                    />
+                    <button
+                        name="action_view_map"
+                        type="object"
+                        string="View Map"
+                        class="btn-secondary"
+                        invisible="state not in ['planned', 'in_progress']"
+                    />
+                    <button
+                        name="action_open_google_maps"
+                        type="object"
+                        string="Open in Google Maps"
+                        class="btn-secondary"
+                        invisible="state not in ['planned', 'in_progress']"
+                    />
+                    <button
+                        name="action_draft"
+                        type="object"
+                        string="Back to Draft"
+                        invisible="state != 'planned'"
+                        groups="route_planning.group_route_planning_user"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,planned,done"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Route name..." />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field
+                                name="route_area_id"
+                                domain="[('user_id', '=', uid)]"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True}"
+                            />
+                            <field
+                                name="start_location_id"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True}"
+                            />
+                            <field
+                                name="user_id"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True}"
+                            />
+                        </group>
+                        <group>
+                            <field name="schedule_date" readonly="state != 'draft'" />
+                            <field
+                                name="time_start"
+                                widget="float_time"
+                                readonly="state != 'draft'"
+                            />
+                            <field
+                                name="waiting_time"
+                                widget="float_time"
+                                readonly="state != 'draft'"
+                            />
+                            <field
+                                name="company_id"
+                                readonly="state != 'draft'"
+                                options="{'no_create': True, 'no_open': True}"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="checkpoints" string="Checkpoints">
+                            <field
+                                name="checkpoint_ids"
+                                mode="list,kanban"
+                                readonly="state not in ['draft', 'planned', 'in_progress']"
+                            >
+                                <list editable="bottom" delete="0">
+                                    <field
+                                        name="sequence"
+                                        widget="handle"
+                                        invisible="state in ['done', 'incident']"
+                                    />
+                                    <field
+                                        name="schedule_time"
+                                        widget="float_time"
+                                        readonly="state in ['done', 'incident']"
+                                    />
+                                    <field
+                                        name="partner_id"
+                                        readonly="state != 'draft'"
+                                    />
+                                    <field
+                                        name="latitude"
+                                        readonly="state != 'draft'"
+                                        optional="show"
+                                    />
+                                    <field
+                                        name="longitude"
+                                        readonly="state != 'draft'"
+                                        optional="show"
+                                    />
+                                    <field
+                                        name="note"
+                                        readonly="state in ['done', 'incident']"
+                                        optional="show"
+                                    />
+                                    <field
+                                        name="state"
+                                        widget="badge"
+                                        decoration-info="state == 'planned'"
+                                        decoration-success="state == 'done'"
+                                        decoration-warning="state == 'incident'"
+                                    />
+                                    <button
+                                        name="action_open_checkpoint"
+                                        type="object"
+                                        icon="fa-eye"
+                                        string="View"
+                                    />
+                                    <button
+                                        name="action_view_origin_checkpoint"
+                                        type="object"
+                                        icon="fa-arrow-circle-left"
+                                        string="View Origin"
+                                        invisible="not origin_checkpoint_id"
+                                    />
+                                    <button
+                                        name="action_done"
+                                        type="object"
+                                        string="Mark as done"
+                                        confirm="Do you want to mark this checkpoint as done?"
+                                        class="btn-success"
+                                        icon="fa-check"
+                                        invisible="state != 'planned'"
+                                        groups="route_planning.group_route_planning_user"
+                                    />
+                                    <button
+                                        name="%(action_route_create_incident)d"
+                                        type="action"
+                                        string="Create Incident"
+                                        class="btn-warning"
+                                        invisible="state != 'planned'"
+                                        groups="route_planning.group_route_planning_user"
+                                    />
+                                    <button
+                                        name="action_back_to_planned"
+                                        type="object"
+                                        string="Back to Planned"
+                                        confirm="Do you want to set this checkpoint back to planned?"
+                                        icon="fa-undo"
+                                        invisible="state not in ['done', 'incident'] or route_state == 'done'"
+                                        groups="route_planning.group_route_planning_user"
+                                    />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <record id="route_route_view_calendar" model="ir.ui.view">
+        <field name="name">route.route.view.calendar</field>
+        <field name="model">route.route</field>
+        <field name="arch" type="xml">
+            <calendar
+                date_start="schedule_date"
+                color="user_id"
+                quick_create="0"
+                mode="month"
+                hide_time="true"
+            >
+                <field name="route_area_id" options="{'no_open': True}" />
+                <field name="user_id" options="{'no_open': True}" filters="1" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-info="state == 'draft'"
+                    decoration-warning="state == 'planned'"
+                    decoration-success="state == 'done'"
+                    decoration-danger="state == 'incident'"
+                />
+            </calendar>
+        </field>
+    </record>
+
+    <record id="route_route_view_kanban" model="ir.ui.view">
+        <field name="name">route.route.view.kanban</field>
+        <field name="model">route.route</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" group_create="0" records_draggable="0">
+                <progressbar
+                    field="state"
+                    colors='{"planned": "info", "done": "success"}'
+                />
+                <templates>
+                    <t t-name="card">
+                        <main class="pe-2">
+                            <field name="name" class="fw-bold fs-5 ms-1" />
+                        </main>
+                        <footer class="align-items-end">
+                            <div class="d-flex flex-column text-nowrap">
+                                <div class="col-12">
+                                    <strong>Area:</strong>
+                                    <field name="route_area_id" class="ps-1" />
+                                </div>
+                                <div class="col-12">
+                                    <strong>User:</strong>
+                                    <field name="user_id" class="ps-1" />
+                                </div>
+                                <div class="col-12 d-flex flex-wrap">
+                                    <field name="schedule_date" />
+                                    <field
+                                        name="time_start"
+                                        widget="float_time"
+                                        class="ps-1"
+                                    />
+                                </div>
+                            </div>
+                            <field
+                                name="state"
+                                widget="label_selection"
+                                options="{'classes': {'planned': 'info', 'done': 'success'}}"
+                                class="ms-auto"
+                            />
+                        </footer>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_route_route_search" model="ir.ui.view">
+        <field name="name">route.route.search</field>
+        <field name="model">route.route</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="route_area_id" />
+                <field name="user_id" />
+                <filter
+                    name="my_routes"
+                    string="My Routes"
+                    domain="[('user_id', '=', uid)]"
+                />
+                <separator />
+                <filter
+                    name="filter_date"
+                    string="Schedule date"
+                    date="schedule_date"
+                />
+                <separator />
+                <filter
+                    name="draft"
+                    string="Draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    name="planned"
+                    string="Planned"
+                    domain="[('state', '=', 'planned')]"
+                />
+                <filter name="done" string="Done" domain="[('state', '=', 'done')]" />
+                <group string="Group By">
+                    <filter
+                        name="group_by_area"
+                        string="Area"
+                        context="{'group_by': 'route_area_id'}"
+                    />
+                    <filter
+                        name="group_by_user"
+                        string="User"
+                        context="{'group_by': 'user_id'}"
+                    />
+                    <filter
+                        name="group_by_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_by_company"
+                        string="Company"
+                        context="{'group_by': 'company_id'}"
+                        groups="base.group_multi_company"
+                    />
+                    <separator />
+                    <filter
+                        name="group_by_date"
+                        string="Schedule date"
+                        context="{'group_by': 'schedule_date'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_route_route" model="ir.actions.act_window">
+        <field name="name">Routes</field>
+        <field name="res_model">route.route</field>
+        <field name="view_mode">list,form,kanban,calendar</field>
+        <field name="context">{"search_default_my_routes": 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first route
+            </p>
+            <p>
+                Routes help organize delivery schedules and track progress.
+            </p>
+        </field>
+    </record>
+</odoo>

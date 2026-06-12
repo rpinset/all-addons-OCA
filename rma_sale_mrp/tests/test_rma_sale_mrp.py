@@ -2,8 +2,10 @@
 # Copyright 2022 Tecnativa - Víctor Martínez
 # Copyright 2023 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from odoo import Command
 from odoo.exceptions import UserError, ValidationError
 from odoo.tests import Form
+from odoo.tools import mute_logger
 
 from odoo.addons.rma_sale.tests.test_rma_sale import TestRmaSaleBase
 
@@ -27,14 +29,10 @@ class TestRmaSaleMrpBase(TestRmaSaleBase):
                 "product_tmpl_id": cls.product_kit.product_tmpl_id.id,
                 "type": "phantom",
                 "bom_line_ids": [
-                    (
-                        0,
-                        0,
+                    Command.create(
                         {"product_id": cls.product_kit_comp_1.id, "product_qty": 2},
                     ),
-                    (
-                        0,
-                        0,
+                    Command.create(
                         {"product_id": cls.product_kit_comp_2.id, "product_qty": 4},
                     ),
                 ],
@@ -68,9 +66,12 @@ class TestRmaSaleMrpBase(TestRmaSaleBase):
 
 
 class TestRmaSaleMrp(TestRmaSaleMrpBase):
+    @mute_logger("odoo.models.unlink")
     def test_create_rma_from_so(self):
         self.operation.action_create_refund = "manual_after_receipt"
+        self.product_kit_comp_2.invoice_policy = "delivery"
         order = self.sale_order
+        order._create_invoices()
         out_pickings = self.order_out_picking + self.backorder
         wizard = self._rma_sale_wizard(order)
         wizard.line_ids.quantity = 4
@@ -139,6 +140,7 @@ class TestRmaSaleMrp(TestRmaSaleMrpBase):
         with self.assertRaises(ValidationError):
             wizard.line_ids.quantity = 2
 
+    @mute_logger("odoo.models.unlink")
     def test_report_rma(self):
         wizard = self._rma_sale_wizard(self.sale_order)
         wizard.line_ids.quantity = 4

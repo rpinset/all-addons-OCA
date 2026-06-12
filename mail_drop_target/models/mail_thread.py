@@ -1,11 +1,14 @@
 # Copyright 2018 Therp BV <https://therp.nl>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 from base64 import b64decode
+from email import message_from_bytes, policy
+from xmlrpc import client as xmlrpclib
 
 import chardet
 import lxml.html
 
 from odoo import _, api, exceptions, models
+from odoo.tools import str2bool
 
 try:
     from extract_msg import Message
@@ -26,7 +29,7 @@ class MailThread(models.AbstractModel):
         strip_attachments=False,
         thread_id=None,
     ):
-        disable_notify_mail_drop_target = (
+        disable_notify_mail_drop_target = str2bool(
             self.env["ir.config_parameter"]
             .sudo()
             .get_param("mail_drop_target.disable_notify", default=False)
@@ -65,8 +68,58 @@ class MailThread(models.AbstractModel):
         strip_attachments=False,
         thread_id=None,
     ):
-        message = _("This message is already imported.")
-        raise exceptions.UserError(message)
+        message_id = self._mail_drop_get_message_id(message)
+        existing = (
+            self.env["mail.message"]
+            .sudo()
+            .search([("message_id", "=", message_id)], limit=1)
+            if message_id
+            else self.env["mail.message"]
+        )
+        error = _("This message is already imported. ")
+        if not existing:
+            raise exceptions.UserError(error)
+        locations = self._mail_drop_describe_existing(existing)
+        if locations:
+            error += _(
+                "The already imported copy is attached to: %(locations)s",
+                locations=locations,
+            )
+        raise exceptions.UserError(error)
+
+    @api.model
+    def _mail_drop_get_message_id(self, message):
+        if isinstance(message, xmlrpclib.Binary):
+            message = bytes(message.data)
+        if isinstance(message, str):
+            message = message.encode("utf-8")
+        mail = message_from_bytes(message, policy=policy.SMTP)
+        message_id = mail.get("Message-Id")
+        return message_id.strip() if message_id else False
+
+    @api.model
+    def _mail_drop_describe_existing(self, messages):
+        if (
+            not messages
+            or not messages.model
+            or not messages.res_id
+            or messages.model not in self.env
+        ):
+            return False
+        try:
+            record = self.env[messages.model].browse(messages.res_id).exists()
+            name = (
+                record.display_name if record else _("a record that no longer exists.")
+            )
+        except exceptions.AccessError:
+            name = _("a record you are not allowed to access.")
+        model_label = self.env["ir.model"]._get(messages.model).name or messages.model
+        return _(
+            "%(model)s --> %(name)s (ID = %(res_id)s).",
+            model=model_label,
+            name=name,
+            res_id=messages.res_id,
+        )
 
     @api.model
     def message_process_msg(

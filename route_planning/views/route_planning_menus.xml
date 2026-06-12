@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_route_planning_main"
+        name="Route Planning"
+        sequence="50"
+        web_icon="route_planning,static/description/icon.png"
+        groups="group_route_planning_user"
+    >
+        <menuitem id="menu_route_planning_operations" name="Operations" sequence="10">
+            <menuitem
+                id="menu_route_route"
+                name="Routes"
+                action="action_route_route"
+                sequence="10"
+            />
+            <menuitem
+                id="menu_route_checkpoint"
+                name="Checkpoints"
+                action="action_route_checkpoint"
+                sequence="20"
+            />
+        </menuitem>
+        <menuitem
+            id="menu_route_planning_config"
+            name="Configuration"
+            groups="group_route_planning_manager"
+            sequence="90"
+        >
+            <menuitem
+                id="menu_route_area"
+                name="Areas"
+                action="action_route_area"
+                sequence="10"
+            />
+            <menuitem
+                id="menu_route_incident_type"
+                name="Incident Types"
+                action="action_route_incident_type"
+                sequence="20"
+            />
+            <menuitem
+                id="menu_route_visitwindow_template"
+                name="Visit Window Templates"
+                action="action_route_visitwindow_template"
+                sequence="30"
+            />
+        </menuitem>
+    </menuitem>
+</odoo>

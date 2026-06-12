@@ -5,7 +5,7 @@
 {
     "name": "Storage File",
     "summary": "Storage file in storage backend",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.2.0",
     "category": "Storage",
     "website": "https://github.com/OCA/storage",
     "author": " Akretion, Odoo Community Association (OCA)",
@@ -22,5 +22,7 @@
         "security/storage_file.xml",
         "data/ir_cron.xml",
         "data/storage_backend.xml",
+        "wizards/swap_backend.xml",
+        "data/ir_config_parameter.xml",
     ],
 }
