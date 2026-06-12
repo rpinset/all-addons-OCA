@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -241,9 +241,15 @@ msgstr ""
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__display_name
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi__display_name
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi_expression__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -298,9 +304,15 @@ msgstr ""
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item_abstract__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_instance_period__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi__id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_report_kpi_expression__id
 msgid "ID"
 msgstr ""
 
@@ -550,14 +562,14 @@ msgid "Website communication history"
 msgstr ""
 
 #. module: mis_builder_budget
-#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit2
+#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit_check_2
 msgid ""
 "Wrong credit or debit value in budget item! Credit and debit should be "
 "positive."
 msgstr ""
 
 #. module: mis_builder_budget
-#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit1
+#: model:ir.model.constraint,message:mis_builder_budget.constraint_mis_budget_by_account_item_credit_debit_check_1
 msgid ""
 "Wrong credit or debit value in budget item! Credit or debit should be zero."
 msgstr ""

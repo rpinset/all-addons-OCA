@@ -46,7 +46,7 @@ class MisBudgetItemAbstract(models.AbstractModel):
                 ):
                     rec.date_range_id = False
 
-    def _prepare_overlap_domain(self):
+    def _prepare_overlap_domain(self) -> list:
         """Prepare a domain to check for overlapping budget items."""
         self.ensure_one()
         domain = [

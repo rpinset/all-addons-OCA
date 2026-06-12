@@ -44,27 +44,23 @@ class MisBudgetByAccountItem(models.Model):
         check_company=True,
     )
 
-    _sql_constraints = [
-        (
-            "credit_debit1",
-            "CHECK (credit*debit=0)",
-            "Wrong credit or debit value in budget item! "
-            "Credit or debit should be zero.",
-        ),
-        (
-            "credit_debit2",
-            "CHECK (credit+debit>=0)",
-            "Wrong credit or debit value in budget item! "
-            "Credit and debit should be positive.",
-        ),
-    ]
+    _credit_debit_check_1 = models.Constraint(
+        "CHECK (credit*debit=0)",
+        "Wrong credit or debit value in budget item! Credit or debit should be zero.",
+    )
+
+    _credit_debit_check_2 = models.Constraint(
+        "CHECK (credit+debit>=0)",
+        "Wrong credit or debit value in budget item! "
+        "Credit and debit should be positive.",
+    )
 
     @api.depends("debit", "credit")
     def _compute_balance(self):
         for rec in self:
             rec.balance = rec.debit - rec.credit
 
-    def _prepare_overlap_domain(self):
+    def _prepare_overlap_domain(self) -> list:
         """Prepare a domain to check for overlapping budget items."""
         if self.budget_id.allow_items_overlap:
             # Trick mis.budget.abstract._check_dates into never seeing
@@ -84,8 +80,7 @@ class MisBudgetByAccountItem(models.Model):
         "account_id",
     )
     def _check_dates(self):
-        super()._check_dates()
-        return
+        return super()._check_dates()
 
     def _inverse_balance(self):
         for rec in self:

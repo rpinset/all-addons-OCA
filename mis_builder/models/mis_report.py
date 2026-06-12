@@ -910,7 +910,7 @@ class MisReport(models.Model):
         return "parent_state" in self.env[aml_model_name]._fields
 
     @api.model
-    def _get_target_move_domain(self, target_move, aml_model_name):
+    def _get_target_move_domain(self, target_move, aml_model_name) -> list:
         """
         Obtain a domain to apply on a move-line-like model, to get posted
         entries or return all of them (always excluding cancelled entries).

@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, models
-from odoo.osv.expression import AND
+from odoo.fields import Domain
 
 from odoo.addons.mis_builder.models.accounting_none import AccountingNone
 from odoo.addons.mis_builder.models.expression_evaluator import ExpressionEvaluator
@@ -30,9 +30,9 @@ class MisBudgetAwareExpressionEvaluator(ExpressionEvaluator):
             if kpi is None:
                 kpi = expression.kpi_id
             else:
-                assert (
-                    kpi == expression.kpi_id
-                ), "expressions must belong to the same kpi"
+                assert kpi == expression.kpi_id, (
+                    "expressions must belong to the same kpi"
+                )
         return kpi
 
     def eval_expressions(self, expressions, locals_dict):
@@ -52,7 +52,7 @@ class MisReportInstance(models.Model):
 
     def _add_column_mis_budget(self, aep, kpi_matrix, period, label, description):
         # fetch budget data for the period
-        base_domain = AND(
+        base_domain = Domain.AND(
             [
                 [("budget_id", "=", period.source_mis_budget_id.id)],
                 period._get_additional_budget_item_filter(),

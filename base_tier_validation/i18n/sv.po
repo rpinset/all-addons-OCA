@@ -531,6 +531,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__pending
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
 msgid "Pending"
@@ -550,6 +551,7 @@ msgstr "Neka"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__rejected
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__rejected
 msgid "Rejected"
@@ -795,6 +797,7 @@ msgstr "Validera Neka"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__validated
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__validated
 msgid "Validated"
 msgstr "Validerad"
@@ -842,6 +845,7 @@ msgstr "Valideringar"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__waiting
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__waiting
 msgid "Waiting"
@@ -851,6 +855,7 @@ msgstr "Väntar på"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__no
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__no
 msgid "Without validation"
 msgstr "Utan validering"

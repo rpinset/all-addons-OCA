@@ -14,8 +14,7 @@ class MisBudgetItem(models.Model):
     report_id = fields.Many2one(related="budget_id.report_id")
     kpi_expression_id = fields.Many2one(
         domain=(
-            "[('kpi_id.report_id', '=', report_id),"
-            " ('kpi_id.budgetable', '=', True)]"
+            "[('kpi_id.report_id', '=', report_id), ('kpi_id.budgetable', '=', True)]"
         )
     )
 
@@ -34,7 +33,7 @@ class MisBudgetItem(models.Model):
         for rec in self:
             rec.company_id = rec.budget_id.company_id
 
-    def _prepare_overlap_domain(self):
+    def _prepare_overlap_domain(self) -> list:
         """Prepare a domain to check for overlapping budget items."""
         domain = super()._prepare_overlap_domain()
         domain.extend(
@@ -54,5 +53,4 @@ class MisBudgetItem(models.Model):
         "company_id",
     )
     def _check_dates(self):
-        super()._check_dates()
-        return
+        return super()._check_dates()

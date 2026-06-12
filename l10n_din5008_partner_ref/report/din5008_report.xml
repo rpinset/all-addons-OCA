@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="report_invoice_document"
+        inherit_id="l10n_din5008.report_invoice_document"
+        priority="100"
+    >
+        <xpath expr="//tr[@t-if='o.invoice_date_due']" position="after">
+            <tr
+                t-if="o.is_sale_document(include_receipts=True) and o.commercial_partner_id.ref"
+            >
+                <td>Your Customer No.</td>
+                <td>
+                    <t t-out="o.commercial_partner_id.ref" />
+                </td>
+            </tr>
+        </xpath>
+    </template>
+</odoo>

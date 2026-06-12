@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,23 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: mis_builder_demo
-#: model:mis.report.instance.period,name:mis_builder_demo.mis_report_instance_expenses_bud
-msgid "3 M Budget"
-msgstr ""
-
-#. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase__account_id
 msgid "Account"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.instance.period,name:mis_builder_demo.mis_report_instance_expenses_avail
-msgid "Available"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.instance.period,name:mis_builder_demo.mis_report_instance_expenses_commit
-msgid "Committed"
 msgstr ""
 
 #. module: mis_builder_demo
@@ -54,28 +39,8 @@ msgid "Debit"
 msgstr ""
 
 #. module: mis_builder_demo
-#: model:mis.report,name:mis_builder_demo.mis_report_expenses
-msgid "Demo Expenses"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.instance,name:mis_builder_demo.mis_report_instance_expenses
-msgid "Demo Expenses vs Budget"
-msgstr ""
-
-#. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase__display_name
 msgid "Display Name"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.kpi,description:mis_builder_demo.mis_report_expenses_kpi_equip
-msgid "Equipment"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.kpi,description:mis_builder_demo.mis_report_expenses_kpi_exp
-msgid "Expenses"
 msgstr ""
 
 #. module: mis_builder_demo
@@ -89,16 +54,6 @@ msgid "Line Type"
 msgstr ""
 
 #. module: mis_builder_demo
-#: model:mis.report.instance.period,name:mis_builder_demo.mis_report_instance_expenses_act_mm1
-msgid "M-1"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.instance.period,name:mis_builder_demo.mis_report_instance_expenses_act_mm2
-msgid "M-2"
-msgstr ""
-
-#. module: mis_builder_demo
 #: model:ir.model,name:mis_builder_demo.model_mis_committed_purchase
 msgid "MIS Commitment"
 msgstr ""
@@ -109,11 +64,6 @@ msgid "Name"
 msgstr ""
 
 #. module: mis_builder_demo
-#: model:mis.report.kpi,description:mis_builder_demo.mis_report_expenses_kpi_other
-msgid "Other"
-msgstr ""
-
-#. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase__res_id
 msgid "Resource ID"
 msgstr ""
@@ -121,9 +71,4 @@ msgstr ""
 #. module: mis_builder_demo
 #: model:ir.model.fields,field_description:mis_builder_demo.field_mis_committed_purchase__res_model
 msgid "Resource Model Name"
-msgstr ""
-
-#. module: mis_builder_demo
-#: model:mis.report.kpi,description:mis_builder_demo.mis_report_expenses_kpi_total
-msgid "Total"
 msgstr ""

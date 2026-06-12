@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
-from odoo.osv.expression import AND
+from odoo.fields import Domain
 
 SRC_MIS_BUDGET = "mis_budget"
 SRC_MIS_BUDGET_BY_ACCOUNT = "mis_budget_by_account"
@@ -41,7 +41,7 @@ class MisReportInstancePeriod(models.Model):
                 )
         return super()._compute_source_aml_model_id()
 
-    def _get_additional_move_line_filter(self):
+    def _get_additional_move_line_filter(self) -> list:
         domain = super()._get_additional_move_line_filter()
         if self.source == SRC_MIS_BUDGET_BY_ACCOUNT:
             domain.extend([("budget_id", "=", self.source_mis_budget_by_account_id.id)])
@@ -72,7 +72,7 @@ class MisReportInstancePeriod(models.Model):
         filters = self._get_additional_move_line_filter()
 
         query_companies = self.report_instance_id.query_company_ids
-        filters = AND(
+        filters = Domain.AND(
             [
                 filters,
                 [

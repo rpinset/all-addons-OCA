@@ -375,7 +375,7 @@ class MisReportInstancePeriod(models.Model):
         if self.source and not self.report_instance_id.id:
             self.report_instance_id = self.report_instance_id._origin.id
 
-    def _get_additional_move_line_filter(self):
+    def _get_additional_move_line_filter(self) -> list:
         """Prepare a filter to apply on all move lines
 
         This filter will be applied with a AND operator on all accounting expression
@@ -730,7 +730,7 @@ class MisReportInstance(models.Model):
         self.ensure_one()
         context["mis_analytic_domain"] = ast.literal_eval(self.analytic_domain)
 
-    def _get_filter_domain(self, source_aml_model_name):
+    def _get_filter_domain(self, source_aml_model_name) -> list:
         """Return the domain to filter the source move lines.
 
         It combines
