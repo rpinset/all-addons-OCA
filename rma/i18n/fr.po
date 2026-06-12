@@ -207,8 +207,8 @@ msgid ""
 "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" "
 "title=\"Manage\"/>"
 msgstr ""
-"<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title="
-"\"Manage\"/>"
+"<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" "
+"title=\"Manage\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -1600,7 +1600,8 @@ msgstr "Qté de produit"
 #: model:ir.model.fields,help:rma.field_stock_return_picking_line__return_product_id
 msgid ""
 "Product to be returned if it's different from the originally delivered item."
-msgstr "Produit à retourner s'il est différent de l'article initialement livré."
+msgstr ""
+"Produit à retourner s'il est différent de l'article initialement livré."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_tag__is_public
@@ -2017,9 +2018,9 @@ msgid ""
 "has been created."
 msgstr ""
 "Remplacement : Mouvement <a href=\"#\" data-oe-model=\"stock.move\" data-oe-"
-"id=\"%(move_id)d\">%(move_name)s</a> (Transfert<a href=\"#\" data-oe-model="
-"\"stock.picking\" data-oe-id=\"%(picking_id)d\"> %(picking_name)s</a>) a été "
-"créé."
+"id=\"%(move_id)d\">%(move_name)s</a> (Transfert<a href=\"#\" data-oe-"
+"model=\"stock.picking\" data-oe-id=\"%(picking_id)d\"> %(picking_name)s</a>) "
+"a été créé."
 
 #. module: rma
 #. odoo-python
@@ -2091,6 +2092,13 @@ msgstr "Ligne de préparation des retours"
 #: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__return_product_id
 msgid "Return Product"
 msgstr "Retour du produit"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+#, python-format
+msgid "Return of %s"
+msgstr ""
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
@@ -2373,8 +2381,8 @@ msgid ""
 msgstr ""
 "Le système d’opérations RMA vous permet de configurer chaque opération de "
 "retour\n"
-"                                     avec des paramètres spécifiques afin d’"
-"en adapter le comportement."
+"                                     avec des paramètres spécifiques afin "
+"d’en adapter le comportement."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_tag__active
@@ -2719,8 +2727,8 @@ msgid ""
 "{{object.company_id.name}} Your RMA has been succesfully created (Ref "
 "{{object.name or 'n/a' }})"
 msgstr ""
-"{{object.company_id.name}} Votre RMA a été crée avec succès(Ref {{object."
-"name or 'n/a' }})"
+"{{object.company_id.name}} Votre RMA a été crée avec succès(Ref "
+"{{object.name or 'n/a' }})"
 
 #~ msgid "<strong>Delivered qty:</strong>"
 #~ msgstr "<strong>Quantité livrée:</strong>"

@@ -629,7 +629,7 @@ class EDIExchangeRecord(models.Model):
                     offset=offset + len(orig_ids),
                     limit=limit,
                     order=order,
-                    count=count,
+                    count=False,
                     access_rights_uid=access_rights_uid,
                 )[: limit - len(result)]
             )

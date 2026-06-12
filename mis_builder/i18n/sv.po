@@ -38,8 +38,8 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable')."
-"id)][]\n"
+"                                            data_account_type_receivable').id)]"
+"[]\n"
 "                                        </code>\n"
 "                                        : variation of the balance of all "
 "receivable accounts over\n"
@@ -48,8 +48,8 @@ msgstr ""
 "<code> balp[('user_type_id' '=')\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('konto.\n"
-"                                            data_account_type_receivable')."
-"id)][]\n"
+"                                            data_account_type_receivable').id)]"
+"[]\n"
 "                                        </code>\n"
 "                                        : variation av saldot för alla "
 "kundfordringar under\n"
@@ -262,9 +262,9 @@ msgid ""
 "all move line sources."
 msgstr ""
 "En domän för att ytterligare filtrera flyttlinjer som beaktas i denna "
-"rapport. Varning: när du använder olika flyttgränskällor i olika kolumner, t."
-"ex. budgetar per konto, se till att endast använda fält som är tillgängliga "
-"i alla flyttgränskällor."
+"rapport. Varning: när du använder olika flyttgränskällor i olika kolumner, "
+"t.ex. budgetar per konto, se till att endast använda fält som är "
+"tillgängliga i alla flyttgränskällor."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__account_model
@@ -767,6 +767,11 @@ msgid "Export"
 msgstr "Exportera"
 
 #. module: mis_builder
+#: model:ir.actions.server,name:mis_builder.mis_builder_print_xls_report
+msgid "Export XLS"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__expression
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__expression_ids
@@ -790,14 +795,14 @@ msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
 "                                    query results by name (eg <code>kpi1 + "
 "kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1."
-"field1</code>)."
+"                                    <code>kpi2.subkpi1</code>, "
+"<code>query1.field1</code>)."
 msgstr ""
 "Uttryck kan involvera andra KPI, sub KPI och\n"
 "                                    sökresultat efter namn (t.ex. <code>kpi1 "
 "+ kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1."
-"field1</code>)."
+"                                    <code>kpi2.subkpi1</code>, "
+"<code>query1.field1</code>)."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__normalize_factor
@@ -2019,8 +2024,8 @@ msgstr "mot"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "when <code>fld</code> is used : a field name specifier\n"
-"                                        must be provided (e.g. <code>fldp."
-"quantity</code>"
+"                                        must be provided (e.g. "
+"<code>fldp.quantity</code>"
 msgstr ""
 
 #. module: mis_builder

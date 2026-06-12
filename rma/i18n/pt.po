@@ -1940,6 +1940,13 @@ msgid "Return Product"
 msgstr ""
 
 #. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+#, python-format
+msgid "Return of %s"
+msgstr ""
+
+#. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
 #: model:ir.model.fields.selection,name:rma.selection__rma_delivery_wizard__type__return
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -2618,8 +2625,8 @@ msgstr ""
 #~ "data-oe-id=\"%d\">%s</a>) has been created."
 #~ msgstr ""
 #~ "Substituição: Movimentação <a href=\"#\" data-oe-model=\"stock.move\" "
-#~ "data-oe-id=\"%d\">%s</a> (A Coleta <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a> foi criada."
+#~ "data-oe-id=\"%d\">%s</a> (A Coleta <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a> foi criada."
 
 #, python-format
 #~ msgid ""
@@ -2628,10 +2635,10 @@ msgstr ""
 #~ "create a new move, but one of the previously created moves was updated "
 #~ "with this data."
 #~ msgstr ""
-#~ "Substituição:<br/> Produto <a href=\"#\" data-oe-model=\"product."
-#~ "product\" data-oe-id=\"%d\">%s</a><br/> Quantidade %f%s<br/> Essa "
-#~ "substituição não criou uma nova movimentação, mas uma das movimentos "
-#~ "criadas anteriormente foi atualizada com esses dados."
+#~ "Substituição:<br/> Produto <a href=\"#\" data-oe-"
+#~ "model=\"product.product\" data-oe-id=\"%d\">%s</a><br/> Quantidade "
+#~ "%f%s<br/> Essa substituição não criou uma nova movimentação, mas uma das "
+#~ "movimentos criadas anteriormente foi atualizada com esses dados."
 
 #, python-format
 #~ msgid ""

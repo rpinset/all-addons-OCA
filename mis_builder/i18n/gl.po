@@ -38,36 +38,39 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable').id)][]\n"
+"                                            data_account_type_receivable').id)]"
+"[]\n"
 "                                        </code>\n"
-"                                        : variation of the balance of all receivable accounts over\n"
+"                                        : variation of the balance of all "
+"receivable accounts over\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
-"                                                                                                  "
-"balp[('user_type_id', '=',\n"
-"                                                                                                   "
-"ref('account.\n"
-"                                                                                                    "
-"data_account_type_receivable').id)][]\n"
-"                                                                                            "
-"</code>\n"
-"                                                                                            "
-": variación do saldo de todas as contas a cobrar durante\n"
-"                                                                                            "
-"o período."
+"                                                                                                  balp[('user_type_id', "
+"'=',\n"
+"                                                                                                   ref('account.\n"
+"                                                                                                    data_account_type_receivable').id)]"
+"[]\n"
+"                                                                                            </"
+"code>\n"
+"                                                                                            : "
+"variación do saldo de todas as contas a cobrar durante\n"
+"                                                                                            o "
+"período."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]\n"
+"                                            balp[][('tax_line_id.tag_ids', "
+"'=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
-"                                        : balance of move lines related to tax grid 56."
+"                                        : balance of move lines related to "
+"tax grid 56."
 msgstr ""
 "<code>\n"
-"                                                                  balp[]["
-"('tax_line_id.etiqueta_ids', '=',ref('l10n_be.tax_etiqueta_56').id)]\n"
+"                                                                  balp[]"
+"[('tax_line_id.etiqueta_ids', '=',ref('l10n_be.tax_etiqueta_56').id)]\n"
 "                                                                 </code>\n"
 "                                                                 : Balance "
 "das liñas de movemento relacionadas coa cuadrícula fiscal 56."
@@ -76,23 +79,24 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            debp[55%][('journal_id.code', '=',\n"
+"                                            debp[55%][('journal_id.code', "
+"'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : sum of all debits on accounts 55 and journal BNK1 during\n"
+"                                        : sum of all debits on accounts 55 "
+"and journal BNK1 during\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
-"                                                                                                  "
-"debp[55%][('journal_id.code', '=',\n"
-"                                                                                                  "
-"'BNK1')]\n"
-"                                                                                           "
-"</code>\n"
-"                                                                                           "
-": suma de todos os cargos nas contas 55 e o diario BNK1 durante\n"
-"                                                                                           "
-"o período."
+"                                                                                                  debp[55%]"
+"[('journal_id.code', '=',\n"
+"                                                                                                  'BNK1')]\n"
+"                                                                                           </"
+"code>\n"
+"                                                                                           : "
+"suma de todos os cargos nas contas 55 e o diario BNK1 durante\n"
+"                                                                                           o "
+"período."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -108,7 +112,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
-"                                        pbal</code>, <code>nbal</code>, <code>fld</code> : balance, debit, credit,\n"
+"                                        pbal</code>, <code>nbal</code>, "
+"<code>fld</code> : balance, debit, credit,\n"
 "                                        positive balance, negative balance,\n"
 "                                        other numerical field."
 msgstr ""
@@ -117,11 +122,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal[70]</code> : variation of the balance of account 70 over\n"
-"                                        the period (it is the same as <code>balp[70]</code>."
+"                                        the period (it is the same as "
+"<code>balp[70]</code>."
 msgstr ""
 "<code>bal[70]</code> : variación do saldo da conta 70 sobre\n"
-"                                                                                          "
-"o período (é o mesmo que <code>balp[70]</code>."
+"                                                                                          o "
+"período (é o mesmo que <code>balp[70]</code>."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -130,8 +136,8 @@ msgid ""
 "                                        end of period."
 msgstr ""
 "<code>bale[1%]</code> : saldo de contas que comezan con 1 en fin\n"
-"                                                                                         "
-"do período."
+"                                                                                         do "
+"período."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -141,17 +147,17 @@ msgstr "<code>bali[70,60]</code> : saldo inicial das contas 70 e 60."
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>balu[]</code> : (<code>u</code> for unallocated) is a special expression\n"
-"                                        that shows the unallocated profit/loss of previous fiscal\n"
+"<code>balu[]</code> : (<code>u</code> for unallocated) is a special "
+"expression\n"
+"                                        that shows the unallocated profit/"
+"loss of previous fiscal\n"
 "                                        years."
 msgstr ""
 "<code>balu[]</code> : (<code>ou</code> para non asignado) é unha expresión "
 "especial\n"
-"                                                                                        "
-"que mostra a ganancia/perda non asignada de exercicios fiscais en "
-"anteriores.\n"
-"                                                                                        "
-"anos."
+"                                                                                        que "
+"mostra a ganancia/perda non asignada de exercicios fiscais en anteriores.\n"
+"                                                                                        anos."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -160,19 +166,19 @@ msgid ""
 "                                        with 40 during the period."
 msgstr ""
 "<code>crdp[40%]</code> : suma de todos os créditos en contas que comezan\n"
-"                                                                                         "
-"con 40 durante o período."
+"                                                                                         con "
+"40 durante o período."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>date_from</code>, <code>date_to</code> : beginning and end date of the\n"
+"<code>date_from</code>, <code>date_to</code> : beginning and end date of "
+"the\n"
 "                                        period."
 msgstr ""
 "<code>dáche_from</code>, <code>dáche_to</code> : data de inicio e "
 "finalización do\n"
-"                                                                                          "
-"período."
+"                                                                                          período."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -186,39 +192,42 @@ msgstr ""
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over the period,\n"
+"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over "
+"the period,\n"
 "                                        initial balance, ending balance"
 msgstr ""
 "<code>p</code>, <code>i</code>, <code>e</code> : respectivamente variación "
 "durante o período,\n"
-"                                                                                          "
-"saldo inicial, saldo final"
+"                                                                                          saldo "
+"inicial, saldo final"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>pbale[55%]</code> : sum of all ending balances of accounts\n"
-"                                        starting with 55 whose ending balance is positive."
+"                                        starting with 55 whose ending "
+"balance is positive."
 msgstr ""
 "<code>pbale[55%]</code> : suma de todos os saldos finais das contas\n"
-"                                                                                        "
-"a partir de 55 cuxo saldo final é positivo."
+"                                                                                        a "
+"partir de 55 cuxo saldo final é positivo."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>sum</code>, <code>min</code>,\n"
 "                                        <code>max</code>, <code>len</code>,\n"
-"                                        <code>avg</code> : behave as expected, very\n"
+"                                        <code>avg</code> : behave as "
+"expected, very\n"
 "                                        similar to the python builtins."
 msgstr ""
 "<code>sum</code>,<code>min</code>,\n"
-"                                                                                         "
-"<code>max</code>, <code>len</code>,\n"
-"                                                                                         "
-"<code>avg</code> : compórtase como se esperaba, moi\n"
-"                                                                                         "
-"similar aos compoñentes integrados de Python."
+"                                                                                         <code>max</"
+"code>, <code>len</code>,\n"
+"                                                                                         <code>avg</"
+"code> : compórtase como se esperaba, moi\n"
+"                                                                                         similar "
+"aos compoñentes integrados de Python."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.report_mis_report_instance
@@ -228,8 +237,8 @@ msgstr "<span>-</span>"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields."
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields."
 msgstr ""
 "Modelo que sexa 'de tipo apunte', é dicir, que teña polo menos os campos "
 "debit, credit, date, account_id e company_id."
@@ -238,8 +247,8 @@ msgstr ""
 #: model:ir.model.fields,help:mis_builder.field_mis_report__move_lines_source
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields. This model is the data source for column Actuals."
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields. This model is the data source for column Actuals."
 msgstr ""
 "Modelo que sexa 'de tipo apunte', é dicir, que teña polo menos os campos de "
 "débito, crédito, data, ID de conta e ID de compañía. Este modelo é a fonte "
@@ -285,9 +294,8 @@ msgstr "Método de agregación"
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid ""
-"Actual (alternative) models used in columns must have the same account model"
-" in the Account field and must be the same defined in the report template: "
-"%s"
+"Actual (alternative) models used in columns must have the same account model "
+"in the Account field and must be the same defined in the report template: %s"
 msgstr ""
 "Os modelos reais (alternativos) utilizados en columnas deben ter o mesmo "
 "modelo de conta no campo Conta e deben ser os mesmos definidos no modelo de "
@@ -307,7 +315,8 @@ msgstr "Datos reais (alternativa)"
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source
 msgid ""
 "Actuals: current data, from accounting and other queries.\n"
-"Actuals (alternative): current data from an alternative source (eg a database view providing look-alike account move lines).\n"
+"Actuals (alternative): current data from an alternative source (eg a "
+"database view providing look-alike account move lines).\n"
 "Sum columns: summation (+/-) of other columns.\n"
 "Compare to column: compare to other column.\n"
 msgstr ""
@@ -339,8 +348,8 @@ msgid ""
 "                                    in the evaluation context:"
 msgstr ""
 "Ademais, as seguintes variables están dispoñibles\n"
-"                                                                                 "
-"no contexto da avaliación:"
+"                                                                                 no "
+"contexto da avaliación:"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__aggregate
@@ -385,8 +394,8 @@ msgstr "Importe"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__style_expression
 msgid ""
-"An expression that returns a style depending on the KPI value. Such style is"
-" applied on top of the row style."
+"An expression that returns a style depending on the KPI value. Such style is "
+"applied on top of the row style."
 msgstr ""
 "Unha expresión que devolve un estilo dependendo do valor do KPI. Devandito "
 "estilo aplícase na parte superior do estilo da fila."
@@ -416,7 +425,6 @@ msgstr "Auto expandir"
 
 #. module: mis_builder
 #. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
@@ -460,8 +468,7 @@ msgstr "Cancelar"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__multi_company
-msgid ""
-"Check if you wish to specify several companies to be searched for data."
+msgid "Check if you wish to specify several companies to be searched for data."
 msgstr ""
 "Comprobe se desexa especificar varias compañías para a procura de datos."
 
@@ -649,8 +656,12 @@ msgstr "Descrición"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__accumulation_method
 msgid ""
-"Determines how values of this kpi spanning over a time period are transformed to match the reporting period. Sum: values of shorter period are added, values of longest or partially overlapping periods are adjusted pro-rata temporis.\n"
-"Average: values of included period are averaged with a pro-rata temporis weight."
+"Determines how values of this kpi spanning over a time period are "
+"transformed to match the reporting period. Sum: values of shorter period are "
+"added, values of longest or partially overlapping periods are adjusted pro-"
+"rata temporis.\n"
+"Average: values of included period are averaged with a pro-rata temporis "
+"weight."
 msgstr ""
 "Determina como os valores deste kpi transcorrendo sobre o período de tempo "
 "son transformados para casar co período do informe. Sum: engádense os "
@@ -748,7 +759,9 @@ msgstr ""
 #: code:addons/mis_builder/models/aep.py:0
 #, python-format
 msgid ""
-"Error while querying move line source \"%(model_name)s\". This is likely due to a filter or expression referencing a field that does not exist in the model.\n"
+"Error while querying move line source \"%(model_name)s\". This is likely due "
+"to a filter or expression referencing a field that does not exist in the "
+"model.\n"
 "\n"
 "The technical error message is: %(exception)s. "
 msgstr ""
@@ -774,6 +787,11 @@ msgid "Export"
 msgstr "Exportar"
 
 #. module: mis_builder
+#: model:ir.actions.server,name:mis_builder.mis_builder_print_xls_report
+msgid "Export XLS"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__expression
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__expression_ids
@@ -795,14 +813,16 @@ msgstr "As expresións poden ser calquera expresión válida de Python."
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
-"                                    query results by name (eg <code>kpi1 + kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1.field1</code>)."
+"                                    query results by name (eg <code>kpi1 + "
+"kpi2</code>,\n"
+"                                    <code>kpi2.subkpi1</code>, "
+"<code>query1.field1</code>)."
 msgstr ""
 "As expresións poden incluír outros KPI, sub KPI e\n"
 "                                    consulta os resultados por nome (p. ex., "
 "<code>kpi1 + kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>"
-"query1.field1</code>)."
+"                                    <code>kpi2.subkpi1</code>, "
+"<code>query1.field1</code>)."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__normalize_factor
@@ -1012,7 +1032,8 @@ msgid ""
 "This can be fixed by either:\n"
 "\t- Changing the KPI value to a tuple of length %(length)s\n"
 "or\n"
-"\t- Changing the KPI to `multi` mode and giving an explicit value for each sub-KPI."
+"\t- Changing the KPI to `multi` mode and giving an explicit value for each "
+"sub-KPI."
 msgstr ""
 "KPI \"%(kpi)s\" ten tipo %(type)s mentres que se esperaba unha tupla.\n"
 "\n"
@@ -1348,7 +1369,6 @@ msgstr "Non se permite un filtro de data para esta fonte na columna %s."
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
 #, python-format
@@ -1407,7 +1427,6 @@ msgstr "Columna pai"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
 #, python-format
@@ -1451,8 +1470,7 @@ msgstr "Por favor introduza ambas as columnas para comparar en %s."
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid ""
-"Please select a report template and/or save the report before adding "
-"columns."
+"Please select a report template and/or save the report before adding columns."
 msgstr ""
 "Por favor seleccione un modelo de informe e/ou garde o informe antes de "
 "engadir columnas."
@@ -1765,7 +1783,6 @@ msgstr "Sufixo herdado"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
 #, python-format
@@ -1823,12 +1840,14 @@ msgstr "Cor de texto nun código RGB válido (desde #000000 ata #FFFFFF)"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The <b>account selector</b> is a like expression on the\n"
-"                                        account code (eg <code>70%</code>, etc), or a domain over accounts\n"
-"                                        (eg <code>[('code', 'like', '60%')]</code>)."
+"                                        account code (eg <code>70%</code>, "
+"etc), or a domain over accounts\n"
+"                                        (eg <code>[('code', 'like', '60%')]</"
+"code>)."
 msgstr ""
 "O <b>selector de contas</b> é unha expresión similar no\n"
-"                                        código de conta (por exemplo, <code>"
-"70%</code> etc.)/ etc.), ou un dominio sobre contas\n"
+"                                        código de conta (por exemplo, "
+"<code>70%</code> etc.)/ etc.), ou un dominio sobre contas\n"
 "                                        (por exemplo, <code>[('code', "
 "'like', '60%')]</code>)."
 
@@ -1846,7 +1865,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The following special elements are recognized in the expressions\n"
-"                                    to compute accounting data: <code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
+"                                    to compute accounting data: <code>{bal|"
+"crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
 
@@ -1960,7 +1980,6 @@ msgstr "Non pode sumar o período %s consigo mesmo."
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
-#: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
 #, python-format
 msgid "You do not have the rights to edit annotations"
 msgstr ""
@@ -2030,7 +2049,8 @@ msgstr "contra"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "when <code>fld</code> is used : a field name specifier\n"
-"                                        must be provided (e.g. <code>fldp.quantity</code>"
+"                                        must be provided (e.g. "
+"<code>fldp.quantity</code>"
 msgstr ""
 
 #. module: mis_builder

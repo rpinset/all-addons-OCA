@@ -193,8 +193,8 @@ msgid ""
 "<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" "
 "title=\"Download\"/>"
 msgstr ""
-"<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" title="
-"\"Scarica\"/>"
+"<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" "
+"title=\"Scarica\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
@@ -238,8 +238,8 @@ msgid ""
 "<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" "
 "title=\"Download\"/>"
 msgstr ""
-"<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" title="
-"\"Scarica\"/>"
+"<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" "
+"title=\"Scarica\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -2083,6 +2083,13 @@ msgid "Return Product"
 msgstr "Prodotto reso"
 
 #. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+#, python-format
+msgid "Return of %s"
+msgstr ""
+
+#. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
 #: model:ir.model.fields.selection,name:rma.selection__rma_delivery_wizard__type__return
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -2690,8 +2697,8 @@ msgid ""
 "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }}) products "
 "received"
 msgstr ""
-"Prodotti ricevuti per RMA (rif. {{object.name or 'n/a' }}) di {{object."
-"company_id.name}}"
+"Prodotti ricevuti per RMA (rif. {{object.name or 'n/a' }}) di "
+"{{object.company_id.name}}"
 
 #. module: rma
 #: model:mail.template,subject:rma.mail_template_rma_draft_notification
@@ -2740,11 +2747,11 @@ msgstr ""
 #~ "ricevuti"
 
 #~ msgid ""
-#~ "${object.company_id.name} Your RMA has been succesfully created (Ref "
-#~ "${object.name or 'n/a' })"
+#~ "${object.company_id.name} Your RMA has been succesfully created (Ref $"
+#~ "{object.name or 'n/a' })"
 #~ msgstr ""
-#~ "${object.company_id.name} Il tuo RMA è stato creato correttamente (Ref "
-#~ "${object.name or 'n/a' })"
+#~ "${object.company_id.name} Il tuo RMA è stato creato correttamente (Ref $"
+#~ "{object.name or 'n/a' })"
 
 #, python-format
 #~ msgid "<b>E-mail subject:</b> %s<br/><br/><b>E-mail body:</b><br/>%s"
@@ -2759,8 +2766,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Here is the RMA <strong>${object.name}</strong> from ${object."
-#~ "company_id.name}.\n"
+#~ "    Here is the RMA <strong>${object.name}</strong> from $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Do not hesitate to contact us if you have any question.\n"
 #~ "</p>\n"
@@ -2775,8 +2782,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Di seguito l'RMA <strong>${object.name}</strong> da ${object."
-#~ "company_id.name}.\n"
+#~ "    Di seguito l'RMA <strong>${object.name}</strong> da $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Non esiti a contattarci per qualsiasi domanda.\n"
 #~ "</p>\n"
@@ -2910,8 +2917,8 @@ msgstr ""
 #~ "data-oe-id=\"%d\">%s</a>) has been created."
 #~ msgstr ""
 #~ "Sostituzione: Il trasferimento <a href=\"#\" data-oe-model=\"stock.move\" "
-#~ "data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-model=\"stock."
-#~ "picking\" data-oe-id=\"%d\">%s</a>) è stato creato."
+#~ "data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-id=\"%d\">%s</a>) è stato creato."
 
 #, python-format
 #~ msgid ""
@@ -2920,10 +2927,10 @@ msgstr ""
 #~ "create a new move, but one of the previously created moves was updated "
 #~ "with this data."
 #~ msgstr ""
-#~ "Sostituzione:<br/>Il prodotto<a href=\"#\" data-oe-model=\"product."
-#~ "product\" data-oe-id=\"%d\">%s</a><br/>Quantità%f %s<br/>Questo prodotto "
-#~ "non ha generato un nuovo trasferimento, ma uno dei trasferimenti già "
-#~ "creati è stato aggiornato con questi dati."
+#~ "Sostituzione:<br/>Il prodotto<a href=\"#\" data-oe-"
+#~ "model=\"product.product\" data-oe-id=\"%d\">%s</a><br/>Quantità%f %s<br/"
+#~ ">Questo prodotto non ha generato un nuovo trasferimento, ma uno dei "
+#~ "trasferimenti già creati è stato aggiornato con questi dati."
 
 #, python-format
 #~ msgid ""

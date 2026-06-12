@@ -1936,6 +1936,13 @@ msgid "Return Product"
 msgstr ""
 
 #. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+#, python-format
+msgid "Return of %s"
+msgstr ""
+
+#. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
 #: model:ir.model.fields.selection,name:rma.selection__rma_delivery_wizard__type__return
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -2552,8 +2559,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Here is the RMA <strong>${object.name}</strong> from ${object."
-#~ "company_id.name}.\n"
+#~ "    Here is the RMA <strong>${object.name}</strong> from $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "    Do not hesitate to contact us if you have any question.\n"
 #~ "</p>\n"
@@ -2568,8 +2575,8 @@ msgstr ""
 #~ "        (${object.partner_id.parent_id.name})\n"
 #~ "    % endif\n"
 #~ "    <br/><br/>\n"
-#~ "    Aici este formularul de retur <strong>${object.name}</strong> de la "
-#~ "${object.company_id.name}.\n"
+#~ "    Aici este formularul de retur <strong>${object.name}</strong> de la $"
+#~ "{object.company_id.name}.\n"
 #~ "    <br/><br/>\n"
 #~ "   Nu ezitați să ne contactați dacă aveți întrebări.\n"
 #~ "</p>\n"

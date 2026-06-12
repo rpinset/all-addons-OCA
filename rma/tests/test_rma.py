@@ -357,6 +357,8 @@ class TestRmaCase(TestRma):
     @users("__system__", "user_rma")
     def test_action_refund(self):
         rma = self._create_confirm_receive(self.partner, self.product, 10, self.rma_loc)
+        reception_picking = rma.reception_move_id.picking_id
+        self.assertEqual(reception_picking.origin, rma.name)
         self.assertEqual(rma.state, "received")
         self.assertTrue(rma.can_be_refunded)
         self.assertTrue(rma.can_be_returned)
@@ -780,6 +782,10 @@ class TestRmaCase(TestRma):
         rma_form.operation_id = self.operation
         rma = rma_form.save()
         rma.action_confirm()
+        reception_picking = rma.reception_move_id.picking_id
+        self.assertEqual(
+            reception_picking.origin, f"{rma.name} (Return of {origin_delivery.name})"
+        )
         rma.reception_move_id.quantity_done = 10
         rma.reception_move_id.picking_id._action_done()
         # Return quantity 4 of the same product to the customer
