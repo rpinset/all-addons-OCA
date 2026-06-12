@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-09 04:47 UTC** (elapsed 117s)
+Last build: **2026-06-12 15:53 UTC** (elapsed 168s)
 
 - Repos integrated: **140**
-- Canonical modules: **2902**
+- Canonical modules: **2903**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **114**
 
@@ -59,7 +59,7 @@ Last build: **2026-06-09 04:47 UTC** (elapsed 117s)
 | [helpdesk](https://github.com/OCA/helpdesk) | 11 | ef71283 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
 | [hr](https://github.com/OCA/hr) | 40 | 31300cd 2026-05-29 mymage Translated using Weblate (Italian) |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 11 | 128a449 2025-06-21 mymage Translated using Weblate (Italian) |
-| [hr-expense](https://github.com/OCA/hr-expense) | 21 | afe931a 2026-05-13 mymage Translated using Weblate (Italian) |
+| [hr-expense](https://github.com/OCA/hr-expense) | 21 | ef14135 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 12 | 5ce858e 2025-11-28 mymage Translated using Weblate (Italian) |
 | [interface-git](https://github.com/OCA/interface-git) | 3 | 11854ca 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 6 | c67470d 2026-03-09 painkin Translated using Weblate (Finnish) |
@@ -93,7 +93,7 @@ Last build: **2026-06-09 04:47 UTC** (elapsed 117s)
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 7 | a7a0b8b 2025-06-17 mymage Translated using Weblate (Italian) |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 063d2be 2025-10-27 OCA-git-bot [BOT] post-merge updates |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | 1 | fcc28f8 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [multi-company](https://github.com/OCA/multi-company) | 29 | 60810f9 2026-05-15 Francesco Foresti Translated using Weblate (Italian) |
+| [multi-company](https://github.com/OCA/multi-company) | 29 | 35477fe 2026-06-09 OCA-git-bot [BOT] post-merge updates |
 | [oca-custom](https://github.com/OCA/oca-custom) | 7 | 177276f 2026-02-18 Tom [UPD] use merged bank_payment modules |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 8 | 4b73a08 2025-07-03 Weblate Update translation files |
 | [operating-unit](https://github.com/OCA/operating-unit) | 42 | 8f79f40 2026-04-28 OCA-git-bot [BOT] post-merge updates |
@@ -101,7 +101,7 @@ Last build: **2026-06-09 04:47 UTC** (elapsed 117s)
 | [payroll](https://github.com/OCA/payroll) | 6 | ac916a2 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
-| [product-attribute](https://github.com/OCA/product-attribute) | 83 | 6d932a5 2026-05-26 mymage Translated using Weblate (Italian) |
+| [product-attribute](https://github.com/OCA/product-attribute) | 84 | c64c73d 2026-06-12 OCA-git-bot [BOT] post-merge updates |
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 9 | 9b5dbf8 2025-09-16 Betül Öğmen Added translation using Weblate (Turkish) |

@@ -24,11 +24,13 @@ class ProductTemplate(models.Model):
 
     def _has_intercompany_price(self, pricelist):
         self.ensure_one()
+        if not pricelist.is_intercompany_supplier:
+            return False
         if self.env["product.pricelist.item"].search(
             [
                 ("pricelist_id", "=", pricelist.id),
+                ("applied_on", "=", "1_product"),
                 ("product_tmpl_id", "=", self.id),
-                ("product_id", "=", False),
             ]
         ):
             return True
@@ -36,8 +38,7 @@ class ProductTemplate(models.Model):
             [
                 ("pricelist_id", "=", pricelist.id),
                 ("applied_on", "=", "2_product_category"),
-                ("product_tmpl_id", "=", False),
-                ("product_id", "=", False),
+                ("categ_id", "parent_of", self.categ_id.id),
             ]
         ):
             return True
@@ -45,11 +46,10 @@ class ProductTemplate(models.Model):
             [
                 ("pricelist_id", "=", pricelist.id),
                 ("applied_on", "=", "3_global"),
-                ("product_tmpl_id", "=", False),
-                ("product_id", "=", False),
             ]
         ):
             return True
+        return False
 
     @api.depends("pricelist_item_ids.fixed_price")
     def _compute_template_price(self):

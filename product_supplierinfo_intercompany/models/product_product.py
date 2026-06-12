@@ -46,16 +46,17 @@ class ProductProduct(models.Model):
 
     def _has_intercompany_price(self, pricelist):
         self.ensure_one()
-        if (
-            self.env["product.pricelist.item"].search(
-                [
-                    ("pricelist_id", "=", pricelist.id),
-                    ("product_id", "=", self.id),
-                ]
-            )
-            and pricelist.is_intercompany_supplier
+        if not pricelist.is_intercompany_supplier:
+            return False
+        if self.env["product.pricelist.item"].search(
+            [
+                ("pricelist_id", "=", pricelist.id),
+                ("applied_on", "=", "0_product_variant"),
+                ("product_id", "=", self.id),
+            ]
         ):
             return True
+        return False
 
     @api.depends("product_tmpl_id.pricelist_item_ids.fixed_price")
     def _compute_product_price(self):

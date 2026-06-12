@@ -4,7 +4,7 @@
 
 {
     "name": "Product SupplierInfo Intercompany",
-    "version": "14.0.1.1.3",
+    "version": "14.0.1.1.4",
     "category": "Generic Modules/Others",
     "license": "AGPL-3",
     "author": "Odoo Community Association (OCA), Akretion",
@@ -14,7 +14,7 @@
         "purchase_sale_inter_company",
     ],
     "data": ["views/pricelist_views.xml", "security/supplierinfo.xml"],
-    "demo": ["demo/pricelist.xml"],
+    "demo": ["demo/product_pricelist_demo.xml"],
     "installable": True,
     "maintainers": ["PierrickBrun", "sebastienbeau", "kevinkhao"],
 }

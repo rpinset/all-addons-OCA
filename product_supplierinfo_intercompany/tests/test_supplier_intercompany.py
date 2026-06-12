@@ -42,12 +42,18 @@ class TestIntercompanySupplierCase(SavepointCase):
         if record._name == "product.product":
             vals.update(
                 {
+                    "applied_on": "0_product_variant",
                     "product_id": record.id,
                     "product_tmpl_id": record.product_tmpl_id.id,
                 }
             )
         else:
-            vals["product_tmpl_id"] = record.id
+            vals.update(
+                {
+                    "applied_on": "1_product",
+                    "product_tmpl_id": record.id,
+                }
+            )
         res = self.env["product.pricelist.item"].create(vals)
         return res
 
@@ -176,7 +182,7 @@ class TestIntercompanySupplier(TestIntercompanySupplierCase):
         self._check_supplier_info_for(product, 22)
 
     def test_add_template_item(self):
-        template = self.env.ref("product.product_product_2_product_template")
+        template = self.env.ref("product.product_product_3_product_template")
         self._add_item(template, 30)
         self._check_supplier_info_for(template, 30)
         template.active = False
