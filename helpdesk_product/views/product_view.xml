@@ -12,6 +12,21 @@
                     <label for="ticket_active" string="Helpdesk" />
                 </span>
             </div>
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_helpdesk_tickets"
+                    type="object"
+                    class="oe_stat_button"
+                    invisible="not ticket_active and not helpdesk_ticket_count"
+                    icon="fa-life-ring"
+                >
+                    <field
+                        string="Tickets"
+                        name="helpdesk_ticket_count"
+                        widget="statinfo"
+                    />
+                </button>
+            </div>
         </field>
     </record>
 

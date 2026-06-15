@@ -10,6 +10,20 @@ class AbstractReportXslx(models.AbstractModel):
     _description = "Abstract XLSX Account Financial Report"
     _inherit = "report.report_xlsx.abstract"
 
+    def _get_currency_from_company(self):
+        model = self.env.context.get("active_model")
+        active_id = self.env.context.get("active_id")
+        wizard = self.env[model].browse(active_id)
+        return wizard.company_id.currency_id
+
+    def _round_value_by_currency(self, value, currency=None):
+        if isinstance(currency, tuple):
+            currency = currency[0]
+        if currency:
+            return self.env["res.currency"].browse(currency).round(value)
+        else:
+            return self._get_currency_from_company().round(value)
+
     def get_workbook_options(self):
         vals = super().get_workbook_options()
         vals.update({"constant_memory": True})
@@ -54,7 +68,7 @@ class AbstractReportXslx(models.AbstractModel):
          * format_amount
          * format_percent_bold_italic
         """
-        currency_id = self.env["res.company"]._default_currency_id()
+        currency_id = self._get_currency_from_company()
         report_data["formats"] = {
             "format_bold": workbook.add_format({"bold": True}),
             "format_right": workbook.add_format({"align": "right"}),
@@ -185,54 +199,6 @@ class AbstractReportXslx(models.AbstractModel):
             )
         report_data["row_pos"] += 1
 
-    def write_line(self, line_object, report_data):
-        """Write a line on current line using all defined columns field name.
-        Columns are defined with `_get_report_columns` method.
-        """
-        for col_pos, column in report_data["columns"].items():
-            value = getattr(line_object, column["field"])
-            cell_type = column.get("type", "string")
-            if cell_type == "many2one":
-                report_data["sheet"].write_string(
-                    report_data["row_pos"],
-                    col_pos,
-                    value.name or "",
-                    report_data["formats"]["format_right"],
-                )
-            elif cell_type == "string":
-                if (
-                    hasattr(line_object, "account_group_id")
-                    and line_object.account_group_id
-                ):
-                    report_data["sheet"].write_string(
-                        report_data["row_pos"],
-                        col_pos,
-                        value or "",
-                        report_data["formats"]["format_bold"],
-                    )
-                else:
-                    report_data["sheet"].write_string(
-                        report_data["row_pos"], col_pos, value or ""
-                    )
-            elif cell_type == "amount":
-                if (
-                    hasattr(line_object, "account_group_id")
-                    and line_object.account_group_id
-                ):
-                    cell_format = report_data["formats"]["format_amount_bold"]
-                else:
-                    cell_format = report_data["formats"]["format_amount"]
-                report_data["sheet"].write_number(
-                    report_data["row_pos"], col_pos, float(value), cell_format
-                )
-            elif cell_type == "amount_currency":
-                if line_object.currency_id:
-                    format_amt = self._get_currency_amt_format(line_object, report_data)
-                    report_data["sheet"].write_number(
-                        report_data["row_pos"], col_pos, float(value), format_amt
-                    )
-        report_data["row_pos"] += 1
-
     def write_line_from_dict(self, line_dict, report_data):
         """Write a line on current line"""
         for col_pos, column in report_data["columns"].items():
@@ -265,7 +231,10 @@ class AbstractReportXslx(models.AbstractModel):
                 else:
                     cell_format = report_data["formats"]["format_amount"]
                 report_data["sheet"].write_number(
-                    report_data["row_pos"], col_pos, float(value), cell_format
+                    report_data["row_pos"],
+                    col_pos,
+                    self._round_value_by_currency(value),
+                    cell_format,
                 )
             elif cell_type == "amount_currency":
                 if line_dict.get("currency_name", False):
@@ -273,7 +242,12 @@ class AbstractReportXslx(models.AbstractModel):
                         line_dict, report_data
                     )
                     report_data["sheet"].write_number(
-                        report_data["row_pos"], col_pos, float(value), format_amt
+                        report_data["row_pos"],
+                        col_pos,
+                        self._round_value_by_currency(
+                            value, line_dict.get("currency_id")
+                        ),
+                        format_amt,
                     )
             elif cell_type == "currency_name":
                 report_data["sheet"].write_string(
@@ -284,54 +258,6 @@ class AbstractReportXslx(models.AbstractModel):
                 )
             else:
                 self.write_non_standard_column(cell_type, col_pos, value)
-        report_data["row_pos"] += 1
-
-    def write_initial_balance(self, my_object, label, report_data):
-        """Write a specific initial balance line on current line
-        using defined columns field_initial_balance name.
-        Columns are defined with `_get_report_columns` method.
-        """
-        col_pos_label = self._get_col_pos_initial_balance_label()
-        report_data["sheet"].write(
-            report_data["row_pos"],
-            col_pos_label,
-            label,
-            report_data["formats"]["format_right"],
-        )
-        for col_pos, column in report_data["columns"].items():
-            if column.get("field_initial_balance"):
-                value = getattr(my_object, column["field_initial_balance"])
-                cell_type = column.get("type", "string")
-                if cell_type == "string":
-                    report_data["sheet"].write_string(
-                        report_data["row_pos"], col_pos, value or ""
-                    )
-                elif cell_type == "amount":
-                    report_data["sheet"].write_number(
-                        report_data["row_pos"],
-                        col_pos,
-                        float(value),
-                        report_data["formats"]["format_amount"],
-                    )
-                elif cell_type == "amount_currency":
-                    if my_object.currency_id:
-                        format_amt = self._get_currency_amt_format(
-                            my_object, report_data
-                        )
-                        report_data["sheet"].write_number(
-                            report_data["row_pos"], col_pos, float(value), format_amt
-                        )
-            elif column.get("field_currency_balance"):
-                value = getattr(my_object, column["field_currency_balance"])
-                cell_type = column.get("type", "string")
-                if cell_type == "many2one":
-                    if my_object.currency_id:
-                        report_data["sheet"].write_string(
-                            report_data["row_pos"],
-                            col_pos,
-                            value.name or "",
-                            report_data["formats"]["format_right"],
-                        )
         report_data["row_pos"] += 1
 
     def write_initial_balance_from_dict(self, my_object, label, report_data):
@@ -358,16 +284,21 @@ class AbstractReportXslx(models.AbstractModel):
                     report_data["sheet"].write_number(
                         report_data["row_pos"],
                         col_pos,
-                        float(value),
+                        self._round_value_by_currency(value),
                         report_data["formats"]["format_amount"],
                     )
                 elif cell_type == "amount_currency":
                     if my_object["currency_id"]:
-                        format_amt = self._get_currency_amt_format(
+                        format_amt = self._get_currency_amt_format_dict(
                             my_object, report_data
                         )
                         report_data["sheet"].write_number(
-                            report_data["row_pos"], col_pos, float(value), format_amt
+                            report_data["row_pos"],
+                            col_pos,
+                            self._round_value_by_currency(
+                                value, my_object.get("currency_id")
+                            ),
+                            format_amt,
                         )
             elif column.get("field_currency_balance"):
                 value = my_object.get(column["field_currency_balance"], False)
@@ -379,73 +310,6 @@ class AbstractReportXslx(models.AbstractModel):
                             col_pos,
                             value.name or "",
                             report_data["formats"]["format_right"],
-                        )
-        report_data["row_pos"] += 1
-
-    def write_ending_balance(self, my_object, name, label, report_data):
-        """Write a specific ending balance line on current line
-        using defined columns field_final_balance name.
-        Columns are defined with `_get_report_columns` method.
-        """
-        for i in range(0, len(report_data["columns"])):
-            report_data["sheet"].write(
-                report_data["row_pos"],
-                i,
-                "",
-                report_data["formats"]["format_header_right"],
-            )
-        row_count_name = self._get_col_count_final_balance_name()
-        col_pos_label = self._get_col_pos_final_balance_label()
-        report_data["sheet"].merge_range(
-            report_data["row_pos"],
-            0,
-            report_data["row_pos"],
-            row_count_name - 1,
-            name,
-            report_data["formats"]["format_header_left"],
-        )
-        report_data["sheet"].write(
-            report_data["row_pos"],
-            col_pos_label,
-            label,
-            report_data["formats"]["format_header_right"],
-        )
-        for col_pos, column in report_data["columns"].items():
-            if column.get("field_final_balance"):
-                value = getattr(my_object, column["field_final_balance"])
-                cell_type = column.get("type", "string")
-                if cell_type == "string":
-                    report_data["sheet"].write_string(
-                        report_data["row_pos"],
-                        col_pos,
-                        value or "",
-                        report_data["formats"]["format_header_right"],
-                    )
-                elif cell_type == "amount":
-                    report_data["sheet"].write_number(
-                        report_data["row_pos"],
-                        col_pos,
-                        float(value),
-                        report_data["formats"]["format_header_amount"],
-                    )
-                elif cell_type == "amount_currency":
-                    if my_object.currency_id:
-                        format_amt = self._get_currency_amt_header_format(
-                            my_object, report_data
-                        )
-                        report_data["sheet"].write_number(
-                            report_data["row_pos"], col_pos, float(value), format_amt
-                        )
-            elif column.get("field_currency_balance"):
-                value = getattr(my_object, column["field_currency_balance"])
-                cell_type = column.get("type", "string")
-                if cell_type == "many2one":
-                    if my_object.currency_id:
-                        report_data["sheet"].write_string(
-                            report_data["row_pos"],
-                            col_pos,
-                            value.name or "",
-                            report_data["formats"]["format_header_right"],
                         )
         report_data["row_pos"] += 1
 
@@ -492,7 +356,7 @@ class AbstractReportXslx(models.AbstractModel):
                     report_data["sheet"].write_number(
                         report_data["row_pos"],
                         col_pos,
-                        float(value),
+                        self._round_value_by_currency(value),
                         report_data["formats"]["format_header_amount"],
                     )
                 elif cell_type == "amount_currency":
@@ -501,7 +365,12 @@ class AbstractReportXslx(models.AbstractModel):
                             my_object, report_data
                         )
                         report_data["sheet"].write_number(
-                            report_data["row_pos"], col_pos, float(value), format_amt
+                            report_data["row_pos"],
+                            col_pos,
+                            self._round_value_by_currency(
+                                value, my_object.get("currency_id")
+                            ),
+                            format_amt,
                         )
             elif column.get("field_currency_balance"):
                 value = my_object.get(column["field_currency_balance"], False)
@@ -523,28 +392,6 @@ class AbstractReportXslx(models.AbstractModel):
                     )
         report_data["row_pos"] += 1
 
-    def _get_currency_amt_format(self, line_object, report_data):
-        """Return amount format specific for each currency."""
-        if "account_group_id" in line_object and line_object["account_group_id"]:
-            format_amt = report_data["formats"]["format_amount_bold"]
-            field_prefix = "format_amount_bold"
-        else:
-            format_amt = report_data["formats"]["format_amount"]
-            field_prefix = "format_amount"
-        if "currency_id" in line_object and line_object.get("currency_id", False):
-            if isinstance(line_object["currency_id"], int):
-                currency = self.env["res.currency"].browse(line_object["currency_id"])
-            else:
-                currency = line_object["currency_id"]
-            field_name = f"{field_prefix}_{currency.name}"
-            if hasattr(self, field_name):
-                format_amt = getattr(self, field_name)
-            else:
-                format_amt = report_data["workbook"].add_format()
-                report_data["field_name"] = format_amt
-                format_amt.set_num_format(self._report_xlsx_currency_format(currency))
-        return format_amt
-
     def _get_currency_amt_format_dict(self, line_dict, report_data):
         """Return amount format specific for each currency."""
         if line_dict.get("account_group_id", False) and line_dict["account_group_id"]:
@@ -565,24 +412,6 @@ class AbstractReportXslx(models.AbstractModel):
                 format_amt = report_data["workbook"].add_format()
                 report_data["field_name"] = format_amt
                 format_amt.set_num_format(self._report_xlsx_currency_format(currency))
-        return format_amt
-
-    def _get_currency_amt_header_format(self, line_object, report_data):
-        """Return amount header format for each currency."""
-        format_amt = report_data["formats"]["format_header_amount"]
-        if line_object.currency_id:
-            field_name = f"format_header_amount_{line_object.currency_id.name}"
-            if hasattr(self, field_name):
-                format_amt = getattr(self, field_name)
-            else:
-                format_amt = report_data["workbook"].add_format(
-                    {"bold": True, "border": True, "bg_color": "#FFFFCC"}
-                )
-                report_data["field_name"] = format_amt
-                format_amount = "#,##0." + (
-                    "0" * line_object.currency_id.decimal_places
-                )
-                format_amt.set_num_format(format_amount)
         return format_amt
 
     def _get_currency_amt_header_format_dict(self, line_object, report_data):

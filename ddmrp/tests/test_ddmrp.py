@@ -5,6 +5,8 @@
 import json
 from datetime import datetime, time, timedelta
 
+from freezegun import freeze_time
+
 from odoo import fields
 from odoo.exceptions import ValidationError
 from odoo.tests import Form
@@ -95,6 +97,7 @@ class TestDdmrp(TestDdmrpCommon):
         to_assert_value = (20 + 20 + 10) / 6
         self.assertAlmostEqual(self.buffer_a.adu, to_assert_value, places=2)
 
+    @freeze_time("2020-12-10 10:00:00")
     def test_04_adu_calculation_window_past_calendar(self):
         """Test that the window considered to calculate the ADU is correct.
         (With working days set)."""
@@ -1533,3 +1536,36 @@ class TestDdmrp(TestDdmrpCommon):
         data = json.loads(form.ddmrp_chart_execution)
         self.assertEqual(data["div"], "")
         self.assertEqual(data["script"], "")
+
+    def test_51_adu_calculation_future_actual_move_uom(self):
+        """Future actual demand is aggregated in the product UoM.
+
+        A move expressed in a secondary UoM (Dozen) must contribute its
+        product-UoM quantity to the ADU, not its move-UoM quantity.
+        """
+        method = self.aducalcmethodModel.create(
+            {
+                "name": "Future actual demand (120 days)",
+                "method": "future",
+                "source_future": "actual",
+                "horizon_future": 120,
+                "company_id": self.main_company.id,
+            }
+        )
+        self.buffer_a.adu_calculation_method = method.id
+        days = 30
+        date_move = self.calendar.plan_days(+1 * days + 1, datetime.today())
+        self.create_pickingoutA(date_move, 5, uom=self.dozen_unit)
+        self.bufferModel.cron_ddmrp_adu()
+        # 5 Dozen = 60 Units over the 120-day horizon
+        self.assertEqual(self.buffer_a.adu, 60 / 120)
+
+    def test_55_purchase_line_form_no_newid_domain_warning(self):
+        """Editing a PO line in the UI must not search with NewId records."""
+        vendor = self.partner_model.create({"name": "Form Vendor"})
+        po_form = Form(self.env["purchase.order"])
+        po_form.partner_id = vendor
+        with self.assertNoLogs("odoo.domains", level="WARNING"):
+            with po_form.order_line.new() as line:
+                line.product_id = self.product_purchased
+        po_form.save()
