@@ -14,6 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: stock_storage_type_putaway_abc
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__a
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__a
+msgid "A"
+msgstr ""
+
+#. module: stock_storage_type_putaway_abc
 #: model_terms:ir.ui.view,arch_db:stock_storage_type_putaway_abc.product_template_form_view_inherit
 msgid "ABC Storage preference"
 msgstr ""
@@ -23,6 +29,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_storage_type_putaway_abc.field_product_template__abc_storage
 #: model:ir.model.fields,field_description:stock_storage_type_putaway_abc.field_stock_location__abc_storage
 msgid "Abc Storage"
+msgstr ""
+
+#. module: stock_storage_type_putaway_abc
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__b
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__b
+msgid "B"
+msgstr ""
+
+#. module: stock_storage_type_putaway_abc
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__c
+#: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__c
+msgid "C"
 msgstr ""
 
 #. module: stock_storage_type_putaway_abc

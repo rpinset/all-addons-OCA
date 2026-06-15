@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-01 15:18+0000\n"
-"PO-Revision-Date: 2026-06-07 17:51+0000\n"
+"PO-Revision-Date: 2026-06-13 10:00+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -279,7 +279,7 @@ msgstr "Komunikacija"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__communication_type
 msgid "Communication Type"
-msgstr "Vrsta komunikacije"
+msgstr "Tip komunikacije"
 
 #. module: account_payment_order
 #. odoo-python
@@ -296,7 +296,7 @@ msgstr "Družba"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__company_partner_bank_id
 msgid "Company Bank Account"
-msgstr "Bančni račun podjetja"
+msgstr "Bančni račun družbe"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_form
@@ -439,7 +439,7 @@ msgstr "Datoteka ustvarjena"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__date_generated
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_search
 msgid "File Generation Date"
-msgstr "Datum ustvaritve datoteke"
+msgstr "Datum nastanka datoteke"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_form
@@ -461,7 +461,7 @@ msgstr "Datoteka naložena"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__filter_date
 msgid "Filter Date"
-msgstr "Datum filtra"
+msgstr "Filtriraj po datumu"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__filter_date_end
@@ -507,13 +507,13 @@ msgid ""
 "will select the bank account on the payment order. If your company only has "
 "one bank account, you should always select 'Fixed'."
 msgstr ""
-"Za metode plačila, ki so vedno povezane z istim bančnim računom vašega "
-"podjetja (kot je bančno nakazilo od strank ali SEPA direktna bremenitev od "
-"dobaviteljev), izberite 'Fixed'. Za metode plačila, ki niso vedno povezane z "
-"istim bančnim računom (kot je SEPA direktna bremenitev za stranke, bančno "
-"nakazilo dobaviteljem), izberite 'Variable', kar pomeni, da boste bančni "
-"račun izbrali na plačilnem nalogu. Če ima vaše podjetje samo en bančni "
-"račun, vedno izberite 'Fixed'."
+"Za načine plačila, ki so vedno povezani z istim bančnim računom vašega "
+"podjetja (npr. nakazilo strank ali direktna obremenitev SEPA dobaviteljev), "
+"izberite 'Fiksno'. Za načine plačila, ki niso vedno povezani z istim bančnim "
+"računom (npr. direktna obremenitev SEPA strank ali nakazilo dobaviteljem), "
+"izberite 'Spremenljivo', kar pomeni, da boste bančni račun izbrali na "
+"plačilnem nalogu. Če ima vaše podjetje samo en bančni račun, vedno izberite "
+"'Fiksno'."
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_line__communication_type__normal
@@ -629,7 +629,7 @@ msgstr "Takoj"
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_order__payment_type__inbound
 msgid "Inbound"
-msgstr "Dohodni"
+msgstr "Vhodno"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.print_account_payment_order_document
@@ -677,7 +677,7 @@ msgstr "Pustite prazno za uporabo vseh partnerjev"
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_line__communication
 msgid "Label of the payment that will be seen by the destinee"
-msgstr "Oznaka plačila, ki jo bo videl prejemnik"
+msgstr "Oznaka plačila, ki bo vidna prejemniku"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_invoice_payment_line_multi__write_uid
@@ -700,7 +700,7 @@ msgstr "Zadnjič posodobljeno"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__bank_account_link
 msgid "Link to Bank Account"
-msgstr "Povezava do bančnega računa"
+msgstr "Poveži z bančnim računom"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__invoice
@@ -871,7 +871,7 @@ msgstr "Možnosti za plačilne naloge"
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_order__payment_type__outbound
 msgid "Outbound"
-msgstr "Odhodni"
+msgstr "Izhodno"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__partner_id
@@ -937,12 +937,12 @@ msgstr "Plačilne postavke"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__payment_method_id
 msgid "Payment Method"
-msgstr "Metoda plačila"
+msgstr "Način plačila"
 
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_account_payment_method
 msgid "Payment Methods"
-msgstr "Metode plačil"
+msgstr "Načini plačila"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__payment_mode

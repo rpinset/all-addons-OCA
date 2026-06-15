@@ -1018,6 +1018,18 @@ msgid "Waiting Time"
 msgstr ""
 
 #. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,help:route_planning.field_route_route__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__2
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__2
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__2

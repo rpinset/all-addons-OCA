@@ -597,38 +597,62 @@ class TestSinglePackTransfer(SinglePackTransferCommonBase):
         #  when calling stock.move._push_apply
         # Therefore, we have to use dedicated procurement rule to generate the pickings
         #  as they are in this test and ensure completion info still works as expected
-        reserve_location = self.env.ref(
-            "stock_storage_type.stock_location_pallets_reserve"
+        reserve_location = (
+            self.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "location_id": self.stock_location.id,
+                    "name": "pallets reserve",
+                }
+            )
         )
-        reserve_bin_1_location = self.env.ref(
-            "stock_storage_type.stock_location_pallets_reserve_bin_1"
+        reserve_bin_1_location = (
+            self.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "location_id": reserve_location.id,
+                    "name": "pallets reserve bin 1",
+                }
+            )
         )
-        reserve_bin_2_location = self.env.ref(
-            "stock_storage_type.stock_location_pallets_reserve_bin_2"
+        reserve_bin_2_location = (
+            self.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "location_id": reserve_location.id,
+                    "name": "pallets reserve bin 2",
+                }
+            )
         )
-        pallets_location = self.env.ref("stock_storage_type.stock_location_pallets")
+        pallets_location = (
+            self.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "location_id": self.stock_location.id,
+                    "name": "pallets location",
+                }
+            )
+        )
         pallets_location.sudo().barcode = "PALLETS"
         pack_a = self.env["stock.quant.package"].create(
-            {"location_id": reserve_location.id}
-        )
-        self.env["stock.quant"].sudo().create(
             {
-                "product_id": self.product_a.id,
-                "location_id": reserve_bin_1_location.id,
-                "quantity": 1,
-                "package_id": pack_a.id,
+                "location_id": reserve_location.id,
             }
+        )
+        self._update_qty_in_location(
+            reserve_bin_1_location, self.product_a, 1, package=pack_a
         )
         pack_b = self.env["stock.quant.package"].create(
-            {"location_id": reserve_location.id}
-        )
-        self.env["stock.quant"].sudo().create(
             {
-                "product_id": self.product_b.id,
-                "location_id": reserve_bin_2_location.id,
-                "quantity": 1,
-                "package_id": pack_b.id,
+                "location_id": reserve_location.id,
             }
+        )
+        self._update_qty_in_location(
+            reserve_bin_2_location, self.product_b, 1, package=pack_b
         )
         deliver_pallet_type = self.wh.sudo().out_type_id.copy(
             {"default_location_src_id": pallets_location.id}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_area_list" model="ir.ui.view">
+        <field name="name">view.route.area.list</field>
+        <field name="model">route.area</field>
+        <field name="inherit_id" ref="route_planning.view_route_area_list" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="before">
+                <field
+                    name="warehouse_id"
+                    required="1"
+                    options="{'no_create': True}"
+                    groups="stock.group_stock_multi_warehouses"
+                />
+                <field
+                    name="location_id"
+                    optional="show"
+                    groups="stock.group_stock_multi_locations"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_route_area_form" model="ir.ui.view">
+        <field name="name">view.route.area.form</field>
+        <field name="model">route.area</field>
+        <field name="inherit_id" ref="route_planning.view_route_area_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="before">
+                <field
+                    name="warehouse_id"
+                    required="1"
+                    options="{'no_create': True}"
+                    groups="stock.group_stock_multi_warehouses"
+                />
+                <field name="location_id" groups="stock.group_stock_multi_locations" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

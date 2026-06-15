@@ -8,7 +8,7 @@ class CheckoutListSetPackageTypeCase(CheckoutCommonCase):
     @classmethod
     def setUpClassBaseData(cls):
         super().setUpClassBaseData()
-        cls.env["stock.package.type"].sudo().search([]).active = False
+        cls.env["stock.package.type"].sudo().search([]).unlink()
         cls.package_type_pallet = (
             cls.env["stock.package.type"]
             .sudo()

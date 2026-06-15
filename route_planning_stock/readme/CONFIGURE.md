@@ -1,0 +1,3 @@
+- Go to `Inventory / Configuration / Operation Types`.
+- Select an existing record or create a new one.
+- Enable the `Route Auto Confirm` field.

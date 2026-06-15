@@ -6,7 +6,7 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "18.0.0.14.1",
+    "version": "18.0.0.16.0",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",
@@ -22,7 +22,6 @@
         "base_rest",
         "base_sparse_field",
         #  OCA / stock-logistics-warehouse
-        "stock_location_is_sublocation",
         "stock_picking_completion_info",
         #  OCA / stock-logistics-workflow
         "stock_move_line_change_lot",
@@ -37,9 +36,6 @@
         # TODO: used for prod lot expire detail info.
         # This must be an optional dep
         "product_expiry",
-        # TODO: used for package.package_type_id detail info.
-        # This must be an optional dep
-        "stock_storage_type",
         # TODO: used for picking.carrier_id detail info
         # and to validate packaging/carrier in checkout scenario
         # This must be an optional dep

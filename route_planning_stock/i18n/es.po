@@ -1,0 +1,189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-02 00:11+0000\n"
+"PO-Revision-Date: 2026-06-11 10:16-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_picking_form
+msgid "<span class=\"o_stat_text\">Route planning</span>"
+msgstr "<span class=\"o_stat_text\">Ruta planificada</span>"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.route_checkpoint_view_kanban
+msgid "<strong>Picking: </strong>"
+msgstr "<strong>Albarán: </strong>"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Add a Product"
+msgstr "Añadir un producto"
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/stock_picking.py:0
+msgid "Cancelled from picking"
+msgstr "Cancelado desde albarán"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Demand"
+msgstr "Demanda"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: route_planning_stock
+#: model:route.incident.type,name:route_planning_stock.route_incident_cancel
+msgid "Document Cancelled"
+msgstr "Documento cancelado"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_stock_picking__has_route_planning
+msgid "Has Route Planning"
+msgstr "Tiene ruta planificada"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_area__location_id
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_checkpoint__move_ids_without_package
+msgid "Move Ids Without Package"
+msgstr "Movimientos de stock"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_checkpoint__picking_id
+msgid "Picking"
+msgstr "Albarán"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_checkpoint__picking_domain
+msgid "Picking Domain"
+msgstr ""
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_route_area
+#: model:ir.model.fields,field_description:route_planning_stock.field_stock_picking__route_area_id
+msgid "Route Area"
+msgstr "Área de ruta"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_route_checkpoint
+msgid "Route Checkpoint"
+msgstr "Punto de control de rutas"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_route_incident_type
+msgid "Route Incident Type"
+msgstr "Tipo de incidencia de ruta"
+
+#. module: route_planning_stock
+#: model:ir.model.fields,help:route_planning_stock.field_stock_picking__route_area_id
+msgid "Route area for this picking, used to create routes."
+msgstr ""
+"El área de ruta para este albarán, tomado del cliente pero puede ser cambiado"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Stock Moves"
+msgstr "Movimientos de stock"
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/stock_picking.py:0
+msgid ""
+"This picking cannot be cancelled because it is associated with a route: %"
+"(route)s. If you want to cancel it, first remove it from the route."
+msgstr ""
+"Este albarán no se puede cancelar porque está asociada a una ruta: %"
+"(route)s. Si desea cancelarla, primero elimínela de la ruta."
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/stock_picking.py:0
+msgid ""
+"This picking cannot be validated yet because it is associated with route: %"
+"(route)s. Which has not been planned yet. If you want to validate it, please "
+"plan the route first."
+msgstr ""
+"Este albarán no se puede validar aun porque está asociada a la ruta: %"
+"(route)s. La cual no ha sido planificada aun. Si deseas continuar, primero "
+"planifica la ruta."
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/stock_picking.py:0
+msgid "This picking is associated with the route: %s"
+msgstr "Este albarán está asociado con la ruta: %s"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_stock_picking
+msgid "Transfer"
+msgstr "Traslado"
+
+#. module: route_planning_stock
+#: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
+msgid "Unit"
+msgstr "Unidad"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_stock_warehouse
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_area__warehouse_id
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/route_incident_type.py:0
+msgid ""
+"You cannot delete this incident type, it is necessary for pickings "
+"cancellation."
+msgstr ""
+"No puedes borrar este tipo de incidencia, es necesario para cancelación de "
+"albaranes"
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/route_checkpoint.py:0
+msgid "You cannot move back to planned a checkpoint with a done picking."
+msgstr ""
+"No puedes regresar a planificado un punto de control con el albarán en "
+"estado hecho"
+
+#. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/route_area.py:0
+msgid "You must set a warehouse for the Route Areas created."
+msgstr "Debes configurar un almacén para las áreas de ruta creadas."

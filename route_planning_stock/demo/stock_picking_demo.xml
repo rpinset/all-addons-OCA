@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="stock_picking_1_route_south_demo" model="stock.picking">
+        <field name="picking_type_id" ref="stock.picking_type_out" />
+        <field name="partner_id" ref="base.res_partner_2" />
+        <field name="route_area_id" ref="route_planning.route_area_south_demo" />
+        <field name="location_id" ref="stock.stock_location_stock" />
+        <field
+            name="location_dest_id"
+            model="stock.location"
+            eval="obj().env.ref('route_planning.route_area_south_demo').location_id.id"
+        />
+        <field
+            name="move_ids"
+            model="stock.move"
+            eval="[
+            Command.create({
+                'name': obj().env.ref('product.product_product_6').name,
+                'product_id': ref('product.product_product_6'),
+                'product_uom': ref('uom.product_uom_unit'),
+                'product_uom_qty': 2.0,
+                'quantity': 2.0,
+                'picked': True,
+                'picking_type_id': ref('stock.picking_type_out'),
+                'location_id': ref('stock.stock_location_stock'),
+                'location_dest_id': obj().env.ref('route_planning.route_area_south_demo').location_id.id,
+            })]"
+        />
+    </record>
+    <record id="stock_picking_2_route_south_demo" model="stock.picking">
+        <field name="picking_type_id" ref="stock.picking_type_out" />
+        <field name="partner_id" ref="base.res_partner_3" />
+        <field name="route_area_id" ref="route_planning.route_area_south_demo" />
+        <field name="location_id" ref="stock.stock_location_stock" />
+        <field
+            name="location_dest_id"
+            model="stock.location"
+            eval="obj().env.ref('route_planning.route_area_south_demo').location_id.id"
+        />
+        <field
+            name="move_ids"
+            model="stock.move"
+            eval="[
+            Command.create({
+                'name': obj().env.ref('product.product_product_6').name,
+                'product_id': ref('product.product_product_6'),
+                'product_uom': ref('uom.product_uom_unit'),
+                'product_uom_qty': 2.0,
+                'quantity': 2.0,
+                'picked': True,
+                'picking_type_id': ref('stock.picking_type_out'),
+                'location_id': ref('stock.stock_location_stock'),
+                'location_dest_id': obj().env.ref('route_planning.route_area_south_demo').location_id.id,
+            })]"
+        />
+    </record>
+    <record id="stock_picking_3_route_south_demo" model="stock.picking">
+        <field name="picking_type_id" ref="stock.picking_type_out" />
+        <field name="partner_id" ref="base.res_partner_12" />
+        <field name="route_area_id" ref="route_planning.route_area_south_demo" />
+        <field name="location_id" ref="stock.stock_location_stock" />
+        <field
+            name="location_dest_id"
+            model="stock.location"
+            eval="obj().env.ref('route_planning.route_area_south_demo').location_id.id"
+        />
+        <field
+            name="move_ids"
+            model="stock.move"
+            eval="[
+            Command.create({
+                'name': obj().env.ref('product.product_product_6').name,
+                'product_id': ref('product.product_product_6'),
+                'product_uom': ref('uom.product_uom_unit'),
+                'product_uom_qty': 2.0,
+                'quantity': 2.0,
+                'picked': True,
+                'picking_type_id': ref('stock.picking_type_out'),
+                'location_id': ref('stock.stock_location_stock'),
+                'location_dest_id': obj().env.ref('route_planning.route_area_south_demo').location_id.id,
+            })]"
+        />
+    </record>
+    <function
+        model="stock.picking"
+        name="_action_done"
+        eval="[ref('stock_picking_1_route_south_demo')]"
+    />
+    <function
+        model="stock.picking"
+        name="_action_done"
+        eval="[ref('stock_picking_2_route_south_demo')]"
+    />
+</odoo>

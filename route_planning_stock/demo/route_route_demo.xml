@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="route_planning.route_south_demo" model="route.route">
+        <!-- Set the current date so that new pickings are included
+         in the existing route instead of creating a new route. -->
+        <field name="schedule_date" eval="datetime.now()" />
+    </record>
+</odoo>

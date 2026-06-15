@@ -8,7 +8,11 @@ class StockStorageLocationSequence(models.Model):
     _description = "Sequence of locations to put-away the package type"
     _order = "sequence,id"
 
-    package_type_id = fields.Many2one("stock.package.type", required=True)
+    package_type_id = fields.Many2one(
+        "stock.package.type",
+        required=True,
+        ondelete="cascade",
+    )
     sequence = fields.Integer(required=True)
     location_id = fields.Many2one(
         "stock.location",

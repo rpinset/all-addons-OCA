@@ -307,16 +307,17 @@ class GeneralLedgerXslx(models.AbstractModel):
                             for account_ids, value in line[
                                 "analytic_distribution"
                             ].items():
-                                for account_id in account_ids.split(","):
-                                    if value < 100:
-                                        analytic_distribution += "%s %d%% " % (
-                                            analytic_data[int(account_id)]["name"],
-                                            value,
-                                        )
-                                    else:
-                                        analytic_distribution += (
-                                            f"{analytic_data[int(account_id)]['name']} "
-                                        )
+                                names = " ".join(
+                                    analytic_data[int(account_id.strip())]["name"]
+                                    for account_id in account_ids.split(",")
+                                )
+                                if value < 100:
+                                    analytic_distribution += "%s %d%% " % (
+                                        names,
+                                        value,
+                                    )
+                                else:
+                                    analytic_distribution += f"{names} "
                             line.update(
                                 {
                                     "taxes_description": taxes_description,

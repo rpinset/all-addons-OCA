@@ -70,8 +70,10 @@ class ShopfloorSingleProductTransfer(Component):
 
     # Responses
 
-    def _response_for_select_location_or_package(self, message=None):
-        return self._response(next_state="select_location_or_package", message=message)
+    def _response_for_select_location_or_package(self, message=None, popup=None):
+        return self._response(
+            next_state="select_location_or_package", message=message, popup=popup
+        )
 
     def _response_for_select_product(
         self,
@@ -649,6 +651,19 @@ class ShopfloorSingleProductTransfer(Component):
         if unload:
             lines.result_package_id = False
 
+    def _has_pending_operations_at_same_location(self, move_line):
+        return bool(
+            self.env["stock.move.line"].search_count(
+                [
+                    ("state", "in", ("assigned", "partially_available")),
+                    ("location_id", "=", move_line.location_id.id),
+                    ("picking_id.picking_type_id", "in", self.picking_types.ids),
+                    ("id", "!=", move_line.id),
+                ],
+                limit=1,
+            )
+        )
+
     def _set_quantity__post_move(self, move_line, location, confirmation=None):
         # TODO still valid ?
         # TODO qty_done = 0: transfer_no_qty_done
@@ -663,6 +678,13 @@ class ShopfloorSingleProductTransfer(Component):
         message = self.msg_store.transfer_done_success(move_line.picking_id)
         completion_info = self._actions_for("completion.info")
         completion_info_popup = completion_info.popup(move_line)
+        if (
+            not self.is_allow_move_create()
+            and not self._has_pending_operations_at_same_location(move_line)
+        ):
+            return self._response_for_select_location_or_package(
+                message=message, popup=completion_info_popup
+            )
         return self._response_for_select_product(
             location=move_line.location_id,
             package=move_line.package_id,
@@ -845,16 +867,29 @@ class ShopfloorSingleProductTransfer(Component):
         package = self.env["stock.quant.package"].browse(package_id)
         if not location.exists() and not package.exists():
             return self._response_for_select_location_or_package()
+        products = (
+            self.env["stock.quant"]
+            .search([("location_id", "=", location.id or package.location_id.id)])
+            .product_id
+        )
         handlers_by_type = {
             "product": self._scan_product__scan_product,
             "packaging": self._scan_product__scan_packaging,
             "lot": self._scan_product__scan_lot,
         }
         search = self._actions_for("search")
-        search_result = search.find(barcode, types=handlers_by_type.keys())
+        search_result = search.find(
+            barcode,
+            types=handlers_by_type.keys(),
+            handler_kw={"lot": {"products": products}},
+        )
         handler = handlers_by_type.get(search_result.type)
         if handler:
-            return handler(search_result.record, location=location, package=package)
+            return handler(
+                search_result.record,
+                location=location,
+                package=package,
+            )
         message = self.msg_store.barcode_not_found()
         return self._response_for_select_product(
             location=location, package=package, message=message

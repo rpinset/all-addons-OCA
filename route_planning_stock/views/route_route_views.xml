@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_route_form" model="ir.ui.view">
+        <field name="name">route.route.form</field>
+        <field name="model">route.route</field>
+        <field name="inherit_id" ref="route_planning.view_route_route_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='checkpoint_ids']/list//field[@name='longitude']"
+                position="after"
+            >
+                <field
+                    name="picking_id"
+                    readonly="state not in ['draft', 'cancel']"
+                    domain="picking_domain"
+                    options="{'no_create': True}"
+                    groups="stock.group_stock_user"
+                    optional="show"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

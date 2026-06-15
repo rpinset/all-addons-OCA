@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-01 04:03+0000\n"
-"PO-Revision-Date: 2026-05-09 02:32+0000\n"
+"PO-Revision-Date: 2026-06-13 10:12+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entry_ids
 #: model_terms:ir.ui.view,arch_db:account_move_line_purchase_info.view_move_line_journal_entries_form
 msgid "Journal Entries"
-msgstr "Dnevniški vnosi"
+msgstr "Temeljnice"
 
 #. module: account_move_line_purchase_info
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entries_count

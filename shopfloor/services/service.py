@@ -130,29 +130,32 @@ class BaseShopfloorProcess(AbstractComponent):
         We ensure the source is valid regarding one of the picking types of the
         process.
         """
-        return location.is_sublocation_of(self.picking_types.default_location_src_id)
+        return any(
+            location._child_of(src)
+            for src in self.picking_types.default_location_src_id
+        )
 
     def is_dest_location_valid(self, moves, location):
         """Check the destination location is valid for given moves.
 
         We ensure the destination is either valid regarding the picking
         destination location or the move destination location. With the push
-        rules in the module stock_dynamic_routing in OCA/wms, it is possible
-        that the move destination is not anymore a child of the picking default
-        destination (as it is the last pushed move that now respects this
-        condition and not anymore this one that has a destination to an
-        intermediate location)
+        rules in the module stock_dynamic_routing in
+        OCA/stock-logistics-workflow, it is possible that the move destination
+        is not anymore a child of the picking default destination (as it is the
+        last pushed move that now respects this condition and not anymore this
+        one that has a destination to an intermediate location)
         """
-        return location.is_sublocation_of(
-            moves.picking_id.location_dest_id, func=all
-        ) or location.is_sublocation_of(moves.location_dest_id, func=all)
+        return all(
+            location._child_of(dest) for dest in moves.picking_id.location_dest_id
+        ) or all(location._child_of(dest) for dest in moves.location_dest_id)
 
     def is_dest_location_to_confirm(self, location_dest_id, location):
         """Check the destination location requires confirmation
 
         The location is valid but not the expected one: ask for confirmation
         """
-        return not location.is_sublocation_of(location_dest_id)
+        return not location._child_of(location_dest_id)
 
     def is_allow_move_create(self):
         """Check a new operation can be created

@@ -556,9 +556,58 @@ class TestSetQuantity(CommonCase):
         expected_message = self.service.msg_store.transfer_done_success(
             move_line.picking_id
         )
-        data = {"location": self._data_for_location(location)}
+        self.assert_response(
+            response, next_state="select_location_or_package", message=expected_message
+        )
+
+    def test_set_quantity_multi_operation_same_location(self):
+        self._add_stock_to_product(self.product, self.location, 10)
+        self._add_stock_to_product(self.product_b, self.location, 10)
+        picking = self._create_picking(lines=[(self.product, 10), (self.product_b, 10)])
+
+        location = self.location
+
+        move_line = picking.move_line_ids.filtered(
+            lambda ml: ml.product_id == self.product
+        )
+        self.service.dispatch(
+            "scan_product",
+            params={"location_id": location.id, "barcode": self.product.barcode},
+        )
+        params = {
+            "selected_line_id": move_line.id,
+            "quantity": move_line.qty_picked,
+            "barcode": self.dispatch_location.barcode,
+        }
+        response = self.service.dispatch("set_quantity", params=params)
+        expected_message = self.service.msg_store.transfer_done_success(
+            move_line.picking_id
+        )
+        data = {
+            "location": self._data_for_location(location),
+        }
         self.assert_response(
             response, next_state="select_product", message=expected_message, data=data
+        )
+
+        move_line = picking.move_line_ids.filtered(
+            lambda ml: ml.product_id == self.product_b
+        )
+        self.service.dispatch(
+            "scan_product",
+            params={"location_id": location.id, "barcode": self.product_b.barcode},
+        )
+        params = {
+            "selected_line_id": move_line.id,
+            "quantity": move_line.qty_picked,
+            "barcode": self.dispatch_location.barcode,
+        }
+        response = self.service.dispatch("set_quantity", params=params)
+        expected_message = self.service.msg_store.transfer_done_success(
+            move_line.picking_id
+        )
+        self.assert_response(
+            response, next_state="select_location_or_package", message=expected_message
         )
 
     def test_set_quantity_confirm_with_different_barcode(self):
@@ -592,9 +641,8 @@ class TestSetQuantity(CommonCase):
         expected_message = self.service.msg_store.transfer_done_success(
             move_line.picking_id
         )
-        data = {"location": self._data_for_location(self.location)}
         self.assert_response(
-            response, next_state="select_product", message=expected_message, data=data
+            response, next_state="select_location_or_package", message=expected_message
         )
 
     def test_set_quantity_child_move_location(self):
@@ -615,9 +663,8 @@ class TestSetQuantity(CommonCase):
             },
         )
         expected_message = self.msg_store.transfer_done_success(move_line.picking_id)
-        data = {"location": self._data_for_location(location)}
         self.assert_response(
-            response, next_state="select_product", message=expected_message, data=data
+            response, next_state="select_location_or_package", message=expected_message
         )
 
     def test_action_cancel(self):
@@ -694,12 +741,10 @@ class TestSetQuantity(CommonCase):
         expected_message = self.msg_store.transfer_done_success(move_line.picking_id)
         completion_info = self.service._actions_for("completion.info")
         expected_popup = completion_info.popup(move_line)
-        data = {"location": self._data_for_location(location)}
         self.assert_response(
             response,
-            next_state="select_product",
+            next_state="select_location_or_package",
             message=expected_message,
-            data=data,
             popup=expected_popup,
         )
 
@@ -813,16 +858,12 @@ class TestSetQuantity(CommonCase):
                 "barcode": package.name,
             },
         )
-        expected_data = {
-            "location": self._data_for_location(self.location),
-        }
         expected_message = self.msg_store.transfer_done_success(move_line.picking_id)
         completion_info = self.service._actions_for("completion.info")
         expected_popup = completion_info.popup(move_line)
         self.assert_response(
             response,
-            next_state="select_product",
-            data=expected_data,
+            next_state="select_location_or_package",
             message=expected_message,
             popup=expected_popup,
         )

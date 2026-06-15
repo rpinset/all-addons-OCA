@@ -187,9 +187,7 @@ class Delivery(Component):
         return self._deliver_lot(picking, lot, product_qty=1, location=location)
 
     def _scan_deliver__by_location(self, scanned_location, picking, location):
-        if scanned_location.is_sublocation_of(
-            self.picking_types.mapped("default_location_src_id")
-        ):
+        if self.is_src_location_valid(scanned_location):
             message = self.msg_store.location_src_set_to_sublocation(scanned_location)
             return self._response_for_deliver(
                 location=scanned_location, message=message

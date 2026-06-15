@@ -1,0 +1,186 @@
+# Copyright 2025 Tecnativa - Carlos Lopez
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+import logging
+
+from odoo import api, fields, models
+from odoo.exceptions import UserError
+
+_logger = logging.getLogger(__name__)
+
+
+class StockPicking(models.Model):
+    _inherit = "stock.picking"
+
+    route_area_id = fields.Many2one(
+        "route.area",
+        string="Route Area",
+        copy=False,
+        help="Route area for this picking, used to create routes.",
+    )
+    has_route_planning = fields.Boolean(compute="_compute_has_route_planning")
+
+    @api.depends("company_id")
+    def _compute_has_route_planning(self):
+        route_data = self.env["route.checkpoint"]._read_group(
+            [("picking_id", "in", self.ids)],
+            groupby=["picking_id"],
+            aggregates=["route_id:count"],
+        )
+        count_data = dict(route_data)
+        for picking in self:
+            counting = count_data.get(picking) or 0
+            picking.has_route_planning = counting > 0
+
+    def action_cancel(self):
+        current_checkpoint = self.env["route.checkpoint"].search(
+            [("picking_id", "in", self.ids), ("state", "not in", ["done", "incident"])],
+            limit=1,
+        )
+        if current_checkpoint:
+            if current_checkpoint.state != "draft":
+                raise UserError(
+                    self.env._(
+                        "This picking cannot be cancelled "
+                        "because it is associated with a route: %(route)s. "
+                        "If you want to cancel it, first remove it from the route.",
+                        route=current_checkpoint.route_id.display_name,
+                    )
+                )
+            incident_picking_cancel = self.env.ref(
+                "route_planning_stock.route_incident_cancel"
+            )
+            current_checkpoint._action_create_incident(
+                incident_picking_cancel, self.env._("Cancelled from picking")
+            )
+        return super().action_cancel()
+
+    def _action_done(self):
+        checkpoint_map = {}
+        for picking in self:
+            current_checkpoint = self.env["route.checkpoint"].search(
+                [
+                    ("picking_id", "=", picking.id),
+                    ("state", "not in", ["done", "incident"]),
+                ],
+                limit=1,
+            )
+            checkpoint_map[picking.id] = current_checkpoint
+            if current_checkpoint and current_checkpoint.route_id.state == "draft":
+                raise UserError(
+                    self.env._(
+                        "This picking cannot be validated yet "
+                        "because it is associated with route: %(route)s. "
+                        "Which has not been planned yet. "
+                        "If you want to validate it, please plan the route first.",
+                        route=current_checkpoint.route_id.display_name,
+                    )
+                )
+        res = super()._action_done()
+        for picking in self:
+            current_checkpoint = checkpoint_map.get(picking.id)
+            if current_checkpoint:
+                current_checkpoint.action_done()
+        return res
+
+    def action_view_route_planning(self):
+        self.ensure_one()
+        checkpoint = self.env["route.checkpoint"].search([("picking_id", "=", self.id)])
+        action = self.env["ir.actions.act_window"]._for_xml_id(
+            "route_planning.action_route_route"
+        )
+        action.update(
+            {
+                "res_id": checkpoint.route_id.id,
+                "views": [(False, "form")],
+            }
+        )
+        return action
+
+    def _can_add_to_route(self):
+        """Check if the picking can be added to a route"""
+        self.ensure_one()
+        return (
+            self.route_area_id
+            and self.partner_id
+            and self.location_id == self.route_area_id.location_id
+            and self.state not in ["draft", "done", "cancel"]
+        )
+
+    def _find_auto_route(self):
+        """Assign picking to a route or create a new one"""
+        self.ensure_one()
+        Route = self.env["route.route"]
+        Checkpoint = self.env["route.checkpoint"]
+        if not self._can_add_to_route():
+            return
+        # Look for existing route for today in this area
+        route = Route.search(
+            self._get_possible_route_domain(),
+            limit=1,
+        )
+        if not route:
+            route = Route.create(self._prepare_route_vals())
+        # Create checkpoint for this picking's partner
+        checkpoint = Checkpoint.search(
+            [("route_id", "=", route.id), ("picking_id", "=", self.id)], limit=1
+        )
+        if not checkpoint:
+            if (
+                not self.partner_id.partner_latitude
+                or not self.partner_id.partner_longitude
+            ):
+                # Try geo localize
+                try:
+                    with self.env.cr.savepoint():
+                        self.partner_id.geo_localize()
+                except Exception:
+                    _logger.warning(
+                        "Failed to geo localize partner %s", self.partner_id.name
+                    )
+            Checkpoint.create(self._prepare_route_checkpoint_vals(route))
+            picking_msg = self.env._(
+                "This picking is associated with the route: %s", route._get_html_link()
+            )
+            self.message_post(body=picking_msg)
+
+    def _get_possible_route_domain(self):
+        self.ensure_one()
+        company = self.company_id or self.env.company
+        start_location = (
+            self.picking_type_id.warehouse_id.partner_id or company.partner_id
+        )
+        route_date = self._get_schedule_date_for_route()
+        domain = [
+            ("state", "=", "draft"),
+            ("company_id", "=", company.id),
+            ("route_area_id", "=", self.route_area_id.id),
+            ("start_location_id", "=", start_location.id),
+            ("schedule_date", "=", route_date.date()),
+        ]
+        return domain
+
+    def _get_schedule_date_for_route(self):
+        """Get the schedule date to use for route assignment."""
+        now = fields.Datetime.now()
+        max_date = max(self.scheduled_date or now, self.date_deadline or now)
+        return fields.Datetime.context_timestamp(self, max_date)
+
+    def _prepare_route_vals(self):
+        company = self.company_id or self.env.company
+        start_location = (
+            self.picking_type_id.warehouse_id.partner_id or company.partner_id
+        )
+        route_date = self._get_schedule_date_for_route()
+        return {
+            "route_area_id": self.route_area_id.id,
+            "start_location_id": start_location.id,
+            "schedule_date": route_date.date(),
+        }
+
+    def _prepare_route_checkpoint_vals(self, route):
+        return {
+            "route_id": route.id,
+            "partner_id": self.partner_id.id,
+            "picking_id": self.id,
+        }

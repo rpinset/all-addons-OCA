@@ -58,9 +58,7 @@ class CheckoutListDestPackageCase(
         self._fill_stock_for_moves(picking.move_ids[2], in_package=True)
         self._fill_stock_for_moves(picking.move_ids[3], in_package=True)
         picking.action_assign()
-        package_type = self.env.ref(
-            "stock_storage_type.product_product_9_packaging_single_bag"
-        )
+        package_type = self.env.ref("stock.package_type_01")
         delivery_package = self.env["stock.quant.package"].create(
             {"package_type_id": package_type.id}
         )
@@ -123,9 +121,7 @@ class CheckoutScanSetDestPackageCase(CheckoutCommonCase, SelectDestPackageMixin)
 
         cls.selected_lines = pack1_moves.move_line_ids
         cls.pack1 = pack1_moves.move_line_ids.package_id
-        cls.package_type = cls.env.ref(
-            "stock_storage_type.product_product_9_packaging_single_bag"
-        )
+        cls.package_type = cls.env.ref("stock.package_type_01")
         cls.delivery_package = cls.env["stock.quant.package"].create(
             {"package_type_id": cls.package_type.id}
         )

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="route_incident_cancel" model="route.incident.type">
+        <field name="name">Document Cancelled</field>
+        <field name="rescheduled" eval="False" />
+        <field name="company_id" eval="False" />
+    </record>
+</odoo>

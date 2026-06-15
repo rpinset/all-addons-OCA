@@ -403,6 +403,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_wizard_account_move_manage_asset__l10n_it_asset_id
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.asset_accounting_info_search_view
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.asset_dep_line_search_view
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Asset"
 msgstr ""
 
@@ -545,6 +546,13 @@ msgstr ""
 #. module: l10n_it_asset_management
 #: model:ir.ui.menu,name:l10n_it_asset_management.menu_asset_reports
 msgid "Asset Reports"
+msgstr ""
+
+#. module: l10n_it_asset_management
+#: model:ir.actions.act_window,name:l10n_it_asset_management.action_asset_depreciation_situation
+#: model:ir.ui.menu,name:l10n_it_asset_management.menu_asset_situation
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Asset Situation"
 msgstr ""
 
 #. module: l10n_it_asset_management
@@ -931,6 +939,7 @@ msgstr ""
 #: code:addons/l10n_it_asset_management/report/asset_previsional_xlsx.py:0
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_asset__category_id
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_category_depreciation_type__category_id
+#: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_depreciation__category_id
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_report_asset_journal__category_ids
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_report_asset_journal_category__category_id
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_report_asset_previsional__category_ids
@@ -1251,6 +1260,11 @@ msgid "Dep. Percentage (%)"
 msgstr ""
 
 #. module: l10n_it_asset_management
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Depreciable Amount"
+msgstr ""
+
+#. module: l10n_it_asset_management
 #: model:ir.model.fields.selection,name:l10n_it_asset_management.selection__asset_asset__state__totally_depreciated
 #: model:ir.model.fields.selection,name:l10n_it_asset_management.selection__asset_depreciation__state__totally_depreciated
 msgid "Depreciated"
@@ -1258,6 +1272,7 @@ msgstr ""
 
 #. module: l10n_it_asset_management
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_depreciation__amount_depreciated
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Depreciated Amount"
 msgstr ""
 
@@ -1349,6 +1364,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_depreciation__type_id
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_depreciation_line__depreciation_line_type_id
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.asset_dep_line_search_view
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Depreciation Type"
 msgstr ""
 
@@ -1857,6 +1873,11 @@ msgstr ""
 #. module: l10n_it_asset_management
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_depreciation__last_depreciation_date
 msgid "Last Dep."
+msgstr ""
+
+#. module: l10n_it_asset_management
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Last Depreciation Date"
 msgstr ""
 
 #. module: l10n_it_asset_management
@@ -2607,6 +2628,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_asset_management/report/asset_journal_xlsx.py:0
 #: code:addons/l10n_it_asset_management/report/asset_previsional_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Residual"
 msgstr ""
 
@@ -2805,6 +2827,21 @@ msgstr ""
 #: code:addons/l10n_it_asset_management/report/asset_journal_xlsx.py:0
 #: code:addons/l10n_it_asset_management/report/asset_previsional_xlsx.py:0
 msgid "Total"
+msgstr ""
+
+#. module: l10n_it_asset_management
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Total Depreciable"
+msgstr ""
+
+#. module: l10n_it_asset_management
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Total Depreciated"
+msgstr ""
+
+#. module: l10n_it_asset_management
+#: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
+msgid "Total Residual"
 msgstr ""
 
 #. module: l10n_it_asset_management

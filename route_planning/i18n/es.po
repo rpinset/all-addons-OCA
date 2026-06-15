@@ -281,7 +281,7 @@ msgid "Created on"
 msgstr ""
 
 #. module: route_planning
-#: model:route.incident.type,name:route_planning.incident_type_customer_not_available
+#: model:route.incident.type,name:route_planning.incident_type_customer_not_available_demo
 msgid "Customer Not Available"
 msgstr ""
 
@@ -780,6 +780,11 @@ msgid "Route Planning Info"
 msgstr "Planificación de rutas"
 
 #. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__route_state
+msgid "Route State"
+msgstr ""
+
+#. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_res_partner__route_visitwindow_ids
 #: model:ir.model.fields,field_description:route_planning.field_res_users__route_visitwindow_ids
 msgid "Route Visitwindow"
@@ -951,7 +956,7 @@ msgid "Time To"
 msgstr "Hasta"
 
 #. module: route_planning
-#: model:route.incident.type,name:route_planning.incident_type_traffic_delay
+#: model:route.incident.type,name:route_planning.incident_type_traffic_delay_demo
 msgid "Traffic Delay"
 msgstr ""
 
@@ -1032,6 +1037,18 @@ msgstr "Ventanas de visita"
 #: model:ir.model.fields,field_description:route_planning.field_route_route__waiting_time
 msgid "Waiting Time"
 msgstr "Tiempo de espera"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,help:route_planning.field_route_route__website_message_ids
+msgid "Website communication history"
+msgstr ""
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__2
