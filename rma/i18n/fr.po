@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-12-09 09:57+0000\n"
+"PO-Revision-Date: 2026-06-15 08:00+0000\n"
 "Last-Translator: SupportSNDC <support@sndc.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: rma
 #. odoo-python
@@ -25,7 +25,6 @@ msgstr "%s (copie)"
 
 #. module: rma
 #: model:ir.actions.report,print_report_name:rma.report_rma_action
-#, fuzzy
 msgid "(object._get_report_base_filename())"
 msgstr "(object._get_report_base_filename())"
 
@@ -202,7 +201,6 @@ msgstr ""
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
-#, fuzzy
 msgid ""
 "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" "
 "title=\"Manage\"/>"
@@ -485,7 +483,6 @@ msgstr "<strong>État:</strong>"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_defaults
-#, fuzzy
 msgid ""
 "A Python dictionary that will be evaluated to provide default values when "
 "creating new records for this alias."
@@ -1092,7 +1089,6 @@ msgstr "Abonnés (Partenaires)"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__activity_type_icon
-#, fuzzy
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr "Font awesome icon e.g. fa-tasks"
 
@@ -1341,7 +1337,6 @@ msgstr "Responsable"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__manual_finish_allowed
-#, fuzzy
 msgid "Manual Finish Allowed"
 msgstr "Clôture manuelle autorisée"
 
@@ -1852,7 +1847,6 @@ msgstr "RMA au statut brouillon"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_out_replace_route_id
-#, fuzzy
 msgid "RMA out Replace Route"
 msgstr "Route sortante RMA pour remplacement"
 
@@ -1863,7 +1857,6 @@ msgstr "Route de sortie RMA"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_move__rma_receiver_ids
-#, fuzzy
 msgid "RMA receivers"
 msgstr "Récepteurs RMA"
 
@@ -1874,7 +1867,6 @@ msgstr "Produits RMA liés peuvent être stockés dans cet entrepôt."
 
 #. module: rma
 #: model:ir.model,name:rma.model_rma_operation
-#, fuzzy
 msgid "RMA requested operation"
 msgstr "Opération RMA demandée"
 
@@ -2098,7 +2090,7 @@ msgstr "Retour du produit"
 #: code:addons/rma/models/stock_move.py:0
 #, python-format
 msgid "Return of %s"
-msgstr ""
+msgstr "Retour de %s"
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
@@ -2126,7 +2118,7 @@ msgstr "Retourné"
 #. module: rma
 #. odoo-python
 #: code:addons/rma/wizard/stock_picking_return.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "Returned Picking"
 msgstr "Transfert retourné"
 
@@ -2374,7 +2366,6 @@ msgstr "Ce nom d'opération existe déjà !"
 
 #. module: rma
 #: model_terms:ir.actions.act_window,help:rma.rma_dashboard_action
-#, fuzzy
 msgid ""
 "The RMA operation system allows you to configure each return operation\n"
 "                with specific settings that will adjust its behavior."
@@ -2391,7 +2382,6 @@ msgstr "Le champ actif vous permet de cacher la catégorie sans l'enlever."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_model_id
-#, fuzzy
 msgid ""
 "The model (Odoo Document Kind) to which this alias corresponds. Any incoming "
 "email that does not reply to an existing record will cause the creation of a "
@@ -2703,13 +2693,11 @@ msgstr ""
 #: model:mail.template,report_name:rma.mail_template_rma_draft_notification
 #: model:mail.template,report_name:rma.mail_template_rma_notification
 #: model:mail.template,report_name:rma.mail_template_rma_receipt_notification
-#, fuzzy
 msgid "{{(object.name or '')}}"
 msgstr "{{(object.name or '')}}"
 
 #. module: rma
 #: model:mail.template,subject:rma.mail_template_rma_notification
-#, fuzzy
 msgid "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }})"
 msgstr "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }})"
 
