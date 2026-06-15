@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-12 15:53 UTC** (elapsed 168s)
+Last build: **2026-06-15 22:02 UTC** (elapsed 115s)
 
 - Repos integrated: **140**
 - Canonical modules: **2903**
@@ -45,7 +45,7 @@ Last build: **2026-06-12 15:53 UTC** (elapsed 168s)
 | [currency](https://github.com/OCA/currency) | 8 | 9e281c1 2025-09-16 Betül Öğmen Translated using Weblate (Turkish) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d70466e 2025-10-21 mymage Translated using Weblate (Italian) |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 0759d52 2026-05-27 Weblate Update translation files |
+| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 196a223 2026-06-15 OCA-git-bot [BOT] post-merge updates |
 | [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
@@ -82,7 +82,7 @@ Last build: **2026-06-12 15:53 UTC** (elapsed 168s)
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 6 | 8dc1cd9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 41 | e17b382 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | 1 | 31525a4 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 60 | f83a336 2026-02-20 Weblate Update translation files |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 60 | 2dcddb9 2026-06-15 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 19 | e40374e 2026-02-02 OCA-git-bot Merge PR #776 into 14.0 |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 25 | 6dd956c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 9 | 4e58c97 2026-01-12 OCA-git-bot [BOT] post-merge updates |
@@ -109,7 +109,7 @@ Last build: **2026-06-12 15:53 UTC** (elapsed 168s)
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | 2790e79 2026-05-26 mymage Translated using Weblate (Italian) |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | 9a59899 2026-06-13 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [queue](https://github.com/OCA/queue) | 12 | 1c896eb 2026-06-03 mymage Translated using Weblate (Italian) |
 | [report-print-send](https://github.com/OCA/report-print-send) | 8 | abe01e8 2025-10-09 Betül Öğmen Translated using Weblate (Turkish) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 24 | 9aa96a9 2025-11-25 mymage Translated using Weblate (Italian) |
