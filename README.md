@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-12 15:56 UTC** (elapsed 70s)
+Last build: **2026-06-15 22:05 UTC** (elapsed 100s)
 
 - Repos integrated: **117**
-- Canonical modules: **2093**
+- Canonical modules: **2094**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **137**
 
@@ -110,7 +110,7 @@ Last build: **2026-06-12 15:56 UTC** (elapsed 70s)
 | [server-ux](https://github.com/OCA/server-ux) | 37 | f765f9c 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 0bb1516 2026-02-19 OCA-git-bot [BOT] post-merge updates |
 | [sign](https://github.com/OCA/sign) | 3 | 265ed93 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
-| [social](https://github.com/OCA/social) | 48 | a622e29 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [social](https://github.com/OCA/social) | 49 | 9848c65 2026-06-15 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | c4b3e65 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
