@@ -175,6 +175,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_fiscal_year_closing](account_fiscal_year_closing/) | 19.0.1.0.0 |  | Generic fiscal year closing wizard
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start/end dates on invoice/move lines
 
 [//]: # (end addons)
@@ -274,15 +275,15 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 19.0.1.0.0 |  | Add a code field to the accounts tags
 [account_asset_force_account](account_asset_force_account/) | 19.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Asset Force Account
-[account_asset_management](account_asset_management/) | 19.0.1.0.1 |  | Assets Management
+[account_asset_management](account_asset_management/) | 19.0.1.0.2 |  | Assets Management
 [account_chart_update](account_chart_update/) | 19.0.1.1.1 |  | Wizard to update a company's account chart from a template
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 19.0.1.0.1 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 19.0.1.0.1 |  | Account Invoice Constraint Chronology
-[account_journal_general_sequence](account_journal_general_sequence/) | 19.0.1.0.2 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Add configurable sequence to account moves, per journal
+[account_journal_general_sequence](account_journal_general_sequence/) | 19.0.1.0.3 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 19.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 19.0.1.0.0 |  | Lock All Posted Entries of Journals.
-[account_move_name_sequence](account_move_name_sequence/) | 19.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Generate journal entry number from sequence
+[account_move_name_sequence](account_move_name_sequence/) | 19.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Generate journal entry number from sequence
 [account_move_post_date_user](account_move_post_date_user/) | 19.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Trace journal entry posting date and user.
 [account_move_print](account_move_print/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds the option to print Journal Entries
 [account_move_template](account_move_template/) | 19.0.1.0.0 |  | Templates for recurring Journal Entries
@@ -557,7 +558,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 19.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -665,6 +666,7 @@ addon | version | maintainers | summary
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.3 |  | Adds payment mode on partners and invoices
 [account_payment_order](account_payment_order/) | 19.0.1.0.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
+[account_payment_order_notification](account_payment_order_notification/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_purchase](account_payment_purchase/) | 19.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 19.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 19.0.1.0.1 |  | Adds payment mode on sale orders
@@ -773,7 +775,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt54](account_statement_import_camt54/) | 19.0.1.0.0 |  | Bank Account Camt54 Import
 [account_statement_import_file](account_statement_import_file/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
-[account_statement_import_online](account_statement_import_online/) | 19.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 19.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 19.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 19.0.1.0.0 |  | Import QIF Bank Statements
 [account_statement_import_sheet_file](account_statement_import_sheet_file/) | 19.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo
@@ -1125,6 +1127,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract](contract/) | 19.0.1.0.0 |  | Recurring - Contracts Management
+[contract_variable_quantity](contract_variable_quantity/) | 19.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
 [subscription_oca](subscription_oca/) | 19.0.1.0.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
@@ -2608,7 +2611,7 @@ addon | version | maintainers | summary
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 19.0.1.0.0 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 19.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 19.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 19.0.1.2.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 19.0.1.0.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 19.0.1.0.0 |  | AEAT modelo 123
@@ -2618,10 +2621,10 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 19.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 19.0.1.0.1 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 19.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_facturae](l10n_es_facturae/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_mis_report](l10n_es_mis_report/) | 19.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
@@ -2721,6 +2724,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_user_signature](base_user_signature/) | 19.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Base User Signature
 [mail_activity_board](mail_activity_board/) | 19.0.1.0.0 |  | Add Activity Boards
 [mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.1 |  | Reminder notifications about planned activities
 [mail_activity_team](mail_activity_team/) | 19.0.1.0.0 |  | Add Teams to Activities
@@ -2842,9 +2846,13 @@ addon | version | maintainers | summary
 [document_page_work_instruction](document_page_work_instruction/) | 19.0.1.0.0 |  | Document Management - Wiki - Work Instructions
 [mgmtsystem](mgmtsystem/) | 19.0.1.1.0 |  | Support for management systems, such as ISO compliance.
 [mgmtsystem_action](mgmtsystem_action/) | 19.0.1.0.0 |  | Management System - Action
+[mgmtsystem_audit](mgmtsystem_audit/) | 19.0.1.0.0 |  | Management System - Audit
 [mgmtsystem_hazard](mgmtsystem_hazard/) | 19.0.1.0.0 |  | Hazard
 [mgmtsystem_manual](mgmtsystem_manual/) | 19.0.1.0.0 |  | Management System - Manual
 [mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 19.0.1.0.0 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 19.0.1.0.0 |  | Bridge module between hr and mgmsystem and
+[mgmtsystem_quality](mgmtsystem_quality/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
+[mgmtsystem_review](mgmtsystem_review/) | 19.0.1.0.0 |  | Management System - Review
 [mgmtsystem_survey](mgmtsystem_survey/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Management System - Survey
 
 [//]: # (end addons)
@@ -4576,6 +4584,7 @@ addon | version | maintainers | summary
 [date_range](date_range/) | 19.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [date_range_account](date_range_account/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
 [mail_message_destiny_link_template](mail_message_destiny_link_template/) | 19.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Mail template to show destiny records in chatter.
+[sequence_reset_period](sequence_reset_period/) | 19.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
 [server_action_mass_edit](server_action_mass_edit/) | 19.0.1.0.0 |  | Mass Editing
 
 [//]: # (end addons)

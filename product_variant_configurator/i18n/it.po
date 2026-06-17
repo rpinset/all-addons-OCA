@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-30 08:37+0000\n"
-"PO-Revision-Date: 2026-05-21 14:46+0000\n"
+"PO-Revision-Date: 2026-06-16 21:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -491,7 +491,7 @@ msgstr "Imposte acquisti"
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__expense_policy
 msgid "Re-Invoice Costs"
-msgstr ""
+msgstr "Costi di rifatturazione"
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__visible_expense_policy
@@ -516,7 +516,7 @@ msgstr "Descrizione vendite"
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__sale_line_warn_msg
 msgid "Sales Order Line Warning"
-msgstr ""
+msgstr "Avviso riga ordine di vendita"
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__list_price
@@ -634,6 +634,9 @@ msgid ""
 "Validated expenses, vendor bills, or stock pickings (set up to track costs) "
 "can be invoiced to the customer at either cost or sales price."
 msgstr ""
+"Le spese convalidate, le fatture dei fornitori o i prelievi di magazzino "
+"(configurati per tenere traccia dei costi) possono essere fatturate al "
+"cliente al prezzo di costo o al prezzo di vendita."
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute__value_id
