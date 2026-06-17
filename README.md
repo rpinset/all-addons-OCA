@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-15 22:02 UTC** (elapsed 115s)
+Last build: **2026-06-17 04:59 UTC** (elapsed 78s)
 
 - Repos integrated: **140**
 - Canonical modules: **2903**
@@ -124,7 +124,7 @@ Last build: **2026-06-15 22:02 UTC** (elapsed 115s)
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 8333e14 2025-06-13 Betül Öğmen Added translation using Weblate (Turkish) |
 | [server-env](https://github.com/OCA/server-env) | 10 | 041cc08 2025-06-04 OCA-git-bot [BOT] post-merge updates |
-| [server-tools](https://github.com/OCA/server-tools) | 81 | 4b1c106 2026-04-07 Weblate Update translation files |
+| [server-tools](https://github.com/OCA/server-tools) | 81 | 32d87c6 2026-06-16 mymage Translated using Weblate (Italian) |
 | [server-ux](https://github.com/OCA/server-ux) | 41 | 5a86e6d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 857ac8f 2025-09-03 mymage Translated using Weblate (Italian) |
 | [sign](https://github.com/OCA/sign) | 4 | 79ed266 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
