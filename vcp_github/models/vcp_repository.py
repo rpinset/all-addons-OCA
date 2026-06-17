@@ -151,6 +151,7 @@ class VcpRepository(models.Model):
                     else r["state"],
                 }
                 for r in reviews
+                if r.get("submitted_at")
             ],
         )
 

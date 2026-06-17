@@ -9,6 +9,8 @@ from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
+from .helpers import check_all_accounts_loaded
+
 
 @tagged("post_install", "-at_install")
 class TestTrialBalanceReport(AccountTestInvoicingCommon):
@@ -682,39 +684,14 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
         self.assertEqual(total_debit, total_credit)
 
     def test_05_all_accounts_loaded(self):
-        # Tests if all accounts which code is number are loaded
-        # when the account_code_ fields changed
-        all_accounts = (
-            self.env["account.account"]
-            .search([], order="code")
-            .filtered(lambda acc: re.fullmatch(r"[0-9]+(\.[0-9]+)?", acc.code))
+        kwargs = {
+            "date_from": self.date_start,
+            "date_to": self.date_end,
+            "show_hierarchy": False,
+        }
+        check_all_accounts_loaded(
+            self, wizard_model="trial.balance.report.wizard", **kwargs
         )
-        company = self.env.user.company_id
-        trial_balance = self.env["trial.balance.report.wizard"].create(
-            {
-                "date_from": self.date_start,
-                "date_to": self.date_end,
-                "target_move": "posted",
-                "hide_account_at_0": False,
-                "show_hierarchy": False,
-                "company_id": company.id,
-                "fy_start_date": self.fy_date_start,
-                "account_code_from": self.account001.id,
-                "account_code_to": all_accounts[-1].id,
-            }
-        )
-        trial_balance.on_change_account_range()
-        # sets are needed because some codes are duplicated and
-        # thus the length of all_accounts would be higher
-        all_accounts_code_set = set()
-        trial_balance_code_set = set()
-        [all_accounts_code_set.add(account.code) for account in all_accounts]
-        [
-            trial_balance_code_set.add(account.code)
-            for account in trial_balance.account_ids
-        ]
-        self.assertEqual(len(trial_balance_code_set), len(all_accounts_code_set))
-        self.assertTrue(trial_balance_code_set == all_accounts_code_set)
 
     def test_06_all_accounts_loaded_newid(self):
         all_accounts = (

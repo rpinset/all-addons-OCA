@@ -11,6 +11,8 @@ from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
+from .helpers import check_all_accounts_loaded
+
 
 @tagged("post_install", "-at_install")
 class TestGeneralLedgerReport(AccountTestInvoicingCommon):
@@ -47,6 +49,13 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
             limit=1,
         )
         cls.partner = cls.env.ref("base.res_partner_12")
+        cls.account001 = cls.env["account.account"].create(
+            {
+                "code": "001",
+                "name": "Account 001",
+                "account_type": "income_other",
+            }
+        )
 
     def _add_move(
         self,
@@ -686,6 +695,9 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
         self.assertEqual(unaffected_fin_balance["debit"], 1500)
         self.assertEqual(unaffected_fin_balance["credit"], 1000)
         self.assertEqual(unaffected_fin_balance["balance"], 500)
+
+    def test_05_all_accounts_loaded(self):
+        check_all_accounts_loaded(self, wizard_model="general.ledger.report.wizard")
 
     def test_partner_filter(self):
         partner_1 = self.env.ref("base.res_partner_1")

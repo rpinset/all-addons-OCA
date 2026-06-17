@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-02-26 16:34+0000\n"
+"PO-Revision-Date: 2026-06-16 21:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,13 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
 msgid "%(model)s --> %(name)s (ID = %(res_id)s)."
-msgstr ""
+msgstr "%(model)s --> %(name)s (ID = %(res_id)s)."
 
 #. module: mail_drop_target
 #: model:ir.model,name:mail_drop_target.model_ir_attachment
@@ -57,13 +57,13 @@ msgstr "Installare la libreria msg-extractor per festire i file .msg"
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
 msgid "The already imported copy is attached to: %(locations)s"
-msgstr ""
+msgstr "La copia già importata è allegata a: %(locations)s"
 
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
 msgid "This message is already imported. "
-msgstr ""
+msgstr "Questo messaggio è già stato importato. "
 
 #. module: mail_drop_target
 #: model_terms:ir.ui.view,arch_db:mail_drop_target.res_config_settings_view_form
@@ -95,13 +95,13 @@ msgstr "Non si ha l'autorizzazione per caricare qui un allegato."
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
 msgid "a record that no longer exists."
-msgstr ""
+msgstr "un record che non esiste più."
 
 #. module: mail_drop_target
 #. odoo-python
 #: code:addons/mail_drop_target/models/mail_thread.py:0
 msgid "a record you are not allowed to access."
-msgstr ""
+msgstr "un record a cui non si è abilitati ad accedere."
 
 #, python-format
 #~ msgid "This message is already imported."

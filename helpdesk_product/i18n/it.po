@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-26 18:43+0000\n"
+"PO-Revision-Date: 2026-06-16 21:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: helpdesk_product
 #: model_terms:ir.ui.view,arch_db:helpdesk_product.product_template_search_view_helpdesk
@@ -48,7 +48,7 @@ msgstr "Ticket assistenza clienti"
 #: model:ir.model.fields,field_description:helpdesk_product.field_product_product__helpdesk_ticket_count
 #: model:ir.model.fields,field_description:helpdesk_product.field_product_template__helpdesk_ticket_count
 msgid "Helpdesk Ticket Count"
-msgstr ""
+msgstr "Conteggio ticket assistenza clienti"
 
 #. module: helpdesk_product
 #: model:ir.model,name:helpdesk_product.model_product_template
@@ -65,7 +65,7 @@ msgstr "Prodotto relativo"
 #. module: helpdesk_product
 #: model:ir.model,name:helpdesk_product.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante prodotto"
 
 #. module: helpdesk_product
 #: model:ir.actions.act_window,name:helpdesk_product.product_template_action_helpdesk
@@ -76,7 +76,7 @@ msgstr "Prodotti"
 #. module: helpdesk_product
 #: model_terms:ir.ui.view,arch_db:helpdesk_product.product_view_template
 msgid "Tickets"
-msgstr ""
+msgstr "Ticket"
 
 #. module: helpdesk_product
 #: model_terms:ir.actions.act_window,help:helpdesk_product.product_template_action_helpdesk

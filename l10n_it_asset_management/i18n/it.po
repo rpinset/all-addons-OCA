@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-23 08:16+0000\n"
-"PO-Revision-Date: 2025-10-02 19:44+0000\n"
+"PO-Revision-Date: 2026-06-16 21:11+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_it_asset_management
 #. odoo-python
@@ -560,7 +560,7 @@ msgstr "Resoconti cespite"
 #: model:ir.ui.menu,name:l10n_it_asset_management.menu_asset_situation
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Asset Situation"
-msgstr ""
+msgstr "Situazione cespite"
 
 #. module: l10n_it_asset_management
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_report_asset_journal_asset__asset_state
@@ -1946,7 +1946,7 @@ msgstr "Ultimo amm.to"
 #. module: l10n_it_asset_management
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Last Depreciation Date"
-msgstr ""
+msgstr "Data ultima svalutazione"
 
 #. module: l10n_it_asset_management
 #: model:ir.model.fields,field_description:l10n_it_asset_management.field_asset_accounting_info__write_uid
@@ -2918,17 +2918,17 @@ msgstr "Totale"
 #. module: l10n_it_asset_management
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Total Depreciable"
-msgstr ""
+msgstr "Totale svalutabile"
 
 #. module: l10n_it_asset_management
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Total Depreciated"
-msgstr ""
+msgstr "Totale svalutato"
 
 #. module: l10n_it_asset_management
 #: model_terms:ir.ui.view,arch_db:l10n_it_asset_management.view_asset_depreciation_situation_list
 msgid "Total Residual"
-msgstr ""
+msgstr "Totale residuo"
 
 #. module: l10n_it_asset_management
 #. odoo-python
