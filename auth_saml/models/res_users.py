@@ -1,5 +1,5 @@
 # Copyright (C) 2020 GlodoUK <https://www.glodo.uk>
-# Copyright (C) 2010-2016 XCG Consulting <http://odoo.consulting>
+# Copyright (C) 2010-2016 XCG SAS <http://orbeet.io/>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import logging
@@ -7,7 +7,7 @@ from typing import Set  # noqa
 
 import passlib
 
-from odoo import SUPERUSER_ID, _, api, fields, models, registry, tools
+from odoo import SUPERUSER_ID, Command, _, api, fields, models, registry, tools
 from odoo.exceptions import AccessDenied, ValidationError
 
 from .ir_config_parameter import ALLOW_SAML_UID_AND_PASSWORD
@@ -44,12 +44,43 @@ class ResUser(models.Model):
             [("saml_uid", "=", saml_uid), ("saml_provider_id", "=", provider)],
             limit=1,
         )
+        saml_provider = self.env["auth.saml.provider"].browse(provider)
         user = user_saml.user_id
-        if len(user) != 1:
-            raise AccessDenied()
+        user_copy_defaults = {}
+        if not user.active and saml_provider.create_user:
+            if saml_provider.create_user_reactivate:
+                user.active = True
+        if not user:
+            user_copy_defaults = saml_provider._user_copy_defaults(validation)
+            if not user_copy_defaults:
+                raise AccessDenied()
 
         with registry(self.env.cr.dbname).cursor() as new_cr:
             new_env = api.Environment(new_cr, self.env.uid, self.env.context)
+            if user_copy_defaults:
+                new_user = (
+                    new_env["auth.saml.provider"]
+                    .browse(provider)
+                    .create_user_template_id.with_context(no_reset_password=True)
+                    .copy(
+                        {
+                            **user_copy_defaults,
+                            "saml_ids": [
+                                Command.create(
+                                    {
+                                        "saml_provider_id": provider,
+                                        "saml_uid": saml_uid,
+                                        "saml_access_token": saml_response,
+                                    }
+                                )
+                            ],
+                        }
+                    )
+                )
+                # Update signature as needed.
+                new_user._compute_signature()
+                return new_user.login
+
             # Update the token. Need to be committed, otherwise the token is not visible
             # to other envs, like the one used in login_and_redirect
             user_saml.with_env(new_env).write({"saml_access_token": saml_response})
@@ -178,13 +209,14 @@ class ResUser(models.Model):
         """Set the password to a value that prohibits logging."""
         # Use SQL to blank the password to avoid sending security messages (done in
         # mail module) to end users.
-        _logger.debug("Removing password from %s user(s)", len(self.ids))
-        # similar to what Odoo does in Users._set_encrypted_password
-        self.env.cr.execute(
-            "UPDATE res_users SET password = NULL WHERE id IN %s",
-            (tuple(self.ids),),
-        )
-        self.invalidate_recordset(fnames=["password"])
+        if self:  # no users, nothing to do.
+            _logger.debug("Removing password from %s user(s)", len(self.ids))
+            # similar to what Odoo does in Users._set_encrypted_password
+            self.env.cr.execute(
+                "UPDATE res_users SET password = NULL WHERE id IN %s",
+                (tuple(self.ids),),
+            )
+            self.invalidate_recordset(fnames=["password"])
 
     def allow_saml_and_password_changed(self):
         """Called after the parameter is changed."""
