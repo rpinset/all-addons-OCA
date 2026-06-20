@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="view_hr_job_form" model="ir.ui.view">
+            <field name="name">hr.job.form.l10n_et_hr</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_hr_job_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('oe_title')]" position="inside">
+                    <label for="ethiopic_name" class="oe_edit_only" />
+                    <h1><field name="ethiopic_name" placeholder="ሥም በአማርኛ ፊደል" /></h1>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_hr_job_tree" model="ir.ui.view">
+            <field name="name">hr.job.tree.l10n_et_hr</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_hr_job_tree" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_job_view_kanban" model="ir.ui.view">
+            <field name="name">hr.job.kanban.l10n_et_hr</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.hr_job_view_kanban" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_job_filter" model="ir.ui.view">
+            <field name="name">hr.job.search.l10n_et_hr</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_job_filter" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="ethiopic_name" string="ሥም" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

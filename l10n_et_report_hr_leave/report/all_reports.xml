@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Leave Application -->
+    <record id="report_leave" model="ir.actions.report">
+        <field name="name">Leave Application</field>
+        <field name="model">hr.leave</field>
+        <field name="report_name">report_hr_leave</field>
+        <field name="report_type">py3o</field>
+        <field name="py3o_filetype">odt</field>
+        <field name="module">l10n_et_report_hr_leave</field>
+        <field name="py3o_template_fallback">report/leave_application.odt</field>
+        <field name="binding_model_id" ref="model_hr_leave" />
+    </record>
+
+</odoo>

@@ -5,7 +5,7 @@
 {
     "name": "Federal Income Tax Tables 2017",
     "summary": "Ethiopian Federal Income Tax tables (rev. 2017)",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "category": "Localization",
     "images": ["static/src/img/main_screenshot.png"],
     "license": "AGPL-3",

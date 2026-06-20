@@ -5,7 +5,7 @@
 {
     "name": "Federal Income Tax Tables 2008",
     "summary": "Ethiopian Federal Income Tax tables (rev. 2008)",
-    "version": "14.0.1.0.0",
+    "version": "14.0.2.0.0",
     "category": "Localization",
     "images": ["static/src/img/main_screenshot.png"],
     "license": "AGPL-3",
@@ -13,7 +13,7 @@
     "website": "https://github.com/trevi-software/trevi-hr",
     "depends": [
         "payroll",
-        "l10n_et_payroll_category",
+        "payroll_default_salary_rules",
     ],
     "data": [
         "data/payroll_data.xml",

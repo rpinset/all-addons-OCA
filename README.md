@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-17 04:59 UTC** (elapsed 78s)
+Last build: **2026-06-20 15:24 UTC** (elapsed 80s)
 
 - Repos integrated: **140**
-- Canonical modules: **2903**
+- Canonical modules: **2909**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **114**
 
@@ -69,7 +69,7 @@ Last build: **2026-06-17 04:59 UTC** (elapsed 78s)
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 21fc9b9 2026-04-29 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 7 | 0f2df49 2025-07-25 OCA-git-bot [ADD] setup.py |
+| [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
@@ -123,7 +123,7 @@ Last build: **2026-06-17 04:59 UTC** (elapsed 78s)
 | [server-auth](https://github.com/OCA/server-auth) | 26 | 12045c4 2025-07-15 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 8333e14 2025-06-13 Betül Öğmen Added translation using Weblate (Turkish) |
-| [server-env](https://github.com/OCA/server-env) | 10 | 041cc08 2025-06-04 OCA-git-bot [BOT] post-merge updates |
+| [server-env](https://github.com/OCA/server-env) | 10 | 3ee785d 2026-06-17 Francesco Foresti Translated using Weblate (Italian) |
 | [server-tools](https://github.com/OCA/server-tools) | 81 | 32d87c6 2026-06-16 mymage Translated using Weblate (Italian) |
 | [server-ux](https://github.com/OCA/server-ux) | 41 | 5a86e6d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 857ac8f 2025-09-03 mymage Translated using Weblate (Italian) |
@@ -133,7 +133,7 @@ Last build: **2026-06-17 04:59 UTC** (elapsed 78s)
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | ca8a787 2025-10-15 mymage Translated using Weblate (Italian) |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | ea13ae4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 8960772 2026-06-08 OCA-git-bot Merge PR #2593 into 14.0 |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 73f0f0a 2026-06-17 Francesco Foresti Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | cfd0d59 2026-06-07 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [storage](https://github.com/OCA/storage) | 19 | c0e1f39 2025-10-20 OCA-git-bot [BOT] post-merge updates |
 | [survey](https://github.com/OCA/survey) | 8 | 53c9f49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |

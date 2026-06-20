@@ -13,13 +13,17 @@ class HrEmployeePublic(models.AbstractModel):
     def name_get(self):
 
         res = []
-        use_ethiopic_name = self.env["ir.config_parameter"].get_param(
-            "l10n_et_hr.use_ethiopic_employee_name"
+        use_ethiopic_name = (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param("l10n_et_hr.use_ethiopic_employee_name")
         )
-        for rec in self:
-            name = rec.name
-            if use_ethiopic_name and rec.ethiopic_name:
-                name = rec.ethiopic_name
-            res.append((rec.id, "%s" % (name)))
+        if use_ethiopic_name:
+            for rec in self:
+                name = rec.name
+                if rec.ethiopic_name:
+                    name = rec.ethiopic_name
+                res.append((rec.id, name))
+            return res
 
-        return res
+        return super().name_get()

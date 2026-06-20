@@ -123,10 +123,10 @@ def get_etyear_selection(start_delta=-20, end_delta=100):
     year += start_delta
 
     # Convert to Ethiopic calendar
-    pccDate = pcc.ethiopic_from_fixed(
+    pcc_date = pcc.ethiopic_from_fixed(
         pcc.fixed_from_gregorian(pcc.gregorian_date(year, 1, 1))
     )
-    year = pccDate[0]
+    year = pcc_date[0]
 
     i = year
     while i < (year + end_delta):
@@ -146,10 +146,10 @@ def date_gregorian_from_ethiopic_base(y, m, d):
     """Returns the gregorian date as a datetime.date object"""
 
     assert y and m and d, "Ethiopic year, month and day must not be false"
-    pccDate = pcc.gregorian_from_fixed(
+    pcc_date = pcc.gregorian_from_fixed(
         pcc.fixed_from_ethiopic(pcc.ethiopic_date(int(y), int(m), int(d)))
     )
-    res = date(pccDate[0], pccDate[1], pccDate[2])
+    res = date(pcc_date[0], pcc_date[1], pcc_date[2])
     return res
 
 
@@ -164,20 +164,20 @@ def ethiopic_from_gregorian_date(d):
     """Returns an ethiopic_date object from a gregorian datetime.date
     object"""
 
-    pccDate = pcc.ethiopic_from_fixed(
+    pcc_date = pcc.ethiopic_from_fixed(
         pcc.fixed_from_gregorian(
             pcc.gregorian_date(int(d.year), int(d.month), int(d.day))
         )
     )
-    return pccDate
+    return pcc_date
 
 
 def str_ethiopic_from_gregorian_date(d):
     """Returns an ethiopic date string (Y-m-d) from a gregorian datetime.date
     object"""
 
-    pccDate = ethiopic_from_gregorian_date(d)
-    return ethiopic_date_str(pccDate)
+    pcc_date = ethiopic_from_gregorian_date(d)
+    return ethiopic_date_str(pcc_date)
 
 
 def ethiopic_month_end(et_date):

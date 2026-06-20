@@ -18,10 +18,10 @@
                         id="l10n_hr_employee_name"
                     >
                         <div class="o_setting_left_pane">
-                            <field name="use_ethiopic_name" />
+                            <field name="use_ethiopic_employee_name" />
                         </div>
                         <div class="o_setting_right_pane">
-                            <label for="use_ethiopic_name" />
+                            <label for="use_ethiopic_employee_name" />
                             <div class="text-muted">
                                     By default display employee names in the Amharic script
                             </div>
@@ -32,10 +32,10 @@
                         id="l10n_hr_department_name"
                     >
                         <div class="o_setting_left_pane">
-                            <field name="use_ethiopic_department" />
+                            <field name="use_ethiopic_department_name" />
                         </div>
                         <div class="o_setting_right_pane">
-                            <label for="use_ethiopic_department" />
+                            <label for="use_ethiopic_department_name" />
                             <div class="text-muted">
                                     By default display department names in the Amharic script
                             </div>
@@ -43,10 +43,10 @@
                     </div>
                     <div class="col-12 col-lg-6 o_setting_box" id="l10n_hr_job_name">
                         <div class="o_setting_left_pane">
-                            <field name="use_ethiopic_job" />
+                            <field name="use_ethiopic_job_name" />
                         </div>
                         <div class="o_setting_right_pane">
-                            <label for="use_ethiopic_job" />
+                            <label for="use_ethiopic_job_name" />
                             <div class="text-muted">
                                     By default display job titles in the Amharic script
                             </div>

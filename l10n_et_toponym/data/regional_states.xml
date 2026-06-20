@@ -1,0 +1,79 @@
+<odoo>
+    <data noupdate="1">
+        <record id="state_et_1" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">AA</field>
+            <field name="name">Addis Ababa</field>
+        </record>
+        <record id="state_et_2" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">AF</field>
+            <field name="name">Afar</field>
+        </record>
+        <record id="state_et_3" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">AM</field>
+            <field name="name">Amhara</field>
+        </record>
+        <record id="state_et_4" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">BN</field>
+            <field name="name">Benishangul-Gumuz</field>
+        </record>
+        <record id="state_et_5" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">DD</field>
+            <field name="name">Dire Dawa</field>
+        </record>
+        <record id="state_et_6" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">GM</field>
+            <field name="name">Gambella Peoples</field>
+        </record>
+        <record id="state_et_7" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">HR</field>
+            <field name="name">Harrari Peoples</field>
+        </record>
+        <record id="state_et_8" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">OR</field>
+            <field name="name">Oromia</field>
+        </record>
+        <record id="state_et_9" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">SM</field>
+            <field name="name">Somali</field>
+        </record>
+        <record id="state_et_10" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">SP</field>
+            <field name="name">Southern Peoples, Nations, and Nationalities</field>
+        </record>
+        <record id="state_et_11" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">TG</field>
+            <field name="name">Tigray</field>
+        </record>
+        <record id="state_et_12" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">SD</field>
+            <field name="name">Sidama</field>
+        </record>
+        <record id="state_et_13" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">SE</field>
+            <field name="name">South Ethiopia Peoples</field>
+        </record>
+        <record id="state_et_14" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">SW</field>
+            <field name="name">South West Ethiopia Peoples</field>
+        </record>
+        <record id="state_et_15" model="res.country.state">
+            <field name="country_id" ref="base.et" />
+            <field name="code">CE</field>
+            <field name="name">Central Ethiopia Peoples</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="hr_contract_type_form_view">
+        <field name="name">hr.payroll.structure.type.form</field>
+        <field name="model">hr.payroll.structure.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="country_id" />
+                        </group>
+                        <group>
+                            <field name="active" widget="boolean_toggle" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="hr_payroll_structure_type_tree_view">
+        <field name="name">hr.payroll.structure.type.tree</field>
+        <field name="model">hr.payroll.structure.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="country_id" />
+                <field name="active" widget="boolean_toggle" />
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="hr_payroll_structure_type_act_window">
+        <field name="name">Salary Structure Types</field>
+        <field name="res_model">hr.payroll.structure.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.ui.menu" id="hr_payroll_structure_type_menu">
+        <field name="name">Salary Structure Types</field>
+        <field
+            name="parent_id"
+            ref="hr_contract.menu_human_resources_configuration_contract"
+        />
+        <field name="action" ref="hr_payroll_structure_type_act_window" />
+        <field name="sequence" eval="16" />
+    </record>
+</odoo>

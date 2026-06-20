@@ -3689,10 +3689,16 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [ethiopic_calendar](ethiopic_calendar/) | 14.0.1.0.0 |  | Date calculations in the Ethiopian calendar
 [l10n_et_hr](l10n_et_hr/) | 14.0.1.0.0 |  | Ethiopian localization of basic HR records
+[l10n_et_hr_contract_type](l10n_et_hr_contract_type/) | 14.0.1.0.0 |  | Ethiopian localization of Employee Contract Types
 [l10n_et_hr_employee_wizard](l10n_et_hr_employee_wizard/) | 14.0.1.0.0 |  | Ethiopian localization of new employee wizard
-[l10n_et_payroll_FIT2016](l10n_et_payroll_FIT2016/) | 14.0.1.0.0 |  | Ethiopian Federal Income Tax tables (rev. 2008)
-[l10n_et_payroll_FIT2025](l10n_et_payroll_FIT2025/) | 14.0.1.0.0 |  | Ethiopian Federal Income Tax tables (rev. 2017)
+[l10n_et_hr_holidays](l10n_et_hr_holidays/) | 14.0.1.0.2 |  | Employeee Time Off Customization for Ethiopia
+[l10n_et_hr_salary_structure_type](l10n_et_hr_salary_structure_type/) | 14.0.1.2.0 |  | Ethiopian localization of Employee Salary Structure Types
+[l10n_et_payroll_FIT2016](l10n_et_payroll_FIT2016/) | 14.0.2.0.0 |  | Ethiopian Federal Income Tax tables (rev. 2008)
+[l10n_et_payroll_FIT2025](l10n_et_payroll_FIT2025/) | 14.0.1.0.1 |  | Ethiopian Federal Income Tax tables (rev. 2017)
 [l10n_et_payroll_category](l10n_et_payroll_category/) | 14.0.1.0.0 |  | Additional payroll categories for Ethiopia
+[l10n_et_report_hr_leave](l10n_et_report_hr_leave/) | 14.0.1.0.1 |  | Employeee HR Leave application and report for Ethiopia
+[l10n_et_res_currency](l10n_et_res_currency/) | 14.0.1.0.0 |  | Ethiopia Currency Denominations
+[l10n_et_toponym](l10n_et_toponym/) | 14.0.1.0.2 |  | Ethiopia - States and Provinces
 [l10n_et_tz](l10n_et_tz/) | 14.0.1.0.0 |  | Set default timezone to Africa/Addis_Ababa
 
 [//]: # (end addons)
