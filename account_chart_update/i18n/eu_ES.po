@@ -1,0 +1,914 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_chart_update
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-18 08:48+0000\n"
+"Last-Translator: iaranburu <iaranburu@binovo.es>\n"
+"Language-Team: none\n"
+"Language: eu_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__code_digits
+msgid "# of Digits"
+msgstr "# digitu"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Update Chart Template</span>"
+msgstr "<span class=\"o_form_label\">Eguneratu kontuen txantiloia</span>"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_group_ids
+msgid "Account Groups"
+msgstr "Kontu-taldeak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_field_ids
+msgid "Account fields"
+msgstr "Kontuko eremuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__account_group_id
+msgid "Account group template"
+msgstr "Kontu-taldearen txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts_account_group
+msgid ""
+"Account group that needs to be updated (new or updated in the template)."
+msgstr "Eguneratu beharreko kontu-taldea (berria edo txantiloian eguneratua)."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__update_account_group_id
+msgid "Account group to update"
+msgstr "Eguneratu beharreko kontu-taldea"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Account groups"
+msgstr "Kontu-taldeak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_group_field_ids
+msgid "Account groups fields"
+msgstr "Kontu-taldeetako eremuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_group_matching_ids
+msgid "Account groups matching"
+msgstr "Kontu-taldeen bat-etortzea"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__account_id
+msgid "Account template"
+msgstr "Kontuaren txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts_account
+msgid "Account that needs to be updated (new or updated in the template)."
+msgstr "Eguneratu beharreko kontua (berria edo txantiloian eguneratua)."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__update_account_id
+msgid "Account to update"
+msgstr "Eguneratu beharreko kontua"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_ids
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Accounts"
+msgstr "Kontuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__account_matching_ids
+msgid "Accounts matching"
+msgstr "Bat datozen kontuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__chart_template_id
+msgid "Chart Template"
+msgstr "Kontabilitate-planaren txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__chart_template_ids
+msgid "Chart Templates"
+msgstr "Diagramen txantiloiak"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Chart of Accounts"
+msgstr "Kontuen diagrama"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Close"
+msgstr "Itxi"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__company_id
+msgid "Company"
+msgstr "Enpresa"
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts__state__init
+msgid "Configuration"
+msgstr "Konfigurazioa"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__continue_on_errors
+msgid "Continue On Errors"
+msgstr "Jarraitu erroreak egon arren"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Create/Update"
+msgstr "Sortu/eguneratu"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Created account %s."
+msgstr "Sortu da %s kontua."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__create_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__create_uid
+msgid "Created by"
+msgstr "Nork sortua"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Created fiscal position %s."
+msgstr "Sortu da %s posizio fiskala."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__create_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__create_date
+msgid "Created on"
+msgstr "Noiz sortua"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Created tax %s."
+msgstr "Sortu da %s zerga."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Deactivated tax %s."
+msgstr "%s zerga desaktibatu da."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__deleted_taxes
+msgid "Deactivated taxes"
+msgstr "Desaktibatutako zergak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts_tax__type_tax_use
+msgid ""
+"Determines where the tax is selectable. Note : 'None' means a tax can't be "
+"used by itself, however it can still be used in a group."
+msgstr ""
+"Zehaztu zerga non hauta daitekeen. Oharra: 'Bat ere ez' egoerak adierazten "
+"du zerga ezin dela bere horretan erabili, baina taldean erabil daitekeela."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Differences in these fields: %s."
+msgstr "Eremu hauetako desberdintasunak: %s."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__display_name
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__display_name
+msgid "Display Name"
+msgstr "Izena erakutsi"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Exception creating account %s."
+msgstr "Salbuespena %s kontua sortzean."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Exception writing account %s."
+msgstr "Salbuespena %s kontua idaztean."
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_account_group
+msgid ""
+"Existing account groups are updated. Account groups are searched by "
+"prefix_code_start."
+msgstr ""
+"Lehendik dauden kontu-taldeak eguneratuko dira. Kontu-taldeak honen arabera "
+"bilatuko dira: prefix_code_start."
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_account
+msgid "Existing accounts are updated. Accounts are searched by code."
+msgstr ""
+"Lehendik dauden kontuak eguneratuko dira. Kontuak kodearen arabera bilatuko "
+"dira."
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_fiscal_position
+msgid ""
+"Existing fiscal positions are updated. Fiscal positions are searched by "
+"name."
+msgstr ""
+"Lehendik dauden posizio fiskalak eguneratuko dira. Posizio fiskalak izenaren "
+"arabera bilatuko dira."
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_tax
+msgid "Existing taxes are updated. Taxes are searched by name."
+msgstr ""
+"Lehendik dauden zergak eguneratuko dira. Zergak izenaren arabera bilatuko "
+"dira."
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Field options"
+msgstr "Eremuen aukerak"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_ir_model_fields
+msgid "Fields"
+msgstr "Eremuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__fp_field_ids
+msgid "Fiscal position fields"
+msgstr "Posizio fiskalaren eremuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__fiscal_position_id
+msgid "Fiscal position template"
+msgstr "Posizio fiskalaren txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts_fiscal_position
+msgid ""
+"Fiscal position that needs to be updated (new or updated in the template)."
+msgstr ""
+"Eguneratu beharreko posizio fiskala (berria edo txantiloian eguneratua)."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__update_fiscal_position_id
+msgid "Fiscal position to update"
+msgstr "Eguneratu beharreko posizio fiskala"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__fiscal_position_ids
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Fiscal positions"
+msgstr "Posizio fiskalak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__fp_matching_ids
+msgid "Fiscal positions matching"
+msgstr "Posizio fiskalen bat-etortzea"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__lang
+msgid ""
+"For records searched by name (taxes, fiscal positions), the template name "
+"will be matched against the record name on this language."
+msgstr ""
+"Izenaren arabera bilatutako erregistroen kasuan (esaterako, zergak edo "
+"posizio fiskalak), txantiloiaren izenak hizkuntza honetako erregistro-"
+"izenaren txantiloiarekin bat etorriko dira."
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "General options"
+msgstr "Aukera orokorrak"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid ""
+"Here you can select the fields you want to check if\n"
+"                            they have been updated in the templates."
+msgstr ""
+"Nahi dituzun eremuak hauta ditzakezu hemen, txantiloietan\n"
+"                            eguneratu diren egiaztatzeko."
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Here you can set the matching order."
+msgstr "Bat-etortzearen ordena aukera dezakezu hemen."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__id
+msgid "ID"
+msgstr "IDa"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__continue_on_errors
+msgid ""
+"If set, the wizard will continue to the next step even if there are minor "
+"errors."
+msgstr ""
+"Ezarrita badago, laguntzailea hurrengo urratsera pasako da, nahiz eta "
+"erroreak egon."
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid ""
+"If you leave these options set, the wizard will\n"
+"                                not just create new records, but also update\n"
+"                                records with changes (i.e. different tax amount)"
+msgstr ""
+"Aukera hauek ezarrita uzten badituzu, laguntzaileak,\n"
+"                                 erregistro berriak sortzeaz gain, \n"
+"                                aldaketak dauzkaten erregistroak ere "
+"eguneratuko ditu (adibidez, zergaren zenbateko desberdina)"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__chart_template_ids
+msgid "Includes all chart templates."
+msgstr "Sartu diagramen txantiloi guztietan."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__lang
+msgid "Language"
+msgstr "Hizkuntza"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position____last_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax____last_update
+msgid "Last Modified on"
+msgstr "Azken aldatze-data:"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__write_uid
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__write_uid
+msgid "Last Updated by"
+msgstr "Nork eguneratua"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__write_date
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__write_date
+msgid "Last Updated on"
+msgstr "Noiz eguneratua"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Log"
+msgstr "Erregistroa"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Matching"
+msgstr "Bat-etortzeak bilatzen"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__matching_value
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__matching_value
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__matching_value
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__matching_value
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__matching_value
+msgid "Matching Value"
+msgstr "Bat datorren balioa"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__log
+msgid "Messages and Errors"
+msgstr "Mezuak eta erroreak"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Missing XML-ID."
+msgstr "XML-ID falta da."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Name or description not found."
+msgstr "Ez da aurkitu izena edo deskribapena."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__new_account_groups
+msgid "New Account Groups"
+msgstr "Kontu-talde berriak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__new_accounts
+msgid "New Accounts"
+msgstr "Kontu berriak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__new_taxes
+msgid "New Taxes"
+msgstr "Zerga berriak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__new_fps
+msgid "New fiscal positions"
+msgstr "Posizio fiskal berriak"
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_account__type__new
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_account_group__type__new
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_fiscal_position__type__new
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_tax__type__new
+msgid "New template"
+msgstr "Txantiloi berria"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Next"
+msgstr "Hurrengoa"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "No account found with this code."
+msgstr "Ez da aurkitu kode hori duen konturik."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "No fiscal position found with this name."
+msgstr "Ez da aurkitu izen hori duen posizio fiskalik."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "No real account found for template account with ID %s"
+msgstr "Ez da aurkitu %sIDa daukan txantiloi-kontuaren kontu errealik"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__code_digits
+msgid "No. of Digits to use for account code"
+msgstr "Kontuaren kodean erabili beharreko digitu-kopurua"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Note: Only the changed fields are updated."
+msgstr "Oharra: aldatutako eremuak soilik eguneratuko dira."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__notes
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__notes
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__notes
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__notes
+msgid "Notes"
+msgstr "Oharrak"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid ""
+"One or more errors detected!\n"
+"\n"
+"%s"
+msgstr ""
+"Errore bat edo gehiago detektatu dira\n"
+"\n"
+"%s"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Other options"
+msgstr "Beste aukera batzuk"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Post-updated account fields for taxes with IDs %s."
+msgstr "Argitaratu %s IDak dituzten zergen kontuko eremu eguneratuak."
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Previous"
+msgstr "Aurrekoa"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Records to create/update"
+msgstr "Sortu/Eguneratu beharreko erregistroak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__recreate_xml_ids
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__recreate_xml_ids
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__recreate_xml_ids
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__recreate_xml_ids
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__recreate_xml_ids
+msgid "Recreate missing XML-IDs"
+msgstr "Sortu berriro falta diren XML-IDak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__rejected_new_account_number
+msgid "Rejected New Account Number"
+msgstr "Kontu-zenbaki berria baztertu egin da"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__rejected_updated_account_number
+msgid "Rejected Updated Account Number"
+msgstr "Kontu-zenbaki eguneratua baztertu egin da"
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts__state__ready
+msgid "Select records to update"
+msgstr "Hautatu eguneratu beharreko erregistroak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__sequence
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__sequence
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__sequence
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__sequence
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__sequence
+msgid "Sequence"
+msgstr "Sekuentzia"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__state
+msgid "Status"
+msgstr "Egoera"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Summary of created objects"
+msgstr "Sortutako objektuen laburpena"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Summary of updated objects"
+msgstr "Eguneratutako objektuen laburpena"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__type_tax_use
+msgid "Tax Type"
+msgstr "Zerga-motak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__tax_field_ids
+msgid "Tax fields"
+msgstr "Zergen eremuak"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Tax is disabled."
+msgstr "Zerga desgaituta dago."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__tax_id
+msgid "Tax template"
+msgstr "Zergen txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts_tax
+msgid "Tax that needs to be updated (new or updated in the template)."
+msgstr "Eguneratu beharreko zerga (berria edo txantiloian eguneratutakoa)."
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_tax__type__deleted
+msgid "Tax to deactivate"
+msgstr "Desaktibatu beharreko zerga"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__update_tax_id
+msgid "Tax to update"
+msgstr "Eguneratu beharreko zerga"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__tax_ids
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Taxes"
+msgstr "Zergak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__tax_matching_ids
+msgid "Taxes matching"
+msgstr "Zergen bat-etortzea"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid ""
+"This wizard will update your accounts, taxes and\n"
+"                            fiscal positions according to the selected chart\n"
+"                            template"
+msgstr ""
+"Morroi honek kontuak, zergak eta posizio fiskalak eguneratuko ditu "
+"hautatutako diagrama-txantiloiaren arabera"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "To deactivate: not in the template"
+msgstr "Desaktibatzeko: ez dago txantiloian"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__type
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__type
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__type
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__type
+msgid "Type"
+msgstr "Mota"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.res_config_settings_view_form
+msgid "Update Chart Template"
+msgstr "Eguneratu diagrama-txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_tax_repartition_line_account
+msgid "Update Tax Accounts"
+msgstr "Eguneratu zergen kontua"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_tax_repartition_line_tags
+msgid "Update Tax Tags"
+msgstr "Eguneratu zerga-etiketak"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.res_config_settings_view_form
+msgid "Update Taxes, fiscal positions or chart of accounts."
+msgstr "Eguneratu zergak, posizio fiskalak edo kontuen diagrama."
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_account_group
+msgid "Update account groups"
+msgstr "Eguneratu kontu taldeak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_tax_repartition_line_account
+msgid "Update account_id field on existing Tax repartition lines"
+msgstr ""
+"Eguneratu account_id eremua lehendik dauden zergen banaketaren lerroetan"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_account
+msgid "Update accounts"
+msgstr "Eguneratu kontuak"
+
+#. module: account_chart_update
+#: model:ir.actions.act_window,name:account_chart_update.action_wizard_update_chart
+msgid "Update chart of accounts"
+msgstr "Eguneratu kontuen diagrama"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.res_config_settings_view_form
+msgid "Update chart template"
+msgstr "Eguneratu diagrama-txantiloia"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_matching__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_fp_matching__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_matching__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_tax_matching__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_account_group__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_fiscal_position__update_chart_wizard_id
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts_tax__update_chart_wizard_id
+msgid "Update chart wizard"
+msgstr "Eguneratu diagrama-morroia"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_fiscal_position
+msgid "Update fiscal positions"
+msgstr "Eguneratu posizio fiskalak"
+
+#. module: account_chart_update
+#: model_terms:ir.ui.view,arch_db:account_chart_update.view_update_multi_chart
+msgid "Update records?"
+msgstr "Erregistroak eguneratu nahi dituzu?"
+
+#. module: account_chart_update
+#: model:ir.model.fields,help:account_chart_update.field_wizard_update_charts_accounts__update_tax_repartition_line_tags
+msgid "Update tag_ids field on existing Tax repartition lines"
+msgstr "Eguneratu tag_ids eremua lehendik dauden zergen banaketaren lerroetan"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__update_tax
+msgid "Update taxes"
+msgstr "Eguneratu zergak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__updated_account_groups
+msgid "Updated Account Groups"
+msgstr "Eguneratu kontu taldeak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__updated_accounts
+msgid "Updated Accounts"
+msgstr "Eguneratu kontuak"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__updated_taxes
+msgid "Updated Taxes"
+msgstr "Eguneratu zergak"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated account %s."
+msgstr "%s kontua eguneratu da."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated account %s. (Recreated XML-ID)"
+msgstr "%s kontua eguneratu da. (XML-IDa berriro sortu da)"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated account group %s."
+msgstr "%s kontu taldea eguneratu da."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated account group %s. (Recreated XML-ID)"
+msgstr "%s kontu taldea eguneratu da. (XML-IDa berriro sortu da)"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated fiscal position %s."
+msgstr "%s posizio fiskala eguneratu da."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated fiscal position %s. (Recreated XML-ID)"
+msgstr "%s posizio fiskala eguneratu da. (XML-IDa berriro sortu da)"
+
+#. module: account_chart_update
+#: model:ir.model.fields,field_description:account_chart_update.field_wizard_update_charts_accounts__updated_fps
+msgid "Updated fiscal positions"
+msgstr "Posizio fiskalak eguneratu dira."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated tax %s."
+msgstr "%s zerga eguneratu da."
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid "Updated tax %s. (Recreated XML-IDs)"
+msgstr "%s zerga eguneratu da. (XML-IDa berriro sortu da)"
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_account__type__updated
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_account_group__type__updated
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_fiscal_position__type__updated
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts_tax__type__updated
+msgid "Updated template"
+msgstr "Txantiloia eguneratu da"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_account_group_matching
+msgid "Wizard Account Group Matching"
+msgstr "Kontu taldeak bat-etorrarazteko morroia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_account_matching
+msgid "Wizard Account Matching"
+msgstr "Kontuak bat-etorrarazteko morroia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_fp_matching
+msgid "Wizard Fiscal Position Matching"
+msgstr "Posizio fiskalak bat-etorrarazteko morroia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_matching
+msgid "Wizard Matching"
+msgstr "Bat-etortzeen morroia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_tax_matching
+msgid "Wizard Tax Matching"
+msgstr "Zergak bat-etorrarazteko morroia"
+
+#. module: account_chart_update
+#: model:ir.model,name:account_chart_update.model_wizard_update_charts_accounts
+msgid "Wizard Update Charts Accounts"
+msgstr "Kontuen diagramak eguneratzeko morroia"
+
+#. module: account_chart_update
+#: model:ir.model.fields.selection,name:account_chart_update.selection__wizard_update_charts_accounts__state__done
+msgid "Wizard completed"
+msgstr "Osatu da morroia"
+
+#. module: account_chart_update
+#. odoo-python
+#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
+#, python-format
+msgid ""
+"You have at least one parent tax template (%s) whose children taxes are not "
+"going to be created. Aborting as this will provoke an infinite loop. Please "
+"check if children have been matched, but not the parent one."
+msgstr ""
+"Gutxienez zergen txantiloi guraso baten kasuan (%s), dagozkion zerga haurrak "
+"ez dira sortuko. Utzi bertan behera prozesua, etengabeko errepikapen bat "
+"eragingo baitu. Egiaztatu ea haurrak bat-etorrarazi diren, baina ez gurasoa."

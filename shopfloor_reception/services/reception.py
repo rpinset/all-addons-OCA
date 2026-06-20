@@ -878,8 +878,7 @@ class Reception(Component):
             for result in self.search_result.parse_result:
                 if result.type == "lot":
                     if self.search_result.type == "lot" and self.search_result.record:
-                        lot_id = self.search_result.record
-                        lot_name = lot_id.name
+                        lot_name = self.search_result.record.name
                         found = True
                     else:
                         lot_name = result.value
@@ -888,7 +887,8 @@ class Reception(Component):
                     result.type == "expiration_date"
                     and line.product_id.use_expiration_date
                 ):
-                    expiration_date = datetime.fromisoformat(result.value)
+                    date = result.value
+                    expiration_date = datetime(date.year, date.month, date.day)
 
             if found:
                 return self.set_lot_confirm_action(
@@ -1213,7 +1213,7 @@ class Reception(Component):
         search = self._actions_for("search")
         search_result = search.find(
             barcode=barcode,
-            types=["lot", "expiration_date"],
+            types=["lot", "expiration_date", "product"],
             handler_kw={"lot": {"products": selected_line.product_id}},
         )
 
@@ -1224,6 +1224,15 @@ class Reception(Component):
                 lot_name = result.value
             elif result.type == "expiration_date":
                 lot_expiration_date = result.value
+            elif (
+                result.type == "product"
+                and result.raw != selected_line.product_id.barcode
+            ):
+                return self._response_for_set_lot(
+                    picking,
+                    selected_line,
+                    message=self.msg_store.lot_product_mismatch(),
+                )
 
         if search_result.type == "lot":
             existing_lot = search_result.record
