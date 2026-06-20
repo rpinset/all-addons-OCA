@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-06-17 05:06 UTC
+Generated 2026-06-20 15:32 UTC
 
 ## Skipped repos
 
@@ -68,7 +68,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-mexico](https://github.com/OCA/l10n-mexico) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | `no_module` | No directory with __manifest__.py at repo root |
@@ -88,7 +87,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [margin-analysis](https://github.com/OCA/margin-analysis) | `no_module` | No directory with __manifest__.py at repo root |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | `no_module` | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | `no_module` | No directory with __manifest__.py at repo root |

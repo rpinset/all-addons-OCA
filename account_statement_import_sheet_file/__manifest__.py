@@ -4,9 +4,9 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Bank Statement TXT/CSV/XLSX Import",
-    "summary": "Import TXT/CSV or XLSX files as Bank Statements in Odoo",
-    "version": "19.0.1.0.0",
+    "name": "Bank Statement TXT/CSV Import (Base)",
+    "summary": "Import TXT/CSV files as Bank Statements in Odoo",
+    "version": "19.0.2.0.0",
     "category": "Accounting",
     "website": "https://github.com/OCA/bank-statement-import",
     "author": "ForgeFlow, CorporateHub, Odoo Community Association (OCA)",

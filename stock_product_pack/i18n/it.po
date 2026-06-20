@@ -17,15 +17,26 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: stock_product_pack
+#: model:ir.model.fields,field_description:stock_product_pack.field_product_product__display_name
+#: model:ir.model.fields,field_description:stock_product_pack.field_product_template__display_name
+#: model:ir.model.fields,field_description:stock_product_pack.field_stock_move_line__display_name
+#: model:ir.model.fields,field_description:stock_product_pack.field_stock_rule__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: stock_product_pack
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_product__dont_create_move
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_template__dont_create_move
 msgid "Don't create move"
 msgstr "Non creare il movimento"
 
 #. module: stock_product_pack
-#: model:ir.model,name:stock_product_pack.model_procurement_group
-msgid "Procurement Group"
-msgstr "Gruppo di approvvigionamento"
+#: model:ir.model.fields,field_description:stock_product_pack.field_product_product__id
+#: model:ir.model.fields,field_description:stock_product_pack.field_product_template__id
+#: model:ir.model.fields,field_description:stock_product_pack.field_stock_move_line__id
+#: model:ir.model.fields,field_description:stock_product_pack.field_stock_rule__id
+msgid "ID"
+msgstr ""
 
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_product_template
@@ -33,9 +44,19 @@ msgid "Product"
 msgstr "Prodotto"
 
 #. module: stock_product_pack
+#: model:ir.model,name:stock_product_pack.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr ""
+
+#. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_product_product
 msgid "Product Variant"
 msgstr "Variante prodotto"
+
+#. module: stock_product_pack
+#: model:ir.model,name:stock_product_pack.model_stock_rule
+msgid "Stock Rule"
+msgstr ""
 
 #. module: stock_product_pack
 #: model:ir.model.fields,help:stock_product_pack.field_product_product__dont_create_move
@@ -50,3 +71,6 @@ msgstr ""
 "impostato a consegnato alla conferma della vendita. Questo è utile per "
 "utilizzare la disponibilità di magazzino del collo (tipo = 'prodotto') ma "
 "senza avere realmente movimenti."
+
+#~ msgid "Procurement Group"
+#~ msgstr "Gruppo di approvvigionamento"
