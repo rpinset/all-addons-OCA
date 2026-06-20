@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-17 05:03 UTC** (elapsed 109s)
+Last build: **2026-06-20 15:26 UTC** (elapsed 66s)
 
 - Repos integrated: **117**
-- Canonical modules: **2094**
+- Canonical modules: **2095**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **137**
 
@@ -14,7 +14,7 @@ Last build: **2026-06-17 05:03 UTC** (elapsed 109s)
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 9068a5d 2026-05-04 Pedro M. Baeza Merge pull request #5098 from efatto/15.0-fix-l10n_it-migration |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 9e0f14e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 8337d7f 2026-06-17 Gerardo Alí Ferraro Schelijasch Translated using Weblate (Spanish) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | a36d4f1 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -75,7 +75,7 @@ Last build: **2026-06-17 05:03 UTC** (elapsed 109s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 25 | 922ca6b 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | b4b3a8b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [manufacture](https://github.com/OCA/manufacture) | 51 | 217bf83 2026-05-13 mymage Translated using Weblate (Italian) |
+| [manufacture](https://github.com/OCA/manufacture) | 52 | 3f6e92e 2026-06-17 OCA-git-bot [BOT] post-merge updates |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 7dde8f9 2026-06-06 Pablo Castelo Translated using Weblate (Galician) |
@@ -86,7 +86,7 @@ Last build: **2026-06-17 05:03 UTC** (elapsed 109s)
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 1616c04 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [payroll](https://github.com/OCA/payroll) | 3 | de2cad2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
-| [product-attribute](https://github.com/OCA/product-attribute) | 55 | c466fb8 2026-05-26 mymage Translated using Weblate (Italian) |
+| [product-attribute](https://github.com/OCA/product-attribute) | 55 | 3d4a18e 2026-06-18 OCA-git-bot [BOT] post-merge updates |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [project](https://github.com/OCA/project) | 39 | cf77f6e 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
