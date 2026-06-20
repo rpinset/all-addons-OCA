@@ -277,6 +277,12 @@ class TestHrExpensePettyCash(BaseCommon):
         self.assertTrue(sheet.account_move_ids.id)
         self.assertEqual(self.petty_cash_holder.petty_cash_balance, 600.0)
 
+        # Check action
+        action = sheet.action_open_account_moves()
+        self.assertEqual(len(sheet.account_move_ids), 1)
+        self.assertEqual(action["res_model"], "account.move")
+        self.assertEqual(action["res_id"], sheet.account_move_ids.id)
+
     def test_03_create_expense_petty_cash_with_journal(self):
         self.petty_cash_holder.journal_id = self.petty_cash_journal_id
         invoice = self._create_invoice(self.partner_1.id)
@@ -293,3 +299,18 @@ class TestHrExpensePettyCash(BaseCommon):
         expense_petty_cash.action_submit_expenses()
         sheet = self._create_expense_sheet(expense_petty_cash)
         self.assertEqual(sheet.journal_id, self.petty_cash_holder.journal_id)
+
+    def test_04_change_partner_bill_not_petty_cash(self):
+        """Test change partner on bills without petty cash,
+        line should not be reset.
+        """
+        invoice = self._create_multi_invoice_line()
+
+        invoice.partner_id = self.partner_2
+        invoice._onchange_is_petty_cash()
+
+        self.assertEqual(len(invoice.invoice_line_ids), 2)
+        self.assertEqual(
+            set(invoice.invoice_line_ids.mapped("name")),
+            {"Test line 1", "Test line 2"},
+        )

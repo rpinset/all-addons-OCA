@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-06-17 05:05 UTC
+Generated 2026-06-20 15:30 UTC
 
 ## Skipped repos
 
@@ -98,7 +98,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
 | [tier-validation](https://github.com/OCA/tier-validation) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
-| [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | `no_module` | No directory with __manifest__.py at repo root |

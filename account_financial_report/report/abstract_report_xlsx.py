@@ -13,7 +13,9 @@ class AbstractReportXslx(models.AbstractModel):
     def _get_currency_from_company(self):
         model = self.env.context.get("active_model")
         active_id = self.env.context.get("active_id")
-        wizard = self.env[model].browse(active_id)
+        wizard = self.env[model].browse(active_id) if model and active_id else False
+        if not wizard or not wizard.exists():
+            return self.env.company.currency_id
         return wizard.company_id.currency_id
 
     def _round_value_by_currency(self, value, currency=None):

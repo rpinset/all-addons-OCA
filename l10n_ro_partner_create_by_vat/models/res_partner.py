@@ -37,7 +37,7 @@ AnafFiled_OdooField_Overwrite = [
     ("city", "city", "over_all_the_time"),
     ("city_id", "city_id", "over_all_the_time"),
     ("state_id", "state_id", "over_all_the_time"),
-    ("zip", "codPostal", "over_all_the_time"),
+    ("zip", "codPostal", "over_if_new_value"),
     ("phone", "telefon", "write_if_empty"),
     ("l10n_ro_caen_code", "cod_CAEN", "over_all_the_time"),
 ]
@@ -171,6 +171,12 @@ class ResPartner(models.Model):
 
         get_param = self.env["ir.config_parameter"].sudo().get_param
         anaf_url = get_param("l10n_ro_partner_create_by_vat.anaf_url", ANAF_URL)
+        anaf_api_key_header_tag = get_param(
+            "l10n_ro_partner_create_by_vat.anaf_api_key_header_tag", "x-api-key"
+        )
+        anaf_api_key = get_param("l10n_ro_partner_create_by_vat.anaf_api_key", "")
+        if anaf_api_key:
+            headers.update({anaf_api_key_header_tag: anaf_api_key})
         if not data:
             data = fields.Date.to_string(fields.Date.today())
         if type(cod) in [list, tuple]:
@@ -253,10 +259,17 @@ class ResPartner(models.Model):
             if field[1] not in odoo_result:
                 continue
             anaf_value = odoo_result.get(field[1], "")
+            if field[2] == "over_if_new_value":
+                if not anaf_value:
+                    continue  # Skip update if ANAF did not provide a value
+                # Update the field only when ANAF returned a value
+                res[field[0]] = anaf_value
             if type(self._fields[field[0]]) in [fields.Date, fields.Datetime]:
                 if not anaf_value.strip():
                     anaf_value = False
             if field[2] == "over_all_the_time":
+                # Always update the field, even with an empty value
+                # (used to clear previously stored data)
                 res[field[0]] = anaf_value
             elif field[2] == "write_if_empty&add_date" and anaf_value:
                 # we are only writing if is not already a value

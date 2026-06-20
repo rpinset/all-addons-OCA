@@ -113,39 +113,39 @@ class AccountMove(models.Model):
 
     @api.onchange("is_petty_cash", "partner_id")
     def _onchange_is_petty_cash(self):
-        self.line_ids = False
+        if not self.is_petty_cash:
+            return
         self.invoice_line_ids = False
-        if self.is_petty_cash:
-            if not self.partner_id:
-                raise ValidationError(self.env._("Please select petty cash holder"))
-            # Selected partner must be petty cash holder
-            petty_cash = self.env["petty.cash"].search(
-                [
-                    ("partner_id", "=", self.partner_id.id),
-                    ("company_id", "=", self.company_id.id),
-                ],
-                limit=1,
+        if not self.partner_id:
+            raise ValidationError(self.env._("Please select petty cash holder"))
+        # Selected partner must be petty cash holder
+        petty_cash = self.env["petty.cash"].search(
+            [
+                ("partner_id", "=", self.partner_id.id),
+                ("company_id", "=", self.company_id.id),
+            ],
+            limit=1,
+        )
+        if not petty_cash:
+            raise ValidationError(
+                self.env._("%s is not a petty cash holder") % self.partner_id.name
             )
-            if not petty_cash:
-                raise ValidationError(
-                    self.env._("%s is not a petty cash holder") % self.partner_id.name
-                )
-            self.invoice_line_ids = self._add_petty_cash_invoice_line(petty_cash)
+        self.invoice_line_ids = self._add_petty_cash_invoice_line(petty_cash)
 
-            if petty_cash.journal_id:
-                # Prevent inconsistent journal_id
-                if (
-                    (
-                        self.move_type in self.get_sale_types(include_receipts=True)
-                        and petty_cash.journal_id.type == "sale"
-                    )
-                    or (
-                        self.move_type in self.get_purchase_types(include_receipts=True)
-                        and petty_cash.journal_id.type == "purchase"
-                    )
-                    or (
-                        self.move_type == "entry"
-                        and petty_cash.journal_id.type == "general"
-                    )
-                ):
-                    self.journal_id = petty_cash.journal_id.id
+        if petty_cash.journal_id:
+            # Prevent inconsistent journal_id
+            if (
+                (
+                    self.move_type in self.get_sale_types(include_receipts=True)
+                    and petty_cash.journal_id.type == "sale"
+                )
+                or (
+                    self.move_type in self.get_purchase_types(include_receipts=True)
+                    and petty_cash.journal_id.type == "purchase"
+                )
+                or (
+                    self.move_type == "entry"
+                    and petty_cash.journal_id.type == "general"
+                )
+            ):
+                self.journal_id = petty_cash.journal_id.id

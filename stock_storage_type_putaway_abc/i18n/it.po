@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-29 08:27+0000\n"
+"PO-Revision-Date: 2026-06-17 21:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,13 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: stock_storage_type_putaway_abc
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__a
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__a
 msgid "A"
-msgstr ""
+msgstr "A"
 
 #. module: stock_storage_type_putaway_abc
 #: model_terms:ir.ui.view,arch_db:stock_storage_type_putaway_abc.product_template_form_view_inherit
@@ -38,13 +38,13 @@ msgstr "Stoccaggio ABC"
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__b
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__b
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #. module: stock_storage_type_putaway_abc
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__product_template__abc_storage__c
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__abc_storage__c
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #. module: stock_storage_type_putaway_abc
 #: model:ir.model.fields.selection,name:stock_storage_type_putaway_abc.selection__stock_location__pack_putaway_strategy__abc
@@ -81,6 +81,13 @@ msgid ""
 "will be searched in its children locations according to the restrictions "
 "defined on their respective storage category."
 msgstr ""
+"Questo definisce la strategia di stoccaggio in base al tipo di collo da "
+"utilizzare quando un prodotto o un collo è depositato in questa ubicazione.\n"
+"Nessuna: quando movimentato in questa ubicazione, non verrà movimentato "
+"ulteriormente.\n"
+"Ordinamento per ubicazioni figlie: quando movimentato in questa ubicazione, "
+"verrà cercata una ubicazione idonea nelle ubicazioni figlie in accordo con "
+"le restrizioni definite nelle rispettive categorie stoccaggio."
 
 #~ msgid ""
 #~ "This defines the storage strategy based on package type to use when a "

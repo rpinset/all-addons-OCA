@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: sale_stock_product_pack
+#: model:ir.model,name:sale_stock_product_pack.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr ""
+
+#. module: sale_stock_product_pack
 #: model:ir.model,name:sale_stock_product_pack.model_sale_order_line
 msgid "Sales Order Line"
 msgstr "Ligne de commande de vente"

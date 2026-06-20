@@ -1,7 +1,7 @@
 # Copyright 2019 Ecosoft Co., Ltd. (http://ecosoft.co.th)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import Command, _, api, fields, models
+from odoo import Command, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.tools import float_compare
 from odoo.tools.misc import clean_context
@@ -102,7 +102,7 @@ class HrExpenseSheet(models.Model):
             else:
                 action.update(
                     {
-                        "name": _("Journal entries"),
+                        "name": self.env._("Journal entries"),
                         "view_mode": "list",
                         "domain": [("id", "in", record_ids.ids)],
                         "views": [(False, "list"), (False, "form")],
