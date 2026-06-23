@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-06-20 15:32 UTC
+Generated 2026-06-23 21:53 UTC
 
-Total skipped: **154**
+Total skipped: **151**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **130**
+Count: **127**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -99,7 +99,6 @@ Count: **130**
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | [19.0](https://github.com/OCA/l10n-luxemburg/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | [19.0](https://github.com/OCA/l10n-macedonia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | [19.0](https://github.com/OCA/l10n-morocco/tree/19.0) | No directory with __manifest__.py at repo root |
-| [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | [19.0](https://github.com/OCA/l10n-netherlands/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | [19.0](https://github.com/OCA/l10n-norway/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | [19.0](https://github.com/OCA/l10n-paraguay/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | [19.0](https://github.com/OCA/l10n-peru/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -118,7 +117,6 @@ Count: **130**
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | [19.0](https://github.com/OCA/manufacture-reporting/tree/19.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [19.0](https://github.com/OCA/mis-builder-contrib/tree/19.0) | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | [19.0](https://github.com/OCA/module-composition-analysis/tree/19.0) | No directory with __manifest__.py at repo root |
-| [pms](https://github.com/OCA/pms) | [19.0](https://github.com/OCA/pms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | [19.0](https://github.com/OCA/product-configurator/tree/19.0) | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | [19.0](https://github.com/OCA/product-kitting/tree/19.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [19.0](https://github.com/OCA/program/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -127,7 +125,6 @@ Count: **130**
 | [pwa-builder](https://github.com/OCA/pwa-builder) | [19.0](https://github.com/OCA/pwa-builder/tree/19.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [19.0](https://github.com/OCA/resource/tree/19.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [19.0](https://github.com/OCA/rest-api/tree/19.0) | No directory with __manifest__.py at repo root |
-| [rma](https://github.com/OCA/rma) | [19.0](https://github.com/OCA/rma/tree/19.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [19.0](https://github.com/OCA/role-policy/tree/19.0) | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | [19.0](https://github.com/OCA/route-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-channel](https://github.com/OCA/sale-channel) | [19.0](https://github.com/OCA/sale-channel/tree/19.0) | No directory with __manifest__.py at repo root |

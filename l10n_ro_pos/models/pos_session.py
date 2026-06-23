@@ -18,14 +18,24 @@ class PosSession(models.Model):
     def _accumulate_amounts(self, data):
         data = super()._accumulate_amounts(data)
         if self.company_id.l10n_ro_accounting:
-            amounts = {"amount": 0.0, "amount_converted": 0.0}
             # nu trebuie generate note contabile
-            # pentru ca acestea sunt generate in miscarea de stoc
+            # pentru ca acestea sunt generate in miscarea de stoc.
+            # In Odoo 19 cheile sunt dict-uri grupate pe cont (defaultdict),
+            # consumate cu .items() => fiecare valoare trebuie sa fie un dict
+            # {amount, amount_converted}. Le golim ca sa nu se genereze linii.
+            #
+            # IMPORTANT: trebuie golit si "stock_valuation". Core-ul O19 il
+            # consuma separat in _create_stock_valuation_lines (apelat din
+            # _create_account_move), iar contrapartida sa (stock_output) e deja
+            # golita aici. Daca lasam "stock_valuation" populat, se genereaza o
+            # linie de valorizare fara contrapartida => nota de inchidere iese
+            # dezechilibrata exact cu costul marfii al comenzilor nefacturate.
             data.update(
                 {
-                    "stock_expense": amounts,
-                    "stock_return": amounts,
-                    "stock_output": amounts,
+                    "stock_expense": {},
+                    "stock_return": {},
+                    "stock_output": {},
+                    "stock_valuation": {},
                 }
             )
         return data

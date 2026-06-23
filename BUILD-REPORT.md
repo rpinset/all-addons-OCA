@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-06-20 15:32 UTC
+Generated 2026-06-23 21:53 UTC
 
 ## Skipped repos
 
@@ -69,7 +69,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | `no_module` | No directory with __manifest__.py at repo root |
@@ -105,7 +104,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
-| [pms](https://github.com/OCA/pms) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
@@ -118,7 +116,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [resource](https://github.com/OCA/resource) | `no_module` | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
-| [rma](https://github.com/OCA/rma) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-channel](https://github.com/OCA/sale-channel) | `no_module` | No directory with __manifest__.py at repo root |
