@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-20 15:24 UTC** (elapsed 80s)
+Last build: **2026-06-23 21:46 UTC** (elapsed 176s)
 
 - Repos integrated: **140**
 - Canonical modules: **2909**
@@ -120,7 +120,7 @@ Last build: **2026-06-20 15:24 UTC** (elapsed 80s)
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 149 | 993a3f8 2026-06-04 Guillaume Masson Translated using Weblate (French) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
-| [server-auth](https://github.com/OCA/server-auth) | 26 | 12045c4 2025-07-15 mymage Translated using Weblate (Italian) |
+| [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 8333e14 2025-06-13 Betül Öğmen Added translation using Weblate (Turkish) |
 | [server-env](https://github.com/OCA/server-env) | 10 | 3ee785d 2026-06-17 Francesco Foresti Translated using Weblate (Italian) |
