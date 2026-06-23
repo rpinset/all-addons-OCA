@@ -1223,7 +1223,11 @@ class Reception(Component):
             if result.type == "lot":
                 lot_name = result.value
             elif result.type == "expiration_date":
-                lot_expiration_date = result.value
+                # We need to ensure we have a `datetime` object (and not a
+                # `date` one) for valid comparison with stock.lot.expiration_date
+                lot_expiration_date = datetime.combine(
+                    result.value, datetime.min.time()
+                )
             elif (
                 result.type == "product"
                 and result.raw != selected_line.product_id.barcode
@@ -1285,8 +1289,11 @@ class Reception(Component):
             )
 
         product = selected_line.product_id
-        lot = self.search_result.record or self._actions_for("search").lot_from_scan(
-            lot_name, product
+        search_result_record = self.search_result.record
+        lot = (
+            search_result_record
+            if search_result_record and search_result_record._name == "stock.lot"
+            else self._actions_for("search").lot_from_scan(lot_name, product)
         )
 
         if product.use_expiration_date and (
