@@ -10,6 +10,13 @@ class SaleOrderLine(models.Model):
             return self.filtered(lambda line: not line.is_delivery)
         return self
 
+    def _check_blanket_product_not_overlapping(self):
+        # Some lines, like `is_delivery` lines, are just fees and shouldn't raise an
+        # "already part of another blanket order" error.
+        # => Exclude those lines.
+        records = self._filter_out_blanket_carrier_lines()
+        return super(SaleOrderLine, records)._check_blanket_product_not_overlapping()
+
     @api.model
     def _match_lines_to_blanket(self, order_lines, blanket_lines):
         order_lines = order_lines._filter_out_blanket_carrier_lines()

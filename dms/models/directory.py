@@ -625,8 +625,8 @@ class DmsDirectory(models.Model):
             parent_directory._process_message(msg_dict)
             return parent_directory
         names = parent_directory.child_directory_ids.mapped("name")
-        slug = self.env["ir.http"]._slug
-        subject = slug(msg_dict.get("subject", _("Alias-Mail-Extraction")))
+        slugify = self.env["ir.http"]._slugify
+        subject = slugify(msg_dict.get("subject", _("Alias-Mail-Extraction")))
         defaults = dict(
             {"name": unique_name(subject, names, escape_suffix=True)}, **custom_values
         )

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_calendar_event_form" model="ir.ui.view">
+        <field
+            name="name"
+        >calendar.event.form (in calendar_event_description_layout)</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='description']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//notebook/page[@name='page_invitations']" position="before">
+                <page name="page_description" string="Description">
+                    <group>
+                        <field
+                            name="description"
+                            placeholder="Add description"
+                            readonly="not user_can_edit"
+                            nolabel="1"
+                            colspan="2"
+                        />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -44,7 +44,7 @@ class HrExpenseSheet(models.Model):
     def _check_petty_cash_amount(self):
         for rec in self:
             if rec.payment_mode == "petty_cash":
-                petty_cash = rec.petty_cash_id
+                petty_cash = rec.petty_cash_id.sudo()
                 balance = petty_cash.petty_cash_balance
                 amount = rec.total_amount
                 company_currency = rec.company_id.currency_id

@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-06-20 15:30 UTC
+Generated 2026-06-23 21:54 UTC
 
-Total skipped: **109**
+Total skipped: **108**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -37,7 +37,7 @@ Count: **24**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **85**
+Count: **84**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -100,7 +100,6 @@ Count: **85**
 | [product-kitting](https://github.com/OCA/product-kitting) | [18.0](https://github.com/OCA/product-kitting/tree/18.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [18.0](https://github.com/OCA/program/tree/18.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [18.0](https://github.com/OCA/project-agile/tree/18.0) | No directory with __manifest__.py at repo root |
-| [project-reporting](https://github.com/OCA/project-reporting) | [18.0](https://github.com/OCA/project-reporting/tree/18.0) | No directory with __manifest__.py at repo root |
 | [pwa-builder](https://github.com/OCA/pwa-builder) | [18.0](https://github.com/OCA/pwa-builder/tree/18.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [18.0](https://github.com/OCA/resource/tree/18.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [18.0](https://github.com/OCA/rest-api/tree/18.0) | No directory with __manifest__.py at repo root |

@@ -47,6 +47,27 @@ class TestCallOffDelivery(SaleOrderBlanketOrderCase):
         cls.so2 = cls._make_regular_so()
 
     @classmethod
+    def _make_blanket_so(cls, product):
+        return cls.env["sale.order"].create(
+            {
+                "order_type": "blanket",
+                "partner_id": cls.partner.id,
+                "blanket_validity_start_date": "2025-01-01",
+                "blanket_validity_end_date": "2025-12-31",
+                "blanket_reservation_strategy": "at_call_off",
+                "order_line": [
+                    Command.create(
+                        {
+                            "product_id": product.id,
+                            "product_uom_qty": 10.0,
+                            "price_unit": 100.0,
+                        }
+                    ),
+                ],
+            }
+        )
+
+    @classmethod
     def _make_regular_so(cls):
         return cls.env["sale.order"].create(
             {
@@ -100,6 +121,27 @@ class TestCallOffDelivery(SaleOrderBlanketOrderCase):
         self.assertEqual(len(self.blanket_so.call_off_order_ids), 2)
         for co in self.blanket_so.call_off_order_ids:
             self.assertEqual(co.state, "sale")
+
+    @freezegun.freeze_time("2025-06-01")
+    def test_blanket_delivery_line_no_false_overlap(self):
+        """A second blanket order with a distinct product must confirm even
+        though both blanket orders carry the same auto-assigned carrier
+        (delivery) line over overlapping validity periods."""
+        self.assertTrue(self._has_delivery_line(self.blanket_so))
+        blanket_so2 = self._make_blanket_so(self.product_3)
+        blanket_so2.action_confirm()
+        self.assertEqual(blanket_so2.state, "sale")
+        self.assertTrue(self._has_delivery_line(blanket_so2))
+
+    @freezegun.freeze_time("2025-06-01")
+    def test_blanket_delivery_line_overlap_without_fix(self):
+        """Without the filter, the shared carrier line triggers a false
+        overlap error between the two blanket orders."""
+        blanket_so2 = self._make_blanket_so(self.product_3)
+        with self.assertRaisesRegex(
+            ValidationError, "already part of another blanket order"
+        ):
+            blanket_so2.with_context(skip_blanket_carrier_filter=True).action_confirm()
 
     @freezegun.freeze_time("2025-06-01")
     def test_call_off_has_no_delivery_line(self):

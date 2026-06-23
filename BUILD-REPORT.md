@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-06-20 15:30 UTC
+Generated 2026-06-23 21:54 UTC
 
 ## Skipped repos
 
@@ -86,7 +86,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
-| [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [pwa-builder](https://github.com/OCA/pwa-builder) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |

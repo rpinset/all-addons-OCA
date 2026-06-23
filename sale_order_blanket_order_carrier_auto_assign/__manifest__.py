@@ -5,7 +5,7 @@
         "keep auto-assigned carrier (delivery-fee) lines out of blanket-order "
         "call-off matching so they cannot consume blanket call-off capacity."
     ),
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "license": "AGPL-3",
     "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-blanket",

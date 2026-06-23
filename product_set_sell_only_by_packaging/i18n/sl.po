@@ -1,0 +1,107 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_set_sell_only_by_packaging
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-22 17:24+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.actions.server,name:product_set_sell_only_by_packaging.cron_check_packaging_ir_actions_server
+msgid "Check sale by packaging on wishlist lines"
+msgstr "Preveri prodajo po pakiranju na vrsticah seznama želja"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model.fields,help:product_set_sell_only_by_packaging.field_product_product__sell_only_by_packaging_prod_set_tocheck
+#: model:ir.model.fields,help:product_set_sell_only_by_packaging.field_product_template__sell_only_by_packaging_prod_set_tocheck
+msgid ""
+"If this flag is ON, it means you have to check all product.set associated "
+"with it"
+msgstr ""
+"Če je ta oznaka vklopljena, to pomeni, da morate preveriti vse elemente "
+"'product.set', ki so z njo povezani"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model.fields,field_description:product_set_sell_only_by_packaging.field_product_set_line__sell_only_by_packaging
+msgid "Only sell by packaging"
+msgstr "Le prodaja po pakiranjih"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model,name:product_set_sell_only_by_packaging.model_product_template
+#: model_terms:ir.ui.view,arch_db:product_set_sell_only_by_packaging.view_product_set_line_search
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model,name:product_set_sell_only_by_packaging.model_product_product
+msgid "Product Variant"
+msgstr "Različica proizvoda"
+
+#. module: product_set_sell_only_by_packaging
+#: model_terms:ir.ui.view,arch_db:product_set_sell_only_by_packaging.view_product_set_line_search
+msgid "Product set"
+msgstr "Sklop proizvodov"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.actions.act_window,name:product_set_sell_only_by_packaging.act_open_product_set_line_view
+#: model:ir.model,name:product_set_sell_only_by_packaging.model_product_set_line
+#: model_terms:ir.ui.view,arch_db:product_set_sell_only_by_packaging.view_product_set_line_search
+msgid "Product set line"
+msgstr "Postavka sklopa proizvodov"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model.fields,help:product_set_sell_only_by_packaging.field_product_set_line__sell_only_by_packaging
+msgid ""
+"Restrict the usage of this product on sale order lines without packaging "
+"defined"
+msgstr ""
+"Uporabo tega proizvoda omejite na prodajne postavke, za katere ni določeno "
+"pakiranje"
+
+#. module: product_set_sell_only_by_packaging
+#: model:ir.model.fields,field_description:product_set_sell_only_by_packaging.field_product_product__sell_only_by_packaging_prod_set_tocheck
+#: model:ir.model.fields,field_description:product_set_sell_only_by_packaging.field_product_template__sell_only_by_packaging_prod_set_tocheck
+msgid "Sell Only By Packaging Prod Set Tocheck"
+msgstr "Prodaja le s pakiranjem proizvoda, nastavljenim na 'Za preveriti'"
+
+#. module: product_set_sell_only_by_packaging
+#. odoo-python
+#: code:addons/product_set_sell_only_by_packaging/models/product_set_line.py:0
+msgid ""
+"The following product(s) can be sold only by packaging: \n"
+"   %s"
+msgstr ""
+"Naslednji proizvod(i) se lahko prodajajo le v pakiranjih: \n"
+"   %s"
+
+#. module: product_set_sell_only_by_packaging
+#: model_terms:ir.ui.view,arch_db:product_set_sell_only_by_packaging.product_template_form_view
+msgid ""
+"There are product set lines associated to this product\n"
+"                    which do not have a packaging associated.\n"
+"                    It would be better to check them all.\n"
+"                    If you don't take any action,\n"
+"                    a cron will assign such lines to the first available packaging."
+msgstr ""
+"S tem proizvodom so povezane postavke sklopa proizvodov,\n"
+"                    ki nimajo povezanega pakiranja.\n"
+"                    Priporočljivo je, da jih vse preverite.\n"
+"                    Če ne boste ukrepali,\n"
+"                    bo cron te vrstice dodelil prvemu razpoložljivemu "
+"pakiranju."
+
+#. module: product_set_sell_only_by_packaging
+#: model_terms:ir.ui.view,arch_db:product_set_sell_only_by_packaging.product_template_form_view
+msgid "View all lines"
+msgstr "Prikaži vse vrstice"
