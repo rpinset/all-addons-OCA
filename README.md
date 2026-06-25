@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-23 21:49 UTC** (elapsed 156s)
+Last build: **2026-06-25 04:50 UTC** (elapsed 144s)
 
 - Repos integrated: **117**
 - Canonical modules: **2096**
@@ -84,7 +84,7 @@ Last build: **2026-06-23 21:49 UTC** (elapsed 156s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 1 | f40efd6 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [operating-unit](https://github.com/OCA/operating-unit) | 36 | 0e22e8c 2025-10-14 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 1616c04 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [payroll](https://github.com/OCA/payroll) | 3 | de2cad2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [payroll](https://github.com/OCA/payroll) | 3 | 7a7d13a 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | 3d4a18e 2026-06-18 OCA-git-bot [BOT] post-merge updates |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
