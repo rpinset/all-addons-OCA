@@ -11,6 +11,7 @@
                     name="action_view_maintained_modules"
                     icon="fa-file-code-o"
                     invisible="not modules_maintained_count"
+                    groups="vcp_management.group_vcp_user"
                 >
                     <field
                         string="Maintained Modules"
@@ -24,6 +25,7 @@
                     name="action_view_author_modules"
                     icon="fa-codepen"
                     invisible="not modules_author_count"
+                    groups="vcp_management.group_vcp_user"
                 >
                     <field
                         string="Author Modules"

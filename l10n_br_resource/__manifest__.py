@@ -7,12 +7,12 @@
         This module extend core resource to create important brazilian
         informations. Define a Brazilian calendar and some tools to compute
         dates used in financial and payroll modules""",
-    "version": "18.0.1.1.0",
+    "version": "18.0.2.0.0",
     "license": "AGPL-3",
     "author": "KMEE,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-brazil",
     "depends": ["l10n_br_base", "resource"],
-    "maintainers": ["mileo", "lfdivino"],
+    "maintainers": ["mileo"],
     "external_dependencies": {"python": ["workalendar"]},
     "data": [
         "views/resource_calendar_view.xml",
