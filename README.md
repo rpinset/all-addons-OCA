@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-06-23 21:50 UTC** (elapsed 122s)
+Last build: **2026-06-25 04:50 UTC** (elapsed 69s)
 
 - Repos integrated: **126**
 - Canonical modules: **1891**
@@ -11,7 +11,7 @@ Last build: **2026-06-23 21:50 UTC** (elapsed 122s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 4ab221d 2026-05-07 OCA-git-bot Merge PR #5616 into 17.0 |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 61715ec 2026-06-24 Pedro M. Baeza Merge pull request #5749 from Tecnativa/17.0-fix-stock-picked_not_synchronized |
 | [account-analytic](https://github.com/OCA/account-analytic) | 29 | ce39a2c 2026-06-17 OCA-git-bot [BOT] post-merge updates |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | a61e0ec 2025-06-25 OCA-git-bot [BOT] post-merge updates |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | 734cd8d 2026-06-14 OCA-git-bot [BOT] post-merge updates |
@@ -90,7 +90,7 @@ Last build: **2026-06-23 21:50 UTC** (elapsed 122s)
 | [multi-company](https://github.com/OCA/multi-company) | 12 | d84c11c 2026-03-13 mymage Translated using Weblate (Italian) |
 | [operating-unit](https://github.com/OCA/operating-unit) | 23 | f0c4187 2026-04-21 mymage Translated using Weblate (Italian) |
 | [partner-contact](https://github.com/OCA/partner-contact) | 73 | e36b3cc 2026-06-22 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [payroll](https://github.com/OCA/payroll) | 5 | 61264ea 2026-06-13 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [payroll](https://github.com/OCA/payroll) | 5 | 5b4ed3d 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 38 | 8c33e04 2026-06-22 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 61 | ba6fe63 2026-06-10 OCA-git-bot [BOT] post-merge updates |
 | [product-configurator](https://github.com/OCA/product-configurator) | 3 | dac088e 2026-01-12 mymage Translated using Weblate (Italian) |
@@ -116,7 +116,7 @@ Last build: **2026-06-23 21:50 UTC** (elapsed 122s)
 | [server-ux](https://github.com/OCA/server-ux) | 23 | d180004 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 6763afe 2026-04-20 mymage Translated using Weblate (Italian) |
 | [sign](https://github.com/OCA/sign) | 4 | 50ab7c0 2026-04-13 SMNDVC Translated using Weblate (Slovak) |
-| [social](https://github.com/OCA/social) | 46 | 1d9da59 2026-06-12 Pedro M. Baeza Merge pull request #1874 from Tecnativa/17.0-ou_fix-mass_mailing_custom_unsubscribe-seq |
+| [social](https://github.com/OCA/social) | 46 | 9a1a18e 2026-06-24 Weblate Update translation files |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | 2 | a001e3e 2026-04-10 alexmorel-tecnativa Translated using Weblate (Spanish) |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | 7 | 26c991b 2025-10-13 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 5 | 3cb7a89 2026-02-27 OCA-git-bot [BOT] post-merge updates |
