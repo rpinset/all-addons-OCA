@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-06-23 21:45 UTC** (elapsed 88s)
+Last build: **2026-06-25 04:46 UTC** (elapsed 85s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -85,7 +85,7 @@ Last build: **2026-06-23 21:45 UTC** (elapsed 88s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 7 | e6e0eeb 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [operating-unit](https://github.com/OCA/operating-unit) | 17 | db3d30f 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [partner-contact](https://github.com/OCA/partner-contact) | 62 | b8c7c6d 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [payroll](https://github.com/OCA/payroll) | 2 | 21b99b0 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [payroll](https://github.com/OCA/payroll) | 2 | 6b24c95 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 22 | 55da831 2025-07-30 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
