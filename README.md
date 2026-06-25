@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-23 21:46 UTC** (elapsed 176s)
+Last build: **2026-06-25 04:47 UTC** (elapsed 168s)
 
 - Repos integrated: **140**
 - Canonical modules: **2909**
@@ -98,7 +98,7 @@ Last build: **2026-06-23 21:46 UTC** (elapsed 176s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 8 | 4b73a08 2025-07-03 Weblate Update translation files |
 | [operating-unit](https://github.com/OCA/operating-unit) | 42 | 8f79f40 2026-04-28 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 73 | 34b7c67 2026-04-27 Sergio Zanchetta Translated using Weblate (Italian) |
-| [payroll](https://github.com/OCA/payroll) | 6 | ac916a2 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [payroll](https://github.com/OCA/payroll) | 6 | 2468ae8 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 84 | c64c73d 2026-06-12 OCA-git-bot [BOT] post-merge updates |
@@ -130,7 +130,7 @@ Last build: **2026-06-23 21:46 UTC** (elapsed 176s)
 | [sign](https://github.com/OCA/sign) | 4 | 79ed266 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
 | [social](https://github.com/OCA/social) | 59 | dcf4c98 2026-02-23 Pedro M. Baeza Merge pull request #1816 from Therp/14.0-copier-update |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 22 | 8584b97 2025-10-15 mymage Translated using Weblate (Italian) |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | ca8a787 2025-10-15 mymage Translated using Weblate (Italian) |
+| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | 56b191f 2026-06-24 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | ea13ae4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 73f0f0a 2026-06-17 Francesco Foresti Translated using Weblate (Italian) |
