@@ -277,7 +277,7 @@ addon | version | maintainers | summary
 [account_account_tag_code](account_account_tag_code/) | 19.0.1.0.0 |  | Add a code field to the accounts tags
 [account_asset_force_account](account_asset_force_account/) | 19.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Asset Force Account
 [account_asset_management](account_asset_management/) | 19.0.1.0.2 |  | Assets Management
-[account_chart_update](account_chart_update/) | 19.0.1.1.2 |  | Wizard to update a company's account chart from a template
+[account_chart_update](account_chart_update/) | 19.0.1.1.3 |  | Wizard to update a company's account chart from a template
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 19.0.1.0.1 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 19.0.1.0.1 |  | Account Invoice Constraint Chronology
@@ -666,7 +666,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 19.0.1.0.0 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 19.0.1.1.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 19.0.1.0.3 |  | Adds payment mode on partners and invoices
-[account_payment_order](account_payment_order/) | 19.0.1.0.3 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 19.0.1.0.4 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 19.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_purchase](account_payment_purchase/) | 19.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
@@ -1134,7 +1134,7 @@ addon | version | maintainers | summary
 [contract](contract/) | 19.0.1.0.1 |  | Recurring - Contracts Management
 [contract_analytic_tag](contract_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Contract Analytic Tag
 [contract_variable_quantity](contract_variable_quantity/) | 19.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
-[subscription_oca](subscription_oca/) | 19.0.1.0.0 |  | Generate recurring invoices.
+[subscription_oca](subscription_oca/) | 19.0.1.1.1 |  | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -1470,10 +1470,12 @@ addon | version | maintainers | summary
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 19.0.1.0.2 |  | Skip payment for logged users in checkout process
 [website_sale_hide_price](website_sale_hide_price/) | 19.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_order_type](website_sale_order_type/) | 19.0.1.1.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
+[website_sale_product_accessory](website_sale_product_accessory/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Display suggested accessory products on the website product page
 [website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 19.0.1.0.0 |  | Allow hide attributes values not used in variants
 [website_sale_product_brand](website_sale_product_brand/) | 19.0.2.0.0 |  | Product Brand Filtering in Website
 [website_sale_product_minimal_price](website_sale_product_minimal_price/) | 19.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Display minimal price for products that has variants
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 19.0.1.1.0 |  | Display product reference in e-commerce
+[website_sale_stock_available](website_sale_stock_available/) | 19.0.1.0.0 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
 [website_sale_stock_picking_policy](website_sale_stock_picking_policy/) | 19.0.1.0.0 |  | Let customers choose consolidated delivery at checkout
 [website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 19.0.1.0.0 |  | Display provisioning date for a product in shop online
 
@@ -1529,6 +1531,7 @@ addon | version | maintainers | summary
 [base_ubl_parse](base_ubl_parse/) | 19.0.1.0.0 |  | Base module to parse UBL files (Universal Business Language)
 [partner_identification_import](partner_identification_import/) | 19.0.1.0.0 |  | Provides partner matching on extra ID
 [purchase_order_ubl](purchase_order_ubl/) | 19.0.1.0.0 |  | Embed UBL XML file inside the PDF purchase order
+[sale_order_import](sale_order_import/) | 19.0.1.0.0 |  | Import RFQ or sale orders from files
 
 [//]: # (end addons)
 
@@ -2664,7 +2667,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 19.0.0.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 19.0.0.2.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 19.0.0.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.19.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.1.21.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 19.0.0.4.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 19.0.0.8.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -2672,7 +2675,7 @@ addon | version | maintainers | summary
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 19.0.1.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 19.0.1.7.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/cristianPanaite'><img src='https://github.com/cristianPanaite.png' width='32' height='32' style='border-radius:50%;' alt='cristianPanaite'/></a> | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 19.0.0.19.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 19.0.0.20.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 19.0.0.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 19.0.1.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 19.0.1.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Landed Cost
@@ -2731,6 +2734,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 19.0.1.0.1 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
+[delivery_seur_atlas](delivery_seur_atlas/) | 19.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 19.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_aeat](l10n_es_aeat/) | 19.0.1.2.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
@@ -2746,7 +2750,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 19.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 19.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_facturae](l10n_es_facturae/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_mis_report](l10n_es_mis_report/) | 19.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
@@ -2979,13 +2983,14 @@ addon | version | maintainers | summary
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 19.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your health and safety management system
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 19.0.1.0.1 |  | Information Security Management System Manual
 [mgmtsystem_information_security](mgmtsystem_information_security/) | 19.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your ISMS
+[mgmtsystem_kpi](mgmtsystem_kpi/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Key Performance Indicators
 [mgmtsystem_manual](mgmtsystem_manual/) | 19.0.1.0.1 |  | Management System - Manual
 [mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 19.0.1.0.1 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 19.0.1.0.1 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 19.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_partner](mgmtsystem_partner/) | 19.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 19.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
-[mgmtsystem_review](mgmtsystem_review/) | 19.0.1.0.0 |  | Management System - Review
+[mgmtsystem_review](mgmtsystem_review/) | 19.0.1.1.0 |  | Management System - Review
 [mgmtsystem_security_event](mgmtsystem_security_event/) | 19.0.1.0.0 |  | Feared Events
 [mgmtsystem_survey](mgmtsystem_survey/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Management System - Survey
 
@@ -3047,6 +3052,7 @@ addon | version | maintainers | summary
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 19.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_tag](mrp_tag/) | 19.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+[quality_control_oca](quality_control_oca/) | 19.0.1.0.0 |  | Generic infrastructure for quality tests.
 
 [//]: # (end addons)
 
@@ -3168,9 +3174,6 @@ and promote its widespread use.
 
 ## From OCA/mis-builder
 
-[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
-
-# MIS Builder
 
 [![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
 
@@ -3684,6 +3687,7 @@ addon | version | maintainers | summary
 [product_category_code](product_category_code/) | 19.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a code on product categories
 [product_category_type](product_category_type/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Type field on Product Categories to distinguish between parent and final categories
 [product_category_uom](product_category_uom/) | 19.0.1.0.0 |  | Define default product UoM at product category level
+[product_class](product_class/) | 19.0.1.0.0 | <a href='https://github.com/Ricardoalso'><img src='https://github.com/Ricardoalso.png' width='32' height='32' style='border-radius:50%;' alt='Ricardoalso'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Product classification and attribute constraints
 [product_code_unique](product_code_unique/) | 19.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_company_default](product_company_default/) | 19.0.1.0.0 |  | Product Company Default
 [product_customerinfo](product_customerinfo/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to define prices for customers in the products
@@ -5602,6 +5606,7 @@ addon | version | maintainers | summary
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 19.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Show a message box to users
 [web_m2x_options](web_m2x_options/) | 19.0.1.0.1 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 19.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
+[web_no_bubble](web_no_bubble/) | 19.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_pwa_customize](web_pwa_customize/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Web Pwa Customize
 [web_refresher](web_refresher/) | 19.0.1.0.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 19.0.1.0.0 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/cuongnmtm'><img src='https://github.com/cuongnmtm.png' width='32' height='32' style='border-radius:50%;' alt='cuongnmtm'/></a> | Remember the tree columns' widths across sessions.
