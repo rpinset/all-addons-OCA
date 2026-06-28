@@ -1,12 +1,12 @@
 # Skipped repos — branch `13.0`
 
-Generated 2026-06-25 04:46 UTC
+Generated 2026-06-28 15:10 UTC
 
-Total skipped: **137**
+Total skipped: **138**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **75**
+Count: **76**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -37,6 +37,7 @@ Count: **75**
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | [13.0](https://github.com/OCA/mirrors-flake8/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | [13.0](https://github.com/OCA/module-composition-analysis/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | [13.0](https://github.com/OCA/oca-addons-repo-template/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [oca-apps-store](https://github.com/OCA/oca-apps-store) | [13.0](https://github.com/OCA/oca-apps-store/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | [13.0](https://github.com/OCA/oca-ci/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | [13.0](https://github.com/OCA/oca-github-bot/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | [13.0](https://github.com/OCA/oca-port/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
