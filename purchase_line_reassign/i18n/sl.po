@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_line_reassign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 13:53+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__allow_different_suppliers
+msgid "Allow Different Suppliers"
+msgstr "Dovoli različne dobavitelje"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,help:purchase_line_reassign.field_purchase_order_line_reassign_wiz__allow_different_suppliers
+msgid "Allow selecting orders from other suppliers."
+msgstr "Omogoči izbiro nalogov drugih dobaviteljev."
+
+#. module: purchase_line_reassign
+#: model_terms:ir.ui.view,arch_db:purchase_line_reassign.purchase_order_line_reassign_wiz
+msgid "Apply"
+msgstr "Uveljavi"
+
+#. module: purchase_line_reassign
+#: model_terms:ir.ui.view,arch_db:purchase_line_reassign.purchase_order_line_reassign_wiz
+msgid "Close"
+msgstr "Zaključi"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__purchase_order_id
+msgid "Move to purchase"
+msgstr "Premakni v nabavo"
+
+#. module: purchase_line_reassign
+#: model_terms:ir.ui.view,arch_db:purchase_line_reassign.purchase_order_line_reassign_wiz
+msgid "Purchase Order Lines"
+msgstr "Nabavne postavke"
+
+#. module: purchase_line_reassign
+#: model:ir.actions.act_window,name:purchase_line_reassign.action_purchase_order_line_reassign_wiz
+msgid "Reassign Lines to Other Purchase"
+msgstr "Prerazporedi postavke v drugo nabavo"
+
+#. module: purchase_line_reassign
+#. odoo-python
+#: code:addons/purchase_line_reassign/wizards/purchase_line_reassign_wiz.py:0
+msgid "Selected line/s are invoiced or they have distinct vendors"
+msgstr "Izbrane postavke so že zaračunane ali pa imajo različne dobavitelje"
+
+#. module: purchase_line_reassign
+#: model:ir.model.fields,field_description:purchase_line_reassign.field_purchase_order_line_reassign_wiz__partner_id
+msgid "Vendor"
+msgstr "Dobavitelj"
+
+#. module: purchase_line_reassign
+#: model:ir.model,name:purchase_line_reassign.model_purchase_order_line_reassign_wiz
+msgid "Wizard to reassign purchase order lines to other PO"
+msgstr ""
+"Čarovnik za prerazporeditev postavk nabavnega naloga drugim nabavnim nalogom"

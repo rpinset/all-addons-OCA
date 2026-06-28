@@ -73,11 +73,40 @@ class TestHrExpenseTierValidation(TestExpenseCommon):
             with Form(expense) as exp:
                 exp.name = "Change name"
         # test change field exception in tier, it should allow edit
-        self.env["ir.config_parameter"].sudo().set_param(
-            "hr_expense.tier_exceptions", "['name']"
+        field_name = self.env["ir.model.fields"].search(
+            [
+                ("model", "=", "hr.expense"),
+                ("name", "=", "name"),
+            ]
+        )
+        model_expense = self.env["ir.model"].search([("model", "=", "hr.expense")])
+        self.env["tier.validation.exception"].create(
+            {
+                "model_id": model_expense.id,
+                "field_ids": [(6, 0, field_name.ids)],
+                "allowed_to_write_under_validation": True,
+                "allowed_to_write_after_validation": False,
+            }
         )
         with Form(expense) as exp:
             exp.name = "Change name"
 
         message = expense._message_subscribe(self.partner_a.ids)
         self.assertTrue(message, True)
+
+        # test approve expense sheets after validation is approved
+        sheet.with_user(self.expense_user_manager).validate_tier()
+        self.assertTrue(sheet.validated)
+        sheet.with_user(self.expense_user_manager).action_approve_expense_sheets()
+        self.assertEqual(sheet.state, "approve")
+        with self.assertRaises(ValidationError):
+            expense.write({"name": "Change name after approval"})
+        self.env["tier.validation.exception"].create(
+            {
+                "model_id": model_expense.id,
+                "field_ids": [(6, 0, field_name.ids)],
+                "allowed_to_write_under_validation": False,
+                "allowed_to_write_after_validation": True,
+            }
+        )
+        expense.write({"name": "Change name after approval"})

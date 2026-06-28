@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_variant_configurator_manual_creation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 08:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__attribute_id
+msgid "Attribute"
+msgstr "Atribut"
+
+#. module: product_variant_configurator_manual_creation
+#: model_terms:ir.ui.view,arch_db:product_variant_configurator_manual_creation.wizard_product_variant_configurator_manual_creation_view_form
+msgid "Cancel"
+msgstr "Prekliči"
+
+#. module: product_variant_configurator_manual_creation
+#: model_terms:ir.ui.view,arch_db:product_variant_configurator_manual_creation.product_template_form_view
+msgid "Create Pending Variants"
+msgstr "Ustvari čakajoče različice"
+
+#. module: product_variant_configurator_manual_creation
+#: model_terms:ir.ui.view,arch_db:product_variant_configurator_manual_creation.wizard_product_variant_configurator_manual_creation_view_form
+msgid "Create Variants"
+msgstr "Ustvari različice"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__create_uid
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__create_date
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__display_name
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_product_product__has_pending_variants
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_product_template__has_pending_variants
+msgid "Has pending variants?"
+msgstr "Ima čakajoče različice?"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__id
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__write_uid
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__write_date
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__line_ids
+msgid "Lines"
+msgstr "Postavke"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model,name:product_variant_configurator_manual_creation.model_wizard_product_variant_configurator_manual_creation
+msgid "Manual Creation Variant Configurator"
+msgstr "Konfigurator ročnega ustvarjanja različic"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model,name:product_variant_configurator_manual_creation.model_wizard_product_variant_configurator_manual_creation_line
+msgid "Manual Creation Variant Configurator Attributes"
+msgstr "Atributi konfiguratorja ročnega ustvarjanja različic"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model,name:product_variant_configurator_manual_creation.model_product_template
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__required
+msgid "Required?"
+msgstr "Obvezno?"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__selected_value_ids
+msgid "Selected Values"
+msgstr "Izbrane vrednosti"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__product_tmpl_id
+msgid "Template"
+msgstr "Predloga"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__attribute_value_ids
+msgid "Values"
+msgstr "Vrednosti"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.actions.act_window,name:product_variant_configurator_manual_creation.wizard_product_variant_configurator_manual_creation_action
+#: model_terms:ir.ui.view,arch_db:product_variant_configurator_manual_creation.wizard_product_variant_configurator_manual_creation_view_form
+msgid "Variants Manual Creation"
+msgstr "Ročno ustvarjanje različic"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation__variants_to_create
+msgid "Variants To Create"
+msgstr "Različice za ustvarjanje"
+
+#. module: product_variant_configurator_manual_creation
+#: model:ir.model.fields,field_description:product_variant_configurator_manual_creation.field_wizard_product_variant_configurator_manual_creation_line__wizard_id
+msgid "Wizard"
+msgstr "Čarovnik"

@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_type_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 11:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "<span>View</span>"
+msgstr "<span>Prikaz</span>"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "All"
+msgstr "Vse"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.actions.act_window,name:purchase_order_type_dashboard.purchase_order_type_dashboard_action
+#: model:ir.ui.menu,name:purchase_order_type_dashboard.purchase_order_dashboard_menu
+msgid "Dashboard"
+msgstr "Nadzorna plošča"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.model.fields,field_description:purchase_order_type_dashboard.field_purchase_order_type__invoice_status_no_po_count
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.purchase_order_view_search
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "Nothing to Bill"
+msgstr "Nič za obračun"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "Number of Purchase Orders that have nothing to bill yet"
+msgstr "Število nabavnih nalogov, ki še nimajo ničesar za obračunati"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "Number of Purchase Orders waiting for bills"
+msgstr "Število nabavnih nalogov, ki čakajo na račune"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "Number of Requests for Quotations"
+msgstr "Število zahtev za ponudbe"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.actions.act_window,name:purchase_order_type_dashboard.action_purchase_order_from_dashboard
+msgid "Purchase Order"
+msgstr "Nabavni nalog"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.model.fields,field_description:purchase_order_type_dashboard.field_purchase_order_type__purchase_order_ids
+msgid "Purchase Orders"
+msgstr "Nabavni nalogi"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.model.fields,field_description:purchase_order_type_dashboard.field_purchase_order_type__state_rfq_po_count
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "RFQs"
+msgstr "Povpraševanja po ponudbah"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.actions.act_window,name:purchase_order_type_dashboard.action_purchase_rfq_from_dashboard
+msgid "Request for Quotation"
+msgstr "Zahteva za ponudbo"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_tree
+msgid "Total Nothing to Bill"
+msgstr "Skupaj nič za obračun"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_tree
+msgid "Total RFQs"
+msgstr "Skupaj zahteve za ponudbe"
+
+#. module: purchase_order_type_dashboard
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_tree
+msgid "Total Waiting Bills"
+msgstr "Skupaj čakanje računov"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.model,name:purchase_order_type_dashboard.model_purchase_order_type
+msgid "Type of purchase order"
+msgstr "Tip nabavnega naloga"
+
+#. module: purchase_order_type_dashboard
+#: model:ir.model.fields,field_description:purchase_order_type_dashboard.field_purchase_order_type__invoice_status_ti_po_count
+#: model_terms:ir.ui.view,arch_db:purchase_order_type_dashboard.view_purchase_order_type_kanban
+msgid "Waiting Bills"
+msgstr "Čakanje računov"

@@ -10,18 +10,26 @@ from odoo.tools import config
 from openupgradelib import openupgrade, openupgrade_tools
 
 from odoo.addons.base.models.ir_qweb_fields import Markup, nl2br, nl2br_enclose
+from odoo.addons.l10n_it_account.migration_tools import _remove_module
 
 OLD_MODULES = [
-    "l10n_it_fatturapa",
+    "l10n_it_fatturapa_in_purchase",
+    "l10n_it_fatturapa_in_rc",
     "l10n_it_fatturapa_in",
+    "l10n_it_fatturapa_out_rc",
     "l10n_it_fatturapa_out",
+    "l10n_it_fatturapa",
     "l10n_it_fiscal_document_type",
     "l10n_it_fiscal_payment_term",
     "l10n_it_fiscalcode",
     "l10n_it_ipa",
     "l10n_it_pec",
     "l10n_it_rea",
+    "l10n_it_reverse_charge_start_end_dates",
+    "l10n_it_reverse_charge",
     "l10n_it_vat_payability",
+    "l10n_it_vat_registries_rc",
+    "l10n_it_vat_settlement_date_rc",
 ]
 
 
@@ -970,3 +978,4 @@ def _l10n_it_edi_extension_post_init_hook(env):
         migration_function = globals().get(f"_{module}_post_migration")
         if openupgrade.is_module_installed(env.cr, module) and migration_function:
             migration_function(env)
+        _remove_module(env, module)

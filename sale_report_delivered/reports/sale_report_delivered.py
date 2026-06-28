@@ -140,7 +140,11 @@ class SaleReportDeliverd(models.Model):
             t.name as template_name,
             t.uom_id as product_uom,
             cur.decimal_places,
-            sm.quantity as unsigned_product_uom_qty,
+            (CASE
+                WHEN t.type IN ('product', 'consu')
+                THEN ABS(COALESCE(-svl.quantity, sm.quantity, 0.0))
+                ELSE sol.product_uom_qty END
+            ) / u.factor * u2.factor as unsigned_product_uom_qty,
             CASE
               WHEN dest_location.usage IS NULL
                 THEN 1
@@ -148,15 +152,13 @@ class SaleReportDeliverd(models.Model):
               ELSE 0
             END AS signed_qty,
             ROUND(
-                COALESCE(
-                    sm.quantity * (
-                        sol.price_unit * (1.0 - sol.discount / 100.0)
-                    ),
+                ABS(COALESCE(
+                    -svl.quantity * sol.price_reduce_taxexcl,
+                    sm.quantity * sol.price_reduce_taxexcl,
                     sol.price_subtotal
-                ) /
-                CASE
-                    COALESCE(s.currency_rate, 0)
-                    WHEN 0 THEN 1.0
+                )) /
+                CASE COALESCE(s.currency_rate, 0) WHEN 0
+                    THEN 1.0
                     ELSE s.currency_rate
                 END,
                 cur.decimal_places
@@ -202,7 +204,33 @@ class SaleReportDeliverd(models.Model):
             stock_location dest_location ON sm.location_dest_id = dest_location.id
         LEFT JOIN
             stock_location source_location ON sm.location_id = source_location.id
-        LEFT JOIN stock_valuation_layer svl ON svl.stock_move_id = sm.id
+        LEFT JOIN (
+            SELECT
+                stock_move_id,
+                SUM(stock_valuation_layer.quantity) AS quantity,
+                SUM(stock_valuation_layer.value) AS value
+            FROM stock_valuation_layer
+            LEFT JOIN stock_move svl_sm ON (
+                stock_valuation_layer.stock_move_id = svl_sm.id
+            )
+            LEFT JOIN stock_location svl_sl ON svl_sm.location_id = svl_sl.id
+            LEFT JOIN stock_location svl_dl ON svl_sm.location_dest_id = svl_dl.id
+            WHERE
+                -- Manage Dropshipping (Bug described on ROADMAP.rst)
+                -- Also declared in _sub_where
+                NOT (
+                    (
+                        svl_sl.usage = 'supplier'
+                        AND svl_dl.usage = 'customer'
+                        AND stock_valuation_layer.quantity > 0
+                    ) OR (
+                        svl_sl.usage = 'customer'
+                        AND svl_dl.usage = 'supplier'
+                        AND stock_valuation_layer.quantity < 0
+                    )
+                )
+            GROUP BY stock_move_id
+        ) svl ON svl.stock_move_id = sm.id
         LEFT JOIN stock_picking sp ON sp.id = sm.picking_id
         LEFT JOIN res_currency as cur ON cur.id = sol.currency_id
         """
@@ -227,6 +255,7 @@ class SaleReportDeliverd(models.Model):
             dest_location.usage = 'internal' AND
             sm.to_refund
         ) OR
+        -- Manage Dropshipping
         (
             source_location.usage = 'supplier' AND
             dest_location.usage = 'customer' AND
@@ -242,7 +271,10 @@ class SaleReportDeliverd(models.Model):
     def _where(self):
         """Where clause with only done mvoes or without state"""
         return f"""
-            WHERE (sm.state = 'done' OR sm.state IS NULL) AND ({self._sub_where()})
+            WHERE
+            (sm.quantity <> 0.0) AND
+            (sm.state = 'done' OR sm.state IS NULL) AND
+            ({self._sub_where()})
         """
 
     def _group_by(self):

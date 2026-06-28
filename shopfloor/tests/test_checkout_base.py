@@ -30,6 +30,7 @@ class CheckoutCommonCase(CommonCase):
                 }
             )
         )
+        cls.carrier = cls.env.ref("delivery.free_delivery_carrier")
 
     def setUp(self):
         super().setUp()

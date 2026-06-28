@@ -17,6 +17,7 @@ class AccountGroup(models.Model):
         compute="_compute_account_ids",
         string="Accounts",
         store=False,
+        search="_search_account_ids",
     )
     compute_account_ids = fields.Many2many(
         "account.account",
@@ -106,3 +107,62 @@ class AccountGroup(models.Model):
             one.compute_account_ids = (
                 one.account_ids | one.group_child_ids.compute_account_ids
             )
+
+    def _search_account_ids(self, operator, value):
+        """Search for account groups based on the accounts they contain."""
+        if operator not in ("=", "!=", "in", "not in"):
+            raise NotImplementedError
+        root_company_id = str(self.env.company.root_id.id)
+        root_company_id_int = self.env.company.root_id.id
+        if not value:
+            self.env.cr.execute(
+                SQL(
+                    """
+                SELECT DISTINCT g.id
+                FROM account_group g
+                JOIN account_account a ON
+                    g.code_prefix_start <= LEFT(a.code_store->>%(root_company_id)s,
+                    char_length(g.code_prefix_start))
+                    AND g.code_prefix_end >= LEFT(a.code_store->>%(root_company_id)s,
+                    char_length(g.code_prefix_end))
+                WHERE g.company_id = %(company_id)s
+            """,
+                    root_company_id=root_company_id,
+                    company_id=root_company_id_int,
+                )
+            )
+            groups_with_accounts = [r[0] for r in self.env.cr.fetchall()]
+            if operator in ("=", "in"):
+                return [
+                    ("id", "not in", groups_with_accounts),
+                    ("company_id", "=", root_company_id_int),
+                ]
+            else:
+                return [("id", "in", groups_with_accounts)]
+        else:
+            self.env.cr.execute(
+                SQL(
+                    """
+                SELECT DISTINCT g.id
+                FROM account_group g
+                JOIN account_account a ON
+                    g.code_prefix_start <=
+                    LEFT(a.code_store->>%(root_company_id)s,
+                    char_length(g.code_prefix_start))
+                    AND g.code_prefix_end >= LEFT(a.code_store->>%(root_company_id)s,
+                    char_length(g.code_prefix_end))
+                WHERE a.id IN %(account_ids)s
+            """,
+                    root_company_id=root_company_id,
+                    account_ids=tuple(value),
+                )
+            )
+            group_ids = [r[0] for r in self.env.cr.fetchall()]
+            if operator in ("!=", "not in"):
+                if not group_ids:
+                    return []
+                return [("id", "not in", group_ids)]
+            else:
+                if not group_ids:
+                    return [("id", "=", False)]
+                return [("id", "in", group_ids)]

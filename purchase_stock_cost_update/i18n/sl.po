@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_stock_cost_update
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 07:06+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: purchase_stock_cost_update
+#: model_terms:ir.ui.view,arch_db:purchase_stock_cost_update.purchase_order_form
+msgid "<i class=\"fa fa-info-circle\" role=\"img\"/> Details"
+msgstr "<i class=\"fa fa-info-circle\" role=\"img\"/> Podrobnosti"
+
+#. module: purchase_stock_cost_update
+#: model_terms:ir.ui.view,arch_db:purchase_stock_cost_update.purchase_order_form
+msgid ""
+"<i class=\"fa fa-warning\"/> There are lines (marked in yellow) which\n"
+"                    prices have changed since they where received in stock."
+msgstr ""
+"<i class=\"fa fa-warning\"/> Obstajajo postavke (označene z rumeno),\n"
+"                    katerih cene so se spremenile od prejema na zalogo."
+
+#. module: purchase_stock_cost_update
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_stock_valuation_layer__cost_update_history
+msgid "Cost Update History"
+msgstr "Zgodovina posodobitev lastne cene"
+
+#. module: purchase_stock_cost_update
+#: model_terms:ir.ui.view,arch_db:purchase_stock_cost_update.purchase_order_form
+msgid "Fix valuation"
+msgstr "Popravi vrednotenje"
+
+#. module: purchase_stock_cost_update
+#. odoo-python
+#: code:addons/purchase_stock_cost_update/models/purchase_order.py:0
+msgid "Price difference layer created from %(line)s"
+msgstr "Sloj razlike v ceni ustvarjen iz %(line)s"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_stock_valuation_layer__purchase_line_id
+msgid "Purchase Line"
+msgstr "Nabavna postavka"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model,name:purchase_stock_cost_update.model_purchase_order
+msgid "Purchase Order"
+msgstr "Nabavni nalog"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model,name:purchase_stock_cost_update.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Nabavna postavka"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model,name:purchase_stock_cost_update.model_stock_valuation_layer
+msgid "Stock Valuation Layer"
+msgstr "Nivo vrednotenja zalog"
+
+#. module: purchase_stock_cost_update
+#: model_terms:ir.ui.view,arch_db:purchase_stock_cost_update.purchase_order_form
+msgid ""
+"This will make unreversible changes to the valuation layers related to the "
+"affected products"
+msgstr ""
+"To bo povzročilo nepovratne spremembe slojev vrednotenja, povezanih s "
+"prizadetimi proizvodi"
+
+#. module: purchase_stock_cost_update
+#: model_terms:ir.ui.view,arch_db:purchase_stock_cost_update.stock_valuation_layer_form
+msgid "Update history"
+msgstr "Zgodovina posodobitev"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_purchase_order_line__valuation_difference
+msgid "Valuation Difference"
+msgstr "Razlika v vrednotenju"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_purchase_order__valuation_difference_report
+msgid "Valuation Difference Report"
+msgstr "Poročilo o razlikah v vrednotenju"
+
+#. module: purchase_stock_cost_update
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_purchase_order__valuation_differs
+#: model:ir.model.fields,field_description:purchase_stock_cost_update.field_purchase_order_line__valuation_differs
+msgid "Valuation Differs"
+msgstr "Vrednotenje se razlikuje"

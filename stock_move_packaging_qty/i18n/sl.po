@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_move_packaging_qty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-25 11:10+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_operations
+msgid "<span>(</span>"
+msgstr "<span>(</span>"
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_operations
+msgid "<span>)</span>"
+msgstr "<span>)</span>"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_picking_type__automatic_done_packaging_calculation
+msgid "Automatically Calculate Done Packaging Quantity"
+msgstr "Samodejni izračun količine končanih pakiranj"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_move__product_packaging_quantity
+#: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_move_line__product_packaging_quantity
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Done Packaging Quantity"
+msgstr "Količina končanih pakiranj"
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_tree_detailed
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_picking_move_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Done Pkg."
+msgstr "Konč. pakir."
+
+#. module: stock_move_packaging_qty
+#: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_move_line__product_packaging_id
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_form
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_move_line_tree_detailed
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_picking_move_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Packaging"
+msgstr "Pakiranje"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model,name:stock_move_packaging_qty.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tip dobavnice"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model,name:stock_move_packaging_qty.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Premiki proizvoda (postavka premika zaloge)"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model.fields,help:stock_move_packaging_qty.field_stock_move_line__product_packaging_quantity
+msgid "Quantity done in Product Packaging"
+msgstr "Opravljena količina v pakiranju proizvoda"
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Reserved Packaging Quantity"
+msgstr "Rezervirana količina pakiranj"
+
+#. module: stock_move_packaging_qty
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_detailed_operation_tree
+#: model_terms:ir.ui.view,arch_db:stock_move_packaging_qty.view_stock_move_line_operation_tree
+msgid "Reserved Pkg."
+msgstr "Rezerv. pakir."
+
+#. module: stock_move_packaging_qty
+#: model:ir.model,name:stock_move_packaging_qty.model_stock_move
+msgid "Stock Move"
+msgstr "Premik zaloge"
+
+#. module: stock_move_packaging_qty
+#: model:ir.model.fields,help:stock_move_packaging_qty.field_stock_picking_type__automatic_done_packaging_calculation
+msgid ""
+"The system calculates Done Packaging Automatically on Stock Move Lines.\n"
+"Disable this to prevent automatic calculation."
+msgstr ""
+"Sistem samodejno izračuna količino končanih pakiranj na postavkah premika "
+"zaloge.\n"
+"Onemogočite to možnost, da preprečite samodejni izračun."
+
+#. module: stock_move_packaging_qty
+#. odoo-python
+#: code:addons/stock_move_packaging_qty/models/stock_move.py:0
+msgid ""
+"There are %d move lines involved. Please set their product packaging done "
+"qty directly."
+msgstr ""
+"Vključenih je %d postavk premika. Opravljeno količino pakiranja proizvoda "
+"nastavite neposredno na njih."

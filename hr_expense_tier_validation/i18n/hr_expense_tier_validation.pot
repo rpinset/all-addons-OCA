@@ -84,14 +84,13 @@ msgid "Reviewers"
 msgstr ""
 
 #. module: hr_expense_tier_validation
-#. odoo-python
-#: code:addons/hr_expense_tier_validation/models/hr_expense.py:0
-msgid "The expense report is under validation."
+#: model:ir.model,name:hr_expense_tier_validation.model_tier_definition
+msgid "Tier Definition"
 msgstr ""
 
 #. module: hr_expense_tier_validation
-#: model:ir.model,name:hr_expense_tier_validation.model_tier_definition
-msgid "Tier Definition"
+#: model:ir.model,name:hr_expense_tier_validation.model_tier_validation_exception
+msgid "Tier Validation Exceptions"
 msgstr ""
 
 #. module: hr_expense_tier_validation
@@ -118,4 +117,15 @@ msgstr ""
 #. module: hr_expense_tier_validation
 #: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense_sheet__review_ids
 msgid "Validations"
+msgstr ""
+
+#. module: hr_expense_tier_validation
+#. odoo-python
+#: code:addons/hr_expense_tier_validation/models/hr_expense.py:0
+msgid ""
+"You are not allowed to write those fields %(validation_step)s validation.\n"
+"- %(not_allowed_fields_str)s\n"
+"\n"
+"Only those fields can be modified:\n"
+"- %(allowed_fields_str)s"
 msgstr ""

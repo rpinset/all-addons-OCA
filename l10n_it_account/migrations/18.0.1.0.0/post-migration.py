@@ -3,6 +3,8 @@ from psycopg2 import sql
 
 from odoo import SUPERUSER_ID, api
 
+from odoo.addons.l10n_it_account.migration_tools import _remove_module
+
 OLD_MODULES = [
     "l10n_it_account_tax_kind",
     "l10n_it_fatturapa",
@@ -131,3 +133,8 @@ def migrate(cr, version):
         migration_function = globals().get(f"_{module}_migration")
         if openupgrade.is_module_installed(env.cr, module) and migration_function:
             migration_function(env)
+        if module != "l10n_it_fatturapa_pec":
+            # `l10n_it_fatturapa_pec` will be
+            # migrated and removed
+            # in `l10n_it_edi_pec`
+            _remove_module(env, module)

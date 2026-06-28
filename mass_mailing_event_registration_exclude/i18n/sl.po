@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:19+0000\n"
-"PO-Revision-Date: 2026-05-10 09:45+0000\n"
+"PO-Revision-Date: 2026-06-26 18:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -48,7 +48,7 @@ msgstr "Prikazani naziv"
 #. module: mass_mailing_event_registration_exclude
 #: model:ir.model,name:mass_mailing_event_registration_exclude.model_event_registration
 msgid "Event Registration"
-msgstr "Registracija dogodka"
+msgstr "Prijava na dogodek"
 
 #. module: mass_mailing_event_registration_exclude
 #: model:ir.model,name:mass_mailing_event_registration_exclude.model_event_registration_state

@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_export_anonymize
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-26 17:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields__anonymize_in_export
+msgid "Anonymize In Export"
+msgstr "Anonimiziraj pri izvozu"
+
+#. module: base_export_anonymize
+#: model:res.groups,name:base_export_anonymize.group_anonymize_data_in_export
+msgid "Anonymize data in export"
+msgstr "Anonimiziraj podatke pri izvozu"
+
+#. module: base_export_anonymize
+#: model:ir.model,name:base_export_anonymize.model_base
+msgid "Base"
+msgstr "Osnova"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__field_id
+msgid "Field"
+msgstr "Polje"
+
+#. module: base_export_anonymize
+#: model:ir.model,name:base_export_anonymize.model_ir_model_fields
+msgid "Fields"
+msgstr "Polja"
+
+#. module: base_export_anonymize
+#: model:ir.actions.act_window,name:base_export_anonymize.ir_model_fields_export_anonymize_act_window
+#: model:ir.ui.menu,name:base_export_anonymize.ir_model_fields_export_anonymize_menu
+msgid "Fields Export Anonymize"
+msgstr "Anonimizacija polj pri izvozu"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_export_anonymize
+#: model:ir.model,name:base_export_anonymize.model_ir_model_fields_export_anonymize
+msgid "Ir Model Fields Export Anonymize"
+msgstr "Anonimizacija izvoza polj modela IR"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: base_export_anonymize
+#: model:ir.model.fields,field_description:base_export_anonymize.field_ir_model_fields_export_anonymize__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"

@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Sale Report Delivered",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "author": "Tecnativa," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-reporting",
     "category": "Sales",
@@ -10,7 +10,7 @@
     "depends": ["sale_stock", "sale_margin"],
     "installable": True,
     "development_status": "Beta",
-    "maintainers": ["sergio-teruel"],
+    "maintainers": ["sergio-teruel", "Shide"],
     "data": [
         "security/ir.model.access.csv",
         "security/sale_report_security.xml",

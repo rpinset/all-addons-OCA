@@ -1,0 +1,150 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_product_pack
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-27 09:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_depth
+msgid "Depth"
+msgstr "Globina"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__pack_depth
+msgid "Depth of the product if it is part of a pack."
+msgstr "Globina proizvoda, če je del kompleta."
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__do_no_expand_pack_lines
+msgid "Do No Expand Pack Lines"
+msgstr "Ne razširi postavk kompleta"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_child_line_ids
+msgid "Lines in pack"
+msgstr "Postavke v kompletu"
+
+#. module: sale_product_pack
+#: model_terms:ir.ui.view,arch_db:sale_product_pack.view_order_form
+msgid "Locked"
+msgstr "Zaklenjeno"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__pack_component_price
+msgid ""
+"On sale orders or purchase orders:\n"
+"* Detailed per component: Detail lines with prices.\n"
+"* Totalized in main product: Detail lines merging lines prices on pack (don't show component prices).\n"
+"* Ignored: Use product pack price (ignore detail line prices)."
+msgstr ""
+"Na prodajnih ali nabavnih nalogih:\n"
+"* Podrobno po komponenti: podrobne postavke s cenami.\n"
+"* Sešteto v glavnem proizvodu: cene podrobnih postavk se združijo na "
+"kompletu (cene komponent niso prikazane).\n"
+"* Prezrto: uporabi ceno kompleta proizvodov (prezre cene podrobnih postavk)."
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__pack_type
+msgid ""
+"On sale orders or purchase orders:\n"
+"* Detailed: Display components individually in the sale order.\n"
+"* Non Detailed: Do not display components individually in the sale order."
+msgstr ""
+"Na prodajnih ali nabavnih nalogih:\n"
+"* Podrobno: komponente prikaže posamično na prodajnem nalogu.\n"
+"* Brez podrobnosti: komponent ne prikaže posamično na prodajnem nalogu."
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_parent_line_id
+msgid "Pack"
+msgstr "Komplet"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_component_price
+msgid "Pack Component Price"
+msgstr "Cena komponent kompleta"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_type
+msgid "Pack Display Type"
+msgstr "Vrsta prikaza kompleta"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_sale_order_line__pack_modifiable
+msgid "Pack Modifiable"
+msgstr "Komplet je mogoče spreminjati"
+
+#. module: sale_product_pack
+#. odoo-python
+#: code:addons/sale_product_pack/models/sale_order_line.py:0
+msgid "Parent Product"
+msgstr "Nadrejeni proizvod"
+
+#. module: sale_product_pack
+#: model:ir.model,name:sale_product_pack.model_product_pack_line
+msgid "Product pack line"
+msgstr "Postavka kompleta proizvodov"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,field_description:sale_product_pack.field_product_pack_line__sale_discount
+msgid "Sale discount (%)"
+msgstr "Prodajni popust (%)"
+
+#. module: sale_product_pack
+#: model:ir.model,name:sale_product_pack.model_sale_order
+msgid "Sales Order"
+msgstr "Prodajni nalog"
+
+#. module: sale_product_pack
+#: model:ir.model,name:sale_product_pack.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Postavka prodajnega naloga"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__pack_parent_line_id
+msgid "The pack that contains this product."
+msgstr "Komplet, ki vsebuje ta proizvod."
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__pack_modifiable
+msgid "The parent pack is modifiable"
+msgstr "Nadrejeni komplet je mogoče spreminjati"
+
+#. module: sale_product_pack
+#: model:ir.model.fields,help:sale_product_pack.field_sale_order_line__do_no_expand_pack_lines
+msgid ""
+"This is a technical field in order to check if pack lines has to be expanded"
+msgstr ""
+"To je tehnično polje za preverjanje, ali je treba postavke kompleta razširiti"
+
+#. module: sale_product_pack
+#. odoo-python
+#: code:addons/sale_product_pack/models/sale_order_line.py:0
+msgid ""
+"You can not change this line because is part of a pack included in this "
+"order"
+msgstr ""
+"Te postavke ne morete spremeniti, ker je del kompleta, vključenega v ta nalog"
+
+#. module: sale_product_pack
+#. odoo-python
+#: code:addons/sale_product_pack/models/sale_order.py:0
+msgid ""
+"You cannot delete this line because is part of a pack in this sale order. In"
+" order to delete this line you need to delete the pack itself"
+msgstr ""
+"Te postavke ne morete izbrisati, ker je del kompleta v tem prodajnem nalogu. "
+"Za izbris te postavke morate izbrisati sam komplet"

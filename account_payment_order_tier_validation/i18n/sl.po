@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_order_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-06-26 10:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__can_review
+msgid "Can Review"
+msgstr "Lahko pregleda"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__has_comment
+msgid "Has Comment"
+msgstr "Ima komentar"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__hide_reviews
+msgid "Hide Reviews"
+msgstr "Skrij preglede"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,help:account_payment_order_tier_validation.field_account_payment_order__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr "Če je nastavljeno, dovoli pregledovalcu pustiti komentar pri pregledu."
+
+#. module: account_payment_order_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
+msgid "My Payment Orders to review"
+msgstr "Moji plačilni nalogi za pregled"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__need_validation
+msgid "Need Validation"
+msgstr "Potrebuje potrditev"
+
+#. module: account_payment_order_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
+msgid "Needs my Review"
+msgstr "Potrebuje moj pregled"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__next_review
+msgid "Next Review"
+msgstr "Naslednji pregled"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model,name:account_payment_order_tier_validation.model_account_payment_order
+msgid "Payment Order"
+msgstr "Plačilni nalog"
+
+#. module: account_payment_order_tier_validation
+#: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
+msgid "Payment Orders validated and ready to be confirmed"
+msgstr "Plačilni nalogi so potrjeni in pripravljeni na potrditev"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected
+msgid "Rejected"
+msgstr "Zavrnjeno"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected_message
+msgid "Rejected Message"
+msgstr "Sporočilo zavrnitve"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__reviewer_ids
+msgid "Reviewers"
+msgstr "Pregledovalci"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model,name:account_payment_order_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "Definicija nivoja"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__to_validate_message
+msgid "To Validate Message"
+msgstr "Sporočilo za potrditev"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated
+#: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
+msgid "Validated"
+msgstr "Potrjeno"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated_message
+msgid "Validated Message"
+msgstr "Sporočilo potrditve"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validation_status
+msgid "Validation Status"
+msgstr "Stanje potrditve"
+
+#. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__review_ids
+msgid "Validations"
+msgstr "Potrditve"

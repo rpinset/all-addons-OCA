@@ -130,7 +130,9 @@ class Checkout(Component):
 
     def _response_for_select_dest_package(self, picking, move_lines, message=None):
         packages = picking.mapped("move_line_ids.result_package_id").filtered(
-            "package_type_id"
+            lambda pack, picking=picking: pack._filter_for_picking_carrier_checkout(
+                picking=picking
+            )
         )
         if not packages:
             # FIXME: do we want to move from 'select_dest_package' to
