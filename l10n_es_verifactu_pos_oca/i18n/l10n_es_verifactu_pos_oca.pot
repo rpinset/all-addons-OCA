@@ -1,0 +1,456 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_es_verifactu_pos_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid "%s tax is not mapped to VERI*FACTU."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__aeat_send_error
+msgid "AEAT Send Error"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__aeat_content_sent
+msgid "AEAT last content sent"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__aeat_header_sent
+msgid "AEAT last header sent"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__aeat_state
+msgid "AEAT send state"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "Already sent but with local changes not sent yet"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "Already sent to VERI*FACTU."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,help:l10n_es_verifactu_pos_oca.field_pos_config__verifactu_base_url
+msgid "Base URL for Verifactu QR code generation. Needed on PoS."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "CSV"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,help:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_macrodata
+msgid ""
+"Check to confirm that the document has an absolute amount greater o equal to"
+" 100 000 000,00 euros."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Configuration"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Description"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Failed?"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "General"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Hash"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Hash string"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,help:l10n_es_verifactu_pos_oca.field_pos_order__aeat_send_failed
+msgid ""
+"Indicates that the last attempt to communicate this document to the SII has "
+"failed. See SII return for details"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,help:l10n_es_verifactu_pos_oca.field_pos_order__aeat_state
+msgid ""
+"Indicates the state of this document in relation with the presentation at "
+"the AEAT"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Information"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Invoice entries"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "Never sent to VERI*FACTU"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,help:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_cancel_reason
+msgid ""
+"Optional internal reason to cancel this invoicein VERI*FACTU. This reason is"
+" not sent to VERI*FACTU"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid "POS reference"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model,name:l10n_es_verifactu_pos_oca.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model,name:l10n_es_verifactu_pos_oca.model_pos_order
+msgid "Point of Sale Orders"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model,name:l10n_es_verifactu_pos_oca.model_pos_session
+msgid "Point of Sale Session"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-javascript
+#: code:addons/l10n_es_verifactu_pos_oca/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "QR Tributario:"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Re-send to Verifactu"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Registration date"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Registration key"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Responses"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Result"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__aeat_send_failed
+msgid "SII send failed"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Send State"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Send error"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Sent content"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Sent header"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Tax key"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+msgid "Technical"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"The POS order %s cannot be sent to Verifactu becauseit does not have any "
+"taxes."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "The last attemp to sent to VERI*FACTU has failed"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid "There's a mismatch in taxes for RE. Check them."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-javascript
+#: code:addons/l10n_es_verifactu_pos_oca/static/src/xml/OrderReceipt.xml:0
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.view_pos_order_verifactu_form
+#, python-format
+msgid "VERI*FACTU"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_csv
+msgid "VERI*FACTU CSV"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_qr
+msgid "VERI*FACTU QR"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_qr_url
+msgid "VERI*FACTU URL"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_cancel_reason
+msgid "VERI*FACTU cancel reason"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_description
+msgid "VERI*FACTU description"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_enabled
+msgid "VERI*FACTU enabled"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "VERI*FACTU error"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "VERI*FACTU failed"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "VERI*FACTU filters"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_hash
+msgid "VERI*FACTU hash"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_hash_string
+msgid "VERI*FACTU hash string"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_invoice_entry_ids
+msgid "VERI*FACTU invoice entries"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_registration_key_code
+msgid "VERI*FACTU key code"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__last_verifactu_invoice_entry_id
+msgid "VERI*FACTU last invoice entry"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_macrodata
+msgid "VERI*FACTU macrodata?"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "VERI*FACTU not sent"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_refund_type
+msgid "VERI*FACTU refund type"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_registration_date
+msgid "VERI*FACTU registration date"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_registration_key
+msgid "VERI*FACTU registration key"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__last_verifactu_response_line_id
+msgid "VERI*FACTU response line"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_response_line_ids
+msgid "VERI*FACTU response lines"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_return
+msgid "VERI*FACTU return"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_send_date
+msgid "VERI*FACTU send date"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "VERI*FACTU sent"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_order__verifactu_tax_key
+msgid "VERI*FACTU tax key"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model:ir.model.fields,field_description:l10n_es_verifactu_pos_oca.field_pos_config__verifactu_base_url
+msgid "Verifactu Base URL"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#: model_terms:ir.ui.view,arch_db:l10n_es_verifactu_pos_oca.poz_order_verifactu_search
+msgid "With modifications not sent to VERI*FACTU"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] The POS order cannot be sent to "
+"Verifactu because it does not have a fiscal position."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] The POS order cannot be sent to "
+"Verifactu because it does not have a registration key."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] The POS order cannot be sent to "
+"Verifactu because it does not have a tax key."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] The POS order cannot be sent to "
+"Verifactu because it does not have all taxes mapped."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] The POS order cannot be sent to "
+"Verifactu because there are some inconsistent taxes on lines."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid ""
+"[ID: %(id)d, REF: %(ref)s, INV: %(inv)s] You cannot change the %(fields)s of"
+" document already registered at VERI*FACTU. You must cancel the document and"
+" create a new one with the correct value."
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid "order date"
+msgstr ""
+
+#. module: l10n_es_verifactu_pos_oca
+#. odoo-python
+#: code:addons/l10n_es_verifactu_pos_oca/models/pos_order.py:0
+#, python-format
+msgid "simplified invoice number"
+msgstr ""

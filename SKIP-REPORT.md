@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-06-25 04:49 UTC
+Generated 2026-06-28 15:15 UTC
 
-Total skipped: **112**
+Total skipped: **113**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **36**
+Count: **37**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -21,6 +21,7 @@ Count: **36**
 | [mass-mailing](https://github.com/OCA/mass-mailing) | [16.0](https://github.com/OCA/mass-mailing/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | [16.0](https://github.com/OCA/mirrors-flake8/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | [16.0](https://github.com/OCA/oca-addons-repo-template/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [oca-apps-store](https://github.com/OCA/oca-apps-store) | [16.0](https://github.com/OCA/oca-apps-store/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | [16.0](https://github.com/OCA/oca-ci/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | [16.0](https://github.com/OCA/oca-custom/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | [16.0](https://github.com/OCA/oca-github-bot/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
