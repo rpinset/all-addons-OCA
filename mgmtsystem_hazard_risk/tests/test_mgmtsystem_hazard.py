@@ -23,10 +23,10 @@ class TestMgmtsystemHazard(BaseCommon):
         cls.risk_type = cls.env["mgmtsystem.hazard.risk.type"].create(
             {"name": "Physical"}
         )
-        cls.probability = cls.env["mgmtsystem.hazard.probability"].create(
+        cls.probability = cls.env["mgmtsystem.risk.probability"].create(
             {"name": "Maybe", "value": 2}
         )
-        cls.severity = cls.env["mgmtsystem.hazard.severity"].create(
+        cls.severity = cls.env["mgmtsystem.risk.severity"].create(
             {"name": "Heavy", "value": 3}
         )
         cls.usage = cls.env["mgmtsystem.hazard.usage"].create(

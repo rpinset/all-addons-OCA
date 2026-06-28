@@ -34,6 +34,24 @@ class SaleSubscription(models.Model):
     partner_id = fields.Many2one(
         comodel_name="res.partner", required=True, string="Partner", index=True
     )
+    partner_invoice_id = fields.Many2one(
+        comodel_name="res.partner",
+        string="Invoice address",
+        compute="_compute_partner_address_ids",
+        store=True,
+        readonly=False,
+        help="Address the recurring invoices are addressed to. "
+        "Defaults to the customer's invoice address.",
+    )
+    partner_shipping_id = fields.Many2one(
+        comodel_name="res.partner",
+        string="Delivery address",
+        compute="_compute_partner_address_ids",
+        store=True,
+        readonly=False,
+        help="Delivery address used on the recurring invoices and orders. "
+        "Defaults to the customer's delivery address.",
+    )
     fiscal_position_id = fields.Many2one(
         "account.fiscal.position",
         string="Fiscal Position",
@@ -190,14 +208,16 @@ class SaleSubscription(models.Model):
     @api.depends("template_id", "date_start")
     def _compute_rule_boundary(self):
         for record in self:
-            if record.template_id.recurring_rule_boundary == "unlimited":
+            # No template yet (e.g. a new record in the form view) or an
+            # unlimited one: there is no end date to compute.
+            if (
+                not record.template_id
+                or record.template_id.recurring_rule_boundary == "unlimited"
+            ):
                 record.date = False
                 record.recurring_rule_boundary = True
             else:
-                record.date = (
-                    relativedelta(months=+record.template_id.recurring_rule_count)
-                    + record.date_start
-                )
+                record.date = record.template_id._get_date(record.date_start)
                 record.recurring_rule_boundary = False
 
     @api.depends("template_id")
@@ -215,20 +235,65 @@ class SaleSubscription(models.Model):
         else:
             self.calculate_recurring_next_date(today)
 
+    def _get_recurrence_delta(self):
+        self.ensure_one()
+        type_interval = self.template_id.recurring_rule_type
+        interval = int(self.template_id.recurring_interval or 0) or 1
+        return relativedelta(**{type_interval: interval})
+
+    def _get_first_invoice_date(self):
+        self.ensure_one()
+        return self.date_start or fields.Date.today()
+
+    def _get_next_invoice_date(self, previous_date):
+        self.ensure_one()
+        if isinstance(previous_date, datetime):
+            previous_date = previous_date.date()
+        elif not isinstance(previous_date, date):
+            previous_date = fields.Date.to_date(previous_date)
+        return previous_date + self._get_recurrence_delta()
+
+    def _set_next_invoice_date_after_invoice(self, invoice_date=None):
+        self.ensure_one()
+        # A subscription without a scheduled next date (e.g. closed, or not
+        # started yet) can still be invoiced manually: advance from its first
+        # invoice date instead of crashing on a False date.
+        previous_date = (
+            invoice_date or self.recurring_next_date or self._get_first_invoice_date()
+        )
+        self.recurring_next_date = self._get_next_invoice_date(previous_date)
+
+    def _get_contract_end_date(self):
+        self.ensure_one()
+        if self.template_id.recurring_rule_boundary == "unlimited":
+            return False
+        return self.template_id._get_date(self._get_first_invoice_date())
+
     def calculate_recurring_next_date(self, start_date):
         if self.account_invoice_ids_count == 0:
             if not start_date:
-                start_date = self.date_start or date.today()
+                start_date = self._get_first_invoice_date()
             if isinstance(start_date, datetime):
                 start_date = start_date.date()
             elif not isinstance(start_date, date):
                 start_date = fields.Date.to_date(start_date)
             self.recurring_next_date = start_date
         else:
-            type_interval = self.template_id.recurring_rule_type
-            interval = int(self.template_id.recurring_interval)
-            self.recurring_next_date = start_date + relativedelta(
-                **{type_interval: interval}
+            self.recurring_next_date = self._get_next_invoice_date(start_date)
+
+    @api.depends("partner_id")
+    def _compute_partner_address_ids(self):
+        for subscription in self:
+            if not subscription.partner_id:
+                subscription.partner_invoice_id = False
+                subscription.partner_shipping_id = False
+                continue
+            addresses = subscription.partner_id.address_get(["invoice", "delivery"])
+            subscription.partner_invoice_id = addresses.get(
+                "invoice", subscription.partner_id.id
+            )
+            subscription.partner_shipping_id = addresses.get(
+                "delivery", subscription.partner_id.id
             )
 
     @api.onchange("partner_id")
@@ -277,6 +342,8 @@ class SaleSubscription(models.Model):
         self.ensure_one()
         return {
             "partner_id": self.partner_id.id,
+            "partner_invoice_id": (self.partner_invoice_id.id or self.partner_id.id),
+            "partner_shipping_id": (self.partner_shipping_id.id or self.partner_id.id),
             "pricelist_id": self.pricelist_id.id,
             "fiscal_position_id": self.fiscal_position_id.id,
             "date_order": datetime.now(),
@@ -288,10 +355,17 @@ class SaleSubscription(models.Model):
 
     def _prepare_account_move(self, line_ids):
         self.ensure_one()
+        # The invoice is addressed to the invoice address, like a sale order
+        # invoice is created on ``partner_invoice_id``. ``commercial_partner_id``
+        # still rolls up to the contracting company, so the receivable is kept
+        # on the parent. ``partner_shipping_id`` is passed explicitly so it is
+        # not re-derived from the (invoice) partner_id.
+        invoice_partner = self.partner_invoice_id or self.partner_id
         values = {
-            "partner_id": self.partner_id.id,
+            "partner_id": invoice_partner.id,
+            "partner_shipping_id": (self.partner_shipping_id.id or self.partner_id.id),
             "invoice_date": self.recurring_next_date,
-            "invoice_payment_term_id": self.partner_id.property_payment_term_id.id,
+            "invoice_payment_term_id": invoice_partner.property_payment_term_id.id,
             "invoice_origin": self.name,
             "invoice_user_id": self.user_id.id,
             "partner_bank_id": self.company_id.partner_id.bank_ids[:1].id,
@@ -371,12 +445,12 @@ class SaleSubscription(models.Model):
         if not invoice_number:
             invoice_number = self.env._("To validate")
             message_body = f"<b>{msg_static}</b> {invoice_number}"
-        self.calculate_recurring_next_date(self.recurring_next_date)
+        self._set_next_invoice_date_after_invoice()
         self.message_post(body=Markup(message_body))
 
     def manual_invoice(self):
         invoice_id = self.create_invoice()
-        self.calculate_recurring_next_date(self.recurring_next_date)
+        self._set_next_invoice_date_after_invoice()
         context = dict(self.env.context)
         context["form_view_initial_mode"] = "edit"
         return {
