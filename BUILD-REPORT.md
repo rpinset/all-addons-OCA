@@ -1,6 +1,6 @@
 # Build report — `17.0`
 
-Generated 2026-06-25 04:50 UTC
+Generated 2026-06-28 15:17 UTC
 
 ## Skipped repos
 
@@ -74,6 +74,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | `no_module` | No directory with __manifest__.py at repo root |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
+| [oca-apps-store](https://github.com/OCA/oca-apps-store) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | `no_branch` | fatal: Remote branch 17.0 not found in upstream origin |
