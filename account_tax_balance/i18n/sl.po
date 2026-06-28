@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-02-01 07:09+0000\n"
+"PO-Revision-Date: 2026-06-25 13:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -86,7 +86,7 @@ msgstr "Ustvarjeno"
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_wizard_open_tax_balances__date_range_id
 msgid "Date Range"
-msgstr "Časovni obseg"
+msgstr "Obdobje"
 
 #. module: account_tax_balance
 #: model:ir.model.fields,field_description:account_tax_balance.field_account_move__display_name

@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-25 04:47 UTC** (elapsed 168s)
+Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
 
 - Repos integrated: **140**
 - Canonical modules: **2909**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **114**
+- Skipped repos (no branch / no module): **115**
 
 ## Integrated repos
 
@@ -16,8 +16,8 @@ Last build: **2026-06-25 04:47 UTC** (elapsed 168s)
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | c8d0630 2026-02-02 matthieusaison Translated using Weblate (French) |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 2f902a6 2025-03-13 mymage Translated using Weblate (Italian) |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 7 | 9875dfc 2026-03-03 OCA-git-bot [BOT] post-merge updates |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | c90513d 2026-04-30 Sergio Zanchetta Translated using Weblate (Italian) |
+| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 7 | b505fc6 2026-06-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | 8ef9605 2026-06-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | 15069cb 2026-03-02 Pedro M. Baeza Merge pull request #581 from ursais/14-dr-precommit-update |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 10 | 8670e82 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 7015684 2026-04-14 matthieusaison Translated using Weblate (French) |
@@ -109,7 +109,7 @@ Last build: **2026-06-25 04:47 UTC** (elapsed 168s)
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | 9a59899 2026-06-13 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 104 | b047a3c 2026-06-25 Kévin Roche Added translation using Weblate (French) |
 | [queue](https://github.com/OCA/queue) | 12 | 1c896eb 2026-06-03 mymage Translated using Weblate (Italian) |
 | [report-print-send](https://github.com/OCA/report-print-send) | 8 | abe01e8 2025-10-09 Betül Öğmen Translated using Weblate (Turkish) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 24 | 9aa96a9 2025-11-25 mymage Translated using Weblate (Italian) |
