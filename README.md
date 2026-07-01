@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-06-28 15:14 UTC** (elapsed 111s)
+Last build: **2026-07-01 04:58 UTC** (elapsed 102s)
 
 - Repos integrated: **117**
 - Canonical modules: **2096**
@@ -11,10 +11,10 @@ Last build: **2026-06-28 15:14 UTC** (elapsed 111s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 9068a5d 2026-05-04 Pedro M. Baeza Merge pull request #5098 from efatto/15.0-fix-l10n_it-migration |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | fad7fd8 2026-06-30 Pedro M. Baeza Merge pull request #5742 from grap/15.0-ADD-product_sale_tax_price_included-merged-into-account-SLG |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 8337d7f 2026-06-17 Gerardo Alí Ferraro Schelijasch Translated using Weblate (Spanish) |
+| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 6e90f4d 2026-06-29 Gerardo Alí Ferraro Schelijasch Translated using Weblate (Spanish (Dominican Republic)) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | a36d4f1 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -69,7 +69,7 @@ Last build: **2026-06-28 15:14 UTC** (elapsed 111s)
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 8 | 6592499 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 1 | a8e45c4 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | 01d9e56 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | 0d4209d 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | cbfce5b 2026-06-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 2 | 9ae910b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 30 | 130cbf3 2026-04-23 OCA-git-bot [BOT] post-merge updates |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -100,7 +100,7 @@ Last build: **2026-06-28 15:14 UTC** (elapsed 111s)
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | 6c02b1a 2026-06-11 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | bf96290 2026-06-30 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -114,7 +114,7 @@ Last build: **2026-06-28 15:14 UTC** (elapsed 111s)
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | c4b3e65 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 59 | 0156a19 2026-05-26 mymage Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 59 | 395b84f 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 97e0c60 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | 0fbad2b 2026-04-20 Weblate Update translation files |
 | [storage](https://github.com/OCA/storage) | 13 | 1ea7f73 2025-02-09 oca-git-bot [IMP] update dotfiles |
