@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-06-28 15:10 UTC** (elapsed 82s)
+Last build: **2026-07-01 04:56 UTC** (elapsed 176s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -102,7 +102,7 @@ Last build: **2026-06-28 15:10 UTC** (elapsed 82s)
 | [rest-framework](https://github.com/OCA/rest-framework) | 6 | ce695b4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [rma](https://github.com/OCA/rma) | 6 | 032e07f 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 6 | b18afd3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 96100b3 2026-01-11 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 431805b 2026-06-30 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 1197df9 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [server-auth](https://github.com/OCA/server-auth) | 21 | 4f19d40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [server-backend](https://github.com/OCA/server-backend) | 16 | e63658d 2025-09-18 mymage Translated using Weblate (Italian) |
@@ -114,7 +114,7 @@ Last build: **2026-06-28 15:10 UTC** (elapsed 82s)
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | 2751886 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 19 | 682e5e6 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 3fe4f6e 2023-10-09 Weblate Update translation files |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 74 | ab028d7 2026-05-26 mymage Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 74 | 7a213d0 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 52 | 119dbfc 2026-02-28 mymage Translated using Weblate (Italian) |
 | [storage](https://github.com/OCA/storage) | 11 | a0e4ca5 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [survey](https://github.com/OCA/survey) | 3 | 523a7e9 2023-10-29 mymage Translated using Weblate (Italian) |
