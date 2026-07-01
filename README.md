@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-06-28 15:10 UTC** (elapsed 84s)
+Last build: **2026-07-01 04:56 UTC** (elapsed 174s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -102,7 +102,7 @@ Last build: **2026-06-28 15:10 UTC** (elapsed 84s)
 | [role-policy](https://github.com/OCA/role-policy) | 6 | 82f505d 2025-04-08 OCA-git-bot [BOT] post-merge updates |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 27 | 0265a13 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 12 | c5603b1 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 107 | 334ef67 2025-12-09 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 107 | 9ad98bb 2026-06-30 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 30fe7b7 2025-05-27 Alexandre Fayolle [IMP] connector_elasticsearch: timeout and retries |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | 87ca50e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | ceebbda 2023-11-28 mymage Translated using Weblate (Italian) |
@@ -127,5 +127,5 @@ Last build: **2026-06-28 15:10 UTC** (elapsed 84s)
 | [website](https://github.com/OCA/website) | 24 | 01abd1a 2026-05-19 mymage Translated using Weblate (Italian) |
 | [website-cms](https://github.com/OCA/website-cms) | 6 | 649c588 2025-10-30 mymage Translated using Weblate (Italian) |
 | [website-themes](https://github.com/OCA/website-themes) | 1 | 4b4b060 2023-09-03 OCA-git-bot [UPD] README.rst |
-| [wms](https://github.com/OCA/wms) | 36 | e5c9da3 2025-09-03 mymage Translated using Weblate (Italian) |
+| [wms](https://github.com/OCA/wms) | 36 | 4d97331 2026-06-30 mymage Translated using Weblate (Italian) |
 
