@@ -15,6 +15,12 @@ class AccountMove(models.Model):
         self._check_petty_cash_amount()
         return super().action_post()
 
+    def _prepare_product_base_line_for_taxes_computation(self, product_line):
+        results = super()._prepare_product_base_line_for_taxes_computation(product_line)
+        if product_line.expense_id.payment_mode == "petty_cash":
+            results["special_mode"] = "total_included"
+        return results
+
     @api.constrains("invoice_line_ids", "line_ids")
     def _check_petty_cash_amount(self):
         petty_cash_env = self.env["petty.cash"].sudo()

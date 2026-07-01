@@ -2,12 +2,15 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Sale Purchase Force Vendor",
-    "version": "18.0.1.0.2",
+    "version": "18.0.2.0.0",
     "category": "Purchase Management",
     "website": "https://github.com/OCA/purchase-workflow",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
-    "depends": ["sale_purchase_stock"],
+    "depends": [
+        "sale_order_line_chained_move",
+        "sale_purchase_stock",
+    ],
     "installable": True,
     "data": [
         "views/res_config_settings_view.xml",

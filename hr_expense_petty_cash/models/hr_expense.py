@@ -97,30 +97,38 @@ class HrExpense(models.Model):
             return [values]
         return super(HrExpense, todo)._get_default_expense_sheet_values()
 
-    def _get_petty_cash_move_line(
-        self,
-        move_line_name,
-        partner_id,
-        total_amount,
-        total_amount_currency,
-        tax_ids,
-        account=False,
-    ):
-        account_date = (
-            self.date
-            or self.sheet_id.accounting_date
-            or fields.Date.context_today(self)
-        )
-        ml_dict = {
+    def _get_petty_cash_move_line_source_vals(self, move_line_name, partner):
+        self.ensure_one()
+        return {
             "name": move_line_name,
-            "debit": total_amount if total_amount > 0.0 else 0.0,
-            "credit": -total_amount if total_amount < 0.0 else 0.0,
-            "account_id": account and account.id or self.account_id.id,
-            "date_maturity": account_date,
-            "amount_currency": total_amount_currency,
             "currency_id": self.currency_id.id,
             "expense_id": self.id,
-            "partner_id": partner_id,
-            "tax_ids": [Command.set(tax_ids.ids)],
+            "partner_id": partner.id,
+            "account_id": self._get_base_account().id,
+            "analytic_distribution": self.analytic_distribution,
+            "tax_ids": [Command.set(self.tax_ids.ids)],
+            "amount_currency": self.total_amount_currency,
+            "debit": self.total_amount if self.total_amount > 0.0 else 0.0,
+            "credit": 0.0,
         }
-        return ml_dict
+
+    def _get_petty_cash_move_line_dest_vals(self, move_line_name, partner):
+        self.ensure_one()
+        return {
+            "name": move_line_name,
+            "currency_id": self.currency_id.id,
+            "expense_id": self.id,
+            "partner_id": self.petty_cash_id.partner_id.id,
+            "account_id": self.petty_cash_id.account_id.id,
+            "amount_currency": -self.total_amount_currency,
+            "debit": 0.0,
+            "credit": self.total_amount if self.total_amount > 0.0 else 0.0,
+        }
+
+    def _get_petty_cash_move_line_vals(self, move_line_name, partner):
+        self.ensure_one()
+        move_line_vals = [
+            self._get_petty_cash_move_line_source_vals(move_line_name, partner),
+            self._get_petty_cash_move_line_dest_vals(move_line_name, partner),
+        ]
+        return move_line_vals

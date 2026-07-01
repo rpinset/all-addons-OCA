@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-05 20:43+0000\n"
+"PO-Revision-Date: 2026-06-30 10:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: res_partner_linkedin_link
 #: model_terms:ir.ui.view,arch_db:res_partner_linkedin_link.view_res_partner_kanban
@@ -22,16 +22,18 @@ msgid ""
 "<i class=\"fa fa-linkedin me-1\" role=\"img\" aria-label=\"LinkedIn "
 "Account\" title=\"LinkedIn Account\"/>"
 msgstr ""
+"<i class=\"fa fa-linkedin me-1\" role=\"img\" aria-label=\"Account "
+"LinkedIn\" title=\"Account LinkedIn\"/>"
 
 #. module: res_partner_linkedin_link
 #: model:ir.model,name:res_partner_linkedin_link.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: res_partner_linkedin_link
 #: model_terms:ir.ui.view,arch_db:res_partner_linkedin_link.contact
 msgid "LinkedIn"
-msgstr ""
+msgstr "Linkedin"
 
 #. module: res_partner_linkedin_link
 #: model:ir.model.fields,field_description:res_partner_linkedin_link.field_res_partner__social_linkedin
@@ -43,7 +45,7 @@ msgstr "Account Mastodon"
 #. module: res_partner_linkedin_link
 #: model_terms:ir.ui.view,arch_db:res_partner_linkedin_link.view_res_partner_form
 msgid "e.g. https://www.linkedin.com/company/oca-odoo-community-association/"
-msgstr ""
+msgstr "es. https://www.linkedin.com/company/oca-odoo-community-association/"
 
 #~ msgid "Companies"
 #~ msgstr "Aziende"

@@ -118,28 +118,10 @@ class HrExpenseSheet(models.Model):
             move_line_name = (
                 expense.employee_id.name + ": " + expense.name.split("\n")[0][:64]
             )
-            partner_id = expense.employee_id.sudo().work_contact_id.id
-            # source move line
-            move_line_src = expense._get_petty_cash_move_line(
-                move_line_name,
-                partner_id,
-                expense.total_amount,
-                expense.total_amount_currency,
-                expense.tax_ids,
+            partner = expense.employee_id.sudo().work_contact_id
+            move_line_vals.extend(
+                expense._get_petty_cash_move_line_vals(move_line_name, partner)
             )
-            move_line_values = [move_line_src]
-
-            # destination move line
-            move_line_dst = expense._get_petty_cash_move_line(
-                move_line_name,
-                expense.petty_cash_id.partner_id.id,
-                -expense.total_amount,
-                -expense.total_amount_currency,
-                expense.tax_ids,
-                expense.petty_cash_id.account_id,
-            )
-            move_line_values.append(move_line_dst)
-            move_line_vals.extend(move_line_values)
         return move_line_vals
 
     def _prepare_bills_vals(self):

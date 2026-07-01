@@ -6,6 +6,8 @@ from unittest.mock import patch
 
 from odoo.tools.config import config as odoo_config
 
+from odoo.addons.server_environment.uninstall import restore_env_managed_columns
+
 from .. import server_env
 from . import common
 
@@ -146,3 +148,14 @@ class TestEnv(common.ServerEnvironmentCase):
         with self.set_config_dir("testfiles"):
             server_env._load_config()
             self.assertEqual(odoo_config["odoo_test_option"], "fake odoo config")
+
+        def test_restore_env_managed_columns_unknown_field(self):
+            """Helper gracefully skips a field that doesn't exist on the model."""
+            # Must not raise even when the field name doesn't exist.
+            restore_env_managed_columns(
+                self.env, "res.partner", ["__nonexistent_field_xyz__"]
+            )
+
+        def test_restore_env_managed_columns_no_fields(self):
+            """Helper is a no-op when given an empty field list."""
+            restore_env_managed_columns(self.env, "res.partner", [])

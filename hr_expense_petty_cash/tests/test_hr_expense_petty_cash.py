@@ -59,6 +59,28 @@ class TestHrExpensePettyCash(BaseCommon):
         cls.petty_cash_holder = cls._create_petty_cash_holder(cls, cls.partner_1)
         cls.petty_cash_holder_2 = cls._create_petty_cash_holder(cls, cls.partner_3)
 
+        # Analytic setup, for testing analytic distribution on petty cash
+        cls.analytic_plan = cls.env["account.analytic.plan"].create(
+            {"name": "Petty Cash Plan - Test"}
+        )
+        cls.analytic_account = cls.env["account.analytic.account"].create(
+            {
+                "name": "Petty Cash Analytic - Test",
+                "plan_id": cls.analytic_plan.id,
+            }
+        )
+        # Tax setup (price-included) to test petty cash tax split.
+        cls.tax_included = cls.env["account.tax"].create(
+            {
+                "name": "Petty Cash VAT 7% (included) - Test",
+                "amount_type": "percent",
+                "amount": 7.0,
+                "price_include": True,
+                "type_tax_use": "purchase",
+                "company_id": cls.env.company.id,
+            }
+        )
+
     def _create_petty_cash_holder(self, partner):
         petty_cash_holder = self.petty_cash_obj.create(
             {
@@ -85,6 +107,8 @@ class TestHrExpensePettyCash(BaseCommon):
         employee,
         payment_mode="own_account",
         petty_cash_holder=False,
+        analytic_distribution=False,
+        tax_ids=False,
     ):
         with Form(self.exp_obj) as expense:
             expense.name = "Expense - Test"
@@ -94,7 +118,12 @@ class TestHrExpensePettyCash(BaseCommon):
         expense = expense.save()
 
         expense.total_amount = amount
-        expense.tax_ids = False  # no VAT
+        if tax_ids:
+            expense.tax_ids = tax_ids
+        else:
+            expense.tax_ids = False  # no VAT
+        if analytic_distribution:
+            expense.analytic_distribution = analytic_distribution
 
         if payment_mode == "petty_cash":
             expense.payment_mode = "petty_cash"
@@ -313,4 +342,66 @@ class TestHrExpensePettyCash(BaseCommon):
         self.assertEqual(
             set(invoice.invoice_line_ids.mapped("name")),
             {"Test line 1", "Test line 2"},
+        )
+
+    def test_05_petty_cash_with_analytic_and_tax(self):
+        """Petty cash entry must carry analytic on the expense side and split
+        the included tax into proper base + tax lines while the clearing side
+        keeps the total amount paid."""
+        # Fund the petty cash holder first.
+        self.petty_cash_holder.petty_cash_limit = 2000.0
+        invoice = self._create_invoice(self.partner_1.id)
+        invoice.is_petty_cash = True
+        invoice._onchange_is_petty_cash()
+        invoice.invoice_line_ids.price_unit = 2000.0
+        invoice.action_post()
+        self.petty_cash_holder._compute_petty_cash_balance()
+        self.assertEqual(self.petty_cash_holder.petty_cash_balance, 2000.0)
+
+        # Expense 1070 (tax-included) -> base 1000 + 7% VAT 70.
+        expense = self._create_expense(
+            1070.0,
+            self.employee_1,
+            "petty_cash",
+            self.petty_cash_holder,
+            analytic_distribution={str(self.analytic_account.id): 100},
+            tax_ids=self.tax_included,
+        )
+        expense.action_submit_expenses()
+        sheet = self._create_expense_sheet(expense)
+        sheet.action_submit_sheet()
+        sheet.action_approve_expense_sheets()
+        if sheet.state == "approve":
+            sheet.action_sheet_move_post()
+        self.assertEqual(sheet.state, "post")
+
+        move = sheet.account_move_ids
+        self.assertEqual(move.move_type, "entry")
+
+        # Expense base line carries the analytic distribution.
+        base_line = move.line_ids.filtered(
+            lambda line: not line.tax_line_id
+            and line.account_id != self.petty_cash_account_id
+        )
+        self.assertEqual(len(base_line), 1)
+        self.assertEqual(
+            base_line.analytic_distribution,
+            {str(self.analytic_account.id): 100},
+        )
+        # Clearing side carries no analytic distribution.
+        petty_cash_line = move.line_ids.filtered(
+            lambda line: line.account_id == self.petty_cash_account_id
+        )
+        self.assertEqual(len(petty_cash_line), 1)
+        self.assertFalse(petty_cash_line.analytic_distribution)
+        # Clearing side reflects the full tax-included amount paid.
+        self.assertEqual(sum(petty_cash_line.mapped("credit")), 1070.0)
+        # The move must be balanced.
+        self.assertEqual(sum(move.line_ids.mapped("debit")), 1070.0)
+        self.assertEqual(sum(move.line_ids.mapped("credit")), 1070.0)
+        # A tax line must have been generated.
+        tax_lines = move.line_ids.filtered(lambda line: line.tax_line_id)
+        self.assertTrue(
+            tax_lines,
+            "Petty cash entry should generate a tax line.",
         )
