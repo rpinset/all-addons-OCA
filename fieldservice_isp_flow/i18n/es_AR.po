@@ -96,11 +96,6 @@ msgstr "Pedido de Servicio de Campo"
 
 #. module: fieldservice_isp_flow
 #: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
-msgid "Orders"
-msgstr "Pedidos"
-
-#. module: fieldservice_isp_flow
-#: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
 msgid "Past Due Orders"
 msgstr "Pedidos Vencidos"
 
@@ -133,6 +128,9 @@ msgstr "Inicio"
 #: model:fsm.stage,name:fieldservice_isp_flow.fsm_stage_started
 msgid "Started"
 msgstr ""
+
+#~ msgid "Orders"
+#~ msgstr "Pedidos"
 
 #~ msgid "ID"
 #~ msgstr "ID"

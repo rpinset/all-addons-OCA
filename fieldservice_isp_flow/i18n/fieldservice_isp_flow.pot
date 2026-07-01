@@ -90,11 +90,6 @@ msgstr ""
 
 #. module: fieldservice_isp_flow
 #: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
-msgid "Orders"
-msgstr ""
-
-#. module: fieldservice_isp_flow
-#: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
 msgid "Past Due Orders"
 msgstr ""
 

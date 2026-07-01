@@ -1,7 +1,7 @@
 # Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, models
+from odoo import api, fields, models
 
 
 class APILog(models.Model):
@@ -15,6 +15,8 @@ class APILog(models.Model):
         "mail.thread",
     ]
     _mail_post_access = "read"  # Access required to open an activity
+
+    message_main_attachment_id = fields.Many2one(index="btree_not_null")
 
     @api.model
     def log_request(self, request, override_log_values=None):

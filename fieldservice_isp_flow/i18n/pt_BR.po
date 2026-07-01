@@ -98,11 +98,6 @@ msgstr "Ordem de Serviço de Campo"
 
 #. module: fieldservice_isp_flow
 #: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
-msgid "Orders"
-msgstr "Ordens"
-
-#. module: fieldservice_isp_flow
-#: model_terms:ir.ui.view,arch_db:fieldservice_isp_flow.fsm_order_search_view
 msgid "Past Due Orders"
 msgstr "Ordens Vencidas"
 
@@ -135,3 +130,6 @@ msgstr "Iniciar"
 #: model:fsm.stage,name:fieldservice_isp_flow.fsm_stage_started
 msgid "Started"
 msgstr "Iniciado"
+
+#~ msgid "Orders"
+#~ msgstr "Ordens"
