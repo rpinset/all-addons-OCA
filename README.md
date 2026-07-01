@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
+Last build: **2026-07-01 04:54 UTC** (elapsed 72s)
 
 - Repos integrated: **140**
 - Canonical modules: **2909**
@@ -88,7 +88,7 @@ Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 9 | 4e58c97 2026-01-12 OCA-git-bot [BOT] post-merge updates |
 | [maintenance](https://github.com/OCA/maintenance) | 31 | 3dec9a2 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 31 | 9f750fc 2026-05-02 OCA-git-bot [BOT] post-merge updates |
-| [manufacture](https://github.com/OCA/manufacture) | 75 | 59cbb58 2026-05-13 mymage Translated using Weblate (Italian) |
+| [manufacture](https://github.com/OCA/manufacture) | 75 | 5f4fa73 2026-06-30 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | 91e83d0 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 7 | a7a0b8b 2025-06-17 mymage Translated using Weblate (Italian) |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 063d2be 2025-10-27 OCA-git-bot [BOT] post-merge updates |
@@ -115,10 +115,10 @@ Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 24 | 9aa96a9 2025-11-25 mymage Translated using Weblate (Italian) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 16 | 4a98e88 2026-02-12 OCA-git-bot [BOT] post-merge updates |
 | [rma](https://github.com/OCA/rma) | 6 | b4276c1 2026-05-13 mymage Translated using Weblate (Italian) |
-| [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | 89dec1f 2025-10-13 mymage Added translation using Weblate (Italian) |
+| [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 149 | 993a3f8 2026-06-04 Guillaume Masson Translated using Weblate (French) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 149 | f285924 2026-06-30 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
@@ -133,7 +133,7 @@ Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | 56b191f 2026-06-24 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | ea13ae4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 73f0f0a 2026-06-17 Francesco Foresti Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | f31c87b 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | cfd0d59 2026-06-07 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [storage](https://github.com/OCA/storage) | 19 | c0e1f39 2025-10-20 OCA-git-bot [BOT] post-merge updates |
 | [survey](https://github.com/OCA/survey) | 8 | 53c9f49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -150,5 +150,5 @@ Last build: **2026-06-28 15:12 UTC** (elapsed 167s)
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
 | [website-cms](https://github.com/OCA/website-cms) | 3 | cb82f27 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 76 | 1802d8e 2026-03-12 OCA-git-bot [BOT] post-merge updates |
+| [wms](https://github.com/OCA/wms) | 76 | ca217a4 2026-06-30 mymage Translated using Weblate (Italian) |
 
