@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-06-28 15:18 UTC
+Generated 2026-07-01 05:02 UTC
 
-Total skipped: **152**
+Total skipped: **150**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **127**
+Count: **125**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -81,7 +81,6 @@ Count: **127**
 | [interface-git](https://github.com/OCA/interface-git) | [19.0](https://github.com/OCA/interface-git/tree/19.0) | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | [19.0](https://github.com/OCA/iot/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | [19.0](https://github.com/OCA/l10n-argentina/tree/19.0) | No directory with __manifest__.py at repo root |
-| [l10n-austria](https://github.com/OCA/l10n-austria) | [19.0](https://github.com/OCA/l10n-austria/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-belarus](https://github.com/OCA/l10n-belarus) | [19.0](https://github.com/OCA/l10n-belarus/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [19.0](https://github.com/OCA/l10n-bulgaria/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | [19.0](https://github.com/OCA/l10n-cambodia/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -143,7 +142,6 @@ Count: **127**
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [19.0](https://github.com/OCA/stock-logistics-reservation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [19.0](https://github.com/OCA/stock-logistics-shopfloor/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [19.0](https://github.com/OCA/stock-logistics-tracking/tree/19.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | [19.0](https://github.com/OCA/stock-logistics-transport/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [19.0](https://github.com/OCA/stock-weighing/tree/19.0) | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | [19.0](https://github.com/OCA/survey/tree/19.0) | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [19.0](https://github.com/OCA/version-control-platform/tree/19.0) | No directory with __manifest__.py at repo root |

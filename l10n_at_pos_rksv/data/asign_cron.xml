@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Weboffice IT-Service und Marketing GmbH & Co KG <https://weboffice.at>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0). -->
+<odoo>
+    <record id="pos_config_ir_cron" model="ir.cron">
+        <field name="name">POS a.sign: Sign Missed</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="model_id" ref="model_pos_config" />
+        <field name="state">code</field>
+        <field name="code">model._cron_asign_sign_missed()</field>
+        <field name="priority" eval="5" />
+    </record>
+</odoo>

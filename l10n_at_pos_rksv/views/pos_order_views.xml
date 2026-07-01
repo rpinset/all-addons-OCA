@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Weboffice IT-Service und Marketing GmbH & Co KG <https://weboffice.at>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0). -->
+<odoo>
+    <record id="view_pos_pos_form" model="ir.ui.view">
+        <field name="name">pos.order.inherit.form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page
+                    string="RKSV Austria"
+                    name="l10n_at_pos"
+                    invisible="not asign_type"
+                >
+                    <group>
+                        <group>
+                            <field name="asign_type" />
+                            <field name="asign_state" />
+                            <field name="asign_serial" />
+                            <field name="asign_seq" />
+                            <field name="asign_counter" />
+                        </group>
+                        <group>
+                            <field name="asign_dep" />
+                            <field name="asign_qrcode" widget="text" />
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="view_pos_order_tree" model="ir.ui.view">
+        <field name="name">pos.order.inherit.list</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_tree" />
+        <field name="arch" type="xml">
+            <field name="amount_total" position="after">
+                <field name="asign_type" optional="hide" />
+                <field name="asign_state" optional="hide" />
+                <field name="asign_seq" optional="hide" />
+                <field name="asign_counter" optional="hide" />
+            </field>
+        </field>
+    </record>
+</odoo>

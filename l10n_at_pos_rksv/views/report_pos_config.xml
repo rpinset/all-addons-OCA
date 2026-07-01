@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Weboffice IT-Service und Marketing GmbH & Co KG <https://weboffice.at>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0). -->
+<odoo>
+    <template id="report_pos_config">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <h3>POS Configuration</h3>
+                        <table class="table table-sm">
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <span t-field="o.name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fiscal ID</td>
+                                <td>
+                                    <span t-field="o.asign_fid" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificate</td>
+                                <td>
+                                    <span t-field="o.asign_serial_hex" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>POS ID</td>
+                                <td>
+                                    <span t-field="o.asign_pid" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AES-256 Key</td>
+                                <td>
+                                    <span t-field="o.asign_key" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AES-256 Key Checksum</td>
+                                <td>
+                                    <span t-field="o.asign_crc" />
+                                </td>
+                            </tr>
+                        </table>
+                        <t t-foreach="o.asign_start_order_id" t-as="receipt">
+                            <h4>Start Receipt</h4>
+                            <div>
+                                <img
+                                    t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', receipt.asign_qrcode_quoted, 400, 400)"
+                                    alt="QR Code"
+                                    style="height:100px"
+                                />
+                            </div>
+                            <div>
+                                <span t-field="receipt.asign_qrcode" />
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

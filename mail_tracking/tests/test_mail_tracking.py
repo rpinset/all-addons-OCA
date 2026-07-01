@@ -41,6 +41,12 @@ class TestMailTracking(TransactionCase, MockSmtplibCase):
 
     def setUp(self, *args, **kwargs):
         super().setUp(*args, **kwargs)
+        # Keep a dedicated company alias domain. Otherwise, temporary alias domains
+        # created by tests may become referenced by aliases created by other modules.
+        self.alias_domain_dummy = self.env["mail.alias.domain"].create(
+            {"name": "mailtracking-dummy-domain.test"}
+        )
+        self.env.company.alias_domain_id = self.alias_domain_dummy
         self.sender = self.env["res.partner"].create(
             {"name": "Test sender", "email": "sender@example.com"}
         )
@@ -379,6 +385,9 @@ class TestMailTracking(TransactionCase, MockSmtplibCase):
             "cc": "copy@example.com",
             "to": "recipient@example.com",
             "message_id": "test-message-id",
+            # Optional mail headers used by mail.thread overrides (e.g. mass_mailing).
+            "references": "",
+            "in_reply_to": "",
         }
         with patch.object(
             CoreMailThread,
@@ -396,7 +405,12 @@ class TestMailTracking(TransactionCase, MockSmtplibCase):
             mock_super.call_args.args[2]["email_to"], "recipient@example.com"
         )
 
-        message_dict = {"message_id": "test-message-id"}
+        message_dict = {
+            "message_id": "test-message-id",
+            # Optional mail headers used by mail.thread overrides (e.g. mass_mailing).
+            "references": "",
+            "in_reply_to": "",
+        }
         with patch.object(
             CoreMailThread,
             "_message_route_process",

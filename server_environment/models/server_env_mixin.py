@@ -316,10 +316,14 @@ class ServerEnvMixin(models.AbstractModel):
                 # files have a key set for this field
                 elem.set("readonly", f"not {is_editable_field}")
             if not view_arch.findall(field_xpath % is_editable_field):
+                if view_arch.tag == "list":
+                    invisble_kwargs = {"column_invisible": "1"}
+                else:
+                    invisble_kwargs = {"invisible": "1"}
                 # add the _is_editable fields in the view for the 'attrs'
                 # domain
                 view_arch.append(
-                    etree.Element("field", name=is_editable_field, invisible="1")
+                    etree.Element("field", name=is_editable_field, **invisble_kwargs)
                 )
         return view_arch
 

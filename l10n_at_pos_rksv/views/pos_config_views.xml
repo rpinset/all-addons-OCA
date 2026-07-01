@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Weboffice IT-Service und Marketing GmbH & Co KG <https://weboffice.at>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0). -->
+<odoo>
+    <record id="pos_config_view_form" model="ir.ui.view">
+        <field name="name">pos.config.inherit.form</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form" />
+        <field name="arch" type="xml">
+            <sheet position="before">
+                <header>
+                    <button
+                        name="action_asign_zero_receipt"
+                        string="Create Zero-Receipt"
+                        type="object"
+                        invisible="not asign_enabled"
+                    />
+                </header>
+            </sheet>
+        </field>
+    </record>
+</odoo>

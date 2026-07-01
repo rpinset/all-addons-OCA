@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Weboffice IT-Service und Marketing GmbH & Co KG <https://weboffice.at>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0). -->
+<odoo>
+    <template id="report_certificate">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <h3>Certificate</h3>
+                        <table class="table table-sm">
+                            <tr>
+                                <td>Provider</td>
+                                <td>AT1 A-Trust</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>
+                                    <span t-field="o.cert_type" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Serial</td>
+                                <td>
+                                    <span t-field="o.serial_hex" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
