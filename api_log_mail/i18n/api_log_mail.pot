@@ -14,6 +14,38 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: api_log_mail
+#: model:mail.template,body_html:api_log_mail.email_template_fastapi_error
+msgid ""
+"<div>\n"
+"                <t t-set=\"endpoint_name\" t-value=\"object.collection_ref.name\"></t>\n"
+"                <t t-set=\"request_url\" t-value=\"object.request_url\"></t>\n"
+"                <t t-set=\"request_method\" t-value=\"object.request_method\"></t>\n"
+"                <t t-set=\"headers\" t-value=\"object.request_headers\"></t>\n"
+"                <t t-set=\"exception\" t-value=\"object.response_body\"></t>\n"
+"                <t t-set=\"exception_stack\" t-value=\"object.stack_trace\"></t>\n"
+"\n"
+"                <p>Error in FastAPI call</p>\n"
+"                <p>FastAPI endpoint: <t t-out=\"endpoint_name\"></t></p>\n"
+"                <p>Request: [<t t-out=\"request_method\"></t>] <t t-out=\"request_url\"></t></p>\n"
+"                <p>\n"
+"                    Headers:\n"
+"                    <ul>\n"
+"                        <li t-foreach=\"headers.items()\" t-as=\"hd\">\n"
+"                            <t t-out=\"hd[0]\"></t>: <t t-out=\"hd[1]\"></t>\n"
+"                        </li>\n"
+"                    </ul>\n"
+"                </p>\n"
+"                <p>\n"
+"                    Exception: <t t-out=\"exception\"></t>\n"
+"                </p>\n"
+"                <p>\n"
+"                    Stack trace: <pre t-out=\"exception_stack\"></pre>\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+msgstr ""
+
+#. module: api_log_mail
 #: model:ir.model.fields,field_description:api_log_mail.field_api_log__message_needaction
 msgid "Action Needed"
 msgstr ""
@@ -70,6 +102,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:api_log_mail.field_api_log_collection_mixin__api_log_mail_exception_template_id
 #: model:ir.model.fields,field_description:api_log_mail.field_fastapi_endpoint__api_log_mail_exception_template_id
 msgid "Error E-mail Template"
+msgstr ""
+
+#. module: api_log_mail
+#: model:mail.template,name:api_log_mail.email_template_fastapi_error
+msgid "FastAPI: Error"
 msgstr ""
 
 #. module: api_log_mail
@@ -175,6 +212,11 @@ msgstr ""
 #. module: api_log_mail
 #: model:ir.model.fields,help:api_log_mail.field_api_log__message_has_error_counter
 msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: api_log_mail
+#: model:mail.template,subject:api_log_mail.email_template_fastapi_error
+msgid "Odoo FastAPI Error"
 msgstr ""
 
 #. module: api_log_mail

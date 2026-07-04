@@ -58,6 +58,7 @@ msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__ir_attachment_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__payrol_rel
 msgid "Attachment"
 msgstr ""
 

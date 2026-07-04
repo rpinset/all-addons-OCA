@@ -32,6 +32,11 @@ msgid "Journal Entries Count"
 msgstr "Conteggio registrazioni contabili"
 
 #. module: account_move_line_purchase_info
+#: model:ir.model,name:account_move_line_purchase_info.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_account_move_line
 msgid "Journal Item"
 msgstr "Movimento contabile"

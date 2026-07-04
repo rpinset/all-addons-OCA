@@ -270,3 +270,32 @@ class TestAccountMoveLineSaleInfo(common.TransactionCase):
                     "sale Order line has not been copied "
                     "from the invoice to the credit note.",
                 )
+
+    def test_04_multi_sale_same_product_qty(self):
+        """A single SO with two lines for the same product and quantity
+        must have each SO line linked to a distinct COGS pair, with both
+        halves of every pair (interim + expense) sharing the same SOL.
+        """
+        self.company.anglo_saxon_accounting = True
+        sale = self._create_sale([(self.product, 2), (self.product, 2)])
+        so_line1, so_line2 = sale.order_line
+        sale.action_confirm()
+        picking = sale.picking_ids[0]
+        picking.move_ids.write({"quantity_done": 2.0})
+        picking.button_validate()
+        sale._create_invoices()
+        invoice = sale.invoice_ids[0]
+        invoice._post()
+        cogs_lines = invoice.line_ids.filtered(lambda l: l.display_type == "cogs")
+        self.assertEqual(len(cogs_lines), 4)
+        self.assertEqual(
+            set(cogs_lines.mapped("sale_line_id").ids),
+            {so_line1.id, so_line2.id},
+        )
+        for sol in (so_line1, so_line2):
+            self.assertEqual(
+                len(cogs_lines.filtered(lambda l: l.sale_line_id == sol)),
+                2,
+                "Expected exactly one COGS pair (interim + expense) "
+                "linked to %s." % sol.name,
+            )

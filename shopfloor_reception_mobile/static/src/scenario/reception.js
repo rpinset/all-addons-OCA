@@ -21,14 +21,6 @@ const Reception = {
                 v-on:found="on_scan"
                 :input_placeholder="search_input_placeholder"
             />
-            <template v-if="state_is('select_move')">
-                <item-detail-card
-                    :record="state.data.picking"
-                    :options="operation_options()"
-                    :card_color="utils.colors.color_for('screen_step_done')"
-                    :key="make_state_component_key(['reception-picking-item-detail', state.data.picking.id])"
-                />
-            </template>
             <template v-if="state_is('select_document')">
                 <manual-select
                     class="with-progress-bar"
@@ -66,6 +58,12 @@ const Reception = {
                 </div>
             </template>
             <template v-if="state_is('select_move')">
+                <item-detail-card
+                    :record="state.data.picking"
+                    :options="operation_options()"
+                    :card_color="utils.colors.color_for('screen_step_done')"
+                    :key="make_state_component_key(['reception-picking-item-detail', state.data.picking.id])"
+                />
                 <manual-select
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :records="ordered_moves"
@@ -115,7 +113,7 @@ const Reception = {
                 />
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_lot()"
+                    :options="line_product_detail_options()"
                     :card_color="is_set_lot_possible() ? utils.colors.color_for('screen_step_done') : utils.colors.color_for('screen_step_todo')"
                     :key="make_state_component_key(['reception-product-item-detail-set-lot', state.data.picking.id])"
                 />
@@ -135,7 +133,7 @@ const Reception = {
             <template v-if="state_is('set_quantity')">
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_quantity()"
+                    :options="line_product_detail_options()"
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :key="make_state_component_key(['reception-product-item-detail-set-quantity', state.data.picking.id])"
                 />
@@ -177,7 +175,7 @@ const Reception = {
             <template v-if="state_is('set_destination')">
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_destination()"
+                    :options="line_product_detail_options()"
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :key="make_state_component_key(['reception-product-item-detail-set-destination-pack', state.data.picking.id])"
                 />
@@ -281,7 +279,7 @@ const Reception = {
             return [
                 {path: "origin", label: "Source Document"},
                 {path: "partner.name", label: "Partner"},
-                {path: "carrier"},
+                {path: "carrier.name", label: "Carrier"},
                 {
                     path: "scheduled_date",
                     renderer: (rec, field) => {
@@ -307,8 +305,8 @@ const Reception = {
         manual_select_options_for_select_document: function (today_only = false) {
             return {
                 group_title_default: today_only
-                    ? "Pickings to process today"
-                    : "Pickings to process",
+                    ? "Receptions to process today"
+                    : "Receptions to process",
                 group_color: this.utils.colors.color_for("screen_step_todo"),
                 list_item_extra_component: "picking-list-item-progress-bar",
                 showActions: false,
@@ -339,7 +337,7 @@ const Reception = {
             return klass;
         },
 
-        picking_detail_options_for_set_lot: function () {
+        line_product_detail_options: function () {
             return {
                 key_title: "product.display_name",
                 title_action_field: {
@@ -378,30 +376,6 @@ const Reception = {
                         },
                     },
                 ],
-            };
-        },
-        picking_detail_options_for_set_quantity: function () {
-            return {
-                key_title: "product.display_name",
-                fields: [
-                    {
-                        path: "product.barcode",
-                        label: "Barcode",
-                    },
-                    {
-                        path: "product.supplier_code",
-                        label: "Vendor code",
-                    },
-                    {path: "lot.name", label: "Lot"},
-                    {
-                        path: "lot.expiration_date",
-                        label: "Expiry date",
-                        renderer: (rec, field) => {
-                            return this.utils.display.render_field_date(rec, field);
-                        },
-                    },
-                ],
-                title_action_field: {action_val_path: "product.barcode"},
             };
         },
         picking_detail_options_for_select_move: function () {
@@ -446,38 +420,6 @@ const Reception = {
                         },
                     ],
                 },
-            };
-        },
-        picking_detail_options_for_set_destination: function () {
-            return {
-                key_title: "product.display_name",
-                fields: [
-                    {
-                        path: "product.supplier_code",
-                        label: "Vendor code",
-                    },
-                    {
-                        path: "product.barcode",
-                        label: "Barcode",
-                        action_val_path: "barcode",
-                    },
-                    {
-                        path: "lot.name",
-                        label: "Lot",
-                    },
-                    {
-                        path: "lot.expiration_date",
-                        label: "Expiry date",
-                        renderer: (rec, field) => {
-                            return this.utils.display.render_field_date(rec, field);
-                        },
-                    },
-                    {
-                        path: "package_dest.name",
-                        label: "Pack",
-                        klass: "loud",
-                    },
-                ],
             };
         },
         select_dest_package_display_name_values: function (rec) {

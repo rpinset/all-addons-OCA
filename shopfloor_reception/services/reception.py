@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
 
 
-from datetime import datetime, time, timezone
+from datetime import date, datetime, time, timezone
 
 import pytz
 from decorator import contextmanager
@@ -80,19 +80,6 @@ class Reception(Component):
             move_line.product_id.tracking in ("lot", "serial") and not move_line.lot_id
         )
 
-    def _move_line_by_product(self, product):
-        return self.env["stock.move.line"].search(
-            self._domain_move_line_by_product(product)
-        )
-
-    def _move_line_by_packaging(self, packaging):
-        return self.env["stock.move.line"].search(
-            self._domain_move_line_by_packaging(packaging)
-        )
-
-    def _move_line_by_lot(self, lot):
-        return self.env["stock.move.line"].search(self._domain_move_line_by_lot(lot))
-
     def _scheduled_date_today_domain(self):
         domain = []
         today_start, today_end = self._get_today_start_end_datetime_utc()
@@ -100,12 +87,8 @@ class Reception(Component):
         domain.append(("scheduled_date", "<=", today_end))
         return domain
 
-    def _get_today_start_end_datetime_utc(self):
-        """
-        Returns the start and end of the current day for the warehouse/company
-        timezone, converted to UTC naive datetimes.
-        """
-        # TODO: Put warehouse tz retrieval in shopfloor module?
+    # TODO: Put warehouse tz retrieval in shopfloor module?
+    def _get_current_timezone(self) -> str:
         company = self.env.company
         warehouse = self.picking_types.warehouse_id
 
@@ -114,8 +97,31 @@ class Reception(Component):
             if (len(warehouse) == 1 and warehouse.partner_id.tz)
             else company.partner_id.tz or "UTC"
         )
-        tz = pytz.timezone(tz_name)
+        return pytz.timezone(tz_name)
 
+    def _locale_date_to_datetime_utc(self, _date: date) -> datetime:
+        """
+        Convert an expiration date (interpreted in local time) to a UTC datetime at midnight.
+
+        Context:
+        In GS1 logistics standards, an expiration date is often represented simply
+        as a date without a time or timezone context. For inventory, tracking, or
+        reservation evaluation, this function assumes that the expiration takes
+        effect at midnight (00:00:00) **in the user's or system's local timezone**,
+        and shifts that timestamp to UTC for consistent database comparison.
+        """
+        tz = self._get_current_timezone()
+        _datetime = datetime.combine(_date, datetime.min.time())
+        localized_datetime = tz.localize(_datetime)
+        datetime_utc = localized_datetime.astimezone(UTC)
+        return datetime_utc
+
+    def _get_today_start_end_datetime_utc(self):
+        """
+        Returns the start and end of the current day for the warehouse/company
+        timezone, converted to UTC naive datetimes.
+        """
+        tz = self._get_current_timezone()
         now_local = pytz.utc.localize(datetime.now()).astimezone(tz)
 
         local_start = datetime.combine(
@@ -135,32 +141,6 @@ class Reception(Component):
         return self.work.menu.filter_today_scheduled_pickings
 
     # DOMAIN METHODS
-
-    def _domain_move_line_by_packaging(self, packaging):
-        return [
-            ("move_id.picking_id.picking_type_id", "in", self.picking_types.ids),
-            ("move_id.picking_id.state", "=", "assigned"),
-            ("move_id.picking_id.user_id", "in", [False, self.env.uid]),
-            ("package_id.product_packaging_id", "=", packaging.id),
-        ]
-
-    def _domain_move_line_by_product(self, product):
-        return [
-            ("move_id.picking_id.picking_type_id", "in", self.picking_types.ids),
-            ("move_id.picking_id.state", "=", "assigned"),
-            ("move_id.picking_id.user_id", "in", [False, self.env.uid]),
-            ("product_id", "=", product.id),
-        ]
-
-    def _domain_move_line_by_lot(self, lot):
-        return [
-            ("move_id.picking_id.picking_type_id", "in", self.picking_types.ids),
-            ("move_id.picking_id.state", "=", "assigned"),
-            ("move_id.picking_id.user_id", "=", False),
-            "|",
-            ("lot_id.name", "=", lot),
-            ("lot_name", "=", lot),
-        ]
 
     def _domain_stock_picking(self, today_only=False):
         domain = [
@@ -215,8 +195,8 @@ class Reception(Component):
             - set_lot: a single picking has been found for this packaging
             - select_document: A single or no pickings has been found for this packaging
         """
-        move_lines = self._move_line_by_product(product).filtered(
-            lambda l: l.picking_id.picking_type_id.id in self.picking_types.ids
+        move_lines = self.search_move_line.search_move_lines(
+            products=product, picking_types=self.picking_types, match_user=True
         )
         pickings = move_lines.move_id.picking_id
         if pickings:
@@ -240,10 +220,11 @@ class Reception(Component):
             - set_lot: a single picking has been found for this packaging
             - select_document: A single or no pickings has been found for this packaging
         """
-        move_lines = self._move_line_by_packaging(packaging).filtered(
-            lambda l: l.picking_id.picking_type_id.id in self.picking_types.ids
+        move_lines = self.env["stock.move.line"].search(
+            self.search_move_line._search_move_lines_domain()
+            + [("package_id.product_packaging_id", "=", packaging.id)]
         )
-        pickings = move_lines.move_id.picking_id
+        pickings = move_lines.picking_id
         if pickings:
             return self._response_for_select_document(
                 pickings=pickings,
@@ -261,7 +242,9 @@ class Reception(Component):
             - set_lot: a single picking has been found for this packaging
             - select_document: A single or no pickings has been found for this packaging
         """
-        move_lines = self._move_line_by_lot(lot)
+        move_lines = self.search_move_line.search_move_lines(
+            lots=lot, picking_types=self.picking_types, match_user=True
+        )
         if not move_lines:
             return
         pickings = move_lines.move_id.picking_id
@@ -364,7 +347,13 @@ class Reception(Component):
         return "scheduled_date ASC, id ASC"
 
     def _scan_document__by_picking(self, pickings, barcode):
-        picking_filter_result = pickings
+        picking_filter_result = self.search_move_line.search_move_lines(
+            pickings=pickings,
+            picking_types=self.env[
+                "stock.picking.type"
+            ],  # disable filtering on picking types
+        ).picking_id
+
         reception_pickings = picking_filter_result.filtered(
             lambda p: p.picking_type_id.id in self.picking_types.ids
         )
@@ -887,8 +876,7 @@ class Reception(Component):
                     result.type == "expiration_date"
                     and line.product_id.use_expiration_date
                 ):
-                    date = result.value
-                    expiration_date = datetime(date.year, date.month, date.day)
+                    expiration_date = self._locale_date_to_datetime_utc(result.value)
 
             if found:
                 return self.set_lot_confirm_action(
@@ -898,9 +886,7 @@ class Reception(Component):
         # We could have found a lot, but with result type "unknow"
         # Put this afterwards to favor multi-attribute barcode parsing
         # logic first
-        if self.search_result.record and isinstance(
-            self.search_result.record, self.env["stock.lot"].__class__
-        ):
+        if self.search_result.record and self.search_result.record._name == "stock.lot":
             return self.set_lot_confirm_action(
                 picking.id, line.id, lot_name=self.search_result.record.name
             )
@@ -1223,11 +1209,7 @@ class Reception(Component):
             if result.type == "lot":
                 lot_name = result.value
             elif result.type == "expiration_date":
-                # We need to ensure we have a `datetime` object (and not a
-                # `date` one) for valid comparison with stock.lot.expiration_date
-                lot_expiration_date = datetime.combine(
-                    result.value, datetime.min.time()
-                )
+                lot_expiration_date = self._locale_date_to_datetime_utc(result.value)
             elif (
                 result.type == "product"
                 and result.raw != selected_line.product_id.barcode
@@ -1247,7 +1229,7 @@ class Reception(Component):
         if (
             lot_expiration_date
             and existing_lot
-            and existing_lot.expiration_date != lot_expiration_date
+            and existing_lot.expiration_date != lot_expiration_date.replace(tzinfo=None)
         ):
             message = self.msg_store.lot_already_exists_different_expiration_date(
                 existing_lot
@@ -1267,11 +1249,11 @@ class Reception(Component):
     def set_lot_confirm_action(
         self, picking_id, selected_line_id, lot_name, expiration_date: datetime = None
     ):
-        """Set lot and its expiration date
+        r"""Set lot and its expiration date (/!\ expected to be passed in UTC)
 
         Input:
             barcode: The barcode of a lot
-            expiration_date: The expiration_date
+            expiration_date: The expiration_date (in UTC)
 
         transitions:
           - set_lot: Error: expiration_date is required
@@ -1279,6 +1261,10 @@ class Reception(Component):
         """
         picking = self.env["stock.picking"].browse(picking_id)
         selected_line = self.env["stock.move.line"].browse(selected_line_id)
+
+        # The UI sends tz aware dates but for comparisons we need everything to be tz unaware
+        if expiration_date:
+            expiration_date = expiration_date.replace(tzinfo=None)
 
         message = self._check_picking_processible(picking)
         if message:
@@ -1346,13 +1332,16 @@ class Reception(Component):
         self.env.context = {**self.env.context} | {"lot": lot}
 
     def _set_lot_confirm_action__handle_existing_lot(
-        self, picking, line, lot, expiration_date
+        self, picking, line, lot, expiration_date: datetime
     ):
+        r"""
+        /!\ expiration_date is expected to be in UTC !
+        """
         if not expiration_date:
             return
         elif not lot.expiration_date:
-            lot.expiration_date = expiration_date.astimezone(UTC).replace(tzinfo=None)
-        elif lot.expiration_date.astimezone(UTC) != expiration_date.astimezone(UTC):
+            lot.expiration_date = expiration_date
+        elif lot.expiration_date != expiration_date.replace(tzinfo=None):
             # Prevent user from overwritting an existing expiration date on an existing lot
             return self._response_for_set_lot(
                 picking,
@@ -1475,6 +1464,7 @@ class Reception(Component):
         if selected_line.exists():
             if selected_line.reserved_uom_qty:
                 stock = self._actions_for("stock")
+                selected_line.lot_id = False
                 stock.unmark_move_line_as_picked(selected_line, split=False)
             else:
                 selected_line.unlink()

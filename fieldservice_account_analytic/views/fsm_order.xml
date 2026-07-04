@@ -4,17 +4,6 @@
         <field name="model">fsm.order</field>
         <field name="inherit_id" ref="fieldservice.fsm_order_form" />
         <field name="arch" type="xml">
-            <notebook position="inside">
-                <page name="accounting" string="Accounting">
-                    <group name="bill_to">
-                        <field
-                            name="bill_to"
-                            widget="radio"
-                            options="{'horizontal': true}"
-                        />
-                    </group>
-                </page>
-            </notebook>
             <field name="region_id" position="after">
                 <field name="customer_id" context="{'location_id': location_id}" />
             </field>
