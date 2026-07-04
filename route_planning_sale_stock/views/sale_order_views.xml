@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                <field
+                    name="route_area_id"
+                    readonly="state not in ['draft', 'sent']"
+                    options="{'no_create': True, 'no_open': True}"
+                    groups="route_planning.group_route_planning_user"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

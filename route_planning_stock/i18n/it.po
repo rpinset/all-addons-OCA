@@ -97,6 +97,11 @@ msgid "Route Checkpoint"
 msgstr ""
 
 #. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_stock_picking__route_checkpoint_ids
+msgid "Route Checkpoints"
+msgstr ""
+
+#. module: route_planning_stock
 #: model:ir.model,name:route_planning_stock.model_route_incident_type
 msgid "Route Incident Type"
 msgstr ""
@@ -120,17 +125,17 @@ msgstr ""
 #. odoo-python
 #: code:addons/route_planning_stock/models/stock_picking.py:0
 msgid ""
-"This picking cannot be cancelled because it is associated with a route: "
-"%(route)s. If you want to cancel it, first remove it from the route."
+"This picking cannot be cancelled because it is associated with a route: %"
+"(route)s. If you want to cancel it, first remove it from the route."
 msgstr ""
 
 #. module: route_planning_stock
 #. odoo-python
 #: code:addons/route_planning_stock/models/stock_picking.py:0
 msgid ""
-"This picking cannot be validated yet because it is associated with route: "
-"%(route)s. Which has not been planned yet. If you want to validate it, "
-"please plan the route first."
+"This picking cannot be validated yet because it is associated with route: %"
+"(route)s. Which has not been planned yet. If you want to validate it, please "
+"plan the route first."
 msgstr ""
 
 #. module: route_planning_stock

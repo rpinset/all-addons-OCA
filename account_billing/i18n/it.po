@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-16 20:47+0000\n"
+"PO-Revision-Date: 2026-07-01 11:18+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -532,7 +532,7 @@ msgstr "Selezionare fatture con lo stesso partner"
 #. module: account_billing
 #: model:ir.model.fields,field_description:account_billing.field_account_billing__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Valutazioni"
 
 #. module: account_billing
 #: model:ir.actions.server,name:account_billing.action_account_billing_from_list

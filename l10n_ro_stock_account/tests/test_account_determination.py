@@ -132,3 +132,139 @@ class TestStockAccountDetermination(TestStockCommon):
         picking_type_in = self.warehouse_1.in_type_id
         self.create_po(picking_type_in=picking_type_in)
         self.check_stock_valuation(self.val_p1_i, self.val_p2_i, self.account_371_1)
+
+    def test_account_determination_multiline_same_account(self):
+        """A posting can impact a single stock account through several lines
+        whose individual balances don't equal ``svl.value``, only their sum
+        does (e.g. a landed cost split between capitalizing on remaining
+        stock and expensing to 607 the part already sold, both legs hitting
+        the SAME stock account). ``_compute_account`` must match on the
+        account's aggregated balance, not bail out to the category's default
+        account just because no single line matches on its own.
+        """
+        self.create_po()
+        move = self.picking.move_ids.filtered(lambda m: m.product_id == self.product_1)
+
+        target_account = self.account_valuation.copy({"name": "371999"})
+        journal = self.env["account.journal"].search(
+            [("type", "=", "general"), ("company_id", "=", self.env.company.id)],
+            limit=1,
+        )
+        account_move = self.env["account.move"].create(
+            {
+                "move_type": "entry",
+                "journal_id": journal.id,
+                "line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "account_id": target_account.id,
+                            "product_id": self.product_1.id,
+                            "credit": 60.0,
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "account_id": target_account.id,
+                            "product_id": self.product_1.id,
+                            "credit": 40.0,
+                        },
+                    ),
+                    (0, 0, {"account_id": self.account_expense.id, "debit": 100.0}),
+                ],
+            }
+        )
+        account_move.action_post()
+
+        svl = self.env["stock.valuation.layer"].create(
+            {
+                "company_id": self.env.company.id,
+                "product_id": self.product_1.id,
+                "stock_move_id": move.id,
+                "quantity": 0.0,
+                "value": -100.0,
+                "account_move_id": account_move.id,
+            }
+        )
+        self.assertEqual(svl.l10n_ro_account_id, target_account)
+
+    def test_account_determination_multiline_multiproduct_same_account(self):
+        """A single journal entry can cover several products on the SAME
+        stock account (e.g. one landed cost split across a whole shipment).
+        ``_compute_account`` must restrict the per-account aggregation to
+        this layer's own product — otherwise another product's lines on the
+        same account get folded into the sum, the total no longer matches
+        either product's individual ``value``, and both silently fall back
+        to the category's default account.
+        """
+        self.create_po()
+        move_1 = self.picking.move_ids.filtered(
+            lambda m: m.product_id == self.product_1
+        )
+        move_2 = self.picking.move_ids.filtered(
+            lambda m: m.product_id == self.product_2
+        )
+
+        target_account = self.account_valuation.copy({"name": "371998"})
+        journal = self.env["account.journal"].search(
+            [("type", "=", "general"), ("company_id", "=", self.env.company.id)],
+            limit=1,
+        )
+        account_move = self.env["account.move"].create(
+            {
+                "move_type": "entry",
+                "journal_id": journal.id,
+                "line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "account_id": target_account.id,
+                            "product_id": self.product_1.id,
+                            "credit": 100.0,
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "account_id": target_account.id,
+                            "product_id": self.product_2.id,
+                            "credit": 25.0,
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {"account_id": self.account_expense.id, "debit": 125.0},
+                    ),
+                ],
+            }
+        )
+        account_move.action_post()
+
+        svl_1 = self.env["stock.valuation.layer"].create(
+            {
+                "company_id": self.env.company.id,
+                "product_id": self.product_1.id,
+                "stock_move_id": move_1.id,
+                "quantity": 0.0,
+                "value": -100.0,
+                "account_move_id": account_move.id,
+            }
+        )
+        svl_2 = self.env["stock.valuation.layer"].create(
+            {
+                "company_id": self.env.company.id,
+                "product_id": self.product_2.id,
+                "stock_move_id": move_2.id,
+                "quantity": 0.0,
+                "value": -25.0,
+                "account_move_id": account_move.id,
+            }
+        )
+        self.assertEqual(svl_1.l10n_ro_account_id, target_account)
+        self.assertEqual(svl_2.l10n_ro_account_id, target_account)

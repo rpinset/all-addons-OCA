@@ -18,25 +18,24 @@ class StockPicking(models.Model):
         copy=False,
         help="Route area for this picking, used to create routes.",
     )
+    route_checkpoint_ids = fields.One2many(
+        comodel_name="route.checkpoint",
+        inverse_name="picking_id",
+        string="Route Checkpoints",
+        copy=False,
+    )
     has_route_planning = fields.Boolean(compute="_compute_has_route_planning")
 
-    @api.depends("company_id")
+    @api.depends("route_checkpoint_ids")
     def _compute_has_route_planning(self):
-        route_data = self.env["route.checkpoint"]._read_group(
-            [("picking_id", "in", self.ids)],
-            groupby=["picking_id"],
-            aggregates=["route_id:count"],
-        )
-        count_data = dict(route_data)
         for picking in self:
-            counting = count_data.get(picking) or 0
-            picking.has_route_planning = counting > 0
+            picking.has_route_planning = bool(picking.route_checkpoint_ids)
 
     def action_cancel(self):
-        current_checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "in", self.ids), ("state", "not in", ["done", "incident"])],
-            limit=1,
+        checkpoints = self.route_checkpoint_ids.filtered(
+            lambda x: x.state not in ("done", "incident")
         )
+        current_checkpoint = fields.first(checkpoints)
         if current_checkpoint:
             if current_checkpoint.state != "draft":
                 raise UserError(
@@ -58,13 +57,10 @@ class StockPicking(models.Model):
     def _action_done(self):
         checkpoint_map = {}
         for picking in self:
-            current_checkpoint = self.env["route.checkpoint"].search(
-                [
-                    ("picking_id", "=", picking.id),
-                    ("state", "not in", ["done", "incident"]),
-                ],
-                limit=1,
+            checkpoints = picking.route_checkpoint_ids.filtered(
+                lambda x: x.state not in ("done", "incident")
             )
+            current_checkpoint = fields.first(checkpoints)
             checkpoint_map[picking.id] = current_checkpoint
             if current_checkpoint and current_checkpoint.route_id.state == "draft":
                 raise UserError(
@@ -85,13 +81,12 @@ class StockPicking(models.Model):
 
     def action_view_route_planning(self):
         self.ensure_one()
-        checkpoint = self.env["route.checkpoint"].search([("picking_id", "=", self.id)])
         action = self.env["ir.actions.act_window"]._for_xml_id(
             "route_planning.action_route_route"
         )
         action.update(
             {
-                "res_id": checkpoint.route_id.id,
+                "res_id": self.route_checkpoint_ids.route_id.id,
                 "views": [(False, "form")],
             }
         )
@@ -100,10 +95,15 @@ class StockPicking(models.Model):
     def _can_add_to_route(self):
         """Check if the picking can be added to a route"""
         self.ensure_one()
+        location = (
+            self.location_dest_id
+            if self.picking_type_code == "incoming"
+            else self.location_id
+        )
         return (
             self.route_area_id
             and self.partner_id
-            and self.location_id == self.route_area_id.location_id
+            and location == self.route_area_id.location_id
             and self.state not in ["draft", "done", "cancel"]
         )
 
@@ -122,9 +122,7 @@ class StockPicking(models.Model):
         if not route:
             route = Route.create(self._prepare_route_vals())
         # Create checkpoint for this picking's partner
-        checkpoint = Checkpoint.search(
-            [("route_id", "=", route.id), ("picking_id", "=", self.id)], limit=1
-        )
+        checkpoint = self.route_checkpoint_ids.filtered(lambda x: x.route_id == route)
         if not checkpoint:
             if (
                 not self.partner_id.partner_latitude

@@ -109,9 +109,7 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertEqual(next_picking.route_area_id, self.area_north)
         route = capture.records
         self.assertEqual(len(route), 1)
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         self.assertEqual(len(checkpoint), 1)
         # create another picking to same area and confirm it.
         # It should be assigned to the same route
@@ -126,9 +124,7 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertEqual(next_picking2.route_area_id, picking_2.route_area_id)
         # To prevent the next lines from being added to the same picking
         next_picking2.do_print_picking()
-        checkpoint2 = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking2.id)]
-        )
+        checkpoint2 = next_picking2.route_checkpoint_ids
         self.assertEqual(len(checkpoint2), 1)
         self.assertEqual(
             checkpoint2.route_id,
@@ -139,9 +135,7 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertFalse(picking_3.route_area_id)
         picking_3.button_validate()
         next_picking3 = picking_3._get_next_transfers()
-        checkpoint3 = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking3.id)]
-        )
+        checkpoint3 = next_picking3.route_checkpoint_ids
         self.assertFalse(checkpoint3)
         checkpoint.route_id.action_planned()
         self.assertEqual(checkpoint.route_id.state, "planned")
@@ -165,14 +159,10 @@ class TestRoutePlanningStock(RouteCommon):
         self.picking.button_validate()
         next_picking = self.picking._get_next_transfers()
         self.assertEqual(next_picking.route_area_id, self.picking.route_area_id)
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         self.assertEqual(len(checkpoint), 1)
         next_picking.action_cancel()
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         incident_type = self.env.ref("route_planning_stock.route_incident_cancel")
         self.assertEqual(checkpoint.state, "incident")
         self.assertEqual(checkpoint.incident_type_id, incident_type)
@@ -183,9 +173,7 @@ class TestRoutePlanningStock(RouteCommon):
         self.picking.button_validate()
         next_picking = self.picking._get_next_transfers()
         self.assertEqual(next_picking.route_area_id, self.picking.route_area_id)
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         self.assertEqual(len(checkpoint), 1)
         with self.assertRaisesRegex(
             Exception,
@@ -196,6 +184,7 @@ class TestRoutePlanningStock(RouteCommon):
         next_picking.button_validate()
         self.assertEqual(checkpoint.state, "done")
 
+    @mute_logger("odoo.models.unlink")
     def test_route_incident(self):
         """Test route and checkpoint incident handling
         checkpoint 1: done
@@ -245,9 +234,7 @@ class TestRoutePlanningStock(RouteCommon):
         self.picking.with_context(tracking_disable=False).button_validate()
         next_picking = self.picking._get_next_transfers()
         # Find the checkpoint created for this picking
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         self.assertEqual(len(checkpoint), 1)
         checkpoint.route_id.action_planned()
         # Simulate partial delivery

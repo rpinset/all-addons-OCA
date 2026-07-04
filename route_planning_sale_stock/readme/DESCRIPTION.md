@@ -1,0 +1,1 @@
+Integration between Route Planning, Stock, and Sales to automatically generate routes and checkpoints from pickings related to sales orders.

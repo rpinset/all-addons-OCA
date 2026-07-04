@@ -325,6 +325,8 @@ class SaleOrder(models.Model):
             self._context,
             default_blanket_order_id=self.id,
             default_partner_id=self.partner_id.id,
+            default_partner_invoice_id=self.partner_invoice_id.id,
+            default_partner_shipping_id=self.partner_shipping_id.id,
             default_order_type="call_off",
         )
         return action

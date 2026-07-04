@@ -96,6 +96,11 @@ msgid "Route Checkpoint"
 msgstr ""
 
 #. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_stock_picking__route_checkpoint_ids
+msgid "Route Checkpoints"
+msgstr ""
+
+#. module: route_planning_stock
 #: model:ir.model,name:route_planning_stock.model_route_incident_type
 msgid "Route Incident Type"
 msgstr ""

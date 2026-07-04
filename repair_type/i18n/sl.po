@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* repair_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-02 07:14+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: repair_type
+#: model:ir.model.fields,field_description:repair_type.field_stock_picking_type__default_add_location_src_id
+msgid "Default Add Source Location"
+msgstr "Privzeta izvorna lokacija za dodajanje"
+
+#. module: repair_type
+#: model:ir.model.fields,field_description:repair_type.field_stock_picking_type__default_recycle_location_src_id
+msgid "Default Recycle Source Location"
+msgstr "Privzeta izvorna lokacija za recikliranje"
+
+#. module: repair_type
+#: model:ir.model.fields,field_description:repair_type.field_stock_picking_type__default_remove_location_src_id
+msgid "Default Remove Source Location"
+msgstr "Privzeta izvorna lokacija za odstranjevanje"
+
+#. module: repair_type
+#: model:ir.model,name:repair_type.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tip dobavnice"
+
+#. module: repair_type
+#: model:ir.model,name:repair_type.model_stock_move
+msgid "Stock Move"
+msgstr "Premik zaloge"
+
+#. module: repair_type
+#: model:ir.model.fields,help:repair_type.field_stock_picking_type__default_add_location_src_id
+msgid ""
+"This is the default add source location when you create a repair order with "
+"this operation type."
+msgstr ""
+"To je privzeta izvorna lokacija za dodajanje, ko ustvarite nalog za "
+"popravilo s tem tipom operacije."
+
+#. module: repair_type
+#: model:ir.model.fields,help:repair_type.field_stock_picking_type__default_recycle_location_src_id
+msgid ""
+"This is the default recycle source location when you create a repair order "
+"with this operation type."
+msgstr ""
+"To je privzeta izvorna lokacija za recikliranje, ko ustvarite nalog za "
+"popravilo s tem tipom operacije."
+
+#. module: repair_type
+#: model:ir.model.fields,help:repair_type.field_stock_picking_type__default_remove_location_src_id
+msgid ""
+"This is the default remove source location when you create a repair order "
+"with this operation type."
+msgstr ""
+"To je privzeta izvorna lokacija za odstranjevanje, ko ustvarite nalog za "
+"popravilo s tem tipom operacije."

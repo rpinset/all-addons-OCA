@@ -11,7 +11,7 @@
     "website": "https://github.com/OCA/agreement",
     "category": "Partner",
     "license": "AGPL-3",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.3.0",
     "depends": ["contacts", "agreement", "product", "web"],
     "data": [
         "data/cron.xml",
@@ -33,7 +33,15 @@
         "views/menu.xml",
         "wizards/create_agreement_wizard.xml",
     ],
-    "demo": ["demo/demo.xml"],
+    "demo": [
+        "demo/agreement_subtype.xml",
+        "demo/agreement.xml",
+        "demo/agreement_recital.xml",
+        "demo/agreement_section.xml",
+        "demo/agreement_clause.xml",
+        "demo/agreement_appendix.xml",
+        "demo/agreement_line.xml",
+    ],
     "assets": {
         "web.assets_backend": [
             "agreement_legal/static/src/js/**/*",
@@ -41,6 +49,7 @@
         ],
     },
     "application": True,
+    "uninstall_hook": "uninstall_hook",
     "development_status": "Beta",
     "maintainers": ["max3903", "ygol"],
 }

@@ -4,7 +4,7 @@
 
 from odoo import api, fields, models, osv
 from odoo.exceptions import UserError
-from odoo.tools import float_compare, html2plaintext
+from odoo.tools import float_compare, html2plaintext, is_html_empty
 
 from odoo.addons.base.models.ir_qweb_fields import Markup
 from odoo.addons.l10n_it_edi.models.account_move import get_date, get_float, get_text
@@ -269,24 +269,21 @@ class AccountMoveInherit(models.Model):
     def _l10n_it_edi_get_values(self, pdf_values=None):
         res = super()._l10n_it_edi_get_values(pdf_values)
 
-        causale_list = []
-        if self.narration:
+        causale_lines = []
+        if not is_html_empty(self.narration):
             try:
                 narration_text = html2plaintext(self.narration)
             except Exception:
                 narration_text = ""
 
             # max length of Causale is 200
-            for causale in narration_text.split("\n"):
-                if not causale:
-                    continue
-                causale_list_200 = [
-                    causale[i : i + 200] for i in range(0, len(causale), 200)
-                ]
-                for causale200 in causale_list_200:
-                    causale_list.append(causale200)
+            for line in narration_text.splitlines():
+                if line.strip():
+                    causale_lines.extend(
+                        line[i : i + 200] for i in range(0, len(line), 200)
+                    )
 
-        res["causale"] = causale_list
+        res["causale_lines"] = causale_lines
 
         return res
 

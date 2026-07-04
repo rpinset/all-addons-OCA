@@ -115,6 +115,16 @@ msgstr ""
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "<strong>Warehouse:</strong>"
 msgstr ""
 
@@ -184,6 +194,12 @@ msgstr ""
 #. module: l10n_it_delivery_note
 #: model:res.groups,name:l10n_it_delivery_note.can_change_number
 msgid "Allow to change delivery note number"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__amount
+#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
+msgid "Amount"
 msgstr ""
 
 #. module: l10n_it_delivery_note
@@ -473,6 +489,7 @@ msgid "Created on"
 msgstr ""
 
 #. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__currency_id
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__currency_id
 msgid "Currency"
 msgstr ""
@@ -732,6 +749,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_company__display_ref_order_dn_report
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_config_settings__display_ref_order_dn_report
 msgid "Display Ref. Order in Delivery Note Report"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_company__display_total_in_dn_with_prices
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_config_settings__display_total_in_dn_with_prices
+msgid "Display total in DN with prices"
 msgstr ""
 
 #. module: l10n_it_delivery_note
@@ -1409,6 +1432,11 @@ msgid "Prints Sale Order numbers on DN report (if there are any)"
 msgstr ""
 
 #. module: l10n_it_delivery_note
+#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.res_config_settings_form_view
+msgid "Prints Total Amount on DN report"
+msgstr ""
+
+#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__product_id
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "Product"
@@ -1655,6 +1683,11 @@ msgid "Shipping information"
 msgstr ""
 
 #. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__show_discount
+msgid "Show Discount"
+msgstr ""
+
+#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__show_product_information
 msgid "Show Product Information"
 msgstr ""
@@ -1878,6 +1911,11 @@ msgid "Total"
 msgstr ""
 
 #. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__amount_total
+msgid "Total Amount"
+msgstr ""
+
+#. module: l10n_it_delivery_note
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_picking_transport_condition__price_to_show__total
 msgid "Total price"
 msgstr ""
@@ -1950,6 +1988,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__price_unit
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_picking_transport_condition__price_to_show__unit
 msgid "Unit price"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__untaxed_amount
+msgid "Untaxed Amount"
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__untaxed_amount_total
+msgid "Untaxed Total Amount"
 msgstr ""
 
 #. module: l10n_it_delivery_note
@@ -2087,6 +2135,12 @@ msgstr ""
 msgid ""
 "You cannot change the type of a delivery note line. Instead you should "
 "delete the current line and create a new line of the proper type."
+msgstr ""
+
+#. module: l10n_it_delivery_note
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
+msgid "You cannot have different currencies in the lines of aDelivery Note"
 msgstr ""
 
 #. module: l10n_it_delivery_note

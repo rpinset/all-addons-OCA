@@ -100,15 +100,28 @@ def _l10n_it_account_tax_kind_migration(env):
 
 
 def _l10n_it_fatturapa_migration(env):
-    """
-    Remove exclusion for installation of "l10n_it_edi"
-    """
+    # Remove exclusion for installation of "l10n_it_edi"
     query = """
         DELETE
         FROM ir_module_module_exclusion
         WHERE name = 'l10n_it_edi'
     """
     openupgrade.logged_query(env.cr, query)
+
+    # Automatically install `l10n_it_edi_extension`
+    # because it migrates the data of
+    # `l10n_it_fatturapa` and several depending modules.
+    openupgrade.logged_query(
+        env.cr,
+        """
+        UPDATE ir_module_module
+        SET
+            state = 'to install'
+        WHERE
+            name = 'l10n_it_edi_extension'
+            AND state = 'uninstalled'
+        """,
+    )
 
 
 def _l10n_it_fatturapa_pec_migration(env):

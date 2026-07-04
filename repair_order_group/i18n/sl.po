@@ -1,0 +1,167 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* repair_order_group
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-02 06:52+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: repair_order_group
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_form_inherit_group
+msgid "Add Grouped Repair"
+msgstr "Dodaj združeno popravilo"
+
+#. module: repair_order_group
+#: model:ir.model.fields,help:repair_order_group.field_repair_order__grouped_repair_ids
+msgid "All other repairs that belong to the same group."
+msgstr "Vsa druga popravila, ki pripadajo isti skupini."
+
+#. module: repair_order_group
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_search_inherit_group
+msgid "By Group"
+msgstr "Po skupini"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__company_id
+msgid "Company"
+msgstr "Družba"
+
+#. module: repair_order_group
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_form_inherit_group
+msgid "Create a new repair linked to the same group and partner."
+msgstr "Ustvari novo popravilo vezano na isto skupino in partnerja."
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: repair_order_group
+#: model:ir.actions.act_window,name:repair_order_group.action_repair_orders_by_group
+msgid "Group Repairs"
+msgstr "Združi popravila"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order__grouped_repair_ids
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_form_inherit_group
+msgid "Grouped Repairs"
+msgstr "Združena popravila"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__id
+msgid "ID"
+msgstr "ID"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__repair_ids
+msgid "Repair"
+msgstr "Popravilo"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order_group__repair_count
+msgid "Repair Count"
+msgstr "Št. popravil"
+
+#. module: repair_order_group
+#: model:ir.model.fields,field_description:repair_order_group.field_repair_order__group_id
+msgid "Repair Group"
+msgstr "Skupina popravil"
+
+#. module: repair_order_group
+#: model:ir.ui.menu,name:repair_order_group.menu_repair_order_group
+msgid "Repair Groups"
+msgstr "Skupine popravil"
+
+#. module: repair_order_group
+#: model:ir.model,name:repair_order_group.model_repair_order
+msgid "Repair Order"
+msgstr "Nalog za popravilo"
+
+#. module: repair_order_group
+#: model:ir.model,name:repair_order_group.model_repair_order_group
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_group_form
+msgid "Repair Order Group"
+msgstr "Skupina nalogov za popravilo"
+
+#. module: repair_order_group
+#: model:ir.actions.act_window,name:repair_order_group.action_repair_order_group
+msgid "Repair Order Groups"
+msgstr "Skupine nalogov za popravilo"
+
+#. module: repair_order_group
+#: model_terms:ir.ui.view,arch_db:repair_order_group.view_repair_order_group_form
+msgid "Repairs"
+msgstr "Popravila"
+
+#. module: repair_order_group
+#: model:ir.model.fields,help:repair_order_group.field_repair_order__group_id
+msgid "Repairs sharing the same group can be processed and quoted together."
+msgstr ""
+"Popravila, ki so v isti skupini, se lahko obdelajo in predračunajo skupaj."
+
+#. module: repair_order_group
+#. odoo-python
+#: code:addons/repair_order_group/models/repair_order.py:0
+msgid ""
+"You cannot create a quotation for a repair order that is already linked to an existing sale order.\n"
+"Concerned repair order(s):\n"
+"%(ref_str)s"
+msgstr ""
+"Za nalog za popravilo, ki je že povezan z obstoječim prodajnim nalogom, ne "
+"morete ustvariti predračuna.\n"
+"Zadevni nalogi za popravilo:\n"
+"%(ref_str)s"
+
+#. module: repair_order_group
+#. odoo-python
+#: code:addons/repair_order_group/models/repair_order.py:0
+msgid ""
+"You need to define a customer for a repair order in order to create an associated quotation.\n"
+"Concerned repair order(s):\n"
+"%(ref_str)s"
+msgstr ""
+"Za nalog za popravilo morate določiti stranko, da lahko ustvarite povezan "
+"predračun.\n"
+"Zadevni nalogi za popravilo:\n"
+"%(ref_str)s"
