@@ -9,20 +9,21 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-16 08:52+0000\n"
-"PO-Revision-Date: 2018-01-16 08:52+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-07-01 14:46+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
 "Language-Team: Danish (https://www.transifex.com/oca/teams/23907/da/)\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/ir_actions_report.py:0
 msgid "(Native)"
-msgstr ""
+msgstr "(Oprindelig)"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__create_uid
@@ -46,23 +47,23 @@ msgstr "Vist navn"
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_template_fallback
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_template_fallback
 msgid "Fallback"
-msgstr ""
+msgstr "Reserveløsning"
 
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/ir_actions_report.py:0
 msgid "Field 'Output Format' is required for Py3O report"
-msgstr ""
+msgstr "Feltet 'Outputformat' er påkrævet for Py3O-rapporter"
 
 #. module: report_py3o
 #: model_terms:ir.ui.view,arch_db:report_py3o.py3o_template_configuration_search_view
 msgid "File Type"
-msgstr ""
+msgstr "Filtype"
 
 #. module: report_py3o
 #: model_terms:ir.ui.view,arch_db:report_py3o.py3o_template_configuration_search_view
 msgid "Group By"
-msgstr ""
+msgstr "Gruppér efter"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__id
@@ -77,6 +78,8 @@ msgid ""
 "If the user does not provide a template this will be used it should be a "
 "relative path to root of YOUR module or an absolute path on your server."
 msgstr ""
+"Hvis brugeren ikke angiver en skabelon, bruges denne. Det bør være en "
+"relativ sti til dit moduls rod eller en absolut sti på serveren."
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__py3o_multi_in_one
@@ -86,23 +89,26 @@ msgid ""
 "ZIP file that contains as many files as selected records. If you enable this "
 "option, Odoo will generate instead a single report for the selected records."
 msgstr ""
+"Hvis du kører en rapport på flere poster, genererer Odoo som standard en ZIP-"
+"fil med én fil pr. post. Aktiverer du denne indstilling, genereres i stedet "
+"én samlet rapport for de valgte poster."
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__ir_actions_report_id
 msgid "Ir Actions Report"
-msgstr ""
+msgstr "Ir Actions-rapport"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__is_py3o_native_format
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__is_py3o_native_format
 msgid "Is Py3O Native Format"
-msgstr ""
+msgstr "Er Py3O-standardformat"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__is_py3o_report_not_available
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__is_py3o_report_not_available
 msgid "Is Py3O Report Not Available"
-msgstr ""
+msgstr "Py3O-rapport ikke tilgængelig"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_report__write_uid
@@ -120,36 +126,37 @@ msgstr "Sidst opdateret den"
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_template__py3o_template_data
 #: model_terms:ir.ui.view,arch_db:report_py3o.py3o_report_view
 msgid "LibreOffice Template"
-msgstr ""
+msgstr "LibreOffice-skabelon"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_template__filetype
 msgid "LibreOffice Template File Type"
-msgstr ""
+msgstr "Filtype for LibreOffice-skabelon"
 
 #. module: report_py3o
 #. odoo-python
 #: code:addons/report_py3o/models/py3o_report.py:0
 msgid "Libreoffice runtime not available. Please contact your administrator."
 msgstr ""
+"LibreOffice-runtime er ikke tilgængelig. Kontakt venligst din administrator."
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__module
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__module
 msgid "Module"
-msgstr ""
+msgstr "Modul"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__msg_py3o_report_not_available
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__msg_py3o_report_not_available
 msgid "Msg Py3O Report Not Available"
-msgstr ""
+msgstr "Besked: Py3O-rapport ikke tilgængelig"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_multi_in_one
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_multi_in_one
 msgid "Multiple Records in a Single Report"
-msgstr ""
+msgstr "Flere poster i én rapport"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_py3o_template__name
@@ -160,70 +167,70 @@ msgstr "Navn"
 #. odoo-python
 #: code:addons/report_py3o/models/py3o_report.py:0
 msgid "No template found. Aborting."
-msgstr ""
+msgstr "Ingen skabelon fundet. Afbryder."
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__odp
 msgid "ODF Presentation"
-msgstr ""
+msgstr "ODF-præsentation"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__fodp
 msgid "ODF Presentation (Flat)"
-msgstr ""
+msgstr "ODF-præsentation (flad)"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__ods
 msgid "ODF Spreadsheet"
-msgstr ""
+msgstr "ODF-regneark"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__fods
 msgid "ODF Spreadsheet (Flat)"
-msgstr ""
+msgstr "ODF-regneark (flad)"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__odt
 msgid "ODF Text Document"
-msgstr ""
+msgstr "ODF-tekstdokument"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__py3o_template__filetype__fodt
 msgid "ODF Text Document (Flat)"
-msgstr ""
+msgstr "ODF-tekstdokument (flad)"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_filetype
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_filetype
 msgid "Output Format"
-msgstr ""
+msgstr "Outputformat"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__lo_bin_path
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__lo_bin_path
 msgid "Path to the libreoffice runtime"
-msgstr ""
+msgstr "Sti til LibreOffice-runtime"
 
 #. module: report_py3o
 #: model:ir.actions.report,name:report_py3o.res_users_report_py3o
 msgid "Py3o Demo Report"
-msgstr ""
+msgstr "Py3o-demonstrationsrapport"
 
 #. module: report_py3o
 #: model_terms:ir.ui.view,arch_db:report_py3o.act_report_xml_search_view
 msgid "Py3o Reports"
-msgstr ""
+msgstr "Py3o-rapporter"
 
 #. module: report_py3o
 #: model:ir.actions.act_window,name:report_py3o.py3o_template_configuration_action
 #: model:ir.ui.menu,name:report_py3o.py3o_template_configuration_menu
 msgid "Py3o Templates"
-msgstr ""
+msgstr "Py3o-skabeloner"
 
 #. module: report_py3o
 #: model:ir.model,name:report_py3o.model_py3o_template
 msgid "Py3o template"
-msgstr ""
+msgstr "Py3o-skabelon"
 
 #. module: report_py3o
 #: model:ir.model,name:report_py3o.model_ir_actions_report
@@ -234,7 +241,7 @@ msgstr "Rapport"
 #. module: report_py3o
 #: model:ir.model,name:report_py3o.model_py3o_report
 msgid "Report Py30"
-msgstr ""
+msgstr "Rapport Py30"
 
 #. module: report_py3o
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__report_type
@@ -247,13 +254,13 @@ msgstr "Rapport"
 #: model:ir.model.fields,field_description:report_py3o.field_ir_actions_report__py3o_template_id
 #: model:ir.model.fields,field_description:report_py3o.field_report_pdf_form__py3o_template_id
 msgid "Template"
-msgstr ""
+msgstr "Skabelon"
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__module
 #: model:ir.model.fields,help:report_py3o.field_report_pdf_form__module
 msgid "The implementer module that provides this report"
-msgstr ""
+msgstr "Det implementerende modul, der leverer denne rapport"
 
 #. module: report_py3o
 #. odoo-python
@@ -265,6 +272,11 @@ msgid ""
 "can provide the full path to the runtime by setting the key 'py3o."
 "conversion_command' into the configuration parameters."
 msgstr ""
+"LibreOffice-runtime er påkrævet for at generere Py3O-rapporten '%s', men den "
+"findes ikke i bin-stien. Installer LibreOffice-runtime på serveren. Hvis "
+"runtime allerede er installeret men ikke findes af Odoo, kan du angive den "
+"fulde sti ved at sætte nøglen 'py3o.conversion_command' i "
+"konfigurationsparametrene."
 
 #. module: report_py3o
 #: model:ir.model.fields,help:report_py3o.field_ir_actions_report__report_type
@@ -275,16 +287,19 @@ msgid ""
 "browser PDF means the report will be rendered using Wkhtmltopdf and "
 "downloaded by the user."
 msgstr ""
+"Rapporttypen, der gengives. Hver type har sin egen gengivelsesmetode. HTML "
+"åbner rapporten direkte i browseren; PDF gengives via Wkhtmltopdf og "
+"downloades af brugeren."
 
 #. module: report_py3o
 #: model:ir.actions.report,print_report_name:report_py3o.res_users_report_py3o
 msgid "object.name.replace(' ', '_') + '-demo.odt'"
-msgstr ""
+msgstr "object.name.replace(' ', '_') + '-demo.odt'"
 
 #. module: report_py3o
 #: model:ir.model.fields.selection,name:report_py3o.selection__ir_actions_report__report_type__py3o
 msgid "py3o"
-msgstr ""
+msgstr "py3o"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Sidst ??ndret den"

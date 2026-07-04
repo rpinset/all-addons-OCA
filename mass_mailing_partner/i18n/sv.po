@@ -9,47 +9,48 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:19+0000\n"
-"PO-Revision-Date: 2017-12-01 02:19+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2026-07-01 14:46+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
 "Language-Team: Swedish (https://www.transifex.com/oca/teams/23907/sv/)\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: mass_mailing_partner
 #. odoo-python
 #: code:addons/mass_mailing_partner/models/mailing_list.py:0
 #: code:addons/mass_mailing_partner/models/mailing_subscription.py:0
 msgid "A partner cannot be multiple times in the same list"
-msgstr ""
+msgstr "En partner kan inte förekomma flera gånger i samma lista"
 
 #. module: mass_mailing_partner
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.partner_mail_list_wizard_form
 msgid "Add contacts to mailing list"
-msgstr ""
+msgstr "Lägg till kontakter i utskickslista"
 
 #. module: mass_mailing_partner
 #: model:ir.actions.act_window,name:mass_mailing_partner.action_partner_mail_list
 msgid "Add to mailing list"
-msgstr ""
+msgstr "Lägg till i utskickslista"
 
 #. module: mass_mailing_partner
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.partner_mail_list_wizard_form
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_partner_mail_list_wizard
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.partner_mail_list_wizard_form
 msgid "Create contact mailing list"
-msgstr ""
+msgstr "Skapa kontaktutskickslista"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__create_uid
@@ -86,7 +87,7 @@ msgstr "ID"
 #. module: mass_mailing_partner
 #: model:ir.model.fields,help:mass_mailing_partner.field_mailing_list__partner_unique
 msgid "If is checked, multiple contacts cannot be linked to the same partner"
-msgstr ""
+msgstr "Om markerat kan flera kontakter inte kopplas till samma partner"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__write_uid
@@ -101,60 +102,60 @@ msgstr "Senast uppdaterad"
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_mailing_contact
 msgid "Mailing Contact"
-msgstr ""
+msgstr "Utskickskontakt"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_mailing_list
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__mail_list_id
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.view_res_partner_filter
 msgid "Mailing List"
-msgstr ""
+msgstr "Utskickslista"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_mailing_subscription
 msgid "Mailing List Subscription"
-msgstr ""
+msgstr "Utskickslisteprenumeration"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_mailing_trace
 msgid "Mailing Statistics"
-msgstr ""
+msgstr "Utskicksstatistik"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__mass_mailing_contact_ids
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_users__mass_mailing_contact_ids
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.view_partner_form
 msgid "Mailing contacts"
-msgstr ""
+msgstr "Utskickskontakter"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__mass_mailing_contacts_count
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_users__mass_mailing_contacts_count
 msgid "Mailing contacts number"
-msgstr ""
+msgstr "Antal utskickskontakter"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_mandatory
 msgid "Mandatory Partner"
-msgstr ""
+msgstr "Obligatorisk partner"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__mass_mailing_stats_ids
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_users__mass_mailing_stats_ids
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.view_partner_form
 msgid "Mass mailing stats"
-msgstr ""
+msgstr "Statistik för massutskick"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__mass_mailing_stats_count
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_users__mass_mailing_stats_count
 msgid "Mass mailing stats number"
-msgstr ""
+msgstr "Antal statistik för massutskick"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_base_partner_merge_automatic_wizard
 msgid "Merge Partner Wizard"
-msgstr ""
+msgstr "Guide för sammanslagning av partner"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__partner_id
@@ -169,22 +170,22 @@ msgstr "Företag"
 #. odoo-python
 #: code:addons/mass_mailing_partner/wizard/partner_mail_list_wizard.py:0
 msgid "Partner '%(name)s' has no email."
-msgstr ""
+msgstr "Partner '%(name)s' saknar e-postadress."
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_category
 msgid "Partner Tag"
-msgstr ""
+msgstr "Partneretikett"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_unique
 msgid "Partner unique?"
-msgstr ""
+msgstr "Unik partner?"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Taggar"
 
 #. module: mass_mailing_partner
 #. odoo-python
@@ -193,6 +194,8 @@ msgid ""
 "This partner '%(name)s' is linked to one or more mass mailing contact. Email "
 "must be assigned."
 msgstr ""
+"Den här partnern '%(name)s' är kopplad till en eller flera "
+"massutskickskontakter. E-postadress måste anges."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Senast redigerad"

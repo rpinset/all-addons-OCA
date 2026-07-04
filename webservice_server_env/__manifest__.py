@@ -7,12 +7,13 @@
 {
     "name": "WebService Server Environment",
     "summary": "Use Server Environment feature to manage Webservice configs",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "license": "AGPL-3",
     "development_status": "Production/Stable",
     "maintainers": ["etobella"],
     "author": "Creu Blanca, Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/web-api",
     "depends": ["web", "webservice", "server_environment"],
+    "uninstall_hook": "uninstall_hook",
     "auto_install": True,
 }

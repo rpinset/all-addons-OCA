@@ -148,6 +148,33 @@ class TestWebServiceOauth2BackendApplication(CommonWebService):
             "old_token",
         )
 
+    @responses.activate
+    def test_call_with_content_only_false_returns_response(self):
+        now = time.time()
+        duration = 3600
+        responses.add(
+            responses.POST,
+            f"{self.url}oauth2/token",
+            json={
+                "access_token": "cool_token",
+                "token_type": "Bearer",
+                "expires_in": duration,
+                "expires_at": now + duration,
+            },
+        )
+        responses.add(responses.POST, f"{self.url}endpoint", json={"ok": True})
+
+        with mock_cursor(self.env.cr):
+            response = self.webservice.call(
+                "post",
+                url=f"{self.url}endpoint",
+                data="payload",
+                content_only=False,
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), {"ok": True})
+
 
 class TestWebServiceOauth2WebApplication(CommonWebService):
     @classmethod
