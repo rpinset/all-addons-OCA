@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-01 04:58 UTC** (elapsed 102s)
+Last build: **2026-07-04 15:11 UTC** (elapsed 62s)
 
 - Repos integrated: **117**
 - Canonical modules: **2096**
@@ -37,7 +37,7 @@ Last build: **2026-07-01 04:58 UTC** (elapsed 102s)
 | [crm](https://github.com/OCA/crm) | 22 | 469962e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [currency](https://github.com/OCA/currency) | 2 | eec1bb7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 871fca7 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [ddmrp](https://github.com/OCA/ddmrp) | 14 | 6319745 2025-10-21 mymage Translated using Weblate (Italian) |
+| [ddmrp](https://github.com/OCA/ddmrp) | 14 | addfe4d 2026-07-03 OCA-git-bot Merge PR #633 into 15.0 |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | f7d0af8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [dms](https://github.com/OCA/dms) | 7 | 05bf325 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
