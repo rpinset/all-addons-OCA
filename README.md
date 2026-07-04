@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-07-01 04:56 UTC** (elapsed 174s)
+Last build: **2026-07-04 15:08 UTC** (elapsed 85s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -44,7 +44,7 @@ Last build: **2026-07-01 04:56 UTC** (elapsed 174s)
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 32 | 65c0706 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [dms](https://github.com/OCA/dms) | 3 | 3cf2f33 2025-11-25 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 2 | f2e246f 2023-10-10 Weblate Update translation files |
-| [e-commerce](https://github.com/OCA/e-commerce) | 49 | 85eaf3e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [e-commerce](https://github.com/OCA/e-commerce) | 49 | 47edbfe 2026-07-01 Laura V Translated using Weblate (Swedish) |
 | [edi](https://github.com/OCA/edi) | 41 | 736f768 2026-01-19 EvaS595 Translated using Weblate (French) |
 | [event](https://github.com/OCA/event) | 24 | 4cdc438 2025-09-03 mymage Translated using Weblate (Italian) |
 | [field-service](https://github.com/OCA/field-service) | 19 | d98bc46 2026-04-13 mymage Translated using Weblate (Italian) |
