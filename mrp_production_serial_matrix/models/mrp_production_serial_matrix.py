@@ -20,6 +20,7 @@ class MrpProductionSerialMatrix(models.Model):
             ("in_progress", "In Progress"),
             ("exception", "Exception"),
             ("done", "Done"),
+            ("cancel", "Cancelled"),
         ],
         string="Status",
         required=True,
@@ -33,6 +34,10 @@ class MrpProductionSerialMatrix(models.Model):
         string="Manufacturing Order",
         readonly=True,
         ondelete="cascade",
+    )
+    production_state = fields.Selection(
+        related="production_id.state",
+        string="MO Status",
     )
     product_id = fields.Many2one(
         related="production_id.product_id",
@@ -67,11 +72,84 @@ class MrpProductionSerialMatrix(models.Model):
 
     def unlink(self):
         for matrix in self:
-            if matrix.state in ["done", "in_progress"]:
+            if matrix.state in ["done", "in_progress", "cancel"]:
                 raise UserError(
-                    _("You cannot delete a serial matrix that is in progress or done.")
+                    _(
+                        "You cannot delete a serial matrix that is in progress, "
+                        "done or cancelled."
+                    )
                 )
         return super().unlink()
+
+    def action_cancel_matrix(self):
+        self.ensure_one()
+        if self.production_id.state not in ("done", "cancel"):
+            raise UserError(
+                _(
+                    "The matrix can only be cancelled when the related MO is "
+                    "done or cancelled."
+                )
+            )
+        if self.state in ("done", "cancel"):
+            raise UserError(_("The matrix is already %s.") % self.state)
+        self.state = "cancel"
+        self.message_post(
+            body=_(
+                "Matrix manually cancelled. The related MO (%(mo)s) is in state "
+                "'%(state)s'."
+            )
+            % {"mo": self.production_id.name, "state": self.production_id.state}
+        )
+
+    def action_reset_to_draft(self):
+        self.ensure_one()
+        if self.state != "exception":
+            raise UserError(
+                _("Only matrices in 'Exception' state can be reset to 'Draft'.")
+            )
+        pg = self.production_id.procurement_group_id
+        if pg:
+            related_mos = pg.mrp_production_ids
+            pending_mos = related_mos.filtered(
+                lambda m: m.state not in ("done", "cancel")
+            )
+            processed_lots = related_mos.filtered(lambda m: m.state == "done").mapped(
+                "lot_producing_id"
+            )
+        else:
+            pending_mos = self.production_id.filtered(
+                lambda m: m.state not in ("done", "cancel")
+            )
+            processed_lots = self.env["stock.lot"]
+        if not pending_mos:
+            raise UserError(
+                _(
+                    "There is no pending MO related to this matrix. Cancel the "
+                    "matrix instead."
+                )
+            )
+        pending_mo = pending_mos[:1]
+        remaining_lots = self.finished_lot_ids - processed_lots
+        self.production_id = pending_mo
+        self.line_ids.unlink()
+        matrix_lines = self._get_matrix_lines(pending_mo, remaining_lots)
+        self.write(
+            {
+                "finished_lot_ids": [(6, 0, remaining_lots.ids)],
+                "line_ids": [(0, 0, x) for x in matrix_lines],
+                "state": "draft",
+            }
+        )
+        self.message_post(
+            body=_(
+                "Matrix reset to 'Draft'. Pending MO: %(mo)s. Remaining serial "
+                "numbers to process: %(lots)s."
+            )
+            % {
+                "mo": pending_mo.name,
+                "lots": ", ".join(remaining_lots.mapped("name")) or "—",
+            }
+        )
 
     @api.depends("line_ids", "line_ids.component_lot_id")
     def _compute_lot_selection_warning(self):
@@ -274,8 +352,7 @@ class MrpProductionSerialMatrix(models.Model):
         matrix_map = self._get_matrix_lines_map()
         fp_lot = lots_to_process[0] if len(lots_to_process) > 1 else lots_to_process
         if not fp_lot:
-            self.state = "done"
-            self.message_post(body=_("The serial matrix finished successfully"))
+            self._set_matrix_done()
             return mos
         try:
             self._prepare_mo_for_serial(current_mo, fp_lot)
@@ -286,12 +363,18 @@ class MrpProductionSerialMatrix(models.Model):
                 return self.call_next_process_serial_matrix_lot(
                     mos, lots_to_process=lots_to_process - fp_lot, current_mo=current_mo
                 )
-            self.state = "done"
-            self.message_post(body=_("The serial matrix finished successfully"))
+            self._set_matrix_done()
         except UserError as e:
-            self.state = "exception"
-            self.message_post(body=_(f"Error during the processing: {str(e)}"))
+            self._set_matrix_exception(str(e))
         return mos
+
+    def _set_matrix_done(self):
+        self.state = "done"
+        self.message_post(body=_("The serial matrix finished successfully"))
+
+    def _set_matrix_exception(self, error):
+        self.state = "exception"
+        self.message_post(body=_("Error during the processing: %s") % error)
 
     def _process_serial_matrix(self):
         mos = self.env["mrp.production"]
