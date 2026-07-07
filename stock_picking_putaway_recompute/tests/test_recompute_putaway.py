@@ -172,6 +172,25 @@ class TestRecomputePutaway(TransactionCase):
             self.sub_location_1, self.picking.move_line_ids.location_dest_id
         )
 
+    def test_recompute_putaway_unsafe(self):
+        """Check unsafe recompute putaway."""
+        self._create_picking()
+        self.picking.action_confirm()
+        self.assertFalse(
+            self.sub_location_2 in self.picking.move_line_ids.location_dest_id
+        )
+        self.picking.move_line_ids.picked = True
+        # Change the rule destination
+        self.rule.location_out_id = self.sub_location_2
+        # Use the context to recompute
+        self.picking.with_context(
+            allow_unsafe_putaway_recompute=True
+        ).action_recompute_putaways()
+        # Location has change despite the lines being picked
+        self.assertTrue(
+            self.sub_location_2 in self.picking.move_line_ids.location_dest_id
+        )
+
     def test_recompute_putaway_printed(self):
         """
         Create a single picking from Suppliers -> Stock

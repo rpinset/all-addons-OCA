@@ -340,7 +340,7 @@ addon | version | maintainers | summary
 [account_spread_cost_revenue](account_spread_cost_revenue/) | 18.0.1.0.0 |  | Spread costs and revenues over a custom period
 [account_usability](account_usability/) | 18.0.1.1.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [product_category_tax](product_category_tax/) | 18.0.1.0.0 |  | Configure taxes in the product category
-[purchase_unreconciled](purchase_unreconciled/) | 18.0.1.0.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
+[purchase_unreconciled](purchase_unreconciled/) | 18.0.1.0.1 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
 
 [//]: # (end addons)
 
@@ -2010,7 +2010,7 @@ addon | version | maintainers | summary
 [delivery_roulier](delivery_roulier/) | 18.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Integration of multiple carriers
 [delivery_schenker](delivery_schenker/) | 18.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_state](delivery_state/) | 18.0.1.2.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
-[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.2.2 |  | Integrate UPS webservice
+[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.2.3 |  | Integrate UPS webservice
 [partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [partner_delivery_zone](partner_delivery_zone/) | 18.0.1.0.1 |  | Enables partner delivery zones for physical products
@@ -2567,6 +2567,7 @@ addon | version | maintainers | summary
 [fieldservice_skill](fieldservice_skill/) | 18.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your Field Service workers skills
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 18.0.1.1.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Execute server actions when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 18.0.2.1.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate the logistics operations with Field Service
+[fieldservice_subcontracting](fieldservice_subcontracting/) | 18.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Auto-create Purchase Orders when FSOs are assigned to subcontractor workers
 [fieldservice_timesheet](fieldservice_timesheet/) | 18.0.1.0.0 |  | Timesheet on Field Service Orders
 [fieldservice_vehicle](fieldservice_vehicle/) | 18.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage Field Service vehicles and assign drivers
 
@@ -3359,7 +3360,7 @@ addon | version | maintainers | summary
 [l10n_br_account_fleet](l10n_br_account_fleet/) | 18.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Account Fleet
 [l10n_br_account_payment_order](l10n_br_account_payment_order/) | 18.0.1.0.4 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Payment Order
 [l10n_br_base](l10n_br_base/) | 18.0.1.5.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Customization of base module for implementations in Brazil.
-[l10n_br_base_l10n_br_compat](l10n_br_base_l10n_br_compat/) | 18.0.2.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Compatibility with the l10n_br module
+[l10n_br_base_l10n_br_compat](l10n_br_base_l10n_br_compat/) | 18.0.2.1.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Compatibility with the l10n_br module
 [l10n_br_cnpj_search](l10n_br_cnpj_search/) | 18.0.1.1.2 |  | Integração com os Webservices da ReceitaWS e SerPro
 [l10n_br_coa](l10n_br_coa/) | 18.0.1.0.3 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base do Planos de Contas brasileiros
 [l10n_br_coa_generic](l10n_br_coa_generic/) | 18.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Plano de Contas para empresas do Regime normal (Micro e pequenas empresas)
@@ -3743,6 +3744,7 @@ addon | version | maintainers | summary
 [datev_export_dtvf](datev_export_dtvf/) | 18.0.2.0.0 |  | Export Data for DATEV (dtvf)
 [datev_export_xml](datev_export_xml/) | 18.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [datev_import_csv_dtvf](datev_import_csv_dtvf/) | 18.0.1.1.0 |  | Import account moves generated by external software
+[hr_expense_meal_allowance](hr_expense_meal_allowance/) | 18.0.2.0.0 | <a href='https://github.com/CRogos'><img src='https://github.com/CRogos.png' width='32' height='32' style='border-radius:50%;' alt='CRogos'/></a> | Automatic calculation of expenses
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 18.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | NUTS specific options for German
 [l10n_de_mis_reports](l10n_de_mis_reports/) | 18.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03 + SKR04)
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 18.0.3.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | German VAT Statement
@@ -4177,7 +4179,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 18.0.0.5.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 18.0.1.3.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 18.0.1.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.2.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.2.3.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 18.0.0.6.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 18.0.0.6.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 18.0.0.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -4291,11 +4293,12 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 18.0.1.0.2 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 18.0.1.0.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 18.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 18.0.1.0.2 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 18.0.1.0.3 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 18.0.1.0.2 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos_oca](l10n_es_pos_oca/) | 18.0.1.1.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 18.0.2.0.0 |  | Envío de pedidos del TPV al SII
 [l10n_es_pos_sii_match](l10n_es_pos_sii_match/) | 18.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Extensión del contraste SII para el TPV
+[l10n_es_reav](l10n_es_reav/) | 18.0.1.0.0 | <a href='https://github.com/Bilbonet'><img src='https://github.com/Bilbonet.png' width='32' height='32' style='border-radius:50%;' alt='Bilbonet'/></a> | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_toponyms](l10n_es_toponyms/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 18.0.2.2.0 |  | Libros registro del IVA y del IRPF
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
@@ -4685,12 +4688,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[document_page_environment_manual](document_page_environment_manual/) | 18.0.1.0.1 |  | Document Management - Wiki - Environment Manual
+[document_page_environment_manual](document_page_environment_manual/) | 18.0.1.1.0 |  | Document Management - Wiki - Environment Manual
 [document_page_environmental_aspect](document_page_environmental_aspect/) | 18.0.1.0.1 |  | Environmental Aspects
-[document_page_health_safety_manual](document_page_health_safety_manual/) | 18.0.1.0.1 |  | Health and Safety Manual
-[document_page_procedure](document_page_procedure/) | 18.0.1.0.1 |  | Document Management - Wiki - Procedures
-[document_page_quality_manual](document_page_quality_manual/) | 18.0.1.0.1 |  | Quality Manual
-[document_page_work_instruction](document_page_work_instruction/) | 18.0.1.0.1 |  | Document Management - Wiki - Work Instructions
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 18.0.1.1.0 |  | Health and Safety Manual
+[document_page_mgmtsystem](document_page_mgmtsystem/) | 18.0.1.0.0 |  | Add a new mgmtsystem type field for classification
+[document_page_procedure](document_page_procedure/) | 18.0.1.1.0 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 18.0.1.1.0 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 18.0.1.1.0 |  | Document Management - Wiki - Work Instructions
 [mgmtsystem](mgmtsystem/) | 18.0.1.3.0 |  | Support for management systems, such as ISO compliance.
 [mgmtsystem_action](mgmtsystem_action/) | 18.0.1.0.2 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 18.0.1.0.0 |  | Add information on the application of the Action.
@@ -6879,7 +6883,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 18.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Product Warranty
-[rma](rma/) | 18.0.2.5.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
+[rma](rma/) | 18.0.2.5.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_batch](rma_batch/) | 18.0.1.0.0 |  | Group RMAs into batches for collective management
 [rma_delivery](rma_delivery/) | 18.0.1.4.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allow to choose a default delivery carrier for returns
 [rma_lot](rma_lot/) | 18.0.1.3.1 |  | Manage lot in RMA
@@ -8454,7 +8458,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[stock_picking_putaway_recompute](stock_picking_putaway_recompute/) | 18.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allows to recompute the picking operations putaways if configurations have changed
+[stock_picking_putaway_recompute](stock_picking_putaway_recompute/) | 18.0.1.1.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allows to recompute the picking operations putaways if configurations have changed
 [stock_putaway_hook](stock_putaway_hook/) | 18.0.1.0.0 |  | Add hooks allowing modules to add more putaway strategies
 [stock_putaway_rule_product_handle](stock_putaway_rule_product_handle/) | 18.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | This module allows to show the handle widget on product putaway rules to change the sequence
 [stock_storage_type](stock_storage_type/) | 18.0.1.6.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Manage packages and locations storage types
@@ -8662,7 +8666,7 @@ addon | version | maintainers | summary
 [stock_request_mrp](stock_request_mrp/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Manufacturing request for stock
 [stock_request_purchase](stock_request_purchase/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Internal request for stock
 [stock_request_submit](stock_request_submit/) | 18.0.1.0.0 |  | Add submit state on Stock Requests
-[stock_request_tier_validation](stock_request_tier_validation/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Extends the functionality of Stock Requests to support a tier validation process.
+[stock_request_tier_validation](stock_request_tier_validation/) | 18.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Extends the functionality of Stock Requests to support a tier validation process.
 [stock_return_request](stock_return_request/) | 18.0.1.0.2 |  | Stock Return Request
 
 [//]: # (end addons)
@@ -9005,6 +9009,7 @@ addon | version | maintainers | summary
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 18.0.1.2.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Add packaging fields in the stock moves
 [stock_move_purchase_uom](stock_move_purchase_uom/) | 18.0.1.1.2 |  | Allow to use the purchase UoM in a stock move
 [stock_move_reset_quantity](stock_move_reset_quantity/) | 18.0.1.0.0 |  | Reset quantity to zero
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 18.0.1.0.0 |  | Add a MTS+MTO route
 [stock_package_type_volume](stock_package_type_volume/) | 18.0.1.0.0 |  | Compute volume of a package type
 [stock_packaging_calculator](stock_packaging_calculator/) | 18.0.2.0.0 |  | Compute product quantity to pick by packaging
 [stock_picking_batch_packaging_qty](stock_picking_batch_packaging_qty/) | 18.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add packaging fields in stock picking batch

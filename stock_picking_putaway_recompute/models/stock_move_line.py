@@ -30,7 +30,11 @@ class StockMoveLine(models.Model):
 
     def _can_recompute_putaway(self):
         self.ensure_one()
-        return self.picking_id._can_recompute_putaway() and not self.picked
+        return self._can_recompute_putaway_unsafe() and not self.picked
+
+    def _can_recompute_putaway_unsafe(self):
+        self.ensure_one()
+        return self.picking_id._can_recompute_putaway()
 
     def _filtered_for_putaway_recompute(self) -> Self:
         """
@@ -40,6 +44,8 @@ class StockMoveLine(models.Model):
             - have their picking not printed (started)
             - have their picked field set
         """
+        if self.env.context.get("allow_unsafe_putaway_recompute"):
+            return self.filtered(lambda line: line._can_recompute_putaway_unsafe())
         return self.filtered(lambda line: line._can_recompute_putaway())
 
     def _check_all_lines_with_same_dest_package(self):
@@ -74,9 +80,7 @@ class StockMoveLine(models.Model):
         # Reset location destinations to their move destination
         # First, protect the field from recomputations as
         # value will be reaffected afterwards.
-        with to_recompute_lines.env.protecting(
-            ["location_dest_id"], to_recompute_lines
-        ):
+        with self.env.protecting(["location_dest_id"], to_recompute_lines):
             for line in to_recompute_lines:
                 line.location_dest_id = line.move_id.location_dest_id
         to_recompute_lines._apply_putaway_strategy()

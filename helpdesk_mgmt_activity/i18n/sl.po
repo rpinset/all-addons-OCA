@@ -1,0 +1,182 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_mgmt_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-07 07:38+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model,name:helpdesk_mgmt_activity.model_mail_activity
+msgid "Activity"
+msgstr "Aktivnost"
+
+#. module: helpdesk_mgmt_activity
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_activity.ticket_view_form
+msgid "Activity Config"
+msgstr "Nastavitve aktivnosti"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "Activity Type is not set!"
+msgstr "Tip aktivnosti ni nastavljen!"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,help:helpdesk_mgmt_activity.field_mail_activity__ticket_id
+msgid ""
+"Activity created from helpdesk ticketAfter closing this activity, ticket is "
+"moved to done stage"
+msgstr ""
+"Aktivnost, ustvarjena iz zahtevka za podporo. Po zaključku te aktivnosti se "
+"zahtevek premakne na stopnjo opravljeno"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "Activity has been created!"
+msgstr "Aktivnost je bila ustvarjena!"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__assigned_user_id
+msgid "Assigned User"
+msgstr "Zadolžen"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "Assigned User is not set!"
+msgstr "Zadolženi uporabnik ni nastavljen!"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_res_config_settings__helpdesk_available_model_ids
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_activity.res_config_settings_view_form
+msgid "Available Models"
+msgstr "Modeli na voljo"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,help:helpdesk_mgmt_activity.field_res_config_settings__helpdesk_available_model_ids
+msgid "Available models for set source record in helpdesk ticket"
+msgstr ""
+"Modeli, ki so na voljo za nastavitev izvornega zapisa v zahtevku za podporo"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,help:helpdesk_mgmt_activity.field_helpdesk_ticket__can_create_activity
+#: model:ir.model.fields,help:helpdesk_mgmt_activity.field_helpdesk_ticket_team__allow_set_activity
+msgid "Available to set activity on source record from ticket"
+msgstr "Na voljo za nastavitev aktivnosti na izvornem zapisu iz zahtevka"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model,name:helpdesk_mgmt_activity.model_res_config_settings
+msgid "Config Settings"
+msgstr "Nastavitve"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "Date Deadline is not set!"
+msgstr "Rok izvedbe ni nastavljen!"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket_team__activity_stage_id
+msgid "Done Activity Stage"
+msgstr "Stopnja zaključene aktivnosti"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__date_deadline
+msgid "Due Date"
+msgstr "Datum zapadlosti"
+
+#. module: helpdesk_mgmt_activity
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_activity.res_config_settings_view_form
+msgid "Helpdesk Activity"
+msgstr "Aktivnost podpore"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model,name:helpdesk_mgmt_activity.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Zahtevek za podporo"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model,name:helpdesk_mgmt_activity.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "Ekipa podpore"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__is_new_stage
+msgid "Is New Stage"
+msgstr "Je nova stopnja"
+
+#. module: helpdesk_mgmt_activity
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_activity.res_config_settings_view_form
+msgid "Models available for a Helpdesk"
+msgstr "Modeli, ki so na voljo za podporo"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,help:helpdesk_mgmt_activity.field_helpdesk_ticket_team__activity_stage_id
+msgid "Move the ticket when the activity in source record is done"
+msgstr "Premakni zahtevek, ko je aktivnost v izvornem zapisu opravljena"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__next_stage_id
+msgid "Next Stage"
+msgstr "Naslednja stopnja"
+
+#. module: helpdesk_mgmt_activity
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_activity.ticket_view_form
+msgid "Perform Action"
+msgstr "Izvedi dejanje"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__can_create_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket_team__allow_set_activity
+msgid "Set Activities"
+msgstr "Nastavi aktivnosti"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__source_activity_type_id
+msgid "Source Activity Type"
+msgstr "Tip izvorne aktivnosti"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__res_id
+msgid "Source Document"
+msgstr "Izvorni dokument"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__res_model
+msgid "Source Document Model"
+msgstr "Model izvornega dokumenta"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_helpdesk_ticket__record_ref
+msgid "Source Record"
+msgstr "Izvorni zapis"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "Source Record is not set!"
+msgstr "Izvorni zapis ni nastavljen!"
+
+#. module: helpdesk_mgmt_activity
+#: model:ir.model.fields,field_description:helpdesk_mgmt_activity.field_mail_activity__ticket_id
+msgid "Ticket"
+msgstr "Zahtevek"
+
+#. module: helpdesk_mgmt_activity
+#. odoo-python
+#: code:addons/helpdesk_mgmt_activity/models/helpdesk_ticket.py:0
+msgid "You cannot create activity!"
+msgstr "Aktivnosti ne morete ustvariti!"
