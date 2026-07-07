@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-07-04 15:10 UTC** (elapsed 172s)
+Last build: **2026-07-07 21:42 UTC** (elapsed 165s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -65,7 +65,7 @@ Last build: **2026-07-04 15:10 UTC** (elapsed 172s)
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | 1143570 2021-10-17 OCA-git-bot [ADD] setup.py |
 | [l10n-france](https://github.com/OCA/l10n-france) | 20 | 4066626 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 7 | e0eb893 2023-10-09 Weblate Update translation files |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | 77bfd31 2026-06-03 mymage Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | c09051a 2026-07-07 mymage Translated using Weblate (Italian) |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | d631e83 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 17 | aa4c98b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | 1 | bcca2e7 2023-09-03 OCA-git-bot [UPD] README.rst |
@@ -76,7 +76,7 @@ Last build: **2026-07-04 15:10 UTC** (elapsed 172s)
 | [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | 1 | 9ccd94e 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 7 | a570350 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 24 | 83c3d8a 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [management-system](https://github.com/OCA/management-system) | 23 | cb05377 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [management-system](https://github.com/OCA/management-system) | 23 | 99a1ff1 2026-07-07 mymage Translated using Weblate (Italian) |
 | [manufacture](https://github.com/OCA/manufacture) | 53 | 3035b2b 2026-05-13 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 6 | c312b21 2023-10-29 mymage Translated using Weblate (Italian) |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 12 | d285ed3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
