@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-04 15:11 UTC** (elapsed 62s)
+Last build: **2026-07-07 21:44 UTC** (elapsed 112s)
 
 - Repos integrated: **117**
 - Canonical modules: **2096**
@@ -11,7 +11,7 @@ Last build: **2026-07-04 15:11 UTC** (elapsed 62s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | fad7fd8 2026-06-30 Pedro M. Baeza Merge pull request #5742 from grap/15.0-ADD-product_sale_tax_price_included-merged-into-account-SLG |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | a7ddf23 2026-07-07 Pedro M. Baeza Merge pull request #5777 from Tecnativa/15.0-imp-base-external_merges |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 6e90f4d 2026-06-29 Gerardo Alí Ferraro Schelijasch Translated using Weblate (Spanish (Dominican Republic)) |
@@ -69,7 +69,7 @@ Last build: **2026-07-04 15:11 UTC** (elapsed 62s)
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 8 | 6592499 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 1 | a8e45c4 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | 01d9e56 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | cbfce5b 2026-06-30 OCA-git-bot [BOT] post-merge updates |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | 7b8c09c 2026-07-06 Weblate Update translation files |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 2 | 9ae910b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 30 | 130cbf3 2026-04-23 OCA-git-bot [BOT] post-merge updates |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
