@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-24 12:45+0000\n"
+"PO-Revision-Date: 2026-07-05 22:46+0000\n"
 "Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
@@ -24,96 +24,96 @@ msgstr "Conta"
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_report_wizard__target_move__all
 msgid "All Entries"
-msgstr ""
+msgstr "Todos os rexistros"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_report_wizard__target_move__posted
 msgid "All Posted Entries"
-msgstr ""
+msgstr "Todos os rexistros confirmados"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 msgid "All entries"
-msgstr ""
+msgstr "Todos os rexistros"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 msgid "All posted entries"
-msgstr ""
+msgstr "Todos os rexistros confirmados"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__amount
 msgid "Amount"
-msgstr ""
+msgstr "Cantidade"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "BEGINNING BALANCE"
-msgstr ""
+msgstr "BALANZO INICIAL"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "CASH INFLOWS"
-msgstr ""
+msgstr "ENTRADAS DE EFECTIVO"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "CASH OUTFLOWS"
-msgstr ""
+msgstr "SAIDAS DE EFECTIVO"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.liquidity_forecast_wizard
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__company_id
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__company_id
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__company_id
 msgid "Company"
-msgstr ""
+msgstr "Compañía"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__company_currency_id
 msgid "Company Currency"
-msgstr ""
+msgstr "Moeda usala pola empresa"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__create_uid
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__create_uid
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__create_date
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__create_date
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado en"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "Current %s"
-msgstr ""
+msgstr "Actual %s"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__date
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__date_to
 msgid "Date To"
-msgstr ""
+msgstr "Data ata"
 
 #. module: account_liquidity_forecast
 #. odoo-python
@@ -121,96 +121,96 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 #, python-format
 msgid "Date range filter"
-msgstr ""
+msgstr "Filtro de rango de data"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_report_wizard__period_length__days
 msgid "Days"
-msgstr ""
+msgstr "Días"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__direction
 msgid "Direction"
-msgstr ""
+msgstr "Dirección"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__display_name
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__display_name
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome mostrado"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "ENDING BALANCE"
-msgstr ""
+msgstr "BALANZO FINAL"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__expiry_date
 msgid "Expiry Date"
-msgstr ""
+msgstr "Data de caducidade"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.liquidity_forecast_wizard
 msgid "Export PDF"
-msgstr ""
+msgstr "Exportar PDF"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.liquidity_forecast_wizard
 msgid "Export XLSX"
-msgstr ""
+msgstr "Exportar XLSX"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "Forecast Planning Items"
-msgstr ""
+msgstr "Elementos de planificación de previsións"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 msgid "From:"
-msgstr ""
+msgstr "Dende:"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__id
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__id
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_planning_item__direction__in
 msgid "Incoming"
-msgstr ""
+msgstr "Entrante"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_lines_header
 msgid "Items"
-msgstr ""
+msgstr "Elementos"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group____last_update
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item____last_update
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modificación no"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__write_uid
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__write_uid
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__write_date
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__write_date
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultima modificación no"
 
 #. module: account_liquidity_forecast
 #. odoo-python
@@ -223,97 +223,97 @@ msgstr ""
 #: model:ir.ui.menu,name:account_liquidity_forecast.menu_liquidity_forecast
 #, python-format
 msgid "Liquidity Forecast"
-msgstr ""
+msgstr "Previsión de liquidez"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_base
 msgid "Liquidity Forecast -"
-msgstr ""
+msgstr "Previsión de liquidez -"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast_xlsx.py:0
 #, python-format
 msgid "Liquidity Forecast - %(company_name)s - %(currency_name)s"
-msgstr ""
+msgstr "Previsión de liquidez - %(company_name)s - %(currency_name)s"
 
 #. module: account_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_account_liquidity_forecast_planning_group
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.account_liquidity_forecast_planning_group_view_form
 msgid "Liquidity Forecast Planning Group"
-msgstr ""
+msgstr "Grupo de planificación de previsións de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.actions.act_window,name:account_liquidity_forecast.account_liquidity_forecast_planning_group_action
 #: model:ir.actions.act_window,name:account_liquidity_forecast.account_liquidity_forecast_planning_item_action
 #: model:ir.ui.menu,name:account_liquidity_forecast.account_liquidity_forecast_planning_group_menu
 msgid "Liquidity Forecast Planning Groups"
-msgstr ""
+msgstr "Grupo de planificación de previsións de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_account_liquidity_forecast_planning_item
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.account_liquidity_forecast_planning_item_view_form
 msgid "Liquidity Forecast Planning Item"
-msgstr ""
+msgstr "Elemento de planificación de previsións de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.ui.menu,name:account_liquidity_forecast.account_liquidity_forecast_planning_item_menu
 msgid "Liquidity Forecast Planning Items"
-msgstr ""
+msgstr "Elemento de planificación de previsións de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_report_account_liquidity_forecast_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_report_report_liquidity_forecast_xlsx
 msgid "Liquidity Forecast Report"
-msgstr ""
+msgstr "Informe de previsión de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_account_liquidity_forecast_report_wizard
 msgid "Liquidity Forecast Report Wizard"
-msgstr ""
+msgstr "Asistente de informe de previsión de liquidez"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_report_wizard__period_length__months
 msgid "Months"
-msgstr ""
+msgstr "Meses"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "NET CASH FLOW"
-msgstr ""
+msgstr "FLUXO DE CAIXA NETO"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_group__name
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_planning_item__direction__out
 msgid "Outgoing"
-msgstr ""
+msgstr "Saínte"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__period_length
 msgid "Period Length"
-msgstr ""
+msgstr "Amplitude de período"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_planning_item__group_id
 msgid "Planning Group"
-msgstr ""
+msgstr "Grupo de planificación"
 
 #. module: account_liquidity_forecast
 #: model:ir.model,name:account_liquidity_forecast.model_ir_actions_report
 msgid "Report Action"
-msgstr ""
+msgstr "Informe de acción"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields,field_description:account_liquidity_forecast.field_account_liquidity_forecast_report_wizard__target_move
 msgid "Target Moves"
-msgstr ""
+msgstr "Movementos obxectivo"
 
 #. module: account_liquidity_forecast
 #. odoo-python
@@ -321,38 +321,38 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 #, python-format
 msgid "Target moves filter"
-msgstr ""
+msgstr "Filtro de movementos obxectivo"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.report_liquidity_forecast_filters
 msgid "To"
-msgstr ""
+msgstr "Para"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "Total Cash Inflows"
-msgstr ""
+msgstr "Entradas totais de efectivo"
 
 #. module: account_liquidity_forecast
 #. odoo-python
 #: code:addons/account_liquidity_forecast/report/liquidity_forecast.py:0
 #, python-format
 msgid "Total Cash Outflows"
-msgstr ""
+msgstr "Saídas totais de efectivo"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.liquidity_forecast_wizard
 msgid "View"
-msgstr ""
+msgstr "Vista"
 
 #. module: account_liquidity_forecast
 #: model:ir.model.fields.selection,name:account_liquidity_forecast.selection__account_liquidity_forecast_report_wizard__period_length__weeks
 msgid "Weeks"
-msgstr ""
+msgstr "Semanas"
 
 #. module: account_liquidity_forecast
 #: model_terms:ir.ui.view,arch_db:account_liquidity_forecast.liquidity_forecast_wizard
 msgid "or"
-msgstr ""
+msgstr "ou"

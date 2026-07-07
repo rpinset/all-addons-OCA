@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 TAKOBI
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="report_fsm_order_document"
+        inherit_id="fieldservice.report_fsm_order_document"
+    >
+        <xpath expr="//div[@id='resolution']" position="after">
+            <div t-if="doc.signature" id="signature" class="mt-4">
+                <div class="offset-8">
+                    <strong>Signature</strong>
+                </div>
+                <div class="offset-8">
+                    <img
+                        t-att-src="image_data_uri(doc.signature)"
+                        style="max-height: 4cm; max-width: 8cm;"
+                        alt="Signature"
+                    />
+                </div>
+                <div t-if="doc.signed_by" class="offset-8 text-center">
+                    <span t-field="doc.signed_by" />
+                </div>
+                <div t-if="doc.signed_on" class="offset-8 text-center text-muted">
+                    <small>
+                        <span
+                            t-field="doc.signed_on"
+                            t-options="{'widget': 'datetime', 'tz': doc.location_id.tz}"
+                        />
+                    </small>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

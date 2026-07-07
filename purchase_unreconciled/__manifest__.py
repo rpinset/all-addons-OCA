@@ -3,7 +3,7 @@
 
 {
     "name": "Purchase Unreconciled",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "ForgeFlow S.L., Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-financial-tools",
     "category": "Purchases",

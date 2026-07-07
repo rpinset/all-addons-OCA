@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-23 04:41+0000\n"
-"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"PO-Revision-Date: 2026-07-05 22:46+0000\n"
+"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "Instancia de informe Os meus"
 #. module: mis_template_financial_report
 #: model:ir.model,name:mis_template_financial_report.model_mis_report_kpi
 msgid "MIS Report KPI"
-msgstr ""
+msgstr "Informe MIS KPI"
 
 #. module: mis_template_financial_report
 #: model:mis.report.kpi,description:mis_template_financial_report.kpi_profit
@@ -84,7 +84,7 @@ msgstr "Ganancias ou perdas a reportar"
 #. module: mis_template_financial_report
 #: model:ir.model.fields,field_description:mis_template_financial_report.field_mis_report_kpi__split_after
 msgid "Split After"
-msgstr ""
+msgstr "Dividir despois"
 
 #. module: mis_template_financial_report
 #: model:ir.model.fields,help:mis_template_financial_report.field_mis_report_kpi__split_after
@@ -92,8 +92,10 @@ msgid ""
 "Split the table after this KPI. This allows displaying KPIs next to each "
 "other in non-comparison mode"
 msgstr ""
+"Divide esta táboa despois deste KPI. Isto permitirá mostrar os KPIs un ao "
+"lado do outro en modo de non-comparación"
 
 #. module: mis_template_financial_report
 #: model_terms:ir.ui.view,arch_db:mis_template_financial_report.mis_report_view_kpi_form
 msgid "Splitting"
-msgstr ""
+msgstr "Dividindo"

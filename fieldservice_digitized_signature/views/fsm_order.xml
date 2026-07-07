@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 TAKOBI
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="fsm_order_form" model="ir.ui.view">
+        <field name="name">fsm.order.form - digitized signature</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@id='execution-right']" position="inside">
+                <field name="signed_by" />
+                <field name="signed_on" />
+            </xpath>
+            <xpath expr="//page[@name='execution_page']/group" position="after">
+                <group string="Signature" name="signature_grp">
+                    <field
+                        name="signature"
+                        widget="signature"
+                        nolabel="1"
+                        options="{'full_name': 'signed_by'}"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

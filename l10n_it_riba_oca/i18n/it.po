@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-28 10:26+0000\n"
-"PO-Revision-Date: 2024-11-18 10:06+0000\n"
+"PO-Revision-Date: 2026-07-07 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_it_riba_oca
 #: model_terms:ir.ui.view,arch_db:l10n_it_riba_oca.view_account_config_settings_riba
@@ -584,7 +584,7 @@ msgstr "I conti sono tutti obbligatori."
 #: model:ir.model.fields,field_description:l10n_it_riba_oca.field_res_partner__riba_exclude_expenses
 #: model:ir.model.fields,field_description:l10n_it_riba_oca.field_res_users__riba_exclude_expenses
 msgid "Exclude expenses Ri.Ba."
-msgstr ""
+msgstr "Escludi spese Ri.Ba."
 
 #. module: l10n_it_riba_oca
 #: model_terms:ir.ui.view,arch_db:l10n_it_riba_oca.wizard_riba_file_export
@@ -941,7 +941,7 @@ msgstr "Messaggi"
 #. module: l10n_it_riba_oca
 #: model:ir.model.fields.selection,name:l10n_it_riba_oca.selection__res_partner__riba_policy_expenses__one_a_month
 msgid "More invoices, one expense per Month"
-msgstr ""
+msgstr "Più fatture, una spesa per mese"
 
 #. module: l10n_it_riba_oca
 #: model_terms:ir.ui.view,arch_db:l10n_it_riba_oca.view_riba_slip_line_form
@@ -1033,7 +1033,7 @@ msgstr "Numero di messaggi con errore di consegna"
 #. module: l10n_it_riba_oca
 #: model:ir.model.fields.selection,name:l10n_it_riba_oca.selection__res_partner__riba_policy_expenses__unlimited
 msgid "One expense per maturity"
-msgstr ""
+msgstr "Una spesa per scadenza"
 
 #. module: l10n_it_riba_oca
 #: model:ir.model.fields,field_description:l10n_it_riba_oca.field_account_bank_statement_line__open_amount
@@ -1263,7 +1263,7 @@ msgstr "Reimposta a bozza"
 #: model:ir.model.fields,field_description:l10n_it_riba_oca.field_res_partner__riba_policy_expenses
 #: model:ir.model.fields,field_description:l10n_it_riba_oca.field_res_users__riba_policy_expenses
 msgid "Ri.Ba. Policy expenses"
-msgstr ""
+msgstr "Impostazioni spese RiBa"
 
 #. module: l10n_it_riba_oca
 #. odoo-python

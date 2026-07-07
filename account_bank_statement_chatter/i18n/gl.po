@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-23 16:14+0000\n"
-"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"PO-Revision-Date: 2026-07-05 23:46+0000\n"
+"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -19,32 +19,32 @@ msgstr ""
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción necesaria"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Actividades"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Decoración de excepción de actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Estado de actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icona de tipo de actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Reconto de arquivos axuntos"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model,name:account_bank_statement_chatter.model_account_bank_statement
@@ -54,107 +54,107 @@ msgstr "Extracto"
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (Contactos)"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Font awesome icon e.g. fa-tasks"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Hai unha mensaxe"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icona"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icona para indicar excepción de actividade."
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Se está marcado, novas mensaxes requiren a túa atención."
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Se está marcado, algunhas mensaxes teñen erro na entrega."
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "É seguidor"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Axunto principal"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Erro de entrega de mensaxe"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensaxes"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Data límite da miña actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Data límite da vindeira actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Resumo da vindeira actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Tipo da vindeira actividade"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Número de accións"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Número de erros"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensaxes que requiren accións"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensaxes con erro de entrega"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Usuario responsable"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__activity_state
@@ -164,18 +164,22 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Estado baseado en actividades\n"
+"Vencido: A data de vencemento xa pasou\n"
+"Hoxe: A data de vencemento é hoxe\n"
+"Planificado: Actividades futuras."
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo de excepción de actividade no rexistro."
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,field_description:account_bank_statement_chatter.field_account_bank_statement__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensaxes do sitio web"
 
 #. module: account_bank_statement_chatter
 #: model:ir.model.fields,help:account_bank_statement_chatter.field_account_bank_statement__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicación do sitio web"

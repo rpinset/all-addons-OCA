@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_digitized_signature
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 14:15+0000\n"
+"PO-Revision-Date: 2026-06-08 14:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fieldservice_digitized_signature
+#: model_terms:ir.ui.view,arch_db:fieldservice_digitized_signature.report_fsm_order_document
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Firma</strong>"
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,help:fieldservice_digitized_signature.field_fsm_order__signed_on
+msgid "Date and time the Field Service order was signed."
+msgstr "Data e ora in cui l'ordine di assistenza sul campo è stato firmato."
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model,name:fieldservice_digitized_signature.model_fsm_order
+msgid "Field Service Order"
+msgstr "Ordine assistenza sul campo"
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,help:fieldservice_digitized_signature.field_fsm_order__signed_by
+msgid "Name of the person that signed the Field Service order."
+msgstr "Nome della persona che ha firmato l'ordine di assistenza sul campo."
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,field_description:fieldservice_digitized_signature.field_fsm_order__signature
+#: model_terms:ir.ui.view,arch_db:fieldservice_digitized_signature.fsm_order_form
+#: model_terms:ir.ui.view,arch_db:fieldservice_digitized_signature.report_fsm_order_document
+msgid "Signature"
+msgstr "Firma"
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,help:fieldservice_digitized_signature.field_fsm_order__signature
+msgid "Signature received through the Field Service order."
+msgstr "Firma ricevuta tramite l'ordine di assistenza sul campo."
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,field_description:fieldservice_digitized_signature.field_fsm_order__signed_by
+msgid "Signed By"
+msgstr "Firmato da"
+
+#. module: fieldservice_digitized_signature
+#: model:ir.model.fields,field_description:fieldservice_digitized_signature.field_fsm_order__signed_on
+msgid "Signed On"
+msgstr "Firmato il"

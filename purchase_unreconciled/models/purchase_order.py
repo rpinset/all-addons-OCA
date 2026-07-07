@@ -56,7 +56,9 @@ class PurchaseOrder(models.Model):
             )
             unreconciled_items = acc_item.search(unreconciled_domain)
             rec.unreconciled = len(unreconciled_items) > 0
-            rec.amount_unreconciled = sum(unreconciled_items.mapped("amount_residual"))
+            rec.amount_unreconciled = rec.company_id.currency_id.round(
+                sum(unreconciled_items.mapped("amount_residual"))
+            )
 
     def _search_unreconciled(self, operator, value):
         if operator not in ("=", "!=") or not isinstance(value, bool):

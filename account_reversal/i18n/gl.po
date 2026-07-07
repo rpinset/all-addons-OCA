@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-23 03:37+0000\n"
-"PO-Revision-Date: 2026-03-27 01:45+0000\n"
+"PO-Revision-Date: 2026-07-05 23:46+0000\n"
 "Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: Galician (https://www.transifex.com/oca/teams/23907/gl/)\n"
 "Language: gl\n"
@@ -57,7 +57,7 @@ msgstr "Creado en"
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Mostrar nome"
 
 #. module: account_reversal
 #: model:ir.model.fields,help:account_reversal.field_account_move_reverse_date
@@ -65,6 +65,8 @@ msgid ""
 "Enter the date of the reversal account entries. By default, Odoo proposes "
 "the same date of the move to reverse."
 msgstr ""
+"Introduza a data para os asentos contables revertidos. Por defecto, Odoo "
+"propón a mesma data que o asento a reverter."
 
 #. module: account_reversal
 #: model:ir.model.fields,help:account_reversal.field_account_move_reverse_journal_id
@@ -72,11 +74,13 @@ msgid ""
 "Enter the journal of the reversal account entries. If empty, Odoo uses the "
 "same journal of the move to reverse."
 msgstr ""
+"Introduce o diario para as reversións. Se está baleiro, Odoo usará o mesmo "
+"diario do movemento a reverter."
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_move_prefix
 msgid "Entries Ref. Prefix"
-msgstr ""
+msgstr "Prefixo da ref. dos asentos"
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_id
@@ -86,14 +90,14 @@ msgstr "ID"
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_line_prefix
 msgid "Items Name Prefix"
-msgstr ""
+msgstr "Prefixo do nome dos apuntes"
 
 #. module: account_reversal
 #: model:ir.actions.act_window,name:account_reversal.action_move_to_be_reversed
 #: model:ir.ui.menu,name:account_reversal.menu_move_to_be_reversed
 #: model:ir.ui.view,arch_db:account_reversal.view_account_move_filter
 msgid "Journal Entries to be Reversed"
-msgstr ""
+msgstr "Asentos contables para ser revertidos"
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse___last_update
@@ -113,7 +117,7 @@ msgstr "Última actualización en"
 #. module: account_reversal
 #: model:ir.model.fields,help:account_reversal.field_account_move_reverse_reconcile
 msgid "Mark this if you want to reconcile items of both moves."
-msgstr ""
+msgstr "Marque isto se desexa conciliar os apuntes de ambos asentos."
 
 #. module: account_reversal
 #: model:ir.model.fields,help:account_reversal.field_account_move_reverse_line_prefix
@@ -122,6 +126,9 @@ msgid ""
 "items. If empty, Odoo uses the same name of the move line to reverse. (NOTE: "
 "A space is added after the prefix)."
 msgstr ""
+"Prefixo que se engadirá ao nome do apunte revertido. Se está baleiro, Odoo "
+"usará o mesmo nome de movemento a reverter. (NOTA: engádese automaticamente "
+"un espazo despois do prefixo)."
 
 #. module: account_reversal
 #: model:ir.model.fields,help:account_reversal.field_account_move_reverse_move_prefix
@@ -130,37 +137,40 @@ msgid ""
 "empty, Odoo uses the Ref of the move to reverse. (NOTE: A space is added "
 "after the prefix)."
 msgstr ""
+"Prefixo que se engadirá á referencia do asento revertido. Se está baleiro, "
+"Odoo usará a mesma referencia do asento a reverter. (NOTA: engádese "
+"automaticamente un espazo despois do prefixo)."
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_reconcile
 msgid "Reconcile"
-msgstr ""
+msgstr "Conciliación"
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_date
 msgid "Reversal Date"
-msgstr ""
+msgstr "Data de reversión"
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reversal_id_5678
 msgid "Reversal Entry"
-msgstr ""
+msgstr "Asento revertido"
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_reverse_journal_id
 msgid "Reversal Journal"
-msgstr ""
+msgstr "Diario de reversión"
 
 #. module: account_reversal
 #: model:ir.ui.view,arch_db:account_reversal.view_account_move_reverse
 msgid "Reverse Entries"
-msgstr ""
+msgstr "Asentos revertidos"
 
 #. module: account_reversal
 #: code:addons/account_reversal/wizard/account_move_reverse.py:58
 #, python-format
 msgid "Reverse moves"
-msgstr ""
+msgstr "Asentos revertidos"
 
 #. module: account_reversal
 #: model:ir.ui.view,arch_db:account_reversal.view_account_move_reverse
@@ -168,18 +178,20 @@ msgid ""
 "This will create reversal for all selected entries whether checked 'to be "
 "reversed' or not."
 msgstr ""
+"Isto creará unha reversión de todos os asentos seleccionados tanto se teñen "
+"o cadro \"A ser revertido\" como se non."
 
 #. module: account_reversal
 #: model:ir.model.fields,field_description:account_reversal.field_account_move_to_be_reversed
 #: model:ir.ui.view,arch_db:account_reversal.view_account_move_filter
 msgid "To Be Reversed"
-msgstr ""
+msgstr "A ser revertido"
 
 #. module: account_reversal
 #: code:addons/account_reversal/models/account_move.py:56
 #, python-format
 msgid "Wrong company Journal is '%s' but we have '%s'"
-msgstr ""
+msgstr "Diario da compañía equivocado é '%s' pero temos '%s'"
 
 #. module: account_reversal
 #: model:ir.ui.view,arch_db:account_reversal.view_account_move_reverse
