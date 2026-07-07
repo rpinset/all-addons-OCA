@@ -3,7 +3,7 @@
 
 {
     "name": "ITA - Ricevute bancarie - Asincrono",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.2.1",
     "author": "PyTech, Odoo Community Association (OCA)",
     "category": "Localization/Italy",
     "summary": "Pagare righe RiBa in modo asincrono.",
@@ -14,6 +14,8 @@
         "queue_job",
     ],
     "data": [
+        "data/queue_job_channel_data.xml",
+        "data/queue_job_function_data.xml",
         "wizards/wizard_riba_multiple_payment_views.xml",
     ],
 }

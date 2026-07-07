@@ -640,7 +640,13 @@ class GeneralLedgerReport(models.AbstractModel):
         return account
 
     def _get_list_grouped_item(
-        self, data, account, rec_after_date_to_ids, hide_account_at_0, rounding
+        self,
+        data,
+        account,
+        rec_after_date_to_ids,
+        hide_account_at_0,
+        hide_account_at_end_0,
+        rounding,
     ):
         list_grouped = []
         for data_id in data.keys():
@@ -670,6 +676,11 @@ class GeneralLedgerReport(models.AbstractModel):
                     and group_item["move_lines"] == []
                 ):
                     continue
+                if hide_account_at_end_0 and float_is_zero(
+                    data[data_id]["fin_bal"]["balance"],
+                    precision_rounding=rounding,
+                ):
+                    continue
                 list_grouped += [group_item]
         return account, list_grouped
 
@@ -680,6 +691,7 @@ class GeneralLedgerReport(models.AbstractModel):
         grouped_by,
         rec_after_date_to_ids,
         hide_account_at_0,
+        hide_account_at_end_0,
     ):
         general_ledger = []
         rounding = self.env.company.currency_id.rounding
@@ -708,6 +720,11 @@ class GeneralLedgerReport(models.AbstractModel):
                     and account["move_lines"] == []
                 ):
                     continue
+                if hide_account_at_end_0 and float_is_zero(
+                    gen_led_data[acc_id]["fin_bal"]["balance"],
+                    precision_rounding=rounding,
+                ):
+                    continue
             else:
                 if grouped_by:
                     account, list_grouped = self._get_list_grouped_item(
@@ -715,6 +732,7 @@ class GeneralLedgerReport(models.AbstractModel):
                         account,
                         rec_after_date_to_ids,
                         hide_account_at_0,
+                        hide_account_at_end_0,
                         rounding,
                     )
                     account.update({"list_grouped": list_grouped})
@@ -725,6 +743,11 @@ class GeneralLedgerReport(models.AbstractModel):
                             precision_rounding=rounding,
                         )
                         and account["list_grouped"] == []
+                    ):
+                        continue
+                    if hide_account_at_end_0 and float_is_zero(
+                        gen_led_data[acc_id]["fin_bal"]["balance"],
+                        precision_rounding=rounding,
                     ):
                         continue
                 else:
@@ -738,6 +761,11 @@ class GeneralLedgerReport(models.AbstractModel):
                             precision_rounding=rounding,
                         )
                         and account["move_lines"] == []
+                    ):
+                        continue
+                    if hide_account_at_end_0 and float_is_zero(
+                        gen_led_data[acc_id]["fin_bal"]["balance"],
+                        precision_rounding=rounding,
                     ):
                         continue
             general_ledger += [account]
@@ -823,6 +851,7 @@ class GeneralLedgerReport(models.AbstractModel):
         grouped_by = wizard.grouped_by
         aggregated_payment_term_lines = wizard.aggregated_payment_term_lines
         hide_account_at_0 = wizard.hide_account_at_0
+        hide_account_at_end_0 = wizard.hide_account_at_end_0
         foreign_currency = wizard.foreign_currency
         only_posted_moves = wizard.target_move == "posted"
         unaffected_earnings_account = wizard.unaffected_earnings_account.id
@@ -872,6 +901,7 @@ class GeneralLedgerReport(models.AbstractModel):
             grouped_by,
             rec_after_date_to_ids,
             hide_account_at_0,
+            hide_account_at_end_0,
         )
         if centralize:
             for account in general_ledger:
@@ -901,6 +931,7 @@ class GeneralLedgerReport(models.AbstractModel):
             "date_to": date_to,
             "only_posted_moves": only_posted_moves,
             "hide_account_at_0": hide_account_at_0,
+            "hide_account_at_end_0": hide_account_at_end_0,
             "show_analytic_tags": wizard.show_analytic_tags,
             "show_cost_center": wizard.show_cost_center,
             "general_ledger": general_ledger,

@@ -37,11 +37,14 @@ class GeneralLedgerReportWizard(models.TransientModel):
     )
     centralize = fields.Boolean(string="Activate centralization", default=True)
     hide_account_at_0 = fields.Boolean(
-        string="Hide account ending balance at 0",
+        string="Hide account with initial balance at 0 and no movements",
         help="Use this filter to hide an account or a partner "
-        "with an ending balance at 0. "
-        "If partners are filtered, "
-        "debits and credits totals will not match the trial balance.",
+        "with an initial balance at 0 and no movements. ",
+    )
+    hide_account_at_end_0 = fields.Boolean(
+        string="Hide accounts with 0 end balance",
+        help="When this option is enabled, the general ledger will "
+        "not display accounts or partners that have 0 ending balance.",
     )
     show_analytic_tags = fields.Boolean(
         string="Show analytic tags",

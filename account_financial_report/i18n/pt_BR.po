@@ -142,6 +142,13 @@ msgid "Account balance at 0 filter"
 msgstr "Filtro de Saldo Zerado em Conta"
 
 #. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#, python-format
+msgid "Account final balance at 0 filter"
+msgstr ""
+
+#. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_group__account_ids
 msgid "Accounts"
 msgstr "Contas"
@@ -937,10 +944,14 @@ msgid "Hide"
 msgstr "Ocultar"
 
 #. module: account_financial_report
-#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
 #: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__hide_account_at_0
 msgid "Hide account ending balance at 0"
 msgstr "Ocultar conta com saldo final zerado"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
+msgid "Hide account with initial balance at 0 and no movements"
+msgstr ""
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0
@@ -948,6 +959,7 @@ msgid "Hide accounts at 0"
 msgstr "Ocultar contas zeradas"
 
 #. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__hide_account_at_end_0
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0
 msgid "Hide accounts with 0 end balance"
 msgstr ""
@@ -1765,7 +1777,6 @@ msgid "Unaffected Earnings Account"
 msgstr "Conta de Receitas Não Afetada"
 
 #. module: account_financial_report
-#: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
 #: model:ir.model.fields,help:account_financial_report.field_open_items_report_wizard__hide_account_at_0
 msgid ""
 "Use this filter to hide an account or a partner with an ending balance at 0. "
@@ -1775,6 +1786,13 @@ msgstr ""
 "Utilize este filtro para ocultar as contas ou empresas com saldo final "
 "zerado. Se houver parceiros filtrados, os totais de débitos e créditos não "
 "coincidirão com o balancete."
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
+msgid ""
+"Use this filter to hide an account or a partner with an initial balance at 0 "
+"and no movements. "
+msgstr ""
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__show_hierarchy
@@ -1836,6 +1854,13 @@ msgstr "Relatório de Impostos XLSX"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
 msgid "View"
 msgstr "Visualizar"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_end_0
+msgid ""
+"When this option is enabled, the general ledger will not display accounts or "
+"partners that have 0 ending balance."
+msgstr ""
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0

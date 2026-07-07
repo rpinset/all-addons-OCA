@@ -289,7 +289,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 14.0.3.14.2 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 14.0.3.14.3 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 14.0.1.0.1 |  | Journal Items Excel export
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.5 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
@@ -4045,7 +4045,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.12 |  | Inversione contabile
 [l10n_it_reverse_charge_start_end_dates](l10n_it_reverse_charge_start_end_dates/) | 14.0.1.0.0 |  | Gestione delle date di competenza per le autofatture in reverse charge
-[l10n_it_riba_queued](l10n_it_riba_queued/) | 14.0.1.2.0 |  | Pagare righe RiBa in modo asincrono.
+[l10n_it_riba_queued](l10n_it_riba_queued/) | 14.0.1.2.1 |  | Pagare righe RiBa in modo asincrono.
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | <a href='https://github.com/odooNextev'><img src='https://github.com/odooNextev.png' width='32' height='32' style='border-radius:50%;' alt='odooNextev'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Modulo ponte tra provvigioni agenti e RiBa
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.21.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Usare gli standard CBI per SEPA Credit Transfer

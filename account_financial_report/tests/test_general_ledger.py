@@ -792,3 +792,63 @@ class TestGeneralLedgerReport(AccountTestInvoicingCommon):
                             self.fail("Invoice showing multiple lines")
 
         self.assertEqual(found_move_line["balance"], invoice.amount_total)
+
+    def _move_amount(self, amount, from_account, to_account, move_date):
+        """Move `amount` from account `from_account` to account `to_account` on `move_date`."""
+        entry_form = Form(self.env["account.move"])
+        entry_form.partner_id = self.env.ref("base.res_partner_12")
+        entry_form.date = move_date
+        with entry_form.line_ids.new() as line:
+            line.name = "Test"
+            line.account_id = from_account
+            line.credit = 100
+        with entry_form.line_ids.new() as line:
+            line.name = "Test"
+            line.account_id = to_account
+            line.debit = 100
+        entry = entry_form.save()
+        entry.action_post()
+        return entry
+
+    def test_hide_account_at_end_0(self):
+        """When "Hide accounts with 0 end balance" is enabled,
+        accounts that have 0 end balance are hidden.
+        """
+        # Arrange
+        wizard = self.env["general.ledger.report.wizard"].create(
+            {
+                "date_from": self.fy_date_start,
+                "date_to": self.fy_date_end,
+                "hide_account_at_end_0": True,
+            }
+        )
+        start_date = wizard.date_from
+        end_date = wizard.date_to
+        report_interval = end_date - start_date
+        before_date = start_date - report_interval
+        in_date = start_date + report_interval / 2
+        account = self.receivable_account
+        # One account has initial balance > 0
+        # but end balance = 0
+        only_initial_account = account.copy()
+        self._move_amount(100, account, only_initial_account, before_date)
+        self._move_amount(100, only_initial_account, account, in_date)
+        # Another account has initial balance = 0
+        # but end balance > 0
+        only_end_account = account.copy()
+        self._move_amount(100, account, only_end_account, in_date)
+
+        # Act
+        prepared_data = wizard._prepare_report_general_ledger()
+        report_values = self.env[
+            "report.account_financial_report.general_ledger"
+        ]._get_report_values(wizard, prepared_data)
+        general_ledger = report_values["general_ledger"]
+
+        # Assert
+        self.assertFalse(
+            self.check_account_in_report(only_initial_account.id, general_ledger)
+        )
+        self.assertTrue(
+            self.check_account_in_report(only_end_account.id, general_ledger)
+        )

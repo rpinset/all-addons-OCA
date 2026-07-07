@@ -111,6 +111,10 @@ class GeneralLedgerXslx(models.AbstractModel):
                 _("Account balance at 0 filter"),
                 _("Hide") if report.hide_account_at_0 else _("Show"),
             ],
+            [
+                _("Account final balance at 0 filter"),
+                _("Hide") if report.hide_account_at_end_0 else _("Show"),
+            ],
             [_("Centralize filter"), _("Yes") if report.centralize else _("No")],
             [
                 _("Show analytic tags"),

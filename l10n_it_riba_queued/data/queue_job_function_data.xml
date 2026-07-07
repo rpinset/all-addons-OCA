@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ~ Copyright 2026 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="job_function_riba_settle" model="queue.job.function">
+        <field
+            name="model_id"
+            ref="l10n_it_ricevute_bancarie.model_riba_distinta_line"
+        />
+        <field name="method">riba_line_settlement</field>
+        <field name="channel_id" ref="channel_riba" />
+    </record>
+</odoo>

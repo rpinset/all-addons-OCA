@@ -29,6 +29,7 @@
                             <field name="aggregated_payment_term_lines" />
                             <field name="centralize" />
                             <field name="hide_account_at_0" />
+                            <field name="hide_account_at_end_0" />
                             <field name="foreign_currency" />
                             <field name="show_analytic_tags" />
                             <field name="show_cost_center" />

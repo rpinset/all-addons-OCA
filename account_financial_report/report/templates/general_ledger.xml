@@ -108,6 +108,7 @@
                 <div class="act_as_cell">Date range filter</div>
                 <div class="act_as_cell">Target moves filter</div>
                 <div class="act_as_cell">Account balance at 0 filter</div>
+                <div class="act_as_cell">Account final balance at 0 filter</div>
                 <div class="act_as_cell">Centralize filter</div>
                 <div class="act_as_cell">Show analytic tags</div>
             </div>
@@ -125,6 +126,10 @@
                 <div class="act_as_cell">
                     <t t-if="hide_account_at_0">Hide</t>
                     <t t-if="not hide_account_at_0">Show</t>
+                </div>
+                <div class="act_as_cell">
+                    <t t-if="hide_account_at_end_0">Hide</t>
+                    <t t-if="not hide_account_at_end_0">Show</t>
                 </div>
                 <div class="act_as_cell">
                     <t t-if="centralize">Yes</t>
