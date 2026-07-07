@@ -104,3 +104,13 @@ class SaleOrderLine(models.Model):
             line.product_uom = line.product_tmpl_id.uom_id
         self -= lines_with_template
         return super()._compute_product_uom()
+
+    @api.depends("product_tmpl_id")
+    def _compute_allowed_uom_ids(self):
+        res = super()._compute_allowed_uom_ids()
+        for line in self:
+            if line.product_tmpl_id and not line.product_id:
+                line.allowed_uom_ids += (
+                    line.product_tmpl_id.uom_id | line.product_tmpl_id.uom_ids
+                )
+        return res
