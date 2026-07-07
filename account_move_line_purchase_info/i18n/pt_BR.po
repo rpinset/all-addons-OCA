@@ -12,8 +12,8 @@ msgstr ""
 "POT-Creation-Date: 2017-03-01 04:03+0000\n"
 "PO-Revision-Date: 2023-11-14 20:38+0000\n"
 "Last-Translator: Adriano Prado <adrianojprado@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
-"teams/23907/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
+"23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,6 +31,11 @@ msgstr "Entradas Diário"
 #: model:ir.model.fields,field_description:account_move_line_purchase_info.field_purchase_order__journal_entries_count
 msgid "Journal Entries Count"
 msgstr "Contagem de entradas de diário"
+
+#. module: account_move_line_purchase_info
+#: model:ir.model,name:account_move_line_purchase_info.model_account_move
+msgid "Journal Entry"
+msgstr ""
 
 #. module: account_move_line_purchase_info
 #: model:ir.model,name:account_move_line_purchase_info.model_account_move_line

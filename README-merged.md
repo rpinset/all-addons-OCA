@@ -319,7 +319,7 @@ addon | version | maintainers | summary
 [account_lock_date_update](account_lock_date_update/) | 17.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_lock_to_date](account_lock_to_date/) | 17.0.1.0.1 |  | Allows to set an account lock date in the future.
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
-[account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.2.0.0 |  | Introduces the purchase order line to the journal items
+[account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.2.1.0 |  | Introduces the purchase order line to the journal items
 [account_move_line_sale_info](account_move_line_sale_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
 [account_move_line_tax_editable](account_move_line_tax_editable/) | 17.0.1.0.0 |  | Allows to edit taxes on non-posted account move lines
 [account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.5 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Generate journal entry number from sequence
@@ -334,7 +334,7 @@ addon | version | maintainers | summary
 [account_tax_repartition_line_tax_group_account](account_tax_repartition_line_tax_group_account/) | 17.0.1.0.0 |  | Set a default account from tax group to tax repartition lines
 [account_usability](account_usability/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [mail_template_substitute_account_move](mail_template_substitute_account_move/) | 17.0.1.0.0 | <a href='https://github.com/SodexisTeam'><img src='https://github.com/SodexisTeam.png' width='32' height='32' style='border-radius:50%;' alt='SodexisTeam'/></a> | Module to support Mail Template Substitution for Account Move
-[purchase_unreconciled](purchase_unreconciled/) | 17.0.2.1.0 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
+[purchase_unreconciled](purchase_unreconciled/) | 17.0.2.1.1 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Purchase Unreconciled
 
 [//]: # (end addons)
 
@@ -3759,7 +3759,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.1 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.7 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.1 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.2 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.1.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 17.0.1.1.0 |  | Envío de pedidos del TPV al SII
@@ -4109,15 +4109,15 @@ addon | version | maintainers | summary
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your health and safety management system
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 17.0.1.0.0 |  | Information Security Management System Manual
 [mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.1 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.3.0 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.4.0 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 17.0.1.0.0 |  | Management System - Nonconformity Hazard
-[mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 17.0.1.0.0 |  | Bridge module between hr and mgmsystem and
-[mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 17.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
-[mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 17.0.1.0.0 |  | Bridge module between mrp and mgmsystem
-[mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 17.0.1.0.0 |  | Bridge module between Product and Management System.
+[mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 17.0.1.1.0 |  | Bridge module between hr and mgmsystem and
+[mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 17.0.1.1.0 |  | Management System - Nonconformity Maintenance Equipment
+[mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 17.0.1.1.0 |  | Bridge module between mrp and mgmsystem
+[mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 17.0.1.1.0 |  | Bridge module between Product and Management System.
 [mgmtsystem_nonconformity_quality_control_oca](mgmtsystem_nonconformity_quality_control_oca/) | 17.0.1.0.0 |  | Bridge module between Quality Control and Non Conformities
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 17.0.1.0.0 |  | Bridge module between Repair and Non Conformities
-[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.0.0 |  | Add Nonconformity classification for the root context.
+[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.1.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 17.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 17.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 17.0.2.0.0 |  | Management System - Review
