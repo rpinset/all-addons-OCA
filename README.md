@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-07-07 21:45 UTC** (elapsed 103s)
+Last build: **2026-07-09 05:05 UTC** (elapsed 71s)
 
 - Repos integrated: **126**
-- Canonical modules: **1902**
+- Canonical modules: **1903**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **129**
 
@@ -107,7 +107,7 @@ Last build: **2026-07-07 21:45 UTC** (elapsed 103s)
 | [rma](https://github.com/OCA/rma) | 5 | 1e2f76a 2026-06-22 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 9 | 4722233 2026-05-18 OCA-git-bot [BOT] post-merge updates |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 7 | 5ff19be 2026-04-20 mymage Translated using Weblate (Italian) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 93 | 7b765dd 2026-06-30 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 94 | ec4ce16 2026-07-08 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 21 | bde5171 2026-07-01 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 9 | daf2afd 2025-11-13 Weblate Update translation files |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 220e824 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
