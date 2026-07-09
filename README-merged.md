@@ -6637,6 +6637,9 @@ and promote its widespread use.
 ## From OCA/stock-logistics-warehouse
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-warehouse
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-warehouse&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml?query=branch%3A15.0)
@@ -6645,9 +6648,15 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
+<<<<<<< before updating
 # stock-logistics-warehouse
 
 This project aim to deal with modules related to the management of warehouses. You'll find modules that:
+=======
+This project aim to deal with modules related to the management of warehouses. Youll find modules that:\n - Ease inventory by adding various possibilities - Move all product from one location to another - Manage the product catalog (merge them,..)
+Please dont hesitate to suggest one of your module to this project. Also, you may want to have a look on those other projects here:
+- https://github.com/OCA/stock-logistics-tracking - https://github.com/OCA/stock-logistics-barcode - https://github.com/OCA/stock-logistics-workflow
+>>>>>>> after updating
 
 <!-- /!\ do not modify below this line -->
 
@@ -6703,6 +6712,7 @@ addon | version | maintainers | summary
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
+[stock_removal_location_by_priority](stock_removal_location_by_priority/) | 15.0.1.0.0 |  | Establish a removal priority on stock locations.
 [stock_request](stock_request/) | 15.0.1.8.3 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.1 | <a href='https://github.com/AaronHForgeFlow'><img src='https://github.com/AaronHForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AaronHForgeFlow'/></a> | Internal request for stock
 [stock_request_bom](stock_request_bom/) | 15.0.1.0.0 |  | Stock Request with BOM Integration

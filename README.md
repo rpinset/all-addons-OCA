@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-07 21:44 UTC** (elapsed 112s)
+Last build: **2026-07-09 05:05 UTC** (elapsed 68s)
 
 - Repos integrated: **117**
-- Canonical modules: **2096**
+- Canonical modules: **2097**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **138**
 
@@ -114,7 +114,7 @@ Last build: **2026-07-07 21:44 UTC** (elapsed 112s)
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 14 | 47c4428 2025-09-09 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 15 | c4b3e65 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 5c4fe7a 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 59 | 395b84f 2026-06-30 mymage Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 60 | e140531 2026-07-08 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 97e0c60 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | 0fbad2b 2026-04-20 Weblate Update translation files |
 | [storage](https://github.com/OCA/storage) | 13 | 1ea7f73 2025-02-09 oca-git-bot [IMP] update dotfiles |
