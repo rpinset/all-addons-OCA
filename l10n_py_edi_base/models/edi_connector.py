@@ -72,6 +72,14 @@ class EDIConnector(models.Model):
             % self.provider_type
         )
 
+    def preview_qr(self, invoice_data):
+        """Build CDC + dCarQR without transmitting. Returns {cdc, qr}."""
+        self.ensure_one()
+        raise UserError(
+            _("El proveedor '%s' no implementa la previsualización del QR")
+            % self.provider_type
+        )
+
     def inutilize_range(self, data):
         """Inutilize a range of document numbers. Returns dict."""
         self.ensure_one()

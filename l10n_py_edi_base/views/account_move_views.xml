@@ -97,6 +97,12 @@
                     attrs="{'invisible': [('l10n_py_edi_status', 'in', ['sent', 'accepted', 'processing'])]}"
                 />
                 <button
+                    name="action_l10n_py_preview_qr"
+                    string="Previsualizar QR"
+                    type="object"
+                    attrs="{'invisible': [('l10n_py_edi_status', 'in', ['sent', 'accepted', 'processing'])]}"
+                />
+                <button
                     name="action_send_edi"
                     string="Enviar a EDI"
                     type="object"

@@ -1,6 +1,7 @@
 # l10n_py_edi_base/models/account_move.py
 
 import logging
+import re
 import secrets
 import string
 
@@ -625,7 +626,18 @@ class AccountMove(models.Model):
                 "codigo": (
                     line.product_id.default_code or f"PROD-{line.product_id.id}"
                 ),
-                "descripcion": line.name or line.product_id.name,
+                # Odoo antepone "[CÓDIGO] " al nombre de línea y permite saltos
+                # de línea; el SET valida un patrón en dDesProSer, así que se
+                # quita el prefijo y se colapsan los espacios/saltos.
+                "descripcion": re.sub(
+                    r"\s+",
+                    " ",
+                    re.sub(
+                        r"^\[[^\]]*\]\s*",
+                        "",
+                        (line.name or line.product_id.name or ""),
+                    ),
+                ).strip(),
                 "observacion": "",
                 "ncm": (
                     line.product_id.l10n_py_ncm_code
@@ -1047,6 +1059,9 @@ class AccountMove(models.Model):
                 }
             )
 
+            # Generar la imagen del QR a partir del enlace dCarQR
+            self._l10n_py_generate_qr_image()
+
             # Guardar XML si viene
             if de_data.get("xml"):
                 import base64 as b64
@@ -1059,6 +1074,52 @@ class AccountMove(models.Model):
                 self._generate_kude()
             except Exception as e:
                 _logger.warning("Error generando KuDE: %s", str(e))
+
+    def _l10n_py_generate_qr_image(self):
+        """Genera la imagen PNG del QR (l10n_py_qr_code) desde el enlace."""
+        from ..services.qr_generator import QRGenerator
+
+        for move in self:
+            if move.l10n_py_qr_string:
+                move.l10n_py_qr_code = QRGenerator.generate_image(
+                    move.l10n_py_qr_string
+                )
+
+    def action_l10n_py_preview_qr(self):
+        """Genera CDC + QR (firma local) SIN transmitir, para previsualizar.
+
+        Útil para verificar el QR/KuDE en pruebas. El CDC generado es de
+        previsualización; la emisión real lo regenera al transmitir.
+        """
+        self.ensure_one()
+        self._validate_edi_data()
+        document_data = self._prepare_edi_document_data()
+        connector = self._get_edi_connector()
+        result = connector.preview_qr(document_data)
+        if not result or not result.get("qr"):
+            raise UserError(
+                _(
+                    "No se pudo generar el QR. Verifique el certificado y el "
+                    "CSC/IdCSC configurados en el conector EDI."
+                )
+            )
+        self.write(
+            {
+                "l10n_py_cdc": result.get("cdc"),
+                "l10n_py_qr_string": result["qr"],
+            }
+        )
+        self._l10n_py_generate_qr_image()
+        return {
+            "type": "ir.actions.client",
+            "tag": "display_notification",
+            "params": {
+                "type": "success",
+                "title": _("QR generado"),
+                "message": _("CDC y código QR de previsualización generados."),
+                "sticky": False,
+            },
+        }
 
     def _validate_cancel_deadline(self):
         """Validar plazo de cancelación según tipo de documento SIFEN.

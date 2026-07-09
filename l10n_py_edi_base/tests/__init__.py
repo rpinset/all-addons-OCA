@@ -1,4 +1,5 @@
 from . import test_cdc_generation
+from . import test_qr_generator
 from . import test_edi_validation
 from . import test_edi_log
 from . import test_associated_document
