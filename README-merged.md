@@ -786,7 +786,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 19.0.1.0.0 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 19.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 19.0.1.0.0 |  | Import QIF Bank Statements
-[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 19.0.2.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV files as Bank Statements in Odoo
+[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 19.0.2.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV files as Bank Statements in Odoo
 [account_statement_import_sheet_file_xls](account_statement_import_sheet_file_xls/) | 19.0.2.0.0 |  | Import XLS files as Bank Statements in Odoo
 [account_statement_import_sheet_file_xlsx](account_statement_import_sheet_file_xlsx/) | 19.0.2.0.0 |  | Import XLSX files as Bank Statements in Odoo
 
@@ -1651,6 +1651,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [event_registration_cancel_reason](event_registration_cancel_reason/) | 19.0.1.0.0 |  | Reasons for event registrations cancellations
+[event_registration_partner_unique](event_registration_partner_unique/) | 19.0.1.0.0 |  | Enforces 1 registration per partner and event
 [event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 19.0.1.0.0 |  | Free tickets no invoiceable
 [partner_event](partner_event/) | 19.0.1.0.0 |  | Link partner to events
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 19.0.1.0.0 |  | Events Questions conditional to the chosen ticket
@@ -2585,6 +2586,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_banxico](currency_rate_update_banxico/) | 19.0.1.0.0 |  | Update exchange rates using Banxico
 [l10n_mx_catalogs](l10n_mx_catalogs/) | 19.0.1.0.0 |  | Catalogs of Servicio de Administración Tributaria (SAT) from México
+[l10n_mx_catalogs_comex](l10n_mx_catalogs_comex/) | 19.0.1.0.0 |  | Foreign trade catalogs for Mexico
 [l10n_mx_cfdi](l10n_mx_cfdi/) | 19.0.1.0.0 |  | Allow generating CFDI (Comprobante Fiscal Digital por Internet)
 [l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 19.0.1.0.0 |  | Mexico CFDI Account Integration
 
@@ -2811,6 +2813,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 19.0.1.0.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
+[delivery_mrw](delivery_mrw/) | 19.0.1.0.0 |  | Delivery Carrier implementation for MRW with SAGEC API
 [delivery_seur_atlas](delivery_seur_atlas/) | 19.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 19.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
@@ -2829,6 +2832,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 19.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 19.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_facturae](l10n_es_facturae/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 19.0.1.0.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_mis_report](l10n_es_mis_report/) | 19.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 19.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
@@ -4741,6 +4745,7 @@ addon | version | maintainers | summary
 [base_external_dbsource](base_external_dbsource/) | 19.0.1.0.0 |  | External Database Sources
 [base_global_discount](base_global_discount/) | 19.0.1.0.0 |  | Base Global Discount
 [base_user_role](base_user_role/) | 19.0.1.0.2 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/jcdrubay'><img src='https://github.com/jcdrubay.png' width='32' height='32' style='border-radius:50%;' alt='jcdrubay'/></a> <a href='https://github.com/novawish'><img src='https://github.com/novawish.png' width='32' height='32' style='border-radius:50%;' alt='novawish'/></a> | User roles
+[base_user_role_company](base_user_role_company/) | 19.0.1.0.0 |  | User roles by company
 
 [//]: # (end addons)
 
@@ -5369,7 +5374,11 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [tms](tms/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles, Drivers, Routes and Trips
+[tms_account](tms_account/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Track invoices linked to TMS orders
+[tms_expense](tms_expense/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage expenses of a trip: hotel, tolls, fuel
 [tms_product](tms_product/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles as Products
+[tms_purchase](tms_purchase/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage purchase requests to drivers and other suppliers
+[tms_sale](tms_sale/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Sell transportation management system.
 
 [//]: # (end addons)
 
@@ -5484,7 +5493,7 @@ addon | version | maintainers | summary
 [sale_stock_picking_invoice_link](sale_stock_picking_invoice_link/) | 19.0.1.0.0 |  | Adds link between pickings and invoices
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 19.0.1.0.0 |  | Add more flexibility in the run fifo method.
 [stock_dangerous_goods](stock_dangerous_goods/) | 19.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Adds utility fields to manage dangerous goods
-[stock_landed_costs_purchase_auto](stock_landed_costs_purchase_auto/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock landed costs purchase auto
+[stock_landed_costs_purchase_auto](stock_landed_costs_purchase_auto/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock landed costs purchase auto
 [stock_lot_scrap](stock_lot_scrap/) | 19.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
 [stock_move_valuation_usage](stock_move_valuation_usage/) | 19.0.1.0.0 |  | Trace where stock move valuation has been used, including quantities and values taken.
 [stock_no_negative](stock_no_negative/) | 19.0.1.0.0 |  | Disallow negative stock levels by default
@@ -5494,7 +5503,7 @@ addon | version | maintainers | summary
 [stock_picking_auto_create_package](stock_picking_auto_create_package/) | 19.0.1.1.0 |  | Put all move lines in packs on validation.
 [stock_picking_back2draft](stock_picking_back2draft/) | 19.0.1.0.0 |  | Reopen canceled transfers
 [stock_picking_batch_group_by_date](stock_picking_batch_group_by_date/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Group batch pickings by date
-[stock_picking_batch_partner_enable](stock_picking_batch_partner_enable/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Control the Automatic Batches grouping per partner
+[stock_picking_batch_partner_enable](stock_picking_batch_partner_enable/) | 19.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Control the Automatic Batches grouping per partner
 [stock_picking_batch_substate](stock_picking_batch_substate/) | 19.0.1.0.0 |  | Batch Transfer Sub State
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 19.0.1.0.0 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 19.0.1.0.1 |  | Adds link between pickings and invoices

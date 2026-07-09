@@ -6,211 +6,214 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-07-08 16:46+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
 "Language-Team: none\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__api_key
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__auth_type__api_key
 msgid "API Key"
-msgstr ""
+msgstr "API-nøgle"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__api_key_header
 msgid "API Key header"
-msgstr ""
+msgstr "API-nøgle-header"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_audience
 msgid "Audience"
-msgstr ""
+msgstr "Målgruppe"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__auth_type
 msgid "Auth Type"
-msgstr ""
+msgstr "Godkendelsestype"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_authorization_url
 msgid "Authorization URL"
-msgstr ""
+msgstr "Godkendelses-URL"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_flow__backend_application
 msgid "Backend Application (Client Credentials Grant)"
-msgstr ""
+msgstr "Backend-applikation (Client Credentials Grant)"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_clientid
 msgid "Client ID"
-msgstr ""
+msgstr "Klient-ID"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_client_secret
 msgid "Client Secret"
-msgstr ""
+msgstr "Klienthemmelighed"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__company_id
 msgid "Company"
-msgstr ""
+msgstr "Virksomhed"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__content_type
 msgid "Content Type"
-msgstr ""
+msgstr "Indholdstype"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Oprettet af"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Oprettet den"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Vis navn"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__content_type__application/x-www-form-urlencoded
 msgid "Form"
-msgstr ""
+msgstr "Formular"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__protocol__http
 msgid "HTTP Request"
-msgstr ""
+msgstr "HTTP-forespørgsel"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__content_type__application/json
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Sidst opdateret af"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Sidst opdateret den"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__name
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #. module: webservice
 #: model_terms:ir.ui.view,arch_db:webservice.webservice_backend_form_view
 msgid "OAuth Authorize"
-msgstr ""
+msgstr "OAuth-godkendelse"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__auth_type__oauth2
 msgid "OAuth2"
-msgstr ""
+msgstr "OAuth2"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_flow
 msgid "Oauth2 Flow"
-msgstr ""
+msgstr "OAuth2-flow"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_scope
 msgid "Oauth2 Scope"
-msgstr ""
+msgstr "OAuth2-scope"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_state
 msgid "Oauth2 State"
-msgstr ""
+msgstr "OAuth2-state"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_token
 msgid "Oauth2 Token"
-msgstr ""
+msgstr "OAuth2-token"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__password
 msgid "Password"
-msgstr ""
+msgstr "Adgangskode"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__protocol
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__auth_type__none
 msgid "Public"
-msgstr ""
+msgstr "Offentlig"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__redirect_url
 msgid "Redirect Url"
-msgstr ""
+msgstr "Omdirigerings-URL"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__tech_name
 msgid "Tech Name"
-msgstr ""
+msgstr "Teknisk navn"
 
 #. module: webservice
 #: model:ir.model.fields,help:webservice.field_webservice_backend__redirect_url
 msgid "The redirect URL to be used as part of the OAuth2 authorisation flow"
 msgstr ""
+"Omdirigerings-URL'en, der skal bruges som en del af OAuth2-godkendelsesflowet"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_token_url
 msgid "Token URL"
-msgstr ""
+msgstr "Token-URL"
 
 #. module: webservice
 #: model:ir.model.fields,help:webservice.field_webservice_backend__tech_name
 msgid "Unique name for technical purposes. Eg: server env keys."
-msgstr ""
+msgstr "Unikt navn til tekniske formål. F.eks.: servermiljønøgler."
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__url
 msgid "Url"
-msgstr ""
+msgstr "URL"
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__username
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__auth_type__user_pwd
 msgid "Username & password"
-msgstr ""
+msgstr "Brugernavn og adgangskode"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_flow__web_application
 msgid "Web Application (Authorization Code Grant)"
-msgstr ""
+msgstr "Webapplikation (Authorization Code Grant)"
 
 #. module: webservice
 #: model:ir.actions.act_window,name:webservice.webservice_backend_act_window
 #: model:ir.model,name:webservice.model_webservice_backend
 #: model:ir.ui.menu,name:webservice.webservice_backend_menu
 msgid "WebService Backend"
-msgstr ""
+msgstr "Webservicebackend"
 
 #. module: webservice
 #. odoo-python
@@ -219,11 +222,13 @@ msgid ""
 "Webservice '%(name)s' requires '%(auth_type)s' authentication. However, the "
 "following field(s) are not valued: %(fields)s"
 msgstr ""
+"Webservice '%(name)s' kræver '%(auth_type)s'-godkendelse. Følgende felt(er) "
+"har dog ingen værdi: %(fields)s"
 
 #. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__content_type__application/xml
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #. module: webservice
 #: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_state
@@ -231,13 +236,15 @@ msgid ""
 "random key generated when authorization flow starts to ensure that no CSRF "
 "attack happen"
 msgstr ""
+"tilfældig nøgle genereret, når godkendelsesflowet starter, for at sikre, at "
+"der ikke sker et CSRF-angreb"
 
 #. module: webservice
 #: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_scope
 msgid "scope of the the authorization"
-msgstr ""
+msgstr "godkendelsens scope"
 
 #. module: webservice
 #: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_token
 msgid "the OAuth2 token (serialized JSON)"
-msgstr ""
+msgstr "OAuth2-tokenet (serialiseret JSON)"
