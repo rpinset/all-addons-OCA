@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-09 05:05 UTC** (elapsed 68s)
+Last build: **2026-07-12 15:46 UTC** (elapsed 98s)
 
 - Repos integrated: **117**
 - Canonical modules: **2097**
@@ -71,7 +71,7 @@ Last build: **2026-07-09 05:05 UTC** (elapsed 68s)
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | 01d9e56 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-spain](https://github.com/OCA/l10n-spain) | 61 | 7b8c09c 2026-07-06 Weblate Update translation files |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 2 | 9ae910b 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-thailand](https://github.com/OCA/l10n-thailand) | 30 | 130cbf3 2026-04-23 OCA-git-bot [BOT] post-merge updates |
+| [l10n-thailand](https://github.com/OCA/l10n-thailand) | 30 | 796ec2b 2026-07-09 OCA-git-bot [BOT] post-merge updates |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 25 | 922ca6b 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | b4b3a8b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
