@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="view_l10n_it_edi_doi_form_type" model="ir.ui.view">
-        <field name="name">l10n_it_edi_doi.declaration_of_intent_type.form</field>
+        <field
+            name="name"
+        >l10n_it_edi_doi.declaration_of_intent_type.form.inherit</field>
         <field name="model">l10n_it_edi_doi.declaration_of_intent</field>
         <field name="inherit_id" ref="l10n_it_edi_doi.view_l10n_it_edi_doi_form" />
         <field name="arch" type="xml">
+            <div class="oe_button_box" position="before">
+                <h1 class="mt0">
+                    <field name="number" readonly="state != 'draft'" />
+                </h1>
+            </div>
             <field name="company_id" position="after">
+                <field name="type" readonly="state != 'draft'" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_l10n_it_edi_doi_tree" model="ir.ui.view">
+        <field name="name">l10n_it_edi_doi.declaration_of_intent.list.inherit</field>
+        <field name="model">l10n_it_edi_doi.declaration_of_intent</field>
+        <field name="inherit_id" ref="l10n_it_edi_doi.view_l10n_it_edi_doi_tree" />
+        <field name="arch" type="xml">
+            <field name="currency_id" position="after">
+                <field name="number" readonly="state != 'draft'" />
                 <field name="type" readonly="state != 'draft'" />
             </field>
         </field>

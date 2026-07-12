@@ -78,14 +78,13 @@ class AccountMoveDoi(models.Model):
     )
 
     @api.depends(
-        "declaration_id", "declaration_id.threshold", "declaration_id.invoiced"
+        "declaration_id",
+        "declaration_id.remaining",
     )
     def _compute_declaration_available(self):
         for record in self:
             if record.declaration_id:
-                record.declaration_available = (
-                    record.declaration_id.threshold - record.declaration_id.invoiced
-                )
+                record.declaration_available = record.declaration_id.remaining
             else:
                 record.declaration_available = 0
 
@@ -122,3 +121,32 @@ class AccountMoveDoi(models.Model):
                 )
             else:
                 record.display_name = _("New")
+
+    def _sync_l10n_it_edi_doi_id(self, moves=None):
+        """Sync l10n_it_edi_doi_id on the invoice with the first bridge record."""
+        if moves is None:
+            moves = self.mapped("move_id")
+        for move in moves:
+            doi_ids = move.l10n_it_edi_doi_ids
+            if doi_ids:
+                move.l10n_it_edi_doi_id = doi_ids[0].declaration_id
+            else:
+                move.l10n_it_edi_doi_id = False
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super().create(vals_list)
+        records._sync_l10n_it_edi_doi_id()
+        return records
+
+    def write(self, vals):
+        res = super().write(vals)
+        if "declaration_id" in vals:
+            self._sync_l10n_it_edi_doi_id()
+        return res
+
+    def unlink(self):
+        moves = self.mapped("move_id")
+        res = super().unlink()
+        self._sync_l10n_it_edi_doi_id(moves)
+        return res

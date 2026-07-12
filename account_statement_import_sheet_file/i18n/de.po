@@ -244,6 +244,12 @@ msgid "Encoding"
 msgstr "Kodierung"
 
 #. module: account_statement_import_sheet_file
+#. odoo-python
+#: code:addons/account_statement_import_sheet_file/models/account_statement_import_sheet_parser.py:0
+msgid "Failed to parse file"
+msgstr ""
+
+#. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__no_header
 msgid "File does not contain header line"
 msgstr "Datei enthält keine Kopfzeile"
@@ -348,12 +354,6 @@ msgstr "k. A."
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__name
 msgid "Name"
 msgstr "Name"
-
-#. module: account_statement_import_sheet_file
-#. odoo-python
-#: code:addons/account_statement_import_sheet_file/models/account_statement_import_sheet_parser.py:0
-msgid "No valid encoding was found for the attached file"
-msgstr "Keine gültige Kodierung für die angehängte Datei gefunden"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__notes_column
@@ -652,3 +652,6 @@ msgstr "Leerzeichen"
 #: model:ir.model.fields.selection,name:account_statement_import_sheet_file.selection__account_statement_import_sheet_mapping__delimiter__tab
 msgid "tab"
 msgstr "Tabulator"
+
+#~ msgid "No valid encoding was found for the attached file"
+#~ msgstr "Keine gültige Kodierung für die angehängte Datei gefunden"

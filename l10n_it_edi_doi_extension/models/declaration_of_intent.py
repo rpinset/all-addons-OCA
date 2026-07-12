@@ -7,6 +7,11 @@ from odoo.exceptions import UserError
 class L10nItDeclarationOfIntent(models.Model):
     _inherit = "l10n_it_edi_doi.declaration_of_intent"
 
+    number = fields.Char(
+        help="Sequential number for internal reference",
+        copy=False,
+    )
+
     purchase_order_ids = fields.One2many(
         "purchase.order",
         "l10n_it_edi_doi_id",
@@ -120,6 +125,15 @@ class L10nItDeclarationOfIntent(models.Model):
                 relevant_orders.mapped("l10n_it_edi_doi_not_yet_invoiced")
             )
         return  # W8110
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for values in vals_list:
+            if not values.get("number"):
+                values["number"] = self.env["ir.sequence"].next_by_code(
+                    "l10n_it_edi_doi.declaration_of_intent"
+                )
+        return super().create(vals_list)
 
     @api.ondelete(at_uninstall=False)
     def _unlink_except_linked_to_purchase_document(self):

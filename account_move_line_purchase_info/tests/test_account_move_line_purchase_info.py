@@ -222,6 +222,119 @@ class TestAccountMoveLinePurchaseInfo(common.TransactionCase):
         name_get_no_ctx = [(po_line.id, name_get_no_ctx[0]["display_name"])]
         self.assertEqual(name_get_no_ctx, [(po_line.id, po_line.name)])
 
+    def test_anglo_saxon_price_diff_links_oca_purchase_line_id(self):
+        """Vendor bill price-difference COGS lines (anglo-saxon, standard
+        cost) must carry oca_purchase_line_id linking to the originating
+        purchase.order.line, so purchase.order.line.stock_invoice_lines
+        and purchase.order.journal_entry_ids stay consistent.
+        """
+        self.company.anglo_saxon_accounting = True
+        # Configure price-difference account and standard cost on the
+        # product so purchase_stock generates the two extra COGS lines on
+        # the vendor bill.
+        acc_type = "expense"
+        price_diff_account = self._create_account(
+            acc_type, "Price Difference", "pricediff", self.company
+        )
+        self.product.categ_id.write(
+            {
+                "property_cost_method": "standard",
+                "property_account_creditor_price_difference_categ": (
+                    price_diff_account.id
+                ),
+            }
+        )
+        self.product.standard_price = 1.0
+        purchase = self._create_purchase([(self.product, 1)])
+        po_line = purchase.order_line[0]
+        purchase.button_confirm()
+        picking = purchase.picking_ids[0]
+        picking.action_confirm()
+        picking.move_ids.write({"quantity": 1.0, "picked": True})
+        picking.button_validate()
+        f = Form(self.am_model.with_context(default_move_type="in_invoice"))
+        f.partner_id = purchase.partner_id
+        f.invoice_date = fields.Date().today()
+        f.purchase_vendor_bill_id = self.env["purchase.bill.union"].browse(-purchase.id)
+        invoice = f.save()
+        invoice.action_post()
+        cogs_lines = invoice.line_ids.filtered(
+            lambda line: line.display_type == "cogs" and line.product_id == self.product
+        )
+        self.assertTrue(
+            cogs_lines,
+            "Expected price-difference COGS lines on the vendor bill",
+        )
+        self.assertTrue(
+            all(line.oca_purchase_line_id == po_line for line in cogs_lines),
+            "All price-difference COGS lines must link to the originating "
+            "purchase.order.line via oca_purchase_line_id",
+        )
+        self.assertLessEqual(
+            set(cogs_lines.ids),
+            set(po_line.stock_invoice_lines.ids),
+            "purchase.order.line.stock_invoice_lines should include the "
+            "price-difference COGS lines",
+        )
+
+    def test_fifo_price_diff_links_oca_purchase_line_id(self):
+        """FIFO/AVCO products generate price-difference COGS lines on the
+        vendor bill via _prepare_pdiff_aml_vals. They must also carry
+        oca_purchase_line_id.
+        """
+        # _prepare_pdiff_aml_vals routes to the product's expense account.
+        pdiff_account = self._create_account(
+            "expense", "Expense FIFO", "expfifo", self.company
+        )
+        self.product.categ_id.write(
+            {
+                "property_cost_method": "fifo",
+                "property_account_expense_categ_id": pdiff_account.id,
+            }
+        )
+        purchase = self._create_purchase([(self.product, 1)])
+        po_line = purchase.order_line[0]
+        purchase.button_confirm()
+        picking = purchase.picking_ids[0]
+        picking.action_confirm()
+        picking.move_ids.write({"quantity": 1.0, "picked": True})
+        picking.button_validate()
+        # Empty stock via an inventory adjustment so the received qty is
+        # "already out" by the time the bill gets posted, which is what
+        # triggers the cogs AML pair in _prepare_pdiff_aml_vals.
+        quant = self.env["stock.quant"].search(
+            [
+                ("product_id", "=", self.product.id),
+                ("location_id", "=", picking.location_dest_id.id),
+            ]
+        )
+        quant.sudo().inventory_quantity = 0
+        quant.sudo().action_apply_inventory()
+        f = Form(self.am_model.with_context(default_move_type="in_invoice"))
+        f.partner_id = purchase.partner_id
+        f.invoice_date = fields.Date().today()
+        f.purchase_vendor_bill_id = self.env["purchase.bill.union"].browse(-purchase.id)
+        invoice = f.save()
+        # Force a price difference vs. the receipt valuation (PO price).
+        for line in invoice.invoice_line_ids:
+            line.price_unit = 150.0
+        invoice.action_post()
+        pdiff_amls = self.aml_model.search(
+            [
+                ("move_id", "=", invoice.id),
+                ("account_id", "=", pdiff_account.id),
+            ]
+        )
+        self.assertTrue(
+            pdiff_amls,
+            "Expected FIFO price-difference COGS lines on the expense account",
+        )
+        self.assertTrue(
+            all(line.oca_purchase_line_id == po_line for line in pdiff_amls),
+            "All FIFO price-difference COGS lines must link to the "
+            "originating purchase.order.line via oca_purchase_line_id",
+        )
+
     def test_purchase_order_with_journal_entries_and_vendor_bills(self):
         purchase = self._create_purchase([(self.product, 1)])
         purchase.button_confirm()

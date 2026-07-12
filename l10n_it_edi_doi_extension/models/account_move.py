@@ -117,6 +117,14 @@ class AccountMove(models.Model):
                 lambda line, tax=tax: tax in line.tax_ids
             )
             move.l10n_it_edi_doi_amount = sum(declaration_lines.mapped("price_total"))
+
+        # Fallback for migrated invoices: old v16 invoices don't have the v18
+        # DOI tax on their lines, so the standard compute gives 0.
+        # If the invoice has a DOI but no DOI-taxed lines, use amount_untaxed
+        # (which was the full DOI amount in v16).
+        for move in self:
+            if move.l10n_it_edi_doi_id and not move.l10n_it_edi_doi_amount:
+                move.l10n_it_edi_doi_amount = abs(move.amount_untaxed)
         return  # W8110
 
     def _compute_l10n_it_edi_doi_id(self):

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 21:53+0000\n"
-"PO-Revision-Date: 2026-01-22 19:50+0000\n"
+"PO-Revision-Date: 2026-07-09 08:00+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. module: base_import_match
 #: model:ir.model,name:base_import_match.model_base
 msgid "Base"
-msgstr ""
+msgstr "Osnova"
 
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match_field__conditional
@@ -66,7 +66,7 @@ msgstr "Polje"
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match_field__name
 msgid "Field Name"
-msgstr ""
+msgstr "Naziv polja"
 
 #. module: base_import_match
 #: model:ir.model,name:base_import_match.model_base_import_match_field
@@ -76,7 +76,7 @@ msgstr "Določitev ujemanja uvoženega polja"
 #. module: base_import_match
 #: model:ir.model.fields,help:base_import_match.field_base_import_match_field__field_id
 msgid "Field that will be part of an unique key."
-msgstr "Polje, ki bo del unikatnega ključa"
+msgstr "Polje, ki bo del unikatnega ključa."
 
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match__field_ids
@@ -86,7 +86,7 @@ msgstr "Polja"
 #. module: base_import_match
 #: model:ir.model.fields,help:base_import_match.field_base_import_match__field_ids
 msgid "Fields that will define an unique key."
-msgstr "Polja, ki bodo določala unikatni ključ"
+msgstr "Polja, ki bodo določala unikatni ključ."
 
 #. module: base_import_match
 #: model_terms:ir.ui.view,arch_db:base_import_match.match_search_view
@@ -122,7 +122,6 @@ msgstr "Ujemanje uvoza"
 
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match_field__imported_value
-#, fuzzy
 msgid "Imported Value"
 msgstr "Uvožena vrednost"
 
@@ -164,9 +163,8 @@ msgstr "Model"
 
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match__model_name
-#, fuzzy
 msgid "Model name"
-msgstr "Model"
+msgstr "Naziv modela"
 
 #. module: base_import_match
 #: model:ir.model.fields,field_description:base_import_match.field_base_import_match__name

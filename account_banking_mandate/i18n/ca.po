@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2024-05-08 11:35+0000\n"
-"Last-Translator: Jesarregui <jesarreguisan@gmail.com>\n"
+"PO-Revision-Date: 2026-07-09 22:46+0000\n"
+"Last-Translator: pere-aquarian <pere@aquarian.tech>\n"
 "Language-Team: Catalan (https://www.transifex.com/oca/teams/23907/ca/)\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_banking_mandate
 #: model_terms:ir.actions.act_window,help:account_banking_mandate.mandate_action
@@ -438,7 +438,7 @@ msgstr "Empresa"
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__partner_bank_domain
 msgid "Partner Bank Domain"
-msgstr ""
+msgstr "Domini"
 
 #. module: account_banking_mandate
 #: model:ir.model.fields,field_description:account_banking_mandate.field_account_banking_mandate__payment_line_ids_count
@@ -465,7 +465,7 @@ msgstr "Línies de pagament"
 #. module: account_banking_mandate
 #: model:ir.model,name:account_banking_mandate.model_account_payment
 msgid "Payments"
-msgstr ""
+msgstr "Pagaments"
 
 #. module: account_banking_mandate
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate.view_mandate_tree
@@ -549,6 +549,8 @@ msgid ""
 "The payment line number {line_number} a different company than that of the "
 "linked mandate {mandate})."
 msgstr ""
+"La línia de pagament número {line_number} té una companyia diferent de la "
+"del mandat vinculat {mandate})."
 
 #. module: account_banking_mandate
 #. odoo-python
@@ -559,6 +561,9 @@ msgid ""
 "'{mandate_ref}' (this mandate is attached to the bank account "
 "'{mandate_bank_account}')."
 msgstr ""
+"La línia de pagament número {line_number} té el compte bancari '"
+"{line_bank_account}', que no està vinculat al mandat '{mandate_ref}' (aquest "
+"mandat està vinculat al compte bancari '{mandate_bank_account}')."
 
 #. module: account_banking_mandate
 #: model_terms:ir.ui.view,arch_db:account_banking_mandate.view_mandate_form

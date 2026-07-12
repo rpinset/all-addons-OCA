@@ -5,7 +5,6 @@ import {registry} from "@web/core/registry";
 registry
     .category("web_tour.tours")
     .add("mass_mailing_custom_unsubscribe_tour_contact", {
-        test: true,
         steps: () => [
             {
                 content: "Confirm unsubscribe",

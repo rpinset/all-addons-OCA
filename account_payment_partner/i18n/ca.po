@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-02 03:43+0000\n"
-"PO-Revision-Date: 2026-05-11 11:45+0000\n"
-"Last-Translator: QuiJoQuim <quim.rebull@gmail.com>\n"
+"PO-Revision-Date: 2026-07-09 22:46+0000\n"
+"Last-Translator: pere-aquarian <pere@aquarian.tech>\n"
 "Language-Team: Catalan (https://www.transifex.com/oca/teams/23907/ca/)\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -95,7 +95,7 @@ msgstr "Complet"
 #: model:ir.model.fields,field_description:account_payment_partner.field_account_bank_statement_line__has_reconciled_items
 #: model:ir.model.fields,field_description:account_payment_partner.field_account_move__has_reconciled_items
 msgid "Has Reconciled Items"
-msgstr ""
+msgstr "Té apunts conciliats"
 
 #. module: account_payment_partner
 #: model:ir.model,name:account_payment_partner.model_account_invoice_report
@@ -116,7 +116,7 @@ msgstr "Apunt comptable"
 #: model:ir.model.fields,field_description:account_payment_partner.field_res_company__keep_partner_bank_without_payment_mode
 #: model:ir.model.fields,field_description:account_payment_partner.field_res_config_settings__keep_partner_bank_without_payment_mode
 msgid "Keep Bank Account Without Payment Mode"
-msgstr ""
+msgstr "Mantén el compte bancari sense mode de pagament"
 
 #. module: account_payment_partner
 #: model_terms:ir.ui.view,arch_db:account_payment_partner.res_config_settings_view_form
@@ -124,6 +124,9 @@ msgid ""
 "Keep the bank account auto-selected by Odoo on invoices without a payment "
 "mode. Disable to clear the bank account when no payment mode is set."
 msgstr ""
+"Mantén el compte bancari seleccionat automàticament per Odoo a les factures "
+"sense mode de pagament. Desactiva aquesta opció per esborrar el compte "
+"bancari quan no s'hagi definit cap mode de pagament."
 
 #. module: account_payment_partner
 #: model:ir.model.fields.selection,name:account_payment_partner.selection__account_payment_mode__show_bank_account__last
@@ -197,7 +200,7 @@ msgstr "Seleccioneu el mode de pagament per defecte per a aquest proveïdor."
 #. module: account_payment_partner
 #: model:ir.model.fields,field_description:account_payment_partner.field_account_payment_mode__show_bank_account
 msgid "Show Bank Account"
-msgstr ""
+msgstr "Mostra el compte bancari"
 
 #. module: account_payment_partner
 #: model_terms:ir.ui.view,arch_db:account_payment_partner.account_payment_mode_form
@@ -212,7 +215,7 @@ msgstr "Mostra en les factures el número de compte bancari parcial o complet"
 #. module: account_payment_partner
 #: model:res.groups,name:account_payment_partner.group_show_account_payment_method
 msgid "Show the default payment method line in contacts"
-msgstr ""
+msgstr "Mostra la línia de mètode de pagament predeterminada als contactes"
 
 #. module: account_payment_partner
 #: model:ir.model.fields,field_description:account_payment_partner.field_res_partner__supplier_payment_mode_id
@@ -224,7 +227,7 @@ msgstr "Mode de pagament del proveïdor"
 #: model:ir.model.fields,help:account_payment_partner.field_account_bank_statement_line__has_reconciled_items
 #: model:ir.model.fields,help:account_payment_partner.field_account_move__has_reconciled_items
 msgid "Technical field for supporting the editability of the payment mode"
-msgstr ""
+msgstr "Camp tècnic per permetre l'edició del mode de pagament"
 
 #. module: account_payment_partner
 #: model:ir.model.fields,help:account_payment_partner.field_account_payment_mode__refund_payment_mode_id
@@ -243,6 +246,9 @@ msgid ""
 "auto-selected by Odoo. When disabled, the bank account will be cleared if no "
 "payment mode is set."
 msgstr ""
+"Quan estigui activat, les factures sense mode de pagament mantindran el "
+"compte bancari seleccionat automàticament per Odoo. Quan estigui desactivat, "
+"el compte bancari s'esborrarà si no s'ha definit cap mode de pagament."
 
 #. module: account_payment_partner
 #. odoo-python

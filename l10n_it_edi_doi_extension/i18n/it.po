@@ -266,6 +266,11 @@ msgid "No Declaration of Intent found for %s."
 msgstr "Nessuna dichiarazione di intento trovata per %s."
 
 #. module: l10n_it_edi_doi_extension
+#: model:ir.model.fields,field_description:l10n_it_edi_doi_extension.field_l10n_it_edi_doi_declaration_of_intent__number
+msgid "Number"
+msgstr ""
+
+#. module: l10n_it_edi_doi_extension
 #: model_terms:ir.ui.view,arch_db:l10n_it_edi_doi_extension.declaration_of_intent_search
 msgid "Partner"
 msgstr "Partner"
@@ -305,6 +310,11 @@ msgstr "Ricevuta da clienti"
 #: model:ir.model.fields,field_description:l10n_it_edi_doi_extension.field_account_move_doi__sequence
 msgid "Sequence"
 msgstr "Sequenza"
+
+#. module: l10n_it_edi_doi_extension
+#: model:ir.model.fields,help:l10n_it_edi_doi_extension.field_l10n_it_edi_doi_declaration_of_intent__number
+msgid "Sequential number for internal reference"
+msgstr ""
 
 #. module: l10n_it_edi_doi_extension
 #: model_terms:ir.ui.view,arch_db:l10n_it_edi_doi_extension.declaration_of_intent_search
