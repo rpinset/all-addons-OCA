@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_attribute_set
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-09 06:22+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.variants
+msgid "<span class=\"sign_badge_price_extra\">✓</span>"
+msgstr "<span class=\"sign_badge_price_extra\">✓</span>"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.filter_select_attributes
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.product_additional_attribute_filters_form
+msgid "All"
+msgstr "Alle"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_multi_select
+msgid ""
+"Allow selecting multiple values for this attribute filter.\n"
+"        Products matching ANY selected value will be shown (OR logic)."
+msgstr ""
+"Tillad valg af flere værdier for dette attributfilter.\n"
+"        Produkter, der matcher en ELLER flere af de valgte værdier, vil "
+"blive vist (ELLER-logik)."
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_attribute_attribute
+msgid "Attribute"
+msgstr "Attribut"
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_attribute_set_owner_mixin
+msgid "Attribute set owner mixin"
+msgstr "Mixin for attributsæt-ejer"
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"Cannot make attribute '%s' searchable because its field is neither stored "
+"nor has a search method."
+msgstr ""
+"Kan ikke gøre attributten '%s' søgbar, fordi dens felt hverken er lagret "
+"eller har en søgemetode."
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"Cannot make attribute searchable if it doesn't have E-Commerce Visibility "
+"enabled."
+msgstr ""
+"Kan ikke gøre attributten søgbar, hvis den ikke har e-handelssynlighed "
+"aktiveret."
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"Cannot use attribute '%s' as filter because its field is neither stored nor "
+"has a search method."
+msgstr ""
+"Kan ikke bruge attributten '%s' som filter, fordi dens felt hverken er "
+"lagret eller har en søgemetode."
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"Cannot use attribute as filter if it doesn't have E-Commerce Visibility "
+"enabled."
+msgstr ""
+"Kan ikke bruge attributten som filter, hvis den ikke har e-handelssynlighed "
+"aktiveret."
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"Cannot use attribute as specification if it doesn't have E-Commerce "
+"Visibility enabled."
+msgstr ""
+"Kan ikke bruge attributten som specifikation, hvis den ikke har e-"
+"handelssynlighed aktiveret."
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.product_compare_with_additional_attributes
+msgid "Code"
+msgstr "Kode"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__display_name
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_set_owner_mixin__display_name
+#: model:ir.model.fields,field_description:website_attribute_set.field_product_product__display_name
+#: model:ir.model.fields,field_description:website_attribute_set.field_product_template__display_name
+#: model:ir.model.fields,field_description:website_attribute_set.field_website__display_name
+#: model:ir.model.fields,field_description:website_attribute_set.field_website_searchable_mixin__display_name
+msgid "Display Name"
+msgstr "Vis navn"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_filter
+msgid "E Com Filter"
+msgstr "E-handelsfilter"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_specification
+msgid "E Com Specification"
+msgstr "E-handelsspecifikation"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.attribute_attribute_form_view
+msgid "E-Commerce"
+msgstr "E-handel"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_multi_select
+msgid "E-Commerce Multi-Select"
+msgstr "E-handel multivalg"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_range_filter
+msgid "E-Commerce Range Filter"
+msgstr "E-handel intervalfilter"
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid ""
+"E-Commerce Range Filter, Multi-Select and Show Count require the attribute "
+"to be enabled as a filter."
+msgstr ""
+"E-handel intervalfilter, multivalg og visning af antal kræver, at "
+"attributten er aktiveret som filter."
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_searchable
+msgid "E-Commerce Searchable"
+msgstr "E-handel søgbar"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_show_count
+msgid "E-Commerce Show Count"
+msgstr "E-handel vis antal"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__e_com_visibility
+msgid "E-Commerce Visibility"
+msgstr "E-handelssynlighed"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__field_is_searchable
+msgid "Field Is Searchable"
+msgstr "Feltet er søgbart"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_range_filter
+msgid ""
+"For numeric attributes (integer/float), show min/max range inputs\n"
+"        instead of individual value selection in the shop filter."
+msgstr ""
+"For numeriske attributter (heltal/decimal) vises min/maks-intervalfelter\n"
+"        i stedet for valg af enkelte værdier i butiksfilteret."
+
+#. module: website_attribute_set
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_attribute__id
+#: model:ir.model.fields,field_description:website_attribute_set.field_attribute_set_owner_mixin__id
+#: model:ir.model.fields,field_description:website_attribute_set.field_product_product__id
+#: model:ir.model.fields,field_description:website_attribute_set.field_product_template__id
+#: model:ir.model.fields,field_description:website_attribute_set.field_website__id
+#: model:ir.model.fields,field_description:website_attribute_set.field_website_searchable_mixin__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_searchable
+msgid ""
+"If selected, the attribute will be included in e-commerce search.\n"
+"        Disable for large text fields to improve search performance."
+msgstr ""
+"Hvis markeret, inkluderes attributten i e-handelssøgningen.\n"
+"        Deaktiver for store tekstfelter for at forbedre søgeydelsen."
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_filter
+msgid ""
+"If selected, the attribute will be shown as a filter\n"
+"         in the e-commerce shop sidebar."
+msgstr ""
+"Hvis markeret, vises attributten som et filter\n"
+"         i e-handelsbutikkens sidebjælke."
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_specification
+msgid ""
+"If selected, the attribute will be shown as specification\n"
+"             in e-commerce website app product view."
+msgstr ""
+"Hvis markeret, vises attributten som specifikation\n"
+"             i produktvisningen på e-handelswebsitet."
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_visibility
+msgid "If selected, the attribute will be shown in e-commerce website app."
+msgstr "Hvis markeret, vises attributten i e-handelswebsitet."
+
+#. module: website_attribute_set
+#. odoo-python
+#: code:addons/website_attribute_set/models/attribute_attribute.py:0
+msgid "Invalid domain: %s"
+msgstr "Ugyldigt domæne: %s"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.filter_range_attributes
+msgid "Max"
+msgstr "Maks."
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.filter_range_attributes
+msgid "Min"
+msgstr "Min."
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.accordion_specs_item_with_additional_attributes
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.custom_specifications_table
+msgid "Others"
+msgstr "Andre"
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: website_attribute_set
+#: model:ir.ui.menu,name:website_attribute_set.menu_product_category
+msgid "Product Categories"
+msgstr "Produktkategorier"
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_product_product
+msgid "Product Variant"
+msgstr "Produktvariant"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.product_compare_with_additional_attributes
+msgid "Reference Codes"
+msgstr "Referencekoder"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__e_com_show_count
+msgid "Show the number of matching products next to each filter option."
+msgstr ""
+"Vis antallet af matchende produkter ved siden af hver filterindstilling."
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.accordion_specs_item_with_additional_attributes
+msgid "Specifications"
+msgstr "Specifikationer"
+
+#. module: website_attribute_set
+#: model_terms:ir.ui.view,arch_db:website_attribute_set.product_compare_with_additional_attributes
+msgid "Uncategorized"
+msgstr "Ukategoriseret"
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_website
+msgid "Website"
+msgstr "Website"
+
+#. module: website_attribute_set
+#: model:ir.model,name:website_attribute_set.model_website_searchable_mixin
+msgid "Website Searchable Mixin"
+msgstr "Mixin til websøgbarhed"
+
+#. module: website_attribute_set
+#: model:ir.model.fields,help:website_attribute_set.field_attribute_attribute__field_is_searchable
+msgid ""
+"Whether the underlying field can be searched (stored in SQL or has a search "
+"method)."
+msgstr ""
+"Om det underliggende felt kan søges (lagret i SQL eller har en søgemetode)."
+
+#. module: website_attribute_set
+#: model:ir.ui.menu,name:website_attribute_set.menu_public_category
+msgid "eCommerce Categories"
+msgstr "e-handelskategorier"

@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_webservice_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-09 09:46+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: edi_webservice_oca
+#: model:ir.model.fields,field_description:edi_webservice_oca.field_edi_backend__display_name
+msgid "Display Name"
+msgstr "Vis navn"
+
+#. module: edi_webservice_oca
+#: model:ir.model,name:edi_webservice_oca.model_edi_backend
+msgid "EDI Backend"
+msgstr "EDI-backend"
+
+#. module: edi_webservice_oca
+#: model:ir.model.fields,field_description:edi_webservice_oca.field_edi_backend__id
+msgid "ID"
+msgstr "ID"
+
+#. module: edi_webservice_oca
+#: model_terms:ir.ui.view,arch_db:edi_webservice_oca.edi_backend_view_form
+msgid "Webservice"
+msgstr "Webservice"
+
+#. module: edi_webservice_oca
+#: model:ir.model.fields,field_description:edi_webservice_oca.field_edi_backend__webservice_backend_id
+msgid "Webservice Backend"
+msgstr "Webservice-backend"
+
+#. module: edi_webservice_oca
+#. odoo-python
+#: code:addons/edi_webservice_oca/components/send.py:0
+msgid "`method` is required in `webservice` type settings."
+msgstr "`method` er påkrævet i indstillinger af typen `webservice`."

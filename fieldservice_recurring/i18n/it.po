@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-21 11:06+0000\n"
+"PO-Revision-Date: 2026-07-11 11:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: fieldservice_recurring
 #. odoo-python
@@ -376,9 +376,13 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__message_has_error
+#: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency_set__message_has_error
+#: model:ir.model.fields,help:fieldservice_recurring.field_fsm_frequency_set__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__message_has_error
+#: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_has_error
+#: model:ir.model.fields,help:fieldservice_recurring.field_fsm_recurring_template__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -584,7 +588,7 @@ msgstr "Ottobre"
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_order__display_name
 msgid "Order"
-msgstr ""
+msgstr "Ordine"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__fsm_order_template_id
@@ -673,6 +677,14 @@ msgstr "Ripeti ogni"
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__activity_user_id
 msgid "Responsible User"
 msgstr "Utente responsabile"
+
+#. module: fieldservice_recurring
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency_set__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_recurring_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore consegna SMS"
 
 #. module: fieldservice_recurring
 #: model:ir.model.fields,field_description:fieldservice_recurring.field_fsm_frequency__sa
@@ -895,9 +907,6 @@ msgstr "Annuale"
 
 #~ msgid "Group By"
 #~ msgstr "Raggruppa per"
-
-#~ msgid "SMS Delivery error"
-#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

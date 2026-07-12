@@ -47,7 +47,7 @@ class ResPartner(models.Model):
         chunk = []
         chunks = []
         # Process 500 vat numbers once
-        max_no = get_param("l10n_ro_fiscal_validation.anaf_bulk_number", 499)
+        max_no = int(get_param("l10n_ro_fiscal_validation.anaf_bulk_number", 499))
         for position in range(0, len(anaf_dict), max_no):
             chunk = anaf_dict[position : position + max_no]
             chunks.append(chunk)
@@ -66,6 +66,7 @@ class ResPartner(models.Model):
                         result = res.json()
                     except Exception:
                         _logger.warning(f"ANAF sync not working: {res.content}")
+
                     if result.get("correlationId"):
                         time.sleep(3)
                         resp = False
@@ -78,19 +79,22 @@ class ResPartner(models.Model):
                         except Exception as e:
                             _logger.warning(f"ANAF sync not working: {e}")
                         if resp and resp.status_code == 200:
-                            resp = resp.json()
-                            for result_partner in resp["found"] + resp["notfound"]:
-                                vat = result_partner.get("date_generale").get("cui")
-                                if vat:
-                                    partners = self.search(
-                                        [
-                                            ("l10n_ro_vat_number", "=", vat),
-                                            ("is_company", "=", True),
-                                        ]
-                                    )
-                                    for partner in partners:
-                                        data = partner._Anaf_to_Odoo(result_partner)
-                                        partner.update(data)
+                            result = resp.json()
+
+                    for result_partner in result.get("found", []) + result.get(
+                        "notFound", []
+                    ):
+                        vat = result_partner.get("date_generale").get("cui")
+                        if vat:
+                            partners = self.search(
+                                [
+                                    ("l10n_ro_vat_number", "=", vat),
+                                    ("is_company", "=", True),
+                                ]
+                            )
+                            for partner in partners:
+                                data = partner._Anaf_to_Odoo(result_partner)
+                                partner.update(data)
             except Exception as e:
                 _logger.warning(f"ANAF sync not working: {e}")
 

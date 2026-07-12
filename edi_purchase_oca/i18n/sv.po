@@ -1,0 +1,170 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_purchase_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-09 06:56+0000\n"
+"Last-Translator: Laura V <laura.valls@forgeflow.com>\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: edi_purchase_oca
+#: model_terms:ir.ui.view,arch_db:edi_purchase_oca.purchase_order_form
+msgid "<span class=\"o_stat_text\">EDI</span>"
+msgstr "<span class=\"o_stat_text\">EDI</span>"
+
+#. module: edi_purchase_oca
+#: model:ir.model,name:edi_purchase_oca.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__edi_disable_auto
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__edi_disable_auto
+msgid "Disable auto"
+msgstr "Inaktivera automatiskt"
+
+#. module: edi_purchase_oca
+#: model_terms:ir.ui.view,arch_db:edi_purchase_oca.purchase_order_form
+msgid "Disable automated actions"
+msgstr "Inaktivera automatiserade åtgärder"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Visningsnamn"
+
+#. module: edi_purchase_oca
+#: model:ir.ui.menu,name:edi_purchase_oca.menu_purchase_edi_root
+#: model_terms:ir.ui.view,arch_db:edi_purchase_oca.purchase_order_form
+msgid "EDI"
+msgstr "EDI"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__edi_id
+msgid "EDI ID"
+msgstr "EDI-ID"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__origin_edi_endpoint_id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__origin_edi_endpoint_id
+msgid "EDI origin endpoint"
+msgstr "EDI-ursprungsslutpunkt"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__origin_exchange_type_id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__origin_exchange_type_id
+msgid "EDI origin exchange type"
+msgstr "EDI-ursprungsutväxlingstyp"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__origin_exchange_record_id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__origin_exchange_record_id
+msgid "EDI origin record"
+msgstr "EDI-ursprungspost"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__edi_purchase_conf_ids
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_users__edi_purchase_conf_ids
+msgid "EDI purchase configuration"
+msgstr "EDI-inköpskonfiguration"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order__origin_exchange_record_id
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order_line__origin_exchange_record_id
+msgid "EDI record that originated this document."
+msgstr "EDI-posten som skapade detta dokument."
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__edi_config
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__edi_config
+msgid "Edi Config"
+msgstr "EDI-konfiguration"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__edi_exchange_ready
+msgid "Edi Exchange Ready"
+msgstr "EDI-utväxling redo"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__edi_has_form_config
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__edi_has_form_config
+msgid "Edi Has Form Config"
+msgstr "EDI har formulärkonfiguration"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__exchange_record_ids
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__exchange_record_ids
+msgid "Exchange Record"
+msgstr "Utväxlingspost"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__exchange_record_count
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__exchange_record_count
+msgid "Exchange Record Count"
+msgstr "Antal utväxlingsposter"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__exchange_related_record_ids
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__exchange_related_record_ids
+msgid "Exchange Related Record"
+msgstr "Relaterad utväxlingspost"
+
+#. module: edi_purchase_oca
+#: model:ir.ui.menu,name:edi_purchase_oca.menu_purchase_edi_exchange_record
+msgid "Exchanges"
+msgstr "Utväxlingar"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order_line__edi_id
+msgid "Internal or external identifier for records."
+msgstr "Intern eller extern identifierare för poster."
+
+#. module: edi_purchase_oca
+#: model_terms:ir.ui.view,arch_db:edi_purchase_oca.view_partner_form
+msgid "Purchase"
+msgstr "Inköp"
+
+#. module: edi_purchase_oca
+#: model:ir.model,name:edi_purchase_oca.model_purchase_order
+msgid "Purchase Order"
+msgstr "Inköpsorder"
+
+#. module: edi_purchase_oca
+#: model:ir.actions.act_window,name:edi_purchase_oca.act_open_edi_exchange_record_purchase_order_view
+msgid "Purchase Order Exchange Records"
+msgstr "Utväxlingsposter för inköpsorder"
+
+#. module: edi_purchase_oca
+#: model:ir.model,name:edi_purchase_oca.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Inköpsorderrad"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order__origin_edi_endpoint_id
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order_line__origin_edi_endpoint_id
+msgid "Record generated via this endpoint"
+msgstr "Post genererad via denna slutpunkt"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order__edi_disable_auto
+#: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order_line__edi_disable_auto
+msgid "When marked, EDI automatic processing will be avoided"
+msgstr "När markerad undviks automatisk EDI-bearbetning"
