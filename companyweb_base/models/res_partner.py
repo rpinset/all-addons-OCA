@@ -98,13 +98,14 @@ class ResPartner(models.Model):
         help="The official registration number of a company. \n"
         "• Belgium: KBO, BCE, CBE\n"
         "• Netherlands: KvK\n"
-        "• Luxemburg: RCS",
+        "• Luxembourg: RCS\n"
+        "• France: SIREN",
     )
     cweb_country_code_enable = fields.Boolean(**CWEB_FIELD_ARGS)
     cweb_country_code = fields.Char(
         "Companyweb Country Code",
         **CWEB_FIELD_ARGS,
-        help="The official code of Belgium, The Netherlands and Luxembourg",
+        help="The official code of Belgium, The Netherlands, Luxembourg and France",
     )
     cweb_main_industry_enable = fields.Boolean(**CWEB_FIELD_ARGS)
     cweb_main_industry = fields.Char(
@@ -474,10 +475,13 @@ class ResPartner(models.Model):
                 args["vat"] = partner.vat
             if partner.company_registry:
                 args["registry"] = partner.company_registry
-            if partner.country_id:
-                if (
-                    country_code := partner.country_id.code
-                ) not in ALLOWED_COUNTRY_CODES:
+            country_code = (
+                partner.cweb_country_code
+                or get_country_code_from_vat(partner.vat)
+                or partner.country_id.code
+            )
+            if country_code:
+                if country_code not in ALLOWED_COUNTRY_CODES:
                     errors.append(
                         self.env._(
                             "Companyweb only supports companies based in "
@@ -486,8 +490,7 @@ class ResPartner(models.Model):
                         )
                     )
                     continue
-                else:
-                    args["country_code"] = country_code
+                args["country_code"] = country_code
 
             error, cweb_response = self._cweb_call_get(args)
 
@@ -654,9 +657,9 @@ class ResPartner(models.Model):
             vat = partner.vat or partner.cweb_vat
             registry = partner.company_registry or partner.cweb_registry
             country_code = (
-                partner.country_id.code
-                or partner.cweb_country_code
+                partner.cweb_country_code
                 or get_country_code_from_vat(vat)
+                or partner.country_id.code
             )
             if not (vat or registry):
                 partner.cweb_error = self.env._("Missing VAT or Company Registry.")

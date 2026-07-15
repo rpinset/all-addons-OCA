@@ -94,11 +94,18 @@ class SaleOrderLine(models.Model):
             return non_date_bo_lines[0]
 
     def _get_eligible_bo_lines_domain(self, base_qty):
+        today = fields.Date.today()
+        # Keep only blanket order lines that can actually satisfy this sale line:
+        # same product and currency, enough remaining quantity, open contract,
+        # and a validity period that has already started.
         filters = [
             ("product_id", "=", self.product_id.id),
             ("remaining_qty", ">=", base_qty),
             ("currency_id", "=", self.order_id.currency_id.id),
             ("order_id.state", "=", "open"),
+            "|",
+            ("order_id.validity_start_date", "=", False),
+            ("order_id.validity_start_date", "<=", today),
         ]
         if self.order_id.partner_id:
             filters.append(("partner_id", "=", self.order_id.partner_id.id))
@@ -138,19 +145,31 @@ class SaleOrderLine(models.Model):
             line.tax_ids = line.blanket_order_line.taxes_id
         return super(SaleOrderLine, (self - so_line_linked_bol))._compute_price_unit()
 
-    @api.depends("blanket_order_line")
+    def _get_blanket_order_line_price_unit(self):
+        """Return the blanket order line price in the sale line UoM."""
+        self.ensure_one()
+        if self.blanket_order_line.product_uom != self.product_uom_id:
+            return self.blanket_order_line.product_uom._compute_price(
+                self.blanket_order_line.price_unit, self.product_uom_id
+            )
+        return self.blanket_order_line.price_unit
+
+    @api.depends(
+        "blanket_order_line",
+        "product_id",
+        "product_uom_id",
+        "product_uom_qty",
+    )
     def _compute_price_unit(self):
         so_line_linked_bol = self.filtered("blanket_order_line")
         for line in so_line_linked_bol:
-            price_unit = 0
-            if line.blanket_order_line:
-                if line.blanket_order_line.product_uom != line.product_uom_id:
-                    price_unit = line.blanket_order_line.product_uom._compute_price(
-                        line.blanket_order_line.price_unit, line.product_uom_id
-                    )
-                else:
-                    price_unit = line.blanket_order_line.price_unit
-            line.price_unit = price_unit
+            price_unit = line._get_blanket_order_line_price_unit()
+            line.update(
+                {
+                    "price_unit": price_unit,
+                    "technical_price_unit": price_unit,
+                }
+            )
         return super(SaleOrderLine, (self - so_line_linked_bol))._compute_price_unit()
 
     @api.constrains("product_id")

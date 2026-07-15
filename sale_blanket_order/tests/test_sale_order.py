@@ -55,6 +55,7 @@ class TestSaleOrder(TestSaleCommon):
                 "default_code": "PROD_DEL03",
             }
         )
+        cls.validity_start = date.today()
         cls.validity = date.today() + timedelta(days=365)
         cls.date_schedule_1 = date.today() + timedelta(days=10)
         cls.date_schedule_2 = date.today() + timedelta(days=20)
@@ -62,6 +63,7 @@ class TestSaleOrder(TestSaleCommon):
     def create_blanket_order_01(self):
         with Form(self.blanket_order_obj) as bo:
             bo.partner_id = self.partner
+            bo.validity_start_date = self.validity_start
             bo.validity_date = self.validity
             bo.payment_term_id = self.payment_term
             bo.pricelist_id = self.sale_pricelist
@@ -83,6 +85,7 @@ class TestSaleOrder(TestSaleCommon):
     def create_blanket_order_02(self):
         with Form(self.blanket_order_obj) as bo:
             bo.partner_id = self.partner
+            bo.validity_start_date = self.validity_start
             bo.validity_date = self.validity
             bo.payment_term_id = self.payment_term
             bo.pricelist_id = self.sale_pricelist
@@ -428,3 +431,66 @@ class TestSaleOrder(TestSaleCommon):
             self.blanket_order_obj.search([("remaining_uom_qty", ">", 0)]),
             blanket_order,
         )
+
+    def test_12_sale_order_ignores_future_validity_start_date(self):
+        """Test sale order lines only use blanket orders whose validity started."""
+        blanket_order = self.create_blanket_order_02()
+        blanket_order.validity_start_date = self.validity_start + timedelta(days=1)
+        blanket_order.action_confirm()
+
+        with Form(self.sale_order_obj) as so:
+            so.partner_id = self.partner
+            with so.order_line.new() as line:
+                line.product_id = self.product_2
+                line.product_uom_qty = 5.0
+                line.price_unit = 10.0
+        sale_order = so.save()
+        self.assertFalse(sale_order.order_line.blanket_order_line)
+
+        blanket_order.validity_start_date = self.validity_start
+        with Form(self.sale_order_obj) as so:
+            so.partner_id = self.partner
+            with so.order_line.new() as line:
+                line.product_id = self.product_2
+                line.product_uom_qty = 5.0
+                line.price_unit = 10.0
+        sale_order = so.save()
+        self.assertEqual(
+            sale_order.order_line.blanket_order_line,
+            blanket_order.line_ids.filtered(
+                lambda line: line.product_id == self.product_2
+            ),
+        )
+
+    def test_13_manual_sale_order_line_uses_blanket_price_over_pricelist(self):
+        """Test manual sale lines use the blanket price instead of the pricelist."""
+        pricelist_price = 990.0
+        blanket_price = 950.0
+        self.env["product.pricelist.item"].create(
+            {
+                "pricelist_id": self.sale_pricelist.id,
+                "product_id": self.product_2.id,
+                "compute_price": "fixed",
+                "fixed_price": pricelist_price,
+            }
+        )
+        blanket_order = self.create_blanket_order_02()
+        blanket_order_line = blanket_order.line_ids.filtered(
+            lambda line: line.product_id == self.product_2
+        )
+        blanket_order_line.price_unit = blanket_price
+        blanket_order.action_confirm()
+        self.partner.property_product_pricelist = self.sale_pricelist
+
+        with Form(self.sale_order_obj) as so:
+            so.partner_id = self.partner
+            with so.order_line.new() as line:
+                line.product_id = self.product_2
+                line.product_uom_qty = 1.0
+        sale_order = so.save()
+        sale_order_line = sale_order.order_line
+
+        self.assertEqual(sale_order_line.blanket_order_line, blanket_order_line)
+        self.assertEqual(sale_order_line.price_unit, blanket_price)
+        self.assertNotEqual(sale_order_line.price_unit, pricelist_price)
+        self.assertEqual(sale_order_line.technical_price_unit, blanket_price)

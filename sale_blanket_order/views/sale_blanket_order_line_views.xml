@@ -9,6 +9,7 @@
             <list create="false">
                 <field name="sequence" widget="handle" />
                 <field name="order_id" />
+                <field name="partner_id" />
                 <field
                     name="product_id"
                     context="{'partner_id':parent.partner_id, 'quantity':original_uom_qty, 'company_id': company_id}"
@@ -140,6 +141,7 @@
         <field name="arch" type="xml">
             <search string="Search Sale Blanket Order Line">
                 <field name="order_id" />
+                <field name="partner_id" />
                 <field name="product_id" />
                 <field name="date_schedule" />
             </search>

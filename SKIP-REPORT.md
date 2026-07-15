@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-07-12 15:49 UTC
+Generated 2026-07-15 22:19 UTC
 
-Total skipped: **150**
+Total skipped: **148**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **125**
+Count: **123**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -55,7 +55,6 @@ Count: **125**
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | [19.0](https://github.com/OCA/connector-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-jira](https://github.com/OCA/connector-jira) | [19.0](https://github.com/OCA/connector-jira/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-lengow](https://github.com/OCA/connector-lengow) | [19.0](https://github.com/OCA/connector-lengow/tree/19.0) | No directory with __manifest__.py at repo root |
-| [connector-lims](https://github.com/OCA/connector-lims) | [19.0](https://github.com/OCA/connector-lims/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | [19.0](https://github.com/OCA/connector-magento/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | [19.0](https://github.com/OCA/connector-odoo2odoo/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | [19.0](https://github.com/OCA/connector-prestashop/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -153,7 +152,6 @@ Count: **125**
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [19.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | [19.0](https://github.com/OCA/vertical-edition/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-education](https://github.com/OCA/vertical-education) | [19.0](https://github.com/OCA/vertical-education/tree/19.0) | No directory with __manifest__.py at repo root |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | [19.0](https://github.com/OCA/vertical-hotel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | [19.0](https://github.com/OCA/vertical-isp/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-medical](https://github.com/OCA/vertical-medical) | [19.0](https://github.com/OCA/vertical-medical/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-ngo](https://github.com/OCA/vertical-ngo) | [19.0](https://github.com/OCA/vertical-ngo/tree/19.0) | No directory with __manifest__.py at repo root |

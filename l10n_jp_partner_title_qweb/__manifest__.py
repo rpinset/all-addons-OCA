@@ -2,7 +2,8 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 {
     "name": "Japan Partner Title QWeb",
-    "version": "19.0.1.0.0",
+    "summary": "敬称と位置フィールドを取引先に追加し、QWebレポートに表示",
+    "version": "19.0.1.0.1",
     "depends": ["base"],
     "author": "Quartile, Odoo Community Association (OCA)",
     "license": "LGPL-3",
@@ -13,4 +14,5 @@
         "report/templates.xml",
     ],
     "installable": True,
+    "maintainers": ["yostashiro", "AungKoKoLin1997"],
 }

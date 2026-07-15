@@ -79,6 +79,7 @@ class BlanketOrder(models.Model):
         copy=False,
     )
     validity_date = fields.Date()
+    validity_start_date = fields.Date()
     client_order_ref = fields.Char(
         string="Customer Reference",
         copy=False,
@@ -159,6 +160,17 @@ class BlanketOrder(models.Model):
         compute="_compute_uom_qty",
         search="_search_delivered_uom_qty",
         default=0.0,
+    )
+
+    _check_validity_dates = models.Constraint(
+        """
+        CHECK(
+            validity_start_date IS NULL
+            OR validity_date IS NULL
+            OR validity_start_date <= validity_date
+        )
+        """,
+        "The validity start date must be earlier than or equal to the validity date.",
     )
 
     def _get_sale_orders(self):
@@ -256,18 +268,19 @@ class BlanketOrder(models.Model):
             )
 
     def _validate(self):
-        try:
-            today = fields.Date.today()
-            for order in self:
-                assert order.validity_date, self.env._("Validity date is mandatory")
-                assert order.validity_date > today, self.env._(
-                    "Validity date must be in the future"
-                )
-                assert order.partner_id, self.env._("Partner is mandatory")
-                assert len(order.line_ids) > 0, self.env._("Must have some lines")
-                order.line_ids._validate()
-        except AssertionError as e:
-            raise UserError(e) from e
+        today = fields.Date.today()
+        for order in self:
+            if not order.validity_date:
+                raise UserError(self.env._("Validity date is mandatory"))
+            if order.validity_date <= today:
+                raise UserError(self.env._("Validity date must be in the future"))
+            if not order.validity_start_date:
+                raise UserError(self.env._("Validity start date is mandatory"))
+            if not order.partner_id:
+                raise UserError(self.env._("Partner is mandatory"))
+            if not order.line_ids:
+                raise UserError(self.env._("Must have some lines"))
+            order.line_ids._validate()
 
     def set_to_draft(self):
         for order in self:
@@ -600,13 +613,9 @@ class BlanketOrderLine(models.Model):
                 )
 
     def _validate(self):
-        try:
-            for line in self:
-                assert (
-                    not line.display_type and line.original_uom_qty > 0.0
-                ) or line.display_type, self.env._("Quantity must be greater than zero")
-        except AssertionError as e:
-            raise UserError(e) from e
+        for line in self.filtered(lambda line: not line.display_type):
+            if line.original_uom_qty <= 0.0:
+                raise UserError(self.env._("Quantity must be greater than zero"))
 
     @api.model_create_multi
     def create(self, vals_list):

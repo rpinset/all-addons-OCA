@@ -15,3 +15,7 @@
 - [Trobz](https://trobz.com):
 
   > - Nguyễn Minh Chiến \<<chien@trobz.com>\>
+
+- [Camptocamp](https://www.camptocamp.com):
+
+  > - Maksym Yankin \<<maksym.yankin@camptocamp.com>\>

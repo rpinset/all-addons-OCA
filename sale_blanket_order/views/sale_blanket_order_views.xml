@@ -13,6 +13,7 @@
                 <field name="name" />
                 <field name="user_id" />
                 <field name="partner_id" />
+                <field name="validity_start_date" />
                 <field name="validity_date" />
                 <field name="state" />
                 <field
@@ -112,7 +113,14 @@
                                 options="{'no_create': True}"
                             />
                             <field name="company_id" invisible="1" />
-                            <field name="validity_date" required="state == 'draft'" />
+                            <field
+                                name="validity_start_date"
+                                string="Validity"
+                                widget="daterange"
+                                options="{'end_date_field': 'validity_date', 'always_range': 1}"
+                                required="state == 'draft'"
+                            />
+                            <field name="validity_date" invisible="1" />
                         </group>
                     </group>
                     <notebook>

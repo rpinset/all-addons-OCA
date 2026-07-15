@@ -26,7 +26,23 @@ class BlanketOrderWizard(models.TransientModel):
                     "You can't create a sale order from an expired blanket order!"
                 )
             )
+        self._check_started_blanket_orders(blanket_order)
         return blanket_order
+
+    @api.model
+    def _check_started_blanket_orders(self, blanket_orders):
+        today = fields.Date.today()
+        for blanket_order in blanket_orders.filtered(
+            lambda order: order.validity_start_date
+            and order.validity_start_date > today
+        ):
+            raise UserError(
+                self.env._(
+                    "You can't create a sale order from blanket order %(name)s "
+                    "before its validity start date.",
+                    name=blanket_order.name,
+                )
+            )
 
     @api.model
     def _check_valid_blanket_order_line(self, bo_lines):
@@ -40,6 +56,8 @@ class BlanketOrderWizard(models.TransientModel):
             for line in bo_lines
         ):
             raise UserError(self.env._("The sale has already been completed."))
+
+        self._check_started_blanket_orders(bo_lines.mapped("order_id"))
 
         for line in bo_lines:
             if line.order_id.state != "open":

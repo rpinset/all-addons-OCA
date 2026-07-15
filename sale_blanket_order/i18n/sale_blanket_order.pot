@@ -31,6 +31,11 @@ msgstr ""
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
+msgid "<span> - </span>"
+msgstr ""
+
+#. module: sale_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "<span>Blanket Order # </span>"
 msgstr ""
 
@@ -61,7 +66,7 @@ msgstr ""
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
-msgid "<strong>Validity Date:</strong>"
+msgid "<strong>Validity Period:</strong>"
 msgstr ""
 
 #. module: sale_blanket_order
@@ -863,6 +868,12 @@ msgid "The sale has already been completed."
 msgstr ""
 
 #. module: sale_blanket_order
+#: model:ir.model.constraint,message:sale_blanket_order.constraint_sale_blanket_order_check_validity_dates
+msgid ""
+"The validity start date must be earlier than or equal to the validity date."
+msgstr ""
+
+#. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 msgid "To Draft"
 msgstr ""
@@ -909,8 +920,18 @@ msgid "VAT:"
 msgstr ""
 
 #. module: sale_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
+msgid "Validity"
+msgstr ""
+
+#. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__validity_date
 msgid "Validity Date"
+msgstr ""
+
+#. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__validity_start_date
+msgid "Validity Start Date"
 msgstr ""
 
 #. module: sale_blanket_order
@@ -923,6 +944,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 msgid "Validity date must be in the future"
+msgstr ""
+
+#. module: sale_blanket_order
+#. odoo-python
+#: code:addons/sale_blanket_order/models/blanket_orders.py:0
+msgid "Validity start date is mandatory"
 msgstr ""
 
 #. module: sale_blanket_order
@@ -967,6 +994,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/sale_blanket_order/wizard/create_sale_orders.py:0
 msgid "You can't create a sale order from an expired blanket order!"
+msgstr ""
+
+#. module: sale_blanket_order
+#. odoo-python
+#: code:addons/sale_blanket_order/wizard/create_sale_orders.py:0
+msgid ""
+"You can't create a sale order from blanket order %(name)s before its "
+"validity start date."
 msgstr ""
 
 #. module: sale_blanket_order

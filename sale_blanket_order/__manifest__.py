@@ -5,7 +5,7 @@
     "category": "Sale",
     "license": "AGPL-3",
     "author": "Acsone SA/NV, Odoo Community Association (OCA)",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "website": "https://github.com/OCA/sale-blanket",
     "summary": "Blanket Orders",
     "depends": ["uom", "sale_management"],

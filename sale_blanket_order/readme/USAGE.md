@@ -15,7 +15,7 @@ introduce the following information:
 
 - Payment Terms
 
-- Validity date
+- Validity period
 
 - Order lines:  
   - Product
@@ -27,9 +27,9 @@ introduce the following information:
 ![](../static/description/BO_form.png)
 
 From the form, once the Blanket Order has been confirmed and its state
-is open, the user can create a Sale Order, check the Sale Orders
-associated to the Blanket Order and/or see the Blanket Order lines
-associated to the BO.
+is open and the validity period has started, the user can create a Sale
+Order, check the Sale Orders associated to the Blanket Order and/or see
+the Blanket Order lines associated to the BO.
 
 ![](../static/description/BO_actions.png)
 
@@ -40,9 +40,10 @@ will be created.
 ![](../static/description/PO_from_BO.png)
 
 Installing this module will add an additional menu which will show all
-the blanket order lines currently defined in the system. From this list
-the user can create customized Sale Orders selecting the lines for which
-the PO (or POs if the customers are different) is (are) created.
+the blanket order lines currently defined in the system, including the
+customer for each line. From this list the user can create customized
+Sale Orders selecting the lines for which the PO (or POs if the
+customers are different) is (are) created.
 
 ![](../static/description/BO_lines.png)
 
@@ -52,7 +53,8 @@ PO line is associated. Upon adding a new product in a newly created Sale
 Order a blanket order line will be suggested depending on the following
 factors:
 
-- Closer Validity date
+- Started validity period
+- Closer scheduled date
 - Remaining quantity \> Quantity introduced in the Sale Order line
 
 ![](../static/description/PO_BOLine.png)

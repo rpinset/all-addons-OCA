@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-07-12 15:49 UTC
+Generated 2026-07-15 22:19 UTC
 
 ## Skipped repos
 
@@ -23,7 +23,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-jira](https://github.com/OCA/connector-jira) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-lengow](https://github.com/OCA/connector-lengow) | `no_module` | No directory with __manifest__.py at repo root |
-| [connector-lims](https://github.com/OCA/connector-lims) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | `no_module` | No directory with __manifest__.py at repo root |
@@ -144,7 +143,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-education](https://github.com/OCA/vertical-education) | `no_module` | No directory with __manifest__.py at repo root |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-medical](https://github.com/OCA/vertical-medical) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-ngo](https://github.com/OCA/vertical-ngo) | `no_module` | No directory with __manifest__.py at repo root |
