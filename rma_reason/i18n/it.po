@@ -152,6 +152,7 @@ msgstr "Motivo RMA"
 #. module: rma_reason
 #: model:ir.model.fields,field_description:rma_reason.field_rma__reason_id
 #: model:ir.model.fields,field_description:rma_reason.field_rma_rma_wizard__reason_id
+#: model_terms:ir.ui.view,arch_db:rma_reason.portal_my_rmas_reason
 msgid "Reason"
 msgstr "Motivo"
 

@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-07-12 15:51 UTC
+Generated 2026-07-15 22:20 UTC
 
-Total skipped: **108**
+Total skipped: **107**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **83**
+Count: **82**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -112,7 +112,6 @@ Count: **83**
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [18.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | [18.0](https://github.com/OCA/vertical-edition/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-education](https://github.com/OCA/vertical-education) | [18.0](https://github.com/OCA/vertical-education/tree/18.0) | No directory with __manifest__.py at repo root |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | [18.0](https://github.com/OCA/vertical-hotel/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | [18.0](https://github.com/OCA/vertical-isp/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-medical](https://github.com/OCA/vertical-medical) | [18.0](https://github.com/OCA/vertical-medical/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-ngo](https://github.com/OCA/vertical-ngo) | [18.0](https://github.com/OCA/vertical-ngo/tree/18.0) | No directory with __manifest__.py at repo root |

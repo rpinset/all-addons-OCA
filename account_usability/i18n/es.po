@@ -88,15 +88,11 @@ msgstr "Grupo"
 #. module: account_usability
 #: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
 msgid ""
-"Record the cost of a good as an expense when this good is\n"
-"                                invoiced to a final customer (instead of "
-"recording the cost as soon\n"
-"                                as the product is received in stock)."
+"Record the cost of a good as an expense when this good "
+"is                         invoiced to a final customer (instead of "
+"recording the cost as soon                         as the product is "
+"received in stock)."
 msgstr ""
-"Registra el coste de un producto como un gasto cuando el producto se\n"
-"                                factura a un cliente final (en vez de "
-"registrar el coste tan pronto\n"
-"                                el producto se recibe en inventario)."
 
 #. module: account_usability
 #: model:ir.model.fields,help:account_usability.field_res_config_settings__anglo_saxon_accounting
@@ -126,6 +122,17 @@ msgstr "Plantillas"
 #: model:ir.model.fields,field_description:account_usability.field_res_config_settings__anglo_saxon_accounting
 msgid "Use anglo-saxon accounting"
 msgstr "Utilizar contabilidad anglo-sajona"
+
+#~ msgid ""
+#~ "Record the cost of a good as an expense when this good is\n"
+#~ "                                invoiced to a final customer (instead of "
+#~ "recording the cost as soon\n"
+#~ "                                as the product is received in stock)."
+#~ msgstr ""
+#~ "Registra el coste de un producto como un gasto cuando el producto se\n"
+#~ "                                factura a un cliente final (en vez de "
+#~ "registrar el coste tan pronto\n"
+#~ "                                el producto se recibe en inventario)."
 
 #~ msgid "Account Template"
 #~ msgstr "Plantilla Contable"

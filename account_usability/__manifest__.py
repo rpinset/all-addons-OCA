@@ -4,7 +4,7 @@
 
 {
     "name": "Account - Missing Menus & Saxon Accounting",
-    "version": "18.0.1.1.1",
+    "version": "18.0.1.1.2",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Adds missing menu entries for Account module and"

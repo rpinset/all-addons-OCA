@@ -89,14 +89,11 @@ msgstr "Группа"
 #. module: account_usability
 #: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
 msgid ""
-"Record the cost of a good as an expense when this good is\n"
-"                                invoiced to a final customer (instead of recording the cost as soon\n"
-"                                as the product is received in stock)."
+"Record the cost of a good as an expense when this good "
+"is                         invoiced to a final customer (instead of "
+"recording the cost as soon                         as the product is "
+"received in stock)."
 msgstr ""
-"Отразите стоимость товара в составе расходов, когда этот товар будет\n"
-"                                счет-фактуру конечному покупателю (вместо "
-"того, чтобы регистрировать стоимость сразу после того, как\n"
-"                                как только товар поступит на склад)."
 
 #. module: account_usability
 #: model:ir.model.fields,help:account_usability.field_res_config_settings__anglo_saxon_accounting
@@ -126,3 +123,14 @@ msgstr "Шаблоны"
 #: model:ir.model.fields,field_description:account_usability.field_res_config_settings__anglo_saxon_accounting
 msgid "Use anglo-saxon accounting"
 msgstr "Используйте англо-саксонскую бухгалтерию"
+
+#~ msgid ""
+#~ "Record the cost of a good as an expense when this good is\n"
+#~ "                                invoiced to a final customer (instead of "
+#~ "recording the cost as soon\n"
+#~ "                                as the product is received in stock)."
+#~ msgstr ""
+#~ "Отразите стоимость товара в составе расходов, когда этот товар будет\n"
+#~ "                                счет-фактуру конечному покупателю (вместо "
+#~ "того, чтобы регистрировать стоимость сразу после того, как\n"
+#~ "                                как только товар поступит на склад)."

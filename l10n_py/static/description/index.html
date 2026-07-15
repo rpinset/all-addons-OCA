@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>README.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<a class="reference external image-reference" href="https://odoo-community.org/get-involved?utm_source=readme">
+<img alt="Odoo Community Association" src="https://odoo-community.org/readme-banner-image" />
+</a>
+<div class="section" id="paraguay-accounting">
+<h1>Paraguay - Accounting</h1>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:f83106f48c2151cf9e7a1fbf3c4d3df5214273442e0941108e027190c098b29e
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html"><img alt="License: LGPL-3" src="https://img.shields.io/badge/license-LGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py"><img alt="OCA/l10n-paraguay" src="https://img.shields.io/badge/github-OCA%2Fl10n--paraguay-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/l10n-paraguay-18-0/l10n-paraguay-18-0-l10n_py"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/l10n-paraguay&amp;target_branch=18.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<div class="section" id="paraguay-accounting-1">
+<h2>Paraguay - Accounting</h2>
+<p>This module provides the Paraguayan chart of accounts and tax
+configuration for Odoo.</p>
+<div class="section" id="features">
+<h3>Features</h3>
+<ul class="simple">
+<li><strong>Standard Chart of Accounts</strong>: Complete Paraguayan accounting
+structure</li>
+<li><strong>Tax Configuration</strong>: Pre-configured tax rates including:<ul>
+<li>IVA 10% (standard VAT rate)</li>
+<li>IVA 5% (reduced VAT rate)</li>
+<li>Exempt (tax-exempt transactions)</li>
+</ul>
+</li>
+<li><strong>Tax Groups</strong>: Organized tax groups for better categorization</li>
+<li><strong>Fiscal Positions</strong>: Ready-to-use fiscal position configurations</li>
+</ul>
+</div>
+<div class="section" id="dependencies">
+<h3>Dependencies</h3>
+<p>This module requires:</p>
+<ul class="simple">
+<li><tt class="docutils literal">l10n_py_base</tt>: Base Paraguayan localization</li>
+</ul>
+</div>
+<div class="section" id="related-modules">
+<h3>Related Modules</h3>
+<p>For additional features, consider installing:</p>
+<ul class="simple">
+<li><tt class="docutils literal">l10n_py_account</tt>: Accounting extensions with journals and
+authorization management</li>
+<li><tt class="docutils literal">l10n_py_edi_base</tt>: Electronic invoicing base functionality</li>
+</ul>
+<p><strong>Table of contents</strong></p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+</div>
+<div class="section" id="installation-1">
+<h2>Installation</h2>
+<div class="section" id="prerequisites">
+<h3>Prerequisites</h3>
+<ul class="simple">
+<li>Odoo 16.0</li>
+<li><tt class="docutils literal">l10n_py_base</tt> module installed</li>
+<li><tt class="docutils literal">account</tt> module (core Odoo)</li>
+</ul>
+</div>
+<div class="section" id="installation-steps">
+<h3>Installation Steps</h3>
+<ol class="arabic simple">
+<li><strong>Copy Module</strong>: Place the module in your Odoo addons directory</li>
+<li><strong>Update Apps List</strong>:<ul>
+<li>Go to <strong>Apps</strong></li>
+<li>Click <strong>Update Apps List</strong></li>
+</ul>
+</li>
+<li><strong>Install Module</strong>:<ul>
+<li>Search for “Paraguay - Accounting”</li>
+<li>Click <strong>Install</strong></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="post-installation">
+<h3>Post-Installation</h3>
+<p>After installation:</p>
+<ol class="arabic simple">
+<li>Configure your company’s fiscal data in <tt class="docutils literal">l10n_py_base</tt></li>
+<li>Review and adjust chart of accounts if needed</li>
+<li>Configure tax rates on products</li>
+<li>Set up accounting journals (install <tt class="docutils literal">l10n_py_account</tt> for extended
+features)</li>
+</ol>
+</div>
+<div class="section" id="dependencies-1">
+<h3>Dependencies</h3>
+<p>The module will automatically install required dependencies:</p>
+<ul class="simple">
+<li><tt class="docutils literal">account</tt></li>
+<li><tt class="docutils literal">l10n_py_base</tt></li>
+</ul>
+</div>
+<div class="section" id="recommended-modules">
+<h3>Recommended Modules</h3>
+<p>For a complete Paraguayan localization, also install:</p>
+<ul class="simple">
+<li><tt class="docutils literal">l10n_py_account</tt>: Journal and authorization management</li>
+<li><tt class="docutils literal">l10n_py_edi_base</tt>: Electronic invoicing support</li>
+</ul>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration</h2>
+</div>
+<div class="section" id="configuration-1">
+<h2>Configuration</h2>
+<div class="section" id="initial-setup">
+<h3>Initial Setup</h3>
+<p>After installing the module, the Paraguayan chart of accounts will be
+automatically available.</p>
+</div>
+<div class="section" id="tax-configuration">
+<h3>Tax Configuration</h3>
+<p>The following taxes are pre-configured:</p>
+<div class="section" id="iva-10-standard-rate">
+<h4>IVA 10% (Standard Rate)</h4>
+<ul class="simple">
+<li>Default VAT rate for most goods and services</li>
+<li>Automatically applied unless otherwise specified</li>
+</ul>
+</div>
+<div class="section" id="iva-5-reduced-rate">
+<h4>IVA 5% (Reduced Rate)</h4>
+<ul class="simple">
+<li>Applied to specific products and services as defined by SET</li>
+<li>Must be configured manually on products when applicable</li>
+</ul>
+</div>
+<div class="section" id="exempt">
+<h4>Exempt</h4>
+<ul class="simple">
+<li>For tax-exempt transactions</li>
+<li>Use for products/services not subject to VAT</li>
+</ul>
+</div>
+</div>
+<div class="section" id="chart-of-accounts">
+<h3>Chart of Accounts</h3>
+<p>The module includes a standard Paraguayan chart of accounts structure
+following SET (Subsecretaría de Estado de Tributación) guidelines.</p>
+<p>To customize:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Chart of Accounts</strong></li>
+<li>Review and adjust accounts as needed for your business</li>
+<li>Set default accounts in <strong>Accounting &gt; Configuration &gt; Settings</strong></li>
+</ol>
+</div>
+<div class="section" id="fiscal-positions">
+<h3>Fiscal Positions</h3>
+<p>Configure fiscal positions based on your customer types:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Fiscal Positions</strong></li>
+<li>Review pre-configured positions</li>
+<li>Adjust tax mapping as needed</li>
+</ol>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+</div>
+<div class="section" id="usage-1">
+<h2>Usage</h2>
+<div class="section" id="setting-up-your-company">
+<h3>Setting Up Your Company</h3>
+<ol class="arabic simple">
+<li>Navigate to <strong>Settings &gt; General Settings &gt; Companies</strong></li>
+<li>Configure your company information</li>
+<li>Ensure you have installed <tt class="docutils literal">l10n_py_base</tt> for RUC and fiscal data</li>
+</ol>
+</div>
+<div class="section" id="using-taxes">
+<h3>Using Taxes</h3>
+<div class="section" id="on-sales">
+<h4>On Sales</h4>
+<ul class="simple">
+<li>Taxes are automatically calculated based on product configuration</li>
+<li>Default tax is IVA 10% unless otherwise specified</li>
+</ul>
+</div>
+<div class="section" id="on-purchases">
+<h4>On Purchases</h4>
+<ul class="simple">
+<li>Set appropriate input taxes on vendor bills</li>
+<li>System supports tax credit calculation</li>
+</ul>
+</div>
+</div>
+<div class="section" id="chart-of-accounts-1">
+<h3>Chart of Accounts</h3>
+<div class="section" id="viewing-accounts">
+<h4>Viewing Accounts</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Chart of Accounts</strong></li>
+<li>Browse available accounts</li>
+</ol>
+</div>
+<div class="section" id="creating-journal-entries">
+<h4>Creating Journal Entries</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Accounting &gt; Journal Entries</strong></li>
+<li>Create manual entries using the configured chart of accounts</li>
+<li>System validates account usage</li>
+</ol>
+</div>
+</div>
+<div class="section" id="reports">
+<h3>Reports</h3>
+<p>Standard Paraguayan accounting reports are available:</p>
+<ul class="simple">
+<li>Balance Sheet</li>
+<li>Profit &amp; Loss</li>
+<li>Tax Reports (IVA declarations)</li>
+</ul>
+<p>Access via <strong>Accounting &gt; Reporting</strong></p>
+</div>
+</div>
+<div class="section" id="bug-tracker">
+<h2>Bug Tracker</h2>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues/new?body=module:%20l10n_py%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h2>Credits</h2>
+<div class="section" id="authors">
+<h3>Authors</h3>
+<ul class="simple">
+<li>KMEE</li>
+</ul>
+</div>
+<div class="section" id="maintainers">
+<h3>Maintainers</h3>
+<p>This module is maintained by the OCA.</p>
+<a class="reference external image-reference" href="https://odoo-community.org">
+<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
+</a>
+<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py">OCA/l10n-paraguay</a> project on GitHub.</p>
+<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

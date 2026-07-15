@@ -2,6 +2,17 @@
 <!-- Copyright 2020 Tecnativa - Ernesto Tejeda
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
+    <template id="portal_my_rmas_reason" inherit_id="rma.portal_my_rmas">
+        <th name="th_operation_id" position="before">
+            <th name="th_reason_id">Reason</th>
+        </th>
+        <td name="td_operation_id" position="before">
+            <td name="td_reason_id">
+                <span t-field="rma.reason_id" />
+            </td>
+        </td>
+    </template>
+
     <template id="portal_rma_page" name="My RMA" inherit_id="rma.portal_rma_page">
         <xpath expr="//div[@id='product_information']" position="inside">
             <div class="col-12 col-md-6 mb-4 mb-md-0">
