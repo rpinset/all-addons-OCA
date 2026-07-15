@@ -6,5 +6,7 @@
         <field name="company_id" ref="base.main_company" />
         <field name="provider_type">sifen</field>
         <field name="environment">test</field>
+        <field name="l10n_py_idcsc">0001</field>
+        <field name="l10n_py_csc">ABCD0000000000000000000000000000</field>
     </record>
 </odoo>

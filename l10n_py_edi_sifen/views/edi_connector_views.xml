@@ -11,8 +11,16 @@
                     attrs="{'invisible': [('provider_type', '!=', 'sifen')]}"
                     string="SIFEN"
                 >
+                    <field name="l10n_py_idcsc" />
+                    <field
+                        name="l10n_py_csc"
+                        password="True"
+                        placeholder="CSC entregado por la SET (por ambiente)"
+                    />
                     <p colspan="2">
                         El certificado digital PKCS12 se configura en la ficha de la empresa.
+                        El CSC/IdCSC son necesarios para generar el código QR y son
+                        distintos en homologación y producción.
                     </p>
                 </group>
             </xpath>

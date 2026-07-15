@@ -1,52 +1,52 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 """
-RDeBuilder: Converts invoice_data dict → pysifen RDe binding object.
+RDeBuilder: Converts invoice_data dict → RDe binding object (SIFEN v150).
 
-Mapping follows SIFEN v150 Manual Técnico.
+Usa los bindings v150 de la librería pysifen (pysifen.de.bindings.de_v150),
+generados desde el XSD oficial del SET, con nombres de campo en originalCase
+(dSisFact, gValorRestaItem, dBasExe).
 """
 
 import logging
 from datetime import datetime
 from decimal import Decimal
 
-from pysifen.de.bindings.v150.fe_types_v141 import (
+from pysifen.de.bindings.de_v150.de_types_v150 import (
     TcCondNeg,
     TdCondTiCam,
     TdDcondCred,
+    TdDcondOpe,
+    TdDesAfecIva,
+    TdDesIndPresValue,
     TdDesModTrans,
+    TdDesMotEmi,
+    TdDesTiDe,
     TdDesTimp,
-    TdDesTiPag,
+    TdDesTiPagValue,
+    TdDesTipDocAso,
+    TdDesTipEmi,
     TdDesTtrans,
     TiModTrans,
+    TiRespEmiNr,
     TiRespFlete,
     TiTimp,
     TiTiPago,
     TiTtrans,
 )
-from pysifen.de.bindings.v150.fe_v141 import (
+from pysifen.de.bindings.de_v150.de_v150 import (
     RDe,
-    TdDcondOpe,
-    TdDesAfecIva,
-    TdDesIndPresValue,
-    TdDesMotEmi,
-    TdDesTiDe,
-    TdDesTipDocAso,
-    TdDesTipEmi,
     TDe,
     TgActEco,
     TgCamAe,
     TgCamCond,
     TgCamDeasoc,
-    TgCamEnt,
     TgCamFe,
     TgCamFuFd,
     TgCamItem,
     TgCamIva,
     TgCamNcde,
     TgCamNre,
-    TgCamSal,
-    TgCamTrans,
     TgCopeDe,
     TgCuotas,
     TgDaGoc,
@@ -61,11 +61,10 @@ from pysifen.de.bindings.v150.fe_v141 import (
     TgTotSub,
     TgTransp,
     TgValorItem,
-    TgVehTras,
-    TiRespEmiNr,
+    TgValorRestaItem,
 )
-from pysifen.de.bindings.v150.monedas_v100 import CMondT
-from pysifen.de.bindings.v150.xmldsig_core_schema import (
+from pysifen.de.bindings.de_v150.monedas_v150 import CMondT
+from pysifen.de.bindings.de_v150.xmldsig_core_schema import (
     CanonicalizationMethod,
     Signature,
     SignatureMethod,
@@ -79,14 +78,12 @@ _logger = logging.getLogger(__name__)
 
 _TIP_EMI_DESC = {1: TdDesTipEmi.NORMAL, 2: TdDesTipEmi.CONTINGENCIA}
 
-# Types 4 (AFE) and 7 (NRE) don't have entries in TdDesTiDe —
-# pysifen only defines FE, NCE, NDE descriptions.
 _TI_DE_DESC = {
     1: TdDesTiDe.FACTURA_ELECTR_NICA,
-    4: TdDesTiDe.FACTURA_ELECTR_NICA,  # AFE uses FE description
+    4: TdDesTiDe.FACTURA_ELECTR_NICA,
     5: TdDesTiDe.NOTA_DE_CR_DITO_ELECTR_NICA,
     6: TdDesTiDe.NOTA_DE_D_BITO_ELECTR_NICA,
-    7: TdDesTiDe.FACTURA_ELECTR_NICA,  # NRE — no specific desc in enum
+    7: TdDesTiDe.FACTURA_ELECTR_NICA,
 }
 
 _IND_PRES_DESC = {
@@ -100,7 +97,7 @@ _IND_PRES_DESC = {
 _COND_OPE_DESC = {1: TdDcondOpe.CONTADO, 2: TdDcondOpe.CR_DITO}
 
 _MOT_EMI_DESC = {
-    1: TdDesMotEmi.ANULACI_N,
+    1: TdDesMotEmi.DEVOLUCI_N_Y_AJUSTE_DE_PRECIOS,
     2: TdDesMotEmi.DEVOLUCI_N,
     3: TdDesMotEmi.DESCUENTO,
     4: TdDesMotEmi.BONIFICACI_N,
@@ -112,7 +109,7 @@ _MOT_EMI_DESC = {
 
 _AFEC_IVA_DESC = {
     1: TdDesAfecIva.GRAVADO_IVA,
-    2: TdDesAfecIva.EXONERADO_ART_83_LEY_125_91,
+    2: TdDesAfecIva.EXONERADO_ART_100_LEY_6380_2019,
     3: TdDesAfecIva.EXENTO,
     4: TdDesAfecIva.GRAVADO_PARCIAL_GRAV_EXENTO,
 }
@@ -122,33 +119,24 @@ _TIP_DOC_ASO_DESC = {
     2: TdDesTipDocAso.IMPRESO,
 }
 
-# Map ISO 4217 currency name → pysifen CMondT enum
 _CURRENCY_MAP = {m.value: m for m in CMondT}
 
-# Payment type code → description enum
 _TIP_PAGO_DESC = {
-    1: TdDesTiPag.EFECTIVO,
-    2: TdDesTiPag.CHEQUE,
-    3: TdDesTiPag.TARJETA_DE_CR_DITO,
-    4: TdDesTiPag.TARJETA_DE_D_BITO,
-    5: TdDesTiPag.TRANSFERENCIA,
-    6: TdDesTiPag.GIRO,
-    7: TdDesTiPag.BILLETERA_ELECTR_NICA,
-    8: TdDesTiPag.TARJETA_EMPRESARIAL,
-    9: TdDesTiPag.VALE,
-    10: TdDesTiPag.RETENCI_N,
-    11: TdDesTiPag.ANTICIPO,
-    12: TdDesTiPag.VALOR_FISCAL,
-    13: TdDesTiPag.VALOR_COMERCIAL,
-    14: TdDesTiPag.COMPENSACI_N,
-    15: TdDesTiPag.PERMUTA,
-    16: TdDesTiPag.PAGO_BANCARIO,
+    1: TdDesTiPagValue.EFECTIVO,
+    2: TdDesTiPagValue.CHEQUE,
+    3: TdDesTiPagValue.TARJETA_DE_CR_DITO,
+    4: TdDesTiPagValue.TARJETA_DE_D_BITO,
+    5: TdDesTiPagValue.TRANSFERENCIA,
+    6: TdDesTiPagValue.GIRO,
+    7: TdDesTiPagValue.BILLETERA_ELECTR_NICA,
+    8: TdDesTiPagValue.TARJETA_EMPRESARIAL,
+    9: TdDesTiPagValue.VALE,
+    10: TdDesTiPagValue.RETENCI_N,
+    11: TdDesTiPagValue.PAGO_POR_ANTICIPO,
 }
 
-# Payment type code → TiTiPago enum
-_TIP_PAGO_CODE = {i: TiTiPago(i) for i in range(1, 17)}
+_TIP_PAGO_CODE = {i: TiTiPago(i) for i in range(1, 12)}
 
-# Transport mode → description
 _MOD_TRANS_DESC = {
     1: TdDesModTrans.TERRESTRE,
     2: TdDesModTrans.FLUVIAL,
@@ -156,20 +144,17 @@ _MOD_TRANS_DESC = {
     4: TdDesModTrans.MULTIMODAL,
 }
 
-# Transport type → description
 _TIP_TRANS_DESC = {
     1: TdDesTtrans.PROPIO,
     2: TdDesTtrans.TERCERO,
 }
 
 
-def _get_currency_enum(currency_name: str) -> CMondT:
-    """Map ISO currency name to CMondT enum, default PYG."""
+def _get_currency_enum(currency_name):
     return _CURRENCY_MAP.get(currency_name, CMondT.PYG)
 
 
-def _get_currency_desc(currency_name: str) -> str:
-    """Get human description for currency."""
+def _get_currency_desc(currency_name):
     _CURRENCY_DESC = {
         "PYG": "Guarani",
         "USD": "Dólar americano",
@@ -182,19 +167,20 @@ def _get_currency_desc(currency_name: str) -> str:
 
 
 class RDeBuilder:
-    """Build pysifen RDe object from invoice_data dict."""
+    """Build SIFEN v150 RDe object from invoice_data dict."""
 
-    def __init__(self, invoice_data: dict, company_data: dict, cdc: str):
+    def __init__(self, invoice_data, company_data, cdc):
         self.data = invoice_data
         self.company = company_data
         self.cdc = cdc
 
-    def build(self) -> RDe:
-        """Build complete RDe."""
+    def build(self):
+        """Build complete RDe (v150)."""
         tde = TDe(
             Id=self.cdc,
-            dDVId=self.cdc[-1] if len(self.cdc) == 43 else "",
-            dFecFirma="",
+            dDVId=self.cdc[-1],
+            dFecFirma=self.data.get("fechaFirma", self.data.get("fecha", "")),
+            dSisFact=int(self.data.get("sistemaFacturacion", 1)),
             gOpeDE=self._build_gOpeDE(),
             gTimb=self._build_gTimb(),
             gDatGralOpe=self._build_gDatGralOpe(),
@@ -202,18 +188,14 @@ class RDeBuilder:
             gTotSub=self._build_gTotSub(),
         )
 
-        # Optional: transport data (Grupo G — NRE)
         transp_data = self.data.get("transporte")
         if transp_data:
             tde.gDtipDE.gTransp = self._build_gTransp(transp_data)
 
-        # Optional: associated documents (Grupo H)
         assoc_docs = self.data.get("documentosAsociados", [])
         if assoc_docs:
             tde.gCamDEAsoc = self._build_gCamDEAsoc(assoc_docs)
 
-        # Signature and gCamFuFD are required by the binding but filled
-        # by pysifen at signing time.  For preview we use empty placeholders.
         empty_signature = Signature(
             SignedInfo=SignedInfo(
                 CanonicalizationMethod=CanonicalizationMethod(Algorithm=""),
@@ -222,14 +204,13 @@ class RDeBuilder:
             SignatureValue=SignatureValue(),
         )
         return RDe(
-            dVerFor="150",
+            dVerFor=150,
             DE=tde,
             Signature=empty_signature,
             gCamFuFD=TgCamFuFd(dCarQR=""),
         )
 
-    def _build_gOpeDE(self) -> TgCopeDe:
-        """Grupo A: Operational data."""
+    def _build_gOpeDE(self):
         tip_emi = self.data.get("tipoEmision", 1)
         return TgCopeDe(
             iTipEmi=tip_emi,
@@ -237,10 +218,9 @@ class RDeBuilder:
             dCodSeg=self.data.get("codigoSeguridadAleatorio", "000000000"),
         )
 
-    def _build_gTimb(self) -> TgDtim:
-        """Grupo B: Timbrado / document identification."""
+    def _build_gTimb(self):
         ti_de = self.data.get("tipoDocumento", 1)
-        return TgDtim(
+        gtimb = TgDtim(
             iTiDE=ti_de,
             dDesTiDE=_TI_DE_DESC.get(ti_de, TdDesTiDe.FACTURA_ELECTR_NICA),
             dNumTim=self.data.get("timbrado", ""),
@@ -248,11 +228,10 @@ class RDeBuilder:
             dPunExp=self.data.get("punto", "001"),
             dNumDoc=self.data.get("numero", "0000001"),
             dFeIniT=self.data.get("timbradoFechaInicio", ""),
-            dFeFinT=self.data.get("timbradoFechaFin", ""),
         )
+        return gtimb
 
-    def _build_gDatGralOpe(self) -> TgDaGoc:
-        """Grupo C: General operation data (includes gOpeCom)."""
+    def _build_gDatGralOpe(self):
         fecha_str = self.data.get("fecha", datetime.now().strftime("%Y-%m-%dT%H:%M:%S"))
         return TgDaGoc(
             dFeEmiDE=fecha_str,
@@ -261,25 +240,22 @@ class RDeBuilder:
             gDatRec=self._build_gDatRec(),
         )
 
-    def _build_gOpeCom(self) -> TgOpeCom:
-        """Grupo D: Commercial operation data (gOpeCom)."""
+    def _build_gOpeCom(self):
         currency_name = self.data.get("moneda", "PYG")
         cond_ti_cam = self.data.get("condicionTipoCambio", 1)
         tipo_cambio = self.data.get("tipoCambio", 0)
 
         ope_com = TgOpeCom(
-            iTImp=TiTimp.VALUE_1,  # IVA
+            iTImp=TiTimp.VALUE_1,
             dDesTImp=TdDesTimp.IVA,
             cMoneOpe=_get_currency_enum(currency_name),
             dDesMoneOpe=_get_currency_desc(currency_name),
         )
 
-        # Transaction type (optional in gOpeCom)
         tip_tra = self.data.get("tipoTransaccion")
         if tip_tra:
             ope_com.iTipTra = tip_tra
 
-        # Exchange rate condition — only when currency != PYG
         if currency_name != "PYG":
             ope_com.dCondTiCam = TdCondTiCam(cond_ti_cam)
             if tipo_cambio:
@@ -287,8 +263,7 @@ class RDeBuilder:
 
         return ope_com
 
-    def _build_gEmis(self) -> TgEmis:
-        """Grupo D: Emitter (company) data."""
+    def _build_gEmis(self):
         return TgEmis(
             dRucEm=self.company.get("ruc", ""),
             dDVEmi=self.company.get("dv", ""),
@@ -299,8 +274,10 @@ class RDeBuilder:
             dNumCas=int(self.company.get("numeroCasa", 0)),
             cDepEmi=self.company.get("departamento", 1),
             dDesDepEmi=self.company.get("departamentoDescripcion", ""),
-            cDisEmi=str(self.company.get("distrito", 0)) or None,
-            cCiuEmi=str(self.company.get("ciudad", "")),
+            cDisEmi=(
+                int(self.company["distrito"]) if self.company.get("distrito") else None
+            ),
+            cCiuEmi=int(self.company.get("ciudad", 1) or 1),
             dDesCiuEmi=self.company.get("ciudadDescripcion", ""),
             dTelEmi=self.company.get("telefono", ""),
             dEmailE=self.company.get("email", ""),
@@ -312,8 +289,7 @@ class RDeBuilder:
             ],
         )
 
-    def _build_gDatRec(self) -> TgDatRec:
-        """Grupo D: Receiver (customer) data."""
+    def _build_gDatRec(self):
         cliente = self.data.get("cliente", {})
         rec = TgDatRec(
             iNatRec=cliente.get("naturalezaReceptor", "1"),
@@ -346,13 +322,10 @@ class RDeBuilder:
             rec.dNumIDRec = cliente["documentoNumero"]
         return rec
 
-    def _build_gDtipDE(self) -> TgDtipDe:
-        """Grupo E: Document type specifics + items."""
+    def _build_gDtipDE(self):
         dtip = TgDtipDe()
-
         doc_type = self.data.get("tipoDocumento", 1)
 
-        # Factura electrónica (tipo 1)
         if doc_type == 1:
             factura = self.data.get("factura", {})
             presencia = factura.get("presencia", 1)
@@ -362,8 +335,6 @@ class RDeBuilder:
                     presencia, TdDesIndPresValue.OPERACI_N_PRESENCIAL
                 ),
             )
-
-        # Autofactura electrónica (tipo 4)
         elif doc_type == 4:
             factura = self.data.get("factura", {})
             presencia = factura.get("presencia", 1)
@@ -373,20 +344,17 @@ class RDeBuilder:
                     presencia, TdDesIndPresValue.OPERACI_N_PRESENCIAL
                 ),
             )
-            # AFE-specific data
             afe_data = self.data.get("autofactura")
             if afe_data:
                 dtip.gCamAE = self._build_gCamAE(afe_data)
-
-        # Nota de crédito (tipo 5) or Nota de débito (tipo 6)
         elif doc_type in (5, 6):
             mot_emi = self.data.get("motivoEmision", 1)
             dtip.gCamNCDE = TgCamNcde(
                 iMotEmi=str(mot_emi),
-                dDesMotEmi=_MOT_EMI_DESC.get(mot_emi, TdDesMotEmi.ANULACI_N),
+                dDesMotEmi=_MOT_EMI_DESC.get(
+                    mot_emi, TdDesMotEmi.DEVOLUCI_N_Y_AJUSTE_DE_PRECIOS
+                ),
             )
-
-        # Nota de remisión (tipo 7)
         elif doc_type == 7:
             remision = self.data.get("remision", {})
             dtip.gCamNRE = TgCamNre(
@@ -394,31 +362,22 @@ class RDeBuilder:
                 iRespEmiNR=TiRespEmiNr.VALUE_1,
             )
 
-        # Payment condition (lives inside gDtipDE)
         cond = self.data.get("condicion", {})
         cond_ope = cond.get("tipo", 1)
         cam_cond = TgCamCond(
             iCondOpe=cond_ope,
             dDCondOpe=_COND_OPE_DESC.get(cond_ope, TdDcondOpe.CONTADO),
         )
-
-        # Payment details
         if cond_ope == 1:
-            # Contado — build gPaConEIni
             cam_cond.gPaConEIni = self._build_gPaConEIni(cond)
         elif cond_ope == 2:
-            # Crédito — build gPagCred
             cam_cond.gPagCred = self._build_gPagCred(cond)
-
         dtip.gCamCond = cam_cond
 
-        # Items
         dtip.gCamItem = self._build_gCamItems()
-
         return dtip
 
-    def _build_gPaConEIni(self, cond: dict) -> list:
-        """Build cash payment entries (gPaConEIni → TgPagCont[])."""
+    def _build_gPaConEIni(self, cond):
         entregas = cond.get("entregas", [])
         result = []
         for entrega in entregas:
@@ -426,12 +385,11 @@ class RDeBuilder:
             currency_name = entrega.get("moneda", "PYG")
             pag_cont = TgPagCont(
                 iTiPago=_TIP_PAGO_CODE.get(tipo_pago, TiTiPago.VALUE_1),
-                dDesTiPag=_TIP_PAGO_DESC.get(tipo_pago, TdDesTiPag.EFECTIVO),
+                dDesTiPag=_TIP_PAGO_DESC.get(tipo_pago, TdDesTiPagValue.EFECTIVO),
                 dMonTiPag=Decimal(str(entrega.get("monto", 0))),
                 cMoneTiPag=_get_currency_enum(currency_name),
                 dDMoneTiPag=_get_currency_desc(currency_name),
             )
-            # Exchange rate for payment if not PYG
             if currency_name != "PYG":
                 tipo_cambio = self.data.get("tipoCambio", 0)
                 if tipo_cambio:
@@ -439,26 +397,22 @@ class RDeBuilder:
             result.append(pag_cont)
         return result
 
-    def _build_gPagCred(self, cond: dict) -> TgPagCred:
-        """Build credit payment data (gPagCred → TgPagCred)."""
+    def _build_gPagCred(self, cond):
         credito = cond.get("credito", {})
-        tipo_cred = credito.get("tipo", 1)  # 1=Plazo, 2=Cuotas
-
+        tipo_cred = credito.get("tipo", 1)
         pag_cred = TgPagCred(
             iCondCred=TgPagCredICondCred(tipo_cred),
             dDCondCred=(TdDcondCred.PLAZO if tipo_cred == 1 else TdDcondCred.CUOTA),
         )
-
         if credito.get("plazo"):
             pag_cred.dPlazoCre = credito["plazo"]
         if credito.get("cuotas"):
             pag_cred.dCuotas = credito["cuotas"]
-
-        # Build installments
-        cuotas_data = credito.get("infoCuotas", [])
         cuotas_list = []
-        for cuota in cuotas_data:
+        for cuota in credito.get("infoCuotas", []):
             g_cuota = TgCuotas(
+                cMoneCuo=_get_currency_enum(cuota.get("moneda", "PYG")),
+                dDMoneCuo=_get_currency_desc(cuota.get("moneda", "PYG")),
                 dMonCuota=Decimal(str(cuota.get("monto", 0))),
             )
             if cuota.get("vencimiento"):
@@ -466,11 +420,9 @@ class RDeBuilder:
             cuotas_list.append(g_cuota)
         if cuotas_list:
             pag_cred.gCuotas = cuotas_list
-
         return pag_cred
 
-    def _build_gCamAE(self, afe_data: dict) -> TgCamAe:
-        """Build Autofactura data (Grupo E — gCamAE)."""
+    def _build_gCamAE(self, afe_data):
         return TgCamAe(
             iTipCons=afe_data.get("tipoConstancia", 1),
             dDesTipCons=str(afe_data.get("tipoConstancia", 1)),
@@ -495,98 +447,25 @@ class RDeBuilder:
             dDesCiuProv=str(afe_data.get("ciudadProvision", 1)),
         )
 
-    def _build_gTransp(self, transp_data: dict) -> TgTransp:
-        """Grupo G: Transport data."""
+    def _build_gTransp(self, transp_data):
         mod_trans = transp_data.get("modalidad", 1)
         transp = TgTransp(
             iModTrans=TiModTrans(mod_trans),
             dDesModTrans=_MOD_TRANS_DESC.get(mod_trans, TdDesModTrans.TERRESTRE),
         )
-
-        # Transport type
         tip_trans = transp_data.get("tipo")
         if tip_trans:
             transp.iTipTrans = TiTtrans(tip_trans)
             transp.dDesTipTrans = _TIP_TRANS_DESC.get(tip_trans, TdDesTtrans.PROPIO)
-
-        # Freight responsibility
         resp_flete = transp_data.get("responsableFlete")
         if resp_flete:
             transp.iRespFlete = TiRespFlete(resp_flete)
-
-        # Incoterm
         cond_neg = transp_data.get("condicionNegociacion")
         if cond_neg:
             transp.cCondNeg = TcCondNeg(cond_neg)
-
-        # Manifest number
-        if transp_data.get("numeroManifiesto"):
-            transp.dNuManif = transp_data["numeroManifiesto"]
-
-        # Dates
-        if transp_data.get("fechaInicio"):
-            transp.dIniTras = transp_data["fechaInicio"]
-        if transp_data.get("fechaFin"):
-            transp.dFinTras = transp_data["fechaFin"]
-
-        # Departure point (gCamSal)
-        salida = transp_data.get("salida")
-        if salida:
-            transp.gCamSal = TgCamSal(
-                dDirLocSal=salida.get("direccion", ""),
-                dNumCasSal=salida.get("numeroCasa", 0),
-                cDepSal=salida.get("departamento", 1),
-                dDesDepSal=str(salida.get("departamento", 1)),
-                cCiuSal=salida.get("ciudad", 1),
-                dDesCiuSal=str(salida.get("ciudad", 1)),
-            )
-
-        # Delivery points (gCamEnt[])
-        entregas = transp_data.get("entregas", [])
-        if entregas:
-            transp.gCamEnt = [
-                TgCamEnt(
-                    dDirLocEnt=e.get("direccion", ""),
-                    dNumCasEnt=e.get("numeroCasa", 0),
-                    cDepEnt=e.get("departamento", 1),
-                    dDesDepEnt=str(e.get("departamento", 1)),
-                    cCiuEnt=e.get("ciudad", 1),
-                    dDesCiuEnt=str(e.get("ciudad", 1)),
-                )
-                for e in entregas
-            ]
-
-        # Vehicles (gVehTras[])
-        vehiculos = transp_data.get("vehiculos", [])
-        if vehiculos:
-            transp.gVehTras = [
-                TgVehTras(
-                    dTiVehTras=_MOD_TRANS_DESC.get(mod_trans, TdDesModTrans.TERRESTRE),
-                    dMarVeh=v.get("marca", ""),
-                    dNroIDVeh=v.get("numero", ""),
-                )
-                for v in vehiculos
-            ]
-
-        # Transporter (gCamTrans)
-        transportista = transp_data.get("transportista")
-        if transportista:
-            cam_trans = TgCamTrans(
-                iNatTrans=transportista.get("naturaleza", "1"),
-                dNomTrans=transportista.get("nombre", ""),
-                dNumIDChof=transportista.get("choferDocumento", ""),
-                dNomChof=transportista.get("choferNombre", ""),
-            )
-            if transportista.get("ruc"):
-                cam_trans.dRucTrans = transportista["ruc"]
-            if transportista.get("dv"):
-                cam_trans.dDVTrans = transportista["dv"]
-            transp.gCamTrans = cam_trans
-
         return transp
 
-    def _build_gCamItems(self) -> list:
-        """Grupo E8: Invoice line items."""
+    def _build_gCamItems(self):
         items = []
         for item_data in self.data.get("items", []):
             iva_tipo = item_data.get("ivaTipo", 1)
@@ -596,6 +475,7 @@ class RDeBuilder:
             precio = Decimal(str(item_data.get("precioUnitario", 0)))
             cantidad = Decimal(str(item_data.get("cantidad", 1)))
             total_item = precio * cantidad
+            base_exenta = total_item if iva_tipo == 3 else Decimal("0")
 
             item = TgCamItem(
                 dCodInt=item_data.get("codigo", ""),
@@ -605,8 +485,11 @@ class RDeBuilder:
                 dCantProSer=cantidad,
                 gValorItem=TgValorItem(
                     dPUniProSer=precio,
-                    dDescItem=Decimal("0"),
-                    dTotOpeItem=total_item,
+                    dTotBruOpeItem=total_item,
+                    gValorRestaItem=TgValorRestaItem(
+                        dDescItem=Decimal("0"),
+                        dTotOpeItem=total_item,
+                    ),
                 ),
                 gCamIVA=TgCamIva(
                     iAfecIVA=iva_tipo,
@@ -615,6 +498,7 @@ class RDeBuilder:
                     dTasaIVA=iva_rate,
                     dBasGravIVA=base_gravada,
                     dLiqIVAItem=liquidacion_iva,
+                    dBasExe=base_exenta,
                 ),
             )
             if item_data.get("ncm"):
@@ -622,8 +506,7 @@ class RDeBuilder:
             items.append(item)
         return items
 
-    def _build_gTotSub(self) -> TgTotSub:
-        """Grupo F: Totals."""
+    def _build_gTotSub(self):
         totales = self.data.get("totales", {})
         return TgTotSub(
             dSubExe=Decimal(str(totales.get("totalExento", 0))),
@@ -631,41 +514,35 @@ class RDeBuilder:
             dSub10=Decimal(str(totales.get("totalGravado10", 0))),
             dTotOpe=Decimal(str(totales.get("totalOperacion", 0))),
             dTotDesc=Decimal("0"),
+            dTotDescGlotem=Decimal("0"),
+            dTotAntItem=Decimal("0"),
+            dTotAnt=Decimal("0"),
             dPorcDescTotal=Decimal("0"),
             dDescTotal=Decimal("0"),
             dAnticipo=Decimal("0"),
             dRedon=Decimal("0"),
             dTotGralOpe=Decimal(str(totales.get("totalPYG", 0))),
-            dTotIVA=Decimal(str(totales.get("totalIva", 0))),
             dIVA5=Decimal(str(totales.get("liquidacionIva5", 0))),
             dIVA10=Decimal(str(totales.get("liquidacionIva10", 0))),
+            dTotIVA=Decimal(str(totales.get("totalIva", 0))),
             dBaseGrav5=Decimal(str(totales.get("baseGravada5", 0))),
             dBaseGrav10=Decimal(str(totales.get("baseGravada10", 0))),
             dTBasGraIVA=Decimal(str(totales.get("totalBaseGravada", 0))),
         )
 
-    def _build_gCamDEAsoc(self, docs: list) -> list:
-        """Grupo H: Associated documents."""
+    def _build_gCamDEAsoc(self, docs):
         result = []
         for doc in docs:
             tip_doc_aso = doc.get("tipoAsociacion", 1)
-            assoc = TgCamDeasoc(
+            cam_asoc = TgCamDeasoc(
                 iTipDocAso=tip_doc_aso,
                 dDesTipDocAso=_TIP_DOC_ASO_DESC.get(
                     tip_doc_aso, TdDesTipDocAso.ELECTR_NICO
                 ),
             )
             if doc.get("cdc"):
-                assoc.dCdCDERef = doc["cdc"]
+                cam_asoc.d_cdcderef = doc["cdc"]
             if doc.get("timbrado"):
-                assoc.dNTimDI = doc["timbrado"]
-            if doc.get("establecimiento"):
-                assoc.dEstDocAso = doc["establecimiento"]
-            if doc.get("punto"):
-                assoc.dPExpDocAso = doc["punto"]
-            if doc.get("numero"):
-                assoc.dNumDocAso = doc["numero"]
-            if doc.get("fecha"):
-                assoc.dFecEmiDI = doc["fecha"]
-            result.append(assoc)
+                cam_asoc.dNumTim = doc["timbrado"]
+            result.append(cam_asoc)
         return result

@@ -1,6 +1,6 @@
 {
     "name": "Paraguay - SIFEN Direct EDI Connector",
-    "version": "16.0.2.0.0",
+    "version": "16.0.13.0.0",
     "category": "Accounting/Localizations/EDI",
     "summary": "Direct SIFEN transmission via pysifen library",
     "author": "KMEE, Odoo Community Association (OCA)",

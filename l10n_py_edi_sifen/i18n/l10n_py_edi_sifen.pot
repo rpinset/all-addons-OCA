@@ -14,6 +14,16 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_py_edi_sifen
+#: model:ir.model.fields,field_description:l10n_py_edi_sifen.field_l10n_py_edi_connector__l10n_py_csc
+msgid "CSC"
+msgstr ""
+
+#. module: l10n_py_edi_sifen
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifen.view_edi_connector_form_sifen
+msgid "CSC entregado por la SET (por ambiente)"
+msgstr ""
+
+#. module: l10n_py_edi_sifen
 #: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifen.view_company_form_sifen
 msgid "Certificado Digital (SIFEN)"
 msgstr ""
@@ -53,8 +63,18 @@ msgid "Contraseña del Certificado"
 msgstr ""
 
 #. module: l10n_py_edi_sifen
+#: model:ir.model.fields,help:l10n_py_edi_sifen.field_l10n_py_edi_connector__l10n_py_csc
+msgid ""
+"Código de Seguridad del Contribuyente entregado por la SET. Distinto por "
+"ambiente (homologación vs producción)."
+msgstr ""
+
+#. module: l10n_py_edi_sifen
 #: model_terms:ir.ui.view,arch_db:l10n_py_edi_sifen.view_edi_connector_form_sifen
-msgid "El certificado digital PKCS12 se configura en la ficha de la empresa."
+msgid ""
+"El certificado digital PKCS12 se configura en la ficha de la empresa.\n"
+"                        El CSC/IdCSC son necesarios para generar el código QR y son\n"
+"                        distintos en homologación y producción."
 msgstr ""
 
 #. module: l10n_py_edi_sifen
@@ -67,6 +87,16 @@ msgstr ""
 #. module: l10n_py_edi_sifen
 #: model:ir.model.fields,field_description:l10n_py_edi_sifen.field_res_company__l10n_py_certificate_expiry
 msgid "Expiración"
+msgstr ""
+
+#. module: l10n_py_edi_sifen
+#: model:ir.model.fields,field_description:l10n_py_edi_sifen.field_l10n_py_edi_connector__l10n_py_idcsc
+msgid "ID CSC"
+msgstr ""
+
+#. module: l10n_py_edi_sifen
+#: model:ir.model.fields,help:l10n_py_edi_sifen.field_l10n_py_edi_connector__l10n_py_idcsc
+msgid "Identificador del CSC (ej. 0001)."
 msgstr ""
 
 #. module: l10n_py_edi_sifen
