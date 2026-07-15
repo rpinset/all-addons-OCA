@@ -5501,7 +5501,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 17.0.1.2.3 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 17.0.1.2.4 |  | Report to printer
 [printer_zpl2](printer_zpl2/) | 17.0.1.1.1 |  | Add a ZPL II label printing feature
 
 [//]: # (end addons)
@@ -5863,7 +5863,7 @@ addon | version | maintainers | summary
 [sale_attached_product](sale_attached_product/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.2.1 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.1.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.2.1.0 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 17.0.2.2.0 |  | Blanket Orders
 [sale_block_no_stock](sale_block_no_stock/) | 17.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Block Sales if products has not enough Quantity based on a chosen field
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
@@ -6776,6 +6776,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_line_sale_line_position](delivery_line_sale_line_position/) | 17.0.1.0.0 |  | Adds the sale line position to the delivery report lines
+[stock_delivery_note](stock_delivery_note/) | 17.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_move_pivot_total_price](stock_move_pivot_total_price/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Adds a total price UOM to the stock move pivot view
 [stock_move_value_report](stock_move_value_report/) | 17.0.1.0.1 |  | Stock Move Cost Value Report
 [stock_picking_comment_template](stock_picking_comment_template/) | 17.0.1.0.0 |  | Comments texts templates on Picking documents
@@ -6783,6 +6784,9 @@ addon | version | maintainers | summary
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 17.0.1.1.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
 [stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Delivery Driver info in Stock Picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
+[stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Stock Picking Report Header Repeater
+[stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 17.0.1.0.0 |  | Show delivery address when picking type is internal
+[stock_picking_report_salesperson](stock_picking_report_salesperson/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Salesperson info in Stock Picking reports
 [stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.2.0 |  | Adding Valued Picking on Delivery Slip report
 [stock_quant_history](stock_quant_history/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
@@ -7063,6 +7067,7 @@ addon | version | maintainers | summary
 [stock_picking_kind](stock_picking_kind/) | 17.0.1.0.0 |  | Computes the kind of picking based on locations
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 17.0.1.0.1 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 17.0.1.0.0 |  | Stock Picking Mass Action
+[stock_picking_mrp_mass_production_order](stock_picking_mrp_mass_production_order/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Stock Picking MRP Mass Production Order
 [stock_picking_origin_reference](stock_picking_origin_reference/) | 17.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
 [stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 17.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
 [stock_picking_origin_reference_sale](stock_picking_origin_reference_sale/) | 17.0.1.0.0 |  | Transfer to Sales Order navigation from the Source Document.
@@ -7186,7 +7191,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [fs_attachment](fs_attachment/) | 17.0.1.6.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
-[fs_attachment_s3](fs_attachment_s3/) | 17.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
+[fs_attachment_s3](fs_attachment_s3/) | 17.0.1.3.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments into S3 complient filesystem
 [fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
@@ -7258,6 +7263,7 @@ addon | version | maintainers | summary
 [survey_next_survey_update_partner](survey_next_survey_update_partner/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Update the partner values when it's generated from the previous survey
 [survey_partner_representative](survey_partner_representative/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Fill the survey on behalf of others
 [survey_question_type_binary](survey_question_type_binary/) | 17.0.1.0.0 |  | This module add binary field as question type for survey page
+[survey_question_type_model_selection](survey_question_type_model_selection/) | 17.0.1.0.0 | <a href='https://github.com/eduezerouali-tecnativa'><img src='https://github.com/eduezerouali-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='eduezerouali-tecnativa'/></a> | This module add model selection field as question type for survey page
 [survey_resource_booking](survey_resource_booking/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Access survey answers from resource booking
 [survey_result_mail](survey_result_mail/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Send survey answers to the survey user
 [survey_sale_generation](survey_sale_generation/) | 17.0.1.0.3 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Generate sale orders from surveys
