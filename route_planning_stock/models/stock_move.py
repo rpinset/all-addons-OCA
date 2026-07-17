@@ -29,3 +29,10 @@ class StockMove(models.Model):
             if route_area_pickings:
                 route_area_pickings._find_auto_route()
         return res
+
+    def _set_locations_from_record_route_area(self):
+        """This method will be extended by other modules to apply the appropriate
+        changes to the location of the linked picking moves.
+        This method is called from a picking when the route area changes.
+        """
+        return

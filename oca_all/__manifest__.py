@@ -3,7 +3,7 @@
 {
     "name": "OCA All",
     "summary": "All oca modules dependencies",
-    "version": "18.0.1.1.1",
+    "version": "18.0.1.1.2",
     "development_status": "Alpha",
     "website": "https://github.com/OCA/oca-custom",
     "author": "Pierre Verkest <pierre@verkest.fr>, Odoo Community Association (OCA)",
@@ -94,7 +94,6 @@
         "website_mail",
         "website_mail_group",
         "website_mass_mailing",
-        "website_membership",
         "website_partner",
         "website_payment",
         "website_profile",

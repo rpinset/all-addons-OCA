@@ -13,7 +13,8 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     route_area_id = fields.Many2one(
-        "route.area",
+        comodel_name="route.area",
+        inverse="_inverse_route_area_id",
         string="Route Area",
         copy=False,
         help="Route area for this picking, used to create routes.",
@@ -30,6 +31,22 @@ class StockPicking(models.Model):
     def _compute_has_route_planning(self):
         for picking in self:
             picking.has_route_planning = bool(picking.route_checkpoint_ids)
+
+    def _inverse_route_area_id(self):
+        """When changing the route area (for example, using the wizard), we will update
+        the route_area_id for pending pickings and moves
+        """
+        for item in self.filtered("move_ids"):
+            item.move_ids._set_locations_from_record_route_area()
+            # Change location_dest_id to be consistent
+            item.location_dest_id = item.move_ids[0].location_dest_id
+            # We removed the linked checkpoint because there may not be a defined
+            # route area, or the route area may have changed and need to be added
+            # to another route.
+            item.route_checkpoint_ids.unlink()
+            # We'll try to create a new one (it will only be created if necessary,
+            # for example, if a route area is defined)
+            item._find_auto_route()
 
     def action_cancel(self):
         checkpoints = self.route_checkpoint_ids.filtered(

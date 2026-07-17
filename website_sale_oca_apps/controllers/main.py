@@ -32,23 +32,11 @@ class WebsiteSaleProductRedirect(WebsiteSale):
                     request.env["vcp.odoo.module"].sudo().browse(url.res_id).url_key
                 )
                 product_url = url_join(new_shop_url, url_key)
-                return werkzeug.utils.redirect(product_url, 307)
+                return werkzeug.utils.redirect(product_url, 301)
         return super().product(product, category=category, search=search, **kwargs)
 
 
 class WebsitePartnerPageRedirect(WebsitePartnerPage):
-    @http.route(["/partners"], type="http", auth="public", website=True)
-    def partners(self, **post):
-        new_shop_url = (
-            request.env["ir.config_parameter"]
-            .sudo()
-            .get_param(
-                "website_oca_apps_new_shop.url", "https://apps.odoo-community.org"
-            )
-        )
-        url = url_join(new_shop_url, "integrators")
-        return werkzeug.utils.redirect(url, 307)
-
     @http.route(
         [
             "/partners/<partner_id>",
@@ -73,5 +61,27 @@ class WebsitePartnerPageRedirect(WebsitePartnerPage):
                 )
                 if partner_sudo.url_key:
                     url = url_join(new_shop_url, partner_sudo.url_key)
-                    return werkzeug.utils.redirect(url, 307)
+                    return werkzeug.utils.redirect(url, 301)
         return super().partners_detail(partner_id, **post)
+
+
+class WebsiteMembership(http.Controller):
+    # Do not use semantic controller due to SUPERUSER_ID
+    @http.route(["/members/<partner_id>"], type="http", auth="public", website=True)
+    def partners_detail(self, partner_id, **post):
+        _, partner_id = request.env["ir.http"]._unslug(partner_id)
+        if partner_id:
+            partner_sudo = request.env["res.partner"].sudo().browse(partner_id)
+            if partner_sudo.exists() and partner_sudo.website_published:
+                new_shop_url = (
+                    request.env["ir.config_parameter"]
+                    .sudo()
+                    .get_param(
+                        "website_oca_apps_new_shop.url",
+                        "https://apps.odoo-community.org",
+                    )
+                )
+                if partner_sudo.url_key:
+                    url = url_join(new_shop_url, partner_sudo.url_key)
+                    return werkzeug.utils.redirect(url, 301)
+        raise request.not_found()

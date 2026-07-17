@@ -45,9 +45,7 @@ class TestRoutePlanningSaleStock(RouteCommon):
         self.assertTrue(next_picking)
         self.assertEqual(next_picking.route_area_id, self.area_north)
         self.assertEqual(next_picking.location_id, self.area_north.location_id)
-        checkpoint = self.env["route.checkpoint"].search(
-            [("picking_id", "=", next_picking.id)]
-        )
+        checkpoint = next_picking.route_checkpoint_ids
         checkpoint.route_id.action_planned()
         checkpoint.action_done()
         self.assertEqual(next_picking.state, "done")
@@ -65,3 +63,23 @@ class TestRoutePlanningSaleStock(RouteCommon):
         self.assertEqual(picking.state, "done")
         next_picking = picking._get_next_transfers()
         self.assertFalse(next_picking)
+
+    def test_sale_order_confirm_change_route_area(self):
+        self.order.route_area_id = self.area_north
+        self.order.action_confirm()
+        move = self.order.order_line.move_ids
+        picking = self.order.picking_ids
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
+        self.assertFalse(picking.has_route_planning)
+        # Change to empty route area
+        self.order.route_area_id = False
+        self.assertFalse(picking.route_area_id)
+        self.assertNotEqual(move.location_dest_id, self.area_north.location_id)
+        self.assertNotEqual(picking.location_dest_id, self.area_north.location_id)
+        # Change to specific route area again
+        self.order.route_area_id = self.area_north
+        self.assertEqual(picking.route_area_id, self.area_north)
+        self.assertEqual(move.location_dest_id, self.area_north.location_id)
+        self.assertEqual(picking.location_dest_id, self.area_north.location_id)
