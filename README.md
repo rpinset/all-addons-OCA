@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-07-15 22:13 UTC** (elapsed 131s)
+Last build: **2026-07-17 06:00 UTC** (elapsed 172s)
 
 - Repos integrated: **140**
 - Canonical modules: **2910**
@@ -142,7 +142,7 @@ Last build: **2026-07-15 22:13 UTC** (elapsed 131s)
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | 3 | 18a9bba 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [vertical-association](https://github.com/OCA/vertical-association) | 10 | 43ecb0d 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 5109ebc 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 92478af 2025-10-14 mymage Translated using Weblate (Italian) |
+| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | c2363b2 2026-07-16 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 6 | 4bbbb97 2025-10-15 mymage Translated using Weblate (Italian) |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | 1 | 5f56d1e 2025-04-02 mymage Translated using Weblate (Italian) |
 | [web](https://github.com/OCA/web) | 69 | 790767b 2026-05-18 OCA-git-bot [BOT] post-merge updates |
