@@ -273,6 +273,11 @@ msgid "Last Updated on"
 msgstr "Última actualización en"
 
 #. module: product_variant_configurator
+#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__list_price
+msgid "List Price"
+msgstr "Lista de Precios"
+
+#. module: product_variant_configurator
 #: model:ir.model.fields,help:product_variant_configurator.field_product_product__service_type
 msgid ""
 "Manually set quantities on order: Invoice based on the manually entered "
@@ -374,11 +379,6 @@ msgid ""
 msgstr ""
 "Precio extra: Precio extra de la variante sobre el precio de venta con este "
 "valor de atributo. Ej. precio extra 200, 1000 + 200 = 1200."
-
-#. module: product_variant_configurator
-#: model:ir.model.fields,help:product_variant_configurator.field_product_product__list_price
-msgid "Price at which the product is sold to customers."
-msgstr "Precio de venta del producto a los clientes."
 
 #. module: product_variant_configurator
 #: model:ir.model,name:product_variant_configurator.model_product_pricelist
@@ -514,11 +514,6 @@ msgstr "Descripción de las ventas"
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__sale_line_warn_msg
 msgid "Sales Order Line Warning"
 msgstr ""
-
-#. module: product_variant_configurator
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__list_price
-msgid "Sales Price"
-msgstr "Precio de venta"
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__taxes_id
@@ -683,6 +678,12 @@ msgstr ""
 "Tiene que rellenar los siguientes atributos:\n"
 "%s"
 
+#~ msgid "Price at which the product is sold to customers."
+#~ msgstr "Precio de venta del producto a los clientes."
+
+#~ msgid "Sales Price"
+#~ msgstr "Precio de venta"
+
 #~ msgid ""
 #~ "A storable product is a product for which you manage stock. The Inventory "
 #~ "app has to be installed.\n"
@@ -719,9 +720,6 @@ msgstr ""
 
 #~ msgid "Favorite"
 #~ msgstr "Favorito"
-
-#~ msgid "List Price"
-#~ msgstr "Lista de Precios"
 
 #~ msgid "Message for Sales Order Line"
 #~ msgstr "Mensaje para línea de pedido de ventas"

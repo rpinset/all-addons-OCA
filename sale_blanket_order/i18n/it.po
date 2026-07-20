@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-08-20 17:27+0000\n"
+"PO-Revision-Date: 2026-07-20 08:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: sale_blanket_order
 #. odoo-python
@@ -42,7 +42,7 @@ msgstr "'Ordine aperto - %s' % object.name"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "<span> - </span>"
-msgstr ""
+msgstr "<span> - </span>"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -77,7 +77,7 @@ msgstr "<strong>Totale</strong>"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "<strong>Validity Period:</strong>"
-msgstr ""
+msgstr "<strong>Periodo validità:</strong>"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -226,6 +226,8 @@ msgid ""
 "Cannot confirm order %(name)s as one of the lines refers to a blanket order "
 "that has no remaining quantity."
 msgstr ""
+"Non si può confermare l'ordine %(name)s perché una delle righe fa "
+"riferimento ad un ordine quadro che non ha quantità residue."
 
 #. module: sale_blanket_order
 #: model_terms:ir.actions.act_window,help:sale_blanket_order.act_open_blanket_order_view
@@ -327,7 +329,7 @@ msgstr "Descrizione"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_order__disable_adding_lines
 msgid "Disable Adding Lines"
-msgstr ""
+msgstr "Disabilita aggiunta righe"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_res_config_settings__group_blanket_disable_adding_lines
@@ -360,7 +362,7 @@ msgstr "Tipo visualizzazione"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__distribution_analytic_account_ids
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__distribution_analytic_account_ids
 msgid "Distribution Analytic Account"
-msgstr ""
+msgstr "Conto distribuzione analitica"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields.selection,name:sale_blanket_order.selection__sale_blanket_order__state__done
@@ -718,7 +720,7 @@ msgstr "Utente responsabile"
 #. odoo-python
 #: code:addons/sale_blanket_order/wizard/create_sale_orders.py:0
 msgid "Sale Blanket Order %(name)s is not open"
-msgstr ""
+msgstr "L'ordine quadro di vendita %(name)s non è aperto"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
@@ -836,7 +838,7 @@ msgstr "Subtotale"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Etichette"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_tax
@@ -894,6 +896,7 @@ msgstr "La vendita è stata già completata."
 msgid ""
 "The validity start date must be earlier than or equal to the validity date."
 msgstr ""
+"La data inizio validità deve essere antecedente o pari alla data validità."
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
@@ -950,7 +953,7 @@ msgstr "IVA:"
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 msgid "Validity"
-msgstr ""
+msgstr "Validità"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__validity_date
@@ -960,7 +963,7 @@ msgstr "Data validità"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__validity_start_date
 msgid "Validity Start Date"
-msgstr ""
+msgstr "Data inizio validità"
 
 #. module: sale_blanket_order
 #. odoo-python
@@ -978,7 +981,7 @@ msgstr "La data di validità deve essere nel futuro"
 #. odoo-python
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 msgid "Validity start date is mandatory"
-msgstr ""
+msgstr "La data inizio validità è obbligatoria"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__partner_id
@@ -1035,6 +1038,8 @@ msgid ""
 "You can't create a sale order from blanket order %(name)s before its "
 "validity start date."
 msgstr ""
+"Non si può creare un ordine di vendita dall'ordine quadro %(name)s prima "
+"della sua data inizio validità."
 
 #. module: sale_blanket_order
 #. odoo-python

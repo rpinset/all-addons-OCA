@@ -275,6 +275,11 @@ msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
 
 #. module: product_variant_configurator
+#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__list_price
+msgid "List Price"
+msgstr "Prezzo di listino"
+
+#. module: product_variant_configurator
 #: model:ir.model.fields,help:product_variant_configurator.field_product_product__service_type
 msgid ""
 "Manually set quantities on order: Invoice based on the manually entered "
@@ -377,11 +382,6 @@ msgid ""
 msgstr ""
 "Prezzo extra: prezzo extra per la variante con questo attributo sul prezzo "
 "di vendita. es. 200 di prezzo extra, 1000 + 200 = 1200."
-
-#. module: product_variant_configurator
-#: model:ir.model.fields,help:product_variant_configurator.field_product_product__list_price
-msgid "Price at which the product is sold to customers."
-msgstr "Prezzo di vendita del prodotto al cliente."
 
 #. module: product_variant_configurator
 #: model:ir.model,name:product_variant_configurator.model_product_pricelist
@@ -517,11 +517,6 @@ msgstr "Descrizione vendite"
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__sale_line_warn_msg
 msgid "Sales Order Line Warning"
 msgstr "Avviso riga ordine di vendita"
-
-#. module: product_variant_configurator
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__list_price
-msgid "Sales Price"
-msgstr "Prezzo di vendita"
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__taxes_id
@@ -689,6 +684,12 @@ msgstr ""
 "Devi riempire i seguenti attributi:\n"
 "%s"
 
+#~ msgid "Price at which the product is sold to customers."
+#~ msgstr "Prezzo di vendita del prodotto al cliente."
+
+#~ msgid "Sales Price"
+#~ msgstr "Prezzo di vendita"
+
 #~ msgid ""
 #~ "A storable product is a product for which you manage stock. The Inventory "
 #~ "app has to be installed.\n"
@@ -734,9 +735,6 @@ msgstr ""
 #~ "Se selezionata, ogni volta che si vende un prodotto tramite un OV, viene "
 #~ "creata automaticamente un aRdP per acquistare il prodotto. Nota: non "
 #~ "dimenticare di impostare il fornitore del prodotto."
-
-#~ msgid "List Price"
-#~ msgstr "Prezzo di listino"
 
 #~ msgid "Message for Sales Order Line"
 #~ msgstr "Messaggio per riga ordine vendita"
