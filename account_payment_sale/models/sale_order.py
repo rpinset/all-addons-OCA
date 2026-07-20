@@ -38,5 +38,8 @@ class SaleOrder(models.Model):
     def _prepare_invoice(self):
         """Copy bank partner from sale order to invoice"""
         vals = super()._prepare_invoice()
+        # `partner_bank_id` is a computed field:
+        # remove the assignation so that the value will be computed
+        vals.pop("partner_bank_id", None)
         self._get_payment_mode_vals(vals)
         return vals

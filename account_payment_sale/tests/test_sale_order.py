@@ -76,6 +76,7 @@ class TestSaleOrder(CommonTestCase):
             Create the invoice from sale.advance.payment.inv
         Expected result:
             The invoice must be created with the specific payment_mode
+            The invoice computes the Recipient Bank
         """
         order = self.create_sale_order(payment_mode=self.payment_mode_2)
         context = {
@@ -95,4 +96,4 @@ class TestSaleOrder(CommonTestCase):
         invoice = order.invoice_ids
         self.assertEqual(len(invoice), 1)
         self.assertEqual(invoice.payment_mode_id, self.payment_mode_2)
-        self.assertFalse(invoice.partner_bank_id)
+        self.assertEqual(invoice.partner_bank_id, self.bank)

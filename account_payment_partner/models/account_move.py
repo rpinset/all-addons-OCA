@@ -158,14 +158,3 @@ class AccountMove(models.Model):
             )
         # Return this as empty recordset
         return self.partner_bank_id
-
-    @api.model
-    def create(self, vals):
-        """Force compute partner_bank_id when invoice is created from SO
-        to avoid that odoo _prepare_invoice method value will be set.
-        """
-        if self.env.context.get("active_model") == "sale.order":  # pragma: no cover
-            virtual_move = self.new(vals)
-            virtual_move._compute_partner_bank()
-            vals["partner_bank_id"] = virtual_move.partner_bank_id.id
-        return super().create(vals)
