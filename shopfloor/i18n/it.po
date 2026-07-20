@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-04-30 10:45+0000\n"
+"PO-Revision-Date: 2026-07-20 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -618,13 +618,13 @@ msgstr "Ignorare inoltro non trovato non è consentito per il menu {}."
 #. odoo-python
 #: code:addons/shopfloor/services/cluster_picking.py:0
 msgid "Internal Error: Batch not properly done."
-msgstr ""
+msgstr "Errore interno: lotto non completato correttamente."
 
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/services/cluster_picking.py:0
 msgid "Internal Error: The move line %s is not fully picked"
-msgstr ""
+msgstr "Errore interno: la riga di movimento %s non è completamente prelevata"
 
 #. module: shopfloor
 #: model:ir.model,name:shopfloor.model_stock_location
@@ -2057,7 +2057,7 @@ msgstr "Scarico colli alla destinazione"
 #. odoo-python
 #: code:addons/shopfloor/services/cluster_picking.py:0
 msgid "Unprocessed transfer removed from batch"
-msgstr ""
+msgstr "Trasferimento non completato rimosso dal lotto"
 
 #. module: shopfloor
 #. odoo-python

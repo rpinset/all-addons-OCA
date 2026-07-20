@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Nexusai Solutions (OPC) Private Limited
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0)
+-->
+<data>
+    <template
+        id="crowdfunding_challenge_datetime_schedule_detail"
+        inherit_id="crowdfunding.template_challenge_detail"
+    >
+        <xpath expr="//section[hasclass('mb24')]" position="before">
+            <div
+                class="container alert alert-info text-center mt-4"
+                t-if="object.start_datetime and datetime.datetime.now() &lt; object.start_datetime"
+            >
+                <p>This crowdfunding challenge is not yet active.</p>
+            </div>
+            <section
+                class="s_countdown pt48 pb48"
+                t-if="object.start_datetime and datetime.datetime.now() &lt; object.start_datetime"
+                data-display="dhms"
+                data-end-action="nothing"
+                data-size="175"
+                t-att-data-end-time="object.start_datetime.timestamp()"
+                data-layout="circle"
+                data-layout-background="none"
+                data-progress-bar-style="surrounded"
+                data-progress-bar-weight="thin"
+                data-text-color="o-color-1"
+                data-layout-background-color="400"
+                data-progress-bar-color="o-color-1"
+            >
+                <div class="container">
+                    <div class="s_countdown_canvas_wrapper" />
+                </div>
+            </section>
+
+            <section
+                class="s_countdown pt48 pb48"
+                t-if="object.start_datetime and object.end_datetime and object.start_datetime &lt;= datetime.datetime.now() &lt; object.end_datetime"
+                data-display="dhms"
+                data-end-action="nothing"
+                data-size="175"
+                t-att-data-end-time="object.end_datetime.timestamp()"
+                data-layout="circle"
+                data-layout-background="none"
+                data-progress-bar-style="surrounded"
+                data-progress-bar-weight="thin"
+                data-text-color="o-color-1"
+                data-layout-background-color="400"
+                data-progress-bar-color="o-color-1"
+            >
+                <div class="container">
+                    <div class="s_countdown_canvas_wrapper" />
+                </div>
+            </section>
+
+            <div
+                class="container alert alert-warning text-center mt-4"
+                t-if="object.end_datetime and datetime.datetime.now() &gt;= object.end_datetime"
+            >
+                This crowdfunding challenge has ended.
+            </div>
+        </xpath>
+    </template>
+</data>

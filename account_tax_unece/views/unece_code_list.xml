@@ -20,6 +20,11 @@
                     string="Tax Categories (UNCL 5305)"
                     domain="[('type', '=', 'tax_categ')]"
                 />
+                <filter
+                    name="tax_vatex"
+                    string="VAT Exemption Reasons"
+                    domain="[('type', '=', 'tax_vatex')]"
+                />
             </filter>
         </field>
     </record>

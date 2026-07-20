@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Nexusai Solutions (OPC) Private Limited
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0)
+-->
+<data>
+    <template id="challenge_payment_datetime_unavailable">
+        <t t-call="portal.frontend_layout">
+            <t t-set="additional_title" t-value="object.name" />
+            <div class="wrap">
+                <div class="container mt-4">
+                    <h1 t-esc="object.name" />
+                    <div class="alert alert-warning mt-4">
+                        <h4>Pledges are not available</h4>
+                        <t
+                            t-if="object.start_datetime and datetime.datetime.now() &lt; object.start_datetime"
+                        >
+                            <p>
+                                This crowdfunding challenge has not started yet.
+                            </p>
+                        </t>
+
+                        <t
+                            t-if="object.end_datetime and datetime.datetime.now() &gt;= object.end_datetime"
+                        >
+                            <p>
+                                This crowdfunding challenge has already expired.
+                            </p>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</data>

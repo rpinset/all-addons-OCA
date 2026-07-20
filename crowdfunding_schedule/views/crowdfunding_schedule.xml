@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Nexusai Solutions (OPC) Private Limited
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0)
+-->
+<odoo>
+    <record
+        id="crowdfunding_challenge_form_datetime_schedule_inherit"
+        model="ir.ui.view"
+    >
+        <field name="name">crowdfunding.challenge.form.datetime.schedule</field>
+        <field name="model">crowdfunding.challenge</field>
+        <field name="inherit_id" ref="crowdfunding.view_crowdfunding_challenge_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pledged_amount']" position="after">
+                <field name="start_datetime" />
+                <field name="end_datetime" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

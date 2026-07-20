@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* crowdfunding_schedule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crowdfunding_schedule
+#: model:ir.model,name:crowdfunding_schedule.model_crowdfunding_challenge
+msgid "Crowdfunding challenge"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model:ir.model.fields,help:crowdfunding_schedule.field_crowdfunding_challenge__start_datetime
+msgid "Date and time when pledge become available"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model:ir.model.fields,help:crowdfunding_schedule.field_crowdfunding_challenge__end_datetime
+msgid "Date and time when pledges are no longer accepted"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model:ir.model.fields,field_description:crowdfunding_schedule.field_crowdfunding_challenge__end_datetime
+msgid "End Datetime"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model_terms:ir.ui.view,arch_db:crowdfunding_schedule.challenge_payment_datetime_unavailable
+msgid "Pledges are not available"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model:ir.model.fields,field_description:crowdfunding_schedule.field_crowdfunding_challenge__start_datetime
+msgid "Start Datetime"
+msgstr ""
+
+#. module: crowdfunding_schedule
+#. odoo-python
+#: code:addons/crowdfunding_schedule/models/crowdfunding_challenge.py:0
+msgid "Start date cannot be after end date."
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model_terms:ir.ui.view,arch_db:crowdfunding_schedule.challenge_payment_datetime_unavailable
+msgid "This crowdfunding challenge has already expired."
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model_terms:ir.ui.view,arch_db:crowdfunding_schedule.crowdfunding_challenge_datetime_schedule_detail
+msgid "This crowdfunding challenge has ended."
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model_terms:ir.ui.view,arch_db:crowdfunding_schedule.challenge_payment_datetime_unavailable
+msgid "This crowdfunding challenge has not started yet."
+msgstr ""
+
+#. module: crowdfunding_schedule
+#: model_terms:ir.ui.view,arch_db:crowdfunding_schedule.crowdfunding_challenge_datetime_schedule_detail
+msgid "This crowdfunding challenge is not yet active."
+msgstr ""

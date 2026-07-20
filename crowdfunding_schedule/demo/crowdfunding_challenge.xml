@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Nexusai Solutions (OPC) Private Limited
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<data>
+    <record id="demo_challenge_future" model="crowdfunding.challenge">
+        <field name="name">Future Challenge</field>
+        <field name="state">open</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="start_datetime"
+            eval="(DateTime.now() + relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')"
+        />
+    </record>
+    <record id="demo_challenge_active" model="crowdfunding.challenge">
+        <field name="name">Active Challenge</field>
+        <field name="state">open</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="start_datetime"
+            eval="(DateTime.now() - relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')"
+        />
+        <field
+            name="end_datetime"
+            eval="(DateTime.now() + relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')"
+        />
+    </record>
+    <record id="demo_challenge_expired" model="crowdfunding.challenge">
+        <field name="name">Expired Challenge</field>
+        <field name="state">open</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="start_datetime"
+            eval="(DateTime.now() - relativedelta(days=2)).strftime('%Y-%m-%d %H:%M:%S')"
+        />
+        <field
+            name="end_datetime"
+            eval="(DateTime.now() - relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')"
+        />
+    </record>
+</data>
