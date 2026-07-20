@@ -1,0 +1,307 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_attendance_rest_time_included
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-17 13:46+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: hr_attendance_rest_time_included
+#: model_terms:ir.ui.view,arch_db:hr_attendance_rest_time_included.view_hr_attendance_rest_time_kanban
+msgid "<i class=\"fa fa-calendar\" aria-label=\"Period\" role=\"img\" title=\"Period\"/>"
+msgstr ""
+"<i class=\"fa fa-calendar\" aria-label=\"Periode\" role=\"img\" "
+"title=\"Periode\"/>"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_needaction
+msgid "Action Needed"
+msgstr "Actie vereist"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_attachment_count
+msgid "Attachment Count"
+msgstr "Aantal bijlagen"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model,name:hr_attendance_rest_time_included.model_hr_attendance
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__attendance_id
+msgid "Attendance"
+msgstr "Aanwezigheid"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model,name:hr_attendance_rest_time_included.model_hr_attendance_reason
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__attendance_reason_ids
+msgid "Attendance Reason"
+msgstr "Aanwezigheidsreden"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model,name:hr_attendance_rest_time_included.model_hr_attendance_report
+msgid "Attendance Statistics"
+msgstr "Aanwezigheidsstatistieken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance__rest_time_count
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__rest_time_count
+msgid "Break Count"
+msgstr "Aantal pauzes"
+
+#. module: hr_attendance_rest_time_included
+#: model_terms:ir.ui.view,arch_db:hr_attendance_rest_time_included.hr_attendance_view_form
+msgid "Breaks"
+msgstr "Pauzes"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_in
+msgid "Check In"
+msgstr "Inchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_in_latitude
+msgid "Check In Latitude"
+msgstr "Breedtegraad inchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_in_longitude
+msgid "Check In Longitude"
+msgstr "Lengtegraad inchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_out
+msgid "Check Out"
+msgstr "Uitchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_out_latitude
+msgid "Check Out Latitude"
+msgstr "Breedtegraad uitchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_out_longitude
+msgid "Check Out Longitude"
+msgstr "Lengtegraad uitchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_in_latitude_text
+msgid "Check-in Latitude"
+msgstr "Breedtegraad inchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_in_longitude_text
+msgid "Check-in Longitude"
+msgstr "Lengtegraad inchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_out_latitude_text
+msgid "Check-out Latitude"
+msgstr "Breedtegraad uitchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__check_out_longitude_text
+msgid "Check-out Longitude"
+msgstr "Lengtegraad uitchecken"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__department_id
+msgid "Department"
+msgstr "Afdeling"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model,name:hr_attendance_rest_time_included.model_hr_employee
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__employee_id
+msgid "Employee"
+msgstr "Werknemer"
+
+#. module: hr_attendance_rest_time_included
+#: model_terms:ir.ui.view,arch_db:hr_attendance_rest_time_included.hr_attendance_rest_time_view_form
+msgid "Employee rest time"
+msgstr "Rusttijd werknemer"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (Relaties)"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__has_message
+msgid "Has Message"
+msgstr "Heeft bericht"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model,name:hr_attendance_rest_time_included.model_hr_attendance_rest_time
+msgid "Hr attendance break"
+msgstr "HR aanwezigheidspauze"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_needaction
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Indien aangevinkt vereisen nieuwe berichten uw aandacht."
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt hebben sommige berichten een afleverfout."
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_is_follower
+msgid "Is Follower"
+msgstr "Is volger"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Hoofdbijlage"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_has_error
+msgid "Message Delivery error"
+msgstr "Fout bij aflevering bericht"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_ids
+msgid "Messages"
+msgstr "Berichten"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_has_error_counter
+msgid "Number of errors"
+msgstr "Aantal fouten"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Aantal berichten die actie vereisen"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met afleverfout"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Aantal ongelezen berichten"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance__rest_hours
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__rest_hours
+#: model_terms:ir.ui.view,arch_db:hr_attendance_rest_time_included.view_attendance_rest_time_tree
+msgid "Rest Hours"
+msgstr "Rusturen"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance__rest_time_ids
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_report__rest_hours
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__rest_time_ids
+msgid "Rest Time"
+msgstr "Rusttijd"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_reason__rest_time_included
+msgid "Rest Time Included"
+msgstr "Inclusief rusttijd"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__attendance_reason_ids
+msgid ""
+"Specifies the reason for signing In/signing Out in case of less or extra "
+"hours."
+msgstr ""
+"Geeft de reden aan voor in- of uitklokken in het geval van minder- of "
+"overuren."
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__theoretical_hours
+msgid "Theoretical Hours"
+msgstr "Theoretische uren"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,help:hr_attendance_rest_time_included.field_hr_attendance_rest_time__time_changed_manually
+msgid ""
+"This attendance has been manually changed by user. If attendance is created "
+"from form view, a 60 seconds tolerance will be applied."
+msgstr ""
+"Deze aanwezigheid is handmatig gewijzigd door de gebruiker. Als de "
+"aanwezigheid vanuit de formulierweergave is aangemaakt, wordt een tolerantie "
+"van 60 seconden toegepast."
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__time_changed_manually
+msgid "Time changed"
+msgstr "Tijd gewijzigd"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_unread
+msgid "Unread Messages"
+msgstr "Ongelezen berichten"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Aantal ongelezen berichten"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__worked_hours
+msgid "Worked Hours"
+msgstr "Gewerkte uren"
+
+#. module: hr_attendance_rest_time_included
+#: model:ir.model.fields,field_description:hr_attendance_rest_time_included.field_hr_attendance_rest_time__open_worked_hours
+msgid "Worked hours"
+msgstr "Gewerkte uren"

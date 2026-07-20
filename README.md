@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-17 06:02 UTC** (elapsed 65s)
+Last build: **2026-07-20 16:20 UTC** (elapsed 107s)
 
 - Repos integrated: **117**
 - Canonical modules: **2097**
@@ -49,7 +49,7 @@ Last build: **2026-07-17 06:02 UTC** (elapsed 65s)
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 989fe00 2026-01-26 OCA-git-bot [BOT] post-merge updates |
 | [hr](https://github.com/OCA/hr) | 32 | 95fc148 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [hr-attendance](https://github.com/OCA/hr-attendance) | 11 | ca17736 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [hr-attendance](https://github.com/OCA/hr-attendance) | 11 | 1fb156c 2026-07-17 Bosd Translated using Weblate (Dutch) |
 | [hr-expense](https://github.com/OCA/hr-expense) | 23 | b49dd6e 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 7 | 3a05ba6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [interface-git](https://github.com/OCA/interface-git) | 2 | 7bb75f2 2026-04-16 OCA-git-bot [ADD] setup.py |
