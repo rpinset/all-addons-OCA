@@ -118,7 +118,7 @@ class AccountJournal(models.Model):
             ("name", "!=", "/"),
         ]
         if self.refund_sequence:
-            #  Based on original Odoo behavior
+            # Based on original Odoo behavior
             if refund:
                 move_domain.append(("move_type", "in", ("out_refund", "in_refund")))
             else:

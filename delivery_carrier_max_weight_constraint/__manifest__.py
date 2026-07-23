@@ -3,14 +3,13 @@
 
 {
     "name": "Constrain package maximum weight",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
     "category": "Delivery",
     "depends": ["stock_delivery"],
     "website": "https://github.com/OCA/delivery-carrier",
     "data": [
         "views/res_config_settings_views.xml",
-        "views/delivery_carrier_views.xml",
         "views/stock_package_type_views.xml",
     ],
     "license": "AGPL-3",

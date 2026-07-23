@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-22 12:23+0000\n"
-"PO-Revision-Date: 2023-10-09 07:59+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2026-07-22 19:46+0000\n"
+"Last-Translator: pere-aquarian <pere@aquarian.tech>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: rma_sale_mrp
 #: model_terms:ir.ui.view,arch_db:rma_sale_mrp.portal_rma_page
@@ -42,7 +42,7 @@ msgid ""
 "clock-o\"/> Waiting</span>"
 msgstr ""
 "<span class=\"label-text-align badge bg-warning\"><i class=\"fa fa-fw fa-"
-"clock-o\"/>Esperando</span>"
+"clock-o\"/>En espera</span>"
 
 #. module: rma_sale_mrp
 #: model_terms:ir.ui.view,arch_db:rma_sale_mrp.report_rma_document
@@ -110,7 +110,7 @@ msgstr "Producto Permitido"
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__allowed_quantity
 msgid "Allowed Quantity"
-msgstr ""
+msgstr "Cantidad permitida"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__uom_category_id
@@ -155,7 +155,7 @@ msgstr "Descripción"
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__different_return_product
 msgid "Different Return Product"
-msgstr ""
+msgstr "Producto de devolución diferente"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__display_name
@@ -173,6 +173,8 @@ msgid ""
 "If checked, allows the return of a product different from the one originally "
 "ordered. Used if the delivery is created automatically"
 msgstr ""
+"Si se marca, permite devolver un producto distinto del solicitado "
+"originalmente. Se utiliza cuando la entrega se crea automáticamente"
 
 #. module: rma_sale_mrp
 #: model:ir.model,name:rma_sale_mrp.model_account_move
@@ -213,12 +215,12 @@ msgstr "Última actualización el"
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__lot_id
 msgid "Lot/Serial Number"
-msgstr ""
+msgstr "Lote/Número de serie"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__lots_visible
 msgid "Lots Visible"
-msgstr ""
+msgstr "Lotes visibles"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__move_id
@@ -258,6 +260,8 @@ msgstr "Producto"
 msgid ""
 "Product to be returned if it's different from the originally delivered item."
 msgstr ""
+"Producto que se devolverá si es distinto del artículo entregado "
+"originalmente."
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__quantity
@@ -282,7 +286,7 @@ msgstr "Operación solicitada"
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__return_product_id
 msgid "Return Product"
-msgstr ""
+msgstr "Producto de devolución"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_rma__rma_kit_register

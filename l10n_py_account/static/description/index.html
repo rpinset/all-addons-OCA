@@ -1,0 +1,892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>README.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<a class="reference external image-reference" href="https://odoo-community.org/get-involved?utm_source=readme">
+<img alt="Odoo Community Association" src="https://odoo-community.org/readme-banner-image" />
+</a>
+<div class="section" id="paraguay-accounting-extensions">
+<h1>Paraguay - Accounting Extensions</h1>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:0df0a48acec6dbc4a8c84601e2213772c454ea17bae52a697357b419a2c63c34
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html"><img alt="License: LGPL-3" src="https://img.shields.io/badge/license-LGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py_account"><img alt="OCA/l10n-paraguay" src="https://img.shields.io/badge/github-OCA%2Fl10n--paraguay-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/l10n-paraguay-18-0/l10n-paraguay-18-0-l10n_py_account"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/l10n-paraguay&amp;target_branch=18.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<div class="section" id="paraguay-accounting-extensions-1">
+<h2>Paraguay - Accounting Extensions</h2>
+<p>This module extends the base Paraguayan accounting localization with
+specific functionality required for Paraguayan fiscal compliance.</p>
+<div class="section" id="features">
+<h3>Features</h3>
+<ul class="simple">
+<li><strong>Journal Extensions</strong>: Enhanced journal configuration with
+Paraguayan-specific fields<ul>
+<li>Establishment (punto de expedición)</li>
+<li>Point of Sale (punto de emisión)</li>
+<li>Timbrado (tax stamp authorization)</li>
+</ul>
+</li>
+<li><strong>Authorization Management</strong>: Complete timbrado lifecycle management<ul>
+<li>Authorization number tracking</li>
+<li>Validity period control</li>
+<li>Document number range management</li>
+<li>Automatic sequence generation</li>
+</ul>
+</li>
+<li><strong>Account Move Extensions</strong>: Enhanced invoice/bill features<ul>
+<li>Automatic timbrado assignment</li>
+<li>Document number formatting</li>
+<li>Fiscal validations</li>
+</ul>
+</li>
+<li><strong>Fiscal Validations</strong>:<ul>
+<li>Valid timbrado verification</li>
+<li>Document number range validation</li>
+<li>Expiration date checking</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="purpose">
+<h3>Purpose</h3>
+<p>This module bridges the gap between Odoo’s standard accounting and
+Paraguayan fiscal requirements, particularly focusing on timbrado
+management which is mandatory for all fiscal documents in Paraguay.</p>
+</div>
+<div class="section" id="dependencies">
+<h3>Dependencies</h3>
+<ul class="simple">
+<li><tt class="docutils literal">account</tt>: Odoo core accounting</li>
+<li><tt class="docutils literal">l10n_py_base</tt>: Base Paraguayan localization</li>
+</ul>
+<p><strong>Table of contents</strong></p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+</div>
+<div class="section" id="installation-1">
+<h2>Installation</h2>
+<div class="section" id="prerequisites">
+<h3>Prerequisites</h3>
+<ul class="simple">
+<li>Odoo 16.0</li>
+<li><tt class="docutils literal">account</tt> module (core Odoo)</li>
+<li><tt class="docutils literal">l10n_py_base</tt> module installed</li>
+<li>Valid timbrado from SET (for production use)</li>
+</ul>
+</div>
+<div class="section" id="installation-steps">
+<h3>Installation Steps</h3>
+<ol class="arabic simple">
+<li><strong>Install Base Module</strong>: Ensure <tt class="docutils literal">l10n_py_base</tt> is installed first</li>
+<li><strong>Install Module</strong>:<ul>
+<li>Go to <strong>Apps</strong></li>
+<li>Click <strong>Update Apps List</strong></li>
+<li>Search for “Paraguay - Accounting Extensions”</li>
+<li>Click <strong>Install</strong></li>
+</ul>
+</li>
+<li><strong>Verify Installation</strong>: Check that new menus appear:<ul>
+<li><strong>Accounting &gt; Configuration &gt; Timbrados</strong></li>
+<li>Enhanced journal configuration options</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="post-installation-setup">
+<h3>Post-Installation Setup</h3>
+<div class="section" id="step-1-configure-company">
+<h4>Step 1: Configure Company</h4>
+<p>Ensure company fiscal data is complete in <tt class="docutils literal">l10n_py_base</tt></p>
+</div>
+<div class="section" id="step-2-create-first-timbrado">
+<h4>Step 2: Create First Timbrado</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Timbrados</strong></li>
+<li>Click <strong>Create</strong></li>
+<li>Enter your SET-provided authorization:<ul>
+<li>Authorization number</li>
+<li>Validity dates</li>
+<li>Document number range</li>
+<li>Establishment and point of sale codes</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-3-configure-sales-journal">
+<h4>Step 3: Configure Sales Journal</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Journals</strong></li>
+<li>Edit your sales journal</li>
+<li>Set:<ul>
+<li>Establishment code</li>
+<li>Point of sale code</li>
+<li>Link to timbrado</li>
+</ul>
+</li>
+<li>Save</li>
+</ol>
+</div>
+<div class="section" id="step-4-test-invoice-creation">
+<h4>Step 4: Test Invoice Creation</h4>
+<ol class="arabic simple">
+<li>Create a test invoice</li>
+<li>Verify document number format: XXX-XXX-NNNNNNN</li>
+<li>Check timbrado information appears correctly</li>
+<li>Cancel test invoice if in production</li>
+</ol>
+</div>
+</div>
+<div class="section" id="demo-data">
+<h3>Demo Data</h3>
+<p>The module includes demo data:</p>
+<ul class="simple">
+<li>Sample timbrados</li>
+<li>Configured journals</li>
+</ul>
+<p><strong>Note</strong>: Delete demo data before using in production:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Settings &gt; Technical &gt; Database Structure &gt; Demo Data</strong></li>
+<li>Remove demo timbrados and journal configurations</li>
+</ol>
+</div>
+<div class="section" id="configuration-checklist">
+<h3>Configuration Checklist</h3>
+<p>Before going live:</p>
+<ul class="simple">
+<li>☐ Company fiscal data complete</li>
+<li>☐ Valid timbrado from SET</li>
+<li>☐ Timbrado record created in system</li>
+<li>☐ Sales journals configured</li>
+<li>☐ Purchase journals configured (if needed)</li>
+<li>☐ Document number sequences tested</li>
+<li>☐ User permissions configured</li>
+</ul>
+</div>
+<div class="section" id="required-information-from-set">
+<h3>Required Information from SET</h3>
+<p>Before you can use this module in production, obtain from SET:</p>
+<ol class="arabic simple">
+<li><strong>Timbrado Number</strong>: Authorization number</li>
+<li><strong>Validity Period</strong>: Start and end dates</li>
+<li><strong>Document Range</strong>: From/to numbers authorized</li>
+<li><strong>Establishment Code</strong>: Your establishment code</li>
+<li><strong>Point of Sale Code</strong>: Your point of emission code</li>
+</ol>
+</div>
+<div class="section" id="dependencies-1">
+<h3>Dependencies</h3>
+<p>This module requires:</p>
+<ul class="simple">
+<li><tt class="docutils literal">account</tt>: Core accounting functionality</li>
+<li><tt class="docutils literal">l10n_py_base</tt>: Paraguayan base localization</li>
+</ul>
+</div>
+<div class="section" id="optional-modules">
+<h3>Optional Modules</h3>
+<p>For complete functionality, consider:</p>
+<ul class="simple">
+<li><tt class="docutils literal">l10n_py</tt>: Paraguayan chart of accounts</li>
+<li><tt class="docutils literal">l10n_py_edi_base</tt>: Electronic invoicing</li>
+</ul>
+</div>
+<div class="section" id="troubleshooting-installation">
+<h3>Troubleshooting Installation</h3>
+<div class="section" id="menu-items-not-appearing">
+<h4>Menu Items Not Appearing</h4>
+<p>If configuration menus don’t show:</p>
+<ol class="arabic simple">
+<li>Refresh browser</li>
+<li>Check user permissions (Accounting / Manager)</li>
+<li>Verify module is fully installed</li>
+</ol>
+</div>
+<div class="section" id="timbrado-fields-not-in-journal">
+<h4>Timbrado Fields Not in Journal</h4>
+<p>If timbrado fields don’t appear in journals:</p>
+<ol class="arabic simple">
+<li>Update module</li>
+<li>Restart Odoo server</li>
+<li>Clear browser cache</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration</h2>
+</div>
+<div class="section" id="configuration-1">
+<h2>Configuration</h2>
+<div class="section" id="journal-configuration">
+<h3>Journal Configuration</h3>
+<p>Configure journals for Paraguayan fiscal documents:</p>
+<ol class="arabic simple">
+<li>Navigate to <strong>Accounting &gt; Configuration &gt; Journals</strong></li>
+<li>Select or create a sales/purchase journal</li>
+<li>Configure Paraguayan fields:<ul>
+<li><strong>Establishment</strong> (Punto de Expedición): e.g., “001”</li>
+<li><strong>Point of Sale</strong> (Punto de Emisión): e.g., “001”</li>
+<li>Link to active <strong>Timbrado</strong></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="timbrado-authorization-management">
+<h3>Timbrado (Authorization) Management</h3>
+<div class="section" id="creating-a-new-timbrado">
+<h4>Creating a New Timbrado</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Timbrados</strong></li>
+<li>Click <strong>Create</strong></li>
+<li>Fill in required information:<ul>
+<li><strong>Authorization Number</strong> (Timbrado): e.g., “12345678”</li>
+<li><strong>Start Date</strong>: Authorization start date</li>
+<li><strong>End Date</strong>: Authorization expiration date</li>
+<li><strong>Document Range</strong>: From and To numbers</li>
+<li><strong>Establishment</strong>: e.g., “001”</li>
+<li><strong>Point of Sale</strong>: e.g., “001”</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+</div>
+<div class="section" id="timbrado-fields-explained">
+<h4>Timbrado Fields Explained</h4>
+<ul class="simple">
+<li><strong>Authorization Number</strong>: The timbrado number issued by SET</li>
+<li><strong>Start/End Date</strong>: Validity period of the authorization</li>
+<li><strong>From Number</strong>: Starting document number (e.g., 1)</li>
+<li><strong>To Number</strong>: Ending document number (e.g., 50000)</li>
+<li><strong>Establishment</strong>: Physical location code (001, 002, etc.)</li>
+<li><strong>Point of Sale</strong>: Point of emission code (001, 002, etc.)</li>
+</ul>
+</div>
+<div class="section" id="activating-a-timbrado">
+<h4>Activating a Timbrado</h4>
+<ol class="arabic simple">
+<li>Timbrados are automatically active if:<ul>
+<li>Current date is between start and end dates</li>
+<li>Document numbers are not exhausted</li>
+</ul>
+</li>
+<li>System shows active status with indicators</li>
+</ol>
+</div>
+<div class="section" id="linking-timbrado-to-journal">
+<h4>Linking Timbrado to Journal</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Journals</strong></li>
+<li>Edit the journal</li>
+<li>Select the active timbrado from the dropdown</li>
+<li>System will use this timbrado for all documents in this journal</li>
+</ol>
+</div>
+</div>
+<div class="section" id="document-number-sequences">
+<h3>Document Number Sequences</h3>
+<p>The module automatically manages sequences:</p>
+<ul class="simple">
+<li>Sequences are created based on timbrado configuration</li>
+<li>Format: XXX-XXX-NNNNNNN (Establishment-Point of Sale-Number)</li>
+<li>Numbers increment automatically</li>
+<li>System warns when approaching limit</li>
+</ul>
+</div>
+<div class="section" id="automatic-validations">
+<h3>Automatic Validations</h3>
+<p>The system validates:</p>
+<ul class="simple">
+<li>Timbrado is active and not expired</li>
+<li>Document numbers are within authorized range</li>
+<li>Establishment and point of sale match</li>
+<li>Date is within authorization period</li>
+</ul>
+</div>
+<div class="section" id="multiple-timbrados">
+<h3>Multiple Timbrados</h3>
+<p>You can have multiple timbrados:</p>
+<ul class="simple">
+<li>Different establishments</li>
+<li>Different points of sale</li>
+<li>Overlapping periods (for transition)</li>
+</ul>
+<p>Best practice:</p>
+<ol class="arabic simple">
+<li>Create new timbrado before current one expires</li>
+<li>Activate new timbrado when ready</li>
+<li>Old timbrado becomes inactive automatically</li>
+</ol>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+</div>
+<div class="section" id="usage-1">
+<h2>Usage</h2>
+<div class="section" id="creating-invoices-with-timbrado">
+<h3>Creating Invoices with Timbrado</h3>
+<div class="section" id="standard-invoice-flow">
+<h4>Standard Invoice Flow</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Customers &gt; Invoices</strong></li>
+<li>Click <strong>Create</strong></li>
+<li>Select customer and add invoice lines</li>
+<li>The system automatically:<ul>
+<li>Assigns the active timbrado from the journal</li>
+<li>Generates the next document number</li>
+<li>Validates timbrado status</li>
+</ul>
+</li>
+<li>Click <strong>Confirm</strong></li>
+</ol>
+</div>
+<div class="section" id="invoice-number-format">
+<h4>Invoice Number Format</h4>
+<p>Invoices will have the format:</p>
+<pre class="literal-block">
+XXX-XXX-NNNNNNN
+</pre>
+<ul class="simple">
+<li>XXX: Establishment (e.g., 001)</li>
+<li>XXX: Point of Sale (e.g., 001)</li>
+<li>NNNNNNN: Sequential number (e.g., 0000001)</li>
+</ul>
+<p>Example: <tt class="docutils literal"><span class="pre">001-001-0000123</span></tt></p>
+</div>
+</div>
+<div class="section" id="managing-timbrados">
+<h3>Managing Timbrados</h3>
+<div class="section" id="checking-timbrado-status">
+<h4>Checking Timbrado Status</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Timbrados</strong></li>
+<li>View list of all timbrados</li>
+<li>Status indicators show:<ul>
+<li><strong>Active</strong>: Green (currently valid and in range)</li>
+<li><strong>Expired</strong>: Red (past end date)</li>
+<li><strong>Exhausted</strong>: Orange (all numbers used)</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="when-timbrado-is-expiring">
+<h4>When Timbrado is Expiring</h4>
+<p>The system will warn you when:</p>
+<ul class="simple">
+<li>End date is approaching (configurable threshold)</li>
+<li>Document numbers are running low (e.g., &lt;100 remaining)</li>
+</ul>
+<p>Action required:</p>
+<ol class="arabic simple">
+<li>Request new timbrado from SET</li>
+<li>Create new timbrado record in system</li>
+<li>Update journal to use new timbrado when ready</li>
+</ol>
+</div>
+<div class="section" id="switching-between-timbrados">
+<h4>Switching Between Timbrados</h4>
+<p>To change timbrado on a journal:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Journals</strong></li>
+<li>Edit the journal</li>
+<li>Change the <strong>Timbrado</strong> field</li>
+<li>Save</li>
+<li>New documents will use the new timbrado</li>
+</ol>
+</div>
+</div>
+<div class="section" id="vendor-bills">
+<h3>Vendor Bills</h3>
+<p>For vendor bills:</p>
+<ol class="arabic simple">
+<li>Create bill as usual</li>
+<li>Enter vendor’s timbrado information if required</li>
+<li>System validates format and structure</li>
+</ol>
+</div>
+<div class="section" id="reports-and-monitoring">
+<h3>Reports and Monitoring</h3>
+<div class="section" id="timbrado-usage-report">
+<h4>Timbrado Usage Report</h4>
+<p>Monitor timbrado usage:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Reporting &gt; Timbrado Report</strong></li>
+<li>View:<ul>
+<li>Numbers used</li>
+<li>Numbers remaining</li>
+<li>Expiration status</li>
+<li>Document count</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="fiscal-period-closing">
+<h4>Fiscal Period Closing</h4>
+<p>When closing fiscal periods:</p>
+<ol class="arabic simple">
+<li>Verify all timbrados for the period are valid</li>
+<li>Check document number sequences are complete</li>
+<li>Generate required fiscal reports</li>
+</ol>
+</div>
+</div>
+<div class="section" id="common-scenarios">
+<h3>Common Scenarios</h3>
+<div class="section" id="scenario-1-starting-a-new-establishment">
+<h4>Scenario 1: Starting a New Establishment</h4>
+<ol class="arabic simple">
+<li>Create new timbrado with new establishment code</li>
+<li>Create or update journal with new establishment</li>
+<li>Link timbrado to journal</li>
+<li>Start issuing documents</li>
+</ol>
+</div>
+<div class="section" id="scenario-2-renewing-expired-timbrado">
+<h4>Scenario 2: Renewing Expired Timbrado</h4>
+<ol class="arabic simple">
+<li>Obtain new authorization from SET</li>
+<li>Create new timbrado record</li>
+<li>Set start date (can overlap with old one)</li>
+<li>Switch journal to new timbrado</li>
+<li>Old timbrado remains for historical reference</li>
+</ol>
+</div>
+<div class="section" id="scenario-3-multiple-points-of-sale">
+<h4>Scenario 3: Multiple Points of Sale</h4>
+<ol class="arabic simple">
+<li>Create timbrado for each point of sale</li>
+<li>Create separate journal for each</li>
+<li>Each journal uses its own timbrado</li>
+<li>Users select appropriate journal when creating documents</li>
+</ol>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h3>Troubleshooting</h3>
+<div class="section" id="error-timbrado-expired">
+<h4>Error: “Timbrado Expired”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Create new timbrado</li>
+<li>Update journal configuration</li>
+<li>Try creating document again</li>
+</ol>
+</div>
+<div class="section" id="error-document-number-out-of-range">
+<h4>Error: “Document Number Out of Range”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Request new timbrado from SET with higher range</li>
+<li>Create new timbrado record</li>
+<li>Switch journal to new timbrado</li>
+</ol>
+</div>
+<div class="section" id="warning-timbrado-expiring-soon">
+<h4>Warning: “Timbrado Expiring Soon”</h4>
+<p>Action:</p>
+<ol class="arabic simple">
+<li>Request renewal from SET</li>
+<li>Create new timbrado in system</li>
+<li>Plan transition date</li>
+<li>Update journal when ready</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="bug-tracker">
+<h2>Bug Tracker</h2>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues/new?body=module:%20l10n_py_account%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h2>Credits</h2>
+<div class="section" id="authors">
+<h3>Authors</h3>
+<ul class="simple">
+<li>KMEE</li>
+</ul>
+</div>
+<div class="section" id="maintainers">
+<h3>Maintainers</h3>
+<p>This module is maintained by the OCA.</p>
+<a class="reference external image-reference" href="https://odoo-community.org">
+<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
+</a>
+<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py_account">OCA/l10n-paraguay</a> project on GitHub.</p>
+<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

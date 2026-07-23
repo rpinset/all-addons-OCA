@@ -155,7 +155,7 @@ class TestMassEditing(common.TransactionCase):
         )
 
         # test the code path where we extract an embedded tree for o2m fields
-        self.env["ir.ui.view"].search(
+        self.env["ir.ui.view"].with_context(active_test=False).search(
             [
                 ("model", "in", ("res.partner.bank", "res.partner", "res.users")),
                 ("id", "!=", self.env.ref("base.res_partner_view_form_private").id),

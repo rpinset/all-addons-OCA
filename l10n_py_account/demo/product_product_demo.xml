@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- ============== PRODUCTOS CON IVA 10% ============== -->
+
+    <record id="product_iva_10_electronica" model="product.product">
+        <field name="name">Notebook Dell Inspiron</field>
+        <field name="categ_id" ref="product.product_category_5" />
+        <field name="type">consu</field>
+        <field name="default_code">ELEC-001</field>
+        <field name="list_price">5500000.0</field>
+        <field name="standard_price">4200000.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="uom_po_id" ref="uom.product_uom_unit" />
+        <field
+            name="taxes_id"
+            search="[('type_tax_use', '=', 'sale'), ('tax_group_id.name', '=', 'IVA 10%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+        <field
+            name="supplier_taxes_id"
+            search="[('type_tax_use', '=', 'purchase'), ('tax_group_id.name', '=', 'IVA 10%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+    </record>
+
+    <record id="product_iva_10_servicio" model="product.product">
+        <field name="name">Servicio de Consultoría</field>
+        <field name="type">service</field>
+        <field name="default_code">SERV-001</field>
+        <field name="list_price">1100000.0</field>
+        <field name="standard_price">0.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="uom_po_id" ref="uom.product_uom_unit" />
+        <field
+            name="taxes_id"
+            search="[('type_tax_use', '=', 'sale'), ('tax_group_id.name', '=', 'IVA 10%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+        <field
+            name="supplier_taxes_id"
+            search="[('type_tax_use', '=', 'purchase'), ('tax_group_id.name', '=', 'IVA 10%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+    </record>
+
+    <!-- ============== PRODUCTOS CON IVA 5% ============== -->
+
+    <record id="product_iva_5_alimento" model="product.product">
+        <field name="name">Yerba Mate Kurupí 1kg</field>
+        <field name="categ_id" ref="product.product_category_5" />
+        <field name="type">consu</field>
+        <field name="default_code">ALIM-001</field>
+        <field name="list_price">52500.0</field>
+        <field name="standard_price">35000.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="uom_po_id" ref="uom.product_uom_unit" />
+        <field
+            name="taxes_id"
+            search="[('type_tax_use', '=', 'sale'), ('tax_group_id.name', '=', 'IVA 5%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+        <field
+            name="supplier_taxes_id"
+            search="[('type_tax_use', '=', 'purchase'), ('tax_group_id.name', '=', 'IVA 5%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+    </record>
+
+    <record id="product_iva_5_farmacia" model="product.product">
+        <field name="name">Medicamento Genérico</field>
+        <field name="categ_id" ref="product.product_category_5" />
+        <field name="type">consu</field>
+        <field name="default_code">FARM-001</field>
+        <field name="list_price">157500.0</field>
+        <field name="standard_price">105000.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="uom_po_id" ref="uom.product_uom_unit" />
+        <field
+            name="taxes_id"
+            search="[('type_tax_use', '=', 'sale'), ('tax_group_id.name', '=', 'IVA 5%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+        <field
+            name="supplier_taxes_id"
+            search="[('type_tax_use', '=', 'purchase'), ('tax_group_id.name', '=', 'IVA 5%'), ('company_id', '=', ref('base.main_company'))]"
+        />
+    </record>
+
+    <!-- ============== PRODUCTOS EXENTOS ============== -->
+
+    <record id="product_exento_libro" model="product.product">
+        <field name="name">Libro "Historia del Paraguay"</field>
+        <field name="categ_id" ref="product.product_category_5" />
+        <field name="type">consu</field>
+        <field name="default_code">LIBR-001</field>
+        <field name="list_price">120000.0</field>
+        <field name="standard_price">80000.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="uom_po_id" ref="uom.product_uom_unit" />
+        <field
+            name="taxes_id"
+            search="[('type_tax_use', '=', 'sale'), ('tax_group_id.name', '=', 'Exento'), ('company_id', '=', ref('base.main_company'))]"
+        />
+        <field
+            name="supplier_taxes_id"
+            search="[('type_tax_use', '=', 'purchase'), ('tax_group_id.name', '=', 'Exento'), ('company_id', '=', ref('base.main_company'))]"
+        />
+    </record>
+</odoo>

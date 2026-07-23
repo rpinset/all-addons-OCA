@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_product_template_form_edi" model="ir.ui.view">
+        <field name="name">product.template.form.edi</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']" position="after">
+                <page string="Datos Paraguay" name="l10n_py_data">
+                    <group>
+                        <group>
+                            <field name="l10n_py_ncm_code" placeholder="Ej: 84713000" />
+                            <field name="l10n_py_unit_code" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

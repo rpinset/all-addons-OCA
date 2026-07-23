@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="l10n_py_edi_doc_type_1" model="l10n_py.edi.document.type">
+        <field name="code">1</field>
+        <field name="name">Factura Electrónica</field>
+        <field
+            name="description"
+        >Documento fiscal electrónico que documenta una venta</field>
+    </record>
+    <record id="l10n_py_edi_doc_type_4" model="l10n_py.edi.document.type">
+        <field name="code">4</field>
+        <field name="name">Autofactura Electrónica</field>
+        <field name="description">Factura emitida por el comprador</field>
+    </record>
+    <record id="l10n_py_edi_doc_type_5" model="l10n_py.edi.document.type">
+        <field name="code">5</field>
+        <field name="name">Nota de Crédito Electrónica</field>
+        <field name="description">Documento que anula o corrige una factura</field>
+    </record>
+    <record id="l10n_py_edi_doc_type_6" model="l10n_py.edi.document.type">
+        <field name="code">6</field>
+        <field name="name">Nota de Débito Electrónica</field>
+        <field
+            name="description"
+        >Documento que incrementa el valor de una factura</field>
+    </record>
+    <record id="l10n_py_edi_doc_type_7" model="l10n_py.edi.document.type">
+        <field name="code">7</field>
+        <field name="name">Nota de Remisión Electrónica</field>
+        <field
+            name="description"
+        >Documento que acredita el traslado de mercaderías</field>
+    </record>
+</odoo>

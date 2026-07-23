@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_l10n_py_edi_root"
+        name="Facturación Electrónica"
+        parent="account.menu_finance"
+        sequence="34"
+    />
+
+    <menuitem
+        id="menu_l10n_py_edi_logs"
+        name="Logs EDI"
+        parent="menu_l10n_py_edi_root"
+        action="action_l10n_py_edi_log"
+        sequence="10"
+    />
+
+    <menuitem
+        id="menu_edi_connectors"
+        name="Conectores"
+        parent="menu_l10n_py_edi_root"
+        sequence="20"
+    />
+</odoo>

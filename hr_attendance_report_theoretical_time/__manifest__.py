@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Theoretical vs Attended Time Analysis",
-    "version": "18.0.1.2.0",
+    "version": "18.0.2.0.0",
     "category": "Human Resources",
     "website": "https://github.com/OCA/hr-attendance",
     "author": "Tecnativa, Odoo Community Association (OCA)",
@@ -10,6 +10,7 @@
     "installable": True,
     "depends": ["hr_attendance", "hr_holidays_public"],
     "data": [
+        "data/ir_cron.xml",
         "security/ir.model.access.csv",
         "security/hr_attendance_report_theoretical_time_security.xml",
         "views/hr_leave_type_views.xml",

@@ -72,12 +72,6 @@ msgid "Journal Entry"
 msgstr "Temeljnica"
 
 #. module: account_move_name_sequence
-#: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__made_sequence_hole
-#: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__made_sequence_hole
-msgid "Made Sequence Hole"
-msgstr "Generirana luknja v zaporedju"
-
-#. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__name
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__name
 msgid "Number"
@@ -128,8 +122,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_move_name_sequence/models/account_journal.py:0
 msgid ""
-"The company is not set on sequence '%(sequence)s' configured on journal "
-"'%(journal)s'."
+"The company is not set on sequence '%(sequence)s' configured on journal '%"
+"(journal)s'."
 msgstr ""
 "Pri zaporedju '%(sequence)s' nastavljenem v dnevniku '%(journal)s' ni "
 "nastavljena družba."
@@ -144,6 +138,9 @@ msgstr "To zaporedje bo v rabi za knjigovodske vnose dobropisov."
 #: model:ir.model.fields,help:account_move_name_sequence.field_account_journal__sequence_id
 msgid "This sequence will be used to generate the journal entry number."
 msgstr "To zaporedje bo v rabi za knjigovodske vnose dobropisov."
+
+#~ msgid "Made Sequence Hole"
+#~ msgstr "Generirana luknja v zaporedju"
 
 #~ msgid "Sequence Number"
 #~ msgstr "Številka zaporedja"

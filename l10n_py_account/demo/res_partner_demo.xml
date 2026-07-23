@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- ============== CONTRIBUYENTES (con RUC) ============== -->
+
+    <!-- Cliente contribuyente - IVA general -->
+    <record id="partner_contribuyente_general" model="res.partner">
+        <field name="name">Comercial Guaraní SA</field>
+        <field name="is_company">1</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_asuncion" />
+        <field name="street">Avda. España 1234</field>
+        <field name="city">Asunción</field>
+        <field name="zip">1001</field>
+        <field name="phone">+595 21 444 1111</field>
+        <field name="email">ventas@comercialguarani.com.py</field>
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
+        <field name="vat">80012345-6</field>
+        <field name="l10n_py_taxpayer_type">1</field>
+        <field name="l10n_py_activity_description">Comercio al por mayor</field>
+    </record>
+
+    <!-- Cliente contribuyente - Servicios -->
+    <record id="partner_contribuyente_servicios" model="res.partner">
+        <field name="name">Consultora Paraná SRL</field>
+        <field name="is_company">1</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_alto_parana" />
+        <field name="street">Ruta PY02 Km 30</field>
+        <field name="city">Ciudad del Este</field>
+        <field name="zip">7000</field>
+        <field name="phone">+595 61 555 2222</field>
+        <field name="email">info@consultoraparana.com.py</field>
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
+        <field name="vat">80067890-7</field>
+        <field name="l10n_py_taxpayer_type">1</field>
+        <field name="l10n_py_activity_description">Consultoría empresarial</field>
+    </record>
+
+    <!-- Proveedor contribuyente -->
+    <record id="partner_proveedor_py" model="res.partner">
+        <field name="name">Distribuidora del Este SA</field>
+        <field name="is_company">1</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_alto_parana" />
+        <field name="street">Avda. Adrián Jara 567</field>
+        <field name="city">Ciudad del Este</field>
+        <field name="zip">7000</field>
+        <field name="phone">+595 61 555 3333</field>
+        <field name="email">compras@distribuidoraeste.com.py</field>
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
+        <field name="vat">80054321-2</field>
+        <field name="l10n_py_taxpayer_type">1</field>
+        <field name="l10n_py_activity_description">Distribución de productos</field>
+    </record>
+
+    <!-- ============== NO CONTRIBUYENTES ============== -->
+
+    <!-- Cliente no contribuyente con CI -->
+    <record id="partner_no_contribuyente_ci" model="res.partner">
+        <field name="name">María González</field>
+        <field name="is_company">0</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_asuncion" />
+        <field name="street">Calle Palma 890</field>
+        <field name="city">Asunción</field>
+        <field name="zip">1001</field>
+        <field name="phone">+595 981 555 444</field>
+        <field name="email">maria.gonzalez@email.com.py</field>
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ci" />
+        <field name="vat">4567890</field>
+        <field name="l10n_py_taxpayer_type">2</field>
+        <field name="l10n_py_doc_type">1</field>
+        <field name="l10n_py_doc_number">4567890</field>
+    </record>
+
+    <!-- Cliente no contribuyente con Pasaporte -->
+    <record id="partner_no_contribuyente_pasaporte" model="res.partner">
+        <field name="name">Carlos Rodríguez</field>
+        <field name="is_company">0</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_asuncion" />
+        <field name="street">Avda. Sacramento 456</field>
+        <field name="city">Asunción</field>
+        <field name="zip">1209</field>
+        <field name="phone">+595 981 666 777</field>
+        <field
+            name="l10n_latam_identification_type_id"
+            ref="l10n_py_base.it_pasaporte"
+        />
+        <field name="vat">AB1234567</field>
+        <field name="l10n_py_taxpayer_type">2</field>
+        <field name="l10n_py_doc_type">2</field>
+        <field name="l10n_py_doc_number">AB1234567</field>
+    </record>
+
+    <!-- ============== EXTRANJERO ============== -->
+
+    <record id="partner_extranjero" model="res.partner">
+        <field name="name">Global Trade Inc</field>
+        <field name="is_company">1</field>
+        <field name="country_id" ref="base.us" />
+        <field name="street">123 Trade Avenue</field>
+        <field name="city">Miami</field>
+        <field name="zip">33101</field>
+        <field name="phone">+1 305 555 0000</field>
+        <field name="email">info@globaltrade.com</field>
+        <field name="website">https://www.globaltrade.com</field>
+    </record>
+
+    <!-- ============== SUCURSAL (mesmo RUC - para NRE) ============== -->
+
+    <record id="partner_sucursal_propia" model="res.partner">
+        <field name="name">Empresa Demo PY - Sucursal Encarnación</field>
+        <field name="is_company">1</field>
+        <field name="country_id" ref="base.py" />
+        <field name="state_id" ref="l10n_py_base.state_py_itapua" />
+        <field name="street">Avda. Irrazábal 1200</field>
+        <field name="city">Encarnación</field>
+        <field name="zip">6000</field>
+        <field name="phone">+595 71 555 8888</field>
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
+        <field name="vat">80009401-0</field>
+        <field name="l10n_py_taxpayer_type">1</field>
+    </record>
+</odoo>

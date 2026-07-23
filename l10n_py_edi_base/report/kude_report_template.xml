@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="kude_report_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div
+                    class="article"
+                    style="font-family: Arial, sans-serif; font-size: 11px; line-height: 1.3; color: #000;"
+                >
+                    <div class="page">
+                        <!-- ========== CABECERA: EMISOR + QR ========== -->
+                        <div
+                            style="display: table; width: 100%; border: 2px solid #000; margin-bottom: 4px;"
+                        >
+                            <div
+                                style="display: table-cell; width: 70%; vertical-align: top; padding: 6px 10px;"
+                            >
+                                <div
+                                    style="font-size: 16px; font-weight: bold; margin-bottom: 2px;"
+                                >
+                                    <span t-field="doc.company_id.name" />
+                                </div>
+                                <t t-if="doc.company_id.l10n_py_trade_name">
+                                    <div
+                                        style="font-size: 12px; font-style: italic; margin-bottom: 2px;"
+                                    >
+                                        <span
+                                            t-field="doc.company_id.l10n_py_trade_name"
+                                        />
+                                    </div>
+                                </t>
+                                <div
+                                    style="font-size: 13px; font-weight: bold; margin-bottom: 3px;"
+                                >
+                                    RUC: <span
+                                    t-field="doc.company_id.l10n_py_ruc_full"
+                                />
+                                </div>
+                                <t t-if="doc.company_id.l10n_py_economic_activity">
+                                    <div style="font-size: 10px; margin-bottom: 1px;">
+                                        Act. Econ.: <span
+                                        t-field="doc.company_id.l10n_py_economic_activity"
+                                    />
+                                    </div>
+                                </t>
+                                <div style="font-size: 10px; margin-bottom: 1px;">
+                                    <span t-field="doc.company_id.street" />
+                                    <t t-if="doc.company_id.street2">
+                                        - <span t-field="doc.company_id.street2" />
+                                    </t>
+                                </div>
+                                <div style="font-size: 10px; margin-bottom: 1px;">
+                                    <t t-if="doc.company_id.city">
+                                        <span t-field="doc.company_id.city" />
+                                    </t>
+                                    <t t-if="doc.company_id.state_id">
+                                        - <span
+                                        t-field="doc.company_id.state_id.name"
+                                    />
+                                    </t>
+                                </div>
+                                <div style="font-size: 10px;">
+                                    <t t-if="doc.company_id.phone">
+                                        Tel: <span t-field="doc.company_id.phone" />
+                                    </t>
+                                    <t t-if="doc.company_id.email">
+                                        | <span t-field="doc.company_id.email" />
+                                    </t>
+                                </div>
+                            </div>
+                            <div
+                                style="display: table-cell; width: 30%; vertical-align: top; padding: 6px; text-align: center; border-left: 1px solid #000;"
+                            >
+                                <!-- QR Code -->
+                                <t t-if="doc.l10n_py_qr_code">
+                                    <img
+                                        t-att-src="'data:image/png;base64,' + doc.l10n_py_qr_code.decode('ascii')"
+                                        style="width: 110px; height: 110px;"
+                                        alt="QR"
+                                    />
+                                </t>
+                                <t t-else="">
+                                    <div
+                                        style="width: 110px; height: 110px; border: 1px dashed #ccc; margin: 0 auto; line-height: 110px; font-size: 9px; color: #999;"
+                                    >
+                                        QR
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+
+                        <!-- ========== TIMBRADO + NUMERO ========== -->
+                        <div
+                            style="display: table; width: 100%; border: 2px solid #000; margin-bottom: 4px; background-color: #f5f5f5;"
+                        >
+                            <div
+                                style="display: table-cell; width: 40%; vertical-align: middle; padding: 4px 10px;"
+                            >
+                                <div style="font-size: 10px;">
+                                    <strong>Timbrado Nro.:</strong>
+                                    <span t-field="doc.l10n_py_authorization_id.name" />
+                                </div>
+                                <div style="font-size: 10px;">
+                                    <strong>Vigencia:</strong>
+                                    <span
+                                    t-field="doc.l10n_py_authorization_id.date_from"
+                                    t-options='{"format": "dd/MM/yyyy"}'
+                                />
+                                    al
+                                    <span
+                                    t-field="doc.l10n_py_authorization_id.date_to"
+                                    t-options='{"format": "dd/MM/yyyy"}'
+                                />
+                                </div>
+                            </div>
+                            <div
+                                style="display: table-cell; width: 60%; vertical-align: middle; padding: 4px 10px; text-align: right;"
+                            >
+                                <span
+                                    style="font-size: 18px; font-weight: bold; letter-spacing: 1px;"
+                                >
+                                    <span t-field="doc.l10n_py_full_invoice_number" />
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- ========== TITULO TIPO DTE ========== -->
+                        <div
+                            style="text-align: center; padding: 4px 0; border: 2px solid #000; margin-bottom: 4px; background-color: #e8e8e8;"
+                        >
+                            <span
+                                style="font-size: 14px; font-weight: bold; letter-spacing: 1px;"
+                            >
+                                <t t-if="doc.l10n_latam_document_type_id.code == '1'">
+                                    FACTURA ELECTR&#211;NICA
+                                </t>
+                                <t t-elif="doc.l10n_latam_document_type_id.code == '4'">
+                                    AUTOFACTURA ELECTR&#211;NICA
+                                </t>
+                                <t t-elif="doc.l10n_latam_document_type_id.code == '5'">
+                                    NOTA DE CR&#201;DITO ELECTR&#211;NICA
+                                </t>
+                                <t t-elif="doc.l10n_latam_document_type_id.code == '6'">
+                                    NOTA DE D&#201;BITO ELECTR&#211;NICA
+                                </t>
+                                <t t-elif="doc.l10n_latam_document_type_id.code == '7'">
+                                    NOTA DE REMISI&#211;N ELECTR&#211;NICA
+                                </t>
+                                <t t-else="">
+                                    DOCUMENTO ELECTR&#211;NICO
+                                </t>
+                            </span>
+                        </div>
+
+                        <!-- ========== DATOS RECEPTOR ========== -->
+                        <div
+                            style="border: 1px solid #000; margin-bottom: 4px; font-size: 10px;"
+                        >
+                            <div style="display: table; width: 100%;">
+                                <div
+                                    style="display: table-cell; width: 65%; padding: 4px 8px; vertical-align: top;"
+                                >
+                                    <div style="margin-bottom: 2px;">
+                                        <strong>Raz&#243;n Social: </strong>
+                                        <span t-field="doc.partner_id.name" />
+                                    </div>
+                                    <div style="margin-bottom: 2px;">
+                                        <t t-if="doc.partner_id.l10n_py_ruc">
+                                            <strong>RUC: </strong>
+                                            <span
+                                            t-field="doc.partner_id.l10n_py_ruc"
+                                        />-<span
+                                            t-field="doc.partner_id.l10n_py_ruc_dv"
+                                        />
+                                        </t>
+                                        <t t-elif="doc.partner_id.l10n_py_doc_number">
+                                            <strong>
+                                                <t
+                                                    t-if="doc.partner_id.l10n_py_doc_type == '1'"
+                                                >CI: </t>
+                                                <t
+                                                    t-elif="doc.partner_id.l10n_py_doc_type == '2'"
+                                                >Pasaporte: </t>
+                                                <t
+                                                    t-elif="doc.partner_id.l10n_py_doc_type == '3'"
+                                                >Carnet Res.: </t>
+                                                <t t-else="">Doc: </t>
+                                            </strong>
+                                            <span
+                                                t-field="doc.partner_id.l10n_py_doc_number"
+                                            />
+                                        </t>
+                                    </div>
+                                    <t t-if="doc.partner_id.street">
+                                        <div style="margin-bottom: 1px;">
+                                            <strong>Dir.: </strong>
+                                            <span t-field="doc.partner_id.street" />
+                                            <t t-if="doc.partner_id.street2">
+                                                - <span
+                                                t-field="doc.partner_id.street2"
+                                            />
+                                            </t>
+                                        </div>
+                                    </t>
+                                    <t t-if="doc.partner_id.city">
+                                        <div style="margin-bottom: 1px;">
+                                            <span t-field="doc.partner_id.city" />
+                                            <t t-if="doc.partner_id.state_id">
+                                                - <span
+                                                t-field="doc.partner_id.state_id.name"
+                                            />
+                                            </t>
+                                        </div>
+                                    </t>
+                                </div>
+                                <div
+                                    style="display: table-cell; width: 35%; padding: 4px 8px; vertical-align: top;"
+                                >
+                                    <div style="margin-bottom: 2px;">
+                                        <strong>Fecha Emisi&#243;n: </strong>
+                                        <span
+                                            t-field="doc.invoice_date"
+                                            t-options='{"format": "dd/MM/yyyy"}'
+                                        />
+                                    </div>
+                                    <t
+                                        t-if="doc.partner_id.phone or doc.partner_id.mobile"
+                                    >
+                                        <div style="margin-bottom: 1px;">
+                                            <strong>Tel: </strong>
+                                            <span
+                                                t-esc="doc.partner_id.phone or doc.partner_id.mobile"
+                                            />
+                                        </div>
+                                    </t>
+                                    <t t-if="doc.partner_id.email">
+                                        <div style="margin-bottom: 1px;">
+                                            <strong>Email: </strong>
+                                            <span t-field="doc.partner_id.email" />
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========== CONDICION DE VENTA + TRANSACCION ========== -->
+                        <div
+                            style="display: table; width: 100%; border: 1px solid #000; margin-bottom: 4px; font-size: 10px;"
+                        >
+                            <div
+                                style="display: table-cell; width: 35%; padding: 3px 8px;"
+                            >
+                                <strong>Cond. Venta: </strong>
+                                <t t-if="doc.invoice_payment_term_id">
+                                    Cr&#233;dito - <span
+                                    t-field="doc.invoice_payment_term_id.name"
+                                />
+                                </t>
+                                <t t-else="">
+                                    Contado
+                                </t>
+                            </div>
+                            <div
+                                style="display: table-cell; width: 35%; padding: 3px 8px;"
+                            >
+                                <strong>Moneda: </strong>
+                                <span t-field="doc.currency_id.name" />
+                                <t
+                                    t-if="doc.l10n_py_exchange_rate and doc.l10n_py_exchange_rate > 0"
+                                >
+                                    | T.C.: <span t-field="doc.l10n_py_exchange_rate" />
+                                </t>
+                            </div>
+                            <div
+                                style="display: table-cell; width: 30%; padding: 3px 8px;"
+                            >
+                                <strong>Tipo Trans.: </strong>
+                                <t
+                                    t-if="doc.l10n_py_transaction_type == '1'"
+                                >Venta merc.</t>
+                                <t
+                                    t-elif="doc.l10n_py_transaction_type == '2'"
+                                >Serv.</t>
+                                <t
+                                    t-elif="doc.l10n_py_transaction_type == '3'"
+                                >Mixto</t>
+                                <t t-else="">
+                                    <span t-field="doc.l10n_py_transaction_type" />
+                                </t>
+                            </div>
+                        </div>
+
+                        <!-- ========== TABLA DE ITEMS ========== -->
+                        <table
+                            style="width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 4px;"
+                        >
+                            <thead>
+                                <tr
+                                    style="background-color: #d0d0d0; border: 1px solid #000;"
+                                >
+                                    <th
+                                        style="width: 8%; border: 1px solid #000; padding: 3px 4px; text-align: center;"
+                                    >C&#243;d.</th>
+                                    <th
+                                        style="width: 26%; border: 1px solid #000; padding: 3px 4px;"
+                                    >Descripci&#243;n</th>
+                                    <th
+                                        style="width: 7%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >Cant.</th>
+                                    <th
+                                        style="width: 12%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >P. Unit.</th>
+                                    <th
+                                        style="width: 5%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >Dto.</th>
+                                    <th
+                                        style="width: 12%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >Exenta</th>
+                                    <th
+                                        style="width: 12%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >IVA 5%</th>
+                                    <th
+                                        style="width: 12%; border: 1px solid #000; padding: 3px 4px; text-align: right;"
+                                    >IVA 10%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t
+                                    t-foreach="doc.invoice_line_ids.filtered(lambda l: l.display_type == 'product')"
+                                    t-as="line"
+                                >
+                                    <tr
+                                        style="border-left: 1px solid #000; border-right: 1px solid #000;"
+                                    >
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: center;"
+                                        >
+                                            <span
+                                                t-esc="line.product_id.default_code or ''"
+                                            />
+                                        </td>
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px;"
+                                        >
+                                            <span t-field="line.name" />
+                                        </td>
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: right;"
+                                        >
+                                            <span t-field="line.quantity" />
+                                        </td>
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="line.price_unit"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: right;"
+                                        >
+                                            <t t-if="line.discount">
+                                                <span t-field="line.discount" />%
+                                            </t>
+                                        </td>
+                                        <!-- Exenta -->
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: right;"
+                                        >
+                                            <t
+                                                t-if="not line.tax_ids or all(t.amount == 0 for t in line.tax_ids)"
+                                            >
+                                                <span
+                                                    t-field="line.price_subtotal"
+                                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                                />
+                                            </t>
+                                        </td>
+                                        <!-- IVA 5% -->
+                                        <td
+                                            style="border-right: 1px solid #ccc; padding: 2px 4px; text-align: right;"
+                                        >
+                                            <t
+                                                t-if="any(t.amount == 5 for t in line.tax_ids)"
+                                            >
+                                                <span
+                                                    t-field="line.price_total"
+                                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                                />
+                                            </t>
+                                        </td>
+                                        <!-- IVA 10% -->
+                                        <td
+                                            style="padding: 2px 4px; text-align: right;"
+                                        >
+                                            <t
+                                                t-if="any(t.amount == 10 for t in line.tax_ids)"
+                                            >
+                                                <span
+                                                    t-field="line.price_total"
+                                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                                />
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <!-- ========== SUBTOTALES E TOTAIS ========== -->
+                        <div style="display: table; width: 100%; margin-bottom: 4px;">
+                            <!-- Lado esquerdo: Total em letras -->
+                            <div
+                                style="display: table-cell; width: 55%; vertical-align: top; padding-right: 10px;"
+                            >
+                                <t t-if="doc.l10n_py_amount_total_words">
+                                    <div
+                                        style="border: 1px solid #000; padding: 4px 8px; font-size: 10px; min-height: 30px;"
+                                    >
+                                        <strong>Total en Letras: </strong>
+                                        <span
+                                            t-field="doc.l10n_py_amount_total_words"
+                                        />
+                                    </div>
+                                </t>
+                            </div>
+                            <!-- Lado direito: Totais por alíquota -->
+                            <div
+                                style="display: table-cell; width: 45%; vertical-align: top;"
+                            >
+                                <table
+                                    style="width: 100%; border-collapse: collapse; font-size: 10px;"
+                                >
+                                    <tr
+                                        t-if="doc.l10n_py_amount_exempt"
+                                        style="border-bottom: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Sub-total Exento (F003):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_exempt"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        t-if="doc.l10n_py_amount_subtotal_5"
+                                        style="border-bottom: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Sub-total Gravado 5% (F004):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_subtotal_5"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        t-if="doc.l10n_py_amount_subtotal_10"
+                                        style="border-bottom: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Sub-total Gravado 10% (F005):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_subtotal_10"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        style="border-top: 2px solid #000; font-weight: bold; font-size: 12px; background-color: #f0f0f0;"
+                                    >
+                                        <td
+                                            style="padding: 3px 6px;"
+                                        >Total Operaci&#243;n (F008):</td>
+                                        <td
+                                            style="padding: 3px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_total_operation"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        t-if="doc.l10n_py_amount_iva_5"
+                                        style="border-bottom: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Liq. IVA 5% (F015):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_iva_5"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        t-if="doc.l10n_py_amount_iva_10"
+                                        style="border-bottom: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Liq. IVA 10% (F016):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_iva_10"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        style="border-top: 1px solid #000; font-weight: bold;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Total Liq. IVA (F017):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_iva_total"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr
+                                        t-if="doc.l10n_py_amount_total_pyg"
+                                        style="border-top: 1px solid #ccc;"
+                                    >
+                                        <td
+                                            style="padding: 2px 6px;"
+                                        >Total en Gs. (F023):</td>
+                                        <td
+                                            style="padding: 2px 6px; text-align: right;"
+                                        >
+                                            <span
+                                                t-field="doc.l10n_py_amount_total_pyg"
+                                                t-options='{"widget": "monetary", "display_currency": doc.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- ========== CDC ========== -->
+                        <t t-if="doc.l10n_py_cdc">
+                            <div
+                                style="text-align: center; border: 1px solid #000; padding: 4px; margin-bottom: 4px;"
+                            >
+                                <div
+                                    style="font-size: 9px; color: #555; margin-bottom: 1px;"
+                                >C&#243;digo de Control (CDC)</div>
+                                <div
+                                    style="font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold; letter-spacing: 2px;"
+                                >
+                                    <span t-field="doc.l10n_py_cdc" />
+                                </div>
+                            </div>
+                        </t>
+
+                        <!-- ========== RODAPE LEGAL ========== -->
+                        <div
+                            style="text-align: center; font-size: 8px; color: #555; margin-top: 6px; border-top: 1px solid #ccc; padding-top: 4px;"
+                        >
+                            <div>
+                                Este documento es una representaci&#243;n gr&#225;fica de un Documento Electr&#243;nico (DE)
+                            </div>
+                            <t t-if="doc.l10n_py_cdc">
+                                <div>
+                                    Consulte en: https://ekuatia.set.gov.py/consultas/qr?cdc=<span
+                                    t-esc="doc.l10n_py_cdc"
+                                />
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Vista de formulario para account.authorization -->
+    <record id="view_account_authorization_form" model="ir.ui.view">
+        <field name="name">account.authorization.form</field>
+        <field name="model">account.authorization</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="valid,to_expire,expired"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="check_validity"
+                            type="object"
+                            string="Verificar Validez"
+                            class="oe_stat_button"
+                            icon="fa-check-circle"
+                        />
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" string="Número de Timbrado" />
+                        <h1>
+                            <field name="name" placeholder="ej: 12345678" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="main_info">
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                            <field name="l10n_latam_document_type_id" />
+                            <field name="active" />
+                        </group>
+                        <group name="dates">
+                            <field name="date_from" />
+                            <field name="date_to" />
+                        </group>
+                    </group>
+                    <group string="Numeración Autorizada">
+                        <group>
+                            <field name="establishment" />
+                            <field name="expedition_point" />
+                            <field name="series" />
+                        </group>
+                        <group>
+                            <field name="invoice_number_from" />
+                            <field name="invoice_number_to" />
+                        </group>
+                    </group>
+                    <group string="Estadísticas" col="4">
+                        <field name="next_number" />
+                        <field name="used_numbers" />
+                        <field name="remaining_numbers" />
+                        <field name="usage_percentage" widget="progressbar" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de lista para account.authorization -->
+    <record id="view_account_authorization_tree" model="ir.ui.view">
+        <field name="name">account.authorization.tree</field>
+        <field name="model">account.authorization</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-danger="state=='expired'"
+                decoration-warning="state=='to_expire'"
+                decoration-success="state=='valid'"
+            >
+                <field name="name" />
+                <field name="establishment" />
+                <field name="expedition_point" />
+                <field name="series" optional="hide" />
+                <field name="l10n_latam_document_type_id" />
+                <field name="date_from" />
+                <field name="date_to" />
+                <field name="invoice_number_from" />
+                <field name="invoice_number_to" />
+                <field name="next_number" />
+                <field name="remaining_numbers" />
+                <field name="usage_percentage" widget="progressbar" optional="show" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-danger="state=='expired'"
+                    decoration-warning="state=='to_expire'"
+                    decoration-success="state=='valid'"
+                />
+                <field name="active" widget="boolean_toggle" />
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista de búsqueda para account.authorization -->
+    <record id="view_account_authorization_search" model="ir.ui.view">
+        <field name="name">account.authorization.search</field>
+        <field name="model">account.authorization</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Timbrados">
+                <field name="name" string="Timbrado" />
+                <field name="establishment" />
+                <field name="expedition_point" />
+                <field name="l10n_latam_document_type_id" />
+                <filter
+                    string="Vigentes"
+                    name="valid"
+                    domain="[('state', '=', 'valid')]"
+                />
+                <filter
+                    string="Por Vencer"
+                    name="to_expire"
+                    domain="[('state', '=', 'to_expire')]"
+                />
+                <filter
+                    string="Vencidos"
+                    name="expired"
+                    domain="[('state', '=', 'expired')]"
+                />
+                <separator />
+                <filter
+                    string="Activos"
+                    name="active"
+                    domain="[('active', '=', True)]"
+                />
+                <filter
+                    string="Inactivos"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
+                <separator />
+                <field name="l10n_latam_document_type_id" />
+                <group expand="0" string="Agrupar Por">
+                    <filter
+                        string="Estado"
+                        name="group_state"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        string="Tipo de Documento"
+                        name="group_type"
+                        context="{'group_by': 'l10n_latam_document_type_id'}"
+                    />
+                    <filter
+                        string="Establecimiento"
+                        name="group_establishment"
+                        context="{'group_by': 'establishment'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Acción para account.authorization -->
+    <record id="action_account_authorization" model="ir.actions.act_window">
+        <field name="name">Timbrados</field>
+        <field name="res_model">account.authorization</field>
+        <field name="view_mode">list,form</field>
+        <field
+            name="context"
+        >{'search_default_active': 1, 'search_default_valid': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear un nuevo timbrado
+            </p>
+            <p>
+                Los timbrados son autorizaciones otorgadas por la SET (Subsecretaría de Estado de Tributación)
+                para emitir facturas. Cada timbrado tiene un rango de numeración y fechas de validez específicas.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menú Paraguay dentro de Configuración -->
+    <menuitem
+        id="menu_l10n_py_config"
+        name="Paraguay"
+        parent="account.menu_finance_configuration"
+        sequence="50"
+    />
+
+    <menuitem
+        id="menu_account_authorization"
+        name="Timbrados"
+        parent="menu_l10n_py_config"
+        action="action_account_authorization"
+        sequence="10"
+    />
+</odoo>

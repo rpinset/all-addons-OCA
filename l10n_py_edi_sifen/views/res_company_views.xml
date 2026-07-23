@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Add PKCS12 certificate fields to company form -->
+    <record id="view_company_form_sifen" model="ir.ui.view">
+        <field name="name">res.company.form.sifen</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="l10n_py_edi_base.view_company_form_edi" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='l10n_py_fiscal']/group" position="inside">
+                <group string="Certificado Digital (SIFEN)" colspan="2">
+                    <field
+                        name="l10n_py_certificate"
+                        filename="l10n_py_certificate_filename"
+                    />
+                    <field name="l10n_py_certificate_filename" invisible="1" />
+                    <field name="l10n_py_certificate_password" password="True" />
+                    <field name="l10n_py_certificate_expiry" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

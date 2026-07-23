@@ -1,0 +1,1516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>README.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<a class="reference external image-reference" href="https://odoo-community.org/get-involved?utm_source=readme">
+<img alt="Odoo Community Association" src="https://odoo-community.org/readme-banner-image" />
+</a>
+<div class="section" id="paraguay-electronic-invoicing-base">
+<h1>Paraguay - Electronic Invoicing Base</h1>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:c50ee4d454bf44a300811d5f7779e6181da5718aa02c4d9855fbdf47f84e486f
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html"><img alt="License: LGPL-3" src="https://img.shields.io/badge/license-LGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py_edi_base"><img alt="OCA/l10n-paraguay" src="https://img.shields.io/badge/github-OCA%2Fl10n--paraguay-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/l10n-paraguay-18-0/l10n-paraguay-18-0-l10n_py_edi_base"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/l10n-paraguay&amp;target_branch=18.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<div class="section" id="paraguay-electronic-invoicing-base-1">
+<h2>Paraguay - Electronic Invoicing Base</h2>
+<p>This module provides the base functionality for electronic invoicing
+(facturación electrónica) in Paraguay, compliant with SET (Subsecretaría
+de Estado de Tributación) requirements.</p>
+<div class="section" id="features">
+<h3>Features</h3>
+<div class="section" id="document-types-support">
+<h4>Document Types Support</h4>
+<ul class="simple">
+<li><strong>Factura Electrónica</strong>: Electronic invoice</li>
+<li><strong>Nota de Crédito Electrónica</strong>: Electronic credit note</li>
+<li><strong>Nota de Débito Electrónica</strong>: Electronic debit note</li>
+<li><strong>Nota de Remisión Electrónica</strong>: Electronic delivery note</li>
+<li><strong>Autofactura Electrónica</strong>: Electronic self-invoice</li>
+</ul>
+</div>
+<div class="section" id="core-functionality">
+<h4>Core Functionality</h4>
+<ul class="simple">
+<li><strong>Data Models</strong>: Complete models for electronic documents</li>
+<li><strong>Field Extensions</strong>: Enhanced account.move, res.partner, and
+res.company</li>
+<li><strong>Fiscal Validation</strong>: RUC and DV validation</li>
+<li><strong>JSON Builder</strong>: Automatic generation of JSON for SIFEN</li>
+<li><strong>QR Code Generation</strong>: Ready for KUDE (Código Único de Documento
+Electrónico)</li>
+<li><strong>Log System</strong>: Complete audit trail of EDI operations</li>
+</ul>
+</div>
+<div class="section" id="compliance">
+<h4>Compliance</h4>
+<ul class="simple">
+<li><strong>SIFEN Compatible</strong>: Sistema Integrado de Facturación Electrónica
+Nacional</li>
+<li><strong>SET Requirements</strong>: Meets all SET regulatory requirements</li>
+<li><strong>Contingency Mode</strong>: Support for offline operation</li>
+<li><strong>KUDE Support</strong>: Ready for electronic document codes</li>
+</ul>
+</div>
+<div class="section" id="integration-ready">
+<h4>Integration Ready</h4>
+<p>This is a base module that requires a connector:</p>
+<ul class="simple">
+<li><tt class="docutils literal">l10n_py_edi_factpy</tt>: FactPy integration</li>
+<li><tt class="docutils literal">l10n_py_edi_facturasend</tt>: FacturaSend integration</li>
+</ul>
+</div>
+</div>
+<div class="section" id="technical-architecture">
+<h3>Technical Architecture</h3>
+<ul class="simple">
+<li><strong>Provider-agnostic</strong>: Works with multiple EDI providers</li>
+<li><strong>Extensible</strong>: Easy to add new document types</li>
+<li><strong>Robust</strong>: Error handling and retry mechanisms</li>
+<li><strong>Auditable</strong>: Complete logging of all operations</li>
+</ul>
+</div>
+<div class="section" id="dependencies">
+<h3>Dependencies</h3>
+<ul class="simple">
+<li><tt class="docutils literal">account</tt>: Core accounting</li>
+<li><tt class="docutils literal">l10n_py_base</tt>: Base Paraguayan localization</li>
+<li><tt class="docutils literal">l10n_py_account</tt>: Accounting extensions (timbrado management)</li>
+<li><tt class="docutils literal">product</tt>: Product management</li>
+<li><tt class="docutils literal">sale</tt>: Sales management</li>
+</ul>
+<p><strong>Table of contents</strong></p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+</div>
+<div class="section" id="installation-1">
+<h2>Installation</h2>
+<div class="section" id="prerequisites">
+<h3>Prerequisites</h3>
+<div class="section" id="required-modules">
+<h4>Required Modules</h4>
+<ul class="simple">
+<li>Odoo 16.0</li>
+<li><tt class="docutils literal">account</tt>: Core accounting module</li>
+<li><tt class="docutils literal">l10n_py_base</tt>: Paraguayan base localization</li>
+<li><tt class="docutils literal">l10n_py_account</tt>: Accounting extensions with timbrado</li>
+<li><tt class="docutils literal">product</tt>: Product management</li>
+<li><tt class="docutils literal">sale</tt>: Sales management</li>
+</ul>
+</div>
+<div class="section" id="required-python-packages">
+<h4>Required Python Packages</h4>
+<p>The module requires these Python packages:</p>
+<ul class="simple">
+<li><tt class="docutils literal">qrcode</tt>: QR code generation</li>
+<li><tt class="docutils literal">requests</tt>: HTTP client for API calls</li>
+<li><tt class="docutils literal">cryptography</tt>: Encryption and security</li>
+</ul>
+</div>
+<div class="section" id="edi-provider">
+<h4>EDI Provider</h4>
+<p>You must choose and configure one provider:</p>
+<ul class="simple">
+<li>FactPy (install <tt class="docutils literal">l10n_py_edi_factpy</tt>)</li>
+<li>FacturaSend (install <tt class="docutils literal">l10n_py_edi_facturasend</tt>)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="installation-steps">
+<h3>Installation Steps</h3>
+<div class="section" id="step-1-install-dependencies">
+<h4>Step 1: Install Dependencies</h4>
+<p>Install required Python packages:</p>
+<pre class="code bash literal-block">
+pip<span class="w"> </span>install<span class="w"> </span>qrcode<span class="w"> </span>requests<span class="w"> </span>cryptography
+</pre>
+</div>
+<div class="section" id="step-2-install-base-modules">
+<h4>Step 2: Install Base Modules</h4>
+<ol class="arabic simple">
+<li>Install prerequisites in order:<ul>
+<li><tt class="docutils literal">l10n_py_base</tt></li>
+<li><tt class="docutils literal">l10n_py_account</tt></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-3-install-edi-base">
+<h4>Step 3: Install EDI Base</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Apps</strong></li>
+<li>Click <strong>Update Apps List</strong></li>
+<li>Search for “Paraguay - Electronic Invoicing Base”</li>
+<li>Click <strong>Install</strong></li>
+</ol>
+</div>
+<div class="section" id="step-4-install-edi-connector">
+<h4>Step 4: Install EDI Connector</h4>
+<p>Choose and install a connector:</p>
+<div class="section" id="option-a-factpy">
+<h5>Option A: FactPy</h5>
+<ol class="arabic simple">
+<li>Search for “Paraguay - FactPy EDI Connector”</li>
+<li>Click <strong>Install</strong></li>
+</ol>
+</div>
+<div class="section" id="option-b-facturasend">
+<h5>Option B: FacturaSend</h5>
+<ol class="arabic simple">
+<li>Search for “Paraguay - FacturaSend EDI Connector”</li>
+<li>Click <strong>Install</strong></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="post-installation-configuration">
+<h3>Post-Installation Configuration</h3>
+<div class="section" id="step-1-verify-installation">
+<h4>Step 1: Verify Installation</h4>
+<p>Check that new menus appear:</p>
+<ul class="simple">
+<li><strong>Facturación Electrónica</strong> main menu</li>
+<li><strong>EDI Logs</strong> submenu</li>
+<li><strong>Connectors</strong> submenu</li>
+</ul>
+</div>
+<div class="section" id="step-2-configure-company">
+<h4>Step 2: Configure Company</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Settings &gt; Companies</strong></li>
+<li>Edit your company</li>
+<li>Configure <strong>Electronic Invoicing</strong> tab:<ul>
+<li>Enable EDI</li>
+<li>Select environment (Test/Production)</li>
+<li>Choose provider</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-3-configure-edi-provider">
+<h4>Step 3: Configure EDI Provider</h4>
+<p>Follow provider-specific configuration:</p>
+<ul class="simple">
+<li>See <tt class="docutils literal">l10n_py_edi_factpy</tt> documentation, or</li>
+<li>See <tt class="docutils literal">l10n_py_edi_facturasend</tt> documentation</li>
+</ul>
+</div>
+<div class="section" id="step-4-configure-security">
+<h4>Step 4: Configure Security</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Settings &gt; Users &amp; Companies &gt; Groups</strong></li>
+<li>Assign users to EDI groups:<ul>
+<li><strong>Electronic Invoicing / User</strong></li>
+<li><strong>Electronic Invoicing / Manager</strong></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-5-initial-test">
+<h4>Step 5: Initial Test</h4>
+<ol class="arabic simple">
+<li>Set environment to <strong>Test</strong></li>
+<li>Create a test invoice</li>
+<li>Try sending to EDI</li>
+<li>Verify reception and approval</li>
+<li>Check logs for errors</li>
+</ol>
+</div>
+</div>
+<div class="section" id="data-initialization">
+<h3>Data Initialization</h3>
+<p>The module loads:</p>
+<ul class="simple">
+<li>Electronic document type definitions</li>
+<li>Cron job configurations</li>
+<li>Email templates</li>
+<li>Report templates</li>
+</ul>
+<p>No manual data loading required.</p>
+</div>
+<div class="section" id="system-parameters">
+<h3>System Parameters</h3>
+<p>Configure in <strong>Settings &gt; Technical &gt; Parameters &gt; System Parameters</strong>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="30%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Parameter</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><tt class="docutils literal">l10n_py.edi_provider</tt></td>
+<td>Active EDI provider</td>
+<td><tt class="docutils literal">factpy</tt> or
+<tt class="docutils literal">facturasend</tt></td>
+</tr>
+<tr><td><tt class="docutils literal">l10n_py.edi_environment</tt></td>
+<td>Environment</td>
+<td><tt class="docutils literal">test</tt> or
+<tt class="docutils literal">production</tt></td>
+</tr>
+<tr><td><tt class="docutils literal">l10n_py.edi_auto_send</tt></td>
+<td>Auto-send on confirm</td>
+<td><tt class="docutils literal">True</tt> or <tt class="docutils literal">False</tt></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="database-preparation">
+<h3>Database Preparation</h3>
+<div class="section" id="existing-invoices">
+<h4>Existing Invoices</h4>
+<p>For existing invoices (pre-EDI):</p>
+<ul class="simple">
+<li>They will NOT be sent to EDI automatically</li>
+<li>You can migrate them manually if needed</li>
+<li>New invoices will use EDI</li>
+</ul>
+</div>
+<div class="section" id="product-updates">
+<h4>Product Updates</h4>
+<p>Update products with:</p>
+<ol class="arabic simple">
+<li>Tax configuration</li>
+<li>NCM codes (if applicable)</li>
+<li>GTIN/barcodes</li>
+</ol>
+</div>
+<div class="section" id="partner-updates">
+<h4>Partner Updates</h4>
+<p>Ensure all partners have:</p>
+<ol class="arabic simple">
+<li>Complete address</li>
+<li>Valid RUC (for taxpayers)</li>
+<li>Email address</li>
+<li>Taxpayer type</li>
+</ol>
+</div>
+</div>
+<div class="section" id="testing-checklist">
+<h3>Testing Checklist</h3>
+<p>Before going to production:</p>
+<ul class="simple">
+<li>☐ Test environment configured</li>
+<li>☐ Test credentials working</li>
+<li>☐ Sample invoice sent successfully</li>
+<li>☐ PDF download works</li>
+<li>☐ XML download works</li>
+<li>☐ QR code generates correctly</li>
+<li>☐ Status updates work</li>
+<li>☐ Credit note flow tested</li>
+<li>☐ Cancellation tested</li>
+<li>☐ Error handling tested</li>
+<li>☐ Email sending tested</li>
+<li>☐ All users have correct permissions</li>
+</ul>
+</div>
+<div class="section" id="production-deployment">
+<h3>Production Deployment</h3>
+<div class="section" id="pre-production">
+<h4>Pre-Production</h4>
+<ol class="arabic simple">
+<li>Backup database</li>
+<li>Complete all testing</li>
+<li>Train users</li>
+<li>Prepare support documentation</li>
+</ol>
+</div>
+<div class="section" id="go-live">
+<h4>Go-Live</h4>
+<ol class="arabic simple">
+<li>Switch to production environment</li>
+<li>Update provider credentials</li>
+<li>Configure production parameters</li>
+<li>Send first real invoice</li>
+<li>Monitor logs closely</li>
+</ol>
+</div>
+<div class="section" id="post-go-live">
+<h4>Post-Go-Live</h4>
+<ol class="arabic simple">
+<li>Monitor EDI logs daily</li>
+<li>Check success rate</li>
+<li>Respond to errors quickly</li>
+<li>Keep system updated</li>
+</ol>
+</div>
+</div>
+<div class="section" id="troubleshooting-installation">
+<h3>Troubleshooting Installation</h3>
+<div class="section" id="python-packages-not-found">
+<h4>Python Packages Not Found</h4>
+<p>If packages are missing:</p>
+<pre class="code bash literal-block">
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre>
+<p>Or install individually:</p>
+<pre class="code bash literal-block">
+pip<span class="w"> </span>install<span class="w"> </span>qrcode<span class="w"> </span>requests<span class="w"> </span>cryptography
+</pre>
+</div>
+<div class="section" id="module-not-installing">
+<h4>Module Not Installing</h4>
+<p>If installation fails:</p>
+<ol class="arabic simple">
+<li>Check Odoo logs</li>
+<li>Verify all dependencies installed</li>
+<li>Check file permissions</li>
+<li>Restart Odoo server</li>
+</ol>
+</div>
+<div class="section" id="menus-not-appearing">
+<h4>Menus Not Appearing</h4>
+<p>If menus don’t show:</p>
+<ol class="arabic simple">
+<li>Check user permissions</li>
+<li>Refresh browser</li>
+<li>Clear browser cache</li>
+<li>Verify module is installed (not just downloaded)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="uninstallation">
+<h3>Uninstallation</h3>
+<p>To uninstall (not recommended):</p>
+<ol class="arabic simple">
+<li>First uninstall connector module</li>
+<li>Then uninstall base module</li>
+<li>Data will be preserved but EDI features disabled</li>
+</ol>
+<p><strong>Warning</strong>: Uninstalling will:</p>
+<ul class="simple">
+<li>Disable EDI functionality</li>
+<li>Remove EDI menus</li>
+<li>Keep existing data but make it inaccessible</li>
+</ul>
+</div>
+<div class="section" id="upgrade-notes">
+<h3>Upgrade Notes</h3>
+<p>When upgrading:</p>
+<ol class="arabic simple">
+<li>Backup database first</li>
+<li>Test in staging environment</li>
+<li>Check changelog for breaking changes</li>
+<li>Update connectors to matching versions</li>
+<li>Test EDI functionality after upgrade</li>
+</ol>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration</h2>
+</div>
+<div class="section" id="configuration-1">
+<h2>Configuration</h2>
+<div class="section" id="initial-setup">
+<h3>Initial Setup</h3>
+<div class="section" id="step-1-company-configuration">
+<h4>Step 1: Company Configuration</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Settings &gt; General Settings &gt; Companies</strong></li>
+<li>Edit your company</li>
+<li>Navigate to <strong>Electronic Invoicing</strong> tab:<ul>
+<li>Enable <strong>Electronic Invoicing</strong></li>
+<li>Configure <strong>Environment</strong> (Test/Production)</li>
+<li>Set <strong>EDI Provider</strong> (factpy/facturasend)</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-2-select-edi-provider">
+<h4>Step 2: Select EDI Provider</h4>
+<p>Choose and configure your provider:</p>
+<div class="section" id="option-a-factpy-1">
+<h5>Option A: FactPy</h5>
+<ol class="arabic simple">
+<li>Install <tt class="docutils literal">l10n_py_edi_factpy</tt> module</li>
+<li>Configure credentials in connector settings</li>
+</ol>
+</div>
+<div class="section" id="option-b-facturasend-1">
+<h5>Option B: FacturaSend</h5>
+<ol class="arabic simple">
+<li>Install <tt class="docutils literal">l10n_py_edi_facturasend</tt> module</li>
+<li>Configure credentials in connector settings</li>
+</ol>
+</div>
+</div>
+<div class="section" id="step-3-configure-products">
+<h4>Step 3: Configure Products</h4>
+<p>For each product/service:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Products</strong></li>
+<li>Edit product</li>
+<li>In <strong>Invoicing</strong> tab:<ul>
+<li>Set <strong>NCM Code</strong> (if applicable)</li>
+<li>Configure <strong>GTIN</strong> (barcode for SET)</li>
+<li>Set tax information</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="step-4-partner-configuration">
+<h4>Step 4: Partner Configuration</h4>
+<p>Ensure customers have complete fiscal data:</p>
+<ol class="arabic simple">
+<li>Valid <strong>RUC</strong> (if taxpayer)</li>
+<li>Correct <strong>Taxpayer Type</strong></li>
+<li>Complete <strong>Address</strong> (required for electronic invoicing)</li>
+<li><strong>Email</strong> (for sending electronic documents)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="document-type-configuration">
+<h3>Document Type Configuration</h3>
+<div class="section" id="available-document-types">
+<h4>Available Document Types</h4>
+<p>The module pre-configures these document types:</p>
+<ul class="simple">
+<li><strong>Factura Electrónica (1)</strong>: Standard invoice</li>
+<li><strong>Nota de Crédito (4)</strong>: Credit note</li>
+<li><strong>Nota de Débito (5)</strong>: Debit note</li>
+<li><strong>Nota de Remisión (7)</strong>: Delivery note</li>
+<li><strong>Autofactura (2)</strong>: Self-invoice</li>
+</ul>
+</div>
+<div class="section" id="journal-configuration">
+<h4>Journal Configuration</h4>
+<ol class="arabic simple">
+<li>Go to <strong>Accounting &gt; Configuration &gt; Journals</strong></li>
+<li>For each sales journal:<ul>
+<li>Enable <strong>Electronic Invoicing</strong></li>
+<li>Select <strong>Document Type</strong></li>
+<li>Ensure timbrado is configured</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="security-groups">
+<h3>Security Groups</h3>
+<p>Configure user permissions:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Settings &gt; Users &amp; Companies &gt; Users</strong></li>
+<li>Edit user</li>
+<li>In <strong>Electronic Invoicing</strong> section:<ul>
+<li><strong>User</strong>: Can create and send documents</li>
+<li><strong>Manager</strong>: Can configure and cancel documents</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="automatic-operations">
+<h3>Automatic Operations</h3>
+<div class="section" id="cron-jobs">
+<h4>Cron Jobs</h4>
+<p>The module includes automatic jobs:</p>
+<ol class="arabic simple">
+<li><strong>Check Document Status</strong>: Polls provider for status updates</li>
+<li><strong>Retry Failed Documents</strong>: Attempts to resend failed documents</li>
+</ol>
+<p>Configure in <strong>Settings &gt; Technical &gt; Automation &gt; Scheduled Actions</strong>:</p>
+<ul class="simple">
+<li>Adjust frequency as needed</li>
+<li>Enable/disable jobs</li>
+</ul>
+</div>
+<div class="section" id="automatic-sending">
+<h4>Automatic Sending</h4>
+<p>Configure automatic sending on invoice confirmation:</p>
+<ol class="arabic simple">
+<li>Go to company settings</li>
+<li>In <strong>Electronic Invoicing</strong> tab:<ul>
+<li>Enable <strong>Auto Send on Confirm</strong></li>
+<li>Set <strong>Auto Download PDF/XML</strong></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="environment-configuration">
+<h3>Environment Configuration</h3>
+<div class="section" id="test-environment">
+<h4>Test Environment</h4>
+<p>For testing:</p>
+<ol class="arabic simple">
+<li>Set <strong>Environment</strong> = “Test”</li>
+<li>Use test credentials from provider</li>
+<li>Documents won’t be legally valid</li>
+</ol>
+</div>
+<div class="section" id="production-environment">
+<h4>Production Environment</h4>
+<p>For production:</p>
+<ol class="arabic simple">
+<li>Set <strong>Environment</strong> = “Production”</li>
+<li>Use production credentials</li>
+<li>Ensure all fiscal data is accurate</li>
+<li>Test thoroughly before going live</li>
+</ol>
+</div>
+</div>
+<div class="section" id="kude-configuration">
+<h3>KUDE Configuration</h3>
+<p>KUDE (Código Único de Documento Electrónico) settings:</p>
+<ol class="arabic simple">
+<li>QR codes are generated automatically</li>
+<li>Configure QR size in report templates if needed</li>
+<li>KUDE appears on printed invoices</li>
+</ol>
+</div>
+<div class="section" id="contingency-mode">
+<h3>Contingency Mode</h3>
+<p>Configure fallback when EDI service is unavailable:</p>
+<ol class="arabic simple">
+<li>Enable <strong>Contingency Mode</strong> in company settings</li>
+<li>Set <strong>Contingency Reason</strong> options</li>
+<li>Documents can be sent later when service recovers</li>
+</ol>
+</div>
+<div class="section" id="email-configuration">
+<h3>Email Configuration</h3>
+<p>For automatic email sending:</p>
+<ol class="arabic simple">
+<li>Configure <strong>Outgoing Mail Server</strong> in Odoo</li>
+<li>Set email template in <strong>Settings &gt; Technical &gt; Email Templates</strong></li>
+<li>Customize “Electronic Invoice” template</li>
+</ol>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+</div>
+<div class="section" id="usage-1">
+<h2>Usage</h2>
+<div class="section" id="sending-electronic-invoices">
+<h3>Sending Electronic Invoices</h3>
+<div class="section" id="method-1-automatic-sending">
+<h4>Method 1: Automatic Sending</h4>
+<p>If auto-send is enabled:</p>
+<ol class="arabic simple">
+<li>Create invoice as usual</li>
+<li>Click <strong>Confirm</strong></li>
+<li>System automatically sends to EDI provider</li>
+<li>Status updates to “Sent” when successful</li>
+</ol>
+</div>
+<div class="section" id="method-2-manual-sending">
+<h4>Method 2: Manual Sending</h4>
+<ol class="arabic simple">
+<li>Create and confirm invoice</li>
+<li>Click <strong>Send EDI</strong> button</li>
+<li>Wizard appears - review information</li>
+<li>Click <strong>Send</strong></li>
+<li>Wait for confirmation</li>
+</ol>
+</div>
+<div class="section" id="document-status">
+<h4>Document Status</h4>
+<p>Electronic invoices have these statuses:</p>
+<ul class="simple">
+<li><strong>Draft</strong>: Not yet confirmed</li>
+<li><strong>To Send</strong>: Confirmed, ready to send</li>
+<li><strong>Sending</strong>: Being sent to provider</li>
+<li><strong>Sent</strong>: Successfully sent</li>
+<li><strong>Approved</strong>: Approved by SET</li>
+<li><strong>Rejected</strong>: Rejected by SET</li>
+<li><strong>Cancelled</strong>: Cancelled document</li>
+<li><strong>Error</strong>: Error occurred</li>
+</ul>
+</div>
+</div>
+<div class="section" id="checking-document-status">
+<h3>Checking Document Status</h3>
+<div class="section" id="view-status">
+<h4>View Status</h4>
+<ol class="arabic simple">
+<li>Open invoice</li>
+<li>Check <strong>EDI Status</strong> field</li>
+<li>View <strong>EDI Information</strong> tab for details</li>
+</ol>
+</div>
+<div class="section" id="manual-status-update">
+<h4>Manual Status Update</h4>
+<p>To manually check status:</p>
+<ol class="arabic simple">
+<li>Open invoice</li>
+<li>Click <strong>Update EDI Status</strong> button</li>
+<li>System queries provider</li>
+<li>Status and messages update</li>
+</ol>
+</div>
+</div>
+<div class="section" id="cancelling-electronic-documents">
+<h3>Cancelling Electronic Documents</h3>
+<div class="section" id="requirements">
+<h4>Requirements</h4>
+<ul class="simple">
+<li>Document must be approved by SET</li>
+<li>Within cancellation timeframe (per SET rules)</li>
+<li>Valid cancellation reason</li>
+</ul>
+</div>
+<div class="section" id="process">
+<h4>Process</h4>
+<ol class="arabic simple">
+<li>Open approved invoice</li>
+<li>Click <strong>Cancel EDI</strong> button</li>
+<li>Select <strong>Cancellation Reason</strong></li>
+<li>Enter <strong>Reason Details</strong></li>
+<li>Click <strong>Cancel Document</strong></li>
+<li>System sends cancellation to SET</li>
+</ol>
+</div>
+</div>
+<div class="section" id="downloading-documents">
+<h3>Downloading Documents</h3>
+<div class="section" id="pdf-download">
+<h4>PDF Download</h4>
+<ol class="arabic simple">
+<li>Open invoice</li>
+<li>Click <strong>Download EDI PDF</strong> button</li>
+<li>PDF opens/downloads</li>
+<li>Contains KUDE QR code</li>
+</ol>
+</div>
+<div class="section" id="xml-download">
+<h4>XML Download</h4>
+<ol class="arabic simple">
+<li>Open invoice</li>
+<li>Click <strong>Download EDI XML</strong> button</li>
+<li>XML file downloads</li>
+<li>Valid SET-compliant XML</li>
+</ol>
+</div>
+</div>
+<div class="section" id="credit-and-debit-notes">
+<h3>Credit and Debit Notes</h3>
+<div class="section" id="creating-credit-note">
+<h4>Creating Credit Note</h4>
+<ol class="arabic simple">
+<li>From invoice, click <strong>Add Credit Note</strong></li>
+<li>Select reason</li>
+<li>System creates note with EDI reference</li>
+<li>Send to EDI as usual</li>
+</ol>
+</div>
+<div class="section" id="creating-debit-note">
+<h4>Creating Debit Note</h4>
+<ol class="arabic simple">
+<li>From invoice, click <strong>Add Debit Note</strong></li>
+<li>Enter reason</li>
+<li>System creates note with EDI reference</li>
+<li>Send to EDI as usual</li>
+</ol>
+</div>
+</div>
+<div class="section" id="monitoring-edi-operations">
+<h3>Monitoring EDI Operations</h3>
+<div class="section" id="edi-log">
+<h4>EDI Log</h4>
+<p>View all EDI operations:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Facturación Electrónica &gt; EDI Logs</strong></li>
+<li>Filter by:<ul>
+<li>Document</li>
+<li>Status</li>
+<li>Date</li>
+<li>Error type</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="error-handling">
+<h4>Error Handling</h4>
+<p>When errors occur:</p>
+<ol class="arabic simple">
+<li>Check <strong>EDI Logs</strong> for details</li>
+<li>Review error message</li>
+<li>Fix issue (e.g., missing data)</li>
+<li>Click <strong>Retry</strong> button</li>
+<li>Document resends</li>
+</ol>
+</div>
+</div>
+<div class="section" id="printing-kude">
+<h3>Printing KUDE</h3>
+<div class="section" id="invoice-with-kude">
+<h4>Invoice with KUDE</h4>
+<p>When printing invoices:</p>
+<ol class="arabic simple">
+<li>Click <strong>Print</strong> on invoice</li>
+<li>Select <strong>KUDE Report</strong></li>
+<li>Report includes:<ul>
+<li>QR code</li>
+<li>CDC (Código de Control)</li>
+<li>All fiscal information</li>
+<li>SET-compliant format</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="qr-code">
+<h4>QR Code</h4>
+<p>The QR code contains:</p>
+<ul class="simple">
+<li>Document number</li>
+<li>RUC</li>
+<li>CDC</li>
+<li>Amounts</li>
+<li>Validation URL</li>
+</ul>
+<p>Customers can scan to verify authenticity.</p>
+</div>
+</div>
+<div class="section" id="batch-operations">
+<h3>Batch Operations</h3>
+<div class="section" id="sending-multiple-documents">
+<h4>Sending Multiple Documents</h4>
+<ol class="arabic simple">
+<li>Go to invoice list view</li>
+<li>Select multiple invoices</li>
+<li>Click <strong>Action &gt; Send EDI</strong></li>
+<li>System sends all selected documents</li>
+<li>Check status individually</li>
+</ol>
+</div>
+<div class="section" id="updating-multiple-statuses">
+<h4>Updating Multiple Statuses</h4>
+<ol class="arabic simple">
+<li>Select documents</li>
+<li>Click <strong>Action &gt; Update EDI Status</strong></li>
+<li>System checks all selected documents</li>
+</ol>
+</div>
+</div>
+<div class="section" id="customer-portal">
+<h3>Customer Portal</h3>
+<p>Customers can:</p>
+<ol class="arabic simple">
+<li>Access their invoices via portal</li>
+<li>Download PDF with KUDE</li>
+<li>Download XML if needed</li>
+<li>View EDI status</li>
+</ol>
+</div>
+<div class="section" id="reports-and-analytics">
+<h3>Reports and Analytics</h3>
+<div class="section" id="edi-dashboard">
+<h4>EDI Dashboard</h4>
+<p>View EDI metrics:</p>
+<ol class="arabic simple">
+<li>Go to <strong>Facturación Electrónica &gt; Dashboard</strong></li>
+<li>See:<ul>
+<li>Documents sent today/week/month</li>
+<li>Success rate</li>
+<li>Pending documents</li>
+<li>Errors</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="custom-reports">
+<h4>Custom Reports</h4>
+<p>Create custom reports:</p>
+<ol class="arabic simple">
+<li>Use invoice filters</li>
+<li>Filter by <strong>EDI Status</strong></li>
+<li>Group by status, date, customer</li>
+<li>Export to Excel</li>
+</ol>
+</div>
+</div>
+<div class="section" id="troubleshooting-common-issues">
+<h3>Troubleshooting Common Issues</h3>
+<div class="section" id="issue-missing-customer-email">
+<h4>Issue: “Missing Customer Email”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Add email to customer record</li>
+<li>Retry sending</li>
+</ol>
+</div>
+<div class="section" id="issue-invalid-ruc">
+<h4>Issue: “Invalid RUC”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Verify customer RUC format</li>
+<li>Check verification digit</li>
+<li>Update customer record</li>
+<li>Retry</li>
+</ol>
+</div>
+<div class="section" id="issue-timbrado-expired">
+<h4>Issue: “Timbrado Expired”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Update timbrado in journal</li>
+<li>May need to cancel and recreate invoice</li>
+</ol>
+</div>
+<div class="section" id="issue-connection-error">
+<h4>Issue: “Connection Error”</h4>
+<p>Solution:</p>
+<ol class="arabic simple">
+<li>Check internet connection</li>
+<li>Verify provider credentials</li>
+<li>Check provider service status</li>
+<li>Try again or enable contingency mode</li>
+</ol>
+</div>
+</div>
+<div class="section" id="best-practices">
+<h3>Best Practices</h3>
+<ol class="arabic simple">
+<li><strong>Test First</strong>: Use test environment before production</li>
+<li><strong>Monitor Logs</strong>: Regularly check EDI logs</li>
+<li><strong>Keep Updated</strong>: Update status of pending documents</li>
+<li><strong>Backup</strong>: Download and store PDF/XML copies</li>
+<li><strong>Validate</strong>: Ensure all fiscal data is complete before sending</li>
+</ol>
+</div>
+</div>
+<div class="section" id="known-issues-roadmap">
+<h2>Known issues / Roadmap</h2>
+</div>
+<div class="section" id="roadmap">
+<h2>Roadmap</h2>
+<div class="section" id="current-version-16-0-1-0-0">
+<h3>Current Version: 16.0.1.0.0</h3>
+<p>This document outlines planned features and improvements for the
+Paraguay Electronic Invoicing module.</p>
+</div>
+<div class="section" id="short-term-next-release">
+<h3>Short Term (Next Release)</h3>
+<div class="section" id="enhanced-validation">
+<h4>Enhanced Validation</h4>
+<ul class="simple">
+<li>☐ More comprehensive RUC validation</li>
+<li>☐ Automatic DV calculation for RUC</li>
+<li>☐ Product code validation against SET catalog</li>
+<li>☐ Real-time validation before sending</li>
+</ul>
+</div>
+<div class="section" id="improved-user-experience">
+<h4>Improved User Experience</h4>
+<ul class="simple">
+<li>☐ Better error messages with suggested fixes</li>
+<li>☐ Inline EDI status on invoice form</li>
+<li>☐ Dashboard with EDI statistics</li>
+<li>☐ Bulk operations improvement</li>
+</ul>
+</div>
+<div class="section" id="additional-reports">
+<h4>Additional Reports</h4>
+<ul class="simple">
+<li>☐ Monthly EDI summary report</li>
+<li>☐ Tax authority compliance report</li>
+<li>☐ Document tracking report</li>
+<li>☐ Error analysis report</li>
+</ul>
+</div>
+</div>
+<div class="section" id="medium-term-2-3-releases">
+<h3>Medium Term (2-3 Releases)</h3>
+<div class="section" id="additional-document-types">
+<h4>Additional Document Types</h4>
+<ul class="simple">
+<li>☐ Comprobante de Retención (Retention receipt)</li>
+<li>☐ Factura de Exportación (Export invoice)</li>
+<li>☐ Factura de Importación (Import invoice)</li>
+<li>☐ Boleta de Venta (Sales receipt)</li>
+</ul>
+</div>
+<div class="section" id="integration-enhancements">
+<h4>Integration Enhancements</h4>
+<ul class="simple">
+<li>☐ Direct SIFEN integration (bypass third-party)</li>
+<li>☐ Webhook support for status updates</li>
+<li>☐ Batch sending optimization</li>
+<li>☐ Offline mode improvements</li>
+</ul>
+</div>
+<div class="section" id="advanced-features">
+<h4>Advanced Features</h4>
+<ul class="simple">
+<li>☐ Electronic credit management</li>
+<li>☐ Payment integration with electronic documents</li>
+<li>☐ Multi-currency support for EDI</li>
+<li>☐ Document routing rules</li>
+</ul>
+</div>
+<div class="section" id="compliance-updates">
+<h4>Compliance Updates</h4>
+<ul class="simple">
+<li>☐ Support for SET regulation changes</li>
+<li>☐ Enhanced contingency mode</li>
+<li>☐ Document versioning</li>
+<li>☐ Legal archive management (7-year retention)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="long-term-future-vision">
+<h3>Long Term (Future Vision)</h3>
+<div class="section" id="ai-and-automation">
+<h4>AI and Automation</h4>
+<ul class="simple">
+<li>☐ Intelligent error detection and correction</li>
+<li>☐ Automatic document classification</li>
+<li>☐ Predictive timbrado expiration alerts</li>
+<li>☐ Smart retry strategies</li>
+</ul>
+</div>
+<div class="section" id="integration-ecosystem">
+<h4>Integration Ecosystem</h4>
+<ul class="simple">
+<li>☐ Point of Sale (POS) integration</li>
+<li>☐ E-commerce integration</li>
+<li>☐ Accounting software exports</li>
+<li>☐ Bank reconciliation integration</li>
+</ul>
+</div>
+<div class="section" id="analytics-and-intelligence">
+<h4>Analytics and Intelligence</h4>
+<ul class="simple">
+<li>☐ Advanced EDI analytics</li>
+<li>☐ Customer behavior insights</li>
+<li>☐ Tax optimization suggestions</li>
+<li>☐ Compliance scoring</li>
+</ul>
+</div>
+<div class="section" id="mobile-support">
+<h4>Mobile Support</h4>
+<ul class="simple">
+<li>☐ Mobile app for document approval</li>
+<li>☐ QR code scanning verification</li>
+<li>☐ Mobile notifications</li>
+<li>☐ Offline mobile capabilities</li>
+</ul>
+</div>
+<div class="section" id="additional-providers">
+<h4>Additional Providers</h4>
+<ul class="simple">
+<li>☐ Additional EDI provider integrations</li>
+<li>☐ Provider comparison tools</li>
+<li>☐ Automatic failover between providers</li>
+<li>☐ Cost optimization across providers</li>
+</ul>
+</div>
+</div>
+<div class="section" id="technical-improvements">
+<h3>Technical Improvements</h3>
+<div class="section" id="performance">
+<h4>Performance</h4>
+<ul class="simple">
+<li>☐ Asynchronous document sending</li>
+<li>☐ Caching layer for provider responses</li>
+<li>☐ Database query optimization</li>
+<li>☐ Bulk operation performance</li>
+</ul>
+</div>
+<div class="section" id="code-quality">
+<h4>Code Quality</h4>
+<ul class="simple">
+<li>☐ Increase test coverage to 90%+</li>
+<li>☐ API documentation</li>
+<li>☐ Developer guide</li>
+<li>☐ Code refactoring for maintainability</li>
+</ul>
+</div>
+<div class="section" id="security">
+<h4>Security</h4>
+<ul class="simple">
+<li>☐ Enhanced credential encryption</li>
+<li>☐ Audit trail improvements</li>
+<li>☐ Role-based access control refinement</li>
+<li>☐ Security compliance certifications</li>
+</ul>
+</div>
+</div>
+<div class="section" id="community-requests">
+<h3>Community Requests</h3>
+<p>We track community feature requests. Top requests:</p>
+<ol class="arabic simple">
+<li><strong>Multi-company enhancements</strong> - Better support for groups</li>
+<li><strong>Import automation</strong> - Automatically import vendor electronic
+invoices</li>
+<li><strong>API exposure</strong> - REST API for external systems</li>
+<li><strong>Customs integration</strong> - Integration with customs systems</li>
+<li><strong>Transportation documents</strong> - Support for e-transport documents</li>
+</ol>
+</div>
+<div class="section" id="contributing">
+<h3>Contributing</h3>
+<p>Want to contribute to the roadmap?</p>
+<ol class="arabic simple">
+<li>Submit feature requests via GitHub issues</li>
+<li>Vote on existing feature requests</li>
+<li>Contribute code via pull requests</li>
+<li>Join development discussions</li>
+</ol>
+</div>
+<div class="section" id="version-planning">
+<h3>Version Planning</h3>
+<div class="section" id="v16-0-2-0-0-q2-2024">
+<h4>v16.0.2.0.0 (Q2 2024)</h4>
+<ul class="simple">
+<li>Enhanced validation</li>
+<li>Additional reports</li>
+<li>UX improvements</li>
+</ul>
+</div>
+<div class="section" id="v16-0-3-0-0-q3-2024">
+<h4>v16.0.3.0.0 (Q3 2024)</h4>
+<ul class="simple">
+<li>New document types</li>
+<li>Improved integrations</li>
+<li>Performance optimizations</li>
+</ul>
+</div>
+<div class="section" id="v17-0-1-0-0-q4-2024">
+<h4>v17.0.1.0.0 (Q4 2024)</h4>
+<ul class="simple">
+<li>Odoo 17 migration</li>
+<li>New features from roadmap</li>
+<li>Architecture improvements</li>
+</ul>
+</div>
+</div>
+<div class="section" id="deprecation-notices">
+<h3>Deprecation Notices</h3>
+<div class="section" id="planned-deprecations">
+<h4>Planned Deprecations</h4>
+<ul class="simple">
+<li>Legacy provider adapters will be deprecated in v17.0</li>
+<li>Old XML format support ends in v16.0.5.0.0</li>
+<li>Python 3.7 support ends with v16.0 series</li>
+</ul>
+</div>
+<div class="section" id="migration-paths">
+<h4>Migration Paths</h4>
+<p>Documentation will be provided for all deprecations with clear migration
+paths and timelines.</p>
+</div>
+</div>
+<div class="section" id="feedback">
+<h3>Feedback</h3>
+<p>This roadmap is subject to change based on:</p>
+<ul class="simple">
+<li>SET regulatory changes</li>
+<li>Community feedback</li>
+<li>Technical constraints</li>
+<li>Resource availability</li>
+</ul>
+<p>Submit feedback:</p>
+<ul class="simple">
+<li>GitHub issues</li>
+<li>Community forums</li>
+<li>Direct contact with maintainers</li>
+</ul>
+<hr class="docutils" />
+<p>Last updated: 2024</p>
+</div>
+</div>
+<div class="section" id="bug-tracker">
+<h2>Bug Tracker</h2>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/OCA/l10n-paraguay/issues/new?body=module:%20l10n_py_edi_base%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h2>Credits</h2>
+<div class="section" id="authors">
+<h3>Authors</h3>
+<ul class="simple">
+<li>KMEE</li>
+</ul>
+</div>
+<div class="section" id="maintainers">
+<h3>Maintainers</h3>
+<p>This module is maintained by the OCA.</p>
+<a class="reference external image-reference" href="https://odoo-community.org">
+<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
+</a>
+<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/l10n-paraguay/tree/18.0/l10n_py_edi_base">OCA/l10n-paraguay</a> project on GitHub.</p>
+<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

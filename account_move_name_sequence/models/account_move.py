@@ -11,9 +11,6 @@ class AccountMove(models.Model):
     # highest_name is not needed any more
     # -> compute=False to improve perf
     highest_name = fields.Char(compute=False)
-    # made_sequence_hole is not relevant anymore (since based on sequence_prefix/number)
-    # -> compute=False to improve perf and to avoid displaying warning
-    made_sequence_hole = fields.Boolean(compute=False)
 
     _sql_constraints = [
         (
@@ -28,7 +25,7 @@ class AccountMove(models.Model):
     def _compute_split_sequence(self):
         """
         Replace original compute function from Odoo account module
-        to compute sequend and prefix from name only if journal is
+        to compute sequence and prefix from name only if journal is
         in secured mode (restrict_mode_hash_table)
         Since both sequence_prefix and sequence_number are needed for
         computing hash since Odoo v18.0
@@ -97,6 +94,18 @@ class AccountMove(models.Model):
         self._compute_split_sequence()
         # Force compute of fields depending on name
         self._inverse_name()
+
+    @api.depends("journal_id", "sequence_number", "sequence_prefix", "state")
+    def _compute_made_sequence_gap(self):
+        """
+        Inherit default function from Odoo account module
+        If no sequence_number and sequence_prefix is defined on move
+        (= when we are using this module that would be only on non-hashed journal)
+        made_sequence_gap cannot be computed and is therefore set to False
+        """
+        moves = self.filtered("journal_id.restrict_mode_hash_table")
+        (self - moves).made_sequence_gap = False
+        return super(AccountMove, moves)._compute_made_sequence_gap()
 
     # We must by-pass this constraint of sequence.mixin
     def _constrains_date_sequence(self):

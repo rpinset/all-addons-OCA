@@ -72,12 +72,6 @@ msgid "Journal Entry"
 msgstr "Pièce comptable"
 
 #. module: account_move_name_sequence
-#: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__made_sequence_hole
-#: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__made_sequence_hole
-msgid "Made Sequence Hole"
-msgstr "Cause un trou dans la séquence"
-
-#. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__name
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__name
 msgid "Number"
@@ -130,8 +124,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_move_name_sequence/models/account_journal.py:0
 msgid ""
-"The company is not set on sequence '%(sequence)s' configured on journal "
-"'%(journal)s'."
+"The company is not set on sequence '%(sequence)s' configured on journal '%"
+"(journal)s'."
 msgstr ""
 "Aucune société n'est configurée sur la séquence '%(sequence)s' configurée "
 "sur le journal '%(journal)s'."
@@ -147,6 +141,9 @@ msgstr "Cette séquence sera utilisée pour générer les numéros des avoirs."
 msgid "This sequence will be used to generate the journal entry number."
 msgstr ""
 "Cette séquence sera utilisée pour générer les numéros des pièces comptables."
+
+#~ msgid "Made Sequence Hole"
+#~ msgstr "Cause un trou dans la séquence"
 
 #~ msgid "Sequence Number"
 #~ msgstr "Nombre de la séquence"

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_move_form_edi" model="ir.ui.view">
+        <field name="name">account.move.form.edi</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form" />
+        <field name="arch" type="xml">
+            <!-- Hidden fields needed for button attrs -->
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="l10n_py_edi_xml" invisible="1" />
+                <field name="l10n_py_kude_pdf" invisible="1" />
+            </xpath>
+
+            <!-- EDI tab in notebook -->
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Facturación Electrónica"
+                    name="l10n_py_edi"
+                    invisible="move_type not in ['out_invoice', 'out_refund']"
+                >
+                    <group>
+                        <group string="Datos EDI">
+                            <field name="l10n_py_emission_type" />
+                            <field name="l10n_py_transaction_type" />
+                            <field name="l10n_py_presence_type" />
+                            <field name="l10n_py_payment_type" />
+                            <field name="l10n_py_exchange_rate_condition" />
+                            <field name="l10n_py_receipt_id" />
+                            <field name="l10n_py_security_code" readonly="1" />
+                            <field name="l10n_py_contingency_motive" />
+                        </group>
+                        <group string="Estado EDI">
+                            <field
+                                name="l10n_py_edi_status"
+                                widget="statusbar"
+                                statusbar_visible="draft,to_send,sent,processing,accepted"
+                            />
+                            <field name="l10n_py_edi_message" widget="text" />
+                            <field name="l10n_py_cdc" readonly="1" />
+                            <field name="l10n_py_edi_batch_id" readonly="1" />
+                        </group>
+                    </group>
+                    <field name="l10n_py_doc_type_code" invisible="1" />
+                    <group
+                        string="Nota de Remisión (NRE)"
+                        invisible="l10n_py_doc_type_code != '7'"
+                        name="nre_section"
+                    >
+                        <field name="l10n_py_nre_motive" />
+                        <field name="l10n_py_nre_estimated_invoice_date" />
+                        <field name="l10n_py_transport_id" />
+                    </group>
+                    <group
+                        string="Autofactura (AFE)"
+                        invisible="l10n_py_doc_type_code != '4'"
+                        name="afe_section"
+                    >
+                        <group string="Constancia">
+                            <field name="l10n_py_afe_constancia_type" />
+                            <field name="l10n_py_afe_constancia_number" />
+                            <field name="l10n_py_afe_constancia_control" />
+                        </group>
+                        <group string="Datos del Vendedor">
+                            <field name="l10n_py_afe_vendor_doc_type" />
+                            <field name="l10n_py_afe_vendor_doc_number" />
+                            <field name="l10n_py_afe_vendor_name" />
+                            <field name="l10n_py_afe_vendor_address" />
+                            <field name="l10n_py_afe_vendor_house" />
+                            <field name="l10n_py_afe_vendor_department" />
+                            <field name="l10n_py_afe_vendor_district" />
+                            <field name="l10n_py_afe_vendor_city" />
+                        </group>
+                        <group string="Lugar de Provisión">
+                            <field name="l10n_py_afe_provision_address" />
+                            <field name="l10n_py_afe_provision_department" />
+                            <field name="l10n_py_afe_provision_district" />
+                            <field name="l10n_py_afe_provision_city" />
+                        </group>
+                    </group>
+                    <separator string="Documentos Asociados (Grupo H)" />
+                    <field name="l10n_py_associated_document_ids" />
+                </page>
+            </xpath>
+
+            <!-- Header buttons -->
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_preview_xml"
+                    string="Preview XML"
+                    type="object"
+                    invisible="l10n_py_edi_status in ['sent', 'accepted', 'processing']"
+                />
+                <button
+                    name="action_preview_kude"
+                    string="Preview KuDE"
+                    type="object"
+                    invisible="l10n_py_edi_status in ['sent', 'accepted', 'processing']"
+                />
+                <button
+                    name="action_l10n_py_preview_qr"
+                    string="Previsualizar QR"
+                    type="object"
+                    invisible="l10n_py_edi_status in ['sent', 'accepted', 'processing']"
+                />
+                <button
+                    name="action_send_edi"
+                    string="Enviar a EDI"
+                    type="object"
+                    class="oe_highlight"
+                    invisible="l10n_py_edi_status in ['sent', 'accepted', 'processing']"
+                />
+                <button
+                    name="action_retry_edi"
+                    string="Reintentar"
+                    type="object"
+                    invisible="l10n_py_edi_status not in ['error', 'rejected']"
+                />
+                <button
+                    name="action_cancel_edi"
+                    string="Cancelar EDI"
+                    type="object"
+                    invisible="not l10n_py_cdc"
+                />
+                <button
+                    name="action_download_xml"
+                    string="Descargar XML"
+                    type="object"
+                    invisible="not l10n_py_edi_xml"
+                />
+                <button
+                    name="action_download_kude"
+                    string="Descargar KUDE"
+                    type="object"
+                    invisible="not l10n_py_kude_pdf"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -26,7 +26,7 @@
                         name="unece_vatex_id"
                         options="{'no_create': True, 'no_create_edit': True}"
                         invisible="unece_type_code != 'VAT' or unece_categ_code in ('S', 'Z', False)"
-                        required="unece_type_code == 'VAT' and unece_categ_code not in ('S', 'Z')"
+                        required="unece_type_code == 'VAT' and unece_categ_code not in ('S', 'Z') and type_tax_use == 'sale'"
                     />
                     <field name="unece_type_code" invisible="1" />
                     <field name="unece_categ_code" invisible="1" />
