@@ -1,12 +1,12 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-07-20 16:16 UTC
+Generated 2026-07-23 22:14 UTC
 
-Total skipped: **139**
+Total skipped: **140**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **78**
+Count: **79**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -27,6 +27,7 @@ Count: **78**
 | [hr-attendance](https://github.com/OCA/hr-attendance) | [12.0](https://github.com/OCA/hr-attendance/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-expense](https://github.com/OCA/hr-expense) | [12.0](https://github.com/OCA/hr-expense/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | [12.0](https://github.com/OCA/hr-holidays/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | [12.0](https://github.com/OCA/l10n-australia/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [12.0](https://github.com/OCA/l10n-bulgaria/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | [12.0](https://github.com/OCA/l10n-cambodia/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | [12.0](https://github.com/OCA/l10n-paraguay/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |

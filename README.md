@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-07-20 16:16 UTC** (elapsed 97s)
+Last build: **2026-07-23 22:14 UTC** (elapsed 121s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **139**
+- Skipped repos (no branch / no module): **140**
 
 ## Integrated repos
 
@@ -23,7 +23,7 @@ Last build: **2026-07-20 16:16 UTC** (elapsed 97s)
 | [account-payment](https://github.com/OCA/account-payment) | 24 | ff7c47f 2025-07-17 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 18 | 1f9e03a 2024-02-07 mymage Translated using Weblate (Italian) |
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 3dda71d 2025-04-02 mymage Translated using Weblate (Italian) |
-| [bank-payment](https://github.com/OCA/bank-payment) | 14 | 2cf72e2 2026-04-08 mymage Translated using Weblate (Italian) |
+| [bank-payment](https://github.com/OCA/bank-payment) | 14 | a26a52d 2026-07-23 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 15 | 28d3435 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [brand](https://github.com/OCA/brand) | 13 | 53435d0 2025-01-01 OCA-git-bot [ADD] setup.py |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | 04ad64a 2023-10-09 Weblate Update translation files |
@@ -40,7 +40,7 @@ Last build: **2026-07-20 16:16 UTC** (elapsed 97s)
 | [contract](https://github.com/OCA/contract) | 35 | 63c856c 2025-07-01 mymage Translated using Weblate (Italian) |
 | [cooperative](https://github.com/OCA/cooperative) | 9 | 9fae69b 2025-11-28 mymage Translated using Weblate (Italian) |
 | [credit-control](https://github.com/OCA/credit-control) | 10 | fd9df88 2026-01-15 Rémi Translated using Weblate (French) |
-| [crm](https://github.com/OCA/crm) | 23 | 6ca873a 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [crm](https://github.com/OCA/crm) | 23 | 557b822 2026-07-22 mymage Translated using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 7 | 921cf10 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 3 | 9c7f288 2024-10-03 mymage Translated using Weblate (Italian) |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | 7440806 2026-04-13 Pedro M. Baeza Merge pull request #1163 from akretion/12.0-fix-icon |
@@ -96,7 +96,7 @@ Last build: **2026-07-20 16:16 UTC** (elapsed 97s)
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 5077fcd 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 3 | 8be9f39 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 71 | f5dd2fc 2025-07-15 mymage Translated using Weblate (Italian) |
-| [queue](https://github.com/OCA/queue) | 10 | 7ef9afd 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [queue](https://github.com/OCA/queue) | 10 | 1f41399 2026-07-21 OCA-git-bot [UPD] README.rst |
 | [report-print-send](https://github.com/OCA/report-print-send) | 5 | 5035ec3 2024-01-15 mymage Translated using Weblate (Italian) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 27 | b18ab36 2025-11-25 mymage Translated using Weblate (Italian) |
 | [rest-framework](https://github.com/OCA/rest-framework) | 6 | ce695b4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
