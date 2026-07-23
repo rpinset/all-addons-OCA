@@ -720,6 +720,9 @@ and promote its widespread use.
 ## From OCA/bank-payment
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# bank-payment
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-payment&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/bank-payment/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/bank-payment/actions/workflows/test.yml?query=branch%3A15.0)
@@ -727,8 +730,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/bank-payment-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-payment-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# bank-payment
 
 TODO: add repo description.
 
@@ -745,11 +746,11 @@ addon | version | maintainers | summary
 [account_banking_mandate](account_banking_mandate/) | 15.0.2.2.0 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 15.0.1.0.2 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
-[account_banking_pain_base](account_banking_pain_base/) | 15.0.2.1.0 |  | Base module for PAIN file generation
+[account_banking_pain_base](account_banking_pain_base/) | 15.0.2.1.1 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.1.0 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.1 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 15.0.2.7.2 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 15.0.2.7.3 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.3 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
@@ -3669,7 +3670,7 @@ addon | version | maintainers | summary
 [l10n_th_account_tax_report](l10n_th_account_tax_report/) | 15.0.1.4.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 15.0.2.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 15.0.1.0.1 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Convert Amount Text to Thai
-[l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 15.0.4.1.1 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Base export payment text file to bank
+[l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 15.0.4.1.2 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Base export payment text file to bank
 [l10n_th_bank_payment_export_ktb](l10n_th_bank_payment_export_ktb/) | 15.0.3.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Bank Payment Export File KTB
 [l10n_th_base_location](l10n_th_base_location/) | 15.0.1.0.2 |  | Thai Localization - Base Location
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | <a href='https://github.com/sansirit'><img src='https://github.com/sansirit.png' width='32' height='32' style='border-radius:50%;' alt='sansirit'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Base Sequence
@@ -4113,6 +4114,9 @@ and promote its widespread use.
 ## From OCA/mis-builder
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# MIS Builder
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/mis-builder/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/mis-builder/actions/workflows/test.yml?query=branch%3A15.0)
@@ -6847,8 +6851,8 @@ addon | version | maintainers | summary
 [stock_reception_discrepancy_distribution](stock_reception_discrepancy_distribution/) | 15.0.1.0.1 |  | Change demand in stock moves linked to reception one
 [stock_remote_measure](stock_remote_measure/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to connect to remote devices to record measures in stock fields
 [stock_restrict_lot](stock_restrict_lot/) | 15.0.0.1.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
-[stock_return_request](stock_return_request/) | 15.0.1.0.3 |  | Stock Return Request
-[stock_scrap_tier_validation](stock_scrap_tier_validation/) | 15.0.1.0.0 |  | Stock Scrap Tier Validation
+[stock_return_request](stock_return_request/) | 15.0.1.0.4 |  | Stock Return Request
+[stock_scrap_tier_validation](stock_scrap_tier_validation/) | 15.0.1.0.1 |  | Stock Scrap Tier Validation
 [stock_split_picking](stock_split_picking/) | 15.0.1.1.2 |  | Split a picking in two not transferred pickings
 [stock_valuation_fifo_lot](stock_valuation_fifo_lot/) | 15.0.1.0.0 | <a href='https://github.com/newtratip'><img src='https://github.com/newtratip.png' width='32' height='32' style='border-radius:50%;' alt='newtratip'/></a> | Stock Valuation Fifo Lot
 [stock_valuation_layer_usage](stock_valuation_layer_usage/) | 15.0.1.1.0 |  | Trace where has the stock valuation been used in, including the quantities taken.

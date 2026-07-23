@@ -892,7 +892,7 @@ msgstr ""
 "SEPA:\n"
 "{bic_list}\n"
 "\n"
-"Patrón SEPA: {saiba_pattern}"
+"Patrón SEPA: {sepa_pattern}"
 
 #. module: account_banking_pain_base
 #: code:addons/account_banking_pain_base/models/account_payment_order.py:0

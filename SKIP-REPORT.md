@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-07-20 16:20 UTC
+Generated 2026-07-23 22:16 UTC
 
-Total skipped: **138**
+Total skipped: **139**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **59**
+Count: **60**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -21,6 +21,7 @@ Count: **59**
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [15.0](https://github.com/OCA/crowdfunding/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [15.0](https://github.com/OCA/edi-ediversa/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [15.0](https://github.com/OCA/edi-voxel/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | [15.0](https://github.com/OCA/l10n-australia/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [15.0](https://github.com/OCA/l10n-bulgaria/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | [15.0](https://github.com/OCA/l10n-paraguay/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [mail](https://github.com/OCA/mail) | [15.0](https://github.com/OCA/mail/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
