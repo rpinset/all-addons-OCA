@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-07-20 16:16 UTC** (elapsed 92s)
+Last build: **2026-07-23 22:13 UTC** (elapsed 92s)
 
 - Repos integrated: **140**
 - Canonical modules: **2911**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **115**
+- Skipped repos (no branch / no module): **116**
 
 ## Integrated repos
 
@@ -118,7 +118,7 @@ Last build: **2026-07-20 16:16 UTC** (elapsed 92s)
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 150 | 93a40fe 2026-07-20 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 150 | 29241b7 2026-07-23 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
@@ -142,7 +142,7 @@ Last build: **2026-07-20 16:16 UTC** (elapsed 92s)
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | 3 | 18a9bba 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [vertical-association](https://github.com/OCA/vertical-association) | 10 | 43ecb0d 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 5109ebc 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | c2363b2 2026-07-16 mymage Translated using Weblate (Italian) |
+| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | a1fc0cf 2026-07-22 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 6 | 4bbbb97 2025-10-15 mymage Translated using Weblate (Italian) |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | 1 | 5f56d1e 2025-04-02 mymage Translated using Weblate (Italian) |
 | [web](https://github.com/OCA/web) | 69 | 790767b 2026-05-18 OCA-git-bot [BOT] post-merge updates |
