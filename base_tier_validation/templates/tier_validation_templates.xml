@@ -25,27 +25,31 @@
                 t-attf-invisible="validation_status == 'validated' or hide_reviews or validation_status == 'rejected' or not review_ids"
             >
                 <p class="mb-1">
-                <i class="fa fa-lg fa-info-circle" />
-                This Record needs to be
-                validated.
-                <button
-                    name="validate_tier"
-                    string="Validate"
-                    invisible="not can_review"
-                    type="object"
-                    class="btn-icon me-1 btn-success"
-                    icon="fa-thumbs-up"
-                />
-                <button
-                    name="reject_tier"
-                    string="Reject"
-                    invisible="not can_review"
-                    type="object"
-                    class="btn-icon btn-danger"
-                    icon="fa-thumbs-down"
-                />
-                <br /><field name="next_review" readonly="1" />
-            </p>
+                    <field
+                        name="to_validate_message"
+                        readonly="1"
+                        nolabel="1"
+                        widget="html"
+                    />
+                    <button
+                        name="validate_tier"
+                        string="Validate"
+                        invisible="not can_review"
+                        type="object"
+                        class="btn-icon me-1 btn-success"
+                        icon="fa-thumbs-up"
+                    />
+                    <button
+                        name="reject_tier"
+                        string="Reject"
+                        invisible="not can_review"
+                        type="object"
+                        class="btn-icon btn-danger"
+                        icon="fa-thumbs-down"
+                    />
+                    <br />
+                    <field name="next_review" readonly="1" />
+                </p>
             </div>
             <div
                 class="alert alert-success mb-0"

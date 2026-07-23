@@ -6,6 +6,7 @@
         <field name="name">Demo Purchase Order out</field>
         <field name="code">demo_PurchaseOrder_out</field>
         <field name="direction">output</field>
+        <field name="send_model_id" ref="edi_core_oca.model_edi_oca_handler_noop" />
         <field name="exchange_filename_pattern">{record_name}-{type.code}-{dt}</field>
         <field name="exchange_file_ext">xml</field>
     </record>

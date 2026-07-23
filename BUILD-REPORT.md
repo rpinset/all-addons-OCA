@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-07-20 16:23 UTC
+Generated 2026-07-23 22:21 UTC
 
 ## Skipped repos
 
@@ -20,7 +20,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-cmis](https://github.com/OCA/connector-cmis) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-ecommerce](https://github.com/OCA/connector-ecommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-infor](https://github.com/OCA/connector-infor) | `no_module` | No directory with __manifest__.py at repo root |
-| [connector-interfaces](https://github.com/OCA/connector-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-jira](https://github.com/OCA/connector-jira) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-lengow](https://github.com/OCA/connector-lengow) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | `no_module` | No directory with __manifest__.py at repo root |
@@ -49,6 +48,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [interface-git](https://github.com/OCA/interface-git) | `no_module` | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-belarus](https://github.com/OCA/l10n-belarus) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | `no_module` | No directory with __manifest__.py at repo root |
@@ -120,7 +120,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [sale-channel](https://github.com/OCA/sale-channel) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | `no_module` | No directory with __manifest__.py at repo root |
-| [sale-promotion](https://github.com/OCA/sale-promotion) | `no_module` | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
@@ -137,7 +136,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
-| [vertical-association](https://github.com/OCA/vertical-association) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | `no_module` | No directory with __manifest__.py at repo root |

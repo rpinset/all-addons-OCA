@@ -17,9 +17,33 @@ msgstr ""
 "X-Generator: Weblate 5.10.4\n"
 
 #. module: base_tier_validation_formula
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_formula.tier_definition_view_form
+msgid ""
+"# Available locals:\n"
+"#  - rec: current record\n"
+"#  - Expects a recordset of res.users\n"
+"rec.env.user"
+msgstr ""
+
+#. module: base_tier_validation_formula
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_formula.tier_definition_view_form
+msgid ""
+"# Available locals:\n"
+"#  - rec: current record\n"
+"True"
+msgstr ""
+
+#. module: base_tier_validation_formula
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition__definition_type
 msgid "Definition"
 msgstr "Tanım"
+
+#. module: base_tier_validation_formula
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_validation__display_name
+msgid "Display Name"
+msgstr ""
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__definition_type__domain_formula
@@ -41,6 +65,13 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__definition_type__formula
 msgid "Formula"
 msgstr "Formül"
+
+#. module: base_tier_validation_formula
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition__id
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review__id
+#: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_validation__id
+msgid "ID"
+msgstr ""
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__review_type__expression

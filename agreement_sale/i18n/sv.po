@@ -33,29 +33,16 @@ msgid "Agreement Type"
 msgstr "Avtalstyp"
 
 #. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Agreement types"
-msgstr "Avtalstyper"
+#: model:ir.model.fields,field_description:agreement_sale.field_agreement__display_name
+#: model:ir.model.fields,field_description:agreement_sale.field_sale_order__display_name
+msgid "Display Name"
+msgstr ""
 
 #. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Agreements"
-msgstr "Avtal"
-
-#. module: agreement_sale
-#: model:ir.model,name:agreement_sale.model_res_config_settings
-msgid "Config Settings"
-msgstr "Inställningar"
-
-#. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Have a special kind of agreements which act as templates"
-msgstr "Ha en speciell typ av avtal som fungerar som mallar"
-
-#. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Manage agreements by types"
-msgstr "Hantera avtal utifrån typer"
+#: model:ir.model.fields,field_description:agreement_sale.field_agreement__id
+#: model:ir.model.fields,field_description:agreement_sale.field_sale_order__id
+msgid "ID"
+msgstr ""
 
 #. module: agreement_sale
 #: model_terms:ir.ui.view,arch_db:agreement_sale.agreement_sale_order_form_view
@@ -67,12 +54,23 @@ msgstr "Försäljningsorder"
 msgid "Sales Order"
 msgstr "Säljorder"
 
-#. module: agreement_sale
-#: model:ir.model.fields,field_description:agreement_sale.field_res_config_settings__group_use_agreement_template
-msgid "Use agreement template"
-msgstr "Använd avtalsmallen"
+#~ msgid "Agreement types"
+#~ msgstr "Avtalstyper"
 
-#. module: agreement_sale
-#: model:ir.model.fields,field_description:agreement_sale.field_res_config_settings__group_use_agreement_type
-msgid "Use agreement types"
-msgstr "Använd avtalstyper"
+#~ msgid "Agreements"
+#~ msgstr "Avtal"
+
+#~ msgid "Config Settings"
+#~ msgstr "Inställningar"
+
+#~ msgid "Have a special kind of agreements which act as templates"
+#~ msgstr "Ha en speciell typ av avtal som fungerar som mallar"
+
+#~ msgid "Manage agreements by types"
+#~ msgstr "Hantera avtal utifrån typer"
+
+#~ msgid "Use agreement template"
+#~ msgstr "Använd avtalsmallen"
+
+#~ msgid "Use agreement types"
+#~ msgstr "Använd avtalstyper"

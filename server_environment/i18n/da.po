@@ -36,6 +36,8 @@ msgstr "Oprettet den"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__display_name
+#: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__display_name
+#: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__display_name
 msgid "Display Name"
 msgstr "Vist navn"
 
@@ -46,6 +48,8 @@ msgstr "Vis serverkonfiguration"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__id
+#: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__id
+#: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__id
 msgid "ID"
 msgstr "Id"
 
@@ -112,6 +116,11 @@ msgid "odoo | admin_passwd"
 msgstr "odoo | admin_passwd"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_bin_path
+msgid "odoo | bin_path"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_config
 msgid "odoo | config"
 msgstr "odoo | config"
@@ -125,6 +134,11 @@ msgstr "odoo | csv_internal_sep"
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_data_dir
 msgid "odoo | data_dir"
 msgstr "odoo | data_dir"
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_app_name
+msgid "odoo | db_app_name"
+msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_host
@@ -187,9 +201,9 @@ msgid "odoo | dbfilter"
 msgstr "odoo | dbfilter"
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_demo
-msgid "odoo | demo"
-msgstr "odoo | demo"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_default_productivity_apps
+msgid "odoo | default_productivity_apps"
+msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_dev_mode
@@ -237,19 +251,29 @@ msgid "odoo | http_port"
 msgstr "odoo | http_port"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_file_maxbytes
+msgid "odoo | import_file_maxbytes"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_file_timeout
+msgid "odoo | import_file_timeout"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_partial
 msgid "odoo | import_partial"
 msgstr "odoo | import_partial"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_url_regex
+msgid "odoo | import_url_regex"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_init
 msgid "odoo | init"
 msgstr "odoo | init"
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_language
-msgid "odoo | language"
-msgstr "odoo | language"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_hard
@@ -300,6 +324,16 @@ msgstr "odoo | limit_time_worker_cron"
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_list_db
 msgid "odoo | list_db"
 msgstr "odoo | list_db"
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_load_language
+msgid "odoo | load_language"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_config
+msgid "odoo | log_config"
+msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_db
@@ -357,6 +391,11 @@ msgid "odoo | pre_upgrade_scripts"
 msgstr "odoo | pre_upgrade_scripts"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_access_token
+msgid "odoo | proxy_access_token"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode
 msgid "odoo | proxy_mode"
 msgstr "odoo | proxy_mode"
@@ -367,14 +406,14 @@ msgid "odoo | publisher_warranty_url"
 msgstr "odoo | publisher_warranty_url"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reinit
+msgid "odoo | reinit"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reportgz
 msgid "odoo | reportgz"
 msgstr "odoo | reportgz"
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_root_path
-msgid "odoo | root_path"
-msgstr "odoo | root_path"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_running_env
@@ -402,9 +441,9 @@ msgid "odoo | server_wide_modules"
 msgstr "odoo | server_wide_modules"
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_shell_interface
-msgid "odoo | shell_interface"
-msgstr "odoo | shell_interface"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_skip_auto_install
+msgid "odoo | skip_auto_install"
+msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_password
@@ -472,21 +511,6 @@ msgid "odoo | transient_age_limit"
 msgstr "odoo | transient_age_limit"
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_in
-msgid "odoo | translate_in"
-msgstr "odoo | translate_in"
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_modules
-msgid "odoo | translate_modules"
-msgstr "odoo | translate_modules"
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_out
-msgid "odoo | translate_out"
-msgstr "odoo | translate_out"
-
-#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_unaccent
 msgid "odoo | unaccent"
 msgstr "odoo | unaccent"
@@ -517,9 +541,9 @@ msgid "odoo | websocket_rate_limit_delay"
 msgstr "odoo | websocket_rate_limit_delay"
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_without_demo
-msgid "odoo | without_demo"
-msgstr "odoo | without_demo"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_with_demo
+msgid "odoo | with_demo"
+msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_workers
@@ -580,6 +604,30 @@ msgstr "system | revision"
 #: model:ir.model.fields,field_description:server_environment.field_server_config__system_I_version
 msgid "system | version"
 msgstr "system | version"
+
+#~ msgid "odoo | demo"
+#~ msgstr "odoo | demo"
+
+#~ msgid "odoo | language"
+#~ msgstr "odoo | language"
+
+#~ msgid "odoo | root_path"
+#~ msgstr "odoo | root_path"
+
+#~ msgid "odoo | shell_interface"
+#~ msgstr "odoo | shell_interface"
+
+#~ msgid "odoo | translate_in"
+#~ msgstr "odoo | translate_in"
+
+#~ msgid "odoo | translate_modules"
+#~ msgstr "odoo | translate_modules"
+
+#~ msgid "odoo | translate_out"
+#~ msgstr "odoo | translate_out"
+
+#~ msgid "odoo | without_demo"
+#~ msgstr "odoo | without_demo"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Sidst ændret den"

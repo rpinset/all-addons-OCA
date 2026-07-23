@@ -1,3 +1,20 @@
+## 19.0.1.0.4 (2026-05-13)
+
+UI improvement:
+
+- The "needs to be validated" banner shown above tier-validated
+  documents now surfaces *who* is expected to act, when known.
+  Reads "Pending validation by John" or "Pending validation by
+  Group Accountants" instead of the generic
+  "This Record needs to be validated", with a fallback to the
+  model-name phrasing for the defensive edge case where no review
+  has reached ``pending`` yet. Reuses ``tier.review.todo_by`` so
+  every review type (individual user, group, ``res.users`` /
+  ``res.groups`` field) is handled uniformly. The banner template
+  now reads from the long-standing ``to_validate_message`` Html
+  field, which was previously defined on the model but never
+  rendered.
+
 ## 19.0.1.0.1 (2026-05-12)
 
 Fixes:

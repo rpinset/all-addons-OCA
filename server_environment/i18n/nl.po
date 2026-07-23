@@ -35,6 +35,8 @@ msgstr "Aangemaakt op"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__display_name
+#: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__display_name
+#: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__display_name
 msgid "Display Name"
 msgstr "Te tonen naam"
 
@@ -45,6 +47,8 @@ msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__id
+#: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__id
+#: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__id
 msgid "ID"
 msgstr "ID"
 
@@ -111,6 +115,11 @@ msgid "odoo | admin_passwd"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_bin_path
+msgid "odoo | bin_path"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_config
 msgid "odoo | config"
 msgstr ""
@@ -123,6 +132,11 @@ msgstr ""
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_data_dir
 msgid "odoo | data_dir"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_app_name
+msgid "odoo | db_app_name"
 msgstr ""
 
 #. module: server_environment
@@ -186,8 +200,8 @@ msgid "odoo | dbfilter"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_demo
-msgid "odoo | demo"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_default_productivity_apps
+msgid "odoo | default_productivity_apps"
 msgstr ""
 
 #. module: server_environment
@@ -236,18 +250,28 @@ msgid "odoo | http_port"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_file_maxbytes
+msgid "odoo | import_file_maxbytes"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_file_timeout
+msgid "odoo | import_file_timeout"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_partial
 msgid "odoo | import_partial"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_init
-msgid "odoo | init"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_url_regex
+msgid "odoo | import_url_regex"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_language
-msgid "odoo | language"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_init
+msgid "odoo | init"
 msgstr ""
 
 #. module: server_environment
@@ -298,6 +322,16 @@ msgstr ""
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_list_db
 msgid "odoo | list_db"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_load_language
+msgid "odoo | load_language"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_config
+msgid "odoo | log_config"
 msgstr ""
 
 #. module: server_environment
@@ -356,6 +390,11 @@ msgid "odoo | pre_upgrade_scripts"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_access_token
+msgid "odoo | proxy_access_token"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode
 msgid "odoo | proxy_mode"
 msgstr ""
@@ -366,13 +405,13 @@ msgid "odoo | publisher_warranty_url"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reportgz
-msgid "odoo | reportgz"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reinit
+msgid "odoo | reinit"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_root_path
-msgid "odoo | root_path"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reportgz
+msgid "odoo | reportgz"
 msgstr ""
 
 #. module: server_environment
@@ -401,8 +440,8 @@ msgid "odoo | server_wide_modules"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_shell_interface
-msgid "odoo | shell_interface"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_skip_auto_install
+msgid "odoo | skip_auto_install"
 msgstr ""
 
 #. module: server_environment
@@ -471,21 +510,6 @@ msgid "odoo | transient_age_limit"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_in
-msgid "odoo | translate_in"
-msgstr ""
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_modules
-msgid "odoo | translate_modules"
-msgstr ""
-
-#. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_out
-msgid "odoo | translate_out"
-msgstr ""
-
-#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_unaccent
 msgid "odoo | unaccent"
 msgstr ""
@@ -516,8 +540,8 @@ msgid "odoo | websocket_rate_limit_delay"
 msgstr ""
 
 #. module: server_environment
-#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_without_demo
-msgid "odoo | without_demo"
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_with_demo
+msgid "odoo | with_demo"
 msgstr ""
 
 #. module: server_environment

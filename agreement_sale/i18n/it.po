@@ -33,29 +33,16 @@ msgid "Agreement Type"
 msgstr "Tipo contratto"
 
 #. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Agreement types"
-msgstr "Tipi contratto"
+#: model:ir.model.fields,field_description:agreement_sale.field_agreement__display_name
+#: model:ir.model.fields,field_description:agreement_sale.field_sale_order__display_name
+msgid "Display Name"
+msgstr ""
 
 #. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Agreements"
-msgstr "Contratti"
-
-#. module: agreement_sale
-#: model:ir.model,name:agreement_sale.model_res_config_settings
-msgid "Config Settings"
-msgstr "Impostazioni configurazione"
-
-#. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Have a special kind of agreements which act as templates"
-msgstr "Hanno un tipo speciale di accordi che fungono da modelli"
-
-#. module: agreement_sale
-#: model_terms:ir.ui.view,arch_db:agreement_sale.res_config_settings_view_form
-msgid "Manage agreements by types"
-msgstr "Gestione contratti per tipo"
+#: model:ir.model.fields,field_description:agreement_sale.field_agreement__id
+#: model:ir.model.fields,field_description:agreement_sale.field_sale_order__id
+msgid "ID"
+msgstr ""
 
 #. module: agreement_sale
 #: model_terms:ir.ui.view,arch_db:agreement_sale.agreement_sale_order_form_view
@@ -67,12 +54,23 @@ msgstr "Ordini di vendita"
 msgid "Sales Order"
 msgstr "Ordine di vendita"
 
-#. module: agreement_sale
-#: model:ir.model.fields,field_description:agreement_sale.field_res_config_settings__group_use_agreement_template
-msgid "Use agreement template"
-msgstr "Utilizza modello contratto"
+#~ msgid "Agreement types"
+#~ msgstr "Tipi contratto"
 
-#. module: agreement_sale
-#: model:ir.model.fields,field_description:agreement_sale.field_res_config_settings__group_use_agreement_type
-msgid "Use agreement types"
-msgstr "Usa tipi contratto"
+#~ msgid "Agreements"
+#~ msgstr "Contratti"
+
+#~ msgid "Config Settings"
+#~ msgstr "Impostazioni configurazione"
+
+#~ msgid "Have a special kind of agreements which act as templates"
+#~ msgstr "Hanno un tipo speciale di accordi che fungono da modelli"
+
+#~ msgid "Manage agreements by types"
+#~ msgstr "Gestione contratti per tipo"
+
+#~ msgid "Use agreement template"
+#~ msgstr "Utilizza modello contratto"
+
+#~ msgid "Use agreement types"
+#~ msgstr "Usa tipi contratto"

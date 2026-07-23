@@ -3,11 +3,12 @@
 
 {
     "name": "Mail configuration with server_environment",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Tools",
     "summary": "Configure mail servers with server_environment_files",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/server-env",
     "depends": ["mail", "server_environment"],
+    "uninstall_hook": "uninstall_hook",
 }

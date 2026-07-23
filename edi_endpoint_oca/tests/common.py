@@ -86,12 +86,16 @@ class EDIEndpointTestMixin:
 
     @classmethod
     def _get_exchange_type(cls):
+        # The no-op handler satisfies the _check_direction_handlers constraint
+        # (input types need process_model_id).
+        handler_model = cls.env["ir.model"]._get("edi.oca.handler.noop")
         return cls.env["edi.exchange.type"].create(
             {
                 "name": "EDI exchange demo",
                 "code": "demo_endpoint",
                 "backend_type_id": cls.backend_type.id,
                 "direction": "input",
+                "process_model_id": handler_model.id,
             }
         )
 

@@ -27,10 +27,9 @@ class EDIExchangeType(models.Model):
 
     def _deduplicate_get_exchange_record_states(self):
         self.ensure_one()
+        configured_states = self.sudo().deduplicate_on_exchange_record_status or ""
         return {
-            state.strip()
-            for state in (self.deduplicate_on_exchange_record_status or "").split(",")
-            if state.strip()
+            state.strip() for state in configured_states.split(",") if state.strip()
         }
 
     @api.constrains("deduplicate_on_exchange_record_status")

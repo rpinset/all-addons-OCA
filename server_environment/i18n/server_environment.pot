@@ -325,6 +325,11 @@ msgid "odoo | load_language"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_config
+msgid "odoo | log_config"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_db
 msgid "odoo | log_db"
 msgstr ""

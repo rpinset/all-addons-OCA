@@ -172,11 +172,32 @@ class TierValidation(models.AbstractModel):
         return self._description
 
     def _get_to_validate_message(self):
-        return f"""<i class="fa fa-info-circle"></i> {
-            self.env._(
-                "This %s needs to be validated", self._get_to_validate_message_name()
+        """Build the contextual "needs to be validated" banner body.
+
+        When at least one review has reached ``pending`` and carries a
+        ``todo_by`` label (i.e. the assignee is known -- a user, a group
+        or a field-based reviewer), surface it inline so the reader can
+        see at a glance *who* is expected to act next, not just *that*
+        action is needed.
+
+        Falls back to the model-name phrasing -- "This Sale Order needs
+        to be validated" -- when no pending review is available yet
+        (defensive: e.g. the ``waiting`` edge state, or downstream code
+        that calls this on a fresh record).
+        """
+        icon = '<i class="fa fa-lg fa-info-circle"></i>'
+        pending = self.review_ids.filtered(lambda r: r.status == "pending")[:1]
+        if pending and pending.todo_by:
+            return self.env._(
+                "%(icon)s Pending validation by %(todo_by)s",
+                icon=icon,
+                todo_by=pending.todo_by,
             )
-        }"""
+        return self.env._(
+            "%(icon)s This %(model_name)s needs to be validated",
+            icon=icon,
+            model_name=self._get_to_validate_message_name(),
+        )
 
     def _get_validated_message(self):
         msg = f"""<i class="fa fa-thumbs-up"></i> {
@@ -190,7 +211,7 @@ class TierValidation(models.AbstractModel):
         }"""
         return self.validation_status == "rejected" and msg or ""
 
-    @api.depends("validation_status")
+    @api.depends("validation_status", "review_ids.status", "review_ids.todo_by")
     def _compute_to_validate_message(self):
         for rec in self:
             rec.to_validate_message = rec._get_to_validate_message()
@@ -531,9 +552,19 @@ class TierValidation(models.AbstractModel):
                 }
             )
 
-        user_reviews = tier_reviews.filtered(
-            lambda r: r.status == "pending" and (self.env.user in r.reviewer_ids)
+        # Only approve consecutive pending reviews (by sequence) for the
+        # current user. Stop at the first review not assigned to the user,
+        # so intermediate reviewers are not skipped.
+        sorted_pending = tier_reviews.filtered(lambda r: r.status == "pending").sorted(
+            "sequence"
         )
+        user_reviews = self.env["tier.review"]
+        for review in sorted_pending:
+            if self.env.user in review.reviewer_ids:
+                user_reviews |= review
+            else:
+                break
+
         user_reviews.write(
             {
                 "status": "approved",

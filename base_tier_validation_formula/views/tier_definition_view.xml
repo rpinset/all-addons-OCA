@@ -12,6 +12,9 @@
                     <field
                         name="reviewer_expression"
                         colspan="4"
+                        widget="code"
+                        options="{'mode': 'python'}"
+                        placeholder="# Available locals:&#10;#  - rec: current record&#10;#  - Expects a recordset of res.users&#10;rec.env.user"
                         invisible="review_type != 'expression'"
                     />
                 </group>
@@ -21,14 +24,18 @@
                     name="invisible"
                 >definition_type not in ('domain', 'domain_formula')</attribute>
             </xpath>
-            <field name="definition_domain" position="after">
-                <field
-                    name="python_code"
-                    widget="code"
-                    options="{'mode': 'python'}"
-                    invisible="definition_type not in ('formula', 'domain_formula')"
-                />
-            </field>
+            <xpath expr="//page[@name='apply']/group[@name='bottom']" position="after">
+                <group col="4">
+                    <field
+                        name="python_code"
+                        colspan="4"
+                        widget="code"
+                        options="{'mode': 'python'}"
+                        placeholder="# Available locals:&#10;#  - rec: current record&#10;True"
+                        invisible="definition_type not in ('formula', 'domain_formula')"
+                    />
+                </group>
+            </xpath>
         </field>
     </record>
 </odoo>

@@ -17,15 +17,16 @@ msgstr ""
 "X-Generator: Weblate 5.15.2\n"
 
 #. module: base_tier_validation
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
-msgid ""
-"<i class=\"fa fa-lg fa-info-circle\"/>\n"
-"                This Record needs to be\n"
-"                validated."
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid "%(icon)s Pending validation by %(todo_by)s"
 msgstr ""
-"<i class=\"fa fa-lg fa-info-circle\"/>\n"
-"                Dieser Datensatz benötigt\n"
-"                eine Bestätigung."
+
+#. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid "%(icon)s This %(model_name)s needs to be validated"
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
@@ -324,6 +325,11 @@ msgid "Fields"
 msgstr "Felder"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__exclude_requester
+msgid "Four-eyes Principle"
+msgstr ""
+
+#. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_review.py:0
 msgid "Group %s"
@@ -544,6 +550,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__pending
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__sale_order__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
@@ -564,6 +571,7 @@ msgstr "Ablehnen"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__rejected
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__sale_order__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__rejected
@@ -814,6 +822,7 @@ msgstr "Ablehnung bestätigen"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__validated
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__sale_order__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__validated
 msgid "Validated"
@@ -862,6 +871,7 @@ msgstr "Genehmigungen"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__waiting
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__sale_order__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__waiting
@@ -869,9 +879,21 @@ msgid "Waiting"
 msgstr "Warten"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_definition__exclude_requester
+msgid ""
+"When set, the user who requested the validation is removed from this tier's "
+"reviewer pool. Anyone else in the configured group can validate -- except "
+"the requester themselves. Without this flag, a requester who happens to be "
+"in the same group as the configured reviewers can auto-validate their own "
+"request. Only meaningful for review_type='group'; the form hides this field "
+"for the other review types."
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_order__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__purchase_request__validation_status__no
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__sale_order__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__stock_picking__validation_status__no
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__no
 msgid "Without validation"
@@ -933,3 +955,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "z.B. Genehmigungsstufen für..."
+
+#~ msgid ""
+#~ "<i class=\"fa fa-lg fa-info-circle\"/>\n"
+#~ "                This Record needs to be\n"
+#~ "                validated."
+#~ msgstr ""
+#~ "<i class=\"fa fa-lg fa-info-circle\"/>\n"
+#~ "                Dieser Datensatz benötigt\n"
+#~ "                eine Bestätigung."

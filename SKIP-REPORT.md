@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-07-20 16:23 UTC
+Generated 2026-07-23 22:21 UTC
 
-Total skipped: **148**
+Total skipped: **146**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **123**
+Count: **121**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -52,7 +52,6 @@ Count: **123**
 | [connector-cmis](https://github.com/OCA/connector-cmis) | [19.0](https://github.com/OCA/connector-cmis/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-ecommerce](https://github.com/OCA/connector-ecommerce) | [19.0](https://github.com/OCA/connector-ecommerce/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-infor](https://github.com/OCA/connector-infor) | [19.0](https://github.com/OCA/connector-infor/tree/19.0) | No directory with __manifest__.py at repo root |
-| [connector-interfaces](https://github.com/OCA/connector-interfaces) | [19.0](https://github.com/OCA/connector-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-jira](https://github.com/OCA/connector-jira) | [19.0](https://github.com/OCA/connector-jira/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-lengow](https://github.com/OCA/connector-lengow) | [19.0](https://github.com/OCA/connector-lengow/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | [19.0](https://github.com/OCA/connector-magento/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -80,6 +79,7 @@ Count: **123**
 | [interface-git](https://github.com/OCA/interface-git) | [19.0](https://github.com/OCA/interface-git/tree/19.0) | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | [19.0](https://github.com/OCA/iot/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | [19.0](https://github.com/OCA/l10n-argentina/tree/19.0) | No directory with __manifest__.py at repo root |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | [19.0](https://github.com/OCA/l10n-australia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-belarus](https://github.com/OCA/l10n-belarus) | [19.0](https://github.com/OCA/l10n-belarus/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | [19.0](https://github.com/OCA/l10n-bulgaria/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | [19.0](https://github.com/OCA/l10n-cambodia/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -129,7 +129,6 @@ Count: **123**
 | [sale-channel](https://github.com/OCA/sale-channel) | [19.0](https://github.com/OCA/sale-channel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | [19.0](https://github.com/OCA/sale-financial/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [19.0](https://github.com/OCA/sale-prebook/tree/19.0) | No directory with __manifest__.py at repo root |
-| [sale-promotion](https://github.com/OCA/sale-promotion) | [19.0](https://github.com/OCA/sale-promotion/tree/19.0) | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | [19.0](https://github.com/OCA/search-engine/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | [19.0](https://github.com/OCA/shift-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [19.0](https://github.com/OCA/shopfloor-app/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -146,7 +145,6 @@ Count: **123**
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [19.0](https://github.com/OCA/version-control-platform/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [19.0](https://github.com/OCA/vertical-abbey/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [19.0](https://github.com/OCA/vertical-agriculture/tree/19.0) | No directory with __manifest__.py at repo root |
-| [vertical-association](https://github.com/OCA/vertical-association) | [19.0](https://github.com/OCA/vertical-association/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | [19.0](https://github.com/OCA/vertical-community/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | [19.0](https://github.com/OCA/vertical-construction/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [19.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/19.0) | No directory with __manifest__.py at repo root |
