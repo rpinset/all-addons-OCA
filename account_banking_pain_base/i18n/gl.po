@@ -904,7 +904,7 @@ msgstr ""
 "SAIBA:\n"
 "{bic_list}\n"
 "\n"
-"Patrón SAIBA: {saiba_pattern}"
+"Patrón SAIBA: {sepa_pattern}"
 
 #. module: account_banking_pain_base
 #. odoo-python

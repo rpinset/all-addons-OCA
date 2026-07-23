@@ -5,7 +5,7 @@
 {
     "name": "Stock Release Channels for Delivery Dates",
     "summary": "Set release channels for specific delivery dates",
-    "version": "16.0.2.0.1",
+    "version": "16.0.2.1.0",
     "development_status": "Beta",
     "license": "AGPL-3",
     "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
@@ -13,6 +13,7 @@
     "website": "https://github.com/OCA/wms",
     "depends": [
         "stock_release_channel",
+        "stock_release_channel_shipment_lead_time",
     ],
     "data": [
         "views/res_partner.xml",

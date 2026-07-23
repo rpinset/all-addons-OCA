@@ -166,6 +166,11 @@ msgid "Payslip"
 msgstr ""
 
 #. module: payroll_contract_advantages
+#: model:ir.model.constraint,message:payroll_contract_advantages.constraint_hr_contract_advantage_uniq_contract_template
+msgid "This advantage template is already set on this contract."
+msgstr ""
+
+#. module: payroll_contract_advantages
 #: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage__advantage_upper_bound
 #: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__upper_bound
 msgid "Upper Bound"

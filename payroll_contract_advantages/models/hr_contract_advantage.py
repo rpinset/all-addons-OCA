@@ -43,3 +43,11 @@ class HrContractAdvantage(models.Model):
                     raise ValidationError(
                         _("Advantage amount can't be less than lower bound limit.")
                     )
+
+    _sql_constraints = [
+        (
+            "uniq_contract_template",
+            "unique(contract_id, advantage_template_id)",
+            "This advantage template is already set on this contract.",
+        ),
+    ]
