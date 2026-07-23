@@ -1,12 +1,12 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-07-20 16:20 UTC
+Generated 2026-07-23 22:19 UTC
 
-Total skipped: **129**
+Total skipped: **130**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **32**
+Count: **33**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -14,6 +14,7 @@ Count: **32**
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [17.0](https://github.com/OCA/ansible-odoo/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [17.0](https://github.com/OCA/bank-payment-alternative/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [17.0](https://github.com/OCA/connector-magento-php-extension/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | [17.0](https://github.com/OCA/l10n-australia/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | [17.0](https://github.com/OCA/maintainer-tools/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [mass-mailing](https://github.com/OCA/mass-mailing) | [17.0](https://github.com/OCA/mass-mailing/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | [17.0](https://github.com/OCA/mirrors-flake8/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
