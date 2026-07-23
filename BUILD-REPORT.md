@@ -1,6 +1,6 @@
 # Build report — `13.0`
 
-Generated 2026-07-20 16:16 UTC
+Generated 2026-07-23 22:16 UTC
 
 ## Skipped repos
 
@@ -40,6 +40,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
+| [l10n-australia](https://github.com/OCA/l10n-australia) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-belarus](https://github.com/OCA/l10n-belarus) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
