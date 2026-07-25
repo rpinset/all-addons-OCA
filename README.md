@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-07-23 22:19 UTC** (elapsed 168s)
+Last build: **2026-07-25 06:05 UTC** (elapsed 88s)
 
 - Repos integrated: **142**
-- Canonical modules: **3098**
+- Canonical modules: **3099**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **114**
 
@@ -55,7 +55,7 @@ Last build: **2026-07-23 22:19 UTC** (elapsed 168s)
 | [field-service](https://github.com/OCA/field-service) | 29 | 0d2a803 2026-07-08 OCA-git-bot [BOT] post-merge updates |
 | [fleet](https://github.com/OCA/fleet) | 17 | 3f88e12 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [geospatial](https://github.com/OCA/geospatial) | 10 | df08750 2026-07-03 Maxime Chambreuil Merge pull request #442 from PyTech-SRL/16.0-copier |
-| [helpdesk](https://github.com/OCA/helpdesk) | 25 | 11c82ef 2026-07-20 mymage Translated using Weblate (Italian) |
+| [helpdesk](https://github.com/OCA/helpdesk) | 26 | d2b93e1 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [hr](https://github.com/OCA/hr) | 40 | d94aa06 2026-07-05 Cándido Martínez Translated using Weblate (Galician) |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 9 | 8d61293 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [hr-expense](https://github.com/OCA/hr-expense) | 11 | 0f27443 2026-06-10 mymage Translated using Weblate (Italian) |
@@ -67,7 +67,7 @@ Last build: **2026-07-23 22:19 UTC** (elapsed 168s)
 | [knowledge](https://github.com/OCA/knowledge) | 14 | 8f372fe 2026-06-20 Pedro M. Baeza Merge pull request #623 from ledoent/16.0-copier-update-v143 |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 3 | 66b6448 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 13 | 7d743d8 2026-04-09 Weblate Update translation files |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 62 | ad8b261 2026-07-23 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 62 | ab11ad2 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | 5 | a3e16a7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 30 | 7cc72c6 2026-04-29 OCA-git-bot [BOT] post-merge updates |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 4 | 2d9524d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
