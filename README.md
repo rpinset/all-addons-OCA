@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-23 22:16 UTC** (elapsed 70s)
+Last build: **2026-07-25 06:03 UTC** (elapsed 69s)
 
 - Repos integrated: **117**
-- Canonical modules: **2097**
+- Canonical modules: **2098**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **139**
 
@@ -100,7 +100,7 @@ Last build: **2026-07-23 22:16 UTC** (elapsed 70s)
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 115 | bf96290 2026-06-30 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 116 | 174c218 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
