@@ -1355,19 +1355,40 @@ class StockDeliveryNoteInvoicingTest(StockDeliveryNoteCommon):
         invoice = sales_order.invoice_ids
         invoice.action_post()
         self.assertEqual(invoice.state, "posted")
-        self.assertEqual(
-            invoice.invoice_line_ids.filtered(
-                lambda inv_line: inv_line.product_id.id
-                == self.right_corner_desk_line[2]["product_id"]
-            ).quantity,
-            2,
-        )
-        self.assertEqual(
-            invoice.invoice_line_ids.filtered(
-                lambda inv_line: inv_line.product_id.id
-                == self.desk_combination_line[2]["product_id"]
-            ).quantity,
-            1,
+        self.assertRecordValues(
+            invoice.invoice_line_ids.sorted("sequence"),
+            [
+                {
+                    "note_dn": True,
+                    "delivery_note_id": dn.id,
+                    "product_id": False,
+                    "quantity": 0,
+                },
+                {
+                    "note_dn": False,
+                    "delivery_note_id": dn.id,
+                    "product_id": self.right_corner_desk_line[2]["product_id"],
+                    "quantity": 1,
+                },
+                {
+                    "note_dn": True,
+                    "delivery_note_id": back_dn.id,
+                    "product_id": False,
+                    "quantity": 0,
+                },
+                {
+                    "note_dn": False,
+                    "delivery_note_id": back_dn.id,
+                    "product_id": self.right_corner_desk_line[2]["product_id"],
+                    "quantity": 1,
+                },
+                {
+                    "note_dn": False,
+                    "delivery_note_id": back_dn.id,
+                    "product_id": self.desk_combination_line[2]["product_id"],
+                    "quantity": 1,
+                },
+            ],
         )
         self.assertEqual(dn.invoice_status, "invoiced")
         self.assertEqual(back_dn.invoice_status, "invoiced")
@@ -1473,3 +1494,76 @@ class StockDeliveryNoteInvoicingTest(StockDeliveryNoteCommon):
         self.assertIn(dn_2.date.strftime(DATE_FORMAT), label_so_2.name)
         self.assertEqual(product_line_2.product_id, so_2.order_line.product_id)
         self.assertEqual(product_line_2.quantity, 2)
+
+    def test_multiple_dn_invoice_one(self):
+        """Create multiple Delivery Notes for the same Sale Order,
+        and invoice only one Delivery Note.
+        Only the lines of the invoiced Delivery Note
+        are present in the invoice.
+        """
+        # Order 2 products, but deliver only 1
+        sales_order = self.create_sales_order(
+            [
+                self.right_corner_desk_line,  # 2
+            ],
+        )
+        sales_order.action_confirm()
+        picking = sales_order.picking_ids
+        picking.move_lines.quantity_done = 1
+
+        # Confirm the picking as-is: create backorder
+        res_dict = picking.button_validate()
+        wizard = Form(
+            self.env[(res_dict.get("res_model"))].with_context(res_dict["context"])
+        ).save()
+        wizard.process()
+
+        # Create Delivery Note
+        res_dict = picking.action_delivery_note_create()
+        wizard = Form(
+            self.env[(res_dict.get("res_model"))].with_context(res_dict["context"])
+        ).save()
+        wizard.confirm()
+        dn = picking.delivery_note_id
+        dn.action_confirm()
+        dn.action_done()
+
+        # Create Delivery Note for backorder
+        picking_backorder = self.env["stock.picking"].search(
+            [("backorder_id", "=", picking.id)]
+        )
+        picking_backorder.move_lines.quantity_done = 1
+        picking_backorder.button_validate()
+        back_res_dict = picking_backorder.action_delivery_note_create()
+        back_wizard = Form(
+            self.env[(back_res_dict.get("res_model"))].with_context(
+                back_res_dict["context"]
+            )
+        ).save()
+        back_wizard.confirm()
+        back_dn = picking_backorder.delivery_note_id
+        back_dn.action_confirm()
+        back_dn.action_done()
+
+        dn.action_invoice()
+        invoice = sales_order.invoice_ids
+        invoice.action_post()
+        self.assertRecordValues(
+            invoice.invoice_line_ids.sorted("sequence"),
+            [
+                {
+                    "note_dn": True,
+                    "delivery_note_id": dn.id,
+                    "product_id": False,
+                    "quantity": 0,
+                },
+                {
+                    "note_dn": False,
+                    "delivery_note_id": dn.id,
+                    "product_id": self.right_corner_desk_line[2]["product_id"],
+                    "quantity": 1,
+                },
+            ],
+        )
+        self.assertEqual(dn.invoice_status, "invoiced")
+        self.assertEqual(back_dn.invoice_status, "to invoice")

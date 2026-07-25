@@ -6,9 +6,9 @@
 # @author: Matteo Bilotta <mbilotta@linkeurope.it>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import _, fields, models
+from odoo import _, api, fields, models
 
-from .stock_delivery_note import DATE_FORMAT, DOMAIN_INVOICE_STATUSES
+from .stock_delivery_note import DATE_FORMAT
 
 
 class AccountInvoice(models.Model):
@@ -20,6 +20,9 @@ class AccountInvoice(models.Model):
         "invoice_id",
         "delivery_note_id",
         string="Delivery Notes",
+        compute="_compute_delivery_note_ids",
+        store=True,
+        readonly=False,
         copy=False,
     )
 
@@ -28,6 +31,13 @@ class AccountInvoice(models.Model):
     def _compute_delivery_note_count(self):
         for invoice in self:
             invoice.delivery_note_count = len(invoice.delivery_note_ids)
+
+    @api.depends(
+        "line_ids.delivery_note_id",
+    )
+    def _compute_delivery_note_ids(self):
+        for move in self:
+            move.delivery_note_ids = move.line_ids.delivery_note_id
 
     def goto_delivery_notes(self, **kwargs):
         delivery_notes = self.mapped("delivery_note_ids")
@@ -124,28 +134,10 @@ class AccountInvoice(models.Model):
                 )
             else:
                 sequence = 1
-                done_invoice_lines = self.env["account.move.line"]
                 for dn in invoice.mapped("delivery_note_ids").sorted(key="name"):
                     dn_invoice_lines = invoice.invoice_line_ids.filtered(
-                        lambda x: x not in done_invoice_lines
-                        and dn
-                        in x.mapped(
-                            "sale_line_ids.delivery_note_line_ids.delivery_note_id"
-                        )
-                        # fixme test invoice from 2 sale lines
+                        lambda x: dn == x.delivery_note_id
                     )
-                    done_invoice_lines |= dn_invoice_lines
-                    for note_line in dn.line_ids.filtered(
-                        lambda li: li.invoice_status == DOMAIN_INVOICE_STATUSES[2]
-                    ):
-                        for invoice_line in dn_invoice_lines:
-                            if (
-                                note_line
-                                in invoice_line.sale_line_ids.delivery_note_line_ids
-                            ):
-                                invoice_line.delivery_note_id = (
-                                    note_line.delivery_note_id.id
-                                )
                     if dn_invoice_lines:
                         new_lines.append(
                             (
@@ -190,6 +182,24 @@ class AccountInvoiceLine(models.Model):
     _inherit = "account.move.line"
 
     delivery_note_id = fields.Many2one(
-        "stock.delivery.note", string="Delivery Note", readonly=True, copy=False
+        comodel_name="stock.delivery.note",
+        string="Delivery Note",
+        compute="_compute_delivery_note_id",
+        readonly=False,
+        store=True,
+        copy=False,
+    )
+    delivery_note_line_id = fields.Many2one(
+        comodel_name="stock.delivery.note.line",
+        string="Delivery Note Line",
+        readonly=True,
+        copy=False,
     )
     note_dn = fields.Boolean(string="Note DN")
+
+    @api.depends(
+        "delivery_note_line_id",
+    )
+    def _compute_delivery_note_id(self):
+        for line in self:
+            line.delivery_note_id = line.delivery_note_line_id.delivery_note_id

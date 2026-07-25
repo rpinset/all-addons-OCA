@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-07-23 22:13 UTC** (elapsed 92s)
+Last build: **2026-07-25 06:02 UTC** (elapsed 217s)
 
 - Repos integrated: **140**
 - Canonical modules: **2911**
@@ -74,7 +74,7 @@ Last build: **2026-07-23 22:13 UTC** (elapsed 92s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 165878d 2026-07-06 OCA-git-bot [BOT] post-merge updates |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | b58eb15 2026-07-24 Weblate Update translation files |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
@@ -118,7 +118,7 @@ Last build: **2026-07-23 22:13 UTC** (elapsed 92s)
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 150 | 29241b7 2026-07-23 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 150 | 95fe14a 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
