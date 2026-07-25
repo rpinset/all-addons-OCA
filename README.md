@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-07-23 22:19 UTC** (elapsed 84s)
+Last build: **2026-07-25 06:06 UTC** (elapsed 171s)
 
 - Repos integrated: **126**
-- Canonical modules: **1922**
+- Canonical modules: **1924**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **130**
 
@@ -19,7 +19,7 @@ Last build: **2026-07-23 22:19 UTC** (elapsed 84s)
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 32 | cf2dc6b 2026-07-07 mymage Translated using Weblate (Italian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 9 | ecbea87 2026-05-07 OCA-git-bot [BOT] post-merge updates |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 7 | e3efc9e 2026-06-12 OCA-git-bot [BOT] post-merge updates |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | 39 | ea6ebd8 2026-06-18 OCA-git-bot [BOT] post-merge updates |
+| [account-invoicing](https://github.com/OCA/account-invoicing) | 40 | 591b682 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [account-payment](https://github.com/OCA/account-payment) | 17 | 90d6887 2026-05-29 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 6 | 61172f2 2026-01-22 OCA-git-bot [BOT] post-merge updates |
 | [agreement](https://github.com/OCA/agreement) | 6 | a52ca76 2026-06-26 OCA-git-bot [BOT] post-merge updates |
@@ -37,7 +37,7 @@ Last build: **2026-07-23 22:19 UTC** (elapsed 84s)
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 3 | 8fa3e45 2026-06-11 OCA-git-bot [BOT] post-merge updates |
 | [contract](https://github.com/OCA/contract) | 15 | 2952e28 2026-04-28 OCA-git-bot [BOT] post-merge updates |
 | [credit-control](https://github.com/OCA/credit-control) | 10 | d9748a0 2026-05-26 mymage Translated using Weblate (Italian) |
-| [crm](https://github.com/OCA/crm) | 19 | 895d794 2026-07-22 OCA-git-bot [BOT] post-merge updates |
+| [crm](https://github.com/OCA/crm) | 20 | 34a176d 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [currency](https://github.com/OCA/currency) | 2 | 87c1e54 2025-11-26 Ryoko Tsuda Translated using Weblate (Japanese) |
 | [data-protection](https://github.com/OCA/data-protection) | 3 | 20bb4c2 2026-05-09 Peter Schubert Translated using Weblate (German) |
 | [ddmrp](https://github.com/OCA/ddmrp) | 12 | df044f3 2026-07-03 OCA-git-bot [BOT] post-merge updates |
