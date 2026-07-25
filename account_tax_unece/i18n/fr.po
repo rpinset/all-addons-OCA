@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-06-05 16:10+0000\n"
+"PO-Revision-Date: 2026-07-25 01:46+0000\n"
 "Last-Translator: Alexis de Lattre <alexis@via.ecp.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_tax_unece
 #: model:ir.model,name:account_tax_unece.model_res_company
@@ -47,6 +47,8 @@ msgid ""
 "Select the VAT Exemption Reason Code (VATEX) of the official nomenclature of "
 "the European Union."
 msgstr ""
+"Sélectionnez le code de motif d'exonération (VATEX) au sein de la "
+"nomenclature officielle de l'Union Européenne."
 
 #. module: account_tax_unece
 #: model:ir.model,name:account_tax_unece.model_account_tax
@@ -78,12 +80,12 @@ msgstr "Code de la catégorie UNECE"
 #. module: account_tax_unece
 #: model:ir.model.fields,field_description:account_tax_unece.field_account_tax__unece_categ_id
 msgid "UNECE Tax Category"
-msgstr "Catégorie de taxe de l'UNECE"
+msgstr "Catégorie de taxe UNECE"
 
 #. module: account_tax_unece
 #: model:ir.model.fields,field_description:account_tax_unece.field_account_tax__unece_type_id
 msgid "UNECE Tax Type"
-msgstr "Type de taxe de l'UNECE"
+msgstr "Type de taxe UNECE"
 
 #. module: account_tax_unece
 #: model:ir.model.fields,field_description:account_tax_unece.field_account_tax__unece_type_code
@@ -98,22 +100,22 @@ msgstr "Nomenclatures UNECE"
 #. module: account_tax_unece
 #: model:ir.model.fields,field_description:account_tax_unece.field_account_tax__unece_vatex_id
 msgid "VAT Exemption Reason"
-msgstr ""
+msgstr "Motif d'exonération de TVA"
 
 #. module: account_tax_unece
 #: model:ir.model.fields,field_description:account_tax_unece.field_account_tax__unece_vatex_code
 msgid "VAT Exemption Reason Code"
-msgstr ""
+msgstr "Code du motif d'exonération de TVA"
 
 #. module: account_tax_unece
 #: model:ir.model.fields.selection,name:account_tax_unece.selection__unece_code_list__type__tax_vatex
 msgid "VAT Exemption Reason Codes"
-msgstr ""
+msgstr "Codes des motifs d'exonération de TVA"
 
 #. module: account_tax_unece
 #: model_terms:ir.ui.view,arch_db:account_tax_unece.unece_code_list_search
 msgid "VAT Exemption Reasons"
-msgstr ""
+msgstr "Motifs d'exonération de TVA"
 
 #~ msgid "Templates for Taxes"
 #~ msgstr "Modèles de taxes"

@@ -28,8 +28,8 @@ msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-13 23:25+0000\n"
-"PO-Revision-Date: 2023-12-28 22:35+0000\n"
-"Last-Translator: Adriano Prado <adrianojprado@gmail.com>\n"
+"PO-Revision-Date: 2026-07-24 20:30+0000\n"
+"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/OCA-account-"
 "financial-tools-8-0/language/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -37,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_asset_management
 #. odoo-python
@@ -1295,7 +1295,7 @@ msgstr "Perfil"
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__prorata
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__prorata
 msgid "Prorata Temporis"
-msgstr "Prorata Temporis"
+msgstr "Pró-rata Temporis"
 
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.view_account_asset_report_search
@@ -1509,13 +1509,12 @@ msgstr ""
 #. module: account_asset_management
 #. odoo-python
 #: code:addons/account_asset_management/models/account_asset.py:0
-#, fuzzy
 msgid ""
 "The '_compute_year_amount' method is only intended for Time Method 'Number "
 "of Years'."
 msgstr ""
 "O método '_compute_year_amount' somente é destinado ao Método Temporal "
-"'Número de Anos'."
+"'Number of Years'."
 
 #. module: account_asset_management
 #. odoo-python
@@ -1580,12 +1579,11 @@ msgstr "A data de remoção deve ser posterior à última data de depreciação.
 #. module: account_asset_management
 #: model:ir.model.fields,help:account_asset_management.field_account_asset__depreciation_base
 #: model:ir.model.fields,help:account_asset_management.field_account_asset_line__depreciation_base
-#, fuzzy
 msgid ""
 "This amount represent the depreciation base of the asset (Purchase Value - "
 "Salvage Value)."
 msgstr ""
-"Esta quantia representa a base de depreciação do ativo (Valor de Compra - "
+"Este valor representa a base de depreciação do ativo (Valor de Compra - "
 "Valor Residual)."
 
 #. module: account_asset_management
