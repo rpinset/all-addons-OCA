@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='inter_company']" position="after">
+                <setting
+                    id="multicompany_reporting_currency"
+                    string="Multicompany Reporting Currency"
+                    help="Set the multicompany reporting currency"
+                >
+                    <div
+                        id="multicompany_reporting_currency_setup"
+                        class="content-group"
+                    >
+                        <div class="mt16">
+                            <!--
+                                The field is added twice:
+                                - once as editable for users in ``base.group_multi_currency``
+                                - once as readonly for users not in ``base.group_multi_currency``
+                            -->
+                            <field
+                                name="multicompany_reporting_currency"
+                                class="oe_inline"
+                                groups="base.group_multi_currency"
+                                options="{'no_create': True}"
+                            />
+                            <field
+                                name="multicompany_reporting_currency"
+                                class="oe_inline"
+                                groups="!base.group_multi_currency"
+                                readonly="1"
+                                options="{'no_open': True}"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        id="multicompany_reporting_currency_warning"
+                        class="text-muted fst-italic"
+                        groups="base.group_multi_currency"
+                    >
+                        <p>
+                            Changing the multicompany reporting currency may affect lots of records,
+                            and trigger heavy recomputations. Please do not change this value unless
+                            it is absolutely necessary.
+                        </p>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

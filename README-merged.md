@@ -225,7 +225,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 19.0.0.0.16 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 19.0.0.0.17 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 19.0.1.0.2 |  | Compute tax balances based on date range
 [partner_statement](partner_statement/) | 19.0.1.1.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
@@ -1757,6 +1757,7 @@ addon | version | maintainers | summary
 [event_registration_partner_unique](event_registration_partner_unique/) | 19.0.1.0.0 |  | Enforces 1 registration per partner and event
 [event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 19.0.1.0.0 |  | Free tickets no invoiceable
 [partner_event](partner_event/) | 19.0.1.0.1 |  | Link partner to events
+[website_event_membership_restriction](website_event_membership_restriction/) | 19.0.1.0.0 |  | Restrict event registration to members only
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 19.0.1.0.0 |  | Events Questions conditional to the chosen ticket
 [website_event_require_legal](website_event_require_legal/) | 19.0.1.0.0 |  | Website Event Require Legal
 
@@ -2876,7 +2877,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 19.0.0.8.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 19.0.0.3.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.2.5.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.2.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 19.0.0.4.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 19.0.0.9.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -2966,6 +2967,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 19.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 19.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 19.0.1.0.0 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_toponyms](l10n_es_toponyms/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 19.0.1.0.1 |  | Libros registro del IVA y del IRPF
 
@@ -4234,6 +4236,7 @@ addon | version | maintainers | summary
 [purchase_force_invoiced](purchase_force_invoiced/) | 19.0.1.0.1 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_method](purchase_invoice_method/) | 19.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_landed_cost](purchase_landed_cost/) | 19.0.1.0.0 |  | Purchase cost distribution
+[purchase_last_price_info](purchase_last_price_info/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Purchase Product Last Price Info
 [purchase_line_reassign](purchase_line_reassign/) | 19.0.1.0.0 |  | Purchase Line Reassign
 [purchase_no_rfq](purchase_no_rfq/) | 19.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Purchase Order - No Request For Quotation
 [purchase_order_approved](purchase_order_approved/) | 19.0.1.0.2 |  | Add a new state 'Approved' in purchase orders.
@@ -4724,6 +4727,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_multicompany_reporting_currency](base_multicompany_reporting_currency/) | 19.0.1.0.0 |  | Adds the possibility to specify Multicompany Reporting Currency
 [sale_order_line_position](sale_order_line_position/) | 19.0.1.0.0 |  | Adds position number on sale order line.
 [sale_order_report_hide_tax](sale_order_report_hide_tax/) | 19.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Hide taxes column when they don't add value
 [sale_order_report_product_image](sale_order_report_product_image/) | 19.0.1.0.0 |  | Show product images on Sale documents
@@ -4777,6 +4781,7 @@ addon | version | maintainers | summary
 [partner_sale_pivot](partner_sale_pivot/) | 19.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
 [portal_sale_list_extra_info](portal_sale_list_extra_info/) | 19.0.1.0.0 |  | Adds additional fields 'client_order_ref' and 'amount_untaxed' to the portal view. It also makes it easier to add other fields in the future.
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 19.0.1.0.0 |  | Portal Sale Personal Data Only
+[product_customerinfo_sale](product_customerinfo_sale/) | 19.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
 [product_form_sale_link](product_form_sale_link/) | 19.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
 [sale_advance_payment](sale_advance_payment/) | 19.0.1.0.0 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_automatic_workflow](sale_automatic_workflow/) | 19.0.1.1.1 |  | Sale Automatic Workflow
@@ -4798,6 +4803,7 @@ addon | version | maintainers | summary
 [sale_invoice_to_partner](sale_invoice_to_partner/) | 19.0.1.0.0 |  | Set on a customer a separate partner in charge of receiving and paying its invoices, used as the invoice address on sales orders.
 [sale_last_price_info](sale_last_price_info/) | 19.0.1.0.0 |  | Product Last Price Info - Sale
 [sale_manual_delivery](sale_manual_delivery/) | 19.0.1.0.0 |  | Create your deliveries manually
+[sale_order_approval_block](sale_order_approval_block/) | 19.0.1.0.0 |  | Block sale orders with approval reasons
 [sale_order_archive](sale_order_archive/) | 19.0.1.0.0 |  | Archive Sale Orders
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 19.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 19.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
@@ -4838,6 +4844,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 19.0.1.0.0 |  | Sale Sub State
 [sale_transaction_form_link](sale_transaction_form_link/) | 19.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display a link to payment transactions on Sale Order form view.
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 19.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Automatically cancel quotations after validity period.
+[sales_team_security](sales_team_security/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | New group for seeing only sales channel's documents
 
 [//]: # (end addons)
 
@@ -5469,6 +5476,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[stock_delivery_note](stock_delivery_note/) | 19.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_move_value_report](stock_move_value_report/) | 19.0.1.0.0 |  | Stock Move Cost Value Report
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 19.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
 [stock_picking_report_valued](stock_picking_report_valued/) | 19.0.1.0.1 |  | Adding Valued Picking on Delivery Slip report
@@ -5961,6 +5969,7 @@ addon | version | maintainers | summary
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 19.0.1.0.0 |  | Set delegate membership on the contract
 [membership](membership/) | 19.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Members
 [membership_delegated_partner](membership_delegated_partner/) | 19.0.1.0.0 |  | Delegate membership on a specific partner
+[membership_variable_period](membership_variable_period/) | 19.0.1.0.0 |  | Variable period for memberships
 
 [//]: # (end addons)
 

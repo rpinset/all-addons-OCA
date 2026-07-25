@@ -1,0 +1,1 @@
+from . import test_base_multicompany_reporting_currency

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-13 20:02+0000\n"
+"PO-Revision-Date: 2026-07-24 17:40+0000\n"
 "Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -18,12 +18,17 @@ msgstr ""
 
 #. module: base_tier_validation_formula
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_formula.tier_definition_view_form
+#, fuzzy
 msgid ""
 "# Available locals:\n"
 "#  - rec: current record\n"
 "#  - Expects a recordset of res.users\n"
 "rec.env.user"
 msgstr ""
+"# Available locals:\n"
+"#  - rec: current record\n"
+"#  - Expects a recordset of res.users\n"
+"rec.env.user"
 
 #. module: base_tier_validation_formula
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_formula.tier_definition_view_form

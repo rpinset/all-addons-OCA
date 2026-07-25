@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-24 20:46+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__can_forward
+msgid "Can Forward"
+msgstr "Kan doorsturen"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__can_review
+msgid "Can Review"
+msgstr "Kan beoordelen"
+
+#. module: purchase_request_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_form_inherit_tier
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__display_name
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_tier_definition__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__has_comment
+msgid "Has Comment"
+msgstr "Heeft opmerking"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__hide_reviews
+msgid "Hide Reviews"
+msgstr "Beoordelingen verbergen"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__id
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_tier_definition__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,help:purchase_request_tier_validation.field_purchase_request__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr ""
+"Indien ingeschakeld kan de beoordelaar een opmerking achterlaten bij de "
+"beoordeling."
+
+#. module: purchase_request_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_filter
+msgid "My Purchases to review"
+msgstr "Mijn te beoordelen inkoopaanvragen"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__need_validation
+msgid "Need Validation"
+msgstr "Validatie nodig"
+
+#. module: purchase_request_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_filter
+msgid "Needs my Review"
+msgstr "Vereist mijn beoordeling"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__next_review
+msgid "Next Review"
+msgstr "Volgende beoordeling"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model,name:purchase_request_tier_validation.model_purchase_request
+msgid "Purchase Request"
+msgstr "Inkoopaanvraag"
+
+#. module: purchase_request_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_filter
+msgid "Purchase Requests validated and ready to be confirmed"
+msgstr "Inkoopaanvragen gevalideerd en gereed om te worden bevestigd"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__rejected_message
+msgid "Rejected Message"
+msgstr "Bericht bij afwijzing"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__require_authentication
+msgid "Require Authentication"
+msgstr "Authenticatie vereist"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__reviewer_ids
+msgid "Reviewers"
+msgstr "Beoordelaars"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model,name:purchase_request_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "Niveaudefinitie"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__to_validate_message
+msgid "To Validate Message"
+msgstr "Bericht voor validatie"
+
+#. module: purchase_request_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_filter
+msgid "Validated"
+msgstr "Gevalideerd"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__validated_message
+msgid "Validated Message"
+msgstr "Bericht bij goedkeuring"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__validation_status
+msgid "Validation Status"
+msgstr "Validatiestatus"
+
+#. module: purchase_request_tier_validation
+#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__review_ids
+msgid "Validations"
+msgstr "Validaties"
