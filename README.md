@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-07-25 06:00 UTC** (elapsed 135s)
+Last build: **2026-07-28 16:27 UTC** (elapsed 211s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -28,7 +28,7 @@ Last build: **2026-07-25 06:00 UTC** (elapsed 135s)
 | [brand](https://github.com/OCA/brand) | 13 | 53435d0 2025-01-01 OCA-git-bot [ADD] setup.py |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | 04ad64a 2023-10-09 Weblate Update translation files |
 | [calendar](https://github.com/OCA/calendar) | 3 | 9fd17f4 2023-10-12 Eugeni Chafer Translated using Weblate (Catalan) |
-| [commission](https://github.com/OCA/commission) | 9 | 28f4c15 2026-04-13 mymage Translated using Weblate (Italian) |
+| [commission](https://github.com/OCA/commission) | 9 | 165d4c4 2026-07-27 mymage Translated using Weblate (Italian) |
 | [community-data-files](https://github.com/OCA/community-data-files) | 9 | 7fdb377 2024-05-06 mymage Translated using Weblate (Italian) |
 | [connector](https://github.com/OCA/connector) | 6 | 07cf744 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [connector-cmis](https://github.com/OCA/connector-cmis) | 1 | 4dce5d4 2023-09-03 OCA-git-bot [UPD] README.rst |
@@ -49,7 +49,7 @@ Last build: **2026-07-25 06:00 UTC** (elapsed 135s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | 6cb468b 2024-05-08 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 23 | 57b731e 2025-09-02 Weblate Update translation files |
 | [event](https://github.com/OCA/event) | 30 | af4f23b 2024-10-15 mymage Translated using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 46 | 7b518e5 2026-05-29 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 46 | 9cf8871 2026-07-27 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 16 | b4b1fbd 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 15 | 83a10be 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 89d6d40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -95,7 +95,7 @@ Last build: **2026-07-25 06:00 UTC** (elapsed 135s)
 | [project-agile](https://github.com/OCA/project-agile) | 1 | 0e81de6 2023-10-10 Weblate Update translation files |
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 5077fcd 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 3 | 8be9f39 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 71 | f5dd2fc 2025-07-15 mymage Translated using Weblate (Italian) |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 71 | cdda310 2026-07-27 mymage Translated using Weblate (Italian) |
 | [queue](https://github.com/OCA/queue) | 10 | 1f41399 2026-07-21 OCA-git-bot [UPD] README.rst |
 | [report-print-send](https://github.com/OCA/report-print-send) | 5 | 5035ec3 2024-01-15 mymage Translated using Weblate (Italian) |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 27 | b18ab36 2025-11-25 mymage Translated using Weblate (Italian) |
