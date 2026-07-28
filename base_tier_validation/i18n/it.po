@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-19 13:50+0000\n"
+"PO-Revision-Date: 2026-07-27 11:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -20,13 +20,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "%(icon)s Pending validation by %(todo_by)s"
-msgstr ""
+msgstr "%(icon)s Validazione in sospeso da %(todo_by)s"
 
 #. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "%(icon)s This %(model_name)s needs to be validated"
-msgstr ""
+msgstr "%(icon)s Questo %(model_name)s deve essere validato"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
@@ -325,7 +325,7 @@ msgstr "Campi"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__exclude_requester
 msgid "Four-eyes Principle"
-msgstr ""
+msgstr "Principio dei quattro occhi"
 
 #. module: base_tier_validation
 #. odoo-python
@@ -881,6 +881,13 @@ msgid ""
 "request. Only meaningful for review_type='group'; the form hides this field "
 "for the other review types."
 msgstr ""
+"Quando impostato, l'utente che ha richiesto la convalida viene rimosso dal "
+"gruppo di revisori di questo livello. Chiunque altro nel gruppo configurato "
+"può convalidare, ad eccezione del richiedente stesso. Senza questo flag, un "
+"richiedente che si trova nello stesso gruppo dei revisori configurati può "
+"convalidare automaticamente la propria richiesta. Rilevante solo per "
+"review_type='group'; il modulo nasconde questo campo per gli altri tipi di "
+"revisione."
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no

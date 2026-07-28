@@ -1,0 +1,226 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_ticket_close_inactive
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-28 15:46+0000\n"
+"Last-Translator: sobhan hasanzade <sobhanhsnzde4579@gmail.com>\n"
+"Language-Team: none\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,body_html:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid ""
+"<table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <!-- HEADER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                                <tr>\n"
+"                                    <td valign=\"middle\" align=\"right\">\n"
+"                                        <img t-att-src=\"'/logo.png?company=%s' % object.company_id.id\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"'%s' % object.company_id.name\"/>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- CONTENT -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <td valign=\"top\" style=\"font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"                                        <p>Ticket with subject \"<t t-out=\"object.display_name\"/>\" will be closed in <t t-out=\"ctx.get('remaining_days')\"/> days if it is not updated .</p>\n"
+"                                    </td>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"                                <tr>\n"
+"                                    <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                                        <t t-out=\"object.company_id.phone\"/>\n"
+"                                    </td>\n"
+"                                    <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                                        <t t-out=\"object.company_id.email\"/>\n"
+"                                    </td>\n"
+"                                    <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"                                        <t t-out=\"object.company_id.website\"/>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        "
+msgstr ""
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_tickets
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Automatic closure of inactive tickets"
+msgstr "بسته شدن خودکار تیکت‌های غیرفعال"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.actions.server,name:helpdesk_ticket_close_inactive.ir_cron_close_inactive_tickets_ir_actions_server
+msgid "Close Inactive Tickets"
+msgstr "بستن تیکت‌های غیرفعال"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__closing_ticket_stage
+msgid "Closing Stage"
+msgstr "مرحله بسته‌شدن"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_mail_template_id
+msgid "Closing email template"
+msgstr "بسته شدن قالب ایمیل"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__display_name
+msgid "Display Name"
+msgstr "نام نمایشی"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,name:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid "Helpdesk Inactivity Warning Ticket Notification Email"
+msgstr "ایمیل هشدار عدم فعالیت تیکت پشتیبانی"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model,name:helpdesk_ticket_close_inactive.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "تیم تیکت‌های پشتیبانی"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_closing
+msgid "Inactive Tickets Day Limit Closing"
+msgstr "محدودیت روزانه برای بسته‌شدن تیکت‌های غیرفعال"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_warning
+msgid "Inactive days limit before send a warning"
+msgstr "محدودیت روزهای عدم فعالیت قبل از ارسال هشدار"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Inactivity Warning Notification"
+msgstr "هشدار عدم فعالیت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__warning_inactive_mail_template_id
+msgid "Inactivity warning email template"
+msgstr "قالب ایمیل هشدار عدم فعالیت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_closing
+msgid ""
+"Number of days of inactivity after which the ticket is automatically closed."
+" Must be greater than 0."
+msgstr ""
+"تعداد روزهای عدم فعالیت که پس از آن تیکت به طور خودکار بسته می‌شود باید "
+"بزرگتر از 0 باشد."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__inactive_tickets_day_limit_warning
+msgid ""
+"Number of days of inactivity before a warning email is sent. Set to 0 to "
+"disable the warning phase entirely."
+msgstr ""
+"تعداد روزهای عدم فعالیت قبل از ارسال ایمیل هشدار. برای غیرفعال کردن کامل "
+"مرحله هشدار، مقدار 0 را تنظیم کنید."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__closing_ticket_stage
+msgid "Set this stage for autoclosing tickets"
+msgstr "این مرحله را برای بسته‌شدن خودکار تیکت‌ها تنظیم کنید"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__warning_inactive_mail_template_id
+msgid ""
+"Template to be sent as an inactivity warning. Required when the warning day "
+"limit is greater than 0."
+msgstr ""
+"قالبی که به عنوان هشدار عدم فعالیت ارسال می‌شود. زمانی که محدودیت روزانه "
+"هشدار بزرگتر از 0 باشد، الزامی است."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_mail_template_id
+msgid ""
+"Template to be sent when a ticket is automatically closed. Leave empty to "
+"close the ticket silently without sending a notification email."
+msgstr ""
+"قالبی که هنگام بسته شدن خودکار تیکت ارسال می‌شود. برای بستن تیکت بدون ارسال "
+"ایمیل اطلاع‌رسانی، این فیلد را خالی بگذارید."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_stage_ids
+msgid ""
+"The cronjob will check for inactivity in         tickets that are in these "
+"stages."
+msgstr ""
+"کار زمان‌بندی (cronjob) عدم فعالیت را در         تیکت‌هایی که در این مراحل "
+"هستند بررسی می‌کند."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_category_ids
+msgid ""
+"The cronjob will check for inactivity in tickets that belong to these "
+"categories. Leave empty to apply to all categories."
+msgstr ""
+"کار زمان‌بندی (cronjob) عدم فعالیت را در تیکت‌هایی که متعلق به این دسته‌بندی‌ها "
+"هستند بررسی می‌کند. برای اعمال به همه دسته‌بندی‌ها، خالی بگذارید."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:mail.template,subject:helpdesk_ticket_close_inactive.warning_inactive_ticket_template
+msgid "The ticket {{object.number}} will be closed."
+msgstr "تیکت {{object.number}} بسته خواهد شد."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,help:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__close_inactive_tickets
+msgid "This option enables a cronjob to automatically close inactive tickets."
+msgstr ""
+"این گزینه یک کار زمان‌بندی (cronjob) را برای بستن خودکار تیکت‌های غیرفعال فعال "
+"می‌کند."
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_category_ids
+msgid "Ticket Category"
+msgstr "دسته‌بندی تیکت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Category Filter"
+msgstr "فیلتر دسته‌بندی تیکت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Closing"
+msgstr "بسته‌شدن تیکت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model:ir.model.fields,field_description:helpdesk_ticket_close_inactive.field_helpdesk_ticket_team__ticket_stage_ids
+msgid "Ticket Stage"
+msgstr "مرحله تیکت"
+
+#. module: helpdesk_ticket_close_inactive
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_close_inactive.inherit_view_project
+msgid "Ticket Stage Filter"
+msgstr "فیلتر مرحله تیکت"

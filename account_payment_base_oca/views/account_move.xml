@@ -38,13 +38,13 @@
                     name="preferred_payment_method_line_id"
                     string="Payment Method"
                     domain="[('payment_type', '=', 'inbound'), ('company_id', '=', company_id), ('selectable', '=', True)]"
-                    invisible="move_type in ('in_invoice', 'in_refund')"
+                    invisible="move_type in ('in_invoice', 'in_refund','in_receipt','entry')"
                 />
                 <field
                     name="preferred_payment_method_line_id"
                     string="Payment Method"
                     domain="[('payment_type', '=', 'outbound'), ('company_id', '=', company_id), ('selectable', '=', True)]"
-                    invisible="move_type in ('out_invoice', 'out_refund')"
+                    invisible="move_type in ('out_invoice', 'out_refund','out_receipt')"
                 />
             </field>
         </field>

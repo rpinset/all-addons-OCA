@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-07-25 06:10 UTC
+Generated 2026-07-28 16:36 UTC
 
-Total skipped: **146**
+Total skipped: **144**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **121**
+Count: **119**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -64,7 +64,6 @@ Count: **121**
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [19.0](https://github.com/OCA/connector-woocommerce/tree/19.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [19.0](https://github.com/OCA/cooperative/tree/19.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [19.0](https://github.com/OCA/crowdfunding/tree/19.0) | No directory with __manifest__.py at repo root |
-| [data-protection](https://github.com/OCA/data-protection) | [19.0](https://github.com/OCA/data-protection/tree/19.0) | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | [19.0](https://github.com/OCA/department/tree/19.0) | No directory with __manifest__.py at repo root |
 | [dms](https://github.com/OCA/dms) | [19.0](https://github.com/OCA/dms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | [19.0](https://github.com/OCA/donation/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -133,7 +132,6 @@ Count: **121**
 | [shift-planning](https://github.com/OCA/shift-planning) | [19.0](https://github.com/OCA/shift-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [19.0](https://github.com/OCA/shopfloor-app/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [19.0](https://github.com/OCA/shoppingfeed/tree/19.0) | No directory with __manifest__.py at repo root |
-| [spreadsheet](https://github.com/OCA/spreadsheet) | [19.0](https://github.com/OCA/spreadsheet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [19.0](https://github.com/OCA/stock-logistics-interfaces/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [19.0](https://github.com/OCA/stock-logistics-putaway/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [19.0](https://github.com/OCA/stock-logistics-release-channel/tree/19.0) | No directory with __manifest__.py at repo root |
