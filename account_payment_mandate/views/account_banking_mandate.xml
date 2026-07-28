@@ -103,6 +103,7 @@
                             <field
                                 name="partner_bank_id"
                                 options="{'create_name_field': 'acc_number'}"
+                                context="{'default_partner_id': partner_id}"
                                 invisible="context.get('mandate_bank_partner_view') or not partner_id"
                             />
                             <field

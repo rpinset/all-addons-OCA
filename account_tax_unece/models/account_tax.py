@@ -62,7 +62,7 @@ class AccountTax(models.Model):
     # So we don't need the field unece_due_date_id any more.
     # We replace it by _get_unece_due_date_type_code() below.
 
-    @api.depends("unece_categ_id", "unece_type_id")
+    @api.depends("unece_categ_id", "unece_type_id", "type_tax_use")
     def _compute_unece_vatex_id(self):
         automap = {
             "K": self.env.ref(
@@ -80,7 +80,11 @@ class AccountTax(models.Model):
                 and tax.unece_categ_id.code in automap
             ):
                 tax.unece_vatex_id = automap[tax.unece_categ_id.code]
-            elif not tax.unece_type_id or tax.unece_type_id.code != "VAT":
+            elif (
+                not tax.unece_type_id
+                or tax.unece_type_id.code != "VAT"
+                or tax.type_tax_use != "sale"
+            ):
                 tax.unece_vatex_id = False
 
     @api.model

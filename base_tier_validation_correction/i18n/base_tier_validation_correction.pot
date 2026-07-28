@@ -310,6 +310,11 @@ msgid "New Reviewers"
 msgstr ""
 
 #. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr ""

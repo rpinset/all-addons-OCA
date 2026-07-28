@@ -5,7 +5,7 @@
 
 {
     "name": "Sale Automatic Workflow",
-    "version": "18.0.1.1.2",
+    "version": "18.0.1.2.0",
     "category": "Sales Management",
     "license": "AGPL-3",
     "author": "Akretion, "
@@ -18,6 +18,7 @@
         "security/ir.model.access.csv",
         "views/sale_order_views.xml",
         "views/sale_workflow_process_views.xml",
+        "views/res_config_settings_views.xml",
         "data/automatic_workflow_data.xml",
     ],
     "installable": True,

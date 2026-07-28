@@ -37,6 +37,11 @@ msgid "Cancel"
 msgstr "Annulla"
 
 #. module: base_cancel_confirm
+#: model:ir.model.fields,field_description:base_cancel_confirm.field_base_cancel_confirm__cancel_by
+msgid "Cancel By"
+msgstr ""
+
+#. module: base_cancel_confirm
 #: model:ir.model,name:base_cancel_confirm.model_cancel_confirm
 msgid "Cancel Confirm"
 msgstr "Annulla conferma"
@@ -52,6 +57,11 @@ msgstr "Annulla conferma"
 #: model:ir.model.fields,field_description:base_cancel_confirm.field_base_cancel_confirm__cancel_confirm
 msgid "Cancel Confirmed"
 msgstr "Annullamento confermato"
+
+#. module: base_cancel_confirm
+#: model:ir.model.fields,field_description:base_cancel_confirm.field_base_cancel_confirm__cancel_date
+msgid "Cancel Date"
+msgstr ""
 
 #. module: base_cancel_confirm
 #: model:ir.model.fields,field_description:base_cancel_confirm.field_base_cancel_confirm__cancel_reason

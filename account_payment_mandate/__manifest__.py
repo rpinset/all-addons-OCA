@@ -7,7 +7,7 @@
 {
     "name": "Account Payment Mandate",
     "summary": "Add support for banking mandates used in direct debits",
-    "version": "18.0.2.1.0",
+    "version": "18.0.2.2.0",
     "development_status": "Mature",
     "license": "AGPL-3",
     "author": "Compassion CH, "
