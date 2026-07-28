@@ -930,6 +930,9 @@ and promote its widespread use.
 ## From OCA/bank-statement-import
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# OCA bank statement import modules for Odoo
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-statement-import&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml?query=branch%3A14.0)
@@ -937,8 +940,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/bank-statement-import-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-statement-import-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# OCA bank statement import modules for Odoo
 
 This repository hosts additionnal parsers and import features for bank statements.
 
@@ -964,7 +965,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 14.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 14.0.2.0.0 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_ponto_ing](account_statement_import_online_ponto_ing/) | 14.0.1.0.0 |  | Online Bank Statements: MyPonto.com ING customization
-[account_statement_import_online_wise](account_statement_import_online_wise/) | 14.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for Wise.com (TransferWise.com)
+[account_statement_import_online_wise](account_statement_import_online_wise/) | 14.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for Wise.com (TransferWise.com)
 [account_statement_import_paypal](account_statement_import_paypal/) | 14.0.1.0.1 |  | Import PayPal CSV files as Bank Statements in Odoo
 [account_statement_import_sftp](account_statement_import_sftp/) | 14.0.1.0.0 | <a href='https://github.com/OCA'><img src='https://github.com/OCA.png' width='32' height='32' style='border-radius:50%;' alt='OCA'/></a> | Import bank statement from an SFTP server
 [account_statement_import_txt_xlsx](account_statement_import_txt_xlsx/) | 14.0.3.2.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo

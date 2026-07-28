@@ -48,6 +48,7 @@
                         <div col="2" colspan="2">
                             <button
                                 name="button_transferwise_generate_key"
+                                string="Generate Key"
                                 title="Generate Key"
                                 type="object"
                                 class="oe_edit_only"
