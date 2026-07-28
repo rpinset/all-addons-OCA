@@ -230,7 +230,7 @@ class AccountDashboardBannerCell(models.Model):
         """Inherit this method to change the computation of a cell type"""
         self.ensure_one()
         cell_type = self.cell_type
-        value = raw_value = tooltip = warn = False
+        value = raw_value = tooltip = warn = action = False
         if cell_type.endswith("lock_date"):
             raw_value = company[cell_type]
             value = raw_value and format_date(self.env, raw_value)
@@ -242,6 +242,10 @@ class AccountDashboardBannerCell(models.Model):
                     days=self.warn_lock_date_days
                 ):
                     warn = True
+            if "account.update.lock_date" in self.env:
+                action = self.env["ir.actions.actions"]._for_xml_id(
+                    "account_lock_date_update.account_update_lock_date_act_window"
+                )
         else:
             accounts = False
             if hasattr(self, f"_prepare_cell_data_{cell_type}"):
@@ -283,6 +287,10 @@ class AccountDashboardBannerCell(models.Model):
                 tooltip = tooltip_src.format(
                     account_codes=", ".join(accounts.mapped("code"))
                 )
+            if cell_type == "customer_overdue":
+                action = self.env["ir.actions.actions"]._for_xml_id(
+                    "account_dashboard_banner.action_overdue_out_invoice"
+                )
         res = {
             "cell_type": cell_type,
             "label": self.custom_label or speedy["cell_type2label"][cell_type],
@@ -290,6 +298,7 @@ class AccountDashboardBannerCell(models.Model):
             "value": value or _("None"),
             "tooltip": self.custom_tooltip or tooltip,
             "warn": warn,
+            "action": action,
         }
         return res
 

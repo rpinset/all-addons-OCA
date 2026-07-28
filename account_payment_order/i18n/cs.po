@@ -89,6 +89,11 @@ msgid ""
 msgstr ""
 
 #. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__account_id
+msgid "Account"
+msgstr ""
+
+#. module: account_payment_order
 #: model:res.groups,name:account_payment_order.group_account_payment
 msgid "Accounting / Payments"
 msgstr ""
@@ -178,6 +183,11 @@ msgstr ""
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__amount_company_currency
 msgid "Amount in Company Currency"
+msgstr ""
+
+#. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__analytic_account_id
+msgid "Analytic Account"
 msgstr ""
 
 #. module: account_payment_order

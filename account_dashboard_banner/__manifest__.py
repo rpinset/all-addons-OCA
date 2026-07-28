@@ -4,7 +4,7 @@
 
 {
     "name": "Account Dashboard Banner",
-    "version": "16.0.1.0.1",
+    "version": "16.0.2.0.0",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Add a configurable banner on the accounting dashboard",
@@ -17,6 +17,7 @@
         "security/ir.model.access.csv",
         "views/account_journal_dashboard.xml",
         "views/account_dashboard_banner_cell.xml",
+        "views/account_move.xml",
     ],
     "assets": {
         "web.assets_backend": [

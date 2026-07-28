@@ -99,6 +99,11 @@ msgstr ""
 "enthält %(num)d Zeichen und ist somit nicht gültig."
 
 #. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__account_id
+msgid "Account"
+msgstr ""
+
+#. module: account_payment_order
 #: model:res.groups,name:account_payment_order.group_account_payment
 msgid "Accounting / Payments"
 msgstr "Buchhaltung / Zahlungen"
@@ -191,6 +196,11 @@ msgstr "Betrag"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__amount_company_currency
 msgid "Amount in Company Currency"
 msgstr "Betrag in Unternehmenswährung"
+
+#. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__analytic_account_id
+msgid "Analytic Account"
+msgstr ""
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_line_create__payment_mode__any
@@ -593,8 +603,8 @@ msgid ""
 msgstr ""
 "Wenn diese Feld markiert ist, werden die Transaktionszeilen des "
 "Zahlungsauftrags nach Bestätigung des Zahlungsauftrags gruppiert. Die "
-"Gruppierung wird nur durchgeführt, wenn die folgenden Felder übereinstimmen:"
-"\n"
+"Gruppierung wird nur durchgeführt, wenn die folgenden Felder "
+"übereinstimmen:\n"
 "* Partner\n"
 "* Währung\n"
 "* Zielbankkonto\n"

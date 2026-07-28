@@ -233,6 +233,76 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         self.assertEqual(order.move_ids[0].date, order.payment_ids[0].date)
         self.assertEqual(order.state, "uploaded")
 
+    def test_wizard_filters_by_account_id(self):
+        if self.invoice.state != "posted":
+            self.invoice.action_post()
+        order = self.env["account.payment.order"].create(
+            {
+                "payment_type": "outbound",
+                "payment_mode_id": self.mode.id,
+            }
+        )
+        other_payable_account = self.env["account.account"].create(
+            {
+                "name": "Other Payable Test",
+                "code": "PAYTEST",
+                "account_type": "liability_payable",
+                "company_id": self.company.id,
+            }
+        )
+        wizard_filtered = (
+            self.env["account.payment.line.create"]
+            .with_context(active_model="account.payment.order", active_id=order.id)
+            .create(
+                {
+                    "date_type": "move",
+                    "move_date": fields.Date.today(),
+                    "account_id": other_payable_account.id,
+                }
+            )
+        )
+        wizard_filtered.payment_mode = "any"
+        wizard_filtered.populate()
+        self.assertFalse(wizard_filtered.move_line_ids)
+
+    def test_wizard_filters_by_analytic_account(self):
+        if self.invoice.state != "posted":
+            self.invoice.action_post()
+        order = self.env["account.payment.order"].create(
+            {
+                "payment_type": "outbound",
+                "payment_mode_id": self.mode.id,
+            }
+        )
+        plan = self.env["account.analytic.plan"].search(
+            [("company_id", "=", self.company.id)], limit=1
+        )
+        if not plan:
+            plan = self.env["account.analytic.plan"].create(
+                {"name": "Wizard Analytic Plan", "company_id": self.company.id}
+            )
+        analytic_account = self.env["account.analytic.account"].create(
+            {
+                "name": "Wizard Analytic Test",
+                "company_id": self.company.id,
+                "plan_id": plan.id,
+            }
+        )
+        wizard_analytic = (
+            self.env["account.payment.line.create"]
+            .with_context(active_model="account.payment.order", active_id=order.id)
+            .create(
+                {
+                    "date_type": "move",
+                    "move_date": fields.Date.today(),
+                    "analytic_account_id": analytic_account.id,
+                }
+            )
+        )
+        wizard_analytic.payment_mode = "any"
+        wizard_analytic.populate()
+        self.assertFalse(wizard_analytic.move_line_ids)
+
     def _line_creation(self, outbound_order):
         vals = {
             "order_id": outbound_order.id,

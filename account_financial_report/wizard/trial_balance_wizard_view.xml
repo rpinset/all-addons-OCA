@@ -39,6 +39,7 @@
                                 groups="analytic.group_analytic_accounting"
                             />
                             <field name="hide_account_at_0" />
+                            <field name="hide_account_at_end_0" />
                             <field
                                 name="show_partner_details"
                                 attrs="{'invisible':[('grouped_by','!=',False)]}"

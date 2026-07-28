@@ -124,6 +124,11 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_dashboard_banner
+#: model:ir.actions.act_window,name:account_dashboard_banner.action_overdue_out_invoice
+msgid "Invoices"
+msgstr ""
+
+#. module: account_dashboard_banner
 #: model:ir.model.fields.selection,name:account_dashboard_banner.selection__account_dashboard_banner_cell__cell_type__period_lock_date
 msgid "Journals Entries Lock Date"
 msgstr "Date de verrouillage sauf groupe 'Paramétrage facturation'"

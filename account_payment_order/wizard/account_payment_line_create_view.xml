@@ -31,6 +31,8 @@
                         widget="many2many_tags"
                         placeholder="Keep empty to use all partners"
                     />
+                    <field name="account_id" />
+                    <field name="analytic_account_id" />
                     <field name="payment_mode" />
                     <field name="target_move" widget="radio" />
                     <field name="invoice" />

@@ -97,6 +97,11 @@ msgstr ""
 "caracteres, polo que non é válido."
 
 #. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__account_id
+msgid "Account"
+msgstr ""
+
+#. module: account_payment_order
 #: model:res.groups,name:account_payment_order.group_account_payment
 msgid "Accounting / Payments"
 msgstr "Contabilidade / Pagos"
@@ -189,6 +194,11 @@ msgstr "Importe"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__amount_company_currency
 msgid "Amount in Company Currency"
 msgstr "Importes moeda compañía"
+
+#. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__analytic_account_id
+msgid "Analytic Account"
+msgstr ""
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_line_create__payment_mode__any
@@ -876,8 +886,8 @@ msgid ""
 "On payment order %(porder)s, the Payment Execution Date is in the past "
 "(%(exedate)s)."
 msgstr ""
-"Na orde de pago %(porder)s, a Data de Execución do Pago xa pasou (%(exedate)"
-"s)."
+"Na orde de pago %(porder)s, a Data de Execución do Pago xa pasou "
+"(%(exedate)s)."
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_method__payment_order_only
@@ -1222,8 +1232,8 @@ msgid ""
 "after the computed payment date %(pdate)s."
 msgstr ""
 "O modo de pago '%(pmode)s' ten a opción 'Non permitir débito antes da data "
-"de vencemento'. A liña de pago %(pline)s ten unha data de vencemento %(mdate)"
-"s que é posterior á data de pago calculada %(pdate)s."
+"de vencemento'. A liña de pago %(pline)s ten unha data de vencemento "
+"%(mdate)s que é posterior á data de pago calculada %(pdate)s."
 
 #. module: account_payment_order
 #. odoo-python

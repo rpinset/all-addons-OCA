@@ -38,6 +38,14 @@ class AccountPaymentLineCreate(models.TransientModel):
     payment_mode = fields.Selection(
         selection=[("same", "Same"), ("same_or_null", "Same or Empty"), ("any", "Any")],
     )
+    account_id = fields.Many2one(
+        comodel_name="account.account",
+        string="Account",
+    )
+    analytic_account_id = fields.Many2one(
+        comodel_name="account.analytic.account",
+        string="Analytic Account",
+    )
     move_line_ids = fields.Many2many(
         comodel_name="account.move.line", string="Move Lines"
     )
@@ -78,6 +86,12 @@ class AccountPaymentLineCreate(models.TransientModel):
             domain += [("move_id.state", "=", "posted")]
         if not self.allow_blocked:
             domain += [("blocked", "!=", True)]
+        if self.account_id:
+            domain.append(("account_id", "=", self.account_id.id))
+        if self.analytic_account_id:
+            domain.append(
+                ("analytic_line_ids.account_id", "=", self.analytic_account_id.id)
+            )
         if self.date_type == "due":
             domain += [
                 "|",
@@ -173,6 +187,8 @@ class AccountPaymentLineCreate(models.TransientModel):
         "allow_blocked",
         "payment_mode",
         "partner_ids",
+        "account_id",
+        "analytic_account_id",
     )
     def move_line_filters_change(self):
         domain = self._prepare_move_line_domain()

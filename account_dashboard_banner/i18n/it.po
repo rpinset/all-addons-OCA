@@ -123,6 +123,11 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_dashboard_banner
+#: model:ir.actions.act_window,name:account_dashboard_banner.action_overdue_out_invoice
+msgid "Invoices"
+msgstr ""
+
+#. module: account_dashboard_banner
 #: model:ir.model.fields.selection,name:account_dashboard_banner.selection__account_dashboard_banner_cell__cell_type__period_lock_date
 msgid "Journals Entries Lock Date"
 msgstr "Data blocco registrazioni contabili"
@@ -191,7 +196,8 @@ msgstr "Ricavi trimestrali attuali"
 #, python-format
 msgid ""
 "Residual amount of account(s) {account_codes} with due date in the past."
-msgstr "Valore residuo dei conti {account_codes} con data scadenza nel passato."
+msgstr ""
+"Valore residuo dei conti {account_codes} con data scadenza nel passato."
 
 #. module: account_dashboard_banner
 #: model:ir.model.fields,field_description:account_dashboard_banner.field_account_dashboard_banner_cell__sequence

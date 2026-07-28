@@ -28,9 +28,9 @@
                     </div>
                 </div>
             </div>
-            <div id="accounting_reports" position="after">
+            <div id="accounting_reports" position="inside">
                     <div
-                    class="row mt16 o_settings_container"
+                    class="col-12 col-lg-6 o_setting_box"
                     id="fiscalyear_last_day_month"
                 >
                             <div class="o_setting_left_pane" />

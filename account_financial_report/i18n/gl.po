@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-26 23:11+0000\n"
-"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
+"PO-Revision-Date: 2026-07-26 18:46+0000\n"
+"Last-Translator: Anxo López Rodríguez <lopezrodriguezanxo@gmail.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,8 @@ msgstr "<b>Resumo de impostos</b>"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
 msgid ""
 "<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
-"                    Duplicate amounts may be shown because more than one analytical account may be defined in the journal items."
+"                    Duplicate amounts may be shown because more than one "
+"analytical account may be defined in the journal items."
 msgstr ""
 "<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
 "                    Poderían mostrarse cantidades duplicadas debido a que "
@@ -202,7 +203,6 @@ msgstr ""
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #, python-format
 msgid "Age ≤ 120 d."
 msgstr "Idade ≤ 120 d."
@@ -218,7 +218,6 @@ msgstr ""
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #, python-format
 msgid "Age ≤ 30 d."
@@ -236,7 +235,6 @@ msgstr ""
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #, python-format
 msgid "Age ≤ 60 d."
 msgstr "Idade ≤ 60 d."
@@ -252,7 +250,6 @@ msgstr ""
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #, python-format
 msgid "Age ≤ 90 d."
@@ -555,7 +552,6 @@ msgstr "Creado en"
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model:account.financial.report.column,name:account_financial_report.general_ledger_report_wizard_column_credit
 #: model:account.financial.report.column,name:account_financial_report.journal_ledger_report_wizard_column_credit
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
@@ -617,7 +613,6 @@ msgstr "Moeda"
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
 #, python-format
@@ -716,7 +711,6 @@ msgstr "Ata"
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model:account.financial.report.column,name:account_financial_report.general_ledger_report_wizard_column_debit
 #: model:account.financial.report.column,name:account_financial_report.journal_ledger_report_wizard_column_debit
@@ -831,10 +825,6 @@ msgstr "Conta final nun rango"
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
-#: code:addons/account_financial_report/report/open_items_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_ending_cumul
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
@@ -884,7 +874,6 @@ msgstr "Número de asento"
 
 #. module: account_financial_report
 #. odoo-javascript
-#: code:addons/account_financial_report/static/src/xml/report.xml:0
 #: code:addons/account_financial_report/static/src/xml/report.xml:0
 #, python-format
 msgid "Export"
@@ -1100,6 +1089,11 @@ msgid "Hide accounts at 0"
 msgstr "Ocultar contas sen actividade"
 
 #. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0
+msgid "Hide accounts with 0 end balance"
+msgstr "Ocultar contas con saldo final 0"
+
+#. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy_level
 msgid "Hierarchy Levels to display"
 msgstr "Niveis de xerarquía a mostrar"
@@ -1159,9 +1153,6 @@ msgstr ""
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
 #, python-format
@@ -1334,11 +1325,8 @@ msgstr "Número correspondente"
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger.py:0
-#: code:addons/account_financial_report/report/general_ledger.py:0
 #: code:addons/account_financial_report/report/open_items.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance.py:0
-#: code:addons/account_financial_report/report/trial_balance.py:0
 #: code:addons/account_financial_report/report/trial_balance.py:0
 #, python-format
 msgid "Missing Partner"
@@ -1350,6 +1338,13 @@ msgstr "Falta o contacto"
 #, python-format
 msgid "Missing Salesperson"
 msgstr "Falta comercial"
+
+#. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/trial_balance.py:0
+#, python-format
+msgid "Mode %(mode)s for removing account lines at 0 not supported"
+msgstr "Modo %(mode)s para eliminar liñas de contas en 0 non admitido"
 
 #. module: account_financial_report
 #: model:ir.model,name:account_financial_report.model_account_age_report_configuration_line
@@ -1414,7 +1409,6 @@ msgstr "Neto"
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
-#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
@@ -1472,7 +1466,6 @@ msgstr "Informes de contabilidade OCA"
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
 #, python-format
@@ -1536,7 +1529,6 @@ msgstr "Orixinal"
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
@@ -1620,7 +1612,6 @@ msgstr "Porcentaxes"
 #. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
-#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
 #, python-format
 msgid "Period balance"
@@ -1698,7 +1689,6 @@ msgstr "Modelo Res"
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
 #: model:account.financial.report.column,name:account_financial_report.open_items_report_wizard_column_residual
@@ -1929,8 +1919,8 @@ msgstr ""
 #: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
 #, python-format
 msgid ""
-"The Company in the Trial Balance Report Wizard and in Date Range must be the"
-" same."
+"The Company in the Trial Balance Report Wizard and in Date Range must be the "
+"same."
 msgstr ""
 "A empresa no Asistente de informe de Balance de comprobación e no rango de "
 "datas debe ser a mesma."
@@ -2044,9 +2034,9 @@ msgstr "Conta de ganancias non afectada"
 #: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
 #: model:ir.model.fields,help:account_financial_report.field_open_items_report_wizard__hide_account_at_0
 msgid ""
-"Use this filter to hide an account or a partner with an ending balance at 0."
-" If partners are filtered, debits and credits totals will not match the "
-"trial balance."
+"Use this filter to hide an account or a partner with an ending balance at 0. "
+"If partners are filtered, debits and credits totals will not match the trial "
+"balance."
 msgstr ""
 "Use este filtro para ocultar as contas ou empresas con saldo final 0. Se as "
 "empresas se filtran, os debe e haber totais non coincidirán co balance de "
@@ -2113,6 +2103,15 @@ msgid "View"
 msgstr "Ver"
 
 #. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0
+msgid ""
+"When this option is enabled, the trial balance will not display accounts "
+"that have end balance = 0"
+msgstr ""
+"Cando esta opción está activada, o balance de comprobación non mostrará as "
+"contas que teñan un saldo final = 0"
+
+#. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0
 msgid ""
 "When this option is enabled, the trial balance will not display accounts "
@@ -2135,7 +2134,6 @@ msgstr "Sen conta analítica"
 
 #. module: account_financial_report
 #. odoo-python
-#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
 #: code:addons/account_financial_report/report/open_items_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance_xlsx.py:0

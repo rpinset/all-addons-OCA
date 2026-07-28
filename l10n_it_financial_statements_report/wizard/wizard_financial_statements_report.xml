@@ -35,6 +35,7 @@
                         <group name="other_filters">
                             <field name="target_move" widget="radio" />
                             <field name="hide_account_at_0" />
+                            <field name="hide_account_at_end_0" />
                             <field name="hide_accounts_codes" />
                             <field name="show_partner_details" />
                             <field name="show_hierarchy" invisible="1" />
