@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-07-25 06:02 UTC** (elapsed 210s)
+Last build: **2026-07-28 16:31 UTC** (elapsed 199s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -27,7 +27,7 @@ Last build: **2026-07-25 06:02 UTC** (elapsed 210s)
 | [brand](https://github.com/OCA/brand) | 12 | b820473 2026-05-12 mymage Translated using Weblate (Italian) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 5 | e9b4003 2023-10-09 Weblate Update translation files |
 | [calendar](https://github.com/OCA/calendar) | 1 | 65f5345 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [commission](https://github.com/OCA/commission) | 6 | 7996a0b 2026-02-10 mymage Translated using Weblate (Italian) |
+| [commission](https://github.com/OCA/commission) | 6 | 1264b61 2026-07-27 mymage Translated using Weblate (Italian) |
 | [community-data-files](https://github.com/OCA/community-data-files) | 11 | 692fe64 2026-01-19 EvaS595 Translated using Weblate (French) |
 | [connector](https://github.com/OCA/connector) | 6 | 3e1c6e8 2023-12-07 mymage Translated using Weblate (Italian) |
 | [connector-cmis](https://github.com/OCA/connector-cmis) | 1 | 398d51f 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -85,7 +85,7 @@ Last build: **2026-07-25 06:02 UTC** (elapsed 210s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 7 | e6e0eeb 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [operating-unit](https://github.com/OCA/operating-unit) | 17 | db3d30f 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [partner-contact](https://github.com/OCA/partner-contact) | 62 | b8c7c6d 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [payroll](https://github.com/OCA/payroll) | 2 | 6b24c95 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [payroll](https://github.com/OCA/payroll) | 2 | a36983b 2026-07-28 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 22 | 55da831 2025-07-30 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
