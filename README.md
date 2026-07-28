@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-25 06:03 UTC** (elapsed 69s)
+Last build: **2026-07-28 16:28 UTC** (elapsed 74s)
 
 - Repos integrated: **117**
-- Canonical modules: **2098**
+- Canonical modules: **2099**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **139**
 
@@ -34,7 +34,7 @@ Last build: **2026-07-25 06:03 UTC** (elapsed 69s)
 | [connector-jira](https://github.com/OCA/connector-jira) | 5 | f1761d2 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [contract](https://github.com/OCA/contract) | 11 | 7517b8c 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [credit-control](https://github.com/OCA/credit-control) | 9 | c5abae8 2025-08-28 OCA-git-bot [BOT] post-merge updates |
-| [crm](https://github.com/OCA/crm) | 22 | 469962e 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [crm](https://github.com/OCA/crm) | 22 | 15c4858 2026-07-28 mymage Translated using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 2 | eec1bb7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 871fca7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 14 | addfe4d 2026-07-03 OCA-git-bot Merge PR #633 into 15.0 |
@@ -100,7 +100,7 @@ Last build: **2026-07-25 06:03 UTC** (elapsed 69s)
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 116 | 174c218 2026-07-24 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 117 | 2b21698 2026-07-28 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -118,7 +118,7 @@ Last build: **2026-07-25 06:03 UTC** (elapsed 69s)
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 79 | 1976215 2026-07-23 OCA-git-bot [BOT] post-merge updates |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 14 | 0fbad2b 2026-04-20 Weblate Update translation files |
 | [storage](https://github.com/OCA/storage) | 13 | 1ea7f73 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [survey](https://github.com/OCA/survey) | 19 | 717a333 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [survey](https://github.com/OCA/survey) | 19 | 3ab2f0d 2026-07-28 mymage Translated using Weblate (Italian) |
 | [timesheet](https://github.com/OCA/timesheet) | 19 | ce46fb5 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [vertical-association](https://github.com/OCA/vertical-association) | 7 | f8bcf39 2025-06-21 mymage Translated using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 9690e36 2025-02-09 oca-git-bot [IMP] update dotfiles |
