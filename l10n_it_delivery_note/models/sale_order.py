@@ -1,6 +1,8 @@
 # Copyright (c) 2019, Link IT Europe Srl
 # @author: Matteo Bilotta <mbilotta@linkeurope.it>
 
+import math
+
 from odoo import api, fields, models
 
 from .stock_delivery_note import DOMAIN_DELIVERY_NOTE_STATES, DOMAIN_INVOICE_STATUSES
@@ -218,7 +220,10 @@ class SaleOrderLine(models.Model):
             values.update(
                 {
                     "delivery_note_line_id": invoiced_dn_line.id,
-                    "quantity": invoiced_dn_line.product_qty,
+                    "quantity": math.copysign(
+                        invoiced_dn_line.product_qty,
+                        values.get("quantity", 1),
+                    ),
                 }
             )
             self.env.context = dict(

@@ -1,6 +1,6 @@
 # Build report — `14.0`
 
-Generated 2026-07-28 16:25 UTC
+Generated 2026-08-01 06:13 UTC
 
 ## Skipped repos
 
@@ -26,6 +26,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-redmine](https://github.com/OCA/connector-redmine) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-sage](https://github.com/OCA/connector-sage) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | `no_module` | No directory with __manifest__.py at repo root |
+| [connector-shopify](https://github.com/OCA/connector-shopify) | `no_branch` | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |

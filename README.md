@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-07-28 16:25 UTC** (elapsed 87s)
+Last build: **2026-08-01 06:13 UTC** (elapsed 114s)
 
 - Repos integrated: **140**
 - Canonical modules: **2911**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **116**
+- Skipped repos (no branch / no module): **117**
 
 ## Integrated repos
 
@@ -45,7 +45,7 @@ Last build: **2026-07-28 16:25 UTC** (elapsed 87s)
 | [currency](https://github.com/OCA/currency) | 8 | 9e281c1 2025-09-16 Betül Öğmen Translated using Weblate (Turkish) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d96263b 2026-07-03 OCA-git-bot Merge PR #632 into 14.0 |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 196a223 2026-06-15 OCA-git-bot [BOT] post-merge updates |
+| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 8f4ba60 2026-07-30 OCA-git-bot [BOT] post-merge updates |
 | [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
@@ -74,7 +74,7 @@ Last build: **2026-07-28 16:25 UTC** (elapsed 87s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | b58eb15 2026-07-24 Weblate Update translation files |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | b143e51 2026-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
@@ -117,7 +117,7 @@ Last build: **2026-07-28 16:25 UTC** (elapsed 87s)
 | [rma](https://github.com/OCA/rma) | 6 | b4276c1 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
-| [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | ee6b244 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | 06cb39c 2026-07-28 OCA-git-bot Merge PR #394 into 14.0 |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 150 | 95fe14a 2026-07-24 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
@@ -150,5 +150,5 @@ Last build: **2026-07-28 16:25 UTC** (elapsed 87s)
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
 | [website-cms](https://github.com/OCA/website-cms) | 3 | cb82f27 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 76 | e142b02 2026-07-20 OCA-git-bot [BOT] post-merge updates |
+| [wms](https://github.com/OCA/wms) | 76 | d5ac6e3 2026-07-29 OCA-git-bot [BOT] post-merge updates |
 
