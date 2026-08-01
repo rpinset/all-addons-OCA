@@ -103,3 +103,14 @@ class TestReportSubstitute(TransactionCase):
                     ).id,
                 }
             )
+
+    def test_render_qweb_pdf_falls_back_for_non_qweb_substitute(self):
+        # A substitute whose report_type is not qweb-pdf cannot be rendered
+        # by _render_qweb_pdf, which should fall back to the original report.
+        self.substitution_rule.substitution_action_report_id.report_type = "qweb-text"
+        res = str(
+            self.action_report._render_qweb_pdf(
+                self.action_report.report_name, res_ids=self.res_ids
+            )[0]
+        )
+        self.assertNotIn('<div class="page">Substitution Report</div>', res)

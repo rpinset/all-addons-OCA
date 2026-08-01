@@ -57,13 +57,28 @@ class IrActionReport(models.Model):
             substitution_report.report_name, res_ids, data=data
         )
 
-    def _render_qweb_pdf(self, report_ref, res_ids=None, data=None):
-        report = self._get_report(report_ref)
-        substitution_report = report.get_substitution_report(res_ids)
+    def _render_qweb_pdf_substitution(
+        self, substitution_report, res_ids=None, data=None
+    ):
+        """Hook to render substitution reports with another report_type.
+
+        Return a ``(content, report_type)`` tuple, or ``None`` to fall
+        back to rendering the original report.
+        """
         if substitution_report.filtered(lambda r: r.report_type == "qweb-pdf"):
             return super(IrActionReport, self)._render_qweb_pdf(
                 substitution_report, res_ids=res_ids, data=data
             )
+        return None
+
+    def _render_qweb_pdf(self, report_ref, res_ids=None, data=None):
+        report = self._get_report(report_ref)
+        substitution_report = report.get_substitution_report(res_ids)
+        result = self._render_qweb_pdf_substitution(
+            substitution_report, res_ids=res_ids, data=data
+        )
+        if result is not None:
+            return result
         return super(IrActionReport, self)._render_qweb_pdf(
             report_ref, res_ids=res_ids, data=data
         )
