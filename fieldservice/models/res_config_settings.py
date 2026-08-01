@@ -1,4 +1,4 @@
-# Copyright (C) 2018 - TODAY, Open Source Integrators
+# Copyright (C) 2018 - TODAY, Gray Matter Logic
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
@@ -70,7 +70,7 @@ class ResConfigSettings(models.TransientModel):
     module_fieldservice_stock = fields.Boolean(string="Use Odoo Logistics")
     module_fieldservice_vehicle = fields.Boolean(string="Manage Vehicles")
     module_fieldservice_substatus = fields.Boolean(string="Manage Sub-Statuses")
-    module_fieldservice_web_timeline_view = fields.Boolean(
+    module_fieldservice_timeline = fields.Boolean(
         string="Allow Field Service Web Timeline View"
     )
 

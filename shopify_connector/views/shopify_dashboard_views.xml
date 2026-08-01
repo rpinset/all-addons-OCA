@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_instance_dashboard_kanban" model="ir.ui.view">
+        <field name="name">shopify.instance.dashboard.kanban</field>
+        <field name="model">shopify.instance</field>
+        <field name="arch" type="xml">
+            <kanban create="0" delete="0" sample="0">
+                <field name="name" />
+                <field name="company_id" />
+                <field name="state" />
+                <field name="dashboard_products" />
+                <field name="dashboard_variants" />
+                <field name="dashboard_collections" />
+                <field name="dashboard_locations" />
+                <field name="dashboard_customers" />
+                <field name="dashboard_companies" />
+                <field name="dashboard_orders" />
+                <field name="dashboard_fulfillments" />
+                <field name="dashboard_financial" />
+                <field name="dashboard_queue_backlog" />
+                <field name="dashboard_recent_errors" />
+                <field name="dashboard_webhooks" />
+                <field name="dashboard_drift_crons" />
+                <field name="dashboard_table_sizes" />
+                <field name="webhook_health_checked_at" />
+                <field name="webhook_missing_topics" />
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-between mb-2">
+                            <strong class="fs-4">
+                                <field name="name" />
+                            </strong>
+                            <field name="state" widget="badge" />
+                        </div>
+                        <div class="text-muted mb-3">
+                            <field name="company_id" />
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <strong>Products</strong>
+                                <br />
+                                <field name="dashboard_products" />
+                                <br />
+                                <strong>Variants</strong>
+                                <br />
+                                <field name="dashboard_variants" />
+                                <br />
+                                <strong>Collections</strong>
+                                <br />
+                                <field name="dashboard_collections" />
+                                <br />
+                                <strong>Locations</strong>
+                                <br />
+                                <field name="dashboard_locations" />
+                            </div>
+                            <div class="col-6">
+                                <strong>Customers</strong>
+                                <br />
+                                <field name="dashboard_customers" />
+                                <br />
+                                <strong>B2B</strong>
+                                <br />
+                                <field name="dashboard_companies" />
+                                <br />
+                                <strong>Orders</strong>
+                                <br />
+                                <field name="dashboard_orders" />
+                                <br />
+                                <strong>Fulfillments</strong>
+                                <br />
+                                <field name="dashboard_fulfillments" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <strong>Shopify queue backlog:</strong>
+                            <field name="dashboard_queue_backlog" />
+                        </div>
+                        <div class="mt-2">
+                            <strong>Financial</strong>
+                            <pre class="small text-wrap">
+                                <field name="dashboard_financial" />
+                            </pre>
+                        </div>
+                        <div class="mt-2">
+                            <strong>Recent errors</strong>
+                            <pre class="small text-wrap">
+                                <field name="dashboard_recent_errors" />
+                            </pre>
+                        </div>
+                        <div class="mt-2">
+                            <strong>Webhook last received per topic</strong>
+                            <pre class="small text-wrap">
+                                <field name="dashboard_webhooks" />
+                            </pre>
+                        </div>
+                        <div
+                            class="alert alert-warning py-1"
+                            role="status"
+                            t-if="record.webhook_missing_topics.raw_value"
+                        >
+                            Missing or misrouted subscriptions:
+                            <field name="webhook_missing_topics" />
+                        </div>
+                        <div class="mt-2">
+                            <strong>Drift crons</strong>
+                            <pre class="small text-wrap">
+                                <field name="dashboard_drift_crons" />
+                            </pre>
+                        </div>
+                        <div class="mt-2">
+                            <strong>Operational table sizes</strong>
+                            <pre class="small text-wrap">
+                                <field name="dashboard_table_sizes" />
+                            </pre>
+                        </div>
+                        <div class="mt-3 d-flex gap-2 flex-wrap">
+                            <button
+                                name="action_open_binding_errors"
+                                type="object"
+                                string="Open Errors"
+                                class="btn btn-secondary"
+                            />
+                            <button
+                                name="action_check_webhook_health"
+                                type="object"
+                                string="Check Webhooks"
+                                class="btn btn-secondary"
+                            />
+                            <button
+                                name="action_repair_webhook_subscriptions"
+                                type="object"
+                                string="Repair Webhooks"
+                                class="btn btn-primary"
+                            />
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="shopify_dashboard_action" model="ir.actions.act_window">
+        <field name="name">Shopify Dashboard</field>
+        <field name="res_model">shopify.instance</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="view_id" ref="shopify_instance_dashboard_kanban" />
+        <field name="domain">[('active', '=', True)]</field>
+    </record>
+</odoo>

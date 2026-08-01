@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-07-28 16:36 UTC
+Generated 2026-08-01 06:18 UTC
 
-Total skipped: **144**
+Total skipped: **142**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **119**
+Count: **117**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -71,8 +71,6 @@ Count: **119**
 | [e-learning](https://github.com/OCA/e-learning) | [19.0](https://github.com/OCA/e-learning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
-| [geospatial](https://github.com/OCA/geospatial) | [19.0](https://github.com/OCA/geospatial/tree/19.0) | No directory with __manifest__.py at repo root |
-| [hr-attendance](https://github.com/OCA/hr-attendance) | [19.0](https://github.com/OCA/hr-attendance/tree/19.0) | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | [19.0](https://github.com/OCA/hr-expense/tree/19.0) | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | [19.0](https://github.com/OCA/infrastructure/tree/19.0) | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | [19.0](https://github.com/OCA/interface-git/tree/19.0) | No directory with __manifest__.py at repo root |

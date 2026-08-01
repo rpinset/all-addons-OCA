@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-07-28 16:36 UTC
+Generated 2026-08-01 06:18 UTC
 
 ## Skipped repos
 
@@ -40,8 +40,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [e-learning](https://github.com/OCA/e-learning) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
-| [geospatial](https://github.com/OCA/geospatial) | `no_module` | No directory with __manifest__.py at repo root |
-| [hr-attendance](https://github.com/OCA/hr-attendance) | `no_module` | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | `no_module` | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | `no_module` | No directory with __manifest__.py at repo root |

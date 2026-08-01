@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.google_maps</field>
+        <field name="priority" eval="200" />
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='integration']" position="after">
+                <block title="Google Maps View" name="google_maps_view">
+                    <setting
+                        string="API key"
+                        help="Set API keys and map localization. Visit the Google documentation about Localizing the Map."
+                    >
+                        <field name="google_maps_view_api_key" />
+                    </setting>
+                    <setting string="Theme" help="Select the Google Maps map theme">
+                        <field name="google_maps_theme" />
+                    </setting>
+                    <setting
+                        string="Language"
+                        help="Set the language of the map. If you set the language, consider setting the region too so your application complies with local laws."
+                    >
+                        <field name="google_maps_lang_localization" />
+                    </setting>
+                    <setting
+                        string="Region"
+                        help="Set the region of the map"
+                        invisible="not google_maps_lang_localization"
+                    >
+                        <field name="google_maps_region_localization" />
+                    </setting>
+                    <setting
+                        string="Allow Google Map View"
+                        help="Install the Google Map View module"
+                    >
+                        <field name="module_web_view_google_map" />
+                    </setting>
+                    <setting
+                        string="Allow Google Marker Icon Picker"
+                        help="Install the Google Marker Icon Picker module"
+                    >
+                        <field name="module_web_widget_google_marker_icon_picker" />
+                    </setting>
+                    <setting
+                        string="Allow Google Address Autocomplete on Website"
+                        help="Install Google Address Autocomplete on Website Form (requires Website)"
+                    >
+                        <field name="module_web_widget_google_address_autocomplete" />
+                    </setting>
+                </block>
+                <block title="Google Maps Libraries" name="google_maps_libraries">
+                    <setting
+                        string="Geometry"
+                        help="Geometry includes utility functions for calculating scalar geometric values (such as distance and area) on the surface of the earth."
+                    >
+                        <field name="google_maps_geometry" />
+                    </setting>
+                    <setting
+                        string="Places"
+                        help="Places enables your application to search for places such as establishments, geographic locations, or prominent points of interest, within a defined area."
+                    >
+                        <field name="google_maps_places" />
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

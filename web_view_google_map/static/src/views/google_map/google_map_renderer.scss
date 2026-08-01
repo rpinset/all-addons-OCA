@@ -1,0 +1,19 @@
+.o_google_map_view {
+    height: 100%;
+    width: 100%;
+}
+
+.o_google_map_container {
+    height: 100%;
+    min-height: 400px;
+    width: 100%;
+}
+
+.o_google_map_info {
+    max-width: 240px;
+
+    strong {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+}

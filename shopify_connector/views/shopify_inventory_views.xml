@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_location_view_list" model="ir.ui.view">
+        <field name="name">shopify.location.list</field>
+        <field name="model">shopify.location</field>
+        <field name="arch" type="xml">
+            <list
+                create="0"
+                delete="0"
+                decoration-warning="active and not is_mapped"
+                decoration-muted="not active"
+            >
+                <field name="instance_id" />
+                <field name="name" />
+                <field name="legacy_resource_id" optional="hide" />
+                <field name="active" widget="boolean_toggle" readonly="1" />
+                <field name="warehouse_id" />
+                <field name="odoo_location_id" />
+                <field name="is_mapped" widget="boolean_toggle" readonly="1" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_location_view_form" model="ir.ui.view">
+        <field name="name">shopify.location.form</field>
+        <field name="model">shopify.location</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Unmapped"
+                        bg_color="text-bg-warning"
+                        invisible="is_mapped or not active"
+                    />
+                    <group>
+                        <group string="Shopify">
+                            <field name="instance_id" readonly="1" />
+                            <field name="name" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                            <field name="legacy_resource_id" readonly="1" />
+                            <field name="active" readonly="1" />
+                            <field name="fulfills_online_orders" readonly="1" />
+                            <field name="address" readonly="1" />
+                        </group>
+                        <group string="Odoo Mapping">
+                            <field name="company_id" invisible="1" />
+                            <field
+                                name="warehouse_id"
+                                domain="[('company_id', '=', company_id)]"
+                            />
+                            <field
+                                name="odoo_location_id"
+                                domain="[('usage', '=', 'internal'), '|',
+                                            ('company_id', '=', False),
+                                            ('company_id', '=', company_id)]"
+                            />
+                            <field name="is_mapped" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_location_view_search" model="ir.ui.view">
+        <field name="name">shopify.location.search</field>
+        <field name="model">shopify.location</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="instance_id" />
+                <field name="warehouse_id" />
+                <field name="odoo_location_id" />
+                <filter
+                    name="unmapped"
+                    string="Unmapped"
+                    domain="[('active', '=', True),
+                                 ('is_mapped', '=', False)]"
+                />
+                <filter
+                    name="inactive"
+                    string="Inactive"
+                    domain="[('active', '=', False)]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_mapped"
+                        string="Mapped"
+                        context="{'group_by': 'is_mapped'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_location_action" model="ir.actions.act_window">
+        <field name="name">Location Bindings</field>
+        <field name="res_model">shopify.location</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="shopify_location_view_search" />
+    </record>
+</odoo>

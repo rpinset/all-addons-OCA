@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="module_category_shopify" model="ir.module.category">
+        <field name="name">Shopify</field>
+        <field
+            name="description"
+        >Manage Shopify connector configuration and operations.</field>
+        <field name="sequence">35</field>
+    </record>
+
+    <record id="privilege_shopify" model="res.groups.privilege">
+        <field name="name">Shopify Connector</field>
+        <field name="description">Shopify connector access level.</field>
+        <field name="category_id" ref="shopify_connector.module_category_shopify" />
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="group_shopify_manager" model="res.groups">
+        <field name="name">Shopify Manager</field>
+        <field name="privilege_id" ref="shopify_connector.privilege_shopify" />
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <record id="shopify_instance_company_rule" model="ir.rule">
+        <field name="name">Shopify instances by company</field>
+        <field name="model_id" ref="model_shopify_instance" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_webhook_event_company_rule" model="ir.rule">
+        <field name="name">Shopify webhook events by company</field>
+        <field name="model_id" ref="model_shopify_webhook_event" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_log_company_rule" model="ir.rule">
+        <field name="name">Shopify logs by company</field>
+        <field name="model_id" ref="model_shopify_log" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_field_mapping_company_rule" model="ir.rule">
+        <field name="name">Shopify field mappings by company</field>
+        <field name="model_id" ref="model_shopify_field_mapping" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_product_template_company_rule" model="ir.rule">
+        <field name="name">Shopify product bindings by company</field>
+        <field name="model_id" ref="model_shopify_product_template" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_product_variant_company_rule" model="ir.rule">
+        <field name="name">Shopify variant bindings by company</field>
+        <field name="model_id" ref="model_shopify_product_variant" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_product_image_company_rule" model="ir.rule">
+        <field name="name">Shopify image bindings by company</field>
+        <field name="model_id" ref="model_shopify_product_image" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_collection_company_rule" model="ir.rule">
+        <field name="name">Shopify collections by company</field>
+        <field name="model_id" ref="model_shopify_collection" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_location_company_rule" model="ir.rule">
+        <field name="name">Shopify locations by company</field>
+        <field name="model_id" ref="model_shopify_location" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_inventory_state_company_rule" model="ir.rule">
+        <field name="name">Shopify inventory state by company</field>
+        <field name="model_id" ref="model_shopify_inventory_state" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_customer_company_rule" model="ir.rule">
+        <field name="name">Shopify customers by company</field>
+        <field name="model_id" ref="model_shopify_customer" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_customer_address_company_rule" model="ir.rule">
+        <field name="name">Shopify customer addresses by company</field>
+        <field name="model_id" ref="model_shopify_customer_address" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_company_company_rule" model="ir.rule">
+        <field name="name">Shopify B2B companies by company</field>
+        <field name="model_id" ref="model_shopify_company" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_company_location_company_rule" model="ir.rule">
+        <field name="name">Shopify B2B locations by company</field>
+        <field name="model_id" ref="model_shopify_company_location" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_company_contact_company_rule" model="ir.rule">
+        <field name="name">Shopify B2B contacts by company</field>
+        <field name="model_id" ref="model_shopify_company_contact" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_catalog_company_rule" model="ir.rule">
+        <field name="name">Shopify B2B catalogs by company</field>
+        <field name="model_id" ref="model_shopify_catalog" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_order_company_rule" model="ir.rule">
+        <field name="name">Shopify orders by company</field>
+        <field name="model_id" ref="model_shopify_order" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_order_line_company_rule" model="ir.rule">
+        <field name="name">Shopify order lines by company</field>
+        <field name="model_id" ref="model_shopify_order_line" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_refund_company_rule" model="ir.rule">
+        <field name="name">Shopify refunds by company</field>
+        <field name="model_id" ref="model_shopify_refund" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_refund_line_company_rule" model="ir.rule">
+        <field name="name">Shopify refund lines by company</field>
+        <field name="model_id" ref="model_shopify_refund_line" />
+        <field name="domain_force">[('refund_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_tax_mapping_company_rule" model="ir.rule">
+        <field name="name">Shopify tax mappings by company</field>
+        <field name="model_id" ref="model_shopify_tax_mapping" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_gateway_journal_company_rule" model="ir.rule">
+        <field name="name">Shopify gateway journals by company</field>
+        <field name="model_id" ref="model_shopify_gateway_journal" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_gateway_payment_company_rule" model="ir.rule">
+        <field name="name">Shopify gateway payments by company</field>
+        <field name="model_id" ref="model_shopify_gateway_payment" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_return_company_rule" model="ir.rule">
+        <field name="name">Shopify returns by company</field>
+        <field name="model_id" ref="model_shopify_return" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_fulfillment_order_company_rule" model="ir.rule">
+        <field name="name">Shopify fulfillment orders by company</field>
+        <field name="model_id" ref="model_shopify_fulfillment_order" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_fulfillment_order_line_company_rule" model="ir.rule">
+        <field name="name">Shopify fulfillment order lines by company</field>
+        <field name="model_id" ref="model_shopify_fulfillment_order_line" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_fulfillment_company_rule" model="ir.rule">
+        <field name="name">Shopify fulfillments by company</field>
+        <field name="model_id" ref="model_shopify_fulfillment" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_carrier_mapping_company_rule" model="ir.rule">
+        <field name="name">Shopify carrier mappings by company</field>
+        <field name="model_id" ref="model_shopify_carrier_mapping" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_product_export_wizard_company_rule" model="ir.rule">
+        <field name="name">Shopify product export wizard by company</field>
+        <field name="model_id" ref="model_shopify_product_export_wizard" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_instance_wizard_company_rule" model="ir.rule">
+        <field name="name">Shopify onboarding by company</field>
+        <field name="model_id" ref="model_shopify_instance_wizard" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_instance_wizard_location_company_rule" model="ir.rule">
+        <field name="name">Shopify onboarding locations by company</field>
+        <field name="model_id" ref="model_shopify_instance_wizard_location" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+</odoo>

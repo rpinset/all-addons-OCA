@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_instance_view_list" model="ir.ui.view">
+        <field name="name">shopify.instance.list</field>
+        <field name="model">shopify.instance</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="shop_url" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="api_version" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-success="state == 'connected'"
+                    decoration-danger="state == 'error'"
+                    decoration-muted="state == 'draft'"
+                />
+                <field name="active" column_invisible="True" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_instance_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.form</field>
+        <field name="model">shopify.instance</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_test_connection"
+                        type="object"
+                        string="Test Connection"
+                        class="oe_highlight"
+                    />
+                    <button
+                        name="action_repair_webhook_subscriptions"
+                        type="object"
+                        string="Repair Webhooks"
+                        invisible="state != 'connected'"
+                    />
+                    <button
+                        name="action_duplicate_configuration"
+                        type="object"
+                        string="Duplicate Configuration"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="text-bg-danger"
+                        invisible="active"
+                    />
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" placeholder="Main Shopify Store" />
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Connection" name="connection">
+                            <group>
+                                <group string="Shopify Admin API">
+                                    <field
+                                        name="shop_url"
+                                        placeholder="example.myshopify.com"
+                                    />
+                                    <field name="access_token" password="True" />
+                                    <field name="api_version" />
+                                </group>
+                                <group string="Odoo">
+                                    <field
+                                        name="company_id"
+                                        groups="base.group_multi_company"
+                                    />
+                                    <field name="webhook_secret" password="True" />
+                                    <field name="accept_webhooks" />
+                                    <field name="webhook_max_payload_bytes" />
+                                    <field
+                                        name="webhook_health_checked_at"
+                                        readonly="1"
+                                    />
+                                    <field
+                                        name="webhook_missing_topics"
+                                        readonly="1"
+                                        invisible="not webhook_missing_topics"
+                                    />
+                                    <button
+                                        name="action_check_webhook_health"
+                                        type="object"
+                                        string="Check Webhook Health"
+                                        invisible="state != 'connected'"
+                                    />
+                                    <field name="log_retention_days" />
+                                    <field name="webhook_retention_days" />
+                                    <field name="active" />
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Products" name="products">
+                            <group>
+                                <group string="Import Behaviour">
+                                    <field name="product_create_if_missing" />
+                                    <field name="product_delete_behavior" />
+                                    <field name="product_pricelist_id" readonly="1" />
+                                    <field name="shop_currency_id" readonly="1" />
+                                </group>
+                                <group string="Operations">
+                                    <button
+                                        name="action_import_products"
+                                        type="object"
+                                        string="Import All Products"
+                                        class="oe_highlight"
+                                        icon="fa-download"
+                                    />
+                                </group>
+                            </group>
+                            <separator string="Field Ownership" />
+                            <p class="text-muted">
+                                The owner is authoritative. Synchronization never
+                                overwrites the owner side for that field.
+                            </p>
+                            <field
+                                name="field_mapping_ids"
+                                nolabel="1"
+                                domain="[('field', 'in',
+                                            ['name', 'description', 'price',
+                                             'images', 'status'])]"
+                            >
+                                <list editable="bottom" create="0" delete="0">
+                                    <field name="field" readonly="1" />
+                                    <field name="owner" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Inventory" name="inventory">
+                            <group>
+                                <group string="Quantity Source">
+                                    <field name="inventory_quantity_basis" />
+                                    <field name="inventory_allow_negative" />
+                                    <field name="inventory_import_enabled" />
+                                    <field
+                                        name="inventory_echo_window_seconds"
+                                        invisible="not inventory_import_enabled"
+                                    />
+                                </group>
+                                <group string="Operations">
+                                    <button
+                                        name="action_import_locations"
+                                        type="object"
+                                        string="Refresh Locations"
+                                        class="oe_highlight"
+                                        icon="fa-download"
+                                    />
+                                    <button
+                                        name="action_push_inventory"
+                                        type="object"
+                                        string="Reconcile Inventory"
+                                        icon="fa-refresh"
+                                    />
+                                </group>
+                            </group>
+                            <separator string="Location Mapping" />
+                            <p class="text-muted">
+                                Inventory writes are refused until each active
+                                Shopify location is mapped to an internal Odoo
+                                stock location.
+                            </p>
+                            <field name="location_binding_ids" nolabel="1">
+                                <list editable="bottom" create="0" delete="0">
+                                    <field
+                                        name="active"
+                                        widget="boolean_toggle"
+                                        readonly="1"
+                                    />
+                                    <field name="name" readonly="1" />
+                                    <field
+                                        name="warehouse_id"
+                                        domain="[('company_id', '=', parent.company_id)]"
+                                    />
+                                    <field
+                                        name="odoo_location_id"
+                                        domain="[('usage', '=', 'internal'), '|',
+                                                    ('company_id', '=', False),
+                                                    ('company_id', '=', parent.company_id)]"
+                                    />
+                                    <field
+                                        name="is_mapped"
+                                        widget="boolean_toggle"
+                                        readonly="1"
+                                    />
+                                    <field name="last_sync_date" readonly="1" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Customers" name="customers">
+                            <group>
+                                <group string="Customer Synchronization">
+                                    <field name="customer_export_enabled" />
+                                    <field name="guest_partner_id" readonly="1" />
+                                    <button
+                                        name="action_import_customers"
+                                        type="object"
+                                        string="Import All Customers"
+                                        class="oe_highlight"
+                                        icon="fa-download"
+                                    />
+                                </group>
+                                <group string="Shopify Plus B2B">
+                                    <field name="b2b_import_enabled" />
+                                    <field name="shopify_plus_state" widget="badge" />
+                                    <button
+                                        name="action_import_b2b"
+                                        type="object"
+                                        string="Detect and Import B2B"
+                                        invisible="not b2b_import_enabled"
+                                        icon="fa-building"
+                                    />
+                                </group>
+                            </group>
+                            <separator string="Customer Field Ownership" />
+                            <p class="text-muted">
+                                Odoo-owned fields export only when customer
+                                export is enabled. Shopify-owned fields import.
+                            </p>
+                            <field
+                                name="field_mapping_ids"
+                                nolabel="1"
+                                domain="[('field', 'in',
+                                            ['customer_name',
+                                             'customer_email',
+                                             'customer_phone',
+                                             'customer_addresses'])]"
+                            >
+                                <list editable="bottom" create="0" delete="0">
+                                    <field name="field" readonly="1" />
+                                    <field name="owner" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_instance_view_search" model="ir.ui.view">
+        <field name="name">shopify.instance.search</field>
+        <field name="model">shopify.instance</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="shop_url" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <filter
+                    name="connected"
+                    string="Connected"
+                    domain="[('state', '=', 'connected')]"
+                />
+                <filter
+                    name="errors"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <separator />
+                <filter
+                    name="archived"
+                    string="Archived"
+                    domain="[('active', '=', False)]"
+                />
+                <group>
+                    <filter
+                        name="group_company"
+                        string="Company"
+                        context="{'group_by': 'company_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_instance_action" model="ir.actions.act_window">
+        <field name="name">Shopify Instances</field>
+        <field name="res_model">shopify.instance</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="shopify_instance_view_search" />
+        <field name="context">{'search_default_connected': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Shopify instance
+            </p>
+            <p>
+                Configure an Admin API token and webhook signing secret for a shop.
+            </p>
+        </field>
+    </record>
+</odoo>

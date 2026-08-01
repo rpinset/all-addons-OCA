@@ -143,7 +143,7 @@ class SaleOrderLine(models.Model):
         so_line_linked_bol = self.filtered("blanket_order_line.taxes_id")
         for line in so_line_linked_bol:
             line.tax_ids = line.blanket_order_line.taxes_id
-        return super(SaleOrderLine, (self - so_line_linked_bol))._compute_price_unit()
+        return super(SaleOrderLine, (self - so_line_linked_bol))._compute_tax_ids()
 
     def _get_blanket_order_line_price_unit(self):
         """Return the blanket order line price in the sale line UoM."""

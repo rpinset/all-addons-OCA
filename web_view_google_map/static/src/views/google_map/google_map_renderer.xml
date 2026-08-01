@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="web_view_google_map.GoogleMapRenderer">
+        <div class="o_google_map_view h-100" t-ref="root">
+            <div t-ref="mapContainer" class="o_google_map_container h-100" />
+        </div>
+    </t>
+</templates>

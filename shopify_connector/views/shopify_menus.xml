@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="shopify_menu_root"
+        name="Shopify"
+        sequence="55"
+        groups="shopify_connector.group_shopify_manager"
+    />
+
+    <menuitem
+        id="shopify_menu_dashboard"
+        name="Dashboard"
+        parent="shopify_menu_root"
+        action="shopify_dashboard_action"
+        sequence="1"
+    />
+
+    <menuitem
+        id="shopify_menu_operations"
+        name="Operations"
+        parent="shopify_menu_root"
+        sequence="10"
+    />
+    <menuitem
+        id="shopify_menu_product_bindings"
+        name="Product Bindings"
+        parent="shopify_menu_operations"
+        action="shopify_product_template_action"
+        sequence="5"
+    />
+    <menuitem
+        id="shopify_menu_variant_bindings"
+        name="Variant Bindings"
+        parent="shopify_menu_operations"
+        action="shopify_product_variant_action"
+        sequence="6"
+    />
+    <menuitem
+        id="shopify_menu_collections"
+        name="Collections"
+        parent="shopify_menu_operations"
+        action="shopify_collection_action"
+        sequence="7"
+    />
+    <menuitem
+        id="shopify_menu_location_bindings"
+        name="Location Bindings"
+        parent="shopify_menu_operations"
+        action="shopify_location_action"
+        sequence="8"
+    />
+    <menuitem
+        id="shopify_menu_customer_bindings"
+        name="Customer Bindings"
+        parent="shopify_menu_operations"
+        action="shopify_customer_action"
+        sequence="9"
+    />
+    <menuitem
+        id="shopify_menu_order_bindings"
+        name="Order Bindings"
+        parent="shopify_menu_operations"
+        action="shopify_order_action"
+        sequence="12"
+    />
+    <menuitem
+        id="shopify_menu_fulfillments"
+        name="Fulfillments"
+        parent="shopify_menu_operations"
+        action="shopify_fulfillment_action"
+        sequence="13"
+    />
+    <menuitem
+        id="shopify_menu_fulfillment_orders"
+        name="Fulfillment Orders"
+        parent="shopify_menu_operations"
+        action="shopify_fulfillment_order_action"
+        sequence="14"
+    />
+    <menuitem
+        id="shopify_menu_company_bindings"
+        name="B2B Companies"
+        parent="shopify_menu_operations"
+        action="shopify_company_action"
+        sequence="10"
+    />
+    <menuitem
+        id="shopify_menu_catalog_bindings"
+        name="B2B Catalogs"
+        parent="shopify_menu_operations"
+        action="shopify_catalog_action"
+        sequence="11"
+    />
+    <menuitem
+        id="shopify_menu_webhook_events"
+        name="Webhook Events"
+        parent="shopify_menu_operations"
+        action="shopify_webhook_event_action"
+        sequence="10"
+    />
+    <menuitem
+        id="shopify_menu_logs"
+        name="Synchronization Logs"
+        parent="shopify_menu_operations"
+        action="shopify_log_action"
+        sequence="20"
+    />
+
+    <menuitem
+        id="shopify_menu_configuration"
+        name="Configuration"
+        parent="shopify_menu_root"
+        sequence="90"
+    />
+    <menuitem
+        id="shopify_menu_instances"
+        name="Instances"
+        parent="shopify_menu_configuration"
+        action="shopify_instance_action"
+        sequence="10"
+    />
+    <menuitem
+        id="shopify_menu_tax_mappings"
+        name="Tax Mappings"
+        parent="shopify_menu_configuration"
+        action="shopify_tax_mapping_action"
+        sequence="20"
+    />
+    <menuitem
+        id="shopify_menu_gateway_journals"
+        name="Gateway Journals"
+        parent="shopify_menu_configuration"
+        action="shopify_gateway_journal_action"
+        sequence="30"
+    />
+    <menuitem
+        id="shopify_menu_carrier_mappings"
+        name="Carrier Mappings"
+        parent="shopify_menu_configuration"
+        action="shopify_carrier_mapping_action"
+        sequence="40"
+    />
+</odoo>

@@ -1,0 +1,7 @@
+- Yopi Angi <yopiangi@gmail.com>
+- [Gray Matter Logic](https://www.graymatterlogic.com):
+  - Wolfgang Hall <whall@opensourceintegrators.com>
+  - Daniel Reis <dreis@opensourceintegrators.com>
+  - Ammar Officewala <aofficewala@opensourceintegrators.com>
+  - Maxime Chambreuil <maxime.chambreuil@graymatterlogic.com>
+- Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_instance_wizard_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.wizard.form</field>
+        <field name="model">shopify.instance.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Shopify Onboarding">
+                <field
+                    name="step"
+                    widget="statusbar"
+                    statusbar_visible="credentials,scopes,locations,taxes,policies,webhooks,imports"
+                />
+                <field name="instance_id" invisible="1" />
+                <group invisible="step != 'credentials'">
+                    <group string="Store">
+                        <field name="name" />
+                        <field name="shop_url" placeholder="example.myshopify.com" />
+                        <field name="company_id" groups="base.group_multi_company" />
+                    </group>
+                    <group string="Custom App Credentials">
+                        <field name="access_token" password="True" />
+                        <field name="webhook_secret" password="True" />
+                    </group>
+                </group>
+                <group invisible="step != 'scopes'">
+                    <group string="Required Scopes">
+                        <field name="required_scopes" nolabel="1" />
+                    </group>
+                    <group string="Granted Scopes">
+                        <field name="granted_scopes" nolabel="1" />
+                    </group>
+                    <group string="Missing Scopes" invisible="not missing_scopes">
+                        <field name="missing_scopes" nolabel="1" class="text-danger" />
+                    </group>
+                    <div
+                        class="alert alert-success"
+                        role="alert"
+                        invisible="not scope_check_ok"
+                    >
+                        All required Shopify Admin API scopes are granted.
+                    </div>
+                </group>
+                <group invisible="step != 'locations'">
+                    <p class="text-muted">
+                        Map every active Shopify location used for inventory
+                        or fulfillment to its Odoo warehouse and stock location.
+                    </p>
+                    <field name="location_line_ids" nolabel="1">
+                        <list editable="bottom" create="0" delete="0">
+                            <field name="company_id" column_invisible="True" />
+                            <field name="location_name" />
+                            <field
+                                name="warehouse_id"
+                                domain="[('company_id', '=', company_id)]"
+                            />
+                            <field
+                                name="odoo_location_id"
+                                domain="[('usage', '=', 'internal'), '|',
+                                            ('company_id', '=', False),
+                                            ('company_id', '=', company_id)]"
+                            />
+                        </list>
+                    </field>
+                </group>
+                <group invisible="step != 'taxes'">
+                    <group string="Shopify Tax Defaults">
+                        <field name="tax_country_id" />
+                        <field name="taxes_included" />
+                        <field name="tax_shipping" />
+                        <field name="tax_mapping_count" />
+                    </group>
+                    <p class="text-muted">
+                        Common Odoo percentage sales taxes matching the
+                        Shopify price-inclusion setting were mapped for the
+                        shop country. Review mappings after onboarding.
+                    </p>
+                </group>
+                <group invisible="step != 'policies'">
+                    <group string="Orders">
+                        <field name="order_confirmation_policy" />
+                        <field name="order_invoicing_policy" />
+                    </group>
+                    <group string="Products and Inventory">
+                        <field name="product_create_if_missing" />
+                        <field name="inventory_quantity_basis" />
+                        <field name="inventory_direction" />
+                    </group>
+                </group>
+                <group invisible="step != 'webhooks'">
+                    <div class="alert alert-info" role="alert">
+                        The next step creates missing Shopify webhook
+                        subscriptions and repairs callback URLs.
+                    </div>
+                </group>
+                <group invisible="step != 'imports'">
+                    <p class="text-muted">
+                        Selected imports run in order. Customers wait for the
+                        product bulk stage, and orders wait for customers.
+                    </p>
+                    <field name="import_products" />
+                    <field name="import_customers" />
+                    <field name="import_orders" />
+                </group>
+                <footer>
+                    <button
+                        name="action_test_connection"
+                        type="object"
+                        string="Test Connection"
+                        class="oe_highlight"
+                        invisible="step != 'credentials'"
+                    />
+                    <button
+                        name="action_check_scopes"
+                        type="object"
+                        string="Check API Scopes"
+                        class="oe_highlight"
+                        invisible="step != 'scopes'"
+                    />
+                    <button
+                        name="action_apply_locations"
+                        type="object"
+                        string="Apply Locations"
+                        class="oe_highlight"
+                        invisible="step != 'locations'"
+                    />
+                    <button
+                        name="action_continue_to_policies"
+                        type="object"
+                        string="Continue"
+                        class="oe_highlight"
+                        invisible="step != 'taxes'"
+                    />
+                    <button
+                        name="action_apply_policies"
+                        type="object"
+                        string="Apply Policies"
+                        class="oe_highlight"
+                        invisible="step != 'policies'"
+                    />
+                    <button
+                        name="action_setup_webhooks"
+                        type="object"
+                        string="Set Up Webhooks"
+                        class="oe_highlight"
+                        invisible="step != 'webhooks'"
+                    />
+                    <button
+                        name="action_finish"
+                        type="object"
+                        string="Finish and Queue Imports"
+                        class="oe_highlight"
+                        invisible="step != 'imports'"
+                    />
+                    <button string="Close" special="cancel" class="btn-secondary" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_instance_wizard_action" model="ir.actions.act_window">
+        <field name="name">Shopify Onboarding</field>
+        <field name="res_model">shopify.instance.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="shopify_instance_view_list_onboarding" model="ir.ui.view">
+        <field name="name">shopify.instance.list.onboarding</field>
+        <field name="model">shopify.instance</field>
+        <field name="inherit_id" ref="shopify_instance_view_list" />
+        <field name="arch" type="xml">
+            <xpath expr="//list/field[1]" position="before">
+                <header>
+                    <button
+                        name="%(shopify_instance_wizard_action)d"
+                        type="action"
+                        string="Start Onboarding"
+                        class="oe_highlight"
+                    />
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!--
+        Placeholder only — replace with a real key from Google Cloud Console.
+        Required APIs: Geocoding API, Maps JavaScript API, Places API.
+    -->
+    <function
+        model="ir.config_parameter"
+        name="set_param"
+        eval="('google.api_key_geocode', 'YOUR_GOOGLE_MAPS_API_KEY')"
+    />
+</odoo>

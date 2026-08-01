@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_binding_state_search_base" model="ir.ui.view">
+        <field name="name">shopify.binding.state.search.base</field>
+        <field name="model">shopify.product.variant</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_customer_operability_search" model="ir.ui.view">
+        <field name="name">shopify.customer.operability.search</field>
+        <field name="model">shopify.customer</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_company_operability_search" model="ir.ui.view">
+        <field name="name">shopify.company.operability.search</field>
+        <field name="model">shopify.company</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_catalog_operability_search" model="ir.ui.view">
+        <field name="name">shopify.catalog.operability.search</field>
+        <field name="model">shopify.catalog</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_order_operability_search" model="ir.ui.view">
+        <field name="name">shopify.order.operability.search</field>
+        <field name="model">shopify.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="order_name" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_source"
+                        string="Source"
+                        context="{'group_by': 'source'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_operability_search" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.operability.search</field>
+        <field name="model">shopify.fulfillment</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="shopify_id" />
+                <field name="order_binding_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="shopify_fulfillment_order_operability_search" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.order.operability.search</field>
+        <field name="model">shopify.fulfillment.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="shopify_id" />
+                <field name="order_binding_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_order_action" model="ir.actions.act_window">
+        <field name="name">Fulfillment Orders</field>
+        <field name="res_model">shopify.fulfillment.order</field>
+        <field name="view_mode">list,form</field>
+        <field
+            name="search_view_id"
+            ref="shopify_fulfillment_order_operability_search"
+        />
+    </record>
+
+    <record id="shopify_product_search_operability" model="ir.ui.view">
+        <field name="name">shopify.product.search.operability</field>
+        <field name="model">shopify.product.template</field>
+        <field name="inherit_id" ref="shopify_product_template_view_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='pending']" position="after">
+                <filter
+                    name="synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="shopify_collection_search_operability" model="ir.ui.view">
+        <field name="name">shopify.collection.search.operability</field>
+        <field name="model">shopify.collection</field>
+        <field name="inherit_id" ref="shopify_collection_view_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='errors']" position="after">
+                <filter
+                    name="pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="shopify_location_search_operability" model="ir.ui.view">
+        <field name="name">shopify.location.search.operability</field>
+        <field name="model">shopify.location</field>
+        <field name="inherit_id" ref="shopify_location_view_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='inactive']" position="after">
+                <separator />
+                <filter
+                    name="errors"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_retry_shopify_products" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_product_template" />
+        <field name="binding_model_id" ref="model_shopify_product_template" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_products" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_product_template" />
+        <field name="binding_model_id" ref="model_shopify_product_template" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_variants" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_product_variant" />
+        <field name="binding_model_id" ref="model_shopify_product_variant" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_variants" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_product_variant" />
+        <field name="binding_model_id" ref="model_shopify_product_variant" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_collections" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_collection" />
+        <field name="binding_model_id" ref="model_shopify_collection" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_collections" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_collection" />
+        <field name="binding_model_id" ref="model_shopify_collection" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_locations" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_location" />
+        <field name="binding_model_id" ref="model_shopify_location" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_locations" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_location" />
+        <field name="binding_model_id" ref="model_shopify_location" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_customers" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_customer" />
+        <field name="binding_model_id" ref="model_shopify_customer" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_customers" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_customer" />
+        <field name="binding_model_id" ref="model_shopify_customer" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_companies" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_company" />
+        <field name="binding_model_id" ref="model_shopify_company" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_companies" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_company" />
+        <field name="binding_model_id" ref="model_shopify_company" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_catalogs" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_catalog" />
+        <field name="binding_model_id" ref="model_shopify_catalog" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_catalogs" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_catalog" />
+        <field name="binding_model_id" ref="model_shopify_catalog" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_orders" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_order" />
+        <field name="binding_model_id" ref="model_shopify_order" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_orders" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_order" />
+        <field name="binding_model_id" ref="model_shopify_order" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_fulfillments" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_fulfillment" />
+        <field name="binding_model_id" ref="model_shopify_fulfillment" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_fulfillments" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_fulfillment" />
+        <field name="binding_model_id" ref="model_shopify_fulfillment" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_fulfillment_orders" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_fulfillment_order" />
+        <field name="binding_model_id" ref="model_shopify_fulfillment_order" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_fulfillment_orders" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_fulfillment_order" />
+        <field name="binding_model_id" ref="model_shopify_fulfillment_order" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+</odoo>

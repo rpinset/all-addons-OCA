@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="queue_channel_shopify" model="queue.job.channel">
+        <field name="name">shopify</field>
+        <field name="parent_id" ref="queue_job.channel_root" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record id="queue_channel_shopify_import" model="queue.job.channel">
+        <field name="name">import</field>
+        <field name="parent_id" ref="queue_channel_shopify" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record id="queue_channel_shopify_export" model="queue.job.channel">
+        <field name="name">export</field>
+        <field name="parent_id" ref="queue_channel_shopify" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record id="queue_channel_shopify_webhook" model="queue.job.channel">
+        <field name="name">webhook</field>
+        <field name="parent_id" ref="queue_channel_shopify" />
+        <field name="removal_interval">30</field>
+    </record>
+
+    <record id="job_instance_fetch_products" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_fetch_products_bulk</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_product_import" model="queue.job.function">
+        <field name="name">&lt;shopify.product.template&gt;._job_import_product</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_product_import_api" model="queue.job.function">
+        <field
+            name="name"
+        >&lt;shopify.product.template&gt;._job_import_product_from_api</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_product_archive" model="queue.job.function">
+        <field
+            name="name"
+        >&lt;shopify.product.template&gt;._job_archive_deleted_product</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_product_reconcile" model="queue.job.function">
+        <field
+            name="name"
+        >&lt;shopify.product.template&gt;._job_reconcile_missing_product</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_collection_import" model="queue.job.function">
+        <field name="name">&lt;shopify.collection&gt;._job_import_collection</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_collection_archive" model="queue.job.function">
+        <field name="name">&lt;shopify.collection&gt;._job_archive_collection</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_inventory_locations" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_import_locations</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_inventory_reconcile" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_reconcile_inventory</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_customer_fetch" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_fetch_customers_bulk</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_customer_b2b" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_import_b2b</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_customer_import" model="queue.job.function">
+        <field name="name">&lt;shopify.customer&gt;._job_import_customer</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_customer_import_api" model="queue.job.function">
+        <field
+            name="name"
+        >&lt;shopify.customer&gt;._job_import_customer_from_api</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_order_fetch" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_fetch_orders_bulk</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_order_import" model="queue.job.function">
+        <field name="name">&lt;shopify.order&gt;._job_import_order</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_order_import_api" model="queue.job.function">
+        <field name="name">&lt;shopify.order&gt;._job_import_order_from_api</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_draft_import_api" model="queue.job.function">
+        <field name="name">&lt;shopify.order&gt;._job_import_draft_from_api</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_fulfillment_refresh" model="queue.job.function">
+        <field name="name">&lt;shopify.order&gt;._job_refresh_fulfillment_orders</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+    <record id="job_fulfillment_import" model="queue.job.function">
+        <field name="name">&lt;shopify.fulfillment&gt;._job_import_from_shopify</field>
+        <field name="channel_id" ref="queue_channel_shopify_import" />
+    </record>
+
+    <record id="job_product_export" model="queue.job.function">
+        <field name="name">&lt;shopify.product.template&gt;._job_export_product</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+    <record id="job_customer_export" model="queue.job.function">
+        <field name="name">&lt;shopify.customer&gt;._job_export_customer</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+    <record id="job_inventory_push" model="queue.job.function">
+        <field
+            name="name"
+        >&lt;shopify.product.variant&gt;._job_push_inventory_level</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+    <record id="job_fulfillment_push" model="queue.job.function">
+        <field name="name">&lt;shopify.order&gt;._job_push_picking_fulfillment</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+    <record id="job_fulfillment_release" model="queue.job.function">
+        <field name="name">&lt;shopify.fulfillment.order&gt;._job_release_hold</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+    <record id="job_fulfillment_cancel" model="queue.job.function">
+        <field name="name">&lt;shopify.fulfillment&gt;._job_cancel_shopify</field>
+        <field name="channel_id" ref="queue_channel_shopify_export" />
+    </record>
+
+    <record id="job_webhook_dispatch" model="queue.job.function">
+        <field name="name">&lt;shopify.webhook.event&gt;._dispatch</field>
+        <field name="channel_id" ref="queue_channel_shopify_webhook" />
+    </record>
+</odoo>

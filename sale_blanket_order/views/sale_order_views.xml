@@ -34,7 +34,7 @@
             <xpath expr="//field[@name='order_line']" position="attributes">
                 <attribute
                     name="options"
-                >{'create': [('disable_adding_lines', '=', False)]}</attribute>
+                >{'hide_composition': True, 'hide_prices': True, 'subsections': True, 'create': [('disable_adding_lines', '=', False)]}</attribute>
             </xpath>
         </field>
     </record>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_payout_company_rule" model="ir.rule">
+        <field name="name">Shopify payouts by company</field>
+        <field name="model_id" ref="model_shopify_payout" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_payout_transaction_company_rule" model="ir.rule">
+        <field name="name">Shopify payout transactions by company</field>
+        <field name="model_id" ref="model_shopify_payout_transaction" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+
+    <record id="shopify_dispute_company_rule" model="ir.rule">
+        <field name="name">Shopify disputes by company</field>
+        <field name="model_id" ref="model_shopify_dispute" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+</odoo>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_fulfillment_order_view_list" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.order.list</field>
+        <field name="model">shopify.fulfillment.order</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="order_binding_id" />
+                <field name="assigned_location_id" />
+                <field name="assigned_location_name" invisible="assigned_location_id" />
+                <field name="fulfillment_status" widget="badge" />
+                <field name="request_status" />
+                <field name="is_held" widget="boolean_toggle" />
+                <field name="last_sync_date" />
+                <field name="state" widget="badge" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_order_view_form" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.order.form</field>
+        <field name="model">shopify.fulfillment.order</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <button
+                        name="action_refresh"
+                        type="object"
+                        string="Refresh"
+                        icon="fa-refresh"
+                    />
+                    <button
+                        name="action_release_hold"
+                        type="object"
+                        string="Release Hold"
+                        invisible="not is_held"
+                        class="oe_highlight"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="shopify_id" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="order_binding_id" readonly="1" />
+                            <field name="assigned_location_id" readonly="1" />
+                            <field name="assigned_location_shopify_id" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="fulfillment_status" readonly="1" />
+                            <field name="request_status" readonly="1" />
+                            <field name="is_held" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Remaining Lines">
+                            <field name="line_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="shopify_id" />
+                                    <field name="order_line_binding_id" />
+                                    <field name="total_quantity" />
+                                    <field name="remaining_quantity" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Holds">
+                            <field
+                                name="fulfillment_holds"
+                                readonly="1"
+                                widget="json"
+                            />
+                        </page>
+                        <page string="Supported Actions">
+                            <field
+                                name="supported_actions"
+                                readonly="1"
+                                widget="json"
+                            />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_view_list" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.list</field>
+        <field name="model">shopify.fulfillment</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="order_binding_id" />
+                <field name="picking_id" />
+                <field name="shopify_id" />
+                <field name="origin" />
+                <field name="fulfillment_status" widget="badge" />
+                <field name="tracking_company" />
+                <field name="tracking_number" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_view_form" model="ir.ui.view">
+        <field name="name">shopify.fulfillment.form</field>
+        <field name="model">shopify.fulfillment</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <button
+                        name="action_cancel_shopify"
+                        type="object"
+                        string="Cancel in Shopify"
+                        invisible="not shopify_id or fulfillment_status == 'CANCELLED'"
+                        confirm="Cancel this fulfillment in Shopify? This can create new fulfillment orders."
+                        class="btn-danger"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field
+                                name="shopify_id"
+                                readonly="1"
+                                placeholder="Pending Shopify fulfillment"
+                            />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="order_binding_id" readonly="1" />
+                            <field name="picking_id" readonly="1" />
+                            <field name="origin" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="fulfillment_status" readonly="1" />
+                            <field name="location_shopify_id" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                            <field
+                                name="error_message"
+                                readonly="1"
+                                invisible="not error_message"
+                            />
+                        </group>
+                    </group>
+                    <group string="Tracking">
+                        <field name="tracking_company" readonly="1" />
+                        <field name="tracking_number" readonly="1" />
+                        <field name="tracking_url" readonly="1" widget="url" />
+                    </group>
+                    <notebook>
+                        <page string="Fulfillment Orders">
+                            <field name="fulfillment_order_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="shopify_id" />
+                                    <field name="assigned_location_id" />
+                                    <field name="fulfillment_status" />
+                                    <field name="is_held" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Raw Payload">
+                            <field name="raw_payload" readonly="1" widget="json" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_fulfillment_action" model="ir.actions.act_window">
+        <field name="name">Fulfillments</field>
+        <field name="res_model">shopify.fulfillment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_carrier_mapping_view_list" model="ir.ui.view">
+        <field name="name">shopify.carrier.mapping.list</field>
+        <field name="model">shopify.carrier.mapping</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="instance_id" />
+                <field name="company_id" column_invisible="True" />
+                <field
+                    name="carrier_id"
+                    domain="['|', ('company_id', '=', False),
+                                ('company_id', '=', company_id)]"
+                />
+                <field name="tracking_company" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_carrier_mapping_action" model="ir.actions.act_window">
+        <field name="name">Carrier Mappings</field>
+        <field name="res_model">shopify.carrier.mapping</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="shopify_order_fulfillment_view_form" model="ir.ui.view">
+        <field name="name">shopify.order.form.fulfillment</field>
+        <field name="model">shopify.order</field>
+        <field name="inherit_id" ref="shopify_order_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_refresh_fulfillment_orders"
+                    type="object"
+                    string="Refresh Fulfillment Orders"
+                    invisible="is_draft"
+                    icon="fa-refresh"
+                />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Fulfillment Orders">
+                    <field name="fulfillment_order_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="shopify_id" />
+                            <field name="assigned_location_id" />
+                            <field
+                                name="assigned_location_name"
+                                invisible="assigned_location_id"
+                            />
+                            <field name="fulfillment_status" widget="badge" />
+                            <field name="request_status" />
+                            <field name="is_held" />
+                            <field name="last_sync_date" />
+                        </list>
+                    </field>
+                </page>
+                <page string="Fulfillments">
+                    <field name="fulfillment_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="shopify_id" />
+                            <field name="picking_id" />
+                            <field name="origin" />
+                            <field name="fulfillment_status" />
+                            <field name="tracking_number" />
+                            <field name="state" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_instance_fulfillment_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.form.fulfillment</field>
+        <field name="model">shopify.instance</field>
+        <field name="inherit_id" ref="shopify_instance_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Fulfillment" name="fulfillment">
+                    <group>
+                        <group string="Odoo to Shopify">
+                            <field name="fulfillment_notify_customer" />
+                            <p class="text-muted">
+                                Completed outgoing deliveries are sent through
+                                Shopify Fulfillment Orders in the background.
+                            </p>
+                        </group>
+                        <group string="Shopify to Odoo">
+                            <field name="fulfillment_auto_validate_webhook" />
+                            <p class="text-muted">
+                                Disabled is log-only. Enable only when external
+                                fulfillment apps are authoritative for shipping.
+                            </p>
+                        </group>
+                    </group>
+                    <separator string="Carrier Tracking Companies" />
+                    <field name="carrier_mapping_ids">
+                        <list editable="bottom">
+                            <field name="company_id" column_invisible="True" />
+                            <field
+                                name="carrier_id"
+                                domain="['|', ('company_id', '=', False),
+                                            ('company_id', '=', parent.company_id)]"
+                            />
+                            <field name="tracking_company" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="stock_picking_view_form_shopify_fulfillment" model="ir.ui.view">
+        <field name="name">stock.picking.form.shopify.fulfillment</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Shopify" invisible="not shopify_fulfillment_ids">
+                    <field name="shopify_fulfillment_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="instance_id" />
+                            <field name="shopify_id" />
+                            <field name="fulfillment_status" />
+                            <field name="tracking_number" />
+                            <field name="state" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

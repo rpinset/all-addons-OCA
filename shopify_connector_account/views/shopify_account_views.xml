@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_payout_view_list" model="ir.ui.view">
+        <field name="name">shopify.payout.list</field>
+        <field name="model">shopify.payout</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="reference" />
+                <field name="issued_at" />
+                <field name="payout_status" widget="badge" />
+                <field name="gross_amount" />
+                <field name="fee_amount" />
+                <field name="net_amount" />
+                <field name="currency_id" column_invisible="True" />
+                <field name="unmatched_count" decoration-danger="unmatched_count" />
+                <field name="entry_id" />
+                <field name="state" widget="badge" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_payout_view_form" model="ir.ui.view">
+        <field name="name">shopify.payout.form</field>
+        <field name="model">shopify.payout</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <button
+                        name="action_generate_entry"
+                        type="object"
+                        string="Generate Entry"
+                        class="oe_highlight"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="reference" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                            <field name="legacy_resource_id" readonly="1" />
+                            <field name="issued_at" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="payout_status" readonly="1" />
+                            <field name="transaction_type" readonly="1" />
+                            <field name="entry_id" readonly="1" />
+                            <field name="unmatched_count" readonly="1" />
+                            <field
+                                name="error_message"
+                                readonly="1"
+                                invisible="not error_message"
+                            />
+                        </group>
+                    </group>
+                    <group string="Shopify Summary">
+                        <field name="currency_id" readonly="1" />
+                        <field name="gross_amount" readonly="1" />
+                        <field name="fee_amount" readonly="1" />
+                        <field name="net_amount" readonly="1" />
+                    </group>
+                    <notebook>
+                        <page string="Balance Transactions">
+                            <field name="transaction_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="transaction_date" />
+                                    <field name="display_type" />
+                                    <field name="source_type" />
+                                    <field name="order_binding_id" />
+                                    <field name="amount" />
+                                    <field name="fee" />
+                                    <field name="net" />
+                                    <field name="currency_id" column_invisible="True" />
+                                    <field name="route" />
+                                    <field name="reconciliation_account_id" />
+                                    <field
+                                        name="is_unmatched"
+                                        widget="boolean_toggle"
+                                    />
+                                    <field name="unmatched_reason" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Summary">
+                            <field name="summary" readonly="1" widget="json" />
+                        </page>
+                        <page string="Raw Payload">
+                            <field name="raw_payload" readonly="1" widget="json" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_payout_action" model="ir.actions.act_window">
+        <field name="name">Shopify Payments Payouts</field>
+        <field name="res_model">shopify.payout</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_dispute_view_list" model="ir.ui.view">
+        <field name="name">shopify.dispute.list</field>
+        <field name="model">shopify.dispute</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="shopify_id" />
+                <field name="order_binding_id" />
+                <field name="initiated_at" />
+                <field name="dispute_type" />
+                <field name="dispute_status" widget="badge" />
+                <field name="reason" />
+                <field name="amount" />
+                <field name="currency_id" />
+                <field name="evidence_due_by" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_dispute_view_form" model="ir.ui.view">
+        <field name="name">shopify.dispute.form</field>
+        <field name="model">shopify.dispute</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="shopify_id" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="order_binding_id" readonly="1" />
+                            <field name="dispute_type" readonly="1" />
+                            <field name="dispute_status" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="currency_id" readonly="1" />
+                            <field name="amount" readonly="1" />
+                            <field name="reason" readonly="1" />
+                            <field name="network_reason_code" readonly="1" />
+                        </group>
+                    </group>
+                    <group string="Evidence Timeline">
+                        <field name="initiated_at" readonly="1" />
+                        <field name="evidence_due_by" readonly="1" />
+                        <field name="evidence_sent_on" readonly="1" />
+                        <field name="finalized_on" readonly="1" />
+                    </group>
+                    <field name="raw_payload" readonly="1" widget="json" />
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_dispute_action" model="ir.actions.act_window">
+        <field name="name">Shopify Payments Disputes</field>
+        <field name="res_model">shopify.dispute</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_instance_financial_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.form.financial</field>
+        <field name="model">shopify.instance</field>
+        <field name="inherit_id" ref="shopify_connector.shopify_instance_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Financial" name="financial">
+                    <group>
+                        <group string="Shopify Payments">
+                            <field name="shopify_payments_state" widget="badge" />
+                            <field
+                                name="payout_journal_id"
+                                domain="[('company_id', '=', company_id),
+                                            ('type', 'in', ('bank', 'cash'))]"
+                            />
+                            <field name="payout_fee_account_id" />
+                            <field name="payout_adjustment_account_id" />
+                            <field name="payout_auto_post" />
+                            <field name="gift_card_liability_account_id" readonly="1" />
+                        </group>
+                        <group string="Currency Differences">
+                            <field
+                                name="payout_currency_gain_account_id"
+                                placeholder="Company default"
+                            />
+                            <field
+                                name="payout_currency_loss_account_id"
+                                placeholder="Company default"
+                            />
+                        </group>
+                        <group string="Manual Import">
+                            <field name="payout_import_date_from" />
+                            <field name="payout_import_date_to" />
+                            <button
+                                name="action_import_payouts"
+                                type="object"
+                                string="Import Payouts and Disputes"
+                                class="oe_highlight"
+                                icon="fa-download"
+                            />
+                        </group>
+                    </group>
+                    <separator string="Imported Payouts" />
+                    <field name="payout_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="reference" />
+                            <field name="issued_at" />
+                            <field name="payout_status" />
+                            <field name="net_amount" />
+                            <field name="currency_id" />
+                            <field name="unmatched_count" />
+                            <field name="entry_id" />
+                            <field name="state" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <menuitem
+        id="shopify_menu_accounting"
+        name="Accounting"
+        parent="shopify_connector.shopify_menu_root"
+        sequence="50"
+    />
+    <menuitem
+        id="shopify_menu_payouts"
+        name="Payouts"
+        parent="shopify_menu_accounting"
+        action="shopify_payout_action"
+        sequence="10"
+    />
+    <menuitem
+        id="shopify_menu_disputes"
+        name="Disputes"
+        parent="shopify_menu_accounting"
+        action="shopify_dispute_action"
+        sequence="20"
+    />
+</odoo>

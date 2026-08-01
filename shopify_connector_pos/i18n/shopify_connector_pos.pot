@@ -1,0 +1,289 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shopify_connector_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_instance_pos_view_form
+msgid "Cash Rounding"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_rounding_account_id
+msgid "Cash Rounding Account"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__cash_rounding_amount
+msgid "Cash Rounding Amount"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_rounding_product_id
+msgid "Cash Rounding Product"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid ""
+"Configure the POS cash-rounding product and account before importing rounded"
+" cash orders."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_auto_confirm
+msgid "Confirm POS Orders"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order__display_name
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__display_name
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_location__display_name
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Errors"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__exchange_order_ids
+msgid "Exchange Orders"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "Exchange orders must use one Shopify instance."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order__id
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order_line__id
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__id
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_location__id
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__id
+msgid "ID"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_enabled
+msgid "Import Shopify POS Orders"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Instance"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "Map POS location %s to an Odoo warehouse."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "No Shopify location mapping matches POS location %s."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,help:shopify_connector_pos.field_shopify_location__pos_warehouse_id
+msgid ""
+"Optional warehouse used for POS orders. The inventory warehouse mapping is "
+"used when this is empty."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_instance_pos_view_form
+msgid "Order Routing"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__exchange_origin_id
+msgid "Original Exchange Order"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__exchange_origin_shopify_id
+msgid "Original Exchange Order GID"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_instance_pos_view_form
+msgid "POS"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_pos_view_form
+msgid "POS Exchanges"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_instance_pos_view_form
+msgid "POS Location Routing"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "POS Orders"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_location__pos_warehouse_id
+msgid "POS Warehouse Override"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "POS delivery %s still requires manual validation."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Pending"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Pending POS"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model,name:shopify_connector_pos.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model,name:shopify_connector_pos.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model,name:shopify_connector_pos.model_shopify_instance
+msgid "Shopify Instance"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model,name:shopify_connector_pos.model_shopify_location
+msgid "Shopify Location Binding"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model,name:shopify_connector_pos.model_shopify_order
+msgid "Shopify Order Binding"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order_line__shopify_pos_rounding
+msgid "Shopify POS Cash Rounding"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_order__pos_location_id
+msgid "Shopify POS Location"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_sale_order__shopify_pos_order
+msgid "Shopify POS Order"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "Shopify POS cash rounding"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Source"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "State"
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
+msgid "Synced"
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid ""
+"The POS cash-rounding product does not use the configured rounding account."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS cash-rounding product must be a service product."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS location must use the order's Shopify instance."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS rounding account must be available to the company."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS rounding product must be a service product."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS rounding product must belong to the instance company."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid ""
+"The POS rounding product's effective income account must match the "
+"configured rounding account."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The POS warehouse must belong to the instance company."
+msgstr ""
+
+#. module: shopify_connector_pos
+#. odoo-python
+#: code:addons/shopify_connector_pos/models/pos.py:0
+msgid "The Shopify POS order has no retail location."
+msgstr ""
+
+#. module: shopify_connector_pos
+#: model:ir.model.fields,field_description:shopify_connector_pos.field_shopify_instance__pos_auto_fulfill
+msgid "Validate POS Deliveries"
+msgstr ""
