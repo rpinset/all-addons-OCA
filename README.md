@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-07-28 16:28 UTC** (elapsed 74s)
+Last build: **2026-08-01 06:15 UTC** (elapsed 67s)
 
 - Repos integrated: **117**
 - Canonical modules: **2099**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **139**
+- Skipped repos (no branch / no module): **140**
 
 ## Integrated repos
 
@@ -43,7 +43,7 @@ Last build: **2026-07-28 16:28 UTC** (elapsed 74s)
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [e-commerce](https://github.com/OCA/e-commerce) | 55 | 45837a2 2026-06-04 OCA-git-bot [BOT] post-merge updates |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
-| [edi](https://github.com/OCA/edi) | 22 | 2fbde62 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
+| [edi](https://github.com/OCA/edi) | 22 | c6983af 2026-07-31 Pedro M. Baeza Merge pull request #1377 from Tecnativa/15.0-UPD-copier |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [field-service](https://github.com/OCA/field-service) | 46 | 6344130 2026-06-05 bigfoot88 Translated using Weblate (Chinese (Simplified) (zh_CN)) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -83,7 +83,7 @@ Last build: **2026-07-28 16:28 UTC** (elapsed 74s)
 | [multi-company](https://github.com/OCA/multi-company) | 19 | b32c747 2026-04-06 Pedro M. Baeza Merge pull request #980 from qrtl/15.0-copier |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 1 | f40efd6 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [operating-unit](https://github.com/OCA/operating-unit) | 36 | 0e22e8c 2025-10-14 OCA-git-bot [BOT] post-merge updates |
-| [partner-contact](https://github.com/OCA/partner-contact) | 65 | 1616c04 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [partner-contact](https://github.com/OCA/partner-contact) | 65 | 52c4359 2026-07-30 Pedro M. Baeza Merge pull request #2413 from hbrunn/15.0-fix-ci |
 | [payroll](https://github.com/OCA/payroll) | 3 | 7a7d13a 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | 3d4a18e 2026-06-18 OCA-git-bot [BOT] post-merge updates |
@@ -95,7 +95,7 @@ Last build: **2026-07-28 16:28 UTC** (elapsed 74s)
 | [queue](https://github.com/OCA/queue) | 8 | 7b617b6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [repair](https://github.com/OCA/repair) | 12 | 89affc7 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [report-print-send](https://github.com/OCA/report-print-send) | 3 | f981cbc 2025-04-03 Weblate Update translation files |
-| [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | 5b9bca0 2026-06-06 Pablo Castelo Translated using Weblate (Galician) |
+| [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | 109902a 2026-07-27 Morita Shinnosuke [UPD] copier update |
 | [rest-framework](https://github.com/OCA/rest-framework) | 14 | c537ec2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [rma](https://github.com/OCA/rma) | 7 | 4e2b32d 2026-05-13 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |

@@ -1909,6 +1909,9 @@ and promote its widespread use.
 ## From OCA/edi
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# edi
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/edi&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/edi/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/edi/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/edi/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/edi/actions/workflows/test.yml?query=branch%3A15.0)
@@ -1916,8 +1919,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/edi-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/edi-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# edi
 
 TODO: add repo description.
 
@@ -4442,6 +4443,9 @@ and promote its widespread use.
 ## From OCA/partner-contact
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Partner Contact
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/partner-contact&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/partner-contact/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/partner-contact/actions/workflows/test.yml?query=branch%3A15.0)
@@ -4449,8 +4453,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/partner-contact-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/partner-contact-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Partner Contact
 
 Contact-related odoo addons.
 
@@ -5325,6 +5327,9 @@ and promote its widespread use.
 ## From OCA/reporting-engine
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# reporting-engine
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/reporting-engine&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/reporting-engine/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/reporting-engine/actions/workflows/test.yml?query=branch%3A15.0)
@@ -5332,8 +5337,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/reporting-engine-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/reporting-engine-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# reporting-engine
 
 TODO: add repo description.
 

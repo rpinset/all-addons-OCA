@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-07-28 16:28 UTC
+Generated 2026-08-01 06:15 UTC
 
-Total skipped: **139**
+Total skipped: **140**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **60**
+Count: **61**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -17,6 +17,7 @@ Count: **60**
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [15.0](https://github.com/OCA/bank-payment-alternative/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [cim](https://github.com/OCA/cim) | [15.0](https://github.com/OCA/cim/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [15.0](https://github.com/OCA/connector-magento-php-extension/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [connector-shopify](https://github.com/OCA/connector-shopify) | [15.0](https://github.com/OCA/connector-shopify/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [cooperative](https://github.com/OCA/cooperative) | [15.0](https://github.com/OCA/cooperative/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [15.0](https://github.com/OCA/crowdfunding/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [15.0](https://github.com/OCA/edi-ediversa/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
