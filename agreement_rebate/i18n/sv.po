@@ -26,7 +26,8 @@ msgstr "% Dto"
 msgid ""
 "<i class=\"fa fa-filter\"/>\n"
 "                            You can create a filter to apply the rebate.\n"
-"                            Categories, products, variants, generic conditions to reuse or a custom filter"
+"                            Categories, products, variants, generic "
+"conditions to reuse or a custom filter"
 msgstr ""
 "<i class=\"fa fa-filter\"/>\n"
 "                            Du kan skapa ett filter för att tillämpa "
@@ -553,6 +554,16 @@ msgstr "Avräkning av rabatter"
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_target
 msgid "Rebate Target"
 msgstr "Mål för återbetalning"
+
+#. module: agreement_rebate
+#: model:agreement.type,name:agreement_rebate.agreement_type_rebate_purchase
+msgid "Rebate agreements for purchases"
+msgstr ""
+
+#. module: agreement_rebate
+#: model:agreement.type,name:agreement_rebate.agreement_type_rebate_sale
+msgid "Rebate agreements for sales"
+msgstr ""
 
 #. module: agreement_rebate
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__name

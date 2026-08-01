@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_choose_delivery_carrier_form" model="ir.ui.view">
+        <field name="name">view.choose.delivery.carrier.form</field>
+        <field name="model">choose.delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.choose_delivery_carrier_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='carrier_id']" position="after">
+                <field
+                    name="route_area_id"
+                    invisible="delivery_type != 'route_planning'"
+                    required="delivery_type == 'route_planning'"
+                    options="{'no_create': True}"
+                    groups="route_planning.group_route_planning_user"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

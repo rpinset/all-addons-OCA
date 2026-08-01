@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2024-05-20 19:35+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"Last-Translator: Rodrigo Macedo "
+"<sottomaiormacedotec@users.noreply.translation.odoo-community.org>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -60,6 +60,16 @@ msgid "Attachment Count"
 msgstr "Contagem de Anexos"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_close
+msgid "Closed"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_product__service_tracking
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_template__service_tracking
 msgid "Create on Order"
@@ -79,6 +89,11 @@ msgstr "Criado em"
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__display_name
 msgid "Display Name"
 msgstr "Exibir Nome"
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_draft
+msgid "Draft"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_follower_ids
@@ -118,6 +133,11 @@ msgid ""
 msgstr ""
 "Se não estiver marcada, permitirá você ocultar este perfil de serviço sem "
 "removê-lo."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_progress
+msgid "In Progress"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_is_follower
@@ -236,9 +256,19 @@ msgid "Stage"
 msgstr "Estágio"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_suspend
+msgid "Suspended"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,help:agreement_serviceprofile.field_agreement_serviceprofile__partner_id
 msgid "The customer or vendor this agreement is related to."
 msgstr "O cliente ou fornecedor ao qual este contrato está relacionado."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_renew
+msgid "To Renew"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_stage__stage_type

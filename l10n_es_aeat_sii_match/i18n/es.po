@@ -6,6 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-30 11:29+0000\n"
 "PO-Revision-Date: 2026-04-13 17:16+0000\n"
 "Last-Translator: Ed-Spain <eduamoros@gmail.com>\n"
 "Language-Team: \n"
@@ -592,11 +593,12 @@ msgstr "Resumen"
 #. odoo-python
 #: code:addons/l10n_es_aeat_sii_match/models/account_move.py:0
 msgid ""
-"The invoices must be posted and have a CSV in order to be matched.\n"
+"The invoices must be posted and either already sent to the SII or have a "
+"failed send, in order to be matched.\n"
 "Non-matchable invoices: %(invoice_names)s"
 msgstr ""
-"Las facturas tienen que estar enviadas y con CSV para poder ser "
-"contrastadas.\n"
+"Las facturas tienen que estar contabilizadas y, o bien ya enviadas al SII, o "
+"bien con un envío fallido, para poder ser contrastadas.\n"
 "Facturas no contrastables: %(invoice_names)s"
 
 #. module: l10n_es_aeat_sii_match

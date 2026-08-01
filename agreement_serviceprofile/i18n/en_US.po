@@ -59,6 +59,16 @@ msgid "Attachment Count"
 msgstr ""
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_close
+msgid "Closed"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_product__service_tracking
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_template__service_tracking
 msgid "Create on Order"
@@ -77,6 +87,11 @@ msgstr ""
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__display_name
 msgid "Display Name"
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_draft
+msgid "Draft"
 msgstr ""
 
 #. module: agreement_serviceprofile
@@ -114,6 +129,11 @@ msgstr ""
 msgid ""
 "If unchecked, it will allow you to hide this service profile without "
 "removing it."
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_progress
+msgid "In Progress"
 msgstr ""
 
 #. module: agreement_serviceprofile
@@ -233,8 +253,18 @@ msgid "Stage"
 msgstr ""
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_suspend
+msgid "Suspended"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,help:agreement_serviceprofile.field_agreement_serviceprofile__partner_id
 msgid "The customer or vendor this agreement is related to."
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_renew
+msgid "To Renew"
 msgstr ""
 
 #. module: agreement_serviceprofile

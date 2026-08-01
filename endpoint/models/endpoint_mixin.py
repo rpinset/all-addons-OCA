@@ -69,7 +69,7 @@ class EndpointMixin(models.AbstractModel):
             rec._validate_exec_mode()
 
     def _validate_exec_mode(self):
-        validator = getattr(self, "_validate_exec__" + self.exec_mode, lambda x: True)
+        validator = getattr(self, "_validate_exec__" + self.exec_mode, lambda: True)
         validator()
 
     def _validate_exec__code(self):

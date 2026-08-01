@@ -59,6 +59,16 @@ msgid "Attachment Count"
 msgstr "Nombre de pièces jointes"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_close
+msgid "Closed"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_product__service_tracking
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_template__service_tracking
 msgid "Create on Order"
@@ -78,6 +88,11 @@ msgstr "Créé le"
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__display_name
 msgid "Display Name"
 msgstr "Nom d'affichage"
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_draft
+msgid "Draft"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_follower_ids
@@ -117,6 +132,11 @@ msgid ""
 msgstr ""
 "Si cette case est décochée, cela vous permettra de masquer ce profil de "
 "service sans le supprimer."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_progress
+msgid "In Progress"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_is_follower
@@ -235,9 +255,19 @@ msgid "Stage"
 msgstr "Étape"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_suspend
+msgid "Suspended"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,help:agreement_serviceprofile.field_agreement_serviceprofile__partner_id
 msgid "The customer or vendor this agreement is related to."
 msgstr "Le client ou le fournisseur auquel cet accord est lié."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_renew
+msgid "To Renew"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_stage__stage_type

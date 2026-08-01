@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2026-03-17 18:45+0000\n"
+"PO-Revision-Date: 2026-07-29 16:46+0000\n"
 "Last-Translator: Arnaud LAYEC <arnaudlayec@gmail.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
@@ -169,22 +169,22 @@ msgstr ""
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
 msgid "<strong>Execution</strong>"
-msgstr ""
+msgstr "<strong>Exécution</strong>"
 
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
 msgid "<strong>Partner</strong>"
-msgstr ""
+msgstr "<strong>Contact</strong>"
 
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
 msgid "<strong>Payment Date</strong>"
-msgstr ""
+msgstr "<strong>Date de paiement</strong>"
 
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
 msgid "<strong>Payment Method</strong>"
-msgstr ""
+msgstr "<strong>Méthode de paiement</strong>"
 
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
@@ -194,7 +194,7 @@ msgstr "<strong>Total</strong>"
 #. module: account_payment_batch_oca
 #: model_terms:ir.ui.view,arch_db:account_payment_batch_oca.print_account_payment_order_document
 msgid "<strong>Used Account</strong>"
-msgstr ""
+msgstr "<strong>Compte utilisé</strong>"
 
 #. module: account_payment_batch_oca
 #: model:ir.model.constraint,message:account_payment_batch_oca.constraint_account_payment_line_name_company_unique

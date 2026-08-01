@@ -25,6 +25,7 @@
                     string="VAT Exemption Reasons"
                     domain="[('type', '=', 'tax_vatex')]"
                 />
+                <separator />
             </filter>
         </field>
     </record>

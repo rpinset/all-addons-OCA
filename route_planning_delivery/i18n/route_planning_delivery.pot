@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: route_planning_delivery
+#: model:ir.model,name:route_planning_delivery.model_choose_delivery_carrier
+msgid "Delivery Carrier Selection Wizard"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model.fields,field_description:route_planning_delivery.field_delivery_carrier__delivery_type
+#: model:ir.model.fields,field_description:route_planning_delivery.field_sale_order__delivery_type
+msgid "Provider"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model.fields,field_description:route_planning_delivery.field_choose_delivery_carrier__route_area_id
+msgid "Route Area"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model.fields.selection,name:route_planning_delivery.selection__delivery_carrier__delivery_type__route_planning
+msgid "Route Planning"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:delivery.carrier,name:route_planning_delivery.delivery_carrier_route_demo
+#: model:product.template,name:route_planning_delivery.product_route_demo_product_template
+msgid "Route planning"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model,name:route_planning_delivery.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model,name:route_planning_delivery.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr ""
+
+#. module: route_planning_delivery
+#. odoo-python
+#: code:addons/route_planning_delivery/models/delivery_carrier.py:0
+msgid ""
+"The delivery carrier: %s with provider type: 'Route Planning' cannot create "
+"shipments, please change the integration level to ' Get rate'."
+msgstr ""
+
+#. module: route_planning_delivery
+#. odoo-python
+#: code:addons/route_planning_delivery/models/delivery_carrier.py:0
+msgid ""
+"The delivery carrier: %s with provider type: 'Route Planning' cannot create "
+"shipments."
+msgstr ""

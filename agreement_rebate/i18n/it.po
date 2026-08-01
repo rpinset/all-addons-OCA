@@ -557,6 +557,16 @@ msgid "Rebate Target"
 msgstr "Obiettivo sconto"
 
 #. module: agreement_rebate
+#: model:agreement.type,name:agreement_rebate.agreement_type_rebate_purchase
+msgid "Rebate agreements for purchases"
+msgstr ""
+
+#. module: agreement_rebate
+#: model:agreement.type,name:agreement_rebate.agreement_type_rebate_sale
+msgid "Rebate agreements for sales"
+msgstr ""
+
+#. module: agreement_rebate
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__name
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_line__rebate_condition_id
 #: model:ir.model.fields.selection,name:agreement_rebate.selection__agreement_rebate_line__rebate_target__condition

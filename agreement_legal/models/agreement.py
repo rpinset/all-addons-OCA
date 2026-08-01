@@ -226,7 +226,7 @@ class Agreement(models.Model):
         "customer address.(Address Type = Other)",
     )
     signed_contract_filename = fields.Char(string="Filename")
-    signed_contract = fields.Binary(string="Signed Document", tracking=True)
+    signed_contract = fields.Binary(string="Signed Document")
     template_id = fields.Many2one(
         "agreement", string="Template", domain=[("is_template", "=", True)]
     )
@@ -266,6 +266,72 @@ class Agreement(models.Model):
                     user_id=agreement.agreement_type_id.review_user_id.id,
                     note=_("Your activity is going to end soon"),
                 )
+
+    @api.model
+    def recompute_from_template(self):
+        agreements = self.browse(self.env.context.get("active_ids", [])).filtered(
+            lambda a: a.template_id
+        )
+        for agreement in agreements:
+            template = agreement.template_id
+            agreement.recital_ids.unlink()
+            agreement.sections_ids.unlink()
+            agreement.clauses_ids.unlink()
+            agreement.appendix_ids.unlink()
+            agreement.line_ids.unlink()
+            agreement.child_agreements_ids.unlink()
+            for recital in template.recital_ids:
+                recital.copy({"agreement_id": agreement.id})
+
+            section_map = {}
+            for section in template.sections_ids:
+                new_section = section.copy(
+                    {
+                        "agreement_id": agreement.id,
+                        # Copy clauses explicitly below to avoid duplicated clauses.
+                        "clauses_ids": False,
+                    }
+                )
+                section_map[section.id] = new_section.id
+
+            for clause in template.clauses_ids:
+                values = {"agreement_id": agreement.id}
+                if clause.section_id:
+                    values["section_id"] = section_map.get(clause.section_id.id)
+                clause.copy(values)
+
+            for appendix in template.appendix_ids:
+                appendix.copy({"agreement_id": agreement.id})
+
+            for line in template.line_ids:
+                line.copy({"agreement_id": agreement.id})
+
+            for child in template.child_agreements_ids:
+                child.copy({"parent_agreement_id": agreement.id})
+
+            agreement.write(
+                {
+                    "reviewed_user_id": self.env.uid,
+                    "reviewed_date": fields.Date.today(),
+                }
+            )
+            agreement.message_post(
+                body=_("Agreement recomputed from template %s") % template.display_name
+            )
+
+    def action_open_recompute_from_template_wizard(self):
+        self.ensure_one()
+        return {
+            "name": _("Recompute From Template"),
+            "res_model": "recompute.agreement.from.template.wizard",
+            "type": "ir.actions.act_window",
+            "view_mode": "form",
+            "target": "new",
+            "context": {
+                "default_agreement_id": self.id,
+                "default_template_id": self.template_id.id,
+            },
+        }
 
     # compute the dynamic content for jinja expression
     def _compute_dynamic_description(self):
@@ -407,8 +473,23 @@ class Agreement(models.Model):
         default = dict(default or {})
         if not default.get("code", False):
             default.setdefault("code", _("New"))
+        # Prevent automatic clause copy through sections to avoid duplication.
+        default.setdefault("sections_ids", [])
         res = super().copy(default)
-        res.sections_ids.mapped("clauses_ids").write({"agreement_id": res.id})
+        section_map = {}
+        for section in self.sections_ids:
+            new_section = section.copy(
+                {
+                    "agreement_id": res.id,
+                    "clauses_ids": False,
+                }
+            )
+            section_map[section.id] = new_section.id
+        for clause in self.clauses_ids:
+            values = {"agreement_id": res.id}
+            if clause.section_id:
+                values["section_id"] = section_map.get(clause.section_id.id)
+            clause.copy(values)
         return res
 
     def _exclude_readonly_field(self):

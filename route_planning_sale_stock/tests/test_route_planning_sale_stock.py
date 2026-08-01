@@ -34,6 +34,8 @@ class TestRoutePlanningSaleStock(RouteCommon):
         cls.order = order_form.save()
 
     def test_sale_order_with_route_area(self):
+        # route_planning_delivery compatibility
+        self.order.route_area_id = self.area_north
         self.order.action_confirm()
         self.assertEqual(self.order.state, "sale")
         picking = self.order.picking_ids

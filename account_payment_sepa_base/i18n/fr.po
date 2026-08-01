@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-10 02:10+0000\n"
-"PO-Revision-Date: 2026-02-27 12:09+0000\n"
+"PO-Revision-Date: 2026-07-29 16:46+0000\n"
 "Last-Translator: Arnaud LAYEC <arnaudlayec@gmail.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
@@ -78,12 +78,12 @@ msgstr "Annuité"
 #: model_terms:ir.ui.view,arch_db:account_payment_sepa_base.account_pain_regulatory_reporting_form
 #: model_terms:ir.ui.view,arch_db:account_payment_sepa_base.account_pain_regulatory_reporting_search
 msgid "Archived"
-msgstr ""
+msgstr "Archivé"
 
 #. module: account_payment_sepa_base
 #: model:ir.model,name:account_payment_sepa_base.model_res_partner_bank
 msgid "Bank Accounts"
-msgstr ""
+msgstr "Comptes bancaires"
 
 #. module: account_payment_sepa_base
 #: model:ir.model.fields,field_description:account_payment_sepa_base.field_account_payment_order__batch_booking

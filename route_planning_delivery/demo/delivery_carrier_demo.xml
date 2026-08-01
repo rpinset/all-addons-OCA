@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_route_demo" model="product.product">
+        <field name="name">Route planning</field>
+        <field name="type">service</field>
+    </record>
+    <record id="delivery_carrier_route_demo" model="delivery.carrier">
+        <field name="name">Route planning</field>
+        <field name="delivery_type">route_planning</field>
+        <field name="integration_level">rate</field>
+        <field name="product_id" ref="product_route_demo" />
+    </record>
+</odoo>

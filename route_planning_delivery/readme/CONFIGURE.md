@@ -1,0 +1,4 @@
+- Go to `Inventory > Configuration > Delivery Methods`.
+- Create a delivery method.
+- Set the `Provider` to `Route Planning`.
+- Ensure that the `integration_level` field is set to `rate`.

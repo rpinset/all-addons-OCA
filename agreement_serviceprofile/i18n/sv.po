@@ -59,6 +59,16 @@ msgid "Attachment Count"
 msgstr "Antal bilagor"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_close
+msgid "Closed"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_product__service_tracking
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_template__service_tracking
 msgid "Create on Order"
@@ -78,6 +88,11 @@ msgstr "Skapad den"
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__display_name
 msgid "Display Name"
 msgstr "Visningsnamn"
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_draft
+msgid "Draft"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_follower_ids
@@ -115,6 +130,11 @@ msgid ""
 "If unchecked, it will allow you to hide this service profile without "
 "removing it."
 msgstr "Om avmarkerad, kan du dölja denna tjänstprofil utan att ta bort den."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_progress
+msgid "In Progress"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_is_follower
@@ -233,9 +253,19 @@ msgid "Stage"
 msgstr "Etapp"
 
 #. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_suspend
+msgid "Suspended"
+msgstr ""
+
+#. module: agreement_serviceprofile
 #: model:ir.model.fields,help:agreement_serviceprofile.field_agreement_serviceprofile__partner_id
 msgid "The customer or vendor this agreement is related to."
 msgstr "Den kund eller leverantör som detta avtal avser."
+
+#. module: agreement_serviceprofile
+#: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_renew
+msgid "To Renew"
+msgstr ""
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_stage__stage_type
