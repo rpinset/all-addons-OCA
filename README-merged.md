@@ -1949,7 +1949,7 @@ addon | version | maintainers | summary
 [edi_voxel_sale_order_import_oca](edi_voxel_sale_order_import_oca/) | 15.0.1.0.1 |  | Import sale order from Voxel.
 [edi_voxel_sale_secondary_unit_oca](edi_voxel_sale_secondary_unit_oca/) | 15.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Map Voxel UoM to Sale Secondary UoM and Use Them
 [edi_voxel_secondary_unit_oca](edi_voxel_secondary_unit_oca/) | 15.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Add Voxel UoM code to Secondary UoM model
-[edi_voxel_stock_picking_oca](edi_voxel_stock_picking_oca/) | 15.0.1.1.2 |  | Sends stock picking report to Voxel.
+[edi_voxel_stock_picking_oca](edi_voxel_stock_picking_oca/) | 15.0.1.1.3 |  | Sends stock picking report to Voxel.
 [edi_voxel_stock_picking_secondary_unit_oca](edi_voxel_stock_picking_secondary_unit_oca/) | 15.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Export Secondary UoMs Voxel Code in picking Voxel documents
 [edi_webservice_oca](edi_webservice_oca/) | 15.0.1.2.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Defines webservice integration from EDI Exchange records
 [pdf_helper](pdf_helper/) | 15.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides helpers to work w/ PDFs
@@ -4200,6 +4200,9 @@ and promote its widespread use.
 ## From OCA/mis-builder-contrib
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# mis-builder-contrib
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder-contrib&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/mis-builder-contrib/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/mis-builder-contrib/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/mis-builder-contrib/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/mis-builder-contrib/actions/workflows/test.yml?query=branch%3A15.0)
@@ -4207,8 +4210,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/mis-builder-contrib-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mis-builder-contrib-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# mis-builder-contrib
 
 TODO: add repo description.
 

@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-08-01 06:15 UTC** (elapsed 67s)
+Last build: **2026-08-04 16:38 UTC** (elapsed 183s)
 
 - Repos integrated: **117**
 - Canonical modules: **2099**
@@ -14,7 +14,7 @@ Last build: **2026-08-01 06:15 UTC** (elapsed 67s)
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 862298a 2026-07-22 Pedro M. Baeza Merge pull request #5839 from Tecnativa/15.0-ou-add-account_edi_ubl_cii |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 6e90f4d 2026-06-29 Gerardo Alí Ferraro Schelijasch Translated using Weblate (Spanish (Dominican Republic)) |
+| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2cc28dc 2026-08-03 difbit Added translation using Weblate (Finnish (fi_FI)) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | a36d4f1 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -43,7 +43,7 @@ Last build: **2026-08-01 06:15 UTC** (elapsed 67s)
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [e-commerce](https://github.com/OCA/e-commerce) | 55 | 45837a2 2026-06-04 OCA-git-bot [BOT] post-merge updates |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
-| [edi](https://github.com/OCA/edi) | 22 | c6983af 2026-07-31 Pedro M. Baeza Merge pull request #1377 from Tecnativa/15.0-UPD-copier |
+| [edi](https://github.com/OCA/edi) | 22 | 8cb4f26 2026-08-03 OCA-git-bot [BOT] post-merge updates |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [field-service](https://github.com/OCA/field-service) | 46 | 6344130 2026-06-05 bigfoot88 Translated using Weblate (Chinese (Simplified) (zh_CN)) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -79,7 +79,7 @@ Last build: **2026-08-01 06:15 UTC** (elapsed 67s)
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 8f4a954 2026-07-20 Stéphane Bidoul Merge pull request #820 from acsone/15.0-update-dotfiles-202607 |
-| [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | 2 | 94db0df 2025-02-02 oca-git-bot [IMP] update dotfiles |
+| [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | 2 | cb81b68 2026-08-03 Pedro M. Baeza Merge pull request #68 from Tecnativa/15.0-IMP-copier_update |
 | [multi-company](https://github.com/OCA/multi-company) | 19 | b32c747 2026-04-06 Pedro M. Baeza Merge pull request #980 from qrtl/15.0-copier |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 1 | f40efd6 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [operating-unit](https://github.com/OCA/operating-unit) | 36 | 0e22e8c 2025-10-14 OCA-git-bot [BOT] post-merge updates |
