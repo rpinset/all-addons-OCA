@@ -617,9 +617,9 @@ class EDIExchangeRecord(models.Model):
             extend_ids = list(extend_query)
             result.extend(extend_ids[: limit - len(result)])
 
-        # Restore original ordering
-        result = [x for x in orig_ids if x in result]
         if set(orig_ids) != set(result):
+            # Restore original ordering
+            result = [x for x in orig_ids if x in result]
             # Create a virgin query
             query = self.browse(result)._as_query()
         return query
