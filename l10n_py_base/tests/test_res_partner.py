@@ -41,11 +41,11 @@ class TestResPartner(TransactionCase):
                 "name": "Test RUC",
                 "country_id": self.country_py.id,
                 "l10n_latam_identification_type_id": self.it_ruc.id,
-                "vat": "80012345-6",
+                "vat": "80012345-0",
             }
         )
         self.assertEqual(partner.l10n_py_ruc, "80012345")
-        self.assertEqual(partner.l10n_py_ruc_dv, "6")
+        self.assertEqual(partner.l10n_py_ruc_dv, "0")
 
     def test_ruc_dv_auto_calculated_on_create(self):
         """DV se calcula automáticamente si vat no incluye DV"""
@@ -58,9 +58,9 @@ class TestResPartner(TransactionCase):
             }
         )
         # create() formats vat to include DV
-        self.assertEqual(partner.vat, "80012345-6")
+        self.assertEqual(partner.vat, "80012345-0")
         self.assertEqual(partner.l10n_py_ruc, "80012345")
-        self.assertEqual(partner.l10n_py_ruc_dv, "6")
+        self.assertEqual(partner.l10n_py_ruc_dv, "0")
 
     def test_ruc_inverse_backward_compat(self):
         """Escribir l10n_py_ruc directamente sincroniza vat (backward compat)"""
@@ -71,9 +71,9 @@ class TestResPartner(TransactionCase):
                 "l10n_py_ruc": "80012345",
             }
         )
-        self.assertEqual(partner.vat, "80012345-6")
+        self.assertEqual(partner.vat, "80012345-0")
         self.assertEqual(partner.l10n_latam_identification_type_id, self.it_ruc)
-        self.assertEqual(partner.l10n_py_ruc_dv, "6")
+        self.assertEqual(partner.l10n_py_ruc_dv, "0")
 
     def test_ruc_empty_when_not_ruc_type(self):
         """l10n_py_ruc vacío cuando identification type no es RUC"""
@@ -101,13 +101,13 @@ class TestResPartner(TransactionCase):
     # ============== DV exacto para RUCs conocidos ==============
 
     def test_ruc_dv_exact_values(self):
-        """DV exacto para RUCs conocidos verificados contra SET"""
+        """DV exacto para RUCs reales (verificados con python-stdnum)"""
         test_cases = [
-            ("80012345", "6"),
-            ("4588955", "1"),
-            ("80009401", "0"),
+            ("80012345", "0"),
+            ("4588955", "4"),
+            ("80009401", "8"),
             ("80067890", "7"),
-            ("80054321", "2"),
+            ("80054321", "1"),
         ]
         for ruc_num, expected_dv in test_cases:
             partner = self.Partner.create(
@@ -177,7 +177,7 @@ class TestResPartner(TransactionCase):
             }
         )
         self.assertEqual(partner.l10n_py_taxpayer_type, "1")
-        self.assertEqual(partner.l10n_py_ruc_dv, "6")
+        self.assertEqual(partner.l10n_py_ruc_dv, "0")
 
     def test_non_taxpayer_doc_types(self):
         """Todos los tipos de documento de identidad son aceptados"""
@@ -276,3 +276,54 @@ class TestResPartner(TransactionCase):
                 state.l10n_py_code,
                 "Código departamento debe coincidir con el del estado",
             )
+
+    # ============== VAT validation (check_vat_py) ==============
+
+    def test_check_vat_py_accepts_real_ruc(self):
+        """base_vat acepta un RUC real con DV correcto"""
+        partner = self.Partner.create(
+            {
+                "name": "Contribuyente RUC válido",
+                "country_id": self.country_py.id,
+                "l10n_latam_identification_type_id": self.it_ruc.id,
+                "vat": "80028061-0",
+            }
+        )
+        self.assertEqual(partner.vat, "80028061-0")
+
+    def test_check_vat_py_rejects_wrong_dv(self):
+        """El hook de base_vat rechaza un RUC con DV incorrecto
+
+        Se llama directamente al hook porque ``create``/``write`` reescriben el
+        DV informado antes de que corra la restricción (ver
+        ``_format_vat_py``), así que por esa vía nunca llega un DV inválido.
+        Ese reformateo silencioso se trata en un PR aparte.
+        """
+        partner = self.Partner.create(
+            {
+                "name": "Contribuyente RUC",
+                "country_id": self.country_py.id,
+                "l10n_latam_identification_type_id": self.it_ruc.id,
+                "vat": "80028061-0",
+            }
+        )
+        self.assertTrue(partner.check_vat_py("80028061-0"))
+        self.assertFalse(partner.check_vat_py("80028061-1"))
+        self.assertFalse(partner.check_vat_py("AB1234-5"))
+        self.assertFalse(partner.check_vat_py(""))
+
+    def test_check_vat_py_ignores_non_vat_documents(self):
+        """Cédula y pasaporte no pasan por la validación de RUC"""
+        for id_type, number in [
+            (self.it_ci, "1234567-8"),
+            (self.it_pasaporte, "AB1234567"),
+        ]:
+            partner = self.Partner.create(
+                {
+                    "name": f"No contribuyente {number}",
+                    "country_id": self.country_py.id,
+                    "l10n_latam_identification_type_id": id_type.id,
+                    "vat": number,
+                }
+            )
+            self.assertEqual(partner.vat, number)

@@ -11,6 +11,7 @@
         "base_address_extended",
         "l10n_latam_base",
     ],
+    "external_dependencies": {"python": ["python-stdnum"]},
     "data": [
         # Security
         "security/ir.model.access.csv",

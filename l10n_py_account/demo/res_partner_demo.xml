@@ -14,7 +14,7 @@
         <field name="phone">+595 21 444 1111</field>
         <field name="email">ventas@comercialguarani.com.py</field>
         <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
-        <field name="vat">80012345-6</field>
+        <field name="vat">80012345-0</field>
         <field name="l10n_py_taxpayer_type">1</field>
         <field name="l10n_py_activity_description">Comercio al por mayor</field>
     </record>
@@ -48,7 +48,7 @@
         <field name="phone">+595 61 555 3333</field>
         <field name="email">compras@distribuidoraeste.com.py</field>
         <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
-        <field name="vat">80054321-2</field>
+        <field name="vat">80054321-1</field>
         <field name="l10n_py_taxpayer_type">1</field>
         <field name="l10n_py_activity_description">Distribución de productos</field>
     </record>
@@ -119,7 +119,7 @@
         <field name="zip">6000</field>
         <field name="phone">+595 71 555 8888</field>
         <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
-        <field name="vat">80009401-0</field>
+        <field name="vat">80009401-8</field>
         <field name="l10n_py_taxpayer_type">1</field>
     </record>
 </odoo>

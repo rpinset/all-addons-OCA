@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_maquila_program_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.form</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="arch" type="xml">
+            <form string="Maquila Program">
+                <header>
+                    <button
+                        name="action_activate"
+                        string="Activate"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'draft'"
+                    />
+                    <button
+                        name="action_suspend"
+                        string="Suspend"
+                        type="object"
+                        invisible="state != 'active'"
+                    />
+                    <button
+                        name="action_close"
+                        string="Close"
+                        type="object"
+                        invisible="state not in ['active', 'suspended']"
+                    />
+                    <button
+                        name="action_draft"
+                        string="Reset to Draft"
+                        type="object"
+                        invisible="state == 'draft'"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,active,closed"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box" />
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" placeholder="Program Name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="code" />
+                            <field name="maquila_type" />
+                            <field name="legal_regime" />
+                        </group>
+                        <group>
+                            <field name="benefit_duration_years" />
+                            <field name="benefit_expiry" />
+                            <field name="active" invisible="1" />
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Company">
+                            <field name="company_id" />
+                            <field name="matriz_partner_id" />
+                            <field name="analytic_account_id" />
+                        </group>
+                        <group string="CNIME Resolution">
+                            <field name="cnime_resolution_date" />
+                            <field name="cnime_resolution_expiry" />
+                            <field name="internal_sale_pct" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Products" name="products">
+                            <field name="product_line_ids">
+                                <list editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="intn_certificate" />
+                                    <field name="intn_certificate_date" />
+                                    <field name="intn_expiry_date" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Contracts" name="contracts">
+                            <group>
+                                <field name="agreement_id" />
+                            </group>
+                        </page>
+                        <page string="Documents" name="documents">
+                            <group>
+                                <field
+                                    name="resolution_attachment"
+                                    filename="resolution_attachment_name"
+                                />
+                                <field
+                                    name="resolution_attachment_name"
+                                    invisible="1"
+                                />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_maquila_program_tree" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.tree</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-muted="state == 'closed'"
+                decoration-warning="state == 'suspended'"
+            >
+                <field name="code" />
+                <field name="name" />
+                <field name="maquila_type" />
+                <field name="matriz_partner_id" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="cnime_resolution_expiry" />
+                <field
+                    name="state"
+                    decoration-success="state == 'active'"
+                    decoration-info="state == 'draft'"
+                    widget="badge"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_maquila_program_search" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.search</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="arch" type="xml">
+            <search string="Maquila Programs">
+                <field name="name" />
+                <field name="code" />
+                <field name="matriz_partner_id" />
+                <separator />
+                <filter
+                    name="filter_active"
+                    string="Active Programs"
+                    domain="[('state', '=', 'active')]"
+                />
+                <filter
+                    name="filter_draft"
+                    string="Draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    name="filter_suspended"
+                    string="Suspended"
+                    domain="[('state', '=', 'suspended')]"
+                />
+                <separator />
+                <group expand="0" string="Group By">
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_maquila_type"
+                        string="Maquila Type"
+                        context="{'group_by': 'maquila_type'}"
+                    />
+                    <filter
+                        name="group_company"
+                        string="Company"
+                        context="{'group_by': 'company_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_maquila_program" model="ir.actions.act_window">
+        <field name="name">Maquila Programs</field>
+        <field name="res_model">l10n_py.maquila.program</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_maquila_program_search" />
+        <field name="context">{'search_default_filter_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Maquila Program
+            </p>
+            <p>
+                Register and manage programs under Paraguay's Maquila regime
+                (Ley 7547/2025).
+            </p>
+        </field>
+    </record>
+</odoo>

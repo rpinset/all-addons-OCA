@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- ============================================================ -->
+    <!-- Partners                                                      -->
+    <!-- ============================================================ -->
+
+    <record id="partner_autoparts_brasil" model="res.partner">
+        <field name="name">AutoParts Brasil Ltda</field>
+        <field name="company_type">company</field>
+        <field name="country_id" ref="base.br" />
+        <field name="city">São Paulo</field>
+        <field name="street">Av. Paulista, 1000</field>
+        <field name="vat">11222333000181</field>
+    </record>
+
+    <record id="partner_techparts_usa" model="res.partner">
+        <field name="name">TechParts International Inc.</field>
+        <field name="company_type">company</field>
+        <field name="country_id" ref="base.us" />
+        <field name="city">Miami</field>
+        <field name="street">100 Biscayne Blvd</field>
+    </record>
+
+    <record id="partner_supplier_china" model="res.partner">
+        <field name="name">Shenzhen Materials Co. Ltd</field>
+        <field name="company_type">company</field>
+        <field name="country_id" ref="base.cn" />
+        <field name="city">Shenzhen</field>
+    </record>
+
+    <record id="partner_supplier_germany" model="res.partner">
+        <field name="name">ChemWerk GmbH</field>
+        <field name="company_type">company</field>
+        <field name="country_id" ref="base.de" />
+        <field name="city">Stuttgart</field>
+    </record>
+
+    <!-- Set main company as maquiladora -->
+    <record id="base.main_company" model="res.company">
+        <field name="l10n_py_is_maquiladora" eval="True" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Analytic                                                      -->
+    <!-- ============================================================ -->
+
+    <record id="analytic_plan_maquila" model="account.analytic.plan">
+        <field name="name">Maquila</field>
+    </record>
+
+    <record id="analytic_account_program_pura" model="account.analytic.account">
+        <field name="name">Maquila - Chicotes Eléctricos (Pura)</field>
+        <field name="plan_id" ref="analytic_plan_maquila" />
+    </record>
+
+    <record id="analytic_account_program_ociosidad" model="account.analytic.account">
+        <field name="name">Maquila - Plásticos Inyectados (Ociosidad)</field>
+        <field name="plan_id" ref="analytic_plan_maquila" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Products (shared across all maquila modules)                  -->
+    <!-- ============================================================ -->
+
+    <!-- Raw materials (imported) -->
+    <record id="product_polimero_abs" model="product.product">
+        <field name="name">Polímero ABS</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-MP-ABS</field>
+        <field name="uom_id" ref="uom.product_uom_kgm" />
+        <field name="uom_po_id" ref="uom.product_uom_kgm" />
+    </record>
+
+    <record id="product_aditivo_uv" model="product.product">
+        <field name="name">Aditivo UV</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-MP-UV</field>
+        <field name="uom_id" ref="uom.product_uom_kgm" />
+        <field name="uom_po_id" ref="uom.product_uom_kgm" />
+    </record>
+
+    <record id="product_conector_12pin" model="product.product">
+        <field name="name">Conector 12-pin</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-MP-C12</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+    </record>
+
+    <record id="product_cable_cobre" model="product.product">
+        <field name="name">Cable de Cobre 1.5mm²</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-MP-CCU</field>
+        <field name="uom_id" ref="uom.product_uom_meter" />
+        <field name="uom_po_id" ref="uom.product_uom_meter" />
+    </record>
+
+    <!-- Raw materials (national PY) -->
+    <record id="product_parafusos_m4" model="product.product">
+        <field name="name">Tornillos M4</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-NAC-TM4</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+    </record>
+
+    <record id="product_cinta_aislante" model="product.product">
+        <field name="name">Cinta Aislante PVC</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-NAC-CAI</field>
+        <field name="uom_id" ref="uom.product_uom_meter" />
+        <field name="uom_po_id" ref="uom.product_uom_meter" />
+    </record>
+
+    <!-- Finished products -->
+    <record id="product_chicote_eletrico" model="product.product">
+        <field name="name">Chicote Eléctrico Automotriz</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-PA-CHE</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+    </record>
+
+    <record id="product_panel_plastico" model="product.product">
+        <field name="name">Panel Plástico Interior</field>
+        <field name="type">consu</field>
+        <field name="default_code">MQ-PA-PPI</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Agreements (CNIME Contracts)                                   -->
+    <!-- ============================================================ -->
+
+    <record id="agreement_cnime_pura" model="agreement">
+        <field name="name">Contrato CNIME - AutoParts Brasil / Chicotes</field>
+        <field name="code">CNIME-2026-001</field>
+        <field name="partner_id" ref="partner_autoparts_brasil" />
+        <field name="start_date">2026-01-15</field>
+        <field name="end_date">2031-01-15</field>
+    </record>
+
+    <record id="agreement_cnime_ociosidad" model="agreement">
+        <field name="name">Contrato CNIME - TechParts / Plásticos</field>
+        <field name="code">CNIME-2026-002</field>
+        <field name="partner_id" ref="partner_techparts_usa" />
+        <field name="start_date">2026-03-01</field>
+        <field name="end_date">2029-03-01</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Maquila Programs                                              -->
+    <!-- ============================================================ -->
+
+    <!-- Program 1: Maquila Pura - Chicotes Eléctricos -->
+    <record id="maquila_program_demo" model="l10n_py.maquila.program">
+        <field name="name">Chicotes Eléctricos Automotrices</field>
+        <field name="code">RES-BIM-2026-001</field>
+        <field name="state">active</field>
+        <field name="maquila_type">pura</field>
+        <field name="matriz_partner_id" ref="partner_autoparts_brasil" />
+        <field name="company_id" ref="base.main_company" />
+        <field name="agreement_id" ref="agreement_cnime_pura" />
+        <field name="analytic_account_id" ref="analytic_account_program_pura" />
+        <field name="cnime_resolution_date">2026-01-15</field>
+        <field name="cnime_resolution_expiry">2031-01-15</field>
+    </record>
+
+    <!-- Program 2: Capacidad Ociosa - Plásticos -->
+    <record id="maquila_program_ociosidad" model="l10n_py.maquila.program">
+        <field name="name">Paneles Plásticos Interiores</field>
+        <field name="code">RES-BIM-2026-002</field>
+        <field name="state">active</field>
+        <field name="maquila_type">ociosidad</field>
+        <field name="internal_sale_pct">10.0</field>
+        <field name="matriz_partner_id" ref="partner_techparts_usa" />
+        <field name="company_id" ref="base.main_company" />
+        <field name="agreement_id" ref="agreement_cnime_ociosidad" />
+        <field name="analytic_account_id" ref="analytic_account_program_ociosidad" />
+        <field name="cnime_resolution_date">2026-03-01</field>
+        <field name="cnime_resolution_expiry">2029-03-01</field>
+    </record>
+
+    <!-- Program 3: Draft (for testing workflow) -->
+    <record id="maquila_program_draft" model="l10n_py.maquila.program">
+        <field name="name">Componentes Electrónicos (Pendiente)</field>
+        <field name="code">RES-BIM-2026-003</field>
+        <field name="state">draft</field>
+        <field name="maquila_type">servicio</field>
+        <field name="matriz_partner_id" ref="partner_autoparts_brasil" />
+        <field name="company_id" ref="base.main_company" />
+        <field name="cnime_resolution_date">2026-06-01</field>
+        <field name="cnime_resolution_expiry">2031-06-01</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Program Product Lines                                         -->
+    <!-- ============================================================ -->
+
+    <record id="program_product_chicote" model="l10n_py.maquila.program.product">
+        <field name="program_id" ref="maquila_program_demo" />
+        <field name="product_id" ref="product_chicote_eletrico" />
+        <field name="intn_certificate">INTN-2026-00123</field>
+        <field name="intn_certificate_date">2026-02-01</field>
+        <field name="intn_expiry_date">2028-02-01</field>
+    </record>
+
+    <record id="program_product_panel" model="l10n_py.maquila.program.product">
+        <field name="program_id" ref="maquila_program_ociosidad" />
+        <field name="product_id" ref="product_panel_plastico" />
+        <field name="intn_certificate">INTN-2026-00456</field>
+        <field name="intn_certificate_date">2026-03-15</field>
+        <field name="intn_expiry_date">2028-03-15</field>
+    </record>
+</odoo>

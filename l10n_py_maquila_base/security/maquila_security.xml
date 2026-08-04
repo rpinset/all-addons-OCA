@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_maquila_user" model="res.groups">
+        <field name="name">Maquila User</field>
+        <field name="category_id" ref="base.module_category_accounting_accounting" />
+    </record>
+    <record id="group_maquila_manager" model="res.groups">
+        <field name="name">Maquila Manager</field>
+        <field name="category_id" ref="base.module_category_accounting_accounting" />
+        <field name="implied_ids" eval="[(4, ref('group_maquila_user'))]" />
+    </record>
+
+    <record id="ir_rule_maquila_program_company" model="ir.rule">
+        <field name="name">Maquila Program: multi-company</field>
+        <field name="model_id" ref="model_l10n_py_maquila_program" />
+        <field name="domain_force">
+            ['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]
+        </field>
+    </record>
+</odoo>

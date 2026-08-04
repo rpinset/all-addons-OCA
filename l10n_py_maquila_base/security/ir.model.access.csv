@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_maquila_program_user,l10n_py.maquila.program user,model_l10n_py_maquila_program,group_maquila_user,1,0,0,0
+access_maquila_program_manager,l10n_py.maquila.program manager,model_l10n_py_maquila_program,group_maquila_manager,1,1,1,1
+access_maquila_program_product_user,l10n_py.maquila.program.product user,model_l10n_py_maquila_program_product,group_maquila_user,1,0,0,0
+access_maquila_program_product_manager,l10n_py.maquila.program.product manager,model_l10n_py_maquila_program_product,group_maquila_manager,1,1,1,1

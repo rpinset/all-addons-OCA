@@ -321,26 +321,16 @@ class ResPartner(models.Model):
     # ============== VAT VALIDATION ==============
 
     def check_vat_py(self, vat):
-        """Validate Paraguay RUC/VAT number.
+        """Validate a Paraguayan RUC, check digit included.
 
-        Accepts formats: XXXXXXXX-D (RUC with DV) or any identification number.
+        Only partners whose identification type is flagged as VAT reach this
+        method: ``l10n_latam_base`` filters the others out before calling
+        ``base_vat``, so documents such as CI, passport or residence card are
+        not validated here.
         """
         if not vat:
             return False
-        # Accept RUC format: digits with optional dash and DV
-        clean = vat.replace("-", "").replace(" ", "")
-        if clean.isdigit() and 6 <= len(clean) <= 9:
-            # Validate DV if present
-            if "-" in vat:
-                parts = vat.split("-", 1)
-                if len(parts) == 2 and parts[1].isdigit():
-                    expected_dv = str(RUCValidator._calculate_check_digit(parts[0]))
-                    return parts[1] == expected_dv
-            return True
-        # Accept non-numeric identification (passport, etc.)
-        if len(vat) >= 1:
-            return True
-        return False
+        return RUCValidator.validate(vat)[0]
 
     # ============== HELPER METHODS ==============
 

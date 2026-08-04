@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-01 13:25+0000\n"
-"PO-Revision-Date: 2015-06-03 15:56+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2026-08-04 12:46+0000\n"
+"Last-Translator: Metin GÜLSOY <metin.gulsoy@kitayazilim.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/oca/OCA-account-financial-"
 "tools-8-0/language/tr/)\n"
 "Language: tr\n"
@@ -17,59 +17,65 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_partner_required
 #: model:ir.model,name:account_partner_required.model_account_account
 msgid "Account"
-msgstr ""
+msgstr "Hesap"
 
 #. module: account_partner_required
 #: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__always
 msgid "Always"
-msgstr ""
+msgstr "Daima"
 
 #. module: account_partner_required
 #: model:ir.model,name:account_partner_required.model_account_move_line
-#, fuzzy
 msgid "Journal Item"
-msgstr "Günlük Maddeleri"
+msgstr "Yevmiye Kaydı"
 
 #. module: account_partner_required
 #: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__never
 msgid "Never"
-msgstr ""
+msgstr "Asla"
 
 #. module: account_partner_required
 #: model:ir.model.fields.selection,name:account_partner_required.selection__account_account__partner_policy__optional
 msgid "Optional"
-msgstr ""
+msgstr "Opsiyonel"
 
 #. module: account_partner_required
 #: model:ir.model.fields,field_description:account_partner_required.field_account_account__partner_policy
 #: model_terms:ir.ui.view,arch_db:account_partner_required.view_account_search
+#, fuzzy
 msgid "Partner Policy"
-msgstr ""
+msgstr "İş Ortağı Koşulu"
 
 #. module: account_partner_required
 #. odoo-python
 #: code:addons/account_partner_required/models/account_move_line.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Partner policy is set to 'Always' on account '%(account)s' but the partner "
 "is missing on the journal item '%(move_line)s'."
 msgstr ""
+"İş Ortağı koşulu 'Her zaman ' olarak belirlenmiş. '%(account)s' fakat İş "
+"Ortağı Girilmemiş. '%(move_line)s'."
 
 #. module: account_partner_required
 #. odoo-python
 #: code:addons/account_partner_required/models/account_move_line.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Partner policy is set to 'Never' on account '%(account)s' but the journal "
 "item '%(move_line)s' has the partner '%(partner)s'."
 msgstr ""
+"İş Ortağı koşulu 'Asla' olarak belirlenmiş '%(account)s' fakat yevmiye "
+"kalemlerinde '%(move_line)s' İş Ortağı olarak '%(partner)s' girilmiş."
 
 #. module: account_partner_required
 #: model:ir.model.fields,help:account_partner_required.field_account_account__partner_policy
+#, fuzzy
 msgid ""
 "Set the policy for the partner field:\n"
 "if you select 'Optional', the accountant is free to put a partner on journal "
@@ -79,3 +85,9 @@ msgid ""
 "if you select 'Never', the accountant will get an error message if a partner "
 "is present."
 msgstr ""
+"İş Ortağı alanına ilişkin koşulu ayarlayın:\n"
+"'İsteğe Bağlı'yı seçerseniz, isteğe bağlı olarak İş Ortağı girilebilir;\n"
+"'Her zaman'ı seçerseniz, İş Ortağı yoksa muhasebeci bir hata mesajı "
+"alacaktır;\n"
+"'Asla'yı seçerseniz muhasebeci, bir İş Ortağı mevcut olması durumunda bir "
+"hata mesajı alacaktır."

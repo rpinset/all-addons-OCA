@@ -19,9 +19,9 @@ class TestDemoData(TransactionCase):
         """Partners demo foram criados com dados corretos"""
         partner = _ref_or_skip(self, "l10n_py_account.partner_contribuyente_general")
         self.assertTrue(partner)
-        self.assertEqual(partner.vat, "80012345-6")
+        self.assertEqual(partner.vat, "80012345-0")
         self.assertEqual(partner.l10n_py_ruc, "80012345")
-        self.assertEqual(partner.l10n_py_ruc_dv, "6")
+        self.assertEqual(partner.l10n_py_ruc_dv, "0")
         self.assertEqual(partner.l10n_py_taxpayer_type, "1")
 
         partner_svc = _ref_or_skip(
