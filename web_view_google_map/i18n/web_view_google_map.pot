@@ -19,6 +19,12 @@ msgid "Action Window View"
 msgstr ""
 
 #. module: web_view_google_map
+#. odoo-javascript
+#: code:addons/web_view_google_map/static/src/views/google_map/google_map_renderer.xml:0
+msgid "Configure API key"
+msgstr ""
+
+#. module: web_view_google_map
 #: model:ir.model.fields,field_description:web_view_google_map.field_ir_actions_act_window_view__display_name
 #: model:ir.model.fields,field_description:web_view_google_map.field_ir_ui_view__display_name
 msgid "Display Name"
@@ -33,6 +39,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:web_view_google_map.selection__ir_actions_act_window_view__view_mode__google_map
 #: model:ir.model.fields.selection,name:web_view_google_map.selection__ir_ui_view__type__google_map
 msgid "Google Maps"
+msgstr ""
+
+#. module: web_view_google_map
+#. odoo-javascript
+#: code:addons/web_view_google_map/static/src/views/google_map/google_map_renderer.xml:0
+msgid "Google Maps API key required"
 msgstr ""
 
 #. module: web_view_google_map
@@ -57,6 +69,15 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/web_view_google_map/static/src/views/google_map/google_map_controller.xml:0
 msgid "New"
+msgstr ""
+
+#. module: web_view_google_map
+#. odoo-javascript
+#: code:addons/web_view_google_map/static/src/views/google_map/google_map_renderer.xml:0
+msgid ""
+"Set a valid Google Maps API key to display this map.\n"
+"                        Enable the Maps JavaScript API for your key in Google Cloud\n"
+"                        Console."
 msgstr ""
 
 #. module: web_view_google_map

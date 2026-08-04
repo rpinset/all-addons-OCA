@@ -65,6 +65,7 @@ class FastapiEndpoint(models.Model):
         "unexpecteed disk space consumption.",
         default=True,
     )
+    route_group = fields.Char(help="Use this to classify routes together", size=32)
 
     @api.depends("root_path")
     def _compute_root_path(self):
@@ -124,7 +125,7 @@ class FastapiEndpoint(models.Model):
     def _routing_impacting_fields(self) -> tuple[str, ...]:
         """The list of fields requiring to refresh the mount point of the pp
         into odoo if modified"""
-        return ("root_path", "save_http_session")
+        return ("root_path", "save_http_session", "route_group")
 
     #
     # end of endpoint.route.sync.mixin methods implementation
@@ -161,7 +162,7 @@ class FastapiEndpoint(models.Model):
         key = self._endpoint_registry_route_unique_key(routing)
         endpoint_hash = hash(route)
         return self._endpoint_registry.make_rule(
-            key, route, options, routing, endpoint_hash
+            key, route, options, routing, endpoint_hash, route_group=self.route_group
         )
 
     def _default_endpoint_options(self):

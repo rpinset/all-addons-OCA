@@ -673,6 +673,11 @@ msgid "Purchase Order"
 msgstr "Beschaffungsauftrag"
 
 #. module: sale_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
+msgid "Qty"
+msgstr ""
+
+#. module: sale_blanket_order
 #. odoo-python
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 msgid "Quantity must be greater than zero"
@@ -899,6 +904,7 @@ msgstr "Entwurf"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__amount_total
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_total
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
 msgid "Total"
 msgstr "Gesamt"
 

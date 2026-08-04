@@ -65,6 +65,7 @@ export class GoogleMapRenderer extends Component {
         this.infoWindow = null;
         this.records = [];
         this.theme = "default";
+        this.missingApiKey = false;
 
         const archEl = normalizeArch(this.props.archInfo?.arch || this.props.arch);
         const attrs = archEl.attributes || {};
@@ -80,12 +81,19 @@ export class GoogleMapRenderer extends Component {
         );
 
         onWillStart(async () => {
-            await loadGoogleMaps(this.orm);
+            const maps = await loadGoogleMaps(this.orm);
+            if (!maps) {
+                this.missingApiKey = true;
+                return;
+            }
             await this.loadTheme();
             await this.loadRecords();
         });
 
         onMounted(() => {
+            if (this.missingApiKey) {
+                return;
+            }
             this.initMap();
             this.renderMarkers();
         });
@@ -94,6 +102,16 @@ export class GoogleMapRenderer extends Component {
             if (this.gmap) {
                 this.renderMarkers();
             }
+        });
+    }
+
+    openGoogleMapsSettings() {
+        this.action.doAction({
+            type: "ir.actions.act_window",
+            res_model: "res.config.settings",
+            views: [[false, "form"]],
+            target: "current",
+            context: {module: "base_google_map"},
         });
     }
 

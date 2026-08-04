@@ -85,6 +85,8 @@ msgstr "Descrizione"
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__display_name
+#: model:ir.model.fields,field_description:fastapi.field_ir_rule__display_name
+#: model:ir.model.fields,field_description:fastapi.field_res_lang__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -96,6 +98,7 @@ msgstr "URL documenti"
 #. module: fastapi
 #: model:ir.module.category,name:fastapi.module_category_fastapi
 #: model:ir.ui.menu,name:fastapi.menu_fastapi_root
+#: model:res.groups.privilege,name:fastapi.privilege_fastapi
 msgid "FastAPI"
 msgstr "FastAPI"
 
@@ -112,11 +115,6 @@ msgid "FastAPI Endpoint Runner"
 msgstr "Esecutore endopoint FastAPI"
 
 #. module: fastapi
-#: model_terms:ir.ui.view,arch_db:fastapi.fastapi_endpoint_search_view
-msgid "Group by..."
-msgstr "Raggruppa per..."
-
-#. module: fastapi
 #: model:ir.model.fields.selection,name:fastapi.selection__fastapi_endpoint__demo_auth_method__http_basic
 msgid "HTTP Basic"
 msgstr "Base HTTP"
@@ -128,6 +126,8 @@ msgstr "Aiuta nella gestione degli endpoint FastAPI"
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__id
+#: model:ir.model.fields,field_description:fastapi.field_ir_rule__id
+#: model:ir.model.fields,field_description:fastapi.field_res_lang__id
 msgid "ID"
 msgstr "ID"
 
@@ -145,11 +145,6 @@ msgstr "Ultimo aggiornamento di"
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__write_date
 msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
-
-#. module: fastapi
-#: model:res.groups,name:fastapi.my_demo_app_group
-msgid "My Demo Endpoint Group"
-msgstr "Il mio gruppo endpoint esempio"
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__name
@@ -201,6 +196,11 @@ msgid "Root Path"
 msgstr "Percorso radice"
 
 #. module: fastapi
+#: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__route_group
+msgid "Route Group"
+msgstr ""
+
+#. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__save_http_session
 msgid "Save HTTP Session"
 msgstr "Salva sessione HTTP"
@@ -227,6 +227,11 @@ msgstr "Titolo dell'API."
 #: model:ir.model.fields,help:fastapi.field_fastapi_endpoint__user_id
 msgid "The user to use to execute the API calls."
 msgstr "Utente da utilizzare per eseguire la chiamata API."
+
+#. module: fastapi
+#: model:ir.model.fields,help:fastapi.field_fastapi_endpoint__route_group
+msgid "Use this to classify routes together"
+msgstr ""
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__user_id
@@ -257,6 +262,12 @@ msgstr ""
 #: code:addons/fastapi/models/fastapi_endpoint.py:0
 msgid "`%(name)s` uses a blacklisted root_path = `%(root_path)s`"
 msgstr "`%(name)s` utilizza un root_path bloccato = `%(root_path)s`"
+
+#~ msgid "Group by..."
+#~ msgstr "Raggruppa per..."
+
+#~ msgid "My Demo Endpoint Group"
+#~ msgstr "Il mio gruppo endpoint esempio"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

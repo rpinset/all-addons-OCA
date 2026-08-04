@@ -2,7 +2,26 @@
 <templates xml:space="preserve">
     <t t-name="web_view_google_map.GoogleMapRenderer">
         <div class="o_google_map_view h-100" t-ref="root">
-            <div t-ref="mapContainer" class="o_google_map_container h-100" />
+            <div t-if="missingApiKey" class="o_view_nocontent o_google_map_missing_key">
+                <div class="o_nocontent_help">
+                    <p class="o_view_nocontent_smiling_face">
+                        Google Maps API key required
+                    </p>
+                    <p>
+                        Set a valid Google Maps API key to display this map.
+                        Enable the Maps JavaScript API for your key in Google Cloud
+                        Console.
+                    </p>
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        t-on-click="openGoogleMapsSettings"
+                    >
+                        Configure API key
+                    </button>
+                </div>
+            </div>
+            <div t-else="" t-ref="mapContainer" class="o_google_map_container h-100" />
         </div>
     </t>
 </templates>

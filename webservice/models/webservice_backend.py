@@ -40,9 +40,37 @@ class WebserviceBackend(models.Model):
         ],
         readonly=False,
     )
-    oauth2_clientid = fields.Char(string="Client ID", auth_type="oauth2")
-    oauth2_client_secret = fields.Char(string="Client Secret", auth_type="oauth2")
+    oauth2_client_auth_method = fields.Selection(
+        [
+            ("client_secret_basic", "Client ID & Secret (HTTP Basic)"),
+            ("custom_header", "Custom Authorization header"),
+        ],
+        default="client_secret_basic",
+        string="Client Authentication",
+        help="How the client credentials are presented to the token endpoint.",
+    )
+    oauth2_clientid = fields.Char(string="Client ID")
+    oauth2_client_secret = fields.Char(string="Client Secret")
+    oauth2_client_auth_header = fields.Char(
+        string="Client Auth Header",
+        default="Authorization",
+        help="Header name used to send the client credentials when the client "
+        "authentication method is a custom Authorization header.",
+    )
+    oauth2_client_auth_value = fields.Char(
+        string="Client Auth Header Value",
+        help="Full, static header value sent to the token endpoint when the "
+        "client authentication method is a custom Authorization header "
+        "(e.g. 'SSWS <token>').",
+    )
     oauth2_token_url = fields.Char(string="Token URL", auth_type="oauth2")
+    oauth2_token_method = fields.Selection(
+        [("post", "POST"), ("get", "GET")],
+        default="post",
+        string="Token Request Method",
+        help="HTTP method used to request the token from the token endpoint. "
+        "Most providers use POST; some expose the token endpoint as GET.",
+    )
     oauth2_authorization_url = fields.Char(string="Authorization URL")
     oauth2_audience = fields.Char(
         string="Audience"
@@ -80,6 +108,46 @@ class WebserviceBackend(models.Model):
             for _field in _fields:
                 if not rec[_field.name]:
                     missing.append(_field)
+            if missing:
+                raise exceptions.UserError(rec._msg_missing_auth_param(missing))
+
+    @api.constrains(
+        "auth_type",
+        "oauth2_client_auth_method",
+        "oauth2_clientid",
+        "oauth2_client_secret",
+    )
+    def _check_oauth2_client_secret_basic(self):
+        for rec in self:
+            if rec.auth_type != "oauth2":
+                continue
+            if rec.oauth2_client_auth_method != "client_secret_basic":
+                continue
+            missing = [
+                rec._fields[fname]
+                for fname in ("oauth2_clientid", "oauth2_client_secret")
+                if not rec[fname]
+            ]
+            if missing:
+                raise exceptions.UserError(rec._msg_missing_auth_param(missing))
+
+    @api.constrains(
+        "auth_type",
+        "oauth2_client_auth_method",
+        "oauth2_client_auth_header",
+        "oauth2_client_auth_value",
+    )
+    def _check_oauth2_custom_header(self):
+        for rec in self:
+            if rec.auth_type != "oauth2":
+                continue
+            if rec.oauth2_client_auth_method != "custom_header":
+                continue
+            missing = [
+                rec._fields[fname]
+                for fname in ("oauth2_client_auth_header", "oauth2_client_auth_value")
+                if not rec[fname]
+            ]
             if missing:
                 raise exceptions.UserError(rec._msg_missing_auth_param(missing))
 

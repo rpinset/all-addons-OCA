@@ -104,6 +104,10 @@ oauth2_authorization_url = {url}/authorize
                     ws_form.api_key_header = "Test Api Key Header"
                 if auth_type == "oauth2":
                     ws_form.oauth2_flow = oauth2_flow
+                    # ``oauth2_client_auth_method`` is only shown (and drives the
+                    # visibility of the client id/secret) for the backend flow.
+                    if oauth2_flow == "backend_application":
+                        ws_form.oauth2_client_auth_method = "client_secret_basic"
                     ws_form.oauth2_clientid = "Test Client ID"
                     ws_form.oauth2_client_secret = "Test Client Secret"
                     ws_form.oauth2_token_url = f"{url}oauth2/token"
@@ -122,6 +126,8 @@ oauth2_authorization_url = {url}/authorize
                 ws_form.auth_type = new_auth_type
                 if new_auth_type == "oauth2":
                     ws_form.oauth2_flow = oauth2_flow
+                    if oauth2_flow == "backend_application":
+                        ws_form.oauth2_client_auth_method = "client_secret_basic"
                     ws_form.oauth2_clientid = "Test Client ID"
                     ws_form.oauth2_client_secret = "Test Client Secret"
                     ws_form.oauth2_token_url = f"{url}oauth2/token"

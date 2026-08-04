@@ -188,6 +188,11 @@ msgid "Root Path"
 msgstr ""
 
 #. module: fastapi
+#: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__route_group
+msgid "Route Group"
+msgstr ""
+
+#. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__save_http_session
 msgid "Save HTTP Session"
 msgstr ""
@@ -213,6 +218,11 @@ msgstr ""
 #. module: fastapi
 #: model:ir.model.fields,help:fastapi.field_fastapi_endpoint__user_id
 msgid "The user to use to execute the API calls."
+msgstr ""
+
+#. module: fastapi
+#: model:ir.model.fields,help:fastapi.field_fastapi_endpoint__route_group
+msgid "Use this to classify routes together"
 msgstr ""
 
 #. module: fastapi

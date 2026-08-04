@@ -227,7 +227,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 19.0.0.0.19 |  | OCA Financial Reports
-[account_tax_balance](account_tax_balance/) | 19.0.1.0.2 |  | Compute tax balances based on date range
+[account_tax_balance](account_tax_balance/) | 19.0.1.0.3 |  | Compute tax balances based on date range
 [partner_statement](partner_statement/) | 19.0.1.1.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
 [//]: # (end addons)
@@ -456,6 +456,7 @@ addon | version | maintainers | summary
 [account_move_pivot_view](account_move_pivot_view/) | 19.0.1.0.0 |  | Adds pivot view to Invoices (move in and move out) and Refunds
 [account_move_substate](account_move_substate/) | 19.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Account Move Sub State
 [account_receipt_journal](account_receipt_journal/) | 19.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Define and use journals dedicated to receipts
+[account_tax_fixed_amount_currency](account_tax_fixed_amount_currency/) | 19.0.1.0.0 |  | Allow fixed-amount taxes to have their amount expressed in a specific currency, with automatic conversion to the document currency.
 [account_tax_fixed_amount_multiplier](account_tax_fixed_amount_multiplier/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Control how the quantity is computed for fixed-amount taxes: standard line quantity, quantity in product UoM, or no multiplier.
 [partner_invoicing_mode](partner_invoicing_mode/) | 19.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
 [partner_invoicing_mode_at_shipping](partner_invoicing_mode_at_shipping/) | 19.0.1.0.0 |  | Create invoices automatically when goods are shipped.
@@ -1742,6 +1743,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_invoice_export](account_invoice_export/) | 19.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Account Invoice Export
+[account_invoice_import](account_invoice_import/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import supplier invoices/refunds as PDF or XML files
 [base_business_document_import](base_business_document_import/) | 19.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_iban](base_business_document_import_iban/) | 19.0.1.0.0 | <a href='https://github.com/yankinmax'><img src='https://github.com/yankinmax.png' width='32' height='32' style='border-radius:50%;' alt='yankinmax'/></a> | Validate IBAN bank accounts in business document imports
 [base_edi](base_edi/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
@@ -1923,11 +1926,13 @@ addon | version | maintainers | summary
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 19.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Integrate stock operations with your field service equipments
 [fieldservice_equipment_warranty](fieldservice_equipment_warranty/) | 19.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Field Service equipment warranty
 [fieldservice_expense](fieldservice_expense/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Report expenses from Field Service orders
+[fieldservice_google_map](fieldservice_google_map/) | 19.0.1.0.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display map views on Field Service orders and locations
 [fieldservice_kanban_info](fieldservice_kanban_info/) | 19.0.1.0.1 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Display key service information on Field Service Kanban cards.
 [fieldservice_portal](fieldservice_portal/) | 19.0.1.0.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 19.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_purchase](fieldservice_purchase/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage FSM purchases and link purchase orders to field service orders
 [fieldservice_recurring](fieldservice_recurring/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage recurring Field Service orders
+[fieldservice_repair](fieldservice_repair/) | 19.0.1.0.0 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Integrate Field Service orders with MRP repair orders
 [fieldservice_route](fieldservice_route/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Organize the routes of each day.
 [fieldservice_route_availability](fieldservice_route_availability/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Restricts blackout days for Scheduled Start (ETA) orders with the same date.
 [fieldservice_sale](fieldservice_sale/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell field services.
@@ -2047,7 +2052,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_google_map](base_google_map/) | 19.0.1.0.0 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | View modes and widgets to integrate Google Maps in your UI
-[web_view_google_map](web_view_google_map/) | 19.0.1.0.0 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | Add a Google Map view type to the Odoo web client
+[web_view_google_map](web_view_google_map/) | 19.0.1.0.2 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | Add a Google Map view type to the Odoo web client
 
 [//]: # (end addons)
 
@@ -2457,8 +2462,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[companyweb_base](companyweb_base/) | 19.0.1.1.3 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Know exactly who you are doing business with. Enrich Odoo contacts with Companyweb.
+[companyweb_base](companyweb_base/) | 19.0.1.1.5 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Know exactly who you are doing business with. Enrich Odoo contacts with Companyweb.
 [companyweb_payment_info](companyweb_payment_info/) | 19.0.1.0.2 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Send your customer payment information to Companyweb
+[l10n_be_mis_reports](l10n_be_mis_reports/) | 19.0.1.0.0 |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
 
 [//]: # (end addons)
 
@@ -3531,6 +3537,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_margin](account_invoice_margin/) | 19.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Show margin in invoices
 [account_invoice_margin_sale](account_invoice_margin_sale/) | 19.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Set margin in invoices from sale orders
+[product_standard_margin](product_standard_margin/) | 19.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product Margin and Margin Rate
 
 [//]: # (end addons)
 
@@ -3657,7 +3664,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 19.0.1.1.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 19.0.1.2.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 19.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 19.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -4131,6 +4138,7 @@ addon | version | maintainers | summary
 [product_category_type](product_category_type/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Type field on Product Categories to distinguish between parent and final categories
 [product_category_uom](product_category_uom/) | 19.0.1.0.0 |  | Define default product UoM at product category level
 [product_class](product_class/) | 19.0.1.0.0 | <a href='https://github.com/Ricardoalso'><img src='https://github.com/Ricardoalso.png' width='32' height='32' style='border-radius:50%;' alt='Ricardoalso'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Product classification and attribute constraints
+[product_code_mandatory](product_code_mandatory/) | 19.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_unique](product_code_unique/) | 19.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_company_default](product_company_default/) | 19.0.1.0.0 |  | Product Company Default
 [product_customerinfo](product_customerinfo/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to define prices for customers in the products
@@ -4736,7 +4744,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fastapi](fastapi/) | 19.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 19.0.1.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 
 
 Unported addons
@@ -4842,7 +4850,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[sale_blanket_order](sale_blanket_order/) | 19.0.1.1.2 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 19.0.1.1.3 |  | Blanket Orders
 
 [//]: # (end addons)
 
@@ -6336,6 +6344,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_chatter_position](web_chatter_position/) | 19.0.1.0.0 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | Add an option to change the chatter position
+[web_company_context_highlight](web_company_context_highlight/) | 19.0.1.0.0 | <a href='https://github.com/pverkest'><img src='https://github.com/pverkest.png' width='32' height='32' style='border-radius:50%;' alt='pverkest'/></a> | Highlight the company switcher when multiple companies are selected
 [web_dark_mode](web_dark_mode/) | 19.0.1.0.0 |  | Enabled Dark Mode for the Odoo Backend
 [web_date_format_numeric](web_date_format_numeric/) | 19.0.1.0.0 |  | Display all date/datetime fields in numeric format
 [web_dialog_size](web_dialog_size/) | 19.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
@@ -6411,8 +6420,8 @@ addon | version | maintainers | summary
 [endpoint](endpoint/) | 19.0.1.2.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide custom endpoint machinery.
 [endpoint_auth_api_key](endpoint_auth_api_key/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide API key auth for endpoints.
 [endpoint_route_handler](endpoint_route_handler/) | 19.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide mixin and tool to generate custom endpoints on the fly.
-[webservice](webservice/) | 19.0.1.1.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally
-[webservice_server_env](webservice_server_env/) | 19.0.1.1.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Use Server Environment feature to manage Webservice configs
+[webservice](webservice/) | 19.0.1.2.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally
+[webservice_server_env](webservice_server_env/) | 19.0.1.2.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Use Server Environment feature to manage Webservice configs
 
 [//]: # (end addons)
 

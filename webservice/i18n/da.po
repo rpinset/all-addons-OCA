@@ -48,9 +48,29 @@ msgid "Backend Application (Client Credentials Grant)"
 msgstr "Backend-applikation (Client Credentials Grant)"
 
 #. module: webservice
+#: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_client_auth_header
+msgid "Client Auth Header"
+msgstr ""
+
+#. module: webservice
+#: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_client_auth_value
+msgid "Client Auth Header Value"
+msgstr ""
+
+#. module: webservice
+#: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_client_auth_method
+msgid "Client Authentication"
+msgstr ""
+
+#. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_clientid
 msgid "Client ID"
 msgstr "Klient-ID"
+
+#. module: webservice
+#: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_client_auth_method__client_secret_basic
+msgid "Client ID & Secret (HTTP Basic)"
+msgstr ""
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_client_secret
@@ -78,6 +98,11 @@ msgid "Created on"
 msgstr "Oprettet den"
 
 #. module: webservice
+#: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_client_auth_method__custom_header
+msgid "Custom Authorization header"
+msgstr ""
+
+#. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__display_name
 msgid "Display Name"
 msgstr "Vis navn"
@@ -88,9 +113,40 @@ msgid "Form"
 msgstr "Formular"
 
 #. module: webservice
+#: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_client_auth_value
+msgid ""
+"Full, static header value sent to the token endpoint when the client "
+"authentication method is a custom Authorization header (e.g. 'SSWS <token>')."
+msgstr ""
+
+#. module: webservice
+#: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_token_method__get
+msgid "GET"
+msgstr ""
+
+#. module: webservice
 #: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__protocol__http
 msgid "HTTP Request"
 msgstr "HTTP-forespørgsel"
+
+#. module: webservice
+#: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_token_method
+msgid ""
+"HTTP method used to request the token from the token endpoint. Most "
+"providers use POST; some expose the token endpoint as GET."
+msgstr ""
+
+#. module: webservice
+#: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_client_auth_header
+msgid ""
+"Header name used to send the client credentials when the client "
+"authentication method is a custom Authorization header."
+msgstr ""
+
+#. module: webservice
+#: model:ir.model.fields,help:webservice.field_webservice_backend__oauth2_client_auth_method
+msgid "How the client credentials are presented to the token endpoint."
+msgstr ""
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__id
@@ -148,6 +204,11 @@ msgid "Oauth2 Token"
 msgstr "OAuth2-token"
 
 #. module: webservice
+#: model:ir.model.fields.selection,name:webservice.selection__webservice_backend__oauth2_token_method__post
+msgid "POST"
+msgstr ""
+
+#. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__password
 msgid "Password"
 msgstr "Adgangskode"
@@ -177,6 +238,11 @@ msgstr "Teknisk navn"
 msgid "The redirect URL to be used as part of the OAuth2 authorisation flow"
 msgstr ""
 "Omdirigerings-URL'en, der skal bruges som en del af OAuth2-godkendelsesflowet"
+
+#. module: webservice
+#: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_token_method
+msgid "Token Request Method"
+msgstr ""
 
 #. module: webservice
 #: model:ir.model.fields,field_description:webservice.field_webservice_backend__oauth2_token_url
