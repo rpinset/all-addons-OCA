@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-08-04 16:41 UTC
+Generated 2026-08-07 22:00 UTC
 
-Total skipped: **142**
+Total skipped: **141**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **117**
+Count: **116**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -137,7 +137,6 @@ Count: **117**
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [19.0](https://github.com/OCA/stock-logistics-shopfloor/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [19.0](https://github.com/OCA/stock-logistics-tracking/tree/19.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [19.0](https://github.com/OCA/stock-weighing/tree/19.0) | No directory with __manifest__.py at repo root |
-| [survey](https://github.com/OCA/survey) | [19.0](https://github.com/OCA/survey/tree/19.0) | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [19.0](https://github.com/OCA/version-control-platform/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [19.0](https://github.com/OCA/vertical-abbey/tree/19.0) | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [19.0](https://github.com/OCA/vertical-agriculture/tree/19.0) | No directory with __manifest__.py at repo root |

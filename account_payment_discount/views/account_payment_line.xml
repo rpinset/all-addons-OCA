@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 ACSONE SA/NV
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="account_payment_line_form_view" model="ir.ui.view">
+        <field name="model">account.payment.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_batch_oca.account_payment_line_form"
+        />
+        <field name="arch" type="xml">
+            <field name="date" position="after">
+                <field name="discount_date" />
+            </field>
+
+            <field name="amount_currency" position="after">
+                <field
+                    name="diff_amount_residual_currency_amount_discount_currency"
+                    invisible="not can_have_discount"
+                />
+                <field name="pay_with_discount" invisible="not can_have_discount" />
+            </field>
+        </field>
+    </record>
+
+    <record id="account_payment_line_tree_view" model="ir.ui.view">
+        <field name="model">account.payment.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_batch_oca.account_payment_line_tree"
+        />
+        <field name="arch" type="xml">
+            <field name="date" position="after">
+                <field name="discount_date" />
+            </field>
+
+            <field name="amount_currency" position="after">
+                <field
+                    name="diff_amount_residual_currency_amount_discount_currency"
+                    invisible="not can_have_discount"
+                />
+                <field name="pay_with_discount" invisible="not can_have_discount" />
+            </field>
+        </field>
+    </record>
+</odoo>

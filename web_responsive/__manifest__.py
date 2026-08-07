@@ -9,7 +9,7 @@
 {
     "name": "Web Responsive",
     "summary": "Responsive web client, community-supported",
-    "version": "19.0.1.0.3",
+    "version": "19.0.1.1.0",
     "category": "Website",
     "website": "https://github.com/OCA/web",
     "author": "LasLabs, Tecnativa, ITerra, Onestein, Odoo Community Association (OCA)",
@@ -48,6 +48,11 @@
             "/web_responsive/static/src/components/control_panel/*",
             "/web_responsive/static/src/components/command_palette/*",
             "/web_responsive/static/src/views/form/*",
+            # Don't include dark mode files in light mode
+            ("remove", "web_responsive/static/src/**/*.dark.scss"),
+        ],
+        "web.assets_web_dark": [
+            "web_responsive/static/src/**/*.dark.scss",
         ],
         "web.assets_clickbot": [
             "/web_responsive/static/src/clickbot/clickbot.esm.js",

@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-08-04 16:41 UTC
+Generated 2026-08-07 22:00 UTC
 
 ## Skipped repos
 
@@ -128,7 +128,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_module` | No directory with __manifest__.py at repo root |
-| [survey](https://github.com/OCA/survey) | `no_module` | No directory with __manifest__.py at repo root |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |

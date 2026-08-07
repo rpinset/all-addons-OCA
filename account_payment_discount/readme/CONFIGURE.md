@@ -1,0 +1,1 @@
+Configuration used is the same as Odoo standard, it doesn't add any new configuration

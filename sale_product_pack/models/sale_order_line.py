@@ -107,7 +107,7 @@ class SaleOrderLine(models.Model):
         "price_unit",
         "discount",
         "name",
-        "tax_id",
+        "tax_ids",
     )
     def check_pack_line_modify(self):
         """Do not let to edit a sale order line if this one belongs to pack"""
