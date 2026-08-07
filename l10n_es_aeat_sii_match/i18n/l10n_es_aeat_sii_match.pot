@@ -558,7 +558,7 @@ msgstr ""
 #: code:addons/l10n_es_aeat_sii_match/models/account_move.py:0
 #, python-format
 msgid ""
-"The invoices must be posted and have a CSV in order to be matched.\n"
+"The invoices must be posted and either already sent to the SII or have a failed send, in order to be matched.\n"
 "Non-matchable invoices: %(invoice_names)s"
 msgstr ""
 
