@@ -14,4 +14,5 @@
 * `PyTech-SRL <info@pytech.it>`_:
    * Alessandro Uffreduzzi <alessandro.uffreduzzi@pytech.it>
    * Sebastiano Picchi <sebastiano.picchi@pytech.it>
+   * Simone Rubino <simone.rubino@pytech.it>
 * Sergio Corato <https://github.com/sergiocorato>

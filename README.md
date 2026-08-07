@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-08-04 16:33 UTC** (elapsed 135s)
+Last build: **2026-08-07 21:53 UTC** (elapsed 111s)
 
 - Repos integrated: **140**
 - Canonical modules: **2911**
@@ -20,7 +20,7 @@ Last build: **2026-08-04 16:33 UTC** (elapsed 135s)
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | 8ef9605 2026-06-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | 15069cb 2026-03-02 Pedro M. Baeza Merge pull request #581 from ursais/14-dr-precommit-update |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 10 | 8670e82 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 731c7ef 2026-07-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 09521c6 2026-08-06 Pedro M. Baeza Merge pull request #2309 from PyTech-SRL/14.0-copier |
 | [account-payment](https://github.com/OCA/account-payment) | 37 | aab6d21 2026-04-08 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 20 | 53a360e 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 7138a05 2025-11-25 mymage Translated using Weblate (Italian) |
@@ -50,7 +50,7 @@ Last build: **2026-08-04 16:33 UTC** (elapsed 135s)
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 2b15a1d 2025-10-13 mymage Added translation using Weblate (Italian) |
-| [edi](https://github.com/OCA/edi) | 63 | 5f6b6f8 2026-01-14 strarsis Translated using Weblate (German) |
+| [edi](https://github.com/OCA/edi) | 63 | 8938600 2026-08-04 Marwan Behillil Translated using Weblate (French) |
 | [edi-framework](https://github.com/OCA/edi-framework) | 2 | 1359541 2025-10-13 mymage Translated using Weblate (Italian) |
 | [event](https://github.com/OCA/event) | 18 | 8259a1a 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [field-service](https://github.com/OCA/field-service) | 45 | 4817d83 2026-07-27 mymage Translated using Weblate (Italian) |
@@ -67,14 +67,14 @@ Last build: **2026-08-04 16:33 UTC** (elapsed 135s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | 1e56820 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 8c7b310 2026-08-04 Weblate Update translation files |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 1f9d6d8 2026-08-05 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | fd3d4a0 2026-08-03 OCA-git-bot [BOT] post-merge updates |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | d47c612 2026-08-06 OCA-git-bot [BOT] post-merge updates |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |

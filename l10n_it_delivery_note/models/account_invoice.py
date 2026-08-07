@@ -161,7 +161,6 @@ class AccountInvoice(models.Model):
         inv_dnls = self.mapped("delivery_note_ids").mapped("line_ids")
         dnls_to_unlink = all_dnls & inv_dnls
         res = super().unlink()
-        dnls_to_unlink.sync_invoice_status()
         dnls_to_unlink.mapped("delivery_note_id")._compute_invoice_status()
         for dn in dnls_to_unlink.mapped("delivery_note_id"):
             dn.state = "confirm"
@@ -173,9 +172,13 @@ class AccountInvoice(models.Model):
             self.invoice_line_ids.sale_line_ids.delivery_note_line_ids
             | self.delivery_note_ids.line_ids
         )
-        dn_lines.sync_invoice_status()
         dn_lines.delivery_note_id._compute_invoice_status()
         dn_lines.delivery_note_id.state = "confirm"
+
+    def action_switch_invoice_into_refund_credit_note(self):
+        return super(
+            AccountInvoice, self.with_context(switching_dn_invoice=True)
+        ).action_switch_invoice_into_refund_credit_note()
 
 
 class AccountInvoiceLine(models.Model):
@@ -203,3 +206,12 @@ class AccountInvoiceLine(models.Model):
     def _compute_delivery_note_id(self):
         for line in self:
             line.delivery_note_id = line.delivery_note_line_id.delivery_note_id
+
+    def copy_data(self, default=None):
+        data = super().copy_data(default=default)
+        if self.env.context.get("switching_dn_invoice"):
+            # Keep the delivery note link
+            # when a refund is created by switching an invoice
+            for line, values in zip(self, data):
+                values["delivery_note_line_id"] = line.delivery_note_line_id.id
+        return data
