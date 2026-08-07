@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-08-04 16:45 UTC
+Generated 2026-08-07 22:00 UTC
 
 ## Skipped repos
 
@@ -62,7 +62,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-taiwan](https://github.com/OCA/l10n-taiwan) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |

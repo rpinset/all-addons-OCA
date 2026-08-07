@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-08-04 16:45 UTC
+Generated 2026-08-07 22:00 UTC
 
-Total skipped: **109**
+Total skipped: **108**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **83**
+Count: **82**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -93,7 +93,6 @@ Count: **83**
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | [18.0](https://github.com/OCA/l10n-slovenia/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-taiwan](https://github.com/OCA/l10n-taiwan) | [18.0](https://github.com/OCA/l10n-taiwan/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | [18.0](https://github.com/OCA/l10n-turkey/tree/18.0) | No directory with __manifest__.py at repo root |
-| [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | [18.0](https://github.com/OCA/l10n-ukraine/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | [18.0](https://github.com/OCA/l10n-united-kingdom/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | [18.0](https://github.com/OCA/l10n-uruguay/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | [18.0](https://github.com/OCA/l10n-venezuela/tree/18.0) | No directory with __manifest__.py at repo root |

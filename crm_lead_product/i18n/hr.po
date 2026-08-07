@@ -6,7 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-08-06 12:27+0000\n"
+"Last-Translator: vladimiruvid <vladimir@uvid.hr>\n"
 "Language-Team: none\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -14,222 +15,223 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__active
 msgid "Active"
-msgstr ""
+msgstr "Aktivno"
 
 #. module: crm_lead_product
 #: model:ir.model,name:crm_lead_product.model_crm_product_report
 msgid "CRM Pipeline by Product Analysis"
-msgstr ""
+msgstr "Analiza CRM prodajnog lijevka po proizvodima"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__campaign_id
 msgid "Campaing"
-msgstr ""
+msgstr "Kampanja"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__category_id
 msgid "Category"
-msgstr ""
+msgstr "Kategorija"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__date_closed
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Closed Date"
-msgstr ""
+msgstr "Datum zatvaranja"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__company_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Company"
-msgstr ""
+msgstr "Tvrtka"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__partner_name
 msgid "Contact Name"
-msgstr ""
+msgstr "Naziv kontakta"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__date_conversion
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Conversion Date"
-msgstr ""
+msgstr "Datum konverzije"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Conversion Date from Lead to Opportunity"
-msgstr ""
+msgstr "Datum pretvaranja interesa u priliku"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__country_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Country"
-msgstr ""
+msgstr "Država"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__create_date
 msgid "Create Date"
-msgstr ""
+msgstr "Datum kreiranja"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Kreirao"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Kreirano"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Creation Date"
-msgstr ""
+msgstr "Datum kreiranja"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__company_currency
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Date Closed"
-msgstr ""
+msgstr "Datum zatvaranja"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__date_deadline
 msgid "Deadline Date"
-msgstr ""
+msgstr "Datum roka"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__name
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__display_name
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Expected Closing"
-msgstr ""
+msgstr "Očekivano zatvaranje"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__expected_revenue
 msgid "Expected Revenue"
-msgstr ""
+msgstr "Očekivani prihod"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__expected_revenue
 msgid "Expected revenue"
-msgstr ""
+msgstr "Očekivani prihod"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Extended Filters"
-msgstr ""
+msgstr "Napredni filtri"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Group By"
-msgstr ""
+msgstr "Grupiraj po"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__id
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zadnje ažurirao"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zadnje ažurirano"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__lead_id
 #: model:ir.model.fields.selection,name:crm_lead_product.selection__crm_product_report__type__lead
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Lead"
-msgstr ""
+msgstr "Interes"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead__lead_line_ids
 msgid "Lead Lines"
-msgstr ""
+msgstr "Stavke interesa"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__name
 msgid "Lead Name"
-msgstr ""
+msgstr "Naziv interesa"
 
 #. module: crm_lead_product
 #: model:ir.model,name:crm_lead_product.model_crm_lead
 msgid "Lead/Opportunity"
-msgstr ""
+msgstr "Interes/Prilika"
 
 #. module: crm_lead_product
 #: model:ir.model,name:crm_lead_product.model_crm_lead_line
 msgid "Line in CRM Lead"
-msgstr ""
+msgstr "Stavka CRM interesa"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Lost"
-msgstr ""
+msgstr "Izgubljeno"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__lost_reason_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Lost Reason"
-msgstr ""
+msgstr "Razlog gubitka"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "My Opportunities"
-msgstr ""
+msgstr "Moje prilike"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Open"
-msgstr ""
+msgstr "Otvoreno"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__date_open
 msgid "Open Date"
-msgstr ""
+msgstr "Datum otvaranja"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Opportunities Analysis"
-msgstr ""
+msgstr "Analiza prilika"
 
 #. module: crm_lead_product
 #: model:ir.model.fields.selection,name:crm_lead_product.selection__crm_product_report__type__opportunity
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Opportunity"
-msgstr ""
+msgstr "Prilika"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__partner_id
 msgid "Partner/Customer"
-msgstr ""
+msgstr "Partner/Kupac"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_graph
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_pivot
 msgid "Pipeline Analysis"
-msgstr ""
+msgstr "Analiza prodajnog lijevka"
 
 #. module: crm_lead_product
 #: model_terms:ir.actions.act_window,help:crm_lead_product.crm_product_report_action
@@ -244,111 +246,111 @@ msgstr ""
 #. module: crm_lead_product
 #: model:ir.actions.act_window,name:crm_lead_product.crm_product_report_action
 msgid "Pipeline by Product Analysis"
-msgstr ""
+msgstr "Analiza prodajnog lijevka po proizvodima"
 
 #. module: crm_lead_product
 #: model:ir.ui.menu,name:crm_lead_product.crm_product_report_menu
 msgid "Pipeline by product"
-msgstr ""
+msgstr "Prodajni lijevak po proizvodima"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__price_unit
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.view_tree_lead_line
 msgid "Price Unit"
-msgstr ""
+msgstr "Jedinična cijena"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__probability
 msgid "Probability"
-msgstr ""
+msgstr "Vjerojatnost"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__product_id
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__product_id
 msgid "Product"
-msgstr ""
+msgstr "Proizvod"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__category_id
 msgid "Product Category"
-msgstr ""
+msgstr "Kategorija proizvoda"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__product_qty
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__product_qty
 msgid "Product Quantity"
-msgstr ""
+msgstr "Količina proizvoda"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__product_tmpl_id
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__product_tmpl_id
 msgid "Product Template"
-msgstr ""
+msgstr "Predložak proizvoda"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_lead_view_form
 msgid "Products"
-msgstr ""
+msgstr "Proizvodi"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__prorated_revenue
 msgid "Prorated Revenue"
-msgstr ""
+msgstr "Razmjerni prihod"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__prorated_revenue
 msgid "Prorated revenue"
-msgstr ""
+msgstr "Razmjerni prihod"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.view_tree_lead_line
 msgid "Quantity"
-msgstr ""
+msgstr "Količina"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__team_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Sales Team"
-msgstr ""
+msgstr "Prodajni tim"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__user_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Salesperson"
-msgstr ""
+msgstr "Prodavač"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Show only lead"
-msgstr ""
+msgstr "Prikaži samo interese"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Show only opportunity"
-msgstr ""
+msgstr "Prikaži samo prilike"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__stage_id
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Stage"
-msgstr ""
+msgstr "Faza"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_product_report__type
 msgid "Type"
-msgstr ""
+msgstr "Vrsta"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,help:crm_lead_product.field_crm_product_report__type
 msgid "Type is used to separate Leads and Opportunities"
-msgstr ""
+msgstr "Vrsta se koristi za razlikovanje interesa i prilika"
 
 #. module: crm_lead_product
 #: model:ir.model.fields,field_description:crm_lead_product.field_crm_lead_line__uom_id
 msgid "Unit of Measure"
-msgstr ""
+msgstr "Jedinica mjere"
 
 #. module: crm_lead_product
 #: model_terms:ir.ui.view,arch_db:crm_lead_product.crm_opportunity_report_view_search
 msgid "Won"
-msgstr ""
+msgstr "Dobiveno"

@@ -90,7 +90,7 @@ addon | version | maintainers | summary
 [analytic_base_department](analytic_base_department/) | 18.0.1.0.0 |  | Add relationship between Analytic and Department
 [analytic_hr_department_restriction](analytic_hr_department_restriction/) | 18.0.1.1.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic distributions restriction per HR department
 [analytic_partner](analytic_partner/) | 18.0.1.0.0 |  | Search and group analytic entries by partner
-[hr_expense_analytic_tag](hr_expense_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Expense Analytic Tag
+[hr_expense_analytic_tag](hr_expense_analytic_tag/) | 18.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Expense Analytic Tag
 [hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Timesheet Analytic Tag
 [pos_analytic_by_config](pos_analytic_by_config/) | 18.0.1.0.1 |  | Use analytic account defined on POS configuration for POS orders
 [product_analytic](product_analytic/) | 18.0.1.0.0 |  | Add analytic distribution models on products and product categories
@@ -98,7 +98,7 @@ addon | version | maintainers | summary
 [purchase_analytic_distribution_model_warehouse](purchase_analytic_distribution_model_warehouse/) | 18.0.1.0.1 |  | Use analytic distribution models based on the picking type's warehouse in purchase orders
 [purchase_analytic_tag](purchase_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Analytic Tag
 [purchase_stock_analytic](purchase_stock_analytic/) | 18.0.1.0.0 |  | Copies the analytic distribution of the purchase order itemto the stock move
-[sale_analytic_distribution_model_warehouse](sale_analytic_distribution_model_warehouse/) | 18.0.1.0.1 |  | Use analytic distribution models based on the warehouse in sale orders
+[sale_analytic_distribution_model_warehouse](sale_analytic_distribution_model_warehouse/) | 18.0.1.0.2 |  | Use analytic distribution models based on the warehouse in sale orders
 [sale_analytic_tag](sale_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Analytic Tag
 [stock_analytic](stock_analytic/) | 18.0.1.2.0 |  | Adds analytic distribution in stock move
 [stock_landed_costs_analytic](stock_landed_costs_analytic/) | 18.0.1.0.1 |  | This module adds an analytic account and analytic tags on landed costs lines so that on landed costs validation account moves get analytic account and analytic tags values from landed costs lines.
@@ -553,6 +553,7 @@ addon | version | maintainers | summary
 [account_move_pivot_view](account_move_pivot_view/) | 18.0.1.0.0 |  | Adds pivot view to Invoices (move in and move out), Refunds, and Receipts
 [account_move_tier_validation](account_move_tier_validation/) | 18.0.1.0.2 |  | Extends the functionality of Account Moves to support a tier validation process.
 [account_move_tier_validation_approver](account_move_tier_validation_approver/) | 18.0.1.0.0 |  | Account Move Tier Validation Approver
+[account_payment_state_keep_draft](account_payment_state_keep_draft/) | 18.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> <a href='https://github.com/ROBBYHOOD9'><img src='https://github.com/ROBBYHOOD9.png' width='32' height='32' style='border-radius:50%;' alt='ROBBYHOOD9'/></a> | Allow register payment to keep draft state
 [account_portal_invoice_search](account_portal_invoice_search/) | 18.0.1.0.0 |  | Account Portal Invoice Search
 [account_receipt_journal](account_receipt_journal/) | 18.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Define and use journals dedicated to receipts
 [account_receipt_send](account_receipt_send/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Send receipts
@@ -2021,7 +2022,7 @@ addon | version | maintainers | summary
 [delivery_roulier](delivery_roulier/) | 18.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Integration of multiple carriers
 [delivery_schenker](delivery_schenker/) | 18.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_state](delivery_state/) | 18.0.1.2.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
-[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.3.1 |  | Integrate UPS webservice
+[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.4.0 |  | Integrate UPS webservice
 [partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [partner_delivery_zone](partner_delivery_zone/) | 18.0.1.0.1 |  | Enables partner delivery zones for physical products
@@ -2289,7 +2290,7 @@ addon | version | maintainers | summary
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 18.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 18.0.1.1.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 18.0.1.1.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
 [base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 18.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template Account
 [base_ubl](base_ubl/) | 18.0.1.0.0 |  | Base module for Universal Business Language (UBL)
 [base_ubl_generate](base_ubl_generate/) | 18.0.1.0.1 |  | Base module to generate UBL files (Universal Business Language)
@@ -2304,6 +2305,7 @@ addon | version | maintainers | summary
 [sale_order_import_ubl_customer_free_ref](sale_order_import_ubl_customer_free_ref/) | 18.0.1.0.0 |  | Extract CustomerReference from sale UBL
 [sale_order_import_ubl_line_customer_ref](sale_order_import_ubl_line_customer_ref/) | 18.0.1.0.0 |  | Extract specific customer reference for each order line
 [sale_order_import_ubl_requested_delivery](sale_order_import_ubl_requested_delivery/) | 18.0.1.0.0 |  | Extract RequestedDeliveryPeriod from sale UBL
+[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Test Base Import Pdf by Template
 
 [//]: # (end addons)
 
@@ -2761,11 +2763,11 @@ addon | version | maintainers | summary
 [helpdesk_mgmt_sla](helpdesk_mgmt_sla/) | 18.0.2.1.0 |  | Add SLA to the tickets for Helpdesk Management.
 [helpdesk_mgmt_stage_validation](helpdesk_mgmt_stage_validation/) | 18.0.1.0.0 |  | Validate input data when reaching a Helpdesk Ticket stage
 [helpdesk_mgmt_template](helpdesk_mgmt_template/) | 18.0.1.0.0 |  | Create Helpdesk Ticket Template
-[helpdesk_mgmt_timesheet](helpdesk_mgmt_timesheet/) | 18.0.1.1.3 |  | Add HR Timesheet to the tickets for Helpdesk Management.
+[helpdesk_mgmt_timesheet](helpdesk_mgmt_timesheet/) | 18.0.1.1.4 |  | Add HR Timesheet to the tickets for Helpdesk Management.
 [helpdesk_mgmt_timesheet_sale](helpdesk_mgmt_timesheet_sale/) | 18.0.1.0.0 |  | Allow to set the sale order line directly on helpdesk tickets
 [helpdesk_motive](helpdesk_motive/) | 18.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Keep the motive
-[helpdesk_portal_priority](helpdesk_portal_priority/) | 18.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Priority
-[helpdesk_portal_restriction](helpdesk_portal_restriction/) | 18.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Restriction
+[helpdesk_portal_priority](helpdesk_portal_priority/) | 18.0.1.1.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Priority
+[helpdesk_portal_restriction](helpdesk_portal_restriction/) | 18.0.1.1.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Restriction
 [helpdesk_product](helpdesk_product/) | 18.0.1.1.0 |  | Add the option to select product in the tickets.
 [helpdesk_ticket_close_inactive](helpdesk_ticket_close_inactive/) | 18.0.1.1.1 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Helpdesk Ticket Close Inactive
 [helpdesk_ticket_open_tab](helpdesk_ticket_open_tab/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Helpdesk Ticket Open Tab
@@ -3381,14 +3383,14 @@ addon | version | maintainers | summary
 [l10n_br_base](l10n_br_base/) | 18.0.1.7.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Customization of base module for implementations in Brazil.
 [l10n_br_base_l10n_br_compat](l10n_br_base_l10n_br_compat/) | 18.0.2.1.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Compatibility with the l10n_br module
 [l10n_br_cnpj_search](l10n_br_cnpj_search/) | 18.0.1.1.3 |  | Integração com os Webservices da ReceitaWS e SerPro
-[l10n_br_coa](l10n_br_coa/) | 18.0.1.0.3 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base do Planos de Contas brasileiros
+[l10n_br_coa](l10n_br_coa/) | 18.0.1.0.4 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base do Planos de Contas brasileiros
 [l10n_br_coa_generic](l10n_br_coa_generic/) | 18.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Plano de Contas para empresas do Regime normal (Micro e pequenas empresas)
 [l10n_br_coa_simple](l10n_br_coa_simple/) | 18.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Plano de Contas ITG 1000 para Microempresas e Empresa de Pequeno Porte
 [l10n_br_crm](l10n_br_crm/) | 18.0.1.2.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization CRM
 [l10n_br_crm_cnpj_search](l10n_br_crm_cnpj_search/) | 18.0.1.1.0 | <a href='https://github.com/corredato'><img src='https://github.com/corredato.png' width='32' height='32' style='border-radius:50%;' alt='corredato'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | CNPJ search in CRM Lead
 [l10n_br_cte_spec](l10n_br_cte_spec/) | 18.0.1.1.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | CT-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 18.0.1.0.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Update exchange rates using OCA modules for Brazil
-[l10n_br_fiscal](l10n_br_fiscal/) | 18.0.7.14.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
+[l10n_br_fiscal](l10n_br_fiscal/) | 18.0.7.15.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
 [l10n_br_fiscal_certificate](l10n_br_fiscal_certificate/) | 18.0.1.3.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | A1 fiscal certificate management for Brazil
 [l10n_br_fiscal_closing](l10n_br_fiscal_closing/) | 18.0.1.1.1 |  | Period fiscal closing
 [l10n_br_fiscal_dfe](l10n_br_fiscal_dfe/) | 18.0.1.3.0 |  | Distribuição de documentos fiscais
@@ -4319,7 +4321,7 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 18.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 18.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 18.0.1.2.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 18.0.2.3.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 18.0.2.3.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 18.0.1.0.4 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 18.0.1.0.3 |  | AEAT modelo 123
@@ -4331,14 +4333,14 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 18.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 18.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 18.0.1.2.4 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 18.0.1.1.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 18.0.1.1.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 18.0.1.0.1 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 18.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 18.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod390_vat_prorate](l10n_es_aeat_mod390_vat_prorate/) | 18.0.1.1.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | AEAT modelo 390 Prorate
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 18.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 18.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 18.0.2.0.1 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 18.0.2.0.2 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 18.0.2.2.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.1.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
@@ -4487,6 +4489,53 @@ addon | version | maintainers | summary
 [l10n_th_partner](l10n_th_partner/) | 18.0.2.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - Partner
 [l10n_th_tier_department](l10n_th_tier_department/) | 18.0.1.0.1 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Tier Department Level
 [l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Tier Department Level Demo
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/l10n-ukraine
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ukraine&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-ukraine/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ukraine/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-ukraine/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ukraine/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-ukraine/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ukraine)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ukraine-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ukraine-18-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# l10n-ukraine
+
+l10n-ukraine
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_ua_hr_job_classifier](l10n_ua_hr_job_classifier/) | 18.0.1.0.0 | <a href='https://github.com/PeleOlala'><img src='https://github.com/PeleOlala.png' width='32' height='32' style='border-radius:50%;' alt='PeleOlala'/></a> | Ukrainian National Classifier of Occupations DK 003:2010
 
 [//]: # (end addons)
 
@@ -7422,6 +7471,7 @@ addon | version | maintainers | summary
 [sale_invoice_product_not_alone](sale_invoice_product_not_alone/) | 18.0.1.0.0 |  | Set products to not invoice alone
 [sale_invoice_split_payment](sale_invoice_split_payment/) | 18.0.1.0.0 |  | Split by payment term generated invoices from sale orders
 [sale_line_name_option](sale_line_name_option/) | 18.0.1.0.1 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Display product description without reference code on sale order lines
+[sale_line_vendor_comment](sale_line_vendor_comment/) | 18.0.1.0.0 |  | Add the vendor comment field to sale order line
 [sale_mail_autosubscribe](sale_mail_autosubscribe/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's sale orders
 [sale_manual_delivery](sale_manual_delivery/) | 18.0.1.1.0 |  | Create manually your deliveries
 [sale_mrp_bom](sale_mrp_bom/) | 18.0.1.0.0 |  | Allows define a BOM in the sales lines.
@@ -7662,6 +7712,7 @@ addon | version | maintainers | summary
 [auth_saml](auth_saml/) | 18.0.1.1.3 | <a href='https://github.com/vincent-hatakeyama'><img src='https://github.com/vincent-hatakeyama.png' width='32' height='32' style='border-radius:50%;' alt='vincent-hatakeyama'/></a> | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 18.0.1.0.0 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 18.0.1.0.0 |  | Force uninvited users to use a good email for signup
+[auth_totp_enforce](auth_totp_enforce/) | 18.0.1.0.0 |  | Force users to set up an authenticator app before they can log in.
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 18.0.1.0.0 |  | Makes the user login field case insensitive
 [base_group_subcontractor](base_group_subcontractor/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Extra user type group for restricted access to backend
 [base_user_empty_password](base_user_empty_password/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to empty password of users
@@ -7990,7 +8041,7 @@ addon | version | maintainers | summary
 [barcode_action](barcode_action/) | 18.0.1.0.0 |  | Allows to use barcodes as a launcher
 [base_cancel_confirm](base_cancel_confirm/) | 18.0.1.1.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base Cancel Confirm
 [base_custom_filter](base_custom_filter/) | 18.0.1.0.0 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> <a href='https://github.com/ForgeFlow'><img src='https://github.com/ForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ForgeFlow'/></a> | Add custom filters in standard filters and group by dropdowns
-[base_export_manager](base_export_manager/) | 18.0.1.0.2 |  | Manage model export profiles
+[base_export_manager](base_export_manager/) | 18.0.1.0.3 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 18.0.1.0.0 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 18.0.1.0.1 |  | Avoid "quick create" on m2o fields, on a "by model" basis
@@ -8170,8 +8221,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_sign_oca](agreement_sign_oca/) | 18.0.1.0.0 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Agreement Sign Oca
-[project_task_sign_oca](project_task_sign_oca/) | 18.0.1.0.0 | <a href='https://github.com/WesleyOliveira98'><img src='https://github.com/WesleyOliveira98.png' width='32' height='32' style='border-radius:50%;' alt='WesleyOliveira98'/></a> | Project Task Sign Oca
-[sign_oca](sign_oca/) | 18.0.1.4.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Allow to sign documents inside Odoo CE
+[project_task_sign_oca](project_task_sign_oca/) | 18.0.1.0.1 | <a href='https://github.com/WesleyOliveira98'><img src='https://github.com/WesleyOliveira98.png' width='32' height='32' style='border-radius:50%;' alt='WesleyOliveira98'/></a> | Project Task Sign Oca
+[sign_oca](sign_oca/) | 18.0.1.4.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Allow to sign documents inside Odoo CE
 
 [//]: # (end addons)
 
@@ -8503,6 +8554,7 @@ addon | version | maintainers | summary
 [purchase_stock_product_replenish_supplier](purchase_stock_product_replenish_supplier/) | 18.0.1.0.0 |  | Set default supplier in product replenish wizard
 [stock_location_orderpoint](stock_location_orderpoint/) | 18.0.1.0.5 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Declare orderpoint on a location allowing to replenish any product with the same criteria.
 [stock_orderpoint_default_location](stock_orderpoint_default_location/) | 18.0.1.0.1 |  | This module allows to define a different default location than the stock location
+[stock_orderpoint_generator](stock_orderpoint_generator/) | 18.0.1.0.0 |  | Mass configuration of stock order points
 [stock_orderpoint_manual_procurement](stock_orderpoint_manual_procurement/) | 18.0.1.0.0 |  | Allows to create procurement orders from orderpoints instead of relying only on the scheduler.
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 18.0.1.0.0 |  | Link Reordering rules to stock moves
 [stock_orderpoint_mto_as_mts](stock_orderpoint_mto_as_mts/) | 18.0.1.2.0 |  | Materialize need from MTO route through orderpoint
@@ -8888,7 +8940,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[shopfloor](shopfloor/) | 18.0.0.18.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 18.0.0.18.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 18.0.1.2.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_checkout_sync](shopfloor_checkout_sync/) | 18.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Glue module
 [shopfloor_cluster_picking_repack](shopfloor_cluster_picking_repack/) | 18.0.1.2.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Build delivery packages at the end of the cluster picking
@@ -9086,6 +9138,7 @@ addon | version | maintainers | summary
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 18.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 18.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_hide_apply_all](stock_inventory_hide_apply_all/) | 18.0.1.0.0 | <a href='https://github.com/smorita7749'><img src='https://github.com/smorita7749.png' width='32' height='32' style='border-radius:50%;' alt='smorita7749'/></a> | Hide the 'Apply All' button on the inventory adjustment list
+[stock_inventory_location_state](stock_inventory_location_state/) | 18.0.1.0.0 | <a href='https://github.com/bguillot'><img src='https://github.com/bguillot.png' width='32' height='32' style='border-radius:50%;' alt='bguillot'/></a> | Verify that all locations are counted.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 18.0.1.0.1 |  | Lock down stock locations during inventories.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 18.0.1.0.0 |  | More filters for inventory adjustments
 [stock_inventory_verification_request](stock_inventory_verification_request/) | 18.0.1.2.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to request a Slot Verification when a inventory is Pending to Approve

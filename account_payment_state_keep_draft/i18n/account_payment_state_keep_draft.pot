@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_state_keep_draft
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model,name:account_payment_state_keep_draft.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model,name:account_payment_state_keep_draft.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields,help:account_payment_state_keep_draft.field_res_company__register_customer_payment_state
+#: model:ir.model.fields,help:account_payment_state_keep_draft.field_res_config_settings__register_customer_payment_state
+msgid "Default state for Register Payment (Inbound)"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields,help:account_payment_state_keep_draft.field_res_company__register_vendor_payment_state
+#: model:ir.model.fields,help:account_payment_state_keep_draft.field_res_config_settings__register_vendor_payment_state
+msgid "Default state for Register Payment (Outbound)"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model_terms:ir.ui.view,arch_db:account_payment_state_keep_draft.res_config_settings_view_form
+msgid "Default state of the payment register when a payment is created."
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields.selection,name:account_payment_state_keep_draft.selection__res_company__register_customer_payment_state__draft
+#: model:ir.model.fields.selection,name:account_payment_state_keep_draft.selection__res_company__register_vendor_payment_state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model,name:account_payment_state_keep_draft.model_account_payment_register
+msgid "Pay"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model,name:account_payment_state_keep_draft.model_account_payment
+msgid "Payments"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields.selection,name:account_payment_state_keep_draft.selection__res_company__register_customer_payment_state__posted
+#: model:ir.model.fields.selection,name:account_payment_state_keep_draft.selection__res_company__register_vendor_payment_state__posted
+msgid "Posted"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields,field_description:account_payment_state_keep_draft.field_res_company__register_customer_payment_state
+#: model:ir.model.fields,field_description:account_payment_state_keep_draft.field_res_config_settings__register_customer_payment_state
+msgid "Register Customer Payment to State"
+msgstr ""
+
+#. module: account_payment_state_keep_draft
+#: model:ir.model.fields,field_description:account_payment_state_keep_draft.field_res_company__register_vendor_payment_state
+#: model:ir.model.fields,field_description:account_payment_state_keep_draft.field_res_config_settings__register_vendor_payment_state
+msgid "Register Vendor Payment to State"
+msgstr ""
