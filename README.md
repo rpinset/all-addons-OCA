@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-08-04 16:38 UTC** (elapsed 183s)
+Last build: **2026-08-07 21:56 UTC** (elapsed 95s)
 
 - Repos integrated: **117**
 - Canonical modules: **2099**
@@ -75,7 +75,7 @@ Last build: **2026-08-04 16:38 UTC** (elapsed 183s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 5 | 6453894 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [maintenance](https://github.com/OCA/maintenance) | 25 | 922ca6b 2026-04-30 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | b4b3a8b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [manufacture](https://github.com/OCA/manufacture) | 52 | 3f6e92e 2026-06-17 OCA-git-bot [BOT] post-merge updates |
+| [manufacture](https://github.com/OCA/manufacture) | 52 | 4c6e264 2026-08-06 OCA-git-bot [BOT] post-merge updates |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 8f4a954 2026-07-20 Stéphane Bidoul Merge pull request #820 from acsone/15.0-update-dotfiles-202607 |
