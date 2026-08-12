@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* survey_partner_representative
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,help:survey_partner_representative.field_survey_survey__allow_partner_representing
+msgid ""
+"A user with the proper permissions, could do the survey on behalf of other"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_survey__allow_partner_representing
+msgid "Allow Partner Representing"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_representative_mixin__display_name
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_survey__display_name
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_user_input__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_representative_mixin__id
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_survey__id
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_user_input__id
+msgid "ID"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_user_input__representative_partner_id
+msgid "Representative Partner"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:res.groups,name:survey_partner_representative.partner_representative
+msgid "Representative on surveys"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model,name:survey_partner_representative.model_survey_survey
+msgid "Survey"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_representative_mixin__survey_representative_partner_id
+msgid "Survey Representative Partner"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model,name:survey_partner_representative.model_survey_user_input
+#: model:ir.model.fields,field_description:survey_partner_representative.field_survey_representative_mixin__survey_user_input_id
+msgid "Survey User Input"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model.fields,help:survey_partner_representative.field_survey_user_input__representative_partner_id
+msgid "This partner filled this survey on behalf of other"
+msgstr ""
+
+#. module: survey_partner_representative
+#: model:ir.model,name:survey_partner_representative.model_survey_representative_mixin
+msgid "Use this mixin in models that have a linked survey input"
+msgstr ""

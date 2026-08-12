@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-08-11 12:49+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__amount_residual_currency
+msgid "Amount Residual Currency"
+msgstr "Valuta importo residuo"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,help:account_payment_discount.field_account_payment_line__diff_amount_residual_currency_amount_discount_currency
+msgid "Amount of discount"
+msgstr "Valore dello sconto"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line_create__cash_discount_date
+msgid "Cash Discount Date"
+msgstr "Data sconto contanti"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__diff_amount_residual_currency_amount_discount_currency
+msgid "Discount Amount"
+msgstr "Importo sconto"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__discount_amount_currency
+msgid "Discount Amount Currency"
+msgstr "Valuta valore sconto"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__discount_date
+msgid "Discount Date"
+msgstr "Data sconto"
+
+#. module: account_payment_discount
+#: model:ir.model.fields.selection,name:account_payment_discount.selection__account_payment_line_create__date_type__discount_due_date
+msgid "Discount Due Date"
+msgstr "Data scadenza sconto"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_move__display_name
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__display_name
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line_create__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__can_have_discount
+msgid "Early Discount"
+msgstr "Sconto anticipato"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_move__id
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__id
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line_create__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_payment_discount
+#: model:ir.model,name:account_payment_discount.model_account_move
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,help:account_payment_discount.field_account_payment_line__discount_date
+msgid ""
+"Last date at which the discounted amount must be paid in order for the Early"
+" Payment Discount to be granted"
+msgstr ""
+"Ultima data entro la quale deve essere versato l'importo scontato affinché "
+"venga concesso lo sconto per pagamento anticipato"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line__pay_with_discount
+msgid "Pay With Discount"
+msgstr "Paga con sconto"
+
+#. module: account_payment_discount
+#: model:ir.model,name:account_payment_discount.model_account_payment_line
+msgid "Payment Lines"
+msgstr "Righe di pagamento"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,help:account_payment_discount.field_account_payment_line_create__cash_discount_date
+msgid ""
+"Search lines with a discount due date which is posterior to the selected "
+"date."
+msgstr ""
+"Cerca le righe con una data di scadenza dello sconto successiva alla data "
+"selezionata."
+
+#. module: account_payment_discount
+#: model:ir.model.fields,help:account_payment_discount.field_account_payment_line__discount_amount_currency
+msgid "Total amount discount included"
+msgstr "Importo totale dello sconto incluso"
+
+#. module: account_payment_discount
+#: model:ir.model.fields,field_description:account_payment_discount.field_account_payment_line_create__date_type
+msgid "Type of Date Filter"
+msgstr "Tipo di filtro data"
+
+#. module: account_payment_discount
+#: model:ir.model,name:account_payment_discount.model_account_payment_line_create
+msgid "Wizard to create payment lines"
+msgstr "Procedura guidata creazione righe di pagamento"

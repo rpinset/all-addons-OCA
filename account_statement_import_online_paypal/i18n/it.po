@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-14 15:42+0000\n"
+"PO-Revision-Date: 2026-08-11 12:56+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: account_statement_import_online_paypal
 #. odoo-python
@@ -523,7 +523,7 @@ msgstr "Prelievo con carta di credito internazionale"
 #. odoo-python
 #: code:addons/account_statement_import_online_paypal/models/online_bank_statement_provider_paypal.py:0
 msgid "Invalid JSON response from PayPal API."
-msgstr ""
+msgstr "Risposta JSON non valida da API PayPal."
 
 #. module: account_statement_import_online_paypal
 #. odoo-python

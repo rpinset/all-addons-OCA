@@ -5,7 +5,7 @@
 {
     "name": "Mail Activity Team",
     "summary": "Add Teams to Activities",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.1",
     "development_status": "Beta",
     "category": "Social Network",
     "website": "https://github.com/OCA/mail",
@@ -24,6 +24,9 @@
         "views/mail_activity_team_views.xml",
         "views/mail_activity_views.xml",
         "views/res_users_views.xml",
+    ],
+    "demo": [
+        "demo/mail_activity_team.xml",
     ],
     "assets": {
         "web.assets_backend": [

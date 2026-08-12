@@ -11,6 +11,35 @@ from odoo.tools.sql import column_exists, create_column
 
 _logger = logging.getLogger(__name__)
 
+# Kept as a module level constant so that other modules can reuse it; up to 18.0
+# the same list lived on stock.valuation.layer as VALUED_TYPE, and the storage
+# sheet report imported it from there.
+MOVE_TYPE = [
+    ("reception", "Reception"),
+    ("reception_return", "Reception Return"),
+    ("reception_notice", "Reception Notice"),
+    ("reception_notice_return", "Reception Notice Return"),
+    ("reception_in_progress", "Reception In Progress"),
+    ("reception_in_progress_return", "Reception In Progress Return"),
+    ("delivery", "Delivery"),
+    ("delivery_return", "Delivery Return"),
+    ("delivery_notice", "Delivery Notice"),
+    ("delivery_notice_return", "Delivery Notice Return"),
+    ("plus_inventory", "Plus Inventory"),
+    ("minus_inventory", "Minus Inventory"),
+    ("consumption", "Consumption"),
+    ("consumption_return", "Consumption Return"),
+    ("usage_giving", "Usage Giving"),
+    ("usage_giving_return", "Usage Giving Return"),
+    ("production", "Production"),
+    ("production_return", "Production Return"),
+    ("internal_transfer", "Internal Transfer"),
+    ("internal_transit_out", "Internal Transit Out"),
+    ("internal_transit_in", "Internal Transit In"),
+    ("dropshipped", "Dropshipped"),
+    ("dropshipped_return", "Dropshipped Return"),
+]
+
 
 class StockMove(models.Model):
     _name = "stock.move"
@@ -24,31 +53,7 @@ class StockMove(models.Model):
         copy=False,
     )
     l10n_ro_move_type = fields.Selection(
-        [
-            ("reception", "Reception"),
-            ("reception_return", "Reception Return"),
-            ("reception_notice", "Reception Notice"),
-            ("reception_notice_return", "Reception Notice Return"),
-            ("reception_in_progress", "Reception In Progress"),
-            ("reception_in_progress_return", "Reception In Progress Return"),
-            ("delivery", "Delivery"),
-            ("delivery_return", "Delivery Return"),
-            ("delivery_notice", "Delivery Notice"),
-            ("delivery_notice_return", "Delivery Notice Return"),
-            ("plus_inventory", "Plus Inventory"),
-            ("minus_inventory", "Minus Inventory"),
-            ("consumption", "Consumption"),
-            ("consumption_return", "Consumption Return"),
-            ("usage_giving", "Usage Giving"),
-            ("usage_giving_return", "Usage Giving Return"),
-            ("production", "Production"),
-            ("production_return", "Production Return"),
-            ("internal_transfer", "Internal Transfer"),
-            ("internal_transit_out", "Internal Transit Out"),
-            ("internal_transit_in", "Internal Transit In"),
-            ("dropshipped", "Dropshipped"),
-            ("dropshipped_return", "Dropshipped Return"),
-        ],
+        MOVE_TYPE,
         compute="_compute_l10n_ro_move_type",
         store=True,
         string="Romanian - Move Type",
@@ -426,6 +431,62 @@ class StockMove(models.Model):
         }
         return vals.get(self.l10n_ro_move_type, [])
 
+    def _l10n_ro_get_pivot_currency_amount(self, value):
+        """Return (currency, amount) for the 408 leg of a reception on notice.
+
+        When the reception comes from a purchase order in a foreign currency,
+        the estimated liability is a monetary item and must keep the order
+        currency, so the exchange rate difference between reception and invoice
+        can be recognised when the invoice arrives (OMFP 1802/2014, function of
+        account 408). The stock leg stays in company currency at the reception
+        rate, inventory being a non-monetary asset that is not retranslated
+        (IAS 21).
+        """
+        self.ensure_one()
+        company_currency = self.company_id.currency_id
+        po_line = self.purchase_line_id if "purchase_line_id" in self._fields else False
+        if po_line and po_line.currency_id and po_line.currency_id != company_currency:
+            qty = self.product_uom._compute_quantity(
+                self.quantity, po_line.product_uom_id
+            )
+            return po_line.currency_id, po_line.price_unit * qty
+        return company_currency, value
+
+    def _l10n_ro_pivot_currency_vals(self, account_key, value, leg_sign):
+        """Extra values carrying the order currency on the 408 leg of a notice
+        reception. Empty for every other account and move type."""
+        self.ensure_one()
+        if account_key != "l10n_ro_picking_payable":
+            return {}
+        if not (self.l10n_ro_move_type or "").startswith("reception_notice"):
+            return {}
+        currency, amount = self._l10n_ro_get_pivot_currency_amount(value)
+        if currency == self.company_id.currency_id:
+            return {}
+        # `value` already carries the storno sign of the entry; mirror it here
+        signed = amount if value > 0 else -amount
+        return {"currency_id": currency.id, "amount_currency": leg_sign * signed}
+
+    def _get_value_from_bill(self, aml):
+        """Keep the reception rate for the quantity already received on notice.
+
+        Inventory is a non-monetary asset and is not retranslated for exchange
+        rate movements (IAS 21 / OMFP 1802): the rate delta belongs on 765/665,
+        not in the stock value. Only the part invoiced beyond the reception - a
+        genuine price difference, whose liability arises at the invoice date -
+        is taken at the invoice rate.
+
+        Defined by `purchase_stock`, the only caller, so this override is
+        reached exclusively on that path.
+        """
+        self.ensure_one()
+        company_currency = self.company_id.currency_id
+        if self.company_id.l10n_ro_accounting:
+            rate_diff = aml._l10n_ro_notice_rate_difference()
+            if not company_currency.is_zero(rate_diff):
+                return company_currency.round(aml.balance + rate_diff)
+        return super()._get_value_from_bill(aml)
+
     def _get_l10n_ro_value(self, price_type):
         self.ensure_one()
         if price_type == "value":
@@ -515,26 +576,27 @@ class StockMove(models.Model):
                 "l10n_ro_usage_giving", False
             ):
                 continue
-            res += [
-                {
-                    "account_id": debit_acc.id,
-                    "name": self.reference,
-                    "product_id": self.product_id.id,
-                    "quantity": self.product_qty,
-                    "debit": value,
-                    "credit": 0,
-                    "is_storno": value < 0,
-                },
-                {
-                    "account_id": credit_acc.id,
-                    "name": self.reference,
-                    "product_id": self.product_id.id,
-                    "quantity": self.product_qty,
-                    "debit": 0,
-                    "credit": value,
-                    "is_storno": value < 0,
-                },
-            ]
+            debit_vals = {
+                "account_id": debit_acc.id,
+                "name": self.reference,
+                "product_id": self.product_id.id,
+                "quantity": self.product_qty,
+                "debit": value,
+                "credit": 0,
+                "is_storno": value < 0,
+            }
+            credit_vals = {
+                "account_id": credit_acc.id,
+                "name": self.reference,
+                "product_id": self.product_id.id,
+                "quantity": self.product_qty,
+                "debit": 0,
+                "credit": value,
+                "is_storno": value < 0,
+            }
+            debit_vals.update(self._l10n_ro_pivot_currency_vals(from_key, value, 1))
+            credit_vals.update(self._l10n_ro_pivot_currency_vals(to_key, value, -1))
+            res += [debit_vals, credit_vals]
         if self.l10n_ro_move_type in (
             "consumption",
             "usage_giving",
