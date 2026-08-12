@@ -12,9 +12,10 @@
   - Alexey Pelykh \<<alexey.pelykh@corphub.eu>\>
 - [Camptocamp](https://www.camptocamp.com):
   - Damien Crier \<<damien.crier@camptocamp.com>\>
+  - Italo Lopes \<<italo.lopes@camptocamp.com>\>
 - [Druidoo](https://www.druidoo.io):
   - Iván Todorovich \<<ivan.todorovich@gmail.com>\>
 - [Pesol](https://www.pesol.es):
   - Pedro Evaristo Gonzalez Sanchez \<<pedro.gonzalez@pesol.es>\>
-- [Trobz](https://trobz.com):  
+- [Trobz](https://trobz.com):
   - Thao Le \<<thaolt@trobz.com>\>
