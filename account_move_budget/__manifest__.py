@@ -4,7 +4,7 @@
 {
     "name": "Account Move Budget",
     "summary": "Create Accounting Budgets",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Accounting & Finance",
     "website": "https://github.com/OCA/account-financial-tools",
     "author": "ForgeFlow, " "Odoo Community Association (OCA)",
@@ -14,7 +14,9 @@
     "depends": ["account", "date_range"],
     "data": [
         "security/ir.model.access.csv",
+        "security/account_move_budget.xml",
         "views/account_move_budget_line_views.xml",
         "views/account_move_budget_views.xml",
+        "views/res_partner_view.xml",
     ],
 }
