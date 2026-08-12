@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-08-09 04:45 UTC** (elapsed 166s)
+Last build: **2026-08-12 15:45 UTC** (elapsed 179s)
 
 - Repos integrated: **117**
-- Canonical modules: **2099**
+- Canonical modules: **2100**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **140**
 
@@ -41,7 +41,7 @@ Last build: **2026-08-09 04:45 UTC** (elapsed 166s)
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | f7d0af8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [dms](https://github.com/OCA/dms) | 7 | 05bf325 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [donation](https://github.com/OCA/donation) | 1 | d6265d8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [e-commerce](https://github.com/OCA/e-commerce) | 55 | 45837a2 2026-06-04 OCA-git-bot [BOT] post-merge updates |
+| [e-commerce](https://github.com/OCA/e-commerce) | 56 | e2999cb 2026-08-10 OCA-git-bot [BOT] post-merge updates |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
 | [edi](https://github.com/OCA/edi) | 22 | 8cb4f26 2026-08-03 OCA-git-bot [BOT] post-merge updates |
 | [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
