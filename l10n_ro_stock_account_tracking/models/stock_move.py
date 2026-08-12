@@ -305,6 +305,14 @@ class StockMove(models.Model):
             move = move.with_context(standard=True, valued_type="internal_transfer")
             move = move.with_company(move.company_id.id)
 
+            # `_prepare_out_svl_vals` values a non FIFO product at
+            # `product.standard_price`, i.e. the average cost over ALL the
+            # valuation accounts of the product. Both legs must instead be
+            # valued at the cost the source account actually holds for the
+            # transferred goods, otherwise the transfer takes out of that
+            # account more (or less) than it owns. Returns None for FIFO, where
+            # the real layers are consumed anyway.
+            unit_cost = move._l10n_ro_get_source_account_unit_cost()
             valued_move_lines = move.move_line_ids
             for valued_move_line in valued_move_lines:
                 move = move.with_context(stock_move_line_id=valued_move_line)
@@ -328,21 +336,26 @@ class StockMove(models.Model):
                         )
                     svl_vals["description"] += svl_vals.pop("rounding_adjustment", "")
                     svl_vals["l10n_ro_stock_move_line_id"] = valued_move_line.id
-                    svls |= self._l10n_ro_create_track_svl([svl_vals])
+                    out_svl = self._l10n_ro_create_track_svl([svl_vals])
+                    if unit_cost is not None:
+                        out_svl._l10n_ro_set_unit_cost(unit_cost)
+                    svls |= out_svl
 
+                    # The incoming leg mirrors the outgoing one: a transfer
+                    # neither creates nor destroys value.
                     new_svl_vals = svl_vals.copy()
                     new_svl_vals.update(
                         {
-                            "quantity": abs(svl_vals.get("quantity", 0)),
-                            "remaining_qty": abs(svl_vals.get("quantity", 0)),
-                            "unit_cost": abs(svl_vals.get("unit_cost", 0)),
-                            "value": abs(svl_vals.get("value", 0)),
-                            "remaining_value": abs(svl_vals.get("value", 0)),
+                            "quantity": abs(out_svl.quantity),
+                            "remaining_qty": abs(out_svl.quantity),
+                            "unit_cost": abs(out_svl.unit_cost),
+                            "value": abs(out_svl.value),
+                            "remaining_value": abs(out_svl.value),
                             "l10n_ro_tracking": [
                                 (
-                                    svls[-1].id,
-                                    abs(svl_vals.get("quantity", 0)),
-                                    abs(svl_vals.get("value", 0)),
+                                    out_svl.id,
+                                    abs(out_svl.quantity),
+                                    abs(out_svl.value),
                                 )
                             ],
                         }

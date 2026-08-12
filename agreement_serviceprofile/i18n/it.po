@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-27 11:46+0000\n"
+"PO-Revision-Date: 2026-08-11 14:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -61,12 +61,12 @@ msgstr "Conteggio allegati"
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_cancel
 msgid "Cancelled"
-msgstr ""
+msgstr "Annullato"
 
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_close
 msgid "Closed"
-msgstr ""
+msgstr "Chiuso"
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_product_product__service_tracking
@@ -92,7 +92,7 @@ msgstr "Nome visualizzato"
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_draft
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_follower_ids
@@ -136,7 +136,7 @@ msgstr ""
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_progress
 msgid "In Progress"
-msgstr ""
+msgstr "In corso"
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_serviceprofile__message_is_follower
@@ -257,7 +257,7 @@ msgstr "Fase"
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_suspend
 msgid "Suspended"
-msgstr ""
+msgstr "Sospeso"
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,help:agreement_serviceprofile.field_agreement_serviceprofile__partner_id
@@ -267,7 +267,7 @@ msgstr "Il cliente o fornitore a cui è correlato questo contratto."
 #. module: agreement_serviceprofile
 #: model:agreement.stage,name:agreement_serviceprofile.servpro_stage_renew
 msgid "To Renew"
-msgstr ""
+msgstr "Da rinnovare"
 
 #. module: agreement_serviceprofile
 #: model:ir.model.fields,field_description:agreement_serviceprofile.field_agreement_stage__stage_type

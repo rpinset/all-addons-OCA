@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-08 16:46+0000\n"
+"PO-Revision-Date: 2026-08-11 12:10+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -89,7 +89,7 @@ msgstr ""
 #. module: base_external_system
 #: model_terms:ir.ui.view,arch_db:base_external_system.external_system_view_form
 msgid "For client assertion name of keyfile or content"
-msgstr ""
+msgstr "Per l'asserzione del client, nome del file chiave o contenuto"
 
 #. module: base_external_system
 #: model_terms:ir.ui.view,arch_db:base_external_system.external_system_view_search

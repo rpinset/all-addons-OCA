@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-27 11:46+0000\n"
+"PO-Revision-Date: 2026-08-11 14:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -559,12 +559,12 @@ msgstr "Obiettivo sconto"
 #. module: agreement_rebate
 #: model:agreement.type,name:agreement_rebate.agreement_type_rebate_purchase
 msgid "Rebate agreements for purchases"
-msgstr ""
+msgstr "Accordi di rimborso per gli acquisti"
 
 #. module: agreement_rebate
 #: model:agreement.type,name:agreement_rebate.agreement_type_rebate_sale
 msgid "Rebate agreements for sales"
-msgstr ""
+msgstr "Accordi di sconto sulle vendite"
 
 #. module: agreement_rebate
 #: model:ir.model.fields,field_description:agreement_rebate.field_agreement_rebate_condition__name

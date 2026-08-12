@@ -88,21 +88,10 @@ class TrialBalanceReportWizard(models.TransientModel):
         ):
             start_range = self.account_code_from.code
             end_range = self.account_code_to.code
-            self.account_ids = self.env["account.account"].search(
-                [("code", ">=", start_range), ("code", "<=", end_range)]
-            )
-            if isinstance(self.account_ids[0].id, models.NewId):
-                real_ids = self.account_ids.ids
-                account_ids = self.env["account.account"].browse(real_ids)
-                if self.company_id:
-                    self.account_ids = account_ids.filtered(
-                        lambda a: self.company_id in a.company_ids
-                    )
-            else:
-                if self.company_id:
-                    self.account_ids = self.account_ids.filtered(
-                        lambda a: self.company_id in a.company_ids
-                    )
+            domain = [("code", ">=", start_range), ("code", "<=", end_range)]
+            if self.company_id:
+                domain.append(("company_ids", "=", self.company_id.id))
+            self.account_ids = self.env["account.account"].search(domain)
 
     @api.constrains("show_hierarchy", "show_hierarchy_level")
     def _check_show_hierarchy_level(self):
