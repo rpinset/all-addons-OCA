@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-08-09 04:44 UTC** (elapsed 214s)
+Last build: **2026-08-12 15:41 UTC** (elapsed 222s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -119,7 +119,7 @@ Last build: **2026-08-09 04:44 UTC** (elapsed 214s)
 | [storage](https://github.com/OCA/storage) | 11 | a0e4ca5 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [survey](https://github.com/OCA/survey) | 3 | 523a7e9 2023-10-29 mymage Translated using Weblate (Italian) |
 | [timesheet](https://github.com/OCA/timesheet) | 40 | cf99bc8 2025-06-21 mymage Translated using Weblate (Italian) |
-| [vertical-association](https://github.com/OCA/vertical-association) | 8 | 90f0e86 2025-06-21 mymage Translated using Weblate (Italian) |
+| [vertical-association](https://github.com/OCA/vertical-association) | 8 | 6a4b507 2026-08-11 mymage Translated using Weblate (Italian) |
 | [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | c2fcd1f 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | 6 | 5b2e787 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 7 | a3f861b 2025-03-19 Weblate Update translation files |
