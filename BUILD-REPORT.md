@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-08-12 15:50 UTC
+Generated 2026-08-15 21:42 UTC
 
 ## Skipped repos
 
@@ -113,7 +113,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | `no_module` | No directory with __manifest__.py at repo root |
-| [sale-channel](https://github.com/OCA/sale-channel) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | `no_module` | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |

@@ -281,6 +281,7 @@ addon | version | maintainers | summary
 [account_asset_force_account](account_asset_force_account/) | 19.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Asset Force Account
 [account_asset_management](account_asset_management/) | 19.0.1.0.2 |  | Assets Management
 [account_chart_update](account_chart_update/) | 19.0.1.1.5 |  | Wizard to update a company's account chart from a template
+[account_fiscal_position_allowed_journal](account_fiscal_position_allowed_journal/) | 19.0.1.0.0 | <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | Allow defining allowed journals on fiscal positions. Related invoices can only use one of the allowed journals on the fiscal position.
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 19.0.1.0.1 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 19.0.1.0.1 |  | Account Invoice Constraint Chronology
@@ -1555,7 +1556,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 19.0.1.1.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 19.0.1.1.2 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 19.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 19.0.1.0.0 |  | Implements Coverage Days.
@@ -1684,6 +1685,7 @@ addon | version | maintainers | summary
 [product_template_multi_link_date_span](product_template_multi_link_date_span/) | 19.0.1.0.0 |  | Add an optional date span for when a link is active.
 [product_variant_multi_link](product_variant_multi_link/) | 19.0.1.0.0 |  | Product Multi Links (Variant)
 [website_sale_acquirer_confirm_order](website_sale_acquirer_confirm_order/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | eCommerce Confirm Order By Payment Provider
+[website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_barcode_search](website_sale_barcode_search/) | 19.0.1.0.0 |  | It improve website product search adding search by barcode
 [website_sale_cart_expire](website_sale_cart_expire/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Cancel carts without activity after a configurable time
 [website_sale_charge_payment_fee](website_sale_charge_payment_fee/) | 19.0.1.0.0 | <a href='https://github.com/miguel-S73'><img src='https://github.com/miguel-S73.png' width='32' height='32' style='border-radius:50%;' alt='miguel-S73'/></a> | Payment fee charged to customer
@@ -1700,7 +1702,7 @@ addon | version | maintainers | summary
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 19.0.1.1.0 |  | Display product reference in e-commerce
 [website_sale_product_sort](website_sale_product_sort/) | 19.0.1.0.0 |  | Allow to define default sort criteria for e-commerce
 [website_sale_quick_checkout](website_sale_quick_checkout/) | 19.0.1.0.0 |  | Add a shortcut button to jump directly to the payment step
-[website_sale_require_legal](website_sale_require_legal/) | 19.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
+[website_sale_require_legal](website_sale_require_legal/) | 19.0.1.0.1 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_stock_available](website_sale_stock_available/) | 19.0.1.0.0 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
 [website_sale_stock_list_preview](website_sale_stock_list_preview/) | 19.0.1.0.0 |  | Show the stock of products on the product previews
 [website_sale_stock_picking_policy](website_sale_stock_picking_policy/) | 19.0.1.0.1 |  | Let customers choose consolidated delivery at checkout
@@ -1872,16 +1874,22 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[crm_event](crm_event/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link opportunities to event categories
+[event_email_reminder](event_email_reminder/) | 19.0.1.0.0 |  | Send an email before an event start
 [event_min_seat](event_min_seat/) | 19.0.1.0.0 |  | Minimum seats in events
 [event_registration_cancel_reason](event_registration_cancel_reason/) | 19.0.1.0.1 |  | Reasons for event registrations cancellations
 [event_registration_partner_unique](event_registration_partner_unique/) | 19.0.1.0.0 |  | Enforces 1 registration per partner and event
 [event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 19.0.1.0.0 |  | Free tickets no invoiceable
 [event_sale_reservation](event_sale_reservation/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow selling event registrations before the event exists
+[event_stage_cancelled](event_stage_cancelled/) | 19.0.1.0.0 |  | Event cancellation workflows
 [event_track_location_overlap](event_track_location_overlap/) | 19.0.1.0.0 |  | Restrict event track location overlapping
 [partner_event](partner_event/) | 19.0.1.0.2 |  | Link partner to events
+[website_event_filter_city](website_event_filter_city/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Add a customizable top area to filter events with city
 [website_event_membership_restriction](website_event_membership_restriction/) | 19.0.1.0.0 |  | Restrict event registration to members only
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 19.0.1.0.0 |  | Events Questions conditional to the chosen ticket
 [website_event_require_legal](website_event_require_legal/) | 19.0.1.0.0 |  | Website Event Require Legal
+[website_event_sale_b2x_alt_price](website_event_sale_b2x_alt_price/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display alt. price (B2B for B2C websites, and viceversa)
+[website_event_track_stage_cancelled](website_event_track_stage_cancelled/) | 19.0.1.0.0 |  | Event session cancellation workflows
 
 [//]: # (end addons)
 
@@ -1929,7 +1937,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 19.0.1.2.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 19.0.1.2.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 19.0.1.0.0 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Track invoices linked to Field Service orders
 [fieldservice_activity](fieldservice_activity/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_agreement](fieldservice_agreement/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Manage Field Service agreements and contracts
@@ -1958,7 +1966,7 @@ addon | version | maintainers | summary
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Execute server actions when reaching a Field Service stage
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 19.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Validate input data when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 19.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Integrate the logistics operations with Field Service
-[fieldservice_timeline](fieldservice_timeline/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module is a display timeline view of the Field Service order in Odoo.
+[fieldservice_timeline](fieldservice_timeline/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module is a display timeline view of the Field Service order in Odoo.
 [fieldservice_timesheet](fieldservice_timesheet/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Timesheet on Field Service Orders
 [fieldservice_vehicle](fieldservice_vehicle/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage Field Service vehicles and assign drivers
 
@@ -2122,7 +2130,7 @@ addon | version | maintainers | summary
 [helpdesk_mgmt_rating](helpdesk_mgmt_rating/) | 19.0.1.0.0 |  | This module allows customer to rate the assistance received on a ticket.
 [helpdesk_product](helpdesk_product/) | 19.0.1.1.0 |  | Add the option to select product in the tickets.
 [helpdesk_ticket_close_inactive](helpdesk_ticket_close_inactive/) | 19.0.1.0.0 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Helpdesk Ticket Close Inactive
-[helpdesk_ticket_partner_response](helpdesk_ticket_partner_response/) | 19.0.1.2.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Change ticket stage when partner response
+[helpdesk_ticket_partner_response](helpdesk_ticket_partner_response/) | 19.0.1.3.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Change ticket stage when partner response
 [helpdesk_ticket_related](helpdesk_ticket_related/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Link tickets to each other
 [helpdesk_type](helpdesk_type/) | 19.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add a type to your tickets
 
@@ -2535,6 +2543,7 @@ addon | version | maintainers | summary
 [l10n_br_coa_simple](l10n_br_coa_simple/) | 19.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Plano de Contas ITG 1000 para Microempresas e Empresa de Pequeno Porte
 [l10n_br_crm](l10n_br_crm/) | 19.0.1.2.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization CRM
 [l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 19.0.1.0.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Update exchange rates using OCA modules for Brazil
+[l10n_br_fiscal](l10n_br_fiscal/) | 19.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
 [l10n_br_hr](l10n_br_hr/) | 19.0.1.4.0 |  | Brazilian Localization HR
 [l10n_br_mis_report](l10n_br_mis_report/) | 19.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Templates de relatórios contábeis brasileiros: Balanço Patrimonial e DRE
 [l10n_br_resource](l10n_br_resource/) | 19.0.2.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | This module extend core resource to create important brazilian informations. Define a Brazilian calendar and some tools to compute dates used in financial and payroll modules
@@ -2944,12 +2953,16 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_banxico](currency_rate_update_banxico/) | 19.0.1.0.0 |  | Update exchange rates using Banxico
 [l10n_mx_account_reports](l10n_mx_account_reports/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Financial and tax reports for the Mexican localization
-[l10n_mx_catalogs](l10n_mx_catalogs/) | 19.0.1.0.0 |  | Catalogs of Servicio de Administración Tributaria (SAT) from México
+[l10n_mx_catalogs](l10n_mx_catalogs/) | 19.0.1.1.0 |  | Catalogs of Servicio de Administración Tributaria (SAT) from México
 [l10n_mx_catalogs_comex](l10n_mx_catalogs_comex/) | 19.0.1.0.0 |  | Foreign trade catalogs for Mexico
-[l10n_mx_cfdi](l10n_mx_cfdi/) | 19.0.1.0.0 |  | Allow generating CFDI (Comprobante Fiscal Digital por Internet)
-[l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 19.0.1.0.0 |  | Mexico CFDI Account Integration
-[l10n_mx_cfdi_comex](l10n_mx_cfdi_comex/) | 19.0.1.0.0 |  | Mexico foreign trade invoicing compliance
-[l10n_mx_cfdi_waybill](l10n_mx_cfdi_waybill/) | 19.0.1.0.0 |  | Provee soporte para generación de cartas porte con gestión de flotas simplificada.
+[l10n_mx_cfdi](l10n_mx_cfdi/) | 19.0.2.2.0 |  | Allow generating CFDI (Comprobante Fiscal Digital por Internet)
+[l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 19.0.1.1.0 |  | Mexico CFDI Account Integration
+[l10n_mx_cfdi_account_addenda_ford](l10n_mx_cfdi_account_addenda_ford/) | 19.0.1.0.0 |  | Mexican Localization Addendum For Ford
+[l10n_mx_cfdi_account_addenda_mabe](l10n_mx_cfdi_account_addenda_mabe/) | 19.0.1.0.0 |  | Mexican Localization Addendum For MABE
+[l10n_mx_cfdi_account_addenda_volkswagen](l10n_mx_cfdi_account_addenda_volkswagen/) | 19.0.1.0.0 |  | Mexican Localization Addendum For Volkswagen
+[l10n_mx_cfdi_account_addenda_whirlpool](l10n_mx_cfdi_account_addenda_whirlpool/) | 19.0.1.0.0 |  | Mexican Localization Addendum For Whirlpool
+[l10n_mx_cfdi_comex](l10n_mx_cfdi_comex/) | 19.0.1.1.0 |  | Mexico foreign trade invoicing compliance
+[l10n_mx_cfdi_waybill](l10n_mx_cfdi_waybill/) | 19.0.1.1.0 |  | Provee soporte para generación de cartas porte con gestión de flotas simplificada.
 [l10n_mx_sat](l10n_mx_sat/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Connect to the SAT portal using FIEL credentials & manage downloads
 [l10n_mx_sat_vendor_bill](l10n_mx_sat_vendor_bill/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Create vendor bills from SAT received CFDIs
 
@@ -3109,7 +3122,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 19.0.0.9.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 19.0.0.3.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.2.9.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 19.0.2.10.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 19.0.0.4.0 | <a href='https://github.com/adrian-dks'><img src='https://github.com/adrian-dks.png' width='32' height='32' style='border-radius:50%;' alt='adrian-dks'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 19.0.0.9.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Creates a rule for vat and nrc unique for partners.
@@ -3117,7 +3130,7 @@ addon | version | maintainers | summary
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 19.0.1.1.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 19.0.1.9.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/cristianPanaite'><img src='https://github.com/cristianPanaite.png' width='32' height='32' style='border-radius:50%;' alt='cristianPanaite'/></a> | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 19.0.0.4.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 19.0.1.2.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 19.0.1.6.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 19.0.0.2.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 19.0.1.1.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 19.0.1.7.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Accounting Landed Cost
@@ -3299,6 +3312,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 19.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Convert Amount Text to Thai
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 19.0.1.0.0 | <a href='https://github.com/sansirit'><img src='https://github.com/sansirit.png' width='32' height='32' style='border-radius:50%;' alt='sansirit'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Base Sequence
+[l10n_th_base_utils](l10n_th_base_utils/) | 19.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Collection of all Thai fonts, Convert month/year/number to thai
 
 [//]: # (end addons)
 
@@ -3349,7 +3363,7 @@ addon | version | maintainers | summary
 [base_user_signature](base_user_signature/) | 19.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Base User Signature
 [mail_activity_board](mail_activity_board/) | 19.0.1.0.0 |  | Add Activity Boards
 [mail_activity_reminder](mail_activity_reminder/) | 19.0.1.0.1 |  | Reminder notifications about planned activities
-[mail_activity_team](mail_activity_team/) | 19.0.1.1.1 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 19.0.1.2.0 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 19.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 19.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Module to use attach existing attachment for account module
 [mail_forward](mail_forward/) | 19.0.1.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
@@ -3548,6 +3562,7 @@ addon | version | maintainers | summary
 [mrp_multi_level](mrp_multi_level/) | 19.0.1.0.4 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 19.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
+[mrp_production_generator_by_date_interval](mrp_production_generator_by_date_interval/) | 19.0.1.0.0 |  | MRP Production Generator By Date Interval
 [mrp_production_note](mrp_production_note/) | 19.0.1.0.0 |  | Notes in production orders
 [mrp_repair_order](mrp_repair_order/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 19.0.1.0.0 |  | Adds sale information to Manufacturing models
@@ -3555,7 +3570,9 @@ addon | version | maintainers | summary
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 19.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+[purchase_mrp_distribution](purchase_mrp_distribution/) | 19.0.1.0.0 |  | Purchase MRP Distribution
 [quality_control_oca](quality_control_oca/) | 19.0.1.0.0 |  | Generic infrastructure for quality tests.
+[stock_replenishment_mrp_bom_selection](stock_replenishment_mrp_bom_selection/) | 19.0.1.0.0 |  | Stock Replenishment MRP BoM Selection
 
 [//]: # (end addons)
 
@@ -3783,6 +3800,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_inter_company](account_invoice_inter_company/) | 19.0.1.0.2 |  | Intercompany invoice rules
 [base_multi_company](base_multi_company/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
+[calendar_event_type_multi_company](calendar_event_type_multi_company/) | 19.0.1.0.0 |  | This module add multi-company management to calendar event type
 [mail_multicompany](mail_multicompany/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Email Gateway Multi company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 19.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 19.0.1.0.1 |  | Intercompany PO/SO rules
@@ -3980,6 +3998,7 @@ addon | version | maintainers | summary
 [partner_identification_eori](partner_identification_eori/) | 19.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for EORI Number
 [partner_identification_gln](partner_identification_gln/) | 19.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
 [partner_industry_secondary](partner_industry_secondary/) | 19.0.1.0.0 |  | Add secondary partner industries
+[partner_interest_group](partner_interest_group/) | 19.0.1.0.0 | <a href='https://github.com/victor-champonnois'><img src='https://github.com/victor-champonnois.png' width='32' height='32' style='border-radius:50%;' alt='victor-champonnois'/></a> | Add Interest Group to Partners
 [partner_iterative_archive](partner_iterative_archive/) | 19.0.1.0.0 |  | Archive all contacts when parent is archived
 [partner_manual_rank](partner_manual_rank/) | 19.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> | Be able to manually flag partners as customer or supplier.
 [partner_mobile](partner_mobile/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add mobile field on partner
@@ -4153,7 +4172,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [pos_edit_order_line](pos_edit_order_line/) | 19.0.1.0.0 |  | POS Edit Order Line
 [pos_partner_birthdate](pos_partner_birthdate/) | 19.0.1.0.0 | <a href='https://github.com/ecino'><img src='https://github.com/ecino.png' width='32' height='32' style='border-radius:50%;' alt='ecino'/></a> | Adds the birthdate in the customer screen of POS
-[pos_printing_qztray](pos_printing_qztray/) | 19.0.1.0.0 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | POS receipt printing via QZ Tray
+[pos_printing_qztray](pos_printing_qztray/) | 19.0.1.0.1 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | POS receipt printing via QZ Tray
 
 [//]: # (end addons)
 
@@ -4488,6 +4507,9 @@ and promote its widespread use.
 ## From OCA/purchase-workflow
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# purchase-workflow
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=19.0)
 [![Pre-commit Status](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml?query=branch%3A19.0)
 [![Build Status](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml?query=branch%3A19.0)
@@ -4495,8 +4517,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/purchase-workflow-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-workflow-19-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# purchase-workflow
 
 purchase-workflow
 
@@ -4755,6 +4775,7 @@ addon | version | maintainers | summary
 [bi_sql_editor](bi_sql_editor/) | 19.0.2.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [kpi](kpi/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Key Performance Indicators
 [pdf_xml_attachment](pdf_xml_attachment/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides helpers to work w/ PDFs and XML attachments
+[report_async](report_async/) | 19.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Central place to run reports live or async
 [report_context](report_context/) | 19.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 19.0.1.0.0 |  | Base module to create csv report
 [report_partner_address](report_partner_address/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Translatable partner address details for reports and portal
@@ -4920,6 +4941,53 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_blanket_order](sale_blanket_order/) | 19.0.1.1.3 |  | Blanket Orders
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/sale-channel
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-channel&target_branch=19.0)
+[![Pre-commit Status](https://github.com/OCA/sale-channel/actions/workflows/pre-commit.yml/badge.svg?branch=19.0)](https://github.com/OCA/sale-channel/actions/workflows/pre-commit.yml?query=branch%3A19.0)
+[![Build Status](https://github.com/OCA/sale-channel/actions/workflows/test.yml/badge.svg?branch=19.0)](https://github.com/OCA/sale-channel/actions/workflows/test.yml?query=branch%3A19.0)
+[![codecov](https://codecov.io/gh/OCA/sale-channel/branch/19.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-channel)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-channel-19-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-channel-19-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# sale-channel
+
+sale-channel
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sale_channel](sale_channel/) | 19.0.1.0.0 |  | Adds the notion of sale channels
 
 [//]: # (end addons)
 
@@ -5129,8 +5197,10 @@ addon | version | maintainers | summary
 [sale_product_set](sale_product_set/) | 19.0.1.0.1 |  | Sales product set
 [sale_purchase_stock_auto_confirm](sale_purchase_stock_auto_confirm/) | 19.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Sale purchase stock auto confirm
 [sale_require_po_doc](sale_require_po_doc/) | 19.0.1.1.0 |  | Sale Orders Require PO or Sales Documentation
+[sale_resource_booking](sale_resource_booking/) | 19.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
 [sale_stock_delivery_address](sale_stock_delivery_address/) | 19.0.1.0.0 |  | Sale Stock Delivery Address
 [sale_stock_delivery_state](sale_stock_delivery_state/) | 19.0.1.0.0 |  | Change the way to compute the delivery state
+[sale_stock_partner_warehouse](sale_stock_partner_warehouse/) | 19.0.1.0.0 |  | Allow to choose by default a warehouse on SO based on a Partner parameter
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 19.0.2.0.0 | <a href='https://github.com/Ricardoalso'><img src='https://github.com/Ricardoalso.png' width='32' height='32' style='border-radius:50%;' alt='Ricardoalso'/></a> | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 19.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add picking note in sale and purchase order
 [sale_stock_reference_by_line](sale_stock_reference_by_line/) | 19.0.1.0.0 |  | Base module for definition of stock references creation rules for Sale order
@@ -5389,6 +5459,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[attachment_unindex_content](attachment_unindex_content/) | 19.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
 [auditlog](auditlog/) | 19.0.2.0.0 |  | Audit Log
 [auto_backup](auto_backup/) | 19.0.1.0.1 |  | Backups database
 [base_cron_exclusion](base_cron_exclusion/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
@@ -5616,7 +5687,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [spreadsheet_dashboard_oca](spreadsheet_dashboard_oca/) | 19.0.1.0.0 |  | Use OCA Spreadsheets on dashboards configuration
-[spreadsheet_dashboard_purchase_oca](spreadsheet_dashboard_purchase_oca/) | 19.0.1.0.0 |  | Spreadsheet dashboard for vendors
+[spreadsheet_dashboard_purchase_oca](spreadsheet_dashboard_purchase_oca/) | 19.0.1.1.0 |  | Spreadsheet dashboard for vendors
+[spreadsheet_dashboard_purchase_stock_oca](spreadsheet_dashboard_purchase_stock_oca/) | 19.0.1.0.0 |  | Spreadsheet dashboard for purchases
 [spreadsheet_oca](spreadsheet_oca/) | 19.0.1.0.1 |  | Allow to edit spreadsheets
 
 [//]: # (end addons)
@@ -5974,12 +6046,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[tms](tms/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles, Drivers, Routes and Trips
-[tms_account](tms_account/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Track invoices linked to TMS orders
-[tms_expense](tms_expense/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage expenses of a trip: hotel, tolls, fuel
-[tms_product](tms_product/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles as Products
-[tms_purchase](tms_purchase/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage purchase requests to drivers and other suppliers
-[tms_sale](tms_sale/) | 19.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Sell transportation management system.
+[tms](tms/) | 19.0.1.2.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles, Drivers, Routes and Trips
+[tms_account](tms_account/) | 19.0.1.2.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Track invoices linked to TMS orders
+[tms_expense](tms_expense/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage expenses of a trip: hotel, tolls, fuel
+[tms_product](tms_product/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage Vehicles as Products
+[tms_purchase](tms_purchase/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Manage purchase requests to drivers and other suppliers
+[tms_sale](tms_sale/) | 19.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/santiagordz'><img src='https://github.com/santiagordz.png' width='32' height='32' style='border-radius:50%;' alt='santiagordz'/></a> <a href='https://github.com/EdgarRetes'><img src='https://github.com/EdgarRetes.png' width='32' height='32' style='border-radius:50%;' alt='EdgarRetes'/></a> | Sell transportation management system.
 
 [//]: # (end addons)
 
@@ -6102,6 +6174,7 @@ addon | version | maintainers | summary
 [stock_dangerous_goods](stock_dangerous_goods/) | 19.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Adds utility fields to manage dangerous goods
 [stock_landed_costs_purchase_auto](stock_landed_costs_purchase_auto/) | 19.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock landed costs purchase auto
 [stock_lot_scrap](stock_lot_scrap/) | 19.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
+[stock_move_line_expiration_date_required](stock_move_line_expiration_date_required/) | 19.0.1.0.0 |  | Stock Move Line Expiration Date Required
 [stock_move_valuation_usage](stock_move_valuation_usage/) | 19.0.1.0.0 |  | Trace where stock move valuation has been used, including quantities and values taken.
 [stock_no_negative](stock_no_negative/) | 19.0.1.0.0 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 19.0.1.0.0 |  | Do not reserve quantity with assigned owner
@@ -6249,7 +6322,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_survey](partner_survey/) | 19.0.1.0.0 |  | Link partners with their survey results
+[survey_certification_py3o](survey_certification_py3o/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Survey Certification Py3o
 [survey_certification_sending](survey_certification_sending/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Controls the automatic sending of certifications in surveys.
+[survey_crm_generation](survey_crm_generation/) | 19.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate CRM leads/opportunities from surveys
+[survey_crm_generation_model_selection](survey_crm_generation_model_selection/) | 19.0.1.0.0 | <a href='https://github.com/eduezerouali-tecnativa'><img src='https://github.com/eduezerouali-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='eduezerouali-tecnativa'/></a> | Generate new leads from surveys using model selection
 [survey_legal](survey_legal/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Require legal terms before survey submit
 [survey_multi_company](survey_multi_company/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Company security for surveys
 [survey_partner_representative](survey_partner_representative/) | 19.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Fill the survey on behalf of others

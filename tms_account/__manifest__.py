@@ -4,11 +4,11 @@
 {
     "name": "TMS - Accounting",
     "summary": "Track invoices linked to TMS orders",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.2.0",
     "category": "Field Service",
     "author": "Open Source Integrators, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-transport",
-    "depends": ["tms", "tms_sale", "tms_expense", "tms_purchase", "account_usability"],
+    "depends": ["tms", "tms_sale", "tms_expense", "tms_purchase"],
     "data": [
         "security/res_groups.xml",
         "data/analytic_plan.xml",
