@@ -824,7 +824,7 @@ class StockBuffer(models.Model):
                 continue
 
             # Prepare data:
-            demand_data = rec._get_demand_by_days(rec.qualified_demand_stock_move_ids)
+            demand_data = rec._get_demand_by_days(rec.demand_stock_move_ids)
             mrp_data = rec._get_qualified_mrp_moves(rec.qualified_demand_mrp_move_ids)
             supply_data = rec._get_incoming_by_days()
             width = timedelta(days=0.4)
@@ -1586,6 +1586,11 @@ class StockBuffer(models.Model):
         moves = moves.filtered(
             lambda move: move.location_id.is_sublocation_of(self.location_id)
             and not move.location_dest_id.is_sublocation_of(self.location_id)
+            # Make-to-order demand is served by its own pegged supply, not from
+            # the buffer, so it must not deflate the net flow position. This
+            # mirrors the supply side, which keeps the MTO purchase line out of
+            # the buffer (see purchase.order.line._find_buffer_link).
+            and not move._ddmrp_is_mto()
         )
         return moves
 
