@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-08-12 15:47 UTC** (elapsed 259s)
+Last build: **2026-08-15 21:39 UTC** (elapsed 198s)
 
 - Repos integrated: **126**
-- Canonical modules: **1928**
+- Canonical modules: **1929**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **131**
 
@@ -11,7 +11,7 @@ Last build: **2026-08-12 15:47 UTC** (elapsed 259s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | c8f4806 2026-07-09 Pedro M. Baeza Merge pull request #5804 from BinhexTeam/17.0-ou-add-project_list-merged |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 2f87030 2026-08-14 Pedro M. Baeza Merge pull request #5911 from Tecnativa/17.0-ou-imp-point_of_sale-TT64083 |
 | [account-analytic](https://github.com/OCA/account-analytic) | 29 | 2bc5781 2026-07-26 Anxo López Rodríguez Translated using Weblate (Galician) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | a61e0ec 2025-06-25 OCA-git-bot [BOT] post-merge updates |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | 734cd8d 2026-06-14 OCA-git-bot [BOT] post-merge updates |
@@ -40,7 +40,7 @@ Last build: **2026-08-12 15:47 UTC** (elapsed 259s)
 | [crm](https://github.com/OCA/crm) | 20 | bcd3440 2026-07-27 mymage Added translation using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 2 | 87c1e54 2025-11-26 Ryoko Tsuda Translated using Weblate (Japanese) |
 | [data-protection](https://github.com/OCA/data-protection) | 3 | 20bb4c2 2026-05-09 Peter Schubert Translated using Weblate (German) |
-| [ddmrp](https://github.com/OCA/ddmrp) | 12 | df044f3 2026-07-03 OCA-git-bot [BOT] post-merge updates |
+| [ddmrp](https://github.com/OCA/ddmrp) | 12 | 80a7d89 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 34 | ba63046 2026-07-30 OCA-git-bot [BOT] post-merge updates |
 | [dms](https://github.com/OCA/dms) | 4 | 5bcd966 2026-04-14 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 36 | 17af663 2026-08-10 OCA-git-bot [BOT] post-merge updates |
@@ -54,7 +54,7 @@ Last build: **2026-08-12 15:47 UTC** (elapsed 259s)
 | [fleet](https://github.com/OCA/fleet) | 7 | c656251 2026-04-07 OCA-git-bot [BOT] post-merge updates |
 | [geospatial](https://github.com/OCA/geospatial) | 5 | 1a337a0 2026-04-08 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 24 | ca5196e 2026-07-23 Weblate Update translation files |
-| [hr](https://github.com/OCA/hr) | 23 | 2429f19 2026-05-29 mymage Translated using Weblate (Italian) |
+| [hr](https://github.com/OCA/hr) | 24 | bd8383e 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [hr-attendance](https://github.com/OCA/hr-attendance) | 7 | 83d1bf0 2026-06-26 OCA-git-bot [BOT] post-merge updates |
 | [hr-expense](https://github.com/OCA/hr-expense) | 10 | 67f2a52 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 6 | 2c08951 2026-08-10 OCA-git-bot [BOT] post-merge updates |
@@ -63,7 +63,7 @@ Last build: **2026-08-12 15:47 UTC** (elapsed 259s)
 | [iot](https://github.com/OCA/iot) | 6 | 1f9bc90 2025-10-27 OCA-git-bot [BOT] post-merge updates |
 | [knowledge](https://github.com/OCA/knowledge) | 14 | 8d19a8d 2026-04-14 mymage Translated using Weblate (Italian) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 6 | fba933a 2026-04-09 Weblate Update translation files |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 51 | 6270d9d 2026-08-12 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 51 | 36f54b9 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | 4 | 3532f11 2026-03-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 4 | 17ae740 2025-08-22 OCA-git-bot [UPD] README.rst |
 | [l10n-france](https://github.com/OCA/l10n-france) | 18 | 0296efe 2026-04-06 Weblate Update translation files |
