@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!--
-        `nswrapper` is a trick to be able to import these templates
-        as XML because a namespace is mandatory for element prefixes.
-        `nswrapper` elements are purged afterwards in post-processing.
-        -->
     <!-- TODO: move to edi_ubl? -->
     <template id="qweb_tmpl_ubl_party" name="Render UBL party">
-        <nswrapper
+        <t
             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
         >
@@ -30,11 +25,11 @@
                     <cbc:Name t-esc="party.name">Moderna Produkter AB</cbc:Name>
                 </cac:PartyName>
             </cac:Party>
-        </nswrapper>
+        </t>
     </template>
 
     <template id="qweb_tmpl_ubl_address" name="Render UBL party address">
-        <nswrapper
+        <t
             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
         >
@@ -47,6 +42,6 @@
             <cac:Country t-if="partner.country_id">
                 <cbc:IdentificationCode t-field="partner.country_id" />
             </cac:Country>
-        </nswrapper>
+        </t>
     </template>
 </odoo>

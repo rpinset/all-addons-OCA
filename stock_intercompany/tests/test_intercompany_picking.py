@@ -11,6 +11,7 @@ class TestIntercompanyDelivery(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, test_stock_intercompany=True))
         company_obj = cls.env["res.company"]
         cls.company1 = company_obj.create({"name": "Company A"})
         cls.company2 = company_obj.create({"name": "Company B"})
@@ -72,9 +73,10 @@ class TestIntercompanyDelivery(BaseCommon):
         cls.uom_unit = cls.env.ref("uom.product_uom_unit")
 
     def test_picking_creation(self):
-        stock_location = self.env["stock.location"].search(
-            [("usage", "=", "internal"), ("company_id", "=", self.company1.id)]
+        warehouse = self.env["stock.warehouse"].search(
+            [("company_id", "=", self.company1.id)], limit=1
         )
+        stock_location = warehouse.lot_stock_id
         custs_location = self.env.ref("stock.stock_location_customers")
         custs_location.company_id = False
         self.product1.company_id = False

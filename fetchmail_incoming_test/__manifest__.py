@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Fetchmail Incoming Test",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "category": "Discuss",
     "website": "https://github.com/OCA/mail",
     "author": "Camptocamp, Odoo Community Association (OCA)",
@@ -12,6 +12,7 @@
     "data": [
         "security/ir.model.access.csv",
         "wizards/fetchmail_incoming_test_views.xml",
+        "wizards/fetchmail_incoming_test_eml_views.xml",
         "views/fetchmail_server_views.xml",
     ],
     "installable": True,

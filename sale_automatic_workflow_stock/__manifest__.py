@@ -5,7 +5,7 @@
 
 {
     "name": "Sale Automatic Workflow Stock",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Sales Management",
     "license": "AGPL-3",
     "author": "Akretion, "
@@ -20,4 +20,5 @@
         "data/automatic_workflow_data.xml",
     ],
     "auto_install": True,
+    "pre_init_hook": "pre_init_hook",
 }
