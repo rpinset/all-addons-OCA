@@ -52,7 +52,7 @@ msgid ""
 "before {date_invoice} exists."
 msgstr ""
 "Conflito na cronoloxía: Existe unha factura cun número superior "
-"{highest_name} e con data de factura anterior {dáche_invoice}."
+"{highest_name} e con data de factura anterior {date_invoice}."
 
 #. module: account_invoice_constraint_chronology
 #: model:ir.model,name:account_invoice_constraint_chronology.model_account_journal

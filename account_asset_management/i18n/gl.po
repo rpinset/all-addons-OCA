@@ -901,7 +901,7 @@ msgid ""
 "Please correct Asset Group '{group}' (id {id})"
 msgstr ""
 "Estrutura de informes inconsistente.\n"
-"Corrixa o grupo de activos '{group}' (ide {ide})"
+"Corrixa o grupo de activos '{group}' (id {id})"
 
 #. module: account_asset_management
 #: model:ir.model.fields,help:account_asset_management.field_account_asset__prorata

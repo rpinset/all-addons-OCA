@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-08-12 15:45 UTC** (elapsed 179s)
+Last build: **2026-08-15 21:38 UTC** (elapsed 171s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -15,7 +15,7 @@ Last build: **2026-08-12 15:45 UTC** (elapsed 179s)
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2cc28dc 2026-08-03 difbit Added translation using Weblate (Finnish (fi_FI)) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | a36d4f1 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | 81708f3 2026-08-12 Pedro M. Baeza Merge pull request #2372 from ForgeFlow/15.0-imp-copier-update |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 79 | c99fd2b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -28,7 +28,7 @@ Last build: **2026-08-12 15:45 UTC** (elapsed 179s)
 | [business-requirement](https://github.com/OCA/business-requirement) | 1 | 18d2b25 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [calendar](https://github.com/OCA/calendar) | 3 | 6b834f7 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [commission](https://github.com/OCA/commission) | 8 | f02eff0 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [community-data-files](https://github.com/OCA/community-data-files) | 9 | 7187115 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [community-data-files](https://github.com/OCA/community-data-files) | 9 | 126b4d1 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [connector](https://github.com/OCA/connector) | 6 | 38b8d9b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | 3 | 3b2cb18 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [connector-jira](https://github.com/OCA/connector-jira) | 5 | f1761d2 2023-09-03 OCA-git-bot [UPD] README.rst |
