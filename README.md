@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-08-15 21:39 UTC** (elapsed 211s)
+Last build: **2026-08-17 04:11 UTC** (elapsed 110s)
 
 - Repos integrated: **142**
 - Canonical modules: **3107**
@@ -67,7 +67,7 @@ Last build: **2026-08-15 21:39 UTC** (elapsed 211s)
 | [knowledge](https://github.com/OCA/knowledge) | 14 | 8f372fe 2026-06-20 Pedro M. Baeza Merge pull request #623 from ledoent/16.0-copier-update-v143 |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 3 | aa23015 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 13 | 7d743d8 2026-04-09 Weblate Update translation files |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 63 | 26cf785 2026-08-14 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 63 | 529c6af 2026-08-17 OCA-git-bot [BOT] post-merge updates |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | 5 | a3e16a7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 30 | 584f583 2026-08-03 OCA-git-bot [BOT] post-merge updates |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 4 | 2d9524d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
