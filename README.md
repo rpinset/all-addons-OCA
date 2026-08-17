@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `19.0`
 
-Last build: **2026-08-15 21:42 UTC** (elapsed 88s)
+Last build: **2026-08-17 04:15 UTC** (elapsed 124s)
 
 - Repos integrated: **119**
-- Canonical modules: **1173**
+- Canonical modules: **1175**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **138**
 
@@ -11,11 +11,11 @@ Last build: **2026-08-15 21:42 UTC** (elapsed 88s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 949862a 2026-08-12 Pedro M. Baeza Merge pull request #5904 from Tecnativa/19.0-ou-add-payment_paypal |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 0683551 2026-08-15 Pedro M. Baeza Merge pull request #5909 from Tecnativa/19.0-ou_fix-hr_expense |
 | [account-analytic](https://github.com/OCA/account-analytic) | 12 | da6713d 2026-08-12 OCA-git-bot [BOT] post-merge updates |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | d811072 2026-07-26 Anxo López Rodríguez Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 2 | 8ce0077 2026-07-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 3 | fa92a26 2026-08-11 Mostafa Barmshory Translated using Weblate (Persian) |
+| [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 3 | 69c9a51 2026-08-16 sobhan hasanzade Translated using Weblate (Persian) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 20 | 945186a 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 1 | ec10c8a 2026-07-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 3 | 42defc6 2026-06-30 Matjaz Mozetic Translated using Weblate (Slovenian) |
@@ -65,7 +65,7 @@ Last build: **2026-08-15 21:42 UTC** (elapsed 88s)
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 2 | 12ef5af 2026-05-09 OCA-git-bot [BOT] post-merge updates |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | 2 | 54cf822 2026-06-11 OCA-git-bot [BOT] post-merge updates |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 5 | 37c907a 2026-07-15 OCA-git-bot [BOT] post-merge updates |
-| [l10n-mexico](https://github.com/OCA/l10n-mexico) | 14 | 3655be1 2026-08-15 OCA-git-bot [BOT] post-merge updates |
+| [l10n-mexico](https://github.com/OCA/l10n-mexico) | 16 | fb8ea32 2026-08-16 OCA-git-bot [BOT] post-merge updates |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 1 | 135a6e4 2026-06-22 OCA-git-bot [BOT] post-merge updates |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 3 | 3e45aee 2026-04-24 OCA-git-bot [BOT] post-merge updates |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 32 | e7f9f8d 2026-08-15 OCA-git-bot [BOT] post-merge updates |
