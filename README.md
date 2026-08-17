@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `18.0`
 
-Last build: **2026-08-15 21:43 UTC** (elapsed 216s)
+Last build: **2026-08-17 04:15 UTC** (elapsed 160s)
 
 - Repos integrated: **149**
-- Canonical modules: **2876**
+- Canonical modules: **2878**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **108**
 
@@ -85,7 +85,7 @@ Last build: **2026-08-15 21:43 UTC** (elapsed 216s)
 | [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | 1 | 88666b1 2026-08-05 OCA-git-bot [BOT] post-merge updates |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 14 | 0e3f54c 2026-07-28 OCA-git-bot [BOT] post-merge updates |
 | [mail](https://github.com/OCA/mail) | 46 | 26cb648 2026-08-14 Weblate Update translation files |
-| [maintenance](https://github.com/OCA/maintenance) | 30 | 7f45248 2026-07-17 OCA-git-bot [BOT] post-merge updates |
+| [maintenance](https://github.com/OCA/maintenance) | 31 | 33ae57c 2026-08-16 OCA-git-bot [BOT] post-merge updates |
 | [management-system](https://github.com/OCA/management-system) | 34 | 1a8d8cc 2026-07-22 OCA-git-bot [BOT] post-merge updates |
 | [manufacture](https://github.com/OCA/manufacture) | 55 | eec822b 2026-08-10 OCA-git-bot [BOT] post-merge updates |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 4 | 5d199e9 2026-03-31 Betül Öğmen Added translation using Weblate (Turkish) |
@@ -127,7 +127,7 @@ Last build: **2026-08-15 21:43 UTC** (elapsed 216s)
 | [server-backend](https://github.com/OCA/server-backend) | 17 | 49e1beb 2026-08-11 mymage Translated using Weblate (Italian) |
 | [server-brand](https://github.com/OCA/server-brand) | 3 | c296e5a 2026-06-12 Yann Papouin Added translation using Weblate (French) |
 | [server-env](https://github.com/OCA/server-env) | 7 | 0235a8a 2026-07-29 mymage Translated using Weblate (Italian) |
-| [server-tools](https://github.com/OCA/server-tools) | 55 | 7fd7b4e 2026-07-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [server-tools](https://github.com/OCA/server-tools) | 56 | dcbb5f6 2026-08-15 Weblate Update translation files |
 | [server-ux](https://github.com/OCA/server-ux) | 35 | 10f91a0 2026-08-05 OCA-git-bot [BOT] post-merge updates |
 | [shift-planning](https://github.com/OCA/shift-planning) | 1 | 7cdb4f0 2026-08-11 mymage Translated using Weblate (Italian) |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | 8 | 6c7803c 2026-08-11 mymage Translated using Weblate (Italian) |

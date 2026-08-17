@@ -4770,6 +4770,7 @@ addon | version | maintainers | summary
 [maintenance_request_tags](maintenance_request_tags/) | 18.0.1.0.0 |  | Adds tags to Maintenance Requests
 [maintenance_security](maintenance_security/) | 18.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Maintenance Security
 [maintenance_stock](maintenance_stock/) | 18.0.1.0.1 |  | Links maintenance requests to stock
+[maintenance_team_hierarchy](maintenance_team_hierarchy/) | 18.0.1.0.0 |  | Create hierarchies on teams
 [maintenance_timesheet](maintenance_timesheet/) | 18.0.1.1.0 |  | Adds timesheets to maintenance requests
 [maintenance_timesheet_time_control](maintenance_timesheet_time_control/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Maintenance Timesheets Timesheet Time Control
 
@@ -7971,6 +7972,7 @@ addon | version | maintainers | summary
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 18.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
 [base_temporary_action](base_temporary_action/) | 18.0.1.0.0 |  | This addon allows to create temporary actions
+[base_time_parameter](base_time_parameter/) | 18.0.1.0.0 | <a href='https://github.com/appstogrow'><img src='https://github.com/appstogrow.png' width='32' height='32' style='border-radius:50%;' alt='appstogrow'/></a> <a href='https://github.com/nimarosa'><img src='https://github.com/nimarosa.png' width='32' height='32' style='border-radius:50%;' alt='nimarosa'/></a> | Time dependent parameters Adds the feature to define parameters with time based versions.
 [base_time_window](base_time_window/) | 18.0.1.1.1 |  | Base model to handle time windows
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.2 |  | Adds more operators for view inheritance
 [bus_alt_connection](bus_alt_connection/) | 18.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
