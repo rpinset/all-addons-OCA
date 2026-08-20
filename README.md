@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-08-17 04:07 UTC** (elapsed 110s)
+Last build: **2026-08-20 15:19 UTC** (elapsed 148s)
 
 - Repos integrated: **140**
 - Canonical modules: **2911**
@@ -67,7 +67,7 @@ Last build: **2026-08-17 04:07 UTC** (elapsed 110s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | 1e56820 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 6f323c2 2026-08-14 OCA-git-bot Merge PR #4933 into 14.0 |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 56defd7 2026-08-20 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -98,7 +98,7 @@ Last build: **2026-08-17 04:07 UTC** (elapsed 110s)
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 8 | 4b73a08 2025-07-03 Weblate Update translation files |
 | [operating-unit](https://github.com/OCA/operating-unit) | 42 | 8f79f40 2026-04-28 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 73 | 34b7c67 2026-04-27 Sergio Zanchetta Translated using Weblate (Italian) |
-| [payroll](https://github.com/OCA/payroll) | 6 | 2468ae8 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [payroll](https://github.com/OCA/payroll) | 6 | 341134e 2026-08-18 Weblate Update translation files |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 84 | c64c73d 2026-06-12 OCA-git-bot [BOT] post-merge updates |
@@ -142,7 +142,7 @@ Last build: **2026-08-17 04:07 UTC** (elapsed 110s)
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | 3 | 18a9bba 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [vertical-association](https://github.com/OCA/vertical-association) | 10 | 43ecb0d 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 5109ebc 2025-02-09 oca-git-bot [IMP] update dotfiles |
-| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | a1fc0cf 2026-07-22 mymage Translated using Weblate (Italian) |
+| [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 1409680 2026-08-19 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 6 | 4bbbb97 2025-10-15 mymage Translated using Weblate (Italian) |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | 1 | 5f56d1e 2025-04-02 mymage Translated using Weblate (Italian) |
 | [web](https://github.com/OCA/web) | 69 | 790767b 2026-05-18 OCA-git-bot [BOT] post-merge updates |
