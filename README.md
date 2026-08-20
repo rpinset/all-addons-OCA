@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-08-17 04:10 UTC** (elapsed 190s)
+Last build: **2026-08-20 15:22 UTC** (elapsed 218s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
