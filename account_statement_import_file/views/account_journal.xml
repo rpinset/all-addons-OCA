@@ -2,6 +2,7 @@
 <!--
   Copyright 2004-2020 Odoo S.A.
   Copyright 2020 Akretion France (http://www.akretion.com/)
+  Copyright 2026 QubiQ - Pol Reig <pol.reig@qubiq.es>
   @author: Alexis de Lattre <alexis.delattre@akretion.com>
   Licence LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0).
 -->
@@ -11,10 +12,7 @@
         <field name="model">account.journal</field>
         <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view" />
         <field name="arch" type="xml">
-            <xpath
-                expr='//button[@name="action_configure_bank_journal"]/..'
-                position='before'
-            >
+            <xpath expr="//div[@id='transactions']" position="before">
                 <t t-if="dashboard.bank_statements_source == 'file_import_oca'">
                     <button
                         name="import_account_statement"
