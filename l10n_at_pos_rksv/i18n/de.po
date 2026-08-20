@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 19.0\n"
+"Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 10:43+0000\n"
-"PO-Revision-Date: 2026-05-08 10:43+0000\n"
+"POT-Creation-Date: 2026-07-04 07:57+0000\n"
+"PO-Revision-Date: 2026-07-04 07:57+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: \n"
@@ -170,7 +170,7 @@ msgstr "Hier klicken um ein neues Zertifikat hinzuzufügen."
 #. module: l10n_at_pos_rksv
 #: model:ir.model,name:l10n_at_pos_rksv.model_res_config_settings
 msgid "Config Settings"
-msgstr "Konfigurationseinstellungen"
+msgstr ""
 
 #. module: l10n_at_pos_rksv
 #: model_terms:ir.ui.view,arch_db:l10n_at_pos_rksv.pos_config_view_form
@@ -185,18 +185,26 @@ msgstr "Erstellen Sie ein neues a.sign Online-Zertifikat."
 #. module: l10n_at_pos_rksv
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_asign_cert__create_uid
 msgid "Created by"
-msgstr "Erstellt von"
+msgstr ""
 
 #. module: l10n_at_pos_rksv
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_asign_cert__create_date
 msgid "Created on"
-msgstr "Erstellt am"
+msgstr ""
 
 #. module: l10n_at_pos_rksv
 #. odoo-python
 #: code:addons/l10n_at_pos_rksv/models/pos_config.py:0
 msgid "Created zero-receipt was not signed."
 msgstr "Erstellter Nullbeleg wurde nicht signiert."
+
+#. module: l10n_at_pos_rksv
+#: model:ir.model.fields,help:l10n_at_pos_rksv.field_pos_config__asign_seq_id
+msgid ""
+"Dedicated gapless sequence for the RKSV receipt number (asign_seq). It is "
+"consumed only when a receipt is signed, so signed receipts stay consecutive "
+"regardless of cancelled orders."
+msgstr ""
 
 #. module: l10n_at_pos_rksv
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_account_tax_group__display_name
@@ -327,18 +335,6 @@ msgstr "Auftrag"
 
 #. module: l10n_at_pos_rksv
 #. odoo-python
-#: code:addons/l10n_at_pos_rksv/models/pos_order.py:0
-msgid "Order %s is not paid, done or cancelled, cannot be signed"
-msgstr ""
-
-#. module: l10n_at_pos_rksv
-#. odoo-python
-#: code:addons/l10n_at_pos_rksv/models/pos_order.py:0
-msgid "Order %s is not signed"
-msgstr "Auftrag %s ist nicht signiert"
-
-#. module: l10n_at_pos_rksv
-#. odoo-python
 #: code:addons/l10n_at_pos_rksv/models/pos_config.py:0
 msgid "POS %s has a.sign disabled."
 msgstr "POS %s hat a.sign deaktiviert."
@@ -425,6 +421,12 @@ msgstr "RKSV Österreich"
 #: model_terms:ir.ui.view,arch_db:l10n_at_pos_rksv.res_config_settings_view_form
 msgid "RKSV Configuration"
 msgstr "RKSV Konfiguration"
+
+#. module: l10n_at_pos_rksv
+#. odoo-javascript
+#: code:addons/l10n_at_pos_rksv/static/src/overrides/order_receipt.xml:0
+msgid "Receipt No."
+msgstr "Belegnummer"
 
 #. module: l10n_at_pos_rksv
 #: model:ir.model.fields.selection,name:l10n_at_pos_rksv.selection__account_tax_group__asign_type__reduced1
@@ -547,7 +549,7 @@ msgstr ""
 #. module: l10n_at_pos_rksv
 #: model:ir.model,name:l10n_at_pos_rksv.model_account_tax_group
 msgid "Tax Group"
-msgstr "Steuergruppe"
+msgstr ""
 
 #. module: l10n_at_pos_rksv
 #: model:ir.model.fields,help:l10n_at_pos_rksv.field_pos_config__asign_key
@@ -684,6 +686,7 @@ msgid "a.sign RKSV"
 msgstr "a.sign RKSV"
 
 #. module: l10n_at_pos_rksv
+#: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_config__asign_seq_id
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_order__asign_seq
 msgid "a.sign Sequence"
 msgstr "a.sign Sequenz"
@@ -707,3 +710,6 @@ msgstr "a.sign Status"
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_order__asign_type
 msgid "a.sign Type"
 msgstr "a.sign Typ"
+
+#~ msgid "Order %s is not signed"
+#~ msgstr "Auftrag %s ist nicht signiert"

@@ -196,6 +196,14 @@ msgid "Created zero-receipt was not signed."
 msgstr ""
 
 #. module: l10n_at_pos_rksv
+#: model:ir.model.fields,help:l10n_at_pos_rksv.field_pos_config__asign_seq_id
+msgid ""
+"Dedicated gapless sequence for the RKSV receipt number (asign_seq). It is "
+"consumed only when a receipt is signed, so signed receipts stay consecutive "
+"regardless of cancelled orders."
+msgstr ""
+
+#. module: l10n_at_pos_rksv
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_account_tax_group__display_name
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_asign_cert__display_name
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_config__display_name
@@ -322,18 +330,6 @@ msgstr ""
 
 #. module: l10n_at_pos_rksv
 #. odoo-python
-#: code:addons/l10n_at_pos_rksv/models/pos_order.py:0
-msgid "Order %s is not paid, done or cancelled, cannot be signed"
-msgstr ""
-
-#. module: l10n_at_pos_rksv
-#. odoo-python
-#: code:addons/l10n_at_pos_rksv/models/pos_order.py:0
-msgid "Order %s is not signed"
-msgstr ""
-
-#. module: l10n_at_pos_rksv
-#. odoo-python
 #: code:addons/l10n_at_pos_rksv/models/pos_config.py:0
 msgid "POS %s has a.sign disabled."
 msgstr ""
@@ -418,6 +414,12 @@ msgstr ""
 #. module: l10n_at_pos_rksv
 #: model_terms:ir.ui.view,arch_db:l10n_at_pos_rksv.res_config_settings_view_form
 msgid "RKSV Configuration"
+msgstr ""
+
+#. module: l10n_at_pos_rksv
+#. odoo-javascript
+#: code:addons/l10n_at_pos_rksv/static/src/overrides/order_receipt.xml:0
+msgid "Receipt No."
 msgstr ""
 
 #. module: l10n_at_pos_rksv
@@ -675,6 +677,7 @@ msgid "a.sign RKSV"
 msgstr ""
 
 #. module: l10n_at_pos_rksv
+#: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_config__asign_seq_id
 #: model:ir.model.fields,field_description:l10n_at_pos_rksv.field_pos_order__asign_seq
 msgid "a.sign Sequence"
 msgstr ""

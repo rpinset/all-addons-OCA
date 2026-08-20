@@ -5,8 +5,11 @@ import base64
 import uuid
 from unittest import mock
 
+import requests
+
 from odoo import fields
 from odoo.tests.common import TransactionCase
+from odoo.tools import mute_logger
 
 from .common import TestAsignCommonMixin
 
@@ -35,7 +38,7 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
             }
         )
 
-    def _sync_order(self, seq, amount=0.0, state=None, with_payment=True):
+    def _sync_order(self, seq, amount=0.0, state=None, with_payment=True, sign_cm=None):
         """Sync an order from a faked frontend with mocked online signing."""
         date_order = fields.Datetime.to_string(fields.Datetime.now())
         lines = []
@@ -98,7 +101,7 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
         if state:
             order_data["state"] = state
 
-        with self._mock_sign():
+        with sign_cm or self._mock_sign():
             result = self.env["pos.order"].sync_from_ui([order_data])
         order_ids = [row["id"] for row in result["pos.order"]]
         order = self.env["pos.order"].browse(order_ids)
@@ -128,9 +131,10 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
         self.assertEqual(order.sequence_number, seq)
         return order
 
-    def test_cancelled_order_signed_in_batch(self):
-        """A cancelled order is signed as zeroed receipt by the batch loop."""
-        self._create_signed_start_order()
+    def test_cancelled_order_not_signed(self):
+        """A cancelled order keeps no receipt number; the range stays gapless."""
+        start = self._create_signed_start_order()
+        self.assertEqual(start.asign_seq, 1)
         cancelled = self._create_cancelled_order(2, 39.9)
 
         order = self._sync_order(3, amount=5.0)
@@ -138,18 +142,16 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
         self.assertEqual(order.asign_state, "s")
         self.assertEqual(order.asign_type, "o")
         self.assertEqual(order.asign_counter, "500")
+        # the cancelled order in between consumed no receipt number
+        self.assertEqual(order.asign_seq, 2)
 
         self.assertEqual(cancelled.state, "cancel")
-        self.assertEqual(cancelled.asign_state, "s")
-        self.assertEqual(cancelled.asign_type, "0")
-        self.assertEqual(cancelled.asign_seq, 2)
-        self.assertEqual(cancelled.asign_counter, "0")
-        self.assertNotEqual(cancelled.name, "/")
-        self.assertFalse(any(cancelled.lines.mapped("qty")))
-        self.assertEqual(cancelled.amount_total, 0.0)
+        self.assertNotEqual(cancelled.asign_state, "s")
+        self.assertEqual(cancelled.asign_seq, 0)
+        self.assertEqual(cancelled.name, "/")
 
-    def test_cancelled_order_signed_by_cron(self):
-        """A cancelled order is signed as zeroed receipt by the cron."""
+    def test_cancelled_order_not_signed_by_cron(self):
+        """The cron does not sign cancelled orders."""
         self._create_signed_start_order()
         cancelled = self._create_cancelled_order(2, 39.9)
 
@@ -157,12 +159,37 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
             self.pos_config._cron_asign_sign_missed()
 
         self.assertEqual(cancelled.state, "cancel")
-        self.assertEqual(cancelled.asign_state, "s")
-        self.assertEqual(cancelled.asign_type, "0")
-        self.assertNotEqual(cancelled.name, "/")
-        self.assertFalse(any(cancelled.lines.mapped("qty")))
-        self.assertEqual(cancelled.amount_total, 0.0)
-        self.assertEqual(cancelled.amount_tax, 0.0)
+        self.assertNotEqual(cancelled.asign_state, "s")
+        self.assertEqual(cancelled.asign_seq, 0)
+        self.assertEqual(cancelled.name, "/")
+
+    # The provoked ConnectionError is logged via _logger.exception; mute it so
+    # the expected traceback does not leave an ERROR line in the log (which
+    # would otherwise break OCA's checklog-odoo CI step).
+    @mute_logger("odoo.addons.l10n_at_pos_rksv.models.pos_order")
+    def test_missed_paid_order_signed_by_cron(self):
+        """A paid order whose signing failed is signed gaplessly by the cron."""
+        start = self._create_signed_start_order()
+        self.assertEqual(start.asign_seq, 1)
+        self._create_cancelled_order(2, 39.9)
+
+        # signing fails on creation, so the order stays paid but unsigned
+        fail = mock.patch(
+            "requests.post", side_effect=requests.exceptions.ConnectionError()
+        )
+        order = self._sync_order(3, amount=5.0, sign_cm=fail)
+        self.assertEqual(order.state, "paid")
+        self.assertEqual(order.asign_state, "u")
+        self.assertEqual(order.asign_seq, 0)
+        self.assertEqual(order.name, "/")
+
+        with self._mock_sign():
+            self.pos_config._cron_asign_sign_missed()
+
+        self.assertEqual(order.asign_state, "s")
+        self.assertEqual(order.asign_type, "o")
+        self.assertEqual(order.asign_seq, 2)
+        self.assertNotEqual(order.name, "/")
 
     def test_close_session_triggers_cron(self):
         """Closing a session triggers the sign-missed cron."""
@@ -170,6 +197,9 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
         self._create_cancelled_order(2, 39.9)
 
         cron = self.env.ref("l10n_at_pos_rksv.pos_config_ir_cron")
+        # Neutralized test databases deactivate all crons; an inactive cron
+        # silently drops immediate triggers, so activate it for this test.
+        cron.active = True
         trigger_model = self.env["ir.cron.trigger"]
         before = trigger_model.search_count([("cron_id", "=", cron.id)])
 
@@ -184,25 +214,28 @@ class TestAsignCancel(TransactionCase, TestAsignCommonMixin):
             "Closing the session must trigger the sign-missed cron",
         )
 
-    def test_cron_skips_open_session(self):
-        """The cron skips POS with a session in opened state."""
+    # See test_missed_paid_order_signed_by_cron for why the logger is muted.
+    @mute_logger("odoo.addons.l10n_at_pos_rksv.models.pos_order")
+    def test_cron_signs_open_session(self):
+        """The cron signs missed paid orders even with an opened session."""
         self._create_signed_start_order()
-        cancelled = self._create_cancelled_order(2, 39.9)
+        self._create_cancelled_order(2, 39.9)
+
+        fail = mock.patch(
+            "requests.post", side_effect=requests.exceptions.ConnectionError()
+        )
+        order = self._sync_order(3, amount=5.0, sign_cm=fail)
+        self.assertEqual(order.asign_state, "u")
 
         self.pos_session.set_opening_control(0, "")
         self.assertEqual(self.pos_session.state, "opened")
 
         with self._mock_sign():
             self.pos_config._cron_asign_sign_missed()
-        self.assertEqual(cancelled.asign_state, "u", "POS in use must be skipped")
 
-        with self._mock_sign():
-            self.pos_session.close_session_from_ui()
-            self.pos_config._cron_asign_sign_missed()
-
-        self.assertEqual(cancelled.asign_state, "s")
-        self.assertEqual(cancelled.asign_type, "0")
-        self.assertNotEqual(cancelled.name, "/")
+        self.assertEqual(order.asign_state, "s")
+        self.assertEqual(order.asign_seq, 2)
+        self.assertNotEqual(order.name, "/")
 
     def test_repair_signed_cancelled_name(self):
         """The cron restores the name of an overwritten signed order."""

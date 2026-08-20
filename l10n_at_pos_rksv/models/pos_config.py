@@ -102,6 +102,17 @@ class PosConfig(models.Model):
         compute="_compute_asign_start_order_id",
         store=False,
     )
+    asign_seq_id = fields.Many2one(
+        "ir.sequence",
+        string="a.sign Sequence",
+        help=(
+            "Dedicated gapless sequence for the RKSV receipt number "
+            "(asign_seq). It is consumed only when a receipt is signed, so "
+            "signed receipts stay consecutive regardless of cancelled orders."
+        ),
+        readonly=True,
+        copy=False,
+    )
 
     def _default_asign_fid(self):
         return self.env.company.vat
@@ -127,6 +138,31 @@ class PosConfig(models.Model):
     def _compute_asign_start_order_id(self):
         for config in self:
             config.asign_start_order_id = config._get_asign_start_order()
+
+    def _asign_seq(self):
+        """Return the dedicated gapless RKSV receipt sequence, creating it once.
+
+        The receipt number (``asign_seq``) is drawn from this no-gap sequence
+        only at signing time, so it is independent from the POS order number
+        (``sequence_number``) that every order consumes at creation.
+        """
+        self.ensure_one()
+        if not self.asign_seq_id:
+            self.asign_seq_id = (
+                self.env["ir.sequence"]
+                .sudo()
+                .create(
+                    {
+                        "name": f"RKSV {self.asign_pid or self.name}",
+                        "implementation": "no_gap",
+                        "padding": 0,
+                        "number_increment": 1,
+                        "number_next": 1,
+                        "company_id": self.company_id.id,
+                    }
+                )
+            )
+        return self.asign_seq_id
 
     @api.model
     def _set_asign_defaults(self, record):
@@ -225,6 +261,8 @@ class PosConfig(models.Model):
                 )
             )
         configs.write({"asign_state": "assigned"})
+        for config in configs:
+            config._asign_seq()
 
     def action_asign_reset(self):
         configs = self.filtered(
@@ -358,76 +396,71 @@ class PosConfig(models.Model):
             raise ValidationError(self.env._("Created zero-receipt was not signed."))
         return zero_order
 
-    def _asign_repair_cancelled_names(self):
-        """Restore names of signed orders overwritten by a concurrent cancel.
+    def _asign_repair_signed_names(self):
+        """Restore names of signed receipts overwritten by a concurrent cancel.
 
-        A lost-update race can overwrite state and name of an already signed
-        order with ``cancel``/``'/'``. The signature covers the original
-        amounts, so only the name is restored from the sequence number.
+        A lost-update race can reset the name of an already signed receipt to
+        ``'/'``. The signature already covers the receipt, so only the name is
+        restored from its RKSV sequence number (``asign_seq``). Cancelled
+        orders never receive an ``asign_seq`` and therefore need no repair.
         """
         self.ensure_one()
+
         orders = self.env["pos.order"].search(
             [
                 ("config_id", "=", self.id),
-                ("state", "=", "cancel"),
                 ("asign_state", "=", "s"),
+                ("asign_seq", ">", 0),
                 ("name", "=", "/"),
             ]
         )
         for order in orders:
             order.name = order._compute_order_name()
             _logger.warning(
-                "**RKSV** restored name %s of signed cancelled order for POS %s",
+                "**RKSV** restored name %s of signed receipt for POS %s",
                 order.name,
                 self.name,
             )
 
     def _asign_sign_missed(self):
-        """Sign orders that were created but not signed yet."""
+        """Sign paid/done receipts that were created but not signed yet.
+
+        Cancelled orders are skipped on purpose: they do not consume a receipt
+        number, so they cannot create a gap in the signed range.
+        """
         self.ensure_one()
         pos_order_model = self.env["pos.order"]
 
-        self._asign_repair_cancelled_names()
+        self._asign_repair_signed_names()
 
-        last_signed = pos_order_model.search(
-            [
-                ("config_id", "=", self.id),
-                ("asign_state", "=", "s"),
-            ],
-            order="asign_seq desc",
-            limit=1,
-        )
-
-        while last_signed:
-            next_seq = last_signed.asign_seq + 1
-            next_order = pos_order_model.search(
+        while True:
+            order = pos_order_model.search(
                 [
                     ("config_id", "=", self.id),
-                    ("sequence_number", "=", next_seq),
-                    ("state", "in", ["paid", "done", "cancel"]),
+                    ("state", "in", ("paid", "done")),
+                    ("asign_state", "=", "u"),
                 ],
+                order="sequence_number desc",
                 limit=1,
             )
-            if not next_order:
+            if not order:
                 return
 
-            if next_order.state == "cancel":
-                next_order._asign_prepare_cancel()
-            next_order._asign_sign_and_check_one()
-            if next_order.asign_state != "s":
+            signed_orders = order._asign_add_signature()
+            if not signed_orders:
                 _logger.warning(
                     "**RKSV** unable to sign missed order %s for POS %s",
-                    next_order.name,
+                    order.name,
                     self.name,
                 )
                 return
 
             _logger.warning(
-                "**RKSV** signed missed order %s for POS %s",
-                next_order.name,
+                "**RKSV** signed %s missed receipt(s) up to %s for POS %s",
+                len(signed_orders),
+                signed_orders[-1].name,
                 self.name,
             )
-            last_signed = next_order
 
     def _cron_asign_sign_missed(self):
         configs = self
@@ -438,15 +471,6 @@ class PosConfig(models.Model):
                     ("asign_state", "in", ["assigned", "active"]),
                 ]
             )
-        # only process POS that are not actively selling; signing missed
-        # orders of a POS in use is handled by its own payment flow
-        open_sessions = self.env["pos.session"].search(
-            [
-                ("config_id", "in", configs.ids),
-                ("state", "=", "opened"),
-            ]
-        )
-        configs -= open_sessions.config_id
         for config in configs:
             _logger.info("**RKSV** Check missed orders for POS %s", config.name)
             config._asign_sign_missed()

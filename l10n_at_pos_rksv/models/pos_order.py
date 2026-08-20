@@ -30,6 +30,10 @@ ASIGN_ENDPOINT = "https://www.a-trust.at/asignrkonline/v2"
 ASIGN_TIMEOUT = 30
 
 
+class AsignSequenceError(Exception):
+    """Receipt numbers would not be strictly consecutive; abort signing."""
+
+
 def asign_b64urldecode_nopadding(value):
     """Decode a base64 URL-safe string that has no padding."""
     missing = len(value) % 4
@@ -65,6 +69,7 @@ class PosOrder(models.Model):
         string="a.sign Type",
         index=True,
         readonly=True,
+        copy=False,
     )
     asign_state = fields.Selection(
         [
@@ -79,33 +84,39 @@ class PosOrder(models.Model):
         ),
         index=True,
         readonly=True,
+        copy=False,
     )
     asign_counter = fields.Char(
         string="a.sign Counter",
         help="The turnover counter of the RKSV signature.",
         readonly=True,
+        copy=False,
     )
     asign_qrcode = fields.Char(
         string="a.sign QR-Code",
         help="The QR code of the RKSV signature.",
         index=True,
         readonly=True,
+        copy=False,
     )
     asign_dep = fields.Text(
         string="a.sign DEP",
         help="The DEP entry of the RKSV signature export.",
         readonly=True,
+        copy=False,
     )
     asign_serial = fields.Char(
         string="a.sign Serial",
         help="The serial number of the RKSV signing component.",
         readonly=True,
+        copy=False,
     )
     asign_seq = fields.Integer(
         string="a.sign Sequence",
         help="The sequence number of the RKSV signature export.",
         readonly=True,
         index=True,
+        copy=False,
     )
     asign_qrcode_quoted = fields.Char(
         string="a.sign QR-Code Quoted",
@@ -139,15 +150,42 @@ class PosOrder(models.Model):
         return res
 
     def _compute_order_name(self, session=None):
-        if self.asign_state or self.config_id.asign_enabled:
-            session = session or self.session_id
-            config = session.config_id
-            return config.order_seq_id.get_next_char(self.sequence_number or 0)
-        return super()._compute_order_name()
+        session = session or self.session_id
+        config = session.config_id if session else self.config_id
+        if self.asign_state or config.asign_enabled:
+            # The receipt number is only known once the order is signed; until
+            # then keep the placeholder name so the order is not numbered.
+            if not self.asign_seq:
+                return self.name or "/"
+            return config.order_seq_id.get_next_char(self.asign_seq)
+        return super()._compute_order_name(session)
 
-    def _compute_asign_seq(self):
-        for order in self:
-            order.asign_seq = order.sequence_number
+    def _prepare_refund_values(self, current_session):
+        """Make backend refunds go through the regular RKSV signing flow.
+
+        The base implementation names the refund "<original> REFUND"; with
+        RKSV enabled the refund must instead draw its own gapless receipt
+        number at signing time, so keep the placeholder name and mark the
+        order as unsigned.
+        """
+        vals = super()._prepare_refund_values(current_session)
+        config = current_session.config_id
+        if config.asign_enabled and config.asign_state != "draft":
+            vals["name"] = "/"
+            vals["asign_state"] = "u"
+        return vals
+
+    def _asign_next_seq(self):
+        """Assign the next gapless RKSV receipt number and the final name.
+
+        The receipt number is drawn from the dedicated per-POS sequence and is
+        independent from ``sequence_number`` (the order number consumed at
+        creation), so it stays gapless across cancelled or skipped orders.
+        """
+        self.ensure_one()
+        sequence = self.session_id.config_id._asign_seq()
+        self.asign_seq = int(sequence.next_by_id())
+        self.name = self._compute_order_name()
 
     def _asign_tax_amounts(self):
         """Return the tax amounts of the order grouped by RKSV tax category."""
@@ -288,115 +326,81 @@ class PosOrder(models.Model):
         )
         return data
 
-    def _asign_prepare_cancel(self):
-        """Prepare a cancelled order holding a receipt number for signing.
+    def _asign_add_signature(self, limit=10):
+        """Sign this order, including earlier unsigned receipts of the POS.
 
-        In Odoo 19 every order consumes a sequence number at creation, so a
-        cancelled order has to show up as a signed receipt in the DEP to keep
-        the receipt range gapless. Orders without any payment are zeroed
-        first; the missing name is restored from the sequence number.
+        Receipts are signed in creation order (``sequence_number``) and each
+        one draws the next gapless ``asign_seq`` from the dedicated POS
+        sequence. Cancelled orders are not signed and do not consume a receipt
+        number, so the signed range stays gapless without any repair.
         """
         self.ensure_one()
-        if self.currency_id.is_zero(self.amount_paid):
-            self.lines.write(
-                {
-                    "qty": 0,
-                    "price_unit": 0,
-                    "price_subtotal": 0,
-                    "price_subtotal_incl": 0,
-                }
-            )
-            self.write({"amount_total": 0.0, "amount_tax": 0.0})
-        vals = {"asign_state": "u"}
-        if self.name == "/":
-            vals["name"] = self._compute_order_name()
-        self.write(vals)
+        config = self.session_id.config_id
 
-    def _asign_add_signature(self, limit=10):
-        """Sign this order, including missed previous unsigned orders."""
-        self.ensure_one()
-        self._compute_asign_seq()
+        # Ensure the dedicated sequence exists outside the per-order savepoint
+        # so it is not recreated on a signing rollback.
+        config._asign_seq()
 
-        cr = self.env.cr
-        cr.execute(
-            """
-            SELECT asign_seq, o.id
-              FROM pos_order o
-              JOIN pos_session s ON s.id = o.session_id
-             WHERE s.config_id = %s
-               AND o.asign_state = 's'
-               AND o.asign_seq < %s
-             ORDER BY o.asign_seq DESC
-             LIMIT 1
-            """,
-            (self.session_id.config_id.id, self.asign_seq),
+        # Flush new orders so the searches below pick up everything.
+        self.flush_model()
+
+        # The chain continues from the last signed receipt of this POS.
+        last_order = self.search(
+            [
+                ("config_id", "=", config.id),
+                ("asign_state", "=", "s"),
+            ],
+            order="asign_seq desc",
+            limit=1,
         )
 
-        rows = cr.fetchall()
-        last_seq, last_order_id = rows[0] if rows else (0, None)
-        last_order = self.browse(last_order_id) if last_order_id else self.browse()
+        orders = self.search(
+            [
+                ("config_id", "=", config.id),
+                ("state", "in", ("paid", "done")),
+                ("asign_state", "=", "u"),
+                ("sequence_number", "<=", self.sequence_number),
+            ],
+            order="sequence_number asc",
+            limit=limit,
+        )
 
-        if last_seq + 1 == self.asign_seq or not last_order:
-            orders = self
-        else:
-            # Make sure new orders are flushed before searching, so the search
-            # below picks up everything.
-            self.flush_model()
-
-            unsigned_orders = self.search(
-                [
-                    ("session_id.config_id", "=", self.session_id.config_id.id),
-                    ("sequence_number", ">", last_seq),
-                    ("state", "in", ("paid", "done", "cancel")),
-                    ("asign_state", "!=", "s"),
-                ],
-                order="sequence_number ASC",
-                limit=limit,
-            )
-
-            if not unsigned_orders:
-                _logger.error(
-                    "**RKSV** #0 No unsigned order found before %s, "
-                    "but sequence does not match",
-                    self.name,
-                )
-                return self.browse()
-
-            if unsigned_orders[0].sequence_number == last_seq + 1:
-                orders = unsigned_orders
-            else:
-                _logger.error(
-                    "**RKSV** #1 Sequence number mismatch! "
-                    "Last signed order: %s, current order: %s",
-                    last_order.name,
-                    self.name,
-                )
-                return self.browse()
-
-        orders._compute_asign_seq()
         signed_orders = self.browse()
         for order in orders:
-            if signed_orders and order.asign_seq != last_order.asign_seq + 1:
+            try:
+                # Draw the receipt number and sign atomically: on failure the
+                # savepoint rollback releases the consumed sequence number, so
+                # no gap is created in the signed range.
+                with self.env.cr.savepoint():
+                    order._asign_next_seq()
+                    # Defensive guard: the dedicated no-gap sequence must yield
+                    # strictly consecutive receipt numbers. A mismatch points to
+                    # a tampered sequence or a concurrent signer; abort before
+                    # writing a broken chain (the savepoint releases the number).
+                    if last_order and order.asign_seq != last_order.asign_seq + 1:
+                        raise AsignSequenceError(order.id, order.asign_seq)
+                    signature = order._asign_create_signature(last_order)
+                    order.write(signature)
+                    order.flush_model()
+            except AsignSequenceError as err:
+                order_id, drawn_seq = err.args
+                last_seq = last_order.asign_seq
+                order.invalidate_recordset()
                 _logger.error(
-                    "**RKSV** #2 Sequence number mismatch! "
-                    "Last signed order: %s, current order: %s",
-                    last_order.name,
-                    order.name,
+                    "**RKSV** Receipt sequence mismatch for POS %s: order #%s "
+                    "drew asign_seq %s but last signed receipt was %s; aborting.",
+                    config.name,
+                    order_id,
+                    drawn_seq,
+                    last_seq,
                 )
                 return signed_orders
-
-            if order.state == "cancel":
-                order._asign_prepare_cancel()
-
-            try:
-                signature = order._asign_create_signature(last_order)
-                order.write(signature)
-                order.flush_model()
-                signed_orders += order
             except (UserError, requests.exceptions.RequestException):
+                order.invalidate_recordset()
                 _logger.exception("**RKSV** Error during signing order %s", order.name)
                 return signed_orders
 
+            signed_orders += order
             last_order = order
 
         return signed_orders
@@ -420,18 +424,3 @@ class PosOrder(models.Model):
             self._asign_add_signature()
 
         return res
-
-    def _asign_sign_and_check_one(self):
-        self.ensure_one()
-        # cancelled orders are accepted as well; they are prepared as zeroed
-        # receipts by _asign_prepare_cancel() inside the signing loop
-        if self.state not in ("paid", "done", "cancel"):
-            raise UserError(
-                self.env._(
-                    "Order %s is not paid, done or cancelled, cannot be signed",
-                    self.name,
-                )
-            )
-        signed_orders = self._asign_add_signature(limit=1)
-        if signed_orders != self:
-            raise UserError(self.env._("Order %s is not signed", self.name))

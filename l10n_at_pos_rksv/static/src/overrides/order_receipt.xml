@@ -15,7 +15,6 @@
                 </t>
                 <t t-elif="order.asign_state == 's'">
                     <br />
-                    <br />
                     <img
                         id="asign_qrcode"
                         t-att-src="asignQrCode"
@@ -24,6 +23,10 @@
                     <div class="pos-receipt-qrcode-text">
                         <t t-esc="order.config.asign_pid" />:
                         <t t-esc="order.asign_serial" />
+                    </div>
+                    <div class="pos-receipt-qrcode-text">Receipt No.</div>
+                    <div class="pos-receipt-qrcode-text">
+                        <t t-esc="order.name" />
                     </div>
                     <div
                         t-if="order.asign_type == '0'"

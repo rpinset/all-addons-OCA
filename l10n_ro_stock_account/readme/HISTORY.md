@@ -1,3 +1,52 @@
+## 19.0.1.8.0
+
+- Fix dropship moves retroactively repricing unrelated real stock of the
+  same product, for average-cost (AVCO) products. Core `stock_account`'s
+  `_set_value()` adds a move's product to `products_to_recompute` whenever
+  `is_dropship or is_in` is true, regardless of whether the move ends up
+  contributing any value there, and later recomputes the average cost for
+  every product in that set. Core's own averaging engine
+  (`product._run_average_batch`) explicitly includes `is_dropship` moves in
+  the same moving-average pool as real purchases, and since Odoo 19 derives
+  average-cost quant values live from `standard_price`, that recompute
+  retroactively changes the reported value of a product's real stock held
+  elsewhere, purely because the same product was also dropshipped — even
+  though the dropship transaction never touched that stock. Confirmed this
+  reproduces in plain Odoo (no Romanian accounting involved) as well as on
+  a Romanian-accounted company before this fix. Dropship moves now bypass
+  core's `_set_value()` entirely on Romanian-accounted companies (this
+  module already sets their `value` itself, see the 19.0.1.7.0 entry
+  below) so they never enter that recompute. FIFO products were never
+  affected: core's FIFO branch reprices existing stock strictly from its
+  own `total_value`/`qty_available`, neither of which a dropship move ever
+  touches.
+
+## 19.0.1.7.0
+
+- Fix missing stock valuation entries for dropshipped stock moves. A move
+  from a supplier location straight to a customer location (dropship) never
+  gets `stock.move.value` populated by core `stock_account`: `_action_done`
+  routes it through the same `moves_in._set_value()` call used for regular
+  incoming moves (the filter is `is_in or is_dropship`), but the assignment
+  `move.value = move._get_value()` inside `_set_value` only runs when
+  `is_in` is true, never for a pure dropship move. On top of that,
+  `_get_l10n_ro_move_type_account_list()` mapped `"dropshipped"` and
+  `"dropshipped_return"` to an empty account list, so even a correctly
+  valued move would have produced no accounting line. Combined, the vendor
+  bill kept debiting the stock valuation account (371) on receipt, the
+  customer invoice kept crediting the sale account (707) as usual, but the
+  stock side was never credited back and the cost of goods sold expense
+  account (607) was never debited — the stock valuation account accumulated
+  an ever-growing balance with no goods behind it, and gross margin was
+  permanently overstated by the un-recognised cost. Dropship moves now get
+  `value` populated the same way `internal_transfer` moves already do in
+  this module, and use the same account mapping as `delivery`/
+  `delivery_return` (debit expense, credit stock valuation, symmetric on
+  the return). This only affects new moves going forward; historical
+  dropship moves already validated before this fix keep their original
+  (missing) accounting and need a separate, deliberate regularisation
+  entry if the accumulated balance is to be cleared.
+
 ## 19.0.1.5.0
 
 - Keep the standard valuation for an internal transfer whose source warehouse

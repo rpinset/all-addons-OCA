@@ -291,13 +291,31 @@ class StockMove(models.Model):
 
     def _set_value(self, correction_quantity=None):
         """Set the value of the move"""
-        res = super()._set_value(correction_quantity=correction_quantity)
+        # Dropship moves gain nothing from core's own _set_value (they never
+        # satisfy its is_in/_is_out branches), but core still adds their
+        # product to `products_to_recompute` (keyed on `is_dropship or
+        # is_in`) and later recomputes the average cost for it — folding the
+        # dropship cost into the SAME moving-average pool as the company's
+        # real stock of that product (core's `_run_average_batch` explicitly
+        # includes `is_dropship` moves), which retroactively reprices
+        # unrelated quants already on hand. Route dropship moves around
+        # core's _set_value entirely and value them ourselves below instead.
+        ro_dropship_moves = self.filtered(
+            lambda m: m.is_l10n_ro_record
+            and m.l10n_ro_move_type in ("dropshipped", "dropshipped_return")
+        )
+        res = super(StockMove, self - ro_dropship_moves)._set_value(
+            correction_quantity=correction_quantity
+        )
         ro_internal_moves = self.filtered(
             lambda m: m.is_l10n_ro_record and m.l10n_ro_move_type == "internal_transfer"
         )
         for move in ro_internal_moves:
             # Since we create double entry throught transfer account
             # we need to set the value to the same as the stock valuation
+            move.value = move.sudo()._get_value()
+
+        for move in ro_dropship_moves.filtered(lambda m: not m.value):
             move.value = move.sudo()._get_value()
         return res
 
@@ -515,8 +533,8 @@ class StockMove(models.Model):
             "internal_transit_in": [
                 ("stock_valuation", "l10n_ro_transfer", "value", 1)
             ],
-            "dropshipped": [],
-            "dropshipped_return": [],
+            "dropshipped": [("expense", "stock_valuation", "value", 1)],
+            "dropshipped_return": [("expense", "stock_valuation", "value", -1)],
         }
         return vals.get(self.l10n_ro_move_type, [])
 
