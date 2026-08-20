@@ -19,11 +19,6 @@ msgid "EUR"
 msgstr ""
 
 #. module: edi_sale_ubl_output_oca
-#: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qweb_tmpl_ubl_party
-msgid "Moderna Produkter AB"
-msgstr ""
-
-#. module: edi_sale_ubl_output_oca
 #: model_terms:ir.ui.view,arch_db:edi_sale_ubl_output_oca.qwb_tmpl_ubl_order_response_out
 msgid "SO1234"
 msgstr ""

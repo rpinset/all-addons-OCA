@@ -52,12 +52,12 @@
                 <cbc:SalesOrderID t-esc="record.name">SO1234</cbc:SalesOrderID>
             </cac:OrderReference>
             <cac:SellerSupplierParty>
-                <t t-call="edi_sale_ubl_output_oca.qweb_tmpl_ubl_party">
+                <t t-call="edi_ubl_output_base_oca.qweb_tmpl_ubl_party">
                     <t t-set="party" t-value="seller_party" />
                 </t>
             </cac:SellerSupplierParty>
             <cac:BuyerCustomerParty>
-                <t t-call="edi_sale_ubl_output_oca.qweb_tmpl_ubl_party">
+                <t t-call="edi_ubl_output_base_oca.qweb_tmpl_ubl_party">
                     <t t-set="party" t-value="buyer_party" />
                 </t>
             </cac:BuyerCustomerParty>
@@ -87,7 +87,7 @@
                     t-esc="time_to_string(record.commitment_date)"
                 />
                 <cac:DeliveryAddress t-if="delivery.partner_id">
-                    <t t-call="edi_sale_ubl_output_oca.qweb_tmpl_ubl_address">
+                    <t t-call="edi_ubl_output_base_oca.qweb_tmpl_ubl_address">
                         <t t-set="partner" t-value="delivery.partner_id" />
                     </t>
                 </cac:DeliveryAddress>

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: crm (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-10 18:52+0000\n"
-"PO-Revision-Date: 2026-06-07 07:56+0000\n"
+"PO-Revision-Date: 2026-08-19 04:06+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (http://www.transifex.com/oca/OCA-crm-8-0/language/"
 "sl/)\n"
@@ -29,7 +29,7 @@ msgstr "Naziv stika"
 #. module: crm_lead_firstname
 #: model:ir.model.fields,field_description:crm_lead_firstname.field_crm_lead__contact_name
 msgid "First name"
-msgstr "Ime"
+msgstr "Lastno ime"
 
 #. module: crm_lead_firstname
 #: model_terms:ir.ui.view,arch_db:crm_lead_firstname.crm_lead_view_form

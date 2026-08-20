@@ -228,7 +228,16 @@ class Rma(models.Model):
             lambda x: x.can_be_refunded
         )
         if intercompany_rmas_to_refund:
-            intercompany_rmas_to_refund.action_refund()
+            # If it's possible to process the refund using the invoice, we'll do so
+            # to ensure consistency (it's possible that RMA A doesn't have an invoice,
+            # but RMA B does).
+            rmas_with_invoice = intercompany_rmas_to_refund.filtered(
+                lambda x: x.can_be_refunded_with_invoice
+            )
+            rmas_with_invoice.action_refund()
+            rmas_without_invoice = intercompany_rmas_to_refund - rmas_with_invoice
+            if rmas_without_invoice:
+                rmas_without_invoice.action_refund_without_invoice()
         return res
 
     def action_refund_without_invoice(self):
@@ -239,7 +248,16 @@ class Rma(models.Model):
             lambda x: x.can_be_refunded
         )
         if intercompany_rmas_to_refund:
-            intercompany_rmas_to_refund.action_refund_without_invoice()
+            # If it's possible to process the refund using the invoice, we'll do so
+            # to ensure consistency (it's possible that RMA A doesn't have an invoice,
+            # but RMA B does).
+            rmas_with_invoice = intercompany_rmas_to_refund.filtered(
+                lambda x: x.can_be_refunded_with_invoice
+            )
+            rmas_with_invoice.action_refund()
+            rmas_without_invoice = intercompany_rmas_to_refund - rmas_with_invoice
+            if rmas_without_invoice:
+                rmas_without_invoice.action_refund_without_invoice()
         return res
 
     def _sync_intercompany_fields(self):

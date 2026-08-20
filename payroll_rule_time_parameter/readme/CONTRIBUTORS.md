@@ -1,0 +1,3 @@
+- Henrik Norlin \<henrik@appstogrow.co\>
+- Nicolas Rodriguez \<nicolarsande@gmail.com\>
+- Panca Putra Pakpahan \<ppakpahan@solusiaglis.co.id\>

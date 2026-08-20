@@ -6,7 +6,7 @@
     "summary": """
         Configuration and special behaviors for EDI on sales.
     """,
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.2.0",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "author": "Camptocamp,Odoo Community Association (OCA)",
@@ -16,6 +16,7 @@
         "edi_xml_oca",
         "edi_exchange_template_oca",
         "edi_exchange_template_party_data",
+        "edi_ubl_output_base_oca",
         "edi_state_oca",
         # This is for the UBL schema
         "base_ubl",
@@ -24,7 +25,6 @@
         "sale_stock",
     ],
     "data": [
-        "templates/qweb_tmpl_party.xml",
         "templates/qweb_tmpl_order_response.xml",
     ],
     "demo": [

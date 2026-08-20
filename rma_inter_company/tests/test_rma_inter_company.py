@@ -639,6 +639,29 @@ class TestRmaInterCompany(TestRmaInterCompanyBase):
         self.assertEqual(rma_b.state, "refunded")
         self.assertFalse(rma_b.refund_id)
 
+    def test_rma_intercompany_refund_without_invoice_a_with_invoice_b(self):
+        self.operation.action_create_refund = "manual_after_receipt"
+        self.so_b._create_invoices()
+        rma_a = self._create_rma(self.so_a, self.rma_user_a)
+        rma_a.with_user(self.rma_user_a).action_confirm()
+        self.assertEqual(rma_a.state, "confirmed")
+        rma_b = rma_a.intercompany_rma_id
+        self.assertTrue(rma_b)
+        self.assertEqual(rma_b.state, "confirmed")
+        rma_a_reception_picking = rma_a.reception_move_id.picking_id
+        rma_a_reception_picking.with_user(self.rma_user_a).button_validate()
+        self.assertEqual(rma_a_reception_picking.state, "done")
+        self.assertEqual(rma_a.state, "received")
+        rma_b_reception_picking = rma_b.reception_move_id.picking_id
+        self.assertEqual(rma_b_reception_picking.state, "done")
+        self.assertEqual(rma_b.state, "received")
+        # Refund Company A
+        rma_a.with_user(self.rma_user_a).action_refund_without_invoice()
+        self.assertEqual(rma_a.state, "refunded")
+        self.assertFalse(rma_a.refund_id)
+        self.assertEqual(rma_b.state, "refunded")
+        self.assertTrue(rma_b.refund_id)
+
     def test_rma_intercompany_refund_without_invoice_company_b(self):
         self.operation.action_create_refund = "manual_after_receipt"
         rma_a = self._create_rma(self.so_a, self.rma_user_a)
@@ -661,8 +684,31 @@ class TestRmaInterCompany(TestRmaInterCompanyBase):
         self.assertEqual(rma_a.state, "refunded")
         self.assertFalse(rma_a.refund_id)
 
+    def test_rma_intercompany_refund_without_invoice_b_with_invoice_a(self):
+        self.operation.action_create_refund = "manual_after_receipt"
+        self.so_a._create_invoices()
+        rma_a = self._create_rma(self.so_a, self.rma_user_a)
+        rma_a.with_user(self.rma_user_a).action_confirm()
+        self.assertEqual(rma_a.state, "confirmed")
+        rma_b = rma_a.intercompany_rma_id
+        self.assertTrue(rma_b)
+        self.assertEqual(rma_b.state, "confirmed")
+        rma_a_reception_picking = rma_a.reception_move_id.picking_id
+        rma_a_reception_picking.with_user(self.rma_user_a).button_validate()
+        self.assertEqual(rma_a_reception_picking.state, "done")
+        self.assertEqual(rma_a.state, "received")
+        rma_b_reception_picking = rma_b.reception_move_id.picking_id
+        self.assertEqual(rma_b_reception_picking.state, "done")
+        self.assertEqual(rma_b.state, "received")
+        # Refund Company B
+        rma_b.with_user(self.rma_user_b).action_refund_without_invoice()
+        self.assertEqual(rma_b.state, "refunded")
+        self.assertFalse(rma_b.refund_id)
+        self.assertEqual(rma_a.state, "refunded")
+        self.assertTrue(rma_a.refund_id)
+
     @mute_logger("odoo.models.unlink")
-    def test_rma_intercompany_refund_company_a(self):
+    def test_rma_intercompany_refund_company_a_full(self):
         self.operation.action_create_refund = "manual_after_receipt"
         self.so_a._create_invoices()
         self.so_b._create_invoices()
@@ -689,7 +735,33 @@ class TestRmaInterCompany(TestRmaInterCompanyBase):
         self.assertEqual(rma_b.refund_id.company_id, self.company_b)
 
     @mute_logger("odoo.models.unlink")
-    def test_rma_intercompany_refund_company_b(self):
+    def test_rma_intercompany_refund_with_invoice_a_without_invoice_b(self):
+        self.operation.action_create_refund = "manual_after_receipt"
+        self.so_a._create_invoices()
+        # self.so_b._create_invoices()
+        rma_a = self._create_rma(self.so_a, self.rma_user_a)
+        rma_a.with_user(self.rma_user_a).action_confirm()
+        self.assertEqual(rma_a.state, "confirmed")
+        rma_b = rma_a.intercompany_rma_id
+        self.assertTrue(rma_b)
+        self.assertEqual(rma_b.state, "confirmed")
+        rma_a_reception_picking = rma_a.reception_move_id.picking_id
+        rma_a_reception_picking.with_user(self.rma_user_a).button_validate()
+        self.assertEqual(rma_a_reception_picking.state, "done")
+        self.assertEqual(rma_a.state, "received")
+        rma_b_reception_picking = rma_b.reception_move_id.picking_id
+        self.assertEqual(rma_b_reception_picking.state, "done")
+        self.assertEqual(rma_b.state, "received")
+        # Refund Company A
+        rma_a.with_user(self.rma_user_a).action_refund()
+        self.assertEqual(rma_a.state, "refunded")
+        self.assertTrue(rma_a.refund_id)
+        self.assertEqual(rma_a.refund_id.company_id, self.company_a)
+        self.assertEqual(rma_b.state, "refunded")
+        self.assertFalse(rma_b.refund_id)
+
+    @mute_logger("odoo.models.unlink")
+    def test_rma_intercompany_refund_company_b_full(self):
         self.operation.action_create_refund = "manual_after_receipt"
         self.so_a._create_invoices()
         self.so_b._create_invoices()
@@ -714,6 +786,31 @@ class TestRmaInterCompany(TestRmaInterCompanyBase):
         self.assertEqual(rma_a.state, "refunded")
         self.assertTrue(rma_a.refund_id)
         self.assertEqual(rma_a.refund_id.company_id, self.company_a)
+
+    @mute_logger("odoo.models.unlink")
+    def test_rma_intercompany_refund_with_invoice_b_without_invoice_a(self):
+        self.operation.action_create_refund = "manual_after_receipt"
+        self.so_b._create_invoices()
+        rma_a = self._create_rma(self.so_a, self.rma_user_a)
+        rma_a.with_user(self.rma_user_a).action_confirm()
+        self.assertEqual(rma_a.state, "confirmed")
+        rma_b = rma_a.intercompany_rma_id
+        self.assertTrue(rma_b)
+        self.assertEqual(rma_b.state, "confirmed")
+        rma_a_reception_picking = rma_a.reception_move_id.picking_id
+        rma_a_reception_picking.with_user(self.rma_user_a).button_validate()
+        self.assertEqual(rma_a_reception_picking.state, "done")
+        self.assertEqual(rma_a.state, "received")
+        rma_b_reception_picking = rma_b.reception_move_id.picking_id
+        self.assertEqual(rma_b_reception_picking.state, "done")
+        self.assertEqual(rma_b.state, "received")
+        # Refund Company B
+        rma_b.with_user(self.rma_user_b).action_refund()
+        self.assertEqual(rma_b.state, "refunded")
+        self.assertTrue(rma_b.refund_id)
+        self.assertEqual(rma_b.refund_id.company_id, self.company_b)
+        self.assertEqual(rma_a.state, "refunded")
+        self.assertFalse(rma_a.refund_id)
 
     def test_rma_not_intercompany_company_a(self):
         self._update_available_quantity(

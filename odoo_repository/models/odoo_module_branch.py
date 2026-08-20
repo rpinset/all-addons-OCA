@@ -1,4 +1,5 @@
 # Copyright 2023 Camptocamp SA
+# Copyright 2026 ACSONE SA/NV (<https://acsone.eu>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
 
 import pathlib
@@ -18,8 +19,9 @@ from ..utils.module import adapt_version
 
 class OdooModuleBranch(models.Model):
     _name = "odoo.module.branch"
+    _inherit = "odoo.ref.data.mixin"
     _description = "Odoo Module Branch"
-    _order = "repository_sequence, module_name, branch_name"
+    _order = "org_sequence, repository_sequence, module_name, branch_name"
 
     module_id = fields.Many2one(
         comodel_name="odoo.module",
@@ -53,6 +55,12 @@ class OdooModuleBranch(models.Model):
         related="repository_branch_id.repository_id.org_id",
         store=True,
         string="Organization",
+    )
+    org_sequence = fields.Integer(
+        related="repository_branch_id.repository_id.org_id.sequence",
+        store=True,
+        index=True,
+        string="Organization Sequence",
     )
     branch_id = fields.Many2one(
         # NOTE: not a related on 'repository_branch_id' as we need to create
@@ -307,9 +315,10 @@ class OdooModuleBranch(models.Model):
             domain = []
         if _visited is None:
             _visited = set()
-        if self.id in _visited:
+        current_ids = set(self.ids)
+        if current_ids.issubset(_visited):
             return self.browse()
-        _visited.add(self.id)
+        _visited |= current_ids
         # Apply domain and exclude self
         dependencies = (self.dependency_ids - self).filtered_domain(domain)
         dep_ids = set(dependencies.ids)
@@ -368,6 +377,14 @@ class OdooModuleBranch(models.Model):
                 # by adding a random waiting time of 1-4s
                 time.sleep(random.randrange(1, 5))
                 prs = github.request(self.env, url)
+            except github.GitHubRateLimitError as exc:
+                # Postpone the job until the rate limit is reset, without
+                # increasing its retry counter
+                raise RetryableJobError(
+                    "GitHub API rate limit reached, waiting for reset",
+                    seconds=exc.retry_after,
+                    ignore_retry=True,
+                ) from exc
             except RuntimeError as exc:
                 raise RetryableJobError("Error while looking for PR URL") from exc
             for pr in prs.get("items", []):
@@ -416,58 +433,14 @@ class OdooModuleBranch(models.Model):
             "pr_url": False,
         }
         if manifest:
-            category_id = self._get_module_category_id(manifest.get("category", ""))
-            author_ids = self._get_author_ids(manifest.get("author", ""))
-            maintainer_ids = self._get_maintainer_ids(
-                tuple(manifest.get("maintainers", []))
-            )
-            dev_status_id = self._get_dev_status_id(
-                manifest.get("development_status", "")
-            )
-            dependency_ids = []
-            external_dependencies = {}
-            python_dependency_ids = []
-            if manifest.get("installable", True):
-                dependency_ids = self._get_dependency_ids(
-                    repo_branch,
-                    # Set at least a dependency on "base" if not defined
-                    manifest.get("depends") or ["base"],
-                )
-                external_dependencies = manifest.get("external_dependencies", {})
-                python_dependency_ids = self._get_python_dependency_ids(
-                    tuple(external_dependencies.get("python", []))
-                )
-            license_id = self._get_license_id(manifest.get("license", ""))
             values.update(
-                {
-                    "title": manifest.get("name", False),
-                    "summary": manifest.get(
-                        "summary", manifest.get("description", False)
-                    ),
-                    "category_id": category_id,
-                    "author_ids": [(6, 0, author_ids)],
-                    "maintainer_ids": [(6, 0, maintainer_ids)],
-                    "dependency_ids": [(6, 0, dependency_ids)],
-                    "external_dependencies": external_dependencies,
-                    "python_dependency_ids": [(6, 0, python_dependency_ids)],
-                    "license_id": license_id,
-                    "version": manifest.get("version", False),
-                    "development_status_id": dev_status_id,
-                    "application": manifest.get("application", False),
-                    "installable": manifest.get("installable", True),
-                    "auto_install": manifest.get("auto_install", False),
-                }
+                self._prepare_manifest_values(
+                    manifest, repo_branch.branch_id, repo_branch.repository_id
+                )
             )
         if data.get("last_scanned_commit"):
-            values.update(
-                {
-                    "removed": False,
-                    "sloc_python": data["code"]["Python"],
-                    "sloc_xml": data["code"]["XML"],
-                    "sloc_js": data["code"]["JavaScript"],
-                    "sloc_css": data["code"]["CSS"],
-                }
-            )
+            values["removed"] = False
+            values.update(self._prepare_code_analysis_values(data["code"]))
         # Handle module removal
         elif module_branch:
             values.update(
@@ -497,6 +470,71 @@ class OdooModuleBranch(models.Model):
             if versions:
                 values["version_ids"] = versions
         return values
+
+    def _prepare_manifest_values(self, manifest, branch, repository):
+        """Return the `odoo.module.branch` values a manifest carries.
+
+        `branch` and `repository` are where the dependencies it declares are
+        looked up, those of the module the manifest belongs to.
+        """
+        dependency_ids = []
+        external_dependencies = {}
+        python_dependency_ids = []
+        if manifest.get("installable", True):
+            dependency_ids = self._get_dependency_ids(
+                branch,
+                repository,
+                # Set at least a dependency on "base" if not defined
+                manifest.get("depends") or ["base"],
+            )
+            external_dependencies = manifest.get("external_dependencies", {})
+            python_dependency_ids = self._get_python_dependency_ids(
+                tuple(external_dependencies.get("python", []))
+            )
+        # Some Odoo std modules have a list instead of a string as 'author':
+        # convert it to a tuple to keep the ormcache key hashable
+        author = manifest.get("author") or ""
+        if isinstance(author, list):
+            author = tuple(author)
+        return {
+            "title": manifest.get("name", False),
+            "summary": manifest.get("summary", manifest.get("description", False)),
+            "category_id": self._get_module_category_id(manifest.get("category", "")),
+            "author_ids": [(6, 0, self._get_author_ids(author))],
+            "maintainer_ids": [
+                (6, 0, self._get_maintainer_ids(tuple(manifest.get("maintainers", []))))
+            ],
+            "dependency_ids": [(6, 0, dependency_ids)],
+            "external_dependencies": external_dependencies,
+            "python_dependency_ids": [(6, 0, python_dependency_ids)],
+            "license_id": self._get_license_id(manifest.get("license", "")),
+            "version": manifest.get("version", False),
+            "development_status_id": self._get_dev_status_id(
+                manifest.get("development_status", "")
+            ),
+            "application": manifest.get("application", False),
+            "installable": manifest.get("installable", True),
+            "auto_install": manifest.get("auto_install", False),
+        }
+
+    def _get_sloc_fields(self):
+        """Return the field holding the count of each analysed language.
+
+        Counting one more language is adding it here, and having the scanner
+        analyse it.
+        """
+        return {
+            "Python": "sloc_python",
+            "XML": "sloc_xml",
+            "JavaScript": "sloc_js",
+            "CSS": "sloc_css",
+        }
+
+    def _prepare_code_analysis_values(self, code):
+        """Return the `odoo.module.branch` values a code analysis carries."""
+        return {
+            field: code[language] for language, field in self._get_sloc_fields().items()
+        }
 
     def _create_or_update(self, repo_branch, module, values):
         """Create or update a `odoo.module.branch` record from scanned module.
@@ -644,13 +682,13 @@ class OdooModuleBranch(models.Model):
             rec = self.env["odoo.module.category"].search(
                 [("name", "=", category_name)], limit=1
             )
-            if not rec:
-                rec = (
-                    self.env["odoo.module.category"]
-                    .sudo()
-                    .create({"name": category_name})
-                )
-            return rec.id
+            if rec:
+                return rec.id
+            return self._create_ref_data(
+                "odoo.module.category",
+                [("name", "=", category_name)],
+                {"name": category_name},
+            )
         return False
 
     @tools.ormcache("names")
@@ -661,14 +699,14 @@ class OdooModuleBranch(models.Model):
                 names = [name.strip() for name in names.split(",")]
             authors = self.env["odoo.author"].search([("name", "in", names)])
             missing_author_names = set(names) - set(authors.mapped("name"))
-            missing_authors = self.env["odoo.author"]
+            created_ids = []
             if missing_author_names:
-                missing_authors = (
-                    self.env["odoo.author"]
-                    .sudo()
-                    .create([{"name": name} for name in missing_author_names])
+                created_ids = self._create_ref_data_multi(
+                    "odoo.author",
+                    "name",
+                    [{"name": name} for name in missing_author_names],
                 )
-            return (authors | missing_authors).ids
+            return authors.ids + created_ids
         return []
 
     @tools.ormcache("names")
@@ -676,12 +714,14 @@ class OdooModuleBranch(models.Model):
         if names:
             maintainers = self.env["odoo.maintainer"].search([("name", "in", names)])
             missing_maintainer_names = set(names) - set(maintainers.mapped("name"))
-            created = self.env["odoo.maintainer"]
+            created_ids = []
             if missing_maintainer_names:
-                created = created.sudo().create(
-                    [{"name": name} for name in missing_maintainer_names]
+                created_ids = self._create_ref_data_multi(
+                    "odoo.maintainer",
+                    "name",
+                    [{"name": name} for name in missing_maintainer_names],
                 )
-            return (maintainers | created).ids
+            return maintainers.ids + created_ids
         return []
 
     @tools.ormcache("name")
@@ -690,9 +730,11 @@ class OdooModuleBranch(models.Model):
             rec = self.env["odoo.module.dev.status"].search(
                 [("name", "=", name)], limit=1
             )
-            if not rec:
-                rec = self.env["odoo.module.dev.status"].sudo().create({"name": name})
-            return rec.id
+            if rec:
+                return rec.id
+            return self._create_ref_data(
+                "odoo.module.dev.status", [("name", "=", name)], {"name": name}
+            )
         return False
 
     @api.model
@@ -743,13 +785,17 @@ class OdooModuleBranch(models.Model):
             module_branch = self.sudo()._create_orphaned_module_branch(branch, module)
         return module_branch
 
-    def _get_dependency_ids(self, repo_branch, depends: list):
+    def _get_dependency_ids(self, branch, repository, depends: list):
+        """Return the modules `depends` refers to, on `branch`.
+
+        They are looked up in `repository` first. Both are those of the module
+        depending on them, which a repository branch does not always tell: a
+        module read outside of a scan can belong to no repository at all.
+        """
         dependency_ids = []
         for depend in depends:
             module = self._get_module(depend)
-            dependency = self._find_or_create(
-                repo_branch.branch_id, module, repo_branch.repository_id
-            )
+            dependency = self._find_or_create(branch, module, repository)
             dependency_ids.append(dependency.id)
         return dependency_ids
 
@@ -759,13 +805,15 @@ class OdooModuleBranch(models.Model):
             dependencies = self.env["odoo.python.dependency"].search(
                 [("name", "in", packages)]
             )
-            missing_dependencies = set(packages) - set(dependencies.mapped("name"))
-            created = self.env["odoo.python.dependency"]
-            if missing_dependencies:
-                created = created.sudo().create(
-                    [{"name": package} for package in missing_dependencies]
+            missing_names = set(packages) - set(dependencies.mapped("name"))
+            created_ids = []
+            if missing_names:
+                created_ids = self._create_ref_data_multi(
+                    "odoo.python.dependency",
+                    "name",
+                    [{"name": name} for name in missing_names],
                 )
-            return (dependencies | created).ids
+            return dependencies.ids + created_ids
         return []
 
     @tools.ormcache("license_name")
@@ -773,9 +821,11 @@ class OdooModuleBranch(models.Model):
         if license_name:
             license_model = self.env["odoo.license"]
             rec = license_model.search([("name", "=", license_name)], limit=1)
-            if not rec:
-                rec = license_model.sudo().create({"name": license_name})
-            return rec.id
+            if rec:
+                return rec.id
+            return self._create_ref_data(
+                "odoo.license", [("name", "=", license_name)], {"name": license_name}
+            )
         return False
 
     def _get_module(self, name):
@@ -904,10 +954,7 @@ class OdooModuleBranch(models.Model):
             "is_standard": self.is_standard,
             "is_enterprise": self.is_enterprise,
             "is_community": self.is_community,
-            "sloc_python": self.sloc_python,
-            "sloc_xml": self.sloc_xml,
-            "sloc_js": self.sloc_js,
-            "sloc_css": self.sloc_css,
+            **{field: self[field] for field in self._get_sloc_fields().values()},
             "last_scanned_commit": self.last_scanned_commit,
             "addons_path": self.addons_path,
             "pr_url": self.pr_url,

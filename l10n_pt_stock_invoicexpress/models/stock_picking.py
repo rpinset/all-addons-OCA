@@ -138,7 +138,7 @@ class StockPicking(models.Model):
                 _("Scheduled Date should be later than the current datetime!")
             )
         customer = self.partner_id.commercial_partner_id
-        customer_vals = customer.set_invoicexpress_contact()
+        customer_vals = customer.set_invoicexpress_contact(company=self.company_id)
         if self.location_id.usage == "internal":  # Outgoing
             address_from = self.picking_type_id.warehouse_id.partner_id
             address_to = self.partner_id

@@ -1,19 +1,18 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-08-17 04:15 UTC
+Generated 2026-08-20 15:29 UTC
 
 Total skipped: **108**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **26**
+Count: **25**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [.github](https://github.com/OCA/.github) | [18.0](https://github.com/OCA/.github/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [18.0](https://github.com/OCA/ansible-odoo/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [18.0](https://github.com/OCA/connector-magento-php-extension/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
-| [connector-shopify](https://github.com/OCA/connector-shopify) | [18.0](https://github.com/OCA/connector-shopify/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | [18.0](https://github.com/OCA/maintainer-tools/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | [18.0](https://github.com/OCA/mirrors-flake8/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | [18.0](https://github.com/OCA/oca-addons-repo-template/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
@@ -39,7 +38,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **82**
+Count: **83**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -60,6 +59,7 @@ Count: **82**
 | [connector-redmine](https://github.com/OCA/connector-redmine) | [18.0](https://github.com/OCA/connector-redmine/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-sage](https://github.com/OCA/connector-sage) | [18.0](https://github.com/OCA/connector-sage/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | [18.0](https://github.com/OCA/connector-salesforce/tree/18.0) | No directory with __manifest__.py at repo root |
+| [connector-shopify](https://github.com/OCA/connector-shopify) | [18.0](https://github.com/OCA/connector-shopify/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | [18.0](https://github.com/OCA/connector-spscommerce/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [18.0](https://github.com/OCA/connector-woocommerce/tree/18.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [18.0](https://github.com/OCA/cooperative/tree/18.0) | No directory with __manifest__.py at repo root |
