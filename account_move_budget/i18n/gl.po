@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-23 16:14+0000\n"
-"Last-Translator: Pablo Castelo <pablocv@gmx.es>\n"
+"PO-Revision-Date: 2026-08-17 09:31+0000\n"
+"Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_move_budget.field_res_partner__budget_count
 #: model:ir.model.fields,field_description:account_move_budget.field_res_users__budget_count
 msgid "# Budgets"
-msgstr ""
+msgstr "# Orzamentos"
 
 #. module: account_move_budget
 #. odoo-python
@@ -108,7 +108,7 @@ msgstr "Liñas de Orzamento"
 #. module: account_move_budget
 #: model_terms:ir.ui.view,arch_db:account_move_budget.view_partner_form_inherit
 msgid "Budgets"
-msgstr ""
+msgstr "Orzamentos"
 
 #. module: account_move_budget
 #: model_terms:ir.ui.view,arch_db:account_move_budget.account_move_budget_form_view
@@ -144,7 +144,7 @@ msgstr "Confirmado"
 #. module: account_move_budget
 #: model:ir.model,name:account_move_budget.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: account_move_budget
 #: model:ir.model.fields,field_description:account_move_budget.field_account_move_budget__create_uid

@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* image_tag
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-07-23 11:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: image_tag_environment
+#: model:ir.model,name:image_tag_environment.model_image_tag
+msgid "Image Tag"
+msgstr "Etichetta immagine"
+
+#. module: image_tag_environment
+#: model:ir.model.fields,field_description:image_tag_environment.field_image_tag__server_env_defaults
+msgid "Server Env Defaults"
+msgstr "Predefiniti ambiente server"
+
+#. module: image_tag_environment
+#: model:ir.model.fields,field_description:image_tag_environment.field_image_tag__tech_name
+msgid "Tech Name"
+msgstr "Nome tecnico"
+
+#. module: image_tag_environment
+#: model:ir.model.fields,help:image_tag_environment.field_image_tag__tech_name
+msgid "Unique name for technical purposes. Eg: server env keys."
+msgstr "Nome univoco per motivi tecnici. Es: chiavi server ambiente."
+
+#~ msgid "Apply On"
+#~ msgstr "Applica a"
+
+#~ msgid "Created by"
+#~ msgstr "Creato da"
+
+#~ msgid "Created on"
+#~ msgstr "Creato il"
+
+#~ msgid "Display Name"
+#~ msgstr "Nome visualizzato"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Image Tag Manager"
+#~ msgstr "Gestore etichetta immagine"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "Last Updated by"
+#~ msgstr "Ultimo aggiornamento di"
+
+#~ msgid "Last Updated on"
+#~ msgstr "Ultimo aggiornamento il"
+
+#~ msgid "Name"
+#~ msgstr "Nome"

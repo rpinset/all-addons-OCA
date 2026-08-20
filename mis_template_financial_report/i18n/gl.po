@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-05 22:46+0000\n"
+"PO-Revision-Date: 2026-08-17 08:02+0000\n"
 "Last-Translator: Cándido Martínez <candido@supermercadoscooperativos.com>\n"
 "Language-Team: none\n"
 "Language: gl\n"
@@ -54,7 +54,7 @@ msgstr "Perdas"
 #. module: mis_template_financial_report
 #: model:ir.model,name:mis_template_financial_report.model_mis_report_instance
 msgid "MIS Report Instance"
-msgstr "Instancia de informe Os meus"
+msgstr "Instancia de informe MIS"
 
 #. module: mis_template_financial_report
 #: model:ir.model,name:mis_template_financial_report.model_mis_report_kpi

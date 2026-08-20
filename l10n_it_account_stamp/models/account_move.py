@@ -32,7 +32,12 @@ class AccountMove(models.Model):
             raise UserError(_("Missing tax stamp product in company settings!"))
         total_tax_base = sum(
             (
-                inv_tax.price_subtotal
+                self.currency_id._convert(
+                    inv_tax.price_subtotal,
+                    self.env.ref("base.EUR"),
+                    self.company_id,
+                    inv_tax.date,
+                )
                 for inv_tax in self.invoice_line_ids.filtered(
                     lambda line: set(line.tax_ids.ids)
                     & set(stamp_product_id.stamp_apply_tax_ids.ids)
@@ -82,13 +87,17 @@ class AccountMove(models.Model):
                     _("Missing account income configuration for %s")
                     % stamp_product_id.name
                 )
+            currency_id = stamp_product_id.currency_id or inv.company_currency_id
+            price_unit = currency_id._convert(
+                stamp_product_id.list_price, inv.currency_id, inv.company_id, inv.date
+            )
             invoice_line_vals = {
                 "move_id": inv.id,
                 "product_id": stamp_product_id.id,
                 "name": stamp_product_id.description_sale,
                 "sequence": 99999,
                 "account_id": stamp_account.id,
-                "price_unit": stamp_product_id.list_price,
+                "price_unit": price_unit,
                 "quantity": 1,
                 "display_type": "product",
                 "product_uom_id": stamp_product_id.uom_id.id,
