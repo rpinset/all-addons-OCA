@@ -25,6 +25,11 @@ msgid "Contact Mandate"
 msgstr ""
 
 #. module: account_banking_mandate_contact
+#: model:ir.model,name:account_banking_mandate_contact.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: account_banking_mandate_contact
 #: model:ir.model,name:account_banking_mandate_contact.model_account_move_line
 msgid "Journal Item"
 msgstr ""

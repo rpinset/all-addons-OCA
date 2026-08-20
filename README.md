@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-08-17 04:11 UTC** (elapsed 94s)
+Last build: **2026-08-20 15:24 UTC** (elapsed 180s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -22,7 +22,7 @@ Last build: **2026-08-17 04:11 UTC** (elapsed 94s)
 | [account-payment](https://github.com/OCA/account-payment) | 24 | 77243c2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 11 | 8219cd8 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [agreement](https://github.com/OCA/agreement) | 4 | 0eb9de0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [bank-payment](https://github.com/OCA/bank-payment) | 14 | aadbe2e 2026-07-22 OCA-git-bot [BOT] post-merge updates |
+| [bank-payment](https://github.com/OCA/bank-payment) | 14 | ab6f7b6 2026-08-19 Weblate Update translation files |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 15 | 57ce9ae 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [brand](https://github.com/OCA/brand) | 9 | da24d2a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 1 | 18d2b25 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |

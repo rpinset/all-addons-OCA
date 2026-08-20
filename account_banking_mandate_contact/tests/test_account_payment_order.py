@@ -116,6 +116,40 @@ class TestAccountPaymentOrder(TransactionCase):
         )
         self.assertEqual(payment_line.partner_bank_id, self.partner_bank_core)
 
+    def test_invoice_mandate_from_shipping_contact_mandate_required(self):
+        self.method_sepa.mandate_required = True
+        self.env["res.partner"].create(
+            {
+                "name": "Test Shipping Contact",
+                "parent_id": self.partner.id,
+                "type": "delivery",
+                "contact_mandate_id": self.mandate_b2b.id,
+            }
+        )
+        self.assertEqual(self._create_invoice().mandate_id, self.mandate_b2b)
+
+    def test_payment_line_contact_mandate_wins_over_shipping_fallback(self):
+        self.partner.contact_mandate_id = self.mandate_b2b
+        self.invoice.partner_shipping_id = self.env["res.partner"].create(
+            {
+                "name": "Test Delivery Contact",
+                "parent_id": self.partner.id,
+                "type": "delivery",
+            }
+        )
+        line_create_form = Form(
+            self.env["account.payment.line.create"].with_context(
+                active_model="account.payment.order", active_id=self.payment_order.id
+            )
+        )
+        line_create_form.date_type = "due"
+        line_create_form.due_date = fields.Date.from_string("2021-01-01")
+        line_create = line_create_form.save()
+        line_create.populate()
+        line_create.create_payment_lines()
+        payment_line = self.payment_order.payment_line_ids
+        self.assertEqual(payment_line.partner_bank_id, self.partner_bank_b2b)
+
     def test_account_payment_order_core_extra(self):
         self.partner.contact_mandate_id = self.mandate_b2b
         line_create_form = Form(

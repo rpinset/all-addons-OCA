@@ -13,10 +13,9 @@ class AccountMoveLine(models.Model):
         vals = super(AccountMoveLine, self)._prepare_payment_line_vals(payment_order)
         if payment_order.payment_type != "inbound" or self.move_id.mandate_id:
             return vals
-        mandate = (
-            self.move_id.partner_shipping_id.valid_mandate_id
-            or self.move_id.partner_id.valid_mandate_id
-        )
+        mandate = self.move_id.partner_shipping_id.contact_mandate_id
+        if mandate.state != "valid":
+            mandate = self.move_id.partner_id.valid_mandate_id
         if mandate:
             vals.update(
                 {
