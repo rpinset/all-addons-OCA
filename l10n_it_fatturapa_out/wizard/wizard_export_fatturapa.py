@@ -37,8 +37,28 @@ class WizardExportFatturapa(models.TransientModel):
 
     report_print_menu = fields.Many2one(
         "ir.actions.report",
+        domain=lambda self: self._get_report_print_menu_domain(),
         help="This report will be automatically included in the created XML",
     )
+
+    @api.model
+    def _get_report_print_menu_domain(self):
+        """Only allow selecting the reports shown in the invoices 'Print' menu.
+
+        Those reports are the ones having `binding_model_id` set to
+        `account.move`, but `binding_model_id` is a Many2one to `ir.model`,
+        that normal users cannot read:
+        a domain like `[("binding_model_id", "=", "account.move")]`
+        raises an AccessError when it is evaluated,
+        because resolving the model's name requires searching in `ir.model`.
+        Resolving the model here (`ir.model._get` does not require
+        any access right) allows filtering the reports by the model's id,
+        and the domain reaches the client already evaluated.
+        """
+        exported_model = self.env["ir.model"]._get("account.move")
+        return [
+            ("binding_model_id", "=", exported_model.id),
+        ]
 
     def saveAttachment(self, fatturapa, number):
         attach_obj = self.env["fatturapa.attachment.out"]
