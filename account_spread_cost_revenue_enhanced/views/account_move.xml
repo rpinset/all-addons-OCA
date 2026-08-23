@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_invoice_spread_inherit" model="ir.ui.view">
+        <field name="model">account.move</field>
+        <field
+            name="inherit_id"
+            ref="account_spread_cost_revenue.view_invoice_spread"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='line_ids']//button[@name='spread_details']"
+                position="attributes"
+            >
+                <attribute name="column_invisible">0</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
