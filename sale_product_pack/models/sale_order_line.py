@@ -175,3 +175,16 @@ class SaleOrderLine(models.Model):
             if parent.product_id.pack_ok and parent.pack_type == "detailed":
                 line.name = f"{'> ' * (parent.pack_depth + 1)}{line.name}"
         return res
+
+    def _compute_price_unit(self):
+        # Avoid recomputing prices for pack component lines whose price must remain
+        # handled by the parent pack line, as some enterprise modules may trigger
+        # price recomputation and override their expected zero price.
+        lines_to_recompute = self.filtered(
+            lambda line: not (
+                line.pack_parent_line_id
+                and line.pack_parent_line_id.product_id.pack_component_price
+                in ("totalized", "ignored")
+            )
+        )
+        return super(SaleOrderLine, lines_to_recompute)._compute_price_unit()
