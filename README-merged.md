@@ -1661,6 +1661,9 @@ and promote its widespread use.
 ## From OCA/dms
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# dms
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/dms&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/dms/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/dms/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/dms/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/dms/actions/workflows/test.yml?query=branch%3A15.0)
@@ -1668,8 +1671,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/dms-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/dms-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# dms
 
 TODO: add repo description.
 
@@ -1683,7 +1684,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 15.0.1.14.1 |  | Document Management System for Odoo
+[dms](dms/) | 15.0.1.14.2 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Auto classify documents into DMS
 [dms_field](dms_field/) | 15.0.1.4.1 |  | Create DMS View and allow to use them inside a record
