@@ -6,7 +6,7 @@
     "summary": """
         Configuration and special behaviors for EDI on sales.
     """,
-    "version": "18.0.1.2.0",
+    "version": "18.0.1.3.0",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "author": "Camptocamp,Odoo Community Association (OCA)",

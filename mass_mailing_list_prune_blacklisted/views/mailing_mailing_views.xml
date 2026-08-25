@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2026 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="view_mail_mass_mailing_form" model="ir.ui.view">
+        <field name="name">Add Prune button to Mass Mailing form view</field>
+        <field name="model">mailing.mailing</field>
+        <field name="inherit_id" ref="mass_mailing.view_mail_mass_mailing_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//div[hasclass('o_mass_mailing_contact_list_ids')]/div"
+                position="inside"
+            >
+                <button
+                    string="Prune Lists..."
+                    class="btn btn-secondary ms-2 py-0"
+                    name="show_prune_lists_wizard"
+                    type="object"
+                    invisible="not has_list_blacklisted_contacts"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

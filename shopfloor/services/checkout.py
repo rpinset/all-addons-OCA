@@ -2,8 +2,6 @@
 # Copyright 2020 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-import logging
-
 from werkzeug.exceptions import BadRequest
 
 from odoo import _, fields
@@ -12,8 +10,6 @@ from odoo.addons.base_rest.components.service import to_int
 from odoo.addons.component.core import Component
 
 from ..utils import to_float
-
-_logger = logging.getLogger(__name__)
 
 
 class Checkout(Component):
@@ -1566,21 +1562,7 @@ class Checkout(Component):
                 picking,
             )
         stock = self._actions_for("stock")
-        savepoint = self._actions_for("savepoint").new()
-        try:
-            stock.validate_moves(lines_done.move_id)
-        except Exception as e:
-            savepoint.rollback()
-            _logger.error("Error while validating moves: %s", e)
-            # in case of error, go back to the location selection and pass the error
-            # to the user. This is to fix issue where user only saw a generic
-            # server error when validation failed with external API
-            return self._response_for_summary(
-                picking,
-                need_confirm=False,
-                message=self.msg_store.move_validation_failed(e),
-            )
-        savepoint.release()
+        stock.validate_moves(lines_done.move_id)
         return self._response_for_select_document(
             message=self.msg_store.transfer_done_success(lines_done.picking_id)
         )
@@ -1618,20 +1600,7 @@ class Checkout(Component):
         for line in lines_done:
             line.update({"location_dest_id": scanned_location.id})
         stock = self._actions_for("stock")
-        savepoint = self._actions_for("savepoint").new()
-        try:
-            stock.validate_moves(lines_done.move_id)
-        except Exception as e:
-            savepoint.rollback()
-            _logger.error("Error while validating moves: %s", e)
-            # in case of error, go back to the location selection and pass the error
-            # to the user. This is to fix issue where user only saw a generic
-            # server error when validation failed with external API
-            return self._response_for_select_child_location(
-                picking,
-                message=self.msg_store.move_validation_failed(e),
-            )
-        savepoint.release()
+        stock.validate_moves(lines_done.move_id)
         return self._response_for_select_document(
             message=self.msg_store.transfer_done_success(lines_done.picking_id)
         )

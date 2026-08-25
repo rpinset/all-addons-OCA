@@ -20,6 +20,16 @@ msgid "%d transactions present in response data"
 msgstr ""
 
 #. module: account_statement_import_online_ponto
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online_ponto.online_bank_statement_provider_form
+msgid "Client ID"
+msgstr ""
+
+#. module: account_statement_import_online_ponto
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online_ponto.online_bank_statement_provider_form
+msgid "Client Secret"
+msgstr ""
+
+#. module: account_statement_import_online_ponto
 #: model:ir.model.fields.selection,name:account_statement_import_online_ponto.selection__online_bank_statement_provider__ponto_date_field__execution_date
 msgid "Execution Date"
 msgstr ""
@@ -48,8 +58,11 @@ msgid "Interface to all interactions with Ponto API"
 msgstr ""
 
 #. module: account_statement_import_online_ponto
-#: model_terms:ir.ui.view,arch_db:account_statement_import_online_ponto.online_bank_statement_provider_form
-msgid "Login"
+#. odoo-python
+#: code:addons/account_statement_import_online_ponto/models/online_bank_statement_provider_ponto.py:0
+msgid ""
+"No bank account number configured for the journal '{journal}'. Please set "
+"the Account Number field in the journal configuration."
 msgstr ""
 
 #. module: account_statement_import_online_ponto
@@ -88,12 +101,6 @@ msgid "Ponto : no token"
 msgstr ""
 
 #. module: account_statement_import_online_ponto
-#. odoo-python
-#: code:addons/account_statement_import_online_ponto/models/ponto_interface.py:0
-msgid "Ponto : wrong configuration, account {account} not found in {data}"
-msgstr ""
-
-#. module: account_statement_import_online_ponto
 #: model_terms:ir.ui.view,arch_db:account_statement_import_online_ponto.online_bank_statement_provider_form
 msgid "Ponto Config"
 msgstr ""
@@ -110,6 +117,29 @@ msgstr ""
 
 #. module: account_statement_import_online_ponto
 #. odoo-python
+#: code:addons/account_statement_import_online_ponto/models/ponto_interface.py:0
+msgid ""
+"Ponto configuration error: No accounts found in your Ponto integration.\n"
+"\n"
+"Please add at least one account to your Custom Integration at https://myponto.com/"
+msgstr ""
+
+#. module: account_statement_import_online_ponto
+#. odoo-python
+#: code:addons/account_statement_import_online_ponto/models/ponto_interface.py:0
+msgid ""
+"Ponto configuration error: Odoo bank account number '{account}' not found in Ponto accounts.\n"
+"\n"
+"Available Ponto accounts:\n"
+"{ponto_ibans}\n"
+"\n"
+"Please verify that:\n"
+"1. The Account Number in Odoo matches a Ponto account reference\n"
+"2. The account is added to your Ponto integration\n"
+msgstr ""
+
+#. module: account_statement_import_online_ponto
+#. odoo-python
 #: code:addons/account_statement_import_online_ponto/models/online_bank_statement_provider_ponto.py:0
 msgid "Ponto obtain all new statement data for journal %s"
 msgstr ""
@@ -120,11 +150,6 @@ msgstr ""
 msgid ""
 "Ponto obtain statement data for journal %(journal)s from %(date_since)s to "
 "%(date_until)s"
-msgstr ""
-
-#. module: account_statement_import_online_ponto
-#: model_terms:ir.ui.view,arch_db:account_statement_import_online_ponto.online_bank_statement_provider_form
-msgid "Secret Key"
 msgstr ""
 
 #. module: account_statement_import_online_ponto

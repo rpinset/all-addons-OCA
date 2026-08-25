@@ -52,16 +52,33 @@ class TestOrderResponseOutbound(TransactionComponentCase, XMLTestCaseMixin, Orde
 
     def test_render_values(self):
         # TODO: test w/ some identifiers
+        def make_lang(record):
+            if not record.lang:
+                return False
+            lang = self.env["res.lang"]._get_data(code=record.lang)
+            if not lang:
+                return False
+            return {
+                "name": lang.name,
+                "code": lang.code,
+                "short": lang.code.split("_")[0],
+            }
+
         def make_party(record):
             return dict(
                 name=record.name,
                 identifiers=[],
                 endpoint={},
+                lang=make_lang(record),
+                partner=record,
             )
 
         values = self.exc_tmpl._get_render_values(self.record)
         expected = [
-            ("seller_party", make_party(self.order.company_id)),
+            # Match what the code_snippet actually passes to `get_party_data`:
+            # `record.company_id.partner_id` (a res.partner), not the
+            # res.company itself (which has no `lang` field).
+            ("seller_party", make_party(self.order.company_id.partner_id)),
             ("buyer_party", make_party(self.order.partner_id)),
         ]
         for k, v in expected:

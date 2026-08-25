@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mass_mailing_list_prune_blacklisted
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-05-11 14:35+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_prune_blacklisted.prune_wizard_form_view
+msgid ""
+"<span attrs=\"{                             'invisible': [                                 ('blacklisted_contact_ids', '!=', []),                             ],                         }\">\n"
+"                        The selected mailing lists have no blacklisted contacts.\n"
+"                    </span>"
+msgstr ""
+"<span attrs=\"{                             'invisible': "
+"[                                 ('blacklisted_contact_ids', '!=', [])"
+",                             ],                         }\">\n"
+"                        La lista di distribuzione selezionata non ha "
+"contatti bloccati.\n"
+"                    </span>"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_prune_blacklisted.prune_wizard_form_view
+msgid ""
+"<span colspan=\"2\">\n"
+"                            Do you want to remove the following contacts from the selected mailing lists?\n"
+"                        </span>\n"
+"                        <br/>"
+msgstr ""
+"<span colspan=\"2\">\n"
+"                            Si vuole eliminare i seguenti contatti dalle "
+"liste di distribuzione selezionate?\n"
+"                        </span>\n"
+"                        <br/>"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__blacklisted_contact_ids
+msgid "Blacklisted contacts"
+msgstr "Contatti bloccati"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_prune_blacklisted.prune_wizard_form_view
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_prune_blacklisted.prune_wizard_form_view
+msgid "Confirm"
+msgstr "Conferma"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mailing_mailing__has_list_blacklisted_contacts
+msgid "Has List Blacklisted Contacts"
+msgstr "Ha lista con contatti bloccati"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model,name:mass_mailing_list_prune_blacklisted.model_mailing_mailing
+msgid "Mass Mailing"
+msgstr "Spedizione di massa"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,help:mass_mailing_list_prune_blacklisted.field_mailing_mailing__has_list_blacklisted_contacts
+msgid "One of the mailing lists has blacklisted contacts."
+msgstr "Una delle liste di distribuzione ha contatti bloccati."
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_prune_blacklisted.view_mail_mass_mailing_form
+msgid "Prune Lists..."
+msgstr "Sfoltisci liste..."
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.actions.act_window,name:mass_mailing_list_prune_blacklisted.prune_wizard_action
+msgid "Remove blacklisted contacts"
+msgstr "Rimozione contatti bloccati"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model,name:mass_mailing_list_prune_blacklisted.model_mass_mailing_list_prune_blacklisted_wizard
+msgid "Remove blacklisted contacts from mailng list"
+msgstr "Rimuovere contatti bloccati dalla lista di distribuzione"
+
+#. module: mass_mailing_list_prune_blacklisted
+#: model:ir.model.fields,field_description:mass_mailing_list_prune_blacklisted.field_mass_mailing_list_prune_blacklisted_wizard__list_ids
+msgid "Selected Lists"
+msgstr "Liste selezionate"

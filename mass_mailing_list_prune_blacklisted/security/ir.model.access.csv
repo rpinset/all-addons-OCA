@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mass_mailing_list_prune_blacklisted.access_mass_mailing_list_prune_blacklisted_wizard,Mass Mailing User can magae Prune Wizard,mass_mailing_list_prune_blacklisted.model_mass_mailing_list_prune_blacklisted_wizard,mass_mailing.group_mass_mailing_user,1,1,1,1

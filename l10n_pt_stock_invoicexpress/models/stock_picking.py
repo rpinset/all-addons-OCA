@@ -63,6 +63,37 @@ class StockPicking(models.Model):
             if pick_doc_type and pick_doc_type != "none" and is_PT:
                 pick.invoicexpress_doc_type = pick_doc_type
 
+    @api.depends(
+        "move_ids_without_package.quantity",
+        "move_ids_without_package.l10npt_invoicexpress_tax_id",
+    )
+    def _compute_l10npt_has_tax_exempt_lines(self):
+        for picking in self:
+            picking.l10npt_has_tax_exempt_lines = bool(
+                picking.move_ids_without_package.filtered(
+                    lambda m: m.quantity
+                    and m.l10npt_invoicexpress_tax_id
+                    and not m.l10npt_invoicexpress_tax_id.amount
+                )
+            )
+
+    @api.depends(
+        "l10npt_has_tax_exempt_lines",
+        "state",
+        "sale_id.l10npt_vat_exempt_reason",
+    )
+    def _compute_l10npt_vat_exempt_reason(self):
+        # Skip done/cancel pickings to avoid recomputing large historical
+        # datasets on module install and to protect finalised records.
+        for picking in self.filtered(lambda p: p.state not in ("cancel", "done")):
+            if (
+                picking.l10npt_has_tax_exempt_lines
+                and not picking.l10npt_vat_exempt_reason
+            ):
+                picking.l10npt_vat_exempt_reason = (
+                    picking.sale_id.l10npt_vat_exempt_reason
+                )
+
     license_plate = fields.Char()
     invoicexpress_id = fields.Char("InvoiceXpress ID", copy=False, readonly=True)
     invoicexpress_number = fields.Char(
@@ -108,6 +139,18 @@ class StockPicking(models.Model):
         "If not set, the shipping date will be used.",
         copy=False,
     )
+    l10npt_has_tax_exempt_lines = fields.Boolean(
+        compute="_compute_l10npt_has_tax_exempt_lines"
+    )
+    l10npt_vat_exempt_reason = fields.Many2one(
+        "account.l10n_pt.vat.exempt.reason",
+        string="VAT Exempt Reason",
+        compute="_compute_l10npt_vat_exempt_reason",
+        store=True,
+        readonly=False,
+        help="VAT exemption reason to send to InvoiceXpress when the "
+        "transport document contains exempt items.",
+    )
 
     def _send_confirmation_email(self):
         # Only send Delivery emails if the InvoiceXpress checkbox is selected
@@ -125,7 +168,7 @@ class StockPicking(models.Model):
     def _prepare_invoicexpress_lines(self):
         lines = self.move_ids_without_package.filtered("quantity")
         # Ensure Taxes are created on InvoiceXpress
-        lines.mapped("sale_line_id.tax_id").action_invoicexpress_tax_create()
+        lines.l10npt_invoicexpress_tax_id.action_invoicexpress_tax_create()
         return [line._prepare_invoicexpress_line_vals() for line in lines]
 
     def _prepare_invoicexpress_vals(self):
@@ -150,7 +193,7 @@ class StockPicking(models.Model):
 
         doctype = self.invoicexpress_doc_type
         item_vals = self._prepare_invoicexpress_lines()
-        return {
+        vals = {
             doctype: {
                 # Document date is always today
                 # "date": shipping_date.strftime("%d/%m/%Y"),
@@ -168,6 +211,9 @@ class StockPicking(models.Model):
                 "items": item_vals,
             }
         }
+        if self.l10npt_vat_exempt_reason:
+            vals[doctype]["tax_exemption"] = self.l10npt_vat_exempt_reason.code
+        return vals
 
     def _update_invoicexpress_status(self):
         inv_xpress_link_name = _("View Document")
@@ -201,6 +247,14 @@ class StockPicking(models.Model):
                         "invoicexpress_number": False,
                         "invoicexpress_permalink": False,
                     }
+                )
+
+            if (
+                delivery.l10npt_has_tax_exempt_lines
+                and not delivery.l10npt_vat_exempt_reason
+            ):
+                raise exceptions.UserError(
+                    _("A tax exemption reason must be provided.")
                 )
 
             payload = delivery._prepare_invoicexpress_vals()

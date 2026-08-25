@@ -35,6 +35,12 @@ msgid ""
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress
+#. odoo-python
+#: code:addons/l10n_pt_stock_invoicexpress/models/stock_picking.py:0
+msgid "A tax exemption reason must be provided."
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
 #: model_terms:ir.ui.view,arch_db:l10n_pt_stock_invoicexpress.view_stock_picking_form
 msgid ""
 "Are you sure you want to recreate the InvoiceXpress document? This will "
@@ -187,6 +193,11 @@ msgid "InvoiceXpress Number"
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_stock_move__l10npt_invoicexpress_tax_id
+msgid "InvoiceXpress Tax"
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
 #. odoo-python
 #: code:addons/l10n_pt_stock_invoicexpress/models/stock_picking.py:0
 msgid ""
@@ -202,6 +213,12 @@ msgstr ""
 #. module: l10n_pt_stock_invoicexpress
 #: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_stock_picking_type__invoicexpress_doc_type
 msgid "Invoicexpress Doc Type"
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_sale_order__l10npt_has_tax_exempt_lines
+#: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_stock_picking__l10npt_has_tax_exempt_lines
+msgid "L10Npt Has Tax Exempt Lines"
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress
@@ -251,6 +268,11 @@ msgid "Please set the country of the partner."
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress
+#: model:ir.model,name:l10n_pt_stock_invoicexpress.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
 #. odoo-python
 #: code:addons/l10n_pt_stock_invoicexpress/models/stock_picking.py:0
 msgid "Scheduled Date should be later than the current datetime!"
@@ -281,6 +303,11 @@ msgid "Stock Move"
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,help:l10n_pt_stock_invoicexpress.field_stock_move__l10npt_invoicexpress_tax_id
+msgid "Tax used for the InvoiceXpress transport document line."
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
 #: model:ir.model,name:l10n_pt_stock_invoicexpress.model_stock_picking
 msgid "Transfer"
 msgstr ""
@@ -296,6 +323,26 @@ msgstr ""
 msgid ""
 "Used to generate the To, Cc, Subject and Body for the InvoiceXpress email "
 "sending the Delivery document."
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_sale_order__l10npt_vat_exempt_reason
+#: model:ir.model.fields,field_description:l10n_pt_stock_invoicexpress.field_stock_picking__l10npt_vat_exempt_reason
+msgid "VAT Exempt Reason"
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,help:l10n_pt_stock_invoicexpress.field_stock_picking__l10npt_vat_exempt_reason
+msgid ""
+"VAT exemption reason to send to InvoiceXpress when the transport document "
+"contains exempt items."
+msgstr ""
+
+#. module: l10n_pt_stock_invoicexpress
+#: model:ir.model.fields,help:l10n_pt_stock_invoicexpress.field_sale_order__l10npt_vat_exempt_reason
+msgid ""
+"VAT exemption reason used on invoices and transport documents created from "
+"this sale order. Defaults from the sales journal."
 msgstr ""
 
 #. module: l10n_pt_stock_invoicexpress

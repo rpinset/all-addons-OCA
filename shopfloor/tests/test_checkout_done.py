@@ -1,13 +1,5 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-from unittest.mock import patch
-
-from werkzeug.exceptions import BadRequest
-
-from odoo.tools import mute_logger
-
-from odoo.addons.shopfloor.actions.stock import StockAction
-
 from .test_checkout_base import CheckoutCommonCase
 
 
@@ -32,31 +24,6 @@ class CheckoutDoneCase(CheckoutCommonCase):
             },
             data={"restrict_scan_first": False},
         )
-
-    @mute_logger("odoo.addons.shopfloor.services.checkout")
-    def test_done_validation_error(self):
-        picking = self._create_picking(lines=[(self.product_a, 10)])
-        self._fill_stock_for_moves(picking.move_ids, in_package=True)
-        picking.action_assign()
-        # line is done
-        picking.move_line_ids.write({"qty_picked": 10, "shopfloor_checkout_done": True})
-
-        # mock validation error in stock.validate_moves
-        validation_error_msg = "Validation error"
-        with patch.object(
-            StockAction, "validate_moves", side_effect=BadRequest(validation_error_msg)
-        ):
-            response = self.service.dispatch("done", params={"picking_id": picking.id})
-            self.assert_response(
-                response,
-                next_state="summary",
-                message={
-                    "message_type": "error",
-                    "body": f"\
-Move validation failed. 400 Bad Request: {validation_error_msg}",
-                },
-                data=self.ANY,
-            )
 
 
 class CheckoutDonePartialCase(CheckoutCommonCase):

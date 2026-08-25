@@ -708,12 +708,6 @@ msgid "Move already processed."
 msgstr ""
 
 #. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/actions/message.py:0
-msgid "Move validation failed. %s"
-msgstr ""
-
-#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__multiple_move_single_pack_is_possible
 msgid "Multiple Move Single Pack Is Possible"
 msgstr ""

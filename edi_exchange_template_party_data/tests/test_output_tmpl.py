@@ -58,5 +58,15 @@ result = {"custom_bit": foo, "baz": baz}
 
 class TestEDIBackendOutput(TestEDIBackendOutputBase):
     def test_get_party_data(self):
+        self.partner.lang = "en_US"
         data = self.tmpl_out2._get_party_data(self.record2, self.env.user.partner_id)
-        self.assertEqual(data, {"name": "OdooBot", "identifiers": [], "endpoint": {}})
+        self.assertEqual(
+            data,
+            {
+                "partner": self.env.user.partner_id,
+                "name": "OdooBot",
+                "identifiers": [],
+                "endpoint": {},
+                "lang": {"code": "en_US", "name": "English (US)", "short": "en"},
+            },
+        )

@@ -15,5 +15,30 @@ msgstr ""
 
 #. module: edi_ubl_output_base_oca
 #: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
+msgid "ACME"
+msgstr ""
+
+#. module: edi_ubl_output_base_oca
+#: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
 msgid "Moderna Produkter AB"
+msgstr ""
+
+#. module: edi_ubl_output_base_oca
+#: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
+msgid "Schweiz / Deutsch"
+msgstr ""
+
+#. module: edi_ubl_output_base_oca
+#: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
+msgid "VAT"
+msgstr ""
+
+#. module: edi_ubl_output_base_oca
+#: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
+msgid "de"
+msgstr ""
+
+#. module: edi_ubl_output_base_oca
+#: model_terms:ir.ui.view,arch_db:edi_ubl_output_base_oca.qweb_tmpl_ubl_party
+msgid "de_CH"
 msgstr ""

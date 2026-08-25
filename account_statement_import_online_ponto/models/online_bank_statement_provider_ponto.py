@@ -10,6 +10,7 @@ from operator import itemgetter
 import pytz
 
 from odoo import _, api, fields, models
+from odoo.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
 
@@ -112,6 +113,13 @@ class OnlineBankStatementProvider(models.Model):
         lines = []
         interface_model = self.env["ponto.interface"]
         access_data = interface_model._login(self.username, self.password)
+        if not self.account_number:
+            raise UserError(
+                _(
+                    "No bank account number configured for the journal '{journal}'. "
+                    "Please set the Account Number field in the journal configuration."
+                ).format(journal=self.journal_id.display_name)
+            )
         interface_model._set_access_account(access_data, self.account_number)
         latest_identifier = False
         transactions = interface_model._get_transactions(access_data, latest_identifier)

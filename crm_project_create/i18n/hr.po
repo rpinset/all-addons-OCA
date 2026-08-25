@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-08-20 14:04+0000\n"
+"PO-Revision-Date: 2026-08-24 16:46+0000\n"
 "Last-Translator: vladimiruvid <vladimir@uvid.hr>\n"
 "Language-Team: none\n"
 "Language: hr\n"
@@ -52,12 +52,12 @@ msgstr "ID"
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zadnje ažurirao"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zadnje ažurirano"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__lead_id
@@ -87,9 +87,9 @@ msgstr "Naziv projekta"
 #. module: crm_project_create
 #: model:ir.model,name:crm_project_create.model_crm_create_project
 msgid "Wizart to create Project from Lead/Opportunity"
-msgstr ""
+msgstr "Čarobnjak za stvaranje projekta iz potencijala/prilike"
 
 #. module: crm_project_create
 #: model_terms:ir.ui.view,arch_db:crm_project_create.crm_create_project_view_form
 msgid "You won't be able to edit this project after creating it"
-msgstr ""
+msgstr "Nakon stvaranja nećete moći uređivati ovaj projekt"

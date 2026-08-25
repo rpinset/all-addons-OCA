@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-08-20 14:29+0000\n"
+"PO-Revision-Date: 2026-08-24 16:46+0000\n"
 "Last-Translator: vladimiruvid <vladimir@uvid.hr>\n"
 "Language-Team: none\n"
 "Language: hr\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_lead__task_count
 msgid "#Task"
-msgstr ""
+msgstr "Broj zadataka"
 
 #. module: crm_project_task
 #: model_terms:ir.ui.view,arch_db:crm_project_task.res_config_settings_view_form
@@ -28,21 +28,23 @@ msgid ""
 "By default this project will be selected to create task from lead / "
 "opportunity"
 msgstr ""
+"Ovaj će projekt prema zadanim postavkama biti odabran za stvaranje zadatka "
+"iz potencijala / prilike"
 
 #. module: crm_project_task
 #: model_terms:ir.ui.view,arch_db:crm_project_task.wizard_crm_create_task_view_form
 msgid "Cancel"
-msgstr ""
+msgstr "Otkaži"
 
 #. module: crm_project_task
 #: model:ir.model,name:crm_project_task.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Tvrtke"
 
 #. module: crm_project_task
 #: model:ir.model,name:crm_project_task.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Postavke konfiguracije"
 
 #. module: crm_project_task
 #: model:ir.actions.act_window,name:crm_project_task.wizard_crm_create_task_action
@@ -54,12 +56,12 @@ msgstr "Kreiraj zadatak"
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Kreirao"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Kreirano"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_res_company__crm_default_project_id
@@ -70,39 +72,39 @@ msgstr "CRM projekt"
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__description
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv za prikaz"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zadnje ažurirao"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zadnje ažurirano"
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__lead_id
 #: model:ir.model.fields,field_description:crm_project_task.field_project_task__lead_id
 msgid "Lead"
-msgstr ""
+msgstr "Potencijal"
 
 #. module: crm_project_task
 #: model:ir.model,name:crm_project_task.model_crm_lead
 #: model_terms:ir.ui.view,arch_db:crm_project_task.view_task_form2_inherit_crm_project_task
 msgid "Lead/Opportunity"
-msgstr ""
+msgstr "Potencijal/prilika"
 
 #. module: crm_project_task
 #. odoo-python
@@ -110,6 +112,7 @@ msgstr ""
 msgid ""
 "Project not configured in settings, please contact with your administrator."
 msgstr ""
+"Projekt nije konfiguriran u postavkama. Obratite se svom administratoru."
 
 #. module: crm_project_task
 #: model_terms:ir.ui.view,arch_db:crm_project_task.res_config_settings_view_form
@@ -126,7 +129,7 @@ msgstr "Zadatak"
 #. odoo-python
 #: code:addons/crm_project_task/wizards/crm_create_task.py:0
 msgid "Task %s created."
-msgstr "Zakatak %a kreirano."
+msgstr "Zadatak %s je kreiran."
 
 #. module: crm_project_task
 #: model:ir.model.fields,field_description:crm_project_task.field_crm_create_task__task_name
@@ -137,7 +140,7 @@ msgstr "Naziv zadatka"
 #. odoo-python
 #: code:addons/crm_project_task/wizards/crm_create_task.py:0
 msgid "Task created from lead/opportunity %s"
-msgstr ""
+msgstr "Zadatak je stvoren iz potencijala/prilike %s"
 
 #. module: crm_project_task
 #: model_terms:ir.ui.view,arch_db:crm_project_task.inherit_crm_lead_view_form_crm_project_task
@@ -147,4 +150,4 @@ msgstr "Zadaci"
 #. module: crm_project_task
 #: model:ir.model,name:crm_project_task.model_crm_create_task
 msgid "Wizard to create task"
-msgstr ""
+msgstr "Čarobnjak za stvaranje zadatka"

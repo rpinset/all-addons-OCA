@@ -5,6 +5,7 @@
             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
         >
+            <t t-set="partner" t-value="partner or party.partner" />
             <cac:Party>
                 <t t-if="party.endpoint">
                     <cbc:EndpointID
@@ -23,6 +24,34 @@
                 <cac:PartyName t-if="party.name">
                     <cbc:Name t-esc="party.name">Moderna Produkter AB</cbc:Name>
                 </cac:PartyName>
+                <cac:Language t-if="party.lang">
+                    <cbc:ID t-esc="party.lang.short">de</cbc:ID>
+                    <cbc:Name t-esc="party.lang.name">Schweiz / Deutsch</cbc:Name>
+                    <cbc:LocaleCode t-esc="party.lang.code">de_CH</cbc:LocaleCode>
+                </cac:Language>
+
+                <cac:PostalAddress t-if="show_full_address">
+                    <t t-call="edi_ubl_output_base_oca.qweb_tmpl_ubl_address" />
+                </cac:PostalAddress>
+                <cac:PartyTaxScheme t-if="show_tax_scheme and partner.vat">
+                    <cbc:CompanyID t-esc="partner.vat" />
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:PartyTaxScheme>
+                <cac:PartyLegalEntity t-if="show_legal_entity">
+                    <cbc:RegistrationName
+                        t-esc="partner.name"
+                    >ACME</cbc:RegistrationName>
+                    <cac:RegistrationAddress>
+                        <t t-call="edi_ubl_output_base_oca.qweb_tmpl_ubl_address" />
+                    </cac:RegistrationAddress>
+                </cac:PartyLegalEntity>
+                <cac:Contact t-if="show_contact">
+                    <cbc:Name t-if="partner.name" t-esc="partner.name" />
+                    <cbc:Telephone t-if="partner.phone" t-esc="partner.phone" />
+                    <cbc:ElectronicMail t-if="partner.email" t-esc="partner.email" />
+                </cac:Contact>
             </cac:Party>
         </t>
     </template>

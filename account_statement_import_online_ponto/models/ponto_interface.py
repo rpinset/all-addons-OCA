@@ -79,18 +79,37 @@ class PontoInterface(models.AbstractModel):
             timeout=60,
         )
         data = self._get_response_data(response)
+        ponto_ibans = []
         for ponto_account in data.get("data", []):
             ponto_iban = sanitize_account_number(
                 ponto_account.get("attributes", {}).get("reference", "")
             )
+            ponto_ibans.append(ponto_iban)
             if ponto_iban == account_number:
                 access_data["ponto_account"] = ponto_account.get("id")
                 return
         # If we get here, we did not find Ponto account for bank account.
+        if not ponto_ibans:
+            raise UserError(
+                _(
+                    "Ponto configuration error: "
+                    "No accounts found in your Ponto integration.\n\n"
+                    "Please add at least one account to your Custom Integration at "
+                    "https://myponto.com/"
+                )
+            )
         raise UserError(
             _(
-                "Ponto : wrong configuration, account {account} not found in {data}"
-            ).format(account=account_number, data=data)
+                "Ponto configuration error: "
+                "Odoo bank account number '{account}' not found in Ponto accounts.\n\n"
+                "Available Ponto accounts:\n{ponto_ibans}\n\n"
+                "Please verify that:\n"
+                "1. The Account Number in Odoo matches a Ponto account reference\n"
+                "2. The account is added to your Ponto integration\n"
+            ).format(
+                account=account_number,
+                ponto_ibans="\n".join(f"  - {iban}" for iban in ponto_ibans),
+            )
         )
 
     def _get_transactions(self, access_data, last_identifier):

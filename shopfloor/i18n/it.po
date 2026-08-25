@@ -816,12 +816,6 @@ msgid "Move already processed."
 msgstr "Mvimento già elaborato."
 
 #. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/actions/message.py:0
-msgid "Move validation failed. %s"
-msgstr "Validazione movimento fallita. %s"
-
-#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__multiple_move_single_pack_is_possible
 msgid "Multiple Move Single Pack Is Possible"
 msgstr "È possibile avere movimenti multipli per singolo pacco"
@@ -2270,6 +2264,9 @@ msgstr "Prelievo per area"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
+
+#~ msgid "Move validation failed. %s"
+#~ msgstr "Validazione movimento fallita. %s"
 
 #~ msgid "The split order {} has been created."
 #~ msgstr "L'ordine suddiviso {} è stato creato."

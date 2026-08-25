@@ -431,12 +431,6 @@ class MessageAction(Component):
             "body": _("Transfer {} is not available.").format(picking.name),
         }
 
-    def move_validation_failed(self, exception):
-        return {
-            "message_type": "error",
-            "body": _("Move validation failed. %s") % str(exception),
-        }
-
     def line_has_package_scan_package(self):
         return {
             "message_type": "warning",
