@@ -3,6 +3,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import logging
+from copy import deepcopy
+from unittest.mock import patch
 
 from odoo import Command
 from odoo.tests import tagged
@@ -507,7 +509,7 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
 
     def test_15_diff_note_commands_count_mismatch(self):
         """When template and DB disagree on the number of repartition lines,
-        the detail surfaces `N record(s) → M record(s)` rather than a
+        the detail surfaces `N record(s) to be created` rather than a
         per-line breakdown."""
         wizard = self.wizard_obj.with_company(self.company).create(self.wizard_vals)
         tax = self._get_record_for_xml_id("sale_tax_template")
@@ -522,7 +524,7 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
             [("model", "=", "account.tax"), ("name", "=", "repartition_line_ids")]
         )
         note = wizard.diff_notes(trimmed, tax)
-        self.assertRegex(note, r"\d+ record\(s\) → \d+ record\(s\)")
+        self.assertRegex(note, r"\d+ record\(s\) to be created")
 
     def test_16_m2m_command_link_branch(self):
         """Drift must be detected when the template value is expressed with
@@ -653,70 +655,6 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         )
         self.assertIn(f"tag_ids [∅] → [{tag.display_name}]", detail)
 
-    def test_20_diff_note_commands_branches(self):
-        """`_diff_note_commands` counts SET/LINK/CREATE correctly and picks
-        the right branch: count mismatch, per-line detail, or generic
-        fallback."""
-        wizard = self.wizard_obj.with_company(self.company).create(self.wizard_vals)
-        tax = self._get_record_for_xml_id("sale_tax_template")
-        field = tax._fields["repartition_line_ids"]
-        actual = tax.repartition_line_ids
-        # SET branch — expected_count = len(cmd[2]); DB has 4 lines, template says 8.
-        synthetic = [
-            999_001,
-            999_002,
-            999_003,
-            999_004,
-            999_005,
-            999_006,
-            999_007,
-            999_008,
-        ]
-        result = wizard._diff_note_commands(field, actual, [Command.set(synthetic)])
-        self.assertEqual(
-            result,
-            f"{len(actual)} record(s) → {len(synthetic)} record(s)",
-        )
-        # LINK branch — two LINK commands count as 2 (so count mismatch again).
-        result = wizard._diff_note_commands(
-            field, actual, [Command.link(999_001), Command.link(999_002)]
-        )
-        self.assertIn(f"{len(actual)} record(s) → 2 record(s)", result)
-        # CREATE branch with same count and a real sub-diff → per-line format.
-        # Build a template with the same count as actual but with a drifted
-        # factor_percent on the first line.
-        template_lines = [
-            Command.create(
-                {
-                    "repartition_type": r.repartition_type,
-                    "document_type": r.document_type,
-                    "factor_percent": r.factor_percent,
-                }
-            )
-            for r in actual
-        ]
-        # Flip factor_percent on the first line from 100 → 42 to force drift.
-        template_lines[0][2]["factor_percent"] = 42.0
-        result = wizard._diff_note_commands(field, actual, template_lines)
-        self.assertIn("#1:", result)
-        self.assertIn("factor_percent", result)
-        # Same count, no drift at all → generic fallback message.
-        template_lines_nodiff = [
-            Command.create(
-                {
-                    "repartition_type": r.repartition_type,
-                    "document_type": r.document_type,
-                    "factor_percent": r.factor_percent,
-                }
-            )
-            for r in actual
-        ]
-        result = wizard._diff_note_commands(field, actual, template_lines_nodiff)
-        self.assertEqual(
-            result,
-            f"{len(actual)} record(s) → differs from template",
-        )
-
     def test_21_diff_note_m2o_branches(self):
         """`_diff_note_m2o` renders actual/expected display names whether
         the template value is an xmlid string, an int database id, or
@@ -763,19 +701,20 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         actual = tax.repartition_line_ids
         self.assertGreaterEqual(len(actual), 4)
         # Build a template that flips factor_percent on every line → 4+
-        # differing sub-records, but the renderer should only list 3.
+        # differing sub-records, and the renderer list all of them.
         template_lines = [
-            Command.create(
+            Command.update(
+                r.id,
                 {
                     "repartition_type": r.repartition_type,
                     "document_type": r.document_type,
                     "factor_percent": (r.factor_percent or 0) + 1,
-                }
+                },
             )
             for r in actual
         ]
         result = wizard._diff_note_commands(field, actual, template_lines)
-        self.assertEqual(result.count("#"), 3)
+        self.assertEqual(result.count("#"), 4)
 
     def test_23_account_group_code_prefix_end_drift_note(self):
         """When the template's code_prefix_end differs from the DB, the
@@ -1144,3 +1083,54 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         note = wizard.diff_notes(record_values, fp)
         self.assertIn("[fr]", note)
         self.assertIn("Note légale attendue", note)
+
+    def test_31_update_inactive_tax(self):
+        """Deactive a tax that is part of a m2m in other tax to check that is not
+        detected as a change, and to check that the inactive tax is updated.
+        """
+        tax = self._get_record_for_xml_id("sale_tax_template")
+        official_name = tax.name
+        tax.name = "Test 1 tax name changed"
+        tax.active = False
+        wizard = self.wizard_obj.with_company(self.company).create(self.wizard_vals)
+        wizard.action_find_records()
+        # 0% export shouldn't count as updated due to the field `original_tax_ids` not
+        # finding the inactive m2m element
+        self.assertEqual(len(wizard.tax_ids), 1)
+        self.assertEqual(wizard.tax_ids.update_tax_id, tax)
+        self.assertEqual(wizard.tax_ids.type, "updated")
+        wizard.action_update_records()
+        self.assertEqual(wizard.updated_taxes, 1)
+        # The update is done even if the record is inactive
+        self.assertEqual(tax.name, official_name)
+
+    def test_32_update_m2m_with_inactive_tax(self):
+        """Patch the CoA to have a tax deactived, and removed from the m2m of other tax:
+        it should be detected and removed on update even if inactive.
+        """
+        # Patch the CoA to return the sales tax as inactive
+        patcher = patch(
+            "odoo.addons.account.models.chart_template.AccountChartTemplate."
+            "_get_chart_template_data",
+        )
+        mock = patcher.start()
+        patched_coa = deepcopy(self.chart_template_data)
+        patched_coa["account.tax"]["sale_tax_template"]["active"] = False
+        del patched_coa["account.tax"]["sale_export_tax_template"]["original_tax_ids"]
+        mock.return_value = patched_coa
+        # Honor the deactivation of the sales tax and remove it from export tax m2m
+        tax = self._get_record_for_xml_id("sale_tax_template")
+        tax.active = False
+        export_tax = self._get_record_for_xml_id(
+            "sale_export_tax_template"
+        ).with_context(active_test=False)
+        # Do the update and check
+        wizard = self.wizard_obj.with_company(self.company).create(self.wizard_vals)
+        wizard.action_find_records()
+        self.assertEqual(len(wizard.tax_ids), 1)
+        self.assertEqual(wizard.tax_ids.update_tax_id, export_tax)
+        self.assertEqual(wizard.tax_ids.type, "updated")
+        wizard.action_update_records()
+        self.assertEqual(wizard.updated_taxes, 1)
+        self.assertFalse(export_tax.original_tax_ids)
+        patcher.stop()

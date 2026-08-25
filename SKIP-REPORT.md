@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-08-23 21:43 UTC
+Generated 2026-08-25 04:12 UTC
 
-Total skipped: **138**
+Total skipped: **137**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **113**
+Count: **112**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -68,7 +68,6 @@ Count: **113**
 | [dms](https://github.com/OCA/dms) | [19.0](https://github.com/OCA/dms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | [19.0](https://github.com/OCA/donation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | [19.0](https://github.com/OCA/dotnet/tree/19.0) | No directory with __manifest__.py at repo root |
-| [e-learning](https://github.com/OCA/e-learning) | [19.0](https://github.com/OCA/e-learning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | [19.0](https://github.com/OCA/hr-expense/tree/19.0) | No directory with __manifest__.py at repo root |

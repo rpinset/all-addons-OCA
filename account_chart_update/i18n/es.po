@@ -20,13 +20,7 @@ msgstr ""
 #. module: account_chart_update
 #. odoo-python
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(actual)s record(s) → %(expected)s record(s)"
-msgstr ""
-
-#. module: account_chart_update
-#. odoo-python
-#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(n)s record(s) → differs from template"
+msgid "%s record(s) to be created."
 msgstr ""
 
 #. module: account_chart_update

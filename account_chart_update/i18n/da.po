@@ -22,14 +22,8 @@ msgstr ""
 #. module: account_chart_update
 #. odoo-python
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(actual)s record(s) → %(expected)s record(s)"
-msgstr "%(actual)s post(er) → %(expected)s post(er)"
-
-#. module: account_chart_update
-#. odoo-python
-#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(n)s record(s) → differs from template"
-msgstr "%(n)s post(er) → afviger fra skabelon"
+msgid "%s record(s) to be created."
+msgstr ""
 
 #. module: account_chart_update
 #. odoo-python
@@ -315,8 +309,8 @@ msgid ""
 "amount)"
 msgstr ""
 "Hvis du beholder disse indstillinger, vil guiden ikke blot oprette nye "
-"poster, men også opdatere poster med ændringer (dvs. forskelligt skattebeløb)"
-"."
+"poster, men også opdatere poster med ændringer (dvs. forskelligt "
+"skattebeløb)."
 
 #. module: account_chart_update
 #: model:ir.model.fields,field_description:account_chart_update.field_wizard_account_group_matching__write_uid
@@ -775,6 +769,12 @@ msgstr "Xml"
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
 msgid "none"
 msgstr "ingen"
+
+#~ msgid "%(actual)s record(s) → %(expected)s record(s)"
+#~ msgstr "%(actual)s post(er) → %(expected)s post(er)"
+
+#~ msgid "%(n)s record(s) → differs from template"
+#~ msgstr "%(n)s post(er) → afviger fra skabelon"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Sidst ændret den"

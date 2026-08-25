@@ -22,14 +22,8 @@ msgstr ""
 #. module: account_chart_update
 #. odoo-python
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(actual)s record(s) → %(expected)s record(s)"
-msgstr "%(actual)s post(er) → %(expected)s post(er)"
-
-#. module: account_chart_update
-#. odoo-python
-#: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
-msgid "%(n)s record(s) → differs from template"
-msgstr "%(n)s post(er) → skiljer sig från mallen"
+msgid "%s record(s) to be created."
+msgstr ""
 
 #. module: account_chart_update
 #. odoo-python
@@ -780,6 +774,12 @@ msgstr "Xml"
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
 msgid "none"
 msgstr "ingen"
+
+#~ msgid "%(actual)s record(s) → %(expected)s record(s)"
+#~ msgstr "%(actual)s post(er) → %(expected)s post(er)"
+
+#~ msgid "%(n)s record(s) → differs from template"
+#~ msgstr "%(n)s post(er) → skiljer sig från mallen"
 
 #~ msgid "Differences in these fields: %s."
 #~ msgstr "Skillnader i dessa fält: %s."

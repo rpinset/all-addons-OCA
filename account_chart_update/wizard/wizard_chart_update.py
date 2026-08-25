@@ -5,9 +5,9 @@
 # Copyright 2015 Tecnativa - Antonio Espinosa
 # Copyright 2016 Tecnativa - Jairo Llopis
 # Copyright 2016 Jacques-Etienne Baudoux <je@bcim.be>
-# Copyright 2018 Tecnativa - Pedro M. Baeza
 # Copyright 2020 Noviat - Luc De Meyer
 # Copyright 2024-2025 Tecnativa - Víctor Martínez
+# Copyright 2018,2026 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import logging
@@ -17,6 +17,28 @@ from odoo import Command, api, fields, models, tools
 from odoo.tools.translate import TranslationImporter
 
 _logger = logging.getLogger(__name__)
+
+
+# One2many fields that should be checked in the update
+O2M_FIELDS_EXCEPTION = {
+    "account.tax": ["repartition_line_ids"],
+    "account.fiscal.position": ["account_ids"],
+}
+# Fields that can be checked, but are not marked by default
+UNCHECKED_FIELDS = {
+    "account.fiscal.position": ["sequence"],
+}
+# For one2many records that require matching by keys, specify them here
+O2M_MATCH_KEYS = {
+    "account.tax": {
+        "repartition_line_ids": [
+            "document_type",
+            "factor_percent",
+            "repartition_type",
+            "account_id",
+        ],
+    }
+}
 
 
 # HACK https://github.com/odoo/odoo/pull/234333
@@ -153,35 +175,45 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         comodel_name="ir.model.fields",
         relation="wizard_update_charts_tax_group_fields_rel",
         string="Tax group fields",
-        domain=lambda self: self._domain_tax_group_field_ids(),
+        domain=lambda self: [
+            ("id", "in", self._get_fields_per_model("account.tax.group").ids)
+        ],
         default=lambda self: self._default_tax_group_field_ids(),
     )
     tax_field_ids = fields.Many2many(
         comodel_name="ir.model.fields",
         relation="wizard_update_charts_tax_fields_rel",
         string="Tax fields",
-        domain=lambda self: self._domain_tax_field_ids(),
+        domain=lambda self: [
+            ("id", "in", self._get_fields_per_model("account.tax").ids)
+        ],
         default=lambda self: self._default_tax_field_ids(),
     )
     account_field_ids = fields.Many2many(
         comodel_name="ir.model.fields",
         relation="wizard_update_charts_account_fields_rel",
         string="Account fields",
-        domain=lambda self: self._domain_account_field_ids(),
+        domain=lambda self: [
+            ("id", "in", self._get_fields_per_model("account.account").ids)
+        ],
         default=lambda self: self._default_account_field_ids(),
     )
     account_group_field_ids = fields.Many2many(
         comodel_name="ir.model.fields",
         relation="wizard_update_charts_account_group_fields_rel",
         string="Account groups fields",
-        domain=lambda self: self._domain_account_group_field_ids(),
+        domain=lambda self: [
+            ("id", "in", self._get_fields_per_model("account.group").ids)
+        ],
         default=lambda self: self._default_account_group_field_ids(),
     )
     fp_field_ids = fields.Many2many(
         comodel_name="ir.model.fields",
         relation="wizard_update_charts_fp_fields_rel",
         string="Fiscal position fields",
-        domain=lambda self: self._domain_fp_field_ids(),
+        domain=lambda self: [
+            ("id", "in", self._get_fields_per_model("account.fiscal.position").ids)
+        ],
         default=lambda self: self._default_fp_field_ids(),
     )
     tax_group_matching_ids = fields.One2many(
@@ -215,89 +247,55 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         default=lambda self: self._default_fp_matching_ids(),
     )
 
-    def _domain_per_name(self, name):
+    @api.model
+    def _get_fields_per_model(self, model):
+        """Unified method that retrieves the elegible fields per each model. Used for
+        filling the per field selection in the wizard.
+        """
+        domain = [
+            ("model", "=", model),
+            ("name", "not in", tuple(self.fields_to_ignore(model))),
+            ("related", "=", False),
+        ]
+        o2m_exceptions = O2M_FIELDS_EXCEPTION.get(model, [])
+        extra_domain = [("ttype", "!=", "one2many")]
+        if o2m_exceptions:
+            extra_domain = ["|"] + extra_domain + [("name", "in", o2m_exceptions)]
+        fields = self.env["ir.model.fields"].search(domain + extra_domain)
+        # Filter fields that are computed readonly
+        obj = self.env[model]
+        fields = fields.filtered(
+            lambda x, obj=obj: x.name not in obj._fields
+            or not obj._fields[x.name].compute
+            or not obj._fields[x.name].readonly
+        )
+        return fields
+
+    @api.model
+    def _get_default_per_model(self, model):
+        """Unified method called by each default method of the field selection
+        m2m that gets the fields by model and exclude the unchecked ones.
+        """
         return [
-            ("model", "=", name),
-            ("name", "not in", tuple(self.fields_to_ignore(name))),
-        ]
-
-    def _domain_tax_group_field_ids(self):
-        return self._domain_per_name("account.tax.group") + [
-            ("ttype", "!=", "one2many")
-        ]
-
-    def _domain_tax_field_ids(self):
-        # Allow specific o2m fields critical for comparison
-        # (repartition_line_ids) but exclude other o2m
-        return self._domain_per_name("account.tax") + [
-            "|",
-            ("ttype", "!=", "one2many"),
-            (
-                "name",
-                "in",
-                [
-                    "repartition_line_ids",
-                ],
-            ),
-        ]
-
-    def _domain_account_field_ids(self):
-        return self._domain_per_name("account.account") + [("ttype", "!=", "one2many")]
-
-    def _domain_account_group_field_ids(self):
-        return self._domain_per_name("account.group") + [("ttype", "!=", "one2many")]
-
-    def _domain_fp_field_ids(self):
-        return self._domain_per_name("account.fiscal.position") + [
-            "|",
-            ("ttype", "!=", "one2many"),
-            ("name", "in", ["account_ids"]),
+            Command.link(x.id)
+            for x in self._get_fields_per_model(model)
+            if x.name not in UNCHECKED_FIELDS.get(model, [])
         ]
 
     def _default_tax_group_field_ids(self):
-        return [
-            Command.link(x.id)
-            for x in self.env["ir.model.fields"].search(
-                self._domain_tax_group_field_ids()
-                + self.get_uncheck_fields_domain("account.tax.group"),
-            )
-        ]
+        return self._get_default_per_model("account.tax.group")
 
     def _default_tax_field_ids(self):
-        return [
-            Command.link(x.id)
-            for x in self.env["ir.model.fields"].search(
-                self._domain_tax_field_ids()
-                + self.get_uncheck_fields_domain("account.tax"),
-            )
-        ]
+        return self._get_default_per_model("account.tax")
 
     def _default_account_field_ids(self):
-        return [
-            Command.link(x.id)
-            for x in self.env["ir.model.fields"].search(
-                self._domain_account_field_ids()
-                + self.get_uncheck_fields_domain("account.account"),
-            )
-        ]
+        return self._get_default_per_model("account.account")
 
     def _default_account_group_field_ids(self):
-        return [
-            Command.link(x.id)
-            for x in self.env["ir.model.fields"].search(
-                self._domain_account_group_field_ids()
-                + self.get_uncheck_fields_domain("account.group")
-            )
-        ]
+        return self._get_default_per_model("account.group")
 
     def _default_fp_field_ids(self):
-        return [
-            Command.link(x.id)
-            for x in self.env["ir.model.fields"].search(
-                self._domain_fp_field_ids()
-                + self.get_uncheck_fields_domain("account.fiscal.position")
-            )
-        ]
+        return self._get_default_per_model("account.fiscal.position")
 
     def _get_matching_ids(self, model_name, ordered_opts):
         vals = []
@@ -562,22 +560,6 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         return set(models.MAGIC_COLUMNS) | specials
 
     @api.model
-    def get_default_unchecked_fields(self, name):
-        """Get fields that should be unchecked by default for a given model.
-
-        :param str name: The name of the template model.
-        :return set: Fields to uncheck by default.
-        """
-        unchecked_mapping = {
-            "account.fiscal.position": {"sequence"},
-        }
-        return unchecked_mapping.get(name, set())
-
-    def get_uncheck_fields_domain(self, name):
-        unchecked_fields = list(self.get_default_unchecked_fields(name))
-        return [("name", "not in", unchecked_fields)]
-
-    @api.model
     def diff_fields(self, record_values, real):  # noqa: C901
         """Get fields that are different in record values and real records.
 
@@ -592,6 +574,7 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         result = dict()
         ignore = self.fields_to_ignore(real._name)
         field_mapping = {
+            "account.tax.group": self.tax_group_field_ids,
             "account.tax": self.tax_field_ids,
             "account.account": self.account_field_ids,
             "account.group": self.account_group_field_ids,
@@ -601,9 +584,7 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         # If the fields to be queried are not mapped, use all of them
         # (example: account.tax.repartition.line).
         if real._name not in field_mapping:
-            field_mapping[real._name] = self.env["ir.model.fields"].search(
-                self._domain_per_name(real._name)
-            )
+            field_mapping[real._name] = self._get_fields_per_model(real._name)
         fields_by_key = {x.name: x for x in field_mapping[real._name]}
         to_include = field_mapping[real._name].mapped("name")
         for key in record_values.keys():
@@ -678,21 +659,38 @@ class WizardUpdateChartsAccounts(models.TransientModel):
                     result[key] = record_value
                 continue
             elif field.ttype == "one2many":
+                match_keys = O2M_MATCH_KEYS.get(field.model, {}).get(field.name, [])
+                if match_keys:
+                    real_value = real_value.sorted(",".join(match_keys))
+
+                    def match_cmp(n, match_keys, field):
+                        vals = []
+                        for key in match_keys:
+                            val = n[2].get(key, False)
+                            subfield = self.env[field.relation]._fields[key]
+                            if val and subfield.type == "many2one":
+                                val = self.env.ref(
+                                    f"account.{self.company_id.id}_{val}", False
+                                )
+                            vals.append(val)
+                        return vals
+
+                    # We assume we will find only 0 commands (CREATE)
+                    record_value = sorted(
+                        record_value,
+                        key=lambda n, match_keys=match_keys, field=field: match_cmp(
+                            n, match_keys, field
+                        ),
+                    )
                 if len(record_value) != len(real_value):
+                    # TODO: Try to add only missing ones
                     result[key] = [(5, 0, 0)] + record_value
                 else:
-                    for key2, record_value_item in enumerate(record_value):
-                        res_item = self.diff_fields(
-                            record_value_item[2], real_value[key2]
-                        )
-                        if len(res_item) > 0:
-                            # Something has changed in an element, we change everything
-                            # just in case (we do not know for sure that the record we
-                            # are consulting by key is the correct one, for example,
-                            # if it has been deleted by mistake and created again in
-                            # the same way).
-                            result[key] = [(5, 0, 0)] + record_value
-                            break
+                    for i, record_value_item in enumerate(record_value):
+                        res_item = self.diff_fields(record_value_item[2], real_value[i])
+                        if res_item:
+                            result.setdefault(key, [])
+                            result[key].append((1, real_value[i].id, res_item))
                 continue
             # Define correct value if field is translatable
             if field.translate:
@@ -884,40 +882,24 @@ class WizardUpdateChartsAccounts(models.TransientModel):
 
     def _diff_note_commands(self, field, actual, expected_raw):
         """Detail string for an m2m/o2m whose template value is a command list."""
-        actual_count = len(actual)
-        expected_count = 0
-        for cmd in (c for c in expected_raw if isinstance(c, list | tuple) and c):
-            if cmd[0] in (0, 4):  # CREATE / LINK
-                expected_count += 1
-            elif cmd[0] == 6 and len(cmd) >= 3:  # SET
-                expected_count += len(cmd[2])
-        if actual_count != expected_count:
-            return self.env._(
-                "%(actual)s record(s) → %(expected)s record(s)",
-                actual=actual_count,
-                expected=expected_count,
-            )
         sub_diffs = []
-        for idx, cmd in (
-            (i, c)
-            for i, c in enumerate(expected_raw[:actual_count])
-            if isinstance(c, list | tuple) and len(c) >= 3 and isinstance(c[2], dict)
-        ):
+        to_create = len([x for x in expected_raw if x[0] == 0])
+        if to_create:
+            sub_diffs += [self.env._("%s record(s) to be created.", to_create)]
+        for cmd in expected_raw:
+            if cmd[0] != 1:
+                continue
+            record = actual.filtered(lambda x, rec_id=cmd[1]: x.id == rec_id)
             sub_diff = self.with_context(skip_translation_keys=True).diff_fields(
-                cmd[2], actual[idx]
+                cmd[2], record
             )
             diff_keys = sorted(k for k in sub_diff if k != "__translation_module__")
             if diff_keys:
-                detail = self._diff_note_sub_detail(cmd[2], actual[idx], diff_keys)
-                sub_diffs.append(f"#{idx + 1}: {detail}")
-            if len(sub_diffs) >= 3:
-                break
+                detail = self._diff_note_sub_detail(cmd[2], record, diff_keys)
+                sub_diffs.append(f"#{cmd[1]}: {detail}")
         if sub_diffs:
             return "\n    " + "\n    ".join(sub_diffs)
-        return self.env._(
-            "%(n)s record(s) → differs from template",
-            n=actual_count,
-        )
+        return ""
 
     def _diff_note_m2x(self, field, actual, expected_raw):
         """Detail string for an m2m/o2m field."""
@@ -1040,8 +1022,8 @@ class WizardUpdateChartsAccounts(models.TransientModel):
                 )
                 record = self.env.ref(full_xmlid, raise_if_not_found=False)
                 if record:
-                    # To read company-dependent fields correctly
-                    return record.with_company(company)
+                    # To read company-dependent fields correctly & m2m inactive records
+                    return record.with_company(company).with_context(active_test=False)
             else:
                 f_name = matching.matching_value
                 if not data.get(f_name):
@@ -1337,12 +1319,15 @@ class WizardUpdateChartsAccounts(models.TransientModel):
 
     def _load_data(self, model, data):
         """Process similar to the one in chart template _load() method."""
+        if not data:
+            return
         template = self.env["account.chart.template"].with_context(
             default_company_id=self.company_id.id,
             allowed_company_ids=[self.company_id.id],
             tracking_disable=True,
             delay_account_group_sync=True,
             lang="en_US",
+            active_test=False,
         )
         model_fields = set(self.env[model]._fields)
         filtered_data = {
@@ -1353,6 +1338,8 @@ class WizardUpdateChartsAccounts(models.TransientModel):
             }
             for xml_id, vals in data.items()
         }
+        if not filtered_data:
+            return
         created_records = template._load_data({model: filtered_data})[model]
         # Make sure all translation data is indexed by XML ID
         translation_data = {}
@@ -1403,7 +1390,7 @@ class WizardUpdateChartsAccounts(models.TransientModel):
         # First create taxes in batch
         data = {}
         for wiz_tax in self.tax_ids:
-            tax = wiz_tax.update_tax_id
+            tax = wiz_tax.update_tax_id.with_context(active_test=False)
             if wiz_tax.type == "deleted":
                 tax.active = False
                 _logger.info(self.env._("Deactivated tax %s."), tax.name)

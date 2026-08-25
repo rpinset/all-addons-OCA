@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-08-23 21:43 UTC
+Generated 2026-08-25 04:12 UTC
 
 ## Skipped repos
 
@@ -37,7 +37,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [dms](https://github.com/OCA/dms) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
-| [e-learning](https://github.com/OCA/e-learning) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
 | [hr-expense](https://github.com/OCA/hr-expense) | `no_module` | No directory with __manifest__.py at repo root |

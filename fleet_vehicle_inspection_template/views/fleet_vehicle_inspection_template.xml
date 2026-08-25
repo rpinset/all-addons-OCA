@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2021 to TODAY, Marcel Savegnago - Escodoo
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="fleet_vehicle_inspection_template_form_view">
+        <field
+            name="name"
+        >fleet.vehicle.inspection.template.form (in fleet_vehicle_inspection_template)</field>
+        <field name="model">fleet.vehicle.inspection.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <header />
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="name" />
+                    </group>
+                    <notebook>
+                        <page
+                            string="Inspection Template Lines"
+                            name="inspection_template_lines"
+                        >
+                            <field name="inspection_template_line_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle" />
+                                    <field
+                                        name="inspection_template_item_id"
+                                        string="Inspection Template Line"
+                                    />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Notes" name="notes_information">
+                            <field name="note" />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="fleet_vehicle_inspection_template_search_view">
+        <field
+            name="name"
+        >fleet.vehicle.inspection.template.search (in fleet_vehicle_inspection_template)</field>
+        <field name="model">fleet.vehicle.inspection.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="fleet_vehicle_inspection_template_tree_view">
+        <field
+            name="name"
+        >fleet.vehicle.inspection.template.tree (in fleet_vehicle_inspection_template)</field>
+        <field name="model">fleet.vehicle.inspection.template</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+            </list>
+        </field>
+    </record>
+    <record
+        model="ir.actions.act_window"
+        id="fleet_vehicle_inspection_template_act_window"
+    >
+        <field name="name">Inspection Template</field>
+        <field name="res_model">fleet.vehicle.inspection.template</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record model="ir.ui.menu" id="fleet_vehicle_inspection_template_menu">
+        <field name="name">Inspection Template</field>
+        <field name="parent_id" ref="fleet.fleet_configuration" />
+        <field name="action" ref="fleet_vehicle_inspection_template_act_window" />
+        <field name="sequence" eval="16" />
+    </record>
+</odoo>
