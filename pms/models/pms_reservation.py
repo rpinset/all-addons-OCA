@@ -3,7 +3,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 import datetime
 import logging
-import time
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
@@ -833,27 +832,25 @@ class PmsReservation(models.Model):
     @api.depends("checkin", "arrival_hour")
     def _compute_checkin_datetime(self):
         for reservation in self:
-            checkin_hour = int(reservation.arrival_hour[0:2])
-            checkin_minut = int(reservation.arrival_hour[3:5])
-            checkin_time = datetime.time(checkin_hour, checkin_minut)
-            checkin_datetime = datetime.datetime.combine(
-                reservation.checkin, checkin_time
-            )
+            if not reservation.checkin or not reservation.arrival_hour:
+                reservation.checkin_datetime = False
+                continue
             reservation.checkin_datetime = (
-                reservation.pms_property_id.date_property_timezone(checkin_datetime)
+                reservation.pms_property_id.datetime_from_hour_str(
+                    reservation.checkin, reservation.arrival_hour
+                )
             )
 
     @api.depends("checkout", "departure_hour")
     def _compute_checkout_datetime(self):
         for reservation in self:
-            checkout_hour = int(reservation.departure_hour[0:2])
-            checkout_minut = int(reservation.departure_hour[3:5])
-            checkout_time = datetime.time(checkout_hour, checkout_minut)
-            checkout_datetime = datetime.datetime.combine(
-                reservation.checkout, checkout_time
-            )
+            if not reservation.checkout or not reservation.departure_hour:
+                reservation.checkout_datetime = False
+                continue
             reservation.checkout_datetime = (
-                reservation.pms_property_id.date_property_timezone(checkout_datetime)
+                reservation.pms_property_id.datetime_from_hour_str(
+                    reservation.checkout, reservation.departure_hour
+                )
             )
 
     @api.depends(
@@ -1438,23 +1435,27 @@ class PmsReservation(models.Model):
             else:
                 record.shared_folio = False
 
+    # NOTE: no dependency on folio_id.partner_name on purpose: a recompute
+    # triggered by a folio rename cannot see the reservation's own stored
+    # partner_name (the cache is invalidated), so it would overwrite the
+    # guest names. Folio renames are propagated from pms.folio.write()
+    # instead, only to the reservations that inherited the folio name.
     @api.depends(
         "partner_id",
         "partner_id.name",
         "agency_id",
         "reservation_type",
         "out_service_description",
-        "folio_id.partner_name",
     )
     def _compute_partner_name(self):
         for record in self:
             if record.partner_id and record.partner_id != record.agency_id:
                 record.partner_name = record.partner_id.name
-            if (record.folio_id and not record.partner_name) or (
-                record.folio_id
-                and record.folio_id.partner_name
-                and record.folio_id.partner_name != record.partner_name
-            ):
+            elif not record.partner_name and record.folio_id.partner_name:
+                # Fall back to the folio holder only when the reservation has
+                # no guest name of its own: on group/company folios the folio
+                # is held by the company while each reservation keeps the
+                # name of its occupant, which must not be overwritten.
                 record.partner_name = record.folio_id.partner_name
             elif record.agency_id and not record.partner_name:
                 # if the customer not is the agency but we dont know the customer's
@@ -1852,28 +1853,28 @@ class PmsReservation(models.Model):
 
     @api.constrains("arrival_hour")
     def _check_arrival_hour(self):
+        pms_property = self.env["pms.property"]
         for record in self:
-            if record.arrival_hour:
-                try:
-                    time.strptime(record.arrival_hour, "%H:%M")
-                except ValueError as err:
-                    raise ValidationError(
-                        _("Format Arrival Hour (HH:MM) Error: %s", record.arrival_hour)
-                    ) from err
+            if record.arrival_hour and not pms_property.is_valid_hour_str(
+                record.arrival_hour
+            ):
+                raise ValidationError(
+                    _("Format Arrival Hour (HH:MM) Error: %s", record.arrival_hour)
+                )
 
     @api.constrains("departure_hour")
     def _check_departure_hour(self):
+        pms_property = self.env["pms.property"]
         for record in self:
-            if record.departure_hour:
-                try:
-                    time.strptime(record.departure_hour, "%H:%M")
-                except ValueError as err:
-                    raise ValidationError(
-                        _(
-                            "Format Departure Hour (HH:MM) Error: %s",
-                            record.departure_hour,
-                        )
-                    ) from err
+            if record.departure_hour and not pms_property.is_valid_hour_str(
+                record.departure_hour
+            ):
+                raise ValidationError(
+                    _(
+                        "Format Departure Hour (HH:MM) Error: %s",
+                        record.departure_hour,
+                    )
+                )
 
     @api.constrains("agency_id")
     def _no_agency_as_agency(self):
@@ -2057,7 +2058,12 @@ class PmsReservation(models.Model):
             if vals.get("folio_id"):
                 folio = self.env["pms.folio"].browse(vals["folio_id"])
                 default_vals = {"pms_property_id": folio.pms_property_id.id}
-                if folio.partner_id:
+                if vals.get("partner_id") or vals.get("partner_name"):
+                    # The caller sets the reservation guest explicitly: it
+                    # can differ from the folio holder (e.g. group/company
+                    # folios), so don't inherit the folio identity
+                    pass
+                elif folio.partner_id:
                     default_vals["partner_id"] = folio.partner_id.id
                 elif folio.partner_name:
                     default_vals["partner_name"] = folio.partner_name
@@ -2706,20 +2712,29 @@ class PmsReservation(models.Model):
         )
 
     def _get_applicable_guest_count(self, product):
-        count = len(
-            self._get_guests_by_age(
-                product.tourist_tax_min_age,
-                product.tourist_tax_max_age,
-            )
+        """Count the guests the tax applies to.
+
+        Guests with a known birthdate are classified by age; guests not yet
+        registered (or registered without birthdate) are counted from the
+        declared occupancy, so a partial check-in never lowers the tax below
+        what the reservation declares.
+        """
+        min_age = product.tourist_tax_min_age
+        max_age = product.tourist_tax_max_age
+        known_guests = self.checkin_partner_ids.filtered("birthdate_date")
+        matching_known = len(self._get_guests_by_age(min_age, max_age) & known_guests)
+        unknown_count = max(0, self.adults + self.children - len(known_guests))
+        if not min_age:
+            # Without a minimum age, guests of unknown age are counted,
+            # consistent with _get_guests_by_age
+            return matching_known + unknown_count
+        # With a minimum age, assume unregistered adults meet it and
+        # declared children not yet identified as minors stay below it
+        known_minors = len(
+            known_guests.filtered(lambda g: self._guest_age(g.birthdate_date) < min_age)
         )
-        # If not hosts found, consider all guests (if not min_age or max_age is set)
-        # or only adults min_age
-        if count == 0:
-            if not product.tourist_tax_min_age:
-                count = self.adults + self.children
-            else:
-                count = self.adults
-        return count
+        unknown_children = max(0, self.children - known_minors)
+        return matching_known + max(0, unknown_count - unknown_children)
 
     def _get_product_price(self, product, quantity, night_date):
         product = product.with_context(
@@ -2807,20 +2822,18 @@ class PmsReservation(models.Model):
 
         return cmds
 
-    def _get_guests_by_age(self, min_age=None, max_age=None):
+    @api.model
+    def _guest_age(self, birthdate):
         today = fields.Date.today()
-        guests = self.checkin_partner_ids
+        return (today - birthdate).days // 365 if birthdate else 0
 
-        def age(birthdate):
-            return (today - birthdate).days // 365 if birthdate else 0
-
-        filtered = guests.filtered(
+    def _get_guests_by_age(self, min_age=None, max_age=None):
+        return self.checkin_partner_ids.filtered(
             lambda g: (
-                (not min_age or age(g.birthdate_date) >= min_age)
-                and (not max_age or age(g.birthdate_date) <= max_age)
+                (not min_age or self._guest_age(g.birthdate_date) >= min_age)
+                and (not max_age or self._guest_age(g.birthdate_date) <= max_age)
             )
         )
-        return filtered
 
     def _is_mmdd_in_range(self, check_date, start_mmdd, end_mmdd):
         """Check if a date falls between two MM-DD values,

@@ -8,7 +8,7 @@ from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
-from .common import TestPms
+from .common import INVALID_HOURS, TestPms
 
 
 @tagged("post_install", "-at_install")
@@ -1265,48 +1265,99 @@ class TestPmsReservations(TestPms, AccountTestInvoicingCommon):
         """
         Check that the format of the arrival_hour field is correct(HH:mm)
         -------------
-        Create a reservation with the wrong arrival hour date
-        format (HH:mm:ss), this should throw an error.
+        Create a reservation for each hour that is not a zero-padded 24h
+        "HH:mm" string, this should throw an error.
         """
         self.host1 = self.env["res.partner"].create(
             {
                 "firstname": "Host1",
             }
         )
-        with self.assertRaises(ValidationError):
-            self.env["pms.reservation"].create(
-                {
-                    "checkin": fields.date.today(),
-                    "checkout": fields.date.today() + datetime.timedelta(days=3),
-                    "pms_property_id": self.pms_property1.id,
-                    "partner_id": self.host1.id,
-                    "arrival_hour": "14:00:00",
-                }
-            )
+        for hour in INVALID_HOURS:
+            with self.subTest(hour=hour), self.assertRaises(ValidationError):
+                self.env["pms.reservation"].create(
+                    {
+                        "checkin": fields.date.today(),
+                        "checkout": fields.date.today() + datetime.timedelta(days=3),
+                        "pms_property_id": self.pms_property1.id,
+                        "partner_id": self.host1.id,
+                        "arrival_hour": hour,
+                    }
+                )
 
     @freeze_time("2012-01-14")
     def test_check_format_departure_hour(self):
         """
         Check that the format of the departure_hour field is correct(HH:mm)
         -------------
-        Create a reservation with the wrong departure hour date
-        format (HH:mm:ss), this should throw an error.
+        Create a reservation for each hour that is not a zero-padded 24h
+        "HH:mm" string, this should throw an error.
         """
         self.host1 = self.env["res.partner"].create(
             {
                 "firstname": "Host1",
             }
         )
-        with self.assertRaises(ValidationError):
-            self.env["pms.reservation"].create(
-                {
-                    "checkin": fields.date.today(),
-                    "checkout": fields.date.today() + datetime.timedelta(days=3),
-                    "pms_property_id": self.pms_property1.id,
-                    "partner_id": self.host1.id,
-                    "departure_hour": "14:00:00",
-                }
-            )
+        for hour in INVALID_HOURS:
+            with self.subTest(hour=hour), self.assertRaises(ValidationError):
+                self.env["pms.reservation"].create(
+                    {
+                        "checkin": fields.date.today(),
+                        "checkout": fields.date.today() + datetime.timedelta(days=3),
+                        "pms_property_id": self.pms_property1.id,
+                        "partner_id": self.host1.id,
+                        "departure_hour": hour,
+                    }
+                )
+
+    @freeze_time("2012-01-14")
+    def test_checkin_checkout_datetime_hours(self):
+        """
+        Check that the exact arrival and departure keep the property hours
+        -------------
+        Create a reservation on a property arriving at 08:00 and leaving
+        at 00:00, and check that both datetimes are on those hours.
+        """
+        self.env.user.tz = "UTC"
+        self.pms_property1.tz = "UTC"
+        self.pms_property1.default_arrival_hour = "08:00"
+        self.pms_property1.default_departure_hour = "00:00"
+        reservation = self.env["pms.reservation"].create(
+            {
+                "checkin": fields.date.today(),
+                "checkout": fields.date.today() + datetime.timedelta(days=3),
+                "pms_property_id": self.pms_property1.id,
+                "partner_id": self.partner1.id,
+                "room_type_id": self.room_type_double.id,
+                "sale_channel_origin_id": self.sale_channel_direct.id,
+            }
+        )
+        self.assertEqual(
+            reservation.checkin_datetime,
+            datetime.datetime.combine(reservation.checkin, datetime.time(8, 0)),
+        )
+        self.assertEqual(
+            reservation.checkout_datetime,
+            datetime.datetime.combine(reservation.checkout, datetime.time(0, 0)),
+        )
+
+    def test_checkin_checkout_datetime_without_hours(self):
+        """
+        Check that a reservation without hours has no exact arrival
+        -------------
+        On a new reservation the checkin and checkout dates are not set
+        yet, so both datetimes are computed from missing values.
+        """
+        reservation = self.env["pms.reservation"].new(
+            {
+                "pms_property_id": self.pms_property1.id,
+                "partner_id": self.partner1.id,
+                "arrival_hour": False,
+                "departure_hour": False,
+            }
+        )
+        self.assertFalse(reservation.checkin_datetime)
+        self.assertFalse(reservation.checkout_datetime)
 
     @freeze_time("2012-01-14")
     def test_check_property_integrity_room(self):
@@ -1788,6 +1839,121 @@ class TestPmsReservations(TestPms, AccountTestInvoicingCommon):
             self.reservation.partner_name,
             "The folio partner name and the reservation partner name "
             "doesn't correspond",
+        )
+
+    @freeze_time("2012-01-14")
+    def test_reservation_guest_name_not_overwritten_by_folio(self):
+        """
+        Check that a reservation with its own partner_name (the guest)
+        keeps it when the folio is held by another partner (e.g. a
+        company folio with the guest names per reservation)
+        ----------
+        Create a folio held by a company partner. Then create a
+        reservation in that folio with an explicit partner_name.
+        The reservation must keep the guest name and the folio must
+        keep the company name.
+        """
+        # ARRANGE
+        company = self.env["res.partner"].create(
+            {
+                "name": "Company Holder",
+                "is_company": True,
+            }
+        )
+        folio = self.env["pms.folio"].create(
+            {
+                "pms_property_id": self.pms_property1.id,
+                "partner_id": company.id,
+            }
+        )
+        # ACT
+        reservation = self.env["pms.reservation"].create(
+            {
+                "checkin": "2012-01-14",
+                "checkout": "2012-01-17",
+                "pms_property_id": self.pms_property1.id,
+                "folio_id": folio.id,
+                "room_type_id": self.room_type_double.id,
+                "sale_channel_origin_id": self.sale_channel_direct.id,
+                "partner_name": "Guest Name",
+            }
+        )
+        reservation.flush_recordset()
+        reservation.invalidate_recordset(["partner_name", "partner_id"])
+        # ASSERT
+        self.assertEqual(
+            reservation.partner_name,
+            "Guest Name",
+            "The reservation guest name was overwritten by the folio " "partner name",
+        )
+        self.assertEqual(
+            reservation.partner_id,
+            company,
+            "The reservation billing partner must stay the folio holder",
+        )
+        self.assertEqual(
+            folio.partner_name,
+            company.name,
+            "The folio partner name doesn't correspond to the company",
+        )
+
+    @freeze_time("2012-01-14")
+    def test_folio_rename_only_propagates_to_inherited_names(self):
+        """
+        Check that renaming the folio partner_name propagates to the
+        reservations that inherited the folio name but not to the
+        reservations with their own guest name
+        ----------
+        Create a folio with partner_name and two reservations: one
+        without partner_name (inherits the folio name) and one with an
+        explicit guest name. Rename the folio partner_name and check
+        that only the inherited one is updated.
+        """
+        # ARRANGE
+        folio = self.env["pms.folio"].create(
+            {
+                "pms_property_id": self.pms_property1.id,
+                "partner_name": "Original Holder",
+            }
+        )
+        inherited_reservation = self.env["pms.reservation"].create(
+            {
+                "checkin": "2012-01-14",
+                "checkout": "2012-01-17",
+                "pms_property_id": self.pms_property1.id,
+                "folio_id": folio.id,
+                "room_type_id": self.room_type_double.id,
+                "sale_channel_origin_id": self.sale_channel_direct.id,
+            }
+        )
+        guest_reservation = self.env["pms.reservation"].create(
+            {
+                "checkin": "2012-01-14",
+                "checkout": "2012-01-17",
+                "pms_property_id": self.pms_property1.id,
+                "folio_id": folio.id,
+                "room_type_id": self.room_type_double.id,
+                "sale_channel_origin_id": self.sale_channel_direct.id,
+                "partner_name": "Guest Name",
+            }
+        )
+        # ACT
+        folio.write({"partner_name": "New Holder"})
+        (inherited_reservation | guest_reservation).flush_recordset()
+        (inherited_reservation | guest_reservation).invalidate_recordset(
+            ["partner_name"]
+        )
+        # ASSERT
+        self.assertEqual(
+            inherited_reservation.partner_name,
+            "New Holder",
+            "The folio rename wasn't propagated to the reservation "
+            "that inherited the folio name",
+        )
+        self.assertEqual(
+            guest_reservation.partner_name,
+            "Guest Name",
+            "The folio rename overwrote the reservation guest name",
         )
 
     @freeze_time("2012-01-14")

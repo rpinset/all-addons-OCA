@@ -6,54 +6,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-08-24 11:46+0000\n"
+"Last-Translator: Simon Maillard <simon@ogesta.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__auto_validate
 msgid "Auto Validate"
-msgstr ""
+msgstr "Validation automatique"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__auto_validate_domain
 msgid "Auto Validate Domain"
-msgstr ""
+msgstr "Validation automatique du domaine"
 
 #. module: base_tier_validation_server_action
 #: model:ir.actions.server,name:base_tier_validation_server_action.ir_cron_auto_tier_validation_ir_actions_server
 #: model:ir.cron,cron_name:base_tier_validation_server_action.ir_cron_auto_tier_validation
 msgid "Automatic Tier Validation"
-msgstr ""
+msgstr "Validation automatique des niveaux"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__server_action_id
 msgid "Post Approve Action"
-msgstr ""
+msgstr "Action post-approbation"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__rejected_server_action_id
 msgid "Post Reject Action"
-msgstr ""
+msgstr "Action après rejet"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,help:base_tier_validation_server_action.field_tier_definition__server_action_id
 msgid "Server action triggered as soon as this step is approved"
-msgstr ""
+msgstr "Action côté serveur déclenchée dès que cette étape est approuvée"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,help:base_tier_validation_server_action.field_tier_definition__rejected_server_action_id
 msgid "Server action triggered as soon as this step is rejected"
-msgstr ""
+msgstr "Action côté serveur déclenchée dès que cette étape est rejetée"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model,name:base_tier_validation_server_action.model_tier_definition
 msgid "Tier Definition"
-msgstr ""
+msgstr "Définition de niveau"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model,name:base_tier_validation_server_action.model_tier_validation
@@ -68,8 +70,16 @@ msgid ""
 "- If 1 user matched as reviewer, use the user to validate\n"
 "- If > 1 user matched as reviewer, do not auto validate"
 msgstr ""
+"Utilisez une tâche planifiée pour effectuer une validation automatique si la "
+"condition est remplie.\n"
+"- Si aucun utilisateur n'est spécifié, utilisez l'utilisateur système de la "
+"tâche pour la validation\n"
+"- Si un seul utilisateur correspond au rôle de validateur, utilisez cet "
+"utilisateur pour la validation\n"
+"- Si plusieurs utilisateurs correspondent au rôle de validateur, pas de "
+"validation automatique"
 
 #. module: base_tier_validation_server_action
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_server_action.tier_definition_view_form
 msgid "if pass condition"
-msgstr ""
+msgstr "si la condition est remplie"
