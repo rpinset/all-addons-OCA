@@ -3,14 +3,14 @@
 {
     "name": "Survey contacts generation for model selection",
     "summary": "Generate new contacts from surveys using model selection",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Marketing/Survey",
     "website": "https://github.com/OCA/survey",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "maintainers": ["eduezerouali-tecnativa"],
     "license": "AGPL-3",
     "depends": ["survey_contact_generation", "survey_question_type_model_selection"],
-    "assest": {
+    "assets": {
         "web.assets_tests": [
             "survey_contact_generation_model_selection/static/tests/test_tour_contact_generation_model_selection.esm.js",
         ],

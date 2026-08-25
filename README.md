@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-08-23 21:38 UTC** (elapsed 192s)
+Last build: **2026-08-25 04:09 UTC** (elapsed 102s)
 
 - Repos integrated: **126**
 - Canonical modules: **1934**
@@ -107,7 +107,7 @@ Last build: **2026-08-23 21:38 UTC** (elapsed 192s)
 | [rma](https://github.com/OCA/rma) | 5 | 5688fe7 2026-07-22 OCA-git-bot [BOT] post-merge updates |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 9 | 4722233 2026-05-18 OCA-git-bot [BOT] post-merge updates |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 8 | 423168e 2026-07-16 OCA-git-bot [BOT] post-merge updates |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 99 | 415aa1f 2026-08-20 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 99 | 9f8652c 2026-08-24 mymage Added translation using Weblate (Italian) |
 | [server-auth](https://github.com/OCA/server-auth) | 21 | bde5171 2026-07-01 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 9 | daf2afd 2025-11-13 Weblate Update translation files |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 220e824 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -127,8 +127,8 @@ Last build: **2026-08-23 21:38 UTC** (elapsed 192s)
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 38 | c139e91 2026-08-17 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 66 | 7cb946b 2026-08-11 mymage Translated using Weblate (Italian) |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 2 | 031c0f0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [storage](https://github.com/OCA/storage) | 15 | 3c79b83 2026-08-05 OCA-git-bot [BOT] post-merge updates |
-| [survey](https://github.com/OCA/survey) | 19 | d763c46 2026-08-11 mymage Translated using Weblate (Italian) |
+| [storage](https://github.com/OCA/storage) | 15 | c496e63 2026-08-24 mymage Translated using Weblate (Italian) |
+| [survey](https://github.com/OCA/survey) | 19 | 2d46735 2026-08-24 OCA-git-bot [BOT] post-merge updates |
 | [timesheet](https://github.com/OCA/timesheet) | 24 | 2ae097e 2026-07-28 mymage Translated using Weblate (Italian) |
 | [vertical-association](https://github.com/OCA/vertical-association) | 7 | c26fa14 2025-06-21 mymage Translated using Weblate (Italian) |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | 2 | 2defebc 2025-06-21 mymage Translated using Weblate (Italian) |
