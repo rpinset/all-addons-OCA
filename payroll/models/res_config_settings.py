@@ -35,3 +35,8 @@ class ResConfigSettings(models.TransientModel):
         help="Require rule.code, rule.category, category.code, structure.code",
         default=False,
     )
+    payroll_structure_id = fields.Many2one(
+        "hr.payroll.structure",
+        related="company_id.payroll_structure_id",
+        readonly=False,
+    )

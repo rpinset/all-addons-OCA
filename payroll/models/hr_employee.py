@@ -14,6 +14,13 @@ class HrEmployee(models.Model):
         compute="_compute_payslip_count",
         groups="payroll.group_payroll_user",
     )
+    payroll_structure_id = fields.Many2one(
+        "hr.payroll.structure",
+        string="Default Salary Structure",
+        groups="hr.group_hr_user",
+        help="Set only if this employee needs a different structure than "
+        "the company default; leave empty otherwise.",
+    )
 
     def _compute_payslip_count(self):
         for employee in self:

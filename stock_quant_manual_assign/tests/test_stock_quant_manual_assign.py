@@ -28,6 +28,10 @@ class TestStockQuantManualAssign(TransactionCase):
         cls.quant1 = cls._create_quant(cls.product, 100.0, cls.location1)
         cls.quant2 = cls._create_quant(cls.product, 100.0, cls.location2)
         cls.quant3 = cls._create_quant(cls.product, 100.0, cls.location3)
+        cls.product2 = cls.env["product.product"].create(
+            {"name": "Product 4 test 2", "type": "consu", "is_storable": True}
+        )
+        cls._create_quant(cls.product2, 100.0, cls.location1)
         cls.move = cls.env["stock.move"].create(
             {
                 "name": cls.product.name,
@@ -172,3 +176,58 @@ class TestStockQuantManualAssign(TransactionCase):
         move_lines_to_unlink, quant_lines_to_assign = wizard._get_discrepancies()
         self.assertEqual(move_lines_to_unlink, self.move.move_line_ids[2])
         self.assertEqual(quant_lines_to_assign, wizard.quants_lines[2])
+
+    def _create_two_move_picking(self):
+        picking = self.env["stock.picking"].create(
+            {
+                "picking_type_id": self.picking_type.id,
+                "location_id": self.location_src.id,
+                "location_dest_id": self.location_dst.id,
+                "move_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": product.name,
+                            "product_id": product.id,
+                            "product_uom_qty": 100.0,
+                            "location_id": self.location_src.id,
+                            "location_dest_id": self.location_dst.id,
+                        },
+                    )
+                    for product in (self.product, self.product2)
+                ],
+            }
+        )
+        picking.action_confirm()
+        picking.action_assign()
+        return picking
+
+    def _reassign_to_another_quant(self, move):
+        wizard = (
+            self.env["assign.manual.quants"].with_context(active_id=move.id).create({})
+        )
+        selected = wizard.quants_lines.filtered("selected")
+        selected.write({"selected": False, "qty": 0.0})
+        (wizard.quants_lines - selected)[0].write(
+            {"selected": True, "qty": move.product_uom_qty}
+        )
+        wizard.assign_quants()
+
+    def test_quant_assign_keeps_picked(self):
+        """A move already marked as done stays picked after reassigning its quants."""
+        picking = self._create_two_move_picking()
+        picking.move_ids.picked = True
+        move = picking.move_ids.filtered(lambda x: x.product_id == self.product)
+        self._reassign_to_another_quant(move)
+        self.assertTrue(move.picked)
+        self.assertTrue(all(move.move_line_ids.mapped("picked")))
+
+    def test_quant_assign_does_not_pick_other_moves(self):
+        """Reassigning a non-picked move must not leave the picking half picked."""
+        picking = self._create_two_move_picking()
+        move = picking.move_ids.filtered(lambda x: x.product_id == self.product)
+        self._reassign_to_another_quant(move)
+        self.assertFalse(any(picking.move_ids.mapped("picked")))
+        self.assertTrue(picking.button_validate())
+        self.assertEqual(picking.state, "done")

@@ -660,6 +660,7 @@ msgid "Code:"
 msgstr "코드 :"
 
 #. module: payroll
+#: model:ir.model,name:payroll.model_res_company
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
 msgid "Companies"
 msgstr "회사"
@@ -741,6 +742,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_worked_days__contract_id
 msgid "Contract"
 msgstr "근로 계약"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
+msgid "Contract Defaults"
+msgstr ""
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Contracts"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_contribution_register_view_form
@@ -851,6 +862,14 @@ msgstr ""
 #: model:hr.salary.rule.category,name:payroll.DED
 msgid "Deduction"
 msgstr "공제금"
+
+#. module: payroll
+#: model:ir.model.fields,field_description:payroll.field_hr_employee__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_company__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_config_settings__payroll_structure_id
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Default Salary Structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_contract__schedule_pay
@@ -1049,6 +1068,13 @@ msgstr "예를 들면 50%의 비율을 적용하려면 50.0을 입력합니다"
 #: code:addons/payroll/report/report_contribution_register.py:0
 msgid "Form content is missing, this report cannot be printed."
 msgstr "양식 내용이 누락되어서 이 보고서를 인쇄할 수 없습니다."
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid ""
+"General default structure for new contracts, used unless the employee has a "
+"specific one."
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.view_hr_payslip_by_employees
@@ -1549,6 +1575,7 @@ msgstr "급여 명세서명"
 #: model:ir.actions.act_window,name:payroll.open_payroll_modules
 #: model:ir.module.category,name:payroll.module_category_payroll
 #: model:ir.ui.menu,name:payroll.payroll_menu_root
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Payroll"
 msgstr "급여 관리"
@@ -2008,6 +2035,14 @@ msgid "Search Salary Rule"
 msgstr "급여 규정 검색"
 
 #. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid ""
+"Selected structure differs from the default for this employee/company "
+"(expected: %s)."
+msgstr ""
+
+#. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_contract__schedule_pay__semi-annually
 msgid "Semi-annually"
 msgstr "반기"
@@ -2029,6 +2064,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_salary_rule__sequence
 msgid "Sequence"
 msgstr "순서"
+
+#. module: payroll
+#: model:ir.model.fields,help:payroll.field_hr_employee__payroll_structure_id
+msgid ""
+"Set only if this employee needs a different structure than the company "
+"default; leave empty otherwise."
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip_change_state__state__draft
@@ -2188,6 +2230,12 @@ msgstr "급여 명세서에 급여 규정을 표시하는 데 사용됩니다."
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip__state__verify
 msgid "Waiting"
 msgstr "대기중"
+
+#. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid "Warning: default salary structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__website_message_ids

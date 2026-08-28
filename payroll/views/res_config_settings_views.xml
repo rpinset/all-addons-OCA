@@ -76,6 +76,15 @@
                             <field name="require_code_and_category" />
                         </setting>
                     </block>
+                    <block title="Contracts" id="payroll_structure">
+                        <setting
+                            id=""
+                            string="Default Salary Structure"
+                            help="General default structure for new contracts, used unless the employee has a specific one."
+                        >
+                            <field name="payroll_structure_id" />
+                        </setting>
+                    </block>
                 </app>
             </xpath>
         </field>

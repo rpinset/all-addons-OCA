@@ -17,6 +17,19 @@
                     <field name="payslip_count" widget="statinfo" string="Payslips" />
                 </button>
             </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Payroll"
+                    name="payroll_settings"
+                    groups="payroll.group_payroll_user"
+                >
+                    <group>
+                        <group string="Contract Defaults">
+                            <field name="payroll_structure_id" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
         </field>
     </record>
 </odoo>

@@ -102,10 +102,15 @@ class AssignManualQuants(models.TransientModel):
 
     def assign_quants(self):
         move = self.move_id
+        # `picked` must be read before the unlink resets it, and only restored: marking
+        # an unpicked move would leave the picking half picked and force a backorder.
+        was_picked = move.picked
         move_lines, quant_lines = self._get_discrepancies()
         move_lines.unlink()
         for line in quant_lines:
             line._assign_quant_line()
+        if was_picked:
+            move.move_line_ids.picked = True
         move._recompute_state()
         move.mapped("picking_id")._compute_state()
         return {}

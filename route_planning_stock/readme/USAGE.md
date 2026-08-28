@@ -1,6 +1,7 @@
-- Create a picking using the `Operation Type` specific for Route
-- Select a Route Area.
-- Confirm the picking.
-
-The picking will be attached to an existing route with the same area, or a new route
-will be created if none exists.
+- Create a Delivery Order using an operation type whose Destination Location is the transit location created automatically by the Route Area.
+- Assign the Route Area to the picking.
+- Confirm / Validate the picking.
+- The system will automatically search for an existing draft route for that area and scheduled date, or create a new Route.
+- A Route Checkpoint is created and linked to the picking and its partner.
+- Go to the Route and plan it.
+- When the visit to the customer is completed, validate the checkpoint. This will automatically validate the picking.

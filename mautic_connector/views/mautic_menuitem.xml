@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_mautic_backend"
+        name="Mautic Backends"
+        parent="connector.menu_connector"
+        action="mautic_backend_action"
+        sequence="10"
+    />
+</odoo>

@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-08-25 04:14 UTC
+Generated 2026-08-28 23:54 UTC
 
-Total skipped: **108**
+Total skipped: **107**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **83**
+Count: **82**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -95,7 +95,6 @@ Count: **83**
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | [18.0](https://github.com/OCA/l10n-turkey/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | [18.0](https://github.com/OCA/l10n-united-kingdom/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | [18.0](https://github.com/OCA/l10n-uruguay/tree/18.0) | No directory with __manifest__.py at repo root |
-| [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | [18.0](https://github.com/OCA/l10n-venezuela/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [18.0](https://github.com/OCA/l10n-vietnam/tree/18.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [18.0](https://github.com/OCA/mis-builder-contrib/tree/18.0) | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | [18.0](https://github.com/OCA/product-kitting/tree/18.0) | No directory with __manifest__.py at repo root |

@@ -662,6 +662,7 @@ msgid "Code:"
 msgstr "Mã:"
 
 #. module: payroll
+#: model:ir.model,name:payroll.model_res_company
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
 msgid "Companies"
 msgstr "Công ty"
@@ -743,6 +744,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_worked_days__contract_id
 msgid "Contract"
 msgstr "Hợp đồng"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
+msgid "Contract Defaults"
+msgstr ""
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Contracts"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_contribution_register_view_form
@@ -853,6 +864,14 @@ msgstr ""
 #: model:hr.salary.rule.category,name:payroll.DED
 msgid "Deduction"
 msgstr "Giảm trừ"
+
+#. module: payroll
+#: model:ir.model.fields,field_description:payroll.field_hr_employee__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_company__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_config_settings__payroll_structure_id
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Default Salary Structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_contract__schedule_pay
@@ -1053,6 +1072,13 @@ msgstr "Ví dụ, nhập 50,0 để sử dụng 50%"
 #: code:addons/payroll/report/report_contribution_register.py:0
 msgid "Form content is missing, this report cannot be printed."
 msgstr "Nội dung trong mẫu đang thiếu, báo cáo này không thể in được."
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid ""
+"General default structure for new contracts, used unless the employee has a "
+"specific one."
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.view_hr_payslip_by_employees
@@ -1558,6 +1584,7 @@ msgstr "Tên phiếu lương"
 #: model:ir.actions.act_window,name:payroll.open_payroll_modules
 #: model:ir.module.category,name:payroll.module_category_payroll
 #: model:ir.ui.menu,name:payroll.payroll_menu_root
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Payroll"
 msgstr "Bảng lương"
@@ -2017,6 +2044,14 @@ msgid "Search Salary Rule"
 msgstr "Tìm Quy tắc lương"
 
 #. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid ""
+"Selected structure differs from the default for this employee/company "
+"(expected: %s)."
+msgstr ""
+
+#. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_contract__schedule_pay__semi-annually
 msgid "Semi-annually"
 msgstr "Nửa năm một"
@@ -2038,6 +2073,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_salary_rule__sequence
 msgid "Sequence"
 msgstr "Trình tự"
+
+#. module: payroll
+#: model:ir.model.fields,help:payroll.field_hr_employee__payroll_structure_id
+msgid ""
+"Set only if this employee needs a different structure than the company "
+"default; leave empty otherwise."
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip_change_state__state__draft
@@ -2197,6 +2239,12 @@ msgstr "Được sử dụng để hiển thị quy tắc lương trên phiếu 
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip__state__verify
 msgid "Waiting"
 msgstr "Chờ"
+
+#. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid "Warning: default salary structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__website_message_ids

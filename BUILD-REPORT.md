@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-08-25 04:14 UTC
+Generated 2026-08-28 23:54 UTC
 
 ## Skipped repos
 
@@ -64,7 +64,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |

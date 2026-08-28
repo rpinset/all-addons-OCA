@@ -1,6 +1,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import fields, models
+from odoo import _, api, fields, models
 
 
 class HrContract(models.Model):
@@ -40,3 +40,34 @@ class HrContract(models.Model):
         """
         # TODO: remove, too simple and not used
         return self.struct_id.get_structure_with_parents()
+
+    @api.model
+    def _get_default_payroll_structure(self, employee):
+        """Default salary structure: employee, else company."""
+        return employee.payroll_structure_id or self.env.company.payroll_structure_id
+
+    @api.onchange("employee_id")
+    def _onchange_employee_id_default_structure(self):
+        """Set struct_id from the default when the employee changes."""
+        for contract in self:
+            structure = self._get_default_payroll_structure(contract.employee_id)
+            if structure:
+                contract.struct_id = structure.id
+
+    @api.onchange("struct_id")
+    def _onchange_struct_id_default_warning(self):
+        """Warn when the chosen structure differs from the default."""
+        if not self.struct_id:
+            return
+        structure = self._get_default_payroll_structure(self.employee_id)
+        if structure and structure != self.struct_id:
+            return {
+                "warning": {
+                    "title": _("Warning: default salary structure"),
+                    "message": _(
+                        "Selected structure differs from the default for "
+                        "this employee/company (expected: %s).",
+                        structure.display_name,
+                    ),
+                }
+            }

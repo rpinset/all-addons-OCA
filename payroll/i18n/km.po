@@ -661,6 +661,7 @@ msgid "Code:"
 msgstr "កូដ:"
 
 #. module: payroll
+#: model:ir.model,name:payroll.model_res_company
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
 msgid "Companies"
 msgstr "ក្រុមហ៊ុន"
@@ -742,6 +743,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_worked_days__contract_id
 msgid "Contract"
 msgstr "កុងត្រា"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
+msgid "Contract Defaults"
+msgstr ""
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Contracts"
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_contribution_register_view_form
@@ -852,6 +863,14 @@ msgstr ""
 #: model:hr.salary.rule.category,name:payroll.DED
 msgid "Deduction"
 msgstr "ការកាត់ថ្លៃ។"
+
+#. module: payroll
+#: model:ir.model.fields,field_description:payroll.field_hr_employee__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_company__payroll_structure_id
+#: model:ir.model.fields,field_description:payroll.field_res_config_settings__payroll_structure_id
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid "Default Salary Structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_contract__schedule_pay
@@ -1049,6 +1068,13 @@ msgstr "ឧទាហរណ៍បញ្ចូល 50.0 ដើម្បីអនុ
 #: code:addons/payroll/report/report_contribution_register.py:0
 msgid "Form content is missing, this report cannot be printed."
 msgstr "កំហុសទម្រង់សំណុំបែបបទរបាយការណ៍នេះមិនអាចបោះពុម្ពបានទេ"
+
+#. module: payroll
+#: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
+msgid ""
+"General default structure for new contracts, used unless the employee has a "
+"specific one."
+msgstr ""
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.view_hr_payslip_by_employees
@@ -1551,6 +1577,7 @@ msgstr "ឈ្មោះ PaySlip ។"
 #: model:ir.actions.act_window,name:payroll.open_payroll_modules
 #: model:ir.module.category,name:payroll.module_category_payroll
 #: model:ir.ui.menu,name:payroll.payroll_menu_root
+#: model_terms:ir.ui.view,arch_db:payroll.hr_employee_view_form
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Payroll"
 msgstr "ប្រាក់ខែ"
@@ -2013,6 +2040,14 @@ msgid "Search Salary Rule"
 msgstr "ស្វែងរកវិធានប្រាក់ខែ"
 
 #. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid ""
+"Selected structure differs from the default for this employee/company "
+"(expected: %s)."
+msgstr ""
+
+#. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_contract__schedule_pay__semi-annually
 msgid "Semi-annually"
 msgstr "ពាក់​ក​ណ្តា​ល​ឆ្នាំ"
@@ -2034,6 +2069,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_salary_rule__sequence
 msgid "Sequence"
 msgstr "លំដាប់"
+
+#. module: payroll
+#: model:ir.model.fields,help:payroll.field_hr_employee__payroll_structure_id
+msgid ""
+"Set only if this employee needs a different structure than the company "
+"default; leave empty otherwise."
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip_change_state__state__draft
@@ -2193,6 +2235,12 @@ msgstr "ត្រូវបានប្រើដើម្បីបង្ហាញ
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip__state__verify
 msgid "Waiting"
 msgstr "កំពុងរង់ចាំ"
+
+#. module: payroll
+#. odoo-python
+#: code:addons/payroll/models/hr_contract.py:0
+msgid "Warning: default salary structure"
+msgstr ""
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__website_message_ids
