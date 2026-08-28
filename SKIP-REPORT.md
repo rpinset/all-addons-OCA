@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-08-25 04:09 UTC
+Generated 2026-08-28 23:48 UTC
 
-Total skipped: **140**
+Total skipped: **141**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **61**
+Count: **62**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -17,6 +17,7 @@ Count: **61**
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [15.0](https://github.com/OCA/bank-payment-alternative/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [cim](https://github.com/OCA/cim) | [15.0](https://github.com/OCA/cim/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [15.0](https://github.com/OCA/connector-magento-php-extension/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [connector-mautic](https://github.com/OCA/connector-mautic) | [15.0](https://github.com/OCA/connector-mautic/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [15.0](https://github.com/OCA/connector-shopify/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [cooperative](https://github.com/OCA/cooperative) | [15.0](https://github.com/OCA/cooperative/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [15.0](https://github.com/OCA/crowdfunding/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
