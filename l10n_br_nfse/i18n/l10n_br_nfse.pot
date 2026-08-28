@@ -127,6 +127,11 @@ msgid "<span>Número da NFS-e</span><br/>"
 msgstr ""
 
 #. module: l10n_br_nfse
+#: model_terms:ir.ui.view,arch_db:l10n_br_nfse.nfse_document_form_inherit
+msgid "<strong>Rejection reason:</strong>"
+msgstr ""
+
+#. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Avisos"
 msgstr ""
@@ -154,6 +159,11 @@ msgstr ""
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.nfse_res_company_form
 msgid "City Settings"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model:ir.model.fields,field_description:l10n_br_nfse.field_res_company__city_taxation_code_id
+msgid "City Taxation Code"
 msgstr ""
 
 #. module: l10n_br_nfse
@@ -527,6 +537,11 @@ msgstr ""
 #. module: l10n_br_nfse
 #: model_terms:ir.ui.view,arch_db:l10n_br_nfse.danfse_report_template
 msgid "Tributos Federais (Lei 12.741/2012)"
+msgstr ""
+
+#. module: l10n_br_nfse
+#: model:ir.model.fields,field_description:l10n_br_nfse.field_res_company__nfse_use_city_pdf
+msgid "Use City NFSe PDF"
 msgstr ""
 
 #. module: l10n_br_nfse

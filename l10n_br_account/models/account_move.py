@@ -13,11 +13,11 @@ from odoo.tools import frozendict
 from odoo.addons.l10n_br_fiscal.constants.fiscal import (
     DOCUMENT_ISSUER_COMPANY,
     DOCUMENT_ISSUER_PARTNER,
+    DOCUMENT_STATE_CANCEL,
+    DOCUMENT_STATE_DRAFT,
     FISCAL_IN_OUT_ALL,
     FISCAL_OUT,
     MODELO_FISCAL_NFE,
-    SITUACAO_EDOC_CANCELADA,
-    SITUACAO_EDOC_EM_DIGITACAO,
 )
 
 from .constants import (
@@ -439,18 +439,21 @@ class AccountMove(models.Model):
         self.update_payment_term_number()
 
     def update_payment_term_number(self):
-        payment_term_lines = self.line_ids.filtered(
-            lambda line: line.display_type == "payment_term"
-        )
-        payment_term_lines_sorted = payment_term_lines.sorted(
-            key=lambda line: line.date_maturity
-        )
-        for idx, line in enumerate(payment_term_lines_sorted, start=1):
-            line.with_context(skip_invoice_sync=True).write(
-                {
-                    "payment_term_number": f"{idx}-{len(payment_term_lines_sorted)}",
-                }
-            )
+        for move in self.filtered(
+            lambda m: m.fiscal_operation_id and m.is_invoice(include_receipts=True)
+        ):
+            payment_term_lines_sorted = move.line_ids.filtered(
+                lambda line: line.display_type == "payment_term"
+            ).sorted(key=lambda line: line.date_maturity)
+            total = len(payment_term_lines_sorted)
+            for idx, line in enumerate(payment_term_lines_sorted, start=1):
+                number = f"{idx}-{total}"
+                # payment_term_number feeds the stored _compute_name of the aml;
+                # only write (and re-trigger the rename) when it actually changes.
+                if line.payment_term_number != number:
+                    line.with_context(skip_invoice_sync=True).write(
+                        {"payment_term_number": number}
+                    )
 
     def unlink(self):
         """Allow to delete draft or cancelled invoices"""
@@ -464,7 +467,6 @@ class AccountMove(models.Model):
             unlink_moves |= move
         result = super(AccountMove, unlink_moves).unlink()
         unlink_documents.unlink()
-        self.env.registry.clear_cache()
         return result
 
     @api.depends("move_type", "fiscal_operation_id")
@@ -510,10 +512,16 @@ class AccountMove(models.Model):
 
     def button_draft(self):
         """Set the move to draft state, handling fiscal documents."""
+        if self.env.context.get("in_button_cancel"):
+            # Odoo 17 core button_cancel() calls button_draft() to reset posted
+            # moves before cancelling them. The fiscal document has already
+            # been cancelled by action_document_cancel() above, so skip the
+            # back2draft to keep it in 'cancelada' (matching 16.0 behavior).
+            return super().button_draft()
         # Process fiscal documents first to sync their state
         for move in self.filtered(lambda d: d.document_type_id):
             if (
-                move.state_edoc == SITUACAO_EDOC_CANCELADA
+                move.state_edoc == DOCUMENT_STATE_CANCEL
                 and move.document_number
                 and move.issuer == DOCUMENT_ISSUER_COMPANY
                 and move.fiscal_document_id.cancel_event_id
@@ -524,11 +532,12 @@ class AccountMove(models.Model):
                         "because this document is cancelled in SEFAZ"
                     ).format(move.document_number)
                 )
+
             # Sync fiscal document state (this is idempotent)
             # Pass in_button_draft context to prevent document.py from
             # calling button_draft again (which would cause double super call)
             move.fiscal_document_ids.filtered(
-                lambda d: d.state_edoc != SITUACAO_EDOC_EM_DIGITACAO
+                lambda d: d.state_edoc != DOCUMENT_STATE_DRAFT
             ).with_context(in_button_draft=True).action_document_back2draft()
         return super().button_draft()
 
@@ -690,7 +699,9 @@ class AccountMove(models.Model):
         for doc in self.filtered(lambda d: d.document_type_id):
             if hasattr(doc.fiscal_document_id, "action_document_cancel"):
                 doc.fiscal_document_id.action_document_cancel()
-        return super().button_cancel()
+        return super(
+            AccountMove, self.with_context(in_button_cancel=True)
+        ).button_cancel()
 
     def button_import_fiscal_document(self):
         """
