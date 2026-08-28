@@ -20,6 +20,11 @@ class ResCompany(models.Model):
     intrastat_delegated_vat = fields.Char(string="Delegate VAT number")
     intrastat_delegated_name = fields.Char(string="Delegate")
     intrastat_export_file_name = fields.Char(string="File name for export")
+    intrastat_invoice_report_show_code = fields.Boolean(
+        string="Show Instrastat Code in Invoice report",
+        help="Show the Intrastat Code for each product "
+        "in the Customer Invoice/Receipt/Refund report.",
+    )
 
     # default values sale section
     intrastat_sale_statistic_amount = fields.Boolean(

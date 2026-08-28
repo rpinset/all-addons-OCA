@@ -100,3 +100,35 @@ class TestIntrastat(AccountTestInvoicingCommon):
 
     def test_invoice_fiscal_position_purchase(self):
         self._test_invoice_fiscal_position("purchase")
+
+    def test_invoice_report_show_code(self):
+        """
+        If the Company has "Show Instrastat Code in Invoice report" enabled,
+        the Intrastat Code is shown in the Invoice report.
+        """
+        # Arrange
+        company = self.env.company
+        company.intrastat_invoice_report_show_code = True
+        intrastat_code = self.env.ref(
+            "l10n_it_intrastat.intrastat_category_2014_01012100"
+        )
+        product = self.product01
+        product.intrastat_code_id = intrastat_code
+        invoice = self.init_invoice(
+            "out_invoice",
+            partner=self.partner01,
+            products=product,
+        )
+        # pre-condition
+        self.assertTrue(invoice.company_id.intrastat_invoice_report_show_code)
+        self.assertEqual(
+            intrastat_code, invoice.invoice_line_ids.product_id.intrastat_code_id
+        )
+
+        # Act
+        report_content, report_type = self.env.ref(
+            "account.account_invoices"
+        )._render_qweb_pdf(invoice.ids)
+
+        # Assert
+        self.assertIn(intrastat_code.name, report_content.decode())

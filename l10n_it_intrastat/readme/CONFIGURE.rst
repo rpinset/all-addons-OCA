@@ -19,6 +19,7 @@ impostare i parametri delle seguenti sezioni presenti nella scheda "Informazioni
    g) *Nome file da esportare*: nome del file che può essere impostato per forzare quello predefinito (SCAMBI.CEE).
    h) *Sezione doganale*: sezione doganale predefinita da proporre in una nuova dichiarazione.
    i) *Ammontare minimo*: in caso di fatture di importo inferiore usa questo valore nella dichiarazione.
+   j) *Mostrare codice Intrastat in fattura*: se abilitato, il codice intrastat di ogni prodotto viene mostrato nella fattura/ricevuta/nota di credito di vendita.
 
 2. Valori predefiniti per cessioni (parametri Intrastat per le fatture di vendita)
 

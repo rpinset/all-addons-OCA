@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    ~ Copyright 2026 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <table name="invoice_line_table" position="before">
+            <t
+                t-set="show_intrastat_code"
+                t-value="o.is_sale_document(include_receipts=True) and o.company_id.intrastat_invoice_report_show_code"
+            />
+        </table>
+        <td name="account_invoice_line_name" position="inside">
+            <t t-if="show_intrastat_code">
+                <t t-set="product" t-value="line.product_id" />
+                <span class="d-block text-muted" t-field="product.intrastat_code_id" />
+            </t>
+        </td>
+    </template>
+</odoo>

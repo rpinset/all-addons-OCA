@@ -57338,6 +57338,18 @@ msgid "Shorn wool, degreased, non-carbonised, neither carded nor combed"
 msgstr ""
 
 #. module: l10n_it_intrastat
+#: model:ir.model.fields,field_description:l10n_it_intrastat.field_res_company__intrastat_invoice_report_show_code
+msgid "Show Instrastat Code in Invoice report"
+msgstr ""
+
+#. module: l10n_it_intrastat
+#: model:ir.model.fields,help:l10n_it_intrastat.field_res_company__intrastat_invoice_report_show_code
+msgid ""
+"Show the Intrastat Code for each product in the Customer "
+"Invoice/Receipt/Refund report."
+msgstr ""
+
+#. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03062631
 msgid ""
 "Shrimps \"Crangon crangon\", even in shell, fresh or chilled, or cooked by "

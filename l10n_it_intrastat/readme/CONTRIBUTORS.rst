@@ -11,3 +11,6 @@
 * Fabio Giovannelli <fabio.giovannelli@didotech.com>
 * Alex Comba <alex.comba@agilebg.com>
 * Sergio Corato <https://github.com/sergiocorato>
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>

@@ -25,6 +25,7 @@
                             />
                             <field name="intrastat_export_file_name" />
                             <field name="intrastat_min_amount" />
+                            <field name="intrastat_invoice_report_show_code" />
                         </group>
                     </group>
                     <group colspan="4">
