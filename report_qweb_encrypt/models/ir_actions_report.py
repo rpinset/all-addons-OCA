@@ -33,6 +33,8 @@ class IrActionsReport(models.Model):
         )
         report_sudo = self._get_report(report_ref)
         if res_ids:
+            if isinstance(res_ids, int):
+                res_ids = [res_ids]
             encrypt_password = self.env.context.get("encrypt_password")
             report = self._get_report_from_name(report_sudo.report_name).with_context(
                 encrypt_password=encrypt_password

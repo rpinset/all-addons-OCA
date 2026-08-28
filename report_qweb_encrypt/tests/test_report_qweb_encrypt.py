@@ -40,12 +40,12 @@ class TestReportQwebEncrypt(HttpCase):
         report.encrypt = "manual"
 
         # If no encrypt_password, still not encrypted
-        pdf, _ = report.with_context(**ctx)._render_qweb_pdf(report.report_name, [1])
+        pdf, _ = report.with_context(**ctx)._render_qweb_pdf(report.report_name, 1)
         self.assertFalse(pdf.count(b"/Encrypt"))
 
         # Valid python string for password
         ctx.update({"encrypt_password": "secretcode"})
-        pdf, _ = report.with_context(**ctx)._render_qweb_pdf(report.report_name, [1])
+        pdf, _ = report.with_context(**ctx)._render_qweb_pdf(report.report_name, 1)
         self.assertTrue(pdf.count(b"/Encrypt"))
 
     # TODO: test_report_qweb_manual_encrypt, require JS test?

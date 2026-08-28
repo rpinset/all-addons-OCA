@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-08-25 04:12 UTC
+Generated 2026-08-28 23:53 UTC
 
 ## Skipped repos
 
@@ -24,6 +24,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-lengow](https://github.com/OCA/connector-lengow) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
+| [connector-mautic](https://github.com/OCA/connector-mautic) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | `no_module` | No directory with __manifest__.py at repo root |

@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-08-25 04:12 UTC
+Generated 2026-08-28 23:53 UTC
 
-Total skipped: **137**
+Total skipped: **138**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **112**
+Count: **113**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -55,6 +55,7 @@ Count: **112**
 | [connector-jira](https://github.com/OCA/connector-jira) | [19.0](https://github.com/OCA/connector-jira/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-lengow](https://github.com/OCA/connector-lengow) | [19.0](https://github.com/OCA/connector-lengow/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | [19.0](https://github.com/OCA/connector-magento/tree/19.0) | No directory with __manifest__.py at repo root |
+| [connector-mautic](https://github.com/OCA/connector-mautic) | [19.0](https://github.com/OCA/connector-mautic/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | [19.0](https://github.com/OCA/connector-odoo2odoo/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | [19.0](https://github.com/OCA/connector-prestashop/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | [19.0](https://github.com/OCA/connector-redmine/tree/19.0) | No directory with __manifest__.py at repo root |

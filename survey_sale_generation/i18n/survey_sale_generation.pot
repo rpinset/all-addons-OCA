@@ -1,0 +1,162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* survey_sale_generation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__allowed_sale_order_field_ids
+msgid "Allowed Sale Order Field"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model_terms:ir.ui.view,arch_db:survey_sale_generation.survey_question_form
+msgid "Answers"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,help:survey_sale_generation.field_survey_question__generate_quotations
+#: model:ir.model.fields,help:survey_sale_generation.field_survey_survey__generate_quotations
+msgid ""
+"Check it to generate sale orders from the survey answers. You'll need to "
+"configure at least one question linked to a product."
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,help:survey_sale_generation.field_survey_survey__quotation_mail_template_id
+msgid "Choose a template. Otherwise the default one will be used."
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__crm_team_id
+msgid "Crm Team"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_sale_order__display_name
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__display_name
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question_answer__display_name
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__display_name
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_user_input__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,help:survey_sale_generation.field_survey_question__product_uom_qty_question_id
+msgid ""
+"For multiple answer questions we might want to consider how much of that "
+"product we want to order. For example, one question could be: 'How many "
+"members in your team?' and other could be 'Choose the membership type'. "
+"We'll want to multiply members by memberships in our sale line."
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__generate_quotations
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__generate_quotations
+msgid "Generate Quotations"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_sale_order__id
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__id
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question_answer__id
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__id
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_user_input__id
+msgid "ID"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__product_ids
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question_answer__product_ids
+msgid "Product"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__product_uom_qty_question_id
+msgid "Product Uom Qty Question"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__quotation_mail_template_id
+msgid "Quotation Mail Template"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_user_input__sale_order_id
+msgid "Sale Order"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__sale_order_field
+msgid "Sale Order Field"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question_answer__sale_order_template_id
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__sale_order_template_id
+msgid "Sale Order Template"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model_terms:ir.ui.view,arch_db:survey_sale_generation.survey_form
+#: model_terms:ir.ui.view,arch_db:survey_sale_generation.survey_question_form
+msgid "Sales"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model,name:survey_sale_generation.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_survey__send_quotation_to_customer
+msgid "Send Quotation To Customer"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,help:survey_sale_generation.field_survey_survey__send_quotation_to_customer
+msgid "Send the quotation to the customer automatically."
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model.fields,field_description:survey_sale_generation.field_survey_question__show_in_sale_order_comment
+msgid "Show In Sale Order Comment"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model,name:survey_sale_generation.model_survey_survey
+msgid "Survey"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model,name:survey_sale_generation.model_survey_question_answer
+msgid "Survey Label"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model,name:survey_sale_generation.model_survey_question
+msgid "Survey Question"
+msgstr ""
+
+#. module: survey_sale_generation
+#: model:ir.model,name:survey_sale_generation.model_survey_user_input
+#: model:ir.model.fields,field_description:survey_sale_generation.field_sale_order__survey_user_input_id
+msgid "Survey User Input"
+msgstr ""
+
+#. module: survey_sale_generation
+#. odoo-python
+#: code:addons/survey_sale_generation/models/survey_user_input.py:0
+msgid ""
+"This order has been created from this survey input: <a href=# data-oe-"
+"model=survey.user_input data-oe-id=%(id)d>%(survey_title)s</a>"
+msgstr ""

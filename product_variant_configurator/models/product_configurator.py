@@ -302,7 +302,9 @@ class ProductConfigurator(models.AbstractModel):
                     prod_attr_val=product_attribute_value: v.product_attribute_value_id  # noqa
                     == prod_attr_val
                 )
-            product = product_obj.create(
+            # Create the product with sudo for not requiring the permission for creating
+            # products to those users confirming the SO/PO
+            product = product_obj.sudo().create(
                 {
                     "name": self.product_tmpl_id.name,
                     "product_tmpl_id": self.product_tmpl_id.id,

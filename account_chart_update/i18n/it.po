@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-01 03:44+0000\n"
-"PO-Revision-Date: 2026-06-10 14:42+0000\n"
+"PO-Revision-Date: 2026-08-26 17:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_chart_update/wizard/wizard_chart_update.py:0
 msgid "%s record(s) to be created."
-msgstr ""
+msgstr "%s record(s) da creare."
 
 #. module: account_chart_update
 #. odoo-python
