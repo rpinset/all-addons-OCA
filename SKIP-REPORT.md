@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-08-25 04:11 UTC
+Generated 2026-08-28 23:49 UTC
 
-Total skipped: **115**
+Total skipped: **116**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **39**
+Count: **40**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -14,6 +14,7 @@ Count: **39**
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [16.0](https://github.com/OCA/ansible-odoo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [16.0](https://github.com/OCA/bank-payment-alternative/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [16.0](https://github.com/OCA/connector-magento-php-extension/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [connector-mautic](https://github.com/OCA/connector-mautic) | [16.0](https://github.com/OCA/connector-mautic/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [16.0](https://github.com/OCA/connector-shopify/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [16.0](https://github.com/OCA/crowdfunding/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [16.0](https://github.com/OCA/edi-ediversa/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |

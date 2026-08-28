@@ -1453,11 +1453,9 @@ msgstr ""
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
 #, python-format
 msgid ""
-"Two distinct partners with VAT number %(vat)s or Fiscal Code %(fiscalcode)s "
+"Two distinct partners {partners} with VAT number {vat} or Fiscal Code {cf} "
 "already present in db."
 msgstr ""
-"Nel database sono già presenti due diversi partner con partita IVA %(vat)s o "
-"codice fiscale %(fiscalcode)s."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__type
@@ -1661,6 +1659,14 @@ msgstr ""
 #, python-format
 msgid "You can select only one XML file to link."
 msgstr "È possibile selezionare solo un file XML da collegare."
+
+#, python-format
+#~ msgid ""
+#~ "Two distinct partners with VAT number %(vat)s or Fiscal Code "
+#~ "%(fiscalcode)s already present in db."
+#~ msgstr ""
+#~ "Nel database sono già presenti due diversi partner con partita IVA "
+#~ "%(vat)s o codice fiscale %(fiscalcode)s."
 
 #, python-format
 #~ msgid ""

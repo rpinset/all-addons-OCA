@@ -4,7 +4,7 @@
 {
     "name": "Filesystem Attachment Backend S3",
     "summary": "Allows to use server environment with fs storage attachment S3",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "FS Storage",
     "website": "https://github.com/OCA/storage",
     "author": " ACSONE SA/NV, Dixmit, Odoo Community Association (OCA)",
@@ -14,4 +14,6 @@
     "depends": ["fs_attachment_environment", "fs_attachment_s3"],
     "data": [],
     "auto_install": True,
+    "post_init_hook": "post_init_hook",
+    "uninstall_hook": "uninstall_hook",
 }

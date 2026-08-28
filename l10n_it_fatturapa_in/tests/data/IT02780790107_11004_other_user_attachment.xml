@@ -8,7 +8,7 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
         <DatiTrasmissione>
             <IdTrasmittente>
                 <IdPaese>IT</IdPaese>
-                <IdCodice>02780790107</IdCodice>
+                <IdCodice>58249070440</IdCodice>
             </IdTrasmittente>
             <ProgressivoInvio>00001</ProgressivoInvio>
             <FormatoTrasmissione>FPA12</FormatoTrasmissione>
@@ -19,7 +19,7 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
             <DatiAnagrafici>
                 <IdFiscaleIVA>
                     <IdPaese>IT</IdPaese>
-                    <IdCodice>02780790107</IdCodice>
+                    <IdCodice>36809530714</IdCodice>
                 </IdFiscaleIVA>
                 <Anagrafica>
                     <Denominazione>SOCIETA' ALPHA SRL</Denominazione>
@@ -34,19 +34,6 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
                 <Nazione>IT</Nazione>
             </Sede>
         </CedentePrestatore>
-        <RappresentanteFiscale>
-            <DatiAnagrafici>
-                <IdFiscaleIVA>
-                    <IdPaese>IT</IdPaese>
-                    <IdCodice>03339130126</IdCodice>
-                </IdFiscaleIVA>
-                <CodiceFiscale>03339130126</CodiceFiscale>
-                <Anagrafica>
-                    <Denominazione>Rappresentante fiscale</Denominazione>
-                    <CodEORI>1234567890123</CodEORI>
-                </Anagrafica>
-            </DatiAnagrafici>
-        </RappresentanteFiscale>
         <CessionarioCommittente>
             <DatiAnagrafici>
                 <CodiceFiscale>80213330584</CodiceFiscale>
@@ -176,9 +163,9 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
                 <ModalitaPagamento>MP05</ModalitaPagamento>
                 <DataScadenzaPagamento>2015-04-30</DataScadenzaPagamento>
                 <ImportoPagamento>20.00</ImportoPagamento>
-                <IstitutoFinanziario>Bank Test 002</IstitutoFinanziario>
-                <IBAN>IT28V0100003245232200001299</IBAN>
-                <BIC>TESTTES1</BIC>
+                <IstitutoFinanziario>Bank Test</IstitutoFinanziario>
+                <IBAN>IT28V0100003245232200001200</IBAN>
+                <BIC>GEBABEBB</BIC>
                 <PenalitaPagamentiRitardati>2.00</PenalitaPagamentiRitardati>
                 <DataDecorrenzaPenale>2015-05-01</DataDecorrenzaPenale>
             </DettaglioPagamento>
@@ -186,9 +173,9 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
                 <ModalitaPagamento>MP05</ModalitaPagamento>
                 <DataScadenzaPagamento>2015-05-30</DataScadenzaPagamento>
                 <ImportoPagamento>9.00</ImportoPagamento>
-                <IstitutoFinanziario>Bank Test 002</IstitutoFinanziario>
-                <IBAN>IT28V0100003245232200001299</IBAN>
-                <BIC>TESTTES1</BIC>
+                <IstitutoFinanziario>Bank Test</IstitutoFinanziario>
+                <IBAN>IT28V0100003245232200001200</IBAN>
+                <BIC>GEBABEBB</BIC>
                 <PenalitaPagamentiRitardati>1.00</PenalitaPagamentiRitardati>
                 <DataDecorrenzaPenale>2015-05-31</DataDecorrenzaPenale>
             </DettaglioPagamento>
@@ -199,9 +186,9 @@ xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.
                 <ModalitaPagamento>MP05</ModalitaPagamento>
                 <DataScadenzaPagamento>2015-06-30</DataScadenzaPagamento>
                 <ImportoPagamento>1.50</ImportoPagamento>
-                <IstitutoFinanziario>Bank Test 002</IstitutoFinanziario>
-                <IBAN>IT28V0100003245232200001299</IBAN>
-                <BIC>TESTTES1</BIC>
+                <IstitutoFinanziario>Bank Test</IstitutoFinanziario>
+                <IBAN>IT28V0100003245232200001200</IBAN>
+                <BIC>GEBABEBB</BIC>
                 <PenalitaPagamentiRitardati>0.15</PenalitaPagamentiRitardati>
                 <DataDecorrenzaPenale>2015-07-01</DataDecorrenzaPenale>
             </DettaglioPagamento>

@@ -1358,7 +1358,7 @@ msgstr ""
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
 #, python-format
 msgid ""
-"Two distinct partners with VAT number %(vat)s or Fiscal Code %(fiscalcode)s "
+"Two distinct partners {partners} with VAT number {vat} or Fiscal Code {cf} "
 "already present in db."
 msgstr ""
 
