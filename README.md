@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-08-28 23:44 UTC** (elapsed 144s)
+Last build: **2026-09-01 08:46 UTC** (elapsed 184s)
 
 - Repos integrated: **140**
-- Canonical modules: **2912**
+- Canonical modules: **2913**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **118**
 
@@ -45,7 +45,7 @@ Last build: **2026-08-28 23:44 UTC** (elapsed 144s)
 | [currency](https://github.com/OCA/currency) | 8 | 9e281c1 2025-09-16 Betül Öğmen Translated using Weblate (Turkish) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d96263b 2026-07-03 OCA-git-bot Merge PR #632 into 14.0 |
-| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 51 | 8f4ba60 2026-07-30 OCA-git-bot [BOT] post-merge updates |
+| [delivery-carrier](https://github.com/OCA/delivery-carrier) | 52 | 08acdc3 2026-08-31 OCA-git-bot [BOT] post-merge updates |
 | [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
