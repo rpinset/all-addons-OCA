@@ -577,7 +577,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 19.0.1.0.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 19.0.1.0.8 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -796,7 +796,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt54](account_statement_import_camt54/) | 19.0.1.0.0 |  | Bank Account Camt54 Import
 [account_statement_import_file](account_statement_import_file/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
-[account_statement_import_online](account_statement_import_online/) | 19.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 19.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 19.0.1.0.0 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 19.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 19.0.1.0.0 |  | Online Bank Statements: MyPonto.com
@@ -1888,6 +1888,7 @@ addon | version | maintainers | summary
 [edi_queue_oca](edi_queue_oca/) | 19.0.1.3.0 |  | Set Queue Jobs on EDI
 [edi_record_metadata_oca](edi_record_metadata_oca/) | 19.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to store metadata for related records.
 [edi_sale_oca](edi_sale_oca/) | 19.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Configuration and special behaviors for EDI on sales.
+[edi_storage_oca](edi_storage_oca/) | 19.0.1.0.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
 [edi_ubl_oca](edi_ubl_oca/) | 19.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Define EDI backend type for UBL.
 [edi_webservice_oca](edi_webservice_oca/) | 19.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Defines webservice integration from EDI Exchange records
 
@@ -2195,10 +2196,11 @@ addon | version | maintainers | summary
 [helpdesk_mgmt_fieldservice](helpdesk_mgmt_fieldservice/) | 19.0.1.0.0 |  | Create service orders from a ticket
 [helpdesk_mgmt_project](helpdesk_mgmt_project/) | 19.0.1.0.0 |  | Add the option to select project in the tickets.
 [helpdesk_mgmt_rating](helpdesk_mgmt_rating/) | 19.0.1.0.0 |  | This module allows customer to rate the assistance received on a ticket.
+[helpdesk_mgmt_sale](helpdesk_mgmt_sale/) | 19.0.1.0.0 |  | Add the option to select project in the sale orders.
 [helpdesk_mgmtsystem_nonconformity](helpdesk_mgmtsystem_nonconformity/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Links helpdesk tickets with nonconformities
 [helpdesk_portal_priority](helpdesk_portal_priority/) | 19.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Priority
 [helpdesk_product](helpdesk_product/) | 19.0.1.1.0 |  | Add the option to select product in the tickets.
-[helpdesk_ticket_close_inactive](helpdesk_ticket_close_inactive/) | 19.0.1.0.0 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Helpdesk Ticket Close Inactive
+[helpdesk_ticket_close_inactive](helpdesk_ticket_close_inactive/) | 19.0.1.0.1 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Helpdesk Ticket Close Inactive
 [helpdesk_ticket_partner_response](helpdesk_ticket_partner_response/) | 19.0.1.3.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Change ticket stage when partner response
 [helpdesk_ticket_related](helpdesk_ticket_related/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Link tickets to each other
 [helpdesk_type](helpdesk_type/) | 19.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add a type to your tickets
@@ -2250,7 +2252,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_course](hr_course/) | 19.0.1.0.0 |  | This module allows your to manage employee's training courses
 [hr_department_code](hr_department_code/) | 19.0.1.0.0 |  | HR department code
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 19.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
+[hr_employee_age](hr_employee_age/) | 19.0.1.0.0 |  | Age field for employee
+[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 19.0.1.1.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_document](hr_employee_document/) | 19.0.1.0.0 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 19.0.1.1.1 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_language](hr_employee_language/) | 19.0.1.0.0 |  | HR Employee Language
@@ -2304,7 +2307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 19.0.1.0.2 |  | Theoretical vs Attended Time Analysis
+[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 19.0.1.0.3 |  | Theoretical vs Attended Time Analysis
 
 [//]: # (end addons)
 
@@ -2615,7 +2618,7 @@ addon | version | maintainers | summary
 [l10n_br_crm](l10n_br_crm/) | 19.0.1.2.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization CRM
 [l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 19.0.1.0.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Update exchange rates using OCA modules for Brazil
 [l10n_br_fiscal](l10n_br_fiscal/) | 19.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
-[l10n_br_hr](l10n_br_hr/) | 19.0.1.4.0 |  | Brazilian Localization HR
+[l10n_br_hr](l10n_br_hr/) | 19.0.1.5.0 |  | Brazilian Localization HR
 [l10n_br_mis_report](l10n_br_mis_report/) | 19.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Templates de relatórios contábeis brasileiros: Balanço Patrimonial e DRE
 [l10n_br_resource](l10n_br_resource/) | 19.0.2.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | This module extend core resource to create important brazilian informations. Define a Brazilian calendar and some tools to compute dates used in financial and payroll modules
 [l10n_br_zip](l10n_br_zip/) | 19.0.1.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Localisation ZIP Codes
@@ -3295,7 +3298,7 @@ addon | version | maintainers | summary
 [l10n_es_partner](l10n_es_partner/) | 19.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 19.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 19.0.1.0.0 |  | Exportación de fichero bancario Confirming estándar AEF
-[l10n_es_toponyms](l10n_es_toponyms/) | 19.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
+[l10n_es_toponyms](l10n_es_toponyms/) | 19.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 19.0.1.0.1 |  | Libros registro del IVA y del IRPF
 
 [//]: # (end addons)
@@ -3458,6 +3461,7 @@ addon | version | maintainers | summary
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 19.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_restrict_send_button](mail_restrict_send_button/) | 19.0.1.0.0 |  | Security for Send Message Button on Chatter Area
 [mail_send_confirmation](mail_send_confirmation/) | 19.0.1.0.0 |  | Mail Send Confirmation
+[mail_show_follower](mail_show_follower/) | 19.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Show CC document followers in mails.
 [mail_tracking](mail_tracking/) | 19.0.1.0.5 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 19.0.1.0.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 19.0.1.0.0 |  | Improve mass mailing email tracking
@@ -4336,6 +4340,7 @@ addon | version | maintainers | summary
 [product_status](product_status/) | 19.0.1.0.0 |  | Product Status Computed From Fields
 [product_supplierinfo_comment](product_supplierinfo_comment/) | 19.0.1.0.0 |  | Add the comment field to the product supplier info
 [product_supplierinfo_indirect_cost](product_supplierinfo_indirect_cost/) | 19.0.1.0.0 |  | Add indirect cost percent and amount to supplier info
+[product_supplierinfo_revision](product_supplierinfo_revision/) | 19.0.1.0.0 |  | Product Supplierinfo Revision
 [product_usability](product_usability/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Product module and adds extra groups to fine-tune access rights
 [purchase_product_template_tags](purchase_product_template_tags/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Purchase app
 [sale_product_matrix_secondary_unit](sale_product_matrix_secondary_unit/) | 19.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Secondary unit in product matrix
@@ -4653,6 +4658,7 @@ addon | version | maintainers | summary
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 19.0.1.1.1 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Add a an incoterm field for supplier and use it on purchase order
 [purchase_reception_status](purchase_reception_status/) | 19.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders (OCA logic)
 [purchase_request](purchase_request/) | 19.0.1.0.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request_type](purchase_request_type/) | 19.0.1.0.0 |  | Purchase Request Type
 [purchase_rfq_number](purchase_rfq_number/) | 19.0.1.0.0 |  | Different sequence for purchase for quotations
 [purchase_security](purchase_security/) | 19.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | See only your purchase orders
 [purchase_stock_date_done_revaluation](purchase_stock_date_done_revaluation/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Revalue not-yet-billed foreign-currency purchase receipts when their effective date changes
@@ -4708,7 +4714,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queue_job](queue_job/) | 19.0.2.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
+[queue_job](queue_job/) | 19.0.2.1.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Job Queue
 [test_queue_job](test_queue_job/) | 19.0.2.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Queue Job Tests
 
 
@@ -4815,8 +4821,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_label_printer](base_report_to_label_printer/) | 19.0.1.1.0 |  | Report to label printer
-[base_report_to_printer](base_report_to_printer/) | 19.0.1.2.3 |  | Report to printer
+[base_report_to_label_printer](base_report_to_label_printer/) | 19.0.1.1.1 |  | Report to label printer
+[base_report_to_printer](base_report_to_printer/) | 19.0.1.2.4 |  | Report to printer
 [base_report_to_printer_cups](base_report_to_printer_cups/) | 19.0.0.2.0 |  | Report to printer CUPS
 [base_report_to_printer_qztray](base_report_to_printer_qztray/) | 19.0.1.0.2 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Report to QZ Tray
 [base_report_to_printer_websocket](base_report_to_printer_websocket/) | 19.0.1.0.0 |  | Report to printer via WebSocket
@@ -5912,6 +5918,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_product](barcodes_generator_product/) | 19.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
+[product_multi_barcode](product_multi_barcode/) | 19.0.1.0.0 |  | Multiple barcodes on products
 
 [//]: # (end addons)
 
@@ -6235,6 +6242,7 @@ addon | version | maintainers | summary
 [stock_picking_show_linked](stock_picking_show_linked/) | 19.0.1.0.0 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
 [stock_picking_type_user_restriction](stock_picking_type_user_restriction/) | 19.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Restrict some users to see and use only certain picking types
 [stock_picking_volume](stock_picking_volume/) | 19.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Compute volume information on stock moves and pickings
+[stock_putaway_product_template](stock_putaway_product_template/) | 19.0.1.0.0 | <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Add product template in putaway strategies from the product view
 [stock_secondary_unit](stock_secondary_unit/) | 19.0.1.0.0 |  | Get product quantities in a secondary unit
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
 
@@ -6684,6 +6692,8 @@ addon | version | maintainers | summary
 [hotel_housekeeping](hotel_housekeeping/) | 19.0.1.0.0 |  | Manages Housekeeping Activities and its Process
 [hotel_reservation](hotel_reservation/) | 19.0.1.0.0 |  | Manages Guest Reservation & displays Reservation Summary
 [hotel_restaurant](hotel_restaurant/) | 19.0.1.0.0 |  | Table booking facilities and Managing customers orders
+[report_hotel_reservation](report_hotel_reservation/) | 19.0.1.0.0 |  | Hotel Reservation Management - Reporting
+[report_hotel_restaurant](report_hotel_restaurant/) | 19.0.1.0.0 |  | Restaurant Management - Reporting
 
 [//]: # (end addons)
 
@@ -6757,7 +6767,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 19.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 19.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | This widget allows to display charts using Bokeh library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 19.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Web Widget Numeric Step
-[web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 19.0.1.0.0 |  | Web Widget One2many Tree Line Duplicate
+[web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 19.0.1.0.1 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_product_label_section_and_note_full_label](web_widget_product_label_section_and_note_full_label/) | 19.0.1.0.0 |  | Display the full label in the product_label_section_and_note widget.
 [web_widget_product_label_section_and_note_name_visibility](web_widget_product_label_section_and_note_name_visibility/) | 19.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Alternate the visibility of the product and description.
 [web_widget_section_and_note_text_scrollable](web_widget_section_and_note_text_scrollable/) | 19.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Make the text field of Section and Note widget scrollable
@@ -6866,6 +6876,7 @@ addon | version | maintainers | summary
 [website_form_require_legal](website_form_require_legal/) | 19.0.1.0.1 |  | Add possibility to require confirm legal terms.
 [website_forum_subscription](website_forum_subscription/) | 19.0.1.0.0 |  | Adds a button to allow subscription from the website
 [website_google_tag_manager](website_google_tag_manager/) | 19.0.1.0.0 |  | Add support for Google Tag Manager
+[website_require_login](website_require_login/) | 19.0.1.0.0 |  | Website Login Required
 [website_snippet_big_button](website_snippet_big_button/) | 19.0.1.0.0 |  | A snippet that adds two big buttons
 [website_snippet_marginless_gallery](website_snippet_marginless_gallery/) | 19.0.1.0.0 |  | Add a snippet to have a marginless image gallery
 
