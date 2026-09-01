@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-08-28 23:44 UTC** (elapsed 153s)
+Last build: **2026-09-01 08:47 UTC** (elapsed 184s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -63,7 +63,7 @@ Last build: **2026-08-28 23:44 UTC** (elapsed 153s)
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 11 | 89b9a31 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 88236d5 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 80c85f7 2023-10-09 Weblate Update translation files |
-| [l10n-france](https://github.com/OCA/l10n-france) | 9 | 118bdcb 2023-09-03 OCA-git-bot [UPD] README.rst |
+| [l10n-france](https://github.com/OCA/l10n-france) | 9 | 730e9e4 2026-08-31 EvaS595 Translated using Weblate (French) |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 8 | 1555940 2025-05-07 Pedro M. Baeza Merge pull request #184 from Tecnativa/13.0-imp-l10n_de_skr04_mis_reports-del-l10n_generic_coa |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | 8bb8118 2023-10-09 Weblate Update translation files |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 3 | cbc2df0 2023-09-03 OCA-git-bot [UPD] README.rst |
