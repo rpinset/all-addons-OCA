@@ -183,6 +183,9 @@ and promote its widespread use.
 ## From OCA/account-closing
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# account-closing
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-closing&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/account-closing/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/account-closing/actions/workflows/test.yml?query=branch%3A16.0)
@@ -191,9 +194,7 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# account-closing
-
-{'TODO': 'add repo description.'}
+Odoo Accountant closing tools
 
 <!-- /!\ do not modify below this line -->
 
@@ -219,7 +220,7 @@ addon | version | maintainers | summary
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 16.0.1.0.0 |  | Generic fiscal year closing wizard
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 16.0.1.5.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start/end dates on invoice/move lines
 [account_invoice_start_end_dates_move](account_invoice_start_end_dates_move/) | 16.0.1.0.0 |  | Add the possibility to choose start and end dates on account invoice.
-[account_multicurrency_revaluation](account_multicurrency_revaluation/) | 16.0.1.0.1 |  | Manage revaluation for multicurrency environment
+[account_multicurrency_revaluation](account_multicurrency_revaluation/) | 16.0.1.0.2 |  | Manage revaluation for multicurrency environment
 
 [//]: # (end addons)
 
@@ -886,7 +887,7 @@ addon | version | maintainers | summary
 [ai_oca_bridge_helpdesk_mgmt](ai_oca_bridge_helpdesk_mgmt/) | 16.0.1.0.0 |  | Integrate AI Bridge with Helpdesk Management
 [ai_oca_bridge_mrp](ai_oca_bridge_mrp/) | 16.0.2.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Adds MRP triggers for AI Bridges
 [ai_oca_mcp](ai_oca_mcp/) | 16.0.1.0.0 |  | MCP Interface for Odoo
-[ai_tool](ai_tool/) | 16.0.1.0.1 |  | We want to generate some specific AI Tools that might be used in other places, like MCP or native.
+[ai_tool](ai_tool/) | 16.0.1.0.2 |  | We want to generate some specific AI Tools that might be used in other places, like MCP or native.
 
 [//]: # (end addons)
 
@@ -2631,7 +2632,7 @@ addon | version | maintainers | summary
 [fieldservice_digitized_signature](fieldservice_digitized_signature/) | 16.0.1.0.0 |  | Capture a digitized signature on Field Service orders
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 16.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate stock operations with your field service equipments
 [fieldservice_fleet](fieldservice_fleet/) | 16.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Link Field Service vehicles with Odoo Fleet
-[fieldservice_geoengine](fieldservice_geoengine/) | 16.0.1.4.3 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
+[fieldservice_geoengine](fieldservice_geoengine/) | 16.0.1.4.4 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_account](fieldservice_isp_account/) | 16.0.1.1.0 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Invoice Field Service orders based on employee time or contractor costs
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 16.0.1.1.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service workflow for Internet Service Providers
 [fieldservice_portal](fieldservice_portal/) | 16.0.1.1.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Bridge module between fieldservice and portal.
@@ -3561,7 +3562,7 @@ addon | version | maintainers | summary
 [l10n_br_coa](l10n_br_coa/) | 16.0.2.7.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Base do Planos de Contas brasileiros
 [l10n_br_coa_generic](l10n_br_coa_generic/) | 16.0.2.2.1 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Plano de Contas para empresas do Regime normal (Micro e pequenas empresas)
 [l10n_br_coa_simple](l10n_br_coa_simple/) | 16.0.2.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Plano de Contas ITG 1000 para Microempresas e Empresa de Pequeno Porte
-[l10n_br_contract](l10n_br_contract/) | 16.0.7.0.3 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Customization of Contract module for implementations in Brazil.
+[l10n_br_contract](l10n_br_contract/) | 16.0.7.1.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Customization of Contract module for implementations in Brazil.
 [l10n_br_crm](l10n_br_crm/) | 16.0.5.2.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Localization CRM
 [l10n_br_crm_cnpj_search](l10n_br_crm_cnpj_search/) | 16.0.5.1.0 | <a href='https://github.com/corredato'><img src='https://github.com/corredato.png' width='32' height='32' style='border-radius:50%;' alt='corredato'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | CNPJ search in CRM Lead
 [l10n_br_cte](l10n_br_cte/) | 16.0.10.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Electronic Invoice CT-e
@@ -8390,9 +8391,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_stock_orderpoint_mto_as_mts](sale_stock_orderpoint_mto_as_mts/) | 16.0.1.0.1 |  | Ensure orderpoint when so line route is mto
-[stock_location_orderpoint](stock_location_orderpoint/) | 16.0.3.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Declare orderpoint on a location allowing to replenish any product with the same criteria.
+[stock_location_orderpoint](stock_location_orderpoint/) | 16.0.3.1.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Declare orderpoint on a location allowing to replenish any product with the same criteria.
 [stock_location_orderpoint_average_daily_sale](stock_location_orderpoint_average_daily_sale/) | 16.0.1.0.0 |  | This module allows to base replenishments quantities (on stock locations) on average daily sales
-[stock_location_orderpoint_cleanup](stock_location_orderpoint_cleanup/) | 16.0.1.0.0 |  | This module allows to clean moves generated by orderpoint
+[stock_location_orderpoint_cleanup](stock_location_orderpoint_cleanup/) | 16.0.1.1.0 |  | This module allows to clean moves generated by orderpoint
 [stock_orderpoint_default_location](stock_orderpoint_default_location/) | 16.0.1.0.0 |  | This module allows to define a different default location than the stock location
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 16.0.1.0.1 |  | Link Reordering rules to stock moves
 [stock_orderpoint_mto_as_mts](stock_orderpoint_mto_as_mts/) | 16.0.1.3.1 |  | Materialize need from MTO route through orderpoint

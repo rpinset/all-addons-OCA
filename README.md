@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
+Last build: **2026-09-01 08:51 UTC** (elapsed 169s)
 
 - Repos integrated: **142**
 - Canonical modules: **3113**
@@ -14,7 +14,7 @@ Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
 | [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 20a6a87 2026-07-21 Miquel Raïch Merge pull request #5826 from jguenat/16.0-pos-remove_noupdate_ir_rule |
 | [account-analytic](https://github.com/OCA/account-analytic) | 33 | cdc63a6 2026-05-25 CoralNetkia Translated using Weblate (Spanish) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | d38bdd2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [account-closing](https://github.com/OCA/account-closing) | 15 | c4327a6 2026-05-26 Oso Tranquilo Translated using Weblate (Spanish) |
+| [account-closing](https://github.com/OCA/account-closing) | 15 | 4a3a3cf 2026-08-31 OCA-git-bot [BOT] post-merge updates |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 00d2d46 2026-08-17 Cándido Martínez Translated using Weblate (Galician) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 48 | a63f658 2026-08-19 mymage Translated using Weblate (Italian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 17 | cc48155 2026-07-05 Cándido Martínez Translated using Weblate (Galician) |
@@ -23,7 +23,7 @@ Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
 | [account-payment](https://github.com/OCA/account-payment) | 27 | ad356f0 2026-07-06 Cándido Martínez Translated using Weblate (Galician) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 15 | 30e501b 2026-07-06 Cándido Martínez Translated using Weblate (Galician) |
 | [agreement](https://github.com/OCA/agreement) | 6 | 24669ae 2026-07-27 mymage Translated using Weblate (Italian) |
-| [ai](https://github.com/OCA/ai) | 11 | f780bb7 2026-08-10 OCA-git-bot [BOT] post-merge updates |
+| [ai](https://github.com/OCA/ai) | 11 | 80c64ac 2026-09-01 OCA-git-bot [BOT] post-merge updates |
 | [automation](https://github.com/OCA/automation) | 1 | b8ebefd 2026-07-28 mymage Translated using Weblate (Italian) |
 | [bank-payment](https://github.com/OCA/bank-payment) | 19 | c6d2c92 2026-08-18 mymage Translated using Weblate (Italian) |
 | [bank-statement-import](https://github.com/OCA/bank-statement-import) | 17 | 536b050 2026-06-11 OCA-git-bot [BOT] post-merge updates |
@@ -50,9 +50,9 @@ Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 34 | 84b1a8e 2026-08-20 Su Translated using Weblate (Portuguese) |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 11f6f43 2026-02-04 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 41 | bc4eef4 2026-08-18 OCA-git-bot [BOT] post-merge updates |
-| [edi-framework](https://github.com/OCA/edi-framework) | 23 | 64dd45d 2026-08-28 OCA-git-bot [BOT] post-merge updates |
+| [edi-framework](https://github.com/OCA/edi-framework) | 23 | 96f289f 2026-08-31 mymage Added translation using Weblate (Italian) |
 | [event](https://github.com/OCA/event) | 20 | 79d2b15 2026-08-13 OCA-git-bot [BOT] post-merge updates |
-| [field-service](https://github.com/OCA/field-service) | 29 | 868ecde 2026-08-11 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 29 | 9267973 2026-08-31 OCA-git-bot [BOT] post-merge updates |
 | [fleet](https://github.com/OCA/fleet) | 17 | 3f88e12 2026-05-24 OCA-git-bot [BOT] post-merge updates |
 | [geospatial](https://github.com/OCA/geospatial) | 10 | 4c2b269 2026-08-27 Weblate Update translation files |
 | [helpdesk](https://github.com/OCA/helpdesk) | 27 | 0345958 2026-08-26 mymage Added translation using Weblate (Italian) |
@@ -67,7 +67,7 @@ Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
 | [knowledge](https://github.com/OCA/knowledge) | 14 | 8f372fe 2026-06-20 Pedro M. Baeza Merge pull request #623 from ledoent/16.0-copier-update-v143 |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 3 | aa23015 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 13 | 7d743d8 2026-04-09 Weblate Update translation files |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | ed2b018 2026-08-28 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 0f05932 2026-08-31 OCA-git-bot [BOT] post-merge updates |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | 5 | a3e16a7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 30 | 1fa9088 2026-08-20 OCA-git-bot [BOT] post-merge updates |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 4 | 2d9524d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -133,7 +133,7 @@ Last build: **2026-08-28 23:49 UTC** (elapsed 205s)
 | [spreadsheet](https://github.com/OCA/spreadsheet) | 2 | 2914380 2025-12-06 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | 11 | babd2ee 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 13 | 2cf4ad6 2026-04-20 mymage Translated using Weblate (Italian) |
-| [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | 12 | fc9a02a 2026-08-19 mymage Translated using Weblate (Italian) |
+| [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | 12 | 43a21ce 2026-08-31 Weblate Update translation files |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 25 | 4360f75 2026-07-15 Weblate Update translation files |
 | [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | 8 | 7a23da2 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 0a461ee 2026-06-12 Denis Roussel (ACSONE) Merge pull request #61 from acsone/16.0-imp-copier |
