@@ -31,6 +31,7 @@ class UpsRequest:
         self.client_secret = self.carrier.ups_client_secret
         self.token = self.carrier.ups_token
         self.token_expiration_date = self.carrier.ups_token_expiration_date
+        self.negotiated_rates = self.carrier.ups_negotiated_rates
         self.url = "https://wwwcie.ups.com"
         if self.carrier.prod_environment:
             self.url = "https://onlinetools.ups.com"
@@ -47,10 +48,17 @@ class UpsRequest:
                 raise UserError(msg)
 
     def _send_request(
-        self, url, json=None, data=None, headers=None, method="post", auth=None
+        self,
+        url,
+        json=None,
+        data=None,
+        headers=None,
+        method="post",
+        auth=None,
+        timeout=None,
     ):
         return getattr(requests, method)(
-            url, data=data, json=json, headers=headers, auth=auth
+            url, data=data, json=json, headers=headers, auth=auth, timeout=timeout
         )
 
     def _get_new_token(self):
@@ -84,6 +92,7 @@ class UpsRequest:
         data=None,
         method="post",
         headers_extra=None,
+        timeout=10,
     ):
         if (
             not self.token
@@ -97,12 +106,14 @@ class UpsRequest:
         }
         if headers_extra:
             headers = {**headers, **headers_extra}
-        status = self._send_request(url, json, data, headers, method)
+        status = self._send_request(url, json, data, headers, method, timeout=timeout)
         # Generate a new token
         if status.status_code == 401:
             self._get_new_token()
             headers["Authorization"] = f"Bearer {self.token}"
-            status = self._send_request(url, json, data, headers, method)
+            status = self._send_request(
+                url, json, data, headers, method, timeout=timeout
+            )
         status = status.json()
         ups_last_request = f"URL: {self.url}\nData: {data}\nJSON: {json}"
         self.carrier.log_xml(ups_last_request, "ups_last_request")
@@ -284,6 +295,10 @@ class UpsRequest:
                 "LabelSpecification": self._label_data(),
             }
         }
+        if self.negotiated_rates:
+            vals["ShipmentRequest"]["Shipment"]["ShipmentRatingOptions"] = {
+                "NegotiatedRatesIndicator": "Y"
+            }
         if picking.carrier_id.ups_cash_on_delivery and picking.sale_id:
             vals["ShipmentRequest"]["Shipment"]["ShipmentServiceOptions"] = (
                 {
@@ -326,8 +341,12 @@ class UpsRequest:
                         "datas": label["ShippingLabel"]["GraphicImage"],
                     }
                 )
+        if self.negotiated_rates and "NegotiatedRateCharges" in res:
+            price = res["NegotiatedRateCharges"]["TotalCharge"]
+        else:
+            price = res["ShipmentCharges"]["TotalCharges"]
         return {
-            "price": res["ShipmentCharges"]["TotalCharges"],
+            "price": price,
             "ShipmentIdentificationNumber": res["ShipmentIdentificationNumber"],
             "labels": labels,
         }
@@ -354,7 +373,7 @@ class UpsRequest:
 
     def _prepare_rate_shipment(self, order):
         packages = [self._quant_package_data_from_order(order)]
-        return {
+        vals = {
             "RateRequest": {
                 "Shipment": {
                     "Shipper": self._partner_to_shipping_data(
@@ -370,6 +389,11 @@ class UpsRequest:
                 }
             }
         }
+        if self.negotiated_rates:
+            vals["RateRequest"]["Shipment"]["ShipmentRatingOptions"] = {
+                "NegotiatedRatesIndicator": "Y"
+            }
+        return vals
 
     def _rate_shipment(self, order, skip_errors=False):
         status = self._process_reply(
@@ -381,7 +405,10 @@ class UpsRequest:
 
     def rate_shipment(self, order):
         status = self._rate_shipment(order)
-        return status["RateResponse"]["RatedShipment"]["TotalCharges"]
+        rated_shipment = status["RateResponse"]["RatedShipment"]
+        if self.negotiated_rates and "NegotiatedRateCharges" in rated_shipment:
+            return rated_shipment["NegotiatedRateCharges"]["TotalCharge"]
+        return rated_shipment["TotalCharges"]
 
     def _prepare_shipping_label(self, carrier_tracking_ref):
         return {

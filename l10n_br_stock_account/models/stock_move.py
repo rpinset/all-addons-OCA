@@ -228,14 +228,6 @@ class StockMove(models.Model):
         keys_sorted += [move.fiscal_operation_id.id, move.fiscal_operation_line_id.id]
         return keys_sorted
 
-    def _prepare_extra_move_vals(self, qty):
-        values = {}
-        if self.fiscal_operation_id:
-            # Caso Brasil se caracteriza por ter Operação Fiscal
-            values = self._prepare_br_fiscal_dict()
-        values.update(super()._prepare_extra_move_vals(qty))
-        return values
-
     def _prepare_move_split_vals(self, uom_qty):
         values = {}
         if self.fiscal_operation_id:
@@ -280,7 +272,11 @@ class StockMove(models.Model):
         #  Quant deve ser registrado o preço padrão como era feito antes
         #  e continua sendo feito abaixo?
         if self.fiscal_operation_id.fiscal_operation_type == "out":
-            result = self.product_id.with_company(self.company_id).standard_price
+            result = {
+                self.env["stock.lot"]: self.product_id.with_company(
+                    self.company_id
+                ).standard_price
+            }
 
         return result
 

@@ -24,7 +24,7 @@ class WizardAuthPartnerForceSetPassword(models.TransientModel):
 
     def action_force_set_password(self):
         self.ensure_one()
-        auth_partner_id = self.env.context.get("id")
+        auth_partner_id = self.env.context.get("active_id")
         if not auth_partner_id:
             raise UserError(self.env._("No id in context"))
 

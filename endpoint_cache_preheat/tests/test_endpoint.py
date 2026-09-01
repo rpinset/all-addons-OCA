@@ -30,7 +30,12 @@ class TestEndpoint(CommonEndpoint):
     def test_cron_preheat_cache(self):
         self.assertFalse(self.endpoint1.cache_preheat)
         self.assertFalse(self.endpoint1.cache_preheat_ts)
-        now = datetime.now().replace(microsecond=0)
+        # Use a fixed mid-month reference instead of `datetime.now()`: on
+        # the last day of a 31-day month whose following month has only 30
+        # days, `now + 1 month - 1 month != now` (relativedelta clamps the
+        # day), which makes the monthly assertions below flaky depending on
+        # the day the test happens to run on.
+        now = datetime(2025, 2, 15, 10, 0, 0)
         ep_daily = self.endpoint1.copy({"route": "/daily"})
         ep_daily.cache_preheat = True
         ep_daily.cache_preheat_ts = now

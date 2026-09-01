@@ -635,6 +635,7 @@ addon | version | maintainers | summary
 [account_check_printing_report_base](account_check_printing_report_base/) | 18.0.1.0.1 |  | Account Check Printing Report Base
 [account_due_list](account_due_list/) | 18.0.1.0.1 |  | List of open credits and debits, with due date
 [account_due_list_aging_comment](account_due_list_aging_comment/) | 18.0.1.0.0 |  | Account Due List Aging Comment
+[account_due_list_days_overdue](account_due_list_days_overdue/) | 18.0.1.0.0 |  | Payments Due list days overdue
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 18.0.1.0.0 |  | Payment Due List Payment Mode
 [account_force_early_discount](account_force_early_discount/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allow forcing financial discounts for early payments
 [account_move_line_payment](account_move_line_payment/) | 18.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Register only due payments
@@ -1102,7 +1103,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt](account_statement_import_camt/) | 18.0.1.0.1 |  | CAMT Format Bank Statements Import
 [account_statement_import_camt54](account_statement_import_camt54/) | 18.0.1.0.0 |  | Bank Account Camt54 Import
 [account_statement_import_file](account_statement_import_file/) | 18.0.1.0.3 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files
-[account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
+[account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 18.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_move_line](account_statement_import_move_line/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
 [account_statement_import_ofx_by_acctid](account_statement_import_ofx_by_acctid/) | 18.0.1.0.0 |  | Import OFX Bank Statement by ACCTID
@@ -1348,7 +1349,7 @@ addon | version | maintainers | summary
 [base_unece](base_unece/) | 18.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for UNECE code lists
 [company_sanitary_registry](company_sanitary_registry/) | 18.0.1.2.0 |  | Sanitary Registry
 [l10n_eu_nace](l10n_eu_nace/) | 18.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | European NACE partner categories
-[l10n_eu_product_adr](l10n_eu_product_adr/) | 18.0.1.0.1 |  | Allows to set appropriate danger class and components
+[l10n_eu_product_adr](l10n_eu_product_adr/) | 18.0.1.1.0 |  | Allows to set appropriate danger class and components
 [l10n_eu_product_adr_dangerous_goods](l10n_eu_product_adr_dangerous_goods/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | l10n Eu Product Adr Dangerous Goods
 [product_allergen](product_allergen/) | 18.0.1.0.0 |  | Add allergen information to products
 [product_fao_fishing](product_fao_fishing/) | 18.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Set fishing areas and capture technology
@@ -1550,6 +1551,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_phone](base_phone/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Validate phone numbers
+[sms_no_automatic_delete](sms_no_automatic_delete/) | 18.0.1.0.0 |  | Avoid automatic delete of sended sms
 [voip_oca](voip_oca/) | 18.0.1.0.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Provides the use of Voip
 
 [//]: # (end addons)
@@ -2079,7 +2081,7 @@ addon | version | maintainers | summary
 [delivery_sendcloud_oca](delivery_sendcloud_oca/) | 18.0.1.0.0 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> <a href='https://github.com/bytemeasap'><img src='https://github.com/bytemeasap.png' width='32' height='32' style='border-radius:50%;' alt='bytemeasap'/></a> | Compute shipping costs and ship with Sendcloud
 [delivery_state](delivery_state/) | 18.0.1.2.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_state_manual](delivery_state_manual/) | 18.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Manually edit the delivery state of pickings
-[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.4.1 |  | Integrate UPS webservice
+[delivery_ups_oca](delivery_ups_oca/) | 18.0.1.5.0 |  | Integrate UPS webservice
 [partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [partner_delivery_zone](partner_delivery_zone/) | 18.0.1.0.1 |  | Enables partner delivery zones for physical products
@@ -2347,8 +2349,8 @@ addon | version | maintainers | summary
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 18.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 18.0.1.0.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 18.0.1.1.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
-[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 18.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template Account
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 18.0.1.2.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
+[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 18.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template Account
 [base_ubl](base_ubl/) | 18.0.1.0.0 |  | Base module for Universal Business Language (UBL)
 [base_ubl_generate](base_ubl_generate/) | 18.0.1.0.1 |  | Base module to generate UBL files (Universal Business Language)
 [base_ubl_parse](base_ubl_parse/) | 18.0.1.1.0 |  | Base module to parse UBL files (Universal Business Language)
@@ -2897,7 +2899,7 @@ addon | version | maintainers | summary
 [hr_employee_age](hr_employee_age/) | 18.0.1.0.0 |  | Age field for employee
 [hr_employee_bank_restrict](hr_employee_bank_restrict/) | 18.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Restrict employee bank account in employee partner
 [hr_employee_birthday_mail](hr_employee_birthday_mail/) | 18.0.1.0.0 |  | Automating birthday mail messages and fostering for a positive work environment.
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 18.0.2.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
+[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 18.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_document](hr_employee_document/) | 18.0.1.0.1 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 18.0.1.0.1 | <a href='https://github.com/Savoir-faire Linux'><img src='https://github.com/Savoir-faire Linux.png' width='32' height='32' style='border-radius:50%;' alt='Savoir-faire Linux'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Adds First Name to Employee
 [hr_employee_id](hr_employee_id/) | 18.0.1.0.0 |  | Employee ID
@@ -2962,10 +2964,11 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 18.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
+[hr_attendance_employee_calendar_planning](hr_attendance_employee_calendar_planning/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Attendance employee calendar planning
 [hr_attendance_full_history](hr_attendance_full_history/) | 18.0.1.0.0 | <a href='https://github.com/rblasco'><img src='https://github.com/rblasco.png' width='32' height='32' style='border-radius:50%;' alt='rblasco'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Let employees read their full attendance history
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 18.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_reason](hr_attendance_reason/) | 18.0.1.0.1 |  | HR Attendance Reason
-[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 18.0.2.0.4 |  | Theoretical vs Attended Time Analysis
+[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 18.0.2.1.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rest_time_included](hr_attendance_rest_time_included/) | 18.0.1.0.0 |  | Rest time of employee's is included during their working hours
 [hr_attendance_rfid](hr_attendance_rfid/) | 18.0.1.0.0 |  | HR Attendance RFID
 [hr_contract_update_overtime](hr_contract_update_overtime/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Update Overtime from HR Contract
@@ -3325,7 +3328,7 @@ addon | version | maintainers | summary
 [attachment_preview](attachment_preview/) | 18.0.1.0.1 |  | Preview attachments supported by Viewer.js
 [attachment_zipped_download](attachment_zipped_download/) | 18.0.1.0.0 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 18.0.1.0.2 |  | Documents Knowledge
-[document_page](document_page/) | 18.0.2.1.2 |  | Document Page
+[document_page](document_page/) | 18.0.2.1.3 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 18.0.1.0.1 |  | Choose groups to access document pages
 [document_page_access_group_user_role](document_page_access_group_user_role/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Document Page Access Group User Role
 [document_page_approval](document_page_approval/) | 18.0.1.2.0 |  | Document Page Approval
@@ -3477,9 +3480,9 @@ addon | version | maintainers | summary
 [l10n_br_setup_tests](l10n_br_setup_tests/) | 18.0.1.0.0 | <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> | Modules for Odoo's Brazil-focused usability with integration tests.
 [l10n_br_sped_base](l10n_br_sped_base/) | 18.0.1.2.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Framework abstrato pro SPED
 [l10n_br_stock](l10n_br_stock/) | 18.0.1.0.1 |  | Brazilian Localization Warehouse
-[l10n_br_stock_account](l10n_br_stock_account/) | 18.0.1.0.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Invoice from Picking (nota fiscal de remessa) and other WMS overrides
+[l10n_br_stock_account](l10n_br_stock_account/) | 18.0.1.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Invoice from Picking (nota fiscal de remessa) and other WMS overrides
 [l10n_br_zip](l10n_br_zip/) | 18.0.1.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Localisation ZIP Codes
-[spec_driven_model](spec_driven_model/) | 18.0.1.2.3 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | XML binding for Odoo: XML to Odoo models and models to XML.
+[spec_driven_model](spec_driven_model/) | 18.0.1.3.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | XML binding for Odoo: XML to Odoo models and models to XML.
 
 [//]: # (end addons)
 
@@ -3742,6 +3745,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_balance_ebp_csv_export](account_balance_ebp_csv_export/) | 18.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Export the trial balance in EBP format (CSV or XLSX)
+[account_move_mercanet_import](account_move_mercanet_import/) | 18.0.1.0.0 | <a href='https://github.com/matthieusaison'><img src='https://github.com/matthieusaison.png' width='32' height='32' style='border-radius:50%;' alt='matthieusaison'/></a> | Journal Entry Mercanet import
+[account_move_monetico_import](account_move_monetico_import/) | 18.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Journal Entry Monetico import
 [account_payment_fr_lcr](account_payment_fr_lcr/) | 18.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Create French LCR CFONB files
 [account_statement_import_fr_cfonb](account_statement_import_fr_cfonb/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import CFONB bank statements files in Odoo
 [country_fr](country_fr/) | 18.0.1.0.0 |  | Set FR country on `base.main_company` record to set up French localisation.
@@ -6402,14 +6407,14 @@ addon | version | maintainers | summary
 [product_attribute_value_archive](product_attribute_value_archive/) | 18.0.1.0.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Allows to archive a `product.attribute.value` referenced by archived `product.product`.
 [product_variant_attribute_tax](product_variant_attribute_tax/) | 18.0.1.0.0 |  | Set taxes on the product attribute values
 [product_variant_change_attribute_value](product_variant_change_attribute_value/) | 18.0.1.0.0 |  | Product Variant Change Attribute Value
-[product_variant_configurator](product_variant_configurator/) | 18.0.1.0.0 |  | Provides an abstract model for product variant configuration.
+[product_variant_configurator](product_variant_configurator/) | 18.0.1.0.1 |  | Provides an abstract model for product variant configuration.
 [product_variant_configurator_manual_creation](product_variant_configurator_manual_creation/) | 18.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Provides a wizards to make variants on demand
 [product_variant_default_code](product_variant_default_code/) | 18.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Allow to automatically generate the variant default code
 [product_variant_name](product_variant_name/) | 18.0.1.0.0 |  | Product Variant Name
 [product_variant_sale_price](product_variant_sale_price/) | 18.0.1.0.1 |  | Allows to write fixed prices in product variants
 [product_variant_specific_description](product_variant_specific_description/) | 18.0.1.0.0 |  | Product Variant Specific Description
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 18.0.1.0.0 |  | Sale order line variant description
-[sale_variant_configurator](sale_variant_configurator/) | 18.0.1.0.4 |  | Product variants in sale management
+[sale_variant_configurator](sale_variant_configurator/) | 18.0.1.0.5 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -7074,7 +7079,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [api_log](api_log/) | 18.0.1.0.1 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log API requests in database
 [api_log_mail](api_log_mail/) | 18.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
-[auth_partner](auth_partner/) | 18.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Implements the base features for a authenticable partner
+[auth_partner](auth_partner/) | 18.0.1.0.1 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Implements the base features for a authenticable partner
 [base_rest](base_rest/) | 18.0.1.1.3 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 18.0.1.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [base_rest_pydantic](base_rest_pydantic/) | 18.0.1.0.2 |  | Pydantic binding for base_rest
@@ -9985,6 +9990,7 @@ addon | version | maintainers | summary
 [hotel_reservation](hotel_reservation/) | 18.0.1.0.0 |  | Manages Guest Reservation & displays Reservation Summary
 [hotel_restaurant](hotel_restaurant/) | 18.0.1.0.0 |  | Table booking facilities and Managing customers orders
 [report_hotel_reservation](report_hotel_reservation/) | 18.0.1.0.0 |  | Hotel Reservation Management - Reporting
+[report_hotel_restaurant](report_hotel_restaurant/) | 18.0.1.0.0 |  | Restaurant Management - Reporting
 
 [//]: # (end addons)
 
@@ -10144,10 +10150,10 @@ addon | version | maintainers | summary
 [endpoint](endpoint/) | 18.0.1.1.3 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide custom endpoint machinery.
 [endpoint_auth_api_key](endpoint_auth_api_key/) | 18.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide API key auth for endpoints.
 [endpoint_cache](endpoint_cache/) | 18.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide basic caching utils for endpoints
-[endpoint_cache_preheat](endpoint_cache_preheat/) | 18.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide basic pre-caching features for endpoints
+[endpoint_cache_preheat](endpoint_cache_preheat/) | 18.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide basic pre-caching features for endpoints
 [endpoint_jsonifier](endpoint_jsonifier/) | 18.0.1.0.0 | <a href='https://github.com/SilvioC2C'><img src='https://github.com/SilvioC2C.png' width='32' height='32' style='border-radius:50%;' alt='SilvioC2C'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to configure jsonifier parsers on endpoints
 [endpoint_route_handler](endpoint_route_handler/) | 18.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Provide mixin and tool to generate custom endpoints on the fly.
-[webservice](webservice/) | 18.0.1.1.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally
+[webservice](webservice/) | 18.0.1.1.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Defines webservice abstract definition to be used generally
 [webservice_server_env](webservice_server_env/) | 18.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Use Server Environment feature to manage Webservice configs
 
 [//]: # (end addons)
@@ -10255,6 +10261,7 @@ addon | version | maintainers | summary
 [website_forum_subscription](website_forum_subscription/) | 18.0.1.0.2 |  | Adds a button to allow subscription from the website
 [website_google_tag_manager](website_google_tag_manager/) | 18.0.1.0.0 |  | Add support for Google Tag Manager
 [website_legal_page](website_legal_page/) | 18.0.1.0.0 |  | Website Legal Page
+[website_llms](website_llms/) | 18.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module adds support for serving a /llms.txt file in the website root. The content can be configured per website in the website settings.
 [website_menu_by_user_status](website_menu_by_user_status/) | 18.0.1.0.0 |  | Allow to manage the display of website.menus
 [website_odoo_debranding](website_odoo_debranding/) | 18.0.1.0.0 |  | Remove Odoo Branding from Website
 [website_partner_form](website_partner_form/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Allow to edit partner website fields on partner form view, in the back office
