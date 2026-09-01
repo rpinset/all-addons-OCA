@@ -7,7 +7,7 @@
     "category": "Localization",
     "author": "KMEE, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-brazil",
-    "version": "17.0.1.2.0",
+    "version": "17.0.1.2.1",
     "depends": ["hr", "l10n_br_base", "hr_employee_relative"],
     "data": [
         "data/l10n_br_hr.cbo.csv",
@@ -20,6 +20,11 @@
         "views/hr_employee_view.xml",
         "views/hr_job_view.xml",
         "views/inherited_hr_contract.xml",
+    ],
+    "demo": [
+        "demo/hr_department_demo.xml",
+        "demo/hr_job_demo.xml",
+        "demo/hr_employee_demo.xml",
     ],
     "test": [],
     "installable": True,
