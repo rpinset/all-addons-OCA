@@ -1,6 +1,6 @@
 # Build report — `13.0`
 
-Generated 2026-09-01 08:47 UTC
+Generated 2026-09-04 17:52 UTC
 
 ## Skipped repos
 
@@ -16,6 +16,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [automation](https://github.com/OCA/automation) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [cim](https://github.com/OCA/cim) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-infor](https://github.com/OCA/connector-infor) | `no_module` | No directory with __manifest__.py at repo root |
