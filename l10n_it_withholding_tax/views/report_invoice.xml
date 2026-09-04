@@ -31,7 +31,9 @@
         </xpath>
 
         <xpath expr="//t[@t-if='print_with_payments']/t" position="inside">
-            <t t-if="o.withholding_tax_in_print and len(payments_vals) > 0">
+            <t
+                t-if="o.withholding_tax_in_print and o.withholding_tax and len(payments_vals) > 0"
+            >
                 <tr class="border-black">
                     <td>
                         <strong>Residual Net To Pay</strong>

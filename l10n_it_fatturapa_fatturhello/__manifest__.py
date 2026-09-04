@@ -8,7 +8,7 @@
     "summary": "Invio e ricezione fatture elettroniche tramite Fatturhello",
     "author": "PyTech, Odoo Community Association (OCA)",
     "maintainers": [
-        "aleuffre",
+        "HekkiMelody",
         "SirPyTech",
     ],
     "website": "https://github.com/OCA/l10n-italy",

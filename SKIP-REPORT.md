@@ -1,18 +1,19 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-09-01 08:51 UTC
+Generated 2026-09-04 17:56 UTC
 
-Total skipped: **116**
+Total skipped: **117**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **40**
+Count: **41**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [.github](https://github.com/OCA/.github) | [16.0](https://github.com/OCA/.github/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [16.0](https://github.com/OCA/ansible-odoo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [16.0](https://github.com/OCA/bank-payment-alternative/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | [16.0](https://github.com/OCA/barcode-interface/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [16.0](https://github.com/OCA/connector-magento-php-extension/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [16.0](https://github.com/OCA/connector-mautic/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [16.0](https://github.com/OCA/connector-shopify/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
