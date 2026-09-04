@@ -1,12 +1,12 @@
 # Skipped repos — branch `14.0`
 
-Generated 2026-09-01 08:46 UTC
+Generated 2026-09-04 17:52 UTC
 
-Total skipped: **118**
+Total skipped: **119**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **60**
+Count: **61**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -16,6 +16,7 @@ Count: **60**
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [14.0](https://github.com/OCA/ansible-odoo/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [automation](https://github.com/OCA/automation) | [14.0](https://github.com/OCA/automation/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | [14.0](https://github.com/OCA/bank-payment-alternative/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | [14.0](https://github.com/OCA/barcode-interface/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [cim](https://github.com/OCA/cim) | [14.0](https://github.com/OCA/cim/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [14.0](https://github.com/OCA/connector-magento-php-extension/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [14.0](https://github.com/OCA/connector-mautic/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |

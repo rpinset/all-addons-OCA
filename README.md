@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-01 08:46 UTC** (elapsed 184s)
+Last build: **2026-09-04 17:52 UTC** (elapsed 146s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **118**
+- Skipped repos (no branch / no module): **119**
 
 ## Integrated repos
 
@@ -67,11 +67,11 @@ Last build: **2026-09-01 08:46 UTC** (elapsed 184s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | 1e56820 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 56defd7 2026-08-20 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 0ac8df2 2026-09-03 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-france](https://github.com/OCA/l10n-france) | 31 | 35f33a9 2025-12-29 Weblate Update translation files |
+| [l10n-france](https://github.com/OCA/l10n-france) | 31 | 422856a 2026-09-01 Guillaume MASSON [UPD] copier update |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 0aaae54 2026-08-26 Francesco Foresti Translated using Weblate (Italian) |
@@ -150,5 +150,5 @@ Last build: **2026-09-01 08:46 UTC** (elapsed 184s)
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
 | [website-cms](https://github.com/OCA/website-cms) | 3 | cb82f27 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 76 | d5ac6e3 2026-07-29 OCA-git-bot [BOT] post-merge updates |
+| [wms](https://github.com/OCA/wms) | 76 | 2826039 2026-09-03 Weblate Update translation files |
 
