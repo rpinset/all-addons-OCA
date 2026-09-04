@@ -1,6 +1,6 @@
 # Build report — `15.0`
 
-Generated 2026-09-01 08:49 UTC
+Generated 2026-09-04 17:56 UTC
 
 ## Skipped repos
 
@@ -16,6 +16,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [apps-store](https://github.com/OCA/apps-store) | `no_module` | No directory with __manifest__.py at repo root |
 | [automation](https://github.com/OCA/automation) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [bank-payment-alternative](https://github.com/OCA/bank-payment-alternative) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [cim](https://github.com/OCA/cim) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-cmis](https://github.com/OCA/connector-cmis) | `no_module` | No directory with __manifest__.py at repo root |
