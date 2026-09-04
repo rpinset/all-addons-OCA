@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-09-01 08:45 UTC** (elapsed 123s)
+Last build: **2026-09-04 17:51 UTC** (elapsed 166s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **142**
+- Skipped repos (no branch / no module): **143**
 
 ## Integrated repos
 
@@ -65,7 +65,7 @@ Last build: **2026-09-01 08:45 UTC** (elapsed 123s)
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | 1143570 2021-10-17 OCA-git-bot [ADD] setup.py |
 | [l10n-france](https://github.com/OCA/l10n-france) | 20 | 4066626 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 7 | e0eb893 2023-10-09 Weblate Update translation files |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | c09051a 2026-07-07 mymage Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | ee182b6 2026-09-04 Weblate Update translation files |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | d631e83 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 17 | aa4c98b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | 1 | bcca2e7 2023-09-03 OCA-git-bot [UPD] README.rst |
