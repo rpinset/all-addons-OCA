@@ -17,9 +17,9 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: l10n_br_crm
-#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnpj
-msgid "CNPJ"
-msgstr "CNPJ"
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__br_currency_id
+msgid "BR Company Currency"
+msgstr ""
 
 #. module: l10n_br_crm
 #: model:ir.model.fields,help:l10n_br_crm.field_crm_lead__vat_formatted_cnpj
@@ -37,14 +37,14 @@ msgid "CNPJ/CPF without special characters"
 msgstr ""
 
 #. module: l10n_br_crm
-#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cpf
-msgid "CPF"
-msgstr "CPF"
-
-#. module: l10n_br_crm
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__city_id
 msgid "City of Address"
 msgstr "Ciudad de la dirección"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__cnae_main_id
+msgid "Cnae Main"
+msgstr ""
 
 #. module: l10n_br_crm
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__country_id
@@ -60,6 +60,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__district
 msgid "District"
 msgstr "Distrito"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__equity_capital
+msgid "Equity Capital"
+msgstr ""
 
 #. module: l10n_br_crm
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__id
@@ -88,6 +93,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__legal_name
 msgid "Legal Name"
 msgstr "Nombre legal"
+
+#. module: l10n_br_crm
+#: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__legal_nature_id
+msgid "Legal Nature"
+msgstr ""
 
 #. module: l10n_br_crm
 #: model:ir.model.fields,field_description:l10n_br_crm.field_crm_lead__l10n_br_im_code
@@ -171,6 +181,12 @@ msgid ""
 "Whether to display VAT with Brazilian formatting (true when the current "
 "user's company is Brazilian)."
 msgstr ""
+
+#~ msgid "CNPJ"
+#~ msgstr "CNPJ"
+
+#~ msgid "CPF"
+#~ msgstr "CPF"
 
 #~ msgid "Lead/Opportunity"
 #~ msgstr "Iniciativa/oportunidad"

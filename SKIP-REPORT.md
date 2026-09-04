@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-09-01 08:54 UTC
+Generated 2026-09-04 17:59 UTC
 
-Total skipped: **138**
+Total skipped: **136**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,14 +38,14 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **113**
+Count: **111**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | [19.0](https://github.com/OCA/account-consolidation/tree/19.0) | No directory with __manifest__.py at repo root |
-| [ai](https://github.com/OCA/ai) | [19.0](https://github.com/OCA/ai/tree/19.0) | No directory with __manifest__.py at repo root |
 | [apps-store](https://github.com/OCA/apps-store) | [19.0](https://github.com/OCA/apps-store/tree/19.0) | No directory with __manifest__.py at repo root |
 | [automation](https://github.com/OCA/automation) | [19.0](https://github.com/OCA/automation/tree/19.0) | No directory with __manifest__.py at repo root |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | [19.0](https://github.com/OCA/barcode-interface/tree/19.0) | No directory with __manifest__.py at repo root |
 | [business-requirement](https://github.com/OCA/business-requirement) | [19.0](https://github.com/OCA/business-requirement/tree/19.0) | No directory with __manifest__.py at repo root |
 | [cim](https://github.com/OCA/cim) | [19.0](https://github.com/OCA/cim/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | [19.0](https://github.com/OCA/connector-accountedge/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -66,7 +66,6 @@ Count: **113**
 | [cooperative](https://github.com/OCA/cooperative) | [19.0](https://github.com/OCA/cooperative/tree/19.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [19.0](https://github.com/OCA/crowdfunding/tree/19.0) | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | [19.0](https://github.com/OCA/department/tree/19.0) | No directory with __manifest__.py at repo root |
-| [dms](https://github.com/OCA/dms) | [19.0](https://github.com/OCA/dms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | [19.0](https://github.com/OCA/donation/tree/19.0) | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | [19.0](https://github.com/OCA/dotnet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -109,7 +108,6 @@ Count: **113**
 | [l10n-usa](https://github.com/OCA/l10n-usa) | [19.0](https://github.com/OCA/l10n-usa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | [19.0](https://github.com/OCA/l10n-venezuela/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [19.0](https://github.com/OCA/l10n-vietnam/tree/19.0) | No directory with __manifest__.py at repo root |
-| [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | [19.0](https://github.com/OCA/manufacture-reporting/tree/19.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [19.0](https://github.com/OCA/mis-builder-contrib/tree/19.0) | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | [19.0](https://github.com/OCA/module-composition-analysis/tree/19.0) | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | [19.0](https://github.com/OCA/product-configurator/tree/19.0) | No directory with __manifest__.py at repo root |

@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-09-01 08:54 UTC
+Generated 2026-09-04 17:59 UTC
 
 ## Skipped repos
 
@@ -10,10 +10,10 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | ---- | ------ | ------ |
 | [.github](https://github.com/OCA/.github) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
-| [ai](https://github.com/OCA/ai) | `no_module` | No directory with __manifest__.py at repo root |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [apps-store](https://github.com/OCA/apps-store) | `no_module` | No directory with __manifest__.py at repo root |
 | [automation](https://github.com/OCA/automation) | `no_module` | No directory with __manifest__.py at repo root |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | `no_module` | No directory with __manifest__.py at repo root |
 | [business-requirement](https://github.com/OCA/business-requirement) | `no_module` | No directory with __manifest__.py at repo root |
 | [cim](https://github.com/OCA/cim) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | `no_module` | No directory with __manifest__.py at repo root |
@@ -35,7 +35,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [department](https://github.com/OCA/department) | `no_module` | No directory with __manifest__.py at repo root |
-| [dms](https://github.com/OCA/dms) | `no_module` | No directory with __manifest__.py at repo root |
 | [donation](https://github.com/OCA/donation) | `no_module` | No directory with __manifest__.py at repo root |
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
@@ -79,7 +78,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-venezuela](https://github.com/OCA/l10n-venezuela) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | `no_module` | No directory with __manifest__.py at repo root |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
-| [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | `no_module` | No directory with __manifest__.py at repo root |
 | [module-composition-analysis](https://github.com/OCA/module-composition-analysis) | `no_module` | No directory with __manifest__.py at repo root |
