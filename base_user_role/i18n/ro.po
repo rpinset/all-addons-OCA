@@ -274,6 +274,7 @@ msgstr ""
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__name
+#: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__name
 #: model:ir.model.fields,field_description:base_user_role.field_wizard_create_role_from_user__name
 #: model:ir.model.fields,field_description:base_user_role.field_wizard_groups_into_role__name
 msgid "Name"
@@ -331,6 +332,12 @@ msgstr "Reguli"
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__rules_count
 msgid "Rules Count"
+msgstr ""
+
+#. module: base_user_role
+#: model:ir.model.fields,field_description:base_user_role.field_res_users_role__sequence
+#: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__sequence
+msgid "Sequence"
 msgstr ""
 
 #. module: base_user_role

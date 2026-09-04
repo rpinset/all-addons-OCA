@@ -42,11 +42,7 @@ msgid "Currently allowed profiles"
 msgstr "Profils actuellement autorisés"
 
 #. module: base_user_role_profile
-#: model:ir.model.fields,field_description:base_user_role_profile.field_ir_http__display_name
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users__display_name
 #: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_profile__display_name
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role__display_name
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role_line__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
 
@@ -56,22 +52,29 @@ msgid "HTTP Routing"
 msgstr "Routage HTTP"
 
 #. module: base_user_role_profile
-#: model:ir.model.fields,field_description:base_user_role_profile.field_ir_http__id
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users__id
 #: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_profile__id
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role__id
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role_line__id
 msgid "ID"
 msgstr "ID"
 
 #. module: base_user_role_profile
-#: model:ir.model.fields,field_description:base_user_role_profile.field_ir_http____last_update
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users____last_update
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_profile____last_update
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role____last_update
-#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_role_line____last_update
-msgid "Last Modified on"
-msgstr "Dernière modification le"
+#: model:ir.model.fields,help:base_user_role_profile.field_res_users__include_default_profile
+msgid ""
+"If enabled, the default profile ('no profile') will be added to the user's "
+"allowed profiles. This allows the user to select a profile that activates "
+"only the roles not associated with any specific profile."
+msgstr ""
+
+#. module: base_user_role_profile
+#: model:ir.model.fields,help:base_user_role_profile.field_res_users__restrict_profile_switching
+msgid ""
+"If enabled, the user will be prevented from changing their profile. This "
+"acts as a security measure to lock users into their current profile."
+msgstr ""
+
+#. module: base_user_role_profile
+#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users__include_default_profile
+msgid "Include Default Profile"
+msgstr ""
 
 #. module: base_user_role_profile
 #: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_profile__write_uid
@@ -95,6 +98,11 @@ msgid "Profile"
 msgstr "Profil"
 
 #. module: base_user_role_profile
+#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users__restrict_profile_switching
+msgid "Restrict Profile Switching"
+msgstr ""
+
+#. module: base_user_role_profile
 #: model:ir.model,name:base_user_role_profile.model_res_users_profile
 msgid "Role profile"
 msgstr "Profil de rôle"
@@ -105,6 +113,22 @@ msgid "Roles"
 msgstr "Rôles"
 
 #. module: base_user_role_profile
+#: model:ir.model.fields,field_description:base_user_role_profile.field_res_users_profile__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: base_user_role_profile
+#. odoo-javascript
+#: code:addons/base_user_role_profile/static/src/components/switch_profile_menu/switch_profile_menu.esm.js:0
+msgid "Switch Profile"
+msgstr ""
+
+#. module: base_user_role_profile
+#: model:ir.model,name:base_user_role_profile.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: base_user_role_profile
 #: model:ir.actions.act_window,name:base_user_role_profile.action_res_users_profile_tree
 #: model:ir.ui.menu,name:base_user_role_profile.menu_action_res_users_profile_tree
 msgid "User Profiles"
@@ -112,15 +136,19 @@ msgstr "Profils utilisateur"
 
 #. module: base_user_role_profile
 #: model:ir.model,name:base_user_role_profile.model_res_users_role
-msgid "User role"
-msgstr "Rôle utilisateur"
-
-#. module: base_user_role_profile
-#: model:ir.model,name:base_user_role_profile.model_res_users
-msgid "Users"
-msgstr "Utilisateurs"
+msgid "User Role"
+msgstr ""
 
 #. module: base_user_role_profile
 #: model:ir.model,name:base_user_role_profile.model_res_users_role_line
 msgid "Users associated to a role"
 msgstr "Utilisateurs associés à un rôle"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Dernière modification le"
+
+#~ msgid "User role"
+#~ msgstr "Rôle utilisateur"
+
+#~ msgid "Users"
+#~ msgstr "Utilisateurs"

@@ -6,7 +6,9 @@ from odoo import fields, models
 class ResUsersProfile(models.Model):
     _name = "res.users.profile"
     _description = "Role profile"
+    _order = "sequence,name"
 
+    sequence = fields.Integer(default=10)
     name = fields.Char()
     user_ids = fields.Many2many(
         "res.users",

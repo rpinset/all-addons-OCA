@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-09-01 08:53 UTC
+Generated 2026-09-04 18:00 UTC
 
 ## Skipped repos
 
@@ -12,6 +12,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [apps-store](https://github.com/OCA/apps-store) | `no_module` | No directory with __manifest__.py at repo root |
+| [barcode-interface](https://github.com/OCA/barcode-interface) | `no_module` | No directory with __manifest__.py at repo root |
 | [business-requirement](https://github.com/OCA/business-requirement) | `no_module` | No directory with __manifest__.py at repo root |
 | [cim](https://github.com/OCA/cim) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | `no_module` | No directory with __manifest__.py at repo root |

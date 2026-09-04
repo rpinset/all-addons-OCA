@@ -20,7 +20,8 @@
         <field name="name">res.users.profile.list</field>
         <field name="model">res.users.profile</field>
         <field name="arch" type="xml">
-            <list>
+            <list default_order="sequence,name">
+                <field name="sequence" widget="handle" />
                 <field name="name" />
             </list>
         </field>
