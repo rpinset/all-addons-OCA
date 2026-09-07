@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-09-04 17:56 UTC** (elapsed 148s)
+Last build: **2026-09-07 23:32 UTC** (elapsed 127s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -11,7 +11,7 @@ Last build: **2026-09-04 17:56 UTC** (elapsed 148s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 862298a 2026-07-22 Pedro M. Baeza Merge pull request #5839 from Tecnativa/15.0-ou-add-account_edi_ubl_cii |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 913e7d3 2026-09-05 Pedro M. Baeza Merge pull request #5968 from Tecnativa/15.0-ou-imp-website-cow_views |
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2cc28dc 2026-08-03 difbit Added translation using Weblate (Finnish (fi_FI)) |
