@@ -2,10 +2,9 @@
 # Copyright 2022-2023 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import api, fields, models, modules
 from odoo.exceptions import UserError
 from odoo.fields import Command, Domain
-from odoo.tools import config
 
 SECTION_LINES = [
     Command.create(
@@ -69,6 +68,11 @@ class HrEmployee(models.Model):
 
     def _regenerate_calendar(self):
         self.ensure_one()
+        if not self.version_id:
+            # It is important that if there is no auto-generated version_id (from the
+            # create method of hr.employee.calendar), we do not regenerate the calendar
+            # "yet"; this will be done later in the create method of hr.employee.
+            return
         vals_list = []
         today = fields.Date.context_today(self)
         active_planning = self._get_planning_calendars(today, today)
@@ -112,22 +116,24 @@ class HrEmployee(models.Model):
                 seq += 1
                 vals_list.append((0, 0, data))
         if not self.resource_id.calendar_id.auto_generate:
-            self.resource_id.calendar_id = (
-                self.env["resource.calendar"]
-                .create(
-                    {
-                        "active": False,
-                        "company_id": self.company_id.id,
-                        "auto_generate": True,
-                        "name": self.env._("Auto generated calendar for employee")
-                        + f" {self.name}",
-                        "attendance_ids": vals_list,
-                        "two_weeks_calendar": two_weeks,
-                        "tz": self.tz,
-                    }
-                )
-                .id
+            calendar = self.env["resource.calendar"].create(
+                {
+                    "active": False,
+                    "company_id": self.company_id.id,
+                    "auto_generate": True,
+                    "name": self.env._("Auto generated calendar for employee")
+                    + f" {self.name}",
+                    "attendance_ids": vals_list,
+                    "two_weeks_calendar": two_weeks,
+                    "tz": self.tz,
+                }
             )
+            # We define only self.version_id.resource_calendar_id because the
+            # _inverse_resource_calendar_id() method in hr.version defines
+            # employee.resource_id.calendar_id
+            # We also don't need to define the employee's self.resource_calendar_id
+            # because it is a related version_id.resource_calendar_id
+            self.version_id.resource_calendar_id = calendar
         else:
             self.resource_calendar_id.attendance_ids = vals_list
         if planning_to_use:
@@ -225,10 +231,15 @@ class HrEmployee(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         res = super().create(vals_list)
+        if (
+            modules.module.current_test
+            and not modules.module.current_test.test_module
+            == "hr_employee_calendar_planning"
+        ):
+            return res
         # Avoid creating an employee without calendars
         if (
             not self.env.context.get("skip_employee_calendars_required")
-            and not config["test_enable"]
             and not self.env.context.get("install_mode")
             and res.filtered(lambda x: not x.calendar_ids)
         ):

@@ -2,7 +2,7 @@
 
 {
     "name": "HR Timesheet Time Control begin/end",
-    "version": "19.0.1.0.2",
+    "version": "19.0.1.0.3",
     "category": "Project",
     "author": "glueckkanja AG, Odoo Community Association (OCA)",
     "maintainers": ["CRogos"],
@@ -13,6 +13,7 @@
     "data": [
         "views/account_analytic_line_view.xml",
         "views/project_task_view.xml",
+        "views/hr_timesheet_portal_templates.xml",
     ],
     "license": "AGPL-3",
     "installable": True,
