@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-04 17:52 UTC** (elapsed 146s)
+Last build: **2026-09-07 23:29 UTC** (elapsed 108s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -11,7 +11,7 @@ Last build: **2026-09-04 17:52 UTC** (elapsed 146s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 50ee671 2026-07-07 Pedro M. Baeza Merge pull request #5778 from Tecnativa/14.0-imp-base-external_merges |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 495a099 2026-09-05 Pedro M. Baeza Merge pull request #5969 from Tecnativa/14.0-ou-imp-website-cow_views |
 | [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 9071c85 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
