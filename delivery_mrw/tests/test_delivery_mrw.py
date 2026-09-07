@@ -1,6 +1,7 @@
 import datetime
 from unittest import mock
 
+from odoo.exceptions import UserError
 from odoo.tests import Form
 
 from odoo.addons.base.tests.common import BaseCommon
@@ -103,3 +104,14 @@ class TestDeliveryMRW(BaseCommon):
         self.assertEqual(
             manifest_data[-1]["carrier_tracking_ref"], self.picking.carrier_tracking_ref
         )
+
+    def test_check_mrw_en_franquicia(self):
+        with self.assertRaises(UserError):
+            self.env["delivery.carrier"].create(
+                {
+                    "name": "MRW Invalid",
+                    "delivery_type": "mrw",
+                    "product_id": self.shipping_product.id,
+                    "mrw_en_franquicia": "R",
+                }
+            )
