@@ -187,7 +187,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
         for move in package_level.move_line_ids.mapped("move_id"):
@@ -235,7 +235,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
             popup=completion_info_popup,
         )
@@ -385,7 +385,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
 
@@ -436,7 +436,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
             popup=completion_info_popup,
         )
@@ -485,7 +485,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
             response,
             done_picking.backorder_ids,
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
         self.assertEqual(move_line_c.move_id.state, "done")
@@ -648,6 +648,25 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
         # no remaining move should exist
         self.assertEqual(picking.backorder_ids, first_done_picking)
 
+    def test_set_destination_line_exceeding_quantity(self):
+        move_line = self.picking2.move_line_ids[0]
+        self._simulate_selected_move_line(move_line)
+        # Process more than expected
+        response = self.service.dispatch(
+            "set_destination_line",
+            params={
+                "location_id": self.content_loc.id,
+                "move_line_id": move_line.id,
+                "quantity": move_line.quantity + 2,
+                "barcode": self.dest_location.barcode,
+            },
+        )
+        self.assert_response_scan_destination(
+            response,
+            move_line,
+            message=self.service.msg_store.unable_to_pick_more(move_line.qty_picked),
+        )
+
 
 class LocationContentTransferSetDestinationXSpecialCase(
     LocationContentTransferCommonCase
@@ -754,7 +773,7 @@ class LocationContentTransferSetDestinationXSpecialCase(
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
 
@@ -812,7 +831,7 @@ class LocationContentTransferSetDestinationXSpecialCase(
             response,
             move_lines.mapped("picking_id"),
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
         # Process the other move lines (lines w/o package + package levels)
@@ -1047,7 +1066,7 @@ class LocationContentTransferSetDestinationNextOperationSpecialCase(
             response,
             backorder,
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )
         # check that the next operation has the appropriate attributes
@@ -1071,6 +1090,6 @@ class LocationContentTransferSetDestinationNextOperationSpecialCase(
             response,
             self.picking,
             message=self.service.msg_store.location_content_transfer_item_complete(
-                self.dest_location
+                self.content_loc, self.dest_location
             ),
         )

@@ -153,7 +153,7 @@ class StockAction(Component):
                 lines.write(values_assigned)
         move_lines.picking_id.filtered(lambda p: p.user_id != user).user_id = user.id
 
-    def unmark_move_line_as_picked(self, move_lines):
+    def unmark_move_line_as_picked(self, move_lines, split=True):
         """Reverse the change from `mark_move_line_as_picked`."""
         move_lines.write(
             {
@@ -163,23 +163,32 @@ class StockAction(Component):
                 "result_package_id": False,
             }
         )
+        # Clear the lot per product so we never write ``lot_id`` on a batch of
+        # move lines spanning different products (the stock module forbids it).
+        for lines in move_lines.grouped("product_id").values():
+            lot_lines = lines.filtered("lot_id")
+            if lot_lines:
+                lot_lines.write({"lot_id": False})
         pickings = move_lines.picking_id
         for picking in pickings:
-            lines_still_assigned = picking.move_line_ids.filtered(
-                lambda x: x.shopfloor_user_id
-            )
-            if lines_still_assigned:
-                # Because there is other lines in the picking still assigned
-                # The picking has to be split
-                unmark_lines = picking.move_line_ids & move_lines
-                unmark_lines._extract_in_split_order(default={"user_id": False})
-            else:
-                pickings.write(
+            still_assigned_users = picking.move_line_ids.shopfloor_user_id
+            if not still_assigned_users:
+                picking.write(
                     {
                         "user_id": False,
                         "printed": False,
                     }
                 )
+            else:
+                # Decide what to do if there are other lines in the picking
+                # still assigned
+                if split:
+                    unmarked_lines = picking.move_line_ids & move_lines
+                    unmarked_lines._extract_in_split_order(
+                        default={"user_id": False, "printed": False}
+                    )
+                else:
+                    picking.user_id = still_assigned_users[0]
 
     def validate_moves(self, moves):
         """Validate moves in different ways depending on several criterias:

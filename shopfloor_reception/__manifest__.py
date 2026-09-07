@@ -1,7 +1,7 @@
 {
     "name": "Shopfloor Reception",
     "summary": "Reception scenario for shopfloor",
-    "version": "18.0.1.7.2",
+    "version": "18.0.1.8.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",

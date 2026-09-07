@@ -4,14 +4,28 @@
         <field name="model">shopfloor.menu</field>
         <field name="inherit_id" ref="shopfloor_base.shopfloor_menu_form_view" />
         <field name="arch" type="xml">
-            <field name="profile_id" position="after">
-                <field
-                    name="picking_type_ids"
-                    widget="many2many_tags"
-                    options="{'no_create': 1}"
-                />
-            </field>
+            <group name="main" position="after">
+                <field name="picking_type_ids">
+                    <list editable="bottom" create="0">
+                        <field name="name" readonly="1" />
+                        <field name="warehouse_id" optional="show" />
+                        <field name="default_location_src_id" optional="show" />
+                        <field name="default_location_dest_id" optional="show" />
+                        <field name="shopfloor_zero_check" optional="show" />
+                    </list>
+                </field>
+            </group>
             <group name="options" position="inside">
+                <group
+                    name="quantity_exceeding_demand"
+                    invisible="not allow_quantity_exceeding_demand_is_possible"
+                >
+                    <field
+                        name="allow_quantity_exceeding_demand_is_possible"
+                        invisible="1"
+                    />
+                    <field name="allow_quantity_exceeding_demand" />
+                </group>
                 <group name="move_create" invisible="not move_create_is_possible">
                     <field name="allow_move_create" />
                 </group>

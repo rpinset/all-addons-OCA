@@ -13,14 +13,26 @@ class TestActionsStock(CommonCase):
         super().setUpClass()
         with cls.work_on_actions(cls) as work:
             cls.stock = work.component(usage="stock")
+        cls.product_a.tracking = "lot"
         cls.picking = cls._create_picking(
             lines=[(cls.product_a, 10), (cls.product_b, 10)], confirm=True
         )
         cls.move0 = cls.picking.move_ids[0]
         cls.move1 = cls.picking.move_ids[1]
-        cls._fill_stock_for_moves(cls.move0)
+        cls._fill_stock_for_moves(cls.move0, in_lot=True)
         cls._fill_stock_for_moves(cls.move1)
         cls.picking.action_assign()
+
+        cls.other_user = (
+            cls.env["res.users"]
+            .sudo()
+            .create(
+                {
+                    "name": "Other user",
+                    "login": "other_user",
+                }
+            )
+        )
 
     @classmethod
     def setUpClassVars(cls):
@@ -49,3 +61,43 @@ class TestActionsStock(CommonCase):
         self.assertFalse(picking_not_assigned.user_id)
         self.assertEqual(lines_picked.mapped("picked"), [False, True])
         self.assertEqual(lines_picked.mapped("qty_picked"), [0.0, 10.0])
+
+    def test_unmark_move_line_as_picked_nosplit_full_picking(self):
+        lines = self.picking.move_line_ids
+        self.stock.mark_move_line_as_picked(lines)
+        self.assertEqual(self.picking.user_id, self.env.user)
+
+        self.stock.unmark_move_line_as_picked(lines, split=False)
+        self.assertFalse(lines.shopfloor_user_id)
+        self.assertEqual(lines.picking_id, self.picking)
+        self.assertFalse(self.picking.user_id)
+
+    def test_unmark_move_line_as_picked_nosplit_partial_picking_same_user(self):
+        lines = self.picking.move_line_ids
+        self.stock.mark_move_line_as_picked(lines)
+        self.assertEqual(self.picking.user_id, self.env.user)
+
+        line_unpicked = lines[0]
+        self.stock.unmark_move_line_as_picked(line_unpicked, split=False)
+        self.assertFalse(line_unpicked.shopfloor_user_id)
+        self.assertEqual(line_unpicked.picking_id, self.picking)
+        self.assertEqual(self.picking.user_id, self.env.user)
+
+    def test_unmark_move_line_as_picked_nosplit_partial_picking_different_user(self):
+        lines = self.picking.move_line_ids
+        self.stock.mark_move_line_as_picked(lines[0], user=self.env.user, split=False)
+        self.stock.mark_move_line_as_picked(lines[1], user=self.other_user, split=False)
+
+        user_line = lines.filtered(lambda line: line.shopfloor_user_id == self.env.user)
+        other_line = lines.filtered(
+            lambda line: line.shopfloor_user_id == self.other_user
+        )
+        self.assertEqual(self.picking.user_id, self.other_user)
+        self.assertEqual(len(user_line), 1)
+        self.assertEqual(len(other_line), 1)
+
+        self.stock.unmark_move_line_as_picked(other_line, split=False)
+        self.assertFalse(other_line.shopfloor_user_id)
+        self.assertEqual(user_line.shopfloor_user_id, self.env.user)
+        self.assertEqual(lines.picking_id, self.picking)
+        self.assertEqual(self.picking.user_id, self.env.user)

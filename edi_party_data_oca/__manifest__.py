@@ -6,14 +6,12 @@
     "summary": """
     Allow to configure and retrieve party information for EDI exchanges.
     """,
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/edi-framework",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "maintainers": ["simahawk"],
-    "depends": ["edi_component_oca", "partner_identification"],
-    "data": [
-        "views/edi_exchange_type_views.xml",
-    ],
+    "depends": ["edi_component_oca", "edi_party_helper_oca"],
+    "post_load_hook": "post_load_hook",
 }

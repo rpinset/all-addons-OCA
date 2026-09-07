@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="rma_rma_wizard_form_view" model="ir.ui.view">
+        <field name="model">rma.rma.wizard</field>
+        <field name="inherit_id" ref="rma.rma_rma_wizard_form_view" />
+        <field name="arch" type="xml">
+            <field name="operation_id" position="after">
+                <field
+                    name="reception_route_area_id"
+                    options="{'no_create': True, 'no_open': True}"
+                    groups="route_planning.group_route_planning_user"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -245,6 +245,16 @@ msgid "Allow Move Creation"
 msgstr "Permitir Creación de Movimiento"
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid "Allow Quantity Exceeding Demand"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand_is_possible
+msgid "Allow Quantity Exceeding Demand Is Possible"
+msgstr ""
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_return_is_possible
 msgid "Allow Return Is Possible"
 msgstr ""
@@ -384,8 +394,9 @@ msgstr ""
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
-msgid "Content transfer to {} completed"
-msgstr "Transferencia de contenido a {} completada"
+msgid ""
+"Content line transferred from %(location_name)s to %(location_dest_name)s"
+msgstr ""
 
 #. module: shopfloor
 #. odoo-python
@@ -516,6 +527,12 @@ msgstr "Desde"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Goods packed into {0.name}"
 msgstr "Mercadería empaquetada en {0.name}"
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid ""
+"If True, prevents shopfloor error in case you process more qty than planned."
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__result_package_id
@@ -1678,14 +1695,6 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/models/stock_picking.py:0
-msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
-"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
-msgstr ""
-
-#. module: shopfloor
-#. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "The content of {} cannot be transferred with this scenario."
 msgstr "El contenido de {} no se puede transferir con este escenario."
@@ -2182,6 +2191,9 @@ msgstr "Zona de Entreda"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "{} is not a valid destination package."
 msgstr "{} no es un paquete de destino válido."
+
+#~ msgid "Content transfer to {} completed"
+#~ msgstr "Transferencia de contenido a {} completada"
 
 #~ msgid "The split order {} has been created."
 #~ msgstr "Se ha creado el pedido dividido {}."

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_order_view_list" model="ir.ui.view">
+        <field name="name">shopify.order.list</field>
+        <field name="model">shopify.order</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="order_name" />
+                <field name="odoo_id" />
+                <field name="source" />
+                <field name="financial_status" />
+                <field name="fulfillment_status" />
+                <field name="presentment_total" />
+                <field name="presentment_currency_id" column_invisible="True" />
+                <field
+                    name="risk_level"
+                    widget="badge"
+                    decoration-danger="risk_level == 'HIGH'"
+                    decoration-warning="risk_level == 'MEDIUM'"
+                />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_order_view_form" model="ir.ui.view">
+        <field name="name">shopify.order.form</field>
+        <field name="model">shopify.order</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <button
+                        name="action_create_tax_mapping"
+                        type="object"
+                        string="Create Tax Mapping"
+                        invisible="not missing_tax_rate"
+                        class="oe_highlight"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="order_name" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="odoo_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                            <field name="source" readonly="1" />
+                            <field name="is_draft" readonly="1" />
+                            <field
+                                name="draft_status"
+                                readonly="1"
+                                invisible="not is_draft"
+                            />
+                        </group>
+                        <group>
+                            <field name="financial_status" readonly="1" />
+                            <field name="fulfillment_status" readonly="1" />
+                            <field name="risk_level" readonly="1" widget="badge" />
+                            <field name="discount_codes" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                        </group>
+                    </group>
+                    <group string="Shop Money">
+                        <field name="shop_currency_id" readonly="1" />
+                        <field name="shop_subtotal" readonly="1" />
+                        <field name="shop_discount_total" readonly="1" />
+                        <field name="shop_shipping_total" readonly="1" />
+                        <field name="shop_tax_total" readonly="1" />
+                        <field name="shop_total" readonly="1" />
+                    </group>
+                    <group string="Presentment Money">
+                        <field name="presentment_currency_id" readonly="1" />
+                        <field name="presentment_subtotal" readonly="1" />
+                        <field name="presentment_discount_total" readonly="1" />
+                        <field name="presentment_shipping_total" readonly="1" />
+                        <field name="presentment_tax_total" readonly="1" />
+                        <field name="presentment_total" readonly="1" />
+                    </group>
+                    <notebook>
+                        <page string="Lines">
+                            <field name="line_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="odoo_id" />
+                                    <field name="sku" />
+                                    <field name="current_quantity" />
+                                    <field name="presentment_discounted_total" />
+                                    <field name="is_shipping" />
+                                    <field name="is_gift_card" />
+                                    <field name="state" widget="badge" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Refunds">
+                            <field name="refund_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="shopify_id" />
+                                    <field name="amount" />
+                                    <field name="currency_id" />
+                                    <field name="move_id" />
+                                    <field name="restock_requested" />
+                                    <field name="state" widget="badge" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Returns &amp; Exchanges">
+                            <field name="return_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="name" />
+                                    <field name="return_status" widget="badge" />
+                                    <field name="total_quantity" />
+                                    <field name="created_at" />
+                                    <field name="closed_at" />
+                                    <field name="state" widget="badge" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Raw Payload">
+                            <field name="raw_payload" readonly="1" widget="json" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_order_action" model="ir.actions.act_window">
+        <field name="name">Order Bindings</field>
+        <field name="res_model">shopify.order</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_tax_mapping_view_list" model="ir.ui.view">
+        <field name="name">shopify.tax.mapping.list</field>
+        <field name="model">shopify.tax.mapping</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="instance_id" />
+                <field name="rate" />
+                <field name="country_id" />
+                <field name="price_included" />
+                <field name="tax_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_tax_mapping_view_form" model="ir.ui.view">
+        <field name="name">shopify.tax.mapping.form</field>
+        <field name="model">shopify.tax.mapping</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="instance_id" />
+                        <field name="company_id" invisible="1" />
+                        <field name="rate" />
+                        <field name="country_id" />
+                        <field name="price_included" />
+                        <field
+                            name="tax_id"
+                            domain="[('type_tax_use', '=', 'sale'),
+                                        ('company_id', '=', company_id)]"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_tax_mapping_action" model="ir.actions.act_window">
+        <field name="name">Tax Mappings</field>
+        <field name="res_model">shopify.tax.mapping</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_gateway_journal_view_list" model="ir.ui.view">
+        <field name="name">shopify.gateway.journal.list</field>
+        <field name="model">shopify.gateway.journal</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="instance_id" />
+                <field name="gateway" />
+                <field name="journal_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_gateway_journal_action" model="ir.actions.act_window">
+        <field name="name">Gateway Journals</field>
+        <field name="res_model">shopify.gateway.journal</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="shopify_instance_order_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.form.orders</field>
+        <field name="model">shopify.instance</field>
+        <field name="inherit_id" ref="shopify_instance_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Orders" name="orders">
+                    <group>
+                        <group string="Import">
+                            <field name="order_currency_policy" />
+                            <field name="unknown_product_policy" />
+                            <field
+                                name="placeholder_product_id"
+                                invisible="unknown_product_policy != 'placeholder'"
+                                domain="['|', ('company_id', '=', False),
+                                            ('company_id', '=', company_id)]"
+                            />
+                            <field name="delivery_product_id" readonly="1" />
+                            <field
+                                name="gift_card_product_id"
+                                domain="['|', ('company_id', '=', False),
+                                            ('company_id', '=', company_id)]"
+                            />
+                        </group>
+                        <group string="State and Risk">
+                            <field name="order_confirmation_policy" />
+                            <field
+                                name="auto_confirm_paid"
+                                invisible="order_confirmation_policy != 'auto'"
+                            />
+                            <field
+                                name="auto_confirm_partially_paid"
+                                invisible="order_confirmation_policy != 'auto'"
+                            />
+                            <field name="refund_uninvoiced_policy" />
+                            <field name="high_risk_hold_enabled" />
+                        </group>
+                        <group string="Invoicing">
+                            <field name="order_invoicing_policy" />
+                            <field
+                                name="gift_card_journal_id"
+                                domain="[('company_id', '=', company_id)]"
+                            />
+                        </group>
+                        <group string="Historical Import">
+                            <field name="order_import_date_from" />
+                            <field name="order_import_date_to" />
+                            <button
+                                name="action_import_orders"
+                                type="object"
+                                string="Import Orders"
+                                class="oe_highlight"
+                                icon="fa-download"
+                            />
+                        </group>
+                    </group>
+                    <separator string="Tax Mappings" />
+                    <field name="tax_mapping_ids">
+                        <list editable="bottom">
+                            <field name="rate" />
+                            <field name="country_id" />
+                            <field name="price_included" />
+                            <field name="tax_id" />
+                        </list>
+                    </field>
+                    <separator string="Gateway Journals" />
+                    <field name="gateway_journal_ids">
+                        <list editable="bottom">
+                            <field name="gateway" />
+                            <field name="journal_id" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sale_order_view_form_shopify" model="ir.ui.view">
+        <field name="name">sale.order.form.shopify</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_release_shopify_risk_hold"
+                    type="object"
+                    string="Release Shopify Risk Hold"
+                    invisible="not shopify_risk_hold"
+                    class="btn-primary"
+                />
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <widget
+                    name="web_ribbon"
+                    title="Shopify High Risk"
+                    bg_color="text-bg-danger"
+                    invisible="not shopify_risk_hold"
+                />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Shopify" name="shopify_bindings">
+                    <group>
+                        <field name="shopify_risk_hold" readonly="1" />
+                        <field name="shopify_risk_level" readonly="1" />
+                        <field name="shopify_discount_codes" readonly="1" />
+                        <field name="shopify_tags" readonly="1" />
+                        <field name="shopify_note" readonly="1" />
+                    </group>
+                    <field name="shopify_binding_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="instance_id" />
+                            <field name="order_name" />
+                            <field name="shopify_id" />
+                            <field name="financial_status" />
+                            <field name="fulfillment_status" />
+                            <field name="state" widget="badge" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

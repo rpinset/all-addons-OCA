@@ -6,6 +6,29 @@
 
 import {ItemDetailMixin} from "/shopfloor_mobile_base/static/src/components/detail/detail_mixin.esm.js";
 
+Vue.component("detail-product-image", {
+    props: ["record"],
+    template: `
+        <div v-if="record.image" class="detail-product-image-wrapper my-3 d-flex justify-center">
+            <v-img
+                :src="record.image"
+                max-width="256"
+                contain
+                class="rounded elevation-1"
+            >
+                <template #placeholder>
+                    <div class="d-flex align-center justify-center fill-height">
+                        <v-progress-circular
+                            color="grey-lighten-4"
+                            indeterminate
+                        />
+                    </div>
+                </template>
+            </v-img>
+        </div>
+    `,
+});
+
 // TODO: refactor according to new data from backend and maybe merge w/ `detail-lot`
 Vue.component("detail-product", {
     mixins: [ItemDetailMixin],
@@ -18,7 +41,11 @@ Vue.component("detail-product", {
         },
         full_detail_fields() {
             return [
-                // Image TODO
+                {
+                    path: "image",
+                    display_no_value: false,
+                    render_component: "detail-product-image",
+                },
                 {path: "lot.name", label: "Lot"},
                 {path: "expiration_date", label: "Expiry date"},
                 {path: "default_code", label: "Internal ref"},
@@ -31,10 +58,18 @@ Vue.component("detail-product", {
         },
         supplier_detail_fields() {
             return [
-                {path: "name", klass: "loud"},
-                {path: "product_code", label: "Code"},
-                {path: "product_name", label: "Name"},
+                {path: "partner", klass: "loud"},
+                {path: "product_code", label: "Vendor Code"},
+                {path: "product_name", label: "Vendor Name"},
             ];
+        },
+        unique_suppliers(suppliers) {
+            if (!suppliers) {
+                return [];
+            }
+            return _.uniqBy(suppliers, (supp) =>
+                [supp.partner, supp.product_name, supp.product_code].join("|")
+            );
         },
         /* eslint-disable no-unused-vars */
         render_packaging(record, field) {
@@ -105,7 +140,7 @@ Vue.component("detail-product", {
     <div class="suppliers mb-4" v-if="_.result(record, 'suppliers', []).length">
         <separator-title>Suppliers</separator-title>
         <item-detail-card
-            v-for="supp in record.suppliers"
+            v-for="supp in unique_suppliers(record.suppliers)"
             :key="'supp' + supp.id"
             :record="supp"
             :options="{no_title: true, fields: supplier_detail_fields()}"

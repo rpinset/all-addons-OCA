@@ -4,7 +4,7 @@
 {
     "name": "Shopfloor - Batch Transfer Automatic Creation",
     "summary": "Create batch transfers for Cluster Picking",
-    "version": "18.0.1.2.0",
+    "version": "18.0.1.3.0",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",
     "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",

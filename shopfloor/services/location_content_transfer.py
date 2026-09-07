@@ -331,7 +331,7 @@ class LocationContentTransfer(Component):
         move_lines = self.search_move_line.search_move_lines(
             locations=location,
             match_user=True,
-            picking_type=self.env[
+            picking_types=self.env[
                 "stock.picking.type"
             ],  # disable filtering on picking types
         )
@@ -708,7 +708,7 @@ class LocationContentTransfer(Component):
         stock.validate_moves(package_moves)
         move_lines = self._find_transfer_move_lines(location)
         message = self.msg_store.location_content_transfer_item_complete(
-            scanned_location
+            location, scanned_location
         )
         completion_info = self._actions_for("completion.info")
         completion_info_popup = completion_info.popup(package_moves.move_line_ids)
@@ -757,6 +757,15 @@ class LocationContentTransfer(Component):
             return self._response_for_scan_destination(
                 location, move_line, confirmation_required=barcode
             )
+        if (
+            quantity > move_line.qty_picked
+            and not self.work.menu.allow_quantity_exceeding_demand
+        ):
+            return self._response_for_scan_destination(
+                location,
+                move_line,
+                message=self.msg_store.unable_to_pick_more(move_line.qty_picked),
+            )
 
         self._lock_lines(move_line)
 
@@ -775,7 +784,7 @@ class LocationContentTransfer(Component):
         else:
             move_lines = self._find_transfer_move_lines(move_line.location_id)
         message = self.msg_store.location_content_transfer_item_complete(
-            scanned_location
+            location, scanned_location
         )
         completion_info = self._actions_for("completion.info")
         completion_info_popup = completion_info.popup(move_line)

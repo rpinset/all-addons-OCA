@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-09-04 18:00 UTC
+Generated 2026-09-07 23:37 UTC
 
-Total skipped: **108**
+Total skipped: **107**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,7 +38,7 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **83**
+Count: **82**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -60,7 +60,6 @@ Count: **83**
 | [connector-redmine](https://github.com/OCA/connector-redmine) | [18.0](https://github.com/OCA/connector-redmine/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-sage](https://github.com/OCA/connector-sage) | [18.0](https://github.com/OCA/connector-sage/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | [18.0](https://github.com/OCA/connector-salesforce/tree/18.0) | No directory with __manifest__.py at repo root |
-| [connector-shopify](https://github.com/OCA/connector-shopify) | [18.0](https://github.com/OCA/connector-shopify/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | [18.0](https://github.com/OCA/connector-spscommerce/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [18.0](https://github.com/OCA/connector-woocommerce/tree/18.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [18.0](https://github.com/OCA/cooperative/tree/18.0) | No directory with __manifest__.py at repo root |

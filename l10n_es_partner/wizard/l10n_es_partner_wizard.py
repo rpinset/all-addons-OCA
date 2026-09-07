@@ -47,7 +47,7 @@ class L10nEsPartnerImportWizard(models.TransientModel):
         ):
             # BDE is forbidding on certain conditions to get the file, so we use a
             # local file. Latest update: 2023-10-07
-            log = _logger.warning if tools.config["test_enable"] else _logger.info
+            log = _logger.info if tools.config["test_enable"] else _logger.warning
             log("Error while downloading data. Using local file.")
             src_file_name = tools.file_path(
                 "l10n_es_partner/gen_src/REGBANESP_CONESTAB_A.xls",

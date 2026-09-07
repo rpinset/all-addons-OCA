@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_template_form_shopify" model="ir.ui.view">
+        <field name="name">product.template.form.shopify</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    name="action_open_shopify_export_wizard"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-upload"
+                    string="Export to Shopify"
+                    groups="shopify_connector.group_shopify_manager"
+                />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Shopify"
+                    name="shopify"
+                    groups="shopify_connector.group_shopify_manager"
+                >
+                    <field name="shopify_binding_ids" nolabel="1">
+                        <list create="0" delete="0">
+                            <field name="instance_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                            <field name="handle" readonly="1" />
+                            <field name="status" widget="badge" readonly="1" />
+                            <field name="odoo_status" widget="badge" readonly="1" />
+                            <field
+                                name="inventory_sync_enabled"
+                                widget="boolean_toggle"
+                            />
+                            <field
+                                name="state"
+                                widget="badge"
+                                readonly="1"
+                                decoration-success="state == 'synced'"
+                                decoration-danger="state == 'error'"
+                                decoration-info="state == 'pending'"
+                            />
+                            <field name="last_sync_date" readonly="1" />
+                            <field
+                                name="inventory_sync_status"
+                                optional="show"
+                                readonly="1"
+                            />
+                            <field name="error_message" optional="hide" readonly="1" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_product_template_view_list" model="ir.ui.view">
+        <field name="name">shopify.product.template.list</field>
+        <field name="model">shopify.product.template</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="handle" />
+                <field name="status" widget="badge" readonly="1" />
+                <field name="odoo_status" widget="badge" />
+                <field name="inventory_sync_enabled" widget="boolean_toggle" />
+                <field name="inventory_sync_status" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-success="state == 'synced'"
+                    decoration-danger="state == 'error'"
+                    decoration-info="state == 'pending'"
+                />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_product_template_view_form" model="ir.ui.view">
+        <field name="name">shopify.product.template.form</field>
+        <field name="model">shopify.product.template</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="odoo_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="handle" />
+                            <field name="status" readonly="1" />
+                            <field name="odoo_status" />
+                            <field name="inventory_sync_enabled" />
+                            <field name="inventory_sync_status" readonly="1" />
+                            <field name="external_updated_at" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                        </group>
+                    </group>
+                    <group string="Last Error" invisible="state != 'error'">
+                        <field name="error_message" nolabel="1" readonly="1" />
+                    </group>
+                    <notebook>
+                        <page string="Variants">
+                            <field name="variant_binding_ids">
+                                <list create="0" delete="0">
+                                    <field name="odoo_id" readonly="1" />
+                                    <field name="shopify_id" readonly="1" />
+                                    <field name="sku_snapshot" readonly="1" />
+                                    <field name="barcode_snapshot" readonly="1" />
+                                    <field name="price_snapshot" readonly="1" />
+                                    <field
+                                        name="inventory_item_shopify_id"
+                                        readonly="1"
+                                        optional="hide"
+                                    />
+                                    <field name="inventory_tracked" readonly="1" />
+                                    <field
+                                        name="inventory_sync_enabled"
+                                        widget="boolean_toggle"
+                                    />
+                                    <field
+                                        name="inventory_sync_status"
+                                        widget="badge"
+                                        readonly="1"
+                                    />
+                                    <field
+                                        name="price_item_id"
+                                        readonly="1"
+                                        optional="hide"
+                                    />
+                                    <field name="state" widget="badge" readonly="1" />
+                                    <field name="last_sync_date" readonly="1" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Images">
+                            <field name="image_binding_ids" readonly="1">
+                                <list>
+                                    <field name="odoo_id" />
+                                    <field name="shopify_id" />
+                                    <field name="variant_binding_id" />
+                                    <field
+                                        name="variant_binding_ids"
+                                        widget="many2many_tags"
+                                    />
+                                    <field name="source_url" />
+                                    <field name="state" widget="badge" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Collections">
+                            <field
+                                name="collection_ids"
+                                widget="many2many_tags"
+                                domain="[('instance_id', '=', instance_id)]"
+                                readonly="1"
+                            />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_product_template_view_search" model="ir.ui.view">
+        <field name="name">shopify.product.template.search</field>
+        <field name="model">shopify.product.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="handle" />
+                <field name="instance_id" />
+                <filter
+                    name="errors"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_status"
+                        string="Shopify Status"
+                        context="{'group_by': 'status'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="Sync State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_product_template_action" model="ir.actions.act_window">
+        <field name="name">Product Bindings</field>
+        <field name="res_model">shopify.product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="shopify_product_template_view_search" />
+    </record>
+
+    <record id="shopify_product_variant_view_list" model="ir.ui.view">
+        <field name="name">shopify.product.variant.list</field>
+        <field name="model">shopify.product.variant</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="sku_snapshot" />
+                <field name="barcode_snapshot" />
+                <field name="price_snapshot" />
+                <field name="inventory_tracked" />
+                <field name="inventory_sync_enabled" widget="boolean_toggle" />
+                <field name="inventory_sync_status" widget="badge" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_product_variant_action" model="ir.actions.act_window">
+        <field name="name">Variant Bindings</field>
+        <field name="res_model">shopify.product.variant</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="shopify_product_export_wizard_view_form" model="ir.ui.view">
+        <field name="name">shopify.product.export.wizard.form</field>
+        <field name="model">shopify.product.export.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Export to Shopify">
+                <group>
+                    <field name="instance_id" />
+                    <field
+                        name="product_tmpl_ids"
+                        widget="many2many_tags"
+                        options="{'no_create': True}"
+                    />
+                </group>
+                <footer>
+                    <button
+                        name="action_export"
+                        type="object"
+                        string="Queue Export"
+                        class="oe_highlight"
+                    />
+                    <button string="Cancel" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1341,6 +1341,7 @@ class Reception(Component):
         if selected_line.exists():
             if not selected_line.is_shopfloor_created:
                 stock = self._actions_for("stock")
+                selected_line.lot_id = False
                 stock.unmark_move_line_as_picked(selected_line)
             else:
                 selected_line.unlink()
@@ -1451,10 +1452,6 @@ class Reception(Component):
         # In such case, we must ensure there's another move with the remaining
         # quantity to do, so selected_line is extracted in a new move as expected.
 
-        lines_with_qty_todo = selected_line.move_id.move_line_ids.filtered(
-            lambda line: line.state not in ("cancel", "done") and line.quantity > 0
-        )
-
         move = selected_line.move_id
         move_quantity = move.product_uom._compute_quantity(
             move.product_uom_qty, selected_line.product_uom_id
@@ -1467,16 +1464,15 @@ class Reception(Component):
         # in Odoo when move lines are created manually (setting)
         lock = self._actions_for("lock")
         lock.for_update(move)
+        lines_with_qty_todo = selected_line.move_id.move_line_ids.filtered(
+            lambda line: line.state not in ("cancel", "done")
+            and line.quantity > 0
+            and line != selected_line
+        )
         if lines_with_qty_todo:
             lines_with_qty_todo.quantity = 0
-
-        split_move_vals = move._split(selected_line.qty_picked)
-        new_move = move.create(split_move_vals)
-        new_move.move_line_ids = selected_line
-        new_move._action_confirm(merge=False)
         selected_line.quantity = selected_line.qty_picked
-        new_move._recompute_state()
-        new_move._action_assign()
+        new_move = move.split_other_move_lines(selected_line, intersection=True)
         # Set back the quantity to do on one of the lines
         line = fields.first(
             move.move_line_ids.filtered(

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_collection_view_list" model="ir.ui.view">
+        <field name="name">shopify.collection.list</field>
+        <field name="model">shopify.collection</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="name" />
+                <field name="instance_id" />
+                <field name="handle" />
+                <field name="collection_type" widget="badge" />
+                <field name="shopify_id" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-success="state == 'synced'"
+                    decoration-danger="state == 'error'"
+                />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_collection_view_form" model="ir.ui.view">
+        <field name="name">shopify.collection.form</field>
+        <field name="model">shopify.collection</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Smart / Read-only"
+                        bg_color="text-bg-info"
+                        invisible="collection_type != 'smart'"
+                    />
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                            <field name="handle" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="collection_type" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                            <field name="active" />
+                        </group>
+                    </group>
+                    <group string="Last Error" invisible="state != 'error'">
+                        <field name="error_message" nolabel="1" readonly="1" />
+                    </group>
+                    <separator string="Products" />
+                    <field
+                        name="product_binding_ids"
+                        domain="[('instance_id', '=', instance_id)]"
+                        readonly="collection_type == 'smart'"
+                    >
+                        <list>
+                            <field name="instance_id" column_invisible="True" />
+                            <field name="odoo_id" />
+                            <field name="shopify_id" />
+                            <field name="status" widget="badge" />
+                            <field name="state" widget="badge" />
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_collection_view_search" model="ir.ui.view">
+        <field name="name">shopify.collection.search</field>
+        <field name="model">shopify.collection</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="handle" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="custom"
+                    string="Custom"
+                    domain="[('collection_type', '=', 'custom')]"
+                />
+                <filter
+                    name="smart"
+                    string="Smart"
+                    domain="[('collection_type', '=', 'smart')]"
+                />
+                <filter
+                    name="errors"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_type"
+                        string="Type"
+                        context="{'group_by': 'collection_type'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_collection_action" model="ir.actions.act_window">
+        <field name="name">Collections</field>
+        <field name="res_model">shopify.collection</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="shopify_collection_view_search" />
+    </record>
+</odoo>

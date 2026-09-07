@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_partner_form_shopify_customer" model="ir.ui.view">
+        <field name="name">res.partner.form.shopify.customer</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Shopify"
+                    name="shopify_customer"
+                    groups="shopify_connector.group_shopify_manager"
+                >
+                    <field name="shopify_customer_binding_ids" nolabel="1" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="instance_id" />
+                            <field name="shopify_id" />
+                            <field name="email_marketing_state" />
+                            <field name="tags" />
+                            <field name="tax_exempt" />
+                            <field name="state" widget="badge" />
+                            <field name="last_sync_date" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_customer_view_list" model="ir.ui.view">
+        <field name="name">shopify.customer.list</field>
+        <field name="model">shopify.customer</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="email_marketing_state" />
+                <field name="tax_exempt" />
+                <field name="tags" optional="hide" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_customer_view_form" model="ir.ui.view">
+        <field name="name">shopify.customer.form</field>
+        <field name="model">shopify.customer</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="instance_id" readonly="1" />
+                            <field name="odoo_id" readonly="1" />
+                            <field name="shopify_id" readonly="1" />
+                        </group>
+                        <group>
+                            <field name="email_marketing_state" readonly="1" />
+                            <field name="tax_exempt" readonly="1" />
+                            <field name="tags" readonly="1" />
+                            <field name="last_sync_date" readonly="1" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Addresses">
+                            <field name="address_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="odoo_id" />
+                                    <field name="shopify_id" />
+                                    <field name="is_default" />
+                                    <field name="state" widget="badge" />
+                                    <field name="last_sync_date" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_customer_action" model="ir.actions.act_window">
+        <field name="name">Customer Bindings</field>
+        <field name="res_model">shopify.customer</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_company_view_list" model="ir.ui.view">
+        <field name="name">shopify.company.list</field>
+        <field name="model">shopify.company</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0">
+                <field name="instance_id" />
+                <field name="odoo_id" />
+                <field name="shopify_id" />
+                <field name="external_id" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_company_view_form" model="ir.ui.view">
+        <field name="name">shopify.company.form</field>
+        <field name="model">shopify.company</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <header>
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="instance_id" readonly="1" />
+                        <field name="odoo_id" readonly="1" />
+                        <field name="shopify_id" readonly="1" />
+                        <field name="external_id" readonly="1" />
+                        <field name="last_sync_date" readonly="1" />
+                    </group>
+                    <notebook>
+                        <page string="Locations">
+                            <field name="location_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="odoo_id" />
+                                    <field name="billing_odoo_id" />
+                                    <field name="shopify_id" />
+                                    <field name="state" widget="badge" />
+                                    <field name="last_sync_date" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Contacts">
+                            <field name="contact_binding_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="odoo_id" />
+                                    <field name="title" />
+                                    <field name="roles" />
+                                    <field name="state" widget="badge" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shopify_company_action" model="ir.actions.act_window">
+        <field name="name">B2B Company Bindings</field>
+        <field name="res_model">shopify.company</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="shopify_catalog_view_list" model="ir.ui.view">
+        <field name="name">shopify.catalog.list</field>
+        <field name="model">shopify.catalog</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="instance_id" />
+                <field name="title" />
+                <field name="status" widget="badge" />
+                <field name="shopify_id" />
+                <field name="price_list_shopify_id" />
+                <field name="odoo_pricelist_id" />
+                <field name="state" widget="badge" />
+                <field name="last_sync_date" />
+            </list>
+        </field>
+    </record>
+
+    <record id="shopify_catalog_action" model="ir.actions.act_window">
+        <field name="name">B2B Catalog Bindings</field>
+        <field name="res_model">shopify.catalog</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

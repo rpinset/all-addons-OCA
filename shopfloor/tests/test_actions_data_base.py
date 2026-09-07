@@ -126,23 +126,7 @@ class ActionsDataCaseBase(CommonCase, ActionsDataTestMixin):
         return data
 
     def _expected_product(self, record, **kw):
-        data = {
-            "id": record.id,
-            "name": record.name,
-            "display_name": record.display_name,
-            "default_code": record.default_code,
-            "barcode": record.barcode,
-            "packaging": [
-                self._expected_packaging(x) for x in record.packaging_ids if x.qty
-            ],
-            "uom": {
-                "factor": record.uom_id.factor,
-                "id": record.uom_id.id,
-                "name": record.uom_id.name,
-                "rounding": record.uom_id.rounding,
-            },
-            "supplier_code": self._expected_supplier_code(record),
-        }
+        data = self.data._jsonify(record, self.data._product_parser)
         data.update(kw)
         return data
 
@@ -263,12 +247,6 @@ class ActionsDataDetailCaseBase(ActionsDataCaseBase):
                     if record.image_128
                     else None,
                     "locations": locations_info,
-                    "manufacturer": {
-                        "id": record.manufacturer_id.id,
-                        "name": record.manufacturer_id.name,
-                    }
-                    if record.manufacturer_id
-                    else None,
                     "suppliers": [
                         {
                             "id": v.partner_id.id,

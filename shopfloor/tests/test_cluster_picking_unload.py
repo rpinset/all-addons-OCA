@@ -222,13 +222,12 @@ class ClusterPickingSetDestinationAllCase(ClusterPickingUnloadingCommonCase):
         # it will be moved in a new transfer and the batch closed.
         lines_to_unload = self.move_lines[:2]
         self._set_dest_package_and_done(lines_to_unload, self.bin1)
-        lines_to_unload.write({"location_dest_id": self.packing_location.id})
 
         response = self.service.dispatch(
             "set_destination_all",
             params={
                 "picking_batch_id": self.batch.id,
-                "barcode": self.packing_location.barcode,
+                "barcode": self.packing_a_location.barcode,
             },
         )
         # The batch is closed
@@ -253,7 +252,7 @@ class ClusterPickingSetDestinationAllCase(ClusterPickingUnloadingCommonCase):
                     "picked": True,
                     "state": "done",
                     "picking_id": self.one_line_picking.id,
-                    "location_dest_id": self.packing_location.id,
+                    "location_dest_id": self.packing_a_location.id,
                 },
                 {
                     "shopfloor_unloaded": True,
@@ -262,7 +261,7 @@ class ClusterPickingSetDestinationAllCase(ClusterPickingUnloadingCommonCase):
                     "picked": True,
                     "state": "done",
                     "picking_id": self.new_picking.id,
-                    "location_dest_id": self.packing_location.id,
+                    "location_dest_id": self.packing_a_location.id,
                 },
                 {
                     "shopfloor_unloaded": False,

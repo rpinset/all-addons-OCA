@@ -1,0 +1,23 @@
+<odoo>
+    <record id="rma_view_form" model="ir.ui.view">
+        <field name="name">rma.view.form</field>
+        <field name="model">rma</field>
+        <field name="inherit_id" ref="rma.rma_view_form" />
+        <field name="arch" type="xml">
+            <field name="location_id" position="after">
+                <field
+                    name="route_area_id"
+                    readonly="state not in ('draft', 'confirmed', 'received')"
+                    options="{'no_create': True, 'no_open': True}"
+                    groups="route_planning.group_route_planning_user"
+                />
+                <field
+                    name="reception_route_area_id"
+                    readonly="state != 'draft'"
+                    options="{'no_create': True, 'no_open': True}"
+                    groups="route_planning.group_route_planning_user"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

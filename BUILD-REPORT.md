@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-09-04 18:00 UTC
+Generated 2026-09-07 23:37 UTC
 
 ## Skipped repos
 
@@ -29,7 +29,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-redmine](https://github.com/OCA/connector-redmine) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-sage](https://github.com/OCA/connector-sage) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-salesforce](https://github.com/OCA/connector-salesforce) | `no_module` | No directory with __manifest__.py at repo root |
-| [connector-shopify](https://github.com/OCA/connector-shopify) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-spscommerce](https://github.com/OCA/connector-spscommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |

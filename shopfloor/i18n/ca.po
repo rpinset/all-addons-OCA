@@ -213,6 +213,16 @@ msgid "Allow Move Creation"
 msgstr "Permetre creació de moviment"
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid "Allow Quantity Exceeding Demand"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand_is_possible
+msgid "Allow Quantity Exceeding Demand Is Possible"
+msgstr ""
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_return_is_possible
 msgid "Allow Return Is Possible"
 msgstr ""
@@ -352,8 +362,9 @@ msgstr ""
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
-msgid "Content transfer to {} completed"
-msgstr "Transferència de contingut a {} competada"
+msgid ""
+"Content line transferred from %(location_name)s to %(location_dest_name)s"
+msgstr ""
 
 #. module: shopfloor
 #. odoo-python
@@ -476,6 +487,12 @@ msgstr "Des de"
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Goods packed into {0.name}"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid ""
+"If True, prevents shopfloor error in case you process more qty than planned."
 msgstr ""
 
 #. module: shopfloor
@@ -1592,14 +1609,6 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/models/stock_picking.py:0
-msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
-"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
-msgstr ""
-
-#. module: shopfloor
-#. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "The content of {} cannot be transferred with this scenario."
 msgstr ""
@@ -2079,6 +2088,9 @@ msgstr ""
 #: code:addons/shopfloor/actions/message.py:0
 msgid "{} is not a valid destination package."
 msgstr ""
+
+#~ msgid "Content transfer to {} completed"
+#~ msgstr "Transferència de contingut a {} competada"
 
 #, python-format
 #~ msgid "A draft inventory has been created for control."

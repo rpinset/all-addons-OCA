@@ -211,6 +211,16 @@ msgid "Allow Move Creation"
 msgstr ""
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid "Allow Quantity Exceeding Demand"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand_is_possible
+msgid "Allow Quantity Exceeding Demand Is Possible"
+msgstr ""
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_return_is_possible
 msgid "Allow Return Is Possible"
 msgstr ""
@@ -350,7 +360,8 @@ msgstr ""
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
-msgid "Content transfer to {} completed"
+msgid ""
+"Content line transferred from %(location_name)s to %(location_dest_name)s"
 msgstr ""
 
 #. module: shopfloor
@@ -474,6 +485,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Goods packed into {0.name}"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
+msgid ""
+"If True, prevents shopfloor error in case you process more qty than planned."
 msgstr ""
 
 #. module: shopfloor
@@ -1584,14 +1601,6 @@ msgstr ""
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__shopfloor_priority
 #: model:ir.model.fields,help:shopfloor.field_stock_package_level__shopfloor_priority
 msgid "Technical field. Overrides operation priority in barcode scenario."
-msgstr ""
-
-#. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/models/stock_picking.py:0
-msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"
-"(new_picking_id)d\">%(new_picking_name)s</a> has been created."
 msgstr ""
 
 #. module: shopfloor

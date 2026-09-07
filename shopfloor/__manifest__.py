@@ -6,7 +6,7 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "18.0.0.18.2",
+    "version": "18.0.1.1.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",
@@ -30,9 +30,6 @@
         "stock_quant_package_dimension",
         "stock_quant_package_product_packaging",
         #  OCA / product-attribute
-        # TODO: used for manuf info on prod detail.
-        # This must be an optional dep
-        "product_manufacturer",
         # TODO: used for prod lot expire detail info.
         # This must be an optional dep
         "product_expiry",
