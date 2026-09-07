@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-09-04 17:56 UTC** (elapsed 149s)
+Last build: **2026-09-07 23:34 UTC** (elapsed 182s)
 
 - Repos integrated: **142**
 - Canonical modules: **3114**
@@ -11,7 +11,7 @@ Last build: **2026-09-04 17:56 UTC** (elapsed 149s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 20a6a87 2026-07-21 Miquel Raïch Merge pull request #5826 from jguenat/16.0-pos-remove_noupdate_ir_rule |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | d40bbb5 2026-09-05 Pedro M. Baeza Merge pull request #5967 from Tecnativa/16.0-ou-imp-website-cow_views |
 | [account-analytic](https://github.com/OCA/account-analytic) | 33 | cdc63a6 2026-05-25 CoralNetkia Translated using Weblate (Spanish) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | d38bdd2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 15 | 1ca9ee9 2026-09-01 Weblate Update translation files |
@@ -99,9 +99,9 @@ Last build: **2026-09-04 17:56 UTC** (elapsed 149s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 15 | 6670b00 2026-07-27 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 93 | a308eb7 2026-09-04 Weblate Update translation files |
 | [payroll](https://github.com/OCA/payroll) | 6 | 1a198d8 2026-07-28 mymage Translated using Weblate (Italian) |
-| [pms](https://github.com/OCA/pms) | 10 | c6ab9d1 2026-08-24 OCA-git-bot [BOT] post-merge updates |
-| [pos](https://github.com/OCA/pos) | 93 | c807729 2026-08-07 ferdymercury Translated using Weblate (French) |
-| [product-attribute](https://github.com/OCA/product-attribute) | 107 | e1d17ca 2026-07-30 OCA-git-bot [BOT] post-merge updates |
+| [pms](https://github.com/OCA/pms) | 10 | 05bc0d2 2026-09-07 OCA-git-bot [BOT] post-merge updates |
+| [pos](https://github.com/OCA/pos) | 93 | f2c8f83 2026-09-07 Weblate Update translation files |
+| [product-attribute](https://github.com/OCA/product-attribute) | 107 | 7d9c6f3 2026-09-07 Weblate Update translation files |
 | [product-configurator](https://github.com/OCA/product-configurator) | 3 | fc5b4de 2026-07-28 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | f0f2808 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 10 | e34f58d 2026-06-23 OCA-git-bot [BOT] post-merge updates |
@@ -152,5 +152,5 @@ Last build: **2026-09-04 17:56 UTC** (elapsed 149s)
 | [web-api](https://github.com/OCA/web-api) | 4 | 6dba965 2026-08-20 OCA-git-bot [BOT] post-merge updates |
 | [website](https://github.com/OCA/website) | 17 | e09c444 2026-07-20 Patricia Lorenzo Bartolomé Translated using Weblate (Swedish) |
 | [website-cms](https://github.com/OCA/website-cms) | 4 | 4990539 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 77 | ac6afb4 2026-09-04 OCA-git-bot [BOT] post-merge updates |
+| [wms](https://github.com/OCA/wms) | 77 | e0f8df4 2026-09-07 OCA-git-bot [BOT] post-merge updates |
 

@@ -4,7 +4,7 @@
 {
     "name": "POS Loyalty Exclude",
     "summary": "Exclude products from sale loyalty program in POS",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/pos",
     "license": "AGPL-3",
@@ -14,6 +14,9 @@
     "assets": {
         "web.assets_tests": [
             "pos_loyalty_exclude/static/src/tours/**/*",
+        ],
+        "point_of_sale.assets": [
+            "pos_loyalty_exclude/static/src/js/**/*",
         ],
     },
     "auto_install": True,
