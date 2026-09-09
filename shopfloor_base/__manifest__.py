@@ -6,12 +6,12 @@
 {
     "name": "Shopfloor Base",
     "summary": "Core module for creating mobile apps",
-    "version": "18.0.1.3.0",
+    "version": "18.0.1.3.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/shopfloor-app",
     "author": "Camptocamp, BCIM, Akretion, Odoo Community Association (OCA)",
-    "maintainers": ["guewen", "simahawk", "sebalix"],
+    "maintainers": ["simahawk", "sebalix"],
     "license": "LGPL-3",
     "application": True,
     "depends": [

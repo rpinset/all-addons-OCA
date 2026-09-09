@@ -191,11 +191,11 @@ class AccountInvoiceImport(models.TransientModel):
             }
         date_xpath = xml_root.xpath("/inv:Invoice/cbc:IssueDate", namespaces=namespaces)
         date_dt = datetime.strptime(date_xpath[0].text, "%Y-%m-%d")
-        date_due_xpath = xml_root.xpath("//cbc:PaymentDueDate", namespaces=namespaces)
-        date_due_str = False
-        if date_due_xpath:
-            date_due_dt = datetime.strptime(date_due_xpath[0].text, "%Y-%m-%d")
-            date_due_str = fields.Date.to_string(date_due_dt)
+        date_due_str = self.multi_xpath_helper(
+            xml_root,
+            ["//cbc:DueDate", "//cac:PaymentMeans/cbc:PaymentDueDate"],
+            namespaces,
+        )
         currency_iso_xpath = xml_root.xpath(
             "/inv:Invoice/cbc:DocumentCurrencyCode", namespaces=namespaces
         )
