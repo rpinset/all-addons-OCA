@@ -4,12 +4,12 @@
 {
     "name": "Shopfloor - Batch Transfer Automatic Creation",
     "summary": "Create batch transfers for Cluster Picking",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.2.1",
     "development_status": "Alpha",
     "category": "Inventory",
     "website": "https://github.com/OCA/wms",
-    "author": "Camptocamp, Odoo Community Association (OCA)",
-    "maintainers": ["guewen"],
+    "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
+    "maintainers": ["jbaudoux", "TDu", "mmequignon"],
     "license": "AGPL-3",
     "application": False,
     "depends": [

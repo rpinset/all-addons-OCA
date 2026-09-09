@@ -6,12 +6,12 @@
 {
     "name": "Shopfloor Base",
     "summary": "Core module for creating mobile apps",
-    "version": "14.0.2.14.0",
+    "version": "14.0.2.14.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/wms",
     "author": "Camptocamp, BCIM, Akretion, Odoo Community Association (OCA)",
-    "maintainers": ["guewen", "simahawk", "sebalix"],
+    "maintainers": ["simahawk", "sebalix"],
     "license": "LGPL-3",
     "application": True,
     "depends": [

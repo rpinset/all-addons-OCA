@@ -4034,7 +4034,7 @@ addon | version | maintainers | summary
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 14.0.1.1.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 14.0.1.0.3 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 14.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Mostra il codice fiscale del cliente nella stampa del preventivo
-[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.7.0 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
+[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.7.1 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 14.0.1.5.1 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_invoices_data_communication](l10n_it_invoices_data_communication/) | 14.0.1.0.2 |  | Comunicazione dati fatture (c.d. "nuovo spesometro" o "esterometro")
 [l10n_it_invoices_data_communication_fatturapa](l10n_it_invoices_data_communication_fatturapa/) | 14.0.1.0.0 |  | Integrazione fatturazione elettronica e comunicazione dati fatture (c.d. "nuovo spesometro")
@@ -6130,6 +6130,9 @@ and promote its widespread use.
 ## From OCA/product-variant
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# product-variant
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-variant&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/product-variant/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/product-variant/actions/workflows/test.yml?query=branch%3A14.0)
@@ -6137,8 +6140,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/product-variant-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-variant-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# product-variant
 
 TODO: add repo description.
 
@@ -6157,7 +6158,7 @@ addon | version | maintainers | summary
 [product_variant_configurator](product_variant_configurator/) | 14.0.1.0.0 |  | Provides an abstract model for product variant configuration.
 [product_variant_configurator_manual_creation](product_variant_configurator_manual_creation/) | 14.0.1.0.1 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Provides a wizards to make variants on demand
 [product_variant_default_code](product_variant_default_code/) | 14.0.3.0.4 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Product Variant Default Code
-[product_variant_inactive](product_variant_inactive/) | 14.0.2.0.2 |  | Product Variant Inactive
+[product_variant_inactive](product_variant_inactive/) | 14.0.2.0.3 |  | Product Variant Inactive
 [product_variant_sale_price](product_variant_sale_price/) | 14.0.1.0.0 |  | Allows to write fixed prices in product variants
 [product_variant_tree_qty_available](product_variant_tree_qty_available/) | 14.0.1.0.0 | <a href='https://github.com/dessanhemrayev'><img src='https://github.com/dessanhemrayev.png' width='32' height='32' style='border-radius:50%;' alt='dessanhemrayev'/></a> <a href='https://github.com/CetmixGitDrone'><img src='https://github.com/CetmixGitDrone.png' width='32' height='32' style='border-radius:50%;' alt='CetmixGitDrone'/></a> | Adds the 'QTY' button to product variant tree view
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 14.0.1.0.0 |  | Sale order line variant description
@@ -9392,14 +9393,14 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.19.2 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | manage warehouse operations with barcode scanners
-[shopfloor_base](shopfloor_base/) | 14.0.2.14.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
+[shopfloor](shopfloor/) | 14.0.4.19.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
+[shopfloor_base](shopfloor_base/) | 14.0.2.14.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
 [shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
-[shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Create batch transfers for Cluster Picking
+[shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Create batch transfers for Cluster Picking
 [shopfloor_checkout_package_measurement](shopfloor_checkout_package_measurement/) | 14.0.1.2.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Add a screen on checkout scenario for required package measurements.
 [shopfloor_checkout_package_measurement_mobile](shopfloor_checkout_package_measurement_mobile/) | 14.0.1.0.3 |  | Frontend for package measurement on the checkout shopfloor scenario
 [shopfloor_checkout_putinpack_restriction](shopfloor_checkout_putinpack_restriction/) | 14.0.1.2.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Shopfloor Checkout Put In Pack Restriction
-[shopfloor_checkout_sync](shopfloor_checkout_sync/) | 14.0.1.3.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Glue module
+[shopfloor_checkout_sync](shopfloor_checkout_sync/) | 14.0.1.3.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Glue module
 [shopfloor_dangerous_goods](shopfloor_dangerous_goods/) | 14.0.1.1.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Glue Module Between Shopfloor and Stock Dangerous Goods
 [shopfloor_dangerous_goods_mobile](shopfloor_dangerous_goods_mobile/) | 14.0.1.1.1 |  | Glue module between Shopfloor Mobile and Shopfloor Dangerous Goods
 [shopfloor_delivery_shipment](shopfloor_delivery_shipment/) | 14.0.1.6.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Manage delivery process with shipment advices

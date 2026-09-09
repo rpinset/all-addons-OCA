@@ -5,9 +5,9 @@
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/wms",
     "category": "Warehouse Management",
-    "version": "14.0.1.3.0",
+    "version": "14.0.1.3.1",
     "license": "AGPL-3",
-    "maintainers": ["guewen"],
+    "maintainers": ["jbaudoux", "mmequignon", "TDu"],
     "depends": [
         "shopfloor",
         # OCA/stock-logistics-warehouse

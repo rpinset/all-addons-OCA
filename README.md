@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-07 23:29 UTC** (elapsed 108s)
+Last build: **2026-09-09 08:16 UTC** (elapsed 164s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -74,7 +74,7 @@ Last build: **2026-09-07 23:29 UTC** (elapsed 108s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 422856a 2026-09-01 Guillaume MASSON [UPD] copier update |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 0aaae54 2026-08-26 Francesco Foresti Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 20e70b8 2026-09-08 Weblate Update translation files |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
@@ -104,7 +104,7 @@ Last build: **2026-09-07 23:29 UTC** (elapsed 108s)
 | [product-attribute](https://github.com/OCA/product-attribute) | 84 | c64c73d 2026-06-12 OCA-git-bot [BOT] post-merge updates |
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [product-variant](https://github.com/OCA/product-variant) | 9 | 9b5dbf8 2025-09-16 Betül Öğmen Added translation using Weblate (Turkish) |
+| [product-variant](https://github.com/OCA/product-variant) | 9 | 3b5cae5 2026-09-08 OCA-git-bot [BOT] post-merge updates |
 | [project](https://github.com/OCA/project) | 48 | a40a05d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -150,5 +150,5 @@ Last build: **2026-09-07 23:29 UTC** (elapsed 108s)
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
 | [website-cms](https://github.com/OCA/website-cms) | 3 | cb82f27 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 76 | 2826039 2026-09-03 Weblate Update translation files |
+| [wms](https://github.com/OCA/wms) | 76 | 05e6a1f 2026-09-08 OCA-git-bot [BOT] post-merge updates |
 

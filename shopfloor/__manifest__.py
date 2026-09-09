@@ -6,12 +6,12 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "14.0.4.19.2",
+    "version": "14.0.4.19.3",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/wms",
     "author": "Camptocamp, BCIM, Akretion, Odoo Community Association (OCA)",
-    "maintainers": ["guewen", "simahawk", "sebalix"],
+    "maintainers": ["jbaudoux", "simahawk", "sebalix", "mmequignon", "TDu"],
     "license": "AGPL-3",
     "application": True,
     "depends": [
