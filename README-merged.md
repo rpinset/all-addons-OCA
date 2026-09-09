@@ -250,6 +250,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 17.0.1.9.11 |  | OCA Financial Reports
+[account_move_line_cumulated_balance](account_move_line_cumulated_balance/) | 17.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show the cumulated balance on journal items
 [account_move_line_report_xls](account_move_line_report_xls/) | 17.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Sale Stock Report Non Billed
@@ -644,7 +645,7 @@ addon | version | maintainers | summary
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_partner_reconcile](account_partner_reconcile/) | 17.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.28 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.29 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.6.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -3032,7 +3033,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_br_account](l10n_br_account/) | 17.0.3.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Invoicing and accounting entries for Brazil
+[l10n_br_account](l10n_br_account/) | 17.0.3.0.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Invoicing and accounting entries for Brazil
 [l10n_br_account_due_list](l10n_br_account_due_list/) | 17.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Account Due List
 [l10n_br_account_fleet](l10n_br_account_fleet/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Account Fleet
 [l10n_br_account_nfe](l10n_br_account_nfe/) | 17.0.3.0.0 | <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Integration between l10n_br_account and l10n_br_nfe
@@ -3048,7 +3049,7 @@ addon | version | maintainers | summary
 [l10n_br_cte](l10n_br_cte/) | 17.0.11.0.1 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Electronic Invoice CT-e
 [l10n_br_cte_spec](l10n_br_cte_spec/) | 17.0.1.1.1 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | CT-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 17.0.1.0.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Update exchange rates using OCA modules for Brazil
-[l10n_br_fiscal](l10n_br_fiscal/) | 17.0.9.3.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
+[l10n_br_fiscal](l10n_br_fiscal/) | 17.0.9.4.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Fiscal module/tax engine for Brazil
 [l10n_br_fiscal_certificate](l10n_br_fiscal_certificate/) | 17.0.1.1.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | A1 fiscal certificate management for Brazil
 [l10n_br_fiscal_closing](l10n_br_fiscal_closing/) | 17.0.2.0.0 |  | Period fiscal closing
 [l10n_br_fiscal_dfe](l10n_br_fiscal_dfe/) | 17.0.1.1.1 |  | Distribuição de documentos fiscais
@@ -3059,13 +3060,13 @@ addon | version | maintainers | summary
 [l10n_br_hr_contract](l10n_br_hr_contract/) | 17.0.1.1.1 |  | Brazilian Localization HR Contract
 [l10n_br_hr_expense_invoice](l10n_br_hr_expense_invoice/) | 17.0.1.0.1 |  | Customization of HR Expense Invoice module for implementations in Brazil.
 [l10n_br_ie_search](l10n_br_ie_search/) | 17.0.1.1.0 |  | Integração com a API SintegraWS e SEFAZ
-[l10n_br_mdfe](l10n_br_mdfe/) | 17.0.2.0.1 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Eletronic Invoice MDF-e
+[l10n_br_mdfe](l10n_br_mdfe/) | 17.0.2.1.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Eletronic Invoice MDF-e
 [l10n_br_mdfe_spec](l10n_br_mdfe_spec/) | 17.0.1.0.1 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | MDF-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_mis_report](l10n_br_mis_report/) | 17.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Templates de relatórios contábeis brasileiros: Balanço Patrimonial e DRE
-[l10n_br_nfe](l10n_br_nfe/) | 17.0.7.1.1 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Eletronic Invoicing for Brazil / NF-e
+[l10n_br_nfe](l10n_br_nfe/) | 17.0.8.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Eletronic Invoicing for Brazil / NF-e
 [l10n_br_nfe_spec](l10n_br_nfe_spec/) | 17.0.2.0.1 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | NF-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_nfse](l10n_br_nfse/) | 17.0.5.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/luismalta'><img src='https://github.com/luismalta.png' width='32' height='32' style='border-radius:50%;' alt='luismalta'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Root electronic invoice for service / NFS-e module
-[l10n_br_nfse_focus](l10n_br_nfse_focus/) | 17.0.3.1.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | NFS-e (FocusNFE)
+[l10n_br_nfse_focus](l10n_br_nfse_focus/) | 17.0.3.2.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | NFS-e (FocusNFE)
 [l10n_br_nfse_paulistana](l10n_br_nfse_paulistana/) | 17.0.1.0.0 | <a href='https://github.com/gabrielcardoso21'><img src='https://github.com/gabrielcardoso21.png' width='32' height='32' style='border-radius:50%;' alt='gabrielcardoso21'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/luismalta'><img src='https://github.com/luismalta.png' width='32' height='32' style='border-radius:50%;' alt='luismalta'/></a> <a href='https://github.com/CristianoMafraJunior'><img src='https://github.com/CristianoMafraJunior.png' width='32' height='32' style='border-radius:50%;' alt='CristianoMafraJunior'/></a> | NFS-e (Nota Paulistana)
 [l10n_br_portal](l10n_br_portal/) | 17.0.1.0.0 |  | Campos Brasileiros no Portal
 [l10n_br_product_contract](l10n_br_product_contract/) | 17.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Criação de contratos através dos Pedidos de Vendas
@@ -3083,7 +3084,7 @@ addon | version | maintainers | summary
 [l10n_br_stock_account](l10n_br_stock_account/) | 17.0.1.0.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Invoice from Picking (nota fiscal de remessa) and other WMS overrides
 [l10n_br_stock_account_report](l10n_br_stock_account_report/) | 17.0.1.0.0 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | P7 Stock Valuation Report
 [l10n_br_zip](l10n_br_zip/) | 17.0.1.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Localisation ZIP Codes
-[spec_driven_model](spec_driven_model/) | 17.0.1.3.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | XML binding for Odoo: XML to Odoo models and models to XML.
+[spec_driven_model](spec_driven_model/) | 17.0.2.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | XML binding for Odoo: XML to Odoo models and models to XML.
 
 [//]: # (end addons)
 
@@ -3769,7 +3770,7 @@ addon | version | maintainers | summary
 [l10n_es_atc_sii_oca](l10n_es_atc_sii_oca/) | 17.0.1.0.1 |  | Suministro Inmediato de Información en el IGIC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.4 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_literal_legal](l10n_es_facturae_literal_legal/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Literal Legal Texts
 [l10n_es_facturae_special_payment](l10n_es_facturae_special_payment/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Special Payment
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.2.0 |  | IGIC (Impuesto General Indirecto Canario)
@@ -3791,7 +3792,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.2 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.3.0 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.4.1 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 17.0.1.4.2 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 17.0.1.0.4 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5106,6 +5107,7 @@ addon | version | maintainers | summary
 [product_variant_name](product_variant_name/) | 17.0.1.0.0 |  | Product Variant Name
 [product_variant_sale_price](product_variant_sale_price/) | 17.0.1.2.1 |  | Allows to write fixed prices in product variants
 [purchase_variant_configurator](purchase_variant_configurator/) | 17.0.1.0.1 |  | Product variants in purchase management
+[sale_variant_configurator](sale_variant_configurator/) | 17.0.1.0.0 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -5297,7 +5299,7 @@ addon | version | maintainers | summary
 [product_supplier_code_purchase](product_supplier_code_purchase/) | 17.0.1.0.0 |  | This module adds to the purchase order line the supplier code defined in the product.
 [product_supplierinfo_disable_autocreation](product_supplierinfo_disable_autocreation/) | 17.0.1.0.1 |  | Add option to disable automatic creation of pricelists for suppliers
 [purchase_advance_payment](purchase_advance_payment/) | 17.0.1.5.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
-[purchase_advance_payment_line](purchase_advance_payment_line/) | 17.0.1.0.0 |  | Allow to add advance payment lines on purchase orders
+[purchase_advance_payment_line](purchase_advance_payment_line/) | 17.0.1.1.0 |  | Allow to add advance payment lines on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_billing_address](purchase_billing_address/) | 17.0.1.0.0 |  | Create a new partner type (purchase), to differentiate the purchase order and invoice addresses.
@@ -5908,7 +5910,7 @@ addon | version | maintainers | summary
 [sale_force_invoiced_quantity](sale_force_invoiced_quantity/) | 17.0.1.0.0 |  | Add manual invoice quantity in sales order lines
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 17.0.1.0.1 |  | Sale Force Whole Invoiceability
 [sale_global_discount](sale_global_discount/) | 17.0.1.0.0 |  | Sale Global Discount
-[sale_invoice_blocking](sale_invoice_blocking/) | 17.0.1.0.0 |  | Allow you to block the creation of invoices from a sale order.
+[sale_invoice_blocking](sale_invoice_blocking/) | 17.0.1.0.1 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
 [sale_invoice_plan](sale_invoice_plan/) | 17.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 17.0.2.0.1 |  | Sales Management: let the user choose the invoice policy on the order
@@ -6204,7 +6206,7 @@ addon | version | maintainers | summary
 [data_encryption](data_encryption/) | 17.0.1.0.0 |  | Store accounts and credentials encrypted by environment
 [mail_environment](mail_environment/) | 17.0.1.0.2 |  | Configure mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 17.0.1.2.3 |  | move some configurations out of the database
+[server_environment](server_environment/) | 17.0.1.2.5 |  | move some configurations out of the database
 [server_environment_autocreate](server_environment_autocreate/) | 17.0.1.0.0 |  | Add ability to auto create records
 [server_environment_data_encryption](server_environment_data_encryption/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Server Environment Data Encryption
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
