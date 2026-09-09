@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 import logging
+import os
 from datetime import datetime, timedelta
 from unittest import mock
 
@@ -46,6 +47,10 @@ class EDIBackendTestCase(
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env["ir.config_parameter"].sudo().set_param(
+            "facturae.face.ws",
+            os.path.join(os.path.dirname(__file__), "wsdl", "facturasspp2.wsdl"),
+        )
         cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
 
         self = cls

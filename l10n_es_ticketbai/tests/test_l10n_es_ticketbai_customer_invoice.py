@@ -670,3 +670,14 @@ class TestL10nEsTicketBAICustomerInvoice(TestL10nEsTicketBAI):
                     },
                 )
             ]
+
+    def test_get_fp_id_from_fp_template_non_admin_user(self):
+        """Non-admin billing users must be able to resolve fiscal position templates
+        without AccessError on ir.model.data (see #5078)."""
+        fp_template = self.env["account.fiscal.position.template"].search([], limit=1)
+        if not fp_template:
+            return
+        company = self.main_company.with_user(self.account_billing)
+        # Should not raise AccessError on ir.model.data
+        res = company._get_fp_id_from_fp_template(fp_template, self.main_company)
+        self.assertIsNotNone(res)

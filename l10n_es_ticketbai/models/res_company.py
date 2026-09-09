@@ -70,16 +70,21 @@ class ResCompany(models.Model):
         """Low level cached search for a fiscal position given its template and
         company.
         """
-        xmlids = self.env["ir.model.data"].search_read(
-            [
-                ("model", "=", "account.fiscal.position.template"),
-                ("res_id", "=", fp_template.id),
-            ],
-            ["name", "module"],
+        xmlids = (
+            self.sudo()
+            .env["ir.model.data"]
+            .search_read(
+                [
+                    ("model", "=", "account.fiscal.position.template"),
+                    ("res_id", "=", fp_template.id),
+                ],
+                ["name", "module"],
+            )
         )
         return (
             xmlids
-            and self.env["ir.model.data"]
+            and self.sudo()
+            .env["ir.model.data"]
             .search(
                 [
                     ("model", "=", "account.fiscal.position"),
