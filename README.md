@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-09-09 08:20 UTC** (elapsed 158s)
+Last build: **2026-09-12 17:33 UTC** (elapsed 117s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -86,12 +86,12 @@ Last build: **2026-09-09 08:20 UTC** (elapsed 158s)
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 52c4359 2026-07-30 Pedro M. Baeza Merge pull request #2413 from hbrunn/15.0-fix-ci |
 | [payroll](https://github.com/OCA/payroll) | 3 | 7a7d13a 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
-| [product-attribute](https://github.com/OCA/product-attribute) | 55 | 3d4a18e 2026-06-18 OCA-git-bot [BOT] post-merge updates |
+| [product-attribute](https://github.com/OCA/product-attribute) | 55 | 90c92b7 2026-09-11 Weblate Update translation files |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [project](https://github.com/OCA/project) | 39 | cf77f6e 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 2 | e775244 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 108 | 8ba0a2e 2026-09-01 Weblate Update translation files |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 108 | 733d378 2026-09-10 OCA-git-bot [BOT] post-merge updates |
 | [queue](https://github.com/OCA/queue) | 8 | 7b617b6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [repair](https://github.com/OCA/repair) | 12 | 89affc7 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [report-print-send](https://github.com/OCA/report-print-send) | 3 | f981cbc 2025-04-03 Weblate Update translation files |
