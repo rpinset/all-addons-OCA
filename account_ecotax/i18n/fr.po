@@ -132,8 +132,10 @@ msgstr ""
 #. module: account_ecotax
 #: model:ir.model.fields,help:account_ecotax.field_product_product__all_ecotax_line_product_ids
 msgid ""
-"Contain all ecotaxs classification defined in product templateand the additionnal.\n"
-"ecotaxs defined in product variant. For more detailssee the product variant accounting tab"
+"Contain all ecotaxs classification defined in product templateand the "
+"additionnal.\n"
+"ecotaxs defined in product variant. For more detailssee the product variant "
+"accounting tab"
 msgstr ""
 
 #. module: account_ecotax
@@ -470,12 +472,20 @@ msgstr ""
 #. module: account_ecotax
 #: model:ir.model.fields,help:account_ecotax.field_account_ecotax_classification__supplier_status
 msgid ""
-"MAN ==> Manufacturer: is locally established in the country, and manufactures goods which are subject to ecotaxes\n"
-"under their own name and brand, or designs such goods, subcontracts the manufacturing and then sells them under their own name and brand\n"
-"RES ==> Reseller, under their own brand: is locally established in the country, and sells under their own name or brand goods subject to ecotax manufactured by others\n"
-"INT ==> Introducer: is locally established and sells on the local market goods subject to ecotax coming from other countries of the European Union\n"
-"IMP ==> Importer: is established in France, and sells on the local market goods subject to ecotax coming from countries outsidethe European Union\n"
-"REM ==> Remote vendor: is established in another country of the European Union or outside the EU, and remotely sells good subject to ecotaxes to customers in the country"
+"MAN ==> Manufacturer: is locally established in the country, and "
+"manufactures goods which are subject to ecotaxes\n"
+"under their own name and brand, or designs such goods, subcontracts the "
+"manufacturing and then sells them under their own name and brand\n"
+"RES ==> Reseller, under their own brand: is locally established in the "
+"country, and sells under their own name or brand goods subject to ecotax "
+"manufactured by others\n"
+"INT ==> Introducer: is locally established and sells on the local market "
+"goods subject to ecotax coming from other countries of the European Union\n"
+"IMP ==> Importer: is established in France, and sells on the local market "
+"goods subject to ecotax coming from countries outsidethe European Union\n"
+"REM ==> Remote vendor: is established in another country of the European "
+"Union or outside the EU, and remotely sells good subject to ecotaxes to "
+"customers in the country"
 msgstr ""
 
 #. module: account_ecotax
@@ -637,7 +647,13 @@ msgstr ""
 
 #. module: account_ecotax
 #. odoo-python
-#: code:addons/account_ecotax/models/account_move.py:0
+#: code:addons/account_ecotax/models/ecotax_line_mixin.py:0
+#, python-format
+msgid "Undefined"
+msgstr ""
+
+#. module: account_ecotax
+#. odoo-python
 #: code:addons/account_ecotax/models/account_move.py:0
 #, python-format
 msgid "Untaxed Amount"

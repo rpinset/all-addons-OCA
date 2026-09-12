@@ -634,6 +634,13 @@ msgstr ""
 
 #. module: account_ecotax
 #. odoo-python
+#: code:addons/account_ecotax/models/ecotax_line_mixin.py:0
+#, python-format
+msgid "Undefined"
+msgstr ""
+
+#. module: account_ecotax
+#. odoo-python
 #: code:addons/account_ecotax/models/account_move.py:0
 #: code:addons/account_ecotax/models/account_move.py:0
 #, python-format
