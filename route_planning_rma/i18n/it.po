@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning_rma
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: route_planning_rma
+#: model:ir.model.fields,field_description:route_planning_rma.field_rma__route_area_id
+msgid "Delivery route area"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_rma
+msgid "RMA"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model.fields,field_description:route_planning_rma.field_rma__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma.field_rma_rma_wizard__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma.field_stock_return_picking__reception_route_area_id
+msgid "Reception route area"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_stock_return_picking
+msgid "Return Picking"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_stock_return_picking_line
+msgid "Return Picking Line"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_rma_rma_wizard
+msgid "Rma Rma Wizard"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_route_area
+msgid "Route Area"
+msgstr ""
+
+#. module: route_planning_rma
+#: model:ir.model,name:route_planning_rma.model_stock_move
+msgid "Stock Move"
+msgstr ""

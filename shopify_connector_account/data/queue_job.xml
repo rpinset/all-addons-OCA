@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="job_payout_import" model="queue.job.function">
+        <field name="name">&lt;shopify.instance&gt;._job_import_payouts</field>
+        <field name="channel_id" ref="shopify_connector.queue_channel_shopify_import" />
+    </record>
+    <record id="job_payout_entry" model="queue.job.function">
+        <field name="name">&lt;shopify.payout&gt;._job_generate_entry</field>
+        <field name="channel_id" ref="shopify_connector.queue_channel_shopify_export" />
+    </record>
+</odoo>

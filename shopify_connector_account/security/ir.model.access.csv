@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_shopify_payout_manager,shopify.payout manager,model_shopify_payout,shopify_connector.group_shopify_manager,1,1,1,1
+access_shopify_payout_transaction_manager,shopify.payout.transaction manager,model_shopify_payout_transaction,shopify_connector.group_shopify_manager,1,1,1,1
+access_shopify_dispute_manager,shopify.dispute manager,model_shopify_dispute,shopify_connector.group_shopify_manager,1,1,1,1

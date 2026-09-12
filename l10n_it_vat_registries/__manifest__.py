@@ -6,7 +6,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "version": "18.0.1.2.1",
+    "version": "18.0.1.2.3",
     "name": "ITA - Registri IVA",
     "category": "Localization/Italy",
     "author": "Agile Business Group, Odoo Community Association (OCA), LinkIt Srl",
@@ -34,4 +34,9 @@
         "report/report_registro_iva.xml",
     ],
     "installable": True,
+    "external_dependencies": {
+        "python": [
+            "openupgradelib",
+        ],
+    },
 }

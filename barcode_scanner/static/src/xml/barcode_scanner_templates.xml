@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="barcode_scanner.App">
+        <div class="barcode-app-root">
+            <t t-if="currentScreen">
+                <t t-component="currentScreen.component" t-props="currentScreenProps" />
+            </t>
+            <div
+                t-if="feedback.flash.active"
+                t-att-class="`barcode-feedback-flash barcode-feedback-flash--${feedback.flash.level}`"
+                t-att-data-token="feedback.flash.token"
+            />
+            <t t-foreach="appWidgets" t-as="widget" t-key="widget_index">
+                <t t-component="widget.component" />
+            </t>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.MainScreen">
+        <div class="ilx-home-screen">
+            <header class="ilx-home-header">
+                <div class="ilx-home-top-bar">
+                    <button class="ilx-home-menu-btn" t-on-click="goHome">
+                        <i class="fa fa-th" />
+                    </button>
+                    <div class="ilx-home-avatar">
+                        <img
+                            t-if="showAvatarImage"
+                            t-att-src="avatarUrl"
+                            t-on-error="onAvatarError"
+                            class="ilx-home-avatar-img"
+                            alt="Avatar"
+                        />
+                        <span t-else="" class="ilx-home-avatar-text">
+                            <t t-esc="userInitials" />
+                        </span>
+                    </div>
+                </div>
+
+                <h3 class="ilx-home-title">
+                    <t t-esc="greeting" />,<br />
+                    <span class="ilx-home-title-name"><t t-esc="userName" />.</span>
+                </h3>
+                <p
+                    class="ilx-home-subtitle"
+                >Ready for today's distribution schedule.</p>
+            </header>
+
+            <main class="ilx-home-main">
+                <div class="ilx-home-grid">
+                    <t t-foreach="menuTiles" t-as="tile" t-key="tile.id">
+                        <button
+                            class="ilx-home-grid-item"
+                            t-on-click="() => this.onTileClick(tile)"
+                        >
+                            <div t-att-class="'ilx-home-grid-icon ' + tile.iconClass">
+                                <i t-att-class="'fa ' + tile.icon" />
+                            </div>
+                            <span class="ilx-home-grid-title" t-esc="tile.label" />
+                        </button>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+</templates>

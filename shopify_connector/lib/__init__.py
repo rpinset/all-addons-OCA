@@ -7,6 +7,7 @@ from .client import (
     ShopifyServerError,
     ShopifyThrottled,
     ShopifyUserError,
+    request_access_token,
 )
 from .customer import (
     PHONE_SEARCH_SUFFIX_DIGITS,
@@ -65,6 +66,7 @@ __all__ = [
     "ShopifyServerError",
     "ShopifyThrottled",
     "ShopifyUserError",
+    "request_access_token",
     "ShopifyCustomerPayloadError",
     "PHONE_SEARCH_SUFFIX_DIGITS",
     "diff_customer_addresses",

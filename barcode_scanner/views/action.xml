@@ -1,0 +1,13 @@
+<odoo>
+    <record id="action_barcode_scanner" model="ir.actions.client">
+        <field name="name">Scanner</field>
+        <field name="tag">barcode_scanner_app</field>
+        <field name="target">fullscreen</field>
+    </record>
+    <menuitem
+        id="menu_barcode_scanner_root"
+        name="Scanner"
+        action="action_barcode_scanner"
+        web_icon="barcode_scanner,static/src/img/icon_barcode.svg"
+    />
+</odoo>

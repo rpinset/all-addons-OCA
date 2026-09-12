@@ -1,7 +1,7 @@
 {
     "name": "Shopify Connector",
     "summary": "GraphQL-first Shopify commerce synchronization",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Sales/Sales",
     "author": "Sawir Studio, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/connector-shopify",

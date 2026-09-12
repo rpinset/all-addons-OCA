@@ -10,6 +10,7 @@ from typing import Any
 import requests
 
 API_VERSION = "2026-01"
+OAUTH_TOKEN_PATH = "/admin/oauth/access_token"
 
 
 class ShopifyError(Exception):
@@ -262,3 +263,81 @@ class ShopifyClient:
             for child in value:
                 messages.extend(cls._collect_user_errors(child))
         return messages
+
+
+def request_access_token(
+    shop_url: str,
+    client_id: str,
+    client_secret: str,
+    *,
+    session: Any | None = None,
+    timeout: float = 30.0,
+) -> dict[str, Any]:
+    """Exchange Shopify app client credentials for an Admin API access token.
+
+    Return the ``access_token`` and its ``expires_in`` lifetime in seconds.
+    Errors never repeat credentials nor Shopify response bodies.
+    """
+
+    shop = ShopifyClient._normalise_shop_url(shop_url)
+    if not shop:
+        raise ShopifyUserError("A shop domain is required to request an access token.")
+    if not client_id or not client_secret:
+        raise ShopifyUserError("The Shopify app client credentials are incomplete.")
+    http_session = session or requests.Session()
+    try:
+        response = http_session.post(
+            f"https://{shop}{OAUTH_TOKEN_PATH}",
+            data={
+                "grant_type": "client_credentials",
+                "client_id": client_id,
+                "client_secret": client_secret,
+            },
+            timeout=timeout,
+        )
+    except requests.RequestException as exc:
+        raise ShopifyServerError(
+            "Shopify could not be reached to request an access token."
+        ) from exc
+
+    if response.status_code >= 500:
+        raise ShopifyServerError(
+            f"Shopify returned HTTP {response.status_code} "
+            "for the access token request."
+        )
+    if response.status_code >= 400:
+        raise ShopifyUserError(
+            f"Shopify rejected the access token request with HTTP "
+            f"{response.status_code}."
+        )
+    try:
+        body = response.json()
+    except (TypeError, ValueError) as exc:
+        raise ShopifyServerError(
+            "Shopify returned a non-JSON access token response."
+        ) from exc
+    if not isinstance(body, dict):
+        raise ShopifyServerError("Shopify returned an invalid access token response.")
+    access_token = body.get("access_token")
+    if not isinstance(access_token, str) or not access_token:
+        raise ShopifyServerError("Shopify did not return an access token.")
+    return {
+        "access_token": access_token,
+        "expires_in": _access_token_lifetime(body.get("expires_in")),
+    }
+
+
+def _access_token_lifetime(value: Any) -> int:
+    """Return ``expires_in`` as a strictly positive number of seconds."""
+
+    if isinstance(value, bool) or not isinstance(value, (int, float, str)):
+        raise ShopifyServerError("Shopify returned an invalid access token lifetime.")
+    try:
+        lifetime = int(value)
+    except ValueError as exc:
+        raise ShopifyServerError(
+            "Shopify returned an invalid access token lifetime."
+        ) from exc
+    if lifetime <= 0:
+        raise ShopifyServerError("Shopify returned an invalid access token lifetime.")
+    return lifetime

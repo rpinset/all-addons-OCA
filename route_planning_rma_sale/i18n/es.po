@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning_rma_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-02 14:51+0000\n"
+"PO-Revision-Date: 2026-07-02 14:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: route_planning_rma_sale
+#: model:ir.model.fields,field_description:route_planning_rma_sale.field_sale_order_rma_wizard__location_id
+msgid "RMA location"
+msgstr "Ubicación de RMA"
+
+#. module: route_planning_rma_sale
+#: model:ir.model.fields,field_description:route_planning_rma_sale.field_sale_order_rma_wizard__reception_route_area_id
+msgid "Reception route area"
+msgstr "Área de ruta para recepciones"
+
+#. module: route_planning_rma_sale
+#: model:ir.model,name:route_planning_rma_sale.model_sale_order_line_rma_wizard
+msgid "Sale Order Line Rma Wizard"
+msgstr "Linea de Asistente de Orden de Venta - RMA"
+
+#. module: route_planning_rma_sale
+#: model:ir.model,name:route_planning_rma_sale.model_sale_order_rma_wizard
+msgid "Sale Order Rma Wizard"
+msgstr "Asistente de Orden de Venta - RMA"

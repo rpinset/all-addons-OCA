@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-09-09 08:25 UTC
+Generated 2026-09-12 17:36 UTC
 
-Total skipped: **107**
+Total skipped: **105**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -38,14 +38,12 @@ Count: **25**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **82**
+Count: **80**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | [18.0](https://github.com/OCA/account-consolidation/tree/18.0) | No directory with __manifest__.py at repo root |
 | [apps-store](https://github.com/OCA/apps-store) | [18.0](https://github.com/OCA/apps-store/tree/18.0) | No directory with __manifest__.py at repo root |
-| [barcode-interface](https://github.com/OCA/barcode-interface) | [18.0](https://github.com/OCA/barcode-interface/tree/18.0) | No directory with __manifest__.py at repo root |
-| [business-requirement](https://github.com/OCA/business-requirement) | [18.0](https://github.com/OCA/business-requirement/tree/18.0) | No directory with __manifest__.py at repo root |
 | [cim](https://github.com/OCA/cim) | [18.0](https://github.com/OCA/cim/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-accountedge](https://github.com/OCA/connector-accountedge) | [18.0](https://github.com/OCA/connector-accountedge/tree/18.0) | No directory with __manifest__.py at repo root |
 | [connector-cmis](https://github.com/OCA/connector-cmis) | [18.0](https://github.com/OCA/connector-cmis/tree/18.0) | No directory with __manifest__.py at repo root |

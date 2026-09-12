@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="barcode_scanner_backend" name="Barcode Scanner">
+        <div class="barcode-scanner-root">
+            <t t-foreach="routes" t-as="route" t-key="route.id">
+                <t t-call="route.widget" />
+            </t>
+        </div>
+    </template>
+</odoo>

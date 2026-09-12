@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_instance_pos_view_form" model="ir.ui.view">
+        <field name="name">shopify.instance.form.pos</field>
+        <field name="model">shopify.instance</field>
+        <field name="inherit_id" ref="shopify_connector.shopify_instance_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="POS" name="pos">
+                    <group>
+                        <group string="Order Routing">
+                            <field name="pos_enabled" />
+                            <field
+                                name="pos_auto_confirm"
+                                invisible="not pos_enabled"
+                            />
+                            <field
+                                name="pos_auto_fulfill"
+                                invisible="not pos_enabled"
+                            />
+                        </group>
+                        <group string="Cash Rounding">
+                            <field
+                                name="pos_rounding_product_id"
+                                domain="[('type', '=', 'service'), '|',
+                                            ('company_id', '=', False),
+                                            ('company_id', '=', company_id)]"
+                            />
+                            <field name="pos_rounding_account_id" />
+                        </group>
+                    </group>
+                    <separator string="POS Location Routing" />
+                    <field name="location_binding_ids">
+                        <list create="0" delete="0">
+                            <field name="name" />
+                            <field name="shopify_id" />
+                            <field name="warehouse_id" />
+                            <field name="pos_warehouse_id" />
+                            <field name="active" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_location_pos_view_form" model="ir.ui.view">
+        <field name="name">shopify.location.form.pos</field>
+        <field name="model">shopify.location</field>
+        <field name="inherit_id" ref="shopify_connector.shopify_location_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='warehouse_id']" position="after">
+                <field
+                    name="pos_warehouse_id"
+                    domain="[('company_id', '=', company_id)]"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_order_pos_view_form" model="ir.ui.view">
+        <field name="name">shopify.order.form.pos</field>
+        <field name="model">shopify.order</field>
+        <field name="inherit_id" ref="shopify_connector.shopify_order_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='source']" position="after">
+                <field
+                    name="pos_location_id"
+                    readonly="1"
+                    invisible="source != 'pos'"
+                />
+                <field
+                    name="cash_rounding_amount"
+                    readonly="1"
+                    invisible="source != 'pos'"
+                />
+                <field
+                    name="exchange_origin_id"
+                    readonly="1"
+                    invisible="source != 'pos'"
+                />
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="POS Exchanges"
+                    name="pos_exchanges"
+                    invisible="source != 'pos'"
+                >
+                    <field name="exchange_order_ids" readonly="1">
+                        <list create="0" delete="0">
+                            <field name="order_name" />
+                            <field name="odoo_id" />
+                            <field name="financial_status" />
+                            <field name="state" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="shopify_order_view_search_pos" model="ir.ui.view">
+        <field name="name">shopify.order.search.pos</field>
+        <field name="model">shopify.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="order_name" />
+                <field name="instance_id" />
+                <filter
+                    name="pos_orders"
+                    string="POS Orders"
+                    domain="[('source', '=', 'pos')]"
+                />
+                <filter
+                    name="pending_pos_orders"
+                    string="Pending POS"
+                    domain="[('source', '=', 'pos'),
+                                 ('state', '=', 'pending')]"
+                />
+                <separator />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_source"
+                        string="Source"
+                        context="{'group_by': 'source'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="shopify_connector.shopify_order_action" model="ir.actions.act_window">
+        <field name="search_view_id" ref="shopify_order_view_search_pos" />
+    </record>
+</odoo>

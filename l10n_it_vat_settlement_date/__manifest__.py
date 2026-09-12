@@ -4,7 +4,7 @@
 
 {
     "name": "ITA - Data competenza IVA",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.2",
     "category": "Localization/Italy",
     "summary": "Settlement date for VAT Statement",
     "license": "AGPL-3",
@@ -22,4 +22,9 @@
         "views/account_move_views.xml",
         "reports/report_registro_iva.xml",
     ],
+    "external_dependencies": {
+        "python": [
+            "openupgradelib",
+        ],
+    },
 }

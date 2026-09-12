@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-20 09:46+0000\n"
+"PO-Revision-Date: 2026-09-10 14:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -277,12 +277,12 @@ msgstr "Consente creazione movimento"
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand
 msgid "Allow Quantity Exceeding Demand"
-msgstr ""
+msgstr "Consentire quantità superiore alla richiesta"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_quantity_exceeding_demand_is_possible
 msgid "Allow Quantity Exceeding Demand Is Possible"
-msgstr ""
+msgstr "È possibile consentire una quantità superiore alla domanda"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_return_is_possible
@@ -436,7 +436,7 @@ msgstr "Conferma modifica ubicazione da %(location_from)s a %(location_to)s?"
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
 "Content line transferred from %(location_name)s to %(location_dest_name)s"
-msgstr ""
+msgstr "Riga contenuto trasferita da %(location_name)s a %(location_dest_name)s"
 
 #. module: shopfloor
 #. odoo-python
@@ -579,6 +579,8 @@ msgstr "Merce caricata in {0.name}"
 msgid ""
 "If True, prevents shopfloor error in case you process more qty than planned."
 msgstr ""
+"Se vero, previene l'errore del reparto nel caso si lavori più quantità della "
+"pianificata."
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__result_package_id

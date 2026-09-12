@@ -36,8 +36,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid ""
-"%(reason)s inventory correction for %(variant)s at %(location)s: %(old)s → "
-"%(new)s."
+"%(reason)s inventory correction for %(variant)s at %(location)s: %(old)s → %"
+"(new)s."
 msgstr ""
 
 #. module: shopify_connector
@@ -232,8 +232,8 @@ msgstr ""
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
 "A previous Shopify fulfillment attempt exists for %(picking)s without a "
-"confirmed Shopify ID. Resolve binding %(binding)s before retrying to avoid a"
-" duplicate fulfillment."
+"confirmed Shopify ID. Resolve binding %(binding)s before retrying to avoid a "
+"duplicate fulfillment."
 msgstr ""
 
 #. module: shopify_connector
@@ -268,8 +268,8 @@ msgid "Accept Webhooks"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__access_token
-msgid "Access Token"
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__access_token_expires_at
+msgid "Access Token Expires At"
 msgstr ""
 
 #. module: shopify_connector
@@ -302,6 +302,7 @@ msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__access_token
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__access_token
 msgid "Admin API Access Token"
 msgstr ""
 
@@ -392,9 +393,21 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
-#: code:addons/shopify_connector/models/inventory_sync.py:0
+#: code:addons/shopify_connector/models/instance.py:0
 msgid ""
-"Applied Shopify inventory %(quantity)s for %(variant)s at %(location)s."
+"Another worker is renewing the Shopify access token of %s. Try again in a "
+"moment."
+msgstr ""
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
+msgid "App Credentials"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/inventory_sync.py:0
+msgid "Applied Shopify inventory %(quantity)s for %(variant)s at %(location)s."
 msgstr ""
 
 #. module: shopify_connector
@@ -597,6 +610,23 @@ msgid "Check Webhooks"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__client_id
+msgid "Client ID of the Shopify app created in the Shopify Dev Dashboard."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance_wizard__client_id
+msgid ""
+"Client ID of the Shopify app created in the Shopify Dev Dashboard. Leave it "
+"empty to onboard a legacy custom app with a static token."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__webhook_secret
+msgid "Client Secret / Webhook Secret"
+msgstr ""
+
+#. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
 msgid "Close"
 msgstr ""
@@ -772,6 +802,15 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"Connected to Shopify shop %(shop)s, but the app is missing the %(scopes)s "
+"access scope(s). The matching synchronizations are skipped until the scopes "
+"are granted and the app reinstalled."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
 msgid "Connected to Shopify shop %s."
 msgstr ""
 
@@ -844,11 +883,6 @@ msgstr ""
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
 msgid "Create Tax Mapping"
-msgstr ""
-
-#. module: shopify_connector
-#: model:ir.model,website_form_label:shopify_connector.model_res_partner
-msgid "Create a Customer"
 msgstr ""
 
 #. module: shopify_connector
@@ -976,8 +1010,8 @@ msgid "Custom"
 msgstr ""
 
 #. module: shopify_connector
-#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
-msgid "Custom App Credentials"
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__customer_addresses
+msgid "Customer Addresses"
 msgstr ""
 
 #. module: shopify_connector
@@ -992,8 +1026,24 @@ msgid "Customer Bindings"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__customer_email
+msgid "Customer Email"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__customer_field_mapping_ids
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Customer Field Ownership"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__customer_name
+msgid "Customer Name"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__customer_phone
+msgid "Customer Phone"
 msgstr ""
 
 #. module: shopify_connector
@@ -1189,6 +1239,11 @@ msgid "Delta"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__description
+msgid "Description"
+msgstr ""
+
+#. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Detect and Import B2B"
 msgstr ""
@@ -1217,7 +1272,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
 msgid ""
 "Disabled is log-only. Enable only when external\n"
-"                                fulfillment apps are authoritative for shipping."
+"                                fulfillment apps are authoritative for "
+"shipping."
 msgstr ""
 
 #. module: shopify_connector
@@ -1232,16 +1288,6 @@ msgid "Dispatch Shopify webhook %s"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_product_image__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_product_pricelist_item__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_product_product__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_product_template__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_res_partner__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_sale_order__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_sale_order_line__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_binding_mixin__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_carrier_mapping__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_catalog__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_collection__display_name
@@ -1273,8 +1319,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_webhook_event__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_stock_picking__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_stock_quant__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -1433,6 +1477,13 @@ msgid "Exchange Lines"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__access_token_expires_at
+msgid ""
+"Expiry of the access token issued by the Shopify Dev Dashboard. Empty for "
+"static Admin API tokens, which do not expire."
+msgstr ""
+
+#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Export %s to Shopify"
@@ -1483,8 +1534,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"External fulfillment had no line quantities; Odoo delivery was not "
-"validated."
+"External fulfillment had no line quantities; Odoo delivery was not validated."
 msgstr ""
 
 #. module: shopify_connector
@@ -1505,6 +1555,7 @@ msgid "Field"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__field_mapping_ids
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Field Ownership"
 msgstr ""
@@ -1570,8 +1621,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"Fulfillment was created, but the follow-up fulfillment order refresh failed:"
-" %s"
+"Fulfillment was created, but the follow-up fulfillment order refresh failed: "
+"%s"
 msgstr ""
 
 #. module: shopify_connector
@@ -1636,6 +1687,11 @@ msgid "Handle"
 msgstr ""
 
 #. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
+msgid "Health"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__sale_order__shopify_risk_level__high
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__risk_level__high
 msgid "High"
@@ -1663,16 +1719,6 @@ msgid "Holds"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_product_image__id
-#: model:ir.model.fields,field_description:shopify_connector.field_product_pricelist_item__id
-#: model:ir.model.fields,field_description:shopify_connector.field_product_product__id
-#: model:ir.model.fields,field_description:shopify_connector.field_product_template__id
-#: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__id
-#: model:ir.model.fields,field_description:shopify_connector.field_res_partner__id
-#: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__id
-#: model:ir.model.fields,field_description:shopify_connector.field_sale_order__id
-#: model:ir.model.fields,field_description:shopify_connector.field_sale_order_line__id
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_binding_mixin__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_carrier_mapping__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_catalog__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_collection__id
@@ -1704,8 +1750,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_webhook_event__id
-#: model:ir.model.fields,field_description:shopify_connector.field_stock_picking__id
-#: model:ir.model.fields,field_description:shopify_connector.field_stock_quant__id
 msgid "ID"
 msgstr ""
 
@@ -1733,6 +1777,7 @@ msgid "Image Checksum"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__images
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_form
 msgid "Images"
 msgstr ""
@@ -2059,8 +2104,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid ""
-"Inventory write refused because Shopify has no active inventory level for "
-"%(variant)s at %(location)s."
+"Inventory write refused because Shopify has no active inventory level for %"
+"(variant)s at %(location)s."
 msgstr ""
 
 #. module: shopify_connector
@@ -2075,7 +2120,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid ""
 "Inventory writes are refused until each active\n"
-"                                Shopify location is mapped to an internal Odoo\n"
+"                                Shopify location is mapped to an internal "
+"Odoo\n"
 "                                stock location."
 msgstr ""
 
@@ -2346,7 +2392,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
 msgid ""
 "Map every active Shopify location used for inventory\n"
-"                        or fulfillment to its Odoo warehouse and stock location."
+"                        or fulfillment to its Odoo warehouse and stock "
+"location."
 msgstr ""
 
 #. module: shopify_connector
@@ -2383,6 +2430,12 @@ msgid "Missing Scopes"
 msgstr ""
 
 #. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid "Missing Shopify access scopes"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__missing_tax_country_id
 msgid "Missing Tax Country"
 msgstr ""
@@ -2415,6 +2468,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard_location__location_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__name
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__name
 msgid "Name"
 msgstr ""
 
@@ -2628,9 +2682,9 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"Odoo delivery %(picking)s was cancelled after Shopify fulfillment "
-"%(fulfillment)s was created. Shopify was not cancelled automatically. Review"
-" and use the manual Cancel in Shopify action: %(link)s"
+"Odoo delivery %(picking)s was cancelled after Shopify fulfillment %"
+"(fulfillment)s was created. Shopify was not cancelled automatically. Review "
+"and use the manual Cancel in Shopify action: %(link)s"
 msgstr ""
 
 #. module: shopify_connector
@@ -2666,7 +2720,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid ""
 "Odoo-owned fields export only when customer\n"
-"                                export is enabled. Shopify-owned fields import."
+"                                export is enabled. Shopify-owned fields "
+"import."
 msgstr ""
 
 #. module: shopify_connector
@@ -2810,8 +2865,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid ""
-"Order total mismatch: Odoo %(odoo)s, Shopify %(shopify)s, difference "
-"%(difference)s %(currency)s."
+"Order total mismatch: Odoo %(odoo)s, Shopify %(shopify)s, difference %"
+"(difference)s %(currency)s."
 msgstr ""
 
 #. module: shopify_connector
@@ -2977,6 +3032,11 @@ msgid "Presentment Unit Price"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__price
+msgid "Price"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__price_included
 msgid "Price Included"
 msgstr ""
@@ -3021,7 +3081,7 @@ msgid "Product Create If Missing"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__field_mapping_ids
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__product_field_mapping_ids
 msgid "Product Field Ownership"
 msgstr ""
 
@@ -3139,6 +3199,11 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_webhook_event__state__received
 msgid "Received"
+msgstr ""
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
+msgid "Reception"
 msgstr ""
 
 #. module: shopify_connector
@@ -3465,6 +3530,20 @@ msgid "Set Up Webhooks"
 msgstr ""
 
 #. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid "Set the Shopify App Client ID of %s to request an access token."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/wizards/onboarding.py:0
+msgid ""
+"Set the Shopify App Client ID to let Odoo request access tokens, or the "
+"Admin API access token of a legacy custom app."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_currency_id
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__order_currency_policy__shop
 msgid "Shop Currency"
@@ -3552,6 +3631,17 @@ msgstr ""
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Shopify Admin API"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__client_id
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__client_id
+msgid "Shopify App Client ID"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__webhook_secret
+msgid "Shopify App Client Secret"
 msgstr ""
 
 #. module: shopify_connector
@@ -4107,6 +4197,12 @@ msgid "Shopify Webhook Event"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__webhook_secret
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance_wizard__webhook_secret
+msgid "Shopify app client secret, also used to verify webhook HMAC signatures."
+msgstr ""
+
+#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Shopify cancelled an order already delivered in Odoo."
@@ -4128,6 +4224,22 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Shopify customers will be imported in the background."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"Shopify denied access (%(error)s). Grant the %(scopes)s access scope(s) to "
+"the app and test the connection again."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"Shopify denied access (%(error)s). Review the app access scopes and test the "
+"connection again."
 msgstr ""
 
 #. module: shopify_connector
@@ -4332,8 +4444,7 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
-msgid ""
-"Skipped Shopify product %(gid)s because no barcode or SKU match exists."
+msgid "Skipped Shopify product %(gid)s because no barcode or SKU match exists."
 msgstr ""
 
 #. module: shopify_connector
@@ -4451,10 +4562,18 @@ msgid "State and Risk"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance_wizard__access_token
+msgid ""
+"Static token of a legacy custom app. A Shopify App Client ID makes it "
+"unnecessary: Odoo then requests and renews the token itself."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_catalog__status
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment__fulfillment_status
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order__fulfillment_status
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__status
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__status
 msgid "Status"
 msgstr ""
 
@@ -4628,6 +4747,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/product_binding.py:0
 msgid "The Odoo product and Shopify instance must share a company."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"The Shopify app credentials of %s are incomplete: set the Shopify App Client "
+"Secret next to the Client ID."
 msgstr ""
 
 #. module: shopify_connector
@@ -5103,12 +5230,6 @@ msgid "Webhook Retention Days"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__webhook_secret
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__webhook_secret
-msgid "Webhook Secret"
-msgstr ""
-
-#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/webhook_event.py:0
 msgid "Webhook retries queued"
@@ -5135,6 +5256,7 @@ msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__step__webhooks
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Webhooks"
 msgstr ""
 
@@ -5161,24 +5283,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
 msgid "example.myshopify.com"
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/order_sync.py:0
-msgid "gateway-"
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/order_sync.py:0
-msgid "id"
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/operability.py:0
-msgid "instance_id"
 msgstr ""
 
 #. module: shopify_connector

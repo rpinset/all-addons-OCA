@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_payout_operability_search" model="ir.ui.view">
+        <field name="name">shopify.payout.operability.search</field>
+        <field name="model">shopify.payout</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="reference" />
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_status"
+                        string="Payout Status"
+                        context="{'group_by': 'payout_status'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="shopify_dispute_operability_search" model="ir.ui.view">
+        <field name="name">shopify.dispute.operability.search</field>
+        <field name="model">shopify.dispute</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="shopify_id" />
+                <field name="instance_id" />
+                <filter
+                    name="state_error"
+                    string="Errors"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="state_pending"
+                    string="Pending"
+                    domain="[('state', '=', 'pending')]"
+                />
+                <filter
+                    name="state_synced"
+                    string="Synced"
+                    domain="[('state', '=', 'synced')]"
+                />
+                <group>
+                    <filter
+                        name="group_instance"
+                        string="Instance"
+                        context="{'group_by': 'instance_id'}"
+                    />
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_status"
+                        string="Dispute Status"
+                        context="{'group_by': 'dispute_status'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_retry_shopify_payouts" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_payout" />
+        <field name="binding_model_id" ref="model_shopify_payout" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_payouts" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_payout" />
+        <field name="binding_model_id" ref="model_shopify_payout" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+    <record id="action_retry_shopify_disputes" model="ir.actions.server">
+        <field name="name">Retry Failed Shopify Bindings</field>
+        <field name="model_id" ref="model_shopify_dispute" />
+        <field name="binding_model_id" ref="model_shopify_dispute" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_retry_sync()</field>
+    </record>
+    <record id="action_reset_shopify_disputes" model="ir.actions.server">
+        <field name="name">Reset Shopify Bindings to Pending</field>
+        <field name="model_id" ref="model_shopify_dispute" />
+        <field name="binding_model_id" ref="model_shopify_dispute" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_reset_to_pending()</field>
+    </record>
+</odoo>
