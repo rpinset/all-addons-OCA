@@ -1,6 +1,7 @@
 from decimal import Decimal
 
 from odoo import api, fields, models
+from odoo.exceptions import UserError
 
 from odoo.addons.queue_job.delay import chain
 
@@ -49,8 +50,21 @@ class ShopifyInstanceWizard(models.TransientModel):
     )
     name = fields.Char(required=True, default="Shopify Store")
     shop_url = fields.Char(required=True)
-    access_token = fields.Char(required=True)
-    webhook_secret = fields.Char(required=True)
+    client_id = fields.Char(
+        string="Shopify App Client ID",
+        help="Client ID of the Shopify app created in the Shopify Dev Dashboard. "
+        "Leave it empty to onboard a legacy custom app with a static token.",
+    )
+    access_token = fields.Char(
+        string="Admin API Access Token",
+        help="Static token of a legacy custom app. A Shopify App Client ID makes "
+        "it unnecessary: Odoo then requests and renews the token itself.",
+    )
+    webhook_secret = fields.Char(
+        string="Client Secret / Webhook Secret",
+        required=True,
+        help="Shopify app client secret, also used to verify webhook HMAC signatures.",
+    )
     company_id = fields.Many2one(
         "res.company",
         required=True,
@@ -123,7 +137,7 @@ class ShopifyInstanceWizard(models.TransientModel):
                     "instance_id": instance.id,
                     "name": instance.name,
                     "shop_url": instance.shop_url,
-                    "access_token": instance.access_token,
+                    "client_id": instance.client_id,
                     "webhook_secret": instance.webhook_secret,
                     "company_id": instance.company_id.id,
                     "order_confirmation_policy": (instance.order_confirmation_policy),
@@ -137,6 +151,9 @@ class ShopifyInstanceWizard(models.TransientModel):
                     ),
                 }
             )
+            if not instance.client_id:
+                # A managed instance fetches its own token: nothing to type in.
+                values["access_token"] = instance.access_token
         return values
 
     def _reopen(self):
@@ -152,14 +169,24 @@ class ShopifyInstanceWizard(models.TransientModel):
 
     def action_test_connection(self):
         self.ensure_one()
+        if not self.client_id and not self.access_token:
+            raise UserError(
+                self.env._(
+                    "Set the Shopify App Client ID to let Odoo request access "
+                    "tokens, or the Admin API access token of a legacy custom app."
+                )
+            )
         values = {
             "name": self.name,
             "shop_url": self.shop_url,
-            "access_token": self.access_token,
+            "client_id": self.client_id,
             "webhook_secret": self.webhook_secret,
             "company_id": self.company_id.id,
             "active": True,
         }
+        if self.access_token or not self.client_id:
+            # Keep the token a managed instance fetched instead of wiping it.
+            values["access_token"] = self.access_token
         if self.instance_id:
             self.instance_id.write(values)
         else:

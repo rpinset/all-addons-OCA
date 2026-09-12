@@ -9,7 +9,10 @@ from odoo.addons.shopify_connector.lib.client import (
     ShopifyServerError,
     ShopifyThrottled,
     ShopifyUserError,
+    request_access_token,
 )
+
+CLIENT_SECRET = "top-secret-client-secret"
 
 
 class FakeResponse:
@@ -149,3 +152,88 @@ class TestShopifyLibClient(TransactionCase):
         )
         with self.assertRaisesRegex(ShopifyUserError, "Invalid callback"):
             mutation_client.execute("mutation")
+
+
+def request_token(response, **kwargs):
+    session = Mock()
+    session.post.side_effect = [response]
+    return (
+        request_access_token(
+            "https://Example.MyShopify.com/",
+            "client-id",
+            CLIENT_SECRET,
+            session=session,
+            **kwargs,
+        ),
+        session,
+    )
+
+
+class TestShopifyLibAccessToken(TransactionCase):
+    def test_client_credentials_grant_returns_the_token_and_its_lifetime(self):
+        token, session = request_token(
+            FakeResponse(body={"access_token": "shpat-new", "expires_in": "86399"})
+        )
+        assert token == {"access_token": "shpat-new", "expires_in": 86399}
+        assert session.post.call_args.args == (
+            "https://example.myshopify.com/admin/oauth/access_token",
+        )
+        assert session.post.call_args.kwargs["data"] == {
+            "grant_type": "client_credentials",
+            "client_id": "client-id",
+            "client_secret": CLIENT_SECRET,
+        }
+        assert session.post.call_args.kwargs["timeout"] == 30.0
+
+    def test_missing_shop_domain_or_credentials_is_a_user_error(self):
+        session = Mock()
+        with self.assertRaises(ShopifyUserError):
+            request_access_token(" ", "client-id", CLIENT_SECRET, session=session)
+        with self.assertRaises(ShopifyUserError):
+            request_access_token("shop.myshopify.com", "", "", session=session)
+        session.post.assert_not_called()
+
+    def test_client_error_is_typed_without_leaking_credentials(self):
+        with self.assertRaises(ShopifyUserError) as caught:
+            request_token(FakeResponse(status_code=401, body={"error": "invalid"}))
+        assert "HTTP 401" in str(caught.exception)
+        assert CLIENT_SECRET not in str(caught.exception)
+
+    def test_server_error_is_typed_without_leaking_credentials(self):
+        with self.assertRaises(ShopifyServerError) as caught:
+            request_token(FakeResponse(status_code=503))
+        assert "HTTP 503" in str(caught.exception)
+        assert CLIENT_SECRET not in str(caught.exception)
+
+    def test_transport_error_is_typed_and_redacted(self):
+        session = Mock()
+        session.post.side_effect = requests.ConnectionError(CLIENT_SECRET)
+        with self.assertRaises(ShopifyServerError) as caught:
+            request_access_token(
+                "shop.myshopify.com", "client-id", CLIENT_SECRET, session=session
+            )
+        assert CLIENT_SECRET not in str(caught.exception)
+
+    def test_non_json_response_is_a_server_error(self):
+        response = Mock()
+        response.status_code = 200
+        response.json.side_effect = ValueError("not json")
+        with self.assertRaises(ShopifyServerError):
+            request_token(response)
+
+    def test_response_without_an_access_token_is_a_server_error(self):
+        with self.assertRaises(ShopifyServerError):
+            request_token(FakeResponse(body={"scope": "write_products"}))
+        with self.assertRaises(ShopifyServerError):
+            request_token(FakeResponse(body={"access_token": ""}))
+        with self.assertRaises(ShopifyServerError):
+            request_token(FakeResponse(body=["shpat-new"]))
+
+    def test_invalid_token_lifetime_is_a_server_error(self):
+        for lifetime in ("soon", None, 0, -1, True, {"seconds": 60}):
+            with self.assertRaises(ShopifyServerError):
+                request_token(
+                    FakeResponse(
+                        body={"access_token": "shpat-new", "expires_in": lifetime}
+                    )
+                )

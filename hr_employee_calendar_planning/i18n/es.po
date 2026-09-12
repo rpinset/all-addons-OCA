@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-29 06:53+0000\n"
-"PO-Revision-Date: 2026-09-02 08:32+0000\n"
+"PO-Revision-Date: 2026-09-11 13:46+0000\n"
 "Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -63,6 +63,11 @@ msgid ""
 "Average hours per day a resource is supposed to work with this calendar."
 msgstr ""
 "Promedio de horas al día que un recurso debe trabajar con este calendario."
+
+#. module: hr_employee_calendar_planning
+#: model_terms:ir.ui.view,arch_db:hr_employee_calendar_planning.resource_calendar_form
+msgid "Avg"
+msgstr "Promedio"
 
 #. module: hr_employee_calendar_planning
 #: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_hr_employee__calendar_ids
@@ -132,6 +137,11 @@ msgid "Full Time Equivalent"
 msgstr "Equivalente a tiempo completo"
 
 #. module: hr_employee_calendar_planning
+#: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_resource_calendar__hours_per_week
+msgid "Hours per Week"
+msgstr "Horas a la semana"
+
+#. module: hr_employee_calendar_planning
 #: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_hr_employee__id
 #: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_hr_employee_calendar__id
 #: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_resource_calendar__id
@@ -168,6 +178,11 @@ msgstr ""
 "como tiempo completo."
 
 #. module: hr_employee_calendar_planning
+#: model_terms:ir.ui.view,arch_db:hr_employee_calendar_planning.resource_calendar_form
+msgid "Required Full Time"
+msgstr "Se requiere jornada completa"
+
+#. module: hr_employee_calendar_planning
 #: model:ir.model,name:hr_employee_calendar_planning.model_resource_mixin
 msgid "Resource Mixin"
 msgstr "Mixin de recursos"
@@ -198,11 +213,21 @@ msgid "Stored Hours Per Day"
 msgstr "Horas al día (almacenado)"
 
 #. module: hr_employee_calendar_planning
+#: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_resource_calendar__stored_hours_per_week
+msgid "Stored Hours Per Week"
+msgstr "Horas a la semana (almacenado)"
+
+#. module: hr_employee_calendar_planning
 #. odoo-python
 #: code:addons/hr_employee_calendar_planning/models/hr_employee.py:0
 msgid ""
 "The employee %s has already a calendar assigned that overalps this period"
 msgstr ""
+
+#. module: hr_employee_calendar_planning
+#: model_terms:ir.ui.view,arch_db:hr_employee_calendar_planning.resource_calendar_form
+msgid "Total"
+msgstr "Total"
 
 #. module: hr_employee_calendar_planning
 #: model:ir.model.fields,help:hr_employee_calendar_planning.field_resource_calendar__flexible_hours
@@ -212,8 +237,8 @@ msgid ""
 "the company's working schedule (working hours)."
 msgstr ""
 "Cuando esta opción está habilitada, los empleados pueden trabajar de forma "
-"flexible sin depender del calendario laboral de la compañía (horario laboral)"
-"."
+"flexible sin depender del calendario laboral de la compañía (horario "
+"laboral)."
 
 #. module: hr_employee_calendar_planning
 #: model:ir.model.fields,field_description:hr_employee_calendar_planning.field_hr_employee_calendar__calendar_id

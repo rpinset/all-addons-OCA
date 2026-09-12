@@ -4,6 +4,7 @@
         id="shopify_menu_root"
         name="Shopify"
         sequence="55"
+        web_icon="shopify_connector,static/description/menu_icon.png"
         groups="shopify_connector.group_shopify_manager"
     />
 

@@ -32,6 +32,11 @@
                     invisible="declaration_type != 'dispatches' or company_country_code != 'ES'"
                 />
             </field>
+            <field name="region_code" position="attributes">
+                <attribute
+                    name="required"
+                >reporting_level == 'extended' and company_country_code != 'ES'</attribute>
+            </field>
         </field>
     </record>
     <record

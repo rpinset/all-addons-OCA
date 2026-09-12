@@ -67,7 +67,18 @@
                                         name="shop_url"
                                         placeholder="example.myshopify.com"
                                     />
-                                    <field name="access_token" password="True" />
+                                    <field name="client_id" />
+                                    <field name="webhook_secret" password="True" />
+                                    <field
+                                        name="access_token"
+                                        widget="password"
+                                        readonly="client_id"
+                                    />
+                                    <field
+                                        name="access_token_expires_at"
+                                        readonly="1"
+                                        invisible="not client_id"
+                                    />
                                     <field name="api_version" />
                                 </group>
                                 <group string="Odoo">
@@ -75,9 +86,17 @@
                                         name="company_id"
                                         groups="base.group_multi_company"
                                     />
-                                    <field name="webhook_secret" password="True" />
+                                    <field name="active" />
+                                    <field name="log_retention_days" />
+                                </group>
+                            </group>
+                            <group string="Webhooks">
+                                <group string="Reception">
                                     <field name="accept_webhooks" />
                                     <field name="webhook_max_payload_bytes" />
+                                    <field name="webhook_retention_days" />
+                                </group>
+                                <group string="Health">
                                     <field
                                         name="webhook_health_checked_at"
                                         readonly="1"
@@ -91,11 +110,9 @@
                                         name="action_check_webhook_health"
                                         type="object"
                                         string="Check Webhook Health"
+                                        colspan="2"
                                         invisible="state != 'connected'"
                                     />
-                                    <field name="log_retention_days" />
-                                    <field name="webhook_retention_days" />
-                                    <field name="active" />
                                 </group>
                             </group>
                         </page>
@@ -104,7 +121,11 @@
                                 <group string="Import Behaviour">
                                     <field name="product_create_if_missing" />
                                     <field name="product_delete_behavior" />
-                                    <field name="product_pricelist_id" readonly="1" />
+                                    <field
+                                        name="product_pricelist_id"
+                                        readonly="1"
+                                        required="0"
+                                    />
                                     <field name="shop_currency_id" readonly="1" />
                                 </group>
                                 <group string="Operations">

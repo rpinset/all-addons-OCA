@@ -17,9 +17,15 @@
                         <field name="shop_url" placeholder="example.myshopify.com" />
                         <field name="company_id" groups="base.group_multi_company" />
                     </group>
-                    <group string="Custom App Credentials">
-                        <field name="access_token" password="True" />
+                    <group string="App Credentials">
+                        <field name="client_id" />
                         <field name="webhook_secret" password="True" />
+                        <field
+                            name="access_token"
+                            password="True"
+                            required="not client_id"
+                            invisible="client_id"
+                        />
                     </group>
                 </group>
                 <group invisible="step != 'scopes'">
