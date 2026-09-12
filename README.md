@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-09-09 08:16 UTC** (elapsed 202s)
+Last build: **2026-09-12 17:29 UTC** (elapsed 112s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -47,7 +47,7 @@ Last build: **2026-09-09 08:16 UTC** (elapsed 202s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 49 | 47edbfe 2026-07-01 Laura V Translated using Weblate (Swedish) |
 | [edi](https://github.com/OCA/edi) | 41 | 736f768 2026-01-19 EvaS595 Translated using Weblate (French) |
 | [event](https://github.com/OCA/event) | 24 | 4cdc438 2025-09-03 mymage Translated using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 19 | d98bc46 2026-04-13 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 19 | 995e716 2026-09-11 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
 | [fleet](https://github.com/OCA/fleet) | 13 | 5982b92 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 5 | f5783f7 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [helpdesk](https://github.com/OCA/helpdesk) | 12 | 94ad1d9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
