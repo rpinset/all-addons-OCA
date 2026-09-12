@@ -457,6 +457,29 @@ class TestL10nEsAeatSii(TestL10nEsAeatSiiBase):
         with self.assertRaises(exceptions.UserError):
             invoice._aeat_check_exceptions()
 
+    def test_sii_identifier_eu_passport_not_prefixed(self):
+        """An AEAT document must not get the country code prepended.
+
+        The prefix rebuilds a VAT number, whose country prefix
+        _parse_aeat_vat_info() strips. An AEAT identification is returned
+        as-is, so prepending the country sends a made-up identifier: an EU
+        customer's passport "12AB345" was reported as "FR12AB345".
+        """
+        partner = self.env["res.partner"].create(
+            {
+                "name": "EU partner with passport",
+                "country_id": self.env.ref("base.fr").id,
+                "vat": False,
+                "aeat_identification_type": "03",
+                "aeat_identification": "12AB345",
+            }
+        )
+        invoice = self._create_invoice_for_sii("out_invoice")
+        invoice.partner_id = partner
+        invoice.fiscal_position_id = False
+        self.assertEqual(invoice._get_sii_gen_type(), 1)
+        self.assertEqual(invoice._get_sii_identifier()["IDOtro"]["ID"], "12AB345")
+
     def test_aeat_check_exceptions_case_supplier_on_post(self):
         """Check sii exceptions when posting supplier bills"""
         supplier = self.supplier.copy()

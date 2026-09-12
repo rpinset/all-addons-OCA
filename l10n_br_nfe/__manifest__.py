@@ -11,7 +11,7 @@
     "maintainers": ["rvalyi", "renatonlima"],
     "website": "https://github.com/OCA/l10n-brazil",
     "development_status": "Beta",
-    "version": "16.0.15.1.2",
+    "version": "16.0.15.1.4",
     "depends": [
         "l10n_br_fiscal_edi",
         "l10n_br_fiscal_certificate",
@@ -59,7 +59,7 @@
             "erpbrasil.assinatura",
             "erpbrasil.transmissao",
             "erpbrasil.edoc",
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
             "brazilfiscalreport",
         ],
     },

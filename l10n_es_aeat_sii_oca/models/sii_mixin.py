@@ -342,6 +342,9 @@ class SiiMixin(models.AbstractModel):
             if (
                 (gen_type != 3 or country_code == "ES")
                 and not partner.vat
+                and not (
+                    partner.aeat_identification_type and partner.aeat_identification
+                )
                 and not is_simplified_invoice
             ):
                 raise UserError(_("The partner has not a VAT configured."))
@@ -632,8 +635,14 @@ class SiiMixin(models.AbstractModel):
                     "IDOtro": {
                         "CodigoPais": country_code,
                         "IDType": identifier_type,
+                        # The country prefix rebuilds a VAT number, whose
+                        # prefix _parse_aeat_vat_info() stripped. An AEAT
+                        # document (passport, residence certificate, other) is
+                        # returned as-is, so prepending the country would send
+                        # a made-up identifier.
                         "ID": vat_country_code + identifier
-                        if self._aeat_get_partner()._map_aeat_country_code(
+                        if identifier_type == "02"
+                        and self._aeat_get_partner()._map_aeat_country_code(
                             vat_country_code
                         )
                         in self._aeat_get_partner()._get_aeat_europe_codes()
