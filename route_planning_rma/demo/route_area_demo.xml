@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <function
+        model="route.area"
+        name="_create_or_update_stock_records"
+        eval="[ref('route_planning.route_area_north_demo')]"
+    />
+    <function
+        model="route.area"
+        name="_create_or_update_stock_records"
+        eval="[ref('route_planning.route_area_south_demo')]"
+    />
+</odoo>

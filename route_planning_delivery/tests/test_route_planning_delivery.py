@@ -106,6 +106,7 @@ class TestRoutePlanningDelivery(RouteCommon):
         with self.assertRaisesRegex(ValidationError, r"cannot create shipments"):
             next_picking.send_to_shipper()
 
+    @mute_logger("odoo.models.unlink")
     def test_sale_order_choose_delivery_carrier_change(self):
         # asign the carrier and route area first
         # and remove the carrier later

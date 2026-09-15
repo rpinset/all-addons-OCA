@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-20 14:06+0000\n"
+"PO-Revision-Date: 2026-09-15 08:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_res_partner__donation_count
@@ -96,7 +96,7 @@ msgstr "Importo in valuta aziendale"
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_line__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
+msgstr "Distribuzione analitica"
 
 #. module: donation
 #: model:ir.model,name:donation.model_account_analytic_applicability
@@ -163,6 +163,8 @@ msgid ""
 "Cancelled donation '%s' is linked to a journal entry. This should never "
 "happen."
 msgstr ""
+"La donazione annullata '%s' è collegata a una registrazione contabile. "
+"Questo non dovrebbe mai accadere."
 
 #. module: donation
 #. odoo-python
@@ -170,6 +172,8 @@ msgstr ""
 msgid ""
 "Cancelled donation '%s' is linked to a tax receipt. This should never happen."
 msgstr ""
+"La donazione annullata \"%s\" è collegata a una ricevuta fiscale. Questo non "
+"dovrebbe mai accadere."
 
 #. module: donation
 #. odoo-python
@@ -213,7 +217,7 @@ msgstr "Controlla importo"
 #. module: donation
 #: model_terms:ir.ui.view,arch_db:donation.res_config_settings_donation
 msgid "Check Total"
-msgstr ""
+msgstr "Controlla il totale"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_res_config_settings__group_donation_check_total
@@ -319,7 +323,7 @@ msgstr "Campagna donazioni attuale"
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_res_users__context_donation_payment_method_line_id
 msgid "Current Donation Payment Method"
-msgstr ""
+msgstr "Metodo di pagamento attuale per le donazioni"
 
 #. module: donation
 #: model_terms:ir.ui.view,arch_db:donation.donation_report_search
@@ -341,7 +345,7 @@ msgstr "Nome visualizzato"
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_line__distribution_analytic_account_ids
 msgid "Distribution Analytic Account"
-msgstr ""
+msgstr "Conto distribuzione analitica"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_account_analytic_applicability__business_domain
@@ -380,18 +384,24 @@ msgid ""
 "Donation '%(donation)s' is linked to the tax receipt %(tax_receipt)s, so you "
 "cannot delete it."
 msgstr ""
+"La donazione '%(donation)s' è collegata con la ricevuta fiscale %"
+"(tax_receipt)s, quindi non si può cancellare."
 
 #. module: donation
 #. odoo-python
 #: code:addons/donation/models/donation.py:0
 msgid "Donation '%s' is in Done state, so you cannot delete it."
 msgstr ""
+"La donazione '%s' è nello stato Completato, pertanto non è possibile "
+"eliminarla."
 
 #. module: donation
 #. odoo-python
 #: code:addons/donation/models/donation.py:0
 msgid "Donation '%s' is linked to a journal entry, so you cannot delete it."
 msgstr ""
+"La donazione \"%s\" è collegata a una registrazione contabile, pertanto non "
+"è possibile eliminarla."
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_donation__campaign_id
@@ -449,6 +459,8 @@ msgstr "Conto donazione con bonifico bancario"
 #: code:addons/donation/models/account_payment_method_line.py:0
 msgid "Donation payment method '%s'is not an inbound payment method."
 msgstr ""
+"Il metodo di pagamento per le donazioni '%s' non è un metodo di pagamento in "
+"entrata."
 
 #. module: donation
 #: model:ir.actions.act_window,name:donation.donation_action
@@ -548,6 +560,7 @@ msgstr "Per ogni donazione"
 #: code:addons/donation/models/donation.py:0
 msgid "Full in-kind donation: no journal entry generated."
 msgstr ""
+"Donazione interamente in natura: nessuna registrazione contabile generata."
 
 #. module: donation
 #: model_terms:ir.ui.view,arch_db:donation.donation_report_search
@@ -595,6 +608,7 @@ msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 #: model:ir.model.fields,help:donation.field_account_payment_method_line__donation
 msgid "If enabled, this payment method will be available on donations"
 msgstr ""
+"Se abilitato, questo metodo di pagamento sarà disponibile per le donazioni"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_thanks_template__image
@@ -610,7 +624,7 @@ msgstr "In natura"
 #. module: donation
 #: model_terms:ir.ui.view,arch_db:donation.donation_report_search
 msgid "In kind"
-msgstr ""
+msgstr "In natura"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_line__tax_receipt_ok
@@ -625,7 +639,7 @@ msgstr "Segue"
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_donation__move_id
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_campaign__write_uid
@@ -686,13 +700,14 @@ msgstr "Messaggi"
 #. odoo-python
 #: code:addons/donation/models/account_bank_statement_line.py:0
 msgid "Missing Product for Donations via Credit Transfert for company '%s'."
-msgstr ""
+msgstr "Prodotto mancante per le donazioni tramite bonifico per l'azienda '%s'."
 
 #. module: donation
 #. odoo-python
 #: code:addons/donation/models/account_bank_statement_line.py:0
 msgid "Missing inbound payment method linked to the bank journal '%s'."
 msgstr ""
+"Metodo di pagamento in entrata mancante collegato al registro bancario '%s'."
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_donation__my_activity_date_deadline
@@ -818,19 +833,19 @@ msgstr "Nazione partner"
 #: model_terms:ir.ui.view,arch_db:donation.donation_report_search
 #: model_terms:ir.ui.view,arch_db:donation.donation_search
 msgid "Payment Method"
-msgstr ""
+msgstr "Metodo di pagamento"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_report__payment_method_line_id
 msgid "Payment Method Line"
-msgstr ""
+msgstr "Riga metodo di pagamento"
 
 #. module: donation
 #: model:ir.actions.act_window,name:donation.account_payment_method_line_donation_action
 #: model:ir.model,name:donation.model_account_payment_method_line
 #: model:ir.ui.menu,name:donation.account_payment_method_line_donation_menu
 msgid "Payment Methods"
-msgstr ""
+msgstr "Metodi di pagamento"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_donation_donation__payment_ref
@@ -841,7 +856,7 @@ msgstr "Riferimento pagamento"
 #. odoo-python
 #: code:addons/donation/models/donation.py:0
 msgid "Payment account is not set on payment method '%s'."
-msgstr ""
+msgstr "Il conto di pagamento non è impostato per il metodo di pagamento '%s'."
 
 #. module: donation
 #. odoo-python
@@ -850,6 +865,8 @@ msgid ""
 "Payment method is not set on donation %s (only fully in-kind donations don't "
 "require a payment method)."
 msgstr ""
+"Il metodo di pagamento non è impostato per la donazione %s (solo le "
+"donazioni interamente in natura non richiedono un metodo di pagamento)."
 
 #. module: donation
 #: model:ir.ui.menu,name:donation.donation_tax_receipt_print_menu
@@ -877,7 +894,7 @@ msgstr "Categoria prodotto"
 #: model:ir.model.fields,field_description:donation.field_donation_line__product_donation_type
 #: model_terms:ir.ui.view,arch_db:donation.donation_report_search
 msgid "Product Type donation"
-msgstr ""
+msgstr "Donazione di prodotti"
 
 #. module: donation
 #: model:ir.model.fields,field_description:donation.field_res_company__donation_credit_transfer_product_id
@@ -1052,6 +1069,8 @@ msgstr ""
 #: code:addons/donation/models/account_bank_statement_line.py:0
 msgid "The Donation by Credit Transfer Accountis not set for company '%s'."
 msgstr ""
+"Il conto per le donazioni tramite bonifico non è impostato per l'azienda "
+"'%s'."
 
 #. module: donation
 #. odoo-python
@@ -1079,6 +1098,8 @@ msgid ""
 "The payment method '%(pay_mode)s' selected on donation %(donation)s is not a "
 "donation payment method."
 msgstr ""
+"Il metodo di pagamento '%(pay_mode)s' selezionato per la donazione %"
+"(donation)s non è un metodo di pagamento per donazioni."
 
 #. module: donation
 #: model:ir.model.fields,help:donation.field_donation_donation__thanks_printed

@@ -30,6 +30,7 @@ msgstr "Proveedor"
 
 #. module: route_planning_delivery
 #: model:ir.model.fields,field_description:route_planning_delivery.field_choose_delivery_carrier__route_area_id
+#: model:ir.model.fields,field_description:route_planning_delivery.field_stock_picking__route_area_id
 msgid "Route Area"
 msgstr "Área de ruta"
 
@@ -39,24 +40,25 @@ msgid "Route Planning"
 msgstr "Planificación de rutas"
 
 #. module: route_planning_delivery
+#: model:ir.model.fields,help:route_planning_delivery.field_stock_picking__route_area_id
+msgid "Route area for this picking, used to create routes."
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:delivery.carrier,name:route_planning_delivery.delivery_carrier_route_demo
+#: model:product.template,name:route_planning_delivery.product_route_demo_product_template
+msgid "Route planning"
+msgstr ""
+
+#. module: route_planning_delivery
 #: model:ir.model,name:route_planning_delivery.model_sale_order
 msgid "Sales Order"
 msgstr "Pedido de Venta"
 
 #. module: route_planning_delivery
-#: model:ir.model,name:route_planning_delivery.model_sale_order_line
-msgid "Sales Order Line"
-msgstr "Línea de pedido de venta"
-
-#. module: route_planning_delivery
 #: model:ir.model,name:route_planning_delivery.model_delivery_carrier
 msgid "Shipping Methods"
 msgstr "Métodos de envío"
-
-#. module: route_planning_delivery
-#: model:ir.model,name:route_planning_delivery.model_stock_move
-msgid "Stock Move"
-msgstr "Movimiento de stock"
 
 #. module: route_planning_delivery
 #. odoo-python
@@ -65,8 +67,8 @@ msgid ""
 "The delivery carrier: %s with provider type: 'Route Planning' cannot create "
 "shipments, please change the integration level to ' Get rate'."
 msgstr ""
-"El método de envío: %s con el tipo de proveedor: 'Planificacion de rutas' no"
-" puede enviar a crear envíos, por favor cambie el tipo de integración a "
+"El método de envío: %s con el tipo de proveedor: 'Planificacion de rutas' no "
+"puede enviar a crear envíos, por favor cambie el tipo de integración a "
 "'Obtener tarifa'."
 
 #. module: route_planning_delivery
@@ -76,5 +78,16 @@ msgid ""
 "The delivery carrier: %s with provider type: 'Route Planning' cannot create "
 "shipments."
 msgstr ""
-"El método de envío: %s con el tipo de proveedor: 'Planificacion de rutas' no"
-" puede crear envíos."
+"El método de envío: %s con el tipo de proveedor: 'Planificacion de rutas' no "
+"puede crear envíos."
+
+#. module: route_planning_delivery
+#: model:ir.model,name:route_planning_delivery.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#~ msgid "Sales Order Line"
+#~ msgstr "Línea de pedido de venta"
+
+#~ msgid "Stock Move"
+#~ msgstr "Movimiento de stock"

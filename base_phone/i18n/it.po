@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 07:17+0000\n"
-"PO-Revision-Date: 2025-08-20 11:25+0000\n"
+"PO-Revision-Date: 2026-09-14 17:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: base_phone
 #: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__google_translate_api_key
@@ -29,7 +29,7 @@ msgstr ""
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__snailmail_cover
 msgid "Add a Cover Page"
-msgstr ""
+msgstr "Aggiungi copertina"
 
 #. module: base_phone
 #: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__tenor_api_key
@@ -39,6 +39,10 @@ msgid ""
 "If you were using a Tenor GIF API key (service shutdown on June 30, 2026), "
 "please replace it here with a Klipy GIF API key"
 msgstr ""
+"Aggiungi una chiave API Klipy GIF per abilitare il supporto alle GIF. "
+"https://docs.klipy.com/getting-started\n"
+"Se stavi utilizzando una chiave API Tenor GIF (servizio in chiusura il 30 "
+"giugno 2026), sostituiscila qui con una chiave API Klipy GIF"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__alias_domain_id
@@ -348,17 +352,17 @@ msgstr "È azienda radice"
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_api_key
 msgid "Klipy API key"
-msgstr ""
+msgstr "Chiave API Klipy"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_gif_limit
 msgid "Klipy GIF limits"
-msgstr ""
+msgstr "Limiti GIF Klipy"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__tenor_content_filter
 msgid "Klipy content filter"
-msgstr ""
+msgstr "Filtro contenuto Klipy"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_auth_ldap
@@ -503,12 +507,12 @@ msgstr "Numeri telefonici che non possono essere riformattati:"
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__snailmail_duplex
 msgid "Print Both sides"
-msgstr ""
+msgstr "Stampa entrambe i lati"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__snailmail_color
 msgid "Print In Color"
-msgstr ""
+msgstr "Stampa a colori"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__profiling_enabled_until
@@ -571,7 +575,7 @@ msgstr "Visualizza effetto"
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__snailmail_cover_readonly
 msgid "Snailmail Cover Readonly"
-msgstr ""
+msgstr "Copertina Snailmail solo lettura"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__state
@@ -696,7 +700,7 @@ msgstr "Nome app web"
 #. module: base_phone
 #: model:ir.model.fields,help:base_phone.field_reformat_all_phonenumbers__tenor_content_filter
 msgid "https://docs.klipy.com/migrate-from-tenor/content-filtering"
-msgstr ""
+msgstr "https://docs.klipy.com/migrate-from-tenor/content-filtering"
 
 #. module: base_phone
 #: model:ir.model.fields,field_description:base_phone.field_reformat_all_phonenumbers__module_google_recaptcha

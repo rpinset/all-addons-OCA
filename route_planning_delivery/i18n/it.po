@@ -27,12 +27,18 @@ msgstr ""
 
 #. module: route_planning_delivery
 #: model:ir.model.fields,field_description:route_planning_delivery.field_choose_delivery_carrier__route_area_id
+#: model:ir.model.fields,field_description:route_planning_delivery.field_stock_picking__route_area_id
 msgid "Route Area"
 msgstr ""
 
 #. module: route_planning_delivery
 #: model:ir.model.fields.selection,name:route_planning_delivery.selection__delivery_carrier__delivery_type__route_planning
 msgid "Route Planning"
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model.fields,help:route_planning_delivery.field_stock_picking__route_area_id
+msgid "Route area for this picking, used to create routes."
 msgstr ""
 
 #. module: route_planning_delivery
@@ -65,4 +71,9 @@ msgstr ""
 msgid ""
 "The delivery carrier: %s with provider type: 'Route Planning' cannot create "
 "shipments."
+msgstr ""
+
+#. module: route_planning_delivery
+#: model:ir.model,name:route_planning_delivery.model_stock_picking
+msgid "Transfer"
 msgstr ""

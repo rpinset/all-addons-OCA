@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="rma_choose_delivery_carrier_form_view" model="ir.ui.view">
+        <field name="model">rma.choose.delivery.carrier</field>
+        <field
+            name="inherit_id"
+            ref="rma_delivery.rma_choose_delivery_carrier_form_view"
+        />
+        <field name="arch" type="xml">
+            <field name="carrier_id" position="after">
+                <field
+                    name="route_area_id"
+                    invisible="delivery_type != 'route_planning'"
+                    required="delivery_type == 'route_planning'"
+                    groups="route_planning.group_route_planning_user"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

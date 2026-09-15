@@ -25,3 +25,7 @@ class TestRoutePlanningRmaCommon(RouteCommon):
             }
         )
         cls.operation = cls.env.ref("rma.rma_operation_replace")
+        # rma_delivery compatibility
+        if "rma_reception_strategy" in cls.company._fields:
+            cls.company.rma_reception_strategy = "rma_method"
+            cls.company.rma_delivery_strategy = "rma_method"

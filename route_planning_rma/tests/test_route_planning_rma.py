@@ -44,6 +44,13 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
 
     def test_rma_with_route_area(self):
         wizard = self._rma_stock_return_wizard()
+        carrier_route = self.env.ref(
+            "route_planning_delivery.delivery_carrier_route_demo",
+            raise_if_not_found=False,
+        )
+        if carrier_route and "reception_carrier_id" in wizard._fields:
+            # rma_delivery compatibility
+            wizard.reception_carrier_id = carrier_route
         wizard.reception_route_area_id = self.area_north
         picking_action = wizard.action_create_returns()
         picking_return = self.env["stock.picking"].browse(picking_action["res_id"])
@@ -53,6 +60,9 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertEqual(rma.reception_route_area_id, self.area_north)
         rma.reception_move_id.quantity = rma.product_uom_qty
         reception_picking = rma.reception_move_id.picking_id
+        self.assertEqual(
+            reception_picking.picking_type_id, self.warehouse.rma_in_type_id
+        )
         self.assertEqual(
             reception_picking.location_dest_id, self.area_north.location_id
         )
@@ -65,6 +75,9 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         reception_picking.button_validate()
         next_reception_picking = reception_picking._get_next_transfers()
         self.assertTrue(next_reception_picking)
+        self.assertEqual(
+            next_reception_picking.picking_type_id, self.warehouse.rma_in_type_id
+        )
         self.assertEqual(next_reception_picking.route_area_id, self.area_north)
         self.assertEqual(
             next_reception_picking.location_id, self.area_north.location_id
@@ -76,6 +89,8 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertEqual(next_reception_picking.state, "done")
         self.assertEqual(rma.state, "received")
         # Create return
+        if carrier_route and "carrier_id" in rma._fields:
+            rma.carrier_id = carrier_route  # rma_delivery compatibility
         rma.route_area_id = self.area_south
         res = rma.action_return()
         wizard_form = Form(self.env[res["res_model"]].with_context(**res["context"]))
@@ -83,6 +98,7 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         wizard.action_deliver()
         self.assertTrue(rma.delivery_move_ids.picking_id)
         rma_picking = rma.delivery_move_ids.picking_id
+        self.assertEqual(rma_picking.picking_type_id, self.warehouse.rma_out_type_id)
         self.assertEqual(rma_picking.route_area_id, self.area_south)
         self.assertEqual(rma_picking.location_dest_id, self.area_south.location_id)
         # Change route area
@@ -94,6 +110,9 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         self.assertEqual(rma_picking.state, "done")
         next_rma_picking = rma_picking._get_next_transfers()
         self.assertTrue(next_rma_picking)
+        self.assertEqual(
+            next_rma_picking.picking_type_id, self.warehouse.rma_out_type_id
+        )
         self.assertEqual(next_rma_picking.route_area_id, self.area_north)
         self.assertEqual(next_rma_picking.location_id, self.area_north.location_id)
         checkpoint = next_rma_picking.route_checkpoint_ids
@@ -200,10 +219,19 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
     @mute_logger("odoo.models.unlink")
     def test_rma_rma_route_area_change(self):
         self.env.company.rma_new_rma_button_from_rma = True
+        carrier_route = self.env.ref(
+            "route_planning_delivery.delivery_carrier_route_demo",
+            raise_if_not_found=False,
+        )
         wizard = self._rma_stock_return_wizard()
         picking_action = wizard.action_create_returns()
         picking_return = self.env["stock.picking"].browse(picking_action["res_id"])
         rma = picking_return.move_ids.rma_receiver_ids
+        # route_planning_rma_delivery compatibility: If the module is installed, you
+        # must set a carrier in order to be able to define a route area later in the
+        # process (so that the field is visible).
+        if carrier_route and "carrier_id" in rma._fields:
+            rma.reception_carrier_id = carrier_route
         self.assertTrue(rma)
         self.assertEqual(rma.state, "confirmed")
         reception_picking = rma.reception_move_id.picking_id

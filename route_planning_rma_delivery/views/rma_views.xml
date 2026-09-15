@@ -1,0 +1,25 @@
+<odoo>
+    <record id="rma_view_form" model="ir.ui.view">
+        <field name="name">rma.view.form</field>
+        <field name="model">rma</field>
+        <field name="inherit_id" ref="route_planning_rma.rma_view_form" />
+        <field name="arch" type="xml">
+            <field name="route_area_id" position="attributes">
+                <attribute
+                    name="required"
+                >carrier_delivery_type=='route_planning'</attribute>
+                <attribute
+                    name="invisible"
+                >carrier_delivery_type != 'route_planning'</attribute>
+            </field>
+            <field name="reception_route_area_id" position="attributes">
+                <attribute
+                    name="required"
+                >reception_carrier_delivery_type=='route_planning'</attribute>
+                <attribute
+                    name="invisible"
+                >reception_carrier_delivery_type != 'route_planning'</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>
