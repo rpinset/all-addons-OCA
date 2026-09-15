@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-12 17:29 UTC** (elapsed 140s)
+Last build: **2026-09-15 23:34 UTC** (elapsed 204s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -82,7 +82,7 @@ Last build: **2026-09-12 17:29 UTC** (elapsed 140s)
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 6 | 8dc1cd9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 41 | e17b382 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | 1 | 31525a4 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 60 | f809eb3 2026-07-01 Weblate Update translation files |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 60 | 0654570 2026-09-15 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 19 | e40374e 2026-02-02 OCA-git-bot Merge PR #776 into 14.0 |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 25 | 6dd956c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 9 | 4e58c97 2026-01-12 OCA-git-bot [BOT] post-merge updates |
@@ -97,7 +97,7 @@ Last build: **2026-09-12 17:29 UTC** (elapsed 140s)
 | [oca-custom](https://github.com/OCA/oca-custom) | 7 | 177276f 2026-02-18 Tom [UPD] use merged bank_payment modules |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | 8 | 4b73a08 2025-07-03 Weblate Update translation files |
 | [operating-unit](https://github.com/OCA/operating-unit) | 42 | 8f79f40 2026-04-28 OCA-git-bot [BOT] post-merge updates |
-| [partner-contact](https://github.com/OCA/partner-contact) | 73 | 34b7c67 2026-04-27 Sergio Zanchetta Translated using Weblate (Italian) |
+| [partner-contact](https://github.com/OCA/partner-contact) | 73 | 6f74ddf 2026-09-15 painkin Translated using Weblate (Finnish) |
 | [payroll](https://github.com/OCA/payroll) | 6 | 341134e 2026-08-18 Weblate Update translation files |
 | [pms](https://github.com/OCA/pms) | 11 | 397faa0 2025-07-23 mymage Translated using Weblate (Italian) |
 | [pos](https://github.com/OCA/pos) | 51 | 8bfafc3 2026-01-25 OCA-git-bot [BOT] post-merge updates |
