@@ -552,9 +552,32 @@ msgstr ""
 "quando una ubicazione si svuota dopo un movimento."
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__force_detailed_scan
+msgid "Force Detailed Scan"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__force_detailed_scan_is_possible
+msgid "Force Detailed Scan Is Possible"
+msgstr ""
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__allow_force_reservation
 msgid "Force stock reservation"
 msgstr "Forza prenotazione qantità"
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__force_detailed_scan
+msgid ""
+"Force the operator to explicitly scan the product, lot/serial number, or "
+"package barcode to confirm a move line instead of relying on location or "
+"system deductions.\n"
+"\n"
+"Without this, Shopfloor may automatically validate unique products, lots, or "
+"packages as soon as the location is scanned. In practice, the physical "
+"inventory at the location might differ from what the system expects leading "
+"to silent stock drift and broken traceability."
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_move_line__location_id
@@ -1816,18 +1839,6 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/models/stock_picking.py:0
-#, python-format
-msgid ""
-"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
-"id=\"%(new_picking_id)d\">%(new_picking_name)s</a> has been created."
-msgstr ""
-"È stato creato l'ordine residuo <a href=\"#\" data-oe-"
-"model=\"stock.picking\" data-oe-"
-"id=\"%(new_picking_id)d\">%(new_picking_name)s</a>."
-
-#. module: shopfloor
-#. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "The content of {} cannot be transferred with this scenario."
@@ -1934,8 +1945,8 @@ msgstr "Il record su cui si stava lavorando non esiste più."
 #. odoo-python
 #: code:addons/shopfloor/models/stock_move.py:0
 #, python-format
-msgid "The split order {} has been created."
-msgstr "L'ordine suddiviso {} è stato creato."
+msgid "The split order %s has been created."
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__picking_id
@@ -2405,6 +2416,19 @@ msgstr "Prelievo per area"
 #, python-format
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
+
+#, python-format
+#~ msgid ""
+#~ "The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
+#~ "id=\"%(new_picking_id)d\">%(new_picking_name)s</a> has been created."
+#~ msgstr ""
+#~ "È stato creato l'ordine residuo <a href=\"#\" data-oe-"
+#~ "model=\"stock.picking\" data-oe-"
+#~ "id=\"%(new_picking_id)d\">%(new_picking_name)s</a>."
+
+#, python-format
+#~ msgid "The split order {} has been created."
+#~ msgstr "L'ordine suddiviso {} è stato creato."
 
 #, python-format
 #~ msgid "Internal Error: The move line %s is not fully picked"

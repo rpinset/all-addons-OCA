@@ -773,7 +773,10 @@ class Reception(Component):
             kw["with_progress"] = True
         data = self.data.picking(picking, **kw)
         if with_lines:
-            data.update({"moves": self._data_for_moves(picking.move_ids)})
+            sml = self.search_move_line
+            sort_key = sml._sort_key_move_lines(sml.work.sort_order)
+            sorted_moves = picking.move_line_ids.sorted(sort_key).move_id
+            data.update({"moves": self._data_for_moves(sorted_moves)})
         return data
 
     def _data_for_stock_pickings(self, pickings, with_lines=False):
@@ -1644,10 +1647,6 @@ class Reception(Component):
         # In such case, we must ensure there's another move with the remaining
         # quantity to do, so selected_line is extracted in a new move as expected.
 
-        lines_with_qty_todo = selected_line.move_id.move_line_ids.filtered(
-            lambda line: line.state not in ("cancel", "done")
-            and line.reserved_uom_qty > 0
-        )
         move = selected_line.move_id
 
         move_quantity = move.product_uom._compute_quantity(
@@ -1661,15 +1660,15 @@ class Reception(Component):
         # in Odoo when move lines are created manually (setting)
         lock = self._actions_for("lock")
         lock.for_update(move)
+        lines_with_qty_todo = selected_line.move_id.move_line_ids.filtered(
+            lambda line: line.state not in ("cancel", "done")
+            and line.reserved_uom_qty > 0
+            and line != selected_line
+        )
         if lines_with_qty_todo:
             lines_with_qty_todo.reserved_uom_qty = 0
-
-        split_move_vals = move._split(selected_line.qty_done)
-        new_move = move.create(split_move_vals)
-        new_move.move_line_ids = selected_line
-        new_move._action_confirm(merge=False)
-        new_move._recompute_state()
-        new_move._action_assign()
+        selected_line.reserved_uom_qty = selected_line.qty_done
+        new_move = move.split_other_move_lines(selected_line, intersection=True)
         # Set back the quantity to do on one of the lines
         line = fields.first(
             move.move_line_ids.filtered(
