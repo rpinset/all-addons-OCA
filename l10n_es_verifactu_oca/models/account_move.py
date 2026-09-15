@@ -109,7 +109,7 @@ class AccountMove(models.Model):
     def _get_verifactu_document_type(self):
         invoice_type = ""
         if self.move_type in ["out_invoice", "out_refund"]:
-            is_simplified = self._is_aeat_simplified_invoice()
+            is_simplified = self._is_aeat_unidentified_document()
             invoice_type = "F2" if is_simplified else "F1"
             if self.move_type == "out_refund":
                 if self.verifactu_refund_specific_type:
@@ -276,6 +276,8 @@ class AccountMove(models.Model):
                 "Huella": self.verifactu_hash,
             }
         )
+        if self.verifactu_macrodata:
+            inv_dict["Macrodato"] = "S"
         if self.aeat_state in ("sent_w_errors", "incorrect"):
             # en caso de subsanación, debe generar un nuevo hash en la factura
             inv_dict["Subsanacion"] = "S"
