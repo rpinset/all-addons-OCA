@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-09-12 17:29 UTC** (elapsed 112s)
+Last build: **2026-09-15 23:33 UTC** (elapsed 145s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -69,7 +69,7 @@ Last build: **2026-09-12 17:29 UTC** (elapsed 112s)
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 3 | cbc2df0 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 13 | 3a53a99 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 17 | fcd1b49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 50 | fc66e41 2026-02-25 Weblate Update translation files |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 50 | b46aa5c 2026-09-15 OCA-git-bot [UPD] README.rst |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 10 | 0cd8680 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 14 | d02d753 2023-10-09 Weblate Update translation files |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 3 | 09713cd 2023-10-10 Weblate Update translation files |
