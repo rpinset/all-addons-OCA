@@ -2,12 +2,11 @@
 # Copyright 2022 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 import logging
+import warnings
 
 from odoo import _, exceptions, fields, models
 from odoo.exceptions import UserError
 from odoo.tools.float_utils import float_compare, float_is_zero
-
-from ..exceptions import CannotProcessMoreThanPlanned
 
 _logger = logging.getLogger(__name__)
 
@@ -63,29 +62,11 @@ class StockMoveLine(models.Model):
         :return: the new move line if created else empty recordset
         """
         self.ensure_one()
-        rounding = self.product_uom_id.rounding
-        if float_is_zero(self.qty_done, precision_rounding=rounding):
+        if not self.picked or not self.has_quantity_reserved:
             return self.browse()
-        compare = float_compare(
-            self.qty_done, self.reserved_uom_qty, precision_rounding=rounding
+        return self._split_partial_quantity_to_be_done(
+            self.qty_picked, {"result_package_id": False}
         )
-        qty_lesser = compare == -1
-        qty_greater = compare == 1
-        if qty_greater:
-            raise CannotProcessMoreThanPlanned(
-                "Quantity done cannot exceed quantity to do"
-            )
-        elif qty_lesser:
-            remaining = self.reserved_uom_qty - self.qty_done
-            new_line = self.copy({"reserved_uom_qty": remaining, "qty_done": 0})
-            # if we didn't bypass reservation update, the quant reservation
-            # would be reduced as much as the deduced quantity, which is wrong
-            # as we only moved the quantity to a new move line
-            self.with_context(
-                bypass_reservation_update=True
-            ).reserved_uom_qty = self.qty_done
-            return new_line
-        return self.browse()
 
     def _extract_in_split_order(self, default=None):
         """Have pickings fully reserved with only those move lines.
@@ -126,6 +107,7 @@ class StockMoveLine(models.Model):
                     default=default, backorder=True
                 )
 
+    # MIGRATION NOTE: deprecated method to delete
     def _split_pickings_from_source_location(self):
         """Ensure that the related pickings will have the same source location.
 
@@ -156,9 +138,11 @@ class StockMoveLine(models.Model):
 
         Return the pickings containing the given move lines.
         """
-        _logger.warning(
+        warnings.warn(
             "`_split_pickings_from_source_location` is deprecated "
-            "and replaced by `_extract_in_split_order`"
+            "and replaced by `_extract_in_split_order`",
+            DeprecationWarning,
+            stacklevel=2,
         )
         location_src_to_process = self.location_id
         if location_src_to_process and len(location_src_to_process) != 1:
@@ -178,6 +162,7 @@ class StockMoveLine(models.Model):
             )
         return self.picking_id
 
+    # MIGRATION NOTE: deprecated method to delete
     def _split_qty_to_be_done(self, qty_done, split_partial=True, **split_default_vals):
         """Check qty to be done for current move line. Split it if needed.
 
@@ -185,6 +170,12 @@ class StockMoveLine(models.Model):
         :param split_partial: split if qty is less than expected
             otherwise rely on a backorder.
         """
+        warnings.warn(
+            "`_split_qty_to_be_done` is deprecated "
+            "and replaced by `_split_partial_quantity_to_be_done`",
+            DeprecationWarning,
+            stacklevel=2,
+        )
         if self.reserved_uom_qty < 0:
             raise UserError(_("The demand cannot be negative"))
         # store a new line if we have split our line (not enough qty)
@@ -209,11 +200,16 @@ class StockMoveLine(models.Model):
     def _split_partial_quantity_to_be_done(
         self, quantity_done, split_default_vals=None
     ):
-        """Create a new move line with the remaining quantity to process."""
+        """Create a new move line with the remaining quantity to process
+
+        :return: the new move line if created else empty recordset
+        """
         # split the move line which will be processed later (maybe the user
         # has to pick some goods from another place because the location
         # contained less items than expected)
-        remaining = self.reserved_uom_qty - quantity_done
+        remaining = max(0, self.reserved_uom_qty - quantity_done)
+        if not remaining:
+            return self.browse()
         vals = {"reserved_uom_qty": remaining, "qty_done": 0}
         if split_default_vals:
             vals.update(split_default_vals)

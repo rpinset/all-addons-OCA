@@ -9,6 +9,7 @@ from odoo.addons.base_rest.components.service import to_int
 from odoo.addons.component.core import Component
 
 from ..actions.search import SearchInvalidProduct
+from ..exceptions import ConcurentWorkOnTransfer
 from ..utils import to_float
 
 # NOTE for the implementation: share several similarities with the "cluster
@@ -273,6 +274,10 @@ class LocationContentTransfer(Component):
             return self._response_for_start(message=self.msg_store.no_work_found())
         move_lines = self._select_move_lines_first_location(move_lines)
         stock = self._actions_for("stock")
+        # allow another operator to process any partially available move
+        # that would have its availability increased
+        self._actions_for("lock").for_update(move_lines)
+        move_lines.move_id.split_unavailable_qty()
         stock.mark_move_line_as_picked(move_lines, quantity=0)
         return self._response_for_scan_location(location=move_lines.location_id)
 
@@ -414,7 +419,16 @@ class LocationContentTransfer(Component):
                 message=self.msg_store.no_putaway_destination_available()
             )
 
-        stock.mark_move_line_as_picked(move_lines)
+        try:
+            # allow another operator to process any partially available move
+            # that would have its availability increased
+            self._actions_for("lock").for_update(move_lines)
+            move_lines.move_id.split_unavailable_qty()
+            stock.mark_move_line_as_picked(move_lines)
+        except ConcurentWorkOnTransfer:
+            return self._response_for_start(
+                message=self.msg_store.concurrent_work(),
+            )
 
         unreserved_moves._action_assign()
 
@@ -453,10 +467,6 @@ class LocationContentTransfer(Component):
         self._write_destination_on_lines(move_lines, dest_location, package)
         stock = self._actions_for("stock")
         stock.validate_moves(move_lines.move_id)
-
-    def _lock_lines(self, lines):
-        """Lock move lines"""
-        self._actions_for("lock").for_update(lines)
 
     def _is_package_empty(self, package):
         return not bool(package.quant_ids)
@@ -576,7 +586,6 @@ class LocationContentTransfer(Component):
             return self._response_for_scan_destination_all(
                 pickings, confirmation_required=barcode, package=empty_package
             )
-        self._lock_lines(move_lines)
 
         if empty_package and not scan_package:
             scan_package = empty_package
@@ -825,8 +834,6 @@ class LocationContentTransfer(Component):
                 confirmation_required=barcode,
                 package=empty_package,
             )
-        package_move_lines = package_level.move_line_ids
-        self._lock_lines(package_move_lines)
         stock = self._actions_for("stock")
 
         if empty_package and not scan_package:
@@ -906,17 +913,12 @@ class LocationContentTransfer(Component):
                 confirmation_required=barcode,
                 package=empty_package,
             )
-        if (
-            quantity > move_line.qty_done
-            and not self.work.menu.allow_quantity_exceeding_demand
-        ):
+        if message := self._check_move_line_qty_picked(move_line, quantity):
             return self._response_for_scan_destination(
                 location,
                 move_line,
-                message=self.msg_store.unable_to_pick_more(move_line.qty_done),
+                message=message,
             )
-
-        self._lock_lines(move_line)
 
         move_line.qty_done = quantity
         if empty_package and not scan_package:
