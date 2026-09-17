@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-09-15 23:33 UTC** (elapsed 114s)
+Last build: **2026-09-17 08:46 UTC** (elapsed 148s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -39,7 +39,7 @@ Last build: **2026-09-15 23:33 UTC** (elapsed 114s)
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 14 | a964366 2024-07-22 mymage Translated using Weblate (Italian) |
 | [contract](https://github.com/OCA/contract) | 35 | 63c856c 2025-07-01 mymage Translated using Weblate (Italian) |
 | [cooperative](https://github.com/OCA/cooperative) | 9 | 9fae69b 2025-11-28 mymage Translated using Weblate (Italian) |
-| [credit-control](https://github.com/OCA/credit-control) | 10 | fd9df88 2026-01-15 Rémi Translated using Weblate (French) |
+| [credit-control](https://github.com/OCA/credit-control) | 10 | 67f333f 2026-09-16 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 23 | 557b822 2026-07-22 mymage Translated using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 7 | 921cf10 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 3 | 9c7f288 2024-10-03 mymage Translated using Weblate (Italian) |
