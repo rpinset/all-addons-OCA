@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-09-15 23:36 UTC** (elapsed 101s)
+Last build: **2026-09-17 08:50 UTC** (elapsed 163s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -33,7 +33,7 @@ Last build: **2026-09-15 23:36 UTC** (elapsed 101s)
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | 3 | 3b2cb18 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [connector-jira](https://github.com/OCA/connector-jira) | 5 | f1761d2 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [contract](https://github.com/OCA/contract) | 11 | 7517b8c 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [credit-control](https://github.com/OCA/credit-control) | 9 | c5abae8 2025-08-28 OCA-git-bot [BOT] post-merge updates |
+| [credit-control](https://github.com/OCA/credit-control) | 9 | fddc3dd 2026-09-16 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 22 | 15c4858 2026-07-28 mymage Translated using Weblate (Italian) |
 | [currency](https://github.com/OCA/currency) | 2 | eec1bb7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 871fca7 2025-02-02 oca-git-bot [IMP] update dotfiles |
