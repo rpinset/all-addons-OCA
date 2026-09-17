@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-09-15 23:33 UTC** (elapsed 145s)
+Last build: **2026-09-17 08:47 UTC** (elapsed 221s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -36,7 +36,7 @@ Last build: **2026-09-15 23:33 UTC** (elapsed 145s)
 | [connector-jira](https://github.com/OCA/connector-jira) | 5 | 161b1d7 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 1 | e475f16 2023-10-10 Weblate Update translation files |
 | [contract](https://github.com/OCA/contract) | 16 | 60e67bd 2025-07-01 mymage Translated using Weblate (Italian) |
-| [credit-control](https://github.com/OCA/credit-control) | 13 | 3c5640c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [credit-control](https://github.com/OCA/credit-control) | 13 | 705fd95 2026-09-16 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 21 | 6bee05c 2025-09-15 Tamer Sezgin Translated using Weblate (Turkish) |
 | [currency](https://github.com/OCA/currency) | 3 | 775b826 2023-10-09 Weblate Update translation files |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 329c239 2024-10-03 mymage Translated using Weblate (Italian) |
@@ -75,7 +75,7 @@ Last build: **2026-09-15 23:33 UTC** (elapsed 145s)
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 3 | 09713cd 2023-10-10 Weblate Update translation files |
 | [maintenance](https://github.com/OCA/maintenance) | 28 | f2e91e2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [management-system](https://github.com/OCA/management-system) | 27 | 70054d4 2025-11-28 mymage Translated using Weblate (Italian) |
-| [manufacture](https://github.com/OCA/manufacture) | 31 | ef6453e 2026-05-13 mymage Translated using Weblate (Italian) |
+| [manufacture](https://github.com/OCA/manufacture) | 31 | ffb2e39 2026-09-16 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | b4a345b 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 6a79436 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | d4baf6b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
