@@ -21,8 +21,10 @@ class TestRecordImporter(TestImporterBase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()
+        cls.addClassCleanup(cls.loader.restore_registry)
         # fmt: off
         from .fake_models import FakeImportedModel
         cls.loader.update_registry((FakeImportedModel,))
@@ -66,11 +68,6 @@ log(msg)
             """
             }
         )
-
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        super().tearDownClass()
 
     def setUp(self):
         super().setUp()

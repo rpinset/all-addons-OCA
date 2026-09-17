@@ -21,6 +21,7 @@ msgstr ""
 #. module: route_planning_rma_delivery
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_choose_delivery_carrier__delivery_type
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_rma_wizard__delivery_type
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_sale_order_rma_wizard__reception_carrier_delivery_type
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_stock_return_picking__reception_carrier_delivery_type
 msgid "Provider"
 msgstr ""
@@ -43,6 +44,7 @@ msgstr ""
 #. module: route_planning_rma_delivery
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma__reception_route_area_id
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_rma_wizard__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_sale_order_rma_wizard__reception_route_area_id
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_stock_return_picking__reception_route_area_id
 msgid "Reception route area"
 msgstr ""
@@ -60,4 +62,9 @@ msgstr ""
 #. module: route_planning_rma_delivery
 #: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_choose_delivery_carrier__route_area_id
 msgid "Route area"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_sale_order_rma_wizard
+msgid "Sale Order Rma Wizard"
 msgstr ""

@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning_rma_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: route_planning_rma_delivery
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma__carrier_delivery_type
+msgid "Carrier delivery type"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_choose_delivery_carrier__delivery_type
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_rma_wizard__delivery_type
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_sale_order_rma_wizard__reception_carrier_delivery_type
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_stock_return_picking__reception_carrier_delivery_type
+msgid "Provider"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_rma
+msgid "RMA"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_rma_choose_delivery_carrier
+msgid "RMA Delivery Carrier Selection Wizard"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma__reception_carrier_delivery_type
+msgid "Reception carrier delivery type"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_rma_wizard__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_sale_order_rma_wizard__reception_route_area_id
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_stock_return_picking__reception_route_area_id
+msgid "Reception route area"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_stock_return_picking
+msgid "Return Picking"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_rma_rma_wizard
+msgid "Rma Rma Wizard"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model.fields,field_description:route_planning_rma_delivery.field_rma_choose_delivery_carrier__route_area_id
+msgid "Route area"
+msgstr ""
+
+#. module: route_planning_rma_delivery
+#: model:ir.model,name:route_planning_rma_delivery.model_sale_order_rma_wizard
+msgid "Sale Order Rma Wizard"
+msgstr ""
