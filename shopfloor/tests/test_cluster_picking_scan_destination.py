@@ -1,6 +1,9 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from unittest import mock
+
+from ..actions.inventory import InventoryAction
 from .test_cluster_picking_base import ClusterPickingCommonCase
 
 # pylint: disable=missing-return
@@ -364,3 +367,64 @@ class ClusterPickingScanDestinationPackCase(ClusterPickingCommonCase):
                 "body": f"{line.qty_picked} {line.product_id.display_name} put in {self.bin1.name}",  # noqa
             },
         )
+
+    def _pick_all_with_other_product_in_location(self, picked_lot=None, other_lot=None):
+        """Empty a location of one product while another product stays in it
+
+        Returns the response of scan_destination_pack for the picked line.
+        """
+        location = (
+            self.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "name": "ZeroCheck",
+                    "location_id": self.stock_location.id,
+                    "barcode": "ZEROCHECK",
+                }
+            )
+        )
+        line = self.one_line_picking.move_line_ids
+        product, qty = line.product_id, line.quantity
+        self.one_line_picking.do_unreserve()
+        self.one_line_picking.picking_type_id.sudo().shopfloor_zero_check = True
+        # exactly what the line needs, so the product will be gone after the pick
+        self._update_qty_in_location(location, product, qty / 2, lot=picked_lot)
+        # another product stays in the location
+        self._update_qty_in_location(location, self.product_b, 10, lot=other_lot)
+        self.one_line_picking.move_ids.location_id = location
+        self.one_line_picking.action_assign()
+        line = self.one_line_picking.move_line_ids
+        self.assertEqual(line.lot_id, picked_lot or self.env["stock.lot"])
+        with mock.patch.object(InventoryAction, "confirm_empty") as confirm_empty:
+            response = self.service.dispatch(
+                "scan_destination_pack",
+                params={
+                    "picking_batch_id": self.batch.id,
+                    "move_line_id": line.id,
+                    "barcode": self.bin1.name,
+                    "quantity": line.quantity,
+                },
+            )
+        # the location still holds the other product: no zero check, and
+        # nothing is ever confirmed empty
+        self.assertNotEqual(response["next_state"], "zero_check")
+        confirm_empty.assert_not_called()
+
+    def test_scan_destination_pack_no_zero_check_other_product_with_lot(self):
+        """Picked product has no lot, a product with a lot stays: no zero check"""
+        lot_b = (
+            self.env["stock.lot"]
+            .sudo()
+            .create({"product_id": self.product_b.id, "name": "LOT-B"})
+        )
+        self._pick_all_with_other_product_in_location(other_lot=lot_b)
+
+    def test_scan_destination_pack_no_zero_check_picked_product_with_lot(self):
+        """Picked product has a lot, a product without lot stays: no zero check"""
+        lot_a = (
+            self.env["stock.lot"]
+            .sudo()
+            .create({"product_id": self.product_a.id, "name": "LOT-A"})
+        )
+        self._pick_all_with_other_product_in_location(picked_lot=lot_a)

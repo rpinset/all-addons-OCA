@@ -4,7 +4,7 @@
 {
     "name": "NFS-e",
     "summary": "Root electronic invoice for service / NFS-e module",
-    "version": "18.0.6.1.1",
+    "version": "18.0.6.2.0",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
     "maintainers": ["mileo", "marcelsavegnago"],
@@ -13,7 +13,7 @@
         "python": [
             "erpbrasil.edoc",
             "erpbrasil.transmissao",
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
         ],
     },
     "depends": [

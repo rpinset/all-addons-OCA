@@ -11,13 +11,12 @@
     "maintainers": ["rvalyi", "renatonlima"],
     "website": "https://github.com/OCA/l10n-brazil",
     "development_status": "Beta",
-    "version": "18.0.5.1.1",
+    "version": "18.0.5.3.0",
     "depends": [
         "l10n_br_fiscal_edi",
         "l10n_br_fiscal_certificate",
         "l10n_br_nfe_spec",
         "spec_driven_model",
-        "l10n_br_fiscal_dfe",
     ],
     "data": [
         # Data
@@ -31,8 +30,7 @@
         "views/nfe_document_line_view.xml",
         "views/nfe_di_view.xml",
         "views/res_config_settings_view.xml",
-        "views/mde/mde_views.xml",
-        "views/dfe/dfe_views.xml",
+        "views/nfe_md_event_view.xml",
         "views/supplier_info_view.xml",
         # Report
         "report/reports.xml",
@@ -40,6 +38,7 @@
         "report/danfe_report.xml",
         # Wizards
         "wizards/document_import_wizard.xml",
+        "wizards/nfe_md_event_wizard.xml",
         # Actions,
         "views/nfe_action.xml",
         # Menus
@@ -59,7 +58,7 @@
             "erpbrasil.assinatura",
             "erpbrasil.transmissao",
             "erpbrasil.edoc",
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
             "brazilfiscalreport",
         ],
     },

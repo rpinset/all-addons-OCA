@@ -5,7 +5,7 @@
     "name": "NFS-e (Nota Paulistana)",
     "summary": """
         NFS-e (Nota Paulistana)""",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
     "maintainers": ["gabrielcardoso21", "mileo", "luismalta", "CristianoMafraJunior"],
@@ -16,7 +16,7 @@
             "erpbrasil.edoc",
             "erpbrasil.assinatura",
             "erpbrasil.transmissao",
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
             "nfselib.paulistana",
             "unidecode",
         ],

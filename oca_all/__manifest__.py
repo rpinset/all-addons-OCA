@@ -3,7 +3,7 @@
 {
     "name": "OCA All",
     "summary": "All oca modules dependencies",
-    "version": "18.0.1.1.2",
+    "version": "18.0.1.1.4",
     "development_status": "Alpha",
     "website": "https://github.com/OCA/oca-custom",
     "author": "Pierre Verkest <pierre@verkest.fr>, Odoo Community Association (OCA)",
@@ -159,6 +159,7 @@
         "scheduler_error_mailer",
         "sentry",
         "server_action_mass_edit",
+        "subscription_oca",
         "survey_xlsx",
         "sql_request_abstract",
         "uom_unece",
@@ -171,6 +172,8 @@
         "website_sale_hide_empty_category",
         # OCA Custom
         "oca_custom",
+        "oca_membership",
+        "oca_membership_subscription",
         "oca_search_engine",
         "oca_website",
         "website_sale_oca_apps",
