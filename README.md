@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-17 08:46 UTC** (elapsed 117s)
+Last build: **2026-09-20 17:42 UTC** (elapsed 116s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -11,7 +11,7 @@ Last build: **2026-09-17 08:46 UTC** (elapsed 117s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 495a099 2026-09-05 Pedro M. Baeza Merge pull request #5969 from Tecnativa/14.0-ou-imp-website-cow_views |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | d36d784 2026-09-17 Pedro M. Baeza Merge pull request #5986 from rvjaraj/14.0-ou-add-purchase-tier-validation-forward-merged |
 | [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 9071c85 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
@@ -67,7 +67,7 @@ Last build: **2026-09-17 08:46 UTC** (elapsed 117s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | 1e56820 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | ee252f7 2026-09-16 Weblate Update translation files |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 7b50326 2026-09-18 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
