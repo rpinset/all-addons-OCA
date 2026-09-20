@@ -378,11 +378,6 @@ msgstr ""
 
 #. module: l10n_br_fiscal
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_form
-msgid "<strong>Open</strong>"
-msgstr ""
-
-#. module: l10n_br_fiscal
-#: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_form
 msgid "<strong>XML validation errors:</strong>"
 msgstr "<strong>Erros de validação XML:</strong>"
 
@@ -2042,6 +2037,11 @@ msgid "Create new products."
 msgstr "Criar novos produtos."
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_import_wizard__allow_product_creation
+msgid "Create unmapped products"
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_cest__create_uid
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_cfop__create_uid
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_city_taxation_code__create_uid
@@ -2490,11 +2490,6 @@ msgstr "Nome Exibido"
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__res_partner__public_entity_type__3
 msgid "Distrito Federal"
 msgstr ""
-
-#. module: l10n_br_fiscal
-#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_line__document_id
-msgid "Document"
-msgstr "Documento"
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document__document_date
@@ -3031,6 +3026,11 @@ msgstr "Resumo do Produto de Dados Fiscais"
 #: model_terms:ir.ui.view,arch_db:l10n_br_fiscal.document_search
 msgid "Fiscal Document"
 msgstr "Documento Fiscal"
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,field_description:l10n_br_fiscal.field_l10n_br_fiscal_document_line__document_id
+msgid "Fiscal Document (Account)"
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model,name:l10n_br_fiscal.model_l10n_br_fiscal_document_line
@@ -5077,6 +5077,15 @@ msgstr "Se marcado, novas mensagens solicitarão sua atenção."
 #: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_tax_definition__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se marcado, algumas mensagens tem erro de entrega."
+
+#. module: l10n_br_fiscal
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_import_wizard__allow_product_creation
+msgid ""
+"If enabled, products that don't match an existing record will be "
+"automatically created during import. If disabled (default), the import will "
+"raise an error when an unmapped product is found so you can map it in the "
+"product lines above before importing."
+msgstr ""
 
 #. module: l10n_br_fiscal
 #: model:ir.model.fields,help:l10n_br_fiscal.field_res_company__is_industry
@@ -8351,6 +8360,16 @@ msgid "Taxes Settings"
 msgstr "Configuração de Impostos"
 
 #. module: l10n_br_fiscal
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__company_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__partner_shipping_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document__user_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_line__company_id
+#: model:ir.model.fields,help:l10n_br_fiscal.field_l10n_br_fiscal_document_line__quantity
+msgid "Technical Field."
+msgstr ""
+
+#. module: l10n_br_fiscal
 #: model:ir.model.fields,field_description:l10n_br_fiscal.field_res_company__technical_support_id
 msgid "Technical Support"
 msgstr "Suporte Técnico"
@@ -8957,6 +8976,9 @@ msgstr ""
 #: model:ir.model.fields.selection,name:l10n_br_fiscal.selection__l10n_br_fiscal_tax_group__tax_domain__pis_wh
 msgid "pis_wh"
 msgstr "pis_wh"
+
+#~ msgid "Document"
+#~ msgstr "Documento"
 
 #~ msgid "Aguardando envio"
 #~ msgstr "Aguardando envio"

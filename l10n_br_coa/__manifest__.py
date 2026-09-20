@@ -6,7 +6,7 @@
     "name": "Base dos Planos de Contas",
     "summary": """
         Base do Planos de Contas brasileiros""",
-    "version": "19.0.1.1.0",
+    "version": "19.0.1.2.0",
     "license": "AGPL-3",
     "author": "Akretion, KMEE, Odoo Community Association (OCA)",
     "maintainers": ["renatonlima", "mileo"],
@@ -31,6 +31,11 @@
         "data/l10n_br_coa_template.xml",
         "views/account_tax_template.xml",
     ],
+    "assets": {
+        "web.assets_backend": [
+            "l10n_br_coa/static/src/js/account_tax_withholding.esm.js",
+        ],
+    },
     "development_status": "Production/Stable",
     "installable": True,
 }
