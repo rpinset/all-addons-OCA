@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-09-17 08:52 UTC** (elapsed 183s)
+Last build: **2026-09-20 17:47 UTC** (elapsed 109s)
 
 - Repos integrated: **126**
-- Canonical modules: **1959**
+- Canonical modules: **1960**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **133**
 
@@ -55,7 +55,7 @@ Last build: **2026-09-17 08:52 UTC** (elapsed 183s)
 | [geospatial](https://github.com/OCA/geospatial) | 5 | 1a337a0 2026-04-08 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 25 | 70a59ef 2026-09-14 Weblate Update translation files |
 | [hr](https://github.com/OCA/hr) | 24 | 24d4f8b 2026-08-17 mymage Added translation using Weblate (Italian) |
-| [hr-attendance](https://github.com/OCA/hr-attendance) | 7 | 83d1bf0 2026-06-26 OCA-git-bot [BOT] post-merge updates |
+| [hr-attendance](https://github.com/OCA/hr-attendance) | 7 | e974cef 2026-09-17 Weblate Update translation files |
 | [hr-expense](https://github.com/OCA/hr-expense) | 10 | 67f2a52 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 6 | 2db8262 2026-09-15 OCA-git-bot [BOT] post-merge updates |
 | [interface-git](https://github.com/OCA/interface-git) | 2 | 0606580 2026-04-16 OCA-git-bot [BOT] add or update setup/_metapackage |
@@ -124,7 +124,7 @@ Last build: **2026-09-17 08:52 UTC** (elapsed 183s)
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 16 | 8f9d528 2026-09-07 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | 9 | d78c836 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 12 | 8476a3e 2026-07-23 OCA-git-bot [BOT] post-merge updates |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 39 | 9d6d575 2026-09-10 mymage Translated using Weblate (Italian) |
+| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 40 | e401b8d 2026-09-17 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 66 | 7cb946b 2026-08-11 mymage Translated using Weblate (Italian) |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 2 | 031c0f0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [storage](https://github.com/OCA/storage) | 20 | ca0c673 2026-09-10 mymage Translated using Weblate (Italian) |

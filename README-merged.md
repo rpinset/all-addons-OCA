@@ -2602,7 +2602,7 @@ addon | version | maintainers | summary
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 17.0.1.0.1 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 17.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 17.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
-[hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.1 |  | HR Attendance Reason
+[hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.2 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 17.0.1.0.0 |  | HR Attendance RFID
 [hr_contract_update_overtime](hr_contract_update_overtime/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Update Overtime from HR Contract
@@ -7035,6 +7035,7 @@ addon | version | maintainers | summary
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 17.0.1.0.0 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 17.0.1.2.0 |  | Get product quantities in a secondary unit
 [stock_vlm_mgmt](stock_vlm_mgmt/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light self contained alternative for VLM integrations
+[stock_vlm_mgmt_kardex](stock_vlm_mgmt_kardex/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Kardex VLM integrations
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
