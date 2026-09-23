@@ -1,6 +1,6 @@
 # Build report — `13.0`
 
-Generated 2026-09-20 17:44 UTC
+Generated 2026-09-23 23:39 UTC
 
 ## Skipped repos
 
@@ -107,6 +107,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [pwa-builder](https://github.com/OCA/pwa-builder) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
+| [pytest-odoo](https://github.com/OCA/pytest-odoo) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [repair](https://github.com/OCA/repair) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
@@ -131,6 +132,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
+| [sustainability](https://github.com/OCA/sustainability) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |

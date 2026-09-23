@@ -1,12 +1,12 @@
 # Skipped repos — branch `13.0`
 
-Generated 2026-09-20 17:44 UTC
+Generated 2026-09-23 23:39 UTC
 
-Total skipped: **142**
+Total skipped: **144**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **80**
+Count: **82**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -61,6 +61,7 @@ Count: **80**
 | [pwa-builder](https://github.com/OCA/pwa-builder) | [13.0](https://github.com/OCA/pwa-builder/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [13.0](https://github.com/OCA/py3o.template/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [13.0](https://github.com/OCA/pylint-odoo/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [pytest-odoo](https://github.com/OCA/pytest-odoo) | [13.0](https://github.com/OCA/pytest-odoo/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [repair](https://github.com/OCA/repair) | [13.0](https://github.com/OCA/repair/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [13.0](https://github.com/OCA/repo-maintainer/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [13.0](https://github.com/OCA/repo-maintainer-conf/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
@@ -83,6 +84,7 @@ Count: **80**
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [13.0](https://github.com/OCA/stock-logistics-reservation/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [13.0](https://github.com/OCA/stock-logistics-shopfloor/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [13.0](https://github.com/OCA/stock-weighing/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [sustainability](https://github.com/OCA/sustainability) | [13.0](https://github.com/OCA/sustainability/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | [13.0](https://github.com/OCA/tier-validation/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [13.0](https://github.com/OCA/version-control-platform/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [13.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
