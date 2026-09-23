@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-09-20 17:47 UTC
+Generated 2026-09-23 23:43 UTC
 
-Total skipped: **142**
+Total skipped: **144**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **63**
+Count: **65**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -51,6 +51,7 @@ Count: **63**
 | [pwa-builder](https://github.com/OCA/pwa-builder) | [15.0](https://github.com/OCA/pwa-builder/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [15.0](https://github.com/OCA/py3o.template/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [15.0](https://github.com/OCA/pylint-odoo/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [pytest-odoo](https://github.com/OCA/pytest-odoo) | [15.0](https://github.com/OCA/pytest-odoo/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [15.0](https://github.com/OCA/repo-maintainer/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [15.0](https://github.com/OCA/repo-maintainer-conf/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | [15.0](https://github.com/OCA/rest-api/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
@@ -69,6 +70,7 @@ Count: **63**
 | [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | [15.0](https://github.com/OCA/stock-logistics-request/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [15.0](https://github.com/OCA/stock-logistics-reservation/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [15.0](https://github.com/OCA/stock-logistics-shopfloor/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [sustainability](https://github.com/OCA/sustainability) | [15.0](https://github.com/OCA/sustainability/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | [15.0](https://github.com/OCA/tier-validation/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [15.0](https://github.com/OCA/version-control-platform/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [15.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
