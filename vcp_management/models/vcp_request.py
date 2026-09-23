@@ -69,9 +69,9 @@ class VcpRequest(models.Model):
     )
     is_merged = fields.Boolean(readonly=True)
     is_draft = fields.Boolean(readonly=True)
-    created_at = fields.Datetime(readonly=True)
+    created_at = fields.Datetime(readonly=True, index=True)
     updated_at = fields.Datetime(readonly=True)
-    closed_at = fields.Datetime(readonly=True)
+    closed_at = fields.Datetime(readonly=True, index=True)
     number = fields.Integer(readonly=True)
     label_ids = fields.Many2many(
         comodel_name="vcp.request.label",

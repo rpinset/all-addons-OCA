@@ -39,6 +39,7 @@ class TestAssignPackageType(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": line_data,
+                "confirmation": None,
             },
         )
         package = self.selected_move_line.result_package_id
@@ -65,6 +66,7 @@ class TestAssignPackageType(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": line_data,
+                "confirmation": None,
             },
         )
         package = self.selected_move_line.result_package_id

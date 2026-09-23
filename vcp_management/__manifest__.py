@@ -4,7 +4,7 @@
 {
     "name": "VCP Management",
     "summary": """Management for your Version Control Platforms""",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "license": "AGPL-3",
     "author": "Dixmit,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/version-control-platform",
@@ -14,6 +14,7 @@
         "security/ir.model.access.csv",
         "data/ir_cron.xml",
         "templates/templates.xml",
+        "reports/vcp_management_report.xml",
         "views/vcp_comment.xml",
         "views/vcp_review.xml",
         "views/vcp_request.xml",

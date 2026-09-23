@@ -21,3 +21,12 @@ class TestCrowdfundingFrontend(odoo.tests.HttpCase):
         Test filling in NL-specific values for the partner form
         """
         self.start_tour("/", "crowdfunding_frontend_nl")
+
+    def test_search(self):
+        """
+        Test that searching returns crowdfunding challenges
+        """
+        result = self.url_open("/website/search?search=challenging%20challenges")
+        self.assertIn(
+            self.env.ref("crowdfunding.demo_challenge").website_url, result.text
+        )

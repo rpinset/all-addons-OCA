@@ -660,7 +660,7 @@ class ZonePickingSetLineDestinationCase(ZonePickingCommonCase):
             qty_done=move_line.quantity,
         )
 
-    def test_set_destination_package_error_concurent_work(self):
+    def test_set_destination_package_error_concurrent_work(self):
         """Scanned barcode is the destination package.
 
         Move line is already being worked on by someone else
@@ -670,7 +670,7 @@ class ZonePickingSetLineDestinationCase(ZonePickingCommonCase):
         picking_type.sudo().shopfloor_zero_check = True
         self.assertEqual(len(self.picking1.move_line_ids), 1)
         move_line = self.picking1.move_line_ids
-        move_line.picking_id.user_id = self.shopfloor_manager
+        move_line.picking_id.write({"user_id": self.shopfloor_manager, "printed": True})
         response = self.service.dispatch(
             "set_destination",
             params={
@@ -686,14 +686,11 @@ class ZonePickingSetLineDestinationCase(ZonePickingCommonCase):
             zone_location,
             picking_type,
             move_line,
-            message={
-                "message_type": "error",
-                "body": "Someone is already working on these transfers",
-            },
+            message=self.msg_store.concurrent_work(),
             qty_done=move_line.quantity,
         )
 
-    def test_set_destination_location_error_concurent_work(self):
+    def test_set_destination_location_error_concurrent_work(self):
         """Scanned barcode is the destination location.
 
         Move line is already being worked on by someone else
@@ -703,7 +700,7 @@ class ZonePickingSetLineDestinationCase(ZonePickingCommonCase):
         picking_type.sudo().shopfloor_zero_check = True
         self.assertEqual(len(self.picking1.move_line_ids), 1)
         move_line = self.picking1.move_line_ids
-        move_line.picking_id.user_id = self.shopfloor_manager
+        move_line.picking_id.write({"user_id": self.shopfloor_manager, "printed": True})
         response = self.service.dispatch(
             "set_destination",
             params={
@@ -720,9 +717,6 @@ class ZonePickingSetLineDestinationCase(ZonePickingCommonCase):
             zone_location,
             picking_type,
             move_line,
-            message={
-                "message_type": "error",
-                "body": "Someone is already working on these transfers",
-            },
+            message=self.msg_store.concurrent_work(),
             qty_done=move_line.quantity,
         )

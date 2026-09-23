@@ -32,7 +32,7 @@ class VcpComment(models.Model):
         readonly=True,
         store=True,
     )
-    created_at = fields.Datetime(readonly=True)
+    created_at = fields.Datetime(readonly=True, index=True)
     updated_at = fields.Datetime(readonly=True)
     request_id = fields.Many2one(
         comodel_name="vcp.request",

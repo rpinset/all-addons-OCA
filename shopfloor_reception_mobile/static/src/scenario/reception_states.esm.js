@@ -8,7 +8,6 @@
     Define states for reception scenario.
     @param this VueJS component instance
 */
-import event_hub from "/shopfloor_mobile_base/static/src/services/event_hub.esm.js";
 
 export const reception_states = function () {
     return {
@@ -140,35 +139,37 @@ export const reception_states = function () {
                 scan_input_placeholder_expiry: "Scan expiration date",
             },
             on_scan: (barcode) => {
-                // Scan a lot
                 this.wait_call(
-                    this.odoo.call("set_lot", {
+                    this.odoo.call("scan_lot", {
                         picking_id: this.state.data.picking.id,
                         selected_line_id: this.line_being_handled.id,
-                        lot_name: barcode.text,
-                    })
-                ).then(() => {
-                    // We need to wait for the call to the backend to be over
-                    // to update the date-picker-input component
-                    // with the expiration_date of the selected lot.
-                    event_hub.$emit("datepicker:newdate", this.line_being_handled.lot);
-                });
-            },
-            on_date_picker_selected: (expiration_date) => {
-                // Select expiration_date
-                this.wait_call(
-                    this.odoo.call("set_lot", {
-                        picking_id: this.state.data.picking.id,
-                        selected_line_id: this.line_being_handled.id,
-                        expiration_date: expiration_date,
+                        barcode: barcode.text,
                     })
                 );
             },
-            on_confirm_action: () => {
+            on_date_change: (expiration_date) => {
+                if (!expiration_date) return;
+
+                // NB: Months are 0-indexed in JS
+                const [year, month, day] = expiration_date.split("-");
+
+                // JS will determine the time zone based on user's device
+                const localDate = new Date(year, month - 1, day, 0, 0, 0);
+
+                // We merge the new date with whatever is already in .lot
+                // If .lot is null/undefined, we start with an empty object
+                this.line_being_handled.lot = {
+                    ...(this.line_being_handled.lot || {}),
+                    expiration_date: localDate.toISOString(),
+                };
+            },
+            on_confirm_lot: () => {
                 this.wait_call(
                     this.odoo.call("set_lot_confirm_action", {
                         picking_id: this.state.data.picking.id,
                         selected_line_id: this.line_being_handled.id,
+                        lot_name: this.line_being_handled.lot.name,
+                        expiration_date: this.line_being_handled.lot.expiration_date,
                     })
                 );
             },
@@ -277,8 +278,7 @@ export const reception_states = function () {
                     picking_id: this.state.data.picking.id,
                     selected_line_id: this.line_being_handled.id,
                     location_name: location.text,
-                    // FIXME if it is always set to true, it is not really used ?
-                    confirmation: true,
+                    confirmation: this.state.data.confirmation || "",
                 };
             },
             on_scan: (location) => {
@@ -333,6 +333,30 @@ export const reception_states = function () {
             },
             on_back: () => {
                 this.state_to("select_dest_package");
+                this.reset_notification();
+            },
+        },
+        confirm_over_reception: {
+            display_info: {
+                title: "Confirm over reception",
+                message: "You are about to receive more than expected. Are you sure?",
+            },
+            events: {
+                confirm: "on_confirm",
+                go_back: "on_back",
+            },
+            on_confirm: () => {
+                this.wait_call(
+                    this.odoo.call(this.state.data.callback, {
+                        picking_id: this.state.data.picking.id,
+                        selected_line_id: this.line_being_handled.id,
+                        quantity: this.state.data.quantity,
+                        is_over_reception_confirmed: true,
+                    })
+                );
+            },
+            on_back: () => {
+                this.state_to("set_quantity");
                 this.reset_notification();
             },
         },

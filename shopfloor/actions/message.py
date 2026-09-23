@@ -31,6 +31,12 @@ class MessageAction(Component):
             "body": _("Several operation types found for this menu and profile."),
         }
 
+    def concurrent_work(self):
+        return {
+            "message_type": "error",
+            "body": _("Someone is already working on it"),
+        }
+
     def package_not_found_for_barcode(self, barcode):
         return {
             "message_type": "error",
@@ -134,6 +140,18 @@ class MessageAction(Component):
         return {
             "message_type": "warning",
             "body": _("Package {} is not empty.").format(package.name),
+        }
+
+    def package_selected_is_empty(self, package):
+        return {
+            "message_type": "info",
+            "body": _("Package %s is empty, scan a location.", package.name),
+        }
+
+    def package_not_empty_anymore(self, package):
+        return {
+            "message_type": "warning",
+            "body": _("Package %s is not empty anymore.", package.name),
         }
 
     def package_already_used(self, package):
@@ -831,6 +849,12 @@ class MessageAction(Component):
         return {
             "message_type": "error",
             "body": _("This location does not exist."),
+        }
+
+    def unable_to_pick_negative(self):
+        return {
+            "message_type": "error",
+            "body": _("You cannot pick a negative quantity."),
         }
 
     def unable_to_pick_more(self, quantity):

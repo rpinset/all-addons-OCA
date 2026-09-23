@@ -28,3 +28,57 @@ class MessageAction(Component):
             "message_type": "error",
             "body": self.env._("The package type is not valid"),
         }
+
+    def lot_already_exists_different_expiration_date(self, lot):
+        formatted_lot_expiration_date = self.work.env[
+            "ir.qweb.field.date"
+        ].value_to_html(lot.expiration_date, {})
+        return {
+            "message_type": "error",
+            "body": self.env._(
+                "This lot already exists with expiration date "
+                "'%(lot_expiration_date)s'. You cannot change its date.",
+                lot_expiration_date=formatted_lot_expiration_date,
+            ),
+        }
+
+    def lot_creation_disabled(self, picking_type):
+        return {
+            "message_type": "error",
+            "body": self.env._(
+                "The operation type '%(picking_type)s' does not allow to"
+                " create new lots.",
+                picking_type=picking_type.display_name,
+            ),
+        }
+
+    def invalid_quantity(self, qty):
+        return {
+            "message_type": "error",
+            "body": self.env._(
+                "Invalid quantity: '%(qty)s'.",
+                qty=qty,
+            ),
+        }
+
+    def lot_product_mismatch(self, line, lot_product):
+        return {
+            "message_type": "error",
+            "body": self.env._(
+                "The scanned lot does not match the selected product. "
+                "Current product is '%(current_product)s' but the scanned lot "
+                "is for '%(lot_product)s'.",
+                current_product=line.product_id.display_name,
+                lot_product=lot_product.display_name,
+            ),
+        }
+
+    def lot_product_not_found(self, product_barcode):
+        return {
+            "message_type": "error",
+            "body": self.env._(
+                "The scanned lot contains the product barcode '%(product_barcode)s' "
+                "but you have no product with this barcode in Odoo.",
+                product_barcode=product_barcode,
+            ),
+        }

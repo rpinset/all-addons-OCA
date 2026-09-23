@@ -148,6 +148,7 @@ msgid "Comment"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__comment_count
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__comment_count
 msgid "Comment Count"
 msgstr ""
@@ -191,6 +192,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__created_at
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__created_at
 msgid "Created At"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__created_pr_count
+msgid "Created Pr Count"
 msgstr ""
 
 #. module: vcp_management
@@ -241,6 +247,11 @@ msgid "Created on"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__date
+msgid "Date"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__default_repository_scheduled_branch_update
 msgid "Default Repository Scheduled Branch Update"
 msgstr ""
@@ -277,6 +288,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host_type__display_name
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_organization__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform_key__display_name
@@ -392,6 +404,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host_type__id
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_organization__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform_key__id
@@ -488,6 +501,11 @@ msgid "Information about the processing of a rule on a repository branch"
 msgstr ""
 
 #. module: vcp_management
+#: model_terms:ir.ui.view,arch_db:vcp_management.vcp_management_report_pivot_view
+msgid "Invoices Analysis"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__is_draft
 msgid "Is Draft"
 msgstr ""
@@ -579,9 +597,19 @@ msgid "Local Path"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.ui.menu,name:vcp_management.vcp_management_report_menu
+msgid "Management Reporting"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__merged
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Merged"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__merged_pr_count
+msgid "Merged Pr Count"
 msgstr ""
 
 #. module: vcp_management
@@ -635,6 +663,7 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_organization
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__organization_id
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__organization_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__organization_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__organization_id
 msgid "Organization"
@@ -681,6 +710,7 @@ msgstr ""
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__platform_id
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__platform_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform_key__platform_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__platform_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__platform_id
@@ -746,6 +776,12 @@ msgid ""
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.actions.act_window,name:vcp_management.vcp_management_report_act_window
+#: model:ir.ui.menu,name:vcp_management.vcp_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_platform_2_repository_act_window
 #: model:ir.actions.act_window,name:vcp_management.vcp_repository_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_repository_menu
@@ -756,6 +792,7 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_repository
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__repository_id
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__repository_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__repository_ids
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__repository_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__repository_id
@@ -827,6 +864,7 @@ msgid "Review Comments"
 msgstr ""
 
 #. module: vcp_management
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__review_count
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__review_count
 msgid "Review Count"
 msgstr ""
@@ -1006,6 +1044,7 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_user
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__user_id
+#: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__user_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__user_id
 msgid "User"
 msgstr ""
@@ -1044,6 +1083,11 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_platform_key
 msgid "VCP Platform API Key"
+msgstr ""
+
+#. module: vcp_management
+#: model:ir.model,name:vcp_management.model_vcp_management_report
+msgid "VCP Statistics"
 msgstr ""
 
 #. module: vcp_management

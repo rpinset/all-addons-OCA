@@ -21,19 +21,6 @@ const Reception = {
                 v-on:found="on_scan"
                 :input_placeholder="search_input_placeholder"
             />
-            <date-picker-input
-                v-if="state_is('set_lot')"
-                :handler_to_update_date="get_expiration_date_from_lot"
-                v-on:date_picker_selected="state.on_date_picker_selected"
-            />
-            <template v-if="state_is('select_move')">
-                <item-detail-card
-                    :record="state.data.picking"
-                    :options="operation_options()"
-                    :card_color="utils.colors.color_for('screen_step_done')"
-                    :key="make_state_component_key(['reception-picking-item-detail', state.data.picking.id])"
-                />
-            </template>
             <template v-if="state_is('select_document')">
                 <manual-select
                     class="with-progress-bar"
@@ -41,14 +28,12 @@ const Reception = {
                     :options="manual_select_options_for_select_document(true)"
                     :key="make_state_component_key(['reception', 'manual-select-document'])"
                 />
-                <div v-if="state_is('select_document')">
-                    <div class="button-list button-vertical-list full">
-                        <v-row align="center">
-                            <v-col class="text-center" cols="12">
-                                <btn-action @click="state.on_manual_selection">Manual selection</btn-action>
-                            </v-col>
-                        </v-row>
-                    </div>
+                <div class="button-list button-vertical-list full">
+                    <v-row align="center">
+                        <v-col class="text-center" cols="12">
+                            <btn-action @click="state.on_manual_selection">Manual selection</btn-action>
+                        </v-col>
+                    </v-row>
                 </div>
             </template>
             <template v-if="state_is('manual_selection') && visible_pickings">
@@ -78,6 +63,12 @@ const Reception = {
                         </v-col>
                     </v-row>
                 </div>
+                <item-detail-card
+                    :record="state.data.picking"
+                    :options="operation_options()"
+                    :card_color="utils.colors.color_for('screen_step_done')"
+                    :key="make_state_component_key(['reception-picking-item-detail', state.data.picking.id])"
+                />
                 <manual-select
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :records="ordered_moves"
@@ -88,6 +79,20 @@ const Reception = {
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
                             <btn-action @click="state.on_mark_as_done">Mark as Done</btn-action>
+                        </v-col>
+                    </v-row>
+                </div>
+            </template>
+            <template v-if="state_is('confirm_over_reception')">
+                <div class="button-list button-vertical-list full">
+                    <v-row align="center">
+                        <v-col class="text-center" cols="12">
+                            <btn-action action="todo" @click="state.on_confirm">Confirm</btn-action>
+                        </v-col>
+                    </v-row>
+                    <v-row align="center">
+                        <v-col class="text-center" cols="12">
+                            <btn-back />
                         </v-col>
                     </v-row>
                 </div>
@@ -107,16 +112,20 @@ const Reception = {
                 </div>
             </template>
             <template v-if="state_is('set_lot')">
+                <date-picker-input
+                    v-if="line_being_handled.product.use_expiration_date"
+                    @dateChange="state.on_date_change"
+                />
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_lot()"
-                    :card_color="lot_has_expiry_date() ? utils.colors.color_for('screen_step_done') : utils.colors.color_for('screen_step_todo')"
+                    :options="line_product_detail_options()"
+                    :card_color="is_set_lot_possible() ? utils.colors.color_for('screen_step_done') : utils.colors.color_for('screen_step_todo')"
                     :key="make_state_component_key(['reception-product-item-detail-set-lot', state.data.picking.id])"
                 />
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_confirm_action">Continue</btn-action>
+                            <btn-action @click="state.on_confirm_lot" :disabled="!is_set_lot_possible()">Continue</btn-action>
                         </v-col>
                     </v-row>
                     <v-row align="center">
@@ -129,7 +138,7 @@ const Reception = {
             <template v-if="state_is('set_quantity')">
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_quantity()"
+                    :options="line_product_detail_options()"
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :key="make_state_component_key(['reception-product-item-detail-set-quantity', state.data.picking.id])"
                 />
@@ -141,17 +150,17 @@ const Reception = {
                     />
                 </v-card>
                 <div class="button-list button-vertical-list full">
-                    <v-row align="center">
+                    <v-row v-if="show_with_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
                             <btn-action @click="state.on_add_to_existing_pack">Existing pack</btn-action>
                         </v-col>
                     </v-row>
-                    <v-row align="center">
+                    <v-row v-if="show_with_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
                             <btn-action @click="state.on_create_new_pack">New pack</btn-action>
                         </v-col>
                     </v-row>
-                    <v-row align="center">
+                    <v-row v-if="show_without_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
                             <btn-action @click="state.on_process_without_pack">Process without pack</btn-action>
                         </v-col>
@@ -162,7 +171,7 @@ const Reception = {
                                 <btn-back/>
                             </v-col>
                             <v-col class="text-center" cols="12">
-                                <cancel-button/>
+                                <cancel-button @cancel="state.on_cancel"/>
                             </v-col>
                         </v-row>
                     </div>
@@ -191,7 +200,7 @@ const Reception = {
             <template v-if="state_is('set_destination')">
                 <item-detail-card
                     :record="line_being_handled"
-                    :options="picking_detail_options_for_set_destination()"
+                    :options="line_product_detail_options()"
                     :card_color="utils.colors.color_for('screen_step_done')"
                     :key="make_state_component_key(['reception-product-item-detail-set-destination-pack', state.data.picking.id])"
                 />
@@ -252,6 +261,16 @@ const Reception = {
         </Screen>
     `,
     computed: {
+        show_with_pack_actions: function () {
+            const put_in_pack_restriction = this.state.data.put_in_pack_restriction;
+            if (!put_in_pack_restriction) return true;
+            return put_in_pack_restriction === "with_package";
+        },
+        show_without_pack_actions: function () {
+            const put_in_pack_restriction = this.state.data.put_in_pack_restriction;
+            if (!put_in_pack_restriction) return true;
+            return put_in_pack_restriction === "no_package";
+        },
         visible_pickings: function () {
             if (_.isEmpty(this.filtered_pickings)) {
                 return this.state.data && this.state.data.pickings
@@ -300,7 +319,7 @@ const Reception = {
             return [
                 {path: "origin", label: "Source Document"},
                 {path: "partner.name", label: "Partner"},
-                {path: "carrier"},
+                {path: "carrier.name", label: "Carrier"},
                 {
                     path: "scheduled_date",
                     renderer: (rec, field) => {
@@ -326,8 +345,8 @@ const Reception = {
         manual_select_options_for_select_document: function (today_only = false) {
             return {
                 group_title_default: today_only
-                    ? "Pickings to process today"
-                    : "Pickings to process",
+                    ? "Receptions to process today"
+                    : "Receptions to process",
                 group_color: this.utils.colors.color_for("screen_step_todo"),
                 list_item_extra_component: "picking-list-item-progress-bar",
                 showActions: false,
@@ -351,9 +370,33 @@ const Reception = {
                 },
             };
         },
-        picking_detail_options_for_set_lot: function () {
+        _get_lot_expiration_date_klass: function () {
+            let klass = "loud";
+            const expiryValue = _.result(
+                this.line_being_handled,
+                "lot.expiration_date"
+            );
+
+            if (expiryValue) {
+                const expiryDate = new Date(expiryValue);
+                const now = new Date();
+                if (expiryDate < now) {
+                    klass += " red";
+                }
+            }
+            return klass;
+        },
+
+        line_product_detail_options: function () {
             return {
                 key_title: "product.display_name",
+                title_action_field: {
+                    action_val_path: function (record, field) {
+                        return record.product.barcode
+                            ? "product.barcode"
+                            : "product.default_code";
+                    },
+                },
                 fields: [
                     {
                         path: "product.supplier_code",
@@ -367,38 +410,26 @@ const Reception = {
                     {
                         path: "lot.expiration_date",
                         label: "Expiry date",
-                        klass: "loud",
+                        klass: this._get_lot_expiration_date_klass(),
                         renderer: (rec, field) => {
-                            return this.utils.display.render_field_date(rec, field);
-                        },
-                    },
-                ],
-            };
-        },
-        picking_detail_options_for_set_quantity: function () {
-            return {
-                key_title: "product.display_name",
-                fields: [
-                    {
-                        path: "product.barcode",
-                        label: "Barcode",
-                    },
-                    {
-                        path: "product.supplier_code",
-                        label: "Vendor code",
-                    },
-                    {path: "lot.name", label: "Lot"},
-                    {
-                        path: "lot.expiration_date",
-                        label: "Expiry date",
-                        renderer: (rec, field) => {
-                            return this.utils.display.render_field_date(rec, field);
+                            return this.utils.display.format_date_display(
+                                _.result(rec, field.path),
+                                {
+                                    // Overwrite defaults to only show date and not time
+                                    format: {
+                                        day: "numeric",
+                                        month: "short",
+                                        year: "numeric",
+                                    },
+                                }
+                            );
                         },
                     },
                 ],
             };
         },
         picking_detail_options_for_select_move: function () {
+            const self = this;
             return {
                 show_title: true,
                 showActions: false,
@@ -426,44 +457,21 @@ const Reception = {
                             path: "quantity_done",
                             label: "Qty done",
                             display_no_value: true,
+                            render_component: "packaging-qty-picker-display",
+                            render_props: (record) => {
+                                return self.utils.wms.move_line_qty_picker_props(
+                                    record,
+                                    {
+                                        qtyInit: record.quantity_done,
+                                        qtyDone: record.quantity,
+                                    }
+                                );
+                            },
                         },
                     ],
                 },
             };
         },
-        picking_detail_options_for_set_destination: function () {
-            return {
-                key_title: "product.display_name",
-                fields: [
-                    {
-                        path: "product.supplier_code",
-                        label: "Vendor code",
-                    },
-                    {
-                        path: "product.barcode",
-                        label: "Barcode",
-                        action_val_path: "barcode",
-                    },
-                    {
-                        path: "lot.name",
-                        label: "Lot",
-                    },
-                    {
-                        path: "lot.expiration_date",
-                        label: "Expiry date",
-                        renderer: (rec, field) => {
-                            return this.utils.display.render_field_date(rec, field);
-                        },
-                    },
-                    {
-                        path: "package_dest.name",
-                        label: "Pack",
-                        klass: "loud",
-                    },
-                ],
-            };
-        },
-
         package_type_select: function () {
             this.wait_call(
                 this.odoo.call("set_package_type", {
@@ -542,20 +550,13 @@ const Reception = {
         reset_picking_filter: function () {
             this.filtered_pickings = [];
         },
-        lot_has_expiry_date: function () {
-            // If there's a expiry date, it means there's a lot too.
-            const expiry_date = _.result(
-                this.line_being_handled,
-                "lot.expiration_date",
-                ""
-            );
-            return !_.isEmpty(expiry_date);
-        },
-        get_expiration_date_from_lot: function (lot) {
-            if (!lot.expiration_date) {
-                return;
-            }
-            return lot.expiration_date.split("T")[0];
+        is_set_lot_possible: function () {
+            if (!this.line_being_handled.lot) return false;
+
+            const lot_name = this.line_being_handled.lot.name;
+            if (!lot_name) return false;
+
+            return true;
         },
         move_card_color: function (move) {
             if (move.progress === 100) {

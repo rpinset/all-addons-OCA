@@ -104,6 +104,7 @@ class TestRecover(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": move_line_data,
+                "confirmation": None,
             },
         )
         # Scan the line again, we should end up with the exact same result
@@ -118,6 +119,7 @@ class TestRecover(CommonCase):
             data={
                 "picking": picking_data,
                 "selected_move_line": move_line_data,
+                "confirmation": None,
             },
             message=self.recover_msg,
         )

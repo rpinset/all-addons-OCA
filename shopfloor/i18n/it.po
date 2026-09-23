@@ -436,7 +436,8 @@ msgstr "Conferma modifica ubicazione da %(location_from)s a %(location_to)s?"
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
 "Content line transferred from %(location_name)s to %(location_dest_name)s"
-msgstr "Riga contenuto trasferita da %(location_name)s a %(location_dest_name)s"
+msgstr ""
+"Riga contenuto trasferita da %(location_name)s a %(location_dest_name)s"
 
 #. module: shopfloor
 #. odoo-python
@@ -640,12 +641,6 @@ msgid "Internal Error: Batch not properly done."
 msgstr "Errore interno: lotto non completato correttamente."
 
 #. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/services/cluster_picking.py:0
-msgid "Internal Error: The move line %s is not fully picked"
-msgstr "Errore interno: la riga di movimento %s non è completamente prelevata"
-
-#. module: shopfloor
 #: model:ir.model,name:shopfloor.model_stock_location
 msgid "Inventory Locations"
 msgstr "Ubicazioni di inventario"
@@ -838,12 +833,6 @@ msgstr "Mvimento già elaborato."
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__multiple_move_single_pack_is_possible
 msgid "Multiple Move Single Pack Is Possible"
 msgstr "È possibile avere movimenti multipli per singolo pacco"
-
-#. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/services/checkout.py:0
-msgid "Negative quantity not allowed."
-msgstr "Quantità negativa non consentita."
 
 #. module: shopfloor
 #. odoo-python
@@ -1120,6 +1109,18 @@ msgid "Package %(package_name)s not found in transfer %(picking_name)s"
 msgstr ""
 "Il collo %(package_name)s non è stato trovato nel trasferimento %"
 "(picking_name)s"
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Package %s is empty, scan a location."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Package %s is not empty anymore."
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_picking__package_level_count
@@ -1657,9 +1658,9 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/actions/stock.py:0
-msgid "Someone is already working on these transfers"
-msgstr "Qualcuno sta già lavorando su questi trasferimenti"
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Someone is already working on it"
+msgstr ""
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__move_line_processing_sort_order
@@ -2209,6 +2210,12 @@ msgstr "Questo non si può movimentare con questo menu."
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
+msgid "You cannot pick a negative quantity."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
 msgid "You cannot place it here"
 msgstr "Questo non può essere messo qui"
 
@@ -2272,6 +2279,16 @@ msgstr "Prelievo per area"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
+
+#~ msgid "Internal Error: The move line %s is not fully picked"
+#~ msgstr ""
+#~ "Errore interno: la riga di movimento %s non è completamente prelevata"
+
+#~ msgid "Negative quantity not allowed."
+#~ msgstr "Quantità negativa non consentita."
+
+#~ msgid "Someone is already working on these transfers"
+#~ msgstr "Qualcuno sta già lavorando su questi trasferimenti"
 
 #~ msgid ""
 #~ "The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%"

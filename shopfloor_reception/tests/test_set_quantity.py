@@ -54,6 +54,69 @@ class TestSetQuantity(CommonCase):
             },
         )
 
+    def test_set_quantity_scan_lot(self):
+        picking = self._create_picking()
+        selected_move_line = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_a
+        )
+        lot = self._create_lot(
+            product_id=selected_move_line.product_id.id, name="Test Lot"
+        )
+        selected_move_line.write({"shopfloor_user_id": self.env.uid, "lot_id": lot.id})
+        self.service.dispatch(
+            "set_quantity",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                # ↓ UI calls with 0 by default
+                "quantity": 0.0,
+                "barcode": "Test Lot",
+            },
+        )
+
+        self.assertEqual(selected_move_line.qty_picked, 1)
+
+    def test_set_quantity_scan_wrong_lot(self):
+        # create lot "4" for product b
+        self.env["stock.lot"].create(
+            {
+                "name": "4",
+                "product_id": self.product_b.id,
+            }
+        )
+        self.product_a.sudo().tracking = "lot"
+
+        picking = self._create_picking()
+        selected_move_line = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_a
+        )
+        selected_move_line.shopfloor_user_id = self.env.uid
+        response = self.service.dispatch(
+            "set_quantity",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                "quantity": 10.0,
+                "barcode": "4",
+            },
+        )
+        self.assertEqual(selected_move_line.qty_picked, 10.0)
+        data = self.data.picking(picking)
+        message = {
+            "message_type": "warning",
+            "body": "Create new PACK 4? Scan it again to confirm.",
+        }
+        self.assert_response(
+            response,
+            next_state="set_quantity",
+            data={
+                "picking": data,
+                "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation_required": "4",
+            },
+            message=message,
+        )
+
     def test_set_quantity_scan_packaging(self):
         picking = self._create_picking()
         selected_move_line = picking.move_line_ids.filtered(
@@ -252,6 +315,7 @@ class TestSetQuantity(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     selected_move_line, with_package_type=True
                 ),
+                "confirmation": None,
             },
         )
 
@@ -376,6 +440,7 @@ class TestSetQuantity(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     selected_move_line, with_package_type=True
                 ),
+                "confirmation": None,
             },
         )
 
@@ -439,7 +504,7 @@ class TestSetQuantity(CommonCase):
 
     def test_concurrent_update(self):
         # We're testing that move line's product uom qties are updated correctly
-        # when users are workng on the same move in parallel
+        # when users are working on the same move in parallel
         picking = self._create_picking()
         self.service.dispatch("scan_document", params={"barcode": picking.name})
         self.service.dispatch(
@@ -542,11 +607,7 @@ class TestSetQuantity(CommonCase):
         self.assertEqual(lines_qty_done, move_lines.move_id.quantity_picked)
 
         # We shouldn't be able to process any of those move lines
-        error_msg = {
-            "message_type": "error",
-            "body": "You cannot process that much units.",
-        }
-        picking_data = self.data.picking(picking)
+        # (except if we are doing an over-reception)
         quantity_done_by_user = 1
         for line, service in line_service_mapping:
             quantity_done_by_user += 2
@@ -564,11 +625,11 @@ class TestSetQuantity(CommonCase):
                 response,
                 next_state="set_quantity",
                 data={
-                    "picking": picking_data,
+                    "picking": self.data.picking(picking),
                     "confirmation_required": None,
                     "selected_move_line": line_data,
                 },
-                message=error_msg,
+                message=self.msg_store.unable_to_pick_qty(),
             )
 
         # But line's quantity hasn't changed and is still 10.0
@@ -636,6 +697,7 @@ class TestSetQuantity(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     selected_move_line, with_package_type=True
                 ),
+                "confirmation": None,
             },
         )
         # there should be 3 lines now
@@ -713,6 +775,7 @@ class TestSetQuantity(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     move_line_user_1, with_package_type=True
                 ),
+                "confirmation": None,
             },
         )
 
@@ -784,12 +847,7 @@ class TestSetQuantity(CommonCase):
                 "quantity": 10.0,
             },
         )
-
-        expected_message = {
-            "body": "You cannot process that much units.",
-            "message_type": "error",
-        }
-        self.assertMessage(response, expected_message)
+        self.assertMessage(response, self.msg_store.unable_to_pick_qty())
         # user1 cancels the operation
         service_user_1.dispatch(
             "set_quantity__cancel_action",
@@ -819,6 +877,7 @@ class TestSetQuantity(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     move_line_user_2, with_package_type=True
                 ),
+                "confirmation": None,
             },
         )
         self.assertEqual(move_product_a.quantity_picked, 1.0)
@@ -833,7 +892,11 @@ class TestSetQuantity(CommonCase):
         # When posted, the move line quantity will be set to qty_picked
         self.assertEqual(move_line_user_2.qty_picked, 1.0)
         self.assert_response(
-            response, next_state="select_move", data=self._data_for_select_move(picking)
+            response,
+            next_state="select_move",
+            data=self._data_for_select_move(
+                picking, last_processed_line=move_line_user_2
+            ),
         )
         # Now, user1 can start working on this again
         service_user_1.dispatch(

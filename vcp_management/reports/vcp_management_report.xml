@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Dixmit
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="vcp_management_report_pivot_view">
+        <field name="model">vcp.management.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Invoices Analysis" sample="1">
+                <field name="user_id" type="row" />
+                <field name="date" type="col" />
+                <field name="merged_pr_count" type="measure" />
+            </pivot>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="vcp_management_report_search_view">
+        <field name="model">vcp.management.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="user_id" />
+                <field name="organization_id" />
+                <field name="repository_id" />
+                <field name="platform_id" />
+                <separator />
+                <filter name="filter_date" date="date" />
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vcp_management_report_act_window">
+        <field name="name">Reporting</field>
+        <field name="path">vcp-report</field>
+        <field name="res_model">vcp.management.report</field>
+        <field name="view_mode">pivot</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

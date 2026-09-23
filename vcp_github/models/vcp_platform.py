@@ -61,7 +61,7 @@ class VcpPlatform(models.Model):
         ).replace(tzinfo=None)
 
     def _parse_github_markdown(self, text):
-        return markdown.markdown(text)
+        return markdown.markdown(text, extensions=["fenced_code"])
 
     def _update_github_repository(self, repo):
         vals = {

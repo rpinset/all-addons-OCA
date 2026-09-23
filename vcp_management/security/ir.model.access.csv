@@ -27,3 +27,4 @@ access_organization,Access Organizations,model_vcp_organization,group_vcp_user,1
 manage_organization,Manage Organizations,model_vcp_organization,group_vcp_manager,1,1,1,1
 access_vcp_rule,Access VCP Rules,model_vcp_rule,group_vcp_user,1,0,0,0
 manage_vcp_rule,Manage VCP Rules,model_vcp_rule,group_vcp_manager,1,1,1,1
+access_vcp_report,Access VCP REport,model_vcp_management_report,group_vcp_manager,1,0,0,0

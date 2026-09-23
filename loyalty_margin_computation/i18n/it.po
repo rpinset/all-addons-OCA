@@ -6,55 +6,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-09-21 20:11+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "<code>env</code>: The Sale Order Line environment"
-msgstr ""
+msgstr "<code>env</code>: l'ambiente della riga dell'ordine di vendita"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "<code>reward</code>: The reward record"
-msgstr ""
+msgstr "<code>reward</code>: il record della ricompensa"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "Example of Python code:"
-msgstr ""
+msgstr "Esempio di codice Python:"
 
 #. module: loyalty_margin_computation
 #: model:ir.model,name:loyalty_margin_computation.model_loyalty_reward
 msgid "Loyalty Reward"
-msgstr ""
+msgstr "Premio fedeltà"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "Margin's Formulas"
-msgstr ""
+msgstr "Formule del margine"
 
 #. module: loyalty_margin_computation
 #: model:ir.model.fields,field_description:loyalty_margin_computation.field_loyalty_reward__sale_margin_formula
 msgid "Sale Margin Formula"
-msgstr ""
+msgstr "Formula margine vendita"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "The following variables can be used:"
-msgstr ""
+msgstr "Posso essere usate le seguenti variabili:"
 
 #. module: loyalty_margin_computation
 #: model:ir.model.fields,help:loyalty_margin_computation.field_loyalty_reward__sale_margin_formula
 msgid "This formula is used to calculate the margin"
-msgstr ""
+msgstr "Questa formula è usata per calcolare il margine"
 
 #. module: loyalty_margin_computation
 #: model_terms:ir.ui.view,arch_db:loyalty_margin_computation.margin_product_loyalty_reward_form_view
 msgid "result = reward.do_some_action()"
-msgstr ""
+msgstr "result = reward.do_some_action()"

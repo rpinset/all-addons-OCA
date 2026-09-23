@@ -22,14 +22,19 @@ msgid "<option value=\"\">Select country</option>"
 msgstr "<option value=\"\">Seleziona nazione</option>"
 
 #. module: crowdfunding
-#: model:crowdfunding.challenge,website_meta_title:crowdfunding.demo_challenge
-msgid "A very challenging challenge"
-msgstr "Una sfida impegnativa"
+#: model_terms:ir.ui.view,arch_db:crowdfunding.portal_invoice_page
+msgid "<small class=\"text-muted\">Crowdfunding</small>"
+msgstr ""
 
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_needaction
 msgid "Action Needed"
 msgstr "Azione richiesta"
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "All challenges"
+msgstr ""
 
 #. module: crowdfunding
 #: model_terms:ir.ui.view,arch_db:crowdfunding.pay_details
@@ -68,8 +73,8 @@ msgid "Challenge"
 msgstr "Sfida"
 
 #. module: crowdfunding
+#. odoo-python
 #: code:addons/crowdfunding/models/crowdfunding_challenge.py:0
-#, python-format
 msgid ""
 "Challenge %(name)s cannot be marked as done as the amount paid differs from "
 "the amount to be paid"
@@ -125,6 +130,11 @@ msgid "Company"
 msgstr "Azienda"
 
 #. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list
+msgid "Completed challenges"
+msgstr ""
+
+#. module: crowdfunding
 #: model:ir.model,name:crowdfunding.model_res_config_settings
 msgid "Config Settings"
 msgstr "Impostazioni configurazione"
@@ -175,11 +185,9 @@ msgstr "Creato il"
 #. module: crowdfunding
 #: model:ir.module.category,name:crowdfunding.module_category
 #: model:ir.ui.menu,name:crowdfunding.menu_crowdfunding_root
-#: model:product.product,name:crowdfunding.product_crowdfunding
 #: model:product.template,name:crowdfunding.product_crowdfunding_product_template
 #: model:website.menu,name:crowdfunding.website_menu_crowdfunding
 #: model_terms:ir.ui.view,arch_db:crowdfunding.res_config_settings_view_form
-#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list_header
 #: model_terms:ir.ui.view,arch_db:crowdfunding.view_move_form
 msgid "Crowdfunding"
 msgstr "Raccolta fondi"
@@ -187,7 +195,6 @@ msgstr "Raccolta fondi"
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_challenge_id
 #: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_challenge_id
-#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_challenge_id
 #: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__crowdfunding_challenge_id
 msgid "Crowdfunding Challenge"
 msgstr "Sfida raccolta fondi"
@@ -201,6 +208,12 @@ msgstr "Procedura guidata fatturazione raccolta fondi"
 #: model:ir.model,name:crowdfunding.model_crowdfunding_challenge
 msgid "Crowdfunding challenge"
 msgstr "Sfida raccolta fondi"
+
+#. module: crowdfunding
+#. odoo-python
+#: code:addons/crowdfunding/controllers/portal.py:0
+msgid "Crowdfunding pledges"
+msgstr ""
 
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__currency_id
@@ -250,12 +263,8 @@ msgid "Description URL"
 msgstr "URL descrizione"
 
 #. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_account_move__display_name
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__display_name
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__display_name
-#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__display_name
-#: model:ir.model.fields,field_description:crowdfunding.field_res_company__display_name
-#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -324,11 +333,6 @@ msgid "Followers"
 msgstr "Seguito da"
 
 #. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_channel_ids
-msgid "Followers (Channels)"
-msgstr "Seguito da (canali)"
-
-#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "Seguito da (partner)"
@@ -350,18 +354,18 @@ msgid "Funding state"
 msgstr "Stato finanziamento"
 
 #. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_account_move__id
+#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__id
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__id
-#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction__id
-#: model:ir.model.fields,field_description:crowdfunding.field_res_company__id
-#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings__id
 msgid "ID"
 msgstr "ID"
 
 #. module: crowdfunding
 #: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_needaction
-#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_unread
 msgid "If checked, new messages require your attention."
 msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
@@ -376,8 +380,8 @@ msgid "Image that will be displayed on the challenge description"
 msgstr "Immagine che verrà visualizzata nella descrizione della sfida"
 
 #. module: crowdfunding
+#. odoo-python
 #: code:addons/crowdfunding/controllers/payment.py:0
-#, python-format
 msgid "Invalid country"
 msgstr "Nazione errata"
 
@@ -407,16 +411,6 @@ msgid "Journal Entry"
 msgstr "Registrazione contabile"
 
 #. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_account_move____last_update
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge____last_update
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard____last_update
-#: model:ir.model.fields,field_description:crowdfunding.field_payment_transaction____last_update
-#: model:ir.model.fields,field_description:crowdfunding.field_res_company____last_update
-#: model:ir.model.fields,field_description:crowdfunding.field_res_config_settings____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__write_uid
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_invoicing_wizard__write_uid
 msgid "Last Updated by"
@@ -437,11 +431,6 @@ msgstr "Collegamento per altre informazioni"
 #: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
 msgid "Login"
 msgstr "Login"
-
-#. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Allegato principale"
 
 #. module: crowdfunding
 #: model:res.groups,name:crowdfunding.group_manager
@@ -493,18 +482,13 @@ msgstr "Numero di errori"
 
 #. module: crowdfunding
 #: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr "Numero di messaggi che richiedono un'azione"
+msgid "Number of messages requiring action"
+msgstr ""
 
 #. module: crowdfunding
 #: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr "Numero di messaggi con errore di consegna"
-
-#. module: crowdfunding
-#: model:ir.model.fields,help:crowdfunding.field_crowdfunding_challenge__message_unread_counter
-msgid "Number of unread messages"
-msgstr "Numero di messaggi non letti"
 
 #. module: crowdfunding
 #: model:ir.model.fields.selection,name:crowdfunding.selection__crowdfunding_challenge__state__open
@@ -547,7 +531,6 @@ msgstr "Promessa %"
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_pledged_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_pledged_amount
-#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_pledged_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_amount
 msgid "Pledged Amount"
 msgstr "Valore promessa"
@@ -564,8 +547,8 @@ msgid "Product"
 msgstr "Prodotto"
 
 #. module: crowdfunding
+#. odoo-python
 #: code:addons/crowdfunding/controllers/payment.py:0
-#, python-format
 msgid "Required field"
 msgstr "Campo obbligatorio"
 
@@ -623,9 +606,13 @@ msgid "Submitted by"
 msgstr "Inviato da"
 
 #. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.view_crowdfunding_challenge_list
+msgid "Sum"
+msgstr ""
+
+#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_target_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_target_amount
-#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_target_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__target_amount
 msgid "Target Amount"
 msgstr "Valore obiettivo"
@@ -651,11 +638,9 @@ msgstr ""
 "utilizza per pagare le spese generali"
 
 #. module: crowdfunding
-#: model:crowdfunding.challenge,website_meta_description:crowdfunding.demo_challenge
-msgid ""
-"This challenge is very challenging because of the challenging challenges it "
-"involves"
-msgstr "Questa sfida è molto impegnativa a causa delle difficoltà che comporta"
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list
+msgid "There are no active challenges as this time"
+msgstr ""
 
 #. module: crowdfunding
 #: model:ir.model.fields,help:crowdfunding.field_res_company__crowdfunding_product_id
@@ -669,12 +654,6 @@ msgid "URL for more information about this challenge"
 msgstr "URL per ulteriori informazioni su questa sfida"
 
 #. module: crowdfunding
-#: model:product.product,uom_name:crowdfunding.product_crowdfunding
-#: model:product.template,uom_name:crowdfunding.product_crowdfunding_product_template
-msgid "Units"
-msgstr "Unità"
-
-#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__pledged_amount_unpaid
 msgid "Unposted Pledges"
 msgstr "Promesse non inviate"
@@ -683,16 +662,6 @@ msgstr "Promesse non inviate"
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__claimed_partner_amount
 msgid "Unposted Vendor Amount"
 msgstr "Valore fornitore non inviato"
-
-#. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_unread
-msgid "Unread Messages"
-msgstr "Messaggi non letti"
-
-#. module: crowdfunding
-#: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__message_unread_counter
-msgid "Unread Messages Counter"
-msgstr "Contatore messaggi non letti"
 
 #. module: crowdfunding
 #: model:res.groups,name:crowdfunding.group_user
@@ -707,7 +676,6 @@ msgstr "Fornitore"
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_account_bank_statement_line__crowdfunding_vendor_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_account_move__crowdfunding_vendor_amount
-#: model:ir.model.fields,field_description:crowdfunding.field_account_payment__crowdfunding_vendor_amount
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__vendor_amount
 msgid "Vendor Amount"
 msgstr "Valore fornitore"
@@ -741,6 +709,11 @@ msgstr "Fatture venditore"
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_published
 msgid "Visible on current website"
 msgstr "Visibile sul sito web attuale"
+
+#. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_website
+msgid "Website"
+msgstr ""
 
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_message_ids
@@ -792,6 +765,44 @@ msgid "Zip"
 msgstr "CAP"
 
 #. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "breadcrumb"
+msgstr ""
+
+#. module: crowdfunding
 #: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
 msgid "or"
 msgstr "o"
+
+#~ msgid "A very challenging challenge"
+#~ msgstr "Una sfida impegnativa"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Seguito da (canali)"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Allegato principale"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Numero di messaggi che richiedono un'azione"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Numero di messaggi non letti"
+
+#~ msgid ""
+#~ "This challenge is very challenging because of the challenging challenges "
+#~ "it involves"
+#~ msgstr ""
+#~ "Questa sfida è molto impegnativa a causa delle difficoltà che comporta"
+
+#~ msgid "Units"
+#~ msgstr "Unità"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Messaggi non letti"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Contatore messaggi non letti"

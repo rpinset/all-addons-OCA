@@ -5,8 +5,32 @@
     <template id="template_challenge_list" name="Crowdfunding">
         <t t-call="website.layout">
             <div id="wrap">
+                <t
+                    t-set="done_challenges"
+                    t-value="results.filtered(lambda x: x.state == 'done')"
+                />
+                <t t-set="results" t-value="results - done_challenges" />
                 <div id="challenge_list" class="container py-4">
                     <div class="card" t-foreach="results" t-as="result">
+                        <div class="card-body">
+                            <a t-att-href="result.website_url">
+                                <t t-esc="result.name" />
+                            </a>
+                        </div>
+                    </div>
+                    <div t-if="not results" class="card">
+                        <div class="card-body">
+                        There are no active challenges as this time
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="challenge_list_done"
+                    class="container py-4"
+                    t-if="done_challenges"
+                >
+                    <h1>Completed challenges</h1>
+                    <div class="card" t-foreach="done_challenges" t-as="result">
                         <div class="card-body">
                             <a t-att-href="result.website_url">
                                 <t t-esc="result.name" />
@@ -66,6 +90,17 @@
                     </div>
                 </t>
                 <div class="container">
+                    <nav
+                        aria-label="breadcrumb"
+                        class="breadcrumb flex-nowrap py-0 px-0 css_editable_mode_hidden"
+                    >
+                        <li class="breadcrumb-item">
+                            <a href="/crowdfunding">All challenges</a>
+                        </li>
+                        <li class="breadcrumb-item text-truncate active">
+                            <span t-out="object.name" />
+                        </li>
+                    </nav>
                     <section class="mb24 mt24">
                         <div class="container">
                             <div t-field="object.description" />

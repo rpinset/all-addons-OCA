@@ -13,7 +13,7 @@ class VcpRequestLabel(models.Model):
 
     name = fields.Char(required=True, readonly=True)
 
-    color = fields.Char(default=lambda x: x._default_color())
+    color = fields.Integer(default=lambda x: x._default_color())
 
     request_ids = fields.Many2many(
         comodel_name="vcp.request",

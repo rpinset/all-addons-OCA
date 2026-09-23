@@ -664,7 +664,7 @@ class ClusterPicking(Component):
                 move_line,
                 message=self.msg_store.product_multiple_packages_scan_package(),
             )
-        quantity = self._get_prefill_qty(move_line, qty=1)
+        quantity = self.get_qty_picked(move_line)
         return self._response_for_scan_destination(move_line, qty_done=quantity)
 
     def _scan_line_by_packaging(self, picking, move_line, packaging, sublocation):
@@ -695,7 +695,7 @@ class ClusterPicking(Component):
                 move_line,
                 message=self.msg_store.product_multiple_packages_scan_package(),
             )
-        quantity = self._get_prefill_qty(move_line, packaging.qty)
+        quantity = self.get_qty_picked(move_line, packaging)
         return self._response_for_scan_destination(move_line, qty_done=quantity)
 
     def _scan_line_by_lot(self, picking, move_line, lot, sublocation):
@@ -721,7 +721,7 @@ class ClusterPicking(Component):
             return self._response_for_start_line(
                 move_line, message=self.msg_store.lot_multiple_packages_scan_package()
             )
-        quantity = self._get_prefill_qty(move_line, 1.0)
+        quantity = self.get_qty_picked(move_line)
         return self._response_for_scan_destination(move_line, qty_done=quantity)
 
     def _scan_line_by_location(self, picking, move_line, location):
@@ -846,13 +846,13 @@ class ClusterPicking(Component):
         if response:
             return response
 
-        new_line, qty_check = move_line._split_qty_to_be_done(quantity)
-        if qty_check == "greater":
+        if message := self._check_move_line_qty_picked(move_line, quantity):
             return self._response_for_scan_destination(
                 move_line,
-                message=self.msg_store.unable_to_pick_more(move_line.quantity),
+                message=message,
                 qty_done=quantity,
             )
+        new_line = move_line._split_partial_quantity_to_be_picked(quantity)
 
         search = self._actions_for("search")
         bin_package = search.package_from_scan(barcode)
@@ -1259,37 +1259,22 @@ class ClusterPicking(Component):
         for picking in lines.picking_id:
             self._unload_set_picking_to_done(picking)
 
+    def _clear_batch_and_assignment(self, pickings):
+        pickings.write({"batch_id": False, "user_id": False, "printed": False})
+
     def _unload_set_picking_to_done(self, picking):
         """Set picking to done when all picked move lines have been unloaded"""
         if picking.state == "done":
             return
         for ml in picking.move_line_ids:
-            if not ml.picked or not ml.has_quantity_reserved:
-                continue
-            # Ensure the quantity picked >= quantity reserved.
-            # At this stage, the move line should have already been split
-            # when setting the destination package.
-            if not ml.is_fully_picked:
-                raise UserError(
-                    self.env._(
-                        "Internal Error: The move line %s is not fully picked",
-                        ml.display_name,
-                    )
-                )
-            if not ml.shopfloor_unloaded:
-                # A move line is not unloaded, exit
+            if ml.picked and not ml.shopfloor_unloaded:
+                # A picked move line is not unloaded, exit
                 return
         stock = self._actions_for("stock")
-        for move in picking.move_ids:
-            move.split_other_move_lines(move.move_line_ids.filtered("picked"))
-        # remove assigned non picked moves
-        moves_to_validate = picking.move_ids.filtered(
-            lambda m: not (m.state == "assigned" and not m.picked)
-        )
-        stock.validate_moves(moves_to_validate)
+        stock.validate_moves(picking.move_ids)
         if picking.state not in ("cancel", "done"):
             # A split order has been created, remove picking from batch
-            picking.batch_id = False
+            self._clear_batch_and_assignment(picking)
 
     def _unload_end(self, batch, completion_info_popup=None):
         """Remove unprocessed pickings from batch to close it.
@@ -1309,17 +1294,11 @@ class ClusterPicking(Component):
             batch.message_post(
                 body=Markup("<b>%s:</b> %s")
                 % (
-                    self.env._("Unprocessed transfer removed from batch"),
-                    ", ".join(
-                        Markup(
-                            "<a href=#id=%s&view_type=form&model=stock.picking>%s</a>"
-                        )
-                        % (p.id, p.name)
-                        for p in empty_pickings
-                    ),
+                    _("Unprocessed transfer removed from batch"),
+                    Markup(", ").join(p._get_html_link() for p in empty_pickings),
                 )
             )
-            empty_pickings.batch_id = False
+            self._clear_batch_and_assignment(empty_pickings)
 
         if batch.state != "done":
             # As processed pickings are already done, the batch should now be done

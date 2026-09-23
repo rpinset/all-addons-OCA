@@ -3,11 +3,12 @@
 {
     "name": "Sale planner calendar",
     "summary": "Sale planner calendar",
-    "version": "18.0.1.0.3",
+    "version": "18.0.1.1.0",
     "development_status": "Beta",
     "category": "Sale",
     "website": "https://github.com/OCA/sale-workflow",
     "author": "Tecnativa, Odoo Community Association (OCA)",
+    "maintainers": ["carlosdauden"],
     "license": "AGPL-3",
     "application": False,
     "installable": True,

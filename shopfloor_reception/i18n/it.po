@@ -44,6 +44,12 @@ msgid "Filter Today Scheduled Pickings Is Possible"
 msgstr "Filtro Possibili prelievi schedulati oggi"
 
 #. module: shopfloor_reception
+#. odoo-python
+#: code:addons/shopfloor_reception/actions/messages.py:0
+msgid "Invalid quantity: '%(qty)s'."
+msgstr ""
+
+#. module: shopfloor_reception
 #: model:ir.model,name:shopfloor_reception.model_shopfloor_menu
 msgid "Menu displayed in the scanner application"
 msgstr "Menu visualizzato nell'applicazione di scansione"
@@ -54,6 +60,13 @@ msgstr "Menu visualizzato nell'applicazione di scansione"
 #: model:stock.picking.type,name:shopfloor_reception.picking_type_reception_demo
 msgid "Reception"
 msgstr "Ricezione"
+
+#. module: shopfloor_reception
+#. odoo-python
+#: code:addons/shopfloor_reception/actions/messages.py:0
+msgid ""
+"The operation type '%(picking_type)s' does not allow to create new lots."
+msgstr ""
 
 #. module: shopfloor_reception
 #. odoo-python
@@ -72,6 +85,30 @@ msgstr "Il tipo collo non è valido"
 #: code:addons/shopfloor_reception/actions/messages.py:0
 msgid "The package type was successfully changed"
 msgstr "Il tipo collo è stato cambiato con successo"
+
+#. module: shopfloor_reception
+#. odoo-python
+#: code:addons/shopfloor_reception/actions/messages.py:0
+msgid ""
+"The scanned lot contains the product barcode '%(product_barcode)s' but you "
+"have no product with this barcode in Odoo."
+msgstr ""
+
+#. module: shopfloor_reception
+#. odoo-python
+#: code:addons/shopfloor_reception/actions/messages.py:0
+msgid ""
+"The scanned lot does not match the selected product. Current product is '%"
+"(current_product)s' but the scanned lot is for '%(lot_product)s'."
+msgstr ""
+
+#. module: shopfloor_reception
+#. odoo-python
+#: code:addons/shopfloor_reception/actions/messages.py:0
+msgid ""
+"This lot already exists with expiration date '%(lot_expiration_date)s'. You "
+"cannot change its date."
+msgstr ""
 
 #, python-format
 #~ msgid "Filter Today Pickings is not allowed for menu {}."

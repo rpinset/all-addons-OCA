@@ -1,12 +1,12 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-09-20 17:51 UTC
+Generated 2026-09-23 23:46 UTC
 
-Total skipped: **105**
+Total skipped: **106**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **25**
+Count: **26**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -32,6 +32,7 @@ Count: **25**
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [18.0](https://github.com/OCA/openupgradelib/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [18.0](https://github.com/OCA/py3o.template/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [18.0](https://github.com/OCA/pylint-odoo/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
+| [pytest-odoo](https://github.com/OCA/pytest-odoo) | [18.0](https://github.com/OCA/pytest-odoo/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [18.0](https://github.com/OCA/repo-maintainer/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [18.0](https://github.com/OCA/repo-maintainer-conf/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | [18.0](https://github.com/OCA/tier-validation/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |

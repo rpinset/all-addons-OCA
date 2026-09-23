@@ -114,7 +114,17 @@ class Rma(models.Model):
 
     @api.model
     def _sort_sale_lines_by_order_date(self, sale_lines):
-        return sale_lines.sorted(lambda sol: (sol.order_id.date_order, sol.id))
+        reverse = bool(self.operation_id.return_eligibility_order != "older_first")
+        return sale_lines.sorted(
+            lambda sol: (sol.order_id.date_order, sol.id), reverse=reverse
+        )
+
+    def _prepare_new_rma_for_sale_link_values(self, qty):
+        self.ensure_one()
+        return {
+            "state": self.state,  # Bypass here the copy=False
+            "product_uom_qty": qty,
+        }
 
     def _link_rma_to_sale_line(self, sale_lines):
         """match between rmas and sale lines"""
@@ -122,7 +132,7 @@ class Rma(models.Model):
             return False
         sale_line_delivered_qty = self._get_sale_line_returnable_qty(sale_lines)
         rmas = self.sorted("date")
-        sale_lines = sale_lines.sorted(lambda sol: (sol.order_id.date_order, sol.id))
+        sale_lines = self._sort_sale_lines_by_order_date(sale_lines)
 
         rma_index = 0
         sale_index = 0
@@ -147,7 +157,9 @@ class Rma(models.Model):
             elif rma_qty > remaining_qty:
                 # rma needs more than available on this sale line
                 # we copy RMA for the matched qty
-                matched_rma = rma.copy({"product_uom_qty": remaining_qty})
+                matched_rma = rma.copy(
+                    self._prepare_new_rma_for_sale_link_values(qty=remaining_qty)
+                )
                 # reduce qty on original RMA
                 rma.product_uom_qty = rma_qty - remaining_qty
                 # link the matched copy to the sale line

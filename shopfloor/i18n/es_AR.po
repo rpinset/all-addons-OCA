@@ -589,12 +589,6 @@ msgid "Internal Error: Batch not properly done."
 msgstr ""
 
 #. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/services/cluster_picking.py:0
-msgid "Internal Error: The move line %s is not fully picked"
-msgstr ""
-
-#. module: shopfloor
 #: model:ir.model,name:shopfloor.model_stock_location
 msgid "Inventory Locations"
 msgstr "Ubicaciones de Inventario"
@@ -785,12 +779,6 @@ msgstr "El Movimiento ya ha sido procesado."
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__multiple_move_single_pack_is_possible
 msgid "Multiple Move Single Pack Is Possible"
 msgstr "Paquete Individual de Movimiento Múltiple Es Posible"
-
-#. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/services/checkout.py:0
-msgid "Negative quantity not allowed."
-msgstr "Cantidad negativa no permitida."
 
 #. module: shopfloor
 #. odoo-python
@@ -1059,6 +1047,18 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid "Package %(package_name)s not found in transfer %(picking_name)s"
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Package %s is empty, scan a location."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Package %s is not empty anymore."
 msgstr ""
 
 #. module: shopfloor
@@ -1600,8 +1600,8 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/actions/stock.py:0
-msgid "Someone is already working on these transfers"
+#: code:addons/shopfloor/actions/message.py:0
+msgid "Someone is already working on it"
 msgstr ""
 
 #. module: shopfloor
@@ -2132,6 +2132,12 @@ msgstr "No puede mover esto usando este menú."
 #. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
+msgid "You cannot pick a negative quantity."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
 msgid "You cannot place it here"
 msgstr "No puede colocarlo aquí"
 
@@ -2191,6 +2197,9 @@ msgstr "Zona de Entreda"
 #: code:addons/shopfloor/actions/message.py:0
 msgid "{} is not a valid destination package."
 msgstr "{} no es un paquete de destino válido."
+
+#~ msgid "Negative quantity not allowed."
+#~ msgstr "Cantidad negativa no permitida."
 
 #~ msgid "Content transfer to {} completed"
 #~ msgstr "Transferencia de contenido a {} completada"

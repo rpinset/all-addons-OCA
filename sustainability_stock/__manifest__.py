@@ -1,0 +1,23 @@
+{
+    "name": "Sustainability Inventory",
+    "category": "Inventory/Inventory",
+    "version": "18.0.1.2.1",
+    "author": "MCO2, Open Net Sàrl",
+    "maintainers": ["jacopobacci"],
+    "development_status": "Production/Stable",
+    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "depends": ["sustainability", "stock", "stock_delivery"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_config_settings.xml",
+        "views/stock_picking.xml",
+        "views/carbon_line_origin.xml",
+        "views/sustainability_stock_freight_computation.xml",
+        "data/menu_items.xml",
+    ],
+    "pre_init_hook": "add_carbon_mode_columns",
+    "installable": True,
+    "application": False,
+    "auto_install": False,
+    "license": "AGPL-3",
+}

@@ -5,6 +5,7 @@ from odoo import fields
 
 from odoo.addons.base_rest.components.service import to_int
 from odoo.addons.component.core import Component
+from odoo.addons.shopfloor.actions.search import SearchInvalidProduct
 from odoo.addons.stock.models.stock_move_line import StockMoveLine
 from odoo.addons.stock.models.stock_package_type import PackageType
 from odoo.addons.stock.models.stock_picking import Picking
@@ -89,7 +90,14 @@ class ClusterPicking(Component):
                 message=message,
             )
 
-        search_result = packing_action._scan_package_find(picking, barcode)
+        try:
+            search_result = packing_action._scan_package_find(picking, barcode)
+        except SearchInvalidProduct as e:
+            return self._response_for_select_package(
+                picking,
+                selected_lines,
+                message=self.msg_store.wrong_record(e.recordset),
+            )
         message = packing_action._check_scan_package_find(picking, search_result)
         if message:
             return self._response_for_select_package(

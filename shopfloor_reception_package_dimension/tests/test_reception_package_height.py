@@ -58,6 +58,7 @@ class TestSetPackDimension(CommonCase):
                 "selected_move_line": self.data.move_lines(
                     self.move_line, with_package_type=True
                 ),
+                "confirmation": None,
             },
             message={
                 "message_type": "error",

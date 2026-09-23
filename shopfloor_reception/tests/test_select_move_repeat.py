@@ -11,6 +11,16 @@ class TestSelectMoveRepeat(CommonCase):
         super().setUpClassBaseData()
         cls.product_a.tracking = "lot"
         cls.location_dest = cls.env.ref("stock.stock_location_stock")
+        cls.sub_input_location = (
+            cls.env["stock.location"]
+            .sudo()
+            .create(
+                {
+                    "name": "Reception Repeat Shelf",
+                    "location_id": cls.input_location.id,
+                }
+            )
+        )
 
     def test_previous_processed_line_move_finished(self):
         """Check move done no possible repeat case."""
@@ -24,13 +34,12 @@ class TestSelectMoveRepeat(CommonCase):
             {"name": "Lot-001", "product_id": working_line.product_id.id}
         )
         working_line.result_package_id = self.env["stock.quant.package"].create({})
-        working_line.location_dest_id = self.location_dest
         response = self.service.dispatch(
             "set_destination",
             params={
                 "picking_id": picking.id,
                 "selected_line_id": working_line.id,
-                "location_name": self.shelf2.name,
+                "location_name": self.sub_input_location.name,
             },
         )
         # The last_move_line is not return -> no Repeat button
@@ -48,7 +57,6 @@ class TestSelectMoveRepeat(CommonCase):
         )
         working_move = working_line.move_id
         # Receive the first package
-        working_line.location_dest_id = self.location_dest
         # Only processing half the move quantity with a package
         working_line.qty_picked = 5
         working_line.lot_id = self.env["stock.lot"].create(
@@ -60,7 +68,7 @@ class TestSelectMoveRepeat(CommonCase):
             params={
                 "picking_id": picking.id,
                 "selected_line_id": working_line.id,
-                "location_name": self.shelf2.name,
+                "location_name": self.sub_input_location.name,
             },
         )
         self.assert_response(
@@ -96,7 +104,6 @@ class TestSelectMoveRepeat(CommonCase):
         selected_move_line = picking.move_line_ids.filtered(
             lambda li: li.product_id == self.product_b
         )
-        selected_move_line.location_dest_id = self.location_dest
         self.service.dispatch(
             "set_quantity",
             params={
@@ -114,7 +121,7 @@ class TestSelectMoveRepeat(CommonCase):
             params={
                 "picking_id": picking.id,
                 "selected_line_id": selected_move_line.id,
-                "location_name": self.shelf2.name,
+                "location_name": self.sub_input_location.name,
             },
         )
         self.assert_response(

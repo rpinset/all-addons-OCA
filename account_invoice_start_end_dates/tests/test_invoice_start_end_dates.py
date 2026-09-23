@@ -133,43 +133,45 @@ class TestInvoiceStartEndDates(TransactionCase):
             )
 
     def test_date_partial(self):
+        inv = self.move_model.create(
+            {
+                "partner_id": self.partner.id,
+                "move_type": "out_invoice",
+                "invoice_line_ids": [
+                    Command.create(
+                        {
+                            "name": "Maintenance Odoo",
+                            "price_unit": 1200,
+                            "quantity": 1,
+                            "account_id": self.account_revenue.id,
+                            # start date, but no end date
+                            "start_date": self._date("12-31"),
+                            "end_date": False,
+                        }
+                    )
+                ],
+            }
+        )
         with self.assertRaises(ValidationError):
-            self.move_model.create(
-                {
-                    "partner_id": self.partner.id,
-                    "move_type": "out_invoice",
-                    "invoice_line_ids": [
-                        Command.create(
-                            {
-                                "name": "Maintenance Odoo",
-                                "price_unit": 1200,
-                                "quantity": 1,
-                                "account_id": self.account_revenue.id,
-                                # start date, but no end date
-                                "start_date": self._date("12-31"),
-                                "end_date": False,
-                            }
-                        )
-                    ],
-                }
-            )
+            inv.action_post()
+        inv = self.move_model.create(
+            {
+                "partner_id": self.partner.id,
+                "move_type": "out_invoice",
+                "invoice_line_ids": [
+                    Command.create(
+                        {
+                            "name": "Maintenance Odoo",
+                            "price_unit": 1200,
+                            "quantity": 1,
+                            "account_id": self.account_revenue.id,
+                            # end date, but no start date
+                            "start_date": False,
+                            "end_date": self._date("12-31"),
+                        }
+                    )
+                ],
+            }
+        )
         with self.assertRaises(ValidationError):
-            self.move_model.create(
-                {
-                    "partner_id": self.partner.id,
-                    "move_type": "out_invoice",
-                    "invoice_line_ids": [
-                        Command.create(
-                            {
-                                "name": "Maintenance Odoo",
-                                "price_unit": 1200,
-                                "quantity": 1,
-                                "account_id": self.account_revenue.id,
-                                # start date, but no end date
-                                "start_date": False,
-                                "end_date": self._date("12-31"),
-                            }
-                        )
-                    ],
-                }
-            )
+            inv.action_post()

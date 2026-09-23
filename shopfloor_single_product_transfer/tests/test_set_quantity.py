@@ -99,7 +99,7 @@ class TestSetQuantity(CommonCase):
             response, next_state="set_quantity", message=expected_message, data=data
         )
 
-    def test_set_quantity_scan_product_prefill_qty_disabled(self):
+    def test_set_quantity_scan_product_no_prefill_qty_disabled(self):
         # First, select a picking
         picking = self._setup_picking()
         move_line = picking.move_line_ids
@@ -149,7 +149,7 @@ class TestSetQuantity(CommonCase):
             response, next_state="set_quantity", message=expected_message, data=data
         )
 
-    def test_set_quantity_scan_product_prefill_qty_enabled(self):
+    def test_set_quantity_scan_product_no_prefill_qty_enabled(self):
         # First, select a picking
         self._enable_no_prefill_qty()
         picking = self._setup_picking()
@@ -255,7 +255,7 @@ class TestSetQuantity(CommonCase):
         # When scanning a location, a qty_picked is checked.
         # Since qty done > qty todo, an error should be raised
 
-    def test_set_quantity_scan_lot_prefill_qty_disabled(self):
+    def test_set_quantity_scan_lot_no_prefill_qty_disabled(self):
         # First, select a picking
         lot = self._create_lot_for_product(self.product, "LOT_BARCODE")
         picking = self._setup_picking(lot=lot)
@@ -297,7 +297,7 @@ class TestSetQuantity(CommonCase):
             response, next_state="set_quantity", message=expected_message, data=data
         )
 
-    def test_set_quantity_scan_lot_prefill_qty_enabled(self):
+    def test_set_quantity_scan_lot_no_prefill_qty_enabled(self):
         # First, select a picking
         self._enable_no_prefill_qty()
         lot = self._create_lot_for_product(self.product, "LOT_BARCODE")
@@ -358,7 +358,7 @@ class TestSetQuantity(CommonCase):
             response, next_state="set_quantity", message=expected_message, data=data
         )
 
-    def test_set_quantity_scan_packaging(self):
+    def test_set_quantity_scan_packaging_no_prefill_qty_disabled(self):
         """Scan a packaging to process an existing line."""
         # First, select a picking
         picking = self._setup_picking()

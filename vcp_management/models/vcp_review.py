@@ -20,7 +20,7 @@ class VcpReview(models.Model):
     partner_id = fields.Many2one(
         related="user_id.partner_id",
     )
-    submitted_at = fields.Datetime(readonly=True)
+    submitted_at = fields.Datetime(readonly=True, index=True)
     repository_id = fields.Many2one(
         related="request_id.repository_id",
         readonly=True,

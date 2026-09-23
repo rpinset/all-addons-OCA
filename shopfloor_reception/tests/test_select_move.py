@@ -26,6 +26,7 @@ class TestSelectLine(CommonCase):
 
     def test_scan_product(self):
         picking = self._create_picking()
+        self.assertFalse(picking.printed)
         response = self.service.dispatch(
             "scan_line",
             params={"picking_id": picking.id, "barcode": self.product_a.barcode},
@@ -34,6 +35,7 @@ class TestSelectLine(CommonCase):
         selected_move_line = picking.move_line_ids.filtered(
             lambda li: li.product_id == self.product_a
         )
+        self.assertTrue(selected_move_line.picking_id.printed)
         self.assert_response(
             response,
             next_state="set_lot",
@@ -41,6 +43,97 @@ class TestSelectLine(CommonCase):
                 "picking": data,
                 "selected_move_line": self.data.move_lines(selected_move_line),
             },
+        )
+
+    def test_scan_product_partial(self):
+        # Scan a line
+        # Set a partial quantity done
+        # Try to scan the product again
+        # The selected line should be the other one
+        picking = self._create_picking()
+        lot = self._create_lot()
+        self.assertFalse(picking.printed)
+        selected_move_line = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_a
+        )
+
+        # Activate INPUT location
+        selected_move_line.location_dest_id.sudo().active = True
+
+        selected_move_line.lot_id = lot
+        response = self.service.dispatch(
+            "scan_line",
+            params={"picking_id": picking.id, "barcode": lot.name},
+        )
+        data = self.data.picking(picking)
+
+        self.assertTrue(selected_move_line.picking_id.printed)
+        self.assert_response(
+            response,
+            next_state="set_quantity",
+            data={
+                "picking": data,
+                "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation_required": None,
+            },
+        )
+
+        selected_move_line.shopfloor_user_id = self.env.uid
+        response = self.service.dispatch(
+            "set_quantity",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                "quantity": 5.0,
+            },
+        )
+
+        response = self.service.dispatch(
+            "process_without_pack",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                "quantity": 5.0,
+            },
+        )
+        data = self.data.picking(picking)
+        self.assert_response(
+            response,
+            next_state="set_destination",
+            data={
+                "picking": data,
+                "selected_move_line": self.data.move_lines(selected_move_line),
+                "confirmation": None,
+            },
+        )
+
+        response = self.service.dispatch(
+            "set_destination",
+            params={
+                "picking_id": picking.id,
+                "selected_line_id": selected_move_line.id,
+                "location_name": "INPUT",
+            },
+        )
+        self.assert_response(
+            response,
+            next_state="select_move",
+            data=self._data_for_select_move(picking),
+        )
+        lines = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_a
+        )
+        self.assertEqual(2, len(lines))
+        previous_line = selected_move_line
+
+        response = self.service.dispatch(
+            "scan_line",
+            params={"picking_id": picking.id, "barcode": lot.name},
+        )
+
+        self.assertNotEqual(
+            previous_line.id,
+            response["data"]["set_quantity"]["selected_move_line"][0]["id"],
         )
 
     def test_scan_packaging(self):
@@ -89,6 +182,36 @@ class TestSelectLine(CommonCase):
                 "selected_move_line": self.data.move_lines(selected_move_line),
                 "confirmation_required": None,
             },
+        )
+
+    def test_scan_lot_concurrent(self):
+        """
+        If 2 operators work on the same lot, the second operator
+        should not steal the move line of the first.
+        """
+        picking = self._create_picking()
+        lot = self._create_lot()
+
+        service_u1 = self.service
+        res_u1 = service_u1.dispatch(
+            "scan_line",
+            params={
+                "picking_id": picking.id,
+                "barcode": lot.name,
+            },
+        )
+        # User 2 starts working on the same move
+        service_u2 = self._get_service_for_user(self.shopfloor_manager)
+        res_u2 = service_u2.dispatch(
+            "scan_line",
+            params={
+                "picking_id": picking.id,
+                "barcode": lot.name,
+            },
+        )
+        self.assertNotEqual(
+            res_u1["data"]["set_quantity"]["selected_move_line"][0]["id"],
+            res_u2["data"]["set_quantity"]["selected_move_line"][0]["id"],
         )
 
     def test_scan_not_tracked_product(self):
@@ -340,4 +463,53 @@ class TestSelectLine(CommonCase):
             next_state="select_move",
             data=self._data_for_select_move(picking),
             message={"message_type": "warning", "body": message},
+        )
+
+    def test_select_move_to_set_lot_prefills_lot_name(self):
+        picking = self._create_picking()
+
+        self.product_a.tracking = "lot"
+        self.product_b.tracking = "lot"
+
+        move_a = picking.move_ids.filtered(lambda m: m.product_id == self.product_a)
+        move_line_a = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_a
+        )
+        move_line_a.lot_id = self._create_lot()
+
+        move_b = picking.move_ids.filtered(lambda m: m.product_id == self.product_b)
+        move_line_b = picking.move_line_ids.filtered(
+            lambda li: li.product_id == self.product_b
+        )
+        lot = self._create_lot(
+            product_id=self.product_b.id,
+            name="Pre-Configured Lot Name",
+            expiration_date="2020-02-02 12:00:00",
+        )
+        move_line_b.lot_name = lot.name
+
+        # There is already a lot -> we skip "set_lot"
+        response_a = self.service.dispatch(
+            "manual_select_move",
+            params={"move_id": move_a.id},
+        )
+        self.assertEqual(response_a.get("next_state"), "set_quantity")
+
+        # There is a lot name but no lot record -> enter "set_lot"
+        response_b = self.service.dispatch(
+            "manual_select_move",
+            params={"move_id": move_b.id},
+        )
+        self.assertEqual(response_b.get("next_state"), "set_lot")
+
+        # The UI should receive the lot metadata so as to be able to prefill
+        self.assertEqual(
+            response_b["data"]["set_lot"]["selected_move_line"][0]["lot"]["name"],
+            lot.name,
+        )
+        self.assertEqual(
+            response_b["data"]["set_lot"]["selected_move_line"][0]["lot"][
+                "expiration_date"
+            ],
+            "2020-02-02T12:00:00",
         )

@@ -22,6 +22,7 @@ class CrowdfundingChallenge(models.Model):
         "website.published.mixin",
         "website.seo.metadata",
         "website.cover_properties.mixin",
+        "website.searchable.mixin",
     ]
     _mail_post_access = "read"
     _mail_flat_thread = False
@@ -232,6 +233,30 @@ class CrowdfundingChallenge(models.Model):
                 if this.description_image
                 else None
             )
+
+    @api.model
+    def _search_get_detail(self, website, order, options):
+        return {
+            "model": self._name,
+            "base_domain": [self._domain_website_access()],
+            "mapping": {
+                "name": {"name": "name", "type": "text", "match": True},
+                "description": {
+                    "name": "description",
+                    "type": "text",
+                    "html": True,
+                    "match": True,
+                },
+                "website_url": {
+                    "name": "website_url",
+                    "type": "text",
+                    "truncate": False,
+                },
+            },
+            "search_fields": ["description", "name"],
+            "fetch_fields": ["id", "description", "name", "website_url"],
+            "icon": "fa-users",
+        }
 
     def action_open(self):
         self.filtered(lambda x: x.state == "draft").write(

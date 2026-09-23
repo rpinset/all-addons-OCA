@@ -28,6 +28,14 @@
             action="vcp_request_act_window"
             sequence="20"
         />
+        <menuitem id="vcp_reporting" name="Reporting" sequence="60">
+            <menuitem
+                id="vcp_management_report_menu"
+                name="Management Reporting"
+                action="vcp_management_report_act_window"
+                sequence="10"
+            />
+        </menuitem>
 
         <menuitem id="vcp_technical_menu" name="Technical" sequence="70">
             <menuitem

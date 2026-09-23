@@ -19,14 +19,6 @@ class AccountMoveLine(models.Model):
     )
     def _check_start_end_dates(self):
         for moveline in self:
-            if moveline.start_date and not moveline.end_date:
-                raise ValidationError(
-                    _("Missing End Date for line '%s'.") % (moveline.display_name)
-                )
-            if moveline.end_date and not moveline.start_date:
-                raise ValidationError(
-                    _("Missing Start Date for line '%s'.") % (moveline.display_name)
-                )
             if (
                 moveline.end_date
                 and moveline.start_date
@@ -43,21 +35,35 @@ class AccountMoveLine(models.Model):
                         "name": moveline.display_name,
                     }
                 )
-            # We enforce start_end+end_date when product_id.must_have_dates=True
-            # only when posting the invoice, because some users want to use the
-            # module account_invoice_start_end_dates WITHOUT the module
-            # sale_start_end_dates for a good reason.
-            if (
-                moveline.parent_state == "posted"
-                and moveline.display_type == "product"
-                and moveline.product_id.must_have_dates
-                and not moveline.start_date
-            ):
-                raise ValidationError(
-                    _(
-                        "Missing Start Date for invoice "
-                        "line with Product '%s' which has the "
-                        "property 'Must Have Start/End Dates'."
+
+            if moveline.parent_state == "posted":
+                # We enforce the presence of both dates only when posting the
+                # invoice, because the native mass edit writes one field at a time:
+                # setting the start date on a selection of draft move lines would
+                # otherwise always fail before their end date can be set.
+                if moveline.start_date and not moveline.end_date:
+                    raise ValidationError(
+                        _("Missing End Date for line '%s'.") % (moveline.display_name)
                     )
-                    % (moveline.product_id.display_name)
-                )
+                if moveline.end_date and not moveline.start_date:
+                    raise ValidationError(
+                        _("Missing Start Date for line '%s'.") % (moveline.display_name)
+                    )
+
+                # We enforce start_end+end_date when product_id.must_have_dates=True
+                # only when posting the invoice, because some users want to use the
+                # module account_invoice_start_end_dates WITHOUT the module
+                # sale_start_end_dates for a good reason.
+                if (
+                    moveline.display_type == "product"
+                    and moveline.product_id.must_have_dates
+                    and not moveline.start_date
+                ):
+                    raise ValidationError(
+                        _(
+                            "Missing Start Date for invoice "
+                            "line with Product '%s' which has the "
+                            "property 'Must Have Start/End Dates'."
+                        )
+                        % (moveline.product_id.display_name)
+                    )

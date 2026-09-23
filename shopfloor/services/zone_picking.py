@@ -12,7 +12,7 @@ from odoo.tools.float_utils import float_compare, float_is_zero
 from odoo.addons.base_rest.components.service import to_int
 from odoo.addons.component.core import Component
 
-from ..exceptions import CannotProcessMoreThanPlanned, ConcurentWorkOnTransfer
+from ..exceptions import ConcurentWorkOnTransfer
 from ..utils import to_float
 
 
@@ -752,7 +752,7 @@ class ZonePicking(Component):
             )
         elif move_lines:
             move_line = first(move_lines)
-            qty_done = self._get_prefill_qty(move_line, qty=(packaging.qty or 1.0))
+            qty_done = self.get_qty_picked(move_line, packaging)
             response = self._response_for_set_line_destination(
                 move_line, qty_done=qty_done
             )
@@ -806,7 +806,7 @@ class ZonePicking(Component):
                 response = self.list_move_lines()
             else:
                 move_line = first(move_lines)
-                qty_done = self._get_prefill_qty(move_line, qty=1.0)
+                qty_done = self.get_qty_picked(move_line)
                 response = self._response_for_set_line_destination(
                     move_line, qty_done=qty_done
                 )
@@ -957,18 +957,16 @@ class ZonePicking(Component):
                     continue
                 _move_line.qty_picked = move_line.quantity
                 move_lines |= _move_line
+        if quantity:
+            move_line._split_partial_quantity_to_be_picked(quantity)
         self._write_destination_on_lines(move_lines, location)
-
         try:
-            stock.mark_move_line_as_picked(move_lines, quantity, check_user=True)
-        except ConcurentWorkOnTransfer as error:
+            stock.mark_move_line_as_picked(move_lines, quantity)
+        except ConcurentWorkOnTransfer:
             values = {"qty_done": quantity} if quantity is not None else {}
             response = self._response_for_set_line_destination(
                 move_line,
-                message={
-                    "message_type": "error",
-                    "body": str(error),
-                },
+                message=self.msg_store.concurrent_work(),
                 **values,
             )
             return (location_changed, response)
@@ -1031,26 +1029,16 @@ class ZonePicking(Component):
             return (package_changed, response)
         # the quantity done is set to the passed quantity
         # but if we move a partial qty, we need to split the move line
+        if quantity:
+            move_line._split_partial_quantity_to_be_picked(quantity)
         stock = self._actions_for("stock")
         stock._lock_lines(move_line)
         try:
-            stock.mark_move_line_as_picked(
-                move_line, quantity, package, check_user=True
-            )
-        except ConcurentWorkOnTransfer as error:
+            stock.mark_move_line_as_picked(move_line, quantity, package)
+        except ConcurentWorkOnTransfer:
             response = self._response_for_set_line_destination(
                 move_line,
-                message={
-                    "message_type": "error",
-                    "body": str(error),
-                },
-                qty_done=quantity,
-            )
-            return (package_changed, response)
-        except CannotProcessMoreThanPlanned:
-            response = self._response_for_set_line_destination(
-                move_line,
-                message=self.msg_store.unable_to_pick_more(move_line.quantity),
+                message=self.msg_store.concurrent_work(),
                 qty_done=quantity,
             )
             return (package_changed, response)

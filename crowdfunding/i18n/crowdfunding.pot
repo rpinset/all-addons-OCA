@@ -29,6 +29,11 @@ msgid "Action Needed"
 msgstr ""
 
 #. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "All challenges"
+msgstr ""
+
+#. module: crowdfunding
 #: model_terms:ir.ui.view,arch_db:crowdfunding.pay_details
 msgid "Amount"
 msgstr ""
@@ -117,6 +122,11 @@ msgstr ""
 #. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__company_id
 msgid "Company"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list
+msgid "Completed challenges"
 msgstr ""
 
 #. module: crowdfunding
@@ -613,6 +623,11 @@ msgid ""
 msgstr ""
 
 #. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_list
+msgid "There are no active challenges as this time"
+msgstr ""
+
+#. module: crowdfunding
 #: model:ir.model.fields,help:crowdfunding.field_res_company__crowdfunding_product_id
 #: model:ir.model.fields,help:crowdfunding.field_res_config_settings__crowdfunding_product_id
 msgid "This product is used to create invoices and vendor bills."
@@ -681,6 +696,11 @@ msgid "Visible on current website"
 msgstr ""
 
 #. module: crowdfunding
+#: model:ir.model,name:crowdfunding.model_website
+msgid "Website"
+msgstr ""
+
+#. module: crowdfunding
 #: model:ir.model.fields,field_description:crowdfunding.field_crowdfunding_challenge__website_message_ids
 msgid "Website Messages"
 msgstr ""
@@ -725,6 +745,11 @@ msgstr ""
 #. module: crowdfunding
 #: model_terms:ir.ui.view,arch_db:crowdfunding.pay_partner_details
 msgid "Zip"
+msgstr ""
+
+#. module: crowdfunding
+#: model_terms:ir.ui.view,arch_db:crowdfunding.template_challenge_detail
+msgid "breadcrumb"
 msgstr ""
 
 #. module: crowdfunding

@@ -101,7 +101,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
         self.assert_response_scan_destination(
             response,
             package_level,
-            message=self.service.msg_store.no_location_found(),
+            message=self.service.msg_store.barcode_not_found(),
         )
         # Destination location not allowed
         customer_location = self.env.ref("stock.stock_location_customers")
@@ -292,7 +292,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
         self.assert_response_scan_destination(
             response,
             move_line,
-            message=self.service.msg_store.no_location_found(),
+            message=self.service.msg_store.barcode_not_found(),
         )
         # Destination location not allowed
         customer_location = self.env.ref("stock.stock_location_customers")
@@ -549,6 +549,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
         # set the backorder policy to 'never'
 
         picking = self._create_picking(lines=[(self.product_a, 10)])
+        picking.is_shopfloor_created = True
         picking.picking_type_id.sudo().create_backorder = "never"
         self._update_qty_in_location(picking.location_id, self.product_a, 20)
         # Reserve quantities
@@ -589,6 +590,7 @@ class LocationContentTransferSetDestinationXCase(LocationContentTransferCommonCa
         picking = self._create_picking(
             lines=[(self.product_a, 10), (self.product_b, 10)]
         )
+        picking.is_shopfloor_created = True
         picking.picking_type_id.sudo().create_backorder = "never"
         self._update_qty_in_location(picking.location_id, self.product_a, 20)
         self._update_qty_in_location(picking.location_id, self.product_b, 20)
