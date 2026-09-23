@@ -1,11 +1,11 @@
 {
     "name": "Attribute Set",
-    "version": "16.0.1.3.0",
+    "version": "16.0.1.4.0",
     "category": "Generic Modules/Others",
     "license": "AGPL-3",
     "author": "Akretion,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/odoo-pim",
-    "depends": ["base", "base_sparse_field"],
+    "depends": ["base", "mail", "base_sparse_field"],
     "data": [
         "security/ir.model.access.csv",
         "security/attribute_security.xml",

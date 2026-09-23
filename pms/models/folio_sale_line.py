@@ -369,10 +369,14 @@ class FolioSaleLine(models.Model):
             if record.display_type == "line_section":
                 record.section_id = record.id
             elif record.reservation_id:
+                # section_id is a Many2one, so only one section can be
+                # assigned. A reservation carrying duplicated sections would
+                # otherwise raise "Wrong value for
+                # folio.sale.line.section_id" and make the folio unreadable.
                 record.section_id = record.folio_id.sale_line_ids.filtered(
                     lambda r, rec=record: r.reservation_id == rec.reservation_id
                     and r.display_type == "line_section"
-                )
+                )[:1]
             else:
                 record.section_id = False
 
@@ -575,6 +579,12 @@ class FolioSaleLine(models.Model):
     @api.depends("reservation_line_ids", "service_line_ids", "service_id")
     def _compute_name(self):
         for record in self:
+            # Sections and notes get their name on creation and must keep it:
+            # generate_folio_sale_name() has nothing to build a name from for
+            # them (no reservation lines, no service lines, no service), so
+            # recomputing would blank it. Same guard _compute_tax_ids applies.
+            if record.display_type:
+                continue
             record.name = self.generate_folio_sale_name(
                 record.reservation_id,
                 record.product_id,

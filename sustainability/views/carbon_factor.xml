@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+    <record id="carbon_factor_tree" model="ir.ui.view">
+      <field name="name">carbon.factor.tree</field>
+      <field name="model">carbon.factor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="carbon_currency_id" invisible="1" />
+          <field name="carbon_compute_method" invisible="1" />
+          <field name="recent_value_id" invisible="1" />
+
+          <field name="name" />
+          <field
+                        name="carbon_value"
+                        attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                    />
+          <field
+                        name="carbon_currency_label"
+                        string=" "
+                        attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                    />
+          <field
+                        name="unit_label"
+                        attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                    />
+          <field name="uncertainty_percentage" widget="percentage" optional="show" />
+          <field name="carbon_database_id" optional="show" />
+          <field name="carbon_contributor_id" optional="show" />
+          <field name="country_id" optional="show" />
+          <field name="country_group_id" optional="show" />
+          <field name="root" optional="hide" />
+          <field name="parent_id" optional="hide" />
+          <field name="category" optional="show" />
+          <field name="carbon_date" optional="hide" />
+          <field name="carbon_compute_method" optional="hide" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="carbon_factor_filter" model="ir.ui.view">
+      <field name="name">carbon.factor.select</field>
+      <field name="model">carbon.factor</field>
+      <field name="arch" type="xml">
+        <search string="Search Emission Factor">
+          <field name="name" />
+          <field name="category" />
+          <field name="carbon_database_id" />
+          <field name="carbon_contributor_id" />
+          <field name="factor_value_type_id" string="Type" />
+          <field name="carbon_uom_id" />
+          <field name="country_id" />
+          <field name="country_group_id" />
+          <filter
+                        domain="[('carbon_compute_method', '=', 'monetary')]"
+                        name="monetary"
+                        string="Monetary"
+                    />
+          <filter
+                        domain="[('carbon_compute_method', '=', 'physical')]"
+                        name="physical"
+                        string="Physical"
+                    />
+          <separator />
+          <filter
+                        domain="[('ghg_view_mode', '=', True)]"
+                        name="ghg"
+                        string="Detailed by gas"
+                    />
+          <filter
+                        domain="[('ghg_view_mode', '=', False)]"
+                        name="physical"
+                        string="Not detailed by gas"
+                    />
+          <separator />
+          <filter
+                        domain="[('carbon_line_origin_ids', '!=', False)]"
+                        name="used_in_computation"
+                        string="Used in computation"
+                    />
+          <separator />
+          <filter string="Archived" name="archived" domain="[('active', '=', False)]" />
+          <group expand="0" string="Group By">
+            <filter string="Root" name="by_root" context="{'group_by':'root'}" />
+            <filter
+                            string="Parent"
+                            name="by_parent_id"
+                            context="{'group_by':'parent_id'}"
+                        />
+            <filter
+                            string="Category"
+                            name="by_category"
+                            context="{'group_by':'category'}"
+                        />
+            <separator />
+            <filter
+                            string="Compute method"
+                            name="by_carbon_compute_method"
+                            context="{'group_by':'carbon_compute_method'}"
+                        />
+            <filter
+                            string="Database"
+                            name="by_carbon_database_id"
+                            context="{'group_by':'carbon_database_id'}"
+                        />
+            <filter
+                            string="Contributor"
+                            name="by_carbon_contributor_id"
+                            context="{'group_by':'carbon_contributor_id'}"
+                        />
+            <filter
+                            string="Uncertainty"
+                            name="by_uncertainty_percentage"
+                            context="{'group_by':'uncertainty_percentage'}"
+                        />
+            <filter
+                            string="Type"
+                            name="by_factor_value_type_id"
+                            context="{'group_by':'factor_value_type_id'}"
+                        />
+            <filter
+                            string="Create date"
+                            name="by_create_date"
+                            context="{'group_by':'create_date'}"
+                        />
+            <filter
+                            string="Detailed by gas"
+                            name="by_ghg_view_mode"
+                            context="{'group_by':'ghg_view_mode'}"
+                        />
+            <filter
+                            string="Unit of measure"
+                            name="by_carbon_uom_id"
+                            context="{'group_by':'carbon_uom_id'}"
+                        />
+            <separator />
+            <filter
+                            string="Country"
+                            name="by_country_id"
+                            context="{'group_by':'country_id'}"
+                        />
+            <filter
+                            string="Country Group"
+                            name="by_country_group_id"
+                            context="{'group_by':'country_group_id'}"
+                        />
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="carbon_factor_form" model="ir.ui.view">
+            <field name="name">carbon.factor.form</field>
+            <field name="model">carbon.factor</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field invisible="1" name="carbon_currency_id" />
+                    <field invisible="1" name="recent_value_id" />
+                    <field invisible="1" name="has_invalid_value" />
+                    <field invisible="1" name="active" />
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <!-- This is getting auto populated by the _carbon_get_button_list method -->
+                        </div>
+                        <widget
+                            name="web_ribbon"
+                            title="Archived"
+                            bg_color="bg-danger"
+                            attrs="{'invisible': [('active', '=', True)]}"
+                        />
+            <div class="d-flex align-items-center">
+              <div class="w-75">
+                <label for="name" />
+                <h1>
+                  <field name="name" placeholder="e.g. Electric Train" widget="text" />
+                </h1>
+              </div>
+              <h2 class="ms-auto">
+                <field
+                                    name="carbon_value"
+                                    attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                                />
+                <field
+                                    name="carbon_currency_label"
+                                    attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                                    class="ms-2"
+                                />
+                <field
+                                    name="unit_label"
+                                    attrs="{'invisible': ['|', ('recent_value_id', '=', False), ('carbon_compute_method', '=', False)]}"
+                                    class="ms-1"
+                                />
+              </h2>
+            </div>
+            <group>
+              <group>
+                <field name="root" />
+              </group>
+              <group>
+                <field name="parent_id" />
+              </group>
+            </group>
+            <group>
+              <field name="category" />
+            </group>
+            <group>
+              <group>
+                <field name="carbon_compute_method" />
+                <field name="carbon_database_id" />
+              </group>
+              <group>
+                <field name="uncertainty_percentage" widget="percentage" />
+                <field name="carbon_contributor_id" />
+              </group>
+              <group>
+                <field name="country_id" />
+                <field name="required_type_ids" widget="many2many_tags" />
+              </group>
+              <group>
+                <field name="country_group_id" />
+                <field name="comment" placeholder="Extra Comments..." />
+              </group>
+            </group>
+
+            <notebook attrs="{'invisible': [('carbon_compute_method', '=', False)]}">
+              <page string="Values" name="page_values">
+                <group>
+                  <field name="ghg_view_mode" widget="boolean_toggle" />
+                </group>
+                <div
+                                    class="alert alert-danger col-6"
+                                    role="alert"
+                                    attrs="{'invisible': [('has_invalid_value', '=', False)]}"
+                                    colspan="2"
+                                >
+                  Some values miss a currency or a unit of measure
+                  <br />
+                  Please fix them before using this factor.
+                </div>
+                <field name="value_ids" colspan="2" nolabel="1">
+                  <tree editable="bottom">
+                    <field name="date" />
+                    <field name="type_id" />
+                    <field name="is_carbon_value_computed" invisible="1" />
+                    <field
+                                            name="carbon_value"
+                                            force_save="1"
+                                            decoration-muted="is_carbon_value_computed"
+                                            decoration-it="is_carbon_value_computed"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '=', True)]}"
+                                        />
+                    <field
+                                            name="carbon_currency_label"
+                                            string=" "
+                                            attrs="{'column_invisible': [('parent.ghg_view_mode', '=', True)]}"
+                                        />
+
+                    <field name="is_ghg_detailed_value" invisible="1" />
+                    <field
+                                            name="co2_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="ch4_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="n2o_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="sf6_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="hfc_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="pfc_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="nf3_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+                    <field
+                                            name="other_ghg_value"
+                                            force_save="1"
+                                            attrs="{'readonly': [('is_carbon_value_computed', '!=', True), ('carbon_value', '!=', 0)], 'column_invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                            decoration-muted="is_ghg_detailed_value"
+                                            decoration-it="is_ghg_detailed_value"
+                                        />
+
+                    <field
+                                            name="carbon_uom_id"
+                                            attrs="{
+                                            'column_invisible': [('parent.carbon_compute_method', '!=', 'physical')],
+                                            'required': [('parent.carbon_compute_method', '=', 'physical')],
+                                        }"
+                                        />
+                    <field
+                                            name="carbon_monetary_currency_id"
+                                            attrs="{
+                                            'column_invisible': [('parent.carbon_compute_method', '!=', 'monetary')],
+                                            'required': [('parent.carbon_compute_method', '=', 'monetary')],
+                                        }"
+                                        />
+                    <field name="comment" />
+
+                    <button
+                                            type="object"
+                                            name="action_reset_precision_value"
+                                            icon="fa-solid fa-eraser"
+                                            title="Erase the precision value"
+                                            confirm="Do you really want to erase the precision value?"
+                                            attrs="{'invisible': [('parent.ghg_view_mode', '=', False)]}"
+                                        />
+                  </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" />
+            <field name="activity_ids" />
+            <field name="message_ids" />
+          </div>
+        </form>
+      </field>
+    </record>
+        <record id="carbon_factor_view_graph" model="ir.ui.view">
+            <field name="name">carbon.factor.graph.view</field>
+            <field name="model">carbon.factor</field>
+            <field name="arch" type="xml">
+                <graph sample="1" string="Emission Factor Analysis">
+                    <field name="name" />
+                    <field name="carbon_value" type="measure" />
+                    <field invisible="1" name="uncertainty_percentage" />
+                </graph>
+            </field>
+        </record>
+        <record id="carbon_factor_view_pivot" model="ir.ui.view">
+            <field name="name">carbon.factor.pivot.view</field>
+            <field name="model">carbon.factor</field>
+            <field name="arch" type="xml">
+                <pivot sample="1" string="Emission Factor Analysis">
+                    <field name="name" type="col" />
+                    <field interval="month" name="carbon_date" type="row" />
+                    <field name="carbon_value" type="measure" />
+                </pivot>
+            </field>
+        </record>
+
+        <record id="carbon_factor_view_kanban" model="ir.ui.view">
+            <field name="name">carbon.factor.kanban.view</field>
+            <field name="model">carbon.factor</field>
+            <field name="arch" type="xml">
+                <kanban
+                    create="true"
+                    can_open="1"
+                    highlight_color="color"
+                    default_group_by="carbon_uom_id"
+                    default_order="sequence, id desc"
+                    group_create="false"
+                >
+                    <templates>
+                        <t t-name="menu" t-if="!selection_mode">
+                            <div role="separator" class="dropdown-divider" />
+                            <field name="color" widget="kanban_color_picker" />
+                        </t>
+                        <t t-name="card">
+                            <main>
+                                <field name="name" class="fw-bold fs-5" />
+                                <div class="text-muted d-flex flex-column">
+                                    <field name="parent_id" />
+                                    <span t-if="record.carbon_database_id">
+                                        DB: <field name="carbon_database_id" />
+                                    </span>
+                                </div>
+                            </main>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="carbon_factor_action_reporting" model="ir.actions.act_window">
+            <field name="name">Emission Factors Analysis</field>
+            <field name="res_model">carbon.factor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">graph,pivot</field>
+        </record>
+        <record id="carbon_factor_action" model="ir.actions.act_window">
+            <field name="name">Emission Factors</field>
+            <field name="res_model">carbon.factor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,kanban,hierarchy,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_neutral_face">
+                    This is the emission factors dashboard
+                </p>
+                <p>
+                    You can now create your first emission factor<br />
+                </p>
+            </field>
+        </record>
+
+    <record id="action_recompute_carbon_carbon_factor" model="ir.actions.server">
+        <field name="name">Re-compute CO2</field>
+        <field name="model_id" ref="sustainability.model_carbon_factor" />
+        <field name="binding_model_id" ref="sustainability.model_carbon_factor" />
+        <field name="state">code</field>
+        <field name="code">action = records.action_carbon_recompute_entries()</field>
+    </record>
+    </data>
+</odoo>

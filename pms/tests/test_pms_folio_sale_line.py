@@ -1290,3 +1290,80 @@ class TestPmsFolioSaleLine(TestPms):
             "Folio sale lines should not be generated for a out "
             "of service type reservation",
         )
+
+    def _create_reservation_with_section(self):
+        """Return a reservation and the section line generated for it."""
+        reservation = self.env["pms.reservation"].create(
+            {
+                "checkin": fields.date.today(),
+                "checkout": fields.date.today() + datetime.timedelta(days=2),
+                "room_type_id": self.room_type_double.id,
+                "partner_id": self.env.ref("base.res_partner_12").id,
+                "pms_property_id": self.pms_property1.id,
+                "pricelist_id": self.pricelist1.id,
+                "sale_channel_origin_id": self.sale_channel_direct1.id,
+            }
+        )
+        section = reservation.folio_id.sale_line_ids.filtered(
+            lambda line: line.display_type == "line_section"
+        )
+        return reservation, section
+
+    def test_section_name_kept_on_recompute(self):
+        """
+        check that recomputing the name of a section does not blank it
+        ------------
+        A section is created with the reservation name and has nothing to
+        build a name from, so recomputing it used to leave it empty. An
+        empty section name breaks _get_reservation_sale_lines, which looks
+        its section up by name, creating a new one on every pass.
+        """
+        # ARRANGE
+        reservation, section = self._create_reservation_with_section()
+        self.assertEqual(
+            section.name,
+            reservation.name,
+            "The section should be named after the reservation",
+        )
+
+        # ACT
+        section._compute_name()
+
+        # ASSERT
+        self.assertEqual(
+            section.name,
+            reservation.name,
+            "Recomputing the name of a section should not blank it",
+        )
+
+    def test_section_id_with_duplicated_sections(self):
+        """
+        check that a duplicated section does not break the folio sale lines
+        ------------
+        section_id is a Many2one, so a reservation carrying more than one
+        section used to raise "Wrong value for folio.sale.line.section_id"
+        and make the whole folio unreadable.
+        """
+        # ARRANGE
+        reservation, section = self._create_reservation_with_section()
+        self.env["folio.sale.line"].create(
+            {
+                "folio_id": reservation.folio_id.id,
+                "reservation_id": reservation.id,
+                "display_type": "line_section",
+                "name": reservation.name,
+            }
+        )
+        room_line = reservation.folio_id.sale_line_ids.filtered(
+            lambda line: not line.display_type
+        )
+
+        # ACT
+        room_line.invalidate_recordset(["section_id"])
+
+        # ASSERT
+        self.assertEqual(
+            room_line.section_id,
+            section,
+            "The sale line should point at the first section of the reservation",
+        )
