@@ -310,6 +310,55 @@ class TestHrEmployeeCalendarPlanning(TestHrEmployeeCalendarPlanningCommon):
         )
         self.assertEqual(res_2020[self.employee.id][0][1], 4.0)
 
+    def test_search_flexible_hours(self):
+        self.calendar1.write(
+            {
+                "company_id": False,
+                "stored_full_time_required_hours": 40,
+                "stored_hours_per_day": 8,
+                "stored_hours_per_week": 40,
+            }
+        )
+        self.assertFalse(self.calendar1.stored_flexible_hours)
+        self.calendar2.write(
+            {
+                "company_id": False,
+                "schedule_type": "flexible",
+                "stored_full_time_required_hours": 20,
+                "stored_hours_per_day": 4,
+                "stored_hours_per_week": 20,
+            }
+        )
+        self.assertTrue(self.calendar2.stored_flexible_hours)
+        calendars = self.env["resource.calendar"].search(
+            [
+                ("id", "in", (self.calendar1 | self.calendar2).ids),
+                ("flexible_hours", "=", False),
+            ]
+        )
+        self.assertEqual(calendars, self.calendar1)
+        calendars = self.env["resource.calendar"].search(
+            [
+                ("id", "in", (self.calendar1 | self.calendar2).ids),
+                ("full_time_required_hours", "=", 40),
+            ]
+        )
+        self.assertEqual(calendars, self.calendar1)
+        calendars = self.env["resource.calendar"].search(
+            [
+                ("id", "in", (self.calendar1 | self.calendar2).ids),
+                ("hours_per_day", "=", 8),
+            ]
+        )
+        self.assertEqual(calendars, self.calendar1)
+        calendars = self.env["resource.calendar"].search(
+            [
+                ("id", "in", (self.calendar1 | self.calendar2).ids),
+                ("hours_per_week", "=", 40),
+            ]
+        )
+        self.assertEqual(calendars, self.calendar1)
+
     def test_post_install_hook(self):
         self.global_leave1.date_from = self.employee.create_date.date()
         self.global_leave1.date_to = self.employee.create_date.date()

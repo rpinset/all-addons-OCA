@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
+from odoo.exceptions import AccessError
 from odoo.fields import Domain
 
 
@@ -129,6 +130,75 @@ class TierDefinition(models.Model):
     def onchange_review_type(self):
         self.reviewer_id = None
         self.reviewer_group_id = None
+
+    def _reviewers_without_model_access(self, model_name, users):
+        """Return the subset of ``users`` that cannot read ``model_name``.
+
+        The check is model-level only (``ir.model.access``). It does not
+        evaluate per-record ``ir.rule`` restrictions, so callers should
+        treat a non-empty result as "*probably* no access" rather than a
+        guarantee -- record rules can grant or revoke access dynamically
+        at runtime.
+        """
+        Model = self.env.get(model_name)
+        if Model is None:
+            return self.env["res.users"]
+        no_access = self.env["res.users"]
+        for user in users:
+            try:
+                Model.with_user(user).check_access("read")
+            except AccessError:
+                no_access |= user
+        return no_access
+
+    def _reviewers_to_check_for_access(self):
+        """Return the user recordset whose model access we can check ahead
+        of time for this definition. Skip review types where the reviewer
+        only resolves at validation time (``field`` reads off the record)."""
+        self.ensure_one()
+        if self.review_type == "individual":
+            return self.reviewer_id
+        if self.review_type == "group":
+            return self.reviewer_group_id.user_ids
+        return self.env["res.users"]
+
+    @api.onchange("review_type", "reviewer_id", "reviewer_group_id", "model_id")
+    def _onchange_warn_reviewer_access(self):
+        """Advisory warning when an assigned reviewer cannot read the model.
+
+        Non-blocking: legitimate workflows (admin is about to grant the
+        group, ir.rules expose specific records, ...) still save. The
+        warning just makes it impossible to misconfigure this silently.
+        """
+        # Read the model name off the m2o directly rather than via the
+        # stored related ``self.model`` -- on ``.new()`` records the
+        # related can still be empty depending on cache state.
+        model_name = self.model_id.model
+        if not (model_name and self.review_type):
+            return
+        users = self._reviewers_to_check_for_access()
+        if not users:
+            return
+        no_access = self._reviewers_without_model_access(model_name, users)
+        if not no_access:
+            return
+        return {
+            "warning": {
+                "title": self.env._("Reviewer may lack access"),
+                "message": self.env._(
+                    "The following reviewer(s) may not be able to read "
+                    "'%(model)s' records and so cannot act on the reviews "
+                    "this tier will create: %(reviewers)s.\n\n"
+                    "This is a best-effort check against model-level access "
+                    "rights only -- record rules may still grant or revoke "
+                    "access at runtime. Make sure these users belong to a "
+                    "group with read access on the target model, or pick "
+                    "different reviewers.",
+                    model=self.model_id.name or model_name,
+                    reviewers=", ".join(no_access.mapped("display_name")),
+                ),
+            }
+        }
 
     @api.depends("review_type", "model_id")
     def _compute_domain_reviewer_field(self):

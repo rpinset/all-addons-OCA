@@ -226,3 +226,20 @@ class TestMisReportInstanceDataSources(common.TransactionCase):
         self.p1.source_aml_model_id = aml_model.id
         matrix = self.instance._compute_matrix()
         assert_matrix(matrix, [[11, 13], [11, 30]])
+
+    def test_get_account_names(self):
+        matrix = self.instance._compute_matrix()
+
+        account = self.account_in
+        account_name = account.name
+
+        name = matrix.get_account_name(account.id)
+
+        self.assertEqual(name, account_name)
+
+        account.active = False
+
+        matrix = self.instance._compute_matrix()
+
+        name = matrix.get_account_name(account.id)
+        self.assertEqual(name, account_name)

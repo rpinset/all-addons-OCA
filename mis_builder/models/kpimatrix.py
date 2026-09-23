@@ -149,7 +149,7 @@ class KpiMatrix:
         lang_model = env["res.lang"]
         self.lang = lang_model._lang_get(env.user.lang)
         self._style_model = env["mis.report.style"]
-        self._account_model = env[account_model]
+        self._account_model = env[account_model].with_context(active_test=False)
         self._companies = companies
         # data structures
         # { kpi: KpiMatrixRow }

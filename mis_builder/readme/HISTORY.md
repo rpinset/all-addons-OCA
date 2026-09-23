@@ -1,3 +1,10 @@
+## 19.0.1.2.1 (2026-09-21)
+
+### Misc
+
+- [#831](https://github.com/OCA/mis-builder/issues/831)
+
+
 ## 18.0.1.7.2 (2025-10-29)
 
 ### Bugfixes

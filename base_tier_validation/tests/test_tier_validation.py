@@ -675,6 +675,105 @@ class TierTierValidation(CommonTierValidation):
         result = self.test_user_2.with_user(self.test_user_2).review_user_count()
         self.assertEqual(result, [])
 
+    def _revoke_tester_model_access(self):
+        """Make the tester model unreadable for non-admin users by
+        unlinking its public ACL and clearing the ACL cache so the next
+        check_access actually re-evaluates against the new state."""
+        self.env["ir.model.access"].search(
+            Domain("model_id", "=", self.tester_model.id)
+        ).unlink()
+        self.env["ir.model.access"].call_cache_clearing_methods()
+
+    def test_definition_onchange_warns_when_reviewer_lacks_access(self):
+        """Setting an individual reviewer with no read access on the target
+        model returns a non-blocking onchange warning."""
+        # Revoke first so the per-record check_access cache for test_user_2
+        # never gets populated with a stale "allowed" result.
+        self._revoke_tester_model_access()
+        definition = self.tier_def_obj.new(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+            }
+        )
+        warning = definition._onchange_warn_reviewer_access()
+        self.assertIsNotNone(warning)
+        self.assertIn(self.test_user_2.display_name, warning["warning"]["message"])
+
+    def test_definition_onchange_warns_when_group_member_lacks_access(self):
+        """Group reviewer: if any member of the assigned group lacks read
+        access on the target model, the onchange warns and names them."""
+        # Put test_user_2 in a fresh group; revoke the public ACL.
+        group = self.env["res.groups"].create(
+            {"name": "Tier Reviewers", "user_ids": [Command.link(self.test_user_2.id)]}
+        )
+        self._revoke_tester_model_access()
+        definition = self.tier_def_obj.new(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "group",
+                "reviewer_group_id": group.id,
+            }
+        )
+        warning = definition._onchange_warn_reviewer_access()
+        self.assertIsNotNone(warning)
+        self.assertIn(self.test_user_2.display_name, warning["warning"]["message"])
+
+    def test_definition_onchange_skips_field_review_type(self):
+        """The 'field' review type cannot be checked ahead of time -- the
+        reviewer only resolves at validation time -- so the onchange
+        returns no warning even if the ACL would block."""
+        self._revoke_tester_model_access()
+        definition = self.tier_def_obj.new(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "field",
+            }
+        )
+        self.assertIsNone(definition._onchange_warn_reviewer_access())
+
+    def test_definition_onchange_returns_nothing_when_no_problem(self):
+        """The onchange must stay silent when there's nothing to warn
+        about. Covers the three early-return branches:
+
+        - no model selected yet (``model_id`` empty);
+        - no reviewer set yet on a model that has one;
+        - reviewer has model access (default ACL in place).
+        """
+        # No model -> early return on `if not (model_name and ...):`.
+        definition = self.tier_def_obj.new({"review_type": "individual"})
+        self.assertIsNone(definition._onchange_warn_reviewer_access())
+        # No reviewer -> early return on `if not users:`.
+        definition = self.tier_def_obj.new(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+            }
+        )
+        self.assertIsNone(definition._onchange_warn_reviewer_access())
+        # Reviewer with access (default public ACL is in place) -> the
+        # access check finds nothing to flag and the onchange returns
+        # None at the `if not no_access:` exit.
+        definition = self.tier_def_obj.new(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+            }
+        )
+        self.assertIsNone(definition._onchange_warn_reviewer_access())
+
+    def test_reviewers_without_model_access_unknown_model(self):
+        """When the target model name doesn't resolve (e.g. a stale
+        reference after an uninstall), the helper returns an empty
+        res.users recordset without raising."""
+        result = self.tier_def_obj._reviewers_without_model_access(
+            "this.model.does.not.exist", self.test_user_2
+        )
+        self.assertFalse(result)
+        self.assertEqual(result._name, "res.users")
+
     def test_17_search_records_no_validation(self):
         """Search for records that have no validation process started"""
         records = self.env["tier.validation.tester"].search(

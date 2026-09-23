@@ -56,10 +56,40 @@ class ResourceCalendar(models.Model):
     )
     # We set the field to store=False; we want it to be computed whenever that data
     # needs to be accessed.
-    flexible_hours = fields.Boolean(store=False)
-    full_time_required_hours = fields.Float(store=False)
-    hours_per_day = fields.Float(store=False)
-    hours_per_week = fields.Float(store=False)
+    flexible_hours = fields.Boolean(
+        store=False,
+        search="_search_flexible_hours",
+    )
+    full_time_required_hours = fields.Float(
+        store=False,
+        search="_search_full_time_required_hours",
+    )
+    hours_per_day = fields.Float(
+        store=False,
+        search="_search_hours_per_day",
+    )
+    hours_per_week = fields.Float(
+        store=False,
+        search="_search_hours_per_week",
+    )
+
+    def _search_flexible_hours(self, operator, value):
+        """Search the persisted value used by the computed field.
+
+        ``flexible_hours`` can depend on the planning dates in the context, so
+        it cannot be stored. Domains still need to be able to use the field,
+        for example the domain on Helpdesk teams' working hours.
+        """
+        return [("stored_flexible_hours", operator, value)]
+
+    def _search_full_time_required_hours(self, operator, value):
+        return [("stored_full_time_required_hours", operator, value)]
+
+    def _search_hours_per_day(self, operator, value):
+        return [("stored_hours_per_day", operator, value)]
+
+    def _search_hours_per_week(self, operator, value):
+        return [("stored_hours_per_week", operator, value)]
 
     @api.depends("stored_hours_per_week", "stored_full_time_required_hours")
     def _compute_work_time_rate(self):

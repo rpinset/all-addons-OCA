@@ -626,6 +626,12 @@ msgid "Reviewer group"
 msgstr "Grupo de revisores"
 
 #. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_definition.py:0
+msgid "Reviewer may lack access"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__reviewer_ids
 msgid "Reviewers"
@@ -667,6 +673,19 @@ msgstr "Usuario específico"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__status
 msgid "Status"
 msgstr "Estatus"
+
+#. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_definition.py:0
+msgid ""
+"The following reviewer(s) may not be able to read '%(model)s' records and so "
+"cannot act on the reviews this tier will create: %(reviewers)s.\n"
+"\n"
+"This is a best-effort check against model-level access rights only -- record "
+"rules may still grant or revoke access at runtime. Make sure these users "
+"belong to a group with read access on the target model, or pick different "
+"reviewers."
+msgstr ""
 
 #. module: base_tier_validation
 #. odoo-python
