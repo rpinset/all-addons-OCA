@@ -974,7 +974,11 @@ addon | version | maintainers | summary
 [brand](brand/) | 17.0.1.1.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This is a base addon for brand modules. It adds the brand object and its menu and define an abstract model to be inherited from branded objects
 [partner_brand](partner_brand/) | 17.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Define registered mark in partners according to brand settings
 [product_brand](product_brand/) | 17.0.1.2.0 |  | Product Brand Manager
+[product_brand_mrp](product_brand_mrp/) | 17.0.1.0.0 |  | This module allows to work with product_brand in MRP.
 [product_brand_purchase](product_brand_purchase/) | 17.0.1.0.0 |  | This module allows to work with product_brand in purchase reports.
+[product_brand_stock](product_brand_stock/) | 17.0.1.0.0 |  | This module allows to work with product_brand in Stock.
+[product_brand_stock_account](product_brand_stock_account/) | 17.0.1.0.0 |  | This module allows to work with product_brand in Stock Account.
+[product_brand_tag](product_brand_tag/) | 17.0.1.0.0 |  | Add tags to product brand
 [sale_brand](sale_brand/) | 17.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Send branded sales orders
 
 [//]: # (end addons)
@@ -1868,7 +1872,7 @@ addon | version | maintainers | summary
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 17.0.1.0.0 |  | Display attributes images in shop product detail
 [website_sale_product_matrix](website_sale_product_matrix/) | 17.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Product matrix in eCommerce
 [website_sale_product_matrix_hide_price](website_sale_product_matrix_hide_price/) | 17.0.1.0.0 |  | Hide product prices on the shop
-[website_sale_product_minimal_price](website_sale_product_minimal_price/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Display minimal price for products that has variants
+[website_sale_product_minimal_price](website_sale_product_minimal_price/) | 17.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Display minimal price for products that has variants
 [website_sale_product_minimal_price_hide_price](website_sale_product_minimal_price_hide_price/) | 17.0.1.0.0 |  | Hide the product price scale when website prices are hidden
 [website_sale_product_multi_website](website_sale_product_multi_website/) | 17.0.1.0.2 |  | Show products in many websites
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 17.0.1.0.0 |  | Display product reference in e-commerce
@@ -3075,7 +3079,7 @@ addon | version | maintainers | summary
 [l10n_br_purchase_request](l10n_br_purchase_request/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Purchase Request Brazilian Localization Purchase Request
 [l10n_br_purchase_requisition](l10n_br_purchase_requisition/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Purchase Requisition
 [l10n_br_resource](l10n_br_resource/) | 17.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/lfdivino'><img src='https://github.com/lfdivino.png' width='32' height='32' style='border-radius:50%;' alt='lfdivino'/></a> | This module extend core resource to create important brazilian informations. Define a Brazilian calendar and some tools to compute dates used in financial and payroll modules
-[l10n_br_sale](l10n_br_sale/) | 17.0.1.1.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Sale
+[l10n_br_sale](l10n_br_sale/) | 17.0.1.1.2 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Sale
 [l10n_br_sale_blanket_order](l10n_br_sale_blanket_order/) | 17.0.1.2.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Sale Blanket Order
 [l10n_br_sale_commission](l10n_br_sale_commission/) | 17.0.1.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Brazilian Localization of Sales Commissions
 [l10n_br_sale_invoice_plan](l10n_br_sale_invoice_plan/) | 17.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Sale Invoice Plan
@@ -3503,6 +3507,7 @@ addon | version | maintainers | summary
 [l10n_nl_bank](l10n_nl_bank/) | 17.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_partner_name](l10n_nl_partner_name/) | 17.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
 [l10n_nl_tax_statement](l10n_nl_tax_statement/) | 17.0.1.0.0 |  | Netherlands BTW Statement
+[l10n_nl_tax_statement_icp](l10n_nl_tax_statement_icp/) | 17.0.1.0.0 |  | Netherlands ICP Statement
 [l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 17.0.1.1.0 |  | Export XAF auditfiles for Dutch tax authorities
 
 [//]: # (end addons)
@@ -3639,7 +3644,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.3.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.6.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> <a href='https://github.com/mcojocaru'><img src='https://github.com/mcojocaru.png' width='32' height='32' style='border-radius:50%;' alt='mcojocaru'/></a> <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.4.0 | <a href='https://github.com/dhongu'><img src='https://github.com/dhongu.png' width='32' height='32' style='border-radius:50%;' alt='dhongu'/></a> <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - Stock Report (Fișă Magazie)
-[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.7.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - VAT on Payment
+[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.9.0 | <a href='https://github.com/feketemihai'><img src='https://github.com/feketemihai.png' width='32' height='32' style='border-radius:50%;' alt='feketemihai'/></a> | Romania - VAT on Payment
 
 [//]: # (end addons)
 
@@ -5918,7 +5923,7 @@ addon | version | maintainers | summary
 [sale_global_discount](sale_global_discount/) | 17.0.1.0.0 |  | Sale Global Discount
 [sale_invoice_blocking](sale_invoice_blocking/) | 17.0.1.0.1 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
-[sale_invoice_plan](sale_invoice_plan/) | 17.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
+[sale_invoice_plan](sale_invoice_plan/) | 17.0.1.1.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 17.0.2.0.1 |  | Sales Management: let the user choose the invoice policy on the order
 [sale_last_price_info](sale_last_price_info/) | 17.0.1.0.0 |  | Product Last Price Info - Sale
 [sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
@@ -7011,6 +7016,7 @@ addon | version | maintainers | summary
 [stock_exception](stock_exception/) | 17.0.1.0.0 |  | Custom exceptions on stock picking
 [stock_helper](stock_helper/) | 17.0.1.1.1 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 17.0.1.3.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 17.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 17.0.1.0.0 |  | More filters for inventory adjustments
 [stock_location_lockdown](stock_location_lockdown/) | 17.0.1.0.0 |  | Prevent to add stock on locked locations
@@ -7034,7 +7040,7 @@ addon | version | maintainers | summary
 [stock_route_mto](stock_route_mto/) | 17.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 17.0.1.0.0 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 17.0.1.2.0 |  | Get product quantities in a secondary unit
-[stock_vlm_mgmt](stock_vlm_mgmt/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light self contained alternative for VLM integrations
+[stock_vlm_mgmt](stock_vlm_mgmt/) | 17.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light self contained alternative for VLM integrations
 [stock_vlm_mgmt_kardex](stock_vlm_mgmt_kardex/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Light alternative for Kardex VLM integrations
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
 
@@ -7345,6 +7351,62 @@ that explains its license.
 OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
 organization whose mission is to support the collaborative development of Odoo features
 and promote its widespread use.
+
+
+---
+
+## From OCA/sustainability
+
+
+<!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
+[![Pre-commit Status](https://github.com/sustainability-suite/sustainability-odoo/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/sustainability-suite/sustainability-odoo/actions/workflows/pre-commit.yml?query=branch%3A17.0)
+[![Build Status](https://github.com/sustainability-suite/sustainability-odoo/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/sustainability-suite/sustainability-odoo/actions/workflows/test.yml?query=branch%3A17.0)
+[![codecov](https://codecov.io/gh/sustainability-suite/sustainability-odoo/branch/17.0/graph/badge.svg)](https://codecov.io/gh/sustainability-suite/sustainability-odoo)
+<!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
+
+<!-- /!\ do not modify above this line -->
+
+# Sustainability
+
+The Odoo Sustainability Module is designed to seamlessly integrate sustainability management and the CO2 equivalent emissions footprint computation into your Odoo ERP system.
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sustainability](sustainability/) | 17.0.2.3.2 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> <a href='https://github.com/bonnetadam'><img src='https://github.com/bonnetadam.png' width='32' height='32' style='border-radius:50%;' alt='bonnetadam'/></a> <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Base module to track CO2 equivalent in accounting, Sustainability, GHG Protocol, CSRD Directive, BEGES, ADEME, ISO format, Action Plan, Emission Factors, carbon CO2 footprint computation, Analytical accounting, Decarbonization
+[sustainability_account_asset_management](sustainability_account_asset_management/) | 17.0.1.0.0 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> | Glue module to make co2 module compatible with assets management from OCA
+[sustainability_employee_commuting](sustainability_employee_commuting/) | 17.0.1.1.4 | <a href='https://github.com/bonnetadam'><img src='https://github.com/bonnetadam.png' width='32' height='32' style='border-radius:50%;' alt='bonnetadam'/></a> <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Module for employee commuting co2
+[sustainability_hr_expense_report](sustainability_hr_expense_report/) | 17.0.1.2.0 | <a href='https://github.com/bonnetadam'><img src='https://github.com/bonnetadam.png' width='32' height='32' style='border-radius:50%;' alt='bonnetadam'/></a> | Provide CO2 accounting data for expense reports
+[sustainability_mis_builder](sustainability_mis_builder/) | 17.0.1.0.0 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> | Provide CO2e accounting lines data for MIS builder reports
+[sustainability_point_of_sale](sustainability_point_of_sale/) | 17.0.1.0.0 | <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Sustainability Point of Sale
+[sustainability_product_label_print](sustainability_product_label_print/) | 17.0.1.0.0 | <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Sustainability Product Label Print
+[sustainability_purchase](sustainability_purchase/) | 17.0.2.0.0 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> <a href='https://github.com/bonnetadam'><img src='https://github.com/bonnetadam.png' width='32' height='32' style='border-radius:50%;' alt='bonnetadam'/></a> <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Glue module for sustainability & purchase modules
+[sustainability_purchase_stock](sustainability_purchase_stock/) | 17.0.1.1.0 | <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Sustainability Purchase Stock
+[sustainability_spreadsheet_dashboard](sustainability_spreadsheet_dashboard/) | 17.0.1.0.0 | <a href='https://github.com/nico-darnis'><img src='https://github.com/nico-darnis.png' width='32' height='32' style='border-radius:50%;' alt='nico-darnis'/></a> | Sustainability Spreadsheet Dashboard
+[sustainability_stock](sustainability_stock/) | 17.0.2.0.0 | <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Sustainability Inventory
+[sustainability_website_sale](sustainability_website_sale/) | 17.0.1.0.0 | <a href='https://github.com/jacopobacci'><img src='https://github.com/jacopobacci.png' width='32' height='32' style='border-radius:50%;' alt='jacopobacci'/></a> | Sustainability eCommerce
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to MCO2
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+<!-- /!\ Non OCA Context : Set here the full description of your organization. -->
 
 
 ---

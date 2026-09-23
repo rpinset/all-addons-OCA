@@ -1,0 +1,15 @@
+{
+    "name": "Sustainability: Account Asset Management OCA",
+    "summary": "Glue module to make co2 module compatible with assets management from OCA",
+    "version": "17.0.1.0.0",
+    "author": "MCO2, Open Net Sàrl",
+    "maintainers": ["jguenat"],
+    "development_status": "Alpha",
+    "category": "Accounting/Sustainability",
+    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "depends": ["account_asset_management", "sustainability"],
+    "installable": True,
+    "auto_install": False,
+    "license": "AGPL-3",
+    "application": False,
+}
