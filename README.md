@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-09-20 17:44 UTC** (elapsed 182s)
+Last build: **2026-09-23 23:39 UTC** (elapsed 162s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **143**
+- Skipped repos (no branch / no module): **145**
 
 ## Integrated repos
 
@@ -46,7 +46,7 @@ Last build: **2026-09-20 17:44 UTC** (elapsed 182s)
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | 7440806 2026-04-13 Pedro M. Baeza Merge pull request #1163 from akretion/12.0-fix-icon |
 | [dms](https://github.com/OCA/dms) | 2 | df8a90c 2025-11-25 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 2 | 4641ae4 2023-10-09 Weblate Update translation files |
-| [e-commerce](https://github.com/OCA/e-commerce) | 44 | 6cb468b 2024-05-08 mymage Translated using Weblate (Italian) |
+| [e-commerce](https://github.com/OCA/e-commerce) | 44 | f19f439 2026-09-21 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 23 | 57b731e 2025-09-02 Weblate Update translation files |
 | [event](https://github.com/OCA/event) | 30 | af4f23b 2024-10-15 mymage Translated using Weblate (Italian) |
 | [field-service](https://github.com/OCA/field-service) | 46 | 9cf8871 2026-07-27 mymage Translated using Weblate (Italian) |
