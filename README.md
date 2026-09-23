@@ -1,17 +1,17 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-20 17:42 UTC** (elapsed 116s)
+Last build: **2026-09-23 23:40 UTC** (elapsed 166s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **119**
+- Skipped repos (no branch / no module): **121**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | d36d784 2026-09-17 Pedro M. Baeza Merge pull request #5986 from rvjaraj/14.0-ou-add-purchase-tier-validation-forward-merged |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | d3644e4 2026-09-22 OCA-git-bot Merge PR #5562 into 14.0 |
 | [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 9071c85 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
@@ -74,7 +74,7 @@ Last build: **2026-09-20 17:42 UTC** (elapsed 116s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 422856a 2026-09-01 Guillaume MASSON [UPD] copier update |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 20e70b8 2026-09-08 Weblate Update translation files |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 4e06dda 2026-09-21 mymage Translated using Weblate (Italian) |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
