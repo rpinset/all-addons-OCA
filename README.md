@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-09-23 23:39 UTC** (elapsed 148s)
+Last build: **2026-09-25 08:56 UTC** (elapsed 120s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
@@ -15,7 +15,7 @@ Last build: **2026-09-23 23:39 UTC** (elapsed 148s)
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | b784eb1 2024-09-11 mymage Translated using Weblate (Italian) |
 | [account-closing](https://github.com/OCA/account-closing) | 7 | cb39a86 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 8 | d032a56 2025-06-30 mymage Translated using Weblate (Italian) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 37 | 4d0c3d8 2026-04-20 Judith Massa Translated using Weblate (German) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 37 | 05e7ab3 2026-09-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | fe162d5 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 13 | a396ee5 2026-02-11 OCA-git-bot [ADD] setup.py |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 62 | 4292ec1 2025-12-09 mymage Translated using Weblate (Italian) |
