@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-09-23 23:44 UTC** (elapsed 183s)
+Last build: **2026-09-25 09:01 UTC** (elapsed 192s)
 
 - Repos integrated: **143**
 - Canonical modules: **3141**
@@ -16,7 +16,7 @@ Last build: **2026-09-23 23:44 UTC** (elapsed 183s)
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | d38bdd2 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 15 | ff9ba79 2026-09-10 mymage Translated using Weblate (Italian) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 00d2d46 2026-08-17 Cándido Martínez Translated using Weblate (Galician) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 48 | a63f658 2026-08-19 mymage Translated using Weblate (Italian) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 48 | 9bfb3fc 2026-09-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 17 | cc48155 2026-07-05 Cándido Martínez Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 15 | f46edf9 2026-05-29 mymage Translated using Weblate (Italian) |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 97 | 7d75f8d 2026-09-21 risto42 Translated using Weblate (French) |
@@ -108,7 +108,7 @@ Last build: **2026-09-23 23:44 UTC** (elapsed 183s)
 | [project](https://github.com/OCA/project) | 62 | d5909e7 2026-06-03 mymage Translated using Weblate (Italian) |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 2810262 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 7 | e0f0ef8 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 112 | 49da65b 2026-09-22 OCA-git-bot [BOT] post-merge updates |
+| [purchase-workflow](https://github.com/OCA/purchase-workflow) | 112 | c6112d3 2026-09-24 Weblate Update translation files |
 | [queue](https://github.com/OCA/queue) | 11 | 4ea642c 2026-08-21 OCA-git-bot [BOT] post-merge updates |
 | [repair](https://github.com/OCA/repair) | 19 | 9b3fb6e 2026-05-29 mymage Translated using Weblate (Italian) |
 | [report-print-send](https://github.com/OCA/report-print-send) | 8 | 3f7de0f 2026-09-01 OCA-git-bot [BOT] post-merge updates |
