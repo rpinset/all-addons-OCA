@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-09-23 23:40 UTC** (elapsed 166s)
+Last build: **2026-09-25 08:57 UTC** (elapsed 207s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -11,13 +11,13 @@ Last build: **2026-09-23 23:40 UTC** (elapsed 166s)
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | d3644e4 2026-09-22 OCA-git-bot Merge PR #5562 into 14.0 |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 9c93464 2026-09-25 Pedro M. Baeza Merge pull request #6005 from grojof/14.0-ou_fix-account-statement_line_is_reconciled |
 | [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 9071c85 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 2f902a6 2025-03-13 mymage Translated using Weblate (Italian) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 7 | bbf605b 2026-08-13 setia kamali Added translation using Weblate (Persian) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | 8ef9605 2026-06-25 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | c8d63c3 2026-09-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | 15069cb 2026-03-02 Pedro M. Baeza Merge pull request #581 from ursais/14-dr-precommit-update |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 10 | 8670e82 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 09521c6 2026-08-06 Pedro M. Baeza Merge pull request #2309 from PyTech-SRL/14.0-copier |
