@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-09-23 23:43 UTC** (elapsed 95s)
+Last build: **2026-09-25 08:59 UTC** (elapsed 95s)
 
 - Repos integrated: **117**
 - Canonical modules: **2100**
@@ -15,7 +15,7 @@ Last build: **2026-09-23 23:43 UTC** (elapsed 95s)
 | [account-analytic](https://github.com/OCA/account-analytic) | 17 | a6d0cea 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | bd6cfe9 2026-06-04 Pablo Castelo Translated using Weblate (Galician) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 9 | 2cc28dc 2026-08-03 difbit Added translation using Weblate (Finnish (fi_FI)) |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | 81708f3 2026-08-12 Pedro M. Baeza Merge pull request #2372 from ForgeFlow/15.0-imp-copier-update |
+| [account-financial-tools](https://github.com/OCA/account-financial-tools) | 45 | 619d29e 2026-09-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 8 | f70ee59 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 12 | fb80818 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | 79 | c99fd2b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
