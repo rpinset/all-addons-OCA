@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-09-25 08:59 UTC** (elapsed 95s)
+Last build: **2026-09-28 20:56 UTC** (elapsed 178s)
 
 - Repos integrated: **117**
-- Canonical modules: **2100**
+- Canonical modules: **2101**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **144**
 
@@ -89,7 +89,7 @@ Last build: **2026-09-25 08:59 UTC** (elapsed 95s)
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | 90c92b7 2026-09-11 Weblate Update translation files |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [project](https://github.com/OCA/project) | 39 | cf77f6e 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [project](https://github.com/OCA/project) | 39 | 3ebf15b 2026-09-28 mymage Translated using Weblate (Italian) |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 2 | e775244 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 108 | 733d378 2026-09-10 OCA-git-bot [BOT] post-merge updates |
 | [queue](https://github.com/OCA/queue) | 8 | 7b617b6 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
@@ -106,7 +106,7 @@ Last build: **2026-09-25 08:59 UTC** (elapsed 95s)
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-brand](https://github.com/OCA/server-brand) | 4 | 2dfa55f 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-env](https://github.com/OCA/server-env) | 7 | 3d8f0d5 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [server-tools](https://github.com/OCA/server-tools) | 46 | f31518b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [server-tools](https://github.com/OCA/server-tools) | 47 | ee58785 2026-09-28 OCA-git-bot [BOT] post-merge updates |
 | [server-ux](https://github.com/OCA/server-ux) | 37 | f765f9c 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 0bb1516 2026-02-19 OCA-git-bot [BOT] post-merge updates |
 | [sign](https://github.com/OCA/sign) | 3 | 265ed93 2025-12-09 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
