@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-05 00:45+0000\n"
-"PO-Revision-Date: 2026-08-19 05:12+0000\n"
+"PO-Revision-Date: 2026-09-26 05:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -22,15 +22,13 @@ msgstr ""
 
 #. module: stock_quant_manual_assign
 #: model:ir.model,name:stock_quant_manual_assign.model_assign_manual_quants
-#, fuzzy
 msgid "Assign Manual Quants"
-msgstr "Ročni kvanti"
+msgstr "Dodeli ročne kvante"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model,name:stock_quant_manual_assign.model_assign_manual_quants_lines
-#, fuzzy
 msgid "Assign Manual Quants Lines"
-msgstr "Ročni kvanti"
+msgstr "Določi postavke ročnih kvantov"
 
 #. module: stock_quant_manual_assign
 #: model_terms:ir.ui.view,arch_db:stock_quant_manual_assign.assign_manual_quants_form_view
@@ -95,9 +93,8 @@ msgstr "Ročni kvanti"
 
 #. module: stock_quant_manual_assign
 #: model:ir.actions.act_window,name:stock_quant_manual_assign.assign_manual_quants_action
-#, fuzzy
 msgid "Manual assignment"
-msgstr "Ročni kvanti"
+msgstr "Ročno dodeljevanje"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants__move_id
@@ -108,17 +105,17 @@ msgstr "Premik"
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__on_hand
 msgid "On Hand"
-msgstr ""
+msgstr "Na voljo"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__reserved
 msgid "Others Reserved"
-msgstr ""
+msgstr "Drugi rezervirani"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__owner_id
 msgid "Owner"
-msgstr ""
+msgstr "Lastnik"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__package_id
@@ -171,6 +168,9 @@ msgid ""
 "with this product has been done meanwhile or you have manually increased the "
 "suggested value."
 msgstr ""
+"Izbrana količina v vrstici je večja od razpoložljive. Morda je bil medtem "
+"opravljen kakšen postopek s tem proizvodom ali pa ste predlagano vrednost "
+"ročno povečali."
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,help:stock_quant_manual_assign.field_assign_manual_quants_lines__package_id
@@ -180,7 +180,7 @@ msgstr "Pakiranje, ki vsebuje ta kvant"
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,help:stock_quant_manual_assign.field_assign_manual_quants_lines__owner_id
 msgid "This is the owner of the quant"
-msgstr ""
+msgstr "To je lastnik kvanta"
 
 #. module: stock_quant_manual_assign
 #: model_terms:ir.ui.view,arch_db:stock_quant_manual_assign.assign_manual_quants_form_view

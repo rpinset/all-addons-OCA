@@ -139,7 +139,8 @@ class NFe(spec_models.StackedModel):
     - <cana>
     - <infRespTec> res.partner
     - <infSolicNFF>
-    - <agropecuario>"""
+    - <agropecuario>
+    - <infPAA>"""
 
     ##########################
     # NF-e spec related fields
@@ -1228,10 +1229,11 @@ class NFe(spec_models.StackedModel):
                 document_id=self,
             )
             record.authorization_event_id = event_id
+            certificate = self.company_id._get_br_certificate()
             signed_xml = edoc.sign_xml(
                 xml_file,
-                self.company_id.certificate.file,
-                self.company_id.certificate.password,
+                certificate.with_context(bin_size=False).content,
+                certificate.pkcs12_password,
                 edoc.infNFe.Id,
             )
             self._validate_xml(signed_xml)
