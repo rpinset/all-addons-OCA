@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="mis_report_style_view_list">
+        <field name="name">mis.report.style.view.list</field>
+        <field name="model">mis.report.style</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="description" type="html" optional="show" />
+            </list>
+        </field>
+    </record>
+    <record id="mis_report_style_view_form" model="ir.ui.view">
+        <field name="name">mis.report.style.view.form</field>
+        <field name="model">mis.report.style</field>
+        <field name="arch" type="xml">
+            <form string="MIS Report Style">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <div class="d-flex">
+                                <field name="name" />
+                            </div>
+                        </h1>
+                    </div>
+                    <group string="Number">
+                        <group>
+                            <group>
+                                <field name="dp_inherit" string="Rounding inherit" />
+                            </group>
+                            <group>
+                                <field name="dp" invisible="dp_inherit" />
+                            </group>
+                            <group>
+                                <field name="prefix_inherit" />
+                            </group>
+                            <group>
+                                <field name="prefix" invisible="prefix_inherit" />
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="divider_inherit" string="Factor inherit" />
+                            </group>
+                            <group>
+                                <field name="divider" invisible="divider_inherit" />
+                            </group>
+                            <group>
+                                <field name="suffix_inherit" />
+                            </group>
+                            <group>
+                                <field name="suffix" invisible="suffix_inherit" />
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Color">
+                        <group>
+                            <group>
+                                <field name="color_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="color"
+                                    invisible="color_inherit"
+                                    widget="color"
+                                />
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="background_color_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="background_color"
+                                    invisible="background_color_inherit"
+                                    widget="color"
+                                />
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Font">
+                        <group>
+                            <group>
+                                <field name="font_style_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="font_style"
+                                    invisible="font_style_inherit"
+                                />
+                            </group>
+                            <group>
+                                <field name="font_size_inherit" />
+                            </group>
+                            <group>
+                                <field name="font_size" invisible="font_size_inherit" />
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="font_weight_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="font_weight"
+                                    invisible="font_weight_inherit"
+                                />
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Indent">
+                        <group>
+                            <group>
+                                <field name="indent_level_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="indent_level"
+                                    invisible="indent_level_inherit"
+                                />
+                            </group>
+                        </group>
+                    </group>
+                    <group string="Visibility">
+                        <group>
+                            <group>
+                                <field name="hide_empty_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="hide_empty"
+                                    invisible="hide_empty_inherit"
+                                />
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="hide_always_inherit" />
+                            </group>
+                            <group>
+                                <field
+                                    name="hide_always"
+                                    invisible="hide_always_inherit"
+                                />
+                            </group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="mis_report_style_view_action">
+        <field name="name">MIS Report Styles</field>
+        <field name="view_id" ref="mis_report_style_view_list" />
+        <field name="res_model">mis.report.style</field>
+        <field name="view_mode">list,form</field>
+        <field name="path">mis-report-styles</field>
+    </record>
+    <menuitem
+        id="mis_report_style_view_menu"
+        parent="mis_report_conf_menu"
+        name="MIS Report Styles"
+        action="mis_report_style_view_action"
+        sequence="22"
+    />
+</odoo>

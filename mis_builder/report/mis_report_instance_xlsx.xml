@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="xls_export" model="ir.actions.report">
+        <field name="name">MIS report instance XLS report</field>
+        <field name="model">mis.report.instance</field>
+        <field name="type">ir.actions.report</field>
+        <field name="report_name">mis_builder.mis_report_instance_xlsx</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_file">mis_report_instance</field>
+    </record>
+
+    <record model="ir.actions.server" id="mis_builder_print_xls_report">
+        <field name="name">Export XLS</field>
+        <field name="model_id" ref="mis_builder.model_mis_report_instance" />
+        <field name="binding_model_id" ref="mis_builder.model_mis_report_instance" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = records.export_xls()
+        </field>
+    </record>
+</odoo>
