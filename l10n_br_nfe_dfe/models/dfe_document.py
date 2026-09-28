@@ -50,6 +50,12 @@ class L10nBrFiscalDfeDocument(models.Model):
         compute="_compute_manifestation_status",
     )
 
+    fiscal_document_id = fields.Many2one(
+        comodel_name="l10n_br_fiscal.document",
+        string="Imported Document",
+        readonly=True,
+    )
+
     @api.depends("manifestations_ids.state")
     def _compute_manifestation_status(self):
         """Compute manifestation status efficiently with batched queries."""
@@ -108,7 +114,7 @@ class L10nBrFiscalDfeDocument(models.Model):
     def create_nfe_md_action(self):
         self.ensure_one()
         return {
-            "name": _("Manifestação do Destinatário da NF-e"),
+            "name": _("NF-e Recipient Manifestation"),
             "type": "ir.actions.act_window",
             "res_model": "nfe_recipient_manifestation_event.wizard",
             "view_mode": "form",
@@ -116,6 +122,23 @@ class L10nBrFiscalDfeDocument(models.Model):
             "context": {
                 "default_access_key": self.access_key,
             },
+        }
+
+    def action_view_imported_document(self):
+        """Open the invoice created from this DF-e.
+
+        Falls back to the fiscal document itself when accounting is not
+        installed, as this module does not depend on l10n_br_account.
+        """
+        self.ensure_one()
+        document = self.fiscal_document_id
+        moves = document.move_ids if "move_ids" in document._fields else document
+        record = moves[:1] or document
+        return {
+            "type": "ir.actions.act_window",
+            "res_model": record._name,
+            "res_id": record.id,
+            "view_mode": "form",
         }
 
     def import_document(self):
@@ -126,10 +149,18 @@ class L10nBrFiscalDfeDocument(models.Model):
             raise UserError(
                 _("You can only import the NF-e when the DF-e is completed.")
             )
-        xml_bytes = base64.b64decode(
-            complete.attachment_id.with_context(bin_size=False).datas
-        )
-        return self.company_id.parse_procNFe(BytesIO(xml_bytes))
+        return {
+            "name": _("Import NF-e XML"),
+            "type": "ir.actions.act_window",
+            "res_model": "l10n_br_fiscal.document.import.wizard",
+            "view_mode": "form",
+            "target": "new",
+            "context": {
+                "default_file": complete.attachment_id.with_context(
+                    bin_size=False
+                ).datas,
+            },
+        }
 
     def make_pdf(self):
         """Generate the DANFE PDF from the complete NF-e XML."""
