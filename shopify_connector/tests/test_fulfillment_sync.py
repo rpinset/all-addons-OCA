@@ -1,6 +1,7 @@
 from unittest.mock import MagicMock, patch
 
-from odoo.tests.common import TransactionCase
+from odoo.exceptions import AccessError
+from odoo.tests.common import TransactionCase, new_test_user
 
 from ..lib.fulfillment import (
     FulfillmentAllocationError,
@@ -227,3 +228,39 @@ class TestShopifyFulfillmentSync(TransactionCase):
         self.assertEqual(result, fulfillment.id)
         self.assertEqual(fulfillment.fulfillment_status, "SUCCESS")
         auto_validate.assert_not_called()
+
+    def test_stock_user_can_cancel_picking_with_fulfillment(self):
+        stock_user = new_test_user(
+            self.env,
+            login="shopify_cancel_stock_user",
+            groups="stock.group_stock_user",
+        )
+        self.sale.action_confirm()
+        picking = self.sale.picking_ids
+        fulfillment = self.env["shopify.fulfillment"].create(
+            {
+                "instance_id": self.instance.id,
+                "order_binding_id": self.order_binding.id,
+                "picking_id": picking.id,
+                "shopify_id": "gid://shopify/Fulfillment/620",
+            }
+        )
+        # A request starts with a cold cache: the fulfillments must be fetched
+        # with the user's access rights, which do not cover shopify.fulfillment.
+        self.env.invalidate_all()
+
+        picking.with_user(stock_user).action_cancel()
+
+        self.assertEqual(picking.state, "cancel")
+        log = self.env["shopify.log"].search(
+            [
+                ("res_model", "=", "shopify.fulfillment"),
+                ("res_id", "=", fulfillment.id),
+                ("level", "=", "warning"),
+            ]
+        )
+        self.assertEqual(len(log), 1)
+        self.assertIn(picking.name, log.message)
+        self.env.invalidate_all()
+        with self.assertRaises(AccessError):
+            picking.with_user(stock_user).shopify_fulfillment_ids.mapped("shopify_id")

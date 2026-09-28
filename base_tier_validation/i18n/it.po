@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-14 17:46+0000\n"
+"PO-Revision-Date: 2026-09-25 19:51+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -656,7 +656,7 @@ msgstr "Gruppo approvatore"
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_definition.py:0
 msgid "Reviewer may lack access"
-msgstr ""
+msgstr "Il revisore potrebbe non avere accesso"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
@@ -713,6 +713,15 @@ msgid ""
 "belong to a group with read access on the target model, or pick different "
 "reviewers."
 msgstr ""
+"I seguenti revisori potrebbero non essere in grado di leggere i record di '%"
+"(model)s' e, di conseguenza, non potranno gestire le revisioni generate da "
+"questo livello: %(reviewers)s.\n"
+"\n"
+"Si tratta di un controllo preliminare basato esclusivamente sui diritti di "
+"accesso a livello di modello, le regole sui record potrebbero comunque "
+"concedere o revocare l'accesso in fase di esecuzione. Assicurarsi che questi "
+"utenti appartengano a un gruppo con diritti di lettura sul modello di "
+"destinazione oppure scegliere revisori diversi."
 
 #. module: base_tier_validation
 #. odoo-python

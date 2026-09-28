@@ -708,7 +708,10 @@ class StockPickingShopifyFulfillmentSync(models.Model):
     def action_cancel(self):
         result = super().action_cancel()
         for picking in self:
-            for fulfillment in picking.shopify_fulfillment_ids.filtered("shopify_id"):
+            # Any stock or purchase user may cancel a picking; only the lookup
+            # of its fulfillments needs Shopify access.
+            fulfillments = picking.sudo().shopify_fulfillment_ids.filtered("shopify_id")
+            for fulfillment in fulfillments:
                 base_url = (
                     self.env["ir.config_parameter"].sudo().get_param("web.base.url")
                 )
