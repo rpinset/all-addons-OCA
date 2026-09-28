@@ -512,6 +512,7 @@ addon | version | maintainers | summary
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 17.0.1.0.0 |  | Manage triple discount on invoice lines
 [account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
+[account_mail_autosubscribe](account_mail_autosubscribe/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's invoices
 [account_manual_currency](account_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Accounting
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | New invoice menu that combine invoices and refunds
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Account Move Cancel Confirm
@@ -643,6 +644,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_in_payment](account_in_payment/) | 17.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
+[account_move_reconcile_helper](account_move_reconcile_helper/) | 17.0.1.0.0 |  | Provides tools to facilitate reconciliation
 [account_partner_reconcile](account_partner_reconcile/) | 17.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
 [account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.29 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
@@ -2091,7 +2093,7 @@ addon | version | maintainers | summary
 [edi_account_oca](edi_account_oca/) | 17.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define EDI Configuration for Account Moves
 [edi_endpoint_oca](edi_endpoint_oca/) | 17.0.1.0.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 17.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allows definition of exchanges via templates.
-[edi_oca](edi_oca/) | 17.0.1.3.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 17.0.1.3.2 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_project_oca](edi_project_oca/) | 17.0.1.0.0 |  | Define EDI Configuration for Projects and Tasks
 [edi_record_metadata_oca](edi_record_metadata_oca/) | 17.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to store metadata for related records.
 [edi_storage_oca](edi_storage_oca/) | 17.0.1.0.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
@@ -3765,7 +3767,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.1.1 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.8 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.9 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.7.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.4 |  | Modulo 'glue' de la AEAT para el menú de la ATC
@@ -3775,6 +3777,7 @@ addon | version | maintainers | summary
 [l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.3 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_atc_sii_oca](l10n_es_atc_sii_oca/) | 17.0.1.0.1 |  | Suministro Inmediato de Información en el IGIC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
+[l10n_es_digital_canon](l10n_es_digital_canon/) | 17.0.1.0.0 |  | Aplicación automática del canon digital en facturas, ventas y compras
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_literal_legal](l10n_es_facturae_literal_legal/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Literal Legal Texts
@@ -4229,6 +4232,7 @@ addon | version | maintainers | summary
 [mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 17.0.1.1.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp subcontracting bom dual use
+[mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 17.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 17.0.1.0.1 |  | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 17.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
@@ -5347,7 +5351,7 @@ addon | version | maintainers | summary
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 17.0.1.0.0 |  | Purchase product in a secondary unit
 [purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 17.0.1.0.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Update product supplierinfo with the last purchase price
-[purchase_order_type](purchase_order_type/) | 17.0.1.0.2 |  | Purchase Order Type
+[purchase_order_type](purchase_order_type/) | 17.0.2.0.0 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | <a href='https://github.com/dalonsod'><img src='https://github.com/dalonsod.png' width='32' height='32' style='border-radius:50%;' alt='dalonsod'/></a> | Purchase Order Type Dashboard
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 17.0.1.0.1 |  | Purchase Order Univoiced Amount
 [purchase_order_uninvoiced_amount_line](purchase_order_uninvoiced_amount_line/) | 17.0.1.0.0 |  | Purchase Order Line Uninvoiced Amount
@@ -6285,6 +6289,7 @@ addon | version | maintainers | summary
 [base_sequence_option](base_sequence_option/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 17.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 17.0.1.0.0 |  | Add a technical user parameter on the company
+[base_time_window](base_time_window/) | 17.0.1.0.0 |  | Base model to handle time windows
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 17.0.1.1.0 |  | Adds more operators for view inheritance
 [base_write_diff](base_write_diff/) | 17.0.1.0.0 |  | Prevents updates on fields whose values won't change anyway
 [bus_alt_connection](bus_alt_connection/) | 17.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
@@ -6574,7 +6579,7 @@ addon | version | maintainers | summary
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 17.0.1.0.1 |  | Track metadata for GDPR compliance
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 17.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 17.0.1.0.2 |  | Mass mailing lists that get autopopulated
-[mass_mailing_partner](mass_mailing_partner/) | 17.0.1.1.0 |  | Link partners with mass-mailing
+[mass_mailing_partner](mass_mailing_partner/) | 17.0.1.1.1 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Resend mass mailings
 [mute_notification_user_autosubscribe](mute_notification_user_autosubscribe/) | 17.0.1.0.0 |  | Do not send notifications to users autosubcribed through user_id field
 [outgoing_email_by_model](outgoing_email_by_model/) | 17.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Outgoing Email by Model
