@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-09-28 21:04 UTC
+Generated 2026-10-01 10:25 UTC
 
-Total skipped: **256**
+Total skipped: **259**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **230**
+Count: **233**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -208,12 +208,14 @@ Count: **230**
 | [rma](https://github.com/OCA/rma) | [20.0](https://github.com/OCA/rma/tree/20.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [20.0](https://github.com/OCA/role-policy/tree/20.0) | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | [20.0](https://github.com/OCA/route-planning/tree/20.0) | No directory with __manifest__.py at repo root |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [20.0](https://github.com/OCA/sale-automatic-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | [20.0](https://github.com/OCA/sale-blanket/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-channel](https://github.com/OCA/sale-channel) | [20.0](https://github.com/OCA/sale-channel/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | [20.0](https://github.com/OCA/sale-financial/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [20.0](https://github.com/OCA/sale-prebook/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | [20.0](https://github.com/OCA/sale-promotion/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | [20.0](https://github.com/OCA/sale-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [20.0](https://github.com/OCA/sale-stock-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | [20.0](https://github.com/OCA/sale-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | [20.0](https://github.com/OCA/search-engine/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | [20.0](https://github.com/OCA/server-auth/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -231,6 +233,7 @@ Count: **230**
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | [20.0](https://github.com/OCA/stock-logistics-availability/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | [20.0](https://github.com/OCA/stock-logistics-barcode/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [20.0](https://github.com/OCA/stock-logistics-interfaces/tree/20.0) | No directory with __manifest__.py at repo root |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [20.0](https://github.com/OCA/stock-logistics-inventory/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | [20.0](https://github.com/OCA/stock-logistics-orderpoint/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [20.0](https://github.com/OCA/stock-logistics-putaway/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [20.0](https://github.com/OCA/stock-logistics-release-channel/tree/20.0) | No directory with __manifest__.py at repo root |

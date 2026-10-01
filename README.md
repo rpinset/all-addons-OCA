@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-09-28 21:04 UTC** (elapsed 156s)
+Last build: **2026-10-01 10:25 UTC** (elapsed 90s)
 
 - Repos integrated: **5**
 - Canonical modules: **46**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **256**
+- Skipped repos (no branch / no module): **259**
 
 ## Integrated repos
 

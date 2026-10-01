@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-09-28 21:04 UTC
+Generated 2026-10-01 10:25 UTC
 
 ## Skipped repos
 
@@ -199,12 +199,14 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [rma](https://github.com/OCA/rma) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-channel](https://github.com/OCA/sale-channel) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | `no_module` | No directory with __manifest__.py at repo root |
@@ -222,6 +224,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |
