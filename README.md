@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-09-28 20:52 UTC** (elapsed 199s)
+Last build: **2026-10-01 10:15 UTC** (elapsed 100s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **144**
+- Skipped repos (no branch / no module): **147**
 
 ## Integrated repos
 
@@ -47,7 +47,7 @@ Last build: **2026-09-28 20:52 UTC** (elapsed 199s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 49 | 47edbfe 2026-07-01 Laura V Translated using Weblate (Swedish) |
 | [edi](https://github.com/OCA/edi) | 41 | 736f768 2026-01-19 EvaS595 Translated using Weblate (French) |
 | [event](https://github.com/OCA/event) | 24 | 4cdc438 2025-09-03 mymage Translated using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 19 | 995e716 2026-09-11 Wesley Oliveira Translated using Weblate (Portuguese (Brazil)) |
+| [field-service](https://github.com/OCA/field-service) | 19 | 9aa46d5 2026-10-01 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 13 | 5982b92 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 5 | f5783f7 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [helpdesk](https://github.com/OCA/helpdesk) | 12 | 94ad1d9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -74,8 +74,8 @@ Last build: **2026-09-28 20:52 UTC** (elapsed 199s)
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 14 | d02d753 2023-10-09 Weblate Update translation files |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 3 | 09713cd 2023-10-10 Weblate Update translation files |
 | [maintenance](https://github.com/OCA/maintenance) | 28 | f2e91e2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [management-system](https://github.com/OCA/management-system) | 27 | 70054d4 2025-11-28 mymage Translated using Weblate (Italian) |
-| [manufacture](https://github.com/OCA/manufacture) | 31 | ffb2e39 2026-09-16 mymage Translated using Weblate (Italian) |
+| [management-system](https://github.com/OCA/management-system) | 27 | 2cc77e2 2026-10-01 mymage Translated using Weblate (Italian) |
+| [manufacture](https://github.com/OCA/manufacture) | 31 | 2abf624 2026-10-01 mymage Translated using Weblate (Italian) |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 7 | b4a345b 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 6a79436 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | d4baf6b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
