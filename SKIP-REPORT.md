@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-09-28 20:59 UTC
+Generated 2026-10-01 10:21 UTC
 
-Total skipped: **118**
+Total skipped: **121**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **42**
+Count: **45**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -44,8 +44,11 @@ Count: **42**
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [16.0](https://github.com/OCA/repo-maintainer/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [16.0](https://github.com/OCA/repo-maintainer-conf/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [route-planning](https://github.com/OCA/route-planning) | [16.0](https://github.com/OCA/route-planning/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [16.0](https://github.com/OCA/sale-automatic-workflow/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [16.0](https://github.com/OCA/sale-stock-workflow/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [16.0](https://github.com/OCA/shopfloor-app/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [16.0](https://github.com/OCA/shoppingfeed/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [16.0](https://github.com/OCA/stock-logistics-inventory/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [16.0](https://github.com/OCA/stock-logistics-putaway/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [16.0](https://github.com/OCA/stock-logistics-release-channel/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [16.0](https://github.com/OCA/stock-logistics-reservation/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |

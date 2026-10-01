@@ -1,6 +1,6 @@
 # Build report — `16.0`
 
-Generated 2026-09-28 20:59 UTC
+Generated 2026-10-01 10:21 UTC
 
 ## Skipped repos
 
@@ -99,11 +99,14 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | `no_branch` | fatal: Remote branch 16.0 not found in upstream origin |
