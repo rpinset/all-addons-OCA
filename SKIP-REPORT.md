@@ -1,12 +1,12 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-09-28 20:56 UTC
+Generated 2026-10-01 10:20 UTC
 
-Total skipped: **144**
+Total skipped: **147**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **65**
+Count: **68**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -56,14 +56,17 @@ Count: **65**
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [15.0](https://github.com/OCA/repo-maintainer-conf/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [rest-api](https://github.com/OCA/rest-api) | [15.0](https://github.com/OCA/rest-api/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [route-planning](https://github.com/OCA/route-planning) | [15.0](https://github.com/OCA/route-planning/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [15.0](https://github.com/OCA/sale-automatic-workflow/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-blanket](https://github.com/OCA/sale-blanket) | [15.0](https://github.com/OCA/sale-blanket/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-channel](https://github.com/OCA/sale-channel) | [15.0](https://github.com/OCA/sale-channel/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | [15.0](https://github.com/OCA/sale-prebook/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [15.0](https://github.com/OCA/sale-stock-workflow/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [15.0](https://github.com/OCA/shopfloor-app/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [15.0](https://github.com/OCA/shoppingfeed/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | [15.0](https://github.com/OCA/spreadsheet/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | [15.0](https://github.com/OCA/stock-logistics-availability/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [15.0](https://github.com/OCA/stock-logistics-interfaces/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [15.0](https://github.com/OCA/stock-logistics-inventory/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | [15.0](https://github.com/OCA/stock-logistics-orderpoint/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [15.0](https://github.com/OCA/stock-logistics-putaway/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [15.0](https://github.com/OCA/stock-logistics-release-channel/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
