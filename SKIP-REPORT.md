@@ -1,12 +1,12 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-09-28 20:57 UTC
+Generated 2026-10-01 10:22 UTC
 
-Total skipped: **134**
+Total skipped: **137**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **35**
+Count: **38**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -37,8 +37,11 @@ Count: **35**
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [17.0](https://github.com/OCA/pylint-odoo/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [17.0](https://github.com/OCA/pytest-odoo/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [route-planning](https://github.com/OCA/route-planning) | [17.0](https://github.com/OCA/route-planning/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [17.0](https://github.com/OCA/sale-automatic-workflow/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [17.0](https://github.com/OCA/sale-stock-workflow/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [17.0](https://github.com/OCA/shopfloor-app/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [17.0](https://github.com/OCA/shoppingfeed/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [17.0](https://github.com/OCA/stock-logistics-inventory/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | [17.0](https://github.com/OCA/stock-logistics-putaway/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | [17.0](https://github.com/OCA/stock-logistics-release-channel/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |
 | [stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | [17.0](https://github.com/OCA/stock-logistics-reservation/tree/17.0) | fatal: Remote branch 17.0 not found in upstream origin |

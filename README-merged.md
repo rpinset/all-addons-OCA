@@ -509,7 +509,7 @@ addon | version | maintainers | summary
 [account_invoice_subscription_per_contact](account_invoice_subscription_per_contact/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Invoice Subscription per contact
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 17.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
-[account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Configure invoice transmit method (email, post, portal, ...)
+[account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.1.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 17.0.1.0.0 |  | Manage triple discount on invoice lines
 [account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_mail_autosubscribe](account_mail_autosubscribe/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically subscribe partners to their company's invoices
@@ -845,8 +845,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_banking_international_credit_transfer](account_banking_international_credit_transfer/) | 17.0.1.0.0 |  | Create PAIN XML files for International Credit Transfers
-[account_banking_mandate](account_banking_mandate/) | 17.0.1.0.4 |  | Banking mandates
-[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.1.2 |  | Assign specific banking mandates in contact level
+[account_banking_mandate](account_banking_mandate/) | 17.0.1.0.5 |  | Banking mandates
+[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.1.3 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 17.0.1.0.1 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 17.0.1.1.0 |  | Base module for PAIN file generation
@@ -855,7 +855,7 @@ addon | version | maintainers | summary
 [account_payment_mode](account_payment_mode/) | 17.0.1.1.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 17.0.1.7.7 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 17.0.1.0.0 |  | Account Payment Order - Generate grouped moves
-[account_payment_order_notification](account_payment_order_notification/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
+[account_payment_order_notification](account_payment_order_notification/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 17.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.9 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 17.0.1.2.3 |  | Adds Bank Account and Payment Mode on Purchase Orders
@@ -3768,7 +3768,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.1.1 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.9 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.7.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.7.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.4 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
@@ -6543,6 +6543,7 @@ addon | version | maintainers | summary
 [mail_activity_cancel_tracking](mail_activity_cancel_tracking/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail Activity Cancel Tracking
 [mail_activity_done](mail_activity_done/) | 17.0.1.0.0 |  | Mail Activity Done
 [mail_activity_reminder](mail_activity_reminder/) | 17.0.1.0.1 |  | Reminder notifications about planned activities
+[mail_activity_reply_creator](mail_activity_reply_creator/) | 17.0.1.0.0 |  | Assign new to its creator
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.2 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.1 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 17.0.1.0.0 |  | Module to use attach existing attachment for account module
