@@ -690,7 +690,9 @@ class StockPickingShopifyFulfillmentSync(models.Model):
                 item.state == "done" and item.picking_type_id.code == "outgoing"
             )
         ):
-            bindings = picking.sale_id.shopify_binding_ids.filtered(
+            # Any stock user may validate a delivery; only the lookup of the
+            # order bindings needs Shopify access.
+            bindings = picking.sale_id.sudo().shopify_binding_ids.filtered(
                 lambda item: not item.is_draft and item.state == "synced"
             )
             for binding in bindings:

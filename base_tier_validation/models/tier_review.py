@@ -106,11 +106,28 @@ class TierReview(models.Model):
         reviews = self.filtered(lambda rev: rev.status in ["waiting", "pending"])
         if not reviews:
             return
-        next_seq = min(reviews.mapped("sequence"))
+        # Lowest still-open sequence *per record*, computed over the whole
+        # record's reviews -- NOT just this recordset. Computing it over
+        # ``self`` promotes a later tier prematurely whenever the method runs on
+        # a subset that excludes the lower-sequence predecessors, e.g.
+        # ``review_user_count`` calling ``user.review_ids._update_review_status()``
+        # for a second-tier reviewer (their own review is then the only -- and
+        # thus "minimum" -- sequence in the set, so it wrongly goes ``pending``).
+        min_seq_by_record = {}
+        for model, res_id in {(rev.model, rev.res_id) for rev in reviews}:
+            open_reviews = (
+                self.env[model]
+                .browse(res_id)
+                .review_ids.filtered(lambda r: r.status in ("waiting", "pending"))
+            )
+            min_seq_by_record[(model, res_id)] = min(open_reviews.mapped("sequence"))
         for record in reviews:
             if record.status != "waiting":
                 continue
-            if record.approve_sequence and record.sequence != next_seq:
+            if (
+                record.approve_sequence
+                and record.sequence != min_seq_by_record[(record.model, record.res_id)]
+            ):
                 continue
             record.status = "pending"
             if record.definition_id.notify_on_pending:

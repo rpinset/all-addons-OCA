@@ -1,12 +1,12 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-09-28 21:01 UTC
+Generated 2026-10-01 10:24 UTC
 
-Total skipped: **137**
+Total skipped: **139**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **26**
+Count: **29**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -36,10 +36,13 @@ Count: **26**
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [19.0](https://github.com/OCA/pytest-odoo/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [19.0](https://github.com/OCA/repo-maintainer/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [19.0](https://github.com/OCA/repo-maintainer-conf/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [19.0](https://github.com/OCA/sale-automatic-workflow/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [19.0](https://github.com/OCA/sale-stock-workflow/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [19.0](https://github.com/OCA/stock-logistics-inventory/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **111**
+Count: **110**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -85,7 +88,6 @@ Count: **111**
 | [l10n-china](https://github.com/OCA/l10n-china) | [19.0](https://github.com/OCA/l10n-china/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-costa-rica](https://github.com/OCA/l10n-costa-rica) | [19.0](https://github.com/OCA/l10n-costa-rica/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | [19.0](https://github.com/OCA/l10n-croatia/tree/19.0) | No directory with __manifest__.py at repo root |
-| [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | [19.0](https://github.com/OCA/l10n-ecuador/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | [19.0](https://github.com/OCA/l10n-estonia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | [19.0](https://github.com/OCA/l10n-ethiopia/tree/19.0) | No directory with __manifest__.py at repo root |
 | [l10n-greece](https://github.com/OCA/l10n-greece) | [19.0](https://github.com/OCA/l10n-greece/tree/19.0) | No directory with __manifest__.py at repo root |

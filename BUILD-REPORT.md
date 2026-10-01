@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-09-28 21:01 UTC
+Generated 2026-10-01 10:24 UTC
 
 ## Skipped repos
 
@@ -53,7 +53,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-china](https://github.com/OCA/l10n-china) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-costa-rica](https://github.com/OCA/l10n-costa-rica) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
@@ -112,13 +111,16 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-prebook](https://github.com/OCA/sale-prebook) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [stock-logistics-putaway](https://github.com/OCA/stock-logistics-putaway) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |

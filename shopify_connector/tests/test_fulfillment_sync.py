@@ -130,6 +130,44 @@ class TestShopifyFulfillmentSync(TransactionCase):
         )
         push.assert_called_once_with(picking.id)
 
+    def test_stock_user_can_validate_picking_of_shopify_order(self):
+        stock_user = new_test_user(
+            self.env,
+            login="shopify_validate_stock_user",
+            groups="stock.group_stock_user",
+        )
+        self.env["stock.quant"]._update_available_quantity(
+            self.product, self.warehouse.lot_stock_id, 1
+        )
+        self.sale.action_confirm()
+        picking = self.sale.picking_ids
+        picking.action_assign()
+        picking.move_ids.quantity = 1
+        # A request starts with a cold cache: the order bindings must be fetched
+        # with the user's access rights, which do not cover shopify.order.
+        self.env.invalidate_all()
+
+        with (
+            patch.object(
+                type(self.order_binding),
+                "with_delay",
+                return_value=self.order_binding,
+            ) as with_delay,
+            patch.object(
+                type(self.order_binding),
+                "_job_push_picking_fulfillment",
+                return_value=True,
+            ) as push,
+        ):
+            picking.with_user(stock_user).button_validate()
+
+        self.assertEqual(picking.state, "done")
+        with_delay.assert_called_once()
+        push.assert_called_once_with(picking.id)
+        self.env.invalidate_all()
+        with self.assertRaises(AccessError):
+            self.sale.with_user(stock_user).shopify_binding_ids.mapped("shopify_id")
+
     def test_partial_allocation_uses_only_delivered_quantity(self):
         allocation = allocate_fulfillment_lines(
             [

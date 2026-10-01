@@ -927,6 +927,67 @@ class TierTierValidation(CommonTierValidation):
             "Second-tier reviewer must be notified once promoted to pending.",
         )
 
+    def test_19c_no_premature_promotion_on_subset(self):
+        """Regression: ``_update_review_status`` run on a *subset* of a record's
+        reviews -- as ``review_user_count`` does per user, via
+        ``user.review_ids._update_review_status()`` -- must gate the sequence
+        over the *whole* record, not the subset. Otherwise a later-tier review
+        is promoted to ``pending`` before its predecessor is approved, which
+        both hides it from the reviewer's systray (``can_review`` is False while
+        the lower tier is still pending) and fires a ``notify_on_pending``
+        message authored by -- and so never delivered to -- that reviewer.
+        """
+        TierDefinition = self.env["tier.definition"]
+        test_record = self.test_model.create({"test_field": 2.5})
+        TierDefinition.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '=', 2.5)]",
+                "approve_sequence": True,
+                "notify_on_pending": True,
+                "sequence": 20,
+                "name": "First in sequence -- user 1",
+            }
+        )
+        TierDefinition.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_2.id,
+                "definition_domain": "[('test_field', '=', 2.5)]",
+                "approve_sequence": True,
+                "notify_on_pending": True,
+                "sequence": 10,
+                "name": "Second in sequence -- user 2",
+            }
+        )
+        reviews = test_record.request_validation()
+        review_second = reviews.filtered(lambda r: self.test_user_2 in r.reviewer_ids)
+        self.assertEqual(review_second.status, "waiting")
+        messages_before = test_record.message_ids
+
+        # Simulate the second-tier reviewer opening their systray: the promotion
+        # runs on *only* their own review -- the subset that excludes the
+        # first-tier predecessor.
+        review_second._update_review_status()
+        review_second.invalidate_recordset()
+
+        self.assertEqual(
+            review_second.status,
+            "waiting",
+            "A later-tier review must stay 'waiting' until its predecessor is "
+            "approved, even when _update_review_status runs on a subset that "
+            "excludes the predecessor.",
+        )
+        self.assertEqual(
+            test_record.message_ids,
+            messages_before,
+            "No notify_on_pending message must be posted from promoting a later "
+            "tier out of order.",
+        )
+
     def test_19b_notify_review_available_no_op_when_no_users(self):
         """``_notify_review_available`` must short-circuit (no follower
         added, no chatter message posted) when none of the passed reviews
