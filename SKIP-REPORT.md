@@ -1,12 +1,12 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-09-28 21:00 UTC
+Generated 2026-10-01 10:28 UTC
 
-Total skipped: **106**
+Total skipped: **109**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **26**
+Count: **29**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -35,6 +35,9 @@ Count: **26**
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [18.0](https://github.com/OCA/pytest-odoo/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [18.0](https://github.com/OCA/repo-maintainer/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [18.0](https://github.com/OCA/repo-maintainer-conf/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | [18.0](https://github.com/OCA/sale-automatic-workflow/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [18.0](https://github.com/OCA/sale-stock-workflow/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | [18.0](https://github.com/OCA/stock-logistics-inventory/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | [18.0](https://github.com/OCA/tier-validation/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)

@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-09-28 21:00 UTC
+Generated 2026-10-01 10:28 UTC
 
 ## Skipped repos
 
@@ -93,8 +93,11 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [resource](https://github.com/OCA/resource) | `no_module` | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
+| [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
+| [stock-logistics-inventory](https://github.com/OCA/stock-logistics-inventory) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | `no_module` | No directory with __manifest__.py at repo root |

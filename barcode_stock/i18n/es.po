@@ -1,0 +1,1619 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 08:37+0000\n"
+"PO-Revision-Date: 2026-07-31 11:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_quant.py:0
+msgid ""
+"A lot/serial number is required for product %(product)s before applying the "
+"inventory adjustment."
+msgstr ""
+"Se requiere un lote/número de serie para el producto %(product)s antes de "
+"aplicar el ajuste de inventario."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "AVAILABILITY"
+msgstr "DISPONIBILIDAD"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "AVAILABLE LOCATIONS"
+msgstr "UBICACIONES DISPONIBLES"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "AVAILABLE PRODUCTS"
+msgstr "PRODUCTOS DISPONIBLES"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "AVAILABLE USERS"
+msgstr "USUARIOS DISPONIBLES"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Add a filter first, then save it as the default."
+msgstr "Añade primero un filtro y luego guárdalo como predeterminado."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Add a line"
+msgstr "Añadir una línea"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Add at least one product to transfer."
+msgstr "Añada al menos un producto al traslado."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Add at least one product."
+msgstr "Añada al menos un producto."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Add notes..."
+msgstr "Añadir notas..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Adjust filters or scan a picking name to continue."
+msgstr "Ajuste los filtros o escanee el nombre de un albarán para continuar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "All"
+msgstr "Todos"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "All operations completed"
+msgstr "Todas las operaciones completadas"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "All products are available."
+msgstr "Todos los productos están disponibles."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Are you sure you want to cancel reservations?"
+msgstr "¿Seguro que quiere cancelar las reservas?"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Are you sure you want to check availability?"
+msgstr "¿Seguro que quiere comprobar la disponibilidad?"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Are you sure you want to delete this movement?"
+msgstr "¿Seguro que quiere eliminar este movimiento?"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Availability check error: %(error)s"
+msgstr "Error al comprobar la disponibilidad: %(error)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Availability check failed."
+msgstr "Falló la comprobación de disponibilidad."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Availability check successful."
+msgstr "Comprobación de disponibilidad correcta."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Available:"
+msgstr "Disponible:"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Back"
+msgstr "Atrás"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Back to Dashboard"
+msgstr "Volver al panel"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Back to pick"
+msgstr "Volver a la preparación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: barcode_stock
+#: model:ir.model.fields,field_description:barcode_stock.field_res_users__barcode_default_filters
+msgid "Barcode Default Filters"
+msgstr "Filtros por defecto del código de barras"
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_barcode_nomenclature
+msgid "Barcode Nomenclature"
+msgstr "Nomenclatura de código de barras"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Barcode Scanner Internal Transfer"
+msgstr "Transferencia interna del escáner de códigos de barras"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/quick_info.esm.js:0
+msgid "Barcode not found."
+msgstr "Código de barras no encontrado."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/js/screens/quick_info.esm.js:0
+msgid "Barcode not recognized."
+msgstr "Código de barras no reconocido."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "CHECK"
+msgstr "COMPROBAR"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Cancel Reservation error: %(error)s"
+msgstr "Error al cancelar la reserva: %(error)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Cancel Reservation successfully"
+msgstr "Reserva cancelada correctamente"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Cancel reservation"
+msgstr "Cancelar reserva"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Changes saved successfully"
+msgstr "Cambios guardados correctamente"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Completed"
+msgstr "Completado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Confirm Location"
+msgstr "Confirmar ubicación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Confirm Product"
+msgstr "Confirmar producto"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Confirm Responsible"
+msgstr "Confirmar responsable"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Confirm availability check"
+msgstr "Confirmar comprobación de disponibilidad"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Confirm cancel reservations"
+msgstr "Confirmar cancelación de reservas"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Confirm deletion"
+msgstr "Confirmar eliminación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Confirm move"
+msgstr "Confirmar movimiento"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Confirm the quantity and return to the picking queue."
+msgstr "Confirme la cantidad y vuelva a la cola de preparación."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Cost / Sale Price"
+msgstr "Coste / Precio de venta"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Could not start camera: "
+msgstr "No se pudo iniciar la cámara: "
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Create New Lot"
+msgstr "Crear nuevo lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Create lot & confirm"
+msgstr "Crear lote y confirmar"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Create the lot first, then confirm the move in one pass."
+msgstr "Cree primero el lote y luego confirme el movimiento en un solo paso."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Current Stock ("
+msgstr "Stock actual ("
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Custom date"
+msgstr "Fecha personalizada"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "DESTINATION LOCATION"
+msgstr "UBICACIÓN DE DESTINO"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "DETAILED OPERATIONS"
+msgstr "OPERACIONES DETALLADAS"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Default"
+msgstr "Predeterminado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Default filter cleared for %(operation)s."
+msgstr "Filtro predeterminado eliminado de %(operation)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Default filter for %(operation)s — tap to remove."
+msgstr "Filtro predeterminado de %(operation)s — toca para quitarlo."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Delete picture"
+msgstr "Eliminar imagen"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Delivery Order"
+msgstr "Albarán de entrega"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Delivery Orders"
+msgstr "Albaranes de entrega"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Demand:"
+msgstr "Demanda:"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Destination location"
+msgstr "Ubicación de destino"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Destination location is required."
+msgstr "La ubicación de destino es obligatoria."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Destination location selected: %(location)s"
+msgstr "Ubicación de destino seleccionada: %(location)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+#: model:ir.model.fields,field_description:barcode_stock.field_stock_move__qty_done_total
+msgid "Done"
+msgstr "Hecho"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Done lines"
+msgstr "Líneas hechas"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Done:"
+msgstr "Hecho:"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/quick_info.esm.js:0
+msgid "Enter a barcode."
+msgstr "Introduzca un código de barras."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Enter barcode"
+msgstr "Introduzca el código de barras"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Enter lot/serial"
+msgstr "Introduzca lote/número de serie"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Error loading picking: %(error)s"
+msgstr "Error al cargar el albarán: %(error)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Error while saving"
+msgstr "Error al guardar"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Filter saved as the default for %(operation)s."
+msgstr "Filtro guardado como predeterminado de %(operation)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Filters"
+msgstr "Filtros"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "From"
+msgstr "Desde"
+
+#. module: barcode_stock
+#: model:ir.model.fields,field_description:barcode_stock.field_stock_move__is_fully_picked
+msgid "Fully Picked"
+msgstr "Totalmente preparado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Group"
+msgstr "Grupo"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Group by"
+msgstr "Agrupar por"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "ITEM"
+msgstr "ARTÍCULO"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Information"
+msgstr "Información"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/js/tiles/stock_menu_tiles.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Internal Transfer"
+msgstr "Transferencia interna"
+
+#. module: barcode_stock
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Internal Transfers"
+msgstr "Transferencias internas"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Internal transfer %(name)s validated successfully."
+msgstr "Transferencia interna %(name)s validada correctamente."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Internal transfer failed."
+msgstr "La transferencia interna falló."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Invalid quantity"
+msgstr "Cantidad no válida"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Items"
+msgstr "Artículos"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading locations..."
+msgstr "Cargando ubicaciones..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading move..."
+msgstr "Cargando movimiento..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading products..."
+msgstr "Cargando productos..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading queue..."
+msgstr "Cargando cola..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading users..."
+msgstr "Cargando usuarios..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Loading..."
+msgstr "Cargando..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Lot %(lot)s has passed its expiration date."
+msgstr "El lote %(lot)s ha superado su fecha de caducidad."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Lot %(lot)s is not available for this product."
+msgstr "El lote %(lot)s no está disponible para este producto."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Lot %(lot)s is not available here."
+msgstr "El lote %(lot)s no está disponible aquí."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Lot %(lot)s matched and ready to confirm."
+msgstr "Lote %(lot)s encontrado y listo para confirmar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/quick_info.esm.js:0
+msgid "Lot %(lot)s not found for this product."
+msgstr "No se encontró el lote %(lot)s para este producto."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Lot %(lot)s ready to be registered."
+msgstr "Lote %(lot)s listo para registrar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot expired"
+msgstr "Lote caducado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot name required"
+msgstr "Se requiere el nombre del lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot number"
+msgstr "Número de lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot tracked"
+msgstr "Seguimiento por lote"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Lot/Serial Number is required for product %(name)s."
+msgstr "Se requiere lote/número de serie para el producto %(name)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lots can only be created in receptions"
+msgstr "Los lotes solo se pueden crear en las recepciones"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Manual Barcode"
+msgstr "Código de barras manual"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Move Operation"
+msgstr "Operación de movimiento"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Move stock between locations"
+msgstr "Mover stock entre ubicaciones"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No"
+msgstr "No"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No confirmed scans yet"
+msgstr "Todavía no hay escaneos confirmados"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No customer"
+msgstr "Sin cliente"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No date"
+msgstr "Sin fecha"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "No expiration date"
+msgstr "Sin fecha de caducidad"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid ""
+"No internal transfer operation type is configured. Please set one up before "
+"using barcode transfers."
+msgstr ""
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_quant.py:0
+msgid "No inventory lines to apply."
+msgstr "No hay líneas de inventario que aplicar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/location_selector_screen.esm.js:0
+msgid "No location matches “%(code)s”."
+msgstr "Ninguna ubicación coincide con «%(code)s»."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No locations found."
+msgstr "No se han encontrado ubicaciones."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No operation found for “%(code)s”."
+msgstr "No se ha encontrado ninguna operación para «%(code)s»."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No pending pickings"
+msgstr "No hay albaranes pendientes"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/product_selector_screen.esm.js:0
+msgid "No product matches “%(code)s”."
+msgstr "Ningún producto coincide con «%(code)s»."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No products found."
+msgstr "No se han encontrado productos."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No schedule"
+msgstr "Sin planificación"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "No stock is available in the origin location for the selected products."
+msgstr ""
+"No hay stock disponible en la ubicación de origen para los productos "
+"seleccionados."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No stock on hand for this lot"
+msgstr "Sin stock disponible para este lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "No time"
+msgstr "Sin hora"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "No tracking"
+msgstr "Sin seguimiento"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "No users found."
+msgstr "No se han encontrado usuarios."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "ORIGIN LOCATION"
+msgstr "UBICACIÓN DE ORIGEN"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "On Hand"
+msgstr "Disponible"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "One of the selected products no longer exists."
+msgstr "Uno de los productos seleccionados ya no existe."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Open"
+msgstr "Abierto"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Operation opened from scan."
+msgstr "Operación abierta desde el escaneo."
+
+#. module: barcode_stock
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Origin and destination locations must be different."
+msgstr "Las ubicaciones de origen y destino deben ser diferentes."
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Origin location is required."
+msgstr "La ubicación de origen es obligatoria."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Origin location selected: %(location)s"
+msgstr "Ubicación de origen seleccionada: %(location)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Other"
+msgstr "Otro"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "PARTNER"
+msgstr "EMPRESA"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Pending moves"
+msgstr "Movimientos pendientes"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Pick Existing Lot"
+msgstr "Elegir lote existente"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Pick and ship items"
+msgstr "Preparar y enviar artículos"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Picked"
+msgstr "Preparado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Picking"
+msgstr "Albarán"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Picking Operations"
+msgstr "Operaciones de preparación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Picking attachment"
+msgstr "Adjunto del albarán"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Picking opened from scan."
+msgstr "Albarán abierto desde el escaneo."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Picking task"
+msgstr "Tarea de preparación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Pickings"
+msgstr "Albaranes"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Please add at least one product to validate."
+msgstr "Añada al menos un producto para validar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Please select a destination location."
+msgstr "Seleccione una ubicación de destino."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Please select a lot"
+msgstr "Seleccione un lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Please select a lot/serial number for %(product)s."
+msgstr "Seleccione un número de lote/serie para %(product)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Please select an origin location."
+msgstr "Seleccione una ubicación de origen."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Preparing scanner-first work queue..."
+msgstr "Preparando la cola de trabajo orientada al escáner..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Process products from the To Do tab to build the done log here."
+msgstr ""
+"Procese los productos desde la pestaña Por hacer para construir aquí el "
+"registro de hechos."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid ""
+"Product %(name)s is tracked by serial number and must be transferred one "
+"unit at a time."
+msgstr ""
+"El producto %(name)s tiene seguimiento por número de serie y debe "
+"transferirse de unidad en unidad."
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimientos de producto (línea de movimiento)"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Product matched and ready to confirm."
+msgstr "Producto identificado y listo para confirmar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Product not found"
+msgstr "Producto no encontrado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Product not found."
+msgstr "Producto no encontrado."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Product not reserved"
+msgstr "Producto no reservado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Product updated"
+msgstr "Producto actualizado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Progress"
+msgstr "Progreso"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Qty unavailable"
+msgstr "Cantidad no disponible"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Quantity incremented to %(qty)s."
+msgstr "Cantidad incrementada a %(qty)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Quantity must be greater than zero for %(product)s."
+msgstr "La cantidad debe ser mayor que cero para %(product)s."
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "Quantity must be greater than zero for product %(name)s."
+msgstr "La cantidad debe ser mayor que cero para el producto %(name)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Quantity stepper"
+msgstr "Selector de cantidad"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Quantity to pick"
+msgstr "Cantidad a preparar"
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_stock_quant
+msgid "Quants"
+msgstr "Cuantías"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Queue ready"
+msgstr "Cola lista"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/tiles/stock_menu_tiles.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Quick Info"
+msgstr "Información rápida"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Quick Information"
+msgstr "Información rápida"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Quick filters"
+msgstr "Filtros rápidos"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "RESPONSIBLE"
+msgstr "RESPONSABLE"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Ready"
+msgstr "Listo"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Receipt"
+msgstr "Recepción"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Receipts"
+msgstr "Recepciones"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Reception task"
+msgstr "Tarea de recepción"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Register a new lot before assigning the picked quantity."
+msgstr "Registre un nuevo lote antes de asignar la cantidad preparada."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Rem:"
+msgstr "Rest.:"
+
+#. module: barcode_stock
+#: model:ir.model.fields,field_description:barcode_stock.field_stock_move__qty_remaining
+msgid "Remaining Quantity"
+msgstr "Cantidad restante"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Remaining quantity applied"
+msgstr "Cantidad restante aplicada"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Required"
+msgstr "Necesario"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Reserved:"
+msgstr "Reservado:"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Responsible set to %(name)s"
+msgstr "Responsable establecido a %(name)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "S"
+msgstr "S"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "SAVE"
+msgstr "GUARDAR"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "SKU"
+msgstr "SKU"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Save this filter as the default for %(operation)s."
+msgstr "Guardar este filtro como predeterminado de %(operation)s."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Scan a product or location barcode"
+msgstr "Escanee el código de barras de un producto o ubicación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Scan narrowed the queue."
+msgstr "El escaneo ha reducido la cola."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Scan or search pickings..."
+msgstr "Escanee o busque albaranes..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Scan target"
+msgstr "Objetivo de escaneo"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Scanned Lot / Serial"
+msgstr "Lote / N.º de serie escaneado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Scanned barcode is not a product of this operation."
+msgstr "El código de barras escaneado no es un producto de esta operación."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Scanned barcode is not part of the current picking."
+msgstr "El código de barras escaneado no forma parte del albarán actual."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid ""
+"Scanned product doesn't match this move (%(expected)s expected, got %(got)s)"
+msgstr ""
+"El producto escaneado no coincide con este movimiento (se esperaba "
+"%(expected)s, se obtuvo %(got)s)"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Scanned product was not found."
+msgstr "No se ha encontrado el producto escaneado."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Scanner ready for this picking."
+msgstr "Escáner listo para este albarán."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Scheduled Date"
+msgstr "Fecha prevista"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Search Barcode"
+msgstr "Buscar código de barras"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Search by name or SKU..."
+msgstr "Buscar por nombre o SKU..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Search by name or login..."
+msgstr "Buscar por nombre o usuario..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/quick_info.esm.js:0
+msgid "Search failed."
+msgstr "La búsqueda falló."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Search location..."
+msgstr "Buscar ubicación..."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select Location"
+msgstr "Seleccionar ubicación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select Product"
+msgstr "Seleccionar producto"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select Responsible"
+msgstr "Seleccionar responsable"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Select date"
+msgstr "Seleccionar fecha"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select destination"
+msgstr "Seleccionar destino"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Select destination location"
+msgstr "Seleccionar ubicación de destino"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select lot"
+msgstr "Seleccionar lote"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select origin"
+msgstr "Seleccionar origen"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/internal_transfer_screen.esm.js:0
+msgid "Select origin location"
+msgstr "Seleccionar ubicación de origen"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select responsible"
+msgstr "Seleccionar responsable"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Select source"
+msgstr "Seleccionar origen"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Select the correct lot or serial and confirm the quantity."
+msgstr "Seleccione el lote o número de serie correcto y confirme la cantidad."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Serial already exists for this product."
+msgstr "El número de serie ya existe para este producto."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Serial number"
+msgstr "Número de serie"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Serial tracked"
+msgstr "Seguimiento por número de serie"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Serial-tracked products can only process one unit."
+msgstr ""
+"Los productos con seguimiento por número de serie solo pueden procesar una "
+"unidad."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Serial-tracked products must have a quantity of 1."
+msgstr ""
+"Los productos con seguimiento por número de serie deben tener una cantidad "
+"de 1."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Set default"
+msgstr "Fijar predeterminado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Single picking matched the scan."
+msgstr "Un único albarán coincide con el escaneo."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Source location"
+msgstr "Ubicación de origen"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Status"
+msgstr "Estado"
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Stock by Location ("
+msgstr "Stock por ubicación ("
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "TASK STATUS"
+msgstr "ESTADO DE LA TAREA"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "TO DO"
+msgstr "POR HACER"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Tap to remove this confirmation"
+msgstr "Toque para eliminar esta confirmación"
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_move_line.py:0
+msgid ""
+"The quantity for product %(product)s (tracked by serial) cannot exceed 1."
+msgstr ""
+"La cantidad para el producto %(product)s (con seguimiento por serie) no "
+"puede superar 1."
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "The selected Lot/Serial Number is invalid for product %(name)s."
+msgstr ""
+"El lote/número de serie seleccionado no es válido para el producto %(name)s."
+
+#. module: barcode_stock
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_picking.py:0
+msgid "The selected locations are not valid anymore."
+msgstr "Las ubicaciones seleccionadas ya no son válidas."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "There are no pending products for this picking."
+msgstr "No hay productos pendientes para este albarán."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "This move has no quantity to process."
+msgstr "Este movimiento no tiene cantidad que procesar."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "This product is not reserved for this picking."
+msgstr "Este producto no está reservado para este albarán."
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "To"
+msgstr "Hasta"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "To Do"
+msgstr "Por hacer"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Today"
+msgstr "Hoy"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Tomorrow"
+msgstr "Mañana"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Tracking"
+msgstr "Seguimiento"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Tracking / Type"
+msgstr "Seguimiento / Tipo"
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_stock_picking
+msgid "Transfer"
+msgstr "Traslado"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "UNITS"
+msgstr "UNIDADES"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Unknown"
+msgstr "Desconocido"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Usage"
+msgstr "Uso"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Use an existing lot or serial already available for this product."
+msgstr ""
+"Utilice un lote o número de serie existente ya disponible para este producto."
+
+#. module: barcode_stock
+#: model:ir.model,name:barcode_stock.model_res_users
+msgid "User"
+msgstr "Usuario"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "VALIDATE"
+msgstr "VALIDAR"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Validate incoming goods"
+msgstr "Validar la mercancía entrante"
+
+#. module: barcode_stock
+#: model:ir.model.fields,field_description:barcode_stock.field_stock_move_line__validated_on_date
+msgid "Validated On Date"
+msgstr "Validado en fecha"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
+msgid "Validation failed: %(error)s"
+msgstr "La validación falló: %(error)s"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Visible"
+msgstr "Visible"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/tiles/stock_menu_tiles.esm.js:0
+#: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
+msgid "Warehouse Operations"
+msgstr "Operaciones de almacén"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
+msgid "Yes"
+msgstr "Sí"
+
+#. module: barcode_stock
+#. odoo-javascript
+#: code:addons/barcode_stock/static/src/js/components/picking_move_card.esm.js:0
+msgid "pending"
+msgstr "pendiente"
+

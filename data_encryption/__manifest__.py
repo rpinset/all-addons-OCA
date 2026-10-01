@@ -3,7 +3,7 @@
 {
     "name": "Encryption data",
     "summary": "Store accounts and credentials encrypted by environment",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "development_status": "Production/Stable",
     "maintainers": ["florian-dacosta"],
     "category": "Tools",
@@ -12,7 +12,13 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {"python": ["cryptography"]},
+    "external_dependencies": {
+        # Use the same pin as Odoo to avoid compatibility issues
+        "python": [
+            "cryptography==3.4.8; python_version < '3.12'",
+            "cryptography==42.0.8 ; python_version >= '3.12'",
+        ]
+    },
     "depends": ["base"],
     "data": ["security/ir.model.access.csv"],
 }

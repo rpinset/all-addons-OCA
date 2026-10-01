@@ -1,0 +1,2087 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="barcode_scanner.WarehouseOps">
+        <div class="ilx-stitch-screen">
+            <header class="ilx-stitch-header">
+                <button class="ilx-stitch-menu-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h2
+                    class="ilx-stitch-header-title text-center flex-1 color-primary-container"
+                >Warehouse Operations</h2>
+                <div class="header-spacer" />
+            </header>
+
+            <main class="ilx-stitch-main">
+                <div class="ilx-stitch-location">
+                    <div class="ilx-stitch-select-wrapper">
+                        <i class="fa fa-home ilx-stitch-loc-icon" />
+                        <select
+                            name="warehouse_id"
+                            class="ilx-stitch-select"
+                            t-ref="warehouseSelect"
+                            t-att-value="state.selectedWarehouseId"
+                            t-on-change="selectWarehouse"
+                        >
+                            <t t-foreach="state.warehouses" t-as="w" t-key="w.id">
+                                <option t-att-value="w.id">
+                                    <t t-esc="w.name" />
+                                </option>
+                            </t>
+                        </select>
+                        <i class="fa fa-chevron-down ilx-stitch-chevron" />
+                    </div>
+                </div>
+
+                <t t-if="selectedWarehouse">
+                    <div class="ilx-stitch-op-cards bg-transparent p-0">
+                        <button
+                            class="ilx-stitch-op-card-vertical"
+                            t-on-click="() => openPickings('incoming')"
+                        >
+                            <div class="ilx-stitch-op-icon-wrapper">
+                                <div class="ilx-stitch-op-icon bg-pink-light">
+                                    <i class="fa fa-download" />
+                                </div>
+                                <div class="ilx-stitch-badge-circle badge-dark">
+                                    <t t-esc="selectedWarehouse.receipts" />
+                                </div>
+                            </div>
+                            <h3 class="ilx-stitch-op-title-large">Receipts</h3>
+                            <p
+                                class="ilx-stitch-op-subtitle-large"
+                            >Validate incoming goods</p>
+                        </button>
+
+                        <button
+                            class="ilx-stitch-op-card-vertical"
+                            t-on-click="() => openPickings('internal')"
+                        >
+                            <div class="ilx-stitch-op-icon-wrapper">
+                                <div class="ilx-stitch-op-icon bg-gray-light">
+                                    <i class="fa fa-exchange" />
+                                </div>
+                                <div class="ilx-stitch-badge-circle badge-dark">
+                                    <t t-esc="selectedWarehouse.internal" />
+                                </div>
+                            </div>
+                            <h3
+                                class="ilx-stitch-op-title-large"
+                            >Internal Transfers</h3>
+                            <p
+                                class="ilx-stitch-op-subtitle-large"
+                            >Move stock between locations</p>
+                        </button>
+
+                        <button
+                            class="ilx-stitch-op-card-vertical"
+                            t-on-click="() => openPickings('outgoing')"
+                        >
+                            <div class="ilx-stitch-op-icon-wrapper">
+                                <div class="ilx-stitch-op-icon bg-pink-light">
+                                    <i class="fa fa-truck" />
+                                </div>
+                                <div class="ilx-stitch-badge-circle badge-dark">
+                                    <t t-esc="selectedWarehouse.delivery" />
+                                </div>
+                            </div>
+                            <h3 class="ilx-stitch-op-title-large">Delivery Orders</h3>
+                            <p
+                                class="ilx-stitch-op-subtitle-large"
+                            >Pick and ship items</p>
+                        </button>
+                    </div>
+                </t>
+            </main>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.PickingScreen">
+        <div class="ilx-kw-screen ilx-kw-picking-screen bg-surface-low">
+            <t t-if="!state.picking">
+                <div class="text-center p-4">
+                    Loading...
+                </div>
+            </t>
+            <t t-else="">
+                <header class="ilx-kw-header ilx-kw-header--elevated">
+                    <div class="ilx-kw-header-left">
+                        <button
+                            class="ilx-kw-icon-btn color-primary-container"
+                            t-on-click="goBack"
+                        >
+                            <i class="fa fa-arrow-left" />
+                        </button>
+                        <h1 class="ilx-kw-header-title color-on-surface">
+                            <t t-esc="state.picking.name" />
+                        </h1>
+                    </div>
+                </header>
+
+                <div class="ilx-kw-tabs bg-surface-lowest">
+                    <button
+                        t-att-class="state.activeTab === 'info' ? 'ilx-kw-tab active' : 'ilx-kw-tab'"
+                        t-on-click="() => setTab('info')"
+                    >
+                        <i class="fa fa-info-circle me-1" /> Information
+                        <div
+                        t-if="state.activeTab === 'info'"
+                        class="ilx-kw-tab-indicator"
+                    />
+                    </button>
+                    <button
+                        t-att-class="state.activeTab === 'todo' ? 'ilx-kw-tab active' : 'ilx-kw-tab'"
+                        t-on-click="() => setTab('todo')"
+                    >
+                        <i class="fa fa-list me-1" /> To Do
+                        <div
+                        t-if="state.activeTab === 'todo'"
+                        class="ilx-kw-tab-indicator"
+                    />
+                    </button>
+                    <button
+                        t-att-class="state.activeTab === 'done' ? 'ilx-kw-tab active' : 'ilx-kw-tab'"
+                        t-on-click="() => setTab('done')"
+                    >
+                        <i class="fa fa-check-circle me-1" /> Done
+                        <div
+                        t-if="state.activeTab === 'done'"
+                        class="ilx-kw-tab-indicator"
+                    />
+                    </button>
+                </div>
+
+                <main class="ilx-kw-main ilx-kw-tab-content mt-3">
+                    <t t-if="state.activeTab === 'info'">
+                        <PickingInfoTab
+                            picking="state.picking"
+                            pickingTypeCode="state.pickingTypeCode"
+                            progressLabel="progressLabel"
+                            onSelectResponsible="selectResponsible"
+                        />
+                    </t>
+                    <t t-if="state.activeTab === 'todo'">
+                        <PickingMoveList
+                            moves="state.moves"
+                            moveLines="state.moveLines"
+                            moveStatsById="moveStatsById"
+                            highlightedMoveId="state.highlightedMoveId"
+                            onOpenWizard="openMoveWizard"
+                        />
+                    </t>
+                    <t t-if="state.activeTab === 'done'">
+                        <PickingDoneList
+                            lines="state.moveLines"
+                            highlightedMoveId="state.highlightedMoveId"
+                            onDeleteLine="deleteMoveLine"
+                        />
+                    </t>
+                    <div class="ilx-kw-main-spacer" />
+                </main>
+
+                <div class="ilx-kw-bottom-nav">
+                    <button
+                        class="ilx-kw-nav-item flex-1"
+                        t-on-click="savePicking"
+                        t-att-disabled="state.isSaving"
+                    >
+                        <div class="ilx-kw-nav-pill">
+                            <i class="fa fa-save" />
+                        </div>
+                        <span>SAVE</span>
+                    </button>
+
+                    <button
+                        class="ilx-kw-nav-item active flex-1"
+                        t-on-click="validatePicking"
+                        t-att-disabled="state.isValidating"
+                    >
+                        <div class="ilx-kw-nav-pill">
+                            <i class="fa fa-check-circle" />
+                        </div>
+                        <span>VALIDATE</span>
+                    </button>
+
+                    <button
+                        class="ilx-kw-nav-item flex-1"
+                        t-on-click="cancelReservation"
+                        t-if="pendingMovesCount > 0"
+                        t-att-disabled="state.isValidating"
+                    >
+                        <div class="ilx-kw-nav-pill">
+                            <i class="fa fa-times" />
+                        </div>
+                        <span>Cancel reservation</span>
+                    </button>
+
+                    <button
+                        class="ilx-kw-nav-item flex-1"
+                        t-if="pendingMovesCount == 0"
+                        t-on-click="checkAvailability"
+                        t-att-disabled="state.isValidating"
+                    >
+                        <div class="ilx-kw-nav-pill">
+                            <i class="fa fa-refresh" />
+                        </div>
+                        <span>AVAILABILITY</span>
+                    </button>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.GroupRenderer">
+        <t
+            t-foreach="component.sortedGroupKeys(groups)"
+            t-as="groupKey"
+            t-key="groupKey"
+        >
+            <div class="ilx-kw-group-wrapper">
+                <t t-if="groupKey !== 'all'">
+                    <div
+                        class="ilx-kw-group-header"
+                        t-on-click="() => component.toggleGroup(path + '-' + groupKey)"
+                    >
+                        <div class="ilx-kw-group-title-container">
+                            <div class="ilx-kw-group-indicator" />
+                            <h2 class="ilx-kw-group-title">
+                                <t t-esc="component.getGroupLevelLabel(level)" />: <t
+                                t-esc="groupKey"
+                            />
+                            </h2>
+                        </div>
+                        <div class="ilx-kw-group-actions">
+                            <span class="ilx-kw-group-badge">
+                                <t
+                                t-esc="component.countGroupEntries(groups[groupKey])"
+                            /> Items
+                            </span>
+                        </div>
+                    </div>
+                </t>
+
+                <div
+                    t-if="!component.state.collapsedGroups[path + '-' + groupKey]"
+                    class="ilx-kw-group-body"
+                >
+                    <t t-if="Array.isArray(groups[groupKey])">
+                        <div class="ilx-kw-picking-cards">
+                            <t t-foreach="groups[groupKey]" t-as="p" t-key="p.id">
+                                <article
+                                    class="ilx-kw-picking-card"
+                                    t-on-click="() => component.openPicking(p.id)"
+                                >
+                                    <div class="ilx-kw-picking-card-top">
+                                        <div class="ilx-kw-picking-card-info">
+                                            <span class="ilx-kw-picking-code">
+                                                <t t-esc="p.name" />
+                                            </span>
+                                            <h3 class="ilx-kw-picking-partner">
+                                                <t
+                                                    t-esc="component.getPartnerName(p)"
+                                                />
+                                            </h3>
+                                        </div>
+                                        <div
+                                            class="ilx-kw-picking-card-status-col"
+                                            style="display: flex; align-items: center; gap: 4px;"
+                                        >
+                                            <span
+                                                t-att-class="p.state === 'assigned' ? 'ilx-kw-status-tag ilx-kw-status-tag--ready' : 'ilx-kw-status-tag'"
+                                            >
+                                                <t
+                                                    t-esc="component.getStateLabel(p).toUpperCase()"
+                                                />
+                                            </span>
+                                            <i
+                                                class="fa fa-chevron-right ilx-kw-picking-chevron"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="ilx-kw-divider" />
+
+                                    <div class="ilx-kw-picking-card-bottom">
+                                        <div class="ilx-kw-picking-meta-left">
+                                            <i class="fa fa-cubes ilx-kw-meta-icon" />
+                                            <span class="ilx-kw-meta-text">
+                                                <t t-esc="component.getSkuSummary(p)" />
+                                            </span>
+                                        </div>
+
+                                        <div class="ilx-kw-picking-meta-right">
+                                            <t t-if="component.isUrgentPicking(p)">
+                                                <span
+                                                    class="ilx-kw-meta-text text-danger"
+                                                ><i
+                                                    class="fa fa-exclamation-triangle me-1"
+                                                />Urgent</span>
+                                            </t>
+                                            <t t-else="">
+                                                <i
+                                                    class="fa fa-clock-o ilx-kw-meta-icon"
+                                                />
+                                                <span class="ilx-kw-meta-text">
+                                                    <t
+                                                        t-esc="component.getScheduleSummary(p)"
+                                                    />
+                                                </span>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </article>
+                            </t>
+                        </div>
+                    </t>
+                    <t t-if="!Array.isArray(groups[groupKey])">
+                        <t t-call="barcode_scanner.GroupRenderer">
+                            <t t-set="groups" t-value="groups[groupKey]" />
+                            <t t-set="path" t-value="path + '-' + groupKey" />
+                            <t t-set="level" t-value="level + 1" />
+                            <t t-set="component" t-value="component" />
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="barcode_scanner.PickingListScreen">
+        <div class="ilx-kw-screen ilx-kw-picking-list">
+            <header class="ilx-kw-header ilx-kw-header--elevated">
+                <button type="button" class="ilx-kw-icon-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-kw-header-title">Picking Operations</h1>
+                <div class="header-spacer" />
+            </header>
+
+            <main class="ilx-kw-main">
+                <div class="ilx-kw-search-section">
+                    <div class="ilx-kw-search-bar">
+                        <i class="fa fa-search ilx-kw-search-icon" />
+                        <input
+                            name="search"
+                            type="text"
+                            class="ilx-kw-search-input"
+                            placeholder="Scan or search pickings..."
+                            t-model="state.search"
+                        />
+                    </div>
+
+                    <div class="ilx-kw-filter-tools" t-on-click.stop="() => {}">
+                        <div class="ilx-kw-filter-toolbar">
+                            <button
+                                type="button"
+                                class="ilx-kw-tool-btn"
+                                t-att-class="{active: state.openMenu === 'filters', 'has-value': state.activeFilters.length}"
+                                t-on-click="() => this.toggleMenu('filters')"
+                            >
+                                <i class="fa fa-filter" />
+                                <span>Filters</span>
+                                <span
+                                    t-if="state.activeFilters.length"
+                                    class="ilx-kw-tool-count"
+                                    t-esc="state.activeFilters.length"
+                                />
+                                <i class="fa fa-caret-down" />
+                            </button>
+                            <button
+                                type="button"
+                                class="ilx-kw-tool-btn"
+                                t-att-class="{active: state.openMenu === 'group', 'has-value': state.groupByLevels.length}"
+                                t-on-click="() => this.toggleMenu('group')"
+                            >
+                                <i class="fa fa-layer-group" />
+                                <span>Group by</span>
+                                <i class="fa fa-caret-down" />
+                            </button>
+                            <div class="ilx-kw-tool-spacer" />
+                            <button
+                                type="button"
+                                class="ilx-kw-tool-btn ilx-kw-star-btn"
+                                t-att-class="{active: isCurrentFilterDefault}"
+                                t-att-title="starTitle"
+                                t-on-click="() => this.toggleDefaultFilter()"
+                            >
+                                <i
+                                    t-att-class="isCurrentFilterDefault ? 'fa fa-star' : 'fa fa-star-o'"
+                                />
+                            </button>
+
+                            <div
+                                class="ilx-kw-menu"
+                                t-if="state.openMenu === 'filters'"
+                            >
+                                <div class="ilx-kw-menu-section">
+                                    <div class="ilx-kw-menu-title">Quick filters</div>
+                                    <button
+                                        type="button"
+                                        class="ilx-kw-menu-option"
+                                        t-att-class="{selected: isReadyQuickActive}"
+                                        t-on-click="() => this.toggleReadyQuick()"
+                                    >
+                                        <i
+                                            class="fa"
+                                            t-att-class="isReadyQuickActive ? 'fa-check-square-o' : 'fa-square-o'"
+                                        />
+                                        <span t-esc="readyStateLabel" />
+                                    </button>
+                                </div>
+                                <div class="ilx-kw-menu-section">
+                                    <div class="ilx-kw-menu-title">Status</div>
+                                    <button
+                                        type="button"
+                                        class="ilx-kw-menu-option"
+                                        t-att-class="{selected: !state.activeFilters.includes('state')}"
+                                        t-on-click="() => this.setStateFilter('all')"
+                                    >
+                                        <i
+                                            class="fa"
+                                            t-att-class="!state.activeFilters.includes('state') ? 'fa-dot-circle-o' : 'fa-circle-o'"
+                                        />
+                                        <span>All</span>
+                                    </button>
+                                    <t
+                                        t-foreach="Object.entries(state.stateLabels)"
+                                        t-as="entry"
+                                        t-key="entry[0]"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="ilx-kw-menu-option"
+                                            t-att-class="{selected: state.activeFilters.includes('state') &amp;&amp; state.filterValues.state === entry[0]}"
+                                            t-on-click="() => this.setStateFilter(entry[0])"
+                                        >
+                                            <i
+                                                class="fa"
+                                                t-att-class="(state.activeFilters.includes('state') &amp;&amp; state.filterValues.state === entry[0]) ? 'fa-dot-circle-o' : 'fa-circle-o'"
+                                            />
+                                            <span t-esc="entry[1]" />
+                                        </button>
+                                    </t>
+                                </div>
+                                <div class="ilx-kw-menu-section">
+                                    <div class="ilx-kw-menu-title">Date</div>
+                                    <t
+                                        t-foreach="dateFilterOptions"
+                                        t-as="opt"
+                                        t-key="opt.value || 'all'"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="ilx-kw-menu-option"
+                                            t-att-class="{selected: isDateOptionSelected(opt.value)}"
+                                            t-on-click="() => this.setDateFilter(opt.value)"
+                                        >
+                                            <i
+                                                class="fa"
+                                                t-att-class="isDateOptionSelected(opt.value) ? 'fa-dot-circle-o' : 'fa-circle-o'"
+                                            />
+                                            <span t-esc="opt.label" />
+                                        </button>
+                                    </t>
+                                    <div
+                                        class="ilx-kw-menu-custom-date"
+                                        t-if="state.filterValues.date &amp;&amp; state.filterValues.date.startsWith('custom:')"
+                                    >
+                                        <input
+                                            type="date"
+                                            class="ilx-kw-filter-date-input"
+                                            t-att-value="state.filterValues.date ? state.filterValues.date.substring(7) : ''"
+                                            t-on-change="(ev) => this.setCustomDate(ev.target.value)"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ilx-kw-menu" t-if="state.openMenu === 'group'">
+                                <div class="ilx-kw-menu-section">
+                                    <div class="ilx-kw-menu-title">Group by</div>
+                                    <t
+                                        t-foreach="groupOrder"
+                                        t-as="group"
+                                        t-key="group"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="ilx-kw-menu-option"
+                                            t-att-class="{selected: state.groupByLevels.includes(group)}"
+                                            t-on-click="() => this.toggleGroupLevel(group)"
+                                        >
+                                            <i
+                                                class="fa"
+                                                t-att-class="state.groupByLevels.includes(group) ? 'fa-check-square-o' : 'fa-square-o'"
+                                            />
+                                            <span t-esc="groupLabels[group] || group" />
+                                        </button>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="ilx-kw-facets"
+                            t-if="state.activeFilters.length || state.groupByLevels.length"
+                        >
+                            <t
+                                t-foreach="state.activeFilters"
+                                t-as="filter"
+                                t-key="filter"
+                            >
+                                <span class="ilx-kw-facet">
+                                    <span class="ilx-kw-facet-text"><t
+                                        t-esc="filterLabels[filter]"
+                                    />: <t
+                                        t-esc="getFilterDisplayValue(filter)"
+                                    /></span>
+                                    <button
+                                        type="button"
+                                        class="ilx-kw-facet-remove"
+                                        t-on-click="() => this.removeFilter(filter)"
+                                    >
+                                        <i class="fa fa-times" />
+                                    </button>
+                                </span>
+                            </t>
+                            <t
+                                t-foreach="state.groupByLevels"
+                                t-as="group"
+                                t-key="group"
+                            >
+                                <span class="ilx-kw-facet ilx-kw-facet--group">
+                                    <span class="ilx-kw-facet-text">
+                                        <i class="fa fa-layer-group" />
+                                        <t t-esc="groupLabels[group] || group" />
+                                    </span>
+                                    <button
+                                        type="button"
+                                        class="ilx-kw-facet-remove"
+                                        t-on-click="() => this.removeGroup(group)"
+                                    >
+                                        <i class="fa fa-times" />
+                                    </button>
+                                </span>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ilx-kw-picking-cards">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading queue...</div>
+                    </t>
+                    <t t-elif="filteredPickings.length">
+                        <t t-call="barcode_scanner.GroupRenderer">
+                            <t t-set="groups" t-value="state.groupedPickings" />
+                            <t t-set="path" t-value="'root'" />
+                            <t t-set="level" t-value="0" />
+                            <t t-set="component" t-value="this" />
+                        </t>
+                    </t>
+                    <t t-else="">
+                        <div class="empty-state ilx-queue-empty-state">
+                            <div class="empty-title">No pending pickings</div>
+                            <div class="empty-subtitle">
+                                Adjust filters or scan a picking name to continue.
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.UserSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Select Responsible</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search by name or login..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">AVAILABLE USERS</h2>
+
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading users...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredUsers" t-as="user" t-key="user.id">
+                            <div
+                                t-att-class="state.selectedUser?.id === user.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectUser(user)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <t t-if="user.image_url">
+                                            <img
+                                                t-att-src="user.image_url"
+                                                t-on-error="() => this.onImageError(user)"
+                                            />
+                                        </t>
+                                        <t t-else="">
+                                            <div class="ilx-emp-v2-avatar-placeholder">
+                                                <t
+                                                    t-esc="user.name.charAt(0).toUpperCase()"
+                                                />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="user.name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-esc="user.login" />
+                                    </span>
+                                </div>
+
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedUser?.id === user.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredUsers.length === 0"
+                            class="text-center p-4 ilx-empty-text"
+                        >
+                            No users found.
+                        </div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    t-att-class="!state.selectedUser ? 'ilx-emp-v2-confirm-btn disabled' : 'ilx-emp-v2-confirm-btn'"
+                    t-on-click="confirmSelection"
+                >
+                    Confirm Responsible
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.MoveWizardScreen">
+        <div class="ilx-v2-screen">
+            <t t-if="state.loading">
+                <div class="text-center p-4">Loading move...</div>
+            </t>
+            <t t-else="">
+                <header class="ilx-mw-v2-header">
+                    <button class="ilx-v2-back-btn ilx-btn-48" t-on-click="goBack">
+                        <i class="fa fa-arrow-left" />
+                    </button>
+                    <h2 class="ilx-mw-v2-title">
+                        <t t-esc="state.move?.product_id?.[1]" />
+                    </h2>
+                    <button class="ilx-v2-back-btn ilx-btn-48 invisible">
+                        <i class="fa fa-ellipsis-v" />
+                    </button>
+                </header>
+
+                <div class="ilx-mw-v2-main">
+                    <div class="ilx-mw-v2-card">
+                        <div class="ilx-mw-v2-task-top">
+                            <div>
+                                <span class="ilx-mw-v2-eyebrow">TASK STATUS</span>
+                                <h3 class="ilx-mw-v2-task-title">Move Operation</h3>
+                                <div
+                                    style="font-size: 0.875rem; color: var(--ilx-on-surface-variant, #6b7280); margin-top: 2px;"
+                                >
+                                    <i class="fa fa-cube" />
+                                    <t t-esc="state.move?.product_id?.[1]" />
+                                </div>
+                            </div>
+                            <div class="ilx-mw-v2-badge-todo">
+                                <i class="fa fa-clipboard" /> TO DO
+                            </div>
+                        </div>
+                        <div class="ilx-mw-v2-progress-bg">
+                            <div
+                                class="ilx-mw-v2-progress-fill"
+                                t-att-style="'width: ' + (demandQty > 0 ? (doneQty / demandQty) * 100 : 0) + '%'"
+                            />
+                        </div>
+                        <div class="ilx-mw-v2-progress-labels">
+                            <span><t t-esc="doneQty" /> Picked</span>
+                            <span>
+                                <strong><t t-esc="demandQty" /> Required</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                    <t
+                        t-if="hasLotGroup and isTracked and (canUseExistingLot or canCreateLot)"
+                    >
+                        <div
+                            t-if="canUseExistingLot and canCreateLot"
+                            class="ilx-mw-v2-segmented"
+                        >
+                            <button
+                                t-att-class="state.mode === 'pick' ? 'ilx-mw-v2-segment-btn active' : 'ilx-mw-v2-segment-btn'"
+                                t-on-click="() => setMode('pick')"
+                            >
+                                Pick Existing Lot
+                            </button>
+                            <button
+                                t-att-class="state.mode === 'create_lot' ? 'ilx-mw-v2-segment-btn active' : 'ilx-mw-v2-segment-btn'"
+                                t-on-click="() => setMode('create_lot')"
+                            >
+                                Create New Lot
+                            </button>
+                        </div>
+
+                        <div class="ilx-v2-field-group">
+                            <label class="ilx-v2-label">
+                                <t t-esc="lotFieldLabel" />
+                            </label>
+                            <t t-if="canUseExistingLot and state.mode === 'pick'">
+                                <div class="ilx-mw-v2-input-box">
+                                    <i class="fa fa-barcode ilx-mw-v2-input-icon" />
+                                    <select
+                                        name="lot_id"
+                                        class="ilx-mw-v2-input"
+                                        t-on-change="onLotChange"
+                                    >
+                                        <option
+                                            value=""
+                                            t-att-selected="!selectedLotIdNumber"
+                                        >Select lot</option>
+                                        <t
+                                            t-foreach="realLots"
+                                            t-as="lot"
+                                            t-key="lot.id"
+                                        >
+                                            <option
+                                                t-att-value="lot.id"
+                                                t-att-selected="lot.id === selectedLotIdNumber"
+                                            >
+                                                <t t-esc="lot.name" />
+                                            </option>
+                                        </t>
+                                    </select>
+                                </div>
+                            </t>
+                            <t t-if="canCreateLot and state.mode === 'create_lot'">
+                                <div class="ilx-mw-v2-input-box mb-2">
+                                    <i class="fa fa-barcode ilx-mw-v2-input-icon" />
+                                    <input
+                                        name="new_lot_name"
+                                        class="ilx-mw-v2-input"
+                                        t-model="state.newLotName"
+                                        placeholder="Enter lot/serial"
+                                        data-enable-barcode="true"
+                                    />
+                                </div>
+                            </t>
+                        </div>
+                    </t>
+
+                    <div class="ilx-v2-field-group">
+                        <label class="ilx-v2-label">Quantity to pick</label>
+                        <div
+                            class="ilx-mw-v2-qty-row"
+                            role="group"
+                            aria-label="Quantity stepper"
+                        >
+                            <button
+                                class="ilx-mw-v2-qty-btn"
+                                t-att-disabled="!canDecrement or state.loading"
+                                t-att-aria-label="'Decrease quantity by one'"
+                                t-on-click="() => this.adjustQty(-1)"
+                            >
+                                <i class="fa fa-minus" />
+                            </button>
+                            <input
+                                class="ilx-mw-v2-qty-input"
+                                type="number"
+                                t-model="state.qtyPicked"
+                                t-att-max="quantityInputMax"
+                                t-att-aria-label="'Quantity'"
+                                t-on-change="(ev) => this.setQty(ev.target.value)"
+                                data-enable-barcode="true"
+                            />
+                            <button
+                                class="ilx-mw-v2-qty-btn"
+                                t-att-disabled="!canIncrement or state.loading"
+                                t-att-aria-label="'Increase quantity by one'"
+                                t-on-click="() => this.adjustQty(1)"
+                            >
+                                <i class="fa fa-plus" />
+                            </button>
+                            <button
+                                t-if="canFulfill"
+                                class="ilx-mw-v2-qty-btn ilx-mw-v2-qty-btn--fulfill"
+                                t-att-aria-label="'Fulfill remaining'"
+                                t-on-click="fulfillRemaining"
+                            >
+                                +<t t-esc="fulfillIncrement" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <t t-if="canEditLocations">
+                        <div class="ilx-v2-field-group">
+                            <label class="ilx-v2-label">Source location</label>
+                            <div
+                                class="ilx-tx-v2-select-card"
+                                t-on-click="selectSourceLocation"
+                            >
+                                <div class="ilx-tx-v2-icon">
+                                    <i class="fa fa-map-marker" />
+                                </div>
+                                <div class="ilx-tx-v2-text">
+                                    <t t-if="state.sourceLocation">
+                                        <t t-esc="state.sourceLocation.display_name" />
+                                    </t>
+                                    <t t-else="">Select source</t>
+                                </div>
+                                <div class="ilx-tx-v2-chevron">
+                                    <i class="fa fa-chevron-down" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ilx-v2-field-group">
+                            <label class="ilx-v2-label">Destination location</label>
+                            <div
+                                class="ilx-tx-v2-select-card"
+                                t-on-click="selectDestLocation"
+                            >
+                                <div class="ilx-tx-v2-icon">
+                                    <i class="fa fa-sign-in" />
+                                </div>
+                                <div class="ilx-tx-v2-text">
+                                    <t t-if="state.destLocation">
+                                        <t t-esc="state.destLocation.display_name" />
+                                    </t>
+                                    <t t-else="">Select destination</t>
+                                </div>
+                                <div class="ilx-tx-v2-chevron">
+                                    <i class="fa fa-chevron-down" />
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+
+                <footer class="ilx-v2-footer">
+                    <button class="ilx-v2-btn-primary" t-on-click="confirmPick">
+                        <t t-esc="confirmLabel" />
+                        <i class="fa fa-arrow-right ms-2" />
+                    </button>
+                    <button class="ilx-v2-btn-secondary" t-on-click="goBack">
+                        <t t-esc="backLabel" />
+                    </button>
+                </footer>
+            </t>
+        </div>
+    </t>
+    <t t-name="barcode_scanner.InternalTransferScreen">
+        <div class="ilx-v2-screen">
+            <header class="ilx-v2-header">
+                <button class="ilx-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-v2-header-title">Internal Transfer</h1>
+                <div style="width: 40px;" />
+            </header>
+
+            <div class="ilx-v2-main">
+                <div class="ilx-v2-field-group">
+                    <div class="ilx-v2-label">ORIGIN LOCATION</div>
+                    <div
+                        class="ilx-tx-v2-select-card"
+                        t-on-click="selectOriginLocation"
+                    >
+                        <div class="ilx-tx-v2-icon">
+                            <i class="fa fa-map-marker" />
+                        </div>
+                        <div class="ilx-tx-v2-text">
+                            <t t-if="state.origin_location">
+                                <t t-esc="state.origin_location.display_name" />
+                            </t>
+                            <t t-else="">Select origin</t>
+                        </div>
+                        <div class="ilx-tx-v2-chevron">
+                            <i class="fa fa-chevron-down" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ilx-v2-field-group">
+                    <div class="ilx-v2-label">DESTINATION LOCATION</div>
+                    <div
+                        class="ilx-tx-v2-select-card"
+                        t-on-click="selectDestinationLocation"
+                    >
+                        <div class="ilx-tx-v2-icon">
+                            <i class="fa fa-sign-in" />
+                        </div>
+                        <div class="ilx-tx-v2-text">
+                            <t t-if="state.destination_location">
+                                <t t-esc="state.destination_location.display_name" />
+                            </t>
+                            <t t-else="">Select destination</t>
+                        </div>
+                        <div class="ilx-tx-v2-chevron">
+                            <i class="fa fa-chevron-down" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ilx-v2-field-group">
+                    <div class="ilx-v2-label">RESPONSIBLE</div>
+                    <div class="ilx-tx-v2-select-card" t-on-click="selectResponsible">
+                        <div class="ilx-tx-v2-icon">
+                            <i class="fa fa-user-o" />
+                        </div>
+                        <div class="ilx-tx-v2-text">
+                            <t t-if="state.responsible">
+                                <t t-esc="state.responsible.name" />
+                            </t>
+                            <t t-else="">Select responsible</t>
+                        </div>
+                        <div class="ilx-tx-v2-chevron">
+                            <i class="fa fa-chevron-down" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ilx-v2-field-group">
+                    <div class="ilx-tx-v2-section-header">
+                        <div
+                            class="ilx-v2-label"
+                            style="margin:0;"
+                        >DETAILED OPERATIONS</div>
+                        <div class="ilx-tx-v2-items-badge">
+                            <t t-esc="state.lines.length" /> ITEM<t
+                            t-if="state.lines.length !== 1"
+                        >S</t>
+                        </div>
+                    </div>
+
+                    <div class="ilx-tx-v2-lines-container">
+                        <t
+                            t-foreach="state.lines"
+                            t-as="line"
+                            t-key="line.product_id + '_' + (line.lot_id || '')"
+                        >
+                            <div class="ilx-tx-v2-line-card">
+                                <button
+                                    class="ilx-tx-v2-line-delete"
+                                    t-on-click="() => this.removeLine(line)"
+                                >
+                                    <i class="fa fa-times" />
+                                </button>
+                                <div class="ilx-tx-v2-line-top">
+                                    <div class="ilx-tx-v2-line-name">
+                                        <t t-esc="line.product_name" />
+                                    </div>
+                                    <div class="ilx-tx-v2-qty-pill">
+                                        <input
+                                            class="ilx-tx-v2-qty-input"
+                                            type="number"
+                                            t-model="line.qty"
+                                            min="1"
+                                            t-att-readonly="line.tracking === 'serial'"
+                                        />
+                                        <span class="ilx-tx-v2-qty-unit">UNITS</span>
+                                    </div>
+                                </div>
+                                <div class="ilx-tx-v2-line-lot">
+                                    <t t-if="line.tracking !== 'none'">
+                                        <select
+                                            class="ilx-tx-v2-lot-select"
+                                            t-model="line.lot_id"
+                                            t-on-change="(ev) => this.onLotChanged(line, ev)"
+                                        >
+                                            <option value="">Select lot</option>
+                                            <t
+                                                t-foreach="line.lots"
+                                                t-as="lot"
+                                                t-key="lot.id"
+                                            >
+                                                <option t-att-value="lot.id">
+                                                    <t t-esc="lot.name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </t>
+                                    <t t-else="">
+                                        <i class="fa fa-tag me-1" />
+                                        <t t-esc="line.lot_name || 'No lot'" />
+                                    </t>
+                                </div>
+                                <div class="ilx-tx-v2-line-divider" />
+                                <div
+                                    class="ilx-tx-v2-line-bottom"
+                                    style="display: flex; justify-content: space-between; align-items: center;"
+                                >
+                                    <span><i class="fa fa-cube" /> Reserved: <t
+                                        t-esc="line.qty || '0.00'"
+                                    /></span>
+                                    <t t-if="line.available_qty !== undefined">
+                                        <span
+                                            t-att-style="line.is_available ? 'color: #16a34a; font-weight: 600;' : 'color: #dc2626; font-weight: 600;'"
+                                        >
+                                            <i class="fa fa-database" /> Available: <t
+                                            t-esc="line.available_qty"
+                                        />
+                                        </span>
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+
+                    <button
+                        class="ilx-v2-btn-primary"
+                        style="margin-top:1rem; background: #ffffff; color: #111827; border: 1px solid #e5e7eb; box-shadow: none;"
+                        t-on-click="addProduct"
+                    >
+                        <i class="fa fa-plus" /> Add a line
+                    </button>
+                </div>
+            </div>
+
+            <footer class="ilx-v2-footer" style="display:flex; gap:1rem;">
+                <button
+                    class="ilx-v2-btn-primary"
+                    style="background: #ffffff; color: #111827; border: 1px solid #e5e7eb; box-shadow: none;"
+                    t-on-click="checkAvailability"
+                    t-att-disabled="state.isCheckingAvailability or state.isValidating"
+                >
+                    <i class="fa fa-check-square-o" />
+                    <span>CHECK</span>
+                </button>
+                <button
+                    class="ilx-v2-btn-primary"
+                    t-on-click="validateTransfer"
+                    t-att-disabled="state.isValidating or state.isCheckingAvailability"
+                >
+                    <i class="fa fa-check" />
+                    <span>VALIDATE</span>
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.LocationSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">
+                    <t t-if="props.params.title">
+                        <t t-esc="props.params.title" />
+                    </t>
+                    <t t-else="">Select Location</t>
+                </h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search location..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">AVAILABLE LOCATIONS</h2>
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading locations...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredLocations" t-as="loc" t-key="loc.id">
+                            <div
+                                t-att-class="state.selectedLocation?.id === loc.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectLocation(loc)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <div
+                                            class="ilx-emp-v2-avatar-placeholder"
+                                            style="background: #EAEAEA; color: #4A2B4D; font-size: 1.2rem;"
+                                        >
+                                            <i class="fa fa-map-marker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="loc.display_name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t
+                                            t-esc="loc.usage ? loc.usage.toUpperCase() : 'LOCATION'"
+                                        />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedLocation?.id === loc.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredLocations.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No locations found.</div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    class="ilx-emp-v2-confirm-btn"
+                    t-on-click="confirmSelection"
+                    t-att-disabled="!state.selectedLocation"
+                    t-att-style="!state.selectedLocation ? 'opacity: 0.5; cursor: not-allowed;' : ''"
+                >
+                    Confirm Location
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.ProductSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Select Product</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search by name or SKU..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">AVAILABLE PRODUCTS</h2>
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading products...</div>
+                    </t>
+                    <t t-else="">
+                        <t
+                            t-foreach="filteredProducts"
+                            t-as="product"
+                            t-key="product.id"
+                        >
+                            <div
+                                t-att-class="state.selectedProduct?.id === product.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectProduct(product)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <t t-if="product.image_url">
+                                            <img
+                                                t-att-src="product.image_url"
+                                                t-on-error="() => this.onImageError(product)"
+                                            />
+                                        </t>
+                                        <t t-else="">
+                                            <div class="ilx-emp-v2-avatar-placeholder">
+                                                <t
+                                                    t-esc="product.name.charAt(0).toUpperCase()"
+                                                />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="product.name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-esc="product.default_code || 'No SKU'" />
+                                        <span class="ilx-emp-v2-dot-sep">•</span>
+                                        $<t
+                                        t-esc="product.standard_price ? product.standard_price.toFixed(2) : '0.00'"
+                                    />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedProduct?.id === product.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredProducts.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No products found.</div>
+                    </t>
+                </div>
+            </main>
+
+            <div
+                t-if="state.selectedProduct and props.params?.mode !== 'quick_info_product'"
+                style="padding: 0 1rem; margin-bottom: 0.5rem;"
+            >
+                <div class="ilx-mw-v2-qty-row" style="justify-content: center;">
+                    <button class="ilx-mw-v2-qty-btn" t-on-click="decrementQty">
+                        <i class="fa fa-minus" />
+                    </button>
+                    <input
+                        type="number"
+                        class="ilx-mw-v2-qty-input"
+                        t-att-value="state.qty"
+                        t-on-input="onQtyInput"
+                        min="1"
+                        style="max-width: 80px;"
+                    />
+                    <button class="ilx-mw-v2-qty-btn" t-on-click="incrementQty">
+                        <i class="fa fa-plus" />
+                    </button>
+                    <span
+                        style="font-size: 0.85rem; color: var(--ilx-on-surface-variant); font-weight: 500;"
+                    >UNITS</span>
+                </div>
+            </div>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    class="ilx-emp-v2-confirm-btn"
+                    t-on-click="confirmSelection"
+                    t-att-disabled="!state.selectedProduct"
+                    t-att-style="!state.selectedProduct ? 'opacity: 0.5; cursor: not-allowed;' : ''"
+                >
+                    Confirm Product
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.PickingMoveCard" owl="1">
+        <button
+            type="button"
+            class="ilx-kw-picking-card ilx-picking-move-card"
+            t-att-class="props.highlighted ? 'ilx-kw-picking-card ilx-picking-move-card is-highlighted' : 'ilx-kw-picking-card ilx-picking-move-card'"
+            t-on-click="props.onClick"
+            style="border: none; text-align: left; width: 100%; cursor: pointer;"
+        >
+            <div class="ilx-kw-picking-card-top">
+                <div class="ilx-kw-picking-card-info">
+                    <span class="ilx-kw-picking-code">Scan target</span>
+                    <h3 class="ilx-kw-picking-partner mb-1">
+                        <t t-esc="props.move.product_id[1]" />
+                    </h3>
+                </div>
+                <div
+                    class="ilx-kw-picking-card-status"
+                    style="align-items: center; flex-direction: row; gap: 8px;"
+                >
+                    <span class="ilx-kw-group-badge">
+                        <t t-esc="props.stats?.completionLabel || '0%'" />
+                    </span>
+                    <i
+                        class="fa fa-chevron-right ilx-kw-picking-chevron"
+                        role="img"
+                        aria-label="Open"
+                    />
+                </div>
+            </div>
+            <hr class="ilx-kw-divider" />
+            <div class="ilx-kw-picking-card-bottom" style="flex-wrap: wrap; gap: 8px;">
+                <div class="ilx-kw-picking-meta-left">
+                    <span class="ilx-kw-meta-text">Demand: <strong>
+                        <t t-esc="demandQty" />
+                    </strong></span>
+                </div>
+                <div class="ilx-kw-picking-meta-right" style="gap: 16px;">
+                    <span class="ilx-kw-meta-text" style="color: #ff9800;">Rem: <strong>
+                        <t t-esc="remainingQty" />
+                    </strong></span>
+                    <span class="ilx-kw-meta-text" style="color: #4caf50;">Done: <strong
+                    >
+                        <t t-esc="doneQty" />
+                    </strong></span>
+                </div>
+            </div>
+            <div
+                class="ilx-progress-bar"
+                role="progressbar"
+                t-att-aria-valuenow="doneQty"
+                t-att-aria-valuemin="0"
+                t-att-aria-valuemax="demandQty"
+                style="height: 6px; background: var(--kw-surface-low); border-radius: 3px; overflow: hidden; width: 100%; margin-top: 8px;"
+            >
+                <div
+                    class="ilx-progress-bar__value"
+                    t-att-style="`width: ${Math.min((props.stats?.completion || 0) * 100, 100)}%; height: 100%; background: var(--kw-primary-container); transition: width 0.3s;`"
+                />
+            </div>
+            <ul
+                t-if="linesForMove.length"
+                class="ilx-picking-move-card__lots"
+                style="list-style: none; padding: 0; margin-top: 12px; margin-bottom: 0;"
+            >
+                <li
+                    t-foreach="linesForMove"
+                    t-as="line"
+                    t-key="line.id"
+                    style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--kw-on-surface-variant); margin-bottom: 4px;"
+                >
+                    <strong>
+                        <i class="fa fa-tag me-1" />
+                        <t t-esc="line.lot_id ? line.lot_id[1] : 'No lot'" />
+                    </strong>
+                    <span>
+                        <t t-esc="line.quantity - line.qty_picked" />
+                        <t t-esc="pendingLabel" />
+                    </span>
+                </li>
+            </ul>
+            <div
+                t-if="props.move.lot_names and props.move.lot_names.length"
+                class="ilx-picking-move-card__chips"
+                style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;"
+            >
+                <t t-foreach="props.move.lot_names" t-as="lot" t-key="lot">
+                    <span
+                        class="ilx-kw-chip ilx-kw-chip--default"
+                        style="height: 24px; padding: 0 8px; font-size: 0.75rem;"
+                    >
+                        <t t-esc="lot" />
+                    </span>
+                </t>
+            </div>
+        </button>
+    </t>
+
+    <t t-name="barcode_scanner.PickingMoveList" owl="1">
+        <t t-if="props.moves.length > 0">
+            <t t-foreach="props.moves" t-as="move" t-key="move.id">
+                <t t-if="showMove(move)">
+                    <PickingMoveCard
+                        move="move"
+                        moveLines="props.moveLines"
+                        stats="getMoveStats(move)"
+                        highlighted="props.highlightedMoveId === move.id"
+                        onClick="() => props.onOpenWizard(move)"
+                    />
+                </t>
+            </t>
+        </t>
+        <t t-else="">
+            <div class="ilx-kw-cta-banner" style="background: var(--ilx-success-bg);">
+                <i
+                    class="fa fa-check-circle ilx-kw-cta-icon"
+                    style="color: var(--ilx-success);"
+                />
+                <div class="ilx-kw-cta-text">
+                    <strong
+                        style="color: var(--ilx-success);"
+                    >All operations completed</strong>
+                    <span
+                        style="color: var(--ilx-on-surface-variant);"
+                    >There are no pending products for this picking.</span>
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="barcode_scanner.PickingDoneCard" owl="1">
+        <button
+            type="button"
+            class="ilx-kw-picking-card ilx-picking-done-card"
+            t-att-class="props.highlighted ? 'ilx-kw-picking-card ilx-picking-done-card is-highlighted' : 'ilx-kw-picking-card ilx-picking-done-card'"
+            t-on-click="() => props.onDelete(props.line.id)"
+            style="border: none; text-align: left; width: 100%; cursor: pointer;"
+        >
+            <div class="ilx-kw-picking-card-top">
+                <div class="ilx-kw-picking-card-info">
+                    <span
+                        class="ilx-kw-picking-code"
+                        style="color: #4caf50;"
+                    >Completed</span>
+                    <h3 class="ilx-kw-picking-partner mb-1">
+                        <t t-esc="props.line.product_id[1]" />
+                    </h3>
+                    <span
+                        class="ilx-kw-picking-code"
+                        style="color: var(--kw-on-surface-variant); font-weight: normal; font-size: 0.75rem;"
+                    >Tap to remove this confirmation</span>
+                </div>
+                <div class="ilx-kw-picking-card-status">
+                    <span
+                        class="ilx-kw-status-tag ilx-kw-status-tag--ready"
+                        style="background: #e8f5e9; color: #2e7d32;"
+                    >
+                        <i class="fa fa-check me-1" role="img" aria-label="Done" />
+                        <t t-esc="props.line.qty_picked" />
+                    </span>
+                </div>
+            </div>
+            <t t-if="props.line.lot_id or props.line.lot_name">
+                <hr class="ilx-kw-divider" />
+                <div class="ilx-kw-picking-card-bottom">
+                    <div class="ilx-kw-picking-meta-left">
+                        <i
+                            class="fa fa-tag ilx-kw-meta-icon"
+                            style="color: var(--kw-on-surface-variant);"
+                        />
+                        <span
+                            t-if="props.line.lot_id"
+                            class="ilx-kw-meta-text"
+                            style="color: var(--kw-on-surface-variant);"
+                        >
+                            <t t-esc="props.line.lot_id[1]" />
+                        </span>
+                        <span
+                            t-elif="props.line.lot_name"
+                            class="ilx-kw-meta-text"
+                            style="color: var(--kw-on-surface-variant);"
+                        >
+                            <t t-esc="props.line.lot_name" />
+                        </span>
+                    </div>
+                </div>
+            </t>
+        </button>
+    </t>
+
+    <t t-name="barcode_scanner.PickingDoneList" owl="1">
+        <t t-if="doneLines.length">
+            <t t-foreach="doneLines" t-as="line" t-key="line.id">
+                <PickingDoneCard
+                    line="line"
+                    highlighted="props.highlightedMoveId === line.move_id[0]"
+                    onDelete="props.onDeleteLine"
+                />
+            </t>
+        </t>
+        <t t-else="">
+            <div
+                class="ilx-kw-cta-banner"
+                style="background: var(--ilx-surface-container-low);"
+            >
+                <i
+                    class="fa fa-inbox ilx-kw-cta-icon"
+                    style="color: var(--ilx-on-surface-variant);"
+                />
+                <div class="ilx-kw-cta-text">
+                    <strong
+                        style="color: var(--ilx-on-surface);"
+                    >No confirmed scans yet</strong>
+                    <span
+                        style="color: var(--ilx-on-surface-variant);"
+                    >Process products from the To Do tab to build the done log here.</span>
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="barcode_scanner.ImageViewer" owl="1">
+        <div class="image-viewer-overlay">
+            <div
+                class="image-viewer"
+                t-on-touchstart="onTouchStart"
+                t-on-touchend="onTouchEnd"
+            >
+                <button class="close-btn close-img" t-on-click="props.onClose">
+                    &#10005;
+                </button>
+                <button
+                    class="delete-photo-btn"
+                    title="Delete picture"
+                    t-on-click="deleteImage"
+                >
+                    <i class="fa fa-trash" />
+                </button>
+                <button class="nav nav-img prev" t-on-click="prevImage">
+                    &#8249;
+                </button>
+                <t t-if="currentImageSrc">
+                    <img t-att-src="currentImageSrc" alt="Picking attachment" />
+                </t>
+                <button class="nav nav-img next" t-on-click="nextImage">
+                    &#8250;
+                </button>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.QuickInfoScreen">
+        <div class="ilx-v2-screen">
+            <header class="ilx-v2-header">
+                <button class="ilx-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-v2-header-title">Quick Info</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <t t-if="state.resultDetails">
+                <div class="ilx-v2-main" style="padding: 0;">
+                    <div
+                        class="ilx-kw-tab-content"
+                        style="flex: 1; display: flex; flex-direction: column;"
+                    >
+                        <div
+                            class="ilx-kw-card"
+                            style="flex: 1; display: flex; flex-direction: column; gap: 12px;"
+                        >
+                            <div class="ilx-kw-info-row">
+                                <div
+                                    class="ilx-kw-icon-box"
+                                    t-att-class="state.resultType === 'product' ? 'ilx-kw-bg-orange' : 'ilx-kw-bg-brown'"
+                                    style="width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;"
+                                >
+                                    <i
+                                        t-att-class="'fa ' + (state.resultType === 'product' ? 'fa-archive' : 'fa-map-marker')"
+                                    />
+                                </div>
+                                <div class="ilx-kw-info-text">
+                                    <span class="ilx-kw-eyebrow">
+                                        <t
+                                            t-esc="state.resultType === 'product' ? 'PRODUCT' : 'LOCATION'"
+                                        />
+                                    </span>
+                                    <strong class="ilx-kw-title">
+                                        <t
+                                            t-esc="state.resultDetails.display_name || state.resultDetails.name"
+                                        />
+                                    </strong>
+                                </div>
+                            </div>
+                            <t t-if="state.resultType === 'product'">
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-barcode" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span class="ilx-kw-eyebrow">Barcode</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                                t-esc="state.resultDetails.barcode || '—'"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-tag" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span class="ilx-kw-eyebrow">SKU</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                                t-esc="state.resultDetails.default_code || '—'"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-dollar" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span
+                                            class="ilx-kw-eyebrow"
+                                        >Cost / Sale Price</span>
+                                        <span class="ilx-kw-value">$<t
+                                            t-esc="state.resultDetails.standard_price"
+                                        /> / $<t
+                                            t-esc="state.resultDetails.list_price"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-cube" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span
+                                            class="ilx-kw-eyebrow"
+                                        >Tracking / Type</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                            t-set="trackingLabels"
+                                            t-value="{'serial': 'By Serial', 'lot': 'By Lots', 'none': 'No Tracking'}"
+                                        />
+                                            <t
+                                            t-set="typeLabel"
+                                            t-value="state.resultDetails.is_storable ? 'Storable Product' : (state.resultDetails.type === 'service' ? 'Service' : state.resultDetails.type === 'combo' ? 'Combo' : 'Consumable')"
+                                        />
+                                            <t
+                                            t-esc="trackingLabels[state.resultDetails.tracking] || state.resultDetails.tracking"
+                                        /> · <t t-esc="typeLabel" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-cubes" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span class="ilx-kw-eyebrow">On Hand</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                                t-esc="state.resultDetails.qty_available"
+                                            />
+                                            <t
+                                                t-esc="state.resultDetails.uom_id ? state.resultDetails.uom_id[1] : ''"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <t t-if="state.productStock.length">
+                                    <div
+                                        class="ilx-kw-info-row mt-3"
+                                        style="align-items: flex-start;"
+                                    >
+                                        <div
+                                            class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                        >
+                                            <i class="fa fa-map-marker" />
+                                        </div>
+                                        <div class="ilx-kw-info-text" style="flex: 1;">
+                                            <span
+                                                class="ilx-kw-eyebrow"
+                                            >Stock by Location (<t
+                                                t-esc="state.productStock.length"
+                                            />)</span>
+                                            <div style="margin-top: 4px;">
+                                                <t
+                                                    t-foreach="state.productStock"
+                                                    t-as="item"
+                                                    t-key="item.locationId"
+                                                >
+                                                    <div class="ilx-kw-stock-row">
+                                                        <span
+                                                            class="ilx-kw-stock-row__name"
+                                                        >
+                                                            <t
+                                                                t-esc="item.locationName"
+                                                            />
+                                                        </span>
+                                                        <span
+                                                            class="ilx-kw-stock-row__qty"
+                                                        >
+                                                            <t t-esc="item.quantity" />
+                                                        </span>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                                <t t-if="state.lot">
+                                    <div
+                                        class="ilx-kw-info-row mt-3"
+                                        style="align-items: flex-start;"
+                                    >
+                                        <div
+                                            class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                        >
+                                            <i class="fa fa-tags" />
+                                        </div>
+                                        <div class="ilx-kw-info-text" style="flex: 1;">
+                                            <span
+                                                class="ilx-kw-eyebrow"
+                                            >Scanned Lot / Serial</span>
+                                            <span class="ilx-kw-value">
+                                                <t t-esc="state.lot.name" />
+                                            </span>
+                                            <t t-if="state.lotStock.length">
+                                                <div style="margin-top: 4px;">
+                                                    <t
+                                                        t-foreach="state.lotStock"
+                                                        t-as="item"
+                                                        t-key="item.locationId"
+                                                    >
+                                                        <div class="ilx-kw-stock-row">
+                                                            <span
+                                                                class="ilx-kw-stock-row__name"
+                                                            >
+                                                                <t
+                                                                    t-esc="item.locationName"
+                                                                />
+                                                            </span>
+                                                            <span
+                                                                class="ilx-kw-stock-row__qty"
+                                                            >
+                                                                <t
+                                                                    t-esc="item.quantity"
+                                                                />
+                                                            </span>
+                                                        </div>
+                                                    </t>
+                                                </div>
+                                            </t>
+                                            <t t-else="">
+                                                <span
+                                                    class="ilx-kw-value"
+                                                    style="font-size: 0.85rem;"
+                                                >No stock on hand for this lot</span>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                            <t t-if="state.resultType === 'location'">
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-barcode" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span class="ilx-kw-eyebrow">Barcode</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                                t-esc="state.resultDetails.barcode || '—'"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="ilx-kw-info-row mt-3">
+                                    <div
+                                        class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                    >
+                                        <i class="fa fa-flag" />
+                                    </div>
+                                    <div class="ilx-kw-info-text">
+                                        <span class="ilx-kw-eyebrow">Usage</span>
+                                        <span class="ilx-kw-value">
+                                            <t
+                                                t-set="usageLabels"
+                                                t-value="{'customer': 'Customer', 'internal': 'Internal', 'supplier': 'Vendor', 'transit': 'Transit', 'view': 'View', 'inventory': 'Inventory Adjustment', 'production': 'Manufacturing', 'loss': 'Inventory Loss'}"
+                                            />
+                                            <t
+                                                t-esc="usageLabels[state.resultDetails.usage] || state.resultDetails.usage"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <t t-if="state.locationStock.length">
+                                    <div
+                                        class="ilx-kw-info-row mt-3"
+                                        style="align-items: flex-start;"
+                                    >
+                                        <div
+                                            class="ilx-kw-icon-box-small ilx-kw-bg-purple-light"
+                                        >
+                                            <i class="fa fa-cubes" />
+                                        </div>
+                                        <div class="ilx-kw-info-text" style="flex: 1;">
+                                            <span
+                                                class="ilx-kw-eyebrow"
+                                            >Current Stock (<t
+                                                t-esc="state.locationStock.length"
+                                            />)</span>
+                                            <div style="margin-top: 4px;">
+                                                <t
+                                                    t-foreach="paginatedStock"
+                                                    t-as="item"
+                                                    t-key="item.productId"
+                                                >
+                                                    <div class="ilx-kw-stock-row">
+                                                        <span
+                                                            class="ilx-kw-stock-row__name"
+                                                        >
+                                                            <t
+                                                                t-esc="item.productName"
+                                                            />
+                                                        </span>
+                                                        <span
+                                                            class="ilx-kw-stock-row__qty"
+                                                        >
+                                                            <t t-esc="item.quantity" />
+                                                        </span>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                            <t t-if="stockTotalPages > 1">
+                                                <div
+                                                    style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;"
+                                                >
+                                                    <button
+                                                        class="btn btn-sm btn-secondary"
+                                                        t-on-click="prevStockPage"
+                                                        t-att-disabled="state.stockPage === 0"
+                                                    >
+                                                        <i class="fa fa-chevron-left" />
+                                                    </button>
+                                                    <span
+                                                        style="font-size: 0.8rem; color: #666;"
+                                                    ><t
+                                                        t-esc="state.stockPage + 1"
+                                                    /> / <t
+                                                        t-esc="stockTotalPages"
+                                                    /></span>
+                                                    <button
+                                                        class="btn btn-sm btn-secondary"
+                                                        t-on-click="nextStockPage"
+                                                        t-att-disabled="state.stockPage >= stockTotalPages - 1"
+                                                    >
+                                                        <i
+                                                            class="fa fa-chevron-right"
+                                                        />
+                                                    </button>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="ilx-v2-main ilx-qi-v2-scan-view">
+                    <h2 class="ilx-qi-v2-scan-title">Quick Information</h2>
+                    <p
+                        class="ilx-qi-v2-scan-subtitle"
+                    >Scan a product or location barcode</p>
+
+                    <div class="ilx-qi-v2-cards" style="width: 100%;">
+                        <div
+                            class="ilx-qi-v2-card"
+                            t-on-click="openProductSelector"
+                            style="align-items: center; text-align: center;"
+                        >
+                            <div
+                                class="ilx-qi-v2-card-icon"
+                                style="background: #6A4C73; color: white; width: 64px; height: 64px; border-radius: 16px; margin-bottom: 0.5rem; position: relative; z-index: 2;"
+                            >
+                                <i class="fa fa-archive" />
+                            </div>
+                            <i
+                                class="fa fa-archive"
+                                style="position: absolute; right: 1rem; top: 1rem; font-size: 5rem; color: #f4f4f4; z-index: 1;"
+                            />
+                            <h3
+                                style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #51275E; position: relative; z-index: 2;"
+                            >Product</h3>
+                        </div>
+                        <div
+                            class="ilx-qi-v2-card"
+                            t-on-click="openLocationSelector"
+                            style="align-items: center; text-align: center;"
+                        >
+                            <div
+                                class="ilx-qi-v2-card-icon"
+                                style="background: #8D6E2E; color: white; width: 64px; height: 64px; border-radius: 16px; margin-bottom: 0.5rem; position: relative; z-index: 2;"
+                            >
+                                <i class="fa fa-map-marker" />
+                            </div>
+                            <i
+                                class="fa fa-map-marker"
+                                style="position: absolute; right: 1rem; top: 1rem; font-size: 5rem; color: #f4f4f4; z-index: 1;"
+                            />
+                            <h3
+                                style="margin: 0; font-size: 1.25rem; font-weight: 800; color: #8D6E2E; position: relative; z-index: 2;"
+                            >Location</h3>
+                        </div>
+                        <div
+                            class="ilx-qi-v2-card"
+                            style="align-items: center; text-align: center; cursor: default;"
+                        >
+                            <div
+                                class="ilx-qi-v2-card-icon"
+                                style="background: #2E7D32; color: white; width: 64px; height: 64px; border-radius: 16px; margin-bottom: 0.5rem; position: relative; z-index: 2;"
+                            >
+                                <i class="fa fa-barcode" />
+                            </div>
+                            <i
+                                class="fa fa-barcode"
+                                style="position: absolute; right: 1rem; top: 1rem; font-size: 5rem; color: #f4f4f4; z-index: 1;"
+                            />
+                            <h3
+                                style="margin: 0 0 0.75rem 0; font-size: 1.25rem; font-weight: 800; color: #2E7D32; position: relative; z-index: 2;"
+                            >Manual Barcode</h3>
+                            <input
+                                class="ilx-qi-v2-gs1-input"
+                                placeholder="Enter barcode"
+                                t-model="state.barcode"
+                                t-on-keydown="onInputKeydown"
+                                data-enable-barcode="true"
+                                style="position: relative; z-index: 2;"
+                            />
+                            <button
+                                class="ilx-qi-v2-barcode-btn"
+                                t-on-click="searchBarcode"
+                                style="position: relative; z-index: 2;"
+                            >
+                                <i class="fa fa-search me-2" /> Search Barcode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="barcode_scanner.PickingInfoTab" owl="1">
+        <div class="ilx-kw-tab-content">
+            <div class="ilx-kw-card">
+                <div class="ilx-kw-info-row">
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-orange">
+                        <i class="fa fa-building" />
+                    </div>
+                    <div class="ilx-kw-info-text">
+                        <span class="ilx-kw-eyebrow">PARTNER</span>
+                        <strong class="ilx-kw-title">
+                            <t t-esc="props.picking.partner_id?.[1] || 'No partner'" />
+                        </strong>
+                    </div>
+                </div>
+                <div class="ilx-kw-info-row mt-3">
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                        <i class="fa fa-map-marker" />
+                    </div>
+                    <div class="ilx-kw-info-text">
+                        <span class="ilx-kw-eyebrow">From</span>
+                        <span class="ilx-kw-value">
+                            <t t-esc="props.picking.location_id?.[1]" />
+                        </span>
+                    </div>
+                </div>
+                <div class="ilx-kw-info-row mt-3">
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                        <i class="fa fa-arrow-right" />
+                    </div>
+                    <div class="ilx-kw-info-text">
+                        <span class="ilx-kw-eyebrow">To</span>
+                        <span class="ilx-kw-value">
+                            <t t-esc="props.picking.location_dest_id?.[1]" />
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="ilx-kw-info-row mt-3"
+                    t-on-click="onSelectResponsible"
+                    style="cursor: pointer;"
+                >
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                        <i class="fa fa-user" />
+                    </div>
+                    <div class="ilx-kw-info-text">
+                        <span class="ilx-kw-eyebrow">Responsible</span>
+                        <span class="ilx-kw-value">
+                            <t t-esc="props.picking.user_id?.[1] || 'Unassigned'" />
+                        </span>
+                    </div>
+                    <i
+                        class="fa fa-chevron-right"
+                        style="color: var(--ilx-on-surface-variant); font-size: 0.8rem;"
+                    />
+                </div>
+                <div class="ilx-kw-info-row mt-3">
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                        <i class="fa fa-calendar" />
+                    </div>
+                    <div class="ilx-kw-info-text w-100">
+                        <span class="ilx-kw-eyebrow">Scheduled Date</span>
+                        <div class="ilx-kw-select-wrapper mt-1">
+                            <input
+                                type="datetime-local"
+                                name="scheduled_date"
+                                class="ilx-kw-select"
+                                t-model="props.picking.scheduled_date"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="ilx-kw-info-row mt-3">
+                    <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                        <i class="fa fa-sticky-note-o" />
+                    </div>
+                    <div class="ilx-kw-info-text w-100">
+                        <span class="ilx-kw-eyebrow">Notes</span>
+                        <div class="ilx-kw-select-wrapper mt-1">
+                            <textarea
+                                class="ilx-kw-select"
+                                rows="2"
+                                placeholder="Add notes..."
+                                t-att-value="notePlainText"
+                                t-on-input="onNoteInput"
+                                style="resize: vertical; min-height: 40px; font-family: inherit;"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 mb-4">
+                <button
+                    class="ilx-kw-btn-ghost w-100"
+                    t-on-click="() => env.services.barcodeRouter.navigate('main')"
+                >
+                    Back to Dashboard
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>

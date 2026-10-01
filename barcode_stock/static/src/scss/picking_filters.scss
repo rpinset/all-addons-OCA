@@ -1,0 +1,200 @@
+// Odoo-style filter controls for the picking list: dropdown menus for filters
+// and grouping, removable facet chips, and the ★ default-filter toggle. Reuses
+// the shared design tokens defined by barcode_scanner.
+
+.ilx-kw-filter-tools {
+    position: relative;
+    z-index: 20;
+}
+
+.ilx-kw-filter-toolbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ilx-kw-tool-btn {
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    padding: 0 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    background: var(--ilx-surface-container-high);
+    color: var(--ilx-on-surface-variant);
+
+    .fa-caret-down {
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    &.has-value {
+        background: var(--ilx-surface-container-low);
+        color: var(--ilx-on-surface);
+    }
+
+    &.active {
+        background: var(--ilx-primary-container);
+        color: var(--ilx-on-surface);
+    }
+}
+
+.ilx-kw-tool-count {
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: var(--ilx-primary);
+    color: #fff;
+    font-size: 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ilx-kw-tool-spacer {
+    flex: 1;
+}
+
+.ilx-kw-star-btn {
+    width: 36px;
+    padding: 0;
+    justify-content: center;
+
+    .fa {
+        font-size: 1rem;
+    }
+
+    &.active {
+        color: var(--ilx-primary);
+        background: var(--ilx-surface-container-low);
+    }
+}
+
+// Active-filter / grouping facet chips.
+.ilx-kw-facets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.ilx-kw-facet {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 4px 0 12px;
+    gap: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: var(--ilx-primary-container);
+    color: var(--ilx-on-surface);
+
+    &.ilx-kw-facet--group {
+        background: var(--ilx-tertiary-container);
+    }
+}
+
+.ilx-kw-facet-remove {
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+
+    &:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.08);
+    }
+}
+
+// Dropdown menu opened by the toolbar buttons.
+.ilx-kw-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 240px;
+    // Interpolated so libsass emits the CSS min() verbatim instead of trying to
+    // evaluate its own min() function (which rejects calc()).
+    max-width: #{"min(320px, calc(100vw - 3rem))"};
+    max-height: 60vh;
+    overflow-y: auto;
+    background: var(--ilx-surface);
+    border: 1px solid var(--ilx-outline-variant);
+    border-radius: var(--ilx-radius-lg);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+    padding: 8px;
+    z-index: 50;
+}
+
+.ilx-kw-menu-section + .ilx-kw-menu-section {
+    margin-top: 4px;
+    padding-top: 8px;
+    border-top: 1px solid var(--ilx-outline-variant);
+}
+
+.ilx-kw-menu-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ilx-on-surface-variant);
+    padding: 6px 10px;
+}
+
+.ilx-kw-menu-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+    color: var(--ilx-on-surface);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px;
+    border-radius: var(--ilx-radius-default);
+    cursor: pointer;
+
+    .fa {
+        font-size: 0.95rem;
+        color: var(--ilx-on-surface-variant);
+        width: 18px;
+        text-align: center;
+    }
+
+    &:hover {
+        background: var(--ilx-surface-container-high);
+    }
+
+    &.selected {
+        color: var(--ilx-primary);
+        font-weight: 600;
+
+        .fa {
+            color: var(--ilx-primary);
+        }
+    }
+}
+
+.ilx-kw-menu-custom-date {
+    padding: 6px 10px 10px 38px;
+
+    .ilx-kw-filter-date-input {
+        width: 100%;
+    }
+}
