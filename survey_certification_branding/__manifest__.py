@@ -7,7 +7,7 @@
         "This module enables customization of certification reports by allowing "
         "a custom logo and company name per certification."
     ),
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "license": "AGPL-3",
     "author": "Binhex,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/survey",
@@ -16,4 +16,9 @@
         "views/survey_survey_views.xml",
         "report/survey_report_templates.xml",
     ],
+    "assets": {
+        "web.report_assets_common": [
+            "survey_certification_branding/static/src/scss/survey_reports.scss",
+        ],
+    },
 }
