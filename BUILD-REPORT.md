@@ -1,6 +1,6 @@
 # Build report — `17.0`
 
-Generated 2026-10-01 10:22 UTC
+Generated 2026-10-04 18:31 UTC
 
 ## Skipped repos
 
@@ -137,7 +137,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-medical](https://github.com/OCA/vertical-medical) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-ngo](https://github.com/OCA/vertical-ngo) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-realestate](https://github.com/OCA/vertical-realestate) | `no_module` | No directory with __manifest__.py at repo root |
-| [vertical-rental](https://github.com/OCA/vertical-rental) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | `no_module` | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | `no_module` | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | `no_module` | No directory with __manifest__.py at repo root |

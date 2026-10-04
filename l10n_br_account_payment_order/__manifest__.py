@@ -4,7 +4,7 @@
 
 {
     "name": "Brazilian Payment Order",
-    "version": "17.0.1.1.1",
+    "version": "17.0.1.1.2",
     "license": "AGPL-3",
     "author": "KMEE, Akretion, Odoo Community Association (OCA)",
     "maintainers": ["mbcosta"],
@@ -101,7 +101,7 @@
     "installable": True,
     "external_dependencies": {
         "python": [
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
         ]
     },
 }
