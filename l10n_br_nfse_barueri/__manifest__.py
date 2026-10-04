@@ -5,7 +5,7 @@
     "name": "NFS-e (Barueri)",
     "summary": """
         NFS-e (Barueri)""",
-    "version": "14.0.1.3.0",
+    "version": "14.0.1.3.1",
     "license": "AGPL-3",
     "author": "KMEE, Odoo Community Association (OCA)",
     "maintainers": [
@@ -22,7 +22,7 @@
             "erpbrasil.edoc",
             "erpbrasil.assinatura",
             "erpbrasil.transmissao",
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
             "nfselib.barueri",
         ],
     },

@@ -5,7 +5,7 @@
 {
     "name": "Boletos e CNAB de cobrança",
     "summary": "receivable Boletos and CNAB using the BRCobranca lib",
-    "version": "14.0.9.0.1",
+    "version": "14.0.9.1.0",
     "license": "AGPL-3",
     "author": "Akretion, Odoo Community Association (OCA)",
     "maintainers": ["rvalyi", "mbcosta"],
@@ -29,7 +29,7 @@
     ],
     "external_dependencies": {
         "python": [
-            "erpbrasil.base",
+            "erpbrasil-base>=2.4.2",
         ]
     },
 }

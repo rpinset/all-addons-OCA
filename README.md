@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-01 10:17 UTC** (elapsed 186s)
+Last build: **2026-10-04 18:25 UTC** (elapsed 135s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -53,7 +53,7 @@ Last build: **2026-10-01 10:17 UTC** (elapsed 186s)
 | [edi](https://github.com/OCA/edi) | 63 | 8938600 2026-08-04 Marwan Behillil Translated using Weblate (French) |
 | [edi-framework](https://github.com/OCA/edi-framework) | 2 | 1359541 2025-10-13 mymage Translated using Weblate (Italian) |
 | [event](https://github.com/OCA/event) | 18 | 8259a1a 2025-10-13 mymage Added translation using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 45 | 8d305c3 2026-10-01 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 45 | 1bd8402 2026-10-02 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 18 | 76d7116 2025-11-10 mymage Translated using Weblate (Italian) |
 | [geospatial](https://github.com/OCA/geospatial) | 4 | c643b29 2025-07-22 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 11 | e03e9b2 2026-10-01 mymage Translated using Weblate (Italian) |
@@ -65,9 +65,9 @@ Last build: **2026-10-01 10:17 UTC** (elapsed 186s)
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 6 | c67470d 2026-03-09 painkin Translated using Weblate (Finnish) |
 | [iot](https://github.com/OCA/iot) | 8 | 21a4469 2025-10-07 mymage Translated using Weblate (Italian) |
 | [knowledge](https://github.com/OCA/knowledge) | 13 | e41c082 2026-10-01 mymage Translated using Weblate (Italian) |
-| [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | 22b75de 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | fc14539 2026-10-03 OCA-git-bot Merge PR #103 into 14.0 |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | 7b50326 2026-09-18 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | cd66c7d 2026-10-01 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
