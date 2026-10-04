@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-13 19:59+0000\n"
+"PO-Revision-Date: 2026-10-02 23:46+0000\n"
 "Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -20,13 +20,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "%(icon)s Pending validation by %(todo_by)s"
-msgstr ""
+msgstr "%(icon)s Wacht op validatie door %(todo_by)s"
 
 #. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "%(icon)s This %(model_name)s needs to be validated"
-msgstr ""
+msgstr "%(icon)s Deze %(model_name)s moet worden gevalideerd"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
@@ -153,7 +153,7 @@ msgstr "Goedkeuringsvolgorde op basis van het volgnummer"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__comment_approve_default
 msgid "Approve Comment"
-msgstr ""
+msgstr "Goedkeur Comment"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__approve_sequence_bypass
@@ -272,6 +272,8 @@ msgstr "Aangemaakt op"
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__comment_approve_default
 msgid "Default comment prefilled when approval comments are enabled."
 msgstr ""
+"Standaardopmerking die vooraf wordt ingevuld wanneer opmerkingen bij "
+"goedkeuring zijn ingeschakeld."
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__definition_type
@@ -335,7 +337,7 @@ msgstr "Velden"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__exclude_requester
 msgid "Four-eyes Principle"
-msgstr ""
+msgstr "Vierogenprincipe"
 
 #. module: base_tier_validation
 #. odoo-python
@@ -636,6 +638,13 @@ msgid "Review"
 msgstr "Beoordeling"
 
 #. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid "Review pending for %(assignees)s, requested by %(requester)s."
+msgstr ""
+"Beoordeling in afwachting voor %(assignees)s, aangevraagd door %(requester)s."
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__reviewer_id
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_id
 msgid "Reviewer"
@@ -657,7 +666,7 @@ msgstr "Groep voor beoordelaars"
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_definition.py:0
 msgid "Reviewer may lack access"
-msgstr ""
+msgstr "De beoordelaar heeft mogelijk geen toegang"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
@@ -714,6 +723,15 @@ msgid ""
 "belong to a group with read access on the target model, or pick different "
 "reviewers."
 msgstr ""
+"De volgende beoordelaars kunnen mogelijk geen records van het type '%(model)"
+"s' lezen en kunnen daarom niet werken met de beoordelingen die door dit "
+"niveau worden gegenereerd: %(reviewers)s.\n"
+"\n"
+"Dit is een controle op basis van 'best effort' die uitsluitend kijkt naar "
+"toegangsrechten op modelniveau; tijdens de uitvoering (runtime) kunnen "
+"recordregels alsnog toegang verlenen of intrekken. Zorg ervoor dat deze "
+"gebruikers deel uitmaken van een groep met leesrechten voor het doelmodel, "
+"of kies andere beoordelaars."
 
 #. module: base_tier_validation
 #. odoo-python
@@ -911,6 +929,14 @@ msgid ""
 "request. Only meaningful for review_type='group'; the form hides this field "
 "for the other review types."
 msgstr ""
+"Indien ingesteld, wordt de gebruiker die de validatie heeft aangevraagd, "
+"verwijderd uit de groep beoordelaars voor dit niveau. Iedereen in de "
+"geconfigureerde groep kan de validatie uitvoeren, behalve de aanvrager zelf. "
+"Zonder deze instelling zou een aanvrager die deel uitmaakt van dezelfde "
+"groep als de geconfigureerde beoordelaars, zijn of haar eigen aanvraag "
+"automatisch kunnen valideren. Dit is alleen relevant bij "
+"`review_type='group'`; voor de andere beoordelingstypen verbergt het "
+"formulier dit veld."
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__account_move__validation_status__no
@@ -978,6 +1004,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "bijv. Niveauvalidatie voor..."
+
+#. module: base_tier_validation
+#. odoo-python
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+msgid "the assigned reviewer"
+msgstr "de toegewezen beoordelaar"
 
 #~ msgid ""
 #~ "<i class=\"fa fa-lg fa-info-circle\"/>\n"

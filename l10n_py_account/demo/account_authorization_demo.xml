@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Timbrados de Demostración -->
+
+    <!-- Timbrado vigente para facturas -->
+    <record id="demo_authorization_001" model="account.authorization">
+        <field name="name">12345678</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=335)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">10000</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_f" />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- Timbrado vigente alternativo -->
+    <record id="demo_authorization_002" model="account.authorization">
+        <field name="name">87654321</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=15)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=350)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">5000</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">002</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_f" />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- Timbrado para notas de crédito -->
+    <record id="demo_authorization_credit_note" model="account.authorization">
+        <field name="name">11223344</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=20)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=345)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">1000</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_nc" />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- Timbrado por vencer (menos de 30 días) -->
+    <record id="demo_authorization_to_expire" model="account.authorization">
+        <field name="name">99887766</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=335)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=25)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">3000</field>
+        <field name="establishment">002</field>
+        <field name="expedition_point">001</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_f" />
+        <field name="active" eval="True" />
+    </record>
+
+    <!-- Timbrado vencido (para demostración) -->
+    <record id="demo_authorization_expired" model="account.authorization">
+        <field name="name">55667788</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=400)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() - timedelta(days=35)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">2000</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">003</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_f" />
+        <field name="active" eval="False" />
+    </record>
+
+    <!-- Timbrado para notas de débito -->
+    <record id="demo_authorization_debit_note" model="account.authorization">
+        <field name="name">44556677</field>
+        <field
+            name="date_from"
+            eval="(datetime.now() - timedelta(days=10)).strftime('%Y-%m-%d')"
+        />
+        <field
+            name="date_to"
+            eval="(datetime.now() + timedelta(days=355)).strftime('%Y-%m-%d')"
+        />
+        <field name="invoice_number_from">1</field>
+        <field name="invoice_number_to">500</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="l10n_latam_document_type_id" ref="dc_py_nd" />
+        <field name="active" eval="True" />
+    </record>
+</odoo>

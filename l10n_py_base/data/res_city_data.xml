@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="city_py_00_10" model="res.city">
+        <field name="name">LA ENCARNACIÓN</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0010</field>
+    </record>
+    <record id="city_py_00_11" model="res.city">
+        <field name="name">LA CATEDRAL</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0011</field>
+    </record>
+    <record id="city_py_00_12" model="res.city">
+        <field name="name">SAN ROQUE</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0012</field>
+    </record>
+    <record id="city_py_00_13" model="res.city">
+        <field name="name">SANTA MARÍA DE LA ASUNCIÓN</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0013</field>
+    </record>
+    <record id="city_py_00_14" model="res.city">
+        <field name="name">LA RECOLETA</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0014</field>
+    </record>
+    <record id="city_py_00_15" model="res.city">
+        <field name="name">SANTÍSIMA TRINIDAD</field>
+        <field name="state_id" ref="state_py_asuncion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0015</field>
+    </record>
+    <record id="city_py_01_01" model="res.city">
+        <field name="name">CONCEPCIÓN</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0101</field>
+    </record>
+    <record id="city_py_01_02" model="res.city">
+        <field name="name">BELÉN</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0102</field>
+    </record>
+    <record id="city_py_01_03" model="res.city">
+        <field name="name">HORQUETA</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0103</field>
+    </record>
+    <record id="city_py_01_04" model="res.city">
+        <field name="name">LORETO</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0104</field>
+    </record>
+    <record id="city_py_01_05" model="res.city">
+        <field name="name">SAN CARLOS DEL APA</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0105</field>
+    </record>
+    <record id="city_py_01_06" model="res.city">
+        <field name="name">SAN LÁZARO</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0106</field>
+    </record>
+    <record id="city_py_01_07" model="res.city">
+        <field name="name">YBY YAÚ</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0107</field>
+    </record>
+    <record id="city_py_01_08" model="res.city">
+        <field name="name">AZOTE'Y</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0108</field>
+    </record>
+    <record id="city_py_01_09" model="res.city">
+        <field name="name">SARGENTO JOSÉ FÉLIX LÓPEZ</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0109</field>
+    </record>
+    <record id="city_py_01_10" model="res.city">
+        <field name="name">SAN ALFREDO</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0110</field>
+    </record>
+    <record id="city_py_01_11" model="res.city">
+        <field name="name">PASO BARRETO</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0111</field>
+    </record>
+    <record id="city_py_01_12" model="res.city">
+        <field name="name">ARROYITO</field>
+        <field name="state_id" ref="state_py_concepcion" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0112</field>
+    </record>
+    <record id="city_py_02_01" model="res.city">
+        <field name="name">SAN PEDRO DEL YCUAMANDYYÚ</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0201</field>
+    </record>
+    <record id="city_py_02_02" model="res.city">
+        <field name="name">ANTEQUERA</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0202</field>
+    </record>
+    <record id="city_py_02_03" model="res.city">
+        <field name="name">CHORÉ</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0203</field>
+    </record>
+    <record id="city_py_02_04" model="res.city">
+        <field name="name">GENERAL ELIZARDO AQUINO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0204</field>
+    </record>
+    <record id="city_py_02_05" model="res.city">
+        <field name="name">ITACURUBÍ DEL ROSARIO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0205</field>
+    </record>
+    <record id="city_py_02_06" model="res.city">
+        <field name="name">LIMA</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0206</field>
+    </record>
+    <record id="city_py_02_07" model="res.city">
+        <field name="name">NUEVA GERMANIA</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0207</field>
+    </record>
+    <record id="city_py_02_08" model="res.city">
+        <field name="name">SAN ESTANISLAO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0208</field>
+    </record>
+    <record id="city_py_02_09" model="res.city">
+        <field name="name">SAN PABLO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0209</field>
+    </record>
+    <record id="city_py_02_10" model="res.city">
+        <field name="name">TACUATÍ</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0210</field>
+    </record>
+    <record id="city_py_02_11" model="res.city">
+        <field name="name">UNIÓN</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0211</field>
+    </record>
+    <record id="city_py_02_12" model="res.city">
+        <field name="name">25 DE DICIEMBRE</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0212</field>
+    </record>
+    <record id="city_py_02_13" model="res.city">
+        <field name="name">VILLA DEL ROSARIO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0213</field>
+    </record>
+    <record id="city_py_02_14" model="res.city">
+        <field name="name">GENERAL FRANCISCO ISIDORO RESQUÍN</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0214</field>
+    </record>
+    <record id="city_py_02_15" model="res.city">
+        <field name="name">YATAITY DEL NORTE</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0215</field>
+    </record>
+    <record id="city_py_02_16" model="res.city">
+        <field name="name">GUAJAYVI</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0216</field>
+    </record>
+    <record id="city_py_02_17" model="res.city">
+        <field name="name">CAPIIBARY</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0217</field>
+    </record>
+    <record id="city_py_02_18" model="res.city">
+        <field name="name">SANTA ROSA DEL AGUARAY</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0218</field>
+    </record>
+    <record id="city_py_02_19" model="res.city">
+        <field name="name">YRYBUCUA</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0219</field>
+    </record>
+    <record id="city_py_02_20" model="res.city">
+        <field name="name">LIBERACIÓN</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0220</field>
+    </record>
+    <record id="city_py_02_21" model="res.city">
+        <field name="name">SAN VICENTE PANCHOLO</field>
+        <field name="state_id" ref="state_py_san_pedro" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0221</field>
+    </record>
+    <record id="city_py_03_01" model="res.city">
+        <field name="name">CAACUPÉ</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0301</field>
+    </record>
+    <record id="city_py_03_02" model="res.city">
+        <field name="name">ALTOS</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0302</field>
+    </record>
+    <record id="city_py_03_03" model="res.city">
+        <field name="name">ARROYOS Y ESTEROS</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0303</field>
+    </record>
+    <record id="city_py_03_04" model="res.city">
+        <field name="name">ATYRÁ</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0304</field>
+    </record>
+    <record id="city_py_03_05" model="res.city">
+        <field name="name">CARAGUATAY</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0305</field>
+    </record>
+    <record id="city_py_03_06" model="res.city">
+        <field name="name">EMBOSCADA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0306</field>
+    </record>
+    <record id="city_py_03_07" model="res.city">
+        <field name="name">EUSEBIO AYALA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0307</field>
+    </record>
+    <record id="city_py_03_08" model="res.city">
+        <field name="name">ISLA PUCÚ</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0308</field>
+    </record>
+    <record id="city_py_03_09" model="res.city">
+        <field name="name">ITACURUBÍ DE LA CORDILLERA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0309</field>
+    </record>
+    <record id="city_py_03_10" model="res.city">
+        <field name="name">JUAN DE MENA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0310</field>
+    </record>
+    <record id="city_py_03_11" model="res.city">
+        <field name="name">LOMA GRANDE</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0311</field>
+    </record>
+    <record id="city_py_03_12" model="res.city">
+        <field name="name">MBOCAYATY DEL YHAGUY</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0312</field>
+    </record>
+    <record id="city_py_03_13" model="res.city">
+        <field name="name">NUEVA COLOMBIA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0313</field>
+    </record>
+    <record id="city_py_03_14" model="res.city">
+        <field name="name">PIRIBEBUY</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0314</field>
+    </record>
+    <record id="city_py_03_15" model="res.city">
+        <field name="name">PRIMERO DE MARZO</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0315</field>
+    </record>
+    <record id="city_py_03_16" model="res.city">
+        <field name="name">SAN BERNARDINO</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0316</field>
+    </record>
+    <record id="city_py_03_17" model="res.city">
+        <field name="name">SANTA ELENA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0317</field>
+    </record>
+    <record id="city_py_03_18" model="res.city">
+        <field name="name">TOBATÍ</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0318</field>
+    </record>
+    <record id="city_py_03_19" model="res.city">
+        <field name="name">VALENZUELA</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0319</field>
+    </record>
+    <record id="city_py_03_20" model="res.city">
+        <field name="name">SAN JOSÉ OBRERO</field>
+        <field name="state_id" ref="state_py_cordillera" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0320</field>
+    </record>
+    <record id="city_py_04_01" model="res.city">
+        <field name="name">VILLARRICA</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0401</field>
+    </record>
+    <record id="city_py_04_02" model="res.city">
+        <field name="name">BORJA</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0402</field>
+    </record>
+    <record id="city_py_04_03" model="res.city">
+        <field name="name">CAPITÁN MAURICIO JOSÉ TROCHE</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0403</field>
+    </record>
+    <record id="city_py_04_04" model="res.city">
+        <field name="name">CORONEL MARTÍNEZ</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0404</field>
+    </record>
+    <record id="city_py_04_05" model="res.city">
+        <field name="name">FÉLIX PÉREZ CARDOZO</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0405</field>
+    </record>
+    <record id="city_py_04_06" model="res.city">
+        <field name="name">GRAL. EUGENIO A. GARAY</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0406</field>
+    </record>
+    <record id="city_py_04_07" model="res.city">
+        <field name="name">INDEPENDENCIA</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0407</field>
+    </record>
+    <record id="city_py_04_08" model="res.city">
+        <field name="name">ITAPÉ</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0408</field>
+    </record>
+    <record id="city_py_04_09" model="res.city">
+        <field name="name">ITURBE</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0409</field>
+    </record>
+    <record id="city_py_04_10" model="res.city">
+        <field name="name">JOSÉ FASSARDI</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0410</field>
+    </record>
+    <record id="city_py_04_11" model="res.city">
+        <field name="name">MBOCAYATY</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0411</field>
+    </record>
+    <record id="city_py_04_12" model="res.city">
+        <field name="name">NATALICIO TALAVERA</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0412</field>
+    </record>
+    <record id="city_py_04_13" model="res.city">
+        <field name="name">ÑUMÍ</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0413</field>
+    </record>
+    <record id="city_py_04_14" model="res.city">
+        <field name="name">SAN SALVADOR</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0414</field>
+    </record>
+    <record id="city_py_04_15" model="res.city">
+        <field name="name">YATAITY</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0415</field>
+    </record>
+    <record id="city_py_04_16" model="res.city">
+        <field name="name">DOCTOR BOTTRELL</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0416</field>
+    </record>
+    <record id="city_py_04_17" model="res.city">
+        <field name="name">PASO YOBAI</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0417</field>
+    </record>
+    <record id="city_py_04_18" model="res.city">
+        <field name="name">TEBICUARY</field>
+        <field name="state_id" ref="state_py_guaira" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0418</field>
+    </record>
+    <record id="city_py_05_01" model="res.city">
+        <field name="name">CORONEL OVIEDO</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0501</field>
+    </record>
+    <record id="city_py_05_02" model="res.city">
+        <field name="name">CAAGUAZÚ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0502</field>
+    </record>
+    <record id="city_py_05_03" model="res.city">
+        <field name="name">CARAYAÓ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0503</field>
+    </record>
+    <record id="city_py_05_04" model="res.city">
+        <field name="name">DR. CECILIO BÁEZ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0504</field>
+    </record>
+    <record id="city_py_05_05" model="res.city">
+        <field name="name">SANTA ROSA DEL MBUTUY</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0505</field>
+    </record>
+    <record id="city_py_05_06" model="res.city">
+        <field name="name">DR. JUAN MANUEL FRUTOS</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0506</field>
+    </record>
+    <record id="city_py_05_07" model="res.city">
+        <field name="name">REPATRIACIÓN</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0507</field>
+    </record>
+    <record id="city_py_05_08" model="res.city">
+        <field name="name">NUEVA LONDRES</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0508</field>
+    </record>
+    <record id="city_py_05_09" model="res.city">
+        <field name="name">SAN JOAQUÍN</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0509</field>
+    </record>
+    <record id="city_py_05_10" model="res.city">
+        <field name="name">SAN JOSÉ DE LOS ARROYOS</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0510</field>
+    </record>
+    <record id="city_py_05_11" model="res.city">
+        <field name="name">YHÚ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0511</field>
+    </record>
+    <record id="city_py_05_12" model="res.city">
+        <field name="name">DR. J. EULOGIO ESTIGARRIBIA</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0512</field>
+    </record>
+    <record id="city_py_05_13" model="res.city">
+        <field name="name">R.I. 3 CORRALES</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0513</field>
+    </record>
+    <record id="city_py_05_14" model="res.city">
+        <field name="name">RAÚL ARSENIO OVIEDO</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0514</field>
+    </record>
+    <record id="city_py_05_15" model="res.city">
+        <field name="name">JOSÉ DOMINGO OCAMPOS</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0515</field>
+    </record>
+    <record id="city_py_05_16" model="res.city">
+        <field name="name">MARISCAL FRANCISCO SOLANO LÓPEZ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0516</field>
+    </record>
+    <record id="city_py_05_17" model="res.city">
+        <field name="name">LA PASTORA</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0517</field>
+    </record>
+    <record id="city_py_05_18" model="res.city">
+        <field name="name">3 DE FEBRERO</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0518</field>
+    </record>
+    <record id="city_py_05_19" model="res.city">
+        <field name="name">SIMÓN BOLIVAR</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0519</field>
+    </record>
+    <record id="city_py_05_20" model="res.city">
+        <field name="name">VAQUERÍA</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0520</field>
+    </record>
+    <record id="city_py_05_21" model="res.city">
+        <field name="name">TEMBIAPORÁ</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0521</field>
+    </record>
+    <record id="city_py_05_22" model="res.city">
+        <field name="name">NUEVA TOLEDO</field>
+        <field name="state_id" ref="state_py_caaguazu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0522</field>
+    </record>
+    <record id="city_py_06_01" model="res.city">
+        <field name="name">CAAZAPÁ</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0601</field>
+    </record>
+    <record id="city_py_06_02" model="res.city">
+        <field name="name">ABAÍ</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0602</field>
+    </record>
+    <record id="city_py_06_03" model="res.city">
+        <field name="name">BUENA VISTA</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0603</field>
+    </record>
+    <record id="city_py_06_04" model="res.city">
+        <field name="name">DR. MOISÉS S. BERTONI</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0604</field>
+    </record>
+    <record id="city_py_06_05" model="res.city">
+        <field name="name">GRAL. HIGINIO MORINIGO</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0605</field>
+    </record>
+    <record id="city_py_06_06" model="res.city">
+        <field name="name">MACIEL</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0606</field>
+    </record>
+    <record id="city_py_06_07" model="res.city">
+        <field name="name">SAN JUAN NEPOMUCENO</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0607</field>
+    </record>
+    <record id="city_py_06_08" model="res.city">
+        <field name="name">TAVAÍ</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0608</field>
+    </record>
+    <record id="city_py_06_09" model="res.city">
+        <field name="name">YEGROS</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0609</field>
+    </record>
+    <record id="city_py_06_10" model="res.city">
+        <field name="name">YUTY</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0610</field>
+    </record>
+    <record id="city_py_06_11" model="res.city">
+        <field name="name">3 DE MAYO</field>
+        <field name="state_id" ref="state_py_caazapa" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0611</field>
+    </record>
+    <record id="city_py_07_01" model="res.city">
+        <field name="name">ENCARNACIÓN</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0701</field>
+    </record>
+    <record id="city_py_07_02" model="res.city">
+        <field name="name">BELLA VISTA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0702</field>
+    </record>
+    <record id="city_py_07_03" model="res.city">
+        <field name="name">CAMBYRETÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0703</field>
+    </record>
+    <record id="city_py_07_04" model="res.city">
+        <field name="name">CAPITÁN MEZA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0704</field>
+    </record>
+    <record id="city_py_07_05" model="res.city">
+        <field name="name">CAPITÁN MIRANDA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0705</field>
+    </record>
+    <record id="city_py_07_06" model="res.city">
+        <field name="name">NUEVA ALBORADA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0706</field>
+    </record>
+    <record id="city_py_07_07" model="res.city">
+        <field name="name">CARMEN DEL PARANÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0707</field>
+    </record>
+    <record id="city_py_07_08" model="res.city">
+        <field name="name">CORONEL BOGADO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0708</field>
+    </record>
+    <record id="city_py_07_09" model="res.city">
+        <field name="name">CARLOS ANTONIO LÓPEZ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0709</field>
+    </record>
+    <record id="city_py_07_10" model="res.city">
+        <field name="name">NATALIO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0710</field>
+    </record>
+    <record id="city_py_07_11" model="res.city">
+        <field name="name">FRAM</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0711</field>
+    </record>
+    <record id="city_py_07_12" model="res.city">
+        <field name="name">GENERAL ARTIGAS</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0712</field>
+    </record>
+    <record id="city_py_07_13" model="res.city">
+        <field name="name">GENERAL DELGADO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0713</field>
+    </record>
+    <record id="city_py_07_14" model="res.city">
+        <field name="name">HOHENAU</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0714</field>
+    </record>
+    <record id="city_py_07_15" model="res.city">
+        <field name="name">JESÚS</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0715</field>
+    </record>
+    <record id="city_py_07_16" model="res.city">
+        <field name="name">JOSÉ LEANDRO OVIEDO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0716</field>
+    </record>
+    <record id="city_py_07_17" model="res.city">
+        <field name="name">OBLIGADO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0717</field>
+    </record>
+    <record id="city_py_07_18" model="res.city">
+        <field name="name">MAYOR JULIO DIONISIO OTAÑO</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0718</field>
+    </record>
+    <record id="city_py_07_19" model="res.city">
+        <field name="name">SAN COSME Y DAMIÁN</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0719</field>
+    </record>
+    <record id="city_py_07_20" model="res.city">
+        <field name="name">SAN PEDRO DEL PARANÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0720</field>
+    </record>
+    <record id="city_py_07_21" model="res.city">
+        <field name="name">SAN RAFAEL DEL PARANÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0721</field>
+    </record>
+    <record id="city_py_07_22" model="res.city">
+        <field name="name">TRINIDAD</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0722</field>
+    </record>
+    <record id="city_py_07_23" model="res.city">
+        <field name="name">EDELIRA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0723</field>
+    </record>
+    <record id="city_py_07_24" model="res.city">
+        <field name="name">TOMÁS ROMERO PEREIRA</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0724</field>
+    </record>
+    <record id="city_py_07_25" model="res.city">
+        <field name="name">ALTO VERÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0725</field>
+    </record>
+    <record id="city_py_07_26" model="res.city">
+        <field name="name">LA PAZ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0726</field>
+    </record>
+    <record id="city_py_07_27" model="res.city">
+        <field name="name">YATYTAY</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0727</field>
+    </record>
+    <record id="city_py_07_28" model="res.city">
+        <field name="name">SAN JUAN DEL PARANÁ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0728</field>
+    </record>
+    <record id="city_py_07_29" model="res.city">
+        <field name="name">PIRAPÓ</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0729</field>
+    </record>
+    <record id="city_py_07_30" model="res.city">
+        <field name="name">ITAPÚA POTY</field>
+        <field name="state_id" ref="state_py_itapua" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0730</field>
+    </record>
+    <record id="city_py_08_01" model="res.city">
+        <field name="name">SAN JUAN BAUTISTA DE LAS MISIONES</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0801</field>
+    </record>
+    <record id="city_py_08_02" model="res.city">
+        <field name="name">AYOLAS</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0802</field>
+    </record>
+    <record id="city_py_08_03" model="res.city">
+        <field name="name">SAN IGNACIO</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0803</field>
+    </record>
+    <record id="city_py_08_04" model="res.city">
+        <field name="name">SAN MIGUEL</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0804</field>
+    </record>
+    <record id="city_py_08_05" model="res.city">
+        <field name="name">SAN PATRICIO</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0805</field>
+    </record>
+    <record id="city_py_08_06" model="res.city">
+        <field name="name">SANTA MARÍA</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0806</field>
+    </record>
+    <record id="city_py_08_07" model="res.city">
+        <field name="name">SANTA ROSA</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0807</field>
+    </record>
+    <record id="city_py_08_08" model="res.city">
+        <field name="name">SANTIAGO</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0808</field>
+    </record>
+    <record id="city_py_08_09" model="res.city">
+        <field name="name">VILLA FLORIDA</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0809</field>
+    </record>
+    <record id="city_py_08_10" model="res.city">
+        <field name="name">YABEBYRY</field>
+        <field name="state_id" ref="state_py_misiones" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0810</field>
+    </record>
+    <record id="city_py_09_01" model="res.city">
+        <field name="name">PARAGUARÍ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0901</field>
+    </record>
+    <record id="city_py_09_02" model="res.city">
+        <field name="name">ACAHAY</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0902</field>
+    </record>
+    <record id="city_py_09_03" model="res.city">
+        <field name="name">CAAPUCÚ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0903</field>
+    </record>
+    <record id="city_py_09_04" model="res.city">
+        <field name="name">CABALLERO</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0904</field>
+    </record>
+    <record id="city_py_09_05" model="res.city">
+        <field name="name">CARAPEGUÁ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0905</field>
+    </record>
+    <record id="city_py_09_06" model="res.city">
+        <field name="name">ESCOBAR</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0906</field>
+    </record>
+    <record id="city_py_09_07" model="res.city">
+        <field name="name">LA COLMENA</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0907</field>
+    </record>
+    <record id="city_py_09_08" model="res.city">
+        <field name="name">MBUYAPEY</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0908</field>
+    </record>
+    <record id="city_py_09_09" model="res.city">
+        <field name="name">PIRAYÚ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0909</field>
+    </record>
+    <record id="city_py_09_10" model="res.city">
+        <field name="name">QUIINDY</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0910</field>
+    </record>
+    <record id="city_py_09_11" model="res.city">
+        <field name="name">QUYQUYHÓ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0911</field>
+    </record>
+    <record id="city_py_09_12" model="res.city">
+        <field name="name">ROQUE GONZÁLEZ DE SANTA CRUZ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0912</field>
+    </record>
+    <record id="city_py_09_13" model="res.city">
+        <field name="name">SAPUCÁI</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0913</field>
+    </record>
+    <record id="city_py_09_14" model="res.city">
+        <field name="name">TEBICUARY-MÍ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0914</field>
+    </record>
+    <record id="city_py_09_15" model="res.city">
+        <field name="name">YAGUARÓN</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0915</field>
+    </record>
+    <record id="city_py_09_16" model="res.city">
+        <field name="name">YBYCUÍ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0916</field>
+    </record>
+    <record id="city_py_09_17" model="res.city">
+        <field name="name">YBYTYMÍ</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0917</field>
+    </record>
+    <record id="city_py_09_18" model="res.city">
+        <field name="name">MARÍA ANTONIA</field>
+        <field name="state_id" ref="state_py_paraguari" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">0918</field>
+    </record>
+    <record id="city_py_10_01" model="res.city">
+        <field name="name">CIUDAD DEL ESTE</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1001</field>
+    </record>
+    <record id="city_py_10_02" model="res.city">
+        <field name="name">PRESIDENTE FRANCO</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1002</field>
+    </record>
+    <record id="city_py_10_03" model="res.city">
+        <field name="name">DOMINGO MARTÍNEZ DE IRALA</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1003</field>
+    </record>
+    <record id="city_py_10_04" model="res.city">
+        <field name="name">DR. JUAN LEÓN MALLORQUÍN</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1004</field>
+    </record>
+    <record id="city_py_10_05" model="res.city">
+        <field name="name">HERNANDARIAS</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1005</field>
+    </record>
+    <record id="city_py_10_06" model="res.city">
+        <field name="name">ITAKYRY</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1006</field>
+    </record>
+    <record id="city_py_10_07" model="res.city">
+        <field name="name">JUAN E. O'LEARY</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1007</field>
+    </record>
+    <record id="city_py_10_08" model="res.city">
+        <field name="name">ÑACUNDAY</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1008</field>
+    </record>
+    <record id="city_py_10_09" model="res.city">
+        <field name="name">YGUAZÚ</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1009</field>
+    </record>
+    <record id="city_py_10_10" model="res.city">
+        <field name="name">LOS CEDRALES</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1010</field>
+    </record>
+    <record id="city_py_10_11" model="res.city">
+        <field name="name">MINGA GUAZÚ</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1011</field>
+    </record>
+    <record id="city_py_10_12" model="res.city">
+        <field name="name">SAN CRISTÓBAL</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1012</field>
+    </record>
+    <record id="city_py_10_13" model="res.city">
+        <field name="name">SANTA RITA</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1013</field>
+    </record>
+    <record id="city_py_10_14" model="res.city">
+        <field name="name">NARANJAL</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1014</field>
+    </record>
+    <record id="city_py_10_15" model="res.city">
+        <field name="name">SANTA ROSA DEL MONDAY</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1015</field>
+    </record>
+    <record id="city_py_10_16" model="res.city">
+        <field name="name">MINGA PORÁ</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1016</field>
+    </record>
+    <record id="city_py_10_17" model="res.city">
+        <field name="name">MBARACAYÚ</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1017</field>
+    </record>
+    <record id="city_py_10_18" model="res.city">
+        <field name="name">SAN ALBERTO</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1018</field>
+    </record>
+    <record id="city_py_10_19" model="res.city">
+        <field name="name">IRUÑA</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1019</field>
+    </record>
+    <record id="city_py_10_20" model="res.city">
+        <field name="name">SANTA FE DEL PARANÁ</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1020</field>
+    </record>
+    <record id="city_py_10_21" model="res.city">
+        <field name="name">TAVAPY</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1021</field>
+    </record>
+    <record id="city_py_10_22" model="res.city">
+        <field name="name">DR. RAÚL PEÑA</field>
+        <field name="state_id" ref="state_py_alto_parana" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1022</field>
+    </record>
+    <record id="city_py_11_01" model="res.city">
+        <field name="name">AREGUÁ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1101</field>
+    </record>
+    <record id="city_py_11_02" model="res.city">
+        <field name="name">CAPIATÁ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1102</field>
+    </record>
+    <record id="city_py_11_03" model="res.city">
+        <field name="name">FERNANDO DE LA MORA</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1103</field>
+    </record>
+    <record id="city_py_11_04" model="res.city">
+        <field name="name">GUARAMBARÉ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1104</field>
+    </record>
+    <record id="city_py_11_05" model="res.city">
+        <field name="name">ITÁ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1105</field>
+    </record>
+    <record id="city_py_11_06" model="res.city">
+        <field name="name">ITAUGUÁ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1106</field>
+    </record>
+    <record id="city_py_11_07" model="res.city">
+        <field name="name">LAMBARÉ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1107</field>
+    </record>
+    <record id="city_py_11_08" model="res.city">
+        <field name="name">LIMPIO</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1108</field>
+    </record>
+    <record id="city_py_11_09" model="res.city">
+        <field name="name">LUQUE</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1109</field>
+    </record>
+    <record id="city_py_11_10" model="res.city">
+        <field name="name">MARIANO ROQUE ALONSO</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1110</field>
+    </record>
+    <record id="city_py_11_11" model="res.city">
+        <field name="name">NUEVA ITALIA</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1111</field>
+    </record>
+    <record id="city_py_11_12" model="res.city">
+        <field name="name">ÑEMBY</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1112</field>
+    </record>
+    <record id="city_py_11_13" model="res.city">
+        <field name="name">SAN ANTONIO</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1113</field>
+    </record>
+    <record id="city_py_11_14" model="res.city">
+        <field name="name">SAN LORENZO</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1114</field>
+    </record>
+    <record id="city_py_11_15" model="res.city">
+        <field name="name">VILLA ELISA</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1115</field>
+    </record>
+    <record id="city_py_11_16" model="res.city">
+        <field name="name">VILLETA</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1116</field>
+    </record>
+    <record id="city_py_11_17" model="res.city">
+        <field name="name">YPACARAÍ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1117</field>
+    </record>
+    <record id="city_py_11_18" model="res.city">
+        <field name="name">YPANÉ</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1118</field>
+    </record>
+    <record id="city_py_11_19" model="res.city">
+        <field name="name">J. AUGUSTO SALDIVAR</field>
+        <field name="state_id" ref="state_py_central" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1119</field>
+    </record>
+    <record id="city_py_12_01" model="res.city">
+        <field name="name">PILAR</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1201</field>
+    </record>
+    <record id="city_py_12_02" model="res.city">
+        <field name="name">ALBERDI</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1202</field>
+    </record>
+    <record id="city_py_12_03" model="res.city">
+        <field name="name">CERRITO</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1203</field>
+    </record>
+    <record id="city_py_12_04" model="res.city">
+        <field name="name">DESMOCHADOS</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1204</field>
+    </record>
+    <record id="city_py_12_05" model="res.city">
+        <field name="name">GRAL. JOSÉ EDUVIGIS DÍAZ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1205</field>
+    </record>
+    <record id="city_py_12_06" model="res.city">
+        <field name="name">GUAZÚ-CUÁ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1206</field>
+    </record>
+    <record id="city_py_12_07" model="res.city">
+        <field name="name">HUMAITÁ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1207</field>
+    </record>
+    <record id="city_py_12_08" model="res.city">
+        <field name="name">ISLA UMBÚ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1208</field>
+    </record>
+    <record id="city_py_12_09" model="res.city">
+        <field name="name">LAURELES</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1209</field>
+    </record>
+    <record id="city_py_12_10" model="res.city">
+        <field name="name">MAYOR JOSÉ DEJESÚS MARTÍNEZ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1210</field>
+    </record>
+    <record id="city_py_12_11" model="res.city">
+        <field name="name">PASO DE PATRIA</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1211</field>
+    </record>
+    <record id="city_py_12_12" model="res.city">
+        <field name="name">SAN JUAN BAUTISTA DE ÑEEMBUCÚ</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1212</field>
+    </record>
+    <record id="city_py_12_13" model="res.city">
+        <field name="name">TACUARAS</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1213</field>
+    </record>
+    <record id="city_py_12_14" model="res.city">
+        <field name="name">VILLA FRANCA</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1214</field>
+    </record>
+    <record id="city_py_12_15" model="res.city">
+        <field name="name">VILLA OLIVA</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1215</field>
+    </record>
+    <record id="city_py_12_16" model="res.city">
+        <field name="name">VILLALBÍN</field>
+        <field name="state_id" ref="state_py_neembucu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1216</field>
+    </record>
+    <record id="city_py_13_01" model="res.city">
+        <field name="name">PEDRO JUAN CABALLERO</field>
+        <field name="state_id" ref="state_py_amambay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1301</field>
+    </record>
+    <record id="city_py_13_02" model="res.city">
+        <field name="name">BELLA VISTA</field>
+        <field name="state_id" ref="state_py_amambay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1302</field>
+    </record>
+    <record id="city_py_13_03" model="res.city">
+        <field name="name">CAPITÁN BADO</field>
+        <field name="state_id" ref="state_py_amambay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1303</field>
+    </record>
+    <record id="city_py_13_04" model="res.city">
+        <field name="name">ZANJA PYTÃ</field>
+        <field name="state_id" ref="state_py_amambay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1304</field>
+    </record>
+    <record id="city_py_13_05" model="res.city">
+        <field name="name">KARAPAÍ</field>
+        <field name="state_id" ref="state_py_amambay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1305</field>
+    </record>
+    <record id="city_py_14_01" model="res.city">
+        <field name="name">SALTO DEL GUAIRÁ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1401</field>
+    </record>
+    <record id="city_py_14_02" model="res.city">
+        <field name="name">CORPUS CHRISTI</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1402</field>
+    </record>
+    <record id="city_py_14_03" model="res.city">
+        <field name="name">VILLA CURUGUATY</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1403</field>
+    </record>
+    <record id="city_py_14_04" model="res.city">
+        <field name="name">VILLA YGATIMÍ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1404</field>
+    </record>
+    <record id="city_py_14_05" model="res.city">
+        <field name="name">ITANARÁ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1405</field>
+    </record>
+    <record id="city_py_14_06" model="res.city">
+        <field name="name">YPEJHÚ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1406</field>
+    </record>
+    <record id="city_py_14_07" model="res.city">
+        <field name="name">FRANCISCO CABALLERO ALVAREZ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1407</field>
+    </record>
+    <record id="city_py_14_08" model="res.city">
+        <field name="name">KATUETÉ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1408</field>
+    </record>
+    <record id="city_py_14_09" model="res.city">
+        <field name="name">LA PALOMA DEL ESPÍRITU SANTO</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1409</field>
+    </record>
+    <record id="city_py_14_10" model="res.city">
+        <field name="name">NUEVA ESPERANZA</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1410</field>
+    </record>
+    <record id="city_py_14_11" model="res.city">
+        <field name="name">YASY CAÑY</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1411</field>
+    </record>
+    <record id="city_py_14_12" model="res.city">
+        <field name="name">YBYRAROBANÁ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1412</field>
+    </record>
+    <record id="city_py_14_13" model="res.city">
+        <field name="name">YBY PYTÁ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1413</field>
+    </record>
+    <record id="city_py_14_14" model="res.city">
+        <field name="name">MARACANÁ</field>
+        <field name="state_id" ref="state_py_canindeyu" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1414</field>
+    </record>
+    <record id="city_py_15_02" model="res.city">
+        <field name="name">BENJAMÍN ACEVAL</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1502</field>
+    </record>
+    <record id="city_py_15_03" model="res.city">
+        <field name="name">PUERTO PINASCO</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1503</field>
+    </record>
+    <record id="city_py_15_04" model="res.city">
+        <field name="name">VILLA HAYES</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1504</field>
+    </record>
+    <record id="city_py_15_05" model="res.city">
+        <field name="name">NANAWA</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1505</field>
+    </record>
+    <record id="city_py_15_06" model="res.city">
+        <field name="name">JOSÉ FALCÓN</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1506</field>
+    </record>
+    <record id="city_py_15_07" model="res.city">
+        <field name="name">TTE. 1° MANUEL IRALA FERNÁNDEZ</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1507</field>
+    </record>
+    <record id="city_py_15_08" model="res.city">
+        <field name="name">TENIENTE ESTEBAN MARTÍNEZ</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1508</field>
+    </record>
+    <record id="city_py_15_09" model="res.city">
+        <field name="name">GENERAL JOSÉ MARÍA BRUGUEZ</field>
+        <field name="state_id" ref="state_py_presidente_hayes" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1509</field>
+    </record>
+    <record id="city_py_16_02" model="res.city">
+        <field name="name">MARISCAL JOSÉ FÉLIX ESTIGARRIBIA</field>
+        <field name="state_id" ref="state_py_boqueron" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1602</field>
+    </record>
+    <record id="city_py_16_04" model="res.city">
+        <field name="name">FILADELFIA</field>
+        <field name="state_id" ref="state_py_boqueron" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1604</field>
+    </record>
+    <record id="city_py_16_05" model="res.city">
+        <field name="name">LOMA PLATA</field>
+        <field name="state_id" ref="state_py_boqueron" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1605</field>
+    </record>
+    <record id="city_py_17_01" model="res.city">
+        <field name="name">FUERTE OLIMPO</field>
+        <field name="state_id" ref="state_py_alto_paraguay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1701</field>
+    </record>
+    <record id="city_py_17_02" model="res.city">
+        <field name="name">PUERTO CASADO</field>
+        <field name="state_id" ref="state_py_alto_paraguay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1702</field>
+    </record>
+    <record id="city_py_17_04" model="res.city">
+        <field name="name">BAHÍA NEGRA</field>
+        <field name="state_id" ref="state_py_alto_paraguay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1704</field>
+    </record>
+    <record id="city_py_17_05" model="res.city">
+        <field name="name">CARMELO PERALTA</field>
+        <field name="state_id" ref="state_py_alto_paraguay" />
+        <field name="country_id" ref="base.py" />
+        <field name="l10n_py_code">1705</field>
+    </record>
+</odoo>

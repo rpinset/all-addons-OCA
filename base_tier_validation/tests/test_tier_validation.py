@@ -897,6 +897,12 @@ class TierTierValidation(CommonTierValidation):
         # subscribed yet and must not have been notified.
         self.assertEqual(len(test_record.message_ids), 1)
         first_message = test_record.message_ids
+        # The body must name the assignee (so the recipient sees at a glance
+        # that the message is for them, since chatter does not render the
+        # "Notified to" pill for system notifications) and attribute the
+        # request to the original requester.
+        self.assertIn(review_first.todo_by, first_message.body)
+        self.assertIn(self.env.user.display_name, first_message.body)
         followers = test_record.message_follower_ids
         self.assertIn(self.test_user_1.partner_id, followers.mapped("partner_id"))
         self.assertNotIn(
@@ -925,6 +931,20 @@ class TierTierValidation(CommonTierValidation):
             self.test_user_2.partner_id,
             new_messages.mapped("notified_partner_ids"),
             "Second-tier reviewer must be notified once promoted to pending.",
+        )
+        # Regression guard for the attribution bug: ``env.user`` at second-
+        # tier promotion time is the tier-1 approver (``test_user_1``), but
+        # the body must attribute the request to the original requester
+        # (the env user when ``request_validation`` was called). The body
+        # must also name the second-tier assignee.
+        second_body = new_messages[0].body
+        self.assertIn(review_second.todo_by, second_body)
+        self.assertIn(self.env.user.display_name, second_body)
+        self.assertNotIn(
+            self.test_user_1.display_name,
+            second_body,
+            "Second-tier message must not attribute the request to the "
+            "tier-1 approver -- that's the wrong person.",
         )
 
     def test_19c_no_premature_promotion_on_subset(self):
@@ -1079,8 +1099,12 @@ class TierTierValidation(CommonTierValidation):
         review_1.invalidate_model()
         self.assertTrue(review_1.status == "pending")
         msg2 = test_record2.message_ids[0].body
-        request = test_record2._notify_requested_review_body()
+        # The promotion body now carries the assignee + the original
+        # requester (sourced from ``review.requested_by``, not env.user).
+        request = test_record2._notify_requested_review_body(review_1)
         self.assertIn(request, msg2)
+        self.assertIn(review_1.todo_by, msg2)
+        self.assertIn(review_1.requested_by.display_name, msg2)
 
     def test_21_notify_on_create(self):
         # notify on create

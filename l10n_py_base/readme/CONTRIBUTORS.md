@@ -1,0 +1,5 @@
+- KMEE INFORMÁTICA LTDA
+  - Luis Felipe Mileo \<mileo@kmee.com.br\>
+  - André Marcos Ferreira \<andre.ferreira@kmee.com.br\>
+- AlexXAwada \<alexandreawada@hotmail.com\>
+- selimovich \<mirsadselimovich@gmail.com\>

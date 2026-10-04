@@ -15,6 +15,20 @@ UI improvement:
   field, which was previously defined on the model but never
   rendered.
 
+## 19.0.1.0.3 (2026-05-13)
+
+Improvements:
+
+- ``notify_on_pending`` chatter body now names the assignee(s) so the
+  recipient can tell at a glance that the message is for them. Reuses
+  ``tier.review.todo_by`` so every review type (individual user,
+  group, ``res.users`` / ``res.groups`` field) is handled uniformly.
+- ``notify_on_pending`` chatter body now attributes the request to
+  ``review.requested_by`` (the user who actually pressed *Request
+  Validation*) instead of ``env.user``. On second-and-later tier
+  promotions ``env.user`` is the previous-tier approver, which was the
+  wrong person to credit.
+
 ## 19.0.1.0.1 (2026-05-12)
 
 Fixes:

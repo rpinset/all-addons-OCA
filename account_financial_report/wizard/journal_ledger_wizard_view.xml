@@ -14,8 +14,12 @@
                 <group>
                     <group>
                         <field name="date_range_id" />
-                        <field name="date_from" />
-                        <field name="date_to" />
+                        <field
+                            name="date_from"
+                            widget="daterange"
+                            options="{'end_date_field': 'date_to'}"
+                        />
+                        <field name="date_to" invisible="1" />
                     </group>
                     <group />
                 </group>
@@ -38,7 +42,12 @@
                 </group>
                 <separator string="Journals" />
                 <group>
-                    <field name="journal_ids" widget="many2many_tags" />
+                    <field
+                        name="journal_ids"
+                        widget="many2many_tags"
+                        nolabel="1"
+                        placeholder="Filtered journals (empty for all)"
+                    />
                 </group>
                 <footer>
                     <button
