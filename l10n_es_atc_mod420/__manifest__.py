@@ -1,10 +1,10 @@
 # Copyright 2014-2022 Nicolás Ramos (http://binhex.cloud)
 # Copyright 2023-2024 Christian Ramos (http://binhex.cloud)
-# Copyright 2023 Binhex System Solutions
+# Copyright 2023 Binhex
 
 {
     "name": "ATC Modelo 420",
-    "version": "17.0.1.1.4",
+    "version": "17.0.1.1.5",
     "author": "Binhex, Tecnativa, Odoo Community Association (OCA)",
     "category": "Accounting",
     "website": "https://github.com/OCA/l10n-spain",
