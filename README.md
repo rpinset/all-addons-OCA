@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-10-04 18:24 UTC** (elapsed 98s)
+Last build: **2026-10-08 00:59 UTC** (elapsed 147s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **148**
+- Skipped repos (no branch / no module): **149**
 
 ## Integrated repos
 
@@ -49,7 +49,7 @@ Last build: **2026-10-04 18:24 UTC** (elapsed 98s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | f19f439 2026-09-21 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 23 | 57b731e 2025-09-02 Weblate Update translation files |
 | [event](https://github.com/OCA/event) | 30 | af4f23b 2024-10-15 mymage Translated using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 46 | 81af3a2 2026-10-01 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 46 | 2c1605a 2026-10-07 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 16 | b4b1fbd 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 15 | 83a10be 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 96c76ff 2026-10-01 mymage Translated using Weblate (Italian) |
@@ -125,6 +125,6 @@ Last build: **2026-10-04 18:24 UTC** (elapsed 98s)
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 7 | a3f861b 2025-03-19 Weblate Update translation files |
 | [web](https://github.com/OCA/web) | 81 | 3dcfdaa 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [web-api](https://github.com/OCA/web-api) | 1 | a389c44 2025-06-16 mymage Translated using Weblate (Italian) |
-| [website](https://github.com/OCA/website) | 28 | 46810c4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [website](https://github.com/OCA/website) | 28 | 0b4393b 2026-10-06 mymage Translated using Weblate (Italian) |
 | [wms](https://github.com/OCA/wms) | 3 | 909a9d8 2024-06-07 mymage Translated using Weblate (Italian) |
 

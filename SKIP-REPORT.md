@@ -1,12 +1,12 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-10-04 18:24 UTC
+Generated 2026-10-08 00:59 UTC
 
-Total skipped: **148**
+Total skipped: **149**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **87**
+Count: **88**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -20,6 +20,7 @@ Count: **87**
 | [cim](https://github.com/OCA/cim) | [12.0](https://github.com/OCA/cim/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [12.0](https://github.com/OCA/connector-magento-php-extension/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [12.0](https://github.com/OCA/connector-mautic/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [12.0](https://github.com/OCA/connector-mercadolibre/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [12.0](https://github.com/OCA/connector-shopify/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [12.0](https://github.com/OCA/crowdfunding/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [department](https://github.com/OCA/department) | [12.0](https://github.com/OCA/department/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
