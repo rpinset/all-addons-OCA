@@ -1,18 +1,19 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-10-04 18:32 UTC
+Generated 2026-10-08 01:07 UTC
 
-Total skipped: **109**
+Total skipped: **110**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **29**
+Count: **30**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
 | [.github](https://github.com/OCA/.github) | [18.0](https://github.com/OCA/.github/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [ansible-odoo](https://github.com/OCA/ansible-odoo) | [18.0](https://github.com/OCA/ansible-odoo/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [18.0](https://github.com/OCA/connector-magento-php-extension/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [18.0](https://github.com/OCA/connector-mercadolibre/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | [18.0](https://github.com/OCA/maintainer-tools/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [mirrors-flake8](https://github.com/OCA/mirrors-flake8) | [18.0](https://github.com/OCA/mirrors-flake8/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | [18.0](https://github.com/OCA/oca-addons-repo-template/tree/18.0) | fatal: Remote branch 18.0 not found in upstream origin |

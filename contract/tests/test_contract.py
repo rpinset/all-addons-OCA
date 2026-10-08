@@ -1504,13 +1504,16 @@ class TestContract(TestContractBase):
         )
         self.contract2.journal_id = journal.id
         self.assertEqual(self.contract2.currency_id, currency_cad)
-        # Get currency from contract pricelist
+        # Currency should match for Journal and Pricelist
         pricelist = self.env["product.pricelist"].create(
             {"name": "Test pricelist", "currency_id": currency_eur.id}
         )
+        with self.assertRaises(UserError):
+            self.contract2.pricelist_id = pricelist.id
+        pricelist.currency_id = currency_cad
         self.contract2.pricelist_id = pricelist.id
         self.contract2.contract_line_ids.automatic_price = True
-        self.assertEqual(self.contract2.currency_id, currency_eur)
+        self.assertEqual(self.contract2.currency_id, currency_cad)
         # Get currency from partner pricelist
         self.contract2.pricelist_id = False
         self.contract2.partner_id.property_product_pricelist = pricelist.id
@@ -1522,6 +1525,49 @@ class TestContract(TestContractBase):
         # Assign same currency as computed one
         self.contract2.currency_id = currency_cad.id
         self.assertFalse(self.contract2.manual_currency_id)
+
+    def test_journal_currency_pricelist_domain(self):
+        currency_eur = self.env.ref("base.EUR")
+        currency_cad = self.env.ref("base.CAD")
+        journal_eur = self.env["account.journal"].create(
+            {
+                "name": "Test journal EUR",
+                "code": "TEUR",
+                "type": "sale",
+                "currency_id": currency_eur.id,
+            }
+        )
+        journal_cad = self.env["account.journal"].create(
+            {
+                "name": "Test journal CAD",
+                "code": "TCAD",
+                "type": "sale",
+                "currency_id": currency_cad.id,
+            }
+        )
+        journal_no_currency = self.env["account.journal"].create(
+            {"name": "Test journal no currency", "code": "TNOC", "type": "sale"}
+        )
+        pricelist_eur = self.env["product.pricelist"].create(
+            {"name": "Test pricelist EUR", "currency_id": currency_eur.id}
+        )
+        with Form(self.contract2) as contract_form:
+            contract_form.journal_id = journal_eur
+            self.assertEqual(
+                contract_form.pricelist_id_domain,
+                [("currency_id", "=", currency_eur.id)],
+            )
+            contract_form.pricelist_id = pricelist_eur
+            # Switching to a journal with another currency resets the pricelist
+            contract_form.journal_id = journal_cad
+            self.assertEqual(
+                contract_form.pricelist_id_domain,
+                [("currency_id", "=", currency_cad.id)],
+            )
+            self.assertFalse(contract_form.pricelist_id)
+            # A journal without currency means no restriction at all
+            contract_form.journal_id = journal_no_currency
+            self.assertEqual(contract_form.pricelist_id_domain, [])
 
     def test_contract_action_preview(self):
         action = self.contract.action_preview()
@@ -1722,4 +1768,18 @@ class TestContract(TestContractBase):
         expected_total = (expected_qty_period_1 + expected_qty_period_2) * 100.0
         self.assertEqual(
             self.acct_line._get_contract_line_total_value(), expected_total
+        )
+
+    def test_insert_markers_without_dates(self):
+        """A missing date leaves its markers empty instead of failing."""
+        self.acct_line.name = "#START# - #END# (#INVOICEMONTHNAME#)"
+        self.assertEqual(self.acct_line._insert_markers(False, False), " -  ()")
+        start = to_date("2018-01-01")
+        lang = self.env["res.lang"].search(
+            [("code", "=", self.acct_line.contract_id.partner_id.lang)]
+        )
+        date_format = lang.date_format or "%m/%d/%Y"
+        self.assertEqual(
+            self.acct_line._insert_markers(start, False),
+            f"{start.strftime(date_format)} -  (January)",
         )

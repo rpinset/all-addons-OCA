@@ -2,7 +2,7 @@
 
 {
     "name": "Job Queue",
-    "version": "18.0.4.0.1",
+    "version": "18.0.4.1.0",
     "author": "Camptocamp,ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/queue",
     "license": "LGPL-3",
@@ -25,6 +25,7 @@
     "assets": {
         "web.assets_backend": [
             "/queue_job/static/src/views/**/*",
+            "/queue_job/static/src/channel_tree/**/*",
         ],
     },
     "installable": True,

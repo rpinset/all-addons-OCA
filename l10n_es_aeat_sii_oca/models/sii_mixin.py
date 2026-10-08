@@ -255,17 +255,21 @@ class SiiMixin(models.AbstractModel):
 
     def _sii_filter_to_send(self):
         """Helper method to filter documents to send to SII."""
-        return self.filtered(
-            lambda document: (
-                document.sii_enabled
-                and document.state in self._get_valid_document_states()
-                and (
-                    (document.aeat_state != "sent" and not document.sii_needs_cancel)
-                    or (
-                        document.aeat_state != "cancelled" and document.sii_needs_cancel
-                    )
-                )
-            )
+        return self.filtered(lambda document: document._is_sii_document_to_send())
+
+    def _is_sii_document_to_send(self):
+        self.ensure_one()
+        if not self.sii_enabled:
+            return False
+        if self.sii_needs_cancel:
+            return self.state == "cancel" and self.aeat_state in [
+                "sent",
+                "sent_w_errors",
+                "sent_modified",
+            ]
+        return (
+            self.state in self._get_valid_document_states()
+            and self.aeat_state not in ["sent", "cancelled"]
         )
 
     def send_sii_now(self):
@@ -665,11 +669,16 @@ class SiiMixin(models.AbstractModel):
         # Preserve the VAT country prefix when it is explicitly set, even if it
         # differs from the partner's address country.
         if partner.vat and len(partner.vat) > 1 and partner.vat[1].isalpha():
-            vat_country_code = partner.vat[:2]
-        else:
-            vat_country_code = (
-                partner._map_aeat_country_iso_code(partner.country_id) or country_code
+            vat_prefix = partner.vat[:2].upper()
+            country = self.env["res.country"].search(
+                [("code", "=", vat_prefix)], limit=1
             )
+        else:
+            vat_prefix = country_code
+            country = partner.country_id
+        # Map it, as the AEAT expects some prefixes different from the ISO
+        # code (e.g. EL for Greece instead of GR)
+        vat_country_code = partner._map_aeat_country_iso_code(country) or vat_prefix
         # Limpiar alfanum
         if identifier:
             identifier = "".join(e for e in identifier if e.isalnum()).upper()

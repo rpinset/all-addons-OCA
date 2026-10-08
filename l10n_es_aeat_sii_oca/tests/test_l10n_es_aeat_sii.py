@@ -7,8 +7,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 import json
+from datetime import timedelta
 
-from odoo import exceptions
+from odoo import exceptions, fields
 from odoo.tools.misc import file_path
 
 from odoo.addons.l10n_es_aeat.tests.test_l10n_es_aeat_certificate import (
@@ -288,6 +289,32 @@ class TestL10nEsAeatSii(TestL10nEsAeatSiiBase):
             {
                 "NombreRazon": "French Customer",
                 "IDOtro": {"IDType": "02", "ID": "FR23334175221"},
+            },
+        )
+
+    def test_intracomunitary_customer_greek_vat_iso_prefix(self):
+        """A Greek VAT stored with the ISO prefix (GR) must be sent to the
+        SII with the intra-community prefix (EL), or the AEAT rejects it
+        with error 1104.
+        """
+        self._activate_certificate(self.certificate_password)
+        partner = self.env["res.partner"].create(
+            {
+                "name": "Greek Customer",
+                "country_id": self.ref("base.gr"),
+                "vat": "GR123456783",
+            }
+        )
+        invoice = self.invoice.copy(
+            {"partner_id": partner.id, "fiscal_position_id": self.fp_intra.id}
+        )
+        invoice.action_post()
+        sii_info = invoice._get_aeat_invoice_dict()
+        self.assertEqual(
+            sii_info["FacturaExpedida"]["Contraparte"],
+            {
+                "NombreRazon": "Greek Customer",
+                "IDOtro": {"IDType": "02", "ID": "EL123456783"},
             },
         )
 
@@ -703,6 +730,27 @@ class TestL10nEsAeatSii(TestL10nEsAeatSiiBase):
         self.assertTrue(invoice.sii_send_date)
         self.assertTrue(invoice_sii_failed.sii_send_date)
         self.assertTrue(invoice_sii_modified.sii_send_date)
+
+    def test_send_sii_now_cancelled_invoice(self):
+        invoice = self._create_invoice("out_invoice")
+        invoice.action_post()
+        invoice.write({"aeat_state": "sent"})
+        invoice.button_cancel()
+        future_send_date = fields.Datetime.now() + timedelta(days=2)
+        invoice.write(
+            {
+                "sii_needs_cancel": True,
+                "sii_send_date": future_send_date,
+            }
+        )
+        wizard = (
+            self.env["wizard.send.sii"]
+            .with_context(active_model="account.move", active_ids=invoice.ids)
+            .create({})
+        )
+        self.assertEqual(wizard.moves_to_send, 1)
+        invoice.send_sii_now()
+        self.assertLess(invoice.sii_send_date, future_send_date)
 
     def test_start_date(self):
         self.company.sii_start_date = "2018-01-01"

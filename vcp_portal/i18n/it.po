@@ -6,159 +6,161 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-10-07 08:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid ": Month-To-Date"
-msgstr ""
+msgstr ": dall'inizio del mese"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid ": Moving Annual Total - Last 12 Months"
-msgstr ""
+msgstr ": totale anno rolling - ultimi 12 mesi"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid ": Year-To-Date - From January to the selected month"
-msgstr ""
+msgstr ": da inizio anno - da gennaio al mese selezionato"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "April"
-msgstr ""
+msgstr "Aprile"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "August"
-msgstr ""
+msgstr "Agosto"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
 msgid "Comments"
-msgstr ""
+msgstr "Commenti"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "Contributors"
-msgstr ""
+msgstr "Contributori"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "Contributors Statistics"
-msgstr ""
+msgstr "Statistiche contributori"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
 msgid "Created Requests"
-msgstr ""
+msgstr "Richieste create"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "Date selection Tooltip"
-msgstr ""
+msgstr "Suggerimento per la selezione della data"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "December"
-msgstr ""
+msgstr "Dicembre"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "February"
-msgstr ""
+msgstr "Febbraio"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "January"
-msgstr ""
+msgstr "Gennaio"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "July"
-msgstr ""
+msgstr "Luglio"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "June"
-msgstr ""
+msgstr "Giugno"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "MAT"
-msgstr ""
+msgstr "MAT"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "MTD"
-msgstr ""
+msgstr "MTD"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "March"
-msgstr ""
+msgstr "Marzo"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "May"
-msgstr ""
+msgstr "Maggio"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
 msgid "Merged Requests"
-msgstr ""
+msgstr "Richieste accolte"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "November"
-msgstr ""
+msgstr "Novembre"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "October"
-msgstr ""
+msgstr "Ottobre"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "Organizations"
-msgstr ""
+msgstr "Organizzazioni"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "Repositories"
-msgstr ""
+msgstr "Repository"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.vcp_partner_detail
 msgid "Reviews"
-msgstr ""
+msgstr "Revisioni"
 
 #. module: vcp_portal
 #. odoo-javascript
@@ -167,25 +169,28 @@ msgid ""
 "Select the period for which you want to see the contributors statistics.\n"
 "        Options are:"
 msgstr ""
+"Selezionare il periodo per il quale si desidera visualizzare le statistiche "
+"dei collaboratori. \n"
+"        Le opzioni sono:"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "September"
-msgstr ""
+msgstr "Settembre"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.portal_my_home_contributors
 msgid "Show Version Control Platform information"
-msgstr ""
+msgstr "Visualizza le informazioni piattaforma di controllo versione"
 
 #. module: vcp_portal
 #: model_terms:ir.ui.view,arch_db:vcp_portal.portal_my_home_contributors
 msgid "Version Control Platforms"
-msgstr ""
+msgstr "Piattaforme controllo versione"
 
 #. module: vcp_portal
 #. odoo-javascript
 #: code:addons/vcp_portal/static/src/components/vcp_render/vcp_render.xml:0
 msgid "YTD"
-msgstr ""
+msgstr "YTD"

@@ -6,29 +6,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-10-07 17:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_form_view
 msgid "<strong>There is an exception blocking the rule processing:</strong>"
 msgstr ""
+"<strong>Si è verificata un'eccezione che blocca l'elaborazione della "
+"regola:</strong>"
 
 #. module: vcp_management
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_platform_key_name_uniq
 msgid "API Key must be unique."
-msgstr ""
+msgstr "La chiave API deve essere univoca."
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__key_ids
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_platform_form_view
 msgid "API Keys"
-msgstr ""
+msgstr "Chiavi API"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host__active
@@ -39,29 +43,29 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__active
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_search_view
 msgid "Active"
-msgstr ""
+msgstr "Attivo"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__additions
 msgid "Additions"
-msgstr ""
+msgstr "Aggiunte"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_search_view
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__avatar_url
 msgid "Avatar Url"
-msgstr ""
+msgstr "URL avatar"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__body
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__body
 msgid "Body"
-msgstr ""
+msgstr "Corpo"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_branch
@@ -70,27 +74,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__branch_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__branch_id
 msgid "Branch"
-msgstr ""
+msgstr "Branch"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__branch_count
 msgid "Branch Count"
-msgstr ""
+msgstr "Conteggio branch"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule__branch_pattern
 msgid "Branch Pattern"
-msgstr ""
+msgstr "Schema branch"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__branch_update_date
 msgid "Branch Update Date"
-msgstr ""
+msgstr "Data aggiornamento branch"
 
 #. module: vcp_management
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_branch_name_uniq
 msgid "Branch name must be unique."
-msgstr ""
+msgstr "Il nome del branch deve essere univoco."
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_branch_act_window
@@ -98,39 +102,39 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_platform_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Branches"
-msgstr ""
+msgstr "Branch"
 
 #. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_rule__rule_type__cloc
 msgid "Cloc Analysis"
-msgstr ""
+msgstr "Analisi orologio"
 
 #. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__closed
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Closed"
-msgstr ""
+msgstr "Chiusa"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__closed_at
 msgid "Closed At"
-msgstr ""
+msgstr "Chiusa il"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host_type__code
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__kind
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__code_count
 msgid "Code Count"
-msgstr ""
+msgstr "Conteggio codice"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host_type__code_kind
 msgid "Code Kind"
-msgstr ""
+msgstr "Genere codice"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_request
@@ -269,19 +273,19 @@ msgstr ""
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__deletions
 msgid "Deletions"
-msgstr ""
+msgstr "Cancellazioni"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__description
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__description
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/vcp_platform.py:0
 msgid "Developers"
-msgstr ""
+msgstr "Sviluppatori"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__display_name
@@ -301,33 +305,33 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__display_name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__documentation_count
 msgid "Documentation Count"
-msgstr ""
+msgstr "Conteggio documentazione"
 
 #. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__draft
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__email
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__empty_count
 msgid "Empty Count"
-msgstr ""
+msgstr "Conteggio vuoti"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__external_id
 msgid "Externa ID"
-msgstr ""
+msgstr "ID esterno"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__external_id
@@ -335,7 +339,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__external_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__external_id
 msgid "External"
-msgstr ""
+msgstr "Esterno"
 
 #. module: vcp_management
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_comment_external_id_uniq
@@ -344,60 +348,60 @@ msgstr ""
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_review_external_id_uniq
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_user_external_id_uniq
 msgid "External ID must be unique."
-msgstr ""
+msgstr "L'ID esterno deve essere univoco."
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/res_partner.py:0
 msgid "Fail to download avatar, %s.please retry"
-msgstr ""
+msgstr "Fallito lo scaricamento dell'avatar, %s. Ritentare"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__fetch_branch_pattern
 msgid "Fetch Branch Pattern"
-msgstr ""
+msgstr "Scarica schema branch"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__fetch_repository_archived
 msgid "Fetch Repository Archived"
-msgstr ""
+msgstr "Scarica repository archiviato"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__fetch_repository_branch_pattern
 msgid "Fetch Repository Branch Pattern"
-msgstr ""
+msgstr "Scarica schema branch repository"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__fetch_repository_fork
 msgid "Fetch Repository Fork"
-msgstr ""
+msgstr "Scarica fork repository"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Force Update Information (1Y)"
-msgstr ""
+msgstr "Forza informazioni aggiornamento (1Y)"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__fork_count
 msgid "Fork Count"
-msgstr ""
+msgstr "Conteggio fork"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Forks"
-msgstr ""
+msgstr "Fork"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__from_date
 msgid "From Date"
-msgstr ""
+msgstr "Dalla data"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_organization__host_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__host_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__host_id
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__id
@@ -417,7 +421,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__fetch_repository_archived
@@ -425,6 +429,8 @@ msgid ""
 "If checked, all repositories will be fetched (actives and archived). "
 "Otherwise, only active repositories will be fetched"
 msgstr ""
+"Se selezionata, verranno recuperate tutte i repository (attivi e archiviati)"
+". In caso contrario, verranno recuperati solo i repository attivi"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__fetch_repository_fork
@@ -432,6 +438,8 @@ msgid ""
 "If checked, all repositories will be fetched (sources and forks). Otherwise, "
 "only sources repositories will be fetched"
 msgstr ""
+"Se selezionato, verranno recuperati tutti i repository (sorgenti e fork). In "
+"caso contrario, verranno recuperati solo i repository sorgente"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__scheduled_information_update
@@ -439,6 +447,8 @@ msgid ""
 "If checked, the cron that update platform informations will look for up to "
 "date information, for this platform."
 msgstr ""
+"Se selezionata, l'attività cron che aggiorna le informazioni sulla "
+"piattaforma cercherà informazioni aggiornate per questa piattaforma."
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__default_repository_scheduled_information_update
@@ -446,6 +456,8 @@ msgid ""
 "If checked, the cron that update repositories will look for up to date "
 "information, for this repository."
 msgstr ""
+"Se selezionata, l'attività cron di aggiornamento dei repository cercherà "
+"informazioni aggiornate per questo repository."
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__default_repository_scheduled_branch_update
@@ -454,6 +466,8 @@ msgid ""
 "If checked, the cron that update repository branches will look for up to "
 "date branches, for this repository."
 msgstr ""
+"Se selezionata, l'attività cron che aggiorna i branch del repository "
+"cercherà i branch aggiornati per questo repository."
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_repository__scheduled_information_update
@@ -462,88 +476,92 @@ msgid ""
 "date information, for this repository. This update include the recovery of "
 "requests, comments and reviews."
 msgstr ""
+"Se l'opzione è selezionata, il processo cron che aggiorna le informazioni "
+"del repository cercherà dati aggiornati per tale repository. L'aggiornamento "
+"include il recupero di richieste, commenti e recensioni."
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_res_partner__image_1920
 #: model:ir.model.fields,field_description:vcp_management.field_res_users__image_1920
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_1920
 msgid "Image"
-msgstr ""
+msgstr "Immgine"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_1024
 msgid "Image 1024"
-msgstr ""
+msgstr "immagine 1024"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_128
 msgid "Image 128"
-msgstr ""
+msgstr "Immagine 128"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_256
 msgid "Image 256"
-msgstr ""
+msgstr "Immagine 256"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__image_512
 msgid "Image 512"
-msgstr ""
+msgstr "Immagine 512"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_form_view
 msgid "Information"
-msgstr ""
+msgstr "Informazione"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_rule_information
 msgid "Information about the processing of a rule on a repository branch"
 msgstr ""
+"Informazioni sull'elaborazione di una regola su un branch del repository"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_management_report_pivot_view
 msgid "Invoices Analysis"
-msgstr ""
+msgstr "Analisi fatture"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__is_draft
 msgid "Is Draft"
-msgstr ""
+msgstr "In bozza"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__is_fork
 msgid "Is Fork"
-msgstr ""
+msgstr "È un fork"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__is_merged
 msgid "Is Merged"
-msgstr ""
+msgstr "È stato unito"
 
 #. module: vcp_management
 #: model:ir.model.constraint,message:vcp_management.constraint_vcp_request_label_name_uniq
 msgid "Label name must be unique."
-msgstr ""
+msgstr "Il nome etichetta deve essere univoco."
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__label_ids
 msgid "Labels"
-msgstr ""
+msgstr "Etichette"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__last_commit
 msgid "Last Commit"
-msgstr ""
+msgstr "Ultimo commit"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__last_commit_date
 msgid "Last Commit Date"
-msgstr ""
+msgstr "Data ultimo commit"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__last_update
 msgid "Last Update"
-msgstr ""
+msgstr "Ultimo aggiornamento"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__write_uid
@@ -562,7 +580,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__write_uid
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__write_date
@@ -581,12 +599,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__write_date
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_repository_branch
 msgid "Links Branches with Repositories"
-msgstr ""
+msgstr "Collega i branch con i repository"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__local_path
@@ -594,23 +612,23 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__local_path
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information_mixin__local_path
 msgid "Local Path"
-msgstr ""
+msgstr "Percorso locale"
 
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_management_report_menu
 msgid "Management Reporting"
-msgstr ""
+msgstr "Resoconto gestione"
 
 #. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__merged
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Merged"
-msgstr ""
+msgstr "Unito"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__merged_pr_count
 msgid "Merged Pr Count"
-msgstr ""
+msgstr "Contrggio PR accettate"
 
 #. module: vcp_management
 #. odoo-python
@@ -619,12 +637,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_res_users__vcp_merged_requests
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_partner_detail
 msgid "Merged Requests"
-msgstr ""
+msgstr "Richieste accolte"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_rule_information_mixin
 msgid "Mixin to link rule information models"
-msgstr ""
+msgstr "Mixin per collegare i modelli informazioni regole"
 
 #. module: vcp_management
 #. odoo-python
@@ -641,24 +659,26 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule__name
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__number
 msgid "Number"
-msgstr ""
+msgstr "Numero"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/res_partner.py:0
 msgid "Only one Vcp User can be use for synchronising the main image"
 msgstr ""
+"È possibile utilizzare un solo utente VCP per sincronizzare l'immagine "
+"principale"
 
 #. module: vcp_management
 #: model:ir.model.fields.selection,name:vcp_management.selection__vcp_request__status__open
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Open"
-msgstr ""
+msgstr "Apri"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_organization
@@ -667,32 +687,32 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__organization_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__organization_id
 msgid "Organization"
-msgstr ""
+msgstr "Organizzazione"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/vcp_platform.py:0
 msgid "Organization Name"
-msgstr ""
+msgstr "Nome organizzazione"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__partner_organization_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__partner_organization_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__partner_organization_id
 msgid "Organization Partner"
-msgstr ""
+msgstr "Partner organizzazione"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_organization_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_organization_menu
 msgid "Organizations"
-msgstr ""
+msgstr "Organizzazioni"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__override_parent_rules
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__override_parent_rules
 msgid "Override Parent Rules"
-msgstr ""
+msgstr "Sovrascrivi regole padre"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__partner_id
@@ -701,12 +721,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__partner_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__partner_id
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule__paths
 msgid "Paths"
-msgstr ""
+msgstr "Percorsi"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__platform_id
@@ -716,35 +736,35 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__platform_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__platform_id
 msgid "Platform"
-msgstr ""
+msgstr "Piattaforma"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_host_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_host_menu
 msgid "Platform Types"
-msgstr ""
+msgstr "Tipi piattaforma"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_platform_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_platform_menu
 msgid "Platforms"
-msgstr ""
+msgstr "Piattaforme"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_search_view
 msgid "Process Rule Error"
-msgstr ""
+msgstr "Errore regola processo"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_branch_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Process Rules"
-msgstr ""
+msgstr "Regole processo"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_rule
 msgid "Processing Rule"
-msgstr ""
+msgstr "Regola elaborazione"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_rule_act_window
@@ -753,12 +773,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__rule_ids
 #: model:ir.ui.menu,name:vcp_management.vcp_rule_menu
 msgid "Processing Rules"
-msgstr ""
+msgstr "Regole elaborazione"
 
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_request_menu
 msgid "Pull Requests"
-msgstr ""
+msgstr "Pull Requests"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__fetch_repository_branch_pattern
@@ -767,6 +787,9 @@ msgid ""
 "pattern will be fetched, when fetching branches of the repositories of the "
 "platform."
 msgstr ""
+"Espressione regolare. Se impostata, durante il recupero dei branch dai "
+"repository della piattaforma verranno recuperati solo i branch i cui nomi "
+"corrispondono allo schema."
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_repository__fetch_branch_pattern
@@ -774,12 +797,15 @@ msgid ""
 "Regular Expression. If set, only branches whose names are matching the "
 "pattern will be fetched. You can define that value at platform level."
 msgstr ""
+"Espressione regolare. Se impostata, verranno recuperati solo i branch i cui "
+"nomi corrispondono allo schema. È possibile definire tale valore a livello "
+"di piattaforma."
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_management_report_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_reporting
 msgid "Reporting"
-msgstr ""
+msgstr "Rendicontazione"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_platform_2_repository_act_window
@@ -787,7 +813,7 @@ msgstr ""
 #: model:ir.ui.menu,name:vcp_management.vcp_repository_menu
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_platform_form_view
 msgid "Repositories"
-msgstr ""
+msgstr "Repository"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_repository
@@ -798,42 +824,42 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__repository_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__repository_id
 msgid "Repository"
-msgstr ""
+msgstr "Repository"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_repository_branch_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_repository_branch_menu
 msgid "Repository Branches"
-msgstr ""
+msgstr "Branch repository"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__repository_count
 msgid "Repository Count"
-msgstr ""
+msgstr "Conteggio repository"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/vcp_platform.py:0
 msgid "Repository Name"
-msgstr ""
+msgstr "Nome repository"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__request_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__request_ids
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__request_id
 msgid "Request"
-msgstr ""
+msgstr "Richiesta"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__request_count
 msgid "Request Count"
-msgstr ""
+msgstr "Conteggio richieste"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_request_label_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_request_label_menu
 msgid "Request Labels"
-msgstr ""
+msgstr "Etichette richiesta"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_repository_2_request_act_window
@@ -841,33 +867,33 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request_label__request_ids
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Requests"
-msgstr ""
+msgstr "Richieste"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__res_id
 msgid "Res"
-msgstr ""
+msgstr "Res"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__res_model
 msgid "Res Model"
-msgstr ""
+msgstr "Modello res"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_review
 msgid "Review"
-msgstr ""
+msgstr "Revisione"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__review_comments
 msgid "Review Comments"
-msgstr ""
+msgstr "Commenti revisione"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__review_count
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__review_count
 msgid "Review Count"
-msgstr ""
+msgstr "Conteggio revisioni"
 
 #. module: vcp_management
 #. odoo-python
@@ -881,117 +907,117 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_partner_detail
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Reviews"
-msgstr ""
+msgstr "Revisioni"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__rule_id
 msgid "Rule"
-msgstr ""
+msgstr "Regola"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__rule_failure_msg
 msgid "Rule Failure Msg"
-msgstr ""
+msgstr "Messaggio fallimento regola"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__rule_information_ids
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information_mixin__rule_information_ids
 msgid "Rule Information"
-msgstr ""
+msgstr "Informazioni regola"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule__rule_type
 msgid "Rule Type"
-msgstr ""
+msgstr "Tipo regola"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__scanned_files
 msgid "Scanned Files"
-msgstr ""
+msgstr "File scansionati"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__scheduled_branch_update
 msgid "Scheduled Branch Update"
-msgstr ""
+msgstr "Aggiornamento branch programmato"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__scheduled_information_update
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__scheduled_information_update
 msgid "Scheduled Information Update"
-msgstr ""
+msgstr "Aggiornamento informazioni programmato"
 
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_settings_menu
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_rule_form_view
 msgid "Settings"
-msgstr ""
+msgstr "Impostazioni"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__short_description
 msgid "Short Description"
-msgstr ""
+msgstr "Descrizione breve"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_repository__is_fork
 msgid "Specify if the repo is a Source or a Fork repository"
-msgstr ""
+msgstr "Indica se il repository è una sorgente o un fork"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__stargazers_count
 msgid "Stargazers Count"
-msgstr ""
+msgstr "Conteggio stargazers"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Stars"
-msgstr ""
+msgstr "Asterischi"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__state
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__state
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__status
 msgid "Status"
-msgstr ""
+msgstr "Stato"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__submitted_at
 msgid "Submitted At"
-msgstr ""
+msgstr "Inviato a"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__sync_image_to_partner
 msgid "Sync Image To Partner"
-msgstr ""
+msgstr "Sincronizza l'immagine al partner"
 
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_technical_menu
 msgid "Technical"
-msgstr ""
+msgstr "Tecnico"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__test_field
 msgid "Test Field"
-msgstr ""
+msgstr "Campo test"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/vcp_repository_branch.py:0
 msgid "The branch and the repository must belong to the same platform."
-msgstr ""
+msgstr "Il branch e il repository devono appartenere alla stessa piattaforma."
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__total_comments
 msgid "Total Comments"
-msgstr ""
+msgstr "Commenti totali"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__total_count
 msgid "Total Count"
-msgstr ""
+msgstr "Conteggio totale"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host__type_id

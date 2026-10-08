@@ -904,6 +904,11 @@ msgid "In Progress"
 msgstr "En Progreso"
 
 #. module: helpdesk_mgmt
+#: model:ir.model.fields,field_description:helpdesk_mgmt.field_helpdesk_ticket__notes
+msgid "Internal notes"
+msgstr ""
+
+#. module: helpdesk_mgmt
 #: model:ir.model.fields,field_description:helpdesk_mgmt.field_helpdesk_ticket__message_is_follower
 #: model:ir.model.fields,field_description:helpdesk_mgmt.field_helpdesk_ticket_team__message_is_follower
 msgid "Is Follower"
@@ -1726,6 +1731,11 @@ msgid "Unattended tickets"
 msgstr "Tickets sin atender"
 
 #. module: helpdesk_mgmt
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt.helpdesk_ticket_view_search
+msgid "Unread Messages"
+msgstr "Mensajes por leer"
+
+#. module: helpdesk_mgmt
 #: model:ir.model,name:helpdesk_mgmt.model_res_users
 #: model:res.groups,name:helpdesk_mgmt.group_helpdesk_user
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt.helpdesk_ticket_view_search
@@ -2213,9 +2223,6 @@ msgstr ""
 
 #~ msgid "Number of unread messages"
 #~ msgstr "Número de mensajes sin leer"
-
-#~ msgid "Unread Messages"
-#~ msgstr "Mensajes por leer"
 
 #~ msgid "Unread Messages Counter"
 #~ msgstr "Contador mensajes por leer"

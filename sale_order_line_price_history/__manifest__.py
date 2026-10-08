@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Sale order line price history",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.2",
     "category": "Sales Management",
     "author": "Tecnativa,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-workflow",
@@ -18,6 +18,10 @@
         "web.assets_backend": [
             "sale_order_line_price_history/static/src/js/*.js",
             "sale_order_line_price_history/static/src/xml/*.xml",
+        ],
+        "web.assets_unit_tests": [
+            "sale_order_line_price_history/static/src/js/*.js",
+            "sale_order_line_price_history/static/tests/**/*.js",
         ],
     },
     "maintainers": ["CarlosRoca13", "Shide"],
