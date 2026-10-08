@@ -17,8 +17,6 @@ class AccountChartTemplate(models.AbstractModel):
             "code_digits": "6",
             "property_account_receivable_id": "account_py_301",
             "property_account_payable_id": "account_py_2001",
-            "property_account_expense_categ_id": "account_py_50101_expense",
-            "property_account_income_categ_id": "account_py_40101_income",
         }
 
     @template("py", "res.company")
@@ -26,6 +24,8 @@ class AccountChartTemplate(models.AbstractModel):
         return {
             self.env.company.id: {
                 "account_fiscal_country_id": "base.py",
+                "income_account_id": "account_py_40101_income",
+                "expense_account_id": "account_py_50101_expense",
                 "bank_account_code_prefix": "1.01.01.04",
                 "cash_account_code_prefix": "1.01.01.02",
                 "transfer_account_code_prefix": "1.01.01.03",

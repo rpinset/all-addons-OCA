@@ -3,7 +3,7 @@
 {
     "name": "Base Tier Validation Correction",
     "summary": "Correct tier.review data after it has been created.",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.2.0",
     "category": "Tools",
     "website": "https://github.com/OCA/tier-validation",
     "author": "Ecosoft,Odoo Community Association (OCA)",

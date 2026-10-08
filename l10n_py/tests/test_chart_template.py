@@ -55,3 +55,27 @@ class TestChartTemplatePy(AccountTestInvoicingCommon):
                     exempt,
                     f"IVA {rate}% ({kind}) maps to Exento",
                 )
+
+    def test_default_accounts(self):
+        """Company defaults for partners and product categories come from the chart"""
+        self.assertEqual(
+            self.company.income_account_id, self.template.ref("account_py_40101_income")
+        )
+        self.assertEqual(
+            self.company.expense_account_id,
+            self.template.ref("account_py_50101_expense"),
+        )
+        partner = self.env["res.partner"].create({"name": "Test PY partner"})
+        self.assertEqual(
+            partner.property_account_receivable_id, self.template.ref("account_py_301")
+        )
+        self.assertEqual(
+            partner.property_account_payable_id, self.template.ref("account_py_2001")
+        )
+        categ = self.env["product.category"].create({"name": "Test PY category"})
+        self.assertEqual(
+            categ.property_account_income_categ_id, self.company.income_account_id
+        )
+        self.assertEqual(
+            categ.property_account_expense_categ_id, self.company.expense_account_id
+        )

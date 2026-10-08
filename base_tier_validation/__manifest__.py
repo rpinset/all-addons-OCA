@@ -3,7 +3,7 @@
 {
     "name": "Base Tier Validation",
     "summary": "Implement a validation process based on tiers.",
-    "version": "19.0.1.4.1",
+    "version": "19.0.1.4.3",
     "development_status": "Mature",
     "maintainers": ["LoisRForgeFlow"],
     "category": "Tools",
@@ -32,7 +32,6 @@
     "assets": {
         "web.assets_backend": [
             "base_tier_validation/static/src/components/**/*",
-            "base_tier_validation/static/src/js/**/*",
         ],
     },
 }

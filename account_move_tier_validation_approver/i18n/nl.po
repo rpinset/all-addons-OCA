@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_move_tier_validation_approver
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-06 17:46+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_partner__approver_id
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_users__approver_id
+msgid "Approver of Vendor Bills"
+msgstr "Goedkeurder van leveranciersfacturen"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_company__validation_approver_tier_definition_id
+msgid "Bill approval tier definition"
+msgstr "Niveaudefinitie goedkeuring facturen"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model,name:account_move_tier_validation_approver.model_res_company
+msgid "Companies"
+msgstr "Bedrijven"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model,name:account_move_tier_validation_approver.model_res_config_settings
+msgid "Config Settings"
+msgstr "Instellingen"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model,name:account_move_tier_validation_approver.model_res_partner
+msgid "Contact"
+msgstr "Relatie"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_account_move__display_name
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_company__display_name
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_account_move__id
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_company__id
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_config_settings__id
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_move_tier_validation_approver
+#. odoo-python
+#: code:addons/account_move_tier_validation_approver/models/account_move.py:0
+msgid "It is mandatory to indicate a Responsible for Approval (in %s)"
+msgstr ""
+"Het is verplicht om een verantwoordelijke voor goedkeuring aan te geven (in "
+"%s)"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model,name:account_move_tier_validation_approver.model_account_move
+msgid "Journal Entry"
+msgstr "Boeking"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_config_settings__require_approver_in_vendor_bills
+msgid "Require Approver In Vendor Bills"
+msgstr "Goedkeurder vereisen bij leveranciersfacturen"
+
+#. module: account_move_tier_validation_approver
+#: model_terms:ir.ui.view,arch_db:account_move_tier_validation_approver.res_config_settings_view_form
+msgid ""
+"Require approver before posting vendor bills. Values set here are company-"
+"specific."
+msgstr ""
+"Vereis een goedkeurder voordat leveranciersfacturen worden geboekt. "
+"Instellingen die hier worden ingesteld zijn bedrijfsspecifiek."
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_res_company__require_approver_in_vendor_bills
+msgid "Require approver in vendor bills"
+msgstr "Goedkeurder vereisen bij leveranciersfacturen"
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,help:account_move_tier_validation_approver.field_res_config_settings__require_approver_in_vendor_bills
+msgid "Requires adding an approver before a vendor bill can be posted."
+msgstr ""
+"Vereist het toevoegen van een goedkeurder voordat een leveranciersfactuur "
+"kan worden geboekt."
+
+#. module: account_move_tier_validation_approver
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_account_bank_statement_line__approver_id
+#: model:ir.model.fields,field_description:account_move_tier_validation_approver.field_account_move__approver_id
+msgid "Responsible for Approval"
+msgstr "Verantwoordelijke voor goedkeuring"

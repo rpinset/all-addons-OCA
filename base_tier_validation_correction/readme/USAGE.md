@@ -8,7 +8,8 @@ To create/edit Tier Review Correction
   - Document Model, i.e., Purchase order
 - Find documents with pending reviews by,
   - Reviewer(s)
-  - Name Search
+  - Documents: a filter on the documents themselves, e.g. a partner,
+    a date or a state
 - Then set default value to change, in this case,
   - New Reviewer(s)
 - Click button "Prepare", if any document matched, it should list in

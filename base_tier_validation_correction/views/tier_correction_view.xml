@@ -109,7 +109,12 @@
                                 widget="many2many_tags"
                                 string="Reviewer(s)"
                             />
-                            <field name="search_name" readonly="state != 'draft'" />
+                            <field
+                                name="document_domain"
+                                widget="domain"
+                                options="{'model': 'model'}"
+                                readonly="state != 'draft'"
+                            />
                         </group>
                         <group name="set_value" string="Reassign to new value">
                             <p class="oe_grey" colspan="2">

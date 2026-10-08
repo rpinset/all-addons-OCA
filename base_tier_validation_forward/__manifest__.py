@@ -3,7 +3,7 @@
 {
     "name": "Base Tier Validation Forward",
     "summary": "Forward option for base tiers",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Tools",
     "website": "https://github.com/OCA/tier-validation",
     "author": "Ecosoft,Odoo Community Association (OCA)",

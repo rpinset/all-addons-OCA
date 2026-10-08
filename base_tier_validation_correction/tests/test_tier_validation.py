@@ -50,7 +50,7 @@ class TierTierValidation(CommonTierValidation):
         correction = self.env["tier.correction"].create(
             {
                 "name": res["context"].get("default_name"),
-                "search_name": res["context"].get("default_search_name"),
+                "document_domain": res["context"].get("default_document_domain"),
                 "model_id": res["context"].get("default_model_id"),
                 "correction_type": res["context"].get("default_correction_type"),
                 "new_reviewer_ids": [Command.set(self.test_user_2.ids)],
@@ -120,7 +120,7 @@ class TierTierValidation(CommonTierValidation):
         correction = self.env["tier.correction"].create(
             {
                 "name": res["context"].get("default_name"),
-                "search_name": res["context"].get("default_search_name"),
+                "document_domain": res["context"].get("default_document_domain"),
                 "model_id": res["context"].get("default_model_id"),
                 "correction_type": res["context"].get("default_correction_type"),
                 "new_reviewer_ids": [Command.set(self.test_user_2.ids)],

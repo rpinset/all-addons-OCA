@@ -10,7 +10,7 @@
     "maintainers": ["renatonlima", "rvalyi"],
     "website": "https://github.com/OCA/l10n-brazil",
     "development_status": "Production/Stable",
-    "version": "19.0.2.5.0",
+    "version": "19.0.2.6.0",
     "depends": [
         "product",
         "uom_alias",
@@ -36,6 +36,7 @@
         "data/l10n_br_fiscal.tax.pis.cofins.csv",
         "data/l10n_br_fiscal_server_action.xml",
         "data/ir_cron.xml",
+        "data/ir_config_parameter.xml",
         "data/l10n_br_fiscal_comment_data.xml",
         "data/l10n_br_fiscal.legal.nature.csv",
         "data/l10n_br_fiscal.cnae.csv",
@@ -136,6 +137,10 @@
     "external_dependencies": {
         "python": [
             "erpbrasil-base>=2.4.2",
+            # the document import wizard parses the XML with xsdata; on 18.0
+            # the dependency arrives transitively via l10n_br_nfe, which does
+            # not exist on 19.0, so it must be declared here.
+            "xsdata",
         ]
     },
     "post_init_hook": "post_init_hook",

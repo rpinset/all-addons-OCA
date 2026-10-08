@@ -5,6 +5,7 @@ import logging
 from odoo import Command, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.fields import Domain
+from odoo.tools.safe_eval import datetime, dateutil, safe_eval
 
 _logger = logging.getLogger(__name__)
 
@@ -38,8 +39,11 @@ class TierCorrection(models.Model):
         default="reviewer",
         required=True,
     )
-    search_name = fields.Char(
-        string="Name Search",
+    document_domain = fields.Char(
+        string="Documents",
+        default="[]",
+        help="Only include the documents matching this filter. Documents "
+        "without a waiting or pending review are never included.",
     )
     old_reviewer_ids = fields.Many2many(
         comodel_name="res.users",
@@ -111,9 +115,7 @@ class TierCorrection(models.Model):
             if rec.correction_type == "reviewer":
                 doc_domain = Domain("review_ids.status", "in", ["waiting", "pending"])
                 review_domain = Domain("status", "in", ["waiting", "pending"])
-                if rec.search_name:
-                    doc_ids = self.env[rec.model].name_search(rec.search_name)
-                    doc_domain &= Domain("id", "in", list(dict(doc_ids).keys()))
+                doc_domain &= Domain(rec._get_document_domain())
                 if rec.old_reviewer_ids:
                     doc_domain &= Domain(
                         "review_ids.reviewer_ids", "in", rec.old_reviewer_ids.ids
@@ -141,6 +143,21 @@ class TierCorrection(models.Model):
                         )
                     )
                 rec.write({"item_ids": items})
+
+    def _get_document_domain(self):
+        """The document filter, evaluated like a domain in a view: it may use
+        uid, user and dates (e.g. "created in the last 30 days")."""
+        self.ensure_one()
+        return safe_eval(
+            self.document_domain or "[]",
+            {
+                "uid": self.env.uid,
+                "user": self.env.user,
+                "context_today": lambda: fields.Date.context_today(self),
+                "datetime": datetime,
+                "relativedelta": dateutil.relativedelta.relativedelta,
+            },
+        )
 
     @api.depends("item_ids")
     def _compute_reference(self):

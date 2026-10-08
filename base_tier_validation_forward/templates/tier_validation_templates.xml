@@ -9,7 +9,7 @@
                 string="Forward"
                 invisible="not can_forward"
                 type="object"
-                class="oe_inline oe_button btn-warning"
+                class="oe_inline oe_button btn-warning ms-1"
                 icon="fa-arrow-circle-right"
             />
         </xpath>

@@ -189,6 +189,11 @@ msgid "Display Name"
 msgstr ""
 
 #. module: base_tier_validation_correction
+#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__document_domain
+msgid "Documents"
+msgstr ""
+
+#. module: base_tier_validation_correction
 #: model:ir.model.fields.selection,name:base_tier_validation_correction.selection__tier_correction__state__draft
 msgid "Draft"
 msgstr ""
@@ -302,11 +307,6 @@ msgid "My Activity Deadline"
 msgstr ""
 
 #. module: base_tier_validation_correction
-#: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__search_name
-msgid "Name Search"
-msgstr ""
-
-#. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction_item__new_reviewer_ids
 msgid "New Reviewers"
 msgstr ""
@@ -349,6 +349,13 @@ msgstr ""
 #. module: base_tier_validation_correction
 #: model:ir.model.fields,field_description:base_tier_validation_correction.field_tier_correction__model_id
 msgid "On Model"
+msgstr ""
+
+#. module: base_tier_validation_correction
+#: model:ir.model.fields,help:base_tier_validation_correction.field_tier_correction__document_domain
+msgid ""
+"Only include the documents matching this filter. Documents without a waiting"
+" or pending review are never included."
 msgstr ""
 
 #. module: base_tier_validation_correction

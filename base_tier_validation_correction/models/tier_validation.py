@@ -24,7 +24,7 @@ class TierValidation(models.AbstractModel):
             {
                 "default_name": f"{self.display_name} ...",
                 "default_model_id": res_model.id,
-                "default_search_name": self.display_name,
+                "default_document_domain": str([("id", "=", self.id)]),
                 "default_correction_type": "reviewer",
             }
         )

@@ -1,0 +1,137 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_expense_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-06 10:01+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__can_forward
+msgid "Can Forward"
+msgstr "Kan doorsturen"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__can_review
+msgid "Can Review"
+msgstr "Kan beoordelen"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__display_name
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_tier_definition__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model,name:hr_expense_tier_validation.model_hr_expense
+msgid "Expense"
+msgstr "Declaratie"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_view_search
+msgid "Expenses to review"
+msgstr "Te beoordelen declaraties"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_view_search
+msgid "Expenses validated and ready to be approved"
+msgstr "Gevalideerde declaraties gereed voor goedkeuring"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__has_comment
+msgid "Has Comment"
+msgstr "Heeft opmerking"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__hide_reviews
+msgid "Hide Reviews"
+msgstr "Beoordelingen verbergen"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__id
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_tier_definition__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,help:hr_expense_tier_validation.field_hr_expense__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr ""
+"Indien ingeschakeld kan de beoordelaar een opmerking achterlaten bij de "
+"beoordeling."
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__need_validation
+msgid "Need Validation"
+msgstr "Validatie nodig"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_view_search
+msgid "Needs my Review"
+msgstr "Vereist mijn beoordeling"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__next_review
+msgid "Next Review"
+msgstr "Volgende beoordeling"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__rejected_message
+msgid "Rejected Message"
+msgstr "Bericht bij afwijzing"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__require_authentication
+msgid "Require Authentication"
+msgstr "Authenticatie vereist"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__reviewer_ids
+msgid "Reviewers"
+msgstr "Beoordelaars"
+
+#. module: hr_expense_tier_validation
+#. odoo-python
+#: code:addons/hr_expense_tier_validation/models/hr_expense.py:0
+msgid "The expense is under validation."
+msgstr "De declaratie wordt momenteel gevalideerd."
+
+#. module: hr_expense_tier_validation
+#: model:ir.model,name:hr_expense_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "Niveaudefinitie"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__to_validate_message
+msgid "To Validate Message"
+msgstr "Bericht voor validatie"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_view_search
+msgid "Validated"
+msgstr "Gevalideerd"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__validated_message
+msgid "Validated Message"
+msgstr "Bericht bij goedkeuring"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__validation_status
+msgid "Validation Status"
+msgstr "Validatiestatus"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model.fields,field_description:hr_expense_tier_validation.field_hr_expense__review_ids
+msgid "Validations"
+msgstr "Validaties"
