@@ -1,0 +1,4 @@
+id,name,model_id,group_id/id,operation,domain
+access_account_authorization_user,account.authorization.user,account.authorization,account.group_account_invoice,r,
+access_account_authorization_manager,account.authorization.manager,account.authorization,account.group_account_manager,crud,
+access_account_authorization_advisor,account.authorization.advisor,account.authorization,account.group_account_readonly,r,

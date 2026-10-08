@@ -1,0 +1,4 @@
+"id","name","sequence","country_id","tax_payable_account_id","tax_receivable_account_id"
+"tax_group_iva_10","IVA 10%","1","base.py","account_py_220102","account_py_30503"
+"tax_group_iva_5","IVA 5%","2","base.py","account_py_220102","account_py_30503"
+"tax_group_exempt","Exento","3","base.py","account_py_220102","account_py_30503"

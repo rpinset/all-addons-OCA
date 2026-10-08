@@ -50,6 +50,56 @@ and promote its widespread use.
 
 ---
 
+## From OCA/l10n-paraguay
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# l10n-paraguay
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-paraguay&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-paraguay/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-paraguay/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/l10n-paraguay/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-paraguay/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-paraguay/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-paraguay)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-paraguay-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-paraguay-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+l10n-paraguay
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_py](l10n_py/) | 20.0.1.0.0 |  | Localización contable para Paraguay
+[l10n_py_account](l10n_py_account/) | 20.0.1.0.0 |  | Accounting extensions for Paraguay localization
+[l10n_py_base](l10n_py_base/) | 20.0.1.0.0 |  | Base localization data for Paraguay
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/mis-builder
 
 
@@ -209,6 +259,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/server-brand
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# server-brand
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-brand&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/server-brand/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/server-brand/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/server-brand/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-brand)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-brand-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-brand-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+server-brand
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 20.0.1.0.0 |  | Remove enterprise modules and setting items
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/storage
 
 
@@ -260,6 +358,54 @@ addon | version | maintainers | summary
 [storage_media](storage_media/) | 18.0.1.1.1 (unported) |  | Give the posibility to store media data in Odoo
 [storage_media_product](storage_media_product/) | 18.0.1.0.1 (unported) |  | Link media to products and categories
 [storage_thumbnail](storage_thumbnail/) | 18.0.1.0.0 (unported) |  | Abstract module that add the possibility to have thumbnail
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/web
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# web
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/web&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/web/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/web/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/web/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/web/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/web/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/web)
+[![Translation Status](https://translation.odoo-community.org/widgets/web-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/web-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+web
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[web_environment_ribbon](web_environment_ribbon/) | 20.0.1.0.0 |  | Web Environment Ribbon
 
 [//]: # (end addons)
 

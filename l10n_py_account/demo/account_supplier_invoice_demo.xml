@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- ============================================================ -->
+    <!-- Facturas de Compra (no requieren timbrado propio)             -->
+    <!-- Se mantienen en borrador — requieren documento LATAM          -->
+    <!-- ============================================================ -->
+
+    <!-- Compra con IVA 10% -->
+    <record id="demo_bill_iva10" model="account.move">
+        <field name="partner_id" ref="partner_proveedor_py" />
+        <field name="move_type">in_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-02'" />
+        <field name="ref">FE 001-001-0000123</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('product_iva_10_electronica'),
+                'quantity': 5,
+                'price_unit': 4200000.0,
+                'name': 'Notebook Dell Inspiron (compra)',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Compra con IVA 5% -->
+    <record id="demo_bill_iva5" model="account.move">
+        <field name="partner_id" ref="partner_proveedor_py" />
+        <field name="move_type">in_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-04'" />
+        <field name="ref">FE 001-001-0000456</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('product_iva_5_alimento'),
+                'quantity': 500,
+                'price_unit': 35000.0,
+                'name': 'Yerba Mate Kurupí 1kg (compra)',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Compra mixta -->
+    <record id="demo_bill_mixta" model="account.move">
+        <field name="partner_id" ref="partner_proveedor_py" />
+        <field name="move_type">in_invoice</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-06'" />
+        <field name="ref">FE 001-001-0000789</field>
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('product_iva_10_electronica'),
+                'quantity': 3,
+                'price_unit': 4200000.0,
+                'name': 'Notebook Dell Inspiron (compra)',
+            }),
+            (0, 0, {
+                'product_id': ref('product_iva_5_alimento'),
+                'quantity': 200,
+                'price_unit': 35000.0,
+                'name': 'Yerba Mate Kurupí 1kg (compra)',
+            }),
+            (0, 0, {
+                'product_id': ref('product_exento_libro'),
+                'quantity': 50,
+                'price_unit': 80000.0,
+                'name': 'Libro Historia del Paraguay (compra)',
+            }),
+        ]"
+        />
+    </record>
+</odoo>

@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-04 18:33 UTC
+Generated 2026-10-08 01:07 UTC
 
 ## Skipped repos
 
@@ -48,6 +48,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-magento](https://github.com/OCA/connector-magento) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | `no_module` | No directory with __manifest__.py at repo root |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | `no_module` | No directory with __manifest__.py at repo root |
@@ -122,7 +123,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-poland](https://github.com/OCA/l10n-poland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | `no_module` | No directory with __manifest__.py at repo root |
@@ -211,7 +211,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | `no_module` | No directory with __manifest__.py at repo root |
-| [server-brand](https://github.com/OCA/server-brand) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-tools](https://github.com/OCA/server-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-ux](https://github.com/OCA/server-ux) | `no_module` | No directory with __manifest__.py at repo root |
@@ -258,7 +257,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-rental](https://github.com/OCA/vertical-rental) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | `no_module` | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | `no_module` | No directory with __manifest__.py at repo root |
-| [web](https://github.com/OCA/web) | `no_module` | No directory with __manifest__.py at repo root |
 | [web-api](https://github.com/OCA/web-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | `no_module` | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | `no_module` | No directory with __manifest__.py at repo root |

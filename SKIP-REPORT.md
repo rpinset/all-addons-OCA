@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-04 18:33 UTC
+Generated 2026-10-08 01:07 UTC
 
-Total skipped: **259**
+Total skipped: **257**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **233**
+Count: **231**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -80,6 +80,7 @@ Count: **233**
 | [connector-lims](https://github.com/OCA/connector-lims) | [20.0](https://github.com/OCA/connector-lims/tree/20.0) | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | [20.0](https://github.com/OCA/connector-magento/tree/20.0) | No directory with __manifest__.py at repo root |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [20.0](https://github.com/OCA/connector-mautic/tree/20.0) | No directory with __manifest__.py at repo root |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [20.0](https://github.com/OCA/connector-mercadolibre/tree/20.0) | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | [20.0](https://github.com/OCA/connector-odoo2odoo/tree/20.0) | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | [20.0](https://github.com/OCA/connector-prestashop/tree/20.0) | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | [20.0](https://github.com/OCA/connector-redmine/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -154,7 +155,6 @@ Count: **233**
 | [l10n-morocco](https://github.com/OCA/l10n-morocco) | [20.0](https://github.com/OCA/l10n-morocco/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | [20.0](https://github.com/OCA/l10n-netherlands/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-norway](https://github.com/OCA/l10n-norway) | [20.0](https://github.com/OCA/l10n-norway/tree/20.0) | No directory with __manifest__.py at repo root |
-| [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | [20.0](https://github.com/OCA/l10n-paraguay/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | [20.0](https://github.com/OCA/l10n-peru/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-poland](https://github.com/OCA/l10n-poland) | [20.0](https://github.com/OCA/l10n-poland/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | [20.0](https://github.com/OCA/l10n-portugal/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -220,7 +220,6 @@ Count: **233**
 | [search-engine](https://github.com/OCA/search-engine) | [20.0](https://github.com/OCA/search-engine/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | [20.0](https://github.com/OCA/server-auth/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | [20.0](https://github.com/OCA/server-backend/tree/20.0) | No directory with __manifest__.py at repo root |
-| [server-brand](https://github.com/OCA/server-brand) | [20.0](https://github.com/OCA/server-brand/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | [20.0](https://github.com/OCA/server-env/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-tools](https://github.com/OCA/server-tools) | [20.0](https://github.com/OCA/server-tools/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-ux](https://github.com/OCA/server-ux) | [20.0](https://github.com/OCA/server-ux/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -267,7 +266,6 @@ Count: **233**
 | [vertical-rental](https://github.com/OCA/vertical-rental) | [20.0](https://github.com/OCA/vertical-rental/tree/20.0) | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [20.0](https://github.com/OCA/vertical-travel/tree/20.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [20.0](https://github.com/OCA/wallet/tree/20.0) | No directory with __manifest__.py at repo root |
-| [web](https://github.com/OCA/web) | [20.0](https://github.com/OCA/web/tree/20.0) | No directory with __manifest__.py at repo root |
 | [web-api](https://github.com/OCA/web-api) | [20.0](https://github.com/OCA/web-api/tree/20.0) | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [20.0](https://github.com/OCA/web-api-contrib/tree/20.0) | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | [20.0](https://github.com/OCA/webhook/tree/20.0) | No directory with __manifest__.py at repo root |
