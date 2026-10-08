@@ -2,8 +2,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Libro de IGIC",
-    "version": "16.0.1.0.2",
-    "author": "Binhex System Solutions, Odoo Community Association (OCA)",
+    "version": "16.0.1.0.3",
+    "author": "Binhex, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
     "license": "AGPL-3",
     "category": "Accounting",

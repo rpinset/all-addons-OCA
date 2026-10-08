@@ -2,8 +2,8 @@
 
 {
     "name": "AEAT modelo 347 IGIC",
-    "version": "16.0.1.0.2",
-    "author": "Binhex System Solutions," "Odoo Community Association (OCA)",
+    "version": "16.0.1.0.3",
+    "author": "Binhex, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
     "category": "Accounting",
     "license": "AGPL-3",
