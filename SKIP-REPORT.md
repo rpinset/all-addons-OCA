@@ -1,12 +1,12 @@
 # Skipped repos — branch `14.0`
 
-Generated 2026-10-04 18:25 UTC
+Generated 2026-10-08 00:59 UTC
 
-Total skipped: **124**
+Total skipped: **125**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **66**
+Count: **67**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -20,6 +20,7 @@ Count: **66**
 | [cim](https://github.com/OCA/cim) | [14.0](https://github.com/OCA/cim/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | [14.0](https://github.com/OCA/connector-magento-php-extension/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [14.0](https://github.com/OCA/connector-mautic/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [14.0](https://github.com/OCA/connector-mercadolibre/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-shopify](https://github.com/OCA/connector-shopify) | [14.0](https://github.com/OCA/connector-shopify/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [14.0](https://github.com/OCA/edi-ediversa/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [14.0](https://github.com/OCA/edi-voxel/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |

@@ -8125,6 +8125,9 @@ and promote its widespread use.
 ## From OCA/stock-logistics-transport
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-transport
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-transport&target_branch=14.0)
 [![Pre-commit Status](https://github.com/OCA/stock-logistics-transport/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/stock-logistics-transport/actions/workflows/pre-commit.yml?query=branch%3A14.0)
 [![Build Status](https://github.com/OCA/stock-logistics-transport/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/stock-logistics-transport/actions/workflows/test.yml?query=branch%3A14.0)
@@ -8132,8 +8135,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-transport-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-transport-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# stock-logistics-transport
 
 TODO: add repo description.
 
@@ -8150,7 +8151,7 @@ addon | version | maintainers | summary
 [shipment_advice](shipment_advice/) | 14.0.2.6.0 |  | Manage your (un)loading process through shipment advices.
 [shipment_advice_bill_auto_complete](shipment_advice_bill_auto_complete/) | 14.0.1.3.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Generate vendor bill lines for incoming shipment advice
 [shipment_advice_bill_auto_complete_mrp](shipment_advice_bill_auto_complete_mrp/) | 14.0.1.1.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Glue module between Shipment Advice Bill Auto Complete and MRP
-[shipment_advice_reception_planner](shipment_advice_reception_planner/) | 14.0.0.2.0 |  | Plan your reception into shipment advices.
+[shipment_advice_reception_planner](shipment_advice_reception_planner/) | 14.0.0.2.1 |  | Plan your reception into shipment advices.
 [stock_dock](stock_dock/) | 14.0.1.2.0 |  | Manage the loading docks of your warehouse.
 [stock_location_address](stock_location_address/) | 14.0.1.0.0 |  | Adds an address on locations
 [stock_location_address_purchase](stock_location_address_purchase/) | 14.0.1.0.0 |  | Uses the location address on purchases
@@ -9394,7 +9395,7 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.19.4 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 14.0.4.19.5 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 14.0.2.14.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Core module for creating mobile apps
 [shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Create batch transfers for Cluster Picking

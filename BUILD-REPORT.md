@@ -1,6 +1,6 @@
 # Build report — `14.0`
 
-Generated 2026-10-04 18:25 UTC
+Generated 2026-10-08 00:59 UTC
 
 ## Skipped repos
 
@@ -24,6 +24,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-magento](https://github.com/OCA/connector-magento) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-magento-php-extension](https://github.com/OCA/connector-magento-php-extension) | `no_branch` | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | `no_branch` | fatal: Remote branch 14.0 not found in upstream origin |
+| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | `no_branch` | fatal: Remote branch 14.0 not found in upstream origin |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | `no_module` | No directory with __manifest__.py at repo root |
 | [connector-sage](https://github.com/OCA/connector-sage) | `no_module` | No directory with __manifest__.py at repo root |
