@@ -1,17 +1,19 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-10-08 01:07 UTC** (elapsed 51s)
+Last build: **2026-10-09 10:50 UTC** (elapsed 81s)
 
-- Repos integrated: **8**
-- Canonical modules: **51**
+- Repos integrated: **10**
+- Canonical modules: **54**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **257**
+- Skipped repos (no branch / no module): **255**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 3 | c29b972 2026-09-28 OCA-git-bot [UPD] addons table in README.md |
+| [l10n-iran](https://github.com/OCA/l10n-iran) | 2 | 1a660aa 2026-10-08 OCA-git-bot [BOT] post-merge updates |
+| [l10n-japan](https://github.com/OCA/l10n-japan) | 1 | 741e2db 2026-10-09 oca-ci [UPD] Update l10n_jp_address_layout.pot |
 | [l10n-paraguay](https://github.com/OCA/l10n-paraguay) | 3 | 6179748 2026-10-05 oca-ci [UPD] Update l10n_py_account.pot |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 22dfa59 2026-09-28 OCA-git-bot [UPD] addons table in README.md |
 | [queue](https://github.com/OCA/queue) | 8 | 30dbf53 2026-09-28 OCA-git-bot [UPD] addons table in README.md |

@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-08 01:07 UTC
+Generated 2026-10-09 10:50 UTC
 
 ## Skipped repos
 
@@ -113,10 +113,8 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-iran](https://github.com/OCA/l10n-iran) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-japan](https://github.com/OCA/l10n-japan) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-macedonia](https://github.com/OCA/l10n-macedonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | `no_module` | No directory with __manifest__.py at repo root |
