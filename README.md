@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-08 00:59 UTC** (elapsed 166s)
+Last build: **2026-10-09 10:42 UTC** (elapsed 144s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -67,7 +67,7 @@ Last build: **2026-10-08 00:59 UTC** (elapsed 166s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | e41c082 2026-10-01 mymage Translated using Weblate (Italian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | fc14539 2026-10-03 OCA-git-bot Merge PR #103 into 14.0 |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | cd66c7d 2026-10-01 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | a97d3e2 2026-10-08 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
