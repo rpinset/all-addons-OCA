@@ -774,6 +774,206 @@ class TierTierValidation(CommonTierValidation):
         self.assertFalse(result)
         self.assertEqual(result._name, "res.users")
 
+    def test_16c_review_user_count_cost_flat_in_backlog(self):
+        """The systray recount must not get dearer as the backlog grows.
+
+        ``review_user_count`` used to put ``can_review`` in the *document*
+        domain, whose search method re-searches the reviewer's entire backlog
+        on that model and then evaluates the field in Python over all of it;
+        and every recompute of the stored ``tier.review.can_review`` browsed
+        its document one row at a time. Both made the endpoint cost a handful
+        of queries per pending review, paid by every reviewer on every
+        notification -- enough to occupy every HTTP worker on a batch approval.
+        """
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '=', 2.0)]",
+                "approve_sequence": True,
+                "notify_on_pending": False,
+                "sequence": 5,
+                "name": "Definition for test 16c - backlog",
+            }
+        )
+
+        def add_backlog(count):
+            for _i in range(count):
+                record = self.test_model.create({"test_field": 2.0})
+                record.with_user(self.test_user_2).request_validation()
+
+        def measure():
+            # A batch approval keeps moving review statuses, so the stored
+            # ``can_review`` is permanently dirty in production. Reproduce that,
+            # then drop the cache: marking the field to recompute must not go
+            # through a read of the reviews, or the cache it fills would hide
+            # exactly the queries this test is about.
+            self.env.flush_all()
+            self.env.add_to_compute(
+                self.env["tier.review"]._fields["can_review"],
+                self.test_user_1.review_ids,
+            )
+            self.env.invalidate_all(flush=False)
+            before = self.env.cr.sql_log_count
+            result = self.test_user_1.with_user(self.test_user_1).review_user_count()
+            return self.env.cr.sql_log_count - before, result
+
+        add_backlog(2)
+        small_queries, small = measure()
+        self.assertEqual(small[0]["pending_count"], 2)
+
+        add_backlog(20)
+        large_queries, large = measure()
+        self.assertEqual(large[0]["pending_count"], 22)
+
+        # Twenty more pending documents may not cost twenty more round trips.
+        # The tolerance is deliberately loose: the point is that the growth is
+        # bounded, not that the absolute query count never moves.
+        self.assertLessEqual(
+            large_queries,
+            small_queries + 3,
+            "review_user_count scales with the reviewer's backlog: "
+            f"{small_queries} queries for 2 pending documents, "
+            f"{large_queries} for 22.",
+        )
+
+    def test_16d_review_user_count_unstored_state_field(self):
+        """A state field that is not stored cannot be filtered in SQL, so
+        ``review_user_count`` drops cancelled documents in Python instead.
+        ``display_name`` (computed, never stored) stands in for such a state
+        field, with one document's name playing the cancel state."""
+        self.tier_def_obj.create(
+            {
+                "model_id": self.tester_model.id,
+                "review_type": "individual",
+                "reviewer_id": self.test_user_1.id,
+                "definition_domain": "[('test_field', '=', 2.0)]",
+                "name": "Definition for test 16d - unstored state",
+            }
+        )
+        kept, cancelled = self.test_model.create([{"test_field": 2.0}] * 2)
+        (kept | cancelled).with_user(self.test_user_2).request_validation()
+        with mock.patch.multiple(
+            type(self.test_model),
+            _state_field="display_name",
+            _cancel_state=cancelled.display_name,
+        ):
+            result = self.test_user_1.with_user(self.test_user_1).review_user_count()
+        counts = {r["model"]: r["pending_count"] for r in result}
+        self.assertEqual(counts[self.test_model._name], 1)
+
+    def test_16e_review_user_count_skips_orphan_reviews(self):
+        """Reviews can outlive tier validation on their model: the model may
+        have been uninstalled, or no longer inherit ``tier.validation``. The
+        systray count and the ``can_review`` prefetch must both skip them."""
+        country = self.env.ref("base.be")
+        orphan_model = "tier.validation.uninstalled"
+        # Non-sequential definition: pending orphans stay reviewable, so they
+        # reach review_user_count.
+        pending = self.env["tier.review"].create(
+            [
+                {
+                    "definition_id": self.definition_4.id,
+                    "status": "pending",
+                    "model": orphan_model,
+                    "res_id": 1,
+                },
+                {
+                    "definition_id": self.definition_4.id,
+                    "status": "pending",
+                    "model": "res.country",
+                    "res_id": country.id,
+                },
+            ]
+        )
+        self.assertTrue(all(pending.mapped("can_review")))
+        # Sequential definition: computing can_review prefetches the documents'
+        # reviews, which must not choke on a missing model, a model without
+        # tier validation, or a review without a document.
+        done = self.env["tier.review"].create(
+            [
+                {
+                    "definition_id": self.definition_5.id,
+                    "status": "approved",
+                    "model": orphan_model,
+                    "res_id": 1,
+                },
+                {
+                    "definition_id": self.definition_5.id,
+                    "status": "approved",
+                    "model": "res.country",
+                    "res_id": country.id,
+                },
+                {"definition_id": self.definition_5.id, "status": "approved"},
+            ]
+        )
+        self.assertFalse(any(done.mapped("can_review")))
+        # res.users.review_ids shares its table with tier.review.reviewer_ids
+        # but is not its inverse: drop the cached value so the count sees the
+        # reviews created above.
+        self.test_user_1.invalidate_recordset(["review_ids"])
+        self.assertTrue(pending <= self.test_user_1.review_ids)
+        result = self.test_user_1.with_user(self.test_user_1).review_user_count()
+        models = [r["model"] for r in result]
+        self.assertNotIn(orphan_model, models)
+        self.assertNotIn("res.country", models)
+
+    def test_16g_prefetch_only_open_sequential_reviews(self):
+        """Done reviews return early in ``_can_review_value``: loading their
+        document's reviews would be wasted."""
+        reviews = self.env["tier.review"].create(
+            [
+                {
+                    "definition_id": self.definition_5.id,
+                    "status": status,
+                    "model": self.test_record._name,
+                    "res_id": self.test_record.id,
+                }
+                for status in ("approved", "rejected", "pending", "waiting")
+            ]
+        )
+        TierReview = type(self.env["tier.review"])
+        with mock.patch.object(
+            TierReview,
+            "_prefetch_resource_reviews",
+            autospec=True,
+            side_effect=TierReview._prefetch_resource_reviews,
+        ) as prefetch:
+            reviews._compute_can_review()
+        prefetched = prefetch.call_args.args[0]
+        self.assertEqual(set(prefetched.mapped("status")), {"pending", "waiting"})
+
+    def test_16f_orphan_sequential_reviews_still_open(self):
+        """Open sequential reviews of a missing document model, or of a model
+        without tier validation, do not break the systray count: they cannot
+        be reviewed, and waiting ones are neither promoted nor notified."""
+        self.definition_5.notify_on_pending = True
+        country = self.env.ref("base.be")
+        reviews = self.env["tier.review"].create(
+            [
+                {
+                    "definition_id": self.definition_5.id,
+                    "status": status,
+                    "model": model,
+                    "res_id": res_id,
+                }
+                for status in ("waiting", "pending")
+                for model, res_id in (
+                    ("tier.validation.uninstalled", 1),
+                    ("res.country", country.id),
+                )
+            ]
+        )
+        self.assertFalse(any(reviews.mapped("can_review")))
+        self.test_user_1.invalidate_recordset(["review_ids"])
+        result = self.test_user_1.with_user(self.test_user_1).review_user_count()
+        models = [r["model"] for r in result]
+        self.assertNotIn("tier.validation.uninstalled", models)
+        self.assertNotIn("res.country", models)
+        waiting = reviews.filtered(lambda r: r.status == "waiting")
+        self.assertEqual(len(waiting), 2)
+
     def test_17_search_records_no_validation(self):
         """Search for records that have no validation process started"""
         records = self.env["tier.validation.tester"].search(
@@ -1884,3 +2084,26 @@ class TierTierValidationView(CommonTierValidation):
         self.assertIn("need_validation", view["models"][model])
         self.assertIn("next_review", view["models"][model])
         self.assertIn("review_ids", view["models"][model])
+
+    def test_view_without_header_nor_sheet(self):
+        """The readonly domain added on every field of the form relies on
+        validation_status. That field is brought in by the tier validation
+        buttons, which are inserted on _tier_validation_buttons_xpath: on views
+        without such an insertion point (no header), the field has to be added
+        anyway, otherwise the client can not evaluate the domain (this is what
+        happens on base.view_partner_simple_form, opened by the mail composer).
+        """
+        view = self.env["ir.ui.view"].create(
+            {
+                "name": "tier.validation.tester2.simple.form",
+                "model": self.test_model_2._name,
+                "arch": "<form><field name='test_field'/></form>",
+            }
+        )
+        res = self.test_model_2.get_view(view_id=view.id, view_type="form")
+        arch = res["arch"]
+        if isinstance(arch, bytes):
+            arch = arch.decode()
+        self.assertIn("validation_status", res["models"][self.test_model_2._name])
+        self.assertIn('name="validation_status"', arch)
+        self.assertIn("validation_status not in", arch)

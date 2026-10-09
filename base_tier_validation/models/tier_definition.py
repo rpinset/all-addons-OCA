@@ -239,7 +239,7 @@ class TierDefinition(models.Model):
         )
         return self.env["tier.review"].search(
             domain,
-            limit=1,
+            limit=50,
         )
 
     def _cron_send_review_reminder(self):

@@ -3,7 +3,7 @@
 {
     "name": "Website Sale Slides Portal",
     "summary": "Display of purchased courses and participation in portal",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Website/eLearning",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/e-learning",
@@ -12,4 +12,9 @@
     "data": [
         "views/portal_templates.xml",
     ],
+    "assets": {
+        "web.assets_frontend": [
+            "website_sale_slides_portal/static/src/js/portal_courses.esm.js",
+        ],
+    },
 }

@@ -14,6 +14,24 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: website_sale_slides_portal
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Actions"
+msgstr ""
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+msgid "Copied"
+msgstr ""
+
+#. module: website_sale_slides_portal
+#. odoo-javascript
+#: code:addons/website_sale_slides_portal/static/src/js/portal_courses.esm.js:0
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
+msgid "Copy link"
+msgstr ""
+
+#. module: website_sale_slides_portal
 #. odoo-python
 #: code:addons/website_sale_slides_portal/controllers/portal.py:0
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
@@ -23,22 +41,13 @@ msgstr ""
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
+#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_menu_courses
 msgid "Courses"
-msgstr ""
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Go to course"
 msgstr ""
 
 #. module: website_sale_slides_portal
 #: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_home_courses
 msgid "Information about courses and participations."
-msgstr ""
-
-#. module: website_sale_slides_portal
-#: model_terms:ir.ui.view,arch_db:website_sale_slides_portal.portal_my_courses
-msgid "Invitation Link"
 msgstr ""
 
 #. module: website_sale_slides_portal

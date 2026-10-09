@@ -33,14 +33,25 @@ class Users(models.Model):
             aggregates=["id:recordset"],
         )
         for model, tier_review in review_groups:
-            Model = self.env[model]
             # Skip Models not having Tier Validation enabled (example: was unistalled)
-            if tier_review and hasattr(Model, "can_review"):
-                records_domain = (
-                    Domain("id", "in", tier_review.mapped("res_id"))
-                    & Domain("validation_status", "!=", "rejected")
-                    & Domain("can_review", "=", True)
-                )
+            if not tier_review or model not in self.env:
+                continue
+            Model = self.env[model]
+            if hasattr(Model, "can_review"):
+                records_domain = Domain(
+                    "id", "in", tier_review.mapped("res_id")
+                ) & Domain("validation_status", "!=", "rejected")
+                # Excludes any cancelled records depending on the structure of
+                # the model. Let PostgreSQL do it whenever the state field is a
+                # real column -- which it is on every model that stores its
+                # state -- and keep the Python pass only as the fallback for
+                # models whose state field is computed and not stored.
+                state_field = Model._fields.get(Model._state_field)
+                state_in_db = state_field is not None and state_field.store
+                if state_in_db:
+                    records_domain &= Domain(
+                        Model._state_field, "!=", Model._cancel_state
+                    )
                 try:
                     records = (
                         Model.with_user(user)
@@ -60,8 +71,16 @@ class Users(models.Model):
                         model,
                     )
                     continue
-                # Excludes any cancelled records depending on the structure of the model
-                if Model._state_field in Model._fields:
+                # ``can_review`` is deliberately *not* part of ``records_domain``.
+                # Its search method re-searches the reviewer's whole backlog on
+                # this model and then evaluates the field in Python over all of
+                # it, so putting it in the domain made the systray cost grow
+                # with the backlog -- on every call, for every reviewer. The
+                # candidate set is already narrowed to the pending reviews found
+                # above, so evaluate the field on those records instead: same
+                # answer, one prefetched batch instead of a second search.
+                records = records.filtered("can_review")
+                if not state_in_db and Model._state_field in Model._fields:
                     records = records.filtered(
                         lambda x: x[x._state_field] != x._cancel_state
                     )

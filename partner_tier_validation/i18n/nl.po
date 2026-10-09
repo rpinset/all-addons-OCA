@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-08 21:46+0000\n"
+"Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__can_forward
+msgid "Can Forward"
+msgstr "Kan doorsturen"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__can_review
+msgid "Can Review"
+msgstr "Kan beoordelen"
+
+#. module: partner_tier_validation
+#: model:ir.model,name:partner_tier_validation.model_res_partner
+msgid "Contact"
+msgstr "Relatie"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__display_name
+#: model:ir.model.fields,field_description:partner_tier_validation.field_tier_definition__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__has_comment
+msgid "Has Comment"
+msgstr "Heeft opmerking"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__hide_reviews
+msgid "Hide Reviews"
+msgstr "Beoordelingen verbergen"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__id
+#: model:ir.model.fields,field_description:partner_tier_validation.field_tier_definition__id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,help:partner_tier_validation.field_res_partner__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr ""
+"Indien ingeschakeld kan de beoordelaar een opmerking achterlaten bij de "
+"beoordeling."
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__need_validation
+msgid "Need Validation"
+msgstr "Validatie nodig"
+
+#. module: partner_tier_validation
+#: model_terms:ir.ui.view,arch_db:partner_tier_validation.partner_form_tier_filter
+msgid "Needs my Approval"
+msgstr "Vereist mijn goedkeuring"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__next_review
+msgid "Next Review"
+msgstr "Volgende beoordeling"
+
+#. module: partner_tier_validation
+#: model_terms:ir.ui.view,arch_db:partner_tier_validation.partner_form_tier_filter
+msgid "Partner(s) to Approve"
+msgstr "Goed te keuren relatie(s)"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__rejected_message
+msgid "Rejected Message"
+msgstr "Bericht bij afwijzing"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__require_authentication
+msgid "Require Authentication"
+msgstr "Authenticatie vereist"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__reviewer_ids
+msgid "Reviewers"
+msgstr "Beoordelaars"
+
+#. module: partner_tier_validation
+#: model:ir.model,name:partner_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "Niveaudefinitie"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__to_validate_message
+msgid "To Validate Message"
+msgstr "Bericht voor validatie"
+
+#. module: partner_tier_validation
+#: model:tier.definition,name:partner_tier_validation.partner_tier_definition_company_only
+msgid "Validate New Company"
+msgstr "Nieuw bedrijf valideren"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__validated_message
+msgid "Validated Message"
+msgstr "Bericht bij goedkeuring"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__validation_status
+msgid "Validation Status"
+msgstr "Validatiestatus"
+
+#. module: partner_tier_validation
+#: model:ir.model.fields,field_description:partner_tier_validation.field_res_partner__review_ids
+msgid "Validations"
+msgstr "Validaties"

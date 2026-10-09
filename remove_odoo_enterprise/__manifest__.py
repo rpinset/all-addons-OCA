@@ -1,9 +1,12 @@
 # Copyright 2018 Eska Yazılım ve Danışmanlık A.Ş (www.eskayazilim.com.tr)
+# Copyright 2018-2020 Onestein (<http://www.onestein.eu>)
+# Copyright 2023 Le Filament (https://le-filament.com)
+# Copyright 2026 Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Remove Odoo Enterprise",
     "summary": "Remove enterprise modules and setting items",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Maintenance",
     "author": "Eska, Onestein, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-brand",
