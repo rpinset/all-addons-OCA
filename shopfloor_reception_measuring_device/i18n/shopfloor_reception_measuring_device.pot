@@ -35,6 +35,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor_reception_measuring_device/actions/messages.py:0
 msgid ""
-"The device has %(device_name)s has been released from packaging "
+"The device %(device_name)s has been released from packaging "
 "%(packaging_name)s"
 msgstr ""

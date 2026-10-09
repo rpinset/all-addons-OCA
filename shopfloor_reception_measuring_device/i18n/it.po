@@ -38,8 +38,13 @@ msgstr "Nessun dispositivo di misura da rilasciare dall'imballo %(packaging)s"
 #. odoo-python
 #: code:addons/shopfloor_reception_measuring_device/actions/messages.py:0
 msgid ""
-"The device has %(device_name)s has been released from packaging "
-"%(packaging_name)s"
-msgstr ""
-"Il dispositivo %(device_name)s è stato rilasciato dall'imballaggio %"
+"The device %(device_name)s has been released from packaging %"
 "(packaging_name)s"
+msgstr ""
+
+#~ msgid ""
+#~ "The device has %(device_name)s has been released from packaging %"
+#~ "(packaging_name)s"
+#~ msgstr ""
+#~ "Il dispositivo %(device_name)s è stato rilasciato dall'imballaggio %"
+#~ "(packaging_name)s"

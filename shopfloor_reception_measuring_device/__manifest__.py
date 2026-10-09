@@ -3,7 +3,7 @@
 {
     "name": "Shopfloor Reception Measuring Device",
     "summary": "Allows to use measuring devices to measure packagings on the reception",
-    "version": "18.0.1.1.1",
+    "version": "18.0.1.2.0",
     "development_status": "Alpha",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",

@@ -71,10 +71,7 @@ class TestSetPackDimension(CommonCase):
         data = {
             "picking": self.data.picking(picking),
             "selected_move_line": self.data.move_line(line),
-            "packaging": dict(
-                self.data_detail.packaging_detail(packaging),
-                is_being_measured=bool(packaging.measuring_device_id),
-            ),
+            "packaging": self.data_detail.packaging_detail(packaging),
         }
         self.assert_response(
             response,
@@ -137,14 +134,19 @@ class TestSetPackDimension(CommonCase):
                 "packaging_id": self.packaging1.id,
             },
         )
-        self._assert_response_set_dimension(
-            response,
-            picking,
-            line,
-            self.packaging1,
-            message=self.msg_store.measuring_device_selected(
-                self.device, self.packaging1
+        packaging = self.packaging1
+        data = {
+            "picking": self.data.picking(picking),
+            "selected_move_line": self.data.move_line(line),
+            "packaging": self.data_detail.packaging_detail(packaging),
+            "measuring_device": self.data.measuring_device(
+                packaging.measuring_device_id
             ),
+        }
+        self.assert_response(
+            response,
+            next_state="use_measuring_device",
+            data=data,
         )
         self.assertEqual(self.packaging1.measuring_device_id, self.device)
         measurements = {

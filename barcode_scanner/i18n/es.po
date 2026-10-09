@@ -7,56 +7,57 @@ msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-31 11:45+0000\n"
-"PO-Revision-Date: 2026-07-31 11:45+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-10-08 14:55+0000\n"
+"Last-Translator: \"Leonardo J. Caballero G.\" <leonardocaballero@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while calling the server."
-msgstr ""
+msgstr "Se ha producido un error al conectarse al servidor."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while creating records."
-msgstr ""
+msgstr "Se ha producido un error al crear los registros."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while deleting records."
-msgstr ""
+msgstr "Se ha producido un error al eliminar los registros."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "Se ha producido un error al recuperar los datos."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while grouping data."
-msgstr ""
+msgstr "Se ha producido un error al agrupar los datos."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while reading records."
-msgstr ""
+msgstr "Se ha producido un error al leer los registros."
 
 #. module: barcode_scanner
 #. odoo-javascript
 #: code:addons/barcode_scanner/static/src/js/api.esm.js:0
 msgid "An error occurred while saving records."
-msgstr ""
+msgstr "Se ha producido un error al guardar los registros."
 
 #. module: barcode_scanner
 #. odoo-javascript
