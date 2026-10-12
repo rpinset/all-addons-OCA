@@ -50,55 +50,6 @@ and promote its widespread use.
 
 ---
 
-## From OCA/l10n-iran
-
-
-[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
-
-# l10n-iran
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-iran&target_branch=20.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml?query=branch%3A20.0)
-[![Build Status](https://github.com/OCA/l10n-iran/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/l10n-iran/actions/workflows/test.yml?query=branch%3A20.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-iran/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-iran)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-iran-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-iran-20-0/?utm_source=widget)
-
-<!-- /!\ do not modify above this line -->
-
-l10n-iran
-
-<!-- /!\ do not modify below this line -->
-
-<!-- prettier-ignore-start -->
-
-[//]: # (addons)
-
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_ir_account](l10n_ir_account/) | 20.0.1.0.0 |  | Iranian accounting chart and localization.
-[l10n_ir_states](l10n_ir_states/) | 20.0.1.0.0 |  | Add Iran States and Cities
-
-[//]: # (end addons)
-
-<!-- prettier-ignore-end -->
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
-
-
----
-
 ## From OCA/l10n-japan
 
 
@@ -174,8 +125,11 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_py](l10n_py/) | 20.0.1.0.0 |  | Localización contable para Paraguay
-[l10n_py_account](l10n_py_account/) | 20.0.1.0.0 |  | Accounting extensions for Paraguay localization
+[l10n_py_account](l10n_py_account/) | 20.0.1.1.0 |  | Accounting extensions for Paraguay localization
 [l10n_py_base](l10n_py_base/) | 20.0.1.0.0 |  | Base localization data for Paraguay
+[l10n_py_edi_base](l10n_py_edi_base/) | 20.0.1.0.0 |  | Base module for Electronic Invoicing in Paraguay
+[l10n_py_edi_sifen](l10n_py_edi_sifen/) | 20.0.1.0.0 |  | Direct SIFEN transmission via pysifen library
+[l10n_py_libros](l10n_py_libros/) | 20.0.1.0.0 |  | Registro de comprobantes Ventas/Compras/Ingresos/Egresos (DNIT)
 
 [//]: # (end addons)
 
@@ -335,6 +289,54 @@ addon | version | maintainers | summary
 [fastapi](fastapi/) | 19.0.1.1.0 (unported) | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [pydantic](pydantic/) | 18.0.1.0.1 (unported) | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Utility addon to ease mapping between Pydantic and Odoo models
 [rest_log](rest_log/) | 18.0.1.0.1 (unported) | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Track REST API calls into DB
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/sale-workflow
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# sale-workflow
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-workflow&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/sale-workflow/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/sale-workflow/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/sale-workflow/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-workflow)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-workflow-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-workflow-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+sale-workflow
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sale_order_type](sale_order_type/) | 20.0.1.0.0 |  | Sale Order Type
 
 [//]: # (end addons)
 

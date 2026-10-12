@@ -1,6 +1,6 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-09 10:50 UTC
+Generated 2026-10-12 22:26 UTC
 
 Total skipped: **255**
 
@@ -145,6 +145,7 @@ Count: **229**
 | [l10n-greece](https://github.com/OCA/l10n-greece) | [20.0](https://github.com/OCA/l10n-greece/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | [20.0](https://github.com/OCA/l10n-india/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | [20.0](https://github.com/OCA/l10n-indonesia/tree/20.0) | No directory with __manifest__.py at repo root |
+| [l10n-iran](https://github.com/OCA/l10n-iran) | [20.0](https://github.com/OCA/l10n-iran/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | [20.0](https://github.com/OCA/l10n-ireland/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | [20.0](https://github.com/OCA/l10n-italy/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | [20.0](https://github.com/OCA/l10n-luxemburg/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -214,7 +215,6 @@ Count: **229**
 | [sale-promotion](https://github.com/OCA/sale-promotion) | [20.0](https://github.com/OCA/sale-promotion/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | [20.0](https://github.com/OCA/sale-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | [20.0](https://github.com/OCA/sale-stock-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | [20.0](https://github.com/OCA/sale-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | [20.0](https://github.com/OCA/search-engine/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | [20.0](https://github.com/OCA/server-auth/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | [20.0](https://github.com/OCA/server-backend/tree/20.0) | No directory with __manifest__.py at repo root |

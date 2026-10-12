@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-09 10:50 UTC
+Generated 2026-10-12 22:26 UTC
 
 ## Skipped repos
 
@@ -113,6 +113,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-india](https://github.com/OCA/l10n-india) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | `no_module` | No directory with __manifest__.py at repo root |
+| [l10n-iran](https://github.com/OCA/l10n-iran) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ireland](https://github.com/OCA/l10n-ireland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-italy](https://github.com/OCA/l10n-italy) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | `no_module` | No directory with __manifest__.py at repo root |
@@ -205,7 +206,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [sale-promotion](https://github.com/OCA/sale-promotion) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_module` | No directory with __manifest__.py at repo root |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-auth](https://github.com/OCA/server-auth) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | `no_module` | No directory with __manifest__.py at repo root |

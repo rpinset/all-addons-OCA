@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_partner_form_libros" model="ir.ui.view">
+        <field name="name">res.partner.form.libros</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="l10n_py_libro_electronic" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

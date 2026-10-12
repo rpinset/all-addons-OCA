@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <!-- Mapeamento Tabla 3 DNIT (tipo de identificación del receptor) -->
+    <record
+        id="identification_type_map_ruc"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">ruc</field>
+        <field name="codigo_tabla3">11</field>
+    </record>
+
+    <record
+        id="identification_type_map_ci"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">ci</field>
+        <field name="codigo_tabla3">12</field>
+    </record>
+
+    <record
+        id="identification_type_map_pasaporte"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">passport</field>
+        <field name="codigo_tabla3">13</field>
+    </record>
+
+    <record
+        id="identification_type_map_carnet_residencia"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">residence</field>
+        <field name="codigo_tabla3">14</field>
+    </record>
+
+    <record
+        id="identification_type_map_sin_nombre"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">unnamed</field>
+        <field name="codigo_tabla3">15</field>
+    </record>
+
+    <record
+        id="identification_type_map_diplomatico"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">diplomatic</field>
+        <field name="codigo_tabla3">16</field>
+    </record>
+
+    <record
+        id="identification_type_map_identificacion_tributaria"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="partner_doc_kind">foreign_tax</field>
+        <field name="codigo_tabla3">17</field>
+    </record>
+</odoo>
