@@ -31,7 +31,7 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_manual_selection">Manual selection</btn-action>
+                            <btn-action @click="state.on_manual_selection">{{ $t("btn.manual_selection.title") }}</btn-action>
                         </v-col>
                     </v-row>
                 </div>
@@ -75,14 +75,14 @@ const Reception = {
                 </v-card>
                 <manual-select
                     :card_color="utils.colors.color_for('screen_step_done')"
-                    :records="ordered_moves"
+                    :records="filtered_moves"
                     :options="picking_detail_options_for_select_move()"
                     :key="make_state_component_key(['reception', 'manual-select-move'])"
                  />
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_mark_as_done">Mark as Done</btn-action>
+                            <btn-action @click="state.on_mark_as_done">{{ $t("reception.select_move.btn.mark_as_done") }}</btn-action>
                         </v-col>
                     </v-row>
                 </div>
@@ -91,7 +91,7 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action action="todo" @click="state.on_confirm">Confirm</btn-action>
+                            <btn-action action="todo" @click="state.on_confirm">{{ $t("btn.confirm.title") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row align="center">
@@ -105,7 +105,7 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action action="todo" @click="state.on_confirm">Confirm</btn-action>
+                            <btn-action action="todo" @click="state.on_confirm">{{ $t("btn.confirm.title") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row align="center">
@@ -129,7 +129,7 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_confirm_lot" :disabled="!is_set_lot_possible()">Continue</btn-action>
+                            <btn-action @click="state.on_confirm_lot" :disabled="!is_set_lot_possible()">{{ $t("reception.set_lot.btn.continue") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row align="center">
@@ -156,17 +156,17 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row v-if="show_with_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_add_to_existing_pack">Existing pack</btn-action>
+                            <btn-action @click="state.on_add_to_existing_pack">{{ $t("reception.set_quantity.btn.existing_pack") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row v-if="show_with_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_create_new_pack">New pack</btn-action>
+                            <btn-action @click="state.on_create_new_pack">{{ $t("reception.set_quantity.btn.new_pack") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row v-if="show_without_pack_actions" align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action @click="state.on_process_without_pack">Process without pack</btn-action>
+                            <btn-action @click="state.on_process_without_pack">{{ $t("reception.set_quantity.btn.no_pack") }}</btn-action>
                         </v-col>
                     </v-row>
                     <div class="button-list button-vertical-list full">
@@ -220,7 +220,7 @@ const Reception = {
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
-                            <btn-action action="todo" @click="state.on_confirm">Confirm</btn-action>
+                            <btn-action action="todo" @click="state.on_confirm">{{ $t("btn.confirm.title") }}</btn-action>
                         </v-col>
                     </v-row>
                     <v-row align="center">
@@ -254,7 +254,7 @@ const Reception = {
         line_being_handled: function () {
             return this.state.data.selected_move_line[0] || {};
         },
-        ordered_moves: function () {
+        filtered_moves: function () {
             let moves = _.result(this.state, "data.picking.moves", []);
             if (_.isEmpty(moves)) {
                 return [];
@@ -270,11 +270,7 @@ const Reception = {
                     return productName.includes(query);
                 });
             }
-            // We sort the moves to ensure that the following order always takes place:
-            // Top: Partially done moves.
-            // Middle: Moves with 0 quantity_done.
-            // Bottom: Completely done moves.
-            return moves.sort((a, b) => a.progress - b.progress);
+            return moves;
         },
     },
     methods: {
@@ -297,16 +293,15 @@ const Reception = {
         },
         picking_display_fields: function () {
             return [
-                {path: "origin", label: "Source Document"},
-                {path: "partner.name", label: "Partner"},
-                {path: "carrier.name", label: "Carrier"},
+                {path: "origin", label: this.$t("reception.transfer.source_document")},
+                {path: "partner.name", label: this.$t("reception.transfer.partner")},
+                {path: "carrier.name", label: this.$t("transfer.carrier")},
                 {
                     path: "scheduled_date",
                     renderer: (rec, field) => {
-                        return (
-                            "Scheduled Date: " +
-                            this.utils.display.render_field_date(rec, field)
-                        );
+                        return this.$t("reception.transfer.scheduled_date", {
+                            date: this.utils.display.render_field_date(rec, field),
+                        });
                     },
                 },
             ];
@@ -319,14 +314,17 @@ const Reception = {
         },
         select_document_display_fields: function () {
             var fields = this.picking_display_fields();
-            fields.push({path: "move_line_count", label: "Lines"});
+            fields.push({
+                path: "move_line_count",
+                label: this.$t("reception.select_document.lines"),
+            });
             return fields;
         },
         manual_select_options_for_select_document: function (today_only = false) {
             return {
                 group_title_default: today_only
-                    ? "Receptions to process today"
-                    : "Receptions to process",
+                    ? this.$t("reception.manual_select.pickings_to_process_today")
+                    : this.$t("reception.manual_select.pickings_to_process"),
                 group_color: this.utils.colors.color_for("screen_step_todo"),
                 list_item_extra_component: "picking-list-item-progress-bar",
                 showActions: false,
@@ -370,16 +368,20 @@ const Reception = {
                 fields: [
                     {
                         path: "product.supplier_code",
-                        label: "Vendor code",
+                        label: this.$t("common.vendor_code"),
                     },
                     {
                         path: "product.barcode",
-                        label: "Barcode",
+                        label: this.$t("common.barcode"),
                     },
-                    {path: "lot.name", label: "Lot", klass: "loud"},
+                    {
+                        path: "lot.name",
+                        label: this.$t("common.lot"),
+                        klass: "loud",
+                    },
                     {
                         path: "lot.expiration_date",
-                        label: "Expiry date",
+                        label: this.$t("lot.expiry_date"),
                         klass: this._get_lot_expiration_date_klass(),
                         renderer: (rec, field) => {
                             return this.utils.display.format_date_display(
@@ -417,15 +419,15 @@ const Reception = {
                     fields: [
                         {
                             path: "product.barcode",
-                            label: "Barcode",
+                            label: this.$t("common.barcode"),
                         },
                         {
                             path: "product.supplier_code",
-                            label: "Vendor code",
+                            label: this.$t("common.vendor_code"),
                         },
                         {
                             path: "quantity_done",
-                            label: "Qty done",
+                            label: this.$t("common.qty_done"),
                             display_no_value: true,
                             render_component: "packaging-qty-picker-display",
                             render_props: (record) => {
@@ -470,18 +472,27 @@ const Reception = {
         },
         manual_select_options_for_select_dest_package: function () {
             return {
-                group_title_default: "Packs available",
+                group_title_default: this.$t("reception.manual_select.packs_available"),
                 group_color: this.utils.colors.color_for("screen_step_todo"),
                 list_item_component: "list-item",
                 list_item_options: {
                     fields: [
-                        {path: "weight", label: "Weight", display_no_value: true},
                         {
-                            path: "move_line_count",
-                            label: "Lines already in pack",
+                            path: "weight",
+                            label: this.$t("reception.manual_select.weight"),
                             display_no_value: true,
                         },
-                        {path: "storage_type.name", label: "Package type"},
+                        {
+                            path: "move_line_count",
+                            label: this.$t(
+                                "reception.manual_select.lines_already_in_pack"
+                            ),
+                            display_no_value: true,
+                        },
+                        {
+                            path: "storage_type.name",
+                            label: this.$t("common.package_type"),
+                        },
                     ],
                 },
             };
@@ -525,7 +536,7 @@ const Reception = {
             initial_state_key: "select_document",
             scan_destination_qty: 0,
             states: this._get_states(),
-            filter_input_placeholder: "Find an operation",
+            filter_input_placeholder: this.$t("reception.find_operation"),
             filtered_pickings: [],
             move_filter_query: "",
         };

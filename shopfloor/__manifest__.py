@@ -6,7 +6,7 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "16.0.2.32.0",
+    "version": "16.0.3.0.0",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/wms",
@@ -29,9 +29,6 @@
         "stock_quant_package_dimension",
         "stock_quant_package_product_packaging",
         "stock_picking_progress",
-        # TODO: used for manuf info on prod detail.
-        # This must be an optional dep
-        "product_manufacturer",
         # TODO: used for prod lot expire detail info.
         # This must be an optional dep
         "product_expiry",
