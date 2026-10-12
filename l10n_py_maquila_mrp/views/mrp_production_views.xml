@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Inherit mrp.production form to add Maquila program -->
+    <record id="mrp_production_form_view_inherit_maquila" model="ir.ui.view">
+        <field name="name">mrp.production.form.inherit.maquila</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='bom_id']" position="after">
+                <field name="l10n_py_maquila_program_id" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

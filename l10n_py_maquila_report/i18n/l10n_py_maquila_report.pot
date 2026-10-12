@@ -1,0 +1,479 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_maquila_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_dashboard_kanban
+msgid "<strong>Expiry:</strong>"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_dashboard_kanban
+msgid "<strong>Matrix:</strong>"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_dashboard_kanban
+msgid "<strong>Status:</strong>"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_dashboard_kanban
+msgid "<strong>Type:</strong>"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "A submitted report cannot be regenerated."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "A submitted report cannot be reset to draft."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "CNIME %(program)s %(start)s - %(end)s"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model,name:l10n_py_maquila_report.model_l10n_py_maquila_cnime_report
+msgid "CNIME Periodic Report"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "CNIME Report"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.actions.act_window,name:l10n_py_maquila_report.action_maquila_cnime_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_program__cnime_report_ids
+#: model:ir.ui.menu,name:l10n_py_maquila_report.menu_maquila_cnime_reports
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_program_form_inherit_report
+msgid "CNIME Reports"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_program__cnime_report_count
+msgid "Cnime Report Count"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__currency_id
+msgid ""
+"Company currency: the VAN is built from analytic amounts, which are always "
+"in the company currency."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.ui.menu,name:l10n_py_maquila_report.menu_maquila_dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields.selection,name:l10n_py_maquila_report.selection__l10n_py_maquila_cnime_report__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Draft"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid ""
+"Draft SIMEX payload (internal layout, not validated against the official SIMEX format):\n"
+"%s"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__employment_count
+msgid "Employment Count"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__export_data
+msgid "Export Data"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Exports"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Generate"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Generate SIMEX Payload"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields.selection,name:l10n_py_maquila_report.selection__l10n_py_maquila_cnime_report__state__generated
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Generated"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Group By"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__import_data
+msgid "Import Data"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Imports"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model,name:l10n_py_maquila_report.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.actions.act_window,name:l10n_py_maquila_report.action_maquila_dashboard
+msgid "Maquila Dashboard"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model,name:l10n_py_maquila_report.model_l10n_py_maquila_program
+msgid "Maquila Program"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__company_id
+msgid "Maquiladora"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__period_end
+msgid "Period End"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__period_start
+msgid "Period Start"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Production"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__production_data
+msgid "Production Data"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__program_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Program"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.ui.menu,name:l10n_py_maquila_report.menu_maquila_reports
+msgid "Reports"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "SIMEX Payload Generated"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "SIMEX payload generated successfully (offline mode)."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#. odoo-python
+#: code:addons/l10n_py_maquila_report/models/maquila_cnime_report.py:0
+msgid "Set the program and the period before generating."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__state
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "State"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Stock"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__stock_balance
+msgid "Stock Balance"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__submission_date
+msgid "Submission Date"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__submission_protocol
+msgid "Submission Protocol"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Submit"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields.selection,name:l10n_py_maquila_report.selection__l10n_py_maquila_cnime_report__state__submitted
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Submitted"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__van_total
+msgid "VAN Total"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Validate"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields.selection,name:l10n_py_maquila_report.selection__l10n_py_maquila_cnime_report__state__validated
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_search
+msgid "Validated"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_report.view_maquila_cnime_report_form
+msgid "Waste"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__waste_data
+msgid "Waste Data"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,field_description:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_py_maquila_report
+#: model:ir.model.fields,help:l10n_py_maquila_report.field_l10n_py_maquila_cnime_report__website_message_ids
+msgid "Website communication history"
+msgstr ""

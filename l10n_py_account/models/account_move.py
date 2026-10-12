@@ -26,17 +26,25 @@ class AccountMove(models.Model):
     l10n_py_authorization_id = fields.Many2one(
         "account.authorization",
         string="Timbrado",
+        copy=False,
         domain=(
             "[('company_id', '=', company_id), "
             "('active', '=', True), "
-            "('state', '!=', 'expired')]"
+            "('state', '!=', 'expired'), "
+            "('l10n_latam_document_type_id', '=', l10n_latam_document_type_id)]"
         ),
-        help="Timbrado utilizado para esta factura",
+        help="Timbrado utilizado para esta factura. La faja está autorizada "
+        "por tipo de documento: una nota de crédito usa un timbrado de NC, "
+        "no el de la factura original.",
     )
 
     l10n_py_invoice_number = fields.Integer(
         string="Número de Factura",
-        help="Número de factura según timbrado autorizado",
+        copy=False,
+        help="Número de factura según timbrado autorizado. copy=False: una "
+        "reversión (nota de crédito) no puede heredar el número del "
+        "documento original — colisionaría con la restricción de unicidad "
+        "por timbrado; el número propio se asigna en action_post.",
     )
 
     l10n_py_full_invoice_number = fields.Char(
@@ -86,6 +94,14 @@ class AccountMove(models.Model):
         store=True,
         currency_field="currency_id",
         help="Subtotal exento/no gravado (SIFEN F003)",
+    )
+
+    l10n_py_amount_exonerado = fields.Monetary(
+        string="Total Exonerado",
+        compute="_compute_l10n_py_iva",
+        store=True,
+        currency_field="currency_id",
+        help="Subtotal exonerado (Art. 100 Ley 6380/2019, SIFEN dSubExo)",
     )
 
     l10n_py_amount_iva_total = fields.Monetary(
@@ -173,6 +189,25 @@ class AccountMove(models.Model):
                         # Pular durante instalação/demo (invoices genéricas
                         # criadas pelo account.chart.template.try_loading)
                         continue
+                    # Reversiones llegan sin timbrado (copy=False): si existe
+                    # exactamente UNA faja vigente para el tipo de documento
+                    # (p.ej. la NC), usarla; ambigüedad sigue siendo elección
+                    # humana.
+                    candidatos = self.env["account.authorization"].search(
+                        [
+                            ("company_id", "=", move.company_id.id),
+                            ("active", "=", True),
+                            ("state", "!=", "expired"),
+                            (
+                                "l10n_latam_document_type_id",
+                                "=",
+                                move.l10n_latam_document_type_id.id,
+                            ),
+                        ]
+                    )
+                    if len(candidatos) == 1:
+                        move.l10n_py_authorization_id = candidatos
+                if not move.l10n_py_authorization_id:
                     raise UserError(
                         _(
                             "Debe seleccionar un timbrado para confirmar "
@@ -222,7 +257,7 @@ class AccountMove(models.Model):
                 auth = move.l10n_py_authorization_id
                 number_str = str(move.l10n_py_invoice_number).zfill(7)
                 move.l10n_py_full_invoice_number = (
-                    f"{auth.establishment}-" f"{auth.expedition_point}-" f"{number_str}"
+                    f"{auth.establishment}-{auth.expedition_point}-{number_str}"
                 )
             else:
                 move.l10n_py_full_invoice_number = False
@@ -231,6 +266,7 @@ class AccountMove(models.Model):
         "invoice_line_ids.price_subtotal",
         "invoice_line_ids.price_total",
         "invoice_line_ids.tax_ids",
+        "invoice_line_ids.tax_ids.l10n_py_iva_affectation",
     )
     def _compute_l10n_py_iva(self):
         """Calcular desglose de IVA según fórmula SIFEN v150.
@@ -242,16 +278,20 @@ class AccountMove(models.Model):
             subtotal_10 = iva_10 = base_10 = 0.0
             subtotal_5 = iva_5 = base_5 = 0.0
             exempt = 0.0
+            exonerado = 0.0
 
             for line in move.invoice_line_ids.filtered(
                 lambda line: line.display_type == "product"
             ):
                 tax_rate = 0
+                zero_tax = None
                 for tax in line.tax_ids:
                     if tax.amount == 10:
                         tax_rate = 10
                     elif tax.amount == 5:
                         tax_rate = 5
+                    elif tax.amount == 0:
+                        zero_tax = tax
 
                 if tax_rate == 10:
                     base = line.price_total / 1.1
@@ -264,7 +304,13 @@ class AccountMove(models.Model):
                     iva_5 += line.price_total - base  # F015
                     base_5 += base  # F018
                 else:
-                    exempt += line.price_subtotal  # F003
+                    affectation = (
+                        zero_tax.l10n_py_iva_affectation if zero_tax else None
+                    ) or "3"
+                    if affectation == "2":
+                        exonerado += line.price_subtotal  # dSubExo
+                    else:
+                        exempt += line.price_subtotal  # F003
 
             move.l10n_py_amount_subtotal_10 = subtotal_10
             move.l10n_py_amount_iva_10 = iva_10
@@ -273,9 +319,12 @@ class AccountMove(models.Model):
             move.l10n_py_amount_iva_5 = iva_5
             move.l10n_py_base_5 = base_5
             move.l10n_py_amount_exempt = exempt
+            move.l10n_py_amount_exonerado = exonerado
             move.l10n_py_amount_iva_total = iva_10 + iva_5  # F014
             move.l10n_py_base_total = base_10 + base_5  # F020
-            move.l10n_py_total_operation = exempt + subtotal_5 + subtotal_10  # F008
+            move.l10n_py_total_operation = (
+                exempt + exonerado + subtotal_5 + subtotal_10
+            )  # F008
 
     @api.depends("amount_total", "l10n_py_exchange_rate")
     def _compute_l10n_py_total_pyg(self):

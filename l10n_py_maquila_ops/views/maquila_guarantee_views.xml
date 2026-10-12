@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_maquila_guarantee_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.guarantee.form</field>
+        <field name="model">l10n_py.maquila.guarantee</field>
+        <field name="arch" type="xml">
+            <form string="Maquila Guarantee">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" placeholder="Guarantee Name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="program_id" />
+                            <field name="guarantee_type" />
+                            <field name="scope" />
+                            <field name="issuer" />
+                        </group>
+                        <group>
+                            <field
+                                name="currency_id"
+                                groups="base.group_multi_currency"
+                            />
+                            <field name="amount" />
+                            <field name="date_start" />
+                            <field name="date_end" />
+                            <field name="state" />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                    </group>
+                    <group string="Usage">
+                        <field name="amount_used" />
+                        <field name="amount_available" />
+                    </group>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_maquila_guarantee_tree" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.guarantee.tree</field>
+        <field name="model">l10n_py.maquila.guarantee</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-danger="state == 'expired'"
+                decoration-muted="state == 'released'"
+            >
+                <field name="name" />
+                <field name="program_id" />
+                <field name="guarantee_type" />
+                <field name="issuer" />
+                <field name="currency_id" invisible="1" />
+                <field name="amount" />
+                <field name="amount_available" />
+                <field name="date_start" />
+                <field name="date_end" />
+                <field
+                    name="state"
+                    decoration-success="state == 'active'"
+                    widget="badge"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_maquila_guarantee_search" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.guarantee.search</field>
+        <field name="model">l10n_py.maquila.guarantee</field>
+        <field name="arch" type="xml">
+            <search string="Maquila Guarantees">
+                <field name="name" />
+                <field name="program_id" />
+                <field name="issuer" />
+                <separator />
+                <filter
+                    name="filter_active"
+                    string="Active"
+                    domain="[('state', '=', 'active')]"
+                />
+                <filter
+                    name="filter_expired"
+                    string="Expired"
+                    domain="[('state', '=', 'expired')]"
+                />
+                <separator />
+                <group expand="0" string="Group By">
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_type"
+                        string="Type"
+                        context="{'group_by': 'guarantee_type'}"
+                    />
+                    <filter
+                        name="group_program"
+                        string="Program"
+                        context="{'group_by': 'program_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_maquila_guarantee" model="ir.actions.act_window">
+        <field name="name">Guarantees</field>
+        <field name="res_model">l10n_py.maquila.guarantee</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_maquila_guarantee_search" />
+        <field name="context">{'search_default_filter_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new customs guarantee
+            </p>
+            <p>
+                Manage customs guarantees (bank, insurance, deposit)
+                for Maquila temporary admissions.
+            </p>
+        </field>
+    </record>
+</odoo>

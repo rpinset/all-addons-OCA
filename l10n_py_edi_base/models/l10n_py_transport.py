@@ -1,6 +1,6 @@
 # l10n_py_edi_base/models/l10n_py_transport.py
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class Transport(models.Model):
@@ -58,7 +58,24 @@ class Transport(models.Model):
             ("FOB", "FOB"),
         ],
         string="Condición de Negociación (E906)",
+        default=lambda self: self._default_incoterm(),
     )
+
+    @api.model
+    def _default_incoterm(self):
+        """Precompletar con el Incoterm de la factura (invoice_incoterm_id).
+
+        Odoo/sale_stock ya propaga sale.order.incoterm a
+        account.move.invoice_incoterm_id; este default solo evita
+        redigitar el mismo dato al anexar el transporte a la factura.
+        """
+        move_id = self.env.context.get("default_move_id")
+        if not move_id:
+            return False
+        move = self.env["account.move"].browse(move_id)
+        code = move.invoice_incoterm_id.code
+        valid_codes = dict(self._fields["incoterm"].selection)
+        return code if code in valid_codes else False
 
     manifest_number = fields.Char(
         string="Número de Manifiesto / Conocimiento (E907)",

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_maquila_export_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.export.form</field>
+        <field name="model">l10n_py.maquila.export</field>
+        <field name="arch" type="xml">
+            <form string="Maquila Export">
+                <header>
+                    <button
+                        name="action_confirm"
+                        string="Confirm"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'draft'"
+                    />
+                    <button
+                        name="action_dispatch"
+                        string="Dispatch"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'confirmed'"
+                    />
+                    <button
+                        name="action_draft"
+                        string="Reset to Draft"
+                        type="object"
+                        invisible="state == 'draft'"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,confirmed,dispatched"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" placeholder="DE-2026-00001" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="program_id" />
+                            <field name="date_export" />
+                            <field name="incoterm" />
+                        </group>
+                        <group>
+                            <field name="origin_certificate" />
+                            <field
+                                name="currency_id"
+                                groups="base.group_multi_currency"
+                            />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="admission_ids" widget="many2many_tags" />
+                    </group>
+                    <notebook>
+                        <page string="Lines" name="lines">
+                            <field name="line_ids">
+                                <list editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="quantity" />
+                                    <field name="uom_id" />
+                                    <field name="currency_id" invisible="1" />
+                                    <field name="fob_value" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Pickings" name="pickings">
+                            <field name="picking_ids">
+                                <list>
+                                    <field name="name" />
+                                    <field name="partner_id" />
+                                    <field name="scheduled_date" />
+                                    <field name="state" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_maquila_export_tree" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.export.tree</field>
+        <field name="model">l10n_py.maquila.export</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'dispatched'">
+                <field name="name" />
+                <field name="program_id" />
+                <field name="date_export" />
+                <field name="incoterm" />
+                <field
+                    name="state"
+                    decoration-success="state == 'confirmed'"
+                    decoration-info="state == 'draft'"
+                    widget="badge"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_maquila_export_search" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.export.search</field>
+        <field name="model">l10n_py.maquila.export</field>
+        <field name="arch" type="xml">
+            <search string="Maquila Exports">
+                <field name="name" />
+                <field name="program_id" />
+                <field name="origin_certificate" />
+                <separator />
+                <filter
+                    name="filter_draft"
+                    string="Draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    name="filter_confirmed"
+                    string="Confirmed"
+                    domain="[('state', '=', 'confirmed')]"
+                />
+                <filter
+                    name="filter_dispatched"
+                    string="Dispatched"
+                    domain="[('state', '=', 'dispatched')]"
+                />
+                <separator />
+                <group expand="0" string="Group By">
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_program"
+                        string="Program"
+                        context="{'group_by': 'program_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_maquila_export" model="ir.actions.act_window">
+        <field name="name">Exports</field>
+        <field name="res_model">l10n_py.maquila.export</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_maquila_export_search" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new export dispatch
+            </p>
+            <p>
+                Register export dispatches of finished goods under the Maquila regime.
+            </p>
+        </field>
+    </record>
+</odoo>

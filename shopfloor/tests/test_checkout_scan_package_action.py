@@ -3,11 +3,42 @@
 from itertools import product
 from unittest import mock
 
+from odoo_test_helper import FakeModelLoader
+
 from .test_checkout_base import CheckoutCommonCase
 from .test_checkout_select_package_base import CheckoutSelectPackageMixin
 
 
 class CheckoutScanPackageActionCase(CheckoutCommonCase, CheckoutSelectPackageMixin):
+    def setUp(self):
+        super().setUp()
+        self.loader = FakeModelLoader(self.env, self.__module__)
+        self.loader.backup_registry()
+
+        from .models import DeliveryCarrierTest, StockPackageType
+
+        self.loader.update_registry((DeliveryCarrierTest, StockPackageType))
+        carrier_product = (
+            self.env["product.product"]
+            .sudo()
+            .create({"name": "Test carrier product", "type": "service"})
+        )
+        self.test_carrier = (
+            self.env["delivery.carrier"]
+            .sudo()
+            .create(
+                {
+                    "name": "Test carrier",
+                    "delivery_type": "test",
+                    "product_id": carrier_product.id,
+                }
+            )
+        )
+
+    def tearDown(self):
+        self.loader.restore_registry()
+        super().tearDown()
+
     def _test_select_product(
         self, barcode_func, origin_qty_func, expected_qty_func, in_lot=False
     ):
@@ -381,23 +412,18 @@ class CheckoutScanPackageActionCase(CheckoutCommonCase, CheckoutSelectPackageMix
                 }
             )
         )
-        # Delivery type and package_carrier_type values
-        # depend on specific implementations that we don't have as dependency.
-        # What is important here is to simulate their value when mismatching.
-        mock1 = mock.patch.object(
-            type(packaging),
-            "package_carrier_type",
-            new_callable=mock.PropertyMock,
-        )
-        mock2 = mock.patch.object(
-            type(picking.carrier_id),
-            "delivery_type",
-            new_callable=mock.PropertyMock,
-        )
-        with mock1 as mocked_package_carrier_type, mock2 as mocked_delivery_type:
-            # Not matching at all -> bad
-            mocked_package_carrier_type.return_value = "DHL"
-            mocked_delivery_type.return_value = "UPS"
+        packing_action = type(self.service._actions_for("packing"))
+        with mock.patch.object(
+            packing_action,
+            "_get_package_type_domain",
+            side_effect=[
+                # first call: domain excludes packaging -> bad
+                [("id", "!=", packaging.id)],
+                # second call: domain includes packaging -> good
+                [("id", "=", packaging.id)],
+            ],
+        ):
+            # not in wizard domain -> bad
             response = self.service.dispatch(
                 "scan_package_action",
                 params={
@@ -414,8 +440,7 @@ class CheckoutScanPackageActionCase(CheckoutCommonCase, CheckoutSelectPackageMix
                     packaging, picking.carrier_id
                 ),
             )
-            # No carrier type set on the packaging -> good
-            mocked_package_carrier_type.return_value = "none"
+            # in wizard domain -> good
             response = self.service.dispatch(
                 "scan_package_action",
                 params={
@@ -475,3 +500,67 @@ class CheckoutScanPackageActionCase(CheckoutCommonCase, CheckoutSelectPackageMix
         returned_lines = res["data"]["summary"]["picking"]["move_lines"]
         expected_line_ids = [line["id"] for line in returned_lines]
         self.assertEqual(expected_line_ids, picking.move_line_ids.ids)
+
+    def test_scan_package_action_scan_invalid_package_type_carrier(self):
+        picking = self._create_picking(lines=[(self.product_a, 10)])
+        picking.carrier_id = self.test_carrier
+        picking.picking_type_id.sudo().filter_package_type_on_put_in_pack = True
+        pack1_moves = picking.move_ids
+        # put in 2 packs, for this test, we'll work on pack1
+        self._fill_stock_for_moves(pack1_moves, in_package=True)
+        picking.action_assign()
+        selected_lines = pack1_moves.move_line_ids
+        selected_lines.qty_picked = selected_lines.quantity
+        # valid for the "test" carrier
+        packaging = (
+            self.env["stock.package.type"]
+            .sudo()
+            .create(
+                {
+                    "name": "Package",
+                    "barcode": "PACKAGE",
+                    "package_carrier_type": "test",
+                }
+            )
+        )
+        # not valid for the "test" carrier
+        other_packaging = (
+            self.env["stock.package.type"]
+            .sudo()
+            .create(
+                {
+                    "name": "Other Package",
+                    "barcode": "PACKAGE-OTHER",
+                    "package_carrier_type": "none",
+                }
+            )
+        )
+        # package type not valid for carrier -> bad
+        response = self.service.dispatch(
+            "scan_package_action",
+            params={
+                "picking_id": picking.id,
+                "selected_line_ids": selected_lines.ids,
+                "barcode": other_packaging.barcode,
+            },
+        )
+        self._assert_selected_response(
+            response,
+            selected_lines,
+            message=self.msg_store.package_type_invalid_for_carrier(
+                other_packaging, picking.carrier_id
+            ),
+        )
+        # package type valid for carrier -> good
+        response = self.service.dispatch(
+            "scan_package_action",
+            params={
+                "picking_id": picking.id,
+                "selected_line_ids": selected_lines.ids,
+                "barcode": packaging.barcode,
+            },
+        )
+        self.assertEqual(
+            response["message"],
+            self.msg_store.goods_packed_in(selected_lines.result_package_id),
+        )

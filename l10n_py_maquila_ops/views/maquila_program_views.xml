@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_maquila_program_form_inherit_ops" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.form.inherit.ops</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="inherit_id" ref="l10n_py_maquila_base.view_maquila_program_form" />
+        <field name="arch" type="xml">
+            <!-- Add stat buttons before oe_title -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_admissions"
+                    icon="fa-truck"
+                >
+                    <field
+                        name="admission_count"
+                        widget="statinfo"
+                        string="Admissions"
+                    />
+                </button>
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_exports"
+                    icon="fa-plane"
+                >
+                    <field name="export_count" widget="statinfo" string="Exports" />
+                </button>
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_guarantees"
+                    icon="fa-shield"
+                >
+                    <field
+                        name="guarantee_count"
+                        widget="statinfo"
+                        string="Guarantees"
+                    />
+                </button>
+            </xpath>
+            <!-- Add Operations tab in the notebook -->
+            <xpath expr="//page[@name='contracts']" position="before">
+                <page string="Operations" name="operations">
+                    <separator string="Admissions" />
+                    <field name="admission_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="name" />
+                            <field name="cnime_certificate" />
+                            <field name="date_admission" />
+                            <field name="date_deadline" />
+                            <field name="supplier_id" />
+                            <field name="amount_cif" />
+                            <field
+                                name="state"
+                                widget="badge"
+                                decoration-success="state == 'admitted'"
+                                decoration-info="state == 'draft'"
+                                decoration-warning="state == 'in_production'"
+                            />
+                        </list>
+                    </field>
+                    <separator string="Exports" />
+                    <field name="export_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="name" />
+                            <field name="date_export" />
+                            <field name="incoterm" />
+                            <field name="origin_certificate" />
+                            <field
+                                name="state"
+                                widget="badge"
+                                decoration-success="state == 'dispatched'"
+                                decoration-info="state == 'draft'"
+                                decoration-warning="state == 'confirmed'"
+                            />
+                        </list>
+                    </field>
+                    <separator string="Guarantees" />
+                    <field name="guarantee_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="name" />
+                            <field name="guarantee_type" />
+                            <field name="issuer" />
+                            <field name="amount" />
+                            <field name="amount_used" />
+                            <field name="amount_available" />
+                            <field name="date_end" />
+                            <field
+                                name="state"
+                                widget="badge"
+                                decoration-success="state == 'active'"
+                                decoration-danger="state == 'expired'"
+                            />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

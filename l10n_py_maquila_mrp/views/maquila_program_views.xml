@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_maquila_program_form_inherit_mrp_stats" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.form.inherit.mrp.stats</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="inherit_id" ref="l10n_py_maquila_base.view_maquila_program_form" />
+        <field name="arch" type="xml">
+            <!-- Add stat buttons -->
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_boms"
+                    icon="fa-flask"
+                >
+                    <field name="bom_count" widget="statinfo" string="BOMs" />
+                </button>
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_productions"
+                    icon="fa-cogs"
+                >
+                    <field
+                        name="production_count"
+                        widget="statinfo"
+                        string="Productions"
+                    />
+                </button>
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_waste"
+                    icon="fa-trash"
+                >
+                    <field name="waste_count" widget="statinfo" string="Waste" />
+                </button>
+            </xpath>
+            <!-- Add Manufacturing tab -->
+            <xpath expr="//page[@name='contracts']" position="before">
+                <page string="Manufacturing" name="manufacturing">
+                    <separator string="Bills of Materials" />
+                    <field name="bom_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="code" />
+                            <field name="product_tmpl_id" />
+                            <field name="product_qty" />
+                            <field name="l10n_py_intn_certified" />
+                            <field name="l10n_py_intn_certificate" />
+                        </list>
+                    </field>
+                    <separator string="Waste Records" />
+                    <field name="waste_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="date" />
+                            <field name="product_id" />
+                            <field name="quantity" />
+                            <field name="waste_type" />
+                            <field name="destination" />
+                            <field
+                                name="state"
+                                widget="badge"
+                                decoration-info="state == 'pending'"
+                                decoration-warning="state == 'in_process'"
+                                decoration-success="state == 'completed'"
+                            />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

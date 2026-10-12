@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-07-16 08:46+0000\n"
+"PO-Revision-Date: 2026-10-11 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -31,6 +31,12 @@ msgstr "Attivo"
 msgid "Allow to select type when creating a new ticket in the portal."
 msgstr ""
 "Consente di selezionare il tipo quando si crea un nuovo ticket nel portale."
+
+#. module: helpdesk_type
+#: model_terms:ir.ui.view,arch_db:helpdesk_type.helpdesk_ticket_type_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_type.helpdesk_ticket_type_search
+msgid "Archived"
+msgstr "In archivio"
 
 #. module: helpdesk_type
 #: model:ir.model,name:helpdesk_type.model_res_company
@@ -58,6 +64,11 @@ msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: helpdesk_type
+#: model_terms:ir.ui.view,arch_db:helpdesk_type.helpdesk_ticket_type_search
+msgid "Displayed in portal"
+msgstr "Visualizza nel portale"
+
+#. module: helpdesk_type
 #: model:helpdesk.ticket.type,name:helpdesk_type.helpdesk_type_1
 msgid "Document issue"
 msgstr "Emissione documento"
@@ -79,9 +90,19 @@ msgid "Helpdesk Ticket Type"
 msgstr "Tipo ticket assistenza clienti"
 
 #. module: helpdesk_type
+#: model_terms:ir.ui.view,arch_db:helpdesk_type.helpdesk_ticket_type_form
+msgid "Helpdesk Type"
+msgstr "Tipo assistenza cliente"
+
+#. module: helpdesk_type
 #: model:ir.model.fields,help:helpdesk_type.field_helpdesk_ticket_type__team_ids
 msgid "Helpdesk teams allowed to use this type."
 msgstr "I team assistenza clienti autorizzati a usare questo tipo."
+
+#. module: helpdesk_type
+#: model_terms:ir.ui.view,arch_db:helpdesk_type.helpdesk_ticket_type_form
+msgid "Helpdesk type name..."
+msgstr "Nome tipo assistenza cliente..."
 
 #. module: helpdesk_type
 #: model:ir.model.fields,field_description:helpdesk_type.field_helpdesk_ticket_type__id

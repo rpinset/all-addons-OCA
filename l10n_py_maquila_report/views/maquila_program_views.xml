@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_maquila_program_form_inherit_report" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.form.inherit.report</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="inherit_id" ref="l10n_py_maquila_base.view_maquila_program_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_cnime_reports"
+                    icon="fa-file-text-o"
+                >
+                    <field
+                        name="cnime_report_count"
+                        widget="statinfo"
+                        string="CNIME Reports"
+                    />
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

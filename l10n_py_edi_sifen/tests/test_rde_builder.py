@@ -1,5 +1,6 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
+from decimal import Decimal
 from unittest.mock import patch
 
 from odoo.tests.common import TransactionCase, tagged
@@ -145,6 +146,70 @@ class TestRDeBuilder(TransactionCase):
         cond = self._build(invoice=data).DE.gDtipDE.gCamCond
         self.assertEqual(cond.iCondOpe, 2)
         self.assertIsNotNone(cond.gPagCred)
+
+    def test_build_gtotsub_separates_exento_and_exonerado(self):
+        """Task 7: dSubExe (exento) y dSubExo (exonerado) van separados."""
+        data = self._get_sample_invoice_data()
+        data["totales"]["totalExento"] = 30000
+        data["totales"]["totalExonerado"] = 70000
+        gtotsub = self._build(invoice=data).DE.gTotSub
+        self.assertEqual(gtotsub.dSubExe, Decimal("30000"))
+        self.assertEqual(gtotsub.dSubExo, Decimal("70000"))
+
+    def test_build_gtotsub_defaults_exonerado_to_zero(self):
+        """Sin totalExonerado en los datos, dSubExo debe ser 0."""
+        gtotsub = self._build().DE.gTotSub
+        self.assertEqual(gtotsub.dSubExo, Decimal("0"))
+
+    def test_build_item_exonerado_base_exenta_zero(self):
+        """Item exonerado (ivaTipo=2): dBasExe = 0 (NT13, validación 283).
+
+        El monto exonerado fluye solo al total dSubExo; informar dBasExe
+        en el ítem genera rechazo 1921."""
+        data = self._get_sample_invoice_data()
+        data["items"] = [
+            {
+                "codigo": "P1",
+                "descripcion": "Export",
+                "unidadMedida": 77,
+                "cantidad": 1,
+                "precioUnitario": 100000,
+                "ivaTipo": 2,
+                "iva": 0,
+                "ivaBase": 0,
+                "baseGravada": 0,
+                "liquidacionIva": 0,
+            }
+        ]
+        item = self._build(invoice=data).DE.gDtipDE.gCamItem[0]
+        self.assertEqual(int(item.gCamIVA.iAfecIVA), 2)
+        self.assertEqual(item.gCamIVA.dBasExe, Decimal("0"))
+        self.assertEqual(item.gCamIVA.dTasaIVA, 0)
+
+    def test_build_item_gravado_parcial_base_exenta_formula(self):
+        """Gravado parcial (ivaTipo=4): dBasExe por la fórmula oficial
+        [100 * EA008 * (100 - E733)] / [10000 + (E734 * E733)]."""
+        data = self._get_sample_invoice_data()
+        data["items"] = [
+            {
+                "codigo": "P2",
+                "descripcion": "Parcial",
+                "unidadMedida": 77,
+                "cantidad": 1,
+                "precioUnitario": 110000,
+                "ivaTipo": 4,
+                "iva": 10,
+                "ivaBase": 50,
+                "baseGravada": 50000,
+                "liquidacionIva": 5000,
+            }
+        ]
+        item = self._build(invoice=data).DE.gDtipDE.gCamItem[0]
+        # [100 * 110000 * 50] / [10000 + 500] = 52380.95...
+        self.assertEqual(
+            item.gCamIVA.dBasExe.quantize(Decimal("0.01")),
+            (Decimal("550000000") / Decimal("10500")).quantize(Decimal("0.01")),
+        )
 
     def test_build_serializes_to_xml(self):
         """El rDE serializa a XML bien formado con los datos esperados."""

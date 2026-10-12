@@ -107,7 +107,7 @@ class TestKudeGeneration(TransactionCase):
         )
 
         cls.sample_xml = (
-            '<?xml version="1.0" encoding="UTF-8"?>' "<rDE><dVerFor>150</dVerFor></rDE>"
+            '<?xml version="1.0" encoding="UTF-8"?><rDE><dVerFor>150</dVerFor></rDE>'
         )
         cls.sample_pdf = b"%PDF-1.4 fake pdf content for testing"
 

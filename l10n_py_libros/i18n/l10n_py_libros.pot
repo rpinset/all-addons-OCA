@@ -1,0 +1,1363 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_libros
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__101
+msgid "101 - Autofactura"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__102
+msgid "102 - Boleta Transporte Público"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__103
+msgid "103 - Boleta de Venta"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__104
+msgid "104 - Boleta Resimple"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__105
+msgid "105 - Boletos de Loterías/Juegos de Azar"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__106
+msgid "106 - Boleto/Ticket Transporte Aéreo"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__107
+msgid "107 - Despacho de Importación"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__108
+msgid "108 - Entrada Espectáculos Públicos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__109
+msgid "109 - Factura"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__110
+msgid "110 - Nota de Crédito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__111
+msgid "111 - Nota de Débito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__112
+msgid "112 - Ticket Máquina Registradora"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__201
+msgid "201 - Comprobante de Egresos por Compras a Crédito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__202
+msgid "202 - Comprobante del Exterior Legalizado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__203
+msgid "203 - Comprobante de Ingreso por Ventas a Crédito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__204
+msgid "204 - Comprobante Ingresos Entidades Públicas/Religiosas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__205
+msgid "205 - Extracto de Cuenta - Billetaje Electrónico"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__206
+msgid "206 - Extracto de Cuenta de IPS"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__207
+msgid "207 - Extracto de Cuenta TC/TD"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__208
+msgid "208 - Liquidación de Salario"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__209
+msgid "209 - Otros Comprobantes de Egresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__210
+msgid "210 - Otros Comprobantes de Ingresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_tipo_comprobante__211
+msgid "211 - Transferencias o Giros Bancarios/Boleta de Depósito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__obligacion__955
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_generate_wizard__obligacion__955
+msgid "955 - Mensual"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__obligacion__956
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_generate_wizard__obligacion__956
+msgid "956 - Anual"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Abrir documento de origen"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__active
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__active
+msgid "Active"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_search
+msgid "Agrupar por"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__aplica_compras
+msgid "Aplica Compras"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__aplica_egresos
+msgid "Aplica Egresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__aplica_ingresos
+msgid "Aplica Ingresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__aplica_ventas
+msgid "Aplica Ventas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__l10n_py_libro_attachment_ids
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Archivos generados"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Autorización (timbrado) del comprobante propio ausente."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_search
+msgid "Año"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__formato_archivo__csv
+msgid "CSV"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.constraint,message:l10n_py_libros.constraint_l10n_py_libro_identification_type_map_ident_type_unique
+msgid "Cada tipo de identificación só pode ter um mapeamento Tabla 3."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_generate_wizard_form
+msgid "Cancelar"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__separador__coma
+msgid "Coma (,)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__company_id
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_compras
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__tipo_registro__compras
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libro_compras
+msgid "Compras"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Comprobante asociado (NC/ND)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__move_id
+msgid "Comprobante de Origen"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_electronic
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_move__l10n_py_libro_electronic
+msgid "Comprobante electrónico"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_search
+msgid "Con líneas en error"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_bank_statement_line__l10n_py_condicion_venta
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_move__l10n_py_condicion_venta
+msgid "Condición de Venta (DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__state__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "Confirmado sin líneas (período vacío)."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Confirmar"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__account_move__l10n_py_condicion_venta__1
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_condicion__1
+msgid "Contado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__create_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__create_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__create_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__create_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__create_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__create_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__account_move__l10n_py_condicion_venta__2
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_condicion__2
+msgid "Crédito"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__codigo_tabla3
+msgid "Código Tabla 3"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__codigo_tabla4
+msgid "Código Tabla 4"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_move_form_libros
+msgid "DNIT - Libros"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__date_end
+msgid "Date End"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__date_start
+msgid "Date Start"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Debe marcarse al menos una obligación imputada (IVA/IRE/IRP-RSP según el "
+"registro)."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Descargar ZIP"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__name
+msgid "Descripción"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:l10n_latam.identification.type,name:l10n_py_libros.it_diplomatico
+msgid "Diplomático"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_company__l10n_py_libro_nc_nd_direction
+msgid "Dirección NC/ND (Libros DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__display_name
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__display_name
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__display_name
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__manual_override
+msgid "Editado manualmente"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_egresos
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__tipo_registro__egresos
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libro_egresos
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Egresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"El comprobante asociado difiere del documento de origen actual; regenere la "
+"línea."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.constraint,message:l10n_py_libros.constraint_l10n_py_libro_document_type_map_codigo_tabla4_unique
+msgid "El código Tabla 4 debe ser único."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "El lote manual debe tener hasta 5 caracteres alfanuméricos."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "El mes es obligatorio (1-12) para la obligación 955."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "El monto total debe ser mayor a 0."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"El monto total no coincide con el monto total del comprobante de origen."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"El monto total no coincide con la suma de los montos gravados "
+"(10%%/5%%/exento)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"El monto total no coincide con la suma de monto gravado + no "
+"gravado/exonerado."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/account_move.py:0
+msgid ""
+"El número de comprobante del proveedor debe seguir el formato EEE-PPP-"
+"NNNNNNN (%(value)s)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "El período mm/aaaa es obligatorio para %(codigo)s."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "El período mm/aaaa es obligatorio para el tipo 208."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "El timbrado debe ser '0' para el tipo 107."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/account_move.py:0
+msgid ""
+"El timbrado del proveedor debe tener exactamente 8 dígitos numéricos "
+"(%(value)s)."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_partner__l10n_py_libro_electronic
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_users__l10n_py_libro_electronic
+msgid "Emite comprobante electrónico (DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Empleador IPS es obligatorio para el tipo 206."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "En error"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__state__erro
+msgid "Error"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__error_line_count
+msgid "Error Line Count"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__error_message
+msgid "Error Message"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Especificar Tipo de Documento es obligatorio (209)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Especificar Tipo de Documento es obligatorio (210)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid ""
+"Existem %(count)s línea(s) en estado erro. Corríjalas antes de confirmar el "
+"libro."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid ""
+"Existem %(count)s línea(s) en estado erro. Corríjalas antes de descargar el "
+"archivo."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/res_company.py:0
+msgid ""
+"Existem libros de Ventas/Compras já gerados. Reabra-os antes de trocar a "
+"direção NC/ND, e gere-os novamente depois."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_banco
+msgid "F Banco"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_comprobante_asociado_numero
+msgid "F Comprobante Asociado Numero"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_comprobante_asociado_timbrado
+msgid "F Comprobante Asociado Timbrado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_condicion
+msgid "F Condicion"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_empleador_ips
+msgid "F Empleador Ips"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_especificar_tipo_documento
+msgid "F Especificar Tipo Documento"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_fecha_emision
+msgid "F Fecha Emision"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_imputa_ire
+msgid "F Imputa Ire"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_imputa_irp_rsp
+msgid "F Imputa Irp Rsp"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_imputa_iva
+msgid "F Imputa Iva"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_moneda_extranjera
+msgid "F Moneda Extranjera"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_exento
+msgid "F Monto Exento"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_gravado
+msgid "F Monto Gravado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_gravado_10
+msgid "F Monto Gravado 10"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_gravado_5
+msgid "F Monto Gravado 5"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_no_gravado_exonerado
+msgid "F Monto No Gravado Exonerado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_monto_total
+msgid "F Monto Total"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_no_imputa
+msgid "F No Imputa"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_nombre_razon_social
+msgid "F Nombre Razon Social"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_numero_comprobante
+msgid "F Numero Comprobante"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_numero_cuenta
+msgid "F Numero Cuenta"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_numero_identificacion
+msgid "F Numero Identificacion"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_periodo_mm_aaaa
+msgid "F Periodo Mm Aaaa"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_timbrado
+msgid "F Timbrado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_tipo_comprobante
+msgid "F Tipo Comprobante"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__f_tipo_identificacion
+msgid "F Tipo Identificacion"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__formato_archivo
+msgid "Formato Archivo"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_supplier_number
+#: model:ir.model.fields,help:l10n_py_libros.field_account_move__l10n_py_libro_supplier_number
+msgid "Formato EEE-PPP-NNNNNNN"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__state__generated
+msgid "Generado"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_generate_wizard_form
+msgid "Generar"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libro_generate_wizard
+msgid "Generar Libros"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_generate_wizard
+msgid "Generar Libros DNIT"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Generar líneas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_l10n_py_libro_generate_wizard
+msgid "Generar/Exportar Libros DNIT"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__id
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__id
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__id
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__id
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:l10n_latam.identification.type,description:l10n_py_libros.it_diplomatico
+msgid "Identificación Diplomática"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:l10n_latam.identification.type,name:l10n_py_libros.it_identificacion_tributaria
+msgid "Identificación Tributaria"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:l10n_latam.identification.type,description:l10n_py_libros.it_identificacion_tributaria
+msgid "Identificación Tributaria (extranjero)"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Identificación es obligatoria."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Imputa al IVA solo puede ser 'S' para el tipo 207."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Imputación"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__incluir_compras
+msgid "Incluir Compras"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__incluir_egresos
+msgid "Incluir Egresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__incluir_ingresos
+msgid "Incluir Ingresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__incluir_ventas
+msgid "Incluir Ventas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_res_partner__l10n_py_libro_electronic
+#: model:ir.model.fields,help:l10n_py_libros.field_res_users__l10n_py_libro_electronic
+msgid ""
+"Indica que este proveedor emite comprobante electrónico ante la DNIT: usado "
+"como valor por defecto (copiado, editable) del campo homónimo en la factura "
+"de compra, para excluirla del Registro de Compras (ya pre-cargado por el "
+"Marangatu)."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_ingresos
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__tipo_registro__ingresos
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libro_ingresos
+msgid "Ingresos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__res_company__l10n_py_libro_nc_nd_direction__invertida
+msgid "Invertida"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "La fecha de emisión no puede ser anterior al 01/01/2021."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "La obligación 956 (anual) no usa el mes: déjelo en 0."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"La suma de los montos gravados (10%%/5%%/exento) no coincide con el monto "
+"total del comprobante de origen."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__write_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__write_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__write_uid
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__write_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__write_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__write_date
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__libro_id
+msgid "Libro"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_l10n_py_libro
+msgid "Libro DNIT (RG 90/2021)"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "Libro reaberto para edição."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libros_root
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_company_form_libros
+msgid "Libros DNIT"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/wizard/l10n_py_libro_generate_wizard.py:0
+msgid "Libros generados"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Los montos de la línea del libro no pueden ser negativos."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__lote_generation_seq
+msgid "Lote Generation Seq"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__lote_letra
+msgid "Lote Letra"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__lote_manual_override
+msgid "Lote Manual Override"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_l10n_py_libro_line
+msgid "Línea de Libro DNIT"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__line_ids
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Líneas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_line_error
+msgid "Líneas en error"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_l10n_py_libro_identification_type_map
+msgid "Mapeamento Tabla 3 DNIT - Tipo de Identificación"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model,name:l10n_py_libros.model_l10n_py_libro_document_type_map
+msgid "Mapeamento Tabla 4 DNIT - Tipo de Comprobante"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_electronic
+#: model:ir.model.fields,help:l10n_py_libros.field_account_move__l10n_py_libro_electronic
+msgid ""
+"Marca que este comprobante de compra ya es electrónico y pre-cargado por el "
+"Marangatu: la línea correspondiente es excluída del Registro de Compras "
+"generado por este módulo."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro_line__manual_override
+msgid ""
+"Marcado automáticamente quando o usuário edita um campo f_* de uma linha "
+"derivada de account.move: impede que action_generate_lines sobrescreva o "
+"valor na regeneração."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__month
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__month
+msgid "Month"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Montos"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_ire__n
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_irp_rsp__n
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_iva__n
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_moneda_extranjera__n
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_no_imputa__n
+msgid "No"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Nombre/razón social es obligatorio."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Número de comprobante es obligatorio."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Número de cuenta y banco son obligatorios para %(codigo)s."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_supplier_timbrado
+#: model:ir.model.fields,help:l10n_py_libros.field_account_move__l10n_py_libro_supplier_timbrado
+msgid "Número de timbrado del proveedor (factura de compra en papel)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_supplier_number
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_move__l10n_py_libro_supplier_number
+msgid "Número del Comprobante del Proveedor"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Número y timbrado del comprobante asociado son obligatorios para Notas de "
+"Crédito/Débito."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Número y timbrado del comprobante asociado son obligatorios para el tipo "
+"201."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Número y timbrado del comprobante asociado son obligatorios para el tipo "
+"203."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__obligacion
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__obligacion
+msgid "Obligacion"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__state__ok
+msgid "Ok"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__res_company__l10n_py_libro_nc_nd_direction__padrao
+msgid "Padrão (RG 12/24)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__payment_id
+msgid "Pago de Origen"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Para el tipo %(codigo)s los montos gravados 10/5/exento deben estar en cero."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__separador__punto_y_coma
+msgid "Punto y coma (;)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_form
+msgid "Reabrir"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Rellenar desde el origen"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_line_form
+msgid "Restaurar valores generados"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "Se agotó el número de sub-lotes (00-99)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid "Se agotó la secuencia de generación (00-99)."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__separador
+msgid "Separador"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:l10n_latam.identification.type,description:l10n_py_libros.it_sin_nombre
+#: model:l10n_latam.identification.type,name:l10n_py_libros.it_sin_nombre
+msgid "Sin Nombre"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__state
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_company__l10n_py_libro_ire_activo
+msgid "Sujeto a IRE (Libros DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_company__l10n_py_libro_irp_rsp_activo
+msgid "Sujeto a IRP-RSP (Libros DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_res_company__l10n_py_libro_iva_activo
+msgid "Sujeto a IVA (Libros DNIT)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_ire__s
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_irp_rsp__s
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_imputa_iva__s
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_moneda_extranjera__s
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro_line__f_no_imputa__s
+msgid "Sí"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__formato_archivo__txt
+msgid "TXT (tabulado)"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_bank_statement_line__l10n_py_libro_supplier_timbrado
+#: model:ir.model.fields,field_description:l10n_py_libros.field_account_move__l10n_py_libro_supplier_timbrado
+msgid "Timbrado del Proveedor"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Timbrado/número del proveedor ausente o inconsistente."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__tipo_registro
+msgid "Tipo Registro"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_document_type_map__l10n_latam_document_type_id
+msgid "Tipo de Documento LATAM"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_identification_type_map__l10n_latam_identification_type_id
+msgid "Tipo de Identificación LATAM"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_line__tipo_registro
+msgid "Tipo de Registro"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Tipo de identificación debe ser %(esperado)s para el tipo %(codigo)s."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid ""
+"Tipo de identificación debe ser 11 (RUC), excepto para los tipos 101/107 "
+"(%(codigo)s)."
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro_line.py:0
+msgid "Tipo de identificación debe ser 11, 12 o 13 para el tipo 210."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_search
+msgid "Tipo de registro"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model_terms:ir.ui.view,arch_db:l10n_py_libros.view_l10n_py_libro_generate_wizard_form
+msgid "Tipos de registro a generar"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro_document_type_map__l10n_latam_document_type_id
+msgid "Vacío para tipos 'de papel' sem equivalente LATAM"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.actions.act_window,name:l10n_py_libros.action_l10n_py_libro_ventas
+#: model:ir.model.fields.selection,name:l10n_py_libros.selection__l10n_py_libro__tipo_registro__ventas
+#: model:ir.ui.menu,name:l10n_py_libros.menu_l10n_py_libro_ventas
+msgid "Ventas"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,help:l10n_py_libros.field_l10n_py_libro__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_py_libros
+#. odoo-python
+#: code:addons/l10n_py_libros/models/l10n_py_libro.py:0
+msgid ""
+"XXXXX manual não suporta múltiplos sub-lotes neste período; limpe o override"
+" ou gere um valor por sub-lote manualmente depois."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.constraint,message:l10n_py_libros.constraint_l10n_py_libro_libro_period_unique
+msgid ""
+"Ya existe un libro para esta empresa/tipo de registro/obligación/período."
+msgstr ""
+
+#. module: l10n_py_libros
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro__year
+#: model:ir.model.fields,field_description:l10n_py_libros.field_l10n_py_libro_generate_wizard__year
+msgid "Year"
+msgstr ""

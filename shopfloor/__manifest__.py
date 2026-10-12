@@ -6,7 +6,7 @@
 {
     "name": "Shopfloor",
     "summary": "manage warehouse operations with barcode scanners",
-    "version": "18.0.1.3.0",
+    "version": "18.0.1.4.0",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/stock-logistics-shopfloor",
@@ -41,6 +41,8 @@
         "product_packaging_level",
         #  OCA / delivery
         "stock_picking_delivery_link",
+        #  OCA / delivery-carrier
+        "stock_picking_delivery_package_type_domain",
         # TODO v18: new dependency due to ``available_carriers`` that needs a SO.
         # see picking_form.py
         "sale_stock",

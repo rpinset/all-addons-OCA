@@ -1,0 +1,301 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_measuring_device
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-10 09:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "Črtna koda skenirana"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Cancel Scan"
+msgstr "Prekliči skeniranje"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Close"
+msgstr "Zaključi"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__create_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__create_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__create_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__create_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__device_id
+msgid "Device"
+msgstr "Naprava"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__device_type
+msgid "Device Type"
+msgstr "Tip naprave"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__display_name
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Fullscreen"
+msgstr "Celozaslonski prikaz"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__barcode
+msgid "GTIN"
+msgstr "GTIN"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__height
+msgid "Height (mm)"
+msgstr "Višina (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__id
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__is_measured
+msgid "Is Measured"
+msgstr "Izmerjeno"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__is_unit_line
+msgid "Is Unit Line"
+msgstr "Vrstica za enoto"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__write_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__write_uid
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__write_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__write_date
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_length
+msgid "Length (mm)"
+msgstr "Dolžina (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__line_ids
+msgid "Line"
+msgstr "Vrstica"
+
+#. module: stock_measuring_device
+#. odoo-python
+#: code:addons/stock_measuring_device/models/measuring_device.py:0
+msgid "Measurement Wizard"
+msgstr "Čarovnik za merjenje"
+
+#. module: stock_measuring_device
+#. odoo-python
+#: code:addons/stock_measuring_device/wizard/measuring_wizard_line.py:0
+msgid "Measurement machine already in use."
+msgstr "Merilna naprava je že v uporabi."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_stock_warehouse__measuring_device_ids
+msgid "Measuring Device"
+msgstr "Merilna naprava"
+
+#. module: stock_measuring_device
+#: model:ir.actions.act_window,name:stock_measuring_device.action_measuring_device_form
+#: model:ir.ui.menu,name:stock_measuring_device.menu_measuring_device
+msgid "Measuring Devices"
+msgstr "Merilne naprave"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_device
+msgid "Measuring and Weighing Device"
+msgstr "Merilna in tehtalna naprava"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_product_packaging__measuring_device_id
+msgid "Measuring device which will scan the package"
+msgstr "Merilna naprava, ki bo skenirala pakiranje"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields.selection,name:stock_measuring_device.selection__measuring_device__state__not_ready
+msgid "Not Ready"
+msgstr "Ni pripravljeno"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__name
+msgid "Packaging"
+msgstr "Pakiranje"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_id
+msgid "Packaging (rel)"
+msgstr "Pakiranje (povezava)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__packaging_level_id
+msgid "Packaging Level"
+msgstr "Raven pakiranja"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard__product_id
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_product_packaging
+msgid "Product Packaging"
+msgstr "Pakiranje proizvoda"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__qty
+msgid "Quantity"
+msgstr "Količina"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields.selection,name:stock_measuring_device.selection__measuring_device__state__ready
+msgid "Ready"
+msgstr "Pripravljeno"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Refresh"
+msgstr "Osveži"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Retrieve Product"
+msgstr "Pridobi proizvod"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Save"
+msgstr "Shrani"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_wizard
+msgid "Scan"
+msgstr "Skeniraj"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__scan_requested
+msgid "Scan Requested"
+msgstr "Skeniranje zahtevano"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__sequence
+msgid "Sequence"
+msgstr "Zaporedje"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__state
+msgid "State"
+msgstr "Stanje"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_product_packaging__measuring_device_id
+msgid ""
+"Technical field set when an operator uses the device to scan this package"
+msgstr ""
+"Tehnično polje, ki se nastavi, ko upravljavec uporabi napravo za skeniranje "
+"tega pakiranja"
+
+#. module: stock_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_device_form
+msgid "Test Device"
+msgstr "Preizkusi napravo"
+
+#. module: stock_measuring_device
+#: model:ir.model.constraint,message:stock_measuring_device.constraint_measuring_device_name_uniq
+msgid "The name of the measuring/weighing device must be unique."
+msgstr "Naziv merilne/tehtalne naprave mora biti edinstven."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_measuring_device__device_type
+msgid ""
+"The type of device (e.g. zippcube, cubiscan...) depending on which module "
+"are installed."
+msgstr ""
+"Tip naprave (npr. zippcube, cubiscan ...), odvisno od nameščenih modulov."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,help:stock_measuring_device.field_measuring_wizard___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "Vrednost zadnje skenirane črtne kode."
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__volume
+msgid "Volume (m³)"
+msgstr "Prostornina (m³)"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_stock_warehouse
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_device__warehouse_id
+msgid "Warehouse"
+msgstr "Skladišče"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__weight
+msgid "Weight (kg)"
+msgstr "Masa (kg)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__width
+msgid "Width (mm)"
+msgstr "Širina (mm)"
+
+#. module: stock_measuring_device
+#: model:ir.model.fields,field_description:stock_measuring_device.field_measuring_wizard_line__wizard_id
+#: model_terms:ir.ui.view,arch_db:stock_measuring_device.view_measuring_device_form
+msgid "Wizard"
+msgstr "Čarovnik"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_wizard
+msgid "measuring Wizard"
+msgstr "Čarovnik za merjenje"
+
+#. module: stock_measuring_device
+#: model:ir.model,name:stock_measuring_device.model_measuring_wizard_line
+msgid "measuring Wizard Line"
+msgstr "Vrstica čarovnika za merjenje"

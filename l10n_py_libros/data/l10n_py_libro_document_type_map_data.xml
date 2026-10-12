@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Tabla 4 DNIT: 101-112 (Ventas/Compras), 201-211 (Ingresos/Egresos) -->
+
+    <record id="doc_type_map_101" model="l10n_py.libro.document.type.map">
+        <field name="name">Autofactura</field>
+        <field name="codigo_tabla4">101</field>
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_af" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_102" model="l10n_py.libro.document.type.map">
+        <field name="name">Boleta Transporte Público</field>
+        <field name="codigo_tabla4">102</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_103" model="l10n_py.libro.document.type.map">
+        <field name="name">Boleta de Venta</field>
+        <field name="codigo_tabla4">103</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_104" model="l10n_py.libro.document.type.map">
+        <field name="name">Boleta Resimple</field>
+        <field name="codigo_tabla4">104</field>
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_105" model="l10n_py.libro.document.type.map">
+        <field name="name">Boletos de Loterías/Juegos de Azar</field>
+        <field name="codigo_tabla4">105</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_106" model="l10n_py.libro.document.type.map">
+        <field name="name">Boleto/Ticket Transporte Aéreo</field>
+        <field name="codigo_tabla4">106</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_107" model="l10n_py.libro.document.type.map">
+        <field name="name">Despacho de Importación</field>
+        <field name="codigo_tabla4">107</field>
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_108" model="l10n_py.libro.document.type.map">
+        <field name="name">Entrada Espectáculos Públicos</field>
+        <field name="codigo_tabla4">108</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_109" model="l10n_py.libro.document.type.map">
+        <field name="name">Factura</field>
+        <field name="codigo_tabla4">109</field>
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_f" />
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_110" model="l10n_py.libro.document.type.map">
+        <field name="name">Nota de Crédito</field>
+        <field name="codigo_tabla4">110</field>
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nc" />
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_111" model="l10n_py.libro.document.type.map">
+        <field name="name">Nota de Débito</field>
+        <field name="codigo_tabla4">111</field>
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nd" />
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_112" model="l10n_py.libro.document.type.map">
+        <field name="name">Ticket Máquina Registradora</field>
+        <field name="codigo_tabla4">112</field>
+        <field name="aplica_ventas" eval="True" />
+        <field name="aplica_compras" eval="True" />
+    </record>
+
+    <record id="doc_type_map_201" model="l10n_py.libro.document.type.map">
+        <field name="name">Comprobante de Egresos por Compras a Crédito</field>
+        <field name="codigo_tabla4">201</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_202" model="l10n_py.libro.document.type.map">
+        <field name="name">Comprobante del Exterior Legalizado</field>
+        <field name="codigo_tabla4">202</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_203" model="l10n_py.libro.document.type.map">
+        <field name="name">Comprobante de Ingreso por Ventas a Crédito</field>
+        <field name="codigo_tabla4">203</field>
+        <field name="aplica_ingresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_204" model="l10n_py.libro.document.type.map">
+        <field
+            name="name"
+        >Comprobante de Ingresos Entidades Públicas/Religiosas/Beneficio Público</field>
+        <field name="codigo_tabla4">204</field>
+        <field name="aplica_ingresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_205" model="l10n_py.libro.document.type.map">
+        <field name="name">Extracto de Cuenta - Billetaje Electrónico</field>
+        <field name="codigo_tabla4">205</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_206" model="l10n_py.libro.document.type.map">
+        <field name="name">Extracto de Cuenta de IPS</field>
+        <field name="codigo_tabla4">206</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_207" model="l10n_py.libro.document.type.map">
+        <field name="name">Extracto de Cuenta TC/TD</field>
+        <field name="codigo_tabla4">207</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_208" model="l10n_py.libro.document.type.map">
+        <field name="name">Liquidación de Salario</field>
+        <field name="codigo_tabla4">208</field>
+        <field name="aplica_ingresos" eval="True" />
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_209" model="l10n_py.libro.document.type.map">
+        <field name="name">Otros Comprobantes de Egresos</field>
+        <field name="codigo_tabla4">209</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_210" model="l10n_py.libro.document.type.map">
+        <field name="name">Otros Comprobantes de Ingresos</field>
+        <field name="codigo_tabla4">210</field>
+        <field name="aplica_ingresos" eval="True" />
+    </record>
+
+    <record id="doc_type_map_211" model="l10n_py.libro.document.type.map">
+        <field name="name">Transferencias o Giros Bancarios/Boleta de Depósito</field>
+        <field name="codigo_tabla4">211</field>
+        <field name="aplica_egresos" eval="True" />
+    </record>
+</odoo>

@@ -202,6 +202,11 @@ class AccountMove(models.Model):
         compute="_compute_l10n_py_doc_type_code",
     )
 
+    # Campo auxiliar para visibilidad en la vista (Factura de Exportación)
+    l10n_py_is_export = fields.Boolean(
+        compute="_compute_l10n_py_is_export",
+    )
+
     # Campos NRE (Nota de Remisión Electrónica — tipo 7)
     l10n_py_nre_motive = fields.Selection(
         [
@@ -266,6 +271,19 @@ class AccountMove(models.Model):
                 else ""
             )
 
+    @api.depends("fiscal_position_id", "partner_id.country_id")
+    def _compute_l10n_py_is_export(self):
+        for move in self:
+            move.l10n_py_is_export = move._l10n_py_is_export()
+
+    def _l10n_py_is_export(self):
+        """Factura de Exportación: fiscal position dedicada o parceiro do exterior."""
+        self.ensure_one()
+        if self.fiscal_position_id and self.fiscal_position_id.l10n_py_is_export:
+            return True
+        partner = self.partner_id
+        return bool(partner.country_id) and partner.country_id.code != "PY"
+
     # ============== ONCHANGE METHODS ==============
 
     @api.onchange("invoice_line_ids")
@@ -298,7 +316,7 @@ class AccountMove(models.Model):
         for record in self:
             if record.l10n_py_security_code and len(record.l10n_py_security_code) != 9:
                 raise ValidationError(
-                    _("El código de seguridad debe tener " "exactamente 9 caracteres")
+                    _("El código de seguridad debe tener exactamente 9 caracteres")
                 )
 
     # ============== PRIVATE METHODS ==============
@@ -307,39 +325,272 @@ class AccountMove(models.Model):
         """Generar código de seguridad aleatorio de 9 dígitos"""
         return "".join(secrets.choice(string.digits) for _ in range(9))
 
+    # ISO 3166-1 alpha-2 -> alpha-3, tabela completa (todos os países/territórios
+    # publicados pela ISO 3166-1). Usada por _get_country_alpha3 para o
+    # cPaisRec/dDesPaisRe do SIFEN; qualquer country.code ISO válido resolve aqui.
+    _ALPHA2_TO_3 = {
+        "AD": "AND",
+        "AE": "ARE",
+        "AF": "AFG",
+        "AG": "ATG",
+        "AI": "AIA",
+        "AL": "ALB",
+        "AM": "ARM",
+        "AO": "AGO",
+        "AQ": "ATA",
+        "AR": "ARG",
+        "AS": "ASM",
+        "AT": "AUT",
+        "AU": "AUS",
+        "AW": "ABW",
+        "AX": "ALA",
+        "AZ": "AZE",
+        "BA": "BIH",
+        "BB": "BRB",
+        "BD": "BGD",
+        "BE": "BEL",
+        "BF": "BFA",
+        "BG": "BGR",
+        "BH": "BHR",
+        "BI": "BDI",
+        "BJ": "BEN",
+        "BL": "BLM",
+        "BM": "BMU",
+        "BN": "BRN",
+        "BO": "BOL",
+        "BQ": "BES",
+        "BR": "BRA",
+        "BS": "BHS",
+        "BT": "BTN",
+        "BV": "BVT",
+        "BW": "BWA",
+        "BY": "BLR",
+        "BZ": "BLZ",
+        "CA": "CAN",
+        "CC": "CCK",
+        "CD": "COD",
+        "CF": "CAF",
+        "CG": "COG",
+        "CH": "CHE",
+        "CI": "CIV",
+        "CK": "COK",
+        "CL": "CHL",
+        "CM": "CMR",
+        "CN": "CHN",
+        "CO": "COL",
+        "CR": "CRI",
+        "CU": "CUB",
+        "CV": "CPV",
+        "CW": "CUW",
+        "CX": "CXR",
+        "CY": "CYP",
+        "CZ": "CZE",
+        "DE": "DEU",
+        "DJ": "DJI",
+        "DK": "DNK",
+        "DM": "DMA",
+        "DO": "DOM",
+        "DZ": "DZA",
+        "EC": "ECU",
+        "EE": "EST",
+        "EG": "EGY",
+        "EH": "ESH",
+        "ER": "ERI",
+        "ES": "ESP",
+        "ET": "ETH",
+        "FI": "FIN",
+        "FJ": "FJI",
+        "FK": "FLK",
+        "FM": "FSM",
+        "FO": "FRO",
+        "FR": "FRA",
+        "GA": "GAB",
+        "GB": "GBR",
+        "GD": "GRD",
+        "GE": "GEO",
+        "GF": "GUF",
+        "GG": "GGY",
+        "GH": "GHA",
+        "GI": "GIB",
+        "GL": "GRL",
+        "GM": "GMB",
+        "GN": "GIN",
+        "GP": "GLP",
+        "GQ": "GNQ",
+        "GR": "GRC",
+        "GS": "SGS",
+        "GT": "GTM",
+        "GU": "GUM",
+        "GW": "GNB",
+        "GY": "GUY",
+        "HK": "HKG",
+        "HM": "HMD",
+        "HN": "HND",
+        "HR": "HRV",
+        "HT": "HTI",
+        "HU": "HUN",
+        "ID": "IDN",
+        "IE": "IRL",
+        "IL": "ISR",
+        "IM": "IMN",
+        "IN": "IND",
+        "IO": "IOT",
+        "IQ": "IRQ",
+        "IR": "IRN",
+        "IS": "ISL",
+        "IT": "ITA",
+        "JE": "JEY",
+        "JM": "JAM",
+        "JO": "JOR",
+        "JP": "JPN",
+        "KE": "KEN",
+        "KG": "KGZ",
+        "KH": "KHM",
+        "KI": "KIR",
+        "KM": "COM",
+        "KN": "KNA",
+        "KP": "PRK",
+        "KR": "KOR",
+        "KW": "KWT",
+        "KY": "CYM",
+        "KZ": "KAZ",
+        "LA": "LAO",
+        "LB": "LBN",
+        "LC": "LCA",
+        "LI": "LIE",
+        "LK": "LKA",
+        "LR": "LBR",
+        "LS": "LSO",
+        "LT": "LTU",
+        "LU": "LUX",
+        "LV": "LVA",
+        "LY": "LBY",
+        "MA": "MAR",
+        "MC": "MCO",
+        "MD": "MDA",
+        "ME": "MNE",
+        "MF": "MAF",
+        "MG": "MDG",
+        "MH": "MHL",
+        "MK": "MKD",
+        "ML": "MLI",
+        "MM": "MMR",
+        "MN": "MNG",
+        "MO": "MAC",
+        "MP": "MNP",
+        "MQ": "MTQ",
+        "MR": "MRT",
+        "MS": "MSR",
+        "MT": "MLT",
+        "MU": "MUS",
+        "MV": "MDV",
+        "MW": "MWI",
+        "MX": "MEX",
+        "MY": "MYS",
+        "MZ": "MOZ",
+        "NA": "NAM",
+        "NC": "NCL",
+        "NE": "NER",
+        "NF": "NFK",
+        "NG": "NGA",
+        "NI": "NIC",
+        "NL": "NLD",
+        "NO": "NOR",
+        "NP": "NPL",
+        "NR": "NRU",
+        "NU": "NIU",
+        "NZ": "NZL",
+        "OM": "OMN",
+        "PA": "PAN",
+        "PE": "PER",
+        "PF": "PYF",
+        "PG": "PNG",
+        "PH": "PHL",
+        "PK": "PAK",
+        "PL": "POL",
+        "PM": "SPM",
+        "PN": "PCN",
+        "PR": "PRI",
+        "PS": "PSE",
+        "PT": "PRT",
+        "PW": "PLW",
+        "PY": "PRY",
+        "QA": "QAT",
+        "RE": "REU",
+        "RO": "ROU",
+        "RS": "SRB",
+        "RU": "RUS",
+        "RW": "RWA",
+        "SA": "SAU",
+        "SB": "SLB",
+        "SC": "SYC",
+        "SD": "SDN",
+        "SE": "SWE",
+        "SG": "SGP",
+        "SH": "SHN",
+        "SI": "SVN",
+        "SJ": "SJM",
+        "SK": "SVK",
+        "SL": "SLE",
+        "SM": "SMR",
+        "SN": "SEN",
+        "SO": "SOM",
+        "SR": "SUR",
+        "SS": "SSD",
+        "ST": "STP",
+        "SV": "SLV",
+        "SX": "SXM",
+        "SY": "SYR",
+        "SZ": "SWZ",
+        "TC": "TCA",
+        "TD": "TCD",
+        "TF": "ATF",
+        "TG": "TGO",
+        "TH": "THA",
+        "TJ": "TJK",
+        "TK": "TKL",
+        "TL": "TLS",
+        "TM": "TKM",
+        "TN": "TUN",
+        "TO": "TON",
+        "TR": "TUR",
+        "TT": "TTO",
+        "TV": "TUV",
+        "TW": "TWN",
+        "TZ": "TZA",
+        "UA": "UKR",
+        "UG": "UGA",
+        "UM": "UMI",
+        "US": "USA",
+        "UY": "URY",
+        "UZ": "UZB",
+        "VA": "VAT",
+        "VC": "VCT",
+        "VE": "VEN",
+        "VG": "VGB",
+        "VI": "VIR",
+        "VN": "VNM",
+        "VU": "VUT",
+        "WF": "WLF",
+        "WS": "WSM",
+        "YE": "YEM",
+        "YT": "MYT",
+        "ZA": "ZAF",
+        "ZM": "ZMB",
+        "ZW": "ZWE",
+    }
+
     @staticmethod
     def _get_country_alpha3(country):
-        """Convert res.country (ISO alpha-2) to ISO alpha-3 for SIFEN PaisType."""
+        """Convert res.country (ISO alpha-2) to ISO alpha-3 for SIFEN PaisType.
+
+        Fallback: sem país ou sem code -> "PRY" (comportamento original,
+        preservado). Country com code ISO válido não mapeado (não deveria
+        ocorrer, tabela é completa) -> devolve o próprio code alpha-2.
+        """
         if not country or not country.code:
             return "PRY"
-        # Common countries for Paraguay trade; full table at ISO 3166-1
-        _ALPHA2_TO_3 = {
-            "PY": "PRY",
-            "AR": "ARG",
-            "BR": "BRA",
-            "UY": "URY",
-            "BO": "BOL",
-            "CL": "CHL",
-            "PE": "PER",
-            "US": "USA",
-            "CO": "COL",
-            "EC": "ECU",
-            "VE": "VEN",
-            "MX": "MEX",
-            "ES": "ESP",
-            "DE": "DEU",
-            "CN": "CHN",
-            "JP": "JPN",
-            "KR": "KOR",
-            "TW": "TWN",
-            "IN": "IND",
-            "GB": "GBR",
-            "FR": "FRA",
-            "IT": "ITA",
-            "PT": "PRT",
-            "CA": "CAN",
-        }
-        return _ALPHA2_TO_3.get(country.code, country.code)
+        return AccountMove._ALPHA2_TO_3.get(country.code, country.code)
 
     def _prepare_edi_document_data(self):
         """Preparar datos del documento electrónico en formato JSON"""
@@ -425,13 +676,16 @@ class AccountMove(models.Model):
         if doc_type_code == "4":
             document_data["autofactura"] = self._prepare_autofactura_data()
 
-        # Transporte (tipo=7 — NRE)
-        if doc_type_code == "7" and self.l10n_py_transport_id:
+        # Transporte (tipo=7 — NRE; también Factura de Exportación, tipo=1)
+        if (
+            doc_type_code == "7" or self._l10n_py_is_export()
+        ) and self.l10n_py_transport_id:
             document_data["transporte"] = self._prepare_transport_data()
 
         # Totales SIFEN
         document_data["totales"] = {
             "totalExento": self.l10n_py_amount_exempt,  # F003
+            "totalExonerado": self.l10n_py_amount_exonerado,  # dSubExo
             "totalGravado5": self.l10n_py_amount_subtotal_5,  # F004
             "totalGravado10": self.l10n_py_amount_subtotal_10,  # F005
             "totalOperacion": self.l10n_py_total_operation,  # F008
@@ -597,6 +851,12 @@ class AccountMove(models.Model):
 
         return payment_condition
 
+    def _l10n_py_infer_affectation(self, tax):
+        """Fallback p/ impostos sem l10n_py_iva_affectation (retrocompat)."""
+        if tax.amount == 0:
+            return "3"
+        return "1"
+
     def _prepare_invoice_lines(self):
         """Preparar líneas de la factura"""
         items = []
@@ -604,16 +864,30 @@ class AccountMove(models.Model):
         for line in self.invoice_line_ids.filtered(
             lambda line: line.display_type not in ("line_section", "line_note")
         ):
-            # Determinar tasa de IVA
+            # Determinar tasa de IVA e afetação (iAfecIVA)
+            if not line.tax_ids:
+                # Sin guard, la línea caería en el default (gravado 10%) y
+                # declararía una base gravada inexistente ante el SIFEN.
+                raise UserError(
+                    _(
+                        "La línea '%s' no tiene ningún impuesto: cada ítem del "
+                        "DE debe declarar su afectación de IVA (gravado, "
+                        "exonerado, exento o gravado parcial)."
+                    )
+                    % (line.name or line.product_id.display_name)
+                )
             iva_rate = 10  # Por defecto 10%
             iva_type = 1  # Gravado IVA
 
             for tax in line.tax_ids:
-                if tax.amount == 5:
-                    iva_rate = 5
-                elif tax.amount == 0:
-                    iva_type = 3  # Exenta
-                    iva_rate = 0
+                affectation = (
+                    tax.l10n_py_iva_affectation or self._l10n_py_infer_affectation(tax)
+                )
+                iva_type = int(affectation)
+                if tax.amount in (0, 5, 10):
+                    iva_rate = int(tax.amount)
+
+            prop_iva = 0 if iva_type in (2, 3) else 100
 
             # Calcular base gravable e liquidação IVA por linha (SIFEN)
             base_gravada = 0.0
@@ -650,7 +924,7 @@ class AccountMove(models.Model):
                 "precioUnitario": line.price_unit,
                 "cambio": 0,
                 "ivaTipo": iva_type,
-                "ivaBase": 100,
+                "ivaBase": prop_iva,
                 "iva": iva_rate,
                 "baseGravada": round(base_gravada, 2),
                 "liquidacionIva": round(liquidacion_iva, 2),
@@ -784,6 +1058,54 @@ class AccountMove(models.Model):
                 errors.append(_("Autofactura: %s es obligatorio.") % desc)
         return errors
 
+    def _validate_nre_data(self, docs):
+        """Validar datos específicos de Nota de Remisión Electrónica
+        (código 7). Extraído de ``_validate_edi_document_type`` para
+        mantener la complejidad ciclomática de ese método bajo control."""
+        errors = []
+        if not self.l10n_py_nre_motive:
+            errors.append(_("Nota de Remisión: el motivo es obligatorio."))
+        # Motivo "1" (traslado por venta) sin doc asociado → requer data estimada
+        if (
+            self.l10n_py_nre_motive == "1"
+            and not docs
+            and not self.l10n_py_nre_estimated_invoice_date
+        ):
+            errors.append(
+                _(
+                    "NRE traslado por venta sin documento "
+                    "asociado: debe indicar fecha estimada "
+                    "de facturación."
+                )
+            )
+        # Data estimada no puede exceder el mes de emisión
+        if self.l10n_py_nre_estimated_invoice_date and self.invoice_date:
+            est_date = self.l10n_py_nre_estimated_invoice_date
+            inv_date = self.invoice_date
+            # La fecha estimada no debe superar el mes siguiente
+            if est_date.month > inv_date.month + 1 or (
+                est_date.year > inv_date.year
+                and not (inv_date.month == 12 and est_date.month == 1)
+            ):
+                errors.append(
+                    _(
+                        "La fecha estimada de facturación no puede "
+                        "exceder el mes siguiente al de emisión."
+                    )
+                )
+        # Motivo "5" (entre locales) → RUC receptor = RUC emissor
+        if self.l10n_py_nre_motive == "5":
+            partner_ruc = self.partner_id.l10n_py_ruc or ""
+            company_ruc = self.company_id.l10n_py_ruc or ""
+            if partner_ruc != company_ruc:
+                errors.append(
+                    _(
+                        "Traslado entre locales: el RUC del "
+                        "receptor debe coincidir con el del emisor."
+                    )
+                )
+        return errors
+
     def _validate_edi_document_type(self):
         """Validar requisitos específicos por tipo de DTE.
 
@@ -823,45 +1145,81 @@ class AccountMove(models.Model):
 
         # NRE (code=7): validações NRE
         elif code == "7":
-            if not self.l10n_py_nre_motive:
-                errors.append(_("Nota de Remisión: el motivo es obligatorio."))
-            # Motivo "1" (traslado por venta) sin doc asociado → requer data estimada
-            if self.l10n_py_nre_motive == "1" and not docs:
-                if not self.l10n_py_nre_estimated_invoice_date:
-                    errors.append(
-                        _(
-                            "NRE traslado por venta sin documento "
-                            "asociado: debe indicar fecha estimada "
-                            "de facturación."
-                        )
-                    )
-            # Data estimada no puede exceder el mes de emisión
-            if self.l10n_py_nre_estimated_invoice_date and self.invoice_date:
-                est_date = self.l10n_py_nre_estimated_invoice_date
-                inv_date = self.invoice_date
-                # La fecha estimada no debe superar el mes siguiente
-                if est_date.month > inv_date.month + 1 or (
-                    est_date.year > inv_date.year
-                    and not (inv_date.month == 12 and est_date.month == 1)
-                ):
-                    errors.append(
-                        _(
-                            "La fecha estimada de facturación no puede "
-                            "exceder el mes siguiente al de emisión."
-                        )
-                    )
-            # Motivo "5" (entre locales) → RUC receptor = RUC emissor
-            if self.l10n_py_nre_motive == "5":
-                partner_ruc = self.partner_id.l10n_py_ruc or ""
-                company_ruc = self.company_id.l10n_py_ruc or ""
-                if partner_ruc != company_ruc:
-                    errors.append(
-                        _(
-                            "Traslado entre locales: el RUC del "
-                            "receptor debe coincidir con el del emisor."
-                        )
-                    )
+            errors.extend(self._validate_nre_data(docs))
 
+        # Exportación (Factura de Exportación): validaciones adicionales
+        # exigidas en la práctica por la SET aunque el XSD los marque
+        # como opcionales.
+        if self._l10n_py_is_export():
+            errors.extend(self._validate_export_data())
+
+        return errors
+
+    def _validate_nre_data(self, docs):
+        """Validaciones específicas de la Nota de Remisión (code=7)."""
+        errors = []
+        if not self.l10n_py_nre_motive:
+            errors.append(_("Nota de Remisión: el motivo es obligatorio."))
+        # Motivo "1" (traslado por venta) sin doc asociado → requer data estimada
+        if self.l10n_py_nre_motive == "1" and not docs:
+            if not self.l10n_py_nre_estimated_invoice_date:
+                errors.append(
+                    _(
+                        "NRE traslado por venta sin documento "
+                        "asociado: debe indicar fecha estimada "
+                        "de facturación."
+                    )
+                )
+        # Data estimada no puede exceder el mes de emisión
+        if self.l10n_py_nre_estimated_invoice_date and self.invoice_date:
+            est_date = self.l10n_py_nre_estimated_invoice_date
+            inv_date = self.invoice_date
+            # La fecha estimada no debe superar el mes siguiente
+            if est_date.month > inv_date.month + 1 or (
+                est_date.year > inv_date.year
+                and not (inv_date.month == 12 and est_date.month == 1)
+            ):
+                errors.append(
+                    _(
+                        "La fecha estimada de facturación no puede "
+                        "exceder el mes siguiente al de emisión."
+                    )
+                )
+        # Motivo "5" (entre locales) → RUC receptor = RUC emissor
+        if self.l10n_py_nre_motive == "5":
+            partner_ruc = self.partner_id.l10n_py_ruc or ""
+            company_ruc = self.company_id.l10n_py_ruc or ""
+            if partner_ruc != company_ruc:
+                errors.append(
+                    _(
+                        "Traslado entre locales: el RUC del "
+                        "receptor debe coincidir con el del emisor."
+                    )
+                )
+
+        return errors
+
+    def _validate_export_data(self):
+        """Validaciones de exportación exigidas en la práctica por la SET."""
+        errors = []
+        if (
+            self.currency_id
+            and self.currency_id.name != "PYG"
+            and (self.l10n_py_exchange_rate or 0) <= 0
+        ):
+            errors.append(
+                _(
+                    "Exportación en moneda extranjera requiere tipo de "
+                    "cambio (l10n_py_exchange_rate) mayor a cero."
+                )
+            )
+        if not self.partner_id.street:
+            errors.append(
+                _(
+                    "Exportación: la dirección del receptor del "
+                    "exterior (dDirRec) es obligatoria."
+                )
+            )
         return errors
 
     def _validate_edi_data(self):
@@ -907,6 +1265,26 @@ class AccountMove(models.Model):
                 if not line.product_id.l10n_py_ncm_code:
                     errors.append(
                         _("El producto %s no tiene código NCM") % line.product_id.name
+                    )
+            # "Gravado parcial" (iAfecIVA=4) no tiene, hoy, ningún cálculo
+            # real de la proporción gravada/exenta (dPropIVA) -- generar
+            # el DE con este tipo emitiría un dPropIVA incorrecto de forma
+            # silenciosa. Falla alto en vez de emitir un dato fiscal
+            # incorrecto: ver _prepare_invoice_lines/dPropIVA.
+            for tax in line.tax_ids:
+                if tax.l10n_py_iva_affectation == "4":
+                    errors.append(
+                        _(
+                            "El producto %(product)s usa el impuesto "
+                            "'%(tax)s' con afectación IVA 'Gravado "
+                            "parcial', que este módulo todavía no sabe "
+                            "calcular (no existe cálculo real de la "
+                            "proporción gravada/exenta). Use otro tipo de "
+                            "afectación o configure el cálculo antes de "
+                            "generar el documento electrónico.",
+                            product=line.product_id.name,
+                            tax=tax.name,
+                        )
                     )
 
         # Validar requisitos por tipo de documento (F03-F07)
@@ -1175,7 +1553,7 @@ class AccountMove(models.Model):
 
         if self.l10n_py_edi_status not in ["error", "rejected"]:
             raise UserError(
-                _("Solo se pueden reintentar documentos " "con error o rechazados")
+                _("Solo se pueden reintentar documentos con error o rechazados")
             )
 
         return self.action_send_edi()

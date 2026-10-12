@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Operations sub-menu -->
+    <menuitem
+        id="menu_maquila_operations"
+        name="Operations"
+        parent="l10n_py_maquila_base.menu_maquila_root"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_maquila_admissions"
+        name="Admissions"
+        parent="menu_maquila_operations"
+        action="action_maquila_admission"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_maquila_exports"
+        name="Exports"
+        parent="menu_maquila_operations"
+        action="action_maquila_export"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_maquila_guarantees"
+        name="Guarantees"
+        parent="menu_maquila_operations"
+        action="action_maquila_guarantee"
+        sequence="30"
+    />
+
+    <!-- Fiscal sub-menu -->
+    <menuitem
+        id="menu_maquila_fiscal"
+        name="Fiscal"
+        parent="l10n_py_maquila_base.menu_maquila_root"
+        sequence="30"
+    />
+    <menuitem
+        id="menu_maquila_tum"
+        name="TUM Calculation"
+        parent="menu_maquila_fiscal"
+        action="action_maquila_tum_wizard"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_maquila_tax_credit"
+        name="Tax Credit (IVA)"
+        parent="menu_maquila_fiscal"
+        action="action_maquila_tax_credit_wizard"
+        sequence="20"
+    />
+</odoo>

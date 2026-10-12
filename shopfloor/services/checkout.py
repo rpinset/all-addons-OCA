@@ -737,17 +737,11 @@ class Checkout(Component):
             4. assign new package and skip `select_package` state
 
         """
-        carrier = self._get_carrier(picking)
-        if carrier:
-            # Validate against carrier
-            is_valid = self._package_type_good_for_carrier(package_type, carrier)
-        else:
-            is_valid = True
-        if carrier and not is_valid:
+        if not self._package_type_valid_for_carrier(picking, package_type):
             return self._response_for_select_line(
                 picking,
                 message=self.msg_store.package_type_invalid_for_carrier(
-                    package_type, carrier
+                    package_type, self._get_carrier(picking)
                 ),
             )
         message = None
@@ -1182,18 +1176,12 @@ class Checkout(Component):
     def _scan_package_action_from_package_type(
         self, picking, selected_lines, package_type, **kw
     ):
-        carrier = self._get_carrier(picking)
-        if carrier:
-            # Validate against carrier
-            is_valid = self._package_type_good_for_carrier(package_type, carrier)
-        else:
-            is_valid = True
-        if carrier and not is_valid:
+        if not self._package_type_valid_for_carrier(picking, package_type):
             return self._response_for_select_package(
                 picking,
                 selected_lines,
                 message=self.msg_store.package_type_invalid_for_carrier(
-                    package_type, carrier
+                    package_type, self._get_carrier(picking)
                 ),
             )
         return self._create_and_assign_new_package_type(
@@ -1208,22 +1196,13 @@ class Checkout(Component):
     def _get_carrier(self, picking):
         return picking.ship_carrier_id or picking.carrier_id
 
-    def _package_type_good_for_carrier(self, package_type, carrier):
+    def _package_type_valid_for_carrier(self, picking, package_type):
         actions = self._actions_for("packing")
-        return actions.package_type_valid_for_carrier(package_type, carrier)
+        return actions.package_type_valid_for_carrier(package_type, picking)
 
     def _get_available_package_type(self, picking):
-        model = self.env["stock.package.type"]
-        carrier = picking.ship_carrier_id or picking.carrier_id
-        if not carrier:
-            return model.search(
-                [("package_carrier_type", "=", False)],
-                order="name",
-            )
-        return model.search(
-            [("package_carrier_type", "=", carrier.delivery_type or "none")],
-            order="name",
-        )
+        actions = self._actions_for("packing")
+        return actions.available_package_types_for_picking(picking)
 
     def list_package_type(self, picking_id, selected_line_ids):
         """List available package type for given picking.

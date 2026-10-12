@@ -1,0 +1,44 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_vertical_lift_kardex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-10 09:46+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: stock_vertical_lift_kardex
+#. odoo-python
+#: code:addons/stock_vertical_lift_kardex/models/stock_location.py:0
+msgid ""
+"Cell location %(loc)s has no position. Check if the dimensions of tray "
+"%(tray)s are properly set in the tray type."
+msgstr ""
+"Lokacija celice %(loc)s nima določenega položaja. Preverite, ali so mere "
+"pladnja %(tray)s pravilno nastavljene v tipu pladnja."
+
+#. module: stock_vertical_lift_kardex
+#: model:ir.model,name:stock_vertical_lift_kardex.model_stock_location
+msgid "Inventory Locations"
+msgstr "Lokacije inventarja"
+
+#. module: stock_vertical_lift_kardex
+#. odoo-python
+#: code:addons/stock_vertical_lift_kardex/models/stock_location.py:0
+msgid "Shuttle tray %s has no level. Please fix the configuration"
+msgstr "Pladenj dvigalnega modula %s nima določene ravni. Popravite nastavitve"
+
+#. module: stock_vertical_lift_kardex
+#: model:ir.model,name:stock_vertical_lift_kardex.model_vertical_lift_shuttle
+msgid "Vertical Lift Shuttle"
+msgstr "Dvigalni modul vertikalnega skladišča"

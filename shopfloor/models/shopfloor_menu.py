@@ -1,5 +1,6 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
 # Copyright 2024 ACSONE SA/NV (http://www.acsone.eu)
+# Copyright 2026 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 from odoo import _, api, exceptions, fields, models
 from odoo.tools.safe_eval import test_python_expr
@@ -660,3 +661,6 @@ class ShopfloorMenu(models.Model):
             )
             if msg:
                 raise exceptions.ValidationError(msg)
+
+    def _get_allowed_companies(self):
+        return self.picking_type_ids.company_id

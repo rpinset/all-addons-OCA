@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_l10n_py_libros_root"
+        name="Libros DNIT"
+        parent="account.menu_finance"
+        sequence="36"
+    />
+
+    <menuitem
+        id="menu_l10n_py_libro_ventas"
+        name="Ventas"
+        parent="menu_l10n_py_libros_root"
+        action="action_l10n_py_libro_ventas"
+        sequence="10"
+    />
+
+    <menuitem
+        id="menu_l10n_py_libro_compras"
+        name="Compras"
+        parent="menu_l10n_py_libros_root"
+        action="action_l10n_py_libro_compras"
+        sequence="20"
+    />
+
+    <menuitem
+        id="menu_l10n_py_libro_ingresos"
+        name="Ingresos"
+        parent="menu_l10n_py_libros_root"
+        action="action_l10n_py_libro_ingresos"
+        sequence="30"
+    />
+
+    <menuitem
+        id="menu_l10n_py_libro_egresos"
+        name="Egresos"
+        parent="menu_l10n_py_libros_root"
+        action="action_l10n_py_libro_egresos"
+        sequence="40"
+    />
+
+    <menuitem
+        id="menu_l10n_py_libro_generate_wizard"
+        name="Generar Libros"
+        parent="menu_l10n_py_libros_root"
+        action="action_l10n_py_libro_generate_wizard"
+        sequence="5"
+    />
+</odoo>

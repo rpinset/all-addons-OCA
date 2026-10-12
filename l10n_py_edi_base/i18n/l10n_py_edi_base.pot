@@ -1005,6 +1005,16 @@ msgstr ""
 #. module: l10n_py_edi_base
 #. odoo-python
 #: code:addons/l10n_py_edi_base/models/account_move.py:0
+msgid ""
+"El producto %(product)s usa el impuesto '%(tax)s' con afectación IVA "
+"'Gravado parcial', que este módulo todavía no sabe calcular (no existe "
+"cálculo real de la proporción gravada/exenta). Use otro tipo de afectación o"
+" configure el cálculo antes de generar el documento electrónico."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
 msgid "El producto %s no tiene código NCM"
 msgstr ""
 
@@ -1181,6 +1191,22 @@ msgstr ""
 #. module: l10n_py_edi_base
 #: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.kude_report_template
 msgid "Exenta"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+msgid ""
+"Exportación en moneda extranjera requiere tipo de cambio "
+"(l10n_py_exchange_rate) mayor a cero."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+msgid ""
+"Exportación: la dirección del receptor del exterior (dDirRec) es "
+"obligatoria."
 msgstr ""
 
 #. module: l10n_py_edi_base
@@ -1426,6 +1452,12 @@ msgid "L10N Py Doc Type Code"
 msgstr ""
 
 #. module: l10n_py_edi_base
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_bank_statement_line__l10n_py_is_export
+#: model:ir.model.fields,field_description:l10n_py_edi_base.field_account_move__l10n_py_is_export
+msgid "L10N Py Is Export"
+msgstr ""
+
+#. module: l10n_py_edi_base
 #. odoo-python
 #: code:addons/l10n_py_edi_base/models/account_move.py:0
 msgid "La dirección del cliente es obligatoria"
@@ -1456,6 +1488,14 @@ msgstr ""
 msgid ""
 "La inutilización permite informar al SIFEN que ciertos números\n"
 "                de la faja autorizada no serán utilizados."
+msgstr ""
+
+#. module: l10n_py_edi_base
+#. odoo-python
+#: code:addons/l10n_py_edi_base/models/account_move.py:0
+msgid ""
+"La línea '%s' no tiene ningún impuesto: cada ítem del DE debe declarar su "
+"afectación de IVA (gravado, exonerado, exento o gravado parcial)."
 msgstr ""
 
 #. module: l10n_py_edi_base
@@ -2367,6 +2407,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_delivery__transport_id
 #: model:ir.model.fields,field_description:l10n_py_edi_base.field_l10n_py_transport_vehicle__transport_id
 msgid "Transporte"
+msgstr ""
+
+#. module: l10n_py_edi_base
+#: model_terms:ir.ui.view,arch_db:l10n_py_edi_base.view_move_form_edi
+msgid "Transporte (Exportación)"
 msgstr ""
 
 #. module: l10n_py_edi_base

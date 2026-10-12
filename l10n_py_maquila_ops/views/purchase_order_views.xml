@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_purchase_order_form_maquila" model="ir.ui.view">
+        <field name="name">purchase.order.form.maquila</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='purchase_delivery_invoice']" position="before">
+                <page string="Maquila" name="maquila">
+                    <group>
+                        <group>
+                            <field name="l10n_py_maquila_program_id" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_purchase_order_line_form_maquila" model="ir.ui.view">
+        <field name="name">purchase.order.line.form.maquila</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']/list/field[@name='price_unit']"
+                position="before"
+            >
+                <field name="l10n_py_origin_type" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

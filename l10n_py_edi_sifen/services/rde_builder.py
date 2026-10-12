@@ -475,7 +475,17 @@ class RDeBuilder:
             precio = Decimal(str(item_data.get("precioUnitario", 0)))
             cantidad = Decimal(str(item_data.get("cantidad", 1)))
             total_item = precio * cantidad
-            base_exenta = total_item if iva_tipo == 3 else Decimal("0")
+            # NT N° 13 al MT v150 (E737, validación 283 / código 1921):
+            # dBasExe = 0 si E731 = 1, 2 o 3; solo el Gravado Parcial (4)
+            # lleva base exenta, por la fórmula oficial. Exento/exonerado
+            # fluyen únicamente a los totales (dSubExe / dSubExo).
+            if iva_tipo == 4:
+                prop_iva = Decimal(str(item_data.get("ivaBase", 100)))
+                base_exenta = (
+                    Decimal("100") * total_item * (Decimal("100") - prop_iva)
+                ) / (Decimal("10000") + (Decimal(str(iva_rate)) * prop_iva))
+            else:
+                base_exenta = Decimal("0")
 
             item = TgCamItem(
                 dCodInt=item_data.get("codigo", ""),
@@ -510,6 +520,7 @@ class RDeBuilder:
         totales = self.data.get("totales", {})
         return TgTotSub(
             dSubExe=Decimal(str(totales.get("totalExento", 0))),
+            dSubExo=Decimal(str(totales.get("totalExonerado", 0))),
             dSub5=Decimal(str(totales.get("totalGravado5", 0))),
             dSub10=Decimal(str(totales.get("totalGravado10", 0))),
             dTotOpe=Decimal(str(totales.get("totalOperacion", 0))),

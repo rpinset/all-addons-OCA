@@ -108,7 +108,7 @@ class AssociatedDocument(models.Model):
                     )
                 if rec.cdc and (len(rec.cdc) != 44 or not rec.cdc.isdigit()):
                     raise ValidationError(
-                        _("El CDC debe contener exactamente 44 dígitos " "numéricos.")
+                        _("El CDC debe contener exactamente 44 dígitos numéricos.")
                     )
             else:
                 if rec.cdc:
@@ -169,7 +169,7 @@ class AssociatedDocument(models.Model):
             if rec.association_type == "3":
                 if not rec.constancia_type or not rec.constancia_number:
                     raise ValidationError(
-                        _("Constancia electrónica: tipo y número son " "obligatorios.")
+                        _("Constancia electrónica: tipo y número son obligatorios.")
                     )
             else:
                 if rec.constancia_type or rec.constancia_number:

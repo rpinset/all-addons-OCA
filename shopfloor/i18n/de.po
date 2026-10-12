@@ -1030,8 +1030,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 msgid ""
-"Package type '%(package_type_name)s' is not allowed for carrier %"
-"(carrier_name)s.or carrier %(carrier_name)s."
+"Package type '%(package_type_name)s' is not allowed for delivery method %"
+"(carrier_name)s."
 msgstr ""
 
 #. module: shopfloor

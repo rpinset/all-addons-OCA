@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_maquila_waste_user,l10n_py.maquila.waste user,model_l10n_py_maquila_waste,l10n_py_maquila_base.group_maquila_user,1,0,0,0
+access_maquila_waste_manager,l10n_py.maquila.waste manager,model_l10n_py_maquila_waste,l10n_py_maquila_base.group_maquila_manager,1,1,1,1
+access_maquila_van_wizard_user,l10n_py.maquila.van.wizard user,model_l10n_py_maquila_van_wizard,l10n_py_maquila_base.group_maquila_user,1,1,1,0
+access_maquila_van_wizard_manager,l10n_py.maquila.van.wizard manager,model_l10n_py_maquila_van_wizard,l10n_py_maquila_base.group_maquila_manager,1,1,1,1

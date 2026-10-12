@@ -1,0 +1,1363 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_maquila_ops
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_guarantee.py:0
+msgid ""
+"A per-operation guarantee covers a single admission. Use a global guarantee "
+"for several operations."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/sale_order.py:0
+msgid "A reason is required to override the domestic sales cap."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__credit_account_id
+msgid "Account to credit for TUM liability"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__debit_account_id
+msgid "Account to debit for TUM expense"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_needaction
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_needaction
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__action_type
+msgid "Action Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__state__active
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Active"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_exception_decoration
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_exception_decoration
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_state
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_state
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_type_icon
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_type_icon
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__admission_id
+msgid "Admission"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__admission_count
+msgid "Admission Count"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.act_window,name:l10n_py_maquila_ops.action_maquila_admission
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__admission_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__admission_ids
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_admissions
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_program_form_inherit_ops
+msgid "Admissions"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "Admit"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__state__admitted
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+msgid "Admitted"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__amount
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__amount
+msgid "Amount"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__amount_available
+msgid "Amount Available"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__amount_used
+msgid "Amount Used"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tax_credit_wizard.py:0
+msgid "Amount must be greater than zero."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tum_wizard_form
+msgid "Amounts"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_arrival
+msgid "Arrival Declaration Date"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_sale_order_form_maquila
+msgid "Art. 18 domestic sales cap"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/sale_order.py:0
+msgid "Art. 18 domestic sales cap overridden by %(user)s. Reason: %(reason)s"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__guarantee_type__bank
+msgid "Bank Guarantee"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__issuer
+msgid "Bank or insurance company"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__amount_cif
+msgid "CIF Amount"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__cnime_certificate
+msgid "CNIME Certificate"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid "CNIME certificate is required for admission."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tax_credit_wizard_form
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tum_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__guarantee_type__deposit
+msgid "Cash Deposit"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__origin_certificate
+msgid "Certificate of Origin"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "Close"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__state__closed
+msgid "Closed"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_tax_credit_wizard__action_type__compensate
+msgid "Compensate"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tum_wizard_form
+msgid "Compute"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Confirm"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_export__state__confirmed
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+msgid "Confirmed"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__good_type__container_box
+msgid "Containers and Trailer Boxes"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"Containers and trailer boxes stay at most 12 months from the arrival "
+"declaration and cannot be extended (Ley 7547/2025 Art. 14)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_guarantee
+msgid "Create a new customs guarantee"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_export
+msgid "Create a new export dispatch"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_admission
+msgid "Create a new temporary admission"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__credit_account_id
+msgid "Credit Account"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__currency_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__guarantee_id
+msgid "Customs Guarantee"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "DE-2026-00001"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "DI-2026-00123"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__date_end
+msgid "Date End"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__date_export
+msgid "Date Export"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__date_start
+msgid "Date Start"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_arrival
+msgid ""
+"Date of the arrival declaration (declaracion de llegada). Starts the "
+"12-month stay of containers and trailer boxes (Ley 7547/2025 Art. 14)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_deadline
+msgid "Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__debit_account_id
+msgid "Debit Account"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__scope
+msgid ""
+"Decreto 5714/2026 Art. 28: the DNIT may authorize global guarantees covering"
+" one or more customs operations. A per-operation guarantee covers a single "
+"admission. Form, modalities and validity follow art. 293 of the Customs Code"
+" (Ley 2422/2004) and its regulations; they are not validated by this module."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Dispatch"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__name
+msgid "Dispatch Number"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__name
+msgid "Dispatch number (e.g. DI-2026-00123)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_export__state__dispatched
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+msgid "Dispatched"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__account_payment__l10n_py_remittance_type__dividends
+msgid "Dividends"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/sale_order.py:0
+msgid ""
+"Domestic sales for program %(program)s would exceed the %(pct)s%% cap of "
+"prior-year exports (cap: %(cap).2f %(cur)s)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__state__draft
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_export__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+msgid "Draft"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tax_credit_wizard_form
+msgid "Execute"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__state__expired
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__state__expired
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Expired"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_cap_override
+msgid ""
+"Explicit exception to the Art. 18 domestic sales cap of pure maquila. Only "
+"Maquila managers can set it; a reason is required and the use is logged in "
+"the chatter when the order is confirmed."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__export_id
+msgid "Export"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__export_count
+msgid "Export Count"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__export_invoice_amount
+msgid "Export Invoice Amount"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_export.py:0
+msgid ""
+"Export must be linked to at least one source admission for traceability."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.act_window,name:l10n_py_maquila_ops.action_maquila_export
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__export_ids
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_exports
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_program_form_inherit_ops
+msgid "Exports"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "Extend 12 Months"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_extended
+msgid "Extended Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__fob_value
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__fob_value
+msgid "FOB Value"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_fiscal
+msgid "Fiscal"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:account.fiscal.position,note:l10n_py_maquila_ops.fiscal_position_maquila_export
+msgid ""
+"Fiscal position for export of finished goods under the Maquila\n"
+"            regime (Ley 7547/2025). Exports are exempt from IVA and subject\n"
+"            to TUM 1%."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:account.fiscal.position,note:l10n_py_maquila_ops.fiscal_position_maquila_admission
+msgid ""
+"Fiscal position for temporary admission of goods under the Maquila\n"
+"            regime (Ley 7547/2025). Imports under this position are exempt from\n"
+"            customs duties and taxes."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_type_icon
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_type_icon
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tum_wizard_form
+msgid "Generate Entry"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__scope__global
+msgid "Global"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__good_type
+msgid "Good Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Group By"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__guarantee_count
+msgid "Guarantee Count"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_form
+msgid "Guarantee Name"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__guarantee_type
+msgid "Guarantee Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.act_window,name:l10n_py_maquila_ops.action_maquila_guarantee
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_program__guarantee_ids
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_guarantees
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_program_form_inherit_ops
+msgid "Guarantees"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__has_message
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__has_message
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tax_credit_wizard.py:0
+msgid "IVA Credit %(action_type)s - %(program)s - %(date)s"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_exception_icon
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_exception_icon
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_exception_icon
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_exception_icon
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_needaction
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_needaction
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_has_error
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_has_error
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_admission
+msgid "Import Date"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__purchase_order_line__l10n_py_origin_type__imported
+msgid "Imported (Other)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__state__in_production
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+msgid "In Production"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__incoterm
+msgid "Incoterm"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"Insufficient guarantee. Available: %(available)s, Required: %(required)s"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__guarantee_type__insurance
+msgid "Insurance Bond"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__account_payment__l10n_py_remittance_type__interest
+msgid "Interest"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_is_follower
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_is_follower
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__issuer
+msgid "Issuer"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_sale_order__l10n_py_is_maquila_export
+msgid "L10N Py Is Maquila Export"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_type
+msgid ""
+"Legal modalities under Ley 7547/2025 (Arts. 3, 25-27). 'abrigo' is kept for "
+"the textile/garment rubro."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__good_type
+msgid ""
+"Ley 7547/2025 Art. 14 stay limits per type of good:\n"
+"- Raw materials and inputs: 12 months from the import date, extendable once for up to the same period (biministerial resolution).\n"
+"- Containers and trailer boxes: 12 months maximum from the arrival declaration; no extension.\n"
+"- Other goods (machinery, tools, equipment): while the Maquila program remains in force."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__date_deadline
+msgid ""
+"Ley 7547/2025 Art. 14: 12 months from the import date (raw materials and "
+"inputs), 12 months from the arrival declaration (containers and trailer "
+"boxes), or the program benefit expiry (other goods)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__line_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__line_ids
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Lines"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__lot_id
+msgid "Lot/Serial"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__good_type__capital_good
+msgid "Machinery, Tools and Other Goods"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_guarantee
+msgid ""
+"Manage customs guarantees (bank, insurance, deposit)\n"
+"                for Maquila temporary admissions."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_purchase_order_form_maquila
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_sale_order_form_maquila
+msgid "Maquila"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:account.fiscal.position,name:l10n_py_maquila_ops.fiscal_position_maquila_admission
+msgid "Maquila - Admision Temporaria"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:account.fiscal.position,name:l10n_py_maquila_ops.fiscal_position_maquila_export
+msgid "Maquila - Exportacion Exenta"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_stock_picking__l10n_py_maquila_admission_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "Maquila Admission"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_admission_line
+msgid "Maquila Admission Line"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+msgid "Maquila Admissions"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_guarantee
+msgid "Maquila Customs Guarantee"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_payment__l10n_py_is_maquila_exempt
+msgid "Maquila Exempt"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_bank_statement_line__l10n_py_is_maquila_export
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_move__l10n_py_is_maquila_export
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_stock_picking__l10n_py_maquila_export_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Maquila Export"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_export
+msgid "Maquila Export Dispatch"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_export_line
+msgid "Maquila Export Line"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+msgid "Maquila Exports"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_form
+msgid "Maquila Guarantee"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Maquila Guarantees"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_program
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_bank_statement_line__l10n_py_maquila_program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_move__l10n_py_maquila_program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_payment__l10n_py_maquila_program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_purchase_order__l10n_py_maquila_program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_program_id
+msgid "Maquila Program"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tax_credit_wizard_form
+msgid "Maquila Tax Credit (IVA)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_tax_credit_wizard
+msgid "Maquila Tax Credit (IVA) Wizard"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_admission
+msgid "Maquila Temporary Admission"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_type
+msgid "Maquila Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.server,name:l10n_py_maquila_ops.ir_cron_maquila_guarantee_expiry_ir_actions_server
+msgid "Maquila: expire customs guarantees"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__company_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__company_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__company_id
+msgid "Maquiladora"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_has_error
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_has_error
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__guarantee_type__mortgage
+msgid "Mortgage"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__my_activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__my_activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__ncm_code
+msgid "NCM Code"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__name
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__purchase_order_line__l10n_py_origin_type__national_mercosul
+msgid "National (Mercosul)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__purchase_order_line__l10n_py_origin_type__national_py
+msgid "National (Paraguay)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_date_deadline
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_summary
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_summary
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_type_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_type_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tax_credit_wizard.py:0
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tum_wizard.py:0
+msgid "No miscellaneous journal found."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_needaction_counter
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_needaction_counter
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__message_has_error_counter
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__message_has_error_counter
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/sale_order.py:0
+msgid "Only Maquila managers can override the domestic sales cap."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid "Only admitted goods can have their deadline extended."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_operations
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_program_form_inherit_ops
+msgid "Operations"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_purchase_order_line__l10n_py_origin_type
+msgid "Origin Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_cap_override
+msgid "Override Domestic Sales Cap"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_sale_order__l10n_py_maquila_cap_override_reason
+msgid "Override Reason"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_account_payment
+msgid "Payments"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__scope__operation
+msgid "Per Operation"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__period_end
+msgid "Period End"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__period_start
+msgid "Period Start"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__picking_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__picking_ids
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Pickings"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tax_credit_wizard.py:0
+msgid "Please select a partner for the transfer."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tax_credit_wizard.py:0
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tum_wizard.py:0
+msgid "Please select both debit and credit accounts."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__product_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__product_id
+msgid "Product"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__program_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__program_id
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Program"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/sale_order.py:0
+msgid ""
+"Program %(program)s (pure maquila) has no exports in the last year, so the "
+"Art. 18 domestic sales cap is zero and domestic sales are not allowed. A "
+"Maquila manager can override this explicitly on the order."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__qty_consumed
+msgid "Qty Consumed"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__qty_remaining
+msgid "Qty Remaining"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__quantity
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_admission__good_type__raw_material_input
+msgid "Raw Materials and Inputs"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_export
+msgid "Register export dispatches of finished goods under the Maquila regime."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.actions.act_window,help:l10n_py_maquila_ops.action_maquila_admission
+msgid "Register temporary admission of goods under the Maquila regime."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_guarantee__state__released
+msgid "Released"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_account_payment__l10n_py_remittance_type
+msgid "Remittance Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_form
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_user_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_user_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__account_payment__l10n_py_remittance_type__royalties
+msgid "Royalties"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__scope
+msgid "Scope"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__admission_ids
+msgid "Source Admissions"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_form
+msgid "Start Production"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__state
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__state
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__state
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_admission_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_export_search
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "State"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_state
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_state
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__supplier_id
+msgid "Supplier"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_tum_wizard_form
+msgid "TUM 1% Calculation"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_l10n_py_maquila_tum_wizard
+msgid "TUM 1% Calculation Wizard"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tum_wizard.py:0
+msgid "TUM 1%% - %(program)s - %(period_end)s"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__tum_amount
+msgid "TUM Amount"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__tum_base
+msgid "TUM Base"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.act_window,name:l10n_py_maquila_ops.action_maquila_tum_wizard
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_tum
+msgid "TUM Calculation"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__debit_account_id
+msgid "TUM Expense Account"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__credit_account_id
+msgid "TUM Payable Account"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__tum_rate
+msgid "TUM Rate %"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/wizard/maquila_tum_wizard.py:0
+msgid "TUM amount is zero. Nothing to generate."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.actions.act_window,name:l10n_py_maquila_ops.action_maquila_tax_credit_wizard
+#: model:ir.ui.menu,name:l10n_py_maquila_ops.menu_maquila_tax_credit
+msgid "Tax Credit (IVA)"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__purchase_order_line__l10n_py_origin_type__temporary_admission
+msgid "Temporary Admission"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid "The admission has no deadline to extend."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"The arrival declaration date is required to admit containers and trailer "
+"boxes (Ley 7547/2025 Art. 14)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"The guarantee %(guarantee)s is not active on the admission date (Decreto "
+"5714/2026 Art. 28)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"The guarantee %(guarantee)s is per operation and already covers another "
+"admission. Use a global guarantee for several operations."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid ""
+"These goods may stay while the Maquila program is in force; there is no "
+"admission deadline to extend (Ley 7547/2025 Art. 14)."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#. odoo-python
+#: code:addons/l10n_py_maquila_ops/models/maquila_admission.py:0
+msgid "This admission has already been extended once."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__admission_ids
+msgid "Traceability to source temporary admissions"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model,name:l10n_py_maquila_ops.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tax_credit_wizard__transfer_partner_id
+msgid "Transfer To"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields.selection,name:l10n_py_maquila_ops.selection__l10n_py_maquila_tax_credit_wizard__action_type__transfer
+msgid "Transfer to Third Party"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_search
+msgid "Type"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__activity_exception_decoration
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__activity_exception_decoration
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission_line__uom_id
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export_line__uom_id
+msgid "Unit of Measure"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model_terms:ir.ui.view,arch_db:l10n_py_maquila_ops.view_maquila_guarantee_form
+msgid "Usage"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__van_amount
+msgid "VAN Amount"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_tum_wizard__van_amount
+msgid ""
+"Value added in the national territory (Ley 7547/2025 Art. 37). Enter it "
+"manually; when l10n_py_maquila_mrp is installed, its VAN wizard computes it "
+"from the bill of materials."
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_admission__website_message_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_export__website_message_ids
+#: model:ir.model.fields,field_description:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_py_maquila_ops
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_admission__website_message_ids
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_export__website_message_ids
+#: model:ir.model.fields,help:l10n_py_maquila_ops.field_l10n_py_maquila_guarantee__website_message_ids
+msgid "Website communication history"
+msgstr ""

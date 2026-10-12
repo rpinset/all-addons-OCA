@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-07 17:46+0000\n"
+"PO-Revision-Date: 2026-10-09 12:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -139,23 +139,23 @@ msgstr "Genere codice"
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_request
 msgid "Code Request"
-msgstr ""
+msgstr "Richiesta codice"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request_label__color
 msgid "Color"
-msgstr ""
+msgstr "Colore"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_comment
 msgid "Comment"
-msgstr ""
+msgstr "Commento"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__comment_count
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__comment_count
 msgid "Comment Count"
-msgstr ""
+msgstr "Conteggio commenti"
 
 #. module: vcp_management
 #. odoo-python
@@ -169,39 +169,39 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_partner_detail
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_request_form_view
 msgid "Comments"
-msgstr ""
+msgstr "Commenti"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__commits
 msgid "Commits"
-msgstr ""
+msgstr "Commit"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__company
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__user_id
 msgid "Contributor"
-msgstr ""
+msgstr "Contributore"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__created_at
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__created_at
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__created_at
 msgid "Created At"
-msgstr ""
+msgstr "Creato al"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__created_pr_count
 msgid "Created Pr Count"
-msgstr ""
+msgstr "Conteggio PR create"
 
 #. module: vcp_management
 #. odoo-python
@@ -210,7 +210,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_res_users__vcp_created_requests
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_partner_detail
 msgid "Created Requests"
-msgstr ""
+msgstr "Richieste create"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__create_uid
@@ -229,7 +229,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__create_uid
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_branch__create_date
@@ -248,27 +248,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_rule_information__create_date
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__date
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__default_repository_scheduled_branch_update
 msgid "Default Repository Scheduled Branch Update"
-msgstr ""
+msgstr "Aggiornamento branch schedulato repository predefinito"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__default_repository_scheduled_information_update
 msgid "Default Repository Scheduled Information Update"
-msgstr ""
+msgstr "Aggiornamento informazioni schedulato repository predefinito"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_rule__paths
 msgid "Define with pathspec especification"
-msgstr ""
+msgstr "Definito con speficica pathspec"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__deletions
@@ -778,7 +778,7 @@ msgstr "Regole elaborazione"
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_request_menu
 msgid "Pull Requests"
-msgstr "Pull Requests"
+msgstr "Pull requests"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_platform__fetch_repository_branch_pattern
@@ -1022,50 +1022,50 @@ msgstr "Conteggio totale"
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_host__type_id
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: vcp_management
 #. odoo-python
 #: code:addons/vcp_management/models/vcp_repository_branch.py:0
 msgid "Unable to create a folder in '%(local_path)s'."
-msgstr ""
+msgstr "Impossibile creare una cartella in '%(local_path)s'."
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Update Branches"
-msgstr ""
+msgstr "Aggiorna branch"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_platform_form_view
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Update Information"
-msgstr ""
+msgstr "Aggiorna informazioni"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_platform__update_interval_days
 msgid "Update Interval Days"
-msgstr ""
+msgstr "Giorni intervallo aggiornamento"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository_branch__update_rule_processing_date
 msgid "Update Rule Processing Date"
-msgstr ""
+msgstr "Data elaborazione regola aggiornamento"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_comment__updated_at
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__updated_at
 msgid "Updated At"
-msgstr ""
+msgstr "Aggiornato al"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_request__url
 msgid "Url"
-msgstr ""
+msgstr "URL"
 
 #. module: vcp_management
 #: model:ir.model.fields,help:vcp_management.field_vcp_user__sync_image_to_partner
 msgid "Use the image user as image on the partner"
-msgstr ""
+msgstr "Usa l'immagine utente come immagine sul partner"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_user
@@ -1073,115 +1073,115 @@ msgstr ""
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_management_report__user_id
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_review__user_id
 msgid "User"
-msgstr ""
+msgstr "Utente"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_user__user_update_date
 msgid "User Update Date"
-msgstr ""
+msgstr "Data aggiornamento utente"
 
 #. module: vcp_management
 #: model:ir.actions.act_window,name:vcp_management.vcp_user_act_window
 #: model:ir.ui.menu,name:vcp_management.vcp_user_menu
 msgid "Users"
-msgstr ""
+msgstr "Utenti"
 
 #. module: vcp_management
 #: model:ir.module.category,name:vcp_management.module_category_vcp
 msgid "VCP"
-msgstr ""
+msgstr "VCP"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_host
 msgid "VCP Host"
-msgstr ""
+msgstr "Host VCP"
 
 #. module: vcp_management
 #: model:res.groups,name:vcp_management.group_vcp_manager
 msgid "VCP Manager"
-msgstr ""
+msgstr "Responsabile VCP"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_platform
 msgid "VCP Platform"
-msgstr ""
+msgstr "Piattaforma VCP"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_platform_key
 msgid "VCP Platform API Key"
-msgstr ""
+msgstr "Chiave API piattaforma VCP"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_management_report
 msgid "VCP Statistics"
-msgstr ""
+msgstr "Statistiche VCP"
 
 #. module: vcp_management
 #: model:res.groups,name:vcp_management.group_vcp_user
 msgid "VCP User"
-msgstr ""
+msgstr "Utente VCP"
 
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_repository_branch_rule_process_ir_actions_server
 msgid "VCP: Branch Rule Process"
-msgstr ""
+msgstr "VCP: processo regola branch"
 
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_repository_branch_update_ir_actions_server
 msgid "VCP: Branch Update"
-msgstr ""
+msgstr "VCP: aggiornamento branch"
 
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_platform_update_ir_actions_server
 msgid "VCP: Platform Update"
-msgstr ""
+msgstr "VCP: aggiornamento piattaforma"
 
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_repository_update_ir_actions_server
 msgid "VCP: Repository Update"
-msgstr ""
+msgstr "VCP: aggiornamento piattaforma"
 
 #. module: vcp_management
 #: model:ir.actions.server,name:vcp_management.cron_user_update_ir_actions_server
 msgid "VCP: User Update"
-msgstr ""
+msgstr "VCP: aggiornamento utente"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_host_type
 msgid "Vcp Host Type"
-msgstr ""
+msgstr "Tipo host VCP"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_res_partner__vcp_organization_ids
 #: model:ir.model.fields,field_description:vcp_management.field_res_users__vcp_organization_ids
 msgid "Vcp Organization"
-msgstr ""
+msgstr "Organizzazione VCP"
 
 #. module: vcp_management
 #: model:ir.model,name:vcp_management.model_vcp_request_label
 msgid "Vcp Request Label"
-msgstr ""
+msgstr "Etichetta richiesta VCP"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_res_partner__vcp_user_ids
 #: model:ir.model.fields,field_description:vcp_management.field_res_users__vcp_user_ids
 msgid "Vcp User"
-msgstr ""
+msgstr "Utente VCP"
 
 #. module: vcp_management
 #: model:ir.ui.menu,name:vcp_management.vcp_main_menu
 msgid "Version Control Platform"
-msgstr ""
+msgstr "Piattaforma controllo versione"
 
 #. module: vcp_management
 #: model_terms:ir.ui.view,arch_db:vcp_management.vcp_repository_form_view
 msgid "Watchers"
-msgstr ""
+msgstr "Osservatori"
 
 #. module: vcp_management
 #: model:ir.model.fields,field_description:vcp_management.field_vcp_repository__watchers_count
 msgid "Watchers Count"
-msgstr ""
+msgstr "Conteggio osservatori"
 
 #. module: vcp_management
 #. odoo-python
@@ -1190,3 +1190,5 @@ msgid ""
 "You can not delete labels that are related to Requests. You should first "
 "delete the related requests."
 msgstr ""
+"Non è possibile eliminare le etichette associate alle richieste. È "
+"necessario eliminare prima le richieste corrispondenti."

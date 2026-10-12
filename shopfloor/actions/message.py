@@ -984,8 +984,8 @@ class MessageAction(Component):
         return {
             "message_type": "error",
             "body": _(
-                "Package type '%(package_type_name)s' is not allowed for carrier "
-                "%(carrier_name)s.or carrier %(carrier_name)s.",
+                "Package type '%(package_type_name)s' is not allowed for "
+                "delivery method %(carrier_name)s.",
                 package_type_name=package_type.name if package_type else _("No value"),
                 carrier_name=carrier.name,
             ),

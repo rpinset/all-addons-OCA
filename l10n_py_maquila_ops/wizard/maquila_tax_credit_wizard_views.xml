@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Tax Credit Wizard Form -->
+    <record id="view_maquila_tax_credit_wizard_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.tax.credit.wizard.form</field>
+        <field name="model">l10n_py.maquila.tax.credit.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Maquila Tax Credit (IVA)">
+                <group>
+                    <group>
+                        <field name="program_id" />
+                        <field name="action_type" />
+                        <field
+                            name="transfer_partner_id"
+                            invisible="action_type != 'transfer'"
+                            required="action_type == 'transfer'"
+                        />
+                    </group>
+                    <group>
+                        <field name="currency_id" groups="base.group_multi_currency" />
+                        <field name="amount" />
+                        <field name="debit_account_id" />
+                        <field name="credit_account_id" />
+                    </group>
+                </group>
+                <footer>
+                    <button
+                        name="action_execute"
+                        string="Execute"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tax Credit Wizard Action -->
+    <record id="action_maquila_tax_credit_wizard" model="ir.actions.act_window">
+        <field name="name">Tax Credit (IVA)</field>
+        <field name="res_model">l10n_py.maquila.tax.credit.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

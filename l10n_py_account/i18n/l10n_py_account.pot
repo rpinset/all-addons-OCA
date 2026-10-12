@@ -29,6 +29,11 @@ msgid "Activos"
 msgstr ""
 
 #. module: l10n_py_account
+#: model:ir.model.fields,field_description:l10n_py_account.field_account_tax__l10n_py_iva_affectation
+msgid "Afectación IVA (SIFEN)"
+msgstr ""
+
+#. module: l10n_py_account
 #: model_terms:ir.ui.view,arch_db:l10n_py_account.view_account_authorization_search
 msgid "Agrupar Por"
 msgstr ""
@@ -266,8 +271,18 @@ msgid "Estadísticas"
 msgstr ""
 
 #. module: l10n_py_account
+#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__3
+msgid "Exento"
+msgstr ""
+
+#. module: l10n_py_account
 #: model_terms:ir.ui.view,arch_db:l10n_py_account.view_move_form_py
 msgid "Exento (F003)"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__2
+msgid "Exonerado (Art. 100 Ley 6380/2019)"
 msgstr ""
 
 #. module: l10n_py_account
@@ -303,6 +318,28 @@ msgstr ""
 #. module: l10n_py_account
 #: model:ir.model.fields,help:l10n_py_account.field_account_authorization__date_to
 msgid "Fecha hasta la cual el timbrado es válido"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model,name:l10n_py_account.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model.fields,help:l10n_py_account.field_account_tax__l10n_py_iva_affectation
+msgid ""
+"Forma de afectación del IVA (iAfecIVA) para el DE SIFEN. Exportación usa "
+"Exonerado (2)."
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__1
+msgid "Gravado IVA"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__4
+msgid "Gravado parcial"
 msgstr ""
 
 #. module: l10n_py_account
@@ -508,7 +545,11 @@ msgstr ""
 #. module: l10n_py_account
 #: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_invoice_number
 #: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_invoice_number
-msgid "Número de factura según timbrado autorizado"
+msgid ""
+"Número de factura según timbrado autorizado. copy=False: una reversión (nota"
+" de crédito) no puede heredar el número del documento original — "
+"colisionaría con la restricción de unicidad por timbrado; el número propio "
+"se asigna en action_post."
 msgstr ""
 
 #. module: l10n_py_account
@@ -592,6 +633,12 @@ msgid "Subtotal exento/no gravado (SIFEN F003)"
 msgstr ""
 
 #. module: l10n_py_account
+#: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_exonerado
+#: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_amount_exonerado
+msgid "Subtotal exonerado (Art. 100 Ley 6380/2019, SIFEN dSubExo)"
+msgstr ""
+
+#. module: l10n_py_account
 #: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_subtotal_10
 #: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_amount_subtotal_10
 msgid "Subtotal gravado 10% — valor con impuesto incluido (SIFEN F005)"
@@ -601,6 +648,11 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_subtotal_5
 #: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_amount_subtotal_5
 msgid "Subtotal gravado 5% — valor con impuesto incluido (SIFEN F004)"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model,name:l10n_py_account.model_account_tax
+msgid "Tax"
 msgstr ""
 
 #. module: l10n_py_account
@@ -620,7 +672,10 @@ msgstr ""
 #. module: l10n_py_account
 #: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_authorization_id
 #: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_authorization_id
-msgid "Timbrado utilizado para esta factura"
+msgid ""
+"Timbrado utilizado para esta factura. La faja está autorizada por tipo de "
+"documento: una nota de crédito usa un timbrado de NC, no el de la factura "
+"original."
 msgstr ""
 
 #. module: l10n_py_account
@@ -664,6 +719,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_exempt
 #: model:ir.model.fields,field_description:l10n_py_account.field_account_move__l10n_py_amount_exempt
 msgid "Total Exento (F003)"
+msgstr ""
+
+#. module: l10n_py_account
+#: model:ir.model.fields,field_description:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_exonerado
+#: model:ir.model.fields,field_description:l10n_py_account.field_account_move__l10n_py_amount_exonerado
+msgid "Total Exonerado"
 msgstr ""
 
 #. module: l10n_py_account

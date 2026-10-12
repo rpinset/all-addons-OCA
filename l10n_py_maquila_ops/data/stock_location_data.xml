@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="stock_location_maquila" model="stock.location">
+        <field name="name">Maquila</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock.stock_location_stock" />
+    </record>
+
+    <record id="stock_location_maquila_admission" model="stock.location">
+        <field name="name">Admision Temporaria</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock_location_maquila" />
+    </record>
+
+    <record id="stock_location_maquila_production" model="stock.location">
+        <field name="name">Produccion</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock_location_maquila" />
+    </record>
+
+    <record id="stock_location_maquila_finished" model="stock.location">
+        <field name="name">Terminado</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock_location_maquila" />
+    </record>
+
+    <record id="stock_location_maquila_waste" model="stock.location">
+        <field name="name">Residuos</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock_location_maquila" />
+    </record>
+</odoo>

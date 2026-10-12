@@ -266,22 +266,11 @@ class ClusterPicking(Component):
         The returned package types are ordered by number of parcels then
         by name.
         """
-        model = self.env["stock.package.type"]
-        carrier = picking.ship_carrier_id or picking.carrier_id
-        wizard_obj = self.env["choose.delivery.package"]
-        delivery_type = (
-            carrier.delivery_type
-            if carrier.delivery_type not in ("fixed", False)
-            else "none"
-        )
-        wizard = wizard_obj.with_context(
-            current_package_carrier_type=delivery_type
-        ).new({"picking_id": picking.id})
-        if not carrier:
-            return model.browse()
-        return model.search(
-            wizard.package_type_domain,
-            order="number_of_parcels,name",
+        packing_action = self._actions_for("packing")
+        if not packing_action._get_carrier(picking):
+            return self.env["stock.package.type"].browse()
+        return packing_action.available_package_types_for_picking(
+            picking, order="number_of_parcels,name"
         )
 
     def _last_picked_line(self, picking) -> StockMoveLine:

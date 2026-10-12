@@ -11,15 +11,42 @@ class PackingAction(Component):
     _inherit = "shopfloor.process.action"
     _usage = "packing"
 
-    def package_type_valid_for_carrier(self, package_type, carrier):
-        return package_type.package_carrier_type in (
-            "none",
-            carrier.delivery_type,
-        )
+    def _delivery_type_for_carrier(self, carrier):
+        # "fixed" and "base_on_rule" are pricing rules, not real carrier integrations,
+        # so they have no package type restrictions, treat them as no carrier.
+        # See: odoo/src/addons/stock_delivery/models/stock_picking.py line 146-147
+        if not carrier:
+            return False
+        elif carrier.delivery_type in ("fixed", "base_on_rule", "pricelist"):
+            return "none"
+        return carrier.delivery_type
+
+    def _get_carrier(self, picking):
+        return picking.ship_carrier_id or picking.carrier_id
+
+    def _get_package_type_domain(self, picking):
+        carrier = self._get_carrier(picking)
+        wizard_obj = self.env["choose.delivery.package"]
+        delivery_type = self._delivery_type_for_carrier(carrier)
+        wizard = wizard_obj.with_context(
+            current_package_carrier_type=delivery_type
+        ).new({"picking_id": picking.id})
+        return wizard.package_type_domain
+
+    def package_type_valid_for_carrier(self, package_type, picking):
+        carrier = self._get_carrier(picking)
+        if not carrier:
+            return True
+        domain = self._get_package_type_domain(picking)
+        return bool(package_type.filtered_domain(domain))
 
     def create_delivery_package(self, carrier):
         default_package_type = self._get_default_package_type(carrier)
         return self.create_package_from_package_type(default_package_type)
+
+    def available_package_types_for_picking(self, picking, order="name"):
+        domain = self._get_package_type_domain(picking)
+        return self.env["stock.package.type"].search(domain, order=order)
 
     def _get_default_package_type(self, carrier):
         # TODO: refactor `delivery_[carrier_name]` modules

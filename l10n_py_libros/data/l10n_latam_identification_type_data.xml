@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Tipos de identificación adicionais (Tabla 3 DNIT) -->
+    <record id="it_diplomatico" model="l10n_latam.identification.type">
+        <field name="name">Diplomático</field>
+        <field name="description">Identificación Diplomática</field>
+        <field name="country_id" ref="base.py" />
+        <field name="sequence">50</field>
+    </record>
+
+    <record id="it_sin_nombre" model="l10n_latam.identification.type">
+        <field name="name">Sin Nombre</field>
+        <field name="description">Sin Nombre</field>
+        <field name="country_id" ref="base.py" />
+        <field name="sequence">60</field>
+    </record>
+
+    <record id="it_identificacion_tributaria" model="l10n_latam.identification.type">
+        <field name="name">Identificación Tributaria</field>
+        <field name="description">Identificación Tributaria (extranjero)</field>
+        <field name="country_id" ref="base.py" />
+        <field name="sequence">70</field>
+    </record>
+
+    <!-- Mapeamento Tabla 3 -->
+    <record
+        id="identification_type_map_ruc"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ruc" />
+        <field name="codigo_tabla3">11</field>
+    </record>
+
+    <record
+        id="identification_type_map_ci"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="l10n_latam_identification_type_id" ref="l10n_py_base.it_ci" />
+        <field name="codigo_tabla3">12</field>
+    </record>
+
+    <record
+        id="identification_type_map_pasaporte"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field
+            name="l10n_latam_identification_type_id"
+            ref="l10n_py_base.it_pasaporte"
+        />
+        <field name="codigo_tabla3">13</field>
+    </record>
+
+    <record
+        id="identification_type_map_carnet_residencia"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field
+            name="l10n_latam_identification_type_id"
+            ref="l10n_py_base.it_carnet_residencia"
+        />
+        <field name="codigo_tabla3">14</field>
+    </record>
+
+    <record
+        id="identification_type_map_sin_nombre"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="l10n_latam_identification_type_id" ref="it_sin_nombre" />
+        <field name="codigo_tabla3">15</field>
+    </record>
+
+    <record
+        id="identification_type_map_diplomatico"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field name="l10n_latam_identification_type_id" ref="it_diplomatico" />
+        <field name="codigo_tabla3">16</field>
+    </record>
+
+    <record
+        id="identification_type_map_identificacion_tributaria"
+        model="l10n_py.libro.identification.type.map"
+    >
+        <field
+            name="l10n_latam_identification_type_id"
+            ref="it_identificacion_tributaria"
+        />
+        <field name="codigo_tabla3">17</field>
+    </record>
+</odoo>

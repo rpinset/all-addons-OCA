@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="fiscal_position_maquila_admission" model="account.fiscal.position">
+        <field name="name">Maquila - Admision Temporaria</field>
+        <field name="auto_apply" eval="False" />
+        <field name="note">
+            Fiscal position for temporary admission of goods under the Maquila
+            regime (Ley 7547/2025). Imports under this position are exempt from
+            customs duties and taxes.
+        </field>
+    </record>
+
+    <record id="fiscal_position_maquila_export" model="account.fiscal.position">
+        <field name="name">Maquila - Exportacion Exenta</field>
+        <field name="auto_apply" eval="False" />
+        <field name="note">
+            Fiscal position for export of finished goods under the Maquila
+            regime (Ley 7547/2025). Exports are exempt from IVA and subject
+            to TUM 1%.
+        </field>
+    </record>
+</odoo>

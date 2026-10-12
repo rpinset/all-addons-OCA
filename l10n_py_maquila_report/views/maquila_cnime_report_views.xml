@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_maquila_cnime_report_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.cnime.report.form</field>
+        <field name="model">l10n_py.maquila.cnime.report</field>
+        <field name="arch" type="xml">
+            <form string="CNIME Report">
+                <header>
+                    <button
+                        name="action_generate"
+                        string="Generate"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'draft'"
+                    />
+                    <button
+                        name="action_validate"
+                        string="Validate"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'generated'"
+                    />
+                    <button
+                        name="action_submit"
+                        string="Submit"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'validated'"
+                    />
+                    <button
+                        name="action_draft"
+                        string="Reset to Draft"
+                        type="object"
+                        invisible="state in ['draft', 'submitted']"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,generated,validated,submitted"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="action_generate_simex_payload"
+                            string="Generate SIMEX Payload"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-cloud-upload"
+                            invisible="state not in ['validated', 'submitted']"
+                        />
+                    </div>
+                    <group>
+                        <group>
+                            <field name="program_id" />
+                            <field name="period_start" />
+                            <field name="period_end" />
+                            <field name="employment_count" />
+                        </group>
+                        <group>
+                            <field name="van_total" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="submission_date" />
+                            <field name="submission_protocol" />
+                            <field name="company_id" invisible="1" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Imports" name="imports">
+                            <field name="import_data" readonly="1" />
+                        </page>
+                        <page string="Exports" name="exports">
+                            <field name="export_data" readonly="1" />
+                        </page>
+                        <page string="Production" name="production">
+                            <field name="production_data" readonly="1" />
+                        </page>
+                        <page string="Waste" name="waste">
+                            <field name="waste_data" readonly="1" />
+                        </page>
+                        <page string="Stock" name="stock">
+                            <field name="stock_balance" readonly="1" />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_maquila_cnime_report_tree" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.cnime.report.tree</field>
+        <field name="model">l10n_py.maquila.cnime.report</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="program_id" />
+                <field name="period_start" />
+                <field name="period_end" />
+                <field name="van_total" />
+                <field name="currency_id" invisible="1" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-info="state == 'draft'"
+                    decoration-warning="state == 'generated'"
+                    decoration-success="state in ('validated', 'submitted')"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_maquila_cnime_report_search" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.cnime.report.search</field>
+        <field name="model">l10n_py.maquila.cnime.report</field>
+        <field name="arch" type="xml">
+            <search string="CNIME Reports">
+                <field name="program_id" />
+                <filter
+                    string="Draft"
+                    name="draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    string="Generated"
+                    name="generated"
+                    domain="[('state', '=', 'generated')]"
+                />
+                <filter
+                    string="Validated"
+                    name="validated"
+                    domain="[('state', '=', 'validated')]"
+                />
+                <filter
+                    string="Submitted"
+                    name="submitted"
+                    domain="[('state', '=', 'submitted')]"
+                />
+                <separator />
+                <group expand="0" string="Group By">
+                    <filter
+                        string="Program"
+                        name="group_program"
+                        context="{'group_by': 'program_id'}"
+                    />
+                    <filter
+                        string="State"
+                        name="group_state"
+                        context="{'group_by': 'state'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_maquila_cnime_report" model="ir.actions.act_window">
+        <field name="name">CNIME Reports</field>
+        <field name="res_model">l10n_py.maquila.cnime.report</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_maquila_cnime_report_search" />
+    </record>
+</odoo>
