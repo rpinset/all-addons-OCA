@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_sale_order_form_maquila" model="ir.ui.view">
+        <field name="name">sale.order.form.maquila</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='other_information']" position="before">
+                <page string="Maquila" name="maquila">
+                    <group>
+                        <group>
+                            <field name="l10n_py_maquila_program_id" />
+                            <field name="l10n_py_is_maquila_export" readonly="1" />
+                            <field name="l10n_py_maquila_type" invisible="1" />
+                        </group>
+                        <group
+                            string="Art. 18 domestic sales cap"
+                            invisible="l10n_py_maquila_type != 'pura'"
+                            groups="l10n_py_maquila_base.group_maquila_manager"
+                        >
+                            <field name="l10n_py_maquila_cap_override" />
+                            <field
+                                name="l10n_py_maquila_cap_override_reason"
+                                invisible="not l10n_py_maquila_cap_override"
+                                required="l10n_py_maquila_cap_override"
+                            />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

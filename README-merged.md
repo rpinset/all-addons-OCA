@@ -1322,7 +1322,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[voip_oca](voip_oca/) | 19.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Provides the use of Voip
+[voip_oca](voip_oca/) | 19.0.1.0.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Provides the use of Voip
 
 [//]: # (end addons)
 
@@ -3373,8 +3373,15 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_py](l10n_py/) | 19.0.1.0.1 |  | Localización contable para Paraguay
-[l10n_py_account](l10n_py_account/) | 19.0.1.0.0 |  | Accounting extensions for Paraguay localization
+[l10n_py_account](l10n_py_account/) | 19.0.1.1.0 |  | Accounting extensions for Paraguay localization
 [l10n_py_base](l10n_py_base/) | 19.0.1.0.0 |  | Base localization data for Paraguay
+[l10n_py_edi_base](l10n_py_edi_base/) | 19.0.1.0.0 |  | Base module for Electronic Invoicing in Paraguay
+[l10n_py_edi_sifen](l10n_py_edi_sifen/) | 19.0.1.0.0 |  | Direct SIFEN transmission via pysifen library
+[l10n_py_libros](l10n_py_libros/) | 19.0.1.0.0 |  | Registro de comprobantes Ventas/Compras/Ingresos/Egresos (DNIT)
+[l10n_py_maquila_base](l10n_py_maquila_base/) | 19.0.1.0.0 |  | Base module for Paraguay Maquila regime (Ley 7547/2025)
+[l10n_py_maquila_mrp](l10n_py_maquila_mrp/) | 19.0.1.0.0 |  | BOM coefficients, VAN calculation, and waste management for Maquila
+[l10n_py_maquila_ops](l10n_py_maquila_ops/) | 19.0.1.0.0 |  | Temporary admission, export, guarantees and fiscal ops for Maquila
+[l10n_py_maquila_report](l10n_py_maquila_report/) | 19.0.1.0.0 |  | CNIME reports, dashboard, SIFEN extension, and SIMEX for Maquila
 
 [//]: # (end addons)
 
@@ -3811,7 +3818,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_maintenance](base_maintenance/) | 19.0.1.0.0 |  | Base Maintenance
 [maintenance_equipment_category_hierarchy](maintenance_equipment_category_hierarchy/) | 19.0.1.0.0 |  | Equipment Categories Hierarchy
-[maintenance_equipment_certification](maintenance_equipment_certification/) | 19.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Add to store certifications associated with a equipment.
+[maintenance_equipment_certification](maintenance_equipment_certification/) | 19.0.1.0.1 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Add to store certifications associated with a equipment.
 [maintenance_equipment_ref](maintenance_equipment_ref/) | 19.0.1.0.0 |  | Adds reference field to maintenance equipment
 [maintenance_equipment_sequence](maintenance_equipment_sequence/) | 19.0.1.0.0 |  | Adds sequence to maintenance equipment defined in the equipment's category
 [maintenance_equipment_status](maintenance_equipment_status/) | 19.0.1.0.0 |  | Maintenance Equipment Status
@@ -5482,6 +5489,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_channel](sale_channel/) | 19.0.1.0.0 |  | Adds the notion of sale channels
+[sale_channel_product](sale_channel_product/) | 19.0.1.0.0 |  | Link Product with sale channel
 
 [//]: # (end addons)
 
@@ -5644,6 +5652,7 @@ addon | version | maintainers | summary
 [sale_advance_payment](sale_advance_payment/) | 19.0.1.0.0 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_automatic_workflow](sale_automatic_workflow/) | 19.0.1.2.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 19.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
+[sale_automatic_workflow_payment_mode](sale_automatic_workflow_payment_mode/) | 19.0.1.0.0 |  | Sale Automatic Workflow - Payment Mode
 [sale_cancel_reason](sale_cancel_reason/) | 19.0.1.0.0 |  | Sale Cancel Reason
 [sale_cancel_restrict](sale_cancel_restrict/) | 19.0.1.0.0 |  | Sale Cancel Restrict
 [sale_commercial_partner](sale_commercial_partner/) | 19.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
@@ -5674,6 +5683,7 @@ addon | version | maintainers | summary
 [sale_order_general_discount](sale_order_general_discount/) | 19.0.1.0.2 |  | General discount per sale order
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 19.0.1.0.0 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_line_date](sale_order_line_date/) | 19.0.1.0.0 |  | Adds a commitment date to each sale order line.
+[sale_order_line_delivery_state](sale_order_line_delivery_state/) | 19.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 19.0.1.0.3 |  | Sale order line description
 [sale_order_line_input](sale_order_line_input/) | 19.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 19.0.1.0.0 |  | Adds a Sale Order Lines Menu

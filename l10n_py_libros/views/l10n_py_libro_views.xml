@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_libro_list" model="ir.ui.view">
+        <field name="name">l10n_py.libro.list</field>
+        <field name="model">l10n_py.libro</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="company_id" />
+                <field name="tipo_registro" />
+                <field name="obligacion" />
+                <field name="year" />
+                <field name="month" />
+                <field name="state" />
+                <field name="error_line_count" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_libro_search" model="ir.ui.view">
+        <field name="name">l10n_py.libro.search</field>
+        <field name="model">l10n_py.libro</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="company_id" />
+                <field name="tipo_registro" />
+                <field name="year" />
+                <filter
+                    string="Con líneas en error"
+                    name="con_errores"
+                    domain="[('error_line_count', '&gt;', 0)]"
+                />
+                <group>
+                    <filter
+                        string="Tipo de registro"
+                        name="group_tipo"
+                        context="{'group_by': 'tipo_registro'}"
+                    />
+                    <filter
+                        string="Año"
+                        name="group_year"
+                        context="{'group_by': 'year'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_libro_form" model="ir.ui.view">
+        <field name="name">l10n_py.libro.form</field>
+        <field name="model">l10n_py.libro</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_generate_lines"
+                        type="object"
+                        string="Generar líneas"
+                        invisible="state == 'confirmed' or tipo_registro in ('ingresos', 'egresos')"
+                        class="oe_highlight"
+                    />
+                    <button
+                        name="action_confirm"
+                        type="object"
+                        string="Confirmar"
+                        invisible="state == 'confirmed'"
+                        class="oe_highlight"
+                    />
+                    <button
+                        name="action_reopen"
+                        type="object"
+                        string="Reabrir"
+                        invisible="state != 'confirmed'"
+                    />
+                    <button
+                        name="action_download_zip"
+                        type="object"
+                        string="Descargar ZIP"
+                        invisible="error_line_count &gt; 0"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="%(action_l10n_py_libro_line_error)d"
+                            type="action"
+                            class="oe_stat_button"
+                            icon="fa-exclamation-triangle"
+                            invisible="error_line_count == 0"
+                        >
+                            <field
+                                name="error_line_count"
+                                widget="statinfo"
+                                string="En error"
+                            />
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="company_id" />
+                            <field name="tipo_registro" />
+                            <field name="obligacion" />
+                            <field name="year" />
+                            <field name="month" invisible="obligacion == '956'" />
+                        </group>
+                        <group>
+                            <field
+                                name="separador"
+                                invisible="formato_archivo != 'csv'"
+                            />
+                            <field name="formato_archivo" />
+                            <field name="lote_letra" />
+                            <field name="lote_manual_override" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Líneas" name="lineas">
+                            <field name="line_ids">
+                                <list
+                                    editable="bottom"
+                                    decoration-danger="state == 'erro'"
+                                >
+                                    <field name="move_id" />
+                                    <field name="f_tipo_comprobante" />
+                                    <field name="f_fecha_emision" />
+                                    <field name="f_numero_comprobante" />
+                                    <field name="f_monto_total" />
+                                    <field name="manual_override" />
+                                    <field name="state" />
+                                    <field
+                                        name="error_message"
+                                        column_invisible="parent.error_line_count == 0"
+                                    />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Archivos generados" name="archivos">
+                            <field name="l10n_py_libro_attachment_ids" readonly="1">
+                                <list>
+                                    <field name="name" />
+                                    <field name="create_date" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <record id="action_l10n_py_libro_ventas" model="ir.actions.act_window">
+        <field name="name">Ventas</field>
+        <field name="res_model">l10n_py.libro</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('tipo_registro', '=', 'ventas')]</field>
+        <field name="context">{'default_tipo_registro': 'ventas'}</field>
+    </record>
+
+    <record id="action_l10n_py_libro_compras" model="ir.actions.act_window">
+        <field name="name">Compras</field>
+        <field name="res_model">l10n_py.libro</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('tipo_registro', '=', 'compras')]</field>
+        <field name="context">{'default_tipo_registro': 'compras'}</field>
+    </record>
+
+    <record id="action_l10n_py_libro_ingresos" model="ir.actions.act_window">
+        <field name="name">Ingresos</field>
+        <field name="res_model">l10n_py.libro</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('tipo_registro', '=', 'ingresos')]</field>
+        <field name="context">{'default_tipo_registro': 'ingresos'}</field>
+    </record>
+
+    <record id="action_l10n_py_libro_egresos" model="ir.actions.act_window">
+        <field name="name">Egresos</field>
+        <field name="res_model">l10n_py.libro</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('tipo_registro', '=', 'egresos')]</field>
+        <field name="context">{'default_tipo_registro': 'egresos'}</field>
+    </record>
+</odoo>

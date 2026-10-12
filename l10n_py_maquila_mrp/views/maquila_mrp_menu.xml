@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_maquila_manufacturing"
+        name="Manufacturing"
+        parent="l10n_py_maquila_base.menu_maquila_root"
+        sequence="25"
+    />
+    <menuitem
+        id="menu_maquila_bom"
+        name="Bills of Materials"
+        parent="menu_maquila_manufacturing"
+        action="mrp.mrp_bom_form_action"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_maquila_waste"
+        name="Waste"
+        parent="menu_maquila_manufacturing"
+        action="action_maquila_waste"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_maquila_van"
+        name="VAN Calculation"
+        parent="menu_maquila_manufacturing"
+        action="action_maquila_van_wizard"
+        sequence="30"
+    />
+</odoo>

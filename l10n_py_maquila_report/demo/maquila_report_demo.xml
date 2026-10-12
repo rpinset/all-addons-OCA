@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- CNIME Report: March 2026 - Program 1 (generated) -->
+    <record id="cnime_report_march_p1" model="l10n_py.maquila.cnime.report">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="period_start">2026-03-01</field>
+        <field name="period_end">2026-03-31</field>
+        <field name="state">generated</field>
+        <field name="employment_count">185</field>
+    </record>
+
+    <!-- CNIME Report: February 2026 - Program 1 (submitted) -->
+    <record id="cnime_report_feb_p1" model="l10n_py.maquila.cnime.report">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="period_start">2026-02-01</field>
+        <field name="period_end">2026-02-28</field>
+        <field name="state">submitted</field>
+        <field name="employment_count">180</field>
+        <field name="submission_date">2026-03-10 14:30:00</field>
+        <field name="submission_protocol">CNIME-SUB-2026-0215</field>
+    </record>
+
+    <!-- CNIME Report: March 2026 - Program 2 (draft) -->
+    <record id="cnime_report_march_p2" model="l10n_py.maquila.cnime.report">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_ociosidad" />
+        <field name="period_start">2026-03-01</field>
+        <field name="period_end">2026-03-31</field>
+        <field name="state">draft</field>
+        <field name="employment_count">45</field>
+    </record>
+</odoo>

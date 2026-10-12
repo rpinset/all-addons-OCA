@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_edi_cancel_wizard" model="ir.ui.view">
+        <field name="name">l10n_py.edi.cancel.wizard.form</field>
+        <field name="model">l10n_py.edi.cancel.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="invoice_id" readonly="1" />
+                        <field
+                            name="motive"
+                            placeholder="Ingrese el motivo de cancelación..."
+                        />
+                    </group>
+                    <footer>
+                        <button
+                            string="Cancelar Documento"
+                            name="action_cancel"
+                            type="object"
+                            class="oe_highlight"
+                        />
+                        <button
+                            string="Cerrar"
+                            class="btn-secondary"
+                            special="cancel"
+                        />
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

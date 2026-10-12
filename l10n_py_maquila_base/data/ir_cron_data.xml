@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ir_cron_maquila_expiry_check" model="ir.cron">
+        <field name="name">Maquila: Check Expiry Dates</field>
+        <field name="model_id" ref="model_l10n_py_maquila_program" />
+        <field name="state">code</field>
+        <field name="code">model._cron_check_expiry()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

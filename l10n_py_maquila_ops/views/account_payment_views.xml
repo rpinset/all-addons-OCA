@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_account_payment_form_maquila" model="ir.ui.view">
+        <field name="name">account.payment.form.maquila</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount']" position="after">
+                <field name="l10n_py_maquila_program_id" />
+                <field
+                    name="l10n_py_remittance_type"
+                    invisible="not l10n_py_maquila_program_id"
+                />
+                <field name="l10n_py_is_maquila_exempt" readonly="1" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

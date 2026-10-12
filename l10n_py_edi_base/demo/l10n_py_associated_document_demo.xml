@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- ============================================================ -->
+    <!-- Documentos Asociados adicionales (Grupo H SIFEN)             -->
+    <!-- Ejemplos de los 3 tipos de asociación                        -->
+    <!-- ============================================================ -->
+
+    <!-- Ejemplo standalone: documento electrónico asociado (tipo 1) -->
+    <!-- Usado para referenciar un DTE existente por su CDC -->
+    <!-- NOTA: Los documentos asociados principales ya están en los
+         archivos de demo de NCE, NDE, NRE y AFE.
+         Aquí se muestran ejemplos adicionales para referencia. -->
+
+    <!-- Documento impreso asociado a la FE de IVA 10% -->
+    <record id="demo_assoc_printed_remito" model="l10n_py.associated.document">
+        <field name="move_id" ref="l10n_py_account.demo_invoice_fe_iva10" />
+        <field name="association_type">2</field>
+        <field name="timbrado">88776655</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="doc_number">0000100</field>
+        <field name="doc_type_code">4</field>
+        <field name="doc_date" eval="time.strftime('%Y-%m') + '-01'" />
+    </record>
+</odoo>

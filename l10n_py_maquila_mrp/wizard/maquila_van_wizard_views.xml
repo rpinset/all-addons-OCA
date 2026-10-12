@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- VAN Wizard Form -->
+    <record id="view_maquila_van_wizard_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.van.wizard.form</field>
+        <field name="model">l10n_py.maquila.van.wizard</field>
+        <field name="arch" type="xml">
+            <form string="VAN Calculation">
+                <group string="Parameters">
+                    <group>
+                        <field name="program_id" />
+                        <field name="currency_id" />
+                    </group>
+                    <group>
+                        <field name="period_start" />
+                        <field name="period_end" />
+                    </group>
+                </group>
+                <group string="Cost Breakdown">
+                    <group>
+                        <field name="total_cost" />
+                        <field name="national_cost" />
+                    </group>
+                    <group>
+                        <field name="mercosul_cost" />
+                        <field name="imported_cost" />
+                    </group>
+                </group>
+                <group string="VAN Results">
+                    <group>
+                        <field name="van_amount" />
+                        <field name="van_percentage" />
+                    </group>
+                    <group>
+                        <field name="mercosul_content" />
+                    </group>
+                </group>
+                <footer>
+                    <button
+                        name="action_compute"
+                        string="Compute"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Close" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- VAN Wizard Action -->
+    <record id="action_maquila_van_wizard" model="ir.actions.act_window">
+        <field name="name">VAN Calculation</field>
+        <field name="res_model">l10n_py.maquila.van.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

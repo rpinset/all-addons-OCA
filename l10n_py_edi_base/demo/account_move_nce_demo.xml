@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- ============================================================ -->
+    <!-- Notas de Crédito Electrónicas (NCE — código 5)               -->
+    <!-- Requieren exactamente 1 documento asociado                   -->
+    <!-- ============================================================ -->
+
+    <!-- NCE 1: Nota de crédito con documento electrónico asociado (CDC) -->
+    <record id="demo_nce_electronic" model="account.move">
+        <field name="partner_id" ref="l10n_py_account.partner_contribuyente_general" />
+        <field name="move_type">out_refund</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-15'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nc" />
+        <field
+            name="l10n_py_authorization_id"
+            ref="l10n_py_account.demo_authorization_credit_note"
+        />
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_10_electronica'),
+                'quantity': 1,
+                'price_unit': 5500000.0,
+                'name': 'Devolución Notebook Dell Inspiron',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Documento asociado electrónico para NCE 1 -->
+    <record id="demo_nce_electronic_assoc_doc" model="l10n_py.associated.document">
+        <field name="move_id" ref="demo_nce_electronic" />
+        <field name="association_type">1</field>
+        <field name="cdc">01800123456001001000000012025010112345678901</field>
+    </record>
+
+    <!-- NCE 2: Nota de crédito con documento impreso asociado -->
+    <record id="demo_nce_printed" model="account.move">
+        <field
+            name="partner_id"
+            ref="l10n_py_account.partner_contribuyente_servicios"
+        />
+        <field name="move_type">out_refund</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-16'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nc" />
+        <field
+            name="l10n_py_authorization_id"
+            ref="l10n_py_account.demo_authorization_credit_note"
+        />
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_5_alimento'),
+                'quantity': 50,
+                'price_unit': 52500.0,
+                'name': 'Devolución Yerba Mate Kurupí 1kg',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Documento asociado impreso para NCE 2 -->
+    <record id="demo_nce_printed_assoc_doc" model="l10n_py.associated.document">
+        <field name="move_id" ref="demo_nce_printed" />
+        <field name="association_type">2</field>
+        <field name="timbrado">12345678</field>
+        <field name="establishment">001</field>
+        <field name="expedition_point">001</field>
+        <field name="doc_number">0000001</field>
+        <field name="doc_type_code">1</field>
+        <field name="doc_date" eval="time.strftime('%Y-%m') + '-01'" />
+    </record>
+
+    <!-- NCE 3: Nota de crédito mixta (IVA 10% + IVA 5%) -->
+    <record id="demo_nce_mixed" model="account.move">
+        <field name="partner_id" ref="l10n_py_account.partner_contribuyente_general" />
+        <field name="move_type">out_refund</field>
+        <field name="invoice_date" eval="time.strftime('%Y-%m') + '-17'" />
+        <field name="l10n_latam_document_type_id" ref="l10n_py_account.dc_py_nc" />
+        <field
+            name="l10n_py_authorization_id"
+            ref="l10n_py_account.demo_authorization_credit_note"
+        />
+        <field
+            name="invoice_line_ids"
+            eval="[
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_10_servicio'),
+                'quantity': 2,
+                'price_unit': 1100000.0,
+                'name': 'Descuento Servicio de Consultoría',
+            }),
+            (0, 0, {
+                'product_id': ref('l10n_py_account.product_iva_5_alimento'),
+                'quantity': 10,
+                'price_unit': 52500.0,
+                'name': 'Bonificación Yerba Mate',
+            }),
+        ]"
+        />
+    </record>
+
+    <!-- Documento asociado electrónico para NCE 3 -->
+    <record id="demo_nce_mixed_assoc_doc" model="l10n_py.associated.document">
+        <field name="move_id" ref="demo_nce_mixed" />
+        <field name="association_type">1</field>
+        <field name="cdc">01800123456001001000000022025010212345678902</field>
+    </record>
+</odoo>

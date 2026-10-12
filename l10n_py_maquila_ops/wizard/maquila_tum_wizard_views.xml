@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- TUM Wizard Form -->
+    <record id="view_maquila_tum_wizard_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.tum.wizard.form</field>
+        <field name="model">l10n_py.maquila.tum.wizard</field>
+        <field name="arch" type="xml">
+            <form string="TUM 1% Calculation">
+                <group>
+                    <group>
+                        <field name="program_id" />
+                        <field name="period_start" />
+                        <field name="period_end" />
+                    </group>
+                    <group>
+                        <field name="currency_id" groups="base.group_multi_currency" />
+                        <field name="tum_rate" />
+                        <field name="debit_account_id" />
+                        <field name="credit_account_id" />
+                    </group>
+                </group>
+                <group string="Amounts">
+                    <group>
+                        <field name="van_amount" />
+                        <field name="export_invoice_amount" />
+                    </group>
+                    <group>
+                        <field name="tum_base" />
+                        <field name="tum_amount" />
+                    </group>
+                </group>
+                <footer>
+                    <button
+                        name="action_compute"
+                        string="Compute"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button
+                        name="action_generate_move"
+                        string="Generate Entry"
+                        type="object"
+                        class="btn-secondary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- TUM Wizard Action -->
+    <record id="action_maquila_tum_wizard" model="ir.actions.act_window">
+        <field name="name">TUM Calculation</field>
+        <field name="res_model">l10n_py.maquila.tum.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

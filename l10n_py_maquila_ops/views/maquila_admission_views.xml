@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_maquila_admission_form" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.admission.form</field>
+        <field name="model">l10n_py.maquila.admission</field>
+        <field name="arch" type="xml">
+            <form string="Maquila Admission">
+                <header>
+                    <button
+                        name="action_admit"
+                        string="Admit"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'draft'"
+                    />
+                    <button
+                        name="action_in_production"
+                        string="Start Production"
+                        type="object"
+                        class="btn-primary"
+                        invisible="state != 'admitted'"
+                    />
+                    <button
+                        name="action_extend"
+                        string="Extend 12 Months"
+                        type="object"
+                        invisible="state not in ['admitted', 'in_production'] or date_extended or good_type != 'raw_material_input'"
+                    />
+                    <button
+                        name="action_close"
+                        string="Close"
+                        type="object"
+                        invisible="state not in ['admitted', 'in_production']"
+                    />
+                    <button
+                        name="action_draft"
+                        string="Reset to Draft"
+                        type="object"
+                        invisible="state in ['draft', 'closed']"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,admitted,in_production,closed"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" placeholder="DI-2026-00123" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="program_id" />
+                            <field name="cnime_certificate" />
+                            <field name="guarantee_id" />
+                            <field name="supplier_id" />
+                            <field name="good_type" />
+                        </group>
+                        <group>
+                            <field name="date_admission" />
+                            <field
+                                name="date_arrival"
+                                invisible="good_type != 'container_box'"
+                                required="good_type == 'container_box'"
+                            />
+                            <field name="date_deadline" />
+                            <field name="date_extended" />
+                            <field
+                                name="currency_id"
+                                groups="base.group_multi_currency"
+                            />
+                            <field name="amount_cif" />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Lines" name="lines">
+                            <field name="line_ids">
+                                <list editable="bottom">
+                                    <field name="product_id" />
+                                    <field name="lot_id" />
+                                    <field name="quantity" />
+                                    <field name="uom_id" />
+                                    <field name="ncm_code" />
+                                    <field name="currency_id" invisible="1" />
+                                    <field name="fob_value" />
+                                    <field name="qty_consumed" />
+                                    <field name="qty_remaining" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Pickings" name="pickings">
+                            <field name="picking_ids">
+                                <list>
+                                    <field name="name" />
+                                    <field name="partner_id" />
+                                    <field name="scheduled_date" />
+                                    <field name="state" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_maquila_admission_tree" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.admission.tree</field>
+        <field name="model">l10n_py.maquila.admission</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-danger="state == 'expired'"
+                decoration-muted="state == 'closed'"
+            >
+                <field name="name" />
+                <field name="program_id" />
+                <field name="date_admission" />
+                <field name="date_deadline" />
+                <field name="currency_id" invisible="1" />
+                <field name="amount_cif" />
+                <field
+                    name="state"
+                    decoration-success="state == 'admitted'"
+                    decoration-info="state == 'draft'"
+                    decoration-warning="state == 'in_production'"
+                    widget="badge"
+                />
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_maquila_admission_search" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.admission.search</field>
+        <field name="model">l10n_py.maquila.admission</field>
+        <field name="arch" type="xml">
+            <search string="Maquila Admissions">
+                <field name="name" />
+                <field name="program_id" />
+                <field name="cnime_certificate" />
+                <separator />
+                <filter
+                    name="filter_draft"
+                    string="Draft"
+                    domain="[('state', '=', 'draft')]"
+                />
+                <filter
+                    name="filter_admitted"
+                    string="Admitted"
+                    domain="[('state', '=', 'admitted')]"
+                />
+                <filter
+                    name="filter_in_production"
+                    string="In Production"
+                    domain="[('state', '=', 'in_production')]"
+                />
+                <filter
+                    name="filter_expired"
+                    string="Expired"
+                    domain="[('state', '=', 'expired')]"
+                />
+                <separator />
+                <group>
+                    <filter
+                        name="group_state"
+                        string="State"
+                        context="{'group_by': 'state'}"
+                    />
+                    <filter
+                        name="group_program"
+                        string="Program"
+                        context="{'group_by': 'program_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_maquila_admission" model="ir.actions.act_window">
+        <field name="name">Admissions</field>
+        <field name="res_model">l10n_py.maquila.admission</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_maquila_admission_search" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new temporary admission
+            </p>
+            <p>
+                Register temporary admission of goods under the Maquila regime.
+            </p>
+        </field>
+    </record>
+</odoo>

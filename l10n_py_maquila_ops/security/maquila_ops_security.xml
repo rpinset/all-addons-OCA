@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ir_rule_maquila_admission_company" model="ir.rule">
+        <field name="name">Maquila Admission: multi-company</field>
+        <field name="model_id" ref="model_l10n_py_maquila_admission" />
+        <field name="global" eval="True" />
+        <field name="domain_force">
+            ['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]
+        </field>
+    </record>
+
+    <record id="ir_rule_maquila_export_company" model="ir.rule">
+        <field name="name">Maquila Export: multi-company</field>
+        <field name="model_id" ref="model_l10n_py_maquila_export" />
+        <field name="global" eval="True" />
+        <field name="domain_force">
+            ['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]
+        </field>
+    </record>
+
+    <record id="ir_rule_maquila_guarantee_company" model="ir.rule">
+        <field name="name">Maquila Guarantee: multi-company</field>
+        <field name="model_id" ref="model_l10n_py_maquila_guarantee" />
+        <field name="global" eval="True" />
+        <field name="domain_force">
+            ['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]
+        </field>
+    </record>
+</odoo>

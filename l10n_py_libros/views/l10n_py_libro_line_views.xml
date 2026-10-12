@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_libro_line_form" model="ir.ui.view">
+        <field name="name">l10n_py.libro.line.form</field>
+        <field name="model">l10n_py.libro.line</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_view_source_document"
+                        type="object"
+                        string="Abrir documento de origen"
+                        invisible="not move_id and not payment_id"
+                    />
+                    <button
+                        name="action_restore_generated_values"
+                        type="object"
+                        string="Restaurar valores generados"
+                        invisible="not manual_override or not move_id"
+                    />
+                    <button
+                        name="action_fill_from_source"
+                        type="object"
+                        string="Rellenar desde el origen"
+                        invisible="not move_id and not payment_id"
+                    />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="libro_id" />
+                            <field name="tipo_registro" />
+                            <field name="move_id" />
+                            <field name="payment_id" />
+                            <field name="state" />
+                            <field name="manual_override" />
+                        </group>
+                        <group>
+                            <field name="f_tipo_comprobante" />
+                            <field name="f_fecha_emision" />
+                            <field name="f_periodo_mm_aaaa" />
+                            <field name="f_timbrado" />
+                            <field name="f_numero_comprobante" />
+                            <field name="f_tipo_identificacion" />
+                            <field name="f_numero_identificacion" />
+                            <field name="f_nombre_razon_social" />
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Montos">
+                            <field
+                                name="f_monto_gravado_10"
+                                invisible="tipo_registro not in ('ventas', 'compras')"
+                            />
+                            <field
+                                name="f_monto_gravado_5"
+                                invisible="tipo_registro not in ('ventas', 'compras')"
+                            />
+                            <field
+                                name="f_monto_exento"
+                                invisible="tipo_registro not in ('ventas', 'compras')"
+                            />
+                            <field
+                                name="f_monto_gravado"
+                                invisible="tipo_registro != 'ingresos'"
+                            />
+                            <field
+                                name="f_monto_no_gravado_exonerado"
+                                invisible="tipo_registro != 'ingresos'"
+                            />
+                            <field name="f_monto_total" />
+                            <field name="f_condicion" />
+                            <field name="f_moneda_extranjera" />
+                        </group>
+                        <group string="Imputación">
+                            <field
+                                name="f_imputa_iva"
+                                invisible="tipo_registro not in ('ventas', 'compras', 'egresos')"
+                            />
+                            <field name="f_imputa_ire" />
+                            <field name="f_imputa_irp_rsp" />
+                            <field
+                                name="f_no_imputa"
+                                invisible="tipo_registro not in ('compras', 'egresos')"
+                            />
+                        </group>
+                    </group>
+                    <group
+                        string="Comprobante asociado (NC/ND)"
+                        invisible="f_tipo_comprobante not in ('110', '111')"
+                    >
+                        <field name="f_comprobante_asociado_numero" />
+                        <field name="f_comprobante_asociado_timbrado" />
+                    </group>
+                    <group string="Egresos" invisible="tipo_registro != 'egresos'">
+                        <field name="f_numero_cuenta" />
+                        <field name="f_banco" />
+                        <field name="f_empleador_ips" />
+                    </group>
+                    <field
+                        name="f_especificar_tipo_documento"
+                        invisible="f_tipo_comprobante not in ('209', '210')"
+                    />
+                    <field name="error_message" invisible="state != 'erro'" />
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_libro_line_list" model="ir.ui.view">
+        <field name="name">l10n_py.libro.line.list</field>
+        <field name="model">l10n_py.libro.line</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state == 'erro'">
+                <field name="libro_id" />
+                <field name="tipo_registro" />
+                <field name="f_tipo_comprobante" />
+                <field name="f_numero_comprobante" />
+                <field name="f_monto_total" />
+                <field name="state" />
+                <field name="error_message" />
+            </list>
+        </field>
+    </record>
+
+    <record id="action_l10n_py_libro_line_error" model="ir.actions.act_window">
+        <field name="name">Líneas en error</field>
+        <field name="res_model">l10n_py.libro.line</field>
+        <field name="view_mode">list,form</field>
+        <field
+            name="domain"
+        >[('libro_id', '=', active_id), ('state', '=', 'erro')]</field>
+    </record>
+</odoo>

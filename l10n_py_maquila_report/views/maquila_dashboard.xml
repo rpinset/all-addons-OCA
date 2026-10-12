@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_maquila_dashboard_kanban" model="ir.ui.view">
+        <field name="name">l10n_py.maquila.program.dashboard.kanban</field>
+        <field name="model">l10n_py.maquila.program</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_dashboard" create="false">
+                <field name="name" />
+                <field name="code" />
+                <field name="state" />
+                <field name="maquila_type" />
+                <field name="matriz_partner_id" />
+                <field name="cnime_resolution_expiry" />
+                <templates>
+                    <t t-name="card">
+                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                            <div class="o_kanban_card_header">
+                                <div class="o_kanban_card_header_title">
+                                    <div class="o_primary">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </div>
+                                    <div class="o_secondary">
+                                        <field name="code" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container o_kanban_card_content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>Type:</strong>
+                                        <field name="maquila_type" />
+                                    </div>
+                                    <div class="col-6">
+                                        <strong>Status:</strong>
+                                        <field
+                                            name="state"
+                                            widget="badge"
+                                            decoration-success="state == 'active'"
+                                            decoration-warning="state == 'suspended'"
+                                            decoration-danger="state == 'closed'"
+                                            decoration-info="state == 'draft'"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <strong>Matrix:</strong>
+                                        <field name="matriz_partner_id" />
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <strong>Expiry:</strong>
+                                        <field name="cnime_resolution_expiry" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_maquila_dashboard" model="ir.actions.act_window">
+        <field name="name">Maquila Dashboard</field>
+        <field name="res_model">l10n_py.maquila.program</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="view_id" ref="view_maquila_dashboard_kanban" />
+        <field name="domain">[('state', '=', 'active')]</field>
+    </record>
+</odoo>

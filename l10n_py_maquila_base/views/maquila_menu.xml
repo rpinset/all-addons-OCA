@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_maquila_root"
+        name="Maquila"
+        groups="l10n_py_maquila_base.group_maquila_user"
+        sequence="45"
+    />
+    <menuitem
+        id="menu_maquila_programs"
+        name="Programs"
+        parent="menu_maquila_root"
+        action="action_maquila_program"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_maquila_config"
+        name="Configuration"
+        parent="menu_maquila_root"
+        sequence="90"
+    />
+</odoo>

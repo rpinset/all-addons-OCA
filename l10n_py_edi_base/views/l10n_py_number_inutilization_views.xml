@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_number_inutilization_form" model="ir.ui.view">
+        <field name="name">l10n_py.number.inutilization.form</field>
+        <field name="model">l10n_py.number.inutilization</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="action_send"
+                        string="Enviar al SIFEN"
+                        type="object"
+                        class="oe_highlight"
+                        invisible="state != 'draft'"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,sent,accepted"
+                    />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="authorization_id" />
+                            <field name="number_from" />
+                            <field name="number_to" />
+                            <field name="quantity" />
+                        </group>
+                        <group>
+                            <field name="motive" />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_number_inutilization_tree" model="ir.ui.view">
+        <field name="name">l10n_py.number.inutilization.tree</field>
+        <field name="model">l10n_py.number.inutilization</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-success="state=='accepted'"
+                decoration-danger="state=='rejected'"
+                decoration-info="state=='sent'"
+            >
+                <field name="authorization_id" />
+                <field name="number_from" />
+                <field name="number_to" />
+                <field name="quantity" />
+                <field name="motive" />
+                <field name="state" widget="badge" />
+            </list>
+        </field>
+    </record>
+
+    <record id="action_l10n_py_number_inutilization" model="ir.actions.act_window">
+        <field name="name">Inutilización de Números</field>
+        <field name="res_model">l10n_py.number.inutilization</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear una nueva inutilización
+            </p>
+            <p>
+                La inutilización permite informar al SIFEN que ciertos números
+                de la faja autorizada no serán utilizados.
+            </p>
+        </field>
+    </record>
+</odoo>

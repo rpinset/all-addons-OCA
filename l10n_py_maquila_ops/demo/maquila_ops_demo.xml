@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- ============================================================ -->
+    <!-- Guarantees                                                    -->
+    <!-- ============================================================ -->
+
+    <record id="guarantee_bank_regional" model="l10n_py.maquila.guarantee">
+        <field name="name">Fianza Bancaria - Banco Regional</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="guarantee_type">bank</field>
+        <field name="scope">global</field>
+        <field name="issuer">Banco Regional S.A.E.C.A.</field>
+        <field name="amount">200000.00</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2027-01-01</field>
+        <field name="state">active</field>
+    </record>
+
+    <record id="guarantee_insurance_mapfre" model="l10n_py.maquila.guarantee">
+        <field name="name">Póliza de Seguro - Mapfre</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="guarantee_type">insurance</field>
+        <field name="issuer">Mapfre Paraguay S.A.</field>
+        <field name="amount">100000.00</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="state">active</field>
+    </record>
+
+    <record id="guarantee_bank_continental" model="l10n_py.maquila.guarantee">
+        <field name="name">Fianza Bancaria - BBVA Continental</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_ociosidad" />
+        <field name="guarantee_type">bank</field>
+        <field name="issuer">BBVA Paraguay S.A.</field>
+        <field name="amount">150000.00</field>
+        <field name="date_start">2026-03-01</field>
+        <field name="date_end">2027-03-01</field>
+        <field name="state">active</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Admissions - Program 1 (Chicotes)                             -->
+    <!-- ============================================================ -->
+
+    <!-- Admission 1: Admitted, main raw materials -->
+    <record id="admission_001" model="l10n_py.maquila.admission">
+        <field name="name">DI-2026-00101</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="cnime_certificate">CNIME-2026-A001</field>
+        <field name="date_admission">2026-02-01</field>
+        <field name="state">admitted</field>
+        <field name="guarantee_id" ref="guarantee_bank_regional" />
+        <field name="supplier_id" ref="l10n_py_maquila_base.partner_supplier_china" />
+        <field name="amount_cif">55000.00</field>
+    </record>
+
+    <record id="admission_001_line_abs" model="l10n_py.maquila.admission.line">
+        <field name="admission_id" ref="admission_001" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="quantity">5000.0</field>
+        <field name="uom_id" ref="uom.product_uom_kgm" />
+        <field name="ncm_code">3903.30.00</field>
+        <field name="fob_value">35000.00</field>
+    </record>
+
+    <record id="admission_001_line_uv" model="l10n_py.maquila.admission.line">
+        <field name="admission_id" ref="admission_001" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_aditivo_uv" />
+        <field name="quantity">500.0</field>
+        <field name="uom_id" ref="uom.product_uom_kgm" />
+        <field name="ncm_code">3812.39.00</field>
+        <field name="fob_value">5000.00</field>
+    </record>
+
+    <!-- Admission 2: In production, connectors and cables -->
+    <record id="admission_002" model="l10n_py.maquila.admission">
+        <field name="name">DI-2026-00102</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="cnime_certificate">CNIME-2026-A002</field>
+        <field name="date_admission">2026-02-15</field>
+        <field name="state">in_production</field>
+        <field name="guarantee_id" ref="guarantee_bank_regional" />
+        <field name="supplier_id" ref="l10n_py_maquila_base.partner_supplier_germany" />
+        <field name="amount_cif">42000.00</field>
+    </record>
+
+    <record id="admission_002_line_conector" model="l10n_py.maquila.admission.line">
+        <field name="admission_id" ref="admission_002" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_conector_12pin" />
+        <field name="quantity">10000.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="ncm_code">8536.90.00</field>
+        <field name="fob_value">30000.00</field>
+    </record>
+
+    <record id="admission_002_line_cable" model="l10n_py.maquila.admission.line">
+        <field name="admission_id" ref="admission_002" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_cable_cobre" />
+        <field name="quantity">20000.0</field>
+        <field name="uom_id" ref="uom.product_uom_meter" />
+        <field name="ncm_code">8544.49.00</field>
+        <field name="fob_value">12000.00</field>
+    </record>
+
+    <!-- Admission 3: Draft (Program 2 - Plásticos) -->
+    <record id="admission_003" model="l10n_py.maquila.admission">
+        <field name="name">DI-2026-00201</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_ociosidad" />
+        <field name="date_admission">2026-03-10</field>
+        <field name="state">draft</field>
+        <field name="guarantee_id" ref="guarantee_bank_continental" />
+        <field name="supplier_id" ref="l10n_py_maquila_base.partner_supplier_china" />
+        <field name="amount_cif">28000.00</field>
+    </record>
+
+    <record id="admission_003_line_abs" model="l10n_py.maquila.admission.line">
+        <field name="admission_id" ref="admission_003" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="quantity">3000.0</field>
+        <field name="uom_id" ref="uom.product_uom_kgm" />
+        <field name="ncm_code">3903.30.00</field>
+        <field name="fob_value">21000.00</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Exports - Program 1 (Chicotes)                                -->
+    <!-- ============================================================ -->
+
+    <!-- Export 1: Dispatched (completed) -->
+    <record id="export_001" model="l10n_py.maquila.export">
+        <field name="name">DE-2026-00101</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="date_export">2026-03-10</field>
+        <field name="incoterm">FOB</field>
+        <field name="origin_certificate">CO-PY-2026-0001</field>
+        <field name="state">dispatched</field>
+        <field name="admission_ids" eval="[(4, ref('admission_001'))]" />
+    </record>
+
+    <record id="export_001_line_chicote" model="l10n_py.maquila.export.line">
+        <field name="export_id" ref="export_001" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_chicote_eletrico" />
+        <field name="quantity">980.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="fob_value">64000.00</field>
+    </record>
+
+    <!-- Export 2: Confirmed, pending dispatch -->
+    <record id="export_002" model="l10n_py.maquila.export">
+        <field name="name">DE-2026-00102</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="date_export">2026-03-25</field>
+        <field name="incoterm">CIF</field>
+        <field name="state">confirmed</field>
+        <field
+            name="admission_ids"
+            eval="[(4, ref('admission_001')), (4, ref('admission_002'))]"
+        />
+    </record>
+
+    <record id="export_002_line_chicote" model="l10n_py.maquila.export.line">
+        <field name="export_id" ref="export_002" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_chicote_eletrico" />
+        <field name="quantity">1500.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="fob_value">97500.00</field>
+    </record>
+
+    <!-- Export 3: Draft (Program 2) -->
+    <record id="export_003" model="l10n_py.maquila.export">
+        <field name="name">DE-2026-00201</field>
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_ociosidad" />
+        <field name="date_export">2026-04-15</field>
+        <field name="incoterm">FOB</field>
+        <field name="state">draft</field>
+    </record>
+
+    <record id="export_003_line_panel" model="l10n_py.maquila.export.line">
+        <field name="export_id" ref="export_003" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_panel_plastico" />
+        <field name="quantity">200.0</field>
+        <field name="uom_id" ref="uom.product_uom_unit" />
+        <field name="fob_value">18000.00</field>
+    </record>
+</odoo>

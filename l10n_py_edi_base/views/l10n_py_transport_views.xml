@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_l10n_py_transport_form" model="ir.ui.view">
+        <field name="name">l10n_py.transport.form</field>
+        <field name="model">l10n_py.transport</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group string="Datos de Transporte">
+                            <field name="move_id" readonly="1" />
+                            <field name="transport_mode" />
+                            <field name="transport_type" />
+                            <field name="freight_responsibility" />
+                            <field name="incoterm" />
+                            <field name="manifest_number" />
+                            <field name="transport_start_date" />
+                            <field name="transport_end_date" />
+                        </group>
+                        <group string="Punto de Salida">
+                            <field name="departure_address" />
+                            <field name="departure_house" />
+                            <field name="departure_department" />
+                            <field name="departure_district" />
+                            <field name="departure_city" />
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Transportista">
+                            <field name="transporter_nature" />
+                            <field name="transporter_name" />
+                            <field name="transporter_ruc" />
+                            <field name="transporter_dv" />
+                            <field name="driver_doc_number" />
+                            <field name="driver_name" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Vehículos">
+                            <field name="vehicle_ids">
+                                <list editable="bottom">
+                                    <field name="vehicle_type" />
+                                    <field name="brand" />
+                                    <field name="plate_number" />
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Puntos de Entrega">
+                            <field name="delivery_ids">
+                                <list editable="bottom">
+                                    <field name="address" />
+                                    <field name="house_number" />
+                                    <field name="department" />
+                                    <field name="district" />
+                                    <field name="city" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_transport_tree" model="ir.ui.view">
+        <field name="name">l10n_py.transport.tree</field>
+        <field name="model">l10n_py.transport</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="move_id" />
+                <field name="transport_mode" />
+                <field name="transport_type" />
+                <field name="transporter_name" />
+                <field name="transport_start_date" />
+            </list>
+        </field>
+    </record>
+</odoo>

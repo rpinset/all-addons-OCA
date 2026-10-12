@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- ============================================================ -->
+    <!-- BOMs - Program 1: Chicote Eléctrico                           -->
+    <!-- ============================================================ -->
+
+    <record id="bom_chicote" model="mrp.bom">
+        <field name="code">BOM-CHE-001</field>
+        <field
+            name="product_tmpl_id"
+            search="[('default_code', '=', 'MQ-PA-CHE')]"
+            model="product.template"
+        />
+        <field name="product_qty">1</field>
+        <field
+            name="l10n_py_maquila_program_id"
+            ref="l10n_py_maquila_base.maquila_program_demo"
+        />
+        <field name="l10n_py_intn_certified" eval="True" />
+        <field name="l10n_py_intn_certificate">INTN-2026-BOM-001</field>
+        <field name="l10n_py_intn_date">2026-01-20</field>
+    </record>
+
+    <!-- BOM Line: Polímero ABS (imported, China) -->
+    <record id="bom_line_chicote_abs" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="product_qty">1.05</field>
+        <field name="product_qty_net">1.00</field>
+        <field name="loss_percentage">4.76</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.cn" />
+    </record>
+
+    <!-- BOM Line: Aditivo UV (imported, Germany) -->
+    <record id="bom_line_chicote_uv" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_aditivo_uv" />
+        <field name="product_qty">0.05</field>
+        <field name="product_qty_net">0.048</field>
+        <field name="loss_percentage">4.0</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.de" />
+    </record>
+
+    <!-- BOM Line: Conector 12-pin (imported, China) -->
+    <record id="bom_line_chicote_conector" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_conector_12pin" />
+        <field name="product_qty">2</field>
+        <field name="product_qty_net">2</field>
+        <field name="loss_percentage">0</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.cn" />
+    </record>
+
+    <!-- BOM Line: Cable de Cobre (imported, Germany) -->
+    <record id="bom_line_chicote_cable" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_cable_cobre" />
+        <field name="product_qty">3.5</field>
+        <field name="product_qty_net">3.2</field>
+        <field name="loss_percentage">8.57</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.de" />
+    </record>
+
+    <!-- BOM Line: Tornillos M4 (national PY) -->
+    <record id="bom_line_chicote_tornillos" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_parafusos_m4" />
+        <field name="product_qty">10</field>
+        <field name="l10n_py_origin_type">national_py</field>
+        <field name="l10n_py_origin_country" ref="base.py" />
+    </record>
+
+    <!-- BOM Line: Cinta Aislante (national PY) -->
+    <record id="bom_line_chicote_cinta" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_chicote" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_cinta_aislante" />
+        <field name="product_qty">0.5</field>
+        <field name="l10n_py_origin_type">national_py</field>
+        <field name="l10n_py_origin_country" ref="base.py" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- BOMs - Program 2: Panel Plástico                              -->
+    <!-- ============================================================ -->
+
+    <record id="bom_panel" model="mrp.bom">
+        <field name="code">BOM-PPI-001</field>
+        <field
+            name="product_tmpl_id"
+            search="[('default_code', '=', 'MQ-PA-PPI')]"
+            model="product.template"
+        />
+        <field name="product_qty">1</field>
+        <field
+            name="l10n_py_maquila_program_id"
+            ref="l10n_py_maquila_base.maquila_program_ociosidad"
+        />
+        <field name="l10n_py_intn_certified" eval="True" />
+        <field name="l10n_py_intn_certificate">INTN-2026-BOM-002</field>
+        <field name="l10n_py_intn_date">2026-03-10</field>
+    </record>
+
+    <record id="bom_line_panel_abs" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_panel" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="product_qty">2.1</field>
+        <field name="product_qty_net">2.0</field>
+        <field name="loss_percentage">4.76</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.cn" />
+    </record>
+
+    <record id="bom_line_panel_uv" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_panel" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_aditivo_uv" />
+        <field name="product_qty">0.1</field>
+        <field name="product_qty_net">0.095</field>
+        <field name="loss_percentage">5.0</field>
+        <field name="l10n_py_origin_type">temporary_admission</field>
+        <field name="l10n_py_origin_country" ref="base.de" />
+    </record>
+
+    <record id="bom_line_panel_tornillos" model="mrp.bom.line">
+        <field name="bom_id" ref="bom_panel" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_parafusos_m4" />
+        <field name="product_qty">8</field>
+        <field name="l10n_py_origin_type">national_py</field>
+        <field name="l10n_py_origin_country" ref="base.py" />
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Waste Records                                                 -->
+    <!-- ============================================================ -->
+
+    <!-- Waste 1: Scrap from injection molding (Program 1) -->
+    <record id="waste_scrap_abs" model="l10n_py.maquila.waste">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="quantity">150</field>
+        <field name="date">2026-03-15</field>
+        <field name="waste_type">scrap</field>
+        <field name="destination">destruction</field>
+        <field name="state">pending</field>
+        <field
+            name="justification"
+        >Scrap from injection molding startup calibration</field>
+    </record>
+
+    <!-- Waste 2: Cable offcuts (Program 1) -->
+    <record id="waste_scrap_cable" model="l10n_py.maquila.waste">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_cable_cobre" />
+        <field name="quantity">500</field>
+        <field name="date">2026-03-18</field>
+        <field name="waste_type">scrap</field>
+        <field name="destination">nationalization</field>
+        <field name="state">in_process</field>
+        <field
+            name="justification"
+        >Cable offcuts from harness assembly - recyclable copper</field>
+    </record>
+
+    <!-- Waste 3: Defective connectors (Program 1) -->
+    <record id="waste_defective_conector" model="l10n_py.maquila.waste">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_demo" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_conector_12pin" />
+        <field name="quantity">25</field>
+        <field name="date">2026-03-20</field>
+        <field name="waste_type">defective</field>
+        <field name="destination">reexport</field>
+        <field name="state">completed</field>
+        <field
+            name="justification"
+        >Defective batch from supplier - returned for replacement</field>
+    </record>
+
+    <!-- Waste 4: Byproduct from panel production (Program 2) -->
+    <record id="waste_byproduct_panel" model="l10n_py.maquila.waste">
+        <field name="program_id" ref="l10n_py_maquila_base.maquila_program_ociosidad" />
+        <field name="product_id" ref="l10n_py_maquila_base.product_polimero_abs" />
+        <field name="quantity">80</field>
+        <field name="date">2026-03-22</field>
+        <field name="waste_type">byproduct</field>
+        <field name="destination">destruction</field>
+        <field name="state">pending</field>
+        <field name="justification">Flash and sprues from injection molding</field>
+        <field name="seam_approval">DICT-SEAM-2026-001</field>
+    </record>
+</odoo>
