@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-10-09 10:46 UTC** (elapsed 164s)
+Last build: **2026-10-12 22:21 UTC** (elapsed 119s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -85,7 +85,7 @@ Last build: **2026-10-09 10:46 UTC** (elapsed 164s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 36 | 0e22e8c 2025-10-14 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 65 | 52c4359 2026-07-30 Pedro M. Baeza Merge pull request #2413 from hbrunn/15.0-fix-ci |
 | [payroll](https://github.com/OCA/payroll) | 3 | 7a7d13a 2026-06-24 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [pos](https://github.com/OCA/pos) | 19 | 7bf804b 2025-12-19 OCA-git-bot [BOT] post-merge updates |
+| [pos](https://github.com/OCA/pos) | 19 | 80ad19a 2026-10-12 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 55 | 90c92b7 2026-09-11 Weblate Update translation files |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | 489a21b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [product-variant](https://github.com/OCA/product-variant) | 5 | 5752c1b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
