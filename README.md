@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-10-09 10:41 UTC** (elapsed 93s)
+Last build: **2026-10-12 22:18 UTC** (elapsed 131s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -126,5 +126,5 @@ Last build: **2026-10-09 10:41 UTC** (elapsed 93s)
 | [web](https://github.com/OCA/web) | 81 | 3dcfdaa 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [web-api](https://github.com/OCA/web-api) | 1 | a389c44 2025-06-16 mymage Translated using Weblate (Italian) |
 | [website](https://github.com/OCA/website) | 28 | 0b4393b 2026-10-06 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 3 | 909a9d8 2024-06-07 mymage Translated using Weblate (Italian) |
+| [wms](https://github.com/OCA/wms) | 3 | eebb160 2026-10-11 mymage Translated using Weblate (Italian) |
 
