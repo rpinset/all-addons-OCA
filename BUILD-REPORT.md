@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-12 22:26 UTC
+Generated 2026-10-15 23:50 UTC
 
 ## Skipped repos
 
@@ -173,7 +173,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [payroll](https://github.com/OCA/payroll) | `no_module` | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | `no_module` | No directory with __manifest__.py at repo root |
 | [pos](https://github.com/OCA/pos) | `no_module` | No directory with __manifest__.py at repo root |
-| [product-attribute](https://github.com/OCA/product-attribute) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-pack](https://github.com/OCA/product-pack) | `no_module` | No directory with __manifest__.py at repo root |
@@ -211,7 +210,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [server-backend](https://github.com/OCA/server-backend) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-tools](https://github.com/OCA/server-tools) | `no_module` | No directory with __manifest__.py at repo root |
-| [server-ux](https://github.com/OCA/server-ux) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |

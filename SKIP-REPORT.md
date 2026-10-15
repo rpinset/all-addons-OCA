@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-12 22:26 UTC
+Generated 2026-10-15 23:50 UTC
 
-Total skipped: **255**
+Total skipped: **253**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **229**
+Count: **227**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -187,7 +187,6 @@ Count: **229**
 | [payroll](https://github.com/OCA/payroll) | [20.0](https://github.com/OCA/payroll/tree/20.0) | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | [20.0](https://github.com/OCA/pms/tree/20.0) | No directory with __manifest__.py at repo root |
 | [pos](https://github.com/OCA/pos) | [20.0](https://github.com/OCA/pos/tree/20.0) | No directory with __manifest__.py at repo root |
-| [product-attribute](https://github.com/OCA/product-attribute) | [20.0](https://github.com/OCA/product-attribute/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-configurator](https://github.com/OCA/product-configurator) | [20.0](https://github.com/OCA/product-configurator/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | [20.0](https://github.com/OCA/product-kitting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-pack](https://github.com/OCA/product-pack) | [20.0](https://github.com/OCA/product-pack/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -220,7 +219,6 @@ Count: **229**
 | [server-backend](https://github.com/OCA/server-backend) | [20.0](https://github.com/OCA/server-backend/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | [20.0](https://github.com/OCA/server-env/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-tools](https://github.com/OCA/server-tools) | [20.0](https://github.com/OCA/server-tools/tree/20.0) | No directory with __manifest__.py at repo root |
-| [server-ux](https://github.com/OCA/server-ux) | [20.0](https://github.com/OCA/server-ux/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | [20.0](https://github.com/OCA/shift-planning/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [20.0](https://github.com/OCA/shopfloor-app/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [20.0](https://github.com/OCA/shoppingfeed/tree/20.0) | No directory with __manifest__.py at repo root |
