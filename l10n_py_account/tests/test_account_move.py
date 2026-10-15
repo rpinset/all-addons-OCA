@@ -351,6 +351,21 @@ class TestAccountMove(TransactionCase):
         with self.assertRaises(UserError):
             invoice.action_post()
 
+    def test_sale_requires_timbrado_with_single_range(self):
+        """F02: with exactly one valid range, a regular invoice still needs
+        its timbrado; only a reversal gets the range picked automatically
+        (test_credit_note_gets_own_number_and_timbrado)."""
+        self.Authorization.search(
+            [
+                ("company_id", "=", self.company.id),
+                ("l10n_latam_document_type_id", "=", self.doc_type_invoice.id),
+                ("id", "!=", self.authorization.id),
+            ]
+        ).write({"active": False})
+        invoice = self._create_invoice(l10n_py_authorization_id=False)
+        with self.assertRaises(UserError):
+            invoice.action_post()
+
     def test_purchase_no_timbrado_required(self):
         """F02: Factura de compra sin timbrado → OK (no requiere timbrado propio)"""
         account_payable = self.env["account.account"].search(

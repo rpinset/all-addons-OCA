@@ -261,6 +261,20 @@ class Tax(models.Model):
         return cst
 
     @api.model
+    def _fiscal_operation_type(self, operation_line):
+        """Return the fiscal operation type of ``operation_line``.
+
+        The operation line reaches the compute methods straight from the
+        caller's kwargs, so besides a record it can be an empty recordset,
+        ``False`` (the default declared in l10n_br_account) or ``None``. Only a
+        record answers for ``fiscal_operation_type``, so guard before reading it
+        and fall back to the outgoing operation, as everywhere else here.
+        """
+        if not operation_line:
+            return FISCAL_OUT
+        return operation_line.fiscal_operation_type or FISCAL_OUT
+
+    @api.model
     def _compute_tax_base(self, tax, tax_dict, **kwargs):
         company = kwargs.get("company") or tax.env.company
         currency = kwargs.get("currency") or company.currency_id
@@ -339,7 +353,7 @@ class Tax(models.Model):
         company = kwargs.get("company") or tax.env.company
         currency = kwargs.get("currency") or company.currency_id
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
 
         tax_dict = taxes_dict.get(tax.tax_domain)
         tax_dict.update(
@@ -425,7 +439,7 @@ class Tax(models.Model):
         cest = kwargs.get("cest")
         operation_line = kwargs.get("operation_line")
         cfop = kwargs.get("cfop")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
         ind_final = kwargs.get("ind_final", FINAL_CUSTOMER_NO)
         cst = kwargs.get("icms_cst_id", self.env["l10n_br_fiscal.cst"])
 
@@ -471,9 +485,9 @@ class Tax(models.Model):
             and partner.ind_ie_dest == NFE_IND_IE_DEST_9
             and tax_dict.get("tax_value")
             and (
-                operation_line.fiscal_operation_type == FISCAL_OUT
+                fiscal_operation_type == FISCAL_OUT
                 or (
-                    operation_line.fiscal_operation_type == FISCAL_IN
+                    fiscal_operation_type == FISCAL_IN
                     and operation_line.fiscal_operation_id.fiscal_type != "return_in"
                 )
             )
@@ -613,7 +627,7 @@ class Tax(models.Model):
         company = kwargs.get("company")
         currency = kwargs.get("currency", company.currency_id)
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
         tax_dict = taxes_dict.get(tax.tax_domain)
 
         # Get Computed IPI Tax
@@ -670,9 +684,12 @@ class Tax(models.Model):
         tax_dict = taxes_dict.get(tax.tax_domain)
         partner = kwargs.get("partner")
         company = kwargs.get("company")
-        currency = kwargs.get("currency", company.currency_id)
         cst = kwargs.get("cst", self.env["l10n_br_fiscal.cst"])
-        icmssn_range = kwargs.get("icmssn_range")
+        cfop = kwargs.get("cfop") or self.env["l10n_br_fiscal.cfop"]
+
+        # Range of the Simples Nacional annex that taxes the operation
+        tax_range = company._get_simplified_tax_range(cfop)
+        tax_dict["icmssn_range_id"] = tax_range.id
 
         # Get Computed IPI Tax
         tax_dict_ipi = taxes_dict.get("ipi", {})
@@ -685,9 +702,8 @@ class Tax(models.Model):
         # Partner ICMS's Contributor
         if partner.ind_ie_dest in (NFE_IND_IE_DEST_1, NFE_IND_IE_DEST_2):
             if cst.code in ICMS_SN_CST_WITH_CREDIT:
-                icms_sn_percent = currency.round(
-                    company.simplified_tax_percent
-                    * (icmssn_range.tax_icms_percent / 100)
+                icms_sn_percent = tax_range._get_effective_tax_percent(
+                    company.annual_revenue, TAX_DOMAIN_ICMS
                 )
 
                 tax_dict["percent_amount"] = icms_sn_percent
@@ -704,7 +720,7 @@ class Tax(models.Model):
         tax_dict = taxes_dict.get(tax.tax_domain)
         cfop = kwargs.get("cfop")
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
 
         # Se for entrada de importação o II entra na base de calculo do IPI
         if (
@@ -724,7 +740,7 @@ class Tax(models.Model):
         ICMS, PIS, and COFINS."""
         cfop = kwargs.get("cfop")
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
         tax_dict = taxes_dict.get(tax.tax_domain)
         tax_dict_ii = taxes_dict.get("ii", {})
         tax_dict_is = taxes_dict.get("is", {})
@@ -758,7 +774,7 @@ class Tax(models.Model):
         ICMS, PIS, and COFINS."""
         cfop = kwargs.get("cfop")
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
         tax_dict = taxes_dict.get(tax.tax_domain)
         tax_dict_ii = taxes_dict.get("ii", {})
         tax_dict_is = taxes_dict.get("is", {})
@@ -792,7 +808,7 @@ class Tax(models.Model):
         ICMS, PIS, and COFINS."""
         cfop = kwargs.get("cfop")
         operation_line = kwargs.get("operation_line")
-        fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+        fiscal_operation_type = self._fiscal_operation_type(operation_line)
         tax_dict = taxes_dict.get(tax.tax_domain)
         tax_dict_ii = taxes_dict.get("ii", {})
         tax_dict_icms = taxes_dict.get("icms", {})
@@ -838,7 +854,7 @@ class Tax(models.Model):
         cfop = kwargs.get("cfop")
         operation_line = kwargs.get("operation_line")
         if cfop and operation_line:
-            fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+            fiscal_operation_type = self._fiscal_operation_type(operation_line)
             if (
                 cfop.destination == CFOP_DESTINATION_EXPORT
                 and fiscal_operation_type == FISCAL_IN
@@ -888,8 +904,6 @@ class Tax(models.Model):
             the fiscal context.
         :param cfop: l10n_br_fiscal.cfop record, the determined CFOP for the
             operation.
-        :param icmssn_range: l10n_br_fiscal.simplified.tax.range record for
-            Simples Nacional ICMS calculation.
         :param icms_origin: str, ICMS origin code for the product.
         :param icms_cst_id: l10n_br_fiscal.cst record, the ICMS CST code.
         :param icms_relief_id: l10n_br_fiscal.icms.relief record, if ICMS relief
@@ -923,13 +937,19 @@ class Tax(models.Model):
             taxes[tax.tax_domain] = dict(TAX_DICT_VALUES)
             # Define CST FROM TAX
             operation_line = kwargs.get("operation_line")
-            fiscal_operation_type = operation_line.fiscal_operation_type or FISCAL_OUT
+            fiscal_operation_type = self._fiscal_operation_type(operation_line)
             kwargs.update({"cst": tax.cst_from_tax(fiscal_operation_type)})
-            try:
-                compute_method = getattr(self, f"_compute_{tax.tax_domain}")
+            # Resolve the specific compute method with a default instead of
+            # catching AttributeError around the call: the exception is meant to
+            # say "there is no _compute_<domain> for this tax domain", but it
+            # also swallows any AttributeError raised *inside* the specific
+            # method. When that happened the tax silently fell back to the
+            # generic computation, skipping its own base adjustments, with no
+            # error anywhere.
+            compute_method = getattr(self, f"_compute_{tax.tax_domain}", None)
+            if compute_method:
                 taxes[tax.tax_domain].update(compute_method(tax, taxes, **kwargs))
-
-            except AttributeError:
+            else:
                 taxes[tax.tax_domain].update(tax._compute_tax(tax, taxes, **kwargs))
 
             tax_domain = taxes[tax.tax_domain]

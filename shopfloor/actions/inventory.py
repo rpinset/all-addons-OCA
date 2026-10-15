@@ -63,7 +63,7 @@ class InventoryAction(Component):
         )
         if quants:
             for quant in quants:
-                if quant.inventory_quantity_set:
+                if quant.inventory_quantity_set and quant.user_id:
                     continue
                 quant.write(
                     {

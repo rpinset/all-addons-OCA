@@ -155,9 +155,16 @@ class TestDFe(TransactionCase):
     def test_search_dfe_error_conditions(self):
         """Test various error conditions during DFe search."""
         # 1. Test a 500-level HTTP error
-        with mock.patch.object(
-            DefaultTransport, "post", side_effect=RequestException("Mocked HTTP 500")
-        ) as mock_post_http_error:
+        # brazil_fiscal_client logs the failed SOAP request at ERROR level;
+        # mute it so the OCA CI log scanner doesn't fail the build.
+        with (
+            mute_logger("brazil_fiscal_client.fiscal_client"),
+            mock.patch.object(
+                DefaultTransport,
+                "post",
+                side_effect=RequestException("Mocked HTTP 500"),
+            ) as mock_post_http_error,
+        ):
             self.company.nfe_dfe_search_documents()
             self.assertEqual(self.company.nfe_last_nsu, "0")
             mock_post_http_error.assert_called_once()
@@ -1105,24 +1112,27 @@ class TestDFe(TransactionCase):
 
     # ── res_company coverage: banner actions ────────────────────────────
 
-    def test_action_banner_search_all(self):
-        """action_banner_search_all delegates to current company."""
+    def test_dfe_action_search_all(self):
+        """dfe_action_search_all delegates to the current company."""
         self.company.nfe_dfe_next_query = False
         with mock.patch.object(
             type(self.company),
             "_dfe_document_distribution",
             return_value=None,
-        ):
+        ) as mock_distribution:
             ResCompany = self.env["res.company"].with_company(self.company)
-            result = ResCompany.action_banner_search_all_nfe()
-        self.assertEqual(result["tag"], "reload")
+            result = ResCompany.dfe_action_search_all("nfe")
+        mock_distribution.assert_called_once()
+        # No action to run: the banner just reloads itself.
+        self.assertFalse(result)
 
-    def test_action_banner_specific_search(self):
-        """action_banner_specific_search returns wizard action."""
+    def test_dfe_action_specific_search(self):
+        """dfe_action_specific_search returns the wizard action."""
         ResCompany = self.env["res.company"].with_company(self.company)
-        result = ResCompany.action_banner_specific_search_nfe()
+        result = ResCompany.dfe_action_specific_search("nfe")
         self.assertEqual(result["res_model"], "dfe.specific.search.wizard")
         self.assertEqual(result["target"], "new")
+        self.assertEqual(result["context"]["default_fiscal_type"], "nfe")
 
     # ── res_company coverage: specific search paths ─────────────────────
 

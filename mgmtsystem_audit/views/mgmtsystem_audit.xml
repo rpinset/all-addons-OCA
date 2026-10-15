@@ -75,10 +75,10 @@
         <field name="type">list</field>
         <field name="arch" type="xml">
             <list>
+                <field name="reference" />
                 <field name="name" readonly="state == 'done'" />
                 <field name="date" readonly="state == 'done'" />
                 <field name="create_date" />
-                <field name="reference" />
                 <field name="system_id" />
                 <field name="company_id" groups="base.group_multi_company" />
             </list>
@@ -132,6 +132,7 @@
                     <field name="state" widget="statusbar" select="1" readonly="1" />
                 </header>
                 <sheet string="Audit">
+                    <div class="oe_button_box" name="button_box" />
                     <group col="4" colspan="2">
                         <field name="name" readonly="state == 'done'" />
                         <field name="reference" />

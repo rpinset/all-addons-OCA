@@ -1,0 +1,34 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shopfloor_product_expiry_assign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: shopfloor_product_expiry_assign
+#: model:ir.model.fields,help:shopfloor_product_expiry_assign.field_shopfloor_menu__ignore_expiration_date
+msgid "Allow to reserve goods from expired lots."
+msgstr ""
+
+#. module: shopfloor_product_expiry_assign
+#: model:ir.model.fields,field_description:shopfloor_product_expiry_assign.field_shopfloor_menu__ignore_expiration_date_is_possible
+msgid "Ignore Expiration Date Is Possible"
+msgstr ""
+
+#. module: shopfloor_product_expiry_assign
+#: model:ir.model.fields,field_description:shopfloor_product_expiry_assign.field_shopfloor_menu__ignore_expiration_date
+msgid "Ignore expiration date"
+msgstr ""
+
+#. module: shopfloor_product_expiry_assign
+#: model:ir.model,name:shopfloor_product_expiry_assign.model_shopfloor_menu
+msgid "Menu displayed in the scanner application"
+msgstr ""

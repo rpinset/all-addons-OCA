@@ -95,6 +95,56 @@ class ClusterPickingIsZeroCase(ClusterPickingCommonCase):
         available = self.source_qty(self.line.product_id, self.line.location_id)
         self.assertEqual(available, 0)
 
+    def test_is_zero_is_not_empty_with_unassigned_pending_count(self):
+        """A pending count without assigned user must survive the flow."""
+        quant = self.env["stock.quant"].search(
+            [
+                ("location_id", "=", self.line.location_id.id),
+                ("product_id", "=", self.line.product_id.id),
+                ("lot_id", "=", False),
+                ("package_id", "=", False),
+            ]
+        )
+        self.assertEqual(len(quant), 1)
+        # Count pending, but nobody is assigned to it.
+        quant.write({"inventory_quantity": 0.0, "inventory_quantity_set": True})
+        self.assertTrue(quant.inventory_quantity_set)
+        self.assertFalse(quant.user_id)
+        self.service.dispatch(
+            "is_zero",
+            params={
+                "picking_batch_id": self.batch.id,
+                "move_line_id": self.line.id,
+                "zero": False,
+            },
+        )
+        self._set_dest_package_and_done(self.next_line, self.bin1)
+        self.service.dispatch(
+            "prepare_unload",
+            params={"picking_batch_id": self.batch.id},
+        )
+        self.service.dispatch(
+            "set_destination_all",
+            params={
+                "picking_batch_id": self.batch.id,
+                "barcode": self.packing_location.barcode,
+            },
+        )
+        self.assertEqual(self.picking.state, "done")
+        # Run the zero quant cleanup, like the cron
+        self.env["stock.quant"]._unlink_zero_quants()
+        # Check the inventory check is still here
+        pending = self.env["stock.quant"].search(
+            [
+                ("location_id", "=", self.line.location_id.id),
+                ("product_id", "=", self.line.product_id.id),
+                ("inventory_quantity_set", "=", True),
+            ]
+        )
+        self.assertEqual(len(pending), 1)
+        self.assertEqual(pending.inventory_quantity, 0)
+        self.assertTrue(pending.user_id)
+
     def test_is_zero_is_not_empty(self):
         """call /is_zero not confirming it's empty"""
         response = self.service.dispatch(

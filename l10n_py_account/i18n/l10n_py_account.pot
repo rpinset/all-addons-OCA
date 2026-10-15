@@ -29,11 +29,6 @@ msgid "Activos"
 msgstr ""
 
 #. module: l10n_py_account
-#: model:ir.model.fields,field_description:l10n_py_account.field_account_tax__l10n_py_iva_affectation
-msgid "Afectación IVA (SIFEN)"
-msgstr ""
-
-#. module: l10n_py_account
 #: model_terms:ir.ui.view,arch_db:l10n_py_account.view_account_authorization_search
 msgid "Agrupar Por"
 msgstr ""
@@ -271,18 +266,8 @@ msgid "Estadísticas"
 msgstr ""
 
 #. module: l10n_py_account
-#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__3
-msgid "Exento"
-msgstr ""
-
-#. module: l10n_py_account
 #: model_terms:ir.ui.view,arch_db:l10n_py_account.view_move_form_py
 msgid "Exento (F003)"
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__2
-msgid "Exonerado (Art. 100 Ley 6380/2019)"
 msgstr ""
 
 #. module: l10n_py_account
@@ -318,28 +303,6 @@ msgstr ""
 #. module: l10n_py_account
 #: model:ir.model.fields,help:l10n_py_account.field_account_authorization__date_to
 msgid "Fecha hasta la cual el timbrado es válido"
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model,name:l10n_py_account.model_account_fiscal_position
-msgid "Fiscal Position"
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model.fields,help:l10n_py_account.field_account_tax__l10n_py_iva_affectation
-msgid ""
-"Forma de afectación del IVA (iAfecIVA) para el DE SIFEN. Exportación usa "
-"Exonerado (2)."
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__1
-msgid "Gravado IVA"
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model.fields.selection,name:l10n_py_account.selection__account_tax__l10n_py_iva_affectation__4
-msgid "Gravado parcial"
 msgstr ""
 
 #. module: l10n_py_account
@@ -648,11 +611,6 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_py_account.field_account_bank_statement_line__l10n_py_amount_subtotal_5
 #: model:ir.model.fields,help:l10n_py_account.field_account_move__l10n_py_amount_subtotal_5
 msgid "Subtotal gravado 5% — valor con impuesto incluido (SIFEN F004)"
-msgstr ""
-
-#. module: l10n_py_account
-#: model:ir.model,name:l10n_py_account.model_account_tax
-msgid "Tax"
 msgstr ""
 
 #. module: l10n_py_account

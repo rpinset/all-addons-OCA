@@ -19,6 +19,21 @@ msgid "Account Chart Template"
 msgstr ""
 
 #. module: l10n_py
+#: model:ir.model.fields,field_description:l10n_py.field_account_tax__l10n_py_iva_affectation
+msgid "Afectación IVA (SIFEN)"
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model.fields.selection,name:l10n_py.selection__account_tax__l10n_py_iva_affectation__3
+msgid "Exento"
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model.fields.selection,name:l10n_py.selection__account_tax__l10n_py_iva_affectation__2
+msgid "Exonerado (Art. 100 Ley 6380/2019)"
+msgstr ""
+
+#. module: l10n_py
 #: model:ir.model.fields,field_description:l10n_py.field_account_fiscal_position__l10n_py_is_export
 msgid "Exportación (PY)"
 msgstr ""
@@ -26,6 +41,23 @@ msgstr ""
 #. module: l10n_py
 #: model:ir.model,name:l10n_py.model_account_fiscal_position
 msgid "Fiscal Position"
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model.fields,help:l10n_py.field_account_tax__l10n_py_iva_affectation
+msgid ""
+"Forma de afectación del IVA (iAfecIVA) para el DE SIFEN. Exportación usa "
+"Exonerado (2)."
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model.fields.selection,name:l10n_py.selection__account_tax__l10n_py_iva_affectation__1
+msgid "Gravado IVA"
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model.fields.selection,name:l10n_py.selection__account_tax__l10n_py_iva_affectation__4
+msgid "Gravado parcial"
 msgstr ""
 
 #. module: l10n_py
@@ -40,4 +72,9 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_py/models/template_py.py:0
 msgid "Plan de Cuentas - Paraguay (Resolución General N° 49/14)"
+msgstr ""
+
+#. module: l10n_py
+#: model:ir.model,name:l10n_py.model_account_tax
+msgid "Tax"
 msgstr ""

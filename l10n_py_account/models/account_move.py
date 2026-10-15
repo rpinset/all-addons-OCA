@@ -205,7 +205,7 @@ class AccountMove(models.Model):
                             ),
                         ]
                     )
-                    if len(candidatos) == 1:
+                    if move.reversed_entry_id and len(candidatos) == 1:
                         move.l10n_py_authorization_id = candidatos
                 if not move.l10n_py_authorization_id:
                     raise UserError(
