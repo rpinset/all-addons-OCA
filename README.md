@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-12 22:17 UTC** (elapsed 139s)
+Last build: **2026-10-15 23:42 UTC** (elapsed 129s)
 
 - Repos integrated: **140**
 - Canonical modules: **2913**
@@ -67,14 +67,14 @@ Last build: **2026-10-12 22:17 UTC** (elapsed 139s)
 | [knowledge](https://github.com/OCA/knowledge) | 13 | e41c082 2026-10-01 mymage Translated using Weblate (Italian) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | fc14539 2026-10-03 OCA-git-bot Merge PR #103 into 14.0 |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | a97d3e2 2026-10-08 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | e69a3a7 2026-10-14 OCA-git-bot [BOT] post-merge updates |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 3c47a80 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | 13 | 3e6d71b 2026-06-19 OCA-git-bot [ADD] setup.py |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 5 | 4fc25e3 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 422856a 2026-09-01 Guillaume MASSON [UPD] copier update |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 4e06dda 2026-09-21 mymage Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 696a8d3 2026-10-15 Sergio Zanchetta Translated using Weblate (Italian) |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
@@ -118,7 +118,7 @@ Last build: **2026-10-12 22:17 UTC** (elapsed 139s)
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | 06cb39c 2026-07-28 OCA-git-bot Merge PR #394 into 14.0 |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 151 | eb75717 2026-08-27 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 151 | 86777b4 2026-10-13 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
