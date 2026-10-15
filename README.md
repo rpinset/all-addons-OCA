@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-10-12 22:21 UTC** (elapsed 119s)
+Last build: **2026-10-15 23:46 UTC** (elapsed 157s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -76,7 +76,7 @@ Last build: **2026-10-12 22:21 UTC** (elapsed 119s)
 | [maintenance](https://github.com/OCA/maintenance) | 25 | 7fd4111 2026-10-01 mymage Translated using Weblate (Italian) |
 | [management-system](https://github.com/OCA/management-system) | 30 | bee9aa3 2026-10-01 mymage Translated using Weblate (Italian) |
 | [manufacture](https://github.com/OCA/manufacture) | 52 | 4c6e264 2026-08-06 OCA-git-bot [BOT] post-merge updates |
-| [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 129338b 2025-02-02 oca-git-bot [IMP] update dotfiles |
+| [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | 3 | 79c3928 2026-10-15 David Alonso (Solvos) Translated using Weblate (Spanish) |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | 9 | 7da6cda 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 8f4a954 2026-07-20 Stéphane Bidoul Merge pull request #820 from acsone/15.0-update-dotfiles-202607 |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | 2 | cb81b68 2026-08-03 Pedro M. Baeza Merge pull request #68 from Tecnativa/15.0-IMP-copier_update |
