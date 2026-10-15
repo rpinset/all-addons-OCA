@@ -139,7 +139,7 @@ query Companies($after: String) {
                 id
                 name
               }
-              contact {
+              companyContact {
                 id
                 title
                 customer {

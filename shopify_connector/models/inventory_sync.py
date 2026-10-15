@@ -464,7 +464,7 @@ class ShopifyProductVariantInventorySync(models.Model):
             self.inventory_tracked = False
             return None
         level = item.get("inventoryLevel")
-        if not level or not level.get("isActive"):
+        if not level:
             return None
         return available_quantity(level)
 

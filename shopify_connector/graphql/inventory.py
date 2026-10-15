@@ -31,9 +31,8 @@ query InventoryLevelForItem($inventoryItemId: ID!, $locationId: ID!) {
   inventoryItem(id: $inventoryItemId) {
     id
     tracked
-    inventoryLevel(locationId: $locationId, includeInactive: true) {
+    inventoryLevel(locationId: $locationId) {
       id
-      isActive
       quantities(names: ["available"]) {
         name
         quantity
@@ -54,7 +53,6 @@ INVENTORY_LEVELS_BULK_QUERY = """
           edges {
             node {
               id
-              isActive
               location {
                 id
               }

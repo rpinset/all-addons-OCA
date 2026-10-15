@@ -172,3 +172,50 @@ class TestShopifyCustomerSync(TransactionCase):
             ),
             2,
         )
+
+    def test_company_contact_roles_come_from_location_role_assignments(self):
+        contact_id = "gid://shopify/CompanyContact/1"
+        assignment_id = "gid://shopify/CompanyContactRoleAssignment/1"
+        binding = self.env["shopify.company"]._import_company(
+            self.instance,
+            {
+                "id": "gid://shopify/Company/1",
+                "name": "Acme Wholesale",
+                "locations": {
+                    "nodes": [
+                        {
+                            "id": "gid://shopify/CompanyLocation/1",
+                            "name": "Acme HQ",
+                            "roleAssignments": {
+                                "nodes": [
+                                    {
+                                        "id": assignment_id,
+                                        "role": {
+                                            "id": "gid://shopify/CompanyContactRole/1",
+                                            "name": "Ordering only",
+                                        },
+                                        "companyContact": {"id": contact_id},
+                                    }
+                                ]
+                            },
+                        }
+                    ]
+                },
+                "contacts": {
+                    "nodes": [
+                        {
+                            "id": contact_id,
+                            "title": "Buyer",
+                            "customer": {
+                                "id": "gid://shopify/Customer/900",
+                                "displayName": "Jane Buyer",
+                                "email": "jane.buyer@example.com",
+                                "phone": "",
+                            },
+                        }
+                    ]
+                },
+            },
+        )
+
+        self.assertEqual(binding.contact_binding_ids.roles, "Ordering only")

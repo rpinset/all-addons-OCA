@@ -84,6 +84,42 @@ class TestShopifyInventory(TransactionCase):
             )
         )
 
+    def _inventory_item_response(self, level):
+        return {
+            "inventoryItem": {
+                "id": "gid://shopify/InventoryItem/201",
+                "tracked": True,
+                "inventoryLevel": level,
+            }
+        }
+
+    def test_read_shopify_quantity_returns_available_from_stocked_level(self):
+        location = self._location_binding()
+        client = Mock()
+        client.execute.return_value = self._inventory_item_response(
+            {
+                "id": "gid://shopify/InventoryLevel/1",
+                "quantities": [{"name": "available", "quantity": 7}],
+            }
+        )
+
+        quantity = self.variant_binding._read_shopify_inventory_quantity(
+            client, location
+        )
+
+        self.assertEqual(quantity, 7)
+
+    def test_read_shopify_quantity_is_none_when_item_not_stocked_at_location(self):
+        location = self._location_binding()
+        client = Mock()
+        client.execute.return_value = self._inventory_item_response(None)
+
+        quantity = self.variant_binding._read_shopify_inventory_quantity(
+            client, location
+        )
+
+        self.assertIsNone(quantity)
+
     def test_quant_change_enqueues_location_scoped_delta_job(self):
         location = self._location_binding()
         delayed = Mock()
