@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-15 23:42 UTC** (elapsed 129s)
+Last build: **2026-10-17 07:55 UTC** (elapsed 126s)
 
 - Repos integrated: **140**
-- Canonical modules: **2913**
+- Canonical modules: **2914**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **125**
 
@@ -118,7 +118,7 @@ Last build: **2026-10-15 23:42 UTC** (elapsed 129s)
 | [sale-prebook](https://github.com/OCA/sale-prebook) | 3 | d7c6a59 2026-06-30 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 20 | e5e846c 2026-01-07 Francesco Foresti Added translation using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 14 | 06cb39c 2026-07-28 OCA-git-bot Merge PR #394 into 14.0 |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 151 | 86777b4 2026-10-13 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 152 | 0886cb8 2026-10-16 OCA-git-bot [BOT] post-merge updates |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 36f0161 2025-03-25 OCA-git-bot [BOT] post-merge updates |
 | [server-auth](https://github.com/OCA/server-auth) | 26 | dede3d2 2026-06-22 mymage Translated using Weblate (Italian) |
 | [server-backend](https://github.com/OCA/server-backend) | 7 | d1e4ec8 2026-04-01 OCA-git-bot [BOT] post-merge updates |
