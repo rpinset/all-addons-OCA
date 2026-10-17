@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-27 01:12+0000\n"
-"PO-Revision-Date: 2023-10-29 07:10+0000\n"
-"Last-Translator: Adriano Prado <adrianojprado@gmail.com>\n"
+"PO-Revision-Date: 2026-10-17 03:25+0000\n"
+"Last-Translator: Luis Felipe Miléo <mileo@kmee.com.br>\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
 "23907/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: contract
 #: model:mail.template,body_html:contract.email_contract_template
@@ -224,8 +224,8 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
-"<strong>#FIM#</strong>\n"
-"                                    : Data Final\n"
+"<strong>#END#</strong>\n"
+"                                    : data final\n"
 "                                    do\n"
 "                                    período faturado"
 
@@ -243,13 +243,17 @@ msgid ""
 "                                    the\n"
 "                                    invoiced period"
 msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : nome do mês\n"
+"                                    do\n"
+"                                    período faturado"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid ""
 "<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
 "period"
-msgstr ""
+msgstr "<strong>#INVOICEMONTHNAME#</strong>: nome do mês do período faturado"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -260,11 +264,10 @@ msgid ""
 "                                    of the\n"
 "                                    invoiced period"
 msgstr ""
-"<strong>#INICIAR#</strong>\n"
-"                                     : Começar\n"
-"                                     data\n"
-"                                     do\n"
-"                                     período faturado"
+"<strong>#START#</strong>\n"
+"                                    : data de início\n"
+"                                    do\n"
+"                                    período faturado"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
@@ -472,7 +475,7 @@ msgstr "Precisão Analítica"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "April"
-msgstr ""
+msgstr "abril"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -511,7 +514,7 @@ msgstr "Contagem de Anexos"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "August"
-msgstr ""
+msgstr "agosto"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -547,7 +550,7 @@ msgstr "Cancelar"
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Cancel Contract Termination"
-msgstr "Cancelar Encerramento do Contrato"
+msgstr "Cancelar o encerramento do contrato"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__is_cancel_allowed
@@ -761,7 +764,7 @@ msgstr "Modelos de Contrato"
 #: model:ir.model,name:contract.model_contract_terminate_reason
 #: model:ir.ui.menu,name:contract.contract_terminate_reason_menu
 msgid "Contract Termination Reason"
-msgstr "Razão para o Encerramento do Contrato"
+msgstr "Motivo do encerramento do contrato"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_manually_create_invoice__contract_to_invoice_ids
@@ -830,9 +833,9 @@ msgid ""
 "                            "
 msgstr ""
 "Linha de contrato para <strong>%(product)s</strong>\n"
-"                             parou: <br/>\n"
-"                             - <strong>Fim</strong>: %(old_end)s -- "
-"%(new_end)s\n"
+"                            encerrada: <br/>\n"
+"                            - <strong>Fim</strong>: %(old_end)s -- %(new_end)"
+"s\n"
 "                            "
 
 #. module: contract
@@ -1048,12 +1051,12 @@ msgstr "Cliente"
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_customer_contract_lines
 msgid "Customer Contract Lines"
-msgstr ""
+msgstr "Linhas de contratos de clientes"
 
 #. module: contract
 #: model:ir.ui.menu,name:contract.menu_customer_contract_line_report
 msgid "Customer Contract lines"
-msgstr ""
+msgstr "Linhas de contratos de clientes"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_customer_contract
@@ -1144,7 +1147,7 @@ msgstr "Dia(s)"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "December"
-msgstr ""
+msgstr "dezembro"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
@@ -1239,7 +1242,7 @@ msgstr ""
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "February"
-msgstr ""
+msgstr "fevereiro"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
@@ -1372,7 +1375,7 @@ msgstr "Em progresso"
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__state__in-progress
 msgid "In-progress"
-msgstr "In-progress"
+msgstr "Em andamento"
 
 #. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_abstract_contract__generation_type__invoice
@@ -1443,7 +1446,7 @@ msgstr "Contato de faturamento"
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_offset
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_offset
 msgid "Invoicing offset"
-msgstr "Tipo de faturamento"
+msgstr "Dias de deslocamento da fatura"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__recurring_invoicing_type
@@ -1455,7 +1458,7 @@ msgstr "Tipo de faturamento"
 #: model:ir.model.fields,field_description:contract.field_contract_template__recurring_invoicing_type
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__recurring_invoicing_type
 msgid "Invoicing type"
-msgstr "Tipo de Fatuamento"
+msgstr "Tipo de faturamento"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line_wizard__is_auto_renew
@@ -1484,7 +1487,7 @@ msgstr "É suspenso sem data final"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "January"
-msgstr ""
+msgstr "janeiro"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
@@ -1509,14 +1512,14 @@ msgstr "Item Diário"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "July"
-msgstr ""
+msgstr "julho"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "June"
-msgstr ""
+msgstr "junho"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__last_date_invoiced
@@ -1595,20 +1598,20 @@ msgstr "Necessária Renovação Manual"
 #: model:ir.actions.act_window,name:contract.purchase_contract_manually_create_invoice_act_window
 #: model:ir.ui.menu,name:contract.purchase_contract_manually_create_invoice_menu
 msgid "Manually Invoice Purchase Contracts"
-msgstr "Faturar Manualmente Contratos de Compra"
+msgstr "Faturar Contratos de Compra Manualmente"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.sale_contract_manually_create_invoice_act_window
 #: model:ir.ui.menu,name:contract.sale_contract_manually_create_invoice_menu
 msgid "Manually Invoice Sale Contracts"
-msgstr "Fatura Manualmente Contratos de Venda"
+msgstr "Faturar Contratos de Venda Manualmente"
 
 #. module: contract
 #. odoo-python
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "March"
-msgstr ""
+msgstr "março"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
@@ -1626,7 +1629,7 @@ msgstr ""
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "May"
-msgstr ""
+msgstr "maio"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
@@ -1761,7 +1764,7 @@ msgstr "Observações"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "November"
-msgstr ""
+msgstr "novembro"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
@@ -1804,7 +1807,7 @@ msgstr "Número de mensagens com erro de entrega"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "October"
-msgstr ""
+msgstr "outubro"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
@@ -1837,7 +1840,7 @@ msgstr "Condições de pagamento"
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_tree_view
 msgid "Plan Start"
-msgstr "Plano Inicial"
+msgstr "Planejar sucessora"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__is_plan_successor_allowed
@@ -2085,7 +2088,7 @@ msgstr "Enviar"
 #: code:addons/contract/models/contract_line.py:0
 #, python-format
 msgid "September"
-msgstr ""
+msgstr "setembro"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__sequence
@@ -2175,7 +2178,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_tree_view
 msgid "Stop"
-msgstr "Parar"
+msgstr "Encerrar linha"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_wizard_stop_form_view
@@ -2186,7 +2189,7 @@ msgstr "Data de Parada"
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_line_tree_view
 msgid "Stop Plan Successor"
-msgstr "Parar Plano Sucessor"
+msgstr "Suspender"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_line__is_stop_allowed
@@ -2237,12 +2240,12 @@ msgstr "Fornecedor"
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_supplier_contract_lines
 msgid "Supplier Contract Lines"
-msgstr ""
+msgstr "Linhas de contratos de fornecedores"
 
 #. module: contract
 #: model:ir.ui.menu,name:contract.menu_supplier_contract_line_report
 msgid "Supplier Contract lines"
-msgstr ""
+msgstr "Linhas de contratos de fornecedores"
 
 #. module: contract
 #: model:ir.actions.act_window,name:contract.action_supplier_contract
@@ -2326,12 +2329,12 @@ msgstr "Tipo de Aviso de Rescisão"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__terminate_reason_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract_terminate__terminate_reason_id
 msgid "Termination Reason"
-msgstr "Razão do Encerramento"
+msgstr "Motivo do encerramento"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "This contract was terminated for the reason"
-msgstr "Este contrato foi rescindido pela razão"
+msgstr "Este contrato foi encerrado pelo motivo"
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_line__manual_renew_needed
@@ -2405,7 +2408,7 @@ msgstr "Próximo Fechamento"
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "Update Termination Details"
-msgstr "Atualizar detalhes do Encerramento"
+msgstr "Atualizar detalhes do encerramento"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.report_contract_document
@@ -2553,7 +2556,7 @@ msgstr ""
 #: code:addons/contract/models/contract.py:0
 #, python-format
 msgid "by contract"
-msgstr ""
+msgstr "pelo contrato"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
