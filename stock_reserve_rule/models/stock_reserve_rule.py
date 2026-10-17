@@ -5,7 +5,7 @@ import logging
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.osv import expression
-from odoo.tools.float_utils import float_compare
+from odoo.tools.float_utils import float_compare, float_is_zero
 from odoo.tools.safe_eval import safe_eval
 
 _logger = logging.getLogger(__name__)
@@ -296,6 +296,10 @@ class StockReserveRuleRemoval(models.Model):
                 asked_at_least_packaging_qty = is_greater_eq(need, pack_quantity)
                 if enough_for_packaging and asked_at_least_packaging_qty:
                     # compute how much packaging we can get
-                    take = (need // pack_quantity) * pack_quantity
+                    take = (
+                        min(need, location_quantity) // pack_quantity
+                    ) * pack_quantity
+                    if float_is_zero(take, precision_rounding=rounding):
+                        continue
                     location_quantity -= take
                     need = yield location, location_quantity, take

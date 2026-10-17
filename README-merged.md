@@ -1761,7 +1761,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 18.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 18.0.2.6.1 |  | Recurring - Contracts Management
+[contract](contract/) | 18.0.2.6.2 |  | Recurring - Contracts Management
 [contract_analytic_tag](contract_analytic_tag/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Contract Analytic Tag
 [contract_forecast](contract_forecast/) | 18.0.1.0.2 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | Contract Forecast
 [contract_forecast_variable_quantity](contract_forecast_variable_quantity/) | 18.0.1.0.0 |  | Contract Forecast Variable Quantity
@@ -2226,6 +2226,7 @@ addon | version | maintainers | summary
 [delivery_dropoff_site](delivery_dropoff_site/) | 18.0.1.0.0 |  | Send goods to sites in which customers come pick up package
 [delivery_easypost_oca](delivery_easypost_oca/) | 18.0.1.0.0 |  | OCA Delivery Easypost
 [delivery_estimated_package_quantity_by_weight](delivery_estimated_package_quantity_by_weight/) | 18.0.1.0.0 |  | Compute the amount of packages a picking out should have depending on the weight of the products and the limit fixed by the carrier
+[delivery_fee](delivery_fee/) | 18.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Charge extra fees on deliveries
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 18.0.1.2.0 |  | Hide free fee lines on sales orders
 [delivery_free_over_untaxed_price](delivery_free_over_untaxed_price/) | 18.0.1.0.0 |  | Decide if delivery is free over the untaxed price.
 [delivery_multi_destination](delivery_multi_destination/) | 18.0.1.0.1 |  | Multiple destinations for the same delivery method
@@ -2439,9 +2440,9 @@ addon | version | maintainers | summary
 [website_sale_product_sort](website_sale_product_sort/) | 18.0.1.0.0 |  | Allow to define default sort criteria for e-commerce
 [website_sale_require_legal](website_sale_require_legal/) | 18.0.1.0.2 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_secondary_unit](website_sale_secondary_unit/) | 18.0.1.0.2 |  | Allow manage secondary units in website shop
-[website_sale_stock_available](website_sale_stock_available/) | 18.0.1.0.0 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
+[website_sale_stock_available](website_sale_stock_available/) | 18.0.1.0.1 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
 [website_sale_stock_list_preview](website_sale_stock_list_preview/) | 18.0.1.0.0 |  | Show the stock of products on the product previews
-[website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 18.0.1.0.2 |  | Display provisioning date for a product in shop online
+[website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 18.0.1.0.3 |  | Display provisioning date for a product in shop online
 [website_sale_suggest_create_account](website_sale_suggest_create_account/) | 18.0.1.0.0 |  | Suggest users to create an account when buying in the website
 [website_sale_tax_toggle](website_sale_tax_toggle/) | 18.0.1.0.0 |  | Allow display price in Shop with or without taxes
 [website_sale_vat_required](website_sale_vat_required/) | 18.0.1.0.1 |  | VAT number required in checkout form
@@ -2583,7 +2584,7 @@ addon | version | maintainers | summary
 [edi_account_core_oca](edi_account_core_oca/) | 18.0.1.1.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define EDI Configuration for Account Moves
 [edi_account_oca](edi_account_oca/) | 18.0.1.1.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define some component listeners for Account Moves
 [edi_component_oca](edi_component_oca/) | 18.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Allow to use Connector as a source in EDI
-[edi_core_oca](edi_core_oca/) | 18.0.1.9.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_core_oca](edi_core_oca/) | 18.0.1.10.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_endpoint_oca](edi_endpoint_oca/) | 18.0.1.1.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_deduplicate_oca](edi_exchange_deduplicate_oca/) | 18.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Introduce a deduplication mechanism at the sending step
 [edi_exchange_record_file_manager](edi_exchange_record_file_manager/) | 18.0.1.0.0 |  | Adds a wizard to manage the file of an EDI exchange record
@@ -2986,7 +2987,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[helpdesk_mgmt](helpdesk_mgmt/) | 18.0.1.19.1 |  | Helpdesk
+[helpdesk_mgmt](helpdesk_mgmt/) | 18.0.1.19.2 |  | Helpdesk
 [helpdesk_mgmt_activity](helpdesk_mgmt_activity/) | 18.0.1.0.0 |  | Create Activities for Odoo records from the Helpdesk
 [helpdesk_mgmt_crm](helpdesk_mgmt_crm/) | 18.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Links helpdesk tickets with leads
 [helpdesk_mgmt_fieldservice](helpdesk_mgmt_fieldservice/) | 18.0.1.1.3 |  | Create service orders from a ticket
@@ -3623,12 +3624,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_br_account](l10n_br_account/) | 18.0.3.8.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Invoicing and accounting entries for Brazil
+[l10n_br_account](l10n_br_account/) | 18.0.3.8.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Invoicing and accounting entries for Brazil
 [l10n_br_account_due_list](l10n_br_account_due_list/) | 18.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Account Due List
 [l10n_br_account_fleet](l10n_br_account_fleet/) | 18.0.1.1.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Account Fleet
 [l10n_br_account_nfe](l10n_br_account_nfe/) | 18.0.1.1.0 | <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Integration between l10n_br_account and l10n_br_nfe
 [l10n_br_account_payment_brcobranca](l10n_br_account_payment_brcobranca/) | 18.0.1.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | receivable Boletos and CNAB using the BRCobranca lib
 [l10n_br_account_payment_order](l10n_br_account_payment_order/) | 18.0.1.2.0 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Brazilian Payment Order
+[l10n_br_account_renegotiation](l10n_br_account_renegotiation/) | 18.0.1.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Allows renegotiating payment installments on posted invoices in Brazil
 [l10n_br_base](l10n_br_base/) | 18.0.2.5.1 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Customization of base module for implementations in Brazil.
 [l10n_br_base_l10n_br_compat](l10n_br_base_l10n_br_compat/) | 18.0.2.1.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Compatibility with the l10n_br module
 [l10n_br_cnpj_search](l10n_br_cnpj_search/) | 18.0.1.4.0 |  | Integração com os Webservices da ReceitaWS, SerPro e cpfcnpj.com.br
@@ -3646,6 +3648,7 @@ addon | version | maintainers | summary
 [l10n_br_fiscal_certificate](l10n_br_fiscal_certificate/) | 18.0.2.1.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | A1 fiscal certificate management for Brazil
 [l10n_br_fiscal_closing](l10n_br_fiscal_closing/) | 18.0.2.1.0 |  | Period fiscal closing
 [l10n_br_fiscal_dfe](l10n_br_fiscal_dfe/) | 18.0.2.0.0 | <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Generic framework to monitor incoming electronic fiscal documents via the Sefaz DF-e distribution web service.
+[l10n_br_fiscal_dfe_mock](l10n_br_fiscal_dfe_mock/) | 18.0.1.0.0 |  | Mock SEFAZ DF-e distribution for development without A1 certificate.
 [l10n_br_fiscal_edi](l10n_br_fiscal_edi/) | 18.0.3.5.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Common EDI fiscal features
 [l10n_br_fiscal_notification](l10n_br_fiscal_notification/) | 18.0.2.2.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Define fiscal document notifications
 [l10n_br_hr](l10n_br_hr/) | 18.0.1.5.0 |  | Brazilian Localization HR
@@ -3655,13 +3658,13 @@ addon | version | maintainers | summary
 [l10n_br_mdfe_spec](l10n_br_mdfe_spec/) | 18.0.2.2.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | MDF-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_mis_report](l10n_br_mis_report/) | 18.0.2.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | Templates de relatórios contábeis brasileiros: Balanço Patrimonial e DRE
 [l10n_br_nfe](l10n_br_nfe/) | 18.0.7.4.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Eletronic Invoicing for Brazil / NF-e
-[l10n_br_nfe_dfe](l10n_br_nfe_dfe/) | 18.0.3.0.0 | <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Monitor incoming NF-e documents via the DF-e distribution web service (NFeDistribuicaoDFe).
+[l10n_br_nfe_dfe](l10n_br_nfe_dfe/) | 18.0.3.1.0 | <a href='https://github.com/felipemotter'><img src='https://github.com/felipemotter.png' width='32' height='32' style='border-radius:50%;' alt='felipemotter'/></a> <a href='https://github.com/antoniospneto'><img src='https://github.com/antoniospneto.png' width='32' height='32' style='border-radius:50%;' alt='antoniospneto'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Monitor incoming NF-e documents via the DF-e distribution web service (NFeDistribuicaoDFe).
 [l10n_br_nfe_spec](l10n_br_nfe_spec/) | 18.0.3.0.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | NF-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_nfse](l10n_br_nfse/) | 18.0.6.3.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Root electronic invoice for service / NFS-e module
 [l10n_br_nfse_focus](l10n_br_nfse_focus/) | 18.0.4.4.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | NFS-e (FocusNFE)
-[l10n_br_nfse_nacional](l10n_br_nfse_nacional/) | 18.0.1.1.0 |  | Brazilian Electronic Invoice for Services (National Standard)
+[l10n_br_nfse_nacional](l10n_br_nfse_nacional/) | 18.0.1.2.0 |  | Brazilian Electronic Invoice for Services (National Standard)
 [l10n_br_nfse_paulistana](l10n_br_nfse_paulistana/) | 18.0.1.1.0 | <a href='https://github.com/gabrielcardoso21'><img src='https://github.com/gabrielcardoso21.png' width='32' height='32' style='border-radius:50%;' alt='gabrielcardoso21'/></a> <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/luismalta'><img src='https://github.com/luismalta.png' width='32' height='32' style='border-radius:50%;' alt='luismalta'/></a> <a href='https://github.com/CristianoMafraJunior'><img src='https://github.com/CristianoMafraJunior.png' width='32' height='32' style='border-radius:50%;' alt='CristianoMafraJunior'/></a> | NFS-e (Nota Paulistana)
-[l10n_br_nfse_spec](l10n_br_nfse_spec/) | 18.0.1.2.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | NFS-e abstract models generated by xsdata-odoo from the official xsd
+[l10n_br_nfse_spec](l10n_br_nfse_spec/) | 18.0.1.3.0 | <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | NFS-e abstract models generated by xsdata-odoo from the official xsd
 [l10n_br_portal](l10n_br_portal/) | 18.0.1.0.0 |  | Campos Brasileiros no Portal
 [l10n_br_purchase](l10n_br_purchase/) | 18.0.1.2.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> <a href='https://github.com/rvalyi'><img src='https://github.com/rvalyi.png' width='32' height='32' style='border-radius:50%;' alt='rvalyi'/></a> | Brazilian Localization Purchase
 [l10n_br_purchase_blanket_order](l10n_br_purchase_blanket_order/) | 18.0.1.3.0 | <a href='https://github.com/WesleyOliveira98'><img src='https://github.com/WesleyOliveira98.png' width='32' height='32' style='border-radius:50%;' alt='WesleyOliveira98'/></a> <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Brazilian Localization Purchase Blanket Order
@@ -4145,12 +4148,12 @@ addon | version | maintainers | summary
 [l10n_it_edi_accompanying_invoice](l10n_it_edi_accompanying_invoice/) | 18.0.1.0.0 |  | Popolare DatiTrasporto nella fattura elettronica.
 [l10n_it_edi_doi_extension](l10n_it_edi_doi_extension/) | 18.0.1.2.0 |  | Declaration of Intent for Italy (OCA)
 [l10n_it_edi_doi_extension_vat_registry](l10n_it_edi_doi_extension_vat_registry/) | 18.0.1.1.0 |  | Modulo ponte tra Dichiarazioni d'Intento e registri IVA.
-[l10n_it_edi_extension](l10n_it_edi_extension/) | 18.0.1.12.3 |  | E-invoice base feature
+[l10n_it_edi_extension](l10n_it_edi_extension/) | 18.0.1.13.0 |  | E-invoice base feature
 [l10n_it_edi_pec](l10n_it_edi_pec/) | 18.0.1.1.1 |  | Invio e ricezione fatture elettroniche tramite PEC
 [l10n_it_edi_related_document](l10n_it_edi_related_document/) | 18.0.1.2.1 |  | Related Documents for EDI
 [l10n_it_edi_sdi](l10n_it_edi_sdi/) | 18.0.1.0.1 |  | Logica condivisa per la comunicazione con lo SdI
 [l10n_it_edi_sender_partner](l10n_it_edi_sender_partner/) | 18.0.1.0.0 |  | Terzo intermediario o soggetto emittete per fatturazione elettronica
-[l10n_it_edi_td29](l10n_it_edi_td29/) | 18.0.1.0.0 |  | Support for TD29 - Omitted/Irregular Invoice Communication
+[l10n_it_edi_td29](l10n_it_edi_td29/) | 18.0.1.1.0 |  | Support for TD29 - Omitted/Irregular Invoice Communication
 [l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 18.0.1.0.0 | <a href='https://github.com/mktsrl'><img src='https://github.com/mktsrl.png' width='32' height='32' style='border-radius:50%;' alt='mktsrl'/></a> | ITA - Bilancio UE con XBRL
 [l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 18.0.1.1.1 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 18.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Mostra il codice fiscale del cliente nella stampa del preventivo
@@ -4158,7 +4161,7 @@ addon | version | maintainers | summary
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 18.0.1.0.0 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_location_nuts](l10n_it_location_nuts/) | 18.0.1.0.1 |  | Opzioni NUTS specifiche per l'Italia
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 18.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
-[l10n_it_riba_oca](l10n_it_riba_oca/) | 18.0.1.3.0 |  | Ricevute bancarie
+[l10n_it_riba_oca](l10n_it_riba_oca/) | 18.0.1.4.0 |  | Ricevute bancarie
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 18.0.1.2.3 |  | ITA - Registri IVA
 [l10n_it_vat_settlement_communication](l10n_it_vat_settlement_communication/) | 18.0.1.0.3 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
 [l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 18.0.1.0.2 |  | Settlement date for VAT Statement
@@ -5170,6 +5173,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 18.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
 [mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 18.0.1.0.0 |  | Bridge module between mrp and mgmsystem
 [mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 18.0.1.0.0 |  | Bridge module between Product and Management System.
+[mgmtsystem_nonconformity_quality_control_oca](mgmtsystem_nonconformity_quality_control_oca/) | 18.0.1.0.0 |  | Bridge module between Quality Control and Non Conformities
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 18.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 18.0.1.1.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_objective](mgmtsystem_objective/) | 18.0.1.0.1 |  | Define objectives on your management system
@@ -7827,7 +7831,7 @@ addon | version | maintainers | summary
 [sale_discount_display_amount](sale_discount_display_amount/) | 18.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_elaboration](sale_elaboration/) | 18.0.1.3.2 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Set an elaboration for any sale line
 [sale_elaboration_brand](sale_elaboration_brand/) | 18.0.1.0.0 | <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Show product brand in sale elaboration report
-[sale_exception](sale_exception/) | 18.0.2.3.2 |  | Custom exceptions on sale order
+[sale_exception](sale_exception/) | 18.0.2.3.3 |  | Custom exceptions on sale order
 [sale_exception_product_sale_manufactured_for](sale_exception_product_sale_manufactured_for/) | 18.0.1.1.0 |  | The partner set in the sales order can order only if he/she has a commercial entity that is listed as one of the partners for which the products can be manufactured for.
 [sale_fixed_discount](sale_fixed_discount/) | 18.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 18.0.1.0.1 |  | Allows to force the invoice status of the sales order to Invoiced
@@ -7856,7 +7860,7 @@ addon | version | maintainers | summary
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 18.0.1.0.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 18.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
 [sale_order_finish_service](sale_order_finish_service/) | 18.0.1.0.0 |  | Adds a finish service flag on sale orders
-[sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.2 |  | General discount per sale order
+[sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.3 |  | General discount per sale order
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 18.0.1.0.0 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 18.0.1.0.1 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_invoicing_picking_filter](sale_order_invoicing_picking_filter/) | 18.0.1.0.0 |  | Create invoices from sale orders based on the products in pickings.
@@ -7869,7 +7873,7 @@ addon | version | maintainers | summary
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 18.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 18.0.1.0.0 |  | Sale order line description
 [sale_order_line_effective_date](sale_order_line_effective_date/) | 18.0.1.1.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Calculated effective dates in Sale Order Lines
-[sale_order_line_final_price](sale_order_line_final_price/) | 18.0.1.0.3 | <a href='https://github.com/eduezerouali-tecnativa'><img src='https://github.com/eduezerouali-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='eduezerouali-tecnativa'/></a> | Set the final price of a sale order line, and lock its unit price and discount for non sales managers
+[sale_order_line_final_price](sale_order_line_final_price/) | 18.0.1.0.4 | <a href='https://github.com/eduezerouali-tecnativa'><img src='https://github.com/eduezerouali-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='eduezerouali-tecnativa'/></a> | Set the final price of a sale order line, and lock its unit price and discount for non sales managers
 [sale_order_line_input](sale_order_line_input/) | 18.0.1.0.1 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 18.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_move_to_optional](sale_order_line_move_to_optional/) | 18.0.1.0.0 |  | Move sale order line to optional products.
@@ -9281,7 +9285,7 @@ addon | version | maintainers | summary
 [stock_picking_unreserve_button](stock_picking_unreserve_button/) | 18.0.1.0.0 |  | Stock Picking Unreserve Button
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 18.0.1.1.2 |  | Stock - Manual Quant Assignment
 [stock_reserve](stock_reserve/) | 18.0.1.0.0 |  | Stock reservations on products
-[stock_reserve_rule](stock_reserve_rule/) | 18.0.1.2.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Configure reservation rules by location
+[stock_reserve_rule](stock_reserve_rule/) | 18.0.1.2.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Configure reservation rules by location
 [stock_rule_reserve_max_quantity](stock_rule_reserve_max_quantity/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allows to reserve max available quantity when a move comes from an stock rule
 
 [//]: # (end addons)
@@ -9525,6 +9529,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_move_line_product](account_move_line_product/) | 18.0.1.0.0 |  | Displays the product in the journal entries and items
 [account_move_line_stock_info](account_move_line_stock_info/) | 18.0.1.0.0 |  | Account Move Line Stock Info
 [procurement_auto_create_group](procurement_auto_create_group/) | 18.0.1.0.1 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [product_route_profile](product_route_profile/) | 18.0.1.1.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Add Route profile concept on product

@@ -722,3 +722,33 @@ class TestReserveRule(ReserveRuleCommon):
         picking_2.move_line_ids.picked = False
         picking_2.action_assign()
         self.assertEqual(picking_2.move_line_ids.lot_id, lot_1)
+
+    def test_rule_packaging_existing_only(self):
+        """Test we do not reserve more quantity in a bin than the existing packaging"""
+        self._setup_packagings(
+            self.product1,
+            [
+                ("Transport Box", 100, self.transport_box),
+            ],
+        )
+        self._update_qty_in_location(
+            self.loc_zone1_bin1,
+            self.product1,
+            150,
+        )
+
+        picking = self._create_picking(self.wh, [(self.product1, 200)])
+        move = picking.move_ids
+        self._create_rule(
+            {},
+            [
+                {
+                    "location_id": self.loc_zone1.id,
+                    "sequence": 1,
+                    "removal_strategy": "packaging",
+                },
+            ],
+        )
+        picking.action_assign()
+        self.assertEqual(move.state, "partially_available")
+        self.assertEqual(move.quantity, 100.0)
