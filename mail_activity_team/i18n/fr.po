@@ -301,6 +301,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_activity_team.field_account_move__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_account_payment__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_account_setup_bank_manual_config__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_hr_department__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_hr_employee__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_hr_leave__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_hr_leave_allocation__activity_team_user_ids
+#: model:ir.model.fields,field_description:mail_activity_team.field_hr_version__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_ir_actions_server__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_ir_cron__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_mixin__activity_team_user_ids
