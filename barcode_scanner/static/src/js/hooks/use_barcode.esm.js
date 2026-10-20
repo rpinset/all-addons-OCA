@@ -18,9 +18,11 @@ export function useBarcode(callback) {
 
     onMounted(() => {
         barcodeService.bus.addEventListener("barcode_scanned", listener);
+        barcodeService.readers.count++;
     });
 
     onWillUnmount(() => {
         barcodeService.bus.removeEventListener("barcode_scanned", listener);
+        barcodeService.readers.count--;
     });
 }

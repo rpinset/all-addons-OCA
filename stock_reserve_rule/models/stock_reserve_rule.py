@@ -210,16 +210,19 @@ class StockReserveRuleRemoval(models.Model):
         # the _gather method, so based on fifo, fefo, ...
         for quant in quants:
             need = yield (
-                quant.location_id,
-                quant.quantity - quant.reserved_quantity,
                 need,
+                quant.location_id,
+                self.env["stock.lot"].browse(),
+                self.env["stock.quant.package"].browse(),
+                self.env["res.partner"].browse(),
+                False,
             )
 
     def _apply_strategy_empty_bin(self, quants):
         need = yield
         # Group by location (in this removal strategies, we want to consider
         # the total quantity held in a location).
-        quants_per_bin = quants._group_by_location()
+        quants_per_bin = quants.grouped("location_id")
         # We take goods only if we empty the bin.
         # The original ordering (fefo, fifo, ...) must be kept.
         product = fields.first(quants).product_id
@@ -236,7 +239,7 @@ class StockReserveRuleRemoval(models.Model):
                 "location_id",
             )
         ]
-        for location, location_quants in quants_per_bin:
+        for location, location_quants in quants_per_bin.items():
             if location.id in locations_with_other_quants:
                 continue
 
@@ -251,14 +254,22 @@ class StockReserveRuleRemoval(models.Model):
                 float_compare(need, location_quantity, precision_rounding=rounding)
                 != -1
             ):
-                need = yield location, location_quantity, need
+                need = yield (
+                    need,
+                    location,
+                    self.env["stock.lot"].browse(),
+                    self.env["stock.quant.package"].browse(),
+                    self.env["res.partner"].browse(),
+                    False,
+                )
 
     def _apply_strategy_packaging(self, quants):
         need = yield
         # Group by location (in this removal strategies, we want to consider
         # the total quantity held in a location).
-        quants_per_bin = quants._group_by_location()
-
+        quants_per_key = quants.grouped(
+            key=lambda qu: (qu.location_id, qu.lot_id, qu.package_id, qu.owner_id)
+        )
         product = fields.first(quants).product_id
 
         packaging_type_filter = self.packaging_level_ids
@@ -285,7 +296,7 @@ class StockReserveRuleRemoval(models.Model):
             return float_compare(value, other, precision_rounding=rounding) >= 0
 
         for pack_quantity in packaging_quantities:
-            for location, location_quants in quants_per_bin:
+            for (location, lot, pack, owner), location_quants in quants_per_key.items():
                 location_quantity = sum(location_quants.mapped("quantity")) - sum(
                     location_quants.mapped("reserved_quantity")
                 )
@@ -302,4 +313,4 @@ class StockReserveRuleRemoval(models.Model):
                     if float_is_zero(take, precision_rounding=rounding):
                         continue
                     location_quantity -= take
-                    need = yield location, location_quantity, take
+                    need = yield take, location, lot, pack, owner, True

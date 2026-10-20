@@ -1,4 +1,4 @@
-import {EventBus} from "@odoo/owl";
+import {EventBus, reactive} from "@odoo/owl";
 import {registry} from "@web/core/registry";
 import {session} from "@web/session";
 import {parseBarcode} from "@barcode_scanner/js/barcode_parser.esm";
@@ -88,6 +88,10 @@ export const barcodeService = {
 
     start() {
         const bus = new EventBus();
+        // How many mounted components read scans, all of them through
+        // `useBarcode`: a scan source such as a camera button only offers
+        // itself while one does.
+        const readers = reactive({count: 0});
         let timeout = null;
         let readonlyTimer = null;
         let barcodeInput = null;
@@ -394,6 +398,7 @@ export const barcodeService = {
 
         return {
             bus,
+            readers,
             parseBarcode,
             activate,
             deactivate,

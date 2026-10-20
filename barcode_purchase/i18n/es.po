@@ -1,0 +1,433 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-15 08:31+0000\n"
+"PO-Revision-Date: 2026-10-15 08:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "%(name)s cannot be purchased."
+msgstr "%(name)s no se puede comprar."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid ""
+"%(name)s confirmed -- set the lot/serial of %(products)s on the receipt."
+msgstr ""
+"%(name)s confirmado: indique el lote/número de serie de %(products)s en la "
+"recepción."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "ADD PRODUCT"
+msgstr "AÑADIR PRODUCTO"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Add Product"
+msgstr "Añadir producto"
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "Add at least one product to the order."
+msgstr "Añada al menos un producto al pedido."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "BUYER"
+msgstr "COMPRADOR"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "CONFIRM ORDER"
+msgstr "CONFIRMAR PEDIDO"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Confirm Buyer"
+msgstr "Confirmar comprador"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Confirm Location"
+msgstr "Confirmar ubicación"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Confirm Supplier"
+msgstr "Confirmar proveedor"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Create Purchase Order"
+msgstr "Crear pedido de compra"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "DESTINATION"
+msgstr "DESTINO"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Destination location selected: %(name)s"
+msgstr "Ubicación de destino seleccionada: %(name)s"
+
+#. module: barcode_purchase
+#: model_terms:ir.ui.view,arch_db:barcode_purchase.purchase_order_form
+msgid "Final Location"
+msgstr "Ubicación final"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "INCOMING LOCATIONS"
+msgstr "UBICACIONES DE ENTRADA"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "ITEMS"
+msgstr "ARTÍCULOS"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "LOT"
+msgstr "LOTE"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Loading locations..."
+msgstr "Cargando ubicaciones..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Loading products..."
+msgstr "Cargando productos..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Loading suppliers..."
+msgstr "Cargando proveedores..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Loading users..."
+msgstr "Cargando usuarios..."
+
+#. module: barcode_purchase
+#: model:ir.model.fields,field_description:barcode_purchase.field_purchase_order_line__barcode_lot_name
+msgid "Lot/Serial Read"
+msgstr "Lote/número de serie leído"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "No locations found."
+msgstr "No se encontraron ubicaciones."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "No products found."
+msgstr "No se encontraron productos."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "No products yet. Scan or add one."
+msgstr "Aún no hay productos. Escanee o añada uno."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "No suppliers found."
+msgstr "No se encontraron proveedores."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "No users found."
+msgstr "No se encontraron usuarios."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "ORDER LINES"
+msgstr "LÍNEAS DEL PEDIDO"
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "One of the scanned products no longer exists."
+msgstr "Uno de los productos escaneados ya no existe."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "PRICE"
+msgstr "PRECIO"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Please add at least one product."
+msgstr "Añada al menos un producto."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Please select a supplier."
+msgstr "Seleccione un proveedor."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Product not found."
+msgstr "Producto no encontrado."
+
+#. module: barcode_purchase
+#: model:ir.model,name:barcode_purchase.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: barcode_purchase
+#: model:ir.model,name:barcode_purchase.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/tiles/purchase_menu_tiles.esm.js:0
+msgid "Purchase Orders"
+msgstr "Pedidos de compra"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Purchase order %(name)s confirmed."
+msgstr "Pedido de compra %(name)s confirmado."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Purchase order %(name)s created -- it is waiting for approval."
+msgstr "Pedido de compra %(name)s creado: está pendiente de aprobación."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Purchase order %(name)s saved as a draft."
+msgstr "Pedido de compra %(name)s guardado como borrador."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Purchase order %(name)s was created but is still a draft."
+msgstr "El pedido de compra %(name)s se creó pero sigue en borrador."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "QTY"
+msgstr "CANT."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "SKU:"
+msgstr "SKU:"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "SUBTOTAL"
+msgstr "SUBTOTAL"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Save Draft"
+msgstr "Guardar borrador"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Search by name or city..."
+msgstr "Buscar por nombre o ciudad..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Search by name or login..."
+msgstr "Buscar por nombre o usuario..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Search by name or reference..."
+msgstr "Buscar por nombre o referencia..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Search locations..."
+msgstr "Buscar ubicaciones..."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select Buyer"
+msgstr "Seleccionar comprador"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select Destination"
+msgstr "Seleccionar destino"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select Supplier"
+msgstr "Seleccionar proveedor"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select buyer"
+msgstr "Seleccione el comprador"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select location"
+msgstr "Seleccione la ubicación"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Select supplier"
+msgstr "Seleccione el proveedor"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Serial number %(lot)s is already on the list."
+msgstr "El número de serie %(lot)s ya está en la lista."
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "Serial number %(lot)s of %(name)s stands for a single unit."
+msgstr "El número de serie %(lot)s de %(name)s corresponde a una sola unidad."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Set these lots on the receipt by hand: %(lots)s"
+msgstr "Indique estos lotes a mano en la recepción: %(lots)s"
+
+#. module: barcode_purchase
+#: model:ir.model.fields,help:barcode_purchase.field_purchase_order_line__barcode_lot_name
+msgid ""
+"The lot or serial number read from the label when the order was raised from "
+"the Barcode app. It goes onto the receipt when the receipt is created."
+msgstr ""
+"El lote o número de serie leído de la etiqueta al crear el pedido desde la "
+"app de códigos de barras. Se escribe en la recepción cuando esta se crea."
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "The quantity to order of %(name)s must be positive."
+msgstr "La cantidad a pedir de %(name)s debe ser positiva."
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "The selected destination is not valid."
+msgstr "El destino seleccionado no es válido."
+
+#. module: barcode_purchase
+#. odoo-python
+#: code:addons/barcode_purchase/models/purchase_order.py:0
+msgid "The selected vendor no longer exists."
+msgstr "El proveedor seleccionado ya no existe."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "USERS"
+msgstr "USUARIOS"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "VENDOR"
+msgstr "PROVEEDOR"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "VENDOR REFERENCE"
+msgstr "REFERENCIA DEL PROVEEDOR"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "VENDORS"
+msgstr "PROVEEDORES"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "Validate automatically"
+msgstr "Validar automáticamente"
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/js/screens/purchase_screen.esm.js:0
+msgid "Wait until the order is saved to scan again."
+msgstr "Espere a que se guarde el pedido para volver a escanear."
+
+#. module: barcode_purchase
+#. odoo-javascript
+#: code:addons/barcode_purchase/static/src/xml/purchase_templates.xml:0
+msgid "e.g. PO-2023-001"
+msgstr "p. ej. PO-2023-001"

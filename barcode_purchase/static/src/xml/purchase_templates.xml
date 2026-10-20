@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="barcode_purchase.PurchaseScreen">
+        <div class="ilx-po-v2-screen">
+            <header class="ilx-po-v2-header">
+                <button class="ilx-po-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-po-v2-header-title">Create Purchase Order</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-po-v2-main">
+                <div class="ilx-po-v2-card">
+                    <div class="ilx-po-v2-field-group">
+                        <label class="ilx-po-v2-label">VENDOR</label>
+                        <div class="ilx-po-v2-input-box" t-on-click="selectSupplier">
+                            <i class="fa fa-building-o ilx-po-v2-input-icon" />
+                            <span class="ilx-po-v2-input-text">
+                                <t t-if="state.supplier">
+                                    <t t-esc="state.supplier.name" />
+                                </t>
+                                <t t-else="">Select supplier</t>
+                            </span>
+                            <i class="fa fa-chevron-down ilx-po-v2-input-chevron" />
+                        </div>
+                    </div>
+
+                    <div class="ilx-po-v2-grid-2">
+                        <div class="ilx-po-v2-field-group">
+                            <label class="ilx-po-v2-label">DESTINATION</label>
+                            <div
+                                class="ilx-po-v2-input-box"
+                                t-on-click="selectDestinationLocation"
+                            >
+                                <i class="fa fa-map-marker ilx-po-v2-input-icon" />
+                                <span class="ilx-po-v2-input-text">
+                                    <t t-if="state.destinationLocation">
+                                        <t
+                                            t-esc="state.destinationLocation.display_name"
+                                        />
+                                    </t>
+                                    <t t-else="">Select location</t>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ilx-po-v2-field-group">
+                            <label class="ilx-po-v2-label">BUYER</label>
+                            <div class="ilx-po-v2-input-box" t-on-click="selectBuyer">
+                                <i class="fa fa-user-o ilx-po-v2-input-icon" />
+                                <span class="ilx-po-v2-input-text">
+                                    <t t-if="state.buyer">
+                                        <t t-esc="state.buyer.name" />
+                                    </t>
+                                    <t t-else="">Select buyer</t>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ilx-po-v2-field-group" style="margin-bottom: 0;">
+                        <label class="ilx-po-v2-label">VENDOR REFERENCE</label>
+                        <div class="ilx-po-v2-input-box">
+                            <input
+                                class="ilx-po-v2-raw-input"
+                                type="text"
+                                placeholder="e.g. PO-2023-001"
+                                t-model="state.vendorRef"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ilx-po-v2-lines-header">
+                    <span
+                        class="ilx-po-v2-label"
+                        style="margin: 0; font-size: 0.8rem;"
+                    >ORDER LINES</span>
+                    <div class="ilx-po-v2-badge"><t
+                        t-esc="state.lines.length"
+                    /> ITEMS</div>
+                </div>
+
+                <div class="ilx-po-v2-lines-container">
+                    <t
+                        t-foreach="state.lines"
+                        t-as="line"
+                        t-key="line.product_id + '_' + (line.lot_name || '')"
+                    >
+                        <div class="ilx-po-v2-line-card">
+                            <div class="ilx-po-v2-line-top">
+                                <div class="ilx-po-v2-line-title">
+                                    <h4>
+                                        <t t-esc="line.product_name" />
+                                    </h4>
+                                    <span class="ilx-po-v2-sku">SKU: <t
+                                        t-esc="line.default_code || 'N/A'"
+                                    /></span>
+                                </div>
+                                <button
+                                    class="ilx-po-v2-delete"
+                                    t-on-click="() => this.removeLine(line)"
+                                >
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
+
+                            <div class="ilx-po-v2-line-table">
+                                <div class="ilx-po-v2-col">
+                                    <span class="ilx-po-v2-col-header">QTY</span>
+                                    <input
+                                        class="ilx-po-v2-col-val ilx-po-v2-input-inline"
+                                        type="number"
+                                        min="0"
+                                        step="any"
+                                        t-model.number="line.qty"
+                                        t-att-readonly="line.tracking === 'serial' and line.lot_name"
+                                        t-on-change="() => this.refreshPrices()"
+                                    />
+                                    <span class="ilx-po-v2-uom" t-esc="line.uom_name" />
+                                </div>
+                                <div class="ilx-po-v2-col">
+                                    <span class="ilx-po-v2-col-header">PRICE</span>
+                                    <input
+                                        class="ilx-po-v2-col-val ilx-po-v2-input-inline"
+                                        type="number"
+                                        step="any"
+                                        min="0"
+                                        t-att-placeholder="line.price_estimate === null ? '' : line.price_estimate"
+                                        t-model.number="line.price_unit"
+                                    />
+                                </div>
+                                <div class="ilx-po-v2-col">
+                                    <span class="ilx-po-v2-col-header">LOT</span>
+                                    <span
+                                        class="ilx-po-v2-col-val"
+                                        style="font-weight: 400;"
+                                    >
+                                        <t t-esc="line.lot_name || '-'" />
+                                    </span>
+                                </div>
+                                <div
+                                    class="ilx-po-v2-col"
+                                    style="align-items: flex-end;"
+                                >
+                                    <span class="ilx-po-v2-col-header">SUBTOTAL</span>
+                                    <span class="ilx-po-v2-col-val ilx-po-v2-subtotal">
+                                        <t t-esc="lineSubtotal(line)" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    <div
+                        t-if="state.lines.length === 0"
+                        class="text-center p-4 ilx-empty-text"
+                    >
+                        No products yet. Scan or add one.
+                    </div>
+                </div>
+
+                <button class="ilx-po-v2-add-btn" t-on-click="addProduct">
+                    <i class="fa fa-plus-circle" /> ADD PRODUCT
+                </button>
+
+                <div class="ilx-po-v2-checkbox-wrapper">
+                    <input
+                        type="checkbox"
+                        id="auto_validate"
+                        class="ilx-po-v2-checkbox"
+                        t-model="state.autoValidate"
+                    />
+                    <label
+                        for="auto_validate"
+                        class="ilx-po-v2-checkbox-label"
+                    >Validate automatically</label>
+                </div>
+            </main>
+
+            <footer class="ilx-po-v2-footer">
+                <button class="ilx-po-v2-draft-btn" t-on-click="() => this.saveDraft()">
+                    <i class="fa fa-save" /> Save Draft
+                </button>
+                <button
+                    class="ilx-po-v2-confirm-btn"
+                    t-att-disabled="state.saving"
+                    t-on-click="() => this.createPurchase()"
+                >
+                    <i class="fa fa-check-circle-o" /> CONFIRM ORDER
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_purchase.SupplierSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Select Supplier</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search by name or city..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">VENDORS</h2>
+
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading suppliers...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredSuppliers" t-as="sup" t-key="sup.id">
+                            <div
+                                t-att-class="state.selectedSupplier?.id === sup.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectSupplier(sup)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <t t-if="sup.image_url">
+                                            <img
+                                                t-att-src="sup.image_url"
+                                                t-on-error="() => this.onImageError(sup)"
+                                            />
+                                        </t>
+                                        <t t-else="">
+                                            <div class="ilx-emp-v2-avatar-placeholder">
+                                                <t
+                                                    t-esc="sup.name.charAt(0).toUpperCase()"
+                                                />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="sup.name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-esc="sup.city || ''" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedSupplier?.id === sup.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredSuppliers.length === 0"
+                            class="text-center p-4 ilx-empty-text"
+                        >
+                            No suppliers found.
+                        </div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    t-att-class="!state.selectedSupplier ? 'ilx-emp-v2-confirm-btn disabled' : 'ilx-emp-v2-confirm-btn'"
+                    t-on-click="confirmSelection"
+                >
+                    Confirm Supplier
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_purchase.BuyerSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Select Buyer</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search by name or login..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">USERS</h2>
+
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading users...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredUsers" t-as="user" t-key="user.id">
+                            <div
+                                t-att-class="state.selectedUser?.id === user.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectUser(user)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <t t-if="user.image_url">
+                                            <img
+                                                t-att-src="user.image_url"
+                                                t-on-error="() => this.onImageError(user)"
+                                            />
+                                        </t>
+                                        <t t-else="">
+                                            <div class="ilx-emp-v2-avatar-placeholder">
+                                                <t
+                                                    t-esc="user.name.charAt(0).toUpperCase()"
+                                                />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="user.name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-esc="user.login || ''" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedUser?.id === user.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredUsers.length === 0"
+                            class="text-center p-4 ilx-empty-text"
+                        >
+                            No users found.
+                        </div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    t-att-class="!state.selectedUser ? 'ilx-emp-v2-confirm-btn disabled' : 'ilx-emp-v2-confirm-btn'"
+                    t-on-click="confirmSelection"
+                >
+                    Confirm Buyer
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_purchase.PurchaseLocationSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Select Destination</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search locations..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">INCOMING LOCATIONS</h2>
+
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading locations...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredLocations" t-as="loc" t-key="loc.id">
+                            <div
+                                t-att-class="state.selectedLocation?.id === loc.id ? 'ilx-emp-v2-card selected' : 'ilx-emp-v2-card'"
+                                t-on-click="() => this.selectLocation(loc)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <div class="ilx-emp-v2-avatar-placeholder">
+                                            <i class="fa fa-map-marker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="loc.display_name" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <t t-if="state.selectedLocation?.id === loc.id">
+                                        <i
+                                            class="fa fa-check-circle ilx-emp-v2-icon-selected"
+                                        />
+                                    </t>
+                                    <t t-else="">
+                                        <i
+                                            class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                        />
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredLocations.length === 0"
+                            class="text-center p-4 ilx-empty-text"
+                        >
+                            No locations found.
+                        </div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    t-att-class="!state.selectedLocation ? 'ilx-emp-v2-confirm-btn disabled' : 'ilx-emp-v2-confirm-btn'"
+                    t-on-click="confirmSelection"
+                >
+                    Confirm Location
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_purchase.PurchaseProductSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Add Product</h1>
+                <div style="width: 48px;" />
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Search by name or reference..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">PRODUCTS</h2>
+
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading products...</div>
+                    </t>
+                    <t t-else="">
+                        <t
+                            t-foreach="filteredProducts"
+                            t-as="product"
+                            t-key="product.id"
+                        >
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-on-click="() => this.confirmSelection(product)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <t t-if="product.image_url">
+                                            <img
+                                                t-att-src="product.image_url"
+                                                t-on-error="() => this.onImageError(product)"
+                                            />
+                                        </t>
+                                        <t t-else="">
+                                            <div class="ilx-emp-v2-avatar-placeholder">
+                                                <i class="fa fa-cube" />
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="product.display_name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-esc="product.default_code || ''" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <i
+                                        class="fa fa-plus-circle ilx-emp-v2-icon-chevron"
+                                    />
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredProducts.length === 0"
+                            class="text-center p-4 ilx-empty-text"
+                        >
+                            No products found.
+                        </div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+</templates>

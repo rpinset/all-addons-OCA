@@ -101,10 +101,23 @@ class ReserveRuleCommon(BaseCommon):
         return picking
 
     def _update_qty_in_location(
-        self, location, product, quantity, in_date=None, package=None
+        self,
+        location,
+        product,
+        quantity,
+        in_date=None,
+        package=None,
+        lot=None,
+        owner=None,
     ):
         self.env["stock.quant"]._update_available_quantity(
-            product, location, quantity, package_id=package, in_date=in_date
+            product,
+            location,
+            quantity,
+            lot_id=lot,
+            package_id=package,
+            owner_id=owner,
+            in_date=in_date,
         )
 
     def _create_rule(self, rule_values, removal_values):

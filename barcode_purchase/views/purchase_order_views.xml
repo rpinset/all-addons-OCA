@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Binhex
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="purchase_order_form" model="ir.ui.view">
+        <field name="name">purchase.order.form - barcode_purchase</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']/list/field[@name='product_qty']"
+                position="after"
+            >
+                <field name="barcode_lot_name" optional="hide" />
+                <field
+                    name="location_final_id"
+                    string="Final Location"
+                    optional="hide"
+                    groups="stock.group_stock_multi_locations"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-12 14:46+0000\n"
+"PO-Revision-Date: 2026-10-19 23:46+0000\n"
 "Last-Translator: Jussi Lehto <jussi.lehto@cetmix.com>\n"
 "Language-Team: none\n"
 "Language: fi\n"
@@ -47,6 +47,11 @@ msgstr "Tilien tunnisteet"
 #: model:ir.model.fields,help:account_usability.field_account_account__group_id
 msgid "Account prefixes can determine account groups."
 msgstr ""
+
+#. module: account_usability
+#: model:ir.ui.menu,name:account_usability.menu_finance
+msgid "Accounting"
+msgstr "Talous"
 
 #. module: account_usability
 #: model:ir.model.fields,field_description:account_usability.field_account_account_tag__account_ids
@@ -98,6 +103,11 @@ msgstr ""
 #. module: account_usability
 #: model:ir.model.fields,field_description:account_usability.field_account_account__group_id
 msgid "Group"
+msgstr ""
+
+#. module: account_usability
+#: model:ir.model,name:account_usability.model_base_language_install
+msgid "Install Language"
 msgstr ""
 
 #. module: account_usability

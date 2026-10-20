@@ -1,5 +1,6 @@
 # Copyright 2019 Camptocamp SA
 # Copyright 2019 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
+# Copyright 2025 Akretion
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 from odoo import models
 from odoo.tools.float_utils import float_compare
@@ -57,9 +58,19 @@ class StockMove(models.Model):
                 ):
                     continue
 
+                # The removal rule location can also be a parent of the move's
+                # source location (e.g. removal rule on "Stock" for a move from
+                # "Stock/Zone1/A"). In this case, the quants must be gathered
+                # from the move's source location, otherwise quants located in
+                # sibling locations (e.g. "Stock/Zone2") would be reserved as
+                # well, which is not allowed.
+                gather_location = removal_rule.location_id
+                if not gather_location.is_sublocation_of(location_id):
+                    gather_location = location_id
+
                 quants = self.env["stock.quant"]._gather(
                     self.product_id,
-                    removal_rule.location_id,
+                    gather_location,
                     lot_id=lot_id,
                     package_id=forced_package_id,
                     owner_id=owner_id,
@@ -70,6 +81,15 @@ class StockMove(models.Model):
                 rule_quants = removal_rule._filter_quants(self, quants)
                 if not rule_quants:
                     continue
+                excluded_quants = quants - rule_quants
+                exclusion_ctx = {}
+                if excluded_quants:
+                    # ensure excluded quants are taken into account by removing
+                    #  quant_cache
+                    exclusion_ctx = {
+                        "exclude_quant_ids": excluded_quants.ids,
+                        "quants_cache": None,
+                    }
 
                 # Apply the advanced removal strategy, if any. Even within the
                 # application of the removal strategy, the original company's
@@ -83,16 +103,20 @@ class StockMove(models.Model):
                         next_quant = strategy.send(still_need)
                         if not next_quant:
                             continue
-                        location, location_quantity, to_take = next_quant
-                        taken_in_loc = super()._update_reserved_quantity(
+                        to_take, location, lot, pack, owner, strict_reservation = (
+                            next_quant
+                        )
+                        taken_in_loc = super(
+                            StockMove, self.with_context(**exclusion_ctx)
+                        )._update_reserved_quantity(
                             # in this strategy, we take as much as we can
                             # from this bin
                             to_take,
                             location_id=location,
-                            lot_id=lot_id,
-                            package_id=package_id,
-                            owner_id=owner_id,
-                            strict=strict,
+                            lot_id=lot,
+                            package_id=pack,
+                            owner_id=owner,
+                            strict=strict_reservation,
                         )
                         still_need -= taken_in_loc
                         # We should break between quants if original needs is fulfilled

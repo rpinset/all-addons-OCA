@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-10-17 08:01 UTC
+Generated 2026-10-20 18:54 UTC
 
 ## Skipped repos
 
@@ -85,7 +85,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
@@ -113,6 +112,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-rental](https://github.com/OCA/vertical-rental) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | `no_module` | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | `no_module` | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | `no_module` | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | `no_module` | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [website-cms](https://github.com/OCA/website-cms) | `no_module` | No directory with __manifest__.py at repo root |

@@ -1,0 +1,305 @@
+// Styles for the barcode Purchase screen. The selector screens reuse the core
+// `ilx-emp-v2-*` classes, so only the purchase-order layout and the home-tile
+// icon live here. Colours come from the core `--ilx-*` design tokens.
+
+.ilx-icon-purchase {
+    // Soft pastel ground with the accent on the glyph, matching the other
+    // home-tile icons instead of a strong filled background.
+    background: var(--ilx-surface-container-low);
+    color: var(--ilx-primary);
+}
+
+.ilx-po-v2-screen {
+    position: absolute;
+    inset: 0;
+    background-color: var(--ilx-surface);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ilx-po-v2-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    background: var(--ilx-surface-container-lowest);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    margin-bottom: 1.5rem;
+}
+.ilx-po-v2-back-btn {
+    background: none;
+    border: none;
+    color: var(--ilx-primary);
+    font-size: 1.25rem;
+    min-height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ilx-po-v2-header-title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--ilx-primary);
+    flex: 1;
+    text-align: center;
+}
+
+.ilx-po-v2-main {
+    flex: 1;
+    padding: 0 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.ilx-po-v2-card {
+    background: var(--ilx-surface-container-lowest);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ilx-po-v2-field-group {
+    margin-bottom: 1.25rem;
+}
+.ilx-po-v2-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--ilx-on-surface-variant);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+.ilx-po-v2-input-box {
+    display: flex;
+    align-items: center;
+    background: var(--ilx-surface-container-low);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--ilx-surface-container-high);
+}
+.ilx-po-v2-input-icon {
+    font-size: 1.1rem;
+    color: var(--ilx-primary);
+    margin-right: 12px;
+}
+.ilx-po-v2-input-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--ilx-on-surface);
+}
+.ilx-po-v2-input-chevron {
+    color: var(--ilx-on-surface-variant);
+}
+.ilx-po-v2-raw-input {
+    background: transparent;
+    border: none;
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--ilx-on-surface);
+    outline: none;
+}
+.ilx-po-v2-raw-input::placeholder {
+    color: var(--ilx-on-surface-variant);
+}
+
+.ilx-po-v2-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.ilx-po-v2-lines-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ilx-po-v2-badge {
+    background: var(--ilx-primary-container);
+    color: var(--ilx-on-primary-container);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.ilx-po-v2-lines-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.ilx-po-v2-line-card {
+    background: var(--ilx-surface-container-lowest);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.ilx-po-v2-line-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.ilx-po-v2-line-title h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ilx-on-surface);
+}
+.ilx-po-v2-sku {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: var(--ilx-on-surface-variant);
+}
+.ilx-po-v2-delete {
+    background: none;
+    border: none;
+    color: var(--ilx-error);
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.ilx-po-v2-line-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.ilx-po-v2-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.ilx-po-v2-col-header {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--ilx-on-surface-variant);
+}
+.ilx-po-v2-col-val {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ilx-on-surface);
+}
+.ilx-po-v2-subtotal {
+    color: var(--ilx-primary);
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+.ilx-po-v2-input-inline {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 50px;
+    padding: 0;
+    border-bottom: 1px dashed var(--ilx-outline-variant);
+    color: var(--ilx-on-surface);
+}
+.ilx-po-v2-input-inline:focus {
+    border-bottom: 1px solid var(--ilx-primary);
+}
+
+.ilx-po-v2-add-btn {
+    width: 100%;
+    background: transparent;
+    border: 2px dashed var(--ilx-outline-variant);
+    color: var(--ilx-primary);
+    border-radius: var(--ilx-radius-xl, 0.75rem);
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.ilx-po-v2-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+.ilx-po-v2-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--ilx-outline-variant);
+    border-radius: 4px;
+    background-color: var(--ilx-surface-container-lowest);
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+.ilx-po-v2-checkbox:checked {
+    background-color: var(--ilx-primary);
+    border-color: var(--ilx-primary);
+}
+.ilx-po-v2-checkbox:checked::after {
+    content: "\f00c"; // FontAwesome check
+    font-family: "FontAwesome";
+    color: var(--ilx-on-primary);
+    font-size: 13px;
+}
+.ilx-po-v2-checkbox-label {
+    font-size: 0.95rem;
+    color: var(--ilx-on-surface-variant);
+    cursor: pointer;
+    user-select: none;
+}
+
+.ilx-po-v2-footer {
+    flex-shrink: 0;
+    background: var(--ilx-surface-container-lowest);
+    padding: 1rem 1.5rem calc(env(safe-area-inset-bottom) + 1rem);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
+}
+.ilx-po-v2-draft-btn {
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    color: var(--ilx-on-surface);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+.ilx-po-v2-confirm-btn {
+    background: var(--ilx-primary);
+    color: var(--ilx-on-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ilx-po-v2-confirm-btn:disabled {
+    opacity: 0.6;
+}
+
+// The purchase unit a line is ordered in, under its quantity.
+.ilx-po-v2-uom {
+    font-size: 0.75rem;
+    color: var(--ilx-on-surface-variant);
+}

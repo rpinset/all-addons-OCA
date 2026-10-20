@@ -9,7 +9,7 @@
 {
     "name": "Web Responsive",
     "summary": "Responsive web client, community-supported",
-    "version": "18.0.1.0.8",
+    "version": "18.0.1.0.10",
     "category": "Website",
     "website": "https://github.com/OCA/web",
     "author": "LasLabs, Tecnativa, ITerra, Onestein, "
@@ -24,10 +24,10 @@
         "views/res_users_views.xml",
     ],
     "assets": {
-        "web._assets_primary_variables": {
+        "web._assets_primary_variables": [
             "/web_responsive/static/src/legacy/scss/form_variable.scss",
             "/web_responsive/static/src/legacy/scss/primary_variable.scss",
-        },
+        ],
         "web.assets_backend": [
             "web_responsive/static/src/lib/fuse/fuse.basic.min.js",
             "/web_responsive/static/src/legacy/scss/web_responsive.scss",
@@ -47,6 +47,7 @@
             "/web_responsive/static/src/components/file_viewer/*",
             "/web_responsive/static/src/components/chatter/*",
             "/web_responsive/static/src/components/control_panel/*",
+            "/web_responsive/static/src/components/search_panel/*",
             "/web_responsive/static/src/components/command_palette/*",
             "/web_responsive/static/src/views/form/*",
         ],

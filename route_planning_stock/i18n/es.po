@@ -39,6 +39,12 @@ msgid "Cancelled from picking"
 msgstr "Cancelado desde albarán"
 
 #. module: route_planning_stock
+#. odoo-python
+#: code:addons/route_planning_stock/models/stock_picking.py:0
+msgid "Checkpoints"
+msgstr ""
+
+#. module: route_planning_stock
 #: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
 msgid "Demand"
 msgstr "Demanda"
@@ -87,6 +93,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning_stock.view_route_checkpoint_form
 msgid "Quantity"
 msgstr "Cantidad"
+
+#. module: route_planning_stock
+#: model:ir.model,name:route_planning_stock.model_route_route
+msgid "Route"
+msgstr ""
 
 #. module: route_planning_stock
 #: model:ir.model,name:route_planning_stock.model_route_area

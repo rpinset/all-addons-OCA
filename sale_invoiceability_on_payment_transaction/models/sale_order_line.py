@@ -13,8 +13,8 @@ class SaleOrderLine(models.Model):
 
     def _is_delivery_started(self):
         """Check if the delivery of the line has been started,
-        i.e. if there is at least one done move."""
-        return any(move.state == "done" for move in self.move_ids)
+        i.e. if there is at least one done/cancel move."""
+        return any(move.state in ("done", "cancel") for move in self.move_ids)
 
     @api.depends("order_id.transaction_ids.state")
     def _compute_qty_to_invoice(self):
@@ -23,21 +23,6 @@ class SaleOrderLine(models.Model):
             line.qty_to_invoice = line.product_uom_qty - line.qty_invoiced
         self -= paid_lines
         return super()._compute_qty_to_invoice()
-
-    @api.depends("order_id.transaction_ids.state")
-    def _compute_amount_to_invoice(self):
-        paid_lines = self._filter_paid_lines_for_invoicing()
-        for line in paid_lines:
-            # Compute the field based on product_uom_qty instead of qty_delivered.
-            if line.product_uom_qty:
-                uom_qty_to_consider = line.product_uom_qty
-                qty_to_invoice = uom_qty_to_consider - line.qty_invoiced_posted
-                unit_price_total = line.price_total / line.product_uom_qty
-                line.amount_to_invoice = unit_price_total * qty_to_invoice
-            else:
-                line.amount_to_invoice = 0.0
-        self -= paid_lines
-        return super()._compute_amount_to_invoice()
 
     @api.depends("order_id.transaction_ids.state")
     def _compute_untaxed_amount_to_invoice(self):

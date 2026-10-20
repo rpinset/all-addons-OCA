@@ -1,0 +1,20 @@
+/* barcode_camera — camera scan floating action button */
+
+.barcode-camera-fab {
+    position: fixed;
+    right: calc(env(safe-area-inset-right) + 1.25rem);
+    /* The screens keep their main actions at the bottom: the 80px navigation
+       bar of the picking, or the footer with the confirm button of the wizard
+       and the selectors (a 56px button with 1rem of padding around it). The
+       button floats above both, clear of the device's safe area. A screen with
+       a taller bar can set --barcode-camera-fab-bottom to raise it. */
+    bottom: var(
+        --barcode-camera-fab-bottom,
+        calc(env(safe-area-inset-bottom) + 80px + 1rem)
+    );
+    /* Above the app's own layers (its navigation bar is at 101). The app shell
+       is a fixed, full-screen layer of its own, so Odoo's dialogs and
+       notifications, rendered outside it, still cover the button. */
+    z-index: 1100;
+    border: 0;
+}

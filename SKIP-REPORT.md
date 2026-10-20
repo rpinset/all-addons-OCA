@@ -1,6 +1,6 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-10-17 08:01 UTC
+Generated 2026-10-20 18:54 UTC
 
 Total skipped: **110**
 
@@ -103,7 +103,6 @@ Count: **80**
 | [product-kitting](https://github.com/OCA/product-kitting) | [18.0](https://github.com/OCA/product-kitting/tree/18.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [18.0](https://github.com/OCA/program/tree/18.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [18.0](https://github.com/OCA/project-agile/tree/18.0) | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [18.0](https://github.com/OCA/pwa-builder/tree/18.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [18.0](https://github.com/OCA/resource/tree/18.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [18.0](https://github.com/OCA/rest-api/tree/18.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [18.0](https://github.com/OCA/role-policy/tree/18.0) | No directory with __manifest__.py at repo root |
@@ -122,6 +121,7 @@ Count: **80**
 | [vertical-rental](https://github.com/OCA/vertical-rental) | [18.0](https://github.com/OCA/vertical-rental/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [18.0](https://github.com/OCA/vertical-travel/tree/18.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [18.0](https://github.com/OCA/wallet/tree/18.0) | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [18.0](https://github.com/OCA/web-app-shell/tree/18.0) | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | [18.0](https://github.com/OCA/webhook/tree/18.0) | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | [18.0](https://github.com/OCA/webkit-tools/tree/18.0) | No directory with __manifest__.py at repo root |
 | [website-cms](https://github.com/OCA/website-cms) | [18.0](https://github.com/OCA/website-cms/tree/18.0) | No directory with __manifest__.py at repo root |

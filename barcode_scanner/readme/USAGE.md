@@ -57,3 +57,13 @@ import {barcodeStartupTasks} from "@barcode_scanner/js/registries";
 
 barcodeStartupTasks.add("my_config", (env) => loadMyConfig(env.services.orm));
 ```
+
+Read scans in a screen with the ``useBarcodeHandler`` hook. The barcode service
+counts the components that do (``readers.count``, reactive), so a scan source
+such as a camera button can offer itself only while a screen reads scans:
+
+```js
+import {useBarcodeHandler} from "@barcode_scanner/js/hooks/use_barcode_handler.esm";
+
+useBarcodeHandler({onScan: (barcode, parsed) => this.onScan(barcode, parsed)});
+```

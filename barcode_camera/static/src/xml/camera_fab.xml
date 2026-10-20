@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="barcode_camera.CameraFab">
+        <button
+            t-if="isVisible"
+            type="button"
+            class="barcode-camera-fab ilx-fab"
+            aria-label="Camera scan"
+            title="Camera scan"
+            t-on-click="onScanClick"
+        >
+            <i class="fa fa-camera" aria-hidden="true" />
+        </button>
+    </t>
+</templates>

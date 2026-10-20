@@ -50,7 +50,7 @@ class VoxelMixin(models.AbstractModel):
 
     # Export methods
     # --------------
-    def enqueue_voxel_report(self, report):
+    def enqueue_voxel_report(self, report_name):
         eta = self.company_id._get_voxel_report_eta()
         queue_obj = self.env["queue.job"].sudo()
         for record in self.sudo():
@@ -65,17 +65,17 @@ class VoxelMixin(models.AbstractModel):
             new_delay = (
                 record.with_context(company_id=self.company_id.id)
                 .with_delay(eta=eta)
-                ._get_and_send_voxel_report(report)
+                ._get_and_send_voxel_report(report_name)
             )
             job = queue_obj.search([("uuid", "=", new_delay.uuid)], limit=1)
             record.voxel_job_ids |= job
 
-    def _get_and_send_voxel_report(self, report):
+    def _get_and_send_voxel_report(self, report_name):
         self.ensure_one()
         # Support legacy enqueued jobs passing XML-ID
-        if isinstance(report, str):
-            report = self.env.ref(report)
-        report_xml = report._render_qweb_xml(self.ids, {})[0]
+        report_xml = self.env["ir.actions.report"]._render_qweb_xml(
+            report_name, self.ids, {}
+        )[0]
         # Remove blank spaces
         tree = etree.fromstring(report_xml, etree.XMLParser(remove_blank_text=True))
         clean_report_xml = etree.tostring(tree, xml_declaration=True, encoding="UTF-8")

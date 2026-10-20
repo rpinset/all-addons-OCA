@@ -3,8 +3,6 @@
 
 from datetime import datetime
 
-from odoo.tests import Form
-
 from odoo.addons.base.tests.common import BaseCommon
 
 
@@ -47,7 +45,12 @@ class TestVoxelStockPickingCommon(BaseCommon):
             }
         )
         cls.product = cls.env["product.product"].create(
-            {"default_code": "DC_001", "name": "Product 1 (test)", "type": "consu"}
+            {
+                "default_code": "DC_001",
+                "name": "Product 1 (test)",
+                "type": "consu",
+                "is_storable": True,
+            }
         )
         cls.env["product.customerinfo"].create(
             {
@@ -62,6 +65,7 @@ class TestVoxelStockPickingCommon(BaseCommon):
                 "default_code": "DC_002",
                 "name": "Product 2 (test)",
                 "type": "consu",
+                "is_storable": True,
                 "tracking": "lot",
             }
         )
@@ -88,18 +92,11 @@ class TestVoxelStockPickingCommon(BaseCommon):
             }
         )
         sm = cls.picking.move_ids[0]
-        sm.write({"quantity": sm.product_uom_qty})
+        sm.write({"quantity": sm.product_uom_qty, "picked": True})
         sm = cls.picking.move_ids[1]
-        sm.write({"quantity": sm.product_uom_qty})
+        sm.write({"quantity": sm.product_uom_qty, "picked": True})
         sm.move_line_ids.lot_id = cls.lot.id
-        backorder_wizard_dict = cls.picking.button_validate()
-        # pylint: disable=W8121
-        backorder_wizard = Form(
-            cls.env[backorder_wizard_dict["res_model"]].with_context(
-                backorder_wizard_dict["context"]
-            )
-        ).save()
-        backorder_wizard.process()
+        cls.picking._action_done()
 
     @classmethod
     def _create_sale_order(cls):

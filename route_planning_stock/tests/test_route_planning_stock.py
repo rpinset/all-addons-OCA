@@ -226,6 +226,45 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertEqual(new_checkpoint.origin_checkpoint_id, checkpoint2)
         self.assertEqual(new_checkpoint.picking_id, next_picking2)
 
+    @mute_logger("odoo.models.unlink")
+    def test_route_incident_picking_done(self):
+        picking_2 = self.picking.copy(
+            {
+                "partner_id": self.partner_2.id,
+                "route_area_id": self.area_north.id,
+            }
+        )
+        with RecordCapturer(
+            self.env["route.route"], [("route_area_id", "=", self.area_north.id)]
+        ) as capture:
+            self.picking.button_validate()
+            next_picking = self.picking._get_next_transfers()
+            # To prevent the next lines from being added to the same picking
+            next_picking.do_print_picking()
+            picking_2.button_validate()
+            next_picking2 = picking_2._get_next_transfers()
+        route = capture.records
+        self.assertEqual(len(route), 1)
+        route.action_planned()
+        self.assertEqual(route.state, "planned")
+        checkpoint1, checkpoint2 = route.checkpoint_ids
+        checkpoint1.action_done()
+        self._create_incident(
+            checkpoint2, self.incident_reschedule, "Reschedule to tomorrow"
+        )
+        self.assertEqual(checkpoint2.state, "incident")
+        self.assertEqual(checkpoint2.incident_type_id, self.incident_reschedule)
+        # Create a new route
+        new_route = self._create_route(self.area_north)
+        self.assertEqual(new_route.state, "draft")
+        next_picking2.button_validate()
+        self.assertEqual(next_picking2.state, "done")
+        with self.assertRaisesRegex(
+            UserError,
+            "Not enough addresses with coordinates for optimisation",
+        ):
+            new_route.action_planned()
+
     @users("route_user1")
     def test_checkpoint_partial_validation(self):
         """Test checkpoint validation with partial delivery from checkpoint."""

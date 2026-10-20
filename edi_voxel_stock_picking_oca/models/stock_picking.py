@@ -76,11 +76,11 @@ class Picking(models.Model):
         pickings = self.filtered(able_to_voxel)
         if pickings:
             for picking in pickings:
-                report = picking.partner_id.voxel_picking_report_id or self.env.ref(
-                    "edi_voxel_stock_picking_oca.report_voxel_picking"
+                report_name = (
+                    picking.partner_id.voxel_picking_report_id.report_name
+                    or "edi_voxel_stock_picking_oca.report_voxel_picking"
                 )
-                if report:
-                    picking.enqueue_voxel_report(report)
+                picking.enqueue_voxel_report(report_name)
 
     def get_document_type(self):
         """Document type name to be used in the name of the Voxel report"""

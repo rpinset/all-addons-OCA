@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-28 07:47+0000\n"
+"PO-Revision-Date: 2026-10-19 11:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1152,6 +1152,8 @@ msgid ""
 "Package type '%(package_type_name)s' is not allowed for delivery method %"
 "(carrier_name)s."
 msgstr ""
+"Il tipo di collo '%(package_type_name)s' non è consentito per il metodo di "
+"spedizione %(carrier_name)s."
 
 #. module: shopfloor
 #. odoo-python

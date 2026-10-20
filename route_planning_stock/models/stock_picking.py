@@ -98,16 +98,9 @@ class StockPicking(models.Model):
 
     def action_view_route_planning(self):
         self.ensure_one()
-        action = self.env["ir.actions.act_window"]._for_xml_id(
-            "route_planning.action_route_route"
+        return self.route_checkpoint_ids.route_id._get_records_action(
+            name=self.env._("Checkpoints")
         )
-        action.update(
-            {
-                "res_id": self.route_checkpoint_ids.route_id.id,
-                "views": [(False, "form")],
-            }
-        )
-        return action
 
     def _can_add_to_route(self):
         """Check if the picking can be added to a route"""
