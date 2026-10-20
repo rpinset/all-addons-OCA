@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-10-17 07:55 UTC** (elapsed 179s)
+Last build: **2026-10-20 18:48 UTC** (elapsed 186s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -65,7 +65,7 @@ Last build: **2026-10-17 07:55 UTC** (elapsed 179s)
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | 1143570 2021-10-17 OCA-git-bot [ADD] setup.py |
 | [l10n-france](https://github.com/OCA/l10n-france) | 20 | 4066626 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 7 | e0eb893 2023-10-09 Weblate Update translation files |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | 14e1d59 2026-09-30 mymage Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 87 | 9ad0564 2026-10-19 mymage Translated using Weblate (Italian) |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 3 | d631e83 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 17 | aa4c98b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-peru](https://github.com/OCA/l10n-peru) | 1 | bcca2e7 2023-09-03 OCA-git-bot [UPD] README.rst |

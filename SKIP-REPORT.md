@@ -1,6 +1,6 @@
 # Skipped repos — branch `12.0`
 
-Generated 2026-10-17 07:55 UTC
+Generated 2026-10-20 18:48 UTC
 
 Total skipped: **149**
 
@@ -61,7 +61,6 @@ Count: **88**
 | [pms](https://github.com/OCA/pms) | [12.0](https://github.com/OCA/pms/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [product-configurator](https://github.com/OCA/product-configurator) | [12.0](https://github.com/OCA/product-configurator/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | [12.0](https://github.com/OCA/program/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [12.0](https://github.com/OCA/pwa-builder/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [12.0](https://github.com/OCA/py3o.template/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [12.0](https://github.com/OCA/pylint-odoo/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [12.0](https://github.com/OCA/pytest-odoo/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
@@ -98,6 +97,7 @@ Count: **88**
 | [vertical-medical](https://github.com/OCA/vertical-medical) | [12.0](https://github.com/OCA/vertical-medical/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [vertical-realestate](https://github.com/OCA/vertical-realestate) | [12.0](https://github.com/OCA/vertical-realestate/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [12.0](https://github.com/OCA/web-api-contrib/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [12.0](https://github.com/OCA/web-app-shell/tree/12.0) | fatal: Remote branch 12.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
