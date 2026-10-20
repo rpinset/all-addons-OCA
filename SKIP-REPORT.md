@@ -1,6 +1,6 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-10-17 08:00 UTC
+Generated 2026-10-20 18:52 UTC
 
 Total skipped: **137**
 
@@ -124,7 +124,6 @@ Count: **98**
 | [program](https://github.com/OCA/program) | [17.0](https://github.com/OCA/program/tree/17.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [17.0](https://github.com/OCA/project-agile/tree/17.0) | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | [17.0](https://github.com/OCA/project-reporting/tree/17.0) | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [17.0](https://github.com/OCA/pwa-builder/tree/17.0) | No directory with __manifest__.py at repo root |
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | [17.0](https://github.com/OCA/repo-maintainer/tree/17.0) | No directory with __manifest__.py at repo root |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | [17.0](https://github.com/OCA/repo-maintainer-conf/tree/17.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [17.0](https://github.com/OCA/resource/tree/17.0) | No directory with __manifest__.py at repo root |
@@ -150,6 +149,7 @@ Count: **98**
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [17.0](https://github.com/OCA/vertical-travel/tree/17.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [17.0](https://github.com/OCA/wallet/tree/17.0) | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [17.0](https://github.com/OCA/web-api-contrib/tree/17.0) | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [17.0](https://github.com/OCA/web-app-shell/tree/17.0) | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | [17.0](https://github.com/OCA/webhook/tree/17.0) | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | [17.0](https://github.com/OCA/webkit-tools/tree/17.0) | No directory with __manifest__.py at repo root |
 | [website-cms](https://github.com/OCA/website-cms) | [17.0](https://github.com/OCA/website-cms/tree/17.0) | No directory with __manifest__.py at repo root |
