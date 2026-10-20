@@ -1,8 +1,8 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-10-17 08:03 UTC
+Generated 2026-10-20 18:56 UTC
 
-Total skipped: **139**
+Total skipped: **138**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -42,7 +42,7 @@ Count: **29**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **110**
+Count: **109**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -118,7 +118,6 @@ Count: **110**
 | [program](https://github.com/OCA/program) | [19.0](https://github.com/OCA/program/tree/19.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [19.0](https://github.com/OCA/project-agile/tree/19.0) | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | [19.0](https://github.com/OCA/project-reporting/tree/19.0) | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [19.0](https://github.com/OCA/pwa-builder/tree/19.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [19.0](https://github.com/OCA/resource/tree/19.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [19.0](https://github.com/OCA/rest-api/tree/19.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [19.0](https://github.com/OCA/role-policy/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -151,9 +150,9 @@ Count: **110**
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [19.0](https://github.com/OCA/vertical-travel/tree/19.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [19.0](https://github.com/OCA/wallet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [19.0](https://github.com/OCA/web-api-contrib/tree/19.0) | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [19.0](https://github.com/OCA/web-app-shell/tree/19.0) | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | [19.0](https://github.com/OCA/webhook/tree/19.0) | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | [19.0](https://github.com/OCA/webkit-tools/tree/19.0) | No directory with __manifest__.py at repo root |
-| [website-cms](https://github.com/OCA/website-cms) | [19.0](https://github.com/OCA/website-cms/tree/19.0) | No directory with __manifest__.py at repo root |
 | [website-themes](https://github.com/OCA/website-themes) | [19.0](https://github.com/OCA/website-themes/tree/19.0) | No directory with __manifest__.py at repo root |
 | [wms](https://github.com/OCA/wms) | [19.0](https://github.com/OCA/wms/tree/19.0) | No directory with __manifest__.py at repo root |
 
