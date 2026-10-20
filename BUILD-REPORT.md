@@ -1,6 +1,6 @@
 # Build report — `15.0`
 
-Generated 2026-10-17 07:57 UTC
+Generated 2026-10-20 18:50 UTC
 
 ## Skipped repos
 
@@ -107,7 +107,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
@@ -152,6 +151,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-travel](https://github.com/OCA/vertical-travel) | `no_module` | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | `no_module` | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | `no_branch` | fatal: Remote branch 15.0 not found in upstream origin |
 | [webhook](https://github.com/OCA/webhook) | `no_module` | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [website-cms](https://github.com/OCA/website-cms) | `no_module` | No directory with __manifest__.py at repo root |

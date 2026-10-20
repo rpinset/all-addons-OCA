@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-10-17 07:57 UTC** (elapsed 67s)
+Last build: **2026-10-20 18:50 UTC** (elapsed 93s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -57,7 +57,7 @@ Last build: **2026-10-17 07:57 UTC** (elapsed 67s)
 | [iot](https://github.com/OCA/iot) | 7 | d4b6b4c 2025-06-21 mymage Translated using Weblate (Italian) |
 | [knowledge](https://github.com/OCA/knowledge) | 11 | f0200dc 2026-10-01 mymage Translated using Weblate (Italian) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 4 | 465d3a6 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 37 | 274792a 2025-10-09 OCA-git-bot [BOT] post-merge updates |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 37 | 0040bf0 2026-10-19 Weblate Update translation files |
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | 4 | f2c808b 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | 2 | 97256e8 2025-06-05 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-finland](https://github.com/OCA/l10n-finland) | 3 | e6b142a 2025-02-02 oca-git-bot [IMP] update dotfiles |
@@ -96,7 +96,7 @@ Last build: **2026-10-17 07:57 UTC** (elapsed 67s)
 | [repair](https://github.com/OCA/repair) | 12 | 89affc7 2026-05-15 OCA-git-bot [BOT] post-merge updates |
 | [report-print-send](https://github.com/OCA/report-print-send) | 3 | f981cbc 2025-04-03 Weblate Update translation files |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 22 | 109902a 2026-07-27 Morita Shinnosuke [UPD] copier update |
-| [rest-framework](https://github.com/OCA/rest-framework) | 14 | c537ec2 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [rest-framework](https://github.com/OCA/rest-framework) | 14 | af51229 2026-10-19 OCA-git-bot [BOT] post-merge updates |
 | [rma](https://github.com/OCA/rma) | 7 | bb31ac9 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |

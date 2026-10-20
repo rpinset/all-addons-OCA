@@ -5402,6 +5402,9 @@ and promote its widespread use.
 ## From OCA/rest-framework
 
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# Rest Frameworks
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rest-framework&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/rest-framework/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/rest-framework/actions/workflows/test.yml?query=branch%3A15.0)
@@ -5409,8 +5412,6 @@ and promote its widespread use.
 [![Translation Status](https://translation.odoo-community.org/widgets/rest-framework-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rest-framework-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# Rest Frameworks
 
 This repository has nice modules to interact with Odoo using JSON and HTTP requests.
 
@@ -5424,7 +5425,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 15.0.1.2.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 15.0.1.2.3 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 15.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [base_rest_auth_user_service](base_rest_auth_user_service/) | 15.0.1.0.1 |  | Login/logout from session using a REST call
 [base_rest_datamodel](base_rest_datamodel/) | 15.0.1.1.0 |  | Datamodel binding for base_rest

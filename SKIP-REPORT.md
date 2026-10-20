@@ -1,6 +1,6 @@
 # Skipped repos — branch `15.0`
 
-Generated 2026-10-17 07:57 UTC
+Generated 2026-10-20 18:50 UTC
 
 Total skipped: **148**
 
@@ -49,7 +49,6 @@ Count: **69**
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | [15.0](https://github.com/OCA/odoo-test-helper/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | [15.0](https://github.com/OCA/odoorpc/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [15.0](https://github.com/OCA/openupgradelib/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [15.0](https://github.com/OCA/pwa-builder/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [15.0](https://github.com/OCA/py3o.template/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [15.0](https://github.com/OCA/pylint-odoo/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [15.0](https://github.com/OCA/pytest-odoo/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
@@ -79,6 +78,7 @@ Count: **69**
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [15.0](https://github.com/OCA/version-control-platform/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [15.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 | [wallet](https://github.com/OCA/wallet) | [15.0](https://github.com/OCA/wallet/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [15.0](https://github.com/OCA/web-app-shell/tree/15.0) | fatal: Remote branch 15.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
