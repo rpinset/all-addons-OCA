@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-17 08:02 UTC
+Generated 2026-10-20 18:55 UTC
 
 ## Skipped repos
 
@@ -182,7 +182,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | `no_module` | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
@@ -254,6 +253,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [wallet](https://github.com/OCA/wallet) | `no_module` | No directory with __manifest__.py at repo root |
 | [web-api](https://github.com/OCA/web-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | `no_module` | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | `no_module` | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | `no_module` | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [website](https://github.com/OCA/website) | `no_module` | No directory with __manifest__.py at repo root |

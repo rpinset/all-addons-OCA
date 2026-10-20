@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-10-17 08:02 UTC** (elapsed 46s)
+Last build: **2026-10-20 18:55 UTC** (elapsed 102s)
 
 - Repos integrated: **13**
-- Canonical modules: **61**
+- Canonical modules: **62**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **252**
 
@@ -23,5 +23,5 @@ Last build: **2026-10-17 08:02 UTC** (elapsed 46s)
 | [server-brand](https://github.com/OCA/server-brand) | 1 | 9637fe3 2026-10-07 oca-ci [UPD] Update remove_odoo_enterprise.pot |
 | [server-ux](https://github.com/OCA/server-ux) | 1 | d952d4d 2026-10-13 oca-ci [UPD] Update date_range.pot |
 | [storage](https://github.com/OCA/storage) | 25 | a7169e7 2026-09-25 OCA-git-bot [BOT] post-merge updates |
-| [web](https://github.com/OCA/web) | 1 | 046ebfe 2026-10-06 oca-ci [UPD] Update web_environment_ribbon.pot |
+| [web](https://github.com/OCA/web) | 2 | 7d3f2d2 2026-10-20 oca-ci [UPD] Update web_m2x_options.pot |
 
