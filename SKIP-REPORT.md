@@ -1,6 +1,6 @@
 # Skipped repos — branch `14.0`
 
-Generated 2026-10-17 07:55 UTC
+Generated 2026-10-20 18:47 UTC
 
 Total skipped: **125**
 
@@ -47,7 +47,6 @@ Count: **67**
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | [14.0](https://github.com/OCA/odoo-test-helper/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | [14.0](https://github.com/OCA/odoorpc/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [14.0](https://github.com/OCA/openupgradelib/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [14.0](https://github.com/OCA/pwa-builder/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [14.0](https://github.com/OCA/py3o.template/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [14.0](https://github.com/OCA/pylint-odoo/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [14.0](https://github.com/OCA/pytest-odoo/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
@@ -77,6 +76,7 @@ Count: **67**
 | [sustainability](https://github.com/OCA/sustainability) | [14.0](https://github.com/OCA/sustainability/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [tier-validation](https://github.com/OCA/tier-validation) | [14.0](https://github.com/OCA/tier-validation/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 | [version-control-platform](https://github.com/OCA/version-control-platform) | [14.0](https://github.com/OCA/version-control-platform/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [14.0](https://github.com/OCA/web-app-shell/tree/14.0) | fatal: Remote branch 14.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 

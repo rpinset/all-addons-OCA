@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-17 07:55 UTC** (elapsed 126s)
+Last build: **2026-10-20 18:47 UTC** (elapsed 110s)
 
 - Repos integrated: **140**
 - Canonical modules: **2914**
@@ -53,7 +53,7 @@ Last build: **2026-10-17 07:55 UTC** (elapsed 126s)
 | [edi](https://github.com/OCA/edi) | 63 | 8938600 2026-08-04 Marwan Behillil Translated using Weblate (French) |
 | [edi-framework](https://github.com/OCA/edi-framework) | 2 | 1359541 2025-10-13 mymage Translated using Weblate (Italian) |
 | [event](https://github.com/OCA/event) | 18 | 8259a1a 2025-10-13 mymage Added translation using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 45 | 1bd8402 2026-10-02 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 45 | 96e1c1f 2026-10-19 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 18 | 76d7116 2025-11-10 mymage Translated using Weblate (Italian) |
 | [geospatial](https://github.com/OCA/geospatial) | 4 | c643b29 2025-07-22 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 11 | e03e9b2 2026-10-01 mymage Translated using Weblate (Italian) |
@@ -74,7 +74,7 @@ Last build: **2026-10-17 07:55 UTC** (elapsed 126s)
 | [l10n-france](https://github.com/OCA/l10n-france) | 31 | 422856a 2026-09-01 Guillaume MASSON [UPD] copier update |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 11 | d64b515 2025-07-30 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 4 | b3d811c 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | 696a8d3 2026-10-15 Sergio Zanchetta Translated using Weblate (Italian) |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 89 | c258919 2026-10-19 mymage Translated using Weblate (Italian) |
 | [l10n-luxemburg](https://github.com/OCA/l10n-luxemburg) | 1 | 1b33e66 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 0ac8d28 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 10 | e9d9d6c 2025-08-20 Weblate Update translation files |
