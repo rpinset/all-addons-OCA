@@ -1,6 +1,6 @@
 # Skipped repos — branch `13.0`
 
-Generated 2026-10-17 07:55 UTC
+Generated 2026-10-20 18:47 UTC
 
 Total skipped: **148**
 
@@ -59,7 +59,6 @@ Count: **86**
 | [pms](https://github.com/OCA/pms) | [13.0](https://github.com/OCA/pms/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [product-configurator](https://github.com/OCA/product-configurator) | [13.0](https://github.com/OCA/product-configurator/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | [13.0](https://github.com/OCA/program/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [13.0](https://github.com/OCA/pwa-builder/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [13.0](https://github.com/OCA/py3o.template/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [13.0](https://github.com/OCA/pylint-odoo/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [13.0](https://github.com/OCA/pytest-odoo/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
@@ -96,6 +95,7 @@ Count: **86**
 | [vertical-rental](https://github.com/OCA/vertical-rental) | [13.0](https://github.com/OCA/vertical-rental/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [wallet](https://github.com/OCA/wallet) | [13.0](https://github.com/OCA/wallet/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [13.0](https://github.com/OCA/web-api-contrib/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [13.0](https://github.com/OCA/web-app-shell/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
