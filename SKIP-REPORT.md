@@ -1,6 +1,6 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-10-17 07:58 UTC
+Generated 2026-10-20 18:52 UTC
 
 Total skipped: **122**
 
@@ -116,7 +116,6 @@ Count: **76**
 | [product-kitting](https://github.com/OCA/product-kitting) | [16.0](https://github.com/OCA/product-kitting/tree/16.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [16.0](https://github.com/OCA/program/tree/16.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [16.0](https://github.com/OCA/project-agile/tree/16.0) | No directory with __manifest__.py at repo root |
-| [pwa-builder](https://github.com/OCA/pwa-builder) | [16.0](https://github.com/OCA/pwa-builder/tree/16.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [16.0](https://github.com/OCA/resource/tree/16.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [16.0](https://github.com/OCA/rest-api/tree/16.0) | No directory with __manifest__.py at repo root |
 | [role-policy](https://github.com/OCA/role-policy) | [16.0](https://github.com/OCA/role-policy/tree/16.0) | No directory with __manifest__.py at repo root |
@@ -136,6 +135,7 @@ Count: **76**
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [16.0](https://github.com/OCA/vertical-travel/tree/16.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [16.0](https://github.com/OCA/wallet/tree/16.0) | No directory with __manifest__.py at repo root |
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | [16.0](https://github.com/OCA/web-api-contrib/tree/16.0) | No directory with __manifest__.py at repo root |
+| [web-app-shell](https://github.com/OCA/web-app-shell) | [16.0](https://github.com/OCA/web-app-shell/tree/16.0) | No directory with __manifest__.py at repo root |
 | [webhook](https://github.com/OCA/webhook) | [16.0](https://github.com/OCA/webhook/tree/16.0) | No directory with __manifest__.py at repo root |
 | [webkit-tools](https://github.com/OCA/webkit-tools) | [16.0](https://github.com/OCA/webkit-tools/tree/16.0) | No directory with __manifest__.py at repo root |
 | [website-themes](https://github.com/OCA/website-themes) | [16.0](https://github.com/OCA/website-themes/tree/16.0) | No directory with __manifest__.py at repo root |

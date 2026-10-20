@@ -5,12 +5,12 @@
     "name": "Stock Location Product Restriction",
     "summary": """
         Prevent to mix different products into the same stock location""",
-    "version": "16.0.1.2.2",
+    "version": "16.0.2.0.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "maintainers": ["lmignon", "rousseldenis"],
     "website": "https://github.com/OCA/stock-logistics-warehouse",
-    "depends": ["stock"],
+    "depends": ["stock", "stock_location_fill_state"],
     "data": ["views/stock_location.xml"],
     "pre_init_hook": "pre_init_hook",
 }
