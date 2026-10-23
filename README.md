@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-20 18:47 UTC** (elapsed 110s)
+Last build: **2026-10-23 23:52 UTC** (elapsed 127s)
 
 - Repos integrated: **140**
 - Canonical modules: **2914**
@@ -134,7 +134,7 @@ Last build: **2026-10-20 18:47 UTC** (elapsed 110s)
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | 2 | 2d67406 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 7 | f65f884 2026-10-05 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 109 | 758e8d7 2026-10-11 mymage Translated using Weblate (Italian) |
-| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | cfd0d59 2026-06-07 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 93 | 8c855e8 2026-10-22 mymage Translated using Weblate (Italian) |
 | [storage](https://github.com/OCA/storage) | 19 | c0e1f39 2025-10-20 OCA-git-bot [BOT] post-merge updates |
 | [survey](https://github.com/OCA/survey) | 8 | 53c9f49 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [timesheet](https://github.com/OCA/timesheet) | 31 | 5592f3c 2025-07-23 OCA-git-bot [BOT] post-merge updates |
@@ -150,5 +150,5 @@ Last build: **2026-10-20 18:47 UTC** (elapsed 110s)
 | [web-api-contrib](https://github.com/OCA/web-api-contrib) | 1 | 17d7acf 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [website](https://github.com/OCA/website) | 15 | 2e7fdb7 2026-03-16 OCA-git-bot [BOT] post-merge updates |
 | [website-cms](https://github.com/OCA/website-cms) | 3 | cb82f27 2026-05-13 mymage Translated using Weblate (Italian) |
-| [wms](https://github.com/OCA/wms) | 76 | 4171e24 2026-10-05 Weblate Update translation files |
+| [wms](https://github.com/OCA/wms) | 76 | 58fdcc5 2026-10-22 mymage Translated using Weblate (Italian) |
 
