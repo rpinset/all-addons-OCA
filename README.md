@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-10-20 18:48 UTC** (elapsed 186s)
+Last build: **2026-10-23 23:53 UTC** (elapsed 172s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -49,7 +49,7 @@ Last build: **2026-10-20 18:48 UTC** (elapsed 186s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | f19f439 2026-09-21 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 23 | 57b731e 2025-09-02 Weblate Update translation files |
 | [event](https://github.com/OCA/event) | 30 | af4f23b 2024-10-15 mymage Translated using Weblate (Italian) |
-| [field-service](https://github.com/OCA/field-service) | 46 | 2c1605a 2026-10-07 mymage Translated using Weblate (Italian) |
+| [field-service](https://github.com/OCA/field-service) | 46 | 92e5469 2026-10-22 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 16 | b4b1fbd 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [geospatial](https://github.com/OCA/geospatial) | 15 | 83a10be 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 96c76ff 2026-10-01 mymage Translated using Weblate (Italian) |
