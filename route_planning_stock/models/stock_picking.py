@@ -120,7 +120,7 @@ class StockPicking(models.Model):
     def _find_auto_route(self):
         """Assign picking to a route or create a new one"""
         self.ensure_one()
-        Route = self.env["route.route"]
+        Route = self.env["route.route"].sudo()
         Checkpoint = self.env["route.checkpoint"]
         if not self._can_add_to_route():
             return
@@ -131,6 +131,7 @@ class StockPicking(models.Model):
         )
         if not route:
             route = Route.create(self._prepare_route_vals())
+        route.message_subscribe(partner_ids=[self.env.user.partner_id.id])
         # Create checkpoint for this picking's partner
         checkpoint = self.route_checkpoint_ids.filtered(lambda x: x.route_id == route)
         if not checkpoint:

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <!--
+        Add a "Quality" tab to the reception screen for incoming pickings,
+        without touching barcode_stock: the tab button and its content are
+        injected into the inherited PickingScreen template.
+    -->
+    <t
+        t-name="barcode_stock_quality.PickingScreenQuality"
+        t-inherit="barcode_scanner.PickingScreen"
+        t-inherit-mode="extension"
+    >
+        <xpath expr="//div[hasclass('ilx-kw-tabs')]" position="inside">
+            <button
+                t-if="state.pickingTypeCode === 'incoming'"
+                t-att-class="state.activeTab === 'quality' ? 'ilx-kw-tab active' : 'ilx-kw-tab'"
+                t-on-click="() => this.setTab('quality')"
+            >
+                <i class="fa fa-check-square-o me-1" /> Quality
+                <div
+                t-if="state.activeTab === 'quality'"
+                class="ilx-kw-tab-indicator"
+            />
+            </button>
+        </xpath>
+        <xpath expr="//div[hasclass('ilx-kw-main-spacer')]" position="before">
+            <t t-if="state.activeTab === 'quality'">
+                <QualityTab pickingId="state.picking.id" answers="qualityAnswers" />
+            </t>
+        </xpath>
+    </t>
+
+    <t t-name="barcode_stock_quality.QualityTab">
+        <div class="ilx-quality-tab">
+            <t t-if="!state.canInspect">
+                <div class="ilx-quality-empty">
+                    Only Quality Control users can run the inspections.
+                </div>
+            </t>
+            <t t-elif="state.loading">
+                <div class="ilx-quality-empty">Loading inspections…</div>
+            </t>
+            <t t-elif="!state.inspections.length">
+                <div class="ilx-quality-empty">
+                    No quality inspection for this reception.
+                </div>
+            </t>
+
+            <div
+                t-foreach="state.inspections"
+                t-as="inspection"
+                t-key="inspection.inspection_id"
+                class="ilx-quality-inspection"
+            >
+                <div class="ilx-quality-inspection-head">
+                    <div class="ilx-quality-inspection-title">
+                        <t t-esc="inspection.test_name" />
+                    </div>
+                    <span
+                        class="ilx-quality-badge"
+                        t-att-class="{
+                            'ilx-quality-badge-ok': inspection.state === 'success',
+                            'ilx-quality-badge-ko': inspection.state === 'failed' or inspection.state === 'waiting',
+                        }"
+                    >
+                        <t t-if="inspection.state === 'success'">Passed</t>
+                        <t t-elif="inspection.state === 'failed'">Failed</t>
+                        <t t-elif="inspection.state === 'waiting'">To review</t>
+                        <t t-else="">Pending</t>
+                    </span>
+                </div>
+                <div class="ilx-quality-inspection-sub" t-if="inspection.lot_name">
+                    <t t-esc="inspection.product_name" /> ·
+                    Lot/Serial: <t t-esc="inspection.lot_name" />
+                </div>
+                <div class="ilx-quality-inspection-sub" t-else="">
+                    <t t-esc="inspection.product_name" />
+                </div>
+
+                <!-- Questions (editable only while the inspection is ready) -->
+                <t t-if="isEditable(inspection)">
+                    <div
+                        t-foreach="inspection.lines"
+                        t-as="line"
+                        t-key="line.id"
+                        class="ilx-quality-question"
+                    >
+                        <div class="ilx-quality-question-name">
+                            <t t-esc="line.name" />
+                        </div>
+                        <div class="ilx-quality-question-notes" t-if="line.notes">
+                            <t t-esc="line.notes" />
+                        </div>
+                        <t t-if="line.question_type === 'qualitative'">
+                            <div class="ilx-quality-choices">
+                                <button
+                                    t-foreach="line.possible_values"
+                                    t-as="value"
+                                    t-key="value.id"
+                                    class="ilx-quality-choice"
+                                    t-att-class="{'ilx-quality-choice-active': isChosen(inspection, line, value.id)}"
+                                    t-on-click="() => this.setQualitative(inspection, line, value.id)"
+                                >
+                                    <t t-esc="value.name" />
+                                </button>
+                            </div>
+                        </t>
+                        <t t-if="line.question_type === 'quantitative'">
+                            <div class="ilx-quality-measure">
+                                <input
+                                    type="number"
+                                    step="any"
+                                    class="ilx-quality-measure-input"
+                                    t-att-value="measureOf(inspection, line)"
+                                    t-on-input="(ev) => this.onQuantitative(inspection, line, ev)"
+                                />
+                                <span
+                                    class="ilx-quality-measure-uom"
+                                    t-if="line.uom_name"
+                                >
+                                    <t t-esc="line.uom_name" />
+                                </span>
+                            </div>
+                        </t>
+                    </div>
+
+                    <button
+                        class="ilx-quality-submit"
+                        t-att-disabled="!allAnswered(inspection) or state.busyId === inspection.inspection_id"
+                        t-on-click="() => this.submit(inspection)"
+                    >
+                        Confirm inspection
+                    </button>
+                </t>
+
+                <!-- Answers of a confirmed inspection, read-only -->
+                <t t-elif="isConfirmed(inspection)">
+                    <div
+                        t-foreach="inspection.lines"
+                        t-as="line"
+                        t-key="line.id"
+                        class="ilx-quality-answer"
+                    >
+                        <i
+                            t-att-class="line.success ? 'fa fa-check-circle ilx-quality-answer-ok' : 'fa fa-times-circle ilx-quality-answer-ko'"
+                        />
+                        <span class="ilx-quality-answer-name">
+                            <t t-esc="line.name" />
+                        </span>
+                        <span class="ilx-quality-answer-value">
+                            <t t-esc="answerLabel(line)" />
+                        </span>
+                    </div>
+                </t>
+
+                <!-- Photo evidence: available once there is a failure to justify -->
+                <div
+                    class="ilx-quality-evidence"
+                    t-if="inspection.state === 'waiting' or inspection.state === 'failed'"
+                >
+                    <label class="ilx-quality-photo-btn">
+                        <i class="fa fa-camera me-1" /> Attach photo evidence
+                        <input
+                        type="file"
+                        accept="image/*"
+                        capture="environment"
+                        class="ilx-quality-photo-input"
+                        t-on-change="(ev) => this.onPhotoSelected(inspection, ev)"
+                    />
+                    </label>
+                    <span class="ilx-quality-photo-count" t-if="inspection.photo_count">
+                        <t t-esc="inspection.photo_count" /> photo(s)
+                    </span>
+                </div>
+
+                <!-- Undo a wrong confirmation: back to draft to answer again -->
+                <button
+                    t-if="canReset(inspection)"
+                    class="ilx-quality-reset"
+                    t-att-disabled="state.busyId === inspection.inspection_id"
+                    t-on-click="() => this.reset(inspection)"
+                >
+                    <i class="fa fa-undo me-1" /> Back to draft
+                </button>
+            </div>
+        </div>
+    </t>
+
+</templates>

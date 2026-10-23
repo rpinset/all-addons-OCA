@@ -2,7 +2,7 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
 from odoo import api, fields, models
-from odoo.tools import float_is_zero
+from odoo.tools import float_compare, float_is_zero
 
 from ..constants.fiscal import (
     CFOP_DESTINATION_EXPORT,
@@ -176,6 +176,21 @@ class Tax(models.Model):
 
     uot_id = fields.Many2one(comodel_name="uom.uom", string="Tax UoM")
 
+    withholding_min_value = fields.Float(
+        string="Minimum Withholding Value",
+        digits="Fiscal Tax Value",
+        default=0.00,
+        help="Legal waiver of withholding (dispensa de retenção): when the "
+        "value computed for this withholding tax is equal or lower than this "
+        "amount, the tax is not withheld. For instance R$ 10,00 for the IRRF "
+        "on professional services, per art. 67 of Lei 9.430/1996 and "
+        "Solução de Consulta COSIT 258/2024.\n"
+        "Kept empty (0,00) means no waiver. It applies to the value computed "
+        "for one document line: the Brazilian law sets the limit per payment "
+        "or credit event, which the fiscal engine cannot know when it "
+        "computes the document.",
+    )
+
     tax_group_id = fields.Many2one(
         comodel_name="l10n_br_fiscal.tax.group",
         string="Fiscal Tax Group",
@@ -275,6 +290,22 @@ class Tax(models.Model):
         return operation_line.fiscal_operation_type or FISCAL_OUT
 
     @api.model
+    def _is_import_entry(self, **kwargs):
+        """An entry whose base follows the customs value instead of the price.
+
+        The accessory costs of an import are the customs expenses, which travel
+        in ii_customhouse_charges and are added explicitly by every import
+        branch below. other_value belongs to a domestic operation, where the
+        law does put it in the base, and it only reaches an import through
+        base_with_additional_values.
+        """
+        cfop = kwargs.get("cfop")
+        if not cfop or cfop.destination != CFOP_DESTINATION_EXPORT:
+            return False
+        operation_line = kwargs.get("operation_line")
+        return self._fiscal_operation_type(operation_line) == FISCAL_IN
+
+    @api.model
     def _compute_tax_base(self, tax, tax_dict, **kwargs):
         company = kwargs.get("company") or tax.env.company
         currency = kwargs.get("currency") or company.currency_id
@@ -287,9 +318,10 @@ class Tax(models.Model):
         other_value = kwargs.get("other_value", 0.00)
 
         if tax.tax_group_id.base_with_additional_values:
-            tax_dict["add_to_base"] += sum(
-                [freight_value, insurance_value, other_value]
-            )
+            additional_values = [freight_value, insurance_value]
+            if not self._is_import_entry(**kwargs):
+                additional_values.append(other_value)
+            tax_dict["add_to_base"] += sum(additional_values)
         tax_dict["remove_from_base"] += sum([discount_value])
 
         base = 0.00
@@ -469,8 +501,6 @@ class Tax(models.Model):
 
             tax_dict["add_to_base"] += kwargs.get("ii_customhouse_charges", 0.00)
 
-            other_value = kwargs.get("other_value", 0.00)
-            tax_dict["remove_from_base"] += sum([other_value])
             tax_dict["compute_with_tax_value"] = True
 
         tax_dict.update(self._compute_tax(tax, taxes_dict, **kwargs))
@@ -595,7 +625,7 @@ class Tax(models.Model):
         tax_dict = taxes_dict.get(tax.tax_domain)
         partner = kwargs.get("partner")
         company = kwargs.get("company")
-        icms_cst_id = kwargs.get("icms_cst_id")
+        icms_cst_id = kwargs.get("icms_cst_id") or self.env["l10n_br_fiscal.cst"]
 
         if taxes_dict.get("icms"):
             if company.state_id != partner.state_id:
@@ -954,6 +984,13 @@ class Tax(models.Model):
 
             tax_domain = taxes[tax.tax_domain]
             tax_value = tax_domain.get("tax_value", 0.00)
+            if (
+                tax_domain["tax_withholding"]
+                and tax_value
+                and tax.withholding_min_value
+                and self._is_withholding_waived(tax, tax_value, **kwargs)
+            ):
+                tax_domain["tax_value"] = tax_value = 0.00
             if tax_domain["tax_withholding"]:
                 result_amounts["amount_withholding"] += tax_value
             else:
@@ -966,6 +1003,26 @@ class Tax(models.Model):
         result_amounts["estimate_tax"] = self._compute_estimate_taxes(**kwargs)
         result_amounts["taxes"] = taxes
         return result_amounts
+
+    @api.model
+    def _is_withholding_waived(self, tax, tax_value, **kwargs):
+        """Tell if ``tax_value`` falls under the legal withholding waiver of
+        ``tax`` (``withholding_min_value``), i.e. is equal or lower than it.
+
+        The comparison uses the currency rounding, so a value that rounds to
+        the minimum (R$ 10,00) is still waived, as the law says "igual ou
+        inferior".
+        """
+        company = kwargs.get("company") or tax.env.company
+        currency = kwargs.get("currency") or company.currency_id
+        return (
+            float_compare(
+                tax_value,
+                tax.withholding_min_value,
+                precision_rounding=currency.rounding,
+            )
+            <= 0
+        )
 
     @api.depends("icmsst_base_type")
     def _compute_tax_base_type(self):

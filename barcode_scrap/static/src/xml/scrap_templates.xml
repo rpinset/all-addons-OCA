@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="barcode_scrap.ScrapLocationScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Scrap Products</h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Scan or search a location..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2
+                    class="ilx-emp-v2-section-title"
+                >SELECT THE LOCATION TO SCRAP FROM</h2>
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading locations...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredLocations" t-as="loc" t-key="loc.id">
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-on-click="() => this.selectLocation(loc)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <div
+                                            class="ilx-emp-v2-avatar-placeholder"
+                                            style="background: #EAEAEA; color: #4A2B4D; font-size: 1.2rem;"
+                                        >
+                                            <i class="fa fa-map-marker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="loc.display_name" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <i
+                                        class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                    />
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredLocations.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No internal locations found.</div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+    <t t-name="barcode_scrap.ScrapScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">
+                    <t t-if="state.locationName" t-esc="state.locationName" />
+                    <t t-else="">Scrap Products</t>
+                </h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <!-- Where the goods go: a scrap location, preselected like the
+                     back office does and changeable among the scrap ones. -->
+                <div t-if="state.scrapLocations.length" class="ilx-scrap-destination">
+                    <i class="fa fa-trash-o" />
+                    <span class="ilx-scrap-destination-label">Destination:</span>
+                    <select
+                        class="ilx-scrap-destination-select"
+                        t-on-change="(ev) => this.setScrapLocation(ev.target.value)"
+                    >
+                        <t t-foreach="state.scrapLocations" t-as="loc" t-key="loc.id">
+                            <option
+                                t-att-value="loc.id"
+                                t-att-selected="loc.id === state.scrapLocationId"
+                                t-esc="loc.name"
+                            />
+                        </t>
+                    </select>
+                </div>
+                <div
+                    t-elif="!state.loading"
+                    class="ilx-scrap-destination ilx-scrap-destination-missing"
+                >
+                    <i class="fa fa-exclamation-triangle" />
+                    <span>No scrap location is configured for this company.</span>
+                </div>
+
+                <!-- Tap to add a product by hand. -->
+                <button
+                    class="ilx-emp-v2-search-box"
+                    style="width:100%; border:none; text-align:left; cursor:pointer;"
+                    t-on-click="addProduct"
+                >
+                    <i class="fa fa-plus ilx-emp-v2-search-icon" />
+                    <span style="color:#8a8a8a;">Scan, or add a product...</span>
+                </button>
+
+                <h2 class="ilx-emp-v2-section-title">
+                    SCAN THE GOODS TO SCRAP
+                </h2>
+                <!-- Bottom padding so the last line can scroll clear of the
+                     floating camera button (fixed, bottom-right), which would
+                     otherwise sit on top of that line's delete button. -->
+                <div class="ilx-emp-v2-list" style="padding-bottom: 6rem;">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading stock...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="state.lines" t-as="line" t-key="line._id">
+                            <t t-set="here" t-value="available(line)" />
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-att-id="'scrap-line-' + line._id"
+                                t-attf-style="transition: background-color .4s ease; {{ line._flash ? 'background-color:#fff5cc; box-shadow:0 0 0 2px #ffd54a inset;' : '' }}"
+                            >
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="line.product_name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t
+                                            t-if="here === null"
+                                        >Choose the lot/serial</t>
+                                        <t t-elif="here > 0">
+                                            In this location: <t
+                                            t-esc="formatQty(here)"
+                                        /> <t t-esc="line.uom" />
+                                        </t>
+                                        <t t-else="">
+                                            <span
+                                                style="color:#b42318;"
+                                            >Not in this location</span>
+                                        </t>
+                                    </span>
+                                    <t t-if="line.tracking !== 'none'">
+                                        <input
+                                            type="text"
+                                            class="ilx-emp-v2-search-input"
+                                            style="margin-top:6px; padding:6px 8px;"
+                                            placeholder="Lot / Serial number"
+                                            t-att-list="'scrap-lots-' + line._id"
+                                            t-att-value="line.lot_name"
+                                            t-on-input="(ev) => this.setLotName(line, ev.target.value)"
+                                        />
+                                        <datalist t-att-id="'scrap-lots-' + line._id">
+                                            <t
+                                                t-foreach="stockLots(line.product_id)"
+                                                t-as="lot"
+                                                t-key="lot.lot_id"
+                                            >
+                                                <option t-att-value="lot.lot_name" />
+                                            </t>
+                                        </datalist>
+                                    </t>
+                                </div>
+                                <div
+                                    class="ilx-emp-v2-status"
+                                    style="display:flex; flex-direction:row; align-items:center; gap:10px;"
+                                >
+                                    <input
+                                        type="number"
+                                        inputmode="decimal"
+                                        min="0"
+                                        step="any"
+                                        class="ilx-emp-v2-search-input"
+                                        style="width:90px; text-align:center; padding:6px 8px;"
+                                        t-att-value="line.qty"
+                                        t-att-readonly="line.tracking === 'serial'"
+                                        t-on-input="(ev) => this.setQty(line, ev.target.value)"
+                                    />
+                                    <button
+                                        class="btn btn-link p-0"
+                                        style="color:#b42318; font-size:1rem;"
+                                        t-on-click="() => this.removeLine(line)"
+                                    >
+                                        <i class="fa fa-trash" />
+                                    </button>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="state.lines.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >Nothing to scrap yet — scan or add a product.</div>
+                    </t>
+
+                    <t t-if="!state.loading">
+                        <h2 class="ilx-emp-v2-section-title">SCRAP REASON</h2>
+                        <div class="ilx-scrap-reasons">
+                            <button
+                                t-foreach="state.reasons"
+                                t-as="reason"
+                                t-key="reason.id"
+                                class="ilx-scrap-reason"
+                                t-att-class="{'ilx-scrap-reason-active': isReasonSelected(reason)}"
+                                t-on-click="() => this.toggleReason(reason)"
+                            >
+                                <t t-esc="reason.name" />
+                            </button>
+                            <!-- Quick-create a reason by name, as the back office allows. -->
+                            <button
+                                t-if="state.newReason === null"
+                                class="ilx-scrap-reason ilx-scrap-reason-new"
+                                t-on-click="startNewReason"
+                            >
+                                <i class="fa fa-plus" /> New reason
+                            </button>
+                            <div t-else="" class="ilx-scrap-reason-form">
+                                <input
+                                    type="text"
+                                    t-ref="newReason"
+                                    class="ilx-emp-v2-search-input"
+                                    placeholder="Reason name"
+                                    t-att-value="state.newReason"
+                                    t-on-input="(ev) => this.setNewReason(ev.target.value)"
+                                    t-on-keydown="onNewReasonKeydown"
+                                />
+                                <button
+                                    class="ilx-scrap-reason ilx-scrap-reason-active"
+                                    t-on-click="saveNewReason"
+                                >
+                                    <i class="fa fa-check" />
+                                </button>
+                                <button
+                                    class="ilx-scrap-reason"
+                                    t-on-click="cancelNewReason"
+                                >
+                                    <i class="fa fa-times" />
+                                </button>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    class="ilx-emp-v2-confirm-btn"
+                    t-on-click="() => this.scrap()"
+                    t-att-disabled="!canScrap"
+                    t-att-style="canScrap ? '' : 'opacity: 0.5; cursor: not-allowed;'"
+                >
+                    <t t-if="state.scrapping">Scrapping...</t>
+                    <t t-else="" t-esc="scrapLabel()" />
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_scrap.ScrapProductSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Add Product</h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Scan or search a product..."
+                        t-att-value="state.search"
+                        t-on-input="onSearchInput"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">
+                    <t t-if="state.search">PRODUCTS</t>
+                    <t t-else="">IN THIS LOCATION</t>
+                </h2>
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading products...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="state.results" t-as="prod" t-key="prod.id">
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-on-click="() => this.pickProduct(prod)"
+                            >
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="prod.display_name" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <i
+                                        class="fa fa-plus-circle ilx-emp-v2-icon-chevron"
+                                    />
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="state.results.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No products found.</div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+</templates>

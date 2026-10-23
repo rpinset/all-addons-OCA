@@ -4,7 +4,7 @@
 
 from odoo import Command
 from odoo.exceptions import UserError
-from odoo.tests import RecordCapturer, users
+from odoo.tests import RecordCapturer, new_test_user, users
 from odoo.tools import mute_logger
 
 from odoo.addons.route_planning.tests.common import RouteCommon
@@ -289,3 +289,25 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertEqual(backorder.move_ids.product_uom_qty, 4.0)
         self.assertEqual(backorder.route_area_id, self.area_north)
         self.assertTrue(backorder.has_route_planning)
+
+    def test_auto_route_multi_user_followers(self):
+        """Two users with the minimum route permissions create pickings for the
+        same area: only one route is created and both users follow it."""
+        groups = "route_planning.group_route_planning_user,stock.group_stock_user"
+        user_a = new_test_user(self.env, "route_stock_user_a", groups=groups)
+        user_b = new_test_user(self.env, "route_stock_user_b", groups=groups)
+        picking_b = self.picking.copy(
+            {"partner_id": self.partner_2.id, "route_area_id": self.area_north.id}
+        )
+        with RecordCapturer(
+            self.env["route.route"], [("route_area_id", "=", self.area_north.id)]
+        ) as capture:
+            self.picking.with_user(user_a).button_validate()
+            # To prevent the next lines from being added to the same picking
+            self.picking._get_next_transfers().with_user(user_a).do_print_picking()
+            picking_b.with_user(user_b).button_validate()
+        route = capture.records
+        self.assertEqual(len(route), 1)
+        self.assertEqual(len(route.checkpoint_ids), 2)
+        self.assertIn(user_a.partner_id, route.message_partner_ids)
+        self.assertIn(user_b.partner_id, route.message_partner_ids)

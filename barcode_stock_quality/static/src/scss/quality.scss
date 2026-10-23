@@ -1,0 +1,223 @@
+// Quality tab of the reception screen. Reuses the shared design tokens (--ilx-*)
+// defined by barcode_scanner so the look matches the rest of the suite.
+
+.ilx-quality-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ilx-quality-empty {
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--ilx-surface-container-low);
+    color: var(--ilx-on-surface-variant);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.ilx-quality-inspection {
+    background: var(--ilx-surface-container-lowest);
+    border: 1px solid var(--ilx-outline-variant);
+    border-radius: 12px;
+    padding: 16px;
+
+    .ilx-quality-inspection-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .ilx-quality-inspection-title {
+        font-size: 1.02rem;
+        font-weight: 600;
+        color: var(--ilx-on-surface);
+    }
+
+    .ilx-quality-inspection-sub {
+        margin-top: 4px;
+        font-size: 0.82rem;
+        color: var(--ilx-on-surface-variant);
+    }
+}
+
+.ilx-quality-badge {
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+    background: var(--ilx-surface-container-high);
+    color: var(--ilx-on-surface-variant);
+
+    &.ilx-quality-badge-ok {
+        background: var(--ilx-success-bg);
+        color: var(--ilx-success);
+    }
+
+    &.ilx-quality-badge-ko {
+        background: var(--ilx-danger-bg);
+        color: var(--ilx-error);
+    }
+}
+
+.ilx-quality-question {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ilx-outline-variant);
+
+    .ilx-quality-question-name {
+        font-weight: 600;
+        color: var(--ilx-on-surface);
+    }
+
+    .ilx-quality-question-notes {
+        margin-top: 4px;
+        font-size: 0.8rem;
+        color: var(--ilx-on-surface-variant);
+    }
+}
+
+.ilx-quality-answer {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--ilx-outline-variant);
+    font-size: 0.9rem;
+
+    .ilx-quality-answer-ok {
+        color: var(--ilx-success);
+    }
+
+    .ilx-quality-answer-ko {
+        color: var(--ilx-error);
+    }
+
+    .ilx-quality-answer-name {
+        flex: 1;
+        color: var(--ilx-on-surface);
+    }
+
+    .ilx-quality-answer-value {
+        font-weight: 600;
+        color: var(--ilx-on-surface);
+        text-align: right;
+    }
+}
+
+.ilx-quality-choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.ilx-quality-choice {
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--ilx-outline-variant);
+    background: var(--ilx-surface-container-low);
+    color: var(--ilx-on-surface);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.ilx-quality-choice-active {
+        background: var(--ilx-primary);
+        color: var(--ilx-on-primary);
+        border-color: var(--ilx-primary);
+    }
+}
+
+.ilx-quality-measure {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+
+    .ilx-quality-measure-input {
+        flex: 1;
+        height: 44px;
+        padding: 0 12px;
+        border-radius: 8px;
+        border: 1px solid var(--ilx-outline-variant);
+        background: var(--ilx-surface-container-lowest);
+        color: var(--ilx-on-surface);
+        font-size: 1rem;
+    }
+
+    .ilx-quality-measure-uom {
+        font-size: 0.9rem;
+        color: var(--ilx-on-surface-variant);
+    }
+}
+
+.ilx-quality-submit {
+    width: 100%;
+    height: 48px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 12px;
+    background: var(--ilx-primary);
+    color: var(--ilx-on-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.38;
+        cursor: not-allowed;
+    }
+}
+
+.ilx-quality-evidence {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--ilx-outline-variant);
+}
+
+.ilx-quality-photo-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--ilx-outline-variant);
+    background: var(--ilx-surface-container-low);
+    color: var(--ilx-on-surface);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    .ilx-quality-photo-input {
+        display: none;
+    }
+}
+
+.ilx-quality-photo-count {
+    font-size: 0.82rem;
+    color: var(--ilx-on-surface-variant);
+}
+
+.ilx-quality-reset {
+    width: 100%;
+    height: 44px;
+    margin-top: 14px;
+    border: 1px solid var(--ilx-outline-variant);
+    border-radius: 12px;
+    background: var(--ilx-surface-container-low);
+    color: var(--ilx-on-surface);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.38;
+        cursor: not-allowed;
+    }
+}

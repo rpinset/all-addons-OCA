@@ -1,0 +1,216 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_stock_quality
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 11:18+0000\n"
+"PO-Revision-Date: 2026-10-19 11:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Attach photo evidence"
+msgstr "Adjuntar foto como evidencia"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Back to draft"
+msgstr "Volver a borrador"
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "Choose one of the answers offered for %(question)s."
+msgstr "Elija una de las respuestas que ofrece %(question)s."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Confirm inspection"
+msgstr "Confirmar inspección"
+
+#. module: barcode_stock_quality
+#: model:ir.model.fields,help:barcode_stock_quality.field_qc_inspection__barcode_scanner_confirmed
+msgid ""
+"Confirmed from the Barcode app: the operator may put it back to draft from "
+"there while no supervisor has decided it and the reception is still open."
+msgstr ""
+"Confirmada desde la aplicación de códigos de barras: el operario puede "
+"devolverla a borrador desde allí mientras ningún supervisor la haya decidido"
+" y la recepción siga abierta."
+
+#. module: barcode_stock_quality
+#: model:ir.model.fields,field_description:barcode_stock_quality.field_qc_inspection__barcode_scanner_confirmed
+msgid "Confirmed from the scanner"
+msgstr "Confirmada desde el escáner"
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "Enter the value measured for %(question)s."
+msgstr "Indique el valor medido de %(question)s."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Failed"
+msgstr "Fallida"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/js/components/quality_tab.esm.js:0
+msgid "Inspection %(name)s failed."
+msgstr "La inspección %(name)s no ha superado el control."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/js/components/quality_tab.esm.js:0
+msgid "Inspection %(name)s is back to draft."
+msgstr "La inspección %(name)s ha vuelto a borrador."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/js/components/quality_tab.esm.js:0
+msgid "Inspection %(name)s passed."
+msgstr "La inspección %(name)s ha superado el control."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Loading inspections…"
+msgstr "Cargando inspecciones…"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "No quality inspection for this reception."
+msgstr "Esta recepción no tiene inspecciones de calidad."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Only Quality Control users can run the inspections."
+msgstr ""
+"Solo los usuarios de Control de calidad pueden realizar las inspecciones."
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "Only a photo can be attached as evidence."
+msgstr "Como evidencia solo se puede adjuntar una foto."
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid ""
+"Only an inspection confirmed from the scanner, not yet decided by a "
+"supervisor, on a reception still open, can be put back to draft here."
+msgstr ""
+"Aquí solo se puede devolver a borrador una inspección confirmada desde el "
+"escáner, que ningún supervisor haya decidido aún y cuya recepción siga "
+"abierta."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Passed"
+msgstr "Superada"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/js/components/quality_tab.esm.js:0
+msgid "Photo attached."
+msgstr "Foto adjuntada."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "Quality"
+msgstr "Calidad"
+
+#. module: barcode_stock_quality
+#: model:ir.model,name:barcode_stock_quality.model_qc_inspection
+msgid "Quality control inspection"
+msgstr "Inspección del control de calidad"
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "Quality evidence"
+msgstr "Evidencia de calidad"
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "The inspection no longer exists."
+msgstr "La inspección ya no existe."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+#: code:addons/barcode_stock_quality/static/src/js/components/quality_tab.esm.js:0
+msgid "The photo could not be read."
+msgstr "No se pudo leer la foto."
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "The photo could not be saved."
+msgstr "No se pudo guardar la foto."
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/stock_picking.py:0
+msgid "The picking is no longer valid."
+msgstr "El albarán ya no es válido."
+
+#. module: barcode_stock_quality
+#. odoo-python
+#: code:addons/barcode_stock_quality/models/qc_inspection.py:0
+msgid "This inspection cannot be edited in its current state."
+msgstr "Esta inspección no se puede modificar en su estado actual."
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "To review"
+msgstr "Por revisar"
+
+#. module: barcode_stock_quality
+#: model:ir.model,name:barcode_stock_quality.model_stock_picking
+msgid "Transfer"
+msgstr "Traslado"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid "photo(s)"
+msgstr "foto(s)"
+
+#. module: barcode_stock_quality
+#. odoo-javascript
+#: code:addons/barcode_stock_quality/static/src/xml/quality_templates.xml:0
+msgid ""
+"·\n"
+"                    Lot/Serial:"
+msgstr ""
+"·\n"
+"                    Lote/N.º de serie:"

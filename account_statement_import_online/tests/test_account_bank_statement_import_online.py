@@ -1,6 +1,7 @@
 # Copyright 2019-2020 Brainbean Apps (https://brainbeanapps.com)
 # Copyright 2019-2020 Dataplug (https://dataplug.io)
 # Copyright 2022-2023 Therp BV (https://therp.nl)
+# Copyright 2026 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 import logging
 from datetime import date, datetime
@@ -159,6 +160,54 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
             )
         self._getExpectedStatements(0)
 
+    def test_pull_scheduled_failed(self):
+        """A failed period of a scheduled pull is pulled again by the next one"""
+        self.provider.write(
+            {
+                "interval_type": "days",
+                "next_run": datetime(2021, 8, 13),
+                "last_successful_run": datetime(2021, 8, 10, 12),
+            }
+        )
+        with (
+            mock.patch(mock_obtain_statement_data) as mock_data,
+            mute_logger(
+                "odoo.addons.account_statement_import_online.models"
+                ".online_bank_statement_provider"
+            ),
+        ):
+            mock_data.side_effect = [
+                self._get_statement_line_data(date(2021, 8, 10)),
+                Exception("Expected"),
+            ]
+            self.provider.with_context(scheduled=True)._pull(
+                self.provider.last_successful_run, self.provider.next_run
+            )
+        self.assertEqual(mock_data.call_count, 2)
+        self._getExpectedStatements(1)
+        self.assertEqual(self.provider.last_successful_run, datetime(2021, 8, 11))
+        self.assertEqual(self.provider.next_run, datetime(2021, 8, 14))
+
+    def test_pull_scheduled_failed_first_period(self):
+        """A failure in the first period keeps the last successful run"""
+        self.provider.write(
+            {
+                "interval_type": "days",
+                "next_run": datetime(2021, 8, 13),
+                "last_successful_run": datetime(2021, 8, 10, 12),
+            }
+        )
+        with mute_logger(
+            "odoo.addons.account_statement_import_online.models"
+            ".online_bank_statement_provider"
+        ):
+            self.provider.with_context(crash=True, scheduled=True)._pull(
+                self.provider.last_successful_run, self.provider.next_run
+            )
+        self._getExpectedStatements(0)
+        self.assertEqual(self.provider.last_successful_run, datetime(2021, 8, 10, 12))
+        self.assertEqual(self.provider.next_run, datetime(2021, 8, 14))
+
     def test_pull_crash(self):
         self.provider.statement_creation_mode = "weekly"
         with self.assertRaisesRegex(Exception, "Expected"):
@@ -297,13 +346,57 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
             datetime(2020, 4, 17, 22, 0),
             datetime(2020, 4, 18, 2, 0),
         )
-        statements = self._getExpectedStatements(2)
+        # The whole pull is the 18th for the provider: a single statement
+        statements = self._getExpectedStatements(1)
+        self.assertEqual(statements.name, "BANK/2020-04-18")
         lines = statements.mapped("line_ids").sorted(key=lambda r: r.id)
         self.assertEqual(len(lines), 4)
         self.assertEqual(lines[0].date, date(2020, 4, 18))
         self.assertEqual(lines[1].date, date(2020, 4, 18))
         self.assertEqual(lines[2].date, date(2020, 4, 18))
         self.assertEqual(lines[3].date, date(2020, 4, 18))
+
+    def test_tz_statement_periods(self):
+        """The statement periods start at midnight in the timezone of the
+        provider, also across daylight saving time changes"""
+        self.provider.tz = "Europe/Berlin"
+        with mock.patch(mock_obtain_statement_data, return_value=([], {})) as obtain:
+            # 1st of October 00:00 until the 2nd of October 00:00 in Berlin
+            self.provider._pull(
+                datetime(2026, 9, 30, 22, 0),
+                datetime(2026, 10, 1, 22, 0),
+            )
+        obtain.assert_called_once_with(
+            datetime(2026, 9, 30, 22, 0), datetime(2026, 10, 1, 22, 0)
+        )
+        self.provider.statement_creation_mode = "monthly"
+        with mock.patch(mock_obtain_statement_data, return_value=([], {})) as obtain:
+            self.provider._pull(
+                datetime(2026, 10, 15, 12, 0),
+                datetime(2026, 11, 15, 12, 0),
+            )
+        # Berlin switches from CEST (UTC+2) to CET (UTC+1) on the 25th of October
+        self.assertEqual(
+            [call.args for call in obtain.call_args_list],
+            [
+                (datetime(2026, 9, 30, 22, 0), datetime(2026, 10, 31, 23, 0)),
+                (datetime(2026, 10, 31, 23, 0), datetime(2026, 11, 30, 23, 0)),
+            ],
+        )
+
+    def test_tz_statement_name(self):
+        self.provider.tz = "Europe/Berlin"
+        self.provider.with_context(
+            step={"hours": 1},
+            override_date_since=datetime(2026, 9, 30, 22, 30),
+            override_date_until=datetime(2026, 9, 30, 23, 30),
+        )._pull(
+            datetime(2026, 9, 30, 22, 0),
+            datetime(2026, 10, 1, 22, 0),
+        )
+        statement = self._getExpectedStatements(1)
+        self.assertEqual(statement.name, "BANK/2026-10-01")
+        self.assertEqual(statement.line_ids.date, date(2026, 10, 1))
 
     def test_other_tz_to_utc(self):
         """Test the situation where we are tot the west of the provider.

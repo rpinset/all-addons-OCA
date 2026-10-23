@@ -1,0 +1,362 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_scrap
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "%(name)s is not a goods product and cannot be scrapped."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Add Product"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Choose the lot/serial"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Choose where the scrapped goods go."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Destination:"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "IN THIS LOCATION"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "In this location:"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Loading locations..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Loading products..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Loading stock..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Lot / Serial number"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "New reason"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_location_screen.esm.js:0
+msgid "No internal location matches “%(code)s”."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "No internal locations found."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_product_selector_screen.esm.js:0
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "No product matches “%(code)s”."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "No products found."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "No scrap location is configured for this company."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Not enough stock"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Not in this location"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Nothing to scrap yet — scan or add a product."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "One of the scanned products no longer exists."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "PRODUCTS"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid ""
+"Product %(name)s is tracked: scan or choose its lot/serial number before "
+"scrapping it."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Reason name"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "SCAN THE GOODS TO SCRAP"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "SCRAP REASON"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "SELECT THE LOCATION TO SCRAP FROM"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scan at least one product to scrap."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Scan or search a location..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Scan or search a product..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Scan, or add a product..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+#: model:ir.model,name:barcode_scrap.model_stock_scrap
+msgid "Scrap"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scrap %(n)s products"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scrap %(qty)s %(uom)s"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/tiles/scrap_menu_tiles.esm.js:0
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Scrap Products"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scrap anyway"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scrapped %(n)s products."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Scrapped %(qty)s %(uom)s of %(name)s."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/xml/scrap_templates.xml:0
+msgid "Scrapping..."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Serial number %(lot)s is already on the list."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "Serial number %(lot)s of %(name)s can only be scrapped once, one unit."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Set the lot/serial for %(name)s before scrapping."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Set the quantity to scrap for %(name)s."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid ""
+"Several lots/serial numbers of %(name)s match %(lot)s: type it exactly as it"
+" is written."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "The full quantity will be scrapped. Scrap anyway?"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "The lot/serial number chosen for %(name)s is no longer valid."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "The quantity to scrap for %(name)s must be positive."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "The selected location is no longer valid."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "The selected scrap location is not valid."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "The stock of %(name)s changed while scrapping. Please try again."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "There is no lot/serial number %(lot)s for %(name)s."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "There is no scrap location for %(company)s: create one first."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "This location does not hold enough stock for:"
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-python
+#: code:addons/barcode_scrap/models/stock_scrap.py:0
+msgid "Type a name for the scrap reason."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid "Wait until the scrap is done to scan again."
+msgstr ""
+
+#. module: barcode_scrap
+#. odoo-javascript
+#: code:addons/barcode_scrap/static/src/js/screens/scrap_screen.esm.js:0
+msgid ""
+"• %(what)s: %(requested)s %(uom)s to scrap, %(available)s here (stock will "
+"be %(remaining)s)"
+msgstr ""
