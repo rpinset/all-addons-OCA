@@ -1,8 +1,8 @@
 # Skipped repos — branch `17.0`
 
-Generated 2026-10-20 18:52 UTC
+Generated 2026-10-23 23:56 UTC
 
-Total skipped: **137**
+Total skipped: **136**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -52,7 +52,7 @@ Count: **39**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **98**
+Count: **97**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -139,7 +139,6 @@ Count: **98**
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | [17.0](https://github.com/OCA/vertical-abbey/tree/17.0) | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | [17.0](https://github.com/OCA/vertical-agriculture/tree/17.0) | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | [17.0](https://github.com/OCA/vertical-community/tree/17.0) | No directory with __manifest__.py at repo root |
-| [vertical-construction](https://github.com/OCA/vertical-construction) | [17.0](https://github.com/OCA/vertical-construction/tree/17.0) | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | [17.0](https://github.com/OCA/vertical-cooperative-supermarket/tree/17.0) | No directory with __manifest__.py at repo root |
 | [vertical-education](https://github.com/OCA/vertical-education) | [17.0](https://github.com/OCA/vertical-education/tree/17.0) | No directory with __manifest__.py at repo root |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | [17.0](https://github.com/OCA/vertical-isp/tree/17.0) | No directory with __manifest__.py at repo root |

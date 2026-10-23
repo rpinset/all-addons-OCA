@@ -1,6 +1,6 @@
 # Build report — `17.0`
 
-Generated 2026-10-20 18:52 UTC
+Generated 2026-10-23 23:56 UTC
 
 ## Skipped repos
 
@@ -130,7 +130,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-community](https://github.com/OCA/vertical-community) | `no_module` | No directory with __manifest__.py at repo root |
-| [vertical-construction](https://github.com/OCA/vertical-construction) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-cooperative-supermarket](https://github.com/OCA/vertical-cooperative-supermarket) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-education](https://github.com/OCA/vertical-education) | `no_module` | No directory with __manifest__.py at repo root |
 | [vertical-isp](https://github.com/OCA/vertical-isp) | `no_module` | No directory with __manifest__.py at repo root |

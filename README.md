@@ -1,17 +1,17 @@
 # all-addons-OCA — branch `17.0`
 
-Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
+Last build: **2026-10-23 23:56 UTC** (elapsed 78s)
 
-- Repos integrated: **128**
-- Canonical modules: **2004**
+- Repos integrated: **129**
+- Canonical modules: **2007**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **137**
+- Skipped repos (no branch / no module): **136**
 
 ## Integrated repos
 
 | Repo | Modules | Last commit |
 | ---- | ------: | ----------- |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | f390822 2026-09-22 Pedro M. Baeza Merge pull request #5539 from lefilament/17.0-add-l10n_fr_hr_holidays |
+| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | 2 | 61daab0 2026-10-21 OCA-git-bot Merge PR #6061 into 17.0 |
 | [account-analytic](https://github.com/OCA/account-analytic) | 29 | 2bc5781 2026-07-26 Anxo López Rodríguez Translated using Weblate (Galician) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | a61e0ec 2025-06-25 OCA-git-bot [BOT] post-merge updates |
 | [account-closing](https://github.com/OCA/account-closing) | 6 | 734cd8d 2026-06-14 OCA-git-bot [BOT] post-merge updates |
@@ -55,7 +55,7 @@ Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
 | [geospatial](https://github.com/OCA/geospatial) | 5 | 1a337a0 2026-04-08 mymage Translated using Weblate (Italian) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 25 | 14220ae 2026-10-01 mymage Translated using Weblate (Italian) |
 | [hr](https://github.com/OCA/hr) | 24 | 24d4f8b 2026-08-17 mymage Added translation using Weblate (Italian) |
-| [hr-attendance](https://github.com/OCA/hr-attendance) | 7 | 2311a23 2026-10-09 OCA-git-bot [BOT] post-merge updates |
+| [hr-attendance](https://github.com/OCA/hr-attendance) | 8 | fec8251 2026-10-22 mymage Translated using Weblate (Italian) |
 | [hr-expense](https://github.com/OCA/hr-expense) | 10 | 67f2a52 2026-06-10 mymage Translated using Weblate (Italian) |
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 6 | 9e6b436 2026-10-09 OCA-git-bot [BOT] post-merge updates |
 | [interface-git](https://github.com/OCA/interface-git) | 2 | 896245e 2026-10-07 mymage Translated using Weblate (Italian) |
@@ -75,7 +75,7 @@ Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | 3 | 00dccfb 2026-04-07 OCA-git-bot Merge PR #158 into 17.0 |
 | [l10n-romania](https://github.com/OCA/l10n-romania) | 40 | be0f656 2026-09-24 OCA-git-bot [BOT] post-merge updates |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | 2 | 1b15529 2026-02-24 oca-ci [UPD] Update l10n_ru.pot |
-| [l10n-spain](https://github.com/OCA/l10n-spain) | 63 | 7d6c278 2026-10-19 OCA-git-bot [BOT] post-merge updates |
+| [l10n-spain](https://github.com/OCA/l10n-spain) | 63 | 131f0c8 2026-10-23 OCA-git-bot [BOT] post-merge updates |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | 5 | 6c6462c 2026-09-14 OCA-git-bot [BOT] post-merge updates |
 | [l10n-thailand](https://github.com/OCA/l10n-thailand) | 8 | 4e0a878 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-usa](https://github.com/OCA/l10n-usa) | 7 | 1746b5f 2026-06-29 Weblate Update translation files |
@@ -91,7 +91,7 @@ Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 27 | 54c71d8 2026-10-16 OCA-git-bot [BOT] post-merge updates |
 | [partner-contact](https://github.com/OCA/partner-contact) | 74 | 7a5ddbd 2026-10-08 OCA-git-bot [BOT] post-merge updates |
 | [payroll](https://github.com/OCA/payroll) | 5 | 7971c8c 2026-09-02 OCA-git-bot [BOT] post-merge updates |
-| [pos](https://github.com/OCA/pos) | 44 | 368862d 2026-10-12 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 44 | 35af6ac 2026-10-22 OCA-git-bot [BOT] post-merge updates |
 | [product-attribute](https://github.com/OCA/product-attribute) | 61 | 0af5f97 2026-08-19 mymage Translated using Weblate (Italian) |
 | [product-configurator](https://github.com/OCA/product-configurator) | 3 | 96104b0 2026-07-28 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | af89522 2026-08-11 mymage Translated using Weblate (Italian) |
@@ -103,7 +103,7 @@ Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
 | [repair](https://github.com/OCA/repair) | 16 | ee519fa 2026-03-04 mymage Translated using Weblate (Italian) |
 | [report-print-send](https://github.com/OCA/report-print-send) | 2 | 5b22769 2026-08-27 Weblate Update translation files |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | 25 | 346cc79 2026-10-05 mymage Added translation using Weblate (Italian) |
-| [rest-framework](https://github.com/OCA/rest-framework) | 23 | 9d01fc0 2026-10-16 OCA-git-bot [BOT] post-merge updates |
+| [rest-framework](https://github.com/OCA/rest-framework) | 23 | 3632ad7 2026-10-23 OCA-git-bot [BOT] post-merge updates |
 | [rma](https://github.com/OCA/rma) | 5 | 3ca546f 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 9 | 4722233 2026-05-18 OCA-git-bot [BOT] post-merge updates |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 8 | 423168e 2026-07-16 OCA-git-bot [BOT] post-merge updates |
@@ -116,22 +116,23 @@ Last build: **2026-10-20 18:52 UTC** (elapsed 152s)
 | [server-ux](https://github.com/OCA/server-ux) | 23 | a2157c4 2026-08-03 difbit Translated using Weblate (Finnish) |
 | [shift-planning](https://github.com/OCA/shift-planning) | 2 | 6763afe 2026-04-20 mymage Translated using Weblate (Italian) |
 | [sign](https://github.com/OCA/sign) | 4 | 27bacb8 2026-07-27 mymage Translated using Weblate (Italian) |
-| [social](https://github.com/OCA/social) | 54 | 22f91d6 2026-10-09 mymage Added translation using Weblate (Italian) |
+| [social](https://github.com/OCA/social) | 54 | c44afeb 2026-10-22 OCA-git-bot [BOT] post-merge updates |
 | [spreadsheet](https://github.com/OCA/spreadsheet) | 2 | a001e3e 2026-04-10 alexmorel-tecnativa Translated using Weblate (Spanish) |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | 7 | 26c991b 2025-10-13 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 5 | 3cb7a89 2026-02-27 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | 1 | ad45e67 2025-07-17 mymage Translated using Weblate (Italian) |
-| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 19 | bb63e3e 2026-10-19 mymage Translated using Weblate (Italian) |
+| [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 20 | 3eafaf5 2026-10-23 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-request](https://github.com/OCA/stock-logistics-request) | 9 | d78c836 2026-06-30 mymage Translated using Weblate (Italian) |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 12 | 8476a3e 2026-07-23 OCA-git-bot [BOT] post-merge updates |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 41 | 215a9cd 2026-09-22 OCA-git-bot [BOT] post-merge updates |
-| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 68 | 0b85393 2026-10-19 mymage Added translation using Weblate (Italian) |
+| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 68 | af3a987 2026-10-21 OCA-git-bot [BOT] post-merge updates |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | 2 | 031c0f0 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [storage](https://github.com/OCA/storage) | 20 | ca0c673 2026-09-10 mymage Translated using Weblate (Italian) |
 | [survey](https://github.com/OCA/survey) | 19 | 48f6252 2026-09-10 OCA-git-bot [BOT] post-merge updates |
 | [sustainability](https://github.com/OCA/sustainability) | 12 | ff36d05 2026-09-28 mymage Translated using Weblate (Italian) |
 | [timesheet](https://github.com/OCA/timesheet) | 24 | 2ae097e 2026-07-28 mymage Translated using Weblate (Italian) |
 | [vertical-association](https://github.com/OCA/vertical-association) | 7 | c26fa14 2025-06-21 mymage Translated using Weblate (Italian) |
+| [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 5363590 2026-10-23 OCA-git-bot [BOT] post-merge updates |
 | [vertical-edition](https://github.com/OCA/vertical-edition) | 2 | 2defebc 2025-06-21 mymage Translated using Weblate (Italian) |
 | [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 596eaed 2026-10-07 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 2 | 196d546 2026-10-19 mymage Added translation using Weblate (Italian) |

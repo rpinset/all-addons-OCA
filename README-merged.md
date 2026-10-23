@@ -2608,6 +2608,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 17.0.1.0.1 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 17.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
+[hr_attendance_geolocation_required](hr_attendance_geolocation_required/) | 17.0.1.0.0 |  | This module makes geolocation mandatory for check-in/check-out
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 17.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.2 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
@@ -3752,7 +3753,7 @@ addon | version | maintainers | summary
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.1 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_aeat](l10n_es_aeat/) | 17.0.2.7.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
-[l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.3 |  | AEAT modelo 111
+[l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.4 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.3 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 17.0.1.0.3 |  | AEAT modelo 130
@@ -3763,7 +3764,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 17.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.7.3 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.2.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.2.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 17.0.1.0.1 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.9.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 17.0.1.0.0 |  | AEAT modelo 390 - OSS
@@ -3782,7 +3783,7 @@ addon | version | maintainers | summary
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_digital_canon](l10n_es_digital_canon/) | 17.0.1.0.0 |  | Aplicación automática del canon digital en facturas, ventas y compras
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.5.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.6 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_literal_legal](l10n_es_facturae_literal_legal/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Literal Legal Texts
 [l10n_es_facturae_special_payment](l10n_es_facturae_special_payment/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Facturae - Special Payment
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.2.0 |  | IGIC (Impuesto General Indirecto Canario)
@@ -4869,7 +4870,7 @@ addon | version | maintainers | summary
 [pos_show_clock](pos_show_clock/) | 17.0.1.0.0 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> <a href='https://github.com/ygcarvalh'><img src='https://github.com/ygcarvalh.png' width='32' height='32' style='border-radius:50%;' alt='ygcarvalh'/></a> <a href='https://github.com/felipezago'><img src='https://github.com/felipezago.png' width='32' height='32' style='border-radius:50%;' alt='felipezago'/></a> | Point of Sale: Display Current Date and Time on POS sreen
 [pos_stock_available_online](pos_stock_available_online/) | 17.0.1.0.0 |  | Show the available quantity of products in the Point of Sale
 [pos_user_restrict_stripe_bypass_user](pos_user_restrict_stripe_bypass_user/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | POS User Restrict Strype Bypass User
-[pos_user_restriction](pos_user_restriction/) | 17.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Restrict some users to see and use only certain points of sale
+[pos_user_restriction](pos_user_restriction/) | 17.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Restrict some users to see and use only certain points of sale
 
 [//]: # (end addons)
 
@@ -5674,9 +5675,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[api_log](api_log/) | 17.0.1.0.1 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log API requests in database
+[api_log](api_log/) | 17.0.1.0.2 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log API requests in database
 [api_log_mail](api_log_mail/) | 17.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
-[fastapi](fastapi/) | 17.0.3.2.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 17.0.3.3.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_api_key](fastapi_auth_api_key/) | 17.0.1.0.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Fastapi Auth API Key
 [fastapi_log](fastapi_log/) | 17.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log Fastapi requests in database
 [fastapi_log_mail](fastapi_log_mail/) | 17.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
@@ -6596,11 +6597,11 @@ addon | version | maintainers | summary
 [outgoing_email_by_model](outgoing_email_by_model/) | 17.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Outgoing Email by Model
 [social_media_advertising](social_media_advertising/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Campaigns, campaign groups, ads, stages and tags for social media
 [social_media_advertising_linkedin](social_media_advertising_linkedin/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | LinkedIn Ads campaigns, campaign groups and sponsored creatives
-[social_media_base](social_media_base/) | 17.0.1.0.2 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Accounts, scheduled posts and daily statistics for the connectors
+[social_media_base](social_media_base/) | 17.0.1.0.3 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Accounts, scheduled posts and daily statistics for the connectors
 [social_media_calendar](social_media_calendar/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Calendar view of the posts, placed on their date and coloured by state
-[social_media_linkedin](social_media_linkedin/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Publish on the LinkedIn pages you administrate, with daily figures
-[social_media_linkedin_sync](social_media_linkedin_sync/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import LinkedIn publications, their figures, comments and reactions
-[social_media_sync](social_media_sync/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import posts, figures, comments and reactions from the social media
+[social_media_linkedin](social_media_linkedin/) | 17.0.1.0.1 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Publish on the LinkedIn pages you administrate, with daily figures
+[social_media_linkedin_sync](social_media_linkedin_sync/) | 17.0.1.0.1 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import LinkedIn publications, their figures, comments and reactions
+[social_media_sync](social_media_sync/) | 17.0.1.0.1 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import posts, figures, comments and reactions from the social media
 
 [//]: # (end addons)
 
@@ -6859,8 +6860,9 @@ addon | version | maintainers | summary
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 17.0.1.0.0 |  | Show delivery address when picking type is internal
 [stock_picking_report_printed_flag](stock_picking_report_printed_flag/) | 17.0.1.0.0 |  | Adds printed flag support to stock picking
 [stock_picking_report_salesperson](stock_picking_report_salesperson/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Salesperson info in Stock Picking reports
+[stock_picking_report_summary](stock_picking_report_summary/) | 17.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Stock Picking Report Summary
 [stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.2.0 |  | Adding Valued Picking on Delivery Slip report
-[stock_product_demand_info](stock_product_demand_info/) | 17.0.1.1.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Past demand by configurable periods on product and orderpoint
+[stock_product_demand_info](stock_product_demand_info/) | 17.0.1.1.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Past demand by configurable periods on product and orderpoint
 [stock_quant_history](stock_quant_history/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 17.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/rolandojduartem'><img src='https://github.com/rolandojduartem.png' width='32' height='32' style='border-radius:50%;' alt='rolandojduartem'/></a> | Provides stock quantity by location on past date
@@ -7126,7 +7128,7 @@ addon | version | maintainers | summary
 [stock_lot_on_hand_first](stock_lot_on_hand_first/) | 17.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to display lots on hand first in M2o fields
 [stock_lot_production_date](stock_lot_production_date/) | 17.0.1.0.0 | <a href='https://github.com/atchuthan'><img src='https://github.com/atchuthan.png' width='32' height='32' style='border-radius:50%;' alt='atchuthan'/></a> | Stock Lot Production Date
 [stock_lot_scrap](stock_lot_scrap/) | 17.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
-[stock_move_actual_date](stock_move_actual_date/) | 17.0.1.0.0 |  | Stock Move Actual Date
+[stock_move_actual_date](stock_move_actual_date/) | 17.0.1.0.1 |  | Stock Move Actual Date
 [stock_move_backdating](stock_move_backdating/) | 17.0.1.0.0 |  | Stock Move Backdating
 [stock_move_forced_lot](stock_move_forced_lot/) | 17.0.1.0.0 |  | This module allows you to set a lot_id in a procurement to force the stock move generated to only reserve the selected lot.
 [stock_move_line_qty_picked](stock_move_line_qty_picked/) | 17.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Separate quantity picked from the reserved quantity
@@ -7537,6 +7539,53 @@ addon | version | maintainers | summary
 [membership_variable_period](membership_variable_period/) | 17.0.1.0.1 |  | Variable period for memberships
 [website_membership_gamification](website_membership_gamification/) | 17.0.1.0.0 |  | Show badges assigned to users on website
 [website_membership_random_order](website_membership_random_order/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Online Members Directory - Random order
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/vertical-construction
+
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-construction&target_branch=17.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml?query=branch%3A17.0)
+[![Build Status](https://github.com/OCA/vertical-construction/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-construction/actions/workflows/test.yml?query=branch%3A17.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-construction/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-construction)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-construction-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-construction-17-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# vertical-construction
+
+TODO: add repo description.
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[bc3_importer](bc3_importer/) | 17.0.1.0.0 |  | BC3 files importer
 
 [//]: # (end addons)
 
