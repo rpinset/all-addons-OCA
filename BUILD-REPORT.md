@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-20 18:55 UTC
+Generated 2026-10-24 00:00 UTC
 
 ## Skipped repos
 
@@ -15,7 +15,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [account-closing](https://github.com/OCA/account-closing) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | `no_module` | No directory with __manifest__.py at repo root |
@@ -124,7 +123,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-peru](https://github.com/OCA/l10n-peru) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-poland](https://github.com/OCA/l10n-poland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-romania](https://github.com/OCA/l10n-romania) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-spain](https://github.com/OCA/l10n-spain) | `no_module` | No directory with __manifest__.py at repo root |
@@ -207,13 +205,11 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [server-auth](https://github.com/OCA/server-auth) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | `no_module` | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | `no_module` | No directory with __manifest__.py at repo root |
-| [server-tools](https://github.com/OCA/server-tools) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | `no_module` | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | `no_module` | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | `no_module` | No directory with __manifest__.py at repo root |
 | [social](https://github.com/OCA/social) | `no_module` | No directory with __manifest__.py at repo root |
-| [spreadsheet](https://github.com/OCA/spreadsheet) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | `no_module` | No directory with __manifest__.py at repo root |
@@ -227,7 +223,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_module` | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | `no_module` | No directory with __manifest__.py at repo root |

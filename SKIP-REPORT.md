@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-20 18:55 UTC
+Generated 2026-10-24 00:00 UTC
 
-Total skipped: **252**
+Total skipped: **247**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **226**
+Count: **221**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -49,7 +49,6 @@ Count: **226**
 | [account-closing](https://github.com/OCA/account-closing) | [20.0](https://github.com/OCA/account-closing/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-consolidation](https://github.com/OCA/account-consolidation) | [20.0](https://github.com/OCA/account-consolidation/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | [20.0](https://github.com/OCA/account-financial-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
-| [account-financial-tools](https://github.com/OCA/account-financial-tools) | [20.0](https://github.com/OCA/account-financial-tools/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | [20.0](https://github.com/OCA/account-fiscal-rule/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | [20.0](https://github.com/OCA/account-invoice-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-invoicing](https://github.com/OCA/account-invoicing) | [20.0](https://github.com/OCA/account-invoicing/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -156,7 +155,6 @@ Count: **226**
 | [l10n-peru](https://github.com/OCA/l10n-peru) | [20.0](https://github.com/OCA/l10n-peru/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-poland](https://github.com/OCA/l10n-poland) | [20.0](https://github.com/OCA/l10n-poland/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-portugal](https://github.com/OCA/l10n-portugal) | [20.0](https://github.com/OCA/l10n-portugal/tree/20.0) | No directory with __manifest__.py at repo root |
-| [l10n-romania](https://github.com/OCA/l10n-romania) | [20.0](https://github.com/OCA/l10n-romania/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-russia](https://github.com/OCA/l10n-russia) | [20.0](https://github.com/OCA/l10n-russia/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-slovenia](https://github.com/OCA/l10n-slovenia) | [20.0](https://github.com/OCA/l10n-slovenia/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-spain](https://github.com/OCA/l10n-spain) | [20.0](https://github.com/OCA/l10n-spain/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -216,13 +214,11 @@ Count: **226**
 | [server-auth](https://github.com/OCA/server-auth) | [20.0](https://github.com/OCA/server-auth/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-backend](https://github.com/OCA/server-backend) | [20.0](https://github.com/OCA/server-backend/tree/20.0) | No directory with __manifest__.py at repo root |
 | [server-env](https://github.com/OCA/server-env) | [20.0](https://github.com/OCA/server-env/tree/20.0) | No directory with __manifest__.py at repo root |
-| [server-tools](https://github.com/OCA/server-tools) | [20.0](https://github.com/OCA/server-tools/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | [20.0](https://github.com/OCA/shift-planning/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [20.0](https://github.com/OCA/shopfloor-app/tree/20.0) | No directory with __manifest__.py at repo root |
 | [shoppingfeed](https://github.com/OCA/shoppingfeed) | [20.0](https://github.com/OCA/shoppingfeed/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sign](https://github.com/OCA/sign) | [20.0](https://github.com/OCA/sign/tree/20.0) | No directory with __manifest__.py at repo root |
 | [social](https://github.com/OCA/social) | [20.0](https://github.com/OCA/social/tree/20.0) | No directory with __manifest__.py at repo root |
-| [spreadsheet](https://github.com/OCA/spreadsheet) | [20.0](https://github.com/OCA/spreadsheet/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | [20.0](https://github.com/OCA/stock-logistics-availability/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | [20.0](https://github.com/OCA/stock-logistics-barcode/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | [20.0](https://github.com/OCA/stock-logistics-interfaces/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -236,7 +232,6 @@ Count: **226**
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [20.0](https://github.com/OCA/stock-logistics-shopfloor/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [20.0](https://github.com/OCA/stock-logistics-tracking/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | [20.0](https://github.com/OCA/stock-logistics-transport/tree/20.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | [20.0](https://github.com/OCA/stock-logistics-warehouse/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | [20.0](https://github.com/OCA/stock-logistics-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [20.0](https://github.com/OCA/stock-weighing/tree/20.0) | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | [20.0](https://github.com/OCA/survey/tree/20.0) | No directory with __manifest__.py at repo root |
