@@ -183,6 +183,41 @@ class TestNFCe(TestNFeExport):
         )
         self.assertTrue(image.startswith(b"\x89PNG"))
 
+    def _render_danfce_text(self):
+        report = self.env["ir.actions.report"]._get_report_from_name(
+            "l10n_br_nfe.report_danfe_nfce"
+        )
+        data = self.document_id._prepare_nfce_danfe_values()
+        content = report._render_qweb_html(
+            "l10n_br_nfe.report_danfe_nfce", self.document_id.ids, data=data
+        )[0]
+        return " ".join(html.fromstring(content).text_content().split())
+
+    def test_danfce_identified_consumer(self):
+        """The DANFCE prints the CPF and the name of the recipient."""
+        partner = self.document_id.partner_id
+        partner.is_anonymous_consumer = False
+        partner.cnpj_cpf = "111.444.777-35"
+        text = self._render_danfce_text()
+        self.assertIn(f"Consumidor - CPF: 111.444.777-35 {partner.legal_name}", text)
+        self.assertNotIn("Nao Identificado", text)
+
+    def test_danfce_identified_consumer_cnpj(self):
+        partner = self.document_id.partner_id
+        partner.is_anonymous_consumer = False
+        partner.cnpj_cpf = "11.222.333/0001-81"
+        text = self._render_danfce_text()
+        self.assertIn("Consumidor - CNPJ: 11.222.333/0001-81", text)
+
+    def test_danfce_anonymous_consumer(self):
+        """Without CPF/CNPJ the tag dest is not sent: not identified."""
+        partner = self.document_id.partner_id
+        partner.is_anonymous_consumer = True
+        partner.cnpj_cpf = False
+        text = self._render_danfce_text()
+        self.assertIn("Consumidor Nao Identificado", text)
+        self.assertNotIn("Consumidor - ", text)
+
     @nfe_mock({"nfeAutorizacaoLote": "retEnviNFe/autorizada.xml"})
     def test_prepare_nfce_payment(self):
         amount = self.document_id.amount_financial_total / 2
@@ -243,6 +278,21 @@ class TestNFCe(TestNFeExport):
 
         self.assertEqual(payment["method"], "01 - Dinheiro")
         self.assertEqual(payment["value"], 320)
+
+    def test_nfce_dest_identified_by_document_only(self):
+        """The NFC-e consumer goes by CNPJ or CPF, without punctuation, address
+        or name, and the first item carries the homologation notice."""
+        nfe = self.document_id._serialize([])[0]
+
+        dest = nfe.infNFe.dest
+        self.assertEqual(dest.CNPJ, "81493979000189")
+        self.assertIsNone(dest.CPF)
+        self.assertIsNone(dest.enderDest)
+        self.assertIsNone(dest.xNome)
+        self.assertEqual(
+            nfe.infNFe.det[0].prod.xProd,
+            "NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+        )
 
     def test_compute_fiscal_document_fields(self):
         self.document_id.partner_id.is_anonymous_consumer = True

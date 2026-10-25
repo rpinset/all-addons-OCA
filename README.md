@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `16.0`
 
-Last build: **2026-10-23 23:57 UTC** (elapsed 182s)
+Last build: **2026-10-25 08:35 UTC** (elapsed 90s)
 
 - Repos integrated: **143**
-- Canonical modules: **3169**
+- Canonical modules: **3170**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **122**
 
@@ -67,13 +67,13 @@ Last build: **2026-10-23 23:57 UTC** (elapsed 182s)
 | [knowledge](https://github.com/OCA/knowledge) | 14 | 8f372fe 2026-06-20 Pedro M. Baeza Merge pull request #623 from ledoent/16.0-copier-update-v143 |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 3 | f84edfa 2026-10-03 OCA-git-bot Merge PR #104 into 16.0 |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 13 | 7d743d8 2026-04-09 Weblate Update translation files |
-| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 70 | 77aa35a 2026-10-23 Luis Felipe Miléo Translated using Weblate (Portuguese (Brazil)) |
+| [l10n-brazil](https://github.com/OCA/l10n-brazil) | 71 | c08bf3d 2026-10-24 Weblate Update translation files |
 | [l10n-croatia](https://github.com/OCA/l10n-croatia) | 5 | a3e16a7 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-france](https://github.com/OCA/l10n-france) | 30 | 1fa9088 2026-08-20 OCA-git-bot [BOT] post-merge updates |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | 4 | 2d9524d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-indonesia](https://github.com/OCA/l10n-indonesia) | 1 | 4f5e087 2026-04-16 OCA-git-bot [BOT] post-merge updates |
 | [l10n-iran](https://github.com/OCA/l10n-iran) | 3 | eec4387 2025-02-02 oca-git-bot [IMP] update dotfiles |
-| [l10n-italy](https://github.com/OCA/l10n-italy) | 78 | 79f11ed 2026-10-20 OCA-git-bot [BOT] post-merge updates |
+| [l10n-italy](https://github.com/OCA/l10n-italy) | 78 | 00dbaa7 2026-10-24 Weblate Update translation files |
 | [l10n-japan](https://github.com/OCA/l10n-japan) | 9 | 1726c74 2026-10-05 OCA-git-bot [BOT] post-merge updates |
 | [l10n-mexico](https://github.com/OCA/l10n-mexico) | 1 | 7d7a082 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [l10n-netherlands](https://github.com/OCA/l10n-netherlands) | 11 | 4322ad4 2026-10-02 Weblate Update translation files |
