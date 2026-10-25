@@ -1,8 +1,10 @@
 from unittest.mock import patch
 
 from odoo import SUPERUSER_ID
+from odoo.sql_db import db_connect
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
+from odoo.addons.queue_job.exception import RetryableJobError
 
 
 class TestShopifyOrderSync(AccountTestInvoicingCommon):
@@ -225,10 +227,10 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         order.action_release_shopify_risk_hold()
         self.assertFalse(order.shopify_risk_hold)
 
-    def test_completed_draft_links_real_order_without_duplicate_sale(self):
-        draft = {
-            "id": "gid://shopify/DraftOrder/90",
-            "name": "#D90",
+    def _draft_payload(self, draft_id=90, order_id=90):
+        return {
+            "id": f"gid://shopify/DraftOrder/{draft_id}",
+            "name": f"#D{draft_id}",
             "status": "COMPLETED",
             "createdAt": "2026-01-10T10:00:00Z",
             "updatedAt": "2026-01-10T10:00:00Z",
@@ -239,7 +241,7 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
             "totalShippingPriceSet": self._bag("0.00"),
             "totalTaxSet": self._bag("0.00"),
             "totalPriceSet": self._bag("10.00"),
-            "order": {"id": "gid://shopify/Order/90"},
+            "order": {"id": f"gid://shopify/Order/{order_id}"},
             "lineItems": {
                 "nodes": [
                     {
@@ -254,6 +256,9 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
                 ]
             },
         }
+
+    def test_completed_draft_links_real_order_without_duplicate_sale(self):
+        draft = self._draft_payload()
         before = self.env["sale.order"].search_count([])
         draft_binding_id = self.order_model._job_import_order(
             self.instance.id, draft, is_draft=True
@@ -269,6 +274,92 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertEqual(draft_binding.odoo_id, order_binding.odoo_id)
         self.assertEqual(draft_binding.replaced_by_id, order_binding)
         self.assertEqual(len(order_binding.odoo_id.order_line), 1)
+
+    def test_order_from_draft_waits_for_its_draft_order(self):
+        with self.assertRaises(RetryableJobError):
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(order_id=91, sourceName="shopify_draft_order"),
+            )
+        self.assertFalse(
+            self.order_model.search([("shopify_id", "=", "gid://shopify/Order/91")])
+        )
+
+    def test_order_from_draft_is_imported_alone_on_its_last_attempt(self):
+        job = self.order_model.with_delay()._job_import_order(
+            self.instance.id,
+            self._payload(order_id=91, sourceName="shopify_draft_order"),
+        )
+        for _attempt in range(job.max_retries - 1):
+            with self.assertRaises(RetryableJobError):
+                job.perform()
+            job.store()
+
+        binding = self.order_model.browse(job.perform())
+
+        self.assertEqual(binding.state, "synced")
+        self.assertEqual(binding.odoo_id.amount_total, 10)
+        self.assertTrue(
+            self.env["shopify.log"].search(
+                [
+                    ("res_model", "=", binding._name),
+                    ("res_id", "=", binding.id),
+                    ("level", "=", "warning"),
+                ]
+            )
+        )
+
+    def test_order_from_draft_takes_over_confirmed_draft_quotation(self):
+        draft_binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id, self._draft_payload(), is_draft=True
+            )
+        )
+        quotation = draft_binding.odoo_id
+        draft_line = quotation.order_line
+        quotation.action_confirm()
+
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(order_id=90, sourceName="shopify_draft_order"),
+            )
+        )
+
+        self.assertEqual(binding.state, "synced")
+        self.assertEqual(binding.odoo_id, quotation)
+        self.assertEqual(quotation.order_line, draft_line)
+        self.assertEqual(binding.line_binding_ids.odoo_id, draft_line)
+        self.assertEqual(draft_line.shopify_line_id, "gid://shopify/LineItem/30")
+        self.assertEqual(draft_binding.replaced_by_id, binding)
+
+    def test_order_from_draft_is_imported_alone_when_drafts_are_disabled(self):
+        self.instance.draft_order_import_enabled = False
+
+        draft_binding_id = self.order_model._job_import_order(
+            self.instance.id, self._draft_payload(), is_draft=True
+        )
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(order_id=90, sourceName="shopify_draft_order"),
+            )
+        )
+
+        self.assertFalse(draft_binding_id)
+        self.assertEqual(binding.odoo_id.amount_total, 10)
+        self.assertNotIn(
+            "DRAFT_ORDERS_CREATE", self.instance._required_webhook_topics()
+        )
+
+    def test_order_import_is_retried_while_another_job_holds_the_order(self):
+        with db_connect(self.env.cr.dbname).cursor() as cr:
+            cr.execute(
+                "SELECT pg_advisory_xact_lock(%s, hashtext(%s))",
+                (self.instance.id, "gid://shopify/Order/1"),
+            )
+            with self.assertRaises(RetryableJobError):
+                self.order_model._job_import_order(self.instance.id, self._payload())
 
     def test_gateway_mapping_is_case_normalized_for_payment_split(self):
         journal = self.bank_journal

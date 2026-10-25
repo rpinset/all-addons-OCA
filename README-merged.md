@@ -1279,7 +1279,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[shopify_connector](shopify_connector/) | 19.0.1.0.5 |  | GraphQL-first Shopify commerce synchronization
+[shopify_connector](shopify_connector/) | 19.0.1.0.7 |  | GraphQL-first Shopify commerce synchronization
 [shopify_connector_account](shopify_connector_account/) | 19.0.1.0.0 |  | Shopify Payments payouts, fees, disputes, and reconciliation
 [shopify_connector_pos](shopify_connector_pos/) | 19.0.1.0.0 |  | Import Shopify POS sales into location-routed sale orders
 
@@ -2903,6 +2903,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_ec_account_edi](l10n_ec_account_edi/) | 19.0.1.0.0 |  | Electronic data interchange adapted Ecuadorian localization
 [l10n_ec_base](l10n_ec_base/) | 19.0.1.0.0 |  | Ecuadorian Localization
 
 [//]: # (end addons)

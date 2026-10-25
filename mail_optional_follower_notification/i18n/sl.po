@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-17 01:02+0000\n"
-"PO-Revision-Date: 2026-09-12 06:03+0000\n"
+"PO-Revision-Date: 2026-10-24 14:46+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -28,6 +28,10 @@ msgid ""
 "will not be notified but they can access the notification directly from the "
 "document (if they are allowed to)</span>"
 msgstr ""
+"<span name=\"no_followers_text\" colspan=\"2\" "
+"invisible=\"notify_followers\" style=\"color: red;\"> - Opozorilo: sledilci "
+"ne bodo obveščeni, vendar lahko do obvestila dostopajo neposredno iz "
+"dokumenta (če imajo za to dovoljenje)</span>"
 
 #. module: mail_optional_follower_notification
 #: model:ir.model,name:mail_optional_follower_notification.model_res_company
@@ -50,7 +54,7 @@ msgstr "Privzeto obvesti sledilce, ko uporabnik pošlje e-pošto"
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_res_company__display_name
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Prikazani naziv"
 
 #. module: mail_optional_follower_notification
 #: model:ir.model,name:mail_optional_follower_notification.model_mail_thread
@@ -68,7 +72,7 @@ msgstr "Čarovnik za sestavljanje e-pošte"
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_res_company__id
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_optional_follower_notification
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_mail_compose_gateway_message__notify_followers

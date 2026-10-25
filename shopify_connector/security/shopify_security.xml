@@ -19,6 +19,10 @@
         <field name="name">Shopify Manager</field>
         <field name="privilege_id" ref="shopify_connector.privilege_shopify" />
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+        <field
+            name="user_ids"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
     </record>
 
     <record id="shopify_instance_company_rule" model="ir.rule">

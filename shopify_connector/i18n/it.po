@@ -17,6 +17,16 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"%(created)s created and %(repaired)s repaired, but Shopify refused these "
+"topics, usually because the app lacks the access scope or the protected "
+"customer data they need:\n"
+"%(failures)s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
 msgid "%(created)s created and %(repaired)s repaired."
 msgstr ""
 
@@ -389,6 +399,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/product_binding.py:0
 msgid "An image and its product must use the same instance."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Another job is importing Shopify order %s."
 msgstr ""
 
 #. module: shopify_connector
@@ -1800,6 +1816,11 @@ msgid "Import Customers"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__draft_order_import_enabled
+msgid "Import Draft Orders"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__import_orders
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_order_view_form
 msgid "Import Orders"
@@ -1854,6 +1875,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify draft order %s"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__draft_order_import_enabled
+msgid ""
+"Import Shopify draft orders as quotations. An order created from a draft "
+"order then continues on the quotation of its draft order."
 msgstr ""
 
 #. module: shopify_connector
@@ -4239,6 +4267,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid ""
+"Shopify draft orders could not be fetched, so only orders are queued: %s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
 "Shopify edited order lines after Odoo delivery; manual resolution is "
 "required."
 msgstr ""
@@ -4295,6 +4330,21 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__shop_url
 msgid "Shopify myshopify.com domain, without an Admin API path."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify order %s comes from a draft order that is not imported yet."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"Shopify order %s comes from a draft order that was not linked to it in time, "
+"so it is imported as a new sale order. Cancel the quotation of its draft "
+"order if there is one."
 msgstr ""
 
 #. module: shopify_connector
@@ -4831,6 +4881,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_binding.py:0
 msgid "The inventory webhook echo window cannot be negative."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"The lines of Shopify order %s differ from its draft order, whose Odoo order "
+"is already confirmed; manual resolution is required."
 msgstr ""
 
 #. module: shopify_connector
