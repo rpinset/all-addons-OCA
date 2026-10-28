@@ -100,7 +100,8 @@ class RouteRoute(models.Model):
                 record.state = "draft"
             elif all(cp.state in ["done", "incident"] for cp in record.checkpoint_ids):
                 record.state = "done"
-            elif any(cp.state in ["done", "incident"] for cp in record.checkpoint_ids):
+            # Incidents alone (e.g. cancelled pickings) don't mean the route started
+            elif any(cp.state == "done" for cp in record.checkpoint_ids):
                 record.state = "in_progress"
             elif any(cp.state == "planned" for cp in record.checkpoint_ids):
                 record.state = "planned"
@@ -224,7 +225,7 @@ class RouteRoute(models.Model):
         return res
 
     def action_draft(self):
-        self.checkpoint_ids.action_draft()
+        self.checkpoint_ids.filtered(lambda cp: cp.state == "planned").action_draft()
 
     def action_planned(self):
         self.ensure_one()
@@ -244,10 +245,14 @@ class RouteRoute(models.Model):
             start_location.partner_longitude,
         )
         self._attach_checkpoint_with_incident()
+        checkpoints = self.checkpoint_ids.filtered(lambda cp: cp.state == "draft")
+        # Closed checkpoints (e.g. cancelled pickings) must stay before the rest
+        closed_checkpoints = self.checkpoint_ids - checkpoints
+        first_sequence = max(closed_checkpoints.mapped("sequence"), default=0) + 1
         self._action_optimize_route(
-            self.time_start, starting_location, self.checkpoint_ids
+            self.time_start, starting_location, checkpoints, first_sequence
         )
-        self.checkpoint_ids.action_planned()
+        checkpoints.action_planned()
 
     def _attach_checkpoint_with_incident(self):
         domain = self._prepare_domain_checkpoint_with_incident()

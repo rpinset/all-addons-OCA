@@ -17,6 +17,16 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
+msgid ""
+"%(created)s created and %(repaired)s repaired, but Shopify refused these "
+"topics, usually because the app lacks the access scope or the protected "
+"customer data they need:\n"
+"%(failures)s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
 msgid "%(created)s created and %(repaired)s repaired."
 msgstr ""
 
@@ -24,12 +34,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "%(orders)s orders and %(drafts)s draft orders queued for import."
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/product_sync.py:0
-msgid "%(product)s image %(position)s"
 msgstr ""
 
 #. module: shopify_connector
@@ -196,7 +200,6 @@ msgstr ""
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_order_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_order_line_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_payout_instance_gid_unique
-#: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_image_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_template_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_variant_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_refund_instance_gid_unique
@@ -356,11 +359,6 @@ msgid "An Odoo customer can only be linked once per Shopify instance."
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_image_instance_odoo_unique
-msgid "An Odoo image can only be linked once per Shopify instance."
-msgstr ""
-
-#. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_order_line_instance_sale_line_unique
 msgid "An Odoo order line can only be linked once per Shopify instance."
 msgstr ""
@@ -387,8 +385,8 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
-#: code:addons/shopify_connector/models/product_binding.py:0
-msgid "An image and its product must use the same instance."
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Another job is importing Shopify order %s."
 msgstr ""
 
 #. module: shopify_connector
@@ -480,11 +478,6 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order__assigned_location_id
 msgid "Assigned Shopify Location"
-msgstr ""
-
-#. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__variant_binding_ids
-msgid "Associated Shopify Variants"
 msgstr ""
 
 #. module: shopify_connector
@@ -931,7 +924,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__create_uid
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__create_uid
@@ -966,7 +958,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__create_date
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__create_date
@@ -1311,7 +1302,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__display_name
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__display_name
@@ -1411,7 +1401,6 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__error
-#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__error
@@ -1435,7 +1424,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__error_message
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__error_message
@@ -1742,7 +1730,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__id
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__id
@@ -1771,14 +1758,12 @@ msgid "Ignored matching Shopify inventory webhook echo."
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__image_checksum
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__image_checksum
 msgid "Image Checksum"
 msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_field_mapping__field__images
-#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_form
 msgid "Images"
 msgstr ""
 
@@ -1805,6 +1790,11 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__import_customers
 msgid "Import Customers"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__draft_order_import_enabled
+msgid "Import Draft Orders"
 msgstr ""
 
 #. module: shopify_connector
@@ -1862,6 +1852,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify draft order %s"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__draft_order_import_enabled
+msgid ""
+"Import Shopify draft orders as quotations. An order created from a draft "
+"order then continues on the quotation of its draft order."
 msgstr ""
 
 #. module: shopify_connector
@@ -2217,7 +2214,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__last_sync_date
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__last_sync_date
@@ -2249,7 +2245,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__write_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__write_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__write_uid
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__write_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__write_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__write_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__write_uid
@@ -2284,7 +2279,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__write_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__write_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_export_wizard__write_date
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__write_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__write_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__write_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__write_date
@@ -2648,11 +2642,6 @@ msgid "Odoo Product"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__odoo_id
-msgid "Odoo Product Image"
-msgstr ""
-
-#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__odoo_id
 msgid "Odoo Sales Line"
 msgstr ""
@@ -2940,7 +2929,6 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__pending
-#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__pending
@@ -3083,11 +3071,6 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__product_field_mapping_ids
 msgid "Product Field Ownership"
-msgstr ""
-
-#. module: shopify_connector
-#: model:ir.model,name:shopify_connector.model_product_image
-msgid "Product Image"
 msgstr ""
 
 #. module: shopify_connector
@@ -3838,7 +3821,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__shopify_id
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__shopify_id
@@ -3868,16 +3850,6 @@ msgid "Shopify High Risk"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_product_image__shopify_image_binding_ids
-msgid "Shopify Image Bindings"
-msgstr ""
-
-#. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__image_binding_ids
-msgid "Shopify Images"
-msgstr ""
-
-#. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_shopify_gateway_payment
 msgid "Shopify Imported Gateway Payment"
 msgstr ""
@@ -3898,7 +3870,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__instance_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__instance_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__instance_id
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__instance_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__instance_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__instance_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__instance_id
@@ -4069,11 +4040,6 @@ msgid "Shopify Product Deletion"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model,name:shopify_connector.model_shopify_product_image
-msgid "Shopify Product Image Binding"
-msgstr ""
-
-#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__product_pricelist_id
 msgid "Shopify Product Pricelist"
 msgstr ""
@@ -4173,7 +4139,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__external_updated_at
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__external_updated_at
@@ -4270,6 +4235,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid ""
+"Shopify draft orders could not be fetched, so only orders are queued: %s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
 "Shopify edited order lines after Odoo delivery; manual resolution is "
 "required."
 msgstr ""
@@ -4326,6 +4298,21 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__shop_url
 msgid "Shopify myshopify.com domain, without an Admin API path."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify order %s comes from a draft order that is not imported yet."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"Shopify order %s comes from a draft order that was not linked to it in time, "
+"so it is imported as a new sale order. Cancel the quotation of its draft "
+"order if there is one."
 msgstr ""
 
 #. module: shopify_connector
@@ -4492,11 +4479,6 @@ msgid "Source Name"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__source_url
-msgid "Source Url"
-msgstr ""
-
-#. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_binding_mixin__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_catalog__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_collection__shopify_id
@@ -4510,7 +4492,6 @@ msgstr ""
 #: model:ir.model.fields,help:shopify_connector.field_shopify_location__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order_line__shopify_id
-#: model:ir.model.fields,help:shopify_connector.field_shopify_product_image__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_variant__shopify_id
 #: model:ir.model.fields,help:shopify_connector.field_shopify_refund__shopify_id
@@ -4538,7 +4519,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__state
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__state
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__state
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__state
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__state
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__state
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__state
@@ -4650,7 +4630,6 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__synced
-#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__synced
@@ -4708,7 +4687,6 @@ msgid "Taxes Included"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__template_binding_id
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__template_binding_id
 msgid "Template Binding"
 msgstr ""
@@ -4735,12 +4713,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_binding.py:0
 msgid "The B2B location must belong to its bound company."
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/product_binding.py:0
-msgid "The Odoo image must belong to the bound product."
 msgstr ""
 
 #. module: shopify_connector
@@ -4855,14 +4827,16 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
-#: code:addons/shopify_connector/models/product_binding.py:0
-msgid "The image variant must belong to the bound product."
+#: code:addons/shopify_connector/models/inventory_binding.py:0
+msgid "The inventory webhook echo window cannot be negative."
 msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
-#: code:addons/shopify_connector/models/inventory_binding.py:0
-msgid "The inventory webhook echo window cannot be negative."
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"The lines of Shopify order %s differ from its draft order, whose Odoo order "
+"is already confirmed; manual resolution is required."
 msgstr ""
 
 #. module: shopify_connector
@@ -5061,7 +5035,6 @@ msgstr ""
 #: model:ir.model.fields,help:shopify_connector.field_shopify_location__last_sync_date
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order__last_sync_date
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order_line__last_sync_date
-#: model:ir.model.fields,help:shopify_connector.field_shopify_product_image__last_sync_date
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__last_sync_date
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_variant__last_sync_date
 #: model:ir.model.fields,help:shopify_connector.field_shopify_refund__last_sync_date
@@ -5083,7 +5056,6 @@ msgstr ""
 #: model:ir.model.fields,help:shopify_connector.field_shopify_location__external_updated_at
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order__external_updated_at
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order_line__external_updated_at
-#: model:ir.model.fields,help:shopify_connector.field_shopify_product_image__external_updated_at
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__external_updated_at
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_variant__external_updated_at
 #: model:ir.model.fields,help:shopify_connector.field_shopify_refund__external_updated_at
@@ -5139,7 +5111,6 @@ msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__variant_binding_id
-#: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_image__variant_binding_id
 msgid "Variant Binding"
 msgstr ""
 

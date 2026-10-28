@@ -42,6 +42,16 @@ class TestShopifyLibOrder(TransactionCase):
             "currency": "EUR",
         }
 
+    def test_order_number_reads_graphql_number_and_rest_order_number(self):
+        graphql = normalize_order_payload(
+            {"id": "gid://shopify/Order/1", "name": "#1001", "number": 1001}
+        )
+        rest = normalize_order_payload(
+            {"id": 1, "name": "#1001", "number": 1, "order_number": 1001}
+        )
+        assert graphql["number"] == "1001"
+        assert rest["number"] == "1001"
+
     def test_rest_webhook_uses_current_quantity_and_exact_discounted_total(self):
         order = normalize_order_payload(
             {

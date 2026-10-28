@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-10-25 08:39 UTC
+Generated 2026-10-28 20:07 UTC
 
-Total skipped: **110**
+Total skipped: **109**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -43,7 +43,7 @@ Count: **30**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **80**
+Count: **79**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -118,7 +118,6 @@ Count: **80**
 | [vertical-medical](https://github.com/OCA/vertical-medical) | [18.0](https://github.com/OCA/vertical-medical/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-ngo](https://github.com/OCA/vertical-ngo) | [18.0](https://github.com/OCA/vertical-ngo/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-realestate](https://github.com/OCA/vertical-realestate) | [18.0](https://github.com/OCA/vertical-realestate/tree/18.0) | No directory with __manifest__.py at repo root |
-| [vertical-rental](https://github.com/OCA/vertical-rental) | [18.0](https://github.com/OCA/vertical-rental/tree/18.0) | No directory with __manifest__.py at repo root |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | [18.0](https://github.com/OCA/vertical-travel/tree/18.0) | No directory with __manifest__.py at repo root |
 | [wallet](https://github.com/OCA/wallet) | [18.0](https://github.com/OCA/wallet/tree/18.0) | No directory with __manifest__.py at repo root |
 | [web-app-shell](https://github.com/OCA/web-app-shell) | [18.0](https://github.com/OCA/web-app-shell/tree/18.0) | No directory with __manifest__.py at repo root |

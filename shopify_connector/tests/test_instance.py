@@ -546,7 +546,14 @@ class TestShopifyInstanceClientCredentials(TransactionCase):
         )
 
     def test_expired_token_is_renewed_in_its_own_locked_transaction(self):
-        """The renewal commits on its own, so waiting workers can see it."""
+        """The renewal commits on its own, so waiting workers can see it.
+
+        ``enter_registry_test_mode`` makes the nested cursor reuse the
+        transaction of this test, so the renewal lock is never actually
+        contended here: the tests using it cover the statements and the
+        branches around the lock, not the serialisation itself, which only a
+        second database connection would exercise.
+        """
         self._expire_the_stored_token()
 
         with (

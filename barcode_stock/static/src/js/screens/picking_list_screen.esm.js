@@ -68,7 +68,9 @@ export class PickingListScreen extends Component {
             date: _t("Date"),
         };
         this.filterLabels = FILTER_LABELS;
-        this.groupOrder = GROUP_ORDER;
+        // Grouping levels, outermost first. The Group menu and
+        // toggleGroupLevel follow it, so a module adds a level by extending it.
+        this.groupOrder = [...GROUP_ORDER];
 
         // Close any open filter/group menu when tapping outside the toolbar; the
         // toolbar itself stops propagation so its own taps do not trigger this.
@@ -95,13 +97,9 @@ export class PickingListScreen extends Component {
             () => {
                 this.computeGroups();
                 this.persistSessionView();
-                const collapsed = {};
-                const groups = this.state.groupedPickings;
-                const keys = Object.keys(groups);
-                keys.forEach((key, index) => {
-                    collapsed["root-" + key] = this.state.search ? false : index !== 0;
-                });
-                this.state.collapsedGroups = collapsed;
+                this.state.collapsedGroups = this.initialCollapsedGroups(
+                    this.state.groupedPickings
+                );
             },
             () => [
                 this.state.pickings,
@@ -221,39 +219,8 @@ export class PickingListScreen extends Component {
         );
     }
 
-    toggleGroupBy(group, ev) {
-        if (ev.target.checked) {
-            if (!this.state.groupByLevels.includes(group)) {
-                this.state.groupByLevels = GROUP_ORDER.filter((g) =>
-                    g === group
-                        ? ev.target.checked
-                        : this.state.groupByLevels.includes(g)
-                );
-            }
-        } else {
-            this.state.groupByLevels = this.state.groupByLevels.filter(
-                (g) => g !== group
-            );
-        }
-        this.computeGroups();
-    }
-
     toggleGroup(path) {
         this.state.collapsedGroups[path] = !this.state.collapsedGroups[path];
-    }
-
-    addGroup(ev) {
-        const value = ev.target.value;
-        if (!value) {
-            return;
-        }
-        if (!this.state.groupByLevels.includes(value)) {
-            this.state.groupByLevels = GROUP_ORDER.filter(
-                (group) => group === value || this.state.groupByLevels.includes(group)
-            );
-        }
-        this.computeGroups();
-        ev.target.value = "";
     }
 
     removeGroup(group) {
@@ -316,10 +283,6 @@ export class PickingListScreen extends Component {
         ];
     }
 
-    get availableGroupingOptions() {
-        return GROUP_ORDER.filter((group) => !this.state.groupByLevels.includes(group));
-    }
-
     normalizeSearchValue(value) {
         return (value || "").toString().trim().toLowerCase();
     }
@@ -374,6 +337,8 @@ export class PickingListScreen extends Component {
         return date.toLocaleDateString(undefined, {
             month: "short",
             day: "numeric",
+            // The same day of another year is another day: say which year.
+            year: date.getFullYear() === today.getFullYear() ? undefined : "numeric",
         });
     }
 
@@ -700,13 +665,17 @@ export class PickingListScreen extends Component {
         this.computeGroups();
     }
 
-    /** Add or remove a grouping level from the Group menu, keeping GROUP_ORDER. */
+    /**
+     * Add or remove a grouping level from the Group menu, keeping groupOrder.
+     *
+     * @param {String} group the grouping level to toggle
+     */
     toggleGroupLevel(group) {
         if (this.state.groupByLevels.includes(group)) {
             this.removeGroup(group);
             return;
         }
-        this.state.groupByLevels = GROUP_ORDER.filter(
+        this.state.groupByLevels = this.groupOrder.filter(
             (level) => level === group || this.state.groupByLevels.includes(level)
         );
         this.computeGroups();
@@ -959,12 +928,65 @@ export class PickingListScreen extends Component {
         );
     }
 
-    sortedGroupKeys(groups) {
-        return Object.keys(groups).sort((left, right) =>
+    /**
+     * Which groups start collapsed: all but the first one shown, so the
+     * operator lands on the top of the list -- the groups are drawn in
+     * sortedGroupKeys order, not in the order the operations came in -- and
+     * none while searching, so every match is in sight.
+     *
+     * @param {Object} groups the operations grouped by their first level
+     * @returns {Object} collapsed state by group path
+     */
+    initialCollapsedGroups(groups) {
+        const collapsed = {};
+        this.sortedGroupKeys(groups, 0).forEach((key, index) => {
+            collapsed["root-" + key] = this.state.search ? false : index !== 0;
+        });
+        return collapsed;
+    }
+
+    /**
+     * The order the groups of one level are drawn in. Date groups follow the
+     * calendar -- their labels (Today, Tomorrow, Oct 20...) do not sort by
+     * date -- with the operations without one last; the others go by name.
+     *
+     * @param {Object} groups the operations grouped by that level
+     * @param {Number} level the grouping level, 0 being the outermost
+     * @returns {String[]} the group keys, in the order they are drawn
+     */
+    sortedGroupKeys(groups, level) {
+        const keys = Object.keys(groups);
+        if (this.state.groupByLevels?.[level] === "date") {
+            const starts = Object.fromEntries(
+                keys.map((key) => [key, this.groupStart(groups[key])])
+            );
+            return keys.sort((left, right) => starts[left] - starts[right] || 0);
+        }
+        return keys.sort((left, right) =>
             left.localeCompare(right, undefined, {
                 numeric: true,
                 sensitivity: "base",
             })
+        );
+    }
+
+    /**
+     * When a group starts: the earliest scheduled date of its operations, as a
+     * timestamp, or Infinity when none has a date.
+     *
+     * @param {Object|Object[]} groupNode a group, or its operations
+     * @returns {Number} the timestamp the group sorts by
+     */
+    groupStart(groupNode) {
+        if (Array.isArray(groupNode)) {
+            return groupNode.reduce((earliest, picking) => {
+                const date = this.parseScheduledDate(picking.scheduled_date);
+                return date ? Math.min(earliest, date.getTime()) : earliest;
+            }, Infinity);
+        }
+        return Object.values(groupNode).reduce(
+            (earliest, child) => Math.min(earliest, this.groupStart(child)),
+            Infinity
         );
     }
 

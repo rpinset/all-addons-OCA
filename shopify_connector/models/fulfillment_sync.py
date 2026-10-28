@@ -690,7 +690,9 @@ class StockPickingShopifyFulfillmentSync(models.Model):
                 item.state == "done" and item.picking_type_id.code == "outgoing"
             )
         ):
-            bindings = picking.sale_id.shopify_binding_ids.filtered(
+            # Any stock user may validate a delivery; only the lookup of the
+            # order bindings needs Shopify access.
+            bindings = picking.sale_id.sudo().shopify_binding_ids.filtered(
                 lambda item: not item.is_draft and item.state == "synced"
             )
             for binding in bindings:
@@ -708,7 +710,10 @@ class StockPickingShopifyFulfillmentSync(models.Model):
     def action_cancel(self):
         result = super().action_cancel()
         for picking in self:
-            for fulfillment in picking.shopify_fulfillment_ids.filtered("shopify_id"):
+            # Any stock or purchase user may cancel a picking; only the lookup
+            # of its fulfillments needs Shopify access.
+            fulfillments = picking.sudo().shopify_fulfillment_ids.filtered("shopify_id")
+            for fulfillment in fulfillments:
                 base_url = (
                     self.env["ir.config_parameter"].sudo().get_param("web.base.url")
                 )

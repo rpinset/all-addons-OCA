@@ -166,6 +166,35 @@ class TestRoutePlanningStock(RouteCommon):
         incident_type = self.env.ref("route_planning_stock.route_incident_cancel")
         self.assertEqual(checkpoint.state, "incident")
         self.assertEqual(checkpoint.incident_type_id, incident_type)
+        self.assertEqual(checkpoint.route_id.state, "done")
+
+    @mute_logger("odoo.models.unlink")
+    def test_action_cancel_draft_route(self):
+        """Cancelling a picking of a draft route keeps it in draft,
+        so it can still be planned with the remaining checkpoints."""
+        picking_2 = self.picking.copy(
+            {"partner_id": self.partner_2.id, "route_area_id": self.area_north.id}
+        )
+        self.picking.button_validate()
+        next_picking = self.picking._get_next_transfers()
+        next_picking.do_print_picking()
+        picking_2.button_validate()
+        next_picking2 = picking_2._get_next_transfers()
+        route = next_picking.route_checkpoint_ids.route_id
+        self.assertEqual(route, next_picking2.route_checkpoint_ids.route_id)
+        next_picking.action_cancel()
+        self.assertEqual(route.state, "draft")
+        route.action_planned()
+        self.assertEqual(route.state, "planned")
+        checkpoint = next_picking.route_checkpoint_ids
+        checkpoint2 = next_picking2.route_checkpoint_ids
+        self.assertEqual(checkpoint.state, "incident")
+        self.assertEqual(checkpoint2.state, "planned")
+        self.assertGreater(checkpoint2.sequence, checkpoint.sequence)
+        route.action_draft()
+        self.assertEqual(route.state, "draft")
+        self.assertEqual(checkpoint.state, "incident")
+        self.assertEqual(checkpoint2.state, "draft")
 
     @mute_logger("odoo.models.unlink")
     def test_action_picking_done(self):

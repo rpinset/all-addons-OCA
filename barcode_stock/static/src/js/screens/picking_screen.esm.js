@@ -453,7 +453,8 @@ export class PickingScreen extends Component {
             moveId: move.id,
             pickingId: this.state.picking.id,
             pickingTypeCode: this.state.pickingTypeCode,
-            defaultQty: defaults.qty || 1,
+            // A scan's quantity; a tapped move starts at one unit in the wizard.
+            defaultQty: defaults.qty || null,
             defaultLot: defaults.lot || null,
             lotName: defaults.lotName || null,
             expiration: defaults.expiration || null,

@@ -207,6 +207,7 @@
                     <group>
                         <group string="Import">
                             <field name="order_currency_policy" />
+                            <field name="draft_order_import_enabled" />
                             <field name="unknown_product_policy" />
                             <field
                                 name="placeholder_product_id"

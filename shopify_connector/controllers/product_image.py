@@ -35,8 +35,7 @@ class ShopifyProductImageController(http.Controller):
         if (
             not instance
             or not instance.active
-            or model_name
-            not in {"product.template", "product.product", "product.image"}
+            or model_name not in self._image_models()
             or not verify_product_image_signature(
                 signature,
                 instance.webhook_secret,
@@ -64,14 +63,14 @@ class ShopifyProductImageController(http.Controller):
         response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
         return response
 
-    @staticmethod
-    def _record_company_matches(record, instance):
+    def _image_models(self):
+        return {"product.template", "product.product"}
+
+    def _image_template(self, record):
         if record._name == "product.template":
-            template = record
-        elif record._name == "product.product":
-            template = record.product_tmpl_id
-        else:
-            template = (
-                record.product_tmpl_id or record.product_variant_id.product_tmpl_id
-            )
+            return record
+        return record.product_tmpl_id
+
+    def _record_company_matches(self, record, instance):
+        template = self._image_template(record)
         return not template.company_id or template.company_id == instance.company_id

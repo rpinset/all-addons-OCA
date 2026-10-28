@@ -807,7 +807,7 @@ class ShopifyCompanySync(models.Model):
             for assignment in (location.get("roleAssignments") or {}).get(
                 "nodes"
             ) or []:
-                contact = assignment.get("contact") or {}
+                contact = assignment.get("companyContact") or {}
                 role = assignment.get("role") or {}
                 if contact.get("id") and role.get("name"):
                     roles_by_contact.setdefault(contact["id"], set()).add(role["name"])

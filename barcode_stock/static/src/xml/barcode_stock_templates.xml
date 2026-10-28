@@ -232,7 +232,7 @@
 
     <t t-name="barcode_scanner.GroupRenderer">
         <t
-            t-foreach="component.sortedGroupKeys(groups)"
+            t-foreach="component.sortedGroupKeys(groups, level)"
             t-as="groupKey"
             t-key="groupKey"
         >

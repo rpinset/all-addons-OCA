@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <!-- Delivery Zone section in the operation list's Filters menu. -->
+    <t
+        t-name="barcode_stock_partner_delivery_zone.PickingListScreen"
+        t-inherit="barcode_scanner.PickingListScreen"
+        t-inherit-mode="extension"
+    >
+        <xpath
+            expr="//div[@t-if=&quot;state.openMenu === 'filters'&quot;]"
+            position="inside"
+        >
+            <div class="ilx-kw-menu-section">
+                <div class="ilx-kw-menu-title">Delivery Zone</div>
+                <t
+                    t-foreach="zoneFilterOptions"
+                    t-as="opt"
+                    t-key="opt.value === null ? 'all' : opt.value"
+                >
+                    <button
+                        type="button"
+                        class="ilx-kw-menu-option"
+                        t-att-class="{selected: isZoneOptionSelected(opt.value)}"
+                        t-on-click="() => this.setZoneFilter(opt.value)"
+                    >
+                        <i
+                            class="fa"
+                            t-att-class="isZoneOptionSelected(opt.value) ? 'fa-dot-circle-o' : 'fa-circle-o'"
+                        />
+                        <span t-esc="opt.label" />
+                    </button>
+                </t>
+            </div>
+        </xpath>
+    </t>
+
+    <!-- The operation's delivery zone on its card. -->
+    <t
+        t-name="barcode_stock_partner_delivery_zone.GroupRenderer"
+        t-inherit="barcode_scanner.GroupRenderer"
+        t-inherit-mode="extension"
+    >
+        <!-- Zone groups are keyed by id: their header shows the zone's name. -->
+        <xpath
+            expr="//h2[hasclass('ilx-kw-group-title')]/t[@t-esc='groupKey']"
+            position="attributes"
+        >
+            <attribute name="t-esc">component.getGroupTitle(groupKey)</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('ilx-kw-picking-meta-left')]" position="inside">
+            <t t-if="p.delivery_zone_id">
+                <i class="fa fa-map-signs ilx-kw-meta-icon ms-2" />
+                <span class="ilx-kw-meta-text" t-esc="p.delivery_zone_id[1]" />
+            </t>
+        </xpath>
+    </t>
+
+    <!-- Delivery zone in the operation's Information tab, changeable. -->
+    <t
+        t-name="barcode_stock_partner_delivery_zone.PickingInfoTab"
+        t-inherit="barcode_scanner.PickingInfoTab"
+        t-inherit-mode="extension"
+    >
+        <xpath
+            expr="//div[hasclass('ilx-kw-card')]/div[hasclass('ilx-kw-info-row')][1]"
+            position="after"
+        >
+            <div class="ilx-kw-info-row mt-3">
+                <div class="ilx-kw-icon-box-small ilx-kw-bg-purple-light">
+                    <i class="fa fa-map-signs" />
+                </div>
+                <div class="ilx-kw-info-text w-100">
+                    <span class="ilx-kw-eyebrow">Delivery Zone</span>
+                    <div class="ilx-kw-select-wrapper mt-1">
+                        <select
+                            class="ilx-kw-select"
+                            t-att-disabled="zoneState.saving or zoneState.failed"
+                            t-on-change="onDeliveryZoneChange"
+                        >
+                            <option
+                                value=""
+                                t-att-selected="!zoneState.zone"
+                            >No zone</option>
+                            <t
+                                t-foreach="deliveryZoneOptions"
+                                t-as="zone"
+                                t-key="zone.id"
+                            >
+                                <option
+                                    t-att-value="zone.id"
+                                    t-att-selected="isDeliveryZoneSelected(zone)"
+                                    t-esc="zone.name"
+                                />
+                            </t>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </t>
+
+</templates>

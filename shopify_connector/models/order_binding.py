@@ -514,6 +514,12 @@ class ShopifyInstanceOrderConfig(models.Model):
         default="manual",
     )
     high_risk_hold_enabled = fields.Boolean(default=True)
+    draft_order_import_enabled = fields.Boolean(
+        string="Import Draft Orders",
+        default=True,
+        help="Import Shopify draft orders as quotations. An order created from a "
+        "draft order then continues on the quotation of its draft order.",
+    )
     placeholder_product_id = fields.Many2one(
         "product.product", check_company=True, ondelete="restrict"
     )

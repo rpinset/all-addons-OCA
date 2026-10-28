@@ -8,7 +8,6 @@ from odoo.exceptions import UserError, ValidationError
 
 from ..graphql import WEBHOOK_SUBSCRIPTIONS_QUERY
 from ..lib.operability import state_count_label
-from .instance import REQUIRED_WEBHOOK_TOPICS
 
 BINDING_DASHBOARD_MODELS = (
     ("Products", "shopify.product.template"),
@@ -345,7 +344,7 @@ class ShopifyInstanceOperability(models.Model):
         else:
             remote = self.env._("Remote subscriptions: healthy")
         lines = [remote]
-        for topic in REQUIRED_WEBHOOK_TOPICS:
+        for topic in self._required_webhook_topics():
             event = event_model.search(
                 [
                     ("instance_id", "=", self.id),
@@ -373,7 +372,7 @@ class ShopifyInstanceOperability(models.Model):
         }
         missing = [
             topic
-            for topic in REQUIRED_WEBHOOK_TOPICS
+            for topic in self._required_webhook_topics()
             if subscriptions.get(topic) != callback_url
         ]
         self.write(

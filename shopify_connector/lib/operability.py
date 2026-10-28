@@ -8,11 +8,13 @@ from collections.abc import Iterable
 REQUIRED_ADMIN_SCOPES = (
     "read_customers",
     "read_draft_orders",
+    "read_fulfillments",
     "read_inventory",
     "read_locations",
     "read_merchant_managed_fulfillment_orders",
     "read_orders",
     "read_products",
+    "read_returns",
     "write_customers",
     "write_inventory",
     "write_merchant_managed_fulfillment_orders",

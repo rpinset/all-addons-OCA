@@ -4,6 +4,14 @@ from odoo.exceptions import ValidationError
 from odoo.tests.common import TransactionCase
 
 from ..lib.product import merge_owned_fields
+from ..models.product_sync import ShopifyProductTemplateSync
+from .common import (
+    MAIN_IMAGE_ID,
+    SHARED_IMAGE_ID,
+    VARIANT_IMAGE_ID,
+    download_test_image,
+    image_product_payload,
+)
 
 
 class TestShopifyProductSync(TransactionCase):
@@ -384,3 +392,42 @@ class TestShopifyProductSync(TransactionCase):
             first_input["variants"][0]["sku"],
             second_input["variants"][0]["sku"],
         )
+
+    def _import_image_product(self):
+        binding_model = self.env["shopify.product.template"]
+        with patch.object(
+            type(binding_model), "_download_image", side_effect=download_test_image
+        ):
+            return binding_model.browse(
+                binding_model._job_import_product(
+                    self.instance.id, image_product_payload(), payload_normalized=True
+                )
+            )
+
+    def test_import_sets_main_and_exclusive_variant_images(self):
+        binding = self._import_image_product()
+        blue = binding.variant_binding_ids.filtered(
+            lambda item: item.shopify_id == "gid://shopify/ProductVariant/701"
+        )
+        red = binding.variant_binding_ids - blue
+
+        self.assertEqual(binding.state, "synced")
+        self.assertTrue(binding.odoo_id.image_1920)
+        self.assertEqual(binding.main_image_shopify_id, MAIN_IMAGE_ID)
+        self.assertEqual(blue.image_shopify_id, VARIANT_IMAGE_ID)
+        self.assertTrue(blue.odoo_id.image_variant_1920)
+        self.assertFalse(red.image_shopify_id)
+        self.assertFalse(red.odoo_id.image_variant_1920)
+
+    def test_core_export_keeps_shopify_images_it_does_not_manage(self):
+        binding = self._import_image_product()
+        media = [
+            {"id": image_id, "mediaContentType": "IMAGE"}
+            for image_id in (MAIN_IMAGE_ID, VARIANT_IMAGE_ID, SHARED_IMAGE_ID)
+        ] + [{"id": "gid://shopify/Video/1", "mediaContentType": "VIDEO"}]
+
+        unmanaged_ids = ShopifyProductTemplateSync._unmanaged_shopify_image_ids(
+            binding, binding, media
+        )
+
+        self.assertEqual(unmanaged_ids, [SHARED_IMAGE_ID])

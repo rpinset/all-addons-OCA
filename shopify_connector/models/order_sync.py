@@ -1,12 +1,18 @@
 from __future__ import annotations
 
 # pylint: disable=consider-merging-classes-inherited
+from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal
+
+import psycopg2
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
+from odoo.service.model import PG_CONCURRENCY_EXCEPTIONS_TO_RETRY
+
+from odoo.addons.queue_job.exception import RetryableJobError
 
 from ..graphql.order import (
     DRAFT_ORDER_BY_ID_QUERY,
@@ -17,7 +23,7 @@ from ..graphql.order import (
     orders_bulk_query,
 )
 from ..lib.bulk import ShopifyBulkRunner
-from ..lib.client import ShopifyAccessDenied
+from ..lib.client import ShopifyAccessDenied, ShopifyError
 from ..lib.order import (
     decimal_amount,
     line_diffs,
@@ -135,6 +141,22 @@ class ShopifyInstanceOrderSync(models.Model):
             if not row.get("__parentId")
             and str(row.get("id") or "").startswith("gid://shopify/Order/")
         ]
+        draft_count = 0
+        if self.draft_order_import_enabled:
+            try:
+                draft_count = self._queue_draft_orders(date_from, date_to)
+            except ShopifyError as exc:
+                self._write_log(
+                    entity="order",
+                    direction="import",
+                    level="error",
+                    message=self.env._(
+                        "Shopify draft orders could not be fetched, so only orders "
+                        "are queued: %s",
+                        exc,
+                    ),
+                    record=self,
+                )
         for order in orders:
             self.env["shopify.order"].with_delay(
                 description=self.env._(
@@ -142,7 +164,6 @@ class ShopifyInstanceOrderSync(models.Model):
                 ),
                 identity_key=f"shopify.order.import.{self.id}.{order['id']}",
             )._job_import_order_from_api(self.id, order["id"])
-        draft_count = self._queue_draft_orders(date_from, date_to)
         self._write_log(
             entity="order",
             direction="import",
@@ -159,9 +180,9 @@ class ShopifyInstanceOrderSync(models.Model):
     def _queue_draft_orders(self, date_from=False, date_to=False):
         query_terms = []
         if date_from:
-            query_terms.append(f"created_at:>={str(date_from)[:10]}")
+            query_terms.append(f"updated_at:>={str(date_from)[:10]}")
         if date_to:
-            query_terms.append(f"created_at:<={str(date_to)[:10]}")
+            query_terms.append(f"updated_at:<={str(date_to)[:10]}")
         after = None
         count = 0
         while True:
@@ -196,6 +217,12 @@ class ShopifyInstanceOrderSync(models.Model):
                     self.env._("Shopify returned an invalid draft-order page cursor.")
                 )
         return count
+
+    def _required_webhook_topics(self):
+        topics = super()._required_webhook_topics()
+        if self.draft_order_import_enabled:
+            return topics
+        return tuple(topic for topic in topics if not topic.startswith("DRAFT_ORDERS_"))
 
 
 class ShopifyOrderSync(models.Model):
@@ -292,16 +319,22 @@ class ShopifyOrderSync(models.Model):
             if payload_normalized
             else normalize_order_payload(payload, is_draft=is_draft)
         )
+        if order_data["is_draft"] and not instance.draft_order_import_enabled:
+            return False
         digest = payload_digest(order_data)
-        self.env.cr.execute(
-            "SELECT pg_advisory_xact_lock(%s, hashtext(%s))",
-            (instance.id, order_data["id"]),
-        )
+        lock_keys = [order_data["id"]]
         if order_data["is_draft"] and order_data["completed_order_id"]:
+            lock_keys.append(order_data["completed_order_id"])
+        for lock_key in lock_keys:
             self.env.cr.execute(
-                "SELECT pg_advisory_xact_lock(%s, hashtext(%s))",
-                (instance.id, order_data["completed_order_id"]),
+                "SELECT pg_try_advisory_xact_lock(%s, hashtext(%s))",
+                (instance.id, lock_key),
             )
+            if not self.env.cr.fetchone()[0]:
+                raise RetryableJobError(
+                    self.env._("Another job is importing Shopify order %s.", lock_key),
+                    seconds=5,
+                )
         binding = self.search(
             [
                 ("instance_id", "=", instance.id),
@@ -311,15 +344,53 @@ class ShopifyOrderSync(models.Model):
         )
         if binding and binding.payload_digest == digest and binding.state == "synced":
             return binding.id
+        draft_link_missing = (
+            not binding.odoo_id
+            and order_data["source"] == "draft"
+            and not order_data["is_draft"]
+            and instance.draft_order_import_enabled
+            and not self._completed_draft_binding(instance, order_data["id"])
+        )
+        if draft_link_missing and not self._is_last_job_attempt():
+            raise RetryableJobError(
+                self.env._(
+                    "Shopify order %s comes from a draft order that is not imported "
+                    "yet.",
+                    order_data["name"],
+                ),
+                seconds=10,
+            )
         if not binding:
-            binding = self.create(
-                {
-                    "instance_id": instance.id,
-                    "shopify_id": order_data["id"],
-                    "order_name": order_data["name"],
-                    "source": order_data["source"],
-                    "is_draft": order_data["is_draft"],
-                }
+            try:
+                with self.env.cr.savepoint():
+                    binding = self.create(
+                        {
+                            "instance_id": instance.id,
+                            "shopify_id": order_data["id"],
+                            "order_name": order_data["name"],
+                            "source": order_data["source"],
+                            "is_draft": order_data["is_draft"],
+                        }
+                    )
+            except psycopg2.errors.UniqueViolation as exc:
+                raise RetryableJobError(
+                    self.env._(
+                        "Another job is importing Shopify order %s.", order_data["id"]
+                    ),
+                    seconds=5,
+                ) from exc
+        if draft_link_missing:
+            instance._write_log(
+                entity="order",
+                direction="import",
+                level="warning",
+                message=self.env._(
+                    "Shopify order %s comes from a draft order that was not linked "
+                    "to it in time, so it is imported as a new sale order. Cancel "
+                    "the quotation of its draft order if there is one.",
+                    order_data["name"],
+                ),
+                record=binding,
             )
         if order_data["source"] == "pos":
             return self._route_shopify_pos_order(binding, instance, order_data, digest)
@@ -366,6 +437,8 @@ class ShopifyOrderSync(models.Model):
                     self._apply_returns(binding, order_data)
                     self._apply_refunds(binding, order_data)
                 self._write_success(binding, sale_order, order_data, digest)
+        except (RetryableJobError, *PG_CONCURRENCY_EXCEPTIONS_TO_RETRY):
+            raise
         except Exception as exc:
             values = {
                 "state": "error",
@@ -405,7 +478,6 @@ class ShopifyOrderSync(models.Model):
 
     def _build_order(self, binding, instance, order_data):
         sale_order = binding.odoo_id
-        draft_binding = self.env["shopify.order"]
         completed_binding = self.env["shopify.order"]
         if order_data["is_draft"] and order_data["completed_order_id"]:
             completed_binding = self.search(
@@ -420,16 +492,12 @@ class ShopifyOrderSync(models.Model):
                 sale_order = completed_binding.odoo_id
                 binding.replaced_by_id = completed_binding
         if not completed_binding and not sale_order and not order_data["is_draft"]:
-            draft_binding = self.search(
-                [
-                    ("instance_id", "=", instance.id),
-                    ("is_draft", "=", True),
-                    ("completed_order_shopify_id", "=", order_data["id"]),
-                    ("odoo_id", "!=", False),
-                ],
-                limit=1,
-            )
-            sale_order = draft_binding.odoo_id
+            draft_binding = self._completed_draft_binding(instance, order_data["id"])
+            if draft_binding:
+                sale_order = draft_binding.odoo_id
+                binding.odoo_id = sale_order
+                self._adopt_draft_lines(draft_binding, binding, sale_order, order_data)
+                draft_binding.replaced_by_id = binding
         if completed_binding:
             binding.odoo_id = sale_order
             self._verify_total(
@@ -508,9 +576,6 @@ class ShopifyOrderSync(models.Model):
                 .create(values)
             )
         binding.odoo_id = sale_order
-        if draft_binding:
-            draft_binding.line_binding_ids.mapped("odoo_id").unlink()
-            draft_binding.replaced_by_id = binding
         self._apply_lines(binding, sale_order, instance, order_data)
         self._verify_total(sale_order, currency, instance, order_data)
         return sale_order
@@ -518,6 +583,91 @@ class ShopifyOrderSync(models.Model):
     def _shopify_order_extra_values(self, instance, order_data):
         """Allow optional modules to supply sale-order routing values."""
         return {}
+
+    def _completed_draft_binding(self, instance, order_id):
+        return self.search(
+            [
+                ("instance_id", "=", instance.id),
+                ("is_draft", "=", True),
+                ("completed_order_shopify_id", "=", order_id),
+                ("odoo_id", "!=", False),
+            ],
+            limit=1,
+        )
+
+    def _is_last_job_attempt(self):
+        job_uuid = self.env.context.get("job_uuid")
+        if not job_uuid:
+            return False
+        job = self.env["queue.job"].sudo().search([("uuid", "=", job_uuid)], limit=1)
+        return bool(job.max_retries) and job.retry + 1 >= job.max_retries
+
+    def _adopt_draft_lines(self, draft_binding, binding, sale_order, order_data):
+        incoming = [
+            (
+                (
+                    "line",
+                    line["variant_id"] or line["title"],
+                    line["quantity"],
+                    decimal_amount(line["unit_price"]["shop"]["amount"]),
+                    decimal_amount(line["discounted_total"]["shop"]["amount"]),
+                ),
+                line["id"],
+            )
+            for line in order_data["lines"]
+            if line["quantity"] > 0
+        ] + [
+            (
+                (
+                    "shipping",
+                    shipping["title"],
+                    decimal_amount(shipping["discounted_total"]["shop"]["amount"]),
+                ),
+                self._shipping_line_identifier(order_data, index, shipping),
+            )
+            for index, shipping in enumerate(order_data["shipping_lines"])
+        ]
+        draft_lines = defaultdict(list)
+        for line in draft_binding.line_binding_ids:
+            draft_lines[self._draft_line_key(line)].append(line)
+        if Counter(key for key, _identifier in incoming) != Counter(
+            {key: len(lines) for key, lines in draft_lines.items()}
+        ):
+            if sale_order.state not in ("draft", "sent"):
+                raise ShopifyOrderImportError(
+                    self.env._(
+                        "The lines of Shopify order %s differ from its draft "
+                        "order, whose Odoo order is already confirmed; manual "
+                        "resolution is required.",
+                        order_data["name"],
+                    )
+                )
+            draft_binding.line_binding_ids.odoo_id.unlink()
+            return
+        for key, identifier in incoming:
+            draft_lines[key].pop(0).write(
+                {"order_binding_id": binding.id, "shopify_id": identifier}
+            )
+
+    def _draft_line_key(self, line):
+        if line.is_shipping:
+            return (
+                "shipping",
+                line.odoo_id.name,
+                decimal_amount(line.shop_discounted_total or 0),
+            )
+        return (
+            "line",
+            line.variant_shopify_id or line.odoo_id.name,
+            int(line.current_quantity),
+            decimal_amount(line.shop_unit_price or 0),
+            decimal_amount(line.shop_discounted_total or 0),
+        )
+
+    def _shipping_line_identifier(self, order_data, index, shipping):
+        return shipping["id"] or (
+            f"gid://shopify/ShippingLine/{order_data['id'].rsplit('/', 1)[-1]}-{index}"
+        )
 
     def _existing_line_snapshot(self, binding, sale_order):
         result = []
@@ -707,10 +857,7 @@ class ShopifyOrderSync(models.Model):
         }
         incoming_ids = set()
         for index, shipping in enumerate(order_data["shipping_lines"]):
-            identifier = shipping["id"] or (
-                f"gid://shopify/ShippingLine/{order_data['id'].rsplit('/', 1)[-1]}"
-                f"-{index}"
-            )
+            identifier = self._shipping_line_identifier(order_data, index, shipping)
             incoming_ids.add(identifier)
             selected = selected_money(
                 shipping["discounted_total"],
@@ -1503,6 +1650,8 @@ class ShopifyWebhookOrderSync(models.Model):
 
     def _queue_draft_import(self):
         self.ensure_one()
+        if not self.instance_id.draft_order_import_enabled:
+            return
         draft_id = shopify_gid(
             "DraftOrder",
             self.payload.get("admin_graphql_api_id") or self.payload.get("id"),

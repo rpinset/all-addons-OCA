@@ -213,4 +213,5 @@ class RouteCheckpoint(models.Model):
         return {
             "route_id": new_route.id,
             "origin_checkpoint_id": self.id,
+            "state": "draft",
         }

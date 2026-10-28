@@ -12,7 +12,7 @@ MONEY_FIELDS = """
 ORDER_FIELDS = f"""
     id
     name
-    orderNumber
+    number
     createdAt
     updatedAt
     cancelledAt

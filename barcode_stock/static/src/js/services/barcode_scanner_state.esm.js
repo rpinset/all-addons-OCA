@@ -568,8 +568,29 @@ export class BarcodeScannerState extends Reactive {
         this.buildIndexes();
     }
 
+    /**
+     * The line a pick goes on first: the one a screen working on a reserved
+     * line names, otherwise a line of its lot with nothing picked yet.
+     *
+     * @param {Number} moveId the move picked
+     * @param {Number} [moveLineId] the line named, if any
+     * @param {Object[]} matchingLines the move's lines of the lot picked
+     * @returns {Object|undefined} the line, if any
+     */
+    firstPickLine(moveId, moveLineId, matchingLines) {
+        const named =
+            moveLineId &&
+            this.moveLines.find(
+                (line) => line.id === moveLineId && line.move_id?.[0] === moveId
+            );
+        return (
+            named || matchingLines.find((line) => normalizeQty(line.qty_picked) === 0)
+        );
+    }
+
     stageMoveLine({
         moveId,
+        moveLineId,
         pickingId,
         productId,
         qtyPicked,
@@ -596,9 +617,7 @@ export class BarcodeScannerState extends Reactive {
                 .toUpperCase();
             return Boolean(wantedLotName) && lineLotName === wantedLotName;
         });
-        let targetLine = matchingLines.find(
-            (line) => normalizeQty(line.qty_picked) === 0
-        );
+        let targetLine = this.firstPickLine(moveId, moveLineId, matchingLines);
         if (!targetLine && matchingLines.length) {
             [targetLine] = matchingLines;
         }
