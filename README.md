@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-10-25 08:31 UTC** (elapsed 88s)
+Last build: **2026-10-28 19:58 UTC** (elapsed 216s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
@@ -102,7 +102,7 @@ Last build: **2026-10-25 08:31 UTC** (elapsed 88s)
 | [rest-framework](https://github.com/OCA/rest-framework) | 6 | ce695b4 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [rma](https://github.com/OCA/rma) | 6 | 17c1b2c 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 6 | b18afd3 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | f68511f 2026-10-01 mymage Translated using Weblate (Italian) |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 98 | 983257d 2026-10-28 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 3 | 1197df9 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [server-auth](https://github.com/OCA/server-auth) | 21 | 4f19d40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [server-backend](https://github.com/OCA/server-backend) | 16 | e63658d 2025-09-18 mymage Translated using Weblate (Italian) |
