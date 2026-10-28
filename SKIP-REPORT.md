@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-25 08:39 UTC
+Generated 2026-10-28 20:13 UTC
 
-Total skipped: **247**
+Total skipped: **244**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,7 +39,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **221**
+Count: **218**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -138,7 +138,6 @@ Count: **221**
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | [20.0](https://github.com/OCA/l10n-ecuador/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | [20.0](https://github.com/OCA/l10n-estonia/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | [20.0](https://github.com/OCA/l10n-ethiopia/tree/20.0) | No directory with __manifest__.py at repo root |
-| [l10n-finland](https://github.com/OCA/l10n-finland) | [20.0](https://github.com/OCA/l10n-finland/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-france](https://github.com/OCA/l10n-france) | [20.0](https://github.com/OCA/l10n-france/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | [20.0](https://github.com/OCA/l10n-germany/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-greece](https://github.com/OCA/l10n-greece) | [20.0](https://github.com/OCA/l10n-greece/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -160,7 +159,6 @@ Count: **221**
 | [l10n-spain](https://github.com/OCA/l10n-spain) | [20.0](https://github.com/OCA/l10n-spain/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | [20.0](https://github.com/OCA/l10n-switzerland/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-taiwan](https://github.com/OCA/l10n-taiwan) | [20.0](https://github.com/OCA/l10n-taiwan/tree/20.0) | No directory with __manifest__.py at repo root |
-| [l10n-thailand](https://github.com/OCA/l10n-thailand) | [20.0](https://github.com/OCA/l10n-thailand/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | [20.0](https://github.com/OCA/l10n-turkey/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | [20.0](https://github.com/OCA/l10n-ukraine/tree/20.0) | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | [20.0](https://github.com/OCA/l10n-united-kingdom/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -189,7 +187,6 @@ Count: **221**
 | [product-pack](https://github.com/OCA/product-pack) | [20.0](https://github.com/OCA/product-pack/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-variant](https://github.com/OCA/product-variant) | [20.0](https://github.com/OCA/product-variant/tree/20.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [20.0](https://github.com/OCA/program/tree/20.0) | No directory with __manifest__.py at repo root |
-| [project](https://github.com/OCA/project) | [20.0](https://github.com/OCA/project/tree/20.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [20.0](https://github.com/OCA/project-agile/tree/20.0) | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | [20.0](https://github.com/OCA/project-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | [20.0](https://github.com/OCA/purchase-reporting/tree/20.0) | No directory with __manifest__.py at repo root |

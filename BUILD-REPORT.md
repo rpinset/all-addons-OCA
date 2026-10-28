@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-25 08:39 UTC
+Generated 2026-10-28 20:13 UTC
 
 ## Skipped repos
 
@@ -106,7 +106,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-ecuador](https://github.com/OCA/l10n-ecuador) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-estonia](https://github.com/OCA/l10n-estonia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ethiopia](https://github.com/OCA/l10n-ethiopia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-finland](https://github.com/OCA/l10n-finland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-france](https://github.com/OCA/l10n-france) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-germany](https://github.com/OCA/l10n-germany) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-greece](https://github.com/OCA/l10n-greece) | `no_module` | No directory with __manifest__.py at repo root |
@@ -128,7 +127,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-spain](https://github.com/OCA/l10n-spain) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-switzerland](https://github.com/OCA/l10n-switzerland) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-taiwan](https://github.com/OCA/l10n-taiwan) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-thailand](https://github.com/OCA/l10n-thailand) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-turkey](https://github.com/OCA/l10n-turkey) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-ukraine](https://github.com/OCA/l10n-ukraine) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-united-kingdom](https://github.com/OCA/l10n-united-kingdom) | `no_module` | No directory with __manifest__.py at repo root |
@@ -175,7 +173,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [product-pack](https://github.com/OCA/product-pack) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-variant](https://github.com/OCA/product-variant) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
-| [project](https://github.com/OCA/project) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | `no_module` | No directory with __manifest__.py at repo root |
