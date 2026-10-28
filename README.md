@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-10-25 08:35 UTC** (elapsed 108s)
+Last build: **2026-10-28 20:02 UTC** (elapsed 183s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -100,7 +100,7 @@ Last build: **2026-10-25 08:35 UTC** (elapsed 108s)
 | [rma](https://github.com/OCA/rma) | 7 | bb31ac9 2026-10-01 mymage Translated using Weblate (Italian) |
 | [sale-promotion](https://github.com/OCA/sale-promotion) | 35 | 4ab7748 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [sale-reporting](https://github.com/OCA/sale-reporting) | 18 | a12f0a9 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [sale-workflow](https://github.com/OCA/sale-workflow) | 117 | 2b21698 2026-07-28 OCA-git-bot [BOT] post-merge updates |
+| [sale-workflow](https://github.com/OCA/sale-workflow) | 117 | 3c4d3a2 2026-10-28 mymage Translated using Weblate (Italian) |
 | [search-engine](https://github.com/OCA/search-engine) | 2 | 82e609a 2025-02-09 oca-git-bot [IMP] update dotfiles |
 | [server-auth](https://github.com/OCA/server-auth) | 20 | df9029b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [server-backend](https://github.com/OCA/server-backend) | 10 | 4f6468a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
