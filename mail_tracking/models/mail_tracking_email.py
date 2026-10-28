@@ -30,6 +30,7 @@ class MailTrackingEmail(models.Model):
     # - time: default order fields
     # - recipient_address: Used for email_store calculation (non-store)
     # - state: Search and group_by in tree view
+    # - mail_id: deleting a mail.mail must not scan this table (FK ON DELETE SET NULL)
     name = fields.Char(string="Subject", readonly=True, index=True)
     display_name = fields.Char(
         readonly=True,
@@ -45,7 +46,9 @@ class MailTrackingEmail(models.Model):
         comodel_name="mail.message", readonly=True, index=True
     )
     message_id = fields.Char(compute="_compute_message_id")
-    mail_id = fields.Many2one(string="Email", comodel_name="mail.mail", readonly=True)
+    mail_id = fields.Many2one(
+        string="Email", comodel_name="mail.mail", readonly=True, index="btree_not_null"
+    )
     partner_id = fields.Many2one(comodel_name="res.partner", readonly=True)
     recipient = fields.Char(string="Recipient email", readonly=True)
     recipient_address = fields.Char(
@@ -138,15 +141,24 @@ class MailTrackingEmail(models.Model):
         return res
 
     @api.model
-    def _search(self, domain, offset=0, limit=None, order=None, **kwargs):
+    def _search(
+        self, domain, offset=0, limit=None, order=None, *, bypass_access=False, **kwargs
+    ):
         """Override that adds specific access rights of mail.tracking.email, to remove
         ids uid could not see according to our custom rules. Please refer to
         _check_access() for more details about those rules.
+
+        Skipped with ``bypass_access``, as set by ``mail.message.mail_tracking_ids``.
         """
         query = super()._search(
-            domain, offset=offset, limit=limit, order=order, **kwargs
+            domain,
+            offset=offset,
+            limit=limit,
+            order=order,
+            bypass_access=bypass_access,
+            **kwargs,
         )
-        if not self.env.is_superuser():
+        if not (self.env.is_superuser() or bypass_access):
             records = self.browse(query)
             allowed_ids = self._get_allowed_ids(records.ids)
             return self.browse(allowed_ids)._as_query(order)

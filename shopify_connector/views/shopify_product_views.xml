@@ -108,7 +108,7 @@
                         <field name="error_message" nolabel="1" readonly="1" />
                     </group>
                     <notebook>
-                        <page string="Variants">
+                        <page string="Variants" name="variants">
                             <field name="variant_binding_ids">
                                 <list create="0" delete="0">
                                     <field name="odoo_id" readonly="1" />
@@ -138,21 +138,6 @@
                                     />
                                     <field name="state" widget="badge" readonly="1" />
                                     <field name="last_sync_date" readonly="1" />
-                                </list>
-                            </field>
-                        </page>
-                        <page string="Images">
-                            <field name="image_binding_ids" readonly="1">
-                                <list>
-                                    <field name="odoo_id" />
-                                    <field name="shopify_id" />
-                                    <field name="variant_binding_id" />
-                                    <field
-                                        name="variant_binding_ids"
-                                        widget="many2many_tags"
-                                    />
-                                    <field name="source_url" />
-                                    <field name="state" widget="badge" />
                                 </list>
                             </field>
                         </page>

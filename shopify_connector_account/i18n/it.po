@@ -6,75 +6,78 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-10-27 11:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "%(reference)s / %(date)s"
-msgstr ""
+msgstr "%(reference)s / %(date)s"
 
 #. module: shopify_connector_account
 #: model:ir.model.constraint,message:shopify_connector_account.constraint_shopify_payout_transaction_instance_transaction_unique
 msgid "A Shopify Payments transaction can only be imported once."
 msgstr ""
+"Una transazione di Shopify Payments può essere importata una sola volta."
 
 #. module: shopify_connector_account
 #: model:ir.ui.menu,name:shopify_connector_account.shopify_menu_accounting
 msgid "Accounting"
-msgstr ""
+msgstr "Contabilità"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_payout_transaction__route__adjustment
 msgid "Adjustment"
-msgstr ""
+msgstr "Rettifica"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__adjustment_reason
 msgid "Adjustment Reason"
-msgstr ""
+msgstr "Motivo della rettifica"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__amount
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__amount
 msgid "Amount"
-msgstr ""
+msgstr "Importo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__amount_exact
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__amount_exact
 msgid "Amount Exact"
-msgstr ""
+msgstr "Importo esatto"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__order_binding_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__order_binding_id
 msgid "Associated Order"
-msgstr ""
+msgstr "Ordine associato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__transaction_ids
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_view_form
 msgid "Balance Transactions"
-msgstr ""
+msgstr "Transazioni di saldo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__company_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__company_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__company_id
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Company default"
-msgstr ""
+msgstr "Predefinito dell’azienda"
 
 #. module: shopify_connector_account
 #. odoo-python
@@ -83,50 +86,53 @@ msgid ""
 "Configure the gift-card product income account as its liability account "
 "before importing gift-card payments."
 msgstr ""
+"Configura il conto ricavi del prodotto carta regalo come conto delle "
+"passività prima di importare i pagamenti delle carte regalo."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__create_uid
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__create_uid
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/gift_card.py:0
 msgid "Created draft gift-card liability entry %s."
 msgstr ""
+"Creata la registrazione provvisoria della passività della carta regalo %s."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__create_date
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__create_date
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__currency_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__currency_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Currency Differences"
-msgstr ""
+msgstr "Differenze di valuta"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Daily Shopify Payments import for %s"
-msgstr ""
+msgstr "Importazione giornaliera di Shopify Payments per %s"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Daily Shopify Payments payout drift import queued."
-msgstr ""
+msgstr "Importazione delle differenze dei pagamenti Shopify Payments accodata."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__display_name
@@ -136,160 +142,161 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__display_name
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__display_type
 msgid "Display Type"
-msgstr ""
+msgstr "Tipo di visualizzazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__dispute_ids
 msgid "Dispute"
-msgstr ""
+msgstr "Contestazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__dispute_status
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 msgid "Dispute Status"
-msgstr ""
+msgstr "Stato della contestazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__dispute_type
 msgid "Dispute Type"
-msgstr ""
+msgstr "Tipo di contestazione"
 
 #. module: shopify_connector_account
 #: model:ir.ui.menu,name:shopify_connector_account.shopify_menu_disputes
 msgid "Disputes"
-msgstr ""
+msgstr "Contestazioni"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_instance__shopify_payments_state__enabled
 msgid "Enabled"
-msgstr ""
+msgstr "Abilitato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__error_message
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__error_message
 msgid "Error Message"
-msgstr ""
+msgstr "Messaggio di errore"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "Errors"
-msgstr ""
+msgstr "Errori"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__evidence_due_by
 msgid "Evidence Due By"
-msgstr ""
+msgstr "Scadenza per la presentazione delle prove"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__evidence_sent_on
 msgid "Evidence Sent On"
-msgstr ""
+msgstr "Prove inviate il"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_view_form
 msgid "Evidence Timeline"
-msgstr ""
+msgstr "Cronologia delle prove"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__fee
 msgid "Fee"
-msgstr ""
+msgstr "Commissione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__fee_amount
 msgid "Fee Amount"
-msgstr ""
+msgstr "Importo della commissione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__fee_exact
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__fee_exact
 msgid "Fee Exact"
-msgstr ""
+msgstr "Importo esatto della commissione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_payout_transaction__route__fee
 msgid "Fee Expense"
-msgstr ""
+msgstr "Spesa per commissioni"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__finalized_on
 msgid "Finalized On"
-msgstr ""
+msgstr "Finalizzato il"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Financial"
-msgstr ""
+msgstr "Finanziario"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "Financial accounts must be available to the instance company."
 msgstr ""
+"I conti finanziari devono essere disponibili per l’azienda dell’istanza."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_payout_transaction__route__clearing
 msgid "Gateway Clearing"
-msgstr ""
+msgstr "Conto transitorio del gateway"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_view_form
 msgid "Generate Entry"
-msgstr ""
+msgstr "Genera registrazione"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "Generate Shopify payout entry %s"
-msgstr ""
+msgstr "Genera la registrazione del pagamento Shopify %s"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__entry_id
 msgid "Generated Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile generata"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Generated payout journal entry %s."
-msgstr ""
+msgstr "Generata la registrazione contabile del pagamento %s."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_payout_transaction__route__gift_card
 msgid "Gift Card Liability"
-msgstr ""
+msgstr "Passività delle carte regalo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__gift_card_liability_account_id
 msgid "Gift Card Liability Account"
-msgstr ""
+msgstr "Conto passività carte regalo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_gateway_payment__gift_card_move_id
 msgid "Gift Card Liability Entry"
-msgstr ""
+msgstr "Registrazione della passività delle carte regalo"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/gift_card.py:0
 msgid "Gift card redemption %(transaction)s"
-msgstr ""
+msgstr "Riscatto della carta regalo %(transaction)s"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__gross_amount
 msgid "Gross Amount"
-msgstr ""
+msgstr "Importo lordo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__gross_exact
 msgid "Gross Exact"
-msgstr ""
+msgstr "Importo lordo esatto"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__id
@@ -299,194 +306,194 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Import Payouts and Disputes"
-msgstr ""
+msgstr "Importa pagamenti e contestazioni"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "Import Shopify Payments payouts for %s"
-msgstr ""
+msgstr "Importa i pagamenti di Shopify Payments per %s"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Imported %s Shopify Payments payout(s)."
-msgstr ""
+msgstr "Importati %s pagamenti di Shopify Payments."
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Imported Payouts"
-msgstr ""
+msgstr "Pagamenti importati"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__initiated_at
 msgid "Initiated At"
-msgstr ""
+msgstr "Avviato il"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__instance_id
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "Instance"
-msgstr ""
+msgstr "Istanza"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__is_unmatched
 msgid "Is Unmatched"
-msgstr ""
+msgstr "Non abbinato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__issued_at
 msgid "Issued At"
-msgstr ""
+msgstr "Emesso il"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__last_sync_date
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__last_sync_date
 msgid "Last Synchronization"
-msgstr ""
+msgstr "Ultima sincronizzazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__write_uid
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__write_uid
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__write_date
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__write_date
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__legacy_resource_id
 msgid "Legacy Resource"
-msgstr ""
+msgstr "Risorsa legacy"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Manual Import"
-msgstr ""
+msgstr "Importazione manuale"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__net
 msgid "Net"
-msgstr ""
+msgstr "Netto"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__net_amount
 msgid "Net Amount"
-msgstr ""
+msgstr "Importo netto"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__net_exact
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__net_exact
 msgid "Net Exact"
-msgstr ""
+msgstr "Netto esatto"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__network_reason_code
 msgid "Network Reason Code"
-msgstr ""
+msgstr "Codice motivo della rete"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "No order binding matches %s."
-msgstr ""
+msgstr "Nessun collegamento all’ordine corrisponde a %s."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "No reconciliation account is available for %s."
-msgstr ""
+msgstr "Non è disponibile alcun conto di riconciliazione per %s."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_instance__shopify_payments_state__unknown
 msgid "Not Checked"
-msgstr ""
+msgstr "Non verificato"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Open Shopify Payments dispute %s"
-msgstr ""
+msgstr "Apri la contestazione di Shopify Payments %s"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_ids
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__payout_id
 msgid "Payout"
-msgstr ""
+msgstr "Pagamento in uscita"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_adjustment_account_id
 msgid "Payout Adjustment Account"
-msgstr ""
+msgstr "Conto rettifiche dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_auto_post
 msgid "Payout Auto Post"
-msgstr ""
+msgstr "Registrazione automatica dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_currency_gain_account_id
 msgid "Payout Currency Gain Account"
-msgstr ""
+msgstr "Conto utili su cambi dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_currency_loss_account_id
 msgid "Payout Currency Loss Account"
-msgstr ""
+msgstr "Conto perdite su cambi dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_fee_account_id
 msgid "Payout Fee Expense Account"
-msgstr ""
+msgstr "Conto spese per commissioni dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_import_date_from
 msgid "Payout Import Date From"
-msgstr ""
+msgstr "Data iniziale di importazione dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_import_date_to
 msgid "Payout Import Date To"
-msgstr ""
+msgstr "Data finale di importazione dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__payout_journal_id
 msgid "Payout Journal"
-msgstr ""
+msgstr "Registro dei pagamenti"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__payout_status
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "Payout Status"
-msgstr ""
+msgstr "Stato del pagamento"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Payout entry generation failed: %s"
-msgstr ""
+msgstr "Generazione della registrazione del pagamento non riuscita: %s"
 
 #. module: shopify_connector_account
 #: model:ir.ui.menu,name:shopify_connector_account.shopify_menu_payouts
 msgid "Payouts"
-msgstr ""
+msgstr "Pagamenti in uscita"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "Pending"
-msgstr ""
+msgstr "In attesa"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__raw_payload
@@ -494,34 +501,34 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__raw_payload
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_view_form
 msgid "Raw Payload"
-msgstr ""
+msgstr "Payload grezzo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__reason
 msgid "Reason"
-msgstr ""
+msgstr "Motivo"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__reconciliation_account_id
 msgid "Reconciliation Account"
-msgstr ""
+msgstr "Conto di riconciliazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__reference
 msgid "Reference"
-msgstr ""
+msgstr "Riferimento"
 
 #. module: shopify_connector_account
 #: model:ir.actions.server,name:shopify_connector_account.action_reset_shopify_disputes
 #: model:ir.actions.server,name:shopify_connector_account.action_reset_shopify_payouts
 msgid "Reset Shopify Bindings to Pending"
-msgstr ""
+msgstr "Reimposta i collegamenti Shopify su In attesa"
 
 #. module: shopify_connector_account
 #: model:ir.actions.server,name:shopify_connector_account.action_retry_shopify_disputes
 #: model:ir.actions.server,name:shopify_connector_account.action_retry_shopify_payouts
 msgid "Retry Failed Shopify Bindings"
-msgstr ""
+msgstr "Riprova i collegamenti Shopify non riusciti"
 
 #. module: shopify_connector_account
 #. odoo-python
@@ -530,141 +537,143 @@ msgid ""
 "Review the %(type)s dispute for %(amount)s %(currency)s. Evidence due: "
 "%(due)s."
 msgstr ""
+"Esamina la contestazione %(type)s per %(amount)s %(currency)s. Scadenza per "
+"le prove: %(due)s."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__route
 msgid "Route"
-msgstr ""
+msgstr "Percorso"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__shopify_id
 msgid "Shopify"
-msgstr ""
+msgstr "Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.actions.server,name:shopify_connector_account.ir_cron_import_shopify_payouts_ir_actions_server
 msgid "Shopify Drift: Payouts and disputes (daily)"
-msgstr ""
+msgstr "Scostamenti Shopify: pagamenti e contestazioni (giornaliero)"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__shopify_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__shopify_id
 msgid "Shopify GID"
-msgstr ""
+msgstr "GID Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_gateway_payment
 msgid "Shopify Imported Gateway Payment"
-msgstr ""
+msgstr "Pagamento del gateway importato da Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_instance
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__instance_id
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__instance_id
 msgid "Shopify Instance"
-msgstr ""
+msgstr "Istanza Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_order
 msgid "Shopify Order Binding"
-msgstr ""
+msgstr "Collegamento ordine Shopify"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_instance_financial_view_form
 msgid "Shopify Payments"
-msgstr ""
+msgstr "Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_payout_transaction
 msgid "Shopify Payments Balance Transaction"
-msgstr ""
+msgstr "Transazione di saldo Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_dispute
 msgid "Shopify Payments Dispute"
-msgstr ""
+msgstr "Contestazione Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.actions.act_window,name:shopify_connector_account.shopify_dispute_action
 msgid "Shopify Payments Disputes"
-msgstr ""
+msgstr "Contestazioni Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_payout
 msgid "Shopify Payments Payout"
-msgstr ""
+msgstr "Pagamento Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.actions.act_window,name:shopify_connector_account.shopify_payout_action
 msgid "Shopify Payments Payouts"
-msgstr ""
+msgstr "Pagamenti Shopify Payments"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__shopify_payments_state
 msgid "Shopify Payments State"
-msgstr ""
+msgstr "Stato di Shopify Payments"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Shopify Payments is not active for this shop."
-msgstr ""
+msgstr "Shopify Payments non è attivo per questo negozio."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Shopify Payments is unavailable: %s"
-msgstr ""
+msgstr "Shopify Payments non è disponibile: %s"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_view_form
 msgid "Shopify Summary"
-msgstr ""
+msgstr "Riepilogo Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__external_updated_at
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__external_updated_at
 msgid "Shopify Updated At"
-msgstr ""
+msgstr "Data di aggiornamento Shopify"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Shopify disputes could not be imported: %s"
-msgstr ""
+msgstr "Impossibile importare le contestazioni Shopify: %s"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/gift_card.py:0
 msgid "Shopify gift card clearing"
-msgstr ""
+msgstr "Conto transitorio delle carte regalo Shopify"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/gift_card.py:0
 msgid "Shopify gift card redemption"
-msgstr ""
+msgstr "Riscatto delle carte regalo Shopify"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__source_id
 msgid "Source"
-msgstr ""
+msgstr "Origine"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__source_order_transaction_id
 msgid "Source Order Transaction"
-msgstr ""
+msgstr "Transazione dell’ordine di origine"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__source_type
 msgid "Source Type"
-msgstr ""
+msgstr "Tipo di origine"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_dispute__shopify_id
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_payout__shopify_id
 msgid "Stable Shopify GraphQL global ID."
-msgstr ""
+msgstr "ID globale GraphQL stabile di Shopify."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_dispute__state
@@ -672,30 +681,30 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__summary
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_view_form
 msgid "Summary"
-msgstr ""
+msgstr "Riepilogo"
 
 #. module: shopify_connector_account
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_dispute_operability_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector_account.shopify_payout_operability_search
 msgid "Synced"
-msgstr ""
+msgstr "Sincronizzato"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__test
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The associated order must use the transaction instance."
-msgstr ""
+msgstr "L’ordine associato deve utilizzare l’istanza della transazione."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_instance__gift_card_liability_account_id
@@ -703,18 +712,22 @@ msgid ""
 "The configured gift-card product's income account, used as a liability "
 "account for sales and redemptions."
 msgstr ""
+"Il conto ricavi configurato per il prodotto carta regalo, utilizzato come "
+"conto delle passività per le vendite e i riscatti."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The dispute order must use the same Shopify instance."
-msgstr ""
+msgstr "L’ordine della contestazione deve utilizzare la stessa istanza Shopify."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/gift_card.py:0
 msgid "The gift-card payment has no clearing line to reclassify."
 msgstr ""
+"Il pagamento della carta regalo non contiene alcuna riga transitoria da "
+"riclassificare."
 
 #. module: shopify_connector_account
 #. odoo-python
@@ -723,77 +736,82 @@ msgid ""
 "The gift-card product income account must be a current or non-current "
 "liability account."
 msgstr ""
+"Il conto ricavi del prodotto carta regalo deve essere un conto di passività "
+"corrente o non corrente."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The payout entry must belong to the instance company."
 msgstr ""
+"La registrazione del pagamento deve appartenere all’azienda dell’istanza."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The payout import start date must precede the end date."
 msgstr ""
+"La data iniziale di importazione dei pagamenti deve precedere la data finale."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The payout journal must belong to the instance company."
-msgstr ""
+msgstr "Il registro dei pagamenti deve appartenere all’azienda dell’istanza."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The reconciliation account must be available to the company."
-msgstr ""
+msgstr "Il conto di riconciliazione deve essere disponibile per l’azienda."
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The transaction and payout must use one Shopify instance."
 msgstr ""
+"La transazione e il pagamento devono utilizzare la stessa istanza Shopify."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__transaction_date
 msgid "Transaction Date"
-msgstr ""
+msgstr "Data della transazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__transaction_type
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__transaction_type
 msgid "Transaction Type"
-msgstr ""
+msgstr "Tipo di transazione"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_dispute__last_sync_date
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_payout__last_sync_date
 msgid "UTC timestamp of the last successful synchronization."
-msgstr ""
+msgstr "Data e ora UTC dell’ultima sincronizzazione riuscita."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_dispute__external_updated_at
 #: model:ir.model.fields,help:shopify_connector_account.field_shopify_payout__external_updated_at
 msgid "UTC update timestamp last reported by Shopify."
-msgstr ""
+msgstr "Data e ora UTC dell’ultimo aggiornamento comunicato da Shopify."
 
 #. module: shopify_connector_account
 #: model:ir.model.fields.selection,name:shopify_connector_account.selection__shopify_instance__shopify_payments_state__unavailable
 msgid "Unavailable"
-msgstr ""
+msgstr "Non disponibile"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout_transaction__unmatched_reason
 msgid "Unmatched Reason"
-msgstr ""
+msgstr "Motivo della mancata corrispondenza"
 
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__unmatched_count
 msgid "Unmatched Transactions"
-msgstr ""
+msgstr "Transazioni senza corrispondenza"
 
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "display_typetype"
-msgstr ""
+msgstr "display_typetype"

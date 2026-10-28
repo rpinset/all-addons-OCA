@@ -316,9 +316,7 @@ class ShopifyProductTemplateSync(models.Model):
             }
             if binding:
                 binding.variant_binding_ids.unlink()
-                binding.image_binding_ids.mapped("odoo_id").with_context(
-                    skip_shopify_export=True
-                ).unlink()
+                self._clear_image_bindings(binding)
                 binding.with_context(shopify_import=True).write(binding_values)
             else:
                 binding = self.create(
@@ -395,15 +393,26 @@ class ShopifyProductTemplateSync(models.Model):
                     self._export_price(instance, variant)
                 ):
                     return True
-        if owners["images"] == "odoo":
-            incoming_ids = {image["id"] for image in product["images"] if image["id"]}
-            bound_ids = set(binding.image_binding_ids.mapped("shopify_id"))
-            bound_ids.update(binding.variant_binding_ids.mapped("image_shopify_id"))
-            if binding.main_image_shopify_id:
-                bound_ids.add(binding.main_image_shopify_id)
-            if incoming_ids != {item for item in bound_ids if item}:
-                return True
+        if owners["images"] == "odoo" and self._has_image_drift(binding, product):
+            return True
         return False
+
+    def _tracked_image_ids(self, binding):
+        return {
+            image_id
+            for image_id in [
+                binding.main_image_shopify_id,
+                *binding.variant_binding_ids.mapped("image_shopify_id"),
+            ]
+            if image_id
+        }
+
+    def _has_image_drift(self, binding, product):
+        incoming_ids = {image["id"] for image in product["images"] if image["id"]}
+        return not self._tracked_image_ids(binding) <= incoming_ids
+
+    def _clear_image_bindings(self, binding):
+        binding.write({"main_image_shopify_id": False, "main_image_checksum": False})
 
     @api.model
     def _has_product_webhook_since(self, instance, shopify_id, since):
@@ -961,97 +970,91 @@ class ShopifyProductTemplateSync(models.Model):
             ]
 
     def _sync_images(self, template_binding, images, variants, *, prune):
-        imported_ids = {image["id"] for image in images if image.get("id")}
-        variants_by_media = {}
+        images = [image for image in images if image["id"] and image["url"]]
+        main_image = images[0] if images else None
+        self._sync_main_image(template_binding, main_image, prune=prune)
+        handled_ids = {main_image["id"]} if main_image else set()
         bindings_by_gid = {
             item.shopify_id: item for item in template_binding.variant_binding_ids
         }
+        variant_count_by_media = {}
+        for variant in variants:
+            if variant["id"] in bindings_by_gid:
+                for media_id in variant["media_ids"]:
+                    variant_count_by_media[media_id] = (
+                        variant_count_by_media.get(media_id, 0) + 1
+                    )
+        images_by_id = {image["id"]: image for image in images}
         for variant in variants:
             variant_binding = bindings_by_gid.get(variant["id"])
-            if variant_binding:
-                for media_id in variant["media_ids"]:
-                    variants_by_media.setdefault(
-                        media_id, self.env["shopify.product.variant"]
-                    )
-                    variants_by_media[media_id] |= variant_binding
-        for position, payload in enumerate(images, start=1):
-            if not payload["id"] or not payload["url"]:
+            if not variant_binding:
                 continue
-            image_binding = self.env["shopify.product.image"].search(
-                [
-                    ("instance_id", "=", template_binding.instance_id.id),
-                    ("shopify_id", "=", payload["id"]),
-                ],
-                limit=1,
-            )
-            image_bytes = self._download_image(payload["url"])
-            checksum = hashlib.sha256(image_bytes).hexdigest()
-            image_values = {
-                "name": payload["alt"]
-                or self.env._(
-                    "%(product)s image %(position)s",
-                    product=template_binding.odoo_id.name,
-                    position=position,
+            variant_image = next(
+                (
+                    images_by_id[media_id]
+                    for media_id in variant["media_ids"]
+                    if media_id in images_by_id
+                    and media_id not in handled_ids
+                    and variant_count_by_media[media_id] == 1
                 ),
-                "image_1920": base64.b64encode(image_bytes),
-                "sequence": position * 10,
+                None,
+            )
+            self._sync_variant_image(variant_binding, variant_image, prune=prune)
+            if variant_image:
+                handled_ids.add(variant_image["id"])
+        self._sync_extra_images(
+            template_binding,
+            [image for image in images if image["id"] not in handled_ids],
+            variants,
+            prune=prune,
+        )
+
+    def _sync_main_image(self, template_binding, image, *, prune):
+        template = template_binding.odoo_id.with_context(skip_shopify_export=True)
+        if not image:
+            if prune and template_binding.main_image_shopify_id:
+                template.image_1920 = False
+                template_binding.write(
+                    {"main_image_shopify_id": False, "main_image_checksum": False}
+                )
+            return
+        if image["id"] == template_binding.main_image_shopify_id and (
+            template.image_1920
+        ):
+            return
+        template.image_1920 = base64.b64encode(self._download_image(image["url"]))
+        template_binding.write(
+            {
+                "main_image_shopify_id": image["id"],
+                "main_image_checksum": self._binary_checksum(template.image_1920),
             }
-            variant_bindings = variants_by_media.get(
-                payload["id"], self.env["shopify.product.variant"]
-            )
-            variant_binding = variant_bindings[:1]
-            if len(variant_bindings) == 1:
-                image_values["product_variant_id"] = variant_binding.odoo_id.id
-                image_values["product_tmpl_id"] = False
-            else:
-                image_values["product_tmpl_id"] = template_binding.odoo_id.id
-                image_values["product_variant_id"] = False
-            if image_binding:
-                image_binding.odoo_id.with_context(skip_shopify_export=True).write(
-                    image_values
+        )
+
+    def _sync_variant_image(self, variant_binding, image, *, prune):
+        variant = variant_binding.odoo_id.with_context(skip_shopify_export=True)
+        if not image:
+            if prune and variant_binding.image_shopify_id:
+                variant.image_variant_1920 = False
+                variant_binding.write(
+                    {"image_shopify_id": False, "image_checksum": False}
                 )
-                image_binding.write(
-                    {
-                        "source_url": payload["url"],
-                        "image_checksum": checksum,
-                        "variant_binding_id": variant_binding.id
-                        if variant_binding
-                        else False,
-                        "variant_binding_ids": [Command.set(variant_bindings.ids)],
-                        "state": "synced",
-                        "error_message": False,
-                        "last_sync_date": fields.Datetime.now(),
-                    }
-                )
-            else:
-                image = (
-                    self.env["product.image"]
-                    .with_context(skip_shopify_export=True)
-                    .create(image_values)
-                )
-                self.env["shopify.product.image"].create(
-                    {
-                        "instance_id": template_binding.instance_id.id,
-                        "shopify_id": payload["id"],
-                        "template_binding_id": template_binding.id,
-                        "variant_binding_id": variant_binding.id
-                        if variant_binding
-                        else False,
-                        "variant_binding_ids": [Command.set(variant_bindings.ids)],
-                        "odoo_id": image.id,
-                        "source_url": payload["url"],
-                        "image_checksum": checksum,
-                        "state": "synced",
-                        "last_sync_date": fields.Datetime.now(),
-                    }
-                )
-        if prune:
-            stale_bindings = template_binding.image_binding_ids.filtered(
-                lambda item: item.shopify_id not in imported_ids
-            )
-            stale_bindings.mapped("odoo_id").with_context(
-                skip_shopify_export=True
-            ).unlink()
+            return
+        if image["id"] == variant_binding.image_shopify_id and (
+            variant.image_variant_1920
+        ):
+            return
+        variant.image_variant_1920 = base64.b64encode(
+            self._download_image(image["url"])
+        )
+        variant_binding.write(
+            {
+                "image_shopify_id": image["id"],
+                "image_checksum": self._binary_checksum(variant.image_variant_1920),
+            }
+        )
+
+    def _sync_extra_images(self, template_binding, images, variants, *, prune):
+        return
 
     @api.model
     def _download_image(self, url):
@@ -1586,53 +1589,33 @@ class ShopifyProductTemplateSync(models.Model):
                 }
             )
 
-        image_bindings = (
-            {item.odoo_id.id: item for item in binding.image_binding_ids}
-            if binding
-            else {}
+        extra_files, extra_targets = self._product_extra_files(
+            instance, template, binding, variants, existing_media_by_alt, base_url
         )
-        extra_images = (
-            template.product_template_image_ids | variants.product_variant_image_ids
-        )
-        for image in extra_images:
-            if not image.image_1920:
-                continue
-            checksum = self._binary_checksum(image.image_1920)
-            image_binding = image_bindings.get(image.id)
-            media_id = image_binding.shopify_id if image_binding else False
-            unchanged = image_binding and image_binding.image_checksum == checksum
-            export_alt = self._export_image_alt(image.name, image, checksum)
-            matched_media_id = (
-                media_id
-                if media_id and unchanged
-                else existing_media_by_alt.get(export_alt)
-            )
-            files.append(
-                {"id": matched_media_id}
-                if matched_media_id
-                else {
-                    "originalSource": self._public_image_url(
-                        base_url, instance, image, checksum
-                    ),
-                    "alt": export_alt,
-                }
-            )
-            targets.append(
-                {
-                    "kind": "extra",
-                    "record": image,
-                    "variant_id": image.product_variant_id.id,
-                    "variant_ids": (
-                        image_binding.variant_binding_ids.odoo_id.ids
-                        if image_binding and image_binding.variant_binding_ids
-                        else image.product_variant_id.ids
-                    ),
-                    "checksum": checksum,
-                    "media_id": matched_media_id,
-                    "alt": export_alt,
-                }
-            )
+        files += extra_files
+        targets += extra_targets
+        used_ids = {item["id"] for item in files if item.get("id")}
+        for media_id in self._unmanaged_shopify_image_ids(binding, existing_media):
+            if media_id not in used_ids:
+                files.append({"id": media_id})
+                targets.append(None)
         return files, targets
+
+    def _product_extra_files(
+        self, instance, template, binding, variants, existing_media_by_alt, base_url
+    ):
+        return [], []
+
+    def _unmanaged_shopify_image_ids(self, binding, existing_media):
+        # Shopify images that Odoo does not manage: the export keeps them.
+        tracked_ids = self._tracked_image_ids(binding) if binding else set()
+        return [
+            media["id"]
+            for media in existing_media
+            if media.get("id")
+            and media.get("mediaContentType") == "IMAGE"
+            and media["id"] not in tracked_ids
+        ]
 
     @api.model
     def _export_image_alt(self, label, record, checksum):
@@ -1777,39 +1760,7 @@ class ShopifyProductTemplateSync(models.Model):
                     }
                 )
             else:
-                target_variant_bindings = binding.variant_binding_ids.filtered(
-                    lambda item, target=target: (
-                        item.odoo_id.id in target.get("variant_ids", [])
-                    )
-                )
-                image_binding = self.env["shopify.product.image"].search(
-                    [
-                        ("instance_id", "=", instance.id),
-                        ("odoo_id", "=", target["record"].id),
-                    ],
-                    limit=1,
-                )
-                image_values = {
-                    "shopify_id": payload["id"],
-                    "template_binding_id": binding.id,
-                    "odoo_id": target["record"].id,
-                    "source_url": payload["url"],
-                    "image_checksum": target["checksum"],
-                    "variant_binding_id": target_variant_bindings[:1].id,
-                    "variant_binding_ids": [Command.set(target_variant_bindings.ids)],
-                    "state": "synced",
-                    "error_message": False,
-                    "last_sync_date": fields.Datetime.now(),
-                }
-                if image_binding:
-                    image_binding.write(image_values)
-                else:
-                    self.env["shopify.product.image"].create(
-                        {
-                            **image_values,
-                            "instance_id": instance.id,
-                        }
-                    )
+                self._update_extra_image_binding(instance, binding, target, payload)
         if not instance._is_product_field_owned_by("images", "odoo"):
             return binding, [], []
         media_type_by_id = {item["id"]: item["media_content_type"] for item in media}
@@ -1821,12 +1772,17 @@ class ShopifyProductTemplateSync(models.Model):
             }
             for variant in normalized["variants"]
         }
+        unmanaged_ids = set(
+            self._unmanaged_shopify_image_ids(
+                binding, (product.get("media") or {}).get("nodes", [])
+            )
+        )
         append_media = []
         detach_media = []
         for variant_id, current_ids in current_media_by_variant_id.items():
             desired_ids = desired_media_by_variant_id.get(variant_id, set())
             to_append = desired_ids - current_ids
-            to_detach = current_ids - desired_ids
+            to_detach = current_ids - desired_ids - unmanaged_ids
             if to_append:
                 append_media.append(
                     {"variantId": variant_id, "mediaIds": list(to_append)}
@@ -1836,6 +1792,9 @@ class ShopifyProductTemplateSync(models.Model):
                     {"variantId": variant_id, "mediaIds": list(to_detach)}
                 )
         return binding, append_media, detach_media
+
+    def _update_extra_image_binding(self, instance, binding, target, payload):
+        return
 
 
 class ShopifyWebhookProductHandlers(models.Model):
@@ -2065,59 +2024,3 @@ class ProductPricelistItem(models.Model):
             self.env["shopify.product.template"].sudo()._enqueue_product_export(
                 instance, template
             )
-
-
-class ProductImage(models.Model):
-    _inherit = "product.image"
-
-    shopify_image_binding_ids = fields.One2many(
-        "shopify.product.image",
-        "odoo_id",
-        string="Shopify Image Bindings",
-    )
-
-    @api.model_create_multi
-    def create(self, vals_list):
-        images = super().create(vals_list)
-        images._queue_shopify_image_exports()
-        return images
-
-    def write(self, values):
-        result = super().write(values)
-        if {"image_1920", "name", "sequence"} & values.keys():
-            self._queue_shopify_image_exports()
-        return result
-
-    def unlink(self):
-        targets = self.mapped("product_tmpl_id") | self.mapped(
-            "product_variant_id.product_tmpl_id"
-        )
-        instances_by_template = []
-        for template in targets:
-            bindings = template.sudo().shopify_binding_ids.filtered(
-                lambda item: item.instance_id.company_id in self.env.companies
-            )
-            instances_by_template.append((template, bindings.mapped("instance_id")))
-        result = super().unlink()
-        if not self.env.context.get("skip_shopify_export"):
-            for template, instances in instances_by_template:
-                for instance in instances:
-                    if instance._is_product_field_owned_by("images", "odoo"):
-                        self.env[
-                            "shopify.product.template"
-                        ].sudo()._enqueue_product_export(instance, template)
-        return result
-
-    def _queue_shopify_image_exports(self):
-        if self.env.context.get("skip_shopify_export"):
-            return
-        for image in self:
-            template = image.product_tmpl_id or image.product_variant_id.product_tmpl_id
-            bindings = template.sudo().shopify_binding_ids.filtered(
-                lambda item: item.instance_id.company_id in self.env.companies
-            )
-            for binding in bindings:
-                if binding.instance_id._is_product_field_owned_by("images", "odoo"):
-                    self.env["shopify.product.template"].sudo()._enqueue_product_export(
-                        binding.instance_id, template
-                    )

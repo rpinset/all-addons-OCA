@@ -1,0 +1,188 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shopify_connector_website_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-26 18:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: shopify_connector_website_sale
+#. odoo-python
+#: code:addons/shopify_connector_website_sale/models/shopify_product_template.py:0
+msgid "%(product)s image %(position)s"
+msgstr "Immagine %(position)s %(product)s"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.constraint,message:shopify_connector_website_sale.constraint_shopify_product_image_instance_odoo_unique
+msgid "An Odoo image can only be linked once per Shopify instance."
+msgstr ""
+"Un'immagine di Odoo può essere collegata una sola volta per ogni istanza "
+"Shopify."
+
+#. module: shopify_connector_website_sale
+#. odoo-python
+#: code:addons/shopify_connector_website_sale/models/shopify_product_image.py:0
+msgid "An image and its product must use the same instance."
+msgstr ""
+"Un'immagine e il relativo prodotto devono appartenere alla stessa istanza."
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__variant_binding_ids
+msgid "Associated Shopify Variants"
+msgstr "Varianti Shopify associate"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_product_image__display_name
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__display_name
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_template__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__error_message
+msgid "Error Message"
+msgstr "Messaggio di errore"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_product_image__id
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__id
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_template__id
+msgid "ID"
+msgstr "ID"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__image_checksum
+msgid "Image Checksum"
+msgstr "Checksum dell'immagine"
+
+#. module: shopify_connector_website_sale
+#: model_terms:ir.ui.view,arch_db:shopify_connector_website_sale.shopify_product_template_view_form
+msgid "Images"
+msgstr "Immagini"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__last_sync_date
+msgid "Last Synchronization"
+msgstr "Ultima sincronizzazione"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__odoo_id
+msgid "Odoo Product Image"
+msgstr "Immagine prodotto di Odoo"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model,name:shopify_connector_website_sale.model_product_image
+msgid "Product Image"
+msgstr "Immagine prodotto"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__shopify_id
+msgid "Shopify GID"
+msgstr "ID globale Shopify (GID)"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_product_image__shopify_image_binding_ids
+msgid "Shopify Image Bindings"
+msgstr "Collegamenti delle immagini Shopify"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_template__image_binding_ids
+msgid "Shopify Images"
+msgstr "Immagini Shopify"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__instance_id
+msgid "Shopify Instance"
+msgstr "Istanza Shopify"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model,name:shopify_connector_website_sale.model_shopify_product_image
+msgid "Shopify Product Image Binding"
+msgstr "Collegamento dell'immagine prodotto Shopify"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model,name:shopify_connector_website_sale.model_shopify_product_template
+msgid "Shopify Product Template Binding"
+msgstr "Collegamento del modello prodotto Shopify"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__external_updated_at
+msgid "Shopify Updated At"
+msgstr "Shopify aggiorrnato al"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__source_url
+msgid "Source Url"
+msgstr "URL sorgente"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,help:shopify_connector_website_sale.field_shopify_product_image__shopify_id
+msgid "Stable Shopify GraphQL global ID."
+msgstr "ID globale GraphQL Shopify stabile."
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__state
+msgid "State"
+msgstr "Stato"
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__template_binding_id
+msgid "Template Binding"
+msgstr "Collegamento del modello"
+
+#. module: shopify_connector_website_sale
+#. odoo-python
+#: code:addons/shopify_connector_website_sale/models/shopify_product_image.py:0
+msgid "The Odoo image must belong to the bound product."
+msgstr "L'immagine di Odoo deve appartenere al prodotto collegato."
+
+#. module: shopify_connector_website_sale
+#. odoo-python
+#: code:addons/shopify_connector_website_sale/models/shopify_product_image.py:0
+msgid "The image variant must belong to the bound product."
+msgstr "La variante dell'immagine deve appartenere al prodotto collegato."
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,help:shopify_connector_website_sale.field_shopify_product_image__last_sync_date
+msgid "UTC timestamp of the last successful synchronization."
+msgstr "Data e ora UTC dell'ultima sincronizzazione riuscita."
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,help:shopify_connector_website_sale.field_shopify_product_image__external_updated_at
+msgid "UTC update timestamp last reported by Shopify."
+msgstr "Data e ora UTC dell'ultimo aggiornamento comunicato da Shopify."
+
+#. module: shopify_connector_website_sale
+#: model:ir.model.fields,field_description:shopify_connector_website_sale.field_shopify_product_image__variant_binding_id
+msgid "Variant Binding"
+msgstr "Collegamento della variante"

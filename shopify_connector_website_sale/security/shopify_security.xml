@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_product_image_company_rule" model="ir.rule">
+        <field name="name">Shopify image bindings by company</field>
+        <field name="model_id" ref="model_shopify_product_image" />
+        <field
+            name="domain_force"
+        >[('instance_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('shopify_connector.group_shopify_manager'))]"
+        />
+    </record>
+</odoo>

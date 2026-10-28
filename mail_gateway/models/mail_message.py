@@ -17,9 +17,13 @@ class MailMessage(models.Model):
         domain=[("notification_type", "=", "gateway")],
     )
     gateway_channel_ids = fields.Many2many(
-        "res.partner.gateway.channel", compute="_compute_gateway_channel_ids"
+        "res.partner.gateway.channel",
+        compute="_compute_gateway_channel_ids",
+        compute_sudo=True,
     )
-    gateway_channel_data = fields.Json(compute="_compute_gateway_channel_ids")
+    gateway_channel_data = fields.Json(
+        compute="_compute_gateway_channel_ids", compute_sudo=True
+    )
     gateway_message_ids = fields.One2many(
         "mail.message",
         inverse_name="gateway_message_id",
