@@ -1,10 +1,10 @@
 {
     "name": "Stock Picking Report Printed Flag",
     "summary": "Adds printed flag support to stock picking",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Stock",
     "license": "AGPL-3",
-    "author": "Binhex Systems Solutions S.L, Odoo Community Association (OCA)",
+    "author": "Binhex, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-reporting",
     "depends": [
         "stock",
