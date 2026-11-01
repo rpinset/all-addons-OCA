@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-10-28 20:13 UTC
+Generated 2026-11-01 10:42 UTC
 
 ## Skipped repos
 
@@ -9,7 +9,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | Repo | Reason | Detail |
 | ---- | ------ | ------ |
 | [.github](https://github.com/OCA/.github) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-analytic](https://github.com/OCA/account-analytic) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-closing](https://github.com/OCA/account-closing) | `no_module` | No directory with __manifest__.py at repo root |
@@ -17,7 +16,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-payment](https://github.com/OCA/account-payment) | `no_module` | No directory with __manifest__.py at repo root |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | `no_module` | No directory with __manifest__.py at repo root |
 | [agreement](https://github.com/OCA/agreement) | `no_module` | No directory with __manifest__.py at repo root |
@@ -164,7 +162,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [odoorpc](https://github.com/OCA/odoorpc) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [operating-unit](https://github.com/OCA/operating-unit) | `no_module` | No directory with __manifest__.py at repo root |
-| [partner-contact](https://github.com/OCA/partner-contact) | `no_module` | No directory with __manifest__.py at repo root |
 | [payroll](https://github.com/OCA/payroll) | `no_module` | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | `no_module` | No directory with __manifest__.py at repo root |
 | [pos](https://github.com/OCA/pos) | `no_module` | No directory with __manifest__.py at repo root |
@@ -176,7 +173,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | `no_module` | No directory with __manifest__.py at repo root |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |

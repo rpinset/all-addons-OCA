@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-10-28 20:13 UTC
+Generated 2026-11-01 10:42 UTC
 
-Total skipped: **244**
+Total skipped: **240**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -39,11 +39,10 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **218**
+Count: **214**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
-| [OpenUpgrade](https://github.com/OCA/OpenUpgrade) | [20.0](https://github.com/OCA/OpenUpgrade/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-analytic](https://github.com/OCA/account-analytic) | [20.0](https://github.com/OCA/account-analytic/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | [20.0](https://github.com/OCA/account-budgeting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-closing](https://github.com/OCA/account-closing) | [20.0](https://github.com/OCA/account-closing/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -51,7 +50,6 @@ Count: **218**
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | [20.0](https://github.com/OCA/account-financial-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | [20.0](https://github.com/OCA/account-fiscal-rule/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | [20.0](https://github.com/OCA/account-invoice-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | [20.0](https://github.com/OCA/account-invoicing/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-payment](https://github.com/OCA/account-payment) | [20.0](https://github.com/OCA/account-payment/tree/20.0) | No directory with __manifest__.py at repo root |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | [20.0](https://github.com/OCA/account-reconcile/tree/20.0) | No directory with __manifest__.py at repo root |
 | [agreement](https://github.com/OCA/agreement) | [20.0](https://github.com/OCA/agreement/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -178,7 +176,6 @@ Count: **218**
 | [multi-company](https://github.com/OCA/multi-company) | [20.0](https://github.com/OCA/multi-company/tree/20.0) | No directory with __manifest__.py at repo root |
 | [odoo-pim](https://github.com/OCA/odoo-pim) | [20.0](https://github.com/OCA/odoo-pim/tree/20.0) | No directory with __manifest__.py at repo root |
 | [operating-unit](https://github.com/OCA/operating-unit) | [20.0](https://github.com/OCA/operating-unit/tree/20.0) | No directory with __manifest__.py at repo root |
-| [partner-contact](https://github.com/OCA/partner-contact) | [20.0](https://github.com/OCA/partner-contact/tree/20.0) | No directory with __manifest__.py at repo root |
 | [payroll](https://github.com/OCA/payroll) | [20.0](https://github.com/OCA/payroll/tree/20.0) | No directory with __manifest__.py at repo root |
 | [pms](https://github.com/OCA/pms) | [20.0](https://github.com/OCA/pms/tree/20.0) | No directory with __manifest__.py at repo root |
 | [pos](https://github.com/OCA/pos) | [20.0](https://github.com/OCA/pos/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -190,7 +187,6 @@ Count: **218**
 | [project-agile](https://github.com/OCA/project-agile) | [20.0](https://github.com/OCA/project-agile/tree/20.0) | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | [20.0](https://github.com/OCA/project-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | [20.0](https://github.com/OCA/purchase-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
-| [purchase-workflow](https://github.com/OCA/purchase-workflow) | [20.0](https://github.com/OCA/purchase-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [repair](https://github.com/OCA/repair) | [20.0](https://github.com/OCA/repair/tree/20.0) | No directory with __manifest__.py at repo root |
 | [report-print-send](https://github.com/OCA/report-print-send) | [20.0](https://github.com/OCA/report-print-send/tree/20.0) | No directory with __manifest__.py at repo root |
 | [reporting-engine](https://github.com/OCA/reporting-engine) | [20.0](https://github.com/OCA/reporting-engine/tree/20.0) | No directory with __manifest__.py at repo root |
