@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-10-28 20:02 UTC** (elapsed 183s)
+Last build: **2026-11-01 10:37 UTC** (elapsed 64s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
@@ -27,7 +27,7 @@ Last build: **2026-10-28 20:02 UTC** (elapsed 183s)
 | [brand](https://github.com/OCA/brand) | 9 | da24d2a 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [business-requirement](https://github.com/OCA/business-requirement) | 1 | 18d2b25 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [calendar](https://github.com/OCA/calendar) | 3 | 6b834f7 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
-| [commission](https://github.com/OCA/commission) | 8 | 95a89cf 2026-10-05 OCA-git-bot [BOT] post-merge updates |
+| [commission](https://github.com/OCA/commission) | 8 | 726f9e1 2026-11-01 OCA-git-bot [BOT] post-merge updates |
 | [community-data-files](https://github.com/OCA/community-data-files) | 9 | 126b4d1 2026-08-14 OCA-git-bot [BOT] post-merge updates |
 | [connector](https://github.com/OCA/connector) | 6 | 38b8d9b 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [connector-interfaces](https://github.com/OCA/connector-interfaces) | 3 | 3b2cb18 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
