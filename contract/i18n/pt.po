@@ -904,6 +904,13 @@ msgid "Currency"
 msgstr "Divisa"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/abstract_contract.py:0
+#, python-format
+msgid "Currency should be same for the Journal and the Pricelist in a Contract"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields.selection,name:contract.selection__contract_abstract_contract_line__note_invoicing_mode__custom
 #: model:ir.model.fields.selection,name:contract.selection__contract_line__note_invoicing_mode__custom
 #: model:ir.model.fields.selection,name:contract.selection__contract_template_line__note_invoicing_mode__custom
@@ -1778,6 +1785,13 @@ msgid "Pricelist"
 msgstr "Lista de Preços"
 
 #. module: contract
+#: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__pricelist_id_domain
+#: model:ir.model.fields,field_description:contract.field_contract_contract__pricelist_id_domain
+#: model:ir.model.fields,field_description:contract.field_contract_template__pricelist_id_domain
+msgid "Pricelist Id Domain"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__product_id
 #: model:ir.model.fields,field_description:contract.field_contract_line__product_id
 #: model:ir.model.fields,field_description:contract.field_contract_template_line__product_id
@@ -1790,6 +1804,11 @@ msgstr "Artigo"
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
 msgid "Purchase Contracts"
 msgstr "Contratos de Compras"
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid "Put some note here..."
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__quantity

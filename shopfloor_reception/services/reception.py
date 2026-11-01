@@ -1600,7 +1600,7 @@ class Reception(Component):
             is_over_reception_confirmed=is_over_reception_confirmed,
         ):
             return response
-        picking._put_in_pack(selected_line)
+        picking._put_in_pack(selected_line, create_package_level=False)
         return self._response_for_set_destination(picking, selected_line)
 
     def process_without_pack(
@@ -1751,7 +1751,9 @@ class Reception(Component):
             message = self.msg_store.transfer_done_success(picking)
             return self._response_for_select_document(message=message)
         # Else return select move
-        return self._response_for_select_move(picking)
+        return self._response_for_select_move(
+            picking, message=self.msg_store.line_destination_set_success(selected_line)
+        )
 
     def select_dest_package(
         self, picking_id, selected_line_id, barcode, confirmation=False
