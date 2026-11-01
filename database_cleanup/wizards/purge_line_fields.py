@@ -18,12 +18,10 @@ class CleanupPurgeLineField(models.TransientModel):
     )
     field_id = fields.Many2one(
         comodel_name="ir.model.fields",
-        string="Field",
     )
     model_id = fields.Many2one(
         comodel_name="ir.model",
         related="field_id.model_id",
-        string="Model",
         store=True,
     )
     model_name = fields.Char(
@@ -44,7 +42,7 @@ class CleanupPurgeLineField(models.TransientModel):
             objs = self
         else:
             objs = self.env["cleanup.purge.line.action"].browse(
-                self._context.get("active_ids")
+                self.env.context.get("active_ids")
             )
         to_unlink = objs.filtered(lambda x: not x.purged and x.field_id)
         self.logger.info("Purging field entries:")

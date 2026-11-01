@@ -2,6 +2,7 @@
 # Copyright 2019-2020 Dataplug (https://dataplug.io)
 # Copyright 2022-2023 Therp BV (https://therp.nl)
 # Copyright 2026 Ryan Duguid <ryan@duguid.com.au>
+# Copyright 2026 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 import logging
 from datetime import date, datetime
@@ -11,6 +12,7 @@ from urllib.error import HTTPError
 from dateutil.relativedelta import relativedelta
 
 from odoo import fields
+from odoo.modules import neutralize
 from odoo.orm.model_classes import add_to_registry
 from odoo.tests import common, freeze_time
 from odoo.tools import mute_logger
@@ -169,6 +171,54 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
                 self.now,
             )
         self._getExpectedStatements(0)
+
+    def test_pull_scheduled_failed(self):
+        """A failed period of a scheduled pull is pulled again by the next one"""
+        self.provider.write(
+            {
+                "interval_type": "days",
+                "next_run": datetime(2021, 8, 13),
+                "last_successful_run": datetime(2021, 8, 10, 12),
+            }
+        )
+        with (
+            mock.patch(mock_obtain_statement_data) as mock_data,
+            mute_logger(
+                "odoo.addons.account_statement_import_online.models"
+                ".online_bank_statement_provider"
+            ),
+        ):
+            mock_data.side_effect = [
+                self._get_statement_line_data(date(2021, 8, 10)),
+                Exception("Expected"),
+            ]
+            self.provider.with_context(scheduled=True)._pull(
+                self.provider.last_successful_run, self.provider.next_run
+            )
+        self.assertEqual(mock_data.call_count, 2)
+        self._getExpectedStatements(1)
+        self.assertEqual(self.provider.last_successful_run, datetime(2021, 8, 11))
+        self.assertEqual(self.provider.next_run, datetime(2021, 8, 14))
+
+    def test_pull_scheduled_failed_first_period(self):
+        """A failure in the first period keeps the last successful run"""
+        self.provider.write(
+            {
+                "interval_type": "days",
+                "next_run": datetime(2021, 8, 13),
+                "last_successful_run": datetime(2021, 8, 10, 12),
+            }
+        )
+        with mute_logger(
+            "odoo.addons.account_statement_import_online.models"
+            ".online_bank_statement_provider"
+        ):
+            self.provider.with_context(crash=True, scheduled=True)._pull(
+                self.provider.last_successful_run, self.provider.next_run
+            )
+        self._getExpectedStatements(0)
+        self.assertEqual(self.provider.last_successful_run, datetime(2021, 8, 10, 12))
+        self.assertEqual(self.provider.next_run, datetime(2021, 8, 14))
 
     def test_pull_crash(self):
         self.provider.statement_creation_mode = "weekly"
@@ -468,6 +518,16 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
         self.assertEqual(self.journal.bank_statements_source, "undefined")
         self.assertEqual(self.journal.online_bank_statement_provider, False)
         self.assertEqual(self.journal.online_bank_statement_provider_id.id, False)
+
+    def test_neutralize(self):
+        """Neutralizing the database deactivates the providers."""
+        self.assertTrue(self.provider.active)
+        for query in neutralize.get_neutralization_queries(
+            ["account_statement_import_online"]
+        ):
+            self.env.cr.execute(query)
+        self.provider.invalidate_recordset(["active"])
+        self.assertFalse(self.provider.active)
 
     def _getExpectedStatements(self, expected_length):
         """Check for length of statement recordset, with helpfull logging."""

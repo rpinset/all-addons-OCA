@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-10-28 20:08 UTC
+Generated 2026-11-01 10:42 UTC
 
 ## Skipped repos
 
@@ -46,7 +46,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [iot](https://github.com/OCA/iot) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-belarus](https://github.com/OCA/l10n-belarus) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-bulgaria](https://github.com/OCA/l10n-bulgaria) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-canada](https://github.com/OCA/l10n-canada) | `no_module` | No directory with __manifest__.py at repo root |

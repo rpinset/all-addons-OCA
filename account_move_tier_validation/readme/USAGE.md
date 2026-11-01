@@ -13,3 +13,5 @@ Additional features:
 - User with rights to confirm the Account Invoice (validate all tiers
   that would be generated) can directly do the operation, this is, there
   is no need for her/him to request a validation.
+
+Watch [this video](https://youtu.be/n0PsQXhMwB4?si=Gk9nSb4hDUOqdK0r) for an example of usage.

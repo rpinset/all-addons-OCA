@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-10 14:06+0000\n"
+"PO-Revision-Date: 2026-10-30 08:50+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: web_company_color
 #: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
@@ -27,6 +27,13 @@ msgstr ""
 "<span class=\"fa fa-info fa-2x me-2\"/>\n"
 "                        Affinché la modifica abbia effetto, ricaricare\n"
 "                        la pagina."
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Are you sure you want to reset all colors to Odoo defaults?"
+msgstr ""
+"Si è sicuri di voler reimpostare tutti i colori ai valori predefiniti di "
+"Odoo?"
 
 #. module: web_company_color
 #: model:ir.model.fields,field_description:web_company_color.field_res_company__color_button_bg
@@ -69,6 +76,18 @@ msgid "Compute colors from logo"
 msgstr "Calcola colori dal logo"
 
 #. module: web_company_color
+#: model:ir.model.fields,field_description:web_company_color.field_ir_qweb__display_name
+#: model:ir.model.fields,field_description:web_company_color.field_res_company__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: web_company_color
+#: model:ir.model.fields,field_description:web_company_color.field_ir_qweb__id
+#: model:ir.model.fields,field_description:web_company_color.field_res_company__id
+msgid "ID"
+msgstr "ID"
+
+#. module: web_company_color
 #: model:ir.model.fields,field_description:web_company_color.field_res_company__color_link_text
 msgid "Link Text Color"
 msgstr "Colore testo collegamento"
@@ -89,6 +108,11 @@ msgid "Navbar Background Color Hover"
 msgstr "Colore Hover Sfondo Barra Navigazione"
 
 #. module: web_company_color
+#: model:ir.model.fields,field_description:web_company_color.field_res_company__color_navbar_border_bottom
+msgid "Navbar Bottom Border Color"
+msgstr "Colore bordo inferiore barra navigazione"
+
+#. module: web_company_color
 #: model:ir.model.fields,field_description:web_company_color.field_res_company__color_navbar_text
 msgid "Navbar Text Color"
 msgstr "Colori Testo Barra Navigazione"
@@ -97,6 +121,11 @@ msgstr "Colori Testo Barra Navigazione"
 #: model:ir.model,name:web_company_color.model_ir_qweb
 msgid "Qweb"
 msgstr "Qweb"
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Reset colors"
+msgstr "Reimposta colori"
 
 #. module: web_company_color
 #: model:ir.model.fields,field_description:web_company_color.field_res_company__scss_modif_timestamp

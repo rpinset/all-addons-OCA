@@ -7,7 +7,7 @@
 {
     "name": "Clickable many2one fields for tree views",
     "summary": "Open the linked resource when clicking on their name",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Hidden",
     "website": "https://github.com/OCA/web",
     "author": "Therp BV, "
@@ -25,8 +25,16 @@
             "many2one_button/many2one_button.esm.js",
             "web_tree_many2one_clickable/static/src/components/"
             "many2one_button/many2one_button.scss",
-            "web_tree_many2one_clickable/static/src/components/"
-            "many2one_button/many2one_button.xml",
+            # Load right after the list renderer templates so the extension is
+            # inherited by list renderers that use their own primary record row
+            # template, such as the section and note lists of invoice, sale and
+            # purchase lines
+            (
+                "after",
+                "web/static/src/views/list/list_renderer.xml",
+                "web_tree_many2one_clickable/static/src/components/"
+                "many2one_button/many2one_button.xml",
+            ),
         ]
     },
 }
