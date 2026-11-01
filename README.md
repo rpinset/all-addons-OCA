@@ -1,9 +1,9 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-10-28 19:59 UTC** (elapsed 205s)
+Last build: **2026-11-01 10:36 UTC** (elapsed 166s)
 
 - Repos integrated: **140**
-- Canonical modules: **2915**
+- Canonical modules: **2916**
 - Duplicate module names: **0**
 - Skipped repos (no branch / no module): **125**
 
@@ -52,7 +52,7 @@ Last build: **2026-10-28 19:59 UTC** (elapsed 205s)
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 2b15a1d 2025-10-13 mymage Added translation using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 63 | 8938600 2026-08-04 Marwan Behillil Translated using Weblate (French) |
 | [edi-framework](https://github.com/OCA/edi-framework) | 2 | 1359541 2025-10-13 mymage Translated using Weblate (Italian) |
-| [event](https://github.com/OCA/event) | 18 | 8259a1a 2025-10-13 mymage Added translation using Weblate (Italian) |
+| [event](https://github.com/OCA/event) | 18 | 0d2370e 2026-10-30 Eugeni Chafer Translated using Weblate (Catalan) |
 | [field-service](https://github.com/OCA/field-service) | 45 | 96e1c1f 2026-10-19 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 18 | 76d7116 2025-11-10 mymage Translated using Weblate (Italian) |
 | [geospatial](https://github.com/OCA/geospatial) | 4 | c643b29 2025-07-22 mymage Translated using Weblate (Italian) |
@@ -64,7 +64,7 @@ Last build: **2026-10-28 19:59 UTC** (elapsed 205s)
 | [interface-git](https://github.com/OCA/interface-git) | 3 | 11854ca 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 6 | c67470d 2026-03-09 painkin Translated using Weblate (Finnish) |
 | [iot](https://github.com/OCA/iot) | 8 | 21a4469 2025-10-07 mymage Translated using Weblate (Italian) |
-| [knowledge](https://github.com/OCA/knowledge) | 13 | 5958b0d 2026-10-28 Eric Antones Translated using Weblate (Catalan) |
+| [knowledge](https://github.com/OCA/knowledge) | 13 | 28b1142 2026-10-29 Eric Antones Translated using Weblate (Catalan) |
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | 6 | fc14539 2026-10-03 OCA-git-bot Merge PR #103 into 14.0 |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 9 | 8a0bf5c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 64 | e69a3a7 2026-10-14 OCA-git-bot [BOT] post-merge updates |
@@ -105,7 +105,7 @@ Last build: **2026-10-28 19:59 UTC** (elapsed 205s)
 | [product-configurator](https://github.com/OCA/product-configurator) | 10 | e9c474d 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-pack](https://github.com/OCA/product-pack) | 4 | 790e07e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [product-variant](https://github.com/OCA/product-variant) | 9 | 3b5cae5 2026-09-08 OCA-git-bot [BOT] post-merge updates |
-| [project](https://github.com/OCA/project) | 48 | a40a05d 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
+| [project](https://github.com/OCA/project) | 49 | 11bac6e 2026-10-29 OCA-git-bot [BOT] post-merge updates |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | d47baa8 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [project-reporting](https://github.com/OCA/project-reporting) | 1 | 413b9d5 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 5 | 2222be5 2025-08-04 OCA-git-bot [BOT] post-merge updates |
