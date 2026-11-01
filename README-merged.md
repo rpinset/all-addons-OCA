@@ -444,7 +444,7 @@ addon | version | maintainers | summary
 [account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 17.0.1.0.0 |  | Adds the related sale line position on invoice line.
 [account_invoice_production_lot](account_invoice_production_lot/) | 17.0.1.0.1 |  | Display delivered serial numbers in invoice
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.7 |  | Print invoice lines grouped by picking
-[account_invoice_report_printed_flag](account_invoice_report_printed_flag/) | 17.0.1.0.0 |  | Adds printed flag support to account moves
+[account_invoice_report_printed_flag](account_invoice_report_printed_flag/) | 17.0.1.0.1 |  | Adds printed flag support to account moves
 [partner_time_to_pay](partner_time_to_pay/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Add receivables and payables statistics to partners
 
 [//]: # (end addons)
@@ -5325,11 +5325,11 @@ addon | version | maintainers | summary
 [procurement_purchase_sale_no_grouping](procurement_purchase_sale_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase Service No Grouping
 [product_supplier_code_purchase](product_supplier_code_purchase/) | 17.0.1.0.0 |  | This module adds to the purchase order line the supplier code defined in the product.
 [product_supplierinfo_disable_autocreation](product_supplierinfo_disable_autocreation/) | 17.0.1.0.1 |  | Add option to disable automatic creation of pricelists for suppliers
-[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.5.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
+[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.5.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
 [purchase_advance_payment_line](purchase_advance_payment_line/) | 17.0.1.1.0 |  | Allow to add advance payment lines on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
-[purchase_billing_address](purchase_billing_address/) | 17.0.1.0.0 |  | Create a new partner type (purchase), to differentiate the purchase order and invoice addresses.
+[purchase_billing_address](purchase_billing_address/) | 17.0.1.0.1 |  | Create a new partner type (purchase), to differentiate the purchase order and invoice addresses.
 [purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.1 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 17.0.1.0.0 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Supplier' on POs
@@ -5356,6 +5356,7 @@ addon | version | maintainers | summary
 [purchase_order_date_approve_editable](purchase_order_date_approve_editable/) | 17.0.1.0.0 |  | Allows editing the Approval Date on Purchase Orders
 [purchase_order_general_discount](purchase_order_general_discount/) | 17.0.1.0.0 |  | General discount per purchase order
 [purchase_order_line_deep_sort](purchase_order_line_deep_sort/) | 17.0.1.0.0 |  | Purchase Order Line Sort
+[purchase_order_line_import_sheet_file](purchase_order_line_import_sheet_file/) | 17.0.1.0.0 |  | Import purchase order lines from a spreadsheet
 [purchase_order_line_menu](purchase_order_line_menu/) | 17.0.1.1.1 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_sequence](purchase_order_line_sequence/) | 17.0.1.0.0 |  | Adds sequence to PO lines and propagates it toInvoice lines and Stock Moves
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 17.0.1.0.0 |  | Purchase order line stock available
@@ -5382,10 +5383,10 @@ addon | version | maintainers | summary
 [purchase_requisition_order_remaining_qty](purchase_requisition_order_remaining_qty/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Requisition Order Remaining Qty
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
-[purchase_security](purchase_security/) | 17.0.1.0.3 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | See only your purchase orders
+[purchase_security](purchase_security/) | 17.0.1.0.4 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | See only your purchase orders
 [purchase_start_end_dates](purchase_start_end_dates/) | 17.0.1.0.0 |  | Adds start date and end date on purchase order lines
 [purchase_stock_manual_currency](purchase_stock_manual_currency/) | 17.0.1.0.0 |  | Extends manual currency from purchase to stock moves
-[purchase_stock_packaging](purchase_stock_packaging/) | 17.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
+[purchase_stock_packaging](purchase_stock_packaging/) | 17.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 17.0.1.0.0 |  | Update cost price in stock moves already done
 [purchase_stock_reception_status](purchase_stock_reception_status/) | 17.0.1.0.0 |  | Glue module to integrate OCA reception status with purchase_stock
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 17.0.1.0.0 |  | Get product quantities in a secondary unit
@@ -6605,6 +6606,7 @@ addon | version | maintainers | summary
 [social_media_linkedin_sync](social_media_linkedin_sync/) | 17.0.1.0.1 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import LinkedIn publications, their figures, comments and reactions
 [social_media_sync](social_media_sync/) | 17.0.1.0.1 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import posts, figures, comments and reactions from the social media
 [social_media_x](social_media_x/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Publish on X, with the figures of the account and of the posts sent
+[social_media_x_sync](social_media_x_sync/) | 17.0.1.0.0 | <a href='https://github.com/edescalona'><img src='https://github.com/edescalona.png' width='32' height='32' style='border-radius:50%;' alt='edescalona'/></a> | Import the X timeline, its figures and the conversation of each post
 
 [//]: # (end addons)
 
@@ -7038,6 +7040,7 @@ addon | version | maintainers | summary
 [stock_account_change_qty_reason](stock_account_change_qty_reason/) | 17.0.1.0.1 |  | Stock Account Change Quantity Reason
 [stock_archive_constraint](stock_archive_constraint/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock archive constraint
 [stock_change_qty_reason](stock_change_qty_reason/) | 17.0.1.0.0 |  | Stock Quantity Change Reason
+[stock_cycle_count](stock_cycle_count/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
 [stock_demand_estimate](stock_demand_estimate/) | 17.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 17.0.1.1.0 |  | Allows to create demand estimates.
 [stock_exception](stock_exception/) | 17.0.1.0.0 |  | Custom exceptions on stock picking
