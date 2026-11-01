@@ -10,6 +10,8 @@ from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.serialization import pkcs12
 from cryptography.x509.oid import NameOID
+from nfelib.nfe.bindings.v4_0.proc_nfe_v4_00 import NfeProc
+from nfelib.nfse.bindings.v1_0.nfse_v1_01 import Nfse
 
 from odoo import fields
 from odoo.exceptions import UserError, ValidationError
@@ -67,6 +69,22 @@ def _pkcs12_bytes(password=b"secret"):
 
 
 class TestNfseXmlEdges(TransactionCase):
+    def test_nfe_xml_is_not_an_nfse(self):
+        """An NF-e XML is left to the NF-e import.
+
+        nfelib picks the binding by the XML root, so ``Nfse.from_xml`` returns
+        an NfeProc for an NF-e once the NF-e bindings are loaded.
+        """
+        nfe = (
+            b'<?xml version="1.0" encoding="UTF-8"?>'
+            b'<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">'
+            b'<NFe><infNFe Id="NFe35231149647316000169550010000661061151600085"'
+            b' versao="4.00"/></NFe></nfeProc>'
+        )
+        self.assertIsInstance(Nfse.from_xml(nfe.decode()), NfeProc)
+        self.assertIsNone(parse_nfse_xml(nfe))
+        self.assertIsNone(parse_nfse_file(base64.b64encode(nfe)))
+
     def test_decode_and_key_helpers(self):
         self.assertIsNone(decode_arquivo_xml(None))
         self.assertTrue(decode_arquivo_xml(b"<NFSe/>").startswith(b"<"))
@@ -146,7 +164,7 @@ class TestNfseDfeCoverage(TransactionCase):
             "l10n_br_nfse_dfe.action_nfse_dfe_document",
         )
         company._dfe_document_action_xmlid("nfe")
-        search = company.action_nfse_search_specific()
+        search = company.action_search_specific("nfse")
         self.assertEqual(search["context"]["default_fiscal_type"], "nfse")
         company_model = self.env["res.company"].with_company(company)
         banner = company_model.dfe_action_specific_search("nfse")
@@ -165,7 +183,7 @@ class TestNfseDfeCoverage(TransactionCase):
             type(company), "_nfse_document_distribution", return_value=None
         ) as nfse_loop:
             company.nfse_dfe_next_query = False
-            company.action_nfse_document_distribution()
+            company.action_document_distribution("nfse")
         nfse_loop.assert_called_once()
         parent = (
             "odoo.addons.l10n_br_fiscal_dfe.models.res_company."

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="shopify_product_template_view_form" model="ir.ui.view">
+        <field
+            name="name"
+        >shopify.product.template.form - shopify_connector_website_sale</field>
+        <field name="model">shopify.product.template</field>
+        <field
+            name="inherit_id"
+            ref="shopify_connector.shopify_product_template_view_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='variants']" position="after">
+                <page string="Images" name="images">
+                    <field name="image_binding_ids" readonly="1">
+                        <list>
+                            <field name="odoo_id" />
+                            <field name="shopify_id" />
+                            <field name="variant_binding_id" />
+                            <field name="variant_binding_ids" widget="many2many_tags" />
+                            <field name="source_url" />
+                            <field name="state" widget="badge" />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

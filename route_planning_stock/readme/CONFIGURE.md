@@ -14,3 +14,7 @@ Upon saving, the system will automatically:
 - Go to `Inventory / Configuration / Operation Types`.
 - Create or edit an operation type.
 - Set the `Destination Location` field to the transit location created automatically by the Route Area.
+
+## Configuring Incident Types
+- Go to `Route Planning / Configuration / Incident Types`.
+- Check `Cancel Picking` on the incident types that must cancel the picking linked to the checkpoint when the incident is created.

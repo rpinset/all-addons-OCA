@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-10-28 20:07 UTC
+Generated 2026-11-01 10:40 UTC
 
 ## Skipped repos
 
@@ -38,7 +38,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | `no_module` | No directory with __manifest__.py at repo root |
-| [l10n-belarus](https://github.com/OCA/l10n-belarus) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-canada](https://github.com/OCA/l10n-canada) | `no_module` | No directory with __manifest__.py at repo root |
 | [l10n-chile](https://github.com/OCA/l10n-chile) | `no_module` | No directory with __manifest__.py at repo root |
@@ -82,7 +81,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
-| [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |

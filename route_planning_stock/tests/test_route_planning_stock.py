@@ -169,6 +169,19 @@ class TestRoutePlanningStock(RouteCommon):
         self.assertEqual(checkpoint.route_id.state, "done")
 
     @mute_logger("odoo.models.unlink")
+    def test_checkpoint_incident_cancel_picking(self):
+        """An incident whose type has cancel_picking cancels the linked picking."""
+        self.picking.button_validate()
+        next_picking = self.picking._get_next_transfers()
+        checkpoint = next_picking.route_checkpoint_ids
+        checkpoint.route_id.action_planned()
+        incident_type = self.env.ref("route_planning_stock.route_incident_cancel")
+        self.assertTrue(incident_type.cancel_picking)
+        self._create_incident(checkpoint, incident_type, "Customer cancelled")
+        self.assertEqual(checkpoint.state, "incident")
+        self.assertEqual(next_picking.state, "cancel")
+
+    @mute_logger("odoo.models.unlink")
     def test_action_cancel_draft_route(self):
         """Cancelling a picking of a draft route keeps it in draft,
         so it can still be planned with the remaining checkpoints."""
@@ -246,6 +259,8 @@ class TestRoutePlanningStock(RouteCommon):
         )
         self.assertEqual(checkpoint2.state, "incident")
         self.assertEqual(checkpoint2.incident_type_id, self.incident_reschedule)
+        # Incident type without cancel_picking keeps the picking alive
+        self.assertNotEqual(next_picking2.state, "cancel")
         # Create a new route
         # checkpoint2 should be rescheduled
         new_route = self._create_route(self.area_north)

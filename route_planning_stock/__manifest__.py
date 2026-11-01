@@ -3,7 +3,7 @@
 
 {
     "name": "Route Planning Stock Integration",
-    "version": "18.0.1.1.7",
+    "version": "18.0.1.2.0",
     "license": "AGPL-3",
     "author": "Tecnativa,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/route-planning",
@@ -13,6 +13,7 @@
         "security/ir.model.access.csv",
         "views/route_area_views.xml",
         "views/route_checkpoint_views.xml",
+        "views/route_incident_type_views.xml",
         "views/route_route_views.xml",
         "views/stock_picking_views.xml",
     ],

@@ -30,6 +30,11 @@ msgid "Add a Product"
 msgstr ""
 
 #. module: route_planning_stock
+#: model:ir.model.fields,field_description:route_planning_stock.field_route_incident_type__cancel_picking
+msgid "Cancel Picking"
+msgstr ""
+
+#. module: route_planning_stock
 #. odoo-python
 #: code:addons/route_planning_stock/models/stock_picking.py:0
 msgid "Cancelled from picking"
@@ -59,6 +64,13 @@ msgstr ""
 #. module: route_planning_stock
 #: model:ir.model.fields,field_description:route_planning_stock.field_stock_picking__has_route_planning
 msgid "Has Route Planning"
+msgstr ""
+
+#. module: route_planning_stock
+#: model:ir.model.fields,help:route_planning_stock.field_route_incident_type__cancel_picking
+msgid ""
+"If checked, the picking linked to the checkpoint will be cancelled when an "
+"incident of this type is created."
 msgstr ""
 
 #. module: route_planning_stock

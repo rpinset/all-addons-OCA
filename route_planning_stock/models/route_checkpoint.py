@@ -35,6 +35,17 @@ class RouteCheckpoint(models.Model):
         vals.update({"picking_id": self.picking_id.id})
         return vals
 
+    def _action_create_incident(self, incident_type, note):
+        res = super()._action_create_incident(incident_type, note)
+        if incident_type.cancel_picking and not self.env.context.get(
+            "skip_route_picking_cancel"
+        ):
+            pickings = self.picking_id.filtered(
+                lambda x: x.state not in ["done", "cancel"]
+            )
+            pickings.sudo().action_cancel()
+        return res
+
     def action_back_to_planned(self):
         for checkpoint in self.filtered("picking_id"):
             if checkpoint.picking_id.state == "done":

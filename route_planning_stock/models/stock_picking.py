@@ -66,7 +66,10 @@ class StockPicking(models.Model):
             incident_picking_cancel = self.env.ref(
                 "route_planning_stock.route_incident_cancel"
             )
-            current_checkpoint._action_create_incident(
+            # The picking is cancelled below, avoid cancelling it from the incident
+            current_checkpoint.with_context(
+                skip_route_picking_cancel=True
+            )._action_create_incident(
                 incident_picking_cancel, self.env._("Cancelled from picking")
             )
         return super().action_cancel()

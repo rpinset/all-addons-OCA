@@ -71,7 +71,7 @@
                                     <field name="webhook_secret" password="True" />
                                     <field
                                         name="access_token"
-                                        widget="password"
+                                        password="True"
                                         readonly="client_id"
                                     />
                                     <field

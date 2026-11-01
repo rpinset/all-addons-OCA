@@ -795,8 +795,8 @@ class TestShopifyInstanceCredentialsForm(TransactionCase):
         # The managed token is worth reading, never editing.
         self.assertFalse(self._modifier("access_token", "invisible", CLIENT_ID))
         self.assertTrue(self._modifier("access_token", "readonly", CLIENT_ID))
-        # The password widget keeps masking the token once readonly.
-        self.assertEqual(self._field("access_token").get("widget"), "password")
+        # The password attribute keeps masking the token once readonly.
+        self.assertEqual(self._field("access_token").get("password"), "True")
         self.assertFalse(
             self._modifier("access_token_expires_at", "invisible", CLIENT_ID)
         )
@@ -808,6 +808,6 @@ class TestShopifyInstanceCredentialsForm(TransactionCase):
     def test_legacy_instances_still_expose_the_static_access_token(self):
         self.assertFalse(self._modifier("access_token", "invisible", False))
         self.assertFalse(self._modifier("access_token", "readonly", False))
-        self.assertEqual(self._field("access_token").get("widget"), "password")
+        self.assertEqual(self._field("access_token").get("password"), "True")
         # A static token has no managed expiry to show.
         self.assertTrue(self._modifier("access_token_expires_at", "invisible", False))

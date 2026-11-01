@@ -1,12 +1,17 @@
 # Copyright 2025 Tecnativa - Carlos Lopez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, models
+from odoo import api, fields, models
 from odoo.exceptions import UserError
 
 
 class RouteIncidentType(models.Model):
     _inherit = "route.incident.type"
+
+    cancel_picking = fields.Boolean(
+        help="If checked, the picking linked to the checkpoint will be cancelled "
+        "when an incident of this type is created.",
+    )
 
     @api.ondelete(at_uninstall=False)
     def _unlink_except_picking_cancel(self):

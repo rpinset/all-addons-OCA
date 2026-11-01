@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-31 14:06+0000\n"
+"PO-Revision-Date: 2026-10-30 13:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,13 +14,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: endpoint
 #. odoo-python
 #: code:addons/endpoint/models/endpoint_mixin.py:0
 msgid "'Exec as user' is mandatory for public endpoints."
 msgstr "'Esegui come utente' è obbligatorio per gli endpoint pubblici."
+
+#. module: endpoint
+#: model:ir.model.fields,help:endpoint.field_endpoint_endpoint__full_url_display
+#: model:ir.model.fields,help:endpoint.field_endpoint_mixin__full_url_display
+msgid ""
+"Absolute URL of this endpoint, ready to copy/paste. Resolved from the "
+"current request when available (matching what you're actually browsing), "
+"otherwise falls back to the 'web.base.url' system parameter."
+msgstr ""
+"URL assoluto di questo endpoint, pronto per essere copiato e incollato. "
+"Viene ricavato dalla richiesta corrente, quando disponibile (corrispondendo "
+"a ciò che si sta effettivamente consultando); in caso contrario, ricorre al "
+"parametro di sistema 'web.base.url'."
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__active
@@ -139,6 +152,12 @@ msgstr "Modo esecuzione"
 msgid "Exec mode is set to `Code`: you must provide a piece of code"
 msgstr ""
 "Im modo di esecuzione è impostato a `Codice`: bisogna fornire del codice"
+
+#. module: endpoint
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__full_url_display
+#: model:ir.model.fields,field_description:endpoint.field_endpoint_mixin__full_url_display
+msgid "Full Url Display"
+msgstr "Visualizza URL completo"
 
 #. module: endpoint
 #: model:ir.model.fields,field_description:endpoint.field_endpoint_endpoint__id

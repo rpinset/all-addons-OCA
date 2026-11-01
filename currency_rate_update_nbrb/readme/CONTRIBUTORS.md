@@ -1,0 +1,2 @@
+- Nedas Zilinskas \<nedas.zilinskas@xpansa.com\> (Ventor, Xpansa Group) - Original 11.0 version
+- Aliaksandr Zubik \<alexzub@tut.by\> (@ZubikIT) (https://artcloud.by) - Migration to 18.0

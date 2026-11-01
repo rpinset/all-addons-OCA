@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_route_incident_type_list" model="ir.ui.view">
+        <field name="name">route.incident.type.list</field>
+        <field name="model">route.incident.type</field>
+        <field name="inherit_id" ref="route_planning.view_route_incident_type_list" />
+        <field name="arch" type="xml">
+            <field name="rescheduled" position="after">
+                <field name="cancel_picking" />
+            </field>
+        </field>
+    </record>
+    <record id="view_route_incident_type_form" model="ir.ui.view">
+        <field name="name">route.incident.type.form</field>
+        <field name="model">route.incident.type</field>
+        <field name="inherit_id" ref="route_planning.view_route_incident_type_form" />
+        <field name="arch" type="xml">
+            <field name="rescheduled" position="after">
+                <field name="cancel_picking" />
+            </field>
+        </field>
+    </record>
+</odoo>

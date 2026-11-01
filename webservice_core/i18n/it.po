@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-27 14:46+0000\n"
+"PO-Revision-Date: 2026-10-30 13:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -65,6 +65,18 @@ msgstr "Autenticazione"
 #: model_terms:ir.ui.view,arch_db:webservice_core.webservice_endpoint_search_view
 msgid "Backend"
 msgstr "Backend"
+
+#. module: webservice_core
+#: model:ir.model.fields,help:webservice_core.field_webservice_backend__full_url_display
+#: model:ir.model.fields,help:webservice_core.field_webservice_endpoint__full_url_display
+#: model:ir.model.fields,help:webservice_core.field_webservice_request_mixin__full_url_display
+msgid ""
+"Best-effort absolute URL, ready to copy/paste. Any '{placeholder}' token is "
+"left unresolved: fill it in before use."
+msgstr ""
+"Migliore URL assoluto, pronto da copiare e incollare. Eventuali segnaposto "
+"nel formato '{placeholder}' rimangono invariati: è necessario completarli "
+"prima dell'uso."
 
 #. module: webservice_core
 #: model:ir.model.fields,field_description:webservice_core.field_webservice_backend__company_id
@@ -140,6 +152,13 @@ msgstr "Endpoint"
 #: model:ir.model.fields.selection,name:webservice_core.selection__webservice_request_mixin__content_type__application/x-www-form-urlencoded
 msgid "Form"
 msgstr "Maschera"
+
+#. module: webservice_core
+#: model:ir.model.fields,field_description:webservice_core.field_webservice_backend__full_url_display
+#: model:ir.model.fields,field_description:webservice_core.field_webservice_endpoint__full_url_display
+#: model:ir.model.fields,field_description:webservice_core.field_webservice_request_mixin__full_url_display
+msgid "Full Url Display"
+msgstr "Visualizza URL completo"
 
 #. module: webservice_core
 #: model:ir.model.fields.selection,name:webservice_core.selection__webservice_endpoint__http_method__get
@@ -273,8 +292,8 @@ msgid ""
 "Relative path appended to the backend URL. Supports the same '{placeholder}' "
 "syntax as the backend URL."
 msgstr ""
-"Percorso relativo aggiunto all'URL del backend. Supporta la stessa sintassi '"
-"{placeholder}' dell'URL del backend."
+"Percorso relativo aggiunto all'URL del backend. Supporta la stessa sintassi "
+"'{placeholder}' dell'URL del backend."
 
 #. module: webservice_core
 #: model:ir.model.fields,field_description:webservice_core.field_webservice_header__res_model

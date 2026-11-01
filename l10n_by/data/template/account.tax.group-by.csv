@@ -1,0 +1,5 @@
+"id","name","country_id"
+"tax_group_vat_0","VAT 0%","base.by"
+"tax_group_vat_10","VAT 10%","base.by"
+"tax_group_vat_20","VAT 20%","base.by"
+"tax_group_vat_exempt","VAT Exempt","base.by"

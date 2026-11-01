@@ -197,6 +197,7 @@ msgstr ""
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_order_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_order_line_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_payout_instance_gid_unique
+#: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_image_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_template_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_product_variant_instance_gid_unique
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_refund_instance_gid_unique
@@ -1398,6 +1399,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__error
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__error
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__error
@@ -2924,6 +2926,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__pending
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__pending
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__pending
@@ -4627,6 +4630,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order_line__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_payout__state__synced
+#: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_image__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_template__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_product_variant__state__synced
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_refund__state__synced

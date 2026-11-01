@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_shopify_product_image_manager,shopify.product.image manager,model_shopify_product_image,shopify_connector.group_shopify_manager,1,1,1,1

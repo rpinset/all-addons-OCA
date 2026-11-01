@@ -1,0 +1,4 @@
+"id","name","auto_apply","vat_required","sequence","tax_ids/tax_src_id","tax_ids/tax_dest_id"
+"fp_belarus_domestic","Belarus - Domestic","True","True","1","",""
+"fp_belarus_export","Belarus - Export","False","False","10","sale_vat_20","sale_vat_0"
+"","","","","","sale_vat_10","sale_vat_0"

@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * currency_rate_update_nbrb
+#
+# Translators:
+# Aliaksandr Zubik <alexzub@tut.by>, 2026
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-13 12:45:00+0000\n"
+"PO-Revision-Date: 2026-02-13 12:45:00+0000\n"
+"Last-Translator: Aliaksandr Zubik <alexzub@tut.by>\n"
+"Language-Team: Russian (https://www.transifex.com/oca/teams/23907/ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: currency_rate_update_nbrb
+#. odoo-python
+#: code:addons/currency_rate_update_nbrb/models/res_currency_rate_provider_nbrb.py:0
+msgid "Could not parse rate date from NBRB response: %s"
+msgstr "Не удалось разобрать дату курса из ответа НБРБ: %s"
+
+#. module: currency_rate_update_nbrb
+#: model:ir.model,name:currency_rate_update_nbrb.model_res_currency_rate_provider
+msgid "Currency Rates Provider"
+msgstr ""
+
+#. module: currency_rate_update_nbrb
+#. odoo-python
+#: code:addons/currency_rate_update_nbrb/models/res_currency_rate_provider_nbrb.py:0
+msgid "Error connecting to NBRB API: %s"
+msgstr "Ошибка подключения к API НБРБ: %s"
+
+#. module: currency_rate_update_nbrb
+#. odoo-python
+#: code:addons/currency_rate_update_nbrb/models/res_currency_rate_provider_nbrb.py:0
+msgid "Exchange data format error from National Bank of Belarus: %s"
+msgstr ""
+"Ошибка формата данных обменных курсов от Национального банка Беларуси: %s"
+
+#. module: currency_rate_update_nbrb
+#: model:ir.model.fields.selection,name:currency_rate_update_nbrb.selection__res_currency_rate_provider__service__nbrb
+msgid "National Bank of Belarus (NBRB)"
+msgstr "Национальный банк Беларуси (НБРБ)"
+
+#. module: currency_rate_update_nbrb
+#: model:ir.model.fields,field_description:currency_rate_update_nbrb.field_res_currency_rate_provider__service
+msgid "Provider"
+msgstr ""

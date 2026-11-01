@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-10-28 20:07 UTC
+Generated 2026-11-01 10:40 UTC
 
-Total skipped: **109**
+Total skipped: **107**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -43,7 +43,7 @@ Count: **30**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **79**
+Count: **77**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -73,7 +73,6 @@ Count: **79**
 | [l10n-argentina](https://github.com/OCA/l10n-argentina) | [18.0](https://github.com/OCA/l10n-argentina/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-australia](https://github.com/OCA/l10n-australia) | [18.0](https://github.com/OCA/l10n-australia/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-austria](https://github.com/OCA/l10n-austria) | [18.0](https://github.com/OCA/l10n-austria/tree/18.0) | No directory with __manifest__.py at repo root |
-| [l10n-belarus](https://github.com/OCA/l10n-belarus) | [18.0](https://github.com/OCA/l10n-belarus/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-cambodia](https://github.com/OCA/l10n-cambodia) | [18.0](https://github.com/OCA/l10n-cambodia/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-canada](https://github.com/OCA/l10n-canada) | [18.0](https://github.com/OCA/l10n-canada/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-chile](https://github.com/OCA/l10n-chile) | [18.0](https://github.com/OCA/l10n-chile/tree/18.0) | No directory with __manifest__.py at repo root |
@@ -100,7 +99,6 @@ Count: **79**
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | [18.0](https://github.com/OCA/l10n-uruguay/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [18.0](https://github.com/OCA/l10n-vietnam/tree/18.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [18.0](https://github.com/OCA/mis-builder-contrib/tree/18.0) | No directory with __manifest__.py at repo root |
-| [product-kitting](https://github.com/OCA/product-kitting) | [18.0](https://github.com/OCA/product-kitting/tree/18.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [18.0](https://github.com/OCA/program/tree/18.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [18.0](https://github.com/OCA/project-agile/tree/18.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [18.0](https://github.com/OCA/resource/tree/18.0) | No directory with __manifest__.py at repo root |
