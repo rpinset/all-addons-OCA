@@ -7,69 +7,70 @@ msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-04 19:39+0000\n"
-"PO-Revision-Date: 2025-08-04 19:39+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-11-02 17:46+0000\n"
+"Last-Translator: DantePereyra <dante.pereyra@ciclosmontecastelo.com>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3159
 msgid "1,1,1,2-TETRAFLUOROETHANE (REFRIGERANT GAS R 134a)"
-msgstr ""
+msgstr "1,1,1,2-TETRAFLUORETANO (GAS REFRIGERANTE R 134a)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2831
 msgid "1,1,1-TRICHLOROETHANE"
-msgstr ""
+msgstr "1,1,1-TRICloroetano"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2035
 msgid "1,1,1-TRIFLUOROETHANE (REFRIGERANT GAS R 143a)"
-msgstr ""
+msgstr "1,1,1-TRIFLUOROETANO (GAS REFRIGERANTE R 143a)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1702
 msgid "1,1,2,2-TETRACHLOROETHANE"
-msgstr ""
+msgstr "1,1,2,2-TETRACLOROETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2650
 msgid "1,1-DICHLORO-1-NITROETHANE"
-msgstr ""
+msgstr "1,1-DICLORO-1-NITROETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2362
 msgid "1,1-DICHLOROETHANE"
-msgstr ""
+msgstr "1,1-DICLOROETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1030
 msgid "1,1-DIFLUOROETHANE (REFRIGERANT GAS R 152a)"
-msgstr ""
+msgstr "1,1-DIFLUOROETANO (GAS REFRIGERANTE R 152a)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1959
 msgid "1,1-DIFLUOROETHYLENE (REFRIGERANT GAS R 1132a)"
-msgstr ""
+msgstr "1,1-DIFLUOROETILENO (GAS REFRIGERANTE R 1132a)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2377
 msgid "1,1-DIMETHOXYETHANE"
-msgstr ""
+msgstr "1,1-DIMETOXIETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2498
 msgid "1,2,3,6-TETRAHYDRO-BENZALDEHYDE"
-msgstr ""
+msgstr "1,2,3,6-TETRAHIDROBENZALDEHÍDO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2410
 msgid "1,2,3,6-TETRAHYDROPYRIDINE"
-msgstr ""
+msgstr "1,2,3,6-TETRAHIDROPIRIDINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3022
@@ -673,7 +674,7 @@ msgstr ""
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1133_F1_3_500ml_P001_1
 msgid "ADHESIVES containing flammable liquid"
-msgstr ""
+msgstr "ADHESIVOS contiene líquido inflamable"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1133_F1_3_5L_P001/R001_3
@@ -681,6 +682,9 @@ msgid ""
 "ADHESIVES containing flammable liquid (having a flash-point below 23 °C and "
 "viscous according to 2.2.3.1.4) (vapour pressure at 50 °C more than 110 kPa)"
 msgstr ""
+"ADHESIVOS contiene líquido inflamable (punto de inflamación inferior a 23 °C "
+"y viscoso, de conformidad con el apartado 2.2.3.1.4) (presión de vapor a 50 °"
+"C superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1133_F1_3_5L_P001/IBC02/R001_3
@@ -689,6 +693,9 @@ msgid ""
 "viscous according to 2.2.3.1.4) (vapour pressure at 50 °C not more than 110 "
 "kPa)"
 msgstr ""
+"ADHESIVOS contiene líquido inflamable (punto de inflamación inferior a 23 °C "
+"y viscoso, de conformidad con el apartado 2.2.3.1.4) (presión de vapor a 50 °"
+"C superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1133_F1_3_5L_P001/IBC03/LP01/R001_3
@@ -698,6 +705,8 @@ msgid ""
 "ADHESIVES containing flammable liquid (vapour pressure at 50 °C more than110 "
 "kPa)"
 msgstr ""
+"ADHESIVOS contiene líquido inflamable (presión de vapor a 50 °C superior a "
+"110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2205
@@ -3493,6 +3502,9 @@ msgid ""
 "industrial or other purposes such as vehicle under coating, drum or barrel "
 "lining)"
 msgstr ""
+"SOLUCIONES PARA REVESTIMIENTOS (incluye tratamientos superficiales o "
+"recubrimientos utilizados para fines industriales u otros, como el "
+"revestimiento de los bajos de vehículos, interior de bidones o barriles)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1139_F1_3_5L_P001/R001_3
@@ -3502,6 +3514,11 @@ msgid ""
 "lining) (having a flash-point below 23 °C and viscous according to "
 "2.2.3.1.4) (vapour pressure at 50 °C more than 110 kPa)"
 msgstr ""
+"SOLUCIONES PARA REVESTIMIENTOS (incluye tratamientos superficiales o "
+"recubrimientos utilizados para fines industriales u otros, como el "
+"revestimiento de los bajos de vehículos, interior de bidones o barriles)(con "
+"un punto de inflamación inferior a 23 °C y viscoso, de conformidad con el "
+"apartado 2.2.3.1.4) (presión de vapor a 50 °C superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1139_F1_3_5L_P001/IBC02/R001_3
@@ -3511,6 +3528,11 @@ msgid ""
 "lining) (having a flash-point below 23 °C and viscous according to "
 "2.2.3.1.4) (vapour pressure at 50 °C not more than 110 kPa)"
 msgstr ""
+"SOLUCIONES PARA REVESTIMIENTOS (incluye tratamientos superficiales o "
+"recubrimientos utilizados para fines industriales u otros, como el "
+"revestimiento de los bajos de vehículos, interior de bidones o barriles)(con "
+"un punto de inflamación inferior a 23 °C y viscoso, de conformidad con el "
+"apartado 2.2.3.1.4) (presión de vapor a 50 °C no superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1139_F1_3_640C_5L_P001_2
@@ -3519,6 +3541,10 @@ msgid ""
 "industrial or other purposes such as vehicle under coating, drum or barrel "
 "lining) (vapour pressure at 50 °C more than 110 kPa)"
 msgstr ""
+"SOLUCIONES PARA REVESTIMIENTOS (incluye tratamientos superficiales o "
+"recubrimientos utilizados para fines industriales u otros, como el "
+"revestimiento de los bajos de vehículos, interior de bidones o barriles)"
+"(presión de vapor a 50 °C superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1139_F1_3_640D_5L_P001/IBC02/R001_2
@@ -3527,6 +3553,10 @@ msgid ""
 "industrial or other purposes such as vehicle under coating, drum or barrel "
 "lining) (vapour pressure at 50 °C not more than 110 kPa)"
 msgstr ""
+"SOLUCIONES PARA REVESTIMIENTOS (incluye tratamientos superficiales o "
+"recubrimientos utilizados para fines industriales u otros, como el "
+"revestimiento de los bajos de vehículos, interior de bidones o barriles)"
+"(presión de vapor a 50 °C no superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2001
@@ -5262,12 +5292,12 @@ msgstr ""
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1171
 msgid "ETHYLENE GLYCOL MONOETHYL ETHER"
-msgstr ""
+msgstr "ÉTER MONOETÍLICO DE ETILENO GLICOL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1172
 msgid "ETHYLENE GLYCOL MONOETHYL ETHER ACETATE"
-msgstr ""
+msgstr "ACETATO DE ÉTER MONOETÍLICO DE ETILENO GLICOL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1188
@@ -5607,7 +5637,7 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1993_F1_3_274/601_5L_P001/IBC03/LP01/R001_3
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1993_F1_3_274_P001_1
 msgid "FLAMMABLE LIQUID, N.O.S."
-msgstr ""
+msgstr "LÍQUIDO INFLAMABLE, N.E.P."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1993_F1_3_274/601_5L_P001/R001_3
@@ -6762,7 +6792,7 @@ msgstr ""
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1219
 msgid "ISOPROPANOL (ISOPROPYL ALCOHOL)"
-msgstr ""
+msgstr "ISOPROPANOL (ALCOHOL ISOPROPÍLICO)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2403
@@ -9122,6 +9152,9 @@ msgid ""
 "liquid filler and liquid lacquer base) or PAINT RELATED MATERIAL (including "
 "paint thinning and reducing compound)"
 msgstr ""
+"PINTURA (incluye pintura, laca, esmalte, tinte, goma laca, barniz, "
+"pulimento, masilla líquida y base líquida para laca) o PRODUCTOS PARA LA "
+"PINTURA (incluye compuestos para diluir o rebajar pintura)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1263_F1_3_163/367/650_5L_P001/R001_3
@@ -9131,6 +9164,11 @@ msgid ""
 "paint thinning and reducing compound) (having a flash-point below 23 °C and "
 "viscous according to 2.2.3.1.4) (vapour pressure at 50 °C more than 110 kPa)"
 msgstr ""
+"PINTURA (incluye pintura, laca, esmalte, tinte, goma laca, barniz, "
+"pulimento, masilla líquida y base líquida para laca) o PRODUCTOS PARA LA "
+"PINTURA (incluye compuestos para diluir o rebajar pintura)(con un punto de "
+"inflamación inferior a 23 °C y viscoso, de conformidad con el apartado "
+"2.2.3.1.4) (presión de vapor a 50 °C superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1263_F1_3_163/367/650_5L_P001/IBC02/R001_3
@@ -9141,6 +9179,11 @@ msgid ""
 "viscous according to 2.2.3.1.4) (vapour pressure at 50 °C not more than 110 "
 "kPa)"
 msgstr ""
+"PINTURA (incluye pintura, laca, esmalte, tinte, goma laca, barniz, "
+"pulimento, masilla líquida y base líquida para laca) o PRODUCTOS PARA LA "
+"PINTURA (incluye compuestos para diluir o rebajar pintura)(con un punto de "
+"inflamación inferior a 23 °C y viscoso, de conformidad con el apartado "
+"2.2.3.1.4) (presión de vapor a 50 °C no superior a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1263_F1_3_163/367/640C/650_5L_P001_2
