@@ -18,12 +18,35 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 
 #. module: bc3_importer
+#: code:addons/bc3_importer/wizard/bc3_import_wizard.py:0
+#, python-format
+msgid "%(h)s (height)"
+msgstr ""
+
+#. module: bc3_importer
+#: code:addons/bc3_importer/wizard/bc3_import_wizard.py:0
+#, python-format
+msgid "%(l)s (length)"
+msgstr ""
+
+#. module: bc3_importer
+#: code:addons/bc3_importer/wizard/bc3_import_wizard.py:0
+#, python-format
+msgid "%(qty)g (units)"
+msgstr ""
+
+#. module: bc3_importer
+#: code:addons/bc3_importer/wizard/bc3_import_wizard.py:0
+#, python-format
+msgid "%(w)s (width)"
+msgstr ""
+
+#. module: bc3_importer
 #: model:res.groups,name:bc3_importer.group_bc3_manager
 msgid "Administrator"
 msgstr ""
 
 #. module: bc3_importer
-#: model:ir.module.category,name:bc3_importer.module_bc3_importer
 #: model:ir.module.category,name:bc3_importer.module_bc3_importer_bc3
 #: model:ir.ui.menu,name:bc3_importer.bc3_files
 #: model:ir.ui.menu,name:bc3_importer.bc3_menuitem
@@ -202,7 +225,7 @@ msgid "Child"
 msgstr "Hijo"
 
 #. module: bc3_importer
-#: model:ir.model.fields,field_description:bc3_importer.field_sale_order_line__code
+#: model:ir.model.fields,field_description:bc3_importer.field_sale_order_line__bc3_code
 msgid "Code"
 msgstr "Código"
 
@@ -241,11 +264,6 @@ msgstr "Creado el"
 #: model:ir.model.fields,field_description:bc3_importer.field_bc3_import_wizard__partner_id
 msgid "Customer/Vendor"
 msgstr "Cliente/Proveedor"
-
-#. module: bc3_importer
-#: model:ir.model.fields,field_description:bc3_importer.field_sale_order_line__date
-msgid "Date"
-msgstr "Fecha"
 
 #. module: bc3_importer
 #: model:ir.model.fields,field_description:bc3_importer.field_bc3_import_wizard__product_id
@@ -302,7 +320,7 @@ msgid "Header"
 msgstr "Encabezado"
 
 #. module: bc3_importer
-#: model:ir.module.category,description:bc3_importer.module_bc3_importer
+#: model:ir.module.category,description:bc3_importer.module_bc3_importer_bc3
 msgid "Helps you handle your bc3 files, versions and registers."
 msgstr "Le ayuda a manejar sus archivos bc3, versiones y registros."
 
@@ -414,6 +432,12 @@ msgstr ""
 #, python-format
 msgid "Parsing error, missing data"
 msgstr "Error de análisis sintáctico, faltan datos"
+
+#. module: bc3_importer
+#: code:addons/bc3_importer/wizard/bc3_import_wizard.py:0
+#, python-format
+msgid "Partial: %(partial).2f"
+msgstr ""
 
 #. module: bc3_importer
 #: model:ir.model.fields,field_description:bc3_importer.field_bc3_version_register_rule__primary_key
@@ -578,3 +602,6 @@ msgstr ""
 #: model:product.template,uom_name:bc3_importer.product_product_product_template_cubic_meter
 msgid "m³"
 msgstr ""
+
+#~ msgid "Date"
+#~ msgstr "Fecha"

@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-11-01 10:36 UTC** (elapsed 166s)
+Last build: **2026-11-04 20:58 UTC** (elapsed 91s)
 
 - Repos integrated: **140**
 - Canonical modules: **2916**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **125**
+- Skipped repos (no branch / no module): **126**
 
 ## Integrated repos
 
@@ -39,14 +39,14 @@ Last build: **2026-11-01 10:36 UTC** (elapsed 166s)
 | [connector-telephony](https://github.com/OCA/connector-telephony) | 10 | 5adf2c9 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [contract](https://github.com/OCA/contract) | 27 | c7cc2da 2026-07-27 mymage Translated using Weblate (Italian) |
 | [cooperative](https://github.com/OCA/cooperative) | 7 | f25d90f 2025-11-28 mymage Translated using Weblate (Italian) |
-| [credit-control](https://github.com/OCA/credit-control) | 11 | 2ba8861 2025-10-09 Betül Öğmen Translated using Weblate (Turkish) |
+| [credit-control](https://github.com/OCA/credit-control) | 11 | 6052288 2026-11-04 mymage Translated using Weblate (Italian) |
 | [crm](https://github.com/OCA/crm) | 19 | a32d29e 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | 4 | 31de6cc 2026-02-11 OCA-git-bot [BOT] post-merge updates |
 | [currency](https://github.com/OCA/currency) | 8 | bd03822 2026-10-01 mymage Translated using Weblate (Italian) |
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 6dea206 2025-02-02 oca-git-bot [IMP] update dotfiles |
 | [ddmrp](https://github.com/OCA/ddmrp) | 15 | d96263b 2026-07-03 OCA-git-bot Merge PR #632 into 14.0 |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 52 | 08acdc3 2026-08-31 OCA-git-bot [BOT] post-merge updates |
-| [dms](https://github.com/OCA/dms) | 4 | 4bf0065 2025-12-11 mymage Translated using Weblate (Italian) |
+| [dms](https://github.com/OCA/dms) | 4 | e1b65d9 2026-11-04 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 6 | fcfdc72 2025-10-13 mymage Translated using Weblate (Italian) |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | c3f5fba 2026-03-20 OCA-git-bot Merge PR #1113 into 14.0 |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 2b15a1d 2025-10-13 mymage Added translation using Weblate (Italian) |
@@ -141,7 +141,7 @@ Last build: **2026-11-01 10:36 UTC** (elapsed 166s)
 | [vertical-abbey](https://github.com/OCA/vertical-abbey) | 6 | 155ba4f 2025-08-19 OCA-git-bot [BOT] post-merge updates |
 | [vertical-agriculture](https://github.com/OCA/vertical-agriculture) | 3 | 18a9bba 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [vertical-association](https://github.com/OCA/vertical-association) | 10 | 43ecb0d 2025-10-13 mymage Added translation using Weblate (Italian) |
-| [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | 5109ebc 2025-02-09 oca-git-bot [IMP] update dotfiles |
+| [vertical-construction](https://github.com/OCA/vertical-construction) | 1 | ec8d043 2026-11-04 Weblate Update translation files |
 | [vertical-hotel](https://github.com/OCA/vertical-hotel) | 6 | 254b39a 2026-10-07 mymage Translated using Weblate (Italian) |
 | [vertical-rental](https://github.com/OCA/vertical-rental) | 6 | 4bbbb97 2025-10-15 mymage Translated using Weblate (Italian) |
 | [vertical-travel](https://github.com/OCA/vertical-travel) | 1 | 5f56d1e 2025-04-02 mymage Translated using Weblate (Italian) |
