@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-11-01 10:39 UTC
+Generated 2026-11-04 21:02 UTC
 
-Total skipped: **122**
+Total skipped: **123**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **46**
+Count: **47**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -29,6 +29,7 @@ Count: **46**
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | [16.0](https://github.com/OCA/oca-apps-store/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | [16.0](https://github.com/OCA/oca-ci/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | [16.0](https://github.com/OCA/oca-custom/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [oca-demo](https://github.com/OCA/oca-demo) | [16.0](https://github.com/OCA/oca-demo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | [16.0](https://github.com/OCA/oca-github-bot/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | [16.0](https://github.com/OCA/oca-port/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [oca-weblate-deployment](https://github.com/OCA/oca-weblate-deployment) | [16.0](https://github.com/OCA/oca-weblate-deployment/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |

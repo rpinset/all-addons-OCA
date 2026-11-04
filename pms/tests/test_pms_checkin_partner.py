@@ -157,6 +157,24 @@ class TestPmsCheckinPartner(TestPms):
         )
 
     @freeze_time("2012-01-14")
+    def test_onboard_reservation_clears_to_assign(self):
+        """
+        Check that the check-in confirms the room assignment: a reservation
+        flagged as pending assignment stops being so once a guest is on board
+        """
+        # ARRANGE
+        self.reservation_1.to_assign = True
+
+        # ACT
+        self.checkin1.action_on_board()
+
+        # ASSERT
+        self.assertFalse(
+            self.reservation_1.to_assign,
+            "the reservation is still pending assignment after the check-in",
+        )
+
+    @freeze_time("2012-01-14")
     def test_premature_checkin(self):
         """
         Check that cannot change checkin_partner state to onboard if
@@ -870,6 +888,42 @@ class TestPmsCheckinPartner(TestPms):
             checkin.partner_id,
             "Partner should have been created and associated with the checkin",
         )
+
+    def test_contact_data_saved_in_partner_created_by_checkin(self):
+        """
+        The email and mobile entered together with the data that creates
+        the partner are saved in the new partner
+        """
+        # ACT
+        checkin = self.env["pms.checkin.partner"].create(
+            {
+                "firstname": "Pepe",
+                "lastname": "Paz",
+                "email": "pepe@example.com",
+                "mobile": "666777888",
+                "reservation_id": self.reservation_1.id,
+            }
+        )
+
+        # ASSERT
+        self.assertEqual(checkin.partner_id.email, "pepe@example.com")
+        self.assertEqual(checkin.partner_id.mobile, "666777888")
+
+    def test_contact_data_saved_in_partner_created_on_checkin_write(self):
+        """
+        The mobile written together with the names that create the partner
+        is saved in the new partner
+        """
+        # ARRANGE
+        checkin = self.env["pms.checkin.partner"].create(
+            {"reservation_id": self.reservation_1.id}
+        )
+
+        # ACT
+        checkin.write({"firstname": "Pepe", "lastname": "Paz", "mobile": "666777888"})
+
+        # ASSERT
+        self.assertEqual(checkin.partner_id.mobile, "666777888")
 
     def test_add_partner_data_from_checkin(self):
         """
