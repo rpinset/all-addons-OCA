@@ -168,7 +168,7 @@
                 <filter
                     name="normal_orders"
                     string="Normal Orders"
-                    domain="[('order_type', '=', 'normal')]"
+                    domain="[('order_type', '=', 'order')]"
                     invisible="context.get('disable_order_type_filters', False)"
                 />
                 <filter

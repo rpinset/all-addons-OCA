@@ -513,8 +513,6 @@ msgstr "Transferencia interna"
 
 #. module: barcode_stock
 #. odoo-javascript
-#. odoo-python
-#: code:addons/barcode_stock/models/stock_picking.py:0
 #: code:addons/barcode_stock/static/src/js/screens/picking_list_screen.esm.js:0
 #: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
 msgid "Internal Transfers"
@@ -585,6 +583,14 @@ msgstr "Cargando..."
 #: code:addons/barcode_stock/static/src/xml/barcode_stock_templates.xml:0
 msgid "Location"
 msgstr "Ubicación"
+
+#. module: barcode_stock
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_move.py:0
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot %(lot)s has no stock in %(location)s."
+msgstr ""
 
 #. module: barcode_stock
 #. odoo-javascript
@@ -1241,8 +1247,8 @@ msgstr "El código de barras escaneado no forma parte del albarán actual."
 msgid ""
 "Scanned product doesn't match this move (%(expected)s expected, got %(got)s)"
 msgstr ""
-"El producto escaneado no coincide con este movimiento (se esperaba "
-"%(expected)s, se obtuvo %(got)s)"
+"El producto escaneado no coincide con este movimiento (se esperaba %"
+"(expected)s, se obtuvo %(got)s)"
 
 #. module: barcode_stock
 #. odoo-javascript
@@ -1616,4 +1622,3 @@ msgstr "Sí"
 #: code:addons/barcode_stock/static/src/js/components/picking_move_card.esm.js:0
 msgid "pending"
 msgstr "pendiente"
-

@@ -1,15 +1,15 @@
 {
     "name": "Sustainability Point of Sale",
     "category": "Sales/Point of Sale",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "installable": True,
     "application": False,
     "auto_install": False,
     "license": "LGPL-3",
-    "author": "MCO2, Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jacopobacci"],
     "development_status": "Production/Stable",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "depends": ["sustainability", "point_of_sale"],
     "assets": {
         "point_of_sale._assets_pos": [

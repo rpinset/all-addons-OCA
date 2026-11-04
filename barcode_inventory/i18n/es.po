@@ -1,0 +1,310 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 08:04+0000\n"
+"PO-Revision-Date: 2026-10-19 08:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid ""
+"%(name)s is already counted: set its serial number before counting another "
+"one."
+msgstr ""
+"%(name)s ya está contado: indique su número de serie antes de contar otro."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "%(name)s is not a storable product: it has no stock to count."
+msgstr ""
+"%(name)s no es un producto almacenable: no tiene existencias que contar."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Add Product"
+msgstr "Añadir producto"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Apply Adjustment ("
+msgstr "Aplicar ajuste ("
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Apply anyway"
+msgstr "Aplicar igualmente"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Applying..."
+msgstr "Aplicando..."
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "Barcode count: %(location)s"
+msgstr "Conteo por código de barras: %(location)s"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "COUNT — SCAN OR TYPE THE COUNTED QTY"
+msgstr "CONTEO — ESCANEE O ESCRIBA LA CANTIDAD CONTADA"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Count at least one product before applying."
+msgstr "Cuente al menos un producto antes de aplicar."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/tiles/inventory_menu_tiles.esm.js:0
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Inventory Adjustment"
+msgstr "Ajuste de inventario"
+
+#. module: barcode_inventory
+#: model:ir.model,name:barcode_inventory.model_stock_inventory
+msgid "Inventory Adjustment Group"
+msgstr "Grupo de ajuste de inventario"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Inventory adjusted: %(n)s product(s)."
+msgstr "Inventario ajustado: %(n)s producto(s)."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Loading locations..."
+msgstr "Cargando ubicaciones..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Loading products..."
+msgstr "Cargando productos..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Loading stock..."
+msgstr "Cargando existencias..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Lot / Serial number"
+msgstr "Número de lote / serie"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_location_screen.esm.js:0
+msgid "No internal location matches “%(code)s”."
+msgstr "Ninguna ubicación interna coincide con «%(code)s»."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "No internal locations found."
+msgstr "No se han encontrado ubicaciones internas."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_product_selector_screen.esm.js:0
+msgid "No product matches “%(code)s”."
+msgstr "Ningún producto coincide con «%(code)s»."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "No products found."
+msgstr "No se han encontrado productos."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "No stock here yet — scan or add a product."
+msgstr "Aún no hay existencias aquí — escanee o añada un producto."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "On hand:"
+msgstr "Disponible:"
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "One of the scanned products no longer exists."
+msgstr "Uno de los productos escaneados ya no existe."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Only inventory administrators can apply a count."
+msgstr "Solo los administradores de inventario pueden aplicar un conteo."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid ""
+"Product %(name)s is tracked: scan or type its lot/serial number before "
+"counting it."
+msgstr ""
+"El producto %(name)s se controla por lote/serie: escanee o escriba su número"
+" de lote/serie antes de contarlo."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "SELECT A LOCATION TO COUNT"
+msgstr "SELECCIONE UNA UBICACIÓN PARA CONTAR"
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "Scan at least one product to adjust before applying."
+msgstr "Escanee al menos un producto a ajustar antes de aplicar."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Scan or search a location..."
+msgstr "Escanee o busque una ubicación..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Scan or search a product..."
+msgstr "Escanee o busque un producto..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/xml/inventory_templates.xml:0
+msgid "Scan, or add a product..."
+msgstr "Escanee, o añada un producto..."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Serial number %(lot)s is already counted."
+msgstr "El número de serie %(lot)s ya está contado."
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "Serial number %(lot)s of %(name)s can only be counted once."
+msgstr "El número de serie %(lot)s de %(name)s solo se puede contar una vez."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Set the lot/serial for %(name)s before applying."
+msgstr "Indique el lote/serie de %(name)s antes de aplicar."
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid ""
+"Several lots/serial numbers of %(name)s match %(lot)s: type it exactly as it"
+" is written."
+msgstr ""
+"Varios lotes/números de serie de %(name)s coinciden con %(lot)s: escríbalo "
+"exactamente como está escrito."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Stock changed"
+msgstr "El stock ha cambiado"
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid ""
+"The count could not be applied: Odoo asks for a check of the adjustment. "
+"Count the location again."
+msgstr ""
+"No se ha podido aplicar el conteo: Odoo pide revisar el ajuste. Vuelva a "
+"contar la ubicación."
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "The counted quantity for %(name)s cannot be negative."
+msgstr "La cantidad contada de %(name)s no puede ser negativa."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "The counted quantity for %(name)s is not a number."
+msgstr "La cantidad contada de %(name)s no es un número."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "The quantity on the label of %(name)s cannot be read."
+msgstr "No se puede leer la cantidad de la etiqueta de %(name)s."
+
+#. module: barcode_inventory
+#. odoo-python
+#: code:addons/barcode_inventory/models/stock_inventory.py:0
+msgid "The selected location is no longer valid."
+msgstr "La ubicación seleccionada ya no es válida."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "The stock changed here while you counted:"
+msgstr "El stock de esta ubicación ha cambiado mientras contaba:"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Wait until the count is applied to scan again."
+msgstr "Espere a que se aplique el conteo para volver a escanear."
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "Your counted quantities will be set all the same. Apply the count?"
+msgstr "Se fijarán igualmente las cantidades contadas. ¿Aplicar el conteo?"
+
+#. module: barcode_inventory
+#. odoo-javascript
+#: code:addons/barcode_inventory/static/src/js/screens/inventory_count_screen.esm.js:0
+msgid "• %(what)s: %(shown)s %(uom)s when counting, %(now)s now"
+msgstr "• %(what)s: %(shown)s %(uom)s al contar, %(now)s ahora"

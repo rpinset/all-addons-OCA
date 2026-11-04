@@ -4,10 +4,11 @@
 {
     "name": "Sale Financial Risk Info",
     "summary": "Adds risk consumption info in sales orders.",
-    "version": "18.0.1.0.2",
+    "version": "18.0.1.1.1",
     "category": "Sales Management",
     "license": "AGPL-3",
     "author": "Tecnativa, Odoo Community Association (OCA)",
+    "maintainers": ["carlosdauden"],
     "website": "https://github.com/OCA/credit-control",
     "depends": ["sale", "account_financial_risk"],
     "data": ["views/res_partner_view.xml", "views/sale_order_view.xml"],

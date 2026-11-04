@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="barcode_inventory.InventoryLocationScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Inventory Adjustment</h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div t-if="!state.canApply" class="ilx-inv-no-access">
+                    <i class="fa fa-lock" />
+                    <span>Only inventory administrators can apply a count.</span>
+                </div>
+                <div t-else="" class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Scan or search a location..."
+                        t-model="state.search"
+                    />
+                </div>
+
+                <h2
+                    t-if="state.canApply"
+                    class="ilx-emp-v2-section-title"
+                >SELECT A LOCATION TO COUNT</h2>
+                <div t-if="state.canApply" class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading locations...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="filteredLocations" t-as="loc" t-key="loc.id">
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-on-click="() => this.selectLocation(loc)"
+                            >
+                                <div class="ilx-emp-v2-avatar-wrapper">
+                                    <div class="ilx-emp-v2-avatar">
+                                        <div
+                                            class="ilx-emp-v2-avatar-placeholder"
+                                            style="background: #EAEAEA; color: #4A2B4D; font-size: 1.2rem;"
+                                        >
+                                            <i class="fa fa-map-marker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="loc.display_name" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <i
+                                        class="fa fa-chevron-right ilx-emp-v2-icon-chevron"
+                                    />
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="filteredLocations.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No internal locations found.</div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+    <t t-name="barcode_inventory.InventoryCountScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">
+                    <t t-esc="state.locationName || 'Inventory Count'" />
+                </h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <!-- Tap to add a product by hand, like the back office. -->
+                <button
+                    class="ilx-emp-v2-search-box"
+                    style="width:100%; border:none; text-align:left; cursor:pointer;"
+                    t-att-disabled="state.applying"
+                    t-on-click="addProduct"
+                >
+                    <i class="fa fa-plus ilx-emp-v2-search-icon" />
+                    <span style="color:#8a8a8a;">Scan, or add a product...</span>
+                </button>
+
+                <h2 class="ilx-emp-v2-section-title">
+                    COUNT — SCAN OR TYPE THE COUNTED QTY
+                </h2>
+                <!-- Bottom padding so the last line can scroll clear of the
+                     floating camera button (fixed, bottom-right), which would
+                     otherwise sit on top of that line's delete button. -->
+                <div class="ilx-emp-v2-list" style="padding-bottom: 6rem;">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading stock...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="state.lines" t-as="line" t-key="line._id">
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-att-id="'inv-count-line-' + line._id"
+                                t-attf-style="transition: background-color .4s ease; {{ line._flash ? 'background-color:#fff5cc; box-shadow:0 0 0 2px #ffd54a inset;' : '' }}"
+                            >
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="line.product_name" />
+                                    </span>
+                                    <span class="ilx-emp-v2-role">
+                                        <t t-if="line.lot_fixed">
+                                            <i class="fa fa-tag" />
+                                            <t t-esc="line.lot_name" /> ·
+                                        </t>
+                                        On hand: <t
+                                        t-esc="formatQty(line.theoretical_qty)"
+                                    />
+                                        <t t-if="line.uom">
+                                        <t t-esc="line.uom" />
+                                    </t>
+                                    </span>
+                                    <t t-if="needsLotInput(line)">
+                                        <input
+                                            type="text"
+                                            class="ilx-emp-v2-search-input"
+                                            style="margin-top:6px; padding:6px 8px;"
+                                            placeholder="Lot / Serial number"
+                                            t-att-disabled="state.applying"
+                                            t-att-list="'lot-opts-' + line._id"
+                                            t-att-value="line.lot_name"
+                                            t-on-input="(ev) => this.setLotName(line, ev.target.value)"
+                                        />
+                                        <datalist t-att-id="'lot-opts-' + line._id">
+                                            <t
+                                                t-foreach="line.lot_options"
+                                                t-as="ln"
+                                                t-key="ln"
+                                            >
+                                                <option t-att-value="ln" />
+                                            </t>
+                                        </datalist>
+                                    </t>
+                                </div>
+                                <div
+                                    class="ilx-emp-v2-status"
+                                    style="display:flex; flex-direction:row; align-items:center; gap:10px;"
+                                >
+                                    <div
+                                        style="display:flex; flex-direction:column; align-items:center; gap:2px;"
+                                    >
+                                        <input
+                                            type="number"
+                                            inputmode="decimal"
+                                            min="0"
+                                            step="any"
+                                            t-att-disabled="state.applying"
+                                            class="ilx-emp-v2-search-input"
+                                            style="width:90px; text-align:center; padding:6px 8px;"
+                                            t-att-placeholder="formatQty(line.theoretical_qty)"
+                                            t-att-value="line.counted"
+                                            t-on-input="(ev) => this.setCounted(line, ev.target.value)"
+                                        />
+                                        <span
+                                            t-if="diff(line) !== null"
+                                            class="ilx-inv-diff"
+                                            t-att-class="diffClass(line)"
+                                            t-esc="formatDiff(diff(line))"
+                                        />
+                                    </div>
+                                    <button
+                                        class="btn btn-link p-0"
+                                        style="color:#b42318; font-size:1rem;"
+                                        t-att-disabled="state.applying"
+                                        t-on-click="() => this.removeLine(line)"
+                                    >
+                                        <i class="fa fa-trash" />
+                                    </button>
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="state.lines.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No stock here yet — scan or add a product.</div>
+                    </t>
+                </div>
+            </main>
+
+            <footer class="ilx-emp-v2-footer">
+                <button
+                    class="ilx-emp-v2-confirm-btn"
+                    t-on-click="apply"
+                    t-att-disabled="state.applying || countedLines.length === 0"
+                    t-att-style="(state.applying || countedLines.length === 0) ? 'opacity: 0.5; cursor: not-allowed;' : ''"
+                >
+                    <t t-if="state.applying">Applying...</t>
+                    <t t-else="">Apply Adjustment (<t
+                        t-esc="countedLines.length"
+                    />)</t>
+                </button>
+            </footer>
+        </div>
+    </t>
+
+    <t t-name="barcode_inventory.InventoryProductSelectorScreen">
+        <div class="ilx-emp-v2-screen">
+            <header class="ilx-emp-v2-header">
+                <button class="ilx-emp-v2-back-btn" t-on-click="goBack">
+                    <i class="fa fa-arrow-left" />
+                </button>
+                <h1 class="ilx-emp-v2-header-title">Add Product</h1>
+            </header>
+
+            <main class="ilx-emp-v2-main">
+                <div class="ilx-emp-v2-search-box">
+                    <i class="fa fa-search ilx-emp-v2-search-icon" />
+                    <input
+                        type="text"
+                        class="ilx-emp-v2-search-input"
+                        placeholder="Scan or search a product..."
+                        t-att-value="state.search"
+                        t-on-input="onSearchInput"
+                    />
+                </div>
+
+                <h2 class="ilx-emp-v2-section-title">PRODUCTS</h2>
+                <div class="ilx-emp-v2-list">
+                    <t t-if="state.loading">
+                        <div class="text-center p-4">Loading products...</div>
+                    </t>
+                    <t t-else="">
+                        <t t-foreach="state.results" t-as="prod" t-key="prod.id">
+                            <div
+                                class="ilx-emp-v2-card"
+                                t-on-click="() => this.pickProduct(prod)"
+                            >
+                                <div class="ilx-emp-v2-info">
+                                    <span class="ilx-emp-v2-name">
+                                        <t t-esc="prod.display_name" />
+                                    </span>
+                                </div>
+                                <div class="ilx-emp-v2-status">
+                                    <i
+                                        class="fa fa-plus-circle ilx-emp-v2-icon-chevron"
+                                    />
+                                </div>
+                            </div>
+                        </t>
+                        <div
+                            t-if="state.results.length === 0"
+                            class="text-center p-4"
+                            style="color: #666;"
+                        >No products found.</div>
+                    </t>
+                </div>
+            </main>
+        </div>
+    </t>
+
+</templates>

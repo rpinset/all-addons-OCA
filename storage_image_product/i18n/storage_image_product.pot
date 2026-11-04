@@ -24,12 +24,6 @@ msgid "# of Products"
 msgstr ""
 
 #. module: storage_image_product
-#: model:ir.model.fields,field_description:storage_image_product.field_category_image_relation__active
-#: model:ir.model.fields,field_description:storage_image_product.field_product_image_relation__active
-msgid "Active"
-msgstr ""
-
-#. module: storage_image_product
 #: model:ir.model.fields,field_description:storage_image_product.field_category_image_relation__image_alt_name
 #: model:ir.model.fields,field_description:storage_image_product.field_product_image_relation__image_alt_name
 msgid "Alt Image name"
@@ -116,6 +110,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:storage_image_product.field_product_category__image_ids
 #: model:ir.model.fields,field_description:storage_image_product.field_product_image_relation__image_id
 msgid "Image"
+msgstr ""
+
+#. module: storage_image_product
+#: model:ir.model.fields,field_description:storage_image_product.field_category_image_relation__image_active
+#: model:ir.model.fields,field_description:storage_image_product.field_product_image_relation__image_active
+msgid "Image Active"
 msgstr ""
 
 #. module: storage_image_product
@@ -291,4 +291,9 @@ msgstr ""
 #. module: storage_image_product
 #: model:ir.model.fields,field_description:storage_image_product.field_product_product__variant_image_small_url
 msgid "Variant main small image URL"
+msgstr ""
+
+#. module: storage_image_product
+#: model:ir.model,name:storage_image_product.model_storage_file_replace
+msgid "Wizard template allowing to replace a storage.file"
 msgstr ""

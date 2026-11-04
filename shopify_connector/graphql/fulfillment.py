@@ -28,7 +28,7 @@ ORDER_FULFILLMENT_ORDERS_QUERY = (
     "query ShopifyOrderFulfillmentOrders($id: ID!) {"
     " order(id: $id) { id fulfillmentOrders(first: 250) { nodes {"
     + FULFILLMENT_ORDER_FIELDS
-    + "} } } }"
+    + "} } fulfillments(first: 250) { id } } }"
 )
 
 FULFILLMENT_BY_ID_QUERY = """

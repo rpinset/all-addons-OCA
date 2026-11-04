@@ -13,6 +13,7 @@ from . import test_actions_inventory
 
 from . import test_single_pack_transfer
 from . import test_single_pack_transfer_putaway
+from . import test_single_pack_transfer_jump_to_menu
 from . import test_cluster_picking_base
 from . import test_cluster_picking_batch
 from . import test_cluster_picking_select
@@ -85,6 +86,7 @@ from . import test_zone_picking_unload_single
 from . import test_zone_picking_unload_all
 from . import test_zone_picking_unload_set_destination
 from . import test_zone_picking_require_destination_package
+from . import test_zone_picking_jump_to_menu
 from . import test_misc
 from . import test_move_action_assign
 from . import test_scan_anything

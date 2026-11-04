@@ -2,9 +2,11 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import freezegun
+from lxml import etree
 
 from odoo import Command
 from odoo.tests.common import RecordCapturer
+from odoo.tools.safe_eval import safe_eval
 
 from .common import SaleOrderBlanketOrderCase
 
@@ -445,3 +447,20 @@ class TestSaleNormalOrder(SaleOrderBlanketOrderCase):
                 }
             ],
         )
+
+    def test_search_filters(self):
+        order = self.env["sale.order"].create({"partner_id": self.partner.id})
+        arch = self.env["sale.order"].get_views([(False, "search")])["views"]["search"][
+            "arch"
+        ]
+        filters = {
+            node.get("name"): safe_eval(node.get("domain"))
+            for node in etree.fromstring(arch).iter("filter")
+            if node.get("name") in ("normal_orders", "blanket_orders")
+        }
+        normal_orders = self.env["sale.order"].search(filters["normal_orders"])
+        self.assertIn(order, normal_orders)
+        self.assertNotIn(self.blanket_so, normal_orders)
+        blanket_orders = self.env["sale.order"].search(filters["blanket_orders"])
+        self.assertIn(self.blanket_so, blanket_orders)
+        self.assertNotIn(order, blanket_orders)

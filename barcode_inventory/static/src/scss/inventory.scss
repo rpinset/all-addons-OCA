@@ -1,0 +1,33 @@
+// Count screens. Reuses the shared design tokens (--ilx-*) defined by
+// barcode_scanner so the look matches the rest of the suite.
+
+// Difference between the counted quantity and the stock, under the count.
+.ilx-inv-diff {
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    &.ilx-inv-diff-up {
+        color: var(--ilx-success);
+    }
+
+    &.ilx-inv-diff-down {
+        color: var(--ilx-error);
+    }
+
+    &.ilx-inv-diff-none {
+        color: var(--ilx-on-surface-variant);
+        font-weight: normal;
+    }
+}
+
+// Shown instead of the locations to an operator who cannot apply a count.
+.ilx-inv-no-access {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--ilx-warning-bg);
+    color: var(--ilx-on-surface);
+    font-size: 0.9rem;
+}

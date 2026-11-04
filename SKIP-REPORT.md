@@ -1,8 +1,8 @@
 # Skipped repos — branch `18.0`
 
-Generated 2026-11-01 10:40 UTC
+Generated 2026-11-04 21:05 UTC
 
-Total skipped: **107**
+Total skipped: **108**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -43,7 +43,7 @@ Count: **30**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **77**
+Count: **78**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -99,6 +99,7 @@ Count: **77**
 | [l10n-uruguay](https://github.com/OCA/l10n-uruguay) | [18.0](https://github.com/OCA/l10n-uruguay/tree/18.0) | No directory with __manifest__.py at repo root |
 | [l10n-vietnam](https://github.com/OCA/l10n-vietnam) | [18.0](https://github.com/OCA/l10n-vietnam/tree/18.0) | No directory with __manifest__.py at repo root |
 | [mis-builder-contrib](https://github.com/OCA/mis-builder-contrib) | [18.0](https://github.com/OCA/mis-builder-contrib/tree/18.0) | No directory with __manifest__.py at repo root |
+| [oca-demo](https://github.com/OCA/oca-demo) | [18.0](https://github.com/OCA/oca-demo/tree/18.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [18.0](https://github.com/OCA/program/tree/18.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [18.0](https://github.com/OCA/project-agile/tree/18.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [18.0](https://github.com/OCA/resource/tree/18.0) | No directory with __manifest__.py at repo root |

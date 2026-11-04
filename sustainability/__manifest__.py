@@ -3,12 +3,12 @@
 
 {
     "name": "Sustainability",
-    "version": "18.0.1.12.2",
-    "author": "MCO2, Open Net Sàrl",
+    "version": "18.0.1.12.4",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
     "category": "Accounting/Sustainability",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "summary": """Base module to track CO2 equivalent in accounting, Sustainability,
      GHG Protocol, CSRD Directive, BEGES, ADEME, ISO format, Action Plan, Emission Factors,
      carbon CO2 footprint computation, Analytical accounting, Decarbonization

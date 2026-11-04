@@ -3,7 +3,7 @@
 
 {
     "name": "Petty Cash",
-    "version": "18.0.1.2.0",
+    "version": "18.0.1.3.1",
     "category": "Human Resources",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "license": "AGPL-3",
@@ -16,6 +16,7 @@
         "views/hr_expense_sheet_views.xml",
         "views/hr_expense_views.xml",
         "views/petty_cash_views.xml",
+        "views/petty_cash_transaction_views.xml",
     ],
     "installable": True,
 }

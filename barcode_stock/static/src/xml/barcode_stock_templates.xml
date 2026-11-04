@@ -787,6 +787,14 @@
                                         </t>
                                     </select>
                                 </div>
+                                <div
+                                    t-if="missingLotMessage"
+                                    class="text-danger small mt-1"
+                                    role="alert"
+                                >
+                                    <i class="fa fa-exclamation-triangle me-1" />
+                                    <t t-esc="missingLotMessage" />
+                                </div>
                             </t>
                             <t t-if="canCreateLot and state.mode === 'create_lot'">
                                 <div class="ilx-mw-v2-input-box mb-2">
@@ -857,8 +865,8 @@
                                     <i class="fa fa-map-marker" />
                                 </div>
                                 <div class="ilx-tx-v2-text">
-                                    <t t-if="state.sourceLocation">
-                                        <t t-esc="state.sourceLocation.display_name" />
+                                    <t t-if="shownSourceLocation">
+                                        <t t-esc="shownSourceLocation.display_name" />
                                     </t>
                                     <t t-else="">Select source</t>
                                 </div>
@@ -877,8 +885,8 @@
                                     <i class="fa fa-sign-in" />
                                 </div>
                                 <div class="ilx-tx-v2-text">
-                                    <t t-if="state.destLocation">
-                                        <t t-esc="state.destLocation.display_name" />
+                                    <t t-if="shownDestLocation">
+                                        <t t-esc="shownDestLocation.display_name" />
                                     </t>
                                     <t t-else="">Select destination</t>
                                 </div>

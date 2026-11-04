@@ -57,7 +57,7 @@ export class BarcodeScannerSync {
             lot = this.state.lotsById[payload.lotId] || null;
         }
 
-        const moveLine = this.state.stageMoveLine({
+        const moveLine = this.state.stagePick({
             moveId: payload.moveId,
             moveLineId: payload.moveLineId,
             pickingId: payload.pickingId,

@@ -1,11 +1,11 @@
 {
     "name": "Sustainability Inventory",
     "category": "Inventory/Inventory",
-    "version": "18.0.1.2.1",
-    "author": "MCO2, Open Net Sàrl",
+    "version": "18.0.1.2.3",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jacopobacci"],
     "development_status": "Production/Stable",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "depends": ["sustainability", "stock", "stock_delivery"],
     "data": [
         "security/ir.model.access.csv",

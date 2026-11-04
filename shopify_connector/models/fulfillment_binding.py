@@ -351,8 +351,22 @@ class ShopifyInstanceFulfillmentConfiguration(models.Model):
         string="Validate Deliveries from Webhooks",
         default=False,
         help=(
-            "Validate matching Odoo deliveries when an external Shopify "
-            "fulfillment webhook is received. Disabled is log-only."
+            "When Shopify reports a fulfillment made outside Odoo, validate "
+            "the fulfilled items on the order's open deliveries and copy the "
+            "carrier and tracking number. When disabled, the fulfillment is "
+            "imported with its tracking number, but the deliveries are left "
+            "as they are, to be validated by hand."
+        ),
+    )
+    fulfillment_validate_unreserved = fields.Boolean(
+        string="Ship Unreserved Stock",
+        default=False,
+        help=(
+            "When validating a delivery from a Shopify fulfillment, ship the "
+            "fulfilled items even when Odoo could not reserve their stock. "
+            "When disabled, the fulfillment goes to error until the stock is "
+            "reserved. Products tracked by lot or serial number always need "
+            "reserved stock."
         ),
     )
     carrier_mapping_ids = fields.One2many(

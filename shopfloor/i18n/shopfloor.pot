@@ -545,6 +545,16 @@ msgid "Is Shopfloor Created"
 msgstr ""
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__jump_to_zone_picking_unload_all_menu_id
+msgid "Jump after Unload All"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__jump_to_single_pack_transfer_validate_menu_id
+msgid "Jump after Validate"
+msgstr ""
+
+#. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/completion_info.py:0
 msgid ""
@@ -658,6 +668,11 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/inventory.py:0
 msgid "Lot: "
+msgstr ""
+
+#. module: shopfloor
+#: model_terms:ir.ui.view,arch_db:shopfloor.shopfloor_menu_form_view
+msgid "Menu Jumping"
 msgstr ""
 
 #. module: shopfloor

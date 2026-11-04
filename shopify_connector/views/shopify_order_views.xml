@@ -221,6 +221,7 @@
                                 domain="['|', ('company_id', '=', False),
                                             ('company_id', '=', company_id)]"
                             />
+                            <field name="order_use_shopify_name" />
                         </group>
                         <group string="State and Risk">
                             <field name="order_confirmation_policy" />

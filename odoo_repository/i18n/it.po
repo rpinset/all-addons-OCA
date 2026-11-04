@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-28 16:46+0000\n"
+"PO-Revision-Date: 2026-11-04 13:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -775,6 +775,16 @@ msgstr "Livello dipendenze non standard"
 #: model:ir.model.fields,field_description:odoo_repository.field_res_config_settings__config_odoo_repository_oca_blacklist
 msgid "OCA Repository Blacklist"
 msgstr "Elenco dei repository OCA da escludere"
+
+#. module: odoo_repository
+#. odoo-python
+#: code:addons/odoo_repository/components/oca_repository_synchronizer.py:0
+msgid ""
+"OCA repository %(old_name)s was renamed to %(new_name)s on GitHub, but a "
+"record already exists under the new name."
+msgstr ""
+"Il repository OCA %(old_name)s è stato rinominato in %(new_name)s su GitHub, "
+"ma esiste già un record con il nuovo nome."
 
 #. module: odoo_repository
 #: model_terms:ir.ui.view,arch_db:odoo_repository.res_config_settings_view_form

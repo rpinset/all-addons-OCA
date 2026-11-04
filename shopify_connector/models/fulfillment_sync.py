@@ -7,6 +7,9 @@ from datetime import datetime, timezone
 from odoo import fields, models
 from odoo.exceptions import UserError
 from odoo.fields import Command
+from odoo.tools import float_compare, float_is_zero, float_round
+
+from odoo.addons.queue_job.exception import RetryableJobError
 
 from ..graphql.fulfillment import (
     FULFILLMENT_BY_ID_QUERY,
@@ -24,6 +27,10 @@ from ..lib.fulfillment import (
 )
 from ..lib.order import shopify_gid
 from .webhook_event import WEBHOOK_HANDLERS
+
+# Delivery steps are validated one at a time, because Odoo creates each step
+# when the previous one is done. Stop after this many in case a route loops back.
+MAX_DELIVERY_STEPS = 10
 
 
 class ShopifyFulfillmentError(UserError):
@@ -133,7 +140,34 @@ class ShopifyOrderFulfillmentSync(models.Model):
             ),
             record=self,
         )
+        self._queue_missing_fulfillments(order)
         return imported.ids
+
+    def _queue_missing_fulfillments(self, order):
+        fulfillment_ids = [
+            str(item["id"])
+            for item in _nodes(order.get("fulfillments"))
+            if item.get("id")
+        ]
+        known = set(
+            self.env["shopify.fulfillment"]
+            .search(
+                [
+                    ("instance_id", "=", self.instance_id.id),
+                    ("shopify_id", "in", fulfillment_ids),
+                ]
+            )
+            .mapped("shopify_id")
+        )
+        for fulfillment_id in fulfillment_ids:
+            if fulfillment_id in known:
+                continue
+            self.env["shopify.fulfillment"].with_delay(
+                description=self.env._("Import Shopify fulfillment %s", fulfillment_id),
+                identity_key=(
+                    f"shopify.fulfillment.import.{self.instance_id.id}.{fulfillment_id}"
+                ),
+            )._job_import_from_shopify(self.instance_id.id, fulfillment_id)
 
     def _upsert_fulfillment_order(self, payload):
         fulfillment_order_id = str(payload.get("id") or "")
@@ -780,6 +814,17 @@ class ShopifyExternalFulfillmentImport(models.Model):
         instance = self.env["shopify.instance"].browse(instance_id).exists()
         if not instance or not instance.active:
             return False
+        self.env.cr.execute(
+            "SELECT pg_try_advisory_xact_lock(%s, hashtext(%s))",
+            (instance.id, fulfillment_id),
+        )
+        if not self.env.cr.fetchone()[0]:
+            raise RetryableJobError(
+                self.env._(
+                    "Another job is importing Shopify fulfillment %s.", fulfillment_id
+                ),
+                seconds=5,
+            )
         webhook_payload = webhook_payload or {}
         try:
             data = instance._shopify_client().execute(
@@ -804,11 +849,17 @@ class ShopifyExternalFulfillmentImport(models.Model):
             limit=1,
         )
         if not order_binding:
-            raise ShopifyFulfillmentError(
-                self.env._(
-                    "No synchronized Odoo order matches Shopify order %s.", order_id
-                )
+            instance._write_log(
+                entity="fulfillment",
+                direction="import",
+                level="info",
+                message=self.env._(
+                    "Shopify order %s is not imported yet. Its fulfillment is "
+                    "applied when the order is imported.",
+                    order_id,
+                ),
             )
+            return False
         binding = self.search(
             [
                 ("instance_id", "=", instance.id),
@@ -911,6 +962,11 @@ class ShopifyExternalFulfillmentImport(models.Model):
         self.ensure_one()
         if self.fulfillment_status != "SUCCESS":
             return False
+        if self.picking_id:
+            # Deliveries are validated only once; later updates of the
+            # fulfillment only refresh the carrier and tracking.
+            self._apply_external_tracking(self.picking_id, payload, webhook_payload)
+            return False
         quantities = defaultdict(int)
         for line in _nodes(payload.get("fulfillmentLineItems")):
             line_id = str((line.get("lineItem") or {}).get("id") or "")
@@ -933,12 +989,6 @@ class ShopifyExternalFulfillmentImport(models.Model):
                 record=self,
             )
             return False
-        pickings = self.order_binding_id.odoo_id.picking_ids.filtered(
-            lambda item: (
-                item.state not in ("done", "cancel")
-                and item.picking_type_id.code == "outgoing"
-            )
-        )
         location = self.env["shopify.location"].search(
             [
                 ("instance_id", "=", self.instance_id.id),
@@ -946,67 +996,384 @@ class ShopifyExternalFulfillmentImport(models.Model):
             ],
             limit=1,
         )
-        if location:
-            at_location = pickings.filtered(
-                lambda item: (
-                    location.odoo_location_id
-                    and location.odoo_location_id.parent_path
-                    in item.location_id.parent_path
+        try:
+            # Separate savepoints: the order stays confirmed even when its
+            # deliveries cannot be validated yet.
+            with self.env.cr.savepoint():
+                self._confirm_external_order()
+            with self.env.cr.savepoint():
+                pickings = self._validate_external_deliveries(
+                    quantities, location.odoo_location_id, payload, webhook_payload
                 )
+        except UserError as error:
+            message = self.env._(
+                "Shopify fulfillment %(fulfillment)s did not validate the Odoo "
+                "delivery: %(error)s",
+                fulfillment=self.shopify_id,
+                error=str(error),
             )
-            pickings = at_location or pickings
-        picking = pickings[:1]
-        if not picking or picking.shopify_risk_hold:
+            self.write({"state": "error", "error_message": message})
             self.instance_id._write_log(
                 entity="fulfillment",
                 direction="import",
-                level="warning",
-                message=self.env._(
-                    "No eligible Odoo delivery could be validated for external "
-                    "fulfillment %s.",
-                    self.shopify_id,
-                ),
+                level="error",
+                message=message,
                 record=self,
             )
             return False
-        picking.action_assign()
-        changed = False
-        partial = False
+        if not pickings:
+            return False
+        self.picking_id = pickings[:1]
+        self.instance_id._write_log(
+            entity="fulfillment",
+            direction="import",
+            level="info",
+            message=self.env._(
+                "Validated Odoo delivery %(pickings)s from Shopify fulfillment "
+                "%(fulfillment)s.",
+                pickings=", ".join(pickings.mapped("name")),
+                fulfillment=self.shopify_id,
+            ),
+            record=self,
+        )
+        return True
+
+    def _confirm_external_order(self):
+        sale_order = self.order_binding_id.odoo_id
+        if sale_order.state not in ("draft", "sent"):
+            return
+        # Shopify shipped the items, so the quotation is confirmed to get its
+        # deliveries, which keep the risk hold of the order.
+        sale_order.action_confirm()
+        if sale_order.shopify_risk_hold:
+            sale_order.picking_ids.write({"shopify_risk_hold": True})
+        self.instance_id._write_log(
+            entity="fulfillment",
+            direction="import",
+            level="info",
+            message=self.env._(
+                "Confirmed sale order %(order)s because Shopify fulfillment "
+                "%(fulfillment)s shipped its items.",
+                order=sale_order.name,
+                fulfillment=self.shopify_id,
+            ),
+            record=self,
+        )
+
+    def _validate_external_deliveries(
+        self, quantities, location, payload, webhook_payload
+    ):
+        # Quantity to ship per sale line and product: a kit line needs its
+        # components, not the kit product.
+        needed = {}
+        sale_lines = self.env["sale.order.line"]
         for line_id, quantity in quantities.items():
             line_binding = self.order_binding_id.line_binding_ids.filtered(
                 lambda item, line_id=line_id: item.shopify_id == line_id
             )[:1]
-            move = picking.move_ids.filtered(
-                lambda item, line_binding=line_binding: (
-                    item.sale_line_id == line_binding.odoo_id
-                )
-            )[:1]
-            if not move:
+            sale_line = line_binding.odoo_id
+            # Services, and lines without an Odoo sale line, ship nothing.
+            if not quantity or sale_line.product_id.type != "consu":
                 continue
-            done_quantity = min(quantity, int(move.product_uom_qty))
-            move.quantity = done_quantity
-            partial |= done_quantity < move.product_uom_qty
-            changed = True
-        if not changed:
-            return False
-        picking = picking.with_context(skip_shopify_fulfillment_push=True)
-        if partial:
-            picking._action_done()
-        else:
-            picking.button_validate()
-        if picking.state == "done":
-            self.picking_id = picking
-            return True
-        self.instance_id._write_log(
-            entity="fulfillment",
-            direction="import",
-            level="warning",
-            message=self.env._(
-                "Odoo delivery %s still requires manual validation.", picking.name
-            ),
-            record=self,
+            sale_lines |= sale_line
+            for product, product_quantity in self._external_line_needs(
+                sale_line, quantity
+            ).items():
+                needed[(sale_line, product)] = product_quantity
+        if not sale_lines:
+            return self.env["stock.picking"]
+        # Odoo creates each delivery step when the previous one is done, so the
+        # last step may not exist yet, or may not hold all the items. Each pass
+        # validates the earlier steps for the items that the last step does not
+        # have reserved, until it has them all. Steps already done in Odoo,
+        # such as a pick validated by hand, are skipped.
+        for _step in range(MAX_DELIVERY_STEPS):
+            allocation = self._external_allocation(needed, "outgoing", location)
+            if allocation:
+                self._external_moves(allocation).picking_id.action_assign()
+            upstream = self._external_allocation(
+                self._external_missing(needed, allocation), "internal", location
+            )
+            if not upstream:
+                break
+            self._ship_external_moves(upstream)
+        allocation = self._external_allocation(needed, "outgoing", location)
+        if not allocation:
+            # Items already delivered by hand in Odoo are not an error.
+            moves = self._external_chain_moves(sale_lines)
+            if moves and all(move.state == "done" for move in moves):
+                self.instance_id._write_log(
+                    entity="fulfillment",
+                    direction="import",
+                    level="info",
+                    message=self.env._(
+                        "The items of Shopify fulfillment %s were already "
+                        "delivered in Odoo.",
+                        self.shopify_id,
+                    ),
+                    record=self,
+                )
+                return self.env["stock.picking"]
+            raise ShopifyFulfillmentError(
+                self.env._(
+                    "No open Odoo delivery contains its items. Check the "
+                    "deliveries of the sale order, then retry."
+                )
+            )
+        pickings = self._external_moves(allocation).picking_id
+        # Copy the tracking first: when a delivery without tracking number is
+        # validated, Odoo books a shipment with an integrated carrier.
+        self._apply_external_tracking(pickings, payload, webhook_payload)
+        self._ship_external_moves(allocation)
+        return pickings.sorted(lambda picking: (picking.date_done, picking.id))
+
+    def _external_line_needs(self, sale_line, quantity):
+        ordered = sale_line.product_uom_qty
+        if float_is_zero(ordered, precision_rounding=sale_line.product_uom.rounding):
+            return {}
+        moves = self._external_chain_moves(sale_line)
+        # The first step holds the whole quantity of each product, even once
+        # done, so a kit line gets the share of each of its components.
+        first_moves = moves.filtered(lambda move: not move.move_orig_ids & moves)
+        needs = {}
+        for product in first_moves.product_id:
+            total = sum(
+                first_moves.filtered(
+                    lambda move, product=product: move.product_id == product
+                ).mapped("product_qty")
+            )
+            needs[product] = float_round(
+                quantity * total / ordered,
+                precision_rounding=product.uom_id.rounding,
+            )
+        return needs
+
+    def _external_chain_moves(self, sale_lines):
+        # The delivery and its pick and pack steps, without returns or scraps.
+        return sale_lines.move_ids.filtered(
+            lambda move: (
+                move.state != "cancel"
+                and not move.origin_returned_move_id
+                and not move.scrapped
+                and (
+                    move.picking_code == "outgoing"
+                    or (
+                        move.picking_code == "internal"
+                        and move.location_final_id.usage == "customer"
+                    )
+                )
+            )
         )
-        return False
+
+    def _external_allocation(self, needed, picking_code, location):
+        def sort_key(move):
+            # Moves whose previous step is done first, then the moves at the
+            # fulfillment location, then the oldest transfers.
+            at_location = bool(
+                location.parent_path
+                and (move.location_id.parent_path or "").startswith(
+                    location.parent_path
+                )
+            )
+            advanced = any(previous.state == "done" for previous in move.move_orig_ids)
+            return (
+                not advanced,
+                not at_location,
+                move.picking_id.scheduled_date or datetime.max,
+                move.picking_id.id,
+                move.id,
+            )
+
+        allocation = {}
+        for (sale_line, product), quantity in needed.items():
+            rounding = product.uom_id.rounding
+            moves = (
+                self._external_chain_moves(sale_line)
+                .filtered(
+                    lambda move, product=product: (
+                        move.product_id == product
+                        and move.state != "done"
+                        and move.picking_id
+                        and move.picking_code == picking_code
+                    )
+                )
+                .sorted(sort_key)
+            )
+            for move in moves:
+                if float_compare(quantity, 0, precision_rounding=rounding) <= 0:
+                    break
+                taken = min(quantity, move.product_qty - allocation.get(move, 0.0))
+                if float_compare(taken, 0, precision_rounding=rounding) > 0:
+                    allocation[move] = allocation.get(move, 0.0) + taken
+                    quantity = float_round(
+                        quantity - taken, precision_rounding=rounding
+                    )
+        return allocation
+
+    def _external_missing(self, needed, allocation):
+        # The quantity the allocated moves do not have reserved yet is still
+        # in an earlier step.
+        missing = {}
+        for (sale_line, product), quantity in needed.items():
+            covered = sum(
+                min(self._external_reserved_quantity(move), allocated)
+                for move, allocated in allocation.items()
+                if move.sale_line_id == sale_line and move.product_id == product
+            )
+            rest = float_round(
+                quantity - covered, precision_rounding=product.uom_id.rounding
+            )
+            if float_compare(rest, 0, precision_rounding=product.uom_id.rounding) > 0:
+                missing[(sale_line, product)] = rest
+        return missing
+
+    def _external_moves(self, allocation):
+        return self.env["stock.move"].browse([move.id for move in allocation])
+
+    def _external_reserved_quantity(self, move):
+        return move.product_uom._compute_quantity(move.quantity, move.product_id.uom_id)
+
+    def _ship_external_moves(self, allocation):
+        pickings = self._external_moves(allocation).picking_id
+        pickings.action_assign()
+        # Without Ship Unreserved Stock, the fulfilled items must be reserved,
+        # so lots and serial numbers come from the reservation.
+        if not self.instance_id.fulfillment_validate_unreserved:
+            for move, quantity in allocation.items():
+                if (
+                    float_compare(
+                        self._external_reserved_quantity(move),
+                        quantity,
+                        precision_rounding=move.product_id.uom_id.rounding,
+                    )
+                    < 0
+                ):
+                    raise ShopifyFulfillmentError(
+                        self.env._(
+                            "Odoo could not reserve %(product)s on %(transfer)s. "
+                            "Add the stock, or enable Ship Unreserved Stock on "
+                            "the Shopify instance, then retry.",
+                            product=move.product_id.display_name,
+                            transfer=move.picking_id.name,
+                        )
+                    )
+        # Ship only the fulfilled quantities; with skip_backorder, the rest of
+        # each transfer goes to a backorder without asking.
+        for move in pickings.move_ids.filtered(
+            lambda item: item.state not in ("done", "cancel")
+        ):
+            quantity = allocation.get(move)
+            if quantity:
+                move.quantity = move.product_id.uom_id._compute_quantity(
+                    quantity, move.product_uom
+                )
+                move.picked = True
+            else:
+                move.picked = False
+        # Shopify already has this fulfillment, so it is not sent back.
+        pickings.with_context(
+            skip_backorder=True,
+            skip_sms=True,
+            skip_shopify_fulfillment_push=True,
+        ).button_validate()
+        not_done = pickings.filtered(lambda picking: picking.state != "done")
+        if not_done:
+            raise ShopifyFulfillmentError(
+                self.env._(
+                    "Odoo transfer %s could not be validated.",
+                    ", ".join(not_done.mapped("name")),
+                )
+            )
+
+    def _external_tracking_values(self, payload, webhook_payload):
+        tracking = payload.get("trackingInfo") or []
+        if isinstance(tracking, dict):
+            tracking = [tracking]
+        tracking = [item for item in tracking if isinstance(item, dict)]
+        # A fulfillment can have one tracking number per package; all are kept.
+        numbers = [str(item.get("number") or "").strip() for item in tracking]
+        company = next(
+            (
+                str(item["company"]).strip()
+                for item in tracking
+                if str(item.get("company") or "").strip()
+            ),
+            "",
+        )
+        if not any(numbers):
+            # Fall back on the webhook payload when the fulfillment has none.
+            numbers = [
+                str(number).strip()
+                for number in (
+                    webhook_payload.get("tracking_numbers")
+                    or [webhook_payload.get("tracking_number")]
+                )
+                if number
+            ]
+        company = company or str(webhook_payload.get("tracking_company") or "").strip()
+        values = {}
+        numbers = list(dict.fromkeys(number for number in numbers if number))
+        if numbers:
+            values["carrier_tracking_ref"] = ",".join(numbers)
+        carrier = self._external_carrier(company)
+        if carrier:
+            values["carrier_id"] = carrier.id
+        return values
+
+    def _external_carrier(self, company):
+        carrier = self.env["delivery.carrier"]
+        if not company:
+            return carrier
+        mapping = self.instance_id.carrier_mapping_ids.filtered(
+            lambda item: (
+                (item.tracking_company or "").strip().casefold() == company.casefold()
+            )
+        )[:1]
+        if mapping:
+            return mapping.carrier_id
+        return carrier.search(
+            [
+                ("name", "=ilike", company),
+                ("company_id", "in", [False, self.company_id.id]),
+            ],
+            limit=1,
+        )
+
+    def _apply_external_tracking(self, pickings, payload, webhook_payload):
+        values = self._external_tracking_values(payload, webhook_payload)
+        for picking in pickings:
+            changes = {}
+            if values.get("carrier_tracking_ref") and (
+                picking.carrier_tracking_ref != values["carrier_tracking_ref"]
+            ):
+                changes["carrier_tracking_ref"] = values["carrier_tracking_ref"]
+            if (
+                values.get("carrier_id")
+                and picking.carrier_id.id != values["carrier_id"]
+            ):
+                changes["carrier_id"] = values["carrier_id"]
+            if changes:
+                picking.write(changes)
+
+
+class SaleOrderShopifyFulfillmentRetry(models.Model):
+    _inherit = "sale.order"
+
+    def action_release_shopify_risk_hold(self):
+        result = super().action_release_shopify_risk_hold()
+        # Fulfillments that failed on the risk hold can now validate their
+        # deliveries.
+        fulfillments = self.sudo().shopify_binding_ids.fulfillment_ids.filtered(
+            lambda item: (
+                item.origin == "shopify"
+                and item.state == "error"
+                and item.shopify_id
+                and not item.picking_id
+            )
+        )
+        if fulfillments:
+            fulfillments.action_retry_sync()
+        return result
 
 
 WEBHOOK_HANDLERS.update(

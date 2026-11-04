@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-19 11:46+0000\n"
+"PO-Revision-Date: 2026-11-04 13:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -652,6 +652,16 @@ msgid "Is Shopfloor Created"
 msgstr "Il reparto è creato"
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__jump_to_zone_picking_unload_all_menu_id
+msgid "Jump after Unload All"
+msgstr "Salta dopo lo scaricamento completo"
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__jump_to_single_pack_transfer_validate_menu_id
+msgid "Jump after Validate"
+msgstr "Salta dopo la validazione"
+
+#. module: shopfloor
 #. odoo-python
 #: code:addons/shopfloor/actions/completion_info.py:0
 msgid ""
@@ -770,6 +780,11 @@ msgstr "Il lotto {} è per un altro prodotto."
 #: code:addons/shopfloor/actions/inventory.py:0
 msgid "Lot: "
 msgstr "Lotto: "
+
+#. module: shopfloor
+#: model_terms:ir.ui.view,arch_db:shopfloor.shopfloor_menu_form_view
+msgid "Menu Jumping"
+msgstr "Menu eccezioni"
 
 #. module: shopfloor
 #: model:ir.model,name:shopfloor.model_shopfloor_menu

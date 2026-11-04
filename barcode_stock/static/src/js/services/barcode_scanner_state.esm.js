@@ -17,6 +17,13 @@ function sameLotId(left, right) {
     return (left || false) === (right || false);
 }
 
+function lineLeft(line) {
+    return normalizeQty(line.quantity) - normalizeQty(line.qty_picked);
+}
+
+// What is left of a pick spread over lines once float arithmetic is done with.
+const QTY_EPSILON = 1e-9;
+
 export class BarcodeScannerState extends Reactive {
     constructor(orm) {
         super();
@@ -122,6 +129,8 @@ export class BarcodeScannerState extends Reactive {
                     "lot_name",
                     "qty_picked",
                     "quantity",
+                    "location_id",
+                    "location_dest_id",
                 ]
             );
 
@@ -569,8 +578,88 @@ export class BarcodeScannerState extends Reactive {
     }
 
     /**
+     * Where a lot would be picked from under a location, as Odoo's own
+     * reservation takes it (stock.quant.barcode_lot_location).
+     *
+     * @param {Number} productId the product
+     * @param {Number} lotId the lot
+     * @param {Number} locationId the location it is picked under
+     * @returns {Promise<Array|false>} the location, as [id, name], if any
+     */
+    lotSourceLocation(productId, lotId, locationId) {
+        return this.orm.call("stock.quant", "barcode_lot_location", [
+            productId,
+            lotId,
+            locationId,
+        ]);
+    }
+
+    /**
+     * The move's lines of a lot (or, by its name, of a lot not resolved yet).
+     *
+     * @param {Object} pick the move, product and lot picked
+     * @returns {Object[]} the lines
+     */
+    linesOfLot({moveId, productId, lotId = false, lotName = false}) {
+        const wantedLotName = (lotName || "").trim().toUpperCase();
+        return this.moveLines.filter((line) => {
+            if (line.move_id?.[0] !== moveId || line.product_id?.[0] !== productId) {
+                return false;
+            }
+            if (sameLotId(line.lot_id?.[0], lotId)) {
+                return true;
+            }
+            // Fall back to the lot NAME so a re-scan lands on the existing line
+            // even when the lot resolved to a different record, instead of
+            // spawning a duplicate line for the same lot.
+            const lineLotName = (line.lot_name || line.lot_id?.[1] || "")
+                .trim()
+                .toUpperCase();
+            return Boolean(wantedLotName) && lineLotName === wantedLotName;
+        });
+    }
+
+    /**
+     * Stage a pick. Outside receptions it is spread over the move's lines of
+     * its lot that still hold something, in turn, each taking what it holds,
+     * so the stock leaves every shelf it was reserved on; what is over goes on
+     * the last of them, as Odoo lets a move be over-picked.
+     *
+     * @param {Object} pick what stageMoveLine takes
+     * @returns {Object} the last line staged
+     */
+    stagePick(pick) {
+        if (this.pickingTypeCode === "incoming" || pick.mode === "set") {
+            return this.stageMoveLine(pick);
+        }
+        const lines = this.linesOfLot(pick);
+        const reserved = lines.filter((line) => lineLeft(line) > 0);
+        if (!reserved.length) {
+            // Every line of the lot picked already: what is over goes on the
+            // last of them too.
+            return this.stageMoveLine(
+                lines.length ? {...pick, moveLineId: lines.at(-1).id} : pick
+            );
+        }
+        let rest = normalizeQty(pick.qtyPicked);
+        let staged = null;
+        for (const [index, line] of reserved.entries()) {
+            const qty =
+                index === reserved.length - 1 ? rest : Math.min(rest, lineLeft(line));
+            staged = this.stageMoveLine({...pick, moveLineId: line.id, qtyPicked: qty});
+            rest -= qty;
+            if (rest <= QTY_EPSILON) {
+                break;
+            }
+        }
+        return staged;
+    }
+
+    /**
      * The line a pick goes on first: the one a screen working on a reserved
-     * line names, otherwise a line of its lot with nothing picked yet.
+     * line names; outside receptions, the first line of its lot that still has
+     * something to pick, so a reservation is filled line by line where Odoo
+     * made it; otherwise a line of its lot with nothing picked yet.
      *
      * @param {Number} moveId the move picked
      * @param {Number} [moveLineId] the line named, if any
@@ -583,8 +672,13 @@ export class BarcodeScannerState extends Reactive {
             this.moveLines.find(
                 (line) => line.id === moveLineId && line.move_id?.[0] === moveId
             );
+        const reserved =
+            this.pickingTypeCode !== "incoming" &&
+            matchingLines.find((line) => lineLeft(line) > 0);
         return (
-            named || matchingLines.find((line) => normalizeQty(line.qty_picked) === 0)
+            named ||
+            reserved ||
+            matchingLines.find((line) => normalizeQty(line.qty_picked) === 0)
         );
     }
 
@@ -602,51 +696,28 @@ export class BarcodeScannerState extends Reactive {
         extraValues = {},
     }) {
         const wantedLotName = (lotName || "").trim().toUpperCase();
-        const matchingLines = this.moveLines.filter((line) => {
-            if (line.move_id?.[0] !== moveId || line.product_id?.[0] !== productId) {
-                return false;
-            }
-            if (sameLotId(line.lot_id?.[0], lotId)) {
-                return true;
-            }
-            // Fall back to the lot NAME so a re-scan lands on the existing line
-            // even when the lot resolved to a different record, instead of
-            // spawning a duplicate line for the same lot.
-            const lineLotName = (line.lot_name || line.lot_id?.[1] || "")
-                .trim()
-                .toUpperCase();
-            return Boolean(wantedLotName) && lineLotName === wantedLotName;
-        });
+        const matchingLines = this.linesOfLot({moveId, productId, lotId, lotName});
         let targetLine = this.firstPickLine(moveId, moveLineId, matchingLines);
         if (!targetLine && matchingLines.length) {
             [targetLine] = matchingLines;
         }
-        // No line carries this lot yet: take over an already-reserved line
-        // (same move and product, nothing picked on it) instead of spawning a
-        // new line beside the untouched reservation. The scan then fills the
+        // No line carries this lot yet: take over a lotless reserved line (a
+        // reception's, nothing picked on it) instead of spawning a new line
+        // beside the untouched reservation. The scan then fills the
         // reservation — "534343: 2.5 / 10" — rather than leaving a reserved
         // line dangling next to a fresh lot line that reserves nothing.
+        // Outside receptions, a lot the reservation does not carry is reserved
+        // by Odoo itself (stock.move.barcode_pick_lot), not written over
+        // another lot's line.
         if (!targetLine && (lotId || wantedLotName)) {
-            const untouched = this.moveLines.filter(
+            targetLine = this.moveLines.find(
                 (line) =>
                     line.move_id?.[0] === moveId &&
                     line.product_id?.[0] === productId &&
-                    normalizeQty(line.qty_picked) === 0
+                    normalizeQty(line.qty_picked) === 0 &&
+                    !line.lot_id?.[0] &&
+                    !(line.lot_name || "").trim()
             );
-            // Prefer a lotless reserved line (the reception case).
-            targetLine = untouched.find(
-                (line) => !line.lot_id?.[0] && !(line.lot_name || "").trim()
-            );
-            // Outside receptions, internal/outgoing pickings reserve against a
-            // specific lot, so a fresh line for the scanned lot would reserve
-            // nothing (its quantity stays 0 and _pick_qty won't raise it once
-            // the move is fully reserved). Take over such a reserved line and
-            // reassign it to the scanned lot instead: writing lot_id makes Odoo
-            // move the quant reservation onto it (see stock.move.line.write),
-            // which is what "I'm moving THIS lot" means.
-            if (!targetLine && this.pickingTypeCode !== "incoming") {
-                targetLine = untouched.find((line) => normalizeQty(line.quantity) > 0);
-            }
         }
 
         const nextQty = targetLine
@@ -665,8 +736,12 @@ export class BarcodeScannerState extends Reactive {
             picked: true,
             lot_id: lotId || false,
             lot_name: lotName || false,
-            location_id: locationId || false,
-            location_dest_id: locationDestId || false,
+            // Where the stock comes from and goes to only when the screen says
+            // so (the operator chose it). Otherwise the line keeps the
+            // locations Odoo gave it -- where its stock was reserved, a putaway
+            // shelf -- and a new line takes its move's.
+            ...(locationId ? {location_id: locationId} : {}),
+            ...(locationDestId ? {location_dest_id: locationDestId} : {}),
             ...(productUomId ? {product_uom_id: productUomId} : {}),
             ...extraValues,
         };

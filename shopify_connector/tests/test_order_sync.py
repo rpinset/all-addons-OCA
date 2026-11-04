@@ -141,6 +141,30 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertEqual(binding.odoo_id.order_line.product_uom_qty, 2)
         self.assertEqual(len(binding.line_binding_ids), 1)
 
+    def test_order_imports_its_customer(self):
+        payload = self._payload(order_id=14)
+        payload["customer"] = {"id": "gid://shopify/Customer/140"}
+        client = Mock()
+        client.execute.return_value = {
+            "customer": {
+                "id": "gid://shopify/Customer/140",
+                "firstName": "Order",
+                "lastName": "Buyer",
+                "defaultEmailAddress": {"emailAddress": "order.buyer@example.com"},
+            }
+        }
+
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            binding_id = self.order_model._job_import_order(self.instance.id, payload)
+
+        partner = self.order_model.browse(binding_id).odoo_id.partner_id
+        self.assertNotEqual(partner, self.instance.guest_partner_id)
+        self.assertEqual(partner.email, "order.buyer@example.com")
+        self.assertEqual(
+            partner.shopify_customer_binding_ids.shopify_id,
+            "gid://shopify/Customer/140",
+        )
+
     def test_total_verification_failure_leaves_no_sale_order(self):
         before = self.env["sale.order"].search_count([])
 
@@ -199,6 +223,28 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertFalse(result)
         self.assertNotEqual(binding.odoo_id.state, "cancel")
 
+    def test_cancel_of_confirmed_order_cancels_the_sale_order(self):
+        self.instance.order_confirmation_policy = "auto"
+        binding_id = self.order_model._job_import_order(
+            self.instance.id,
+            self._payload(order_id=12, displayFinancialStatus="PAID"),
+        )
+        binding = self.order_model.browse(binding_id)
+        self.assertEqual(binding.odoo_id.state, "sale")
+
+        result = self.order_model._job_import_order(
+            self.instance.id,
+            self._payload(
+                order_id=12,
+                displayFinancialStatus="PAID",
+                cancelledAt="2026-01-12T10:00:00Z",
+                updatedAt="2026-01-12T10:00:00Z",
+            ),
+        )
+
+        self.assertTrue(result, binding.error_message)
+        self.assertEqual(binding.odoo_id.state, "cancel")
+
     def test_unmapped_tax_records_actionable_error(self):
         payload = self._payload(order_id=5, total="11.00")
         payload["shippingAddress"] = {"countryCodeV2": "US"}
@@ -229,6 +275,34 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertTrue(order.shopify_risk_hold)
         order.action_release_shopify_risk_hold()
         self.assertFalse(order.shopify_risk_hold)
+
+    def test_sale_order_takes_the_shopify_order_name(self):
+        payload = self._payload(order_id=16)
+        payload["lineItems"]["nodes"][0]["id"] = "gid://shopify/LineItem/160"
+        existing = self.order_model.browse(
+            self.order_model._job_import_order(self.instance.id, payload)
+        )
+        odoo_name = existing.odoo_id.name
+        self.instance.order_use_shopify_name = True
+
+        payload["updatedAt"] = "2026-01-11T10:00:00Z"
+        self.order_model._job_import_order(self.instance.id, payload)
+        draft = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id, self._draft_payload(), is_draft=True
+            )
+        )
+        self.assertEqual(draft.odoo_id.name, "#D90")
+        order = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(order_id=90, sourceName="shopify_draft_order"),
+            )
+        )
+
+        self.assertEqual(existing.odoo_id.name, odoo_name)
+        self.assertEqual(order.odoo_id, draft.odoo_id)
+        self.assertEqual(order.odoo_id.name, "#90")
 
     def _draft_payload(self, draft_id=90, order_id=90):
         return {

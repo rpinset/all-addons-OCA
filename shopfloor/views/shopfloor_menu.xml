@@ -15,6 +15,29 @@
                     </list>
                 </field>
             </group>
+            <page name="options" position="after">
+                <page name="jump_to" string="Menu Jumping">
+                    <group
+                        name="jump_to"
+                        invisible="scenario_key not in ('zone_picking', 'single_pack_transfer')"
+                    >
+                        <group
+                            name="jump_to_from_zone_picking"
+                            invisible="scenario_key != 'zone_picking'"
+                        >
+                            <field name="jump_to_zone_picking_unload_all_menu_id" />
+                        </group>
+                        <group
+                            name="jump_to_from_single_pack_transfer"
+                            invisible="scenario_key != 'single_pack_transfer'"
+                        >
+                            <field
+                                name="jump_to_single_pack_transfer_validate_menu_id"
+                            />
+                        </group>
+                    </group>
+                </page>
+            </page>
             <group name="options" position="inside">
                 <group
                     name="quantity_exceeding_demand"

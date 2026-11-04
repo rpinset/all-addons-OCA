@@ -581,6 +581,14 @@ msgstr ""
 
 #. module: barcode_stock
 #. odoo-javascript
+#. odoo-python
+#: code:addons/barcode_stock/models/stock_move.py:0
+#: code:addons/barcode_stock/static/src/js/screens/move_wizard_screen.esm.js:0
+msgid "Lot %(lot)s has no stock in %(location)s."
+msgstr ""
+
+#. module: barcode_stock
+#. odoo-javascript
 #: code:addons/barcode_stock/static/src/js/screens/picking_screen.esm.js:0
 msgid "Lot %(lot)s has passed its expiration date."
 msgstr ""

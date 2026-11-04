@@ -478,6 +478,7 @@ class ShopifyOrderSync(models.Model):
 
     def _build_order(self, binding, instance, order_data):
         sale_order = binding.odoo_id
+        takes_shopify_name = instance.order_use_shopify_name and not sale_order
         completed_binding = self.env["shopify.order"]
         if order_data["is_draft"] and order_data["completed_order_id"]:
             completed_binding = self.search(
@@ -540,6 +541,8 @@ class ShopifyOrderSync(models.Model):
             "shopify_note": order_data["note"],
             "shopify_risk_level": order_data["risk_level"],
         }
+        if takes_shopify_name:
+            values["name"] = order_data["name"]
         values.update(self._shopify_order_extra_values(instance, order_data))
         if sale_order:
             if (
@@ -701,13 +704,16 @@ class ShopifyOrderSync(models.Model):
 
     def _partner(self, instance, order_data):
         if order_data["customer_id"]:
-            customer = self.env["shopify.customer"].search(
-                [
-                    ("instance_id", "=", instance.id),
-                    ("shopify_id", "=", order_data["customer_id"]),
-                ],
-                limit=1,
-            )
+            domain = [
+                ("instance_id", "=", instance.id),
+                ("shopify_id", "=", order_data["customer_id"]),
+            ]
+            customer = self.env["shopify.customer"].search(domain, limit=1)
+            if not customer:
+                customer._job_import_customer_from_api(
+                    instance.id, order_data["customer_id"]
+                )
+                customer = customer.search(domain, limit=1)
             if customer:
                 return customer.odoo_id
         if not instance.guest_partner_id:
@@ -1040,7 +1046,7 @@ class ShopifyOrderSync(models.Model):
                     self.env._("Shopify cancelled an order already delivered in Odoo.")
                 )
             if sale_order.state != "cancel":
-                sale_order.action_cancel()
+                sale_order.with_context(disable_cancel_warning=True).action_cancel()
             return
         if self._should_confirm_shopify_order(instance, order_data, sale_order):
             sale_order.action_confirm()
@@ -1478,7 +1484,7 @@ class ShopifyOrderSync(models.Model):
             and amount >= expected_total
         ):
             if sale_order.state != "cancel":
-                sale_order.action_cancel()
+                sale_order.with_context(disable_cancel_warning=True).action_cancel()
             return
         for line in refund["lines"]:
             line_binding = binding.line_binding_ids.filtered(

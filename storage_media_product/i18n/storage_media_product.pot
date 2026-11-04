@@ -19,11 +19,6 @@ msgid "Accessible path, no base URL"
 msgstr ""
 
 #. module: storage_media_product
-#: model:ir.model.fields,field_description:storage_media_product.field_product_media_relation__active
-msgid "Active"
-msgstr ""
-
-#. module: storage_media_product
 #: model_terms:ir.ui.view,arch_db:storage_media_product.product_media_relation_form
 msgid "Association"
 msgstr ""
@@ -95,6 +90,11 @@ msgid "Media"
 msgstr ""
 
 #. module: storage_media_product
+#: model:ir.model.fields,field_description:storage_media_product.field_product_media_relation__media_active
+msgid "Media Active"
+msgstr ""
+
+#. module: storage_media_product
 #: model:ir.model.fields,field_description:storage_media_product.field_product_media_relation__media_type_id
 msgid "Media Type"
 msgstr ""
@@ -152,4 +152,9 @@ msgstr ""
 #. module: storage_media_product
 #: model:ir.model.fields,field_description:storage_media_product.field_product_product__variant_media_ids
 msgid "Variant Media"
+msgstr ""
+
+#. module: storage_media_product
+#: model:ir.model,name:storage_media_product.model_storage_file_replace
+msgid "Wizard template allowing to replace a storage.file"
 msgstr ""

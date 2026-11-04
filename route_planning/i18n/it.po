@@ -6,78 +6,84 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-11-02 12:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.route_route_view_kanban
 msgid "<strong>Area:</strong>"
-msgstr ""
+msgstr "<strong>Area:</strong>"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.route_checkpoint_view_kanban
 msgid "<strong>Route:</strong>"
-msgstr ""
+msgstr "<strong>Percorso:</strong>"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.route_checkpoint_view_kanban
 #: model_terms:ir.ui.view,arch_db:route_planning.route_route_view_kanban
 msgid "<strong>User:</strong>"
-msgstr ""
+msgstr "<strong>Utente:</strong>"
 
 #. module: route_planning
 #: model:ir.model.constraint,message:route_planning.constraint_route_partner_visitwindow_partner_day_unique
 msgid ""
 "A visit window for the same day of the week already exists for this partner."
 msgstr ""
+"Per questo partner esiste già una fascia oraria di visita per lo stesso "
+"giorno della settimana."
 
 #. module: route_planning
 #: model:ir.model.constraint,message:route_planning.constraint_route_visitwindow_template_line_template_day_unique
 msgid ""
 "A visit window for the same day of the week already exists in this template."
 msgstr ""
+"In questo modello esiste già una fascia oraria di visita per lo stesso "
+"giorno della settimana."
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_needaction
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Azione richiesta"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__active
 #: model:ir.model.fields,field_description:route_planning.field_route_incident_type__active
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__active
 msgid "Active"
-msgstr ""
+msgstr "Attivo"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_ids
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Attività"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_exception_decoration
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Decorazione eccezione attività"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_state
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Stato attività"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_type_icon
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icona tipo attività"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_search
@@ -85,28 +91,28 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_form
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_search
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Area"
-msgstr ""
+msgstr "Area"
 
 #. module: route_planning
 #: model:ir.ui.menu,name:route_planning.menu_route_area
 msgid "Areas"
-msgstr ""
+msgstr "Aree"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_attachment_count
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Numero di allegati"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__auto_assign
 msgid "Auto Assign"
-msgstr ""
+msgstr "Assegnazione automatica"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_area__auto_assign
@@ -114,52 +120,54 @@ msgid ""
 "Automatically assign this area to partners matching its criteria, based on "
 "country, state, and zip code range."
 msgstr ""
+"Assegna automaticamente quest'area ai partner che soddisfano i criteri, in "
+"base al paese, alla provincia e all'intervallo di CAP."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_form
 msgid "Availability"
-msgstr ""
+msgstr "Disponibilità"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_area__waiting_time
 #: model:ir.model.fields,help:route_planning.field_route_route__waiting_time
 msgid "Average waiting time at each stop, expressed in minutes."
-msgstr ""
+msgstr "Tempo medio di attesa a ogni fermata, espresso in minuti."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Back to Draft"
-msgstr ""
+msgstr "Ripristina a bozza"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Back to Planned"
-msgstr ""
+msgstr "Ripristina a pianificato"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_create_incident_form
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_create_incident__checkpoint_id
 #: model:ir.model.fields,field_description:route_planning.field_route_route__checkpoint_ids
 msgid "Checkpoint"
-msgstr ""
+msgstr "Tappa"
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_checkpoint.py:0
 msgid "Checkpoint %s does not have valid coordinates."
-msgstr ""
+msgstr "La tappa %s non ha coordinate valide."
 
 #. module: route_planning
 #: model:mail.message.subtype,description:route_planning.mt_checkpoint_new
 #: model:mail.message.subtype,name:route_planning.mt_checkpoint_new
 #: model:mail.message.subtype,name:route_planning.mt_route_checkpoint_new
 msgid "Checkpoint Created"
-msgstr ""
+msgstr "Tappa creata"
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_checkpoint
@@ -167,17 +175,17 @@ msgstr ""
 #: model:ir.ui.menu,name:route_planning.menu_route_checkpoint
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Checkpoints"
-msgstr ""
+msgstr "Tappe"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_checkpoint
 msgid "Checkpoints are created when you plan routes."
-msgstr ""
+msgstr "Le tappe vengono create quando si pianificano i percorsi."
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__code
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__company_id
@@ -187,32 +195,32 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Compute Localization"
-msgstr ""
+msgstr "Calcola la localizzazione"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Compute based on address"
-msgstr ""
+msgstr "Calcola in base all'indirizzo"
 
 #. module: route_planning
 #: model:ir.ui.menu,name:route_planning.menu_route_planning_config
 msgid "Configuration"
-msgstr ""
+msgstr "Configurazione"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__country_ids
 msgid "Country"
-msgstr ""
+msgstr "Nazione"
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_create_incident
@@ -220,32 +228,32 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_create_incident_form
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Create Incident"
-msgstr ""
+msgstr "Crea incidente"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_create_incident
 msgid "Create Route Incident"
-msgstr ""
+msgstr "Crea incidente del percorso"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_incident_type
 msgid "Create your first incident type"
-msgstr ""
+msgstr "Crea il tuo primo tipo di incidente"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_route
 msgid "Create your first route"
-msgstr ""
+msgstr "Crea il tuo primo percorso"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_area
 msgid "Create your first route area"
-msgstr ""
+msgstr "Crea la tua prima area di percorso"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_visitwindow_template
 msgid "Create your first visit window template"
-msgstr ""
+msgstr "Crea il tuo primo modello di fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__create_uid
@@ -258,7 +266,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__create_uid
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__create_date
@@ -271,29 +279,29 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__create_date
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: route_planning
 #: model:route.incident.type,name:route_planning.incident_type_customer_not_available_demo
 msgid "Customer Not Available"
-msgstr ""
+msgstr "Cliente non disponibile"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__date_done
 msgid "Date Done"
-msgstr ""
+msgstr "Data completamento"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__day_of_week
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__day_of_week
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__day_of_week
 msgid "Day Of Week"
-msgstr ""
+msgstr "Giorno della settimana"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__display_address
 msgid "Display Address"
-msgstr ""
+msgstr "Indirizzo visualizzato"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__display_name
@@ -306,19 +314,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__display_name
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Do you want to mark this checkpoint as done?"
-msgstr ""
+msgstr "Vuoi contrassegnare questa tappa come completata?"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Do you want to set this checkpoint back to planned?"
-msgstr ""
+msgstr "Vuoi riportare questa tappa allo stato pianificato?"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__done
@@ -326,7 +334,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Done"
-msgstr ""
+msgstr "Completato"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__draft
@@ -334,61 +342,61 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Draft"
-msgstr ""
+msgstr "Bozza"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__time_to
 #: model:ir.model.fields,help:route_planning.field_route_visitwindow_mixin__time_to
 #: model:ir.model.fields,help:route_planning.field_route_visitwindow_template_line__time_to
 msgid "End time of the visit window"
-msgstr ""
+msgstr "Ora di fine della fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_follower_ids
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguito da"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_partner_ids
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguito da (partner)"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_type_icon
 #: model:ir.model.fields,help:route_planning.field_route_route__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Icona Font Awesome es. fa-tasks"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__4
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__4
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__4
 msgid "Friday"
-msgstr ""
+msgstr "Venerdì"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Geolocation"
-msgstr ""
+msgstr "Geolocalizzazione"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__date_localization
 msgid "Geolocation Date"
-msgstr ""
+msgstr "Data geolocalizzazione"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Group By"
-msgstr ""
+msgstr "Raggruppa per"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__has_message
 #: model:ir.model.fields,field_description:route_planning.field_route_route__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Ha un messaggio"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__id
@@ -401,70 +409,74 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__id
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_exception_icon
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icona"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_exception_icon
 #: model:ir.model.fields,help:route_planning.field_route_route__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icona che indica un'attività eccezione."
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_incident_type__rescheduled
 msgid "If checked, checkpoints with this incident type will be rescheduled"
 msgstr ""
+"Se selezionato, le tappe con questo tipo di incidente verranno ripianificate"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_needaction
 #: model:ir.model.fields,help:route_planning.field_route_route__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Se selezionato, i nuovi messaggi richiedono la tua attenzione."
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_has_error
 #: model:ir.model.fields,help:route_planning.field_route_route__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
+"Se selezionato, si è verificato un errore di consegna per alcuni messaggi."
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_route__state__in_progress
 msgid "In Progress"
-msgstr ""
+msgstr "In corso"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__incident
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 msgid "Incident"
-msgstr ""
+msgstr "Incidente"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__incident_type_id
 #: model:ir.model.fields,field_description:route_planning.field_route_create_incident__incident_type_id
 msgid "Incident Type"
-msgstr ""
+msgstr "Tipo di incidente"
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_incident_type
 #: model:ir.ui.menu,name:route_planning.menu_route_incident_type
 msgid "Incident Types"
-msgstr ""
+msgstr "Tipi di incidente"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_incident_type
 msgid "Incident types help categorize route problems and define actions."
 msgstr ""
+"I tipi di incidente aiutano a categorizzare i problemi del percorso e a "
+"definire le azioni da intraprendere."
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_is_follower
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Segue"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__write_uid
@@ -477,7 +489,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__write_uid
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__write_date
@@ -490,70 +502,70 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__write_date
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__latitude
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Latitude"
-msgstr ""
+msgstr "Latitudine"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__line_ids
 msgid "Line"
-msgstr ""
+msgstr "Riga"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__longitude
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Longitude"
-msgstr ""
+msgstr "Longitudine"
 
 #. module: route_planning
 #: model:res.groups,name:route_planning.group_route_planning_manager
 msgid "Manager"
-msgstr ""
+msgstr "Responsabile"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
 msgid "Mark Done"
-msgstr ""
+msgstr "Segna come completato"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Mark as done"
-msgstr ""
+msgstr "Segna come completato"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_has_error
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Errore di consegna del messaggio"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_ids
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Messaggi"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__0
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__0
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__0
 msgid "Monday"
-msgstr ""
+msgstr "Lunedì"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__my_activity_date_deadline
 #: model:ir.model.fields,field_description:route_planning.field_route_route__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Scadenza della mia attività"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "My Routes"
-msgstr ""
+msgstr "I miei percorsi"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__name
@@ -561,36 +573,36 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_route__name
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_route.py:0
 msgid "New"
-msgstr ""
+msgstr "Nuovo"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_date_deadline
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Scadenza della prossima attività"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_summary
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Riepilogo della prossima attività"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_type_id
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Tipo della prossima attività"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_checkpoint
 msgid "No checkpoints found"
-msgstr ""
+msgstr "Nessuna tappa trovata"
 
 #. module: route_planning
 #. odoo-python
@@ -599,89 +611,91 @@ msgid ""
 "Not enough addresses with coordinates for optimisation. Please check that "
 "partners have latitude and longitude."
 msgstr ""
+"Non ci sono abbastanza indirizzi con coordinate per eseguire "
+"l'ottimizzazione. Verifica che i partner abbiano latitudine e longitudine."
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__note
 #: model:ir.model.fields,field_description:route_planning.field_route_create_incident__note
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_needaction_counter
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Numero di azioni"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_has_error_counter
 #: model:ir.model.fields,field_description:route_planning.field_route_route__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Numero di errori"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_needaction_counter
 #: model:ir.model.fields,help:route_planning.field_route_route__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Numero di messaggi che richiedono un'azione"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_has_error_counter
 #: model:ir.model.fields,help:route_planning.field_route_route__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Numero di messaggi con errori di consegna"
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_route.py:0
 msgid "Only draft routes can be planned."
-msgstr ""
+msgstr "È possibile pianificare solo i percorsi in bozza."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Open in Google Maps"
-msgstr ""
+msgstr "Apri in Google Maps"
 
 #. module: route_planning
 #: model:ir.ui.menu,name:route_planning.menu_route_planning_operations
 msgid "Operations"
-msgstr ""
+msgstr "Operazioni"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__origin_checkpoint_id
 msgid "Origin Checkpoint"
-msgstr ""
+msgstr "Punto di controllo di origine"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__origin_checkpoint_id
 msgid "Original checkpoint when this is created from an incident"
-msgstr ""
+msgstr "Punto di controllo originale, se creato a partire da un incidente"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__partner_id
 #: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__partner_id
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_partner_visitwindow
 msgid "Partner Visit Window"
-msgstr ""
+msgstr "Fascia oraria di visita del partner"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__partner_id
 msgid "Partner for this visit window"
-msgstr ""
+msgstr "Partner per questa fascia oraria di visita"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Plan"
-msgstr ""
+msgstr "Pianifica"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__planned
@@ -689,35 +703,35 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Planned"
-msgstr ""
+msgstr "Pianificato"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Refresh"
-msgstr ""
+msgstr "Aggiorna"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Refresh Localization"
-msgstr ""
+msgstr "Aggiorna geolocalizzazione"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_incident_type__rescheduled
 msgid "Rescheduled"
-msgstr ""
+msgstr "Riprogrammato"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_user_id
 #: model:ir.model.fields,field_description:route_planning.field_route_route__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Utente responsabile"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_route
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__route_id
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 msgid "Route"
-msgstr ""
+msgstr "Percorso"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_area
@@ -726,118 +740,122 @@ msgstr ""
 #: model:ir.model.fields,field_description:route_planning.field_route_area_zip__route_area_id
 #: model:ir.model.fields,field_description:route_planning.field_route_route__route_area_id
 msgid "Route Area"
-msgstr ""
+msgstr "Area del percorso"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_area_zip
 msgid "Route Area Zip range"
-msgstr ""
+msgstr "Intervallo di CAP dell'area del percorso"
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_area
 msgid "Route Areas"
-msgstr ""
+msgstr "Aree dei percorsi"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_checkpoint
 msgid "Route Checkpoint"
-msgstr ""
+msgstr "Punto di controllo del percorso"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_incident_type
 msgid "Route Incident Type"
-msgstr ""
+msgstr "Tipo di incidente del percorso"
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_route.py:0
 msgid "Route Map"
-msgstr ""
+msgstr "Mappa del percorso"
 
 #. module: route_planning
 #: model:ir.module.category,name:route_planning.module_category_route_planning
 #: model:ir.ui.menu,name:route_planning.menu_route_planning_main
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Route Planning"
-msgstr ""
+msgstr "Pianificazione dei percorsi"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Route Planning Info"
-msgstr ""
+msgstr "Informazioni sulla pianificazione dei percorsi"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__route_state
 msgid "Route State"
-msgstr ""
+msgstr "Stato del percorso"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_res_partner__route_visitwindow_ids
 #: model:ir.model.fields,field_description:route_planning.field_res_users__route_visitwindow_ids
 msgid "Route Visitwindow"
-msgstr ""
+msgstr "Fasce orarie di visita del percorso"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_area
 msgid "Route areas help organize delivery zones and assign responsible users."
 msgstr ""
+"Le aree dei percorsi aiutano a organizzare le zone di consegna e ad "
+"assegnare gli utenti responsabili."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "Route name..."
-msgstr ""
+msgstr "Nome del percorso..."
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_route
 #: model:ir.ui.menu,name:route_planning.menu_route_route
 msgid "Routes"
-msgstr ""
+msgstr "Percorsi"
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_route
 msgid "Routes help organize delivery schedules and track progress."
 msgstr ""
+"I percorsi aiutano a organizzare i programmi di consegna e a monitorare i "
+"progressi."
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__5
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__5
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__5
 msgid "Saturday"
-msgstr ""
+msgstr "Sabato"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__schedule_date
 #: model:ir.model.fields,field_description:route_planning.field_route_route__schedule_date
 msgid "Schedule Date"
-msgstr ""
+msgstr "Data programmata"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__schedule_time
 msgid "Schedule Time"
-msgstr ""
+msgstr "Ora programmata"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "Schedule date"
-msgstr ""
+msgstr "Data programmata"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sequenza"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_route__start_location_id
 msgid "Start Location"
-msgstr ""
+msgstr "Luogo di partenza"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__time_from
 #: model:ir.model.fields,help:route_planning.field_route_visitwindow_mixin__time_from
 #: model:ir.model.fields,help:route_planning.field_route_visitwindow_template_line__time_from
 msgid "Start time of the visit window"
-msgstr ""
+msgstr "Ora di inizio della fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__state_ids
@@ -846,7 +864,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "State"
-msgstr ""
+msgstr "Stato"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_state
@@ -857,18 +875,22 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Stato basato sulle attività\n"
+"In ritardo: la data di scadenza è già passata\n"
+"Oggi: la data dell'attività è oggi\n"
+"Pianificato: attività future."
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__6
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__6
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__6
 msgid "Sunday"
-msgstr ""
+msgstr "Domenica"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__template_id
 msgid "Template"
-msgstr ""
+msgstr "Modello"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_res_partner__route_visitwindow_template_id
@@ -877,16 +899,19 @@ msgid ""
 "Template to pre-fill visit windows for this partner, this field will be "
 "cleared after applying the template."
 msgstr ""
+"Modello per precompilare le fasce orarie di visita di questo partner. Questo "
+"campo verrà svuotato dopo l'applicazione del modello."
 
 #. module: route_planning
 #: model_terms:ir.actions.act_window,help:route_planning.action_route_visitwindow_template
 msgid "Templates help standardize visit windows for partners."
 msgstr ""
+"I modelli aiutano a standardizzare le fasce orarie di visita dei partner."
 
 #. module: route_planning
 #: model:ir.model.constraint,message:route_planning.constraint_route_area_code_uniq
 msgid "The code must be unique per company."
-msgstr ""
+msgstr "Il codice deve essere univoco per azienda."
 
 #. module: route_planning
 #. odoo-python
@@ -895,68 +920,70 @@ msgid ""
 "The partner: %(partner)s must have latitude and longitude to optimize the "
 "route."
 msgstr ""
+"Il partner: %(partner)s deve avere latitudine e longitudine per ottimizzare "
+"il percorso."
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_visitwindow_mixin.py:0
 msgid "The time from must be earlier than the time to."
-msgstr ""
+msgstr "L'ora di inizio deve precedere l'ora di fine."
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_route.py:0
 msgid "The time start must be between 0 and 24 hours."
-msgstr ""
+msgstr "L'ora di inizio deve essere compresa tra 0 e 24."
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__3
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__3
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__3
 msgid "Thursday"
-msgstr ""
+msgstr "Giovedì"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__time_from
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__time_from
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__time_from
 msgid "Time From"
-msgstr ""
+msgstr "Ora di inizio"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__time_start
 #: model:ir.model.fields,field_description:route_planning.field_route_route__time_start
 msgid "Time Start"
-msgstr ""
+msgstr "Ora di partenza"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__time_to
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__time_to
 #: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__time_to
 msgid "Time To"
-msgstr ""
+msgstr "Ora di fine"
 
 #. module: route_planning
 #: model:route.incident.type,name:route_planning.incident_type_traffic_delay_demo
 msgid "Traffic Delay"
-msgstr ""
+msgstr "Ritardo dovuto al traffico"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__1
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__1
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__1
 msgid "Tuesday"
-msgstr ""
+msgstr "Martedì"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_exception_decoration
 #: model:ir.model.fields,help:route_planning.field_route_route__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo di attività eccezionale registrata."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 msgid "Updated on"
-msgstr ""
+msgstr "Aggiornato il"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__user_id
@@ -966,88 +993,88 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_search
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
 msgid "User"
-msgstr ""
+msgstr "Utente"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "View"
-msgstr ""
+msgstr "Visualizza"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "View Map"
-msgstr ""
+msgstr "Visualizza mappa"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
 msgid "View Origin"
-msgstr ""
+msgstr "Visualizza origine"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_visitwindow_mixin
 msgid "Visit Window Mixin"
-msgstr ""
+msgstr "Mixin della fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_visitwindow_template
 #: model:ir.model.fields,field_description:route_planning.field_res_partner__route_visitwindow_template_id
 #: model:ir.model.fields,field_description:route_planning.field_res_users__route_visitwindow_template_id
 msgid "Visit Window Template"
-msgstr ""
+msgstr "Modello di fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.model,name:route_planning.model_route_visitwindow_template_line
 msgid "Visit Window Template Line"
-msgstr ""
+msgstr "Riga del modello di fascia oraria di visita"
 
 #. module: route_planning
 #: model:ir.actions.act_window,name:route_planning.action_route_visitwindow_template
 #: model:ir.ui.menu,name:route_planning.menu_route_visitwindow_template
 msgid "Visit Window Templates"
-msgstr ""
+msgstr "Modelli di fasce orarie di visita"
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_form
 msgid "Visit Windows"
-msgstr ""
+msgstr "Fasce orarie di visita"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__waiting_time
 #: model:ir.model.fields,field_description:route_planning.field_route_route__waiting_time
 msgid "Waiting Time"
-msgstr ""
+msgstr "Tempo di attesa"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__website_message_ids
 #: model:ir.model.fields,field_description:route_planning.field_route_route__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Messaggi del sito web"
 
 #. module: route_planning
 #: model:ir.model.fields,help:route_planning.field_route_checkpoint__website_message_ids
 #: model:ir.model.fields,help:route_planning.field_route_route__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Cronologia delle comunicazioni del sito web"
 
 #. module: route_planning
 #: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__2
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__2
 #: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__2
 msgid "Wednesday"
-msgstr ""
+msgstr "Mercoledì"
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_checkpoint.py:0
 msgid "You cannot delete checkpoints that are not in draft state."
-msgstr ""
+msgstr "Non è possibile eliminare i punti di controllo che non sono in bozza."
 
 #. module: route_planning
 #. odoo-python
 #: code:addons/route_planning/models/route_route.py:0
 msgid "You cannot delete routes that are not in draft state."
-msgstr ""
+msgstr "Non è possibile eliminare i percorsi che non sono in bozza."
 
 #. module: route_planning
 #. odoo-python
@@ -1056,6 +1083,9 @@ msgid ""
 "You cannot set the sequence of checkpoint: %s to %s because there are "
 "previous checkpoints marked as done or incident."
 msgstr ""
+"Non è possibile impostare la sequenza del punto di controllo %s su %s perché "
+"i punti di controllo precedenti sono contrassegnati come completati o come "
+"incidenti."
 
 #. module: route_planning
 #. odoo-python
@@ -1063,23 +1093,25 @@ msgstr ""
 msgid ""
 "You must mark previous checkpoints as done before marking this one as done."
 msgstr ""
+"È necessario contrassegnare come completati i punti di controllo precedenti "
+"prima di contrassegnare questo come completato."
 
 #. module: route_planning
 #: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_form
 msgid "ZIP ranges"
-msgstr ""
+msgstr "Intervalli di CAP"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area_zip__zip_from
 msgid "Zip From"
-msgstr ""
+msgstr "CAP iniziale"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area_zip__zip_to
 msgid "Zip To"
-msgstr ""
+msgstr "CAP finale"
 
 #. module: route_planning
 #: model:ir.model.fields,field_description:route_planning.field_route_area__zip_ids
 msgid "Zip ranges"
-msgstr ""
+msgstr "Intervalli di CAP"

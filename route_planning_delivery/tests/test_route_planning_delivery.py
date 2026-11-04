@@ -63,7 +63,6 @@ class TestRoutePlanningDelivery(RouteCommon):
         if route_area:
             wizard_form.route_area_id = route_area
         wizard = wizard_form.save()
-        wizard._get_delivery_rate()
         wizard.button_confirm()
 
     def test_delivery_carrier_constrains(self):

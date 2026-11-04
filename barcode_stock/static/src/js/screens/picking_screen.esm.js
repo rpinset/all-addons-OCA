@@ -483,7 +483,6 @@ export class PickingScreen extends Component {
     }
 
     async createMoveLine(moveId, productId, qty, lotId = null) {
-        const move = this.barcodeScannerState.getMove(moveId);
         const lot = lotId ? this.barcodeScannerState.lotsById[lotId] : null;
         await this.barcodeScannerSync.confirmMove({
             moveId,
@@ -492,8 +491,6 @@ export class PickingScreen extends Component {
             qtyPicked: qty,
             lotId: lotId || false,
             lotName: lot?.name || false,
-            locationId: move?.location_id?.[0] || false,
-            locationDestId: move?.location_dest_id?.[0] || false,
         });
 
         await this._reloadMoves();
@@ -699,8 +696,6 @@ export class PickingScreen extends Component {
                     qtyPicked: scannedQty,
                     lotId: false,
                     lotName: false,
-                    locationId: candidateMove.location_id?.[0] || false,
-                    locationDestId: candidateMove.location_dest_id?.[0] || false,
                 });
                 this.setLastScanContext({
                     barcode,

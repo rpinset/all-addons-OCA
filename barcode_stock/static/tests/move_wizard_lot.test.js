@@ -61,6 +61,7 @@ function moveWizard({
         getMoveLinesForMove: () => lines,
         getLotsForProduct: () => [LOT_B],
         getRemainingQty: () => remaining,
+        lotSourceLocation: async () => false,
     };
     Object.assign(wizard, {
         feedback: {success: () => undefined},

@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-11-01 10:40 UTC
+Generated 2026-11-04 21:05 UTC
 
 ## Skipped repos
 
@@ -69,6 +69,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [oca-addons-repo-template](https://github.com/OCA/oca-addons-repo-template) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
+| [oca-demo](https://github.com/OCA/oca-demo) | `no_module` | No directory with __manifest__.py at repo root |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [oca-weblate-deployment](https://github.com/OCA/oca-weblate-deployment) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |

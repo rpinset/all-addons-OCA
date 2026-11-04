@@ -359,10 +359,10 @@ class CarbonFactor(models.Model):
             )
         if len(distribution) != len(self):
             raise ValidationError(
-                _(
-                    "The factor count is different from the distribution keys count (factor count: %s, keys count: %s)",
-                    len(self),
-                    len(distribution),
+                self.env._(
+                    "The factor count is different from the distribution keys count (factor count: %(factor_count)s, keys count: %(keys_count)s)",
+                    factor_count=len(self),
+                    keys_count=len(distribution),
                 )
             )
 
@@ -585,13 +585,14 @@ class CarbonFactor(models.Model):
                 )
             else:
                 raise ValidationError(
-                    _(
-                        f"The unit of measure set for %s (%s - %s) is not in the same category as its carbon unit of measure (%s - %s){ref_str}",
-                        self.name,
-                        from_uom_id.name,
-                        from_uom_id.category_id.name,
-                        factor_value.carbon_uom_id.name,
-                        factor_value.carbon_uom_id.category_id.name,
+                    self.env._(
+                        "The unit of measure '%(from_uom)s' (%(from_uom_category)s) is not in the same category as the carbon unit of measure '%(carbon_uom)s' (%(carbon_uom_category)s) for %(product)s%(ref_str)s",
+                        product=self.name,
+                        from_uom=from_uom_id.name,
+                        from_uom_category=from_uom_id.category_id.name,
+                        carbon_uom=factor_value.carbon_uom_id.name,
+                        carbon_uom_category=factor_value.carbon_uom_id.category_id.name,
+                        ref_str=ref_str,
                     )
                 )
         # If not physical or missing data, return None
@@ -681,50 +682,50 @@ class CarbonFactor(models.Model):
             dict(
                 field="account_move_qty",
                 icon="fa-bars",
-                string=_("Account Move"),
+                string=cls.env._("Account Move"),
             ),
             # Child button
             dict(
                 field="child_qty",
                 icon="fa-sitemap",
-                string=_("Children Factors"),
+                string=cls.env._("Children Factors"),
             ),
             # Chart of Account button
             dict(
                 field="chart_of_account_qty",
                 icon="fa-book",
-                string=_("Chart of Account"),
+                string=cls.env._("Chart of Account"),
             ),
             # Product Variants button
             dict(
                 field="product_product_qty",
                 icon="fa-th-list",
-                string=_("Product Variants"),
+                string=cls.env._("Product Variants"),
             ),
             # Product Templates button
             dict(
                 field="product_template_qty",
                 icon="fa-th-list",
-                string=_("Product Templates"),
+                string=cls.env._("Product Templates"),
             ),
             # Product Category button
             dict(
                 field="product_categ_qty",
                 icon="fa-sort",
-                string=_("Product Categories"),
+                string=cls.env._("Product Categories"),
             ),
             # Product Supplier Info button
             dict(
                 field="product_supplierinfo_qty",
                 icon="fa-list",
-                string=_("Product Supplier Infos"),
+                string=cls.env._("Product Supplier Infos"),
                 action="action_see_product_supplier_ids",
             ),
             # Distribution Template button
             dict(
                 field="distribution_template_qty",
                 icon="fa-object-group",
-                string=_("Distribution Templates"),
+                string=cls.env._("Distribution Templates"),
                 action="action_see_distribution_template_ids",
             ),
         ]
