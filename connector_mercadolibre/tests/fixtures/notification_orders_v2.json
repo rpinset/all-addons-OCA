@@ -1,0 +1,9 @@
+{
+  "resource": "/orders/2195160686",
+  "user_id": 123456789,
+  "topic": "orders_v2",
+  "application_id": 987654321,
+  "attempts": 1,
+  "sent": "2019-10-30T16:19:20.129Z",
+  "actions": ["order"]
+}

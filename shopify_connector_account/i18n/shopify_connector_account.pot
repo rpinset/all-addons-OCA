@@ -579,6 +579,11 @@ msgid "Shopify Payments Balance Transaction"
 msgstr ""
 
 #. module: shopify_connector_account
+#: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__shopify_payments_checked_at
+msgid "Shopify Payments Checked At"
+msgstr ""
+
+#. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_dispute
 msgid "Shopify Payments Dispute"
 msgstr ""
@@ -789,6 +794,13 @@ msgstr ""
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__unmatched_count
 msgid "Unmatched Transactions"
+msgstr ""
+
+#. module: shopify_connector_account
+#: model:ir.model.fields,help:shopify_connector_account.field_shopify_instance__shopify_payments_checked_at
+msgid ""
+"When the payout import last checked whether Shopify Payments is active. An "
+"unavailable shop is checked again weekly."
 msgstr ""
 
 #. module: shopify_connector_account

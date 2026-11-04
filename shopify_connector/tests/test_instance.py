@@ -15,7 +15,7 @@ from odoo.tools.safe_eval import safe_eval
 
 from odoo.addons.queue_job.exception import RetryableJobError
 
-from ..lib.client import ShopifyUserError
+from ..lib.client import ShopifyError, ShopifyUserError
 from ..lib.webhook import verify_webhook_hmac
 from ..models import instance as instance_module
 from ..models.instance import REQUIRED_WEBHOOK_TOPICS
@@ -60,6 +60,49 @@ class TestShopifyInstance(TransactionCase):
             ),
             1,
         )
+
+    def test_cron_reconnects_an_instance_in_error_once_shopify_answers(self):
+        self.instance.state = "error"
+        logs = self.env["shopify.log"].search_count(
+            [("instance_id", "=", self.instance.id)]
+        )
+        client = Mock()
+        client.execute.side_effect = ShopifyError("Shopify is unavailable.")
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            self.env["shopify.instance"]._cron_retest_connections()
+
+        # Still failing: no state change and no log on every retest.
+        self.assertEqual(self.instance.state, "error")
+        self.assertEqual(
+            self.env["shopify.log"].search_count(
+                [("instance_id", "=", self.instance.id)]
+            ),
+            logs,
+        )
+
+        client.execute.side_effect = None
+        client.execute.return_value = {
+            "shop": {
+                "name": "Test Shop",
+                "currencyCode": self.instance.company_id.currency_id.name,
+            }
+        }
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            self.env["shopify.instance"]._cron_retest_connections()
+
+        self.assertEqual(self.instance.state, "connected")
+        log = self.env["shopify.log"].search(
+            [("instance_id", "=", self.instance.id)], order="id desc", limit=1
+        )
+        self.assertIn("restored automatically", log.message)
+
+    def test_cron_does_not_connect_a_draft_instance(self):
+        client = Mock()
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            self.env["shopify.instance"]._cron_retest_connections()
+
+        self.assertEqual(self.instance.state, "draft")
+        client.execute.assert_not_called()
 
     def test_repair_creates_all_missing_subscriptions(self):
         client = Mock()

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_mercadolibre_root"
+        name="Mercado Libre"
+        sequence="40"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+        action="action_mercadolibre_backend"
+    />
+    <menuitem
+        id="menu_mercadolibre_operations"
+        name="Operations"
+        parent="menu_mercadolibre_root"
+        sequence="10"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+    />
+    <menuitem
+        id="menu_mercadolibre_notification"
+        name="Notifications"
+        parent="menu_mercadolibre_operations"
+        sequence="10"
+        action="action_mercadolibre_notification"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+    />
+    <menuitem
+        id="menu_mercadolibre_configuration"
+        name="Configuration"
+        parent="menu_mercadolibre_root"
+        sequence="90"
+        groups="connector_mercadolibre.group_mercadolibre_manager"
+    />
+    <menuitem
+        id="menu_mercadolibre_backend"
+        name="Backends"
+        parent="menu_mercadolibre_configuration"
+        sequence="10"
+        action="action_mercadolibre_backend"
+        groups="connector_mercadolibre.group_mercadolibre_manager"
+    />
+</odoo>

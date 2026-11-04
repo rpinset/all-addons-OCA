@@ -476,22 +476,55 @@ class ShopifyInstance(models.Model):
                 "Could not record the failure of Shopify instance %s.", self.id
             )
 
+    def _fetch_shop_identity(self):
+        """Return the shop name and currency, or raise ShopifyError."""
+        self.ensure_one()
+        data = self._shopify_client().execute(SHOP_QUERY)
+        shop = data.get("shop", {})
+        shop_name = shop.get("name")
+        currency_code = shop.get("currencyCode")
+        currency = (
+            self.env["res.currency"]
+            .with_context(active_test=False)
+            .search([("name", "=", currency_code)], limit=1)
+        )
+        if not shop_name or not currency:
+            raise ShopifyError(
+                self.env._("Shopify did not return a supported shop identity.")
+            )
+        return shop_name, currency
+
+    @api.model
+    def _cron_retest_connections(self):
+        """Reconnect instances in error once Shopify answers again.
+
+        An instance in error is skipped by every synchronization cron, so
+        without this a transient failure of a connection test or webhook
+        repair stops the synchronization until someone tests it again.
+        """
+        for instance in self.search([("active", "=", True), ("state", "=", "error")]):
+            try:
+                shop_name, _currency = instance._fetch_shop_identity()
+            except (ShopifyError, UserError):
+                # Still failing: the instance stays in error, and each
+                # failure is not logged again.
+                continue
+            instance.state = "connected"
+            instance._write_log(
+                entity="instance",
+                direction="import",
+                level="info",
+                message=self.env._(
+                    "Connection to Shopify shop %s restored automatically.",
+                    shop_name,
+                ),
+                record=instance,
+            )
+
     def action_test_connection(self):
         self.ensure_one()
         try:
-            data = self._shopify_client().execute(SHOP_QUERY)
-            shop = data.get("shop", {})
-            shop_name = shop.get("name")
-            currency_code = shop.get("currencyCode")
-            currency = (
-                self.env["res.currency"]
-                .with_context(active_test=False)
-                .search([("name", "=", currency_code)], limit=1)
-            )
-            if not shop_name or not currency:
-                raise ShopifyError(
-                    self.env._("Shopify did not return a supported shop identity.")
-                )
+            shop_name, currency = self._fetch_shop_identity()
         except ShopifyError as exc:
             self._record_failure(
                 entity="instance",

@@ -164,6 +164,9 @@
                 </div>
 
                 <p t-field="doc.note" />
+                <p t-if="not is_html_empty(doc.payment_term_id.note)">
+                    <span t-field="doc.payment_term_id.note" />
+                </p>
                 <div id="oe_structure_div_02" class="oe_structure" />
             </div>
         </t>

@@ -1,0 +1,614 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* connector_mercadolibre
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-11-04 10:47+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__access_token
+msgid "Access Token"
+msgstr "Token di accesso"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__access_token_expires_at
+msgid "Access Token Expires At"
+msgstr "Scadenza del token di accesso"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Account"
+msgstr "Account"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__actions
+msgid "Actions"
+msgstr "Azioni"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_ids
+msgid "Activities"
+msgstr "Attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione eccezione attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_state
+msgid "Activity State"
+msgstr "Stato attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona tipo attività"
+
+#. module: connector_mercadolibre
+#: model:res.groups,comment:connector_mercadolibre.group_mercadolibre_manager
+msgid "Administrators who connect the seller and see secrets"
+msgstr ""
+"Amministratori che collegano il venditore e possono visualizzare i segreti"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__application_id
+msgid "Application"
+msgstr "Applicazione"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_search
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_attachment_count
+msgid "Attachment Count"
+msgstr "Numero di allegati"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__attempts
+msgid "Attempts"
+msgstr "Tentativi"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__auth_error
+msgid "Auth Error"
+msgstr "Errore di autenticazione"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__backend_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_notification_view_search
+msgid "Backend"
+msgstr "Backend"
+
+#. module: connector_mercadolibre
+#: model:ir.actions.act_window,name:connector_mercadolibre.action_mercadolibre_backend
+#: model:ir.ui.menu,name:connector_mercadolibre.menu_mercadolibre_backend
+msgid "Backends"
+msgstr "Backend"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__client_id
+msgid "Client ID"
+msgstr "ID client"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__client_secret
+msgid "Client Secret"
+msgstr "Segreto client"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__code_verifier
+msgid "Code Verifier"
+msgstr "Verificatore del codice"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__company_id
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__company_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_search
+msgid "Company"
+msgstr "Azienda"
+
+#. module: connector_mercadolibre
+#: model:ir.ui.menu,name:connector_mercadolibre.menu_mercadolibre_configuration
+msgid "Configuration"
+msgstr "Configurazione"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Connect"
+msgstr "Connetti"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_backend__state__connected
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_search
+msgid "Connected"
+msgstr "Connesso"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__create_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__create_date
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Credentials"
+msgstr "Credenziali"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Disconnect"
+msgstr "Disconnetti"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_binding__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_notification__state__done
+msgid "Done"
+msgstr "Completato"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_backend__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_notification__state__enqueued
+msgid "Enqueued"
+msgstr "Accodato"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_backend__state__error
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_binding__state__error
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_notification__state__error
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_search
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_notification_view_search
+msgid "Error"
+msgstr "Errore"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_binding__error_message
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__error_message
+msgid "Error Message"
+msgstr "Messaggio di errore"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/controllers/main.py:0
+msgid "Exchange Mercado Libre authorization code for %(name)s"
+msgstr "Scambia il codice di autorizzazione di Mercado Libre per %(name)s"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_follower_ids
+msgid "Followers"
+msgstr "Seguito da"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguido da (partner)"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome, es. fa-tasks"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__has_message
+msgid "Has Message"
+msgstr "Ha messaggi"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__id
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_binding__id
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__id
+msgid "ID"
+msgstr "ID"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona che indica un'attività in eccezione."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionato, i nuovi messaggi richiedono la tua attenzione."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionato, alcuni messaggi presentano un errore di consegna."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_is_follower
+msgid "Is Follower"
+msgstr "Segue"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__write_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__write_date
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_binding__sync_date
+msgid "Last synchronization date"
+msgstr "Data dell'ultima sincronizzazione"
+
+#. module: connector_mercadolibre
+#: model:res.groups,name:connector_mercadolibre.group_mercadolibre_manager
+msgid "Manager"
+msgstr "Responsabile"
+
+#. module: connector_mercadolibre
+#: model:ir.module.category,name:connector_mercadolibre.module_category_mercadolibre
+#: model:ir.ui.menu,name:connector_mercadolibre.menu_mercadolibre_root
+#: model:res.groups.privilege,name:connector_mercadolibre.privilege_mercadolibre
+msgid "Mercado Libre"
+msgstr "Mercado Libre"
+
+#. module: connector_mercadolibre
+#: model:ir.model,name:connector_mercadolibre.model_mercadolibre_backend
+msgid "Mercado Libre Backend"
+msgstr "Backend Mercado Libre"
+
+#. module: connector_mercadolibre
+#: model:ir.model,name:connector_mercadolibre.model_mercadolibre_binding
+msgid "Mercado Libre Binding"
+msgstr "Collegamento Mercado Libre"
+
+#. module: connector_mercadolibre
+#: model:ir.model,name:connector_mercadolibre.model_mercadolibre_notification
+msgid "Mercado Libre Notification"
+msgstr "Notifica Mercado Libre"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__user_id
+msgid "Mercado Libre User"
+msgstr "Utente Mercado Libre"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/controllers/main.py:0
+msgid "Mercado Libre backend not found."
+msgstr "Backend Mercado Libre non trovato."
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_notification.py:0
+msgid "Mercado Libre notification %(topic)s %(resource)s"
+msgstr "Notifica Mercado Libre %(topic)s %(resource)s"
+
+#. module: connector_mercadolibre
+#: model:ir.actions.server,name:connector_mercadolibre.ir_cron_refresh_tokens_ir_actions_server
+msgid "Mercado Libre: refresh access tokens"
+msgstr "Mercado Libre: aggiorna i token di accesso"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di consegna del messaggio"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/controllers/main.py:0
+msgid "Missing authorization code."
+msgstr "Codice di autorizzazione mancante."
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_backend.py:0
+msgid "Missing refresh token."
+msgstr "Token di aggiornamento mancante."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Scadenza della mia attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza della prossima attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo della prossima attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo della prossima attività"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__nickname
+msgid "Nickname"
+msgstr "Nomignolo"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__notification_ids
+msgid "Notification"
+msgstr "Notifica"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__notification_count
+msgid "Notification Count"
+msgstr "Numero di notifiche"
+
+#. module: connector_mercadolibre
+#: model:ir.actions.act_window,name:connector_mercadolibre.action_mercadolibre_notification
+#: model:ir.ui.menu,name:connector_mercadolibre.menu_mercadolibre_notification
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Notifications"
+msgstr "Notifiche"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errori di consegna"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/controllers/main.py:0
+msgid "Only Mercado Libre managers can connect a seller."
+msgstr "Solo i responsabili di Mercado Libre possono collegare un venditore."
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_notification.py:0
+msgid "Only Mercado Libre managers can requeue notifications."
+msgstr ""
+"Solo i responsabili di Mercado Libre possono accodare nuovamente le "
+"notifiche."
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_notification.py:0
+msgid "Only skipped or failed notifications can be requeued."
+msgstr ""
+"È possibile accodare nuovamente solo le notifiche ignorate o non riuscite."
+
+#. module: connector_mercadolibre
+#: model:ir.ui.menu,name:connector_mercadolibre.menu_mercadolibre_operations
+msgid "Operations"
+msgstr "Operazioni"
+
+#. module: connector_mercadolibre
+#: model:res.groups,comment:connector_mercadolibre.group_mercadolibre_user
+msgid "Operators who inspect backends and notifications"
+msgstr "Operatori che consultano i backend e le notifiche"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__payload
+msgid "Payload"
+msgstr "Carico"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_binding__state__pending
+msgid "Pending"
+msgstr "In attesa"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_notification__state__received
+msgid "Received"
+msgstr "Ricevuta"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__redirect_uri
+msgid "Redirect Uri"
+msgstr "URI di reindirizzamento"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_backend.py:0
+msgid "Refresh Mercado Libre token for %(name)s"
+msgstr "Aggiorna il token Mercado Libre per %(name)s"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__refresh_token
+msgid "Refresh Token"
+msgstr "Token di aggiornamento"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Refresh token"
+msgstr "Aggiorna token"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_notification_view_form
+msgid "Requeue"
+msgstr "Accoda nuovamente"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__resource
+msgid "Resource"
+msgstr "Risorsa"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__seller_id
+msgid "Seller ID"
+msgstr "ID venditore"
+
+#. module: connector_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_form
+msgid "Seller account"
+msgstr "Account venditore"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__sent
+msgid "Sent"
+msgstr "Inviata"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_notification.py:0
+msgid "Several Mercado Libre handlers match topic %(topic)s: %(names)s"
+msgstr ""
+"Più gestori di Mercado Libre corrispondono all'argomento %(topic)s: %(names)s"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__site_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_backend_view_search
+msgid "Site"
+msgstr "Sito"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_notification__state__skipped
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_notification_view_search
+msgid "Skipped"
+msgstr "Ignorata"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__state
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_binding__state
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__state
+msgid "State"
+msgstr "Stato"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stato basato sulle attività\n"
+"In ritardo: la data di scadenza è già passata\n"
+"Oggi: la data dell'attività è oggi\n"
+"Pianificata: attività future."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields.selection,name:connector_mercadolibre.selection__mercadolibre_binding__state__synced
+msgid "Synced"
+msgstr "Sincronizzato"
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/controllers/main.py:0
+msgid "The Mercado Libre callback is missing the backend."
+msgstr "Nel callback di Mercado Libre manca il backend."
+
+#. module: connector_mercadolibre
+#. odoo-python
+#: code:addons/connector_mercadolibre/models/mercadolibre_backend.py:0
+msgid "The site cannot change after the seller is connected."
+msgstr "Non è possibile modificare il sito dopo aver collegato il venditore."
+
+#. module: connector_mercadolibre
+#: model:ir.model.constraint,message:connector_mercadolibre.constraint_mercadolibre_notification_notification_unique
+msgid "This Mercado Libre notification was already received."
+msgstr "Questa notifica di Mercado Libre è già stata ricevuta."
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_notification__topic
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre.mercadolibre_notification_view_search
+msgid "Topic"
+msgstr "Argomento"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo di attività in eccezione sul record."
+
+#. module: connector_mercadolibre
+#: model:res.groups,name:connector_mercadolibre.group_mercadolibre_user
+msgid "User"
+msgstr "Utente"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__user_payload
+msgid "User Payload"
+msgstr "Payload utente"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__versions
+msgid "Versions"
+msgstr "Versioni"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,field_description:connector_mercadolibre.field_mercadolibre_backend__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi del sito web"
+
+#. module: connector_mercadolibre
+#: model:ir.model.fields,help:connector_mercadolibre.field_mercadolibre_backend__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia delle comunicazioni del sito web"

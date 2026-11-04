@@ -258,6 +258,12 @@ class ShopifyInstanceFinancialConfiguration(models.Model):
         default="unknown",
         readonly=True,
     )
+    shopify_payments_checked_at = fields.Datetime(
+        readonly=True,
+        copy=False,
+        help="When the payout import last checked whether Shopify Payments is "
+        "active. An unavailable shop is checked again weekly.",
+    )
     payout_journal_id = fields.Many2one(
         "account.journal",
         check_company=True,

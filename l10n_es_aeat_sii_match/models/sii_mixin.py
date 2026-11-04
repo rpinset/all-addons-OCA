@@ -1,9 +1,11 @@
 # Copyright 2018 Studio73 - Abraham Anes
 # Copyright 2019 Studio73 - Pablo Fuentes
 # Copyright 2022,2026 Tecnativa - Pedro M. Baeza
+# Copyright 2026 Tecnativa - Sergio Teruel
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import json
+import logging
 
 from deepdiff import DeepDiff
 from zeep.helpers import serialize_object
@@ -11,6 +13,8 @@ from zeep.helpers import serialize_object
 from odoo import Command, api, fields, models
 from odoo.modules.registry import Registry
 from odoo.tools import float_compare
+
+_logger = logging.getLogger(__name__)
 
 
 class SiiMixin(models.AbstractModel):
@@ -175,11 +179,14 @@ class SiiMixin(models.AbstractModel):
         """
         self.ensure_one()
         invoice_date = self._change_date_format(self._get_document_date())
-        partner = self._aeat_get_partner()
         company = self.company_id
         ejercicio = self._get_document_fiscal_year()
         periodo = self._get_document_period()
         number = self._get_document_serial_number()
+        # IDFactura already identifies the invoice, so the counterpart isn't
+        # used as a filter: if the partner identification changed after the
+        # invoice was sent, AEAT would reject the query (e.g. error 1149) or
+        # not find the invoice. Counterpart differences are reported as diffs.
         inv_dict = {
             "FiltroConsulta": {},
             "PeriodoLiquidacion": {"Ejercicio": ejercicio, "Periodo": periodo},
@@ -191,11 +198,6 @@ class SiiMixin(models.AbstractModel):
                 "FechaExpedicionFacturaEmisor": invoice_date,
             },
         }
-        if not self._is_aeat_simplified_invoice():
-            # Simplified invoices don't have counterpart
-            inv_dict["Contraparte"] = {"NombreRazon": partner.name[0:120]}
-            # Uso condicional de IDOtro/NIF
-            inv_dict["Contraparte"].update(self._get_sii_identifier())
         return inv_dict
 
     def _get_contrast_invoice_dict_in(self):
@@ -241,20 +243,37 @@ class SiiMixin(models.AbstractModel):
             inv_dict = document._get_contrast_invoice_dict()
             inv_vals = {"sii_match_sent": json.dumps(inv_dict, indent=4)}
             try:
-                res_line = False
                 if mapping_key in ["out_invoice", "out_refund"]:
                     res = serv.ConsultaLRFacturasEmitidas(header, inv_dict)
-                    res_line = res["RegistroRespuestaConsultaLRFacturasEmitidas"][0]
+                    res_lines = res["RegistroRespuestaConsultaLRFacturasEmitidas"]
                 elif mapping_key in ["in_invoice", "in_refund"]:
                     res = serv.ConsultaLRFacturasRecibidas(header, inv_dict)
-                    res_line = res["RegistroRespuestaConsultaLRFacturasRecibidas"][0]
-                match_vals = self._get_match_report_values(res_line)
-                inv_vals["sii_match_return"] = match_vals["sii_match_return"]
+                    res_lines = res["RegistroRespuestaConsultaLRFacturasRecibidas"]
+                res_line = res_lines[0] if res_lines else False
+                match_vals = document._get_match_report_values(res_line)
+                inv_vals["sii_match_return"] = match_vals.get("sii_match_return", False)
                 inv_vals["sii_match_state"] = match_vals["sii_match_state"]
                 inv_vals["sii_contrast_state"] = match_vals["sii_contrast_state"]
                 inv_vals["sii_match_difference_ids"] = [Command.clear()] + match_vals[
                     "sii_match_difference_ids"
                 ]
+                if (
+                    not document.sii_csv
+                    and match_vals["invoice_location"] == "both"
+                    and match_vals["csv"]
+                ):
+                    # The AEAT confirms this invoice is actually registered
+                    # (typical case: it was sent and accepted, but Odoo never
+                    # processed the response, e.g. a timeout) - recover the
+                    # real send state instead of leaving it stuck on error.
+                    inv_vals.update(
+                        {
+                            "sii_csv": match_vals["csv"],
+                            "aeat_state": "sent",
+                            "aeat_send_error": False,
+                            "aeat_send_failed": False,
+                        }
+                    )
                 document.write(inv_vals)
             except Exception as fault:
                 new_cr = Registry(self.env.cr.dbname).cursor()
@@ -269,3 +288,23 @@ class SiiMixin(models.AbstractModel):
                 new_cr.commit()
                 new_cr.close()
                 raise
+
+    def _send_sii_locked_documents(self, book, communication_type):
+        res = super()._send_sii_locked_documents(book, communication_type)
+        if not communication_type:  # cancellation
+            return res
+        # Try match invoice data with SII info in this case. It runs within the
+        # transaction of the request, so the results just stored are visible.
+        # TODO: Use other data like as a standard code instead of this string
+        duplicated = self.filtered(
+            lambda am: am.aeat_send_error == "3000 | Factura duplicada"
+        )
+        if duplicated:
+            # The AEAT already registered the request: a failed contrast must
+            # not roll back the storage of its results
+            try:
+                with self.env.cr.savepoint():
+                    duplicated._contrast_invoice_to_aeat()
+            except Exception:
+                _logger.exception("Error contrasting duplicated invoices with AEAT")
+        return res

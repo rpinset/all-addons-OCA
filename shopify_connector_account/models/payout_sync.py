@@ -25,6 +25,9 @@ from ..lib.payout import (
     plan_payout_entry,
 )
 
+# Shopify Payments can be activated after the connector found it unavailable.
+PAYMENTS_RECHECK_INTERVAL = timedelta(days=7)
+
 OPEN_DISPUTE_STATES = {
     "NEEDS_RESPONSE",
     "UNDER_REVIEW",
@@ -63,11 +66,16 @@ class ShopifyInstancePayoutSync(models.Model):
         today = fields.Date.context_today(self)
         date_from = fields.Date.to_string(today - timedelta(days=7))
         date_to = fields.Date.to_string(today)
+        recheck_before = fields.Datetime.now() - PAYMENTS_RECHECK_INTERVAL
         for instance in self.search(
             [
                 ("active", "=", True),
                 ("state", "=", "connected"),
+                "|",
                 ("shopify_payments_state", "!=", "unavailable"),
+                "|",
+                ("shopify_payments_checked_at", "=", False),
+                ("shopify_payments_checked_at", "<", recheck_before),
             ]
         ):
             instance.with_delay(
@@ -85,6 +93,14 @@ class ShopifyInstancePayoutSync(models.Model):
                 ),
                 record=instance,
             )
+
+    def _set_shopify_payments_state(self, state):
+        self.write(
+            {
+                "shopify_payments_state": state,
+                "shopify_payments_checked_at": fields.Datetime.now(),
+            }
+        )
 
     def _payments_page(self, query, variables, connection):
         self.ensure_one()
@@ -118,7 +134,7 @@ class ShopifyInstancePayoutSync(models.Model):
                 "payouts",
             )
         except ShopifyUserError as exc:
-            self.shopify_payments_state = "unavailable"
+            self._set_shopify_payments_state("unavailable")
             self._write_log(
                 entity="payout",
                 direction="import",
@@ -128,7 +144,7 @@ class ShopifyInstancePayoutSync(models.Model):
             )
             return []
         if not account or not account.get("activated"):
-            self.shopify_payments_state = "unavailable"
+            self._set_shopify_payments_state("unavailable")
             self._write_log(
                 entity="payout",
                 direction="import",
@@ -137,7 +153,7 @@ class ShopifyInstancePayoutSync(models.Model):
                 record=self,
             )
             return []
-        self.shopify_payments_state = "enabled"
+        self._set_shopify_payments_state("enabled")
         imported = self.env["shopify.payout"]
         for payload in payloads:
             payout = self._upsert_payout(normalize_payout(payload))

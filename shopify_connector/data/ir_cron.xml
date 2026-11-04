@@ -20,6 +20,16 @@
         <field name="active" eval="True" />
     </record>
 
+    <record id="ir_cron_retest_shopify_connections" model="ir.cron">
+        <field name="name">Shopify: Retest failed connections (hourly)</field>
+        <field name="model_id" ref="model_shopify_instance" />
+        <field name="state">code</field>
+        <field name="code">model._cron_retest_connections()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="active" eval="True" />
+    </record>
+
     <record id="ir_cron_reconcile_shopify_products" model="ir.cron">
         <field name="name">Shopify Drift: Products (daily)</field>
         <field name="model_id" ref="model_shopify_instance" />

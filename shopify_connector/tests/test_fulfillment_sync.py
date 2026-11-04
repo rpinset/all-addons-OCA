@@ -1,12 +1,21 @@
 from unittest.mock import MagicMock, patch
 
-from odoo.exceptions import AccessError
+from odoo import fields
+from odoo.exceptions import AccessError, UserError
 from odoo.tests.common import TransactionCase, new_test_user
 
+from ..graphql.fulfillment import (
+    FULFILLMENT_BY_ID_QUERY,
+    FULFILLMENT_CREATE_MUTATION,
+    ORDER_FULFILLMENT_ORDERS_QUERY,
+    ORDER_FULFILLMENTS_QUERY,
+)
 from ..lib.fulfillment import (
     FulfillmentAllocationError,
     allocate_fulfillment_lines,
 )
+
+LOCATION_ID = "gid://shopify/Location/650"
 
 
 class TestShopifyFulfillmentSync(TransactionCase):
@@ -302,3 +311,273 @@ class TestShopifyFulfillmentSync(TransactionCase):
         self.env.invalidate_all()
         with self.assertRaises(AccessError):
             picking.with_user(stock_user).shopify_fulfillment_ids.mapped("shopify_id")
+
+    def _delivered_picking(self):
+        self.env["shopify.location"].create(
+            {
+                "instance_id": self.instance.id,
+                "shopify_id": LOCATION_ID,
+                "legacy_resource_id": "650",
+                "name": "Fulfillment Location",
+                "active": True,
+                "state": "synced",
+                "warehouse_id": self.warehouse.id,
+                "odoo_location_id": self.warehouse.lot_stock_id.id,
+            }
+        )
+        self.env["stock.quant"]._update_available_quantity(
+            self.product, self.warehouse.lot_stock_id, 1
+        )
+        self.sale.action_confirm()
+        picking = self.sale.picking_ids
+        picking.action_assign()
+        picking.move_ids.quantity = 1
+        picking.with_context(skip_shopify_fulfillment_push=True).button_validate()
+        self.assertEqual(picking.state, "done")
+        return picking
+
+    def _unconfirmed_attempt(self, picking):
+        # A push whose fulfillmentCreate response was lost: Shopify may or may
+        # not have created the fulfillment.
+        return self.env["shopify.fulfillment"].create(
+            {
+                "instance_id": self.instance.id,
+                "order_binding_id": self.order_binding.id,
+                "picking_id": picking.id,
+                "idempotency_key": f"picking:{picking.id}",
+                "origin": "odoo",
+                "location_shopify_id": LOCATION_ID,
+                "state": "error",
+                "error_message": "Read timed out.",
+            }
+        )
+
+    def _shopify_fulfillment(self, number, *, quantity=1):
+        return {
+            "id": f"gid://shopify/Fulfillment/{number}",
+            "status": "SUCCESS",
+            "createdAt": fields.Datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "updatedAt": fields.Datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "order": {"id": self.order_binding.shopify_id},
+            "location": {"id": LOCATION_ID},
+            "trackingInfo": [],
+            "fulfillmentLineItems": {
+                "nodes": [
+                    {
+                        "quantity": quantity,
+                        "lineItem": {"id": self.line_binding.shopify_id},
+                    }
+                ]
+            },
+        }
+
+    def _client(self, fulfillments, remaining_quantity=0):
+        fulfillment_order = {
+            "id": "gid://shopify/FulfillmentOrder/660",
+            "status": "OPEN" if remaining_quantity else "CLOSED",
+            "assignedLocation": {"location": {"id": LOCATION_ID, "name": "Main"}},
+            "supportedActions": [],
+            "fulfillmentHolds": [],
+            "lineItems": {
+                "nodes": [
+                    {
+                        "id": "gid://shopify/FulfillmentOrderLineItem/661",
+                        "totalQuantity": 1,
+                        "remainingQuantity": remaining_quantity,
+                        "lineItem": {"id": self.line_binding.shopify_id},
+                    }
+                ]
+            },
+        }
+
+        def execute(query, variables=None):
+            if query == ORDER_FULFILLMENTS_QUERY:
+                return {
+                    "order": {
+                        "id": self.order_binding.shopify_id,
+                        "fulfillments": fulfillments,
+                    }
+                }
+            if query == ORDER_FULFILLMENT_ORDERS_QUERY:
+                return {
+                    "order": {
+                        "id": self.order_binding.shopify_id,
+                        "fulfillmentOrders": {"nodes": [fulfillment_order]},
+                        "fulfillments": [{"id": item["id"]} for item in fulfillments],
+                    }
+                }
+            if query == FULFILLMENT_BY_ID_QUERY:
+                return {
+                    "fulfillment": next(
+                        item for item in fulfillments if item["id"] == variables["id"]
+                    )
+                }
+            if query == FULFILLMENT_CREATE_MUTATION:
+                return {
+                    "fulfillmentCreate": {
+                        "fulfillment": {
+                            "id": "gid://shopify/Fulfillment/690",
+                            "status": "SUCCESS",
+                        },
+                        "userErrors": [],
+                    }
+                }
+            raise AssertionError(f"Unexpected Shopify query: {query}")
+
+        client = MagicMock()
+        client.execute.side_effect = execute
+        return client
+
+    def _executed(self, client, query):
+        return [call for call in client.execute.call_args_list if call.args[0] == query]
+
+    def test_unconfirmed_push_binds_the_fulfillment_shopify_created(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        client = self._client([self._shopify_fulfillment(670)])
+
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            result = self.order_binding._job_push_picking_fulfillment(picking.id)
+
+        self.assertEqual(result, attempt.id)
+        self.assertEqual(attempt.shopify_id, "gid://shopify/Fulfillment/670")
+        self.assertEqual(attempt.state, "synced")
+        self.assertFalse(attempt.error_message)
+        self.assertFalse(self._executed(client, FULFILLMENT_CREATE_MUTATION))
+
+    def test_unconfirmed_push_is_sent_again_when_shopify_has_nothing(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        # An older fulfillment of the order, created before the attempt, is
+        # not a candidate.
+        older = self._shopify_fulfillment(671)
+        older["createdAt"] = "2020-01-01T00:00:00Z"
+        client = self._client([older], remaining_quantity=1)
+
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            result = self.order_binding._job_push_picking_fulfillment(picking.id)
+
+        self.assertFalse(attempt.exists())
+        binding = self.env["shopify.fulfillment"].browse(result)
+        self.assertEqual(binding.shopify_id, "gid://shopify/Fulfillment/690")
+        self.assertEqual(binding.picking_id, picking)
+        self.assertEqual(binding.state, "synced")
+        self.assertEqual(len(self._executed(client, FULFILLMENT_CREATE_MUTATION)), 1)
+
+    def test_unconfirmed_push_with_several_candidates_stays_blocked(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        client = self._client(
+            [self._shopify_fulfillment(672), self._shopify_fulfillment(673)]
+        )
+
+        with (
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+            self.assertRaisesRegex(UserError, "Fulfillment/672.*Fulfillment/673"),
+        ):
+            self.order_binding._job_push_picking_fulfillment(picking.id)
+
+        self.assertFalse(attempt.shopify_id)
+        self.assertFalse(self._executed(client, FULFILLMENT_CREATE_MUTATION))
+
+    def test_unconfirmed_push_adopts_its_webhook_import(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        payload = self._shopify_fulfillment(674)
+        # The webhook arrived first and imported the push as external.
+        imported = self.env["shopify.fulfillment"].create(
+            {
+                "instance_id": self.instance.id,
+                "order_binding_id": self.order_binding.id,
+                "shopify_id": payload["id"],
+                "origin": "shopify",
+                "state": "synced",
+            }
+        )
+        client = self._client([payload])
+
+        with patch.object(type(self.instance), "_shopify_client", return_value=client):
+            result = self.order_binding._job_push_picking_fulfillment(picking.id)
+
+        self.assertEqual(result, imported.id)
+        self.assertFalse(attempt.exists())
+        self.assertEqual(imported.origin, "odoo")
+        self.assertEqual(imported.picking_id, picking)
+        self.assertEqual(imported.idempotency_key, f"picking:{picking.id}")
+        self.assertFalse(self._executed(client, FULFILLMENT_CREATE_MUTATION))
+
+    def test_missed_fulfillment_import_recognises_an_unconfirmed_push(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        client = self._client([self._shopify_fulfillment(676)])
+        fulfillment_model = self.env["shopify.fulfillment"]
+
+        # The refresh queues the import of fulfillments Odoo does not know;
+        # run that import right away.
+        with (
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+            patch.object(
+                type(fulfillment_model), "with_delay", return_value=fulfillment_model
+            ),
+            patch.object(
+                type(fulfillment_model), "_auto_validate_external"
+            ) as auto_validate,
+        ):
+            self.order_binding._job_refresh_fulfillment_orders()
+
+        self.assertEqual(attempt.shopify_id, "gid://shopify/Fulfillment/676")
+        self.assertEqual(attempt.origin, "odoo")
+        self.assertEqual(attempt.state, "synced")
+        self.assertEqual(
+            fulfillment_model.search_count(
+                [("shopify_id", "=", "gid://shopify/Fulfillment/676")]
+            ),
+            1,
+        )
+        auto_validate.assert_not_called()
+
+    def test_webhook_of_unconfirmed_push_is_treated_as_echo(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+        payload = self._shopify_fulfillment(675)
+        client = MagicMock()
+        client.execute.return_value = {"fulfillment": payload}
+
+        with (
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+            patch.object(
+                type(attempt),
+                "_auto_validate_external",
+            ) as auto_validate,
+        ):
+            result = self.env["shopify.fulfillment"]._job_import_from_shopify(
+                self.instance.id,
+                payload["id"],
+                {"order_id": 610, "status": "success"},
+            )
+
+        self.assertEqual(result, attempt.id)
+        self.assertEqual(attempt.shopify_id, payload["id"])
+        self.assertEqual(attempt.origin, "odoo")
+        self.assertEqual(attempt.state, "synced")
+        auto_validate.assert_not_called()
+
+    def test_retry_of_unconfirmed_push_queues_the_push(self):
+        picking = self._delivered_picking()
+        attempt = self._unconfirmed_attempt(picking)
+
+        with (
+            patch.object(
+                type(self.order_binding),
+                "with_delay",
+                return_value=self.order_binding,
+            ),
+            patch.object(
+                type(self.order_binding),
+                "_job_push_picking_fulfillment",
+                return_value=True,
+            ) as push,
+        ):
+            attempt.action_retry_sync()
+
+        push.assert_called_once_with(picking.id)

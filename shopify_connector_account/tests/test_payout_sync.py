@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 from unittest.mock import Mock, patch
 
 from odoo.exceptions import ValidationError
@@ -303,6 +303,36 @@ class TestShopifyPayoutSync(TransactionCase):
 
         self.instance.active = False
         self.assertFalse(dispute._shopify_enqueue_fresh_retry())
+
+    def test_unavailable_shopify_payments_is_checked_again_weekly(self):
+        instance_model = type(self.instance)
+
+        def queued_instances():
+            delayed = Mock()
+            with patch.object(
+                instance_model, "with_delay", autospec=True, return_value=delayed
+            ) as with_delay:
+                self.env["shopify.instance"]._cron_import_shopify_payouts()
+            return [call.args[0] for call in with_delay.call_args_list]
+
+        with patch.object(
+            instance_model,
+            "_payments_page",
+            autospec=True,
+            return_value=({"activated": False}, []),
+        ):
+            self.instance._job_import_payouts()
+        self.assertEqual(self.instance.shopify_payments_state, "unavailable")
+        self.assertTrue(self.instance.shopify_payments_checked_at)
+
+        # Checked recently: the daily cron leaves the shop alone.
+        self.assertNotIn(self.instance, queued_instances())
+
+        # A week later, the cron checks whether Shopify Payments is active now.
+        self.instance.shopify_payments_checked_at = (
+            self.instance.shopify_payments_checked_at - timedelta(days=8)
+        )
+        self.assertIn(self.instance, queued_instances())
 
     def test_cron_manual_action_and_payout_retry_enqueue_exact_jobs(self):
         payout = self._payout("queue", "404")

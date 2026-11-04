@@ -505,6 +505,13 @@ class ShopifyInstanceOrderConfig(models.Model):
         help="Import Shopify draft orders as quotations. An order created from a "
         "draft order then continues on the quotation of its draft order.",
     )
+    order_use_shopify_name = fields.Boolean(
+        string="Use Shopify Order Name",
+        help="Name the sale orders created from Shopify after their Shopify order, "
+        "such as #1001, instead of the Odoo sequence. Sale orders already in Odoo "
+        "keep their name. Two stores of the same company can both send an order "
+        "#1001, so their sale orders get the same name.",
+    )
     placeholder_product_id = fields.Many2one(
         "product.product", check_company=True, ondelete="restrict"
     )

@@ -175,7 +175,33 @@ def _normalise_line(payload: dict[str, Any], currency: str) -> dict[str, Any]:
             "currentTotalSet",
         )
     )
-    if all_discount_unit:
+    raw_allocations = payload.get("discountAllocations")
+    if raw_allocations is None:
+        raw_allocations = payload.get("discount_allocations")
+    discount_allocations = [
+        _discount_allocation(item, currency) for item in _nodes(raw_allocations)
+    ]
+    if (
+        all_discount_unit
+        and raw_allocations is not None
+        and quantity == original_quantity
+    ):
+        # The discounted unit price is rounded to the cent, so multiplying it
+        # by the quantity can miss the line total by up to half a cent a unit.
+        discounted_total = {}
+        for side in ("shop", "presentment"):
+            amount = decimal_amount(unit[side]["amount"]) * quantity - sum(
+                (
+                    decimal_amount(item["amount"][side]["amount"])
+                    for item in discount_allocations
+                ),
+                Decimal("0"),
+            )
+            discounted_total[side] = {
+                "amount": format(amount, "f"),
+                "currency": unit[side]["currency"],
+            }
+    elif all_discount_unit:
         normalized_unit = money_bag(all_discount_unit, fallback_currency=currency)
         discounted_total = {
             side: {
@@ -244,13 +270,7 @@ def _normalise_line(payload: dict[str, Any], currency: str) -> dict[str, Any]:
         ),
         "unit_price": unit,
         "discounted_total": discounted_total,
-        "discount_allocations": [
-            _discount_allocation(item, currency)
-            for item in _nodes(
-                payload.get("discountAllocations")
-                or payload.get("discount_allocations")
-            )
-        ],
+        "discount_allocations": discount_allocations,
         "tax_lines": [
             _tax_line(item, currency)
             for item in _nodes(payload.get("taxLines") or payload.get("tax_lines"))

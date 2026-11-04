@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_notification_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.notification.list</field>
+        <field name="model">mercadolibre.notification</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sent" />
+                <field name="topic" />
+                <field name="resource" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-danger="state == 'error'"
+                    decoration-success="state == 'done'"
+                    decoration-muted="state == 'skipped'"
+                />
+                <field name="backend_id" />
+                <field name="attempts" optional="show" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_notification_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.notification.form</field>
+        <field name="model">mercadolibre.notification</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="button_requeue"
+                        type="object"
+                        string="Requeue"
+                        invisible="state not in ('error', 'skipped')"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="backend_id" />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                            <field name="topic" />
+                            <field name="resource" />
+                            <field name="sent" />
+                        </group>
+                        <group>
+                            <field name="user_id" />
+                            <field name="application_id" />
+                            <field name="attempts" />
+                            <field name="actions" />
+                            <field name="error_message" />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="payload" widget="json" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mercadolibre_notification_view_search" model="ir.ui.view">
+        <field name="name">mercadolibre.notification.search</field>
+        <field name="model">mercadolibre.notification</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="topic" />
+                <field name="resource" />
+                <field name="backend_id" />
+                <filter
+                    name="error"
+                    string="Error"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="skipped"
+                    string="Skipped"
+                    domain="[('state', '=', 'skipped')]"
+                />
+                <group>
+                    <filter
+                        name="group_topic"
+                        string="Topic"
+                        context="{'group_by': 'topic'}"
+                    />
+                    <filter
+                        name="group_backend"
+                        string="Backend"
+                        context="{'group_by': 'backend_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_notification" model="ir.actions.act_window">
+        <field name="name">Notifications</field>
+        <field name="res_model">mercadolibre.notification</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="mercadolibre_notification_view_search" />
+    </record>
+</odoo>

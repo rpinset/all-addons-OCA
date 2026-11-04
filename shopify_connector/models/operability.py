@@ -148,6 +148,12 @@ class ShopifyBindingOperations(models.AbstractModel):
                 self.env["shopify.fulfillment"].with_delay(
                     **self._shopify_retry_options()
                 )._job_import_from_shopify(instance.id, self.shopify_id)
+            elif self.origin == "odoo" and self.picking_id:
+                # An unconfirmed push: the job binds what Shopify created, or
+                # sends the delivery again when Shopify holds nothing.
+                self.order_binding_id.with_delay(
+                    **self._shopify_retry_options()
+                )._job_push_picking_fulfillment(self.picking_id.id)
             else:
                 self.order_binding_id.with_delay(
                     **self._shopify_retry_options()

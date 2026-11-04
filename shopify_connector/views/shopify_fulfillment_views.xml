@@ -271,9 +271,15 @@
                         </group>
                         <group string="Shopify to Odoo">
                             <field name="fulfillment_auto_validate_webhook" />
+                            <field
+                                name="fulfillment_validate_unreserved"
+                                invisible="not fulfillment_auto_validate_webhook"
+                            />
                             <p class="text-muted">
-                                Disabled is log-only. Enable only when external
-                                fulfillment apps are authoritative for shipping.
+                                Enable when orders are shipped from Shopify or a
+                                fulfillment app instead of Odoo. When disabled,
+                                these fulfillments are only imported, and their
+                                deliveries are validated by hand.
                             </p>
                         </group>
                     </group>

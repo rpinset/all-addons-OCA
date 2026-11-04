@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.module.category" id="module_category_mercadolibre">
+        <field name="name">Mercado Libre</field>
+        <field name="sequence">25</field>
+    </record>
+    <record model="res.groups.privilege" id="privilege_mercadolibre">
+        <field name="name">Mercado Libre</field>
+        <field name="sequence">25</field>
+        <field name="category_id" ref="module_category_mercadolibre" />
+    </record>
+    <record id="group_mercadolibre_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="sequence">10</field>
+        <field name="privilege_id" ref="privilege_mercadolibre" />
+        <field name="comment">Operators who inspect backends and notifications</field>
+    </record>
+    <record id="group_mercadolibre_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="sequence">20</field>
+        <field name="privilege_id" ref="privilege_mercadolibre" />
+        <field name="implied_ids" eval="[(4, ref('group_mercadolibre_user'))]" />
+        <field
+            name="comment"
+        >Administrators who connect the seller and see secrets</field>
+    </record>
+
+    <record id="mercadolibre_backend_company_rule" model="ir.rule">
+        <field name="name">Mercado Libre backend multi-company</field>
+        <field name="model_id" ref="model_mercadolibre_backend" />
+        <field
+            name="domain_force"
+        >['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        <field name="groups" eval="[(4, ref('group_mercadolibre_user'))]" />
+    </record>
+    <record id="mercadolibre_notification_company_rule" model="ir.rule">
+        <field name="name">Mercado Libre notification multi-company</field>
+        <field name="model_id" ref="model_mercadolibre_notification" />
+        <field name="domain_force">[
+            '|',
+            ('backend_id.company_id', '=', False),
+            ('backend_id.company_id', 'in', company_ids),
+        ]</field>
+        <field name="groups" eval="[(4, ref('group_mercadolibre_user'))]" />
+    </record>
+</odoo>

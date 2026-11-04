@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="queue.job.channel" id="channel_mercadolibre">
+        <field name="name">mercadolibre</field>
+        <field name="parent_id" ref="queue_job.channel_root" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record model="queue.job.channel" id="channel_mercadolibre_import">
+        <field name="name">import</field>
+        <field name="parent_id" ref="channel_mercadolibre" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record model="queue.job.channel" id="channel_mercadolibre_export">
+        <field name="name">export</field>
+        <field name="parent_id" ref="channel_mercadolibre" />
+        <field name="removal_interval">30</field>
+    </record>
+    <record model="queue.job.channel" id="channel_mercadolibre_webhook">
+        <field name="name">webhook</field>
+        <field name="parent_id" ref="channel_mercadolibre" />
+        <field name="removal_interval">30</field>
+    </record>
+
+    <record id="job_exchange_code" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_backend" />
+        <field name="method">_job_exchange_code</field>
+        <field name="channel_id" ref="channel_mercadolibre_webhook" />
+    </record>
+    <record id="job_refresh_token" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_backend" />
+        <field name="method">_job_refresh_token</field>
+        <field name="channel_id" ref="channel_mercadolibre_webhook" />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_dispatch_notification" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_notification" />
+        <field name="method">_job_dispatch</field>
+        <field name="channel_id" ref="channel_mercadolibre_webhook" />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+</odoo>

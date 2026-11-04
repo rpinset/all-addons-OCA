@@ -261,7 +261,6 @@ class ShopifyCustomerSync(models.Model):
             ],
             limit=1,
         )
-        is_new_partner = False
         if binding:
             partner = binding.odoo_id
         else:
@@ -273,18 +272,21 @@ class ShopifyCustomerSync(models.Model):
                 limit=1,
             )
             partner = company_contact.odoo_id or self._match_partner(instance, customer)
-            if not partner:
+            is_new_partner = not partner
+            if is_new_partner:
                 partner = (
                     self.env["res.partner"]
                     .with_context(shopify_customer_import=True)
                     .create(self._new_partner_values(instance, customer))
                 )
-                is_new_partner = True
+            # The binding outlives a failed first import, so it remembers that
+            # the new partner still needs every field seeded from Shopify.
             binding = self.create(
                 {
                     "instance_id": instance.id,
                     "shopify_id": customer["id"],
                     "odoo_id": partner.id,
+                    "initial_seed_pending": is_new_partner,
                 }
             )
         try:
@@ -292,7 +294,7 @@ class ShopifyCustomerSync(models.Model):
                 self._apply_customer(
                     binding,
                     customer,
-                    seed_all=is_new_partner,
+                    seed_all=binding.initial_seed_pending,
                     complete_snapshot=complete_snapshot,
                 )
         except Exception as exc:
@@ -312,6 +314,7 @@ class ShopifyCustomerSync(models.Model):
                 "tax_exempt": customer["tax_exempt"],
                 "external_updated_at": _utc_datetime(customer["updated_at"]),
                 "last_sync_date": fields.Datetime.now(),
+                "initial_seed_pending": False,
                 "state": "synced",
                 "error_message": False,
             }

@@ -1,12 +1,12 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-11-01 10:42 UTC
+Generated 2026-11-04 21:06 UTC
 
 Total skipped: **136**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **29**
+Count: **30**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -19,6 +19,7 @@ Count: **29**
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | [19.0](https://github.com/OCA/oca-apps-store/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | [19.0](https://github.com/OCA/oca-ci/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | [19.0](https://github.com/OCA/oca-custom/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
+| [oca-demo](https://github.com/OCA/oca-demo) | [19.0](https://github.com/OCA/oca-demo/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | [19.0](https://github.com/OCA/oca-github-bot/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | [19.0](https://github.com/OCA/oca-port/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [oca-weblate-deployment](https://github.com/OCA/oca-weblate-deployment) | [19.0](https://github.com/OCA/oca-weblate-deployment/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
@@ -42,7 +43,7 @@ Count: **29**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **107**
+Count: **106**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -60,7 +61,6 @@ Count: **107**
 | [connector-lengow](https://github.com/OCA/connector-lengow) | [19.0](https://github.com/OCA/connector-lengow/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-magento](https://github.com/OCA/connector-magento) | [19.0](https://github.com/OCA/connector-magento/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-mautic](https://github.com/OCA/connector-mautic) | [19.0](https://github.com/OCA/connector-mautic/tree/19.0) | No directory with __manifest__.py at repo root |
-| [connector-mercadolibre](https://github.com/OCA/connector-mercadolibre) | [19.0](https://github.com/OCA/connector-mercadolibre/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-odoo2odoo](https://github.com/OCA/connector-odoo2odoo) | [19.0](https://github.com/OCA/connector-odoo2odoo/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-prestashop](https://github.com/OCA/connector-prestashop) | [19.0](https://github.com/OCA/connector-prestashop/tree/19.0) | No directory with __manifest__.py at repo root |
 | [connector-redmine](https://github.com/OCA/connector-redmine) | [19.0](https://github.com/OCA/connector-redmine/tree/19.0) | No directory with __manifest__.py at repo root |

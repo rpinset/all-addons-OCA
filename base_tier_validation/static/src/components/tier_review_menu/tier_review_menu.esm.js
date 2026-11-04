@@ -1,10 +1,13 @@
-import {Component, useState} from "@odoo/owl";
+import {Component, onWillDestroy, useState} from "@odoo/owl";
 import {Dropdown} from "@web/core/dropdown/dropdown";
+import {browser} from "@web/core/browser/browser";
 import {registry} from "@web/core/registry";
-import {useDebounced} from "@web/core/utils/timing";
 import {useDiscussSystray} from "@mail/utils/common/hooks";
 import {useDropdownState} from "@web/core/dropdown/dropdown_hooks";
 import {useService} from "@web/core/utils/hooks";
+
+// Minimum time between two recounts triggered by bus notifications (ms).
+export const RECOUNT_INTERVAL = 2000;
 
 export class TierReviewMenu extends Component {
     static components = {Dropdown};
@@ -21,31 +24,46 @@ export class TierReviewMenu extends Component {
         this.dropdown = useDropdownState();
         this.fetchPending = false;
         this.fetchRunning = false;
+        this.lastFetch = 0;
+        this.recountTimer = null;
+        onWillDestroy(() => browser.clearTimeout(this.recountTimer));
         // Keep the badge live and correct: re-fetch the authoritative count
         // whenever a tier review changes server-side, instead of nudging a
         // running +/- delta. The absolute value is a len() and so can never go
         // negative, which a delta could when an update reaches a user for whom
         // the review was never part of their pending count.
         //
-        // That re-fetch is not free: ``review_user_count`` costs a handful of
-        // queries per pending review, and the notification is broadcast to
-        // every reviewer. Approving a batch of documents therefore fans out to
-        // (reviewers x open tabs x documents) recounts, which is enough to
-        // occupy every HTTP worker. Coalesce the bursts: the leading edge keeps
-        // an isolated change instant, the trailing edge settles the final value.
-        this.debouncedFetch = useDebounced(() => this.fetchSystrayReviewer(), 15000, {
-            immediate: true,
-            trailing: true,
-        });
+        // That re-fetch is not free: ``review_user_count`` runs a few queries
+        // per reviewed model, and the notification reaches every reviewer of
+        // the document. The server sends one notification per reviewer per
+        // transaction, and ``scheduleRecount`` throttles what is left.
         this.fetchSystrayReviewer();
         this.busService.subscribe("base.tier.validation/updated", () =>
-            this.debouncedFetch()
+            this.scheduleRecount()
         );
         this.busService.start();
     }
 
+    scheduleRecount() {
+        // Throttle, not debounce: a burst of changes is coalesced into at most
+        // one recount per RECOUNT_INTERVAL, but the badge never lags further
+        // behind, however long the burst lasts.
+        if (this.recountTimer) {
+            return;
+        }
+        const wait = this.lastFetch + RECOUNT_INTERVAL - Date.now();
+        if (wait <= 0) {
+            this.fetchSystrayReviewer();
+            return;
+        }
+        this.recountTimer = browser.setTimeout(() => {
+            this.recountTimer = null;
+            this.fetchSystrayReviewer();
+        }, wait);
+    }
+
     async fetchSystrayReviewer() {
-        // A recount can outlast the debounce window on a busy database. Never
+        // A recount can outlast the throttle window on a busy database. Never
         // let them overlap: remember that something changed and re-run once,
         // instead of stacking concurrent calls on top of a slow one.
         if (this.fetchRunning) {
@@ -53,6 +71,7 @@ export class TierReviewMenu extends Component {
             return;
         }
         this.fetchRunning = true;
+        this.lastFetch = Date.now();
         try {
             const groups = await this.orm.call("res.users", "review_user_count");
             let total = 0;

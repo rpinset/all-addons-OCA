@@ -2,6 +2,7 @@
 # Copyright (c) 2022 brain-tec AG (https://braintec.com)
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
+import json
 from unittest import mock
 
 from lxml import etree
@@ -128,6 +129,9 @@ class TierTierValidation(CommonTierValidation):
         record = self.test_record.with_user(self.test_user_1.id)
         with self.assertRaises(ValidationError):
             record.write({"test_field": 0.5})
+        # Cancelling is still allowed, and removes the pending reviews.
+        self.test_record.write({"state": "cancel"})
+        self.assertFalse(self.test_record.review_ids)
 
     def test_06_validation_process_open(self):
         """Operation forbidden while a validation process is open."""
@@ -192,6 +196,28 @@ class TierTierValidation(CommonTierValidation):
                 "pending_count"
             ],
             1,
+        )
+
+    def test_10_systray_counter_one_notification_per_reviewer(self):
+        """Validating several records in one transaction sends one bus
+        notification per reviewer, not one per record."""
+        # Two sequential tiers: user 1, then user 2.
+        records = self.test_model.create([{"test_field": 4.0}] * 3)
+        records.request_validation()
+        self.env.cr.precommit.run()
+        last_id = self.env["bus.bus"].search([], order="id desc", limit=1).id
+        for record in records.with_user(self.test_user_1):
+            record.validate_tier()
+        self.env.cr.precommit.run()
+        notifications = self.env["bus.bus"].search(
+            [
+                ("id", ">", last_id),
+                ("message", "like", "base.tier.validation/updated"),
+            ]
+        )
+        self.assertEqual(
+            sorted(json.loads(n.channel)[-1] for n in notifications),
+            sorted((self.test_user_1 | self.test_user_2).partner_id.ids),
         )
 
     def test_11_add_comment(self):

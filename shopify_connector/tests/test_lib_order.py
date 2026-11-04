@@ -84,6 +84,41 @@ class TestShopifyLibOrder(TransactionCase):
         assert line["original_quantity"] == 3
         assert line["discounted_total"]["shop"]["amount"] == "20.00"
 
+    def test_discounted_total_subtracts_allocations_from_original_price(self):
+        # Shopify rounds the discounted unit price to the cent, so unit price
+        # times quantity drifts from the amount Shopify charged for the line.
+        for quantity, unit, discount, rounded_unit, expected in (
+            (3, "10.00", "10.00", "6.67", "20.00"),
+            (7, "19.99", "10.00", "18.56", "129.93"),
+            (48, "8.50", "50.00", "7.46", "358.00"),
+        ):
+            order = normalize_order_payload(
+                {
+                    "id": "gid://shopify/Order/1",
+                    "name": "#1001",
+                    "currencyCode": "USD",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "gid://shopify/LineItem/1",
+                                "quantity": quantity,
+                                "currentQuantity": quantity,
+                                "originalUnitPriceSet": bag(unit, unit),
+                                "discountedUnitPriceAfterAllDiscountsSet": bag(
+                                    rounded_unit, rounded_unit
+                                ),
+                                "discountAllocations": [
+                                    {"allocatedAmountSet": bag(discount, discount)}
+                                ],
+                            }
+                        ]
+                    },
+                }
+            )
+            total = order["lines"][0]["discounted_total"]
+            assert total["shop"]["amount"] == expected
+            assert total["presentment"]["amount"] == expected
+
     def test_largest_remainder_allocation_is_exact_and_deterministic(self):
         assert allocate_amount("0.05", ["1", "1", "1"], "0.01") == [
             Decimal("0.02"),

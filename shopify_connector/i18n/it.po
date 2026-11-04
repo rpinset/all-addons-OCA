@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-30 13:46+0000\n"
+"PO-Revision-Date: 2026-11-04 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -270,13 +270,10 @@ msgstr "Una riga di un ordine di evasione può essere importata una sola volta."
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"A previous Shopify fulfillment attempt exists for %(picking)s without a "
-"confirmed Shopify ID. Resolve binding %(binding)s before retrying to avoid a "
-"duplicate fulfillment."
+"A previous Shopify fulfillment attempt for %(picking)s was not confirmed, "
+"and several Shopify fulfillments could be the one it created: %"
+"(fulfillments)s. Bind the right one manually."
 msgstr ""
-"Esiste già  un tentativo precedente di evasione Shopify per %(picking)s "
-"senza un ID Shopify confermato. Risolvi il collegamento %(binding)s prima di "
-"riprovare, per evitare una doppia evasione."
 
 #. module: shopify_connector
 #. odoo-python
@@ -355,7 +352,8 @@ msgstr "Token di accesso all'API amministrativa"
 #. odoo-python
 #: code:addons/shopify_connector/wizards/product_export.py:0
 msgid "All exported products must belong to the instance company."
-msgstr "Tutti i prodotti esportati devono appartenere all'azienda dell'istanza."
+msgstr ""
+"Tutti i prodotti esportati devono appartenere all'azienda dell'istanza."
 
 #. module: shopify_connector
 #. odoo-python
@@ -441,6 +439,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Another job is importing Shopify fulfillment %s."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Another job is importing Shopify order %s."
 msgstr "Un'altra attività  sta importando l'ordine Shopify %s."
@@ -481,7 +485,8 @@ msgstr "Applica criteri"
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__inventory_import_enabled
 msgid "Apply inventory_levels/update webhooks to mapped Odoo locations."
-msgstr "Applica i webhook inventory_levels/update alle ubicazioni Odoo mappate."
+msgstr ""
+"Applica i webhook inventory_levels/update alle ubicazioni Odoo mappate."
 
 #. module: shopify_connector
 #. odoo-python
@@ -588,6 +593,14 @@ msgstr "Importazione B2B accodata"
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__unknown_product_policy__block
 msgid "Block With Error"
 msgstr "Blocca con errore"
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Bound Shopify fulfillment %(fulfillment)s, created by an unconfirmed "
+"attempt, to delivery %(delivery)s."
+msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
@@ -840,6 +853,14 @@ msgstr "Configured ordine Prodotti deve belong A il istanza azienda."
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Confirmed sale order %(order)s because Shopify fulfillment %(fulfillment)s "
+"shipped its items."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 #: code:addons/shopify_connector/wizards/product_export.py:0
 msgid "Connect the Shopify instance before exporting."
@@ -892,6 +913,12 @@ msgstr "Connessione riuscita"
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Connection test failed: %s"
 msgstr "Connessione Test Non riuscito: %s"
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/instance.py:0
+msgid "Connection to Shopify shop %s restored automatically."
+msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_res_partner
@@ -950,7 +977,7 @@ msgstr "Crea Imposta Mappatura"
 #. module: shopify_connector
 #: model:ir.model,website_form_label:shopify_connector.model_res_partner
 msgid "Create a Customer"
-msgstr "Crea a cliente"
+msgstr "Crea un cliente"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__product_create_if_missing
@@ -1317,17 +1344,6 @@ msgid "Disable to reject webhook delivery for this instance."
 msgstr "Disattiva per rifiutare la ricezione dei webhook per questa istanza."
 
 #. module: shopify_connector
-#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
-msgid ""
-"Disabled is log-only. Enable only when external\n"
-"                                fulfillment apps are authoritative for "
-"shipping."
-msgstr ""
-"Se disabilitato, vengono solo creati dei log. Da abilitare solo quando\n"
-"                                 le applicazioni esterne di evasione ordini "
-"sono responsabili della gestione delle spedizioni."
-
-#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__discount_codes
 msgid "Discount Codes"
 msgstr "Sconto Codes"
@@ -1445,6 +1461,17 @@ msgstr ""
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Enable Shopify B2B import first."
 msgstr "Enable Shopify B2B Importazione first."
+
+#. module: shopify_connector
+#: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
+msgid ""
+"Enable when orders are shipped from Shopify or a\n"
+"                                fulfillment app instead of Odoo. When "
+"disabled,\n"
+"                                these fulfillments are only imported, and "
+"their\n"
+"                                deliveries are validated by hand."
+msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
@@ -2082,6 +2109,7 @@ msgid "Initial Import"
 msgstr "Initial Importazione"
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_customer__initial_seed_pending
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__initial_seed_pending
 msgid "Initial Seed Pending"
 msgstr "Importazione iniziale in attesa"
@@ -2567,6 +2595,15 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__order_use_shopify_name
+msgid ""
+"Name the sale orders created from Shopify after their Shopify order, such as "
+"#1001, instead of the Odoo sequence. Sale orders already in Odoo keep their "
+"name. Two stores of the same company can both send an order #1001, so their "
+"sale orders get the same name."
+msgstr ""
+
+#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid ""
@@ -2601,10 +2638,9 @@ msgstr "Nessuna attività  pianificata di riconciliazione installata"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"No eligible Odoo delivery could be validated for external fulfillment %s."
+"No open Odoo delivery contains its items. Check the deliveries of the sale "
+"order, then retry."
 msgstr ""
-"Non è stato possibile convalidare alcuna consegna Odoo idonea per l'evasione "
-"esterna %s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2618,8 +2654,8 @@ msgstr "No pagamento Registro è mapped per Shopify gateway %s."
 msgid ""
 "No product binding exists for Shopify variant %(variant)s (SKU %(sku)s)."
 msgstr ""
-"No prodotto collegamento exists per Shopify variante %(variant)s (SKU %(sku)"
-"s)."
+"No prodotto collegamento exists per Shopify variante %(variant)s (SKU %"
+"(sku)s)."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2632,12 +2668,6 @@ msgstr "Nessun errore recente"
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "No safe automatic retry route is configured for %s."
 msgstr "No safe automatic riprova route è configured per %s."
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/fulfillment_sync.py:0
-msgid "No synchronized Odoo order matches Shopify order %s."
-msgstr "No synchronized Odoo ordine matches Shopify ordine %s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2779,20 +2809,22 @@ msgstr "Le giacenze Odoo e Shopify verranno confrontate in background."
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
+"Odoo could not reserve %(product)s on %(transfer)s. Add the stock, or enable "
+"Ship Unreserved Stock on the Shopify instance, then retry."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
 "Odoo delivery %(picking)s was cancelled after Shopify fulfillment %"
 "(fulfillment)s was created. Shopify was not cancelled automatically. Review "
 "and use the manual Cancel in Shopify action: %(link)s"
 msgstr ""
 "La consegna Odoo %(picking)s è stata annullata dopo la creazione "
 "dell'evasione Shopify %(fulfillment)s. L'evasione Shopify non è stata "
-"annullata automaticamente. Verifica la situazione e usa l'azione manuale Â«"
-"Annulla in ShopifyÂ»: %(link)s"
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/fulfillment_sync.py:0
-msgid "Odoo delivery %s still requires manual validation."
-msgstr "Odoo Consegna %s still requires Manuale validation."
+"annullata automaticamente. Verifica la situazione e usa l'azione manuale "
+"Â«Annulla in ShopifyÂ»: %(link)s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__inventory_quantity_basis
@@ -2813,6 +2845,12 @@ msgstr "Da Odoo a Shopify"
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__inventory_direction__bidirectional
 msgid "Odoo to Shopify + Shopify to Odoo"
 msgstr "Da Odoo a Shopify e da Shopify a Odoo"
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Odoo transfer %s could not be validated."
+msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__odoo_status
@@ -3559,6 +3597,11 @@ msgid "Retry Failed Shopify Bindings"
 msgstr "Riprova i collegamenti Shopify non riusciti"
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_customer__initial_seed_pending
+msgid "Retry marker for a customer created in Odoo by its first import."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__initial_seed_pending
 msgid "Retry marker for a newly created Odoo template."
 msgstr "riprova marker per a newly creati Odoo template."
@@ -3656,6 +3699,11 @@ msgid ""
 msgstr ""
 "Set Shopify App Client ID let Odoo richiesta access tokens, o Admin API "
 "access token di legacy custom app."
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__fulfillment_validate_unreserved
+msgid "Ship Unreserved Stock"
+msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_currency_id
@@ -4379,6 +4427,23 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
+"Shopify fulfillment %(fulfillment)s did not validate the Odoo delivery: %"
+"(error)s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Shopify fulfillment %(fulfillment)s, created by an unconfirmed attempt for %"
+"(picking)s, was imported as an external fulfillment that validated %"
+"(other)s. Review both deliveries before binding it."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
 "Shopify has a fulfillment hold on delivered quantities that could not be "
 "allocated. Release the hold before pushing %(picking)s."
 msgstr ""
@@ -4459,6 +4524,14 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Shopify order %s is not imported yet. Its fulfillment is applied when the "
+"order is imported."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Shopify order %s was not found."
 msgstr "Ordine Shopify %s non trovato."
 
@@ -4502,7 +4575,8 @@ msgstr "Shopify ha restituito un ordine di evasione privo di ID."
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Shopify returned an invalid catalog page cursor."
-msgstr "Shopify ha restituito un cursore non valido per la pagina del catalogo."
+msgstr ""
+"Shopify ha restituito un cursore non valido per la pagina del catalogo."
 
 #. module: shopify_connector
 #. odoo-python
@@ -4577,10 +4651,16 @@ msgid "Shopify: Prune old synchronization logs"
 msgstr "Shopify: eliminazione dei vecchi registri di sincronizzazione"
 
 #. module: shopify_connector
+#: model:ir.actions.server,name:shopify_connector.ir_cron_retest_shopify_connections_ir_actions_server
+msgid "Shopify: Retest failed connections (hourly)"
+msgstr ""
+
+#. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Skipped Shopify product %(gid)s because no barcode or SKU match exists."
-msgstr "Skipped Shopify prodotto %(gid)s because No barcode o SKU match exists."
+msgstr ""
+"Skipped Shopify prodotto %(gid)s because No barcode o SKU match exists."
 
 #. module: shopify_connector
 #. odoo-python
@@ -4892,7 +4972,8 @@ msgstr "Il cliente ospite Shopify non è configurato."
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "The Shopify order line must belong to its bound order."
-msgstr "La riga d'ordine Shopify deve appartenere all'ordine a cui è collegata."
+msgstr ""
+"La riga d'ordine Shopify deve appartenere all'ordine a cui è collegata."
 
 #. module: shopify_connector
 #. odoo-python
@@ -4994,6 +5075,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "The items of Shopify fulfillment %s were already delivered in Odoo."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid ""
 "The lines of Shopify order %s differ from its draft order, whose Odoo order "
@@ -5021,7 +5108,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "The maximum webhook payload must be greater than zero."
-msgstr "La dimensione massima del payload webhook deve essere maggiore di zero."
+msgstr ""
+"La dimensione massima del payload webhook deve essere maggiore di zero."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
@@ -5058,7 +5146,8 @@ msgstr "Il rimborso e l'ordine devono utilizzare la stessa istanza Shopify."
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "The refund credit note must use the instance company."
-msgstr "La nota di credito del rimborso deve utilizzare l'azienda dell'istanza."
+msgstr ""
+"La nota di credito del rimborso deve utilizzare l'azienda dell'istanza."
 
 #. module: shopify_connector
 #. odoo-python
@@ -5271,19 +5360,22 @@ msgid "Use Placeholder Product"
 msgstr "Usa prodotto segnaposto"
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__order_use_shopify_name
+msgid "Use Shopify Order Name"
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__fulfillment_auto_validate_webhook
 msgid "Validate Deliveries from Webhooks"
 msgstr "Convalida le consegne dai webhook"
 
 #. module: shopify_connector
-#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__fulfillment_auto_validate_webhook
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid ""
-"Validate matching Odoo deliveries when an external Shopify fulfillment "
-"webhook is received. Disabled is log-only."
+"Validated Odoo delivery %(pickings)s from Shopify fulfillment %"
+"(fulfillment)s."
 msgstr ""
-"Convalida le consegne Odoo corrispondenti quando viene ricevuto un webhook "
-"di evasione esterna da Shopify. Se disabilitata, l'operazione viene solo "
-"registrata nel log."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__variant_binding_id
@@ -5418,6 +5510,24 @@ msgstr ""
 "Riconciliazione settimanale dello spostamento dei clienti messa in coda."
 
 #. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__fulfillment_auto_validate_webhook
+msgid ""
+"When Shopify reports a fulfillment made outside Odoo, validate the fulfilled "
+"items on the order's open deliveries and copy the carrier and tracking "
+"number. When disabled, the fulfillment is imported with its tracking number, "
+"but the deliveries are left as they are, to be validated by hand."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__fulfillment_validate_unreserved
+msgid ""
+"When validating a delivery from a Shopify fulfillment, ship the fulfilled "
+"items even when Odoo could not reserve their stock. When disabled, the "
+"fulfillment goes to error until the stock is reserved. Products tracked by "
+"lot or serial number always need reserved stock."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard_location__wizard_id
 msgid "Wizard"
 msgstr "Procedura guidata"
@@ -5473,3 +5583,41 @@ msgstr "nessun registro dei risultati"
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "not run yet"
 msgstr "non ancora eseguito"
+
+#~ msgid ""
+#~ "A previous Shopify fulfillment attempt exists for %(picking)s without a "
+#~ "confirmed Shopify ID. Resolve binding %(binding)s before retrying to "
+#~ "avoid a duplicate fulfillment."
+#~ msgstr ""
+#~ "Esiste già  un tentativo precedente di evasione Shopify per %(picking)s "
+#~ "senza un ID Shopify confermato. Risolvi il collegamento %(binding)s prima "
+#~ "di riprovare, per evitare una doppia evasione."
+
+#~ msgid ""
+#~ "Disabled is log-only. Enable only when external\n"
+#~ "                                fulfillment apps are authoritative for "
+#~ "shipping."
+#~ msgstr ""
+#~ "Se disabilitato, vengono solo creati dei log. Da abilitare solo quando\n"
+#~ "                                 le applicazioni esterne di evasione "
+#~ "ordini sono responsabili della gestione delle spedizioni."
+
+#~ msgid ""
+#~ "No eligible Odoo delivery could be validated for external fulfillment %s."
+#~ msgstr ""
+#~ "Non è stato possibile convalidare alcuna consegna Odoo idonea per "
+#~ "l'evasione esterna %s."
+
+#~ msgid "No synchronized Odoo order matches Shopify order %s."
+#~ msgstr "No synchronized Odoo ordine matches Shopify ordine %s."
+
+#~ msgid "Odoo delivery %s still requires manual validation."
+#~ msgstr "Odoo Consegna %s still requires Manuale validation."
+
+#~ msgid ""
+#~ "Validate matching Odoo deliveries when an external Shopify fulfillment "
+#~ "webhook is received. Disabled is log-only."
+#~ msgstr ""
+#~ "Convalida le consegne Odoo corrispondenti quando viene ricevuto un "
+#~ "webhook di evasione esterna da Shopify. Se disabilitata, l'operazione "
+#~ "viene solo registrata nel log."

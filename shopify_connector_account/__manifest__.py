@@ -1,7 +1,7 @@
 {
     "name": "Shopify Connector Accounting",
     "summary": "Shopify Payments payouts, fees, disputes, and reconciliation",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Accounting/Accounting",
     "author": "Sawir Studio, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/connector-shopify",

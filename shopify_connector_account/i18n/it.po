@@ -534,8 +534,8 @@ msgstr "Riprova i collegamenti Shopify non riusciti"
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid ""
-"Review the %(type)s dispute for %(amount)s %(currency)s. Evidence due: "
-"%(due)s."
+"Review the %(type)s dispute for %(amount)s %(currency)s. Evidence due: %"
+"(due)s."
 msgstr ""
 "Esamina la contestazione %(type)s per %(amount)s %(currency)s. Scadenza per "
 "le prove: %(due)s."
@@ -587,6 +587,11 @@ msgstr "Shopify Payments"
 #: model:ir.model,name:shopify_connector_account.model_shopify_payout_transaction
 msgid "Shopify Payments Balance Transaction"
 msgstr "Transazione di saldo Shopify Payments"
+
+#. module: shopify_connector_account
+#: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__shopify_payments_checked_at
+msgid "Shopify Payments Checked At"
+msgstr ""
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_dispute
@@ -719,7 +724,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_binding.py:0
 msgid "The dispute order must use the same Shopify instance."
-msgstr "L’ordine della contestazione deve utilizzare la stessa istanza Shopify."
+msgstr ""
+"L’ordine della contestazione deve utilizzare la stessa istanza Shopify."
 
 #. module: shopify_connector_account
 #. odoo-python
@@ -809,6 +815,13 @@ msgstr "Motivo della mancata corrispondenza"
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__unmatched_count
 msgid "Unmatched Transactions"
 msgstr "Transazioni senza corrispondenza"
+
+#. module: shopify_connector_account
+#: model:ir.model.fields,help:shopify_connector_account.field_shopify_instance__shopify_payments_checked_at
+msgid ""
+"When the payout import last checked whether Shopify Payments is active. An "
+"unavailable shop is checked again weekly."
+msgstr ""
 
 #. module: shopify_connector_account
 #. odoo-python

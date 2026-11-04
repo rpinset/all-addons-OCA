@@ -123,6 +123,25 @@ class TestSaleBlanketOrders(SaleCommon):
     def setup_independent_user(cls):
         return None
 
+    def test_blanket_order_report_payment_terms(self):
+        payment_term_note = "Payment due within thirty days"
+        self.payment_term.note = payment_term_note
+        blanket_order = self.blanket_order_obj.create(
+            {
+                "partner_id": self.partner.id,
+                "validity_start_date": self.yesterday,
+                "validity_date": self.tomorrow,
+                "payment_term_id": self.payment_term.id,
+                "pricelist_id": self.sale_pricelist.id,
+            }
+        )
+
+        html = self.env["ir.actions.report"]._render_qweb_html(
+            "sale_blanket_order.report_blanketorder", blanket_order.ids
+        )[0]
+
+        self.assertIn(payment_term_note, html.decode())
+
     def test_00_confirm_without_validity_start_date(self):
         """Test blanket order confirmation requires a validity start date."""
         blanket_order = self.blanket_order_obj.create(

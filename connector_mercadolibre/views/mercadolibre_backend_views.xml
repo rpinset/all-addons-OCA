@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_backend_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.backend.list</field>
+        <field name="model">mercadolibre.backend</field>
+        <field name="arch" type="xml">
+            <list
+                decoration-danger="state == 'error'"
+                decoration-success="state == 'connected'"
+                decoration-muted="state == 'draft'"
+            >
+                <field name="name" />
+                <field name="site_id" />
+                <field name="seller_id" />
+                <field name="nickname" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-danger="state == 'error'"
+                    decoration-success="state == 'connected'"
+                    decoration-muted="state == 'draft'"
+                />
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    optional="show"
+                />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_backend_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.backend.form</field>
+        <field name="model">mercadolibre.backend</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="button_connect"
+                        type="object"
+                        string="Connect"
+                        class="btn-primary"
+                        invisible="state == 'connected'"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <button
+                        name="button_refresh_token"
+                        type="object"
+                        string="Refresh token"
+                        invisible="state != 'connected'"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <button
+                        name="button_disconnect"
+                        type="object"
+                        string="Disconnect"
+                        invisible="state == 'draft'"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,connected,error"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="action_view_notifications"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-bell"
+                        >
+                            <field
+                                name="notification_count"
+                                widget="statinfo"
+                                string="Notifications"
+                            />
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Seller account" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                            <field name="site_id" readonly="seller_id" />
+                            <field name="versions" />
+                        </group>
+                        <group>
+                            <field name="seller_id" />
+                            <field name="nickname" />
+                            <field name="active" invisible="1" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Credentials" name="credentials">
+                            <group>
+                                <field name="client_id" />
+                                <field name="client_secret" password="True" />
+                                <field name="redirect_uri" />
+                                <field name="access_token_expires_at" />
+                                <field name="auth_error" />
+                                <field
+                                    name="code_verifier"
+                                    password="True"
+                                    invisible="1"
+                                />
+                            </group>
+                        </page>
+                        <page string="Account" name="account">
+                            <group>
+                                <field name="seller_id" />
+                                <field name="nickname" />
+                                <field name="versions" />
+                                <field
+                                    name="user_payload"
+                                    widget="json"
+                                    groups="connector_mercadolibre.group_mercadolibre_manager"
+                                />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <record id="mercadolibre_backend_view_search" model="ir.ui.view">
+        <field name="name">mercadolibre.backend.search</field>
+        <field name="model">mercadolibre.backend</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="seller_id" />
+                <field name="nickname" />
+                <filter
+                    name="connected"
+                    string="Connected"
+                    domain="[('state', '=', 'connected')]"
+                />
+                <filter
+                    name="error"
+                    string="Error"
+                    domain="[('state', '=', 'error')]"
+                />
+                <separator />
+                <filter
+                    name="inactive"
+                    string="Archived"
+                    domain="[('active', '=', False)]"
+                />
+                <group>
+                    <filter
+                        name="group_company"
+                        string="Company"
+                        context="{'group_by': 'company_id'}"
+                    />
+                    <filter
+                        name="group_site"
+                        string="Site"
+                        context="{'group_by': 'site_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_backend" model="ir.actions.act_window">
+        <field name="name">Backends</field>
+        <field name="res_model">mercadolibre.backend</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="mercadolibre_backend_view_search" />
+    </record>
+</odoo>

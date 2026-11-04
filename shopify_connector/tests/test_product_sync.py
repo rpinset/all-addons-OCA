@@ -309,6 +309,70 @@ class TestShopifyProductSync(TransactionCase):
         self.assertEqual(len(binding.variant_binding_ids), 2)
         self.assertEqual(len(binding.odoo_id.product_variant_ids), 2)
 
+    def test_import_rebinds_variant_recreated_under_new_gid(self):
+        def variant(gid, color, sku):
+            return {
+                "id": gid,
+                "title": color,
+                "sku": sku,
+                "barcode": "",
+                "price": "10.00",
+                "selected_options": [{"name": "Color", "value": color}],
+                "media_ids": [],
+                "updated_at": "2026-07-29T00:00:00Z",
+            }
+
+        payload = {
+            "id": "gid://shopify/Product/700",
+            "name": "Recreated Shirt",
+            "description": "",
+            "handle": "recreated-shirt",
+            "status": "ACTIVE",
+            "updated_at": "2026-07-29T00:00:00Z",
+            "options": [
+                {
+                    "id": "gid://shopify/ProductOption/7",
+                    "name": "Color",
+                    "position": 1,
+                    "values": ["Blue", "Red"],
+                }
+            ],
+            "variants": [
+                variant("gid://shopify/ProductVariant/701", "Blue", "BLUE"),
+                variant("gid://shopify/ProductVariant/702", "Red", "RED"),
+            ],
+            "images": [],
+            "collections": [],
+        }
+        binding_model = self.env["shopify.product.template"]
+        binding = binding_model.browse(
+            binding_model._job_import_product(
+                self.instance.id, payload, payload_normalized=True
+            )
+        )
+        blue_binding = binding.variant_binding_ids.filtered(
+            lambda item: item.shopify_id == "gid://shopify/ProductVariant/701"
+        )
+        blue_variant = blue_binding.odoo_id
+
+        # Shopify recreates the Blue variant under a new GID.
+        payload["updated_at"] = "2026-07-30T00:00:00Z"
+        payload["variants"][0] = variant(
+            "gid://shopify/ProductVariant/801", "Blue", "BLUE-2"
+        )
+        result = binding_model._job_import_product(
+            self.instance.id, payload, payload_normalized=True
+        )
+
+        self.assertEqual(result, binding.id, binding.error_message)
+        self.assertEqual(binding.state, "synced")
+        self.assertEqual(len(binding.variant_binding_ids), 2)
+        self.assertEqual(blue_binding.shopify_id, "gid://shopify/ProductVariant/801")
+        self.assertEqual(blue_binding.odoo_id, blue_variant)
+        self.assertEqual(blue_binding.sku_snapshot, "BLUE-2")
+        self.assertEqual(blue_variant.default_code, "BLUE-2")
+        self.assertEqual(len(binding.odoo_id.product_variant_ids), 2)
+
     def test_company_change_is_blocked_after_product_sync(self):
         product = self.env["product.product"].create(
             {

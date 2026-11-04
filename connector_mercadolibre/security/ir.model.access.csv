@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mercadolibre_backend_user,mercadolibre.backend.user,model_mercadolibre_backend,group_mercadolibre_user,1,0,0,0
+access_mercadolibre_backend_manager,mercadolibre.backend.manager,model_mercadolibre_backend,group_mercadolibre_manager,1,1,1,1
+access_mercadolibre_notification_user,mercadolibre.notification.user,model_mercadolibre_notification,group_mercadolibre_user,1,0,0,0
+access_mercadolibre_notification_manager,mercadolibre.notification.manager,model_mercadolibre_notification,group_mercadolibre_manager,1,1,1,1

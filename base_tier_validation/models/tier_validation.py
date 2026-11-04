@@ -514,6 +514,10 @@ class TierValidation(models.AbstractModel):
     def _tier_validation_check_write_remove_reviews(self, vals):
         for rec in self:
             if rec._allow_to_remove_reviews(vals):
+                if rec.review_ids.filtered(
+                    lambda r: r.status in ("waiting", "pending")
+                ):
+                    rec._update_counter({"review_deleted": True})
                 rec.mapped("review_ids").unlink()
 
     def _allow_to_remove_reviews(self, values):
@@ -863,7 +867,8 @@ class TierValidation(models.AbstractModel):
         # ``notify_on_create`` definition is present), reviews would stay in
         # ``waiting`` indefinitely and no reviewer would be notified.
         created_trs._update_review_status()
-        if any(self.mapped("can_review")):
+        # Notify the reviewers, whether or not the requester is one of them.
+        if created_trs:
             self._update_counter({"review_created": True})
         self._notify_review_requested(created_trs)
         return created_trs
@@ -899,10 +904,11 @@ class TierValidation(models.AbstractModel):
                         .mapped("partner_id")
                         .ids
                     )
-                can_review = rec.can_review
+                # Before the unlink, while the reviewers are still known; the
+                # notification itself is only sent at commit.
+                if to_update_counter:
+                    rec._update_counter({"review_deleted": True})
                 rec.mapped("review_ids").unlink()
-                if to_update_counter and can_review:
-                    self._update_counter({"review_deleted": True})
             if partners_to_notify_ids:
                 subscribe = "message_subscribe"
                 reviews_to_notify = rec.review_ids.filtered(
@@ -931,8 +937,24 @@ class TierValidation(models.AbstractModel):
         partners = self.review_ids.mapped("reviewer_ids.partner_id")
         if not partners:
             partners = self.env.user.partner_id
-        for partner in partners:
-            partner._bus_send(channel, review_counter)
+        # Send once per partner per transaction: approving a batch of documents
+        # must trigger one systray recount per reviewer, not one per document.
+        precommit = self.env.cr.precommit
+        pending = precommit.data.get("base_tier_validation.counter")
+        if pending is None:
+            pending = precommit.data["base_tier_validation.counter"] = {
+                "partner_ids": set(),
+                "message": {},
+            }
+
+            @precommit.add
+            def send_counter():
+                values = precommit.data.pop("base_tier_validation.counter")
+                for partner in self.env["res.partner"].browse(values["partner_ids"]):
+                    partner._bus_send(channel, values["message"])
+
+        pending["partner_ids"].update(partners.ids)
+        pending["message"].update(review_counter)
 
     def unlink(self):
         self.mapped("review_ids").unlink()

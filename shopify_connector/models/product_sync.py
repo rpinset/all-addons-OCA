@@ -818,6 +818,17 @@ class ShopifyProductTemplateSync(models.Model):
                         gid=payload["id"],
                     )
                 )
+            if not variant_binding:
+                # Shopify recreates a variant under a new GID when its options
+                # are rebuilt. The Odoo variant keeps its binding, which then
+                # follows the new GID instead of colliding with it.
+                variant_binding = self.env["shopify.product.variant"].search(
+                    [
+                        ("instance_id", "=", instance.id),
+                        ("odoo_id", "=", variant.id),
+                    ],
+                    limit=1,
+                )
             values = {
                 "default_code": payload["sku"] or False,
                 "barcode": payload["barcode"] or False,
@@ -838,7 +849,7 @@ class ShopifyProductTemplateSync(models.Model):
                 "error_message": False,
             }
             if variant_binding:
-                variant_binding.write(binding_values)
+                variant_binding.write({**binding_values, "shopify_id": payload["id"]})
             else:
                 variant_binding = self.env["shopify.product.variant"].create(
                     {
