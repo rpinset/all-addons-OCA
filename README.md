@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `15.0`
 
-Last build: **2026-11-01 10:37 UTC** (elapsed 64s)
+Last build: **2026-11-04 21:03 UTC** (elapsed 120s)
 
 - Repos integrated: **117**
 - Canonical modules: **2101**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **148**
+- Skipped repos (no branch / no module): **149**
 
 ## Integrated repos
 
@@ -44,7 +44,7 @@ Last build: **2026-11-01 10:37 UTC** (elapsed 64s)
 | [e-commerce](https://github.com/OCA/e-commerce) | 56 | e2999cb 2026-08-10 OCA-git-bot [BOT] post-merge updates |
 | [e-learning](https://github.com/OCA/e-learning) | 1 | 05d66d9 2025-03-13 OCA-git-bot [BOT] post-merge updates |
 | [edi](https://github.com/OCA/edi) | 22 | 8cb4f26 2026-08-03 OCA-git-bot [BOT] post-merge updates |
-| [event](https://github.com/OCA/event) | 25 | ff685ba 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
+| [event](https://github.com/OCA/event) | 25 | 81532db 2026-11-04 mymage Translated using Weblate (Italian) |
 | [field-service](https://github.com/OCA/field-service) | 46 | 5ece6dd 2026-10-01 mymage Translated using Weblate (Italian) |
 | [fleet](https://github.com/OCA/fleet) | 14 | 7d9fb44 2026-05-23 Pablo Castelo Translated using Weblate (Galician) |
 | [helpdesk](https://github.com/OCA/helpdesk) | 9 | 524233d 2026-10-01 mymage Translated using Weblate (Italian) |
