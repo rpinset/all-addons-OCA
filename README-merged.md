@@ -319,6 +319,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_payment_term_cutoff_day](account_payment_term_cutoff_day/) | 20.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/AungKoKoLin1997'><img src='https://github.com/AungKoKoLin1997.png' width='32' height='32' style='border-radius:50%;' alt='AungKoKoLin1997'/></a> | 支払条件に締日の概念を追加
 [l10n_jp_address_layout](l10n_jp_address_layout/) | 20.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/AungKoKoLin1997'><img src='https://github.com/AungKoKoLin1997.png' width='32' height='32' style='border-radius:50%;' alt='AungKoKoLin1997'/></a> | 取引先の住所レイアウトを日本式に切替
+[l10n_jp_kana](l10n_jp_kana/) | 20.0.1.0.0 | <a href='https://github.com/AungKoKoLin1997'><img src='https://github.com/AungKoKoLin1997.png' width='32' height='32' style='border-radius:50%;' alt='AungKoKoLin1997'/></a> | Normalized kana readings for any model, and their format setting
 
 [//]: # (end addons)
 
@@ -502,6 +503,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 20.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Convert Amount Text to Thai
+[l10n_th_base_utils](l10n_th_base_utils/) | 20.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Collection of all Thai fonts, Convert month/year/number to thai
 
 [//]: # (end addons)
 
@@ -600,6 +602,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_contact_department](partner_contact_department/) | 20.0.1.0.0 |  | Assign contacts to departments
+[partner_title](partner_title/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
 
 [//]: # (end addons)
 
@@ -747,6 +750,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [purchase_all_shipments](purchase_all_shipments/) | 20.0.1.0.0 |  | Purchase All Shipments
+[purchase_order_internal_note](purchase_order_internal_note/) | 20.0.1.0.0 |  | Adds an internal note to purchase orders, not printed in reports
 
 [//]: # (end addons)
 
@@ -1006,6 +1010,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_cron_exclusion](base_cron_exclusion/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 20.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Adds more operators for view inheritance
 
 [//]: # (end addons)
@@ -1151,6 +1156,55 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [stock_demand_estimate](stock_demand_estimate/) | 20.0.1.0.0 |  | Allows to create demand estimates.
+[stock_warehouse_calendar](stock_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/stock-logistics-workflow
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# stock-logistics-workflow
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-workflow&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-workflow/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-workflow)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-workflow-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-workflow-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+stock-logistics-workflow
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[stock_restrict_lot](stock_restrict_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 
 [//]: # (end addons)
 

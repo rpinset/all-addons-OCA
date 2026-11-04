@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-01 10:42 UTC
+Generated 2026-11-04 21:06 UTC
 
 ## Skipped repos
 
@@ -148,6 +148,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
+| [oca-demo](https://github.com/OCA/oca-demo) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-weblate-deployment](https://github.com/OCA/oca-weblate-deployment) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
@@ -216,7 +217,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | `no_module` | No directory with __manifest__.py at repo root |
-| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | `no_module` | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | `no_module` | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | `no_module` | No directory with __manifest__.py at repo root |
 | [sustainability](https://github.com/OCA/sustainability) | `no_module` | No directory with __manifest__.py at repo root |

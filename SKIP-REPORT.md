@@ -1,12 +1,12 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-01 10:42 UTC
+Generated 2026-11-04 21:06 UTC
 
 Total skipped: **240**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **26**
+Count: **27**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -19,6 +19,7 @@ Count: **26**
 | [oca-apps-store](https://github.com/OCA/oca-apps-store) | [20.0](https://github.com/OCA/oca-apps-store/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-ci](https://github.com/OCA/oca-ci) | [20.0](https://github.com/OCA/oca-ci/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-custom](https://github.com/OCA/oca-custom) | [20.0](https://github.com/OCA/oca-custom/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
+| [oca-demo](https://github.com/OCA/oca-demo) | [20.0](https://github.com/OCA/oca-demo/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-github-bot](https://github.com/OCA/oca-github-bot) | [20.0](https://github.com/OCA/oca-github-bot/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-port](https://github.com/OCA/oca-port) | [20.0](https://github.com/OCA/oca-port/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
 | [oca-weblate-deployment](https://github.com/OCA/oca-weblate-deployment) | [20.0](https://github.com/OCA/oca-weblate-deployment/tree/20.0) | fatal: Remote branch 20.0 not found in upstream origin |
@@ -39,7 +40,7 @@ Count: **26**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **214**
+Count: **213**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -225,7 +226,6 @@ Count: **214**
 | [stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | [20.0](https://github.com/OCA/stock-logistics-shopfloor/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | [20.0](https://github.com/OCA/stock-logistics-tracking/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | [20.0](https://github.com/OCA/stock-logistics-transport/tree/20.0) | No directory with __manifest__.py at repo root |
-| [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | [20.0](https://github.com/OCA/stock-logistics-workflow/tree/20.0) | No directory with __manifest__.py at repo root |
 | [stock-weighing](https://github.com/OCA/stock-weighing) | [20.0](https://github.com/OCA/stock-weighing/tree/20.0) | No directory with __manifest__.py at repo root |
 | [survey](https://github.com/OCA/survey) | [20.0](https://github.com/OCA/survey/tree/20.0) | No directory with __manifest__.py at repo root |
 | [sustainability](https://github.com/OCA/sustainability) | [20.0](https://github.com/OCA/sustainability/tree/20.0) | No directory with __manifest__.py at repo root |
