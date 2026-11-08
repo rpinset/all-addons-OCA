@@ -1863,7 +1863,7 @@ addon | version | maintainers | summary
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.1 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 17.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_empty_cart](website_sale_empty_cart/) | 17.0.1.0.0 |  | Adds a button in the website cart to empty all
-[website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.3 |  | Hide any Product Categories that are empty
+[website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.4 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 17.0.1.2.1 |  | Hide product prices on the shop
 [website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Displays the user's regular products in the e-commerce.
 [website_sale_order_type](website_sale_order_type/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
@@ -2481,7 +2481,7 @@ addon | version | maintainers | summary
 [helpdesk_mgmt_stage_validation](helpdesk_mgmt_stage_validation/) | 17.0.1.1.0 |  | Validate input data when reaching a Helpdesk Ticket stage
 [helpdesk_mgmt_team_partner](helpdesk_mgmt_team_partner/) | 17.0.1.0.0 |  | Allows dynamic control over which contact (partner_id) on ticket, based on the configuration of the assigned Helpdesk Team (team_id)
 [helpdesk_mgmt_template](helpdesk_mgmt_template/) | 17.0.1.0.0 |  | Create Helpdesk Ticket Template
-[helpdesk_mgmt_timesheet](helpdesk_mgmt_timesheet/) | 17.0.1.1.0 |  | Add HR Timesheet to the tickets for Helpdesk Management.
+[helpdesk_mgmt_timesheet](helpdesk_mgmt_timesheet/) | 17.0.1.1.1 |  | Add HR Timesheet to the tickets for Helpdesk Management.
 [helpdesk_mgmtsystem_nonconformity](helpdesk_mgmtsystem_nonconformity/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Links helpdesk tickets with nonconformities
 [helpdesk_portal_restriction](helpdesk_portal_restriction/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Helpdesk Portal Restriction
 [helpdesk_ticket_close_inactive](helpdesk_ticket_close_inactive/) | 17.0.1.1.2 | <a href='https://github.com/miquelalzanillas'><img src='https://github.com/miquelalzanillas.png' width='32' height='32' style='border-radius:50%;' alt='miquelalzanillas'/></a> | Helpdesk Ticket Close Inactive
@@ -6570,8 +6570,8 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_discuss_channel_unread_sort](mail_discuss_channel_unread_sort/) | 17.0.1.0.0 |  | Sort discuss channels by most recent unread activity
 [mail_forward](mail_forward/) | 17.0.2.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
-[mail_gateway](mail_gateway/) | 17.0.1.1.0 |  | Base module for gateway communications
-[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.2.0 |  | Set a gateway for whatsapp
+[mail_gateway](mail_gateway/) | 17.0.1.1.2 |  | Base module for gateway communications
+[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.2.2 |  | Set a gateway for whatsapp
 [mail_history_mark_unread](mail_history_mark_unread/) | 17.0.1.1.0 |  | Add 'Mark as Unread' action to messages in History mailbox and Search results
 [mail_layout_force](mail_layout_force/) | 17.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
