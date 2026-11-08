@@ -1,6 +1,6 @@
 # Build report — `13.0`
 
-Generated 2026-11-04 20:59 UTC
+Generated 2026-11-08 00:27 UTC
 
 ## Skipped repos
 
@@ -104,6 +104,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [pms](https://github.com/OCA/pms) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
+| [product-uom](https://github.com/OCA/product-uom) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 13.0 not found in upstream origin |

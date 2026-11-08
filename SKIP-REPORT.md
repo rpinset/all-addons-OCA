@@ -1,12 +1,12 @@
 # Skipped repos — branch `13.0`
 
-Generated 2026-11-04 20:59 UTC
+Generated 2026-11-08 00:27 UTC
 
-Total skipped: **149**
+Total skipped: **150**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **87**
+Count: **88**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -59,6 +59,7 @@ Count: **87**
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [13.0](https://github.com/OCA/openupgradelib/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [pms](https://github.com/OCA/pms) | [13.0](https://github.com/OCA/pms/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [product-configurator](https://github.com/OCA/product-configurator) | [13.0](https://github.com/OCA/product-configurator/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
+| [product-uom](https://github.com/OCA/product-uom) | [13.0](https://github.com/OCA/product-uom/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | [13.0](https://github.com/OCA/program/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [13.0](https://github.com/OCA/py3o.template/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [13.0](https://github.com/OCA/pylint-odoo/tree/13.0) | fatal: Remote branch 13.0 not found in upstream origin |

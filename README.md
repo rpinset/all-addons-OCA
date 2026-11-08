@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `13.0`
 
-Last build: **2026-11-04 20:59 UTC** (elapsed 167s)
+Last build: **2026-11-08 00:27 UTC** (elapsed 87s)
 
 - Repos integrated: **117**
 - Canonical modules: **1995**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **149**
+- Skipped repos (no branch / no module): **150**
 
 ## Integrated repos
 
@@ -42,7 +42,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 167s)
 | [data-protection](https://github.com/OCA/data-protection) | 2 | 329c239 2024-10-03 mymage Translated using Weblate (Italian) |
 | [ddmrp](https://github.com/OCA/ddmrp) | 14 | 2dbd923 2025-10-21 mymage Translated using Weblate (Italian) |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 32 | 65c0706 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [dms](https://github.com/OCA/dms) | 3 | 3cf2f33 2025-11-25 mymage Translated using Weblate (Italian) |
+| [dms](https://github.com/OCA/dms) | 3 | eaefa00 2026-11-06 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 2 | f2e246f 2023-10-10 Weblate Update translation files |
 | [e-commerce](https://github.com/OCA/e-commerce) | 49 | 47edbfe 2026-07-01 Laura V Translated using Weblate (Swedish) |
 | [edi](https://github.com/OCA/edi) | 41 | 736f768 2026-01-19 EvaS595 Translated using Weblate (French) |
@@ -57,7 +57,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 167s)
 | [hr-holidays](https://github.com/OCA/hr-holidays) | 7 | 2b2bfe5 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [interface-git](https://github.com/OCA/interface-git) | 3 | 6e8c7e4 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 7 | 34d82f5 2025-02-01 oca-git-bot [IMP] update dotfiles |
-| [iot](https://github.com/OCA/iot) | 6 | 74ca6ce 2025-06-21 mymage Translated using Weblate (Italian) |
+| [iot](https://github.com/OCA/iot) | 6 | ed5f644 2026-11-06 mymage Translated using Weblate (Italian) |
 | [knowledge](https://github.com/OCA/knowledge) | 11 | ca68d3f 2025-11-24 mymage Translated using Weblate (Italian) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 7 | f940b37 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 11 | 89b9a31 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -86,10 +86,10 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 167s)
 | [operating-unit](https://github.com/OCA/operating-unit) | 17 | db3d30f 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [partner-contact](https://github.com/OCA/partner-contact) | 62 | b8c7c6d 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [payroll](https://github.com/OCA/payroll) | 2 | a36983b 2026-07-28 mymage Translated using Weblate (Italian) |
-| [pos](https://github.com/OCA/pos) | 22 | 55da831 2025-07-30 mymage Translated using Weblate (Italian) |
+| [pos](https://github.com/OCA/pos) | 22 | 6e18841 2026-11-06 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 59 | 8991c7d 2026-05-26 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 6 | 1fb032c 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [product-variant](https://github.com/OCA/product-variant) | 11 | 6db146b 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
+| [product-variant](https://github.com/OCA/product-variant) | 11 | a19b76a 2026-11-06 mymage Translated using Weblate (Italian) |
 | [project](https://github.com/OCA/project) | 38 | 07ea689 2026-06-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 363a54f 2023-09-03 OCA-git-bot [UPD] README.rst |
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | 1 | 4e2c8a9 2023-10-09 Weblate Update translation files |
@@ -127,5 +127,5 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 167s)
 | [website](https://github.com/OCA/website) | 24 | 01abd1a 2026-05-19 mymage Translated using Weblate (Italian) |
 | [website-cms](https://github.com/OCA/website-cms) | 6 | 649c588 2025-10-30 mymage Translated using Weblate (Italian) |
 | [website-themes](https://github.com/OCA/website-themes) | 1 | 4b4b060 2023-09-03 OCA-git-bot [UPD] README.rst |
-| [wms](https://github.com/OCA/wms) | 36 | 4d97331 2026-06-30 mymage Translated using Weblate (Italian) |
+| [wms](https://github.com/OCA/wms) | 36 | cfa86cd 2026-11-06 mymage Translated using Weblate (Italian) |
 
