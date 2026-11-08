@@ -9,14 +9,22 @@
             <list
                 decoration-danger="status=='rejected'"
                 decoration-success="status=='approved'"
+                decoration-warning="status=='pending'"
+                decoration-muted="status=='waiting'"
             >
                 <field name="sequence" />
-                <field name="requested_by" />
+                <field name="requested_by" widget="many2one_avatar_user" />
                 <field name="review_type" />
                 <field name="name" />
-                <field name="status" />
+                <field
+                    name="status"
+                    widget="badge"
+                    decoration-warning="status == 'pending'"
+                    decoration-success="status == 'approved'"
+                    decoration-danger="status == 'rejected'"
+                />
                 <field name="todo_by" />
-                <field name="done_by" />
+                <field name="done_by" widget="many2one_avatar_user" />
                 <field name="reviewed_date" />
                 <field name="comment" />
             </list>

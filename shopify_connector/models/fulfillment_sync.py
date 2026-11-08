@@ -17,10 +17,11 @@ from ..graphql.fulfillment import (
     FULFILLMENT_CREATE_MUTATION,
     FULFILLMENT_ORDER_MOVE_MUTATION,
     FULFILLMENT_ORDER_RELEASE_HOLD_MUTATION,
+    FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION,
     ORDER_FULFILLMENT_ORDERS_QUERY,
     ORDER_FULFILLMENTS_QUERY,
 )
-from ..lib.client import ShopifyError
+from ..lib.client import ShopifyError, ShopifyServerError, ShopifyThrottled
 from ..lib.fulfillment import (
     FulfillmentAllocationError,
     allocate_fulfillment_lines,
@@ -385,7 +386,83 @@ class ShopifyOrderFulfillmentSync(models.Model):
             url,
         )
 
-    def _job_push_picking_fulfillment(self, picking_id):  # noqa: C901
+    def _job_push_picking_fulfillment(self, picking_id):
+        result = self._push_picking_fulfillment(picking_id)
+        if result:
+            self._close_fulfillment_push_activities(picking_id)
+        return result
+
+    def _close_fulfillment_push_activities(self, picking_id):
+        """Mark done the activities left by failed pushes of this delivery."""
+        # The job may run as a stock user; the activities belong to the
+        # connector's failure reports.
+        picking = self.env["stock.picking"].sudo().browse(picking_id).exists()
+        summary = self._fulfillment_push_failed_summary()
+        activities = picking.activity_ids.filtered(
+            lambda activity: activity.summary == summary
+        )
+        if activities:
+            activities.action_feedback(
+                feedback=self.env._("The Shopify fulfillment was created.")
+            )
+
+    def _fulfillment_push_failed_summary(self):
+        return self.env._("Shopify fulfillment not sent")
+
+    def _fulfillment_push_failure_user(self, picking):
+        """Return who gets the to-do for a failed push of this delivery.
+
+        The job usually runs as the superuser or OdooBot, which nobody
+        watches: assign the delivery's responsible, else the salesperson of
+        the order.
+        """
+        candidates = picking.user_id | picking.sale_id.user_id | self.odoo_id.user_id
+        return candidates.filtered(lambda user: user.active and not user.share)[:1]
+
+    def _report_fulfillment_push_failure(self, picking_id, error):
+        """Make a failed push visible on the delivery and in the Shopify log.
+
+        The push job only reaches Shopify at its end. When it fails before,
+        for example because the delivery's source location is not mapped,
+        Odoo has no fulfillment record to mark as failed, so the error would
+        otherwise only show in Queue Jobs.
+        """
+        self.ensure_one()
+        binding = self.sudo()
+        picking = self.env["stock.picking"].sudo().browse(picking_id).exists()
+        if not picking:
+            return
+        message = self.env._(
+            "Shopify fulfillment for delivery %(picking)s (order %(order)s) "
+            "was not sent: %(error)s",
+            picking=picking.name,
+            order=binding.order_name or binding.shopify_id,
+            error=error,
+        )
+        binding.instance_id._write_log(
+            entity="fulfillment",
+            direction="export",
+            level="error",
+            message=message,
+            record=picking,
+        )
+        summary = self._fulfillment_push_failed_summary()
+        if not picking.activity_ids.filtered(
+            lambda activity: activity.summary == summary
+        ):
+            user = binding._fulfillment_push_failure_user(picking)
+            picking.activity_schedule(
+                "mail.mail_activity_data_todo",
+                summary=summary,
+                user_id=user.id or self.env.uid,
+                note=self.env._(
+                    "%(message)s Fix the cause, then requeue the failed job in "
+                    "Queue Jobs.",
+                    message=message,
+                ),
+            )
+
+    def _push_picking_fulfillment(self, picking_id):  # noqa: C901
         self = self.sudo()
         self.ensure_one()
         if not self.instance_id.active:
@@ -834,6 +911,88 @@ class ShopifyFulfillmentOrderActions(models.Model):
 class ShopifyFulfillmentActions(models.Model):
     _inherit = "shopify.fulfillment"
 
+    def _job_update_tracking(self):
+        """Send the current carrier and tracking number of the delivery."""
+        self = self.sudo()  # noqa: PLW0642
+        self.ensure_one()
+        picking = self.picking_id
+        if not (
+            self.instance_id.active
+            and self.shopify_id
+            and self.origin == "odoo"
+            and picking.state == "done"
+        ):
+            return False
+        tracking = self.order_binding_id._tracking_info(picking)
+        sent = {
+            "company": self.tracking_company or "",
+            "number": self.tracking_number or "",
+            "url": self.tracking_url or "",
+        }
+        if not tracking.get("number") or all(
+            tracking.get(key, "") == value for key, value in sent.items()
+        ):
+            # Nothing new, e.g. Shopify's own tracking written back by an
+            # import, or a number that was cleared.
+            return False
+        try:
+            data = self.instance_id._shopify_client().execute(
+                FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION,
+                {
+                    "fulfillmentId": self.shopify_id,
+                    "trackingInfoInput": tracking,
+                    "notifyCustomer": bool(
+                        self.instance_id.fulfillment_notify_customer
+                    ),
+                },
+            )
+        except (ShopifyThrottled, ShopifyServerError) as exc:
+            # Temporary: let queue_job retry the update later.
+            raise RetryableJobError(str(exc), seconds=60) from exc
+        except ShopifyError as exc:
+            self.instance_id._write_log(
+                entity="fulfillment",
+                direction="export",
+                level="error",
+                message=self.env._(
+                    "Failed to update the tracking of Shopify fulfillment "
+                    "%(fulfillment)s for %(picking)s: %(error)s. Save the "
+                    "tracking number of the delivery again to resend it.",
+                    fulfillment=self.shopify_id,
+                    picking=picking.name,
+                    error=exc,
+                ),
+                record=self,
+            )
+            # Return instead of raising: the log entry must be kept.
+            return False
+        payload = (data.get("fulfillmentTrackingInfoUpdate") or {}).get(
+            "fulfillment"
+        ) or {}
+        tracking_payload = _tracking(payload) or tracking
+        self.write(
+            {
+                "tracking_company": tracking_payload.get("company"),
+                "tracking_number": tracking_payload.get("number"),
+                "tracking_url": tracking_payload.get("url"),
+                "last_sync_date": fields.Datetime.now(),
+            }
+        )
+        self.instance_id._write_log(
+            entity="fulfillment",
+            direction="export",
+            level="info",
+            message=self.env._(
+                "Updated the tracking of Shopify fulfillment %(fulfillment)s "
+                "for %(picking)s: %(number)s.",
+                fulfillment=self.shopify_id,
+                picking=picking.name,
+                number=self.tracking_number,
+            ),
+            record=self,
+        )
+        return True
+
     def _job_cancel_shopify(self):
         self = self.sudo()
         self.ensure_one()
@@ -881,6 +1040,32 @@ class ShopifyFulfillmentActions(models.Model):
 
 class StockPickingShopifyFulfillmentSync(models.Model):
     _inherit = "stock.picking"
+
+    def write(self, vals):
+        result = super().write(vals)
+        if {"carrier_tracking_ref", "carrier_id"}.intersection(vals):
+            self._queue_shopify_tracking_update()
+        return result
+
+    def _queue_shopify_tracking_update(self):
+        """Send a carrier or tracking number changed after the push."""
+        for picking in self.filtered(
+            lambda item: (
+                item.state == "done" and item.picking_type_id.code == "outgoing"
+            )
+        ):
+            # Any stock user may edit the tracking; only the lookup of the
+            # fulfillments needs Shopify access.
+            fulfillments = picking.sudo().shopify_fulfillment_ids.filtered(
+                lambda item: item.shopify_id and item.origin == "odoo"
+            )
+            for fulfillment in fulfillments:
+                fulfillment.with_delay(
+                    description=self.env._(
+                        "Update Shopify tracking for %s", picking.name
+                    ),
+                    identity_key=f"shopify.fulfillment.tracking.{fulfillment.id}",
+                )._job_update_tracking()
 
     def _action_done(self, *args, **kwargs):
         result = super()._action_done(*args, **kwargs)
@@ -1555,3 +1740,23 @@ WEBHOOK_HANDLERS.update(
         "fulfillments/update": "_handle_fulfillments_update",
     }
 )
+
+
+class QueueJobShopifyFulfillmentFailure(models.Model):
+    _inherit = "queue.job"
+
+    def write(self, vals):
+        result = super().write(vals)
+        if vals.get("state") == "failed":
+            # The job runner stores the failure in a new transaction, after
+            # the job's own changes were rolled back.
+            for job in self.filtered(
+                lambda item: item.model_name == "shopify.order"
+                and item.method_name == "_job_push_picking_fulfillment"
+                and item.args
+            ):
+                for binding in job.records.exists():
+                    binding._report_fulfillment_push_failure(
+                        job.args[0], job.exc_message or job.exc_name or ""
+                    )
+        return result

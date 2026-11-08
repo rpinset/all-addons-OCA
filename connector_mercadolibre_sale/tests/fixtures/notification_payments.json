@@ -1,0 +1,8 @@
+{
+  "resource": "/collections/9001",
+  "user_id": 123456789,
+  "topic": "payments",
+  "application_id": 1,
+  "attempts": 1,
+  "sent": "2024-01-15T18:00:00.000Z"
+}

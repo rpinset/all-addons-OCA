@@ -112,6 +112,35 @@ mutation ShopifyFulfillmentCreate($fulfillment: FulfillmentInput!) {
 }
 """
 
+FULFILLMENT_TRACKING_INFO_UPDATE_MUTATION = """
+mutation ShopifyFulfillmentTrackingInfoUpdate(
+  $fulfillmentId: ID!
+  $trackingInfoInput: FulfillmentTrackingInput!
+  $notifyCustomer: Boolean
+) {
+  fulfillmentTrackingInfoUpdate(
+    fulfillmentId: $fulfillmentId
+    trackingInfoInput: $trackingInfoInput
+    notifyCustomer: $notifyCustomer
+  ) {
+    fulfillment {
+      id
+      status
+      updatedAt
+      trackingInfo {
+        company
+        number
+        url
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+"""
+
 FULFILLMENT_ORDER_MOVE_MUTATION = """
 mutation ShopifyFulfillmentOrderMove($id: ID!, $newLocationId: ID!) {
   fulfillmentOrderMove(id: $id, newLocationId: $newLocationId) {

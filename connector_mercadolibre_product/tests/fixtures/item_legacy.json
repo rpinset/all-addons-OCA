@@ -1,0 +1,15 @@
+{
+  "id": "MLA100",
+  "title": "Legacy kettle",
+  "seller_custom_field": "SKU-LEGACY",
+  "status": "active",
+  "currency_id": "ARS",
+  "price": 1500,
+  "available_quantity": 4,
+  "category_id": "MLA1000",
+  "permalink": "https://articulo.mercadolibre.com.ar/MLA-100",
+  "shipping": {"logistic_type": "drop_off"},
+  "pictures": [{"secure_url": "https://http2.mlstatic.com/legacy.jpg"}],
+  "attributes": [{"id": "SELLER_SKU", "value_name": "SKU-LEGACY"}],
+  "variations": []
+}

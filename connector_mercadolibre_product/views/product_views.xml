@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_product_view_form_mercadolibre" model="ir.ui.view">
+        <field name="name">product.product.form.mercadolibre</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_mercadolibre_bindings"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-shopping-bag"
+                    invisible="mercadolibre_bind_count == 0"
+                    groups="connector_mercadolibre.group_mercadolibre_user"
+                >
+                    <field
+                        name="mercadolibre_bind_count"
+                        widget="statinfo"
+                        string="Mercado Libre"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+
+    <record id="product_template_view_form_mercadolibre" model="ir.ui.view">
+        <field name="name">product.template.form.mercadolibre</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_mercadolibre_bindings"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-shopping-bag"
+                    invisible="mercadolibre_bind_count == 0"
+                    groups="connector_mercadolibre.group_mercadolibre_user"
+                >
+                    <field
+                        name="mercadolibre_bind_count"
+                        widget="statinfo"
+                        string="Mercado Libre"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

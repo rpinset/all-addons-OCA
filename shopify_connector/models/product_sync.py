@@ -2,6 +2,7 @@
 
 import base64
 import hashlib
+from collections import defaultdict
 from datetime import datetime, timezone
 from decimal import Decimal
 
@@ -24,6 +25,7 @@ from ..graphql.product import (
 )
 from ..lib.bulk import ShopifyBulkRunner
 from ..lib.client import ShopifyUserError
+from ..lib.inventory import apply_negative_policy, quantity_for_basis
 from ..lib.product import (
     merge_owned_fields,
     normalize_bulk_products,
@@ -1384,6 +1386,10 @@ class ShopifyProductTemplateSync(models.Model):
                 ]
             if variant_binding:
                 values["id"] = variant_binding.shopify_id
+            else:
+                values.update(
+                    self._new_variant_inventory_input(instance, variant, binding)
+                )
             if is_new or owners["price"] == "odoo":
                 values["price"] = self._export_price(instance, variant)
             variants.append(values)
@@ -1500,6 +1506,48 @@ class ShopifyProductTemplateSync(models.Model):
         return variants
 
     @api.model
+    def _new_variant_inventory_input(self, instance, variant, binding):
+        """Return the inventory input of a variant the export creates.
+
+        Shopify creates variants without inventory tracking, so their stock
+        would never be synced, and Shopify would sell them without limit.
+        Track the stock of storable products, and set it at the mapped
+        locations.
+        """
+        storable = (
+            variant.is_storable
+            if "is_storable" in variant._fields
+            else variant.type == "product"
+        )
+        if not storable or (binding and not binding.inventory_sync_enabled):
+            return {}
+        quantities = []
+        for location in instance.location_binding_ids.filtered(
+            lambda item: item.active and item.odoo_location_id and item.shopify_id
+        ):
+            product = variant.with_company(instance.company_id).with_context(
+                location=location.odoo_location_id.id
+            )
+            quantity, _clamped = apply_negative_policy(
+                quantity_for_basis(
+                    product.free_qty,
+                    product.qty_available,
+                    instance.inventory_quantity_basis,
+                ),
+                instance.inventory_allow_negative,
+            )
+            quantities.append(
+                {
+                    "locationId": location.shopify_id,
+                    "name": "available",
+                    "quantity": quantity,
+                }
+            )
+        values = {"inventoryItem": {"tracked": True}}
+        if quantities:
+            values["inventoryQuantities"] = quantities
+        return values
+
     def _export_price(self, instance, variant):
         pricelist = instance.product_pricelist_id.with_company(instance.company_id)
         amount = (
@@ -1984,43 +2032,60 @@ class ProductPricelistItem(models.Model):
         return result
 
     def _shopify_export_targets(self):
+        """Return the (instance, template) pairs whose Shopify price may change.
+
+        A rule changes the price of the bound products it applies to: one
+        variant, one product, a product category with its subcategories, or
+        every product of the pricelist.
+        """
         targets = set()
-        items = self.sudo().filtered("product_id")
-        pricelist_ids = items.mapped("pricelist_id").ids
+        items = self.sudo()
         instances = (
             self.env["shopify.instance"]
             .sudo()
             .search(
                 [
-                    ("product_pricelist_id", "in", pricelist_ids),
+                    ("product_pricelist_id", "in", items.mapped("pricelist_id").ids),
                     ("company_id", "in", self.env.companies.ids),
                 ]
             )
         )
-        instances_by_pricelist = {
-            instance.product_pricelist_id.id: instance
-            for instance in instances
-            if instance._is_product_field_owned_by("price", "odoo")
-        }
-        for item in items:
-            instance = instances_by_pricelist.get(item.pricelist_id.id)
-            if not instance:
-                continue
-            template = item.product_id.product_tmpl_id
-            binding = (
-                self.env["shopify.product.template"]
-                .sudo()
-                .search(
-                    [
-                        ("instance_id", "=", instance.id),
-                        ("odoo_id", "=", template.id),
-                    ],
-                    limit=1,
+        instances_by_pricelist = defaultdict(list)
+        for instance in instances:
+            if instance._is_product_field_owned_by("price", "odoo"):
+                instances_by_pricelist[instance.product_pricelist_id.id].append(
+                    instance
                 )
-            )
-            if binding:
-                targets.add((instance.id, template.id))
+        binding_model = self.env["shopify.product.template"].sudo()
+        for item in items:
+            scope = item._shopify_binding_scope()
+            if scope is None:
+                continue
+            for instance in instances_by_pricelist.get(item.pricelist_id.id, []):
+                bindings = binding_model.search(
+                    [("instance_id", "=", instance.id), *scope]
+                )
+                targets.update(
+                    (instance.id, template_id) for template_id in bindings.odoo_id.ids
+                )
         return targets
+
+    def _shopify_binding_scope(self):
+        """Return the product binding domain this rule applies to, or None."""
+        self.ensure_one()
+        if self.applied_on == "0_product_variant":
+            if not self.product_id:
+                return None
+            return [("odoo_id", "=", self.product_id.product_tmpl_id.id)]
+        if self.applied_on == "1_product":
+            if not self.product_tmpl_id:
+                return None
+            return [("odoo_id", "=", self.product_tmpl_id.id)]
+        if self.applied_on == "2_product_category":
+            if not self.categ_id:
+                return None
+            return [("odoo_id.categ_id", "child_of", self.categ_id.id)]
+        return []
 
     def _queue_shopify_price_exports(self, previous_targets=None):
         if self.env.context.get("skip_shopify_export"):

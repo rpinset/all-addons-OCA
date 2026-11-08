@@ -14,6 +14,7 @@
                 string="Restart Validation"
                 invisible="not review_ids or hide_reviews"
                 type="object"
+                icon="fa-rotate-left"
             />
         </div>
     </template>
@@ -37,7 +38,7 @@
                         invisible="not can_review"
                         type="object"
                         class="btn-icon me-1 btn-success"
-                        icon="fa-thumbs-up"
+                        icon="fa-check fa-lg"
                     />
                     <button
                         name="reject_tier"
@@ -45,7 +46,7 @@
                         invisible="not can_review"
                         type="object"
                         class="btn-icon btn-danger"
-                        icon="fa-thumbs-down"
+                        icon="fa-times fa-lg"
                     />
                     <br />
                     <field name="next_review" readonly="1" />
@@ -57,7 +58,7 @@
                 t-attf-invisible="validation_status != 'validated' or hide_reviews or not review_ids"
             >
                 <p class="mb-1">
-                <i class="fa fa-lg fa-thumbs-up" />
+                <i class="fa fa-lg fa-check" />
                 Operation has been
                 <b>validated</b>
                 !
@@ -69,7 +70,7 @@
                 t-attf-invisible="validation_status != 'rejected' or hide_reviews or not review_ids"
             >
                 <p class="mb-1">
-                <i class="fa fa-lg fa-thumbs-down" />
+                <i class="fa fa-lg fa-times" />
                 Operation has been
                 <b>rejected</b>
                 .

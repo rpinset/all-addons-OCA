@@ -29,6 +29,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "%(message)s Fix the cause, then requeue the failed job in Queue Jobs."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "%(orders)s orders and %(drafts)s draft orders queued for import."
 msgstr ""
@@ -1093,12 +1099,6 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
-#: code:addons/shopify_connector/models/order_sync.py:0
-msgid "Daily order drift reconciliation queued with a two-day overlap."
-msgstr ""
-
-#. module: shopify_connector
-#. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Daily product drift reconciliation queued."
 msgstr ""
@@ -1272,6 +1272,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_product_product__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__display_name
+#: model:ir.model.fields,field_description:shopify_connector.field_queue_job__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_sale_order__display_name
@@ -1549,6 +1550,15 @@ msgid "Failed to fulfill %(picking)s: %(error)s"
 msgstr ""
 
 #. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Failed to update the tracking of Shopify fulfillment %(fulfillment)s for "
+"%(picking)s: %(error)s. Save the tracking number of the delivery again to "
+"resend it."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_field_mapping__field
 msgid "Field"
 msgstr ""
@@ -1721,6 +1731,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:shopify_connector.field_product_product__id
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template__id
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__id
+#: model:ir.model.fields,field_description:shopify_connector.field_queue_job__id
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner__id
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__id
 #: model:ir.model.fields,field_description:shopify_connector.field_sale_order__id
@@ -2866,6 +2877,13 @@ msgstr ""
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"Order drift reconciliation queued for the orders updated since the last run."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Order import queued"
 msgstr ""
 
@@ -3159,6 +3177,11 @@ msgstr ""
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_export_wizard_view_form
 msgid "Queue Export"
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model,name:shopify_connector.model_queue_job
+msgid "Queue Job"
 msgstr ""
 
 #. module: shopify_connector
@@ -3793,13 +3816,13 @@ msgid "Shopify Drift: Inventory (daily)"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_orders_ir_actions_server
-msgid "Shopify Drift: Orders, 2-day overlap (daily)"
+#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_products_ir_actions_server
+msgid "Shopify Drift: Products (daily)"
 msgstr ""
 
 #. module: shopify_connector
-#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_products_ir_actions_server
-msgid "Shopify Drift: Products (daily)"
+#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_orders_ir_actions_server
+msgid "Shopify Drift: Updated Orders (daily)"
 msgstr ""
 
 #. module: shopify_connector
@@ -4206,6 +4229,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify cancelled the order, but Odoo could not cancel sale order %s."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Shopify companies and catalogs will be checked in the background."
 msgstr ""
@@ -4276,6 +4305,20 @@ msgid ""
 "Shopify fulfillment %(fulfillment)s, created by an unconfirmed attempt for "
 "%(picking)s, was imported as an external fulfillment that validated "
 "%(other)s. Review both deliveries before binding it."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Shopify fulfillment for delivery %(picking)s (order %(order)s) was not sent:"
+" %(error)s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Shopify fulfillment not sent"
 msgstr ""
 
 #. module: shopify_connector
@@ -4419,6 +4462,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Shopify returned an invalid location page cursor."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify returned an invalid order page cursor."
 msgstr ""
 
 #. module: shopify_connector
@@ -4629,6 +4678,11 @@ msgid "Supported Actions"
 msgstr ""
 
 #. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__order_drift_since
+msgid "Sync Orders Updated Since"
+msgstr ""
+
+#. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_search
 msgid "Sync State"
 msgstr ""
@@ -4777,6 +4831,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "The Shopify fulfillment was created."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "The Shopify guest customer is not configured."
 msgstr ""
@@ -4914,6 +4974,14 @@ msgstr ""
 msgid ""
 "The next step creates missing Shopify webhook\n"
 "                        subscriptions and repairs callback URLs."
+msgstr ""
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__order_drift_since
+msgid ""
+"The order drift job imports again the orders updated in Shopify since this "
+"date, then moves it to the start of the run. Set an earlier date to import "
+"older updated orders on the next run."
 msgstr ""
 
 #. module: shopify_connector
@@ -5142,6 +5210,20 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Unsupported catalog currency %s."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Update Shopify tracking for %s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Updated the tracking of Shopify fulfillment %(fulfillment)s for %(picking)s:"
+" %(number)s."
 msgstr ""
 
 #. module: shopify_connector

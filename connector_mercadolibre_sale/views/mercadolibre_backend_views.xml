@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_backend_view_form_sales" model="ir.ui.view">
+        <field name="name">mercadolibre.backend.form.sales</field>
+        <field name="model">mercadolibre.backend</field>
+        <field
+            name="inherit_id"
+            ref="connector_mercadolibre.mercadolibre_backend_view_form"
+        />
+        <field name="arch" type="xml">
+            <button name="button_connect" position="before">
+                <button
+                    name="button_import_orders"
+                    type="object"
+                    string="Import orders"
+                    groups="connector_mercadolibre.group_mercadolibre_manager"
+                />
+            </button>
+            <notebook position="inside">
+                <page string="Sales" name="sales">
+                    <group>
+                        <group>
+                            <field name="workflow_process_id" />
+                            <field name="team_id" />
+                            <field name="fiscal_position_id" />
+                            <field name="shipping_product_id" />
+                            <field name="fee_product_id" />
+                            <field name="tracking_carrier_id" />
+                        </group>
+                        <group>
+                            <field name="import_orders" />
+                            <field name="import_orders_since" />
+                            <field name="last_order_sync_at" />
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

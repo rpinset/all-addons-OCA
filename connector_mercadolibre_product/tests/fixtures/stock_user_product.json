@@ -1,0 +1,7 @@
+{
+  "user_product_id": "MLAU200",
+  "locations": [
+    {"type": "seller_warehouse", "quantity": 3, "store_id": "STORE1"},
+    {"type": "fulfillment", "quantity": 11}
+  ]
+}

@@ -31,33 +31,25 @@ msgstr "%(icon)s Questo %(model_name)s deve essere validato"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
 msgid ""
-"<i class=\"fa fa-lg fa-thumbs-down\"/>\n"
-"                Operation has been\n"
-"                <b>rejected</b>\n"
-"                ."
-msgstr ""
-"<i class=\"fa fa-lg fa-thumbs-down\"/>\n"
-"                L'operazione è stata\n"
-"                <b>rifiutata</b>\n"
-"                ."
-
-#. module: base_tier_validation
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
-msgid ""
-"<i class=\"fa fa-lg fa-thumbs-up\"/>\n"
+"<i class=\"fa fa-lg fa-check\"/>\n"
 "                Operation has been\n"
 "                <b>validated</b>\n"
 "                !"
 msgstr ""
-"<i class=\"fa fa-lg fa-thumbs-up\"/>\n"
-"                L'operazione è stata\n"
-"                <b>approvata</b>\n"
-"                !"
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
+msgid ""
+"<i class=\"fa fa-lg fa-times\"/>\n"
+"                Operation has been\n"
+"                <b>rejected</b>\n"
+"                ."
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "<span class=\"oe_edit_only\">Name</span>"
-msgstr "<span class=\"oe_edit_only\">Nome</span>"
+msgid "<span class=\"ms-1\">days</span>"
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -109,6 +101,15 @@ msgid "A review was rejected by %s."
 msgstr "Un'approvazione è stata rifiutata da %s."
 
 #. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid ""
+"A tier definition tells Odoo which records on a given model need\n"
+"                to be reviewed by which user (or group, or field-based "
+"reviewer)\n"
+"                before they can move forward in their workflow."
+msgstr ""
+
+#. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "A validation process is still open for at least one record."
@@ -116,6 +117,7 @@ msgstr "Un processo di approvazione è ancora aperto per almeno un record."
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__active
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__active
 msgid "Active"
 msgstr "Attivo"
 
@@ -125,9 +127,19 @@ msgid "All"
 msgstr "Tutto"
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "All users"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__allow_write_for_reviewer
 msgid "Allow Write For Reviewers"
 msgstr "Permetti scrittura ai revisori"
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "Allow editing"
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_validation_exception__group_ids
@@ -138,6 +150,11 @@ msgstr "Grupi autorizzati ad utilizzare questa eccezione validazione livello"
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__group
 msgid "Any user in a specific group"
 msgstr "Qualunque utente in un gruppo specifico"
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "Applies to"
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -174,6 +191,9 @@ msgstr "Approvato"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_search
 msgid "Archived"
 msgstr "In archivio"
 
@@ -272,6 +292,11 @@ msgstr "Creato il"
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__comment_approve_default
 msgid "Default comment prefilled when approval comments are enabled."
 msgstr "Commento predefinito quanto è abilitata l'approvazione dei commenti."
+
+#. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid "Define a new validation tier"
+msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__definition_type
@@ -466,11 +491,6 @@ msgid "Model Name"
 msgstr "Nome modello"
 
 #. module: base_tier_validation
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "More Options"
-msgstr "Più Opzioni"
-
-#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__name
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__name
 msgid "Name"
@@ -505,6 +525,11 @@ msgid "No reviews to do."
 msgstr "Nessuna approvazione da fare."
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Notifications"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_on_accepted
 msgid "Notify Reviewers on Accepted"
 msgstr "Notifica revisori all'accettazione"
@@ -530,13 +555,9 @@ msgid "Notify Reviewers on reaching Pending"
 msgstr "Notifica i revisori quando passa a \"In sospeso\""
 
 #. module: base_tier_validation
-#: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
-msgid ""
-"Number of days after which a message must be posted to remind about pending "
-"validation  (0 = no reminder)"
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Notify reviewers when"
 msgstr ""
-"Numero di giorni dopo i quali un messaggio deve essere inviato per ricordare "
-"della valutazione in attesa (0 = nessun promemoria)"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
@@ -601,6 +622,23 @@ msgid "Related Document Model"
 msgstr "Modello documento correlato"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_reminder_delay
+msgid "Remind Every (Days)"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Remind every"
+msgstr ""
+
+#. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
+msgid ""
+"Remind the reviewers every this many days until the review is done. Leave at "
+"0 to send no reminder."
+msgstr ""
+
+#. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
 msgid "Request Validation"
 msgstr "Richiedi validazione"
@@ -635,6 +673,7 @@ msgstr "Riavvia validazione"
 #. odoo-javascript
 #: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__review_ids
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Review"
 msgstr "Revisione"
 
@@ -669,6 +708,11 @@ msgid "Reviewer may lack access"
 msgstr "Il revisore potrebbe non avere accesso"
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Reviewer permissions"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__reviewer_ids
 msgid "Reviewers"
@@ -686,11 +730,6 @@ msgstr "Revisioni"
 #: model:ir.actions.server,name:base_tier_validation.ir_cron_auto_tier_validation_ir_actions_server
 msgid "Send Tier Review Reminder"
 msgstr "Invia promemoria revisione livello"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_reminder_delay
-msgid "Send reminder message on pending reviews"
-msgstr "Invia messaggio promemoria per le revisioni in attesa"
 
 #. module: base_tier_validation
 #. odoo-javascript
@@ -819,6 +858,16 @@ msgid "Tier Validations"
 msgstr "Livelli di Approvazione"
 
 #. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid ""
+"Tiers can be chained -- enable\n"
+"                <em>Approve by sequence</em>\n"
+"                on each definition for the model to require the lower-"
+"sequence\n"
+"                tier to be approved first."
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__to_validate_message
 msgid "To Validate Message"
 msgstr "Messaggio per 'Da validare'"
@@ -924,6 +973,11 @@ msgid "Waiting"
 msgstr "In attesa"
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "When reviewing"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__exclude_requester
 msgid ""
 "When set, the user who requested the validation is removed from this tier's "
@@ -1015,6 +1069,44 @@ msgstr "es. Validazione livello per ..."
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "the assigned reviewer"
 msgstr "il revisore assegnato"
+
+#~ msgid ""
+#~ "<i class=\"fa fa-lg fa-thumbs-down\"/>\n"
+#~ "                Operation has been\n"
+#~ "                <b>rejected</b>\n"
+#~ "                ."
+#~ msgstr ""
+#~ "<i class=\"fa fa-lg fa-thumbs-down\"/>\n"
+#~ "                L'operazione è stata\n"
+#~ "                <b>rifiutata</b>\n"
+#~ "                ."
+
+#~ msgid ""
+#~ "<i class=\"fa fa-lg fa-thumbs-up\"/>\n"
+#~ "                Operation has been\n"
+#~ "                <b>validated</b>\n"
+#~ "                !"
+#~ msgstr ""
+#~ "<i class=\"fa fa-lg fa-thumbs-up\"/>\n"
+#~ "                L'operazione è stata\n"
+#~ "                <b>approvata</b>\n"
+#~ "                !"
+
+#~ msgid "<span class=\"oe_edit_only\">Name</span>"
+#~ msgstr "<span class=\"oe_edit_only\">Nome</span>"
+
+#~ msgid "More Options"
+#~ msgstr "Più Opzioni"
+
+#~ msgid ""
+#~ "Number of days after which a message must be posted to remind about "
+#~ "pending validation  (0 = no reminder)"
+#~ msgstr ""
+#~ "Numero di giorni dopo i quali un messaggio deve essere inviato per "
+#~ "ricordare della valutazione in attesa (0 = nessun promemoria)"
+
+#~ msgid "Send reminder message on pending reviews"
+#~ msgstr "Invia messaggio promemoria per le revisioni in attesa"
 
 #~ msgid ""
 #~ "<i class=\"fa fa-lg fa-info-circle\"/>\n"

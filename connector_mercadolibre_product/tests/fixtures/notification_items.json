@@ -1,0 +1,9 @@
+{
+  "resource": "/items/MLA100",
+  "user_id": 123456789,
+  "topic": "items",
+  "application_id": 1,
+  "attempts": 1,
+  "sent": "2024-01-15T12:00:00.000Z",
+  "received": "2024-01-15T12:00:01.000Z"
+}

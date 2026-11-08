@@ -1,0 +1,36 @@
+# Copyright 2026 Odoo Community Association (OCA)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+{
+    "name": "Mercado Libre Connector - Sales",
+    "summary": "Orders, packs, and shipments from Mercado Libre",
+    "version": "19.0.1.0.0",
+    "development_status": "Alpha",
+    "category": "Connector",
+    "author": "Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/connector-mercadolibre",
+    "license": "AGPL-3",
+    "depends": [
+        "connector_mercadolibre_product",
+        "sale_stock",
+        "delivery",
+        "stock_delivery",
+        "sale_automatic_workflow",
+        "sale_automatic_workflow_job",
+        "sale_exception",
+    ],
+    "data": [
+        "security/ir.model.access.csv",
+        "security/mercadolibre_sale_security.xml",
+        "data/sale_exception.xml",
+        "data/queue_job_data.xml",
+        "data/ir_cron.xml",
+        "views/mercadolibre_backend_views.xml",
+        "views/mercadolibre_sale_views.xml",
+        "views/mercadolibre_shipment_views.xml",
+        "views/sale_order_views.xml",
+        "views/res_partner_views.xml",
+        "views/stock_picking_views.xml",
+        "views/mercadolibre_menus.xml",
+    ],
+    "installable": True,
+}

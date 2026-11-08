@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_category_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.category.list</field>
+        <field name="model">mercadolibre.category</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="external_id" />
+                <field name="name" />
+                <field name="listing_allowed" />
+                <field name="sync_date" />
+                <field name="backend_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_category_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.category.form</field>
+        <field name="model">mercadolibre.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="backend_id" />
+                        <field name="external_id" />
+                        <field name="name" />
+                        <field name="parent_id" />
+                        <field name="listing_allowed" />
+                        <field name="sync_date" />
+                    </group>
+                    <group>
+                        <field name="attribute_schema" widget="json" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_category" model="ir.actions.act_window">
+        <field name="name">Categories</field>
+        <field name="res_model">mercadolibre.category</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

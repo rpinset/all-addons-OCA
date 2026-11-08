@@ -1,0 +1,481 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* connector_mercadolibre_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_product_product__listing_status__active
+msgid "Active"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__attribute_schema
+msgid "Attribute Schema"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__backend_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__backend_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__backend_id
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_search
+msgid "Backend"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.ui.menu,name:connector_mercadolibre_product.menu_mercadolibre_catalog
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_backend_view_form_catalog
+msgid "Catalog"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.actions.act_window,name:connector_mercadolibre_product.action_mercadolibre_category
+#: model:ir.ui.menu,name:connector_mercadolibre_product.menu_mercadolibre_category
+msgid "Categories"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__category_id
+msgid "Category"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_product_product__listing_status__closed
+msgid "Closed"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__company_id
+msgid "Company"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__create_missing_products
+msgid "Create Missing Products"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__create_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__create_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__create_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__create_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_product__display_name
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_template__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_form
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_search
+msgid "Error"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__error_message
+msgid "Error Message"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_product.py:0
+msgid "Export Mercado Libre price for %(item)s"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_product.py:0
+msgid "Export Mercado Libre stock for %(item)s"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__export_prices
+msgid "Export Prices"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__export_stock
+msgid "Export Stock"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_form
+msgid "Export price"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_form
+msgid "Export stock"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__external_id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__external_id
+msgid "External"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__fulfillment
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_warehouse_mapping__stock_type__fulfillment
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_search
+msgid "Fulfillment"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_product__id
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/components/importer.py:0
+#: code:addons/connector_mercadolibre_product/components/notification_handler.py:0
+msgid "Import Mercado Libre item %(item)s"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_backend.py:0
+msgid "Import Mercado Libre listings for %(name)s"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__import_products
+msgid "Import Products"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_backend_view_form_catalog
+msgid "Import listings"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_product_product__listing_status__inactive
+msgid "Inactive"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__default_code
+msgid "Internal Reference"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__last_product_sync_at
+msgid "Last Product Sync At"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__write_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__write_uid
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__write_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__write_date
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__sync_date
+msgid "Last synchronization date"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__listing_allowed
+msgid "Listing Allowed"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__listing_status
+msgid "Listing Status"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/components/exporter.py:0
+msgid "Listing publication is not installed."
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_search
+msgid "Listing status"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.actions.act_window,name:connector_mercadolibre_product.action_mercadolibre_product
+#: model:ir.ui.menu,name:connector_mercadolibre_product.menu_mercadolibre_listing
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_backend_view_form_catalog
+msgid "Listings"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__location_id
+msgid "Location Stock"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__marketplace_qty
+msgid "Marketplace quantity"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_form
+msgid "Match product"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.product_product_view_form_mercadolibre
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.product_template_view_form_mercadolibre
+msgid "Mercado Libre"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_mercadolibre_backend
+msgid "Mercado Libre Backend"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_mercadolibre_category
+msgid "Mercado Libre Category"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_mercadolibre_product_product
+msgid "Mercado Libre Listing"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_mercadolibre_warehouse_mapping
+msgid "Mercado Libre Warehouse Mapping"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.actions.server,name:connector_mercadolibre_product.ir_cron_reconcile_listings_ir_actions_server
+msgid "Mercado Libre: reconcile listings"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_product__mercadolibre_bind_ids
+msgid "Mercadolibre Bind"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_product__mercadolibre_bind_count
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_product_template__mercadolibre_bind_count
+msgid "Mercadolibre Bind Count"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__name
+msgid "Name"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__network_node_id
+msgid "Network Node"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__odoo_id
+msgid "Odoo"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_backend.py:0
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_product.py:0
+msgid "Only Mercado Libre managers can change the catalog."
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__parent_id
+msgid "Parent"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__parent_external_id
+msgid "Parent External"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_product_product__listing_status__paused
+msgid "Paused"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__permalink
+msgid "Permalink"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__picture_url_text
+msgid "Picture Url Text"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__picture_urls
+msgid "Picture Urls"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_form
+msgid "Pictures"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__product_binding_ids
+msgid "Product Binding"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__product_binding_count
+msgid "Product Binding Count"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model,name:connector_mercadolibre_product.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#. odoo-python
+#: code:addons/connector_mercadolibre_product/models/mercadolibre_backend.py:0
+msgid "Refresh Mercado Libre categories for %(name)s"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_backend_view_form_catalog
+msgid "Refresh categories"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__lst_price
+msgid "Sales Price"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__seller_sku
+msgid "Seller SKU"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_warehouse_mapping__stock_type__seller_warehouse
+msgid "Seller warehouse"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_warehouse_mapping__stock_type__selling_address
+msgid "Selling address"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__state
+msgid "State"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__stock_type
+msgid "Stock Type"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__store_id
+msgid "Store ID"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_category__sync_date
+msgid "Sync Date"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,help:connector_mercadolibre_product.field_mercadolibre_product_product__lst_price
+msgid ""
+"The sale price is managed from the product template. Click on the 'Configure"
+" Variants' button to set the extra attribute prices."
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.constraint,message:connector_mercadolibre_product.constraint_mercadolibre_category_category_external_unique
+msgid "This Mercado Libre category is already cached."
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.constraint,message:connector_mercadolibre_product.constraint_mercadolibre_warehouse_mapping_warehouse_stock_type_unique
+msgid "This warehouse is already mapped for that stock type."
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields.selection,name:connector_mercadolibre_product.selection__mercadolibre_product_product__listing_status__under_review
+msgid "Under review"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model_terms:ir.ui.view,arch_db:connector_mercadolibre_product.mercadolibre_product_view_search
+msgid "Unmatched"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__user_product_id
+msgid "User Product"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_product_product__variation_id
+msgid "Variation"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_warehouse_mapping__warehouse_id
+msgid "Warehouse"
+msgstr ""
+
+#. module: connector_mercadolibre_product
+#: model:ir.model.fields,field_description:connector_mercadolibre_product.field_mercadolibre_backend__warehouse_mapping_ids
+msgid "Warehouse Mapping"
+msgstr ""

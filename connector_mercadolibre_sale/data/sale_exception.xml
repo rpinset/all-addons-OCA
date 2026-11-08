@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="exception_missing_sku" model="exception.rule">
+        <field name="name">Mercado Libre missing SKU</field>
+        <field
+            name="description"
+        >A Mercado Libre item on this order has no matching product.</field>
+        <field name="sequence">10</field>
+        <field name="model">sale.order</field>
+        <field name="exception_type">by_py_code</field>
+        <field
+            name="code"
+        >failed = bool(self.order_line.filtered("mercadolibre_unmatched"))</field>
+        <field name="active" eval="True" />
+        <field name="is_blocking" eval="True" />
+    </record>
+    <record id="exception_missing_fiscal_position" model="exception.rule">
+        <field name="name">Mercado Libre missing fiscal position</field>
+        <field
+            name="description"
+        >This Mercado Libre order has no fiscal position.</field>
+        <field name="sequence">20</field>
+        <field name="model">sale.order</field>
+        <field name="exception_type">by_py_code</field>
+        <field
+            name="code"
+        >failed = bool(self.mercadolibre_bind_ids) and not self.fiscal_position_id</field>
+        <field name="active" eval="True" />
+        <field name="is_blocking" eval="True" />
+    </record>
+    <record id="exception_unmapped_logistic_type" model="exception.rule">
+        <field name="name">Mercado Libre unmapped logistic type</field>
+        <field
+            name="description"
+        >Export stock is on and this shipment logistic type has no seller warehouse.</field>
+        <field name="sequence">30</field>
+        <field name="model">sale.order</field>
+        <field name="exception_type">by_py_code</field>
+        <field name="code">failed = self.mercadolibre_unmapped_logistic</field>
+        <field name="active" eval="True" />
+        <field name="is_blocking" eval="True" />
+    </record>
+</odoo>

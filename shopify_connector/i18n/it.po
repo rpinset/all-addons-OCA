@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-04 09:46+0000\n"
+"PO-Revision-Date: 2026-11-06 13:47+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -35,6 +35,12 @@ msgstr ""
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "%(created)s created and %(repaired)s repaired."
 msgstr "%(created)s create e %(repaired)s riparate."
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "%(message)s Fix the cause, then requeue the failed job in Queue Jobs."
+msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
@@ -131,7 +137,7 @@ msgid ""
 "                                <br/>"
 msgstr ""
 "<br/>\n"
-"                                <strong>Adempimenti</strong>\n"
+"                                <strong>Evasioni</strong>\n"
 "                                <br/>"
 
 #. module: shopify_connector
@@ -179,7 +185,7 @@ msgstr ""
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
 msgid "<strong>Drift crons</strong>"
-msgstr "<strong>Accumula crons</strong>"
+msgstr "<strong>Cron di riconciliazione scostamenti</strong>"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
@@ -208,7 +214,7 @@ msgstr "<strong>Errori recenti</strong>"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
 msgid "<strong>Shopify queue backlog:</strong>"
-msgstr "<strong>Coda backlog Shopify:</strong>"
+msgstr "<strong>Coda di elaborazione Shopify in arretrato:</strong>"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
@@ -274,6 +280,9 @@ msgid ""
 "and several Shopify fulfillments could be the one it created: %"
 "(fulfillments)s. Bind the right one manually."
 msgstr ""
+"Un precedente tentativo di evasione Shopify per %(picking)s non è stato "
+"confermato e diverse evasioni Shopify potrebbero corrispondere a quella "
+"creata: %(fulfillments)s. Collega manualmente quella corretta."
 
 #. module: shopify_connector
 #. odoo-python
@@ -378,7 +387,7 @@ msgstr "Tutte le sottoscrizioni webhook richieste funzionano correttamente."
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__inventory_allow_negative
 msgid "Allow Negative Shopify Quantities"
-msgstr "Consenti quantità  negative in Shopify"
+msgstr "Consenti quantità negative in Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_gateway_payment__amount
@@ -441,13 +450,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Another job is importing Shopify fulfillment %s."
-msgstr ""
+msgstr "Un'altra attività sta importando l'evasione Shopify %s."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Another job is importing Shopify order %s."
-msgstr "Un'altra attività  sta importando l'ordine Shopify %s."
+msgstr "Un'altra attività sta importando l'ordine Shopify %s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -469,7 +478,7 @@ msgstr "Credenziali dell'app"
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Applied Shopify inventory %(quantity)s for %(variant)s at %(location)s."
 msgstr ""
-"Applicata in Shopify la quantità  di magazzino %(quantity)s per %(variant)s "
+"Applicata in Shopify la quantità di magazzino %(quantity)s per %(variant)s "
 "presso %(location)s."
 
 #. module: shopify_connector
@@ -601,6 +610,8 @@ msgid ""
 "Bound Shopify fulfillment %(fulfillment)s, created by an unconfirmed "
 "attempt, to delivery %(delivery)s."
 msgstr ""
+"L'evasione Shopify %(fulfillment)s, creata da un tentativo non confermato, è "
+"stata collegata alla consegna %(delivery)s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -712,18 +723,19 @@ msgstr "Chiuso il"
 #. odoo-python
 #: code:addons/shopify_connector/models/collection.py:0
 msgid "Collection %(gid)s import failed: %(error)s"
-msgstr "Importazione %(gid)s collezione fallita: %(error)s"
+msgstr "Importazione della collezione %(gid)s non riuscita: %(error)s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_collection__collection_type
 msgid "Collection Type"
-msgstr "Tipo di raccolta"
+msgstr "Tipo di collezione"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/collection.py:0
 msgid "Collection products must belong to the same Shopify instance."
-msgstr "I prodotti collezione devono appartenere alla stessa istanza Shopify."
+msgstr ""
+"I prodotti della collezione devono appartenere alla stessa istanza Shopify."
 
 #. module: shopify_connector
 #: model:ir.actions.act_window,name:shopify_connector.shopify_collection_action
@@ -731,7 +743,7 @@ msgstr "I prodotti collezione devono appartenere alla stessa istanza Shopify."
 #: model:ir.ui.menu,name:shopify_connector.shopify_menu_collections
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_form
 msgid "Collections"
-msgstr "Raccolte"
+msgstr "Collezioni"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
@@ -803,7 +815,7 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__replaced_by_id
 msgid "Completed Order Binding"
-msgstr "Vincolo dell'ordine completato"
+msgstr "Collegamento ordine completato"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__completed_order_shopify_id
@@ -837,19 +849,21 @@ msgstr ""
 #: code:addons/shopify_connector/models/instance.py:0
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Configure the Odoo web base URL first."
-msgstr "Configure il Odoo web base URL first."
+msgstr "Configura prima l'URL di base web di Odoo."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Configure the Shopify gift-card liability product."
-msgstr "Configure il Shopify gift-card liability prodotto."
+msgstr "Configura il prodotto Shopify per le passività da carte regalo."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "Configured order products must belong to the instance company."
-msgstr "Configured ordine Prodotti deve belong A il istanza azienda."
+msgstr ""
+"I prodotti configurati per gli ordini devono appartenere all'azienda "
+"dell'istanza."
 
 #. module: shopify_connector
 #. odoo-python
@@ -858,6 +872,8 @@ msgid ""
 "Confirmed sale order %(order)s because Shopify fulfillment %(fulfillment)s "
 "shipped its items."
 msgstr ""
+"Ordine di vendita %(order)s confermato perché l'evasione Shopify %"
+"(fulfillment)s ne ha spedito gli articoli."
 
 #. module: shopify_connector
 #. odoo-python
@@ -883,7 +899,7 @@ msgstr "Collega l'istanza Shopify prima di importare."
 #: code:addons/shopify_connector/models/customer_sync.py:0
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Connect the Shopify instance first."
-msgstr "Connect il Shopify istanza first."
+msgstr "Collega prima l'istanza Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__state__connected
@@ -895,7 +911,7 @@ msgstr "Connesso"
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Connected to Shopify shop %s."
-msgstr "Connesso A Shopify Negozio %s."
+msgstr "Connesso al negozio Shopify %s."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
@@ -912,13 +928,13 @@ msgstr "Connessione riuscita"
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Connection test failed: %s"
-msgstr "Connessione Test Non riuscito: %s"
+msgstr "Test di connessione non riuscito: %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Connection to Shopify shop %s restored automatically."
-msgstr ""
+msgstr "Connessione al negozio Shopify %s ripristinata automaticamente."
 
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_res_partner
@@ -961,18 +977,18 @@ msgstr "Paese"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__product_create_if_missing
 msgid "Create Missing Odoo Products"
-msgstr "Crea mancanti Odoo Prodotti"
+msgstr "Crea prodotti Odoo mancanti"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "Create Shopify Tax Mapping"
-msgstr "Crea Shopify Imposta Mappatura"
+msgstr "Crea mappatura imposte Shopify"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
 msgid "Create Tax Mapping"
-msgstr "Crea Imposta Mappatura"
+msgstr "Crea mappatura imposte"
 
 #. module: shopify_connector
 #: model:ir.model,website_form_label:shopify_connector.model_res_partner
@@ -982,24 +998,26 @@ msgstr "Crea un cliente"
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__product_create_if_missing
 msgid "Create an Odoo product when no barcode or SKU match exists."
-msgstr "Crea an Odoo prodotto when No barcode o SKU match exists."
+msgstr ""
+"Crea un prodotto Odoo quando non esiste alcuna corrispondenza per codice a "
+"barre o SKU."
 
 #. module: shopify_connector
 #: model_terms:ir.actions.act_window,help:shopify_connector.shopify_instance_action
 msgid "Create your first Shopify instance"
-msgstr "Crea your first Shopify istanza"
+msgstr "Crea la tua prima istanza Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__created_at
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__created_at
 msgid "Created At"
-msgstr "creati presso"
+msgstr "Creato il"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Created Shopify fulfillment %(fulfillment)s for delivery %(delivery)s."
-msgstr "creati Shopify evasione %(fulfillment)s per Consegna %(delivery)s."
+msgstr "Creata evasione Shopify %(fulfillment)s per la consegna %(delivery)s."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_carrier_mapping__create_uid
@@ -1033,7 +1051,7 @@ msgstr "creati Shopify evasione %(fulfillment)s per Consegna %(delivery)s."
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__create_uid
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_webhook_event__create_uid
 msgid "Created by"
-msgstr "creati by"
+msgstr "Creato da"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_carrier_mapping__create_date
@@ -1067,7 +1085,7 @@ msgstr "creati by"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__create_date
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_webhook_event__create_date
 msgid "Created on"
-msgstr "creati on"
+msgstr "Creato il"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__step__credentials
@@ -1083,7 +1101,9 @@ msgstr "Nota di credito"
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Credit-note total does not match Shopify refund %(refund)s."
-msgstr "Credit-nota total does non match Shopify rimborso %(refund)s."
+msgstr ""
+"Il totale della nota di credito non corrisponde al rimborso Shopify %"
+"(refund)s."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__currency_id
@@ -1093,7 +1113,7 @@ msgstr "Valuta"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__current_quantity
 msgid "Current Quantity"
-msgstr "Current quantità"
+msgstr "Quantità attuale"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_collection__collection_type__custom
@@ -1104,52 +1124,52 @@ msgstr "Personalizzato"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_customer_address__customer_binding_id
 msgid "Customer Binding"
-msgstr "cliente collegamento"
+msgstr "Collegamento cliente"
 
 #. module: shopify_connector
 #: model:ir.actions.act_window,name:shopify_connector.shopify_customer_action
 #: model:ir.ui.menu,name:shopify_connector.shopify_menu_customer_bindings
 msgid "Customer Bindings"
-msgstr "cliente collegamenti"
+msgstr "Collegamenti clienti"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Customer Field Ownership"
-msgstr "cliente Field Ownership"
+msgstr "Gestione dei campi del cliente"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_company_contact__customer_shopify_id
 msgid "Customer Shopify"
-msgstr "cliente Shopify"
+msgstr "Cliente Shopify"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Customer Synchronization"
-msgstr "cliente Synchronization"
+msgstr "Sincronizzazione clienti"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_binding.py:0
 msgid "Customer addresses must belong to the bound customer."
-msgstr "cliente Indirizzi deve belong A il bound cliente."
+msgstr "Gli indirizzi del cliente devono appartenere al cliente collegato."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Customer export failed: %s"
-msgstr "cliente Esportazione Non riuscito: %s"
+msgstr "Esportazione cliente non riuscita: %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Customer import failed: %s"
-msgstr "cliente Importazione Non riuscito: %s"
+msgstr "Importazione cliente non riuscita: %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Customer import queued"
-msgstr "cliente Importazione accodati"
+msgstr "Importazione clienti accodata"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__customer_binding_ids
@@ -1161,25 +1181,19 @@ msgstr "Clienti"
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Daily Shopify inventory reconcile for %s"
-msgstr "Daily Shopify inventario reconcile per %s"
+msgstr "Riconciliazione giornaliera delle giacenze Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Daily inventory drift reconciliation queued."
-msgstr "Daily inventario drift reconciliation accodati."
-
-#. module: shopify_connector
-#. odoo-python
-#: code:addons/shopify_connector/models/order_sync.py:0
-msgid "Daily order drift reconciliation queued with a two-day overlap."
-msgstr "Daily ordine drift reconciliation accodati con a two-Giorno overlap."
+msgstr "Riconciliazione giornaliera degli scostamenti di magazzino accodata."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Daily product drift reconciliation queued."
-msgstr "Daily prodotto drift reconciliation accodati."
+msgstr "Riconciliazione giornaliera degli scostamenti dei prodotti accodata."
 
 #. module: shopify_connector
 #: model:ir.ui.menu,name:shopify_connector.shopify_menu_dashboard
@@ -1204,7 +1218,7 @@ msgstr "Dashboard Clienti"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__dashboard_drift_crons
 msgid "Dashboard Drift Crons"
-msgstr "Dashboard Cron di deriva"
+msgstr "Dashboard cron scostamenti"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__dashboard_financial
@@ -1234,7 +1248,7 @@ msgstr "Dashboard Prodotti"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__dashboard_queue_backlog
 msgid "Dashboard Queue Backlog"
-msgstr "Dashboard Coda Backlog"
+msgstr "Dashboard arretrato coda"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__dashboard_recent_errors
@@ -1265,12 +1279,14 @@ msgstr "Giorno"
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_variant__price_snapshot
 msgid "Decimal amount as provided by Shopify, without float arithmetic."
-msgstr "Decimal Importo as provided by Shopify, senza float arithmetic."
+msgstr ""
+"Importo decimale così come fornito da Shopify, senza aritmetica in virgola "
+"mobile."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__remote_deleted
 msgid "Deleted from Shopify"
-msgstr "eliminati Da Shopify"
+msgstr "Eliminato da Shopify"
 
 #. module: shopify_connector
 #. odoo-python
@@ -1281,7 +1297,7 @@ msgstr "La consegna %s non contiene movimenti consegnati collegati a Shopify."
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__delivery_product_id
 msgid "Delivery Product"
-msgstr "Consegna prodotto"
+msgstr "Prodotto di spedizione"
 
 #. module: shopify_connector
 #. odoo-python
@@ -1306,8 +1322,8 @@ msgid ""
 "Delivery source location %(location)s is not mapped to a Shopify location "
 "for %(instance)s."
 msgstr ""
-"Delivery origine ubicazione %(location)s è non mappato Shopify ubicazione "
-"per %(instance)s."
+"L'ubicazione di origine della consegna %(location)s non è mappata su "
+"un'ubicazione Shopify per %(instance)s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -1318,7 +1334,7 @@ msgstr "Differenza"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Detect and Import B2B"
-msgstr "Detect e Importazione B2B"
+msgstr "Rileva e importa B2B"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_log__direction
@@ -1346,7 +1362,7 @@ msgstr "Disattiva per rifiutare la ricezione dei webhook per questa istanza."
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__discount_codes
 msgid "Discount Codes"
-msgstr "Sconto Codes"
+msgstr "Codici sconto"
 
 #. module: shopify_connector
 #. odoo-python
@@ -1359,6 +1375,7 @@ msgstr "Invia webhook Shopify %s"
 #: model:ir.model.fields,field_description:shopify_connector.field_product_product__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__display_name
+#: model:ir.model.fields,field_description:shopify_connector.field_queue_job__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__display_name
 #: model:ir.model.fields,field_description:shopify_connector.field_sale_order__display_name
@@ -1414,23 +1431,23 @@ msgstr "Bozza"
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__source__draft
 msgid "Draft Order"
-msgstr "Bozza ordine"
+msgstr "Ordine in bozza"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__draft_status
 msgid "Draft Status"
-msgstr "Bozza Stato"
+msgstr "Stato bozza"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Draft-order webhook contains no order ID."
-msgstr "Bozza-ordine webhook contains No ordine ID."
+msgstr "Il webhook dell'ordine in bozza non contiene alcun ID ordine."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Duplicate Configuration"
-msgstr "Duplicate configurazione"
+msgstr "Configurazione duplicata"
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_instance_product_pricelist_unique
@@ -1442,12 +1459,12 @@ msgstr ""
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_field_mapping_instance_field_unique
 msgid "Each synchronized field can only be configured once per instance."
 msgstr ""
-"Each synchronized field può solo be configured una sola volta per istanza."
+"Ogni campo sincronizzato può essere configurato una sola volta per istanza."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_customer__email_marketing_state
 msgid "Email Marketing State"
-msgstr "E-mail Marketing State"
+msgstr "Stato email marketing"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_order__odoo_id
@@ -1460,7 +1477,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Enable Shopify B2B import first."
-msgstr "Enable Shopify B2B Importazione first."
+msgstr "Abilita prima l'importazione B2B di Shopify."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
@@ -1472,12 +1489,19 @@ msgid ""
 "their\n"
 "                                deliveries are validated by hand."
 msgstr ""
+"Abilita quando gli ordini vengono spediti da Shopify o da\n"
+"                                un'app di evasione anziché da Odoo. Se "
+"disabilitato,\n"
+"                                queste evasioni vengono solo importate e le "
+"relative\n"
+"                                consegne devono essere convalidate "
+"manualmente."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Enter a shop domain such as example.myshopify.com."
-msgstr "Enter a Dominio del negozio such as example.myshopify.com."
+msgstr "Inserisci il dominio di un negozio, ad esempio example.myshopify.com."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_log__entity
@@ -1511,7 +1535,7 @@ msgstr "Entità"
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_webhook_event__state__error
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_webhook_event_view_form
 msgid "Error"
-msgstr "errore"
+msgstr "Errore"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_binding_mixin__error_message
@@ -1533,7 +1557,7 @@ msgstr "errore"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__error_message
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_webhook_event__error_message
 msgid "Error Message"
-msgstr "errore Messaggio"
+msgstr "Messaggio di errore"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_binding_state_search_base
@@ -1550,12 +1574,14 @@ msgstr "errore Messaggio"
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_webhook_event_view_search
 msgid "Errors"
-msgstr "errori"
+msgstr "Errori"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_tax_mapping__rate
 msgid "Exact Shopify tax rate as a decimal fraction, for example 0.11."
-msgstr "Exact Shopify Imposta rate as a decimal fraction, per example 0.11."
+msgstr ""
+"Aliquota fiscale esatta di Shopify espressa come frazione decimale, ad "
+"esempio 0.11."
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_refund__amount
@@ -1573,35 +1599,36 @@ msgid ""
 "Expiry of the access token issued by the Shopify Dev Dashboard. Empty for "
 "static Admin API tokens, which do not expire."
 msgstr ""
-"Expiry di access token issued by Shopify Dev Dashboard. Empty per static "
-"Admin API tokens, which do non expire."
+"Scadenza del token di accesso emesso dalla Shopify Dev Dashboard. Vuoto per "
+"i token statici della Admin API, che non scadono."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Export %s to Shopify"
-msgstr "Esportazione %s A Shopify"
+msgstr "Esporta %s in Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__customer_export_enabled
 msgid "Export Odoo Customers"
-msgstr "Esportazione Odoo Clienti"
+msgstr "Esporta clienti Odoo"
 
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_shopify_product_export_wizard
 msgid "Export Products to Shopify"
-msgstr "Esportazione Prodotti A Shopify"
+msgstr "Esporta prodotti in Shopify"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Export Shopify customer %s"
-msgstr "Esportazione Shopify cliente %s"
+msgstr "Esporta cliente Shopify %s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__customer_export_enabled
 msgid "Export changes for linked customers when Odoo owns the field."
-msgstr "Esportazione changes per linked Clienti when Odoo owns il field."
+msgstr ""
+"Esporta le modifiche dei clienti collegati quando il campo è gestito da Odoo."
 
 #. module: shopify_connector
 #. odoo-python
@@ -1609,19 +1636,19 @@ msgstr "Esportazione changes per linked Clienti when Odoo owns il field."
 #: model_terms:ir.ui.view,arch_db:shopify_connector.product_template_form_shopify
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_export_wizard_view_form
 msgid "Export to Shopify"
-msgstr "Esportazione A Shopify"
+msgstr "Esporta in Shopify"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Exported Odoo product %s to Shopify."
-msgstr "Exported Odoo prodotto %s A Shopify."
+msgstr "Prodotto Odoo %s esportato in Shopify."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Exported Shopify customer %s."
-msgstr "Exported Shopify cliente %s."
+msgstr "Cliente Shopify %s esportato."
 
 #. module: shopify_connector
 #. odoo-python
@@ -1629,7 +1656,7 @@ msgstr "Exported Shopify cliente %s."
 msgid ""
 "External fulfillment had no line quantities; Odoo delivery was not validated."
 msgstr ""
-"L'evasione esterna non conteneva quantità  per riga; la consegna Odoo non è "
+"L'evasione esterna non conteneva quantità per riga; la consegna Odoo non è "
 "stata convalidata."
 
 #. module: shopify_connector
@@ -1644,7 +1671,16 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Failed to fulfill %(picking)s: %(error)s"
-msgstr "Non riuscito A fulfill %(picking)s: %(error)s"
+msgstr "Impossibile evadere %(picking)s: %(error)s"
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Failed to update the tracking of Shopify fulfillment %(fulfillment)s for %"
+"(picking)s: %(error)s. Save the tracking number of the delivery again to "
+"resend it."
+msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_field_mapping__field
@@ -1659,38 +1695,38 @@ msgstr "Gestione dei campi"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__financial_status
 msgid "Financial Status"
-msgstr "Finanziario Stato"
+msgstr "Stato finanziario"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
 msgid "Finish and Queue Imports"
-msgstr "Finish e Coda Imports"
+msgstr "Termina e accoda le importazioni"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__inventory_quantity_basis__free_qty
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__inventory_quantity_basis__free_qty
 msgid "Free Quantity"
-msgstr "Free quantità"
+msgstr "Quantità disponibile"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_fulfillment_view_form
 msgid "Fulfillment"
-msgstr "evasione"
+msgstr "Evasione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order__fulfillment_holds
 msgid "Fulfillment Holds"
-msgstr "evasione Holds"
+msgstr "Blocchi di evasione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order_line__fulfillment_order_id
 msgid "Fulfillment Order"
-msgstr "evasione ordine"
+msgstr "Ordine di evasione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order_line__shopify_id
 msgid "Fulfillment Order Line GID"
-msgstr "evasione ordine Line GID"
+msgstr "GID riga dell'ordine di evasione"
 
 #. module: shopify_connector
 #: model:ir.actions.act_window,name:shopify_connector.shopify_fulfillment_order_action
@@ -1700,18 +1736,18 @@ msgstr "evasione ordine Line GID"
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_fulfillment_view_form
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_fulfillment_view_form
 msgid "Fulfillment Orders"
-msgstr "evasione ordini"
+msgstr "Ordini di evasione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__fulfillment_status
 msgid "Fulfillment Status"
-msgstr "evasione Stato"
+msgstr "Stato di evasione"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Fulfillment cancelled; refresh failed: %s"
-msgstr "evasione annullato; Aggiorna Non riuscito: %s"
+msgstr "Evasione annullata; aggiornamento non riuscito: %s"
 
 #. module: shopify_connector
 #. odoo-python
@@ -1727,7 +1763,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Fulfillment webhook contains no fulfillment ID."
-msgstr "evasione webhook contains No evasione ID."
+msgstr "Il webhook di evasione non contiene alcun ID evasione."
 
 #. module: shopify_connector
 #: model:ir.actions.act_window,name:shopify_connector.shopify_fulfillment_action
@@ -1741,12 +1777,14 @@ msgstr "Evasioni"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_location__fulfills_online_orders
 msgid "Fulfills Online Orders"
-msgstr "Fulfills Online ordini"
+msgstr "Evade ordini online"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__odoo_status
 msgid "Full Shopify lifecycle status used when Odoo owns Status."
-msgstr "Full Shopify lifecycle Stato used when Odoo owns Stato."
+msgstr ""
+"Stato completo del ciclo di vita su Shopify utilizzato quando lo stato è "
+"gestito da Odoo."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_gateway_journal__gateway
@@ -1765,12 +1803,12 @@ msgstr "Registri contabili del gateway"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__gift_card_journal_id
 msgid "Gift Card Journal"
-msgstr "Gift Card Registro"
+msgstr "Registro carte regalo"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__gift_card_product_id
 msgid "Gift Card Product"
-msgstr "Gift Card prodotto"
+msgstr "Prodotto carta regalo"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__granted_scopes
@@ -1798,18 +1836,18 @@ msgstr "Alto"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__high_risk_hold_enabled
 msgid "High Risk Hold Enabled"
-msgstr "High Risk Hold Abilitato"
+msgstr "Blocco per rischio elevato abilitato"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_order_view_form
 msgid "Historical Import"
-msgstr "Historical Importazione"
+msgstr "Importazione storica"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Hold released; refresh failed: %s"
-msgstr "Hold released; Aggiorna Non riuscito: %s"
+msgstr "Blocco rimosso; aggiornamento non riuscito: %s"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_fulfillment_order_view_form
@@ -1821,6 +1859,7 @@ msgstr "Blocchi"
 #: model:ir.model.fields,field_description:shopify_connector.field_product_product__id
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template__id
 #: model:ir.model.fields,field_description:shopify_connector.field_product_template_attribute_value__id
+#: model:ir.model.fields,field_description:shopify_connector.field_queue_job__id
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner__id
 #: model:ir.model.fields,field_description:shopify_connector.field_res_partner_category__id
 #: model:ir.model.fields,field_description:shopify_connector.field_sale_order__id
@@ -1870,13 +1909,13 @@ msgstr "Chiave di idempotenza"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Ignored connector fulfillment webhook echo %s."
-msgstr "Ignored connector evasione webhook echo %s."
+msgstr "Ignorata ripetizione del webhook di evasione del connettore %s."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Ignored matching Shopify inventory webhook echo."
-msgstr "Ignored matching Shopify inventario webhook echo."
+msgstr "Ignorata ripetizione corrispondente del webhook di magazzino Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__image_checksum
@@ -1933,7 +1972,7 @@ msgstr "Importa dati B2B di Shopify"
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Import Shopify B2B data for %s"
-msgstr "Importazione Shopify B2B data per %s"
+msgstr "Importa dati B2B Shopify per %s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__inventory_import_enabled
@@ -1944,31 +1983,31 @@ msgstr "Importa giacenze Shopify"
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Import Shopify collection %s"
-msgstr "Importazione Shopify collezione %s"
+msgstr "Importa collezione Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Import Shopify customer %s"
-msgstr "Importazione Shopify cliente %s"
+msgstr "Importa cliente Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Import Shopify customer webhook %s"
-msgstr "Importazione Shopify cliente webhook %s"
+msgstr "Importa webhook cliente Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Import Shopify customers for %s"
-msgstr "Importazione clienti Shopify per %s"
+msgstr "Importa clienti Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify draft order %s"
-msgstr "Importazione Shopify Bozza ordine %s"
+msgstr "Importa ordine in bozza Shopify %s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__draft_order_import_enabled
@@ -1976,56 +2015,57 @@ msgid ""
 "Import Shopify draft orders as quotations. An order created from a draft "
 "order then continues on the quotation of its draft order."
 msgstr ""
-"importazione Shopify bozza ordini as quotations. ordine creato da bozza "
-"ordine then continues su preventivo di its bozza ordine."
+"Importa gli ordini in bozza di Shopify come preventivi. Un ordine creato a "
+"partire da un ordine in bozza prosegue quindi sul preventivo dell'ordine in "
+"bozza stesso."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Import Shopify fulfillment %s"
-msgstr "Importazione Shopify evasione %s"
+msgstr "Importa evasione Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Import Shopify locations for %s"
-msgstr "Importazione Shopify Ubicazioni per %s"
+msgstr "Importa ubicazioni Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify order %s"
-msgstr "Importazione Shopify ordine %s"
+msgstr "Importa ordine Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify orders for %s"
-msgstr "Importazione Shopify ordini per %s"
+msgstr "Importa ordini Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Import Shopify product %s"
-msgstr "Importazione Shopify prodotto %s"
+msgstr "Importa prodotto Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Import Shopify product webhook %s"
-msgstr "Importazione Shopify prodotto webhook %s"
+msgstr "Importa webhook prodotto Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Import Shopify products for %s"
-msgstr "Importazione prodotti Shopify per %s"
+msgstr "Importa prodotti Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import Shopify refund for %s"
-msgstr "Importazione Shopify rimborso per %s"
+msgstr "Importa rimborso Shopify per %s"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__order_confirmation_policy__quotation
@@ -2037,25 +2077,25 @@ msgstr "Importa come preventivo"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Import fulfillment orders for %s"
-msgstr "Importazione evasione ordini per %s"
+msgstr "Importa ordini di evasione per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Import webhook order %s"
-msgstr "Importazione webhook ordine %s"
+msgstr "Importa ordine da webhook %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Imported %(companies)s B2B companies and %(catalogs)s catalogs."
-msgstr "importato %(companies)s B2B aziende e %(catalogs)s catalogs."
+msgstr "Importate %(companies)s aziende B2B e %(catalogs)s cataloghi."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Imported %s Shopify locations."
-msgstr "importato %s Shopify ubicazioni."
+msgstr "Importate %s ubicazioni Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_customer__tag_category_ids
@@ -2066,31 +2106,31 @@ msgstr "Tag Shopify importati"
 #. odoo-python
 #: code:addons/shopify_connector/models/collection.py:0
 msgid "Imported Shopify collection %s."
-msgstr "importato Shopify collection %s."
+msgstr "Collezione Shopify %s importata."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Imported Shopify customer %s."
-msgstr "importato Shopify cliente %s."
+msgstr "Cliente Shopify %s importato."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Imported Shopify order %s."
-msgstr "importato Shopify ordine %s."
+msgstr "Ordine Shopify %s importato."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Imported Shopify product %s."
-msgstr "importato Shopify prodotto %s."
+msgstr "Prodotto Shopify %s importato."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Imported external Shopify fulfillment %s."
-msgstr "importato external Shopify evasione %s."
+msgstr "Evasione esterna Shopify %s importata."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_location_view_search
@@ -2106,7 +2146,7 @@ msgstr "Informazioni"
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__step__imports
 msgid "Initial Import"
-msgstr "Initial Importazione"
+msgstr "Importazione iniziale"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_customer__initial_seed_pending
@@ -2138,7 +2178,7 @@ msgstr "Importazione iniziale in attesa"
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_search
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_webhook_event_view_search
 msgid "Instance"
-msgstr "istanza"
+msgstr "Istanza"
 
 #. module: shopify_connector
 #: model:ir.ui.menu,name:shopify_connector.shopify_menu_instances
@@ -2159,7 +2199,7 @@ msgstr "Livelli di giacenza"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__inventory_quantity_basis
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__inventory_quantity_basis
 msgid "Inventory Quantity Basis"
-msgstr "Criterio della quantità  di magazzino"
+msgstr "Criterio della quantità di magazzino"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__inventory_sync_status
@@ -2171,30 +2211,34 @@ msgstr "Stato del magazzino"
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Inventory delta push failed: %s"
-msgstr "inventario Differenza push Non riuscito: %s"
+msgstr "Invio della variazione di giacenza non riuscito: %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Inventory reconciliation completed with %s corrections."
-msgstr "inventario reconciliation completed con %s corrections."
+msgstr "Riconciliazione del magazzino completata con %s correzioni."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Inventory reconciliation queued"
-msgstr "inventario reconciliation accodati"
+msgstr "Riconciliazione del magazzino accodata"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Inventory reconciliation skipped unmapped Shopify location %s."
-msgstr "inventario reconciliation skipped unmapped Shopify ubicazione %s."
+msgstr ""
+"La riconciliazione del magazzino ha ignorato l'ubicazione Shopify non "
+"mappata %s."
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_inventory_state_inventory_state_unique
 msgid "Inventory state must be unique per instance, variant, and location."
-msgstr "inventario state deve be unique per istanza, variante, e ubicazione."
+msgstr ""
+"Lo stato del magazzino deve essere univoco per istanza, variante e "
+"ubicazione."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2208,7 +2252,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Inventory webhook is missing item, location, or quantity."
-msgstr "inventario webhook è mancanti Elemento, ubicazione, o quantità ."
+msgstr ""
+"Nel webhook di magazzino mancano l'articolo, l'ubicazione o la quantità."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2217,8 +2262,8 @@ msgid ""
 "Inventory webhook skipped because the variant is unbound, untracked, opted "
 "out, or not storable."
 msgstr ""
-"magazzino webhook skipped because variante è unbound, untracked, opted out, "
-"o non storable."
+"Webhook di magazzino ignorato perché la variante non è collegata, non è "
+"tracciata, è esclusa o non è immagazzinabile."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2319,12 +2364,12 @@ msgstr "Ultimo invio"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__last_pushed_quantity
 msgid "Last Pushed Quantity"
-msgstr "Ultima quantità  inviata"
+msgstr "Ultima quantità inviata"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__last_shopify_quantity
 msgid "Last Shopify Quantity"
-msgstr "Ultima quantità  Shopify"
+msgstr "Ultima quantità Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__last_sync_date
@@ -2456,13 +2501,13 @@ msgstr "Mappature ubicazioni"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment__location_shopify_id
 msgid "Location Shopify"
-msgstr "ubicazione Shopify"
+msgstr "Ubicazione Shopify"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Location import queued"
-msgstr "ubicazione Importazione accodati"
+msgstr "Importazione ubicazioni accodata"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__step__locations
@@ -2499,7 +2544,7 @@ msgstr "Negozio Shopify principale"
 #. module: shopify_connector
 #: model:ir.module.category,description:shopify_connector.module_category_shopify
 msgid "Manage Shopify connector configuration and operations."
-msgstr "Manage Shopify connector configurazione e operations."
+msgstr "Gestisce la configurazione e le operazioni del connettore Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__order_invoicing_policy__manual
@@ -2511,7 +2556,7 @@ msgstr "Manuale"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Manually cancelled Shopify fulfillment %s."
-msgstr "Manually annullato Shopify evasione %s."
+msgstr "Evasione Shopify %s annullata manualmente."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
@@ -2520,9 +2565,9 @@ msgid ""
 "                        or fulfillment to its Odoo warehouse and stock "
 "location."
 msgstr ""
-"Associa ogni ubuicazione Shopify attiva utilizzata per l'inventario o "
-"l'evasione degli ordini,\n"
-"                         al relativo magazzino e ubicazione di stoccaggio in "
+"Associa ogni ubicazione Shopify attiva utilizzata per l'inventario o "
+"l'evasione degli ordini\n"
+"                        al relativo magazzino e ubicazione di stoccaggio in "
 "Odoo."
 
 #. module: shopify_connector
@@ -2576,7 +2621,7 @@ msgstr "Aliquota mancante"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
 msgid "Missing or misrouted subscriptions:"
-msgstr "mancanti o misrouted subscriptions:"
+msgstr "Sottoscrizioni mancanti o indirizzate in modo errato:"
 
 #. module: shopify_connector
 #. odoo-python
@@ -2602,6 +2647,11 @@ msgid ""
 "name. Two stores of the same company can both send an order #1001, so their "
 "sale orders get the same name."
 msgstr ""
+"Assegna agli ordini di vendita creati da Shopify il nome del relativo ordine "
+"Shopify, ad esempio #1001, anziché utilizzare la sequenza di Odoo. Gli "
+"ordini di vendita già presenti in Odoo mantengono il proprio nome. Due "
+"negozi della stessa azienda possono entrambi inviare un ordine #1001, "
+"pertanto i rispettivi ordini di vendita avranno lo stesso nome."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2616,7 +2666,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "No Odoo variant matches Shopify options for %(gid)s."
-msgstr "No Odoo variante matches Shopify options per %(gid)s."
+msgstr "Nessuna variante Odoo corrisponde alle opzioni Shopify per %(gid)s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2625,14 +2675,14 @@ msgid ""
 "No Shopify tax mapping exists for rate %(rate)s, country %(country)s, "
 "included=%(included)s."
 msgstr ""
-"No Shopify Imposta Mappatura exists per rate %(rate)s, Paese %(country)s, "
-"included=%(included)s."
+"Non esiste alcuna mappatura fiscale Shopify per aliquota %(rate)s, paese %"
+"(country)s, inclusa=%(included)s."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "No drift crons installed"
-msgstr "Nessuna attività  pianificata di riconciliazione installata"
+msgstr "Nessuna attività pianificata di riconciliazione installata"
 
 #. module: shopify_connector
 #. odoo-python
@@ -2641,12 +2691,14 @@ msgid ""
 "No open Odoo delivery contains its items. Check the deliveries of the sale "
 "order, then retry."
 msgstr ""
+"Nessuna consegna Odoo aperta contiene i suoi articoli. Verifica le consegne "
+"dell'ordine di vendita, quindi riprova."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "No payment journal is mapped for Shopify gateway %s."
-msgstr "No pagamento Registro è mapped per Shopify gateway %s."
+msgstr "Nessun registro di pagamento è mappato per il gateway Shopify %s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2654,8 +2706,8 @@ msgstr "No pagamento Registro è mapped per Shopify gateway %s."
 msgid ""
 "No product binding exists for Shopify variant %(variant)s (SKU %(sku)s)."
 msgstr ""
-"No prodotto collegamento exists per Shopify variante %(variant)s (SKU %"
-"(sku)s)."
+"Non esiste alcun collegamento prodotto per la variante Shopify %(variant)s "
+"(SKU %(sku)s)."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2667,7 +2719,8 @@ msgstr "Nessun errore recente"
 #. odoo-python
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "No safe automatic retry route is configured for %s."
-msgstr "No safe automatic riprova route è configured per %s."
+msgstr ""
+"Nessun percorso sicuro di nuovo tentativo automatico è configurato per %s."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2812,6 +2865,9 @@ msgid ""
 "Odoo could not reserve %(product)s on %(transfer)s. Add the stock, or enable "
 "Ship Unreserved Stock on the Shopify instance, then retry."
 msgstr ""
+"Odoo non ha potuto prenotare %(product)s nel trasferimento %(transfer)s. "
+"Aggiungi la giacenza oppure abilita «Spedisci giacenza non prenotata» "
+"nell'istanza Shopify, quindi riprova."
 
 #. module: shopify_connector
 #. odoo-python
@@ -2824,13 +2880,13 @@ msgstr ""
 "La consegna Odoo %(picking)s è stata annullata dopo la creazione "
 "dell'evasione Shopify %(fulfillment)s. L'evasione Shopify non è stata "
 "annullata automaticamente. Verifica la situazione e usa l'azione manuale "
-"Â«Annulla in ShopifyÂ»: %(link)s"
+"«Annulla in Shopify»: %(link)s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__inventory_quantity_basis
 msgid "Odoo quantity used as the source for Shopify available stock."
 msgstr ""
-"quantità  Odoo utilizzata come fonte per la disponibilità  di magazzino in "
+"Quantità Odoo utilizzata come fonte per la disponibilità di magazzino in "
 "Shopify."
 
 #. module: shopify_connector
@@ -2850,7 +2906,7 @@ msgstr "Da Odoo a Shopify e da Shopify a Odoo"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Odoo transfer %s could not be validated."
-msgstr ""
+msgstr "Non è stato possibile convalidare il trasferimento Odoo %s."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_template__odoo_status
@@ -2873,31 +2929,33 @@ msgstr ""
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__inventory_quantity_basis__qty_available
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance_wizard__inventory_quantity_basis__qty_available
 msgid "On-hand Quantity"
-msgstr "quantità  disponibile in magazzino"
+msgstr "Quantità a disposizione"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/wizards/onboarding.py:0
 msgid "Onboarding completed; %(count)s initial import stages queued."
-msgstr "Onboarding completed; %(count)s initial Importazione stages accodati."
+msgstr ""
+"Configurazione iniziale completata; %(count)s fasi di importazione iniziale "
+"accodate."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/wizards/onboarding.py:0
 msgid "Onboarding: import Shopify customers"
-msgstr "Onboarding: Importazione clienti Shopify"
+msgstr "Configurazione iniziale: importa clienti Shopify"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/wizards/onboarding.py:0
 msgid "Onboarding: import Shopify orders"
-msgstr "Onboarding: Importazione Shopify ordini"
+msgstr "Configurazione iniziale: importa ordini Shopify"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/wizards/onboarding.py:0
 msgid "Onboarding: import Shopify products"
-msgstr "Onboarding: Importazione prodotti Shopify"
+msgstr "Configurazione iniziale: importa prodotti Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_order__source__online
@@ -2935,7 +2993,7 @@ msgstr "Escluso"
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Order %(order)s import failed: %(error)s"
-msgstr "ordine %(order)s Importazione Non riuscito: %(error)s"
+msgstr "Importazione dell'ordine %(order)s non riuscita: %(error)s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment__order_binding_id
@@ -3003,6 +3061,15 @@ msgstr "Numero ordine"
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
+msgid ""
+"Order drift reconciliation queued for the orders updated since the last run."
+msgstr ""
+"Riconciliazione degli scostamenti accodata per gli ordini aggiornati "
+"dall'ultima esecuzione."
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Order import queued"
 msgstr "Importazione ordine accodata"
 
@@ -3013,14 +3080,14 @@ msgid ""
 "Order total mismatch: Odoo %(odoo)s, Shopify %(shopify)s, difference %"
 "(difference)s %(currency)s."
 msgstr ""
-"ordine Totale mismatch: Odoo %(odoo)s, Shopify %(shopify)s, difference %"
-"(difference)s %(currency)s."
+"Mancata corrispondenza del totale ordine: Odoo %(odoo)s, Shopify %"
+"(shopify)s, differenza %(difference)s %(currency)s."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Order webhook contains no order ID."
-msgstr "ordine webhook contains No ordine ID."
+msgstr "Il webhook dell'ordine non contiene alcun ID ordine."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__order_binding_ids
@@ -3132,18 +3199,18 @@ msgstr "Criteri"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_currency_id
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__order_currency_policy__presentment
 msgid "Presentment Currency"
-msgstr "Presentment Valuta"
+msgstr "Valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_discount_total
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__presentment_discount_total
 msgid "Presentment Discount Total"
-msgstr "Presentment Sconto Totale"
+msgstr "Totale sconto nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__presentment_discounted_total
 msgid "Presentment Discounted Total"
-msgstr "Presentment Discounted Totale"
+msgstr "Totale scontato nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
@@ -3158,7 +3225,7 @@ msgstr "JSON dell'importo nella valuta di presentazione"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_shipping_total
 msgid "Presentment Shipping Total"
-msgstr "Presentment Shipping Totale"
+msgstr "Totale spedizione nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_subtotal
@@ -3168,17 +3235,17 @@ msgstr "Subtotale nella valuta di presentazione"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_tax_total
 msgid "Presentment Tax Total"
-msgstr "Presentment Imposta Totale"
+msgstr "Totale imposte nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__presentment_total
 msgid "Presentment Total"
-msgstr "Presentment Totale"
+msgstr "Totale nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__presentment_unit_price
 msgid "Presentment Unit Price"
-msgstr "Presentment Unit Prezzo"
+msgstr "Prezzo unitario nella valuta di presentazione"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_tax_mapping__price_included
@@ -3194,7 +3261,7 @@ msgstr "Regola del listino prezzi"
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Processed deletion of Shopify product %s."
-msgstr "Processed deletion di Shopify prodotto %s."
+msgstr "Elaborata eliminazione del prodotto Shopify %s."
 
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_product_template
@@ -3205,13 +3272,13 @@ msgstr "Prodotto"
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Product %(gid)s import failed: %(error)s"
-msgstr "prodotto %(gid)s Importazione Non riuscito: %(error)s"
+msgstr "Importazione del prodotto %(gid)s non riuscita: %(error)s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Product %(product)s belongs to a different company."
-msgstr "prodotto %(product)s belongs diverso azienda."
+msgstr "Il prodotto %(product)s appartiene a un'azienda diversa."
 
 #. module: shopify_connector
 #: model:ir.actions.act_window,name:shopify_connector.shopify_product_template_action
@@ -3243,7 +3310,7 @@ msgstr "Variante prodotto"
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Product export failed: %s"
-msgstr "prodotto Esportazione Non riuscito: %s"
+msgstr "Esportazione del prodotto non riuscita: %s"
 
 #. module: shopify_connector
 #. odoo-python
@@ -3274,18 +3341,18 @@ msgstr "Prodotti e magazzino"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Push Shopify fulfillment for %s"
-msgstr "Push Shopify evasione per %s"
+msgstr "Invia evasione Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Push Shopify inventory for %(variant)s at %(location)s"
-msgstr "Push Shopify inventario per %(variant)s presso %(location)s"
+msgstr "Invia giacenza Shopify per %(variant)s presso %(location)s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund_line__quantity
 msgid "Quantity"
-msgstr "quantità"
+msgstr "Quantità"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
@@ -3295,12 +3362,17 @@ msgstr "Origine della quantità"
 #. module: shopify_connector
 #: model:ir.model,name:shopify_connector.model_stock_quant
 msgid "Quants"
-msgstr "quantità  disponibili (quant)"
+msgstr "Quanti"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_export_wizard_view_form
 msgid "Queue Export"
 msgstr "Accoda esportazione"
+
+#. module: shopify_connector
+#: model:ir.model,name:shopify_connector.model_queue_job
+msgid "Queue Job"
+msgstr ""
 
 #. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_webhook_event__state__queued
@@ -3354,31 +3426,31 @@ msgstr "Riconcilia"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Reconcile Inventory"
-msgstr "Reconcile inventario"
+msgstr "Riconcilia magazzino"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Reconcile Shopify customers for %s"
-msgstr "Reconcile clienti Shopify per %s"
+msgstr "Riconcilia clienti Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/inventory_sync.py:0
 msgid "Reconcile Shopify inventory for %s"
-msgstr "Reconcile Shopify inventario per %s"
+msgstr "Riconcilia giacenze Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "Reconcile Shopify orders for %s"
-msgstr "Reconcile Shopify ordini per %s"
+msgstr "Riconcilia ordini Shopify per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Reconcile Shopify products for %s"
-msgstr "Reconcile prodotti Shopify per %s"
+msgstr "Riconcilia prodotti Shopify per %s"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_fulfillment_order_view_form
@@ -3388,24 +3460,24 @@ msgstr "Aggiorna"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_fulfillment_view_form
 msgid "Refresh Fulfillment Orders"
-msgstr "Aggiorna evasione ordini"
+msgstr "Aggiorna ordini di evasione"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_view_form
 msgid "Refresh Locations"
-msgstr "Aggiorna Ubicazioni"
+msgstr "Aggiorna ubicazioni"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Refresh fulfillment orders for %s"
-msgstr "Aggiorna evasione ordini per %s"
+msgstr "Aggiorna ordini di evasione per %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Refreshed %s Shopify fulfillment order(s)."
-msgstr "Refreshed %s Shopify evasione ordine(s)."
+msgstr "Aggiornati %s ordini di evasione Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund_line__refund_id
@@ -3428,12 +3500,13 @@ msgstr "Politica di rimborso degli ordini non fatturati"
 msgid ""
 "Refund imported, but the automatic stock return could not be created: %s"
 msgstr ""
-"rimborso importato, but automatico magazzino reso could non be creato: %s"
+"Rimborso importato, ma non è stato possibile creare il reso automatico di "
+"magazzino: %s"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__refundable_quantity
 msgid "Refundable Quantity"
-msgstr "quantità  rimborsabile"
+msgstr "Quantità rimborsabile"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
@@ -3471,19 +3544,21 @@ msgstr "Rimuovi il blocco per rischio Shopify"
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_binding.py:0
 msgid "Release Shopify fulfillment hold %s"
-msgstr "rimuovi Shopify evasione blocco %s"
+msgstr "Rimuovi blocco di evasione Shopify %s"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/order_binding.py:0
 msgid "Release the Shopify high-risk hold before validating delivery."
-msgstr "rimuovi Shopify alto-rischio blocco before validating delivery."
+msgstr ""
+"Rimuovi il blocco per rischio elevato di Shopify prima di convalidare la "
+"consegna."
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "Released Shopify fulfillment hold %s."
-msgstr "Released Shopify evasione hold %s."
+msgstr "Blocco di evasione Shopify %s rimosso."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order__line_ids
@@ -3494,7 +3569,7 @@ msgstr "Righe rimanenti"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order_line__remaining_quantity
 msgid "Remaining Quantity"
-msgstr "quantità  rimanente"
+msgstr "Quantità rimanente"
 
 #. module: shopify_connector
 #. odoo-python
@@ -3512,7 +3587,7 @@ msgstr "Sottoscrizioni remote: non verificate"
 #. odoo-python
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "Remote subscriptions: repair required"
-msgstr "Remote subscriptions: repair richiesti"
+msgstr "Sottoscrizioni remote: riparazione richiesta"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_dashboard_kanban
@@ -3548,7 +3623,7 @@ msgstr "Ambiti richiesti"
 #: model:ir.actions.server,name:shopify_connector.action_reset_shopify_products
 #: model:ir.actions.server,name:shopify_connector.action_reset_shopify_variants
 msgid "Reset Shopify Bindings to Pending"
-msgstr "Reset Shopify collegamenti in attesa"
+msgstr "Reimposta collegamenti Shopify in attesa"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_refund__restock_requested
@@ -3575,7 +3650,7 @@ msgstr "Riprova"
 #. odoo-python
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "Retry %(model)s %(record)s"
-msgstr "riprova %(model)s %(record)s"
+msgstr "Riprova %(model)s %(record)s"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_webhook_event_view_list
@@ -3600,11 +3675,13 @@ msgstr "Riprova i collegamenti Shopify non riusciti"
 #: model:ir.model.fields,help:shopify_connector.field_shopify_customer__initial_seed_pending
 msgid "Retry marker for a customer created in Odoo by its first import."
 msgstr ""
+"Indicatore di nuovo tentativo per un cliente creato in Odoo durante la prima "
+"importazione."
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_product_template__initial_seed_pending
 msgid "Retry marker for a newly created Odoo template."
-msgstr "riprova marker per a newly creati Odoo template."
+msgstr "Indicatore di nuovo tentativo per un modello Odoo appena creato."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__return_lines
@@ -3628,8 +3705,8 @@ msgid ""
 "Review the Shopify risk assessment and release the risk hold before "
 "validating delivery."
 msgstr ""
-"Review Shopify rischio assessment e rimuovi rischio blocco before validating "
-"delivery."
+"Verifica la valutazione del rischio di Shopify e rimuovi il blocco per "
+"rischio prima di convalidare la consegna."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__risk_level
@@ -3677,7 +3754,9 @@ msgstr ""
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_location__warehouse_id
 msgid "Selecting a warehouse maps its main stock location by default."
-msgstr "Selecting a warehouse maps its main stock ubicazione by default."
+msgstr ""
+"Selezionando un magazzino viene mappata per impostazione predefinita la sua "
+"ubicazione di stoccaggio principale."
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_wizard_view_form
@@ -3688,7 +3767,9 @@ msgstr "Configura i webhook"
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Set the Shopify App Client ID of %s to request an access token."
-msgstr "Set Shopify App Client ID di %s richiesta access token."
+msgstr ""
+"Imposta l'ID client dell'app Shopify di %s per richiedere un token di "
+"accesso."
 
 #. module: shopify_connector
 #. odoo-python
@@ -3697,13 +3778,14 @@ msgid ""
 "Set the Shopify App Client ID to let Odoo request access tokens, or the "
 "Admin API access token of a legacy custom app."
 msgstr ""
-"Set Shopify App Client ID let Odoo richiesta access tokens, o Admin API "
-"access token di legacy custom app."
+"Imposta l'ID client dell'app Shopify per consentire a Odoo di richiedere i "
+"token di accesso, oppure il token di accesso Admin API di un'app "
+"personalizzata legacy."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__fulfillment_validate_unreserved
 msgid "Ship Unreserved Stock"
-msgstr ""
+msgstr "Spedisci giacenza non prenotata"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_currency_id
@@ -3715,12 +3797,12 @@ msgstr "Valuta del negozio"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_discount_total
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__shop_discount_total
 msgid "Shop Discount Total"
-msgstr "Negozio Sconto Totale"
+msgstr "Totale sconto nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__shop_discounted_total
 msgid "Shop Discounted Total"
-msgstr "Negozio Discounted Totale"
+msgstr "Totale scontato nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__shop_url
@@ -3730,37 +3812,37 @@ msgstr "Dominio del negozio"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_order_view_form
 msgid "Shop Money"
-msgstr "Negozio Money"
+msgstr "Importo nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_money_json
 msgid "Shop Money Json"
-msgstr "Negozio Money Json"
+msgstr "JSON dell'importo nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_shipping_total
 msgid "Shop Shipping Total"
-msgstr "Negozio Shipping Totale"
+msgstr "Totale spedizione nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_subtotal
 msgid "Shop Subtotal"
-msgstr "Negozio Subtotal"
+msgstr "Subtotale nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_tax_total
 msgid "Shop Tax Total"
-msgstr "Negozio Imposta Totale"
+msgstr "Totale imposte nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__shop_total
 msgid "Shop Total"
-msgstr "Negozio Totale"
+msgstr "Totale nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order_line__shop_unit_price
 msgid "Shop Unit Price"
-msgstr "Negozio Unit Prezzo"
+msgstr "Prezzo unitario nella valuta del negozio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard__shop_url
@@ -3948,14 +4030,14 @@ msgid "Shopify Drift: Inventory (daily)"
 msgstr "Scostamenti Shopify: giacenze (giornaliero)"
 
 #. module: shopify_connector
-#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_orders_ir_actions_server
-msgid "Shopify Drift: Orders, 2-day overlap (daily)"
-msgstr "Scostamenti Shopify: ordini, sovrapposizione di 2 giorni (giornaliero)"
-
-#. module: shopify_connector
 #: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_products_ir_actions_server
 msgid "Shopify Drift: Products (daily)"
 msgstr "Scostamenti Shopify: prodotti (giornaliero)"
+
+#. module: shopify_connector
+#: model:ir.actions.server,name:shopify_connector.ir_cron_reconcile_shopify_orders_ir_actions_server
+msgid "Shopify Drift: Updated Orders (daily)"
+msgstr "Scostamenti Shopify: ordini aggiornati (giornaliero)"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_sale_order_line__shopify_expected_total
@@ -4364,6 +4446,14 @@ msgstr "Shopify ha annullato un ordine già consegnato in Odoo."
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify cancelled the order, but Odoo could not cancel sale order %s."
+msgstr ""
+"Shopify ha annullato l'ordine, ma Odoo non ha potuto annullare l'ordine di "
+"vendita %s."
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/customer_sync.py:0
 msgid "Shopify companies and catalogs will be checked in the background."
 msgstr "Le aziende e i cataloghi Shopify verranno verificati in background."
@@ -4430,6 +4520,8 @@ msgid ""
 "Shopify fulfillment %(fulfillment)s did not validate the Odoo delivery: %"
 "(error)s"
 msgstr ""
+"L'evasione Shopify %(fulfillment)s non ha convalidato la consegna Odoo: %"
+"(error)s"
 
 #. module: shopify_connector
 #. odoo-python
@@ -4438,6 +4530,23 @@ msgid ""
 "Shopify fulfillment %(fulfillment)s, created by an unconfirmed attempt for %"
 "(picking)s, was imported as an external fulfillment that validated %"
 "(other)s. Review both deliveries before binding it."
+msgstr ""
+"L'evasione Shopify %(fulfillment)s, creata da un tentativo non confermato "
+"per %(picking)s, è stata importata come evasione esterna che ha convalidato %"
+"(other)s. Verifica entrambe le consegne prima di collegarla."
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Shopify fulfillment for delivery %(picking)s (order %(order)s) was not sent: "
+"%(error)s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Shopify fulfillment not sent"
 msgstr ""
 
 #. module: shopify_connector
@@ -4528,6 +4637,8 @@ msgid ""
 "Shopify order %s is not imported yet. Its fulfillment is applied when the "
 "order is imported."
 msgstr ""
+"L'ordine Shopify %s non è ancora stato importato. La relativa evasione verrà "
+"applicata all'importazione dell'ordine."
 
 #. module: shopify_connector
 #. odoo-python
@@ -4602,6 +4713,13 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/order_sync.py:0
+msgid "Shopify returned an invalid order page cursor."
+msgstr ""
+"Shopify ha restituito un cursore non valido per la pagina degli ordini."
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Shopify returned an invalid pagination cursor."
 msgstr "Shopify ha restituito un cursore di paginazione non valido."
@@ -4653,14 +4771,15 @@ msgstr "Shopify: eliminazione dei vecchi registri di sincronizzazione"
 #. module: shopify_connector
 #: model:ir.actions.server,name:shopify_connector.ir_cron_retest_shopify_connections_ir_actions_server
 msgid "Shopify: Retest failed connections (hourly)"
-msgstr ""
+msgstr "Shopify: nuovo test delle connessioni non riuscite (orario)"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/product_sync.py:0
 msgid "Skipped Shopify product %(gid)s because no barcode or SKU match exists."
 msgstr ""
-"Skipped Shopify prodotto %(gid)s because No barcode o SKU match exists."
+"Prodotto Shopify %(gid)s ignorato perché non esiste alcuna corrispondenza "
+"per codice a barre o SKU."
 
 #. module: shopify_connector
 #. odoo-python
@@ -4682,13 +4801,13 @@ msgstr "Automatica"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_collection_view_form
 msgid "Smart / Read-only"
-msgstr "Smart / Read-solo"
+msgstr "Automatica / Sola lettura"
 
 #. module: shopify_connector
 #. odoo-python
 #: code:addons/shopify_connector/models/collection.py:0
 msgid "Smart collection membership is controlled by Shopify."
-msgstr "Smart collezione membership è controlled by Shopify."
+msgstr "L'appartenenza alle collezioni automatiche è gestita da Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__source
@@ -4704,7 +4823,7 @@ msgstr "Identificativo origine"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_order__source_name
 msgid "Source Name"
-msgstr "Source nome"
+msgstr "Nome origine"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_binding_mixin__shopify_id
@@ -4767,7 +4886,7 @@ msgstr "Stato"
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_instance_order_view_form
 msgid "State and Risk"
-msgstr "State e Risk"
+msgstr "Stato e rischio"
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance_wizard__access_token
@@ -4811,6 +4930,11 @@ msgstr "Subtotale"
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_fulfillment_order_view_form
 msgid "Supported Actions"
 msgstr "Azioni supportate"
+
+#. module: shopify_connector
+#: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__order_drift_since
+msgid "Sync Orders Updated Since"
+msgstr "Sincronizza ordini aggiornati dal"
 
 #. module: shopify_connector
 #: model_terms:ir.ui.view,arch_db:shopify_connector.shopify_product_template_view_search
@@ -4964,6 +5088,12 @@ msgstr ""
 
 #. module: shopify_connector
 #. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "The Shopify fulfillment was created."
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
 #: code:addons/shopify_connector/models/order_sync.py:0
 msgid "The Shopify guest customer is not configured."
 msgstr "Il cliente ospite Shopify non è configurato."
@@ -5078,6 +5208,7 @@ msgstr ""
 #: code:addons/shopify_connector/models/fulfillment_sync.py:0
 msgid "The items of Shopify fulfillment %s were already delivered in Odoo."
 msgstr ""
+"Gli articoli dell'evasione Shopify %s risultavano già consegnati in Odoo."
 
 #. module: shopify_connector
 #. odoo-python
@@ -5087,7 +5218,7 @@ msgid ""
 "is already confirmed; manual resolution is required."
 msgstr ""
 "Le righe dell'ordine Shopify %s differiscono da quelle dell'ordine in bozza "
-"corrispondente, il cui ordine Odoo è già  confermato; è necessario un "
+"corrispondente, il cui ordine Odoo è già confermato; è necessario un "
 "intervento manuale."
 
 #. module: shopify_connector
@@ -5119,6 +5250,18 @@ msgid ""
 msgstr ""
 "Il passaggio successivo crea le sottoscrizioni ai webhook\n"
 "                         di Shopify mancanti e corregge gli URL di callback."
+
+#. module: shopify_connector
+#: model:ir.model.fields,help:shopify_connector.field_shopify_instance__order_drift_since
+msgid ""
+"The order drift job imports again the orders updated in Shopify since this "
+"date, then moves it to the start of the run. Set an earlier date to import "
+"older updated orders on the next run."
+msgstr ""
+"L'attività di riconciliazione degli scostamenti degli ordini importa "
+"nuovamente gli ordini aggiornati in Shopify a partire da questa data, "
+"spostandola poi all'inizio dell'esecuzione. Imposta una data precedente per "
+"importare ordini aggiornati più vecchi alla prossima esecuzione."
 
 #. module: shopify_connector
 #. odoo-python
@@ -5190,27 +5333,27 @@ msgstr "Il magazzino deve appartenere all'azienda dell'istanza."
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_fulfillment_instance_idempotency_unique
 msgid "This Odoo delivery was already sent to Shopify."
-msgstr "Questa consegna Odoo è già  stata inviata a Shopify."
+msgstr "Questa consegna Odoo è già stata inviata a Shopify."
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_gateway_journal_gateway_unique
 msgid "This Shopify gateway already has a journal mapping."
-msgstr "Questo gateway Shopify ha già  una mappatura del registro contabile."
+msgstr "Questo gateway Shopify ha già una mappatura del registro contabile."
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_gateway_payment_transaction_unique
 msgid "This Shopify payment transaction has already been registered."
-msgstr "Questa transazione di pagamento Shopify è già  stata registrata."
+msgstr "Questa transazione di pagamento Shopify è già stata registrata."
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_tax_mapping_mapping_unique
 msgid "This Shopify tax combination is already mapped."
-msgstr "Questa combinazione fiscale Shopify è già  mappata."
+msgstr "Questa combinazione fiscale Shopify è già mappata."
 
 #. module: shopify_connector
 #: model:ir.model.constraint,message:shopify_connector.constraint_shopify_webhook_event_instance_webhook_id_unique
 msgid "This Shopify webhook has already been received."
-msgstr "Questo webhook Shopify è già  stato ricevuto."
+msgstr "Questo webhook Shopify è già stato ricevuto."
 
 #. module: shopify_connector
 #. odoo-python
@@ -5240,7 +5383,7 @@ msgstr "Argomento"
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_fulfillment_order_line__total_quantity
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_return__total_quantity
 msgid "Total Quantity"
-msgstr "Quantità  totale"
+msgstr "Quantità totale"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_product_variant__inventory_tracked
@@ -5355,6 +5498,20 @@ msgid "Unsupported catalog currency %s."
 msgstr "Valuta %s catalogo non supportata."
 
 #. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid "Update Shopify tracking for %s"
+msgstr ""
+
+#. module: shopify_connector
+#. odoo-python
+#: code:addons/shopify_connector/models/fulfillment_sync.py:0
+msgid ""
+"Updated the tracking of Shopify fulfillment %(fulfillment)s for %(picking)s: "
+"%(number)s."
+msgstr ""
+
+#. module: shopify_connector
 #: model:ir.model.fields.selection,name:shopify_connector.selection__shopify_instance__unknown_product_policy__placeholder
 msgid "Use Placeholder Product"
 msgstr "Usa prodotto segnaposto"
@@ -5362,7 +5519,7 @@ msgstr "Usa prodotto segnaposto"
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__order_use_shopify_name
 msgid "Use Shopify Order Name"
-msgstr ""
+msgstr "Usa nome ordine Shopify"
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance__fulfillment_auto_validate_webhook
@@ -5376,6 +5533,7 @@ msgid ""
 "Validated Odoo delivery %(pickings)s from Shopify fulfillment %"
 "(fulfillment)s."
 msgstr ""
+"Consegna Odoo %(pickings)s convalidata dall'evasione Shopify %(fulfillment)s."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_inventory_state__variant_binding_id
@@ -5480,7 +5638,7 @@ msgstr "Nuovi tentativi webhook accodati"
 #. odoo-python
 #: code:addons/shopify_connector/models/instance.py:0
 msgid "Webhook subscription repair failed: %s"
-msgstr "Riparazione sottoscrizioni webhook fallite: %s"
+msgstr "Riparazione delle sottoscrizioni webhook non riuscita: %s"
 
 #. module: shopify_connector
 #. odoo-python
@@ -5517,6 +5675,11 @@ msgid ""
 "number. When disabled, the fulfillment is imported with its tracking number, "
 "but the deliveries are left as they are, to be validated by hand."
 msgstr ""
+"Quando Shopify segnala un'evasione effettuata esternamente a Odoo, convalida "
+"gli articoli evasi nelle consegne aperte dell'ordine e copia il vettore e il "
+"numero di tracciamento. Se disabilitato, l'evasione viene importata con il "
+"relativo numero di tracciamento, ma le consegne rimangono invariate per "
+"essere convalidate manualmente."
 
 #. module: shopify_connector
 #: model:ir.model.fields,help:shopify_connector.field_shopify_instance__fulfillment_validate_unreserved
@@ -5526,6 +5689,11 @@ msgid ""
 "fulfillment goes to error until the stock is reserved. Products tracked by "
 "lot or serial number always need reserved stock."
 msgstr ""
+"Durante la convalida di una consegna da un'evasione Shopify, spedisce gli "
+"articoli evasi anche se Odoo non ha potuto prenotarne la giacenza. Se "
+"disabilitato, l'evasione va in errore finché la giacenza non viene "
+"prenotata. I prodotti tracciati per lotto o numero di serie richiedono "
+"sempre la giacenza prenotata."
 
 #. module: shopify_connector
 #: model:ir.model.fields,field_description:shopify_connector.field_shopify_instance_wizard_location__wizard_id
@@ -5583,6 +5751,14 @@ msgstr "nessun registro dei risultati"
 #: code:addons/shopify_connector/models/operability.py:0
 msgid "not run yet"
 msgstr "non ancora eseguito"
+
+#~ msgid "Daily order drift reconciliation queued with a two-day overlap."
+#~ msgstr ""
+#~ "Daily ordine drift reconciliation accodati con a two-Giorno overlap."
+
+#~ msgid "Shopify Drift: Orders, 2-day overlap (daily)"
+#~ msgstr ""
+#~ "Scostamenti Shopify: ordini, sovrapposizione di 2 giorni (giornaliero)"
 
 #~ msgid ""
 #~ "A previous Shopify fulfillment attempt exists for %(picking)s without a "

@@ -1,0 +1,16 @@
+{
+  "id": "MLA300",
+  "title": "Fulfilled lamp",
+  "status": "active",
+  "currency_id": "ARS",
+  "price": 900,
+  "available_quantity": 20,
+  "user_product_id": "MLAU300",
+  "inventory_id": "INV300",
+  "category_id": "MLA3000",
+  "permalink": "https://articulo.mercadolibre.com.ar/MLA-300",
+  "shipping": {"logistic_type": "fulfillment"},
+  "pictures": [],
+  "attributes": [{"id": "SELLER_SKU", "value_name": "SKU-FULL"}],
+  "variations": []
+}

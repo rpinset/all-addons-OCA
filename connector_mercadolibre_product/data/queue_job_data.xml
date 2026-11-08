@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="job_import_listings" model="queue.job.function">
+        <field
+            name="model_id"
+            ref="connector_mercadolibre.model_mercadolibre_backend"
+        />
+        <field name="method">_job_import_listings</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_import"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_import_item" model="queue.job.function">
+        <field
+            name="model_id"
+            ref="connector_mercadolibre.model_mercadolibre_backend"
+        />
+        <field name="method">_job_import_item</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_import"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_refresh_categories" model="queue.job.function">
+        <field
+            name="model_id"
+            ref="connector_mercadolibre.model_mercadolibre_backend"
+        />
+        <field name="method">_job_refresh_categories</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_import"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_import_binding" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_product_product" />
+        <field name="method">_job_import</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_import"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_export_price" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_product_product" />
+        <field name="method">_job_export_price</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_export"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+    <record id="job_export_stock" model="queue.job.function">
+        <field name="model_id" ref="model_mercadolibre_product_product" />
+        <field name="method">_job_export_stock</field>
+        <field
+            name="channel_id"
+            ref="connector_mercadolibre.channel_mercadolibre_export"
+        />
+        <field name="retry_pattern" eval="{1: 10, 2: 60, 3: 300}" />
+    </record>
+</odoo>

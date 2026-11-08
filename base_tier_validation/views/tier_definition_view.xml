@@ -9,11 +9,11 @@
             <list>
                 <field name="sequence" widget="handle" />
                 <field name="model_id" />
-                <field name="name" />
+                <field name="name" decoration-bf="1" />
                 <field name="review_type" />
-                <field name="reviewer_id" />
+                <field name="reviewer_id" widget="many2one_avatar_user" />
                 <field name="reviewer_group_id" />
-                <field name="reviewer_field_id" />
+                <field name="reviewer_field_id" optional="hide" />
                 <field name="notify_on_create" optional="show" />
                 <field name="notify_on_pending" optional="show" />
                 <field name="has_comment" optional="hide" />
@@ -22,7 +22,6 @@
                     groups="base.group_multi_company"
                     optional="hide"
                 />
-                <field name="active" />
             </list>
         </field>
     </record>
@@ -40,7 +39,6 @@
                         invisible="active"
                     />
                     <div class="oe_title">
-                        <span class="oe_edit_only">Name</span>
                         <h1>
                             <field
                                 name="name"
@@ -54,13 +52,17 @@
                             <field name="model_id" options="{'no_create': True}" />
                             <field name="model" invisible="1" />
                             <field name="review_type" />
-                            <field name="allow_write_for_reviewer" />
                             <field
                                 name="reviewer_id"
+                                widget="many2one_avatar_user"
                                 invisible="review_type != 'individual'"
                             />
                             <field
                                 name="reviewer_group_id"
+                                invisible="review_type != 'group'"
+                            />
+                            <field
+                                name="exclude_requester"
                                 invisible="review_type != 'group'"
                             />
                             <field
@@ -75,7 +77,7 @@
                                 groups="base.group_multi_company"
                                 options="{'no_create': True}"
                             />
-                            <field name="sequence" />
+                            <field name="sequence" class="oe_inline o_input_4ch" />
                             <field name="approve_sequence" />
                             <label
                                 for="approve_sequence_bypass"
@@ -91,10 +93,6 @@
                                 <span
                                 >Bypass, if previous tier was validated by same reviewer</span>
                             </div>
-                            <field
-                                name="exclude_requester"
-                                invisible="review_type != 'group'"
-                            />
                         </group>
                     </group>
                     <notebook>
@@ -109,20 +107,42 @@
                                 />
                             </group>
                         </page>
-                        <page name="options" string="More Options">
-                            <group name="more_option">
-                                <group name="notify">
-                                    <field name="notify_on_create" />
-                                    <field name="notify_on_pending" />
-                                    <field name="notify_on_accepted" />
-                                    <field name="notify_on_rejected" />
-                                    <field name="notify_on_restarted" />
+                        <page name="review" string="Review">
+                            <group name="review_settings">
+                                <group
+                                    string="Reviewer permissions"
+                                    name="reviewer_permissions"
+                                >
+                                    <field name="allow_write_for_reviewer" />
+                                </group>
+                                <group string="When reviewing" name="review_options">
                                     <field name="has_comment" />
                                     <field
                                         name="comment_approve_default"
                                         invisible="not has_comment"
                                     />
-                                    <field name="notify_reminder_delay" />
+                                </group>
+                            </group>
+                        </page>
+                        <page name="options" string="Notifications">
+                            <group name="more_option">
+                                <group string="Notify reviewers when" name="notify">
+                                    <field name="notify_on_create" />
+                                    <field name="notify_on_pending" />
+                                    <label
+                                        for="notify_reminder_delay"
+                                        string="Remind every"
+                                    />
+                                    <div>
+                                        <field
+                                            name="notify_reminder_delay"
+                                            class="oe_inline o_input_4ch"
+                                        />
+                                        <span class="ms-1">days</span>
+                                    </div>
+                                    <field name="notify_on_accepted" />
+                                    <field name="notify_on_rejected" />
+                                    <field name="notify_on_restarted" />
                                 </group>
                             </group>
                         </page>
@@ -142,6 +162,11 @@
                 <field name="reviewer_group_id" />
                 <field name="active" />
                 <separator />
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
                 <filter
                     string="All"
                     name="all"
@@ -163,7 +188,25 @@
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">tier.definition</field>
         <field name="view_mode">list,form</field>
-        <field name="context">{'search_default_all': 1}</field>
+        <!-- Explicitly empty: an upgrade keeps the old show-all default
+             otherwise, and archived definitions would show up again. -->
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Define a new validation tier
+            </p>
+            <p>
+                A tier definition tells Odoo which records on a given model need
+                to be reviewed by which user (or group, or field-based reviewer)
+                before they can move forward in their workflow.
+            </p>
+            <p>
+                Tiers can be chained -- enable
+                <em>Approve by sequence</em>
+                on each definition for the model to require the lower-sequence
+                tier to be approved first.
+            </p>
+        </field>
     </record>
     <menuitem
         id="menu_tier_confirmation"

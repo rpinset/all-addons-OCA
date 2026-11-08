@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_product_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.product.product.list</field>
+        <field name="model">mercadolibre.product.product</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state == 'error'">
+                <field name="seller_sku" />
+                <field name="odoo_id" />
+                <field name="external_id" />
+                <field name="variation_id" optional="hide" />
+                <field name="listing_status" />
+                <field name="marketplace_qty" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-danger="state == 'error'"
+                    decoration-success="state == 'synced'"
+                />
+                <field name="backend_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_product_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.product.product.form</field>
+        <field name="model">mercadolibre.product.product</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="button_match"
+                        type="object"
+                        string="Match product"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <button
+                        name="button_export_price"
+                        type="object"
+                        string="Export price"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <button
+                        name="button_export_stock"
+                        type="object"
+                        string="Export stock"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="backend_id" />
+                            <field name="external_id" />
+                            <field name="variation_id" />
+                            <field name="user_product_id" />
+                            <field name="seller_sku" />
+                            <field name="odoo_id" />
+                        </group>
+                        <group>
+                            <field name="category_id" />
+                            <field name="listing_status" />
+                            <field name="fulfillment" />
+                            <field name="permalink" widget="url" />
+                            <field name="marketplace_qty" />
+                            <field name="currency_id" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Pictures" name="pictures">
+                            <field name="picture_url_text" readonly="1" />
+                        </page>
+                        <page string="Error" name="error">
+                            <field name="error_message" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mercadolibre_product_view_search" model="ir.ui.view">
+        <field name="name">mercadolibre.product.product.search</field>
+        <field name="model">mercadolibre.product.product</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="seller_sku" />
+                <field name="external_id" />
+                <field name="odoo_id" />
+                <filter
+                    name="unmatched"
+                    string="Unmatched"
+                    domain="[('odoo_id', '=', False)]"
+                />
+                <filter
+                    name="error"
+                    string="Error"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    name="fulfillment"
+                    string="Fulfillment"
+                    domain="[('fulfillment', '=', True)]"
+                />
+                <group>
+                    <filter
+                        name="group_backend"
+                        string="Backend"
+                        context="{'group_by': 'backend_id'}"
+                    />
+                    <filter
+                        name="group_status"
+                        string="Listing status"
+                        context="{'group_by': 'listing_status'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_product" model="ir.actions.act_window">
+        <field name="name">Listings</field>
+        <field name="res_model">mercadolibre.product.product</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

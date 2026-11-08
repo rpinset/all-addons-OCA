@@ -1,0 +1,29 @@
+{
+  "id": 3001,
+  "status": "paid",
+  "pack_id": null,
+  "currency_id": "ARS",
+  "date_created": "2024-01-17T12:00:00.000Z",
+  "date_last_updated": "2024-01-17T12:05:00.000Z",
+  "total_amount": 10,
+  "buyer": {
+    "id": 777,
+    "nickname": "UNK",
+    "first_name": "Uno",
+    "last_name": "Known"
+  },
+  "order_items": [
+    {
+      "item": {
+        "id": "MLA999",
+        "title": "Unknown kettle",
+        "variation_id": null
+      },
+      "quantity": 1,
+      "unit_price": 10,
+      "sale_fee": 1
+    }
+  ],
+  "payments": [{"id": 9301, "status": "approved"}],
+  "shipping": {}
+}

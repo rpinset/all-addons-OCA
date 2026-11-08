@@ -1,12 +1,12 @@
 # Skipped repos — branch `19.0`
 
-Generated 2026-11-04 21:06 UTC
+Generated 2026-11-08 00:33 UTC
 
-Total skipped: **136**
+Total skipped: **135**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **30**
+Count: **31**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -32,6 +32,7 @@ Count: **30**
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | [19.0](https://github.com/OCA/odoo-test-helper/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | [19.0](https://github.com/OCA/odoorpc/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [19.0](https://github.com/OCA/openupgradelib/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
+| [product-uom](https://github.com/OCA/product-uom) | [19.0](https://github.com/OCA/product-uom/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [19.0](https://github.com/OCA/py3o.template/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [19.0](https://github.com/OCA/pylint-odoo/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [19.0](https://github.com/OCA/pytest-odoo/tree/19.0) | fatal: Remote branch 19.0 not found in upstream origin |
@@ -43,7 +44,7 @@ Count: **30**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **106**
+Count: **104**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -75,7 +76,6 @@ Count: **106**
 | [dotnet](https://github.com/OCA/dotnet) | [19.0](https://github.com/OCA/dotnet/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | [19.0](https://github.com/OCA/edi-ediversa/tree/19.0) | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | [19.0](https://github.com/OCA/edi-voxel/tree/19.0) | No directory with __manifest__.py at repo root |
-| [hr-expense](https://github.com/OCA/hr-expense) | [19.0](https://github.com/OCA/hr-expense/tree/19.0) | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | [19.0](https://github.com/OCA/infrastructure/tree/19.0) | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | [19.0](https://github.com/OCA/interface-git/tree/19.0) | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | [19.0](https://github.com/OCA/iot/tree/19.0) | No directory with __manifest__.py at repo root |
@@ -121,7 +121,6 @@ Count: **106**
 | [role-policy](https://github.com/OCA/role-policy) | [19.0](https://github.com/OCA/role-policy/tree/19.0) | No directory with __manifest__.py at repo root |
 | [route-planning](https://github.com/OCA/route-planning) | [19.0](https://github.com/OCA/route-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [sale-financial](https://github.com/OCA/sale-financial) | [19.0](https://github.com/OCA/sale-financial/tree/19.0) | No directory with __manifest__.py at repo root |
-| [sale-prebook](https://github.com/OCA/sale-prebook) | [19.0](https://github.com/OCA/sale-prebook/tree/19.0) | No directory with __manifest__.py at repo root |
 | [search-engine](https://github.com/OCA/search-engine) | [19.0](https://github.com/OCA/search-engine/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | [19.0](https://github.com/OCA/shift-planning/tree/19.0) | No directory with __manifest__.py at repo root |
 | [shopfloor-app](https://github.com/OCA/shopfloor-app) | [19.0](https://github.com/OCA/shopfloor-app/tree/19.0) | No directory with __manifest__.py at repo root |

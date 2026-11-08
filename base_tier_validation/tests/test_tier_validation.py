@@ -121,6 +121,30 @@ class TierTierValidation(CommonTierValidation):
         record.restart_validation()
         self.assertFalse(record.review_ids)
 
+    def test_validated_and_rejected_message_icons(self):
+        """`_get_validated_message` / `_get_rejected_message` render the
+        per-status banner HTML using the check / xmark icons consistent
+        with the rest of the module's iconography. Empty until the
+        record actually reaches that state."""
+        # Until a state is reached, the banner is empty.
+        self.assertFalse(self.test_record.validated_message)
+        self.assertFalse(self.test_record.rejected_message)
+        # Validate -> banner reflects the validated state.
+        reviews = self.test_record.with_user(self.test_user_2).request_validation()
+        self.assertTrue(reviews)
+        self.test_record.with_user(self.test_user_1).validate_tier()
+        self.assertEqual(self.test_record.validation_status, "validated")
+        self.assertIn("fa-check", self.test_record.validated_message)
+        self.assertIn("validated", self.test_record.validated_message)
+        self.assertFalse(self.test_record.rejected_message)
+        # Restart + reject -> the rejected banner picks up its icon too.
+        self.test_record.restart_validation()
+        self.test_record.with_user(self.test_user_2).request_validation()
+        self.test_record.with_user(self.test_user_1).reject_tier()
+        self.assertEqual(self.test_record.validation_status, "rejected")
+        self.assertIn("fa-times", self.test_record.rejected_message)
+        self.assertIn("rejected", self.test_record.rejected_message)
+
     def test_05_under_validation(self):
         """Write is forbidden in a record under validation."""
         self.assertFalse(self.test_record.review_ids)
@@ -2079,6 +2103,25 @@ class TierTierValidation(CommonTierValidation):
 
         # Review_ids should not be copied when duplicating a user
         self.assertFalse(new_user.review_ids.ids)
+
+    def test_35_archived_exception_not_applied(self):
+        exception = self.env["tier.validation.exception"].create(
+            {
+                "model_id": self.tester_model.id,
+                "field_ids": [
+                    Command.set(
+                        self.tester_model.field_id.filtered(
+                            lambda f: f.name == "test_validation_field"
+                        ).ids
+                    )
+                ],
+            }
+        )
+        self.assertIn("test_validation_field", self.test_record._get_exception_fields())
+        exception.action_archive()
+        self.assertNotIn(
+            "test_validation_field", self.test_record._get_exception_fields()
+        )
 
 
 @tagged("at_install")

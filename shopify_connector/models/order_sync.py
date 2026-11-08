@@ -18,13 +18,16 @@ from ..graphql.order import (
     DRAFT_ORDER_BY_ID_QUERY,
     DRAFT_ORDERS_QUERY,
     ORDER_BY_ID_QUERY,
+    ORDERS_UPDATED_QUERY,
     REFUND_BY_ID_QUERY,
     RETURN_BY_ID_QUERY,
     orders_bulk_query,
+    orders_updated_search,
 )
 from ..lib.bulk import ShopifyBulkRunner
 from ..lib.client import ShopifyError
 from ..lib.order import (
+    apply_draft_order_discount,
     decimal_amount,
     line_diffs,
     normalize_order_payload,
@@ -34,6 +37,9 @@ from ..lib.order import (
     shopify_gid,
 )
 from .webhook_event import WEBHOOK_HANDLERS
+
+ORDER_DRIFT_DEFAULT_WINDOW = timedelta(days=2)
+ORDER_DRIFT_OVERLAP = timedelta(hours=1)
 
 
 class ShopifyOrderImportError(UserError):
@@ -111,18 +117,14 @@ class ShopifyInstanceOrderSync(models.Model):
                     "Reconcile Shopify orders for %s", instance.name
                 ),
                 identity_key=f"shopify.orders.reconcile.{instance.id}",
-            )._job_fetch_orders_bulk(
-                fields.Date.to_string(
-                    fields.Date.context_today(instance) - timedelta(days=2)
-                ),
-                False,
-            )
+            )._job_sync_updated_orders()
             instance._write_log(
                 entity="drift_orders",
                 direction="import",
                 level="info",
                 message=self.env._(
-                    "Daily order drift reconciliation queued with a two-day overlap."
+                    "Order drift reconciliation queued for the orders updated "
+                    "since the last run."
                 ),
                 record=instance,
             )
@@ -141,6 +143,61 @@ class ShopifyInstanceOrderSync(models.Model):
             if not row.get("__parentId")
             and str(row.get("id") or "").startswith("gid://shopify/Order/")
         ]
+        return self._queue_order_imports(orders, date_from, date_to)
+
+    def _job_sync_updated_orders(self):
+        self = self.sudo()
+        self.ensure_one()
+        if not self.active:
+            return 0
+        started = fields.Datetime.now()
+        since = (
+            self.order_drift_since or started - ORDER_DRIFT_DEFAULT_WINDOW
+        ) - ORDER_DRIFT_OVERLAP
+        orders = self._orders_not_imported_yet(self._fetch_updated_orders(since))
+        count = self._queue_order_imports(orders, since)
+        self.order_drift_since = started
+        return count
+
+    def _orders_not_imported_yet(self, orders):
+        imported = {
+            binding.shopify_id: binding.external_updated_at
+            for binding in self.env["shopify.order"].search(
+                [
+                    ("instance_id", "=", self.id),
+                    ("shopify_id", "in", [order["id"] for order in orders]),
+                    ("state", "=", "synced"),
+                ]
+            )
+        }
+        return [
+            order
+            for order in orders
+            if not imported.get(order["id"])
+            or not order.get("updatedAt")
+            or imported[order["id"]] < _utc_datetime(order["updatedAt"])
+        ]
+
+    def _fetch_updated_orders(self, since):
+        search = orders_updated_search(since)
+        orders = []
+        after = None
+        while True:
+            data = self._shopify_client().execute(
+                ORDERS_UPDATED_QUERY, {"after": after, "query": search}
+            )
+            connection = data.get("orders") or {}
+            orders.extend(connection.get("nodes") or [])
+            page_info = connection.get("pageInfo") or {}
+            if not page_info.get("hasNextPage"):
+                return orders
+            after = page_info.get("endCursor")
+            if not after:
+                raise ShopifyOrderImportError(
+                    self.env._("Shopify returned an invalid order page cursor.")
+                )
+
+    def _queue_order_imports(self, orders, date_from=False, date_to=False):
         draft_count = 0
         if self.draft_order_import_enabled:
             try:
@@ -305,6 +362,10 @@ class ShopifyOrderSync(models.Model):
             if payload_normalized
             else normalize_order_payload(payload, is_draft=is_draft)
         )
+        if order_data.get("order_discount"):
+            order_data = apply_draft_order_discount(
+                order_data, self._currency_quanta(order_data)
+            )
         if order_data["is_draft"] and not instance.draft_order_import_enabled:
             return False
         digest = payload_digest(order_data)
@@ -494,6 +555,11 @@ class ShopifyOrderSync(models.Model):
                 order_data,
             )
             return sale_order
+        if sale_order and order_data["cancelled_at"]:
+            # Shopify sets the current quantity of every line of a cancelled
+            # order to 0. Keep the lines: Odoo does not remove the lines of a
+            # confirmed order, and _apply_state cancels the order.
+            return sale_order
         if sale_order and self._is_delivered(sale_order):
             differences = line_diffs(
                 self._existing_line_snapshot(binding, sale_order),
@@ -514,6 +580,12 @@ class ShopifyOrderSync(models.Model):
         pricelist = self._pricelist(instance, currency)
         values = {
             "partner_id": partner.id,
+            "partner_shipping_id": self._order_address_partner(
+                partner, order_data.get("shipping_address"), "delivery"
+            ).id,
+            "partner_invoice_id": self._order_address_partner(
+                partner, order_data.get("billing_address"), "invoice"
+            ).id,
             "company_id": instance.company_id.id,
             "pricelist_id": pricelist.id,
             "currency_id": currency.id,
@@ -546,6 +618,7 @@ class ShopifyOrderSync(models.Model):
                 # orders even when their values have not changed.
                 immutable_fields = {
                     "partner_id",
+                    "partner_invoice_id",
                     "company_id",
                     "pricelist_id",
                     "currency_id",
@@ -568,6 +641,66 @@ class ShopifyOrderSync(models.Model):
         self._apply_lines(binding, sale_order, instance, order_data)
         self._verify_total(sale_order, currency, instance, order_data)
         return sale_order
+
+    def _order_address_partner(self, partner, address, address_type):
+        """Return the contact of a Shopify order address.
+
+        An existing contact of the customer with the same address is reused;
+        otherwise a delivery or invoice contact is created under the customer.
+        Without an address the customer itself is used.
+        """
+        if not address or not any(address[key] for key in ("address1", "city", "zip")):
+            return partner
+        values = self._order_address_values(partner, address, address_type)
+        for candidate in partner | partner.child_ids:
+            if self._is_same_order_address(candidate, values):
+                return candidate
+        return (
+            self.env["res.partner"]
+            .with_context(shopify_customer_import=True)
+            .create(values)
+        )
+
+    def _order_address_values(self, partner, address, address_type):
+        country = self.env["res.country"]
+        if address["country"]:
+            country = country.search([("code", "=", address["country"])], limit=1)
+        state = self.env["res.country.state"]
+        if country and address["province"]:
+            state = state.search(
+                [
+                    ("country_id", "=", country.id),
+                    "|",
+                    ("code", "=ilike", address["province"]),
+                    ("name", "=ilike", address["province"]),
+                ],
+                limit=1,
+            )
+        name = " ".join(
+            part for part in (address["first_name"], address["last_name"]) if part
+        )
+        return {
+            "parent_id": partner.id,
+            "company_id": partner.company_id.id,
+            "type": address_type,
+            "name": name or address["company"] or partner.name,
+            "street": address["address1"] or False,
+            "street2": address["address2"] or False,
+            "city": address["city"] or False,
+            "state_id": state.id or False,
+            "country_id": country.id or False,
+            "zip": address["zip"] or False,
+            "phone": address["phone"] or False,
+        }
+
+    def _is_same_order_address(self, partner, values):
+        def text(value):
+            return (value or "").strip().casefold()
+
+        return all(
+            text(partner[field]) == text(values[field])
+            for field in ("name", "street", "street2", "city", "zip")
+        ) and partner.country_id.id == (values["country_id"] or False)
 
     def _shopify_order_extra_values(self, instance, order_data):
         """Allow optional modules to supply sale-order routing values."""
@@ -671,6 +804,20 @@ class ShopifyOrderSync(models.Model):
                     }
                 )
         return result
+
+    def _currency_quanta(self, order_data):
+        """Return the smallest unit of the shop and presentment currencies."""
+        quanta = {}
+        for side in ("shop", "presentment"):
+            currency = (
+                self.env["res.currency"]
+                .with_context(active_test=False)
+                .search([("name", "=", order_data["total"][side]["currency"])], limit=1)
+            )
+            quanta[side] = (
+                Decimal(str(currency.rounding)) if currency else Decimal("0.01")
+            )
+        return quanta
 
     def _currency(self, instance, order_data):
         side = (
@@ -955,14 +1102,19 @@ class ShopifyOrderSync(models.Model):
         return self.env["res.country"].search([("code", "=", country_code)], limit=1)
 
     def _mapped_taxes(self, instance, tax_lines, country, included):
-        taxes = self.env["account.tax"]
+        # Two tax lines can share a rate (a 1 % city tax and a 1 % transit tax).
+        # Odoo cannot apply one tax twice on a line, so look up their sum (0.02).
+        rate_counts = Counter()
         for line in tax_lines:
-            rate = format(decimal_amount(line["rate"]).normalize(), "f")
             line_country = country
             if line.get("country_code"):
                 line_country = self.env["res.country"].search(
                     [("code", "=", line["country_code"])], limit=1
                 )
+            rate_counts[(decimal_amount(line["rate"]), line_country)] += 1
+        taxes = self.env["account.tax"]
+        for (line_rate, line_country), count in rate_counts.items():
+            rate = format((line_rate * count).normalize(), "f")
             mapping = self.env["shopify.tax.mapping"].search(
                 [
                     ("instance_id", "=", instance.id),
@@ -1031,8 +1183,7 @@ class ShopifyOrderSync(models.Model):
                 raise ShopifyOrderImportError(
                     self.env._("Shopify cancelled an order already delivered in Odoo.")
                 )
-            if sale_order.state != "cancel":
-                sale_order.action_cancel()
+            self._cancel_sale_order(sale_order)
             return
         if self._should_confirm_shopify_order(instance, order_data, sale_order):
             sale_order.action_confirm()
@@ -1070,6 +1221,21 @@ class ShopifyOrderSync(models.Model):
         return bool(
             sale_order.picking_ids.filtered(lambda picking: picking.state == "done")
         )
+
+    def _cancel_sale_order(self, sale_order):
+        if sale_order.state == "cancel":
+            return
+        # Without this context, Odoo returns a confirmation wizard for a
+        # confirmed order instead of cancelling it.
+        sale_order.with_context(disable_cancel_warning=True).action_cancel()
+        if sale_order.state != "cancel":
+            raise ShopifyOrderImportError(
+                self.env._(
+                    "Shopify cancelled the order, but Odoo could not cancel "
+                    "sale order %s.",
+                    sale_order.name,
+                )
+            )
 
     def _apply_invoice_and_payments(self, binding, order_data):
         instance = binding.instance_id
@@ -1469,8 +1635,7 @@ class ShopifyOrderSync(models.Model):
             binding.instance_id.refund_uninvoiced_policy == "cancel"
             and amount >= expected_total
         ):
-            if sale_order.state != "cancel":
-                sale_order.action_cancel()
+            self._cancel_sale_order(sale_order)
             return
         for line in refund["lines"]:
             line_binding = binding.line_binding_ids.filtered(

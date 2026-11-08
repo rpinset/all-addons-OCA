@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: base_tier_validation_server_action
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_server_action.tier_definition_view_form
+msgid "After review"
+msgstr ""
+
+#. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__auto_validate
 msgid "Auto Validate"
 msgstr "Auto-validar"
@@ -28,28 +33,20 @@ msgstr "Auto-validar dominio"
 
 #. module: base_tier_validation_server_action
 #: model:ir.actions.server,name:base_tier_validation_server_action.ir_cron_auto_tier_validation_ir_actions_server
-#: model:ir.cron,cron_name:base_tier_validation_server_action.ir_cron_auto_tier_validation
-#: model:ir.cron,name:base_tier_validation_server_action.ir_cron_auto_tier_validation
 msgid "Automatic Tier Validation"
 msgstr "Validación Automática de Niveles"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__display_name
-#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_review__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_validation__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__id
-#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_review__id
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_validation__id
 msgid "ID"
 msgstr "ID"
-
-#. module: base_tier_validation_server_action
-#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition____last_update
-#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_review____last_update
-msgid "Last Modified on"
-msgstr "Última modificación el"
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__server_action_id
@@ -77,9 +74,9 @@ msgid "Tier Definition"
 msgstr "Definición del Nivel"
 
 #. module: base_tier_validation_server_action
-#: model:ir.model,name:base_tier_validation_server_action.model_tier_review
-msgid "Tier Review"
-msgstr "Revisión del Nivel"
+#: model:ir.model,name:base_tier_validation_server_action.model_tier_validation
+msgid "Tier Validation (abstract)"
+msgstr ""
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,help:base_tier_validation_server_action.field_tier_definition__auto_validate
@@ -100,3 +97,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_tier_validation_server_action.tier_definition_view_form
 msgid "if pass condition"
 msgstr "si pasa la condición"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última modificación el"
+
+#~ msgid "Tier Review"
+#~ msgstr "Revisión del Nivel"

@@ -19,6 +19,7 @@ class TierValidationException(models.Model):
         required=True,
         default="New Tier Validation Exception",
     )
+    active = fields.Boolean(default=True)
     model_id = fields.Many2one(
         comodel_name="ir.model",
         string="Model",

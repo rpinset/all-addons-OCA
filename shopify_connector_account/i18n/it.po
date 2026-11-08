@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-27 11:46+0000\n"
+"PO-Revision-Date: 2026-11-06 09:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -591,7 +591,7 @@ msgstr "Transazione di saldo Shopify Payments"
 #. module: shopify_connector_account
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_instance__shopify_payments_checked_at
 msgid "Shopify Payments Checked At"
-msgstr ""
+msgstr "Pagamenti Shopify controllati il"
 
 #. module: shopify_connector_account
 #: model:ir.model,name:shopify_connector_account.model_shopify_dispute
@@ -640,6 +640,21 @@ msgstr "Riepilogo Shopify"
 #: model:ir.model.fields,field_description:shopify_connector_account.field_shopify_payout__external_updated_at
 msgid "Shopify Updated At"
 msgstr "Data di aggiornamento Shopify"
+
+#. module: shopify_connector_account
+#. odoo-python
+#: code:addons/shopify_connector_account/models/payout_sync.py:0
+msgid ""
+"Shopify changed the transactions of payout %(payout)s after its journal "
+"entry %(entry)s was posted: %(added)s added, %(removed)s removed, %"
+"(changed)s changed. Reset the entry to draft so the next import refreshes "
+"the transactions, then generate it again."
+msgstr ""
+"Shopify ha modificato le transazioni relative al pagamento %(payout)s dopo "
+"la registrazione della relativa scrittura contabile %(entry)s: %(added)s "
+"aggiunte, %(removed)s rimosse, %(changed)s modificate. Riporta la scrittura "
+"contabile allo stato di bozza affinché la successiva importazione aggiorni "
+"le transazioni, quindi procedi nuovamente alla sua generazione."
 
 #. module: shopify_connector_account
 #. odoo-python
@@ -822,6 +837,9 @@ msgid ""
 "When the payout import last checked whether Shopify Payments is active. An "
 "unavailable shop is checked again weekly."
 msgstr ""
+"Quando è stata effettuata l'ultima importazione del pagamento, è stato "
+"verificato se Shopify Payments è attivo. Un negozio non disponibile viene "
+"nuovamente controllato settimanalmente."
 
 #. module: shopify_connector_account
 #. odoo-python

@@ -9,11 +9,7 @@
             menuClass="discussSystray.menuClass"
         >
             <button>
-                <i
-                    class="fa fa-lg fa-pencil-square-o"
-                    role="img"
-                    aria-label="Reviews"
-                />
+                <i class="fa fa-lg fa-check-square-o" role="img" aria-label="Reviews" />
                 <span
                     t-if="store.tierReviewCounter"
                     class="o-mail-ActivityMenu-counter badge rounded-pill"

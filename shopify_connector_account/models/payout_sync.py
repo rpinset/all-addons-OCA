@@ -225,6 +225,11 @@ class ShopifyInstancePayoutSync(models.Model):
             limit=1,
         )
         if payout:
+            if payout.state == "error":
+                # Import failures raise; a payout in error failed to generate
+                # or keep its journal entry, which a fresh import does not fix.
+                values.pop("state")
+                values.pop("error_message")
             payout.write(values)
         else:
             payout = self.env["shopify.payout"].create(values)
@@ -242,16 +247,78 @@ class ShopifyInstancePayoutSync(models.Model):
         )
         if not account:
             return
+        transactions = [
+            normalized
+            for normalized in map(normalize_transaction, payloads)
+            if not normalized["payout_id"]
+            or normalized["payout_id"] == payout.shopify_id
+        ]
+        if payout.entry_id.state == "posted":
+            # The posted entry was built from the stored transactions: keep
+            # them as its audit trail and report any change Shopify made.
+            self._check_posted_payout_transactions(payout, transactions)
+            return
         seen = set()
-        for payload in payloads:
-            normalized = normalize_transaction(payload)
-            if normalized["payout_id"] and normalized["payout_id"] != payout.shopify_id:
-                continue
+        for normalized in transactions:
             transaction = self._upsert_payout_transaction(payout, normalized)
             seen.add(transaction.shopify_id)
         payout.transaction_ids.filtered(
             lambda item: item.shopify_id not in seen
         ).unlink()
+
+    def _check_posted_payout_transactions(self, payout, transactions):
+        def amounts(currency, amount, fee, net):
+            return (currency, Decimal(amount), Decimal(fee), Decimal(net))
+
+        stored = {
+            transaction.shopify_id: amounts(
+                transaction.currency_id.name,
+                transaction.amount_exact,
+                transaction.fee_exact,
+                transaction.net_exact,
+            )
+            for transaction in payout.transaction_ids
+        }
+        incoming = {
+            normalized["id"]: amounts(
+                normalized["currency"],
+                normalized["amount"],
+                normalized["fee"],
+                normalized["net"],
+            )
+            for normalized in transactions
+        }
+        if stored == incoming:
+            return
+        added = len(incoming.keys() - stored.keys())
+        removed = len(stored.keys() - incoming.keys())
+        changed = sum(
+            1
+            for transaction_id in stored.keys() & incoming.keys()
+            if stored[transaction_id] != incoming[transaction_id]
+        )
+        message = self.env._(
+            "Shopify changed the transactions of payout %(payout)s after its "
+            "journal entry %(entry)s was posted: %(added)s added, %(removed)s "
+            "removed, %(changed)s changed. Reset the entry to draft so the next "
+            "import refreshes the transactions, then generate it again.",
+            payout=payout.reference,
+            entry=payout.entry_id.display_name,
+            added=added,
+            removed=removed,
+            changed=changed,
+        )
+        if payout.state == "error" and payout.error_message == message:
+            # Already flagged: the daily import must not log it again.
+            return
+        payout.write({"state": "error", "error_message": message})
+        self._write_log(
+            entity="payout",
+            direction="import",
+            level="error",
+            message=message,
+            record=payout,
+        )
 
     def _gift_card_liability_account(self):
         self.ensure_one()

@@ -1,0 +1,4 @@
+- Coupon and discount lines.
+- Mercado Pago settlement detail beyond the payment status.
+- Invoice fiscal data for each country.
+- Pack-level shipping quotes when Mercado Libre splits a cart across shipments.

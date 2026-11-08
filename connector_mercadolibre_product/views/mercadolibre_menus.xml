@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_mercadolibre_catalog"
+        name="Catalog"
+        parent="connector_mercadolibre.menu_mercadolibre_root"
+        sequence="20"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+    />
+    <menuitem
+        id="menu_mercadolibre_listing"
+        name="Listings"
+        parent="menu_mercadolibre_catalog"
+        sequence="10"
+        action="action_mercadolibre_product"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+    />
+    <menuitem
+        id="menu_mercadolibre_category"
+        name="Categories"
+        parent="menu_mercadolibre_catalog"
+        sequence="20"
+        action="action_mercadolibre_category"
+        groups="connector_mercadolibre.group_mercadolibre_user"
+    />
+</odoo>

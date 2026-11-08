@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils: https://docutils.sourceforge.io/" />
+<title>Mercado Libre Connector - Products</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 9511 2024-01-13 09:50:07Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+Despite the name, some widely supported CSS2 features are used.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: gray; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic, pre.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<a class="reference external image-reference" href="https://odoo-community.org/get-involved?utm_source=readme">
+<img alt="Odoo Community Association" src="https://odoo-community.org/readme-banner-image" />
+</a>
+<div class="section" id="mercado-libre-connector-products">
+<h1>Mercado Libre Connector - Products</h1>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! This file is generated by oca-gen-addon-readme !!
+!! changes will be overwritten.                   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! source digest: sha256:531cb17816743ea773b8e92d37e3f4c871d112bdea583d645aabd137131d0cf6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Alpha" src="https://img.shields.io/badge/maturity-Alpha-red.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/license-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/connector-mercadolibre/tree/19.0/connector_mercadolibre_product"><img alt="OCA/connector-mercadolibre" src="https://img.shields.io/badge/github-OCA%2Fconnector--mercadolibre-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/connector-mercadolibre-19-0/connector-mercadolibre-19-0-connector_mercadolibre_product"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/connector-mercadolibre&amp;target_branch=19.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
+<p>Bind Mercado Libre listings to Odoo products and keep price and seller
+stock aligned.</p>
+<p>Listings are matched by the <tt class="docutils literal">SELLER_SKU</tt> attribute, then by
+<tt class="docutils literal">seller_custom_field</tt>, then by the product internal reference. A
+listing that does not match stays unbound. <strong>Create missing products</strong>
+is off by default.</p>
+<p>Price export uses the Mercado Libre Prices API. Stock export sends
+<tt class="docutils literal">available_quantity</tt> for legacy items and
+<tt class="docutils literal">PUT <span class="pre">/user-products/{id}/stock/type/seller_warehouse</span></tt> when the backend
+version is User products. Fulfillment stock is read-only.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is an alpha version, the data model and design can change at any time without warning.
+Only for development or testing purpose, do not use in production.
+<a class="reference external" href="https://odoo-community.org/page/development-status">More details on development status</a></p>
+</div>
+<p><strong>Table of contents</strong></p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#installation" id="toc-entry-1">Installation</a></li>
+<li><a class="reference internal" href="#configuration" id="toc-entry-2">Configuration</a></li>
+<li><a class="reference internal" href="#usage" id="toc-entry-3">Usage</a></li>
+<li><a class="reference internal" href="#development" id="toc-entry-4">Development</a></li>
+<li><a class="reference internal" href="#known-issues-roadmap" id="toc-entry-5">Known issues / Roadmap</a></li>
+<li><a class="reference internal" href="#bug-tracker" id="toc-entry-6">Bug Tracker</a></li>
+<li><a class="reference internal" href="#credits" id="toc-entry-7">Credits</a><ul>
+<li><a class="reference internal" href="#maintainers" id="toc-entry-8">Maintainers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#toc-entry-1">Installation</a></h2>
+<p>Install <tt class="docutils literal">connector_mercadolibre</tt> first, then this module.</p>
+<p>Map each seller warehouse on the backend before enabling <strong>Export
+stock</strong>. A warehouse mapped as fulfillment is displayed and is never
+updated from Odoo.</p>
+</div>
+<div class="section" id="configuration">
+<h2><a class="toc-backref" href="#toc-entry-2">Configuration</a></h2>
+<ol class="arabic simple">
+<li>Open the Mercado Libre backend and the page <strong>Catalog</strong>.</li>
+<li>Enable <strong>Import listings</strong>, <strong>Export prices</strong>, and <strong>Export stock</strong>
+as needed.</li>
+<li>Add a line per Odoo warehouse: Mercado Libre store id, network node
+id, and stock type (<tt class="docutils literal">seller_warehouse</tt>, <tt class="docutils literal">selling_address</tt>, or
+<tt class="docutils literal">fulfillment</tt>).</li>
+<li>Set <strong>Versions</strong> on the backend. After connect, the core fills this
+from the <tt class="docutils literal">user_product_seller</tt> tag on <tt class="docutils literal">/users/me</tt>. Keep <strong>User
+products</strong> for sellers already migrated.</li>
+<li>Run <strong>Import listings</strong> on the backend. Review unmatched rows under
+<strong>Mercado Libre / Catalog / Listings</strong>.</li>
+<li>Open a product and use the <strong>Mercado Libre</strong> smart button to see its
+bindings. Set the internal reference to the seller SKU before the
+next import if the first pass did not match.</li>
+</ol>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#toc-entry-3">Usage</a></h2>
+<p>A change to a product list price enqueues one price export for each
+binding of that product. A done stock move enqueues one stock export per
+binding and mapped warehouse. Both jobs use an identity key, so a burst
+of moves becomes a single pending job.</p>
+<p><strong>Mercado Libre / Catalog / Categories</strong> shows the cached category tree
+and the attribute schema used when a publisher component creates a
+listing. <strong>Refresh categories</strong> on the backend reloads that tree.</p>
+<p>The notification topics <tt class="docutils literal">items</tt> and <tt class="docutils literal"><span class="pre">stock-location</span></tt> update the
+binding. <tt class="docutils literal"><span class="pre">stock-location</span></tt> writes the last marketplace quantity on the
+binding and does not create <tt class="docutils literal">stock.quant</tt> rows.</p>
+</div>
+<div class="section" id="development">
+<h2><a class="toc-backref" href="#toc-entry-4">Development</a></h2>
+<p>Stock export is two components with usage <tt class="docutils literal">stock.exporter</tt>.
+<tt class="docutils literal">_component_match</tt> keeps the component for the backend version:</p>
+<ul class="simple">
+<li><tt class="docutils literal">mercadolibre.product.exporter.stock.legacy</tt> writes
+<tt class="docutils literal">available_quantity</tt> on <tt class="docutils literal">PUT <span class="pre">/items/{id}</span></tt> when <strong>Versions</strong> is
+Legacy items.</li>
+<li><tt class="docutils literal">mercadolibre.product.exporter.stock.user_product</tt> writes
+<tt class="docutils literal">PUT <span class="pre">/user-products/{id}/stock/type/seller_warehouse</span></tt> (or
+<tt class="docutils literal">selling_address</tt>) when <strong>Versions</strong> is User products.</li>
+</ul>
+<p>A binding with an empty <tt class="docutils literal">user_product_id</tt> uses the legacy call,
+including when the backend version is User products. Fulfillment
+bindings and fulfillment warehouse lines are skipped. The quantity is
+<tt class="docutils literal"><span class="pre">product.with_context(warehouse_id=warehouse).free_qty</span></tt> for that
+mapped warehouse only.</p>
+<p><tt class="docutils literal">_apply_on</tt> has to be an Odoo model. The Mercado Libre topic is not a
+model, so the handlers set <tt class="docutils literal">_topic</tt> to <tt class="docutils literal">items</tt> or <tt class="docutils literal"><span class="pre">stock-location</span></tt>
+and <tt class="docutils literal">_apply_on</tt> to <tt class="docutils literal">mercadolibre.notification</tt>. The core dispatcher
+selects the handler by <tt class="docutils literal">_topic</tt>.</p>
+<p><tt class="docutils literal">mercadolibre.product.binder</tt> resolves a listing with
+<tt class="docutils literal">to_internal(external_id, <span class="pre">variation_id=...)</span></tt>. An empty variation id is
+the item that has no variations. <tt class="docutils literal">to_external</tt> returns the Mercado
+Libre item id.</p>
+<p>Publishing a new listing is the component usage <tt class="docutils literal">product.publisher</tt>.
+This module ships a publisher that raises <tt class="docutils literal">UserError</tt> with “Listing
+publication is not installed.” A localization replaces that component
+with <tt class="docutils literal">POST /items</tt> without changing price or stock export.</p>
+<p>Import and export mappers are separate (<tt class="docutils literal">import.mapper</tt> and
+<tt class="docutils literal">export.mapper</tt>). The export mapper exposes <tt class="docutils literal">price_payload</tt>,
+<tt class="docutils literal">legacy_stock_payload</tt>, and <tt class="docutils literal">user_product_stock_payload</tt> so a price
+body is never merged into a stock body.</p>
+<p>Import jobs use the identity key <tt class="docutils literal"><span class="pre">meli:item:{backend_id}:{item_id}:</span></tt>.
+One job imports every variation of the item. Price jobs use
+<tt class="docutils literal"><span class="pre">meli:price:{backend_id}:{binding_id}</span></tt>. Stock jobs use
+<tt class="docutils literal"><span class="pre">meli:stock:{backend_id}:{binding_id}:{mapping_id}</span></tt>.</p>
+</div>
+<div class="section" id="known-issues-roadmap">
+<h2><a class="toc-backref" href="#toc-entry-5">Known issues / Roadmap</a></h2>
+<ul class="simple">
+<li>Picture binary synchronization. The binding stores picture URLs.</li>
+<li>Listing creation (<tt class="docutils literal">product.publisher</tt>) with category attributes,
+listing types, and picture upload.</li>
+<li>Price lists other than the product list price.</li>
+<li>Multi-company stock rules beyond the warehouse map on the backend.</li>
+</ul>
+</div>
+<div class="section" id="bug-tracker">
+<h2><a class="toc-backref" href="#toc-entry-6">Bug Tracker</a></h2>
+<p>Bugs are tracked on <a class="reference external" href="https://github.com/OCA/connector-mercadolibre/issues">GitHub Issues</a>.
+In case of trouble, please check there if your issue has already been reported.
+If you spotted it first, help us to smash it by providing a detailed and welcomed
+<a class="reference external" href="https://github.com/OCA/connector-mercadolibre/issues/new?body=module:%20connector_mercadolibre_product%0Aversion:%2019.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<p>Do not contact contributors directly about support or help with technical issues.</p>
+</div>
+<div class="section" id="credits">
+<h2><a class="toc-backref" href="#toc-entry-7">Credits</a></h2>
+<div class="section" id="maintainers">
+<h3><a class="toc-backref" href="#toc-entry-8">Maintainers</a></h3>
+<p>This module is maintained by the OCA.</p>
+<a class="reference external image-reference" href="https://odoo-community.org">
+<img alt="Odoo Community Association" src="https://odoo-community.org/logo.png" />
+</a>
+<p>OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.</p>
+<p>This module is part of the <a class="reference external" href="https://github.com/OCA/connector-mercadolibre/tree/19.0/connector_mercadolibre_product">OCA/connector-mercadolibre</a> project on GitHub.</p>
+<p>You are welcome to contribute. To learn how please visit <a class="reference external" href="https://odoo-community.org/page/Contribute">https://odoo-community.org/page/Contribute</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

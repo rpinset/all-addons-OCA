@@ -128,6 +128,12 @@ export const systrayItem = {
     Component: TierReviewMenu,
 };
 
+// Systray items render right-to-left by descending sequence (higher =
+// further left; the user menu at sequence 0 is the right-most). A low
+// sequence keeps the reviewer menu grouped with the standard
+// notification menus (messaging 25, activities 20) on the right, rather
+// than off on the far left -- notably to the right of the Enterprise AI
+// button (which sits left of the messaging menu, i.e. sequence > 25).
 registry
     .category("systray")
-    .add("base_tier_validation.ReviewerMenu", systrayItem, {sequence: 99});
+    .add("base_tier_validation.ReviewerMenu", systrayItem, {sequence: 24});

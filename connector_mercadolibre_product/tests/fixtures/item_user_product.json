@@ -1,0 +1,15 @@
+{
+  "id": "MLA200",
+  "title": "User product mug",
+  "status": "active",
+  "currency_id": "ARS",
+  "price": 2500,
+  "available_quantity": 8,
+  "user_product_id": "MLAU200",
+  "category_id": "MLA2000",
+  "permalink": "https://articulo.mercadolibre.com.ar/MLA-200",
+  "shipping": {"logistic_type": "self_service"},
+  "pictures": [{"url": "https://http2.mlstatic.com/mug.jpg"}],
+  "attributes": [{"id": "SELLER_SKU", "value_name": "SKU-UP"}],
+  "variations": []
+}

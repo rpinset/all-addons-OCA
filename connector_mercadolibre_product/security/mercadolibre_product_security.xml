@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_product_company_rule" model="ir.rule">
+        <field name="name">Mercado Libre listing multi-company</field>
+        <field name="model_id" ref="model_mercadolibre_product_product" />
+        <field
+            name="domain_force"
+        >['|', ('backend_id.company_id', '=', False), ('backend_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('connector_mercadolibre.group_mercadolibre_user'))]"
+        />
+    </record>
+    <record id="mercadolibre_category_company_rule" model="ir.rule">
+        <field name="name">Mercado Libre category multi-company</field>
+        <field name="model_id" ref="model_mercadolibre_category" />
+        <field
+            name="domain_force"
+        >['|', ('backend_id.company_id', '=', False), ('backend_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('connector_mercadolibre.group_mercadolibre_user'))]"
+        />
+    </record>
+    <record id="mercadolibre_warehouse_company_rule" model="ir.rule">
+        <field name="name">Mercado Libre warehouse mapping multi-company</field>
+        <field name="model_id" ref="model_mercadolibre_warehouse_mapping" />
+        <field
+            name="domain_force"
+        >['|', ('backend_id.company_id', '=', False), ('backend_id.company_id', 'in', company_ids)]</field>
+        <field
+            name="groups"
+            eval="[(4, ref('connector_mercadolibre.group_mercadolibre_user'))]"
+        />
+    </record>
+</odoo>

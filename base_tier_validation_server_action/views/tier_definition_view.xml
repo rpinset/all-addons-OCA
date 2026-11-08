@@ -7,18 +7,20 @@
         <field name="model">tier.definition</field>
         <field name="inherit_id" ref="base_tier_validation.tier_definition_view_form" />
         <field name="arch" type="xml">
-            <xpath expr="//page[@name='options']/group" position="inside">
-                <group name="server_action">
-                    <field name="server_action_id" />
-                    <field name="rejected_server_action_id" />
-                    <field name="auto_validate" />
-                    <field
-                        name="auto_validate_domain"
-                        string="if pass condition"
-                        widget="domain"
-                        options="{'model': 'model'}"
-                        invisible="not auto_validate"
-                    />
+            <xpath expr="//group[@name='review_settings']" position="after">
+                <group name="after_review">
+                    <group string="After review" name="server_action">
+                        <field name="server_action_id" />
+                        <field name="rejected_server_action_id" />
+                        <field name="auto_validate" />
+                        <field
+                            name="auto_validate_domain"
+                            string="if pass condition"
+                            widget="domain"
+                            options="{'model': 'model'}"
+                            invisible="not auto_validate"
+                        />
+                    </group>
                 </group>
             </xpath>
         </field>

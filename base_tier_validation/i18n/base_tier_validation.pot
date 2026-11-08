@@ -28,24 +28,24 @@ msgstr ""
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
 msgid ""
-"<i class=\"fa fa-lg fa-thumbs-down\"/>\n"
-"                Operation has been\n"
-"                <b>rejected</b>\n"
-"                ."
-msgstr ""
-
-#. module: base_tier_validation
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
-msgid ""
-"<i class=\"fa fa-lg fa-thumbs-up\"/>\n"
+"<i class=\"fa fa-lg fa-check\"/>\n"
 "                Operation has been\n"
 "                <b>validated</b>\n"
 "                !"
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
+msgid ""
+"<i class=\"fa fa-lg fa-times\"/>\n"
+"                Operation has been\n"
+"                <b>rejected</b>\n"
+"                ."
+msgstr ""
+
+#. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "<span class=\"oe_edit_only\">Name</span>"
+msgid "<span class=\"ms-1\">days</span>"
 msgstr ""
 
 #. module: base_tier_validation
@@ -96,6 +96,14 @@ msgid "A review was rejected by %s."
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid ""
+"A tier definition tells Odoo which records on a given model need\n"
+"                to be reviewed by which user (or group, or field-based reviewer)\n"
+"                before they can move forward in their workflow."
+msgstr ""
+
+#. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 msgid "A validation process is still open for at least one record."
@@ -103,6 +111,7 @@ msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__active
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__active
 msgid "Active"
 msgstr ""
 
@@ -112,8 +121,18 @@ msgid "All"
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "All users"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__allow_write_for_reviewer
 msgid "Allow Write For Reviewers"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "Allow editing"
 msgstr ""
 
 #. module: base_tier_validation
@@ -124,6 +143,11 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__group
 msgid "Any user in a specific group"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+msgid "Applies to"
 msgstr ""
 
 #. module: base_tier_validation
@@ -161,6 +185,9 @@ msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_form
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_exception_search
 msgid "Archived"
 msgstr ""
 
@@ -252,6 +279,11 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__comment_approve_default
 msgid "Default comment prefilled when approval comments are enabled."
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid "Define a new validation tier"
 msgstr ""
 
 #. module: base_tier_validation
@@ -435,11 +467,6 @@ msgid "Model Name"
 msgstr ""
 
 #. module: base_tier_validation
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "More Options"
-msgstr ""
-
-#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__name
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__name
 msgid "Name"
@@ -474,6 +501,11 @@ msgid "No reviews to do."
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Notifications"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_on_accepted
 msgid "Notify Reviewers on Accepted"
 msgstr ""
@@ -499,10 +531,8 @@ msgid "Notify Reviewers on reaching Pending"
 msgstr ""
 
 #. module: base_tier_validation
-#: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
-msgid ""
-"Number of days after which a message must be posted to remind about pending "
-"validation  (0 = no reminder)"
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Notify reviewers when"
 msgstr ""
 
 #. module: base_tier_validation
@@ -566,6 +596,23 @@ msgid "Related Document Model"
 msgstr ""
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_reminder_delay
+msgid "Remind Every (Days)"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Remind every"
+msgstr ""
+
+#. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_reminder_delay
+msgid ""
+"Remind the reviewers every this many days until the review is done. Leave at"
+" 0 to send no reminder."
+msgstr ""
+
+#. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
 msgid "Request Validation"
 msgstr ""
@@ -600,6 +647,7 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/base_tier_validation/static/src/components/tier_review_menu/tier_review_menu.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__review_ids
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "Review"
 msgstr ""
 
@@ -634,6 +682,11 @@ msgid "Reviewer may lack access"
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "Reviewer permissions"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_ids
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__reviewer_ids
 msgid "Reviewers"
@@ -650,11 +703,6 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.actions.server,name:base_tier_validation.ir_cron_auto_tier_validation_ir_actions_server
 msgid "Send Tier Review Reminder"
-msgstr ""
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__notify_reminder_delay
-msgid "Send reminder message on pending reviews"
 msgstr ""
 
 #. module: base_tier_validation
@@ -767,6 +815,15 @@ msgid "Tier Validations"
 msgstr ""
 
 #. module: base_tier_validation
+#: model_terms:ir.actions.act_window,help:base_tier_validation.tier_definition_action
+msgid ""
+"Tiers can be chained -- enable\n"
+"                <em>Approve by sequence</em>\n"
+"                on each definition for the model to require the lower-sequence\n"
+"                tier to be approved first."
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__to_validate_message
 msgid "To Validate Message"
 msgstr ""
@@ -869,6 +926,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__waiting
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__waiting
 msgid "Waiting"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
+msgid "When reviewing"
 msgstr ""
 
 #. module: base_tier_validation

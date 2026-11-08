@@ -7,10 +7,14 @@
         <field name="model">tier.validation.exception</field>
         <field name="arch" type="xml">
             <list>
-                <field name="name" />
+                <field name="name" decoration-bf="1" />
                 <field name="model_id" />
                 <field name="field_ids" widget="many2many_tags" optional="show" />
-                <field name="company_id" groups="base.group_multi_company" />
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    optional="hide"
+                />
                 <field name="allowed_to_write_under_validation" />
                 <field name="allowed_to_write_after_validation" />
                 <field name="group_ids" widget="many2many_tags" />
@@ -24,6 +28,12 @@
         <field name="arch" type="xml">
             <form string="Tier Validation Exception">
                 <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="bg-danger"
+                        invisible="active"
+                    />
                     <div class="oe_title">
                         <label for="name" />
                         <h1>
@@ -41,15 +51,26 @@
                                 widget="many2many_tags"
                                 options="{'no_create': True}"
                             />
+                        </group>
+                        <group name="right">
                             <field
                                 name="company_id"
                                 groups="base.group_multi_company"
                             />
+                            <field name="active" invisible="1" />
                         </group>
-                        <group name="right">
-                            <field name="group_ids" widget="many2many_tags" />
+                    </group>
+                    <group name="permissions">
+                        <group string="Allow editing" name="allow_write">
                             <field name="allowed_to_write_under_validation" />
                             <field name="allowed_to_write_after_validation" />
+                        </group>
+                        <group string="Applies to" name="allowed_groups">
+                            <field
+                                name="group_ids"
+                                widget="many2many_tags"
+                                placeholder="All users"
+                            />
                         </group>
                     </group>
                 </sheet>
@@ -77,6 +98,12 @@
                     string="Write after validation"
                     name="flt_allowed_to_write_after_validation_true"
                     domain="[('allowed_to_write_after_validation', '=', True)]"
+                />
+                <separator />
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
                 />
                 <group>
                     <filter

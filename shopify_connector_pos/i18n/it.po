@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-10-05 10:46+0000\n"
+"PO-Revision-Date: 2026-11-06 13:47+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -166,7 +166,7 @@ msgstr "La consegna POS %s richiede ancora una convalida manuale."
 #. module: shopify_connector_pos
 #: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos
 msgid "Pending"
-msgstr "In sospeso"
+msgstr "In attesa"
 
 #. module: shopify_connector_pos
 #: model_terms:ir.ui.view,arch_db:shopify_connector_pos.shopify_order_view_search_pos

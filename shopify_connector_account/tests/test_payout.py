@@ -247,6 +247,96 @@ class TestShopifyPayoutAccounting(AccountTestInvoicingCommon):
         self.assertEqual(payout._job_generate_entry(), entry.id)
         self.assertEqual(payout.entry_id, entry)
 
+    def test_reimport_keeps_the_entry_error_of_a_payout(self):
+        payout = self._payout(708, net="98.00")
+        self._transaction(payout, transaction_id="8", net="97.00")
+        self.assertFalse(payout._job_generate_entry())
+        error = payout.error_message
+
+        self.instance._upsert_payout(
+            {
+                "id": payout.shopify_id,
+                "legacy_id": "708",
+                "reference": "PAYOUT-708",
+                "issued_at": "2026-07-20T00:00:00Z",
+                "status": "PAID",
+                "transaction_type": "DEPOSIT",
+                "currency": self.currency.name,
+                "gross": "100.00",
+                "fees": "3.00",
+                "net": "98.00",
+                "summary": {},
+                "raw": {},
+            }
+        )
+
+        self.assertEqual(payout.state, "error")
+        self.assertEqual(payout.error_message, error)
+
+    def _balance_payload(self, payout, transaction_id, net="97.00"):
+        def money(amount):
+            return {"amount": amount, "currencyCode": self.currency.name}
+
+        return {
+            "id": (f"gid://shopify/ShopifyPaymentsBalanceTransaction/{transaction_id}"),
+            "type": "CHARGE",
+            "displayType": "Charge",
+            "sourceType": "CHARGE",
+            "associatedPayout": {"id": payout.shopify_id},
+            "associatedOrder": {},
+            "transactionDate": "2026-07-19T00:00:00Z",
+            "amount": money("100.00"),
+            "fee": money("3.00"),
+            "net": money(net),
+            "test": False,
+        }
+
+    def _import_transactions(self, payout, payloads):
+        with patch.object(
+            type(self.instance),
+            "_payments_page",
+            autospec=True,
+            return_value=({"activated": True}, payloads),
+        ):
+            self.instance._import_payout_transactions(payout)
+
+    def test_posted_entry_keeps_its_transactions_and_flags_changes(self):
+        payout = self._payout(709)
+        transaction = self._transaction(payout, transaction_id="9")
+        entry = self.env["account.move"].browse(payout._job_generate_entry())
+        entry.action_post()
+
+        # Shopify reports the same transactions: nothing to flag.
+        self._import_transactions(payout, [self._balance_payload(payout, "9")])
+        self.assertEqual(payout.state, "synced")
+
+        # Shopify replaced the transaction after the entry was posted.
+        changed = [
+            self._balance_payload(payout, "9", net="96.00"),
+            self._balance_payload(payout, "10"),
+        ]
+        self._import_transactions(payout, changed)
+        logs = self.env["shopify.log"].search(
+            [("res_model", "=", payout._name), ("res_id", "=", payout.id)]
+        )
+        self.assertIn(payout.error_message, logs.mapped("message"))
+
+        # The next import finds the same change: no new log entry.
+        self._import_transactions(payout, changed)
+        self.assertEqual(
+            self.env["shopify.log"].search(
+                [("res_model", "=", payout._name), ("res_id", "=", payout.id)]
+            ),
+            logs,
+        )
+
+        self.assertEqual(payout.transaction_ids, transaction)
+        self.assertEqual(transaction.net_exact, "97.00")
+        self.assertEqual(payout.state, "error")
+        self.assertIn("1 added, 0 removed, 1 changed", payout.error_message)
+        self.assertEqual(payout.entry_id, entry)
+        self.assertEqual(entry.state, "posted")
+
     def _gift_card_payment(self, *, with_clearing=True):
         lines = []
         if with_clearing:

@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: base_tier_validation_server_action
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_server_action.tier_definition_view_form
+msgid "After review"
+msgstr ""
+
+#. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__auto_validate
 msgid "Auto Validate"
 msgstr "Auto validazione"
@@ -28,9 +33,20 @@ msgstr "Dominio auto validazione"
 
 #. module: base_tier_validation_server_action
 #: model:ir.actions.server,name:base_tier_validation_server_action.ir_cron_auto_tier_validation_ir_actions_server
-#: model:ir.cron,cron_name:base_tier_validation_server_action.ir_cron_auto_tier_validation
 msgid "Automatic Tier Validation"
 msgstr "Validazione automatica livello"
+
+#. module: base_tier_validation_server_action
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__display_name
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_validation__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: base_tier_validation_server_action
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__id
+#: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_validation__id
+msgid "ID"
+msgstr ""
 
 #. module: base_tier_validation_server_action
 #: model:ir.model.fields,field_description:base_tier_validation_server_action.field_tier_definition__server_action_id

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_partner_view_form_mercadolibre" model="ir.ui.view">
+        <field name="name">res.partner.form.mercadolibre</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_mercadolibre_bindings"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-shopping-bag"
+                    invisible="mercadolibre_bind_count == 0"
+                    groups="connector_mercadolibre.group_mercadolibre_user"
+                >
+                    <field
+                        name="mercadolibre_bind_count"
+                        widget="statinfo"
+                        string="Mercado Libre"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

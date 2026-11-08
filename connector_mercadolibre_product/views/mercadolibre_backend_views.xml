@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_backend_view_form_catalog" model="ir.ui.view">
+        <field name="name">mercadolibre.backend.form.catalog</field>
+        <field name="model">mercadolibre.backend</field>
+        <field
+            name="inherit_id"
+            ref="connector_mercadolibre.mercadolibre_backend_view_form"
+        />
+        <field name="arch" type="xml">
+            <button name="button_connect" position="before">
+                <button
+                    name="button_import_listings"
+                    type="object"
+                    string="Import listings"
+                    groups="connector_mercadolibre.group_mercadolibre_manager"
+                />
+                <button
+                    name="button_refresh_categories"
+                    type="object"
+                    string="Refresh categories"
+                    groups="connector_mercadolibre.group_mercadolibre_manager"
+                />
+            </button>
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_products"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-cubes"
+                >
+                    <field
+                        name="product_binding_count"
+                        widget="statinfo"
+                        string="Listings"
+                    />
+                </button>
+            </div>
+            <notebook position="inside">
+                <page string="Catalog" name="catalog">
+                    <group>
+                        <group>
+                            <field name="import_products" />
+                            <field name="export_prices" />
+                            <field name="export_stock" />
+                            <field name="create_missing_products" />
+                        </group>
+                        <group>
+                            <field name="last_product_sync_at" />
+                        </group>
+                    </group>
+                    <field name="warehouse_mapping_ids">
+                        <list editable="bottom">
+                            <field name="company_id" column_invisible="True" />
+                            <field name="warehouse_id" />
+                            <field name="store_id" />
+                            <field name="network_node_id" />
+                            <field name="stock_type" />
+                            <field name="location_id" optional="hide" />
+                        </list>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

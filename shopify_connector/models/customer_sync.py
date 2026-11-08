@@ -517,7 +517,10 @@ class ShopifyCustomerSync(models.Model):
             stale = binding.address_binding_ids.filtered(
                 lambda item: item.shopify_id not in imported_ids
             )
-            stale.mapped("odoo_id").with_context(shopify_customer_import=True).unlink()
+            partners = stale.mapped("odoo_id")
+            stale.unlink()
+            # Orders and invoices may still use the address, so keep it.
+            partners.with_context(shopify_customer_import=True).write({"active": False})
 
     def _match_unbound_address(self, binding, address):
         if not any(address[field] for field in ("address1", "city", "zip")):

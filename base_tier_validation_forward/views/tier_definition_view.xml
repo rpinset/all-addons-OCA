@@ -7,9 +7,9 @@
         <field name="model">tier.definition</field>
         <field name="inherit_id" ref="base_tier_validation.tier_definition_view_form" />
         <field name="arch" type="xml">
-            <field name="approve_sequence" position="after">
+            <xpath expr="//group[@name='reviewer_permissions']" position="inside">
                 <field name="has_forward" />
-            </field>
+            </xpath>
         </field>
     </record>
 </odoo>

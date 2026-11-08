@@ -3,7 +3,7 @@
 {
     "name": "Base Tier Validation - Server Action",
     "summary": "Add option to call server action when a tier is validated",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Tools",
     "website": "https://github.com/OCA/tier-validation",
     "author": "Ecosoft, Odoo Community Association (OCA)",

@@ -634,6 +634,16 @@ msgstr ""
 #. module: shopify_connector_account
 #. odoo-python
 #: code:addons/shopify_connector_account/models/payout_sync.py:0
+msgid ""
+"Shopify changed the transactions of payout %(payout)s after its journal "
+"entry %(entry)s was posted: %(added)s added, %(removed)s removed, "
+"%(changed)s changed. Reset the entry to draft so the next import refreshes "
+"the transactions, then generate it again."
+msgstr ""
+
+#. module: shopify_connector_account
+#. odoo-python
+#: code:addons/shopify_connector_account/models/payout_sync.py:0
 msgid "Shopify disputes could not be imported: %s"
 msgstr ""
 

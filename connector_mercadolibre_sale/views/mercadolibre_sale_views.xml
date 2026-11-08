@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mercadolibre_sale_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.sale.order.list</field>
+        <field name="model">mercadolibre.sale.order</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state == 'error'">
+                <field name="external_id" />
+                <field name="pack_id" />
+                <field name="odoo_id" />
+                <field name="order_status" />
+                <field name="payment_status" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-danger="state == 'error'"
+                    decoration-success="state == 'synced'"
+                />
+                <field name="backend_id" />
+                <field name="date_order" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_sale_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.sale.order.form</field>
+        <field name="model">mercadolibre.sale.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="button_import"
+                        type="object"
+                        string="Import"
+                        groups="connector_mercadolibre.group_mercadolibre_manager"
+                    />
+                    <button
+                        name="action_view_pack"
+                        type="object"
+                        string="Pack"
+                        invisible="not pack_id"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="backend_id" />
+                            <field name="external_id" />
+                            <field name="pack_id" />
+                            <field name="odoo_id" />
+                            <field name="shipment_id" />
+                            <field name="shipment_external_id" />
+                        </group>
+                        <group>
+                            <field name="order_status" />
+                            <field name="payment_status" />
+                            <field name="sale_fee" />
+                            <field name="currency_id" />
+                            <field name="date_order" />
+                            <field name="date_updated" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Error" name="error">
+                            <field name="error_message" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mercadolibre_sale_view_search" model="ir.ui.view">
+        <field name="name">mercadolibre.sale.order.search</field>
+        <field name="model">mercadolibre.sale.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="external_id" />
+                <field name="pack_id" />
+                <field name="odoo_id" />
+                <filter
+                    name="error"
+                    string="Error"
+                    domain="[('state', '=', 'error')]"
+                />
+                <group>
+                    <filter
+                        name="group_pack"
+                        string="Pack"
+                        context="{'group_by': 'pack_id'}"
+                    />
+                    <filter
+                        name="group_backend"
+                        string="Backend"
+                        context="{'group_by': 'backend_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_sale" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="res_model">mercadolibre.sale.order</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="mercadolibre_partner_view_list" model="ir.ui.view">
+        <field name="name">mercadolibre.res.partner.list</field>
+        <field name="model">mercadolibre.res.partner</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="external_id" />
+                <field name="nickname" />
+                <field name="odoo_id" />
+                <field name="billing_doc_type" />
+                <field
+                    name="billing_doc_number"
+                    groups="connector_mercadolibre.group_mercadolibre_manager"
+                />
+                <field name="backend_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mercadolibre_partner_view_form" model="ir.ui.view">
+        <field name="name">mercadolibre.res.partner.form</field>
+        <field name="model">mercadolibre.res.partner</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="backend_id" />
+                            <field name="external_id" />
+                            <field name="nickname" />
+                            <field name="odoo_id" />
+                        </group>
+                        <group>
+                            <field name="billing_doc_type" />
+                            <field
+                                name="billing_doc_number"
+                                groups="connector_mercadolibre.group_mercadolibre_manager"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page
+                            string="Billing"
+                            name="billing"
+                            groups="connector_mercadolibre.group_mercadolibre_manager"
+                        >
+                            <field name="raw_billing" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mercadolibre_partner" model="ir.actions.act_window">
+        <field name="name">Buyers</field>
+        <field name="res_model">mercadolibre.res.partner</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

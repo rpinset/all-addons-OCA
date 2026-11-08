@@ -1,6 +1,6 @@
 # Build report — `19.0`
 
-Generated 2026-11-04 21:06 UTC
+Generated 2026-11-08 00:33 UTC
 
 ## Skipped repos
 
@@ -39,7 +39,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [dotnet](https://github.com/OCA/dotnet) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-ediversa](https://github.com/OCA/edi-ediversa) | `no_module` | No directory with __manifest__.py at repo root |
 | [edi-voxel](https://github.com/OCA/edi-voxel) | `no_module` | No directory with __manifest__.py at repo root |
-| [hr-expense](https://github.com/OCA/hr-expense) | `no_module` | No directory with __manifest__.py at repo root |
 | [infrastructure](https://github.com/OCA/infrastructure) | `no_module` | No directory with __manifest__.py at repo root |
 | [interface-git](https://github.com/OCA/interface-git) | `no_module` | No directory with __manifest__.py at repo root |
 | [iot](https://github.com/OCA/iot) | `no_module` | No directory with __manifest__.py at repo root |
@@ -96,6 +95,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
+| [product-uom](https://github.com/OCA/product-uom) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-reporting](https://github.com/OCA/project-reporting) | `no_module` | No directory with __manifest__.py at repo root |
@@ -110,7 +110,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [route-planning](https://github.com/OCA/route-planning) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-automatic-workflow](https://github.com/OCA/sale-automatic-workflow) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [sale-financial](https://github.com/OCA/sale-financial) | `no_module` | No directory with __manifest__.py at repo root |
-| [sale-prebook](https://github.com/OCA/sale-prebook) | `no_module` | No directory with __manifest__.py at repo root |
 | [sale-stock-workflow](https://github.com/OCA/sale-stock-workflow) | `no_branch` | fatal: Remote branch 19.0 not found in upstream origin |
 | [search-engine](https://github.com/OCA/search-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [shift-planning](https://github.com/OCA/shift-planning) | `no_module` | No directory with __manifest__.py at repo root |

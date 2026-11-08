@@ -6,6 +6,7 @@ from odoo.addons.shopify_connector.lib.order import (
     ShopifyOrderPayloadError,
     allocate_amount,
     allocate_refund,
+    apply_draft_order_discount,
     line_diffs,
     normalize_order_payload,
     normalize_refund_payload,
@@ -51,6 +52,41 @@ class TestShopifyLibOrder(TransactionCase):
         )
         assert graphql["number"] == "1001"
         assert rest["number"] == "1001"
+
+    def test_order_addresses_read_graphql_and_rest_shapes(self):
+        graphql = normalize_order_payload(
+            {
+                "id": "gid://shopify/Order/1",
+                "shippingAddress": {
+                    "firstName": "Anna",
+                    "address1": "Leveringsweg 2",
+                    "zip": "9641 AA",
+                    "city": "Veendam",
+                    "provinceCode": "GR",
+                    "countryCodeV2": "nl",
+                },
+            }
+        )
+        rest = normalize_order_payload(
+            {
+                "id": 1,
+                "billing_address": {
+                    "first_name": "Anna",
+                    "address1": "Factuurstraat 1",
+                    "city": "Groningen",
+                    "province_code": "GR",
+                    "country_code": "NL",
+                },
+            }
+        )
+        assert graphql["shipping_address"]["address1"] == "Leveringsweg 2"
+        assert graphql["shipping_address"]["country"] == "NL"
+        assert graphql["shipping_address"]["province"] == "GR"
+        assert graphql["billing_address"] is None
+        assert rest["billing_address"]["first_name"] == "Anna"
+        assert rest["billing_address"]["city"] == "Groningen"
+        assert rest["shipping_address"] is None
+        assert "id" not in rest["billing_address"]
 
     def test_rest_webhook_uses_current_quantity_and_exact_discounted_total(self):
         order = normalize_order_payload(
@@ -118,6 +154,68 @@ class TestShopifyLibOrder(TransactionCase):
             total = order["lines"][0]["discounted_total"]
             assert total["shop"]["amount"] == expected
             assert total["presentment"]["amount"] == expected
+
+    def _draft_with_order_discount(self, discount):
+        def line(identifier, total, quantity=1, gift_card=False):
+            return {
+                "id": f"gid://shopify/DraftOrderLineItem/{identifier}",
+                "quantity": quantity,
+                "isGiftCard": gift_card,
+                "originalUnitPriceSet": bag(total, total, "EUR", "EUR"),
+                "discountedTotalSet": bag(total, total, "EUR", "EUR"),
+            }
+
+        return normalize_order_payload(
+            {
+                "id": "gid://shopify/DraftOrder/15",
+                "currencyCode": "EUR",
+                "appliedDiscount": discount,
+                "lineItems": {
+                    "nodes": [
+                        line(1, "104.90"),
+                        line(2, "20.00"),
+                        line(3, "50.00", gift_card=True),
+                    ]
+                },
+            },
+            is_draft=True,
+        )
+
+    def test_draft_order_discount_is_spread_over_the_lines(self):
+        order = self._draft_with_order_discount(
+            {"title": "Loyalty", "amountSet": bag("10.49", "10.49", "EUR", "EUR")}
+        )
+        quanta = {"shop": Decimal("0.01"), "presentment": Decimal("0.01")}
+
+        result = apply_draft_order_discount(order, quanta)
+
+        totals = [
+            line["discounted_total"]["shop"]["amount"] for line in result["lines"]
+        ]
+        # 10.49 split by 104.90 / 20.00; the gift card takes no discount.
+        assert totals == ["96.09", "18.32", "50.00"]
+        first = result["lines"][0]["discount_allocations"]
+        assert first[0]["amount"]["shop"]["amount"] == "8.81"
+        assert first[0]["title"] == "Loyalty"
+        assert not result["lines"][2]["discount_allocations"]
+        assert not result["order_discount"]
+        # The input stays unchanged, so applying it twice is not possible.
+        assert order["lines"][0]["discounted_total"]["shop"]["amount"] == "104.90"
+        assert apply_draft_order_discount(result, quanta) == result
+
+    def test_draft_order_discount_of_a_webhook_uses_its_amount(self):
+        order = self._draft_with_order_discount(
+            {"title": "", "description": "Staff", "amount": "5.00"}
+        )
+
+        assert order["order_discount"]["title"] == "Staff"
+        assert order["order_discount"]["amount"]["shop"]["amount"] == "5.00"
+
+    def test_draft_without_order_discount_keeps_its_lines(self):
+        order = self._draft_with_order_discount(None)
+
+        assert order["order_discount"] == {}
+        assert apply_draft_order_discount(order, {}) is order
 
     def test_largest_remainder_allocation_is_exact_and_deterministic(self):
         assert allocate_amount("0.05", ["1", "1", "1"], "0.01") == [

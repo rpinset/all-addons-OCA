@@ -201,6 +201,45 @@ class TestShopifyCustomerSync(TransactionCase):
         self.assertEqual(binding.address_binding_ids.odoo_id.street, "First Street")
         self.assertEqual(binding.address_binding_ids.odoo_id.type, "invoice")
 
+    def test_removed_address_used_by_an_order_is_archived(self):
+        def address(address_id, street):
+            return {
+                "id": f"gid://shopify/MailingAddress/{address_id}",
+                "firstName": "Alice",
+                "lastName": "Address",
+                "address1": street,
+                "city": "Jakarta",
+                "countryCodeV2": "ID",
+            }
+
+        payload = self._payload(
+            5,
+            defaultAddress={"id": "gid://shopify/MailingAddress/50"},
+            addressesV2={
+                "nodes": [address(50, "First Street"), address(51, "Old Street")]
+            },
+        )
+        binding_id = self.customer_model._job_import_customer(self.instance.id, payload)
+        binding = self.customer_model.browse(binding_id)
+        old_address = binding.address_binding_ids.filtered(
+            lambda item: item.shopify_id.endswith("/51")
+        ).odoo_id
+        self.env["sale.order"].create(
+            {
+                "partner_id": binding.odoo_id.id,
+                "partner_shipping_id": old_address.id,
+            }
+        )
+
+        payload["addressesV2"] = {"nodes": [address(50, "First Street")]}
+        payload["lastName"] = "Renamed"
+        self.customer_model._job_import_customer(self.instance.id, payload)
+
+        self.assertEqual(binding.state, "synced", binding.error_message)
+        self.assertEqual(binding.odoo_id.name, "Shopify Renamed")
+        self.assertEqual(len(binding.address_binding_ids), 1)
+        self.assertFalse(old_address.active)
+
     def test_tags_create_company_scoped_categories_without_duplicates(self):
         payload = self._payload(5, tags=["VIP", "Wholesale"])
 

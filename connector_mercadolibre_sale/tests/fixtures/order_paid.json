@@ -1,0 +1,30 @@
+{
+  "id": 1001,
+  "status": "paid",
+  "pack_id": null,
+  "currency_id": "ARS",
+  "date_created": "2024-01-15T12:00:00.000Z",
+  "date_last_updated": "2024-01-15T12:05:00.000Z",
+  "total_amount": 3000,
+  "buyer": {
+    "id": 555,
+    "nickname": "ANA",
+    "first_name": "Ana",
+    "last_name": "Perez"
+  },
+  "order_items": [
+    {
+      "item": {
+        "id": "MLA100",
+        "title": "Legacy kettle",
+        "seller_sku": "SKU-LEGACY",
+        "variation_id": null
+      },
+      "quantity": 2,
+      "unit_price": 1500,
+      "sale_fee": 300
+    }
+  ],
+  "payments": [{"id": 9001, "status": "approved"}],
+  "shipping": {"id": 4001}
+}

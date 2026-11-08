@@ -4,7 +4,7 @@
     "name": "Website Sale Stock Available",
     "summary": "Display 'Available to promise' in shop online instead "
     "of 'Free To Use Quantity'",
-    "version": "19.0.1.0.1",
+    "version": "19.0.1.0.2",
     "category": "Website",
     "website": "https://github.com/OCA/e-commerce",
     "author": "Tecnativa, Odoo Community Association (OCA)",
@@ -14,5 +14,10 @@
         "website_sale_stock",
     ],
     "data": [],
+    "assets": {
+        "web.assets_tests": [
+            "website_sale_stock_available/static/tests/tours/*.esm.js",
+        ],
+    },
     "installable": True,
 }

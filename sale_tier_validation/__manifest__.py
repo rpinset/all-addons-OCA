@@ -4,7 +4,7 @@
     "name": "Sale Tier Validation",
     "summary": "Extends the functionality of Sale Orders to "
     "support a tier validation process.",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Sale",
     "website": "https://github.com/OCA/tier-validation",
     "author": "Open Source Integrators, Odoo Community Association (OCA)",

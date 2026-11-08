@@ -1,0 +1,16 @@
+{
+  "id": 5001,
+  "status": "ready_to_ship",
+  "logistic_type": "drop_off",
+  "mode": "me2",
+  "tracking_number": "PACK-TRACK",
+  "receiver_address": {
+    "receiver_name": "Ana Perez",
+    "street_name": "Florida",
+    "street_number": "100",
+    "zip_code": "1000",
+    "city": {"name": "CABA"},
+    "country": {"id": "AR"}
+  },
+  "shipping_option": {"cost": 250}
+}
