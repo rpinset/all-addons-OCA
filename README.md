@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `12.0`
 
-Last build: **2026-11-04 20:59 UTC** (elapsed 171s)
+Last build: **2026-11-08 00:27 UTC** (elapsed 122s)
 
 - Repos integrated: **116**
 - Canonical modules: **2222**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **150**
+- Skipped repos (no branch / no module): **151**
 
 ## Integrated repos
 
@@ -44,7 +44,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 171s)
 | [currency](https://github.com/OCA/currency) | 7 | 921cf10 2025-02-01 oca-git-bot [IMP] update dotfiles |
 | [data-protection](https://github.com/OCA/data-protection) | 3 | 9c7f288 2024-10-03 mymage Translated using Weblate (Italian) |
 | [delivery-carrier](https://github.com/OCA/delivery-carrier) | 21 | 7440806 2026-04-13 Pedro M. Baeza Merge pull request #1163 from akretion/12.0-fix-icon |
-| [dms](https://github.com/OCA/dms) | 2 | df8a90c 2025-11-25 mymage Translated using Weblate (Italian) |
+| [dms](https://github.com/OCA/dms) | 2 | d611579 2026-11-06 mymage Translated using Weblate (Italian) |
 | [donation](https://github.com/OCA/donation) | 2 | 4641ae4 2023-10-09 Weblate Update translation files |
 | [e-commerce](https://github.com/OCA/e-commerce) | 44 | f19f439 2026-09-21 mymage Translated using Weblate (Italian) |
 | [edi](https://github.com/OCA/edi) | 23 | 57b731e 2025-09-02 Weblate Update translation files |
@@ -56,7 +56,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 171s)
 | [hr](https://github.com/OCA/hr) | 70 | 7788796 2026-06-10 mymage Translated using Weblate (Italian) |
 | [interface-git](https://github.com/OCA/interface-git) | 3 | 7905718 2026-04-16 OCA-git-bot [ADD] setup.py |
 | [intrastat-extrastat](https://github.com/OCA/intrastat-extrastat) | 6 | a69e2ef 2026-02-01 Matjaz Mozetic Translated using Weblate (Slovenian) |
-| [iot](https://github.com/OCA/iot) | 6 | 089eb90 2026-03-10 mymage Translated using Weblate (Italian) |
+| [iot](https://github.com/OCA/iot) | 6 | a779976 2026-11-06 mymage Translated using Weblate (Italian) |
 | [knowledge](https://github.com/OCA/knowledge) | 11 | bfc7467 2026-04-14 mymage Translated using Weblate (Italian) |
 | [l10n-belgium](https://github.com/OCA/l10n-belgium) | 7 | 44e2e40 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [l10n-brazil](https://github.com/OCA/l10n-brazil) | 48 | 3e7b6c9 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
@@ -90,7 +90,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 171s)
 | [pos](https://github.com/OCA/pos) | 82 | b0ed243 2026-06-10 mymage Translated using Weblate (Italian) |
 | [product-attribute](https://github.com/OCA/product-attribute) | 56 | d0b2171 2026-05-12 mymage Translated using Weblate (Italian) |
 | [product-pack](https://github.com/OCA/product-pack) | 3 | fa25c0b 2025-02-12 mymage Translated using Weblate (Italian) |
-| [product-variant](https://github.com/OCA/product-variant) | 5 | e8dc020 2024-05-08 mymage Translated using Weblate (Italian) |
+| [product-variant](https://github.com/OCA/product-variant) | 5 | de26874 2026-11-06 mymage Translated using Weblate (Italian) |
 | [project](https://github.com/OCA/project) | 40 | 7eec788 2026-09-28 mymage Translated using Weblate (Italian) |
 | [project-agile](https://github.com/OCA/project-agile) | 1 | 0e81de6 2023-10-10 Weblate Update translation files |
 | [project-reporting](https://github.com/OCA/project-reporting) | 2 | 5077fcd 2023-09-03 OCA-git-bot [UPD] README.rst |
@@ -111,7 +111,7 @@ Last build: **2026-11-04 20:59 UTC** (elapsed 171s)
 | [server-tools](https://github.com/OCA/server-tools) | 57 | 308ded4 2025-11-28 mymage Translated using Weblate (Italian) |
 | [server-ux](https://github.com/OCA/server-ux) | 23 | 07aa127 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [social](https://github.com/OCA/social) | 45 | 3445196 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | 2751886 2025-09-09 mymage Translated using Weblate (Italian) |
+| [stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | 15 | 69cefbd 2026-11-06 mymage Translated using Weblate (Italian) |
 | [stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | 19 | 682e5e6 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
 | [stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | 2 | 3fe4f6e 2023-10-09 Weblate Update translation files |
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 74 | 7a213d0 2026-06-30 mymage Translated using Weblate (Italian) |
