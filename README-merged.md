@@ -144,6 +144,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/credit-control
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# credit-control
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/credit-control&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/credit-control/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/credit-control/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/credit-control/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/credit-control)
+[![Translation Status](https://translation.odoo-community.org/widgets/credit-control-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/credit-control-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+credit-control
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_financial_risk](account_financial_risk/) | 20.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/l10n-belgium
 
 
@@ -525,6 +573,54 @@ and promote its widespread use.
 
 ---
 
+## From OCA/manufacture
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# manufacture
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/manufacture/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/manufacture/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/manufacture/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/manufacture)
+[![Translation Status](https://translation.odoo-community.org/widgets/manufacture-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+manufacture
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 20.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
 ## From OCA/mis-builder
 
 
@@ -601,6 +697,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[partner_category_security](partner_category_security/) | 20.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Partner category security
 [partner_contact_department](partner_contact_department/) | 20.0.1.0.0 |  | Assign contacts to departments
 [partner_title](partner_title/) | 20.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add title field on partner
 
@@ -652,8 +749,9 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_attribute_value_avoid_auto_fill](product_attribute_value_avoid_auto_fill/) | 20.0.1.0.0 |  | Add option allow filling automatically the values
 [product_category_active](product_category_active/) | 20.0.1.0.0 |  | Add option to archive product categories
-[product_code_mandatory](product_code_mandatory/) | 20.0.1.0.0 |  | Set Product Internal Reference as a required field
+[product_code_mandatory](product_code_mandatory/) | 20.0.1.0.1 |  | Set Product Internal Reference as a required field
 [product_manufacturer](product_manufacturer/) | 20.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
+[product_set](product_set/) | 20.0.1.0.0 |  | Product set
 
 [//]: # (end addons)
 
@@ -702,6 +800,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_department](project_department/) | 20.0.1.0.0 |  | Project Department Categorization
+[project_task_default_stage](project_task_default_stage/) | 20.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_product](project_task_product/) | 20.0.1.0.0 |  | Allows to specify in a project task, the product the task relates to.
+[project_task_pull_request](project_task_pull_request/) | 20.0.1.0.0 |  | Adds a field for a PR URI to project tasks
 
 [//]: # (end addons)
 
@@ -913,6 +1014,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sale_order_split_strategy](sale_order_split_strategy/) | 20.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_type](sale_order_type/) | 20.0.1.0.0 |  | Sale Order Type
 
 [//]: # (end addons)
@@ -1010,6 +1112,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[auto_backup](auto_backup/) | 20.0.1.0.0 |  | Backups database
 [base_cron_exclusion](base_cron_exclusion/) | 20.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 20.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Adds more operators for view inheritance
 
@@ -1204,6 +1307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[stock_picking_sale_order_link](stock_picking_sale_order_link/) | 20.0.1.0.0 |  | Link between picking and sale order
 [stock_restrict_lot](stock_restrict_lot/) | 20.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 
 [//]: # (end addons)
@@ -1326,10 +1430,13 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [web_dialog_size](web_dialog_size/) | 20.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_environment_ribbon](web_environment_ribbon/) | 20.0.1.0.0 |  | Web Environment Ribbon
+[web_filter_header_button](web_filter_header_button/) | 20.0.1.0.0 |  | Show selected filters as buttons in the control panel
 [web_m2x_options](web_m2x_options/) | 20.0.1.0.0 |  | web_m2x_options
+[web_navbar_light](web_navbar_light/) | 20.0.1.0.0 | <a href='https://github.com/smaddlsoft'><img src='https://github.com/smaddlsoft.png' width='32' height='32' style='border-radius:50%;' alt='smaddlsoft'/></a> | Light main navbar for the backend
 [web_quick_start_screen](web_quick_start_screen/) | 20.0.1.0.0 |  | Configurable start screen for quick actions
 [web_refresher](web_refresher/) | 20.0.1.0.0 |  | Web Refresher
 [web_responsive](web_responsive/) | 20.0.1.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
+[web_timeline](web_timeline/) | 20.0.1.0.1 |  | Interactive visualization chart to show events in time
 [web_widget_numeric_step](web_widget_numeric_step/) | 20.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Web Widget Numeric Step
 
 [//]: # (end addons)

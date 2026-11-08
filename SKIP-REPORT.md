@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-04 21:06 UTC
+Generated 2026-11-08 00:35 UTC
 
-Total skipped: **240**
+Total skipped: **239**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -40,7 +40,7 @@ Count: **27**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **213**
+Count: **212**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -90,7 +90,6 @@ Count: **213**
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | [20.0](https://github.com/OCA/connector-woocommerce/tree/20.0) | No directory with __manifest__.py at repo root |
 | [contract](https://github.com/OCA/contract) | [20.0](https://github.com/OCA/contract/tree/20.0) | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | [20.0](https://github.com/OCA/cooperative/tree/20.0) | No directory with __manifest__.py at repo root |
-| [credit-control](https://github.com/OCA/credit-control) | [20.0](https://github.com/OCA/credit-control/tree/20.0) | No directory with __manifest__.py at repo root |
 | [crm](https://github.com/OCA/crm) | [20.0](https://github.com/OCA/crm/tree/20.0) | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | [20.0](https://github.com/OCA/crowdfunding/tree/20.0) | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | [20.0](https://github.com/OCA/currency/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -168,7 +167,6 @@ Count: **213**
 | [mail](https://github.com/OCA/mail) | [20.0](https://github.com/OCA/mail/tree/20.0) | No directory with __manifest__.py at repo root |
 | [maintenance](https://github.com/OCA/maintenance) | [20.0](https://github.com/OCA/maintenance/tree/20.0) | No directory with __manifest__.py at repo root |
 | [management-system](https://github.com/OCA/management-system) | [20.0](https://github.com/OCA/management-system/tree/20.0) | No directory with __manifest__.py at repo root |
-| [manufacture](https://github.com/OCA/manufacture) | [20.0](https://github.com/OCA/manufacture/tree/20.0) | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | [20.0](https://github.com/OCA/manufacture-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | [20.0](https://github.com/OCA/margin-analysis/tree/20.0) | No directory with __manifest__.py at repo root |
 | [mass-mailing](https://github.com/OCA/mass-mailing) | [20.0](https://github.com/OCA/mass-mailing/tree/20.0) | No directory with __manifest__.py at repo root |
@@ -183,6 +181,7 @@ Count: **213**
 | [product-configurator](https://github.com/OCA/product-configurator) | [20.0](https://github.com/OCA/product-configurator/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | [20.0](https://github.com/OCA/product-kitting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-pack](https://github.com/OCA/product-pack) | [20.0](https://github.com/OCA/product-pack/tree/20.0) | No directory with __manifest__.py at repo root |
+| [product-uom](https://github.com/OCA/product-uom) | [20.0](https://github.com/OCA/product-uom/tree/20.0) | No directory with __manifest__.py at repo root |
 | [product-variant](https://github.com/OCA/product-variant) | [20.0](https://github.com/OCA/product-variant/tree/20.0) | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | [20.0](https://github.com/OCA/program/tree/20.0) | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | [20.0](https://github.com/OCA/project-agile/tree/20.0) | No directory with __manifest__.py at repo root |

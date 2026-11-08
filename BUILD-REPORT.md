@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-04 21:06 UTC
+Generated 2026-11-08 00:35 UTC
 
 ## Skipped repos
 
@@ -57,7 +57,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [connector-woocommerce](https://github.com/OCA/connector-woocommerce) | `no_module` | No directory with __manifest__.py at repo root |
 | [contract](https://github.com/OCA/contract) | `no_module` | No directory with __manifest__.py at repo root |
 | [cooperative](https://github.com/OCA/cooperative) | `no_module` | No directory with __manifest__.py at repo root |
-| [credit-control](https://github.com/OCA/credit-control) | `no_module` | No directory with __manifest__.py at repo root |
 | [crm](https://github.com/OCA/crm) | `no_module` | No directory with __manifest__.py at repo root |
 | [crowdfunding](https://github.com/OCA/crowdfunding) | `no_module` | No directory with __manifest__.py at repo root |
 | [currency](https://github.com/OCA/currency) | `no_module` | No directory with __manifest__.py at repo root |
@@ -136,7 +135,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [maintainer-tools](https://github.com/OCA/maintainer-tools) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [maintenance](https://github.com/OCA/maintenance) | `no_module` | No directory with __manifest__.py at repo root |
 | [management-system](https://github.com/OCA/management-system) | `no_module` | No directory with __manifest__.py at repo root |
-| [manufacture](https://github.com/OCA/manufacture) | `no_module` | No directory with __manifest__.py at repo root |
 | [manufacture-reporting](https://github.com/OCA/manufacture-reporting) | `no_module` | No directory with __manifest__.py at repo root |
 | [margin-analysis](https://github.com/OCA/margin-analysis) | `no_module` | No directory with __manifest__.py at repo root |
 | [mass-mailing](https://github.com/OCA/mass-mailing) | `no_module` | No directory with __manifest__.py at repo root |
@@ -169,6 +167,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [product-configurator](https://github.com/OCA/product-configurator) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-kitting](https://github.com/OCA/product-kitting) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-pack](https://github.com/OCA/product-pack) | `no_module` | No directory with __manifest__.py at repo root |
+| [product-uom](https://github.com/OCA/product-uom) | `no_module` | No directory with __manifest__.py at repo root |
 | [product-variant](https://github.com/OCA/product-variant) | `no_module` | No directory with __manifest__.py at repo root |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
