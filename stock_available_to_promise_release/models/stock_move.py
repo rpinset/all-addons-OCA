@@ -474,6 +474,28 @@ class StockMove(models.Model):
             and not self.location_id.should_bypass_reservation()
         )
 
+    def _action_confirm(self, merge=True, merge_into=False):
+        moves = super()._action_confirm(merge=merge, merge_into=merge_into)
+        moves._clear_need_release_on_non_delivery()
+        return moves
+
+    def _clear_need_release_on_non_delivery(self):
+        """Unflag the moves that 'need_release' but are not deliveries anymore."""
+        if self.env.context.get("skip_need_release_non_delivery_check"):
+            return
+        # A move with a negative demand decreases an existing one
+        # (e.g. so line quantity is lowered).
+        # Before `_action_confirm`, the move is still a delivery move
+        # -> It must keep `need_release` for `_merge_moves` to work
+        # -> We cannot remove `need_release` before `_action_confirm`
+        # After `_action_confirm`,
+        # negative moves are converted to a different picking type
+        # -> They are no longer deliveries
+        # -> We must remove the need_release flag
+        self.filtered(
+            lambda m: m.need_release and m.picking_type_id.code != "outgoing"
+        ).write({"need_release": False})
+
     def _action_cancel(self):
         if not self.env.context.get("from_merge_no_need_release"):
             # Unrelease moves that must be, before canceling them.

@@ -3,7 +3,7 @@
 {
     "name": "Project Task Description Template",
     "summary": "Add a description template to project tasks",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.1.0",
     "category": "Project Management",
     "author": "Jarsa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/project",
@@ -13,6 +13,7 @@
     "data": [
         "security/ir.model.access.csv",
         "security/ir_rule_data.xml",
+        "views/project_project_view.xml",
         "views/project_task_view.xml",
         "views/project_task_description_template_view.xml",
     ],

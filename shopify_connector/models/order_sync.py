@@ -18,9 +18,11 @@ from ..graphql.order import (
     DRAFT_ORDER_BY_ID_QUERY,
     DRAFT_ORDERS_QUERY,
     ORDER_BY_ID_QUERY,
+    ORDERS_UPDATED_QUERY,
     REFUND_BY_ID_QUERY,
     RETURN_BY_ID_QUERY,
     orders_bulk_query,
+    orders_updated_search,
 )
 from ..lib.bulk import ShopifyBulkRunner
 from ..lib.client import ShopifyAccessDenied, ShopifyError
@@ -34,6 +36,9 @@ from ..lib.order import (
     shopify_gid,
 )
 from .webhook_event import WEBHOOK_HANDLERS
+
+ORDER_DRIFT_DEFAULT_WINDOW = timedelta(days=2)
+ORDER_DRIFT_OVERLAP = timedelta(hours=1)
 
 
 class ShopifyOrderImportError(UserError):
@@ -111,18 +116,14 @@ class ShopifyInstanceOrderSync(models.Model):
                     "Reconcile Shopify orders for %s", instance.name
                 ),
                 identity_key=f"shopify.orders.reconcile.{instance.id}",
-            )._job_fetch_orders_bulk(
-                fields.Date.to_string(
-                    fields.Date.context_today(instance) - timedelta(days=2)
-                ),
-                False,
-            )
+            )._job_sync_updated_orders()
             instance._write_log(
                 entity="drift_orders",
                 direction="import",
                 level="info",
                 message=self.env._(
-                    "Daily order drift reconciliation queued with a two-day overlap."
+                    "Order drift reconciliation queued for the orders updated "
+                    "since the last run."
                 ),
                 record=instance,
             )
@@ -141,6 +142,61 @@ class ShopifyInstanceOrderSync(models.Model):
             if not row.get("__parentId")
             and str(row.get("id") or "").startswith("gid://shopify/Order/")
         ]
+        return self._queue_order_imports(orders, date_from, date_to)
+
+    def _job_sync_updated_orders(self):
+        self = self.sudo()
+        self.ensure_one()
+        if not self.active:
+            return 0
+        started = fields.Datetime.now()
+        since = (
+            self.order_drift_since or started - ORDER_DRIFT_DEFAULT_WINDOW
+        ) - ORDER_DRIFT_OVERLAP
+        orders = self._orders_not_imported_yet(self._fetch_updated_orders(since))
+        count = self._queue_order_imports(orders, since)
+        self.order_drift_since = started
+        return count
+
+    def _orders_not_imported_yet(self, orders):
+        imported = {
+            binding.shopify_id: binding.external_updated_at
+            for binding in self.env["shopify.order"].search(
+                [
+                    ("instance_id", "=", self.id),
+                    ("shopify_id", "in", [order["id"] for order in orders]),
+                    ("state", "=", "synced"),
+                ]
+            )
+        }
+        return [
+            order
+            for order in orders
+            if not imported.get(order["id"])
+            or not order.get("updatedAt")
+            or imported[order["id"]] < _utc_datetime(order["updatedAt"])
+        ]
+
+    def _fetch_updated_orders(self, since):
+        search = orders_updated_search(since)
+        orders = []
+        after = None
+        while True:
+            data = self._shopify_client().execute(
+                ORDERS_UPDATED_QUERY, {"after": after, "query": search}
+            )
+            connection = data.get("orders") or {}
+            orders.extend(connection.get("nodes") or [])
+            page_info = connection.get("pageInfo") or {}
+            if not page_info.get("hasNextPage"):
+                return orders
+            after = page_info.get("endCursor")
+            if not after:
+                raise ShopifyOrderImportError(
+                    self.env._("Shopify returned an invalid order page cursor.")
+                )
+
+    def _queue_order_imports(self, orders, date_from=False, date_to=False):
         draft_count = 0
         if self.draft_order_import_enabled:
             try:
@@ -1045,8 +1101,7 @@ class ShopifyOrderSync(models.Model):
                 raise ShopifyOrderImportError(
                     self.env._("Shopify cancelled an order already delivered in Odoo.")
                 )
-            if sale_order.state != "cancel":
-                sale_order.with_context(disable_cancel_warning=True).action_cancel()
+            self._cancel_sale_order(sale_order)
             return
         if self._should_confirm_shopify_order(instance, order_data, sale_order):
             sale_order.action_confirm()
@@ -1084,6 +1139,21 @@ class ShopifyOrderSync(models.Model):
         return bool(
             sale_order.picking_ids.filtered(lambda picking: picking.state == "done")
         )
+
+    def _cancel_sale_order(self, sale_order):
+        if sale_order.state == "cancel":
+            return
+        # Without this context, Odoo returns a confirmation wizard for a
+        # confirmed order instead of cancelling it.
+        sale_order.with_context(disable_cancel_warning=True).action_cancel()
+        if sale_order.state != "cancel":
+            raise ShopifyOrderImportError(
+                self.env._(
+                    "Shopify cancelled the order, but Odoo could not cancel "
+                    "sale order %s.",
+                    sale_order.name,
+                )
+            )
 
     def _apply_invoice_and_payments(self, binding, order_data):
         instance = binding.instance_id
@@ -1483,8 +1553,7 @@ class ShopifyOrderSync(models.Model):
             binding.instance_id.refund_uninvoiced_policy == "cancel"
             and amount >= expected_total
         ):
-            if sale_order.state != "cancel":
-                sale_order.with_context(disable_cancel_warning=True).action_cancel()
+            self._cancel_sale_order(sale_order)
             return
         for line in refund["lines"]:
             line_binding = binding.line_binding_ids.filtered(

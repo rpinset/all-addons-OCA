@@ -33,5 +33,12 @@ risk hold, the fulfillment goes to error with the reason. Fix the cause and
 retry it. Releasing the risk hold of an order retries its fulfillments
 automatically.
 
+The **Shopify Drift: Updated Orders** scheduled action imports again the orders
+updated in Shopify since the **Sync Orders Updated Since** date of each
+instance, then moves that date forward. It recovers the order changes whose
+webhook was missed, and skips the orders whose latest version Odoo already
+imported. To import older updated orders on the next run, set an earlier date on
+the **Orders** tab of the instance.
+
 Run **Check Webhooks** after changing domains or credentials and repair any
 missing or misrouted subscriptions. Never edit Shopify IDs or raw payloads.

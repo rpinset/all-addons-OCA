@@ -36,9 +36,11 @@ from .order import (
     DRAFT_ORDER_BY_ID_QUERY,
     DRAFT_ORDERS_QUERY,
     ORDER_BY_ID_QUERY,
+    ORDERS_UPDATED_QUERY,
     REFUND_BY_ID_QUERY,
     RETURN_BY_ID_QUERY,
     orders_bulk_query,
+    orders_updated_search,
 )
 from .fulfillment import (
     FULFILLMENT_BY_ID_QUERY,
@@ -79,9 +81,11 @@ __all__ = [
     "DRAFT_ORDER_BY_ID_QUERY",
     "DRAFT_ORDERS_QUERY",
     "ORDER_BY_ID_QUERY",
+    "ORDERS_UPDATED_QUERY",
     "REFUND_BY_ID_QUERY",
     "RETURN_BY_ID_QUERY",
     "orders_bulk_query",
+    "orders_updated_search",
     "FULFILLMENT_BY_ID_QUERY",
     "FULFILLMENT_CANCEL_MUTATION",
     "FULFILLMENT_CREATE_MUTATION",

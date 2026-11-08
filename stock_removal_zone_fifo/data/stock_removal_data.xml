@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="removal_zone_fifo" model="product.removal">
+        <field name="name">Zone-Level First In First Out (FIFO)</field>
+        <field name="method">zone_fifo</field>
+    </record>
+</odoo>

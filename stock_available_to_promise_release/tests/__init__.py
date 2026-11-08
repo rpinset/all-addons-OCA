@@ -1,4 +1,5 @@
 from . import test_merge_moves
+from . import test_need_release_non_delivery
 from . import test_reservation
 from . import test_unrelease
 from . import test_unrelease_2steps

@@ -1,4 +1,7 @@
+from datetime import datetime, timedelta, timezone
 from unittest.mock import Mock, patch
+
+from freezegun import freeze_time
 
 from odoo import SUPERUSER_ID
 from odoo.sql_db import db_connect
@@ -6,7 +9,9 @@ from odoo.tests import tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.addons.queue_job.exception import RetryableJobError
-from odoo.addons.shopify_connector.lib.client import ShopifyAccessDenied
+from odoo.addons.queue_job.tests.common import trap_jobs
+from odoo.addons.shopify_connector.graphql.order import orders_updated_search
+from odoo.addons.shopify_connector.lib.client import ShopifyAccessDenied, ShopifyError
 
 
 @tagged("post_install", "-at_install")
@@ -222,6 +227,34 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
 
         self.assertFalse(result)
         self.assertNotEqual(binding.odoo_id.state, "cancel")
+
+    def test_cancel_that_odoo_does_not_apply_is_reported(self):
+        self.instance.order_confirmation_policy = "auto"
+        binding = self.order_model.browse(
+            self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(order_id=13, displayFinancialStatus="PAID"),
+            )
+        )
+        sale_order = binding.odoo_id
+
+        # The cancel is blocked: Odoo returns an action and leaves the order.
+        with patch.object(
+            type(sale_order), "action_cancel", return_value={"type": "ir.actions"}
+        ):
+            result = self.order_model._job_import_order(
+                self.instance.id,
+                self._payload(
+                    order_id=13,
+                    displayFinancialStatus="PAID",
+                    cancelledAt="2026-01-12T10:00:00Z",
+                    updatedAt="2026-01-12T10:00:00Z",
+                ),
+            )
+
+        self.assertFalse(result)
+        self.assertEqual(sale_order.state, "sale")
+        self.assertIn("Odoo could not cancel", binding.error_message)
 
     def test_cancel_of_confirmed_order_cancels_the_sale_order(self):
         self.instance.order_confirmation_policy = "auto"
@@ -572,3 +605,156 @@ class TestShopifyOrderSync(AccountTestInvoicingCommon):
         self.assertEqual(len(log), 1)
         self.assertEqual(log.level, "warning")
         self.assertIn("read_draft_orders", log.message)
+
+    def _updated_orders_page(self, numbers, cursor=None):
+        return {
+            "orders": {
+                "nodes": [
+                    {
+                        "id": f"gid://shopify/Order/{number}",
+                        "name": f"#{number}",
+                        "updatedAt": "2026-11-01T10:00:00Z",
+                    }
+                    for number in numbers
+                ],
+                "pageInfo": {"hasNextPage": bool(cursor), "endCursor": cursor},
+            }
+        }
+
+    def test_order_drift_imports_orders_updated_since_the_last_run(self):
+        self.instance.write(
+            {
+                "order_drift_since": datetime(2026, 10, 1, 8, 0),
+                "draft_order_import_enabled": False,
+            }
+        )
+        client = Mock()
+        client.execute.side_effect = [
+            self._updated_orders_page([1001], cursor="page-2"),
+            self._updated_orders_page([1002]),
+        ]
+
+        with (
+            freeze_time("2026-11-02 09:00:00"),
+            trap_jobs() as trap,
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+        ):
+            queued = self.instance._job_sync_updated_orders()
+
+        self.assertEqual(queued, 2)
+        search = "updated_at:>='2026-10-01T07:00:00Z'"
+        self.assertEqual(
+            [call.args[1] for call in client.execute.call_args_list],
+            [
+                {"after": None, "query": search},
+                {"after": "page-2", "query": search},
+            ],
+        )
+        trap.assert_jobs_count(2, only=self.order_model._job_import_order_from_api)
+        self.assertEqual(self.instance.order_drift_since, datetime(2026, 11, 2, 9, 0))
+
+    def test_order_drift_skips_orders_already_imported_in_that_version(self):
+        self.instance.write(
+            {
+                "order_drift_since": datetime(2026, 10, 1, 8, 0),
+                "draft_order_import_enabled": False,
+            }
+        )
+        self.order_model.create(
+            {
+                "instance_id": self.instance.id,
+                "shopify_id": "gid://shopify/Order/1001",
+                "order_name": "#1001",
+                "external_updated_at": datetime(2026, 11, 1, 10, 0),
+                "state": "synced",
+            }
+        )
+        client = Mock()
+        client.execute.return_value = self._updated_orders_page([1001, 1002])
+
+        with (
+            trap_jobs() as trap,
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+        ):
+            queued = self.instance._job_sync_updated_orders()
+
+        self.assertEqual(queued, 1)
+        trap.assert_enqueued_job(
+            self.order_model._job_import_order_from_api,
+            args=(self.instance.id, "gid://shopify/Order/1002"),
+        )
+
+    def test_order_drift_starts_two_days_back_on_its_first_run(self):
+        self.instance.write(
+            {"order_drift_since": False, "draft_order_import_enabled": False}
+        )
+        client = Mock()
+        client.execute.return_value = self._updated_orders_page([])
+
+        with (
+            freeze_time("2026-11-02 09:00:00"),
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+        ):
+            queued = self.instance._job_sync_updated_orders()
+
+        self.assertEqual(queued, 0)
+        self.assertEqual(
+            client.execute.call_args.args[1]["query"],
+            "updated_at:>='2026-10-31T08:00:00Z'",
+        )
+        self.assertEqual(self.instance.order_drift_since, datetime(2026, 11, 2, 9, 0))
+
+    def test_order_drift_keeps_its_date_when_shopify_fails(self):
+        since = datetime(2026, 10, 1, 8, 0)
+        self.instance.write(
+            {"order_drift_since": since, "draft_order_import_enabled": False}
+        )
+        client = Mock()
+        client.execute.side_effect = ShopifyError("Shopify is unavailable.")
+
+        with (
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+            self.assertRaises(ShopifyError),
+        ):
+            self.instance._job_sync_updated_orders()
+
+        self.assertEqual(self.instance.order_drift_since, since)
+
+    def test_order_drift_also_imports_updated_draft_orders(self):
+        self.instance.write(
+            {
+                "order_drift_since": datetime(2026, 10, 1, 8, 0),
+                "draft_order_import_enabled": True,
+            }
+        )
+        client = Mock()
+        client.execute.side_effect = [
+            self._updated_orders_page([]),
+            {"draftOrders": {"nodes": [], "pageInfo": {"hasNextPage": False}}},
+        ]
+
+        with (
+            freeze_time("2026-11-02 09:00:00"),
+            patch.object(type(self.instance), "_shopify_client", return_value=client),
+        ):
+            self.instance._job_sync_updated_orders()
+
+        self.assertEqual(
+            client.execute.call_args_list[1].args[1]["query"],
+            "updated_at:>=2026-10-01",
+        )
+
+    def test_order_drift_cron_queues_the_updated_orders_sync(self):
+        with trap_jobs() as trap:
+            self.env["shopify.instance"]._cron_reconcile_orders()
+
+        trap.assert_jobs_count(1, only=self.instance._job_sync_updated_orders)
+
+    def test_order_drift_search_converts_to_utc(self):
+        since = datetime(
+            2026, 11, 2, 10, 30, 15, 500, tzinfo=timezone(timedelta(hours=1))
+        )
+
+        self.assertEqual(
+            orders_updated_search(since), "updated_at:>='2026-11-02T09:30:15Z'"
+        )

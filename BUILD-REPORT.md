@@ -1,6 +1,6 @@
 # Build report — `18.0`
 
-Generated 2026-11-04 21:05 UTC
+Generated 2026-11-08 00:33 UTC
 
 ## Skipped repos
 
@@ -82,6 +82,7 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [odoo-test-helper](https://github.com/OCA/odoo-test-helper) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
+| [product-uom](https://github.com/OCA/product-uom) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |
 | [program](https://github.com/OCA/program) | `no_module` | No directory with __manifest__.py at repo root |
 | [project-agile](https://github.com/OCA/project-agile) | `no_module` | No directory with __manifest__.py at repo root |
 | [py3o.template](https://github.com/OCA/py3o.template) | `no_branch` | fatal: Remote branch 18.0 not found in upstream origin |

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 
 MONEY_FIELDS = """
     shopMoney { amount currencyCode }
@@ -209,6 +209,20 @@ def orders_bulk_query(
     return "{ " + root + " { edges { node { id name updatedAt } } } }"
 
 
+def orders_updated_search(since: datetime) -> str:
+    """Build the search filter for the orders updated since a UTC datetime."""
+    if since.tzinfo:
+        since = since.astimezone(timezone.utc).replace(tzinfo=None)
+    return f"updated_at:>='{since.replace(microsecond=0).isoformat()}Z'"
+
+
+ORDERS_UPDATED_QUERY = (
+    "query ShopifyUpdatedOrders($after: String, $query: String) {"
+    " orders(first: 250, after: $after, query: $query, sortKey: UPDATED_AT) {"
+    " nodes { id name updatedAt } pageInfo { hasNextPage endCursor } } }"
+)
+
+
 DRAFT_ORDER_FIELDS = f"""
     id
     name
@@ -278,7 +292,9 @@ __all__ = [
     "DRAFT_ORDER_BY_ID_QUERY",
     "DRAFT_ORDERS_QUERY",
     "ORDER_BY_ID_QUERY",
+    "ORDERS_UPDATED_QUERY",
     "REFUND_BY_ID_QUERY",
     "RETURN_BY_ID_QUERY",
     "orders_bulk_query",
+    "orders_updated_search",
 ]
