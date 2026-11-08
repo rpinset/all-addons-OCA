@@ -1,12 +1,12 @@
 # Skipped repos — branch `16.0`
 
-Generated 2026-11-04 21:02 UTC
+Generated 2026-11-08 00:30 UTC
 
-Total skipped: **123**
+Total skipped: **124**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
-Count: **47**
+Count: **48**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -40,6 +40,7 @@ Count: **47**
 | [odoo-sphinx-autodoc](https://github.com/OCA/odoo-sphinx-autodoc) | [16.0](https://github.com/OCA/odoo-sphinx-autodoc/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [odoorpc](https://github.com/OCA/odoorpc) | [16.0](https://github.com/OCA/odoorpc/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [openupgradelib](https://github.com/OCA/openupgradelib) | [16.0](https://github.com/OCA/openupgradelib/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
+| [product-uom](https://github.com/OCA/product-uom) | [16.0](https://github.com/OCA/product-uom/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [py3o.template](https://github.com/OCA/py3o.template) | [16.0](https://github.com/OCA/py3o.template/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [pylint-odoo](https://github.com/OCA/pylint-odoo) | [16.0](https://github.com/OCA/pylint-odoo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
 | [pytest-odoo](https://github.com/OCA/pytest-odoo) | [16.0](https://github.com/OCA/pytest-odoo/tree/16.0) | fatal: Remote branch 16.0 not found in upstream origin |
