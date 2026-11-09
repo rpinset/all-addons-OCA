@@ -1,11 +1,11 @@
 # all-addons-OCA — branch `20.0`
 
-Last build: **2026-11-08 00:35 UTC** (elapsed 105s)
+Last build: **2026-11-09 11:51 UTC** (elapsed 124s)
 
-- Repos integrated: **28**
-- Canonical modules: **137**
+- Repos integrated: **29**
+- Canonical modules: **140**
 - Duplicate module names: **0**
-- Skipped repos (no branch / no module): **239**
+- Skipped repos (no branch / no module): **238**
 
 ## Integrated repos
 
@@ -25,10 +25,11 @@ Last build: **2026-11-08 00:35 UTC** (elapsed 105s)
 | [manufacture](https://github.com/OCA/manufacture) | 1 | c73282f 2026-11-06 oca-ci [UPD] Update mrp_warehouse_calendar.pot |
 | [mis-builder](https://github.com/OCA/mis-builder) | 3 | 70560de 2026-11-03 Stéphane Bidoul Merge pull request #852 from OCA/renovate/20.0-https-github.com-oca-oca-addons-repo-template-1.x |
 | [partner-contact](https://github.com/OCA/partner-contact) | 3 | d7dc80d 2026-11-05 oca-ci [UPD] Update partner_category_security.pot |
-| [product-attribute](https://github.com/OCA/product-attribute) | 5 | 31aab78 2026-11-06 Weblate Update translation files |
-| [project](https://github.com/OCA/project) | 4 | 98466e4 2026-11-06 oca-ci [UPD] Update project_task_product.pot |
+| [product-attribute](https://github.com/OCA/product-attribute) | 5 | c81fef0 2026-11-09 Pedro M. Baeza Merge pull request #2471 from OCA/renovate/20.0-git+https-github.com-oca-oca-addons-repo-template-1.x |
+| [project](https://github.com/OCA/project) | 5 | 436c312 2026-11-09 OCA-git-bot Merge PR #1879 into 20.0 |
 | [purchase-workflow](https://github.com/OCA/purchase-workflow) | 2 | ab3f057 2026-11-04 mymage Translated using Weblate (Italian) |
 | [queue](https://github.com/OCA/queue) | 8 | 8ef3956 2026-10-30 mymage Translated using Weblate (Italian) |
+| [reporting-engine](https://github.com/OCA/reporting-engine) | 2 | 3613ae1 2026-11-09 oca-ci [UPD] Update report_qweb_element_page_visibility.pot |
 | [rest-framework](https://github.com/OCA/rest-framework) | 7 | 2a2da13 2026-10-16 Laurent Mignon (ACSONE) Merge pull request #661 from acsone/20.0-fix-licence |
 | [sale-workflow](https://github.com/OCA/sale-workflow) | 2 | a18ade2 2026-11-06 oca-ci [UPD] Update sale_order_split_strategy.pot |
 | [server-brand](https://github.com/OCA/server-brand) | 2 | 518f182 2026-10-21 oca-ci [UPD] Update disable_odoo_online.pot |
@@ -38,5 +39,5 @@ Last build: **2026-11-08 00:35 UTC** (elapsed 105s)
 | [stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | 2 | 36f2783 2026-11-03 oca-ci [UPD] Update stock_warehouse_calendar.pot |
 | [stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | 2 | e577735 2026-11-05 oca-ci [UPD] Update stock_picking_sale_order_link.pot |
 | [storage](https://github.com/OCA/storage) | 25 | a7169e7 2026-09-25 OCA-git-bot [BOT] post-merge updates |
-| [web](https://github.com/OCA/web) | 10 | b586835 2026-11-07 Weblate Update translation files |
+| [web](https://github.com/OCA/web) | 10 | 963e16a 2026-11-09 Pedro M. Baeza Merge pull request #3792 from Tecnativa/20.0-imp-update-dotfiles-v1.48 |
 

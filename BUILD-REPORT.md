@@ -1,6 +1,6 @@
 # Build report — `20.0`
 
-Generated 2026-11-08 00:35 UTC
+Generated 2026-11-09 11:51 UTC
 
 ## Skipped repos
 
@@ -180,7 +180,6 @@ See [`SKIP-REPORT.md`](SKIP-REPORT.md) for the full list with clickable URLs.
 | [repo-maintainer](https://github.com/OCA/repo-maintainer) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [repo-maintainer-conf](https://github.com/OCA/repo-maintainer-conf) | `no_branch` | fatal: Remote branch 20.0 not found in upstream origin |
 | [report-print-send](https://github.com/OCA/report-print-send) | `no_module` | No directory with __manifest__.py at repo root |
-| [reporting-engine](https://github.com/OCA/reporting-engine) | `no_module` | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | `no_module` | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | `no_module` | No directory with __manifest__.py at repo root |
 | [rma](https://github.com/OCA/rma) | `no_module` | No directory with __manifest__.py at repo root |

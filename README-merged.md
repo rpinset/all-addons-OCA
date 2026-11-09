@@ -800,6 +800,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_department](project_department/) | 20.0.1.0.0 |  | Project Department Categorization
+[project_key](project_key/) | 20.0.1.0.0 |  | Module decorates projects and tasks with Project Key
 [project_task_default_stage](project_task_default_stage/) | 20.0.1.0.0 |  | Recovery default task stages for projects from v8
 [project_task_product](project_task_product/) | 20.0.1.0.0 |  | Allows to specify in a project task, the product the task relates to.
 [project_task_pull_request](project_task_pull_request/) | 20.0.1.0.0 |  | Adds a field for a PR URI to project tasks
@@ -913,6 +914,55 @@ addon | version | maintainers | summary
 [queue_job_subscribe](queue_job_subscribe/) | 18.0.1.0.0 (unported) |  | Control which users are subscribed to queue job notifications
 [test_queue_job](test_queue_job/) | 19.0.2.1.0 (unported) | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Queue Job Tests
 [test_queue_job_batch](test_queue_job_batch/) | 18.0.1.0.0 (unported) |  | Test Job Queue Batch
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+
+---
+
+## From OCA/reporting-engine
+
+
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# reporting-engine
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/reporting-engine&target_branch=20.0)
+[![Pre-commit Status](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml/badge.svg?branch=20.0)](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml?query=branch%3A20.0)
+[![Build Status](https://github.com/OCA/reporting-engine/actions/workflows/test.yml/badge.svg?branch=20.0)](https://github.com/OCA/reporting-engine/actions/workflows/test.yml?query=branch%3A20.0)
+[![codecov](https://codecov.io/gh/OCA/reporting-engine/branch/20.0/graph/badge.svg)](https://codecov.io/gh/OCA/reporting-engine)
+[![Translation Status](https://translation.odoo-community.org/widgets/reporting-engine-20-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/reporting-engine-20-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+reporting-engine
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 20.0.1.0.0 |  | Report Qweb Element Page Visibility
+[report_xlsx](report_xlsx/) | 20.0.1.0.0 |  | Base module to create xlsx report
 
 [//]: # (end addons)
 

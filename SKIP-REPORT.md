@@ -1,8 +1,8 @@
 # Skipped repos — branch `20.0`
 
-Generated 2026-11-08 00:35 UTC
+Generated 2026-11-09 11:51 UTC
 
-Total skipped: **239**
+Total skipped: **238**
 
 ## `no_branch` — Branch missing on OCA repo (not yet ported to this version)
 
@@ -40,7 +40,7 @@ Count: **27**
 
 ## `no_module` — Repo cloned but contains no Odoo module at root (no __manifest__.py)
 
-Count: **212**
+Count: **211**
 
 | Repo | Branch URL | Detail |
 | ---- | ---------- | ------ |
@@ -189,7 +189,6 @@ Count: **212**
 | [purchase-reporting](https://github.com/OCA/purchase-reporting) | [20.0](https://github.com/OCA/purchase-reporting/tree/20.0) | No directory with __manifest__.py at repo root |
 | [repair](https://github.com/OCA/repair) | [20.0](https://github.com/OCA/repair/tree/20.0) | No directory with __manifest__.py at repo root |
 | [report-print-send](https://github.com/OCA/report-print-send) | [20.0](https://github.com/OCA/report-print-send/tree/20.0) | No directory with __manifest__.py at repo root |
-| [reporting-engine](https://github.com/OCA/reporting-engine) | [20.0](https://github.com/OCA/reporting-engine/tree/20.0) | No directory with __manifest__.py at repo root |
 | [resource](https://github.com/OCA/resource) | [20.0](https://github.com/OCA/resource/tree/20.0) | No directory with __manifest__.py at repo root |
 | [rest-api](https://github.com/OCA/rest-api) | [20.0](https://github.com/OCA/rest-api/tree/20.0) | No directory with __manifest__.py at repo root |
 | [rma](https://github.com/OCA/rma) | [20.0](https://github.com/OCA/rma/tree/20.0) | No directory with __manifest__.py at repo root |
