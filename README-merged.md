@@ -5681,7 +5681,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [api_log](api_log/) | 17.0.1.1.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log API requests in database
 [api_log_mail](api_log_mail/) | 17.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
-[fastapi](fastapi/) | 17.0.3.4.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 17.0.3.4.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_api_key](fastapi_auth_api_key/) | 17.0.1.0.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Fastapi Auth API Key
 [fastapi_log](fastapi_log/) | 17.0.1.0.0 | <a href='https://github.com/paradoxxxzero'><img src='https://github.com/paradoxxxzero.png' width='32' height='32' style='border-radius:50%;' alt='paradoxxxzero'/></a> | Log Fastapi requests in database
 [fastapi_log_mail](fastapi_log_mail/) | 17.0.1.0.0 | <a href='https://github.com/SirPyTech'><img src='https://github.com/SirPyTech.png' width='32' height='32' style='border-radius:50%;' alt='SirPyTech'/></a> | Notify logged exceptions.
@@ -6310,7 +6310,7 @@ addon | version | maintainers | summary
 [bus_alt_connection](bus_alt_connection/) | 17.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [database_cleanup](database_cleanup/) | 17.0.1.2.3 |  | Database cleanup
 [dbfilter_from_header](dbfilter_from_header/) | 17.0.1.0.0 |  | Filter databases with HTTP headers
-[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 17.0.1.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
+[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 17.0.1.1.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 17.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 17.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
 [html_text](html_text/) | 17.0.1.0.0 |  | Generate excerpts from any HTML field
@@ -6757,6 +6757,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 17.0.1.0.1 |  | Generate Barcodes for Stock Locations
+[barcodes_generator_package](barcodes_generator_package/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Product Packaging
 [barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
 [product_multi_barcode](product_multi_barcode/) | 17.0.1.0.1 |  | Multiple barcodes on products
 [stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 17.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | It provides a wizard to select how many barcodes print.
