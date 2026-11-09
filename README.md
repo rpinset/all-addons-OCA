@@ -1,6 +1,6 @@
 # all-addons-OCA — branch `14.0`
 
-Last build: **2026-11-08 00:27 UTC** (elapsed 77s)
+Last build: **2026-11-09 11:43 UTC** (elapsed 81s)
 
 - Repos integrated: **140**
 - Canonical modules: **2916**
@@ -15,12 +15,12 @@ Last build: **2026-11-08 00:27 UTC** (elapsed 77s)
 | [account-analytic](https://github.com/OCA/account-analytic) | 30 | 23875fc 2026-05-21 ThanhICSC Translated using Weblate (Vietnamese (vi_VN)) |
 | [account-budgeting](https://github.com/OCA/account-budgeting) | 1 | c08673a 2025-06-13 Betül Öğmen Translated using Weblate (Turkish) |
 | [account-closing](https://github.com/OCA/account-closing) | 9 | 9071c85 2026-08-04 Fede Vara Translated using Weblate (Spanish (Argentina)) |
-| [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | 2f902a6 2025-03-13 mymage Translated using Weblate (Italian) |
+| [account-consolidation](https://github.com/OCA/account-consolidation) | 1 | fa9d380 2026-11-08 mymage Translated using Weblate (Italian) |
 | [account-financial-reporting](https://github.com/OCA/account-financial-reporting) | 7 | bbf605b 2026-08-13 setia kamali Added translation using Weblate (Persian) |
 | [account-financial-tools](https://github.com/OCA/account-financial-tools) | 54 | 22efe37 2026-10-01 mymage Translated using Weblate (Italian) |
 | [account-fiscal-rule](https://github.com/OCA/account-fiscal-rule) | 12 | 15069cb 2026-03-02 Pedro M. Baeza Merge pull request #581 from ursais/14-dr-precommit-update |
 | [account-invoice-reporting](https://github.com/OCA/account-invoice-reporting) | 10 | 8670e82 2025-06-04 OCA-git-bot [UPD] addons table in README.md |
-| [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 1e87daf 2026-09-28 mymage Translated using Weblate (Italian) |
+| [account-invoicing](https://github.com/OCA/account-invoicing) | 84 | 19de5b7 2026-11-08 mymage Translated using Weblate (Italian) |
 | [account-payment](https://github.com/OCA/account-payment) | 37 | aab6d21 2026-04-08 mymage Translated using Weblate (Italian) |
 | [account-reconcile](https://github.com/OCA/account-reconcile) | 20 | 53a360e 2026-02-27 Betül Öğmen Added translation using Weblate (Turkish) |
 | [apps-store](https://github.com/OCA/apps-store) | 3 | 7138a05 2025-11-25 mymage Translated using Weblate (Italian) |
